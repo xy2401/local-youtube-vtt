@@ -1,0 +1,316 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.035 --> 00:00:02.160
+PETE LEPAGE: Add to Home
+Screen behavior on Android
+
+00:00:02.160 --> 00:00:04.950
+is changing to give
+you more control.
+
+00:00:04.950 --> 00:00:07.980
+The page lifecycle API
+tells you when your tab has
+
+00:00:07.980 --> 00:00:10.320
+been suspended or restored.
+
+00:00:10.320 --> 00:00:12.870
+And the payment
+handler API makes
+
+00:00:12.870 --> 00:00:15.360
+it possible for
+web-based payment apps
+
+00:00:15.360 --> 00:00:17.820
+to support the payment
+request experience.
+
+00:00:17.820 --> 00:00:18.870
+I'm Pete LePage.
+
+00:00:18.870 --> 00:00:21.490
+Let's dive in and see what's
+new for developers in Chrome 68.
+
+00:00:21.490 --> 00:00:24.770
+[MUSIC PLAYING]
+
+00:00:24.770 --> 00:00:27.980
+If your site meets the Add
+to Home Screen criteria,
+
+00:00:27.980 --> 00:00:31.110
+Chrome will no longer show
+the Add to Home Screen banner.
+
+00:00:31.110 --> 00:00:34.310
+Instead, you're in
+control over when and how
+
+00:00:34.310 --> 00:00:35.960
+to prompt the user.
+
+00:00:35.960 --> 00:00:39.830
+To prompt the user, listen for
+the beforeinstallprompt event,
+
+00:00:39.830 --> 00:00:43.580
+then save the event and
+add a button or other UI
+
+00:00:43.580 --> 00:00:47.330
+element to your app to indicate
+that it can be installed.
+
+00:00:47.330 --> 00:00:49.600
+When the user clicks
+the Install button,
+
+00:00:49.600 --> 00:00:53.840
+call prompt on the saved
+beforeinstallprompt event
+
+00:00:53.840 --> 00:00:57.290
+and then Chrome will show the
+Add to Home Screen dialog.
+
+00:00:57.290 --> 00:00:59.060
+To give you time to
+update your site,
+
+00:00:59.060 --> 00:01:02.660
+Chrome will show a mini
+info bar the first time
+
+00:01:02.660 --> 00:01:05.780
+the user visits a site that
+meets the Add to Home Screen
+
+00:01:05.780 --> 00:01:07.070
+criteria.
+
+00:01:07.070 --> 00:01:09.260
+Once dismissed,
+the mini info bar
+
+00:01:09.260 --> 00:01:11.870
+will not be shown
+again for a while.
+
+00:01:11.870 --> 00:01:14.180
+I've got a post with
+full details, including
+
+00:01:14.180 --> 00:01:17.150
+code samples that you can
+use, linked in the description
+
+00:01:17.150 --> 00:01:18.650
+below.
+
+00:01:18.650 --> 00:01:21.260
+When a user has a large
+number of tabs running,
+
+00:01:21.260 --> 00:01:24.890
+critical resources such
+as memory, CPU, battery,
+
+00:01:24.890 --> 00:01:27.230
+and the network can
+all be oversubscribed,
+
+00:01:27.230 --> 00:01:29.840
+leading to a bad
+user experience.
+
+00:01:29.840 --> 00:01:32.090
+If your site is running
+in the background,
+
+00:01:32.090 --> 00:01:35.840
+the system may suspend
+it to conserve resources.
+
+00:01:35.840 --> 00:01:38.300
+With the new page
+lifecycle API, you
+
+00:01:38.300 --> 00:01:41.520
+can now listen for and
+respond to these events.
+
+00:01:41.520 --> 00:01:44.000
+For example, if a tab
+needs to be discarded
+
+00:01:44.000 --> 00:01:47.900
+to conserve memory, the browser
+will fire a frozen event
+
+00:01:47.900 --> 00:01:50.420
+where you can store
+any necessary state.
+
+00:01:50.420 --> 00:01:53.170
+Then, when the user
+refocuses the tab,
+
+00:01:53.170 --> 00:01:55.220
+the resume event
+is fired, making
+
+00:01:55.220 --> 00:01:58.370
+it possible to restore
+any previous state.
+
+00:01:58.370 --> 00:02:01.385
+The spec and an explainer
+doc are on GitHub,
+
+00:02:01.385 --> 00:02:04.250
+linked in the description.
+
+00:02:04.250 --> 00:02:07.850
+The payment request API is
+an open, standards-based way
+
+00:02:07.850 --> 00:02:09.320
+to accept payments.
+
+00:02:09.320 --> 00:02:12.650
+The payment handler API extends
+the reach of payment request
+
+00:02:12.650 --> 00:02:14.840
+by enabling web-based
+payment apps
+
+00:02:14.840 --> 00:02:18.890
+to facilitate payment directly
+within the payment request
+
+00:02:18.890 --> 00:02:20.360
+experience.
+
+00:02:20.360 --> 00:02:23.420
+As a seller, adding an
+existing web-based payment app
+
+00:02:23.420 --> 00:02:27.680
+is as easy as adding an entry to
+the supported methods property.
+
+00:02:27.680 --> 00:02:30.170
+If a service worker that can
+handle the specified payment
+
+00:02:30.170 --> 00:02:32.300
+method is installed,
+it will show up
+
+00:02:32.300 --> 00:02:35.680
+in the payment request UI,
+and the user can play with it.
+
+00:02:35.680 --> 00:02:38.000
+[? EG ?] has a great
+post that shows
+
+00:02:38.000 --> 00:02:40.310
+how to implement this
+for merchant sites
+
+00:02:40.310 --> 00:02:42.320
+and for payment
+handlers, so check
+
+00:02:42.320 --> 00:02:44.820
+the description for details.
+
+00:02:44.820 --> 00:02:47.270
+These are just a few of
+the changes in Chrome 68
+
+00:02:47.270 --> 00:02:48.090
+for developers.
+
+00:02:48.090 --> 00:02:50.390
+Of course, there's plenty more.
+
+00:02:50.390 --> 00:02:54.230
+Content embedded in an iframe
+requires a user gesture
+
+00:02:54.230 --> 00:02:56.600
+to navigate the
+top-level browsing
+
+00:02:56.600 --> 00:02:59.180
+context to a different origin.
+
+00:02:59.180 --> 00:03:03.290
+Since Chrome 1, the CSS cursor
+values for grab and grabbing
+
+00:03:03.290 --> 00:03:04.700
+have been prefixed.
+
+00:03:04.700 --> 00:03:08.550
+We now support the standard
+un-prefixed values.
+
+00:03:08.550 --> 00:03:11.820
+Finally-- and this
+is a big one--
+
+00:03:11.820 --> 00:03:15.620
+the HTTP cache is now ignored
+when requesting updates
+
+00:03:15.620 --> 00:03:18.530
+to a service worker,
+bringing Chrome in line
+
+00:03:18.530 --> 00:03:21.290
+with the spec and
+other browsers.
+
+00:03:21.290 --> 00:03:24.590
+All the details, including links
+to docs and specs and more,
+
+00:03:24.590 --> 00:03:25.910
+are in the description.
+
+00:03:25.910 --> 00:03:27.980
+And be sure to
+check out the latest
+
+00:03:27.980 --> 00:03:29.900
+"New in Chrome
+DevTools" video to learn
+
+00:03:29.900 --> 00:03:31.520
+what's new in DevTools.
+
+00:03:31.520 --> 00:03:33.590
+Then click the Subscribe
+button and you'll
+
+00:03:33.590 --> 00:03:36.820
+get an email notification
+whenever we launch a new video.
+
+00:03:36.820 --> 00:03:39.810
+I'm Pete LePage, and as soon
+as Chrome 69 is released,
+
+00:03:39.810 --> 00:03:43.223
+I'll be right here to tell
+you what's new in Chrome.
+

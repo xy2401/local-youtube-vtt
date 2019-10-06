@@ -1,0 +1,801 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.458
+JAKE: We should
+talk about the web.
+
+00:00:01.458 --> 00:00:03.170
+SURMA: We should
+talk about the web.
+
+00:00:03.170 --> 00:00:04.378
+And I have plans for the web.
+
+00:00:04.378 --> 00:00:05.094
+JAKE: Ooh!
+
+00:00:05.094 --> 00:00:05.594
+SURMA: Ooh!
+
+00:00:05.594 --> 00:00:08.582
+[THEME MUSIC]
+
+00:00:11.570 --> 00:00:12.935
+So I wrote a blog post.
+
+00:00:12.935 --> 00:00:13.630
+JAKE: Good.
+
+00:00:13.630 --> 00:00:14.620
+Good start.
+
+00:00:14.620 --> 00:00:16.559
+SURMA: I did not
+squeeze it into a tweet
+
+00:00:16.559 --> 00:00:18.600
+even though we have twice
+as many characters now.
+
+00:00:18.600 --> 00:00:19.120
+JAKE: Oh, yes.
+
+00:00:19.120 --> 00:00:21.036
+SURMA: I needed a little
+bit more explanation.
+
+00:00:21.036 --> 00:00:26.350
+And I was-- the
+entire event that
+
+00:00:26.350 --> 00:00:30.250
+sparked this interest is
+a colleague telling me
+
+00:00:30.250 --> 00:00:33.730
+that there's iPad Pros and
+that these iPad Pros run
+
+00:00:33.730 --> 00:00:35.415
+at 120 hertz.
+
+00:00:35.415 --> 00:00:38.800
+JAKE: 100-- that's
+double the normal number.
+
+00:00:38.800 --> 00:00:40.400
+SURMA: It's 50 times 2.
+
+00:00:40.400 --> 00:00:43.240
+So, yeah, most devices that
+we have worked with so far
+
+00:00:43.240 --> 00:00:45.350
+run at 60 frames a
+second or at 60 hertz.
+
+00:00:45.350 --> 00:00:46.380
+JAKE: Right because it--
+
+00:00:46.380 --> 00:00:49.380
+I remember in the
+days of CRT monitors,
+
+00:00:49.380 --> 00:00:51.940
+you'd see quite a variance of--
+
+00:00:51.940 --> 00:00:54.510
+SURMA: 24 hertz, 30, 50, 60.
+
+00:00:54.510 --> 00:00:56.360
+JAKE: Yeah, for a
+computer monitor,
+
+00:00:56.360 --> 00:00:59.490
+you would tend to
+run at 60, 75, 100--
+
+00:00:59.490 --> 00:01:00.545
+SURMA: Oh, yeah, right.
+
+00:01:00.545 --> 00:01:04.150
+JAKE: Because the higher the
+refresh rate, the less flicker.
+
+00:01:04.150 --> 00:01:06.650
+Yeah, the less eye bad it was.
+
+00:01:06.650 --> 00:01:08.895
+SURMA: On the scale
+of 0 to eye bad.
+
+00:01:08.895 --> 00:01:10.660
+JAKE: It's like how
+long can you watch it
+
+00:01:10.660 --> 00:01:14.000
+before your tears of
+blood, that sort of thing.
+
+00:01:14.000 --> 00:01:17.640
+But then once the CRTs went
+away, everything just 60--
+
+00:01:17.640 --> 00:01:18.650
+60 across the board.
+
+00:01:18.650 --> 00:01:22.760
+Laptops-- TVs can do it
+differently because they want
+
+00:01:22.760 --> 00:01:24.820
+to synchronize the
+frame rates but--
+
+00:01:24.820 --> 00:01:26.830
+SURMA: We got also
+24 so they're--
+
+00:01:26.830 --> 00:01:29.270
+6 is a multiple of 24,
+which is sometimes an issue.
+
+00:01:29.270 --> 00:01:29.770
+JAKE: Right.
+
+00:01:29.770 --> 00:01:31.670
+SURMA: And Americans
+TV run at 50.
+
+00:01:31.670 --> 00:01:33.925
+JAKE: American TV runs at 60.
+
+00:01:33.925 --> 00:01:35.137
+SURMA: European runs at 50?
+
+00:01:35.137 --> 00:01:36.220
+JAKE: European runs at 50.
+
+00:01:36.220 --> 00:01:37.240
+SURMA: Why?
+
+00:01:37.240 --> 00:01:40.435
+JAKE: Just-- sorry just allow
+me to remove my smug grin.
+
+00:01:40.435 --> 00:01:45.310
+SURMA: I think I just
+tapped into your specialty.
+
+00:01:45.310 --> 00:01:48.696
+JAKE: I've done a bit about
+this in a talk a few years ago,
+
+00:01:48.696 --> 00:01:50.320
+and so I did a lot
+of research into it.
+
+00:01:50.320 --> 00:01:52.806
+Yeah, it was all based
+around the power frequency.
+
+00:01:52.806 --> 00:01:53.680
+SURMA: Yeah, exactly.
+
+00:01:53.680 --> 00:01:56.845
+You could just sync using the
+wave form of the power supply.
+
+00:01:56.845 --> 00:01:59.850
+JAKE: So a 50 hertz here,
+50 hertz in a lot of Europe,
+
+00:01:59.850 --> 00:02:03.410
+60 hertz in America, and lot
+of other places I think so.
+
+00:02:03.410 --> 00:02:06.520
+But, yes, we all decided, as
+often happens, we'll just go,
+
+00:02:06.520 --> 00:02:09.669
+oh, we'll go with the
+American thing whatever.
+
+00:02:09.669 --> 00:02:10.750
+60 sounds better than 50.
+
+00:02:10.750 --> 00:02:11.250
+Whatever.
+
+00:02:11.250 --> 00:02:12.240
+We'll do that, which--
+
+00:02:12.240 --> 00:02:13.656
+SURMA: Why won't
+we take something
+
+00:02:13.656 --> 00:02:15.550
+it is a nice part of 100?
+
+00:02:15.550 --> 00:02:17.342
+Let's go with 60.
+
+00:02:17.342 --> 00:02:18.300
+JAKE: Here's the thing.
+
+00:02:18.300 --> 00:02:21.220
+If we went with 50,
+we would all have
+
+00:02:21.220 --> 00:02:23.930
+more time on our frame budgets.
+
+00:02:23.930 --> 00:02:24.680
+Right?
+
+00:02:24.680 --> 00:02:25.665
+SURMA: Yes.
+
+00:02:25.665 --> 00:02:27.490
+JAKE: A significant
+amount of time longer
+
+00:02:27.490 --> 00:02:29.136
+to get a frame together but no--
+
+00:02:29.136 --> 00:02:30.260
+SURMA: 4 milliseconds more.
+
+00:02:30.260 --> 00:02:31.920
+JAKE: Exactly.
+
+00:02:31.920 --> 00:02:32.420
+But--
+
+00:02:32.420 --> 00:02:33.490
+SURMA: But that's not the case.
+
+00:02:33.490 --> 00:02:34.180
+JAKE: That's not the case.
+
+00:02:34.180 --> 00:02:35.890
+SURMA: So and that's
+basically the thing.
+
+00:02:35.890 --> 00:02:37.134
+Everything has been 60--
+
+00:02:37.134 --> 00:02:39.175
+JAKE: But now we're going
+to have even less time.
+
+00:02:39.175 --> 00:02:41.620
+SURMA: Well, kind of, yes.
+
+00:02:41.620 --> 00:02:44.380
+If you want to make
+use of the 120 hertz,
+
+00:02:44.380 --> 00:02:47.900
+yes, but the problem is that
+because every device has
+
+00:02:47.900 --> 00:02:51.550
+been running at
+60, 60 has somewhat
+
+00:02:51.550 --> 00:02:54.160
+become an implicit assumption.
+
+00:02:54.160 --> 00:02:56.230
+JAKE: Right.
+
+00:02:56.230 --> 00:02:58.510
+SURMA: There is a good
+amount of code out there
+
+00:02:58.510 --> 00:03:01.510
+that doesn't actually
+consider how much time has
+
+00:03:01.510 --> 00:03:03.690
+elapsed since the last frame.
+
+00:03:03.690 --> 00:03:05.024
+JAKE: Who would write such code?
+
+00:03:05.024 --> 00:03:06.106
+SURMA: I don't know, Jake.
+
+00:03:06.106 --> 00:03:07.270
+Who would write such code?
+
+00:03:07.270 --> 00:03:08.260
+JAKE: So, yes.
+
+00:03:08.260 --> 00:03:11.470
+So on Twitter we were
+talking about this
+
+00:03:11.470 --> 00:03:15.361
+because this was from
+an Apple engineer.
+
+00:03:15.361 --> 00:03:18.420
+SURMA: So the thing is I
+looked at the iPad Pros
+
+00:03:18.420 --> 00:03:21.520
+and looked at 120 hertz, and
+I was like this is amazing.
+
+00:03:21.520 --> 00:03:22.400
+This looks so good.
+
+00:03:22.400 --> 00:03:24.745
+It actually makes a difference,
+which I was honestly
+
+00:03:24.745 --> 00:03:25.630
+a bit surprised by.
+
+00:03:25.630 --> 00:03:27.400
+JAKE: I was dubious whether
+you could notice a difference,
+
+00:03:27.400 --> 00:03:28.694
+but, yeah, you can.
+
+00:03:28.694 --> 00:03:30.160
+SURMA: If you think about it,
+it makes sense because you--
+
+00:03:30.160 --> 00:03:32.890
+if you think about you have
+60 frames a second, especially
+
+00:03:32.890 --> 00:03:35.440
+with fast motion, so you
+have more in-between images,
+
+00:03:35.440 --> 00:03:38.920
+which will make motion
+blur seem much more real.
+
+00:03:38.920 --> 00:03:39.460
+JAKE: Yes.
+
+00:03:39.460 --> 00:03:41.980
+SURMA: Instead of having like
+three individual pictures
+
+00:03:41.980 --> 00:03:43.790
+from A to B, you
+will have now six.
+
+00:03:43.790 --> 00:03:44.870
+JAKE: Yes.
+
+00:03:44.870 --> 00:03:45.770
+Yeah, double that.
+
+00:03:45.770 --> 00:03:47.740
+SURMA: And it sort
+of makes more--
+
+00:03:47.740 --> 00:03:50.290
+your brain will think even
+more it's an actual motion.
+
+00:03:50.290 --> 00:03:55.140
+And so I was asking what's the
+plan, your wrath on the iPad.
+
+00:03:55.140 --> 00:03:56.101
+Still runs at 60.
+
+00:03:56.101 --> 00:03:57.850
+JAKE: requestAnimationFrame,
+my assumption
+
+00:03:57.850 --> 00:04:01.540
+would be you would get a
+requestAnimationFrame 120 times
+
+00:04:01.540 --> 00:04:02.050
+a second.
+
+00:04:02.050 --> 00:04:02.560
+SURMA: And you do not.
+
+00:04:02.560 --> 00:04:03.310
+JAKE: And you do not.
+
+00:04:03.310 --> 00:04:03.865
+SURMA: You get 60.
+
+00:04:03.865 --> 00:04:04.720
+JAKE: You get 60.
+
+00:04:04.720 --> 00:04:06.970
+SURMA: And that made me
+sad because that basically
+
+00:04:06.970 --> 00:04:10.690
+meant whenever you were using
+a animation framework that
+
+00:04:10.690 --> 00:04:15.070
+does the JavaScript animation
+with JavaScript, which I think
+
+00:04:15.070 --> 00:04:18.190
+at least parts of
+GreenSock, for example, do,
+
+00:04:18.190 --> 00:04:20.110
+you wouldn't get the 120 FPS.
+
+00:04:20.110 --> 00:04:25.031
+JAKE: Yes and I tweeted it when
+a Safari engineer is saying
+
+00:04:25.031 --> 00:04:26.780
+why is this, and I
+think they were saying,
+
+00:04:26.780 --> 00:04:29.090
+oh, well, we're worried
+about legacy code that
+
+00:04:29.090 --> 00:04:30.980
+assumes 60 frames a second.
+
+00:04:30.980 --> 00:04:32.470
+And I was like, come on.
+
+00:04:32.470 --> 00:04:33.700
+Probably not a big deal.
+
+00:04:33.700 --> 00:04:34.760
+Probably not a big deal.
+
+00:04:34.760 --> 00:04:35.860
+Who does that?
+
+00:04:35.860 --> 00:04:38.890
+And they sent me back
+one of my canvas examples
+
+00:04:38.890 --> 00:04:41.740
+from four years ago,
+admittedly, but still--
+
+00:04:41.740 --> 00:04:42.950
+SURMA: Shame on you.
+
+00:04:42.950 --> 00:04:43.300
+JAKE: Shame on me.
+
+00:04:43.300 --> 00:04:44.470
+SURMA: So that's something--
+
+00:04:44.470 --> 00:04:46.300
+JAKE: So CSS animations
+don't have this issue?
+
+00:04:46.300 --> 00:04:47.940
+SURMA: No they don't
+because you are--
+
+00:04:47.940 --> 00:04:50.495
+CSS by the very nature
+of CSS is declarative,
+
+00:04:50.495 --> 00:04:53.410
+so either you use CSS
+transitions where you say
+
+00:04:53.410 --> 00:04:55.540
+go from A to B in one second--
+
+00:04:55.540 --> 00:04:57.844
+it doesn't care
+about frame rate--
+
+00:04:57.844 --> 00:05:00.010
+JAKE: You don't get visibility
+into every frame so--
+
+00:05:00.010 --> 00:05:01.900
+SURMA: Same with CSS animations.
+
+00:05:01.900 --> 00:05:04.929
+Same with web animations API,
+which Safari is working on.
+
+00:05:04.929 --> 00:05:06.970
+It's not behind a flag so
+you can start using it,
+
+00:05:06.970 --> 00:05:07.570
+which is really cool.
+
+00:05:07.570 --> 00:05:08.080
+JAKE: Oh!
+
+00:05:08.080 --> 00:05:09.080
+Oh, I did not know that.
+
+00:05:09.080 --> 00:05:12.280
+SURMA: Yeah, if you
+use these technologies,
+
+00:05:12.280 --> 00:05:15.102
+the animations will run at
+a 120 frames per second,
+
+00:05:15.102 --> 00:05:16.060
+and that's really cool.
+
+00:05:16.060 --> 00:05:18.776
+JAKE: So what's the answer
+here for requestAnimationFrame?
+
+00:05:18.776 --> 00:05:19.400
+What can we do?
+
+00:05:19.400 --> 00:05:20.677
+How can we get that to--
+
+00:05:20.677 --> 00:05:22.010
+it's going to have to be opt in.
+
+00:05:22.010 --> 00:05:24.010
+It my fault. It's
+going to be opt in.
+
+00:05:24.010 --> 00:05:27.060
+But then even that demo
+I did, it was some snow.
+
+00:05:27.060 --> 00:05:28.510
+Snow fell.
+
+00:05:28.510 --> 00:05:31.630
+And so on 120 hertz,
+snow falls twice as fast.
+
+00:05:31.630 --> 00:05:32.680
+It's just a blizzard.
+
+00:05:32.680 --> 00:05:33.950
+It's fine.
+
+00:05:33.950 --> 00:05:35.770
+We can gloss over that.
+
+00:05:35.770 --> 00:05:37.210
+SURMA: Exactly.
+
+00:05:37.210 --> 00:05:40.840
+And then even if we solve
+that, assuming we have a wrath
+
+00:05:40.840 --> 00:05:45.160
+and it's 120 hertz now,
+we still have a problem
+
+00:05:45.160 --> 00:05:47.590
+because as you said we
+have twice the frame rate.
+
+00:05:47.590 --> 00:05:49.710
+And that means half the budget--
+
+00:05:49.710 --> 00:05:51.030
+JAKE: Less time to do it in.
+
+00:05:51.030 --> 00:05:53.920
+SURMA: And so with some
+quick math in my head,
+
+00:05:53.920 --> 00:05:55.760
+I will tell you that
+you are running,
+
+00:05:55.760 --> 00:05:58.090
+you would have an
+8-millisecond budget per frame.
+
+00:05:58.090 --> 00:05:59.860
+JAKE: That is half of 16,
+which we currently have.
+
+00:05:59.860 --> 00:06:00.010
+Yes.
+
+00:06:00.010 --> 00:06:00.460
+SURMA: Exactly.
+
+00:06:00.460 --> 00:06:00.960
+JAKE: Right.
+
+00:06:00.960 --> 00:06:04.180
+SURMA: But the problem is
+that the work the browser
+
+00:06:04.180 --> 00:06:07.360
+has to do stays fixed, and
+I think right about now it's
+
+00:06:07.360 --> 00:06:10.085
+safe to say it's between
+4 and 6 milliseconds--
+
+00:06:10.085 --> 00:06:10.630
+JAKE: Right.
+
+00:06:10.630 --> 00:06:11.796
+SURMA: On a desktop machine.
+
+00:06:11.796 --> 00:06:12.910
+It might change.
+
+00:06:12.910 --> 00:06:14.440
+Your mileage may vary.
+
+00:06:14.440 --> 00:06:19.770
+But that means on 60 FPS, you
+still have way more than half
+
+00:06:19.770 --> 00:06:22.506
+left because let's
+say that you have--
+
+00:06:22.506 --> 00:06:23.880
+the browser needs
+6 milliseconds.
+
+00:06:23.880 --> 00:06:25.360
+You have 10 left.
+
+00:06:25.360 --> 00:06:28.490
+120 FPS, you have 2 left.
+
+00:06:28.490 --> 00:06:30.060
+JAKE: Oh.
+
+00:06:30.060 --> 00:06:31.110
+That's not a lot of time.
+
+00:06:31.110 --> 00:06:33.195
+SURMA: That is
+not a lot of time.
+
+00:06:33.195 --> 00:06:34.090
+JAKE: Yeah.
+
+00:06:34.090 --> 00:06:36.210
+SURMA: And so there's--
+
+00:06:36.210 --> 00:06:38.400
+of course, there's work
+for the browser to do,
+
+00:06:38.400 --> 00:06:39.960
+optimizations to
+only do work when
+
+00:06:39.960 --> 00:06:41.834
+it's really necessary
+to make the things that
+
+00:06:41.834 --> 00:06:43.980
+have to happen
+really fast, things
+
+00:06:43.980 --> 00:06:45.630
+that the browser can
+optimize, but also
+
+00:06:45.630 --> 00:06:49.610
+I think the ecosystem
+needs to change.
+
+00:06:49.610 --> 00:06:54.170
+It needs to look into
+writing things in a way
+
+00:06:54.170 --> 00:06:56.520
+that they yield
+often to the browser,
+
+00:06:56.520 --> 00:06:58.550
+that you can now-- they
+can basically do here
+
+00:06:58.550 --> 00:07:01.004
+is my little chunks of
+work and whenever you need
+
+00:07:01.004 --> 00:07:02.420
+to ship a frame
+in between, here's
+
+00:07:02.420 --> 00:07:03.560
+the points where
+you can do that.
+
+00:07:03.560 --> 00:07:05.935
+JAKE: So requestIdleCallback
+becomes even more important.
+
+00:07:05.935 --> 00:07:07.480
+SURMA: Even more important.
+
+00:07:07.480 --> 00:07:09.685
+And the second
+tool that you have
+
+00:07:09.685 --> 00:07:11.210
+and that not very
+many people use
+
+00:07:11.210 --> 00:07:12.710
+is web workers,
+where you can set up
+
+00:07:12.710 --> 00:07:16.340
+an actual separate thread
+and do work in there.
+
+00:07:16.340 --> 00:07:18.824
+And you can block in there
+you can do all kinds of work.
+
+00:07:18.824 --> 00:07:20.990
+The main thread won't care
+and will stay responsive.
+
+00:07:20.990 --> 00:07:23.240
+JAKE: So something to
+prepare for in 2018.
+
+00:07:23.240 --> 00:07:24.488
+SURMA: Definitely.
+
+00:07:24.488 --> 00:07:26.487
+JAKE: I think there's
+an opportunity, if we
+
+00:07:26.487 --> 00:07:28.070
+did have go for
+another function name,
+
+00:07:28.070 --> 00:07:30.860
+I think there's an opportunity
+to rename requestAnimationFrame
+
+00:07:30.860 --> 00:07:32.815
+to something a little
+bit more meaningful.
+
+00:07:32.815 --> 00:07:34.070
+SURMA: Yeah, it's not
+the best name is it?
+
+00:07:34.070 --> 00:07:36.180
+JAKE: Yeah, so if it
+was like before render.
+
+00:07:36.180 --> 00:07:38.140
+SURMA: Our request
+on animation frame.
+
+00:07:38.140 --> 00:07:39.990
+JAKE: Right.
+

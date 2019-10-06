@@ -1,0 +1,343 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:09.291
+[MUSIC PLAYING]
+
+00:00:09.291 --> 00:00:11.890
+ADDY: So Matt, what's
+in your bundle?
+
+00:00:11.890 --> 00:00:13.207
+MATT: I don't have any bundles.
+
+00:00:13.207 --> 00:00:15.040
+ADDY: You don't have
+any JavaScript bundles?
+
+00:00:15.040 --> 00:00:16.970
+MATT: I don't write
+JavaScript anymore.
+
+00:00:16.970 --> 00:00:19.032
+ADDY: Has JavaScript
+fatigue finally gotten you?
+
+00:00:19.032 --> 00:00:20.990
+MATT: Yeah, I'll say--
+I'm just-- I'm dead now.
+
+00:00:20.990 --> 00:00:22.323
+ADDY: What do you do these days?
+
+00:00:22.323 --> 00:00:24.120
+MATT: I come and meet
+you in a coffee shop,
+
+00:00:24.120 --> 00:00:26.610
+and get free coffee, because
+I'm a delightful human being.
+
+00:00:26.610 --> 00:00:28.040
+ADDY: Like any normal developer.
+
+00:00:28.040 --> 00:00:28.860
+I see.
+
+00:00:28.860 --> 00:00:31.600
+OK, so for everybody else out
+there working on Java scripts,
+
+00:00:31.600 --> 00:00:33.600
+there's a really cool
+tool I recently discovered
+
+00:00:33.600 --> 00:00:35.015
+called Source Map Explorer.
+
+00:00:35.015 --> 00:00:37.080
+You can get it on npm.
+
+00:00:37.080 --> 00:00:38.747
+This is sort of useful
+for understanding
+
+00:00:38.747 --> 00:00:40.705
+what is in your JavaScript
+bundle, which you're
+
+00:00:40.705 --> 00:00:41.885
+shipping down to your users.
+
+00:00:41.885 --> 00:00:45.300
+MATT: So how is this different
+from just normal source maps?
+
+00:00:45.300 --> 00:00:46.871
+What does it give you?
+
+00:00:47.307 --> 00:00:49.140
+ADDY: It sort of
+understands your dependency
+
+00:00:49.140 --> 00:00:50.530
+graph and dependency tree.
+
+00:00:50.530 --> 00:00:53.270
+Will visualize it for you
+in a nice, pleasant way.
+
+00:00:53.270 --> 00:00:53.770
+MATT: OK.
+
+00:00:54.270 --> 00:00:56.820
+ADDY: OK, so I'm going to run
+it against a source map that
+
+00:00:56.820 --> 00:00:59.140
+was generated from one
+of my vendor bundles,
+
+00:00:59.140 --> 00:01:00.790
+and just show you
+what this looks like.
+
+00:01:00.790 --> 00:01:02.910
+So here we've got Chrome open.
+
+00:01:02.910 --> 00:01:06.690
+I've got the Source Map
+Explorer dependency graph
+
+00:01:06.690 --> 00:01:07.775
+sort of visualized here.
+
+00:01:07.775 --> 00:01:09.900
+And this is kind of nice,
+because I can take a look
+
+00:01:09.900 --> 00:01:11.975
+at any one part of my graph.
+
+00:01:11.975 --> 00:01:13.350
+So I can see here--
+all these are
+
+00:01:13.350 --> 00:01:16.190
+all of the different bits and
+pieces of React that I'm using.
+
+00:01:16.190 --> 00:01:18.285
+I've got React router
+over here in the corner.
+
+00:01:18.285 --> 00:01:19.660
+And I can zoom in and out.
+
+00:01:19.660 --> 00:01:21.720
+It's so nice and pretty.
+
+00:01:21.720 --> 00:01:24.290
+But I've also got-- I can see
+what percentage of my bundle
+
+00:01:24.290 --> 00:01:26.100
+is being taken up by
+different libraries.
+
+00:01:26.100 --> 00:01:27.540
+Here I can see
+that, in this case,
+
+00:01:27.540 --> 00:01:30.790
+Firebase is taking up
+quite a lot of my bundle.
+
+00:01:30.790 --> 00:01:32.360
+But I wanted to
+show you a pro tip
+
+00:01:32.360 --> 00:01:35.490
+that I was walking through with
+David East the other day, so--
+
+00:01:35.490 --> 00:01:38.490
+and Source Map Explorer
+visualizes this quite nicely.
+
+00:01:38.490 --> 00:01:42.330
+So I can actually just require
+in the pieces of Firebase
+
+00:01:42.330 --> 00:01:44.297
+that I'm actually using, so--
+
+00:01:44.297 --> 00:01:46.380
+MATT: Rather than a whole
+massive bundle of thing.
+
+00:01:46.380 --> 00:01:47.796
+ADDY: Rather than
+the whole thing.
+
+00:01:47.796 --> 00:01:50.600
+So, few minor changes.
+
+00:01:50.600 --> 00:01:55.000
+I can go and do a new build.
+
+00:01:55.000 --> 00:01:59.370
+And if that all works out, I can
+show you the before and after,
+
+00:01:59.370 --> 00:02:02.220
+thanks to some movie magic.
+
+00:02:02.220 --> 00:02:05.730
+Now we're going to go and run it
+against the new vendor bundle.
+
+00:02:05.730 --> 00:02:07.710
+And what we can
+see now, is that A,
+
+00:02:07.710 --> 00:02:10.470
+we've got a much smaller
+bundle on the whole.
+
+00:02:10.470 --> 00:02:12.750
+But B, we've also changed
+the look of this graph.
+
+00:02:12.750 --> 00:02:17.370
+So earlier we had Firebase, it's
+about 304 kilobytes, sort of.
+
+00:02:17.370 --> 00:02:20.050
+That's unminified, ungzipped,
+or anything like that.
+
+00:02:20.050 --> 00:02:22.950
+But it contained database,
+authentication, storage,
+
+00:02:22.950 --> 00:02:23.680
+an app.
+
+00:02:23.680 --> 00:02:26.230
+I really only need
+app and database.
+
+00:02:26.230 --> 00:02:28.470
+So I just switched my
+code over to using those.
+
+00:02:28.470 --> 00:02:30.146
+Atomic modules--
+and here you can
+
+00:02:30.146 --> 00:02:31.770
+see that we've actually
+managed to make
+
+00:02:31.770 --> 00:02:32.895
+our app a tiny bit smaller.
+
+00:02:32.895 --> 00:02:33.490
+MATT: Yay!
+
+00:02:33.990 --> 00:02:36.900
+ADDY: It's 138
+kilobytes, before we've
+
+00:02:36.900 --> 00:02:38.290
+minified it and gzipped it.
+
+00:02:38.290 --> 00:02:40.814
+MATT: All you need to use this
+is to just the source map.
+
+00:02:40.814 --> 00:02:43.230
+You don't need the original
+source, or anything like that?
+
+00:02:43.230 --> 00:02:44.640
+ADDY: It just works
+on source maps.
+
+00:02:44.640 --> 00:02:44.970
+So, normally--
+
+00:02:44.970 --> 00:02:45.360
+[INTERPOSING VOICES]
+
+00:02:45.360 --> 00:02:47.970
+ADDY: --like for dev, at least,
+I usually have my source maps
+
+00:02:47.970 --> 00:02:49.060
+on my JavaScript files.
+
+00:02:49.060 --> 00:02:50.310
+MATT: Yeah, it's kind of nice.
+
+00:02:50.310 --> 00:02:52.260
+Because I guess, if
+you strip stuff out,
+
+00:02:52.260 --> 00:02:55.350
+the actual main source, by
+whatever tooling that then gets
+
+00:02:55.350 --> 00:02:57.701
+accounted for in the source
+map-- yeah, it's nice.
+
+00:02:58.057 --> 00:03:00.390
+ADDY: There's a bunch of
+different bundle analysis tools
+
+00:03:00.390 --> 00:03:01.570
+are available.
+
+00:03:01.570 --> 00:03:03.360
+Web Pack Bundle
+Analyzer is another one.
+
+00:03:03.360 --> 00:03:05.155
+That's got
+colorization in place.
+
+00:03:05.155 --> 00:03:06.030
+And it's super sweet.
+
+00:03:06.030 --> 00:03:07.904
+Specific to Web Pack,
+I think, at the moment.
+
+00:03:07.904 --> 00:03:09.804
+But it's also
+worth checking out.
+
+00:03:09.804 --> 00:03:11.220
+But yeah, tools
+like this are just
+
+00:03:11.220 --> 00:03:13.595
+great for understanding exactly
+what you're shipping down
+
+00:03:13.595 --> 00:03:14.310
+to your users.
+
+00:03:14.310 --> 00:03:17.331
+So it's good to ask yourself,
+what's in your bundle?
+
+00:03:17.331 --> 00:03:18.820
+MATT: I see what you did there.
+
+00:03:18.820 --> 00:03:20.370
+Nice.
+

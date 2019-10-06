@@ -1,0 +1,2680 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.300
+SURMA: Welcome back to
+the 2018 HTTP203 World
+
+00:00:03.300 --> 00:00:04.335
+Cup of Web Features.
+
+00:00:08.220 --> 00:00:08.940
+Yes!
+
+00:00:08.940 --> 00:00:09.950
+JAKE: I should have
+just let you carry on.
+
+00:00:09.950 --> 00:00:10.783
+That was quite good.
+
+00:00:17.160 --> 00:00:20.940
+So in the previous episode,
+we looked at eight features,
+
+00:00:20.940 --> 00:00:23.490
+and we whittled them down
+to our favorite one of them.
+
+00:00:23.490 --> 00:00:24.540
+SURMA: Of those
+eight features, yeah.
+
+00:00:24.540 --> 00:00:25.789
+JAKE: Of those eight features.
+
+00:00:25.789 --> 00:00:28.080
+And if you haven't
+seen that video, then--
+
+00:00:28.080 --> 00:00:29.020
+SURMA: You should.
+
+00:00:29.020 --> 00:00:29.580
+JAKE: Yeah.
+
+00:00:29.580 --> 00:00:31.250
+This will maybe make more sense.
+
+00:00:31.250 --> 00:00:32.820
+And if you haven't seen it--
+
+00:00:32.820 --> 00:00:34.020
+SURMA: Spoiler alert.
+
+00:00:34.020 --> 00:00:34.530
+JAKE: Yeah.
+
+00:00:34.530 --> 00:00:37.170
+It was Scroll Snap
+was our favorite one.
+
+00:00:37.170 --> 00:00:41.140
+SURMA: We're not going to repeat
+who Scroll Snap won against.
+
+00:00:41.140 --> 00:00:41.810
+JAKE: No.
+
+00:00:41.810 --> 00:00:45.050
+But we're going to take a
+look at the next feature.
+
+00:00:45.050 --> 00:00:48.585
+And I would like to talk
+about Async Clipboard.
+
+00:00:48.585 --> 00:00:51.085
+SURMA: It probably does what
+it says on the tin, doesn't it?
+
+00:00:51.085 --> 00:00:51.470
+JAKE: It's wild.
+
+00:00:51.470 --> 00:00:52.710
+Do you remember clipboard?
+
+00:00:52.710 --> 00:00:54.190
+Remember doing this?
+
+00:00:54.190 --> 00:00:57.270
+SURMA: execCommand, that is
+some API designed straight out
+
+00:00:57.270 --> 00:00:57.830
+of hell.
+
+00:00:57.830 --> 00:00:58.329
+JAKE: Yes.
+
+00:00:58.329 --> 00:00:59.330
+Yes, it is.
+
+00:00:59.330 --> 00:01:00.330
+And you would have
+to-- if you wanted
+
+00:01:00.330 --> 00:01:02.580
+to copy some text, you'd have
+to create an input element,
+
+00:01:02.580 --> 00:01:04.913
+because that's where you could
+do the focus on selecting
+
+00:01:04.913 --> 00:01:06.570
+properly.
+
+00:01:06.570 --> 00:01:09.550
+SURMA: Setting markers in the
+Dom, text selection markers,
+
+00:01:09.550 --> 00:01:10.990
+which gets even worse.
+
+00:01:10.990 --> 00:01:12.220
+JAKE: It's horrible.
+
+00:01:12.220 --> 00:01:13.020
+You copy.
+
+00:01:13.020 --> 00:01:14.010
+You've changed focus.
+
+00:01:14.010 --> 00:01:15.060
+You've changed selection.
+
+00:01:15.060 --> 00:01:16.710
+This is very destructive things.
+
+00:01:16.710 --> 00:01:17.880
+SURMA: And support was iffy.
+
+00:01:17.880 --> 00:01:19.770
+Then you had like
+your fallback flash
+
+00:01:19.770 --> 00:01:23.665
+plugin until flash
+support got-- yeah.
+
+00:01:23.665 --> 00:01:24.290
+JAKE: Horrible.
+
+00:01:24.290 --> 00:01:25.110
+SURMA: Ah.
+
+00:01:25.110 --> 00:01:25.950
+JAKE: So this is it.
+
+00:01:25.950 --> 00:01:26.460
+It's async.
+
+00:01:26.460 --> 00:01:29.250
+So for large content,
+it's less likely to be
+
+00:01:29.250 --> 00:01:31.450
+blocking on the main
+thread, which is great.
+
+00:01:31.450 --> 00:01:33.937
+But I think the main sell
+here is, isn't that nice?
+
+00:01:33.937 --> 00:01:34.770
+SURMA: It's so nice.
+
+00:01:34.770 --> 00:01:35.350
+JAKE: Isn't that nice?
+
+00:01:35.350 --> 00:01:36.720
+SURMA: And I'm guessing
+that it's not just
+
+00:01:36.720 --> 00:01:38.550
+write text and read
+text, but there's also
+
+00:01:38.550 --> 00:01:40.952
+going to be files and images.
+
+00:01:40.952 --> 00:01:43.410
+And because you have screenshots
+on many operating systems,
+
+00:01:43.410 --> 00:01:45.210
+it can just go onto
+the clipboard first.
+
+00:01:45.210 --> 00:01:46.793
+JAKE: Yeah, potential
+in many formats.
+
+00:01:46.793 --> 00:01:48.640
+So that bit is not there yet.
+
+00:01:48.640 --> 00:01:49.140
+SURMA: Yeah.
+
+00:01:49.140 --> 00:01:51.740
+JAKE: That's something
+that's just text for now.
+
+00:01:51.740 --> 00:01:53.405
+SURMA: It's still
+winning already.
+
+00:01:53.405 --> 00:01:56.460
+JAKE: Absolutely,
+absolutely winning.
+
+00:01:56.460 --> 00:01:58.015
+So that brings us on to--
+
+00:01:58.015 --> 00:01:58.890
+SURMA: The next one--
+
+00:01:58.890 --> 00:02:00.223
+JAKE: You want to talk about it.
+
+00:02:00.223 --> 00:02:01.760
+SURMA: Which is Typed OM.
+
+00:02:01.760 --> 00:02:02.520
+That's a Houdini.
+
+00:02:02.520 --> 00:02:03.582
+That's Typed OM.
+
+00:02:03.582 --> 00:02:04.540
+That's the Houdini bit.
+
+00:02:04.540 --> 00:02:09.650
+So it's actually one of the
+lower almost less exciting APIs
+
+00:02:09.650 --> 00:02:10.150
+of Houdini.
+
+00:02:10.150 --> 00:02:11.000
+JAKE: You're really selling it.
+
+00:02:11.000 --> 00:02:11.290
+SURMA: Yeah.
+
+00:02:11.290 --> 00:02:11.580
+JAKE: Good.
+
+00:02:11.580 --> 00:02:12.930
+SURMA: But it's very
+necessary to make
+
+00:02:12.930 --> 00:02:13.920
+all the other ones happen.
+
+00:02:13.920 --> 00:02:15.878
+And it's actually addressing
+a huge pain point,
+
+00:02:15.878 --> 00:02:19.230
+I think, of many developers,
+because it gives types
+
+00:02:19.230 --> 00:02:21.950
+to CSS stylings.
+
+00:02:21.950 --> 00:02:22.450
+JAKE: OK.
+
+00:02:22.450 --> 00:02:27.820
+SURMA: So you might know get
+computer styles or just the dot
+
+00:02:27.820 --> 00:02:29.155
+style property on an element.
+
+00:02:29.155 --> 00:02:29.988
+JAKE: Yep, yep, yep.
+
+00:02:29.988 --> 00:02:32.610
+SURMA: And there is
+now the typed versions,
+
+00:02:32.610 --> 00:02:35.430
+which are either
+Element.computerStyleMap
+
+00:02:35.430 --> 00:02:37.570
+or the attributeStyleMap.
+
+00:02:37.570 --> 00:02:38.070
+JAKE: OK.
+
+00:02:38.070 --> 00:02:39.500
+SURMA: And so now
+we have a styleMap.
+
+00:02:39.500 --> 00:02:40.750
+So what does it actually mean?
+
+00:02:40.750 --> 00:02:42.780
+A styleMap basically
+has scatters
+
+00:02:42.780 --> 00:02:47.050
+and gives you separate number
+values and their units.
+
+00:02:47.050 --> 00:02:49.110
+So now you don't need to
+do string concatenation
+
+00:02:49.110 --> 00:02:51.568
+and like some weird splitting
+or all these different things
+
+00:02:51.568 --> 00:02:53.950
+to figure out what is
+the actual numeric value.
+
+00:02:53.950 --> 00:02:55.950
+Much easier to do math
+with, which you sometimes
+
+00:02:55.950 --> 00:02:58.820
+have to do, or just analyze
+them and figure certain things.
+
+00:02:58.820 --> 00:02:59.820
+JAKE: Well, before you--
+
+00:02:59.820 --> 00:03:01.361
+I really like what
+they've done here.
+
+00:03:01.361 --> 00:03:03.730
+So we've got unit, px,
+which is nice and short.
+
+00:03:03.730 --> 00:03:06.210
+It's what you write
+in CSS to have that.
+
+00:03:06.210 --> 00:03:08.430
+And then here we have
+percent written out.
+
+00:03:08.430 --> 00:03:08.980
+SURMA: Yeah.
+
+00:03:08.980 --> 00:03:10.710
+I don't remember why,
+but there was a reason.
+
+00:03:10.710 --> 00:03:11.300
+JAKE: There was a reason.
+
+00:03:11.300 --> 00:03:11.520
+OK.
+
+00:03:11.520 --> 00:03:12.020
+That's good.
+
+00:03:12.020 --> 00:03:12.520
+That's good.
+
+00:03:12.520 --> 00:03:15.144
+SURMA: It actually goes farther
+than that, because you can also
+
+00:03:15.144 --> 00:03:16.560
+create these types this way.
+
+00:03:16.560 --> 00:03:21.189
+So you can-- you now have
+basically a small part of CSS
+
+00:03:21.189 --> 00:03:23.730
+that's parser exposed, and you
+can just put it in the string,
+
+00:03:23.730 --> 00:03:25.470
+and it gives you back
+that kind of typing.
+
+00:03:25.470 --> 00:03:26.761
+You can create them yourselves.
+
+00:03:26.761 --> 00:03:28.470
+And then set them this way.
+
+00:03:28.470 --> 00:03:32.730
+But even more excitingly, you
+have add and subtract on these.
+
+00:03:32.730 --> 00:03:33.990
+You can actually do math.
+
+00:03:33.990 --> 00:03:34.710
+JAKE: Oh!
+
+00:03:34.710 --> 00:03:36.420
+So in the same way calc works.
+
+00:03:36.420 --> 00:03:36.920
+SURMA: Yeah!
+
+00:03:36.920 --> 00:03:40.140
+So this actually, if it's the
+same type of the same unit
+
+00:03:40.140 --> 00:03:42.210
+length, it will just coalesce.
+
+00:03:42.210 --> 00:03:44.180
+If you have
+different-- like here,
+
+00:03:44.180 --> 00:03:47.130
+I'm adding 5% to 10 pixels.
+
+00:03:47.130 --> 00:03:50.880
+It will actually give you
+a proper arithmetic tree.
+
+00:03:50.880 --> 00:03:55.350
+So we can do all these
+analyses or like reorder them.
+
+00:03:55.350 --> 00:03:56.760
+All the things
+you sometimes want
+
+00:03:56.760 --> 00:03:59.580
+to do without having to
+reimplement the CSS parser.
+
+00:03:59.580 --> 00:04:01.580
+JAKE: OK.
+
+00:04:01.580 --> 00:04:04.320
+I'm feeling that I might
+know what has won here.
+
+00:04:04.320 --> 00:04:05.127
+SURMA: Maybe.
+
+00:04:05.127 --> 00:04:06.210
+Let's go back to the tree.
+
+00:04:06.210 --> 00:04:07.290
+I don't remember what
+you're talking about.
+
+00:04:07.290 --> 00:04:07.800
+Oh, yeah.
+
+00:04:07.800 --> 00:04:09.190
+JAKE: Oh, it's so exciting!
+
+00:04:09.190 --> 00:04:13.630
+You can't remember it, even 30
+seconds later, whatever it was.
+
+00:04:13.630 --> 00:04:14.130
+I just--
+
+00:04:14.130 --> 00:04:14.250
+SURMA: To be fair--
+
+00:04:14.250 --> 00:04:16.230
+JAKE: I think Async
+Clipboard is good.
+
+00:04:16.230 --> 00:04:17.700
+SURMA: Yeah.
+
+00:04:17.700 --> 00:04:21.450
+It's not that often that
+you need Typed OM directly.
+
+00:04:21.450 --> 00:04:23.100
+You need them for
+lots of Houdini APIs.
+
+00:04:23.100 --> 00:04:26.400
+And if you need Typed OM,
+it is so huge to have it.
+
+00:04:26.400 --> 00:04:26.900
+JAKE: Yes.
+
+00:04:26.900 --> 00:04:28.691
+SURMA: Then again, you
+don't need Clipboard
+
+00:04:28.691 --> 00:04:30.500
+that often as well,
+I guess, unless
+
+00:04:30.500 --> 00:04:31.700
+in certain circumstances.
+
+00:04:31.700 --> 00:04:33.840
+So yeah, I'm going
+to go with Typed OM.
+
+00:04:33.840 --> 00:04:34.520
+JAKE: OK.
+
+00:04:34.520 --> 00:04:35.580
+OK.
+
+00:04:35.580 --> 00:04:36.570
+I agree.
+
+00:04:36.570 --> 00:04:41.065
+So Async Clipboard, it's a big
+improvement to what we had,
+
+00:04:41.065 --> 00:04:43.440
+but there's just a lot going
+on in Typed OM, isn't there?
+
+00:04:43.440 --> 00:04:46.016
+It feels like it wins just
+for being a bigger feature.
+
+00:04:46.016 --> 00:04:48.390
+It's definitely something I
+would have loved in the past,
+
+00:04:48.390 --> 00:04:50.330
+like even for small
+parts of that.
+
+00:04:50.330 --> 00:04:51.900
+I love when I get excited.
+
+00:04:51.900 --> 00:04:52.697
+It's jingling.
+
+00:04:52.697 --> 00:04:54.530
+SURMA: And there were
+some experiments where
+
+00:04:54.530 --> 00:04:56.986
+they had like
+animation heavy sites,
+
+00:04:56.986 --> 00:04:58.860
+and they basically
+rewrote them with Typed OM
+
+00:04:58.860 --> 00:05:00.535
+and actually got 80% faster.
+
+00:05:00.535 --> 00:05:01.410
+It's an extreme case.
+
+00:05:01.410 --> 00:05:02.451
+JAKE: 80 is a big number.
+
+00:05:02.451 --> 00:05:03.640
+That's a big number.
+
+00:05:03.640 --> 00:05:05.700
+I'm going to put it through.
+
+00:05:05.700 --> 00:05:08.110
+That goes through.
+
+00:05:08.110 --> 00:05:09.270
+Right.
+
+00:05:09.270 --> 00:05:10.470
+Next.
+
+00:05:10.470 --> 00:05:15.900
+Steady on, because the next
+feature is Update Via Cache.
+
+00:05:15.900 --> 00:05:17.990
+SURMA: OK.
+
+00:05:17.990 --> 00:05:21.680
+JAKE: So this is a
+Service Worker feature.
+
+00:05:21.680 --> 00:05:22.760
+SURMA: I'm not surprised.
+
+00:05:22.760 --> 00:05:24.634
+JAKE: What happens-- we
+ran into this problem
+
+00:05:24.634 --> 00:05:27.680
+where we were checking for
+updates on the Service Worker
+
+00:05:27.680 --> 00:05:30.877
+using the HTTP cache, as things
+normally happen everywhere
+
+00:05:30.877 --> 00:05:31.710
+for everything else.
+
+00:05:31.710 --> 00:05:32.510
+SURMA: Oh, that cache.
+
+00:05:32.510 --> 00:05:33.010
+That cache.
+
+00:05:33.010 --> 00:05:35.060
+JAKE: The HTTP cache.
+
+00:05:35.060 --> 00:05:39.350
+But we would always time
+things out after 24 hours.
+
+00:05:39.350 --> 00:05:42.191
+If it was over 24 hours old,
+we would go to the network
+
+00:05:42.191 --> 00:05:43.690
+regardless of what
+was in the cache.
+
+00:05:43.690 --> 00:05:45.715
+SURMA: Ignore the
+caching headers.
+
+00:05:45.715 --> 00:05:47.840
+JAKE: A lot of developers
+still had a lot of issues
+
+00:05:47.840 --> 00:05:51.754
+with that, because they didn't
+have control over their headers
+
+00:05:51.754 --> 00:05:53.420
+for like one particular
+JavaScript file,
+
+00:05:53.420 --> 00:05:54.540
+like the Service Worker.
+
+00:05:54.540 --> 00:05:55.040
+SURMA: Yeah.
+
+00:05:55.040 --> 00:05:56.450
+[INAUDIBLE] Pages is,
+I think, a good example
+
+00:05:56.450 --> 00:05:58.287
+where you don't have
+control over your headers.
+
+00:05:58.287 --> 00:05:58.760
+JAKE: Exactly.
+
+00:05:58.760 --> 00:05:59.150
+Exactly.
+
+00:05:59.150 --> 00:06:00.770
+Yeah, they have a
+default cache of like--
+
+00:06:00.770 --> 00:06:02.075
+SURMA: 10 minutes,
+something random.
+
+00:06:02.075 --> 00:06:02.850
+JAKE: 10 minutes, yeah.
+
+00:06:02.850 --> 00:06:04.340
+So we introduced
+Update Via Cache,
+
+00:06:04.340 --> 00:06:08.990
+where you can tell a Service
+Worker what to go to the HTTP
+
+00:06:08.990 --> 00:06:10.150
+cache for, what to ignore.
+
+00:06:10.150 --> 00:06:12.150
+SURMA: So for the source,
+you tell the browser
+
+00:06:12.150 --> 00:06:14.210
+whether to respect the HTTP
+cache for the Service Worker
+
+00:06:14.210 --> 00:06:15.020
+file specifically.
+
+00:06:15.020 --> 00:06:15.650
+JAKE: Yes.
+
+00:06:15.650 --> 00:06:16.180
+Yes.
+
+00:06:16.180 --> 00:06:20.000
+So you updateViaCache all,
+which was the old default.
+
+00:06:20.000 --> 00:06:22.310
+It's not the default anymore.
+
+00:06:22.310 --> 00:06:24.219
+There's imports,
+which is saying,
+
+00:06:24.219 --> 00:06:26.510
+don't go to the cache for
+the main Service Worker file,
+
+00:06:26.510 --> 00:06:28.570
+but anything it imports, you
+can go to the cache file.
+
+00:06:28.570 --> 00:06:28.910
+SURMA: Wow.
+
+00:06:28.910 --> 00:06:29.409
+That's cool.
+
+00:06:29.409 --> 00:06:31.610
+JAKE: That's the new default.
+Or you can say, ignore
+
+00:06:31.610 --> 00:06:34.280
+the cache for everything.
+
+00:06:34.280 --> 00:06:35.760
+That's my feature.
+
+00:06:35.760 --> 00:06:36.530
+SURMA: My feature.
+
+00:06:36.530 --> 00:06:38.470
+All right, but
+what's my feature?
+
+00:06:38.470 --> 00:06:40.340
+Desktop PWAs.
+
+00:06:40.340 --> 00:06:42.950
+So I have no code samples,
+because it's once again
+
+00:06:42.950 --> 00:06:46.700
+something that doesn't
+really change the way you
+
+00:06:46.700 --> 00:06:48.870
+write code or gives you
+any new capabilities,
+
+00:06:48.870 --> 00:06:51.690
+but it's basically the whole
+install to home screen,
+
+00:06:51.690 --> 00:06:52.582
+but on desktop.
+
+00:06:52.582 --> 00:06:53.540
+Make it its own window.
+
+00:06:53.540 --> 00:06:57.050
+Make it its own button in the
+launcher or on the Start menu,
+
+00:06:57.050 --> 00:06:59.990
+or whatever you have nowadays.
+
+00:06:59.990 --> 00:07:04.340
+And Edge has it kind of with
+allowing you to submit PWAs
+
+00:07:04.340 --> 00:07:05.160
+to the store.
+
+00:07:05.160 --> 00:07:06.750
+JAKE: Yeah, they were ahead
+of everyone in doing sort of--
+
+00:07:06.750 --> 00:07:09.170
+SURMA: But you still couldn't
+just install something
+
+00:07:09.170 --> 00:07:10.951
+from Edge to your desktop.
+
+00:07:10.951 --> 00:07:11.825
+That wasn't possible.
+
+00:07:11.825 --> 00:07:12.260
+JAKE: Right.
+
+00:07:12.260 --> 00:07:13.968
+SURMA: You had to
+submit it to the Store.
+
+00:07:13.968 --> 00:07:15.550
+You had to get it
+approved, I think.
+
+00:07:15.550 --> 00:07:16.591
+And then it got in there.
+
+00:07:16.591 --> 00:07:19.790
+So now with Chrome on
+Chrome OS and on Windows,
+
+00:07:19.790 --> 00:07:21.890
+and I think on Mac
+behind the flag.
+
+00:07:21.890 --> 00:07:23.265
+JAKE: Yeah, it's
+behind the flag.
+
+00:07:23.265 --> 00:07:26.330
+SURMA: You can legit open the
+menu and say, install this.
+
+00:07:26.330 --> 00:07:28.040
+And then it gets
+into the launcher
+
+00:07:28.040 --> 00:07:29.870
+with its own window,
+its own icon,
+
+00:07:29.870 --> 00:07:33.080
+its own command tap spot
+in all these things.
+
+00:07:33.080 --> 00:07:36.249
+So becoming a proper
+application on your desktop.
+
+00:07:36.249 --> 00:07:37.790
+JAKE: It's kind of
+replacing Electron
+
+00:07:37.790 --> 00:07:40.252
+for a lot of simple cases.
+
+00:07:40.252 --> 00:07:40.960
+SURMA: Hopefully.
+
+00:07:40.960 --> 00:07:42.540
+JAKE: Hopefully.
+
+00:07:42.540 --> 00:07:43.160
+OK.
+
+00:07:43.160 --> 00:07:49.190
+So this is a difficult
+one, because when
+
+00:07:49.190 --> 00:07:51.590
+I talked about Update Via
+Cache, the big news there
+
+00:07:51.590 --> 00:07:52.930
+is that we changed the default.
+
+00:07:52.930 --> 00:07:53.180
+SURMA: Yeah.
+
+00:07:53.180 --> 00:07:54.388
+JAKE: It's not a new feature.
+
+00:07:54.388 --> 00:07:55.340
+It's a change.
+
+00:07:55.340 --> 00:07:57.020
+So hmm, shaky ground.
+
+00:07:57.020 --> 00:08:01.015
+Desktop PWAs, it's not a
+developer facing feature.
+
+00:08:01.015 --> 00:08:02.390
+Well, it kind of
+is, because it's
+
+00:08:02.390 --> 00:08:05.540
+something you can talk about
+my app can run on desktop.
+
+00:08:05.540 --> 00:08:07.190
+It's not even on all
+operating systems.
+
+00:08:07.190 --> 00:08:07.805
+SURMA: Yeah.
+
+00:08:07.805 --> 00:08:08.930
+JAKE: This is a weak round.
+
+00:08:08.930 --> 00:08:12.420
+So two things that have actually
+been really well received.
+
+00:08:12.420 --> 00:08:14.570
+SURMA: I think Update
+Via Cache solves--
+
+00:08:14.570 --> 00:08:15.710
+JAKE: Oh, really?
+
+00:08:15.710 --> 00:08:19.280
+I was going to say,
+I think Desktop PWAs,
+
+00:08:19.280 --> 00:08:21.890
+it's such a major thing.
+
+00:08:21.890 --> 00:08:26.420
+It's something that's moving
+the web into a native space.
+
+00:08:26.420 --> 00:08:27.710
+SURMA: I guess-- I think--
+
+00:08:27.710 --> 00:08:28.740
+I guess you're absolutely right.
+
+00:08:28.740 --> 00:08:30.380
+It just doesn't feel
+as real to me yet.
+
+00:08:30.380 --> 00:08:32.360
+JAKE: Because there's
+no direct APIs for it.
+
+00:08:32.360 --> 00:08:33.659
+SURMA: Yeah, and there's
+not an install banner,
+
+00:08:33.659 --> 00:08:34.492
+I think, on desktop.
+
+00:08:34.492 --> 00:08:35.809
+It doesn't prompt you to do it.
+
+00:08:35.809 --> 00:08:37.517
+JAKE: You need to set
+up some JavaScripts
+
+00:08:37.517 --> 00:08:39.169
+to have a button for it.
+
+00:08:39.169 --> 00:08:41.929
+SURMA: I'm fine with letting
+Desktop PWAs through.
+
+00:08:41.929 --> 00:08:43.700
+JAKE: What I find in
+these sort of things,
+
+00:08:43.700 --> 00:08:45.624
+I feel like you've done
+me a favor by siding
+
+00:08:45.624 --> 00:08:48.290
+with me, which is weird, because
+it's against the Service Worker
+
+00:08:48.290 --> 00:08:49.256
+feature.
+
+00:08:49.256 --> 00:08:50.630
+SURMA: You set
+yourself up, mate.
+
+00:08:50.630 --> 00:08:51.730
+JAKE: I did, didn't I?
+
+00:08:51.730 --> 00:08:54.220
+I worry that I now owe you
+one maybe in a later round.
+
+00:08:54.220 --> 00:08:54.920
+SURMA: Oh, yeah.
+
+00:08:54.920 --> 00:08:56.790
+I'll call in that
+favor when I need it.
+
+00:08:56.790 --> 00:08:57.290
+JAKE: OK.
+
+00:08:57.290 --> 00:09:01.490
+So that moves Desktop
+PWAs into the next round.
+
+00:09:01.490 --> 00:09:02.960
+SURMA: Into round two.
+
+00:09:02.960 --> 00:09:04.440
+JAKE: So Typed OM
+and Desktop PWAs.
+
+00:09:04.440 --> 00:09:05.106
+SURMA: Typed OM.
+
+00:09:07.970 --> 00:09:09.959
+JAKE: I'm really
+torn about this one.
+
+00:09:09.959 --> 00:09:12.000
+SURMA: Yeah, actually,
+the more I think about it.
+
+00:09:12.000 --> 00:09:12.490
+JAKE: Well, it's--
+
+00:09:12.490 --> 00:09:12.990
+SURMA: No.
+
+00:09:12.990 --> 00:09:13.800
+Typed OM.
+
+00:09:13.800 --> 00:09:17.040
+Because it doesn't allow
+me to write better code.
+
+00:09:17.040 --> 00:09:21.360
+Desktop PWAs don't give me
+necessarily new capabilities.
+
+00:09:21.360 --> 00:09:21.914
+I'm not--
+
+00:09:21.914 --> 00:09:24.330
+JAKE: They don't make your
+life easier as a web developer.
+
+00:09:24.330 --> 00:09:24.930
+SURMA: Yeah.
+
+00:09:24.930 --> 00:09:29.554
+JAKE: They might make it
+easier to get more work,
+
+00:09:29.554 --> 00:09:32.220
+because you're able to do things
+that are more like native apps.
+
+00:09:32.220 --> 00:09:34.345
+SURMA: And also, I feel
+like lots of other features
+
+00:09:34.345 --> 00:09:36.810
+are still missing to make
+most of the things I do
+
+00:09:36.810 --> 00:09:39.660
+want to have in a separate app
+actually possible in a web app.
+
+00:09:39.660 --> 00:09:42.490
+File access, it's one of the
+main things that comes to mind.
+
+00:09:42.490 --> 00:09:45.180
+So many apps I would like
+to have as a proper app
+
+00:09:45.180 --> 00:09:46.750
+are still possible on the web.
+
+00:09:46.750 --> 00:09:50.037
+So the exceptions would be
+like, yeah, what's at web?
+
+00:09:50.037 --> 00:09:51.120
+I can install it, I guess.
+
+00:09:51.120 --> 00:09:52.203
+JAKE: It would be the PWA.
+
+00:09:52.203 --> 00:09:54.840
+But I'm also quite not too
+sad about that being a tab.
+
+00:09:54.840 --> 00:09:55.350
+SURMA: Yeah.
+
+00:09:55.350 --> 00:09:56.430
+JAKE: I feel like
+a lot of people
+
+00:09:56.430 --> 00:09:58.513
+are going to be screaming
+at the screen right now.
+
+00:09:58.513 --> 00:09:59.520
+SURMA: Sure.
+
+00:09:59.520 --> 00:10:01.020
+I mean, they always do.
+
+00:10:01.020 --> 00:10:04.560
+JAKE: It is YouTube, after all,
+going nuts in the comments.
+
+00:10:04.560 --> 00:10:05.370
+OK.
+
+00:10:05.370 --> 00:10:08.944
+So next up, as you may have
+seen on the screen there.
+
+00:10:08.944 --> 00:10:10.860
+I actually find this
+really difficult to read,
+
+00:10:10.860 --> 00:10:14.904
+because I kind of go Bitmap
+Prerend, Bitmap Prerender,
+
+00:10:14.904 --> 00:10:15.570
+SURMA: Er-er-er.
+
+00:10:15.570 --> 00:10:16.930
+JAKE: Or Bitmap Prerenderer.
+
+00:10:16.930 --> 00:10:17.430
+OK.
+
+00:10:17.430 --> 00:10:18.305
+It's BitmapPrerender.
+
+00:10:18.305 --> 00:10:19.380
+SURMA: BitmapPrerender.
+
+00:10:19.380 --> 00:10:20.010
+JAKE: Yeah.
+
+00:10:20.010 --> 00:10:20.880
+Check it out.
+
+00:10:20.880 --> 00:10:22.600
+Look at this.
+
+00:10:22.600 --> 00:10:24.589
+SURMA: It says,
+BitmapRenderer here.
+
+00:10:24.589 --> 00:10:25.172
+JAKE: No, it--
+
+00:10:31.110 --> 00:10:32.270
+I'm now wondering if I--
+
+00:10:32.270 --> 00:10:33.895
+SURMA: I think it's
+BitmapRenderer, not
+
+00:10:33.895 --> 00:10:36.080
+BitmapPrerender,
+because I think--
+
+00:10:36.080 --> 00:10:38.450
+it is BitmapRenderer,
+not BitmapPrerender.
+
+00:10:38.450 --> 00:10:38.950
+JAKE: OK.
+
+00:10:38.950 --> 00:10:39.180
+Yes.
+
+00:10:39.180 --> 00:10:39.680
+See?
+
+00:10:39.680 --> 00:10:42.000
+It's difficult to read.
+
+00:10:42.000 --> 00:10:43.146
+OK.
+
+00:10:43.146 --> 00:10:46.070
+It jingles when I
+get angry as well.
+
+00:10:46.070 --> 00:10:47.010
+It's BitmapRenderer.
+
+00:10:47.010 --> 00:10:48.390
+Of course it's BitmapRenderer.
+
+00:10:48.390 --> 00:10:48.930
+Right.
+
+00:10:48.930 --> 00:10:49.890
+Here it is.
+
+00:10:49.890 --> 00:10:51.090
+Create a canvas.
+
+00:10:51.090 --> 00:10:53.096
+Get context.
+
+00:10:53.096 --> 00:10:54.720
+SURMA: Oh, it's a
+new get context type.
+
+00:10:54.720 --> 00:10:56.750
+JAKE: It's a new context type.
+
+00:10:56.750 --> 00:10:58.650
+And what you can
+do with this is you
+
+00:10:58.650 --> 00:11:02.476
+can create an image bitmap,
+which is an existing feature.
+
+00:11:02.476 --> 00:11:02.976
+SURMA: Mhm.
+
+00:11:02.976 --> 00:11:04.040
+Separate feature.
+
+00:11:04.040 --> 00:11:05.040
+Nothing to do with this.
+
+00:11:05.040 --> 00:11:06.790
+JAKE: You can transfer
+it onto the canvas.
+
+00:11:06.790 --> 00:11:09.850
+SURMA: So it's just a fast path
+for a basic canvas draw image.
+
+00:11:09.850 --> 00:11:10.500
+JAKE: Yeah.
+
+00:11:10.500 --> 00:11:11.880
+SURMA: That's pretty cool,
+but it's like [INAUDIBLE]..
+
+00:11:11.880 --> 00:11:14.220
+I'm guessing this is super
+fast under the hood, where
+
+00:11:14.220 --> 00:11:16.490
+there's like all the
+other layers are skipped.
+
+00:11:16.490 --> 00:11:19.100
+JAKE: It's a little bit faster.
+
+00:11:19.100 --> 00:11:22.900
+It is very efficient on memory,
+because this is transfer.
+
+00:11:22.900 --> 00:11:23.400
+SURMA: Yeah.
+
+00:11:23.400 --> 00:11:25.370
+JAKE: Like this
+image object is now--
+
+00:11:25.370 --> 00:11:25.990
+SURMA: Oh!
+
+00:11:25.990 --> 00:11:27.360
+JAKE: Yeah, it's been
+transferred in the same way
+
+00:11:27.360 --> 00:11:29.490
+as if you were crossing
+it over to a worker.
+
+00:11:29.490 --> 00:11:30.230
+So the image--
+
+00:11:30.230 --> 00:11:30.630
+[INTERPOSING VOICES]
+
+00:11:30.630 --> 00:11:33.180
+SURMA: The data buffer is
+now neutered, as it's called.
+
+00:11:33.180 --> 00:11:33.870
+JAKE: Neutered.
+
+00:11:33.870 --> 00:11:34.590
+Exactly.
+
+00:11:34.590 --> 00:11:36.070
+SURMA: Great.
+
+00:11:36.070 --> 00:11:37.160
+JAKE: And that's it.
+
+00:11:37.160 --> 00:11:38.610
+SURMA: Lots of game engines
+are going to be happy.
+
+00:11:38.610 --> 00:11:39.110
+All right.
+
+00:11:39.110 --> 00:11:39.930
+JAKE: Yeah.
+
+00:11:39.930 --> 00:11:43.890
+SURMA: Going up against
+the "BitmapPrerender-er-er"
+
+00:11:43.890 --> 00:11:46.380
+is Web Locks.
+
+00:11:46.380 --> 00:11:48.847
+I have many feels, both good
+and bad, about Web Locks.
+
+00:11:48.847 --> 00:11:49.290
+JAKE: Oh, interesting.
+
+00:11:49.290 --> 00:11:50.900
+SURMA: Let's take
+a look at the API.
+
+00:11:50.900 --> 00:11:53.610
+Basically, sometimes
+you have a resource
+
+00:11:53.610 --> 00:11:56.160
+that might be shared between
+multiple workers or even
+
+00:11:56.160 --> 00:11:59.860
+multiple tabs of your web app.
+
+00:11:59.860 --> 00:12:00.360
+JAKE: Yes.
+
+00:12:00.360 --> 00:12:02.160
+SURMA: Via IDB or
+something else that
+
+00:12:02.160 --> 00:12:03.497
+is shared across your origin.
+
+00:12:03.497 --> 00:12:04.830
+The Service Worker, for example.
+
+00:12:04.830 --> 00:12:05.477
+JAKE: Yes.
+
+00:12:05.477 --> 00:12:07.810
+SURMA: And so you have some
+code, and it does something.
+
+00:12:07.810 --> 00:12:08.550
+You don't need to lock it.
+
+00:12:08.550 --> 00:12:10.660
+I mean, you lock your
+request a lock by a name.
+
+00:12:10.660 --> 00:12:11.850
+It's just a string name.
+
+00:12:11.850 --> 00:12:14.790
+And then an async function
+will get invoked with the lock
+
+00:12:14.790 --> 00:12:16.545
+once you have that lock.
+
+00:12:16.545 --> 00:12:17.670
+And then you run your code.
+
+00:12:17.670 --> 00:12:18.600
+JAKE: Because that might
+numb it straight away,
+
+00:12:18.600 --> 00:12:20.183
+because something
+else has got a lock.
+
+00:12:20.183 --> 00:12:23.520
+SURMA: And then once that
+async function starts running,
+
+00:12:23.520 --> 00:12:26.440
+the lock will be released,
+and you can continue normally.
+
+00:12:26.440 --> 00:12:29.040
+And there is also a
+concept of shared locks
+
+00:12:29.040 --> 00:12:30.360
+and exclusive locks.
+
+00:12:30.360 --> 00:12:32.790
+Shared locks, if you
+request a shared lock,
+
+00:12:32.790 --> 00:12:35.280
+you can get it if there's
+only other shared locks.
+
+00:12:35.280 --> 00:12:35.780
+JAKE: Right.
+
+00:12:35.780 --> 00:12:36.510
+SURMA: If you request
+an exclusive one,
+
+00:12:36.510 --> 00:12:38.100
+you have to wait until
+there's no other locks.
+
+00:12:38.100 --> 00:12:39.360
+And you will get
+an exclusive lock.
+
+00:12:39.360 --> 00:12:41.070
+JAKE: Because shared locks
+are fine if lots of things
+
+00:12:41.070 --> 00:12:42.316
+are reading from something.
+
+00:12:42.316 --> 00:12:43.690
+An exclusive lock
+is for writing.
+
+00:12:43.690 --> 00:12:45.540
+SURMA: I like that when we
+shared an exclusive, though,
+
+00:12:45.540 --> 00:12:47.350
+because there's multiple
+patterns, not just
+
+00:12:47.350 --> 00:12:48.845
+the read/write pattern.
+
+00:12:48.845 --> 00:12:50.970
+Because sometimes you might
+be reading and writing,
+
+00:12:50.970 --> 00:12:54.070
+but on disjointed
+parts of an array.
+
+00:12:54.070 --> 00:12:54.570
+JAKE: OK.
+
+00:12:54.570 --> 00:12:56.880
+SURMA: So that would also work.
+
+00:12:56.880 --> 00:12:57.470
+JAKE: Yes, OK.
+
+00:12:57.470 --> 00:12:59.580
+SURMA: So yeah, so this is
+something that lots of people
+
+00:12:59.580 --> 00:13:00.370
+have requested.
+
+00:13:02.419 --> 00:13:03.960
+The more I think
+about it, the more I
+
+00:13:03.960 --> 00:13:05.210
+think it's actually necessary.
+
+00:13:05.210 --> 00:13:07.530
+I think there's also a lot
+to be done without this.
+
+00:13:07.530 --> 00:13:08.910
+And instead of using
+the active [INAUDIBLE],,
+
+00:13:08.910 --> 00:13:11.490
+you have one designated thread,
+but that's a different story.
+
+00:13:13.770 --> 00:13:15.270
+JAKE: Why have you
+done underscores?
+
+00:13:15.270 --> 00:13:16.020
+This is not very--
+
+00:13:16.020 --> 00:13:18.270
+SURMA: Because I
+copy-pasted it from MDN.
+
+00:13:18.270 --> 00:13:19.280
+JAKE: Good excuse.
+
+00:13:19.280 --> 00:13:20.200
+That's a good excuse.
+
+00:13:20.200 --> 00:13:21.630
+That's a good way
+out of it, because I
+
+00:13:21.630 --> 00:13:22.755
+dislike that in JavaScript.
+
+00:13:22.755 --> 00:13:25.980
+It's not like any other APIs.
+
+00:13:25.980 --> 00:13:31.790
+I mean, it feels to me like
+Web Locks is just a more--
+
+00:13:31.790 --> 00:13:32.790
+SURMA: It probably has--
+
+00:13:32.790 --> 00:13:34.248
+JAKE: It's lower
+level, more usage.
+
+00:13:34.248 --> 00:13:36.700
+SURMA: On average more use
+cases than the BitmapRenderer.
+
+00:13:36.700 --> 00:13:40.020
+I think BitmapRenderer is kind
+of niche for probably game
+
+00:13:40.020 --> 00:13:42.089
+engines, probably
+some image processing.
+
+00:13:42.089 --> 00:13:44.130
+JAKE: It's good if you've
+got an offscreen canvas
+
+00:13:44.130 --> 00:13:45.755
+and you want to make
+a transfer across.
+
+00:13:45.755 --> 00:13:47.112
+But yeah.
+
+00:13:47.112 --> 00:13:48.445
+Should we put Web Locks through?
+
+00:13:48.445 --> 00:13:51.010
+SURMA: Let's declare Web Locks
+the winner of round number
+
+00:13:51.010 --> 00:13:51.510
+seven.
+
+00:13:51.510 --> 00:13:53.020
+JAKE: Round number seven.
+
+00:13:53.020 --> 00:13:53.950
+OK.
+
+00:13:53.950 --> 00:13:54.450
+Right.
+
+00:13:54.450 --> 00:13:58.360
+So Web Locks is through
+to the next round.
+
+00:13:58.360 --> 00:14:00.540
+What are we going
+to look at now?
+
+00:14:00.540 --> 00:14:03.720
+I want to talk about Reach--
+
+00:14:03.720 --> 00:14:04.850
+Reature-Policy.
+
+00:14:04.850 --> 00:14:06.030
+OK, it's the font again.
+
+00:14:06.030 --> 00:14:07.710
+This is Feature-Policy.
+
+00:14:07.710 --> 00:14:10.110
+SURMA: Lots of buzz around
+Feature-Policy at CDS.
+
+00:14:10.110 --> 00:14:11.195
+JAKE: Yes, there was.
+
+00:14:11.195 --> 00:14:12.570
+So here's basically
+how it works.
+
+00:14:12.570 --> 00:14:14.450
+This is a header.
+
+00:14:14.450 --> 00:14:18.210
+You can serve this on your page,
+and it's essentially like CSP.
+
+00:14:18.210 --> 00:14:19.520
+It's like CSP for features.
+
+00:14:19.520 --> 00:14:19.920
+SURMA: For features.
+
+00:14:19.920 --> 00:14:20.670
+JAKE: Exactly.
+
+00:14:20.670 --> 00:14:23.850
+So here I'm saying this page
+may not use Geolocation.
+
+00:14:23.850 --> 00:14:25.546
+SURMA: So you're
+declining yourself
+
+00:14:25.546 --> 00:14:27.420
+access to the Geolocation
+API, which is good,
+
+00:14:27.420 --> 00:14:30.030
+because that means that
+if somebody evil injects
+
+00:14:30.030 --> 00:14:32.530
+JavaScript code, they
+can't do these things.
+
+00:14:32.530 --> 00:14:33.180
+JAKE: Exactly.
+
+00:14:33.180 --> 00:14:34.260
+Exactly.
+
+00:14:34.260 --> 00:14:36.842
+And you can also specify
+it for an iframe.
+
+00:14:36.842 --> 00:14:37.800
+SURMA: Oh, that's cool.
+
+00:14:37.800 --> 00:14:40.259
+JAKE: So you're saying this
+iframe may not use Geolocation.
+
+00:14:40.259 --> 00:14:41.508
+And there's lots of features--
+
+00:14:41.508 --> 00:14:43.110
+SURMA: Great for
+Ads, I would presume.
+
+00:14:43.110 --> 00:14:44.536
+JAKE: Yes, exactly.
+
+00:14:44.536 --> 00:14:47.160
+You'd probably want to put quite
+a lot of this on if you really
+
+00:14:47.160 --> 00:14:48.900
+want to restrict
+what-- if you've got--
+
+00:14:48.900 --> 00:14:51.108
+SURMA: And there's a massive
+set of feature policies,
+
+00:14:51.108 --> 00:14:53.342
+for like if your images
+are too big for this.
+
+00:14:53.342 --> 00:14:54.300
+JAKE: So that one, yes.
+
+00:14:54.300 --> 00:14:56.190
+That is one, but that's
+an experimental one.
+
+00:14:56.190 --> 00:14:57.570
+That's not released.
+
+00:14:57.570 --> 00:15:00.360
+The ones that are released
+are Autoplay, Camera,
+
+00:15:00.360 --> 00:15:02.739
+Document.domain, stopping
+there, which I quite like,
+
+00:15:02.739 --> 00:15:04.780
+because that might come
+with performance benefits
+
+00:15:04.780 --> 00:15:05.890
+later along.
+
+00:15:05.890 --> 00:15:11.010
+EME, Full Screen, Geolocation,
+obviously, Microphone, MIDI,
+
+00:15:11.010 --> 00:15:14.320
+Payments stuff, VR.
+
+00:15:14.320 --> 00:15:15.495
+I've written Speaker here.
+
+00:15:15.495 --> 00:15:17.940
+I can't remember what that is.
+
+00:15:17.940 --> 00:15:19.824
+Synchronous XHR as well.
+
+00:15:19.824 --> 00:15:20.490
+SURMA: Ah, sync.
+
+00:15:20.490 --> 00:15:22.052
+Yeah, that's all good stuff.
+
+00:15:22.052 --> 00:15:22.760
+JAKE: Absolutely.
+
+00:15:22.760 --> 00:15:24.590
+Because that's something you
+would definitely want to stop.
+
+00:15:24.590 --> 00:15:25.200
+SURMA: And here
+the final feature
+
+00:15:25.200 --> 00:15:27.990
+is like if you opt out of a
+certain subset of features,
+
+00:15:27.990 --> 00:15:29.310
+you actually get--
+
+00:15:29.310 --> 00:15:31.260
+there could be the
+option to enable a faster
+
+00:15:31.260 --> 00:15:33.284
+path in the browser,
+because if you can opt out
+
+00:15:33.284 --> 00:15:34.950
+of legacy stuff, the
+browser goes, oh, I
+
+00:15:34.950 --> 00:15:36.116
+don't need the legacy stuff.
+
+00:15:36.116 --> 00:15:37.030
+I can be faster.
+
+00:15:37.030 --> 00:15:39.570
+It enables certain optimizations
+potentially in the future.
+
+00:15:39.570 --> 00:15:40.986
+JAKE: Yes, absolutely,
+absolutely.
+
+00:15:40.986 --> 00:15:41.560
+Right.
+
+00:15:41.560 --> 00:15:42.060
+SURMA: Next.
+
+00:15:42.060 --> 00:15:43.250
+JAKE: What have you got?
+
+00:15:43.250 --> 00:15:46.050
+SURMA: Coming up,
+it's CSS Paint API.
+
+00:15:46.050 --> 00:15:46.890
+JAKE: Oh, yeah.
+
+00:15:46.890 --> 00:15:47.390
+OK.
+
+00:15:47.390 --> 00:15:49.750
+SURMA: I would forward
+people to my CDS talk.
+
+00:15:49.750 --> 00:15:51.810
+JAKE: Oh, yeah.
+
+00:15:51.810 --> 00:15:53.834
+SURMA: But maybe that's
+a 50-minute video
+
+00:15:53.834 --> 00:15:55.500
+if you want to see
+the unedited version.
+
+00:15:55.500 --> 00:15:55.960
+JAKE: Yes.
+
+00:15:55.960 --> 00:15:57.870
+You had a little thing
+that went wrong for you.
+
+00:15:57.870 --> 00:15:58.740
+SURMA: A little bit.
+
+00:15:58.740 --> 00:15:59.634
+JAKE: Yeah.
+
+00:15:59.634 --> 00:16:01.800
+SURMA: Let's get the quick
+version of CSS Paint API.
+
+00:16:01.800 --> 00:16:06.180
+Basically, it allows you to
+define your own paint routine
+
+00:16:06.180 --> 00:16:08.170
+whenever CSS expects an image.
+
+00:16:08.170 --> 00:16:10.860
+JAKE: So just
+before the squircle
+
+00:16:10.860 --> 00:16:13.240
+is the point where your
+talk failed at CDS.
+
+00:16:13.240 --> 00:16:14.280
+SURMA: Yes!
+
+00:16:14.280 --> 00:16:16.440
+JAKE: Where you had a
+catastrophic laptop meltdown.
+
+00:16:16.440 --> 00:16:17.202
+SURMA: I did.
+
+00:16:17.202 --> 00:16:18.910
+JAKE: And yet, you've
+brought it up here.
+
+00:16:18.910 --> 00:16:19.120
+SURMA: Yes.
+
+00:16:19.120 --> 00:16:19.953
+JAKE: This is just--
+
+00:16:19.953 --> 00:16:22.890
+SURMA: I wanted to absolve the
+squircle from the curse that
+
+00:16:22.890 --> 00:16:24.041
+is crushing it.
+
+00:16:24.041 --> 00:16:24.540
+JAKE: Sorry.
+
+00:16:24.540 --> 00:16:25.615
+I interrupted.
+
+00:16:25.615 --> 00:16:27.240
+SURMA: Yeah, so a
+squircle is basically
+
+00:16:27.240 --> 00:16:31.000
+a square that is mathematically
+closer to a circle than--
+
+00:16:31.000 --> 00:16:33.530
+it's a way to paint a
+rectangle with rounded corners.
+
+00:16:33.530 --> 00:16:35.280
+JAKE: But it looks a
+bit more natural than
+
+00:16:35.280 --> 00:16:36.155
+how rounded corners--
+
+00:16:36.155 --> 00:16:36.999
+SURMA: For example.
+
+00:16:36.999 --> 00:16:38.040
+And browsers can do that.
+
+00:16:38.040 --> 00:16:39.030
+You have border radius.
+
+00:16:39.030 --> 00:16:40.200
+And if you don't
+like how it looks,
+
+00:16:40.200 --> 00:16:41.010
+then you're kind of screwed.
+
+00:16:41.010 --> 00:16:42.718
+And now with CSS Paint,
+you can basically
+
+00:16:42.718 --> 00:16:46.200
+hook into the actual Paint
+part of the rendering pipeline,
+
+00:16:46.200 --> 00:16:48.760
+and define your
+own paint routine.
+
+00:16:48.760 --> 00:16:50.380
+So here I basically
+load a module,
+
+00:16:50.380 --> 00:16:52.720
+which is a JavaScript file,
+into the Paint worklet.
+
+00:16:52.720 --> 00:16:53.880
+And I use a name.
+
+00:16:53.880 --> 00:16:57.709
+Then in that file, I can
+define the paint routine
+
+00:16:57.709 --> 00:16:59.750
+and basically get the same
+context like a canvas.
+
+00:16:59.750 --> 00:17:00.250
+JAKE: Right.
+
+00:17:00.250 --> 00:17:02.450
+SURMA: And just definite
+what I'm going to draw.
+
+00:17:02.450 --> 00:17:03.630
+JAKE: And you get the
+geometry, which is going
+
+00:17:03.630 --> 00:17:04.500
+to be telling you stuff like--
+
+00:17:04.500 --> 00:17:06.150
+SURMA: How big is the
+element, the properties, what
+
+00:17:06.150 --> 00:17:07.200
+are the styles on this element.
+
+00:17:07.200 --> 00:17:09.869
+And you can incorporate all of
+those in your JavaScript code.
+
+00:17:09.869 --> 00:17:12.364
+And the good thing is that
+in the very near future,
+
+00:17:12.364 --> 00:17:14.280
+this code is going to
+run off the main thread,
+
+00:17:14.280 --> 00:17:15.988
+basically not costing
+you any main thread
+
+00:17:15.988 --> 00:17:18.790
+budget that you only have like
+60 milliseconds per frame.
+
+00:17:18.790 --> 00:17:19.290
+JAKE: OK.
+
+00:17:19.290 --> 00:17:21.206
+SURMA: Because previously,
+if you used Canvas,
+
+00:17:21.206 --> 00:17:23.100
+it could end up costing
+your frame budget.
+
+00:17:23.100 --> 00:17:24.725
+JAKE: But is it on
+the main thread now?
+
+00:17:24.725 --> 00:17:25.190
+SURMA: Currently, it is.
+
+00:17:25.190 --> 00:17:25.520
+JAKE: OK.
+
+00:17:25.520 --> 00:17:25.790
+OK.
+
+00:17:25.790 --> 00:17:26.010
+Like Cavas.
+
+00:17:26.010 --> 00:17:27.990
+SURMA: The feature of
+worklets, in [INAUDIBLE],,
+
+00:17:27.990 --> 00:17:28.800
+they're migratable.
+
+00:17:28.800 --> 00:17:31.037
+So whenever we think
+it's feasible to move it
+
+00:17:31.037 --> 00:17:32.286
+to a different thread, we can.
+
+00:17:32.286 --> 00:17:32.400
+JAKE: We can.
+
+00:17:32.400 --> 00:17:33.950
+SURMA: Without you having
+to change your code.
+
+00:17:33.950 --> 00:17:34.630
+JAKE: OK.
+
+00:17:34.630 --> 00:17:35.200
+OK.
+
+00:17:35.200 --> 00:17:35.700
+Right.
+
+00:17:35.700 --> 00:17:38.490
+SURMA: So this allows you
+to reduce the Dom and stuff.
+
+00:17:38.490 --> 00:17:39.720
+JAKE: Right.
+
+00:17:39.720 --> 00:17:42.930
+So I guess we should have a
+think about those features.
+
+00:17:45.555 --> 00:17:46.680
+SURMA: This is a tough one.
+
+00:17:46.680 --> 00:17:47.695
+JAKE: Is it?
+
+00:17:47.695 --> 00:17:48.320
+SURMA: I think.
+
+00:17:48.320 --> 00:17:50.740
+JAKE: I was going to go
+straight in with CSS Paint API.
+
+00:17:50.740 --> 00:17:53.090
+SURMA: Yeah, I was going to
+lean towards Feature-Policy.
+
+00:17:53.090 --> 00:17:53.820
+JAKE: Oh, no.
+
+00:17:53.820 --> 00:17:56.444
+SURMA: But to be honest, that's
+mostly because of the projected
+
+00:17:56.444 --> 00:17:58.690
+future, and not off what
+it gives you right now.
+
+00:17:58.690 --> 00:18:00.660
+Because right now, it's
+mostly in development,
+
+00:18:00.660 --> 00:18:03.850
+debugging/development feature,
+like opting out of features.
+
+00:18:03.850 --> 00:18:08.760
+But I have the hope that it is
+a way out of supporting legacy
+
+00:18:08.760 --> 00:18:10.410
+stuff for long amounts of time.
+
+00:18:10.410 --> 00:18:13.080
+JAKE: Well, Document.domain,
+that is one of those.
+
+00:18:13.080 --> 00:18:16.240
+And I think if
+Feature-Policy today,
+
+00:18:16.240 --> 00:18:18.810
+like it said, you put this
+combination of things in,
+
+00:18:18.810 --> 00:18:21.030
+this stuff is going
+to be twice as fast.
+
+00:18:21.030 --> 00:18:21.570
+SURMA: Yeah.
+
+00:18:21.570 --> 00:18:24.390
+JAKE: Then I think I would
+be putting it through.
+
+00:18:24.390 --> 00:18:25.140
+SURMA: Yeah, true.
+
+00:18:25.140 --> 00:18:26.560
+But that's not what it is today.
+
+00:18:26.560 --> 00:18:29.970
+JAKE: The range of things that
+CSS Paint API sort of opens up,
+
+00:18:29.970 --> 00:18:32.971
+it feels like I'm
+more excited about it.
+
+00:18:32.971 --> 00:18:33.470
+SURMA: True.
+
+00:18:33.470 --> 00:18:35.080
+And so am I. Yeah, it's Houdini.
+
+00:18:35.080 --> 00:18:36.960
+JAKE: And I'm more excited
+about what it can do today.
+
+00:18:36.960 --> 00:18:39.270
+SURMA: Flutter is using it
+as well for their web port,
+
+00:18:39.270 --> 00:18:40.070
+for example.
+
+00:18:40.070 --> 00:18:43.290
+They published a blog post
+about to do all the mask
+
+00:18:43.290 --> 00:18:45.867
+imaging for morphing
+and all these things.
+
+00:18:45.867 --> 00:18:47.200
+It's actually pretty impressive.
+
+00:18:47.200 --> 00:18:49.710
+Uses that I didn't
+necessarily think of myself.
+
+00:18:49.710 --> 00:18:51.105
+So it is quite good.
+
+00:18:51.105 --> 00:18:52.470
+So let's call it CSS Paint API.
+
+00:18:52.470 --> 00:18:53.450
+JAKE: I'm going
+to put it through.
+
+00:18:53.450 --> 00:18:54.616
+I'm going to put it through.
+
+00:18:54.616 --> 00:18:58.841
+SURMA: So now we have Web
+Locks versus CSS Paint API.
+
+00:18:58.841 --> 00:18:59.340
+JAKE: Yes.
+
+00:18:59.340 --> 00:19:01.010
+CSS Paint API.
+
+00:19:01.010 --> 00:19:02.760
+SURMA: Two developer
+features, one of them
+
+00:19:02.760 --> 00:19:04.500
+many more use cases,
+in my opinion,
+
+00:19:04.500 --> 00:19:06.242
+on average than the other one.
+
+00:19:06.242 --> 00:19:07.450
+JAKE: Oh, which-- because I--
+
+00:19:07.450 --> 00:19:08.040
+SURMA: CSS Paint API.
+
+00:19:08.040 --> 00:19:09.560
+Like for me, it would
+be CSS Paint API.
+
+00:19:09.560 --> 00:19:11.018
+JAKE: There's more
+use cases there.
+
+00:19:11.018 --> 00:19:13.320
+SURMA: Yeah.
+
+00:19:13.320 --> 00:19:15.250
+It makes a lot of
+new things possible.
+
+00:19:15.250 --> 00:19:17.550
+It also makes old things
+much more efficient.
+
+00:19:17.550 --> 00:19:19.320
+And especially on
+low end devices,
+
+00:19:19.320 --> 00:19:21.030
+where you're under
+memory constraints,
+
+00:19:21.030 --> 00:19:23.580
+it just gives you--
+
+00:19:23.580 --> 00:19:26.200
+makes more visual
+things possible.
+
+00:19:26.200 --> 00:19:30.879
+It gives the web a more
+high fidelity feel.
+
+00:19:30.879 --> 00:19:32.670
+It enables more high
+fidelity UIs, I guess.
+
+00:19:32.670 --> 00:19:34.680
+JAKE: And it's the first feature
+that's really opening up CSS.
+
+00:19:34.680 --> 00:19:34.800
+SURMA: Yeah.
+
+00:19:34.800 --> 00:19:37.091
+JAKE: I can see there being
+more little micro libraries
+
+00:19:37.091 --> 00:19:37.965
+released with CSS.
+
+00:19:37.965 --> 00:19:41.730
+SURMA: It's a very extensible
+web API in that you are now
+
+00:19:41.730 --> 00:19:43.269
+hooking into the actual engine.
+
+00:19:43.269 --> 00:19:45.060
+JAKE: I really like
+Web Locks, I really do.
+
+00:19:45.060 --> 00:19:46.170
+But I think you're right.
+
+00:19:46.170 --> 00:19:50.870
+I'm going to put CSS Paint
+API through to the next round.
+
+00:19:50.870 --> 00:19:53.917
+And that gives us another
+semifinalist to decide as well.
+
+00:19:53.917 --> 00:19:55.500
+SURMA: Yeah, and now
+we have to decide
+
+00:19:55.500 --> 00:19:57.330
+between Typed OM and CSS.
+
+00:19:57.330 --> 00:20:00.084
+So Houdini API
+versus Houdini API.
+
+00:20:00.084 --> 00:20:01.750
+JAKE: Oh, this is
+unfortunate, isn't it?
+
+00:20:01.750 --> 00:20:03.624
+I mean, it was going to
+happen at some point.
+
+00:20:03.624 --> 00:20:06.140
+SURMA: Yeah.
+
+00:20:06.140 --> 00:20:08.700
+It depends on how we judge them.
+
+00:20:08.700 --> 00:20:12.330
+On average, the problems
+that I encounter
+
+00:20:12.330 --> 00:20:16.560
+when building a
+web app, Paint API
+
+00:20:16.560 --> 00:20:18.179
+is more useful than Typed OM.
+
+00:20:18.179 --> 00:20:20.220
+And both of them are
+currently, as far as I know,
+
+00:20:20.220 --> 00:20:22.052
+pretty much Chrome only.
+
+00:20:22.052 --> 00:20:26.850
+JAKE: But Typed OM has a lot of
+lower level use cases, right?
+
+00:20:26.850 --> 00:20:30.020
+If you were trying to
+figure out layout stuff,
+
+00:20:30.020 --> 00:20:31.370
+this is going to become handy.
+
+00:20:31.370 --> 00:20:33.500
+The amount of times I've
+written little rubbish
+
+00:20:33.500 --> 00:20:36.752
+pauses just to take those
+values and break them out.
+
+00:20:36.752 --> 00:20:38.960
+SURMA: So that's where I
+guess my experience differs,
+
+00:20:38.960 --> 00:20:42.500
+because it'd be problems
+that Typed OM solves,
+
+00:20:42.500 --> 00:20:45.210
+I encounter much less than the
+problems that Paint API solves.
+
+00:20:50.300 --> 00:20:53.210
+JAKE: Should we just
+do that for 15 minutes?
+
+00:20:53.210 --> 00:20:55.540
+SURMA: Extended cut.
+
+00:20:55.540 --> 00:20:56.240
+JAKE: All right.
+
+00:20:56.240 --> 00:20:57.520
+Let's find--
+
+00:20:57.520 --> 00:20:59.557
+SURMA: So you
+would say Typed OM?
+
+00:20:59.557 --> 00:21:00.890
+You're leaning towards Typed OM.
+
+00:21:04.150 --> 00:21:05.420
+JAKE: Let's go with Paint API.
+
+00:21:05.420 --> 00:21:09.100
+It is-- I am more interested
+in the tooling that's
+
+00:21:09.100 --> 00:21:11.300
+going to be built
+around CSS Paint API.
+
+00:21:11.300 --> 00:21:11.800
+SURMA: Yeah.
+
+00:21:11.800 --> 00:21:12.790
+JAKE: I think that's a really--
+
+00:21:12.790 --> 00:21:13.500
+SURMA: I'm hoping it will be--
+
+00:21:13.500 --> 00:21:14.830
+JAKE: That's a really tough one.
+
+00:21:14.830 --> 00:21:15.040
+SURMA: Yeah.
+
+00:21:15.040 --> 00:21:16.270
+I'm hoping there will
+be like an ecosystem
+
+00:21:16.270 --> 00:21:18.811
+of off-the-shelf modules with
+all the effects, like a ripple,
+
+00:21:18.811 --> 00:21:21.520
+and like all the things that
+you can potentially build.
+
+00:21:21.520 --> 00:21:23.630
+JAKE: Yeah, I do think
+that's interesting.
+
+00:21:23.630 --> 00:21:26.060
+And it also means
+we can come up--
+
+00:21:26.060 --> 00:21:26.920
+SURMA: Our first--
+
+00:21:26.920 --> 00:21:30.280
+JAKE: Yeah, our first
+semifinalists, we
+
+00:21:30.280 --> 00:21:31.780
+can come up with.
+
+00:21:31.780 --> 00:21:32.920
+Oh, and this is two--
+
+00:21:32.920 --> 00:21:35.140
+I mean, I was about to
+say this is two good ones.
+
+00:21:35.140 --> 00:21:38.350
+You would hope at this late
+a stage in the competition
+
+00:21:38.350 --> 00:21:39.845
+that this would
+be two good ones.
+
+00:21:39.845 --> 00:21:40.720
+But it definitely is.
+
+00:21:40.720 --> 00:21:42.580
+SURMA: Two CSS
+features once again.
+
+00:21:42.580 --> 00:21:43.630
+I see a pattern, I think.
+
+00:21:43.630 --> 00:21:46.427
+JAKE: Yeah, that's interesting.
+
+00:21:46.427 --> 00:21:48.260
+SURMA: This is a really
+tough one, actually.
+
+00:21:50.590 --> 00:21:51.090
+I would--
+
+00:21:51.090 --> 00:21:54.620
+JAKE: The amount of times
+that I've wanted Scroll Snap
+
+00:21:54.620 --> 00:21:56.630
+and I've had to implement
+it in JavaScript
+
+00:21:56.630 --> 00:21:57.910
+and it's been horrible.
+
+00:21:57.910 --> 00:21:58.410
+SURMA: Yeah.
+
+00:21:58.410 --> 00:22:00.064
+JAKE: Because it's been laggy.
+
+00:22:00.064 --> 00:22:01.730
+As soon as things are
+moving, it's fast,
+
+00:22:01.730 --> 00:22:03.021
+because you're on a compositor.
+
+00:22:03.021 --> 00:22:05.150
+But that initial picking
+up the touch event
+
+00:22:05.150 --> 00:22:07.010
+to starting to do the
+movement, it often
+
+00:22:07.010 --> 00:22:09.040
+involves like setting up a lot
+of layers in the compositor.
+
+00:22:09.040 --> 00:22:10.670
+SURMA: And then you
+do pretend physics,
+
+00:22:10.670 --> 00:22:13.400
+and you have to do touch
+and pointer events and mouse
+
+00:22:13.400 --> 00:22:14.050
+events.
+
+00:22:14.050 --> 00:22:14.550
+JAKE: Yes.
+
+00:22:14.550 --> 00:22:16.549
+There's a horrible moment
+where the user swipes,
+
+00:22:16.549 --> 00:22:18.959
+and then because it's
+happening to go into your code,
+
+00:22:18.959 --> 00:22:21.500
+it kind of-- there's a bit of
+a break for it, then it flings.
+
+00:22:21.500 --> 00:22:23.189
+SURMA: And then you
+figure out the ramp
+
+00:22:23.189 --> 00:22:24.230
+up curves and everything.
+
+00:22:24.230 --> 00:22:25.540
+And no-- yeah, I agree.
+
+00:22:25.540 --> 00:22:27.560
+Scroll Snap removes
+so much code.
+
+00:22:27.560 --> 00:22:30.732
+And it's much more cross browser
+than CSS Paint currently is.
+
+00:22:30.732 --> 00:22:31.940
+JAKE: That is true, actually.
+
+00:22:31.940 --> 00:22:35.077
+Scroll Snap is around
+in Chrome and Safari,
+
+00:22:35.077 --> 00:22:36.910
+but there is a sort of
+older standard that's
+
+00:22:36.910 --> 00:22:38.881
+available in all
+the other browsers.
+
+00:22:38.881 --> 00:22:39.380
+OK.
+
+00:22:39.380 --> 00:22:41.180
+Yeah, I'll give it extra
+points, because it is something
+
+00:22:41.180 --> 00:22:42.189
+that you can use today.
+
+00:22:42.189 --> 00:22:43.230
+SURMA: Pretty much today.
+
+00:22:43.230 --> 00:22:44.570
+JAKE: Like in projects.
+
+00:22:44.570 --> 00:22:45.480
+OK.
+
+00:22:45.480 --> 00:22:48.380
+So our finalist--
+
+00:22:48.380 --> 00:22:50.009
+SURMA: So we are 50% through.
+
+00:22:50.009 --> 00:22:51.050
+JAKE: We are 50% through.
+
+00:22:51.050 --> 00:22:54.610
+SURMA: We have whittled
+down 16 features to one.
+
+00:22:54.610 --> 00:22:57.740
+And we will do all of that
+all over again with another 16
+
+00:22:57.740 --> 00:22:58.660
+features.
+
+00:22:58.660 --> 00:23:00.380
+JAKE: I regret
+doing this already.
+
+00:23:00.380 --> 00:23:01.560
+SURMA: Well done us.
+
+00:23:01.560 --> 00:23:02.581
+JAKE: Yeah.
+
+00:23:02.581 --> 00:23:03.580
+How do we sign this off?
+
+00:23:03.580 --> 00:23:04.590
+I don't know how.
+
+00:23:04.590 --> 00:23:05.667
+See you next time.
+
+00:23:05.667 --> 00:23:06.250
+Is that right?
+
+00:23:06.250 --> 00:23:06.749
+Is that OK?
+
+00:23:06.749 --> 00:23:08.060
+SURMA: Next video, next--
+
+00:23:08.060 --> 00:23:09.800
+on the other side,
+on the flip side.
+
+00:23:09.800 --> 00:23:10.440
+I don't know.
+
+00:23:10.440 --> 00:23:10.960
+JAKE: Yeah.
+
+00:23:10.960 --> 00:23:12.530
+See you in the next one.
+
+00:23:12.530 --> 00:23:14.002
+Subscribe.
+
+00:23:14.002 --> 00:23:15.804
+We keep getting
+people back every day.
+
+00:23:15.804 --> 00:23:17.720
+Why didn't we do one
+episode per one of these?
+
+00:23:17.720 --> 00:23:20.250
+That would've been much better.
+
+00:23:20.250 --> 00:23:20.750
+Anyway.
+
+00:23:20.750 --> 00:23:21.790
+SURMA: So good at this.
+
+00:23:21.790 --> 00:23:22.550
+We're so good at this.
+
+00:23:22.550 --> 00:23:23.550
+JAKE: See you next time.
+
+00:23:23.550 --> 00:23:25.258
+SURMA: See you next time.
+

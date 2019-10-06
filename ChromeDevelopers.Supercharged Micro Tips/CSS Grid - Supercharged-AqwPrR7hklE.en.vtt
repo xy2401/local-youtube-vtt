@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.040
+[MUSIC PLAYING]
+
+00:00:03.040 --> 00:00:04.830
+SURMA: With the
+upcoming Edge 16,
+
+00:00:04.830 --> 00:00:07.742
+all major browsers have
+full support for CSS Grid.
+
+00:00:07.742 --> 00:00:10.200
+In its most basic form, it's
+like Flexbox in two dimensions
+
+00:00:10.200 --> 00:00:11.160
+instead of one.
+
+00:00:11.160 --> 00:00:13.260
+But Grid packs a lot
+more capabilities
+
+00:00:13.260 --> 00:00:16.350
+and will probably become one
+of the core tools every web
+
+00:00:16.350 --> 00:00:17.930
+developer should know.
+
+00:00:17.930 --> 00:00:20.100
+CSS Grid allows you to
+lay out your elements
+
+00:00:20.100 --> 00:00:24.050
+in a grid, similar to tables,
+but without the annoying table
+
+00:00:24.050 --> 00:00:27.300
+markup and all the weird
+special cases around tables.
+
+00:00:27.300 --> 00:00:29.550
+And it's inherently
+responsive too.
+
+00:00:29.550 --> 00:00:32.310
+Grid is very powerful, too
+powerful to cover everything
+
+00:00:32.310 --> 00:00:33.240
+in a micro tip.
+
+00:00:33.240 --> 00:00:36.780
+But in its most basic form,
+you start with display grid.
+
+00:00:36.780 --> 00:00:38.940
+You set up your grid by
+defining rows and columns
+
+00:00:38.940 --> 00:00:42.250
+using grid template rows
+and grid template columns.
+
+00:00:42.250 --> 00:00:45.450
+In this example, I only used
+fixed width and the special fr
+
+00:00:45.450 --> 00:00:47.520
+unit that distributes
+free space.
+
+00:00:47.520 --> 00:00:50.400
+But Grid offers many tools
+to make the layout even more
+
+00:00:50.400 --> 00:00:51.540
+flexible.
+
+00:00:51.540 --> 00:00:54.180
+Once the grid is defined, the
+children of the grid container
+
+00:00:54.180 --> 00:00:57.540
+will be laid out to
+occupy exactly one cell.
+
+00:00:57.540 --> 00:00:59.310
+If that's not what
+you want, you can
+
+00:00:59.310 --> 00:01:01.830
+assign areas that can
+span multiple rows
+
+00:01:01.830 --> 00:01:03.600
+and columns to some elements.
+
+00:01:03.600 --> 00:01:05.420
+The elements you
+don't place manually
+
+00:01:05.420 --> 00:01:07.590
+will be placed in
+the available cells.
+
+00:01:07.590 --> 00:01:09.120
+Isn't that handy?
+
+00:01:09.120 --> 00:01:10.980
+If you want to know
+more about Grid, how
+
+00:01:10.980 --> 00:01:13.530
+to do responsive designs,
+and what else you can do,
+
+00:01:13.530 --> 00:01:17.559
+take a look at Rachel
+Andrew's gridbyexample.com.
+
+00:01:17.559 --> 00:01:18.600
+And that's great for you.
+
+00:01:18.600 --> 00:01:21.852
+It's like the web of the
+'90s done right, kind of.
+
+00:01:21.852 --> 00:01:22.810
+I don't know, whatever.
+
+00:01:22.810 --> 00:01:24.670
+See you next time.
+
+00:01:24.670 --> 00:01:26.420
+This is a subscribe button.
+
+00:01:26.420 --> 00:01:28.150
+And this is more Supercharged.
+
+00:01:28.150 --> 00:01:30.100
+While you consider
+clicking those buttons,
+
+00:01:30.100 --> 00:01:31.480
+let me tell you a joke.
+
+00:01:31.480 --> 00:01:34.150
+So a man goes into a bar,
+and the bartender says,
+
+00:01:34.150 --> 00:01:35.260
+what can I get you?
+
+00:01:35.260 --> 00:01:37.750
+And the man says, well,
+I would like a whiskey.
+
+00:01:37.750 --> 00:01:41.130
+And then-- no wait, it's
+the other way around.
+

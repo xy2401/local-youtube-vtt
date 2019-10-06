@@ -1,0 +1,808 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:09.750 --> 00:00:12.710 align:start position:0%
+ 
+hi<00:00:10.740><c> this</c><00:00:11.190><c> is</c><00:00:11.250><c> a</c><00:00:11.400><c> quick</c><00:00:11.670><c> demo</c><00:00:12.000><c> on</c><00:00:12.210><c> how</c><00:00:12.270><c> to</c><00:00:12.480><c> get</c>
+
+00:00:12.710 --> 00:00:12.720 align:start position:0%
+hi this is a quick demo on how to get
+ 
+
+00:00:12.720 --> 00:00:14.690 align:start position:0%
+hi this is a quick demo on how to get
+started<00:00:12.870><c> with</c><00:00:13.200><c> spring</c><00:00:13.770><c> boot</c><00:00:13.950><c> in</c><00:00:14.250><c> Visual</c>
+
+00:00:14.690 --> 00:00:14.700 align:start position:0%
+started with spring boot in Visual
+ 
+
+00:00:14.700 --> 00:00:17.270 align:start position:0%
+started with spring boot in Visual
+Studio<00:00:14.820><c> code</c><00:00:15.500><c> so</c><00:00:16.500><c> the</c><00:00:16.619><c> first</c><00:00:16.860><c> thing</c><00:00:17.100><c> we're</c>
+
+00:00:17.270 --> 00:00:17.280 align:start position:0%
+Studio code so the first thing we're
+ 
+
+00:00:17.280 --> 00:00:19.100 align:start position:0%
+Studio code so the first thing we're
+going<00:00:17.460><c> to</c><00:00:17.640><c> do</c><00:00:17.790><c> here</c><00:00:18.029><c> in</c><00:00:18.270><c> Visual</c><00:00:18.600><c> Studio</c><00:00:18.690><c> code</c>
+
+00:00:19.100 --> 00:00:19.110 align:start position:0%
+going to do here in Visual Studio code
+ 
+
+00:00:19.110 --> 00:00:21.980 align:start position:0%
+going to do here in Visual Studio code
+is<00:00:19.380><c> install</c><00:00:20.100><c> some</c><00:00:20.369><c> extensions</c><00:00:21.090><c> that</c><00:00:21.779><c> will</c>
+
+00:00:21.980 --> 00:00:21.990 align:start position:0%
+is install some extensions that will
+ 
+
+00:00:21.990 --> 00:00:23.660 align:start position:0%
+is install some extensions that will
+help<00:00:22.110><c> us</c><00:00:22.290><c> work</c><00:00:22.500><c> with</c><00:00:22.529><c> spring</c><00:00:22.980><c> boot</c><00:00:23.160><c> projects</c>
+
+00:00:23.660 --> 00:00:23.670 align:start position:0%
+help us work with spring boot projects
+ 
+
+00:00:23.670 --> 00:00:25.160 align:start position:0%
+help us work with spring boot projects
+so<00:00:23.880><c> I'm</c><00:00:23.939><c> going</c><00:00:24.180><c> to</c><00:00:24.270><c> the</c><00:00:24.390><c> marketplace</c><00:00:24.720><c> and</c>
+
+00:00:25.160 --> 00:00:25.170 align:start position:0%
+so I'm going to the marketplace and
+ 
+
+00:00:25.170 --> 00:00:26.839 align:start position:0%
+so I'm going to the marketplace and
+search<00:00:25.470><c> for</c><00:00:25.680><c> spring</c><00:00:25.950><c> and</c><00:00:26.250><c> the</c><00:00:26.460><c> thing</c><00:00:26.700><c> I'm</c>
+
+00:00:26.839 --> 00:00:26.849 align:start position:0%
+search for spring and the thing I'm
+ 
+
+00:00:26.849 --> 00:00:28.609 align:start position:0%
+search for spring and the thing I'm
+gonna<00:00:27.029><c> install</c><00:00:27.300><c> is</c><00:00:27.720><c> the</c><00:00:28.050><c> spring</c><00:00:28.439><c> boot</c>
+
+00:00:28.609 --> 00:00:28.619 align:start position:0%
+gonna install is the spring boot
+ 
+
+00:00:28.619 --> 00:00:31.130 align:start position:0%
+gonna install is the spring boot
+extension<00:00:29.220><c> back</c><00:00:29.369><c> from</c><00:00:29.669><c> pivotal</c><00:00:30.090><c> this</c><00:00:30.900><c> will</c>
+
+00:00:31.130 --> 00:00:31.140 align:start position:0%
+extension back from pivotal this will
+ 
+
+00:00:31.140 --> 00:00:32.870 align:start position:0%
+extension back from pivotal this will
+give<00:00:31.290><c> you</c><00:00:31.470><c> some</c><00:00:31.740><c> spring</c><00:00:32.099><c> boots</c><00:00:32.279><c> specific</c>
+
+00:00:32.870 --> 00:00:32.880 align:start position:0%
+give you some spring boots specific
+ 
+
+00:00:32.880 --> 00:00:35.120 align:start position:0%
+give you some spring boots specific
+support<00:00:33.390><c> for</c><00:00:33.630><c> working</c><00:00:33.960><c> in</c><00:00:34.200><c> Java</c><00:00:34.470><c> files</c><00:00:34.770><c> as</c>
+
+00:00:35.120 --> 00:00:35.130 align:start position:0%
+support for working in Java files as
+ 
+
+00:00:35.130 --> 00:00:38.120 align:start position:0%
+support for working in Java files as
+well<00:00:35.489><c> as</c><00:00:35.570><c> boot</c><00:00:36.570><c> properties</c><00:00:37.079><c> and</c><00:00:37.290><c> llamó</c><00:00:37.710><c> file</c>
+
+00:00:38.120 --> 00:00:38.130 align:start position:0%
+well as boot properties and llamó file
+ 
+
+00:00:38.130 --> 00:00:40.370 align:start position:0%
+well as boot properties and llamó file
+editing<00:00:38.670><c> the</c><00:00:39.360><c> other</c><00:00:39.540><c> thing</c><00:00:39.780><c> you</c><00:00:39.870><c> get</c><00:00:40.050><c> which</c><00:00:40.350><c> is</c>
+
+00:00:40.370 --> 00:00:40.380 align:start position:0%
+editing the other thing you get which is
+ 
+
+00:00:40.380 --> 00:00:43.310 align:start position:0%
+editing the other thing you get which is
+very<00:00:40.680><c> useful</c><00:00:40.860><c> is</c><00:00:41.250><c> a</c><00:00:41.579><c> wizard</c><00:00:42.240><c> for</c><00:00:42.600><c> quickly</c>
+
+00:00:43.310 --> 00:00:43.320 align:start position:0%
+very useful is a wizard for quickly
+ 
+
+00:00:43.320 --> 00:00:45.740 align:start position:0%
+very useful is a wizard for quickly
+generating<00:00:44.010><c> projects</c><00:00:44.940><c> using</c><00:00:45.270><c> the</c><00:00:45.390><c> spring</c>
+
+00:00:45.740 --> 00:00:45.750 align:start position:0%
+generating projects using the spring
+ 
+
+00:00:45.750 --> 00:00:48.830 align:start position:0%
+generating projects using the spring
+initializer<00:00:46.410><c> service</c><00:00:47.070><c> so</c><00:00:47.970><c> that's</c><00:00:48.150><c> two</c><00:00:48.600><c> things</c>
+
+00:00:48.830 --> 00:00:48.840 align:start position:0%
+initializer service so that's two things
+ 
+
+00:00:48.840 --> 00:00:51.170 align:start position:0%
+initializer service so that's two things
+that<00:00:49.020><c> we</c><00:00:49.140><c> want</c><00:00:49.490><c> the</c><00:00:50.490><c> other</c><00:00:50.640><c> thing</c><00:00:50.880><c> that</c><00:00:50.910><c> we're</c>
+
+00:00:51.170 --> 00:00:51.180 align:start position:0%
+that we want the other thing that we're
+ 
+
+00:00:51.180 --> 00:00:53.030 align:start position:0%
+that we want the other thing that we're
+going<00:00:51.300><c> to</c><00:00:51.360><c> install</c><00:00:51.750><c> is</c><00:00:52.050><c> some</c><00:00:52.320><c> tooling</c><00:00:52.710><c> to</c><00:00:52.860><c> work</c>
+
+00:00:53.030 --> 00:00:53.040 align:start position:0%
+going to install is some tooling to work
+ 
+
+00:00:53.040 --> 00:00:55.400 align:start position:0%
+going to install is some tooling to work
+with<00:00:53.220><c> Java</c><00:00:53.460><c> projects</c><00:00:54.060><c> in</c><00:00:54.180><c> general</c><00:00:54.570><c> so</c><00:00:54.840><c> I'm</c>
+
+00:00:55.400 --> 00:00:55.410 align:start position:0%
+with Java projects in general so I'm
+ 
+
+00:00:55.410 --> 00:00:57.260 align:start position:0%
+with Java projects in general so I'm
+typing<00:00:55.680><c> Java</c><00:00:56.070><c> here</c><00:00:56.520><c> and</c><00:00:56.730><c> we're</c><00:00:57.030><c> going</c><00:00:57.210><c> to</c>
+
+00:00:57.260 --> 00:00:57.270 align:start position:0%
+typing Java here and we're going to
+ 
+
+00:00:57.270 --> 00:00:59.450 align:start position:0%
+typing Java here and we're going to
+install<00:00:57.630><c> another</c><00:00:58.140><c> extension</c><00:00:58.380><c> part</c><00:00:58.980><c> called</c>
+
+00:00:59.450 --> 00:00:59.460 align:start position:0%
+install another extension part called
+ 
+
+00:00:59.460 --> 00:01:01.750 align:start position:0%
+install another extension part called
+the<00:00:59.670><c> Java</c><00:00:59.940><c> extension</c><00:01:00.570><c> back</c><00:01:00.690><c> from</c><00:01:00.990><c> Microsoft</c>
+
+00:01:01.750 --> 00:01:01.760 align:start position:0%
+the Java extension back from Microsoft
+ 
+
+00:01:01.760 --> 00:01:04.460 align:start position:0%
+the Java extension back from Microsoft
+this<00:01:02.760><c> pack</c><00:01:03.060><c> will</c><00:01:03.270><c> give</c><00:01:03.450><c> you</c><00:01:03.630><c> good</c><00:01:04.110><c> Java</c>
+
+00:01:04.460 --> 00:01:04.470 align:start position:0%
+this pack will give you good Java
+ 
+
+00:01:04.470 --> 00:01:07.190 align:start position:0%
+this pack will give you good Java
+editing<00:01:04.920><c> support</c><00:01:05.280><c> from</c><00:01:05.430><c> Red</c><00:01:05.729><c> Hat</c><00:01:05.970><c> as</c><00:01:06.330><c> well</c><00:01:06.869><c> as</c>
+
+00:01:07.190 --> 00:01:07.200 align:start position:0%
+editing support from Red Hat as well as
+ 
+
+00:01:07.200 --> 00:01:10.069 align:start position:0%
+editing support from Red Hat as well as
+a<00:01:07.619><c> debugger</c><00:01:08.430><c> which</c><00:01:08.909><c> is</c><00:01:09.090><c> the</c><00:01:09.299><c> two</c><00:01:09.509><c> things</c><00:01:09.780><c> I'm</c>
+
+00:01:10.069 --> 00:01:10.079 align:start position:0%
+a debugger which is the two things I'm
+ 
+
+00:01:10.079 --> 00:01:11.870 align:start position:0%
+a debugger which is the two things I'm
+going<00:01:10.229><c> to</c><00:01:10.290><c> demo</c><00:01:10.590><c> here</c><00:01:10.860><c> there</c><00:01:11.490><c> is</c><00:01:11.579><c> a</c><00:01:11.610><c> few</c><00:01:11.850><c> other</c>
+
+00:01:11.870 --> 00:01:11.880 align:start position:0%
+going to demo here there is a few other
+ 
+
+00:01:11.880 --> 00:01:13.990 align:start position:0%
+going to demo here there is a few other
+things<00:01:12.240><c> but</c><00:01:12.450><c> I</c><00:01:12.630><c> don't</c><00:01:12.810><c> have</c><00:01:12.990><c> time</c><00:01:13.170><c> to</c><00:01:13.500><c> go</c><00:01:13.650><c> into</c>
+
+00:01:13.990 --> 00:01:14.000 align:start position:0%
+things but I don't have time to go into
+ 
+
+00:01:14.000 --> 00:01:16.640 align:start position:0%
+things but I don't have time to go into
+ok<00:01:15.000><c> that's</c><00:01:15.390><c> good</c><00:01:15.600><c> we've</c><00:01:15.930><c> installed</c><00:01:16.380><c> those</c>
+
+00:01:16.640 --> 00:01:16.650 align:start position:0%
+ok that's good we've installed those
+ 
+
+00:01:16.650 --> 00:01:18.860 align:start position:0%
+ok that's good we've installed those
+let's<00:01:17.040><c> reload</c><00:01:17.520><c> these</c><00:01:18.060><c> all</c><00:01:18.330><c> these</c><00:01:18.600><c> plugins</c>
+
+00:01:18.860 --> 00:01:18.870 align:start position:0%
+let's reload these all these plugins
+ 
+
+00:01:18.870 --> 00:01:20.810 align:start position:0%
+let's reload these all these plugins
+we've<00:01:19.200><c> installed</c><00:01:19.530><c> are</c><00:01:19.770><c> now</c><00:01:19.890><c> active</c><00:01:20.370><c> that</c><00:01:20.580><c> was</c>
+
+00:01:20.810 --> 00:01:20.820 align:start position:0%
+we've installed are now active that was
+ 
+
+00:01:20.820 --> 00:01:21.170 align:start position:0%
+we've installed are now active that was
+easy
+
+00:01:21.170 --> 00:01:21.180 align:start position:0%
+easy
+ 
+
+00:01:21.180 --> 00:01:23.450 align:start position:0%
+easy
+and<00:01:21.360><c> now</c><00:01:21.960><c> I</c><00:01:21.990><c> can</c><00:01:22.320><c> start</c><00:01:22.680><c> creating</c><00:01:22.920><c> our</c>
+
+00:01:23.450 --> 00:01:23.460 align:start position:0%
+and now I can start creating our
+ 
+
+00:01:23.460 --> 00:01:26.200 align:start position:0%
+and now I can start creating our
+projects<00:01:24.090><c> so</c><00:01:24.510><c> I'm</c><00:01:24.720><c> just</c><00:01:24.900><c> gonna</c><00:01:25.050><c> do</c><00:01:25.290><c> here</c>
+
+00:01:26.200 --> 00:01:26.210 align:start position:0%
+projects so I'm just gonna do here
+ 
+
+00:01:26.210 --> 00:01:29.630 align:start position:0%
+projects so I'm just gonna do here
+spring<00:01:27.210><c> and</c><00:01:27.510><c> choose</c><00:01:28.080><c> the</c><00:01:28.409><c> option</c><00:01:28.650><c> to</c><00:01:29.100><c> generate</c>
+
+00:01:29.630 --> 00:01:29.640 align:start position:0%
+spring and choose the option to generate
+ 
+
+00:01:29.640 --> 00:01:33.350 align:start position:0%
+spring and choose the option to generate
+a<00:01:29.850><c> new</c><00:01:30.180><c> project</c><00:01:30.710><c> I'll</c><00:01:31.710><c> make</c><00:01:32.070><c> a</c><00:01:32.100><c> Java</c><00:01:32.610><c> project</c><00:01:32.850><c> I</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+a new project I'll make a Java project I
+ 
+
+00:01:33.360 --> 00:01:35.180 align:start position:0%
+a new project I'll make a Java project I
+won't<00:01:33.720><c> have</c><00:01:33.960><c> to</c><00:01:34.110><c> change</c><00:01:34.380><c> much</c><00:01:34.650><c> I'll</c><00:01:34.950><c> just</c>
+
+00:01:35.180 --> 00:01:35.190 align:start position:0%
+won't have to change much I'll just
+ 
+
+00:01:35.190 --> 00:01:41.630 align:start position:0%
+won't have to change much I'll just
+change<00:01:35.550><c> it</c><00:01:35.790><c> here</c><00:01:36.060><c> to</c><00:01:36.240><c> hello</c><00:01:36.510><c> world</c><00:01:39.380><c> ok</c><00:01:40.380><c> and</c><00:01:40.770><c> we</c>
+
+00:01:41.630 --> 00:01:41.640 align:start position:0%
+change it here to hello world ok and we
+ 
+
+00:01:41.640 --> 00:01:43.850 align:start position:0%
+change it here to hello world ok and we
+keep<00:01:42.030><c> the</c><00:01:42.240><c> version</c><00:01:42.690><c> that</c><00:01:42.840><c> was</c><00:01:42.960><c> suggested</c><00:01:43.200><c> I'm</c>
+
+00:01:43.850 --> 00:01:43.860 align:start position:0%
+keep the version that was suggested I'm
+ 
+
+00:01:43.860 --> 00:01:46.160 align:start position:0%
+keep the version that was suggested I'm
+gonna<00:01:44.100><c> add</c><00:01:44.340><c> a</c><00:01:44.370><c> few</c><00:01:44.580><c> starters</c><00:01:45.210><c> the</c><00:01:45.570><c> web</c><00:01:45.750><c> starter</c>
+
+00:01:46.160 --> 00:01:46.170 align:start position:0%
+gonna add a few starters the web starter
+ 
+
+00:01:46.170 --> 00:01:47.780 align:start position:0%
+gonna add a few starters the web starter
+because<00:01:46.320><c> I'm</c><00:01:46.590><c> gonna</c><00:01:46.740><c> make</c><00:01:46.860><c> a</c><00:01:47.040><c> hello</c><00:01:47.280><c> world</c><00:01:47.370><c> web</c>
+
+00:01:47.780 --> 00:01:47.790 align:start position:0%
+because I'm gonna make a hello world web
+ 
+
+00:01:47.790 --> 00:01:50.030 align:start position:0%
+because I'm gonna make a hello world web
+app<00:01:47.970><c> I'm</c><00:01:48.479><c> gonna</c><00:01:48.780><c> add</c><00:01:48.960><c> dev</c><00:01:49.229><c> tools</c><00:01:49.530><c> because</c>
+
+00:01:50.030 --> 00:01:50.040 align:start position:0%
+app I'm gonna add dev tools because
+ 
+
+00:01:50.040 --> 00:01:52.850 align:start position:0%
+app I'm gonna add dev tools because
+that's<00:01:50.250><c> nice</c><00:01:50.520><c> for</c><00:01:50.850><c> debugging</c><00:01:51.659><c> and</c><00:01:51.860><c> restarting</c>
+
+00:01:52.850 --> 00:01:52.860 align:start position:0%
+that's nice for debugging and restarting
+ 
+
+00:01:52.860 --> 00:01:55.490 align:start position:0%
+that's nice for debugging and restarting
+quickly<00:01:53.190><c> and</c><00:01:53.430><c> the</c><00:01:54.180><c> other</c><00:01:54.360><c> thing</c><00:01:54.630><c> I</c><00:01:54.840><c> want</c><00:01:55.110><c> is</c>
+
+00:01:55.490 --> 00:01:55.500 align:start position:0%
+quickly and the other thing I want is
+ 
+
+00:01:55.500 --> 00:01:57.440 align:start position:0%
+quickly and the other thing I want is
+the<00:01:55.680><c> actuator</c><00:01:56.190><c> which</c><00:01:56.490><c> will</c><00:01:56.729><c> give</c><00:01:56.909><c> us</c><00:01:56.940><c> live</c>
+
+00:01:57.440 --> 00:01:57.450 align:start position:0%
+the actuator which will give us live
+ 
+
+00:01:57.450 --> 00:01:59.780 align:start position:0%
+the actuator which will give us live
+hovers<00:01:57.930><c> in</c><00:01:57.960><c> editor</c><00:01:58.530><c> as</c><00:01:58.710><c> you'll</c><00:01:58.920><c> see</c><00:01:59.130><c> later</c><00:01:59.159><c> so</c>
+
+00:01:59.780 --> 00:01:59.790 align:start position:0%
+hovers in editor as you'll see later so
+ 
+
+00:01:59.790 --> 00:02:02.990 align:start position:0%
+hovers in editor as you'll see later so
+that's<00:02:00.479><c> very</c><00:02:00.869><c> nice</c><00:02:01.140><c> and</c><00:02:01.650><c> I</c><00:02:01.799><c> want</c><00:02:01.979><c> that</c><00:02:02.159><c> so</c><00:02:02.640><c> here</c>
+
+00:02:02.990 --> 00:02:03.000 align:start position:0%
+that's very nice and I want that so here
+ 
+
+00:02:03.000 --> 00:02:05.480 align:start position:0%
+that's very nice and I want that so here
+we<00:02:03.119><c> go</c><00:02:03.299><c> it's</c><00:02:04.170><c> asking</c><00:02:04.590><c> us</c><00:02:04.710><c> where</c><00:02:04.950><c> to</c><00:02:04.979><c> save</c><00:02:05.280><c> this</c>
+
+00:02:05.480 --> 00:02:05.490 align:start position:0%
+we go it's asking us where to save this
+ 
+
+00:02:05.490 --> 00:02:08.990 align:start position:0%
+we go it's asking us where to save this
+I<00:02:05.700><c> just</c><00:02:05.820><c> take</c><00:02:06.390><c> this</c><00:02:06.600><c> folder</c><00:02:06.990><c> here</c><00:02:07.530><c> saying</c><00:02:08.009><c> ok</c>
+
+00:02:08.990 --> 00:02:09.000 align:start position:0%
+I just take this folder here saying ok
+ 
+
+00:02:09.000 --> 00:02:11.420 align:start position:0%
+I just take this folder here saying ok
+it<00:02:09.420><c> asks</c><00:02:09.840><c> me</c><00:02:09.899><c> to</c><00:02:10.019><c> open</c><00:02:10.590><c> the</c><00:02:10.649><c> project</c><00:02:10.860><c> it</c><00:02:11.189><c> just</c>
+
+00:02:11.420 --> 00:02:11.430 align:start position:0%
+it asks me to open the project it just
+ 
+
+00:02:11.430 --> 00:02:13.580 align:start position:0%
+it asks me to open the project it just
+generated<00:02:12.120><c> and</c><00:02:12.360><c> we're</c><00:02:12.900><c> good</c><00:02:13.200><c> to</c><00:02:13.230><c> go</c>
+
+00:02:13.580 --> 00:02:13.590 align:start position:0%
+generated and we're good to go
+ 
+
+00:02:13.590 --> 00:02:17.240 align:start position:0%
+generated and we're good to go
+the<00:02:13.890><c> project</c><00:02:14.370><c> is</c><00:02:14.549><c> ready</c><00:02:14.790><c> too</c><00:02:15.180><c> and</c><00:02:16.170><c> here</c><00:02:16.980><c> is</c><00:02:17.069><c> my</c>
+
+00:02:17.240 --> 00:02:17.250 align:start position:0%
+the project is ready too and here is my
+ 
+
+00:02:17.250 --> 00:02:19.940 align:start position:0%
+the project is ready too and here is my
+project<00:02:17.510><c> once</c><00:02:18.510><c> I</c><00:02:18.690><c> go</c><00:02:18.870><c> in</c><00:02:19.050><c> here</c><00:02:19.290><c> you</c><00:02:19.349><c> can</c><00:02:19.709><c> see</c>
+
+00:02:19.940 --> 00:02:19.950 align:start position:0%
+project once I go in here you can see
+ 
+
+00:02:19.950 --> 00:02:22.790 align:start position:0%
+project once I go in here you can see
+that<00:02:20.220><c> I</c><00:02:20.400><c> for</c><00:02:21.180><c> example</c><00:02:21.360><c> have</c><00:02:21.840><c> my</c>
+
+00:02:22.790 --> 00:02:22.800 align:start position:0%
+that I for example have my
+ 
+
+00:02:22.800 --> 00:02:25.199 align:start position:0%
+that I for example have my
+support<00:02:23.800><c> for</c><00:02:23.920><c> editing</c><00:02:24.370><c> properties</c><00:02:24.970><c> files</c>
+
+00:02:25.199 --> 00:02:25.209 align:start position:0%
+support for editing properties files
+ 
+
+00:02:25.209 --> 00:02:27.809 align:start position:0%
+support for editing properties files
+like<00:02:25.659><c> I</c><00:02:25.690><c> said</c><00:02:25.989><c> so</c><00:02:26.290><c> I</c><00:02:26.379><c> guess</c><00:02:26.620><c> put</c><00:02:27.310><c> something</c><00:02:27.700><c> in</c>
+
+00:02:27.809 --> 00:02:27.819 align:start position:0%
+like I said so I guess put something in
+ 
+
+00:02:27.819 --> 00:02:31.830 align:start position:0%
+like I said so I guess put something in
+here<00:02:28.260><c> for</c><00:02:29.260><c> example</c><00:02:29.739><c> like</c><00:02:29.890><c> that</c><00:02:29.920><c> and</c><00:02:30.569><c> you</c><00:02:31.569><c> have</c>
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+here for example like that and you have
+ 
+
+00:02:31.840 --> 00:02:34.589 align:start position:0%
+here for example like that and you have
+hovers<00:02:32.650><c> and</c><00:02:32.920><c> editor</c><00:02:33.340><c> things</c><00:02:33.700><c> like</c><00:02:34.090><c> support</c>
+
+00:02:34.589 --> 00:02:34.599 align:start position:0%
+hovers and editor things like support
+ 
+
+00:02:34.599 --> 00:02:36.660 align:start position:0%
+hovers and editor things like support
+which<00:02:34.840><c> I</c><00:02:34.959><c> don't</c><00:02:35.019><c> have</c><00:02:35.200><c> much</c><00:02:35.530><c> time</c><00:02:35.769><c> to</c><00:02:35.980><c> demo</c><00:02:36.310><c> so</c>
+
+00:02:36.660 --> 00:02:36.670 align:start position:0%
+which I don't have much time to demo so
+ 
+
+00:02:36.670 --> 00:02:38.910 align:start position:0%
+which I don't have much time to demo so
+let's<00:02:37.030><c> do</c><00:02:37.209><c> something</c><00:02:37.420><c> else</c><00:02:37.629><c> I'm</c><00:02:38.319><c> gonna</c><00:02:38.470><c> add</c><00:02:38.680><c> a</c>
+
+00:02:38.910 --> 00:02:38.920 align:start position:0%
+let's do something else I'm gonna add a
+ 
+
+00:02:38.920 --> 00:02:40.860 align:start position:0%
+let's do something else I'm gonna add a
+request<00:02:39.310><c> my</c><00:02:39.489><c> thing</c><00:02:39.700><c> so</c><00:02:39.879><c> in</c><00:02:40.060><c> these</c><00:02:40.209><c> Java</c><00:02:40.540><c> files</c>
+
+00:02:40.860 --> 00:02:40.870 align:start position:0%
+request my thing so in these Java files
+ 
+
+00:02:40.870 --> 00:02:42.900 align:start position:0%
+request my thing so in these Java files
+get<00:02:41.290><c> some</c><00:02:41.500><c> spring</c><00:02:41.890><c> boat</c><00:02:42.069><c> specific</c><00:02:42.640><c> things</c>
+
+00:02:42.900 --> 00:02:42.910 align:start position:0%
+get some spring boat specific things
+ 
+
+00:02:42.910 --> 00:02:45.780 align:start position:0%
+get some spring boat specific things
+like<00:02:43.060><c> an</c><00:02:43.480><c> a</c><00:02:43.569><c> snippet</c><00:02:44.080><c> to</c><00:02:44.739><c> quickly</c><00:02:45.040><c> generate</c><00:02:45.340><c> a</c>
+
+00:02:45.780 --> 00:02:45.790 align:start position:0%
+like an a snippet to quickly generate a
+ 
+
+00:02:45.790 --> 00:02:48.240 align:start position:0%
+like an a snippet to quickly generate a
+request<00:02:46.330><c> nothing</c><00:02:46.720><c> I</c><00:02:46.930><c> make</c><00:02:47.650><c> that</c><00:02:47.799><c> thing</c><00:02:48.010><c> hello</c>
+
+00:02:48.240 --> 00:02:48.250 align:start position:0%
+request nothing I make that thing hello
+ 
+
+00:02:48.250 --> 00:02:51.990 align:start position:0%
+request nothing I make that thing hello
+world<00:02:48.599><c> request</c><00:02:49.599><c> nothing</c><00:02:49.989><c> buy</c><00:02:50.739><c> anything</c><00:02:51.549><c> a</c><00:02:51.730><c> few</c>
+
+00:02:51.990 --> 00:02:52.000 align:start position:0%
+world request nothing buy anything a few
+ 
+
+00:02:52.000 --> 00:02:54.119 align:start position:0%
+world request nothing buy anything a few
+things<00:02:52.269><c> I'm</c><00:02:52.989><c> just</c><00:02:53.019><c> going</c><00:02:53.440><c> to</c><00:02:53.500><c> move</c><00:02:53.829><c> this</c>
+
+00:02:54.119 --> 00:02:54.129 align:start position:0%
+things I'm just going to move this
+ 
+
+00:02:54.129 --> 00:02:55.610 align:start position:0%
+things I'm just going to move this
+request
+
+00:02:55.610 --> 00:02:55.620 align:start position:0%
+request
+ 
+
+00:02:55.620 --> 00:02:58.949 align:start position:0%
+request
+keep<00:02:56.620><c> things</c><00:02:56.920><c> simple</c><00:02:57.519><c> and</c><00:02:57.730><c> just</c><00:02:58.120><c> returns</c><00:02:58.599><c> a</c>
+
+00:02:58.949 --> 00:02:58.959 align:start position:0%
+keep things simple and just returns a
+ 
+
+00:02:58.959 --> 00:03:09.930 align:start position:0%
+keep things simple and just returns a
+message<00:02:59.470><c> I</c><00:03:03.299><c> need</c><00:03:04.299><c> in</c><00:03:04.560><c> control</c><00:03:08.700><c> notation</c><00:03:09.700><c> here</c>
+
+00:03:09.930 --> 00:03:09.940 align:start position:0%
+message I need in control notation here
+ 
+
+00:03:09.940 --> 00:03:13.069 align:start position:0%
+message I need in control notation here
+and<00:03:10.150><c> now</c><00:03:10.750><c> my</c><00:03:10.930><c> project</c><00:03:11.440><c> is</c><00:03:11.650><c> ready</c><00:03:11.950><c> to</c><00:03:12.220><c> run</c><00:03:12.400><c> so</c>
+
+00:03:13.069 --> 00:03:13.079 align:start position:0%
+and now my project is ready to run so
+ 
+
+00:03:13.079 --> 00:03:15.569 align:start position:0%
+and now my project is ready to run so
+let's<00:03:14.079><c> put</c><00:03:14.319><c> a</c><00:03:14.349><c> breakpoint</c><00:03:14.620><c> here</c><00:03:14.890><c> because</c><00:03:15.489><c> I</c>
+
+00:03:15.569 --> 00:03:15.579 align:start position:0%
+let's put a breakpoint here because I
+ 
+
+00:03:15.579 --> 00:03:17.970 align:start position:0%
+let's put a breakpoint here because I
+said<00:03:15.819><c> we</c><00:03:15.970><c> have</c><00:03:16.120><c> a</c><00:03:16.150><c> debugger</c><00:03:16.569><c> and</c><00:03:16.900><c> if</c><00:03:17.590><c> I</c><00:03:17.739><c> press</c>
+
+00:03:17.970 --> 00:03:17.980 align:start position:0%
+said we have a debugger and if I press
+ 
+
+00:03:17.980 --> 00:03:21.750 align:start position:0%
+said we have a debugger and if I press
+f5<00:03:18.579><c> or</c><00:03:19.000><c> go</c><00:03:19.480><c> to</c><00:03:19.540><c> this</c><00:03:19.810><c> menu</c><00:03:20.109><c> here</c><00:03:20.650><c> I</c><00:03:20.859><c> can</c><00:03:21.489><c> start</c>
+
+00:03:21.750 --> 00:03:21.760 align:start position:0%
+f5 or go to this menu here I can start
+ 
+
+00:03:21.760 --> 00:03:23.729 align:start position:0%
+f5 or go to this menu here I can start
+the<00:03:21.970><c> debugger</c><00:03:22.209><c> the</c><00:03:22.599><c> first</c><00:03:22.840><c> time</c><00:03:23.079><c> I</c><00:03:23.200><c> do</c><00:03:23.260><c> that</c><00:03:23.530><c> it</c>
+
+00:03:23.729 --> 00:03:23.739 align:start position:0%
+the debugger the first time I do that it
+ 
+
+00:03:23.739 --> 00:03:25.470 align:start position:0%
+the debugger the first time I do that it
+will<00:03:23.859><c> generate</c><00:03:24.250><c> launch</c><00:03:24.579><c> configuration</c><00:03:25.329><c> which</c>
+
+00:03:25.470 --> 00:03:25.480 align:start position:0%
+will generate launch configuration which
+ 
+
+00:03:25.480 --> 00:03:27.270 align:start position:0%
+will generate launch configuration which
+you<00:03:25.629><c> might</c><00:03:25.780><c> want</c><00:03:26.049><c> to</c><00:03:26.109><c> edit</c><00:03:26.260><c> I</c><00:03:26.590><c> don't</c><00:03:26.889><c> need</c><00:03:27.069><c> to</c>
+
+00:03:27.270 --> 00:03:27.280 align:start position:0%
+you might want to edit I don't need to
+ 
+
+00:03:27.280 --> 00:03:29.789 align:start position:0%
+you might want to edit I don't need to
+so<00:03:27.519><c> I'll</c><00:03:27.639><c> just</c><00:03:27.849><c> close</c><00:03:28.180><c> that</c><00:03:28.239><c> again</c><00:03:28.690><c> and</c><00:03:28.900><c> press</c>
+
+00:03:29.789 --> 00:03:29.799 align:start position:0%
+so I'll just close that again and press
+ 
+
+00:03:29.799 --> 00:03:32.879 align:start position:0%
+so I'll just close that again and press
+f5<00:03:30.430><c> again</c><00:03:31.090><c> and</c><00:03:31.419><c> this</c><00:03:31.630><c> time</c><00:03:31.690><c> it'll</c><00:03:32.200><c> run</c><00:03:32.560><c> for</c>
+
+00:03:32.879 --> 00:03:32.889 align:start position:0%
+f5 again and this time it'll run for
+ 
+
+00:03:32.889 --> 00:03:35.640 align:start position:0%
+f5 again and this time it'll run for
+real<00:03:33.160><c> so</c><00:03:33.669><c> now</c><00:03:33.849><c> my</c><00:03:34.060><c> application</c><00:03:34.870><c> is</c><00:03:35.109><c> starting</c>
+
+00:03:35.640 --> 00:03:35.650 align:start position:0%
+real so now my application is starting
+ 
+
+00:03:35.650 --> 00:03:38.220 align:start position:0%
+real so now my application is starting
+you<00:03:36.130><c> see</c><00:03:36.340><c> the</c><00:03:36.459><c> output</c><00:03:36.790><c> here</c><00:03:37.180><c> you</c><00:03:37.690><c> see</c><00:03:37.930><c> a</c><00:03:37.959><c> few</c>
+
+00:03:38.220 --> 00:03:38.230 align:start position:0%
+you see the output here you see a few
+ 
+
+00:03:38.230 --> 00:03:40.500 align:start position:0%
+you see the output here you see a few
+things<00:03:38.530><c> which</c><00:03:38.859><c> I</c><00:03:39.069><c> mentioned</c><00:03:39.880><c> earlier</c><00:03:40.209><c> there</c>
+
+00:03:40.500 --> 00:03:40.510 align:start position:0%
+things which I mentioned earlier there
+ 
+
+00:03:40.510 --> 00:03:43.830 align:start position:0%
+things which I mentioned earlier there
+is<00:03:40.660><c> this</c><00:03:41.190><c> live</c><00:03:42.190><c> hover</c><00:03:42.549><c> information</c><00:03:43.299><c> if</c><00:03:43.720><c> you</c>
+
+00:03:43.830 --> 00:03:43.840 align:start position:0%
+is this live hover information if you
+ 
+
+00:03:43.840 --> 00:03:45.360 align:start position:0%
+is this live hover information if you
+see<00:03:43.989><c> this</c><00:03:44.139><c> green</c><00:03:44.470><c> thing</c><00:03:44.709><c> that</c><00:03:44.739><c> means</c><00:03:45.099><c> there's</c>
+
+00:03:45.360 --> 00:03:45.370 align:start position:0%
+see this green thing that means there's
+ 
+
+00:03:45.370 --> 00:03:47.039 align:start position:0%
+see this green thing that means there's
+something<00:03:45.639><c> to</c><00:03:45.910><c> hover</c><00:03:46.060><c> and</c><00:03:46.419><c> it</c><00:03:46.569><c> will</c><00:03:46.720><c> tell</c><00:03:46.930><c> you</c>
+
+00:03:47.039 --> 00:03:47.049 align:start position:0%
+something to hover and it will tell you
+ 
+
+00:03:47.049 --> 00:03:48.839 align:start position:0%
+something to hover and it will tell you
+something<00:03:47.440><c> about</c><00:03:47.560><c> information</c><00:03:48.459><c> in</c><00:03:48.669><c> the</c>
+
+00:03:48.839 --> 00:03:48.849 align:start position:0%
+something about information in the
+ 
+
+00:03:48.849 --> 00:03:51.330 align:start position:0%
+something about information in the
+active<00:03:49.299><c> processes</c><00:03:49.900><c> that</c><00:03:50.620><c> are</c><00:03:50.829><c> related</c><00:03:51.310><c> to</c>
+
+00:03:51.330 --> 00:03:51.340 align:start position:0%
+active processes that are related to
+ 
+
+00:03:51.340 --> 00:03:53.280 align:start position:0%
+active processes that are related to
+this<00:03:51.579><c> piece</c><00:03:51.849><c> of</c><00:03:52.030><c> code</c><00:03:52.209><c> for</c><00:03:52.569><c> example</c><00:03:52.959><c> here</c><00:03:53.200><c> it</c>
+
+00:03:53.280 --> 00:03:53.290 align:start position:0%
+this piece of code for example here it
+ 
+
+00:03:53.290 --> 00:03:55.500 align:start position:0%
+this piece of code for example here it
+says<00:03:53.319><c> there</c><00:03:53.739><c> is</c><00:03:53.829><c> a</c><00:03:53.859><c> request</c><00:03:54.310><c> nothing</c><00:03:54.819><c> in</c><00:03:55.000><c> this</c>
+
+00:03:55.500 --> 00:03:55.510 align:start position:0%
+says there is a request nothing in this
+ 
+
+00:03:55.510 --> 00:03:58.800 align:start position:0%
+says there is a request nothing in this
+process<00:03:56.079><c> which</c><00:03:56.290><c> maps</c><00:03:56.799><c> to</c><00:03:57.010><c> this</c><00:03:57.130><c> URL</c><00:03:57.519><c> here</c><00:03:57.810><c> so</c>
+
+00:03:58.800 --> 00:03:58.810 align:start position:0%
+process which maps to this URL here so
+ 
+
+00:03:58.810 --> 00:04:01.170 align:start position:0%
+process which maps to this URL here so
+you<00:03:58.900><c> might</c><00:03:59.079><c> want</c><00:03:59.290><c> to</c><00:03:59.319><c> open</c><00:03:59.380><c> that</c><00:03:59.829><c> and</c><00:04:00.180><c> for</c>
+
+00:04:01.170 --> 00:04:01.180 align:start position:0%
+you might want to open that and for
+ 
+
+00:04:01.180 --> 00:04:02.789 align:start position:0%
+you might want to open that and for
+convenience<00:04:01.359><c> there</c><00:04:01.900><c> is</c><00:04:01.989><c> also</c><00:04:02.169><c> a</c><00:04:02.290><c> code</c><00:04:02.560><c> lines</c>
+
+00:04:02.789 --> 00:04:02.799 align:start position:0%
+convenience there is also a code lines
+ 
+
+00:04:02.799 --> 00:04:04.460 align:start position:0%
+convenience there is also a code lines
+for<00:04:03.040><c> that</c><00:04:03.160><c> so</c><00:04:03.370><c> if</c><00:04:03.519><c> I</c><00:04:03.609><c> click</c><00:04:03.819><c> on</c><00:04:03.940><c> this</c><00:04:04.150><c> now</c>
+
+00:04:04.460 --> 00:04:04.470 align:start position:0%
+for that so if I click on this now
+ 
+
+00:04:04.470 --> 00:04:06.780 align:start position:0%
+for that so if I click on this now
+you'll<00:04:05.470><c> see</c><00:04:05.650><c> that</c><00:04:05.680><c> the</c><00:04:06.010><c> brows</c><00:04:06.310><c> are</c><00:04:06.549><c> quickly</c>
+
+00:04:06.780 --> 00:04:06.790 align:start position:0%
+you'll see that the brows are quickly
+ 
+
+00:04:06.790 --> 00:04:09.449 align:start position:0%
+you'll see that the brows are quickly
+popped<00:04:07.120><c> up</c><00:04:07.359><c> browser</c><00:04:08.169><c> pops</c><00:04:08.410><c> up</c><00:04:08.620><c> and</c><00:04:08.859><c> open</c><00:04:09.280><c> that</c>
+
+00:04:09.449 --> 00:04:09.459 align:start position:0%
+popped up browser pops up and open that
+ 
+
+00:04:09.459 --> 00:04:14.610 align:start position:0%
+popped up browser pops up and open that
+URL<00:04:10.019><c> and</c><00:04:12.030><c> then</c><00:04:13.030><c> I</c><00:04:13.299><c> hit</c><00:04:13.599><c> my</c><00:04:13.810><c> breakpoint</c><00:04:14.319><c> so</c>
+
+00:04:14.610 --> 00:04:14.620 align:start position:0%
+URL and then I hit my breakpoint so
+ 
+
+00:04:14.620 --> 00:04:16.560 align:start position:0%
+URL and then I hit my breakpoint so
+these<00:04:15.010><c> debugger</c><00:04:15.489><c> is</c><00:04:15.730><c> now</c><00:04:15.910><c> active</c><00:04:16.299><c> I</c><00:04:16.389><c> could</c>
+
+00:04:16.560 --> 00:04:16.570 align:start position:0%
+these debugger is now active I could
+ 
+
+00:04:16.570 --> 00:04:18.259 align:start position:0%
+these debugger is now active I could
+start<00:04:16.930><c> with</c><00:04:17.049><c> stepping</c><00:04:17.380><c> and</c><00:04:17.620><c> debugging</c><00:04:17.919><c> this</c>
+
+00:04:18.259 --> 00:04:18.269 align:start position:0%
+start with stepping and debugging this
+ 
+
+00:04:18.269 --> 00:04:20.640 align:start position:0%
+start with stepping and debugging this
+this<00:04:19.269><c> is</c><00:04:19.449><c> more</c><00:04:19.720><c> or</c><00:04:19.810><c> less</c><00:04:19.930><c> where</c><00:04:20.229><c> I</c><00:04:20.260><c> wanted</c><00:04:20.590><c> to</c>
+
+00:04:20.640 --> 00:04:20.650 align:start position:0%
+this is more or less where I wanted to
+ 
+
+00:04:20.650 --> 00:04:22.740 align:start position:0%
+this is more or less where I wanted to
+end<00:04:20.889><c> my</c><00:04:20.979><c> demo</c><00:04:21.310><c> I</c><00:04:21.609><c> hope</c><00:04:21.910><c> you</c><00:04:22.090><c> enjoyed</c><00:04:22.419><c> it</c><00:04:22.599><c> and</c>
+
+00:04:22.740 --> 00:04:22.750 align:start position:0%
+end my demo I hope you enjoyed it and
+ 
+
+00:04:22.750 --> 00:04:32.839 align:start position:0%
+end my demo I hope you enjoyed it and
+thanks<00:04:23.530><c> for</c><00:04:23.680><c> watching</c>
+
+00:04:32.839 --> 00:04:32.849 align:start position:0%
+ 
+ 
+
+00:04:32.849 --> 00:04:34.909 align:start position:0%
+ 
+you
+

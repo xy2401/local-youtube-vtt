@@ -1,0 +1,921 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:10.280 --> 00:00:12.840
+PAUL LEWIS: Hello, and welcome
+to this "Supercharged TL;DW."
+
+00:00:12.840 --> 00:00:15.050
+Last week, Summer and
+I built a 3D card flip.
+
+00:00:15.050 --> 00:00:17.570
+Let me show you what
+we got to building.
+
+00:00:17.570 --> 00:00:19.810
+So you can see I've got
+this card on screen.
+
+00:00:19.810 --> 00:00:22.710
+And when I click on it,
+it flips over in 3D.
+
+00:00:22.710 --> 00:00:24.280
+And there are
+shadows and all sorts
+
+00:00:24.280 --> 00:00:27.465
+of things underneath as well
+to make it look just right.
+
+00:00:27.465 --> 00:00:28.840
+Now, the other
+thing I've done is
+
+00:00:28.840 --> 00:00:30.370
+I've taken a timeline recording.
+
+00:00:30.370 --> 00:00:32.203
+And you can see that
+it's hitting a comfy 60
+
+00:00:32.203 --> 00:00:32.950
+frames a second.
+
+00:00:32.950 --> 00:00:35.033
+And it probably would--
+well, it is doing the same
+
+00:00:35.033 --> 00:00:37.260
+on most mobile devices as well.
+
+00:00:37.260 --> 00:00:39.707
+So with that said, let
+me show you actually
+
+00:00:39.707 --> 00:00:40.790
+how we got to building it.
+
+00:00:40.790 --> 00:00:44.820
+And of course, that requires a
+trip to the most famous corner
+
+00:00:44.820 --> 00:00:48.900
+of them all-- Theory Corner.
+
+00:00:48.900 --> 00:00:50.700
+Hello, my theoretical chums.
+
+00:00:50.700 --> 00:00:53.030
+Welcome to Theory Corner.
+
+00:00:53.030 --> 00:00:55.896
+So let's do a little bit
+of 3D theory-- not loads.
+
+00:00:55.896 --> 00:00:56.770
+Don't worry about it.
+
+00:00:56.770 --> 00:00:58.070
+It's not that bad.
+
+00:00:58.070 --> 00:01:01.800
+So imagine we have our
+axes-- x, y, and zed--
+
+00:01:01.800 --> 00:01:03.870
+or z, depending on
+what you prefer.
+
+00:01:03.870 --> 00:01:08.380
+And imagine our screen is at the
+front here and so is the card.
+
+00:01:08.380 --> 00:01:10.750
+Now, what we need to do is
+we need to push the card back
+
+00:01:10.750 --> 00:01:12.380
+into z space so
+that it's got space
+
+00:01:12.380 --> 00:01:15.420
+to come forward and flip
+over and go back again.
+
+00:01:15.420 --> 00:01:17.890
+So we push it back in z space.
+
+00:01:17.890 --> 00:01:19.780
+Now, the way we do that
+is we put perspective
+
+00:01:19.780 --> 00:01:20.863
+on the containing element.
+
+00:01:20.863 --> 00:01:23.760
+And the perspective value
+is always in pixels,
+
+00:01:23.760 --> 00:01:25.930
+according to the spec--
+or mostly is, anyway.
+
+00:01:25.930 --> 00:01:27.890
+And so we push this
+card back, say,
+
+00:01:27.890 --> 00:01:30.350
+by 200 pixels or something.
+
+00:01:30.350 --> 00:01:33.360
+And when we do that, we find
+that the card gets smaller,
+
+00:01:33.360 --> 00:01:34.690
+as it does in real life.
+
+00:01:34.690 --> 00:01:37.240
+The further things are away from
+us, the smaller they appear.
+
+00:01:37.240 --> 00:01:38.337
+So that's fair enough.
+
+00:01:38.337 --> 00:01:40.670
+But we don't want the card
+to appear small, necessarily.
+
+00:01:40.670 --> 00:01:42.461
+We just want it to
+start at its actual size
+
+00:01:42.461 --> 00:01:44.900
+but be 200 pixels away from it.
+
+00:01:44.900 --> 00:01:46.500
+So what we do is we
+look at the spec.
+
+00:01:46.500 --> 00:01:48.999
+And it says, well, in order to
+figure out how much something
+
+00:01:48.999 --> 00:01:51.360
+has been scaled down, you
+take the perspective value,
+
+00:01:51.360 --> 00:01:54.010
+and you divide it by
+perspective minus the distance
+
+00:01:54.010 --> 00:01:55.930
+that you've moved your thing.
+
+00:01:55.930 --> 00:01:57.430
+So let's say we've
+got a perspective
+
+00:01:57.430 --> 00:01:59.000
+value of 500 pixels.
+
+00:01:59.000 --> 00:02:01.690
+To figure out what we need to
+do for the scaling of this card,
+
+00:02:01.690 --> 00:02:04.980
+we say 500 over 500
+minus minus 200,
+
+00:02:04.980 --> 00:02:07.760
+because we moved it
+minus 200 pixels in z.
+
+00:02:07.760 --> 00:02:09.949
+That tells us that
+we've got to scale down.
+
+00:02:09.949 --> 00:02:12.332
+It's scaled down by 0.71.
+
+00:02:12.332 --> 00:02:13.790
+Well, we want to
+scale it up, so we
+
+00:02:13.790 --> 00:02:15.280
+have to do 1 over that value.
+
+00:02:15.280 --> 00:02:19.000
+So we can scale it by 1
+over 0.71, which works out
+
+00:02:19.000 --> 00:02:21.770
+to a very convenient 1.4.
+
+00:02:21.770 --> 00:02:23.147
+So now our card is scaled up.
+
+00:02:23.147 --> 00:02:24.980
+What we can do is we
+can set up an animation
+
+00:02:24.980 --> 00:02:28.497
+to bring it forward, flip it
+over, and push it back again.
+
+00:02:28.497 --> 00:02:29.830
+So that's just the 3D card flip.
+
+00:02:29.830 --> 00:02:33.310
+We'll talk about the shadows and
+so on when we get to the code.
+
+00:02:33.310 --> 00:02:37.540
+In fact, talking of code,
+let's go and look at some.
+
+00:02:37.540 --> 00:02:40.465
+Welcome back to the codey bit.
+
+00:02:40.465 --> 00:02:43.207
+Now what we'll do is we'll have
+a look at some of this code.
+
+00:02:43.207 --> 00:02:44.790
+In fact, let's look
+at the HTML first.
+
+00:02:44.790 --> 00:02:46.384
+We have an SC card.
+
+00:02:46.384 --> 00:02:47.300
+It's a custom element.
+
+00:02:47.300 --> 00:02:48.570
+We normally do this.
+
+00:02:48.570 --> 00:02:50.710
+It's just for convenience
+and because it's actually
+
+00:02:50.710 --> 00:02:52.030
+quite handy to do that.
+
+00:02:52.030 --> 00:02:53.220
+You don't have to do that.
+
+00:02:53.220 --> 00:02:55.780
+It would work just fine
+if you had divs and so on.
+
+00:02:55.780 --> 00:02:58.650
+And for now, we can
+ignore the attributes
+
+00:02:58.650 --> 00:02:59.710
+that we've added on here.
+
+00:02:59.710 --> 00:03:02.980
+The main thing is we've got this
+front and we've got this back.
+
+00:03:02.980 --> 00:03:06.910
+And in fact, if we look at the
+styles for this front and back,
+
+00:03:06.910 --> 00:03:10.499
+mostly it's just going
+to be absolute position
+
+00:03:10.499 --> 00:03:12.540
+and so on, because we want
+the front and the back
+
+00:03:12.540 --> 00:03:14.081
+to appear over the
+top of each other.
+
+00:03:14.081 --> 00:03:16.120
+But the super
+interesting bit, I think,
+
+00:03:16.120 --> 00:03:19.110
+is the back face
+visibility set to hidden.
+
+00:03:19.110 --> 00:03:20.920
+We do this because
+we want to make sure
+
+00:03:20.920 --> 00:03:23.597
+that even if the two
+halves of the card
+
+00:03:23.597 --> 00:03:25.180
+are placed over the
+top of each other,
+
+00:03:25.180 --> 00:03:27.472
+if one has got its back to
+us, we don't see it anymore.
+
+00:03:27.472 --> 00:03:29.555
+And that's actually a
+really important thing here.
+
+00:03:29.555 --> 00:03:31.600
+We need to make sure
+that only the side that
+
+00:03:31.600 --> 00:03:34.110
+is facing towards
+us as the camera
+
+00:03:34.110 --> 00:03:35.980
+is the one that's
+actually visible,
+
+00:03:35.980 --> 00:03:37.530
+so we switch back
+face visibility
+
+00:03:37.530 --> 00:03:41.480
+to hidden for the front
+and the back of the cards.
+
+00:03:41.480 --> 00:03:43.880
+Now, when it comes
+to the JavaScript,
+
+00:03:43.880 --> 00:03:48.320
+most of the time, most of this
+code is fairly boilerplate,
+
+00:03:48.320 --> 00:03:51.560
+I suppose, except for
+this actual flip function,
+
+00:03:51.560 --> 00:03:54.212
+which is the meat of what
+we actually get into.
+
+00:03:54.212 --> 00:03:55.420
+So let's have a look at that.
+
+00:03:55.420 --> 00:03:58.721
+Now, what we're doing is we're
+setting up-- first of all,
+
+00:03:58.721 --> 00:04:01.220
+we're setting up this scale,
+which we talked about over here
+
+00:04:01.220 --> 00:04:02.310
+in Theory Corner.
+
+00:04:02.310 --> 00:04:04.790
+We need to know how much our
+card needs to be scaled up by.
+
+00:04:04.790 --> 00:04:07.720
+Now, I've hardcoded these
+values, a more generalized
+
+00:04:07.720 --> 00:04:08.220
+version.
+
+00:04:08.220 --> 00:04:10.790
+You take the actual
+dimensions yourself,
+
+00:04:10.790 --> 00:04:12.860
+and you'd figure out
+exactly what you need to do.
+
+00:04:12.860 --> 00:04:15.110
+I'm not going to do that in
+this particular situation,
+
+00:04:15.110 --> 00:04:17.250
+but you can do that.
+
+00:04:17.250 --> 00:04:20.170
+Because what we said over
+there, it's actually--
+
+00:04:20.170 --> 00:04:21.070
+I've inverted it.
+
+00:04:21.070 --> 00:04:24.460
+So rather than it being
+500 over 500 plus 200,
+
+00:04:24.460 --> 00:04:27.070
+I've actually done
+500 plus 200 over 500.
+
+00:04:27.070 --> 00:04:30.951
+That's going to give
+us the 1.4 value here.
+
+00:04:30.951 --> 00:04:31.450
+OK.
+
+00:04:31.450 --> 00:04:34.110
+With the scaling done, let's
+talk about side 2 and side 2.
+
+00:04:34.110 --> 00:04:36.830
+Now, the card could be
+with its back facing to us
+
+00:04:36.830 --> 00:04:39.980
+or its front facing to us, so we
+just call it side 1 and side 2.
+
+00:04:39.980 --> 00:04:41.770
+And we just choose
+whichever one of these
+
+00:04:41.770 --> 00:04:44.353
+is going to make sense depending
+on whether the card is facing
+
+00:04:44.353 --> 00:04:46.924
+us on one side or the other.
+
+00:04:46.924 --> 00:04:49.090
+Side 1, side 2-- they're
+pretty much the same thing.
+
+00:04:49.090 --> 00:04:51.700
+They're an array of key
+frames, and each key frame
+
+00:04:51.700 --> 00:04:53.014
+is an object.
+
+00:04:53.014 --> 00:04:54.680
+And in this case, we
+have the transform.
+
+00:04:54.680 --> 00:04:57.315
+So let's step through
+what we do for side 1.
+
+00:04:57.315 --> 00:04:58.690
+Basically, what
+we're saying here
+
+00:04:58.690 --> 00:05:01.436
+is we're going to push it back
+200 pixels, like we discussed.
+
+00:05:01.436 --> 00:05:03.310
+We're going to set its
+rotation to 0 degrees,
+
+00:05:03.310 --> 00:05:05.018
+and we're going to
+scale it up so that it
+
+00:05:05.018 --> 00:05:06.390
+looks at the correct size.
+
+00:05:06.390 --> 00:05:09.680
+Then we bring the card
+forward by 100 pixels,
+
+00:05:09.680 --> 00:05:11.810
+and we leave the
+rotation where it is
+
+00:05:11.810 --> 00:05:13.870
+and the scale where
+it is as well.
+
+00:05:13.870 --> 00:05:16.370
+Next keyframe, we're going
+to be still at minus 100,
+
+00:05:16.370 --> 00:05:19.500
+but this time, we're going to
+rotate the card across the x-
+
+00:05:19.500 --> 00:05:21.830
+or the y-axis, depending on
+which one we want to use,
+
+00:05:21.830 --> 00:05:23.610
+by 180 degrees.
+
+00:05:23.610 --> 00:05:26.350
+And then finally, we're
+going to push the card back
+
+00:05:26.350 --> 00:05:30.770
+to minus 200 pixels in z space.
+
+00:05:30.770 --> 00:05:32.950
+Side 2 is pretty
+much the same thing,
+
+00:05:32.950 --> 00:05:35.270
+except that instead of
+going from 0 to 180 degrees,
+
+00:05:35.270 --> 00:05:38.730
+it's going from 180
+degrees to 360 degrees.
+
+00:05:38.730 --> 00:05:41.297
+So we know that's going to
+work for us, because basically,
+
+00:05:41.297 --> 00:05:42.880
+we've got back face
+visibility hidden.
+
+00:05:42.880 --> 00:05:46.320
+We've got one card that's
+180 degrees and one
+
+00:05:46.320 --> 00:05:48.010
+side of the card
+that says 0 degrees.
+
+00:05:48.010 --> 00:05:49.977
+And we will just
+basically choose
+
+00:05:49.977 --> 00:05:52.560
+which one needs to be side 1 and
+which one needs to be side 2.
+
+00:05:52.560 --> 00:05:55.720
+And you can see
+that is down here.
+
+00:05:55.720 --> 00:05:57.280
+If the card is on
+its front side,
+
+00:05:57.280 --> 00:05:59.400
+we're going to animate
+front as side 1.
+
+00:05:59.400 --> 00:06:02.720
+If it's on its back, then front
+will be animated as side 2.
+
+00:06:02.720 --> 00:06:06.110
+So we basically hot-swap
+between those two.
+
+00:06:06.110 --> 00:06:09.330
+So that gives us the
+card flipping over,
+
+00:06:09.330 --> 00:06:10.701
+and that works just great.
+
+00:06:10.701 --> 00:06:12.450
+Let's have a quick
+chat about the shadows.
+
+00:06:12.450 --> 00:06:14.158
+Now, I'm not going to
+spend a lot of time
+
+00:06:14.158 --> 00:06:16.670
+on this, because we spent
+a good amount of time
+
+00:06:16.670 --> 00:06:17.500
+on the livestream.
+
+00:06:17.500 --> 00:06:19.070
+And if you've got
+a spare hour, it's
+
+00:06:19.070 --> 00:06:20.970
+definitely worth
+your time, this one.
+
+00:06:20.970 --> 00:06:23.190
+There's loads of really
+interesting bits and pieces
+
+00:06:23.190 --> 00:06:26.540
+in there about why we can't
+use a blur filter, why
+
+00:06:26.540 --> 00:06:27.747
+we can't use box shadow.
+
+00:06:27.747 --> 00:06:29.080
+There's loads of stuff in there.
+
+00:06:29.080 --> 00:06:30.770
+But if you can't
+watch the livestream,
+
+00:06:30.770 --> 00:06:32.603
+there is actually an
+accompanying blog post.
+
+00:06:32.603 --> 00:06:35.090
+We'll put an annotation or put
+it in the description below.
+
+00:06:35.090 --> 00:06:36.170
+Have a read at that.
+
+00:06:36.170 --> 00:06:39.930
+It really does get into
+9-slicing, and using SVG,
+
+00:06:39.930 --> 00:06:41.420
+and how it is we're
+actually going
+
+00:06:41.420 --> 00:06:43.910
+to do a performance
+shadow that's
+
+00:06:43.910 --> 00:06:47.340
+disconnected from the element
+that it's actually shadowing.
+
+00:06:47.340 --> 00:06:50.160
+It's really an
+interesting technique.
+
+00:06:50.160 --> 00:06:52.450
+What we have, though,
+is we have two shadows.
+
+00:06:52.450 --> 00:06:55.160
+We have what I'm calling
+the umbra and the penumbra.
+
+00:06:55.160 --> 00:06:57.370
+And the umbra is the
+really tight shadow
+
+00:06:57.370 --> 00:06:58.780
+with a little bit of blur.
+
+00:06:58.780 --> 00:07:02.335
+And it looks like this.
+
+00:07:02.335 --> 00:07:03.960
+It's got a little
+bit of blur, and it's
+
+00:07:03.960 --> 00:07:07.210
+SVG, which you can see here.
+
+00:07:07.210 --> 00:07:12.900
+It's SVG with a Gaussian
+blur with a deviation of 2.
+
+00:07:12.900 --> 00:07:14.850
+And we just have
+a black rectangle
+
+00:07:14.850 --> 00:07:16.550
+that's been blurred by it.
+
+00:07:16.550 --> 00:07:19.220
+The penumbra is a
+blurry version again.
+
+00:07:19.220 --> 00:07:21.760
+And it's got a blur of,
+I think, 12 pixels on it.
+
+00:07:21.760 --> 00:07:25.770
+And what we do is we actually
+fade from one to the other.
+
+00:07:25.770 --> 00:07:27.720
+So when the card is
+like this and it's
+
+00:07:27.720 --> 00:07:31.330
+at the back of--
+200 pixels back,
+
+00:07:31.330 --> 00:07:34.890
+we use that very tight and less
+blurry version of the shadow.
+
+00:07:34.890 --> 00:07:36.790
+Watch closely as we
+do the animation.
+
+00:07:36.790 --> 00:07:39.750
+We fade from that to the
+penumbra, the blurrier version.
+
+00:07:39.750 --> 00:07:41.990
+And that is exactly what
+we'd expect in real life.
+
+00:07:41.990 --> 00:07:45.150
+As something gets further
+away from a plane,
+
+00:07:45.150 --> 00:07:47.484
+its shadow is going to
+get blurrier and bigger.
+
+00:07:47.484 --> 00:07:49.400
+And so that's what we're
+trying to mimic here.
+
+00:07:49.400 --> 00:07:50.775
+And it's a subtle
+thing, but it's
+
+00:07:50.775 --> 00:07:54.060
+going to give it the
+feeling of reality.
+
+00:07:54.060 --> 00:07:56.840
+And the code for it
+is very, very much
+
+00:07:56.840 --> 00:07:58.460
+the same as the other stuff.
+
+00:07:58.460 --> 00:08:00.740
+We have an umbra and a
+penumbra, and we fade.
+
+00:08:00.740 --> 00:08:04.090
+You can see not only do we do
+the rotation stuff that we were
+
+00:08:04.090 --> 00:08:09.790
+doing before, we translate the
+shadows down and then back up
+
+00:08:09.790 --> 00:08:10.510
+again.
+
+00:08:10.510 --> 00:08:12.010
+And we also fade the opacity.
+
+00:08:12.010 --> 00:08:14.670
+So you can see that the
+smaller, tighter, less blurry
+
+00:08:14.670 --> 00:08:18.000
+version goes from 0.3 to
+0 and then back up to 0.3,
+
+00:08:18.000 --> 00:08:21.250
+and the blurrier one
+follows it, moves
+
+00:08:21.250 --> 00:08:23.420
+in exactly the same way,
+same rotation, and so on,
+
+00:08:23.420 --> 00:08:26.500
+but it goes from 0 to 0.5
+and then back down again.
+
+00:08:26.500 --> 00:08:29.100
+So it's crossfading
+between those two shadows
+
+00:08:29.100 --> 00:08:30.870
+to give us that effect.
+
+00:08:30.870 --> 00:08:33.840
+And finally, finally, finally,
+right at the end of this,
+
+00:08:33.840 --> 00:08:36.570
+we have the animation
+call for the pair of them.
+
+00:08:36.570 --> 00:08:39.610
+And when the penumbra-- the
+blurry one, when it's finished
+
+00:08:39.610 --> 00:08:42.220
+animating, we basically
+unlock the card
+
+00:08:42.220 --> 00:08:45.262
+so that people can tap on it
+again, and we flip the side.
+
+00:08:45.262 --> 00:08:46.970
+We know that we've
+flipped the card over,
+
+00:08:46.970 --> 00:08:48.840
+so now we just say if
+you're on the front,
+
+00:08:48.840 --> 00:08:49.650
+you're now on your back.
+
+00:08:49.650 --> 00:08:51.816
+And if you're on your back,
+you're now on the front.
+
+00:08:51.816 --> 00:08:54.546
+And that is basically
+all that goes into this.
+
+00:08:54.546 --> 00:08:55.420
+So there you have it.
+
+00:08:55.420 --> 00:08:57.600
+That's how you can
+make a 3D card flip.
+
+00:08:57.600 --> 00:09:00.640
+You can check out the
+blog post on the shadow
+
+00:09:00.640 --> 00:09:04.200
+stuff and 9-slicing, really
+interesting stuff there.
+
+00:09:04.200 --> 00:09:05.892
+You can have a watch
+at the livestream.
+
+00:09:05.892 --> 00:09:06.850
+That was about an hour.
+
+00:09:06.850 --> 00:09:09.720
+And as I say, it's got loads
+of super cool stuff in there.
+
+00:09:09.720 --> 00:09:11.090
+Definitely worth your time.
+
+00:09:11.090 --> 00:09:13.190
+And of course, you can
+subscribe to this show.
+
+00:09:13.190 --> 00:09:15.780
+You can subscribe
+to this channel,
+
+00:09:15.780 --> 00:09:17.870
+and you'll find loads
+of amazing content.
+
+00:09:17.870 --> 00:09:20.075
+They're definitely
+worth checking out,
+
+00:09:20.075 --> 00:09:21.480
+[INAUDIBLE] with Rob Dodson.
+
+00:09:21.480 --> 00:09:23.480
+I didn't have time to
+talk about the inert stuff
+
+00:09:23.480 --> 00:09:25.390
+that we're using here,
+but that's super cool.
+
+00:09:25.390 --> 00:09:26.681
+Definitely check out that show.
+
+00:09:26.681 --> 00:09:30.250
+And I will catch you with
+[INAUDIBLE] next time.
+
+00:09:30.250 --> 00:09:31.930
+Don't forget that
+you can subscribe.
+
+00:09:31.930 --> 00:09:33.060
+One of those two will work.
+
+00:09:33.060 --> 00:09:34.450
+Or you can watch the livestream.
+
+00:09:34.450 --> 00:09:36.800
+And I am not going
+anywhere until you
+
+00:09:36.800 --> 00:09:38.183
+do one of those two things.
+
+00:09:42.465 --> 00:09:44.860
+I'm still here.
+

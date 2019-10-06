@@ -1,0 +1,1472 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:01.819 align:start position:0%
+ 
+in<00:00:00.149><c> this</c><00:00:00.659><c> screencast</c><00:00:01.020><c> we'll</c><00:00:01.560><c> give</c><00:00:01.709><c> an</c>
+
+00:00:01.819 --> 00:00:01.829 align:start position:0%
+in this screencast we'll give an
+ 
+
+00:00:01.829 --> 00:00:03.379 align:start position:0%
+in this screencast we'll give an
+overview<00:00:02.129><c> of</c><00:00:02.340><c> how</c><00:00:02.490><c> to</c><00:00:02.550><c> work</c><00:00:02.760><c> with</c><00:00:02.820><c> Gradle</c><00:00:03.270><c> in</c>
+
+00:00:03.379 --> 00:00:03.389 align:start position:0%
+overview of how to work with Gradle in
+ 
+
+00:00:03.389 --> 00:00:05.930 align:start position:0%
+overview of how to work with Gradle in
+IntelliJ<00:00:03.870><c> IDEA</c><00:00:04.230><c> we'll</c><00:00:05.100><c> look</c><00:00:05.279><c> at</c><00:00:05.400><c> creating</c><00:00:05.430><c> new</c>
+
+00:00:05.930 --> 00:00:05.940 align:start position:0%
+IntelliJ IDEA we'll look at creating new
+ 
+
+00:00:05.940 --> 00:00:08.270 align:start position:0%
+IntelliJ IDEA we'll look at creating new
+Gradle<00:00:06.330><c> projects</c><00:00:06.839><c> importing</c><00:00:07.770><c> projects</c>
+
+00:00:08.270 --> 00:00:08.280 align:start position:0%
+Gradle projects importing projects
+ 
+
+00:00:08.280 --> 00:00:10.459 align:start position:0%
+Gradle projects importing projects
+managing<00:00:09.030><c> dependencies</c><00:00:09.269><c> and</c><00:00:09.780><c> running</c><00:00:10.050><c> tasks</c>
+
+00:00:10.459 --> 00:00:10.469 align:start position:0%
+managing dependencies and running tasks
+ 
+
+00:00:10.469 --> 00:00:13.009 align:start position:0%
+managing dependencies and running tasks
+let's<00:00:11.190><c> create</c><00:00:11.429><c> a</c><00:00:11.550><c> new</c><00:00:11.580><c> Gradle</c><00:00:12.000><c> project</c><00:00:12.420><c> we</c>
+
+00:00:13.009 --> 00:00:13.019 align:start position:0%
+let's create a new Gradle project we
+ 
+
+00:00:13.019 --> 00:00:14.600 align:start position:0%
+let's create a new Gradle project we
+need<00:00:13.139><c> to</c><00:00:13.259><c> choose</c><00:00:13.440><c> the</c><00:00:13.620><c> Java</c><00:00:13.860><c> version</c><00:00:14.099><c> to</c><00:00:14.429><c> use</c>
+
+00:00:14.600 --> 00:00:14.610 align:start position:0%
+need to choose the Java version to use
+ 
+
+00:00:14.610 --> 00:00:16.400 align:start position:0%
+need to choose the Java version to use
+we're<00:00:15.299><c> going</c><00:00:15.330><c> to</c><00:00:15.570><c> use</c><00:00:15.660><c> the</c><00:00:15.809><c> latest</c><00:00:16.049><c> version</c><00:00:16.139><c> of</c>
+
+00:00:16.400 --> 00:00:16.410 align:start position:0%
+we're going to use the latest version of
+ 
+
+00:00:16.410 --> 00:00:18.650 align:start position:0%
+we're going to use the latest version of
+Java<00:00:16.470><c> 8</c><00:00:16.859><c> if</c><00:00:17.100><c> our</c><00:00:17.850><c> project</c><00:00:18.060><c> used</c><00:00:18.449><c> other</c>
+
+00:00:18.650 --> 00:00:18.660 align:start position:0%
+Java 8 if our project used other
+ 
+
+00:00:18.660 --> 00:00:20.900 align:start position:0%
+Java 8 if our project used other
+languages<00:00:19.109><c> we</c><00:00:19.289><c> can</c><00:00:19.439><c> choose</c><00:00:19.680><c> those</c><00:00:19.859><c> here</c><00:00:20.250><c> but</c>
+
+00:00:20.900 --> 00:00:20.910 align:start position:0%
+languages we can choose those here but
+ 
+
+00:00:20.910 --> 00:00:22.400 align:start position:0%
+languages we can choose those here but
+for<00:00:21.029><c> this</c><00:00:21.119><c> demo</c><00:00:21.420><c> let's</c><00:00:21.660><c> just</c><00:00:21.869><c> stick</c><00:00:22.020><c> with</c><00:00:22.050><c> Java</c>
+
+00:00:22.400 --> 00:00:22.410 align:start position:0%
+for this demo let's just stick with Java
+ 
+
+00:00:22.410 --> 00:00:24.650 align:start position:0%
+for this demo let's just stick with Java
+Gradle<00:00:23.310><c> projects</c><00:00:23.699><c> needed</c><00:00:23.880><c> group</c><00:00:24.119><c> ID</c><00:00:24.330><c> and</c>
+
+00:00:24.650 --> 00:00:24.660 align:start position:0%
+Gradle projects needed group ID and
+ 
+
+00:00:24.660 --> 00:00:27.349 align:start position:0%
+Gradle projects needed group ID and
+artifact<00:00:25.109><c> ID</c><00:00:25.289><c> so</c><00:00:26.160><c> we'll</c><00:00:26.310><c> enter</c><00:00:26.460><c> those</c><00:00:26.699><c> here</c><00:00:27.000><c> at</c>
+
+00:00:27.349 --> 00:00:27.359 align:start position:0%
+artifact ID so we'll enter those here at
+ 
+
+00:00:27.359 --> 00:00:29.689 align:start position:0%
+artifact ID so we'll enter those here at
+this<00:00:27.840><c> stage</c><00:00:28.140><c> we</c><00:00:28.650><c> have</c><00:00:28.800><c> some</c><00:00:28.980><c> Gradle</c><00:00:29.310><c> specific</c>
+
+00:00:29.689 --> 00:00:29.699 align:start position:0%
+this stage we have some Gradle specific
+ 
+
+00:00:29.699 --> 00:00:32.209 align:start position:0%
+this stage we have some Gradle specific
+options<00:00:30.090><c> also</c><00:00:31.019><c> import</c><00:00:31.560><c> will</c><00:00:31.650><c> automatically</c>
+
+00:00:32.209 --> 00:00:32.219 align:start position:0%
+options also import will automatically
+ 
+
+00:00:32.219 --> 00:00:33.920 align:start position:0%
+options also import will automatically
+apply<00:00:32.399><c> changes</c><00:00:32.790><c> if</c><00:00:33.149><c> you</c><00:00:33.270><c> update</c><00:00:33.420><c> Gradle</c>
+
+00:00:33.920 --> 00:00:33.930 align:start position:0%
+apply changes if you update Gradle
+ 
+
+00:00:33.930 --> 00:00:37.130 align:start position:0%
+apply changes if you update Gradle
+settings<00:00:34.350><c> we'll</c><00:00:35.040><c> look</c><00:00:35.160><c> at</c><00:00:35.280><c> this</c><00:00:35.399><c> later</c><00:00:36.140><c> the</c>
+
+00:00:37.130 --> 00:00:37.140 align:start position:0%
+settings we'll look at this later the
+ 
+
+00:00:37.140 --> 00:00:38.780 align:start position:0%
+settings we'll look at this later the
+second<00:00:37.500><c> setting</c><00:00:37.680><c> is</c><00:00:37.920><c> really</c><00:00:38.070><c> useful</c><00:00:38.550><c> for</c><00:00:38.670><c> new</c>
+
+00:00:38.780 --> 00:00:38.790 align:start position:0%
+second setting is really useful for new
+ 
+
+00:00:38.790 --> 00:00:40.549 align:start position:0%
+second setting is really useful for new
+projects<00:00:39.270><c> as</c><00:00:39.420><c> it</c><00:00:39.629><c> sets</c><00:00:39.840><c> up</c><00:00:39.989><c> the</c><00:00:40.079><c> directory</c>
+
+00:00:40.549 --> 00:00:40.559 align:start position:0%
+projects as it sets up the directory
+ 
+
+00:00:40.559 --> 00:00:42.619 align:start position:0%
+projects as it sets up the directory
+structure<00:00:40.800><c> for</c><00:00:41.040><c> your</c><00:00:41.100><c> project</c><00:00:41.550><c> so</c><00:00:42.270><c> will</c><00:00:42.420><c> tick</c>
+
+00:00:42.619 --> 00:00:42.629 align:start position:0%
+structure for your project so will tick
+ 
+
+00:00:42.629 --> 00:00:45.110 align:start position:0%
+structure for your project so will tick
+this<00:00:43.040><c> will</c><00:00:44.040><c> explore</c><00:00:44.340><c> the</c><00:00:44.460><c> third</c><00:00:44.640><c> option</c><00:00:44.969><c> later</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+this will explore the third option later
+ 
+
+00:00:45.120 --> 00:00:47.660 align:start position:0%
+this will explore the third option later
+for<00:00:46.020><c> this</c><00:00:46.140><c> simple</c><00:00:46.410><c> project</c><00:00:46.590><c> we</c><00:00:47.280><c> don't</c><00:00:47.460><c> need</c><00:00:47.550><c> to</c>
+
+00:00:47.660 --> 00:00:47.670 align:start position:0%
+for this simple project we don't need to
+ 
+
+00:00:47.670 --> 00:00:49.880 align:start position:0%
+for this simple project we don't need to
+worry<00:00:47.850><c> about</c><00:00:48.000><c> multiple</c><00:00:48.180><c> source</c><00:00:48.629><c> sets</c><00:00:48.840><c> we</c><00:00:49.739><c> do</c>
+
+00:00:49.880 --> 00:00:49.890 align:start position:0%
+worry about multiple source sets we do
+ 
+
+00:00:49.890 --> 00:00:51.290 align:start position:0%
+worry about multiple source sets we do
+want<00:00:50.129><c> to</c><00:00:50.250><c> use</c><00:00:50.370><c> the</c><00:00:50.489><c> Gradle</c><00:00:50.820><c> wrapper</c><00:00:50.969><c> for</c><00:00:51.210><c> this</c>
+
+00:00:51.290 --> 00:00:51.300 align:start position:0%
+want to use the Gradle wrapper for this
+ 
+
+00:00:51.300 --> 00:00:53.389 align:start position:0%
+want to use the Gradle wrapper for this
+project<00:00:51.690><c> by</c><00:00:52.020><c> using</c><00:00:52.079><c> the</c><00:00:52.440><c> Gradle</c><00:00:52.770><c> wrapper</c><00:00:53.039><c> it</c>
+
+00:00:53.389 --> 00:00:53.399 align:start position:0%
+project by using the Gradle wrapper it
+ 
+
+00:00:53.399 --> 00:00:54.860 align:start position:0%
+project by using the Gradle wrapper it
+means<00:00:53.640><c> that</c><00:00:53.760><c> anyone</c><00:00:54.030><c> who</c><00:00:54.210><c> wants</c><00:00:54.449><c> to</c><00:00:54.510><c> work</c><00:00:54.719><c> on</c>
+
+00:00:54.860 --> 00:00:54.870 align:start position:0%
+means that anyone who wants to work on
+ 
+
+00:00:54.870 --> 00:00:56.270 align:start position:0%
+means that anyone who wants to work on
+this<00:00:54.960><c> project</c><00:00:55.199><c> code</c><00:00:55.649><c> doesn't</c><00:00:55.980><c> have</c><00:00:56.190><c> to</c>
+
+00:00:56.270 --> 00:00:56.280 align:start position:0%
+this project code doesn't have to
+ 
+
+00:00:56.280 --> 00:00:58.790 align:start position:0%
+this project code doesn't have to
+install<00:00:56.579><c> Gradle</c><00:00:56.940><c> separately</c><00:00:57.449><c> we</c><00:00:58.440><c> can</c><00:00:58.620><c> choose</c>
+
+00:00:58.790 --> 00:00:58.800 align:start position:0%
+install Gradle separately we can choose
+ 
+
+00:00:58.800 --> 00:01:00.470 align:start position:0%
+install Gradle separately we can choose
+a<00:00:58.829><c> different</c><00:00:59.100><c> project</c><00:00:59.399><c> name</c><00:00:59.699><c> and</c><00:00:59.879><c> location</c><00:01:00.359><c> if</c>
+
+00:01:00.470 --> 00:01:00.480 align:start position:0%
+a different project name and location if
+ 
+
+00:01:00.480 --> 00:01:04.509 align:start position:0%
+a different project name and location if
+we<00:01:00.510><c> want</c><00:01:00.809><c> but</c><00:01:01.530><c> the</c><00:01:01.590><c> defaults</c><00:01:02.039><c> look</c><00:01:02.219><c> fine</c><00:01:02.430><c> here</c>
+
+00:01:04.509 --> 00:01:04.519 align:start position:0%
+we want but the defaults look fine here
+ 
+
+00:01:04.519 --> 00:01:06.590 align:start position:0%
+we want but the defaults look fine here
+IntelliJ<00:01:05.519><c> IDEA</c><00:01:05.729><c> has</c><00:01:05.850><c> created</c><00:01:06.210><c> a</c><00:01:06.299><c> simple</c>
+
+00:01:06.590 --> 00:01:06.600 align:start position:0%
+IntelliJ IDEA has created a simple
+ 
+
+00:01:06.600 --> 00:01:09.469 align:start position:0%
+IntelliJ IDEA has created a simple
+project<00:01:06.780><c> for</c><00:01:07.140><c> us</c><00:01:07.170><c> and</c><00:01:07.500><c> as</c><00:01:08.250><c> we</c><00:01:08.280><c> requested</c><00:01:08.969><c> the</c>
+
+00:01:09.469 --> 00:01:09.479 align:start position:0%
+project for us and as we requested the
+ 
+
+00:01:09.479 --> 00:01:11.179 align:start position:0%
+project for us and as we requested the
+default<00:01:09.869><c> Java</c><00:01:10.140><c> and</c><00:01:10.380><c> test</c><00:01:10.590><c> directories</c><00:01:11.070><c> have</c>
+
+00:01:11.179 --> 00:01:11.189 align:start position:0%
+default Java and test directories have
+ 
+
+00:01:11.189 --> 00:01:14.569 align:start position:0%
+default Java and test directories have
+been<00:01:11.369><c> created</c><00:01:11.759><c> -</c><00:01:11.939><c> if</c><00:01:12.890><c> we</c><00:01:13.890><c> look</c><00:01:14.039><c> at</c><00:01:14.130><c> the</c><00:01:14.219><c> basic</c>
+
+00:01:14.569 --> 00:01:14.579 align:start position:0%
+been created - if we look at the basic
+ 
+
+00:01:14.579 --> 00:01:16.279 align:start position:0%
+been created - if we look at the basic
+build<00:01:14.789><c> Gradle</c><00:01:15.299><c> file</c><00:01:15.509><c> that</c><00:01:15.659><c> was</c><00:01:15.750><c> created</c><00:01:16.140><c> for</c>
+
+00:01:16.279 --> 00:01:16.289 align:start position:0%
+build Gradle file that was created for
+ 
+
+00:01:16.289 --> 00:01:19.090 align:start position:0%
+build Gradle file that was created for
+us<00:01:16.380><c> we</c><00:01:17.189><c> already</c><00:01:17.369><c> have</c><00:01:17.640><c> a</c><00:01:17.670><c> suggestion</c><00:01:18.060><c> waiting</c>
+
+00:01:19.090 --> 00:01:19.100 align:start position:0%
+us we already have a suggestion waiting
+ 
+
+00:01:19.100 --> 00:01:21.440 align:start position:0%
+us we already have a suggestion waiting
+we<00:01:20.100><c> can</c><00:01:20.280><c> make</c><00:01:20.399><c> a</c><00:01:20.429><c> simple</c><00:01:20.640><c> change</c><00:01:21.030><c> to</c><00:01:21.119><c> give</c><00:01:21.360><c> us</c>
+
+00:01:21.440 --> 00:01:21.450 align:start position:0%
+we can make a simple change to give us
+ 
+
+00:01:21.450 --> 00:01:22.880 align:start position:0%
+we can make a simple change to give us
+access<00:01:21.659><c> to</c><00:01:21.869><c> the</c><00:01:22.020><c> Gradle</c><00:01:22.380><c> sources</c><00:01:22.740><c> and</c>
+
+00:01:22.880 --> 00:01:22.890 align:start position:0%
+access to the Gradle sources and
+ 
+
+00:01:22.890 --> 00:01:25.609 align:start position:0%
+access to the Gradle sources and
+documentation<00:01:23.399><c> if</c><00:01:23.960><c> we</c><00:01:24.960><c> open</c><00:01:25.229><c> the</c><00:01:25.319><c> Gradle</c>
+
+00:01:25.609 --> 00:01:25.619 align:start position:0%
+documentation if we open the Gradle
+ 
+
+00:01:25.619 --> 00:01:27.590 align:start position:0%
+documentation if we open the Gradle
+window<00:01:25.920><c> we</c><00:01:26.460><c> can</c><00:01:26.610><c> see</c><00:01:26.729><c> the</c><00:01:26.850><c> Gradle</c><00:01:27.149><c> tasks</c><00:01:27.479><c> that</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+window we can see the Gradle tasks that
+ 
+
+00:01:27.600 --> 00:01:30.080 align:start position:0%
+window we can see the Gradle tasks that
+are<00:01:27.719><c> available</c><00:01:27.929><c> to</c><00:01:28.319><c> us</c><00:01:28.350><c> and</c><00:01:28.679><c> any</c><00:01:29.520><c> dependencies</c>
+
+00:01:30.080 --> 00:01:30.090 align:start position:0%
+are available to us and any dependencies
+ 
+
+00:01:30.090 --> 00:01:32.899 align:start position:0%
+are available to us and any dependencies
+that<00:01:30.119><c> have</c><00:01:30.360><c> been</c><00:01:30.509><c> declared</c><00:01:30.810><c> the</c><00:01:31.700><c> basic</c><00:01:32.700><c> build</c>
+
+00:01:32.899 --> 00:01:32.909 align:start position:0%
+that have been declared the basic build
+ 
+
+00:01:32.909 --> 00:01:35.029 align:start position:0%
+that have been declared the basic build
+file<00:01:33.119><c> included</c><00:01:33.659><c> a</c><00:01:33.689><c> dependency</c><00:01:34.229><c> on</c><00:01:34.259><c> J</c><00:01:34.530><c> unit</c><00:01:34.710><c> 4</c>
+
+00:01:35.029 --> 00:01:35.039 align:start position:0%
+file included a dependency on J unit 4
+ 
+
+00:01:35.039 --> 00:01:37.279 align:start position:0%
+file included a dependency on J unit 4
+so<00:01:35.850><c> we</c><00:01:35.969><c> can</c><00:01:36.119><c> see</c><00:01:36.299><c> this</c><00:01:36.509><c> as</c><00:01:36.750><c> well</c><00:01:37.080><c> as</c><00:01:37.200><c> the</c>
+
+00:01:37.279 --> 00:01:37.289 align:start position:0%
+so we can see this as well as the
+ 
+
+00:01:37.289 --> 00:01:38.809 align:start position:0%
+so we can see this as well as the
+handcraft<00:01:37.709><c> library</c><00:01:38.130><c> that</c><00:01:38.220><c> J</c><00:01:38.429><c> unit</c><00:01:38.729><c> is</c>
+
+00:01:38.809 --> 00:01:38.819 align:start position:0%
+handcraft library that J unit is
+ 
+
+00:01:38.819 --> 00:01:41.719 align:start position:0%
+handcraft library that J unit is
+dependent<00:01:39.330><c> upon</c><00:01:39.770><c> these</c><00:01:40.770><c> are</c><00:01:40.950><c> also</c><00:01:41.099><c> visible</c><00:01:41.429><c> as</c>
+
+00:01:41.719 --> 00:01:41.729 align:start position:0%
+dependent upon these are also visible as
+ 
+
+00:01:41.729 --> 00:01:43.219 align:start position:0%
+dependent upon these are also visible as
+external<00:01:42.179><c> libraries</c><00:01:42.539><c> in</c><00:01:42.659><c> the</c><00:01:42.720><c> project</c><00:01:43.079><c> window</c>
+
+00:01:43.219 --> 00:01:43.229 align:start position:0%
+external libraries in the project window
+ 
+
+00:01:43.229 --> 00:01:45.679 align:start position:0%
+external libraries in the project window
+with<00:01:44.099><c> a</c><00:01:44.130><c> Gradle</c><00:01:44.549><c> prefix</c><00:01:45.000><c> so</c><00:01:45.299><c> you</c><00:01:45.360><c> know</c><00:01:45.539><c> where</c>
+
+00:01:45.679 --> 00:01:45.689 align:start position:0%
+with a Gradle prefix so you know where
+ 
+
+00:01:45.689 --> 00:01:48.149 align:start position:0%
+with a Gradle prefix so you know where
+they<00:01:45.780><c> came</c><00:01:45.959><c> from</c>
+
+00:01:48.149 --> 00:01:48.159 align:start position:0%
+ 
+ 
+
+00:01:48.159 --> 00:01:50.999 align:start position:0%
+ 
+as<00:01:48.270><c> you'd</c><00:01:49.270><c> expect</c><00:01:49.469><c> IntelliJ</c><00:01:50.469><c> IDEA</c><00:01:50.740><c> gives</c><00:01:50.950><c> you</c>
+
+00:01:50.999 --> 00:01:51.009 align:start position:0%
+as you'd expect IntelliJ IDEA gives you
+ 
+
+00:01:51.009 --> 00:01:52.620 align:start position:0%
+as you'd expect IntelliJ IDEA gives you
+code<00:01:51.249><c> completion</c><00:01:51.640><c> in</c><00:01:51.850><c> the</c><00:01:51.939><c> build</c><00:01:52.119><c> up</c><00:01:52.299><c> Gradle</c>
+
+00:01:52.620 --> 00:01:52.630 align:start position:0%
+code completion in the build up Gradle
+ 
+
+00:01:52.630 --> 00:01:55.130 align:start position:0%
+code completion in the build up Gradle
+file
+
+00:01:55.130 --> 00:01:55.140 align:start position:0%
+ 
+ 
+
+00:01:55.140 --> 00:01:57.830 align:start position:0%
+ 
+if<00:01:55.230><c> we</c><00:01:55.650><c> make</c><00:01:55.800><c> changes</c><00:01:56.190><c> to</c><00:01:56.250><c> this</c><00:01:56.460><c> file</c><00:01:56.840><c> IntelliJ</c>
+
+00:01:57.830 --> 00:01:57.840 align:start position:0%
+if we make changes to this file IntelliJ
+ 
+
+00:01:57.840 --> 00:02:00.430 align:start position:0%
+if we make changes to this file IntelliJ
+IDEA<00:01:58.080><c> detects</c><00:01:58.380><c> this</c><00:01:58.590><c> and</c><00:01:58.650><c> offer</c><00:01:58.920><c> suggestions</c>
+
+00:02:00.430 --> 00:02:00.440 align:start position:0%
+IDEA detects this and offer suggestions
+ 
+
+00:02:00.440 --> 00:02:03.050 align:start position:0%
+IDEA detects this and offer suggestions
+we<00:02:01.440><c> can</c><00:02:01.620><c> either</c><00:02:01.860><c> apply</c><00:02:02.130><c> the</c><00:02:02.250><c> changes</c><00:02:02.730><c> manually</c>
+
+00:02:03.050 --> 00:02:03.060 align:start position:0%
+we can either apply the changes manually
+ 
+
+00:02:03.060 --> 00:02:05.690 align:start position:0%
+we can either apply the changes manually
+when<00:02:03.360><c> we're</c><00:02:03.480><c> ready</c><00:02:03.680><c> or</c><00:02:04.680><c> we</c><00:02:05.040><c> can</c><00:02:05.190><c> enable</c><00:02:05.370><c> auto</c>
+
+00:02:05.690 --> 00:02:05.700 align:start position:0%
+when we're ready or we can enable auto
+ 
+
+00:02:05.700 --> 00:02:07.520 align:start position:0%
+when we're ready or we can enable auto
+import<00:02:06.240><c> to</c><00:02:06.390><c> apply</c><00:02:06.630><c> changes</c><00:02:06.930><c> as</c><00:02:07.170><c> they're</c><00:02:07.350><c> made</c>
+
+00:02:07.520 --> 00:02:07.530 align:start position:0%
+import to apply changes as they're made
+ 
+
+00:02:07.530 --> 00:02:09.200 align:start position:0%
+import to apply changes as they're made
+so<00:02:07.950><c> we</c><00:02:08.070><c> don't</c><00:02:08.250><c> have</c><00:02:08.399><c> to</c><00:02:08.520><c> remember</c><00:02:08.700><c> to</c><00:02:08.940><c> import</c>
+
+00:02:09.200 --> 00:02:09.210 align:start position:0%
+so we don't have to remember to import
+ 
+
+00:02:09.210 --> 00:02:11.510 align:start position:0%
+so we don't have to remember to import
+them<00:02:09.500><c> IntelliJ</c><00:02:10.500><c> IDEA</c><00:02:10.710><c> has</c><00:02:10.830><c> recognized</c><00:02:11.340><c> that</c>
+
+00:02:11.510 --> 00:02:11.520 align:start position:0%
+them IntelliJ IDEA has recognized that
+ 
+
+00:02:11.520 --> 00:02:13.160 align:start position:0%
+them IntelliJ IDEA has recognized that
+we're<00:02:11.700><c> now</c><00:02:11.850><c> using</c><00:02:12.240><c> the</c><00:02:12.330><c> groovy</c><00:02:12.600><c> plug-in</c><00:02:12.960><c> and</c>
+
+00:02:13.160 --> 00:02:13.170 align:start position:0%
+we're now using the groovy plug-in and
+ 
+
+00:02:13.170 --> 00:02:14.810 align:start position:0%
+we're now using the groovy plug-in and
+has<00:02:13.650><c> created</c><00:02:14.010><c> the</c><00:02:14.100><c> directories</c><00:02:14.580><c> for</c><00:02:14.700><c> our</c>
+
+00:02:14.810 --> 00:02:14.820 align:start position:0%
+has created the directories for our
+ 
+
+00:02:14.820 --> 00:02:17.870 align:start position:0%
+has created the directories for our
+groovy<00:02:15.120><c> files</c><00:02:16.340><c> IntelliJ</c><00:02:17.340><c> IDEA</c><00:02:17.580><c> can</c><00:02:17.760><c> add</c>
+
+00:02:17.870 --> 00:02:17.880 align:start position:0%
+groovy files IntelliJ IDEA can add
+ 
+
+00:02:17.880 --> 00:02:20.630 align:start position:0%
+groovy files IntelliJ IDEA can add
+dependencies<00:02:18.390><c> to</c><00:02:18.450><c> our</c><00:02:18.690><c> build</c><00:02:18.900><c> file</c><00:02:19.520><c> we</c><00:02:20.520><c> can</c>
+
+00:02:20.630 --> 00:02:20.640 align:start position:0%
+dependencies to our build file we can
+ 
+
+00:02:20.640 --> 00:02:22.100 align:start position:0%
+dependencies to our build file we can
+search<00:02:20.850><c> for</c><00:02:20.880><c> the</c><00:02:21.090><c> library</c><00:02:21.420><c> we</c><00:02:21.480><c> want</c><00:02:21.690><c> by</c><00:02:21.870><c> name</c>
+
+00:02:22.100 --> 00:02:22.110 align:start position:0%
+search for the library we want by name
+ 
+
+00:02:22.110 --> 00:02:25.640 align:start position:0%
+search for the library we want by name
+or<00:02:22.140><c> path</c><00:02:22.530><c> and</c><00:02:22.860><c> select</c><00:02:23.640><c> the</c><00:02:23.730><c> one</c><00:02:23.850><c> we</c><00:02:23.940><c> want</c><00:02:24.650><c> we'll</c>
+
+00:02:25.640 --> 00:02:25.650 align:start position:0%
+or path and select the one we want we'll
+ 
+
+00:02:25.650 --> 00:02:27.080 align:start position:0%
+or path and select the one we want we'll
+see<00:02:25.800><c> the</c><00:02:25.890><c> new</c><00:02:26.040><c> dependency</c><00:02:26.430><c> and</c><00:02:26.790><c> it's</c>
+
+00:02:27.080 --> 00:02:27.090 align:start position:0%
+see the new dependency and it's
+ 
+
+00:02:27.090 --> 00:02:28.760 align:start position:0%
+see the new dependency and it's
+transitive<00:02:27.570><c> dependencies</c><00:02:28.080><c> in</c><00:02:28.290><c> the</c><00:02:28.350><c> Gradle</c>
+
+00:02:28.760 --> 00:02:28.770 align:start position:0%
+transitive dependencies in the Gradle
+ 
+
+00:02:28.770 --> 00:02:33.110 align:start position:0%
+transitive dependencies in the Gradle
+window<00:02:29.040><c> and</c><00:02:29.220><c> in</c><00:02:29.790><c> the</c><00:02:29.880><c> project</c><00:02:30.209><c> window</c>
+
+00:02:33.110 --> 00:02:33.120 align:start position:0%
+ 
+ 
+
+00:02:33.120 --> 00:02:35.509 align:start position:0%
+ 
+the<00:02:33.959><c> library's</c><00:02:34.319><c> needed</c><00:02:34.620><c> by</c><00:02:34.709><c> gradle</c><00:02:35.069><c> are</c><00:02:35.190><c> also</c>
+
+00:02:35.509 --> 00:02:35.519 align:start position:0%
+the library's needed by gradle are also
+ 
+
+00:02:35.519 --> 00:02:37.040 align:start position:0%
+the library's needed by gradle are also
+shown<00:02:35.760><c> in</c><00:02:35.879><c> the</c><00:02:35.970><c> project</c><00:02:36.360><c> library's</c><00:02:36.720><c> window</c>
+
+00:02:37.040 --> 00:02:37.050 align:start position:0%
+shown in the project library's window
+ 
+
+00:02:37.050 --> 00:02:39.050 align:start position:0%
+shown in the project library's window
+again<00:02:37.769><c> with</c><00:02:37.950><c> the</c><00:02:38.010><c> Gradle</c><00:02:38.340><c> prefix</c><00:02:38.760><c> to</c><00:02:38.910><c> show</c>
+
+00:02:39.050 --> 00:02:39.060 align:start position:0%
+again with the Gradle prefix to show
+ 
+
+00:02:39.060 --> 00:02:41.740 align:start position:0%
+again with the Gradle prefix to show
+that<00:02:39.150><c> these</c><00:02:39.300><c> have</c><00:02:39.480><c> been</c><00:02:39.599><c> added</c><00:02:39.840><c> by</c><00:02:39.989><c> Gradle</c>
+
+00:02:41.740 --> 00:02:41.750 align:start position:0%
+that these have been added by Gradle
+ 
+
+00:02:41.750 --> 00:02:43.940 align:start position:0%
+that these have been added by Gradle
+note<00:02:42.750><c> that</c><00:02:42.930><c> while</c><00:02:43.110><c> it's</c><00:02:43.319><c> still</c><00:02:43.470><c> possible</c><00:02:43.680><c> to</c>
+
+00:02:43.940 --> 00:02:43.950 align:start position:0%
+note that while it's still possible to
+ 
+
+00:02:43.950 --> 00:02:45.740 align:start position:0%
+note that while it's still possible to
+add<00:02:44.160><c> other</c><00:02:44.370><c> external</c><00:02:44.790><c> libraries</c><00:02:45.330><c> here</c><00:02:45.510><c> and</c>
+
+00:02:45.740 --> 00:02:45.750 align:start position:0%
+add other external libraries here and
+ 
+
+00:02:45.750 --> 00:02:49.130 align:start position:0%
+add other external libraries here and
+even<00:02:46.500><c> use</c><00:02:46.680><c> them</c><00:02:46.830><c> in</c><00:02:46.950><c> the</c><00:02:47.040><c> IDE</c><00:02:47.629><c> as</c><00:02:48.629><c> soon</c><00:02:48.930><c> as</c><00:02:49.019><c> the</c>
+
+00:02:49.130 --> 00:02:49.140 align:start position:0%
+even use them in the IDE as soon as the
+ 
+
+00:02:49.140 --> 00:02:50.900 align:start position:0%
+even use them in the IDE as soon as the
+Gradle<00:02:49.470><c> settings</c><00:02:49.769><c> are</c><00:02:49.890><c> reapplied</c><00:02:50.340><c> these</c>
+
+00:02:50.900 --> 00:02:50.910 align:start position:0%
+Gradle settings are reapplied these
+ 
+
+00:02:50.910 --> 00:02:54.020 align:start position:0%
+Gradle settings are reapplied these
+dependencies<00:02:51.420><c> are</c><00:02:51.569><c> removed</c><00:02:52.670><c> Gradle</c><00:02:53.670><c> projects</c>
+
+00:02:54.020 --> 00:02:54.030 align:start position:0%
+dependencies are removed Gradle projects
+ 
+
+00:02:54.030 --> 00:02:55.520 align:start position:0%
+dependencies are removed Gradle projects
+should<00:02:54.150><c> always</c><00:02:54.360><c> use</c><00:02:54.510><c> Gradle</c><00:02:55.080><c> to</c><00:02:55.200><c> manage</c><00:02:55.440><c> the</c>
+
+00:02:55.520 --> 00:02:55.530 align:start position:0%
+should always use Gradle to manage the
+ 
+
+00:02:55.530 --> 00:02:58.460 align:start position:0%
+should always use Gradle to manage the
+dependencies
+
+00:02:58.460 --> 00:02:58.470 align:start position:0%
+ 
+ 
+
+00:02:58.470 --> 00:03:00.170 align:start position:0%
+ 
+we<00:02:58.860><c> can</c><00:02:59.040><c> use</c><00:02:59.160><c> the</c><00:02:59.280><c> greater</c><00:02:59.490><c> window</c><00:02:59.880><c> to</c><00:03:00.030><c> see</c>
+
+00:03:00.170 --> 00:03:00.180 align:start position:0%
+we can use the greater window to see
+ 
+
+00:03:00.180 --> 00:03:01.850 align:start position:0%
+we can use the greater window to see
+which<00:03:00.390><c> tasks</c><00:03:00.780><c> are</c><00:03:00.870><c> available</c><00:03:01.320><c> for</c><00:03:01.470><c> us</c><00:03:01.530><c> to</c><00:03:01.560><c> run</c>
+
+00:03:01.850 --> 00:03:01.860 align:start position:0%
+which tasks are available for us to run
+ 
+
+00:03:01.860 --> 00:03:04.850 align:start position:0%
+which tasks are available for us to run
+and<00:03:02.330><c> it's</c><00:03:03.330><c> updated</c><00:03:03.480><c> when</c><00:03:03.960><c> we</c><00:03:04.050><c> add</c><00:03:04.170><c> new</c><00:03:04.410><c> plugins</c>
+
+00:03:04.850 --> 00:03:04.860 align:start position:0%
+and it's updated when we add new plugins
+ 
+
+00:03:04.860 --> 00:03:08.960 align:start position:0%
+and it's updated when we add new plugins
+which<00:03:05.070><c> give</c><00:03:05.280><c> us</c><00:03:05.400><c> additional</c><00:03:05.580><c> tasks</c><00:03:07.910><c> running</c><00:03:08.910><c> a</c>
+
+00:03:08.960 --> 00:03:08.970 align:start position:0%
+which give us additional tasks running a
+ 
+
+00:03:08.970 --> 00:03:10.760 align:start position:0%
+which give us additional tasks running a
+task<00:03:09.150><c> from</c><00:03:09.300><c> here</c><00:03:09.660><c> shows</c><00:03:10.050><c> the</c><00:03:10.200><c> output</c><00:03:10.560><c> in</c><00:03:10.680><c> the</c>
+
+00:03:10.760 --> 00:03:10.770 align:start position:0%
+task from here shows the output in the
+ 
+
+00:03:10.770 --> 00:03:13.460 align:start position:0%
+task from here shows the output in the
+run<00:03:10.920><c> window</c><00:03:11.180><c> either</c><00:03:12.180><c> as</c><00:03:12.480><c> a</c><00:03:12.510><c> summary</c><00:03:12.900><c> of</c><00:03:12.990><c> stages</c>
+
+00:03:13.460 --> 00:03:13.470 align:start position:0%
+run window either as a summary of stages
+ 
+
+00:03:13.470 --> 00:03:16.250 align:start position:0%
+run window either as a summary of stages
+with<00:03:13.650><c> time</c><00:03:13.890><c> taken</c><00:03:14.220><c> for</c><00:03:14.340><c> each</c><00:03:14.490><c> step</c><00:03:14.790><c> or</c><00:03:15.230><c> as</c><00:03:16.230><c> a</c>
+
+00:03:16.250 --> 00:03:16.260 align:start position:0%
+with time taken for each step or as a
+ 
+
+00:03:16.260 --> 00:03:18.790 align:start position:0%
+with time taken for each step or as a
+familiar<00:03:16.530><c> command-line</c><00:03:17.220><c> Gradle</c><00:03:17.640><c> output</c>
+
+00:03:18.790 --> 00:03:18.800 align:start position:0%
+familiar command-line Gradle output
+ 
+
+00:03:18.800 --> 00:03:20.840 align:start position:0%
+familiar command-line Gradle output
+we've<00:03:19.800><c> looked</c><00:03:20.010><c> at</c><00:03:20.130><c> the</c><00:03:20.190><c> basics</c><00:03:20.520><c> of</c><00:03:20.640><c> creating</c>
+
+00:03:20.840 --> 00:03:20.850 align:start position:0%
+we've looked at the basics of creating
+ 
+
+00:03:20.850 --> 00:03:23.480 align:start position:0%
+we've looked at the basics of creating
+and<00:03:21.240><c> working</c><00:03:21.510><c> with</c><00:03:21.630><c> a</c><00:03:21.660><c> Gradle</c><00:03:21.990><c> project</c><00:03:22.490><c> it's</c>
+
+00:03:23.480 --> 00:03:23.490 align:start position:0%
+and working with a Gradle project it's
+ 
+
+00:03:23.490 --> 00:03:24.860 align:start position:0%
+and working with a Gradle project it's
+more<00:03:23.730><c> likely</c><00:03:24.120><c> we'll</c><00:03:24.240><c> be</c><00:03:24.270><c> working</c><00:03:24.660><c> with</c><00:03:24.690><c> an</c>
+
+00:03:24.860 --> 00:03:24.870 align:start position:0%
+more likely we'll be working with an
+ 
+
+00:03:24.870 --> 00:03:26.680 align:start position:0%
+more likely we'll be working with an
+existing<00:03:25.140><c> application</c><00:03:25.440><c> that</c><00:03:25.920><c> uses</c><00:03:26.040><c> Gradle</c>
+
+00:03:26.680 --> 00:03:26.690 align:start position:0%
+existing application that uses Gradle
+ 
+
+00:03:26.690 --> 00:03:29.810 align:start position:0%
+existing application that uses Gradle
+let's<00:03:27.690><c> import</c><00:03:28.050><c> a</c><00:03:28.140><c> Gradle</c><00:03:28.440><c> project</c><00:03:28.830><c> selecting</c>
+
+00:03:29.810 --> 00:03:29.820 align:start position:0%
+let's import a Gradle project selecting
+ 
+
+00:03:29.820 --> 00:03:31.490 align:start position:0%
+let's import a Gradle project selecting
+the<00:03:29.940><c> folder</c><00:03:30.150><c> for</c><00:03:30.450><c> a</c><00:03:30.480><c> project</c><00:03:30.900><c> that</c><00:03:31.020><c> contains</c><00:03:31.170><c> a</c>
+
+00:03:31.490 --> 00:03:31.500 align:start position:0%
+the folder for a project that contains a
+ 
+
+00:03:31.500 --> 00:03:33.440 align:start position:0%
+the folder for a project that contains a
+build.gradle<00:03:31.800><c> file</c><00:03:32.460><c> will</c><00:03:32.880><c> usually</c><00:03:33.120><c> mean</c>
+
+00:03:33.440 --> 00:03:33.450 align:start position:0%
+build.gradle file will usually mean
+ 
+
+00:03:33.450 --> 00:03:35.480 align:start position:0%
+build.gradle file will usually mean
+IntelliJ<00:03:34.080><c> IDEA</c><00:03:34.380><c> imports</c><00:03:34.830><c> the</c><00:03:34.950><c> project</c><00:03:35.310><c> as</c><00:03:35.430><c> a</c>
+
+00:03:35.480 --> 00:03:35.490 align:start position:0%
+IntelliJ IDEA imports the project as a
+ 
+
+00:03:35.490 --> 00:03:38.510 align:start position:0%
+IntelliJ IDEA imports the project as a
+Gradle<00:03:35.940><c> project</c><00:03:36.560><c> however</c><00:03:37.560><c> selecting</c><00:03:38.400><c> the</c>
+
+00:03:38.510 --> 00:03:38.520 align:start position:0%
+Gradle project however selecting the
+ 
+
+00:03:38.520 --> 00:03:40.490 align:start position:0%
+Gradle project however selecting the
+build.gradle<00:03:38.850><c> file</c><00:03:39.570><c> itself</c><00:03:39.960><c> is</c><00:03:40.230><c> the</c><00:03:40.320><c> most</c>
+
+00:03:40.490 --> 00:03:40.500 align:start position:0%
+build.gradle file itself is the most
+ 
+
+00:03:40.500 --> 00:03:42.140 align:start position:0%
+build.gradle file itself is the most
+certain<00:03:40.830><c> way</c><00:03:40.980><c> to</c><00:03:41.040><c> import</c><00:03:41.520><c> the</c><00:03:41.610><c> project</c><00:03:41.790><c> as</c><00:03:42.090><c> a</c>
+
+00:03:42.140 --> 00:03:42.150 align:start position:0%
+certain way to import the project as a
+ 
+
+00:03:42.150 --> 00:03:44.330 align:start position:0%
+certain way to import the project as a
+Gradle<00:03:42.570><c> project</c><00:03:42.960><c> and</c><00:03:43.110><c> not</c><00:03:43.650><c> some</c><00:03:43.830><c> other</c><00:03:43.980><c> format</c>
+
+00:03:44.330 --> 00:03:44.340 align:start position:0%
+Gradle project and not some other format
+ 
+
+00:03:44.340 --> 00:03:46.580 align:start position:0%
+Gradle project and not some other format
+that<00:03:44.490><c> may</c><00:03:44.640><c> be</c><00:03:44.700><c> in</c><00:03:44.910><c> the</c><00:03:45.000><c> project</c><00:03:45.440><c> we</c><00:03:46.440><c> see</c>
+
+00:03:46.580 --> 00:03:46.590 align:start position:0%
+that may be in the project we see
+ 
+
+00:03:46.590 --> 00:03:48.260 align:start position:0%
+that may be in the project we see
+similar<00:03:46.830><c> options</c><00:03:47.340><c> to</c><00:03:47.490><c> when</c><00:03:47.610><c> we</c><00:03:47.700><c> created</c><00:03:47.970><c> a</c><00:03:48.120><c> new</c>
+
+00:03:48.260 --> 00:03:48.270 align:start position:0%
+similar options to when we created a new
+ 
+
+00:03:48.270 --> 00:03:50.870 align:start position:0%
+similar options to when we created a new
+project<00:03:48.480><c> I'm</c><00:03:49.440><c> not</c><00:03:49.740><c> going</c><00:03:49.950><c> to</c><00:03:50.070><c> use</c><00:03:50.190><c> auto</c><00:03:50.370><c> import</c>
+
+00:03:50.870 --> 00:03:50.880 align:start position:0%
+project I'm not going to use auto import
+ 
+
+00:03:50.880 --> 00:03:52.340 align:start position:0%
+project I'm not going to use auto import
+on<00:03:51.000><c> this</c><00:03:51.180><c> project</c><00:03:51.390><c> as</c><00:03:51.720><c> it</c><00:03:51.840><c> has</c><00:03:51.930><c> a</c><00:03:51.960><c> complex</c>
+
+00:03:52.340 --> 00:03:52.350 align:start position:0%
+on this project as it has a complex
+ 
+
+00:03:52.350 --> 00:03:54.200 align:start position:0%
+on this project as it has a complex
+build<00:03:52.680><c> which</c><00:03:52.950><c> I</c><00:03:53.040><c> don't</c><00:03:53.250><c> want</c><00:03:53.430><c> to</c><00:03:53.550><c> be</c><00:03:53.670><c> run</c><00:03:53.880><c> every</c>
+
+00:03:54.200 --> 00:03:54.210 align:start position:0%
+build which I don't want to be run every
+ 
+
+00:03:54.210 --> 00:03:55.400 align:start position:0%
+build which I don't want to be run every
+time<00:03:54.390><c> I</c><00:03:54.450><c> make</c><00:03:54.600><c> a</c><00:03:54.630><c> small</c><00:03:54.840><c> change</c><00:03:54.960><c> to</c><00:03:55.290><c> the</c>
+
+00:03:55.400 --> 00:03:55.410 align:start position:0%
+time I make a small change to the
+ 
+
+00:03:55.410 --> 00:03:58.430 align:start position:0%
+time I make a small change to the
+build.gradle<00:03:55.740><c> file</c><00:03:56.400><c> I'm</c><00:03:57.210><c> also</c><00:03:57.840><c> not</c><00:03:58.140><c> going</c><00:03:58.350><c> to</c>
+
+00:03:58.430 --> 00:03:58.440 align:start position:0%
+build.gradle file I'm also not going to
+ 
+
+00:03:58.440 --> 00:04:00.010 align:start position:0%
+build.gradle file I'm also not going to
+create<00:03:58.710><c> directories</c><00:03:59.190><c> automatically</c><00:03:59.790><c> either</c>
+
+00:04:00.010 --> 00:04:00.020 align:start position:0%
+create directories automatically either
+ 
+
+00:04:00.020 --> 00:04:02.540 align:start position:0%
+create directories automatically either
+since<00:04:01.020><c> this</c><00:04:01.170><c> is</c><00:04:01.320><c> an</c><00:04:01.470><c> existing</c><00:04:01.920><c> project</c><00:04:02.130><c> and</c>
+
+00:04:02.540 --> 00:04:02.550 align:start position:0%
+since this is an existing project and
+ 
+
+00:04:02.550 --> 00:04:03.920 align:start position:0%
+since this is an existing project and
+all<00:04:02.790><c> the</c><00:04:02.880><c> folders</c><00:04:03.209><c> we</c><00:04:03.360><c> need</c><00:04:03.540><c> should</c><00:04:03.720><c> already</c>
+
+00:04:03.920 --> 00:04:03.930 align:start position:0%
+all the folders we need should already
+ 
+
+00:04:03.930 --> 00:04:06.440 align:start position:0%
+all the folders we need should already
+be<00:04:04.050><c> there</c><00:04:04.610><c> we'll</c><00:04:05.610><c> import</c><00:04:05.910><c> this</c><00:04:06.060><c> project</c>
+
+00:04:06.440 --> 00:04:06.450 align:start position:0%
+be there we'll import this project
+ 
+
+00:04:06.450 --> 00:04:08.090 align:start position:0%
+be there we'll import this project
+without<00:04:06.600><c> creating</c><00:04:07.110><c> a</c><00:04:07.290><c> separate</c><00:04:07.620><c> module</c><00:04:07.770><c> per</c>
+
+00:04:08.090 --> 00:04:08.100 align:start position:0%
+without creating a separate module per
+ 
+
+00:04:08.100 --> 00:04:10.040 align:start position:0%
+without creating a separate module per
+source<00:04:08.400><c> set</c><00:04:08.610><c> and</c><00:04:08.820><c> later</c><00:04:09.420><c> we'll</c><00:04:09.690><c> look</c><00:04:09.840><c> at</c><00:04:09.959><c> the</c>
+
+00:04:10.040 --> 00:04:10.050 align:start position:0%
+source set and later we'll look at the
+ 
+
+00:04:10.050 --> 00:04:11.449 align:start position:0%
+source set and later we'll look at the
+difference<00:04:10.350><c> it</c><00:04:10.470><c> makes</c><00:04:10.650><c> if</c><00:04:10.830><c> we</c><00:04:10.950><c> do</c><00:04:11.100><c> tick</c><00:04:11.340><c> this</c>
+
+00:04:11.449 --> 00:04:11.459 align:start position:0%
+difference it makes if we do tick this
+ 
+
+00:04:11.459 --> 00:04:13.850 align:start position:0%
+difference it makes if we do tick this
+box<00:04:11.660><c> this</c><00:04:12.660><c> project</c><00:04:13.080><c> does</c><00:04:13.260><c> have</c><00:04:13.440><c> the</c><00:04:13.530><c> Gradle</c>
+
+00:04:13.850 --> 00:04:13.860 align:start position:0%
+box this project does have the Gradle
+ 
+
+00:04:13.860 --> 00:04:16.550 align:start position:0%
+box this project does have the Gradle
+wrapper<00:04:14.130><c> so</c><00:04:14.310><c> we'll</c><00:04:14.459><c> use</c><00:04:14.640><c> this</c><00:04:15.320><c> IntelliJ</c><00:04:16.320><c> IDEA</c>
+
+00:04:16.550 --> 00:04:16.560 align:start position:0%
+wrapper so we'll use this IntelliJ IDEA
+ 
+
+00:04:16.560 --> 00:04:17.990 align:start position:0%
+wrapper so we'll use this IntelliJ IDEA
+runs<00:04:16.799><c> Gradle</c><00:04:17.190><c> on</c><00:04:17.280><c> the</c><00:04:17.370><c> project</c><00:04:17.760><c> when</c><00:04:17.910><c> it's</c>
+
+00:04:17.990 --> 00:04:18.000 align:start position:0%
+runs Gradle on the project when it's
+ 
+
+00:04:18.000 --> 00:04:20.030 align:start position:0%
+runs Gradle on the project when it's
+first<00:04:18.180><c> imported</c><00:04:18.780><c> to</c><00:04:19.290><c> initialize</c><00:04:19.739><c> it</c><00:04:19.919><c> and</c>
+
+00:04:20.030 --> 00:04:20.040 align:start position:0%
+first imported to initialize it and
+ 
+
+00:04:20.040 --> 00:04:22.190 align:start position:0%
+first imported to initialize it and
+bring<00:04:20.340><c> in</c><00:04:20.459><c> the</c><00:04:20.549><c> dependencies</c><00:04:21.060><c> once</c><00:04:22.049><c> the</c>
+
+00:04:22.190 --> 00:04:22.200 align:start position:0%
+bring in the dependencies once the
+ 
+
+00:04:22.200 --> 00:04:23.210 align:start position:0%
+bring in the dependencies once the
+structure<00:04:22.440><c> of</c><00:04:22.620><c> the</c><00:04:22.710><c> application</c><00:04:23.160><c> is</c>
+
+00:04:23.210 --> 00:04:23.220 align:start position:0%
+structure of the application is
+ 
+
+00:04:23.220 --> 00:04:25.460 align:start position:0%
+structure of the application is
+understood<00:04:23.669><c> we're</c><00:04:24.600><c> given</c><00:04:24.840><c> a</c><00:04:24.900><c> list</c><00:04:25.080><c> of</c><00:04:25.230><c> all</c><00:04:25.380><c> the</c>
+
+00:04:25.460 --> 00:04:25.470 align:start position:0%
+understood we're given a list of all the
+ 
+
+00:04:25.470 --> 00:04:27.050 align:start position:0%
+understood we're given a list of all the
+IntelliJ<00:04:25.919><c> IDEA</c><00:04:26.160><c> modules</c><00:04:26.580><c> that</c><00:04:26.700><c> could</c><00:04:26.910><c> be</c>
+
+00:04:27.050 --> 00:04:27.060 align:start position:0%
+IntelliJ IDEA modules that could be
+ 
+
+00:04:27.060 --> 00:04:29.210 align:start position:0%
+IntelliJ IDEA modules that could be
+created<00:04:27.450><c> to</c><00:04:27.480><c> the</c><00:04:27.570><c> project</c><00:04:28.050><c> and</c><00:04:28.830><c> we</c><00:04:28.919><c> can</c><00:04:29.070><c> choose</c>
+
+00:04:29.210 --> 00:04:29.220 align:start position:0%
+created to the project and we can choose
+ 
+
+00:04:29.220 --> 00:04:31.670 align:start position:0%
+created to the project and we can choose
+which<00:04:29.430><c> ones</c><00:04:29.640><c> to</c><00:04:29.730><c> create</c><00:04:30.200><c> we</c><00:04:31.200><c> can</c><00:04:31.380><c> see</c><00:04:31.530><c> that</c>
+
+00:04:31.670 --> 00:04:31.680 align:start position:0%
+which ones to create we can see that
+ 
+
+00:04:31.680 --> 00:04:33.500 align:start position:0%
+which ones to create we can see that
+IntelliJ<00:04:32.190><c> IDEA</c><00:04:32.430><c> has</c><00:04:32.580><c> created</c><00:04:32.970><c> modules</c><00:04:33.360><c> for</c>
+
+00:04:33.500 --> 00:04:33.510 align:start position:0%
+IntelliJ IDEA has created modules for
+ 
+
+00:04:33.510 --> 00:04:35.000 align:start position:0%
+IntelliJ IDEA has created modules for
+all<00:04:33.660><c> the</c><00:04:33.780><c> sub</c><00:04:33.990><c> projects</c><00:04:34.380><c> in</c><00:04:34.530><c> this</c><00:04:34.620><c> Gradle</c>
+
+00:04:35.000 --> 00:04:35.010 align:start position:0%
+all the sub projects in this Gradle
+ 
+
+00:04:35.010 --> 00:04:37.580 align:start position:0%
+all the sub projects in this Gradle
+project<00:04:35.370><c> it</c><00:04:36.150><c> also</c><00:04:36.450><c> correctly</c><00:04:36.810><c> recognizes</c><00:04:37.470><c> the</c>
+
+00:04:37.580 --> 00:04:37.590 align:start position:0%
+project it also correctly recognizes the
+ 
+
+00:04:37.590 --> 00:04:39.560 align:start position:0%
+project it also correctly recognizes the
+source<00:04:37.830><c> and</c><00:04:38.070><c> test</c><00:04:38.250><c> directories</c><00:04:38.760><c> as</c><00:04:38.940><c> defined</c>
+
+00:04:39.560 --> 00:04:39.570 align:start position:0%
+source and test directories as defined
+ 
+
+00:04:39.570 --> 00:04:41.540 align:start position:0%
+source and test directories as defined
+in<00:04:39.690><c> the</c><00:04:39.750><c> Gradle</c><00:04:40.140><c> build</c><00:04:40.169><c> even</c><00:04:41.070><c> though</c><00:04:41.400><c> this</c>
+
+00:04:41.540 --> 00:04:41.550 align:start position:0%
+in the Gradle build even though this
+ 
+
+00:04:41.550 --> 00:04:42.860 align:start position:0%
+in the Gradle build even though this
+project<00:04:41.970><c> doesn't</c><00:04:42.120><c> follow</c><00:04:42.360><c> the</c><00:04:42.570><c> usual</c>
+
+00:04:42.860 --> 00:04:42.870 align:start position:0%
+project doesn't follow the usual
+ 
+
+00:04:42.870 --> 00:04:45.860 align:start position:0%
+project doesn't follow the usual
+standard<00:04:43.820><c> each</c><00:04:44.820><c> of</c><00:04:45.090><c> these</c><00:04:45.180><c> modules</c><00:04:45.570><c> has</c><00:04:45.750><c> its</c>
+
+00:04:45.860 --> 00:04:45.870 align:start position:0%
+standard each of these modules has its
+ 
+
+00:04:45.870 --> 00:04:48.840 align:start position:0%
+standard each of these modules has its
+own<00:04:45.960><c> dependencies</c><00:04:46.500><c> as</c><00:04:46.710><c> defined</c><00:04:47.130><c> by</c><00:04:47.220><c> Gradle</c>
+
+00:04:48.840 --> 00:04:48.850 align:start position:0%
+own dependencies as defined by Gradle
+ 
+
+00:04:48.850 --> 00:04:51.000 align:start position:0%
+own dependencies as defined by Gradle
+now<00:04:49.840><c> let's</c><00:04:50.080><c> see</c><00:04:50.230><c> what</c><00:04:50.380><c> a</c><00:04:50.410><c> difference</c><00:04:50.740><c> it</c><00:04:50.830><c> makes</c>
+
+00:04:51.000 --> 00:04:51.010 align:start position:0%
+now let's see what a difference it makes
+ 
+
+00:04:51.010 --> 00:04:52.410 align:start position:0%
+now let's see what a difference it makes
+to<00:04:51.160><c> import</c><00:04:51.520><c> this</c><00:04:51.610><c> project</c><00:04:52.030><c> with</c><00:04:52.150><c> slightly</c>
+
+00:04:52.410 --> 00:04:52.420 align:start position:0%
+to import this project with slightly
+ 
+
+00:04:52.420 --> 00:04:55.620 align:start position:0%
+to import this project with slightly
+different<00:04:52.540><c> settings</c><00:04:54.060><c> specifically</c><00:04:55.060><c> let's</c>
+
+00:04:55.620 --> 00:04:55.630 align:start position:0%
+different settings specifically let's
+ 
+
+00:04:55.630 --> 00:04:57.660 align:start position:0%
+different settings specifically let's
+select<00:04:55.930><c> create</c><00:04:56.440><c> separate</c><00:04:56.860><c> module</c><00:04:57.220><c> per</c><00:04:57.400><c> source</c>
+
+00:04:57.660 --> 00:04:57.670 align:start position:0%
+select create separate module per source
+ 
+
+00:04:57.670 --> 00:04:59.720 align:start position:0%
+select create separate module per source
+set<00:04:57.880><c> so</c><00:04:58.510><c> we</c><00:04:58.630><c> understand</c><00:04:59.050><c> what</c><00:04:59.170><c> this</c><00:04:59.290><c> means</c>
+
+00:04:59.720 --> 00:04:59.730 align:start position:0%
+set so we understand what this means
+ 
+
+00:04:59.730 --> 00:05:02.040 align:start position:0%
+set so we understand what this means
+because<00:05:00.730><c> we've</c><00:05:01.030><c> previously</c><00:05:01.540><c> imported</c><00:05:01.780><c> this</c>
+
+00:05:02.040 --> 00:05:02.050 align:start position:0%
+because we've previously imported this
+ 
+
+00:05:02.050 --> 00:05:03.900 align:start position:0%
+because we've previously imported this
+project<00:05:02.500><c> we</c><00:05:02.650><c> already</c><00:05:03.010><c> have</c><00:05:03.160><c> settings</c><00:05:03.550><c> defined</c>
+
+00:05:03.900 --> 00:05:03.910 align:start position:0%
+project we already have settings defined
+ 
+
+00:05:03.910 --> 00:05:06.570 align:start position:0%
+project we already have settings defined
+for<00:05:04.150><c> IntelliJ</c><00:05:04.570><c> IDEA</c><00:05:04.930><c> but</c><00:05:05.920><c> what</c><00:05:06.040><c> we</c><00:05:06.130><c> want</c><00:05:06.340><c> to</c><00:05:06.460><c> do</c>
+
+00:05:06.570 --> 00:05:06.580 align:start position:0%
+for IntelliJ IDEA but what we want to do
+ 
+
+00:05:06.580 --> 00:05:07.980 align:start position:0%
+for IntelliJ IDEA but what we want to do
+is<00:05:06.730><c> override</c><00:05:07.120><c> these</c><00:05:07.300><c> with</c><00:05:07.510><c> our</c><00:05:07.630><c> updated</c>
+
+00:05:07.980 --> 00:05:07.990 align:start position:0%
+is override these with our updated
+ 
+
+00:05:07.990 --> 00:05:11.160 align:start position:0%
+is override these with our updated
+settings<00:05:08.700><c> this</c><00:05:09.700><c> time</c><00:05:09.940><c> IntelliJ</c><00:05:10.720><c> IDEA</c><00:05:10.960><c> not</c>
+
+00:05:11.160 --> 00:05:11.170 align:start position:0%
+settings this time IntelliJ IDEA not
+ 
+
+00:05:11.170 --> 00:05:12.750 align:start position:0%
+settings this time IntelliJ IDEA not
+only<00:05:11.410><c> suggests</c><00:05:11.860><c> modules</c><00:05:12.250><c> for</c><00:05:12.370><c> each</c><00:05:12.460><c> sub</c>
+
+00:05:12.750 --> 00:05:12.760 align:start position:0%
+only suggests modules for each sub
+ 
+
+00:05:12.760 --> 00:05:15.420 align:start position:0%
+only suggests modules for each sub
+project<00:05:13.210><c> but</c><00:05:13.990><c> also</c><00:05:14.290><c> sub</c><00:05:14.560><c> modules</c><00:05:15.010><c> for</c><00:05:15.190><c> all</c><00:05:15.310><c> the</c>
+
+00:05:15.420 --> 00:05:15.430 align:start position:0%
+project but also sub modules for all the
+ 
+
+00:05:15.430 --> 00:05:18.150 align:start position:0%
+project but also sub modules for all the
+source<00:05:15.700><c> sets</c><00:05:15.940><c> in</c><00:05:16.150><c> each</c><00:05:16.270><c> module</c><00:05:16.710><c> this</c><00:05:17.710><c> project</c>
+
+00:05:18.150 --> 00:05:18.160 align:start position:0%
+source sets in each module this project
+ 
+
+00:05:18.160 --> 00:05:19.440 align:start position:0%
+source sets in each module this project
+has<00:05:18.250><c> separate</c><00:05:18.550><c> source</c><00:05:18.820><c> sets</c><00:05:19.030><c> for</c><00:05:19.180><c> different</c>
+
+00:05:19.440 --> 00:05:19.450 align:start position:0%
+has separate source sets for different
+ 
+
+00:05:19.450 --> 00:05:22.170 align:start position:0%
+has separate source sets for different
+types<00:05:19.630><c> of</c><00:05:19.810><c> tests</c><00:05:20.310><c> so</c><00:05:21.310><c> these</c><00:05:21.490><c> can</c><00:05:21.700><c> all</c><00:05:21.880><c> be</c><00:05:21.910><c> set</c>
+
+00:05:22.170 --> 00:05:22.180 align:start position:0%
+types of tests so these can all be set
+ 
+
+00:05:22.180 --> 00:05:24.290 align:start position:0%
+types of tests so these can all be set
+up<00:05:22.330><c> as</c><00:05:22.450><c> independent</c><00:05:23.080><c> IntelliJ</c><00:05:23.530><c> IDEA</c><00:05:23.800><c> modules</c>
+
+00:05:24.290 --> 00:05:24.300 align:start position:0%
+up as independent IntelliJ IDEA modules
+ 
+
+00:05:24.300 --> 00:05:26.490 align:start position:0%
+up as independent IntelliJ IDEA modules
+we'll<00:05:25.300><c> see</c><00:05:25.510><c> why</c><00:05:25.690><c> we</c><00:05:25.870><c> might</c><00:05:26.020><c> want</c><00:05:26.200><c> this</c><00:05:26.290><c> in</c><00:05:26.440><c> a</c>
+
+00:05:26.490 --> 00:05:26.500 align:start position:0%
+we'll see why we might want this in a
+ 
+
+00:05:26.500 --> 00:05:28.129 align:start position:0%
+we'll see why we might want this in a
+minute
+
+00:05:28.129 --> 00:05:28.139 align:start position:0%
+minute
+ 
+
+00:05:28.139 --> 00:05:30.450 align:start position:0%
+minute
+now<00:05:29.139><c> each</c><00:05:29.350><c> of</c><00:05:29.380><c> these</c><00:05:29.650><c> test</c><00:05:29.919><c> folders</c><00:05:30.280><c> is</c><00:05:30.430><c> a</c>
+
+00:05:30.450 --> 00:05:30.460 align:start position:0%
+now each of these test folders is a
+ 
+
+00:05:30.460 --> 00:05:32.790 align:start position:0%
+now each of these test folders is a
+module<00:05:30.880><c> not</c><00:05:31.330><c> just</c><00:05:31.600><c> a</c><00:05:31.660><c> folder</c><00:05:31.900><c> inside</c><00:05:32.320><c> a</c><00:05:32.380><c> larger</c>
+
+00:05:32.790 --> 00:05:32.800 align:start position:0%
+module not just a folder inside a larger
+ 
+
+00:05:32.800 --> 00:05:35.189 align:start position:0%
+module not just a folder inside a larger
+module<00:05:33.300><c> this</c><00:05:34.300><c> means</c><00:05:34.570><c> that</c><00:05:34.720><c> each</c><00:05:34.930><c> of</c><00:05:34.960><c> these</c>
+
+00:05:35.189 --> 00:05:35.199 align:start position:0%
+module this means that each of these
+ 
+
+00:05:35.199 --> 00:05:37.110 align:start position:0%
+module this means that each of these
+modules<00:05:35.620><c> has</c><00:05:35.770><c> its</c><00:05:35.919><c> own</c><00:05:36.070><c> dependencies</c><00:05:36.760><c> and</c>
+
+00:05:37.110 --> 00:05:37.120 align:start position:0%
+modules has its own dependencies and
+ 
+
+00:05:37.120 --> 00:05:38.610 align:start position:0%
+modules has its own dependencies and
+doesn't<00:05:37.720><c> simply</c><00:05:38.050><c> share</c><00:05:38.260><c> all</c><00:05:38.470><c> the</c>
+
+00:05:38.610 --> 00:05:38.620 align:start position:0%
+doesn't simply share all the
+ 
+
+00:05:38.620 --> 00:05:41.520 align:start position:0%
+doesn't simply share all the
+dependencies<00:05:39.010><c> from</c><00:05:39.370><c> the</c><00:05:39.460><c> sub</c><00:05:39.639><c> project</c><00:05:40.530><c> this</c>
+
+00:05:41.520 --> 00:05:41.530 align:start position:0%
+dependencies from the sub project this
+ 
+
+00:05:41.530 --> 00:05:43.320 align:start position:0%
+dependencies from the sub project this
+may<00:05:41.740><c> more</c><00:05:41.949><c> accurately</c><00:05:42.460><c> represent</c><00:05:42.910><c> the</c><00:05:42.940><c> Gradle</c>
+
+00:05:43.320 --> 00:05:43.330 align:start position:0%
+may more accurately represent the Gradle
+ 
+
+00:05:43.330 --> 00:05:45.240 align:start position:0%
+may more accurately represent the Gradle
+build<00:05:43.360><c> so</c><00:05:44.169><c> compiling</c><00:05:44.620><c> and</c><00:05:44.860><c> running</c><00:05:45.100><c> inside</c>
+
+00:05:45.240 --> 00:05:45.250 align:start position:0%
+build so compiling and running inside
+ 
+
+00:05:45.250 --> 00:05:47.129 align:start position:0%
+build so compiling and running inside
+the<00:05:45.550><c> IDE</c><00:05:45.699><c> gives</c><00:05:46.300><c> the</c><00:05:46.419><c> same</c><00:05:46.660><c> result</c><00:05:46.990><c> as</c>
+
+00:05:47.129 --> 00:05:47.139 align:start position:0%
+the IDE gives the same result as
+ 
+
+00:05:47.139 --> 00:05:50.189 align:start position:0%
+the IDE gives the same result as
+compiling<00:05:47.710><c> and</c><00:05:47.949><c> running</c><00:05:47.979><c> from</c><00:05:48.340><c> Gradle</c><00:05:49.199><c> the</c>
+
+00:05:50.189 --> 00:05:50.199 align:start position:0%
+compiling and running from Gradle the
+ 
+
+00:05:50.199 --> 00:05:51.689 align:start position:0%
+compiling and running from Gradle the
+Gradle<00:05:50.530><c> window</c><00:05:50.800><c> shows</c><00:05:51.040><c> each</c><00:05:51.310><c> of</c><00:05:51.340><c> the</c><00:05:51.460><c> sub</c>
+
+00:05:51.689 --> 00:05:51.699 align:start position:0%
+Gradle window shows each of the sub
+ 
+
+00:05:51.699 --> 00:05:53.280 align:start position:0%
+Gradle window shows each of the sub
+projects<00:05:52.120><c> that</c><00:05:52.270><c> make</c><00:05:52.449><c> up</c><00:05:52.600><c> the</c><00:05:52.720><c> application</c>
+
+00:05:53.280 --> 00:05:53.290 align:start position:0%
+projects that make up the application
+ 
+
+00:05:53.290 --> 00:05:55.260 align:start position:0%
+projects that make up the application
+including<00:05:54.220><c> the</c><00:05:54.310><c> different</c><00:05:54.610><c> source</c><00:05:54.850><c> sets</c><00:05:55.090><c> with</c>
+
+00:05:55.260 --> 00:05:55.270 align:start position:0%
+including the different source sets with
+ 
+
+00:05:55.270 --> 00:05:57.780 align:start position:0%
+including the different source sets with
+their<00:05:55.389><c> own</c><00:05:55.479><c> dependencies</c><00:05:56.139><c> and</c><00:05:56.380><c> of</c><00:05:57.340><c> course</c><00:05:57.580><c> the</c>
+
+00:05:57.780 --> 00:05:57.790 align:start position:0%
+their own dependencies and of course the
+ 
+
+00:05:57.790 --> 00:06:01.890 align:start position:0%
+their own dependencies and of course the
+tasks<00:05:58.120><c> available</c><00:05:58.570><c> as</c><00:05:59.400><c> we</c><00:06:00.400><c> saw</c><00:06:00.550><c> earlier</c><00:06:00.900><c> tasks</c>
+
+00:06:01.890 --> 00:06:01.900 align:start position:0%
+tasks available as we saw earlier tasks
+ 
+
+00:06:01.900 --> 00:06:03.659 align:start position:0%
+tasks available as we saw earlier tasks
+like<00:06:02.080><c> the</c><00:06:02.229><c> test</c><00:06:02.470><c> tasks</c><00:06:02.740><c> can</c><00:06:02.950><c> be</c><00:06:02.979><c> run</c><00:06:03.190><c> from</c><00:06:03.370><c> here</c>
+
+00:06:03.659 --> 00:06:03.669 align:start position:0%
+like the test tasks can be run from here
+ 
+
+00:06:03.669 --> 00:06:06.000 align:start position:0%
+like the test tasks can be run from here
+and<00:06:03.900><c> the</c><00:06:04.900><c> test</c><00:06:05.110><c> results</c><00:06:05.169><c> will</c><00:06:05.560><c> be</c><00:06:05.650><c> shown</c><00:06:05.830><c> as</c>
+
+00:06:06.000 --> 00:06:06.010 align:start position:0%
+and the test results will be shown as
+ 
+
+00:06:06.010 --> 00:06:08.040 align:start position:0%
+and the test results will be shown as
+the<00:06:06.130><c> familiar</c><00:06:06.280><c> IntelliJ</c><00:06:07.030><c> IDEA</c><00:06:07.300><c> test</c><00:06:07.630><c> results</c>
+
+00:06:08.040 --> 00:06:08.050 align:start position:0%
+the familiar IntelliJ IDEA test results
+ 
+
+00:06:08.050 --> 00:06:11.430 align:start position:0%
+the familiar IntelliJ IDEA test results
+along<00:06:08.830><c> with</c><00:06:08.889><c> the</c><00:06:09.100><c> Gradle</c><00:06:09.430><c> task</c><00:06:09.460><c> output</c><00:06:10.350><c> but</c><00:06:11.350><c> we</c>
+
+00:06:11.430 --> 00:06:11.440 align:start position:0%
+along with the Gradle task output but we
+ 
+
+00:06:11.440 --> 00:06:13.260 align:start position:0%
+along with the Gradle task output but we
+can<00:06:11.590><c> also</c><00:06:11.740><c> run</c><00:06:11.950><c> the</c><00:06:12.100><c> tests</c><00:06:12.490><c> or</c><00:06:12.669><c> a</c><00:06:12.729><c> subset</c><00:06:13.240><c> of</c>
+
+00:06:13.260 --> 00:06:13.270 align:start position:0%
+can also run the tests or a subset of
+ 
+
+00:06:13.270 --> 00:06:16.740 align:start position:0%
+can also run the tests or a subset of
+them<00:06:13.479><c> from</c><00:06:13.900><c> inside</c><00:06:14.260><c> the</c><00:06:14.380><c> IDE</c><00:06:14.530><c> if</c><00:06:14.919><c> we</c><00:06:15.070><c> want</c><00:06:15.750><c> if</c>
+
+00:06:16.740 --> 00:06:16.750 align:start position:0%
+them from inside the IDE if we want if
+ 
+
+00:06:16.750 --> 00:06:18.150 align:start position:0%
+them from inside the IDE if we want if
+the<00:06:16.960><c> project</c><00:06:17.320><c> needs</c><00:06:17.500><c> the</c><00:06:17.740><c> build</c><00:06:17.919><c> to</c><00:06:18.040><c> be</c>
+
+00:06:18.150 --> 00:06:18.160 align:start position:0%
+the project needs the build to be
+ 
+
+00:06:18.160 --> 00:06:20.490 align:start position:0%
+the project needs the build to be
+performed<00:06:18.550><c> by</c><00:06:18.700><c> Gradle</c><00:06:19.120><c> for</c><00:06:19.750><c> example</c><00:06:20.200><c> to</c>
+
+00:06:20.490 --> 00:06:20.500 align:start position:0%
+performed by Gradle for example to
+ 
+
+00:06:20.500 --> 00:06:23.580 align:start position:0%
+performed by Gradle for example to
+generate<00:06:20.860><c> code</c><00:06:21.070><c> or</c><00:06:21.370><c> to</c><00:06:21.610><c> deploy</c><00:06:21.910><c> artifacts</c><00:06:22.660><c> we</c>
+
+00:06:23.580 --> 00:06:23.590 align:start position:0%
+generate code or to deploy artifacts we
+ 
+
+00:06:23.590 --> 00:06:25.620 align:start position:0%
+generate code or to deploy artifacts we
+can<00:06:23.770><c> tick</c><00:06:23.979><c> the</c><00:06:24.190><c> delegate</c><00:06:24.700><c> IDE</c><00:06:25.090><c> build</c><00:06:25.450><c> to</c>
+
+00:06:25.620 --> 00:06:25.630 align:start position:0%
+can tick the delegate IDE build to
+ 
+
+00:06:25.630 --> 00:06:29.040 align:start position:0%
+can tick the delegate IDE build to
+Gradle<00:06:25.990><c> settings</c><00:06:26.410><c> if</c><00:06:26.610><c> we</c><00:06:27.610><c> choose</c><00:06:27.820><c> this</c><00:06:28.060><c> even</c>
+
+00:06:29.040 --> 00:06:29.050 align:start position:0%
+Gradle settings if we choose this even
+ 
+
+00:06:29.050 --> 00:06:30.710 align:start position:0%
+Gradle settings if we choose this even
+when<00:06:29.139><c> we</c><00:06:29.289><c> run</c><00:06:29.440><c> the</c><00:06:29.530><c> test</c><00:06:29.710><c> through</c><00:06:29.979><c> the</c><00:06:30.010><c> IDE</c>
+
+00:06:30.710 --> 00:06:30.720 align:start position:0%
+when we run the test through the IDE
+ 
+
+00:06:30.720 --> 00:06:32.969 align:start position:0%
+when we run the test through the IDE
+IntelliJ<00:06:31.720><c> IDEA</c><00:06:31.960><c> will</c><00:06:32.080><c> use</c><00:06:32.229><c> Gradle</c><00:06:32.650><c> to</c><00:06:32.740><c> build</c>
+
+00:06:32.969 --> 00:06:32.979 align:start position:0%
+IntelliJ IDEA will use Gradle to build
+ 
+
+00:06:32.979 --> 00:06:34.909 align:start position:0%
+IntelliJ IDEA will use Gradle to build
+the<00:06:33.070><c> project</c><00:06:33.430><c> before</c><00:06:33.520><c> running</c><00:06:33.940><c> the</c><00:06:34.030><c> tests</c><00:06:34.419><c> in</c>
+
+00:06:34.909 --> 00:06:34.919 align:start position:0%
+the project before running the tests in
+ 
+
+00:06:34.919 --> 00:06:37.170 align:start position:0%
+the project before running the tests in
+this<00:06:35.919><c> video</c><00:06:36.220><c> we've</c><00:06:36.490><c> looked</c><00:06:36.520><c> at</c><00:06:36.820><c> how</c><00:06:36.970><c> to</c><00:06:37.000><c> work</c>
+
+00:06:37.170 --> 00:06:37.180 align:start position:0%
+this video we've looked at how to work
+ 
+
+00:06:37.180 --> 00:06:39.560 align:start position:0%
+this video we've looked at how to work
+with<00:06:37.479><c> Gradle</c><00:06:37.840><c> projects</c><00:06:38.260><c> in</c><00:06:38.380><c> IntelliJ</c><00:06:38.950><c> IDEA</c>
+
+00:06:39.560 --> 00:06:39.570 align:start position:0%
+with Gradle projects in IntelliJ IDEA
+ 
+
+00:06:39.570 --> 00:06:41.760 align:start position:0%
+with Gradle projects in IntelliJ IDEA
+take<00:06:40.570><c> a</c><00:06:40.600><c> look</c><00:06:40.810><c> at</c><00:06:40.870><c> the</c><00:06:40.930><c> documentation</c><00:06:41.440><c> for</c>
+
+00:06:41.760 --> 00:06:41.770 align:start position:0%
+take a look at the documentation for
+ 
+
+00:06:41.770 --> 00:06:43.830 align:start position:0%
+take a look at the documentation for
+more<00:06:41.919><c> details</c><00:06:42.340><c> or</c><00:06:42.610><c> check</c><00:06:43.300><c> out</c><00:06:43.450><c> the</c><00:06:43.539><c> YouTube</c>
+
+00:06:43.830 --> 00:06:43.840 align:start position:0%
+more details or check out the YouTube
+ 
+
+00:06:43.840 --> 00:06:45.719 align:start position:0%
+more details or check out the YouTube
+channel<00:06:44.200><c> for</c><00:06:44.320><c> more</c><00:06:44.440><c> videos</c><00:06:44.770><c> thanks</c><00:06:45.669><c> for</c>
+
+00:06:45.719 --> 00:06:45.729 align:start position:0%
+channel for more videos thanks for
+ 
+
+00:06:45.729 --> 00:06:47.849 align:start position:0%
+channel for more videos thanks for
+watching
+

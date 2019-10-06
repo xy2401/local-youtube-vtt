@@ -1,0 +1,2482 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:00.936
+[BEATBOXING]
+
+00:00:00.936 --> 00:00:02.340
+SPEAKER 1: Jake's
+camera rolling.
+
+00:00:02.340 --> 00:00:05.460
+SPEAKER 2: [INAUDIBLE]
+Open it up.
+
+00:00:05.460 --> 00:00:06.093
+Open it up.
+
+00:00:08.656 --> 00:00:11.116
+[MUSIC PLAYING]
+
+00:00:14.068 --> 00:00:15.360
+SURMA: All right.
+
+00:00:15.360 --> 00:00:19.333
+So what I basically did
+is I wrote a blog post--
+
+00:00:19.333 --> 00:00:20.250
+JAKE ARCHIBALD: Right.
+
+00:00:20.250 --> 00:00:21.240
+SURMA: --I thought
+was interesting.
+
+00:00:21.240 --> 00:00:21.840
+JAKE ARCHIBALD: Did it?
+
+00:00:21.840 --> 00:00:22.170
+Was it?
+
+00:00:22.170 --> 00:00:22.680
+Good.
+
+00:00:22.680 --> 00:00:23.100
+Excellent.
+
+00:00:23.100 --> 00:00:24.570
+SURMA: Nobody else seemed
+to agree with that.
+
+00:00:24.570 --> 00:00:24.990
+JAKE ARCHIBALD: Brilliant.
+
+00:00:24.990 --> 00:00:26.670
+SURMA: So I'm going to shove
+it down everyone's throat
+
+00:00:26.670 --> 00:00:28.030
+by putting it into
+two or three episodes.
+
+00:00:28.030 --> 00:00:28.905
+JAKE ARCHIBALD: Boom.
+
+00:00:28.905 --> 00:00:29.660
+Good tactic.
+
+00:00:29.660 --> 00:00:30.240
+Good tactic.
+
+00:00:30.240 --> 00:00:30.926
+Excellent.
+
+00:00:30.926 --> 00:00:32.009
+What are we talking about?
+
+00:00:32.009 --> 00:00:32.509
+SURMA: So.
+
+00:00:32.509 --> 00:00:33.884
+JAKE ARCHIBALD:
+Oh, your article.
+
+00:00:33.884 --> 00:00:35.250
+SURMA: Yes, we're talking--
+
+00:00:35.250 --> 00:00:37.010
+once again I'm
+talking about workers.
+
+00:00:37.010 --> 00:00:37.220
+JAKE ARCHIBALD: Yay.
+
+00:00:37.220 --> 00:00:38.190
+SURMA: I'm never going to stop.
+
+00:00:38.190 --> 00:00:38.660
+JAKE ARCHIBALD: Brilliant.
+
+00:00:38.660 --> 00:00:40.230
+SURMA: I've been
+doing some research
+
+00:00:40.230 --> 00:00:43.020
+and figuring out the
+rough edges with workers?
+
+00:00:43.020 --> 00:00:46.080
+What actually is the performance
+benefit and the performance
+
+00:00:46.080 --> 00:00:46.610
+impact?
+
+00:00:46.610 --> 00:00:47.340
+Where's the cost?
+
+00:00:47.340 --> 00:00:48.430
+Where's the gain?
+
+00:00:48.430 --> 00:00:51.820
+[INAUDIBLE] Because
+basically, at the very least,
+
+00:00:51.820 --> 00:00:54.390
+I want most apps to use
+workers to manage their state.
+
+00:00:54.390 --> 00:00:56.340
+Because state, most
+of the time, is
+
+00:00:56.340 --> 00:01:00.780
+completely decoupled from any
+DOM or most main thread APIs.
+
+00:01:00.780 --> 00:01:01.880
+It's just a state object.
+
+00:01:01.880 --> 00:01:04.140
+JAKE ARCHIBALD: Yeah, we see
+that with like the redux stores
+
+00:01:04.140 --> 00:01:04.723
+kind of stuff.
+
+00:01:04.723 --> 00:01:08.625
+There's very little in
+there that is DOM specific.
+
+00:01:08.625 --> 00:01:10.500
+SURMA: So why isn't
+redux [INAUDIBLE] worker,
+
+00:01:10.500 --> 00:01:11.130
+for example, right?
+
+00:01:11.130 --> 00:01:11.600
+JAKE ARCHIBALD: Right.
+
+00:01:11.600 --> 00:01:12.840
+SURMA: Would be one example.
+
+00:01:12.840 --> 00:01:15.710
+So let's talk
+about a fictional--
+
+00:01:15.710 --> 00:01:18.210
+not to-do a list app, because
+we don't have enough of those.
+
+00:01:18.210 --> 00:01:18.340
+JAKE ARCHIBALD: Brilliant, OK.
+
+00:01:18.340 --> 00:01:21.180
+SURMA: But let's assume
+we would put our state
+
+00:01:21.180 --> 00:01:22.878
+in a class, todoState.
+
+00:01:22.878 --> 00:01:24.420
+It has all the method
+you would want.
+
+00:01:24.420 --> 00:01:27.340
+Like you add a todo,
+you toggle a todo.
+
+00:01:27.340 --> 00:01:29.050
+You could can even
+subscribe to changes,
+
+00:01:29.050 --> 00:01:31.350
+so your callback gets
+called whenever something
+
+00:01:31.350 --> 00:01:33.570
+changes in the to-do list.
+
+00:01:33.570 --> 00:01:35.550
+To JSON, basically,
+it turns this class
+
+00:01:35.550 --> 00:01:38.850
+into a small JSON object that
+you can serialize or send
+
+00:01:38.850 --> 00:01:39.740
+over the wire.
+
+00:01:39.740 --> 00:01:42.280
+And then we have an
+internal notify function
+
+00:01:42.280 --> 00:01:44.920
+that notifies all subscribers--
+
+00:01:44.920 --> 00:01:46.050
+[INTERPOSING VOICES]
+
+00:01:46.050 --> 00:01:48.690
+JAKE ARCHIBALD: So if you put
+a callback into subscribe,
+
+00:01:48.690 --> 00:01:51.740
+it's going to add it to the
+subscribers array presumably.
+
+00:01:51.740 --> 00:01:52.680
+SURMA: Right.
+
+00:01:52.680 --> 00:01:55.097
+So I know what we're doing
+here is just on the [INAUDIBLE]
+
+00:01:55.097 --> 00:01:57.460
+I add a comlink because
+it makes it easier.
+
+00:01:57.460 --> 00:01:59.700
+So in this sense, we are
+just exposing an instance
+
+00:01:59.700 --> 00:02:02.070
+of todoState, which means we
+can use it in other threads
+
+00:02:02.070 --> 00:02:03.600
+without having to worry
+about postMessage.
+
+00:02:03.600 --> 00:02:04.660
+JAKE ARCHIBALD: Makes sense.
+
+00:02:04.660 --> 00:02:04.890
+All right.
+
+00:02:04.890 --> 00:02:05.598
+SURMA: All right.
+
+00:02:05.598 --> 00:02:07.470
+So that means on
+the main thread,
+
+00:02:07.470 --> 00:02:08.470
+it would look like this.
+
+00:02:08.470 --> 00:02:10.830
+If we create a worker,
+we wrap it in comlink.
+
+00:02:10.830 --> 00:02:13.965
+And now what we have is
+this instance of the class,
+
+00:02:13.965 --> 00:02:15.840
+even though it actually
+lives somewhere else.
+
+00:02:15.840 --> 00:02:17.300
+JAKE ARCHIBALD:
+Comlink is magic.
+
+00:02:17.300 --> 00:02:17.800
+Yay.
+
+00:02:17.800 --> 00:02:19.800
+SURMA: So what we can do,
+we can-- on todoState,
+
+00:02:19.800 --> 00:02:21.740
+we can call subscribe,
+pass in our callback.
+
+00:02:21.740 --> 00:02:24.785
+So this callback, we'll call it
+every time the state changes.
+
+00:02:24.785 --> 00:02:26.160
+We could call
+render, which could
+
+00:02:26.160 --> 00:02:29.327
+be a React render or
+[INAUDIBLE] HTML, or whatnot.
+
+00:02:29.327 --> 00:02:30.660
+Doesn't really matter right now.
+
+00:02:30.660 --> 00:02:31.920
+JAKE ARCHIBALD: Really
+inconsistent use
+
+00:02:31.920 --> 00:02:33.420
+of semicolons in this slide.
+
+00:02:33.420 --> 00:02:34.020
+SURMA: I know.
+
+00:02:34.020 --> 00:02:34.695
+JAKE ARCHIBALD: It's very--
+
+00:02:34.695 --> 00:02:34.950
+SURMA: Actually.
+
+00:02:34.950 --> 00:02:36.832
+JAKE ARCHIBALD: --very
+much bothering me.
+
+00:02:36.832 --> 00:02:38.040
+SURMA: Only, I'm missing one.
+
+00:02:38.040 --> 00:02:39.082
+JAKE ARCHIBALD: One, two.
+
+00:02:39.082 --> 00:02:39.830
+SURMA: Oh.
+
+00:02:39.830 --> 00:02:40.800
+Fine.
+
+00:02:40.800 --> 00:02:42.140
+I'm missing two.
+
+00:02:42.140 --> 00:02:44.550
+JAKE ARCHIBALD: Oh, once
+they invented Prettier, like,
+
+00:02:44.550 --> 00:02:45.710
+half my skills are ruined.
+
+00:02:45.710 --> 00:02:46.070
+[INTERPOSING VOICES]
+
+00:02:46.070 --> 00:02:46.500
+SURMA: Legit.
+
+00:02:46.500 --> 00:02:46.760
+Same.
+
+00:02:46.760 --> 00:02:48.635
+I just didn't run it on
+this for some reason.
+
+00:02:48.635 --> 00:02:49.950
+I should have.
+
+00:02:49.950 --> 00:02:51.830
+And yeah, if you have
+like a new task button,
+
+00:02:51.830 --> 00:02:55.520
+you can add a click
+listener and call addTodo,
+
+00:02:55.520 --> 00:02:58.040
+because that's the benefit
+that comlink gives you.
+
+00:02:58.040 --> 00:02:58.290
+JAKE ARCHIBALD: Yep.
+
+00:02:58.290 --> 00:02:58.810
+OK.
+
+00:02:58.810 --> 00:02:59.660
+Got you.
+
+00:02:59.660 --> 00:03:01.160
+SURMA: So that's
+just so everybody's
+
+00:03:01.160 --> 00:03:03.790
+on the same page roughly how I
+imagine people using a worker.
+
+00:03:03.790 --> 00:03:05.560
+Like, let's you just write
+a class, it has your state.
+
+00:03:05.560 --> 00:03:06.920
+And you just call
+the methods on it.
+
+00:03:06.920 --> 00:03:08.300
+And suddenly, you
+have your logic
+
+00:03:08.300 --> 00:03:10.500
+of the main thread, which
+has loads of benefits,
+
+00:03:10.500 --> 00:03:11.460
+but I'm not going to go into.
+
+00:03:11.460 --> 00:03:12.360
+I wrote blog posts about them.
+
+00:03:12.360 --> 00:03:13.730
+We can link them
+in the description.
+
+00:03:13.730 --> 00:03:14.540
+More reads for me.
+
+00:03:14.540 --> 00:03:15.656
+JAKE ARCHIBALD: All right, yes.
+
+00:03:15.656 --> 00:03:15.992
+Cool.
+
+00:03:15.992 --> 00:03:17.409
+SURMA: But I want
+to take a closer
+
+00:03:17.409 --> 00:03:19.370
+look at this notify function.
+
+00:03:19.370 --> 00:03:22.190
+Because the fact that we
+are calling a function that
+
+00:03:22.190 --> 00:03:25.460
+is on the main thread while we
+are in the worker is actually--
+
+00:03:25.460 --> 00:03:27.740
+that's the core
+magic of comlink.
+
+00:03:27.740 --> 00:03:31.670
+And that is kind of
+comparable to this.
+
+00:03:31.670 --> 00:03:34.190
+You know there's more details
+happening under the hood.
+
+00:03:34.190 --> 00:03:35.780
+But really what
+comlink is doing,
+
+00:03:35.780 --> 00:03:38.900
+it just sends a
+message via postMessage
+
+00:03:38.900 --> 00:03:43.160
+to the other thread saying, you
+know what, invoke this function
+
+00:03:43.160 --> 00:03:45.770
+with these arguments and let me
+know what the return value is.
+
+00:03:45.770 --> 00:03:47.437
+JAKE ARCHIBALD: A lot
+of comlink is just
+
+00:03:47.437 --> 00:03:49.453
+knowing the thing
+that called it,
+
+00:03:49.453 --> 00:03:51.620
+where to send the reply
+back to and hooking that up.
+
+00:03:51.620 --> 00:03:52.245
+SURMA: Exactly.
+
+00:03:52.245 --> 00:03:55.550
+That's most of the
+core logic of comlink.
+
+00:03:55.550 --> 00:03:58.560
+What most people worry
+about, for some reason, is,
+
+00:03:58.560 --> 00:03:59.360
+is this slow?
+
+00:03:59.360 --> 00:04:03.167
+Or they actually have the
+assumption that this is slow.
+
+00:04:03.167 --> 00:04:05.000
+JAKE ARCHIBALD: Well,
+you're thread hopping.
+
+00:04:05.000 --> 00:04:06.172
+There's the serialization,
+the deserialization.
+
+00:04:06.172 --> 00:04:07.910
+SURMA: Something
+about serialization.
+
+00:04:07.910 --> 00:04:09.950
+But nobody really, I
+think, knows what they
+
+00:04:09.950 --> 00:04:11.630
+mean specifically [INAUDIBLE].
+
+00:04:11.630 --> 00:04:14.720
+So I thought I want to dig into
+this, and I want to measure it,
+
+00:04:14.720 --> 00:04:18.079
+and I want to see at what
+point we are actually
+
+00:04:18.079 --> 00:04:20.200
+entering a problem zone.
+
+00:04:20.200 --> 00:04:22.280
+So I looked at the spec.
+
+00:04:22.280 --> 00:04:25.350
+And I kept looking at the spec.
+
+00:04:25.350 --> 00:04:28.020
+And I was like, this
+is a bit overwhelming.
+
+00:04:28.020 --> 00:04:29.510
+JAKE ARCHIBALD:
+It's the HTML spec.
+
+00:04:29.510 --> 00:04:30.125
+I can tell by the colors.
+
+00:04:30.125 --> 00:04:30.770
+SURMA: Exactly.
+
+00:04:30.770 --> 00:04:31.910
+So I dug through it.
+
+00:04:31.910 --> 00:04:33.080
+I kind of get it now.
+
+00:04:33.080 --> 00:04:35.030
+But I'm going to, for the sake
+of this episode, I'm going to--
+
+00:04:35.030 --> 00:04:36.095
+JAKE ARCHIBALD: I didn't
+have time to read that.
+
+00:04:36.095 --> 00:04:37.220
+SURMA: I'm going to
+turn into pseudocode.
+
+00:04:37.220 --> 00:04:37.420
+JAKE ARCHIBALD: Oh.
+
+00:04:37.420 --> 00:04:38.393
+Well, ho, ho, ho.
+
+00:04:38.393 --> 00:04:40.520
+SURMA: That catches the spirit.
+
+00:04:40.520 --> 00:04:43.340
+So when you send
+call postMessage,
+
+00:04:43.340 --> 00:04:46.070
+the parameter is the message
+that you want to send.
+
+00:04:46.070 --> 00:04:48.402
+The target is kind of implicit.
+
+00:04:48.402 --> 00:04:50.360
+If it's worker to
+postMessage, you're obviously
+
+00:04:50.360 --> 00:04:50.945
+sending it to the worker.
+
+00:04:50.945 --> 00:04:51.230
+JAKE ARCHIBALD: To
+the worker, yes.
+
+00:04:51.230 --> 00:04:54.800
+SURMA: In the worker itself dot
+post message, which implicitly
+
+00:04:54.800 --> 00:04:57.740
+means the main thread that
+spawned you will receive
+
+00:04:57.740 --> 00:05:00.380
+the message, what is happening
+is the parameter, which I call
+
+00:05:00.380 --> 00:05:02.180
+data, yeah, the message
+you want to send,
+
+00:05:02.180 --> 00:05:06.080
+gets serialized with a function
+called structuredSerialize.
+
+00:05:06.080 --> 00:05:08.620
+The function is not real,
+at least not in the sense
+
+00:05:08.620 --> 00:05:09.860
+it's exposed to JavaScript.
+
+00:05:09.860 --> 00:05:10.970
+But it exists in the spec.
+
+00:05:10.970 --> 00:05:12.470
+JAKE ARCHIBALD: So
+I guess we should
+
+00:05:12.470 --> 00:05:14.270
+say that your to
+JSON function that we
+
+00:05:14.270 --> 00:05:16.527
+used before was returning
+an object, not a string.
+
+00:05:16.527 --> 00:05:17.360
+SURMA: Not a string.
+
+00:05:17.360 --> 00:05:18.670
+No, an object.
+
+00:05:18.670 --> 00:05:20.988
+It could also be a string,
+like, structuredSerialize
+
+00:05:20.988 --> 00:05:21.530
+doesn't care.
+
+00:05:21.530 --> 00:05:22.665
+JAKE ARCHIBALD: But it wasn't
+doing its own serialization.
+
+00:05:22.665 --> 00:05:23.110
+SURMA: No.
+
+00:05:23.110 --> 00:05:23.610
+Not really.
+
+00:05:23.610 --> 00:05:25.490
+So let's just turn it into a--
+
+00:05:25.490 --> 00:05:27.390
+JAKE ARCHIBALD: Adjacent
+compatible object.
+
+00:05:27.390 --> 00:05:27.890
+Right.
+
+00:05:27.890 --> 00:05:28.620
+I see.
+
+00:05:28.620 --> 00:05:30.537
+SURMA: So the structure
+of this will turn this
+
+00:05:30.537 --> 00:05:32.180
+into a serialized format.
+
+00:05:32.180 --> 00:05:35.810
+That serialized
+format is not specced.
+
+00:05:35.810 --> 00:05:41.810
+It's JavaScript engine internal.
+
+00:05:41.810 --> 00:05:44.960
+But it basically just means
+it is some form of binary
+
+00:05:44.960 --> 00:05:47.300
+representation that is not
+a [INAUDIBLE] object in this
+
+00:05:47.300 --> 00:05:50.690
+current state but encapsulates
+all the keys and values and all
+
+00:05:50.690 --> 00:05:51.250
+the things--
+
+00:05:51.250 --> 00:05:51.550
+JAKE ARCHIBALD: Right.
+
+00:05:51.550 --> 00:05:51.860
+SURMA: --that it
+needs to contain.
+
+00:05:51.860 --> 00:05:53.276
+JAKE ARCHIBALD: Excellent.
+
+00:05:53.276 --> 00:05:58.020
+SURMA: The next step is queue
+a task in the targetRealm.
+
+00:05:58.020 --> 00:06:00.440
+Now, the targetRealm
+is basically the thread
+
+00:06:00.440 --> 00:06:02.220
+that will receive the message.
+
+00:06:02.220 --> 00:06:04.790
+And we are now putting something
+into the Task queue that
+
+00:06:04.790 --> 00:06:07.380
+will run some code once
+that task gets [? scaled, ?]
+
+00:06:07.380 --> 00:06:08.880
+which we don't necessarily
+know when that's going to be.
+
+00:06:08.880 --> 00:06:09.680
+JAKE ARCHIBALD:
+And that's how it's
+
+00:06:09.680 --> 00:06:10.950
+going to schedule--
+because currently, you're
+
+00:06:10.950 --> 00:06:13.455
+in the HTML document, but
+it needs to be doing stuff
+
+00:06:13.455 --> 00:06:14.330
+on the worker thread.
+
+00:06:14.330 --> 00:06:15.530
+And this is how it
+gets onto that thread.
+
+00:06:15.530 --> 00:06:15.950
+SURMA: Exactly.
+
+00:06:15.950 --> 00:06:16.160
+JAKE ARCHIBALD: Right.
+
+00:06:16.160 --> 00:06:17.720
+SURMA: Now, the
+first step of that
+
+00:06:17.720 --> 00:06:20.450
+task is to turn that
+serialized data back
+
+00:06:20.450 --> 00:06:23.010
+into a new instance of data.
+
+00:06:23.010 --> 00:06:27.020
+So this is effectively a deep
+copy of our original message
+
+00:06:27.020 --> 00:06:27.860
+object.
+
+00:06:27.860 --> 00:06:30.380
+And this is kind of important
+because in JavaScript, you
+
+00:06:30.380 --> 00:06:31.290
+can't share objects.
+
+00:06:31.290 --> 00:06:33.170
+Like one of the basic
+assumptions of JavaScript is
+
+00:06:33.170 --> 00:06:34.420
+everything is single threaded.
+
+00:06:34.420 --> 00:06:38.510
+So there is no synchronized
+or parallel access
+
+00:06:38.510 --> 00:06:41.540
+of the same data object or
+same memory with JavaScript.
+
+00:06:41.540 --> 00:06:44.090
+So we can't just send
+the same object over.
+
+00:06:44.090 --> 00:06:46.100
+It has to be a copy.
+
+00:06:46.100 --> 00:06:48.200
+And these two steps is
+how that is achieved.
+
+00:06:48.200 --> 00:06:49.200
+JAKE ARCHIBALD: Got you.
+
+00:06:49.200 --> 00:06:51.335
+And this is different
+to JSON serialization.
+
+00:06:51.335 --> 00:06:52.710
+Because it supports
+more formats.
+
+00:06:52.710 --> 00:06:57.890
+SURMA: It handled stuff
+like cyclic data structures.
+
+00:06:57.890 --> 00:06:58.880
+It can do--
+
+00:06:58.880 --> 00:06:59.990
+JAKE ARCHIBALD: Blobs.
+
+00:06:59.990 --> 00:07:03.380
+SURMA: --blobs, maps,
+sets, array buffers,
+
+00:07:03.380 --> 00:07:06.680
+all these things
+that JSON cannot do.
+
+00:07:06.680 --> 00:07:08.630
+And then the last
+step here is basically
+
+00:07:08.630 --> 00:07:09.890
+dispatching the actual event.
+
+00:07:09.890 --> 00:07:13.260
+So at that point, your message
+event handler will get called,
+
+00:07:13.260 --> 00:07:16.857
+and it have the data object
+on the event object, which
+
+00:07:16.857 --> 00:07:17.690
+you can just access.
+
+00:07:17.690 --> 00:07:18.380
+And now you own it.
+
+00:07:18.380 --> 00:07:18.910
+And it's in your realm.
+
+00:07:18.910 --> 00:07:19.390
+And all is good.
+
+00:07:19.390 --> 00:07:19.800
+JAKE ARCHIBALD: Cool.
+
+00:07:19.800 --> 00:07:20.260
+Brilliant.
+
+00:07:20.260 --> 00:07:20.580
+Yes.
+
+00:07:20.580 --> 00:07:22.247
+SURMA: So this is how
+postMessage works.
+
+00:07:22.247 --> 00:07:23.780
+Now the interesting
+bit, of course,
+
+00:07:23.780 --> 00:07:26.220
+is structuredSerialize
+and structuredDeserialize,
+
+00:07:26.220 --> 00:07:30.800
+which are the functions that are
+most likely the expensive ones.
+
+00:07:30.800 --> 00:07:31.640
+JAKE ARCHIBALD: Yes.
+
+00:07:31.640 --> 00:07:32.190
+Of course.
+
+00:07:32.190 --> 00:07:34.010
+SURMA: But even more
+importantly, and something
+
+00:07:34.010 --> 00:07:35.802
+I didn't realize before
+I wrote my article,
+
+00:07:35.802 --> 00:07:38.900
+is that structuredSerialize
+is a function that
+
+00:07:38.900 --> 00:07:43.760
+will block the sending realm,
+while structuredDeserialize
+
+00:07:43.760 --> 00:07:46.472
+will block the receiving realm.
+
+00:07:46.472 --> 00:07:48.040
+JAKE ARCHIBALD: And I guess--
+
+00:07:48.040 --> 00:07:52.580
+OK, so for the serialized,
+that makes sense.
+
+00:07:52.580 --> 00:07:54.350
+Because it doesn't
+want to be doing that
+
+00:07:54.350 --> 00:07:55.892
+work while you're
+editing the object?
+
+00:07:55.892 --> 00:07:56.860
+SURMA: Right.
+
+00:07:56.860 --> 00:07:59.630
+Well, even with
+deserialize, it makes sense,
+
+00:07:59.630 --> 00:08:02.840
+because it is using the objects
+of your realm [INAUDIBLE]
+
+00:08:02.840 --> 00:08:04.020
+like the arrays and whatnot.
+
+00:08:04.020 --> 00:08:05.630
+So it can't really
+run those necessarily
+
+00:08:05.630 --> 00:08:06.940
+while your code
+is still running.
+
+00:08:06.940 --> 00:08:07.857
+JAKE ARCHIBALD: Right.
+
+00:08:07.857 --> 00:08:09.628
+So if you change,
+like, I don't know,
+
+00:08:09.628 --> 00:08:11.420
+the prototype or
+something halfway through,
+
+00:08:11.420 --> 00:08:13.310
+you wouldn't expect that to
+be reflected in [INAUDIBLE]
+
+00:08:13.310 --> 00:08:13.935
+SURMA: Exactly.
+
+00:08:13.935 --> 00:08:16.700
+JAKE ARCHIBALD: But this won't
+be calling stuff on the global,
+
+00:08:16.700 --> 00:08:18.020
+like the new array stuff.
+
+00:08:18.020 --> 00:08:18.530
+SURMA: No, not sure.
+
+00:08:18.530 --> 00:08:20.330
+JAKE ARCHIBALD: I feel
+like that could be--
+
+00:08:20.330 --> 00:08:20.450
+[INTERPOSING VOICES]
+
+00:08:20.450 --> 00:08:22.640
+SURMA: I think I've heard they
+have considered doing that.
+
+00:08:22.640 --> 00:08:24.348
+But as now at least,
+it is not currently.
+
+00:08:24.348 --> 00:08:26.150
+It will block the
+receiving realm.
+
+00:08:26.150 --> 00:08:26.400
+JAKE ARCHIBALD: Gotcha.
+
+00:08:26.400 --> 00:08:27.983
+SURMA: So that's
+actually interesting,
+
+00:08:27.983 --> 00:08:32.330
+because it means so far
+I've always been measuring--
+
+00:08:32.330 --> 00:08:36.169
+or I keep measuring that moment
+from when I start sending
+
+00:08:36.169 --> 00:08:37.919
+an object to when I receive it.
+
+00:08:37.919 --> 00:08:40.770
+But the number I get out
+is actually two parts.
+
+00:08:40.770 --> 00:08:44.179
+It's one part is the serializing
+and one part is deserializing,
+
+00:08:44.179 --> 00:08:46.590
+which are happening
+in different realms.
+
+00:08:46.590 --> 00:08:48.590
+And so I would like to
+measure them separately,
+
+00:08:48.590 --> 00:08:49.890
+but I haven't found a
+good way to do that.
+
+00:08:49.890 --> 00:08:51.590
+So I'm still measuring
+that in my benchmark
+
+00:08:51.590 --> 00:08:52.770
+that we're going to talk about.
+
+00:08:52.770 --> 00:08:54.650
+But just something to keep
+in mind that the numbers
+
+00:08:54.650 --> 00:08:56.510
+that we are going to
+talk about while I
+
+00:08:56.510 --> 00:08:58.322
+do the dreaded microbenchmark.
+
+00:08:58.322 --> 00:08:59.280
+JAKE ARCHIBALD: Oh, no.
+
+00:08:59.280 --> 00:08:59.780
+OK.
+
+00:08:59.780 --> 00:09:02.300
+SURMA: And these
+numbers will represent
+
+00:09:02.300 --> 00:09:05.780
+the sum of serialization
+and deserialization.
+
+00:09:05.780 --> 00:09:07.700
+So the actual cost
+on each thread
+
+00:09:07.700 --> 00:09:09.730
+will be something
+lower than that number.
+
+00:09:09.730 --> 00:09:13.000
+JAKE ARCHIBALD: So how you are
+measuring that is basically
+
+00:09:13.000 --> 00:09:15.275
+you make a marker just before
+you call a postMessage.
+
+00:09:15.275 --> 00:09:16.400
+And it's at the other end--
+
+00:09:16.400 --> 00:09:17.040
+SURMA: More or less.
+
+00:09:17.040 --> 00:09:19.040
+JAKE ARCHIBALD: --when you,
+OK, you've got the message.
+
+00:09:19.040 --> 00:09:21.230
+SURMA: Pretty much,
+that's what I'm measuring.
+
+00:09:21.230 --> 00:09:24.950
+I decided to do that because
+I found a couple of ways
+
+00:09:24.950 --> 00:09:27.860
+how to maybe measure just
+deserialize in isolation.
+
+00:09:27.860 --> 00:09:30.770
+I found no way to just measure
+serialize in isolation.
+
+00:09:30.770 --> 00:09:32.540
+But I could only
+figure out these ways,
+
+00:09:32.540 --> 00:09:34.340
+use these ways in
+Chrome and Safari.
+
+00:09:34.340 --> 00:09:36.900
+So I wouldn't have been
+able to do Firefox.
+
+00:09:36.900 --> 00:09:39.442
+And so I thought the end-to-end
+test gives me an upper bound.
+
+00:09:39.442 --> 00:09:41.567
+JAKE ARCHIBALD: Wouldn't
+either side of postMessage
+
+00:09:41.567 --> 00:09:43.145
+give you the serialized time?
+
+00:09:43.145 --> 00:09:45.220
+SURMA: Not sure.
+
+00:09:45.220 --> 00:09:46.143
+Maybe.
+
+00:09:46.143 --> 00:09:47.060
+JAKE ARCHIBALD: Maybe.
+
+00:09:47.060 --> 00:09:48.777
+It might add other
+stuff as well.
+
+00:09:48.777 --> 00:09:50.360
+SURMA: So I'd rather
+do end-to-end, so
+
+00:09:50.360 --> 00:09:51.568
+like this is the upper bound.
+
+00:09:51.568 --> 00:09:53.850
+Like, it will definitely be
+less expensive than this.
+
+00:09:53.850 --> 00:09:56.513
+So it gives you a worst case to
+reason about, which I think--
+
+00:09:56.513 --> 00:09:57.680
+JAKE ARCHIBALD: Makes sense.
+
+00:09:57.680 --> 00:09:59.750
+SURMA: --is probably better if
+we're talking about resilience
+
+00:09:59.750 --> 00:10:00.930
+and similar issues.
+
+00:10:00.930 --> 00:10:03.470
+The first thing that
+I wanted to find out
+
+00:10:03.470 --> 00:10:05.040
+is not necessarily
+get hard numbers,
+
+00:10:05.040 --> 00:10:08.750
+but just figure out
+what shape of a message
+
+00:10:08.750 --> 00:10:10.490
+will make postMessage slow.
+
+00:10:10.490 --> 00:10:14.000
+Is it just really complex
+objects with lots of notes?
+
+00:10:14.000 --> 00:10:17.000
+Or can it also be a very simple
+object with very big strings
+
+00:10:17.000 --> 00:10:18.320
+as values?
+
+00:10:18.320 --> 00:10:20.570
+And so what I did is basically
+I wrote a function that
+
+00:10:20.570 --> 00:10:24.410
+generates very different
+objects with sometimes very
+
+00:10:24.410 --> 00:10:28.640
+small with long, long keys
+between like 2 to 4 kilobytes,
+
+00:10:28.640 --> 00:10:32.600
+and sometimes very
+complex graphs of objects
+
+00:10:32.600 --> 00:10:35.240
+with just very short keys
+and short values, something
+
+00:10:35.240 --> 00:10:35.990
+along those lines.
+
+00:10:35.990 --> 00:10:37.698
+JAKE ARCHIBALD: It
+feels like [INAUDIBLE]
+
+00:10:37.698 --> 00:10:40.207
+would be more
+effort because it's
+
+00:10:40.207 --> 00:10:42.540
+going to spin around [? the ?]
+serialized function more.
+
+00:10:42.540 --> 00:10:44.165
+SURMA: Because when
+you think about it,
+
+00:10:44.165 --> 00:10:46.790
+both functions will
+have to somehow traverse
+
+00:10:46.790 --> 00:10:48.090
+the entire object.
+
+00:10:48.090 --> 00:10:51.530
+So my hunch was as well that
+simple object with longer
+
+00:10:51.530 --> 00:10:54.718
+values would be faster to
+copy than complex objects
+
+00:10:54.718 --> 00:10:55.760
+with simpler [INAUDIBLE].
+
+00:10:55.760 --> 00:10:59.693
+Turns out, it's actually fairly
+linear with this serialized--
+
+00:10:59.693 --> 00:11:00.860
+JAKE ARCHIBALD: Oh, hang on.
+
+00:11:00.860 --> 00:11:01.430
+SURMA: --payload side.
+
+00:11:01.430 --> 00:11:02.513
+So if you have an object--
+
+00:11:02.513 --> 00:11:04.363
+JAKE ARCHIBALD:
+Like a kind of wave.
+
+00:11:04.363 --> 00:11:05.030
+What's going on?
+
+00:11:05.030 --> 00:11:05.770
+SURMA: All right.
+
+00:11:05.770 --> 00:11:06.690
+I'm about to explain that.
+
+00:11:06.690 --> 00:11:07.982
+JAKE ARCHIBALD: Explain it now.
+
+00:11:07.982 --> 00:11:12.010
+SURMA: So if you basically
+JSON stringify your payload
+
+00:11:12.010 --> 00:11:17.000
+and look at the length
+of that string as a size,
+
+00:11:17.000 --> 00:11:19.340
+that's a very, very
+strong indicator
+
+00:11:19.340 --> 00:11:20.530
+for how long it's going to--
+
+00:11:20.530 --> 00:11:20.900
+JAKE ARCHIBALD: Really?
+
+00:11:20.900 --> 00:11:22.220
+So even just like if
+it's a thing which just
+
+00:11:22.220 --> 00:11:23.060
+one massive string?
+
+00:11:23.060 --> 00:11:23.560
+SURMA: Yes.
+
+00:11:23.560 --> 00:11:26.490
+Even long strings take a
+long time to copy, it seems.
+
+00:11:26.490 --> 00:11:28.240
+Or the other way around,
+it's just as fast
+
+00:11:28.240 --> 00:11:31.500
+to copy a complex object and
+a simple object if same size.
+
+00:11:31.500 --> 00:11:32.370
+JAKE ARCHIBALD: Oh, hang
+on, what're we talking--
+
+00:11:32.370 --> 00:11:32.870
+Go ahead.
+
+00:11:32.870 --> 00:11:34.970
+SURMA: So keep in
+mind, both scales
+
+00:11:34.970 --> 00:11:36.940
+are logarithmic
+because otherwise--
+
+00:11:36.940 --> 00:11:38.440
+JAKE ARCHIBALD: Of
+course, they are.
+
+00:11:38.440 --> 00:11:42.730
+SURMA: And so this correlation
+kind of holds mathematically
+
+00:11:42.730 --> 00:11:45.650
+but only really for
+objects above 10 kilobytes.
+
+00:11:45.650 --> 00:11:48.150
+Because if you look at it, you
+can see it's curving inwards.
+
+00:11:48.150 --> 00:11:49.590
+There's a couple of outliers.
+
+00:11:49.590 --> 00:11:51.080
+And that's for a
+couple of reasons.
+
+00:11:51.080 --> 00:11:53.500
+One is that we still have
+reduced precision timers
+
+00:11:53.500 --> 00:11:54.730
+due to spectral meltdown.
+
+00:11:54.730 --> 00:11:58.490
+We also even add some
+jitter to the timing
+
+00:11:58.490 --> 00:12:01.450
+to make it less useful
+for these high precision
+
+00:12:01.450 --> 00:12:02.967
+timing attacks
+that were involved.
+
+00:12:02.967 --> 00:12:04.050
+JAKE ARCHIBALD: Of course.
+
+00:12:04.050 --> 00:12:05.560
+SURMA: But also,
+at the lower end,
+
+00:12:05.560 --> 00:12:09.220
+just some weird fluctuations
+and static overhead
+
+00:12:09.220 --> 00:12:11.262
+just skews the numbers more.
+
+00:12:11.262 --> 00:12:12.220
+JAKE ARCHIBALD: Gotcha.
+
+00:12:12.220 --> 00:12:14.140
+SURMA: So this was
+run on my MacBook
+
+00:12:14.140 --> 00:12:16.480
+Pro, where it
+ended up with about
+
+00:12:16.480 --> 00:12:18.820
+5 microseconds per kilobytes.
+
+00:12:18.820 --> 00:12:20.400
+This number is
+not really useful.
+
+00:12:20.400 --> 00:12:22.545
+It will be different
+on any other device.
+
+00:12:22.545 --> 00:12:24.295
+It's not something
+that's worth measuring.
+
+00:12:24.295 --> 00:12:26.460
+JAKE ARCHIBALD: Because you're
+targeting a low end phone,
+
+00:12:26.460 --> 00:12:26.890
+and you're--
+
+00:12:26.890 --> 00:12:27.432
+SURMA: Right.
+
+00:12:27.432 --> 00:12:29.417
+So I definitely don't
+measure these numbers
+
+00:12:29.417 --> 00:12:30.500
+and make decisions off it.
+
+00:12:30.500 --> 00:12:32.970
+I just found it interesting
+to see which kind scale we
+
+00:12:32.970 --> 00:12:33.970
+are talking.
+
+00:12:33.970 --> 00:12:35.220
+So that's why I do what I did.
+
+00:12:35.220 --> 00:12:37.540
+So now that I knew,
+basically, it doesn't matter.
+
+00:12:37.540 --> 00:12:40.480
+Just the stringified
+size is a good indicator
+
+00:12:40.480 --> 00:12:41.730
+of how long it works.
+
+00:12:41.730 --> 00:12:43.960
+I just want to use that
+across a couple of devices
+
+00:12:43.960 --> 00:12:48.340
+and see at what point do we
+run into trouble in terms
+
+00:12:48.340 --> 00:12:49.498
+of [? rail ?] budgets.
+
+00:12:49.498 --> 00:12:50.290
+JAKE ARCHIBALD: OK.
+
+00:12:50.290 --> 00:12:52.290
+So we're talking when it starts
+getting over 16 milliseconds.
+
+00:12:52.290 --> 00:12:53.050
+SURMA: For example.
+
+00:12:53.050 --> 00:12:53.320
+So yeah.
+
+00:12:53.320 --> 00:12:54.487
+That's basically what I did.
+
+00:12:54.487 --> 00:12:57.550
+I started on my
+MacBook in Chrome,
+
+00:12:57.550 --> 00:13:00.442
+did 1,000 runs for each
+constellation year,
+
+00:13:00.442 --> 00:13:01.900
+and basically wanted
+to see at what
+
+00:13:01.900 --> 00:13:03.952
+point do we run into
+[? rail ?] budget problems.
+
+00:13:03.952 --> 00:13:05.410
+So basically what
+we're looking for
+
+00:13:05.410 --> 00:13:08.590
+is numbers around or bigger
+than 16 milliseconds.
+
+00:13:08.590 --> 00:13:10.840
+So if we look at this over
+here, the green area, which
+
+00:13:10.840 --> 00:13:12.400
+means anything
+between 100 kilobytes
+
+00:13:12.400 --> 00:13:14.590
+and 1 megabyte of
+payload size, that's
+
+00:13:14.590 --> 00:13:19.390
+where on a MacBook Pro in
+Chrome we are in trouble zone.
+
+00:13:19.390 --> 00:13:21.615
+Everything lower than that,
+we're absolutely fine.
+
+00:13:21.615 --> 00:13:22.240
+We won't risk--
+
+00:13:22.240 --> 00:13:25.090
+JAKE ARCHIBALD: So when you say
+payload, what's the units here?
+
+00:13:25.090 --> 00:13:27.173
+It's not just like free
+objects [INAUDIBLE] right?
+
+00:13:27.173 --> 00:13:29.710
+SURMA: Actually it's like
+every node, on breadth,
+
+00:13:29.710 --> 00:13:33.242
+every node has three values
+or four values or five values.
+
+00:13:33.242 --> 00:13:34.700
+And the depth is
+how deep do we go.
+
+00:13:34.700 --> 00:13:37.538
+So how complex is the tree
+that I'm building here?
+
+00:13:37.538 --> 00:13:39.080
+I have more examples
+on my blog post.
+
+00:13:39.080 --> 00:13:40.622
+But basically what
+we're just looking
+
+00:13:40.622 --> 00:13:44.260
+at is, because we know
+now that object size is
+
+00:13:44.260 --> 00:13:46.815
+a good indicator, we just
+look at the colors really.
+
+00:13:46.815 --> 00:13:47.940
+JAKE ARCHIBALD: So hang on.
+
+00:13:47.940 --> 00:13:49.410
+So 6, 6, are we talking 36?
+
+00:13:49.410 --> 00:13:50.035
+What's the--
+
+00:13:50.035 --> 00:13:51.128
+SURMA: 6 to the sixth.
+
+00:13:51.128 --> 00:13:52.420
+JAKE ARCHIBALD: 6 to the sixth.
+
+00:13:52.420 --> 00:13:52.780
+Of course.
+
+00:13:52.780 --> 00:13:53.080
+Of course.
+
+00:13:53.080 --> 00:13:53.720
+Of course.
+
+00:13:53.720 --> 00:13:54.610
+[INTERPOSING VOICES]
+
+00:13:54.610 --> 00:13:55.150
+JAKE ARCHIBALD: --big object.
+
+00:13:55.150 --> 00:13:55.450
+SURMA: Yeah.
+
+00:13:55.450 --> 00:13:55.690
+[INTERPOSING VOICES]
+
+00:13:55.690 --> 00:13:58.170
+SURMA: That's why we end
+up with like 10 megabytes.
+
+00:13:58.170 --> 00:14:01.240
+And I think each leaf key
+is a 2 kilobyte string.
+
+00:14:01.240 --> 00:14:03.120
+So it adds up to a lot of data.
+
+00:14:03.120 --> 00:14:04.120
+JAKE ARCHIBALD: Got you.
+
+00:14:04.120 --> 00:14:04.450
+Right.
+
+00:14:04.450 --> 00:14:04.950
+OK.
+
+00:14:04.950 --> 00:14:05.630
+I'm following.
+
+00:14:05.630 --> 00:14:07.630
+SURMA: And we can see for
+[INAUDIBLE] megabytes,
+
+00:14:07.630 --> 00:14:09.460
+we're blocking for 74
+milliseconds, which
+
+00:14:09.460 --> 00:14:10.250
+is quite a lot.
+
+00:14:10.250 --> 00:14:12.790
+And if we have animations
+running, that will be too much.
+
+00:14:12.790 --> 00:14:13.940
+JAKE ARCHIBALD: 47?
+
+00:14:13.940 --> 00:14:15.208
+SURMA: 47 milliseconds.
+
+00:14:15.208 --> 00:14:16.625
+JAKE ARCHIBALD:
+You said 74, mate.
+
+00:14:16.625 --> 00:14:17.493
+SURMA: German.
+
+00:14:17.493 --> 00:14:19.660
+JAKE ARCHIBALD: Is that how
+numbers work in Germany?
+
+00:14:19.660 --> 00:14:20.080
+SURMA: Yes.
+
+00:14:20.080 --> 00:14:21.080
+JAKE ARCHIBALD: Amazing.
+
+00:14:21.080 --> 00:14:22.020
+I did not know.
+
+00:14:22.020 --> 00:14:26.130
+SURMA: So 32 in German
+is [SPEAKING GERMAN]
+
+00:14:26.130 --> 00:14:28.128
+JAKE ARCHIBALD: Oh, right.
+
+00:14:28.128 --> 00:14:29.420
+I thought you were just joking.
+
+00:14:29.420 --> 00:14:29.950
+SURMA: No.
+
+00:14:29.950 --> 00:14:30.450
+It's legit.
+
+00:14:30.450 --> 00:14:33.340
+I still, like after four years
+here, it still screws me up.
+
+00:14:33.340 --> 00:14:35.560
+JAKE ARCHIBALD: Yeah,
+three and 20, isn't it?
+
+00:14:35.560 --> 00:14:36.100
+SURMA: I don't know why.
+
+00:14:36.100 --> 00:14:38.225
+Like, everything else in
+German is logical, mostly.
+
+00:14:38.225 --> 00:14:40.520
+JAKE ARCHIBALD: So it's take
+seven and 40 milliseconds.
+
+00:14:40.520 --> 00:14:41.560
+SURMA: Yes.
+
+00:14:41.560 --> 00:14:43.480
+Exactly 47.
+
+00:14:43.480 --> 00:14:44.970
+But anything below
+hard kilobytes,
+
+00:14:44.970 --> 00:14:46.730
+we will be absolutely fine.
+
+00:14:46.730 --> 00:14:48.850
+We won't block the
+main thread too long
+
+00:14:48.850 --> 00:14:50.710
+to make our animations jank.
+
+00:14:50.710 --> 00:14:53.298
+However, and this is
+the most important bit,
+
+00:14:53.298 --> 00:14:54.340
+this is on a MacBook Pro.
+
+00:14:54.340 --> 00:14:57.340
+Like, this is not representative
+of the average device,
+
+00:14:57.340 --> 00:14:57.840
+especially--
+
+00:14:57.840 --> 00:15:00.173
+JAKE ARCHIBALD: Oh, so this
+is going to [INAUDIBLE] when
+
+00:15:00.173 --> 00:15:02.350
+you're on a phone, because
+our danger zone is much--
+
+00:15:02.350 --> 00:15:03.880
+SURMA: I ran it on a Nokia 2.
+
+00:15:03.880 --> 00:15:05.530
+So it's actually
+pretty representative
+
+00:15:05.530 --> 00:15:09.580
+of the 50th percentile
+device across the world.
+
+00:15:09.580 --> 00:15:11.050
+So it's pretty
+much in the middle,
+
+00:15:11.050 --> 00:15:15.162
+despite the hardware being
+stuck in 2014, roughly speaking.
+
+00:15:15.162 --> 00:15:16.120
+JAKE ARCHIBALD: Whoa-ho
+
+00:15:16.120 --> 00:15:16.350
+SURMA: [INAUDIBLE]
+
+00:15:16.350 --> 00:15:17.160
+JAKE ARCHIBALD: Look at that.
+
+00:15:17.160 --> 00:15:18.250
+Those circles got bigger.
+
+00:15:18.250 --> 00:15:18.750
+SURMA: Yeah.
+
+00:15:18.750 --> 00:15:23.210
+So if we now look for numbers
+around the 16 millisecond mark,
+
+00:15:23.210 --> 00:15:25.810
+we can now see
+that to be safe, we
+
+00:15:25.810 --> 00:15:30.080
+can't go much bigger
+than 10 kilobytes.
+
+00:15:30.080 --> 00:15:32.590
+This here, we have a 12 up
+here, which might [INAUDIBLE]
+
+00:15:32.590 --> 00:15:33.510
+JAKE ARCHIBALD: OK, 12 is--
+
+00:15:33.510 --> 00:15:35.677
+SURMA: But if we look at
+the transition between blue
+
+00:15:35.677 --> 00:15:37.267
+and turquoise,
+that's between here.
+
+00:15:37.267 --> 00:15:39.100
+So we can't go much
+bigger than 10 kilobytes
+
+00:15:39.100 --> 00:15:41.008
+without risking our
+[? rail ?] budget.
+
+00:15:41.008 --> 00:15:42.550
+JAKE ARCHIBALD: But
+the real boundary
+
+00:15:42.550 --> 00:15:44.495
+hasn't shifted that
+much, it feels like.
+
+00:15:44.495 --> 00:15:45.370
+SURMA: Not that much.
+
+00:15:45.370 --> 00:15:46.840
+JAKE ARCHIBALD: Like, this
+number has got bigger.
+
+00:15:46.840 --> 00:15:47.110
+SURMA: Right.
+
+00:15:47.110 --> 00:15:49.065
+But if you send 10
+megabytes, you're bonkers.
+
+00:15:49.065 --> 00:15:49.630
+JAKE ARCHIBALD: Yes.
+
+00:15:49.630 --> 00:15:50.710
+It's going to take a long time.
+
+00:15:50.710 --> 00:15:52.293
+It's going to take
+over half a second.
+
+00:15:52.293 --> 00:15:53.260
+But generally, it's OK.
+
+00:15:53.260 --> 00:15:55.468
+SURMA: And that, actually
+would make me really happy.
+
+00:15:55.468 --> 00:15:58.100
+Because I feel like if you
+have animations running,
+
+00:15:58.100 --> 00:15:59.740
+you're limited to 10 kilobytes.
+
+00:15:59.740 --> 00:16:01.495
+Actually 10 kilobytes
+is quite a lot.
+
+00:16:01.495 --> 00:16:03.370
+You can put a lot of
+stuff into 10 kilobytes.
+
+00:16:03.370 --> 00:16:03.520
+JAKE ARCHIBALD: Yeah.
+
+00:16:03.520 --> 00:16:06.220
+If you're just shifting around
+Booleans and numbers, which--
+
+00:16:06.220 --> 00:16:10.580
+SURMA: That being said,
+do you remember this game
+
+00:16:10.580 --> 00:16:11.210
+that we built?
+
+00:16:11.210 --> 00:16:12.170
+JAKE ARCHIBALD: Oh, my word.
+
+00:16:12.170 --> 00:16:12.700
+It's "PROXX."
+
+00:16:12.700 --> 00:16:13.200
+SURMA: Yeah.
+
+00:16:13.200 --> 00:16:15.735
+So because this is the
+maximum possible field--
+
+00:16:15.735 --> 00:16:17.360
+[INAUDIBLE] actually
+fit on the screen.
+
+00:16:17.360 --> 00:16:18.377
+It's 40 by 40.
+
+00:16:18.377 --> 00:16:20.210
+That's the biggest field
+we currently allow.
+
+00:16:20.210 --> 00:16:22.860
+So it's 1,600 cells.
+
+00:16:22.860 --> 00:16:27.640
+And each of these cells has
+a couple of flags to store.
+
+00:16:27.640 --> 00:16:30.198
+And [INAUDIBLE] these
+that we have in the code.
+
+00:16:30.198 --> 00:16:31.490
+JAKE ARCHIBALD: Yes, of course.
+
+00:16:31.490 --> 00:16:33.323
+SURMA: And that is
+basically our game state.
+
+00:16:33.323 --> 00:16:35.570
+Like, we have this 40 by
+40 two-dimensional array.
+
+00:16:35.570 --> 00:16:37.940
+And each cell has this
+data stored in it.
+
+00:16:37.940 --> 00:16:40.010
+So we know what the
+game field looks like.
+
+00:16:40.010 --> 00:16:43.640
+Now, it turns out that that JSON
+stringified actually adds up
+
+00:16:43.640 --> 00:16:46.940
+to about 130 kilobytes of JSON.
+
+00:16:46.940 --> 00:16:49.340
+So we are way too big to
+send the entire state over.
+
+00:16:49.340 --> 00:16:50.720
+JAKE ARCHIBALD: Yes, it is.
+
+00:16:50.720 --> 00:16:53.660
+And I would say that
+we're being somewhat--
+
+00:16:53.660 --> 00:16:56.475
+like we're not lazy, but like--
+
+00:16:56.475 --> 00:16:58.350
+SURMA: We could just
+have one array per cell,
+
+00:16:58.350 --> 00:16:59.090
+for example, or something.
+
+00:16:59.090 --> 00:16:59.965
+JAKE ARCHIBALD: Yeah.
+
+00:16:59.965 --> 00:17:01.150
+It could be an array buffer.
+
+00:17:01.150 --> 00:17:03.535
+Because yeah, what
+about like 32--
+
+00:17:03.535 --> 00:17:05.660
+well, how many bits of
+information do we need here?
+
+00:17:05.660 --> 00:17:06.993
+I mean, maybe 32 would be fine.
+
+00:17:06.993 --> 00:17:08.660
+I mean, because like
+the touching mines,
+
+00:17:08.660 --> 00:17:09.819
+touching flags only
+goes up to eight.
+
+00:17:09.819 --> 00:17:11.319
+SURMA: Yeah, essentially 3 bits.
+
+00:17:11.319 --> 00:17:11.960
+JAKE ARCHIBALD: Is 3 bits.
+
+00:17:11.960 --> 00:17:12.835
+And then you've got--
+
+00:17:12.835 --> 00:17:13.609
+SURMA: 9 bits.
+
+00:17:13.609 --> 00:17:14.540
+We need 9 bits.
+
+00:17:14.540 --> 00:17:15.079
+JAKE ARCHIBALD: 9 bits, right.
+
+00:17:15.079 --> 00:17:15.380
+OK.
+
+00:17:15.380 --> 00:17:16.760
+So this could just
+be an array buffer.
+
+00:17:16.760 --> 00:17:17.650
+It doesn't need to be--
+
+00:17:17.650 --> 00:17:18.500
+SURMA: Or one number.
+
+00:17:18.500 --> 00:17:19.917
+JAKE ARCHIBALD:
+--two-dimensional,
+
+00:17:19.917 --> 00:17:22.310
+because we as long as
+we know the width--
+
+00:17:22.310 --> 00:17:25.160
+SURMA: That being said, we
+ended up noticing that we take--
+
+00:17:25.160 --> 00:17:26.119
+at the start, we
+would just send--
+
+00:17:26.119 --> 00:17:27.577
+whenever somebody
+tapped something,
+
+00:17:27.577 --> 00:17:30.410
+we have to send the updated
+state to the main thread
+
+00:17:30.410 --> 00:17:31.477
+so we can re-render.
+
+00:17:31.477 --> 00:17:33.560
+Turns out that took too
+long on the low end fonts.
+
+00:17:33.560 --> 00:17:34.790
+Like, we couldn't do
+it and we knew it.
+
+00:17:34.790 --> 00:17:34.960
+JAKE ARCHIBALD:
+Yeah, that's true.
+
+00:17:34.960 --> 00:17:37.430
+SURMA: So on the Performance
+panel in DevTools,
+
+00:17:37.430 --> 00:17:38.930
+that was too long.
+
+00:17:38.930 --> 00:17:42.863
+And now, what we did
+is something else.
+
+00:17:42.863 --> 00:17:44.280
+Now, this is,
+again, a game field.
+
+00:17:44.280 --> 00:17:45.920
+But we said that
+we would, instead
+
+00:17:45.920 --> 00:17:49.040
+of sending the entire
+state, we are sending
+
+00:17:49.040 --> 00:17:51.680
+only the fields that changed.
+
+00:17:51.680 --> 00:17:53.318
+So we basically did a diff.
+
+00:17:53.318 --> 00:17:54.860
+And that's kind of
+cool, because that
+
+00:17:54.860 --> 00:17:57.250
+means the amount
+that we have to send
+
+00:17:57.250 --> 00:17:59.440
+is not proportionate to
+the game state anymore,
+
+00:17:59.440 --> 00:18:01.100
+but only to the
+amount of changes
+
+00:18:01.100 --> 00:18:03.050
+that we do to the game state.
+
+00:18:03.050 --> 00:18:04.800
+Now even that, in
+some situations,
+
+00:18:04.800 --> 00:18:07.880
+especially on the first click,
+could add up to a lot of data.
+
+00:18:07.880 --> 00:18:08.570
+JAKE ARCHIBALD: Because
+you end up with a big
+
+00:18:08.570 --> 00:18:09.620
+reveal at the start.
+
+00:18:09.620 --> 00:18:11.370
+SURMA: So that could
+add up to, in theory,
+
+00:18:11.370 --> 00:18:13.070
+something about 70
+kilobytes, if we
+
+00:18:13.070 --> 00:18:14.900
+assume that like
+80% of a field gets
+
+00:18:14.900 --> 00:18:16.220
+revealed, which is unlikely.
+
+00:18:16.220 --> 00:18:17.690
+But assume the worst case here.
+
+00:18:17.690 --> 00:18:19.110
+So we did another thing.
+
+00:18:19.110 --> 00:18:20.630
+And that's actually the
+thing I want to talk about
+
+00:18:20.630 --> 00:18:21.490
+because I find it really smart.
+
+00:18:21.490 --> 00:18:22.400
+JAKE ARCHIBALD: We've
+gotten to the thing
+
+00:18:22.400 --> 00:18:23.358
+you want to talk about.
+
+00:18:23.358 --> 00:18:25.370
+Mate, we have been
+recording for quite a while.
+
+00:18:25.370 --> 00:18:26.180
+[LAUGHTER]
+
+00:18:26.180 --> 00:18:28.717
+And now, we get to the
+meat of the episode, right.
+
+00:18:28.717 --> 00:18:30.300
+SURMA: So when
+somebody taps a fields,
+
+00:18:30.300 --> 00:18:32.173
+our game logic
+basically traverses
+
+00:18:32.173 --> 00:18:33.590
+through the game
+field and figures
+
+00:18:33.590 --> 00:18:37.040
+out which fields need
+to change the state.
+
+00:18:37.040 --> 00:18:38.660
+And we record these
+changes because we
+
+00:18:38.660 --> 00:18:39.910
+want to send over the changes.
+
+00:18:39.910 --> 00:18:42.560
+But whenever we have
+found 10 changes or more--
+
+00:18:42.560 --> 00:18:44.560
+JAKE ARCHIBALD: Which we
+just like, 10, why not?
+
+00:18:44.560 --> 00:18:45.352
+SURMA: Pretty much.
+
+00:18:45.352 --> 00:18:47.480
+That's the number we
+pulled out of thin air.
+
+00:18:47.480 --> 00:18:50.205
+We send those 10 changes
+immediately so the main thread
+
+00:18:50.205 --> 00:18:51.830
+and can start rendering
+and doing stuff
+
+00:18:51.830 --> 00:18:53.710
+while the worker keeps
+going and keeps traversing.
+
+00:18:53.710 --> 00:18:54.630
+JAKE ARCHIBALD:
+Because it's not just
+
+00:18:54.630 --> 00:18:56.118
+the serialize and
+deserialize cost.
+
+00:18:56.118 --> 00:18:58.160
+It's the cost of just
+scrolling the grid as well.
+
+00:18:58.160 --> 00:18:59.120
+SURMA: Exactly.
+
+00:18:59.120 --> 00:19:01.760
+And then we realized
+that the way
+
+00:19:01.760 --> 00:19:04.880
+we wrote that algorithm to
+traverse the fields actually
+
+00:19:04.880 --> 00:19:05.880
+looks really nice.
+
+00:19:05.880 --> 00:19:08.990
+So on slow phones, which
+I have a recording here,
+
+00:19:08.990 --> 00:19:11.640
+it looks like a really
+nice reveal animation,
+
+00:19:11.640 --> 00:19:14.060
+even though on bigger
+device this will be instant.
+
+00:19:14.060 --> 00:19:15.180
+Like, this is animation,
+so it's able--
+
+00:19:15.180 --> 00:19:17.250
+so it will just be
+[POP NOISE] there immediately.
+
+00:19:17.250 --> 00:19:20.210
+But on slower devices, you
+will get a nice animation.
+
+00:19:20.210 --> 00:19:23.360
+And this is how we made this
+huge state object actually
+
+00:19:23.360 --> 00:19:26.870
+work on the lowest
+of low end devices.
+
+00:19:26.870 --> 00:19:28.830
+I was very proud of
+us for doing that.
+
+00:19:28.830 --> 00:19:30.247
+JAKE ARCHIBALD:
+To the point where
+
+00:19:30.247 --> 00:19:32.928
+when we found this, when
+we saw this happening,
+
+00:19:32.928 --> 00:19:35.220
+we made it happen on desktop
+as well, just artificially
+
+00:19:35.220 --> 00:19:36.160
+with our animation delays.
+
+00:19:36.160 --> 00:19:38.125
+SURMA: Yeah, [INAUDIBLE]
+desktop to get this animation.
+
+00:19:38.125 --> 00:19:40.190
+JAKE ARCHIBALD: Because
+it was the second pass
+
+00:19:40.190 --> 00:19:41.150
+of this algorithm.
+
+00:19:41.150 --> 00:19:43.910
+Because the first time
+we were doing depth first
+
+00:19:43.910 --> 00:19:45.410
+and we ran into stack problems.
+
+00:19:45.410 --> 00:19:46.850
+And then so we switched
+to be queue based.
+
+00:19:46.850 --> 00:19:48.683
+And that's when we ended
+up with [INAUDIBLE]
+
+00:19:48.683 --> 00:19:53.180
+SURMA: The point is
+that imagine you're
+
+00:19:53.180 --> 00:19:56.230
+[INAUDIBLE] the worker, there's
+so many little tricks you can
+
+00:19:56.230 --> 00:19:59.800
+do without bending over
+backwards that I think
+
+00:19:59.800 --> 00:20:02.510
+there is no good excuse to not
+put your [INAUDIBLE] worker.
+
+00:20:02.510 --> 00:20:05.100
+It helps you so much on
+these slower devices.
+
+00:20:05.100 --> 00:20:08.830
+We have done a test where we
+ran "PROXX" all on main thread.
+
+00:20:08.830 --> 00:20:10.310
+And it performed horribly.
+
+00:20:10.310 --> 00:20:12.845
+So we actually are really
+glad we chose to use a worker
+
+00:20:12.845 --> 00:20:13.720
+right from the start.
+
+00:20:13.720 --> 00:20:15.250
+JAKE ARCHIBALD: Yeah, especially
+because we have animation
+
+00:20:15.250 --> 00:20:16.210
+happening all the time.
+
+00:20:16.210 --> 00:20:18.252
+It's difficult to see,
+probably, from this angle.
+
+00:20:18.252 --> 00:20:21.405
+But there's a-- because this is
+the no-animated view as well.
+
+00:20:21.405 --> 00:20:22.780
+But usually, these
+little squares
+
+00:20:22.780 --> 00:20:23.310
+have got inner animations.
+
+00:20:23.310 --> 00:20:24.160
+SURMA: The rotate.
+
+00:20:24.160 --> 00:20:25.060
+Like, we actually
+have WebGL running.
+
+00:20:25.060 --> 00:20:26.768
+We need all the budget
+in the main thread
+
+00:20:26.768 --> 00:20:27.870
+we can get to WebGL.
+
+00:20:27.870 --> 00:20:29.590
+So everything else,
+as much as we can,
+
+00:20:29.590 --> 00:20:30.800
+we moved it somewhere else.
+
+00:20:30.800 --> 00:20:32.217
+And we're quite
+happy we did that.
+
+00:20:32.217 --> 00:20:33.910
+So I think postMessage
+has a cost,
+
+00:20:33.910 --> 00:20:36.110
+but not to the point where
+it makes off main thread
+
+00:20:36.110 --> 00:20:37.480
+like completely unviable.
+
+00:20:37.480 --> 00:20:39.100
+So I'm hoping that
+with this, people
+
+00:20:39.100 --> 00:20:41.320
+will be kind of inspired
+to try it out and give off
+
+00:20:41.320 --> 00:20:46.240
+main thread a shot for
+managing the state.
+
+00:20:46.240 --> 00:20:48.820
+We have some jitter
+this is [BLEEP] added.
+
+00:20:48.820 --> 00:20:49.960
+And of course, we have--
+
+00:20:49.960 --> 00:20:52.560
+JAKE ARCHIBALD: [BLEEP] added.
+
+00:20:52.560 --> 00:20:55.450
+SURMA: Artificially
+added jitter.
+
+00:20:55.450 --> 00:20:57.520
+JAKE ARCHIBALD: Sorry.
+
+00:20:57.520 --> 00:21:00.160
+Say it's artificially
+added again.
+
+00:21:00.160 --> 00:21:01.745
+Because I interrupted.
+
+00:21:01.745 --> 00:21:03.120
+And also, you said
+[BLEEP] added.
+
+00:21:03.120 --> 00:21:03.662
+SURMA: Did I?
+
+00:21:03.662 --> 00:21:04.960
+JAKE ARCHIBALD: Yeah.
+
+00:21:04.960 --> 00:21:06.163
+Pretty sure you did.
+
+00:21:06.163 --> 00:21:08.446
+SURMA: I didn't even notice.
+

@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.874
+[MUSIC PLAYING]
+
+00:00:11.355 --> 00:00:12.980
+SURMA: When you are
+developing your WAP
+
+00:00:12.980 --> 00:00:16.219
+with a local development server,
+build system, caching headers,
+
+00:00:16.219 --> 00:00:18.610
+and a service worker,
+it gets hard to tell
+
+00:00:18.610 --> 00:00:21.320
+if a stale version is being
+served from the server
+
+00:00:21.320 --> 00:00:23.630
+or it's just lingering
+in one of the caches.
+
+00:00:23.630 --> 00:00:26.420
+Or maybe the build system
+hasn't even kicked in yet.
+
+00:00:26.420 --> 00:00:28.220
+One small trick to
+easily figure out
+
+00:00:28.220 --> 00:00:31.250
+if the fault is on the client
+side or on the server side
+
+00:00:31.250 --> 00:00:33.010
+is to use cURL.
+
+00:00:33.010 --> 00:00:35.930
+cURL is a command line tool
+that makes the HTTP request
+
+00:00:35.930 --> 00:00:38.360
+and shows you the
+response of the server,
+
+00:00:38.360 --> 00:00:41.540
+but you don't need to learn
+all the options that cURL has.
+
+00:00:41.540 --> 00:00:43.820
+DevTools has learned
+them for you.
+
+00:00:43.820 --> 00:00:46.340
+If you right-click in your
+request in the DevTools Network
+
+00:00:46.340 --> 00:00:49.430
+tab, you can select
+Copy, Copy as cURL.
+
+00:00:49.430 --> 00:00:51.620
+Your clipboard now
+contains a cURL command
+
+00:00:51.620 --> 00:00:54.750
+that exactly mimics the request
+that Chrome has sent off,
+
+00:00:54.750 --> 00:00:57.410
+including user agent,
+cookies, compression, and all
+
+00:00:57.410 --> 00:00:59.840
+the other HTTP request headers.
+
+00:00:59.840 --> 00:01:01.875
+Paste it into your
+console and you
+
+00:01:01.875 --> 00:01:04.590
+will see the response the
+server sends without any caches
+
+00:01:04.590 --> 00:01:06.610
+or service workers in place.
+
+00:01:06.610 --> 00:01:08.930
+An additional tip is
+to use the dash-I flag
+
+00:01:08.930 --> 00:01:12.230
+so cURL prints out the
+response headers as well.
+
+00:01:12.230 --> 00:01:14.540
+If the response is
+not what you expected,
+
+00:01:14.540 --> 00:01:17.150
+your server or your build
+system is the culprit.
+
+00:01:17.150 --> 00:01:18.980
+If the response is
+correct, you need
+
+00:01:18.980 --> 00:01:21.410
+to check your caches
+or your service worker.
+
+00:01:21.410 --> 00:01:23.220
+Terminal tricks--
+got to love them.
+
+00:01:23.220 --> 00:01:25.550
+See you next time.
+
+00:01:25.550 --> 00:01:27.170
+Have you used Firebase before?
+
+00:01:27.170 --> 00:01:29.390
+Because if not, I did a
+livestream with David East
+
+00:01:29.390 --> 00:01:31.490
+from Firebase, and we
+built something together.
+
+00:01:31.490 --> 00:01:32.570
+You should go watch that.
+
+00:01:32.570 --> 00:01:34.100
+But you can also
+subscribe to get
+
+00:01:34.100 --> 00:01:37.660
+notified about new
+Supercharged every Thursday.
+

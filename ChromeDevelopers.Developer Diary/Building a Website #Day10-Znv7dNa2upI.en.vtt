@@ -1,0 +1,1114 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.160
+PAUL LEWIS: Hello again.
+
+00:00:01.160 --> 00:00:04.360
+I do believe in the last video
+I promised I would show you
+
+00:00:04.360 --> 00:00:08.119
+the video player.
+
+00:00:08.119 --> 00:00:10.230
+Well, there's not massive
+amounts to show you,
+
+00:00:10.230 --> 00:00:14.190
+but I figured I'd show you
+anyway because it's a little
+
+00:00:14.190 --> 00:00:15.319
+bit different, I suppose.
+
+00:00:15.319 --> 00:00:17.360
+If you look on screen,
+I've got the video player,
+
+00:00:17.360 --> 00:00:20.400
+or I have a video
+player, and it's
+
+00:00:20.400 --> 00:00:24.935
+going to play-- oh, good, we
+can't hear me, thankfully.
+
+00:00:24.935 --> 00:00:26.560
+And when you go to
+a different section,
+
+00:00:26.560 --> 00:00:29.330
+it squishes down like that.
+
+00:00:29.330 --> 00:00:33.660
+And if you go back to
+the section you were on,
+
+00:00:33.660 --> 00:00:35.925
+it kind of restores
+back up to full size.
+
+00:00:35.925 --> 00:00:37.550
+Or if you go somewhere
+else and there's
+
+00:00:37.550 --> 00:00:41.590
+another video, when you start
+that, it replaces the one
+
+00:00:41.590 --> 00:00:44.374
+you were on, and that behaves
+in the same kind of way.
+
+00:00:44.374 --> 00:00:45.040
+You can do that.
+
+00:00:45.040 --> 00:00:47.660
+You can go back-- whatever.
+
+00:00:47.660 --> 00:00:51.920
+So I shall show you the code
+for that, which is, as I say,
+
+00:00:51.920 --> 00:00:54.580
+is not massive amount of code.
+
+00:00:54.580 --> 00:01:01.130
+In cds.js, when I go to a
+new section-- the unchanged,
+
+00:01:01.130 --> 00:01:03.950
+if you remember the unchanged.
+
+00:01:03.950 --> 00:01:06.350
+I basically call this
+toggle small player
+
+00:01:06.350 --> 00:01:08.660
+if needed in the video
+handler, which is
+
+00:01:08.660 --> 00:01:12.050
+a static function on the class.
+
+00:01:12.050 --> 00:01:14.330
+Toggle small player if
+needed-- there we are.
+
+00:01:14.330 --> 00:01:16.914
+And I'm basically
+looking for an iframe.
+
+00:01:16.914 --> 00:01:18.330
+Because if I see
+an iframe, then I
+
+00:01:18.330 --> 00:01:22.900
+know that you've started
+the YouTube video,
+
+00:01:22.900 --> 00:01:26.970
+or at least you've gone past
+the picture with the button
+
+00:01:26.970 --> 00:01:27.850
+to press.
+
+00:01:27.850 --> 00:01:30.480
+We've embedded the iframe.
+
+00:01:30.480 --> 00:01:32.900
+So I treat that as a kind
+of fairly strong signal.
+
+00:01:32.900 --> 00:01:36.940
+On mobile, it's a bit
+different because I
+
+00:01:36.940 --> 00:01:39.810
+can embed with autoplay and
+that will work on desktop.
+
+00:01:39.810 --> 00:01:47.050
+But on a phone, it just puts
+the video player there again.
+
+00:01:47.050 --> 00:01:48.070
+It's not great.
+
+00:01:48.070 --> 00:01:51.630
+But at the same time, it's
+not a disaster either.
+
+00:01:51.630 --> 00:01:53.850
+I don't know, at this
+point, how many people
+
+00:01:53.850 --> 00:01:56.420
+are going to be watching
+the live stream on a phone
+
+00:01:56.420 --> 00:01:57.382
+versus on desktop.
+
+00:01:57.382 --> 00:01:59.465
+And if they're on the
+phone, there's an extra tap.
+
+00:01:59.465 --> 00:02:00.430
+It's not great.
+
+00:02:00.430 --> 00:02:02.140
+It's also not a disaster.
+
+00:02:02.140 --> 00:02:04.430
+So anyway, if you
+have an iframe,
+
+00:02:04.430 --> 00:02:05.540
+this is where we got to.
+
+00:02:05.540 --> 00:02:09.220
+If you have an iframe,
+then it's playing.
+
+00:02:09.220 --> 00:02:14.210
+And it's basically, if the
+current window location matches
+
+00:02:14.210 --> 00:02:16.450
+the href on the playing
+video container,
+
+00:02:16.450 --> 00:02:22.780
+so when I embed the
+video and I press Play,
+
+00:02:22.780 --> 00:02:26.780
+I stamp into the data attribute
+on the video container.
+
+00:02:26.780 --> 00:02:29.060
+Let me show.
+
+00:02:29.060 --> 00:02:32.246
+No, let's do inspect.
+
+00:02:32.246 --> 00:02:35.446
+And over here in
+the-- where are you?
+
+00:02:35.446 --> 00:02:36.570
+Video player, there we are.
+
+00:02:36.570 --> 00:02:39.400
+And you see this data YouTube
+ID, which is the YouTube ID,
+
+00:02:39.400 --> 00:02:43.810
+and they data href, which is the
+location, the href of the page
+
+00:02:43.810 --> 00:02:46.530
+where that player was started.
+
+00:02:46.530 --> 00:02:51.106
+So if the two match, the
+current windows href and that
+
+00:02:51.106 --> 00:02:55.100
+href that I set, then we
+disable the small video player.
+
+00:02:55.100 --> 00:02:58.461
+And if not, then we enable
+the small video player.
+
+00:02:58.461 --> 00:02:59.960
+And if there's
+nobody playing video,
+
+00:02:59.960 --> 00:03:02.010
+then this will just
+do an early exit.
+
+00:03:02.010 --> 00:03:05.000
+So I think the interesting
+thing, though, is
+
+00:03:05.000 --> 00:03:08.510
+the technique of the animation.
+
+00:03:08.510 --> 00:03:10.910
+I have mentioned on
+many occasions before,
+
+00:03:10.910 --> 00:03:12.660
+and I probably will
+continue to mention it
+
+00:03:12.660 --> 00:03:14.580
+while it's still
+relevant, that animating
+
+00:03:14.580 --> 00:03:17.980
+transforms and
+opacity is typically
+
+00:03:17.980 --> 00:03:20.800
+the way to get decent
+performance out
+
+00:03:20.800 --> 00:03:21.950
+of your animations.
+
+00:03:21.950 --> 00:03:24.670
+If that's news to
+you, then you should
+
+00:03:24.670 --> 00:03:28.060
+have a read of the Google
+Web Fundamentals Rendering
+
+00:03:28.060 --> 00:03:31.320
+Performance section or
+take the UDusty course
+
+00:03:31.320 --> 00:03:33.900
+that is also linked on there.
+
+00:03:33.900 --> 00:03:37.480
+And I'm sure we can pop
+it in the notes as well.
+
+00:03:37.480 --> 00:03:41.930
+But what we don't know-- because
+it's a dynamic animation,
+
+00:03:41.930 --> 00:03:43.200
+it's a responsive site.
+
+00:03:43.200 --> 00:03:45.490
+So we don't know what
+the transform needs
+
+00:03:45.490 --> 00:03:47.790
+to be because it
+could be-- you're
+
+00:03:47.790 --> 00:03:49.790
+going from wherever
+the thing is on screen,
+
+00:03:49.790 --> 00:03:51.120
+down to the bottom corner.
+
+00:03:51.120 --> 00:03:54.537
+But we don't know
+specifically what
+
+00:03:54.537 --> 00:03:56.120
+that transform would
+need to be, if we
+
+00:03:56.120 --> 00:03:57.080
+were going to use a transform.
+
+00:03:57.080 --> 00:03:58.500
+So I use a technique
+called flip,
+
+00:03:58.500 --> 00:04:02.400
+and we have a
+super-charged TLDW on flip.
+
+00:04:02.400 --> 00:04:05.530
+The idea is that
+you can calculate
+
+00:04:05.530 --> 00:04:08.210
+the transform dynamically
+by saying, well,
+
+00:04:08.210 --> 00:04:10.820
+where is this thing now?
+
+00:04:10.820 --> 00:04:14.080
+And probably in that kind
+of big masthead area-- oh,
+
+00:04:14.080 --> 00:04:15.630
+that's where it is.
+
+00:04:15.630 --> 00:04:17.140
+And where do I want it to be?
+
+00:04:17.140 --> 00:04:20.120
+Well, I know that because I
+wanted to be like 24 pixels
+
+00:04:20.120 --> 00:04:22.800
+from the bottom right-hand
+corner of the screen or 32
+
+00:04:22.800 --> 00:04:23.800
+[INAUDIBLE] or whatever.
+
+00:04:23.800 --> 00:04:26.200
+And it's at 32
+pixels, f And I wanted
+
+00:04:26.200 --> 00:04:29.360
+to be 40% of its actual size.
+
+00:04:29.360 --> 00:04:33.210
+So you see what I do, is I call
+here, getBoundingClientRect,
+
+00:04:33.210 --> 00:04:36.040
+which is the get me the
+current position of this thing,
+
+00:04:36.040 --> 00:04:39.390
+and getBoundingClientRect has
+been around for ages, like i.e.
+
+00:04:39.390 --> 00:04:41.670
+five, four, five, six?
+
+00:04:41.670 --> 00:04:42.960
+It's been around forever.
+
+00:04:42.960 --> 00:04:44.110
+It's been ages.
+
+00:04:44.110 --> 00:04:48.010
+And you get back this object
+with width, height, left,
+
+00:04:48.010 --> 00:04:50.840
+right, bottom, all
+that kind of stuff.
+
+00:04:50.840 --> 00:04:54.500
+And then we basically
+make all the mutations
+
+00:04:54.500 --> 00:04:58.370
+that we'd need to put it
+into the bottom corner.
+
+00:04:58.370 --> 00:05:02.150
+And then we ask the question a
+second time, where are you now?
+
+00:05:02.150 --> 00:05:05.370
+What size and
+everything have you got?
+
+00:05:05.370 --> 00:05:08.470
+And so we know where we were,
+and we know where we are.
+
+00:05:08.470 --> 00:05:10.470
+We can now figure out
+what transform we actually
+
+00:05:10.470 --> 00:05:13.870
+need to apply, which is like the
+right position from the first
+
+00:05:13.870 --> 00:05:15.430
+to the right
+position of the last.
+
+00:05:15.430 --> 00:05:19.580
+And so what we actually do is
+we've left it in that smaller
+
+00:05:19.580 --> 00:05:21.500
+bottom corner position.
+
+00:05:21.500 --> 00:05:25.150
+But we transform it back
+and up and out again,
+
+00:05:25.150 --> 00:05:27.720
+so that it looks like it's still
+back in its first position.
+
+00:05:27.720 --> 00:05:29.580
+And we do all that
+really quickly,
+
+00:05:29.580 --> 00:05:32.150
+like this all happens
+synchronously.
+
+00:05:32.150 --> 00:05:33.930
+So you won't actually
+see a frame being
+
+00:05:33.930 --> 00:05:36.350
+shipped in between these steps.
+
+00:05:36.350 --> 00:05:39.100
+And the danger point is
+actually this-- the second time
+
+00:05:39.100 --> 00:05:42.480
+we call
+getBoundingClientRect, there's
+
+00:05:42.480 --> 00:05:45.490
+a moment where the browser
+goes, well, you've just
+
+00:05:45.490 --> 00:05:47.810
+changed a bunch of styles here.
+
+00:05:47.810 --> 00:05:49.500
+I don't know where it is.
+
+00:05:49.500 --> 00:05:51.800
+So I have to go off and
+apply all those styles, which
+
+00:05:51.800 --> 00:05:56.040
+we call a forced
+synchronous styles-- forced,
+
+00:05:56.040 --> 00:05:57.160
+I think that's it, forced.
+
+00:05:57.160 --> 00:05:57.460
+Yeah?
+
+00:05:57.460 --> 00:05:58.543
+Forced synchronous styles?
+
+00:05:58.543 --> 00:05:59.180
+Yeah.
+
+00:05:59.180 --> 00:06:01.420
+And then the forced
+synchronous layout pass,
+
+00:06:01.420 --> 00:06:04.290
+which is like, OK, I've applied
+all the styles synchronously.
+
+00:06:04.290 --> 00:06:06.320
+I couldn't do that
+when it suited me.
+
+00:06:06.320 --> 00:06:09.290
+I actually had to do it right
+now, and I have to do layout,
+
+00:06:09.290 --> 00:06:11.650
+like figure out where everything
+is and what size it is.
+
+00:06:11.650 --> 00:06:14.010
+So if it's a big dom,
+that's point here,
+
+00:06:14.010 --> 00:06:16.280
+the second time you call
+getBoundingClientRect
+
+00:06:16.280 --> 00:06:17.700
+could be very expensive.
+
+00:06:17.700 --> 00:06:19.560
+In my case, it's a
+small dom, and it's
+
+00:06:19.560 --> 00:06:23.930
+a calculated risk on my part.
+
+00:06:23.930 --> 00:06:27.470
+Anyway, so we've transformed
+it now back up, right?
+
+00:06:27.470 --> 00:06:29.110
+So it looks like
+it's in the start.
+
+00:06:29.110 --> 00:06:34.100
+And then this is the bit I
+actually really, really dislike
+
+00:06:34.100 --> 00:06:38.160
+about the platform
+at the moment.
+
+00:06:38.160 --> 00:06:39.687
+You have to wait frames.
+
+00:06:39.687 --> 00:06:41.270
+So you make all those
+changes, and you
+
+00:06:41.270 --> 00:06:42.520
+apply that transform
+that brings it
+
+00:06:42.520 --> 00:06:44.520
+back up to look like it's
+at the start position.
+
+00:06:44.520 --> 00:06:46.880
+And then you think, OK, I
+could switch on animations
+
+00:06:46.880 --> 00:06:48.421
+and tell it to go
+down to the bottom.
+
+00:06:48.421 --> 00:06:50.460
+But that doesn't
+work because browsers
+
+00:06:50.460 --> 00:06:53.170
+defer all these
+calculations until the end,
+
+00:06:53.170 --> 00:06:55.510
+unless you ask for
+something upfront.
+
+00:06:55.510 --> 00:06:59.320
+So the polite version, which is
+what I'm doing here-- polite--
+
+00:06:59.320 --> 00:07:01.430
+is to call or request
+animation from them,
+
+00:07:01.430 --> 00:07:04.572
+be like, OK, I'm just going to
+wait one frame while you apply
+
+00:07:04.572 --> 00:07:06.030
+all those changes
+that I just made.
+
+00:07:06.030 --> 00:07:08.090
+In this case, it's
+just that transform.
+
+00:07:08.090 --> 00:07:09.710
+I'm going to wait
+one frame for that.
+
+00:07:09.710 --> 00:07:12.070
+And then I'm going to, because
+this could have happened
+
+00:07:12.070 --> 00:07:14.677
+partway through a
+frame, I'll wait
+
+00:07:14.677 --> 00:07:16.510
+one frame for that to
+take hold, an then I'm
+
+00:07:16.510 --> 00:07:18.490
+going to wait another frame.
+
+00:07:18.490 --> 00:07:20.507
+And I'm going to
+switch on animations,
+
+00:07:20.507 --> 00:07:22.215
+and then I'm going to
+wait another frame,
+
+00:07:22.215 --> 00:07:27.360
+and I'm actually now going to
+transform the-- basically get
+
+00:07:27.360 --> 00:07:29.380
+rid of that translation
+and the scale
+
+00:07:29.380 --> 00:07:33.190
+to put it down back into
+the corner, where I want it.
+
+00:07:33.190 --> 00:07:36.657
+And that kind of wait a frame,
+do a thing, wait a frame,
+
+00:07:36.657 --> 00:07:38.240
+do a thing, wait a
+frame, do the thing
+
+00:07:38.240 --> 00:07:41.040
+is just-- it's an
+artifact of the web which
+
+00:07:41.040 --> 00:07:43.040
+I find a bit bleh.
+
+00:07:43.040 --> 00:07:47.090
+And I think web
+animations would probably
+
+00:07:47.090 --> 00:07:51.645
+help here because the other
+thing I have to do-- well,
+
+00:07:51.645 --> 00:07:54.020
+the other way to do this rather
+than just kind of waiting
+
+00:07:54.020 --> 00:07:56.922
+a frame, is to force it
+by asking for offset width
+
+00:07:56.922 --> 00:07:59.130
+or offset height, because
+that will force the browser
+
+00:07:59.130 --> 00:08:00.979
+to kind of apply the change.
+
+00:08:00.979 --> 00:08:02.520
+And then I can make
+another mutation,
+
+00:08:02.520 --> 00:08:04.560
+and then I can ask for
+offset width again,
+
+00:08:04.560 --> 00:08:06.060
+and it would force
+its [INAUDIBLE].
+
+00:08:06.060 --> 00:08:11.320
+So I can force it into
+the kind of reflow,
+
+00:08:11.320 --> 00:08:14.750
+sort of that read-write
+mutation, read-it thing cycle.
+
+00:08:14.750 --> 00:08:17.280
+I'm not doing a particularly
+good job of explaining that.
+
+00:08:17.280 --> 00:08:19.040
+But the idea is that
+I can force its hand.
+
+00:08:19.040 --> 00:08:22.400
+If I wait a frame with
+a RequestAnimationFrame,
+
+00:08:22.400 --> 00:08:24.387
+I know those tasks
+will happen anyway
+
+00:08:24.387 --> 00:08:26.720
+because they'll happen at the
+end of the previous frame.
+
+00:08:26.720 --> 00:08:30.170
+So I can wait a frame, a frame,
+and then a frame to do it.
+
+00:08:30.170 --> 00:08:33.919
+Or I could have interspersed
+kind of faux read calls
+
+00:08:33.919 --> 00:08:35.030
+in the middle.
+
+00:08:35.030 --> 00:08:39.440
+And because of the
+fact that you could--
+
+00:08:39.440 --> 00:08:42.809
+say after this first frame, this
+first request animation frame,
+
+00:08:42.809 --> 00:08:45.870
+you could actually go back.
+
+00:08:45.870 --> 00:08:47.590
+And that could then restore.
+
+00:08:47.590 --> 00:08:49.920
+We could switch across to
+setting the player back
+
+00:08:49.920 --> 00:08:51.970
+to large again
+rather than small.
+
+00:08:51.970 --> 00:08:54.350
+So I actually have to
+manage state a little bit
+
+00:08:54.350 --> 00:08:56.782
+here and kind of go,
+if, for some reason,
+
+00:08:56.782 --> 00:08:58.240
+they've gone back
+to the big player
+
+00:08:58.240 --> 00:09:01.350
+during waiting for
+these few frames,
+
+00:09:01.350 --> 00:09:04.010
+every time I have
+to wait to frame,
+
+00:09:04.010 --> 00:09:08.110
+I basically go, if things
+have changed in the interim,
+
+00:09:08.110 --> 00:09:08.610
+just cancel.
+
+00:09:08.610 --> 00:09:10.670
+Don't worry about setting
+these next things.
+
+00:09:10.670 --> 00:09:15.500
+And this is not code
+that I like writing.
+
+00:09:15.500 --> 00:09:18.749
+And I might-- I might-- go
+to the less polite version
+
+00:09:18.749 --> 00:09:20.540
+where I don't use
+request animation frames,
+
+00:09:20.540 --> 00:09:24.260
+and I just intersperse
+read calls to kind of force
+
+00:09:24.260 --> 00:09:26.020
+the browser's hand.
+
+00:09:26.020 --> 00:09:29.640
+I don't like this very much.
+
+00:09:29.640 --> 00:09:31.807
+So, yeah, I'm obviously
+probably being
+
+00:09:31.807 --> 00:09:34.140
+quite clear that I don't
+particularly-- this is probably
+
+00:09:34.140 --> 00:09:36.470
+the bit of code in
+this whole thing
+
+00:09:36.470 --> 00:09:40.760
+that I'm like, oh, really?
+
+00:09:40.760 --> 00:09:42.670
+Aw.
+
+00:09:42.670 --> 00:09:45.060
+Also, at the same time,
+it's not the worst code
+
+00:09:45.060 --> 00:09:47.990
+I've ever written.
+
+00:09:47.990 --> 00:09:52.020
+I've written some awful code.
+
+00:09:52.020 --> 00:09:56.150
+Oh, well, we've all got
+to move on, haven't we?
+
+00:09:56.150 --> 00:09:57.050
+Right.
+
+00:09:57.050 --> 00:09:59.449
+So that's taking the video
+down to the small player.
+
+00:09:59.449 --> 00:10:01.990
+It probably won't be a surprise
+that you're pretty much going
+
+00:10:01.990 --> 00:10:04.840
+to see the same thing in
+reverse when we disable
+
+00:10:04.840 --> 00:10:09.420
+the small player and go back to
+the big, which is, again, you
+
+00:10:09.420 --> 00:10:12.250
+sort of take a reading
+of where this thing is,
+
+00:10:12.250 --> 00:10:14.540
+remove everything
+that made it go down
+
+00:10:14.540 --> 00:10:16.250
+to the small player
+in the corner,
+
+00:10:16.250 --> 00:10:19.040
+ask the question again,
+where are you now?
+
+00:10:19.040 --> 00:10:20.820
+And then there's a
+little bit of a dance,
+
+00:10:20.820 --> 00:10:23.750
+asking for existing
+transformers because of that.
+
+00:10:23.750 --> 00:10:26.835
+And then it's frame, frame,
+frame-- the frame dance,
+
+00:10:26.835 --> 00:10:28.910
+dun-dun-dum.
+
+00:10:28.910 --> 00:10:31.215
+And then we are done.
+
+00:10:31.215 --> 00:10:32.090
+So there you have it.
+
+00:10:32.090 --> 00:10:34.050
+That's basically
+it in a nutshell.
+
+00:10:34.050 --> 00:10:35.910
+Then there's a lot of
+boilerplate-y stuff
+
+00:10:35.910 --> 00:10:38.575
+about making sure that
+we can embed a link,
+
+00:10:38.575 --> 00:10:41.870
+and when we begin
+playback, we do an iframe
+
+00:10:41.870 --> 00:10:46.410
+and we embed the YouTube
+video and stuff like that.
+
+00:10:46.410 --> 00:10:48.610
+So most of that is boilerplate.
+
+00:10:48.610 --> 00:10:50.980
+I think it's just the
+technique of creating
+
+00:10:50.980 --> 00:10:55.140
+the transform on the fly
+that's quite interesting.
+
+00:10:55.140 --> 00:10:56.820
+So there you go.
+
+00:10:56.820 --> 00:10:59.910
+I think probably
+in the next video
+
+00:10:59.910 --> 00:11:04.100
+I might talk a little
+bit about the side now.
+
+00:11:04.100 --> 00:11:06.910
+Maybe, because I've done a
+little bit more work on that.
+
+00:11:06.910 --> 00:11:09.520
+You might be noticing that I do
+a little bit-- I bounce around
+
+00:11:09.520 --> 00:11:10.894
+when I'm working
+on these things,
+
+00:11:10.894 --> 00:11:14.280
+like sort of what
+takes my fancy today,
+
+00:11:14.280 --> 00:11:17.620
+because that is one
+of the freedoms I have
+
+00:11:17.620 --> 00:11:18.800
+in this particular project.
+
+00:11:18.800 --> 00:11:21.520
+The deadlines are there,
+but within that, I
+
+00:11:21.520 --> 00:11:24.210
+can still decide which direction
+I go and at what point.
+
+00:11:24.210 --> 00:11:26.560
+And I'm feeling
+pretty OK about it.
+
+00:11:26.560 --> 00:11:28.400
+I'm feeling actually
+very OK about it.
+
+00:11:28.400 --> 00:11:31.020
+I'm actually really
+enjoying this build.
+
+00:11:31.020 --> 00:11:33.710
+It's been a good build so far.
+
+00:11:33.710 --> 00:11:36.140
+Oh, let me show you
+this little thing here.
+
+00:11:36.140 --> 00:11:38.590
+If I just enable
+this scroll to, when
+
+00:11:38.590 --> 00:11:41.780
+you go from section
+to section to section,
+
+00:11:41.780 --> 00:11:46.550
+let's say you go back to that,
+I popped the screen to the top,
+
+00:11:46.550 --> 00:11:48.240
+because that's kind
+of more what you'd
+
+00:11:48.240 --> 00:11:51.630
+expect from the behavior
+of it from the site.
+
+00:11:51.630 --> 00:11:56.700
+But on the body,
+on the body here, I
+
+00:11:56.700 --> 00:11:59.430
+have scroll behavior
+smooth, which you'll notice
+
+00:11:59.430 --> 00:12:01.990
+is currently an
+unknown property name.
+
+00:12:01.990 --> 00:12:04.160
+In Canary, if you
+switch on the flag,
+
+00:12:04.160 --> 00:12:06.440
+it switches on the
+smooth scroll, which
+
+00:12:06.440 --> 00:12:10.260
+is already enabled in Firefox.
+
+00:12:10.260 --> 00:12:11.570
+They've already got it.
+
+00:12:11.570 --> 00:12:14.451
+Oh, doing your dance.
+
+00:12:14.451 --> 00:12:16.700
+I don't think I am going to
+set it as my main browser,
+
+00:12:16.700 --> 00:12:18.068
+thank you.
+
+00:12:18.068 --> 00:12:18.568
+Tempting.
+
+00:12:24.260 --> 00:12:25.790
+Let's see if that works.
+
+00:12:25.790 --> 00:12:27.637
+No, they've removed
+clutter, so I can
+
+00:12:27.637 --> 00:12:28.845
+focus on what I want to read.
+
+00:12:28.845 --> 00:12:30.820
+Hey, that's kind.
+
+00:12:30.820 --> 00:12:34.220
+Right, when we go to a
+section-- oh, it's not working.
+
+00:12:34.220 --> 00:12:36.170
+Do I need a new
+version of Firefox?
+
+00:12:36.170 --> 00:12:37.074
+Let me see?
+
+00:12:37.074 --> 00:12:37.990
+Firefox is up-to-date.
+
+00:12:40.700 --> 00:12:41.720
+Interesting.
+
+00:12:41.720 --> 00:12:44.156
+I'm wondering why I'm not
+seeing the smooth scroll.
+
+00:12:44.156 --> 00:12:47.550
+L maybe I did
+something different.
+
+00:12:47.550 --> 00:12:51.740
+In which case, I'll save
+that for another time.
+
+00:12:51.740 --> 00:12:54.540
+Just goes to show, don't
+do a demo on the fly
+
+00:12:54.540 --> 00:12:56.560
+when you're thinking,
+hey, that all went well.
+
+00:12:56.560 --> 00:12:59.160
+Why don't I just show them
+a little bit of extra stuff?
+
+00:13:03.671 --> 00:13:05.170
+Don't forget that
+you can subscribe.
+
+00:13:05.170 --> 00:13:07.980
+Don't forget that you can check
+out the code is on GitHub.
+
+00:13:07.980 --> 00:13:11.300
+As always, comments and
+all the usual stuff below,
+
+00:13:11.300 --> 00:13:14.050
+and I will see you next time.
+

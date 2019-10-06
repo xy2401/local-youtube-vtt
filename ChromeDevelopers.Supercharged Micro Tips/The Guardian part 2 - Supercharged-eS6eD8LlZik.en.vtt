@@ -1,0 +1,673 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.952
+[MUSIC PLAYING]
+
+00:00:19.532 --> 00:00:20.990
+PAUL LEWIS: This
+is "Supercharged."
+
+00:00:20.990 --> 00:00:23.544
+It's the show where I take the
+sites that you've submitted.
+
+00:00:23.544 --> 00:00:24.460
+And I go through them.
+
+00:00:24.460 --> 00:00:26.080
+And I look for
+performance issues.
+
+00:00:26.080 --> 00:00:29.895
+Paul Lewis, voice of an
+angel, face of a pig.
+
+00:00:29.895 --> 00:00:31.230
+[SNORTS]
+
+00:00:31.230 --> 00:00:33.570
+Last time, we looked at
+"The Guardian's" page
+
+00:00:33.570 --> 00:00:34.320
+load performance.
+
+00:00:34.320 --> 00:00:36.145
+This time we're going
+to do pretty similar.
+
+00:00:36.145 --> 00:00:38.270
+It's going to be "The
+Guardian" because we're going
+
+00:00:38.270 --> 00:00:39.561
+to wring it for all it's worth.
+
+00:00:39.561 --> 00:00:40.785
+Why wouldn't you?
+
+00:00:40.785 --> 00:00:44.040
+A little bit of something
+to clarify from last time.
+
+00:00:44.040 --> 00:00:47.200
+I showed my bookmarklet,
+which is really cool,
+
+00:00:47.200 --> 00:00:49.290
+to toggle the styles on
+and off and switch off
+
+00:00:49.290 --> 00:00:51.680
+the remote styles and just
+leave the inline styles that
+
+00:00:51.680 --> 00:00:54.210
+were shipped with the page.
+
+00:00:54.210 --> 00:00:56.300
+There was a bug in
+the bookmarklet, which
+
+00:00:56.300 --> 00:00:58.470
+is why it was causing
+some of that page content
+
+00:00:58.470 --> 00:01:00.730
+to go a bit crazy.
+
+00:01:00.730 --> 00:01:02.190
+Who writes code with bugs?
+
+00:01:02.190 --> 00:01:03.010
+Not me.
+
+00:01:03.010 --> 00:01:05.430
+We've updated the source code.
+
+00:01:05.430 --> 00:01:07.840
+So if you want it, you
+can grab it yourself.
+
+00:01:07.840 --> 00:01:09.390
+What I'm going to
+do is I'm going
+
+00:01:09.390 --> 00:01:12.210
+to look, this time, at
+the scrolling performance.
+
+00:01:12.210 --> 00:01:13.990
+And I'm going to
+do that on mobile.
+
+00:01:13.990 --> 00:01:16.020
+Because if you've got
+performance issues
+
+00:01:16.020 --> 00:01:18.270
+on a mobile device you're
+really going to feel it.
+
+00:01:18.270 --> 00:01:19.810
+You're really going to notice.
+
+00:01:19.810 --> 00:01:21.570
+And so it's a really
+good opportunity
+
+00:01:21.570 --> 00:01:24.490
+to just step in and go, well,
+if I can fix it on mobile,
+
+00:01:24.490 --> 00:01:27.344
+it's going to be amazing
+and blazing fast on desktop.
+
+00:01:27.344 --> 00:01:28.760
+So it's a really
+good opportunity.
+
+00:01:28.760 --> 00:01:32.060
+So I have my trusty
+Nexus device here.
+
+00:01:32.060 --> 00:01:36.790
+And what I'm going to do is
+I'm going to unlock it, first
+
+00:01:36.790 --> 00:01:39.070
+of all, for it is locked.
+
+00:01:39.070 --> 00:01:41.150
+I wear a lot of
+hats in this show.
+
+00:01:41.150 --> 00:01:43.080
+In my job, I wear a lot of hats.
+
+00:01:43.080 --> 00:01:44.820
+This one is jazz hat.
+
+00:01:44.820 --> 00:01:46.660
+I'm going to go across
+to Chrome Inspect.
+
+00:01:46.660 --> 00:01:50.730
+And you can see here that it's
+showing me that Chrome Dev is
+
+00:01:50.730 --> 00:01:52.070
+available, which is good.
+
+00:01:52.070 --> 00:01:53.440
+And there's a new tab.
+
+00:01:53.440 --> 00:01:54.480
+Ready to rumble?
+
+00:01:54.480 --> 00:01:56.220
+Ready to-- what?
+
+00:01:56.220 --> 00:01:57.800
+Got to put my teeth back in.
+
+00:01:57.800 --> 00:02:00.700
+(IMITATING OLD MAN)
+Ready to rumble.
+
+00:02:00.700 --> 00:02:02.060
+Grab that.
+
+00:02:02.060 --> 00:02:05.260
+Let's go Open tab with URL.
+
+00:02:05.260 --> 00:02:06.360
+And click on that.
+
+00:02:06.360 --> 00:02:07.260
+And open it.
+
+00:02:07.260 --> 00:02:09.419
+And that means we can
+also inspect it, which
+
+00:02:09.419 --> 00:02:11.640
+brings up Chrome's Dev tools.
+
+00:02:11.640 --> 00:02:12.800
+Urban Paul.
+
+00:02:12.800 --> 00:02:13.980
+I'm street.
+
+00:02:13.980 --> 00:02:16.100
+I can be down with
+the kids, you see.
+
+00:02:16.100 --> 00:02:18.210
+I am-- I'm cool like you.
+
+00:02:18.210 --> 00:02:21.384
+And I am on the Timeline, which
+is my personal favorite place,
+
+00:02:21.384 --> 00:02:23.550
+apart from, well, maybe the
+Elements or the console.
+
+00:02:23.550 --> 00:02:25.660
+I just like-- I like
+them all so much.
+
+00:02:25.660 --> 00:02:28.380
+It's like choosing
+a favorite child.
+
+00:02:28.380 --> 00:02:28.964
+I can't do it.
+
+00:02:28.964 --> 00:02:30.546
+I'm going to do
+scrolling performance.
+
+00:02:30.546 --> 00:02:32.210
+Because scrolling's
+an animation.
+
+00:02:32.210 --> 00:02:35.170
+And if there's a
+problem with scrolling,
+
+00:02:35.170 --> 00:02:38.270
+it's going to really kind
+of be the most obvious thing
+
+00:02:38.270 --> 00:02:40.610
+to the users of the site.
+
+00:02:40.610 --> 00:02:42.370
+And you know, this
+is a content site.
+
+00:02:42.370 --> 00:02:44.150
+So scrolling should
+be 60 frames a second
+
+00:02:44.150 --> 00:02:45.108
+and that kind of thing.
+
+00:02:45.108 --> 00:02:48.950
+So combo hat, urban jazz.
+
+00:02:48.950 --> 00:02:50.650
+And I will record.
+
+00:02:50.650 --> 00:02:53.980
+And I'm going to
+scroll like that.
+
+00:02:53.980 --> 00:02:57.940
+And every time the frame rate
+drops during that scroll,
+
+00:02:57.940 --> 00:03:00.720
+there's a bright yellow block,
+which is the JavaScript.
+
+00:03:00.720 --> 00:03:04.600
+And so, you know, it's good
+to know that it's JavaScript.
+
+00:03:04.600 --> 00:03:06.580
+But I think we want a
+little bit more detail.
+
+00:03:06.580 --> 00:03:09.070
+So what I'll do is I'll switch
+on the JavaScript profiler.
+
+00:03:09.070 --> 00:03:11.250
+OK, so we have the JavaScript
+profiler switched on.
+
+00:03:11.250 --> 00:03:12.282
+Going to hit Record.
+
+00:03:12.282 --> 00:03:14.310
+I'm just going to do
+a bit of a scroll.
+
+00:03:14.310 --> 00:03:16.720
+Most of the time,
+I rely on editing
+
+00:03:16.720 --> 00:03:20.810
+to sort the wheat
+from the chaff.
+
+00:03:20.810 --> 00:03:21.590
+Yeah?
+
+00:03:21.590 --> 00:03:24.580
+Wheat being the one
+thing in every 100
+
+00:03:24.580 --> 00:03:26.810
+that I say that's
+worth listening to.
+
+00:03:26.810 --> 00:03:29.090
+Most of the time it's like,
+(WITH HIGH-PITCHED VOICE)
+
+00:03:29.090 --> 00:03:30.860
+I don't like mung beans.
+
+00:03:30.860 --> 00:03:32.540
+So Timeline.
+
+00:03:32.540 --> 00:03:35.410
+Time line.
+
+00:03:35.410 --> 00:03:37.590
+The line of time.
+
+00:03:37.590 --> 00:03:40.950
+When you look at timelines,
+it's often really good
+
+00:03:40.950 --> 00:03:43.890
+to try and break down the work.
+
+00:03:43.890 --> 00:03:47.570
+And one of the things that the
+JavaScript profiler will do
+
+00:03:47.570 --> 00:03:51.090
+is it's going to color code
+the results based on the file.
+
+00:03:51.090 --> 00:03:52.470
+So if you see the
+same color, you
+
+00:03:52.470 --> 00:03:54.100
+know it's coming
+from the same file.
+
+00:03:54.100 --> 00:03:56.099
+And that's actually
+extremely useful when you're
+
+00:03:56.099 --> 00:03:57.680
+starting to kind
+of divide and say,
+
+00:03:57.680 --> 00:04:00.280
+well, where is the
+work coming from?
+
+00:04:00.280 --> 00:04:02.030
+You know, what's
+responsible for the work?
+
+00:04:02.030 --> 00:04:08.940
+So you can see, I think most
+of these, lazy load, load slot,
+
+00:04:08.940 --> 00:04:10.010
+there's a message JS.
+
+00:04:10.010 --> 00:04:11.640
+I'm not sure what that is.
+
+00:04:11.640 --> 00:04:17.019
+But my hunch is that they're
+trying to show a message.
+
+00:04:17.019 --> 00:04:22.634
+But it's going through Raven.js,
+which that's an error catcher.
+
+00:04:22.634 --> 00:04:24.800
+So I guess that's just
+acting as a bit of a gateway.
+
+00:04:24.800 --> 00:04:25.620
+Aha!
+
+00:04:25.620 --> 00:04:26.910
+Pub ads impl.
+
+00:04:26.910 --> 00:04:30.060
+So there is something
+to do with ads here.
+
+00:04:30.060 --> 00:04:32.250
+Move along to the next one.
+
+00:04:32.250 --> 00:04:34.230
+Another animation frame.
+
+00:04:34.230 --> 00:04:35.980
+More ads, Evaluate Script.
+
+00:04:35.980 --> 00:04:38.190
+There's an ads there.
+
+00:04:38.190 --> 00:04:40.216
+Let's have a look.
+
+00:04:40.216 --> 00:04:41.530
+A ready state change.
+
+00:04:41.530 --> 00:04:44.180
+So there's something going
+on where there's presumably
+
+00:04:44.180 --> 00:04:46.160
+some Ajax in.
+
+00:04:46.160 --> 00:04:48.350
+And we've got some
+Parse HTML here.
+
+00:04:48.350 --> 00:04:50.750
+So that implies that
+there's something
+
+00:04:50.750 --> 00:04:52.150
+that's being lazy loaded in.
+
+00:04:52.150 --> 00:04:55.140
+But that's causing a
+massive recalc style,
+
+00:04:55.140 --> 00:04:58.320
+which is pretty
+intense, actually,
+
+00:04:58.320 --> 00:05:00.140
+like 117 milliseconds.
+
+00:05:00.140 --> 00:05:02.660
+And again, this is all
+locking up the main thread.
+
+00:05:02.660 --> 00:05:06.109
+I actually went
+through the timeline.
+
+00:05:06.109 --> 00:05:08.400
+And I think this is a really
+good exercise for everyone
+
+00:05:08.400 --> 00:05:10.700
+to do, is go through
+a timeline recording.
+
+00:05:10.700 --> 00:05:13.730
+And start marking out
+exactly what's going on.
+
+00:05:13.730 --> 00:05:17.130
+So in this case, there's
+Outbrains, some visitor
+
+00:05:17.130 --> 00:05:17.870
+tracking.
+
+00:05:17.870 --> 00:05:22.230
+There's some ads stuff.
+
+00:05:22.230 --> 00:05:25.740
+"The Guardian" itself
+is doing a bit of set
+
+00:05:25.740 --> 00:05:27.735
+up over multiple request
+animation frames.
+
+00:05:27.735 --> 00:05:29.110
+There's a whole
+block here that's
+
+00:05:29.110 --> 00:05:31.550
+just garbage collection,
+collecting the garbage,
+
+00:05:31.550 --> 00:05:33.180
+taking the trash out.
+
+00:05:33.180 --> 00:05:34.470
+I say trash.
+
+00:05:34.470 --> 00:05:35.980
+In England, it's rubbish.
+
+00:05:35.980 --> 00:05:38.530
+But one of the interesting
+ones is this recalc style.
+
+00:05:38.530 --> 00:05:41.442
+You can see that it's
+recalculating the style
+
+00:05:41.442 --> 00:05:42.650
+and then triggering a layout.
+
+00:05:42.650 --> 00:05:44.770
+Forcing a recalc style,
+triggering a layout.
+
+00:05:44.770 --> 00:05:47.450
+And this is a really bad
+state for us to be in.
+
+00:05:47.450 --> 00:05:49.500
+However, it is
+third-party code and so
+
+00:05:49.500 --> 00:05:51.710
+there's only so much
+that you can do.
+
+00:05:51.710 --> 00:05:53.520
+I think the thing to
+remember is that when
+
+00:05:53.520 --> 00:05:55.410
+you're running
+third-party code, it's
+
+00:05:55.410 --> 00:05:57.070
+running alongside your code.
+
+00:05:57.070 --> 00:05:59.670
+And everybody's got contention
+for the main thread,
+
+00:05:59.670 --> 00:06:01.510
+that one thread
+that everybody's on.
+
+00:06:01.510 --> 00:06:03.870
+And so it's a bit
+like that time I
+
+00:06:03.870 --> 00:06:06.280
+had 10 people in a
+five-person tent.
+
+00:06:06.280 --> 00:06:07.696
+That was just awkward.
+
+00:06:07.696 --> 00:06:08.320
+So there we go.
+
+00:06:08.320 --> 00:06:10.790
+I think the majority of the
+issues that they're facing
+
+00:06:10.790 --> 00:06:13.950
+are to do with scrolling
+performance and the fact
+
+00:06:13.950 --> 00:06:16.700
+that this code is not
+running at a time that's
+
+00:06:16.700 --> 00:06:19.260
+convenient for the browser
+or for the user, really.
+
+00:06:19.260 --> 00:06:21.230
+You know, web performance
+has never just
+
+00:06:21.230 --> 00:06:22.250
+been about page load.
+
+00:06:22.250 --> 00:06:24.600
+It's also about
+things like animations
+
+00:06:24.600 --> 00:06:27.755
+and about responding to user
+taps and things like that.
+
+00:06:27.755 --> 00:06:28.880
+So I'd take a look at that.
+
+00:06:28.880 --> 00:06:31.680
+I'd see if there's a way to just
+defer that a little bit more
+
+00:06:31.680 --> 00:06:33.717
+to when the user
+isn't interacting.
+
+00:06:33.717 --> 00:06:35.050
+Don't forget, you can subscribe.
+
+00:06:35.050 --> 00:06:35.550
+You should do that.
+
+00:06:35.550 --> 00:06:35.900
+Do it.
+
+00:06:35.900 --> 00:06:36.260
+Done it?
+
+00:06:36.260 --> 00:06:36.780
+Well done.
+
+00:06:36.780 --> 00:06:37.863
+Well done, you clicked it.
+
+00:06:37.863 --> 00:06:38.550
+Well done, yay.
+
+00:06:38.550 --> 00:06:40.670
+And you can submit
+your sites, also.
+
+00:06:40.670 --> 00:06:41.470
+A good thing to do.
+
+00:06:41.470 --> 00:06:42.761
+And I will take a look at them.
+
+00:06:42.761 --> 00:06:45.100
+And I will catch you next time.
+
+00:06:45.100 --> 00:06:45.600
+Yes!
+
+00:06:45.600 --> 00:06:46.395
+Come on!
+
+00:06:46.395 --> 00:06:47.700
+Aha!
+
+00:06:47.700 --> 00:06:48.700
+Throw a dart, they said.
+
+00:06:48.700 --> 00:06:49.741
+It'll be easy, they said.
+
+00:06:49.741 --> 00:06:51.210
+You ready?
+
+00:06:51.210 --> 00:06:52.070
+Miles off.
+
+00:06:52.070 --> 00:06:53.160
+Next time.
+
+00:06:53.160 --> 00:06:55.010
+Next time.
+

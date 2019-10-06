@@ -1,0 +1,86 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.880
+[MUSIC PLAYING]
+
+00:00:11.530 --> 00:00:13.960
+SPEAKER: Last time, we talked
+about how the jQuery dollar
+
+00:00:13.960 --> 00:00:16.680
+function helps
+you find elements.
+
+00:00:16.680 --> 00:00:19.300
+That dollar function does not
+return DOM elements themselves,
+
+00:00:19.300 --> 00:00:21.130
+though, but rather
+a wrapper that
+
+00:00:21.130 --> 00:00:23.430
+augments the element
+with many useful helper
+
+00:00:23.430 --> 00:00:25.600
+APIs that jQuery provides.
+
+00:00:25.600 --> 00:00:30.040
+For example, there are addClass,
+removeClass, and toggleClass,
+
+00:00:30.040 --> 00:00:31.540
+and they do exactly
+what you think
+
+00:00:31.540 --> 00:00:33.730
+they do-- they add,
+remove, or toggle
+
+00:00:33.730 --> 00:00:35.800
+CSS classes on an element.
+
+00:00:35.800 --> 00:00:37.690
+This feature is now
+present on the DOM
+
+00:00:37.690 --> 00:00:40.540
+directly on the
+class list property.
+
+00:00:40.540 --> 00:00:43.090
+This feature is sufficiently
+supported all the way back
+
+00:00:43.090 --> 00:00:44.360
+to IE 10.
+
+00:00:44.360 --> 00:00:46.380
+Handy.
+
+00:00:46.380 --> 00:00:46.920
+See?
+
+00:00:46.920 --> 00:00:49.420
+jQuery really did a lot
+for the open web platform
+
+00:00:49.420 --> 00:00:52.100
+and we have some more episodes
+lined up on this topic.
+
+00:00:52.100 --> 00:00:55.000
+So if you find this interesting,
+you should subscribe.
+
+00:00:55.000 --> 00:00:57.310
+Previously, we talked
+about querySelector,
+
+00:00:57.310 --> 00:01:00.090
+so why not watch that
+one in the meantime?
+

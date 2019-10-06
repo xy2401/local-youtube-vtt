@@ -1,0 +1,491 @@
+WEBVTT
+Kind: captions
+Language: zh-CN
+
+00:00:00.000 --> 00:00:03.680
+ 
+
+00:00:04.482 --> 00:00:05.940
+这里是  Polycasters 开发者
+ROB DODSON: Hey there, Polycasters.
+
+00:00:05.940 --> 00:00:06.920
+我是 Rob
+Rob here.
+
+00:00:06.920 --> 00:00:08.980
+几集以前  我就开始去了解
+A few episodes ago, I started this little journey
+
+00:00:08.980 --> 00:00:12.140
+去试着弄明白 Polymer 的数据绑定系统
+to try and understand Polymer's data binding system.
+
+00:00:12.140 --> 00:00:14.980
+从那时候开始  我就观察它的性能影响情况
+And since then we've looked at property effects, path
+
+00:00:14.980 --> 00:00:18.130
+信息通知功能  并且观察使用 observer 时在 JavaScript里
+notifications, and watching for changes in your JavaScript
+
+00:00:18.130 --> 00:00:19.710
+发生的变化
+using observers.
+
+00:00:19.710 --> 00:00:21.990
+因此  今天让我们一起来近距离看看
+So today, we're going to bring it all to a close
+
+00:00:21.990 --> 00:00:24.240
+数组绑定究竟是什么情况
+by finally looking at array bindings.
+
+00:00:24.240 --> 00:00:26.590
+让我们现在就开始看看
+Without further ado, let's hop in.
+
+00:00:26.590 --> 00:00:30.266
+好的  假设你获取到一个数组形式的列表
+All right, so let's say you've got a list of users in an array.
+
+00:00:30.266 --> 00:00:32.390
+或许会是广告栏形式  或许是一个排行榜形式
+Maybe it's like a leaderboard or a high scores list
+
+00:00:32.390 --> 00:00:33.532
+或者像这样的
+or something like that.
+
+00:00:33.532 --> 00:00:37.709
+你也学会想把这个用户显示在第一个位置上
+And you always want to show the user that is in the first position.
+
+00:00:37.709 --> 00:00:39.250
+一般来说  你也许会这么做
+Now logically, you might do something
+
+00:00:39.250 --> 00:00:43.420
+你会采用数组的方式去绑定用户  如 users
+like this, where you try to use array syntax to bind to users
+
+00:00:43.420 --> 00:00:45.230
+加方括号 0
+square brackets 0.
+
+00:00:45.230 --> 00:00:47.600
+然而  这样的语法实际上对于 Polymer 的
+However, syntax like that is not actually supported
+
+00:00:47.600 --> 00:00:49.590
+数据绑定不被支持
+in a Polymer binding.
+
+00:00:49.590 --> 00:00:52.260
+相反 Polymer 处理这些数据项  却很像
+Instead, Polymer treats items in an array much the same way
+
+00:00:52.260 --> 00:00:54.185
+对象调用方法的形式
+as it treats subproperties in an object.
+
+00:00:54.185 --> 00:00:55.590
+就是加上路径
+It turns them into paths.
+
+00:00:55.590 --> 00:01:00.370
+因此你获得信息时  从 users 加方括号 再加0
+So you've got users square bracket 0,
+
+00:01:00.370 --> 00:01:03.476
+变成了 users 加点再加 0 的方式
+and Polymer's actually going to change that to users.0.
+
+00:01:06.589 --> 00:01:08.130
+最后来添个插曲  我给你展示下
+Now in the last episode, I showed you
+
+00:01:08.130 --> 00:01:10.680
+你使用 observer 会发现一些变化
+how you can watch for changes on a path using observers.
+
+00:01:10.680 --> 00:01:13.080
+你可以在这个地方检查下
+You can check that out over there.
+
+00:01:13.080 --> 00:01:17.670
+因此让我们用新的方法来绑定用户数据
+So let's change our binding to use this new approach.
+
+00:01:17.670 --> 00:01:20.570
+我将创建一个属性变量  取名为 firstUser
+I'm going to create a property called firstUser.
+
+00:01:20.570 --> 00:01:23.930
+然后  我会创建一个观察者
+And then, I'm going to creater an observer which
+
+00:01:23.930 --> 00:01:27.320
+用来观察用户的数组内容  数组在这里
+is watching the user's array-- this array right here.
+
+00:01:27.320 --> 00:01:31.315
+我们用一个星号来观察数组内容
+It's watching that user's array using an asterisk.
+
+00:01:31.315 --> 00:01:33.810
+请记住  这个星号或者万能表达式
+And remember, that asterisk or that wild card
+
+00:01:33.810 --> 00:01:35.810
+能查看到数组的任何内容改变情况
+will watch for any changes in the array
+
+00:01:35.810 --> 00:01:37.930
+或者它对象的方法和其他内容
+or its subproperties, et cetera.
+
+00:01:37.930 --> 00:01:42.600
+它将调用这个操作函数  当第一个参数变量的
+And it will call this handler function with a change record
+
+00:01:42.600 --> 00:01:45.314
+内容顺序发生变化
+as the sort of first argument.
+
+00:01:45.314 --> 00:01:47.355
+然后我再传第二个参数
+And then I can actually pass the second argument.
+
+00:01:47.355 --> 00:01:50.330
+我可以传 0
+I can pass 0.
+
+00:01:50.330 --> 00:01:52.640
+这个将作为第二个参数传给
+And that will then serve as the second argument
+
+00:01:52.640 --> 00:01:55.270
+这个函数  这里将被视为 index
+to the function, which we'll use as our index.
+
+00:01:55.270 --> 00:01:56.950
+因此这个数组如果发生变化
+So anytime this array changes, we're
+
+00:01:56.950 --> 00:01:59.220
+我们将通过这个操作符获得变化的记录
+going to get a change record in this handler.
+
+00:01:59.220 --> 00:02:01.250
+如果你想起来前几集的视频
+And if you recall from the previous episode,
+
+00:02:01.250 --> 00:02:04.540
+可以想到  改变记录我们可以使用记录的多种属性
+change records have multiple properties that we can use.
+
+00:02:04.540 --> 00:02:07.200
+其中一个就是 base 属性
+One of those properties is the base property,
+
+00:02:07.200 --> 00:02:11.290
+这就是以前经常用星号引用的对象
+which always refers to the object previous to the asterisk.
+
+00:02:11.290 --> 00:02:16.010
+因此在这个例子里  它也就经常回调访问用户的数组
+So in this case, it's always going to refer back to our user's array.
+
+00:02:16.010 --> 00:02:19.040
+因此我们可以发现  实际上我们想要的是 base 对象
+So we can say that we want the base object, and we
+
+00:02:19.040 --> 00:02:20.970
+并且获取到 index 对应的条目
+want the item at that index.
+
+00:02:20.970 --> 00:02:25.330
+因此这可以说  返回的是 users 的 0 位置数据
+So this is basically saying, hey, return users 0.
+
+00:02:25.330 --> 00:02:30.290
+所以  这里请看右边  可以通过实际的操作来观察下
+So over here on the right, we can actually see this in practice.
+
+00:02:30.290 --> 00:02:33.020
+我将使用精巧的 Chrome DevTools 工具
+I'm going to use my little tricky Chrome DevTools
+
+00:02:33.020 --> 00:02:35.010
+方法来选择我们的条目
+method to select my item.
+
+00:02:35.010 --> 00:02:36.570
+我将用 Polymer 的 unshift 方法
+I'll use Polymer's unshift method
+
+00:02:36.570 --> 00:02:40.700
+向用户数组里再传一些新的值
+to pass a new value into its user's array.
+
+00:02:40.700 --> 00:02:43.000
+然后我们就可以看到上面内容发生了改变
+And then we can see that that is reflecting up there,
+
+00:02:43.000 --> 00:02:44.830
+因为一旦我们设置了新的内容属性
+because once we've set this new property,
+
+00:02:44.830 --> 00:02:47.270
+它将马上更新我们这里绑定的数据内容
+it's updating our binding right there.
+
+00:02:47.270 --> 00:02:48.710
+并且这两边是匹配的
+And those two match up.
+
+00:02:48.710 --> 00:02:49.274
+酷
+Cool.
+
+00:02:49.274 --> 00:02:51.440
+现在  我们能否简化下这个程序呢
+Now, I was wondering if I could simplify this a bit,
+
+00:02:51.440 --> 00:02:53.356
+并且  我注意到文档里  它实际
+and I noticed in the documentation it actually
+
+00:02:53.356 --> 00:02:55.810
+采用的是记录绑定方式
+recommends using a computed binding.
+
+00:02:55.810 --> 00:02:59.900
+因此让我改下代码  用另外一个种方式
+So let's change the code to use that approach instead.
+
+00:02:59.900 --> 00:03:02.780
+因此  现在我已经获得了  而不是已经创建了一个属性
+So now I've got-- instead of a property that I've created,
+
+00:03:02.780 --> 00:03:06.450
+我仅用一个计算绑定函数  这里我称作 computeUser
+I'm just using a computed binding function I'm calling computeUser.
+
+00:03:06.450 --> 00:03:10.520
+我任然使用这个万能表达式方法来观察数组
+I'm still using the wild card approach to observe that array.
+
+00:03:10.520 --> 00:03:13.870
+当你观察 computeUser 的时候  它任然可以获得改变的记录
+And when you look at computeUser, it still gets a change record.
+
+00:03:13.870 --> 00:03:16.280
+它任然获得 index 变量  并且它仅仅
+It still gets that index argument, and it just-- instead
+
+00:03:16.280 --> 00:03:19.410
+设置一个属性  仅返回
+of setting a property, it just returns the value back
+
+00:03:19.410 --> 00:03:20.890
+它绑定的值
+into this binding.
+
+00:03:20.890 --> 00:03:22.862
+让我们稍作调整
+So let's give that a shot.
+
+00:03:22.862 --> 00:03:23.666
+好的
+All right.
+
+00:03:23.666 --> 00:03:30.150
+在这里  我将使用 unshift 函数向先前的数组里增加一个 user 变量
+Go over here, I'll unshift a new user into the front of the array.
+
+00:03:30.150 --> 00:03:31.590
+起作用了
+And everything works.
+
+00:03:31.590 --> 00:03:34.630
+现在对我来说  这个排序给了我些启示
+Now for me, this was kind of a revelation of sorts.
+
+00:03:34.630 --> 00:03:37.510
+我意识到计算绑定和观察者方式
+I realized that computed bindings and observers
+
+00:03:37.510 --> 00:03:40.467
+基本是相同的方式运行的
+basically work the exact same way.
+
+00:03:40.467 --> 00:03:42.050
+因此  如果你已经懂了一点的话
+And so if you understand one, then you
+
+00:03:42.050 --> 00:03:45.650
+随后你就会懂的其他的方法  这真的很棒
+understand the magic of the other, which is pretty cool.
+
+00:03:45.650 --> 00:03:47.970
+现在你也许会怀疑  如果我们仅
+Now you might be wondering, if we're just
+
+00:03:47.970 --> 00:03:50.410
+使用 path  我们就不能
+working with paths, how come I can't just
+
+00:03:50.410 --> 00:03:56.190
+绑定子属性啦  如果你想这么操作  就用 users.0 吗
+bind to the subproperty, if you will, this users.0 path?
+
+00:03:56.190 --> 00:03:58.660
+并且因为我们使用的是 Polymer 的数组方法
+And then since we're using Polymer's array methods, which
+
+00:03:58.660 --> 00:04:02.137
+它将负责通知  绑定的子项目属性
+normally will notify items-- subproperty
+
+00:04:02.137 --> 00:04:04.470
+发生了改变  如果我们使用的是这些数组方法
+bindings of changes, if we're using those array methods,
+
+00:04:04.470 --> 00:04:07.890
+如果我们不希望这些更新发生改变  这又该怎么办
+then how come these things aren't updating as I would expect them to?
+
+00:04:07.890 --> 00:04:09.600
+好的  这将发生什么
+Well, what's actually going on is
+
+00:04:09.600 --> 00:04:12.020
+是由这个初始值决定的
+this will work for the initial render.
+
+00:04:12.020 --> 00:04:14.880
+第一次我们是这么设定的  我将会发现数组里面第一个位置的
+So the first time I do this, I will see the first place user
+
+00:04:14.880 --> 00:04:15.700
+内容
+from my array.
+
+00:04:15.700 --> 00:04:17.540
+我们看见的是 Eric
+I'll see Eric over there.
+
+00:04:17.540 --> 00:04:21.370
+但是让我们看看如果我们输入进第二个 user 将会发生什么
+But let's look at what happens when I try and push in a second user.
+
+00:04:21.370 --> 00:04:26.370
+使用 unshift  这次我们将增加一个 Boris 姓名
+So I'll unshift, and this time I'll ad a user named Boris.
+
+00:04:26.370 --> 00:04:28.690
+很显然没发生变化  尽管
+Nothing updates visually, although we
+
+00:04:28.690 --> 00:04:31.360
+我们可以看到用户数组发生了改变
+can verify that the users array has changed.
+
+00:04:31.360 --> 00:04:33.820
+因此 Boris 现在应该就在第一个位置了
+So Boris is now in that first position.
+
+00:04:33.820 --> 00:04:36.320
+发生这种情况的原因是  在这种机制下
+And the reason this is happening is because, under the hood,
+
+00:04:36.320 --> 00:04:39.360
+Polymer 获取的是初始的 users.0 的数据
+Polymer takes that initial path of users.0,
+
+00:04:39.360 --> 00:04:43.330
+这种方式也有其自身的特点  不变的关键字
+and it turns it into its own special, immutable key which
+
+00:04:43.330 --> 00:04:45.371
+可以使你能一直跟踪某些数据项
+you can use to keep track of the item.
+
+00:04:45.371 --> 00:04:47.370
+这种方式  可以常用来回调先前的项
+This way, it can always refer back to that item,
+
+00:04:47.370 --> 00:04:50.720
+即使数组的顺序已经发生了改变
+even if the order in the array has changed.
+
+00:04:50.720 --> 00:04:53.670
+因此这就意味着  你不能真正可靠的
+And so that means that you can't really reliably use
+
+00:04:53.670 --> 00:04:55.450
+使用这些方法
+this approach right here.
+
+00:04:55.450 --> 00:04:57.690
+最好的举措就是
+The best practice way of doing things
+
+00:04:57.690 --> 00:05:02.070
+同时采用观察者方式和计算绑定方式
+is to either use an observer or use a computed binding.
+
+00:05:02.070 --> 00:05:06.110
+到现在  你已经是应该 Polymer 数据绑定牛人了
+So with that, you are now Polymer data binding masters.
+
+00:05:06.110 --> 00:05:08.060
+下周  我们将发布一个小的推文
+Now last week, we sent out this little tweet
+
+00:05:08.060 --> 00:05:10.671
+来收集大家的看法  看你们下集想听 Polycast 的那一部分的内容
+asking what you wanted to see in the next episode of Polycast.
+
+00:05:10.671 --> 00:05:12.920
+你们所有人都可以投票  并且也可以看到单元测试
+You all voted and said you wanted to see unit testing.
+
+00:05:12.920 --> 00:05:14.753
+因此确保你一直关注我们  下周我们将
+So be sure to stick around when next week we
+
+00:05:14.753 --> 00:05:16.055
+发布网络测试题
+cover web component tester.
+
+00:05:16.055 --> 00:05:18.680
+同时  如果您喜欢我们这集视频的话  请点击下面
+In the meantime, though, be sure to click that little Subscribe
+
+00:05:18.680 --> 00:05:19.910
+的订阅按钮
+button if you've enjoyed this episode.
+
+00:05:19.910 --> 00:05:21.411
+如果你有任何疑问
+If you have questions for us, you
+
+00:05:21.411 --> 00:05:24.760
+你可以联系我们  用你的社交网络发布 同时加上 #AskPolymer
+can ping us on a social network of your choosing at #AskPolymer.
+
+00:05:24.760 --> 00:05:26.510
+总之  感谢您的收看
+As always, thank you so much for watching.
+
+00:05:26.510 --> 00:05:28.910
+我们下次再见
+I'll see you next time.
+
+00:05:28.910 --> 00:05:32.560
+播放音乐
+[MUSIC PLAYING]
+

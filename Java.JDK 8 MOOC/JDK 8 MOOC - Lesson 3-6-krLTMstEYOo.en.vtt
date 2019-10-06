@@ -1,0 +1,380 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.750 --> 00:00:03.310
+[music]
+
+00:00:13.490 --> 00:00:15.940
+Hello and welcome to section 6
+
+00:00:15.940 --> 00:00:19.890
+of lesson 3. In this section we're going
+to talk a bit about
+
+00:00:19.890 --> 00:00:23.689
+how you can debug Lambda expressions
+
+00:00:23.689 --> 00:00:27.369
+and streams. We look at
+
+00:00:27.369 --> 00:00:32.400
+how streams work. What they really do is
+provide us with a high level of abstraction
+
+00:00:32.400 --> 00:00:35.480
+around the problem that we're trying to
+solve. Now that's
+
+00:00:35.480 --> 00:00:39.129
+really good from the point of view
+of how we watch our code,
+
+00:00:39.129 --> 00:00:42.379
+because it makes our codea lot clearer,
+makes the code a lot
+
+00:00:42.379 --> 00:00:47.420
+easier to understand. But if the code is
+not doing exactly what we wanted to do
+
+00:00:47.420 --> 00:00:51.610
+and we need to start debugging that code
+it does become
+
+00:00:51.610 --> 00:00:55.269
+more of an issue when we're using Lambdas
+and streams.
+
+00:00:55.269 --> 00:00:59.790
+A lot of stuff is happening underneath the
+library code
+
+00:00:59.790 --> 00:01:04.180
+that's being used by the streams API is
+doing a lot of work on our behalf,
+
+00:01:04.180 --> 00:01:08.590
+which we can't see in our code. It's
+not easy
+
+00:01:08.590 --> 00:01:11.720
+when we want to set a breakpoint because
+we can only set it 
+
+00:01:11.720 --> 00:01:15.030
+on every coarse level in terms what
+streams doing.
+
+00:01:15.030 --> 00:01:19.910
+And because of the way things happen in
+terms of the actual
+
+00:01:19.910 --> 00:01:24.500
+execution of the stream code where we optimize
+things in terms of merging
+
+00:01:24.500 --> 00:01:28.360
+operations -that type of thing- it also
+
+00:01:28.360 --> 00:01:31.710
+makes it harder for us to determine what's
+actually happening
+
+00:01:31.710 --> 00:01:36.840
+in terms the processing. Let's look at
+
+00:01:36.840 --> 00:01:40.840
+how we can do some simple debugging.
+what's happening
+
+00:01:40.840 --> 00:01:44.730
+between methods in a stream? To do
+this
+
+00:01:44.730 --> 00:01:48.810
+we can use the peek method, which we saw
+a lesson 2.
+
+00:01:48.810 --> 00:01:52.360
+Remember that the peek method takes the
+input stream elements
+
+00:01:52.360 --> 00:01:56.270
+and passes them directly to the
+output stream, so the output stream is
+
+00:01:56.270 --> 00:01:57.970
+exactly the same as the input stream.
+
+00:01:57.970 --> 00:02:01.810
+What it also allows us to do is to look at
+those elements
+
+00:02:01.810 --> 00:02:05.570
+as they go past. We can use something
+like a print statement
+
+00:02:05.570 --> 00:02:09.989
+to find out what the data that's being
+processed in that stream
+
+00:02:09.989 --> 00:02:13.049
+actually is. If we look at this example
+
+00:02:13.049 --> 00:02:17.049
+we're taking a set of words from public
+file,
+
+00:02:17.049 --> 00:02:19.409
+reading those lines
+
+00:02:19.409 --> 00:02:23.150
+and then we're passing that flatMap and we're
+using a
+
+00:02:23.150 --> 00:02:27.569
+stream.of method call with the regular
+expression to split the lines
+
+00:02:27.569 --> 00:02:33.780
+into set of words. That stream of words
+is then passed into a map
+
+00:02:33.780 --> 00:02:38.180
+where we convert them to lower case. That's then passed to distinct so we can remove
+
+00:02:38.180 --> 00:02:39.209
+duplicates;
+
+00:02:39.209 --> 00:02:44.450
+that's then passed to sort. So we sort by length
+and finally we collect it into a list.
+
+00:02:44.450 --> 00:02:47.799
+Obviously if something is not quite
+working
+
+00:02:47.799 --> 00:02:50.819
+in terms of the way that code processes
+the
+
+00:02:50.819 --> 00:02:54.879
+stream from our perspective we need to try and
+figure out what's going on.
+
+00:02:54.879 --> 00:02:58.310
+And we can use peek to do that. So we
+can put a
+
+00:02:58.310 --> 00:03:02.189
+peek call between where we read the
+lines
+
+00:03:02.189 --> 00:03:05.200
+and the flatMap. That way we can
+print out
+
+00:03:05.200 --> 00:03:08.680
+the lines that are coming from the file
+to be checked at the lines that we're
+
+00:03:08.680 --> 00:03:09.299
+seeing
+
+00:03:09.299 --> 00:03:12.299
+in the stream are the lines we expect
+from the file.
+
+00:03:12.299 --> 00:03:16.609
+if maybe a regular expression isn't
+working correctly
+
+00:03:16.609 --> 00:03:19.689
+what we can then do is move the peek
+
+00:03:19.689 --> 00:03:23.060
+to after the flatMap. 
+That way we can
+
+00:03:23.060 --> 00:03:26.760
+then look at the words that are coming
+out from the flatMap
+
+00:03:26.760 --> 00:03:29.849
+make sure that the regular expression is
+processing the lines of text
+
+00:03:29.849 --> 00:03:34.220
+in the way that we want it to. You can see
+here that we can gradually move that
+
+00:03:34.220 --> 00:03:34.609
+peek and
+
+00:03:34.609 --> 00:03:37.620
+we can see different parts of the stream as
+
+00:03:37.620 --> 00:03:42.290
+we're processing it. If we want to set a
+breakpoint,
+
+00:03:42.290 --> 00:03:46.609
+we can also use peek for that so that we
+can set a point
+
+00:03:46.609 --> 00:03:49.729
+in the stream where we want to actually
+examine what's going on.
+
+00:03:49.729 --> 00:03:53.040
+In terms of
+
+00:03:53.040 --> 00:03:56.609
+implementing that we can actually use a
+null operation, so
+
+00:03:56.609 --> 00:04:00.729
+something that does nothing in effect.
+The peek will simply pass the
+
+00:04:00.729 --> 00:04:02.919
+element to the input stream directly to the output stream and
+
+00:04:02.919 --> 00:04:06.919
+do anything with them as
+they go past. But it allows us to set a
+
+00:04:06.919 --> 00:04:07.900
+breakpoint
+
+00:04:07.900 --> 00:04:11.879
+between the flatMap and map so, if we
+want to we can actually
+
+00:04:11.879 --> 00:04:16.549
+user IDE and examine various things at
+that point.
+
+00:04:16.549 --> 00:04:21.250
+One thing to remember is that some debugging
+tools don't like empty bodies, so you need
+
+00:04:21.250 --> 00:04:21.699
+to
+
+00:04:21.699 --> 00:04:26.349
+potentially do something there.
+
+00:04:26.349 --> 00:04:29.580
+The other thing we can do is use method
+reference.
+
+00:04:29.580 --> 00:04:33.160
+And rather than having the Lambda
+expression
+
+00:04:33.160 --> 00:04:37.310
+hold all the code that we're actually
+executing we can kind 
+
+00:04:37.310 --> 00:04:40.759
+of shift it out because what happens
+internally
+
+00:04:40.759 --> 00:04:44.849
+is that the Lambda expression is not
+compiled into the equivalent
+
+00:04:44.849 --> 00:04:48.629
+anonymous inner class. We use the invokedynamic call
+
+00:04:48.629 --> 00:04:53.400
+and then decide on the implementation
+at runtime. The drawbacks to that is obviously 
+
+00:04:53.400 --> 00:04:53.949
+that the
+
+00:04:53.949 --> 00:04:57.190
+code that the IDE is going to look at
+will have an invokedynamicbytecode 
+
+00:04:57.190 --> 00:05:01.280
+and it makes it harder for us
+to actually set breakpoints.
+
+00:05:01.280 --> 00:05:05.909
+Rather than doing it that way we can actually
+take code we've got in Lambda
+
+00:05:05.909 --> 00:05:06.659
+expression
+
+00:05:06.659 --> 00:05:10.460
+and put it in a separate method. Put
+the method inside
+
+00:05:10.460 --> 00:05:14.190
+our class and then replace the Lambda
+expression
+
+00:05:14.190 --> 00:05:17.729
+code with the method reference to our new
+method.
+
+00:05:17.729 --> 00:05:20.889
+Having done that we can set
+breakpoints
+
+00:05:20.889 --> 00:05:24.360
+on the statements in the new method
+because those will be compiled normally
+
+00:05:24.360 --> 00:05:27.780
+and we can see exactly what's going on
+and we can use our debugger
+
+00:05:27.780 --> 00:05:33.560
+to examine the program state. To summarise 6,
+
+00:05:33.560 --> 00:05:37.479
+debugging is harder with Lambdas and
+streams.
+
+00:05:37.479 --> 00:05:41.090
+Because of the way that the code gets
+merged because of the way that there's a
+
+00:05:41.090 --> 00:05:41.690
+lot happening
+
+00:05:41.690 --> 00:05:45.069
+underneath in terms of the library code it does
+make life harder.
+
+00:05:45.069 --> 00:05:49.259
+The fact that we compile to invokedynamicbytecodes and
+
+00:05:49.259 --> 00:05:52.990
+the implementations isn't decided until runtime
+makes life harder from the point
+
+00:05:52.990 --> 00:05:53.319
+of view of
+
+00:05:53.319 --> 00:05:57.800
+breakpoints. Using peek, using method
+references
+
+00:05:57.800 --> 00:06:01.630
+can simplify things and make life easier
+when you're trying to
+
+00:06:01.630 --> 00:06:05.020
+determine what's actually happening in
+your streams or Lambda code.
+
+00:06:05.020 --> 00:06:08.949
+And that is the end of section 6.
+

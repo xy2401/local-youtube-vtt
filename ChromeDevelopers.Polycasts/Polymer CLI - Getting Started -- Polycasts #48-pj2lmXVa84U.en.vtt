@@ -1,0 +1,1205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.925
+[MUSIC PLAYING]
+
+00:00:04.925 --> 00:00:06.050
+Hey there, Polycasters.
+
+00:00:06.050 --> 00:00:06.550
+Rob here.
+
+00:00:06.550 --> 00:00:07.680
+Welcome back to the show.
+
+00:00:07.680 --> 00:00:09.055
+So today on
+Polycast, we're going
+
+00:00:09.055 --> 00:00:11.770
+to looking at the Polymer
+App Tool Box and the recently
+
+00:00:11.770 --> 00:00:13.360
+released Polymer CLI.
+
+00:00:13.360 --> 00:00:15.360
+To get started,
+over in my terminal,
+
+00:00:15.360 --> 00:00:19.980
+I'm going to run npm install
+dash g polymer dash cli.
+
+00:00:19.980 --> 00:00:21.580
+I've already gotten
+this installed,
+
+00:00:21.580 --> 00:00:23.865
+so I'm just going to go ahead
+and keep churning along.
+
+00:00:23.865 --> 00:00:25.240
+The next thing
+I'm going to do is
+
+00:00:25.240 --> 00:00:28.640
+I'm going to do a
+make dir my dash app.
+
+00:00:28.640 --> 00:00:30.950
+So create a new directory
+to hold my application.
+
+00:00:30.950 --> 00:00:32.770
+CD into that new directory.
+
+00:00:32.770 --> 00:00:35.830
+And then I can run
+the Polymer init.
+
+00:00:35.830 --> 00:00:38.190
+And it's going to ask
+me, what kind of thing
+
+00:00:38.190 --> 00:00:40.206
+do I want to init, because
+it can scaffold out
+
+00:00:40.206 --> 00:00:41.830
+all sorts of interesting
+things for me.
+
+00:00:41.830 --> 00:00:44.210
+So it could scaffold
+out an element.
+
+00:00:44.210 --> 00:00:46.050
+It could scaffold
+out a blank project.
+
+00:00:46.050 --> 00:00:48.674
+It could scaffold out
+a demo app, like shop.
+
+00:00:48.674 --> 00:00:50.340
+In this case, what
+I'm going to be doing
+
+00:00:50.340 --> 00:00:52.010
+is using this app
+drawer template.
+
+00:00:52.010 --> 00:00:53.490
+So this very last option here.
+
+00:00:53.490 --> 00:00:54.985
+I'll go ahead and select that.
+
+00:00:54.985 --> 00:00:57.710
+And that's going to go and
+stamp out a few files for me.
+
+00:00:57.710 --> 00:01:00.760
+And it's also going to run
+bower and go out and install
+
+00:01:00.760 --> 00:01:03.160
+a bunch of components to
+use in my application.
+
+00:01:03.160 --> 00:01:04.890
+So under the hood,
+this is installing
+
+00:01:04.890 --> 00:01:06.260
+app route and app location.
+
+00:01:06.260 --> 00:01:08.081
+It's installing
+app layout elements
+
+00:01:08.081 --> 00:01:09.580
+and a bunch of other
+goodies that we
+
+00:01:09.580 --> 00:01:12.760
+can use to make sure we have
+a really nice performing app.
+
+00:01:12.760 --> 00:01:14.090
+So that's done.
+
+00:01:14.090 --> 00:01:15.900
+The next thing that
+I can do with the CLI
+
+00:01:15.900 --> 00:01:17.800
+is I can actually use
+its built-in server
+
+00:01:17.800 --> 00:01:18.940
+to preview the app.
+
+00:01:18.940 --> 00:01:22.910
+So I'll run polymer
+serve dash dash open.
+
+00:01:22.910 --> 00:01:25.810
+And this is going to
+actually boot up my browser.
+
+00:01:25.810 --> 00:01:29.400
+You can see, here's that
+app template running inside
+
+00:01:29.400 --> 00:01:30.231
+of Chrome.
+
+00:01:30.231 --> 00:01:32.480
+I'll zoom in a little bit
+so it's a bit easier to see.
+
+00:01:32.480 --> 00:01:34.110
+And you can see
+that as I'm clicking
+
+00:01:34.110 --> 00:01:36.260
+on these different items
+over in the sidebar,
+
+00:01:36.260 --> 00:01:39.250
+if you check our
+URL here, you can
+
+00:01:39.250 --> 00:01:41.690
+see that that is updating
+as well as we go from View
+
+00:01:41.690 --> 00:01:43.380
+One, View Two, to View Three.
+
+00:01:43.380 --> 00:01:45.170
+So we know that app
+route is working.
+
+00:01:45.170 --> 00:01:47.220
+And we've basically
+got a single page web
+
+00:01:47.220 --> 00:01:50.240
+app that's just ready for us
+to start adding content to.
+
+00:01:50.240 --> 00:01:53.270
+So the next thing I want to do
+is just create my own element.
+
+00:01:53.270 --> 00:01:57.026
+Over in my
+application, I'm going
+
+00:01:57.026 --> 00:01:58.120
+to boot up my text editor.
+
+00:01:58.120 --> 00:02:02.530
+And in my source directory,
+this is where all of my elements
+
+00:02:02.530 --> 00:02:03.030
+live.
+
+00:02:03.030 --> 00:02:05.150
+So you can see I've got
+one here called my app,
+
+00:02:05.150 --> 00:02:07.640
+and then a few others
+called like my view 123,
+
+00:02:07.640 --> 00:02:09.210
+things like that.
+
+00:02:09.210 --> 00:02:13.180
+So I'm just going to go ahead
+and create a new file called
+
+00:02:13.180 --> 00:02:16.560
+my dash new view dot html.
+
+00:02:16.560 --> 00:02:19.949
+And I've already gone ahead
+and copied a little markup
+
+00:02:19.949 --> 00:02:21.240
+that I can just chuck in there.
+
+00:02:21.240 --> 00:02:23.950
+So I'm going to-- from my
+Bower components directory,
+
+00:02:23.950 --> 00:02:25.640
+I'm going to import Polymer.
+
+00:02:25.640 --> 00:02:28.770
+I'm going to use the DOM module
+element to create a new element
+
+00:02:28.770 --> 00:02:30.260
+called my-new-view.
+
+00:02:30.260 --> 00:02:32.250
+Its template is very simple.
+
+00:02:32.250 --> 00:02:34.490
+We've just got a single
+style inside of here
+
+00:02:34.490 --> 00:02:37.159
+to make sure that it lays
+out in a block fashion.
+
+00:02:37.159 --> 00:02:38.700
+And then I've also
+got an H1 in there
+
+00:02:38.700 --> 00:02:41.370
+so I can verify that
+some text is working,
+
+00:02:41.370 --> 00:02:43.480
+got something rendering
+on the screen.
+
+00:02:43.480 --> 00:02:46.534
+Lastly, I've got this
+little block down here
+
+00:02:46.534 --> 00:02:47.950
+at the bottom,
+which is just going
+
+00:02:47.950 --> 00:02:50.610
+to register my
+element name and say
+
+00:02:50.610 --> 00:02:52.460
+that it's called my-new-view.
+
+00:02:52.460 --> 00:02:52.960
+OK.
+
+00:02:52.960 --> 00:02:53.640
+Good to go.
+
+00:02:53.640 --> 00:02:56.530
+Now, I'm going to switch
+over to my index file
+
+00:02:56.530 --> 00:02:59.410
+and make sure that I
+can add my-new-view
+
+00:02:59.410 --> 00:03:02.875
+to my list of different pages
+that we can switch between.
+
+00:03:02.875 --> 00:03:04.250
+So I'm going to
+scroll down here,
+
+00:03:04.250 --> 00:03:07.254
+and you'll notice that there's a
+whole bunch of stuff kind of up
+
+00:03:07.254 --> 00:03:08.420
+in the head of the document.
+
+00:03:08.420 --> 00:03:10.160
+There's a bunch of script
+tags inside of here.
+
+00:03:10.160 --> 00:03:11.320
+And you might be
+wondering like, what
+
+00:03:11.320 --> 00:03:12.839
+is all of that JavaScript doing?
+
+00:03:12.839 --> 00:03:14.630
+So let me walk through
+that really quickly.
+
+00:03:14.630 --> 00:03:16.380
+To start off with,
+we've got this bit here
+
+00:03:16.380 --> 00:03:17.720
+that says window.Polymer.
+
+00:03:17.720 --> 00:03:20.430
+So these are settings, kind
+of like global settings,
+
+00:03:20.430 --> 00:03:23.370
+that we're setting for Polymer
+so that when the app boots up,
+
+00:03:23.370 --> 00:03:25.530
+it knows how it should behave.
+
+00:03:25.530 --> 00:03:28.270
+This first one,
+lazyRegister, what that does
+
+00:03:28.270 --> 00:03:30.740
+is that tells Polymer
+if there's a tag
+
+00:03:30.740 --> 00:03:33.010
+and you've already got like
+an attribute or something
+
+00:03:33.010 --> 00:03:34.620
+to find on it, but
+you have not loaded
+
+00:03:34.620 --> 00:03:36.230
+the definition for
+that element yet,
+
+00:03:36.230 --> 00:03:38.700
+when that definition
+does load, it
+
+00:03:38.700 --> 00:03:41.210
+should look to see what those
+values are on those attributes
+
+00:03:41.210 --> 00:03:43.630
+and then serialize
+them to the properties
+
+00:03:43.630 --> 00:03:44.800
+inside of the element.
+
+00:03:44.800 --> 00:03:48.979
+The other setting here is called
+dom, which is set to shadow.
+
+00:03:48.979 --> 00:03:51.020
+And what that means is if
+we're on a browser that
+
+00:03:51.020 --> 00:03:53.640
+supports native Shadow DOM,
+lets go ahead and just use
+
+00:03:53.640 --> 00:03:54.630
+native Shadow DOM.
+
+00:03:54.630 --> 00:03:57.090
+If we're on a browser which
+does not support Shadow DOM,
+
+00:03:57.090 --> 00:04:00.131
+we're going to use the Shady DOM
+shim that comes with Polymer.
+
+00:04:00.131 --> 00:04:02.755
+Below that, we're actually going
+to do a little feature detect.
+
+00:04:02.755 --> 00:04:04.840
+So we're going to see
+if the browser supports
+
+00:04:04.840 --> 00:04:05.640
+what components.
+
+00:04:05.640 --> 00:04:08.270
+If it does not, this
+line right down here
+
+00:04:08.270 --> 00:04:11.140
+is going to lazy load
+in the web components
+
+00:04:11.140 --> 00:04:14.347
+polyfills in the form of
+web components lite js.
+
+00:04:14.347 --> 00:04:16.180
+And then lastly, we've
+got this little chunk
+
+00:04:16.180 --> 00:04:19.075
+which is going to check to see
+if service worker is supported.
+
+00:04:19.075 --> 00:04:21.450
+And if it is, it's going to
+go ahead and try and register
+
+00:04:21.450 --> 00:04:22.711
+a service worker for us.
+
+00:04:22.711 --> 00:04:24.210
+And you look over
+here in our files,
+
+00:04:24.210 --> 00:04:26.440
+you'll see that there's a
+serviceworker.js which was
+
+00:04:26.440 --> 00:04:28.727
+stamped out by the Polymer CLI.
+
+00:04:28.727 --> 00:04:30.560
+So this is kind of cool
+because our template
+
+00:04:30.560 --> 00:04:32.710
+is going to go ahead
+and try and make sure
+
+00:04:32.710 --> 00:04:34.270
+that it can work offline.
+
+00:04:34.270 --> 00:04:36.424
+And in fact, when we run
+Polymer CLI's build step,
+
+00:04:36.424 --> 00:04:38.840
+it will generate all the code
+that we need for our service
+
+00:04:38.840 --> 00:04:41.340
+worker to actually start caching
+all of our different views,
+
+00:04:41.340 --> 00:04:42.680
+which is pretty great.
+
+00:04:42.680 --> 00:04:45.510
+Now, further down here, we're
+going to import my-app element.
+
+00:04:45.510 --> 00:04:48.310
+There's some basic
+critical styles right here.
+
+00:04:48.310 --> 00:04:50.062
+And then we've just
+got the my-app tag
+
+00:04:50.062 --> 00:04:52.270
+right there which is kicking
+off the rest of our app.
+
+00:04:52.270 --> 00:04:54.610
+Inside of my-app,
+this is where I'm
+
+00:04:54.610 --> 00:04:57.500
+going to actually put that
+new view that I've created.
+
+00:04:57.500 --> 00:04:59.090
+And this is kind of
+a typical layout,
+
+00:04:59.090 --> 00:05:01.569
+kind of like an app
+shell, if you will.
+
+00:05:01.569 --> 00:05:03.860
+We can see that we've got
+our app-route inside of here.
+
+00:05:03.860 --> 00:05:05.520
+And if you watched the
+previous two episodes,
+
+00:05:05.520 --> 00:05:06.810
+you're familiar
+with using app route
+
+00:05:06.810 --> 00:05:07.950
+to do routing in your app.
+
+00:05:07.950 --> 00:05:11.190
+And further down, we've
+got a little iron-selector.
+
+00:05:11.190 --> 00:05:14.530
+This is where our
+sidebar menu is created.
+
+00:05:14.530 --> 00:05:17.112
+And then a little further below
+that, we've got iron-pages.
+
+00:05:17.112 --> 00:05:18.570
+This is the element
+that's handling
+
+00:05:18.570 --> 00:05:20.210
+swapping all of
+our different views
+
+00:05:20.210 --> 00:05:22.630
+when either the URL
+changes or someone clicks
+
+00:05:22.630 --> 00:05:25.070
+on an item in our sidebar.
+
+00:05:25.070 --> 00:05:27.790
+So this is where I'm going to
+add that my-new-view that I've
+
+00:05:27.790 --> 00:05:29.980
+created, right
+here in iron-pages.
+
+00:05:29.980 --> 00:05:33.150
+So I'm just going to go
+duplicate this View Three.
+
+00:05:33.150 --> 00:05:39.195
+And I'll update some of the
+parts here to say my-new-view.
+
+00:05:39.195 --> 00:05:42.320
+I'm going to go up to the
+menu here, duplicate this.
+
+00:05:42.320 --> 00:05:48.506
+Right where it says View Three,
+I'm going to say my-new-view.
+
+00:05:48.506 --> 00:05:51.371
+So we'll save both of
+these, our new view.
+
+00:05:51.371 --> 00:05:54.210
+And we'll call this New View.
+
+00:05:54.210 --> 00:05:57.990
+And now you might be wondering,
+I didn't import my-new-view,
+
+00:05:57.990 --> 00:06:00.970
+so how is this application
+going to actually get
+
+00:06:00.970 --> 00:06:03.110
+the definition in
+there to render
+
+00:06:03.110 --> 00:06:04.317
+that element for the user?
+
+00:06:04.317 --> 00:06:06.650
+And this is where we've got
+a pretty cool feature that's
+
+00:06:06.650 --> 00:06:07.691
+built into this template.
+
+00:06:07.691 --> 00:06:10.100
+And it's part of Polymers
+new purple pattern, which
+
+00:06:10.100 --> 00:06:11.600
+we talked about a
+little bit at I/O.
+
+00:06:11.600 --> 00:06:14.079
+And we'll link to that talk
+at the end of this video.
+
+00:06:14.079 --> 00:06:15.870
+And basically, the
+whole idea around purple
+
+00:06:15.870 --> 00:06:18.230
+is whenever possible,
+you want to lazy load
+
+00:06:18.230 --> 00:06:19.380
+your element definitions.
+
+00:06:19.380 --> 00:06:23.020
+So that way you're only
+registering stuff the moment
+
+00:06:23.020 --> 00:06:24.910
+that the user would be
+viewing it on screen.
+
+00:06:24.910 --> 00:06:27.310
+You're not sort of needlessly
+eating up bandwidth
+
+00:06:27.310 --> 00:06:30.590
+or consuming CPU cycles
+registering elements that maybe
+
+00:06:30.590 --> 00:06:32.380
+the user is not looking at yet.
+
+00:06:32.380 --> 00:06:34.830
+So if we scroll down to the
+bottom of this element's
+
+00:06:34.830 --> 00:06:36.288
+definition, you'll
+see that there's
+
+00:06:36.288 --> 00:06:38.590
+this pageChanged
+function right here.
+
+00:06:38.590 --> 00:06:40.790
+And this is linked
+up to our app router.
+
+00:06:40.790 --> 00:06:43.150
+And what happens is every
+time the route updates,
+
+00:06:43.150 --> 00:06:45.540
+it checks to see what
+the page value is.
+
+00:06:45.540 --> 00:06:48.246
+And then it's going
+to call importHref,
+
+00:06:48.246 --> 00:06:49.620
+and it's going to
+say, all right.
+
+00:06:49.620 --> 00:06:51.920
+Well, let's just
+pull in anything--
+
+00:06:51.920 --> 00:06:53.380
+based on the page
+value, let's pull
+
+00:06:53.380 --> 00:06:58.050
+in any element that matches that
+page name with a prefix of my.
+
+00:06:58.050 --> 00:07:00.400
+So we've got in my
+view one, my view two.
+
+00:07:00.400 --> 00:07:03.990
+And because I just created a
+new one called my-new-view,
+
+00:07:03.990 --> 00:07:06.700
+when someone goes to a
+page called slash new view,
+
+00:07:06.700 --> 00:07:08.041
+this is going to run.
+
+00:07:08.041 --> 00:07:09.540
+It's going to fetch
+that definition.
+
+00:07:09.540 --> 00:07:11.490
+That element's going
+to upgrade it in place.
+
+00:07:11.490 --> 00:07:14.710
+And only then will we
+swap over to the new view.
+
+00:07:14.710 --> 00:07:17.120
+So I think we're actually
+ready to see this in action.
+
+00:07:17.120 --> 00:07:18.940
+And we can go back
+to our terminal,
+
+00:07:18.940 --> 00:07:21.410
+verify that our server
+is still running.
+
+00:07:21.410 --> 00:07:22.720
+So far so good.
+
+00:07:22.720 --> 00:07:24.840
+Now, let's go back to
+Chrome, refresh the page,
+
+00:07:24.840 --> 00:07:26.650
+and we see that we've
+now got this new menu
+
+00:07:26.650 --> 00:07:27.770
+item for New view.
+
+00:07:27.770 --> 00:07:30.329
+And clicking on that, I
+can see that H1 showing up.
+
+00:07:30.329 --> 00:07:31.870
+So I know that my
+content is working.
+
+00:07:31.870 --> 00:07:35.270
+My element was lazy loaded
+and stamped out to the page.
+
+00:07:35.270 --> 00:07:37.800
+Now, the last thing I want to
+do is take this application
+
+00:07:37.800 --> 00:07:40.170
+and actually deploy it to
+a service like Firebase
+
+00:07:40.170 --> 00:07:41.585
+so I can share it
+with the world.
+
+00:07:41.585 --> 00:07:44.170
+Now, Firebase is a really,
+really amazing service
+
+00:07:44.170 --> 00:07:46.989
+which does real time
+database syncing, as well
+
+00:07:46.989 --> 00:07:49.530
+as static hosting, and a bunch
+of other really cool features.
+
+00:07:49.530 --> 00:07:51.550
+For our use cases,
+we're going to use
+
+00:07:51.550 --> 00:07:53.640
+the basic static hosting.
+
+00:07:53.640 --> 00:07:56.510
+So I've actually gone ahead,
+gone to the Firebase console,
+
+00:07:56.510 --> 00:08:00.870
+and created this brand new
+project called PolyApp.
+
+00:08:00.870 --> 00:08:02.927
+If you are new to
+Firebase, you'll
+
+00:08:02.927 --> 00:08:04.510
+need to go to their
+website and create
+
+00:08:04.510 --> 00:08:06.340
+an account at Firebase.com.
+
+00:08:06.340 --> 00:08:08.280
+And then click on the
+little console button.
+
+00:08:08.280 --> 00:08:10.859
+And that way you can start
+adding new applications.
+
+00:08:10.859 --> 00:08:12.650
+So I've got this little
+app called PolyApp.
+
+00:08:12.650 --> 00:08:16.940
+And in my terminal, I can use
+Firebase's command line tools
+
+00:08:16.940 --> 00:08:19.420
+to actually deploy
+my application.
+
+00:08:19.420 --> 00:08:21.960
+So I'm going to
+run Firebase login
+
+00:08:21.960 --> 00:08:23.530
+if I have not logged in yet.
+
+00:08:23.530 --> 00:08:25.810
+Because I have already
+gone ahead and logged in,
+
+00:08:25.810 --> 00:08:27.261
+I can just run Firebase init.
+
+00:08:27.261 --> 00:08:29.510
+I should point out, actually,
+if you haven't installed
+
+00:08:29.510 --> 00:08:32.360
+these tools yet, you can do
+so within npm install dash g
+
+00:08:32.360 --> 00:08:34.730
+firebase tools.
+
+00:08:34.730 --> 00:08:37.510
+So that'll actually give you
+access to their command line.
+
+00:08:37.510 --> 00:08:39.480
+I'm going to run Firebase init.
+
+00:08:39.480 --> 00:08:42.250
+And it's going to ask me some
+questions about my project.
+
+00:08:42.250 --> 00:08:44.580
+It'll ask me, do we want
+to use the database,
+
+00:08:44.580 --> 00:08:46.080
+or do we want to
+use static hosting?
+
+00:08:46.080 --> 00:08:48.580
+I'm going to hit spacebar to
+say, I don't need the database,
+
+00:08:48.580 --> 00:08:49.760
+I just need static hosting.
+
+00:08:49.760 --> 00:08:52.600
+It's going to ask me which
+directory I want to deploy.
+
+00:08:52.600 --> 00:08:54.570
+And though we haven't
+built our project yet,
+
+00:08:54.570 --> 00:08:56.070
+I actually am just
+going to go ahead
+
+00:08:56.070 --> 00:08:59.900
+and say that I want to deploy a
+directory called build/bundled.
+
+00:08:59.900 --> 00:09:01.750
+And we'll come back
+to that in just a sec.
+
+00:09:01.750 --> 00:09:04.320
+It's going to ask, do we want
+to rewrite all of our URLs
+
+00:09:04.320 --> 00:09:06.576
+to always serve
+index.html, which we do,
+
+00:09:06.576 --> 00:09:08.450
+because we're building
+a single page web app.
+
+00:09:08.450 --> 00:09:09.370
+So we'll say, yep.
+
+00:09:09.370 --> 00:09:12.250
+And then it's going to
+ask us, which project do
+
+00:09:12.250 --> 00:09:13.845
+we want to associate this with?
+
+00:09:13.845 --> 00:09:16.220
+And we're going to associate
+it with that PolyApp project
+
+00:09:16.220 --> 00:09:17.230
+that I created.
+
+00:09:17.230 --> 00:09:19.670
+This is going to create two
+files for our application--
+
+00:09:19.670 --> 00:09:22.910
+Firebase dot json and dot
+Firebase rc, both of which
+
+00:09:22.910 --> 00:09:25.319
+have some configuration
+data for our app.
+
+00:09:25.319 --> 00:09:27.110
+The last thing we need
+to do is we actually
+
+00:09:27.110 --> 00:09:29.734
+need to build our
+application for production.
+
+00:09:29.734 --> 00:09:31.650
+And before I do that,
+I'm going to switch back
+
+00:09:31.650 --> 00:09:37.050
+to my text editor and find this
+file here called Polymer.json.
+
+00:09:37.050 --> 00:09:38.820
+Now, the way that
+this is going to work
+
+00:09:38.820 --> 00:09:43.000
+is the Polymer build tool
+is going to try and separate
+
+00:09:43.000 --> 00:09:47.250
+our app into the shell and then
+all of the different fragments.
+
+00:09:47.250 --> 00:09:49.070
+Anything that is lazy loaded.
+
+00:09:49.070 --> 00:09:51.260
+So all those views that I
+mentioned before-- my view
+
+00:09:51.260 --> 00:09:54.690
+one, my view two, those are
+all lazy loaded at runtime,
+
+00:09:54.690 --> 00:09:56.740
+as is the new view
+that I created.
+
+00:09:56.740 --> 00:09:59.180
+And so what I want to do
+here is where it says shell,
+
+00:09:59.180 --> 00:10:01.860
+leave it set to my app.html.
+
+00:10:01.860 --> 00:10:04.240
+And where it says
+fragments, I'm going
+
+00:10:04.240 --> 00:10:07.910
+to add a new fragment for
+that new page that I created.
+
+00:10:07.910 --> 00:10:12.170
+So I'll say source
+slash my-new-view.html.
+
+00:10:12.170 --> 00:10:13.180
+And save that.
+
+00:10:13.180 --> 00:10:16.316
+And what happens here is when
+we run the Polymer build step,
+
+00:10:16.316 --> 00:10:17.690
+Vulcanize is going
+to go and it's
+
+00:10:17.690 --> 00:10:19.400
+going to try and
+create little bundles
+
+00:10:19.400 --> 00:10:21.150
+for each one of these
+pages, making sure
+
+00:10:21.150 --> 00:10:24.260
+that it's not loading duplicate
+elements, which is really nice.
+
+00:10:24.260 --> 00:10:26.140
+It's going to cut down
+on our bandwidth usage
+
+00:10:26.140 --> 00:10:29.320
+and prevent possible weird
+errors when we try and like
+
+00:10:29.320 --> 00:10:31.351
+double register elements
+or stuff like that.
+
+00:10:31.351 --> 00:10:33.600
+So it's going to go ahead
+and solve that for us, which
+
+00:10:33.600 --> 00:10:34.560
+is pretty cool.
+
+00:10:34.560 --> 00:10:37.500
+So with our fragments in place,
+we can now go to our terminal
+
+00:10:37.500 --> 00:10:38.620
+and run Polymer build.
+
+00:10:38.620 --> 00:10:41.230
+And this is going to generate
+two versions of our project--
+
+00:10:41.230 --> 00:10:44.590
+an unbundled version which
+does not use Vulcanize
+
+00:10:44.590 --> 00:10:46.070
+or anything like that.
+
+00:10:46.070 --> 00:10:49.310
+That is for servers that
+support HTTP2 server push
+
+00:10:49.310 --> 00:10:53.320
+and can actually just stream
+down the individual element
+
+00:10:53.320 --> 00:10:53.980
+definitions.
+
+00:10:53.980 --> 00:10:57.190
+For servers which don't
+support HTTP2 server push,
+
+00:10:57.190 --> 00:10:58.747
+we can have a bundled version.
+
+00:10:58.747 --> 00:11:00.830
+And that's going to use
+Vulcanize to actually look
+
+00:11:00.830 --> 00:11:02.205
+at all of our
+different fragments
+
+00:11:02.205 --> 00:11:04.090
+and turn those into
+little vulcanized bundles
+
+00:11:04.090 --> 00:11:05.710
+of concatenated elements.
+
+00:11:05.710 --> 00:11:08.140
+And that's actually the one
+that we're going to deploy.
+
+00:11:08.140 --> 00:11:09.640
+So we already went
+ahead and we told
+
+00:11:09.640 --> 00:11:13.290
+Firebase to deploy the
+build/bundle directory, which
+
+00:11:13.290 --> 00:11:16.072
+means the last thing I need to
+do is just run firebase deploy.
+
+00:11:16.072 --> 00:11:18.030
+Now that those directories
+have been generated,
+
+00:11:18.030 --> 00:11:20.570
+it's going to go ahead and
+push all that content up
+
+00:11:20.570 --> 00:11:22.291
+to Firebase.
+
+00:11:22.291 --> 00:11:24.790
+So we're going to wait for the
+Firebase indicator to finish.
+
+00:11:24.790 --> 00:11:27.950
+And lastly, we can
+run firebase open.
+
+00:11:27.950 --> 00:11:30.170
+And it's going to ask
+what we want to open.
+
+00:11:30.170 --> 00:11:33.540
+And we'll go down to where it
+says hosting deployed site.
+
+00:11:33.540 --> 00:11:35.350
+And there we go.
+
+00:11:35.350 --> 00:11:37.370
+We've got our application
+running on Firebase.
+
+00:11:37.370 --> 00:11:39.940
+We can click on my-new-view
+and verify that everything
+
+00:11:39.940 --> 00:11:41.060
+looks as expected.
+
+00:11:41.060 --> 00:11:42.750
+And really, in just
+a few short minutes,
+
+00:11:42.750 --> 00:11:45.540
+we've gone from having no
+app whatsoever to scaffolding
+
+00:11:45.540 --> 00:11:48.380
+something out using the CLI
+to setting it up on Firebase
+
+00:11:48.380 --> 00:11:50.170
+and deploying it to the world.
+
+00:11:50.170 --> 00:11:51.710
+Now, there's a lot
+more that I want
+
+00:11:51.710 --> 00:11:54.230
+to cover around App
+Tool Box and CLI,
+
+00:11:54.230 --> 00:11:55.649
+so we're just getting started.
+
+00:11:55.649 --> 00:11:57.940
+If you have questions, though,
+please leave them for me
+
+00:11:57.940 --> 00:12:00.140
+down in the comments
+or you can ping me
+
+00:12:00.140 --> 00:12:03.191
+on a social network of your
+choosing at #AskPolymer.
+
+00:12:03.191 --> 00:12:04.940
+As always, thank you
+so much for watching,
+
+00:12:04.940 --> 00:12:06.560
+and I'll see you next time.
+
+00:12:06.560 --> 00:12:12.310
+[MUSIC PLAYING]
+

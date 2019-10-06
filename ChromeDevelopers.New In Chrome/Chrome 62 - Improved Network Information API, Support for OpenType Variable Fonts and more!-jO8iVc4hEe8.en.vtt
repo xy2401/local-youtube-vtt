@@ -1,0 +1,313 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.020
+PETE LEPAGE: Chrome 62 makes
+the Network Information
+
+00:00:03.020 --> 00:00:06.930
+API more useful by providing
+actual performance metrics
+
+00:00:06.930 --> 00:00:09.120
+instead of theoretical results.
+
+00:00:09.120 --> 00:00:12.300
+Support for OpenType
+variable fonts has landed,
+
+00:00:12.300 --> 00:00:16.140
+you can capture media streams
+from HTML media elements,
+
+00:00:16.140 --> 00:00:18.990
+and I've got a special reminder
+about an important change
+
+00:00:18.990 --> 00:00:22.120
+that's landing in Chrome 62
+at the end of this video.
+
+00:00:22.120 --> 00:00:23.610
+So, be sure to stick around.
+
+00:00:23.610 --> 00:00:24.510
+I'm Pete LePage.
+
+00:00:24.510 --> 00:00:27.210
+Let's dive in and see what's
+new for developers in Chrome 62.
+
+00:00:30.330 --> 00:00:33.250
+The Network Information API
+has been available in Chrome
+
+00:00:33.250 --> 00:00:36.160
+for a while, but it only
+provides theoretical network
+
+00:00:36.160 --> 00:00:38.560
+speeds given the
+users connection.
+
+00:00:38.560 --> 00:00:42.160
+Imagine you're on Wi-Fi but
+connected to a cellular hotspot
+
+00:00:42.160 --> 00:00:43.750
+that only has 2G speeds.
+
+00:00:43.750 --> 00:00:46.300
+The API would report Wi-Fi.
+
+00:00:46.300 --> 00:00:49.630
+In Chrome 62, the
+API has been expanded
+
+00:00:49.630 --> 00:00:51.550
+to provide actual
+network performance
+
+00:00:51.550 --> 00:00:53.650
+metrics from the client.
+
+00:00:53.650 --> 00:00:55.960
+Using these network
+quality signals,
+
+00:00:55.960 --> 00:00:58.420
+you can tailor content
+to the network.
+
+00:00:58.420 --> 00:01:00.640
+For example, on very
+slow connections,
+
+00:01:00.640 --> 00:01:02.620
+you could improve
+page load performance
+
+00:01:02.620 --> 00:01:05.080
+by serving a reduced version.
+
+00:01:05.080 --> 00:01:07.400
+To simplify your
+application logic,
+
+00:01:07.400 --> 00:01:10.240
+the API returns to the
+measured network performance
+
+00:01:10.240 --> 00:01:13.540
+in terms of how it would compare
+to a cellular connection.
+
+00:01:13.540 --> 00:01:16.840
+For example, connected to a
+super, fast fiber connection,
+
+00:01:16.840 --> 00:01:19.720
+the API would report 4G.
+
+00:01:19.720 --> 00:01:21.670
+These signals will
+also be available
+
+00:01:21.670 --> 00:01:25.930
+as HTTP request headers and
+enabled via client hands.
+
+00:01:25.930 --> 00:01:28.510
+Check out the sample link
+below and have a look
+
+00:01:28.510 --> 00:01:30.790
+at the spec to dive deeper.
+
+00:01:30.790 --> 00:01:34.090
+Traditionally, one font
+contain only a single instance
+
+00:01:34.090 --> 00:01:34.990
+of a font family.
+
+00:01:34.990 --> 00:01:37.600
+For example, one
+weight or one stretch.
+
+00:01:37.600 --> 00:01:39.940
+If you wanted regular
+bold and italic,
+
+00:01:39.940 --> 00:01:42.730
+you'd need to include three
+separate fonts, increasing
+
+00:01:42.730 --> 00:01:44.140
+the weight of your page.
+
+00:01:44.140 --> 00:01:46.630
+An OpenType variable
+front is the equivalent
+
+00:01:46.630 --> 00:01:50.470
+of multiple individual fonts
+that can be compactly packaged
+
+00:01:50.470 --> 00:01:52.330
+within a single font file.
+
+00:01:52.330 --> 00:01:54.160
+By adjusting certain
+CSS properties,
+
+00:01:54.160 --> 00:01:56.290
+stretch, style,
+weight, and more,
+
+00:01:56.290 --> 00:01:59.110
+can easily be adjusted
+providing an infinite number
+
+00:01:59.110 --> 00:02:01.330
+of stylistic variations.
+
+00:02:01.330 --> 00:02:03.160
+Those three fonts
+can now be combined
+
+00:02:03.160 --> 00:02:05.860
+into a single compact file.
+
+00:02:05.860 --> 00:02:08.979
+OpenType variable fonts
+gives us a powerful new tool
+
+00:02:08.979 --> 00:02:13.270
+to create responsive typography
+and reduce our page weight.
+
+00:02:13.270 --> 00:02:16.750
+You can now live capture
+content into a media stream
+
+00:02:16.750 --> 00:02:20.800
+directly from an HTML media
+element, like audio and video,
+
+00:02:20.800 --> 00:02:24.190
+with the media capture
+from DOM Elements API.
+
+00:02:24.190 --> 00:02:27.880
+After invoking capture stream
+on an HTML media element,
+
+00:02:27.880 --> 00:02:31.090
+the streamed content can then
+be manipulated, processed,
+
+00:02:31.090 --> 00:02:33.160
+sent remotely, or recorded.
+
+00:02:33.160 --> 00:02:34.900
+Imagine using Web
+Audio to create
+
+00:02:34.900 --> 00:02:38.110
+your own equalizer a vocoder
+or stream the content
+
+00:02:38.110 --> 00:02:40.600
+to a remote site using WebRTC.
+
+00:02:40.600 --> 00:02:43.600
+The possibilities
+are almost endless.
+
+00:02:43.600 --> 00:02:46.060
+These are just a few of
+the changes in Chrome 62
+
+00:02:46.060 --> 00:02:46.810
+for developers.
+
+00:02:46.810 --> 00:02:48.690
+Of course, there's plenty more.
+
+00:02:48.690 --> 00:02:52.450
+The Payment Request API is now
+available on Chrome for iOS.
+
+00:02:52.450 --> 00:02:55.300
+You can start building
+experimental, rich VR
+
+00:02:55.300 --> 00:02:58.540
+experiences with the
+WebVR Origin Trial.
+
+00:02:58.540 --> 00:03:00.040
+Oh, and one more.
+
+00:03:00.040 --> 00:03:03.160
+As we announced previously,
+starting in Chrome 62,
+
+00:03:03.160 --> 00:03:06.460
+when a user enters
+data on an HTTP page,
+
+00:03:06.460 --> 00:03:08.980
+Chrome will mark the page
+is not secure with a label
+
+00:03:08.980 --> 00:03:10.390
+in the address bar.
+
+00:03:10.390 --> 00:03:13.840
+This label will also be shown
+in all incognito windows
+
+00:03:13.840 --> 00:03:16.300
+for all HTTP pages.
+
+00:03:16.300 --> 00:03:18.850
+Check the description
+for full details.
+
+00:03:18.850 --> 00:03:22.570
+All the details, including
+links, docs, and specs,
+
+00:03:22.570 --> 00:03:24.440
+are in the description below.
+
+00:03:24.440 --> 00:03:26.890
+And be sure to check out the
+latest, new Chrom DevTools
+
+00:03:26.890 --> 00:03:29.980
+video for all the new
+stuff in Chrome DevTools.
+
+00:03:29.980 --> 00:03:31.630
+Then, click the
+Subscribe button,
+
+00:03:31.630 --> 00:03:33.280
+and you'll get an
+email notification
+
+00:03:33.280 --> 00:03:35.090
+whenever we launch a new video.
+
+00:03:35.090 --> 00:03:38.090
+I'm Pete page and as soon
+as Chrome 63 is released,
+
+00:03:38.090 --> 00:03:41.550
+I'll be right here to tell
+you what's new in Chrome.
+

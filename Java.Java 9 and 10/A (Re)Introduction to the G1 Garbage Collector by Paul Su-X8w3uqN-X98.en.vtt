@@ -1,0 +1,864 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.360 align:start position:0%
+ 
+hello<00:00:00.269><c> my</c><00:00:00.719><c> name</c><00:00:00.870><c> is</c><00:00:01.020><c> Paul</c><00:00:01.199><c> soo</c><00:00:01.439><c> welcome</c><00:00:02.220><c> to</c>
+
+00:00:02.360 --> 00:00:02.370 align:start position:0%
+hello my name is Paul soo welcome to
+ 
+
+00:00:02.370 --> 00:00:04.160 align:start position:0%
+hello my name is Paul soo welcome to
+this<00:00:02.490><c> screencast</c><00:00:02.790><c> of</c><00:00:03.179><c> the</c><00:00:03.330><c> g1</c><00:00:03.659><c> garbage</c>
+
+00:00:04.160 --> 00:00:04.170 align:start position:0%
+this screencast of the g1 garbage
+ 
+
+00:00:04.170 --> 00:00:05.930 align:start position:0%
+this screencast of the g1 garbage
+collector<00:00:04.560><c> there's</c><00:00:05.040><c> a</c><00:00:05.130><c> lot</c><00:00:05.339><c> of</c><00:00:05.460><c> information</c>
+
+00:00:05.930 --> 00:00:05.940 align:start position:0%
+collector there's a lot of information
+ 
+
+00:00:05.940 --> 00:00:09.080 align:start position:0%
+collector there's a lot of information
+already<00:00:06.060><c> available</c><00:00:06.330><c> on</c><00:00:06.810><c> g1</c><00:00:07.309><c> but</c><00:00:08.309><c> since</c><00:00:08.670><c> G</c><00:00:08.940><c> 1</c>
+
+00:00:09.080 --> 00:00:09.090 align:start position:0%
+already available on g1 but since G 1
+ 
+
+00:00:09.090 --> 00:00:10.669 align:start position:0%
+already available on g1 but since G 1
+will<00:00:09.269><c> become</c><00:00:09.450><c> the</c><00:00:09.870><c> default</c><00:00:09.990><c> collector</c><00:00:10.559><c> for</c>
+
+00:00:10.669 --> 00:00:10.679 align:start position:0%
+will become the default collector for
+ 
+
+00:00:10.679 --> 00:00:12.799 align:start position:0%
+will become the default collector for
+JDK<00:00:11.070><c> 9</c><00:00:11.280><c> I'd</c><00:00:12.120><c> like</c><00:00:12.300><c> to</c><00:00:12.420><c> take</c><00:00:12.540><c> this</c><00:00:12.660><c> opportunity</c>
+
+00:00:12.799 --> 00:00:12.809 align:start position:0%
+JDK 9 I'd like to take this opportunity
+ 
+
+00:00:12.809 --> 00:00:14.839 align:start position:0%
+JDK 9 I'd like to take this opportunity
+to<00:00:13.320><c> give</c><00:00:13.440><c> a</c><00:00:13.469><c> high-level</c><00:00:13.740><c> introduction</c><00:00:14.639><c> to</c><00:00:14.730><c> the</c>
+
+00:00:14.839 --> 00:00:14.849 align:start position:0%
+to give a high-level introduction to the
+ 
+
+00:00:14.849 --> 00:00:17.630 align:start position:0%
+to give a high-level introduction to the
+collector<00:00:15.379><c> due</c><00:00:16.379><c> to</c><00:00:16.529><c> time</c><00:00:16.740><c> constraints</c><00:00:17.279><c> this</c>
+
+00:00:17.630 --> 00:00:17.640 align:start position:0%
+collector due to time constraints this
+ 
+
+00:00:17.640 --> 00:00:20.300 align:start position:0%
+collector due to time constraints this
+will<00:00:17.850><c> be</c><00:00:17.940><c> a</c><00:00:17.970><c> very</c><00:00:18.390><c> basic</c><00:00:18.750><c> overview</c><00:00:19.130><c> but</c><00:00:20.130><c> more</c>
+
+00:00:20.300 --> 00:00:20.310 align:start position:0%
+will be a very basic overview but more
+ 
+
+00:00:20.310 --> 00:00:22.130 align:start position:0%
+will be a very basic overview but more
+detail<00:00:20.640><c> than</c><00:00:20.820><c> my</c><00:00:20.910><c> information</c><00:00:21.539><c> is</c><00:00:21.660><c> available</c>
+
+00:00:22.130 --> 00:00:22.140 align:start position:0%
+detail than my information is available
+ 
+
+00:00:22.140 --> 00:00:27.259 align:start position:0%
+detail than my information is available
+a<00:00:24.470><c> little</c><00:00:25.470><c> bit</c><00:00:25.590><c> about</c><00:00:25.769><c> myself</c><00:00:26.029><c> I've</c><00:00:27.029><c> been</c>
+
+00:00:27.259 --> 00:00:27.269 align:start position:0%
+a little bit about myself I've been
+ 
+
+00:00:27.269 --> 00:00:28.910 align:start position:0%
+a little bit about myself I've been
+working<00:00:27.539><c> with</c><00:00:27.570><c> Java</c><00:00:27.930><c> and</c><00:00:28.260><c> the</c><00:00:28.529><c> open</c><00:00:28.769><c> JDK</c>
+
+00:00:28.910 --> 00:00:28.920 align:start position:0%
+working with Java and the open JDK
+ 
+
+00:00:28.920 --> 00:00:30.529 align:start position:0%
+working with Java and the open JDK
+community<00:00:29.550><c> for</c><00:00:29.760><c> the</c><00:00:29.820><c> past</c><00:00:29.910><c> 18</c><00:00:30.510><c> years</c>
+
+00:00:30.529 --> 00:00:30.539 align:start position:0%
+community for the past 18 years
+ 
+
+00:00:30.539 --> 00:00:32.659 align:start position:0%
+community for the past 18 years
+primarily<00:00:31.529><c> in</c><00:00:31.740><c> the</c><00:00:31.830><c> micro</c><00:00:32.130><c> Edition</c><00:00:32.460><c> space</c>
+
+00:00:32.659 --> 00:00:32.669 align:start position:0%
+primarily in the micro Edition space
+ 
+
+00:00:32.669 --> 00:00:35.299 align:start position:0%
+primarily in the micro Edition space
+currently<00:00:33.660><c> I</c><00:00:34.050><c> manage</c><00:00:34.469><c> the</c><00:00:34.620><c> hotspot</c><00:00:34.980><c> garbage</c>
+
+00:00:35.299 --> 00:00:35.309 align:start position:0%
+currently I manage the hotspot garbage
+ 
+
+00:00:35.309 --> 00:00:37.430 align:start position:0%
+currently I manage the hotspot garbage
+collection<00:00:35.670><c> team</c><00:00:35.820><c> here</c><00:00:36.030><c> at</c><00:00:36.120><c> Oracle</c><00:00:36.440><c> today</c>
+
+00:00:37.430 --> 00:00:37.440 align:start position:0%
+collection team here at Oracle today
+ 
+
+00:00:37.440 --> 00:00:38.930 align:start position:0%
+collection team here at Oracle today
+we'll<00:00:37.649><c> start</c><00:00:37.829><c> with</c><00:00:38.040><c> a</c><00:00:38.070><c> brief</c><00:00:38.250><c> introduction</c><00:00:38.910><c> to</c>
+
+00:00:38.930 --> 00:00:38.940 align:start position:0%
+we'll start with a brief introduction to
+ 
+
+00:00:38.940 --> 00:00:40.580 align:start position:0%
+we'll start with a brief introduction to
+the<00:00:39.239><c> variety</c><00:00:39.480><c> of</c><00:00:39.690><c> collectors</c><00:00:40.140><c> currently</c>
+
+00:00:40.580 --> 00:00:40.590 align:start position:0%
+the variety of collectors currently
+ 
+
+00:00:40.590 --> 00:00:42.709 align:start position:0%
+the variety of collectors currently
+available<00:00:40.800><c> in</c><00:00:41.160><c> hotspot</c><00:00:41.550><c> before</c><00:00:42.239><c> we're</c><00:00:42.360><c> moving</c>
+
+00:00:42.709 --> 00:00:42.719 align:start position:0%
+available in hotspot before we're moving
+ 
+
+00:00:42.719 --> 00:00:45.319 align:start position:0%
+available in hotspot before we're moving
+into<00:00:42.840><c> g1</c><00:00:43.230><c> specifics</c><00:00:44.030><c> these</c><00:00:45.030><c> are</c><00:00:45.210><c> the</c>
+
+00:00:45.319 --> 00:00:45.329 align:start position:0%
+into g1 specifics these are the
+ 
+
+00:00:45.329 --> 00:00:46.700 align:start position:0%
+into g1 specifics these are the
+collectors<00:00:45.570><c> currently</c><00:00:46.170><c> supported</c><00:00:46.590><c> in</c>
+
+00:00:46.700 --> 00:00:46.710 align:start position:0%
+collectors currently supported in
+ 
+
+00:00:46.710 --> 00:00:49.459 align:start position:0%
+collectors currently supported in
+hotspot<00:00:47.480><c> serial</c><00:00:48.480><c> is</c><00:00:48.660><c> intended</c><00:00:49.110><c> to</c><00:00:49.140><c> address</c>
+
+00:00:49.459 --> 00:00:49.469 align:start position:0%
+hotspot serial is intended to address
+ 
+
+00:00:49.469 --> 00:00:51.290 align:start position:0%
+hotspot serial is intended to address
+use<00:00:49.800><c> cases</c><00:00:50.010><c> where</c><00:00:50.309><c> memory</c><00:00:50.700><c> footprint</c><00:00:51.120><c> is</c>
+
+00:00:51.290 --> 00:00:51.300 align:start position:0%
+use cases where memory footprint is
+ 
+
+00:00:51.300 --> 00:00:54.200 align:start position:0%
+use cases where memory footprint is
+critical<00:00:52.370><c> parallels</c><00:00:53.370><c> should</c><00:00:53.550><c> be</c><00:00:53.640><c> the</c><00:00:53.760><c> optimal</c>
+
+00:00:54.200 --> 00:00:54.210 align:start position:0%
+critical parallels should be the optimal
+ 
+
+00:00:54.210 --> 00:00:55.549 align:start position:0%
+critical parallels should be the optimal
+choice<00:00:54.239><c> in</c><00:00:54.629><c> most</c><00:00:54.809><c> situations</c><00:00:54.930><c> where</c>
+
+00:00:55.549 --> 00:00:55.559 align:start position:0%
+choice in most situations where
+ 
+
+00:00:55.559 --> 00:00:58.700 align:start position:0%
+choice in most situations where
+throughput<00:00:55.949><c> is</c><00:00:56.070><c> important</c><00:00:57.260><c> CMS</c><00:00:58.260><c> is</c><00:00:58.469><c> built</c>
+
+00:00:58.700 --> 00:00:58.710 align:start position:0%
+throughput is important CMS is built
+ 
+
+00:00:58.710 --> 00:01:01.099 align:start position:0%
+throughput is important CMS is built
+with<00:00:58.890><c> a</c><00:00:58.920><c> focus</c><00:00:59.309><c> on</c><00:00:59.430><c> latency</c><00:00:59.969><c> but</c><00:01:00.719><c> is</c><00:01:00.870><c> being</c>
+
+00:01:01.099 --> 00:01:01.109 align:start position:0%
+with a focus on latency but is being
+ 
+
+00:01:01.109 --> 00:01:03.619 align:start position:0%
+with a focus on latency but is being
+deprecated<00:01:01.680><c> beginning</c><00:01:02.160><c> in</c><00:01:02.250><c> JDK</c><00:01:02.640><c> 9</c><00:01:02.879><c> since</c><00:01:03.329><c> for</c>
+
+00:01:03.619 --> 00:01:03.629 align:start position:0%
+deprecated beginning in JDK 9 since for
+ 
+
+00:01:03.629 --> 00:01:05.750 align:start position:0%
+deprecated beginning in JDK 9 since for
+most<00:01:03.840><c> applications</c><00:01:04.159><c> g1</c><00:01:05.159><c> should</c><00:01:05.369><c> provide</c><00:01:05.700><c> a</c>
+
+00:01:05.750 --> 00:01:05.760 align:start position:0%
+most applications g1 should provide a
+ 
+
+00:01:05.760 --> 00:01:09.109 align:start position:0%
+most applications g1 should provide a
+better<00:01:06.150><c> overall</c><00:01:06.510><c> experience</c><00:01:07.580><c> g1</c><00:01:08.580><c> is</c><00:01:08.700><c> intended</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+better overall experience g1 is intended
+ 
+
+00:01:09.119 --> 00:01:10.789 align:start position:0%
+better overall experience g1 is intended
+to<00:01:09.210><c> deliver</c><00:01:09.360><c> a</c><00:01:09.600><c> balance</c><00:01:10.049><c> between</c><00:01:10.200><c> throughput</c>
+
+00:01:10.789 --> 00:01:10.799 align:start position:0%
+to deliver a balance between throughput
+ 
+
+00:01:10.799 --> 00:01:12.440 align:start position:0%
+to deliver a balance between throughput
+and<00:01:10.920><c> latency</c><00:01:10.979><c> while</c><00:01:11.760><c> not</c><00:01:11.970><c> suffering</c><00:01:12.360><c> from</c>
+
+00:01:12.440 --> 00:01:12.450 align:start position:0%
+and latency while not suffering from
+ 
+
+00:01:12.450 --> 00:01:16.460 align:start position:0%
+and latency while not suffering from
+fragmentation<00:01:13.260><c> as</c><00:01:14.390><c> mentioned</c><00:01:15.390><c> g1</c><00:01:16.110><c> is</c><00:01:16.259><c> now</c><00:01:16.409><c> the</c>
+
+00:01:16.460 --> 00:01:16.470 align:start position:0%
+fragmentation as mentioned g1 is now the
+ 
+
+00:01:16.470 --> 00:01:19.490 align:start position:0%
+fragmentation as mentioned g1 is now the
+default<00:01:16.860><c> collector</c><00:01:17.520><c> for</c><00:01:17.670><c> JDK</c><00:01:18.030><c> knowing</c><00:01:18.240><c> it</c><00:01:18.900><c> was</c>
+
+00:01:19.490 --> 00:01:19.500 align:start position:0%
+default collector for JDK knowing it was
+ 
+
+00:01:19.500 --> 00:01:21.499 align:start position:0%
+default collector for JDK knowing it was
+introduced<00:01:20.040><c> as</c><00:01:20.310><c> an</c><00:01:20.460><c> experimental</c><00:01:21.090><c> flag</c><00:01:21.270><c> in</c>
+
+00:01:21.499 --> 00:01:21.509 align:start position:0%
+introduced as an experimental flag in
+ 
+
+00:01:21.509 --> 00:01:24.020 align:start position:0%
+introduced as an experimental flag in
+1614<00:01:22.259><c> and</c><00:01:22.470><c> became</c><00:01:23.400><c> a</c><00:01:23.460><c> fully</c><00:01:23.790><c> supported</c>
+
+00:01:24.020 --> 00:01:24.030 align:start position:0%
+1614 and became a fully supported
+ 
+
+00:01:24.030 --> 00:01:28.190 align:start position:0%
+1614 and became a fully supported
+collector<00:01:24.630><c> in</c><00:01:24.750><c> 7u</c><00:01:25.170><c> 4</c><00:01:25.500><c> as</c><00:01:26.390><c> stated</c><00:01:27.390><c> above</c><00:01:27.420><c> the</c>
+
+00:01:28.190 --> 00:01:28.200 align:start position:0%
+collector in 7u 4 as stated above the
+ 
+
+00:01:28.200 --> 00:01:29.960 align:start position:0%
+collector in 7u 4 as stated above the
+goal<00:01:28.409><c> of</c><00:01:28.500><c> g1</c><00:01:28.799><c> is</c><00:01:28.920><c> to</c><00:01:29.009><c> provide</c><00:01:29.280><c> a</c><00:01:29.490><c> balance</c>
+
+00:01:29.960 --> 00:01:29.970 align:start position:0%
+goal of g1 is to provide a balance
+ 
+
+00:01:29.970 --> 00:01:32.480 align:start position:0%
+goal of g1 is to provide a balance
+between<00:01:30.090><c> throughput</c><00:01:30.659><c> and</c><00:01:30.810><c> latency</c><00:01:31.490><c> the</c>
+
+00:01:32.480 --> 00:01:32.490 align:start position:0%
+between throughput and latency the
+ 
+
+00:01:32.490 --> 00:01:34.280 align:start position:0%
+between throughput and latency the
+default<00:01:32.820><c> pause</c><00:01:33.030><c> target</c><00:01:33.420><c> for</c><00:01:33.570><c> g1</c><00:01:33.869><c> is</c><00:01:33.990><c> set</c><00:01:34.170><c> at</c>
+
+00:01:34.280 --> 00:01:34.290 align:start position:0%
+default pause target for g1 is set at
+ 
+
+00:01:34.290 --> 00:01:37.190 align:start position:0%
+default pause target for g1 is set at
+200<00:01:34.740><c> milliseconds</c><00:01:35.310><c> by</c><00:01:36.240><c> adjusting</c><00:01:36.689><c> this</c><00:01:36.840><c> value</c>
+
+00:01:37.190 --> 00:01:37.200 align:start position:0%
+200 milliseconds by adjusting this value
+ 
+
+00:01:37.200 --> 00:01:39.679 align:start position:0%
+200 milliseconds by adjusting this value
+users<00:01:37.829><c> can</c><00:01:38.009><c> tune</c><00:01:38.220><c> g1</c><00:01:38.670><c> to</c><00:01:38.820><c> provide</c><00:01:39.150><c> either</c>
+
+00:01:39.679 --> 00:01:39.689 align:start position:0%
+users can tune g1 to provide either
+ 
+
+00:01:39.689 --> 00:01:42.560 align:start position:0%
+users can tune g1 to provide either
+lower<00:01:40.200><c> latency</c><00:01:40.740><c> or</c><00:01:40.979><c> higher</c><00:01:41.579><c> throughput</c><00:01:42.030><c> with</c>
+
+00:01:42.560 --> 00:01:42.570 align:start position:0%
+lower latency or higher throughput with
+ 
+
+00:01:42.570 --> 00:01:44.300 align:start position:0%
+lower latency or higher throughput with
+a<00:01:42.600><c> higher</c><00:01:42.840><c> value</c><00:01:43.380><c> providing</c><00:01:44.070><c> higher</c>
+
+00:01:44.300 --> 00:01:44.310 align:start position:0%
+a higher value providing higher
+ 
+
+00:01:44.310 --> 00:01:46.100 align:start position:0%
+a higher value providing higher
+throughput<00:01:44.850><c> at</c><00:01:45.030><c> the</c><00:01:45.149><c> expense</c><00:01:45.540><c> of</c><00:01:45.689><c> higher</c>
+
+00:01:46.100 --> 00:01:46.110 align:start position:0%
+throughput at the expense of higher
+ 
+
+00:01:46.110 --> 00:01:48.710 align:start position:0%
+throughput at the expense of higher
+overall<00:01:46.530><c> latency</c><00:01:46.880><c> or</c><00:01:47.880><c> a</c><00:01:47.970><c> lower</c><00:01:48.299><c> value</c><00:01:48.689><c> of</c>
+
+00:01:48.710 --> 00:01:48.720 align:start position:0%
+overall latency or a lower value of
+ 
+
+00:01:48.720 --> 00:01:50.359 align:start position:0%
+overall latency or a lower value of
+providing<00:01:48.960><c> lower</c><00:01:49.409><c> throughput</c><00:01:49.740><c> and</c><00:01:50.040><c> lower</c>
+
+00:01:50.359 --> 00:01:50.369 align:start position:0%
+providing lower throughput and lower
+ 
+
+00:01:50.369 --> 00:01:54.109 align:start position:0%
+providing lower throughput and lower
+latency<00:01:51.590><c> there</c><00:01:52.590><c> are</c><00:01:52.710><c> three</c><00:01:52.950><c> properties</c><00:01:53.399><c> that</c>
+
+00:01:54.109 --> 00:01:54.119 align:start position:0%
+latency there are three properties that
+ 
+
+00:01:54.119 --> 00:01:56.090 align:start position:0%
+latency there are three properties that
+are<00:01:54.270><c> needed</c><00:01:54.630><c> to</c><00:01:54.810><c> allow</c><00:01:55.049><c> g1</c><00:01:55.590><c> to</c><00:01:55.829><c> collect</c>
+
+00:01:56.090 --> 00:01:56.100 align:start position:0%
+are needed to allow g1 to collect
+ 
+
+00:01:56.100 --> 00:01:58.819 align:start position:0%
+are needed to allow g1 to collect
+objects<00:01:56.549><c> at</c><00:01:56.670><c> finer</c><00:01:56.939><c> granularity</c><00:01:57.149><c> x'</c><00:01:57.829><c> dividing</c>
+
+00:01:58.819 --> 00:01:58.829 align:start position:0%
+objects at finer granularity x' dividing
+ 
+
+00:01:58.829 --> 00:02:00.950 align:start position:0%
+objects at finer granularity x' dividing
+the<00:01:58.920><c> heap</c><00:01:59.070><c> into</c><00:01:59.340><c> smaller</c><00:01:59.579><c> regions</c><00:02:00.030><c> knowing</c>
+
+00:02:00.950 --> 00:02:00.960 align:start position:0%
+the heap into smaller regions knowing
+ 
+
+00:02:00.960 --> 00:02:02.480 align:start position:0%
+the heap into smaller regions knowing
+which<00:02:01.170><c> objects</c><00:02:01.590><c> are</c><00:02:01.649><c> live</c><00:02:01.890><c> within</c><00:02:02.189><c> these</c>
+
+00:02:02.480 --> 00:02:02.490 align:start position:0%
+which objects are live within these
+ 
+
+00:02:02.490 --> 00:02:04.370 align:start position:0%
+which objects are live within these
+regions<00:02:02.880><c> and</c><00:02:03.030><c> keeping</c><00:02:03.899><c> track</c><00:02:04.020><c> of</c><00:02:04.140><c> the</c>
+
+00:02:04.370 --> 00:02:04.380 align:start position:0%
+regions and keeping track of the
+ 
+
+00:02:04.380 --> 00:02:07.399 align:start position:0%
+regions and keeping track of the
+pointers<00:02:04.710><c> between</c><00:02:05.040><c> these</c><00:02:05.189><c> regions</c><00:02:05.579><c> in</c><00:02:06.409><c> the</c>
+
+00:02:07.399 --> 00:02:07.409 align:start position:0%
+pointers between these regions in the
+ 
+
+00:02:07.409 --> 00:02:09.830 align:start position:0%
+pointers between these regions in the
+serial<00:02:07.770><c> and</c><00:02:07.860><c> parallel</c><00:02:07.950><c> collectors</c><00:02:08.789><c> the</c><00:02:09.660><c> heap</c>
+
+00:02:09.830 --> 00:02:09.840 align:start position:0%
+serial and parallel collectors the heap
+ 
+
+00:02:09.840 --> 00:02:11.720 align:start position:0%
+serial and parallel collectors the heap
+is<00:02:09.989><c> divided</c><00:02:10.470><c> into</c><00:02:10.709><c> only</c><00:02:11.099><c> two</c><00:02:11.280><c> or</c><00:02:11.700><c> three</c>
+
+00:02:11.720 --> 00:02:11.730 align:start position:0%
+is divided into only two or three
+ 
+
+00:02:11.730 --> 00:02:12.920 align:start position:0%
+is divided into only two or three
+regions
+
+00:02:12.920 --> 00:02:12.930 align:start position:0%
+regions
+ 
+
+00:02:12.930 --> 00:02:15.800 align:start position:0%
+regions
+with<00:02:13.530><c> g1</c><00:02:13.950><c> the</c><00:02:14.939><c> heap</c><00:02:15.120><c> is</c><00:02:15.269><c> divided</c><00:02:15.629><c> into</c>
+
+00:02:15.800 --> 00:02:15.810 align:start position:0%
+with g1 the heap is divided into
+ 
+
+00:02:15.810 --> 00:02:18.110 align:start position:0%
+with g1 the heap is divided into
+multiple<00:02:16.319><c> smaller</c><00:02:16.470><c> regions</c><00:02:17.069><c> usually</c><00:02:17.879><c> around</c>
+
+00:02:18.110 --> 00:02:18.120 align:start position:0%
+multiple smaller regions usually around
+ 
+
+00:02:18.120 --> 00:02:21.679 align:start position:0%
+multiple smaller regions usually around
+2000<00:02:18.989><c> regions</c><00:02:19.260><c> or</c><00:02:19.409><c> so</c><00:02:19.849><c> it</c><00:02:20.849><c> uses</c><00:02:21.180><c> these</c><00:02:21.299><c> regions</c>
+
+00:02:21.679 --> 00:02:21.689 align:start position:0%
+2000 regions or so it uses these regions
+ 
+
+00:02:21.689 --> 00:02:23.660 align:start position:0%
+2000 regions or so it uses these regions
+to<00:02:21.840><c> achieve</c><00:02:22.110><c> a</c><00:02:22.140><c> finer</c><00:02:22.500><c> granularity</c><00:02:22.769><c> on</c><00:02:23.310><c> how</c>
+
+00:02:23.660 --> 00:02:23.670 align:start position:0%
+to achieve a finer granularity on how
+ 
+
+00:02:23.670 --> 00:02:26.470 align:start position:0%
+to achieve a finer granularity on how
+much<00:02:23.849><c> garbage</c><00:02:24.060><c> to</c><00:02:24.360><c> collect</c><00:02:24.629><c> at</c><00:02:24.840><c> each</c><00:02:25.230><c> GC</c><00:02:25.590><c> pause</c>
+
+00:02:26.470 --> 00:02:26.480 align:start position:0%
+much garbage to collect at each GC pause
+ 
+
+00:02:26.480 --> 00:02:29.240 align:start position:0%
+much garbage to collect at each GC pause
+unlike<00:02:27.480><c> serial</c><00:02:27.870><c> and</c><00:02:28.019><c> parallel</c><00:02:28.079><c> the</c><00:02:28.920><c> marking</c>
+
+00:02:29.240 --> 00:02:29.250 align:start position:0%
+unlike serial and parallel the marking
+ 
+
+00:02:29.250 --> 00:02:31.550 align:start position:0%
+unlike serial and parallel the marking
+phase<00:02:29.400><c> of</c><00:02:29.640><c> G</c><00:02:29.760><c> 1</c><00:02:29.879><c> is</c><00:02:30.030><c> done</c><00:02:30.180><c> concurrently</c><00:02:30.560><c> this</c>
+
+00:02:31.550 --> 00:02:31.560 align:start position:0%
+phase of G 1 is done concurrently this
+ 
+
+00:02:31.560 --> 00:02:33.559 align:start position:0%
+phase of G 1 is done concurrently this
+allows<00:02:31.859><c> G</c><00:02:32.099><c> 1</c><00:02:32.250><c> to</c><00:02:32.370><c> find</c><00:02:32.519><c> all</c><00:02:32.790><c> live</c><00:02:33.120><c> objects</c>
+
+00:02:33.559 --> 00:02:33.569 align:start position:0%
+allows G 1 to find all live objects
+ 
+
+00:02:33.569 --> 00:02:35.319 align:start position:0%
+allows G 1 to find all live objects
+without<00:02:33.720><c> stopping</c><00:02:34.439><c> the</c><00:02:34.560><c> java</c><00:02:34.739><c> application</c>
+
+00:02:35.319 --> 00:02:35.329 align:start position:0%
+without stopping the java application
+ 
+
+00:02:35.329 --> 00:02:37.490 align:start position:0%
+without stopping the java application
+objects<00:02:36.329><c> can</c><00:02:36.510><c> be</c><00:02:36.629><c> marked</c><00:02:36.959><c> in</c><00:02:37.049><c> multiple</c>
+
+00:02:37.490 --> 00:02:37.500 align:start position:0%
+objects can be marked in multiple
+ 
+
+00:02:37.500 --> 00:02:39.740 align:start position:0%
+objects can be marked in multiple
+regions<00:02:37.890><c> at</c><00:02:38.010><c> the</c><00:02:38.099><c> same</c><00:02:38.280><c> time</c><00:02:38.519><c> in</c><00:02:39.329><c> order</c><00:02:39.599><c> to</c>
+
+00:02:39.740 --> 00:02:39.750 align:start position:0%
+regions at the same time in order to
+ 
+
+00:02:39.750 --> 00:02:41.330 align:start position:0%
+regions at the same time in order to
+move<00:02:39.900><c> objects</c><00:02:40.470><c> from</c><00:02:40.560><c> one</c><00:02:40.799><c> region</c><00:02:41.069><c> to</c><00:02:41.220><c> another</c>
+
+00:02:41.330 --> 00:02:41.340 align:start position:0%
+move objects from one region to another
+ 
+
+00:02:41.340 --> 00:02:43.190 align:start position:0%
+move objects from one region to another
+you<00:02:42.000><c> need</c><00:02:42.150><c> to</c><00:02:42.269><c> know</c><00:02:42.390><c> the</c><00:02:42.510><c> pointers</c><00:02:42.870><c> pointing</c>
+
+00:02:43.190 --> 00:02:43.200 align:start position:0%
+you need to know the pointers pointing
+ 
+
+00:02:43.200 --> 00:02:45.619 align:start position:0%
+you need to know the pointers pointing
+to<00:02:43.319><c> those</c><00:02:43.470><c> objects</c><00:02:43.890><c> G</c><00:02:44.790><c> 1</c><00:02:44.970><c> keeps</c><00:02:45.209><c> track</c><00:02:45.480><c> of</c><00:02:45.510><c> the</c>
+
+00:02:45.619 --> 00:02:45.629 align:start position:0%
+to those objects G 1 keeps track of the
+ 
+
+00:02:45.629 --> 00:02:47.629 align:start position:0%
+to those objects G 1 keeps track of the
+pointers<00:02:46.049><c> between</c><00:02:46.440><c> regions</c><00:02:46.829><c> in</c><00:02:47.159><c> order</c><00:02:47.459><c> to</c>
+
+00:02:47.629 --> 00:02:47.639 align:start position:0%
+pointers between regions in order to
+ 
+
+00:02:47.639 --> 00:02:49.220 align:start position:0%
+pointers between regions in order to
+avoid<00:02:47.879><c> leaving</c><00:02:48.329><c> a</c><00:02:48.389><c> stale</c><00:02:48.629><c> pointer</c><00:02:49.019><c> on</c><00:02:49.200><c> the</c>
+
+00:02:49.220 --> 00:02:49.230 align:start position:0%
+avoid leaving a stale pointer on the
+ 
+
+00:02:49.230 --> 00:02:52.430 align:start position:0%
+avoid leaving a stale pointer on the
+heap<00:02:50.150><c> G</c><00:02:51.150><c> 1</c><00:02:51.329><c> can</c><00:02:51.480><c> decide</c><00:02:51.810><c> to</c><00:02:51.930><c> collect</c><00:02:52.200><c> a</c><00:02:52.290><c> few</c>
+
+00:02:52.430 --> 00:02:52.440 align:start position:0%
+heap G 1 can decide to collect a few
+ 
+
+00:02:52.440 --> 00:02:55.309 align:start position:0%
+heap G 1 can decide to collect a few
+regions<00:02:52.650><c> at</c><00:02:52.950><c> a</c><00:02:52.980><c> time</c><00:02:53.250><c> by</c><00:02:53.970><c> doing</c><00:02:54.299><c> so</c><00:02:54.480><c> it</c><00:02:55.170><c> can</c>
+
+00:02:55.309 --> 00:02:55.319 align:start position:0%
+regions at a time by doing so it can
+ 
+
+00:02:55.319 --> 00:02:56.720 align:start position:0%
+regions at a time by doing so it can
+limit<00:02:55.530><c> the</c><00:02:55.739><c> number</c><00:02:56.010><c> of</c><00:02:56.040><c> objects</c><00:02:56.549><c> being</c>
+
+00:02:56.720 --> 00:02:56.730 align:start position:0%
+limit the number of objects being
+ 
+
+00:02:56.730 --> 00:02:59.050 align:start position:0%
+limit the number of objects being
+processed<00:02:57.030><c> resulting</c><00:02:57.930><c> in</c><00:02:58.049><c> lower</c><00:02:58.200><c> pauses</c>
+
+00:02:59.050 --> 00:02:59.060 align:start position:0%
+processed resulting in lower pauses
+ 
+
+00:02:59.060 --> 00:03:01.940 align:start position:0%
+processed resulting in lower pauses
+relative<00:03:00.060><c> to</c><00:03:00.180><c> other</c><00:03:00.359><c> collectors</c><00:03:00.900><c> g1</c><00:03:01.560><c> has</c><00:03:01.709><c> more</c>
+
+00:03:01.940 --> 00:03:01.950 align:start position:0%
+relative to other collectors g1 has more
+ 
+
+00:03:01.950 --> 00:03:03.649 align:start position:0%
+relative to other collectors g1 has more
+data<00:03:02.129><c> on</c><00:03:02.400><c> the</c><00:03:02.519><c> state</c><00:03:02.760><c> of</c><00:03:02.909><c> objects</c><00:03:03.329><c> in</c><00:03:03.450><c> the</c><00:03:03.510><c> heap</c>
+
+00:03:03.649 --> 00:03:03.659 align:start position:0%
+data on the state of objects in the heap
+ 
+
+00:03:03.659 --> 00:03:06.349 align:start position:0%
+data on the state of objects in the heap
+before<00:03:04.290><c> of</c><00:03:04.560><c> collection</c><00:03:05.010><c> begins</c><00:03:05.340><c> giving</c><00:03:06.269><c> it</c>
+
+00:03:06.349 --> 00:03:06.359 align:start position:0%
+before of collection begins giving it
+ 
+
+00:03:06.359 --> 00:03:07.789 align:start position:0%
+before of collection begins giving it
+more<00:03:06.540><c> control</c><00:03:06.959><c> over</c><00:03:06.989><c> the</c><00:03:07.319><c> length</c><00:03:07.560><c> of</c><00:03:07.709><c> the</c>
+
+00:03:07.789 --> 00:03:07.799 align:start position:0%
+more control over the length of the
+ 
+
+00:03:07.799 --> 00:03:10.849 align:start position:0%
+more control over the length of the
+pauses<00:03:08.060><c> as</c><00:03:09.060><c> G</c><00:03:09.269><c> 1</c><00:03:09.420><c> begins</c><00:03:09.720><c> a</c><00:03:09.840><c> collection</c><00:03:10.260><c> G</c><00:03:10.709><c> 1</c>
+
+00:03:10.849 --> 00:03:10.859 align:start position:0%
+pauses as G 1 begins a collection G 1
+ 
+
+00:03:10.859 --> 00:03:12.979 align:start position:0%
+pauses as G 1 begins a collection G 1
+needs<00:03:11.310><c> at</c><00:03:11.459><c> least</c><00:03:11.489><c> one</c><00:03:11.939><c> empty</c><00:03:12.269><c> region</c><00:03:12.659><c> to</c><00:03:12.810><c> move</c>
+
+00:03:12.979 --> 00:03:12.989 align:start position:0%
+needs at least one empty region to move
+ 
+
+00:03:12.989 --> 00:03:15.199 align:start position:0%
+needs at least one empty region to move
+live<00:03:13.200><c> objects</c><00:03:13.620><c> into</c><00:03:13.920><c> a</c><00:03:14.159><c> set</c><00:03:14.609><c> of</c><00:03:14.730><c> regions</c><00:03:14.909><c> is</c>
+
+00:03:15.199 --> 00:03:15.209 align:start position:0%
+live objects into a set of regions is
+ 
+
+00:03:15.209 --> 00:03:17.000 align:start position:0%
+live objects into a set of regions is
+selected<00:03:15.629><c> based</c><00:03:15.750><c> on</c><00:03:15.930><c> the</c><00:03:16.019><c> heuristics</c><00:03:16.530><c> such</c><00:03:16.829><c> as</c>
+
+00:03:17.000 --> 00:03:17.010 align:start position:0%
+selected based on the heuristics such as
+ 
+
+00:03:17.010 --> 00:03:19.430 align:start position:0%
+selected based on the heuristics such as
+the<00:03:17.190><c> amount</c><00:03:17.459><c> of</c><00:03:17.579><c> live</c><00:03:17.760><c> data</c><00:03:18.030><c> how</c><00:03:19.019><c> much</c><00:03:19.199><c> of</c><00:03:19.349><c> the</c>
+
+00:03:19.430 --> 00:03:19.440 align:start position:0%
+the amount of live data how much of the
+ 
+
+00:03:19.440 --> 00:03:21.710 align:start position:0%
+the amount of live data how much of the
+heap<00:03:19.620><c> is</c><00:03:19.799><c> free</c><00:03:20.099><c> and</c><00:03:20.340><c> the</c><00:03:20.910><c> posit</c><00:03:21.209><c> argot</c><00:03:21.480><c> the</c>
+
+00:03:21.710 --> 00:03:21.720 align:start position:0%
+heap is free and the posit argot the
+ 
+
+00:03:21.720 --> 00:03:23.330 align:start position:0%
+heap is free and the posit argot the
+live<00:03:21.959><c> objects</c><00:03:22.379><c> from</c><00:03:22.470><c> the</c><00:03:22.650><c> selected</c><00:03:23.010><c> regions</c>
+
+00:03:23.330 --> 00:03:23.340 align:start position:0%
+live objects from the selected regions
+ 
+
+00:03:23.340 --> 00:03:25.129 align:start position:0%
+live objects from the selected regions
+are<00:03:23.459><c> moved</c><00:03:23.639><c> into</c><00:03:23.790><c> the</c><00:03:24.030><c> empty</c><00:03:24.299><c> region</c><00:03:24.660><c> freeing</c>
+
+00:03:25.129 --> 00:03:25.139 align:start position:0%
+are moved into the empty region freeing
+ 
+
+00:03:25.139 --> 00:03:27.470 align:start position:0%
+are moved into the empty region freeing
+the<00:03:25.349><c> memory</c><00:03:25.620><c> from</c><00:03:25.829><c> the</c><00:03:25.949><c> original</c><00:03:26.340><c> regions</c><00:03:26.730><c> the</c>
+
+00:03:27.470 --> 00:03:27.480 align:start position:0%
+the memory from the original regions the
+ 
+
+00:03:27.480 --> 00:03:30.920 align:start position:0%
+the memory from the original regions the
+heap<00:03:27.660><c> is</c><00:03:27.810><c> now</c><00:03:27.930><c> more</c><00:03:28.199><c> compact</c><00:03:29.690><c> there</c><00:03:30.690><c> have</c><00:03:30.810><c> been</c>
+
+00:03:30.920 --> 00:03:30.930 align:start position:0%
+heap is now more compact there have been
+ 
+
+00:03:30.930 --> 00:03:32.390 align:start position:0%
+heap is now more compact there have been
+a<00:03:31.049><c> number</c><00:03:31.199><c> of</c><00:03:31.319><c> significant</c><00:03:31.889><c> improvements</c><00:03:32.340><c> in</c>
+
+00:03:32.390 --> 00:03:32.400 align:start position:0%
+a number of significant improvements in
+ 
+
+00:03:32.400 --> 00:03:34.720 align:start position:0%
+a number of significant improvements in
+G<00:03:32.609><c> 1</c><00:03:32.760><c> since</c><00:03:33.000><c> JDK</c><00:03:33.599><c> 8</c>
+
+00:03:34.720 --> 00:03:34.730 align:start position:0%
+G 1 since JDK 8
+ 
+
+00:03:34.730 --> 00:03:38.420 align:start position:0%
+G 1 since JDK 8
+there<00:03:35.730><c> are</c><00:03:35.849><c> numerous</c><00:03:36.299><c> changes</c><00:03:37.159><c> but</c><00:03:38.159><c> 5</c>
+
+00:03:38.420 --> 00:03:38.430 align:start position:0%
+there are numerous changes but 5
+ 
+
+00:03:38.430 --> 00:03:40.159 align:start position:0%
+there are numerous changes but 5
+significant<00:03:39.000><c> improvements</c><00:03:39.540><c> are</c><00:03:39.659><c> string</c>
+
+00:03:40.159 --> 00:03:40.169 align:start position:0%
+significant improvements are string
+ 
+
+00:03:40.169 --> 00:03:42.289 align:start position:0%
+significant improvements are string
+deduplication<00:03:40.739><c> class</c><00:03:41.519><c> unloading</c><00:03:42.000><c> after</c><00:03:42.239><c> a</c>
+
+00:03:42.289 --> 00:03:42.299 align:start position:0%
+deduplication class unloading after a
+ 
+
+00:03:42.299 --> 00:03:44.629 align:start position:0%
+deduplication class unloading after a
+concurrent<00:03:42.690><c> cycle</c><00:03:43.049><c> eager</c><00:03:43.889><c> reclamation</c><00:03:44.519><c> of</c>
+
+00:03:44.629 --> 00:03:44.639 align:start position:0%
+concurrent cycle eager reclamation of
+ 
+
+00:03:44.639 --> 00:03:46.939 align:start position:0%
+concurrent cycle eager reclamation of
+humongous<00:03:44.879><c> objects</c><00:03:45.500><c> adaptive</c><00:03:46.500><c> start</c><00:03:46.739><c> of</c><00:03:46.859><c> a</c>
+
+00:03:46.939 --> 00:03:46.949 align:start position:0%
+humongous objects adaptive start of a
+ 
+
+00:03:46.949 --> 00:03:48.860 align:start position:0%
+humongous objects adaptive start of a
+concurrent<00:03:47.190><c> cycle</c><00:03:47.699><c> and</c><00:03:47.879><c> more</c><00:03:48.510><c> effective</c>
+
+00:03:48.860 --> 00:03:48.870 align:start position:0%
+concurrent cycle and more effective
+ 
+
+00:03:48.870 --> 00:03:52.159 align:start position:0%
+concurrent cycle and more effective
+pauses<00:03:49.940><c> more</c><00:03:50.940><c> detailed</c><00:03:51.299><c> information</c><00:03:51.870><c> on</c><00:03:51.959><c> each</c>
+
+00:03:52.159 --> 00:03:52.169 align:start position:0%
+pauses more detailed information on each
+ 
+
+00:03:52.169 --> 00:03:53.809 align:start position:0%
+pauses more detailed information on each
+of<00:03:52.409><c> these</c><00:03:52.500><c> is</c><00:03:52.799><c> available</c><00:03:53.310><c> in</c><00:03:53.430><c> the</c><00:03:53.519><c> release</c>
+
+00:03:53.809 --> 00:03:53.819 align:start position:0%
+of these is available in the release
+ 
+
+00:03:53.819 --> 00:03:55.729 align:start position:0%
+of these is available in the release
+notes<00:03:53.849><c> and</c><00:03:54.329><c> tuning</c><00:03:54.989><c> guides</c><00:03:55.169><c> for</c><00:03:55.620><c> their</c>
+
+00:03:55.729 --> 00:03:55.739 align:start position:0%
+notes and tuning guides for their
+ 
+
+00:03:55.739 --> 00:03:57.860 align:start position:0%
+notes and tuning guides for their
+respective<00:03:56.099><c> releases</c><00:03:56.699><c> here</c><00:03:57.389><c> are</c><00:03:57.510><c> some</c><00:03:57.690><c> links</c>
+
+00:03:57.860 --> 00:03:57.870 align:start position:0%
+respective releases here are some links
+ 
+
+00:03:57.870 --> 00:04:00.559 align:start position:0%
+respective releases here are some links
+for<00:03:58.079><c> more</c><00:03:58.379><c> information</c><00:03:58.859><c> on</c><00:03:58.949><c> gdk9</c><00:03:59.419><c> you</c><00:04:00.419><c> can</c>
+
+00:04:00.559 --> 00:04:00.569 align:start position:0%
+for more information on gdk9 you can
+ 
+
+00:04:00.569 --> 00:04:02.740 align:start position:0%
+for more information on gdk9 you can
+download<00:04:00.810><c> JDK</c><00:04:01.379><c> 9</c><00:04:01.530><c> from</c><00:04:01.769><c> Oracle</c><00:04:02.129><c> comm</c>
+
+00:04:02.740 --> 00:04:02.750 align:start position:0%
+download JDK 9 from Oracle comm
+ 
+
+00:04:02.750 --> 00:04:04.969 align:start position:0%
+download JDK 9 from Oracle comm
+participate<00:04:03.750><c> in</c><00:04:03.900><c> discussions</c><00:04:04.409><c> on</c><00:04:04.530><c> the</c><00:04:04.680><c> open</c>
+
+00:04:04.969 --> 00:04:04.979 align:start position:0%
+participate in discussions on the open
+ 
+
+00:04:04.979 --> 00:04:07.189 align:start position:0%
+participate in discussions on the open
+JDK<00:04:05.129><c> mailing</c><00:04:05.699><c> lists</c><00:04:06.000><c> or</c><00:04:06.449><c> follow</c><00:04:06.810><c> us</c><00:04:07.019><c> on</c>
+
+00:04:07.189 --> 00:04:07.199 align:start position:0%
+JDK mailing lists or follow us on
+ 
+
+00:04:07.199 --> 00:04:10.310 align:start position:0%
+JDK mailing lists or follow us on
+Twitter<00:04:07.470><c> for</c><00:04:07.680><c> news</c><00:04:07.979><c> and</c><00:04:08.010><c> updates</c>
+

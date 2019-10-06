@@ -1,0 +1,2013 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.590
+PAUL LEWIS: Hello again, folks.
+
+00:00:01.590 --> 00:00:03.480
+Now let's talk about media.
+
+00:00:03.480 --> 00:00:06.870
+And I think maybe
+two episodes ago I
+
+00:00:06.870 --> 00:00:10.060
+explained about DASH
+and MSE and HLS--
+
+00:00:10.060 --> 00:00:10.560
+right.
+
+00:00:10.560 --> 00:00:13.532
+So I've been making
+another prototype.
+
+00:00:13.532 --> 00:00:15.990
+In fact, to be honest with you,
+I'm quite a way on with the
+
+00:00:15.990 --> 00:00:16.490
+build.
+
+00:00:16.490 --> 00:00:19.500
+But I was away at BlinkOn
+in the States last week,
+
+00:00:19.500 --> 00:00:23.580
+and so the diaries are lagging
+behind reality a little bit.
+
+00:00:23.580 --> 00:00:25.260
+But we'll come onto
+that in a while.
+
+00:00:25.260 --> 00:00:27.718
+What I want to do is I want to
+talk, as I say, about media.
+
+00:00:27.718 --> 00:00:30.270
+I talked about DASH
+and MSE and HLS.
+
+00:00:30.270 --> 00:00:35.070
+And I've been making a prototype
+using the Shaka Player.
+
+00:00:35.070 --> 00:00:36.720
+So let's talk about
+that first of all.
+
+00:00:36.720 --> 00:00:38.610
+Why would I use Shaka Player?
+
+00:00:38.610 --> 00:00:43.050
+Because if you've
+got MSE and you're
+
+00:00:43.050 --> 00:00:45.857
+swapping between different
+quality versions of your video,
+
+00:00:45.857 --> 00:00:47.940
+you have to do things like
+tracking the bandwidth.
+
+00:00:47.940 --> 00:00:52.740
+You have to figure out
+where you can switch and get
+
+00:00:52.740 --> 00:00:55.810
+the next segment of your video
+and all these kinds of things.
+
+00:00:55.810 --> 00:00:58.320
+And it's actually a
+tremendous amount of work
+
+00:00:58.320 --> 00:01:00.420
+that I don't think
+is worth doing
+
+00:01:00.420 --> 00:01:04.830
+when you can get the
+Shaka Player for 43
+
+00:01:04.830 --> 00:01:06.100
+kilobytes gzipped.
+
+00:01:06.100 --> 00:01:08.680
+Now it feels to me like that's
+really small for what is
+
+00:01:08.680 --> 00:01:09.930
+actually doing on your behalf.
+
+00:01:09.930 --> 00:01:13.385
+You should actually have a
+look through all the docs
+
+00:01:13.385 --> 00:01:14.010
+and everything.
+
+00:01:14.010 --> 00:01:17.132
+In fact we'll link to it in
+the show notes about the Shaka
+
+00:01:17.132 --> 00:01:19.590
+Player and where you can get
+it and have a look at the demo
+
+00:01:19.590 --> 00:01:20.798
+and all these kind of things.
+
+00:01:20.798 --> 00:01:21.420
+There's loads.
+
+00:01:21.420 --> 00:01:23.730
+It's really quite
+small for what it is.
+
+00:01:23.730 --> 00:01:26.730
+And I felt like, you
+know what, actually it's
+
+00:01:26.730 --> 00:01:29.640
+got loads of unit tests and
+it's just-- it's properly done.
+
+00:01:29.640 --> 00:01:32.190
+So that's what I've been using--
+
+00:01:32.190 --> 00:01:33.360
+right.
+
+00:01:33.360 --> 00:01:35.510
+So with that in
+place, how actually
+
+00:01:35.510 --> 00:01:37.320
+would we use the Shaka Player?
+
+00:01:37.320 --> 00:01:39.120
+That's what has been
+on my mind and that's
+
+00:01:39.120 --> 00:01:40.960
+what I've been working on.
+
+00:01:40.960 --> 00:01:42.820
+So let's have a look
+at what's on my screen.
+
+00:01:42.820 --> 00:01:46.260
+So if I've got a bunch
+of FFmpeg commands.
+
+00:01:46.260 --> 00:01:48.480
+I should explain what
+I'm going to try and do.
+
+00:01:48.480 --> 00:01:50.100
+I'm going to start with a video.
+
+00:01:50.100 --> 00:01:53.610
+I've been starting with one
+video that's running at HD.
+
+00:01:53.610 --> 00:01:58.390
+And then what I wanted to do was
+make different quality versions
+
+00:01:58.390 --> 00:01:59.140
+of this.
+
+00:01:59.140 --> 00:02:00.520
+So I'm using FFmpeg.
+
+00:02:00.520 --> 00:02:02.860
+You see on screen I've
+got the FFmpeg commands.
+
+00:02:02.860 --> 00:02:05.440
+Which is just-- I mean,
+they're sort of reverse
+
+00:02:05.440 --> 00:02:08.185
+engineered from looking around
+at documentation and kind
+
+00:02:08.185 --> 00:02:09.789
+of other ways of doing things.
+
+00:02:09.789 --> 00:02:12.850
+I just chose like a
+720, a 540, and a 360.
+
+00:02:12.850 --> 00:02:14.530
+But let me just show you this.
+
+00:02:14.530 --> 00:02:18.540
+There is a page on
+the YouTube help
+
+00:02:18.540 --> 00:02:21.370
+that covers live encoder
+settings, but nonetheless,
+
+00:02:21.370 --> 00:02:23.660
+encoder settings,
+bitrates, and resolutions.
+
+00:02:23.660 --> 00:02:26.650
+So for example, they're saying
+if you going to do 1080p video,
+
+00:02:26.650 --> 00:02:29.140
+you probably want
+it 1,920 by 1,080--
+
+00:02:29.140 --> 00:02:29.770
+big surprise.
+
+00:02:29.770 --> 00:02:34.010
+But bitrate would be 3,000
+to 6,000 bits per second.
+
+00:02:34.010 --> 00:02:36.250
+So were I doing this
+for real and not
+
+00:02:36.250 --> 00:02:38.740
+just kind of in
+placeholder mode--
+
+00:02:38.740 --> 00:02:40.900
+sort of like oh, let's just
+do a few versions, just
+
+00:02:40.900 --> 00:02:42.606
+see how this works--
+
+00:02:42.606 --> 00:02:44.230
+I would probably be
+following something
+
+00:02:44.230 --> 00:02:47.950
+like this to kind of go, right,
+that's what a 1080p looks like.
+
+00:02:47.950 --> 00:02:50.290
+That's what 720p should
+have, 480, and so
+
+00:02:50.290 --> 00:02:54.170
+on all the way down to the ones
+that I care about the most.
+
+00:02:54.170 --> 00:02:58.410
+So, I'm just running FFmpeg,
+just making a bunch of these,
+
+00:02:58.410 --> 00:03:02.320
+like three different
+variants of my video.
+
+00:03:02.320 --> 00:03:03.850
+The next thing I'm
+using is a thing
+
+00:03:03.850 --> 00:03:05.680
+called the Shaka Packager.
+
+00:03:05.680 --> 00:03:07.150
+And what the Shaka
+Packager does--
+
+00:03:07.150 --> 00:03:11.290
+and it is quite a mouthful
+to say, Shaka Packer.
+
+00:03:11.290 --> 00:03:13.720
+It feels like it just has a
+nice little, "taka, taka, ta."
+
+00:03:13.720 --> 00:03:14.860
+I really like it.
+
+00:03:14.860 --> 00:03:17.030
+I'm going to say it
+one time for you.
+
+00:03:17.030 --> 00:03:19.810
+Shaka Packager, there you are.
+
+00:03:19.810 --> 00:03:22.524
+What it does is it
+takes the videos
+
+00:03:22.524 --> 00:03:24.440
+that you've got, all the
+different variations,
+
+00:03:24.440 --> 00:03:29.217
+like the 720p, the 540, 360,
+and you give it a profile,
+
+00:03:29.217 --> 00:03:31.300
+so whether it's live
+streaming or video on demand.
+
+00:03:31.300 --> 00:03:34.480
+I'm doing on demand, not even
+thought about live streaming.
+
+00:03:34.480 --> 00:03:37.995
+You tell it where you want it
+to output the DASH manifest,
+
+00:03:37.995 --> 00:03:39.870
+because that's what it's
+going to do for you.
+
+00:03:39.870 --> 00:03:41.884
+It can take in all
+the video and so on,
+
+00:03:41.884 --> 00:03:43.300
+and it's going to
+split things out
+
+00:03:43.300 --> 00:03:45.740
+to video tracks, audio tracks,
+different qualities, blah,
+
+00:03:45.740 --> 00:03:46.690
+blah, blah.
+
+00:03:46.690 --> 00:03:52.097
+And you tell it how much, for
+example, you want it to buffer,
+
+00:03:52.097 --> 00:03:54.430
+which in my case I'm saying
+three seconds would be good.
+
+00:03:54.430 --> 00:03:56.650
+Just get me three
+seconds up front.
+
+00:03:56.650 --> 00:04:00.030
+Further down the line, there
+will probably be some dancing
+
+00:04:00.030 --> 00:04:04.109
+that I need to do there around
+prebuffering video content so
+
+00:04:04.109 --> 00:04:06.650
+that, for example, we can give
+you a flying start with video.
+
+00:04:06.650 --> 00:04:09.090
+But I haven't really got my
+head around that space yet.
+
+00:04:09.090 --> 00:04:11.050
+Like, how do we get
+the first five seconds
+
+00:04:11.050 --> 00:04:13.360
+of the video primed
+by a service worker
+
+00:04:13.360 --> 00:04:14.950
+so that we can just
+play instantly?
+
+00:04:14.950 --> 00:04:16.019
+Haven't really
+thought about that.
+
+00:04:16.019 --> 00:04:17.602
+And in the DASH
+manifesto you can just
+
+00:04:17.602 --> 00:04:20.560
+say, hey you know what, when you
+first load this video, just try
+
+00:04:20.560 --> 00:04:23.090
+and get the first three
+seconds off the network.
+
+00:04:23.090 --> 00:04:23.920
+That's one thing.
+
+00:04:23.920 --> 00:04:25.780
+And then segment
+duration that you
+
+00:04:25.780 --> 00:04:29.620
+see here is, as I
+understand it, is how often
+
+00:04:29.620 --> 00:04:31.510
+you can switch qualities.
+
+00:04:31.510 --> 00:04:33.830
+So I'm saying every three
+seconds, if you need to,
+
+00:04:33.830 --> 00:04:36.210
+you can switch qualities.
+
+00:04:36.210 --> 00:04:38.095
+This to the Shaka
+Player through the DASH
+
+00:04:38.095 --> 00:04:39.970
+manifest, you can switch
+every three seconds.
+
+00:04:39.970 --> 00:04:43.720
+What's important about that
+is when you reverse back up
+
+00:04:43.720 --> 00:04:47.420
+and look at the video
+calls, you see here
+
+00:04:47.420 --> 00:04:50.650
+that there's this keyint,
+min-keyint, no-scenecut.
+
+00:04:50.650 --> 00:04:54.040
+What we need to do when
+we take our original video
+
+00:04:54.040 --> 00:04:56.572
+and we turn it into the
+different quality versions,
+
+00:04:56.572 --> 00:04:58.780
+we actually have to put
+these things called iframes--
+
+00:04:58.780 --> 00:05:02.510
+not iframes like we would--
+
+00:05:02.510 --> 00:05:03.950
+they're different iframes.
+
+00:05:03.950 --> 00:05:06.533
+They're iframes but they're not
+iframes, you know what I mean?
+
+00:05:06.533 --> 00:05:09.950
+They're just--
+they're video frames.
+
+00:05:09.950 --> 00:05:10.780
+They're keyframes.
+
+00:05:10.780 --> 00:05:11.655
+That's what they are.
+
+00:05:11.655 --> 00:05:13.060
+They're keyframes.
+
+00:05:13.060 --> 00:05:15.370
+So we need a keyframe.
+
+00:05:15.370 --> 00:05:20.199
+So in my case I'm doing
+it every 24 frames, which
+
+00:05:20.199 --> 00:05:22.240
+means, because it's a 24
+frames per second video,
+
+00:05:22.240 --> 00:05:25.720
+I'm getting a keyframe
+every second, right?
+
+00:05:25.720 --> 00:05:29.470
+So every time we hit
+one of these keyframes
+
+00:05:29.470 --> 00:05:32.810
+is a savepoint at which we
+could switch to another quality.
+
+00:05:32.810 --> 00:05:36.710
+So the segment duration should,
+if I understand this correctly,
+
+00:05:36.710 --> 00:05:38.410
+be a multiple of the keyframes.
+
+00:05:38.410 --> 00:05:40.390
+So if I've got a
+keyframe every second,
+
+00:05:40.390 --> 00:05:42.460
+I could switch every two
+seconds, four seconds,
+
+00:05:42.460 --> 00:05:44.830
+five seconds, as long as
+it's a multiple of what
+
+00:05:44.830 --> 00:05:46.006
+my keyframe value is.
+
+00:05:46.006 --> 00:05:46.880
+Does that make sense?
+
+00:05:46.880 --> 00:05:47.530
+I hope so.
+
+00:05:47.530 --> 00:05:50.260
+But I have a segment
+duration of three seconds.
+
+00:05:50.260 --> 00:05:52.150
+That's what I'm saying.
+
+00:05:52.150 --> 00:05:53.860
+What I also do, as
+you'll see here,
+
+00:05:53.860 --> 00:05:57.130
+is I actually do three more
+packages, one for the 720,
+
+00:05:57.130 --> 00:05:59.320
+one for the 540,
+one from the 360,
+
+00:05:59.320 --> 00:06:02.116
+because I was just interested
+in whether I might need
+
+00:06:02.116 --> 00:06:04.240
+separate manifests for the
+offline stuff, which I'm
+
+00:06:04.240 --> 00:06:06.100
+going to come onto shortly--
+
+00:06:06.100 --> 00:06:06.900
+right.
+
+00:06:06.900 --> 00:06:07.910
+Woo.
+
+00:06:07.910 --> 00:06:10.960
+So, taken the video, turned it
+into three different quality
+
+00:06:10.960 --> 00:06:11.710
+versions.
+
+00:06:11.710 --> 00:06:13.690
+It's the same
+production you'd do--
+
+00:06:13.690 --> 00:06:16.060
+you'd go through
+that YouTube help
+
+00:06:16.060 --> 00:06:18.512
+and just kind of be, like,
+OK, I need like five or 10
+
+00:06:18.512 --> 00:06:19.720
+different versions and so on.
+
+00:06:19.720 --> 00:06:24.190
+And you probably just set up a
+pipeline for processing videos.
+
+00:06:24.190 --> 00:06:27.875
+And then we're going to package
+them up into a DASH manifest
+
+00:06:27.875 --> 00:06:30.250
+or have a DASH manifest which
+points to all these things.
+
+00:06:30.250 --> 00:06:32.420
+Let me show you one
+of those looks like--
+
+00:06:32.420 --> 00:06:35.890
+sample-manifest-full,
+that's the one.
+
+00:06:35.890 --> 00:06:38.950
+So this is what the Shaka
+Packager outputs for us.
+
+00:06:38.950 --> 00:06:40.570
+And you can see that there's--
+
+00:06:40.570 --> 00:06:43.600
+I mean, there's loads in
+here, and it's a bunch of XML.
+
+00:06:43.600 --> 00:06:45.130
+But here's the
+minimum buffer time,
+
+00:06:45.130 --> 00:06:47.500
+which is that three
+seconds that I set.
+
+00:06:47.500 --> 00:06:50.560
+How long the video is-- so the
+media presentation duration
+
+00:06:50.560 --> 00:06:52.900
+is 71 seconds in this case.
+
+00:06:52.900 --> 00:06:56.030
+And then inside here,
+you'll see that there's
+
+00:06:56.030 --> 00:06:58.800
+these things, these adaptation
+sets and these representations.
+
+00:06:58.800 --> 00:07:01.950
+But you'll see what's crucially
+important here is that you've
+
+00:07:01.950 --> 00:07:05.910
+got a representation for
+the 640 by 360, 960 by 540,
+
+00:07:05.910 --> 00:07:07.690
+and 1,280 by 720.
+
+00:07:07.690 --> 00:07:10.830
+So you can start to see
+that it's listing out
+
+00:07:10.830 --> 00:07:12.420
+all the different
+qualities of video
+
+00:07:12.420 --> 00:07:16.590
+that you can actually
+use for playback, which
+
+00:07:16.590 --> 00:07:19.260
+tallies entirely with what
+I passed to the packager
+
+00:07:19.260 --> 00:07:20.590
+in the first instance.
+
+00:07:20.590 --> 00:07:22.440
+And it has really
+interesting things
+
+00:07:22.440 --> 00:07:25.530
+like the amount of bandwidth
+that that particular video
+
+00:07:25.530 --> 00:07:28.710
+quality is going to need,
+the codecs it's using,
+
+00:07:28.710 --> 00:07:30.189
+a bunch of other stuff as well.
+
+00:07:30.189 --> 00:07:32.230
+And to be honest there's
+a bunch of stuff in here
+
+00:07:32.230 --> 00:07:35.164
+I don't fully understand,
+like the initialization range.
+
+00:07:35.164 --> 00:07:36.330
+Not quite sure what that is.
+
+00:07:36.330 --> 00:07:37.560
+It's quite exciting.
+
+00:07:37.560 --> 00:07:39.320
+I'm sure you'll agree.
+
+00:07:39.320 --> 00:07:40.260
+Maybe not.
+
+00:07:40.260 --> 00:07:41.010
+I don't know.
+
+00:07:41.010 --> 00:07:44.790
+And then further down, we
+also have audio configurations
+
+00:07:44.790 --> 00:07:45.460
+as well.
+
+00:07:45.460 --> 00:07:49.230
+So again, we've got
+360, 540, and 720 audio.
+
+00:07:49.230 --> 00:07:53.700
+I have a feeling that in
+reality, you probably only just
+
+00:07:53.700 --> 00:07:57.890
+want like one audio
+track, something that's
+
+00:07:57.890 --> 00:08:02.760
+like an MP3 or an AAC or--
+
+00:08:02.760 --> 00:08:05.280
+probably the video
+quality, I reckon,
+
+00:08:05.280 --> 00:08:07.266
+is going to change
+a lot more and be
+
+00:08:07.266 --> 00:08:08.640
+the one that's
+the more bandwidth
+
+00:08:08.640 --> 00:08:11.509
+sensitive than the
+audio, is my guess.
+
+00:08:11.509 --> 00:08:13.050
+So you might just
+be like, well, it's
+
+00:08:13.050 --> 00:08:15.900
+going to take one
+audio track, and I'll
+
+00:08:15.900 --> 00:08:18.360
+have loads of different
+qualities of video.
+
+00:08:18.360 --> 00:08:20.550
+But I don't know, I'm
+still figuring a lot
+
+00:08:20.550 --> 00:08:22.080
+of this stuff out for myself.
+
+00:08:22.080 --> 00:08:24.680
+Right, so let's take a
+look at some of the code
+
+00:08:24.680 --> 00:08:27.300
+to actually take
+that DASH manifest
+
+00:08:27.300 --> 00:08:31.650
+and put it into use
+with the Shaka Player.
+
+00:08:31.650 --> 00:08:34.636
+So this is the code, which
+is not particularly neat.
+
+00:08:34.636 --> 00:08:35.760
+I'll give you the heads up.
+
+00:08:35.760 --> 00:08:37.805
+It is very much prototype code.
+
+00:08:37.805 --> 00:08:39.179
+But hopefully we
+can just kind of
+
+00:08:39.179 --> 00:08:40.710
+pick out the bits
+that make sense
+
+00:08:40.710 --> 00:08:42.900
+for the particular context.
+
+00:08:42.900 --> 00:08:43.419
+Here we go.
+
+00:08:43.419 --> 00:08:46.530
+So we have this initPlayer
+function that I've got here.
+
+00:08:46.530 --> 00:08:49.410
+And what we do is we
+wrap a video element
+
+00:08:49.410 --> 00:08:50.670
+in the shaka.Player.
+
+00:08:50.670 --> 00:08:52.860
+It kind of makes a
+wraparound and starts
+
+00:08:52.860 --> 00:08:55.987
+kind of giving us additional
+things that we can do.
+
+00:08:55.987 --> 00:08:58.320
+But we can also talk to the
+video directly if we need to
+
+00:08:58.320 --> 00:09:03.079
+and tell to dot play and seek
+and all those kind of-- like
+
+00:09:03.079 --> 00:09:04.620
+dot current time
+and all those things
+
+00:09:04.620 --> 00:09:06.050
+that you normally
+do with a video.
+
+00:09:06.050 --> 00:09:07.300
+So it's kind of nice actually.
+
+00:09:07.300 --> 00:09:09.930
+It's a really nice
+way of working
+
+00:09:09.930 --> 00:09:11.830
+that you just kind of
+still predominantly
+
+00:09:11.830 --> 00:09:13.830
+can just listen to events
+from the video player.
+
+00:09:13.830 --> 00:09:16.780
+But when you're actually setting
+it up and doing playback,
+
+00:09:16.780 --> 00:09:18.871
+the Shaka Player stuff
+kicks in and switches
+
+00:09:18.871 --> 00:09:20.370
+all the different
+qualities for you.
+
+00:09:20.370 --> 00:09:23.970
+It's really cool and I
+actually really like it.
+
+00:09:23.970 --> 00:09:26.990
+So, the thing we do is
+we give it the manifest.
+
+00:09:26.990 --> 00:09:29.340
+So the manifest that we
+created with the Shaka Packager
+
+00:09:29.340 --> 00:09:32.910
+we can hand to the
+player, the Shaka Player.
+
+00:09:32.910 --> 00:09:36.420
+And a lot of the API
+is promise-based.
+
+00:09:36.420 --> 00:09:39.510
+So we call it with the
+URL for the manifest.
+
+00:09:39.510 --> 00:09:42.870
+And then when it's loaded,
+it loads the manifest
+
+00:09:42.870 --> 00:09:45.870
+and the first
+little bit of video
+
+00:09:45.870 --> 00:09:48.660
+across all the qualities listed.
+
+00:09:48.660 --> 00:09:53.790
+So it kind of gets the first few
+seconds of the 720 and the 540
+
+00:09:53.790 --> 00:09:55.930
+and the 360, whatever
+versions you go.
+
+00:09:55.930 --> 00:09:58.730
+Does that, and then it
+fires the callback for the--
+
+00:09:58.730 --> 00:10:00.640
+fires the dot then of
+the promise that says,
+
+00:10:00.640 --> 00:10:02.980
+OK, you're good to go.
+
+00:10:02.980 --> 00:10:04.250
+So when you get that--
+
+00:10:04.250 --> 00:10:06.390
+now you can see I actually
+have a bit more code
+
+00:10:06.390 --> 00:10:08.580
+going on here, which we'll
+talk about in a minute,
+
+00:10:08.580 --> 00:10:11.580
+because I've been trying to
+get it to work offline as well.
+
+00:10:11.580 --> 00:10:15.090
+Been successful in that, at
+least partially successful.
+
+00:10:15.090 --> 00:10:17.230
+So we'll talk
+about that as well.
+
+00:10:17.230 --> 00:10:20.646
+But, you can then start calling
+dot play, and that will work.
+
+00:10:20.646 --> 00:10:22.520
+So let me just show you
+what that looks like.
+
+00:10:22.520 --> 00:10:22.770
+So--
+
+00:10:22.770 --> 00:10:23.436
+[VIDEO PLAYBACK]
+
+00:10:23.436 --> 00:10:24.840
+- Hello, I don't know--
+
+00:10:24.840 --> 00:10:26.280
+PAUL LEWIS: Don't talk Paul.
+
+00:10:29.130 --> 00:10:32.550
+So as you can see, on my
+screen, there is the video.
+
+00:10:32.550 --> 00:10:34.470
+And actually if I go
+to the Network tab,
+
+00:10:34.470 --> 00:10:36.720
+you can see it's
+requesting-- there's
+
+00:10:36.720 --> 00:10:42.060
+a moment in time it's requesting
+the 360 video, 540, 720.
+
+00:10:42.060 --> 00:10:43.950
+It's decided that my
+bandwidth, because it's
+
+00:10:43.950 --> 00:10:47.100
+coming from localhost, my
+bandwidth can support this 720,
+
+00:10:47.100 --> 00:10:48.377
+and off it goes.
+
+00:10:48.377 --> 00:10:48.960
+[END PLAYBACK]
+
+00:10:48.960 --> 00:10:50.250
+PAUL LEWIS: Let me
+show you this as well.
+
+00:10:50.250 --> 00:10:51.540
+This is quite interesting.
+
+00:10:51.540 --> 00:10:53.550
+It makes what we
+call range requests.
+
+00:10:53.550 --> 00:10:58.616
+So the request itself
+only has a request
+
+00:10:58.616 --> 00:10:59.990
+and therefore only
+has a request.
+
+00:10:59.990 --> 00:11:02.860
+No, the request has
+a range in there,
+
+00:11:02.860 --> 00:11:05.970
+which is rather than saying
+give me all the video at once,
+
+00:11:05.970 --> 00:11:09.090
+it's saying, I want this byte
+range to that byte range.
+
+00:11:09.090 --> 00:11:13.080
+And the Shaka Player figures
+out that range request
+
+00:11:13.080 --> 00:11:15.810
+itself based on, I
+guess, the bandwidth
+
+00:11:15.810 --> 00:11:17.320
+and how big the segments are.
+
+00:11:17.320 --> 00:11:18.780
+And it goes, well,
+I guess I need
+
+00:11:18.780 --> 00:11:23.000
+that number bytes next to make
+that next chunk of the video.
+
+00:11:23.000 --> 00:11:24.501
+So it makes this range request.
+
+00:11:24.501 --> 00:11:25.750
+There are other ways to do it.
+
+00:11:25.750 --> 00:11:27.330
+You can, as I
+understand it, instead
+
+00:11:27.330 --> 00:11:31.370
+of having one big MP4 file or
+whatever video file you've got,
+
+00:11:31.370 --> 00:11:34.410
+WebM or whatever, you
+can also do it in chunks
+
+00:11:34.410 --> 00:11:36.240
+and actually have
+individual files.
+
+00:11:36.240 --> 00:11:38.590
+And that's also a way to do it.
+
+00:11:38.590 --> 00:11:42.450
+I've gone for one
+big file because I
+
+00:11:42.450 --> 00:11:46.140
+think I'm going to have to
+pass one big video file across
+
+00:11:46.140 --> 00:11:47.510
+for chromecasting later on.
+
+00:11:47.510 --> 00:11:48.290
+So it just made sense for me.
+
+00:11:48.290 --> 00:11:50.498
+I was just like, I'm just
+going to have one big video
+
+00:11:50.498 --> 00:11:53.830
+and make little chunks,
+range requests off that.
+
+00:11:53.830 --> 00:11:57.115
+And as I say, that's working.
+
+00:11:57.115 --> 00:11:58.740
+So we make one of
+these range requests.
+
+00:11:58.740 --> 00:12:03.450
+And the server-- the
+response from the server is--
+
+00:12:03.450 --> 00:12:05.560
+it's over here, and
+it looks pretty tiny.
+
+00:12:05.560 --> 00:12:08.390
+But it's basically just those--
+you can see the size of it.
+
+00:12:08.390 --> 00:12:10.590
+I mean, the original file
+is much bigger than that.
+
+00:12:10.590 --> 00:12:14.595
+But you can see that you just
+get, say, 477k of the video
+
+00:12:14.595 --> 00:12:18.570
+or however much of the
+video it thinks it needs.
+
+00:12:18.570 --> 00:12:19.320
+So that all works.
+
+00:12:19.320 --> 00:12:24.496
+And you can see as well that the
+bar here in the controls only
+
+00:12:24.496 --> 00:12:26.120
+fills up with the
+amount it's buffered.
+
+00:12:26.120 --> 00:12:27.120
+So all good.
+
+00:12:27.120 --> 00:12:28.320
+That's working just fine.
+
+00:12:28.320 --> 00:12:29.695
+Now let me show
+you what actually
+
+00:12:29.695 --> 00:12:31.560
+happens if we try it again.
+
+00:12:31.560 --> 00:12:34.770
+But this time, I'm going to
+throttle the network connection
+
+00:12:34.770 --> 00:12:38.280
+back down so regular 3G.
+
+00:12:38.280 --> 00:12:42.300
+So probably, as a guess, it
+will start asking for the 720.
+
+00:12:42.300 --> 00:12:44.450
+Yeah, you see it start
+asking for the 720 video.
+
+00:12:44.450 --> 00:12:46.290
+But soon enough I
+reckon it's going
+
+00:12:46.290 --> 00:12:50.790
+to drop down and ask for
+the 360 when it figures out
+
+00:12:50.790 --> 00:12:52.830
+that actually the
+bandwidth isn't so good.
+
+00:12:52.830 --> 00:12:54.660
+And again, this is what Shaka
+Player is going to do for you.
+
+00:12:54.660 --> 00:12:56.070
+So I don't have
+to do that, which
+
+00:12:56.070 --> 00:12:59.850
+is brilliant, because it's
+code I don't want to write.
+
+00:12:59.850 --> 00:13:02.800
+Now you can see the requests are
+for the 360 video and the 360
+
+00:13:02.800 --> 00:13:03.300
+audio.
+
+00:13:03.300 --> 00:13:05.460
+That's what it's decided
+I actually want--
+
+00:13:05.460 --> 00:13:06.360
+cool.
+
+00:13:06.360 --> 00:13:10.620
+So that's kind of like the
+DASH side completely sorted.
+
+00:13:10.620 --> 00:13:15.170
+Let's have a quick chat
+about the HLS as well.
+
+00:13:15.170 --> 00:13:19.460
+In my script further down,
+I take those 720, 540,
+
+00:13:19.460 --> 00:13:21.924
+and 360 videos, and
+I call this media
+
+00:13:21.924 --> 00:13:23.340
+file segmenter,
+which is something
+
+00:13:23.340 --> 00:13:27.670
+you can get downloaded from
+the Apple Developer Portal.
+
+00:13:27.670 --> 00:13:31.110
+And what that does is
+it will slice and dice
+
+00:13:31.110 --> 00:13:36.420
+the different videos into a
+particular formats for you.
+
+00:13:36.420 --> 00:13:39.612
+This M3U8, you can this
+is like a playlist file.
+
+00:13:39.612 --> 00:13:41.070
+If we actually go
+and have a look--
+
+00:13:43.620 --> 00:13:46.860
+let's have a look, 720.m3u8.
+
+00:13:46.860 --> 00:13:49.320
+I don't really know what
+I'm looking at other than I
+
+00:13:49.320 --> 00:13:52.080
+can see that this is
+like three seconds
+
+00:13:52.080 --> 00:13:54.210
+and it tells you which
+sequence of files.
+
+00:13:54.210 --> 00:13:57.030
+And you see it makes all these
+files in the process of running
+
+00:13:57.030 --> 00:13:58.410
+media file segmenter.
+
+00:13:58.410 --> 00:14:00.510
+So that does that bit.
+
+00:14:00.510 --> 00:14:03.400
+And then after that, I
+move some stuff around.
+
+00:14:03.400 --> 00:14:05.970
+But then you call
+variantplaylistcreator,
+
+00:14:05.970 --> 00:14:09.810
+which is another one of these
+tools that comes with the Apple
+
+00:14:09.810 --> 00:14:11.070
+downloads that you get.
+
+00:14:11.070 --> 00:14:14.250
+And you pass it--
+
+00:14:14.250 --> 00:14:16.080
+the three playlists in
+my case, but all the
+
+00:14:16.080 --> 00:14:20.250
+playlists that you've made, and
+it makes one master playlist
+
+00:14:20.250 --> 00:14:23.040
+which looks like this.
+
+00:14:23.040 --> 00:14:25.230
+And that is
+essentially, I guess,
+
+00:14:25.230 --> 00:14:27.720
+roughly equivalent
+to the DASH manifest.
+
+00:14:27.720 --> 00:14:29.520
+I mean, on the technical
+side it won't be.
+
+00:14:29.520 --> 00:14:35.640
+But for Android and desktop
+Chrome and desktop Safari
+
+00:14:35.640 --> 00:14:40.340
+and whatever, you can just use
+MSE, and that will just work.
+
+00:14:40.340 --> 00:14:42.090
+So you've got the DASH
+manifest for those.
+
+00:14:42.090 --> 00:14:44.100
+But for iOS Safari
+today, you do need
+
+00:14:44.100 --> 00:14:46.630
+to create one of these M3U8.
+
+00:14:46.630 --> 00:14:50.220
+It's the equivalent,
+I guess, of the M3U8.
+
+00:14:52.890 --> 00:14:57.210
+On the code side, if,
+for whatever reason,
+
+00:14:57.210 --> 00:15:01.770
+we get an error from loading the
+manifest-- which should happen,
+
+00:15:01.770 --> 00:15:04.399
+I believe on iOS,
+because it will go oh, I
+
+00:15:04.399 --> 00:15:05.940
+tried to load the
+DASH manifest and I
+
+00:15:05.940 --> 00:15:09.000
+tried to do all that stuff
+and, it's just not working,
+
+00:15:09.000 --> 00:15:12.150
+I have a fallback that just
+says, OK, switch across to HLS,
+
+00:15:12.150 --> 00:15:15.270
+which is where you
+get that M3U8 file
+
+00:15:15.270 --> 00:15:17.614
+and you just say
+video.source equals M3U8.
+
+00:15:17.614 --> 00:15:19.405
+So it's actually very,
+very straightforward
+
+00:15:19.405 --> 00:15:21.410
+to use, very convenient to use.
+
+00:15:21.410 --> 00:15:23.580
+And iOS Safari will
+just kind of go,
+
+00:15:23.580 --> 00:15:25.539
+oh sure, and it'll start
+adapting and getting
+
+00:15:25.539 --> 00:15:26.580
+the right things for you.
+
+00:15:26.580 --> 00:15:29.260
+So you don't you have to do
+an awful lot with HLS other
+
+00:15:29.260 --> 00:15:34.690
+than point your video element
+at the M3U8 playlist file.
+
+00:15:34.690 --> 00:15:39.915
+I think the upside of DASH is
+that Shaka Player can manage
+
+00:15:39.915 --> 00:15:42.040
+the bandwidth and you get
+to have a little bit more
+
+00:15:42.040 --> 00:15:44.815
+of a say on what bandwidth
+you think it should have
+
+00:15:44.815 --> 00:15:46.690
+and which track you
+think it should lock into
+
+00:15:46.690 --> 00:15:49.140
+and all those kinds of
+things, if you want to.
+
+00:15:49.140 --> 00:15:51.610
+With HLS, it's much
+more like the user-agent
+
+00:15:51.610 --> 00:15:53.890
+just kind of goes,
+I've got less.
+
+00:15:53.890 --> 00:15:56.920
+And if it decides to
+download the entire video,
+
+00:15:56.920 --> 00:15:58.420
+there isn't much,
+as the developer,
+
+00:15:58.420 --> 00:16:02.620
+that you can say
+other than, sure.
+
+00:16:02.620 --> 00:16:06.730
+So it is worth knowing that
+that's what's going to happen.
+
+00:16:06.730 --> 00:16:09.070
+I mean there's nothing you
+can do about it particularly.
+
+00:16:09.070 --> 00:16:11.410
+The only way I've found
+actually to at least tweak it
+
+00:16:11.410 --> 00:16:13.420
+a little bit is to say
+on the video element
+
+00:16:13.420 --> 00:16:17.496
+that you do preload
+equals metadata.
+
+00:16:17.496 --> 00:16:19.120
+If you don't set the
+preload attribute,
+
+00:16:19.120 --> 00:16:25.944
+it will go off and download
+all of the content, which may
+
+00:16:25.944 --> 00:16:27.110
+or may not be what you want.
+
+00:16:27.110 --> 00:16:28.540
+So there you go--
+
+00:16:28.540 --> 00:16:30.040
+right.
+
+00:16:30.040 --> 00:16:32.290
+I'm aware that I've taken
+up quite a bit of your time,
+
+00:16:32.290 --> 00:16:34.248
+but I still want to show
+you the offline stuff.
+
+00:16:34.248 --> 00:16:35.410
+So I hope you stick around.
+
+00:16:35.410 --> 00:16:36.576
+I hope you're enjoying this.
+
+00:16:36.576 --> 00:16:38.620
+Let's have a quick
+look at what it does,
+
+00:16:38.620 --> 00:16:43.261
+what we require for the
+offline stuff to work.
+
+00:16:43.261 --> 00:16:45.760
+So at the moment everything's
+just going off to the network.
+
+00:16:45.760 --> 00:16:51.910
+And the idea was, what if
+we could prefetch everything
+
+00:16:51.910 --> 00:16:54.040
+into the cache--
+
+00:16:54.040 --> 00:16:56.830
+into a cache, so that
+when the request goes out
+
+00:16:56.830 --> 00:17:01.420
+for that part of the MP4
+file, say in the DASH version,
+
+00:17:01.420 --> 00:17:04.150
+that the service worker could
+be like, oh yeah, I got this.
+
+00:17:04.150 --> 00:17:05.358
+This is already in the cache.
+
+00:17:05.358 --> 00:17:06.818
+I'll just create that.
+
+00:17:06.818 --> 00:17:08.109
+I'll handle that range request.
+
+00:17:08.109 --> 00:17:09.680
+I'll get the item
+out of the cache,
+
+00:17:09.680 --> 00:17:11.940
+get that bit of the file,
+and then just send it back.
+
+00:17:11.940 --> 00:17:14.859
+So it's kind of transparent
+as far as Shaka is concerned.
+
+00:17:14.859 --> 00:17:17.470
+We just kind of go,
+just get that video
+
+00:17:17.470 --> 00:17:18.819
+and it will go off and do it.
+
+00:17:18.819 --> 00:17:19.960
+Enough chatter.
+
+00:17:19.960 --> 00:17:21.536
+Let's look a little bit of--
+
+00:17:21.536 --> 00:17:24.451
+hang on, let me
+get my words right.
+
+00:17:24.451 --> 00:17:25.450
+Let's look at some code.
+
+00:17:25.450 --> 00:17:25.990
+There we are.
+
+00:17:25.990 --> 00:17:27.280
+You wouldn't have thought
+it was so difficult to say,
+
+00:17:27.280 --> 00:17:29.040
+but apparently, for me, yes.
+
+00:17:29.040 --> 00:17:29.770
+Here we are.
+
+00:17:29.770 --> 00:17:34.510
+Service worker-- this is my
+service worker as it is today.
+
+00:17:34.510 --> 00:17:36.460
+And this is really
+the interesting bit.
+
+00:17:36.460 --> 00:17:39.400
+So imagine that
+this fetch is called
+
+00:17:39.400 --> 00:17:42.430
+on every time a request
+is made from the page.
+
+00:17:42.430 --> 00:17:44.380
+OK, cool.
+
+00:17:44.380 --> 00:17:48.340
+What we do is we do a
+match against the caches.
+
+00:17:48.340 --> 00:17:51.160
+And if there's a
+match, we'll handle it.
+
+00:17:51.160 --> 00:17:54.140
+If not we'll just do
+like a pass through.
+
+00:17:54.140 --> 00:17:56.920
+So what we need to do is figure
+out, well, at what situation
+
+00:17:56.920 --> 00:17:59.575
+would we call the caches.match
+and get something back?
+
+00:17:59.575 --> 00:18:01.950
+And the answer is, when there
+is something in the caches.
+
+00:18:01.950 --> 00:18:06.370
+So if we went off and got the
+video and audio and everything
+
+00:18:06.370 --> 00:18:09.160
+else that we'd made and
+put those into the cache,
+
+00:18:09.160 --> 00:18:11.470
+then we'd get a cache hit.
+
+00:18:11.470 --> 00:18:15.850
+One thing I discovered-- and
+I was very grateful to Jake,
+
+00:18:15.850 --> 00:18:16.510
+Jake Archibald.
+
+00:18:16.510 --> 00:18:18.030
+If you don't know him,
+you should follow him
+
+00:18:18.030 --> 00:18:19.106
+on Twitter and all that.
+
+00:18:19.106 --> 00:18:24.100
+And he was helping me figure
+out how I should actually
+
+00:18:24.100 --> 00:18:26.170
+handle the range response.
+
+00:18:26.170 --> 00:18:28.385
+Remember I said that
+when we make the request,
+
+00:18:28.385 --> 00:18:29.260
+it's a range request.
+
+00:18:29.260 --> 00:18:30.910
+We only ask for a
+certain byte range.
+
+00:18:30.910 --> 00:18:32.868
+When we get a cache match,
+we get a cache match
+
+00:18:32.868 --> 00:18:33.770
+for the whole thing.
+
+00:18:33.770 --> 00:18:39.130
+So if we just say, well,
+return whatever the cache has,
+
+00:18:39.130 --> 00:18:41.080
+rather than returning
+just those bytes,
+
+00:18:41.080 --> 00:18:44.024
+you'd actually return the
+entire video, which is not
+
+00:18:44.024 --> 00:18:45.190
+what was actually asked for.
+
+00:18:45.190 --> 00:18:48.340
+We were only asked for bytes
+from, say, zero to a thousand,
+
+00:18:48.340 --> 00:18:48.910
+for example.
+
+00:18:48.910 --> 00:18:51.820
+So we actually have
+to do that ourselves.
+
+00:18:51.820 --> 00:18:54.760
+So what I do is I'm
+taking Jake's code here.
+
+00:18:54.760 --> 00:18:58.020
+And what we do is we
+create a ranged response.
+
+00:18:58.020 --> 00:18:59.740
+So that takes in the request.
+
+00:18:59.740 --> 00:19:01.150
+And we find it from the cache.
+
+00:19:01.150 --> 00:19:03.760
+But what we do is we call
+dot array buffer on it.
+
+00:19:03.760 --> 00:19:05.991
+And that gets us
+the entire video.
+
+00:19:05.991 --> 00:19:07.490
+We'll come back to
+that in a moment.
+
+00:19:07.490 --> 00:19:09.850
+And then what we have
+is some code that
+
+00:19:09.850 --> 00:19:11.590
+looks through the
+range header and goes,
+
+00:19:11.590 --> 00:19:13.720
+OK, which bytes did
+they actually want?
+
+00:19:13.720 --> 00:19:17.980
+And then that gets sliced
+out from that array buffer.
+
+00:19:17.980 --> 00:19:19.570
+We set the status
+to 206, which I
+
+00:19:19.570 --> 00:19:22.660
+think is something like partial
+content, or partial response,
+
+00:19:22.660 --> 00:19:24.592
+or something along
+those lines that says,
+
+00:19:24.592 --> 00:19:26.050
+you're not getting
+the whole thing.
+
+00:19:26.050 --> 00:19:27.130
+You're just getting
+that little bit
+
+00:19:27.130 --> 00:19:29.080
+that you asked for
+with the range request.
+
+00:19:29.080 --> 00:19:30.579
+And we set a couple
+of other headers
+
+00:19:30.579 --> 00:19:33.070
+like the content-length
+and the content-range.
+
+00:19:33.070 --> 00:19:35.170
+And then we return that instead.
+
+00:19:35.170 --> 00:19:39.190
+For me, this is
+a bit unpleasant,
+
+00:19:39.190 --> 00:19:42.160
+not only because there's
+a bunch of code in here
+
+00:19:42.160 --> 00:19:46.750
+that could error, I
+guess, could go wrong,
+
+00:19:46.750 --> 00:19:48.870
+but mostly because
+calling dot array
+
+00:19:48.870 --> 00:19:50.440
+buffer at the moment
+on the response
+
+00:19:50.440 --> 00:19:51.850
+would get me the whole video.
+
+00:19:51.850 --> 00:19:54.130
+So if it's like a one
+gig video, calling
+
+00:19:54.130 --> 00:19:57.850
+dot array buffer will get me a
+one gig array buffer in memory
+
+00:19:57.850 --> 00:19:59.194
+for every request.
+
+00:19:59.194 --> 00:20:00.610
+And the solution
+here, I think, is
+
+00:20:00.610 --> 00:20:03.280
+going to be to slice
+and dice the video.
+
+00:20:03.280 --> 00:20:05.600
+Instead of one big
+file in the cache,
+
+00:20:05.600 --> 00:20:07.540
+actually have lots
+of different files,
+
+00:20:07.540 --> 00:20:09.760
+like smaller chunks
+inside the cache.
+
+00:20:09.760 --> 00:20:11.200
+And then just pull
+out the chunks
+
+00:20:11.200 --> 00:20:14.650
+that we need to make
+the ranged response.
+
+00:20:14.650 --> 00:20:17.329
+We'll see how that goes when
+we actually get to production
+
+00:20:17.329 --> 00:20:19.870
+and how big the videos are and
+whether it's actually a thing.
+
+00:20:19.870 --> 00:20:22.704
+But I fully expect to
+actually have to do that.
+
+00:20:22.704 --> 00:20:24.120
+I should also
+mention, by the way,
+
+00:20:24.120 --> 00:20:27.660
+that there is an offline
+implementation already in Shaka
+
+00:20:27.660 --> 00:20:31.240
+which uses IndexedDB
+to do its thing.
+
+00:20:31.240 --> 00:20:33.600
+So that takes care of it.
+
+00:20:33.600 --> 00:20:35.760
+But it doesn't use a
+service worker today.
+
+00:20:35.760 --> 00:20:37.956
+It's all in the foreground.
+
+00:20:37.956 --> 00:20:40.020
+It populates IndexedDB.
+
+00:20:40.020 --> 00:20:43.200
+But it also does all the bits
+and pieces like if you've got
+
+00:20:43.200 --> 00:20:45.540
+[INAUDIBLE] licenses--
+which again,
+
+00:20:45.540 --> 00:20:47.610
+I don't understand fully--
+
+00:20:47.610 --> 00:20:49.590
+it will store those
+for you as well--
+
+00:20:49.590 --> 00:20:50.280
+right.
+
+00:20:50.280 --> 00:20:52.260
+Let me just show you,
+though what it actually
+
+00:20:52.260 --> 00:20:53.426
+looks like when you do this.
+
+00:20:53.426 --> 00:20:55.530
+So when I hit cache
+video, hopefully--
+
+00:20:55.530 --> 00:20:57.960
+oh, it's set to the regular 3G.
+
+00:20:57.960 --> 00:20:59.472
+Let's do no throttling.
+
+00:20:59.472 --> 00:21:01.680
+Oh if only life was actually
+like that where you just
+
+00:21:01.680 --> 00:21:04.210
+go no throttling, phew.
+
+00:21:04.210 --> 00:21:07.440
+You see now we've
+got the cached video.
+
+00:21:07.440 --> 00:21:11.250
+So if I just clear that
+and start running it,
+
+00:21:11.250 --> 00:21:16.370
+now all the requests are
+coming from the service worker.
+
+00:21:16.370 --> 00:21:18.120
+Essentially it's doing its job.
+
+00:21:18.120 --> 00:21:19.537
+The service worker
+is stepping in,
+
+00:21:19.537 --> 00:21:21.244
+and rather than going
+out to the network,
+
+00:21:21.244 --> 00:21:23.560
+it's actually creating the
+response from the cache.
+
+00:21:23.560 --> 00:21:27.650
+So that's a way to
+transparently provide
+
+00:21:27.650 --> 00:21:30.000
+the video to the Shaka Player.
+
+00:21:30.000 --> 00:21:31.820
+So all this code--
+
+00:21:31.820 --> 00:21:33.570
+in fact the whole site
+code at the moment,
+
+00:21:33.570 --> 00:21:35.490
+let me show you this,
+is up on GitHub.
+
+00:21:35.490 --> 00:21:37.590
+You can get it at
+github.com/googlechrome/sample
+
+00:21:37.590 --> 00:21:40.230
+media pwa.
+
+00:21:40.230 --> 00:21:42.210
+We will link to that
+in the notes below.
+
+00:21:42.210 --> 00:21:44.490
+If you want to have a play
+around with the prototype,
+
+00:21:44.490 --> 00:21:47.490
+I'll add a prototypes folder to
+this so you can at least see,
+
+00:21:47.490 --> 00:21:51.060
+roughly speaking, what I've
+been doing and go from there.
+
+00:21:51.060 --> 00:21:52.890
+In the meanwhile, have fun.
+
+00:21:52.890 --> 00:21:55.350
+I will be back very, very
+soon with an exploration
+
+00:21:55.350 --> 00:21:57.870
+of what I've been doing
+on the server side.
+
+00:21:57.870 --> 00:21:58.665
+Catch you later.
+
+00:21:58.665 --> 00:22:00.039
+[MUSIC PLAYING]
+
+00:22:00.039 --> 00:22:01.330
+Hey folks, thanks for watching.
+
+00:22:01.330 --> 00:22:03.330
+Don't forget that there
+is more content that you
+
+00:22:03.330 --> 00:22:05.140
+can find kind of over here-ish.
+
+00:22:05.140 --> 00:22:06.780
+And if you want to
+subscribe, there's
+
+00:22:06.780 --> 00:22:10.020
+probably a button, well, maybe
+there, maybe somewhere around
+
+00:22:10.020 --> 00:22:10.520
+there.
+
+00:22:10.520 --> 00:22:12.230
+Click that if you've
+not done that.
+
+00:22:12.230 --> 00:22:13.130
+Brilliant.
+
+00:22:13.130 --> 00:22:14.901
+[MUSIC PLAYING]
+

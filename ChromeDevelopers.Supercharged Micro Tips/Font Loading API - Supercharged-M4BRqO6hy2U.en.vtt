@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.230 --> 00:00:06.560
+SPEAKER 1: A lot of websites use
+web fonts, many fonts actually,
+
+00:00:06.560 --> 00:00:08.630
+to improve their
+visual appearance.
+
+00:00:08.630 --> 00:00:10.490
+When many fonts are in
+use, they can easily
+
+00:00:10.490 --> 00:00:12.500
+add up to a couple
+of hundred kilobytes.
+
+00:00:12.500 --> 00:00:14.660
+Yet, the control over
+font loading with CSS
+
+00:00:14.660 --> 00:00:16.730
+can feel a bit rigid.
+
+00:00:16.730 --> 00:00:19.100
+With a font loading API,
+you can take control
+
+00:00:19.100 --> 00:00:21.540
+over when and how
+fonts should be loaded.
+
+00:00:21.540 --> 00:00:24.230
+Instead of loading our font
+with a declaration in CSS,
+
+00:00:24.230 --> 00:00:26.360
+we can now load it
+programmatically.
+
+00:00:26.360 --> 00:00:29.540
+You can create instances of the
+font face type for each font
+
+00:00:29.540 --> 00:00:30.770
+that you want to use.
+
+00:00:30.770 --> 00:00:32.960
+You provide a name and
+a resource description
+
+00:00:32.960 --> 00:00:34.670
+as it is common in CSS.
+
+00:00:34.670 --> 00:00:37.130
+Only when you call load,
+however, will the browser
+
+00:00:37.130 --> 00:00:40.310
+actually go ahead and fetch
+the font file and parse it.
+
+00:00:40.310 --> 00:00:42.230
+The [INAUDIBLE]
+returned by load will
+
+00:00:42.230 --> 00:00:45.560
+be resolved when the loading
+and parsing of the font is done.
+
+00:00:45.560 --> 00:00:47.930
+It is imported into
+the system as a font,
+
+00:00:47.930 --> 00:00:50.510
+but not yet associated
+with your document.
+
+00:00:50.510 --> 00:00:54.170
+To do that, you need to
+call ADD on document.fonts.
+
+00:00:54.170 --> 00:00:55.760
+From here on in,
+your font will be
+
+00:00:55.760 --> 00:00:58.829
+available under the name you
+provided to the constructor.
+
+00:00:58.829 --> 00:01:00.620
+These are the most
+basic and important bits
+
+00:01:00.620 --> 00:01:02.360
+of the font loading API.
+
+00:01:02.360 --> 00:01:03.920
+It seems fairly
+primitive, but they
+
+00:01:03.920 --> 00:01:06.140
+can be composed to
+develop complex loading
+
+00:01:06.140 --> 00:01:09.030
+strategies to make your
+experience much better.
+
+00:01:09.030 --> 00:01:10.540
+Yay, fonts.
+
+00:01:10.540 --> 00:01:12.290
+See you next time.
+
+00:01:12.290 --> 00:01:14.810
+So you know these two buttons
+to subscribe to the channel
+
+00:01:14.810 --> 00:01:16.490
+and to watch our latest video.
+
+00:01:16.490 --> 00:01:17.810
+We did some market research.
+
+00:01:17.810 --> 00:01:20.870
+And it turns out the longer
+you leave them on screen,
+
+00:01:20.870 --> 00:01:22.790
+the more people click it.
+
+00:01:22.790 --> 00:01:25.980
+And that means happy summer.
+
+00:01:25.980 --> 00:01:28.530
+You should click them.
+
+00:01:28.530 --> 00:01:32.120
+Clickity, click, click, click.
+

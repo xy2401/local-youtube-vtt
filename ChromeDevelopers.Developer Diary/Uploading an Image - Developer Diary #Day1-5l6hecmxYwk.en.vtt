@@ -1,0 +1,1026 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.275 --> 00:00:01.650
+MAT SCALES: Hey,
+everyone, it's Mat again.
+
+00:00:01.650 --> 00:00:03.030
+I'm here to talk a little
+bit more about the app
+
+00:00:03.030 --> 00:00:04.031
+that I've been building.
+
+00:00:04.031 --> 00:00:05.696
+If you don't already
+know about the app,
+
+00:00:05.696 --> 00:00:08.000
+you can watch an introduction
+in the previous video
+
+00:00:08.000 --> 00:00:10.080
+and there's a link
+in the description.
+
+00:00:10.080 --> 00:00:13.230
+Now this is a camera app and
+direct access to the camera
+
+00:00:13.230 --> 00:00:17.470
+is a pretty new feature that's
+available in modern browsers
+
+00:00:17.470 --> 00:00:19.590
+but not so much
+in older browsers
+
+00:00:19.590 --> 00:00:21.900
+and not for people who
+don't even have a camera.
+
+00:00:21.900 --> 00:00:25.290
+For example, people
+that are on desktops.
+
+00:00:25.290 --> 00:00:29.721
+So how do we progressively
+enhance capturing an image?
+
+00:00:29.721 --> 00:00:31.470
+Well one of the easiest
+things we could do
+
+00:00:31.470 --> 00:00:34.380
+is take a URL of an image
+that's actually hosted elsewhere
+
+00:00:34.380 --> 00:00:37.260
+on the web and just fetch that.
+
+00:00:37.260 --> 00:00:40.200
+So if we're taking an image
+from a URL, the code for that
+
+00:00:40.200 --> 00:00:41.850
+is dead simple.
+
+00:00:41.850 --> 00:00:46.170
+We just need some input
+to take the URL and then
+
+00:00:46.170 --> 00:00:47.130
+some sort of action--
+
+00:00:47.130 --> 00:00:48.963
+in this case, a button
+to say that we'd like
+
+00:00:48.963 --> 00:00:50.670
+to actually go for the URL--
+
+00:00:50.670 --> 00:00:54.960
+and then we just set
+the source of an image
+
+00:00:54.960 --> 00:00:58.170
+to be whatever
+the user typed in.
+
+00:00:58.170 --> 00:01:02.100
+So I have a test image URL here.
+
+00:01:02.100 --> 00:01:06.070
+I'll paste it in and I click
+Go and my image is in the page.
+
+00:01:06.070 --> 00:01:10.764
+This is a very, very
+simple way of doing this.
+
+00:01:10.764 --> 00:01:12.180
+It does have a
+couple of problems,
+
+00:01:12.180 --> 00:01:18.150
+though, the big one being that
+if the server that the image is
+
+00:01:18.150 --> 00:01:20.690
+hosted on doesn't
+support cause headers
+
+00:01:20.690 --> 00:01:23.080
+or it doesn't send the
+right cause headers,
+
+00:01:23.080 --> 00:01:25.370
+then you won't actually be
+able to edit this image.
+
+00:01:25.370 --> 00:01:27.580
+You'll still be able to
+display it in the page,
+
+00:01:27.580 --> 00:01:31.000
+but we're making a photo
+editing app essentially,
+
+00:01:31.000 --> 00:01:33.600
+so we need to be able
+to get at those pixels
+
+00:01:33.600 --> 00:01:35.060
+and transform them in some way.
+
+00:01:35.060 --> 00:01:37.185
+And without cause, that's
+just not going to happen.
+
+00:01:40.280 --> 00:01:43.380
+You can get around that
+by using a proxy server.
+
+00:01:43.380 --> 00:01:45.830
+So you run your own server
+and you fetch all URLs
+
+00:01:45.830 --> 00:01:46.790
+through that.
+
+00:01:46.790 --> 00:01:49.250
+So you make a request to
+your server with a URL
+
+00:01:49.250 --> 00:01:51.470
+then the server goes away
+and makes the request
+
+00:01:51.470 --> 00:01:56.570
+to the real server and then
+the the image comes back
+
+00:01:56.570 --> 00:02:02.109
+through that chain, but that's
+a little bit excessive for what
+
+00:02:02.109 --> 00:02:02.900
+we want to do here.
+
+00:02:02.900 --> 00:02:04.700
+You have to run your
+own server which
+
+00:02:04.700 --> 00:02:07.334
+can handle the traffic
+of all of your users
+
+00:02:07.334 --> 00:02:08.750
+for something you
+really only want
+
+00:02:08.750 --> 00:02:10.949
+to be doing inside the browser.
+
+00:02:10.949 --> 00:02:15.780
+So how can we improve on using
+a URL provided by the user?
+
+00:02:15.780 --> 00:02:20.540
+Well we could use a file input
+and let the user just upload
+
+00:02:20.540 --> 00:02:22.220
+the photo directly to us.
+
+00:02:22.220 --> 00:02:24.320
+So it's an input
+of type file, which
+
+00:02:24.320 --> 00:02:26.360
+tells the browser that
+it should prompt the user
+
+00:02:26.360 --> 00:02:29.090
+to give us a file.
+
+00:02:29.090 --> 00:02:32.630
+And traditionally, this was so
+that the file could be uploaded
+
+00:02:32.630 --> 00:02:35.660
+to your server as part of a
+form, but in modern browsers,
+
+00:02:35.660 --> 00:02:39.650
+we can take the file from the
+input and use it in the client
+
+00:02:39.650 --> 00:02:42.170
+without actually sending
+it to the server.
+
+00:02:42.170 --> 00:02:44.155
+Now we can enhance this again.
+
+00:02:44.155 --> 00:02:49.140
+The first enhancement is to
+say that we accept images.
+
+00:02:49.140 --> 00:02:51.080
+So here, we use the
+Accept attribute.
+
+00:02:51.080 --> 00:02:53.070
+And we pass in a mime
+type, or in this case,
+
+00:02:53.070 --> 00:02:55.560
+a sort of a wildcard mime type.
+
+00:02:55.560 --> 00:02:59.030
+We say image slash star
+to say we want the user
+
+00:02:59.030 --> 00:03:00.690
+to give us an image.
+
+00:03:00.690 --> 00:03:03.740
+So the browser can
+then prompt the user
+
+00:03:03.740 --> 00:03:07.630
+with a file input that
+only gives them images.
+
+00:03:07.630 --> 00:03:11.375
+So if we see here,
+when we open this up,
+
+00:03:11.375 --> 00:03:17.040
+this is showing me only the
+images that are on my desktop.
+
+00:03:17.040 --> 00:03:21.930
+Now the file input has a change
+event which we can listen to,
+
+00:03:21.930 --> 00:03:24.200
+and anytime that
+the user changes
+
+00:03:24.200 --> 00:03:26.270
+what is selected
+in that file input,
+
+00:03:26.270 --> 00:03:27.880
+this event will get triggered.
+
+00:03:27.880 --> 00:03:30.380
+And here, I'm just
+logging into the console
+
+00:03:30.380 --> 00:03:31.700
+what the output of that is.
+
+00:03:31.700 --> 00:03:34.260
+The files object of our input.
+
+00:03:34.260 --> 00:03:36.950
+So here in our handler,
+I'm taking e.target,
+
+00:03:36.950 --> 00:03:40.597
+which is the target of the
+event, which is actually
+
+00:03:40.597 --> 00:03:42.180
+going to be the final
+input, and we're
+
+00:03:42.180 --> 00:03:44.240
+looking at this Files property.
+
+00:03:44.240 --> 00:03:46.700
+And for a moment, I'm just
+logging that out of the console
+
+00:03:46.700 --> 00:03:48.860
+and you can see that
+it is a file list.
+
+00:03:48.860 --> 00:03:52.482
+And we'll learn more
+about file lists later on.
+
+00:03:52.482 --> 00:03:54.440
+The other good thing
+about the Accept attribute
+
+00:03:54.440 --> 00:03:56.780
+is that it lets
+mobile browsers know
+
+00:03:56.780 --> 00:03:59.720
+that they could send us a
+photo straight from the camera
+
+00:03:59.720 --> 00:04:00.520
+if they wanted to.
+
+00:04:03.154 --> 00:04:05.820
+So when they pop up the chooser,
+as well as offering the ability
+
+00:04:05.820 --> 00:04:09.670
+to upload a file, they also
+give the opportunity to say,
+
+00:04:09.670 --> 00:04:12.640
+would you like to take
+a photo from the camera?
+
+00:04:12.640 --> 00:04:14.635
+This will go straight
+to the native camera app
+
+00:04:14.635 --> 00:04:18.130
+and allow the user to take a
+photo there and then, which
+
+00:04:18.130 --> 00:04:20.910
+can then get passed into
+your app, which is brilliant.
+
+00:04:20.910 --> 00:04:24.090
+This is almost what we
+want for our own app.
+
+00:04:24.090 --> 00:04:26.462
+There is a final possibility
+for this, which is
+
+00:04:26.462 --> 00:04:27.670
+we can add another attribute.
+
+00:04:27.670 --> 00:04:30.130
+We can add in an
+attribute called Capture.
+
+00:04:30.130 --> 00:04:31.730
+So we add in Capture here.
+
+00:04:31.730 --> 00:04:35.830
+And by default, if you
+just put in capture,
+
+00:04:35.830 --> 00:04:39.950
+that says that I'd like to
+go to the camera directly.
+
+00:04:39.950 --> 00:04:43.780
+So on a mobile browser, this
+will pop up the native camera
+
+00:04:43.780 --> 00:04:46.740
+app without offering
+the chooser first,
+
+00:04:46.740 --> 00:04:50.680
+which if you really only want
+photos straight from a camera,
+
+00:04:50.680 --> 00:04:51.730
+it is perfect.
+
+00:04:51.730 --> 00:04:53.470
+You skip a step.
+
+00:04:53.470 --> 00:04:56.410
+But there's a little
+bit of a problem here.
+
+00:04:56.410 --> 00:05:00.620
+You can't feature detect whether
+Capture is going to do this.
+
+00:05:00.620 --> 00:05:04.740
+And this means that
+on desktop browsers,
+
+00:05:04.740 --> 00:05:07.030
+you're only going
+to prompt for a file
+
+00:05:07.030 --> 00:05:09.130
+because that's what
+the file input does,
+
+00:05:09.130 --> 00:05:11.830
+whereas on mobile browsers,
+you're only going to prompt
+
+00:05:11.830 --> 00:05:13.660
+for images from the camera.
+
+00:05:13.660 --> 00:05:15.514
+It's not an equal
+thing between the two.
+
+00:05:15.514 --> 00:05:16.930
+And what if a user
+on mobile wants
+
+00:05:16.930 --> 00:05:20.720
+to upload a file that's on
+their SD card, for example?
+
+00:05:20.720 --> 00:05:22.810
+If you are going to use
+the Capture attribute,
+
+00:05:22.810 --> 00:05:25.540
+there is actually a couple
+of extra things you can do,
+
+00:05:25.540 --> 00:05:28.210
+is that you can set it
+to one of two values
+
+00:05:28.210 --> 00:05:30.710
+to say which camera
+you'd prefer.
+
+00:05:30.710 --> 00:05:34.300
+So you can set it
+to be User, which
+
+00:05:34.300 --> 00:05:36.780
+says that you want the camera
+that is facing the user.
+
+00:05:36.780 --> 00:05:38.780
+So this is your selfie camera.
+
+00:05:38.780 --> 00:05:42.532
+Or you can set it to be capture
+equals environment, which
+
+00:05:42.532 --> 00:05:43.990
+says you want the
+camera that faces
+
+00:05:43.990 --> 00:05:46.450
+the environment, i.e., the
+normal camera that faces away
+
+00:05:46.450 --> 00:05:47.800
+from the user.
+
+00:05:47.800 --> 00:05:49.750
+If the device happens
+to only have one camera,
+
+00:05:49.750 --> 00:05:51.874
+it will still give you the
+camera that it does have
+
+00:05:51.874 --> 00:05:53.770
+and this just sets a preference.
+
+00:05:53.770 --> 00:05:56.500
+So the Accept header and
+the Capture attribute
+
+00:05:56.500 --> 00:05:58.690
+give us a couple of ways
+to enhance the experience
+
+00:05:58.690 --> 00:05:59.840
+for mobile users.
+
+00:05:59.840 --> 00:06:01.840
+So let's look at some
+ways we can enhance things
+
+00:06:01.840 --> 00:06:05.440
+for desktop users as well.
+
+00:06:05.440 --> 00:06:08.174
+One thing that's fairly
+common to do on a desktop
+
+00:06:08.174 --> 00:06:10.590
+that you wouldn't do on mobile
+is drag and drop and that's
+
+00:06:10.590 --> 00:06:12.330
+supported by the web as well.
+
+00:06:12.330 --> 00:06:16.140
+So here, we set up a
+target to be dropped onto.
+
+00:06:16.140 --> 00:06:18.150
+The target is just
+a div element.
+
+00:06:18.150 --> 00:06:23.000
+It could be pretty much
+any element you like.
+
+00:06:23.000 --> 00:06:26.340
+And we set up this
+drop event listener
+
+00:06:26.340 --> 00:06:28.770
+so that when something is
+dropped onto that element, what
+
+00:06:28.770 --> 00:06:29.500
+should we do?
+
+00:06:29.500 --> 00:06:31.749
+Well we should stop propagation
+because we're actually
+
+00:06:31.749 --> 00:06:33.960
+handling it in our element
+here, and we should
+
+00:06:33.960 --> 00:06:35.640
+prevent the default, too.
+
+00:06:35.640 --> 00:06:38.040
+If I drag this image
+just into the browser
+
+00:06:38.040 --> 00:06:42.780
+not onto the element, it just
+loads the image into the tab
+
+00:06:42.780 --> 00:06:44.280
+and is no longer on our page.
+
+00:06:47.480 --> 00:06:49.300
+And we don't want
+that to happen.
+
+00:06:49.300 --> 00:06:51.690
+So as soon as we drop
+out onto our element,
+
+00:06:51.690 --> 00:06:54.510
+we get the event fired but
+then it navigates to the image.
+
+00:06:54.510 --> 00:06:57.390
+So we prevent the
+default behavior as well.
+
+00:06:57.390 --> 00:07:01.600
+Here again, just logging
+out the result of this.
+
+00:07:01.600 --> 00:07:04.860
+The event here is
+a drag event, which
+
+00:07:04.860 --> 00:07:06.380
+has a data transfer object.
+
+00:07:06.380 --> 00:07:08.080
+Again, we'll talk about that.
+
+00:07:08.080 --> 00:07:11.610
+And that has a Files property,
+which is, again, a file list.
+
+00:07:11.610 --> 00:07:14.900
+So if I drag this
+onto the element,
+
+00:07:14.900 --> 00:07:18.090
+we can see down here that
+we get the file list object.
+
+00:07:18.090 --> 00:07:21.120
+Now I have another
+event listener down here
+
+00:07:21.120 --> 00:07:23.250
+for drag over and
+this says what should
+
+00:07:23.250 --> 00:07:26.640
+happen as you're dragging.
+
+00:07:26.640 --> 00:07:29.040
+As you're dragging
+this over the element,
+
+00:07:29.040 --> 00:07:30.690
+what should the behavior be?
+
+00:07:30.690 --> 00:07:35.130
+And here we're saying that we
+want the effect to be a copy
+
+00:07:35.130 --> 00:07:39.540
+so that when the drag finishes--
+when that drop happens--
+
+00:07:39.540 --> 00:07:46.260
+we are copying the information
+from the image into the event.
+
+00:07:46.260 --> 00:07:48.060
+And again, we need
+stop propagation
+
+00:07:48.060 --> 00:07:52.660
+and prevent the default. Stop
+the normal browser things
+
+00:07:52.660 --> 00:07:54.910
+happening when we
+drag that over.
+
+00:07:54.910 --> 00:07:56.710
+And it is the
+setting the drag drop
+
+00:07:56.710 --> 00:08:02.850
+effect to copy which gives us
+this Plus icon on the mouse.
+
+00:08:02.850 --> 00:08:07.790
+Lastly, another desktop
+feature is the clipboard API
+
+00:08:07.790 --> 00:08:12.140
+that allows us to copy an image
+from somewhere-- from the file
+
+00:08:12.140 --> 00:08:14.150
+system or from
+another application--
+
+00:08:14.150 --> 00:08:18.280
+and just paste it
+straight into the app.
+
+00:08:18.280 --> 00:08:22.100
+Now in Chrome, you can
+paste an image or any file
+
+00:08:22.100 --> 00:08:23.780
+into any element on the page.
+
+00:08:23.780 --> 00:08:27.500
+You could set the event
+listener for the paste event
+
+00:08:27.500 --> 00:08:30.350
+on the document and
+that would work fine.
+
+00:08:30.350 --> 00:08:32.500
+But not all browsers
+support this the same way.
+
+00:08:32.500 --> 00:08:35.510
+And Microsoft Edge,
+for example, requires
+
+00:08:35.510 --> 00:08:40.100
+that the element be both
+selectable and editable.
+
+00:08:40.100 --> 00:08:44.240
+So here I've got a text
+area which I can paste into.
+
+00:08:44.240 --> 00:08:47.240
+And you can see immediately,
+there's a slight UX problem
+
+00:08:47.240 --> 00:08:47.750
+here.
+
+00:08:47.750 --> 00:08:50.450
+We're not asking the user to
+type anything in but we've
+
+00:08:50.450 --> 00:08:53.870
+given them a text input, so
+this makes it slightly awkward
+
+00:08:53.870 --> 00:08:57.500
+to let users know what they
+should be doing in your app.
+
+00:08:57.500 --> 00:09:01.730
+You can if you want take
+an editable element,
+
+00:09:01.730 --> 00:09:03.950
+put it off screen,
+and then when someone
+
+00:09:03.950 --> 00:09:07.580
+clicks onto an element that
+is on screen but not editable,
+
+00:09:07.580 --> 00:09:10.310
+you actually set
+the focus manually
+
+00:09:10.310 --> 00:09:13.730
+in your code to be the
+editable element, so
+
+00:09:13.730 --> 00:09:16.580
+that when the user pastes,
+it goes to the element
+
+00:09:16.580 --> 00:09:18.140
+that you want.
+
+00:09:18.140 --> 00:09:20.630
+But then you run into
+some accessibility issues
+
+00:09:20.630 --> 00:09:24.200
+and it's just slightly awkward.
+
+00:09:24.200 --> 00:09:26.937
+For that reason, I'm not going
+to add paste into my own camera
+
+00:09:26.937 --> 00:09:28.520
+app, but I just
+wanted to let you know
+
+00:09:28.520 --> 00:09:30.300
+that that option was there.
+
+00:09:30.300 --> 00:09:32.620
+So how do we actually
+handle a paste event?
+
+00:09:32.620 --> 00:09:33.180
+Very easy.
+
+00:09:33.180 --> 00:09:35.340
+We take whatever element
+that we're going to use--
+
+00:09:35.340 --> 00:09:36.910
+in this case, it's
+our text area--
+
+00:09:36.910 --> 00:09:39.830
+and we add an event listener
+for the paste event.
+
+00:09:39.830 --> 00:09:43.310
+And when the event
+gets handled, we get--
+
+00:09:43.310 --> 00:09:46.680
+the event has a clipboard data
+property with a files property
+
+00:09:46.680 --> 00:09:48.040
+inside it.
+
+00:09:48.040 --> 00:09:50.150
+And that files
+property, as we can see,
+
+00:09:50.150 --> 00:09:54.080
+is yet again another file list.
+
+00:09:54.080 --> 00:09:57.040
+And let's just show
+that this really works.
+
+00:09:57.040 --> 00:09:59.350
+I'm going to copy the
+image and I paste it in,
+
+00:09:59.350 --> 00:10:01.940
+and after a moment
+because this is a big file
+
+00:10:01.940 --> 00:10:06.410
+and it is doing a copy, we
+get a new entry in our console
+
+00:10:06.410 --> 00:10:07.260
+with the filing.
+
+00:10:07.260 --> 00:10:10.140
+And you can see that we get
+the name and modified date
+
+00:10:10.140 --> 00:10:11.290
+and things like that.
+
+00:10:11.290 --> 00:10:13.260
+So that brings us
+to the question of,
+
+00:10:13.260 --> 00:10:14.740
+what is a file list object?
+
+00:10:14.740 --> 00:10:16.531
+What is this thing that
+we've been getting?
+
+00:10:16.531 --> 00:10:18.440
+We've been getting it
+from the file input,
+
+00:10:18.440 --> 00:10:19.981
+we got it from drag
+and drop, and now
+
+00:10:19.981 --> 00:10:22.650
+we got it from
+the clipboard API.
+
+00:10:22.650 --> 00:10:26.100
+So a file list is
+kind of like an array.
+
+00:10:26.100 --> 00:10:31.890
+It's an object with numeric
+keys with each property
+
+00:10:31.890 --> 00:10:35.790
+being a file object.
+
+00:10:35.790 --> 00:10:37.370
+As I say, it's array-like.
+
+00:10:37.370 --> 00:10:40.000
+It doesn't have any of the array
+methods, like for each or map,
+
+00:10:40.000 --> 00:10:45.820
+but you can create an
+array by using array.from.
+
+00:10:45.820 --> 00:10:57.490
+So I could say my array
+is array.from file list.
+
+00:10:57.490 --> 00:10:59.830
+In this case, though,
+because it's numeric keys,
+
+00:10:59.830 --> 00:11:01.860
+I can still use a normal
+file loop over it.
+
+00:11:01.860 --> 00:11:04.070
+So that's what I'm
+going to do here.
+
+00:11:04.070 --> 00:11:10.700
+As I say, the entries in this
+file list are file objects.
+
+00:11:10.700 --> 00:11:13.265
+Now a file object is actually
+exactly the same as a blob.
+
+00:11:13.265 --> 00:11:14.765
+So if you've used
+a blob before, you
+
+00:11:14.765 --> 00:11:16.740
+will know exactly
+how to use this.
+
+00:11:16.740 --> 00:11:19.680
+The only difference is
+that a file object--
+
+00:11:19.680 --> 00:11:21.510
+and if we look over here--
+
+00:11:21.510 --> 00:11:23.170
+has a couple of
+extra properties.
+
+00:11:23.170 --> 00:11:26.270
+It has the last modified
+and it has the name--
+
+00:11:26.270 --> 00:11:29.030
+things that are file
+type information
+
+00:11:29.030 --> 00:11:30.680
+that you wouldn't
+have on the blob.
+
+00:11:30.680 --> 00:11:32.096
+And this means
+that you can use it
+
+00:11:32.096 --> 00:11:33.640
+however you would use a blob.
+
+00:11:33.640 --> 00:11:35.720
+Blobs can be stored in index db.
+
+00:11:35.720 --> 00:11:37.520
+You can get a URL
+from them, which
+
+00:11:37.520 --> 00:11:41.210
+means that you can use that
+URL as the source of an image.
+
+00:11:41.210 --> 00:11:46.550
+You can pass them around
+to workers and things
+
+00:11:46.550 --> 00:11:48.850
+because they are
+strict or clonable.
+
+00:11:48.850 --> 00:11:51.290
+You can do a lot of
+things with a blob.
+
+00:11:51.290 --> 00:11:55.820
+In this case, I'm going to
+take the very first file that
+
+00:11:55.820 --> 00:11:58.160
+matches--
+
+00:11:58.160 --> 00:12:04.460
+whose type is an
+image and I will just
+
+00:12:04.460 --> 00:12:06.530
+set the source of
+my output image
+
+00:12:06.530 --> 00:12:09.230
+to be whatever the image is.
+
+00:12:09.230 --> 00:12:13.160
+So this is a drag and drop.
+
+00:12:13.160 --> 00:12:16.150
+And you can see it sets the
+source image to a URL that's
+
+00:12:16.150 --> 00:12:18.072
+been created from that blob.
+
+00:12:18.072 --> 00:12:19.780
+So that's how we're
+getting an image when
+
+00:12:19.780 --> 00:12:22.420
+we don't have direct access
+to the camera, which gives us
+
+00:12:22.420 --> 00:12:25.360
+a great progressive enhancement
+story and some good places
+
+00:12:25.360 --> 00:12:29.710
+to fall back to, but for
+accessing the camera directly,
+
+00:12:29.710 --> 00:12:31.250
+we'll talk about that next time.
+
+00:12:31.250 --> 00:12:35.740
+So join me then and
+thank you for watching.
+
+00:12:35.740 --> 00:12:36.614
+Thanks for watching.
+
+00:12:36.614 --> 00:12:38.280
+If you'd like to see
+more of our videos,
+
+00:12:38.280 --> 00:12:40.050
+click here, and see you again.
+
+00:12:40.050 --> 00:12:41.600
+Cheers.
+

@@ -1,0 +1,834 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.832
+[MUSIC PLAYING]
+
+00:00:07.724 --> 00:00:08.515
+ADDY OSMANI: Hello.
+
+00:00:08.515 --> 00:00:10.419
+I'm Addy Osmani.
+
+00:00:10.419 --> 00:00:11.720
+MATT GAUNT: And I'm Matt Gaunt.
+
+00:00:11.720 --> 00:00:12.386
+ADDY OSMANI: OK.
+
+00:00:12.386 --> 00:00:15.050
+So WebPagetest is
+this great tool
+
+00:00:15.050 --> 00:00:16.980
+for testing the
+performance of your site
+
+00:00:16.980 --> 00:00:18.710
+from multiple locations
+around the world.
+
+00:00:18.710 --> 00:00:21.310
+We use it a lot when we're
+building progressive web
+
+00:00:21.310 --> 00:00:22.800
+apps at the moment.
+
+00:00:22.800 --> 00:00:25.090
+So this is like the
+interface-to-web page test.
+
+00:00:25.090 --> 00:00:27.960
+The basic idea is you just go
+in and you fill out the site
+
+00:00:27.960 --> 00:00:30.060
+that you want to test out.
+
+00:00:30.060 --> 00:00:32.580
+What we usually do is we
+go to Advanced Settings
+
+00:00:32.580 --> 00:00:34.600
+and we, first of all,
+set the number of tests
+
+00:00:34.600 --> 00:00:38.550
+to run because these can vary,
+because WebPagetest often
+
+00:00:38.550 --> 00:00:40.460
+runs on actual devices.
+
+00:00:40.460 --> 00:00:42.490
+And you can set the
+location that you want
+
+00:00:42.490 --> 00:00:44.080
+to test from around the world.
+
+00:00:44.080 --> 00:00:46.594
+We set three, so that you
+get a relatively decent set
+
+00:00:46.594 --> 00:00:47.760
+of different pieces of data.
+
+00:00:47.760 --> 00:00:49.760
+And it's just going to
+average them out for you.
+
+00:00:49.760 --> 00:00:51.426
+So when you go in and
+you run your test,
+
+00:00:51.426 --> 00:00:53.340
+it's going to look a
+little bit like this.
+
+00:00:53.340 --> 00:00:56.322
+So this is testing Paul
+Lewis's Voice Memos app out.
+
+00:00:56.322 --> 00:00:57.780
+And you get this
+nice, little table
+
+00:00:57.780 --> 00:01:01.170
+at the very top that's got
+data like load time, start
+
+00:01:01.170 --> 00:01:03.360
+render, and the speed index.
+
+00:01:03.360 --> 00:01:05.129
+Matt, what's the Speed Index?
+
+00:01:05.129 --> 00:01:07.780
+MATT GAUNT: I believe the
+Speed Index is basically
+
+00:01:07.780 --> 00:01:11.757
+the visual completeness of
+the page relative to all
+
+00:01:11.757 --> 00:01:12.840
+the pages on the internet.
+
+00:01:12.840 --> 00:01:14.173
+ADDY OSMANI: You are right, sir.
+
+00:01:14.173 --> 00:01:15.790
+You are right.
+
+00:01:15.790 --> 00:01:18.200
+And the index also includes
+the timeline breakdown
+
+00:01:18.200 --> 00:01:21.100
+and screenshots, just showing
+you all that nice stuff.
+
+00:01:21.100 --> 00:01:22.830
+But for Speed
+Index, you basically
+
+00:01:22.830 --> 00:01:27.180
+want to try getting, for at
+least cable, as close to 1,000
+
+00:01:27.180 --> 00:01:28.582
+as possible.
+
+00:01:28.582 --> 00:01:30.700
+And if you're
+targeting, like, 3G,
+
+00:01:30.700 --> 00:01:32.860
+you're looking at
+maybe around 3,000.
+
+00:01:32.860 --> 00:01:35.250
+MATT GAUNT: And I'd also
+argue, on the Repeat View,
+
+00:01:35.250 --> 00:01:39.740
+you should basically be getting
+as close to zero as humanly
+
+00:01:39.740 --> 00:01:41.040
+possible.
+
+00:01:41.040 --> 00:01:43.491
+Repeat View is
+basically like the page,
+
+00:01:43.491 --> 00:01:44.990
+everything's loaded
+once, everything
+
+00:01:44.990 --> 00:01:45.970
+should be in the cache.
+
+00:01:45.970 --> 00:01:47.930
+So you should literally
+be pulling everything
+
+00:01:47.930 --> 00:01:50.382
+from the HTTP cache, and
+it should be super fast.
+
+00:01:50.382 --> 00:01:52.090
+ADDY OSMANI: And in
+this case, Paul Lewis
+
+00:01:52.090 --> 00:01:53.390
+was using Service Worker.
+
+00:01:53.390 --> 00:01:56.100
+So you'll see that he's
+getting a pretty decent Speed
+
+00:01:56.100 --> 00:01:57.920
+Index, which is good.
+
+00:01:57.920 --> 00:02:00.150
+So just try to get that
+as low down as possible.
+
+00:02:00.150 --> 00:02:02.230
+When you're in your
+Advanced Settings page,
+
+00:02:02.230 --> 00:02:04.950
+you'll also notice that there's
+a section called Connection.
+
+00:02:04.950 --> 00:02:06.590
+Because a lot of
+the time, your users
+
+00:02:06.590 --> 00:02:09.300
+might be on the go-- they
+might be on the train
+
+00:02:09.300 --> 00:02:12.310
+or running away from
+the cops or something,
+
+00:02:12.310 --> 00:02:14.650
+I don't know-- you
+should probably
+
+00:02:14.650 --> 00:02:16.524
+also try out the
+3G settings and see
+
+00:02:16.524 --> 00:02:17.690
+how well you're doing there.
+
+00:02:17.690 --> 00:02:21.030
+So just select Mobile 3G,
+go and run your test again.
+
+00:02:21.030 --> 00:02:24.053
+And that will look a
+little bit like this.
+
+00:02:24.053 --> 00:02:26.630
+So very similar to the
+page we had before.
+
+00:02:26.630 --> 00:02:29.020
+You'll notice that the Speed
+Index score has now changed.
+
+00:02:29.020 --> 00:02:31.440
+So this is still under 3,000.
+
+00:02:31.440 --> 00:02:33.070
+It's doing pretty well.
+
+00:02:33.070 --> 00:02:34.990
+Speed Index for Repeat
+View has also gone up.
+
+00:02:34.990 --> 00:02:36.630
+It should probably be
+a little bit lower.
+
+00:02:36.630 --> 00:02:38.338
+MATT GAUNT: I think
+it's nice, basically,
+
+00:02:38.338 --> 00:02:40.740
+to get something that
+is out of your control.
+
+00:02:40.740 --> 00:02:42.180
+I think that's the
+main reason why
+
+00:02:42.180 --> 00:02:44.800
+I use this is it's something
+like my environment
+
+00:02:44.800 --> 00:02:46.800
+where I'm running these
+tests can't be affected.
+
+00:02:46.800 --> 00:02:48.890
+It's just WebPagetest
+is an independent party.
+
+00:02:48.890 --> 00:02:49.872
+So it's good.
+
+00:02:49.872 --> 00:02:50.830
+ADDY OSMANI: It's good.
+
+00:02:50.830 --> 00:02:51.790
+It's solid.
+
+00:02:51.790 --> 00:02:54.480
+So another thing
+that we usually check
+
+00:02:54.480 --> 00:02:55.980
+is the Capture Video option.
+
+00:02:55.980 --> 00:02:58.620
+So Capture Video is also
+in Advanced Settings.
+
+00:02:58.620 --> 00:03:00.660
+Just capture-- start the test.
+
+00:03:00.660 --> 00:03:02.690
+And when you do that,
+you'll get this video.
+
+00:03:02.690 --> 00:03:04.620
+So on that tab that
+we were on before,
+
+00:03:04.620 --> 00:03:06.703
+you'll notice that there's
+this little link called
+
+00:03:06.703 --> 00:03:07.445
+Filmstrip View.
+
+00:03:07.445 --> 00:03:08.215
+Click that.
+
+00:03:08.215 --> 00:03:12.470
+And it'll actually give
+you a filmstrip showing you
+
+00:03:12.470 --> 00:03:15.932
+all of the frames that
+were captured over time.
+
+00:03:15.932 --> 00:03:18.390
+And this is super useful for
+actually getting to see things
+
+00:03:18.390 --> 00:03:20.490
+like first meaningful paint.
+
+00:03:20.490 --> 00:03:22.640
+So here, we can see
+it around two seconds.
+
+00:03:22.640 --> 00:03:26.100
+We actually got some of
+the top toolbar being drawn
+
+00:03:26.100 --> 00:03:28.280
+and the material
+design fab icon.
+
+00:03:28.280 --> 00:03:29.240
+We have some text.
+
+00:03:29.240 --> 00:03:31.730
+We've got a loader showing.
+
+00:03:31.730 --> 00:03:34.167
+And you can see the
+progression, three, two.
+
+00:03:34.167 --> 00:03:35.750
+I would say four
+seconds is about when
+
+00:03:35.750 --> 00:03:38.942
+you get your proper first
+meaningful paint in place.
+
+00:03:38.942 --> 00:03:40.400
+Some members of
+the Chrome team say
+
+00:03:40.400 --> 00:03:43.592
+first meaningful paint is when
+you've got actual text showing
+
+00:03:43.592 --> 00:03:44.300
+up on the screen.
+
+00:03:44.300 --> 00:03:46.510
+So four seconds is
+how long that took.
+
+00:03:46.510 --> 00:03:48.065
+And this is 3G as well.
+
+00:03:48.065 --> 00:03:50.970
+Paul always does really
+well on the cable scores
+
+00:03:50.970 --> 00:03:51.880
+for this stuff.
+
+00:03:51.880 --> 00:03:53.850
+You can also get a video view.
+
+00:03:53.850 --> 00:03:56.110
+So remember, we captured video.
+
+00:03:56.110 --> 00:03:58.880
+If we go to the Video View
+here, you can actually see,
+
+00:03:58.880 --> 00:04:01.565
+OK, well, all these
+frames are playing back,
+
+00:04:01.565 --> 00:04:03.440
+and it shows you the
+progression [INAUDIBLE].
+
+00:04:03.440 --> 00:04:05.330
+You have four seconds
+until we've actually
+
+00:04:05.330 --> 00:04:07.250
+got visual completeness.
+
+00:04:07.250 --> 00:04:08.890
+So that's useful as well.
+
+00:04:08.890 --> 00:04:10.020
+Back on WebPagetest.
+
+00:04:10.020 --> 00:04:12.810
+If you go to Chrome-- so
+there's a dedicated Chrome tab
+
+00:04:12.810 --> 00:04:15.290
+here with a few extra
+options in there.
+
+00:04:15.290 --> 00:04:17.980
+One of them is Capture
+DevTools Timeline.
+
+00:04:17.980 --> 00:04:21.170
+Now, if you check that and
+you go and you do a recording,
+
+00:04:21.170 --> 00:04:24.490
+you'll actually get this
+little Timeline option
+
+00:04:24.490 --> 00:04:27.010
+in the very left in a column.
+
+00:04:27.010 --> 00:04:29.830
+You can download a Chrome
+DevTools timeline there.
+
+00:04:29.830 --> 00:04:31.860
+And then you can open
+up-- in DevTools,
+
+00:04:31.860 --> 00:04:34.442
+you can just go to your Timeline
+View, load the JSON file,
+
+00:04:34.442 --> 00:04:35.400
+and load that in there.
+
+00:04:35.400 --> 00:04:37.130
+You can also just
+click View, and it'll
+
+00:04:37.130 --> 00:04:39.810
+show you that timeline in a tab.
+
+00:04:39.810 --> 00:04:43.190
+There's another tab on
+WebPagetest here called
+
+00:04:43.190 --> 00:04:44.330
+Visual Comparison.
+
+00:04:44.330 --> 00:04:46.260
+Now, this is super
+useful for-- like,
+
+00:04:46.260 --> 00:04:48.020
+let's say you've
+got some assumptions
+
+00:04:48.020 --> 00:04:50.926
+you want to check out, like
+you've got a new UI that you
+
+00:04:50.926 --> 00:04:52.300
+want to ship, and
+you want to see
+
+00:04:52.300 --> 00:04:55.310
+how well it compares
+performance-wise
+
+00:04:55.310 --> 00:04:56.210
+to your old one.
+
+00:04:56.210 --> 00:04:59.590
+Or like, you want to see
+what the impact of ads
+
+00:04:59.590 --> 00:05:01.717
+are on your page
+and stuff like that.
+
+00:05:01.717 --> 00:05:04.300
+MATT GAUNT: Like, it's good if
+you had staging versus release,
+
+00:05:04.300 --> 00:05:05.540
+and you've done a lot
+of performance work.
+
+00:05:05.540 --> 00:05:08.220
+You want to make sure that
+you are actually doing well.
+
+00:05:08.220 --> 00:05:09.070
+ADDY OSMANI: Because
+I'm a jerk, I'm
+
+00:05:09.070 --> 00:05:10.120
+just going to use
+this to compare
+
+00:05:10.120 --> 00:05:11.578
+the performance of
+some of the apps
+
+00:05:11.578 --> 00:05:13.515
+our team have been building.
+
+00:05:13.515 --> 00:05:15.070
+And it looks a
+little bit like this.
+
+00:05:15.070 --> 00:05:17.870
+So I've got Paul Lewis,
+Jake, Kinlan, and me.
+
+00:05:17.870 --> 00:05:22.360
+And you can see the progression
+of visual completeness here.
+
+00:05:22.360 --> 00:05:24.640
+Half a second, we still
+have a white screen.
+
+00:05:24.640 --> 00:05:28.260
+Then around 0.7, oh, look,
+Jake's got some content.
+
+00:05:28.260 --> 00:05:28.920
+[INAUDIBLE]
+
+00:05:28.920 --> 00:05:31.910
+And poor Kinlan's [INAUDIBLE],
+which basically has nothing,
+
+00:05:31.910 --> 00:05:33.660
+but it's the fastest
+thing there is there.
+
+00:05:33.660 --> 00:05:35.118
+MATT GAUNT: I do
+like how it loads,
+
+00:05:35.118 --> 00:05:36.470
+and then it's just like, done.
+
+00:05:36.470 --> 00:05:38.120
+ADDY OSMANI: But you
+can see the progression.
+
+00:05:38.120 --> 00:05:40.620
+Like around one second, I've
+actually got some content here.
+
+00:05:40.620 --> 00:05:43.250
+Jake's already got all his
+text and everything going.
+
+00:05:43.250 --> 00:05:45.195
+I think he's using
+streams and other--
+
+00:05:45.195 --> 00:05:46.945
+MATT GAUNT: You had
+to say it, didn't you?
+
+00:05:46.945 --> 00:05:48.000
+ADDY OSMANI: Streams!
+
+00:05:48.000 --> 00:05:49.700
+Streams and other magic.
+
+00:05:49.700 --> 00:05:51.600
+And this is just
+really nice for being
+
+00:05:51.600 --> 00:05:53.730
+able to compare
+visual completeness
+
+00:05:53.730 --> 00:05:55.750
+across a few different
+builds of things.
+
+00:05:55.750 --> 00:05:58.860
+Another option on
+WebPagetest under Advanced
+
+00:05:58.860 --> 00:06:01.950
+is the ability to disable
+JavaScript, which is useful
+
+00:06:01.950 --> 00:06:03.620
+if you want to
+check out the impact
+
+00:06:03.620 --> 00:06:06.497
+of third-party resources,
+and ads, and stuff like that.
+
+00:06:06.497 --> 00:06:08.330
+MATT GAUNT: But it's
+also useful if you just
+
+00:06:08.330 --> 00:06:10.934
+want to see what happens if
+you're in a browser where--
+
+00:06:10.934 --> 00:06:13.350
+let's say, hypothetically,
+your JavaScript failed, and you
+
+00:06:13.350 --> 00:06:15.090
+were relying on it heavily.
+
+00:06:15.090 --> 00:06:16.093
+You could find out.
+
+00:06:16.093 --> 00:06:16.486
+ADDY OSMANI: Yeah.
+
+00:06:16.486 --> 00:06:18.350
+And if you need even
+more granular control
+
+00:06:18.350 --> 00:06:20.950
+over this type of
+thing, you can also
+
+00:06:20.950 --> 00:06:24.090
+block requests to
+specific resources
+
+00:06:24.090 --> 00:06:26.060
+over in the Block tab.
+
+00:06:26.060 --> 00:06:28.360
+You talked about test history.
+
+00:06:28.360 --> 00:06:30.172
+So I had no idea that
+this was a thing.
+
+00:06:30.172 --> 00:06:30.880
+MATT GAUNT: Yeah.
+
+00:06:30.880 --> 00:06:33.530
+So I think what I was doing
+was I was changing my website,
+
+00:06:33.530 --> 00:06:36.430
+and I actually wanted
+to retroactively compare
+
+00:06:36.430 --> 00:06:38.900
+new and old runs of my site.
+
+00:06:38.900 --> 00:06:40.990
+And it turns out
+WebPagetest actually
+
+00:06:40.990 --> 00:06:42.940
+logs a lot of this information.
+
+00:06:42.940 --> 00:06:46.620
+So you can literally select
+runs from the past year
+
+00:06:46.620 --> 00:06:49.430
+from any user that's
+just stuffed your site
+
+00:06:49.430 --> 00:06:51.580
+through WebPagetest
+and actually get access
+
+00:06:51.580 --> 00:06:53.250
+to those test results.
+
+00:06:53.250 --> 00:06:57.307
+So if you wanted to compare
+really old builds versus new,
+
+00:06:57.307 --> 00:06:59.140
+you can totally do that
+through WebPagetest.
+
+00:06:59.140 --> 00:07:01.250
+It's all just there,
+which is awesome.
+
+00:07:01.250 --> 00:07:02.520
+ADDY OSMANI: One last thing.
+
+00:07:02.520 --> 00:07:04.395
+This is something I only
+recently discovered.
+
+00:07:04.395 --> 00:07:07.660
+So WebPagetest also has
+this JPEG Info tool.
+
+00:07:07.660 --> 00:07:10.100
+So webpagetest.org/jpeginfo.
+
+00:07:10.100 --> 00:07:14.570
+You can just add in a URL to
+any image here and analyze it.
+
+00:07:14.570 --> 00:07:17.030
+And what it'll actually
+do is it'll show you
+
+00:07:17.030 --> 00:07:20.380
+what compression
+savings you can get
+
+00:07:20.380 --> 00:07:23.760
+by going for
+lossless compression
+
+00:07:23.760 --> 00:07:25.890
+or changing up the image
+quality to something
+
+00:07:25.890 --> 00:07:28.959
+a little bit different to what
+you've got right now, like size
+
+00:07:28.959 --> 00:07:30.750
+85, in this case, which
+is still saving you
+
+00:07:30.750 --> 00:07:34.220
+bytes on the
+original 140K image.
+
+00:07:34.220 --> 00:07:38.270
+But it's just a nice, little,
+extra thing WebPagetest does.
+
+00:07:38.270 --> 00:07:40.804
+Not a lot of people use this,
+like, know this tool exists.
+
+00:07:40.804 --> 00:07:41.720
+But it's kind of neat.
+
+00:07:41.720 --> 00:07:43.095
+MATT GAUNT: No,
+it's pretty cool,
+
+00:07:43.095 --> 00:07:45.840
+because it also gives you a
+score of image compression
+
+00:07:45.840 --> 00:07:47.042
+on your runs and everything.
+
+00:07:47.042 --> 00:07:48.500
+So it's nice to be
+able to do that.
+
+00:07:48.500 --> 00:07:50.010
+ADDY OSMANI: There's
+a ton of other options
+
+00:07:50.010 --> 00:07:50.950
+WebPagetest have got.
+
+00:07:50.950 --> 00:07:52.970
+You can keep your tests
+private, set labels.
+
+00:07:52.970 --> 00:07:55.265
+You can set custom user timings.
+
+00:07:55.265 --> 00:07:58.720
+So if visual completeness
+requires better markings up
+
+00:07:58.720 --> 00:08:00.490
+in the Waterfall view
+that they've got,
+
+00:08:00.490 --> 00:08:01.780
+you can check that stuff out.
+
+00:08:01.780 --> 00:08:04.190
+Supports authentication
+and a ton of other stuff.
+
+00:08:04.190 --> 00:08:05.990
+So WebPagetest is awesome.
+
+00:08:05.990 --> 00:08:06.870
+Go check it out.
+
+00:08:06.870 --> 00:08:08.610
+MATT GAUNT: Yes,
+use it every day.
+
+00:08:08.610 --> 00:08:11.660
+[MUSIC PLAYING]
+

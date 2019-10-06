@@ -1,0 +1,605 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.900
+[MUSIC PLAYING]
+
+00:00:10.290 --> 00:00:13.690
+PAUL LEWIS: Hello, and welcome
+to this Supercharged TL;DW,
+
+00:00:13.690 --> 00:00:15.975
+the sort of beard-free version.
+
+00:00:15.975 --> 00:00:17.600
+I don't know what
+happened to the hair.
+
+00:00:17.600 --> 00:00:19.183
+It just--
+[SUCKING AND POPPING SOUND],
+
+00:00:19.183 --> 00:00:21.020
+it abandoned me, like
+the stuff up there.
+
+00:00:21.020 --> 00:00:21.940
+[GRUNTING]
+
+00:00:21.940 --> 00:00:24.499
+Well, last time, Surma
+and I took the router
+
+00:00:24.499 --> 00:00:26.290
+that we made two sessions
+ago and turned it
+
+00:00:26.290 --> 00:00:27.910
+into a more advanced router.
+
+00:00:27.910 --> 00:00:29.260
+Let me show you what we did.
+
+00:00:29.260 --> 00:00:30.810
+So you can see on
+screen, it's not
+
+00:00:30.810 --> 00:00:33.100
+vastly different from last
+time, except that now we've
+
+00:00:33.100 --> 00:00:36.010
+got this spinner, and
+then the content fades in.
+
+00:00:36.010 --> 00:00:39.200
+But actually, under the hood,
+a bunch of things have changed.
+
+00:00:39.200 --> 00:00:45.120
+Let's talk about that over
+there in Theory Corner.
+
+00:00:45.120 --> 00:00:47.500
+[LAUGHTER] Hello,
+welcome to Theory Corner.
+
+00:00:47.500 --> 00:00:48.590
+Good of you to join me.
+
+00:00:48.590 --> 00:00:49.880
+That's probably
+because I asked you to.
+
+00:00:49.880 --> 00:00:50.838
+Don't worry about that.
+
+00:00:50.838 --> 00:00:53.710
+Anyway, the router is
+pretty much the same
+
+00:00:53.710 --> 00:00:56.160
+as last time,
+except last time, we
+
+00:00:56.160 --> 00:00:59.310
+had one index page, which
+had all the content in.
+
+00:00:59.310 --> 00:01:00.870
+And no matter which
+URL you went to,
+
+00:01:00.870 --> 00:01:02.740
+we served you the same index.
+
+00:01:02.740 --> 00:01:03.630
+No more.
+
+00:01:03.630 --> 00:01:05.730
+What we've done is we've
+broken each of these out
+
+00:01:05.730 --> 00:01:08.130
+into their own individual pages.
+
+00:01:08.130 --> 00:01:09.630
+That means, when
+we deep link, we're
+
+00:01:09.630 --> 00:01:12.410
+just going to show
+those individual pages.
+
+00:01:12.410 --> 00:01:14.880
+But we can enhance
+with the JavaScript.
+
+00:01:14.880 --> 00:01:16.750
+So what happens if
+you go to the About
+
+00:01:16.750 --> 00:01:19.440
+page is that we leave
+placeholder sections,
+
+00:01:19.440 --> 00:01:22.147
+if you like, for
+Contact, Misc, and Home.
+
+00:01:22.147 --> 00:01:23.730
+And then when you
+choose one of those,
+
+00:01:23.730 --> 00:01:25.660
+we XHR or Fetch--
+it's your choice;
+
+00:01:25.660 --> 00:01:27.590
+I chose XHR for reasons
+that will become
+
+00:01:27.590 --> 00:01:31.430
+clear-- we XHR or Fetch them
+in, and we populate them
+
+00:01:31.430 --> 00:01:32.320
+dynamically.
+
+00:01:32.320 --> 00:01:34.840
+And while we're waiting,
+we show a spinner.
+
+00:01:34.840 --> 00:01:35.930
+All make sense?
+
+00:01:35.930 --> 00:01:36.430
+Good.
+
+00:01:36.430 --> 00:01:39.440
+Let's go look at some code.
+
+00:01:39.440 --> 00:01:41.080
+Welcome back to the codey bit.
+
+00:01:41.080 --> 00:01:42.230
+I love code.
+
+00:01:42.230 --> 00:01:43.610
+Who doesn't?
+
+00:01:43.610 --> 00:01:44.300
+[LAUGHS]
+
+00:01:44.300 --> 00:01:45.600
+Yes, now the code.
+
+00:01:45.600 --> 00:01:48.750
+Well, in fact, as I said
+over in Theory Corner,
+
+00:01:48.750 --> 00:01:50.960
+not a lot actually
+changed inside the router.
+
+00:01:50.960 --> 00:01:54.000
+In fact, most of our changes
+have happened in the HTML
+
+00:01:54.000 --> 00:01:55.200
+and in the View.
+
+00:01:55.200 --> 00:01:57.080
+So let's have a
+look at the HTML.
+
+00:01:57.080 --> 00:01:59.392
+So this is what it looks
+like in the main index.
+
+00:01:59.392 --> 00:02:01.100
+You can see, we've
+still got our SC.View,
+
+00:02:01.100 --> 00:02:03.340
+which is the custom
+element for the view.
+
+00:02:03.340 --> 00:02:05.700
+But we have now
+added a visible class
+
+00:02:05.700 --> 00:02:07.820
+for each individual
+area that's visible.
+
+00:02:07.820 --> 00:02:10.190
+In this case, the
+visible area is home.
+
+00:02:10.190 --> 00:02:13.200
+And we have these placeholders,
+like we talked about in Theory
+
+00:02:13.200 --> 00:02:14.680
+Corner for the other views.
+
+00:02:14.680 --> 00:02:17.560
+But you'll see, they've got this
+additional attribute of remote
+
+00:02:17.560 --> 00:02:20.526
+on them, which we're going
+to pick up in the JavaScript.
+
+00:02:20.526 --> 00:02:21.900
+While we're also
+here, it's worth
+
+00:02:21.900 --> 00:02:24.900
+noticing that, if we notice
+that the view is remote,
+
+00:02:24.900 --> 00:02:27.540
+we have a before and an after.
+
+00:02:27.540 --> 00:02:29.640
+The before is a
+solid color block,
+
+00:02:29.640 --> 00:02:32.260
+which its color is
+inherited from the parents.
+
+00:02:32.260 --> 00:02:34.810
+And the after is
+this spinner graphic
+
+00:02:34.810 --> 00:02:36.801
+that you saw right at the start.
+
+00:02:36.801 --> 00:02:38.300
+Well, how does it
+all come together?
+
+00:02:38.300 --> 00:02:40.930
+Well, for that, we need
+to look at the view.
+
+00:02:40.930 --> 00:02:44.040
+So our view is pretty
+much the same as it was.
+
+00:02:44.040 --> 00:02:46.546
+And you'll remember from
+last time we have something
+
+00:02:46.546 --> 00:02:47.670
+that returns a new promise.
+
+00:02:47.670 --> 00:02:49.434
+And we just add
+the visible class.
+
+00:02:49.434 --> 00:02:51.100
+And we could fade it
+in, which was fine,
+
+00:02:51.100 --> 00:02:53.450
+because all the content
+lived inside one page,
+
+00:02:53.450 --> 00:02:55.280
+but now we got to
+load in remotely.
+
+00:02:55.280 --> 00:02:57.770
+So what we do is we
+say, if this is remote--
+
+00:02:57.770 --> 00:02:59.780
+which looks for that
+attribute, the remote
+
+00:02:59.780 --> 00:03:02.920
+attribute on the view-- and
+we've not loaded it in before,
+
+00:03:02.920 --> 00:03:04.340
+load it in.
+
+00:03:04.340 --> 00:03:06.670
+So that then says, well,
+what does the load in code
+
+00:03:06.670 --> 00:03:07.250
+look like?
+
+00:03:07.250 --> 00:03:09.330
+Great, glad you asked.
+
+00:03:09.330 --> 00:03:10.640
+Kapow.
+
+00:03:10.640 --> 00:03:12.290
+The code looks like this.
+
+00:03:12.290 --> 00:03:14.820
+We have, in our case, an XHR.
+
+00:03:14.820 --> 00:03:16.340
+Now, why not use Fetch?
+
+00:03:16.340 --> 00:03:18.170
+That would be a fairly
+obvious thing to do.
+
+00:03:18.170 --> 00:03:21.380
+The reason is, you can't
+Fetch in a document.
+
+00:03:21.380 --> 00:03:24.110
+You can XHR in and say the
+response type is document.
+
+00:03:24.110 --> 00:03:25.800
+But for Fetch, the
+best you can do
+
+00:03:25.800 --> 00:03:30.560
+is get text and then pass it to
+a DOMParser, so new DOMParser
+
+00:03:30.560 --> 00:03:35.330
+parses text, I think it is,
+and you tell it it's HTML.
+
+00:03:35.330 --> 00:03:37.770
+Not quite as
+convenient in my view.
+
+00:03:37.770 --> 00:03:40.770
+There's nothing wrong with
+an XHR, so let's do that.
+
+00:03:40.770 --> 00:03:43.310
+And so what we do is
+we create our XHR.
+
+00:03:43.310 --> 00:03:45.060
+We set the response
+type to document.
+
+00:03:45.060 --> 00:03:47.810
+And then what we do
+is we look at the URL
+
+00:03:47.810 --> 00:03:50.756
+that we were trying to get to,
+and we basically XHR that in.
+
+00:03:50.756 --> 00:03:52.630
+And whatever we get back
+from the server side
+
+00:03:52.630 --> 00:03:54.680
+is what we're
+going to work with.
+
+00:03:54.680 --> 00:03:58.060
+So you'll notice inside there,
+we query out the visible view.
+
+00:03:58.060 --> 00:04:01.470
+So for example, if we've
+requested the About page,
+
+00:04:01.470 --> 00:04:03.572
+then the Visible View
+will be the About content.
+
+00:04:03.572 --> 00:04:05.280
+Then what we can do
+is, you can see we've
+
+00:04:05.280 --> 00:04:07.614
+got this dot underscore view.
+
+00:04:07.614 --> 00:04:09.280
+And you might be
+wondering, what's that?
+
+00:04:09.280 --> 00:04:10.760
+Well, just look a
+little bit further up,
+
+00:04:10.760 --> 00:04:12.420
+you'll see it's a
+document fragment.
+
+00:04:12.420 --> 00:04:15.970
+So it's a bit of detached
+DOM that we can work with.
+
+00:04:15.970 --> 00:04:18.480
+So we create one of these
+detached DOM fragments,
+
+00:04:18.480 --> 00:04:19.250
+basically.
+
+00:04:19.250 --> 00:04:21.180
+And we populate it
+with whatever we
+
+00:04:21.180 --> 00:04:25.429
+manage to pull out from the
+view that we loaded in remotely.
+
+00:04:25.429 --> 00:04:26.970
+So we populate all
+that, and then you
+
+00:04:26.970 --> 00:04:30.524
+can see that we append
+it to this view.
+
+00:04:30.524 --> 00:04:32.440
+After that, there's just
+a bit of bookkeeping.
+
+00:04:32.440 --> 00:04:33.430
+You remember, I
+mentioned there's
+
+00:04:33.430 --> 00:04:35.580
+the before and the after
+with the spinner on.
+
+00:04:35.580 --> 00:04:37.990
+Well, what we do is we
+start, as soon as we call
+
+00:04:37.990 --> 00:04:39.730
+into the loadView,
+we basically say,
+
+00:04:39.730 --> 00:04:41.670
+set a timeout for half a second.
+
+00:04:41.670 --> 00:04:43.500
+If we get to the
+half a second, we're
+
+00:04:43.500 --> 00:04:44.980
+going to show that spinner.
+
+00:04:44.980 --> 00:04:47.324
+If we don't get to half
+a second, no big deal,
+
+00:04:47.324 --> 00:04:48.490
+we'll just show the content.
+
+00:04:48.490 --> 00:04:50.220
+But if we do, you'll
+see here, we've
+
+00:04:50.220 --> 00:04:53.960
+got the showSpinner, which
+turns on the opacity.
+
+00:04:53.960 --> 00:04:56.107
+And then when the content
+is actually loaded,
+
+00:04:56.107 --> 00:04:57.190
+we can clear that timeout.
+
+00:04:57.190 --> 00:04:59.200
+And we can also hide
+the spinner, which
+
+00:04:59.200 --> 00:05:00.330
+will cause it to fade out.
+
+00:05:00.330 --> 00:05:03.000
+And that will reveal
+the content behind.
+
+00:05:03.000 --> 00:05:04.684
+So there you go.
+
+00:05:04.684 --> 00:05:06.100
+Doesn't look like
+a massive amount
+
+00:05:06.100 --> 00:05:08.380
+of difference for the user, but
+it's a huge difference for us.
+
+00:05:08.380 --> 00:05:10.400
+And it's actually a very
+positive difference,
+
+00:05:10.400 --> 00:05:12.733
+because it's allowed us to
+have progressive enhancement.
+
+00:05:12.733 --> 00:05:15.920
+We can now get to those URLs
+without any JavaScript switched
+
+00:05:15.920 --> 00:05:16.420
+on.
+
+00:05:16.420 --> 00:05:19.130
+And we can progressively enhance
+into a more advanced router
+
+00:05:19.130 --> 00:05:20.120
+from there.
+
+00:05:20.120 --> 00:05:21.150
+So there you go.
+
+00:05:21.150 --> 00:05:21.817
+Brilliant stuff.
+
+00:05:21.817 --> 00:05:23.566
+Don't forget to check
+out the live stream.
+
+00:05:23.566 --> 00:05:25.975
+If you've not had chance,
+it's about an hour long.
+
+00:05:25.975 --> 00:05:28.840
+In fact, no, I think it was
+slightly shorter this time.
+
+00:05:28.840 --> 00:05:30.910
+Time saving for the win!
+
+00:05:30.910 --> 00:05:32.260
+Cool.
+
+00:05:32.260 --> 00:05:33.362
+Don't forget to subscribe.
+
+00:05:33.362 --> 00:05:35.570
+And let us know what you
+think in the comments below.
+
+00:05:35.570 --> 00:05:36.861
+Thank you so much for watching.
+
+00:05:36.861 --> 00:05:39.211
+And I'll catch you next time.
+
+00:05:39.211 --> 00:05:40.460
+Who doesn't love a livestream?
+
+00:05:40.460 --> 00:05:41.293
+I love a livestream.
+
+00:05:41.293 --> 00:05:42.280
+You love a livestream.
+
+00:05:42.280 --> 00:05:43.980
+Let's all watch the livestream.
+
+00:05:43.980 --> 00:05:45.700
+Great hour, funsies.
+
+00:05:45.700 --> 00:05:47.735
+Tap ta tap tap,
+click, click, click.
+
+00:05:47.735 --> 00:05:48.705
+I subscribed.
+
+00:05:48.705 --> 00:05:50.740
+[CHEERING] Winning!
+

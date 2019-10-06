@@ -1,0 +1,1434 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.817
+[MUSIC PLAYING]
+
+00:00:03.817 --> 00:00:05.400
+ROB DODSON: Hey,
+everybody, what's up?
+
+00:00:05.400 --> 00:00:06.240
+It's Rob Dodson.
+
+00:00:06.240 --> 00:00:08.142
+Welcome back to
+the Polycast show.
+
+00:00:08.142 --> 00:00:09.600
+So today, we're
+going to be talking
+
+00:00:09.600 --> 00:00:13.934
+about doing asynchronous
+actions using Polymer Redux.
+
+00:00:13.934 --> 00:00:16.350
+And to do this, we're going
+to use a little library called
+
+00:00:16.350 --> 00:00:17.880
+Redux Thunk.
+
+00:00:17.880 --> 00:00:20.640
+So Redux Thunk, in a
+nutshell, basically
+
+00:00:20.640 --> 00:00:26.410
+teaches Redux to treat certain
+kinds of actions as functions.
+
+00:00:26.410 --> 00:00:28.290
+So I can give it a
+function, and it'll run it
+
+00:00:28.290 --> 00:00:29.730
+as if it's any other action.
+
+00:00:29.730 --> 00:00:31.170
+And inside of that
+function, I can
+
+00:00:31.170 --> 00:00:33.630
+do all sorts of cool
+asynchronous work,
+
+00:00:33.630 --> 00:00:35.420
+and I can share those
+functions amongst
+
+00:00:35.420 --> 00:00:36.420
+my different components.
+
+00:00:36.420 --> 00:00:38.610
+So that way I don't have
+to duplicate that work
+
+00:00:38.610 --> 00:00:39.520
+all over the place.
+
+00:00:39.520 --> 00:00:41.580
+So I'll teach you how to
+do that as well today.
+
+00:00:41.580 --> 00:00:44.224
+So follow me over here
+to my text editor.
+
+00:00:44.224 --> 00:00:46.140
+And the first thing we're
+going to do actually
+
+00:00:46.140 --> 00:00:48.139
+is bust open the terminal.
+
+00:00:48.139 --> 00:00:49.680
+And inside of our
+project, we're just
+
+00:00:49.680 --> 00:00:55.430
+going to npm install dash
+dash save redux thunk.
+
+00:00:55.430 --> 00:00:57.450
+And I've already
+got Polymer Redux,
+
+00:00:57.450 --> 00:01:00.535
+and I've got Redux installed
+from the previous episodes.
+
+00:01:00.535 --> 00:01:02.252
+So if you haven't
+seen that episode,
+
+00:01:02.252 --> 00:01:03.460
+definitely go check that out.
+
+00:01:03.460 --> 00:01:05.710
+We'll include a link to it,
+and maybe a little picture
+
+00:01:05.710 --> 00:01:07.740
+and picture window
+will pop up somewhere.
+
+00:01:07.740 --> 00:01:08.922
+Go check out that episode.
+
+00:01:08.922 --> 00:01:10.380
+Over here, though,
+we're just going
+
+00:01:10.380 --> 00:01:12.420
+to install Redux Thunk from NPM.
+
+00:01:12.420 --> 00:01:15.640
+I've already got it set
+up, so we're good to go.
+
+00:01:15.640 --> 00:01:18.360
+The next thing I'm going to do
+is go over to my text editor.
+
+00:01:18.360 --> 00:01:19.860
+And here, I'll pump
+this up a little
+
+00:01:19.860 --> 00:01:21.720
+bit to make it a
+bit easier to read.
+
+00:01:21.720 --> 00:01:26.040
+And I'm going to start off
+by creating a redux store.
+
+00:01:26.040 --> 00:01:29.034
+So here I am importing
+Polymer Redux.
+
+00:01:29.034 --> 00:01:30.450
+And then I've got
+a script element
+
+00:01:30.450 --> 00:01:33.420
+inside of this HTML
+import called redux store.
+
+00:01:33.420 --> 00:01:36.920
+And the first thing I usually
+do is create some initial state.
+
+00:01:36.920 --> 00:01:39.512
+So I'll say const initial state.
+
+00:01:39.512 --> 00:01:40.970
+And what we're
+going to build today
+
+00:01:40.970 --> 00:01:43.890
+is a really, really,
+really simple example.
+
+00:01:43.890 --> 00:01:45.570
+It's just going to
+be like a little form
+
+00:01:45.570 --> 00:01:47.909
+that someone can type in a
+user name and click Sign Up.
+
+00:01:47.909 --> 00:01:49.950
+And then it's going to go
+off and do a little bit
+
+00:01:49.950 --> 00:01:51.270
+of asynchronous work.
+
+00:01:51.270 --> 00:01:52.890
+And when that work
+is done, it'll
+
+00:01:52.890 --> 00:01:54.204
+display that person's name.
+
+00:01:54.204 --> 00:01:56.370
+So while it's doing the
+work, it'll be like loading.
+
+00:01:56.370 --> 00:01:57.744
+And then once
+they're done, it'll
+
+00:01:57.744 --> 00:01:59.280
+be like, welcome, so and so.
+
+00:01:59.280 --> 00:02:01.230
+Whatever username they put in.
+
+00:02:01.230 --> 00:02:05.250
+So our initial state here,
+we'll say loading is false.
+
+00:02:05.250 --> 00:02:08.280
+And we'll give it a name.
+
+00:02:08.280 --> 00:02:10.610
+That's got initialState.
+
+00:02:10.610 --> 00:02:11.970
+Say loading is false.
+
+00:02:11.970 --> 00:02:15.771
+And username equals null.
+
+00:02:15.771 --> 00:02:16.270
+Cool.
+
+00:02:16.270 --> 00:02:18.300
+So once I have my
+initial state in place,
+
+00:02:18.300 --> 00:02:21.090
+the next thing I want to
+do is write a reducer.
+
+00:02:21.090 --> 00:02:26.700
+So reducer is going to take in
+the actions that are dispatched
+
+00:02:26.700 --> 00:02:28.930
+and modify our state.
+
+00:02:28.930 --> 00:02:31.230
+So we'll say reducer is
+a function that takes
+
+00:02:31.230 --> 00:02:35.400
+state and action as arguments.
+
+00:02:35.400 --> 00:02:38.700
+We'll say, hey, if there
+was no state passed in,
+
+00:02:38.700 --> 00:02:43.260
+then we will return
+our initial state.
+
+00:02:43.260 --> 00:02:46.830
+Otherwise, we're going to
+switch on the action type.
+
+00:02:46.830 --> 00:02:49.635
+So we'll switch action.type.
+
+00:02:49.635 --> 00:02:51.510
+So the first action that
+we'll be looking for
+
+00:02:51.510 --> 00:02:55.045
+is SIGN_UP_STARTED.
+
+00:02:55.045 --> 00:02:58.770
+And we're going to just
+return our state object.
+
+00:02:58.770 --> 00:03:01.260
+And as is the typical
+Redux pattern,
+
+00:03:01.260 --> 00:03:03.930
+we're going to make a
+clone of that state object.
+
+00:03:03.930 --> 00:03:07.920
+And we're going to mutate the
+loading flag inside of there.
+
+00:03:07.920 --> 00:03:10.830
+So we'll say return
+object assign.
+
+00:03:10.830 --> 00:03:12.950
+And we'll pass in
+an empty object.
+
+00:03:12.950 --> 00:03:15.630
+We'll pass in our state to copy
+it over into that empty object.
+
+00:03:15.630 --> 00:03:21.210
+And then we'll pass
+in loading true.
+
+00:03:21.210 --> 00:03:22.680
+So someone says sign up started.
+
+00:03:22.680 --> 00:03:25.237
+We're just going to
+display a loading message.
+
+00:03:25.237 --> 00:03:26.820
+The other thing we're
+going to do here
+
+00:03:26.820 --> 00:03:32.562
+is we'll have sign up completed.
+
+00:03:32.562 --> 00:03:34.270
+We're going to do
+something very similar.
+
+00:03:34.270 --> 00:03:37.060
+We're going to
+return object.assign.
+
+00:03:37.060 --> 00:03:38.580
+Pass in empty object.
+
+00:03:38.580 --> 00:03:40.080
+Pass in the state.
+
+00:03:40.080 --> 00:03:42.180
+And then the two things
+we're going to do here
+
+00:03:42.180 --> 00:03:45.729
+is we're going to set
+loading back to false.
+
+00:03:45.729 --> 00:03:47.520
+And we're also going
+to assume that someone
+
+00:03:47.520 --> 00:03:50.760
+is going to pass in the
+username as part of that action.
+
+00:03:50.760 --> 00:03:55.890
+So we're going to say username
+is equal to action.username.
+
+00:03:55.890 --> 00:03:57.420
+So this is our very
+simple reducer,
+
+00:03:57.420 --> 00:04:02.490
+just handling a couple
+of asynchronous states.
+
+00:04:02.490 --> 00:04:08.257
+Once we have that in place,
+we need to create our store.
+
+00:04:08.257 --> 00:04:09.840
+Do it this way so I
+don't make a typo.
+
+00:04:09.840 --> 00:04:10.510
+There we go.
+
+00:04:10.510 --> 00:04:12.150
+So store equals
+redux create store.
+
+00:04:12.150 --> 00:04:13.620
+We're going to pass
+it the reducer.
+
+00:04:13.620 --> 00:04:18.399
+And then we're going to
+call redux applyMiddleware
+
+00:04:18.399 --> 00:04:21.230
+and give it this
+ReduxThunk thing.
+
+00:04:21.230 --> 00:04:23.700
+And again, Redux Thunk
+is going to teach
+
+00:04:23.700 --> 00:04:26.190
+our store and our
+dispatcher to take
+
+00:04:26.190 --> 00:04:29.760
+a function in certain cases and
+treat it as if it is an action.
+
+00:04:29.760 --> 00:04:31.510
+So you can still
+dispatch regular actions,
+
+00:04:31.510 --> 00:04:33.218
+just like we did in
+the previous episode.
+
+00:04:33.218 --> 00:04:35.700
+But you can also dispatch
+a function now, or give it
+
+00:04:35.700 --> 00:04:38.082
+to the dispatcher, and
+it will run that function
+
+00:04:38.082 --> 00:04:40.290
+and it'll actually treat it
+like it's its own action.
+
+00:04:40.290 --> 00:04:42.165
+But that way, we can do
+a bunch of async work
+
+00:04:42.165 --> 00:04:43.450
+inside of that function.
+
+00:04:43.450 --> 00:04:45.300
+So we're going to create
+our store that way.
+
+00:04:45.300 --> 00:04:49.540
+We're going to create
+a redux behavior.
+
+00:04:49.540 --> 00:04:55.260
+So we'll say const ReduxBehavior
+equals Polymer Redux.
+
+00:04:55.260 --> 00:04:58.890
+We'll pass it the store.
+
+00:04:58.890 --> 00:05:01.530
+And then I want to create
+another behavior that's
+
+00:05:01.530 --> 00:05:04.572
+going to contain my
+asynchronous actions.
+
+00:05:04.572 --> 00:05:06.530
+So in the last episode,
+one of the things I did
+
+00:05:06.530 --> 00:05:10.100
+was I actually hard
+coded the action dispatch
+
+00:05:10.100 --> 00:05:12.235
+to the component that
+I was working with.
+
+00:05:12.235 --> 00:05:13.610
+And you know, the
+issue with that
+
+00:05:13.610 --> 00:05:15.401
+is if you have more
+than one component that
+
+00:05:15.401 --> 00:05:17.870
+needs to dispatch
+the same action, that
+
+00:05:17.870 --> 00:05:20.495
+would be annoying and repetitive
+to have to implement that
+
+00:05:20.495 --> 00:05:22.176
+in every single component.
+
+00:05:22.176 --> 00:05:24.050
+So what we can do is we
+can create a behavior
+
+00:05:24.050 --> 00:05:26.360
+for the actions object
+that Polymer Redux uses,
+
+00:05:26.360 --> 00:05:28.610
+and we can share that
+amongst any components that
+
+00:05:28.610 --> 00:05:31.367
+want to dispatch these
+particular actions.
+
+00:05:31.367 --> 00:05:33.200
+So I'm going to create
+a new behavior called
+
+00:05:33.200 --> 00:05:34.670
+AsyncActionsBehavior.
+
+00:05:37.400 --> 00:05:40.850
+This is just going
+to be an object.
+
+00:05:40.850 --> 00:05:44.420
+It is going to have an
+actions object on it.
+
+00:05:44.420 --> 00:05:46.370
+And the action that
+we're going to be doing
+
+00:05:46.370 --> 00:05:49.970
+is just going to be
+called signupWithTimeout.
+
+00:05:49.970 --> 00:05:52.970
+So we're not actually going to
+go talk to an API or anything.
+
+00:05:52.970 --> 00:05:54.630
+To simulate an
+asynchronous action,
+
+00:05:54.630 --> 00:05:56.900
+I'm just going to write
+a setTimeout inside
+
+00:05:56.900 --> 00:05:58.610
+of this action creator.
+
+00:05:58.610 --> 00:06:01.220
+So our action will
+be signupWithTimeout.
+
+00:06:01.220 --> 00:06:08.650
+It's a function that is going to
+take as an argument a username.
+
+00:06:08.650 --> 00:06:13.130
+And it's going to return
+a function that takes
+
+00:06:13.130 --> 00:06:15.390
+a dispatcher as an argument.
+
+00:06:15.390 --> 00:06:17.932
+So that's going to be the
+actual redux dispatcher.
+
+00:06:17.932 --> 00:06:19.640
+Basically, Redux Thunk
+is going to handle
+
+00:06:19.640 --> 00:06:22.621
+passing that dispatcher into
+this return function for us.
+
+00:06:22.621 --> 00:06:24.620
+And then we just want to
+dispatch a few actions.
+
+00:06:24.620 --> 00:06:28.520
+So the first thing we'll do is
+we'll call dispatcher.dispatch.
+
+00:06:33.030 --> 00:06:33.535
+Let's see.
+
+00:06:33.535 --> 00:06:36.690
+Let me make sure I
+do this right here.
+
+00:06:36.690 --> 00:06:38.480
+Really quick.
+
+00:06:38.480 --> 00:06:39.750
+So we're passing in dispatch.
+
+00:06:39.750 --> 00:06:40.579
+Oh, ah.
+
+00:06:40.579 --> 00:06:41.620
+This is what I got wrong.
+
+00:06:41.620 --> 00:06:43.078
+I knew I was doing
+something wrong.
+
+00:06:43.078 --> 00:06:46.070
+Instead of passing in
+the dispatcher object,
+
+00:06:46.070 --> 00:06:48.240
+we're just passing in
+the dispatch method.
+
+00:06:48.240 --> 00:06:51.780
+So we don't actually have
+to say dispatcher.dispatch.
+
+00:06:51.780 --> 00:06:53.400
+We just say dispatch.
+
+00:06:53.400 --> 00:07:00.130
+And the first we'll do is
+we'll dispatch an action.
+
+00:07:00.130 --> 00:07:03.940
+An action whose type
+is SIGN_UP_STARTED.
+
+00:07:03.940 --> 00:07:06.790
+So this is going to kick off
+our asynchronous process.
+
+00:07:06.790 --> 00:07:10.920
+And then we're going
+to do a setTimeout.
+
+00:07:10.920 --> 00:07:13.950
+So setTimeout.
+
+00:07:13.950 --> 00:07:15.770
+Give it a function here.
+
+00:07:15.770 --> 00:07:18.464
+Say wait maybe 3,000 seconds.
+
+00:07:18.464 --> 00:07:19.880
+And then instead
+of this function,
+
+00:07:19.880 --> 00:07:21.800
+we're going to dispatch
+another action.
+
+00:07:21.800 --> 00:07:25.280
+This time, we'll assume that
+our asynchronous sign up process
+
+00:07:25.280 --> 00:07:25.970
+is completed.
+
+00:07:25.970 --> 00:07:28.220
+Our server responded
+or whatever.
+
+00:07:28.220 --> 00:07:31.560
+So we'll say SIGN_UP_COMPLETED.
+
+00:07:31.560 --> 00:07:33.980
+And then we're going
+to say username
+
+00:07:33.980 --> 00:07:37.520
+is equal to this username
+value that was passed in here.
+
+00:07:37.520 --> 00:07:41.610
+So username is
+equal to username.
+
+00:07:41.610 --> 00:07:43.324
+I think that looks
+about right to me.
+
+00:07:43.324 --> 00:07:44.990
+So what we're going
+to be able to do now
+
+00:07:44.990 --> 00:07:47.114
+is share this behavior
+amongst components,
+
+00:07:47.114 --> 00:07:48.530
+and then those
+components can just
+
+00:07:48.530 --> 00:07:52.140
+say this.dispatch
+signupWithTimeout.
+
+00:07:52.140 --> 00:07:53.800
+And they can pass
+in a username value,
+
+00:07:53.800 --> 00:07:57.020
+and then it'll go do all this
+asynchronous work or whatever.
+
+00:07:57.020 --> 00:07:59.400
+And then eventually that
+will update our state.
+
+00:07:59.400 --> 00:08:01.400
+So let's actually
+go implement that.
+
+00:08:01.400 --> 00:08:04.070
+I'm going to create a little
+sign up form component.
+
+00:08:04.070 --> 00:08:08.030
+So I've got a signupform.html
+that I've created here.
+
+00:08:08.030 --> 00:08:09.280
+I'm already importing Polymer.
+
+00:08:09.280 --> 00:08:13.010
+I'm already importing
+our redux store.
+
+00:08:13.010 --> 00:08:20.300
+So I will just stub out Polymer
+element called sign-up-form.
+
+00:08:20.300 --> 00:08:22.130
+Inside of here,
+we're going to have
+
+00:08:22.130 --> 00:08:26.810
+a label for our username field.
+
+00:08:26.810 --> 00:08:27.680
+So let's see.
+
+00:08:27.680 --> 00:08:29.735
+Input type equals text.
+
+00:08:29.735 --> 00:08:32.888
+So we'll say username.
+
+00:08:32.888 --> 00:08:33.679
+Fill that in there.
+
+00:08:33.679 --> 00:08:39.260
+And then we'll have a
+button where we say Sign Up.
+
+00:08:39.260 --> 00:08:41.130
+And whenever someone
+taps this button,
+
+00:08:41.130 --> 00:08:45.020
+we will call our
+sign up function.
+
+00:08:45.020 --> 00:08:48.470
+And down here, we're
+going to implement
+
+00:08:48.470 --> 00:08:49.850
+that sign up function.
+
+00:08:49.850 --> 00:08:52.080
+And this will be
+pretty straightforward.
+
+00:08:52.080 --> 00:08:58.261
+We're just going to say
+let username equal--
+
+00:08:58.261 --> 00:08:58.760
+let's see.
+
+00:08:58.760 --> 00:09:01.130
+Let's give this
+input text an ID.
+
+00:09:01.130 --> 00:09:06.590
+So we'll say ID
+user or something.
+
+00:09:06.590 --> 00:09:12.070
+So we'll say user name
+equals this.$ user.value.
+
+00:09:12.070 --> 00:09:18.160
+And then we'll say
+this.dispatch signupWithTimeout,
+
+00:09:18.160 --> 00:09:20.600
+and we'll pass in that username.
+
+00:09:20.600 --> 00:09:22.360
+Now, we need to also
+make sure that we
+
+00:09:22.360 --> 00:09:25.870
+are mixing in the correct
+behaviors for this element.
+
+00:09:25.870 --> 00:09:29.350
+So we empower it with
+cool Redux abilities.
+
+00:09:29.350 --> 00:09:32.380
+So we'll say behaviors.
+
+00:09:32.380 --> 00:09:34.360
+I'm so going to
+spell this wrong.
+
+00:09:34.360 --> 00:09:34.930
+There we go.
+
+00:09:34.930 --> 00:09:36.610
+Behaviors.
+
+00:09:36.610 --> 00:09:39.166
+We want to make sure that
+we put in the ReduxBehavior.
+
+00:09:39.166 --> 00:09:40.790
+I think it's just
+called ReduxBehavior.
+
+00:09:40.790 --> 00:09:42.248
+Let's check our
+store really quick.
+
+00:09:42.248 --> 00:09:44.035
+So ReduxBehavior and
+AsyncActionsBehavior.
+
+00:09:44.035 --> 00:09:45.618
+I'm going to copy
+both these so that I
+
+00:09:45.618 --> 00:09:48.444
+don't make any typos here.
+
+00:09:48.444 --> 00:09:49.360
+So we'll drop that in.
+
+00:09:49.360 --> 00:09:51.036
+We'll say want ReduxBehavior.
+
+00:09:51.036 --> 00:09:55.150
+I'll say I want
+AsyncActionsBehavior.
+
+00:09:55.150 --> 00:09:57.220
+So now what this
+has done is if you
+
+00:09:57.220 --> 00:10:01.120
+watched the previous episode,
+we actually gave our action
+
+00:10:01.120 --> 00:10:03.730
+dispatching element
+an actions object,
+
+00:10:03.730 --> 00:10:05.140
+like a properties object.
+
+00:10:05.140 --> 00:10:07.600
+In this case, though, we're
+just sharing that because we've
+
+00:10:07.600 --> 00:10:09.550
+got that AsyncActionsBehavior.
+
+00:10:09.550 --> 00:10:12.500
+And we've already defined
+the actions object there.
+
+00:10:12.500 --> 00:10:15.020
+So that's just going to get
+shared with this component.
+
+00:10:15.020 --> 00:10:16.390
+So it can just call dispatch.
+
+00:10:16.390 --> 00:10:19.460
+It can reference this
+signupWithTimeout action
+
+00:10:19.460 --> 00:10:20.110
+creator.
+
+00:10:20.110 --> 00:10:23.320
+And then it will do
+all this work for us.
+
+00:10:23.320 --> 00:10:26.470
+So I think that this
+looks good so far.
+
+00:10:26.470 --> 00:10:29.020
+Now, the next thing
+I want to do is
+
+00:10:29.020 --> 00:10:31.150
+I want to create another
+element to just display
+
+00:10:31.150 --> 00:10:33.657
+the state as it's being
+updated inside of our app.
+
+00:10:33.657 --> 00:10:35.740
+So I'm going to create
+another element just called
+
+00:10:35.740 --> 00:10:36.820
+notification bar.
+
+00:10:36.820 --> 00:10:38.965
+It says notificationbar.html.
+
+00:10:38.965 --> 00:10:41.215
+Just like the last one, we're
+going to import Polymer.
+
+00:10:41.215 --> 00:10:43.990
+And we're going to
+import the redux store.
+
+00:10:43.990 --> 00:10:45.310
+And start to stub this one out.
+
+00:10:45.310 --> 00:10:49.941
+So we'll say notification bar.
+
+00:10:49.941 --> 00:10:53.890
+And this one is actually
+going to have some properties.
+
+00:10:53.890 --> 00:10:56.980
+So properties.
+
+00:10:56.980 --> 00:10:59.740
+And these are going to be
+coming from our redux store.
+
+00:10:59.740 --> 00:11:01.750
+So the first property
+is going to just
+
+00:11:01.750 --> 00:11:05.282
+be loading type Boolean.
+
+00:11:05.282 --> 00:11:07.240
+And then remember from
+the last episode the way
+
+00:11:07.240 --> 00:11:09.156
+that we reference something
+in the redux store
+
+00:11:09.156 --> 00:11:10.790
+is we used this
+statePath property.
+
+00:11:10.790 --> 00:11:12.460
+So statePath.
+
+00:11:12.460 --> 00:11:15.370
+In this case, because it's like
+right on the root store object,
+
+00:11:15.370 --> 00:11:17.110
+we can just say the
+statePath is loading.
+
+00:11:17.110 --> 00:11:22.810
+But again, if it was nested,
+if it was a foo.bar.loading,
+
+00:11:22.810 --> 00:11:25.720
+we could reference it
+this way using dots.
+
+00:11:25.720 --> 00:11:28.030
+But we're just going
+to say loading.
+
+00:11:28.030 --> 00:11:31.060
+And we're also going
+to say the username is
+
+00:11:31.060 --> 00:11:32.210
+going to be passed in.
+
+00:11:32.210 --> 00:11:34.660
+So that is just
+going to be a string.
+
+00:11:34.660 --> 00:11:36.250
+And again, the
+statePath for that
+
+00:11:36.250 --> 00:11:38.949
+will just be the username
+right on the root object there.
+
+00:11:38.949 --> 00:11:40.990
+And so I'm just going to
+do this quick and dirty.
+
+00:11:40.990 --> 00:11:44.614
+I'm not going to do a bunch
+of elaborate checks or guards
+
+00:11:44.614 --> 00:11:46.780
+or anything about things
+being undefined or whatnot.
+
+00:11:46.780 --> 00:11:48.564
+I just want to demonstrate
+how this works.
+
+00:11:48.564 --> 00:11:50.230
+So I'm going to write
+two templates, one
+
+00:11:50.230 --> 00:11:52.438
+that displays a loading
+message and one that displays
+
+00:11:52.438 --> 00:11:55.090
+the username just
+assuming that everything
+
+00:11:55.090 --> 00:11:57.061
+works and is fine and dandy.
+
+00:11:57.061 --> 00:11:59.560
+If it doesn't, though, inside
+of sign-up-form, for instance,
+
+00:11:59.560 --> 00:12:00.970
+you could have--
+
+00:12:00.970 --> 00:12:05.200
+or sorry, inside of this
+instant actions behavior here,
+
+00:12:05.200 --> 00:12:07.731
+signupWithTimeout, you could
+have error handling inside
+
+00:12:07.731 --> 00:12:08.230
+of here.
+
+00:12:08.230 --> 00:12:10.840
+You could dispatch an error
+state action or something
+
+00:12:10.840 --> 00:12:11.590
+like that as well.
+
+00:12:11.590 --> 00:12:13.450
+This is where you
+would do that work.
+
+00:12:13.450 --> 00:12:16.170
+But in our case, we're just
+going to keep it pretty simple.
+
+00:12:16.170 --> 00:12:19.250
+I'm going to make a
+couple dom-if templates.
+
+00:12:19.250 --> 00:12:26.500
+So I say template is
+dom-if if we are loading.
+
+00:12:26.500 --> 00:12:28.560
+Then we're just going to
+have a little paragraph.
+
+00:12:28.560 --> 00:12:28.900
+Whoa.
+
+00:12:28.900 --> 00:12:30.220
+That is way more
+than a paragraph.
+
+00:12:30.220 --> 00:12:31.928
+We'll just have a
+little paragraph there.
+
+00:12:31.928 --> 00:12:32.830
+There we go.
+
+00:12:32.830 --> 00:12:36.370
+That says loading dot dot dot.
+
+00:12:36.370 --> 00:12:40.300
+And then we'll drop
+in another template.
+
+00:12:40.300 --> 00:12:47.920
+Is dom-if if we have a username.
+
+00:12:47.920 --> 00:12:50.200
+Drop in another paragraph.
+
+00:12:50.200 --> 00:12:55.210
+And we'll just say
+welcome username.
+
+00:12:55.210 --> 00:12:56.500
+Like that.
+
+00:12:56.500 --> 00:12:58.834
+So again, I'm not doing a
+bunch of fancy error checking
+
+00:12:58.834 --> 00:12:59.750
+or anything like that.
+
+00:12:59.750 --> 00:13:01.700
+But I just want to demonstrate
+how this thing works.
+
+00:13:01.700 --> 00:13:03.020
+Let's go back to our index file.
+
+00:13:03.020 --> 00:13:04.660
+We're going to uncomment
+these elements.
+
+00:13:04.660 --> 00:13:06.640
+We're going to make sure
+notification bar is in.
+
+00:13:06.640 --> 00:13:08.473
+We're going to make
+sure sign-up-form is in.
+
+00:13:08.473 --> 00:13:10.894
+We'll make sure we've got
+both of them down in the body.
+
+00:13:10.894 --> 00:13:13.060
+And then note here in my
+script tags what I'm doing.
+
+00:13:13.060 --> 00:13:15.150
+I'm pulling in web
+components like JS.
+
+00:13:15.150 --> 00:13:16.330
+I'm pulling in redux.
+
+00:13:16.330 --> 00:13:19.430
+And I'm pulling in Redux Thunk.
+
+00:13:19.430 --> 00:13:20.950
+Remember to pull
+this in as well.
+
+00:13:20.950 --> 00:13:22.780
+Don't wire all of
+this up and then
+
+00:13:22.780 --> 00:13:24.620
+be like, why the heck
+is it not working?
+
+00:13:24.620 --> 00:13:27.357
+So make sure you pull
+in Redux Thunk as well.
+
+00:13:27.357 --> 00:13:29.190
+And now I think we've
+got everything set up.
+
+00:13:30.310 --> 00:13:32.310
+Let's go over here
+and refresh the page.
+
+00:13:32.310 --> 00:13:35.500
+I'll zoom this in
+so you can see it.
+
+00:13:35.500 --> 00:13:37.880
+So I'll open the console
+in case something explodes.
+
+00:13:37.880 --> 00:13:40.340
+That's always good to
+see if that happens.
+
+00:13:40.340 --> 00:13:41.930
+So what we want to
+happen is someone's
+
+00:13:41.930 --> 00:13:43.270
+going to type in their username.
+
+00:13:43.270 --> 00:13:44.436
+They're going click Sign Up.
+
+00:13:44.436 --> 00:13:46.240
+It'll put the app
+in a loading state.
+
+00:13:46.240 --> 00:13:47.562
+And then for three seconds--
+
+00:13:47.562 --> 00:13:49.270
+because we got that
+setTimeout in there--
+
+00:13:49.270 --> 00:13:50.800
+it'll just say loading.
+
+00:13:50.800 --> 00:13:53.500
+And then eventually, it'll
+come back and it'll say welcome
+
+00:13:53.500 --> 00:13:55.240
+and whatever username we type.
+
+00:13:55.240 --> 00:13:59.090
+So we'll say, put in Bobdod.
+
+00:13:59.090 --> 00:13:59.590
+Bobdod.
+
+00:13:59.590 --> 00:14:00.310
+There we go.
+
+00:14:00.310 --> 00:14:01.570
+Sign Up.
+
+00:14:01.570 --> 00:14:03.240
+And nothing happens.
+
+00:14:03.240 --> 00:14:04.420
+It's totally broken.
+
+00:14:04.420 --> 00:14:06.160
+Where did we go wrong?
+
+00:14:06.160 --> 00:14:06.680
+Oh.
+
+00:14:06.680 --> 00:14:07.180
+Let's see.
+
+00:14:07.180 --> 00:14:10.590
+So the this.dispatch.
+signupWithTimeout.
+
+00:14:10.590 --> 00:14:12.940
+Username.
+
+00:14:12.940 --> 00:14:13.630
+So let's see.
+
+00:14:13.630 --> 00:14:15.796
+Let's just make sure that
+this is even being called.
+
+00:14:15.796 --> 00:14:17.230
+So we'll log username.
+
+00:14:17.230 --> 00:14:19.920
+Make sure that's being called.
+
+00:14:19.920 --> 00:14:21.741
+So Bob.
+
+00:14:21.741 --> 00:14:22.240
+Sign Up.
+
+00:14:22.240 --> 00:14:22.480
+OK.
+
+00:14:22.480 --> 00:14:23.470
+That part's working.
+
+00:14:23.470 --> 00:14:24.520
+Right.
+
+00:14:24.520 --> 00:14:26.920
+Let's make sure in
+our redux store.
+
+00:14:26.920 --> 00:14:29.310
+Actions, signupWithTimeout.
+
+00:14:29.310 --> 00:14:31.570
+Oh, oh, oh.
+
+00:14:31.570 --> 00:14:32.500
+I knew it.
+
+00:14:32.500 --> 00:14:35.650
+So our notification
+bar here, I totally
+
+00:14:35.650 --> 00:14:38.940
+forgot to mix in the behaviors.
+
+00:14:38.940 --> 00:14:39.940
+I always do this.
+
+00:14:39.940 --> 00:14:43.060
+So I want to pull in
+this ReduxBehavior.
+
+00:14:43.060 --> 00:14:45.190
+It does not need the
+AsyncActionsBehavior
+
+00:14:45.190 --> 00:14:47.070
+because it's not
+dispatching any actions.
+
+00:14:47.070 --> 00:14:50.250
+It's just going to be
+displaying whatever we type in.
+
+00:14:50.250 --> 00:14:52.180
+So let's try this again.
+
+00:14:52.180 --> 00:14:54.160
+So we'll say Bobdod.
+
+00:14:54.160 --> 00:14:55.000
+Say Sign Up.
+
+00:14:55.000 --> 00:14:56.140
+It says loading.
+
+00:14:56.140 --> 00:14:58.570
+Tick, tick, tick,
+tick, tick, tick boom.
+
+00:14:58.570 --> 00:14:59.986
+Welcome Bobdod.
+
+00:14:59.986 --> 00:15:00.860
+So there you have it.
+
+00:15:00.860 --> 00:15:04.870
+That is a very easy way to
+add asynchronous actions
+
+00:15:04.870 --> 00:15:07.362
+to your Redux Polymer app.
+
+00:15:07.362 --> 00:15:09.820
+I'll include some links down
+in the show note for some more
+
+00:15:09.820 --> 00:15:12.880
+information on Redux
+Thunk, because it's cool,
+
+00:15:12.880 --> 00:15:15.060
+but it's also another
+big topic that
+
+00:15:15.060 --> 00:15:17.440
+is outside of the scope for
+us to explain in this show.
+
+00:15:17.440 --> 00:15:18.850
+But I'll definitely give
+you some reading material
+
+00:15:18.850 --> 00:15:20.385
+so you can learn more about it.
+
+00:15:20.385 --> 00:15:21.760
+As always, if you
+have questions,
+
+00:15:21.760 --> 00:15:24.100
+you can leave them for
+me down in the comments
+
+00:15:24.100 --> 00:15:26.490
+or hit me up on a social
+network of your choosing
+
+00:15:26.490 --> 00:15:27.925
+at hashtag #AskPolymer.
+
+00:15:27.925 --> 00:15:30.132
+And as always, thank you
+so much for watching.
+
+00:15:30.132 --> 00:15:31.090
+I'll see you next time.
+
+00:15:31.090 --> 00:15:31.450
+Hey, folks.
+
+00:15:31.450 --> 00:15:31.780
+What's up?
+
+00:15:31.780 --> 00:15:32.420
+It is Rob.
+
+00:15:32.420 --> 00:15:34.253
+Thank you so much for
+watching this episode.
+
+00:15:34.253 --> 00:15:36.700
+If you'd like to see some
+more, we got some over there
+
+00:15:36.700 --> 00:15:37.375
+in the playlist.
+
+00:15:37.375 --> 00:15:39.310
+And as always, you can
+click the little Subscribe
+
+00:15:39.310 --> 00:15:41.110
+button to keep getting
+content every time
+
+00:15:41.110 --> 00:15:42.360
+we push it up to the channel.
+
+00:15:42.360 --> 00:15:45.000
+Again, thank you so
+much for watching.
+

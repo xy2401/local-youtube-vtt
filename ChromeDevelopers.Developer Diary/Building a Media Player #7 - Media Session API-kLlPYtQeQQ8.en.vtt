@@ -1,0 +1,358 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.050
+PAUL LEWIS: Right, let's have
+a little chat about a brand
+
+00:00:03.050 --> 00:00:05.750
+new API that's just coming
+out on the platform called
+
+00:00:05.750 --> 00:00:08.810
+the Media Session API.
+
+00:00:08.810 --> 00:00:10.460
+I heard about it--
+
+00:00:10.460 --> 00:00:12.920
+when I started doing this
+up, it was mentioned to me
+
+00:00:12.920 --> 00:00:15.380
+by a couple of the
+Chrome engineers.
+
+00:00:15.380 --> 00:00:17.270
+But Francois, who's
+on my team-- there's
+
+00:00:17.270 --> 00:00:21.110
+a brilliant Google
+web developer's update
+
+00:00:21.110 --> 00:00:25.280
+where he explains in complete
+detail about how to set up
+
+00:00:25.280 --> 00:00:26.810
+the Media Sessions API.
+
+00:00:26.810 --> 00:00:28.177
+So check the notes below.
+
+00:00:28.177 --> 00:00:29.760
+We're going to pop
+in a link for that.
+
+00:00:29.760 --> 00:00:31.801
+But I will just show you
+briefly what it actually
+
+00:00:31.801 --> 00:00:35.900
+looks like in the context of
+the app on the iPhone here.
+
+00:00:35.900 --> 00:00:38.180
+In fact, because you
+probably can't see it,
+
+00:00:38.180 --> 00:00:41.420
+let's switch across to
+the direct screen cam.
+
+00:00:41.420 --> 00:00:42.195
+There you go.
+
+00:00:42.195 --> 00:00:43.820
+That's what it looks
+like on the phone.
+
+00:00:43.820 --> 00:00:46.560
+So it's going to start
+playing a video like this.
+
+00:00:46.560 --> 00:00:49.910
+La la la, you see that if
+I swipe down from the top,
+
+00:00:49.910 --> 00:00:54.140
+we actually get a notification,
+which has an icon here,
+
+00:00:54.140 --> 00:00:57.544
+and it has Play and Rewind
+and Fast-forward buttons.
+
+00:00:57.544 --> 00:00:59.210
+And you get to configure
+those yourself.
+
+00:00:59.210 --> 00:01:01.680
+In fact, let me go into
+another one of these videos
+
+00:01:01.680 --> 00:01:04.760
+where I think I've actually set
+up to load some custom album
+
+00:01:04.760 --> 00:01:06.470
+art as well.
+
+00:01:06.470 --> 00:01:08.420
+So there's me and Jake.
+
+00:01:08.420 --> 00:01:11.000
+And you can see here, now we've
+got a custom album art, which
+
+00:01:11.000 --> 00:01:12.470
+is the picture of Jake.
+
+00:01:12.470 --> 00:01:15.500
+And the previous-- and next the
+Fast-forward and Rewind buttons
+
+00:01:15.500 --> 00:01:19.334
+are actually set to be Skip
+Forward 30 and Go Back 30.
+
+00:01:19.334 --> 00:01:21.250
+So I should be able to
+tap that and go forward
+
+00:01:21.250 --> 00:01:22.691
+30, which you can see there.
+
+00:01:22.691 --> 00:01:24.440
+Oh, it's just skipped
+it right to the end.
+
+00:01:24.440 --> 00:01:25.366
+Whoops a daisy.
+
+00:01:25.366 --> 00:01:26.490
+But I can replay the video.
+
+00:01:26.490 --> 00:01:27.087
+Don't worry.
+
+00:01:27.087 --> 00:01:29.420
+The other thing that actually
+does, which I really like,
+
+00:01:29.420 --> 00:01:31.880
+is if I turn off the screen
+and then on again, you actually
+
+00:01:31.880 --> 00:01:33.529
+see that the picture,
+the album art,
+
+00:01:33.529 --> 00:01:35.820
+is actually the picture for
+my phone in the background.
+
+00:01:35.820 --> 00:01:37.652
+That is very exciting, isn't it?
+
+00:01:37.652 --> 00:01:40.110
+So let me show you a little
+bit as well, since we're here--
+
+00:01:40.110 --> 00:01:42.740
+let me show you a
+little bit of the code.
+
+00:01:42.740 --> 00:01:43.950
+It's very straightforward.
+
+00:01:43.950 --> 00:01:46.460
+We have a quick check, whether
+we support the media session
+
+00:01:46.460 --> 00:01:50.740
+API, which is basically
+looking for-- let
+
+00:01:50.740 --> 00:01:51.960
+me show you, actually.
+
+00:01:51.960 --> 00:01:54.710
+It is just simply looking for
+Media Session in Navigator.
+
+00:01:54.710 --> 00:01:57.020
+And if we have Media
+Session in Navigator,
+
+00:01:57.020 --> 00:02:00.410
+then we consider ourselves
+having the Media Session API,
+
+00:02:00.410 --> 00:02:04.220
+and da-ding, da-ding, what
+we do is we say Media--
+
+00:02:04.220 --> 00:02:06.350
+Navigator.mediasession.metadata,
+and then we
+
+00:02:06.350 --> 00:02:10.490
+create one of these new
+media metadata thingamajigs.
+
+00:02:10.490 --> 00:02:11.769
+Very exciting.
+
+00:02:11.769 --> 00:02:13.310
+[? Easlin ?] doesn't
+like it, doesn't
+
+00:02:13.310 --> 00:02:14.309
+think it's a real thing.
+
+00:02:14.309 --> 00:02:15.680
+It is a real thing.
+
+00:02:15.680 --> 00:02:16.700
+You can totally use it.
+
+00:02:16.700 --> 00:02:19.790
+And you give it things like the
+title, the album, the artwork.
+
+00:02:19.790 --> 00:02:22.430
+I've only set the 512 and
+the 256, but very much
+
+00:02:22.430 --> 00:02:25.550
+like your manifest files
+for progressive web apps,
+
+00:02:25.550 --> 00:02:27.740
+you can set as many
+of these as you need
+
+00:02:27.740 --> 00:02:30.110
+and the user agent will
+choose whichever one it thinks
+
+00:02:30.110 --> 00:02:32.530
+makes the most sense for
+the device that it's on.
+
+00:02:32.530 --> 00:02:34.729
+And it will upscale and
+downscale as necessary.
+
+00:02:34.729 --> 00:02:36.770
+But I currently am just
+letting a couple of them.
+
+00:02:36.770 --> 00:02:39.680
+I may need more as time goes by.
+
+00:02:39.680 --> 00:02:42.440
+And then afterwards, after
+we've set up the metadata,
+
+00:02:42.440 --> 00:02:44.420
+we set some action
+handlers for things
+
+00:02:44.420 --> 00:02:46.430
+like the play, the pause,
+the seat backwards,
+
+00:02:46.430 --> 00:02:48.260
+and the seat forwards.
+
+00:02:48.260 --> 00:02:51.170
+The thing to bear in mind
+here is that any that you set
+
+00:02:51.170 --> 00:02:53.747
+will have the buttons
+appear in the notification.
+
+00:02:53.747 --> 00:02:55.830
+If you don't set one,
+because there are other ones
+
+00:02:55.830 --> 00:02:57.237
+you can set as well--
+
+00:02:57.237 --> 00:02:59.695
+I forget which ones they are,
+but check out Francois' post.
+
+00:02:59.695 --> 00:03:02.319
+He explains the
+whole kit caboodle.
+
+00:03:02.319 --> 00:03:03.860
+Any that you don't
+set, won't appear.
+
+00:03:03.860 --> 00:03:07.340
+Any that you do set, will
+appear in the notification.
+
+00:03:07.340 --> 00:03:10.340
+And then somebody can
+control your stuff
+
+00:03:10.340 --> 00:03:13.730
+from the lock screen, or by
+just dragging down from the top.
+
+00:03:13.730 --> 00:03:15.030
+All very good, isn't it, that?
+
+00:03:15.030 --> 00:03:17.540
+And very straightforward
+code to be writing.
+
+00:03:17.540 --> 00:03:20.180
+So a brilliant little
+progressive enhancement thing
+
+00:03:20.180 --> 00:03:25.730
+that you can choke on, and that
+I have choked on my media app.
+
+00:03:25.730 --> 00:03:26.440
+Cool!
+
+00:03:26.440 --> 00:03:28.427
+Toodaloo!
+
+00:03:28.427 --> 00:03:29.760
+Hey, folks, thanks for watching.
+
+00:03:29.760 --> 00:03:31.760
+Don't forget that there
+is more content that you
+
+00:03:31.760 --> 00:03:33.637
+can find kind of over here-ish.
+
+00:03:33.637 --> 00:03:35.970
+And if you want to subscribe,
+there's probably a button,
+
+00:03:35.970 --> 00:03:37.700
+I don't know, maybe there?
+
+00:03:37.700 --> 00:03:38.980
+Maybe somewhere around there.
+
+00:03:38.980 --> 00:03:40.600
+Click that if you've
+not done that.
+
+00:03:40.600 --> 00:03:42.450
+Brilliant!
+

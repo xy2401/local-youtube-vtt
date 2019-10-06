@@ -1,0 +1,768 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:02.810
+[music]
+
+00:00:13.120 --> 00:00:15.700
+Hello and welcome to section 5
+
+00:00:15.700 --> 00:00:19.200
+of lesson 2. Here we're going to look at the
+various
+
+00:00:19.200 --> 00:00:24.250
+different intermediate operations that
+you can use when processing a stream. As
+
+00:00:24.250 --> 00:00:25.869
+you remember we talked about this
+
+00:00:25.869 --> 00:00:29.480
+earlier in the lesson, how an intermediate operation
+
+00:00:29.480 --> 00:00:32.759
+takes as input a stream and generates as
+output a
+
+00:00:32.759 --> 00:00:36.730
+sream. A stream,
+
+00:00:36.730 --> 00:00:40.700
+as we've already found out
+provides a sequence of
+
+00:00:40.700 --> 00:00:44.699
+elements and we can't process that
+either sequentially
+
+00:00:44.699 --> 00:00:47.809
+or in parallel. A lot of the
+
+00:00:47.809 --> 00:00:51.249
+operations that we will need to perform
+on that stream
+
+00:00:51.249 --> 00:00:54.249
+use parameters which are functional
+interfaces
+
+00:00:54.249 --> 00:00:58.010
+and that means that we can use Lambda
+expressions to define how
+
+00:00:58.010 --> 00:01:02.949
+we want to do the processing. The method
+itself tells us what we want to do in
+
+00:01:02.949 --> 00:01:06.750
+the Lambda expression tells a method how
+to do that
+
+00:01:06.750 --> 00:01:11.650
+and as we'll see with examples as we go
+through it gives us that separation
+
+00:01:11.650 --> 00:01:16.140
+of concerns in terms of how we actually
+process the elements that we have
+
+00:01:16.140 --> 00:01:19.470
+in our stream. One very important thing is
+that
+
+00:01:19.470 --> 00:01:24.280
+the way that we handle the objects that
+are created in the stream 
+
+00:01:24.280 --> 00:01:28.650
+and used in the stream is we must not modify
+them. So we can create new elements
+
+00:01:28.650 --> 00:01:32.680
+for the output stream that's not a
+problem, but you mustn't modify the elements
+
+00:01:32.680 --> 00:01:36.250
+of the stream otherwise we'll get a
+ConcurrentModificationException.
+
+00:01:36.250 --> 00:01:39.900
+Very often these things are
+typically stateless
+
+00:01:39.900 --> 00:01:43.780
+in terms of the approach to take because
+that is functional programming,
+
+00:01:43.780 --> 00:01:47.340
+we don't want to introduce any state because
+that would then
+
+00:01:47.340 --> 00:01:51.450
+break the rules we have for functional
+programming. We can
+
+00:01:51.450 --> 00:01:55.740
+change streams from sequential to parallel
+and we can also go back the other way, so we
+
+00:01:55.740 --> 00:01:59.770
+can create parallel Stream and make it
+sequential or we can take sequential stream
+
+00:01:59.770 --> 00:02:03.520
+and make parallel. All processing in the
+pipeline
+
+00:02:03.520 --> 00:02:06.660
+is done either in sequentially or in
+parallel.
+
+00:02:06.660 --> 00:02:10.289
+So whichever is the last call which
+changes the
+
+00:02:10.289 --> 00:02:14.990
+stream either sequentially or parallel will
+be the one that is used to determine
+
+00:02:14.990 --> 00:02:20.640
+all the processing in the stream. Let's
+start with
+
+00:02:20.640 --> 00:02:24.430
+filtering and mapping because we've
+already seen a couple of these used in some of
+
+00:02:24.430 --> 00:02:26.370
+the examples that we've seen so far.
+
+00:02:26.370 --> 00:02:31.800
+The first of those is distinct. What that will
+do is we'll return a stream
+
+00:02:31.800 --> 00:02:36.190
+which has no duplicate elements in it, so
+we will ensure that there are
+
+00:02:36.190 --> 00:02:40.360
+no elements that are equal. We can use
+
+00:02:40.360 --> 00:02:44.000
+filter and that will take an argument,
+which is a predicate;
+
+00:02:44.000 --> 00:02:47.410
+We've seen this used already where what we
+want to do
+
+00:02:47.410 --> 00:02:51.450
+is to identify only the elements on the
+input stream
+
+00:02:51.450 --> 00:02:55.140
+that we want to pass to the output stream.
+The predicate
+
+00:02:55.140 --> 00:02:58.880
+will provide a method which returns a
+boolean
+
+00:02:58.880 --> 00:03:02.070
+and if the element that's passes to that
+
+00:03:02.070 --> 00:03:05.090
+method returns true it's added to the
+output stream, if it
+
+00:03:05.090 --> 00:03:10.170
+returns false it ignored. As again with
+the example used earlier where we had
+
+00:03:10.170 --> 00:03:13.450
+all the students who graduated in year
+2011; thats a
+
+00:03:13.450 --> 00:03:17.150
+use of a filter  with the predicate which compares
+the graduation year to
+
+00:03:17.150 --> 00:03:20.690
+2011. Map takes
+
+00:03:20.690 --> 00:03:23.799
+a function and what it will do is it
+will take each
+
+00:03:23.799 --> 00:03:27.380
+element on the input stream use it as
+
+00:03:27.380 --> 00:03:31.209
+a parameter to the function and place
+the
+
+00:03:31.209 --> 00:03:34.630
+result of that function onto the output
+stream.
+
+00:03:34.630 --> 00:03:37.769
+So it's very simple way of mapping from
+
+00:03:37.769 --> 00:03:41.420
+values on the input stream to values on the output stream.
+
+00:03:41.420 --> 00:03:44.280
+As we've already seen there is the
+
+00:03:44.280 --> 00:03:49.180
+requirement to handle primitive types as
+well as object representations.
+
+00:03:49.180 --> 00:03:52.400
+So there are three versions of that map
+method:
+
+00:03:52.400 --> 00:03:56.510
+mapToInt, mapToDouble, mapToLong that
+will create streams of
+
+00:03:56.510 --> 00:04:03.000
+primitive values rather than objects.
+Flat Maps.
+
+00:04:03.000 --> 00:04:07.630
+so I talked about map and I said
+that the way that
+
+00:04:07.630 --> 00:04:11.420
+map works is that we have a function and
+that function
+
+00:04:11.420 --> 00:04:14.570
+will take single value as input
+
+00:04:14.570 --> 00:04:18.459
+and generate a single value as output, so
+the idea is that
+
+00:04:18.459 --> 00:04:22.390
+each element on the input stream is used
+as a parameter to the
+
+00:04:22.390 --> 00:04:27.160
+function and the result is placed on the output stream.
+So we have a one-to-one
+
+00:04:27.160 --> 00:04:30.840
+mapping. There are certain situations
+where
+
+00:04:30.840 --> 00:04:34.480
+each elements on the input stream will
+create
+
+00:04:34.480 --> 00:04:39.440
+its own stream of results. What we get in
+that case
+
+00:04:39.440 --> 00:04:42.590
+is a stream of
+
+00:04:42.590 --> 00:04:47.250
+streams, where each element creates its own
+stream and we end up with a stream
+
+00:04:47.250 --> 00:04:51.040
+of stream. That is not what we need;
+
+00:04:51.040 --> 00:04:55.110
+we need a single stream as the output. So in
+that case
+
+00:04:55.110 --> 00:04:59.110
+we use flapMap. What flatMap will do is
+take
+
+00:04:59.110 --> 00:05:02.690
+the input stream, apply whatever one-to-many
+
+00:05:02.690 --> 00:05:07.750
+mapping is required so each element in
+the input stream can create multiple
+
+00:05:07.750 --> 00:05:10.760
+elements and those will then be placed
+on the output
+
+00:05:10.760 --> 00:05:14.340
+stream and they will be concatenated
+together so that we have
+
+00:05:14.340 --> 00:05:18.230
+a single output stream. But the size of the
+output stream
+
+00:05:18.230 --> 00:05:24.330
+could be different to the size of the
+input stream.
+
+00:05:24.330 --> 00:05:28.080
+Here we have an example how we can use
+flatMap.
+
+00:05:28.080 --> 00:05:32.240
+In this case what we're trying to do is
+to extract words
+
+00:05:32.240 --> 00:05:35.280
+from file which contains lines of text.
+
+00:05:35.280 --> 00:05:38.400
+To do this what I've got here is
+
+00:05:38.400 --> 00:05:41.880
+BufferedReader, which are connected to the
+file and then
+
+00:05:41.880 --> 00:05:45.750
+use the lines method of that, which
+remembers a new method now
+
+00:05:45.750 --> 00:05:49.220
+which returns a stream of strings,
+
+00:05:49.220 --> 00:05:53.530
+which are the lines of text from the BufferedReader.
+We pass that
+
+00:05:53.530 --> 00:05:57.520
+into flatMap and flatMap use Lambda
+expression
+
+00:05:57.520 --> 00:06:01.360
+to determine how we're going to create
+this stream of streams,
+
+00:06:01.360 --> 00:06:05.659
+which will be concatenated into a single
+stream. What we do here
+
+00:06:05.659 --> 00:06:09.060
+is we pass in a single parameter, which is line;
+that's the line of
+
+00:06:09.060 --> 00:06:12.639
+text from file and then we create a new stream
+
+00:06:12.639 --> 00:06:16.539
+using the of method, which is a static method on
+stream
+
+00:06:16.539 --> 00:06:22.220
+and we split the line of text we have
+using regular expression
+
+00:06:22.220 --> 00:06:26.490
+into the individual words. So we break it
+up based on spaces and tabs
+
+00:06:26.490 --> 00:06:30.500
+and we create new stream for each line
+which is a stream
+
+00:06:30.500 --> 00:06:35.030
+of words in that line. flatMap
+will then concatenate those streams
+
+00:06:35.030 --> 00:06:35.669
+together
+
+00:06:35.669 --> 00:06:39.400
+so the output stream from flatMap, will
+be
+
+00:06:39.400 --> 00:06:42.479
+all the streams words from the
+individual
+
+00:06:42.479 --> 00:06:46.370
+lines which made up the input stream. We
+can possibly
+
+00:06:46.370 --> 00:06:51.570
+filter to eliminate zero length words and
+then pass it to collect to create a list.
+
+00:06:51.570 --> 00:07:00.080
+we'll talk more about that when we talk
+about collectors in lesson 3.
+
+00:07:00.080 --> 00:07:01.860
+Yeah we want to restrict
+
+00:07:01.860 --> 00:07:05.000
+the size of a stream what
+
+00:07:05.000 --> 00:07:09.190
+we actually going to do here is use one
+or two methods. We can you skip,
+
+00:07:09.190 --> 00:07:14.550
+which will return stream, which takes the
+input stream but skips
+
+00:07:14.550 --> 00:07:17.850
+or ignores the first n
+
+00:07:17.850 --> 00:07:21.240
+elements of the input stream. Limit
+
+00:07:21.240 --> 00:07:25.360
+which also takes an argument which is a long
+return stream, which
+
+00:07:25.360 --> 00:07:29.200
+only contains the first n elements of the
+input stream.
+
+00:07:29.200 --> 00:07:32.860
+So they're kind of opposites. skip
+returns everything
+
+00:07:32.860 --> 00:07:36.300
+but the first n elements at the stream,
+limit returns
+
+00:07:36.300 --> 00:07:41.830
+only the first n elements of the stream.
+Again, if we look at an example here
+
+00:07:41.830 --> 00:07:45.310
+we've got our BufferedReader, we create a 
+
+00:07:45.310 --> 00:07:48.690
+stream source from the lines from that BufferedReader
+
+00:07:48.690 --> 00:07:52.550
+and then pass it into skip with a value 2.
+
+00:07:52.550 --> 00:07:55.830
+So that's going to do is it's going to skip
+the first
+
+00:07:55.830 --> 00:07:59.700
+two lines of the file and then pass the rest of the
+lines of the
+
+00:07:59.700 --> 00:08:03.920
+file to the next intermediate operation.
+In this case
+
+00:08:03.920 --> 00:08:07.780
+that's limit which is only going to
+return the first two
+
+00:08:07.780 --> 00:08:12.660
+elements of that input stream. The effect of
+that is
+
+00:08:12.660 --> 00:08:16.100
+we will get lines 3 and
+lines 4
+
+00:08:16.100 --> 00:08:20.040
+passed to the terminal operation, which in
+this case is collect.
+
+00:08:20.040 --> 00:08:23.380
+Now this is a good example of
+
+00:08:23.380 --> 00:08:26.820
+where the way that this is processed
+internally
+
+00:08:26.820 --> 00:08:29.980
+is optimised because, if
+
+00:08:29.980 --> 00:08:34.210
+our file had a thousand lines in it
+what's not going to happen
+
+00:08:34.210 --> 00:08:37.950
+is that the lines stream source method
+
+00:08:37.950 --> 00:08:41.640
+will read all one thousand lines in the
+file and pass
+
+00:08:41.640 --> 00:08:45.520
+all one thousand lines to skip. skip
+would then say
+
+00:08:45.520 --> 00:08:49.980
+skip past the first two and return 998 lines
+
+00:08:49.980 --> 00:08:53.320
+to limit. limit within say i only need the
+
+00:08:53.320 --> 00:08:57.250
+first two and return those first two. That
+will be very efficient
+
+00:08:57.250 --> 00:09:00.910
+so the code underneath will merge together
+those operations
+
+00:09:00.910 --> 00:09:06.390
+and identify that actually only the first
+4 lines of the file need to be read
+
+00:09:06.390 --> 00:09:08.830
+and at that point it will stop reading lines from the 
+
+00:09:08.830 --> 00:09:13.020
+file because it will reach the limit of two
+after having skipped
+
+00:09:13.020 --> 00:09:16.420
+the first two on the input stream. So
+that's
+
+00:09:16.420 --> 00:09:21.530
+a good example how we can optimize.
+Sorting and unsorting.
+
+00:09:21.530 --> 00:09:25.330
+sorted; there is a version of this
+that takes a
+
+00:09:25.330 --> 00:09:29.330
+Comparator and what that will do is it will
+take stream of
+
+00:09:29.330 --> 00:09:33.140
+elements and it will then sort them
+based on the Comparator.
+
+00:09:33.140 --> 00:09:36.350
+So if we wanted to use the Comparator
+that we had
+
+00:09:36.350 --> 00:09:39.790
+earlier in the Lambda section we could use
+the one where we
+
+00:09:39.790 --> 00:09:43.220
+return difference in length and that
+will sort the
+
+00:09:43.220 --> 00:09:47.950
+strings on the input stream by length.
+There's also a
+
+00:09:47.950 --> 00:09:51.630
+sorted method which takes no argument,
+so it doesn't
+
+00:09:51.630 --> 00:09:54.640
+take a Comparator, in which case will sort
+
+00:09:54.640 --> 00:09:57.820
+based on natural order. If there's  a stream of
+numbers it'll
+
+00:09:57.820 --> 00:10:01.630
+based on numeric order, if there's a stream of strings
+it'll sort it
+
+00:10:01.630 --> 00:10:06.900
+based on the order of strings.
+There is also an
+
+00:10:06.900 --> 00:10:10.860
+unordered method and what's this
+
+00:10:10.860 --> 00:10:14.300
+might not seem particularly useful
+because what you're essentially saying
+
+00:10:14.300 --> 00:10:14.740
+is
+
+00:10:14.740 --> 00:10:17.780
+get rid of any ordering that's in that stream.
+
+00:10:17.780 --> 00:10:21.130
+What this is actually more useful for is
+
+00:10:21.130 --> 00:10:24.610
+if you have certain operations you
+going to do
+
+00:10:24.610 --> 00:10:29.620
+then things like distinct and groupingBy
+which will deal with later on
+
+00:10:29.620 --> 00:10:33.760
+in this lesson, these actually work
+more efficiently
+
+00:10:33.760 --> 00:10:37.700
+if you have an unordered stream
+
+00:10:37.700 --> 00:10:41.380
+to work with. Really this is not
+actually changing the order,
+
+00:10:41.380 --> 00:10:44.660
+it's just changing the characteristics of
+
+00:10:44.660 --> 00:10:47.810
+the stream say that it's unordered so
+that we don't need to
+
+00:10:47.810 --> 00:10:50.970
+to do so much work internally. So that's
+one that
+
+00:10:50.970 --> 00:10:54.840
+you wouldn't typically use to change
+the functionality of your code
+
+00:10:54.840 --> 00:10:58.610
+you would use it to improve the
+efficiency. Like I say if you're using
+
+00:10:58.610 --> 00:10:59.280
+distinct
+
+00:10:59.280 --> 00:11:02.700
+or using groupingBy over a large set of data then
+
+00:11:02.700 --> 00:11:08.490
+unordered might improve the way that it
+works. Peek
+
+00:11:08.490 --> 00:11:11.280
+Observing stream elements as they go
+past.
+
+00:11:11.280 --> 00:11:14.670
+What this does is it takes the
+input stream
+
+00:11:14.670 --> 00:11:18.990
+and passes it directly to the
+output stream. So it creates the same
+
+00:11:18.990 --> 00:11:23.350
+output stream as the input stream. As it
+does that
+
+00:11:23.350 --> 00:11:27.320
+each element of the input stream is
+passed to the accept method
+
+00:11:27.320 --> 00:11:31.930
+of the consumer that's passed as a
+parameter to the peek method.
+
+00:11:31.930 --> 00:11:36.600
+As I've said before it's very important
+that the consumer does not modify
+
+00:11:36.600 --> 00:11:41.200
+the elements of the stream, so it can look at
+them, it can see what's going past,
+
+00:11:41.200 --> 00:11:45.630
+but it mustn't change them. This is the kind
+of thing that can be very useful for
+
+00:11:45.630 --> 00:11:46.380
+debugging
+
+00:11:46.380 --> 00:11:50.630
+which we'll talk about in lesson 3, 
+but it's also very useful if you want to
+
+00:11:50.630 --> 00:11:52.070
+do more than one thing
+
+00:11:52.070 --> 00:11:56.350
+with the stream, so by doing a peek if
+you say wanted to print out all the
+
+00:11:56.350 --> 00:11:57.460
+elements the stream
+
+00:11:57.460 --> 00:12:01.630
+you could do that using a peek and still
+do some other processing
+
+00:12:01.630 --> 00:12:08.900
+to find name values or whatever using other
+parts at the stream. To summarise section 5
+
+00:12:08.900 --> 00:12:09.470
+the
+
+00:12:09.470 --> 00:12:12.700
+stream interface provides you with
+the
+
+00:12:12.700 --> 00:12:15.920
+the aggregate operations on
+elements of
+
+00:12:15.920 --> 00:12:19.810
+the stream and most to the methods
+that you have,
+
+00:12:19.810 --> 00:12:23.290
+have behavior which is defined using
+
+00:12:23.290 --> 00:12:28.060
+functional interface and therefore Lambda
+expressions. This is separating out
+
+00:12:28.060 --> 00:12:31.500
+what which is the method from how,
+
+00:12:31.500 --> 00:12:35.950
+which is the Lambda expression that is
+passed as a parameter to say how you want
+
+00:12:35.950 --> 00:12:39.390
+filter, how you want to map and so on.
+
+00:12:39.390 --> 00:12:42.720
+This a very powerful range of intermediate
+operations which
+
+00:12:42.720 --> 00:12:46.580
+allows you to manipulate streams in a 
+variety of different ways,
+
+00:12:46.580 --> 00:12:49.660
+and you know everything from map, flatMap,
+
+00:12:49.660 --> 00:12:53.500
+sorting all those kinds of things and you
+can build up
+
+00:12:53.500 --> 00:12:56.660
+really quite complex processing
+
+00:12:56.660 --> 00:13:01.030
+from these more simple building blocks
+and yet still make it very readable
+
+00:13:01.030 --> 00:13:04.600
+very easy to understand and
+
+00:13:04.600 --> 00:13:06.570
+that's the end of section 5.
+

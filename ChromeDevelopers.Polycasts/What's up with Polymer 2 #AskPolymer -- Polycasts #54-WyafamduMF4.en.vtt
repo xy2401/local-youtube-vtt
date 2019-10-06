@@ -1,0 +1,1343 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.338 --> 00:00:05.990
+ROB DODSON: Hey there,
+folks, Rob here.
+
+00:00:05.990 --> 00:00:07.390
+Welcome back to the show.
+
+00:00:07.390 --> 00:00:09.510
+So it's been a while
+since we did one of these,
+
+00:00:09.510 --> 00:00:11.570
+but I thought today
+would be a good time
+
+00:00:11.570 --> 00:00:14.750
+to do another episode
+of Ask Polymer.
+
+00:00:14.750 --> 00:00:17.230
+So I went on Twitter,
+I asked folks
+
+00:00:17.230 --> 00:00:18.900
+if they had any
+questions for me,
+
+00:00:18.900 --> 00:00:21.108
+and here are some of the
+top questions that were sent
+
+00:00:21.108 --> 00:00:23.510
+in by you, the actual viewers.
+
+00:00:23.510 --> 00:00:26.250
+So first question is
+from Micho, who asks,
+
+00:00:26.250 --> 00:00:28.820
+how do I make the app-drawer
+panel automatically
+
+00:00:28.820 --> 00:00:33.260
+close when I click a
+link in my application?
+
+00:00:33.260 --> 00:00:34.710
+So that's a really
+good question.
+
+00:00:34.710 --> 00:00:36.450
+I think we actually
+maybe used to do this
+
+00:00:36.450 --> 00:00:38.234
+for you using the old
+Polymer Starter Kit,
+
+00:00:38.234 --> 00:00:40.650
+and we're not doing it now in
+the new Polymer Starter Kit.
+
+00:00:40.650 --> 00:00:43.910
+But basically what you can do
+is you can actually wire up
+
+00:00:43.910 --> 00:00:46.240
+a binding to the
+opened property,
+
+00:00:46.240 --> 00:00:49.320
+or the opened attribute
+of the drawer panel,
+
+00:00:49.320 --> 00:00:52.910
+and then you can just
+toggle that value every time
+
+00:00:52.910 --> 00:00:54.094
+the router changes the page.
+
+00:00:54.094 --> 00:00:56.260
+So that might not make sense
+when I'm just saying it
+
+00:00:56.260 --> 00:00:57.718
+like this, and what
+I'll do instead
+
+00:00:57.718 --> 00:01:00.560
+is I'll drop a link down
+in the description that
+
+00:01:00.560 --> 00:01:02.879
+has an example so you
+can just follow that.
+
+00:01:02.879 --> 00:01:04.920
+And also, I think we might
+just add this behavior
+
+00:01:04.920 --> 00:01:07.500
+to the Polymer Starter Kit,
+the one that we just rolled.
+
+00:01:07.500 --> 00:01:09.570
+Maybe expected like
+a point release
+
+00:01:09.570 --> 00:01:12.320
+soon, when we just add this in
+you don't have to wire it up
+
+00:01:12.320 --> 00:01:13.020
+yourself.
+
+00:01:13.020 --> 00:01:14.603
+So thank you for
+that question, Micho.
+
+00:01:14.603 --> 00:01:18.660
+All right, this question comes
+from Eric Bidelman, who asks,
+
+00:01:18.660 --> 00:01:20.210
+I hear Polymer 2's out.
+
+00:01:20.210 --> 00:01:21.750
+What's up with that?
+
+00:01:21.750 --> 00:01:23.720
+So yeah, maybe some
+of you have seen
+
+00:01:23.720 --> 00:01:26.670
+on Twitter and on
+the Polymer blog,
+
+00:01:26.670 --> 00:01:28.170
+we're recently
+tweeting that we have
+
+00:01:28.170 --> 00:01:31.570
+a preview branch of Polymer
+2.0 available right now.
+
+00:01:31.570 --> 00:01:33.600
+You can find that
+over on the gitHubs,
+
+00:01:33.600 --> 00:01:35.720
+and I will include a
+link to that, as well,
+
+00:01:35.720 --> 00:01:37.170
+down in the show notes.
+
+00:01:37.170 --> 00:01:40.460
+So Polymer 2, the
+main idea there is we
+
+00:01:40.460 --> 00:01:43.610
+want to get folks onto the
+new V1 versions of the web
+
+00:01:43.610 --> 00:01:44.600
+component standards.
+
+00:01:44.600 --> 00:01:47.410
+So Custom Elements
+V1, and Shadow DOM v1.
+
+00:01:47.410 --> 00:01:49.010
+The current version
+of Polymer, 1.x,
+
+00:01:49.010 --> 00:01:52.360
+is based on the old
+V0 implementations.
+
+00:01:52.360 --> 00:01:55.740
+Those shipped in Chrome, and
+Opera, and some other browsers
+
+00:01:55.740 --> 00:01:59.000
+experimented with those
+versions of the standards,
+
+00:01:59.000 --> 00:02:01.664
+but they are never going
+to be the native one
+
+00:02:01.664 --> 00:02:02.580
+that ships everywhere.
+
+00:02:02.580 --> 00:02:04.880
+Instead, after
+reworking things a bit,
+
+00:02:04.880 --> 00:02:07.320
+the browsers decided
+to make some changes,
+
+00:02:07.320 --> 00:02:09.128
+and those changes
+are in the V1 specs.
+
+00:02:09.128 --> 00:02:10.669
+So that's what's
+going to be shipping
+
+00:02:10.669 --> 00:02:11.918
+in all the different browsers.
+
+00:02:11.918 --> 00:02:14.960
+I believe Safari recently
+just shipped Shadow DOM V1,
+
+00:02:14.960 --> 00:02:16.677
+it'll be coming in
+Chrome really soon.
+
+00:02:16.677 --> 00:02:18.510
+And because there are
+some breaking changes,
+
+00:02:18.510 --> 00:02:20.920
+we needed to migrate
+Polymer as well.
+
+00:02:20.920 --> 00:02:22.420
+And the important
+thing to note here
+
+00:02:22.420 --> 00:02:26.810
+is that those breaking changes
+for the web component specs,
+
+00:02:26.810 --> 00:02:30.020
+those are probably
+set in stone now.
+
+00:02:30.020 --> 00:02:32.900
+So we don't have to worry about
+suddenly a V2 appearing out
+
+00:02:32.900 --> 00:02:36.790
+of nowhere for the web component
+specs, or anything like that.
+
+00:02:36.790 --> 00:02:38.345
+The nice thing is
+that going forward,
+
+00:02:38.345 --> 00:02:40.220
+web component should be
+backwards compatible.
+
+00:02:40.220 --> 00:02:42.303
+So yes, there are some
+breaking changes right now,
+
+00:02:42.303 --> 00:02:45.210
+but hopefully minimal pain.
+
+00:02:45.210 --> 00:02:47.070
+I wrote down a few
+things from Polymer 2
+
+00:02:47.070 --> 00:02:48.680
+that I'm really
+excited about, that I
+
+00:02:48.680 --> 00:02:49.580
+wanted to tell you all about.
+
+00:02:49.580 --> 00:02:51.380
+Stuff that I just
+think is super cool.
+
+00:02:51.380 --> 00:02:54.410
+Aside from moving over
+to the new standards,
+
+00:02:54.410 --> 00:02:56.970
+we're going to be providing
+like a backwards compatibility
+
+00:02:56.970 --> 00:02:57.470
+layer.
+
+00:02:57.470 --> 00:03:00.790
+So if you've got a bunch
+of Polymer 1 elements,
+
+00:03:00.790 --> 00:03:04.530
+and you want to try and start
+to migrate those to Polymer 2,
+
+00:03:04.530 --> 00:03:07.860
+we have the old Polymer
+constructor available to you.
+
+00:03:07.860 --> 00:03:11.160
+So you can seriously just
+do like a few small changes,
+
+00:03:11.160 --> 00:03:13.204
+and voila, you've got
+Polymer 2 elements.
+
+00:03:13.204 --> 00:03:14.870
+But the other thing
+that we're doing now
+
+00:03:14.870 --> 00:03:17.990
+is we're baking in
+support for ES6 classes.
+
+00:03:17.990 --> 00:03:20.530
+So that's something a lot
+of people really wanted.
+
+00:03:20.530 --> 00:03:22.980
+Now, the default
+and the standard
+
+00:03:22.980 --> 00:03:24.870
+encouraged way to
+build a Polymer 2
+
+00:03:24.870 --> 00:03:27.660
+element is going to be to
+actually inherit from a class.
+
+00:03:27.660 --> 00:03:29.670
+And then you've got
+all the niceties
+
+00:03:29.670 --> 00:03:32.240
+of working with ES6 there.
+
+00:03:32.240 --> 00:03:34.170
+We're getting rid of
+things like Polymer.DOM,
+
+00:03:34.170 --> 00:03:36.140
+which was always really
+confusing for folks,
+
+00:03:36.140 --> 00:03:37.960
+the whole shady DOM thing.
+
+00:03:37.960 --> 00:03:41.470
+Instead, we're going to be
+shipping a new, improved Shadow
+
+00:03:41.470 --> 00:03:42.270
+DOM polyfill.
+
+00:03:42.270 --> 00:03:45.350
+We're going to stop talking
+about local DOM, and shady DOM.
+
+00:03:45.350 --> 00:03:47.690
+all these random terms
+that never made sense.
+
+00:03:47.690 --> 00:03:49.940
+Instead we're just going to
+say, hey, it's Shadow DOM,
+
+00:03:49.940 --> 00:03:53.132
+we got a new polyfill,
+it's nice and fast.
+
+00:03:53.132 --> 00:03:55.340
+And we're making the data
+binding system a lot easier
+
+00:03:55.340 --> 00:03:56.214
+to reason about, too.
+
+00:03:56.214 --> 00:03:59.360
+So if you ever had issues where
+you would change an object
+
+00:03:59.360 --> 00:04:02.000
+inside of an array, or change
+an object's sub-property
+
+00:04:02.000 --> 00:04:04.160
+and things just
+wouldn't update, we
+
+00:04:04.160 --> 00:04:06.270
+should be fixing
+those in Polymer 2
+
+00:04:06.270 --> 00:04:08.340
+to make that just a lot
+more straightforward.
+
+00:04:08.340 --> 00:04:10.970
+So that is kind of a
+high level overview.
+
+00:04:10.970 --> 00:04:14.912
+Again, I'll include a link
+for the 2.0 preview branch
+
+00:04:14.912 --> 00:04:15.870
+down in the show notes.
+
+00:04:15.870 --> 00:04:17.369
+So you can go check
+it out yourself,
+
+00:04:17.369 --> 00:04:20.044
+read through the readme,
+and give it a test run.
+
+00:04:20.044 --> 00:04:22.210
+I'm really interested to
+hear what all of you think,
+
+00:04:22.210 --> 00:04:24.146
+so please leave some
+comments down below
+
+00:04:24.146 --> 00:04:25.270
+with your thoughts on that.
+
+00:04:25.270 --> 00:04:27.690
+So thank you Eric
+for that question.
+
+00:04:27.690 --> 00:04:28.870
+Right, next question.
+
+00:04:28.870 --> 00:04:35.120
+Sam Saccone asks, I hear you are
+a corgi, what is up with that?
+
+00:04:35.120 --> 00:04:36.170
+So yeah, that's true.
+
+00:04:36.170 --> 00:04:40.730
+My spirit animal
+actually is the corgi.
+
+00:04:40.730 --> 00:04:42.220
+Thank you for that
+question, Sam.
+
+00:04:42.220 --> 00:04:43.636
+All right, our
+next question comes
+
+00:04:43.636 --> 00:04:45.750
+from Jerry, who asks,
+how do I implement
+
+00:04:45.750 --> 00:04:48.690
+ES6 syntax with Polymer CLI?
+
+00:04:48.690 --> 00:04:54.260
+So today what you can do is
+you can use the custom build
+
+00:04:54.260 --> 00:04:57.581
+generator that we showed off, I
+think, maybe two episodes ago.
+
+00:04:57.581 --> 00:04:59.330
+I'll include a link
+down in the show notes
+
+00:04:59.330 --> 00:05:00.920
+to that particular episode.
+
+00:05:00.920 --> 00:05:03.340
+And what that does
+is it actually
+
+00:05:03.340 --> 00:05:06.430
+gives you a little escape hatch
+out of the Polymer CLI build.
+
+00:05:06.430 --> 00:05:09.540
+It lets you actually
+use the same node
+
+00:05:09.540 --> 00:05:12.120
+module that powers
+the Polymer build,
+
+00:05:12.120 --> 00:05:14.930
+but it lets you also
+hook into its lifecycle
+
+00:05:14.930 --> 00:05:16.380
+and add your own gulp tasks.
+
+00:05:16.380 --> 00:05:19.810
+One of those gulp tasks could
+be something like babel.
+
+00:05:19.810 --> 00:05:24.220
+So you could write all your
+elements using HTML imports.
+
+00:05:24.220 --> 00:05:27.080
+The Polymer build will actually
+split out the JavaScript
+
+00:05:27.080 --> 00:05:28.440
+into its own stream.
+
+00:05:28.440 --> 00:05:30.660
+You then pass that
+through babel,
+
+00:05:30.660 --> 00:05:33.650
+and then it recombines it
+all at the end for you.
+
+00:05:33.650 --> 00:05:35.980
+So that's the option
+that you could use today.
+
+00:05:35.980 --> 00:05:37.990
+However, as I
+mentioned before, we're
+
+00:05:37.990 --> 00:05:42.190
+going to be rolling out full
+blown ES6 support in Polymer 2.
+
+00:05:42.190 --> 00:05:46.399
+So if you're able to
+wait to Polymer 2 time,
+
+00:05:46.399 --> 00:05:48.190
+we might have a better
+story for you there.
+
+00:05:48.190 --> 00:05:49.660
+It might be a little
+bit easier to use.
+
+00:05:49.660 --> 00:05:52.201
+So if I was doing this today,
+I would actually probably stick
+
+00:05:52.201 --> 00:05:56.930
+with just the current Polymer 1
+syntax, and then wholesale move
+
+00:05:56.930 --> 00:05:59.967
+over to ES6 when
+Polymer 2 rolls out.
+
+00:05:59.967 --> 00:06:01.300
+Hope that answers your question.
+
+00:06:01.300 --> 00:06:02.260
+Thank you, Jerry.
+
+00:06:02.260 --> 00:06:04.550
+All right the next question
+is from Stephen who says,
+
+00:06:04.550 --> 00:06:08.170
+I'm still confused about
+how to load in third party
+
+00:06:08.170 --> 00:06:10.850
+JavaScript in my elements.
+
+00:06:10.850 --> 00:06:12.670
+So that's a question.
+
+00:06:12.670 --> 00:06:15.110
+What a lot of people do,
+I've seen two approaches.
+
+00:06:15.110 --> 00:06:17.291
+One approach would
+be, you just say, hey,
+
+00:06:17.291 --> 00:06:18.790
+I depend on this
+library, and you've
+
+00:06:18.790 --> 00:06:20.990
+got to include the script
+tag for that library
+
+00:06:20.990 --> 00:06:23.500
+before you import your elements.
+
+00:06:23.500 --> 00:06:26.220
+What I actually prefer to
+do is to take the script
+
+00:06:26.220 --> 00:06:28.700
+tag for whatever dependency
+I'm depending on,
+
+00:06:28.700 --> 00:06:32.020
+put that into its
+own HTML import,
+
+00:06:32.020 --> 00:06:35.150
+and then have my elements
+import that file.
+
+00:06:35.150 --> 00:06:37.680
+The nice thing there
+is your elements
+
+00:06:37.680 --> 00:06:39.760
+are now explicit about
+their dependency,
+
+00:06:39.760 --> 00:06:43.440
+because that link tag is up
+at the top of their definition
+
+00:06:43.440 --> 00:06:44.300
+file.
+
+00:06:44.300 --> 00:06:48.820
+And also, HTML imports will
+de-duplicate multiple requests
+
+00:06:48.820 --> 00:06:50.250
+to the same resource.
+
+00:06:50.250 --> 00:06:52.610
+So if you've got five
+elements that are all
+
+00:06:52.610 --> 00:06:54.370
+trying to import
+the same thing, it's
+
+00:06:54.370 --> 00:06:56.630
+actually going to only
+be loaded one time.
+
+00:06:56.630 --> 00:06:58.840
+So that's the approach that
+I really recommend using,
+
+00:06:58.840 --> 00:07:01.131
+that's the one that we've
+used in some of our elements,
+
+00:07:01.131 --> 00:07:02.870
+like the marked element.
+
+00:07:02.870 --> 00:07:04.860
+So yeah, hopefully that
+approach works for you.
+
+00:07:04.860 --> 00:07:06.280
+And also, I think in the
+future we're probably
+
+00:07:06.280 --> 00:07:07.655
+going to also be
+exploring things
+
+00:07:07.655 --> 00:07:11.032
+like maybe how we can
+use ES module loaders,
+
+00:07:11.032 --> 00:07:11.990
+or something like that.
+
+00:07:11.990 --> 00:07:15.600
+That's definitely in the Polymer
+2 realm of possibilities.
+
+00:07:15.600 --> 00:07:18.910
+So we might have an improved
+story there as well soon.
+
+00:07:18.910 --> 00:07:19.520
+So.
+
+00:07:19.520 --> 00:07:21.460
+yeah, thank you Stephen
+for that question.
+
+00:07:21.460 --> 00:07:23.210
+All right, next question
+comes from Thomas
+
+00:07:23.210 --> 00:07:25.680
+who asked, once all web
+component features are broadly
+
+00:07:25.680 --> 00:07:27.900
+and correctly supported
+in all major browsers,
+
+00:07:27.900 --> 00:07:30.490
+is Polymer's job done?
+
+00:07:30.490 --> 00:07:32.830
+So yes and no a little bit.
+
+00:07:32.830 --> 00:07:36.410
+Definitely the job of
+polyfilling web components
+
+00:07:36.410 --> 00:07:38.670
+is done at that
+point, which is great.
+
+00:07:38.670 --> 00:07:40.900
+We want to get rid
+of polyfills, we
+
+00:07:40.900 --> 00:07:42.900
+want to get rid of any
+sort of inconsistencies
+
+00:07:42.900 --> 00:07:46.410
+that they introduce and just
+be doing everything native.
+
+00:07:46.410 --> 00:07:49.860
+But web component standards
+are inherently low level,
+
+00:07:49.860 --> 00:07:51.550
+and that's by design.
+
+00:07:51.550 --> 00:07:55.050
+They're supposed to give
+developers maximum flexibility.
+
+00:07:55.050 --> 00:07:58.000
+However, that also means that it
+can require a fair bit of code
+
+00:07:58.000 --> 00:08:00.509
+to create your own elements,
+stamp out your Shadow DOM,
+
+00:08:00.509 --> 00:08:02.800
+put your templates inside of
+them, and stuff like that.
+
+00:08:02.800 --> 00:08:05.850
+So Polymer will probably always
+be around in some fashion
+
+00:08:05.850 --> 00:08:08.590
+to offer this sort of
+helper support, right?
+
+00:08:08.590 --> 00:08:11.247
+Sometimes we refer to it as
+like sugaring the native web
+
+00:08:11.247 --> 00:08:12.080
+component standards.
+
+00:08:12.080 --> 00:08:14.880
+Just making you essentially
+much more efficient.
+
+00:08:14.880 --> 00:08:18.520
+So that has kind of always been
+the direction for the library.
+
+00:08:18.520 --> 00:08:20.930
+We wanted those polyfills
+to sort of evaporate away,
+
+00:08:20.930 --> 00:08:23.480
+and then you're just left with
+this really nice clean helper
+
+00:08:23.480 --> 00:08:25.880
+library that just makes you
+more efficient as you're
+
+00:08:25.880 --> 00:08:27.020
+building components.
+
+00:08:27.020 --> 00:08:29.064
+So thank you, Thomas,
+for that question.
+
+00:08:29.064 --> 00:08:30.480
+All right, our
+next question comes
+
+00:08:30.480 --> 00:08:31.976
+from a user on
+Twitter named GBX,
+
+00:08:31.976 --> 00:08:33.559
+who says, how should
+web components be
+
+00:08:33.559 --> 00:08:37.580
+written to let applications
+override their default locales?
+
+00:08:37.580 --> 00:08:41.080
+So I am not personally
+an expert on localization
+
+00:08:41.080 --> 00:08:45.050
+or internationalization,
+I can't even say it.
+
+00:08:45.050 --> 00:08:46.970
+L10n, i18n.
+
+00:08:46.970 --> 00:08:49.370
+There we go, that's the
+easier way to go about it.
+
+00:08:49.370 --> 00:08:51.450
+My teammate, Monica
+Dinculescu has actually
+
+00:08:51.450 --> 00:08:53.340
+written some behaviors
+to help with these.
+
+00:08:53.340 --> 00:08:55.740
+So the one that you
+would be interested in
+
+00:08:55.740 --> 00:08:57.640
+is called the app
+localized behavior.
+
+00:08:57.640 --> 00:08:59.460
+And basically, you
+define JSON file
+
+00:08:59.460 --> 00:09:03.690
+full of different localized
+strings based on the locale,
+
+00:09:03.690 --> 00:09:05.640
+or that are keyed
+off of the locale.
+
+00:09:05.640 --> 00:09:08.580
+And then based on
+the user's locale,
+
+00:09:08.580 --> 00:09:11.450
+it then, in your element,
+it uses a little computer
+
+00:09:11.450 --> 00:09:13.500
+binding to match
+up whatever text
+
+00:09:13.500 --> 00:09:16.640
+you're using to that JSON file
+and use the right localized
+
+00:09:16.640 --> 00:09:17.580
+version.
+
+00:09:17.580 --> 00:09:19.520
+So our internationalization
+library
+
+00:09:19.520 --> 00:09:21.710
+works in a very similar fashion.
+
+00:09:21.710 --> 00:09:23.870
+The one thing to
+note is that these
+
+00:09:23.870 --> 00:09:26.700
+depend on the
+internationalization API.
+
+00:09:26.700 --> 00:09:29.260
+And so if you're in a browser
+that does not support that API,
+
+00:09:29.260 --> 00:09:31.960
+you're also going to need to
+include a little polyfill.
+
+00:09:31.960 --> 00:09:35.800
+But that is linked to from
+the repo for app localize
+
+00:09:35.800 --> 00:09:39.046
+and the i18n behaviors.
+
+00:09:39.046 --> 00:09:41.170
+I'll include a link to
+these down in the show notes
+
+00:09:41.170 --> 00:09:43.045
+so you don't have to
+listen to me try and say
+
+00:09:43.045 --> 00:09:44.060
+these words anymore.
+
+00:09:44.060 --> 00:09:46.685
+But yeah, give those a shot, and
+see if that helps in your app.
+
+00:09:46.685 --> 00:09:48.530
+So thank you for
+that question, GBX.
+
+00:09:48.530 --> 00:09:51.800
+All right, next question is
+from Vladislav, who says,
+
+00:09:51.800 --> 00:09:53.780
+what's up with
+2.0-- Polymer 2.0,
+
+00:09:53.780 --> 00:09:56.400
+I'm assuming-- and TypeScript?
+
+00:09:56.400 --> 00:10:01.700
+So there's no plans right now
+to migrate over to TypeScript
+
+00:10:01.700 --> 00:10:03.390
+or anything like that.
+
+00:10:03.390 --> 00:10:05.972
+However, we do have a lot of
+members of the Polymer team
+
+00:10:05.972 --> 00:10:07.430
+who really, really
+like TypeScript,
+
+00:10:07.430 --> 00:10:08.470
+and we definitely
+want to make sure
+
+00:10:08.470 --> 00:10:10.130
+that we are
+supporting it better.
+
+00:10:10.130 --> 00:10:13.330
+So I think if you're
+trying to do this today,
+
+00:10:13.330 --> 00:10:16.400
+you can maybe use something
+like the generator custom build
+
+00:10:16.400 --> 00:10:17.950
+that I mentioned
+before-- which we're
+
+00:10:17.950 --> 00:10:21.350
+going to link to down the show
+notes-- to add the TypeScript
+
+00:10:21.350 --> 00:10:24.160
+compile step to your
+gulp build process,
+
+00:10:24.160 --> 00:10:25.340
+or something like that.
+
+00:10:25.340 --> 00:10:28.280
+For 2.0 I'm not quite
+sure what the exact game
+
+00:10:28.280 --> 00:10:32.050
+plan is going to be, except for
+I'm almost certain that we're
+
+00:10:32.050 --> 00:10:34.710
+going to have some
+better TypeScript story,
+
+00:10:34.710 --> 00:10:36.389
+some sort of improved
+story around it.
+
+00:10:36.389 --> 00:10:38.430
+Because we have so many
+team members who like it,
+
+00:10:38.430 --> 00:10:41.460
+we have so many Googlers
+who like using TypeScript.
+
+00:10:41.460 --> 00:10:44.020
+I definitely want to explore
+it more myself, so I definitely
+
+00:10:44.020 --> 00:10:46.420
+we'll probably have some
+more to talk about there.
+
+00:10:46.420 --> 00:10:48.150
+It's a little early
+days right now
+
+00:10:48.150 --> 00:10:50.600
+for Polymer 2.0 to know
+exactly what the strategy is
+
+00:10:50.600 --> 00:10:51.442
+going to be.
+
+00:10:51.442 --> 00:10:53.025
+But if you're
+interested in TypeScript
+
+00:10:53.025 --> 00:10:54.400
+and you're interested
+in Polymer,
+
+00:10:54.400 --> 00:10:56.580
+stay tuned, because
+I'm sure we're
+
+00:10:56.580 --> 00:10:58.790
+going to have something
+more exciting for you
+
+00:10:58.790 --> 00:11:00.020
+in the future on that topic.
+
+00:11:00.020 --> 00:11:02.430
+So thank you Vladislav
+for sending that in.
+
+00:11:02.430 --> 00:11:03.940
+The last question
+comes from Ido,
+
+00:11:03.940 --> 00:11:06.720
+who says, how do I
+share information
+
+00:11:06.720 --> 00:11:08.800
+when I am transitioning
+between two pages,
+
+00:11:08.800 --> 00:11:11.560
+and what are the best
+practices for communicating
+
+00:11:11.560 --> 00:11:13.250
+between elements?
+
+00:11:13.250 --> 00:11:15.980
+So I'm actually going to answer
+this sort of in reverse order,
+
+00:11:15.980 --> 00:11:17.730
+because I think the
+second answer helps
+
+00:11:17.730 --> 00:11:19.370
+answer the first question.
+
+00:11:19.370 --> 00:11:22.020
+When you're communicating
+between elements,
+
+00:11:22.020 --> 00:11:24.360
+you actually probably
+don't want to have
+
+00:11:24.360 --> 00:11:27.220
+siblings talking to each
+other, or anything like that.
+
+00:11:27.220 --> 00:11:29.805
+We generally try
+to discourage that,
+
+00:11:29.805 --> 00:11:33.360
+mainly because it means
+that element A has
+
+00:11:33.360 --> 00:11:36.850
+to be coupled and know
+about element B over here.
+
+00:11:36.850 --> 00:11:40.230
+And we kind of don't want
+that level of coupling.
+
+00:11:40.230 --> 00:11:42.230
+Instead, what we
+recommend is to figure out
+
+00:11:42.230 --> 00:11:45.380
+a common parent between
+both of your elements
+
+00:11:45.380 --> 00:11:48.460
+and have your elements be kind
+of like as simple and as dumb
+
+00:11:48.460 --> 00:11:51.740
+as they can be and just
+dispatch events out
+
+00:11:51.740 --> 00:11:53.000
+to that common parent.
+
+00:11:53.000 --> 00:11:56.500
+Like, hey, I was clicked
+on, or something like that.
+
+00:11:56.500 --> 00:12:00.100
+And then the common parent
+can act as the orchestrator,
+
+00:12:00.100 --> 00:12:03.372
+saying, oh, I hear that this
+child over here was clicked on,
+
+00:12:03.372 --> 00:12:05.830
+and I know that that means that
+some action needs to happen
+
+00:12:05.830 --> 00:12:07.422
+with child B over here.
+
+00:12:07.422 --> 00:12:09.505
+What this does is that
+keeps element A and element
+
+00:12:09.505 --> 00:12:12.330
+B very simple, and re-usable.
+
+00:12:12.330 --> 00:12:14.230
+And all your business
+logic then kind of gets
+
+00:12:14.230 --> 00:12:16.430
+moved up into that
+higher order element.
+
+00:12:16.430 --> 00:12:19.630
+And we usually refer to this
+as like a mediator component,
+
+00:12:19.630 --> 00:12:22.070
+and I'll include a link down
+in the bottom to my teammate
+
+00:12:22.070 --> 00:12:23.580
+Kevin Schaaf's talk.
+
+00:12:23.580 --> 00:12:25.570
+I think this is
+from Polymer Summit
+
+00:12:25.570 --> 00:12:27.610
+maybe two years
+ago, or a year ago,
+
+00:12:27.610 --> 00:12:29.310
+where he talked
+about this pattern
+
+00:12:29.310 --> 00:12:32.750
+and how we tend to use
+it in most of our apps.
+
+00:12:32.750 --> 00:12:36.040
+So that's how we recommend doing
+communication around the page.
+
+00:12:36.040 --> 00:12:37.710
+And so then the
+first question was,
+
+00:12:37.710 --> 00:12:40.470
+how do I share information
+when I'm going from page 1
+
+00:12:40.470 --> 00:12:41.920
+to page 2?
+
+00:12:41.920 --> 00:12:44.480
+Well, in that case, I think
+if you have information
+
+00:12:44.480 --> 00:12:46.720
+that needs to belong to
+multiple pages, that,
+
+00:12:46.720 --> 00:12:49.540
+to me, is stuff that belongs
+in one of those higher order
+
+00:12:49.540 --> 00:12:50.340
+components.
+
+00:12:50.340 --> 00:12:53.330
+Like something that kind of
+lords over all of the pages,
+
+00:12:53.330 --> 00:12:54.020
+even.
+
+00:12:54.020 --> 00:12:57.310
+And it's just binding it
+down into the child pages.
+
+00:12:57.310 --> 00:13:00.150
+And you can have that
+higher level component
+
+00:13:00.150 --> 00:13:02.860
+listen for changes coming out
+of some of these lower level
+
+00:13:02.860 --> 00:13:05.090
+components, and
+changing its state,
+
+00:13:05.090 --> 00:13:07.160
+and then pushing that down.
+
+00:13:07.160 --> 00:13:10.190
+But that way, again,
+you're simplifying things
+
+00:13:10.190 --> 00:13:14.040
+so that the business logic
+where you've got two related
+
+00:13:14.040 --> 00:13:15.560
+things, the business
+logic for that
+
+00:13:15.560 --> 00:13:16.930
+is going to live
+higher up, and they
+
+00:13:16.930 --> 00:13:18.596
+don't have to try and
+talk to each other
+
+00:13:18.596 --> 00:13:20.420
+and figure out how
+each other works.
+
+00:13:20.420 --> 00:13:22.169
+So yeah, I hope that
+answers the question.
+
+00:13:22.169 --> 00:13:24.420
+I know it's sort of like
+a broad, abstract answer,
+
+00:13:24.420 --> 00:13:26.545
+but that's generally the
+pattern that we recommend.
+
+00:13:26.545 --> 00:13:28.260
+And definitely check
+out Kevin's talk,
+
+00:13:28.260 --> 00:13:30.520
+which covers it in
+a lot more detail.
+
+00:13:30.520 --> 00:13:33.110
+So thank you Ido for
+that great question.
+
+00:13:33.110 --> 00:13:35.240
+That about covers it for today.
+
+00:13:35.240 --> 00:13:37.480
+If you yourself have
+some questions for me,
+
+00:13:37.480 --> 00:13:39.690
+you can leave them down
+below in the comments,
+
+00:13:39.690 --> 00:13:42.720
+or you can ping me on a social
+network of your choosing
+
+00:13:42.720 --> 00:13:44.440
+#AskPolymer.
+
+00:13:44.440 --> 00:13:46.280
+As always, thank you
+so much for watching,
+
+00:13:46.280 --> 00:13:48.273
+and I'll see you next time.
+
+00:13:48.273 --> 00:13:49.690
+OK, ready?
+
+00:13:49.690 --> 00:13:51.680
+Localization.
+
+00:13:51.680 --> 00:13:53.600
+Internationalization.
+
+00:13:53.600 --> 00:13:56.770
+I just slam it all together,
+so like, internationalizlation.
+
+00:13:56.770 --> 00:13:57.730
+It's close enough.
+
+00:13:57.730 --> 00:13:59.440
+That's why you just shorten it.
+
+00:13:59.440 --> 00:14:01.290
+You write i18n.
+

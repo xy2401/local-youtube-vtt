@@ -1,0 +1,378 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.919 --> 00:00:08.929
+In this screencast we're going to show the
+basics of navigation in IntelliJ IDEA
+
+00:00:08.929 --> 00:00:11.633
+This is the default setup when you start
+IntelliJ IDEA
+
+00:00:12.580 --> 00:00:16.309
+Note that you have some navigation hints here,
+and we'll see some of these in action
+
+00:00:16.309 --> 00:00:19.509
+IntelliJ IDEA has a navigation bar at the
+
+00:00:19.509 --> 00:00:27.320
+top, a series of tool window buttons along
+the edges which let you open a window, the
+
+00:00:27.320 --> 00:00:34.829
+main project window on the left, which you
+can navigate using the mouse, the keyboard,
+
+00:00:34.829 --> 00:00:39.559
+or even typing to search for something.
+
+00:00:39.559 --> 00:00:45.609
+When you open a file, the editor opens the
+file and displays a tab.
+
+00:00:45.609 --> 00:00:48.819
+Each new file has a new tab.
+
+00:00:48.819 --> 00:00:52.100
+The editor also shows a breadcrumb trail to
+show where you are in the file
+
+00:00:52.100 --> 00:00:55.809
+We can use these mechanisms to navigate in
+
+00:00:55.809 --> 00:01:00.620
+IntelliJ IDEA, but all of these things take
+up valuable screen space which we'd prefer
+
+00:01:00.620 --> 00:01:03.739
+to use for showing code.
+
+00:01:03.739 --> 00:01:07.680
+Let's get set up with the advanced mode of
+using IntelliJ IDEA, which relies on just
+
+00:01:07.680 --> 00:01:08.680
+keyboard shortcuts
+
+00:01:08.680 --> 00:01:12.119
+First, lets turn off the breadcrumbs.
+
+00:01:12.119 --> 00:01:17.159
+We can do this using the settings window by
+searching for breadcrumbs and turning them
+
+00:01:17.159 --> 00:01:22.689
+off, you can see they're no longer shown at
+the bottom of the editor.
+
+00:01:22.689 --> 00:01:25.220
+But there's a simpler way to change a setting.
+
+00:01:25.220 --> 00:01:31.970
+We can use Shift Ctrl A or Shift Cmd A to
+find an action, and type the name of the setting.
+
+00:01:31.970 --> 00:01:38.909
+To turn off tabs, type tab and set tab placement
+to None.
+
+00:01:38.909 --> 00:01:40.850
+We can also turn off the navigation bar and
+
+00:01:40.850 --> 00:01:44.250
+the tool window buttons this way.
+
+00:01:44.250 --> 00:01:47.649
+Finally, to get the most screen space for
+
+00:01:47.649 --> 00:01:54.499
+the editor we use Shift Ctrl F12 or Shift
+Cmd F12 to hide all the side windows and expand
+
+00:01:54.499 --> 00:01:56.039
+the editor
+
+00:01:56.039 --> 00:01:58.200
+How do we move around now?
+
+00:01:58.200 --> 00:02:00.829
+With a set of keyboard shortcuts.
+
+00:02:00.829 --> 00:02:03.969
+There are a lot of different ways to move
+around, we can use the ones that are most
+
+00:02:03.969 --> 00:02:04.969
+useful to us
+
+00:02:04.969 --> 00:02:13.790
+Firstly, Alt plus a number, or Cmd plus a
+number, opens up the tool windows.
+
+00:02:13.790 --> 00:02:21.620
+For example, Alt + 1 for the project window,
+Alt + 9 for the VCS window.
+
+00:02:21.620 --> 00:02:26.110
+Escape moves the focus from that window back
+to the editor, and of course we can use shift
+
+00:02:26.110 --> 00:02:29.290
+Ctrl F12 again to hide the windows.
+
+00:02:29.290 --> 00:02:31.170
+If a window doesn't have a number, or we forget
+
+00:02:31.170 --> 00:02:38.120
+what it is, we can use Ctrl E or Cmd E to
+bring up the recent files list, which also
+
+00:02:38.120 --> 00:02:40.870
+shows all the available windows.
+
+00:02:40.870 --> 00:02:47.790
+Like all IntelliJ IDEA windows, typing here
+allows us to search.
+
+00:02:47.790 --> 00:02:49.810
+We can use the recent files window to quickly
+
+00:02:49.810 --> 00:02:54.750
+move to a file we've been to lately, and we
+can even use CamelCase to search these files
+
+00:02:54.750 --> 00:02:58.099
+for the one we want.
+
+00:02:58.099 --> 00:03:01.230
+Shift Ctrl E or Shift Cmd E brings up a list
+
+00:03:01.230 --> 00:03:07.970
+of recent locations - This isn't just a file
+but a location within a file, so we can navigate
+
+00:03:07.970 --> 00:03:11.480
+directly to a recent snippet of code
+
+00:03:11.480 --> 00:03:18.000
+Often we know the exact name of the class
+we want to open, we can use Ctrl N or Cmd O
+
+00:03:18.000 --> 00:03:20.930
+to open a search for classes.
+
+00:03:20.930 --> 00:03:25.540
+We could type the name of the class in here
+until just the option we want is available,
+
+00:03:25.540 --> 00:03:34.689
+or we can use camel case or even partial class
+names to locate a class that matches.
+
+00:03:34.689 --> 00:03:39.409
+If we want to open a file that isn't a Java
+class, we can use Shift Ctrl N or
+
+00:03:39.409 --> 00:03:45.569
+Shift Cmd O to navigate to a file.
+
+00:03:45.569 --> 00:03:52.219
+With classes or files we can type a colon
+followed by a line number and we can go straight
+
+00:03:52.219 --> 00:03:54.690
+to that line in the file.
+
+00:03:54.690 --> 00:03:56.450
+If we know the name of the method we want,
+
+00:03:56.450 --> 00:04:05.540
+we can use navigate to symbol, Shift Ctrl
+Alt N or Alt Cmd O and type the method name.
+
+00:04:05.540 --> 00:04:09.790
+Again, camel case and partial names are supported.
+
+00:04:09.790 --> 00:04:13.280
+We can also add a class&nbsp; name or partial
+class name to search for symbols within a
+
+00:04:13.280 --> 00:04:17.600
+specific namespace
+
+00:04:17.600 --> 00:04:25.110
+Once we're inside the code, we can navigate
+to a declaration using Ctrl B or Cmd B.
+
+00:04:25.110 --> 00:04:32.760
+We can also easily navigate back to where
+we cam from using Ctrl Alt Left or Cmd Alt left arrow.
+
+00:04:32.760 --> 00:04:38.750
+We can navigate forward using Ctrl Alt Right
+or Cmd Alt right arrow.
+
+00:04:38.750 --> 00:04:40.660
+If we're working with interfaces, navigating
+
+00:04:40.660 --> 00:04:43.440
+to the declaration might not be that useful.
+
+00:04:43.440 --> 00:04:44.860
+We can use ctrl alt b or alt cmd b to navigate
+to an implementation.
+
+00:04:44.860 --> 00:04:45.860
+If there's just one implementation, we'll
+move straight to that implementation.
+
+00:04:45.860 --> 00:04:51.730
+If there's more than one, we see a list like
+this and we can select the one we want.
+
+00:04:51.730 --> 00:04:52.730
+Let's use navigate to declaration to go to
+
+00:04:52.730 --> 00:04:54.470
+the declaration that uses the interface.
+
+00:04:54.470 --> 00:04:59.950
+If we move the caret onto the interface name,
+we can use Alt F7 to find the usages of this
+
+00:04:59.950 --> 00:05:06.130
+interface, which lists everywhere that calls
+methods on the interface as well as implementation
+
+00:05:06.130 --> 00:05:07.190
+of the interface.
+
+00:05:07.190 --> 00:05:15.080
+This can be another useful way to navigate
+to relevant classes from the code that uses them.
+
+00:05:15.080 --> 00:05:16.580
+If we're doing test driven development we
+
+00:05:16.580 --> 00:05:18.840
+may find another method of navigation helpful.
+
+00:05:18.840 --> 00:05:27.000
+If we're inside a test class and press shift
+Ctrl T, or Shift Cmd T, we will move into
+
+00:05:27.000 --> 00:05:29.180
+the class that the test is testing.
+
+00:05:29.180 --> 00:05:34.680
+If we're in a class and we want to move to
+the test, or to see if it has a test, we can
+
+00:05:34.680 --> 00:05:42.490
+use the same key combination to see the tests
+and select one, or even create a new test.
+
+00:05:42.490 --> 00:05:44.400
+If all this is a bit too much to remember,
+
+00:05:44.400 --> 00:05:52.150
+there's a simple shortcut for everything - double
+tap shift and we get the search everywhere box.
+
+00:05:52.150 --> 00:05:54.780
+This lists the recent files by default, and
+we can optionally narrow down our search choices
+
+00:05:54.780 --> 00:05:55.780
+if we want to.
+
+00:05:55.780 --> 00:06:00.070
+Type anything in there and it will give a
+list of files, actions, classes, symbols,
+
+00:06:00.070 --> 00:06:01.450
+and settings.
+
+00:06:01.450 --> 00:06:08.130
+Use forward slash to see the commands, selecting
+one of these will give a list of appropriate options.
+
+00:06:08.130 --> 00:06:10.700
+If you find there's something you search for
+
+00:06:10.700 --> 00:06:16.330
+fairly frequently that doesn't easily show
+up in the results, you could of course, create
+
+00:06:16.330 --> 00:06:20.160
+a keyboard shortcut for it.
+
+00:06:20.160 --> 00:06:26.340
+But you can also add an abbreviation, or keyword,
+to make it easier to find.
+
+00:06:26.340 --> 00:06:32.210
+Search for the action in the keymap, press
+enter to bring up the menu on the item, select
+
+00:06:32.210 --> 00:06:36.890
+Add Abbreviation, and type the keyword you
+want to use in the search.
+
+00:06:36.890 --> 00:06:42.540
+Then, when you double tap shift to bring up
+the search, you can type this abbreviation
+
+00:06:42.540 --> 00:06:46.110
+and the action should be the first item in
+the list.
+
+00:06:46.110 --> 00:06:48.120
+Finally, there's one last area where keyboard
+
+00:06:48.120 --> 00:06:51.280
+shortcuts can be much quicker than using the
+navigation bar.
+
+00:06:51.280 --> 00:06:56.160
+We can run anything from anywhere inside the
+IDE by double tapping ctrl.
+
+00:06:56.160 --> 00:07:00.430
+This brings up a list of recently run tests
+or applications, and we can type the name
+
+00:07:00.430 --> 00:07:04.960
+of any run configuration to find it and run
+it.
+
+00:07:04.960 --> 00:07:09.210
+This is a fast way to start a test or service
+without having to navigate to the file itself
+
+00:07:09.210 --> 00:07:11.860
+or use the navigation bar.
+
+00:07:11.860 --> 00:07:12.860
+Ctrl and F2 or Cmd F2 brings up a list of
+processes we can stop
+
+00:07:12.860 --> 00:07:25.530
+or we can press Ctrl F2 a second time to stop all processes
+
+00:07:25.530 --> 00:07:30.310
+In summary, the easiest way to navigation
+around IntelliJ IDEA is using the keyboard.
+
+00:07:30.310 --> 00:07:35.240
+This is much faster than using the mouse,
+and allows us to free up valuable screen space
+
+00:07:35.240 --> 00:07:37.580
+for the code we're working on.
+
+00:07:37.580 --> 00:07:38.440
+Thanks for watching!
+

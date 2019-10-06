@@ -1,0 +1,539 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.494 --> 00:00:01.660
+SAM THOROGOOD: Hi, everyone.
+
+00:00:01.660 --> 00:00:02.447
+It's Sam here.
+
+00:00:02.447 --> 00:00:04.780
+On the last episode of the
+Santa Tracker Developer Diary
+
+00:00:04.780 --> 00:00:07.552
+for this year, I want to talk
+about the tracker itself.
+
+00:00:07.552 --> 00:00:09.010
+Now, this is what
+you see if you go
+
+00:00:09.010 --> 00:00:11.380
+to Santa Tracker
+on the 24th or 25th
+
+00:00:11.380 --> 00:00:13.900
+as Santa is flying around
+the world delivering presents
+
+00:00:13.900 --> 00:00:15.910
+to all the good boys and girls.
+
+00:00:15.910 --> 00:00:18.460
+Now, the tracker is made
+up of a couple of things.
+
+00:00:18.460 --> 00:00:19.990
+It's made up of the map itself.
+
+00:00:19.990 --> 00:00:22.600
+It's made up of the way we
+get data from the server
+
+00:00:22.600 --> 00:00:23.970
+to show where Santa is.
+
+00:00:23.970 --> 00:00:26.470
+And we also want to reuse the
+map throughout the site, which
+
+00:00:26.470 --> 00:00:27.530
+is pretty cool.
+
+00:00:27.530 --> 00:00:28.700
+Let's have a look.
+
+00:00:28.700 --> 00:00:30.400
+So this is the tracker itself.
+
+00:00:30.400 --> 00:00:32.236
+We can see Santa fly
+around the world here.
+
+00:00:32.236 --> 00:00:33.610
+We can see where
+he currently is.
+
+00:00:33.610 --> 00:00:34.792
+He's in San Francisco.
+
+00:00:34.792 --> 00:00:37.000
+And you can see that he's
+not delivered any presents,
+
+00:00:37.000 --> 00:00:38.714
+because this is
+actually a trial run.
+
+00:00:38.714 --> 00:00:40.880
+We can see a few other
+things too, like the weather,
+
+00:00:40.880 --> 00:00:42.999
+and we can also play
+some games down here.
+
+00:00:42.999 --> 00:00:45.040
+So unlike the village,
+which is very interactive,
+
+00:00:45.040 --> 00:00:47.710
+we keep this simple and show
+the games in a card layout.
+
+00:00:47.710 --> 00:00:50.500
+There's also a few secret games
+that aren't normally visible
+
+00:00:50.500 --> 00:00:52.660
+but I just made available
+for the tracker itself,
+
+00:00:52.660 --> 00:00:54.320
+like this trivia game here.
+
+00:00:54.320 --> 00:00:55.945
+We also have a few
+videos to watch down
+
+00:00:55.945 --> 00:00:58.150
+at the bottom and a social feed.
+
+00:00:58.150 --> 00:01:00.580
+So we fetch Santa's
+route in one of two ways
+
+00:01:00.580 --> 00:01:03.347
+based on whether you're on the
+Android client or on the web.
+
+00:01:03.347 --> 00:01:04.930
+Obviously, this is
+a series about web,
+
+00:01:04.930 --> 00:01:07.320
+but on Android we use the
+Firebase Remote Config
+
+00:01:07.320 --> 00:01:09.100
+API, which is
+actually really nice
+
+00:01:09.100 --> 00:01:11.890
+as it allows us to send
+down a JSON blob to clients
+
+00:01:11.890 --> 00:01:13.580
+and actually update
+that fairly rapidly.
+
+00:01:13.580 --> 00:01:15.580
+That's really important
+because if Santa changes
+
+00:01:15.580 --> 00:01:17.710
+his route on the fly,
+we can get a new version
+
+00:01:17.710 --> 00:01:19.194
+almost immediately.
+
+00:01:19.194 --> 00:01:20.860
+We do something very
+similar on the web.
+
+00:01:20.860 --> 00:01:22.777
+We've got an API server,
+which is internal,
+
+00:01:22.777 --> 00:01:24.360
+which kind of emulates
+the same thing.
+
+00:01:24.360 --> 00:01:27.470
+But in our case, we poll
+that every minute or so.
+
+00:01:27.470 --> 00:01:30.640
+And so this sync method here
+on the Santa server's object
+
+00:01:30.640 --> 00:01:32.390
+actually does that work for us.
+
+00:01:32.390 --> 00:01:34.450
+So this is called
+every minute or so.
+
+00:01:34.450 --> 00:01:36.760
+And it requests our info object.
+
+00:01:36.760 --> 00:01:39.490
+And so that returns things
+like the current status,
+
+00:01:39.490 --> 00:01:42.250
+any upgrades that are
+acquired by the client.
+
+00:01:42.250 --> 00:01:43.930
+Let's say your site
+is out of date.
+
+00:01:43.930 --> 00:01:45.969
+And then it also includes
+things like the route.
+
+00:01:45.969 --> 00:01:47.510
+So we then use the
+route method here,
+
+00:01:47.510 --> 00:01:49.450
+which builds on that
+data we already fetched,
+
+00:01:49.450 --> 00:01:52.044
+and we fetch the data,
+this route URL here.
+
+00:01:52.044 --> 00:01:54.460
+As you can see, we're actually
+storing it in local storage
+
+00:01:54.460 --> 00:01:55.440
+as well.
+
+00:01:55.440 --> 00:01:56.690
+The route's quite large.
+
+00:01:56.690 --> 00:01:58.690
+When it's not gzipped,
+it's about 500k.
+
+00:01:58.690 --> 00:02:00.250
+When it's gzipped,
+it's much smaller.
+
+00:02:00.250 --> 00:02:01.720
+But we still want to store
+that in local storage
+
+00:02:01.720 --> 00:02:03.180
+rather than fetching
+it every time
+
+00:02:03.180 --> 00:02:04.960
+a user navigates
+back to the site.
+
+00:02:04.960 --> 00:02:07.000
+And that JSON we store
+in Firebase Storage,
+
+00:02:07.000 --> 00:02:09.830
+Santa uploads it there when
+a new route is submitted.
+
+00:02:09.830 --> 00:02:11.320
+So how do we then
+use that route?
+
+00:02:11.320 --> 00:02:15.450
+So inside our new tracker scene,
+as opposed to our old tracker
+
+00:02:15.450 --> 00:02:17.525
+as we've got some great
+naming right here,
+
+00:02:17.525 --> 00:02:19.900
+we actually call the Santa
+sync method when sync happens.
+
+00:02:19.900 --> 00:02:22.300
+And so that method,
+if we can find it,
+
+00:02:22.300 --> 00:02:23.330
+does a couple of things.
+
+00:02:23.330 --> 00:02:26.570
+It basically takes the data
+that we have and does a few more
+
+00:02:26.570 --> 00:02:27.070
+updates.
+
+00:02:27.070 --> 00:02:28.903
+There's a bit of a chain
+here as we can see.
+
+00:02:28.903 --> 00:02:32.740
+So as a relative Santa sync,
+we update Santa's state,
+
+00:02:32.740 --> 00:02:35.120
+which basically means
+placing Santa on the map.
+
+00:02:35.120 --> 00:02:35.860
+So that's really nice, right?
+
+00:02:35.860 --> 00:02:38.151
+You can see this is actually
+a really simple call here.
+
+00:02:38.151 --> 00:02:40.900
+We say, this map, santaLatLng,
+equals data.position, which
+
+00:02:40.900 --> 00:02:42.770
+is Santa's current position.
+
+00:02:42.770 --> 00:02:45.370
+But actually, what's really cool
+is while you always obviously
+
+00:02:45.370 --> 00:02:48.610
+see the map here with everything
+around, all the little cards
+
+00:02:48.610 --> 00:02:50.170
+and stuff like that,
+we can actually
+
+00:02:50.170 --> 00:02:51.795
+use this as a reusable
+component, which
+
+00:02:51.795 --> 00:02:53.300
+I think is really interesting.
+
+00:02:53.300 --> 00:02:55.000
+So let's look at this
+tracker demo page.
+
+00:02:55.000 --> 00:02:57.790
+All this does is take a
+reusable tracker map element
+
+00:02:57.790 --> 00:02:59.320
+and places it on the page here.
+
+00:02:59.320 --> 00:03:00.460
+So of course that's
+not very interesting.
+
+00:03:00.460 --> 00:03:01.668
+We don't know where Santa is.
+
+00:03:01.668 --> 00:03:03.130
+We haven't hooked
+it up to the API.
+
+00:03:03.130 --> 00:03:04.450
+But I think this is really cool.
+
+00:03:04.450 --> 00:03:06.070
+Because as someone
+who works on the web,
+
+00:03:06.070 --> 00:03:07.653
+I can take this
+component and reuse it
+
+00:03:07.653 --> 00:03:09.250
+in a bunch of places on my site.
+
+00:03:09.250 --> 00:03:10.930
+And in Santa
+Tracker, we do that.
+
+00:03:10.930 --> 00:03:13.540
+We use the map obviously
+in the tracker itself.
+
+00:03:13.540 --> 00:03:14.950
+But we also use
+a cutdown version
+
+00:03:14.950 --> 00:03:16.960
+of the map in our
+Cast experience.
+
+00:03:16.960 --> 00:03:19.280
+Because Chromecast is quite
+an underpowered device.
+
+00:03:19.280 --> 00:03:20.560
+We don't want to do
+too much on that.
+
+00:03:20.560 --> 00:03:21.910
+So we only want to
+show the map on Santa.
+
+00:03:21.910 --> 00:03:23.534
+We don't want to show
+other information
+
+00:03:23.534 --> 00:03:27.220
+about the social feed or other
+videos or things like that.
+
+00:03:27.220 --> 00:03:29.140
+So the way we can
+use this is, so I've
+
+00:03:29.140 --> 00:03:31.960
+created a thing called map,
+which is the object here.
+
+00:03:31.960 --> 00:03:36.310
+And I can say
+map.santaLatLng equals--
+
+00:03:36.310 --> 00:03:37.720
+let's pick a location.
+
+00:03:37.720 --> 00:03:40.450
+I also need to set
+map.santaHeading
+
+00:03:40.450 --> 00:03:43.000
+equals-- let's say 120.
+
+00:03:43.000 --> 00:03:45.320
+So great, this turns out to
+be the middle of the ocean.
+
+00:03:45.320 --> 00:03:47.778
+But we can see that Santa is
+flying in a certain direction.
+
+00:03:47.778 --> 00:03:50.064
+We can even turn him around.
+
+00:03:50.064 --> 00:03:50.980
+So this is quite cute.
+
+00:03:50.980 --> 00:03:53.410
+And we love the idea that we
+can reuse this custom element
+
+00:03:53.410 --> 00:03:54.250
+anywhere on our site.
+
+00:03:54.250 --> 00:03:56.124
+And this is something
+we get through Polymer.
+
+00:03:56.124 --> 00:03:58.240
+So while this is obviously
+a very simple example,
+
+00:03:58.240 --> 00:03:59.770
+this tracker map here
+is very powerful.
+
+00:03:59.770 --> 00:04:01.440
+And it allows us to wrap
+up a bunch of the behavior
+
+00:04:01.440 --> 00:04:02.560
+and a bunch of the
+stuff we want to do
+
+00:04:02.560 --> 00:04:04.277
+with Santa Tracker
+every year, like
+
+00:04:04.277 --> 00:04:05.860
+show the markers of
+where Santa's been
+
+00:04:05.860 --> 00:04:07.570
+and show his route line.
+
+00:04:07.570 --> 00:04:10.330
+So every year, Santa visits
+about 500 different cities
+
+00:04:10.330 --> 00:04:12.320
+around the world, give or take.
+
+00:04:12.320 --> 00:04:14.494
+However, he is a bit
+magical and turns out
+
+00:04:14.494 --> 00:04:16.660
+he wants to deliver presents
+to everybody, no matter
+
+00:04:16.660 --> 00:04:17.829
+where you are.
+
+00:04:17.829 --> 00:04:19.990
+What we actually do
+is take your GeoIP.
+
+00:04:19.990 --> 00:04:21.490
+Now GeoIP is pretty coarse.
+
+00:04:21.490 --> 00:04:23.232
+It's only about
+city level detail.
+
+00:04:23.232 --> 00:04:24.940
+But we use that to
+make sure Santa visits
+
+00:04:24.940 --> 00:04:26.539
+your house, no matter what.
+
+00:04:26.539 --> 00:04:28.330
+So if you're up late
+on the 24th this year,
+
+00:04:28.330 --> 00:04:30.496
+make sure you check out
+Santa Tracker, because Santa
+
+00:04:30.496 --> 00:04:32.230
+might just be above your place.
+
+00:04:32.230 --> 00:04:33.520
+Thanks for watching this year.
+
+00:04:33.520 --> 00:04:34.840
+Have a happy holidays.
+
+00:04:34.840 --> 00:04:36.310
+And I hope Santa is good to you.
+
+00:04:36.310 --> 00:04:37.175
+See you next year.
+
+00:04:37.175 --> 00:04:39.550
+You can subscribe to the Google
+Chrome Developers channel
+
+00:04:39.550 --> 00:04:42.610
+down here or check out some
+other great videos along here.
+
+00:04:42.610 --> 00:04:44.760
+[MUSIC PLAYING]
+

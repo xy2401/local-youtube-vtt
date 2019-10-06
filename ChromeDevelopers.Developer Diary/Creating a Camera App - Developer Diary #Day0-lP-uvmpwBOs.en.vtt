@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.187 --> 00:00:01.270
+MAT SCALES: Hey, everyone.
+
+00:00:01.270 --> 00:00:03.645
+My name's Mat Scales, and I'm
+with Google's web developer
+
+00:00:03.645 --> 00:00:04.379
+relations team.
+
+00:00:04.379 --> 00:00:05.920
+I'm building a web
+app at the moment,
+
+00:00:05.920 --> 00:00:08.710
+and I'd like to share with
+you my process for building
+
+00:00:08.710 --> 00:00:11.830
+that app, as well as talking
+about any problems that I have
+
+00:00:11.830 --> 00:00:14.600
+and anything interesting
+I learn along the way.
+
+00:00:14.600 --> 00:00:16.780
+So let's take a look
+at what I'm building.
+
+00:00:16.780 --> 00:00:18.997
+So here we can see a
+prototype of my camera app.
+
+00:00:18.997 --> 00:00:21.580
+On screen at the moment is the
+photos that I've already taken,
+
+00:00:21.580 --> 00:00:24.370
+as well as a photo
+I've imported, mostly
+
+00:00:24.370 --> 00:00:26.650
+my face, because that's
+what I have around
+
+00:00:26.650 --> 00:00:29.200
+when I'm developing.
+
+00:00:29.200 --> 00:00:31.860
+And we have the ability here
+to either upload a photo
+
+00:00:31.860 --> 00:00:35.970
+or drag and drop it in or
+use the camera on the device
+
+00:00:35.970 --> 00:00:38.850
+to take a photo.
+
+00:00:38.850 --> 00:00:41.310
+On a mobile phone, we're going
+to be adding in capabilities
+
+00:00:41.310 --> 00:00:43.101
+to do all of the things
+that your camera is
+
+00:00:43.101 --> 00:00:47.430
+capable of, like firing the
+flash or changing the ISO
+
+00:00:47.430 --> 00:00:50.714
+or changing where the focus
+point is on the screen.
+
+00:00:50.714 --> 00:00:52.380
+At the moment, I've
+only got the ability
+
+00:00:52.380 --> 00:00:55.860
+to change the mirroring
+for selfie mode.
+
+00:00:55.860 --> 00:00:57.430
+So let's take a photo.
+
+00:00:57.430 --> 00:01:00.900
+And now we're into edit mode.
+
+00:01:00.900 --> 00:01:03.660
+And we have a fairly
+standard set of filters
+
+00:01:03.660 --> 00:01:06.120
+here, things that you'd see
+in any photo editing app.
+
+00:01:06.120 --> 00:01:07.970
+So I've got saturation.
+
+00:01:07.970 --> 00:01:11.760
+And I'm using WebGL to render
+the filter effects in real time
+
+00:01:11.760 --> 00:01:13.551
+as you move the slider.
+
+00:01:13.551 --> 00:01:15.300
+As we go on, we're
+going to be adding lots
+
+00:01:15.300 --> 00:01:16.770
+more features to the app.
+
+00:01:16.770 --> 00:01:19.500
+We're going to start by changing
+the camera settings when
+
+00:01:19.500 --> 00:01:20.700
+we actually take the photo.
+
+00:01:20.700 --> 00:01:24.300
+So on a mobile device
+we'll be able to use things
+
+00:01:24.300 --> 00:01:25.800
+like auto white balance.
+
+00:01:25.800 --> 00:01:28.050
+We'll be able to
+change the focus point
+
+00:01:28.050 --> 00:01:30.990
+or actually fire the flash.
+
+00:01:30.990 --> 00:01:33.970
+We're going to be adding in
+new filters, particularly
+
+00:01:33.970 --> 00:01:36.760
+like, named filters, or a set
+of filters where you click on it
+
+00:01:36.760 --> 00:01:38.760
+and it does a whole bunch
+of things all at once.
+
+00:01:38.760 --> 00:01:41.910
+We're going to try to make that
+really smooth and really fast.
+
+00:01:41.910 --> 00:01:45.050
+And we'll be adding in all
+of these things for video.
+
+00:01:45.050 --> 00:01:47.130
+So we have to capture
+video and then live
+
+00:01:47.130 --> 00:01:50.220
+preview the video
+with the effects added
+
+00:01:50.220 --> 00:01:53.899
+and create the output
+video there on the device.
+
+00:01:53.899 --> 00:01:55.440
+So if that sounds
+interesting to you,
+
+00:01:55.440 --> 00:01:58.230
+please join me again to
+hear more about that.
+
+00:01:58.230 --> 00:02:00.567
+And thank you for watching.
+
+00:02:00.567 --> 00:02:01.400
+Thanks for watching.
+
+00:02:01.400 --> 00:02:03.566
+If you'd like to see more
+of our videos, click here.
+
+00:02:03.566 --> 00:02:04.940
+And we'll see you again.
+
+00:02:04.940 --> 00:02:06.490
+Cheers.
+

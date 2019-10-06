@@ -1,0 +1,294 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.660 --> 00:00:03.540
+PETE LEPAGE: You can now measure
+time to first paint and time
+
+00:00:03.540 --> 00:00:06.870
+to first contentful paint
+with the paint timings API.
+
+00:00:06.870 --> 00:00:10.680
+You can control how fonts are
+rendered with the CSS font
+
+00:00:10.680 --> 00:00:14.550
+display property and
+what assembly has landed.
+
+00:00:14.550 --> 00:00:16.830
+From the National
+Museum of Mathematics
+
+00:00:16.830 --> 00:00:20.040
+in Manhattan on a tricycle
+with square wheels,
+
+00:00:20.040 --> 00:00:21.780
+I'm Pete [? LePage. ?]
+Let's dive in
+
+00:00:21.780 --> 00:00:24.180
+and see what's new for
+developers in Chrome 60.
+
+00:00:27.000 --> 00:00:29.340
+When a user navigates
+to a page, they're
+
+00:00:29.340 --> 00:00:32.009
+looking for some visual
+feedback to reassure them
+
+00:00:32.009 --> 00:00:33.600
+that everything is working.
+
+00:00:33.600 --> 00:00:37.170
+With the new paint timing
+API, we can now measure that.
+
+00:00:37.170 --> 00:00:39.180
+The API exposes two metrics--
+
+00:00:39.180 --> 00:00:42.000
+time to first paint, which marks
+the point at which the browser
+
+00:00:42.000 --> 00:00:44.070
+starts to render
+something, anything,
+
+00:00:44.070 --> 00:00:46.440
+the first bit of
+content on screen.
+
+00:00:46.440 --> 00:00:48.990
+And time to first
+contentful paint,
+
+00:00:48.990 --> 00:00:51.840
+which marks the point when the
+browser renders the first bit
+
+00:00:51.840 --> 00:00:53.610
+of content from the DOM--
+
+00:00:53.610 --> 00:00:56.220
+text and image,
+something like that.
+
+00:00:56.220 --> 00:00:58.470
+Check out Phil Walton's
+post on updates
+
+00:00:58.470 --> 00:01:00.570
+to learn how you can
+track these metrics
+
+00:01:00.570 --> 00:01:04.280
+and use them to improve
+your experience.
+
+00:01:04.280 --> 00:01:08.370
+Web fonts give you the ability
+to incorporate rich typography.
+
+00:01:08.370 --> 00:01:11.220
+But if the user doesn't
+already have the typeface,
+
+00:01:11.220 --> 00:01:13.650
+it needs to be downloaded,
+potentially making
+
+00:01:13.650 --> 00:01:15.900
+your site appear slow.
+
+00:01:15.900 --> 00:01:18.690
+Thankfully, most browsers
+will use a fallback
+
+00:01:18.690 --> 00:01:21.300
+if the font takes
+too long to download.
+
+00:01:21.300 --> 00:01:23.400
+The new font display
+property allows
+
+00:01:23.400 --> 00:01:26.220
+you to control how a
+downloadable font renders
+
+00:01:26.220 --> 00:01:28.590
+before it's fully loaded.
+
+00:01:28.590 --> 00:01:33.450
+Auto uses whatever font display
+strategy the user agent uses.
+
+00:01:33.450 --> 00:01:36.780
+Block gives the font
+face a short block period
+
+00:01:36.780 --> 00:01:39.270
+and an infinite swap period.
+
+00:01:39.270 --> 00:01:42.840
+Swap gives the font face
+a zero second block period
+
+00:01:42.840 --> 00:01:45.560
+and an infinite swap period.
+
+00:01:45.560 --> 00:01:49.170
+Fallback gives the font face
+an extremely small block period
+
+00:01:49.170 --> 00:01:51.160
+and a short swap period.
+
+00:01:51.160 --> 00:01:53.580
+And finally, optional
+gives the font face
+
+00:01:53.580 --> 00:01:57.930
+an extremely small block period
+and a zero second swap period.
+
+00:01:57.930 --> 00:02:00.630
+It's supported in
+Chrome 60 and Opera,
+
+00:02:00.630 --> 00:02:02.940
+and is in development
+for Firefox.
+
+00:02:02.940 --> 00:02:07.350
+Check out Rob Dodson's post
+on updates for full details.
+
+00:02:07.350 --> 00:02:10.889
+WebAssembly, or wasm, provides
+a new way to run code written
+
+00:02:10.889 --> 00:02:16.470
+in languages like C and C++ on
+the web at near native speeds.
+
+00:02:16.470 --> 00:02:20.070
+It provides the speed necessary
+to build an in-browser video
+
+00:02:20.070 --> 00:02:23.580
+editor or run unity games
+at high frame rates,
+
+00:02:23.580 --> 00:02:26.520
+utilizing existing
+standards-based web platform
+
+00:02:26.520 --> 00:02:27.720
+APIs.
+
+00:02:27.720 --> 00:02:30.750
+Check out Alex [INAUDIBLE]
+Google I/O talk and find
+
+00:02:30.750 --> 00:02:34.350
+more info at WebAssembly.com,
+including demos, docs,
+
+00:02:34.350 --> 00:02:36.190
+and how to get started.
+
+00:02:36.190 --> 00:02:38.310
+These are just a few of
+the changes in Chrome 60
+
+00:02:38.310 --> 00:02:39.360
+for developers.
+
+00:02:39.360 --> 00:02:41.340
+But of course,
+there's plenty more.
+
+00:02:41.340 --> 00:02:43.830
+The PaymentRequest
+API is now supported
+
+00:02:43.830 --> 00:02:46.050
+on desktop versions of Chrome.
+
+00:02:46.050 --> 00:02:49.050
+The new Web Budget
+API enables a site
+
+00:02:49.050 --> 00:02:51.420
+with the Web Push
+notification permission
+
+00:02:51.420 --> 00:02:54.060
+to send a limited
+number of push messages
+
+00:02:54.060 --> 00:02:56.670
+that trigger background
+work, such a syncing data
+
+00:02:56.670 --> 00:03:00.240
+or dismissing notifications,
+without the need to show a user
+
+00:03:00.240 --> 00:03:02.100
+visible notification.
+
+00:03:02.100 --> 00:03:05.130
+And
+PushSubscription.expirationTime
+
+00:03:05.130 --> 00:03:07.350
+is now available,
+notifying sites
+
+00:03:07.350 --> 00:03:10.290
+when and if a
+subscription will expire.
+
+00:03:10.290 --> 00:03:12.400
+Check the description
+for more details,
+
+00:03:12.400 --> 00:03:15.000
+including links
+to docs and specs.
+
+00:03:15.000 --> 00:03:18.450
+Also, check out Case's new
+video about all the new features
+
+00:03:18.450 --> 00:03:21.330
+and Chrome 60 in
+the Chrome DevTools.
+
+00:03:21.330 --> 00:03:23.310
+Then click the Subscribe
+button, and you'll
+
+00:03:23.310 --> 00:03:25.620
+get an email whenever
+a new video is
+
+00:03:25.620 --> 00:03:27.075
+launched on our channel.
+
+00:03:27.075 --> 00:03:30.040
+I'm Pete [? LePage, ?] and as
+soon as Chrome 61 is released,
+
+00:03:30.040 --> 00:03:33.890
+I'll be right here to tell
+you what's new in Chrome.
+

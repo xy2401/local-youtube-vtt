@@ -1,0 +1,161 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.240
+[MUSIC PLAYING]
+
+00:00:03.240 --> 00:00:05.970
+SPEAKER 1: I often get questions
+like, is this piece of gold
+
+00:00:05.970 --> 00:00:06.960
+better than that one?
+
+00:00:06.960 --> 00:00:10.350
+And my answer usually is, it
+really depends on the context
+
+00:00:10.350 --> 00:00:12.180
+and you should probably
+just try them both,
+
+00:00:12.180 --> 00:00:13.900
+and measure the impact.
+
+00:00:13.900 --> 00:00:17.190
+The user timing specification
+provides a standardized way
+
+00:00:17.190 --> 00:00:20.280
+of collecting timing data
+and either visualizing it
+
+00:00:20.280 --> 00:00:22.750
+in DevTools or even
+allowing you to send it
+
+00:00:22.750 --> 00:00:26.310
+to your analytics to gather
+real live performance data.
+
+00:00:26.310 --> 00:00:29.400
+With performance.mark, you
+can save a named marker
+
+00:00:29.400 --> 00:00:31.300
+with a current time stamp.
+
+00:00:31.300 --> 00:00:33.930
+This allows you to track when
+a certain point in your code
+
+00:00:33.930 --> 00:00:35.170
+was executed.
+
+00:00:35.170 --> 00:00:37.170
+So for example, I
+could save a marker
+
+00:00:37.170 --> 00:00:39.120
+when my lazy loader
+is done loading
+
+00:00:39.120 --> 00:00:41.100
+all my non-critical styles.
+
+00:00:41.100 --> 00:00:44.250
+But arguably more important
+is performance.measure,
+
+00:00:44.250 --> 00:00:46.950
+which allows you to measure
+the time span between two
+
+00:00:46.950 --> 00:00:48.240
+of your markers.
+
+00:00:48.240 --> 00:00:51.570
+This allows you to track the
+duration of certain processes.
+
+00:00:51.570 --> 00:00:53.430
+So in my example,
+I could not only
+
+00:00:53.430 --> 00:00:55.500
+measure when my lazy
+loader was done,
+
+00:00:55.500 --> 00:00:59.850
+but instead, how long it took to
+load all my noncritical styles.
+
+00:00:59.850 --> 00:01:01.890
+You can view all your
+markers and durations
+
+00:01:01.890 --> 00:01:04.050
+using performance.getentries.
+
+00:01:04.050 --> 00:01:06.240
+They will contain
+name, type, as well as
+
+00:01:06.240 --> 00:01:08.220
+time stamps and durations.
+
+00:01:08.220 --> 00:01:11.100
+Alternatively, you can use
+DevTools performance time
+
+00:01:11.100 --> 00:01:12.870
+line to inspect your markers.
+
+00:01:12.870 --> 00:01:16.200
+The easiest way to do that is
+to use the Entries panel to find
+
+00:01:16.200 --> 00:01:17.310
+what you're looking for.
+
+00:01:17.310 --> 00:01:18.090
+And that's it.
+
+00:01:18.090 --> 00:01:20.940
+A small tool to help you make
+performance driven decisions
+
+00:01:20.940 --> 00:01:22.440
+when you're developing your app.
+
+00:01:22.440 --> 00:01:24.180
+See you next time.
+
+00:01:24.180 --> 00:01:26.010
+This was a
+Supercharged MicroTip.
+
+00:01:26.010 --> 00:01:28.110
+But did you know we
+also do live streams?
+
+00:01:28.110 --> 00:01:30.240
+And you can watch the most
+recent one over there.
+
+00:01:30.240 --> 00:01:33.510
+But more importantly, you
+can subscribe to the channel
+
+00:01:33.510 --> 00:01:35.790
+and watch other series
+like [? Ally ?] Cast
+
+00:01:35.790 --> 00:01:38.100
+or Totally Tooling tips,
+and the best of them
+
+00:01:38.100 --> 00:01:40.668
+all, more Supercharged.
+

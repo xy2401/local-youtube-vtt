@@ -1,0 +1,376 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.460 --> 00:00:06.400 align:start position:0%
+ 
+with<00:00:04.460><c> smart</c><00:00:04.760><c> completion</c><00:00:05.330><c> IntelliJ</c><00:00:06.080><c> IDEA</c>
+
+00:00:06.400 --> 00:00:06.410 align:start position:0%
+with smart completion IntelliJ IDEA
+ 
+
+00:00:06.410 --> 00:00:08.590 align:start position:0%
+with smart completion IntelliJ IDEA
+allows<00:00:06.800><c> you</c><00:00:06.920><c> to</c><00:00:07.040><c> filter</c><00:00:07.340><c> the</c><00:00:08.120><c> basic</c>
+
+00:00:08.590 --> 00:00:08.600 align:start position:0%
+allows you to filter the basic
+ 
+
+00:00:08.600 --> 00:00:11.650 align:start position:0%
+allows you to filter the basic
+completion<00:00:09.200><c> list</c><00:00:09.350><c> for</c><00:00:10.130><c> only</c><00:00:10.400><c> those</c><00:00:10.820><c> types</c><00:00:11.209><c> and</c>
+
+00:00:11.650 --> 00:00:11.660 align:start position:0%
+completion list for only those types and
+ 
+
+00:00:11.660 --> 00:00:14.680 align:start position:0%
+completion list for only those types and
+keywords<00:00:12.590><c> which</c><00:00:12.830><c> are</c><00:00:13.010><c> applicable</c><00:00:13.360><c> within</c><00:00:14.360><c> the</c>
+
+00:00:14.680 --> 00:00:14.690 align:start position:0%
+keywords which are applicable within the
+ 
+
+00:00:14.690 --> 00:00:17.380 align:start position:0%
+keywords which are applicable within the
+surrounding<00:00:14.980><c> context</c><00:00:16.119><c> let's</c><00:00:17.119><c> see</c><00:00:17.240><c> how</c><00:00:17.330><c> that</c>
+
+00:00:17.380 --> 00:00:17.390 align:start position:0%
+surrounding context let's see how that
+ 
+
+00:00:17.390 --> 00:00:20.859 align:start position:0%
+surrounding context let's see how that
+works<00:00:18.670><c> when</c><00:00:19.670><c> you</c><00:00:19.759><c> invoke</c><00:00:20.029><c> smart</c><00:00:20.359><c> completion</c>
+
+00:00:20.859 --> 00:00:20.869 align:start position:0%
+works when you invoke smart completion
+ 
+
+00:00:20.869 --> 00:00:23.740 align:start position:0%
+works when you invoke smart completion
+in<00:00:21.140><c> a</c><00:00:21.380><c> variable</c><00:00:21.830><c> initializer</c><00:00:22.490><c> or</c><00:00:23.029><c> assignment</c>
+
+00:00:23.740 --> 00:00:23.750 align:start position:0%
+in a variable initializer or assignment
+ 
+
+00:00:23.750 --> 00:00:26.040 align:start position:0%
+in a variable initializer or assignment
+statement<00:00:24.230><c> by</c><00:00:25.039><c> pressing</c><00:00:25.490><c> control</c><00:00:26.000><c> shift</c>
+
+00:00:26.040 --> 00:00:26.050 align:start position:0%
+statement by pressing control shift
+ 
+
+00:00:26.050 --> 00:00:29.739 align:start position:0%
+statement by pressing control shift
+space<00:00:27.050><c> it</c><00:00:27.919><c> will</c><00:00:28.039><c> enumerate</c><00:00:28.699><c> those</c><00:00:29.119><c> references</c>
+
+00:00:29.739 --> 00:00:29.749 align:start position:0%
+space it will enumerate those references
+ 
+
+00:00:29.749 --> 00:00:31.839 align:start position:0%
+space it will enumerate those references
+with<00:00:29.900><c> a</c><00:00:29.929><c> matching</c><00:00:30.169><c> type</c><00:00:30.589><c> signature</c><00:00:31.130><c> which</c>
+
+00:00:31.839 --> 00:00:31.849 align:start position:0%
+with a matching type signature which
+ 
+
+00:00:31.849 --> 00:00:35.470 align:start position:0%
+with a matching type signature which
+here<00:00:32.329><c> are</c><00:00:32.810><c> all</c><00:00:33.110><c> methods</c><00:00:33.640><c> from</c><00:00:34.640><c> this</c><00:00:34.820><c> view</c><00:00:35.090><c> if</c><00:00:35.330><c> I</c>
+
+00:00:35.470 --> 00:00:35.480 align:start position:0%
+here are all methods from this view if I
+ 
+
+00:00:35.480 --> 00:00:37.930 align:start position:0%
+here are all methods from this view if I
+invoke<00:00:35.870><c> smart</c><00:00:36.200><c> completion</c><00:00:36.620><c> a</c><00:00:36.710><c> second</c><00:00:37.070><c> time</c><00:00:37.280><c> it</c>
+
+00:00:37.930 --> 00:00:37.940 align:start position:0%
+invoke smart completion a second time it
+ 
+
+00:00:37.940 --> 00:00:40.360 align:start position:0%
+invoke smart completion a second time it
+will<00:00:38.150><c> pull</c><00:00:38.510><c> in</c><00:00:38.660><c> those</c><00:00:38.810><c> collections</c><00:00:39.260><c> lists</c><00:00:40.220><c> and</c>
+
+00:00:40.360 --> 00:00:40.370 align:start position:0%
+will pull in those collections lists and
+ 
+
+00:00:40.370 --> 00:00:42.100 align:start position:0%
+will pull in those collections lists and
+arrays<00:00:40.430><c> where</c><00:00:40.970><c> it</c><00:00:41.090><c> thinks</c><00:00:41.300><c> an</c><00:00:41.540><c> element</c><00:00:41.900><c> will</c>
+
+00:00:42.100 --> 00:00:42.110 align:start position:0%
+arrays where it thinks an element will
+ 
+
+00:00:42.110 --> 00:00:45.670 align:start position:0%
+arrays where it thinks an element will
+match<00:00:42.410><c> that</c><00:00:42.710><c> type</c><00:00:42.920><c> signature</c><00:00:44.440><c> finally</c><00:00:45.440><c> if</c><00:00:45.560><c> we</c>
+
+00:00:45.670 --> 00:00:45.680 align:start position:0%
+match that type signature finally if we
+ 
+
+00:00:45.680 --> 00:00:48.790 align:start position:0%
+match that type signature finally if we
+invoke<00:00:45.890><c> smart</c><00:00:46.250><c> type</c><00:00:46.460><c> one</c><00:00:46.820><c> last</c><00:00:47.060><c> time</c><00:00:47.650><c> it</c><00:00:48.650><c> will</c>
+
+00:00:48.790 --> 00:00:48.800 align:start position:0%
+invoke smart type one last time it will
+ 
+
+00:00:48.800 --> 00:00:50.320 align:start position:0%
+invoke smart type one last time it will
+apply<00:00:49.070><c> the</c><00:00:49.220><c> dot</c><00:00:49.460><c> operator</c><00:00:49.580><c> to</c><00:00:49.970><c> each</c><00:00:50.090><c> of</c><00:00:50.240><c> those</c>
+
+00:00:50.320 --> 00:00:50.330 align:start position:0%
+apply the dot operator to each of those
+ 
+
+00:00:50.330 --> 00:00:52.800 align:start position:0%
+apply the dot operator to each of those
+first<00:00:50.750><c> order</c><00:00:51.230><c> smart</c><00:00:51.890><c> type</c><00:00:52.130><c> completions</c>
+
+00:00:52.800 --> 00:00:52.810 align:start position:0%
+first order smart type completions
+ 
+
+00:00:52.810 --> 00:00:54.730 align:start position:0%
+first order smart type completions
+followed<00:00:53.810><c> by</c><00:00:53.930><c> another</c><00:00:54.170><c> smart</c><00:00:54.530><c> type</c>
+
+00:00:54.730 --> 00:00:54.740 align:start position:0%
+followed by another smart type
+ 
+
+00:00:54.740 --> 00:00:56.830 align:start position:0%
+followed by another smart type
+completion<00:00:55.370><c> so</c><00:00:55.580><c> it</c><00:00:55.670><c> effectively</c><00:00:56.060><c> composes</c>
+
+00:00:56.830 --> 00:00:56.840 align:start position:0%
+completion so it effectively composes
+ 
+
+00:00:56.840 --> 00:00:59.680 align:start position:0%
+completion so it effectively composes
+smart<00:00:57.140><c> type</c><00:00:57.350><c> with</c><00:00:58.100><c> smart</c><00:00:58.430><c> type</c><00:00:58.670><c> giving</c><00:00:59.630><c> you</c>
+
+00:00:59.680 --> 00:00:59.690 align:start position:0%
+smart type with smart type giving you
+ 
+
+00:00:59.690 --> 00:01:02.110 align:start position:0%
+smart type with smart type giving you
+all<00:00:59.870><c> method</c><00:01:00.200><c> references</c><00:01:00.650><c> in</c><00:01:00.770><c> fields</c><00:01:01.400><c> whose</c>
+
+00:01:02.110 --> 00:01:02.120 align:start position:0%
+all method references in fields whose
+ 
+
+00:01:02.120 --> 00:01:04.509 align:start position:0%
+all method references in fields whose
+signature<00:01:02.630><c> matches</c><00:01:03.050><c> the</c><00:01:03.170><c> expected</c><00:01:03.680><c> type</c><00:01:03.950><c> in</c>
+
+00:01:04.509 --> 00:01:04.519 align:start position:0%
+signature matches the expected type in
+ 
+
+00:01:04.519 --> 00:01:09.520 align:start position:0%
+signature matches the expected type in
+the<00:01:04.820><c> return</c><00:01:05.119><c> statement</c><00:01:08.080><c> now</c><00:01:09.080><c> a</c><00:01:09.110><c> few</c><00:01:09.380><c> more</c>
+
+00:01:09.520 --> 00:01:09.530 align:start position:0%
+the return statement now a few more
+ 
+
+00:01:09.530 --> 00:01:11.230 align:start position:0%
+the return statement now a few more
+areas<00:01:09.710><c> where</c><00:01:10.130><c> smart</c><00:01:10.400><c> completion</c><00:01:10.970><c> can</c><00:01:11.120><c> be</c>
+
+00:01:11.230 --> 00:01:11.240 align:start position:0%
+areas where smart completion can be
+ 
+
+00:01:11.240 --> 00:01:14.830 align:start position:0%
+areas where smart completion can be
+applied<00:01:12.430><c> parameter</c><00:01:13.430><c> lists</c><00:01:13.730><c> so</c><00:01:14.600><c> what</c><00:01:14.720><c> I'm</c>
+
+00:01:14.830 --> 00:01:14.840 align:start position:0%
+applied parameter lists so what I'm
+ 
+
+00:01:14.840 --> 00:01:18.490 align:start position:0%
+applied parameter lists so what I'm
+calling<00:01:15.080><c> a</c><00:01:15.230><c> function</c><00:01:15.410><c> I</c><00:01:16.720><c> can</c><00:01:17.720><c> invoke</c><00:01:18.110><c> smart</c>
+
+00:01:18.490 --> 00:01:18.500 align:start position:0%
+calling a function I can invoke smart
+ 
+
+00:01:18.500 --> 00:01:20.470 align:start position:0%
+calling a function I can invoke smart
+completion<00:01:19.070><c> for</c><00:01:19.580><c> each</c><00:01:19.730><c> of</c><00:01:19.909><c> the</c><00:01:20.000><c> parameters</c>
+
+00:01:20.470 --> 00:01:20.480 align:start position:0%
+completion for each of the parameters
+ 
+
+00:01:20.480 --> 00:01:24.820 align:start position:0%
+completion for each of the parameters
+that<00:01:20.990><c> I'm</c><00:01:21.140><c> passing</c><00:01:21.560><c> into</c><00:01:21.770><c> that</c><00:01:21.890><c> function</c><00:01:23.830><c> and</c>
+
+00:01:24.820 --> 00:01:24.830 align:start position:0%
+that I'm passing into that function and
+ 
+
+00:01:24.830 --> 00:01:25.870 align:start position:0%
+that I'm passing into that function and
+you'll<00:01:25.010><c> notice</c><00:01:25.220><c> something</c><00:01:25.370><c> special</c><00:01:25.820><c> about</c>
+
+00:01:25.870 --> 00:01:25.880 align:start position:0%
+you'll notice something special about
+ 
+
+00:01:25.880 --> 00:01:28.030 align:start position:0%
+you'll notice something special about
+the<00:01:26.150><c> order</c><00:01:26.450><c> of</c><00:01:26.540><c> these</c><00:01:26.690><c> entries</c><00:01:26.990><c> you'll</c><00:01:27.860><c> see</c>
+
+00:01:28.030 --> 00:01:28.040 align:start position:0%
+the order of these entries you'll see
+ 
+
+00:01:28.040 --> 00:01:29.740 align:start position:0%
+the order of these entries you'll see
+that<00:01:28.159><c> they're</c><00:01:28.310><c> not</c><00:01:28.490><c> in</c><00:01:28.670><c> lexicographic</c><00:01:29.090><c> order</c>
+
+00:01:29.740 --> 00:01:29.750 align:start position:0%
+that they're not in lexicographic order
+ 
+
+00:01:29.750 --> 00:01:31.990 align:start position:0%
+that they're not in lexicographic order
+because<00:01:30.620><c> smart</c><00:01:30.860><c> type</c><00:01:31.070><c> not</c><00:01:31.280><c> only</c><00:01:31.580><c> tries</c><00:01:31.790><c> to</c>
+
+00:01:31.990 --> 00:01:32.000 align:start position:0%
+because smart type not only tries to
+ 
+
+00:01:32.000 --> 00:01:34.390 align:start position:0%
+because smart type not only tries to
+match<00:01:32.210><c> the</c><00:01:32.570><c> type</c><00:01:32.900><c> but</c><00:01:33.620><c> also</c><00:01:33.770><c> the</c><00:01:34.010><c> variables</c>
+
+00:01:34.390 --> 00:01:34.400 align:start position:0%
+match the type but also the variables
+ 
+
+00:01:34.400 --> 00:01:47.590 align:start position:0%
+match the type but also the variables
+given<00:01:34.729><c> name</c><00:01:34.909><c> in</c><00:01:35.060><c> the</c><00:01:35.150><c> parameter</c><00:01:35.510><c> list</c><00:01:46.600><c> smart</c>
+
+00:01:47.590 --> 00:01:47.600 align:start position:0%
+given name in the parameter list smart
+ 
+
+00:01:47.600 --> 00:01:49.480 align:start position:0%
+given name in the parameter list smart
+completion<00:01:47.990><c> is</c><00:01:48.080><c> also</c><00:01:48.320><c> applicable</c><00:01:48.560><c> in</c><00:01:49.010><c> the</c>
+
+00:01:49.480 --> 00:01:49.490 align:start position:0%
+completion is also applicable in the
+ 
+
+00:01:49.490 --> 00:01:51.910 align:start position:0%
+completion is also applicable in the
+return<00:01:49.820><c> statement</c><00:01:50.090><c> of</c><00:01:50.330><c> a</c><00:01:50.390><c> method</c><00:01:50.690><c> so</c><00:01:51.680><c> when</c><00:01:51.830><c> you</c>
+
+00:01:51.910 --> 00:01:51.920 align:start position:0%
+return statement of a method so when you
+ 
+
+00:01:51.920 --> 00:01:55.390 align:start position:0%
+return statement of a method so when you
+type<00:01:52.100><c> return</c><00:01:52.250><c> and</c><00:01:53.560><c> invoke</c><00:01:54.560><c> smart</c><00:01:54.860><c> completion</c>
+
+00:01:55.390 --> 00:01:55.400 align:start position:0%
+type return and invoke smart completion
+ 
+
+00:01:55.400 --> 00:01:57.520 align:start position:0%
+type return and invoke smart completion
+again<00:01:55.970><c> it'll</c><00:01:56.420><c> only</c><00:01:56.510><c> display</c><00:01:56.990><c> those</c><00:01:57.140><c> entries</c>
+
+00:01:57.520 --> 00:01:57.530 align:start position:0%
+again it'll only display those entries
+ 
+
+00:01:57.530 --> 00:02:00.270 align:start position:0%
+again it'll only display those entries
+whose<00:01:57.710><c> type</c><00:01:58.299><c> matches</c><00:01:59.299><c> the</c><00:01:59.570><c> given</c><00:01:59.810><c> constraint</c>
+
+00:02:00.270 --> 00:02:00.280 align:start position:0%
+whose type matches the given constraint
+ 
+
+00:02:00.280 --> 00:02:02.710 align:start position:0%
+whose type matches the given constraint
+and<00:02:01.280><c> in</c><00:02:01.460><c> each</c><00:02:01.580><c> of</c><00:02:01.700><c> these</c><00:02:01.790><c> situations</c><00:02:02.030><c> you</c><00:02:02.510><c> can</c>
+
+00:02:02.710 --> 00:02:02.720 align:start position:0%
+and in each of these situations you can
+ 
+
+00:02:02.720 --> 00:02:04.960 align:start position:0%
+and in each of these situations you can
+apply<00:02:02.990><c> smart</c><00:02:03.350><c> completion</c><00:02:03.890><c> more</c><00:02:04.369><c> than</c><00:02:04.520><c> once</c><00:02:04.700><c> to</c>
+
+00:02:04.960 --> 00:02:04.970 align:start position:0%
+apply smart completion more than once to
+ 
+
+00:02:04.970 --> 00:02:06.219 align:start position:0%
+apply smart completion more than once to
+get<00:02:05.090><c> all</c><00:02:05.180><c> of</c><00:02:05.299><c> the</c><00:02:05.390><c> second-order</c><00:02:05.750><c> chain</c>
+
+00:02:06.219 --> 00:02:06.229 align:start position:0%
+get all of the second-order chain
+ 
+
+00:02:06.229 --> 00:02:10.080 align:start position:0%
+get all of the second-order chain
+completions<00:02:06.950><c> with</c><00:02:07.220><c> the</c><00:02:07.549><c> correct</c><00:02:07.880><c> return</c><00:02:08.269><c> type</c>
+
+00:02:10.080 --> 00:02:10.090 align:start position:0%
+completions with the correct return type
+ 
+
+00:02:10.090 --> 00:02:12.519 align:start position:0%
+completions with the correct return type
+finally<00:02:11.090><c> you</c><00:02:11.269><c> can</c><00:02:11.420><c> apply</c><00:02:11.659><c> smart</c><00:02:11.989><c> completion</c>
+
+00:02:12.519 --> 00:02:12.529 align:start position:0%
+finally you can apply smart completion
+ 
+
+00:02:12.529 --> 00:02:14.769 align:start position:0%
+finally you can apply smart completion
+after<00:02:13.129><c> the</c><00:02:13.249><c> new</c><00:02:13.489><c> keyword</c><00:02:14.359><c> when</c><00:02:14.659><c> you're</c>
+
+00:02:14.769 --> 00:02:14.779 align:start position:0%
+after the new keyword when you're
+ 
+
+00:02:14.779 --> 00:02:17.349 align:start position:0%
+after the new keyword when you're
+declaring<00:02:15.200><c> an</c><00:02:15.290><c> object</c>
+

@@ -1,0 +1,456 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.040 --> 00:00:05.710 align:start position:0%
+ 
+let's<00:00:04.040><c> take</c><00:00:04.250><c> a</c><00:00:04.279><c> look</c><00:00:04.430><c> at</c><00:00:04.580><c> two</c><00:00:04.850><c> closely</c><00:00:05.420><c> related</c>
+
+00:00:05.710 --> 00:00:05.720 align:start position:0%
+let's take a look at two closely related
+ 
+
+00:00:05.720 --> 00:00:08.560 align:start position:0%
+let's take a look at two closely related
+refactorings<00:00:06.470><c> in</c><00:00:06.740><c> IntelliJ</c><00:00:07.549><c> IDEA</c><00:00:08.000><c> called</c>
+
+00:00:08.560 --> 00:00:08.570 align:start position:0%
+refactorings in IntelliJ IDEA called
+ 
+
+00:00:08.570 --> 00:00:11.350 align:start position:0%
+refactorings in IntelliJ IDEA called
+pull<00:00:08.930><c> members</c><00:00:09.260><c> up</c><00:00:09.440><c> and</c><00:00:09.680><c> push</c><00:00:10.459><c> members</c><00:00:10.969><c> down</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+pull members up and push members down
+ 
+
+00:00:11.360 --> 00:00:14.019 align:start position:0%
+pull members up and push members down
+and<00:00:11.779><c> for</c><00:00:12.770><c> the</c><00:00:12.830><c> sir</c><00:00:12.980><c> factoring</c><00:00:13.459><c> I'm</c><00:00:13.639><c> going</c><00:00:13.879><c> to</c>
+
+00:00:14.019 --> 00:00:14.029 align:start position:0%
+and for the sir factoring I'm going to
+ 
+
+00:00:14.029 --> 00:00:16.660 align:start position:0%
+and for the sir factoring I'm going to
+enlist<00:00:14.360><c> the</c><00:00:14.600><c> help</c><00:00:14.629><c> of</c><00:00:14.930><c> the</c><00:00:15.709><c> project</c><00:00:16.219><c> structure</c>
+
+00:00:16.660 --> 00:00:16.670 align:start position:0%
+enlist the help of the project structure
+ 
+
+00:00:16.670 --> 00:00:19.390 align:start position:0%
+enlist the help of the project structure
+view<00:00:17.480><c> which</c><00:00:18.230><c> I</c><00:00:18.410><c> can</c><00:00:18.529><c> bring</c><00:00:18.740><c> up</c><00:00:18.859><c> by</c><00:00:19.130><c> pressing</c>
+
+00:00:19.390 --> 00:00:19.400 align:start position:0%
+view which I can bring up by pressing
+ 
+
+00:00:19.400 --> 00:00:23.919 align:start position:0%
+view which I can bring up by pressing
+Alt<00:00:19.820><c> 7</c><00:00:21.970><c> so</c><00:00:22.970><c> you</c><00:00:23.060><c> can</c><00:00:23.240><c> see</c><00:00:23.419><c> that</c><00:00:23.570><c> I</c><00:00:23.630><c> have</c><00:00:23.749><c> some</c>
+
+00:00:23.919 --> 00:00:23.929 align:start position:0%
+Alt 7 so you can see that I have some
+ 
+
+00:00:23.929 --> 00:00:25.839 align:start position:0%
+Alt 7 so you can see that I have some
+inner<00:00:24.109><c> classes</c><00:00:24.679><c> here</c><00:00:25.009><c> and</c><00:00:25.160><c> let's</c><00:00:25.669><c> look</c>
+
+00:00:25.839 --> 00:00:25.849 align:start position:0%
+inner classes here and let's look
+ 
+
+00:00:25.849 --> 00:00:28.659 align:start position:0%
+inner classes here and let's look
+carefully<00:00:26.089><c> how</c><00:00:26.929><c> these</c><00:00:27.109><c> are</c><00:00:27.320><c> laid</c><00:00:27.560><c> out</c><00:00:27.740><c> by</c>
+
+00:00:28.659 --> 00:00:28.669 align:start position:0%
+carefully how these are laid out by
+ 
+
+00:00:28.669 --> 00:00:30.550 align:start position:0%
+carefully how these are laid out by
+selecting<00:00:28.939><c> the</c><00:00:29.210><c> parent</c><00:00:29.570><c> class</c><00:00:29.839><c> a</c><00:00:30.169><c> and</c>
+
+00:00:30.550 --> 00:00:30.560 align:start position:0%
+selecting the parent class a and
+ 
+
+00:00:30.560 --> 00:00:33.150 align:start position:0%
+selecting the parent class a and
+pressing<00:00:30.980><c> ctrl</c><00:00:31.400><c> H</c><00:00:31.579><c> I</c><00:00:31.909><c> can</c><00:00:32.390><c> see</c><00:00:32.780><c> that</c><00:00:32.930><c> it</c><00:00:33.050><c> has</c>
+
+00:00:33.150 --> 00:00:33.160 align:start position:0%
+pressing ctrl H I can see that it has
+ 
+
+00:00:33.160 --> 00:00:37.450 align:start position:0%
+pressing ctrl H I can see that it has
+three<00:00:34.160><c> children</c><00:00:34.520><c> b</c><00:00:35.510><c> c</c><00:00:36.140><c> and</c><00:00:36.350><c> d</c><00:00:36.470><c> which</c><00:00:37.250><c> all</c>
+
+00:00:37.450 --> 00:00:37.460 align:start position:0%
+three children b c and d which all
+ 
+
+00:00:37.460 --> 00:00:40.690 align:start position:0%
+three children b c and d which all
+extend<00:00:38.030><c> from</c><00:00:38.510><c> a</c><00:00:39.070><c> now</c><00:00:40.070><c> if</c><00:00:40.220><c> i'd</c><00:00:40.340><c> like</c><00:00:40.520><c> to</c><00:00:40.550><c> a</c>
+
+00:00:40.690 --> 00:00:40.700 align:start position:0%
+extend from a now if i'd like to a
+ 
+
+00:00:40.700 --> 00:00:42.970 align:start position:0%
+extend from a now if i'd like to a
+factor<00:00:41.180><c> one</c><00:00:41.450><c> or</c><00:00:41.600><c> more</c><00:00:41.780><c> of</c><00:00:41.960><c> these</c><00:00:42.170><c> methods</c><00:00:42.230><c> in</c>
+
+00:00:42.970 --> 00:00:42.980 align:start position:0%
+factor one or more of these methods in
+ 
+
+00:00:42.980 --> 00:00:46.360 align:start position:0%
+factor one or more of these methods in
+the<00:00:43.610><c> child</c><00:00:44.000><c> class</c><00:00:44.600><c> i</c><00:00:45.080><c> can</c><00:00:45.650><c> do</c><00:00:46.040><c> that</c><00:00:46.190><c> by</c>
+
+00:00:46.360 --> 00:00:46.370 align:start position:0%
+the child class i can do that by
+ 
+
+00:00:46.370 --> 00:00:49.200 align:start position:0%
+the child class i can do that by
+selecting<00:00:47.000><c> the</c><00:00:47.090><c> methods</c><00:00:47.450><c> in</c><00:00:47.750><c> the</c><00:00:48.500><c> editor</c><00:00:48.830><c> and</c>
+
+00:00:49.200 --> 00:00:49.210 align:start position:0%
+selecting the methods in the editor and
+ 
+
+00:00:49.210 --> 00:00:53.860 align:start position:0%
+selecting the methods in the editor and
+pressing<00:00:50.210><c> ctrl</c><00:00:50.750><c> alt</c><00:00:51.140><c> shift</c><00:00:51.970><c> t</c><00:00:52.970><c> to</c><00:00:53.480><c> open</c><00:00:53.780><c> the</c>
+
+00:00:53.860 --> 00:00:53.870 align:start position:0%
+pressing ctrl alt shift t to open the
+ 
+
+00:00:53.870 --> 00:00:57.450 align:start position:0%
+pressing ctrl alt shift t to open the
+factor<00:00:54.410><c> menu</c><00:00:54.800><c> and</c><00:00:55.130><c> then</c><00:00:56.030><c> selecting</c><00:00:56.570><c> pull</c>
+
+00:00:57.450 --> 00:00:57.460 align:start position:0%
+factor menu and then selecting pull
+ 
+
+00:00:57.460 --> 00:01:01.420 align:start position:0%
+factor menu and then selecting pull
+members<00:00:58.460><c> up</c><00:00:59.000><c> i</c><00:00:59.360><c> can</c><00:01:00.320><c> choose</c><00:01:00.590><c> exactly</c><00:01:00.800><c> which</c>
+
+00:01:01.420 --> 00:01:01.430 align:start position:0%
+members up i can choose exactly which
+ 
+
+00:01:01.430 --> 00:01:04.149 align:start position:0%
+members up i can choose exactly which
+methods<00:01:01.850><c> i'd</c><00:01:02.000><c> like</c><00:01:02.210><c> to</c><00:01:02.240><c> pull</c><00:01:02.600><c> up</c><00:01:02.780><c> by</c><00:01:03.620><c> selecting</c>
+
+00:01:04.149 --> 00:01:04.159 align:start position:0%
+methods i'd like to pull up by selecting
+ 
+
+00:01:04.159 --> 00:01:07.209 align:start position:0%
+methods i'd like to pull up by selecting
+them<00:01:04.339><c> and</c><00:01:04.489><c> then</c><00:01:04.580><c> hitting</c><00:01:05.299><c> or</c><00:01:05.449><c> factor</c><00:01:06.219><c> now</c>
+
+00:01:07.209 --> 00:01:07.219 align:start position:0%
+them and then hitting or factor now
+ 
+
+00:01:07.219 --> 00:01:08.950 align:start position:0%
+them and then hitting or factor now
+whenever<00:01:07.520><c> we</c><00:01:07.670><c> apply</c><00:01:07.969><c> these</c><00:01:08.359><c> types</c><00:01:08.780><c> of</c>
+
+00:01:08.950 --> 00:01:08.960 align:start position:0%
+whenever we apply these types of
+ 
+
+00:01:08.960 --> 00:01:11.800 align:start position:0%
+whenever we apply these types of
+refactorings<00:01:09.880><c> IntelliJ</c><00:01:10.880><c> IDEA</c><00:01:11.210><c> will</c><00:01:11.479><c> search</c>
+
+00:01:11.800 --> 00:01:11.810 align:start position:0%
+refactorings IntelliJ IDEA will search
+ 
+
+00:01:11.810 --> 00:01:14.260 align:start position:0%
+refactorings IntelliJ IDEA will search
+for<00:01:11.840><c> any</c><00:01:12.409><c> occurrences</c><00:01:13.219><c> inside</c><00:01:13.729><c> our</c><00:01:13.909><c> code</c>
+
+00:01:14.260 --> 00:01:14.270 align:start position:0%
+for any occurrences inside our code
+ 
+
+00:01:14.270 --> 00:01:17.649 align:start position:0%
+for any occurrences inside our code
+where<00:01:14.929><c> it</c><00:01:15.079><c> can</c><00:01:15.259><c> replace</c><00:01:15.619><c> a</c><00:01:15.740><c> duplicate</c><00:01:16.490><c> and</c><00:01:16.670><c> if</c>
+
+00:01:17.649 --> 00:01:17.659 align:start position:0%
+where it can replace a duplicate and if
+ 
+
+00:01:17.659 --> 00:01:21.099 align:start position:0%
+where it can replace a duplicate and if
+I<00:01:17.780><c> select</c><00:01:18.020><c> replace</c><00:01:19.240><c> it</c><00:01:20.240><c> will</c><00:01:20.450><c> automatically</c>
+
+00:01:21.099 --> 00:01:21.109 align:start position:0%
+I select replace it will automatically
+ 
+
+00:01:21.109 --> 00:01:24.130 align:start position:0%
+I select replace it will automatically
+use<00:01:21.799><c> the</c><00:01:22.490><c> inherited</c><00:01:23.179><c> method</c><00:01:23.630><c> from</c><00:01:23.929><c> the</c>
+
+00:01:24.130 --> 00:01:24.140 align:start position:0%
+use the inherited method from the
+ 
+
+00:01:24.140 --> 00:01:24.899 align:start position:0%
+use the inherited method from the
+superclass
+
+00:01:24.899 --> 00:01:24.909 align:start position:0%
+superclass
+ 
+
+00:01:24.909 --> 00:01:28.090 align:start position:0%
+superclass
+here<00:01:25.909><c> in</c><00:01:26.030><c> these</c><00:01:26.149><c> subclasses</c><00:01:26.890><c> without</c><00:01:27.890><c> me</c>
+
+00:01:28.090 --> 00:01:28.100 align:start position:0%
+here in these subclasses without me
+ 
+
+00:01:28.100 --> 00:01:30.010 align:start position:0%
+here in these subclasses without me
+having<00:01:28.310><c> to</c><00:01:28.490><c> do</c><00:01:28.700><c> anything</c><00:01:28.939><c> else</c><00:01:29.210><c> let's</c><00:01:29.869><c> see</c>
+
+00:01:30.010 --> 00:01:30.020 align:start position:0%
+having to do anything else let's see
+ 
+
+00:01:30.020 --> 00:01:31.770 align:start position:0%
+having to do anything else let's see
+that<00:01:30.170><c> one</c><00:01:30.409><c> more</c><00:01:30.619><c> time</c><00:01:30.649><c> from</c><00:01:31.549><c> the</c><00:01:31.609><c> beginning</c>
+
+00:01:31.770 --> 00:01:31.780 align:start position:0%
+that one more time from the beginning
+ 
+
+00:01:31.780 --> 00:01:34.959 align:start position:0%
+that one more time from the beginning
+you<00:01:32.780><c> can</c><00:01:32.960><c> see</c><00:01:33.139><c> that</c><00:01:33.289><c> this</c><00:01:33.409><c> class</c><00:01:33.679><c> B</c><00:01:34.159><c> has</c><00:01:34.609><c> three</c>
+
+00:01:34.959 --> 00:01:34.969 align:start position:0%
+you can see that this class B has three
+ 
+
+00:01:34.969 --> 00:01:37.929 align:start position:0%
+you can see that this class B has three
+methods<00:01:35.479><c> unbeknownst</c><00:01:36.350><c> to</c><00:01:36.530><c> C</c><00:01:37.009><c> and</c><00:01:37.249><c> D</c><00:01:37.520><c> who</c><00:01:37.789><c> have</c>
+
+00:01:37.929 --> 00:01:37.939 align:start position:0%
+methods unbeknownst to C and D who have
+ 
+
+00:01:37.939 --> 00:01:41.230 align:start position:0%
+methods unbeknownst to C and D who have
+already<00:01:38.119><c> implemented</c><00:01:38.899><c> similar</c><00:01:39.469><c> methods</c><00:01:40.240><c> as</c>
+
+00:01:41.230 --> 00:01:41.240 align:start position:0%
+already implemented similar methods as
+ 
+
+00:01:41.240 --> 00:01:43.120 align:start position:0%
+already implemented similar methods as
+soon<00:01:41.630><c> as</c><00:01:41.749><c> you</c><00:01:41.869><c> have</c><00:01:41.990><c> factored</c><00:01:42.439><c> these</c><00:01:42.649><c> methods</c>
+
+00:01:43.120 --> 00:01:43.130 align:start position:0%
+soon as you have factored these methods
+ 
+
+00:01:43.130 --> 00:01:46.779 align:start position:0%
+soon as you have factored these methods
+by<00:01:43.310><c> pulling</c><00:01:43.759><c> them</c><00:01:43.909><c> up</c><00:01:44.030><c> into</c><00:01:44.359><c> a</c><00:01:45.490><c> IntelliJ</c><00:01:46.490><c> IDEA</c>
+
+00:01:46.779 --> 00:01:46.789 align:start position:0%
+by pulling them up into a IntelliJ IDEA
+ 
+
+00:01:46.789 --> 00:01:49.029 align:start position:0%
+by pulling them up into a IntelliJ IDEA
+will<00:01:46.969><c> offer</c><00:01:47.209><c> to</c><00:01:47.600><c> replace</c><00:01:48.109><c> those</c><00:01:48.409><c> duplicate</c>
+
+00:01:49.029 --> 00:01:49.039 align:start position:0%
+will offer to replace those duplicate
+ 
+
+00:01:49.039 --> 00:01:52.379 align:start position:0%
+will offer to replace those duplicate
+occurrences<00:01:49.729><c> with</c><00:01:50.630><c> a</c><00:01:50.659><c> reference</c><00:01:50.959><c> to</c><00:01:51.560><c> the</c><00:01:51.740><c> new</c>
+
+00:01:52.379 --> 00:01:52.389 align:start position:0%
+occurrences with a reference to the new
+ 
+
+00:01:52.389 --> 00:01:55.690 align:start position:0%
+occurrences with a reference to the new
+inherited<00:01:53.389><c> methods</c><00:01:54.399><c> likewise</c><00:01:55.399><c> there's</c><00:01:55.639><c> a</c>
+
+00:01:55.690 --> 00:01:55.700 align:start position:0%
+inherited methods likewise there's a
+ 
+
+00:01:55.700 --> 00:01:58.029 align:start position:0%
+inherited methods likewise there's a
+similar<00:01:56.149><c> a</c><00:01:56.179><c> factoring</c><00:01:56.869><c> for</c><00:01:57.560><c> pushing</c><00:01:57.920><c> these</c>
+
+00:01:58.029 --> 00:01:58.039 align:start position:0%
+similar a factoring for pushing these
+ 
+
+00:01:58.039 --> 00:02:02.469 align:start position:0%
+similar a factoring for pushing these
+member<00:01:58.429><c> functions</c><00:01:58.939><c> down</c><00:01:59.270><c> into</c><00:01:59.630><c> a</c><00:01:59.659><c> subclass</c><00:02:01.479><c> if</c>
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+member functions down into a subclass if
+ 
+
+00:02:02.479 --> 00:02:05.199 align:start position:0%
+member functions down into a subclass if
+we<00:02:02.659><c> select</c><00:02:02.840><c> quiz</c><00:02:03.289><c> members</c><00:02:03.679><c> down</c><00:02:03.979><c> and</c><00:02:04.670><c> select</c>
+
+00:02:05.199 --> 00:02:05.209 align:start position:0%
+we select quiz members down and select
+ 
+
+00:02:05.209 --> 00:02:09.359 align:start position:0%
+we select quiz members down and select
+the<00:02:05.329><c> members</c><00:02:05.659><c> we'd</c><00:02:05.869><c> like</c><00:02:06.049><c> to</c><00:02:06.200><c> push</c>
+
+00:02:09.359 --> 00:02:09.369 align:start position:0%
+ 
+ 
+
+00:02:09.369 --> 00:02:11.430 align:start position:0%
+ 
+then<00:02:10.060><c> it</c><00:02:10.179><c> will</c><00:02:10.299><c> warn</c><00:02:10.599><c> us</c><00:02:10.690><c> of</c><00:02:10.810><c> any</c><00:02:10.959><c> potential</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+then it will warn us of any potential
+ 
+
+00:02:11.440 --> 00:02:13.589 align:start position:0%
+then it will warn us of any potential
+conflicts<00:02:12.010><c> and</c><00:02:12.250><c> you</c><00:02:12.879><c> see</c><00:02:13.090><c> that</c><00:02:13.180><c> all</c><00:02:13.360><c> of</c><00:02:13.480><c> the</c>
+
+00:02:13.589 --> 00:02:13.599 align:start position:0%
+conflicts and you see that all of the
+ 
+
+00:02:13.599 --> 00:02:18.180 align:start position:0%
+conflicts and you see that all of the
+subclasses<00:02:14.440><c> of</c><00:02:14.739><c> a</c><00:02:15.430><c> B</c><00:02:16.299><c> C</c><00:02:16.780><c> and</c><00:02:16.989><c> D</c><00:02:17.230><c> now</c><00:02:17.980><c> have</c>
+
+00:02:18.180 --> 00:02:18.190 align:start position:0%
+subclasses of a B C and D now have
+ 
+
+00:02:18.190 --> 00:02:19.920 align:start position:0%
+subclasses of a B C and D now have
+separate<00:02:18.610><c> implementations</c><00:02:18.790><c> for</c><00:02:19.629><c> each</c><00:02:19.750><c> of</c>
+
+00:02:19.920 --> 00:02:19.930 align:start position:0%
+separate implementations for each of
+ 
+
+00:02:19.930 --> 00:02:22.229 align:start position:0%
+separate implementations for each of
+these<00:02:20.049><c> methods</c><00:02:20.430><c> removing</c><00:02:21.430><c> the</c><00:02:21.519><c> functionality</c>
+
+00:02:22.229 --> 00:02:22.239 align:start position:0%
+these methods removing the functionality
+ 
+
+00:02:22.239 --> 00:02:23.699 align:start position:0%
+these methods removing the functionality
+from<00:02:22.540><c> our</c><00:02:22.780><c> superclass</c>
+
+00:02:23.699 --> 00:02:23.709 align:start position:0%
+from our superclass
+ 
+
+00:02:23.709 --> 00:02:25.920 align:start position:0%
+from our superclass
+so<00:02:24.459><c> those</c><00:02:24.640><c> are</c><00:02:24.790><c> two</c><00:02:24.819><c> refactorings</c><00:02:25.599><c> that</c><00:02:25.720><c> will</c>
+
+00:02:25.920 --> 00:02:25.930 align:start position:0%
+so those are two refactorings that will
+ 
+
+00:02:25.930 --> 00:02:28.259 align:start position:0%
+so those are two refactorings that will
+come<00:02:26.110><c> in</c><00:02:26.230><c> handy</c><00:02:26.470><c> when</c><00:02:27.280><c> working</c><00:02:27.579><c> with</c><00:02:27.849><c> methods</c>
+
+00:02:28.259 --> 00:02:28.269 align:start position:0%
+come in handy when working with methods
+ 
+
+00:02:28.269 --> 00:02:30.960 align:start position:0%
+come in handy when working with methods
+inside<00:02:28.780><c> a</c><00:02:28.810><c> type</c><00:02:29.140><c> hierarchy</c><00:02:29.459><c> pull</c><00:02:30.459><c> members</c><00:02:30.790><c> up</c>
+
+00:02:30.960 --> 00:02:30.970 align:start position:0%
+inside a type hierarchy pull members up
+ 
+
+00:02:30.970 --> 00:02:33.360 align:start position:0%
+inside a type hierarchy pull members up
+and<00:02:31.180><c> push</c><00:02:31.720><c> members</c><00:02:32.079><c> down</c><00:02:32.290><c> if</c><00:02:32.799><c> you</c><00:02:33.099><c> have</c><00:02:33.220><c> any</c>
+
+00:02:33.360 --> 00:02:33.370 align:start position:0%
+and push members down if you have any
+ 
+
+00:02:33.370 --> 00:02:34.830 align:start position:0%
+and push members down if you have any
+questions<00:02:33.760><c> please</c><00:02:34.090><c> feel</c><00:02:34.180><c> free</c><00:02:34.390><c> to</c><00:02:34.510><c> add</c><00:02:34.690><c> them</c>
+
+00:02:34.830 --> 00:02:34.840 align:start position:0%
+questions please feel free to add them
+ 
+
+00:02:34.840 --> 00:02:36.899 align:start position:0%
+questions please feel free to add them
+in<00:02:34.959><c> the</c><00:02:35.049><c> comment</c><00:02:35.409><c> section</c><00:02:35.769><c> below</c><00:02:35.799><c> and</c><00:02:36.280><c> we'd</c><00:02:36.819><c> be</c>
+
+00:02:36.899 --> 00:02:36.909 align:start position:0%
+in the comment section below and we'd be
+ 
+
+00:02:36.909 --> 00:02:39.180 align:start position:0%
+in the comment section below and we'd be
+happy<00:02:37.239><c> to</c><00:02:37.269><c> discuss</c><00:02:37.750><c> them</c><00:02:38.019><c> with</c><00:02:38.170><c> you</c><00:02:38.409><c> thanks</c>
+
+00:02:39.180 --> 00:02:39.190 align:start position:0%
+happy to discuss them with you thanks
+ 
+
+00:02:39.190 --> 00:02:43.260 align:start position:0%
+happy to discuss them with you thanks
+for<00:02:39.340><c> watching</c><00:02:39.730><c> and</c><00:02:39.879><c> develop</c><00:02:40.540><c> with</c><00:02:40.870><c> pleasure</c>
+

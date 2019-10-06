@@ -1,0 +1,576 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.262
+[MUSIC PLAYING]
+
+00:00:04.262 --> 00:00:05.720
+ROB DODSON: Hey
+there, Polycasters.
+
+00:00:05.720 --> 00:00:06.220
+Rob here.
+
+00:00:06.220 --> 00:00:07.636
+Today, on the show,
+I want to talk
+
+00:00:07.636 --> 00:00:09.710
+about a little thing
+called Content Security
+
+00:00:09.710 --> 00:00:11.875
+Policy, or CSP.
+
+00:00:11.875 --> 00:00:14.630
+CSP is a JavaScript
+model designed
+
+00:00:14.630 --> 00:00:17.810
+to prevent attack vectors
+in your application.
+
+00:00:17.810 --> 00:00:20.350
+In particular, one of the
+things that CSP outlaws
+
+00:00:20.350 --> 00:00:22.954
+is the use of inline
+scripts in your HTML.
+
+00:00:22.954 --> 00:00:25.620
+Now, if you've been working with
+us, in Polymerland, for awhile,
+
+00:00:25.620 --> 00:00:27.703
+you might realize that
+presents a bit of a problem
+
+00:00:27.703 --> 00:00:30.540
+because we often design our
+elements with inline scripts.
+
+00:00:30.540 --> 00:00:32.177
+We'll put a little
+HTML in the top.
+
+00:00:32.177 --> 00:00:34.010
+And we'll put a little
+script in the bottom.
+
+00:00:34.010 --> 00:00:37.100
+And that'll be our elements'
+definition import, right there.
+
+00:00:37.100 --> 00:00:41.957
+So how do we make sure that
+our elements are CSP compliant?
+
+00:00:41.957 --> 00:00:44.040
+Well, to do that, we're
+going to use a little tool
+
+00:00:44.040 --> 00:00:45.620
+called Crisper.
+
+00:00:45.620 --> 00:00:48.250
+Now, Crisper is going to
+do the work of extracting
+
+00:00:48.250 --> 00:00:50.340
+our JavaScript out of
+our element definitions,
+
+00:00:50.340 --> 00:00:52.280
+so that way it can work
+in a CSP environment.
+
+00:00:52.280 --> 00:00:54.530
+And this is really important
+if you're doing something
+
+00:00:54.530 --> 00:00:57.300
+like building a Chrome app, or
+using something like Cordova,
+
+00:00:57.300 --> 00:01:00.850
+or even if you're going to use
+a transpile tool, like Babel,
+
+00:01:00.850 --> 00:01:03.261
+to take your ES6 code
+and turn it into ES5.
+
+00:01:03.261 --> 00:01:05.010
+Now, today, on the
+show, what I want to do
+
+00:01:05.010 --> 00:01:06.460
+is show you how you
+can get Crisper up
+
+00:01:06.460 --> 00:01:07.740
+and running in your application.
+
+00:01:07.740 --> 00:01:09.240
+I'll start by showing
+you the command line
+
+00:01:09.240 --> 00:01:10.060
+version of Crisper.
+
+00:01:10.060 --> 00:01:12.643
+And then we can move on to how
+you can use it in a build tool,
+
+00:01:12.643 --> 00:01:13.270
+like Gulp.
+
+00:01:13.270 --> 00:01:15.436
+Now, to start from the
+command line, the first thing
+
+00:01:15.436 --> 00:01:18.697
+that I want to do is just
+npm install -g crisper.
+
+00:01:18.697 --> 00:01:20.780
+So this is going to do a
+global install of Crisper
+
+00:01:20.780 --> 00:01:22.380
+and give me that
+binary command, so I
+
+00:01:22.380 --> 00:01:26.370
+can use it anywhere I want in
+my terminal or my application.
+
+00:01:26.370 --> 00:01:29.440
+Once this is squared away, I can
+take a little starter project
+
+00:01:29.440 --> 00:01:32.110
+that I've created here, just
+as like a demo to show off
+
+00:01:32.110 --> 00:01:33.070
+what we're going to do.
+
+00:01:33.070 --> 00:01:36.940
+I've got an import file, right
+here, called elements.html.
+
+00:01:36.940 --> 00:01:39.720
+And that's just pulling in a
+few elements from my Elements
+
+00:01:39.720 --> 00:01:40.242
+directory.
+
+00:01:40.242 --> 00:01:42.450
+Now, what I want to do is
+bundle all of this together
+
+00:01:42.450 --> 00:01:45.140
+and then extract the
+JavaScript out of it.
+
+00:01:45.140 --> 00:01:48.190
+To do that, I'm going to, first,
+create a distribution directory
+
+00:01:48.190 --> 00:01:52.450
+to hold all of my content once
+it's output from the tools.
+
+00:01:52.450 --> 00:01:54.590
+And then I'm going to
+run Vulcanize, which
+
+00:01:54.590 --> 00:01:56.315
+is our concatenation tool.
+
+00:01:56.315 --> 00:01:58.190
+It's going to concatenate
+all of our elements
+
+00:01:58.190 --> 00:02:00.140
+together into one big bundle.
+
+00:02:00.140 --> 00:02:03.810
+And then we can pipe the content
+from Vulcanize over to Crisper,
+
+00:02:03.810 --> 00:02:05.760
+so that way it can take
+that one big bundle
+
+00:02:05.760 --> 00:02:09.110
+and split it into
+HTML and JavaScript.
+
+00:02:09.110 --> 00:02:10.860
+To do that, I'm going
+to use a little pipe
+
+00:02:10.860 --> 00:02:13.180
+character at the end of
+my Vulcanize command,
+
+00:02:13.180 --> 00:02:14.840
+hand it off to
+Crisper, and tell it
+
+00:02:14.840 --> 00:02:16.340
+where I want the
+HTML to live, which
+
+00:02:16.340 --> 00:02:18.550
+is going to be
+elements.html, and tell it
+
+00:02:18.550 --> 00:02:22.060
+I want the JavaScript
+to live in elements.js.
+
+00:02:22.060 --> 00:02:24.430
+Now, it might seem a little
+weird to run Vulcanize,
+
+00:02:24.430 --> 00:02:26.452
+and to tell it to
+inline scripts, and then
+
+00:02:26.452 --> 00:02:28.910
+run a whole separate tool just
+to pull all of those scripts
+
+00:02:28.910 --> 00:02:29.670
+out again.
+
+00:02:29.670 --> 00:02:30.690
+But what we're
+actually doing here
+
+00:02:30.690 --> 00:02:32.690
+is we're making sure that
+if our elements depend
+
+00:02:32.690 --> 00:02:35.777
+on external JavaScript files,
+we can fetch all of those files.
+
+00:02:35.777 --> 00:02:37.860
+We can bundle them together,
+so we're not creating
+
+00:02:37.860 --> 00:02:39.554
+a ton of HTTP requests.
+
+00:02:39.554 --> 00:02:40.970
+And only once we've
+got everything
+
+00:02:40.970 --> 00:02:43.170
+bundled together will we
+extract the JavaScript
+
+00:02:43.170 --> 00:02:44.900
+into a single bundle.
+
+00:02:44.900 --> 00:02:46.750
+So this is, again,
+just to kind of help
+
+00:02:46.750 --> 00:02:49.974
+us cut down on the number of
+requests in our application.
+
+00:02:49.974 --> 00:02:51.390
+Now, once I've run
+this command, I
+
+00:02:51.390 --> 00:02:53.300
+can go check out
+my dist directory.
+
+00:02:53.300 --> 00:02:55.950
+Inside of here, I've got
+two files, elements.html.
+
+00:02:55.950 --> 00:02:58.520
+If I look at that, it's got
+the markup from my elements.
+
+00:02:58.520 --> 00:03:01.990
+But at the top, I've also
+got this elements.js file.
+
+00:03:01.990 --> 00:03:04.160
+That elements.js
+file is all that code
+
+00:03:04.160 --> 00:03:06.067
+that Crisper pulled out
+from our application.
+
+00:03:06.067 --> 00:03:08.150
+And looking at that, we
+can see that we've got all
+
+00:03:08.150 --> 00:03:09.520
+of the JavaScript for Polymer.
+
+00:03:09.520 --> 00:03:11.390
+And if we scroll down the
+page, we've also got all
+
+00:03:11.390 --> 00:03:13.560
+of the JavaScript for our little
+elements that we've created--
+
+00:03:13.560 --> 00:03:15.893
+x-foo, and [? x-bar, ?] and
+anything else that you might
+
+00:03:15.893 --> 00:03:17.542
+have in your application.
+
+00:03:17.542 --> 00:03:18.250
+So this is great.
+
+00:03:18.250 --> 00:03:19.480
+We've got Crisper
+working in our app.
+
+00:03:19.480 --> 00:03:20.972
+But you know, it's
+kind of a bummer
+
+00:03:20.972 --> 00:03:22.680
+to run these things
+from the command line
+
+00:03:22.680 --> 00:03:24.750
+every single time you
+want to do a build
+
+00:03:24.750 --> 00:03:26.170
+or a deploy of your application.
+
+00:03:26.170 --> 00:03:28.586
+It would be a lot better if
+we could actually combine this
+
+00:03:28.586 --> 00:03:30.360
+with a build tool like Gulp.
+
+00:03:30.360 --> 00:03:32.550
+So to do that, I'm going
+to go back to my terminal.
+
+00:03:32.550 --> 00:03:34.980
+And I'm going to run npm
+install gulp-crisper.
+
+00:03:38.840 --> 00:03:39.440
+And I'll wait.
+
+00:03:39.440 --> 00:03:40.023
+And I'll wait.
+
+00:03:43.700 --> 00:03:44.200
+OK.
+
+00:03:44.200 --> 00:03:46.489
+So we've installed
+Crisper for Gulp.
+
+00:03:46.489 --> 00:03:48.530
+What I'm going to do, now,
+is go to my Gulp file.
+
+00:03:48.530 --> 00:03:49.900
+And this is a little Gulp
+file that I've actually
+
+00:03:49.900 --> 00:03:51.690
+started in a previous
+episode, when we
+
+00:03:51.690 --> 00:03:53.060
+were talking about Vulcanize.
+
+00:03:53.060 --> 00:03:55.710
+And what I'm going to do is
+just slot Crisper in right
+
+00:03:55.710 --> 00:03:57.395
+after the vulcanized task.
+
+00:03:57.395 --> 00:04:00.690
+I'll say crisper equals
+require gulp crisper.
+
+00:04:00.690 --> 00:04:04.090
+And then, because Gulp lets
+us pipe the output of one task
+
+00:04:04.090 --> 00:04:07.040
+to the next, I can just
+rename this task to build
+
+00:04:07.040 --> 00:04:09.090
+and actually pipe the
+output from Vulcanize
+
+00:04:09.090 --> 00:04:11.465
+right into Crisper
+and then pipe all
+
+00:04:11.465 --> 00:04:13.250
+of that to my dist directory.
+
+00:04:13.250 --> 00:04:14.200
+And really, that's
+all you've got to do,
+
+00:04:14.200 --> 00:04:15.741
+to add Crisper to
+your build process.
+
+00:04:15.741 --> 00:04:16.892
+It's pretty easy.
+
+00:04:16.892 --> 00:04:19.350
+I'm going to go down and rename
+the task in my default task
+
+00:04:19.350 --> 00:04:20.980
+from vulcanize to build.
+
+00:04:20.980 --> 00:04:22.730
+And then I can switch
+over to my terminal.
+
+00:04:22.730 --> 00:04:24.334
+I can run Gulp.
+
+00:04:24.334 --> 00:04:25.130
+[MAKES LASER SOUND]
+
+00:04:25.130 --> 00:04:26.690
+And now I'm done.
+
+00:04:26.690 --> 00:04:27.880
+I go back to my application.
+
+00:04:27.880 --> 00:04:29.470
+I look at my dist directory.
+
+00:04:29.470 --> 00:04:31.480
+And I've got elements.html
+and elements.js.
+
+00:04:31.480 --> 00:04:33.730
+Up at the top, I can see
+I've got my script file there
+
+00:04:33.730 --> 00:04:36.090
+and elements.html, elements.js.
+
+00:04:36.090 --> 00:04:38.590
+I've got all the JavaScript
+from Polymer, all the JavaScript
+
+00:04:38.590 --> 00:04:39.470
+from my elements.
+
+00:04:39.470 --> 00:04:40.140
+Good to go.
+
+00:04:40.140 --> 00:04:42.730
+So if I was going to deploy
+this to something like Cordova
+
+00:04:42.730 --> 00:04:45.159
+or a Chrome app, I'd be set.
+
+00:04:45.159 --> 00:04:47.700
+And you know, there's a lot more
+that we can do with Crisper.
+
+00:04:47.700 --> 00:04:49.574
+Like I mentioned, we
+can use tools like Babel
+
+00:04:49.574 --> 00:04:50.960
+to transpile code.
+
+00:04:50.960 --> 00:04:53.099
+We could use CoffeeScript
+and other cool things.
+
+00:04:53.099 --> 00:04:54.890
+So I'm going to try
+and cover some of those
+
+00:04:54.890 --> 00:04:56.187
+in a future episode.
+
+00:04:56.187 --> 00:04:58.520
+If you enjoyed this episode,
+please, be sure to leave us
+
+00:04:58.520 --> 00:04:59.900
+some comments down below.
+
+00:04:59.900 --> 00:05:02.060
+And perhaps, consider
+clicking that Like button
+
+00:05:02.060 --> 00:05:03.650
+if you really had
+an awesome time.
+
+00:05:03.650 --> 00:05:05.040
+Also, if you have
+any questions for us,
+
+00:05:05.040 --> 00:05:06.789
+you can always ping
+us on a social network
+
+00:05:06.789 --> 00:05:09.000
+of your choosing,
+at #AskPolymer.
+
+00:05:09.000 --> 00:05:10.790
+As always, thank you
+so much for watching.
+
+00:05:10.790 --> 00:05:13.162
+And I'll see you next time.
+
+00:05:13.162 --> 00:05:15.893
+MALE SPEAKER: Polycast
+[INAUDIBLE] Take four.
+
+00:05:15.893 --> 00:05:16.820
+ROB DODSON: Argh!
+
+00:05:16.820 --> 00:05:20.730
+You guys want to know who
+killed who in Star Wars?
+
+00:05:20.730 --> 00:05:21.500
+I don't know.
+
+00:05:21.500 --> 00:05:23.000
+Mlah!
+
+00:05:23.000 --> 00:05:24.299
+Words.
+

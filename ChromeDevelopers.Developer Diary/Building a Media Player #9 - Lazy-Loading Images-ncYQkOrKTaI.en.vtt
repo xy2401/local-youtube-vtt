@@ -1,0 +1,788 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.294 --> 00:00:02.460
+PAUL LEWIS: So, I think in
+the last developer diary,
+
+00:00:02.460 --> 00:00:07.450
+I probably got to the point
+where I had styled things up.
+
+00:00:07.450 --> 00:00:08.860
+Yes, that's where I'd got to.
+
+00:00:08.860 --> 00:00:13.620
+And since then, it's been
+a lot of plumbing work,
+
+00:00:13.620 --> 00:00:16.230
+if you like, just to
+do things like offline.
+
+00:00:16.230 --> 00:00:19.680
+But I will come back to that
+in probably the next entry.
+
+00:00:19.680 --> 00:00:21.450
+In this entry, what
+I want to talk about
+
+00:00:21.450 --> 00:00:24.960
+is a relatively
+straightforward thing,
+
+00:00:24.960 --> 00:00:27.099
+which is lazy loading of images.
+
+00:00:27.099 --> 00:00:29.640
+So I say straightforward, I mean
+straightforward in the sense
+
+00:00:29.640 --> 00:00:32.910
+that it's not an
+out there concept.
+
+00:00:32.910 --> 00:00:34.890
+I think many of
+us kind of realize
+
+00:00:34.890 --> 00:00:38.550
+that we probably want to
+defer loading of some stuff.
+
+00:00:38.550 --> 00:00:41.700
+And many of us would
+probably do on something
+
+00:00:41.700 --> 00:00:44.580
+like a scroll basis
+and possibly even
+
+00:00:44.580 --> 00:00:46.740
+have a scroll handler to
+do that kind of stuff.
+
+00:00:46.740 --> 00:00:48.980
+Well, I've done it.
+
+00:00:48.980 --> 00:00:52.380
+But I've done it
+without scroll handling.
+
+00:00:52.380 --> 00:00:54.450
+I've used an
+IntersectionObserver.
+
+00:00:54.450 --> 00:00:56.970
+So I thought I'd show you
+that little bit of code today,
+
+00:00:56.970 --> 00:01:00.761
+and you could just have a look.
+
+00:01:00.761 --> 00:01:01.260
+I said that.
+
+00:01:01.260 --> 00:01:04.800
+I said you can have a look,
+and then I just said it twice.
+
+00:01:04.800 --> 00:01:06.410
+What an idiot.
+
+00:01:06.410 --> 00:01:08.802
+Anyway, let's have a
+look at what it is.
+
+00:01:08.802 --> 00:01:10.260
+If you look at
+what's on my screen,
+
+00:01:10.260 --> 00:01:12.060
+you'll see that I've
+got the site up.
+
+00:01:12.060 --> 00:01:16.410
+And I've got the Network
+tab open and it's recording,
+
+00:01:16.410 --> 00:01:18.010
+so that's the
+network-y bit there.
+
+00:01:18.010 --> 00:01:19.050
+And it's recording.
+
+00:01:19.050 --> 00:01:24.180
+And when I scroll down here,
+ready, steady these two poster
+
+00:01:24.180 --> 00:01:27.060
+images here for
+these two episodes,
+
+00:01:27.060 --> 00:01:32.311
+they lazy load on the fly
+based on the scroll position.
+
+00:01:32.311 --> 00:01:34.560
+When I say the scroll
+position-- based on intersecting
+
+00:01:34.560 --> 00:01:35.400
+with the viewport.
+
+00:01:35.400 --> 00:01:36.990
+So let's have a
+quick look at what
+
+00:01:36.990 --> 00:01:38.970
+the code looks like for that.
+
+00:01:38.970 --> 00:01:42.120
+I have myself a lazy
+load images class.
+
+00:01:42.120 --> 00:01:46.144
+And I do a quick check to see
+whether IntersectionObserver
+
+00:01:46.144 --> 00:01:46.685
+is supported.
+
+00:01:46.685 --> 00:01:50.250
+Because you'll see what happens
+here is basically early on,
+
+00:01:50.250 --> 00:01:54.230
+I look for anything which has
+this JS lazy image class on it.
+
+00:01:54.230 --> 00:01:57.680
+And if it does, then
+I set things up to go.
+
+00:01:57.680 --> 00:02:00.860
+But if we don't have support
+for an IntersectionObserver,
+
+00:02:00.860 --> 00:02:03.177
+I just kind of fall back
+to what I think most of us
+
+00:02:03.177 --> 00:02:05.010
+would do today, which
+is just go well, look,
+
+00:02:05.010 --> 00:02:07.260
+I can't do an
+IntersectionObserver.
+
+00:02:07.260 --> 00:02:09.400
+I'm just going to
+load everything.
+
+00:02:09.400 --> 00:02:11.096
+And that's OK.
+
+00:02:11.096 --> 00:02:12.720
+This is a progressive
+enhancement move.
+
+00:02:12.720 --> 00:02:16.410
+This is something we can use
+to improve our experiences.
+
+00:02:16.410 --> 00:02:19.080
+And you might say, I'm not going
+to load images immediately.
+
+00:02:19.080 --> 00:02:20.580
+What I'm actually
+going to do is I'm
+
+00:02:20.580 --> 00:02:22.920
+going to fall back to a
+scroll handler-based one.
+
+00:02:22.920 --> 00:02:24.240
+You might choose to do that.
+
+00:02:24.240 --> 00:02:26.580
+I would suggest
+typically you want
+
+00:02:26.580 --> 00:02:30.580
+to avoid anything that's
+coupled to the scroll handling,
+
+00:02:30.580 --> 00:02:33.720
+just because it's typically
+the case that a scroll is
+
+00:02:33.720 --> 00:02:37.310
+an animation, and it's
+very frame rate sensitive.
+
+00:02:37.310 --> 00:02:40.770
+And so you probably want to be
+careful about doing something
+
+00:02:40.770 --> 00:02:43.640
+that has the fire on
+a scroll handling.
+
+00:02:43.640 --> 00:02:44.140
+Anyway.
+
+00:02:44.140 --> 00:02:46.080
+That notwithstanding,
+I've decided
+
+00:02:46.080 --> 00:02:48.060
+that if we don't have
+an intersectionObserver,
+
+00:02:48.060 --> 00:02:49.830
+we're not doing anything.
+
+00:02:49.830 --> 00:02:52.630
+But what do we do when we've
+got an IntersectionObserver
+
+00:02:52.630 --> 00:02:53.340
+available to us?
+
+00:02:53.340 --> 00:02:56.220
+Well, we create one of these.
+
+00:02:56.220 --> 00:03:00.690
+And we have it observe
+all of the images which
+
+00:03:00.690 --> 00:03:02.617
+have JS lazy image class on it.
+
+00:03:02.617 --> 00:03:04.950
+So if they don't have that
+class on, we're not bothered.
+
+00:03:04.950 --> 00:03:09.032
+If we do, then we observe them.
+
+00:03:09.032 --> 00:03:09.990
+And what do we observe?
+
+00:03:09.990 --> 00:03:12.690
+Well we have a threshold,
+which is how much they
+
+00:03:12.690 --> 00:03:14.760
+have to intersect.
+
+00:03:14.760 --> 00:03:20.160
+By default, how much does it
+intersect with the viewport?
+
+00:03:20.160 --> 00:03:22.710
+And I have a 50-pixel margin.
+
+00:03:22.710 --> 00:03:25.380
+So when you imagine the
+viewport and then add
+
+00:03:25.380 --> 00:03:30.220
+50 pixels either side,
+that's the area of interest,
+
+00:03:30.220 --> 00:03:30.720
+if you like.
+
+00:03:30.720 --> 00:03:34.410
+And I'm asking, when
+does an image intersect?
+
+00:03:34.410 --> 00:03:36.630
+Let me know if an image
+intersects that viewport
+
+00:03:36.630 --> 00:03:39.057
+plus 50 pixels on either side.
+
+00:03:39.057 --> 00:03:40.890
+And there's a threshold
+that I need to know.
+
+00:03:40.890 --> 00:03:43.020
+So what it does
+is, if you imagine
+
+00:03:43.020 --> 00:03:45.210
+the image being completely
+inside the viewport,
+
+00:03:45.210 --> 00:03:47.070
+that would have a value of 1.
+
+00:03:47.070 --> 00:03:49.020
+If it's completely outside, 0.
+
+00:03:49.020 --> 00:03:51.886
+And then as it passes, it's
+going to go between 0 and 1.
+
+00:03:51.886 --> 00:03:53.010
+And so there's a threshold.
+
+00:03:53.010 --> 00:03:54.600
+As soon as you pass
+that threshold,
+
+00:03:54.600 --> 00:03:56.910
+I need to know about
+the intersection.
+
+00:03:56.910 --> 00:04:01.170
+And that's a hard coded
+value, which is 0.01,
+
+00:04:01.170 --> 00:04:06.570
+so it's 1% of overlap
+between those two areas.
+
+00:04:06.570 --> 00:04:08.880
+So what happens when we
+do actually see that?
+
+00:04:08.880 --> 00:04:13.110
+Well, you see I have
+this dot on intersection,
+
+00:04:13.110 --> 00:04:16.529
+as you see here,
+which is called--
+
+00:04:16.529 --> 00:04:19.170
+Because it's an observer,
+we get an array of entries.
+
+00:04:19.170 --> 00:04:21.060
+Because it's possible
+that with an observer
+
+00:04:21.060 --> 00:04:24.582
+you're going to get
+a backlog of entries.
+
+00:04:24.582 --> 00:04:26.040
+Because things
+could go in and out.
+
+00:04:26.040 --> 00:04:28.650
+And by the time you
+actually get to them,
+
+00:04:28.650 --> 00:04:32.057
+you need to maybe
+sort them by date.
+
+00:04:32.057 --> 00:04:34.140
+Actually, I don't know if
+they are already sorted.
+
+00:04:34.140 --> 00:04:35.310
+I should figure that out.
+
+00:04:35.310 --> 00:04:39.300
+In any case, with something
+like this, it's not too bad.
+
+00:04:39.300 --> 00:04:41.470
+I just need to know whether
+or not they've actually
+
+00:04:41.470 --> 00:04:42.720
+intersected with the viewport.
+
+00:04:42.720 --> 00:04:45.030
+And if they have, I'm fine
+with just going ahead.
+
+00:04:45.030 --> 00:04:46.200
+You might need to do
+something a bit more
+
+00:04:46.200 --> 00:04:48.230
+nuanced in your
+intersectionObserver callback
+
+00:04:48.230 --> 00:04:52.552
+where you say, well actually,
+is it the most recent record?
+
+00:04:52.552 --> 00:04:53.760
+And all these kind of things.
+
+00:04:53.760 --> 00:04:56.940
+But you can see hopefully that
+you could do some further work
+
+00:04:56.940 --> 00:04:58.980
+on those records.
+
+00:04:58.980 --> 00:05:01.200
+Right.
+
+00:05:01.200 --> 00:05:05.010
+If I find that in my entry
+that the intersection ratio is
+
+00:05:05.010 --> 00:05:09.240
+less than zero, as
+in it's no longer
+
+00:05:09.240 --> 00:05:12.340
+intersecting or whatever,
+don't worry about it.
+
+00:05:12.340 --> 00:05:13.230
+Forget about it.
+
+00:05:13.230 --> 00:05:15.600
+Don't need to know about it.
+
+00:05:15.600 --> 00:05:20.130
+If I have already tagged the
+image that is now intersecting,
+
+00:05:20.130 --> 00:05:21.960
+if I've tagged it with
+my handled class--
+
+00:05:21.960 --> 00:05:24.510
+so that's what I
+do, I tag something.
+
+00:05:24.510 --> 00:05:27.164
+So if something goes in,
+out, and then back in again,
+
+00:05:27.164 --> 00:05:29.080
+I don't need to know
+about it the second time.
+
+00:05:29.080 --> 00:05:30.780
+So the first time it comes
+in, and the first time I
+
+00:05:30.780 --> 00:05:32.640
+see an image intersecting
+with my viewport,
+
+00:05:32.640 --> 00:05:35.290
+I tag it with this class
+and say right, you're done.
+
+00:05:35.290 --> 00:05:41.484
+And if I see that that handled
+class is on, then I return.
+
+00:05:41.484 --> 00:05:42.900
+And then the last
+thing I actually
+
+00:05:42.900 --> 00:05:44.830
+do is preload the image.
+
+00:05:44.830 --> 00:05:49.300
+So how can I put this?
+
+00:05:49.300 --> 00:05:52.500
+What I do is I actually
+set a background image,
+
+00:05:52.500 --> 00:05:54.435
+and I fade it in.
+
+00:05:54.435 --> 00:05:57.060
+That's just the way I'm choosing
+to do this particular concept.
+
+00:05:57.060 --> 00:06:00.180
+It means that I can have a
+placeholder with a little icon.
+
+00:06:00.180 --> 00:06:02.400
+So if it takes a long
+while to load the image,
+
+00:06:02.400 --> 00:06:05.540
+then we can just put
+something up on screen,
+
+00:06:05.540 --> 00:06:06.680
+and then fade it in.
+
+00:06:06.680 --> 00:06:09.110
+So I preload the
+image here, which
+
+00:06:09.110 --> 00:06:11.420
+I have a thing that goes
+off, makes a new image,
+
+00:06:11.420 --> 00:06:13.970
+sets the source, and
+then does an onload
+
+00:06:13.970 --> 00:06:16.640
+and then resolves the promise.
+
+00:06:16.640 --> 00:06:18.080
+Which you find inside the utils.
+
+00:06:18.080 --> 00:06:19.730
+In fact, let me show you
+it, since we're here.
+
+00:06:19.730 --> 00:06:21.660
+Preload images, there we
+are, make a new image,
+
+00:06:21.660 --> 00:06:23.909
+set the source, and then I
+just use resolve and reject
+
+00:06:23.909 --> 00:06:26.410
+as the handlers for
+onload and onerror.
+
+00:06:26.410 --> 00:06:30.230
+So when the image is actually
+being preloaded, we apply it.
+
+00:06:30.230 --> 00:06:33.110
+So we find the element
+that we were talking about,
+
+00:06:33.110 --> 00:06:35.150
+which is image.
+
+00:06:35.150 --> 00:06:39.050
+And find the actual
+child of that,
+
+00:06:39.050 --> 00:06:41.230
+which is the class of
+JS lazy image content.
+
+00:06:41.230 --> 00:06:43.250
+So you can see, I
+have JS lazy image
+
+00:06:43.250 --> 00:06:46.012
+and JS lazy image content
+as my two classes.
+
+00:06:46.012 --> 00:06:47.720
+If I can't find it,
+don't worry about it.
+
+00:06:47.720 --> 00:06:50.000
+If I can, I set the
+background image,
+
+00:06:50.000 --> 00:06:51.560
+and then I add
+this fade in, which
+
+00:06:51.560 --> 00:06:56.060
+is an animation that fades
+the opacity from 0 to 1.
+
+00:06:56.060 --> 00:06:58.580
+So the idea of pre-loading the
+image is to make sure that,
+
+00:06:58.580 --> 00:07:00.590
+because it's a
+background image--
+
+00:07:00.590 --> 00:07:01.610
+here's the thing.
+
+00:07:01.610 --> 00:07:05.210
+Because it's a background
+image, there's no guarantee
+
+00:07:05.210 --> 00:07:07.070
+that if I just set
+the background image
+
+00:07:07.070 --> 00:07:09.590
+and then started fading in,
+that the image wouldn't be
+
+00:07:09.590 --> 00:07:11.210
+part loaded during the fade in.
+
+00:07:11.210 --> 00:07:14.030
+You get that bizarre
+it's fading but it's also
+
+00:07:14.030 --> 00:07:16.170
+loading at the same time feel.
+
+00:07:16.170 --> 00:07:18.350
+So I preload it, which is
+make sure it's definitely
+
+00:07:18.350 --> 00:07:19.310
+in the cache.
+
+00:07:19.310 --> 00:07:21.530
+And we talked previously
+about my caching headers.
+
+00:07:21.530 --> 00:07:25.900
+So the image should come
+with good caching headers.
+
+00:07:25.900 --> 00:07:27.440
+Preload it. get it.
+
+00:07:27.440 --> 00:07:28.490
+Make sure it's there.
+
+00:07:28.490 --> 00:07:30.039
+And then, we can
+see that background.
+
+00:07:30.039 --> 00:07:32.080
+So when we set the background
+image, it goes, oh.
+
+00:07:32.080 --> 00:07:33.020
+I better go and get that image.
+
+00:07:33.020 --> 00:07:34.640
+And he goes, oh, it's
+already there in the cache.
+
+00:07:34.640 --> 00:07:35.460
+Let me just use that.
+
+00:07:35.460 --> 00:07:35.960
+Pop.
+
+00:07:35.960 --> 00:07:39.290
+And it means that we don't
+get the partly downloaded kind
+
+00:07:39.290 --> 00:07:41.000
+of feel with our images.
+
+00:07:41.000 --> 00:07:41.690
+And that's it.
+
+00:07:41.690 --> 00:07:45.720
+So using IntersectionObserver is
+a nice progressive enhancement
+
+00:07:45.720 --> 00:07:46.220
+move.
+
+00:07:46.220 --> 00:07:47.150
+I'm enjoying it.
+
+00:07:47.150 --> 00:07:48.440
+It does the job perfectly.
+
+00:07:48.440 --> 00:07:52.520
+If we have a long page with a
+lot of content in and somebody
+
+00:07:52.520 --> 00:07:53.720
+doesn't scroll down.
+
+00:07:53.720 --> 00:07:55.370
+Why bother loading those images?
+
+00:07:55.370 --> 00:07:56.080
+No need.
+
+00:07:56.080 --> 00:07:58.610
+So it's not a lot
+of code, is it?
+
+00:07:58.610 --> 00:08:01.970
+115 or so lines of code
+just to handle that.
+
+00:08:01.970 --> 00:08:02.870
+Winning.
+
+00:08:02.870 --> 00:08:03.590
+So there you go.
+
+00:08:03.590 --> 00:08:06.090
+Next time, I'm going to have a
+chat with you about what I've
+
+00:08:06.090 --> 00:08:09.340
+been doing in the world of
+offline and prefetching video.
+
+00:08:09.340 --> 00:08:12.210
+And, oh my goodness,
+has that been a journey.
+
+00:08:12.210 --> 00:08:14.090
+Anyway, don't forget
+that you can subscribe.
+
+00:08:14.090 --> 00:08:15.830
+Don't forget you can
+your comments in,
+
+00:08:15.830 --> 00:08:16.880
+your questions in below.
+
+00:08:16.880 --> 00:08:20.960
+And I will catch you next time.
+
+00:08:20.960 --> 00:08:22.680
+Hello, thanks for watching.
+
+00:08:22.680 --> 00:08:24.260
+If you enjoyed this
+video, well, you
+
+00:08:24.260 --> 00:08:26.300
+may enjoy other videos
+that we make too.
+
+00:08:26.300 --> 00:08:28.022
+So don't forget that
+you can subscribe.
+
+00:08:28.022 --> 00:08:30.230
+And you'll get notified when
+we push out a new video.
+
+00:08:30.230 --> 00:08:32.299
+And, there's more
+videos over there
+
+00:08:32.299 --> 00:08:34.970
+or down there, depending on how
+you're watching the YouTubes,
+
+00:08:34.970 --> 00:08:35.780
+right now.
+
+00:08:35.780 --> 00:08:38.020
+Definitely click on those.
+

@@ -1,0 +1,1304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.410 --> 00:00:06.230 align:start position:0%
+ 
+hello<00:00:04.410><c> and</c><00:00:04.740><c> welcome</c><00:00:05.100><c> to</c><00:00:05.250><c> my</c><00:00:05.370><c> presentation</c><00:00:05.580><c> on</c>
+
+00:00:06.230 --> 00:00:06.240 align:start position:0%
+hello and welcome to my presentation on
+ 
+
+00:00:06.240 --> 00:00:10.009 align:start position:0%
+hello and welcome to my presentation on
+transport<00:00:06.930><c> layer</c><00:00:07.170><c> security</c><00:00:08.150><c> 1.3</c><00:00:09.150><c> which</c><00:00:09.840><c> is</c><00:00:09.990><c> a</c>
+
+00:00:10.009 --> 00:00:10.019 align:start position:0%
+transport layer security 1.3 which is a
+ 
+
+00:00:10.019 --> 00:00:13.549 align:start position:0%
+transport layer security 1.3 which is a
+new<00:00:10.290><c> security</c><00:00:10.920><c> feature</c><00:00:11.130><c> in</c><00:00:11.519><c> JDK</c><00:00:12.059><c> 11</c><00:00:12.540><c> my</c><00:00:13.349><c> name</c>
+
+00:00:13.549 --> 00:00:13.559 align:start position:0%
+new security feature in JDK 11 my name
+ 
+
+00:00:13.559 --> 00:00:15.379 align:start position:0%
+new security feature in JDK 11 my name
+is<00:00:13.710><c> Sean</c><00:00:13.920><c> Mullen</c><00:00:14.340><c> and</c><00:00:14.460><c> I'm</c><00:00:14.730><c> a</c><00:00:14.759><c> member</c><00:00:15.089><c> of</c><00:00:15.299><c> the</c>
+
+00:00:15.379 --> 00:00:15.389 align:start position:0%
+is Sean Mullen and I'm a member of the
+ 
+
+00:00:15.389 --> 00:00:23.210 align:start position:0%
+is Sean Mullen and I'm a member of the
+security<00:00:15.929><c> libraries</c><00:00:16.350><c> team</c><00:00:16.619><c> at</c><00:00:17.130><c> Oracle</c><00:00:22.220><c> so</c>
+
+00:00:23.210 --> 00:00:23.220 align:start position:0%
+security libraries team at Oracle so
+ 
+
+00:00:23.220 --> 00:00:25.009 align:start position:0%
+security libraries team at Oracle so
+first<00:00:23.550><c> that</c><00:00:23.820><c> some</c><00:00:24.029><c> background</c><00:00:24.480><c> let's</c><00:00:24.750><c> start</c>
+
+00:00:25.009 --> 00:00:25.019 align:start position:0%
+first that some background let's start
+ 
+
+00:00:25.019 --> 00:00:28.609 align:start position:0%
+first that some background let's start
+with<00:00:25.170><c> a</c><00:00:25.199><c> brief</c><00:00:25.560><c> overview</c><00:00:25.830><c> of</c><00:00:26.460><c> TLS</c><00:00:27.380><c> TLS</c><00:00:28.380><c> is</c><00:00:28.590><c> a</c>
+
+00:00:28.609 --> 00:00:28.619 align:start position:0%
+with a brief overview of TLS TLS is a
+ 
+
+00:00:28.619 --> 00:00:30.890 align:start position:0%
+with a brief overview of TLS TLS is a
+standard<00:00:29.189><c> protocol</c><00:00:29.640><c> for</c><00:00:30.000><c> allowing</c><00:00:30.330><c> clients</c>
+
+00:00:30.890 --> 00:00:30.900 align:start position:0%
+standard protocol for allowing clients
+ 
+
+00:00:30.900 --> 00:00:33.799 align:start position:0%
+standard protocol for allowing clients
+and<00:00:31.080><c> servers</c><00:00:31.380><c> to</c><00:00:32.219><c> securely</c><00:00:32.790><c> to</c><00:00:33.270><c> communicate</c>
+
+00:00:33.799 --> 00:00:33.809 align:start position:0%
+and servers to securely to communicate
+ 
+
+00:00:33.809 --> 00:00:36.889 align:start position:0%
+and servers to securely to communicate
+securely<00:00:34.230><c> over</c><00:00:34.410><c> the</c><00:00:34.770><c> Internet</c><00:00:35.450><c> it</c><00:00:36.450><c> provides</c>
+
+00:00:36.889 --> 00:00:36.899 align:start position:0%
+securely over the Internet it provides
+ 
+
+00:00:36.899 --> 00:00:38.209 align:start position:0%
+securely over the Internet it provides
+the<00:00:37.079><c> security</c><00:00:37.290><c> properties</c><00:00:38.040><c> of</c>
+
+00:00:38.209 --> 00:00:38.219 align:start position:0%
+the security properties of
+ 
+
+00:00:38.219 --> 00:00:40.819 align:start position:0%
+the security properties of
+confidentiality<00:00:39.110><c> authenticity</c><00:00:40.110><c> and</c>
+
+00:00:40.819 --> 00:00:40.829 align:start position:0%
+confidentiality authenticity and
+ 
+
+00:00:40.829 --> 00:00:44.330 align:start position:0%
+confidentiality authenticity and
+integrity<00:00:41.780><c> TLS</c><00:00:42.780><c> is</c><00:00:42.989><c> most</c><00:00:43.350><c> commonly</c><00:00:43.860><c> used</c><00:00:44.129><c> by</c>
+
+00:00:44.330 --> 00:00:44.340 align:start position:0%
+integrity TLS is most commonly used by
+ 
+
+00:00:44.340 --> 00:00:47.119 align:start position:0%
+integrity TLS is most commonly used by
+web<00:00:44.579><c> browsers</c><00:00:44.610><c> and</c><00:00:45.300><c> web</c><00:00:45.360><c> servers</c><00:00:45.649><c> to</c><00:00:46.649><c> secure</c>
+
+00:00:47.119 --> 00:00:47.129 align:start position:0%
+web browsers and web servers to secure
+ 
+
+00:00:47.129 --> 00:00:51.439 align:start position:0%
+web browsers and web servers to secure
+data<00:00:47.160><c> sent</c><00:00:47.910><c> over</c><00:00:48.180><c> the</c><00:00:48.300><c> Internet</c><00:00:49.879><c> the</c><00:00:50.879><c> JDK</c>
+
+00:00:51.439 --> 00:00:51.449 align:start position:0%
+data sent over the Internet the JDK
+ 
+
+00:00:51.449 --> 00:00:53.299 align:start position:0%
+data sent over the Internet the JDK
+includes<00:00:51.930><c> implementations</c><00:00:52.739><c> of</c><00:00:52.920><c> various</c>
+
+00:00:53.299 --> 00:00:53.309 align:start position:0%
+includes implementations of various
+ 
+
+00:00:53.309 --> 00:00:56.560 align:start position:0%
+includes implementations of various
+versions<00:00:53.579><c> of</c><00:00:53.940><c> the</c><00:00:54.239><c> SSL</c><00:00:54.750><c> and</c><00:00:55.020><c> TLS</c><00:00:55.170><c> protocols</c>
+
+00:00:56.560 --> 00:00:56.570 align:start position:0%
+versions of the SSL and TLS protocols
+ 
+
+00:00:56.570 --> 00:01:00.369 align:start position:0%
+versions of the SSL and TLS protocols
+specifically<00:00:57.570><c> SSL</c><00:00:58.289><c> version</c><00:00:58.530><c> 3</c><00:00:59.270><c> TLS</c><00:01:00.270><c> version</c>
+
+00:01:00.369 --> 00:01:00.379 align:start position:0%
+specifically SSL version 3 TLS version
+ 
+
+00:01:00.379 --> 00:01:05.450 align:start position:0%
+specifically SSL version 3 TLS version
+1.0<00:01:01.379><c> and</c><00:01:01.710><c> 1.2</c><00:01:02.840><c> d</c><00:01:03.840><c> TLS</c><00:01:04.379><c> which</c><00:01:04.619><c> is</c><00:01:04.799><c> the</c><00:01:04.949><c> Datagram</c>
+
+00:01:05.450 --> 00:01:05.460 align:start position:0%
+1.0 and 1.2 d TLS which is the Datagram
+ 
+
+00:01:05.460 --> 00:01:09.200 align:start position:0%
+1.0 and 1.2 d TLS which is the Datagram
+version<00:01:05.939><c> of</c><00:01:06.030><c> TLS</c><00:01:06.450><c> version</c><00:01:06.860><c> 1.0</c><00:01:07.860><c> and</c><00:01:08.130><c> 1.2</c><00:01:08.729><c> and</c>
+
+00:01:09.200 --> 00:01:09.210 align:start position:0%
+version of TLS version 1.0 and 1.2 and
+ 
+
+00:01:09.210 --> 00:01:13.719 align:start position:0%
+version of TLS version 1.0 and 1.2 and
+now<00:01:09.900><c> with</c><00:01:10.110><c> jdk</c><00:01:10.560><c> 11</c><00:01:11.010><c> TLS</c><00:01:11.760><c> version</c><00:01:11.790><c> 1.3</c>
+
+00:01:13.719 --> 00:01:13.729 align:start position:0%
+now with jdk 11 TLS version 1.3
+ 
+
+00:01:13.729 --> 00:01:17.200 align:start position:0%
+now with jdk 11 TLS version 1.3
+note<00:01:14.729><c> that</c><00:01:14.760><c> SSL</c><00:01:15.450><c> v3</c><00:01:15.720><c> is</c><00:01:16.320><c> widely</c><00:01:16.740><c> considered</c>
+
+00:01:17.200 --> 00:01:17.210 align:start position:0%
+note that SSL v3 is widely considered
+ 
+
+00:01:17.210 --> 00:01:20.330 align:start position:0%
+note that SSL v3 is widely considered
+insecure<00:01:18.210><c> and</c><00:01:18.479><c> unsafe</c><00:01:19.020><c> to</c><00:01:19.229><c> use</c><00:01:19.439><c> and</c><00:01:19.770><c> it's</c>
+
+00:01:20.330 --> 00:01:20.340 align:start position:0%
+insecure and unsafe to use and it's
+ 
+
+00:01:20.340 --> 00:01:25.160 align:start position:0%
+insecure and unsafe to use and it's
+disabled<00:01:20.909><c> by</c><00:01:21.060><c> default</c><00:01:21.540><c> in</c><00:01:21.780><c> the</c><00:01:21.900><c> jdk</c><00:01:24.170><c> when</c>
+
+00:01:25.160 --> 00:01:25.170 align:start position:0%
+disabled by default in the jdk when
+ 
+
+00:01:25.170 --> 00:01:27.560 align:start position:0%
+disabled by default in the jdk when
+using<00:01:25.500><c> TLS</c><00:01:25.770><c> in</c><00:01:26.100><c> your</c><00:01:26.220><c> java</c><00:01:26.490><c> applications</c><00:01:27.240><c> you</c>
+
+00:01:27.560 --> 00:01:27.570 align:start position:0%
+using TLS in your java applications you
+ 
+
+00:01:27.570 --> 00:01:31.100 align:start position:0%
+using TLS in your java applications you
+can<00:01:27.689><c> use</c><00:01:27.900><c> the</c><00:01:28.080><c> java</c><00:01:28.350><c> x</c><00:01:28.619><c> net</c><00:01:29.220><c> and</c><00:01:29.490><c> java</c><00:01:30.270><c> x</c><00:01:30.540><c> net</c>
+
+00:01:31.100 --> 00:01:31.110 align:start position:0%
+can use the java x net and java x net
+ 
+
+00:01:31.110 --> 00:01:34.480 align:start position:0%
+can use the java x net and java x net
+ssl<00:01:31.979><c> packages</c><00:01:32.549><c> into</c><00:01:33.150><c> java</c><00:01:33.509><c> dot</c><00:01:33.750><c> base</c><00:01:34.020><c> module</c>
+
+00:01:34.480 --> 00:01:34.490 align:start position:0%
+ssl packages into java dot base module
+ 
+
+00:01:34.490 --> 00:01:37.550 align:start position:0%
+ssl packages into java dot base module
+these<00:01:35.490><c> are</c><00:01:35.670><c> lower</c><00:01:35.909><c> level</c><00:01:36.360><c> api's</c><00:01:36.840><c> for</c><00:01:37.259><c> using</c>
+
+00:01:37.550 --> 00:01:37.560 align:start position:0%
+these are lower level api's for using
+ 
+
+00:01:37.560 --> 00:01:41.060 align:start position:0%
+these are lower level api's for using
+SSL<00:01:38.040><c> and</c><00:01:38.310><c> TLS</c><00:01:38.460><c> and</c><00:01:39.240><c> are</c><00:01:39.780><c> often</c><00:01:40.200><c> referred</c><00:01:40.380><c> to</c><00:01:40.590><c> as</c>
+
+00:01:41.060 --> 00:01:41.070 align:start position:0%
+SSL and TLS and are often referred to as
+ 
+
+00:01:41.070 --> 00:01:45.020 align:start position:0%
+SSL and TLS and are often referred to as
+JSF<00:01:42.000><c> II</c><00:01:42.180><c> or</c><00:01:42.960><c> the</c><00:01:43.470><c> Java</c><00:01:43.950><c> secure</c><00:01:44.490><c> socket</c>
+
+00:01:45.020 --> 00:01:45.030 align:start position:0%
+JSF II or the Java secure socket
+ 
+
+00:01:45.030 --> 00:01:49.730 align:start position:0%
+JSF II or the Java secure socket
+extension<00:01:46.579><c> if</c><00:01:47.579><c> you</c><00:01:47.790><c> are</c><00:01:47.909><c> using</c><00:01:48.119><c> HTTP</c><00:01:49.110><c> and</c><00:01:49.439><c> you</c>
+
+00:01:49.730 --> 00:01:49.740 align:start position:0%
+extension if you are using HTTP and you
+ 
+
+00:01:49.740 --> 00:01:51.200 align:start position:0%
+extension if you are using HTTP and you
+want<00:01:49.920><c> to</c><00:01:50.009><c> establish</c><00:01:50.130><c> a</c><00:01:50.430><c> secure</c><00:01:50.939><c> connection</c>
+
+00:01:51.200 --> 00:01:51.210 align:start position:0%
+want to establish a secure connection
+ 
+
+00:01:51.210 --> 00:01:55.249 align:start position:0%
+want to establish a secure connection
+using<00:01:51.780><c> HTTPS</c><00:01:52.740><c> you</c><00:01:53.640><c> can</c><00:01:53.850><c> now</c><00:01:54.000><c> use</c><00:01:54.240><c> the</c><00:01:54.479><c> new</c><00:01:54.509><c> JDK</c>
+
+00:01:55.249 --> 00:01:55.259 align:start position:0%
+using HTTPS you can now use the new JDK
+ 
+
+00:01:55.259 --> 00:01:59.080 align:start position:0%
+using HTTPS you can now use the new JDK
+11<00:01:55.680><c> HTTP</c><00:01:56.490><c> client</c><00:01:57.000><c> API</c><00:01:57.390><c> which</c><00:01:58.350><c> is</c><00:01:58.500><c> in</c><00:01:58.619><c> the</c><00:01:58.740><c> Java</c>
+
+00:01:59.080 --> 00:01:59.090 align:start position:0%
+11 HTTP client API which is in the Java
+ 
+
+00:01:59.090 --> 00:02:04.280 align:start position:0%
+11 HTTP client API which is in the Java
+net<00:02:00.170><c> HTTP</c><00:02:01.170><c> package</c><00:02:01.409><c> in</c><00:02:01.890><c> the</c><00:02:02.399><c> java.net</c><00:02:03.290><c> HTTP</c>
+
+00:02:04.280 --> 00:02:04.290 align:start position:0%
+net HTTP package in the java.net HTTP
+ 
+
+00:02:04.290 --> 00:02:09.290 align:start position:0%
+net HTTP package in the java.net HTTP
+module
+
+00:02:09.290 --> 00:02:09.300 align:start position:0%
+ 
+ 
+
+00:02:09.300 --> 00:02:12.180 align:start position:0%
+ 
+so<00:02:10.300><c> why</c><00:02:10.509><c> do</c><00:02:10.569><c> we</c><00:02:10.690><c> need</c><00:02:10.929><c> another</c><00:02:10.989><c> version</c><00:02:11.500><c> of</c><00:02:11.800><c> TLS</c>
+
+00:02:12.180 --> 00:02:12.190 align:start position:0%
+so why do we need another version of TLS
+ 
+
+00:02:12.190 --> 00:02:14.820 align:start position:0%
+so why do we need another version of TLS
+why<00:02:12.489><c> do</c><00:02:12.549><c> we</c><00:02:12.730><c> need</c><00:02:12.879><c> TLS</c><00:02:13.360><c> 21.3</c><00:02:13.930><c> let's</c><00:02:14.560><c> take</c><00:02:14.799><c> a</c>
+
+00:02:14.820 --> 00:02:14.830 align:start position:0%
+why do we need TLS 21.3 let's take a
+ 
+
+00:02:14.830 --> 00:02:16.229 align:start position:0%
+why do we need TLS 21.3 let's take a
+brief<00:02:15.159><c> look</c><00:02:15.280><c> at</c><00:02:15.489><c> some</c><00:02:15.730><c> of</c><00:02:15.819><c> the</c><00:02:15.879><c> issues</c><00:02:16.030><c> that</c>
+
+00:02:16.229 --> 00:02:16.239 align:start position:0%
+brief look at some of the issues that
+ 
+
+00:02:16.239 --> 00:02:18.649 align:start position:0%
+brief look at some of the issues that
+these<00:02:16.599><c> protocols</c><00:02:17.019><c> have</c><00:02:17.349><c> had</c><00:02:17.560><c> over</c><00:02:17.709><c> the</c><00:02:17.860><c> years</c>
+
+00:02:18.649 --> 00:02:18.659 align:start position:0%
+these protocols have had over the years
+ 
+
+00:02:18.659 --> 00:02:22.199 align:start position:0%
+these protocols have had over the years
+first<00:02:19.659><c> Excel</c><00:02:20.379><c> v3</c><00:02:20.980><c> has</c><00:02:21.220><c> multiple</c>
+
+00:02:22.199 --> 00:02:22.209 align:start position:0%
+first Excel v3 has multiple
+ 
+
+00:02:22.209 --> 00:02:24.030 align:start position:0%
+first Excel v3 has multiple
+vulnerabilities<00:02:22.360><c> and</c><00:02:23.230><c> it's</c><00:02:23.470><c> formally</c>
+
+00:02:24.030 --> 00:02:24.040 align:start position:0%
+vulnerabilities and it's formally
+ 
+
+00:02:24.040 --> 00:02:27.229 align:start position:0%
+vulnerabilities and it's formally
+deprecated<00:02:24.700><c> in</c><00:02:24.849><c> RFC</c><00:02:25.209><c> seven</c><00:02:26.080><c> five</c><00:02:26.290><c> six</c><00:02:26.650><c> eight</c>
+
+00:02:27.229 --> 00:02:27.239 align:start position:0%
+deprecated in RFC seven five six eight
+ 
+
+00:02:27.239 --> 00:02:31.039 align:start position:0%
+deprecated in RFC seven five six eight
+it<00:02:28.239><c> should</c><00:02:28.269><c> no</c><00:02:28.660><c> longer</c><00:02:28.690><c> be</c><00:02:29.019><c> used</c><00:02:29.319><c> in</c><00:02:29.530><c> practice</c>
+
+00:02:31.039 --> 00:02:31.049 align:start position:0%
+it should no longer be used in practice
+ 
+
+00:02:31.049 --> 00:02:33.750 align:start position:0%
+it should no longer be used in practice
+the<00:02:32.049><c> TLS</c><00:02:32.530><c> protocols</c><00:02:33.099><c> have</c><00:02:33.310><c> had</c><00:02:33.489><c> many</c>
+
+00:02:33.750 --> 00:02:33.760 align:start position:0%
+the TLS protocols have had many
+ 
+
+00:02:33.760 --> 00:02:36.530 align:start position:0%
+the TLS protocols have had many
+challenges<00:02:34.090><c> over</c><00:02:34.510><c> the</c><00:02:34.780><c> last</c><00:02:34.989><c> 20</c><00:02:35.500><c> or</c><00:02:35.530><c> so</c><00:02:35.860><c> years</c>
+
+00:02:36.530 --> 00:02:36.540 align:start position:0%
+challenges over the last 20 or so years
+ 
+
+00:02:36.540 --> 00:02:40.199 align:start position:0%
+challenges over the last 20 or so years
+RFC<00:02:37.769><c> 747</c><00:02:38.769><c> gives</c><00:02:39.010><c> a</c><00:02:39.129><c> really</c><00:02:39.430><c> good</c><00:02:39.579><c> summary</c><00:02:40.000><c> of</c>
+
+00:02:40.199 --> 00:02:40.209 align:start position:0%
+RFC 747 gives a really good summary of
+ 
+
+00:02:40.209 --> 00:02:43.050 align:start position:0%
+RFC 747 gives a really good summary of
+these<00:02:40.629><c> attacks</c><00:02:40.989><c> and</c><00:02:41.530><c> it's</c><00:02:42.220><c> interesting</c><00:02:42.610><c> to</c>
+
+00:02:43.050 --> 00:02:43.060 align:start position:0%
+these attacks and it's interesting to
+ 
+
+00:02:43.060 --> 00:02:48.270 align:start position:0%
+these attacks and it's interesting to
+see<00:02:44.160><c> TLS</c><00:02:45.160><c> versions</c><00:02:45.610><c> 1.0</c><00:02:45.849><c> and</c><00:02:46.510><c> 1.1</c><00:02:47.170><c> are</c><00:02:47.440><c> both</c>
+
+00:02:48.270 --> 00:02:48.280 align:start position:0%
+see TLS versions 1.0 and 1.1 are both
+ 
+
+00:02:48.280 --> 00:02:50.550 align:start position:0%
+see TLS versions 1.0 and 1.1 are both
+now<00:02:48.730><c> quite</c><00:02:49.150><c> old</c><00:02:49.420><c> and</c><00:02:49.750><c> are</c><00:02:49.870><c> rapidly</c><00:02:50.079><c> being</c>
+
+00:02:50.550 --> 00:02:50.560 align:start position:0%
+now quite old and are rapidly being
+ 
+
+00:02:50.560 --> 00:02:54.539 align:start position:0%
+now quite old and are rapidly being
+phased<00:02:50.859><c> out</c><00:02:51.629><c> TLS</c><00:02:52.629><c> version</c><00:02:52.660><c> 1.2</c><00:02:53.620><c> is</c><00:02:54.099><c> the</c>
+
+00:02:54.539 --> 00:02:54.549 align:start position:0%
+phased out TLS version 1.2 is the
+ 
+
+00:02:54.549 --> 00:02:57.630 align:start position:0%
+phased out TLS version 1.2 is the
+current<00:02:54.940><c> TLS</c><00:02:55.329><c> best</c><00:02:55.660><c> practice</c><00:02:56.260><c> but</c><00:02:57.010><c> it</c><00:02:57.220><c> itself</c>
+
+00:02:57.630 --> 00:02:57.640 align:start position:0%
+current TLS best practice but it itself
+ 
+
+00:02:57.640 --> 00:03:01.009 align:start position:0%
+current TLS best practice but it itself
+is<00:02:57.910><c> also</c><00:02:58.239><c> fairly</c><00:02:58.510><c> old</c><00:02:58.780><c> about</c><00:02:59.200><c> 10</c><00:02:59.470><c> years</c><00:02:59.650><c> old</c><00:02:59.950><c> so</c>
+
+00:03:01.009 --> 00:03:01.019 align:start position:0%
+is also fairly old about 10 years old so
+ 
+
+00:03:01.019 --> 00:03:04.349 align:start position:0%
+is also fairly old about 10 years old so
+there<00:03:02.019><c> was</c><00:03:02.200><c> general</c><00:03:02.590><c> consensus</c><00:03:03.310><c> that</c><00:03:03.519><c> it</c>
+
+00:03:04.349 --> 00:03:04.359 align:start position:0%
+there was general consensus that it
+ 
+
+00:03:04.359 --> 00:03:06.839 align:start position:0%
+there was general consensus that it
+needed<00:03:04.720><c> to</c><00:03:04.840><c> be</c><00:03:04.959><c> updated</c><00:03:05.560><c> with</c><00:03:05.709><c> more</c><00:03:06.430><c> modern</c>
+
+00:03:06.839 --> 00:03:06.849 align:start position:0%
+needed to be updated with more modern
+ 
+
+00:03:06.849 --> 00:03:08.599 align:start position:0%
+needed to be updated with more modern
+and<00:03:07.090><c> latest</c><00:03:07.480><c> crypto</c><00:03:07.840><c> practices</c><00:03:08.470><c> in</c>
+
+00:03:08.599 --> 00:03:08.609 align:start position:0%
+and latest crypto practices in
+ 
+
+00:03:08.609 --> 00:03:18.360 align:start position:0%
+and latest crypto practices in
+advancements<00:03:15.419><c> so</c><00:03:16.419><c> TLS</c><00:03:16.810><c> 1.3</c><00:03:17.470><c> was</c><00:03:17.680><c> about</c><00:03:17.980><c> four</c>
+
+00:03:18.360 --> 00:03:18.370 align:start position:0%
+advancements so TLS 1.3 was about four
+ 
+
+00:03:18.370 --> 00:03:20.729 align:start position:0%
+advancements so TLS 1.3 was about four
+years<00:03:18.880><c> in</c><00:03:19.120><c> the</c><00:03:19.209><c> making</c><00:03:19.389><c> it</c><00:03:20.109><c> was</c><00:03:20.260><c> recently</c>
+
+00:03:20.729 --> 00:03:20.739 align:start position:0%
+years in the making it was recently
+ 
+
+00:03:20.739 --> 00:03:24.629 align:start position:0%
+years in the making it was recently
+published<00:03:20.980><c> in</c><00:03:21.370><c> August</c><00:03:21.819><c> 2000</c><00:03:22.750><c> 18</c><00:03:23.139><c> as</c><00:03:23.440><c> RFC</c><00:03:23.829><c> 84</c>
+
+00:03:24.629 --> 00:03:24.639 align:start position:0%
+published in August 2000 18 as RFC 84
+ 
+
+00:03:24.639 --> 00:03:26.270 align:start position:0%
+published in August 2000 18 as RFC 84
+for<00:03:25.030><c> six</c>
+
+00:03:26.270 --> 00:03:26.280 align:start position:0%
+for six
+ 
+
+00:03:26.280 --> 00:03:30.120 align:start position:0%
+for six
+TLS<00:03:27.280><c> 1.3</c><00:03:27.880><c> is</c><00:03:28.030><c> a</c><00:03:28.060><c> major</c><00:03:28.540><c> overhaul</c><00:03:29.290><c> of</c><00:03:29.500><c> the</c><00:03:29.769><c> TLS</c>
+
+00:03:30.120 --> 00:03:30.130 align:start position:0%
+TLS 1.3 is a major overhaul of the TLS
+ 
+
+00:03:30.130 --> 00:03:32.839 align:start position:0%
+TLS 1.3 is a major overhaul of the TLS
+protocol<00:03:30.639><c> with</c><00:03:31.000><c> two</c><00:03:31.389><c> primary</c><00:03:31.989><c> benefits</c>
+
+00:03:32.839 --> 00:03:32.849 align:start position:0%
+protocol with two primary benefits
+ 
+
+00:03:32.849 --> 00:03:36.170 align:start position:0%
+protocol with two primary benefits
+enhanced<00:03:33.849><c> security</c><00:03:33.970><c> and</c><00:03:34.540><c> improved</c><00:03:35.440><c> speed</c>
+
+00:03:36.170 --> 00:03:36.180 align:start position:0%
+enhanced security and improved speed
+ 
+
+00:03:36.180 --> 00:03:38.159 align:start position:0%
+enhanced security and improved speed
+let's<00:03:37.180><c> take</c><00:03:37.389><c> a</c><00:03:37.419><c> look</c><00:03:37.630><c> at</c><00:03:37.720><c> each</c><00:03:37.900><c> of</c><00:03:38.079><c> those</c>
+
+00:03:38.159 --> 00:03:38.169 align:start position:0%
+let's take a look at each of those
+ 
+
+00:03:38.169 --> 00:03:45.059 align:start position:0%
+let's take a look at each of those
+improvements<00:03:38.620><c> in</c><00:03:39.010><c> a</c><00:03:39.130><c> bit</c><00:03:39.280><c> more</c><00:03:39.459><c> detail</c><00:03:44.069><c> so</c>
+
+00:03:45.059 --> 00:03:45.069 align:start position:0%
+improvements in a bit more detail so
+ 
+
+00:03:45.069 --> 00:03:48.500 align:start position:0%
+improvements in a bit more detail so
+enhance<00:03:45.730><c> security</c><00:03:46.319><c> less</c><00:03:47.319><c> is</c><00:03:47.620><c> safer</c>
+
+00:03:48.500 --> 00:03:48.510 align:start position:0%
+enhance security less is safer
+ 
+
+00:03:48.510 --> 00:03:51.930 align:start position:0%
+enhance security less is safer
+TLS<00:03:49.510><c> 1.3</c><00:03:50.169><c> removes</c><00:03:50.650><c> support</c><00:03:51.160><c> for</c><00:03:51.370><c> outdated</c>
+
+00:03:51.930 --> 00:03:51.940 align:start position:0%
+TLS 1.3 removes support for outdated
+ 
+
+00:03:51.940 --> 00:03:54.629 align:start position:0%
+TLS 1.3 removes support for outdated
+cryptography<00:03:52.660><c> which</c><00:03:53.379><c> improves</c><00:03:53.919><c> the</c><00:03:54.040><c> security</c>
+
+00:03:54.629 --> 00:03:54.639 align:start position:0%
+cryptography which improves the security
+ 
+
+00:03:54.639 --> 00:03:56.670 align:start position:0%
+cryptography which improves the security
+and<00:03:54.849><c> makes</c><00:03:55.060><c> it</c><00:03:55.239><c> less</c><00:03:55.510><c> likely</c><00:03:55.810><c> a</c><00:03:56.019><c> session</c><00:03:56.530><c> can</c>
+
+00:03:56.670 --> 00:03:56.680 align:start position:0%
+and makes it less likely a session can
+ 
+
+00:03:56.680 --> 00:03:59.220 align:start position:0%
+and makes it less likely a session can
+be<00:03:56.799><c> broken</c><00:03:57.010><c> because</c><00:03:57.819><c> of</c><00:03:58.180><c> an</c><00:03:58.269><c> insecure</c><00:03:58.840><c> cipher</c>
+
+00:03:59.220 --> 00:03:59.230 align:start position:0%
+be broken because of an insecure cipher
+ 
+
+00:03:59.230 --> 00:04:01.400 align:start position:0%
+be broken because of an insecure cipher
+suite<00:03:59.470><c> or</c><00:03:59.950><c> some</c><00:04:00.370><c> other</c><00:04:00.549><c> form</c><00:04:00.910><c> of</c><00:04:01.030><c> weak</c>
+
+00:04:01.400 --> 00:04:01.410 align:start position:0%
+suite or some other form of weak
+ 
+
+00:04:01.410 --> 00:04:05.610 align:start position:0%
+suite or some other form of weak
+cryptography<00:04:02.410><c> that</c><00:04:02.590><c> was</c><00:04:02.769><c> used</c><00:04:04.169><c> the</c><00:04:05.169><c> removal</c>
+
+00:04:05.610 --> 00:04:05.620 align:start position:0%
+cryptography that was used the removal
+ 
+
+00:04:05.620 --> 00:04:08.180 align:start position:0%
+cryptography that was used the removal
+of<00:04:05.650><c> the</c><00:04:05.769><c> cryptograph</c><00:04:06.329><c> outdated</c><00:04:07.329><c> cryptography</c>
+
+00:04:08.180 --> 00:04:08.190 align:start position:0%
+of the cryptograph outdated cryptography
+ 
+
+00:04:08.190 --> 00:04:13.229 align:start position:0%
+of the cryptograph outdated cryptography
+includes<00:04:11.010><c> such</c><00:04:12.010><c> functionalities</c><00:04:12.849><c> such</c><00:04:13.060><c> as</c>
+
+00:04:13.229 --> 00:04:13.239 align:start position:0%
+includes such functionalities such as
+ 
+
+00:04:13.239 --> 00:04:15.000 align:start position:0%
+includes such functionalities such as
+static<00:04:13.599><c> RSA</c><00:04:14.079><c> and</c><00:04:14.410><c> diffie-hellman</c><00:04:14.650><c> key</c>
+
+00:04:15.000 --> 00:04:15.010 align:start position:0%
+static RSA and diffie-hellman key
+ 
+
+00:04:15.010 --> 00:04:19.349 align:start position:0%
+static RSA and diffie-hellman key
+exchange<00:04:16.109><c> CBC</c><00:04:17.109><c> mode</c><00:04:17.289><c> ciphers</c><00:04:17.940><c> md5</c><00:04:18.940><c> and</c><00:04:19.120><c> sha-1</c>
+
+00:04:19.349 --> 00:04:19.359 align:start position:0%
+exchange CBC mode ciphers md5 and sha-1
+ 
+
+00:04:19.359 --> 00:04:20.680 align:start position:0%
+exchange CBC mode ciphers md5 and sha-1
+hash<00:04:19.630><c> function</c>
+
+00:04:20.680 --> 00:04:20.690 align:start position:0%
+hash function
+ 
+
+00:04:20.690 --> 00:04:24.740 align:start position:0%
+hash function
+Triple<00:04:21.690><c> DES</c><00:04:21.900><c> and</c><00:04:22.169><c> rc4</c><00:04:22.740><c> ciphers</c><00:04:23.280><c> and</c><00:04:23.750><c> arbitrary</c>
+
+00:04:24.740 --> 00:04:24.750 align:start position:0%
+Triple DES and rc4 ciphers and arbitrary
+ 
+
+00:04:24.750 --> 00:04:30.080 align:start position:0%
+Triple DES and rc4 ciphers and arbitrary
+diffie-hellman<00:04:25.110><c> groups</c><00:04:28.130><c> TLS</c><00:04:29.130><c> 1.3</c><00:04:29.729><c> also</c>
+
+00:04:30.080 --> 00:04:30.090 align:start position:0%
+diffie-hellman groups TLS 1.3 also
+ 
+
+00:04:30.090 --> 00:04:31.760 align:start position:0%
+diffie-hellman groups TLS 1.3 also
+removes<00:04:30.479><c> unsafe</c><00:04:30.960><c> features</c><00:04:31.470><c> such</c><00:04:31.740><c> as</c>
+
+00:04:31.760 --> 00:04:31.770 align:start position:0%
+removes unsafe features such as
+ 
+
+00:04:31.770 --> 00:04:36.110 align:start position:0%
+removes unsafe features such as
+compression<00:04:32.370><c> and</c><00:04:32.729><c> renegotiate</c><00:04:34.789><c> this</c><00:04:35.789><c> is</c><00:04:35.970><c> not</c>
+
+00:04:36.110 --> 00:04:36.120 align:start position:0%
+compression and renegotiate this is not
+ 
+
+00:04:36.120 --> 00:04:38.060 align:start position:0%
+compression and renegotiate this is not
+a<00:04:36.150><c> complete</c><00:04:36.539><c> list</c><00:04:36.720><c> you</c><00:04:37.320><c> should</c><00:04:37.530><c> see</c><00:04:37.680><c> the</c><00:04:37.800><c> RFC</c>
+
+00:04:38.060 --> 00:04:38.070 align:start position:0%
+a complete list you should see the RFC
+ 
+
+00:04:38.070 --> 00:04:39.770 align:start position:0%
+a complete list you should see the RFC
+and<00:04:38.370><c> other</c><00:04:38.490><c> online</c><00:04:38.759><c> literature</c><00:04:39.419><c> for</c><00:04:39.600><c> other</c>
+
+00:04:39.770 --> 00:04:39.780 align:start position:0%
+and other online literature for other
+ 
+
+00:04:39.780 --> 00:04:48.010 align:start position:0%
+and other online literature for other
+features<00:04:40.259><c> I've</c><00:04:40.470><c> been</c><00:04:40.620><c> removed</c><00:04:40.979><c> or</c><00:04:41.280><c> simplified</c>
+
+00:04:48.010 --> 00:04:48.020 align:start position:0%
+ 
+ 
+
+00:04:48.020 --> 00:04:52.189 align:start position:0%
+ 
+in<00:04:49.020><c> general</c><00:04:49.620><c> TLS</c><00:04:50.039><c> 1.3</c><00:04:50.820><c> supports</c><00:04:51.300><c> fewer</c><00:04:51.840><c> and</c>
+
+00:04:52.189 --> 00:04:52.199 align:start position:0%
+in general TLS 1.3 supports fewer and
+ 
+
+00:04:52.199 --> 00:04:54.760 align:start position:0%
+in general TLS 1.3 supports fewer and
+more<00:04:52.229><c> modern</c><00:04:52.889><c> crypto</c><00:04:53.669><c> algorithms</c>
+
+00:04:54.760 --> 00:04:54.770 align:start position:0%
+more modern crypto algorithms
+ 
+
+00:04:54.770 --> 00:04:58.969 align:start position:0%
+more modern crypto algorithms
+it<00:04:55.770><c> adds</c><00:04:56.039><c> support</c><00:04:56.280><c> for</c><00:04:56.550><c> RSA</c><00:04:57.150><c> SSA</c><00:04:57.930><c> -</c><00:04:58.350><c> PSS</c>
+
+00:04:58.969 --> 00:04:58.979 align:start position:0%
+it adds support for RSA SSA - PSS
+ 
+
+00:04:58.979 --> 00:05:01.580 align:start position:0%
+it adds support for RSA SSA - PSS
+signature<00:04:59.490><c> algorithm</c><00:04:59.729><c> the</c><00:05:00.539><c> cha-cha</c><00:05:00.960><c> 20</c><00:05:01.380><c> and</c>
+
+00:05:01.580 --> 00:05:01.590 align:start position:0%
+signature algorithm the cha-cha 20 and
+ 
+
+00:05:01.590 --> 00:05:06.110 align:start position:0%
+signature algorithm the cha-cha 20 and
+poly<00:05:01.800><c> 1</c><00:05:02.070><c> 305</c><00:05:02.669><c> stream</c><00:05:03.090><c> ciphers</c><00:05:03.590><c> the</c><00:05:04.590><c> x2</c><00:05:05.100><c> 55</c><00:05:05.610><c> 1</c><00:05:05.880><c> 9</c>
+
+00:05:06.110 --> 00:05:06.120 align:start position:0%
+poly 1 305 stream ciphers the x2 55 1 9
+ 
+
+00:05:06.120 --> 00:05:08.150 align:start position:0%
+poly 1 305 stream ciphers the x2 55 1 9
+and<00:05:06.150><c> X</c><00:05:06.600><c> 4</c><00:05:06.840><c> for</c><00:05:07.050><c> 8</c><00:05:07.260><c> with</c><00:05:07.289><c> the</c><00:05:07.770><c> curve</c>
+
+00:05:08.150 --> 00:05:08.160 align:start position:0%
+and X 4 for 8 with the curve
+ 
+
+00:05:08.160 --> 00:05:09.740 align:start position:0%
+and X 4 for 8 with the curve
+diffie-hellman<00:05:08.520><c> key</c><00:05:08.910><c> agreement</c><00:05:09.570><c> mechanism</c>
+
+00:05:09.740 --> 00:05:09.750 align:start position:0%
+diffie-hellman key agreement mechanism
+ 
+
+00:05:09.750 --> 00:05:12.860 align:start position:0%
+diffie-hellman key agreement mechanism
+and<00:05:10.440><c> the</c><00:05:11.100><c> Edwards</c><00:05:11.490><c> curve</c><00:05:11.849><c> digital</c><00:05:12.360><c> signature</c>
+
+00:05:12.860 --> 00:05:12.870 align:start position:0%
+and the Edwards curve digital signature
+ 
+
+00:05:12.870 --> 00:05:15.980 align:start position:0%
+and the Edwards curve digital signature
+algorithm<00:05:13.760><c> all</c><00:05:14.760><c> of</c><00:05:15.000><c> these</c><00:05:15.150><c> are</c><00:05:15.330><c> more</c><00:05:15.570><c> modern</c>
+
+00:05:15.980 --> 00:05:15.990 align:start position:0%
+algorithm all of these are more modern
+ 
+
+00:05:15.990 --> 00:05:18.770 align:start position:0%
+algorithm all of these are more modern
+cryptographic<00:05:16.370><c> algorithms</c><00:05:17.370><c> that</c><00:05:18.210><c> are</c><00:05:18.270><c> more</c>
+
+00:05:18.770 --> 00:05:18.780 align:start position:0%
+cryptographic algorithms that are more
+ 
+
+00:05:18.780 --> 00:05:26.660 align:start position:0%
+cryptographic algorithms that are more
+efficient<00:05:19.229><c> and</c><00:05:19.470><c> more</c><00:05:19.620><c> secure</c>
+
+00:05:26.660 --> 00:05:26.670 align:start position:0%
+ 
+ 
+
+00:05:26.670 --> 00:05:30.080 align:start position:0%
+ 
+teyla's<00:05:27.510><c> 1.3</c><00:05:28.080><c> is</c><00:05:28.170><c> also</c><00:05:28.470><c> faster</c><00:05:29.190><c> than</c><00:05:29.610><c> previous</c>
+
+00:05:30.080 --> 00:05:30.090 align:start position:0%
+teyla's 1.3 is also faster than previous
+ 
+
+00:05:30.090 --> 00:05:32.450 align:start position:0%
+teyla's 1.3 is also faster than previous
+versions<00:05:30.540><c> of</c><00:05:30.660><c> the</c><00:05:30.780><c> TLS</c><00:05:31.230><c> protocol</c><00:05:31.710><c> it</c><00:05:32.280><c> has</c><00:05:32.430><c> a</c>
+
+00:05:32.450 --> 00:05:32.460 align:start position:0%
+versions of the TLS protocol it has a
+ 
+
+00:05:32.460 --> 00:05:34.970 align:start position:0%
+versions of the TLS protocol it has a
+completely<00:05:33.210><c> new</c><00:05:33.450><c> handshake</c><00:05:33.810><c> module</c><00:05:34.410><c> which</c>
+
+00:05:34.970 --> 00:05:34.980 align:start position:0%
+completely new handshake module which
+ 
+
+00:05:34.980 --> 00:05:38.830 align:start position:0%
+completely new handshake module which
+requires<00:05:35.430><c> fewer</c><00:05:35.880><c> round</c><00:05:36.180><c> trips</c><00:05:37.580><c> TLS</c><00:05:38.580><c> 1.2</c>
+
+00:05:38.830 --> 00:05:38.840 align:start position:0%
+requires fewer round trips TLS 1.2
+ 
+
+00:05:38.840 --> 00:05:41.600 align:start position:0%
+requires fewer round trips TLS 1.2
+requires<00:05:39.840><c> two</c><00:05:40.350><c> round</c><00:05:40.650><c> trips</c><00:05:40.950><c> for</c><00:05:41.220><c> a</c><00:05:41.250><c> complete</c>
+
+00:05:41.600 --> 00:05:41.610 align:start position:0%
+requires two round trips for a complete
+ 
+
+00:05:41.610 --> 00:05:42.440 align:start position:0%
+requires two round trips for a complete
+handshake
+
+00:05:42.440 --> 00:05:42.450 align:start position:0%
+handshake
+ 
+
+00:05:42.450 --> 00:05:46.550 align:start position:0%
+handshake
+however<00:05:43.440><c> TLS</c><00:05:43.950><c> 1.3</c><00:05:44.700><c> uses</c><00:05:45.510><c> one</c><00:05:45.840><c> round</c><00:05:46.140><c> trip</c><00:05:46.320><c> by</c>
+
+00:05:46.550 --> 00:05:46.560 align:start position:0%
+however TLS 1.3 uses one round trip by
+ 
+
+00:05:46.560 --> 00:05:49.010 align:start position:0%
+however TLS 1.3 uses one round trip by
+default<00:05:47.040><c> and</c><00:05:47.330><c> optionally</c><00:05:48.330><c> with</c><00:05:48.510><c> pre-shared</c>
+
+00:05:49.010 --> 00:05:49.020 align:start position:0%
+default and optionally with pre-shared
+ 
+
+00:05:49.020 --> 00:05:59.360 align:start position:0%
+default and optionally with pre-shared
+keys<00:05:49.320><c> can</c><00:05:50.250><c> use</c><00:05:50.400><c> a</c><00:05:50.430><c> 0</c><00:05:50.790><c> round</c><00:05:51.210><c> trips</c><00:05:58.010><c> so</c><00:05:59.010><c> here</c><00:05:59.280><c> are</c>
+
+00:05:59.360 --> 00:05:59.370 align:start position:0%
+keys can use a 0 round trips so here are
+ 
+
+00:05:59.370 --> 00:06:01.460 align:start position:0%
+keys can use a 0 round trips so here are
+some<00:05:59.520><c> details</c><00:05:59.670><c> about</c><00:06:00.060><c> the</c><00:06:00.360><c> TLS</c><00:06:00.810><c> 1.3</c>
+
+00:06:01.460 --> 00:06:01.470 align:start position:0%
+some details about the TLS 1.3
+ 
+
+00:06:01.470 --> 00:06:05.300 align:start position:0%
+some details about the TLS 1.3
+implementation<00:06:02.220><c> in</c><00:06:02.460><c> JDK</c><00:06:02.940><c> 11</c><00:06:03.980><c> this</c><00:06:04.980><c> feature</c>
+
+00:06:05.300 --> 00:06:05.310 align:start position:0%
+implementation in JDK 11 this feature
+ 
+
+00:06:05.310 --> 00:06:08.960 align:start position:0%
+implementation in JDK 11 this feature
+was<00:06:05.580><c> defined</c><00:06:05.970><c> in</c><00:06:06.240><c> jet</c><00:06:06.560><c> 332</c><00:06:07.560><c> and</c><00:06:07.890><c> the</c><00:06:08.730><c> goal</c><00:06:08.940><c> of</c>
+
+00:06:08.960 --> 00:06:08.970 align:start position:0%
+was defined in jet 332 and the goal of
+ 
+
+00:06:08.970 --> 00:06:11.210 align:start position:0%
+was defined in jet 332 and the goal of
+the<00:06:09.270><c> jet</c><00:06:09.540><c> was</c><00:06:09.750><c> to</c><00:06:09.930><c> produce</c><00:06:10.110><c> an</c><00:06:10.470><c> interoperable</c>
+
+00:06:11.210 --> 00:06:11.220 align:start position:0%
+the jet was to produce an interoperable
+ 
+
+00:06:11.220 --> 00:06:14.510 align:start position:0%
+the jet was to produce an interoperable
+TLS<00:06:11.730><c> 1.3</c><00:06:12.360><c> implementation</c><00:06:13.140><c> supporting</c><00:06:14.130><c> all</c><00:06:14.340><c> of</c>
+
+00:06:14.510 --> 00:06:14.520 align:start position:0%
+TLS 1.3 implementation supporting all of
+ 
+
+00:06:14.520 --> 00:06:17.840 align:start position:0%
+TLS 1.3 implementation supporting all of
+the<00:06:14.640><c> required</c><00:06:15.150><c> features</c><00:06:15.540><c> as</c><00:06:16.080><c> of</c><00:06:16.800><c> heard</c><00:06:17.460><c> for</c>
+
+00:06:17.840 --> 00:06:17.850 align:start position:0%
+the required features as of heard for
+ 
+
+00:06:17.850 --> 00:06:19.840 align:start position:0%
+the required features as of heard for
+the<00:06:17.970><c> RFC</c>
+
+00:06:19.840 --> 00:06:19.850 align:start position:0%
+the RFC
+ 
+
+00:06:19.850 --> 00:06:22.220 align:start position:0%
+the RFC
+the<00:06:20.850><c> implementation</c><00:06:21.570><c> therefore</c><00:06:21.990><c> does</c><00:06:22.200><c> not</c>
+
+00:06:22.220 --> 00:06:22.230 align:start position:0%
+the implementation therefore does not
+ 
+
+00:06:22.230 --> 00:06:24.470 align:start position:0%
+the implementation therefore does not
+support<00:06:22.710><c> many</c><00:06:23.100><c> of</c><00:06:23.220><c> the</c><00:06:23.310><c> optional</c><00:06:23.820><c> features</c><00:06:24.180><c> as</c>
+
+00:06:24.470 --> 00:06:24.480 align:start position:0%
+support many of the optional features as
+ 
+
+00:06:24.480 --> 00:06:27.350 align:start position:0%
+support many of the optional features as
+specified<00:06:25.110><c> in</c><00:06:25.350><c> the</c><00:06:25.470><c> RFC</c><00:06:25.880><c> however</c><00:06:26.880><c> many</c><00:06:27.300><c> of</c>
+
+00:06:27.350 --> 00:06:27.360 align:start position:0%
+specified in the RFC however many of
+ 
+
+00:06:27.360 --> 00:06:29.120 align:start position:0%
+specified in the RFC however many of
+those<00:06:27.480><c> optional</c><00:06:27.960><c> features</c><00:06:28.290><c> are</c><00:06:28.560><c> considered</c>
+
+00:06:29.120 --> 00:06:29.130 align:start position:0%
+those optional features are considered
+ 
+
+00:06:29.130 --> 00:06:31.820 align:start position:0%
+those optional features are considered
+important<00:06:29.730><c> and</c><00:06:29.880><c> and</c><00:06:30.720><c> will</c><00:06:31.290><c> hopefully</c><00:06:31.470><c> be</c>
+
+00:06:31.820 --> 00:06:31.830 align:start position:0%
+important and and will hopefully be
+ 
+
+00:06:31.830 --> 00:06:36.430 align:start position:0%
+important and and will hopefully be
+added<00:06:32.250><c> in</c><00:06:32.400><c> subsequent</c><00:06:33.180><c> releases</c><00:06:33.480><c> of</c><00:06:33.780><c> the</c><00:06:33.810><c> JDK</c>
+
+00:06:36.430 --> 00:06:36.440 align:start position:0%
+ 
+ 
+
+00:06:36.440 --> 00:06:40.220 align:start position:0%
+ 
+there<00:06:37.440><c> are</c><00:06:37.680><c> no</c><00:06:38.010><c> new</c><00:06:38.370><c> api's</c><00:06:38.940><c> that</c><00:06:39.810><c> we</c><00:06:39.930><c> had</c><00:06:40.080><c> to</c>
+
+00:06:40.220 --> 00:06:40.230 align:start position:0%
+there are no new api's that we had to
+ 
+
+00:06:40.230 --> 00:06:43.930 align:start position:0%
+there are no new api's that we had to
+add<00:06:40.440><c> to</c><00:06:41.160><c> support</c><00:06:41.550><c> jdk</c><00:06:42.170><c> TLS</c><00:06:43.170><c> 1.3</c>
+
+00:06:43.930 --> 00:06:43.940 align:start position:0%
+add to support jdk TLS 1.3
+ 
+
+00:06:43.940 --> 00:06:47.120 align:start position:0%
+add to support jdk TLS 1.3
+implementation<00:06:45.110><c> so</c><00:06:46.110><c> therefore</c><00:06:46.650><c> you</c><00:06:46.770><c> use</c><00:06:46.920><c> the</c>
+
+00:06:47.120 --> 00:06:47.130 align:start position:0%
+implementation so therefore you use the
+ 
+
+00:06:47.130 --> 00:06:50.210 align:start position:0%
+implementation so therefore you use the
+same<00:06:47.400><c> job</c><00:06:47.670><c> api's</c><00:06:48.240><c> when</c><00:06:48.630><c> using</c><00:06:48.930><c> TLS</c><00:06:49.200><c> 1.3</c><00:06:49.860><c> as</c><00:06:50.100><c> you</c>
+
+00:06:50.210 --> 00:06:50.220 align:start position:0%
+same job api's when using TLS 1.3 as you
+ 
+
+00:06:50.220 --> 00:06:52.790 align:start position:0%
+same job api's when using TLS 1.3 as you
+did<00:06:50.400><c> for</c><00:06:50.550><c> previous</c><00:06:50.910><c> TLS</c><00:06:51.330><c> versions</c><00:06:51.810><c> however</c>
+
+00:06:52.790 --> 00:06:52.800 align:start position:0%
+did for previous TLS versions however
+ 
+
+00:06:52.800 --> 00:06:55.580 align:start position:0%
+did for previous TLS versions however
+there<00:06:53.250><c> are</c><00:06:53.430><c> some</c><00:06:53.760><c> new</c><00:06:53.910><c> algorithm</c><00:06:54.450><c> names</c><00:06:54.660><c> there</c>
+
+00:06:55.580 --> 00:06:55.590 align:start position:0%
+there are some new algorithm names there
+ 
+
+00:06:55.590 --> 00:06:59.060 align:start position:0%
+there are some new algorithm names there
+is<00:06:55.770><c> now</c><00:06:55.920><c> a</c><00:06:55.950><c> TLS</c><00:06:56.490><c> V</c><00:06:56.790><c> 1.3</c><00:06:57.750><c> as</c><00:06:57.990><c> a</c><00:06:58.050><c> cell</c><00:06:58.440><c> context</c>
+
+00:06:59.060 --> 00:06:59.070 align:start position:0%
+is now a TLS V 1.3 as a cell context
+ 
+
+00:06:59.070 --> 00:07:03.280 align:start position:0%
+is now a TLS V 1.3 as a cell context
+algorithm<00:06:59.580><c> and</c><00:06:59.760><c> a</c><00:07:00.450><c> TLS</c><00:07:00.900><c> V</c><00:07:01.260><c> 1.3</c><00:07:02.130><c> protocol</c><00:07:02.700><c> and</c>
+
+00:07:03.280 --> 00:07:03.290 align:start position:0%
+algorithm and a TLS V 1.3 protocol and
+ 
+
+00:07:03.290 --> 00:07:06.500 align:start position:0%
+algorithm and a TLS V 1.3 protocol and
+there<00:07:04.290><c> are</c><00:07:04.380><c> two</c><00:07:04.650><c> new</c><00:07:04.860><c> cipher</c><00:07:05.310><c> suites</c><00:07:05.610><c> both</c><00:07:06.300><c> of</c>
+
+00:07:06.500 --> 00:07:06.510 align:start position:0%
+there are two new cipher suites both of
+ 
+
+00:07:06.510 --> 00:07:10.820 align:start position:0%
+there are two new cipher suites both of
+which<00:07:06.630><c> are</c><00:07:06.780><c> requirements</c><00:07:07.410><c> of</c><00:07:07.530><c> the</c><00:07:07.650><c> RSC</c><00:07:09.830><c> there</c>
+
+00:07:10.820 --> 00:07:10.830 align:start position:0%
+which are requirements of the RSC there
+ 
+
+00:07:10.830 --> 00:07:13.070 align:start position:0%
+which are requirements of the RSC there
+is<00:07:10.950><c> one</c><00:07:11.190><c> new</c><00:07:11.340><c> security</c><00:07:11.820><c> property</c><00:07:12.270><c> named</c><00:07:12.570><c> JDK</c>
+
+00:07:13.070 --> 00:07:13.080 align:start position:0%
+is one new security property named JDK
+ 
+
+00:07:13.080 --> 00:07:16.850 align:start position:0%
+is one new security property named JDK
+TLS<00:07:13.920><c> key</c><00:07:14.490><c> limits</c><00:07:14.850><c> and</c><00:07:15.090><c> you</c><00:07:15.840><c> can</c><00:07:16.020><c> use</c><00:07:16.290><c> this</c><00:07:16.590><c> to</c>
+
+00:07:16.850 --> 00:07:16.860 align:start position:0%
+TLS key limits and you can use this to
+ 
+
+00:07:16.860 --> 00:07:18.620 align:start position:0%
+TLS key limits and you can use this to
+limit<00:07:17.190><c> the</c><00:07:17.310><c> amount</c><00:07:17.490><c> of</c><00:07:17.640><c> data</c><00:07:17.820><c> an</c><00:07:18.090><c> algorithm</c>
+
+00:07:18.620 --> 00:07:18.630 align:start position:0%
+limit the amount of data an algorithm
+ 
+
+00:07:18.630 --> 00:07:20.720 align:start position:0%
+limit the amount of data an algorithm
+may<00:07:18.780><c> encrypt</c><00:07:19.170><c> with</c><00:07:19.380><c> a</c><00:07:19.410><c> specific</c><00:07:19.800><c> set</c><00:07:20.370><c> of</c><00:07:20.400><c> keys</c>
+
+00:07:20.720 --> 00:07:20.730 align:start position:0%
+may encrypt with a specific set of keys
+ 
+
+00:07:20.730 --> 00:07:24.820 align:start position:0%
+may encrypt with a specific set of keys
+and<00:07:21.290><c> here's</c><00:07:22.290><c> an</c><00:07:22.470><c> example</c><00:07:22.940><c> the</c><00:07:23.940><c> property</c><00:07:24.420><c> value</c>
+
+00:07:24.820 --> 00:07:24.830 align:start position:0%
+and here's an example the property value
+ 
+
+00:07:24.830 --> 00:07:27.290 align:start position:0%
+and here's an example the property value
+consists<00:07:25.830><c> of</c><00:07:25.980><c> the</c><00:07:26.130><c> name</c><00:07:26.310><c> of</c><00:07:26.490><c> the</c><00:07:26.580><c> algorithm</c><00:07:26.850><c> in</c>
+
+00:07:27.290 --> 00:07:27.300 align:start position:0%
+consists of the name of the algorithm in
+ 
+
+00:07:27.300 --> 00:07:31.670 align:start position:0%
+consists of the name of the algorithm in
+this<00:07:27.420><c> case</c><00:07:27.690><c> AES</c><00:07:28.470><c> GCM</c><00:07:29.400><c> no</c><00:07:29.850><c> padding</c><00:07:30.560><c> followed</c><00:07:31.560><c> by</c>
+
+00:07:31.670 --> 00:07:31.680 align:start position:0%
+this case AES GCM no padding followed by
+ 
+
+00:07:31.680 --> 00:07:34.280 align:start position:0%
+this case AES GCM no padding followed by
+a<00:07:31.710><c> key</c><00:07:32.160><c> update</c><00:07:32.670><c> which</c><00:07:33.060><c> is</c><00:07:33.090><c> the</c><00:07:33.360><c> TLS</c><00:07:33.780><c> message</c>
+
+00:07:34.280 --> 00:07:34.290 align:start position:0%
+a key update which is the TLS message
+ 
+
+00:07:34.290 --> 00:07:36.290 align:start position:0%
+a key update which is the TLS message
+that<00:07:34.530><c> will</c><00:07:34.680><c> be</c><00:07:34.710><c> sent</c><00:07:34.830><c> once</c><00:07:35.700><c> the</c><00:07:35.910><c> limit</c><00:07:36.180><c> is</c>
+
+00:07:36.290 --> 00:07:36.300 align:start position:0%
+that will be sent once the limit is
+ 
+
+00:07:36.300 --> 00:07:39.800 align:start position:0%
+that will be sent once the limit is
+reached<00:07:36.570><c> and</c><00:07:37.280><c> then</c><00:07:38.280><c> the</c><00:07:38.460><c> limit</c><00:07:38.820><c> itself</c><00:07:39.300><c> which</c>
+
+00:07:39.800 --> 00:07:39.810 align:start position:0%
+reached and then the limit itself which
+ 
+
+00:07:39.810 --> 00:07:40.070 align:start position:0%
+reached and then the limit itself which
+is
+
+00:07:40.070 --> 00:07:40.080 align:start position:0%
+is
+ 
+
+00:07:40.080 --> 00:07:42.619 align:start position:0%
+is
+integer<00:07:40.470><c> value</c><00:07:40.889><c> in</c><00:07:41.159><c> either</c><00:07:41.400><c> bytes</c><00:07:41.789><c> or</c><00:07:42.120><c> as</c><00:07:42.599><c> a</c>
+
+00:07:42.619 --> 00:07:42.629 align:start position:0%
+integer value in either bytes or as a
+ 
+
+00:07:42.629 --> 00:07:46.629 align:start position:0%
+integer value in either bytes or as a
+power<00:07:42.900><c> of</c><00:07:43.050><c> two</c>
+
+00:07:46.629 --> 00:07:46.639 align:start position:0%
+ 
+ 
+
+00:07:46.639 --> 00:07:49.670 align:start position:0%
+ 
+TLS<00:07:47.639><c> 1.3</c><00:07:48.210><c> is</c><00:07:48.330><c> enabled</c><00:07:48.719><c> by</c><00:07:48.840><c> default</c><00:07:48.900><c> on</c><00:07:49.469><c> both</c>
+
+00:07:49.670 --> 00:07:49.680 align:start position:0%
+TLS 1.3 is enabled by default on both
+ 
+
+00:07:49.680 --> 00:07:52.070 align:start position:0%
+TLS 1.3 is enabled by default on both
+the<00:07:49.889><c> client</c><00:07:50.069><c> and</c><00:07:50.520><c> server</c><00:07:50.759><c> sides</c><00:07:51.270><c> so</c><00:07:51.870><c> there's</c>
+
+00:07:52.070 --> 00:07:52.080 align:start position:0%
+the client and server sides so there's
+ 
+
+00:07:52.080 --> 00:07:53.659 align:start position:0%
+the client and server sides so there's
+nothing<00:07:52.229><c> you</c><00:07:52.409><c> need</c><00:07:52.650><c> to</c><00:07:52.710><c> do</c><00:07:52.979><c> to</c><00:07:53.129><c> specifically</c>
+
+00:07:53.659 --> 00:07:53.669 align:start position:0%
+nothing you need to do to specifically
+ 
+
+00:07:53.669 --> 00:07:55.790 align:start position:0%
+nothing you need to do to specifically
+enable<00:07:54.150><c> it</c><00:07:54.240><c> it</c><00:07:54.629><c> will</c><00:07:54.750><c> be</c><00:07:54.870><c> used</c><00:07:55.110><c> if</c><00:07:55.379><c> both</c><00:07:55.560><c> sides</c>
+
+00:07:55.790 --> 00:07:55.800 align:start position:0%
+enable it it will be used if both sides
+ 
+
+00:07:55.800 --> 00:07:58.779 align:start position:0%
+enable it it will be used if both sides
+support<00:07:56.610><c> it</c>
+
+00:07:58.779 --> 00:07:58.789 align:start position:0%
+ 
+ 
+
+00:07:58.789 --> 00:08:01.490 align:start position:0%
+ 
+there<00:07:59.789><c> are</c><00:08:00.000><c> a</c><00:08:00.030><c> few</c><00:08:00.449><c> compatibility</c><00:08:01.199><c> issues</c>
+
+00:08:01.490 --> 00:08:01.500 align:start position:0%
+there are a few compatibility issues
+ 
+
+00:08:01.500 --> 00:08:03.230 align:start position:0%
+there are a few compatibility issues
+that<00:08:01.680><c> you</c><00:08:01.800><c> may</c><00:08:02.039><c> encounter</c><00:08:02.219><c> when</c><00:08:02.699><c> upgrading</c><00:08:02.849><c> to</c>
+
+00:08:03.230 --> 00:08:03.240 align:start position:0%
+that you may encounter when upgrading to
+ 
+
+00:08:03.240 --> 00:08:06.020 align:start position:0%
+that you may encounter when upgrading to
+TLS<00:08:03.599><c> 1.3</c><00:08:04.169><c> you</c><00:08:05.039><c> should</c><00:08:05.370><c> check</c><00:08:05.639><c> the</c><00:08:05.789><c> release</c>
+
+00:08:06.020 --> 00:08:06.030 align:start position:0%
+TLS 1.3 you should check the release
+ 
+
+00:08:06.030 --> 00:08:08.119 align:start position:0%
+TLS 1.3 you should check the release
+notes<00:08:06.330><c> for</c><00:08:06.719><c> the</c><00:08:06.960><c> Jeff</c><00:08:07.199><c> to</c><00:08:07.560><c> see</c><00:08:07.710><c> if</c><00:08:07.830><c> any</c><00:08:08.039><c> of</c>
+
+00:08:08.119 --> 00:08:08.129 align:start position:0%
+notes for the Jeff to see if any of
+ 
+
+00:08:08.129 --> 00:08:17.950 align:start position:0%
+notes for the Jeff to see if any of
+these<00:08:08.250><c> issues</c><00:08:08.490><c> may</c><00:08:08.909><c> affect</c><00:08:09.240><c> your</c><00:08:09.389><c> application</c>
+
+00:08:17.950 --> 00:08:17.960 align:start position:0%
+ 
+ 
+
+00:08:17.960 --> 00:08:21.379 align:start position:0%
+ 
+so<00:08:18.960><c> next</c><00:08:19.169><c> steps</c><00:08:19.819><c> we</c><00:08:20.819><c> encourage</c><00:08:21.210><c> you</c><00:08:21.330><c> to</c>
+
+00:08:21.379 --> 00:08:21.389 align:start position:0%
+so next steps we encourage you to
+ 
+
+00:08:21.389 --> 00:08:25.070 align:start position:0%
+so next steps we encourage you to
+download<00:08:22.340><c> JDK</c><00:08:23.340><c> 11</c><00:08:23.729><c> at</c><00:08:23.940><c> the</c><00:08:24.180><c> following</c><00:08:24.479><c> URL</c>
+
+00:08:25.070 --> 00:08:25.080 align:start position:0%
+download JDK 11 at the following URL
+ 
+
+00:08:25.080 --> 00:08:29.689 align:start position:0%
+download JDK 11 at the following URL
+ww<00:08:25.979><c> Oracle</c><00:08:26.550><c> comm</c><00:08:26.940><c> /</c><00:08:27.599><c> Java</c><00:08:27.930><c> download</c><00:08:28.580><c> you</c><00:08:29.580><c> can</c>
+
+00:08:29.689 --> 00:08:29.699 align:start position:0%
+ww Oracle comm / Java download you can
+ 
+
+00:08:29.699 --> 00:08:33.909 align:start position:0%
+ww Oracle comm / Java download you can
+also<00:08:29.849><c> join</c><00:08:30.120><c> the</c><00:08:30.180><c> open</c><00:08:30.599><c> JDK</c><00:08:31.430><c> that</c><00:08:32.630><c> website</c><00:08:33.630><c> and</c>
+
+00:08:33.909 --> 00:08:33.919 align:start position:0%
+also join the open JDK that website and
+ 
+
+00:08:33.919 --> 00:08:35.870 align:start position:0%
+also join the open JDK that website and
+follow<00:08:34.919><c> us</c><00:08:35.130><c> on</c><00:08:35.310><c> Twitter</c><00:08:35.550><c> for</c><00:08:35.820><c> more</c>
+
+00:08:35.870 --> 00:08:35.880 align:start position:0%
+follow us on Twitter for more
+ 
+
+00:08:35.880 --> 00:08:39.889 align:start position:0%
+follow us on Twitter for more
+information<00:08:36.690><c> at</c><00:08:37.260><c> open</c><00:08:37.620><c> JDK</c><00:08:37.829><c> handle</c><00:08:38.729><c> or</c><00:08:39.329><c> using</c>
+
+00:08:39.889 --> 00:08:39.899 align:start position:0%
+information at open JDK handle or using
+ 
+
+00:08:39.899 --> 00:08:42.620 align:start position:0%
+information at open JDK handle or using
+hash<00:08:40.110><c> tag</c><00:08:40.380><c> job</c><00:08:40.620><c> 11</c><00:08:41.070><c> or</c><00:08:41.969><c> you</c><00:08:42.060><c> can</c><00:08:42.209><c> also</c><00:08:42.329><c> follow</c>
+
+00:08:42.620 --> 00:08:42.630 align:start position:0%
+hash tag job 11 or you can also follow
+ 
+
+00:08:42.630 --> 00:08:45.790 align:start position:0%
+hash tag job 11 or you can also follow
+me<00:08:42.750><c> at</c><00:08:42.899><c> my</c><00:08:43.079><c> Twitter</c><00:08:43.409><c> handle</c><00:08:43.829><c> Shawn</c><00:08:44.130><c> J</c><00:08:44.370><c> Mullen</c><00:08:44.730><c> I</c>
+
+00:08:45.790 --> 00:08:45.800 align:start position:0%
+me at my Twitter handle Shawn J Mullen I
+ 
+
+00:08:45.800 --> 00:08:48.710 align:start position:0%
+me at my Twitter handle Shawn J Mullen I
+often<00:08:46.800><c> tweet</c><00:08:47.040><c> a</c><00:08:47.070><c> lot</c><00:08:47.339><c> about</c><00:08:47.579><c> Java</c><00:08:47.970><c> security</c><00:08:48.540><c> so</c>
+
+00:08:48.710 --> 00:08:48.720 align:start position:0%
+often tweet a lot about Java security so
+ 
+
+00:08:48.720 --> 00:08:50.630 align:start position:0%
+often tweet a lot about Java security so
+it's<00:08:48.839><c> a</c><00:08:48.899><c> good</c><00:08:49.019><c> way</c><00:08:49.170><c> to</c><00:08:49.230><c> keep</c><00:08:49.410><c> up</c><00:08:49.620><c> with</c><00:08:49.800><c> what's</c>
+
+00:08:50.630 --> 00:08:50.640 align:start position:0%
+it's a good way to keep up with what's
+ 
+
+00:08:50.640 --> 00:08:51.819 align:start position:0%
+it's a good way to keep up with what's
+happening<00:08:50.970><c> in</c><00:08:51.089><c> that</c><00:08:51.180><c> area</c>
+
+00:08:51.819 --> 00:08:51.829 align:start position:0%
+happening in that area
+ 
+
+00:08:51.829 --> 00:08:54.160 align:start position:0%
+happening in that area
+thank<00:08:52.829><c> you</c>
+
+00:08:54.160 --> 00:08:54.170 align:start position:0%
+thank you
+ 
+
+00:08:54.170 --> 00:08:58.320 align:start position:0%
+thank you
+[Music]
+

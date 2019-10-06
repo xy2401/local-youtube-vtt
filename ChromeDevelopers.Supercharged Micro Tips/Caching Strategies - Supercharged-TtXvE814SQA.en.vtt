@@ -1,0 +1,171 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.706
+[MUSIC PLAYING]
+
+00:00:02.706 --> 00:00:04.840
+SURMA: Making your
+web app work offline
+
+00:00:04.840 --> 00:00:07.240
+is slowly becoming more of
+an expectation than just
+
+00:00:07.240 --> 00:00:08.214
+a feature.
+
+00:00:08.214 --> 00:00:10.630
+Every app is different and
+there is many different caching
+
+00:00:10.630 --> 00:00:12.820
+strategies for the
+different situations,
+
+00:00:12.820 --> 00:00:15.820
+but one of the simplest and most
+versatile caching strategies
+
+00:00:15.820 --> 00:00:18.340
+is stale-while-revalidate.
+
+00:00:18.340 --> 00:00:20.260
+With this caching
+strategy, a request
+
+00:00:20.260 --> 00:00:22.150
+will always use
+the cache response
+
+00:00:22.150 --> 00:00:25.596
+if there is one, regardless
+of whether it is stale or not.
+
+00:00:25.596 --> 00:00:27.220
+In the background we
+can hit the server
+
+00:00:27.220 --> 00:00:29.710
+and update the
+cache, if necessary.
+
+00:00:29.710 --> 00:00:31.570
+If an update was
+necessary, you can
+
+00:00:31.570 --> 00:00:33.970
+decide whether to prompt
+the user to reload the page,
+
+00:00:33.970 --> 00:00:37.565
+depending on how important the
+freshness of the resource is.
+
+00:00:37.565 --> 00:00:39.940
+So let's take a look at how
+we can implement this caching
+
+00:00:39.940 --> 00:00:42.010
+strategy in our service worker.
+
+00:00:42.010 --> 00:00:44.950
+Whenever a request comes in,
+we consult both the cache
+
+00:00:44.950 --> 00:00:46.420
+and the network.
+
+00:00:46.420 --> 00:00:47.860
+We want to respond
+with something
+
+00:00:47.860 --> 00:00:50.710
+as quickly as possible, so for
+our "respond with" function,
+
+00:00:50.710 --> 00:00:53.350
+we use the cached
+response, if available.
+
+00:00:53.350 --> 00:00:54.890
+If there was nothing
+in the cache,
+
+00:00:54.890 --> 00:00:56.320
+we use the network's response.
+
+00:00:56.320 --> 00:00:57.940
+And if that isn't
+available either,
+
+00:00:57.940 --> 00:01:00.100
+we can't do much more
+than throw an error.
+
+00:01:00.100 --> 00:01:01.780
+This way we are making
+sure the browser
+
+00:01:01.780 --> 00:01:04.330
+gets something to work with
+as quickly as possible.
+
+00:01:04.330 --> 00:01:07.674
+The resource revalidation goes
+into our "wait until" function.
+
+00:01:07.674 --> 00:01:10.090
+It's fine if this process takes
+a little bit longer, as it
+
+00:01:10.090 --> 00:01:11.464
+will be running
+in the background
+
+00:01:11.464 --> 00:01:13.780
+and won't stall other responses.
+
+00:01:13.780 --> 00:01:15.170
+And we're already done.
+
+00:01:15.170 --> 00:01:16.720
+This is an excellent
+caching strategy
+
+00:01:16.720 --> 00:01:18.940
+for blocks and similar
+content for web sites.
+
+00:01:18.940 --> 00:01:21.670
+Just make sure your caching
+headers and your ETags
+
+00:01:21.670 --> 00:01:23.740
+are set correctly,
+so that revalidation
+
+00:01:23.740 --> 00:01:25.480
+doesn't become too costly.
+
+00:01:25.480 --> 00:01:27.350
+Thanks for watching.
+
+00:01:27.350 --> 00:01:28.660
+Thank you for sticking around.
+
+00:01:28.660 --> 00:01:30.130
+Since you made it
+to the end card,
+
+00:01:30.130 --> 00:01:32.420
+I might as well ask you
+to click our big crew--
+
+00:01:37.320 --> 00:01:38.060
+oh.
+
+00:01:38.060 --> 00:01:40.220
+It's over here.
+

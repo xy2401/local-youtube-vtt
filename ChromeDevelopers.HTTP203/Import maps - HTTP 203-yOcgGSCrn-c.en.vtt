@@ -1,0 +1,2486 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:02.097
+JAKE ARCHIBALD: Well,
+should we do an episode?
+
+00:00:02.097 --> 00:00:04.340
+And then we can maybe try
+and do some of a [BLEEP]
+
+00:00:04.340 --> 00:00:07.650
+at the end for
+Lucas to cut around.
+
+00:00:07.650 --> 00:00:08.150
+CREW: Yup.
+
+00:00:08.150 --> 00:00:08.510
+Rolling.
+
+00:00:08.510 --> 00:00:08.890
+We are rolling.
+
+00:00:08.890 --> 00:00:09.682
+JAKE ARCHIBALD: OK.
+
+00:00:09.682 --> 00:00:11.870
+All right, where am I?
+
+00:00:11.870 --> 00:00:13.110
+SURMA: What?
+
+00:00:13.110 --> 00:00:13.610
+What?
+
+00:00:13.610 --> 00:00:15.059
+[LAUGHING]
+
+00:00:15.059 --> 00:00:18.440
+[MUSIC PLAYING]
+
+00:00:21.888 --> 00:00:24.180
+JAKE ARCHIBALD: So we spent
+the last couple of episodes
+
+00:00:24.180 --> 00:00:27.040
+talking about real things.
+
+00:00:27.040 --> 00:00:27.540
+Real talk.
+
+00:00:27.540 --> 00:00:29.630
+SURMA: [LAUGHS] Let's stop that.
+
+00:00:29.630 --> 00:00:30.630
+Let's not do that.
+
+00:00:30.630 --> 00:00:32.088
+JAKE ARCHIBALD: So
+yeah, I thought,
+
+00:00:32.088 --> 00:00:34.920
+why not just talk about some
+imaginary stuff this time?
+
+00:00:34.920 --> 00:00:36.800
+I want to talk about
+import maps, which
+
+00:00:36.800 --> 00:00:40.918
+is a new proposal that is
+very much in the early messing
+
+00:00:40.918 --> 00:00:41.460
+around phase.
+
+00:00:41.460 --> 00:00:42.002
+SURMA: Right.
+
+00:00:42.002 --> 00:00:44.130
+So yeah, let's give it context.
+
+00:00:44.130 --> 00:00:46.620
+Because I've seen we
+have an article on this.
+
+00:00:49.440 --> 00:00:53.253
+We have had a confusion about
+how stable certain features are
+
+00:00:53.253 --> 00:00:54.170
+when we announce them.
+
+00:00:54.170 --> 00:00:55.710
+JAKE ARCHIBALD: Right, yes.
+
+00:00:55.710 --> 00:00:56.670
+SURMA: Where is it at?
+
+00:00:56.670 --> 00:00:58.027
+JAKE ARCHIBALD: Well, yes.
+
+00:00:58.027 --> 00:00:58.860
+SURMA: [LAUGHS] Yes.
+
+00:00:58.860 --> 00:01:00.860
+JAKE ARCHIBALD: Before
+we talk about what it is,
+
+00:01:00.860 --> 00:01:03.870
+I would say some of it is in
+Chrome Canary behind the flag,
+
+00:01:03.870 --> 00:01:04.680
+an origin trial.
+
+00:01:04.680 --> 00:01:06.850
+So you can experiment
+with it in production,
+
+00:01:06.850 --> 00:01:08.940
+in production with the
+whole origin trial thing.
+
+00:01:08.940 --> 00:01:10.607
+SURMA: But none of
+this is set in stone,
+
+00:01:10.607 --> 00:01:12.125
+so it could still change--
+
+00:01:12.125 --> 00:01:13.250
+how it works, why it works.
+
+00:01:13.250 --> 00:01:13.510
+JAKE ARCHIBALD: Yep.
+
+00:01:13.510 --> 00:01:15.990
+This episode could be
+completely useless by the time
+
+00:01:15.990 --> 00:01:16.780
+it goes out.
+
+00:01:16.780 --> 00:01:18.660
+SURMA: So I guess it's also
+pretty much Chrome only then
+
+00:01:18.660 --> 00:01:18.900
+at this point?
+
+00:01:18.900 --> 00:01:19.400
+JAKE ARCHIBALD: It is, yeah.
+
+00:01:19.400 --> 00:01:21.620
+SURMA: Any other browsers
+have it behind the flag?
+
+00:01:21.620 --> 00:01:21.760
+JAKE ARCHIBALD: Nope, nope.
+
+00:01:21.760 --> 00:01:23.052
+SURMA: All right, it's just us.
+
+00:01:23.052 --> 00:01:24.797
+JAKE ARCHIBALD:
+It be Chrome only.
+
+00:01:24.797 --> 00:01:25.380
+So what is it?
+
+00:01:25.380 --> 00:01:26.520
+What is it?
+
+00:01:26.520 --> 00:01:27.402
+What is it?
+
+00:01:27.402 --> 00:01:28.860
+Actually, I'm going
+to answer that,
+
+00:01:28.860 --> 00:01:32.670
+because I did the slides and
+the script and everything.
+
+00:01:32.670 --> 00:01:34.217
+We've got module
+imports with your--
+
+00:01:34.217 --> 00:01:35.300
+SURMA: It's got a library?
+
+00:01:35.300 --> 00:01:35.930
+JAKE ARCHIBALD:
+--module scripts.
+
+00:01:35.930 --> 00:01:36.320
+See?
+
+00:01:36.320 --> 00:01:37.230
+I used your library.
+
+00:01:37.230 --> 00:01:37.340
+SURMA: That's nice.
+
+00:01:37.340 --> 00:01:37.530
+JAKE ARCHIBALD: See?
+
+00:01:37.530 --> 00:01:37.860
+You happy?
+
+00:01:37.860 --> 00:01:39.652
+SURMA: You didn't use
+[INAUDIBLE] for once.
+
+00:01:39.652 --> 00:01:42.960
+JAKE ARCHIBALD: No, no, I
+changed it up this time.
+
+00:01:42.960 --> 00:01:46.770
+But a lot of us are more
+familiar to seeing something
+
+00:01:46.770 --> 00:01:47.340
+like this.
+
+00:01:47.340 --> 00:01:49.440
+SURMA: Because that's how
+the node import works,
+
+00:01:49.440 --> 00:01:50.880
+and most of the
+bundle of support
+
+00:01:50.880 --> 00:01:52.923
+that kind of specifier
+where you just say,
+
+00:01:52.923 --> 00:01:54.590
+just put the node
+package name in there,
+
+00:01:54.590 --> 00:01:55.740
+and we'll resolve the rest.
+
+00:01:55.740 --> 00:01:56.573
+JAKE ARCHIBALD: Yes.
+
+00:01:56.573 --> 00:01:58.230
+And the way this
+actually works in node
+
+00:01:58.230 --> 00:02:02.940
+is it will start at whatever
+module contains this,
+
+00:02:02.940 --> 00:02:06.750
+and it will go up through all of
+the directories, all the parent
+
+00:02:06.750 --> 00:02:09.330
+directories, looking
+for directories that
+
+00:02:09.330 --> 00:02:12.630
+have node modules alongside--
+
+00:02:12.630 --> 00:02:16.727
+SURMA: It goes upwards and
+tries to find the closest node--
+
+00:02:16.727 --> 00:02:18.560
+JAKE ARCHIBALD: No, no,
+it'll find them all.
+
+00:02:18.560 --> 00:02:19.020
+SURMA: Oh, really?
+
+00:02:19.020 --> 00:02:19.285
+JAKE ARCHIBALD: Yeah.
+
+00:02:19.285 --> 00:02:19.770
+SURMA: That's a twist.
+
+00:02:19.770 --> 00:02:19.860
+Cool.
+
+00:02:19.860 --> 00:02:20.940
+JAKE ARCHIBALD: It goes
+and finds them all,
+
+00:02:20.940 --> 00:02:21.898
+and then it will find--
+
+00:02:21.898 --> 00:02:24.145
+SURMA: So you'll put a node
+modules folder in slash,
+
+00:02:24.145 --> 00:02:25.800
+like in the root
+of my hard drive?
+
+00:02:25.800 --> 00:02:27.035
+JAKE ARCHIBALD: I
+think that will work.
+
+00:02:27.035 --> 00:02:27.740
+SURMA: That's amazing.
+
+00:02:27.740 --> 00:02:27.990
+JAKE ARCHIBALD: Yeah.
+
+00:02:27.990 --> 00:02:29.960
+But then there's also
+the special global one
+
+00:02:29.960 --> 00:02:32.450
+for your global modules, so
+that goes at the end as well.
+
+00:02:32.450 --> 00:02:33.867
+SURMA: I didn't
+know that existed.
+
+00:02:33.867 --> 00:02:38.060
+JAKE ARCHIBALD: Well, yeah,
+if you do NPM install dash g,
+
+00:02:38.060 --> 00:02:39.180
+goes in your global stuff.
+
+00:02:39.180 --> 00:02:40.170
+SURMA: Yeah, you're right.
+
+00:02:40.170 --> 00:02:41.050
+I never thought about that.
+
+00:02:41.050 --> 00:02:41.250
+JAKE ARCHIBALD: Yeah.
+
+00:02:41.250 --> 00:02:42.060
+Yeah, yeah.
+
+00:02:42.060 --> 00:02:44.010
+And then it will iterate
+through all of those,
+
+00:02:44.010 --> 00:02:46.560
+and it will look for a
+directory called comlink
+
+00:02:46.560 --> 00:02:47.650
+in each of those.
+
+00:02:47.650 --> 00:02:49.380
+SURMA: And if there's multiple?
+
+00:02:49.380 --> 00:02:52.240
+JAKE ARCHIBALD: Well, so it's
+going through them closest--
+
+00:02:52.240 --> 00:02:53.100
+SURMA: In order.
+
+00:02:53.100 --> 00:02:53.933
+JAKE ARCHIBALD: Yes.
+
+00:02:53.933 --> 00:02:56.850
+So when it finds comlink in
+one of them, it will go, right,
+
+00:02:56.850 --> 00:02:58.860
+does this have a package json?
+
+00:02:58.860 --> 00:03:01.343
+If it does, then I'm going
+to look in the main thing,
+
+00:03:01.343 --> 00:03:03.010
+and that's the script
+I'm going to load.
+
+00:03:03.010 --> 00:03:04.385
+If it doesn't have
+that, then I'm
+
+00:03:04.385 --> 00:03:05.677
+going to try and load index.js.
+
+00:03:05.677 --> 00:03:07.052
+If that's not any
+good, I'm going
+
+00:03:07.052 --> 00:03:08.285
+to try and load index.json.
+
+00:03:08.285 --> 00:03:10.660
+If that's not there, I'm going
+to try to load index.node.
+
+00:03:10.660 --> 00:03:11.265
+SURMA: Really?
+
+00:03:11.265 --> 00:03:12.723
+JAKE ARCHIBALD:
+For binary modules,
+
+00:03:12.723 --> 00:03:14.862
+yes, yes, that's how it works.
+
+00:03:14.862 --> 00:03:17.320
+And if they're not there, it
+then goes up the directory's--
+
+00:03:17.320 --> 00:03:17.600
+SURMA: It makes sense.
+
+00:03:17.600 --> 00:03:18.000
+Yeah, OK.
+
+00:03:18.000 --> 00:03:19.410
+JAKE ARCHIBALD: --yeah,
+and off it goes.
+
+00:03:19.410 --> 00:03:20.430
+SURMA: We want that on the web.
+
+00:03:20.430 --> 00:03:21.190
+Is that what you're saying?
+
+00:03:21.190 --> 00:03:23.250
+JAKE ARCHIBALD: And that's the
+problem is we literally cannot
+
+00:03:23.250 --> 00:03:25.200
+do that on the web, because
+imagine how many requests it
+
+00:03:25.200 --> 00:03:25.830
+would have to make--
+
+00:03:25.830 --> 00:03:26.490
+SURMA: It'd be great.
+
+00:03:26.490 --> 00:03:27.890
+JAKE ARCHIBALD: --just
+to find script, right?
+
+00:03:27.890 --> 00:03:29.460
+SURMA: Time to interactive,
+two and a half years.
+
+00:03:29.460 --> 00:03:30.335
+JAKE ARCHIBALD: Yeah.
+
+00:03:30.335 --> 00:03:31.200
+[LAUGHING]
+
+00:03:31.200 --> 00:03:32.260
+Exactly.
+
+00:03:32.260 --> 00:03:34.930
+So we needed a new system in
+order to bring this to the web.
+
+00:03:34.930 --> 00:03:36.600
+And that is import maps.
+
+00:03:36.600 --> 00:03:39.530
+That is what we're
+going to talk about.
+
+00:03:39.530 --> 00:03:40.885
+SURMA: Oh, it's a new type!
+
+00:03:40.885 --> 00:03:42.510
+JAKE ARCHIBALD: It's
+a new script type.
+
+00:03:42.510 --> 00:03:45.367
+SURMA: Can it also
+put in a file?
+
+00:03:45.367 --> 00:03:46.200
+JAKE ARCHIBALD: Yes.
+
+00:03:46.200 --> 00:03:48.030
+Yes, you can, and you shouldn't.
+
+00:03:48.030 --> 00:03:50.510
+[LAUGHING]
+
+00:03:50.510 --> 00:03:51.950
+And we'll get onto why.
+
+00:03:51.950 --> 00:03:53.757
+But this is what it looks like.
+
+00:03:53.757 --> 00:03:54.590
+You'll recognize it.
+
+00:03:54.590 --> 00:03:57.525
+SURMA: So it's literally a map
+that maps from the identifiers
+
+00:03:57.525 --> 00:03:58.052
+to--
+
+00:03:58.052 --> 00:03:59.010
+oh, that's interesting.
+
+00:03:59.010 --> 00:04:01.260
+Because I remember
+that there is a rule
+
+00:04:01.260 --> 00:04:03.100
+for both dynamic
+and static imports
+
+00:04:03.100 --> 00:04:04.964
+that they have to
+start with slash
+
+00:04:04.964 --> 00:04:07.267
+or with a relative
+or absolute path.
+
+00:04:07.267 --> 00:04:08.100
+JAKE ARCHIBALD: Yes.
+
+00:04:08.100 --> 00:04:10.640
+SURMA: They're not allowed
+to start with like this.
+
+00:04:10.640 --> 00:04:11.473
+JAKE ARCHIBALD: Yes.
+
+00:04:11.473 --> 00:04:17.220
+Modules on the web right now
+have to start with a dot.
+
+00:04:17.220 --> 00:04:21.540
+I think it has to be,
+like, dot, dot, dot--
+
+00:04:21.540 --> 00:04:22.420
+it's dot slash?
+
+00:04:22.420 --> 00:04:22.800
+Dot, dot, slash?
+
+00:04:22.800 --> 00:04:23.140
+SURMA: I think it's slash.
+
+00:04:23.140 --> 00:04:23.440
+Otherwise it could be--
+
+00:04:23.440 --> 00:04:24.780
+JAKE ARCHIBALD: Or a
+valid URL, or slash.
+
+00:04:24.780 --> 00:04:25.190
+Right?
+
+00:04:25.190 --> 00:04:25.280
+SURMA: Right.
+
+00:04:25.280 --> 00:04:25.860
+OK.
+
+00:04:25.860 --> 00:04:27.360
+JAKE ARCHIBALD:
+Something like that.
+
+00:04:27.360 --> 00:04:27.960
+SURMA: OK.
+
+00:04:27.960 --> 00:04:29.820
+JAKE ARCHIBALD: And so this
+would let you with this.
+
+00:04:29.820 --> 00:04:30.720
+Now you would just be
+able to reference--
+
+00:04:30.720 --> 00:04:31.590
+SURMA: It leaves this open for--
+
+00:04:31.590 --> 00:04:32.300
+oh, cool.
+
+00:04:32.300 --> 00:04:32.800
+OK.
+
+00:04:32.800 --> 00:04:34.425
+JAKE ARCHIBALD:
+Reference comlink and--
+
+00:04:34.425 --> 00:04:37.080
+SURMA: So there is no way that
+an import map identifier could
+
+00:04:37.080 --> 00:04:38.670
+clash with existing
+production code
+
+00:04:38.670 --> 00:04:41.046
+out there right now
+because of that rule?
+
+00:04:41.046 --> 00:04:44.220
+JAKE ARCHIBALD: Ah,
+hold on to that.
+
+00:04:44.220 --> 00:04:46.530
+But yes, as long as you've
+got this, one of these
+
+00:04:46.530 --> 00:04:50.180
+has to go before anything that
+imports anything, any impulse
+
+00:04:50.180 --> 00:04:50.830
+statement.
+
+00:04:50.830 --> 00:04:53.730
+If you have one of these
+later on, it will just error.
+
+00:04:53.730 --> 00:04:55.410
+You'll get an error
+on this script tag,
+
+00:04:55.410 --> 00:04:56.850
+and it will just be ignored.
+
+00:04:56.850 --> 00:04:59.910
+So this ideally right in
+the head of your document
+
+00:04:59.910 --> 00:05:01.250
+before everything else.
+
+00:05:01.250 --> 00:05:02.760
+And this is where you define
+where we shouldn't put them
+
+00:05:02.760 --> 00:05:03.270
+in the file.
+
+00:05:03.270 --> 00:05:06.410
+And that's why you probably
+shouldn't put them in a file.
+
+00:05:06.410 --> 00:05:08.130
+But yes, now this works.
+
+00:05:08.130 --> 00:05:08.850
+SURMA: Neat.
+
+00:05:08.850 --> 00:05:11.340
+JAKE ARCHIBALD: Just works.
+
+00:05:11.340 --> 00:05:13.950
+Thank you for spoiling my
+next slide multiple times.
+
+00:05:13.950 --> 00:05:16.320
+This just goes to show we
+don't rehearse this, right?
+
+00:05:16.320 --> 00:05:17.828
+Yes, I would say
+you can do this.
+
+00:05:17.828 --> 00:05:19.620
+It has some special
+MIME type, but yes, you
+
+00:05:19.620 --> 00:05:22.125
+shouldn't, because then
+you've got this head of line
+
+00:05:22.125 --> 00:05:22.860
+looking thing.
+
+00:05:22.860 --> 00:05:26.790
+SURMA: So will that mean that a
+script type import map is also
+
+00:05:26.790 --> 00:05:27.780
+deferred by default?
+
+00:05:27.780 --> 00:05:29.280
+Because modules are
+deferred by default.
+
+00:05:29.280 --> 00:05:30.572
+JAKE ARCHIBALD: No, this will--
+
+00:05:30.572 --> 00:05:33.180
+I mean, it's not going to
+block rendering of anything,
+
+00:05:33.180 --> 00:05:35.550
+but it will be immediate
+fetch, and it will
+
+00:05:35.550 --> 00:05:37.620
+block subsequent script tags.
+
+00:05:37.620 --> 00:05:38.597
+SURMA: Script tags.
+
+00:05:38.597 --> 00:05:39.930
+JAKE ARCHIBALD: That are using--
+
+00:05:39.930 --> 00:05:42.013
+SURMA: So basically, if
+you put it in an XML file,
+
+00:05:42.013 --> 00:05:45.450
+but put the script take high
+up, you should still be fine?
+
+00:05:45.450 --> 00:05:46.320
+JAKE ARCHIBALD: But it's
+one of those things--
+
+00:05:46.320 --> 00:05:47.805
+SURMA: [INAUDIBLE],,
+but you should be fine.
+
+00:05:47.805 --> 00:05:48.770
+JAKE ARCHIBALD: But
+there's a reason
+
+00:05:48.770 --> 00:05:50.220
+we inline scripts, right?
+
+00:05:50.220 --> 00:05:52.410
+Because if it's a very
+small file, then the amount
+
+00:05:52.410 --> 00:05:54.035
+you pay for that
+request and response--
+
+00:05:54.035 --> 00:05:55.118
+SURMA: Will it stay small?
+
+00:05:55.118 --> 00:05:56.890
+Will people really
+keep small import maps?
+
+00:05:56.890 --> 00:05:58.540
+I kind of expect them to
+be like [BLOWS RASPBERRY]..
+
+00:05:58.540 --> 00:05:59.998
+JAKE ARCHIBALD:
+That is a question.
+
+00:05:59.998 --> 00:06:01.870
+And yeah, and it
+would be interesting.
+
+00:06:01.870 --> 00:06:04.078
+So maybe if some of the use
+cases we go through here,
+
+00:06:04.078 --> 00:06:06.480
+I have been also wondering
+how large these might get.
+
+00:06:06.480 --> 00:06:08.730
+Because the thing we saw
+there is, I would say,
+
+00:06:08.730 --> 00:06:11.980
+one of the more boring
+use cases for it.
+
+00:06:11.980 --> 00:06:13.740
+Another interesting
+one-- so this
+
+00:06:13.740 --> 00:06:15.300
+is the example we had before.
+
+00:06:15.300 --> 00:06:19.120
+I can import comlink because
+it's in the import map.
+
+00:06:19.120 --> 00:06:21.443
+SURMA: That's the thing
+that usually works in node.
+
+00:06:21.443 --> 00:06:23.360
+JAKE ARCHIBALD: In node
+land, you would have--
+
+00:06:23.360 --> 00:06:25.020
+yep.
+
+00:06:25.020 --> 00:06:26.550
+This works as well.
+
+00:06:26.550 --> 00:06:28.200
+SURMA: Really?
+
+00:06:28.200 --> 00:06:30.400
+JAKE ARCHIBALD: You do
+something like this.
+
+00:06:30.400 --> 00:06:31.710
+So there's is a special rule.
+
+00:06:31.710 --> 00:06:34.610
+If the thing ends
+in a slash, then you
+
+00:06:34.610 --> 00:06:37.057
+are defining a prefix
+for all of those.
+
+00:06:37.057 --> 00:06:39.390
+SURMA: Oh, that's really nice
+that they thought of that.
+
+00:06:39.390 --> 00:06:39.630
+JAKE ARCHIBALD: Yes.
+
+00:06:39.630 --> 00:06:40.510
+SURMA: Because I
+would have expected
+
+00:06:40.510 --> 00:06:41.175
+that I'd have to define--
+
+00:06:41.175 --> 00:06:41.830
+JAKE ARCHIBALD:
+Every single one.
+
+00:06:41.830 --> 00:06:44.280
+SURMA: --like do static,
+analyze all the inputs I have,
+
+00:06:44.280 --> 00:06:45.030
+and define a map.
+
+00:06:45.030 --> 00:06:46.385
+This is actually really neat.
+
+00:06:46.385 --> 00:06:48.990
+But they don't have a rule that
+can just define the last one,
+
+00:06:48.990 --> 00:06:52.680
+and index is assumed,
+like, it is a node?
+
+00:06:52.680 --> 00:06:53.640
+JAKE ARCHIBALD: No.
+
+00:06:53.640 --> 00:06:54.600
+Index is not assumed.
+
+00:06:54.600 --> 00:06:59.363
+And also, things-- like in node,
+you can miss out the extension.
+
+00:06:59.363 --> 00:07:00.030
+SURMA: Oh, yeah.
+
+00:07:00.030 --> 00:07:01.950
+No, I mean, that wouldn't just--
+
+00:07:01.950 --> 00:07:03.060
+JAKE ARCHIBALD: You
+could use import maps
+
+00:07:03.060 --> 00:07:03.893
+to work around that.
+
+00:07:03.893 --> 00:07:06.300
+But you would have to do
+every single file and--
+
+00:07:06.300 --> 00:07:07.470
+SURMA: Right, because basically
+you have to define everything.
+
+00:07:07.470 --> 00:07:09.390
+It's like here's the thing
+without the extension that
+
+00:07:09.390 --> 00:07:10.880
+maps to the thing
+with the extension.
+
+00:07:10.880 --> 00:07:11.430
+JAKE ARCHIBALD:
+With the extension.
+
+00:07:11.430 --> 00:07:11.930
+Yes.
+
+00:07:11.930 --> 00:07:14.520
+So you can do that,
+but probably don't,
+
+00:07:14.520 --> 00:07:18.940
+unless you for some reason
+know of a way around it.
+
+00:07:18.940 --> 00:07:20.670
+You can do this.
+
+00:07:20.670 --> 00:07:22.637
+SURMA: Oh, so maybe
+I can do rewrites.
+
+00:07:22.637 --> 00:07:23.470
+JAKE ARCHIBALD: Yes.
+
+00:07:23.470 --> 00:07:26.872
+SURMA: So something that is
+already a valid import path,
+
+00:07:26.872 --> 00:07:28.080
+I can now say, you know what?
+
+00:07:28.080 --> 00:07:29.100
+It's actually here.
+
+00:07:29.100 --> 00:07:30.480
+JAKE ARCHIBALD: Yes, absolutely.
+
+00:07:30.480 --> 00:07:31.438
+SURMA: Oh, that's neat.
+
+00:07:31.438 --> 00:07:33.790
+JAKE ARCHIBALD: And you could
+say that this could just
+
+00:07:33.790 --> 00:07:35.998
+create a lot of confusing
+code while your scripts are
+
+00:07:35.998 --> 00:07:37.020
+doing one thing.
+
+00:07:37.020 --> 00:07:37.080
+SURMA: Oh, yeah, 100%.
+
+00:07:37.080 --> 00:07:37.500
+JAKE ARCHIBALD:
+But I think there's
+
+00:07:37.500 --> 00:07:39.125
+a really interesting
+use case with this
+
+00:07:39.125 --> 00:07:42.490
+that I'm really excited about.
+
+00:07:42.490 --> 00:07:44.220
+So here's an example import.
+
+00:07:44.220 --> 00:07:48.060
+But in production, it will most
+likely look more like this.
+
+00:07:48.060 --> 00:07:50.430
+SURMA: Yes, because
+at least it should be.
+
+00:07:50.430 --> 00:07:52.642
+Because good caching--
+you need this.
+
+00:07:52.642 --> 00:07:54.600
+JAKE ARCHIBALD: You need
+your unique file name.
+
+00:07:54.600 --> 00:07:56.610
+So then if you change
+the file, you will--
+
+00:07:56.610 --> 00:07:57.500
+watch this-- boop!
+
+00:07:57.500 --> 00:07:58.110
+There you go.
+
+00:07:58.110 --> 00:07:58.890
+Change the hash.
+
+00:07:58.890 --> 00:08:00.280
+SURMA: Oh, I set
+you up for this one.
+
+00:08:00.280 --> 00:08:00.930
+JAKE ARCHIBALD: I
+know, it's great.
+
+00:08:00.930 --> 00:08:01.296
+Yeah.
+
+00:08:01.296 --> 00:08:02.030
+SURMA: It's so good.
+
+00:08:02.030 --> 00:08:03.360
+JAKE ARCHIBALD: And then it
+means you've changed the file.
+
+00:08:03.360 --> 00:08:05.790
+So each of those resources
+can cache forever,
+
+00:08:05.790 --> 00:08:07.560
+because you changed
+the file when
+
+00:08:07.560 --> 00:08:09.150
+you were changing the content.
+
+00:08:09.150 --> 00:08:11.970
+But the problem with this
+is you've now also changed
+
+00:08:11.970 --> 00:08:14.130
+the content of the parent file.
+
+00:08:14.130 --> 00:08:14.850
+SURMA: Yes.
+
+00:08:14.850 --> 00:08:16.350
+JAKE ARCHIBALD: So you need to
+update the hash of that file.
+
+00:08:16.350 --> 00:08:17.820
+SURMA: Yeah, and if
+nothing else changed,
+
+00:08:17.820 --> 00:08:19.612
+people will download
+a file that is exactly
+
+00:08:19.612 --> 00:08:21.647
+the same except for the imports.
+
+00:08:21.647 --> 00:08:22.480
+JAKE ARCHIBALD: Yes.
+
+00:08:22.480 --> 00:08:24.000
+SURMA: And now with
+the import map,
+
+00:08:24.000 --> 00:08:25.458
+I see where you're
+going with this.
+
+00:08:25.458 --> 00:08:26.292
+JAKE ARCHIBALD: Yes.
+
+00:08:26.292 --> 00:08:27.960
+So even with a
+small module change,
+
+00:08:27.960 --> 00:08:30.670
+you end up invalidating
+massive tree--
+
+00:08:30.670 --> 00:08:31.740
+SURMA: Potentially--
+
+00:08:31.740 --> 00:08:32.730
+JAKE ARCHIBALD: --the whole lot.
+
+00:08:32.730 --> 00:08:34.605
+SURMA: --always from
+where you did the change
+
+00:08:34.605 --> 00:08:36.390
+to the root of your
+thing, at least
+
+00:08:36.390 --> 00:08:38.125
+that one branch,
+potentially more.
+
+00:08:38.125 --> 00:08:39.750
+JAKE ARCHIBALD: It
+will all invalidate.
+
+00:08:39.750 --> 00:08:42.169
+So the idea is, what if
+we could just do that?
+
+00:08:42.169 --> 00:08:45.123
+And then in your import map
+that's where the hash goes.
+
+00:08:45.123 --> 00:08:46.290
+SURMA: Oh, that's very nice.
+
+00:08:46.290 --> 00:08:48.660
+JAKE ARCHIBALD: So that
+means if you change foo--
+
+00:08:48.660 --> 00:08:49.580
+we just changed foo.
+
+00:08:49.580 --> 00:08:50.340
+Watch.
+
+00:08:50.340 --> 00:08:50.840
+Boop!
+
+00:08:50.840 --> 00:08:50.940
+There you go.
+
+00:08:50.940 --> 00:08:52.398
+SURMA: And so the
+interesting thing
+
+00:08:52.398 --> 00:08:55.770
+is this wouldn't be
+possible with HTTP redirects
+
+00:08:55.770 --> 00:08:56.970
+or rewrites.
+
+00:08:56.970 --> 00:08:58.850
+Because it wouldn't
+hit the HTTP cache.
+
+00:08:58.850 --> 00:08:59.850
+JAKE ARCHIBALD: Exactly.
+
+00:08:59.850 --> 00:09:02.520
+SURMA: You could do it may be
+in a service worker, I guess?
+
+00:09:02.520 --> 00:09:04.020
+JAKE ARCHIBALD: You could
+do this in a service worker.
+
+00:09:04.020 --> 00:09:05.603
+You could insert
+all of this stuff.
+
+00:09:05.603 --> 00:09:07.770
+But it wouldn't be there
+for that very first request
+
+00:09:07.770 --> 00:09:09.520
+where your service
+worker isn't installed,
+
+00:09:09.520 --> 00:09:12.100
+whereas with imports, import
+maps, it is just there.
+
+00:09:12.100 --> 00:09:12.600
+SURMA: Yeah.
+
+00:09:12.600 --> 00:09:14.750
+That's a really exciting use
+case, actually, for this.
+
+00:09:14.750 --> 00:09:15.770
+JAKE ARCHIBALD: I
+think it's great.
+
+00:09:15.770 --> 00:09:17.728
+And so that means, yes,
+the user will obviously
+
+00:09:17.728 --> 00:09:20.800
+have to download the new
+foo blah, blah, blah, blah,
+
+00:09:20.800 --> 00:09:21.300
+blah, but--
+
+00:09:21.300 --> 00:09:22.350
+SURMA: But only that.
+
+00:09:22.350 --> 00:09:22.980
+JAKE ARCHIBALD: --only that.
+
+00:09:22.980 --> 00:09:23.820
+Only that small change.
+
+00:09:23.820 --> 00:09:24.720
+SURMA: And the entire
+rest of the pipeline
+
+00:09:24.720 --> 00:09:26.180
+can still just
+rely on-- you know,
+
+00:09:26.180 --> 00:09:29.050
+has to load all the static
+imports before executing.
+
+00:09:29.050 --> 00:09:32.520
+So everything will just
+work and keep working.
+
+00:09:32.520 --> 00:09:34.830
+JAKE ARCHIBALD: So I think
+that's a lovely little use
+
+00:09:34.830 --> 00:09:36.910
+case.
+
+00:09:36.910 --> 00:09:38.760
+So here's a fun one.
+
+00:09:38.760 --> 00:09:40.140
+So here's a fun one.
+
+00:09:40.140 --> 00:09:41.580
+We haven't done that in a while.
+
+00:09:41.580 --> 00:09:43.422
+Although I said
+these script things,
+
+00:09:43.422 --> 00:09:44.880
+these import map
+scripts, they have
+
+00:09:44.880 --> 00:09:47.227
+to be before anything
+that imports anything,
+
+00:09:47.227 --> 00:09:48.310
+otherwise they're invalid.
+
+00:09:48.310 --> 00:09:49.290
+So they have to be--
+
+00:09:49.290 --> 00:09:50.310
+SURMA: Oh, they're
+actually invalid.
+
+00:09:50.310 --> 00:09:51.030
+I didn't catch that.
+
+00:09:51.030 --> 00:09:52.140
+I thought that just,
+like, the models above it
+
+00:09:52.140 --> 00:09:53.280
+wouldn't respect them.
+
+00:09:53.280 --> 00:09:55.180
+JAKE ARCHIBALD: No, it
+will error and ignore.
+
+00:09:55.180 --> 00:09:57.525
+SURMA: Actually, that's
+probably a good idea.
+
+00:09:57.525 --> 00:09:58.400
+JAKE ARCHIBALD: Yeah.
+
+00:09:58.400 --> 00:10:01.480
+So it won't error modules.
+
+00:10:01.480 --> 00:10:03.758
+It will just error on
+the script elements.
+
+00:10:03.758 --> 00:10:05.550
+SURMA: You see an error
+that there was an--
+
+00:10:05.550 --> 00:10:07.130
+that this is not in
+the correct place.
+
+00:10:07.130 --> 00:10:07.300
+JAKE ARCHIBALD: And
+it will ignore it.
+
+00:10:07.300 --> 00:10:09.893
+SURMA: But it will also let the
+other things that have invalid
+
+00:10:09.893 --> 00:10:11.060
+import statements error out.
+
+00:10:11.060 --> 00:10:11.410
+JAKE ARCHIBALD: Yes.
+
+00:10:11.410 --> 00:10:11.910
+SURMA: OK.
+
+00:10:11.910 --> 00:10:14.788
+JAKE ARCHIBALD: But you can
+still create them dynamically,
+
+00:10:14.788 --> 00:10:16.830
+as long as you're still
+creating them dynamically
+
+00:10:16.830 --> 00:10:17.997
+before any of your imports.
+
+00:10:17.997 --> 00:10:19.830
+And I think this is
+really cool, because you
+
+00:10:19.830 --> 00:10:24.680
+could have something like this,
+where it does a feature test.
+
+00:10:24.680 --> 00:10:26.578
+And it could be a
+new JavaScript thing,
+
+00:10:26.578 --> 00:10:27.620
+could be a new DOM thing.
+
+00:10:27.620 --> 00:10:28.080
+SURMA: Oh, that is really cool.
+
+00:10:28.080 --> 00:10:29.663
+JAKE ARCHIBALD: New
+JavaScript syntax.
+
+00:10:29.663 --> 00:10:31.740
+And you could say,
+right, now dump out
+
+00:10:31.740 --> 00:10:33.390
+one of these import maps.
+
+00:10:33.390 --> 00:10:35.753
+Instead of loading
+main, load main modern.
+
+00:10:35.753 --> 00:10:37.170
+SURMA: So for
+example, I could say
+
+00:10:37.170 --> 00:10:40.650
+do you have readable stream
+transforms in writable stream?
+
+00:10:40.650 --> 00:10:42.930
+If I do, I'm just going
+to create this redirect
+
+00:10:42.930 --> 00:10:44.600
+to a small file
+and just re-export
+
+00:10:44.600 --> 00:10:45.600
+the native applications.
+
+00:10:45.600 --> 00:10:49.610
+If not, load the entire
+polyfill thing in my code,
+
+00:10:49.610 --> 00:10:51.747
+and just import
+one normal module.
+
+00:10:51.747 --> 00:10:52.580
+JAKE ARCHIBALD: Yes.
+
+00:10:52.580 --> 00:10:53.460
+SURMA: And that will
+get the polyfill
+
+00:10:53.460 --> 00:10:55.342
+if it needs to be one,
+otherwise it won't be.
+
+00:10:55.342 --> 00:10:56.550
+JAKE ARCHIBALD: Exactly that.
+
+00:10:56.550 --> 00:10:57.480
+SURMA: That's really cool.
+
+00:10:57.480 --> 00:10:58.470
+JAKE ARCHIBALD: But it
+means you could do the same
+
+00:10:58.470 --> 00:11:00.280
+with new JavaScript syntax.
+
+00:11:00.280 --> 00:11:03.270
+So if the scope operator
+became a thing--
+
+00:11:03.270 --> 00:11:04.200
+let's hope it does.
+
+00:11:04.200 --> 00:11:05.575
+It's not going
+to, though, is it?
+
+00:11:05.575 --> 00:11:06.820
+But let's hope it does--
+
+00:11:06.820 --> 00:11:07.920
+it means you could do
+something like this,
+
+00:11:07.920 --> 00:11:10.210
+direct it to another file,
+which makes use of that,
+
+00:11:10.210 --> 00:11:12.570
+and therefore doesn't have to be
+transpired, that kind of thing.
+
+00:11:12.570 --> 00:11:13.260
+SURMA: Could be smaller.
+
+00:11:13.260 --> 00:11:14.280
+JAKE ARCHIBALD: Could
+be smaller, hopefully.
+
+00:11:14.280 --> 00:11:15.640
+SURMA: So why did you do this?
+
+00:11:15.640 --> 00:11:18.065
+JAKE ARCHIBALD: [LAUGHS]
+Do you know why I did this?
+
+00:11:18.065 --> 00:11:19.440
+SURMA: No, that's
+why I'm asking.
+
+00:11:19.440 --> 00:11:20.406
+[LAUGHS]
+
+00:11:20.406 --> 00:11:22.090
+JAKE ARCHIBALD: Well, come
+on-- we do this show and--
+
+00:11:22.090 --> 00:11:23.132
+SURMA: Well, we do this--
+
+00:11:23.132 --> 00:11:23.700
+[MUTTERING]
+
+00:11:23.700 --> 00:11:24.600
+JAKE ARCHIBALD:
+Sometimes we make
+
+00:11:24.600 --> 00:11:27.077
+believe on this show a
+little bit just for the chat.
+
+00:11:27.077 --> 00:11:27.910
+SURMA: No, I legit--
+
+00:11:27.910 --> 00:11:30.720
+I guess it has to do with
+some sort of escaping,
+
+00:11:30.720 --> 00:11:31.700
+but I didn't--
+
+00:11:31.700 --> 00:11:32.180
+JAKE ARCHIBALD: It is.
+
+00:11:32.180 --> 00:11:33.570
+SURMA: Because this is
+just a normal string.
+
+00:11:33.570 --> 00:11:35.190
+This is like the
+only part where you
+
+00:11:35.190 --> 00:11:37.130
+make use of the template
+literal packets.
+
+00:11:37.130 --> 00:11:38.922
+JAKE ARCHIBALD: Yeah,
+the HTML compiles it.
+
+00:11:38.922 --> 00:11:40.920
+Once it enters a script--
+
+00:11:40.920 --> 00:11:44.010
+the end of your script is
+when there is angle bracket
+
+00:11:44.010 --> 00:11:45.690
+slash script, angle bracket.
+
+00:11:45.690 --> 00:11:47.310
+That's the end of your script.
+
+00:11:47.310 --> 00:11:51.610
+So without this little trick,
+the script would end there.
+
+00:11:51.610 --> 00:11:54.893
+And all of this would
+bleed into the HTML.
+
+00:11:54.893 --> 00:11:56.060
+SURMA: Oh, that's the thing.
+
+00:11:56.060 --> 00:11:56.580
+Yes.
+
+00:11:56.580 --> 00:11:57.080
+Yes.
+
+00:11:57.080 --> 00:11:58.050
+I remember now.
+
+00:11:58.050 --> 00:11:58.980
+JAKE ARCHIBALD: Yes.
+
+00:11:58.980 --> 00:12:01.110
+SURMA: Even in a string
+literal, you can't just
+
+00:12:01.110 --> 00:12:04.890
+have angle brackets slash
+script, because by the time
+
+00:12:04.890 --> 00:12:07.113
+your file gets parsed,
+the parser will be like,
+
+00:12:07.113 --> 00:12:08.030
+yep, script ends here.
+
+00:12:08.030 --> 00:12:09.810
+JAKE ARCHIBALD: Yeah, because
+this is HTML parser time rather
+
+00:12:09.810 --> 00:12:11.250
+than JavaScript parser time.
+
+00:12:11.250 --> 00:12:14.298
+So yeah, you've always got to
+do something to work around.
+
+00:12:14.298 --> 00:12:15.840
+SURMA: This is the
+first time I think
+
+00:12:15.840 --> 00:12:22.770
+I've ever seen this, like
+both this kind of escape,
+
+00:12:22.770 --> 00:12:24.958
+but also insert adjacent HTML.
+
+00:12:24.958 --> 00:12:25.750
+I've never used it.
+
+00:12:25.750 --> 00:12:27.750
+JAKE ARCHIBALD: Oh, I
+love insert adjacent HTML.
+
+00:12:27.750 --> 00:12:29.790
+SURMA: I always
+do create element
+
+00:12:29.790 --> 00:12:31.903
+and set an HTML something.
+
+00:12:31.903 --> 00:12:34.320
+JAKE ARCHIBALD: Yeah, and I
+quite often end up doing that,
+
+00:12:34.320 --> 00:12:36.612
+or you're using some sort of
+library that's essentially
+
+00:12:36.612 --> 00:12:37.680
+making it easier for you.
+
+00:12:37.680 --> 00:12:39.263
+But for the sake of
+a slide-- and this
+
+00:12:39.263 --> 00:12:40.410
+is an old Microsoft API.
+
+00:12:40.410 --> 00:12:43.170
+This was one of the non-standard
+things that went into Internet
+
+00:12:43.170 --> 00:12:45.220
+Explorer blah, blah, blah four.
+
+00:12:45.220 --> 00:12:47.720
+It could be five, five,
+five or something.
+
+00:12:47.720 --> 00:12:50.730
+It was in that era somewhere,
+but they standardized it
+
+00:12:50.730 --> 00:12:53.310
+because it is actually a
+pretty useful, very weird API.
+
+00:12:53.310 --> 00:12:55.500
+You can see I want it
+to go after the end
+
+00:12:55.500 --> 00:12:57.427
+of the current script.
+
+00:12:57.427 --> 00:12:58.260
+That's how it works.
+
+00:12:58.260 --> 00:13:00.680
+And then it'll just,
+yeah, parse it as HTML.
+
+00:13:00.680 --> 00:13:01.540
+SURMA: Disgusting.
+
+00:13:01.540 --> 00:13:03.457
+JAKE ARCHIBALD: Disgusting,
+but for this case,
+
+00:13:03.457 --> 00:13:05.786
+it was actually quite useful.
+
+00:13:05.786 --> 00:13:07.720
+I was quite happy with it.
+
+00:13:07.720 --> 00:13:12.510
+Anyway, have you seen
+this type of thing before?
+
+00:13:12.510 --> 00:13:13.510
+SURMA: Of course I have.
+
+00:13:13.510 --> 00:13:14.843
+JAKE ARCHIBALD: It's disgusting.
+
+00:13:14.843 --> 00:13:15.440
+SURMA: It is.
+
+00:13:15.440 --> 00:13:17.148
+JAKE ARCHIBALD: So
+what is happening here
+
+00:13:17.148 --> 00:13:23.020
+is they're trying to load
+jQuery from some sort of CDN
+
+00:13:23.020 --> 00:13:24.540
+in the hope that
+it will already be
+
+00:13:24.540 --> 00:13:26.623
+cached because they've
+used it on a different site
+
+00:13:26.623 --> 00:13:27.760
+or whatever.
+
+00:13:27.760 --> 00:13:31.110
+But some countries don't have
+access to particular CDNs,
+
+00:13:31.110 --> 00:13:33.480
+or sometimes the CDN
+is down or something.
+
+00:13:33.480 --> 00:13:34.680
+So you end up with this
+little script, like hey,
+
+00:13:34.680 --> 00:13:35.040
+you're going well.
+
+00:13:35.040 --> 00:13:37.620
+If jQuery's not there, then
+I'll load it from my own server
+
+00:13:37.620 --> 00:13:38.370
+instead.
+
+00:13:38.370 --> 00:13:39.403
+SURMA: Document.write.
+
+00:13:39.403 --> 00:13:41.820
+They should be using insert
+adjacent HTML, shouldn't they?
+
+00:13:41.820 --> 00:13:43.403
+JAKE ARCHIBALD: They
+should be using--
+
+00:13:43.403 --> 00:13:47.333
+well, the problem with that is
+that would behave differently,
+
+00:13:47.333 --> 00:13:49.500
+because that wouldn't load
+the script synchronously.
+
+00:13:49.500 --> 00:13:50.160
+SURMA: Oh, it would be an async.
+
+00:13:50.160 --> 00:13:51.750
+JAKE ARCHIBALD: It would
+be an async script.
+
+00:13:51.750 --> 00:13:53.333
+So that's why they
+use document.write,
+
+00:13:53.333 --> 00:13:54.350
+which is horrible.
+
+00:13:54.350 --> 00:13:57.540
+We've got a little script escape
+again in a different version
+
+00:13:57.540 --> 00:14:00.770
+of that there.
+
+00:14:00.770 --> 00:14:03.650
+So I'm less excited
+about this feature.
+
+00:14:03.650 --> 00:14:05.420
+Because my response
+to this would be
+
+00:14:05.420 --> 00:14:07.250
+don't load jQuery from CDN.
+
+00:14:07.250 --> 00:14:08.690
+Just load it on your own
+server, because then you're
+
+00:14:08.690 --> 00:14:09.530
+not going to have the--
+
+00:14:09.530 --> 00:14:10.947
+SURMA: Especially--
+Safari already
+
+00:14:10.947 --> 00:14:12.440
+double-keys their caches.
+
+00:14:12.440 --> 00:14:15.490
+No other site can put
+something in the cache for you
+
+00:14:15.490 --> 00:14:16.400
+on Safari anyway.
+
+00:14:16.400 --> 00:14:17.060
+Don't allow it.
+
+00:14:17.060 --> 00:14:17.810
+JAKE ARCHIBALD:
+And Chrome as well
+
+00:14:17.810 --> 00:14:18.890
+are doing the double-key thing.
+
+00:14:18.890 --> 00:14:19.280
+SURMA: Yeah, don't.
+
+00:14:19.280 --> 00:14:21.697
+JAKE ARCHIBALD: And you're
+going to hit a connection setup
+
+00:14:21.697 --> 00:14:22.830
+time for this other--
+
+00:14:22.830 --> 00:14:23.330
+SURMA: Yeah.
+
+00:14:23.330 --> 00:14:24.913
+JAKE ARCHIBALD: OK,
+we think it's bad.
+
+00:14:24.913 --> 00:14:25.865
+But do you know what?
+
+00:14:25.865 --> 00:14:26.990
+SURMA: Let's talk about it.
+
+00:14:26.990 --> 00:14:30.015
+JAKE ARCHIBALD: The [INAUDIBLE]
+maps have a solution for this.
+
+00:14:30.015 --> 00:14:31.890
+As I say, I'm not
+massively excited about it.
+
+00:14:31.890 --> 00:14:35.585
+But what you can say is jQuery,
+and you can give it two URLs.
+
+00:14:35.585 --> 00:14:36.960
+SURMA: Also, we'll
+try the first.
+
+00:14:36.960 --> 00:14:39.950
+And if it fails,
+we'll use the second.
+
+00:14:39.950 --> 00:14:40.823
+All right then?
+
+00:14:40.823 --> 00:14:41.990
+JAKE ARCHIBALD: Fair enough.
+
+00:14:41.990 --> 00:14:45.260
+It's in there, so I just
+wanted to mention it.
+
+00:14:45.260 --> 00:14:47.540
+Here's one I'm a little
+bit more excited about.
+
+00:14:47.540 --> 00:14:48.870
+SURMA: Oh, it's a roller
+coaster of excitement.
+
+00:14:48.870 --> 00:14:50.100
+JAKE ARCHIBALD: Yeah, I know.
+
+00:14:50.100 --> 00:14:52.350
+It's just brilliant, isn't it?
+
+00:14:52.350 --> 00:14:56.275
+So here I'm loading foo, which
+is pointing to foo version two.
+
+00:14:56.275 --> 00:14:58.400
+SURMA: Oh, because we
+are past version one now.
+
+00:14:58.400 --> 00:15:00.067
+JAKE ARCHIBALD: Past
+version one of foo,
+
+00:15:00.067 --> 00:15:01.533
+but I'm also using comlink.
+
+00:15:01.533 --> 00:15:02.200
+SURMA: Good man.
+
+00:15:02.200 --> 00:15:04.550
+JAKE ARCHIBALD: But
+comlink also uses foo.
+
+00:15:04.550 --> 00:15:07.730
+But it expects version one.
+
+00:15:07.730 --> 00:15:09.827
+What are you going to do?
+
+00:15:09.827 --> 00:15:10.660
+SURMA: Ghostbusters?
+
+00:15:10.660 --> 00:15:11.360
+[LAUGHING]
+
+00:15:11.360 --> 00:15:14.320
+JAKE ARCHIBALD: Ghostbusters?
+
+00:15:14.320 --> 00:15:15.750
+That doesn't work.
+
+00:15:15.750 --> 00:15:16.820
+That doesn't fit.
+
+00:15:16.820 --> 00:15:17.700
+Shut up.
+
+00:15:17.700 --> 00:15:18.920
+Right.
+
+00:15:18.920 --> 00:15:21.620
+In this situation, here
+is what you would do.
+
+00:15:21.620 --> 00:15:24.300
+You've got this
+scope section where
+
+00:15:24.300 --> 00:15:26.090
+you're essentially
+providing exceptions
+
+00:15:26.090 --> 00:15:27.150
+to the import section.
+
+00:15:27.150 --> 00:15:30.282
+So for any modules that
+are under this directory,
+
+00:15:30.282 --> 00:15:32.240
+like onwards that have
+that sort of URL prefix.
+
+00:15:32.240 --> 00:15:34.492
+SURMA: Well done them that
+they thought about this.
+
+00:15:34.492 --> 00:15:35.520
+JAKE ARCHIBALD: There
+are exceptions there.
+
+00:15:35.520 --> 00:15:37.250
+SURMA: So is that
+something that we think
+
+00:15:37.250 --> 00:15:42.290
+will happen, that
+libraries will stop
+
+00:15:42.290 --> 00:15:44.420
+bundling their
+dependencies and just
+
+00:15:44.420 --> 00:15:46.910
+leave them as raw
+identifiers and leave it up
+
+00:15:46.910 --> 00:15:49.460
+to you as the
+final app developer
+
+00:15:49.460 --> 00:15:52.070
+to actually bend the
+arrows the right way
+
+00:15:52.070 --> 00:15:54.500
+that every import points
+to the actual correct file?
+
+00:15:54.500 --> 00:15:56.208
+JAKE ARCHIBALD: I
+think that's the dream.
+
+00:15:56.208 --> 00:16:01.403
+I think the dream is to find a
+way to turn the node resolution
+
+00:16:01.403 --> 00:16:03.820
+system into something that can
+be described by this import
+
+00:16:03.820 --> 00:16:04.320
+map.
+
+00:16:04.320 --> 00:16:07.430
+SURMA: Yeah, I guess you
+would expect bundles to output
+
+00:16:07.430 --> 00:16:08.110
+this for us.
+
+00:16:08.110 --> 00:16:08.610
+Right?
+
+00:16:08.610 --> 00:16:09.350
+JAKE ARCHIBALD: Yes, absolutely.
+
+00:16:09.350 --> 00:16:11.420
+SURMA: Because they already
+do the whole analysis
+
+00:16:11.420 --> 00:16:12.170
+and do everything.
+
+00:16:12.170 --> 00:16:13.610
+It's like, here's
+your input map.
+
+00:16:13.610 --> 00:16:14.660
+Just put it in your HTML.
+
+00:16:14.660 --> 00:16:17.077
+JAKE ARCHIBALD: And I think
+those libraries already exist.
+
+00:16:17.077 --> 00:16:19.280
+People have experimentally
+gone, and we
+
+00:16:19.280 --> 00:16:21.697
+can generate an import map
+based on the project structure.
+
+00:16:21.697 --> 00:16:23.447
+SURMA: Yeah, I know
+that the rollup bundle
+
+00:16:23.447 --> 00:16:25.985
+object pretty much contains all
+the data we need to do this.
+
+00:16:25.985 --> 00:16:26.860
+JAKE ARCHIBALD: Yeah.
+
+00:16:26.860 --> 00:16:28.730
+Yeah, so it's easily
+done, which is great.
+
+00:16:28.730 --> 00:16:30.860
+Yeah, whether a human
+would be writing
+
+00:16:30.860 --> 00:16:32.402
+this or whether it
+would be generated
+
+00:16:32.402 --> 00:16:34.137
+by a bundler, who knows.
+
+00:16:34.137 --> 00:16:36.470
+Final thing-- and this is one
+of the things I'm actually
+
+00:16:36.470 --> 00:16:37.580
+most excited about.
+
+00:16:37.580 --> 00:16:39.310
+SURMA: Oh boy.
+
+00:16:39.310 --> 00:16:41.910
+JAKE ARCHIBALD: Import scheme.
+
+00:16:41.910 --> 00:16:42.870
+SURMA: Right.
+
+00:16:42.870 --> 00:16:46.200
+So that basically says
+so any old element
+
+00:16:46.200 --> 00:16:48.710
+that takes URLs can now take
+something with an import scheme
+
+00:16:48.710 --> 00:16:49.445
+and it will look
+it up on the map?
+
+00:16:49.445 --> 00:16:50.190
+Is that what is happening?
+
+00:16:50.190 --> 00:16:50.910
+JAKE ARCHIBALD: That is it.
+
+00:16:50.910 --> 00:16:51.840
+That is exactly it.
+
+00:16:51.840 --> 00:16:54.132
+It's that anything
+that supports URLs--
+
+00:16:54.132 --> 00:16:55.590
+SURMA: So it's the
+same thing then,
+
+00:16:55.590 --> 00:17:00.930
+that I can prevent invalidation
+of the entire resource.
+
+00:17:00.930 --> 00:17:01.487
+OK, here.
+
+00:17:01.487 --> 00:17:03.445
+JAKE ARCHIBALD: Works in
+CSS background images,
+
+00:17:03.445 --> 00:17:04.619
+works anywhere you can use URLs.
+
+00:17:04.619 --> 00:17:04.904
+SURMA: Nice.
+
+00:17:04.904 --> 00:17:05.190
+Oh yeah, it's a scheme.
+
+00:17:05.190 --> 00:17:05.849
+So anything.
+
+00:17:05.849 --> 00:17:07.932
+JAKE ARCHIBALD: Yeah, it
+would even work in fetch.
+
+00:17:07.932 --> 00:17:09.060
+Yes, yeah, absolutely.
+
+00:17:09.060 --> 00:17:10.680
+Yeah.
+
+00:17:10.680 --> 00:17:14.250
+There is a slight problem
+with relative URLs.
+
+00:17:14.250 --> 00:17:17.565
+Because especially if
+you're in CSS land, it knows
+
+00:17:17.565 --> 00:17:19.440
+it's relative to the
+CSS file, because that's
+
+00:17:19.440 --> 00:17:21.150
+how referrers work in CSS.
+
+00:17:21.150 --> 00:17:24.644
+But if you're in a
+script and you do fetch,
+
+00:17:24.644 --> 00:17:26.609
+any relative URLs are
+relative to the document.
+
+00:17:26.609 --> 00:17:28.484
+SURMA: I'm going to
+derail this for a second,
+
+00:17:28.484 --> 00:17:30.950
+because paths drive
+me mad on the web.
+
+00:17:30.950 --> 00:17:32.190
+I like that rollup.
+
+00:17:32.190 --> 00:17:35.240
+When you bundle it, everything
+just ends up in a root folder.
+
+00:17:35.240 --> 00:17:36.560
+There's no folders anymore.
+
+00:17:36.560 --> 00:17:38.160
+There's no sub directories.
+
+00:17:38.160 --> 00:17:40.540
+Everything is just
+dumped into one record.
+
+00:17:40.540 --> 00:17:43.450
+There's no clashes because they
+have hashes in the file name.
+
+00:17:43.450 --> 00:17:44.550
+It makes things easier.
+
+00:17:44.550 --> 00:17:46.217
+JAKE ARCHIBALD: I
+would say for anything
+
+00:17:46.217 --> 00:17:49.920
+that is not going to be user
+visible, I would tend to agree.
+
+00:17:49.920 --> 00:17:51.388
+Obviously, we like good URLs.
+
+00:17:51.388 --> 00:17:51.930
+SURMA: Right.
+
+00:17:51.930 --> 00:17:52.290
+You shouldn't sacrifice that.
+
+00:17:52.290 --> 00:17:52.462
+JAKE ARCHIBALD:
+There are things that
+
+00:17:52.462 --> 00:17:53.430
+have got to appear in the URL.
+
+00:17:53.430 --> 00:17:54.805
+SURMA: But basically
+what I have,
+
+00:17:54.805 --> 00:17:57.520
+I have sub folders for the
+index HTMLs of my blog post,
+
+00:17:57.520 --> 00:17:59.130
+but all the images
+in the blog post
+
+00:17:59.130 --> 00:18:00.570
+are back in the root folder.
+
+00:18:00.570 --> 00:18:03.120
+So every URL, every
+image included is just
+
+00:18:03.120 --> 00:18:04.410
+a slash something something.
+
+00:18:04.410 --> 00:18:04.650
+JAKE ARCHIBALD: Absolutely.
+
+00:18:04.650 --> 00:18:05.000
+Yep.
+
+00:18:05.000 --> 00:18:06.030
+SURMA: And it makes
+things simple.
+
+00:18:06.030 --> 00:18:07.380
+JAKE ARCHIBALD: But it
+means that in cases where
+
+00:18:07.380 --> 00:18:09.130
+it's going to be
+relative to your document
+
+00:18:09.130 --> 00:18:11.315
+rather than relative
+to the module,
+
+00:18:11.315 --> 00:18:12.690
+the proposal is
+to have something
+
+00:18:12.690 --> 00:18:17.332
+like import.meta.resolve,
+which will take a relative URL,
+
+00:18:17.332 --> 00:18:19.290
+and it will do it relative
+to the module route.
+
+00:18:19.290 --> 00:18:19.330
+SURMA: Cool.
+
+00:18:19.330 --> 00:18:20.190
+You could even do things here.
+
+00:18:20.190 --> 00:18:21.720
+Like, this is
+actually really good
+
+00:18:21.720 --> 00:18:24.730
+for progressive enhancement
+when you want to do like, oh,
+
+00:18:24.730 --> 00:18:27.050
+does this browser
+have WebP support,
+
+00:18:27.050 --> 00:18:28.800
+and you can bend the
+import the right way.
+
+00:18:28.800 --> 00:18:30.758
+I mean, we have picture
+element and everything.
+
+00:18:30.758 --> 00:18:31.690
+I know that.
+
+00:18:31.690 --> 00:18:33.985
+But now you have
+programmatic control over it.
+
+00:18:33.985 --> 00:18:35.610
+JAKE ARCHIBALD: Well,
+do you know what?
+
+00:18:35.610 --> 00:18:37.230
+I'm glad you said that,
+because I realized
+
+00:18:37.230 --> 00:18:39.563
+there was a little bit I was
+going to talk about earlier
+
+00:18:39.563 --> 00:18:42.480
+and I forgot.
+
+00:18:42.480 --> 00:18:45.570
+In terms of progressive
+enhancement, this model where
+
+00:18:45.570 --> 00:18:49.050
+you're saying, like, foo.mjs
+to the hashed version,
+
+00:18:49.050 --> 00:18:50.550
+you could ship this
+to browsers that
+
+00:18:50.550 --> 00:18:53.940
+don't support import
+maps as long as you also
+
+00:18:53.940 --> 00:18:55.260
+have foo.mjs in your server.
+
+00:18:55.260 --> 00:18:57.690
+So you would have this
+URL, this on your server,
+
+00:18:57.690 --> 00:18:59.630
+which has the full
+caching headers,
+
+00:18:59.630 --> 00:19:01.422
+and then you would have
+this on your server
+
+00:19:01.422 --> 00:19:03.330
+as well as a fallback,
+which had no cache.
+
+00:19:03.330 --> 00:19:05.070
+SURMA: So old browsers
+aren't excluded.
+
+00:19:05.070 --> 00:19:08.520
+They can have worse
+loading performance,
+
+00:19:08.520 --> 00:19:10.890
+but they're not excluded,
+like the thing still works.
+
+00:19:10.890 --> 00:19:13.140
+JAKE ARCHIBALD: So maybe
+when it gets to most browsers
+
+00:19:13.140 --> 00:19:15.598
+have this but some still don't,
+then that's a switch point,
+
+00:19:15.598 --> 00:19:17.307
+and you've got a
+progressive enhancement.
+
+00:19:17.307 --> 00:19:18.510
+SURMA: This is really cool.
+
+00:19:18.510 --> 00:19:19.550
+JAKE ARCHIBALD: I'm
+really excited about this.
+
+00:19:19.550 --> 00:19:20.070
+SURMA: So am I now, I think.
+
+00:19:20.070 --> 00:19:22.110
+JAKE ARCHIBALD: I'm sure it will
+change a little bit before it
+
+00:19:22.110 --> 00:19:23.035
+reaches browsers properly.
+
+00:19:23.035 --> 00:19:23.360
+SURMA: Oh yeah.
+
+00:19:23.360 --> 00:19:25.620
+Yeah, I think it's very
+important, like, this is not
+
+00:19:25.620 --> 00:19:26.203
+happening yet.
+
+00:19:26.203 --> 00:19:26.995
+JAKE ARCHIBALD: No.
+
+00:19:26.995 --> 00:19:28.410
+SURMA: This is an experiment.
+
+00:19:28.410 --> 00:19:30.123
+At this point, it's in Canary.
+
+00:19:30.123 --> 00:19:32.040
+It's unstable because
+we have an origin trial,
+
+00:19:32.040 --> 00:19:34.740
+but it's not enabled
+and stable by default.
+
+00:19:34.740 --> 00:19:36.478
+There are still
+standards going on.
+
+00:19:36.478 --> 00:19:37.770
+There is a discussion going on.
+
+00:19:37.770 --> 00:19:39.945
+We should link to the
+proposal and stuff
+
+00:19:39.945 --> 00:19:41.570
+so people can weigh
+in if they want to.
+
+00:19:41.570 --> 00:19:42.296
+JAKE ARCHIBALD: And
+again, I was going
+
+00:19:42.296 --> 00:19:44.400
+to say we're looking for
+developer feedback on this.
+
+00:19:44.400 --> 00:19:45.030
+Do you like it?
+
+00:19:45.030 --> 00:19:45.690
+Do you hate it?
+
+00:19:45.690 --> 00:19:46.230
+What do you like?
+
+00:19:46.230 --> 00:19:46.938
+What do you hate?
+
+00:19:46.938 --> 00:19:48.660
+What do you think
+should be different?
+
+00:19:48.660 --> 00:19:51.290
+And now is the right time
+to be letting us know,
+
+00:19:51.290 --> 00:19:52.660
+yeah, all of that stuff.
+
+00:19:52.660 --> 00:19:53.566
+SURMA: Win.
+
+00:19:53.566 --> 00:19:56.898
+[WHOOSHES]
+
+00:19:57.740 --> 00:19:59.240
+Don't pretend like
+you have muscles.
+
+00:19:59.240 --> 00:20:01.520
+[LAUGHING]
+
+00:20:01.520 --> 00:20:02.961
+JAKE ARCHIBALD: Thanks, mate.
+
+00:20:02.961 --> 00:20:05.490
+[GROANING]
+
+00:20:07.550 --> 00:20:09.502
+I've got strong fingers,
+these typing fingers.
+
+00:20:09.502 --> 00:20:10.585
+SURMA: Every day exercise.
+
+00:20:10.585 --> 00:20:12.418
+JAKE ARCHIBALD: Everything
+else is just rot.
+
+00:20:12.418 --> 00:20:13.070
+[LAUGHING]
+
+00:20:13.070 --> 00:20:14.350
+Yes, that's it.
+
+00:20:14.350 --> 00:20:16.190
+I can't.
+

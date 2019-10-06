@@ -1,0 +1,1364 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:00.750
+JAKE ARCHIBALD: I'm
+supposed to be--
+
+00:00:00.750 --> 00:00:03.060
+we're supposed to be
+doing this now, aren't we?
+
+00:00:03.060 --> 00:00:03.670
+All right.
+
+00:00:03.670 --> 00:00:04.170
+Well let's--
+
+00:00:04.170 --> 00:00:05.476
+SURMA: That's our intro.
+
+00:00:05.476 --> 00:00:06.521
+JAKE ARCHIBALD: OK.
+
+00:00:06.521 --> 00:00:07.020
+Excellent.
+
+00:00:07.020 --> 00:00:11.020
+[THEME MUSIC]
+
+00:00:13.520 --> 00:00:14.890
+YouTube comments.
+
+00:00:14.890 --> 00:00:16.605
+SURMA: They're sadly a thing.
+
+00:00:16.605 --> 00:00:18.230
+JAKE ARCHIBALD: They
+are sadly a thing,
+
+00:00:18.230 --> 00:00:19.700
+but we have been
+listening to them.
+
+00:00:19.700 --> 00:00:20.870
+SURMA: Some of them, yes.
+
+00:00:20.870 --> 00:00:22.575
+The ones that
+actually have a point.
+
+00:00:22.575 --> 00:00:23.155
+JAKE ARCHIBALD: Well--
+
+00:00:23.155 --> 00:00:24.320
+SURMA: Not all of them do.
+
+00:00:24.320 --> 00:00:25.986
+JAKE ARCHIBALD: There's
+some good points
+
+00:00:25.986 --> 00:00:27.830
+that are being made--
+
+00:00:27.830 --> 00:00:28.840
+recently increasing.
+
+00:00:28.840 --> 00:00:31.256
+So people have been noticing
+my impending baldness.
+
+00:00:31.256 --> 00:00:33.630
+That's something that has been
+coming up in the comments.
+
+00:00:33.630 --> 00:00:34.692
+Thank you for everyone
+who has been--
+
+00:00:34.692 --> 00:00:36.260
+SURMA: And noticing
+me that I don't ever
+
+00:00:36.260 --> 00:00:37.420
+let you finish a sentence.
+
+00:00:37.420 --> 00:00:38.680
+JAKE ARCHIBALD: Has
+that been noticed?
+
+00:00:38.680 --> 00:00:39.170
+SURMA: Yes.
+
+00:00:39.170 --> 00:00:41.670
+JAKE ARCHIBALD: Oh, well, we
+could talk about that in a bit.
+
+00:00:41.670 --> 00:00:43.130
+But one of the things I--
+
+00:00:43.130 --> 00:00:45.230
+we have noticed
+and listened to is
+
+00:00:45.230 --> 00:00:47.224
+people saying, when
+we talk about code,
+
+00:00:47.224 --> 00:00:48.140
+can we show some code?
+
+00:00:48.140 --> 00:00:49.220
+SURMA: Yeah, that
+might be helpful.
+
+00:00:49.220 --> 00:00:50.000
+JAKE ARCHIBALD: So--
+
+00:00:50.000 --> 00:00:50.405
+SURMA: Could be nice.
+
+00:00:50.405 --> 00:00:51.950
+JAKE ARCHIBALD:
+We thought like--
+
+00:00:51.950 --> 00:00:54.150
+we've got a camera--
+
+00:00:54.150 --> 00:00:56.240
+we got an iPad here
+with some code on it.
+
+00:00:56.240 --> 00:00:59.266
+So tree shaking.
+
+00:00:59.266 --> 00:01:00.840
+SURMA: Oh!
+
+00:01:00.840 --> 00:01:01.770
+So let me guess.
+
+00:01:01.770 --> 00:01:02.730
+You're just doing
+this so we can put
+
+00:01:02.730 --> 00:01:03.960
+a nice buzzword in the title.
+
+00:01:03.960 --> 00:01:04.709
+JAKE ARCHIBALD: Yes.
+
+00:01:04.709 --> 00:01:06.410
+SURMA: 12 things you didn't
+know about tree shaking.
+
+00:01:06.410 --> 00:01:07.890
+Number four will blow your mind!
+
+00:01:07.890 --> 00:01:09.690
+JAKE ARCHIBALD:
+Class-based Tree Shaking
+
+00:01:09.690 --> 00:01:12.420
+is the title of this I think.
+
+00:01:12.420 --> 00:01:13.330
+So here we go.
+
+00:01:13.330 --> 00:01:14.700
+We've got a code example here.
+
+00:01:14.700 --> 00:01:16.084
+I'm importing a load of stuff.
+
+00:01:16.084 --> 00:01:17.750
+SURMA: Plugging your
+own library are we?
+
+00:01:17.750 --> 00:01:21.270
+JAKE ARCHIBALD: It's
+based on a true story,
+
+00:01:21.270 --> 00:01:23.440
+like all good stories are.
+
+00:01:23.440 --> 00:01:25.110
+I'm importing a load of stuff.
+
+00:01:25.110 --> 00:01:26.820
+This file has a
+lot of stuff in it,
+
+00:01:26.820 --> 00:01:29.120
+but I'm only using two of them.
+
+00:01:29.120 --> 00:01:30.840
+And like modern
+tools like roll up--
+
+00:01:30.840 --> 00:01:32.210
+SURMA: Then why are you
+importing the other ones?
+
+00:01:32.210 --> 00:01:34.830
+JAKE ARCHIBALD: Well, just
+to show that they're there.
+
+00:01:34.830 --> 00:01:36.990
+Yes, technically I wouldn't
+have to import them.
+
+00:01:36.990 --> 00:01:38.580
+SURMA: I mean,
+commonly, I guess,
+
+00:01:38.580 --> 00:01:42.600
+you would import this as
+import IDB key valid from--
+
+00:01:42.600 --> 00:01:44.570
+put it all of them in
+an object so you have--
+
+00:01:44.570 --> 00:01:45.820
+JAKE ARCHIBALD: No.
+
+00:01:45.820 --> 00:01:46.320
+No.
+
+00:01:46.320 --> 00:01:46.980
+SURMA: No, you wouldn't.
+
+00:01:46.980 --> 00:01:48.210
+JAKE ARCHIBALD: No,
+you wouldn't do that.
+
+00:01:48.210 --> 00:01:48.690
+SURMA: I wouldn't do that.
+
+00:01:48.690 --> 00:01:49.565
+JAKE ARCHIBALD: Good.
+
+00:01:49.565 --> 00:01:51.810
+So in this-- each
+of these methods
+
+00:01:51.810 --> 00:01:54.570
+is individually exported, and
+that means that tools like roll
+
+00:01:54.570 --> 00:01:58.000
+up and Web Packer can go,
+you're only using two of these
+
+00:01:58.000 --> 00:01:58.956
+or three of these.
+
+00:01:58.956 --> 00:02:00.330
+And it goes, well,
+I'm just going
+
+00:02:00.330 --> 00:02:02.970
+to take the ones you're
+not using and delete them.
+
+00:02:02.970 --> 00:02:04.364
+SURMA: And that's tree shaking?
+
+00:02:04.364 --> 00:02:06.030
+JAKE ARCHIBALD: And
+that's tree shaking.
+
+00:02:06.030 --> 00:02:06.450
+And that's good.
+
+00:02:06.450 --> 00:02:07.620
+SURMA: Oh, because the
+tool can figure out
+
+00:02:07.620 --> 00:02:10.188
+what you're using, because
+if you don't import them,
+
+00:02:10.188 --> 00:02:10.979
+you can't use them.
+
+00:02:10.979 --> 00:02:11.210
+JAKE ARCHIBALD: Right.
+
+00:02:11.210 --> 00:02:12.720
+SURMA: That's how
+modules work, right?
+
+00:02:12.720 --> 00:02:13.636
+JAKE ARCHIBALD: Right.
+
+00:02:13.636 --> 00:02:15.750
+So in the days where
+we would import jQuery,
+
+00:02:15.750 --> 00:02:17.660
+and you've got 101
+methods, and you're only
+
+00:02:17.660 --> 00:02:18.760
+using three of them--
+
+00:02:18.760 --> 00:02:19.260
+tough.
+
+00:02:19.260 --> 00:02:21.176
+You were taking the full
+weight of each query.
+
+00:02:21.176 --> 00:02:23.230
+And with tree shaking,
+that's not true,
+
+00:02:23.230 --> 00:02:25.350
+because you're only using
+the stuff you actually
+
+00:02:25.350 --> 00:02:26.660
+import and use.
+
+00:02:26.660 --> 00:02:27.660
+So, yeah, this is great.
+
+00:02:27.660 --> 00:02:30.190
+This works fine, but I
+ran into this problem.
+
+00:02:30.190 --> 00:02:33.220
+So say this is a
+library, real library,
+
+00:02:33.220 --> 00:02:35.922
+and someone said, well, it's
+all fine having set and get
+
+00:02:35.922 --> 00:02:37.380
+and all of these
+things, but I want
+
+00:02:37.380 --> 00:02:39.720
+to create my own store
+with-- that doesn't
+
+00:02:39.720 --> 00:02:41.040
+clash with another store.
+
+00:02:41.040 --> 00:02:43.090
+I was like, well, I
+know how this works.
+
+00:02:43.090 --> 00:02:45.590
+So I made it happen.
+
+00:02:45.590 --> 00:02:49.645
+And so I thought, well,
+it could be like this.
+
+00:02:49.645 --> 00:02:52.260
+SURMA: Now you're
+importing a store?
+
+00:02:52.260 --> 00:02:53.670
+Oh, yeah, that's the common--
+
+00:02:53.670 --> 00:02:55.260
+you now wouldn't just
+[INAUDIBLE] the thing,
+
+00:02:55.260 --> 00:02:57.360
+but you have to instantiate
+the whole thing first.
+
+00:02:57.360 --> 00:02:59.070
+JAKE ARCHIBALD: And it knows
+all of its stuff about where
+
+00:02:59.070 --> 00:03:01.980
+the database connection is and
+all of that, and it can go.
+
+00:03:01.980 --> 00:03:06.310
+But the problem is classes
+can't be tree shooken--
+
+00:03:06.310 --> 00:03:07.002
+SURMA: [LAUGHS]
+
+00:03:07.002 --> 00:03:09.150
+JAKE ARCHIBALD: I'm sure that's
+the right way of saying that.
+
+00:03:09.150 --> 00:03:10.027
+SURMA: Oh, so, OK.
+
+00:03:10.027 --> 00:03:10.860
+So you have a class.
+
+00:03:10.860 --> 00:03:12.416
+It's called store.
+
+00:03:12.416 --> 00:03:14.040
+In the constructor,
+as we can see here,
+
+00:03:14.040 --> 00:03:16.860
+it gets the backing
+store name, the IDB--
+
+00:03:16.860 --> 00:03:18.710
+did it call a store an IDB?
+
+00:03:18.710 --> 00:03:20.459
+JAKE ARCHIBALD: Yeah.
+
+00:03:20.459 --> 00:03:21.000
+Object store.
+
+00:03:21.000 --> 00:03:23.249
+SURMA: And then the class
+of it has all these methods,
+
+00:03:23.249 --> 00:03:25.110
+like get and set, but
+also the other ones
+
+00:03:25.110 --> 00:03:27.275
+we saw previously, like
+keys and whatever that was.
+
+00:03:27.275 --> 00:03:28.150
+JAKE ARCHIBALD: Yeah.
+
+00:03:28.150 --> 00:03:28.890
+SURMA: OK.
+
+00:03:28.890 --> 00:03:31.720
+So but if you don't
+use one of them--
+
+00:03:31.720 --> 00:03:34.280
+ideally you wouldn't--
+load the code.
+
+00:03:34.280 --> 00:03:34.780
+Right?
+
+00:03:34.780 --> 00:03:36.404
+JAKE ARCHIBALD: But
+it's not statically
+
+00:03:36.404 --> 00:03:38.260
+analyzable in the same
+way a function is.
+
+00:03:38.260 --> 00:03:41.160
+So here I'm using
+dark keys, but I'm not
+
+00:03:41.160 --> 00:03:43.500
+using the delete method.
+
+00:03:43.500 --> 00:03:45.030
+I'm not using the clear method.
+
+00:03:45.030 --> 00:03:46.821
+But it has no way of
+being sure about that.
+
+00:03:46.821 --> 00:03:49.470
+Because keys like this,
+it looks like that static
+
+00:03:49.470 --> 00:03:50.220
+in the analyzable.
+
+00:03:50.220 --> 00:03:51.975
+But there are many other ways--
+
+00:03:51.975 --> 00:03:53.100
+SURMA: That's what I meant.
+
+00:03:53.100 --> 00:03:54.524
+You can do very weird things.
+
+00:03:54.524 --> 00:03:55.440
+JAKE ARCHIBALD: Right.
+
+00:03:55.440 --> 00:03:55.920
+Exactly.
+
+00:03:55.920 --> 00:03:57.630
+So you can do as a
+string, but that string
+
+00:03:57.630 --> 00:03:59.280
+could be like two
+strings added together,
+
+00:03:59.280 --> 00:04:00.946
+or it could be some
+sort of functional--
+
+00:04:00.946 --> 00:04:03.720
+SURMA: If I ever see anyone
+writing code in the last line,
+
+00:04:03.720 --> 00:04:05.560
+I will hunt that person down.
+
+00:04:05.560 --> 00:04:08.060
+JAKE ARCHIBALD: But there are
+legitimate reasons to do that.
+
+00:04:08.060 --> 00:04:10.864
+You might have a
+series of method names,
+
+00:04:10.864 --> 00:04:13.530
+and you want to append on to the
+start or remove from the start.
+
+00:04:13.530 --> 00:04:14.770
+SURMA: Yeah, I've
+done that myself.
+
+00:04:14.770 --> 00:04:16.894
+If you build your own little
+meta-programming thing
+
+00:04:16.894 --> 00:04:19.200
+where you generate event
+headers on the fly,
+
+00:04:19.200 --> 00:04:21.130
+this can happen in
+real production code.
+
+00:04:21.130 --> 00:04:22.600
+This is not you being stupid.
+
+00:04:22.600 --> 00:04:24.191
+This is-- this can happen.
+
+00:04:24.191 --> 00:04:25.440
+JAKE ARCHIBALD: It can happen.
+
+00:04:25.440 --> 00:04:30.390
+And so my question really is,
+how do we solve this problem?
+
+00:04:30.390 --> 00:04:32.810
+And spoiler alert, I don't
+really have the answer,
+
+00:04:32.810 --> 00:04:36.270
+but I've seen other
+libraries have done.
+
+00:04:36.270 --> 00:04:44.790
+So one example is this
+is the style of RXJS.
+
+00:04:44.790 --> 00:04:46.550
+So here we're
+importing the store.
+
+00:04:46.550 --> 00:04:47.930
+So we got our store.
+
+00:04:47.930 --> 00:04:49.870
+It doesn't have the
+keys method on it,
+
+00:04:49.870 --> 00:04:53.040
+because that's, let's say, a
+less common method to call.
+
+00:04:53.040 --> 00:04:54.090
+SURMA: Sure.
+
+00:04:54.090 --> 00:04:57.450
+JAKE ARCHIBALD: But you import
+another JavaScript file,
+
+00:04:57.450 --> 00:04:59.305
+which has the keys
+implementation in it.
+
+00:04:59.305 --> 00:05:02.250
+SURMA: And that just
+mutates the prototype?
+
+00:05:02.250 --> 00:05:04.290
+JAKE ARCHIBALD: It
+mutates to prototype.
+
+00:05:04.290 --> 00:05:05.130
+Exactly.
+
+00:05:05.130 --> 00:05:06.780
+So this would be
+the implementation.
+
+00:05:06.780 --> 00:05:07.620
+SURMA: I mean, it works.
+
+00:05:07.620 --> 00:05:08.230
+I totally get it.
+
+00:05:08.230 --> 00:05:09.105
+JAKE ARCHIBALD: Yeah.
+
+00:05:09.105 --> 00:05:11.820
+SURMA: I'm always wary when
+suddenly the order of imports
+
+00:05:11.820 --> 00:05:13.000
+matter.
+
+00:05:13.000 --> 00:05:16.090
+I feel like that's a
+dangerous path to go down.
+
+00:05:16.090 --> 00:05:18.519
+And generally, like,
+mutating the prototype is--
+
+00:05:18.519 --> 00:05:19.560
+it's been done for years.
+
+00:05:19.560 --> 00:05:21.660
+I'm not saying
+it's bad or stupid.
+
+00:05:21.660 --> 00:05:23.610
+It's just-- it feels dirty.
+
+00:05:23.610 --> 00:05:25.710
+It feels like that should
+be a better solution.
+
+00:05:25.710 --> 00:05:27.577
+JAKE ARCHIBALD: Absolutely.
+
+00:05:27.577 --> 00:05:29.160
+And part the problem
+with this as well
+
+00:05:29.160 --> 00:05:33.990
+is if you import it but
+don't use it, tough.
+
+00:05:33.990 --> 00:05:36.180
+Because it's not statically
+analyzable once again.
+
+00:05:36.180 --> 00:05:37.800
+You know, roll up
+or a [INAUDIBLE]..
+
+00:05:37.800 --> 00:05:39.660
+SURMA: So it shifts the
+burden onto the developer
+
+00:05:39.660 --> 00:05:41.220
+rather than just
+being a tooling issue?
+
+00:05:41.220 --> 00:05:42.150
+JAKE ARCHIBALD:
+Yeah, and it means
+
+00:05:42.150 --> 00:05:44.490
+you end up doing this
+import for every method.
+
+00:05:44.490 --> 00:05:46.130
+It's kind of long strings.
+
+00:05:46.130 --> 00:05:46.970
+It's a bit messy.
+
+00:05:49.890 --> 00:05:52.890
+So thinking about other
+ways of doing this,
+
+00:05:52.890 --> 00:05:56.050
+and there's a JavaScript
+proposal which I really like,
+
+00:05:56.050 --> 00:05:58.275
+I'm a big fan of, called
+the bind operator.
+
+00:05:58.275 --> 00:05:58.912
+SURMA: Yes.
+
+00:05:58.912 --> 00:06:00.120
+I remember the bind operator.
+
+00:06:00.120 --> 00:06:01.980
+JAKE ARCHIBALD: So
+here we're importing
+
+00:06:01.980 --> 00:06:03.315
+store and the methods--
+
+00:06:03.315 --> 00:06:05.560
+SURMA: So store, basically,
+just in this specific,
+
+00:06:05.560 --> 00:06:08.139
+then it would practically more
+or less be an empty class.
+
+00:06:08.139 --> 00:06:09.180
+That's not much in there.
+
+00:06:09.180 --> 00:06:10.180
+JAKE ARCHIBALD: Exactly.
+
+00:06:10.180 --> 00:06:12.480
+And you would call it like this.
+
+00:06:12.480 --> 00:06:14.460
+Store call it, call on set.
+
+00:06:14.460 --> 00:06:17.550
+And that's essentially saying
+call the set method as if it
+
+00:06:17.550 --> 00:06:20.037
+were an instance of store.
+
+00:06:20.037 --> 00:06:21.870
+SURMA: If you have a
+function in JavaScript,
+
+00:06:21.870 --> 00:06:23.130
+you can use dot call.
+
+00:06:23.130 --> 00:06:24.540
+You cannot just use
+parentheses to invoke it,
+
+00:06:24.540 --> 00:06:25.650
+but you can use dot call.
+
+00:06:25.650 --> 00:06:27.450
+And then you give
+it what should be
+
+00:06:27.450 --> 00:06:29.730
+this inside the
+function like this, what
+
+00:06:29.730 --> 00:06:32.760
+is this supposed
+to be, and here I
+
+00:06:32.760 --> 00:06:35.390
+have an N, what
+the parameters are.
+
+00:06:35.390 --> 00:06:38.452
+And the bind operator just
+says, take my left side as this,
+
+00:06:38.452 --> 00:06:40.410
+and the right side just
+do a normal invocation.
+
+00:06:40.410 --> 00:06:40.680
+And this--
+
+00:06:40.680 --> 00:06:40.810
+JAKE ARCHIBALD: Technically.
+
+00:06:40.810 --> 00:06:43.230
+SURMA: So the set
+function kind of thinks
+
+00:06:43.230 --> 00:06:45.180
+it's being called on
+store even though it
+
+00:06:45.180 --> 00:06:47.760
+is-- there is no tight coupling
+between those two things.
+
+00:06:47.760 --> 00:06:48.760
+JAKE ARCHIBALD: Exactly.
+
+00:06:48.760 --> 00:06:50.810
+So you use this just as
+you would in a class,
+
+00:06:50.810 --> 00:06:54.240
+and this will refer to the store
+as it would within the class.
+
+00:06:54.240 --> 00:06:57.120
+And this can be tree shaking
+and all of that stuff
+
+00:06:57.120 --> 00:06:58.239
+if you don't use it.
+
+00:06:58.239 --> 00:07:00.280
+SURMA: I've used this in
+Babel a couple of times.
+
+00:07:00.280 --> 00:07:02.905
+But I don't think this
+has shipped yet anywhere.
+
+00:07:02.905 --> 00:07:05.030
+JAKE ARCHIBALD: No,
+and this makes me sad
+
+00:07:05.030 --> 00:07:08.246
+that it looks like the
+whole proposal is dead.
+
+00:07:08.246 --> 00:07:09.860
+SURMA: Oh, that's sad.
+
+00:07:09.860 --> 00:07:12.135
+JAKE ARCHIBALD: That--
+it does make me sad.
+
+00:07:12.135 --> 00:07:13.595
+SURMA: Do you know why?
+
+00:07:13.595 --> 00:07:16.460
+JAKE ARCHIBALD: Well,
+because another proposal
+
+00:07:16.460 --> 00:07:18.820
+has started taking--
+
+00:07:18.820 --> 00:07:21.320
+caught people's attention for
+doing a lot of the same stuff.
+
+00:07:21.320 --> 00:07:23.111
+And this is the direction
+that the RX folks
+
+00:07:23.111 --> 00:07:24.530
+have been looking at.
+
+00:07:24.530 --> 00:07:26.662
+So same again-- you
+import the store and then
+
+00:07:26.662 --> 00:07:27.370
+separate methods.
+
+00:07:27.370 --> 00:07:28.494
+SURMA: Like same as before.
+
+00:07:28.494 --> 00:07:29.580
+JAKE ARCHIBALD: But--
+
+00:07:29.580 --> 00:07:30.680
+[HUMS OMINOUSLY]
+
+00:07:30.680 --> 00:07:32.080
+SURMA: OK.
+
+00:07:32.080 --> 00:07:34.715
+JAKE ARCHIBALD: So this
+is the pipeline operator.
+
+00:07:34.715 --> 00:07:35.990
+SURMA: What's the difference?
+
+00:07:35.990 --> 00:07:41.300
+JAKE ARCHIBALD: Well, so
+what this is saying is coal--
+
+00:07:41.300 --> 00:07:45.350
+they will take the right hand
+side, treat it as a function,
+
+00:07:45.350 --> 00:07:49.450
+and pass the left hand
+side to it, and call it.
+
+00:07:49.450 --> 00:07:53.067
+SURMA: So set right now it is
+a function that you invoke,
+
+00:07:53.067 --> 00:07:54.400
+and it returns another function.
+
+00:07:54.400 --> 00:07:56.710
+JAKE ARCHIBALD: Yeah,
+great, isn't it?
+
+00:07:56.710 --> 00:07:59.260
+So that's-- yes, so your
+implementation of set would
+
+00:07:59.260 --> 00:08:00.440
+look like this.
+
+00:08:00.440 --> 00:08:02.990
+So here we go to a function,
+which returns a function.
+
+00:08:02.990 --> 00:08:04.910
+The first one takes
+the key and the value,
+
+00:08:04.910 --> 00:08:07.130
+and the second one
+takes the store.
+
+00:08:07.130 --> 00:08:08.620
+SURMA: I see.
+
+00:08:08.620 --> 00:08:10.840
+The ugliness is
+hidden, but it is ugly.
+
+00:08:10.840 --> 00:08:12.320
+JAKE ARCHIBALD: Yeah.
+
+00:08:12.320 --> 00:08:12.820
+Yeah.
+
+00:08:12.820 --> 00:08:15.700
+And this is the way the
+RX folks are looking at--
+
+00:08:18.850 --> 00:08:19.914
+I think it's OK.
+
+00:08:19.914 --> 00:08:20.830
+I think you're right--
+
+00:08:20.830 --> 00:08:22.180
+writing it is confusing.
+
+00:08:22.180 --> 00:08:24.577
+Explain to someone that,
+oh, yeah this is a function,
+
+00:08:24.577 --> 00:08:25.660
+and it returns a function.
+
+00:08:25.660 --> 00:08:26.730
+That's how it works.
+
+00:08:26.730 --> 00:08:28.810
+SURMA: So I think I've
+seen this operated
+
+00:08:28.810 --> 00:08:31.637
+before-- the exact same
+operator in F sharp.
+
+00:08:31.637 --> 00:08:32.470
+JAKE ARCHIBALD: Yes.
+
+00:08:32.470 --> 00:08:34.220
+SURMA: It works
+differently there, though.
+
+00:08:34.220 --> 00:08:36.610
+Because there, basically,
+what is on the left hand side
+
+00:08:36.610 --> 00:08:39.700
+will become the first
+argument of the function
+
+00:08:39.700 --> 00:08:40.850
+of the right hand side.
+
+00:08:40.850 --> 00:08:42.308
+JAKE ARCHIBALD: So
+in this case, it
+
+00:08:42.308 --> 00:08:44.355
+will become the first
+argument, but it will be--
+
+00:08:44.355 --> 00:08:45.850
+SURMA: But of the
+function that it returns.
+
+00:08:45.850 --> 00:08:46.766
+JAKE ARCHIBALD: I see.
+
+00:08:46.766 --> 00:08:49.430
+SURMA: That would be injected
+in front of the other argument.
+
+00:08:49.430 --> 00:08:52.960
+So you don't have the necessity
+to create a new function first
+
+00:08:52.960 --> 00:08:54.610
+before you can start using this.
+
+00:08:54.610 --> 00:08:57.310
+JAKE ARCHIBALD: So there
+is an alternate proposal,
+
+00:08:57.310 --> 00:08:58.516
+which looks like this.
+
+00:08:58.516 --> 00:08:59.890
+Here you're using
+a question mark
+
+00:08:59.890 --> 00:09:02.240
+to say where a store
+would be passed into.
+
+00:09:02.240 --> 00:09:02.870
+SURMA: I see.
+
+00:09:02.870 --> 00:09:04.450
+JAKE ARCHIBALD: And this
+is the hack style of it.
+
+00:09:04.450 --> 00:09:05.570
+SURMA: So where's this at?
+
+00:09:05.570 --> 00:09:06.130
+Is this--
+
+00:09:06.130 --> 00:09:08.410
+JAKE ARCHIBALD: So
+this is stage 2.
+
+00:09:08.410 --> 00:09:12.250
+There are two main competing
+proposals for the pipeline,
+
+00:09:12.250 --> 00:09:18.310
+and that spawned another
+12C7 variants of the two ways
+
+00:09:18.310 --> 00:09:19.880
+of trying to combine the two.
+
+00:09:19.880 --> 00:09:23.420
+So that's, yeah, it's
+very much experimental,
+
+00:09:23.420 --> 00:09:25.450
+still discussing
+the features land.
+
+00:09:25.450 --> 00:09:27.880
+But I keep going back there.
+
+00:09:27.880 --> 00:09:30.370
+Yeah, I keep going
+back to bind for things
+
+00:09:30.370 --> 00:09:31.830
+which are instance methods.
+
+00:09:31.830 --> 00:09:33.820
+And I feel like
+even if this ships,
+
+00:09:33.820 --> 00:09:38.070
+I feel like I would end up going
+for something more like this.
+
+00:09:38.070 --> 00:09:40.060
+SURMA: Oh, that's
+actually not too bad.
+
+00:09:40.060 --> 00:09:42.910
+JAKE ARCHIBALD: Like where I
+have a do method that takes--
+
+00:09:42.910 --> 00:09:44.140
+SURMA: Legit just under
+the hood, probably,
+
+00:09:44.140 --> 00:09:45.100
+switching it around right?
+
+00:09:45.100 --> 00:09:45.910
+JAKE ARCHIBALD: Which
+are legitimately
+
+00:09:45.910 --> 00:09:48.090
+under the hood is
+just going to do--
+
+00:09:48.090 --> 00:09:49.200
+yeah, it's just going--
+
+00:09:49.200 --> 00:09:49.590
+SURMA: It's going to do?
+
+00:09:49.590 --> 00:09:51.460
+JAKE ARCHIBALD: The
+argument's this?
+
+00:09:51.460 --> 00:09:53.510
+Exactly that.
+
+00:09:53.510 --> 00:09:55.070
+SURMA: I like this
+pattern, honestly,
+
+00:09:55.070 --> 00:09:56.440
+because this you can do today.
+
+00:09:56.440 --> 00:09:58.165
+And it would allow you
+to do the tree shaking.
+
+00:09:58.165 --> 00:09:59.164
+JAKE ARCHIBALD: Exactly.
+
+00:09:59.164 --> 00:10:02.800
+The downside to this pattern
+is I don't think it's possible
+
+00:10:02.800 --> 00:10:06.997
+with TypeScript, which I know
+it shouldn't hold you back from
+
+00:10:06.997 --> 00:10:08.080
+JavaScript but if you're--
+
+00:10:08.080 --> 00:10:08.905
+SURMA: Why not?
+
+00:10:08.905 --> 00:10:15.450
+JAKE ARCHIBALD: Because in the
+do case, the second and third
+
+00:10:15.450 --> 00:10:18.670
+and to infinity
+arguments, their types
+
+00:10:18.670 --> 00:10:22.632
+depend on the the thing
+of the first argument.
+
+00:10:22.632 --> 00:10:24.340
+SURMA: You can do
+that, but then the type
+
+00:10:24.340 --> 00:10:25.705
+would have to know about
+all possible functions.
+
+00:10:25.705 --> 00:10:26.245
+JAKE ARCHIBALD: Exactly.
+
+00:10:26.245 --> 00:10:28.120
+SURMA: It's like they
+do with event listeners
+
+00:10:28.120 --> 00:10:30.250
+where they define the type
+depending on the string
+
+00:10:30.250 --> 00:10:32.500
+value of the first
+argument and then define
+
+00:10:32.500 --> 00:10:33.940
+what the event type will be.
+
+00:10:33.940 --> 00:10:35.981
+JAKE ARCHIBALD: So you
+can do that with a string.
+
+00:10:35.981 --> 00:10:38.110
+I don't know if you can
+do it with an object.
+
+00:10:38.110 --> 00:10:39.055
+You maybe can.
+
+00:10:39.055 --> 00:10:39.970
+SURMA: Good question.
+
+00:10:39.970 --> 00:10:40.886
+I actually don't know.
+
+00:10:40.886 --> 00:10:44.559
+But it's definitely more
+complicated than it should be.
+
+00:10:44.559 --> 00:10:45.600
+JAKE ARCHIBALD: So, yeah.
+
+00:10:45.600 --> 00:10:47.480
+So that's the problem
+I have to say.
+
+00:10:47.480 --> 00:10:49.470
+That is probably the
+best solution I've got
+
+00:10:49.470 --> 00:10:52.979
+or just a function, which will
+take the store object and--
+
+00:10:52.979 --> 00:10:54.645
+SURMA: Or just stable
+the bind operator.
+
+00:10:54.645 --> 00:10:56.170
+JAKE ARCHIBALD: Or just
+be able the bind operator.
+
+00:10:56.170 --> 00:10:57.730
+SURMA: It still ended up--
+the plug in still exists.
+
+00:10:57.730 --> 00:11:00.390
+JAKE ARCHIBALD: Yeah, but to
+go for something which is not
+
+00:11:00.390 --> 00:11:04.720
+going to be pursued
+in JavaScript, maybe,
+
+00:11:04.720 --> 00:11:07.130
+it feels like the
+wrong direction to go.
+
+00:11:07.130 --> 00:11:07.980
+I don't know.
+
+00:11:07.980 --> 00:11:10.290
+There's one more
+proposal, which is just
+
+00:11:10.290 --> 00:11:12.390
+being talked about, which I--
+
+00:11:12.390 --> 00:11:14.790
+it would be a way of
+having an instance
+
+00:11:14.790 --> 00:11:19.620
+and a declarative way of
+saying, take these extensions
+
+00:11:19.620 --> 00:11:24.575
+and apply it to this class
+but only in this scope.
+
+00:11:24.575 --> 00:11:25.260
+SURMA: OK.
+
+00:11:25.260 --> 00:11:27.342
+JAKE ARCHIBALD: And so
+it's a kind of way of--
+
+00:11:27.342 --> 00:11:29.300
+SURMA: It's very specific
+to this problem then,
+
+00:11:29.300 --> 00:11:30.210
+though, because I feel like--
+
+00:11:30.210 --> 00:11:30.430
+JAKE ARCHIBALD: Absolutely.
+
+00:11:30.430 --> 00:11:33.140
+SURMA: Bind operator would be
+a more powerful generic even--
+
+00:11:33.140 --> 00:11:35.090
+or a better solution
+of the pen operator
+
+00:11:35.090 --> 00:11:37.532
+would be more generic,
+more powerful tool to have.
+
+00:11:37.532 --> 00:11:38.740
+JAKE ARCHIBALD: And that is--
+
+00:11:38.740 --> 00:11:40.365
+yeah, that's my worry
+about it as well.
+
+00:11:40.365 --> 00:11:41.930
+Is it solving that
+specific problem
+
+00:11:41.930 --> 00:11:44.660
+whereas bind solves that problem
+and lots of other problems?
+
+00:11:44.660 --> 00:11:45.160
+SURMA: Yeah.
+
+00:11:45.160 --> 00:11:47.894
+JAKE ARCHIBALD: So, yeah, I'm
+curious to see where it goes.
+
+00:11:47.894 --> 00:11:49.685
+We've got hacks we can
+use in the meantime.
+
+00:11:49.685 --> 00:11:50.255
+SURMA: Yeah.
+
+00:11:50.255 --> 00:11:52.210
+JAKE ARCHIBALD: But I just--
+
+00:11:52.210 --> 00:11:52.820
+yeah.
+
+00:11:52.820 --> 00:11:56.420
+I want bind or a way to do
+this in TypeScript, which
+
+00:11:56.420 --> 00:11:58.276
+might already be
+possible, and if so,
+
+00:11:58.276 --> 00:11:59.900
+someone should tell
+me in the comments.
+
+00:11:59.900 --> 00:12:02.660
+And this is me farming off
+my work to other people.
+
+00:12:02.660 --> 00:12:06.290
+SURMA: [LAUGHS] Should
+we introduced 0HTB codes?
+
+00:12:06.290 --> 00:12:08.620
+JAKE ARCHIBALD: [LAUGHS]
+Negative HTB codes.
+
+00:12:08.620 --> 00:12:11.540
+SURMA: What if we reach 100?
+
+00:12:11.540 --> 00:12:12.400
+JAKE ARCHIBALD: Oh.
+
+00:12:12.400 --> 00:12:16.800
+SURMA: What do we do when
+we actually shoot HB2 or 3?
+

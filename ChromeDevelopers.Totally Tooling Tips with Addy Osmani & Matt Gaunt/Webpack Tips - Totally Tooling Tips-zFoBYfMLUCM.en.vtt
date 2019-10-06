@@ -1,0 +1,915 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.444
+[MUSIC PLAYING]
+
+00:00:10.840 --> 00:00:13.720
+ADDY: So today we're going to
+talk about Webpack performance
+
+00:00:13.720 --> 00:00:14.540
+tips.
+
+00:00:14.540 --> 00:00:16.090
+MATT: Performance
+of the JavaScript
+
+00:00:16.090 --> 00:00:18.425
+you're serving up in the
+browser, not Webpack itself.
+
+00:00:18.425 --> 00:00:20.050
+ADDY: So let's start
+with minification.
+
+00:00:20.050 --> 00:00:22.150
+You should be minifying
+any of the code
+
+00:00:22.150 --> 00:00:23.770
+that you're sending down.
+
+00:00:23.770 --> 00:00:26.500
+With Webpack there are a few
+interesting nuances there.
+
+00:00:26.500 --> 00:00:29.370
+First thing to do if
+you're shipping ES5 code
+
+00:00:29.370 --> 00:00:32.530
+is to use the uglifyJs plugin.
+
+00:00:32.530 --> 00:00:35.695
+Folks are probably aware of
+that from other projects,
+
+00:00:35.695 --> 00:00:36.250
+pre-Webpack.
+
+00:00:36.250 --> 00:00:38.500
+MATT: Yeah, uglifyJs is
+the standard one, yep.
+
+00:00:38.500 --> 00:00:41.170
+ADDY: Now we're going to
+have to get a little bit
+
+00:00:41.170 --> 00:00:44.170
+creative is, if you're shipping
+anything other than ES5
+
+00:00:44.170 --> 00:00:45.050
+down to your users.
+
+00:00:45.050 --> 00:00:47.800
+So a lot of folks are
+writing is ES15 today.
+
+00:00:47.800 --> 00:00:50.380
+If you're doing that and not
+transpiling down to ES15,
+
+00:00:50.380 --> 00:00:53.560
+make sure you're using something
+like Babili and the Babili
+
+00:00:53.560 --> 00:00:54.440
+Webpack plug-in.
+
+00:00:54.440 --> 00:00:56.190
+MATT: Yes, so those,
+it's going to minify,
+
+00:00:56.190 --> 00:00:58.116
+but it also understands ES2015s.
+
+00:00:58.116 --> 00:01:00.740
+There's certain optimizations it
+can do because it understands.
+
+00:01:00.740 --> 00:01:02.300
+It's a little bit
+better than uglifyJs.
+
+00:01:02.300 --> 00:01:02.800
+ADDY: Yes.
+
+00:01:02.800 --> 00:01:04.000
+MATT: Yes.
+
+00:01:04.000 --> 00:01:05.958
+ADDY: Next thing folks
+should make sure they're
+
+00:01:05.958 --> 00:01:07.630
+doing is minifying their CSS.
+
+00:01:07.630 --> 00:01:09.170
+Now it sounds very
+straightforward.
+
+00:01:09.170 --> 00:01:11.950
+However, if you were
+loading in any CSS
+
+00:01:11.950 --> 00:01:15.310
+using Webpack's CSS
+loader, by default
+
+00:01:15.310 --> 00:01:17.590
+it's not going to
+minify that code.
+
+00:01:17.590 --> 00:01:20.290
+Effectively, you're putting
+one type of file format
+
+00:01:20.290 --> 00:01:21.010
+into another.
+
+00:01:21.010 --> 00:01:23.620
+Like that's going to get stuck
+into your JavaScript bundles.
+
+00:01:23.620 --> 00:01:26.022
+So make sure that you're
+passing minimize true.
+
+00:01:26.022 --> 00:01:27.730
+MATT: So at least
+whatever you're putting
+
+00:01:27.730 --> 00:01:29.890
+in there is at least small.
+
+00:01:29.890 --> 00:01:31.540
+ADDY: Exactly.
+
+00:01:31.540 --> 00:01:34.810
+Ideally you don't have to
+think about that because you're
+
+00:01:34.810 --> 00:01:38.060
+actually extracting your CSS
+to a completely separate file.
+
+00:01:38.060 --> 00:01:38.560
+MATT: Yes.
+
+00:01:38.560 --> 00:01:40.150
+ADDY: That's our
+preferred option.
+
+00:01:40.150 --> 00:01:41.040
+There are benefits to that.
+
+00:01:41.040 --> 00:01:42.240
+You don't have to double parse.
+
+00:01:42.240 --> 00:01:44.281
+It doesn't have to parse
+your JavaScript in order
+
+00:01:44.281 --> 00:01:45.040
+to parse your CSS.
+
+00:01:45.040 --> 00:01:47.800
+It's also going to cache
+a little bit better
+
+00:01:47.800 --> 00:01:49.180
+on the browser side of things.
+
+00:01:49.180 --> 00:01:50.763
+Because you're not
+going to invalidate
+
+00:01:50.763 --> 00:01:53.350
+your bundle every single
+time you're making a change.
+
+00:01:53.350 --> 00:01:55.266
+Your CSS, your jobs
+descriptor, you're keeping
+
+00:01:55.266 --> 00:01:56.670
+those things pretty separate.
+
+00:01:56.670 --> 00:02:00.220
+In Webpack, use the extract text
+plug-in to get that working.
+
+00:02:00.220 --> 00:02:02.350
+MATT: Cool, sounds good.
+
+00:02:02.350 --> 00:02:04.680
+ADDY: Next thing,
+take advantage of ES
+
+00:02:04.680 --> 00:02:07.720
+module imports and
+exports for tree-shaking
+
+00:02:07.720 --> 00:02:08.660
+your dependency graph.
+
+00:02:08.660 --> 00:02:09.160
+MATT: Yep.
+
+00:02:09.160 --> 00:02:10.479
+ADDY: What is tree-shaking?
+
+00:02:10.479 --> 00:02:12.040
+MATT: I'm still
+figuring this out.
+
+00:02:12.040 --> 00:02:14.380
+So tree-shaking
+one way or another
+
+00:02:14.380 --> 00:02:16.484
+is where we can remove
+dead code in terms
+
+00:02:16.484 --> 00:02:17.650
+of your imports and exports.
+
+00:02:17.650 --> 00:02:19.441
+Because if you import
+something and there's
+
+00:02:19.441 --> 00:02:23.140
+a ton of other exports you
+don't use, they can be removed.
+
+00:02:23.140 --> 00:02:25.880
+I believe though, if you
+import one thing from a file,
+
+00:02:25.880 --> 00:02:27.460
+it'll import all of the exports.
+
+00:02:27.460 --> 00:02:29.290
+But then it would
+tree-shake beyond that.
+
+00:02:29.290 --> 00:02:30.810
+I don't know, there's some
+funky stuff from [INAUDIBLE]..
+
+00:02:30.810 --> 00:02:31.680
+ADDY: They're supposed
+to have nuanced
+
+00:02:31.680 --> 00:02:33.130
+this stuff around tree-shaking.
+
+00:02:33.130 --> 00:02:33.941
+MATT: But it's
+still a good, and it
+
+00:02:33.941 --> 00:02:34.960
+will remove code you don't use.
+
+00:02:34.960 --> 00:02:35.460
+ADDY: Yes.
+
+00:02:35.460 --> 00:02:37.810
+Now in Webpack, one of
+the lesser-known things
+
+00:02:37.810 --> 00:02:41.290
+is that unused code itself
+is not removed by Webpack.
+
+00:02:41.290 --> 00:02:43.734
+It's done by a
+minifier like uglifyJs.
+
+00:02:43.734 --> 00:02:45.650
+So Webpack is just going
+to remove your export
+
+00:02:45.650 --> 00:02:47.380
+statements that are used
+for exports that you're not
+
+00:02:47.380 --> 00:02:48.079
+actually using.
+
+00:02:48.079 --> 00:02:49.870
+You still need to use
+a minifier to get rid
+
+00:02:49.870 --> 00:02:50.960
+of the rest of that code.
+
+00:02:50.960 --> 00:02:51.543
+So make sure--
+
+00:02:51.543 --> 00:02:53.629
+MATT: Just any dead
+code paths that it knows
+
+00:02:53.629 --> 00:02:54.920
+is never going to actually run.
+
+00:02:54.920 --> 00:02:57.190
+ADDY: Exactly, exactly.
+
+00:02:57.190 --> 00:02:58.990
+Another useful
+thing is making sure
+
+00:02:58.990 --> 00:03:01.324
+that you're running
+Webpack in production mode.
+
+00:03:01.324 --> 00:03:02.740
+MATT: Yes, this
+is a Webpack thing
+
+00:03:02.740 --> 00:03:04.570
+I was very confused about
+when I first heard about it.
+
+00:03:04.570 --> 00:03:05.694
+But it kind of makes sense.
+
+00:03:05.694 --> 00:03:07.340
+ADDY: Yes, so two
+ways to do this.
+
+00:03:07.340 --> 00:03:10.690
+You can patch the -p option
+to Webpack itself, which
+
+00:03:10.690 --> 00:03:12.550
+will take care of
+both minification
+
+00:03:12.550 --> 00:03:14.800
+and setting your node
+environment variable
+
+00:03:14.800 --> 00:03:17.230
+to production effectively.
+
+00:03:17.230 --> 00:03:19.990
+Another thing you can do is
+use the Webpack to find plug-in
+
+00:03:19.990 --> 00:03:21.620
+to accomplish the same thing.
+
+00:03:21.620 --> 00:03:23.270
+That's how I usually do it.
+
+00:03:23.270 --> 00:03:25.450
+I totally forgot
+Webpack -p was a thing.
+
+00:03:25.450 --> 00:03:28.580
+So to find plug-in is good for
+slightly more complex cases.
+
+00:03:28.580 --> 00:03:30.820
+I just JSON stringify
+my production settings
+
+00:03:30.820 --> 00:03:31.860
+and just have it.
+
+00:03:31.860 --> 00:03:32.830
+MATT: Done, nice.
+
+00:03:32.830 --> 00:03:34.930
+ADDY: Useful for
+when a library has
+
+00:03:34.930 --> 00:03:37.450
+to switch between like
+the dev or debug builds
+
+00:03:37.450 --> 00:03:38.906
+or the production builds.
+
+00:03:38.906 --> 00:03:41.720
+MATT: Yep, all sounds good.
+
+00:03:41.720 --> 00:03:44.009
+ADDY: Another thing that's
+useful is taking stock
+
+00:03:44.009 --> 00:03:45.550
+of what you're
+actually shipping down
+
+00:03:45.550 --> 00:03:48.880
+using a bundle analyzer
+or a source map explorer.
+
+00:03:48.880 --> 00:03:50.827
+So lots of good
+tools for this stuff.
+
+00:03:50.827 --> 00:03:52.910
+Can help you identify
+whether you're shipping code
+
+00:03:52.910 --> 00:03:55.420
+that you didn't expect to be
+shipping down to your users.
+
+00:03:55.420 --> 00:03:58.280
+Whether there are like modules
+that you can maybe switch out
+
+00:03:58.280 --> 00:03:59.816
+for much smaller alternatives.
+
+00:03:59.816 --> 00:04:01.690
+MATT: It's always good
+with [INAUDIBLE] code,
+
+00:04:01.690 --> 00:04:02.980
+because it's just,
+you'll eventually
+
+00:04:02.980 --> 00:04:05.080
+get an overall picture of where
+all the sizes are actually
+
+00:04:05.080 --> 00:04:05.740
+coming from.
+
+00:04:05.740 --> 00:04:08.160
+And then get a feel very
+easily of what percentage
+
+00:04:08.160 --> 00:04:09.444
+is coming from where.
+
+00:04:09.444 --> 00:04:11.860
+ADDY: Another good thing to
+do is splitting up your vendor
+
+00:04:11.860 --> 00:04:14.580
+libraries into a
+completely separate bundle,
+
+00:04:14.580 --> 00:04:15.587
+separate chunk.
+
+00:04:15.587 --> 00:04:17.920
+Now your vendor libraries are
+things like your framework
+
+00:04:17.920 --> 00:04:19.810
+code, your library
+code, that you're
+
+00:04:19.810 --> 00:04:22.660
+going to be reusing across a
+bunch of your different routes
+
+00:04:22.660 --> 00:04:23.480
+and views.
+
+00:04:23.480 --> 00:04:26.230
+Stuff that if you move into
+a completely separate bundle,
+
+00:04:26.230 --> 00:04:27.340
+the browser can cache.
+
+00:04:27.340 --> 00:04:29.590
+And you're probably not going
+to update that code too often.
+
+00:04:29.590 --> 00:04:31.240
+MATT: The only time it's
+really going to change
+
+00:04:31.240 --> 00:04:33.781
+is if you bump up the framework
+version or a library version.
+
+00:04:33.781 --> 00:04:35.860
+Otherwise, yes, it's
+going to be the same.
+
+00:04:35.860 --> 00:04:39.530
+ADDY: Yeah, so check out up the
+Webpack commons chunk plug-in
+
+00:04:39.530 --> 00:04:41.800
+for getting that set up.
+
+00:04:41.800 --> 00:04:43.861
+Related to that
+is code splitting.
+
+00:04:43.861 --> 00:04:44.360
+MATT: Yes.
+
+00:04:44.360 --> 00:04:45.580
+ADDY: So what is
+code splitting, Matt?
+
+00:04:45.580 --> 00:04:47.230
+MATT: So code splitting
+is where you're actually
+
+00:04:47.230 --> 00:04:49.120
+taking all of your code and
+rather than munge it together
+
+00:04:49.120 --> 00:04:50.980
+in one single file
+and shipping it down,
+
+00:04:50.980 --> 00:04:52.450
+you split it up
+into several files.
+
+00:04:52.450 --> 00:04:53.950
+And then you actually
+only pull down
+
+00:04:53.950 --> 00:04:55.190
+like the most important bit.
+
+00:04:55.190 --> 00:04:56.830
+And then you can easily
+load in the other bits.
+
+00:04:56.830 --> 00:04:57.370
+ADDY: Exactly.
+
+00:04:57.370 --> 00:04:58.930
+So the idea is that
+you're just shipping down
+
+00:04:58.930 --> 00:05:00.971
+exactly what the user
+needs for the current route
+
+00:05:00.971 --> 00:05:03.040
+or their current view.
+
+00:05:03.040 --> 00:05:06.280
+And the difference between
+using a static import
+
+00:05:06.280 --> 00:05:07.780
+and getting this
+done is that you're
+
+00:05:07.780 --> 00:05:09.890
+going to start using
+a dynamic import.
+
+00:05:09.890 --> 00:05:12.750
+This is a newer
+JavaScript feature.
+
+00:05:12.750 --> 00:05:15.900
+The idea is that you just want
+a lazy load in pieces that don't
+
+00:05:15.900 --> 00:05:17.210
+need to be loaded up front.
+
+00:05:17.210 --> 00:05:17.740
+MATT: Yep.
+
+00:05:17.740 --> 00:05:20.640
+ADDY: And so that allows you
+to basically move this out
+
+00:05:20.640 --> 00:05:24.510
+into code that can be deferred
+load later on in the process.
+
+00:05:24.510 --> 00:05:27.660
+MATT: OK, so that is actually
+the dynamic import standards
+
+00:05:27.660 --> 00:05:28.230
+thing.
+
+00:05:28.230 --> 00:05:28.730
+ADDY: Yes.
+
+00:05:28.730 --> 00:05:29.790
+And Webpack supports it.
+
+00:05:29.790 --> 00:05:30.373
+ADDY: Exactly.
+
+00:05:30.373 --> 00:05:31.020
+MATT: Nice.
+
+00:05:31.020 --> 00:05:33.150
+ADDY: You can also take
+advantage of dynamic import
+
+00:05:33.150 --> 00:05:35.640
+with things like React.
+
+00:05:35.640 --> 00:05:37.440
+Lots of different
+things like React router
+
+00:05:37.440 --> 00:05:39.240
+allow you to use it
+inside get component.
+
+00:05:39.240 --> 00:05:41.730
+But that ends up being more
+specific to your framework
+
+00:05:41.730 --> 00:05:42.300
+of choice.
+
+00:05:42.300 --> 00:05:42.930
+MATT: Yes.
+
+00:05:42.930 --> 00:05:46.890
+ADDY: Now another thing I see
+a lot of people trip up on,
+
+00:05:46.890 --> 00:05:49.370
+libraries like moment.js,
+like the date time library.
+
+00:05:49.370 --> 00:05:50.790
+MATT: Yes, I use it a lot.
+
+00:05:50.790 --> 00:05:52.560
+ADDY: If you include
+it by default,
+
+00:05:52.560 --> 00:05:53.970
+it's got a relatively
+large size.
+
+00:05:53.970 --> 00:05:57.000
+It's something like
+215, 216 kilobytes.
+
+00:05:57.000 --> 00:05:59.250
+And that's because a lot
+of that file is like,
+
+00:05:59.250 --> 00:06:01.040
+it's localization stuff.
+
+00:06:01.040 --> 00:06:01.800
+MATT: OK, yeah.
+
+00:06:01.800 --> 00:06:04.320
+ADDY: And unless you're a
+really large international site,
+
+00:06:04.320 --> 00:06:06.969
+you might not need to be loading
+all of that stuff up front.
+
+00:06:06.969 --> 00:06:08.760
+And even if you need
+it, you could probably
+
+00:06:08.760 --> 00:06:11.130
+be lazy loading it in or making
+intelligent choices around--
+
+00:06:11.130 --> 00:06:12.690
+MATT: You can probably do
+different bundles anyway
+
+00:06:12.690 --> 00:06:14.940
+for the localization, which
+you might be doing already.
+
+00:06:14.940 --> 00:06:15.439
+Yes.
+
+00:06:15.439 --> 00:06:16.050
+ADDY: Exactly.
+
+00:06:16.050 --> 00:06:19.327
+So in Webpack, check out the
+context replacement plug-in.
+
+00:06:19.327 --> 00:06:20.910
+What that will let
+you do is basically
+
+00:06:20.910 --> 00:06:24.960
+you can pass in this magic
+regexp to the bundler
+
+00:06:24.960 --> 00:06:27.920
+and specify what locales
+you do want to support.
+
+00:06:27.920 --> 00:06:31.800
+Like maybe I want to support
+English for the UK and the US,
+
+00:06:31.800 --> 00:06:33.460
+but ignore some other ones.
+
+00:06:33.460 --> 00:06:34.919
+And that just will
+save you a bunch
+
+00:06:34.919 --> 00:06:37.043
+if you happen to be using
+these types of libraries.
+
+00:06:37.043 --> 00:06:38.880
+MATT: It kind of
+just globs whatever
+
+00:06:38.880 --> 00:06:41.550
+files are inside that library
+and then just only pulls those
+
+00:06:41.550 --> 00:06:42.850
+in and ignores everything else.
+
+00:06:42.850 --> 00:06:43.600
+ADDY: Effectively.
+
+00:06:43.600 --> 00:06:44.970
+MATT: Nice.
+
+00:06:44.970 --> 00:06:47.910
+ADDY: Lodash, popular
+JavaScript utility library.
+
+00:06:47.910 --> 00:06:50.410
+We definitely use it
+a lot in our projects.
+
+00:06:50.410 --> 00:06:52.170
+Lodash is pretty
+modular by default.
+
+00:06:52.170 --> 00:06:54.270
+So you can pick the
+methods that you want
+
+00:06:54.270 --> 00:06:56.380
+and just import in
+exactly what you need.
+
+00:06:56.380 --> 00:06:59.510
+But I still see a lot of people
+importing in all of Lodash
+
+00:06:59.510 --> 00:07:01.140
+and every utility it's got.
+
+00:07:01.140 --> 00:07:02.120
+MATT: That's kind of
+the whole point, right?
+
+00:07:02.120 --> 00:07:03.987
+Like you just used to
+having the underscore
+
+00:07:03.987 --> 00:07:05.820
+there that just has all
+the utilities on it.
+
+00:07:05.820 --> 00:07:07.069
+It makes a lot of sense, but--
+
+00:07:07.069 --> 00:07:08.640
+ADDY: Exactly.
+
+00:07:08.640 --> 00:07:10.800
+One really neat
+package you can use
+
+00:07:10.800 --> 00:07:14.940
+is a Lodash Webpack plug-in
+or Babel plug-in Lodash.
+
+00:07:14.940 --> 00:07:17.640
+And the idea there is that
+it's a transformer that
+
+00:07:17.640 --> 00:07:21.960
+will rewrite your code to only
+include the specific parts
+
+00:07:21.960 --> 00:07:23.130
+of Lodash that you're using.
+
+00:07:23.130 --> 00:07:24.839
+So you're not including
+the entire thing.
+
+00:07:24.839 --> 00:07:26.338
+MATT: So it's just
+going to swap out
+
+00:07:26.338 --> 00:07:29.100
+your code for underscore.get
+and it will actually just go,
+
+00:07:29.100 --> 00:07:31.621
+oh, you're only using get, so
+I'll pull in that one thing
+
+00:07:31.621 --> 00:07:33.870
+and then rewrite your code
+to just use that one thing.
+
+00:07:33.870 --> 00:07:34.230
+ADDY: Exactly.
+
+00:07:34.230 --> 00:07:34.729
+MATT: Nice.
+
+00:07:34.729 --> 00:07:36.990
+ADDY: I tend to find
+that it trims down
+
+00:07:36.990 --> 00:07:40.084
+my Lodash portion of my
+bundle down to about 10%
+
+00:07:40.084 --> 00:07:41.000
+of what it used to be.
+
+00:07:41.000 --> 00:07:42.330
+So it's a nice little saving.
+
+00:07:42.330 --> 00:07:43.521
+MATT: Very nice.
+
+00:07:43.521 --> 00:07:46.020
+ADDY: There are lots of other
+tips that folks can check out.
+
+00:07:46.020 --> 00:07:46.320
+MATT: Yeah.
+
+00:07:46.320 --> 00:07:47.695
+ADDY: But we're
+going to link you
+
+00:07:47.695 --> 00:07:50.190
+to a bunch of different
+blog posts and guides
+
+00:07:50.190 --> 00:07:51.431
+that you can go and read up.
+
+00:07:51.431 --> 00:07:51.930
+MATT: Yes.
+
+00:07:51.930 --> 00:07:52.980
+ADDY: If you've
+got any questions,
+
+00:07:52.980 --> 00:07:54.810
+feel free to direct
+them, not to us,
+
+00:07:54.810 --> 00:07:56.730
+but to Sean Larkin on Twitter.
+
+00:07:56.730 --> 00:07:57.827
+MATT: Hi, Sean.
+
+00:07:57.827 --> 00:08:00.160
+ADDY: No, we're more than
+happy to answer any questions,
+
+00:08:00.160 --> 00:08:02.820
+but that's Webpack performance.
+
+00:08:02.820 --> 00:08:05.012
+MATT: Yeah, one day I'll
+get 'round to learning it.
+
+00:08:05.012 --> 00:08:06.595
+ADDY: You could just
+watch this video.
+
+00:08:06.595 --> 00:08:08.640
+MATT: Just watch it back, nice.
+
+00:08:08.640 --> 00:08:11.990
+[MUSIC PLAYING]
+

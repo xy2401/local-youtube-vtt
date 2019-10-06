@@ -1,0 +1,1816 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.350 --> 00:00:07.769 align:start position:0%
+ 
+on<00:00:03.070><c> the</c><00:00:03.489><c> e4j</c><00:00:04.120><c> status</c><00:00:04.510><c> updates</c><00:00:06.059><c> so</c><00:00:07.059><c> just</c><00:00:07.630><c> to</c>
+
+00:00:07.769 --> 00:00:07.779 align:start position:0%
+on the e4j status updates so just to
+ 
+
+00:00:07.779 --> 00:00:10.770 align:start position:0%
+on the e4j status updates so just to
+quickly<00:00:08.019><c> quickly</c><00:00:08.800><c> recap</c><00:00:09.190><c> if</c><00:00:09.760><c> you've</c><00:00:09.910><c> been</c><00:00:10.030><c> if</c>
+
+00:00:10.770 --> 00:00:10.780 align:start position:0%
+quickly quickly recap if you've been if
+ 
+
+00:00:10.780 --> 00:00:12.360 align:start position:0%
+quickly quickly recap if you've been if
+you<00:00:10.929><c> saw</c><00:00:11.080><c> me</c><00:00:11.259><c> in</c><00:00:11.349><c> Ludwigsburg</c><00:00:11.830><c> for</c><00:00:11.980><c> example</c>
+
+00:00:12.360 --> 00:00:12.370 align:start position:0%
+you saw me in Ludwigsburg for example
+ 
+
+00:00:12.370 --> 00:00:14.009 align:start position:0%
+you saw me in Ludwigsburg for example
+these<00:00:12.549><c> some</c><00:00:12.820><c> of</c><00:00:12.849><c> these</c><00:00:12.940><c> slides</c><00:00:13.209><c> will</c><00:00:13.480><c> be</c>
+
+00:00:14.009 --> 00:00:14.019 align:start position:0%
+these some of these slides will be
+ 
+
+00:00:14.019 --> 00:00:17.670 align:start position:0%
+these some of these slides will be
+familiar<00:00:14.879><c> but</c><00:00:15.879><c> it</c><00:00:16.330><c> was</c><00:00:16.480><c> announced</c><00:00:17.020><c> back</c><00:00:17.380><c> at</c>
+
+00:00:17.670 --> 00:00:17.680 align:start position:0%
+familiar but it was announced back at
+ 
+
+00:00:17.680 --> 00:00:22.349 align:start position:0%
+familiar but it was announced back at
+JavaOne<00:00:18.130><c> that</c><00:00:19.119><c> Java</c><00:00:19.689><c> EE</c><00:00:20.050><c> is</c><00:00:20.859><c> coming</c><00:00:21.369><c> to</c><00:00:21.670><c> the</c>
+
+00:00:22.349 --> 00:00:22.359 align:start position:0%
+JavaOne that Java EE is coming to the
+ 
+
+00:00:22.359 --> 00:00:24.779 align:start position:0%
+JavaOne that Java EE is coming to the
+post<00:00:22.599><c> foundation</c><00:00:23.170><c> and</c><00:00:23.529><c> by</c><00:00:24.130><c> all</c><00:00:24.310><c> means</c><00:00:24.519><c> please</c>
+
+00:00:24.779 --> 00:00:24.789 align:start position:0%
+post foundation and by all means please
+ 
+
+00:00:24.789 --> 00:00:28.169 align:start position:0%
+post foundation and by all means please
+join<00:00:25.150><c> the</c><00:00:25.269><c> discussion</c><00:00:25.779><c> that</c><00:00:25.929><c> we</c><00:00:26.140><c> fit</c><00:00:26.500><c> a</c><00:00:26.910><c> e4j</c><00:00:27.910><c> -</c>
+
+00:00:28.169 --> 00:00:28.179 align:start position:0%
+join the discussion that we fit a e4j -
+ 
+
+00:00:28.179 --> 00:00:30.980 align:start position:0%
+join the discussion that we fit a e4j -
+community<00:00:28.660><c> at</c><00:00:28.839><c> work</c><00:00:29.470><c> it's</c><00:00:30.369><c> a</c><00:00:30.400><c> very</c><00:00:30.429><c> active</c>
+
+00:00:30.980 --> 00:00:30.990 align:start position:0%
+community at work it's a very active
+ 
+
+00:00:30.990 --> 00:00:33.810 align:start position:0%
+community at work it's a very active
+mailing<00:00:31.990><c> list</c><00:00:32.169><c> with</c><00:00:32.410><c> lots</c><00:00:32.980><c> of</c><00:00:33.130><c> very</c>
+
+00:00:33.810 --> 00:00:33.820 align:start position:0%
+mailing list with lots of very
+ 
+
+00:00:33.820 --> 00:00:37.049 align:start position:0%
+mailing list with lots of very
+passionate<00:00:34.030><c> people</c><00:00:34.530><c> so</c><00:00:35.530><c> we're</c><00:00:36.309><c> very</c><00:00:36.340><c> happy</c><00:00:36.969><c> to</c>
+
+00:00:37.049 --> 00:00:37.059 align:start position:0%
+passionate people so we're very happy to
+ 
+
+00:00:37.059 --> 00:00:40.170 align:start position:0%
+passionate people so we're very happy to
+welcome<00:00:37.210><c> this</c><00:00:37.480><c> technology</c><00:00:38.050><c> to</c><00:00:38.230><c> eclipse</c><00:00:39.180><c> there</c>
+
+00:00:40.170 --> 00:00:40.180 align:start position:0%
+welcome this technology to eclipse there
+ 
+
+00:00:40.180 --> 00:00:43.229 align:start position:0%
+welcome this technology to eclipse there
+this<00:00:40.840><c> community</c><00:00:41.649><c> is</c><00:00:41.860><c> looking</c><00:00:42.160><c> for</c><00:00:42.670><c> a</c><00:00:42.699><c> more</c>
+
+00:00:43.229 --> 00:00:43.239 align:start position:0%
+this community is looking for a more
+ 
+
+00:00:43.239 --> 00:00:45.450 align:start position:0%
+this community is looking for a more
+open<00:00:43.660><c> process</c><00:00:43.690><c> better</c><00:00:44.530><c> models</c><00:00:45.280><c> for</c>
+
+00:00:45.450 --> 00:00:45.460 align:start position:0%
+open process better models for
+ 
+
+00:00:45.460 --> 00:00:47.400 align:start position:0%
+open process better models for
+collaboration<00:00:46.239><c> among</c><00:00:47.020><c> between</c><00:00:47.320><c> the</c>
+
+00:00:47.400 --> 00:00:47.410 align:start position:0%
+collaboration among between the
+ 
+
+00:00:47.410 --> 00:00:49.770 align:start position:0%
+collaboration among between the
+community<00:00:47.770><c> and</c><00:00:47.980><c> vendors</c><00:00:48.309><c> and</c><00:00:48.940><c> they</c><00:00:49.390><c> are</c>
+
+00:00:49.770 --> 00:00:49.780 align:start position:0%
+community and vendors and they are
+ 
+
+00:00:49.780 --> 00:00:51.810 align:start position:0%
+community and vendors and they are
+looking<00:00:50.530><c> to</c><00:00:50.710><c> the</c><00:00:50.890><c> Eclipse</c><00:00:51.219><c> Foundation</c><00:00:51.309><c> to</c>
+
+00:00:51.810 --> 00:00:51.820 align:start position:0%
+looking to the Eclipse Foundation to
+ 
+
+00:00:51.820 --> 00:00:54.959 align:start position:0%
+looking to the Eclipse Foundation to
+provide<00:00:52.120><c> that</c><00:00:52.980><c> this</c><00:00:53.980><c> year</c><00:00:54.340><c> is</c><00:00:54.579><c> going</c><00:00:54.789><c> to</c><00:00:54.879><c> be</c>
+
+00:00:54.959 --> 00:00:54.969 align:start position:0%
+provide that this year is going to be
+ 
+
+00:00:54.969 --> 00:00:56.729 align:start position:0%
+provide that this year is going to be
+the<00:00:55.090><c> year</c><00:00:55.300><c> that</c><00:00:55.359><c> that</c><00:00:55.719><c> all</c><00:00:56.019><c> the</c><00:00:56.170><c> technology</c>
+
+00:00:56.729 --> 00:00:56.739 align:start position:0%
+the year that that all the technology
+ 
+
+00:00:56.739 --> 00:01:00.270 align:start position:0%
+the year that that all the technology
+moves<00:00:57.070><c> over</c><00:00:57.489><c> it's</c><00:00:58.180><c> also</c><00:00:59.010><c> going</c><00:01:00.010><c> to</c><00:01:00.070><c> be</c><00:01:00.190><c> the</c>
+
+00:01:00.270 --> 00:01:00.280 align:start position:0%
+moves over it's also going to be the
+ 
+
+00:01:00.280 --> 00:01:01.799 align:start position:0%
+moves over it's also going to be the
+year<00:01:00.460><c> where</c><00:01:00.670><c> we</c><00:01:00.789><c> are</c><00:01:00.879><c> going</c><00:01:01.030><c> to</c><00:01:01.120><c> create</c><00:01:01.420><c> a</c><00:01:01.629><c> new</c>
+
+00:01:01.799 --> 00:01:01.809 align:start position:0%
+year where we are going to create a new
+ 
+
+00:01:01.809 --> 00:01:04.439 align:start position:0%
+year where we are going to create a new
+process<00:01:02.079><c> at</c><00:01:02.559><c> the</c><00:01:02.679><c> consolidation</c><00:01:03.250><c> for</c><00:01:04.059><c> doing</c>
+
+00:01:04.439 --> 00:01:04.449 align:start position:0%
+process at the consolidation for doing
+ 
+
+00:01:04.449 --> 00:01:07.200 align:start position:0%
+process at the consolidation for doing
+specs<00:01:04.809><c> similar</c><00:01:05.800><c> to</c><00:01:05.950><c> what</c><00:01:06.100><c> the</c><00:01:06.220><c> JCB</c><00:01:06.610><c> has</c><00:01:07.000><c> been</c>
+
+00:01:07.200 --> 00:01:07.210 align:start position:0%
+specs similar to what the JCB has been
+ 
+
+00:01:07.210 --> 00:01:09.990 align:start position:0%
+specs similar to what the JCB has been
+doing<00:01:07.390><c> in</c><00:01:07.600><c> the</c><00:01:07.689><c> past</c><00:01:08.040><c> as</c><00:01:09.040><c> well</c><00:01:09.310><c> as</c><00:01:09.460><c> creating</c><00:01:09.820><c> a</c>
+
+00:01:09.990 --> 00:01:10.000 align:start position:0%
+doing in the past as well as creating a
+ 
+
+00:01:10.000 --> 00:01:13.620 align:start position:0%
+doing in the past as well as creating a
+new<00:01:10.180><c> brand</c><00:01:11.020><c> and</c><00:01:11.470><c> name</c><00:01:12.130><c> for</c><00:01:12.430><c> what</c><00:01:12.909><c> was</c><00:01:13.119><c> formerly</c>
+
+00:01:13.620 --> 00:01:13.630 align:start position:0%
+new brand and name for what was formerly
+ 
+
+00:01:13.630 --> 00:01:17.850 align:start position:0%
+new brand and name for what was formerly
+known<00:01:13.659><c> as</c><00:01:13.810><c> Java</c><00:01:14.320><c> EE</c><00:01:15.000><c> and</c><00:01:16.409><c> so</c><00:01:17.409><c> the</c><00:01:17.530><c> lot</c><00:01:17.740><c> of</c>
+
+00:01:17.850 --> 00:01:17.860 align:start position:0%
+known as Java EE and so the lot of
+ 
+
+00:01:17.860 --> 00:01:20.370 align:start position:0%
+known as Java EE and so the lot of
+interest<00:01:18.310><c> in</c><00:01:18.549><c> getting</c><00:01:19.420><c> this</c><00:01:19.720><c> technology</c>
+
+00:01:20.370 --> 00:01:20.380 align:start position:0%
+interest in getting this technology
+ 
+
+00:01:20.380 --> 00:01:22.560 align:start position:0%
+interest in getting this technology
+moved<00:01:20.590><c> over</c><00:01:20.890><c> to</c><00:01:21.070><c> eclipse</c><00:01:21.310><c> as</c><00:01:21.700><c> rapidly</c><00:01:22.329><c> as</c><00:01:22.540><c> we</c>
+
+00:01:22.560 --> 00:01:22.570 align:start position:0%
+moved over to eclipse as rapidly as we
+ 
+
+00:01:22.570 --> 00:01:29.460 align:start position:0%
+moved over to eclipse as rapidly as we
+can<00:01:22.869><c> do</c><00:01:22.990><c> it</c><00:01:25.350><c> so</c><00:01:26.350><c> where</c><00:01:26.560><c> are</c><00:01:26.740><c> we</c><00:01:26.880><c> so</c><00:01:28.259><c> easy</c><00:01:29.259><c> for</c>
+
+00:01:29.460 --> 00:01:29.470 align:start position:0%
+can do it so where are we so easy for
+ 
+
+00:01:29.470 --> 00:01:32.490 align:start position:0%
+can do it so where are we so easy for
+Jake<00:01:29.710><c> is</c><00:01:29.920><c> the</c><00:01:30.189><c> top-level</c><00:01:31.119><c> project</c><00:01:31.750><c> that</c><00:01:32.380><c> is</c>
+
+00:01:32.490 --> 00:01:32.500 align:start position:0%
+Jake is the top-level project that is
+ 
+
+00:01:32.500 --> 00:01:34.170 align:start position:0%
+Jake is the top-level project that is
+going<00:01:32.680><c> to</c><00:01:32.740><c> be</c><00:01:32.799><c> hosting</c><00:01:33.220><c> this</c><00:01:33.340><c> technology</c><00:01:33.939><c> and</c>
+
+00:01:34.170 --> 00:01:34.180 align:start position:0%
+going to be hosting this technology and
+ 
+
+00:01:34.180 --> 00:01:36.929 align:start position:0%
+going to be hosting this technology and
+the<00:01:34.780><c> focus</c><00:01:35.170><c> at</c><00:01:35.350><c> the</c><00:01:35.560><c> moment</c><00:01:35.590><c> is</c><00:01:36.040><c> entirely</c><00:01:36.520><c> on</c>
+
+00:01:36.929 --> 00:01:36.939 align:start position:0%
+the focus at the moment is entirely on
+ 
+
+00:01:36.939 --> 00:01:38.999 align:start position:0%
+the focus at the moment is entirely on
+getting<00:01:37.570><c> that</c><00:01:37.869><c> established</c><00:01:38.799><c> as</c><00:01:38.950><c> a</c>
+
+00:01:38.999 --> 00:01:39.009 align:start position:0%
+getting that established as a
+ 
+
+00:01:39.009 --> 00:01:42.630 align:start position:0%
+getting that established as a
+functioning<00:01:39.880><c> open</c><00:01:40.299><c> source</c><00:01:40.509><c> project</c><00:01:41.189><c> so</c><00:01:42.189><c> back</c>
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+functioning open source project so back
+ 
+
+00:01:42.640 --> 00:01:45.330 align:start position:0%
+functioning open source project so back
+in<00:01:43.110><c> October</c><00:01:44.110><c> the</c><00:01:44.409><c> coast</c><00:01:44.860><c> of</c><00:01:45.130><c> the</c><00:01:45.219><c> Florida</c>
+
+00:01:45.330 --> 00:01:45.340 align:start position:0%
+in October the coast of the Florida
+ 
+
+00:01:45.340 --> 00:01:47.490 align:start position:0%
+in October the coast of the Florida
+directors<00:01:45.880><c> approved</c><00:01:46.329><c> the</c><00:01:46.570><c> top-level</c><00:01:46.990><c> project</c>
+
+00:01:47.490 --> 00:01:47.500 align:start position:0%
+directors approved the top-level project
+ 
+
+00:01:47.500 --> 00:01:49.889 align:start position:0%
+directors approved the top-level project
+charter<00:01:47.829><c> we</c><00:01:48.490><c> have</c><00:01:48.640><c> two</c><00:01:48.820><c> existing</c><00:01:49.360><c> projects</c><00:01:49.810><c> it</c>
+
+00:01:49.889 --> 00:01:49.899 align:start position:0%
+charter we have two existing projects it
+ 
+
+00:01:49.899 --> 00:01:51.660 align:start position:0%
+charter we have two existing projects it
+Clips<00:01:50.110><c> like</c><00:01:50.259><c> in</c><00:01:50.439><c> Yas</c><00:01:50.590><c> on</c><00:01:50.890><c> the</c><00:01:51.040><c> banana</c><00:01:51.399><c> clips</c>
+
+00:01:51.660 --> 00:01:51.670 align:start position:0%
+Clips like in Yas on the banana clips
+ 
+
+00:01:51.670 --> 00:01:53.370 align:start position:0%
+Clips like in Yas on the banana clips
+Foundation<00:01:52.149><c> for</c><00:01:52.299><c> a</c><00:01:52.390><c> while</c><00:01:52.570><c> we</c><00:01:52.869><c> move</c><00:01:53.110><c> those</c>
+
+00:01:53.370 --> 00:01:53.380 align:start position:0%
+Foundation for a while we move those
+ 
+
+00:01:53.380 --> 00:01:57.389 align:start position:0%
+Foundation for a while we move those
+over<00:01:53.619><c> to</c><00:01:54.159><c> Iggy</c><00:01:54.520><c> 4j</c><00:01:55.380><c> there</c><00:01:56.380><c> were</c><00:01:56.500><c> nine</c><00:01:56.770><c> initial</c>
+
+00:01:57.389 --> 00:01:57.399 align:start position:0%
+over to Iggy 4j there were nine initial
+ 
+
+00:01:57.399 --> 00:02:00.149 align:start position:0%
+over to Iggy 4j there were nine initial
+projects<00:01:57.850><c> proposed</c><00:01:58.289><c> the</c><00:01:59.289><c> final</c><00:01:59.710><c> total</c><00:02:00.100><c> is</c>
+
+00:02:00.149 --> 00:02:00.159 align:start position:0%
+projects proposed the final total is
+ 
+
+00:02:00.159 --> 00:02:02.429 align:start position:0%
+projects proposed the final total is
+going<00:02:00.369><c> to</c><00:02:00.430><c> be</c><00:02:00.490><c> somewhere</c><00:02:00.820><c> between</c><00:02:00.880><c> 35</c><00:02:01.780><c> to</c><00:02:01.810><c> 40</c>
+
+00:02:02.429 --> 00:02:02.439 align:start position:0%
+going to be somewhere between 35 to 40
+ 
+
+00:02:02.439 --> 00:02:05.100 align:start position:0%
+going to be somewhere between 35 to 40
+new<00:02:02.680><c> projects</c><00:02:03.329><c> so</c><00:02:04.329><c> you</c><00:02:04.360><c> can</c><00:02:04.659><c> imagine</c><00:02:04.869><c> that</c>
+
+00:02:05.100 --> 00:02:05.110 align:start position:0%
+new projects so you can imagine that
+ 
+
+00:02:05.110 --> 00:02:07.859 align:start position:0%
+new projects so you can imagine that
+that's<00:02:05.380><c> a</c><00:02:05.530><c> that's</c><00:02:05.799><c> onboarding</c><00:02:06.789><c> a</c><00:02:06.939><c> lot</c><00:02:07.299><c> of</c><00:02:07.570><c> new</c>
+
+00:02:07.859 --> 00:02:07.869 align:start position:0%
+that's a that's onboarding a lot of new
+ 
+
+00:02:07.869 --> 00:02:10.440 align:start position:0%
+that's a that's onboarding a lot of new
+technology<00:02:08.470><c> and</c><00:02:08.860><c> use</c><00:02:09.070><c> new</c><00:02:09.729><c> source</c><00:02:09.970><c> code</c><00:02:10.180><c> new</c>
+
+00:02:10.440 --> 00:02:10.450 align:start position:0%
+technology and use new source code new
+ 
+
+00:02:10.450 --> 00:02:13.350 align:start position:0%
+technology and use new source code new
+committers<00:02:10.870><c> the</c><00:02:11.770><c> first</c><00:02:12.100><c> nine</c><00:02:12.520><c> projects</c><00:02:13.240><c> have</c>
+
+00:02:13.350 --> 00:02:13.360 align:start position:0%
+committers the first nine projects have
+ 
+
+00:02:13.360 --> 00:02:15.780 align:start position:0%
+committers the first nine projects have
+been<00:02:13.570><c> created</c><00:02:14.200><c> and</c><00:02:14.770><c> provisions</c>
+
+00:02:15.780 --> 00:02:15.790 align:start position:0%
+been created and provisions
+ 
+
+00:02:15.790 --> 00:02:17.520 align:start position:0%
+been created and provisions
+I<00:02:15.879><c> think</c><00:02:16.329><c> two</c><00:02:16.599><c> of</c><00:02:16.780><c> them</c><00:02:16.900><c> have</c><00:02:17.079><c> actually</c><00:02:17.260><c> got</c>
+
+00:02:17.520 --> 00:02:17.530 align:start position:0%
+I think two of them have actually got
+ 
+
+00:02:17.530 --> 00:02:20.039 align:start position:0%
+I think two of them have actually got
+source<00:02:17.980><c> code</c><00:02:18.219><c> into</c><00:02:18.579><c> them</c><00:02:18.760><c> now</c><00:02:18.879><c> and</c><00:02:19.480><c> so</c><00:02:19.840><c> we</c><00:02:20.019><c> are</c>
+
+00:02:20.039 --> 00:02:20.049 align:start position:0%
+source code into them now and so we are
+ 
+
+00:02:20.049 --> 00:02:22.500 align:start position:0%
+source code into them now and so we are
+onboarding<00:02:20.709><c> these</c><00:02:20.829><c> projects</c><00:02:21.280><c> as</c><00:02:21.430><c> rapidly</c><00:02:22.329><c> as</c>
+
+00:02:22.500 --> 00:02:22.510 align:start position:0%
+onboarding these projects as rapidly as
+ 
+
+00:02:22.510 --> 00:02:25.470 align:start position:0%
+onboarding these projects as rapidly as
+we<00:02:22.540><c> can</c><00:02:23.400><c> in</c><00:02:24.400><c> the</c><00:02:24.549><c> background</c><00:02:25.000><c> there's</c><00:02:25.329><c> been</c><00:02:25.450><c> a</c>
+
+00:02:25.470 --> 00:02:25.480 align:start position:0%
+we can in the background there's been a
+ 
+
+00:02:25.480 --> 00:02:27.869 align:start position:0%
+we can in the background there's been a
+bunch<00:02:25.810><c> of</c><00:02:25.930><c> legal</c><00:02:26.290><c> work</c><00:02:26.530><c> that's</c><00:02:26.799><c> been</c><00:02:27.430><c> going</c><00:02:27.760><c> on</c>
+
+00:02:27.869 --> 00:02:27.879 align:start position:0%
+bunch of legal work that's been going on
+ 
+
+00:02:27.879 --> 00:02:31.259 align:start position:0%
+bunch of legal work that's been going on
+to<00:02:28.120><c> make</c><00:02:28.269><c> all</c><00:02:28.420><c> of</c><00:02:28.450><c> this</c><00:02:28.659><c> possible</c><00:02:28.829><c> so</c><00:02:29.829><c> we</c><00:02:30.730><c> would</c>
+
+00:02:31.259 --> 00:02:31.269 align:start position:0%
+to make all of this possible so we would
+ 
+
+00:02:31.269 --> 00:02:32.670 align:start position:0%
+to make all of this possible so we would
+put<00:02:31.480><c> an</c><00:02:31.599><c> agreement</c><00:02:31.840><c> in</c><00:02:32.140><c> place</c><00:02:32.260><c> for</c><00:02:32.590><c> example</c>
+
+00:02:32.670 --> 00:02:32.680 align:start position:0%
+put an agreement in place for example
+ 
+
+00:02:32.680 --> 00:02:36.119 align:start position:0%
+put an agreement in place for example
+with<00:02:33.220><c> Oracle</c><00:02:33.730><c> to</c><00:02:34.000><c> transfer</c><00:02:34.510><c> ownership</c><00:02:34.750><c> of</c><00:02:35.290><c> the</c>
+
+00:02:36.119 --> 00:02:36.129 align:start position:0%
+with Oracle to transfer ownership of the
+ 
+
+00:02:36.129 --> 00:02:39.089 align:start position:0%
+with Oracle to transfer ownership of the
+names<00:02:36.909><c> of</c><00:02:37.329><c> the</c><00:02:37.569><c> projects</c><00:02:38.109><c> like</c><00:02:38.379><c> GlassFish</c>
+
+00:02:39.089 --> 00:02:39.099 align:start position:0%
+names of the projects like GlassFish
+ 
+
+00:02:39.099 --> 00:02:42.809 align:start position:0%
+names of the projects like GlassFish
+Jersey<00:02:39.730><c> and</c><00:02:39.879><c> so</c><00:02:40.060><c> on</c><00:02:40.269><c> to</c><00:02:41.049><c> the</c><00:02:41.170><c> equation</c><00:02:41.950><c> so</c>
+
+00:02:42.809 --> 00:02:42.819 align:start position:0%
+Jersey and so on to the equation so
+ 
+
+00:02:42.819 --> 00:02:44.819 align:start position:0%
+Jersey and so on to the equation so
+that's<00:02:43.000><c> been</c><00:02:43.209><c> completed</c><00:02:43.750><c> and</c><00:02:43.930><c> we're</c><00:02:44.680><c> in</c><00:02:44.739><c> the</c>
+
+00:02:44.819 --> 00:02:44.829 align:start position:0%
+that's been completed and we're in the
+ 
+
+00:02:44.829 --> 00:02:46.589 align:start position:0%
+that's been completed and we're in the
+process<00:02:44.980><c> of</c><00:02:45.370><c> actually</c><00:02:45.760><c> transferring</c><00:02:46.359><c> that</c>
+
+00:02:46.589 --> 00:02:46.599 align:start position:0%
+process of actually transferring that
+ 
+
+00:02:46.599 --> 00:02:49.259 align:start position:0%
+process of actually transferring that
+the<00:02:46.750><c> registrations</c><00:02:47.439><c> of</c><00:02:47.650><c> GlassFish</c><00:02:48.280><c> around</c>
+
+00:02:49.259 --> 00:02:49.269 align:start position:0%
+the registrations of GlassFish around
+ 
+
+00:02:49.269 --> 00:02:51.360 align:start position:0%
+the registrations of GlassFish around
+the<00:02:49.389><c> world</c><00:02:49.650><c> under</c><00:02:50.650><c> the</c><00:02:50.739><c> ownership</c><00:02:50.889><c> of</c><00:02:51.250><c> the</c>
+
+00:02:51.360 --> 00:02:51.370 align:start position:0%
+the world under the ownership of the
+ 
+
+00:02:51.370 --> 00:02:56.520 align:start position:0%
+the world under the ownership of the
+Eclipse<00:02:51.609><c> Foundation</c><00:02:55.109><c> while</c><00:02:56.109><c> we're</c><00:02:56.349><c> doing</c>
+
+00:02:56.520 --> 00:02:56.530 align:start position:0%
+Eclipse Foundation while we're doing
+ 
+
+00:02:56.530 --> 00:02:59.390 align:start position:0%
+Eclipse Foundation while we're doing
+this<00:02:56.829><c> as</c><00:02:57.549><c> at</c><00:02:58.150><c> the</c><00:02:58.269><c> same</c><00:02:58.480><c> time</c><00:02:58.750><c> we</c><00:02:59.079><c> have</c><00:02:59.290><c> a</c>
+
+00:02:59.390 --> 00:02:59.400 align:start position:0%
+this as at the same time we have a
+ 
+
+00:02:59.400 --> 00:03:02.339 align:start position:0%
+this as at the same time we have a
+community<00:03:00.400><c> lead</c><00:03:00.609><c> process</c><00:03:01.150><c> to</c><00:03:01.419><c> select</c><00:03:01.780><c> a</c><00:03:02.139><c> new</c>
+
+00:03:02.339 --> 00:03:02.349 align:start position:0%
+community lead process to select a new
+ 
+
+00:03:02.349 --> 00:03:05.909 align:start position:0%
+community lead process to select a new
+brand<00:03:02.709><c> to</c><00:03:02.950><c> replace</c><00:03:03.370><c> Java</c><00:03:03.790><c> EE</c><00:03:04.260><c> so</c><00:03:05.260><c> there's</c>
+
+00:03:05.909 --> 00:03:05.919 align:start position:0%
+brand to replace Java EE so there's
+ 
+
+00:03:05.919 --> 00:03:09.479 align:start position:0%
+brand to replace Java EE so there's
+discussions<00:03:06.459><c> going</c><00:03:06.639><c> on</c><00:03:07.590><c> about</c><00:03:08.590><c> that</c><00:03:08.859><c> today</c>
+
+00:03:09.479 --> 00:03:09.489 align:start position:0%
+discussions going on about that today
+ 
+
+00:03:09.489 --> 00:03:13.020 align:start position:0%
+discussions going on about that today
+the<00:03:10.150><c> the</c><00:03:10.419><c> fee</c><00:03:11.379><c> for</c><00:03:11.650><c> JP</c><00:03:12.069><c> MC</c><00:03:12.430><c> has</c><00:03:12.609><c> whittled</c><00:03:12.849><c> it</c>
+
+00:03:13.020 --> 00:03:13.030 align:start position:0%
+the the fee for JP MC has whittled it
+ 
+
+00:03:13.030 --> 00:03:16.039 align:start position:0%
+the the fee for JP MC has whittled it
+down<00:03:13.090><c> to</c><00:03:13.269><c> a</c><00:03:13.599><c> short</c><00:03:13.989><c> list</c><00:03:14.200><c> of</c><00:03:14.439><c> names</c><00:03:14.680><c> based</c><00:03:15.609><c> on</c>
+
+00:03:16.039 --> 00:03:16.049 align:start position:0%
+down to a short list of names based on
+ 
+
+00:03:16.049 --> 00:03:18.360 align:start position:0%
+down to a short list of names based on
+input<00:03:17.049><c> from</c><00:03:17.200><c> the</c><00:03:17.290><c> community</c><00:03:17.650><c> and</c><00:03:17.859><c> we</c><00:03:18.159><c> are</c>
+
+00:03:18.360 --> 00:03:18.370 align:start position:0%
+input from the community and we are
+ 
+
+00:03:18.370 --> 00:03:19.860 align:start position:0%
+input from the community and we are
+going<00:03:18.579><c> at</c><00:03:18.879><c> this</c><00:03:19.030><c> moment</c><00:03:19.209><c> we</c><00:03:19.540><c> are</c><00:03:19.569><c> going</c>
+
+00:03:19.860 --> 00:03:19.870 align:start position:0%
+going at this moment we are going
+ 
+
+00:03:19.870 --> 00:03:22.259 align:start position:0%
+going at this moment we are going
+through<00:03:19.989><c> trademark</c><00:03:20.530><c> with</c><00:03:20.739><c> you</c><00:03:20.949><c> to</c><00:03:21.280><c> see</c><00:03:21.489><c> which</c>
+
+00:03:22.259 --> 00:03:22.269 align:start position:0%
+through trademark with you to see which
+ 
+
+00:03:22.269 --> 00:03:24.839 align:start position:0%
+through trademark with you to see which
+of<00:03:22.540><c> those</c><00:03:22.690><c> names</c><00:03:23.019><c> could</c><00:03:24.010><c> be</c><00:03:24.069><c> plausibly</c>
+
+00:03:24.839 --> 00:03:24.849 align:start position:0%
+of those names could be plausibly
+ 
+
+00:03:24.849 --> 00:03:29.879 align:start position:0%
+of those names could be plausibly
+trademarks<00:03:25.659><c> and</c><00:03:26.819><c> around</c><00:03:27.819><c> the</c><00:03:27.909><c> world</c><00:03:28.090><c> to</c><00:03:28.269><c> to</c><00:03:29.049><c> be</c>
+
+00:03:29.879 --> 00:03:29.889 align:start position:0%
+trademarks and around the world to to be
+ 
+
+00:03:29.889 --> 00:03:34.559 align:start position:0%
+trademarks and around the world to to be
+used<00:03:30.220><c> as</c><00:03:30.519><c> the</c><00:03:30.790><c> new</c><00:03:30.940><c> name</c><00:03:32.250><c> next</c><00:03:33.250><c> up</c><00:03:33.400><c> is</c><00:03:33.609><c> creating</c>
+
+00:03:34.559 --> 00:03:34.569 align:start position:0%
+used as the new name next up is creating
+ 
+
+00:03:34.569 --> 00:03:37.740 align:start position:0%
+used as the new name next up is creating
+a<00:03:34.659><c> working</c><00:03:35.049><c> group</c><00:03:35.229><c> so</c><00:03:36.030><c> for</c><00:03:37.030><c> those</c><00:03:37.150><c> who</c><00:03:37.359><c> are</c><00:03:37.540><c> new</c>
+
+00:03:37.740 --> 00:03:37.750 align:start position:0%
+a working group so for those who are new
+ 
+
+00:03:37.750 --> 00:03:39.719 align:start position:0%
+a working group so for those who are new
+to<00:03:37.780><c> Eclipse</c><00:03:38.290><c> working</c><00:03:38.859><c> groups</c><00:03:39.099><c> are</c><00:03:39.340><c> the</c>
+
+00:03:39.719 --> 00:03:39.729 align:start position:0%
+to Eclipse working groups are the
+ 
+
+00:03:39.729 --> 00:03:42.539 align:start position:0%
+to Eclipse working groups are the
+mechanism<00:03:40.359><c> that</c><00:03:41.019><c> we</c><00:03:41.079><c> create</c><00:03:41.829><c> member</c><00:03:42.400><c> led</c>
+
+00:03:42.539 --> 00:03:42.549 align:start position:0%
+mechanism that we create member led
+ 
+
+00:03:42.549 --> 00:03:46.640 align:start position:0%
+mechanism that we create member led
+governance<00:03:43.739><c> around</c><00:03:45.000><c> project</c><00:03:46.000><c> community</c><00:03:46.329><c> and</c>
+
+00:03:46.640 --> 00:03:46.650 align:start position:0%
+governance around project community and
+ 
+
+00:03:46.650 --> 00:03:49.199 align:start position:0%
+governance around project community and
+the<00:03:47.650><c> goal</c><00:03:47.829><c> is</c><00:03:47.979><c> really</c><00:03:48.190><c> to</c><00:03:48.310><c> complement</c><00:03:48.970><c> what's</c>
+
+00:03:49.199 --> 00:03:49.209 align:start position:0%
+the goal is really to complement what's
+ 
+
+00:03:49.209 --> 00:03:51.780 align:start position:0%
+the goal is really to complement what's
+happening<00:03:49.780><c> in</c><00:03:49.959><c> the</c><00:03:50.169><c> open-source</c><00:03:50.790><c> projects</c>
+
+00:03:51.780 --> 00:03:51.790 align:start position:0%
+happening in the open-source projects
+ 
+
+00:03:51.790 --> 00:03:53.939 align:start position:0%
+happening in the open-source projects
+with<00:03:52.359><c> additional</c><00:03:52.900><c> activities</c><00:03:53.500><c> related</c><00:03:53.919><c> to</c>
+
+00:03:53.939 --> 00:03:53.949 align:start position:0%
+with additional activities related to
+ 
+
+00:03:53.949 --> 00:03:57.960 align:start position:0%
+with additional activities related to
+marketing<00:03:54.729><c> and</c><00:03:55.209><c> branding</c><00:03:55.829><c> and</c><00:03:56.829><c> so</c><00:03:57.159><c> on</c><00:03:57.310><c> and</c><00:03:57.579><c> in</c>
+
+00:03:57.960 --> 00:03:57.970 align:start position:0%
+marketing and branding and so on and in
+ 
+
+00:03:57.970 --> 00:03:59.490 align:start position:0%
+marketing and branding and so on and in
+this<00:03:58.180><c> particular</c><00:03:58.569><c> case</c><00:03:58.959><c> there's</c><00:03:59.260><c> going</c><00:03:59.319><c> to</c><00:03:59.439><c> be</c>
+
+00:03:59.490 --> 00:03:59.500 align:start position:0%
+this particular case there's going to be
+ 
+
+00:03:59.500 --> 00:04:02.429 align:start position:0%
+this particular case there's going to be
+some<00:03:59.709><c> special</c><00:04:00.010><c> and</c><00:04:00.939><c> additional</c><00:04:01.569><c> work</c><00:04:01.810><c> that's</c>
+
+00:04:02.429 --> 00:04:02.439 align:start position:0%
+some special and additional work that's
+ 
+
+00:04:02.439 --> 00:04:03.750 align:start position:0%
+some special and additional work that's
+going<00:04:02.620><c> to</c><00:04:02.680><c> be</c><00:04:02.769><c> done</c><00:04:02.889><c> around</c><00:04:03.220><c> creating</c>
+
+00:04:03.750 --> 00:04:03.760 align:start position:0%
+going to be done around creating
+ 
+
+00:04:03.760 --> 00:04:06.689 align:start position:0%
+going to be done around creating
+specifications<00:04:05.220><c> creating</c><00:04:06.220><c> this</c><00:04:06.370><c> brand</c>
+
+00:04:06.689 --> 00:04:06.699 align:start position:0%
+specifications creating this brand
+ 
+
+00:04:06.699 --> 00:04:08.219 align:start position:0%
+specifications creating this brand
+enforcing<00:04:07.510><c> the</c><00:04:07.599><c> brand</c><00:04:07.870><c> through</c><00:04:08.169><c> a</c>
+
+00:04:08.219 --> 00:04:08.229 align:start position:0%
+enforcing the brand through a
+ 
+
+00:04:08.229 --> 00:04:11.069 align:start position:0%
+enforcing the brand through a
+compatibility<00:04:08.799><c> program</c><00:04:09.689><c> so</c><00:04:10.689><c> this</c><00:04:10.810><c> is</c><00:04:10.959><c> going</c>
+
+00:04:11.069 --> 00:04:11.079 align:start position:0%
+compatibility program so this is going
+ 
+
+00:04:11.079 --> 00:04:14.909 align:start position:0%
+compatibility program so this is going
+to<00:04:11.139><c> be</c><00:04:11.319><c> definitely</c><00:04:12.189><c> a</c><00:04:12.540><c> very</c><00:04:13.540><c> important</c><00:04:14.319><c> and</c><00:04:14.560><c> I</c>
+
+00:04:14.909 --> 00:04:14.919 align:start position:0%
+to be definitely a very important and I
+ 
+
+00:04:14.919 --> 00:04:17.039 align:start position:0%
+to be definitely a very important and I
+think<00:04:14.949><c> quite</c><00:04:15.479><c> prominent</c><00:04:16.479><c> working</c><00:04:16.870><c> group</c>
+
+00:04:17.039 --> 00:04:17.049 align:start position:0%
+think quite prominent working group
+ 
+
+00:04:17.049 --> 00:04:21.300 align:start position:0%
+think quite prominent working group
+within<00:04:17.440><c> the</c><00:04:17.889><c> Eclipse</c><00:04:18.009><c> community</c><00:04:20.159><c> these</c><00:04:21.159><c> are</c>
+
+00:04:21.300 --> 00:04:21.310 align:start position:0%
+within the Eclipse community these are
+ 
+
+00:04:21.310 --> 00:04:22.589 align:start position:0%
+within the Eclipse community these are
+just<00:04:21.430><c> some</c><00:04:21.579><c> of</c><00:04:21.669><c> the</c><00:04:21.759><c> key</c><00:04:21.909><c> principles</c><00:04:22.120><c> and</c>
+
+00:04:22.589 --> 00:04:22.599 align:start position:0%
+just some of the key principles and
+ 
+
+00:04:22.599 --> 00:04:24.060 align:start position:0%
+just some of the key principles and
+assumptions<00:04:23.050><c> that</c><00:04:23.169><c> we're</c><00:04:23.409><c> using</c><00:04:23.560><c> to</c><00:04:23.800><c> drive</c>
+
+00:04:24.060 --> 00:04:24.070 align:start position:0%
+assumptions that we're using to drive
+ 
+
+00:04:24.070 --> 00:04:25.680 align:start position:0%
+assumptions that we're using to drive
+the<00:04:24.279><c> creation</c><00:04:24.520><c> of</c><00:04:24.789><c> the</c><00:04:24.969><c> working</c><00:04:25.300><c> group</c><00:04:25.510><c> and</c>
+
+00:04:25.680 --> 00:04:25.690 align:start position:0%
+the creation of the working group and
+ 
+
+00:04:25.690 --> 00:04:28.200 align:start position:0%
+the creation of the working group and
+for<00:04:26.139><c> that</c><00:04:26.200><c> matter</c><00:04:26.440><c> the</c><00:04:26.710><c> the</c><00:04:27.039><c> e4j</c><00:04:27.700><c> project</c>
+
+00:04:28.200 --> 00:04:28.210 align:start position:0%
+for that matter the the e4j project
+ 
+
+00:04:28.210 --> 00:04:29.489 align:start position:0%
+for that matter the the e4j project
+community
+
+00:04:29.489 --> 00:04:29.499 align:start position:0%
+community
+ 
+
+00:04:29.499 --> 00:04:33.329 align:start position:0%
+community
+so<00:04:31.080><c> open-source</c><00:04:32.080><c> rules</c><00:04:32.409><c> of</c><00:04:32.589><c> engagement</c><00:04:33.099><c> apply</c>
+
+00:04:33.329 --> 00:04:33.339 align:start position:0%
+so open-source rules of engagement apply
+ 
+
+00:04:33.339 --> 00:04:36.929 align:start position:0%
+so open-source rules of engagement apply
+as<00:04:33.639><c> you</c><00:04:34.059><c> would</c><00:04:34.179><c> expect</c><00:04:35.669><c> compatibility</c><00:04:36.669><c> has</c>
+
+00:04:36.929 --> 00:04:36.939 align:start position:0%
+as you would expect compatibility has
+ 
+
+00:04:36.939 --> 00:04:39.779 align:start position:0%
+as you would expect compatibility has
+been<00:04:37.269><c> a</c><00:04:37.629><c> key</c><00:04:37.959><c> to</c><00:04:38.199><c> the</c><00:04:38.349><c> set</c><00:04:38.679><c> set</c><00:04:39.039><c> historical</c>
+
+00:04:39.779 --> 00:04:39.789 align:start position:0%
+been a key to the set set historical
+ 
+
+00:04:39.789 --> 00:04:42.779 align:start position:0%
+been a key to the set set historical
+success<00:04:40.119><c> of</c><00:04:40.330><c> Java</c><00:04:40.569><c> EE</c><00:04:40.839><c> all</c><00:04:41.259><c> along</c><00:04:41.649><c> which</c><00:04:42.639><c> is</c>
+
+00:04:42.779 --> 00:04:42.789 align:start position:0%
+success of Java EE all along which is
+ 
+
+00:04:42.789 --> 00:04:45.299 align:start position:0%
+success of Java EE all along which is
+you<00:04:42.969><c> know</c><00:04:43.059><c> roughly</c><00:04:43.449><c> twenty</c><00:04:43.779><c> years</c><00:04:44.019><c> of</c><00:04:44.830><c> success</c>
+
+00:04:45.299 --> 00:04:45.309 align:start position:0%
+you know roughly twenty years of success
+ 
+
+00:04:45.309 --> 00:04:49.049 align:start position:0%
+you know roughly twenty years of success
+around<00:04:45.639><c> Java</c><00:04:45.879><c> EE</c><00:04:46.149><c> technology</c><00:04:46.749><c> so</c><00:04:47.789><c> that's</c><00:04:48.789><c> why</c>
+
+00:04:49.049 --> 00:04:49.059 align:start position:0%
+around Java EE technology so that's why
+ 
+
+00:04:49.059 --> 00:04:51.209 align:start position:0%
+around Java EE technology so that's why
+compatibility<00:04:49.929><c> will</c><00:04:50.139><c> continue</c><00:04:50.919><c> to</c><00:04:51.099><c> be</c>
+
+00:04:51.209 --> 00:04:51.219 align:start position:0%
+compatibility will continue to be
+ 
+
+00:04:51.219 --> 00:04:53.820 align:start position:0%
+compatibility will continue to be
+important<00:04:51.669><c> to</c><00:04:51.699><c> this</c><00:04:51.909><c> group</c><00:04:52.239><c> and</c><00:04:52.499><c> that</c><00:04:53.499><c> will</c>
+
+00:04:53.820 --> 00:04:53.830 align:start position:0%
+important to this group and that will
+ 
+
+00:04:53.830 --> 00:04:55.829 align:start position:0%
+important to this group and that will
+drive<00:04:54.099><c> a</c><00:04:54.459><c> lot</c><00:04:54.519><c> of</c><00:04:54.849><c> the</c><00:04:55.029><c> decisions</c><00:04:55.539><c> and</c><00:04:55.719><c> the</c>
+
+00:04:55.829 --> 00:04:55.839 align:start position:0%
+drive a lot of the decisions and the
+ 
+
+00:04:55.839 --> 00:04:57.179 align:start position:0%
+drive a lot of the decisions and the
+processes<00:04:56.439><c> that</c><00:04:56.559><c> we're</c><00:04:56.709><c> going</c><00:04:56.800><c> to</c><00:04:56.860><c> be</c><00:04:56.979><c> making</c>
+
+00:04:57.179 --> 00:04:57.189 align:start position:0%
+processes that we're going to be making
+ 
+
+00:04:57.189 --> 00:05:00.689 align:start position:0%
+processes that we're going to be making
+around<00:04:58.149><c> the</c><00:04:58.419><c> spec</c><00:04:58.659><c> process</c><00:04:59.309><c> for</c><00:05:00.309><c> implementing</c>
+
+00:05:00.689 --> 00:05:00.699 align:start position:0%
+around the spec process for implementing
+ 
+
+00:05:00.699 --> 00:05:03.179 align:start position:0%
+around the spec process for implementing
+test<00:05:01.209><c> kits</c><00:05:01.509><c> and</c><00:05:02.349><c> implementing</c><00:05:02.769><c> reference</c>
+
+00:05:03.179 --> 00:05:03.189 align:start position:0%
+test kits and implementing reference
+ 
+
+00:05:03.189 --> 00:05:07.259 align:start position:0%
+test kits and implementing reference
+implementations<00:05:04.289><c> to</c><00:05:05.879><c> ensure</c><00:05:06.879><c> compatibility</c>
+
+00:05:07.259 --> 00:05:07.269 align:start position:0%
+implementations to ensure compatibility
+ 
+
+00:05:07.269 --> 00:05:09.659 align:start position:0%
+implementations to ensure compatibility
+of<00:05:07.749><c> independent</c><00:05:08.469><c> implementations</c><00:05:09.219><c> down</c><00:05:09.489><c> the</c>
+
+00:05:09.659 --> 00:05:09.669 align:start position:0%
+of independent implementations down the
+ 
+
+00:05:09.669 --> 00:05:13.559 align:start position:0%
+of independent implementations down the
+road<00:05:11.159><c> but</c><00:05:12.159><c> really</c><00:05:12.579><c> the</c><00:05:12.699><c> reasons</c><00:05:13.089><c> a</c><00:05:13.179><c> big</c><00:05:13.360><c> part</c>
+
+00:05:13.559 --> 00:05:13.569 align:start position:0%
+road but really the reasons a big part
+ 
+
+00:05:13.569 --> 00:05:16.199 align:start position:0%
+road but really the reasons a big part
+of<00:05:13.599><c> the</c><00:05:13.689><c> reason</c><00:05:13.959><c> why</c><00:05:14.219><c> this</c><00:05:15.219><c> java</c><00:05:15.939><c> ee</c>
+
+00:05:16.199 --> 00:05:16.209 align:start position:0%
+of the reason why this java ee
+ 
+
+00:05:16.209 --> 00:05:18.049 align:start position:0%
+of the reason why this java ee
+technology<00:05:16.839><c> is</c><00:05:16.929><c> coming</c><00:05:17.229><c> to</c><00:05:17.319><c> eclipse</c><00:05:17.709><c> is</c>
+
+00:05:18.049 --> 00:05:18.059 align:start position:0%
+technology is coming to eclipse is
+ 
+
+00:05:18.059 --> 00:05:20.790 align:start position:0%
+technology is coming to eclipse is
+around<00:05:19.059><c> innovation</c><00:05:19.419><c> and</c><00:05:20.139><c> increasing</c><00:05:20.679><c> the</c>
+
+00:05:20.790 --> 00:05:20.800 align:start position:0%
+around innovation and increasing the
+ 
+
+00:05:20.800 --> 00:05:23.459 align:start position:0%
+around innovation and increasing the
+pace<00:05:21.009><c> of</c><00:05:21.219><c> innovation</c><00:05:21.599><c> and</c><00:05:22.599><c> sustainability</c>
+
+00:05:23.459 --> 00:05:23.469 align:start position:0%
+pace of innovation and sustainability
+ 
+
+00:05:23.469 --> 00:05:26.429 align:start position:0%
+pace of innovation and sustainability
+and<00:05:23.919><c> agility</c><00:05:24.789><c> so</c><00:05:25.419><c> those</c><00:05:25.599><c> are</c><00:05:25.839><c> really</c><00:05:26.169><c> sort</c><00:05:26.409><c> of</c>
+
+00:05:26.429 --> 00:05:26.439 align:start position:0%
+and agility so those are really sort of
+ 
+
+00:05:26.439 --> 00:05:29.759 align:start position:0%
+and agility so those are really sort of
+the<00:05:26.589><c> three</c><00:05:27.269><c> three</c><00:05:28.269><c> main</c><00:05:28.479><c> goals</c><00:05:28.869><c> that</c><00:05:29.499><c> we</c><00:05:29.619><c> need</c>
+
+00:05:29.759 --> 00:05:29.769 align:start position:0%
+the three three main goals that we need
+ 
+
+00:05:29.769 --> 00:05:31.499 align:start position:0%
+the three three main goals that we need
+to<00:05:29.860><c> execute</c><00:05:30.129><c> on</c><00:05:30.489><c> over</c><00:05:30.819><c> the</c><00:05:30.909><c> next</c><00:05:31.089><c> couple</c><00:05:31.449><c> of</c>
+
+00:05:31.499 --> 00:05:31.509 align:start position:0%
+to execute on over the next couple of
+ 
+
+00:05:31.509 --> 00:05:34.259 align:start position:0%
+to execute on over the next couple of
+years<00:05:31.569><c> and</c><00:05:32.110><c> so</c><00:05:32.610><c> setting</c><00:05:33.610><c> the</c><00:05:33.789><c> working</c><00:05:34.089><c> group</c>
+
+00:05:34.259 --> 00:05:34.269 align:start position:0%
+years and so setting the working group
+ 
+
+00:05:34.269 --> 00:05:37.019 align:start position:0%
+years and so setting the working group
+up<00:05:34.419><c> for</c><00:05:34.629><c> success</c><00:05:35.019><c> on</c><00:05:35.409><c> those</c><00:05:35.889><c> on</c><00:05:36.759><c> those</c>
+
+00:05:37.019 --> 00:05:37.029 align:start position:0%
+up for success on those on those
+ 
+
+00:05:37.029 --> 00:05:39.659 align:start position:0%
+up for success on those on those
+attributes<00:05:37.269><c> is</c><00:05:37.839><c> going</c><00:05:38.050><c> to</c><00:05:38.110><c> be</c><00:05:38.229><c> a</c><00:05:38.979><c> big</c><00:05:39.369><c> part</c><00:05:39.610><c> of</c>
+
+00:05:39.659 --> 00:05:39.669 align:start position:0%
+attributes is going to be a big part of
+ 
+
+00:05:39.669 --> 00:05:44.639 align:start position:0%
+attributes is going to be a big part of
+what<00:05:39.849><c> we</c><00:05:39.939><c> have</c><00:05:39.969><c> to</c><00:05:40.209><c> do</c><00:05:40.329><c> this</c><00:05:40.479><c> this</c><00:05:40.809><c> year</c><00:05:43.649><c> so</c>
+
+00:05:44.639 --> 00:05:44.649 align:start position:0%
+what we have to do this this year so
+ 
+
+00:05:44.649 --> 00:05:46.230 align:start position:0%
+what we have to do this this year so
+just<00:05:44.800><c> try</c><00:05:44.979><c> to</c><00:05:45.039><c> talk</c><00:05:45.550><c> a</c><00:05:45.579><c> little</c><00:05:45.729><c> bit</c><00:05:45.939><c> about</c><00:05:45.969><c> the</c>
+
+00:05:46.230 --> 00:05:46.240 align:start position:0%
+just try to talk a little bit about the
+ 
+
+00:05:46.240 --> 00:05:49.139 align:start position:0%
+just try to talk a little bit about the
+relationship<00:05:47.110><c> between</c><00:05:47.459><c> the</c><00:05:48.459><c> working</c><00:05:48.729><c> group</c>
+
+00:05:49.139 --> 00:05:49.149 align:start position:0%
+relationship between the working group
+ 
+
+00:05:49.149 --> 00:05:52.409 align:start position:0%
+relationship between the working group
+and<00:05:49.389><c> the</c><00:05:49.719><c> name</c><00:05:50.139><c> of</c><00:05:50.289><c> their</c><00:05:50.469><c> next</c><00:05:51.429><c> may</c><00:05:52.029><c> or</c><00:05:52.300><c> may</c>
+
+00:05:52.409 --> 00:05:52.419 align:start position:0%
+and the name of their next may or may
+ 
+
+00:05:52.419 --> 00:05:54.089 align:start position:0%
+and the name of their next may or may
+not<00:05:52.449><c> be</c><00:05:52.779><c> the</c><00:05:52.899><c> name</c><00:05:53.079><c> that's</c><00:05:53.379><c> why</c><00:05:53.619><c> it's</c><00:05:53.889><c> in</c>
+
+00:05:54.089 --> 00:05:54.099 align:start position:0%
+not be the name that's why it's in
+ 
+
+00:05:54.099 --> 00:05:56.159 align:start position:0%
+not be the name that's why it's in
+quotes<00:05:54.909><c> and</c><00:05:55.269><c> I'm</c><00:05:55.329><c> doing</c><00:05:55.539><c> a</c><00:05:55.569><c> little</c><00:05:55.689><c> air</c><00:05:55.929><c> quotes</c>
+
+00:05:56.159 --> 00:05:56.169 align:start position:0%
+quotes and I'm doing a little air quotes
+ 
+
+00:05:56.169 --> 00:06:00.419 align:start position:0%
+quotes and I'm doing a little air quotes
+here<00:05:56.379><c> as</c><00:05:56.499><c> I'm</c><00:05:56.619><c> talking</c><00:05:57.269><c> is</c><00:05:58.269><c> is</c><00:05:58.989><c> that's</c><00:05:59.739><c> the</c><00:05:59.949><c> so</c>
+
+00:06:00.419 --> 00:06:00.429 align:start position:0%
+here as I'm talking is is that's the so
+ 
+
+00:06:00.429 --> 00:06:02.489 align:start position:0%
+here as I'm talking is is that's the so
+in<00:06:00.669><c> terms</c><00:06:00.909><c> of</c><00:06:00.999><c> the</c><00:06:01.119><c> working</c><00:06:01.479><c> group</c><00:06:01.719><c> what</c><00:06:02.439><c> do</c>
+
+00:06:02.489 --> 00:06:02.499 align:start position:0%
+in terms of the working group what do
+ 
+
+00:06:02.499 --> 00:06:04.129 align:start position:0%
+in terms of the working group what do
+they<00:06:02.649><c> do</c><00:06:02.889><c> there</c><00:06:03.159><c> so</c><00:06:03.189><c> they're</c><00:06:03.519><c> member-driven</c>
+
+00:06:04.129 --> 00:06:04.139 align:start position:0%
+they do there so they're member-driven
+ 
+
+00:06:04.139 --> 00:06:06.119 align:start position:0%
+they do there so they're member-driven
+there's<00:06:05.139><c> going</c><00:06:05.319><c> to</c><00:06:05.379><c> be</c><00:06:05.439><c> a</c><00:06:05.529><c> governance</c><00:06:06.039><c> model</c>
+
+00:06:06.119 --> 00:06:06.129 align:start position:0%
+there's going to be a governance model
+ 
+
+00:06:06.129 --> 00:06:08.369 align:start position:0%
+there's going to be a governance model
+and<00:06:06.819><c> around</c><00:06:07.059><c> that</c><00:06:07.179><c> governance</c><00:06:07.629><c> model</c><00:06:07.959><c> this</c><00:06:08.079><c> is</c>
+
+00:06:08.369 --> 00:06:08.379 align:start position:0%
+and around that governance model this is
+ 
+
+00:06:08.379 --> 00:06:10.379 align:start position:0%
+and around that governance model this is
+going<00:06:08.529><c> to</c><00:06:08.619><c> be</c><00:06:08.709><c> around</c><00:06:08.919><c> paying</c><00:06:09.579><c> a</c><00:06:09.759><c> budget</c><00:06:10.179><c> for</c>
+
+00:06:10.379 --> 00:06:10.389 align:start position:0%
+going to be around paying a budget for
+ 
+
+00:06:10.389 --> 00:06:13.649 align:start position:0%
+going to be around paying a budget for
+the<00:06:10.449><c> working</c><00:06:10.779><c> group</c><00:06:11.019><c> and</c><00:06:11.289><c> and</c><00:06:12.179><c> possibly</c><00:06:13.179><c> extra</c>
+
+00:06:13.649 --> 00:06:13.659 align:start position:0%
+the working group and and possibly extra
+ 
+
+00:06:13.659 --> 00:06:15.359 align:start position:0%
+the working group and and possibly extra
+dues<00:06:13.899><c> for</c><00:06:14.319><c> the</c><00:06:14.409><c> working</c><00:06:14.589><c> group</c><00:06:14.889><c> to</c><00:06:15.069><c> make</c><00:06:15.189><c> sure</c>
+
+00:06:15.359 --> 00:06:15.369 align:start position:0%
+dues for the working group to make sure
+ 
+
+00:06:15.369 --> 00:06:17.939 align:start position:0%
+dues for the working group to make sure
+that<00:06:15.489><c> they</c><00:06:15.699><c> have</c><00:06:15.909><c> funds</c><00:06:16.439><c> which</c><00:06:17.439><c> could</c><00:06:17.619><c> be</c><00:06:17.709><c> used</c>
+
+00:06:17.939 --> 00:06:17.949 align:start position:0%
+that they have funds which could be used
+ 
+
+00:06:17.949 --> 00:06:20.339 align:start position:0%
+that they have funds which could be used
+to<00:06:18.129><c> support</c><00:06:18.429><c> their</c><00:06:18.639><c> activities</c><00:06:19.349><c> they're</c>
+
+00:06:20.339 --> 00:06:20.349 align:start position:0%
+to support their activities they're
+ 
+
+00:06:20.349 --> 00:06:23.850 align:start position:0%
+to support their activities they're
+going<00:06:20.499><c> to</c><00:06:20.559><c> have</c><00:06:20.649><c> to</c><00:06:20.739><c> define</c><00:06:21.129><c> and</c><00:06:21.869><c> and</c><00:06:22.899><c> a</c><00:06:23.589><c> dot</c>
+
+00:06:23.850 --> 00:06:23.860 align:start position:0%
+going to have to define and and a dot
+ 
+
+00:06:23.860 --> 00:06:26.219 align:start position:0%
+going to have to define and and a dot
+define<00:06:24.429><c> adopt</c><00:06:25.029><c> and</c><00:06:25.329><c> implement</c><00:06:25.479><c> the</c><00:06:25.959><c> spec</c>
+
+00:06:26.219 --> 00:06:26.229 align:start position:0%
+define adopt and implement the spec
+ 
+
+00:06:26.229 --> 00:06:29.489 align:start position:0%
+define adopt and implement the spec
+process<00:06:26.909><c> to</c><00:06:27.909><c> replace</c><00:06:28.239><c> the</c><00:06:28.449><c> role</c><00:06:28.629><c> of</c><00:06:28.659><c> the</c><00:06:28.929><c> JCP</c>
+
+00:06:29.489 --> 00:06:29.499 align:start position:0%
+process to replace the role of the JCP
+ 
+
+00:06:29.499 --> 00:06:31.859 align:start position:0%
+process to replace the role of the JCP
+has<00:06:29.739><c> has</c><00:06:29.919><c> historically</c><00:06:30.550><c> in</c><00:06:30.879><c> doing</c><00:06:31.300><c> Java</c><00:06:31.569><c> EE</c>
+
+00:06:31.859 --> 00:06:31.869 align:start position:0%
+has has historically in doing Java EE
+ 
+
+00:06:31.869 --> 00:06:34.799 align:start position:0%
+has has historically in doing Java EE
+specifications<00:06:33.089><c> create</c><00:06:34.089><c> an</c><00:06:34.209><c> entirely</c><00:06:34.569><c> new</c>
+
+00:06:34.799 --> 00:06:34.809 align:start position:0%
+specifications create an entirely new
+ 
+
+00:06:34.809 --> 00:06:37.439 align:start position:0%
+specifications create an entirely new
+brand<00:06:35.259><c> in</c><00:06:35.589><c> the</c><00:06:35.979><c> software</c><00:06:36.369><c> industry</c><00:06:36.579><c> market</c>
+
+00:06:37.439 --> 00:06:37.449 align:start position:0%
+brand in the software industry market
+ 
+
+00:06:37.449 --> 00:06:39.179 align:start position:0%
+brand in the software industry market
+that<00:06:37.599><c> brand</c><00:06:37.930><c> raise</c><00:06:38.439><c> awareness</c><00:06:38.740><c> about</c><00:06:39.039><c> that</c>
+
+00:06:39.179 --> 00:06:39.189 align:start position:0%
+that brand raise awareness about that
+ 
+
+00:06:39.189 --> 00:06:41.730 align:start position:0%
+that brand raise awareness about that
+brand<00:06:39.669><c> and</c><00:06:39.939><c> then</c><00:06:40.509><c> use</c><00:06:40.749><c> that</c><00:06:40.779><c> brand</c>
+
+00:06:41.730 --> 00:06:41.740 align:start position:0%
+brand and then use that brand
+ 
+
+00:06:41.740 --> 00:06:43.170 align:start position:0%
+brand and then use that brand
+clients<00:06:42.190><c> and</c><00:06:42.310><c> enforcement</c><00:06:42.910><c> for</c><00:06:43.150><c> the</c>
+
+00:06:43.170 --> 00:06:43.180 align:start position:0%
+clients and enforcement for the
+ 
+
+00:06:43.180 --> 00:06:46.530 align:start position:0%
+clients and enforcement for the
+compatibility<00:06:44.220><c> and</c><00:06:45.220><c> of</c><00:06:45.940><c> course</c><00:06:46.150><c> as</c><00:06:46.270><c> part</c><00:06:46.450><c> of</c>
+
+00:06:46.530 --> 00:06:46.540 align:start position:0%
+compatibility and of course as part of
+ 
+
+00:06:46.540 --> 00:06:49.620 align:start position:0%
+compatibility and of course as part of
+that<00:06:46.890><c> implement</c><00:06:47.890><c> that</c><00:06:48.070><c> provides</c><00:06:48.670><c> specs</c><00:06:49.060><c> under</c>
+
+00:06:49.620 --> 00:06:49.630 align:start position:0%
+that implement that provides specs under
+ 
+
+00:06:49.630 --> 00:06:51.480 align:start position:0%
+that implement that provides specs under
+a<00:06:49.660><c> license</c><00:06:50.320><c> that</c><00:06:50.560><c> allows</c><00:06:50.830><c> independent</c>
+
+00:06:51.480 --> 00:06:51.490 align:start position:0%
+a license that allows independent
+ 
+
+00:06:51.490 --> 00:06:54.840 align:start position:0%
+a license that allows independent
+implementations<00:06:52.420><c> on</c><00:06:52.720><c> the</c><00:06:53.650><c> open</c><00:06:54.040><c> source</c><00:06:54.220><c> IDE</c>
+
+00:06:54.840 --> 00:06:54.850 align:start position:0%
+implementations on the open source IDE
+ 
+
+00:06:54.850 --> 00:06:57.480 align:start position:0%
+implementations on the open source IDE
+forge<00:06:55.270><c> a</c><00:06:55.450><c> top-level</c><00:06:56.050><c> project</c><00:06:56.680><c> is</c><00:06:56.860><c> developer</c>
+
+00:06:57.480 --> 00:06:57.490 align:start position:0%
+forge a top-level project is developer
+ 
+
+00:06:57.490 --> 00:07:00.180 align:start position:0%
+forge a top-level project is developer
+driven<00:06:57.850><c> so</c><00:06:58.840><c> every</c><00:06:59.140><c> project</c><00:06:59.350><c> that</c><00:06:59.740><c> eclipse</c><00:07:00.040><c> is</c>
+
+00:07:00.180 --> 00:07:00.190 align:start position:0%
+driven so every project that eclipse is
+ 
+
+00:07:00.190 --> 00:07:02.760 align:start position:0%
+driven so every project that eclipse is
+a<00:07:00.250><c> self-governing</c><00:07:00.790><c> meritocracy</c><00:07:01.780><c> and</c><00:07:02.500><c> they</c>
+
+00:07:02.760 --> 00:07:02.770 align:start position:0%
+a self-governing meritocracy and they
+ 
+
+00:07:02.770 --> 00:07:05.520 align:start position:0%
+a self-governing meritocracy and they
+really<00:07:03.130><c> and</c><00:07:04.060><c> that's</c><00:07:04.240><c> definitely</c><00:07:04.600><c> happening</c>
+
+00:07:05.520 --> 00:07:05.530 align:start position:0%
+really and that's definitely happening
+ 
+
+00:07:05.530 --> 00:07:07.950 align:start position:0%
+really and that's definitely happening
+already<00:07:05.830><c> with</c><00:07:06.130><c> EE</c><00:07:06.340><c> for</c><00:07:06.640><c> Jake</c><00:07:06.910><c> they're</c><00:07:07.810><c> going</c>
+
+00:07:07.950 --> 00:07:07.960 align:start position:0%
+already with EE for Jake they're going
+ 
+
+00:07:07.960 --> 00:07:09.780 align:start position:0%
+already with EE for Jake they're going
+to<00:07:08.020><c> be</c><00:07:08.110><c> building</c><00:07:08.500><c> the</c><00:07:08.890><c> open</c><00:07:09.190><c> source</c><00:07:09.340><c> code</c><00:07:09.640><c> in</c>
+
+00:07:09.780 --> 00:07:09.790 align:start position:0%
+to be building the open source code in
+ 
+
+00:07:09.790 --> 00:07:12.870 align:start position:0%
+to be building the open source code in
+the<00:07:09.880><c> tcks</c><00:07:10.650><c> the</c><00:07:11.650><c> license</c><00:07:12.460><c> that's</c><00:07:12.670><c> been</c>
+
+00:07:12.870 --> 00:07:12.880 align:start position:0%
+the tcks the license that's been
+ 
+
+00:07:12.880 --> 00:07:14.940 align:start position:0%
+the tcks the license that's been
+selected<00:07:13.330><c> for</c><00:07:13.450><c> this</c><00:07:13.570><c> group</c><00:07:13.840><c> is</c><00:07:14.050><c> the</c><00:07:14.200><c> EPL</c>
+
+00:07:14.940 --> 00:07:14.950 align:start position:0%
+selected for this group is the EPL
+ 
+
+00:07:14.950 --> 00:07:17.610 align:start position:0%
+selected for this group is the EPL
+version<00:07:15.430><c> 2</c><00:07:15.730><c> with</c><00:07:16.480><c> the</c><00:07:16.630><c> secondary</c><00:07:17.140><c> license</c>
+
+00:07:17.610 --> 00:07:17.620 align:start position:0%
+version 2 with the secondary license
+ 
+
+00:07:17.620 --> 00:07:20.460 align:start position:0%
+version 2 with the secondary license
+being<00:07:17.980><c> enabled</c><00:07:18.240><c> with</c><00:07:19.240><c> the</c><00:07:19.420><c> GPL</c><00:07:19.900><c> version</c><00:07:20.080><c> 2</c>
+
+00:07:20.460 --> 00:07:20.470 align:start position:0%
+being enabled with the GPL version 2
+ 
+
+00:07:20.470 --> 00:07:23.250 align:start position:0%
+being enabled with the GPL version 2
+plus<00:07:20.740><c> class</c><00:07:20.950><c> Pathak</c><00:07:21.550><c> section</c><00:07:21.970><c> so</c><00:07:22.870><c> that's</c><00:07:23.050><c> the</c>
+
+00:07:23.250 --> 00:07:23.260 align:start position:0%
+plus class Pathak section so that's the
+ 
+
+00:07:23.260 --> 00:07:25.290 align:start position:0%
+plus class Pathak section so that's the
+license<00:07:23.710><c> that's</c><00:07:23.980><c> that's</c><00:07:24.610><c> being</c><00:07:24.790><c> used</c><00:07:25.030><c> by</c><00:07:25.240><c> this</c>
+
+00:07:25.290 --> 00:07:25.300 align:start position:0%
+license that's that's being used by this
+ 
+
+00:07:25.300 --> 00:07:28.170 align:start position:0%
+license that's that's being used by this
+group<00:07:25.890><c> that's</c><00:07:26.890><c> very</c><00:07:27.430><c> similar</c><00:07:27.730><c> to</c><00:07:28.060><c> the</c>
+
+00:07:28.170 --> 00:07:28.180 align:start position:0%
+group that's very similar to the
+ 
+
+00:07:28.180 --> 00:07:31.170 align:start position:0%
+group that's very similar to the
+historic<00:07:28.750><c> license</c><00:07:29.200><c> of</c><00:07:29.440><c> GlassFish</c><00:07:30.070><c> and</c><00:07:30.400><c> the</c>
+
+00:07:31.170 --> 00:07:31.180 align:start position:0%
+historic license of GlassFish and the
+ 
+
+00:07:31.180 --> 00:07:33.000 align:start position:0%
+historic license of GlassFish and the
+other<00:07:31.300><c> related</c><00:07:31.630><c> projects</c><00:07:32.260><c> which</c><00:07:32.410><c> previously</c>
+
+00:07:33.000 --> 00:07:33.010 align:start position:0%
+other related projects which previously
+ 
+
+00:07:33.010 --> 00:07:38.270 align:start position:0%
+other related projects which previously
+were<00:07:33.340><c> CDL</c><00:07:33.970><c> and</c><00:07:34.000><c> in</c><00:07:34.960><c> GPL</c><00:07:36.060><c> classpath</c><00:07:37.060><c> exception</c>
+
+00:07:38.270 --> 00:07:38.280 align:start position:0%
+were CDL and in GPL classpath exception
+ 
+
+00:07:38.280 --> 00:07:40.980 align:start position:0%
+were CDL and in GPL classpath exception
+open<00:07:39.280><c> source</c><00:07:39.490><c> rules</c><00:07:39.760><c> of</c><00:07:39.910><c> engagement</c><00:07:40.390><c> apply</c><00:07:40.660><c> as</c>
+
+00:07:40.980 --> 00:07:40.990 align:start position:0%
+open source rules of engagement apply as
+ 
+
+00:07:40.990 --> 00:07:42.990 align:start position:0%
+open source rules of engagement apply as
+we<00:07:41.110><c> talked</c><00:07:41.320><c> about</c><00:07:41.470><c> some</c><00:07:41.770><c> meritocracy</c><00:07:42.490><c> etc</c>
+
+00:07:42.990 --> 00:07:43.000 align:start position:0%
+we talked about some meritocracy etc
+ 
+
+00:07:43.000 --> 00:07:45.870 align:start position:0%
+we talked about some meritocracy etc
+were<00:07:43.360><c> applied</c><00:07:43.900><c> here</c><00:07:44.260><c> and</c><00:07:44.440><c> the</c><00:07:45.310><c> goal</c><00:07:45.490><c> again</c>
+
+00:07:45.870 --> 00:07:45.880 align:start position:0%
+were applied here and the goal again
+ 
+
+00:07:45.880 --> 00:07:49.370 align:start position:0%
+were applied here and the goal again
+really<00:07:46.630><c> around</c><00:07:46.960><c> agility</c><00:07:47.500><c> rapid</c><00:07:47.980><c> innovation</c>
+
+00:07:49.370 --> 00:07:49.380 align:start position:0%
+really around agility rapid innovation
+ 
+
+00:07:49.380 --> 00:07:52.290 align:start position:0%
+really around agility rapid innovation
+we<00:07:50.380><c> haven't</c><00:07:50.710><c> done</c><00:07:50.890><c> the</c><00:07:51.100><c> spec</c><00:07:51.340><c> process</c><00:07:51.790><c> yet</c><00:07:52.030><c> but</c>
+
+00:07:52.290 --> 00:07:52.300 align:start position:0%
+we haven't done the spec process yet but
+ 
+
+00:07:52.300 --> 00:07:55.800 align:start position:0%
+we haven't done the spec process yet but
+the<00:07:52.450><c> sort</c><00:07:52.960><c> of</c><00:07:53.070><c> a</c><00:07:54.070><c> prioritized</c><00:07:55.060><c> sumption</c><00:07:55.600><c> is</c>
+
+00:07:55.800 --> 00:07:55.810 align:start position:0%
+the sort of a prioritized sumption is
+ 
+
+00:07:55.810 --> 00:07:59.190 align:start position:0%
+the sort of a prioritized sumption is
+that<00:07:56.260><c> we</c><00:07:57.160><c> will</c><00:07:57.340><c> be</c><00:07:57.460><c> creating</c><00:07:57.730><c> specs</c><00:07:58.360><c> largely</c>
+
+00:07:59.190 --> 00:07:59.200 align:start position:0%
+that we will be creating specs largely
+ 
+
+00:07:59.200 --> 00:08:02.040 align:start position:0%
+that we will be creating specs largely
+using<00:07:59.890><c> the</c><00:08:00.250><c> open</c><00:08:00.820><c> source</c><00:08:00.970><c> processes</c><00:08:01.750><c> that</c><00:08:01.900><c> we</c>
+
+00:08:02.040 --> 00:08:02.050 align:start position:0%
+using the open source processes that we
+ 
+
+00:08:02.050 --> 00:08:04.560 align:start position:0%
+using the open source processes that we
+use<00:08:02.080><c> for</c><00:08:02.440><c> everything</c><00:08:02.680><c> else</c><00:08:02.920><c> at</c><00:08:03.070><c> Eclipse</c><00:08:03.570><c> and</c>
+
+00:08:04.560 --> 00:08:04.570 align:start position:0%
+use for everything else at Eclipse and
+ 
+
+00:08:04.570 --> 00:08:07.410 align:start position:0%
+use for everything else at Eclipse and
+then<00:08:05.110><c> with</c><00:08:05.530><c> the</c><00:08:05.680><c> idea</c><00:08:05.980><c> that</c><00:08:06.010><c> once</c><00:08:06.340><c> a</c><00:08:06.580><c> draft</c>
+
+00:08:07.410 --> 00:08:07.420 align:start position:0%
+then with the idea that once a draft
+ 
+
+00:08:07.420 --> 00:08:11.640 align:start position:0%
+then with the idea that once a draft
+spec<00:08:07.960><c> has</c><00:08:08.200><c> been</c><00:08:08.410><c> created</c><00:08:09.070><c> by</c><00:08:09.370><c> the</c><00:08:10.590><c> by</c><00:08:11.590><c> the</c>
+
+00:08:11.640 --> 00:08:11.650 align:start position:0%
+spec has been created by the by the
+ 
+
+00:08:11.650 --> 00:08:14.850 align:start position:0%
+spec has been created by the by the
+project<00:08:11.980><c> on</c><00:08:12.490><c> the</c><00:08:12.670><c> Eee</c><00:08:13.630><c> forge</c><00:08:13.990><c> a</c><00:08:14.110><c> side</c><00:08:14.350><c> it</c><00:08:14.710><c> would</c>
+
+00:08:14.850 --> 00:08:14.860 align:start position:0%
+project on the Eee forge a side it would
+ 
+
+00:08:14.860 --> 00:08:17.640 align:start position:0%
+project on the Eee forge a side it would
+be<00:08:14.980><c> referred</c><00:08:15.490><c> to</c><00:08:15.910><c> the</c><00:08:16.450><c> working</c><00:08:17.110><c> group</c><00:08:17.140><c> for</c>
+
+00:08:17.640 --> 00:08:17.650 align:start position:0%
+be referred to the working group for
+ 
+
+00:08:17.650 --> 00:08:21.540 align:start position:0%
+be referred to the working group for
+ratification<00:08:17.950><c> and</c><00:08:18.580><c> adoption</c><00:08:19.200><c> and</c><00:08:20.200><c> so</c><00:08:20.800><c> all</c><00:08:21.310><c> of</c>
+
+00:08:21.540 --> 00:08:21.550 align:start position:0%
+ratification and adoption and so all of
+ 
+
+00:08:21.550 --> 00:08:23.010 align:start position:0%
+ratification and adoption and so all of
+the<00:08:21.640><c> processes</c><00:08:22.270><c> that</c><00:08:22.300><c> we're</c><00:08:22.570><c> talking</c><00:08:22.720><c> about</c>
+
+00:08:23.010 --> 00:08:23.020 align:start position:0%
+the processes that we're talking about
+ 
+
+00:08:23.020 --> 00:08:25.050 align:start position:0%
+the processes that we're talking about
+here<00:08:23.200><c> are</c><00:08:24.010><c> governed</c><00:08:24.520><c> by</c><00:08:24.580><c> the</c><00:08:24.730><c> Eclipse</c>
+
+00:08:25.050 --> 00:08:25.060 align:start position:0%
+here are governed by the Eclipse
+ 
+
+00:08:25.060 --> 00:08:26.700 align:start position:0%
+here are governed by the Eclipse
+development<00:08:25.210><c> process</c><00:08:25.930><c> and</c><00:08:26.140><c> the</c><00:08:26.200><c> IP</c><00:08:26.350><c> policy</c>
+
+00:08:26.700 --> 00:08:26.710 align:start position:0%
+development process and the IP policy
+ 
+
+00:08:26.710 --> 00:08:28.920 align:start position:0%
+development process and the IP policy
+just<00:08:27.370><c> like</c><00:08:27.700><c> every</c><00:08:28.120><c> other</c><00:08:28.150><c> open-source</c>
+
+00:08:28.920 --> 00:08:28.930 align:start position:0%
+just like every other open-source
+ 
+
+00:08:28.930 --> 00:08:34.560 align:start position:0%
+just like every other open-source
+project<00:08:29.350><c> at</c><00:08:29.500><c> Eclipse</c><00:08:32.940><c> so</c><00:08:33.940><c> some</c><00:08:34.150><c> key</c><00:08:34.300><c> points</c>
+
+00:08:34.560 --> 00:08:34.570 align:start position:0%
+project at Eclipse so some key points
+ 
+
+00:08:34.570 --> 00:08:36.690 align:start position:0%
+project at Eclipse so some key points
+and<00:08:34.960><c> some</c><00:08:35.230><c> of</c><00:08:35.290><c> the</c><00:08:35.380><c> things</c><00:08:35.560><c> that</c><00:08:35.770><c> in</c><00:08:36.340><c> the</c><00:08:36.460><c> first</c>
+
+00:08:36.690 --> 00:08:36.700 align:start position:0%
+and some of the things that in the first
+ 
+
+00:08:36.700 --> 00:08:38.430 align:start position:0%
+and some of the things that in the first
+one<00:08:36.880><c> here</c><00:08:37.180><c> is</c><00:08:37.300><c> I</c><00:08:37.480><c> think</c><00:08:37.540><c> you'd</c><00:08:37.930><c> be</c><00:08:38.080><c> one</c><00:08:38.260><c> of</c><00:08:38.290><c> the</c>
+
+00:08:38.430 --> 00:08:38.440 align:start position:0%
+one here is I think you'd be one of the
+ 
+
+00:08:38.440 --> 00:08:41.990 align:start position:0%
+one here is I think you'd be one of the
+major<00:08:39.510><c> cultural</c><00:08:40.510><c> changes</c><00:08:41.020><c> if</c><00:08:41.230><c> you</c><00:08:41.350><c> will</c>
+
+00:08:41.990 --> 00:08:42.000 align:start position:0%
+major cultural changes if you will
+ 
+
+00:08:42.000 --> 00:08:46.680 align:start position:0%
+major cultural changes if you will
+relative<00:08:43.000><c> to</c><00:08:43.270><c> the</c><00:08:43.600><c> how</c><00:08:44.490><c> Java</c><00:08:45.490><c> EE</c><00:08:45.760><c> has</c><00:08:46.150><c> evolved</c>
+
+00:08:46.680 --> 00:08:46.690 align:start position:0%
+relative to the how Java EE has evolved
+ 
+
+00:08:46.690 --> 00:08:48.900 align:start position:0%
+relative to the how Java EE has evolved
+in<00:08:46.780><c> the</c><00:08:46.870><c> past</c><00:08:47.280><c> which</c><00:08:48.280><c> is</c><00:08:48.310><c> that</c><00:08:48.820><c> were</c>
+
+00:08:48.900 --> 00:08:48.910 align:start position:0%
+in the past which is that were
+ 
+
+00:08:48.910 --> 00:08:51.200 align:start position:0%
+in the past which is that were
+consciously<00:08:49.270><c> trying</c><00:08:49.930><c> to</c><00:08:50.110><c> change</c><00:08:50.380><c> the</c><00:08:50.620><c> culture</c>
+
+00:08:51.200 --> 00:08:51.210 align:start position:0%
+consciously trying to change the culture
+ 
+
+00:08:51.210 --> 00:08:55.020 align:start position:0%
+consciously trying to change the culture
+to<00:08:52.210><c> be</c><00:08:52.330><c> code</c><00:08:52.660><c> first</c><00:08:53.260><c> rather</c><00:08:54.160><c> than</c><00:08:54.310><c> spec</c><00:08:54.790><c> first</c>
+
+00:08:55.020 --> 00:08:55.030 align:start position:0%
+to be code first rather than spec first
+ 
+
+00:08:55.030 --> 00:08:56.069 align:start position:0%
+to be code first rather than spec first
+you<00:08:55.300><c> know</c>
+
+00:08:56.069 --> 00:08:56.079 align:start position:0%
+you know
+ 
+
+00:08:56.079 --> 00:08:58.710 align:start position:0%
+you know
+so<00:08:56.410><c> the</c><00:08:57.040><c> idea</c><00:08:57.339><c> is</c><00:08:57.430><c> that</c><00:08:57.490><c> you</c><00:08:57.759><c> know</c><00:08:57.850><c> let's</c><00:08:58.060><c> let's</c>
+
+00:08:58.710 --> 00:08:58.720 align:start position:0%
+so the idea is that you know let's let's
+ 
+
+00:08:58.720 --> 00:09:01.079 align:start position:0%
+so the idea is that you know let's let's
+get<00:08:58.930><c> developers</c><00:08:59.500><c> to</c><00:08:59.709><c> build</c><00:08:59.889><c> working</c><00:09:00.459><c> code</c><00:09:00.699><c> and</c>
+
+00:09:01.079 --> 00:09:01.089 align:start position:0%
+get developers to build working code and
+ 
+
+00:09:01.089 --> 00:09:02.460 align:start position:0%
+get developers to build working code and
+once<00:09:01.269><c> they've</c><00:09:01.449><c> demonstrated</c><00:09:01.690><c> that</c><00:09:02.290><c> it's</c>
+
+00:09:02.460 --> 00:09:02.470 align:start position:0%
+once they've demonstrated that it's
+ 
+
+00:09:02.470 --> 00:09:05.540 align:start position:0%
+once they've demonstrated that it's
+working<00:09:02.709><c> then</c><00:09:03.160><c> then</c><00:09:03.639><c> and</c><00:09:04.209><c> only</c><00:09:04.360><c> then</c><00:09:04.570><c> do</c><00:09:04.990><c> you</c>
+
+00:09:05.540 --> 00:09:05.550 align:start position:0%
+working then then and only then do you
+ 
+
+00:09:05.550 --> 00:09:11.310 align:start position:0%
+working then then and only then do you
+do<00:09:06.550><c> you</c><00:09:06.670><c> work</c><00:09:06.880><c> on</c><00:09:07.089><c> this</c><00:09:07.180><c> Factory</c><00:09:07.860><c> so</c><00:09:09.990><c> these</c><00:09:10.990><c> are</c>
+
+00:09:11.310 --> 00:09:11.320 align:start position:0%
+do you work on this Factory so these are
+ 
+
+00:09:11.320 --> 00:09:14.519 align:start position:0%
+do you work on this Factory so these are
+the<00:09:11.440><c> three</c><00:09:12.220><c> attributes</c><00:09:12.430><c> of</c><00:09:13.089><c> the</c><00:09:13.720><c> spec</c><00:09:14.050><c> process</c>
+
+00:09:14.519 --> 00:09:14.529 align:start position:0%
+the three attributes of the spec process
+ 
+
+00:09:14.529 --> 00:09:16.290 align:start position:0%
+the three attributes of the spec process
+that<00:09:14.680><c> the</c><00:09:14.769><c> JCP</c><00:09:15.339><c> has</c><00:09:15.490><c> always</c><00:09:15.730><c> been</c><00:09:16.060><c> you</c><00:09:16.149><c> know</c><00:09:16.269><c> a</c>
+
+00:09:16.290 --> 00:09:16.300 align:start position:0%
+that the JCP has always been you know a
+ 
+
+00:09:16.300 --> 00:09:18.120 align:start position:0%
+that the JCP has always been you know a
+spec<00:09:16.660><c> you</c><00:09:16.870><c> have</c><00:09:16.990><c> a</c><00:09:17.019><c> TCK</c><00:09:17.440><c> and</c><00:09:17.860><c> you</c><00:09:17.949><c> have</c><00:09:18.100><c> a</c>
+
+00:09:18.120 --> 00:09:18.130 align:start position:0%
+spec you have a TCK and you have a
+ 
+
+00:09:18.130 --> 00:09:22.259 align:start position:0%
+spec you have a TCK and you have a
+reference<00:09:18.339><c> implementation</c><00:09:19.800><c> the</c><00:09:21.120><c> going</c><00:09:22.120><c> in</c>
+
+00:09:22.259 --> 00:09:22.269 align:start position:0%
+reference implementation the going in
+ 
+
+00:09:22.269 --> 00:09:26.009 align:start position:0%
+reference implementation the going in
+assumption<00:09:22.779><c> is</c><00:09:23.019><c> that</c><00:09:23.470><c> that</c><00:09:23.769><c> will</c><00:09:24.100><c> continue</c><00:09:25.019><c> to</c>
+
+00:09:26.009 --> 00:09:26.019 align:start position:0%
+assumption is that that will continue to
+ 
+
+00:09:26.019 --> 00:09:28.050 align:start position:0%
+assumption is that that will continue to
+be<00:09:26.139><c> the</c><00:09:26.259><c> case</c><00:09:26.579><c> we've</c><00:09:27.579><c> had</c><00:09:27.730><c> numerous</c>
+
+00:09:28.050 --> 00:09:28.060 align:start position:0%
+be the case we've had numerous
+ 
+
+00:09:28.060 --> 00:09:29.970 align:start position:0%
+be the case we've had numerous
+discussions<00:09:28.360><c> about</c><00:09:29.050><c> that</c><00:09:29.230><c> with</c><00:09:29.470><c> some</c><00:09:29.769><c> key</c>
+
+00:09:29.970 --> 00:09:29.980 align:start position:0%
+discussions about that with some key
+ 
+
+00:09:29.980 --> 00:09:32.550 align:start position:0%
+discussions about that with some key
+stakeholders<00:09:30.699><c> in</c><00:09:30.970><c> the</c><00:09:31.149><c> Java</c><00:09:31.389><c> EE</c><00:09:31.560><c> ecosystem</c>
+
+00:09:32.550 --> 00:09:32.560 align:start position:0%
+stakeholders in the Java EE ecosystem
+ 
+
+00:09:32.560 --> 00:09:35.100 align:start position:0%
+stakeholders in the Java EE ecosystem
+and<00:09:32.769><c> the</c><00:09:33.519><c> consensus</c><00:09:34.060><c> is</c><00:09:34.209><c> that</c><00:09:34.240><c> yes</c><00:09:34.630><c> they</c><00:09:34.839><c> still</c>
+
+00:09:35.100 --> 00:09:35.110 align:start position:0%
+and the consensus is that yes they still
+ 
+
+00:09:35.110 --> 00:09:37.230 align:start position:0%
+and the consensus is that yes they still
+want<00:09:35.259><c> to</c><00:09:35.290><c> continue</c><00:09:35.470><c> with</c><00:09:35.920><c> this</c><00:09:36.240><c> so</c>
+
+00:09:37.230 --> 00:09:37.240 align:start position:0%
+want to continue with this so
+ 
+
+00:09:37.240 --> 00:09:39.300 align:start position:0%
+want to continue with this so
+compatibility<00:09:37.990><c> still</c><00:09:38.259><c> matters</c><00:09:38.649><c> very</c><00:09:39.009><c> very</c>
+
+00:09:39.300 --> 00:09:39.310 align:start position:0%
+compatibility still matters very very
+ 
+
+00:09:39.310 --> 00:09:41.819 align:start position:0%
+compatibility still matters very very
+much<00:09:39.720><c> but</c><00:09:40.720><c> on</c><00:09:40.870><c> the</c><00:09:40.930><c> other</c><00:09:41.019><c> hand</c><00:09:41.110><c> one</c><00:09:41.680><c> of</c><00:09:41.709><c> the</c>
+
+00:09:41.819 --> 00:09:41.829 align:start position:0%
+much but on the other hand one of the
+ 
+
+00:09:41.829 --> 00:09:44.009 align:start position:0%
+much but on the other hand one of the
+major<00:09:41.980><c> differences</c><00:09:42.339><c> on</c><00:09:42.819><c> the</c><00:09:42.940><c> spec</c><00:09:43.180><c> process</c><00:09:43.660><c> is</c>
+
+00:09:44.009 --> 00:09:44.019 align:start position:0%
+major differences on the spec process is
+ 
+
+00:09:44.019 --> 00:09:46.110 align:start position:0%
+major differences on the spec process is
+in<00:09:44.410><c> the</c><00:09:44.560><c> current</c><00:09:44.709><c> JCP</c><00:09:45.310><c> process</c><00:09:45.759><c> there's</c><00:09:46.060><c> a</c>
+
+00:09:46.110 --> 00:09:46.120 align:start position:0%
+in the current JCP process there's a
+ 
+
+00:09:46.120 --> 00:09:47.879 align:start position:0%
+in the current JCP process there's a
+notion<00:09:46.389><c> of</c><00:09:46.600><c> a</c><00:09:46.720><c> spat</c><00:09:47.019><c> lead</c><00:09:47.259><c> who</c><00:09:47.500><c> is</c><00:09:47.620><c> a</c><00:09:47.649><c> very</c>
+
+00:09:47.879 --> 00:09:47.889 align:start position:0%
+notion of a spat lead who is a very
+ 
+
+00:09:47.889 --> 00:09:50.579 align:start position:0%
+notion of a spat lead who is a very
+powerful<00:09:48.579><c> entity</c><00:09:49.300><c> in</c><00:09:49.540><c> the</c><00:09:49.810><c> indie</c><00:09:50.319><c> spec</c>
+
+00:09:50.579 --> 00:09:50.589 align:start position:0%
+powerful entity in the indie spec
+ 
+
+00:09:50.589 --> 00:09:54.120 align:start position:0%
+powerful entity in the indie spec
+process<00:09:51.100><c> and</c><00:09:51.360><c> actually</c><00:09:52.360><c> ends</c><00:09:53.290><c> up</c><00:09:53.380><c> owning</c><00:09:53.680><c> all</c>
+
+00:09:54.120 --> 00:09:54.130 align:start position:0%
+process and actually ends up owning all
+ 
+
+00:09:54.130 --> 00:09:56.129 align:start position:0%
+process and actually ends up owning all
+of<00:09:54.250><c> the</c><00:09:54.370><c> IP</c><00:09:54.579><c> that's</c><00:09:55.120><c> involved</c><00:09:55.569><c> with</c><00:09:55.660><c> that</c><00:09:55.779><c> spec</c>
+
+00:09:56.129 --> 00:09:56.139 align:start position:0%
+of the IP that's involved with that spec
+ 
+
+00:09:56.139 --> 00:09:58.800 align:start position:0%
+of the IP that's involved with that spec
+and<00:09:56.470><c> that's</c><00:09:57.279><c> not</c><00:09:57.639><c> going</c><00:09:57.970><c> to</c><00:09:58.120><c> be</c><00:09:58.240><c> the</c><00:09:58.360><c> way</c><00:09:58.480><c> we</c><00:09:58.660><c> go</c>
+
+00:09:58.800 --> 00:09:58.810 align:start position:0%
+and that's not going to be the way we go
+ 
+
+00:09:58.810 --> 00:10:01.350 align:start position:0%
+and that's not going to be the way we go
+with<00:09:59.230><c> the</c><00:09:59.350><c> new</c><00:09:59.500><c> spec</c><00:09:59.740><c> process</c><00:10:00.190><c> so</c><00:10:01.089><c> this</c><00:10:01.240><c> is</c>
+
+00:10:01.350 --> 00:10:01.360 align:start position:0%
+with the new spec process so this is
+ 
+
+00:10:01.360 --> 00:10:03.300 align:start position:0%
+with the new spec process so this is
+about<00:10:01.569><c> lighter</c><00:10:01.839><c> weight</c><00:10:02.079><c> processes</c><00:10:02.740><c> for</c><00:10:03.010><c> specs</c>
+
+00:10:03.300 --> 00:10:03.310 align:start position:0%
+about lighter weight processes for specs
+ 
+
+00:10:03.310 --> 00:10:06.540 align:start position:0%
+about lighter weight processes for specs
+and<00:10:04.089><c> defining</c><00:10:04.480><c> profiles</c><00:10:05.019><c> and</c><00:10:05.260><c> the</c><00:10:05.319><c> like</c><00:10:05.550><c> and</c>
+
+00:10:06.540 --> 00:10:06.550 align:start position:0%
+and defining profiles and the like and
+ 
+
+00:10:06.550 --> 00:10:09.240 align:start position:0%
+and defining profiles and the like and
+really<00:10:07.209><c> the</c><00:10:07.449><c> goal</c><00:10:07.480><c> of</c><00:10:07.899><c> this</c><00:10:08.050><c> group</c><00:10:08.380><c> is</c><00:10:08.649><c> to</c>
+
+00:10:09.240 --> 00:10:09.250 align:start position:0%
+really the goal of this group is to
+ 
+
+00:10:09.250 --> 00:10:12.480 align:start position:0%
+really the goal of this group is to
+increase<00:10:10.000><c> the</c><00:10:10.209><c> pace</c><00:10:10.389><c> of</c><00:10:10.569><c> innovation</c><00:10:10.690><c> and</c><00:10:11.490><c> help</c>
+
+00:10:12.480 --> 00:10:12.490 align:start position:0%
+increase the pace of innovation and help
+ 
+
+00:10:12.490 --> 00:10:14.759 align:start position:0%
+increase the pace of innovation and help
+bring<00:10:12.850><c> what</c><00:10:13.420><c> we</c><00:10:13.449><c> used</c><00:10:13.870><c> to</c><00:10:13.990><c> call</c><00:10:14.199><c> or</c><00:10:14.470><c> used</c><00:10:14.649><c> to</c>
+
+00:10:14.759 --> 00:10:14.769 align:start position:0%
+bring what we used to call or used to
+ 
+
+00:10:14.769 --> 00:10:18.269 align:start position:0%
+bring what we used to call or used to
+think<00:10:15.010><c> of</c><00:10:15.130><c> as</c><00:10:15.250><c> Enterprise</c><00:10:15.880><c> Java</c><00:10:16.649><c> to</c><00:10:17.649><c> a</c><00:10:17.680><c> cloud</c>
+
+00:10:18.269 --> 00:10:18.279 align:start position:0%
+think of as Enterprise Java to a cloud
+ 
+
+00:10:18.279 --> 00:10:20.460 align:start position:0%
+think of as Enterprise Java to a cloud
+native<00:10:18.670><c> future</c><00:10:19.449><c> so</c><00:10:19.779><c> this</c><00:10:19.930><c> is</c><00:10:20.079><c> definitely</c>
+
+00:10:20.460 --> 00:10:20.470 align:start position:0%
+native future so this is definitely
+ 
+
+00:10:20.470 --> 00:10:22.230 align:start position:0%
+native future so this is definitely
+about<00:10:20.680><c> the</c><00:10:20.829><c> future</c><00:10:21.370><c> not</c><00:10:21.610><c> just</c><00:10:21.880><c> about</c><00:10:22.089><c> the</c>
+
+00:10:22.230 --> 00:10:22.240 align:start position:0%
+about the future not just about the
+ 
+
+00:10:22.240 --> 00:10:24.540 align:start position:0%
+about the future not just about the
+legacy
+

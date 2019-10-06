@@ -1,0 +1,623 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:12.280
+[music]
+
+00:00:12.280 --> 00:00:14.840
+Hello and welcome to section four of
+
+00:00:14.840 --> 00:00:18.000
+lesson one. In this part we're going to
+look at some of
+
+00:00:18.000 --> 00:00:21.150
+the new interfaces that have been added
+
+00:00:21.150 --> 00:00:25.540
+in JDK 8, specifically in the java.util.function package
+
+00:00:25.540 --> 00:00:30.119
+that are very useful, especially when we
+come to doing things like the streams API.
+
+00:00:30.119 --> 00:00:33.440
+The
+
+00:00:33.440 --> 00:00:37.040
+java.util.function package provides us
+with
+
+00:00:37.040 --> 00:00:40.460
+a very well-defined set of
+general-purpose
+
+00:00:40.460 --> 00:00:44.879
+functional interfaces. These are places
+where we can use Lambda expressions,
+
+00:00:44.879 --> 00:00:48.840
+because they have one abstract method.
+We looked at this in the previous section
+
+00:00:48.840 --> 00:00:52.250
+about the idea that we needed only one
+abstract method.
+
+00:00:52.250 --> 00:00:56.399
+All of these interfaces are functional
+interfaces, they have
+
+00:00:56.399 --> 00:01:00.300
+one abstract method. What we find is that
+
+00:01:00.300 --> 00:01:03.429
+they are used extensively in a lot of the Java
+class libraries,
+
+00:01:03.429 --> 00:01:07.890
+so you find them used a lot in the stream
+API that we’ll talk about in
+
+00:01:07.890 --> 00:01:10.990
+lesson two, but there are also a number of
+other places where they’ve
+
+00:01:10.990 --> 00:01:14.150
+been added as parameters to different
+methods
+
+00:01:14.150 --> 00:01:17.780
+where we've included new things in the
+JDK 8
+
+00:01:17.780 --> 00:01:21.420
+class libraries. What we’re going to talk 
+about in this
+
+00:01:21.420 --> 00:01:25.380
+section is the generic form of these
+interfaces.
+
+00:01:25.380 --> 00:01:29.600
+If you look at the package itself what
+you'll find are that there are
+
+00:01:29.600 --> 00:01:33.250
+numerous versions of what I'm going to
+talk about
+
+00:01:33.250 --> 00:01:37.970
+which are type-specific. They’ll be double
+versions, int versions, long versions, and
+
+00:01:37.970 --> 00:01:41.460
+object versions as well. Once you've
+
+00:01:41.460 --> 00:01:45.829
+reviewed this section of the the lesson,
+go and have a look at the actual
+
+00:01:45.829 --> 00:01:49.159
+package information, have a look at all the
+different types, and you'll see what I
+
+00:01:49.159 --> 00:01:50.229
+mean by the
+
+00:01:50.229 --> 00:01:55.600
+various type-specific versions. 
+The first one we’re
+
+00:01:55.600 --> 00:02:00.740
+going to look at is called a consumer, and
+this is essentially an operation, which
+
+00:02:00.740 --> 00:02:04.539
+takes a single value and, as the name
+would
+
+00:02:04.539 --> 00:02:08.220
+imply, consumes it. It doesn't return
+
+00:02:08.220 --> 00:02:13.230
+a result. We take the value that’s passed to
+it, we do something with it, but we don't
+
+00:02:13.230 --> 00:02:14.480
+generate a result.
+
+00:02:14.480 --> 00:02:17.500
+Very simple example here; the
+
+00:02:17.500 --> 00:02:21.720
+parameter that’s being passed is a string s,
+and we’re consuming
+
+00:02:21.720 --> 00:02:25.320
+that by printing it out using 
+system.out.println
+
+00:02:25.320 --> 00:02:28.540
+We’re not using any return value,
+
+00:02:28.540 --> 00:02:32.780
+We’re not returning anything, it will be
+a void. There is
+
+00:02:32.780 --> 00:02:36.770
+also a second form of this called a 
+BiConsumer and
+
+00:02:36.770 --> 00:02:40.280
+what that will do is take two values as
+parameters
+
+00:02:40.280 --> 00:02:47.100
+and again, return no results. In terms of
+the interface itself, there are also some
+
+00:02:47.100 --> 00:02:51.180
+default methods, which will allow you to
+compose
+
+00:02:51.180 --> 00:02:54.540
+consumers. That means you can put
+them together
+
+00:02:54.540 --> 00:02:57.860
+to build up more complicated versions of a
+consumer
+
+00:02:57.860 --> 00:03:01.470
+so you could do something like consume
+something and then
+
+00:03:01.470 --> 00:03:05.320
+have another consumer off to its to
+actually consume the same variable
+
+00:03:05.320 --> 00:03:06.360
+that's being passed
+
+00:03:06.360 --> 00:03:09.400
+in different ways. If we look at
+
+00:03:09.400 --> 00:03:13.770
+an example of the BiConsumer what we’re
+doing here is we're passing in
+
+00:03:13.770 --> 00:03:17.910
+two values, a key and a value from some
+kind of map,
+
+00:03:17.910 --> 00:03:21.650
+and then again we’re consuming it by
+printing out the
+
+00:03:21.650 --> 00:03:25.500
+values of key as a key and then the value
+
+00:03:25.500 --> 00:03:29.769
+as a value. The
+
+00:03:29.769 --> 00:03:33.630
+next one that we’ll look at is the supplier.
+What this does,
+
+00:03:33.630 --> 00:03:37.160
+again as the name would imply, is supplies
+results.
+
+00:03:37.160 --> 00:03:41.200
+It's really kind of the opposite
+of a Consumer. Consumer
+
+00:03:41.200 --> 00:03:45.360
+takes a value that’s passed to it and doesn't
+generate a result;
+
+00:03:45.360 --> 00:03:48.950
+the supplier doesn't take a parameter
+
+00:03:48.950 --> 00:03:52.090
+passed to it, there are no parameters, and it
+returns
+
+00:03:52.090 --> 00:03:55.260
+some kind of value. In this case we’ve got
+
+00:03:55.260 --> 00:03:58.769
+a very simple example where we’re not
+passing any values
+
+00:03:58.769 --> 00:04:02.880
+because we don’t need any values and it
+will return
+
+00:04:02.880 --> 00:04:06.350
+whatever createLogMessage: is going to
+generate for us.
+
+00:04:06.350 --> 00:04:10.090
+Moving on,
+
+00:04:10.090 --> 00:04:13.290
+we then have the idea of a function,
+
+00:04:13.290 --> 00:04:17.239
+and you can think of this in the same
+way as like a mathematical function.
+
+00:04:17.239 --> 00:04:20.930
+A function is something that takes one
+argument,
+
+00:04:20.930 --> 00:04:23.940
+does something, and returns a result.
+
+00:04:23.940 --> 00:04:26.069
+It's a one to one
+
+00:04:26.069 --> 00:04:29.139
+function. Input, does something with it,
+
+00:04:29.139 --> 00:04:33.379
+returns a result. In the case of function
+
+00:04:33.379 --> 00:04:36.699
+it has two type parameters, generic type
+parameters, T and R,
+
+00:04:36.699 --> 00:04:40.020
+which means that the type of the
+argument and the result
+
+00:04:40.020 --> 00:04:44.750
+may be different, can be the same, but may be
+different. There’s also,
+
+00:04:44.750 --> 00:04:48.300
+in the same way that we have a 
+BiConsumer, there's another
+
+00:04:48.300 --> 00:04:52.759
+version of this which is called
+BiFunction. This is one that takes
+
+00:04:52.759 --> 00:04:56.970
+two arguments and returns a result. Again
+
+00:04:56.970 --> 00:05:00.090
+in this case all of those types can be
+different,
+
+00:05:00.090 --> 00:05:04.900
+so the types of the two parameters and 
+return type can be different. Again,
+
+00:05:04.900 --> 00:05:09.099
+this has some useful default methods that
+you can use to compose
+
+00:05:09.099 --> 00:05:13.409
+functions. There’s two of those; one is compose and one is
+
+00:05:13.409 --> 00:05:17.210
+andThen. To determine which of
+those you use
+
+00:05:17.210 --> 00:05:20.389
+depends on whether you want the
+
+00:05:20.389 --> 00:05:24.659
+second form of the function to be
+applied before
+
+00:05:24.659 --> 00:05:28.400
+the main function or after it.Compose will
+apply the
+
+00:05:28.400 --> 00:05:31.759
+new function before applying the
+function that’s been defined,
+
+00:05:31.759 --> 00:05:35.150
+andThen will apply the function that’s been
+defined
+
+00:05:35.150 --> 00:05:39.330
+and then apply another function to it.
+Example here
+
+00:05:39.330 --> 00:05:42.560
+of a function is simply to take our
+student, s,
+
+00:05:42.560 --> 00:05:46.479
+and to get the name so the input
+parameter is a student, s,
+
+00:05:46.479 --> 00:05:50.509
+and the output is whatever the
+name of that student is
+
+00:05:50.509 --> 00:05:54.150
+as a string. In terms of a BiFunction
+
+00:05:54.150 --> 00:05:57.830
+we can take two arguments, in this case a
+string which is the name
+
+00:05:57.830 --> 00:06:01.259
+and a student s and we will return
+
+00:06:01.259 --> 00:06:04.870
+a new object of type teacher which uses
+both
+
+00:06:04.870 --> 00:06:08.219
+the name and the student as the
+
+00:06:08.219 --> 00:06:14.430
+values that we’re going to use for
+constructor.
+
+00:06:14.430 --> 00:06:17.490
+The UnaryOperator. This is really
+
+00:06:17.490 --> 00:06:20.550
+like a function, but it's a specific type
+
+00:06:20.550 --> 00:06:24.599
+Of function. In this case it's the
+same as a function
+
+00:06:24.599 --> 00:06:28.020
+where both the parameter
+
+00:06:28.020 --> 00:06:31.210
+and the return type are the same. It's
+
+00:06:31.210 --> 00:06:34.440
+kind of like the subclass of function
+in some ways.
+
+00:06:34.440 --> 00:06:39.229
+Here we’ve got an example where we’re passing
+it a string, s,
+
+00:06:39.229 --> 00:06:42.599
+and we’re returning the lower case version of
+the string,
+
+00:06:42.599 --> 00:06:46.830
+so we’re passing in a string and
+returning in a string. Both are the same type.
+
+00:06:46.830 --> 00:06:50.409
+In the same way that we have
+
+00:06:50.409 --> 00:06:54.930
+a UnaryOperator that is a special form of
+the
+
+00:06:54.930 --> 00:06:58.870
+function, there’s also a binary operator which
+is a specialized form
+
+00:06:58.870 --> 00:07:01.930
+of BiFunction. Again, rather than having
+
+00:07:01.930 --> 00:07:06.060
+potentially different type arguments and
+results in this case
+
+00:07:06.060 --> 00:07:09.699
+the two parameters that we pass to the
+apply method
+
+00:07:09.699 --> 00:07:13.229
+are the same as the return type, so T
+is used
+
+00:07:13.229 --> 00:07:18.009
+throughout all three different variables
+there. We can see an example of that
+
+00:07:18.009 --> 00:07:18.530
+here,
+
+00:07:18.530 --> 00:07:22.889
+where we're passing two strings as our
+parameters
+
+00:07:22.889 --> 00:07:26.020
+and then we have a body our Lambda
+expression
+
+00:07:26.020 --> 00:07:29.770
+which is comparing the length of the
+strings and returning whichever is the
+
+00:07:29.770 --> 00:07:30.469
+longest,
+
+00:07:30.469 --> 00:07:34.180
+of either x or y.
+
+00:07:34.180 --> 00:07:38.069
+The type of the return is a string, the type
+of the two parameters is a string,
+
+00:07:38.069 --> 00:07:42.509
+so it is a BinaryOperator, Predicate.
+
+00:07:42.509 --> 00:07:46.110
+We’ve already seen Predicate when we looked at
+functional interfaces
+
+00:07:46.110 --> 00:07:49.800
+and, again this is release a specialized
+form
+
+00:07:49.800 --> 00:07:53.560
+of a function because, in this case it’s a
+function that
+
+00:07:53.560 --> 00:07:57.580
+always returns a boolean. Takes one argument,
+but
+
+00:07:57.580 --> 00:08:00.900
+always returns a boolean to indicate
+whether or not
+
+00:08:00.900 --> 00:08:03.979
+the predicate is true of false.
+
+00:08:03.979 --> 00:08:07.039
+Again, there is a two-argument
+
+00:08:07.039 --> 00:08:10.159
+form of that called BiPredicate,
+which takes two
+
+00:08:10.159 --> 00:08:14.740
+arguments and returns a boolean, same as you
+have a BiFunction,
+
+00:08:14.740 --> 00:08:18.969
+so you can do the same with a BiPredicate. 
+Again,
+
+00:08:18.969 --> 00:08:23.020
+there are some useful default and
+static methods that you can use to combine
+
+00:08:23.020 --> 00:08:23.919
+these things,
+
+00:08:23.919 --> 00:08:27.169
+so you can do the typical binary kind of
+
+00:08:27.169 --> 00:08:31.349
+operations you can do and,
+you can do or you can do negate.
+
+00:08:31.349 --> 00:08:36.209
+Then, you can also have a thing to say
+isEqual.
+
+00:08:36.209 --> 00:08:40.110
+An example of that is with the one we've
+already seen,
+
+00:08:40.110 --> 00:08:43.919
+where we’re passing a parameter, student s, 
+and we’re returning
+
+00:08:43.919 --> 00:08:46.920
+whether the graduation year is 2011, so
+that's a
+
+00:08:46.920 --> 00:08:52.709
+predicate Lambda expression where we
+compare the graduation year to 2011
+
+00:08:52.709 --> 00:08:56.100
+and return a boolean. As an example of a
+
+00:08:56.100 --> 00:08:59.579
+BiPredicate in this case we have
+
+00:08:59.579 --> 00:09:02.980
+a situation where for the find method in
+files
+
+00:09:02.980 --> 00:09:06.240
+we pass in a path and an attribute
+
+00:09:06.240 --> 00:09:10.040
+and then we can define how we want to
+use those
+
+00:09:10.040 --> 00:09:13.839
+to determine whether the files will be
+used
+
+00:09:13.839 --> 00:09:18.209
+in terms of our stream of results. In
+this case what we're doing is we're
+
+00:09:18.209 --> 00:09:18.829
+taking
+
+00:09:18.829 --> 00:09:22.320
+the string value of the path, the name of
+
+00:09:22.320 --> 00:09:27.250
+the path we've got, testing
+whether ends with dot JS to see if we’ve got
+
+00:09:27.250 --> 00:09:28.380
+a JavaScript file
+
+00:09:28.380 --> 00:09:32.320
+and then also testing to see whether the
+size of the file
+
+00:09:32.320 --> 00:09:36.240
+is over one kilobyte in size. We’re using both
+the parameters
+
+00:09:36.240 --> 00:09:42.620
+that are being passed in terms of that
+BiPredicate. To summarize section
+
+00:09:42.620 --> 00:09:46.860
+four, the function package, which is new in
+JDK 8
+
+00:09:46.860 --> 00:09:50.390
+provides us with a very useful range of
+functional interfaces.
+
+00:09:50.390 --> 00:09:53.600
+As we'll see in Lesson two these
+
+00:09:53.600 --> 00:09:57.149
+are used extensively in the streams API
+
+00:09:57.149 --> 00:10:00.449
+but there are also a number of other places
+where we use them
+
+00:10:00.449 --> 00:10:05.180
+and we’ll see those later in this particular
+lesson. Although you can
+
+00:10:05.180 --> 00:10:09.709
+define your own extensions to the
+function package it’s probably very
+
+00:10:09.709 --> 00:10:11.570
+unlikely that you will need to.
+
+00:10:11.570 --> 00:10:15.199
+You’ll find that the  ones that have
+been defined will cover
+
+00:10:15.199 --> 00:10:19.410
+pretty much any situation that you're
+going need in terms of basic
+
+00:10:19.410 --> 00:10:23.589
+functional interfaces for these types of
+things.
+
+00:10:23.589 --> 00:10:26.059
+And that is the end of this section of
+the lesson.
+

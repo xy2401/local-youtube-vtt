@@ -1,0 +1,265 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.730 --> 00:00:02.560
+PETE LEPAGE: Web apps
+can now communicate
+
+00:00:02.560 --> 00:00:05.500
+with nearby Bluetooth
+low energy devices
+
+00:00:05.500 --> 00:00:08.109
+using the Web Bluetooth API.
+
+00:00:08.109 --> 00:00:10.210
+Position sticky
+is back, making it
+
+00:00:10.210 --> 00:00:14.290
+easy to create elements that
+scroll normally until sticking
+
+00:00:14.290 --> 00:00:16.030
+to the top of the viewport.
+
+00:00:16.030 --> 00:00:20.560
+And HTML5, by default,
+is enabled for all users.
+
+00:00:20.560 --> 00:00:21.760
+I'm Pete LePage.
+
+00:00:21.760 --> 00:00:25.240
+Let's dive in and see what's
+new for developers in Chrome 56.
+
+00:00:25.240 --> 00:00:27.860
+[MUSIC PLAYING]
+
+00:00:27.860 --> 00:00:32.000
+Until, now the ability to
+interact with Bluetooth devices
+
+00:00:32.000 --> 00:00:34.880
+has been possible
+only for native apps.
+
+00:00:34.880 --> 00:00:38.150
+With Chrome 56, your
+web app can communicate
+
+00:00:38.150 --> 00:00:41.260
+with nearby Bluetooth
+low energy devices
+
+00:00:41.260 --> 00:00:45.840
+in a secure and private manner
+using the Web Bluetooth API.
+
+00:00:45.840 --> 00:00:49.340
+The Web Bluetooth API
+uses the GATT protocol,
+
+00:00:49.340 --> 00:00:51.770
+which enables your app
+to connect to devices
+
+00:00:51.770 --> 00:00:55.220
+such as light bulbs, toys,
+heart rate monitors, LED
+
+00:00:55.220 --> 00:00:58.990
+displays, and more, with just
+a few lines of JavaScript.
+
+00:00:58.990 --> 00:01:01.970
+Web Bluetooth can also be
+combined with physical web
+
+00:01:01.970 --> 00:01:06.110
+beacons to discover and
+control nearby devices.
+
+00:01:06.110 --> 00:01:08.660
+Francois has a great
+article on updates.
+
+00:01:08.660 --> 00:01:11.210
+And be sure to check out some
+of the cool demos that go along
+
+00:01:11.210 --> 00:01:12.650
+with it.
+
+00:01:12.650 --> 00:01:14.960
+Previously, building
+content headers
+
+00:01:14.960 --> 00:01:17.240
+that scrolled normally
+until sticking
+
+00:01:17.240 --> 00:01:19.340
+to the top of the
+viewport required
+
+00:01:19.340 --> 00:01:21.520
+listening to scroll
+event and switching
+
+00:01:21.520 --> 00:01:23.660
+an element's position
+from relative
+
+00:01:23.660 --> 00:01:26.660
+to fixed at a
+specified threshold.
+
+00:01:26.660 --> 00:01:29.540
+It was difficult to
+synchronize and often resulted
+
+00:01:29.540 --> 00:01:32.120
+in small visual jumps.
+
+00:01:32.120 --> 00:01:35.000
+Chrome now supports
+CSS position sticky,
+
+00:01:35.000 --> 00:01:37.670
+a new way to position elements.
+
+00:01:37.670 --> 00:01:41.240
+An element that is position
+sticky starts relative,
+
+00:01:41.240 --> 00:01:43.970
+but becomes fixed after
+the element reaches
+
+00:01:43.970 --> 00:01:45.890
+a certain scroll position.
+
+00:01:45.890 --> 00:01:51.080
+Simply set position sticky
+and set a threshold for it.
+
+00:01:51.080 --> 00:01:53.420
+Paul Kinlan has an
+update post about it
+
+00:01:53.420 --> 00:01:55.370
+linked in the description.
+
+00:01:55.370 --> 00:01:57.380
+Last August, we
+announced that we'd
+
+00:01:57.380 --> 00:02:01.280
+be moving to HTML5 by default
+to offer a safer and more
+
+00:02:01.280 --> 00:02:03.470
+power-efficient experience.
+
+00:02:03.470 --> 00:02:06.620
+This change disables
+the Adobe Flash Player
+
+00:02:06.620 --> 00:02:10.250
+unless there's a user indication
+that they want Flash content
+
+00:02:10.250 --> 00:02:12.020
+on specific sites.
+
+00:02:12.020 --> 00:02:15.320
+And eventually, all websites
+will require the user's
+
+00:02:15.320 --> 00:02:17.510
+permission to run Flash.
+
+00:02:17.510 --> 00:02:21.290
+In Chrome 56, HTML5,
+by default, has
+
+00:02:21.290 --> 00:02:23.600
+been enabled for
+all users, which
+
+00:02:23.600 --> 00:02:25.850
+means that they will be
+prompted to run Flash
+
+00:02:25.850 --> 00:02:28.130
+on a site-by-site
+basis for sites
+
+00:02:28.130 --> 00:02:30.530
+that they've never
+visited before.
+
+00:02:30.530 --> 00:02:34.610
+More details about how and
+when users will be prompted,
+
+00:02:34.610 --> 00:02:37.880
+and recommendations on how
+to test your Flash site,
+
+00:02:37.880 --> 00:02:40.430
+are linked in the
+description below.
+
+00:02:40.430 --> 00:02:42.650
+Of course, there's plenty more.
+
+00:02:42.650 --> 00:02:45.710
+WebVR is available
+as an Origin trial.
+
+00:02:45.710 --> 00:02:49.310
+The WebGL 2.0 API
+is now available.
+
+00:02:49.310 --> 00:02:53.660
+And the Payment Request API
+has a variety of new features.
+
+00:02:53.660 --> 00:02:55.970
+Check the description for
+more details and links
+
+00:02:55.970 --> 00:02:58.770
+to documentation
+and specifications.
+
+00:02:58.770 --> 00:03:00.590
+If you want to stay
+up to date with Chrome
+
+00:03:00.590 --> 00:03:02.750
+and know what's coming,
+be sure to subscribe
+
+00:03:02.750 --> 00:03:05.470
+and follow ChromiumDev
+on Twitter.
+
+00:03:05.470 --> 00:03:06.470
+I'm Pete LePage.
+
+00:03:06.470 --> 00:03:08.730
+And as soon as Chrome
+57 is released,
+
+00:03:08.730 --> 00:03:11.690
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:11.690 --> 00:03:15.040
+[MUSIC PLAYING]
+

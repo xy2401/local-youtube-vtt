@@ -1,0 +1,403 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.470
+[MUSIC  PLAYING]
+
+00:00:04.559 --> 00:00:06.100
+MONICA DINCULESCU:
+Hello Polycasters,
+
+00:00:06.100 --> 00:00:08.707
+and welcome to another
+edition of The Meowni.ca Show.
+
+00:00:08.707 --> 00:00:10.540
+Last time when I was
+here, I was telling you
+
+00:00:10.540 --> 00:00:13.360
+about how to get your forms
+to care about your custom
+
+00:00:13.360 --> 00:00:13.900
+elements.
+
+00:00:13.900 --> 00:00:17.050
+And the thing that I showed
+you was that you can basically
+
+00:00:17.050 --> 00:00:19.870
+bind the property that
+you care about in a custom
+
+00:00:19.870 --> 00:00:22.059
+element to the value
+of a hidden input,
+
+00:00:22.059 --> 00:00:24.100
+because forms care about
+hidden inputs and that's
+
+00:00:24.100 --> 00:00:25.960
+how you can send
+them to the server.
+
+00:00:25.960 --> 00:00:27.880
+Today, I'm going to
+still talk about forms,
+
+00:00:27.880 --> 00:00:28.690
+but I'm going to
+show you something
+
+00:00:28.690 --> 00:00:29.648
+a little bit different.
+
+00:00:29.648 --> 00:00:32.650
+Oftentimes, you might be the
+one writing your custom element,
+
+00:00:32.650 --> 00:00:35.320
+and all you need to do is just
+make an input look prettier
+
+00:00:35.320 --> 00:00:38.110
+because a native input
+isn't the greatest.
+
+00:00:38.110 --> 00:00:40.900
+So if you want to just do that,
+the way you can get around it
+
+00:00:40.900 --> 00:00:43.390
+is to just make a wrapper
+that just styles your input,
+
+00:00:43.390 --> 00:00:46.130
+and then your input is still
+in the light DOM of the form,
+
+00:00:46.130 --> 00:00:48.940
+so the form just sees it as if
+it was a normal input and not
+
+00:00:48.940 --> 00:00:50.240
+a custom element.
+
+00:00:50.240 --> 00:00:52.000
+So let's go ahead and do this.
+
+00:00:52.000 --> 00:00:54.304
+Over here I have a form,
+just like I had before.
+
+00:00:54.304 --> 00:00:54.970
+And it's styled.
+
+00:00:54.970 --> 00:00:57.160
+It's exactly the same
+demo as last time.
+
+00:00:57.160 --> 00:00:59.197
+I'm still using httpbin,
+and if you missed it,
+
+00:00:59.197 --> 00:01:01.780
+I was telling you it's a thing
+that just basically echoes back
+
+00:01:01.780 --> 00:01:03.321
+all the headers and
+all the arguments
+
+00:01:03.321 --> 00:01:05.000
+that you sent it,
+which is great.
+
+00:01:05.000 --> 00:01:06.820
+So I have a form
+and in it, I want
+
+00:01:06.820 --> 00:01:08.617
+to do again the
+birthday example, where
+
+00:01:08.617 --> 00:01:10.450
+I'm going to ask you
+to put in your birthday
+
+00:01:10.450 --> 00:01:12.866
+and then I'm going to send you
+something on your birthday.
+
+00:01:12.866 --> 00:01:17.411
+So I'm going to have an
+input here inside the form.
+
+00:01:17.411 --> 00:01:18.910
+And these inputs
+have a placeholder,
+
+00:01:18.910 --> 00:01:20.350
+and they have a name and a date.
+
+00:01:20.350 --> 00:01:22.100
+So if they have a name,
+the form cares about them
+
+00:01:22.100 --> 00:01:23.349
+and it's going to submit them.
+
+00:01:23.349 --> 00:01:25.450
+So we can go ahead and
+see what it looks like.
+
+00:01:25.450 --> 00:01:29.100
+You have a really ugly input,
+but if I type something in it,
+
+00:01:29.100 --> 00:01:32.620
+by the magic of forms, I'm going
+to send this day and the month
+
+00:01:32.620 --> 00:01:33.130
+over there.
+
+00:01:33.130 --> 00:01:34.090
+But that's not what I want.
+
+00:01:34.090 --> 00:01:35.464
+I want to assemble
+something that
+
+00:01:35.464 --> 00:01:37.970
+says birthday so that my server
+knows what to do with it.
+
+00:01:37.970 --> 00:01:38.980
+So what I'm going
+to go ahead and do
+
+00:01:38.980 --> 00:01:40.762
+is first make these
+inputs look great,
+
+00:01:40.762 --> 00:01:42.220
+because they're
+terrible right now.
+
+00:01:42.220 --> 00:01:46.184
+And I'm going to wrap them
+in a custom element that
+
+00:01:46.184 --> 00:01:48.350
+is going to take a label
+that we're going to display
+
+00:01:48.350 --> 00:01:50.350
+and just style, basically,
+all of these inputs
+
+00:01:50.350 --> 00:01:51.770
+that get distributed to it.
+
+00:01:51.770 --> 00:01:53.650
+So if you go over
+here to our element,
+
+00:01:53.650 --> 00:01:55.450
+I'm going to add
+the label, and it's
+
+00:01:55.450 --> 00:01:57.160
+going to come as a
+property, as you saw.
+
+00:01:57.160 --> 00:01:59.050
+So I'm going to actually
+add it as a property
+
+00:01:59.050 --> 00:02:02.770
+so that we can display it and
+then a giant content block that
+
+00:02:02.770 --> 00:02:05.050
+basically says,
+display here everything
+
+00:02:05.050 --> 00:02:06.170
+that you're passing me.
+
+00:02:06.170 --> 00:02:08.702
+And again, the styles aren't
+any different than before.
+
+00:02:08.702 --> 00:02:10.660
+If you look at my shared
+styles, the only thing
+
+00:02:10.660 --> 00:02:14.590
+that I had to add was to also
+style a distributed input,
+
+00:02:14.590 --> 00:02:17.210
+not just like a Shadow
+DOM input, like before.
+
+00:02:17.210 --> 00:02:19.180
+So if you go back
+to our form, I'm
+
+00:02:19.180 --> 00:02:22.090
+going to actually import the
+element so that it works.
+
+00:02:22.090 --> 00:02:25.510
+And now, if I refresh my
+page, bam, pretty input.
+
+00:02:25.510 --> 00:02:26.530
+That's amazing.
+
+00:02:26.530 --> 00:02:28.019
+But whatever data
+you pass in it,
+
+00:02:28.019 --> 00:02:30.310
+it's still in the wrong
+format, because I didn't really
+
+00:02:30.310 --> 00:02:31.456
+fix that in any way.
+
+00:02:31.456 --> 00:02:33.580
+So we can go ahead and do
+that by binding the value
+
+00:02:33.580 --> 00:02:34.913
+that we get from a native event.
+
+00:02:34.913 --> 00:02:38.350
+So I'm going to, over here,
+get the value from the input,
+
+00:02:38.350 --> 00:02:41.290
+and it's going to be whenever
+the input fires an event,
+
+00:02:41.290 --> 00:02:43.650
+I'm going to put in a
+property called month
+
+00:02:43.650 --> 00:02:47.147
+and I'm going to do the same
+for the day, only call it a day.
+
+00:02:47.147 --> 00:02:49.230
+And then I'm going to do
+the same trick as before,
+
+00:02:49.230 --> 00:02:51.100
+where I have a hidden
+input and that thing
+
+00:02:51.100 --> 00:02:52.550
+gets sent to the server.
+
+00:02:52.550 --> 00:02:57.470
+So I'm going to bind this
+property month and this day,
+
+00:02:57.470 --> 00:03:00.670
+separate them by a
+slash, and wrap these
+
+00:03:00.670 --> 00:03:03.460
+all in a nice little down bind
+so that the bindings actually
+
+00:03:03.460 --> 00:03:04.270
+work.
+
+00:03:04.270 --> 00:03:07.480
+And if you go back to the demo,
+put in a birthday as before,
+
+00:03:07.480 --> 00:03:08.740
+submit it, bam!
+
+00:03:08.740 --> 00:03:09.400
+Look at that!
+
+00:03:09.400 --> 00:03:11.200
+We have an argument
+called birthday,
+
+00:03:11.200 --> 00:03:12.550
+and it's in the right format.
+
+00:03:12.550 --> 00:03:13.600
+The server is happy.
+
+00:03:13.600 --> 00:03:14.730
+I'm happy.
+
+00:03:14.730 --> 00:03:15.910
+The form is happy.
+
+00:03:15.910 --> 00:03:17.050
+I think we got this done.
+
+00:03:17.050 --> 00:03:17.704
+So that's it.
+
+00:03:17.704 --> 00:03:19.620
+That's another way that
+you can get your forms
+
+00:03:19.620 --> 00:03:21.099
+to care about custom elements.
+
+00:03:21.099 --> 00:03:22.390
+Thank you so much for watching.
+
+00:03:22.390 --> 00:03:23.680
+Hopefully I'll get
+to see you again.
+
+00:03:23.680 --> 00:03:25.380
+I'll talk to Rob to see
+if we can do this again.
+
+00:03:25.380 --> 00:03:26.713
+Please subscribe to the channel.
+
+00:03:26.713 --> 00:03:28.510
+If you have any
+questions, comments below,
+
+00:03:28.510 --> 00:03:30.820
+or you can find me on
+Twitter @notwaldorf.
+
+00:03:30.820 --> 00:03:31.930
+And that's it.
+
+00:03:31.930 --> 00:03:34.830
+Bye.
+
+00:03:34.830 --> 00:03:37.880
+Hi Polycasters, and welcome
+to another edition of-- oh no.
+
+00:03:37.880 --> 00:03:39.990
+This is not another edition.
+
+00:03:39.990 --> 00:03:42.290
+Hello Poly-- oh [BLEEP].
+
+00:03:42.290 --> 00:03:44.640
+Don't make me laugh.
+

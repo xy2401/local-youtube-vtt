@@ -1,0 +1,380 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.450
+[MUSIC PLAYING]
+
+00:00:03.604 --> 00:00:05.270
+ELLIOTT MARQUEZ: Hey
+there, Polycasters.
+
+00:00:05.270 --> 00:00:06.080
+I'm Elliott.
+
+00:00:06.080 --> 00:00:07.710
+And in this short
+series of videos,
+
+00:00:07.710 --> 00:00:10.085
+we're going to set up our
+Polymer environment for Polymer
+
+00:00:10.085 --> 00:00:12.920
+projects, and then we're going
+to create a Polymer 2 element.
+
+00:00:12.920 --> 00:00:15.690
+Let's get started with
+installing the proper tools.
+
+00:00:15.690 --> 00:00:18.620
+So first we're going
+to install Node.js.
+
+00:00:18.620 --> 00:00:20.750
+My favorite way
+to install Node.js
+
+00:00:20.750 --> 00:00:24.760
+is using the Nod
+Version Manager, or NVM.
+
+00:00:24.760 --> 00:00:28.550
+You can easily find this by
+just Googling it for "NVM."
+
+00:00:28.550 --> 00:00:31.430
+And you'll see this GitHub
+thing for creationix.
+
+00:00:31.430 --> 00:00:34.610
+At the top you'll
+have a quick install
+
+00:00:34.610 --> 00:00:36.650
+scripts where you
+can just copy/paste
+
+00:00:36.650 --> 00:00:40.220
+if you have a Bash prompt.
+
+00:00:40.220 --> 00:00:41.360
+So here's my terminal.
+
+00:00:41.360 --> 00:00:43.490
+Going to paste it right in.
+
+00:00:43.490 --> 00:00:45.195
+And it'll install.
+
+00:00:45.195 --> 00:00:48.470
+All right, and once you
+have that installed, NVM,
+
+00:00:48.470 --> 00:00:53.650
+you can install Node
+using nvm install node.
+
+00:00:53.650 --> 00:00:56.052
+And you want to install
+the stable version.
+
+00:00:56.052 --> 00:00:56.760
+And there you go.
+
+00:00:56.760 --> 00:00:57.970
+It should be set up.
+
+00:00:57.970 --> 00:01:01.000
+You'll also see this
+last command out of NVM
+
+00:01:01.000 --> 00:01:03.550
+that you want to either
+run every time you start
+
+00:01:03.550 --> 00:01:07.630
+a new terminal or put it into
+your Bash profile, or your Bash
+
+00:01:07.630 --> 00:01:09.070
+RC if you're on Ubuntu.
+
+00:01:09.070 --> 00:01:12.790
+So I'm on a Mac, so I'm going
+to put this in my Bash profile.
+
+00:01:12.790 --> 00:01:17.500
+So I'm going to open up Vim and
+put it into my Bash profile.
+
+00:01:17.500 --> 00:01:19.460
+And you can see I
+already have it here.
+
+00:01:19.460 --> 00:01:21.520
+But let's pretend
+I don't have that.
+
+00:01:21.520 --> 00:01:24.190
+And you would just
+paste it in, save it.
+
+00:01:24.190 --> 00:01:26.050
+And you can restart
+your terminal.
+
+00:01:26.050 --> 00:01:31.080
+But I already have that, so I'm
+not going to restart for now.
+
+00:01:31.080 --> 00:01:32.652
+Let me just clear this up.
+
+00:01:32.652 --> 00:01:34.110
+Now that we have
+Node installed, we
+
+00:01:34.110 --> 00:01:35.710
+want to install the Polymer CLI.
+
+00:01:35.710 --> 00:01:38.560
+The Polymer CLI is a tool
+created by the Polymer team.
+
+00:01:38.560 --> 00:01:41.200
+And it allows you to
+initialize projects,
+
+00:01:41.200 --> 00:01:43.780
+and it has a lot of really
+nice features to it.
+
+00:01:43.780 --> 00:01:46.310
+We'll go through them
+one at a time later.
+
+00:01:46.310 --> 00:01:47.490
+So npm install.
+
+00:01:47.490 --> 00:01:48.970
+And we want to
+install it globally,
+
+00:01:48.970 --> 00:01:52.060
+so we're going to
+use the dash g flag.
+
+00:01:52.060 --> 00:01:55.990
+And we're going to install
+the Polymer dash CLI,
+
+00:01:55.990 --> 00:01:56.950
+have that run.
+
+00:01:56.950 --> 00:01:58.596
+This might take a
+few minutes depending
+
+00:01:58.596 --> 00:02:00.220
+on how fast your
+internet connection is
+
+00:02:00.220 --> 00:02:01.820
+and how fast your machine is.
+
+00:02:01.820 --> 00:02:04.070
+All right, now that we have
+the Polymer CLI installed,
+
+00:02:04.070 --> 00:02:06.190
+we can test it running
+the polymer command.
+
+00:02:06.190 --> 00:02:09.039
+And you should see a really
+nice logo right there.
+
+00:02:09.039 --> 00:02:10.660
+Next we want to
+install Bower, which
+
+00:02:10.660 --> 00:02:12.370
+is a package manager
+that we typically
+
+00:02:12.370 --> 00:02:14.380
+use with Polymer projects.
+
+00:02:14.380 --> 00:02:16.110
+So we're going to npm install.
+
+00:02:16.110 --> 00:02:19.120
+We're going to install it
+globally using the dash g flag.
+
+00:02:19.120 --> 00:02:21.732
+And it's just simply bower.
+
+00:02:21.732 --> 00:02:23.190
+We're going to
+speed everything up,
+
+00:02:23.190 --> 00:02:25.340
+but this should actually
+take a few minutes.
+
+00:02:25.340 --> 00:02:27.950
+So now we have all the command
+line interfaces installed.
+
+00:02:27.950 --> 00:02:31.240
+Now let's get started with
+our IDE and text editors.
+
+00:02:31.240 --> 00:02:33.760
+So you can use,
+typically, almost any IDE
+
+00:02:33.760 --> 00:02:35.560
+to develop with Polymer.
+
+00:02:35.560 --> 00:02:39.100
+I personally like VS Code.
+
+00:02:39.100 --> 00:02:41.320
+And in VS Code, they
+have a nice part
+
+00:02:41.320 --> 00:02:42.820
+where they have extensions.
+
+00:02:42.820 --> 00:02:46.450
+In here you can search
+for "Polymer IDE."
+
+00:02:46.450 --> 00:02:48.990
+And it's typically the first
+one by the Polymer team.
+
+00:02:48.990 --> 00:02:53.640
+Hit Install, and then
+reload your project.
+
+00:02:53.640 --> 00:02:55.300
+All right, now we're all set up.
+
+00:02:55.300 --> 00:02:57.370
+Let's initialize a project.
+
+00:02:57.370 --> 00:03:01.095
+So here I'm going to go to my
+desktop, cd to the desktop.
+
+00:03:01.095 --> 00:03:03.310
+Then I'm going to
+make a directory.
+
+00:03:03.310 --> 00:03:06.722
+And we're going to call
+it "Polycast checklist."
+
+00:03:10.170 --> 00:03:13.020
+Now let's cd into that.
+
+00:03:13.020 --> 00:03:15.620
+And now just double-check
+we're in there.
+
+00:03:15.620 --> 00:03:17.740
+And now let's
+initialize our project.
+
+00:03:17.740 --> 00:03:22.620
+So polymer init is the command
+to initialize your project.
+
+00:03:22.620 --> 00:03:23.550
+Just hit Enter there.
+
+00:03:23.550 --> 00:03:25.740
+You'll get a bunch
+of options to create
+
+00:03:25.740 --> 00:03:28.470
+a Polymer 2 element, an
+application starter kit,
+
+00:03:28.470 --> 00:03:29.610
+et cetera.
+
+00:03:29.610 --> 00:03:31.392
+We'll go with an
+element for now.
+
+00:03:31.392 --> 00:03:33.600
+The element name is going
+to be "Polycast checklist,"
+
+00:03:33.600 --> 00:03:36.720
+so you can just skip
+through this and hit Enter.
+
+00:03:36.720 --> 00:03:39.180
+For now we'll skip
+the description.
+
+00:03:39.180 --> 00:03:42.730
+And it's going to bower
+install all the dependencies.
+
+00:03:42.730 --> 00:03:44.280
+Cool, looks like we're set up.
+
+00:03:44.280 --> 00:03:47.650
+Now, one last thing-- polymer
+serve will start up a server
+
+00:03:47.650 --> 00:03:52.520
+and actually show what
+you have running so far.
+
+00:03:52.520 --> 00:03:54.370
+So here we want to
+copy the second one,
+
+00:03:54.370 --> 00:03:57.980
+because we're creating an
+element or reusable component.
+
+00:03:57.980 --> 00:04:02.120
+So copy that, go over to
+my browser, paste it in.
+
+00:04:02.120 --> 00:04:04.520
+And ta-da, we're running.
+
+00:04:04.520 --> 00:04:05.170
+So that's it.
+
+00:04:05.170 --> 00:04:06.940
+We've got our tools installed
+and our live environment
+
+00:04:06.940 --> 00:04:07.440
+running.
+
+00:04:07.440 --> 00:04:09.370
+In the next video, we'll
+familiarize ourselves
+
+00:04:09.370 --> 00:04:10.620
+with our project's layout.
+
+00:04:10.620 --> 00:04:11.430
+See you soon.
+
+00:04:11.430 --> 00:04:14.780
+[MUSIC PLAYING]
+

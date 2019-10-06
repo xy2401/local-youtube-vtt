@@ -1,0 +1,271 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.820
+[MUSIC PLAYING]
+
+00:00:06.590 --> 00:00:10.700
+SPEAKER 1: So usually, we
+work in intervals of years.
+
+00:00:10.700 --> 00:00:11.370
+SPEAKER 2: Yes.
+
+00:00:11.370 --> 00:00:13.560
+SPEAKER 1: And our current
+interval is about to end.
+
+00:00:13.560 --> 00:00:15.100
+And we called it 2017.
+
+00:00:15.100 --> 00:00:17.660
+And so I was thinking,
+my next until interval,
+
+00:00:17.660 --> 00:00:19.120
+what is it going to be about?
+
+00:00:19.120 --> 00:00:20.720
+SPEAKER 2: It's
+going to be 2018.
+
+00:00:20.720 --> 00:00:23.390
+SPEAKER 1: It is going to
+be 20-- yes, like a plus 1.
+
+00:00:23.390 --> 00:00:25.632
+And so I thought I
+would tell you my topic.
+
+00:00:25.632 --> 00:00:26.840
+And you can ask me questions.
+
+00:00:26.840 --> 00:00:30.210
+I will have to make, explain
+it to you within two minutes.
+
+00:00:30.210 --> 00:00:32.409
+SPEAKER 2: Within
+two minutes, OK, go.
+
+00:00:32.409 --> 00:00:33.652
+SPEAKER 1: Workers.
+
+00:00:33.652 --> 00:00:34.860
+SPEAKER 2: I'm aware of them.
+
+00:00:34.860 --> 00:00:36.090
+SPEAKER 1: They're existing.
+
+00:00:36.090 --> 00:00:37.756
+They have been existing
+for a long time.
+
+00:00:37.756 --> 00:00:40.960
+But I think we need
+to start using them.
+
+00:00:40.960 --> 00:00:44.547
+SPEAKER 2: Service workers,
+I've been using them.
+
+00:00:44.547 --> 00:00:46.130
+SPEAKER 1: Service
+worker is not-- oh,
+
+00:00:46.130 --> 00:00:48.350
+so there's workers
+as a group, I guess.
+
+00:00:48.350 --> 00:00:50.140
+But I was talking
+about the web workers,
+
+00:00:50.140 --> 00:00:53.810
+the way of the web to giving
+you actual parallelism,
+
+00:00:53.810 --> 00:00:54.680
+to multi-threading.
+
+00:00:54.680 --> 00:00:55.700
+SPEAKER 2: A dedicated worker.
+
+00:00:55.700 --> 00:00:57.500
+SPEAKER 1: A dedicated
+worker for your site.
+
+00:00:57.500 --> 00:00:58.083
+SPEAKER 2: OK.
+
+00:00:58.083 --> 00:01:00.290
+SPEAKER 1: And I
+think we should be
+
+00:01:00.290 --> 00:01:04.010
+looking at the native
+platforms like iOS and Android.
+
+00:01:04.010 --> 00:01:06.980
+And what they've been
+doing for quite a long time
+
+00:01:06.980 --> 00:01:10.160
+is doing only UI work
+on the main thread
+
+00:01:10.160 --> 00:01:13.230
+and putting everything
+else in a different thread.
+
+00:01:13.230 --> 00:01:14.735
+SPEAKER 2: OK, right.
+
+00:01:14.735 --> 00:01:16.352
+I mean, are we not
+doing that already?
+
+00:01:16.352 --> 00:01:17.810
+Some people are
+doing that already.
+
+00:01:17.810 --> 00:01:20.268
+I've done that, what I'm saying
+is, I've done that already.
+
+00:01:20.268 --> 00:01:22.466
+I have done that already.
+
+00:01:22.466 --> 00:01:24.090
+SPEAKER 1: There have
+been experiments.
+
+00:01:24.090 --> 00:01:26.780
+But I think it's
+everything but mainstream.
+
+00:01:26.780 --> 00:01:28.530
+And I think it needs
+to become mainstream.
+
+00:01:28.530 --> 00:01:31.580
+Because for the
+past couple years,
+
+00:01:31.580 --> 00:01:33.050
+the problem has
+always been jank,
+
+00:01:33.050 --> 00:01:35.690
+people doing too much JavaScript
+on the main thread and doing
+
+00:01:35.690 --> 00:01:37.640
+animations wrong and whatnot.
+
+00:01:37.640 --> 00:01:40.097
+And if we could just move the
+expense of JavaScript code
+
+00:01:40.097 --> 00:01:42.680
+to a different thread and have
+some really good parents on how
+
+00:01:42.680 --> 00:01:46.970
+to still interact with
+the UI part of your app,
+
+00:01:46.970 --> 00:01:49.970
+you would be free to just
+write some blocking code,
+
+00:01:49.970 --> 00:01:54.060
+just do some expensive
+JSON object serialization.
+
+00:01:54.060 --> 00:01:57.060
+And it wouldn't really affect
+the performance of your app.
+
+00:01:57.060 --> 00:01:58.685
+SPEAKER 2: So a big
+part of the problem
+
+00:01:58.685 --> 00:02:01.212
+is that communication between
+the main page and the worker.
+
+00:02:01.212 --> 00:02:02.670
+Because that's so
+clumsy right now.
+
+00:02:02.670 --> 00:02:03.710
+SPEAKER 1: It's post message.
+
+00:02:03.710 --> 00:02:06.210
+If you spend it with worker,
+you get post message, which you
+
+00:02:06.210 --> 00:02:07.780
+can send JSON objects at best.
+
+00:02:07.780 --> 00:02:09.360
+SPEAKER 2: We have shared
+array buffer as well,
+
+00:02:09.360 --> 00:02:11.443
+which is a way you can
+re-invent all of the buffer
+
+00:02:11.443 --> 00:02:13.347
+over on problems,
+but on the web.
+
+00:02:13.347 --> 00:02:14.430
+SPEAKER 1: Which is great.
+
+00:02:14.430 --> 00:02:16.020
+I've been working on
+things to make it easier,
+
+00:02:16.020 --> 00:02:17.520
+which, one of the
+things is Comlink.
+
+00:02:17.520 --> 00:02:19.862
+But I think there's lots
+of explorations to do.
+
+00:02:19.862 --> 00:02:22.070
+And it's definitely worth
+doing because it would just
+
+00:02:22.070 --> 00:02:25.170
+make the web feel
+good by default.
+
+00:02:25.170 --> 00:02:26.799
+And I think that
+would be really nice.
+
+00:02:26.799 --> 00:02:28.340
+SPEAKER 2: Less jank
+is a good thing.
+
+00:02:28.340 --> 00:02:31.240
+SPEAKER 1: That is a good thing.
+
+00:02:31.240 --> 00:02:33.080
+[MUSIC - THEME, "12
+DAYS OF CHRISTMAS"]
+
+00:02:33.080 --> 00:02:34.520
+[CHUCKLING]
+
+00:02:34.520 --> 00:02:36.620
+SPEAKER 2: And we're done.
+
+00:02:36.620 --> 00:02:39.970
+[MUSIC PLAYING]
+

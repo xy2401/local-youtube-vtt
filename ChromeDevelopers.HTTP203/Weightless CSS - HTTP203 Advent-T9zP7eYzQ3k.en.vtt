@@ -1,0 +1,272 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.996
+[MUSIC PLAYING]
+
+00:00:06.487 --> 00:00:08.860
+JAKE: We are in the
+month of Christmas.
+
+00:00:08.860 --> 00:00:11.550
+But that is also the
+last month of 2017.
+
+00:00:11.550 --> 00:00:13.936
+So we're thinking towards
+2018 and the things that
+
+00:00:13.936 --> 00:00:15.810
+are going to be landing
+in browsers or things
+
+00:00:15.810 --> 00:00:17.410
+we'll be thinking
+about in that year.
+
+00:00:17.410 --> 00:00:18.990
+So I want you to
+spend the next two
+
+00:00:18.990 --> 00:00:20.970
+minutes introducing a subject.
+
+00:00:20.970 --> 00:00:22.230
+You can quiz me about it.
+
+00:00:22.230 --> 00:00:24.646
+And we'll see if we can come
+up with something that we can
+
+00:00:24.646 --> 00:00:25.930
+actually publish on YouTube.
+
+00:00:25.930 --> 00:00:26.250
+All right.
+
+00:00:26.250 --> 00:00:26.750
+Here we go.
+
+00:00:26.750 --> 00:00:27.510
+Two minutes.
+
+00:00:27.510 --> 00:00:29.760
+I want to talk about
+weightless CSS.
+
+00:00:29.760 --> 00:00:31.345
+SURMA: Weightless?
+
+00:00:31.345 --> 00:00:33.250
+JAKE: That is one
+of the words I said.
+
+00:00:33.250 --> 00:00:34.690
+The other one is CSS.
+
+00:00:34.690 --> 00:00:36.500
+SURMA: So CSS without weight.
+
+00:00:36.500 --> 00:00:37.320
+JAKE: Yes.
+
+00:00:37.320 --> 00:00:39.334
+That is a good reversal
+of what I said.
+
+00:00:39.334 --> 00:00:40.250
+SURMA: What is weight?
+
+00:00:40.250 --> 00:00:41.100
+JAKE: OK.
+
+00:00:41.100 --> 00:00:45.450
+So when you write A CSS
+selector, it has specificity.
+
+00:00:45.450 --> 00:00:46.420
+SURMA: That is correct.
+
+00:00:46.420 --> 00:00:47.195
+JAKE: Yes.
+
+00:00:47.195 --> 00:00:49.516
+Which I could call
+weight if I didn't
+
+00:00:49.516 --> 00:00:51.640
+want to risk trying to
+pronounce specificity again.
+
+00:00:51.640 --> 00:00:52.310
+SURMA: Oh.
+
+00:00:52.310 --> 00:00:54.210
+So you mean
+specificity-less CSS?
+
+00:00:54.210 --> 00:00:58.140
+JAKE: Specificity-less
+CSS is exactly--
+
+00:00:58.140 --> 00:01:00.600
+can you see now why I
+went for weightless CSS?
+
+00:01:00.600 --> 00:01:07.854
+So this is a proposal that
+was agreed on in TPAC in 2017.
+
+00:01:07.854 --> 00:01:09.520
+And [INAUDIBLE] was
+telling me about it.
+
+00:01:09.520 --> 00:01:12.180
+And the idea was that-- they
+haven't settled on a name yet,
+
+00:01:12.180 --> 00:01:15.350
+but it would be
+something like is,
+
+00:01:15.350 --> 00:01:16.850
+in the same way
+that you would use--
+
+00:01:16.850 --> 00:01:18.810
+SURMA: Oh, like colon
+is, and then a function.
+
+00:01:18.810 --> 00:01:19.800
+JAKE: Yes.
+
+00:01:19.800 --> 00:01:20.890
+Exactly that.
+
+00:01:20.890 --> 00:01:25.140
+And inside you could put
+like a simple selector,
+
+00:01:25.140 --> 00:01:27.195
+like dot [INAUDIBLE].
+
+00:01:27.195 --> 00:01:31.750
+SURMA: So that would make
+a selector make match
+
+00:01:31.750 --> 00:01:33.490
+without increasing
+its specificity.
+
+00:01:33.490 --> 00:01:34.780
+JAKE: Exactly that.
+
+00:01:34.780 --> 00:01:36.446
+So you'd be able to
+use all of the stuff
+
+00:01:36.446 --> 00:01:39.670
+that you can use outside
+is, or whatever it's called,
+
+00:01:39.670 --> 00:01:42.230
+but it would have
+like zero specificity.
+
+00:01:42.230 --> 00:01:42.925
+SURMA: Why?
+
+00:01:42.925 --> 00:01:46.030
+JAKE: Because this is the
+CSS working group's attempt
+
+00:01:46.030 --> 00:01:49.630
+to meet people halfway that
+don't enjoy the cascade so
+
+00:01:49.630 --> 00:01:50.245
+much.
+
+00:01:50.245 --> 00:01:51.370
+SURMA: Oh, I see.
+
+00:01:51.370 --> 00:01:53.470
+SPEAKER 1: So one of the
+things that complaints--
+
+00:01:53.470 --> 00:01:55.870
+or one of the reasons
+they've seen people go to CSS
+
+00:01:55.870 --> 00:01:58.589
+and JavaScript is
+that this whole--
+
+00:01:58.589 --> 00:02:00.505
+SURMA: Just attach it
+to the element directly.
+
+00:02:00.505 --> 00:02:01.670
+JAKE: Exactly.
+
+00:02:01.670 --> 00:02:03.330
+Because then the
+model's a lot simpler.
+
+00:02:03.330 --> 00:02:05.496
+So it's, can they bring
+that to regular style sheets
+
+00:02:05.496 --> 00:02:08.845
+as an option where just things
+will be done sequentially?
+
+00:02:08.845 --> 00:02:12.322
+SURMA: Can I use child
+selectors in the is thing?
+
+00:02:12.322 --> 00:02:13.280
+JAKE: I don't think so.
+
+00:02:13.280 --> 00:02:15.340
+SURMA: Because that was one
+the long standing things
+
+00:02:15.340 --> 00:02:17.140
+that people wanted to,
+that if you contain
+
+00:02:17.140 --> 00:02:21.249
+a thing of that type, then
+style me the other way around,
+
+00:02:21.249 --> 00:02:21.790
+or something.
+
+00:02:21.790 --> 00:02:22.290
+JAKE: No.
+
+00:02:22.290 --> 00:02:26.364
+It would just be simple
+selectors but no specificity.
+
+00:02:30.076 --> 00:02:32.500
+SURMA: We're out of time.
+
+00:02:32.500 --> 00:02:35.900
+It's a template
+proposal from Apple.
+
+00:02:35.900 --> 00:02:37.430
+JAKE: Oh, Apple
+template proposal.
+
+00:02:37.430 --> 00:02:38.888
+SURMA: The Apple
+template proposal.
+
+00:02:38.888 --> 00:02:41.980
+JAKE: So like what
+have they proposed?
+

@@ -1,0 +1,503 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.208
+SAM THOROGOOD: Hey, everyone.
+
+00:00:01.208 --> 00:00:01.910
+It's Sam here.
+
+00:00:01.910 --> 00:00:02.830
+CHRIS JOEL: And I'm Chris.
+
+00:00:02.830 --> 00:00:04.190
+SAM THOROGOOD: So Chris
+is from the Polymer team.
+
+00:00:04.190 --> 00:00:06.320
+And on today's Santa
+Tracker, Developer Diary,
+
+00:00:06.320 --> 00:00:08.861
+we're going to talk a little
+bit about how Santa Tracker uses
+
+00:00:08.861 --> 00:00:10.260
+Polymer to be more productive.
+
+00:00:10.260 --> 00:00:11.030
+So what's Polymer?
+
+00:00:11.030 --> 00:00:12.170
+CHRIS JOEL: So
+Polymer is a library
+
+00:00:12.170 --> 00:00:14.600
+that helps you take advantage
+of some of the latest browser
+
+00:00:14.600 --> 00:00:16.000
+features, such as
+web components.
+
+00:00:16.000 --> 00:00:17.000
+SAM THOROGOOD: Cool.
+
+00:00:17.000 --> 00:00:18.890
+And so we've been using Santa
+for quite a few years now.
+
+00:00:18.890 --> 00:00:20.610
+We use it in a bunch
+of different ways.
+
+00:00:20.610 --> 00:00:23.440
+So in a broad sense, the
+whole site is basically
+
+00:00:23.440 --> 00:00:25.190
+in one custom element,
+one Polymer element
+
+00:00:25.190 --> 00:00:26.115
+called Santa App.
+
+00:00:26.115 --> 00:00:27.740
+But actually, that
+then contains things
+
+00:00:27.740 --> 00:00:29.530
+like Santa Chrome,
+which is really
+
+00:00:29.530 --> 00:00:31.020
+our UI around the
+edge of the page.
+
+00:00:31.020 --> 00:00:33.480
+You see the kind of toolbar
+and things like that.
+
+00:00:33.480 --> 00:00:36.050
+We've also got some elements
+that you never actually see.
+
+00:00:36.050 --> 00:00:39.300
+So the Santa Tracker router
+handles the changes in the URL
+
+00:00:39.300 --> 00:00:39.890
+up here.
+
+00:00:39.890 --> 00:00:42.740
+So whenever we click on a
+scene, like this boatload scene,
+
+00:00:42.740 --> 00:00:44.659
+this router is actually
+listening to the URL
+
+00:00:44.659 --> 00:00:46.700
+and then bonding that
+route back to the Santa App
+
+00:00:46.700 --> 00:00:48.360
+so it can change the
+scene being loaded.
+
+00:00:48.360 --> 00:00:49.020
+CHRIS JOEL: That's really cool.
+
+00:00:49.020 --> 00:00:50.500
+So you made those
+custom elements.
+
+00:00:50.500 --> 00:00:51.530
+SAM THOROGOOD: Yeah,
+and even though there's
+
+00:00:51.530 --> 00:00:54.240
+no visual representation, I
+think it's really interesting.
+
+00:00:54.240 --> 00:00:55.430
+And then we actually
+lazyload that scene,
+
+00:00:55.430 --> 00:00:56.390
+which is really cool.
+
+00:00:56.390 --> 00:00:57.080
+CHRIS JOEL: Very cool.
+
+00:00:57.080 --> 00:00:59.030
+SAM THOROGOOD: So when we're
+loading and running Polymer,
+
+00:00:59.030 --> 00:00:59.780
+how do we test it?
+
+00:00:59.780 --> 00:01:01.151
+How do we see how fast it loads?
+
+00:01:01.151 --> 00:01:03.650
+CHRIS JOEL: Well, I always like
+to use the built-in profiler
+
+00:01:03.650 --> 00:01:04.637
+in Chrome dev tools.
+
+00:01:04.637 --> 00:01:05.470
+SAM THOROGOOD: Cool.
+
+00:01:05.470 --> 00:01:08.060
+CHRIS JOEL: So in order to do
+that, usually what I do first
+
+00:01:08.060 --> 00:01:10.790
+is I go to the application tab
+and I clear all my site data.
+
+00:01:10.790 --> 00:01:11.665
+SAM THOROGOOD: Great.
+
+00:01:11.665 --> 00:01:13.910
+That's good, because we
+have a lot of caching
+
+00:01:13.910 --> 00:01:15.646
+and a lot of
+offline ready stuff.
+
+00:01:15.646 --> 00:01:17.270
+So we want to clear
+all those resources
+
+00:01:17.270 --> 00:01:19.270
+so it feels like you're
+loading it for the first time.
+
+00:01:19.270 --> 00:01:20.030
+CHRIS JOEL: Yep.
+
+00:01:20.030 --> 00:01:22.010
+And then you go over to
+your performance tab,
+
+00:01:22.010 --> 00:01:23.240
+and you click this button--
+
+00:01:23.240 --> 00:01:24.965
+start profiling and reload page.
+
+00:01:24.965 --> 00:01:26.090
+SAM THOROGOOD: Sounds good.
+
+00:01:26.090 --> 00:01:28.048
+CHRIS JOEL: So the profile
+takes a few seconds.
+
+00:01:32.481 --> 00:01:34.730
+And then when it's done, you
+get a lot of nice things.
+
+00:01:34.730 --> 00:01:36.188
+So at the top here,
+I actually have
+
+00:01:36.188 --> 00:01:38.430
+a timeline that shows
+the painting of the page
+
+00:01:38.430 --> 00:01:40.050
+as it's loading in.
+
+00:01:40.050 --> 00:01:42.350
+Underneath that, I can see
+all of my network resources.
+
+00:01:42.350 --> 00:01:43.620
+So I can get a
+sense of when they
+
+00:01:43.620 --> 00:01:45.495
+finish loading in relative
+to all the JavaScript that's
+
+00:01:45.495 --> 00:01:45.630
+executing.
+
+00:01:45.630 --> 00:01:47.921
+SAM THOROGOOD: And we're
+scrolling the mouse wheel here
+
+00:01:47.921 --> 00:01:49.734
+to zoom in and out,
+to deep dive or not.
+
+00:01:49.734 --> 00:01:51.150
+CHRIS JOEL: One
+of the things I've
+
+00:01:51.150 --> 00:01:53.670
+added that's a little special
+is I've used the standard user
+
+00:01:53.670 --> 00:01:56.190
+timing API, and I've
+instrumented all of the custom
+
+00:01:56.190 --> 00:01:57.460
+elements on the app.
+
+00:01:57.460 --> 00:02:00.030
+So here you can see the Santa
+App element was created.
+
+00:02:00.030 --> 00:02:01.830
+And it took about
+250 milliseconds.
+
+00:02:01.830 --> 00:02:03.010
+SAM THOROGOOD: That's
+the whole site, I guess.
+
+00:02:03.010 --> 00:02:03.760
+CHRIS JOEL: Right.
+
+00:02:03.760 --> 00:02:06.270
+That's the entire site's
+execution lifecycle.
+
+00:02:06.270 --> 00:02:09.937
+And then underneath that, I can
+see things like, oh, iron icon.
+
+00:02:09.937 --> 00:02:12.520
+SAM THOROGOOD: Why does the icon
+take 26 milliseconds to load?
+
+00:02:12.520 --> 00:02:13.320
+CHRIS JOEL: I don't
+know, but that's probably
+
+00:02:13.320 --> 00:02:14.400
+something we should look into.
+
+00:02:14.400 --> 00:02:14.940
+SAM THOROGOOD:
+Yeah, interesting.
+
+00:02:14.940 --> 00:02:16.560
+CHRIS JOEL: You can see all
+of the children elements
+
+00:02:16.560 --> 00:02:18.060
+inside of Santa App
+are represented here
+
+00:02:18.060 --> 00:02:18.750
+in this Flame chart.
+
+00:02:18.750 --> 00:02:20.830
+So I can get a sense of which
+ones are most expensive.
+
+00:02:20.830 --> 00:02:22.170
+SAM THOROGOOD: So you would
+see this normally anyway,
+
+00:02:22.170 --> 00:02:23.760
+but if you look in
+the description below,
+
+00:02:23.760 --> 00:02:25.110
+you'll see some
+resources that Chris
+
+00:02:25.110 --> 00:02:27.000
+has written to help
+you actually just label
+
+00:02:27.000 --> 00:02:28.050
+the elements properly.
+
+00:02:28.050 --> 00:02:29.430
+Normally, you'd just see
+the functions themselves
+
+00:02:29.430 --> 00:02:31.804
+and not know which element
+it's actually being called on.
+
+00:02:31.804 --> 00:02:32.820
+So that's really great.
+
+00:02:32.820 --> 00:02:33.960
+So this year, one
+thing we're going to do
+
+00:02:33.960 --> 00:02:35.126
+is actually upgrade Polymer.
+
+00:02:35.126 --> 00:02:37.440
+So we're on, I think,
+version 1.7 right now.
+
+00:02:37.440 --> 00:02:39.060
+We used to be on
+0.5 back in the day,
+
+00:02:39.060 --> 00:02:41.130
+and now we're upgrading to 1.10.
+
+00:02:41.130 --> 00:02:43.221
+And the goal of 1.10
+is then to flip to 2.0.
+
+00:02:43.221 --> 00:02:44.970
+There's a lot of
+versions floating around.
+
+00:02:44.970 --> 00:02:45.640
+What does this mean?
+
+00:02:45.640 --> 00:02:46.556
+Why are we doing this?
+
+00:02:46.556 --> 00:02:49.860
+CHRIS JOEL: Yeah, so the upgrade
+from 1.10 to 2.0 is going
+
+00:02:49.860 --> 00:02:52.770
+to get you in a place where
+you can start building custom
+
+00:02:52.770 --> 00:02:55.960
+elements using
+standard ES6 classes.
+
+00:02:55.960 --> 00:02:58.980
+The Polymer, as any open source
+project, is evolving over time.
+
+00:02:58.980 --> 00:03:01.260
+And now we're trying to
+put our users in a place
+
+00:03:01.260 --> 00:03:02.760
+where they can easily
+start taking advantage
+
+00:03:02.760 --> 00:03:05.265
+of some of the latest JavaScript
+features in the web platform.
+
+00:03:05.265 --> 00:03:05.370
+SAM THOROGOOD: Right.
+
+00:03:05.370 --> 00:03:07.140
+So previously, you
+wrote a Polymer function
+
+00:03:07.140 --> 00:03:08.056
+and gave it an object.
+
+00:03:08.056 --> 00:03:10.162
+And actually, now, you
+write a regular class name
+
+00:03:10.162 --> 00:03:12.120
+that you inherit from a
+Polymer element, right?
+
+00:03:12.120 --> 00:03:12.620
+CHRIS JOEL: Yep.
+
+00:03:12.620 --> 00:03:15.161
+SAM THOROGOOD: Yeah, which is
+much more idiomatic these days.
+
+00:03:15.161 --> 00:03:17.869
+CHRIS JOEL: And it's very
+important to migrate up to 2.0,
+
+00:03:17.869 --> 00:03:19.410
+because it puts you
+on the trajectory
+
+00:03:19.410 --> 00:03:20.910
+to later versions of Polymer.
+
+00:03:20.910 --> 00:03:23.070
+We have Polymer
+3.0 in preview now.
+
+00:03:23.070 --> 00:03:26.160
+And that's going to enable you
+to use things like JavaScript
+
+00:03:26.160 --> 00:03:30.010
+modules and also get onto
+the NPM package manager
+
+00:03:30.010 --> 00:03:31.590
+for distributing your--
+
+00:03:31.590 --> 00:03:32.100
+SAM THOROGOOD: And
+by the time you're
+
+00:03:32.100 --> 00:03:33.270
+watching this we may
+already be there.
+
+00:03:33.270 --> 00:03:35.020
+So check it out and
+have a look at Polymer
+
+00:03:35.020 --> 00:03:36.970
+and see how we're using
+it in Santa Tracker.
+
+00:03:36.970 --> 00:03:40.337
+So that's pretty much all
+we have to talk about today.
+
+00:03:40.337 --> 00:03:41.170
+Thanks for watching.
+
+00:03:41.170 --> 00:03:42.030
+Remember, you can
+always go check out
+
+00:03:42.030 --> 00:03:44.470
+the source code for Santa
+Tracker and have a look at it
+
+00:03:44.470 --> 00:03:46.962
+yourself and build
+this on your own time.
+
+00:03:46.962 --> 00:03:49.420
+And yeah, thank you, Chris,
+for being here as a guest star.
+
+00:03:49.420 --> 00:03:50.150
+CHRIS JOEL: Yep.
+
+00:03:50.150 --> 00:03:51.360
+Yay.
+
+00:03:51.360 --> 00:03:52.497
+SAM THOROGOOD: See you.
+
+00:03:52.497 --> 00:03:54.830
+You can subscribe to the
+Google Chrome Developer channel
+
+00:03:54.830 --> 00:03:58.870
+down here or check out some
+other great videos along here.
+

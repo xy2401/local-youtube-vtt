@@ -1,0 +1,4296 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:04.460 align:start position:0%
+ 
+Hey<00:00:00.149><c> I</c><00:00:00.329><c> think</c><00:00:00.630><c> it's</c><00:00:00.810><c> near</c><00:00:01.800><c> enough</c><00:00:02.129><c> court</c><00:00:02.429><c> to</c><00:00:03.470><c> so</c>
+
+00:00:04.460 --> 00:00:04.470 align:start position:0%
+Hey I think it's near enough court to so
+ 
+
+00:00:04.470 --> 00:00:09.560 align:start position:0%
+Hey I think it's near enough court to so
+I'll<00:00:04.589><c> start</c><00:00:05.930><c> so</c><00:00:06.930><c> this</c><00:00:07.500><c> talk</c><00:00:07.740><c> is</c><00:00:07.770><c> is</c><00:00:08.519><c> Jakarta</c><00:00:09.420><c> EE</c>
+
+00:00:09.560 --> 00:00:09.570 align:start position:0%
+I'll start so this talk is is Jakarta EE
+ 
+
+00:00:09.570 --> 00:00:13.730 align:start position:0%
+I'll start so this talk is is Jakarta EE
+relevant<00:00:10.230><c> to</c><00:00:10.290><c> IOT</c><00:00:10.910><c> so</c><00:00:12.290><c> the</c><00:00:13.290><c> answer</c><00:00:13.500><c> in</c><00:00:13.620><c> my</c>
+
+00:00:13.730 --> 00:00:13.740 align:start position:0%
+relevant to IOT so the answer in my
+ 
+
+00:00:13.740 --> 00:00:14.720 align:start position:0%
+relevant to IOT so the answer in my
+views<00:00:14.009><c> is</c><00:00:14.219><c> yes</c>
+
+00:00:14.720 --> 00:00:14.730 align:start position:0%
+views is yes
+ 
+
+00:00:14.730 --> 00:00:20.720 align:start position:0%
+views is yes
+what's<00:00:15.660><c> the</c><00:00:15.750><c> end</c><00:00:15.839><c> of</c><00:00:15.960><c> the</c><00:00:16.020><c> talk</c><00:00:17.000><c> so</c><00:00:19.580><c> welcome</c><00:00:20.580><c> to</c>
+
+00:00:20.720 --> 00:00:20.730 align:start position:0%
+what's the end of the talk so welcome to
+ 
+
+00:00:20.730 --> 00:00:22.099 align:start position:0%
+what's the end of the talk so welcome to
+is<00:00:20.850><c> describe</c><00:00:21.240><c> a</c><00:00:21.330><c> use</c><00:00:21.480><c> case</c><00:00:21.689><c> that</c><00:00:21.900><c> you</c><00:00:21.990><c> could</c>
+
+00:00:22.099 --> 00:00:22.109 align:start position:0%
+is describe a use case that you could
+ 
+
+00:00:22.109 --> 00:00:27.859 align:start position:0%
+is describe a use case that you could
+use<00:00:22.350><c> for</c><00:00:23.359><c> IOT</c><00:00:24.359><c> in</c><00:00:24.949><c> and</c><00:00:25.949><c> using</c><00:00:26.939><c> Jakarta</c><00:00:27.330><c> EE</c><00:00:27.449><c> I</c>
+
+00:00:27.859 --> 00:00:27.869 align:start position:0%
+use for IOT in and using Jakarta EE I
+ 
+
+00:00:27.869 --> 00:00:31.609 align:start position:0%
+use for IOT in and using Jakarta EE I
+then<00:00:28.439><c> have</c><00:00:28.710><c> a</c><00:00:29.699><c> demonstration</c><00:00:30.660><c> setup</c><00:00:31.140><c> which</c>
+
+00:00:31.609 --> 00:00:31.619 align:start position:0%
+then have a demonstration setup which
+ 
+
+00:00:31.619 --> 00:00:33.650 align:start position:0%
+then have a demonstration setup which
+are<00:00:31.859><c> managed</c><00:00:32.130><c> to</c><00:00:32.340><c> get</c><00:00:32.969><c> working</c><00:00:33.149><c> a</c><00:00:33.360><c> last</c><00:00:33.570><c> minute</c>
+
+00:00:33.650 --> 00:00:33.660 align:start position:0%
+are managed to get working a last minute
+ 
+
+00:00:33.660 --> 00:00:37.299 align:start position:0%
+are managed to get working a last minute
+after<00:00:33.960><c> forgetting</c><00:00:34.320><c> my</c><00:00:34.380><c> power</c><00:00:34.590><c> supplies</c><00:00:34.950><c> and</c>
+
+00:00:37.299 --> 00:00:37.309 align:start position:0%
+after forgetting my power supplies and
+ 
+
+00:00:37.309 --> 00:00:39.799 align:start position:0%
+after forgetting my power supplies and
+then<00:00:38.309><c> we'll</c><00:00:38.489><c> go</c><00:00:38.610><c> through</c><00:00:38.640><c> basically</c><00:00:39.480><c> the</c><00:00:39.600><c> code</c>
+
+00:00:39.799 --> 00:00:39.809 align:start position:0%
+then we'll go through basically the code
+ 
+
+00:00:39.809 --> 00:00:45.229 align:start position:0%
+then we'll go through basically the code
+that<00:00:40.140><c> builds</c><00:00:40.350><c> the</c><00:00:43.100><c> demonstration</c><00:00:44.100><c> so</c><00:00:44.340><c> just</c>
+
+00:00:45.229 --> 00:00:45.239 align:start position:0%
+that builds the demonstration so just
+ 
+
+00:00:45.239 --> 00:00:46.970 align:start position:0%
+that builds the demonstration so just
+looking<00:00:45.390><c> at</c><00:00:45.600><c> code</c><00:00:45.870><c> snippets</c><00:00:46.289><c> from</c><00:00:46.469><c> Jakarta</c><00:00:46.860><c> EE</c>
+
+00:00:46.970 --> 00:00:46.980 align:start position:0%
+looking at code snippets from Jakarta EE
+ 
+
+00:00:46.980 --> 00:00:50.979 align:start position:0%
+looking at code snippets from Jakarta EE
+and<00:00:48.079><c> showing</c><00:00:49.079><c> how</c><00:00:49.289><c> that</c><00:00:49.350><c> sort</c><00:00:50.219><c> of</c><00:00:50.309><c> builds</c>
+
+00:00:50.979 --> 00:00:50.989 align:start position:0%
+and showing how that sort of builds
+ 
+
+00:00:50.989 --> 00:00:54.110 align:start position:0%
+and showing how that sort of builds
+builds<00:00:51.989><c> what</c><00:00:52.739><c> we're</c><00:00:52.860><c> showing</c><00:00:52.980><c> for</c><00:00:53.820><c> a</c><00:00:53.879><c> desk</c>
+
+00:00:54.110 --> 00:00:54.120 align:start position:0%
+builds what we're showing for a desk
+ 
+
+00:00:54.120 --> 00:00:56.000 align:start position:0%
+builds what we're showing for a desk
+here<00:00:54.329><c> locally</c><00:00:54.719><c> it's</c><00:00:54.840><c> a</c><00:00:54.899><c> small</c><00:00:55.170><c> room</c><00:00:55.379><c> so</c><00:00:55.590><c> you'll</c>
+
+00:00:56.000 --> 00:00:56.010 align:start position:0%
+here locally it's a small room so you'll
+ 
+
+00:00:56.010 --> 00:01:06.890 align:start position:0%
+here locally it's a small room so you'll
+be<00:00:56.129><c> able</c><00:00:56.190><c> to</c><00:00:56.370><c> see</c><00:01:00.739><c> so</c><00:01:04.549><c> this</c><00:01:05.549><c> is</c><00:01:05.729><c> this</c><00:01:06.689><c> is</c><00:01:06.869><c> a</c>
+
+00:01:06.890 --> 00:01:06.900 align:start position:0%
+be able to see so this is this is a
+ 
+
+00:01:06.900 --> 00:01:11.000 align:start position:0%
+be able to see so this is this is a
+demonstration<00:01:07.200><c> that</c><00:01:09.290><c> we</c><00:01:10.290><c> have</c><00:01:10.470><c> set</c><00:01:10.680><c> up</c><00:01:10.860><c> it's</c>
+
+00:01:11.000 --> 00:01:11.010 align:start position:0%
+demonstration that we have set up it's
+ 
+
+00:01:11.010 --> 00:01:12.800 align:start position:0%
+demonstration that we have set up it's
+basically<00:01:11.280><c> we</c><00:01:11.430><c> try</c><00:01:11.580><c> to</c><00:01:11.640><c> show</c><00:01:11.880><c> that</c><00:01:11.909><c> using</c>
+
+00:01:12.800 --> 00:01:12.810 align:start position:0%
+basically we try to show that using
+ 
+
+00:01:12.810 --> 00:01:15.200 align:start position:0%
+basically we try to show that using
+Jakarta<00:01:13.200><c> EE</c><00:01:13.350><c> you</c><00:01:13.680><c> can</c><00:01:13.860><c> actually</c><00:01:14.010><c> build</c><00:01:14.369><c> both</c>
+
+00:01:15.200 --> 00:01:15.210 align:start position:0%
+Jakarta EE you can actually build both
+ 
+
+00:01:15.210 --> 00:01:19.010 align:start position:0%
+Jakarta EE you can actually build both
+on<00:01:15.540><c> the</c><00:01:15.720><c> device</c><00:01:15.990><c> and</c><00:01:17.450><c> scaling</c><00:01:18.450><c> right</c><00:01:18.600><c> up</c><00:01:18.780><c> into</c>
+
+00:01:19.010 --> 00:01:19.020 align:start position:0%
+on the device and scaling right up into
+ 
+
+00:01:19.020 --> 00:01:22.880 align:start position:0%
+on the device and scaling right up into
+a<00:01:19.170><c> cloud</c><00:01:19.380><c> type</c><00:01:19.950><c> environment</c><00:01:21.439><c> so</c><00:01:22.439><c> using</c>
+
+00:01:22.880 --> 00:01:22.890 align:start position:0%
+a cloud type environment so using
+ 
+
+00:01:22.890 --> 00:01:24.920 align:start position:0%
+a cloud type environment so using
+exactly<00:01:23.189><c> the</c><00:01:23.310><c> same</c><00:01:23.400><c> technology</c><00:01:23.930><c> using</c>
+
+00:01:24.920 --> 00:01:24.930 align:start position:0%
+exactly the same technology using
+ 
+
+00:01:24.930 --> 00:01:27.230 align:start position:0%
+exactly the same technology using
+exactly<00:01:25.320><c> the</c><00:01:25.470><c> same</c><00:01:25.530><c> runtimes</c><00:01:26.189><c> and</c><00:01:26.580><c> using</c><00:01:26.970><c> the</c>
+
+00:01:27.230 --> 00:01:27.240 align:start position:0%
+exactly the same runtimes and using the
+ 
+
+00:01:27.240 --> 00:01:32.359 align:start position:0%
+exactly the same runtimes and using the
+same<00:01:27.420><c> sort</c><00:01:28.110><c> of</c><00:01:28.170><c> coding</c><00:01:28.530><c> style</c><00:01:30.890><c> so</c><00:01:31.890><c> what</c><00:01:32.280><c> we</c>
+
+00:01:32.359 --> 00:01:32.369 align:start position:0%
+same sort of coding style so what we
+ 
+
+00:01:32.369 --> 00:01:36.200 align:start position:0%
+same sort of coding style so what we
+have<00:01:32.549><c> here</c><00:01:32.970><c> we</c><00:01:33.420><c> have</c><00:01:34.040><c> a</c><00:01:35.040><c> sensor</c><00:01:36.030><c> node</c>
+
+00:01:36.200 --> 00:01:36.210 align:start position:0%
+have here we have a sensor node
+ 
+
+00:01:36.210 --> 00:01:39.399 align:start position:0%
+have here we have a sensor node
+basically<00:01:37.159><c> for</c><00:01:38.159><c> that</c><00:01:38.250><c> we're</c><00:01:38.490><c> running</c><00:01:38.700><c> on</c>
+
+00:01:39.399 --> 00:01:39.409 align:start position:0%
+basically for that we're running on
+ 
+
+00:01:39.409 --> 00:01:42.980 align:start position:0%
+basically for that we're running on
+raspberry<00:01:40.409><c> PI's</c><00:01:40.619><c> so</c><00:01:41.040><c> there's</c><00:01:41.729><c> a</c><00:01:41.790><c> rath</c><00:01:42.630><c> loop</c><00:01:42.810><c> I</c>
+
+00:01:42.980 --> 00:01:42.990 align:start position:0%
+raspberry PI's so there's a rath loop I
+ 
+
+00:01:42.990 --> 00:01:46.760 align:start position:0%
+raspberry PI's so there's a rath loop I
+sense<00:01:43.439><c> a</c><00:01:43.590><c> node</c><00:01:43.740><c> here</c><00:01:44.149><c> that's</c><00:01:45.149><c> running</c><00:01:45.740><c> has</c><00:01:46.740><c> a</c>
+
+00:01:46.760 --> 00:01:46.770 align:start position:0%
+sense a node here that's running has a
+ 
+
+00:01:46.770 --> 00:01:49.789 align:start position:0%
+sense a node here that's running has a
+sense<00:01:47.070><c> hat</c><00:01:47.250><c> on</c><00:01:47.460><c> which</c><00:01:47.759><c> has</c><00:01:48.060><c> a</c><00:01:48.420><c> humidity</c><00:01:49.380><c> sensor</c>
+
+00:01:49.789 --> 00:01:49.799 align:start position:0%
+sense hat on which has a humidity sensor
+ 
+
+00:01:49.799 --> 00:01:54.020 align:start position:0%
+sense hat on which has a humidity sensor
+built<00:01:49.920><c> into</c><00:01:50.100><c> it</c><00:01:52.340><c> so</c><00:01:53.340><c> that</c><00:01:53.369><c> that's</c><00:01:53.790><c> running</c>
+
+00:01:54.020 --> 00:01:54.030 align:start position:0%
+built into it so that that's running
+ 
+
+00:01:54.030 --> 00:01:57.200 align:start position:0%
+built into it so that that's running
+basically<00:01:54.659><c> generating</c><00:01:56.060><c> measurements</c><00:01:57.060><c> of</c>
+
+00:01:57.200 --> 00:01:57.210 align:start position:0%
+basically generating measurements of
+ 
+
+00:01:57.210 --> 00:02:01.280 align:start position:0%
+basically generating measurements of
+humidity<00:01:57.570><c> in</c><00:01:57.719><c> the</c><00:01:57.840><c> room</c><00:01:57.930><c> at</c><00:01:58.530><c> the</c><00:01:58.619><c> moment</c><00:02:00.290><c> and</c>
+
+00:02:01.280 --> 00:02:01.290 align:start position:0%
+humidity in the room at the moment and
+ 
+
+00:02:01.290 --> 00:02:05.030 align:start position:0%
+humidity in the room at the moment and
+thats<00:02:01.439><c> networked</c><00:02:02.299><c> with</c><00:02:03.299><c> through</c><00:02:04.079><c> a</c><00:02:04.140><c> switch</c><00:02:04.380><c> to</c>
+
+00:02:05.030 --> 00:02:05.040 align:start position:0%
+thats networked with through a switch to
+ 
+
+00:02:05.040 --> 00:02:06.740 align:start position:0%
+thats networked with through a switch to
+another<00:02:05.159><c> raspberry</c><00:02:05.670><c> pi</c><00:02:05.850><c> here</c><00:02:06.210><c> which</c><00:02:06.600><c> is</c>
+
+00:02:06.740 --> 00:02:06.750 align:start position:0%
+another raspberry pi here which is
+ 
+
+00:02:06.750 --> 00:02:10.360 align:start position:0%
+another raspberry pi here which is
+acting<00:02:07.200><c> like</c><00:02:07.829><c> a</c><00:02:07.890><c> gateway</c><00:02:08.220><c> Nogrady</c><00:02:08.759><c> to</c><00:02:09.030><c> take</c>
+
+00:02:10.360 --> 00:02:10.370 align:start position:0%
+acting like a gateway Nogrady to take
+ 
+
+00:02:10.370 --> 00:02:12.930 align:start position:0%
+acting like a gateway Nogrady to take
+samples<00:02:11.370><c> from</c><00:02:11.819><c> the</c><00:02:11.940><c> network</c>
+
+00:02:12.930 --> 00:02:12.940 align:start position:0%
+samples from the network
+ 
+
+00:02:12.940 --> 00:02:15.090 align:start position:0%
+samples from the network
+and<00:02:13.750><c> it</c><00:02:13.840><c> has</c><00:02:13.960><c> an</c><00:02:14.080><c> embedded</c><00:02:14.200><c> web</c><00:02:14.410><c> application</c>
+
+00:02:15.090 --> 00:02:15.100 align:start position:0%
+and it has an embedded web application
+ 
+
+00:02:15.100 --> 00:02:18.710 align:start position:0%
+and it has an embedded web application
+which<00:02:15.460><c> you</c><00:02:15.610><c> can</c><00:02:15.760><c> view</c><00:02:16.000><c> in</c><00:02:16.240><c> measure</c><00:02:16.860><c> humidity</c>
+
+00:02:18.710 --> 00:02:18.720 align:start position:0%
+which you can view in measure humidity
+ 
+
+00:02:18.720 --> 00:02:23.840 align:start position:0%
+which you can view in measure humidity
+and<00:02:19.720><c> they're</c><00:02:19.990><c> connected</c><00:02:20.500><c> using</c><00:02:21.660><c> Tecate</c><00:02:22.660><c> II</c><00:02:22.690><c> so</c>
+
+00:02:23.840 --> 00:02:23.850 align:start position:0%
+and they're connected using Tecate II so
+ 
+
+00:02:23.850 --> 00:02:29.070 align:start position:0%
+and they're connected using Tecate II so
+they<00:02:24.850><c> are</c><00:02:25.000><c> running</c><00:02:25.840><c> on</c><00:02:26.110><c> a</c><00:02:27.390><c> PI</c><00:02:28.390><c> or</c><00:02:28.540><c> micro</c><00:02:28.870><c> which</c>
+
+00:02:29.070 --> 00:02:29.080 align:start position:0%
+they are running on a PI or micro which
+ 
+
+00:02:29.080 --> 00:02:31.230 align:start position:0%
+they are running on a PI or micro which
+we'll<00:02:29.230><c> come</c><00:02:29.380><c> to</c><00:02:29.410><c> which</c><00:02:30.100><c> is</c><00:02:30.280><c> a</c><00:02:30.310><c> runtime</c><00:02:31.210><c> that</c>
+
+00:02:31.230 --> 00:02:31.240 align:start position:0%
+we'll come to which is a runtime that
+ 
+
+00:02:31.240 --> 00:02:35.640 align:start position:0%
+we'll come to which is a runtime that
+supports<00:02:31.840><c> two</c><00:02:32.110><c> car</c><00:02:32.290><c> te</c><00:02:32.440><c> AP</c><00:02:32.950><c> ice</c><00:02:33.660><c> or</c><00:02:34.660><c> Java</c><00:02:34.930><c> EE</c><00:02:35.140><c> AP</c>
+
+00:02:35.640 --> 00:02:35.650 align:start position:0%
+supports two car te AP ice or Java EE AP
+ 
+
+00:02:35.650 --> 00:02:38.880 align:start position:0%
+supports two car te AP ice or Java EE AP
+ice<00:02:35.770><c> and</c><00:02:36.780><c> these</c><00:02:37.780><c> things</c><00:02:37.990><c> are</c><00:02:38.170><c> communicating</c>
+
+00:02:38.880 --> 00:02:38.890 align:start position:0%
+ice and these things are communicating
+ 
+
+00:02:38.890 --> 00:02:42.900 align:start position:0%
+ice and these things are communicating
+by<00:02:39.160><c> sending</c><00:02:40.950><c> Network</c><00:02:41.950><c> events</c><00:02:42.400><c> between</c><00:02:42.550><c> them</c>
+
+00:02:42.900 --> 00:02:42.910 align:start position:0%
+by sending Network events between them
+ 
+
+00:02:42.910 --> 00:02:45.930 align:start position:0%
+by sending Network events between them
+so<00:02:43.420><c> they're</c><00:02:43.570><c> using</c><00:02:43.990><c> what's</c><00:02:44.980><c> called</c><00:02:45.070><c> CDI</c><00:02:45.610><c> and</c>
+
+00:02:45.930 --> 00:02:45.940 align:start position:0%
+so they're using what's called CDI and
+ 
+
+00:02:45.940 --> 00:02:47.700 align:start position:0%
+so they're using what's called CDI and
+they're<00:02:46.060><c> sending</c><00:02:46.270><c> clustered</c><00:02:46.840><c> events</c><00:02:47.230><c> between</c>
+
+00:02:47.700 --> 00:02:47.710 align:start position:0%
+they're sending clustered events between
+ 
+
+00:02:47.710 --> 00:02:52.800 align:start position:0%
+they're sending clustered events between
+one<00:02:48.100><c> node</c><00:02:48.340><c> and</c><00:02:48.610><c> the</c><00:02:48.670><c> other</c><00:02:48.790><c> node</c><00:02:51.420><c> so</c><00:02:52.420><c> that</c>
+
+00:02:52.800 --> 00:02:52.810 align:start position:0%
+one node and the other node so that
+ 
+
+00:02:52.810 --> 00:02:55.350 align:start position:0%
+one node and the other node so that
+application<00:02:53.800><c> that's</c><00:02:53.950><c> running</c><00:02:54.040><c> is</c><00:02:54.520><c> using</c>
+
+00:02:55.350 --> 00:02:55.360 align:start position:0%
+application that's running is using
+ 
+
+00:02:55.360 --> 00:02:59.130 align:start position:0%
+application that's running is using
+WebSockets<00:02:56.190><c> so</c><00:02:57.360><c> mr.</c><00:02:58.360><c> Carter</c><00:02:58.630><c> uh</c><00:02:58.780><c> obviously</c>
+
+00:02:59.130 --> 00:02:59.140 align:start position:0%
+WebSockets so mr. Carter uh obviously
+ 
+
+00:02:59.140 --> 00:03:03.560 align:start position:0%
+WebSockets so mr. Carter uh obviously
+you<00:02:59.230><c> get</c><00:02:59.320><c> a</c><00:02:59.380><c> full</c><00:02:59.650><c> range</c><00:03:00.250><c> of</c><00:03:00.610><c> web</c><00:03:01.570><c> api's</c><00:03:02.550><c> and</c>
+
+00:03:03.560 --> 00:03:03.570 align:start position:0%
+you get a full range of web api's and
+ 
+
+00:03:03.570 --> 00:03:06.810 align:start position:0%
+you get a full range of web api's and
+that<00:03:04.800><c> includes</c><00:03:05.800><c> the</c><00:03:05.950><c> web</c><00:03:06.070><c> socket</c><00:03:06.370><c> API</c><00:03:06.460><c> so</c>
+
+00:03:06.810 --> 00:03:06.820 align:start position:0%
+that includes the web socket API so
+ 
+
+00:03:06.820 --> 00:03:08.370 align:start position:0%
+that includes the web socket API so
+that's<00:03:06.970><c> pushing</c><00:03:07.210><c> data</c><00:03:07.510><c> and</c><00:03:07.720><c> real-time</c><00:03:07.900><c> down</c>
+
+00:03:08.370 --> 00:03:08.380 align:start position:0%
+that's pushing data and real-time down
+ 
+
+00:03:08.380 --> 00:03:15.030 align:start position:0%
+that's pushing data and real-time down
+to<00:03:08.500><c> a</c><00:03:08.560><c> browser</c><00:03:09.180><c> so</c><00:03:13.530><c> and</c><00:03:14.530><c> that</c><00:03:14.650><c> updates</c>
+
+00:03:15.030 --> 00:03:15.040 align:start position:0%
+to a browser so and that updates
+ 
+
+00:03:15.040 --> 00:03:17.400 align:start position:0%
+to a browser so and that updates
+effectively<00:03:15.580><c> graph</c><00:03:15.820><c> using</c><00:03:16.150><c> html5</c><00:03:16.420><c> in</c><00:03:17.080><c> real</c>
+
+00:03:17.400 --> 00:03:17.410 align:start position:0%
+effectively graph using html5 in real
+ 
+
+00:03:17.410 --> 00:03:19.110 align:start position:0%
+effectively graph using html5 in real
+time<00:03:17.680><c> and</c><00:03:17.830><c> again</c><00:03:18.130><c> that's</c><00:03:18.310><c> currently</c><00:03:18.940><c> running</c>
+
+00:03:19.110 --> 00:03:19.120 align:start position:0%
+time and again that's currently running
+ 
+
+00:03:19.120 --> 00:03:20.640 align:start position:0%
+time and again that's currently running
+on<00:03:19.300><c> Raspberry</c><00:03:19.810><c> Pi</c><00:03:19.840><c> and</c><00:03:20.050><c> we</c><00:03:20.260><c> should</c><00:03:20.410><c> be</c><00:03:20.500><c> able</c><00:03:20.560><c> to</c>
+
+00:03:20.640 --> 00:03:20.650 align:start position:0%
+on Raspberry Pi and we should be able to
+ 
+
+00:03:20.650 --> 00:03:22.890 align:start position:0%
+on Raspberry Pi and we should be able to
+get<00:03:20.800><c> it</c><00:03:20.920><c> on</c><00:03:21.070><c> the</c><00:03:21.820><c> machine</c><00:03:22.120><c> as</c><00:03:22.270><c> well</c><00:03:22.300><c> on</c><00:03:22.690><c> the</c>
+
+00:03:22.890 --> 00:03:22.900 align:start position:0%
+get it on the machine as well on the
+ 
+
+00:03:22.900 --> 00:03:28.080 align:start position:0%
+get it on the machine as well on the
+laptop<00:03:24.870><c> and</c><00:03:25.870><c> then</c><00:03:26.140><c> for</c><00:03:27.100><c> this</c><00:03:27.250><c> demonstration</c>
+
+00:03:28.080 --> 00:03:28.090 align:start position:0%
+laptop and then for this demonstration
+ 
+
+00:03:28.090 --> 00:03:33.270 align:start position:0%
+laptop and then for this demonstration
+we<00:03:28.720><c> also</c><00:03:28.870><c> have</c><00:03:31.050><c> what</c><00:03:32.050><c> what's</c><00:03:32.680><c> marked</c><00:03:32.980><c> on</c><00:03:33.100><c> there</c>
+
+00:03:33.270 --> 00:03:33.280 align:start position:0%
+we also have what what's marked on there
+ 
+
+00:03:33.280 --> 00:03:36.510 align:start position:0%
+we also have what what's marked on there
+as<00:03:33.550><c> a</c><00:03:34.360><c> cloud</c><00:03:35.020><c> connector</c><00:03:35.470><c> in</c><00:03:35.860><c> this</c><00:03:36.130><c> case</c><00:03:36.340><c> it's</c>
+
+00:03:36.510 --> 00:03:36.520 align:start position:0%
+as a cloud connector in this case it's
+ 
+
+00:03:36.520 --> 00:03:38.790 align:start position:0%
+as a cloud connector in this case it's
+not<00:03:36.750><c> if</c><00:03:37.750><c> we're</c><00:03:37.930><c> going</c><00:03:38.050><c> to</c><00:03:38.110><c> scale</c><00:03:38.260><c> up</c><00:03:38.410><c> the</c><00:03:38.560><c> cloud</c>
+
+00:03:38.790 --> 00:03:38.800 align:start position:0%
+not if we're going to scale up the cloud
+ 
+
+00:03:38.800 --> 00:03:40.530 align:start position:0%
+not if we're going to scale up the cloud
+we<00:03:39.370><c> will</c><00:03:39.640><c> that</c><00:03:39.730><c> we</c><00:03:39.760><c> also</c><00:03:39.940><c> do</c><00:03:40.120><c> a</c><00:03:40.150><c> demo</c><00:03:40.390><c> that</c>
+
+00:03:40.530 --> 00:03:40.540 align:start position:0%
+we will that we also do a demo that
+ 
+
+00:03:40.540 --> 00:03:41.850 align:start position:0%
+we will that we also do a demo that
+includes<00:03:40.780><c> Microsoft</c><00:03:41.200><c> Azure</c><00:03:41.350><c> but</c><00:03:41.650><c> for</c><00:03:41.800><c> this</c>
+
+00:03:41.850 --> 00:03:41.860 align:start position:0%
+includes Microsoft Azure but for this
+ 
+
+00:03:41.860 --> 00:03:46.100 align:start position:0%
+includes Microsoft Azure but for this
+purposes<00:03:42.340><c> what</c><00:03:42.520><c> we're</c><00:03:42.640><c> doing</c><00:03:43.050><c> we</c><00:03:44.050><c> have</c><00:03:44.080><c> used</c><00:03:44.470><c> a</c>
+
+00:03:46.100 --> 00:03:46.110 align:start position:0%
+purposes what we're doing we have used a
+ 
+
+00:03:46.110 --> 00:03:49.530 align:start position:0%
+purposes what we're doing we have used a
+MQTT<00:03:47.110><c> connector</c><00:03:47.650><c> and</c><00:03:48.070><c> we're</c><00:03:48.190><c> pushing</c><00:03:48.540><c> MQTT</c>
+
+00:03:49.530 --> 00:03:49.540 align:start position:0%
+MQTT connector and we're pushing MQTT
+ 
+
+00:03:49.540 --> 00:03:59.220 align:start position:0%
+MQTT connector and we're pushing MQTT
+events<00:03:56.790><c> so</c><00:03:57.790><c> in</c><00:03:57.910><c> this</c><00:03:57.970><c> case</c><00:03:58.180><c> the</c><00:03:58.480><c> connector</c><00:03:59.170><c> is</c>
+
+00:03:59.220 --> 00:03:59.230 align:start position:0%
+events so in this case the connector is
+ 
+
+00:03:59.230 --> 00:04:01.710 align:start position:0%
+events so in this case the connector is
+going<00:03:59.260><c> to</c><00:03:59.410><c> be</c><00:03:59.530><c> using</c><00:03:59.709><c> MQTT</c><00:04:00.489><c> to</c><00:04:00.940><c> send</c><00:04:01.180><c> mqtt</c>
+
+00:04:01.710 --> 00:04:01.720 align:start position:0%
+going to be using MQTT to send mqtt
+ 
+
+00:04:01.720 --> 00:04:06.479 align:start position:0%
+going to be using MQTT to send mqtt
+messages<00:04:02.230><c> onto</c><00:04:02.709><c> my</c><00:04:03.280><c> laptop</c><00:04:04.140><c> okay</c><00:04:05.170><c> it</c><00:04:06.100><c> uses</c><00:04:06.459><c> a</c>
+
+00:04:06.479 --> 00:04:06.489 align:start position:0%
+messages onto my laptop okay it uses a
+ 
+
+00:04:06.489 --> 00:04:10.770 align:start position:0%
+messages onto my laptop okay it uses a
+standard<00:04:07.230><c> standard</c><00:04:08.230><c> in</c><00:04:08.350><c> Java</c><00:04:08.920><c> EE</c><00:04:09.510><c> JCA</c><00:04:10.510><c> which</c>
+
+00:04:10.770 --> 00:04:10.780 align:start position:0%
+standard standard in Java EE JCA which
+ 
+
+00:04:10.780 --> 00:04:12.540 align:start position:0%
+standard standard in Java EE JCA which
+sounds<00:04:10.989><c> the</c><00:04:11.080><c> Java</c><00:04:11.290><c> connector</c><00:04:11.709><c> connector</c>
+
+00:04:12.540 --> 00:04:12.550 align:start position:0%
+sounds the Java connector connector
+ 
+
+00:04:12.550 --> 00:04:16.320 align:start position:0%
+sounds the Java connector connector
+architecture<00:04:13.320><c> or</c><00:04:14.320><c> API</c><00:04:14.680><c> which</c><00:04:15.160><c> is</c><00:04:15.820><c> a</c><00:04:15.910><c> standard</c>
+
+00:04:16.320 --> 00:04:16.330 align:start position:0%
+architecture or API which is a standard
+ 
+
+00:04:16.330 --> 00:04:21.029 align:start position:0%
+architecture or API which is a standard
+way<00:04:16.450><c> to</c><00:04:16.480><c> build</c><00:04:16.840><c> connectors</c><00:04:17.799><c> to</c><00:04:17.980><c> other</c><00:04:20.039><c> other</c>
+
+00:04:21.029 --> 00:04:21.039 align:start position:0%
+way to build connectors to other other
+ 
+
+00:04:21.039 --> 00:04:23.969 align:start position:0%
+way to build connectors to other other
+systems<00:04:21.489><c> that</c><00:04:21.640><c> out</c><00:04:21.789><c> sort</c><00:04:22.120><c> of</c><00:04:22.150><c> not</c><00:04:22.900><c> inherent</c><00:04:23.590><c> or</c>
+
+00:04:23.969 --> 00:04:23.979 align:start position:0%
+systems that out sort of not inherent or
+ 
+
+00:04:23.979 --> 00:04:26.630 align:start position:0%
+systems that out sort of not inherent or
+not<00:04:24.340><c> supported</c><00:04:24.789><c> directly</c><00:04:25.000><c> in</c>
+
+00:04:26.630 --> 00:04:26.640 align:start position:0%
+not supported directly in
+ 
+
+00:04:26.640 --> 00:04:29.850 align:start position:0%
+not supported directly in
+in<00:04:27.640><c> delray</c><00:04:28.270><c> so</c><00:04:28.870><c> for</c><00:04:28.990><c> example</c><00:04:29.320><c> in</c><00:04:29.380><c> this</c><00:04:29.440><c> case</c><00:04:29.620><c> we</c>
+
+00:04:29.850 --> 00:04:29.860 align:start position:0%
+in delray so for example in this case we
+ 
+
+00:04:29.860 --> 00:04:31.530 align:start position:0%
+in delray so for example in this case we
+have<00:04:29.980><c> very</c><00:04:30.190><c> connected</c><00:04:30.610><c> to</c><00:04:30.850><c> the</c><00:04:30.940><c> MQTT</c>
+
+00:04:31.530 --> 00:04:31.540 align:start position:0%
+have very connected to the MQTT
+ 
+
+00:04:31.540 --> 00:04:36.380 align:start position:0%
+have very connected to the MQTT
+messaging<00:04:32.020><c> protocol</c><00:04:34.050><c> okay</c>
+
+00:04:36.380 --> 00:04:36.390 align:start position:0%
+messaging protocol okay
+ 
+
+00:04:36.390 --> 00:04:39.840 align:start position:0%
+messaging protocol okay
+event<00:04:37.390><c> we</c><00:04:37.480><c> haven't</c><00:04:37.750><c> got</c><00:04:37.900><c> in</c><00:04:38.830><c> demonstration</c><00:04:39.520><c> is</c>
+
+00:04:39.840 --> 00:04:39.850 align:start position:0%
+event we haven't got in demonstration is
+ 
+
+00:04:39.850 --> 00:04:42.390 align:start position:0%
+event we haven't got in demonstration is
+beyond<00:04:40.810><c> that</c><00:04:40.990><c> you</c><00:04:41.140><c> could</c><00:04:41.290><c> then</c><00:04:41.440><c> use</c><00:04:41.770><c> once</c><00:04:42.310><c> the</c>
+
+00:04:42.390 --> 00:04:42.400 align:start position:0%
+beyond that you could then use once the
+ 
+
+00:04:42.400 --> 00:04:44.400 align:start position:0%
+beyond that you could then use once the
+messages<00:04:42.730><c> were</c><00:04:42.820><c> off</c><00:04:43.000><c> the</c><00:04:43.240><c> Gateway</c><00:04:43.570><c> node</c><00:04:43.780><c> you</c>
+
+00:04:44.400 --> 00:04:44.410 align:start position:0%
+messages were off the Gateway node you
+ 
+
+00:04:44.410 --> 00:04:46.980 align:start position:0%
+messages were off the Gateway node you
+can<00:04:44.530><c> obviously</c><00:04:44.740><c> then</c><00:04:44.950><c> push</c><00:04:45.190><c> them</c><00:04:45.400><c> into</c><00:04:45.720><c> on</c><00:04:46.720><c> the</c>
+
+00:04:46.980 --> 00:04:46.990 align:start position:0%
+can obviously then push them into on the
+ 
+
+00:04:46.990 --> 00:04:49.170 align:start position:0%
+can obviously then push them into on the
+on<00:04:47.140><c> the</c><00:04:47.200><c> cloud</c><00:04:47.410><c> side</c><00:04:47.680><c> into</c><00:04:48.550><c> any</c><00:04:48.790><c> cloud</c>
+
+00:04:49.170 --> 00:04:49.180 align:start position:0%
+on the cloud side into any cloud
+ 
+
+00:04:49.180 --> 00:04:52.650 align:start position:0%
+on the cloud side into any cloud
+infrastructure<00:04:50.190><c> build</c><00:04:51.190><c> up</c><00:04:51.430><c> big</c><00:04:52.120><c> data</c><00:04:52.360><c> grids</c>
+
+00:04:52.650 --> 00:04:52.660 align:start position:0%
+infrastructure build up big data grids
+ 
+
+00:04:52.660 --> 00:04:54.270 align:start position:0%
+infrastructure build up big data grids
+and<00:04:52.990><c> use</c><00:04:53.410><c> all</c><00:04:53.530><c> the</c><00:04:53.560><c> standard</c><00:04:53.830><c> enterprise</c>
+
+00:04:54.270 --> 00:04:54.280 align:start position:0%
+and use all the standard enterprise
+ 
+
+00:04:54.280 --> 00:04:56.190 align:start position:0%
+and use all the standard enterprise
+technology<00:04:54.460><c> that</c><00:04:55.060><c> to</c><00:04:55.330><c> cut</c><00:04:55.510><c> it</c><00:04:55.690><c> you</c><00:04:55.780><c> each</c><00:04:55.990><c> are</c>
+
+00:04:56.190 --> 00:04:56.200 align:start position:0%
+technology that to cut it you each are
+ 
+
+00:04:56.200 --> 00:05:01.170 align:start position:0%
+technology that to cut it you each are
+very<00:04:56.410><c> ease</c><00:04:56.650><c> renowned</c><00:04:57.070><c> for</c><00:04:58.350><c> to</c><00:04:59.400><c> you</c><00:05:00.400><c> know</c><00:05:00.520><c> to</c>
+
+00:05:01.170 --> 00:05:01.180 align:start position:0%
+very ease renowned for to you know to
+ 
+
+00:05:01.180 --> 00:05:03.450 align:start position:0%
+very ease renowned for to you know to
+build<00:05:01.330><c> a</c><00:05:01.540><c> data</c><00:05:01.750><c> visualization</c><00:05:02.560><c> or</c><00:05:03.190><c> data</c>
+
+00:05:03.450 --> 00:05:03.460 align:start position:0%
+build a data visualization or data
+ 
+
+00:05:03.460 --> 00:05:11.130 align:start position:0%
+build a data visualization or data
+capture<00:05:03.850><c> system</c><00:05:04.150><c> for</c><00:05:04.870><c> users</c><00:05:05.970><c> okay</c><00:05:10.020><c> so</c><00:05:11.020><c> what</c>
+
+00:05:11.130 --> 00:05:11.140 align:start position:0%
+capture system for users okay so what
+ 
+
+00:05:11.140 --> 00:05:14.160 align:start position:0%
+capture system for users okay so what
+we're<00:05:11.290><c> running</c><00:05:11.410><c> on</c><00:05:11.710><c> here</c><00:05:12.780><c> obviously</c><00:05:13.780><c> most</c>
+
+00:05:14.160 --> 00:05:14.170 align:start position:0%
+we're running on here obviously most
+ 
+
+00:05:14.170 --> 00:05:17.310 align:start position:0%
+we're running on here obviously most
+people<00:05:14.230><c> would</c><00:05:14.560><c> think</c><00:05:14.590><c> that</c><00:05:15.120><c> running</c><00:05:16.120><c> Java</c><00:05:17.080><c> EE</c>
+
+00:05:17.310 --> 00:05:17.320 align:start position:0%
+people would think that running Java EE
+ 
+
+00:05:17.320 --> 00:05:21.750 align:start position:0%
+people would think that running Java EE
+on<00:05:18.480><c> IOT</c><00:05:19.480><c> is</c><00:05:19.810><c> of</c><00:05:20.230><c> the</c><00:05:20.410><c> answers</c><00:05:20.680><c> no</c><00:05:20.950><c> these</c><00:05:21.730><c> things</c>
+
+00:05:21.750 --> 00:05:21.760 align:start position:0%
+on IOT is of the answers no these things
+ 
+
+00:05:21.760 --> 00:05:24.390 align:start position:0%
+on IOT is of the answers no these things
+are<00:05:22.120><c> big</c><00:05:22.360><c> fat</c><00:05:22.810><c> heavy</c><00:05:23.260><c> weight</c><00:05:23.530><c> application</c>
+
+00:05:24.390 --> 00:05:24.400 align:start position:0%
+are big fat heavy weight application
+ 
+
+00:05:24.400 --> 00:05:27.060 align:start position:0%
+are big fat heavy weight application
+servers<00:05:24.820><c> that</c><00:05:25.000><c> use</c><00:05:25.180><c> gigabytes</c><00:05:25.630><c> of</c><00:05:25.750><c> memory</c><00:05:26.070><c> you</c>
+
+00:05:27.060 --> 00:05:27.070 align:start position:0%
+servers that use gigabytes of memory you
+ 
+
+00:05:27.070 --> 00:05:29.400 align:start position:0%
+servers that use gigabytes of memory you
+know<00:05:27.190><c> they're</c><00:05:27.550><c> gigabytes</c><00:05:28.480><c> in</c><00:05:28.690><c> size</c><00:05:28.720><c> to</c>
+
+00:05:29.400 --> 00:05:29.410 align:start position:0%
+know they're gigabytes in size to
+ 
+
+00:05:29.410 --> 00:05:32.910 align:start position:0%
+know they're gigabytes in size to
+install<00:05:30.300><c> well</c><00:05:31.300><c> that's</c><00:05:31.450><c> basically</c><00:05:31.900><c> not</c><00:05:32.500><c> true</c><00:05:32.740><c> I</c>
+
+00:05:32.910 --> 00:05:32.920 align:start position:0%
+install well that's basically not true I
+ 
+
+00:05:32.920 --> 00:05:34.860 align:start position:0%
+install well that's basically not true I
+mean<00:05:33.040><c> that</c><00:05:33.220><c> is</c><00:05:33.340><c> what</c><00:05:33.490><c> it</c><00:05:33.610><c> was</c><00:05:33.700><c> like</c><00:05:33.880><c> maybe</c><00:05:34.690><c> ten</c>
+
+00:05:34.860 --> 00:05:34.870 align:start position:0%
+mean that is what it was like maybe ten
+ 
+
+00:05:34.870 --> 00:05:37.200 align:start position:0%
+mean that is what it was like maybe ten
+years<00:05:35.050><c> ago</c><00:05:35.170><c> but</c><00:05:36.130><c> not</c><00:05:36.310><c> not</c><00:05:36.760><c> in</c><00:05:36.880><c> this</c><00:05:37.030><c> day</c><00:05:37.180><c> and</c>
+
+00:05:37.200 --> 00:05:37.210 align:start position:0%
+years ago but not not in this day and
+ 
+
+00:05:37.210 --> 00:05:40.140 align:start position:0%
+years ago but not not in this day and
+age<00:05:37.390><c> really</c><00:05:37.660><c> so</c><00:05:38.530><c> we're</c><00:05:39.400><c> running</c><00:05:39.490><c> power</c><00:05:39.730><c> micro</c>
+
+00:05:40.140 --> 00:05:40.150 align:start position:0%
+age really so we're running power micro
+ 
+
+00:05:40.150 --> 00:05:42.330 align:start position:0%
+age really so we're running power micro
+so<00:05:40.300><c> I'm</c><00:05:40.390><c> from</c><00:05:40.570><c> Paora</c><00:05:40.900><c> I'm</c><00:05:41.530><c> Steve</c><00:05:41.770><c> millage</c><00:05:42.010><c> so</c><00:05:42.310><c> I</c>
+
+00:05:42.330 --> 00:05:42.340 align:start position:0%
+so I'm from Paora I'm Steve millage so I
+ 
+
+00:05:42.340 --> 00:05:46.080 align:start position:0%
+so I'm from Paora I'm Steve millage so I
+found<00:05:42.640><c> the</c><00:05:42.760><c> payara</c><00:05:42.910><c> and</c><00:05:44.610><c> part</c><00:05:45.610><c> micro</c><00:05:45.970><c> is</c><00:05:46.060><c> a</c>
+
+00:05:46.080 --> 00:05:46.090 align:start position:0%
+found the payara and part micro is a
+ 
+
+00:05:46.090 --> 00:05:48.510 align:start position:0%
+found the payara and part micro is a
+really<00:05:46.450><c> small</c><00:05:46.750><c> runtime</c><00:05:47.350><c> so</c><00:05:47.980><c> we</c><00:05:48.070><c> desert</c><00:05:48.370><c> we</c>
+
+00:05:48.510 --> 00:05:48.520 align:start position:0%
+really small runtime so we desert we
+ 
+
+00:05:48.520 --> 00:05:50.370 align:start position:0%
+really small runtime so we desert we
+designed<00:05:48.850><c> it</c><00:05:49.030><c> to</c><00:05:49.060><c> be</c><00:05:49.180><c> very</c><00:05:49.630><c> simple</c><00:05:49.810><c> so</c><00:05:50.230><c> there's</c>
+
+00:05:50.370 --> 00:05:50.380 align:start position:0%
+designed it to be very simple so there's
+ 
+
+00:05:50.380 --> 00:05:53.430 align:start position:0%
+designed it to be very simple so there's
+no<00:05:50.500><c> installation</c><00:05:51.360><c> you</c><00:05:52.360><c> don't</c><00:05:52.540><c> have</c><00:05:52.660><c> to</c><00:05:52.780><c> set</c><00:05:53.350><c> up</c>
+
+00:05:53.430 --> 00:05:53.440 align:start position:0%
+no installation you don't have to set up
+ 
+
+00:05:53.440 --> 00:05:55.320 align:start position:0%
+no installation you don't have to set up
+an<00:05:53.560><c> installation</c><00:05:54.160><c> download</c><00:05:54.340><c> a</c><00:05:54.700><c> gigabytes</c><00:05:55.270><c> of</c>
+
+00:05:55.320 --> 00:05:55.330 align:start position:0%
+an installation download a gigabytes of
+ 
+
+00:05:55.330 --> 00:05:58.890 align:start position:0%
+an installation download a gigabytes of
+data<00:05:55.530><c> do</c><00:05:56.530><c> lots</c><00:05:56.740><c> of</c><00:05:56.800><c> messing</c><00:05:57.100><c> around</c><00:05:57.900><c> it</c>
+
+00:05:58.890 --> 00:05:58.900 align:start position:0%
+data do lots of messing around it
+ 
+
+00:05:58.900 --> 00:06:00.120 align:start position:0%
+data do lots of messing around it
+effectively<00:05:59.380><c> you</c><00:05:59.470><c> just</c><00:05:59.650><c> run</c><00:05:59.830><c> it</c><00:05:59.950><c> on</c><00:06:00.040><c> the</c>
+
+00:06:00.120 --> 00:06:00.130 align:start position:0%
+effectively you just run it on the
+ 
+
+00:06:00.130 --> 00:06:02.210 align:start position:0%
+effectively you just run it on the
+command<00:06:00.160><c> line</c><00:06:00.460><c> and</c><00:06:00.940><c> it</c><00:06:01.150><c> on</c><00:06:01.270><c> bootstrap</c><00:06:01.810><c> a</c>
+
+00:06:02.210 --> 00:06:02.220 align:start position:0%
+command line and it on bootstrap a
+ 
+
+00:06:02.220 --> 00:06:06.510 align:start position:0%
+command line and it on bootstrap a
+Jakarta<00:06:03.220><c> ye</c><00:06:03.550><c> java</c><00:06:03.820><c> re'</c><00:06:05.490><c> runtime</c><00:06:06.490><c> that</c>
+
+00:06:06.510 --> 00:06:06.520 align:start position:0%
+Jakarta ye java re' runtime that
+ 
+
+00:06:06.520 --> 00:06:09.930 align:start position:0%
+Jakarta ye java re' runtime that
+supports<00:06:07.060><c> standard</c><00:06:07.870><c> java</c><00:06:08.200><c> applications</c><00:06:08.940><c> so</c>
+
+00:06:09.930 --> 00:06:09.940 align:start position:0%
+supports standard java applications so
+ 
+
+00:06:09.940 --> 00:06:13.530 align:start position:0%
+supports standard java applications so
+it's<00:06:10.060><c> pretty</c><00:06:10.210><c> small</c><00:06:11.760><c> jar</c><00:06:12.760><c> file</c><00:06:12.970><c> it</c><00:06:13.150><c> says</c><00:06:13.300><c> less</c>
+
+00:06:13.530 --> 00:06:13.540 align:start position:0%
+it's pretty small jar file it says less
+ 
+
+00:06:13.540 --> 00:06:15.570 align:start position:0%
+it's pretty small jar file it says less
+than<00:06:13.570><c> 70</c><00:06:14.080><c> Meg</c><00:06:14.230><c> and</c><00:06:14.440><c> we</c><00:06:14.980><c> keep</c><00:06:15.130><c> trying</c><00:06:15.310><c> to</c><00:06:15.460><c> keep</c>
+
+00:06:15.570 --> 00:06:15.580 align:start position:0%
+than 70 Meg and we keep trying to keep
+ 
+
+00:06:15.580 --> 00:06:17.610 align:start position:0%
+than 70 Meg and we keep trying to keep
+it<00:06:15.700><c> down</c><00:06:15.850><c> there</c><00:06:16.090><c> we're</c><00:06:16.540><c> very</c><00:06:16.720><c> close</c><00:06:17.020><c> to</c><00:06:17.080><c> 70</c>
+
+00:06:17.610 --> 00:06:17.620 align:start position:0%
+it down there we're very close to 70
+ 
+
+00:06:17.620 --> 00:06:17.990 align:start position:0%
+it down there we're very close to 70
+mega
+
+00:06:17.990 --> 00:06:18.000 align:start position:0%
+mega
+ 
+
+00:06:18.000 --> 00:06:20.670 align:start position:0%
+mega
+we'll<00:06:19.000><c> keep</c><00:06:19.120><c> trying</c><00:06:19.270><c> to</c><00:06:19.420><c> get</c><00:06:19.540><c> it</c><00:06:19.660><c> down</c><00:06:20.440><c> so</c><00:06:20.470><c> that</c>
+
+00:06:20.670 --> 00:06:20.680 align:start position:0%
+we'll keep trying to get it down so that
+ 
+
+00:06:20.680 --> 00:06:22.440 align:start position:0%
+we'll keep trying to get it down so that
+each<00:06:20.860><c> slices</c><00:06:21.100><c> drive</c><00:06:21.520><c> change</c><00:06:21.730><c> the</c><00:06:21.850><c> slides</c><00:06:22.090><c> and</c>
+
+00:06:22.440 --> 00:06:22.450 align:start position:0%
+each slices drive change the slides and
+ 
+
+00:06:22.450 --> 00:06:24.720 align:start position:0%
+each slices drive change the slides and
+it's<00:06:22.930><c> based</c><00:06:23.110><c> on</c><00:06:23.230><c> the</c><00:06:23.350><c> full</c><00:06:23.560><c> PI</c><00:06:24.190><c> or</c><00:06:24.310><c> a</c><00:06:24.340><c> server</c>
+
+00:06:24.720 --> 00:06:24.730 align:start position:0%
+it's based on the full PI or a server
+ 
+
+00:06:24.730 --> 00:06:26.040 align:start position:0%
+it's based on the full PI or a server
+which<00:06:24.850><c> eventually</c><00:06:25.120><c> which</c><00:06:25.570><c> originally</c><00:06:25.960><c> was</c>
+
+00:06:26.040 --> 00:06:26.050 align:start position:0%
+which eventually which originally was
+ 
+
+00:06:26.050 --> 00:06:28.710 align:start position:0%
+which eventually which originally was
+based<00:06:26.320><c> off</c><00:06:26.500><c> grassfish</c><00:06:27.180><c> so</c><00:06:28.180><c> it</c><00:06:28.330><c> is</c><00:06:28.390><c> a</c><00:06:28.420><c> full</c>
+
+00:06:28.710 --> 00:06:28.720 align:start position:0%
+based off grassfish so it is a full
+ 
+
+00:06:28.720 --> 00:06:32.460 align:start position:0%
+based off grassfish so it is a full
+application<00:06:29.470><c> server</c><00:06:30.040><c> and</c><00:06:30.990><c> we</c><00:06:31.990><c> have</c><00:06:32.110><c> users</c>
+
+00:06:32.460 --> 00:06:32.470 align:start position:0%
+application server and we have users
+ 
+
+00:06:32.470 --> 00:06:34.050 align:start position:0%
+application server and we have users
+that<00:06:32.500><c> are</c><00:06:32.710><c> using</c><00:06:32.740><c> them</c><00:06:33.130><c> from</c><00:06:33.430><c> very</c><00:06:33.790><c> small</c>
+
+00:06:34.050 --> 00:06:34.060 align:start position:0%
+that are using them from very small
+ 
+
+00:06:34.060 --> 00:06:37.020 align:start position:0%
+that are using them from very small
+devices<00:06:34.330><c> right</c><00:06:34.630><c> up</c><00:06:34.900><c> to</c><00:06:35.110><c> you</c><00:06:35.560><c> know</c><00:06:35.790><c> hundred</c><00:06:36.790><c> no</c>
+
+00:06:37.020 --> 00:06:37.030 align:start position:0%
+devices right up to you know hundred no
+ 
+
+00:06:37.030 --> 00:06:39.000 align:start position:0%
+devices right up to you know hundred no
+clusters<00:06:37.570><c> building</c><00:06:38.350><c> data</c><00:06:38.530><c> grids</c><00:06:38.800><c> on</c><00:06:38.919><c> the</c>
+
+00:06:39.000 --> 00:06:39.010 align:start position:0%
+clusters building data grids on the
+ 
+
+00:06:39.010 --> 00:06:39.780 align:start position:0%
+clusters building data grids on the
+cloud<00:06:39.220><c> so</c><00:06:39.250><c> you</c>
+
+00:06:39.780 --> 00:06:39.790 align:start position:0%
+cloud so you
+ 
+
+00:06:39.790 --> 00:06:41.940 align:start position:0%
+cloud so you
+and<00:06:40.090><c> on</c><00:06:40.180><c> the</c><00:06:40.270><c> heaps</c><00:06:40.450><c> usage</c><00:06:41.170><c> or</c><00:06:41.380><c> how</c><00:06:41.590><c> you</c><00:06:41.770><c> set</c><00:06:41.920><c> up</c>
+
+00:06:41.940 --> 00:06:41.950 align:start position:0%
+and on the heaps usage or how you set up
+ 
+
+00:06:41.950 --> 00:06:43.920 align:start position:0%
+and on the heaps usage or how you set up
+the<00:06:42.070><c> heat</c><00:06:42.310><c> you</c><00:06:42.940><c> can</c><00:06:43.090><c> obviously</c><00:06:43.180><c> scale</c><00:06:43.600><c> to</c><00:06:43.750><c> very</c>
+
+00:06:43.920 --> 00:06:43.930 align:start position:0%
+the heat you can obviously scale to very
+ 
+
+00:06:43.930 --> 00:06:50.130 align:start position:0%
+the heat you can obviously scale to very
+large<00:06:44.050><c> applications</c><00:06:44.710><c> as</c><00:06:44.890><c> well</c><00:06:46.620><c> and</c><00:06:49.140><c> we</c>
+
+00:06:50.130 --> 00:06:50.140 align:start position:0%
+large applications as well and we
+ 
+
+00:06:50.140 --> 00:06:51.630 align:start position:0%
+large applications as well and we
+basically<00:06:50.350><c> have</c><00:06:50.800><c> done</c><00:06:50.950><c> a</c><00:06:50.980><c> lot</c><00:06:51.160><c> of</c><00:06:51.190><c> work</c><00:06:51.370><c> with</c>
+
+00:06:51.630 --> 00:06:51.640 align:start position:0%
+basically have done a lot of work with
+ 
+
+00:06:51.640 --> 00:06:53.880 align:start position:0%
+basically have done a lot of work with
+some<00:06:51.790><c> customers</c><00:06:52.210><c> to</c><00:06:52.360><c> make</c><00:06:52.540><c> this</c><00:06:53.020><c> design</c><00:06:53.440><c> for</c>
+
+00:06:53.880 --> 00:06:53.890 align:start position:0%
+some customers to make this design for
+ 
+
+00:06:53.890 --> 00:06:56.540 align:start position:0%
+some customers to make this design for
+cloud<00:06:54.250><c> environments</c><00:06:55.090><c> so</c><00:06:55.420><c> that</c><00:06:55.570><c> it's</c><00:06:55.750><c> elastic</c>
+
+00:06:56.540 --> 00:06:56.550 align:start position:0%
+cloud environments so that it's elastic
+ 
+
+00:06:56.550 --> 00:06:58.770 align:start position:0%
+cloud environments so that it's elastic
+and<00:06:57.550><c> also</c><00:06:57.820><c> to</c><00:06:57.910><c> make</c><00:06:58.060><c> it</c><00:06:58.210><c> for</c><00:06:58.420><c> container</c>
+
+00:06:58.770 --> 00:06:58.780 align:start position:0%
+and also to make it for container
+ 
+
+00:06:58.780 --> 00:07:01.050 align:start position:0%
+and also to make it for container
+environment<00:06:59.320><c> so</c><00:06:59.500><c> that</c><00:06:59.670><c> it</c><00:07:00.670><c> has</c><00:07:00.790><c> a</c><00:07:00.820><c> lot</c><00:07:00.970><c> of</c>
+
+00:07:01.050 --> 00:07:01.060 align:start position:0%
+environment so that it has a lot of
+ 
+
+00:07:01.060 --> 00:07:02.880 align:start position:0%
+environment so that it has a lot of
+capabilities<00:07:01.660><c> in</c><00:07:01.780><c> there</c><00:07:01.990><c> to</c><00:07:02.170><c> work</c><00:07:02.380><c> in</c><00:07:02.590><c> in</c>
+
+00:07:02.880 --> 00:07:02.890 align:start position:0%
+capabilities in there to work in in
+ 
+
+00:07:02.890 --> 00:07:07.560 align:start position:0%
+capabilities in there to work in in
+containers<00:07:04.680><c> including</c><00:07:05.680><c> things</c><00:07:05.890><c> like</c><00:07:06.570><c> support</c>
+
+00:07:07.560 --> 00:07:07.570 align:start position:0%
+containers including things like support
+ 
+
+00:07:07.570 --> 00:07:09.120 align:start position:0%
+containers including things like support
+for<00:07:07.630><c> environment</c><00:07:08.170><c> variable</c><00:07:08.530><c> replacement</c><00:07:09.040><c> as</c>
+
+00:07:09.120 --> 00:07:09.130 align:start position:0%
+for environment variable replacement as
+ 
+
+00:07:09.130 --> 00:07:11.130 align:start position:0%
+for environment variable replacement as
+you<00:07:09.220><c> move</c><00:07:09.430><c> I</c><00:07:09.760><c> contain</c><00:07:10.660><c> it</c><00:07:10.840><c> from</c><00:07:10.960><c> one</c>
+
+00:07:11.130 --> 00:07:11.140 align:start position:0%
+you move I contain it from one
+ 
+
+00:07:11.140 --> 00:07:12.570 align:start position:0%
+you move I contain it from one
+environment<00:07:11.410><c> to</c><00:07:11.710><c> the</c><00:07:11.800><c> next</c><00:07:11.860><c> you</c><00:07:12.190><c> can</c><00:07:12.340><c> change</c>
+
+00:07:12.570 --> 00:07:12.580 align:start position:0%
+environment to the next you can change
+ 
+
+00:07:12.580 --> 00:07:15.840 align:start position:0%
+environment to the next you can change
+things<00:07:12.910><c> like</c><00:07:13.030><c> database</c><00:07:13.900><c> URLs</c><00:07:14.610><c> those</c><00:07:15.610><c> sort</c><00:07:15.820><c> of</c>
+
+00:07:15.840 --> 00:07:15.850 align:start position:0%
+things like database URLs those sort of
+ 
+
+00:07:15.850 --> 00:07:21.170 align:start position:0%
+things like database URLs those sort of
+things<00:07:17.250><c> but</c><00:07:18.250><c> it's</c><00:07:18.400><c> also</c><00:07:18.520><c> I</c><00:07:18.880><c> say</c><00:07:19.330><c> pretty</c><00:07:19.780><c> small</c>
+
+00:07:21.170 --> 00:07:21.180 align:start position:0%
+things but it's also I say pretty small
+ 
+
+00:07:21.180 --> 00:07:25.590 align:start position:0%
+things but it's also I say pretty small
+so<00:07:22.180><c> to</c><00:07:22.960><c> run</c><00:07:23.080><c> it</c><00:07:23.260><c> you</c><00:07:24.090><c> basically</c><00:07:25.090><c> take</c><00:07:25.330><c> the</c><00:07:25.420><c> jar</c>
+
+00:07:25.590 --> 00:07:25.600 align:start position:0%
+so to run it you basically take the jar
+ 
+
+00:07:25.600 --> 00:07:29.850 align:start position:0%
+so to run it you basically take the jar
+file<00:07:26.580><c> you</c><00:07:27.580><c> run</c><00:07:27.730><c> -</c><00:07:28.090><c> jar</c><00:07:28.450><c> pie</c><00:07:28.990><c> or</c><00:07:29.110><c> micro</c><00:07:29.410><c> jar</c><00:07:29.620><c> and</c>
+
+00:07:29.850 --> 00:07:29.860 align:start position:0%
+file you run - jar pie or micro jar and
+ 
+
+00:07:29.860 --> 00:07:31.170 align:start position:0%
+file you run - jar pie or micro jar and
+then<00:07:29.980><c> deploy</c><00:07:30.250><c> what</c><00:07:30.580><c> would</c><00:07:30.730><c> be</c><00:07:30.850><c> a</c><00:07:30.880><c> standard</c>
+
+00:07:31.170 --> 00:07:31.180 align:start position:0%
+then deploy what would be a standard
+ 
+
+00:07:31.180 --> 00:07:34.560 align:start position:0%
+then deploy what would be a standard
+java<00:07:31.960><c> ee</c><00:07:32.370><c> deployment</c><00:07:33.370><c> artifact</c><00:07:33.790><c> so</c><00:07:34.300><c> this</c><00:07:34.480><c> is</c>
+
+00:07:34.560 --> 00:07:34.570 align:start position:0%
+java ee deployment artifact so this is
+ 
+
+00:07:34.570 --> 00:07:37.730 align:start position:0%
+java ee deployment artifact so this is
+what's<00:07:34.720><c> happening</c><00:07:35.110><c> on</c><00:07:35.230><c> on</c><00:07:35.470><c> these</c><00:07:35.650><c> devices</c><00:07:36.190><c> so</c>
+
+00:07:37.730 --> 00:07:37.740 align:start position:0%
+what's happening on on these devices so
+ 
+
+00:07:37.740 --> 00:07:42.750 align:start position:0%
+what's happening on on these devices so
+on<00:07:38.740><c> this</c><00:07:38.890><c> one</c><00:07:39.070><c> we</c><00:07:39.190><c> just</c><00:07:39.400><c> have</c><00:07:40.590><c> we</c><00:07:41.590><c> have</c><00:07:41.710><c> an</c><00:07:41.830><c> EJB</c>
+
+00:07:42.750 --> 00:07:42.760 align:start position:0%
+on this one we just have we have an EJB
+ 
+
+00:07:42.760 --> 00:07:46.410 align:start position:0%
+on this one we just have we have an EJB
+so<00:07:44.250><c> you</c><00:07:45.250><c> know</c><00:07:45.340><c> people</c><00:07:45.970><c> don't</c><00:07:46.120><c> think</c><00:07:46.270><c> that</c>
+
+00:07:46.410 --> 00:07:46.420 align:start position:0%
+so you know people don't think that
+ 
+
+00:07:46.420 --> 00:07:48.120 align:start position:0%
+so you know people don't think that
+people<00:07:46.870><c> still</c><00:07:46.990><c> use</c><00:07:47.140><c> agb's</c><00:07:47.590><c> but</c><00:07:47.860><c> it's</c><00:07:47.980><c> very</c>
+
+00:07:48.120 --> 00:07:48.130 align:start position:0%
+people still use agb's but it's very
+ 
+
+00:07:48.130 --> 00:07:51.180 align:start position:0%
+people still use agb's but it's very
+scrapped<00:07:49.030><c> powerful</c><00:07:49.420><c> technology</c><00:07:49.930><c> and</c><00:07:50.140><c> this</c><00:07:51.040><c> is</c>
+
+00:07:51.180 --> 00:07:51.190 align:start position:0%
+scrapped powerful technology and this is
+ 
+
+00:07:51.190 --> 00:07:53.400 align:start position:0%
+scrapped powerful technology and this is
+basically<00:07:51.550><c> running</c><00:07:51.790><c> an</c><00:07:51.910><c> EJB</c><00:07:52.270><c> tiny</c><00:07:52.510><c> beam</c><00:07:52.780><c> that</c>
+
+00:07:53.400 --> 00:07:53.410 align:start position:0%
+basically running an EJB tiny beam that
+ 
+
+00:07:53.410 --> 00:07:56.970 align:start position:0%
+basically running an EJB tiny beam that
+measures<00:07:53.740><c> a</c><00:07:53.800><c> sensor</c><00:07:54.280><c> and</c><00:07:55.210><c> also</c><00:07:55.590><c> pushes</c><00:07:56.590><c> out</c><00:07:56.740><c> to</c>
+
+00:07:56.970 --> 00:07:56.980 align:start position:0%
+measures a sensor and also pushes out to
+ 
+
+00:07:56.980 --> 00:07:58.350 align:start position:0%
+measures a sensor and also pushes out to
+the<00:07:57.160><c> frame</c><00:07:57.400><c> buffer</c><00:07:57.610><c> which</c><00:07:57.850><c> is</c><00:07:57.880><c> these</c><00:07:58.120><c> picks</c>
+
+00:07:58.350 --> 00:07:58.360 align:start position:0%
+the frame buffer which is these picks
+ 
+
+00:07:58.360 --> 00:08:00.960 align:start position:0%
+the frame buffer which is these picks
+mutual<00:07:58.780><c> these</c><00:07:58.900><c> LEDs</c><00:07:59.620><c> on</c><00:07:59.770><c> the</c><00:07:59.800><c> front</c><00:07:59.860><c> it</c><00:08:00.790><c> does</c>
+
+00:08:00.960 --> 00:08:00.970 align:start position:0%
+mutual these LEDs on the front it does
+ 
+
+00:08:00.970 --> 00:08:05.070 align:start position:0%
+mutual these LEDs on the front it does
+that<00:08:01.060><c> on</c><00:08:01.150><c> a</c><00:08:01.180><c> time</c><00:08:01.420><c> basis</c><00:08:03.660><c> it's</c><00:08:04.660><c> using</c>
+
+00:08:05.070 --> 00:08:05.080 align:start position:0%
+that on a time basis it's using
+ 
+
+00:08:05.080 --> 00:08:09.090 align:start position:0%
+that on a time basis it's using
+internally<00:08:07.350><c> some</c><00:08:08.350><c> of</c><00:08:08.440><c> the</c><00:08:08.500><c> code</c><00:08:08.650><c> from</c><00:08:08.800><c> your</c>
+
+00:08:09.090 --> 00:08:09.100 align:start position:0%
+internally some of the code from your
+ 
+
+00:08:09.100 --> 00:08:12.930 align:start position:0%
+internally some of the code from your
+attack<00:08:09.340><c> but</c><00:08:09.370><c> does</c><00:08:09.880><c> the</c><00:08:10.210><c> GPIO</c><00:08:10.720><c> work</c><00:08:11.710><c> to</c><00:08:12.580><c> access</c>
+
+00:08:12.930 --> 00:08:12.940 align:start position:0%
+attack but does the GPIO work to access
+ 
+
+00:08:12.940 --> 00:08:15.060 align:start position:0%
+attack but does the GPIO work to access
+the<00:08:13.030><c> GPIO</c><00:08:13.450><c> on</c><00:08:13.720><c> the</c><00:08:13.900><c> Raspberry</c><00:08:14.200><c> Pi</c><00:08:14.230><c> so</c><00:08:14.890><c> it's</c>
+
+00:08:15.060 --> 00:08:15.070 align:start position:0%
+the GPIO on the Raspberry Pi so it's
+ 
+
+00:08:15.070 --> 00:08:17.670 align:start position:0%
+the GPIO on the Raspberry Pi so it's
+taking<00:08:15.370><c> Eurotech</c><00:08:15.760><c> code</c><00:08:16.330><c> from</c><00:08:16.510><c> the</c><00:08:16.680><c> koomer</c>
+
+00:08:17.670 --> 00:08:17.680 align:start position:0%
+taking Eurotech code from the koomer
+ 
+
+00:08:17.680 --> 00:08:21.150 align:start position:0%
+taking Eurotech code from the koomer
+project<00:08:18.100><c> I</c><00:08:18.520><c> believe</c><00:08:19.800><c> hacking</c><00:08:20.800><c> it</c><00:08:20.890><c> around</c><00:08:21.040><c> a</c>
+
+00:08:21.150 --> 00:08:21.160 align:start position:0%
+project I believe hacking it around a
+ 
+
+00:08:21.160 --> 00:08:22.650 align:start position:0%
+project I believe hacking it around a
+bit<00:08:21.310><c> to</c><00:08:21.460><c> get</c><00:08:21.640><c> rid</c><00:08:21.700><c> of</c><00:08:21.820><c> all</c><00:08:21.970><c> the</c><00:08:22.120><c> camel</c><00:08:22.450><c> stuff</c>
+
+00:08:22.650 --> 00:08:22.660 align:start position:0%
+bit to get rid of all the camel stuff
+ 
+
+00:08:22.660 --> 00:08:27.750 align:start position:0%
+bit to get rid of all the camel stuff
+and<00:08:23.010><c> just</c><00:08:24.010><c> go</c><00:08:24.250><c> and</c><00:08:24.400><c> working</c><00:08:24.880><c> directly</c><00:08:25.480><c> on</c><00:08:26.760><c> GPIO</c>
+
+00:08:27.750 --> 00:08:27.760 align:start position:0%
+and just go and working directly on GPIO
+ 
+
+00:08:27.760 --> 00:08:34.320 align:start position:0%
+and just go and working directly on GPIO
+since<00:08:28.500><c> so</c><00:08:32.640><c> and</c><00:08:33.640><c> there's</c><00:08:33.849><c> oh</c><00:08:33.910><c> that's</c><00:08:34.060><c> ran</c>
+
+00:08:34.320 --> 00:08:34.330 align:start position:0%
+since so and there's oh that's ran
+ 
+
+00:08:34.330 --> 00:08:36.900 align:start position:0%
+since so and there's oh that's ran
+essentially<00:08:35.050><c> just</c><00:08:35.260><c> as</c><00:08:35.470><c> Empire</c><00:08:36.250><c> a</c><00:08:36.340><c> micro</c><00:08:36.700><c> jar</c>
+
+00:08:36.900 --> 00:08:36.910 align:start position:0%
+essentially just as Empire a micro jar
+ 
+
+00:08:36.910 --> 00:08:43.260 align:start position:0%
+essentially just as Empire a micro jar
+like<00:08:37.630><c> that</c><00:08:40.590><c> so</c><00:08:41.590><c> like</c><00:08:41.680><c> say</c><00:08:41.860><c> so</c><00:08:41.919><c> what</c><00:08:42.160><c> we</c><00:08:42.250><c> have</c><00:08:42.400><c> we</c>
+
+00:08:43.260 --> 00:08:43.270 align:start position:0%
+like that so like say so what we have we
+ 
+
+00:08:43.270 --> 00:08:46.860 align:start position:0%
+like that so like say so what we have we
+have<00:08:43.419><c> one</c><00:08:44.140><c> micro</c><00:08:44.500><c> here</c><00:08:44.710><c> running</c><00:08:44.920><c> an</c><00:08:45.070><c> EJB</c><00:08:45.870><c> it's</c>
+
+00:08:46.860 --> 00:08:46.870 align:start position:0%
+have one micro here running an EJB it's
+ 
+
+00:08:46.870 --> 00:08:49.140 align:start position:0%
+have one micro here running an EJB it's
+measuring<00:08:47.170><c> the</c><00:08:47.200><c> sensors</c><00:08:47.590><c> from</c><00:08:47.680><c> humidity</c><00:08:48.150><c> we</c>
+
+00:08:49.140 --> 00:08:49.150 align:start position:0%
+measuring the sensors from humidity we
+ 
+
+00:08:49.150 --> 00:08:52.200 align:start position:0%
+measuring the sensors from humidity we
+have<00:08:49.330><c> another</c><00:08:50.400><c> PI</c><00:08:51.400><c> R</c><00:08:51.550><c> here</c><00:08:51.820><c> running</c><00:08:52.060><c> an</c>
+
+00:08:52.200 --> 00:08:52.210 align:start position:0%
+have another PI R here running an
+ 
+
+00:08:52.210 --> 00:08:53.350 align:start position:0%
+have another PI R here running an
+embedded<00:08:52.540><c> browser</c>
+
+00:08:53.350 --> 00:08:53.360 align:start position:0%
+embedded browser
+ 
+
+00:08:53.360 --> 00:08:58.480 align:start position:0%
+embedded browser
+there<00:08:53.540><c> on</c><00:08:53.690><c> on</c><00:08:53.959><c> raspberry</c><00:08:54.320><c> pies</c><00:08:54.529><c> and</c><00:08:57.370><c> you'd</c><00:08:58.370><c> be</c>
+
+00:08:58.480 --> 00:08:58.490 align:start position:0%
+there on on raspberry pies and you'd be
+ 
+
+00:08:58.490 --> 00:09:01.319 align:start position:0%
+there on on raspberry pies and you'd be
+able<00:08:58.550><c> to</c><00:08:58.640><c> see</c><00:08:58.850><c> from</c><00:08:59.000><c> there</c><00:08:59.320><c> but</c><00:09:00.320><c> if</c><00:09:00.440><c> I</c>
+
+00:09:01.319 --> 00:09:01.329 align:start position:0%
+able to see from there but if I
+ 
+
+00:09:01.329 --> 00:09:06.610 align:start position:0%
+able to see from there but if I
+effectively<00:09:02.350><c> blow</c><00:09:03.350><c> one</c><00:09:03.500><c> here</c><00:09:05.320><c> you</c><00:09:06.320><c> can</c><00:09:06.470><c> see</c>
+
+00:09:06.610 --> 00:09:06.620 align:start position:0%
+effectively blow one here you can see
+ 
+
+00:09:06.620 --> 00:09:08.259 align:start position:0%
+effectively blow one here you can see
+that<00:09:06.829><c> obviously</c><00:09:07.370><c> the</c><00:09:07.760><c> humidity</c><00:09:08.149><c> measurement</c>
+
+00:09:08.259 --> 00:09:08.269 align:start position:0%
+that obviously the humidity measurement
+ 
+
+00:09:08.269 --> 00:09:11.490 align:start position:0%
+that obviously the humidity measurement
+has<00:09:09.079><c> gone</c><00:09:09.320><c> up</c><00:09:09.470><c> so</c><00:09:10.310><c> I</c><00:09:10.339><c> can</c><00:09:10.670><c> actually</c><00:09:10.790><c> put</c><00:09:11.060><c> that</c>
+
+00:09:11.490 --> 00:09:11.500 align:start position:0%
+has gone up so I can actually put that
+ 
+
+00:09:11.500 --> 00:09:36.900 align:start position:0%
+has gone up so I can actually put that
+on<00:09:12.500><c> the</c><00:09:12.649><c> screen</c><00:09:12.740><c> I</c><00:09:27.850><c> can</c><00:09:28.850><c> remember</c><00:09:29.060><c> the</c><00:09:29.300><c> horror</c>
+
+00:09:36.900 --> 00:09:36.910 align:start position:0%
+ 
+ 
+
+00:09:36.910 --> 00:10:00.370 align:start position:0%
+ 
+why<00:09:37.910><c> didn't</c><00:09:38.149><c> I</c><00:09:38.209><c> remember</c><00:09:58.449><c> okay</c><00:09:59.449><c> so</c><00:10:00.079><c> that's</c><00:10:00.230><c> the</c>
+
+00:10:00.370 --> 00:10:00.380 align:start position:0%
+why didn't I remember okay so that's the
+ 
+
+00:10:00.380 --> 00:10:03.449 align:start position:0%
+why didn't I remember okay so that's the
+same<00:10:00.589><c> basically</c><00:10:01.459><c> accessing</c><00:10:01.850><c> the</c><00:10:02.149><c> brightly</c>
+
+00:10:03.449 --> 00:10:03.459 align:start position:0%
+same basically accessing the brightly
+ 
+
+00:10:03.459 --> 00:10:06.430 align:start position:0%
+same basically accessing the brightly
+shakaar<00:10:04.459><c> te</c><00:10:04.610><c> runtime</c><00:10:05.060><c> running</c><00:10:05.329><c> on</c><00:10:05.480><c> the</c><00:10:05.870><c> on</c><00:10:06.199><c> the</c>
+
+00:10:06.430 --> 00:10:06.440 align:start position:0%
+shakaar te runtime running on the on the
+ 
+
+00:10:06.440 --> 00:10:11.650 align:start position:0%
+shakaar te runtime running on the on the
+raspberry<00:10:07.250><c> pi</c><00:10:07.779><c> so</c><00:10:08.779><c> again</c><00:10:08.930><c> if</c><00:10:09.050><c> I</c><00:10:09.970><c> and</c><00:10:10.970><c> that</c><00:10:11.149><c> you</c>
+
+00:10:11.650 --> 00:10:11.660 align:start position:0%
+raspberry pi so again if I and that you
+ 
+
+00:10:11.660 --> 00:10:16.060 align:start position:0%
+raspberry pi so again if I and that you
+can<00:10:11.810><c> see</c><00:10:11.990><c> that</c><00:10:12.910><c> that</c><00:10:13.910><c> it's</c><00:10:14.060><c> generating</c><00:10:15.070><c> the</c>
+
+00:10:16.060 --> 00:10:16.070 align:start position:0%
+can see that that it's generating the
+ 
+
+00:10:16.070 --> 00:10:25.660 align:start position:0%
+can see that that it's generating the
+data<00:10:18.339><c> okay</c><00:10:19.449><c> so</c><00:10:23.589><c> also</c><00:10:24.589><c> attempted</c><00:10:25.040><c> to</c><00:10:25.310><c> run</c><00:10:25.430><c> add</c><00:10:25.550><c> a</c>
+
+00:10:25.660 --> 00:10:25.670 align:start position:0%
+data okay so also attempted to run add a
+ 
+
+00:10:25.670 --> 00:10:27.069 align:start position:0%
+data okay so also attempted to run add a
+console<00:10:26.060><c> on</c><00:10:26.149><c> here</c><00:10:26.360><c> but</c><00:10:26.510><c> it's</c><00:10:26.660><c> not</c><00:10:26.810><c> something</c>
+
+00:10:27.069 --> 00:10:27.079 align:start position:0%
+console on here but it's not something
+ 
+
+00:10:27.079 --> 00:10:35.199 align:start position:0%
+console on here but it's not something
+working<00:10:29.529><c> that</c><00:10:30.529><c> isn't</c><00:10:30.740><c> going</c><00:10:30.829><c> to</c><00:10:30.920><c> work</c><00:10:31.070><c> so</c><00:10:34.209><c> what</c>
+
+00:10:35.199 --> 00:10:35.209 align:start position:0%
+working that isn't going to work so what
+ 
+
+00:10:35.209 --> 00:10:37.210 align:start position:0%
+working that isn't going to work so what
+I<00:10:35.240><c> wanted</c><00:10:35.570><c> to</c><00:10:35.630><c> show</c><00:10:35.810><c> was</c><00:10:35.990><c> that</c><00:10:36.019><c> actually</c><00:10:36.350><c> these</c>
+
+00:10:37.210 --> 00:10:37.220 align:start position:0%
+I wanted to show was that actually these
+ 
+
+00:10:37.220 --> 00:10:41.110 align:start position:0%
+I wanted to show was that actually these
+are<00:10:37.839><c> really</c><00:10:38.839><c> small</c><00:10:39.079><c> so</c><00:10:39.410><c> the</c><00:10:39.529><c> heap</c><00:10:39.709><c> size</c><00:10:40.089><c> so</c><00:10:41.089><c> I</c>
+
+00:10:41.110 --> 00:10:41.120 align:start position:0%
+are really small so the heap size so I
+ 
+
+00:10:41.120 --> 00:10:43.210 align:start position:0%
+are really small so the heap size so I
+was<00:10:41.240><c> trying</c><00:10:41.390><c> to</c><00:10:41.420><c> X</c><00:10:41.630><c> across</c><00:10:41.930><c> from</c><00:10:42.560><c> my</c><00:10:42.740><c> raspberry</c>
+
+00:10:43.210 --> 00:10:43.220 align:start position:0%
+was trying to X across from my raspberry
+ 
+
+00:10:43.220 --> 00:10:45.100 align:start position:0%
+was trying to X across from my raspberry
+pi<00:10:43.399><c> to</c><00:10:43.459><c> 4</c><00:10:43.670><c> and</c><00:10:43.850><c> a</c><00:10:43.970><c> console</c><00:10:44.390><c> on</c><00:10:44.480><c> the</c><00:10:44.540><c> laptop</c><00:10:44.959><c> with</c>
+
+00:10:45.100 --> 00:10:45.110 align:start position:0%
+pi to 4 and a console on the laptop with
+ 
+
+00:10:45.110 --> 00:10:49.870 align:start position:0%
+pi to 4 and a console on the laptop with
+us<00:10:45.230><c> not</c><00:10:45.949><c> refreshing</c><00:10:46.519><c> crop</c><00:10:46.850><c> it</c><00:10:47.060><c> so</c><00:10:48.640><c> the</c><00:10:49.640><c> pie</c>
+
+00:10:49.870 --> 00:10:49.880 align:start position:0%
+us not refreshing crop it so the pie
+ 
+
+00:10:49.880 --> 00:10:51.490 align:start position:0%
+us not refreshing crop it so the pie
+maker<00:10:50.149><c> like</c><00:10:50.420><c> say</c><00:10:50.570><c> is</c><00:10:50.660><c> running</c><00:10:50.899><c> in</c><00:10:50.990><c> about</c><00:10:51.079><c> to</c><00:10:51.380><c> do</c>
+
+00:10:51.490 --> 00:10:51.500 align:start position:0%
+maker like say is running in about to do
+ 
+
+00:10:51.500 --> 00:10:53.230 align:start position:0%
+maker like say is running in about to do
+this<00:10:51.709><c> this</c><00:10:52.160><c> sensor</c><00:10:52.459><c> is</c><00:10:52.490><c> running</c><00:10:52.730><c> about</c><00:10:52.850><c> forty</c>
+
+00:10:53.230 --> 00:10:53.240 align:start position:0%
+this this sensor is running about forty
+ 
+
+00:10:53.240 --> 00:10:55.300 align:start position:0%
+this this sensor is running about forty
+forty<00:10:53.690><c> megabytes</c><00:10:53.839><c> of</c><00:10:54.170><c> heat</c><00:10:54.380><c> so</c><00:10:55.100><c> it's</c><00:10:55.220><c> not</c>
+
+00:10:55.300 --> 00:10:55.310 align:start position:0%
+forty megabytes of heat so it's not
+ 
+
+00:10:55.310 --> 00:10:57.970 align:start position:0%
+forty megabytes of heat so it's not
+generating<00:10:55.880><c> a</c><00:10:55.970><c> huge</c><00:10:56.240><c> you</c><00:10:57.170><c> know</c><00:10:57.199><c> load</c><00:10:57.769><c> or</c>
+
+00:10:57.970 --> 00:10:57.980 align:start position:0%
+generating a huge you know load or
+ 
+
+00:10:57.980 --> 00:10:59.980 align:start position:0%
+generating a huge you know load or
+impact<00:10:58.339><c> on</c><00:10:58.550><c> the</c><00:10:58.699><c> Raspberry</c><00:10:59.390><c> Pi</c><00:10:59.420><c> I</c><00:10:59.570><c> know</c><00:10:59.810><c> that</c>
+
+00:10:59.980 --> 00:10:59.990 align:start position:0%
+impact on the Raspberry Pi I know that
+ 
+
+00:10:59.990 --> 00:11:02.439 align:start position:0%
+impact on the Raspberry Pi I know that
+they're<00:11:00.290><c> quite</c><00:11:00.470><c> large</c><00:11:00.829><c> devices</c><00:11:01.339><c> in</c><00:11:01.670><c> the</c><00:11:01.790><c> IOT</c>
+
+00:11:02.439 --> 00:11:02.449 align:start position:0%
+they're quite large devices in the IOT
+ 
+
+00:11:02.449 --> 00:11:05.530 align:start position:0%
+they're quite large devices in the IOT
+world<00:11:03.459><c> but</c><00:11:04.459><c> it's</c><00:11:04.579><c> plenty</c><00:11:04.910><c> small</c><00:11:05.180><c> enough</c><00:11:05.360><c> to</c>
+
+00:11:05.530 --> 00:11:05.540 align:start position:0%
+world but it's plenty small enough to
+ 
+
+00:11:05.540 --> 00:11:06.650 align:start position:0%
+world but it's plenty small enough to
+run
+
+00:11:06.650 --> 00:11:06.660 align:start position:0%
+run
+ 
+
+00:11:06.660 --> 00:11:15.250 align:start position:0%
+run
+on<00:11:07.380><c> there</c><00:11:11.090><c> so</c><00:11:12.620><c> any</c><00:11:13.620><c> questions</c><00:11:14.010><c> on</c><00:11:14.190><c> setup</c>
+
+00:11:15.250 --> 00:11:15.260 align:start position:0%
+on there so any questions on setup
+ 
+
+00:11:15.260 --> 00:11:17.930 align:start position:0%
+on there so any questions on setup
+before<00:11:16.260><c> I</c><00:11:16.440><c> sort</c><00:11:16.710><c> of</c><00:11:16.770><c> have</c><00:11:16.890><c> briefly</c><00:11:17.550><c> look</c><00:11:17.760><c> at</c>
+
+00:11:17.930 --> 00:11:17.940 align:start position:0%
+before I sort of have briefly look at
+ 
+
+00:11:17.940 --> 00:11:32.680 align:start position:0%
+before I sort of have briefly look at
+some<00:11:18.660><c> of</c><00:11:18.750><c> the</c><00:11:18.840><c> code</c><00:11:19.020><c> involved</c><00:11:29.930><c> so</c><00:11:30.930><c> Mike</c><00:11:31.620><c> said</c>
+
+00:11:32.680 --> 00:11:32.690 align:start position:0%
+some of the code involved so Mike said
+ 
+
+00:11:32.690 --> 00:11:37.940 align:start position:0%
+some of the code involved so Mike said
+hey<00:11:33.690><c> are</c><00:11:33.810><c> micro</c><00:11:34.170><c> itself</c><00:11:34.500><c> is</c><00:11:35.030><c> a</c><00:11:36.830><c> runtime</c><00:11:37.830><c> that</c>
+
+00:11:37.940 --> 00:11:37.950 align:start position:0%
+hey are micro itself is a runtime that
+ 
+
+00:11:37.950 --> 00:11:40.250 align:start position:0%
+hey are micro itself is a runtime that
+supports<00:11:38.220><c> the</c><00:11:38.280><c> vast</c><00:11:38.460><c> majority</c><00:11:38.580><c> of</c><00:11:39.140><c> while</c><00:11:40.140><c> our</c>
+
+00:11:40.250 --> 00:11:40.260 align:start position:0%
+supports the vast majority of while our
+ 
+
+00:11:40.260 --> 00:11:42.710 align:start position:0%
+supports the vast majority of while our
+java<00:11:40.470><c> ee</c><00:11:40.620><c> api</c><00:11:40.980><c> is</c><00:11:41.100><c> so</c><00:11:41.580><c> it</c><00:11:41.880><c> covers</c><00:11:42.060><c> it</c><00:11:42.480><c> covers</c>
+
+00:11:42.710 --> 00:11:42.720 align:start position:0%
+java ee api is so it covers it covers
+ 
+
+00:11:42.720 --> 00:11:48.020 align:start position:0%
+java ee api is so it covers it covers
+all<00:11:42.810><c> the</c><00:11:42.840><c> web</c><00:11:43.050><c> api's</c><00:11:45.620><c> it</c><00:11:46.620><c> covers</c><00:11:47.070><c> GE</c><00:11:47.250><c> JB's</c><00:11:47.760><c> and</c>
+
+00:11:48.020 --> 00:11:48.030 align:start position:0%
+all the web api's it covers GE JB's and
+ 
+
+00:11:48.030 --> 00:11:51.110 align:start position:0%
+all the web api's it covers GE JB's and
+what<00:11:48.360><c> we</c><00:11:48.450><c> have</c><00:11:48.600><c> running</c><00:11:49.410><c> on</c><00:11:49.560><c> the</c><00:11:49.680><c> sensor</c><00:11:50.130><c> is</c><00:11:50.340><c> a</c>
+
+00:11:51.110 --> 00:11:51.120 align:start position:0%
+what we have running on the sensor is a
+ 
+
+00:11:51.120 --> 00:11:54.320 align:start position:0%
+what we have running on the sensor is a
+simple<00:11:51.720><c> singleton</c><00:11:52.260><c> egb</c><00:11:52.740><c> timer</c><00:11:53.060><c> so</c><00:11:54.060><c> the</c><00:11:54.180><c> code</c>
+
+00:11:54.320 --> 00:11:54.330 align:start position:0%
+simple singleton egb timer so the code
+ 
+
+00:11:54.330 --> 00:11:57.040 align:start position:0%
+simple singleton egb timer so the code
+is<00:11:54.360><c> pretty</c><00:11:54.750><c> simple</c>
+
+00:11:57.040 --> 00:11:57.050 align:start position:0%
+ 
+ 
+
+00:11:57.050 --> 00:12:04.580 align:start position:0%
+ 
+so<00:11:58.050><c> we</c><00:11:58.680><c> have</c><00:11:58.890><c> a</c><00:12:00.140><c> schedule</c><00:12:01.140><c> on</c><00:12:01.290><c> the</c><00:12:01.680><c> EJB</c><00:12:03.530><c> so</c><00:12:04.530><c> on</c>
+
+00:12:04.580 --> 00:12:04.590 align:start position:0%
+so we have a schedule on the EJB so on
+ 
+
+00:12:04.590 --> 00:12:08.150 align:start position:0%
+so we have a schedule on the EJB so on
+there<00:12:04.800><c> which</c><00:12:05.160><c> is</c><00:12:05.340><c> basically</c><00:12:05.850><c> running</c><00:12:07.160><c> running</c>
+
+00:12:08.150 --> 00:12:08.160 align:start position:0%
+there which is basically running running
+ 
+
+00:12:08.160 --> 00:12:13.450 align:start position:0%
+there which is basically running running
+every<00:12:08.400><c> second</c><00:12:08.760><c> and</c><00:12:10.130><c> that</c><00:12:11.130><c> is</c><00:12:11.570><c> running</c><00:12:12.570><c> that</c>
+
+00:12:13.450 --> 00:12:13.460 align:start position:0%
+every second and that is running that
+ 
+
+00:12:13.460 --> 00:12:15.410 align:start position:0%
+every second and that is running that
+basically<00:12:14.460><c> a</c><00:12:14.550><c> tiny</c><00:12:14.730><c> small</c><00:12:14.970><c> piece</c><00:12:15.120><c> of</c><00:12:15.150><c> code</c>
+
+00:12:15.410 --> 00:12:15.420 align:start position:0%
+basically a tiny small piece of code
+ 
+
+00:12:15.420 --> 00:12:18.770 align:start position:0%
+basically a tiny small piece of code
+which<00:12:16.200><c> is</c><00:12:16.500><c> creating</c><00:12:17.340><c> a</c><00:12:17.730><c> new</c><00:12:18.150><c> measurement</c><00:12:18.510><c> and</c>
+
+00:12:18.770 --> 00:12:18.780 align:start position:0%
+which is creating a new measurement and
+ 
+
+00:12:18.780 --> 00:12:21.410 align:start position:0%
+which is creating a new measurement and
+it's<00:12:19.500><c> talking</c><00:12:19.680><c> to</c><00:12:19.890><c> the</c><00:12:19.980><c> sensor</c><00:12:20.370><c> itself</c><00:12:20.520><c> to</c><00:12:20.940><c> get</c>
+
+00:12:21.410 --> 00:12:21.420 align:start position:0%
+it's talking to the sensor itself to get
+ 
+
+00:12:21.420 --> 00:12:23.060 align:start position:0%
+it's talking to the sensor itself to get
+that<00:12:21.570><c> measurement</c><00:12:21.840><c> and</c><00:12:22.050><c> again</c><00:12:22.380><c> like</c><00:12:22.890><c> I</c><00:12:22.920><c> said</c>
+
+00:12:23.060 --> 00:12:23.070 align:start position:0%
+that measurement and again like I said
+ 
+
+00:12:23.070 --> 00:12:26.200 align:start position:0%
+that measurement and again like I said
+that<00:12:23.250><c> that</c><00:12:23.490><c> code</c><00:12:23.760><c> is</c><00:12:24.110><c> some</c><00:12:25.110><c> of</c><00:12:25.230><c> the</c><00:12:25.350><c> Eurotech</c>
+
+00:12:26.200 --> 00:12:26.210 align:start position:0%
+that that code is some of the Eurotech
+ 
+
+00:12:26.210 --> 00:12:28.850 align:start position:0%
+that that code is some of the Eurotech
+raspberry<00:12:27.210><c> pi</c><00:12:27.330><c> code</c><00:12:27.600><c> to</c><00:12:28.020><c> interface</c><00:12:28.410><c> to</c><00:12:28.740><c> the</c>
+
+00:12:28.850 --> 00:12:28.860 align:start position:0%
+raspberry pi code to interface to the
+ 
+
+00:12:28.860 --> 00:12:33.650 align:start position:0%
+raspberry pi code to interface to the
+sense<00:12:29.520><c> hat</c><00:12:30.830><c> it</c><00:12:31.830><c> does</c><00:12:31.980><c> that</c><00:12:32.220><c> and</c><00:12:32.550><c> then</c><00:12:32.910><c> from</c><00:12:33.540><c> the</c>
+
+00:12:33.650 --> 00:12:33.660 align:start position:0%
+sense hat it does that and then from the
+ 
+
+00:12:33.660 --> 00:12:37.030 align:start position:0%
+sense hat it does that and then from the
+network<00:12:33.960><c> perspective</c><00:12:34.110><c> it's</c><00:12:34.980><c> using</c><00:12:35.460><c> a</c>
+
+00:12:37.030 --> 00:12:37.040 align:start position:0%
+network perspective it's using a
+ 
+
+00:12:37.040 --> 00:12:41.150 align:start position:0%
+network perspective it's using a
+specific<00:12:38.040><c> feature</c><00:12:38.310><c> of</c><00:12:39.050><c> higher</c><00:12:40.050><c> on</c><00:12:40.170><c> my</c><00:12:40.200><c> PI</c><00:12:41.040><c> or</c>
+
+00:12:41.150 --> 00:12:41.160 align:start position:0%
+specific feature of higher on my PI or
+ 
+
+00:12:41.160 --> 00:12:45.380 align:start position:0%
+specific feature of higher on my PI or
+micro<00:12:42.530><c> which</c><00:12:43.530><c> is</c><00:12:43.770><c> an</c><00:12:43.950><c> extension</c><00:12:44.280><c> to</c><00:12:44.430><c> CDI</c><00:12:44.850><c> CDI</c>
+
+00:12:45.380 --> 00:12:45.390 align:start position:0%
+micro which is an extension to CDI CDI
+ 
+
+00:12:45.390 --> 00:12:49.010 align:start position:0%
+micro which is an extension to CDI CDI
+is<00:12:46.640><c> component</c><00:12:47.640><c> dependency</c><00:12:48.210><c> injection</c><00:12:48.660><c> but</c><00:12:48.900><c> it</c>
+
+00:12:49.010 --> 00:12:49.020 align:start position:0%
+is component dependency injection but it
+ 
+
+00:12:49.020 --> 00:12:52.910 align:start position:0%
+is component dependency injection but it
+supports<00:12:49.170><c> events</c><00:12:49.860><c> and</c><00:12:50.160><c> Perl</c><00:12:50.730><c> micro</c><00:12:51.090><c> has</c><00:12:51.920><c> an</c>
+
+00:12:52.910 --> 00:12:52.920 align:start position:0%
+supports events and Perl micro has an
+ 
+
+00:12:52.920 --> 00:12:54.830 align:start position:0%
+supports events and Perl micro has an
+extension<00:12:53.280><c> to</c><00:12:53.520><c> that</c><00:12:53.550><c> which</c><00:12:53.850><c> supports</c><00:12:54.510><c> events</c>
+
+00:12:54.830 --> 00:12:54.840 align:start position:0%
+extension to that which supports events
+ 
+
+00:12:54.840 --> 00:12:58.900 align:start position:0%
+extension to that which supports events
+across<00:12:55.020><c> the</c><00:12:55.200><c> network</c><00:12:55.530><c> okay</c><00:12:56.340><c> so</c><00:12:57.230><c> this</c><00:12:58.230><c> outbound</c>
+
+00:12:58.900 --> 00:12:58.910 align:start position:0%
+across the network okay so this outbound
+ 
+
+00:12:58.910 --> 00:13:02.150 align:start position:0%
+across the network okay so this outbound
+annotation<00:12:59.910><c> tells</c><00:13:00.540><c> the</c><00:13:01.410><c> PI</c><00:13:01.560><c> or</c><00:13:01.680><c> a</c><00:13:01.710><c> runtime</c>
+
+00:13:02.150 --> 00:13:02.160 align:start position:0%
+annotation tells the PI or a runtime
+ 
+
+00:13:02.160 --> 00:13:05.240 align:start position:0%
+annotation tells the PI or a runtime
+that<00:13:02.460><c> this</c><00:13:02.730><c> this</c><00:13:03.720><c> event</c><00:13:04.320><c> that</c><00:13:04.680><c> I</c><00:13:04.710><c> might</c><00:13:04.980><c> fire</c>
+
+00:13:05.240 --> 00:13:05.250 align:start position:0%
+that this this event that I might fire
+ 
+
+00:13:05.250 --> 00:13:08.980 align:start position:0%
+that this this event that I might fire
+needs<00:13:05.550><c> to</c><00:13:05.640><c> be</c><00:13:05.700><c> spread</c><00:13:05.970><c> around</c><00:13:06.090><c> the</c><00:13:06.900><c> network</c>
+
+00:13:08.980 --> 00:13:08.990 align:start position:0%
+needs to be spread around the network
+ 
+
+00:13:08.990 --> 00:13:12.740 align:start position:0%
+needs to be spread around the network
+and<00:13:09.990><c> then</c><00:13:10.200><c> it</c><00:13:10.320><c> buyers</c><00:13:10.530><c> you</c><00:13:10.740><c> vent</c><00:13:11.180><c> there</c><00:13:12.180><c> in</c>
+
+00:13:12.740 --> 00:13:12.750 align:start position:0%
+and then it buyers you vent there in
+ 
+
+00:13:12.750 --> 00:13:14.840 align:start position:0%
+and then it buyers you vent there in
+that<00:13:12.870><c> line</c><00:13:13.020><c> of</c><00:13:13.140><c> code</c><00:13:13.290><c> and</c><00:13:13.500><c> then</c><00:13:14.250><c> that's</c><00:13:14.700><c> gone</c>
+
+00:13:14.840 --> 00:13:14.850 align:start position:0%
+that line of code and then that's gone
+ 
+
+00:13:14.850 --> 00:13:16.580 align:start position:0%
+that line of code and then that's gone
+that's<00:13:15.390><c> all</c><00:13:15.570><c> the</c><00:13:15.720><c> code</c><00:13:15.930><c> is</c><00:13:16.080><c> to</c><00:13:16.110><c> measure</c><00:13:16.470><c> the</c>
+
+00:13:16.580 --> 00:13:16.590 align:start position:0%
+that's all the code is to measure the
+ 
+
+00:13:16.590 --> 00:13:17.820 align:start position:0%
+that's all the code is to measure the
+actual
+
+00:13:17.820 --> 00:13:17.830 align:start position:0%
+actual
+ 
+
+00:13:17.830 --> 00:13:19.500 align:start position:0%
+actual
+[Music]
+
+00:13:19.500 --> 00:13:19.510 align:start position:0%
+[Music]
+ 
+
+00:13:19.510 --> 00:13:21.810 align:start position:0%
+[Music]
+humidity<00:13:19.900><c> and</c><00:13:20.890><c> that's</c><00:13:21.220><c> essentially</c><00:13:21.730><c> the</c>
+
+00:13:21.810 --> 00:13:21.820 align:start position:0%
+humidity and that's essentially the
+ 
+
+00:13:21.820 --> 00:13:24.690 align:start position:0%
+humidity and that's essentially the
+application<00:13:22.330><c> that's</c><00:13:22.930><c> running</c><00:13:23.050><c> on</c><00:13:23.290><c> that</c><00:13:23.700><c> black</c>
+
+00:13:24.690 --> 00:13:24.700 align:start position:0%
+application that's running on that black
+ 
+
+00:13:24.700 --> 00:13:27.390 align:start position:0%
+application that's running on that black
+raspberry<00:13:25.000><c> pi</c><00:13:25.150><c> just</c><00:13:26.020><c> it</c><00:13:26.800><c> hasn't</c><00:13:27.070><c> it</c><00:13:27.130><c> slightly</c>
+
+00:13:27.390 --> 00:13:27.400 align:start position:0%
+raspberry pi just it hasn't it slightly
+ 
+
+00:13:27.400 --> 00:13:29.310 align:start position:0%
+raspberry pi just it hasn't it slightly
+slightly<00:13:27.970><c> bit</c><00:13:28.180><c> more</c><00:13:28.330><c> code</c><00:13:28.540><c> just</c><00:13:28.780><c> to</c><00:13:28.900><c> drive</c><00:13:29.140><c> the</c>
+
+00:13:29.310 --> 00:13:29.320 align:start position:0%
+slightly bit more code just to drive the
+ 
+
+00:13:29.320 --> 00:13:31.920 align:start position:0%
+slightly bit more code just to drive the
+display<00:13:29.530><c> for</c><00:13:29.860><c> demo</c><00:13:30.100><c> purposes</c><00:13:30.610><c> so</c><00:13:31.600><c> it</c><00:13:31.750><c> just</c>
+
+00:13:31.920 --> 00:13:31.930 align:start position:0%
+display for demo purposes so it just
+ 
+
+00:13:31.930 --> 00:13:33.270 align:start position:0%
+display for demo purposes so it just
+sends<00:13:32.260><c> a</c><00:13:32.320><c> basically</c><00:13:32.590><c> a</c><00:13:32.650><c> string</c><00:13:32.920><c> out</c><00:13:33.100><c> to</c><00:13:33.250><c> a</c>
+
+00:13:33.270 --> 00:13:33.280 align:start position:0%
+sends a basically a string out to a
+ 
+
+00:13:33.280 --> 00:13:41.640 align:start position:0%
+sends a basically a string out to a
+frame<00:13:33.700><c> buffer</c><00:13:38.250><c> then</c><00:13:39.630><c> say</c><00:13:40.630><c> on</c><00:13:40.720><c> this</c><00:13:40.840><c> Raspberry</c>
+
+00:13:41.640 --> 00:13:41.650 align:start position:0%
+frame buffer then say on this Raspberry
+ 
+
+00:13:41.650 --> 00:13:42.930 align:start position:0%
+frame buffer then say on this Raspberry
+Pi<00:13:41.680><c> we</c><00:13:41.950><c> have</c><00:13:42.070><c> a</c><00:13:42.100><c> couple</c><00:13:42.340><c> of</c><00:13:42.400><c> applications</c>
+
+00:13:42.930 --> 00:13:42.940 align:start position:0%
+Pi we have a couple of applications
+ 
+
+00:13:42.940 --> 00:13:45.690 align:start position:0%
+Pi we have a couple of applications
+running<00:13:43.650><c> one</c><00:13:44.650><c> of</c><00:13:44.680><c> them</c><00:13:44.830><c> is</c><00:13:44.920><c> if</c><00:13:45.070><c> is</c><00:13:45.310><c> a</c><00:13:45.340><c> full</c><00:13:45.550><c> web</c>
+
+00:13:45.690 --> 00:13:45.700 align:start position:0%
+running one of them is if is a full web
+ 
+
+00:13:45.700 --> 00:13:49.410 align:start position:0%
+running one of them is if is a full web
+application<00:13:46.270><c> that's</c><00:13:47.260><c> driving</c><00:13:47.710><c> the</c><00:13:48.420><c> lately</c>
+
+00:13:49.410 --> 00:13:49.420 align:start position:0%
+application that's driving the lately
+ 
+
+00:13:49.420 --> 00:13:54.120 align:start position:0%
+application that's driving the lately
+graph<00:13:51.810><c> and</c><00:13:52.810><c> again</c><00:13:53.200><c> they</c><00:13:53.560><c> say</c><00:13:53.740><c> because</c><00:13:54.010><c> it</c>
+
+00:13:54.120 --> 00:13:54.130 align:start position:0%
+graph and again they say because it
+ 
+
+00:13:54.130 --> 00:13:56.910 align:start position:0%
+graph and again they say because it
+because<00:13:54.430><c> running</c><00:13:54.640><c> Java</c><00:13:55.030><c> EE</c><00:13:55.380><c> we</c><00:13:56.380><c> don't</c><00:13:56.560><c> have</c><00:13:56.740><c> to</c>
+
+00:13:56.910 --> 00:13:56.920 align:start position:0%
+because running Java EE we don't have to
+ 
+
+00:13:56.920 --> 00:13:58.950 align:start position:0%
+because running Java EE we don't have to
+you<00:13:57.250><c> know</c><00:13:57.370><c> use</c><00:13:57.550><c> any</c><00:13:57.700><c> different</c><00:13:58.300><c> special</c><00:13:58.660><c> API</c>
+
+00:13:58.950 --> 00:13:58.960 align:start position:0%
+you know use any different special API
+ 
+
+00:13:58.960 --> 00:14:00.360 align:start position:0%
+you know use any different special API
+is<00:13:59.080><c> just</c><00:13:59.290><c> to</c><00:13:59.530><c> generate</c><00:13:59.890><c> these</c><00:14:00.190><c> web</c>
+
+00:14:00.360 --> 00:14:00.370 align:start position:0%
+is just to generate these web
+ 
+
+00:14:00.370 --> 00:14:04.850 align:start position:0%
+is just to generate these web
+applications<00:14:00.520><c> on</c><00:14:01.210><c> on</c><00:14:01.720><c> the</c><00:14:01.870><c> small</c><00:14:02.020><c> device</c><00:14:03.780><c> so</c>
+
+00:14:04.850 --> 00:14:04.860 align:start position:0%
+applications on on the small device so
+ 
+
+00:14:04.860 --> 00:14:08.310 align:start position:0%
+applications on on the small device so
+it's<00:14:05.860><c> a</c><00:14:06.210><c> WebSocket</c><00:14:07.210><c> application</c><00:14:07.840><c> so</c><00:14:08.020><c> it</c><00:14:08.140><c> has</c><00:14:08.290><c> a</c>
+
+00:14:08.310 --> 00:14:08.320 align:start position:0%
+it's a WebSocket application so it has a
+ 
+
+00:14:08.320 --> 00:14:10.770 align:start position:0%
+it's a WebSocket application so it has a
+special<00:14:08.920><c> annotation</c><00:14:09.490><c> to</c><00:14:09.850><c> declare</c><00:14:10.120><c> that</c><00:14:10.330><c> which</c>
+
+00:14:10.770 --> 00:14:10.780 align:start position:0%
+special annotation to declare that which
+ 
+
+00:14:10.780 --> 00:14:15.990 align:start position:0%
+special annotation to declare that which
+is<00:14:11.020><c> rent</c><00:14:11.470><c> point</c><00:14:11.710><c> which</c><00:14:11.920><c> is</c><00:14:12.040><c> the</c><00:14:12.130><c> graph</c><00:14:15.000><c> when</c>
+
+00:14:15.990 --> 00:14:16.000 align:start position:0%
+is rent point which is the graph when
+ 
+
+00:14:16.000 --> 00:14:18.810 align:start position:0%
+is rent point which is the graph when
+the<00:14:16.450><c> browser</c><00:14:16.660><c> connects</c><00:14:17.250><c> to</c><00:14:18.250><c> the</c><00:14:18.700><c> web</c>
+
+00:14:18.810 --> 00:14:18.820 align:start position:0%
+the browser connects to the web
+ 
+
+00:14:18.820 --> 00:14:23.750 align:start position:0%
+the browser connects to the web
+application<00:14:18.970><c> the</c><00:14:19.630><c> on</c><00:14:20.560><c> open</c><00:14:21.330><c> method</c><00:14:22.330><c> is</c>
+
+00:14:23.750 --> 00:14:23.760 align:start position:0%
+application the on open method is
+ 
+
+00:14:23.760 --> 00:14:26.010 align:start position:0%
+application the on open method is
+initiated<00:14:24.760><c> and</c><00:14:25.030><c> that's</c><00:14:25.660><c> just</c><00:14:25.870><c> basically</c>
+
+00:14:26.010 --> 00:14:26.020 align:start position:0%
+initiated and that's just basically
+ 
+
+00:14:26.020 --> 00:14:27.420 align:start position:0%
+initiated and that's just basically
+registering<00:14:26.650><c> that</c><00:14:26.770><c> there's</c><00:14:26.980><c> a</c><00:14:27.040><c> browser</c><00:14:27.250><c> on</c>
+
+00:14:27.420 --> 00:14:27.430 align:start position:0%
+registering that there's a browser on
+ 
+
+00:14:27.430 --> 00:14:29.850 align:start position:0%
+registering that there's a browser on
+the<00:14:27.610><c> session</c><00:14:27.910><c> so</c><00:14:28.060><c> when</c><00:14:28.180><c> we</c><00:14:28.300><c> have</c><00:14:28.710><c> sector</c><00:14:29.710><c> when</c>
+
+00:14:29.850 --> 00:14:29.860 align:start position:0%
+the session so when we have sector when
+ 
+
+00:14:29.860 --> 00:14:34.110 align:start position:0%
+the session so when we have sector when
+we<00:14:29.950><c> have</c><00:14:30.070><c> two</c><00:14:30.190><c> of</c><00:14:30.310><c> them</c><00:14:30.630><c> then</c><00:14:32.760><c> it</c><00:14:33.760><c> just</c><00:14:33.970><c> keep</c>
+
+00:14:34.110 --> 00:14:34.120 align:start position:0%
+we have two of them then it just keep
+ 
+
+00:14:34.120 --> 00:14:35.850 align:start position:0%
+we have two of them then it just keep
+track<00:14:34.360><c> that</c><00:14:34.570><c> there's</c><00:14:34.750><c> two</c><00:14:34.930><c> connections</c><00:14:35.410><c> to</c>
+
+00:14:35.850 --> 00:14:35.860 align:start position:0%
+track that there's two connections to
+ 
+
+00:14:35.860 --> 00:14:45.480 align:start position:0%
+track that there's two connections to
+WebSocket<00:14:36.370><c> connections</c><00:14:43.800><c> and</c><00:14:44.800><c> then</c><00:14:44.980><c> we</c><00:14:45.280><c> have</c>
+
+00:14:45.480 --> 00:14:45.490 align:start position:0%
+WebSocket connections and then we have
+ 
+
+00:14:45.490 --> 00:14:50.310 align:start position:0%
+WebSocket connections and then we have
+this<00:14:46.420><c> method</c><00:14:46.780><c> here</c><00:14:47.140><c> you</c><00:14:47.500><c> can</c><00:14:47.710><c> see</c><00:14:47.890><c> it</c><00:14:49.170><c> so</c><00:14:50.170><c> what</c>
+
+00:14:50.310 --> 00:14:50.320 align:start position:0%
+this method here you can see it so what
+ 
+
+00:14:50.320 --> 00:14:52.890 align:start position:0%
+this method here you can see it so what
+this<00:14:50.410><c> is</c><00:14:50.590><c> this</c><00:14:50.770><c> is</c><00:14:50.940><c> observing</c><00:14:51.940><c> events</c><00:14:52.360><c> off</c><00:14:52.780><c> the</c>
+
+00:14:52.890 --> 00:14:52.900 align:start position:0%
+this is this is observing events off the
+ 
+
+00:14:52.900 --> 00:14:55.650 align:start position:0%
+this is this is observing events off the
+network<00:14:53.200><c> so</c><00:14:53.440><c> it</c><00:14:53.500><c> has</c><00:14:54.120><c> the</c><00:14:55.120><c> observed</c>
+
+00:14:55.650 --> 00:14:55.660 align:start position:0%
+network so it has the observed
+ 
+
+00:14:55.660 --> 00:14:57.630 align:start position:0%
+network so it has the observed
+lamentation<00:14:56.200><c> which</c><00:14:56.320><c> is</c><00:14:56.440><c> standard</c><00:14:56.950><c> Java</c><00:14:57.430><c> EE</c>
+
+00:14:57.630 --> 00:14:57.640 align:start position:0%
+lamentation which is standard Java EE
+ 
+
+00:14:57.640 --> 00:14:59.160 align:start position:0%
+lamentation which is standard Java EE
+which<00:14:58.000><c> has</c><00:14:58.150><c> observed</c><00:14:58.450><c> networks</c><00:14:58.930><c> of</c><00:14:59.140><c> the</c>
+
+00:14:59.160 --> 00:14:59.170 align:start position:0%
+which has observed networks of the
+ 
+
+00:14:59.170 --> 00:15:01.170 align:start position:0%
+which has observed networks of the
+basically<00:14:59.800><c> sort</c><00:14:59.980><c> of</c><00:15:00.040><c> observed</c><00:15:00.460><c> events</c><00:15:00.580><c> of</c><00:15:01.000><c> the</c>
+
+00:15:01.170 --> 00:15:01.180 align:start position:0%
+basically sort of observed events of the
+ 
+
+00:15:01.180 --> 00:15:04.860 align:start position:0%
+basically sort of observed events of the
+type<00:15:01.390><c> a</c><00:15:01.740><c> humidity</c><00:15:02.740><c> measurement</c><00:15:03.540><c> and</c><00:15:04.540><c> then</c>
+
+00:15:04.860 --> 00:15:04.870 align:start position:0%
+type a humidity measurement and then
+ 
+
+00:15:04.870 --> 00:15:06.540 align:start position:0%
+type a humidity measurement and then
+this<00:15:04.930><c> inbound</c><00:15:05.320><c> just</c><00:15:05.560><c> says</c><00:15:05.680><c> it</c><00:15:05.830><c> basically</c>
+
+00:15:06.540 --> 00:15:06.550 align:start position:0%
+this inbound just says it basically
+ 
+
+00:15:06.550 --> 00:15:11.490 align:start position:0%
+this inbound just says it basically
+sucks<00:15:06.790><c> those</c><00:15:07.000><c> events</c><00:15:07.270><c> off</c><00:15:07.450><c> the</c><00:15:07.600><c> network</c><00:15:09.090><c> okay</c>
+
+00:15:11.490 --> 00:15:11.500 align:start position:0%
+sucks those events off the network okay
+ 
+
+00:15:11.500 --> 00:15:13.760 align:start position:0%
+sucks those events off the network okay
+when<00:15:11.860><c> she</c><00:15:11.950><c> gets</c><00:15:12.100><c> an</c><00:15:12.220><c> event</c><00:15:12.460><c> it</c><00:15:12.640><c> basically</c>
+
+00:15:13.760 --> 00:15:13.770 align:start position:0%
+when she gets an event it basically
+ 
+
+00:15:13.770 --> 00:15:20.010 align:start position:0%
+when she gets an event it basically
+loops<00:15:14.770><c> through</c><00:15:15.040><c> each</c><00:15:15.640><c> session</c><00:15:15.940><c> and</c><00:15:19.020><c> pushes</c>
+
+00:15:20.010 --> 00:15:20.020 align:start position:0%
+loops through each session and pushes
+ 
+
+00:15:20.020 --> 00:15:28.550 align:start position:0%
+loops through each session and pushes
+down<00:15:20.290><c> the</c><00:15:22.170><c> WebSocket</c>
+
+00:15:28.550 --> 00:15:28.560 align:start position:0%
+ 
+ 
+
+00:15:28.560 --> 00:15:31.230 align:start position:0%
+ 
+pushes<00:15:29.560><c> down</c><00:15:29.710><c> the</c><00:15:30.040><c> WebSocket</c><00:15:30.550><c> JSON</c><00:15:30.970><c> string</c>
+
+00:15:31.230 --> 00:15:31.240 align:start position:0%
+pushes down the WebSocket JSON string
+ 
+
+00:15:31.240 --> 00:15:33.000 align:start position:0%
+pushes down the WebSocket JSON string
+that<00:15:31.450><c> represents</c><00:15:31.510><c> the</c><00:15:32.380><c> data</c><00:15:32.410><c> from</c><00:15:32.890><c> the</c>
+
+00:15:33.000 --> 00:15:33.010 align:start position:0%
+that represents the data from the
+ 
+
+00:15:33.010 --> 00:15:37.200 align:start position:0%
+that represents the data from the
+humidity<00:15:33.430><c> sensor</c><00:15:34.380><c> okay</c><00:15:35.410><c> so</c><00:15:36.070><c> again</c><00:15:36.730><c> all</c><00:15:36.910><c> that's</c>
+
+00:15:37.200 --> 00:15:37.210 align:start position:0%
+humidity sensor okay so again all that's
+ 
+
+00:15:37.210 --> 00:15:39.480 align:start position:0%
+humidity sensor okay so again all that's
+all<00:15:37.780><c> that</c><00:15:38.020><c> api's</c><00:15:38.500><c> are</c><00:15:38.830><c> all</c><00:15:38.920><c> standard</c><00:15:39.340><c> so</c>
+
+00:15:39.480 --> 00:15:39.490 align:start position:0%
+all that api's are all standard so
+ 
+
+00:15:39.490 --> 00:15:44.250 align:start position:0%
+all that api's are all standard so
+they're<00:15:39.640><c> all</c><00:15:39.790><c> standard</c><00:15:42.720><c> standard</c><00:15:43.720><c> api</c><00:15:43.990><c> is</c><00:15:44.110><c> in</c>
+
+00:15:44.250 --> 00:15:44.260 align:start position:0%
+they're all standard standard api is in
+ 
+
+00:15:44.260 --> 00:15:45.450 align:start position:0%
+they're all standard standard api is in
+java<00:15:44.470><c> ee</c><00:15:44.680><c> so</c><00:15:44.950><c> you</c><00:15:45.040><c> can</c><00:15:45.160><c> build</c><00:15:45.310><c> these</c>
+
+00:15:45.450 --> 00:15:45.460 align:start position:0%
+java ee so you can build these
+ 
+
+00:15:45.460 --> 00:15:49.710 align:start position:0%
+java ee so you can build these
+applications<00:15:46.000><c> quite</c><00:15:46.180><c> rapidly</c><00:15:46.510><c> and</c><00:15:48.720><c> then</c>
+
+00:15:49.710 --> 00:15:49.720 align:start position:0%
+applications quite rapidly and then
+ 
+
+00:15:49.720 --> 00:15:51.060 align:start position:0%
+applications quite rapidly and then
+obviously<00:15:49.930><c> generates</c><00:15:50.470><c> the</c><00:15:50.560><c> graph</c><00:15:50.770><c> so</c><00:15:50.950><c> the</c>
+
+00:15:51.060 --> 00:15:51.070 align:start position:0%
+obviously generates the graph so the
+ 
+
+00:15:51.070 --> 00:15:53.810 align:start position:0%
+obviously generates the graph so the
+graph<00:15:51.250><c> is</c><00:15:51.400><c> html5</c>
+
+00:15:53.810 --> 00:15:53.820 align:start position:0%
+graph is html5
+ 
+
+00:15:53.820 --> 00:15:57.960 align:start position:0%
+graph is html5
+it's<00:15:54.820><c> an</c><00:15:55.270><c> html5</c><00:15:56.370><c> graphing</c><00:15:57.370><c> component</c><00:15:57.880><c> which</c>
+
+00:15:57.960 --> 00:15:57.970 align:start position:0%
+it's an html5 graphing component which
+ 
+
+00:15:57.970 --> 00:16:01.380 align:start position:0%
+it's an html5 graphing component which
+is<00:15:58.090><c> that</c><00:15:58.270><c> pretty</c><00:15:58.480><c> standard</c><00:15:58.900><c> and</c><00:16:00.240><c> when</c><00:16:01.240><c> it</c><00:16:01.330><c> gets</c>
+
+00:16:01.380 --> 00:16:01.390 align:start position:0%
+is that pretty standard and when it gets
+ 
+
+00:16:01.390 --> 00:16:05.040 align:start position:0%
+is that pretty standard and when it gets
+a<00:16:01.480><c> JSON</c><00:16:01.810><c> string</c><00:16:02.020><c> it'll</c><00:16:02.880><c> basically</c><00:16:03.880><c> and</c><00:16:04.810><c> that</c>
+
+00:16:05.040 --> 00:16:05.050 align:start position:0%
+a JSON string it'll basically and that
+ 
+
+00:16:05.050 --> 00:16:07.730 align:start position:0%
+a JSON string it'll basically and that
+essentially<00:16:05.710><c> becomes</c><00:16:06.100><c> you</c><00:16:06.970><c> know</c><00:16:07.000><c> that's</c><00:16:07.300><c> push</c>
+
+00:16:07.730 --> 00:16:07.740 align:start position:0%
+essentially becomes you know that's push
+ 
+
+00:16:07.740 --> 00:16:17.130 align:start position:0%
+essentially becomes you know that's push
+pushes<00:16:08.740><c> the</c><00:16:08.830><c> day</c><00:16:08.950><c> to</c><00:16:09.010><c> day</c><00:16:12.450><c> ok</c><00:16:15.840><c> any</c><00:16:16.840><c> care</c><00:16:17.080><c> of</c>
+
+00:16:17.130 --> 00:16:17.140 align:start position:0%
+pushes the day to day ok any care of
+ 
+
+00:16:17.140 --> 00:16:23.940 align:start position:0%
+pushes the day to day ok any care of
+questions<00:16:17.470><c> on</c><00:16:17.710><c> that</c><00:16:18.180><c> no</c><00:16:19.180><c> -</c><00:16:20.850><c> ok</c><00:16:21.850><c> so</c><00:16:22.750><c> in</c><00:16:23.740><c> addition</c>
+
+00:16:23.940 --> 00:16:23.950 align:start position:0%
+questions on that no - ok so in addition
+ 
+
+00:16:23.950 --> 00:16:25.800 align:start position:0%
+questions on that no - ok so in addition
+on<00:16:24.190><c> this</c><00:16:24.340><c> what</c><00:16:24.820><c> we</c><00:16:24.850><c> call</c><00:16:25.030><c> the</c><00:16:25.120><c> Gateway</c><00:16:25.390><c> node</c><00:16:25.600><c> we</c>
+
+00:16:25.800 --> 00:16:25.810 align:start position:0%
+on this what we call the Gateway node we
+ 
+
+00:16:25.810 --> 00:16:27.990 align:start position:0%
+on this what we call the Gateway node we
+have<00:16:26.020><c> another</c><00:16:26.830><c> application</c><00:16:27.370><c> running</c><00:16:27.700><c> in</c><00:16:27.880><c> a</c>
+
+00:16:27.990 --> 00:16:28.000 align:start position:0%
+have another application running in a
+ 
+
+00:16:28.000 --> 00:16:29.700 align:start position:0%
+have another application running in a
+separate<00:16:28.270><c> PI</c><00:16:28.420><c> or</c><00:16:28.570><c> micro</c><00:16:28.930><c> so</c><00:16:29.350><c> these</c><00:16:29.440><c> are</c><00:16:29.590><c> like</c>
+
+00:16:29.700 --> 00:16:29.710 align:start position:0%
+separate PI or micro so these are like
+ 
+
+00:16:29.710 --> 00:16:32.400 align:start position:0%
+separate PI or micro so these are like
+little<00:16:30.010><c> micro</c><00:16:30.400><c> services</c><00:16:30.880><c> and</c><00:16:31.090><c> that</c><00:16:31.930><c> is</c><00:16:32.110><c> doing</c>
+
+00:16:32.400 --> 00:16:32.410 align:start position:0%
+little micro services and that is doing
+ 
+
+00:16:32.410 --> 00:16:34.440 align:start position:0%
+little micro services and that is doing
+the<00:16:32.470><c> connection</c><00:16:32.950><c> to</c><00:16:33.160><c> the</c><00:16:33.250><c> cloud</c><00:16:33.490><c> so</c><00:16:34.180><c> this</c><00:16:34.300><c> is</c>
+
+00:16:34.440 --> 00:16:34.450 align:start position:0%
+the connection to the cloud so this is
+ 
+
+00:16:34.450 --> 00:16:36.390 align:start position:0%
+the connection to the cloud so this is
+or<00:16:34.660><c> in</c><00:16:34.780><c> this</c><00:16:34.840><c> case</c><00:16:35.050><c> connecting</c><00:16:35.710><c> to</c><00:16:35.800><c> MQTT</c>
+
+00:16:36.390 --> 00:16:36.400 align:start position:0%
+or in this case connecting to MQTT
+ 
+
+00:16:36.400 --> 00:16:40.730 align:start position:0%
+or in this case connecting to MQTT
+broker<00:16:37.260><c> which</c><00:16:38.260><c> is</c><00:16:38.380><c> running</c><00:16:38.620><c> on</c><00:16:38.680><c> my</c><00:16:38.800><c> laptop</c><00:16:38.920><c> so</c>
+
+00:16:40.730 --> 00:16:40.740 align:start position:0%
+broker which is running on my laptop so
+ 
+
+00:16:40.740 --> 00:16:44.100 align:start position:0%
+broker which is running on my laptop so
+again<00:16:41.740><c> this</c><00:16:42.130><c> is</c><00:16:42.310><c> using</c><00:16:42.520><c> again</c><00:16:43.150><c> standard</c><00:16:43.570><c> Java</c>
+
+00:16:44.100 --> 00:16:44.110 align:start position:0%
+again this is using again standard Java
+ 
+
+00:16:44.110 --> 00:16:47.310 align:start position:0%
+again this is using again standard Java
+EE<00:16:44.460><c> we</c><00:16:45.460><c> have</c><00:16:45.610><c> a</c><00:16:45.640><c> project</c><00:16:45.850><c> in</c><00:16:46.330><c> PI</c><00:16:46.810><c> aura</c><00:16:46.990><c> called</c>
+
+00:16:47.310 --> 00:16:47.320 align:start position:0%
+EE we have a project in PI aura called
+ 
+
+00:16:47.320 --> 00:16:49.440 align:start position:0%
+EE we have a project in PI aura called
+cloud<00:16:47.710><c> connectors</c><00:16:48.190><c> which</c><00:16:48.340><c> has</c><00:16:48.490><c> built</c><00:16:48.670><c> a</c><00:16:49.030><c> bunch</c>
+
+00:16:49.440 --> 00:16:49.450 align:start position:0%
+cloud connectors which has built a bunch
+ 
+
+00:16:49.450 --> 00:16:51.270 align:start position:0%
+cloud connectors which has built a bunch
+of<00:16:49.570><c> connectors</c><00:16:49.990><c> to</c><00:16:50.170><c> messaging</c><00:16:50.800><c> systems</c><00:16:51.160><c> that</c>
+
+00:16:51.270 --> 00:16:51.280 align:start position:0%
+of connectors to messaging systems that
+ 
+
+00:16:51.280 --> 00:16:52.830 align:start position:0%
+of connectors to messaging systems that
+aren't<00:16:51.430><c> JMS</c><00:16:52.000><c> which</c><00:16:52.210><c> would</c><00:16:52.330><c> be</c><00:16:52.510><c> the</c><00:16:52.600><c> standard</c>
+
+00:16:52.830 --> 00:16:52.840 align:start position:0%
+aren't JMS which would be the standard
+ 
+
+00:16:52.840 --> 00:16:56.220 align:start position:0%
+aren't JMS which would be the standard
+Java<00:16:53.200><c> EE</c><00:16:53.500><c> so</c><00:16:54.250><c> we</c><00:16:54.310><c> have</c><00:16:54.430><c> one</c><00:16:54.550><c> for</c><00:16:54.670><c> MQTT</c><00:16:55.270><c> we</c><00:16:56.080><c> have</c>
+
+00:16:56.220 --> 00:16:56.230 align:start position:0%
+Java EE so we have one for MQTT we have
+ 
+
+00:16:56.230 --> 00:16:58.740 align:start position:0%
+Java EE so we have one for MQTT we have
+from<00:16:56.440><c> one</c><00:16:56.770><c> for</c><00:16:56.920><c> a</c><00:16:56.980><c> sewer</c><00:16:57.160><c> service</c><00:16:57.580><c> bus</c><00:16:57.760><c> Apache</c>
+
+00:16:58.740 --> 00:16:58.750 align:start position:0%
+from one for a sewer service bus Apache
+ 
+
+00:16:58.750 --> 00:17:02.970 align:start position:0%
+from one for a sewer service bus Apache
+calf<00:16:59.080><c> calf</c><00:16:59.860><c> car</c><00:17:00.100><c> and</c><00:17:00.310><c> I</c><00:17:01.180><c> was</c><00:17:01.390><c> an</c><00:17:01.540><c> SQ</c><00:17:02.140><c> s</c><00:17:02.290><c> simple</c>
+
+00:17:02.970 --> 00:17:02.980 align:start position:0%
+calf calf car and I was an SQ s simple
+ 
+
+00:17:02.980 --> 00:17:04.410 align:start position:0%
+calf calf car and I was an SQ s simple
+queue<00:17:03.160><c> service</c><00:17:03.310><c> so</c><00:17:03.640><c> you</c><00:17:03.670><c> can</c><00:17:03.850><c> get</c><00:17:04.030><c> the</c><00:17:04.210><c> data</c>
+
+00:17:04.410 --> 00:17:04.420 align:start position:0%
+queue service so you can get the data
+ 
+
+00:17:04.420 --> 00:17:06.600 align:start position:0%
+queue service so you can get the data
+into<00:17:04.750><c> the</c><00:17:04.810><c> cloud</c><00:17:04.960><c> quite</c><00:17:05.890><c> easily</c><00:17:06.070><c> using</c><00:17:06.490><c> these</c>
+
+00:17:06.600 --> 00:17:06.610 align:start position:0%
+into the cloud quite easily using these
+ 
+
+00:17:06.610 --> 00:17:11.280 align:start position:0%
+into the cloud quite easily using these
+connectors<00:17:07.110><c> and</c><00:17:09.570><c> so</c><00:17:10.570><c> there</c><00:17:10.690><c> has</c><00:17:10.780><c> a</c><00:17:10.810><c> bunch</c><00:17:11.050><c> of</c>
+
+00:17:11.280 --> 00:17:11.290 align:start position:0%
+connectors and so there has a bunch of
+ 
+
+00:17:11.290 --> 00:17:13.530 align:start position:0%
+connectors and so there has a bunch of
+metadata<00:17:12.160><c> and</c><00:17:12.370><c> annotations</c><00:17:13.090><c> which</c><00:17:13.360><c> is</c>
+
+00:17:13.530 --> 00:17:13.540 align:start position:0%
+metadata and annotations which is
+ 
+
+00:17:13.540 --> 00:17:14.910 align:start position:0%
+metadata and annotations which is
+defining<00:17:14.080><c> what's</c><00:17:14.320><c> called</c><00:17:14.500><c> a</c><00:17:14.530><c> connection</c>
+
+00:17:14.910 --> 00:17:14.920 align:start position:0%
+defining what's called a connection
+ 
+
+00:17:14.920 --> 00:17:20.310 align:start position:0%
+defining what's called a connection
+factory<00:17:15.280><c> so</c><00:17:15.580><c> this</c><00:17:15.730><c> is</c><00:17:18.030><c> shows</c><00:17:19.030><c> you</c><00:17:19.330><c> basically</c>
+
+00:17:20.310 --> 00:17:20.320 align:start position:0%
+factory so this is shows you basically
+ 
+
+00:17:20.320 --> 00:17:21.930 align:start position:0%
+factory so this is shows you basically
+there's<00:17:20.590><c> also</c><00:17:20.740><c> adapted</c><00:17:21.130><c> as</c><00:17:21.190><c> what</c><00:17:21.340><c> Weald</c><00:17:21.580><c> what</c>
+
+00:17:21.930 --> 00:17:21.940 align:start position:0%
+there's also adapted as what Weald what
+ 
+
+00:17:21.940 --> 00:17:24.240 align:start position:0%
+there's also adapted as what Weald what
+we<00:17:22.060><c> deploy</c><00:17:22.390><c> which</c><00:17:23.200><c> is</c><00:17:23.350><c> a</c><00:17:23.380><c> standard</c><00:17:23.770><c> component</c>
+
+00:17:24.240 --> 00:17:24.250 align:start position:0%
+we deploy which is a standard component
+ 
+
+00:17:24.250 --> 00:17:28.410 align:start position:0%
+we deploy which is a standard component
+from<00:17:24.370><c> payara</c><00:17:25.860><c> you</c><00:17:26.860><c> have</c><00:17:27.070><c> a</c><00:17:27.100><c> MQTT</c><00:17:28.000><c> connection</c>
+
+00:17:28.410 --> 00:17:28.420 align:start position:0%
+from payara you have a MQTT connection
+ 
+
+00:17:28.420 --> 00:17:33.510 align:start position:0%
+from payara you have a MQTT connection
+factory<00:17:28.900><c> and</c><00:17:29.110><c> then</c><00:17:29.350><c> there</c><00:17:29.710><c> is</c><00:17:29.860><c> the</c><00:17:32.490><c> mqtt</c>
+
+00:17:33.510 --> 00:17:33.520 align:start position:0%
+factory and then there is the mqtt
+ 
+
+00:17:33.520 --> 00:17:38.110 align:start position:0%
+factory and then there is the mqtt
+properties<00:17:34.360><c> so</c><00:17:34.720><c> I've</c><00:17:34.810><c> got</c><00:17:34.930><c> the</c><00:17:35.020><c> server</c><00:17:35.230><c> URI</c>
+
+00:17:38.110 --> 00:17:38.120 align:start position:0%
+ 
+ 
+
+00:17:38.120 --> 00:17:42.220 align:start position:0%
+ 
+okay<00:17:39.910><c> then</c><00:17:40.910><c> when</c><00:17:41.450><c> we</c><00:17:41.600><c> receive</c><00:17:41.900><c> one</c><00:17:42.080><c> of</c><00:17:42.110><c> these</c>
+
+00:17:42.220 --> 00:17:42.230 align:start position:0%
+okay then when we receive one of these
+ 
+
+00:17:42.230 --> 00:17:43.510 align:start position:0%
+okay then when we receive one of these
+messages<00:17:42.559><c> again</c><00:17:42.770><c> so</c><00:17:42.890><c> we</c><00:17:42.980><c> haven't</c><00:17:43.130><c> observes</c>
+
+00:17:43.510 --> 00:17:43.520 align:start position:0%
+messages again so we haven't observes
+ 
+
+00:17:43.520 --> 00:17:44.980 align:start position:0%
+messages again so we haven't observes
+again<00:17:43.820><c> inbound</c><00:17:44.270><c> so</c><00:17:44.450><c> when</c><00:17:44.570><c> we</c><00:17:44.660><c> get</c><00:17:44.809><c> one</c><00:17:44.930><c> of</c>
+
+00:17:44.980 --> 00:17:44.990 align:start position:0%
+again inbound so when we get one of
+ 
+
+00:17:44.990 --> 00:17:46.690 align:start position:0%
+again inbound so when we get one of
+these<00:17:45.080><c> Network</c><00:17:45.440><c> events</c><00:17:46.100><c> in</c><00:17:46.280><c> this</c>
+
+00:17:46.690 --> 00:17:46.700 align:start position:0%
+these Network events in this
+ 
+
+00:17:46.700 --> 00:17:49.630 align:start position:0%
+these Network events in this
+micro-service<00:17:47.440><c> it</c><00:17:48.440><c> uses</c><00:17:48.890><c> the</c><00:17:49.040><c> connection</c>
+
+00:17:49.630 --> 00:17:49.640 align:start position:0%
+micro-service it uses the connection
+ 
+
+00:17:49.640 --> 00:17:56.020 align:start position:0%
+micro-service it uses the connection
+factory<00:17:50.710><c> and</c><00:17:54.610><c> basically</c><00:17:55.610><c> takes</c><00:17:55.880><c> the</c>
+
+00:17:56.020 --> 00:17:56.030 align:start position:0%
+factory and basically takes the
+ 
+
+00:17:56.030 --> 00:17:57.420 align:start position:0%
+factory and basically takes the
+measurement<00:17:56.450><c> writes</c><00:17:56.900><c> it</c><00:17:57.080><c> to</c><00:17:57.110><c> a</c><00:17:57.200><c> byte</c><00:17:57.380><c> array</c>
+
+00:17:57.420 --> 00:17:57.430 align:start position:0%
+measurement writes it to a byte array
+ 
+
+00:17:57.430 --> 00:18:00.310 align:start position:0%
+measurement writes it to a byte array
+then<00:17:58.430><c> pushes</c><00:17:58.790><c> it</c><00:17:58.940><c> out</c><00:17:59.059><c> to</c><00:17:59.240><c> mqtt</c><00:17:59.870><c> with</c><00:18:00.140><c> the</c>
+
+00:18:00.310 --> 00:18:00.320 align:start position:0%
+then pushes it out to mqtt with the
+ 
+
+00:18:00.320 --> 00:18:08.430 align:start position:0%
+then pushes it out to mqtt with the
+publish<00:18:01.070><c> on</c><00:18:01.280><c> the</c><00:18:01.430><c> test</c><00:18:02.230><c> test</c><00:18:04.330><c> topic</c><00:18:06.400><c> okay</c><00:18:07.400><c> and</c>
+
+00:18:08.430 --> 00:18:08.440 align:start position:0%
+publish on the test test topic okay and
+ 
+
+00:18:08.440 --> 00:18:14.500 align:start position:0%
+publish on the test test topic okay and
+then<00:18:09.440><c> on</c><00:18:09.470><c> this</c><00:18:10.250><c> laptop</c><00:18:11.059><c> I</c><00:18:11.630><c> have</c><00:18:13.240><c> if</c><00:18:14.240><c> you</c><00:18:14.360><c> can</c>
+
+00:18:14.500 --> 00:18:14.510 align:start position:0%
+then on this laptop I have if you can
+ 
+
+00:18:14.510 --> 00:18:17.500 align:start position:0%
+then on this laptop I have if you can
+see<00:18:14.690><c> it</c><00:18:14.780><c> but</c><00:18:15.559><c> I</c><00:18:15.590><c> have</c><00:18:16.000><c> again</c><00:18:17.000><c> another</c><00:18:17.030><c> micro</c>
+
+00:18:17.500 --> 00:18:17.510 align:start position:0%
+see it but I have again another micro
+ 
+
+00:18:17.510 --> 00:18:19.690 align:start position:0%
+see it but I have again another micro
+service<00:18:17.870><c> which</c><00:18:18.170><c> is</c><00:18:18.350><c> listening</c><00:18:18.890><c> on</c><00:18:18.980><c> that</c><00:18:19.010><c> MQTT</c>
+
+00:18:19.690 --> 00:18:19.700 align:start position:0%
+service which is listening on that MQTT
+ 
+
+00:18:19.700 --> 00:18:22.030 align:start position:0%
+service which is listening on that MQTT
+topic<00:18:20.090><c> using</c><00:18:20.420><c> Java</c><00:18:20.630><c> EE</c><00:18:20.809><c> and</c><00:18:21.170><c> the</c><00:18:21.559><c> MQTT</c>
+
+00:18:22.030 --> 00:18:22.040 align:start position:0%
+topic using Java EE and the MQTT
+ 
+
+00:18:22.040 --> 00:18:25.590 align:start position:0%
+topic using Java EE and the MQTT
+connector<00:18:22.550><c> and</c><00:18:22.760><c> printing</c><00:18:23.570><c> out</c><00:18:23.690><c> the</c><00:18:24.230><c> message</c>
+
+00:18:25.590 --> 00:18:25.600 align:start position:0%
+connector and printing out the message
+ 
+
+00:18:25.600 --> 00:18:34.480 align:start position:0%
+connector and printing out the message
+like<00:18:26.600><c> I</c><00:18:32.559><c> don't</c><00:18:33.559><c> know</c><00:18:33.710><c> why</c><00:18:33.830><c> I'm</c><00:18:33.920><c> using</c><00:18:34.100><c> this</c><00:18:34.309><c> one</c>
+
+00:18:34.480 --> 00:18:34.490 align:start position:0%
+like I don't know why I'm using this one
+ 
+
+00:18:34.490 --> 00:18:52.299 align:start position:0%
+like I don't know why I'm using this one
+for
+
+00:18:52.299 --> 00:18:52.309 align:start position:0%
+ 
+ 
+
+00:18:52.309 --> 00:18:57.640 align:start position:0%
+ 
+okay<00:18:53.309><c> so</c><00:18:53.370><c> you</c><00:18:53.520><c> can</c><00:18:53.640><c> see</c><00:18:53.750><c> the</c><00:18:54.750><c> value</c><00:18:55.020><c> there</c><00:18:55.169><c> 51</c>
+
+00:18:57.640 --> 00:18:57.650 align:start position:0%
+okay so you can see the value there 51
+ 
+
+00:18:57.650 --> 00:19:02.240 align:start position:0%
+okay so you can see the value there 51
+and<00:18:58.650><c> if</c><00:18:58.770><c> I</c><00:18:58.860><c> told</c><00:19:00.080><c> them</c><00:19:01.080><c> that</c><00:19:01.200><c> again</c><00:19:01.440><c> hopefully</c>
+
+00:19:02.240 --> 00:19:02.250 align:start position:0%
+and if I told them that again hopefully
+ 
+
+00:19:02.250 --> 00:19:08.539 align:start position:0%
+and if I told them that again hopefully
+should<00:19:02.850><c> go</c><00:19:02.970><c> up</c><00:19:06.500><c> okay</c><00:19:07.500><c> this</c><00:19:07.650><c> is</c><00:19:07.740><c> on</c><00:19:07.890><c> 64</c><00:19:08.340><c> at</c><00:19:08.460><c> the</c>
+
+00:19:08.539 --> 00:19:08.549 align:start position:0%
+should go up okay this is on 64 at the
+ 
+
+00:19:08.549 --> 00:19:10.100 align:start position:0%
+should go up okay this is on 64 at the
+minute<00:19:08.789><c> so</c><00:19:08.820><c> that's</c><00:19:09.059><c> basically</c><00:19:09.390><c> just</c><00:19:09.510><c> again</c><00:19:10.080><c> a</c>
+
+00:19:10.100 --> 00:19:10.110 align:start position:0%
+minute so that's basically just again a
+ 
+
+00:19:10.110 --> 00:19:12.529 align:start position:0%
+minute so that's basically just again a
+tiny<00:19:10.380><c> micro</c><00:19:10.710><c> servers</c><00:19:11.010><c> pulling</c><00:19:11.370><c> and</c><00:19:11.700><c> the</c><00:19:12.000><c> mqtt</c>
+
+00:19:12.529 --> 00:19:12.539 align:start position:0%
+tiny micro servers pulling and the mqtt
+ 
+
+00:19:12.539 --> 00:19:14.210 align:start position:0%
+tiny micro servers pulling and the mqtt
+messages<00:19:12.900><c> from</c><00:19:13.080><c> mosquito</c><00:19:13.590><c> running</c><00:19:13.919><c> on</c><00:19:14.039><c> my</c>
+
+00:19:14.210 --> 00:19:14.220 align:start position:0%
+messages from mosquito running on my
+ 
+
+00:19:14.220 --> 00:19:19.700 align:start position:0%
+messages from mosquito running on my
+laptop<00:19:14.429><c> so</c><00:19:17.419><c> that's</c><00:19:18.419><c> that's</c><00:19:18.570><c> again</c><00:19:19.049><c> pushing</c>
+
+00:19:19.700 --> 00:19:19.710 align:start position:0%
+laptop so that's that's again pushing
+ 
+
+00:19:19.710 --> 00:19:21.560 align:start position:0%
+laptop so that's that's again pushing
+out<00:19:19.980><c> so</c><00:19:20.460><c> this</c><00:19:20.580><c> this</c><00:19:20.789><c> guy</c><00:19:20.880><c> is</c><00:19:21.030><c> pushing</c><00:19:21.390><c> out</c><00:19:21.539><c> the</c>
+
+00:19:21.560 --> 00:19:21.570 align:start position:0%
+out so this this guy is pushing out the
+ 
+
+00:19:21.570 --> 00:19:24.380 align:start position:0%
+out so this this guy is pushing out the
+events<00:19:22.080><c> onto</c><00:19:22.470><c> a</c><00:19:22.740><c> mosquito</c><00:19:23.700><c> broker</c><00:19:24.059><c> running</c><00:19:24.270><c> on</c>
+
+00:19:24.380 --> 00:19:24.390 align:start position:0%
+events onto a mosquito broker running on
+ 
+
+00:19:24.390 --> 00:19:35.450 align:start position:0%
+events onto a mosquito broker running on
+my<00:19:24.600><c> Linux</c><00:19:25.409><c> laptop</c><00:19:27.289><c> okay</c><00:19:28.289><c> so</c><00:19:32.360><c> so</c><00:19:34.070><c> like</c><00:19:35.070><c> say</c><00:19:35.280><c> we</c>
+
+00:19:35.450 --> 00:19:35.460 align:start position:0%
+my Linux laptop okay so so like say we
+ 
+
+00:19:35.460 --> 00:19:38.960 align:start position:0%
+my Linux laptop okay so so like say we
+have<00:19:35.610><c> a</c><00:19:35.960><c> project</c><00:19:36.960><c> on</c><00:19:37.740><c> Paora</c><00:19:38.640><c> which</c><00:19:38.820><c> is</c>
+
+00:19:38.960 --> 00:19:38.970 align:start position:0%
+have a project on Paora which is
+ 
+
+00:19:38.970 --> 00:19:44.169 align:start position:0%
+have a project on Paora which is
+building<00:19:39.270><c> these</c><00:19:39.450><c> connectors</c><00:19:39.870><c> for</c><00:19:40.169><c> Java</c><00:19:40.500><c> EE</c>
+
+00:19:44.169 --> 00:19:44.179 align:start position:0%
+ 
+ 
+
+00:19:44.179 --> 00:19:46.100 align:start position:0%
+ 
+the<00:19:45.179><c> memory</c><00:19:45.419><c> let's</c><00:19:45.630><c> say</c><00:19:45.690><c> we</c><00:19:45.780><c> have</c><00:19:45.900><c> on</c><00:19:45.990><c> for</c>
+
+00:19:46.100 --> 00:19:46.110 align:start position:0%
+the memory let's say we have on for
+ 
+
+00:19:46.110 --> 00:19:51.710 align:start position:0%
+the memory let's say we have on for
+Kafka<00:19:46.500><c> sqs</c><00:19:47.100><c> service</c><00:19:47.760><c> Boston</c><00:19:48.090><c> MQTT</c><00:19:49.429><c> so</c><00:19:50.720><c> these</c>
+
+00:19:51.710 --> 00:19:51.720 align:start position:0%
+Kafka sqs service Boston MQTT so these
+ 
+
+00:19:51.720 --> 00:19:53.990 align:start position:0%
+Kafka sqs service Boston MQTT so these
+connectors<00:19:52.169><c> are</c><00:19:52.350><c> standard</c><00:19:52.860><c> what</c><00:19:53.370><c> I</c><00:19:53.400><c> call</c><00:19:53.610><c> JCA</c>
+
+00:19:53.990 --> 00:19:54.000 align:start position:0%
+connectors are standard what I call JCA
+ 
+
+00:19:54.000 --> 00:19:55.940 align:start position:0%
+connectors are standard what I call JCA
+connectors<00:19:54.480><c> they</c><00:19:54.960><c> should</c><00:19:55.140><c> work</c><00:19:55.289><c> on</c><00:19:55.559><c> other</c>
+
+00:19:55.940 --> 00:19:55.950 align:start position:0%
+connectors they should work on other
+ 
+
+00:19:55.950 --> 00:20:00.409 align:start position:0%
+connectors they should work on other
+Java<00:19:56.520><c> you</c><00:19:56.730><c> runtimes</c><00:19:57.150><c> like</c><00:19:57.419><c> wildfire</c><00:19:57.900><c> and</c><00:19:59.419><c> they</c>
+
+00:20:00.409 --> 00:20:00.419 align:start position:0%
+Java you runtimes like wildfire and they
+ 
+
+00:20:00.419 --> 00:20:05.360 align:start position:0%
+Java you runtimes like wildfire and they
+are<00:20:00.600><c> pushing</c><00:20:02.720><c> their</c><00:20:03.720><c> basic</c><00:20:03.960><c> available</c><00:20:04.380><c> to</c><00:20:05.220><c> use</c>
+
+00:20:05.360 --> 00:20:05.370 align:start position:0%
+are pushing their basic available to use
+ 
+
+00:20:05.370 --> 00:20:08.330 align:start position:0%
+are pushing their basic available to use
+to<00:20:05.580><c> get</c><00:20:06.270><c> data</c><00:20:06.750><c> off</c><00:20:06.900><c> these</c><00:20:07.230><c> devices</c><00:20:07.679><c> attention</c>
+
+00:20:08.330 --> 00:20:08.340 align:start position:0%
+to get data off these devices attention
+ 
+
+00:20:08.340 --> 00:20:09.950 align:start position:0%
+to get data off these devices attention
+straight<00:20:08.549><c> into</c><00:20:08.730><c> the</c><00:20:08.820><c> cloud</c><00:20:09.090><c> and</c><00:20:09.210><c> things</c><00:20:09.809><c> like</c>
+
+00:20:09.950 --> 00:20:09.960 align:start position:0%
+straight into the cloud and things like
+ 
+
+00:20:09.960 --> 00:20:14.500 align:start position:0%
+straight into the cloud and things like
+that
+
+00:20:14.500 --> 00:20:14.510 align:start position:0%
+ 
+ 
+
+00:20:14.510 --> 00:20:17.210 align:start position:0%
+ 
+that's<00:20:15.510><c> just</c><00:20:15.690><c> an</c><00:20:15.780><c> example</c><00:20:15.840><c> we</c><00:20:16.559><c> have</c><00:20:16.590><c> done</c><00:20:17.100><c> it</c>
+
+00:20:17.210 --> 00:20:17.220 align:start position:0%
+that's just an example we have done it
+ 
+
+00:20:17.220 --> 00:20:19.310 align:start position:0%
+that's just an example we have done it
+in<00:20:17.760><c> the</c><00:20:17.909><c> past</c><00:20:17.940><c> to</c><00:20:18.299><c> service</c><00:20:18.600><c> bus</c><00:20:18.809><c> but</c><00:20:19.020><c> I</c><00:20:19.049><c> didn't</c>
+
+00:20:19.310 --> 00:20:19.320 align:start position:0%
+in the past to service bus but I didn't
+ 
+
+00:20:19.320 --> 00:20:20.810 align:start position:0%
+in the past to service bus but I didn't
+want<00:20:19.470><c> to</c><00:20:19.530><c> rely</c><00:20:19.710><c> on</c><00:20:19.740><c> the</c><00:20:19.890><c> network</c><00:20:20.190><c> to</c><00:20:20.520><c> push</c><00:20:20.700><c> it</c>
+
+00:20:20.810 --> 00:20:20.820 align:start position:0%
+want to rely on the network to push it
+ 
+
+00:20:20.820 --> 00:20:28.490 align:start position:0%
+want to rely on the network to push it
+out<00:20:20.909><c> to</c><00:20:20.970><c> the</c><00:20:21.179><c> cloud</c><00:20:24.650><c> so</c><00:20:27.049><c> once</c><00:20:28.049><c> you've</c><00:20:28.200><c> got</c><00:20:28.320><c> data</c>
+
+00:20:28.490 --> 00:20:28.500 align:start position:0%
+out to the cloud so once you've got data
+ 
+
+00:20:28.500 --> 00:20:32.180 align:start position:0%
+out to the cloud so once you've got data
+off<00:20:28.860><c> the</c><00:20:29.330><c> IOT</c><00:20:30.330><c> device</c><00:20:30.630><c> these</c><00:20:31.380><c> PI</c><00:20:31.650><c> are</c><00:20:31.770><c> a</c><00:20:31.799><c> micro</c>
+
+00:20:32.180 --> 00:20:32.190 align:start position:0%
+off the IOT device these PI are a micro
+ 
+
+00:20:32.190 --> 00:20:34.370 align:start position:0%
+off the IOT device these PI are a micro
+in<00:20:32.340><c> Jakarta</c><00:20:33.270><c> II</c><00:20:33.299><c> you</c><00:20:33.659><c> can</c><00:20:33.809><c> actually</c><00:20:34.080><c> then</c>
+
+00:20:34.370 --> 00:20:34.380 align:start position:0%
+in Jakarta II you can actually then
+ 
+
+00:20:34.380 --> 00:20:36.529 align:start position:0%
+in Jakarta II you can actually then
+exactly<00:20:34.860><c> the</c><00:20:34.980><c> same</c><00:20:35.159><c> API</c><00:20:35.340><c> is</c><00:20:35.640><c> exactly</c><00:20:36.179><c> the</c><00:20:36.360><c> same</c>
+
+00:20:36.529 --> 00:20:36.539 align:start position:0%
+exactly the same API is exactly the same
+ 
+
+00:20:36.539 --> 00:20:38.149 align:start position:0%
+exactly the same API is exactly the same
+programming<00:20:37.200><c> knowledge</c><00:20:37.350><c> that</c><00:20:37.620><c> you</c><00:20:37.710><c> have</c><00:20:37.890><c> to</c>
+
+00:20:38.149 --> 00:20:38.159 align:start position:0%
+programming knowledge that you have to
+ 
+
+00:20:38.159 --> 00:20:40.159 align:start position:0%
+programming knowledge that you have to
+then<00:20:38.309><c> build</c><00:20:38.520><c> out</c><00:20:38.760><c> the</c><00:20:39.360><c> server</c><00:20:39.600><c> side</c><00:20:39.870><c> as</c><00:20:40.020><c> well</c>
+
+00:20:40.159 --> 00:20:40.169 align:start position:0%
+then build out the server side as well
+ 
+
+00:20:40.169 --> 00:20:43.060 align:start position:0%
+then build out the server side as well
+so<00:20:40.200><c> you</c><00:20:40.530><c> can</c><00:20:40.830><c> use</c><00:20:41.789><c> the</c><00:20:41.909><c> same</c><00:20:42.120><c> PI</c><00:20:42.330><c> R</c><00:20:42.450><c> micros</c>
+
+00:20:43.060 --> 00:20:43.070 align:start position:0%
+so you can use the same PI R micros
+ 
+
+00:20:43.070 --> 00:20:45.860 align:start position:0%
+so you can use the same PI R micros
+these<00:20:44.070><c> two</c><00:20:44.280><c> are</c><00:20:44.429><c> clustered</c><00:20:44.789><c> together</c><00:20:44.909><c> so</c>
+
+00:20:45.860 --> 00:20:45.870 align:start position:0%
+these two are clustered together so
+ 
+
+00:20:45.870 --> 00:20:47.240 align:start position:0%
+these two are clustered together so
+that's<00:20:46.020><c> how</c><00:20:46.230><c> the</c><00:20:46.289><c> events</c><00:20:46.650><c> are</c><00:20:46.770><c> flying</c><00:20:46.980><c> between</c>
+
+00:20:47.240 --> 00:20:47.250 align:start position:0%
+that's how the events are flying between
+ 
+
+00:20:47.250 --> 00:20:51.169 align:start position:0%
+that's how the events are flying between
+them<00:20:47.580><c> so</c><00:20:47.760><c> even</c><00:20:47.909><c> on</c><00:20:48.120><c> on</c><00:20:48.990><c> the</c><00:20:50.000><c> raspberry</c><00:20:51.000><c> PI's</c>
+
+00:20:51.169 --> 00:20:51.179 align:start position:0%
+them so even on on the raspberry PI's
+ 
+
+00:20:51.179 --> 00:20:54.080 align:start position:0%
+them so even on on the raspberry PI's
+they're<00:20:51.390><c> clustering</c><00:20:51.840><c> and</c><00:20:52.130><c> sharing</c><00:20:53.130><c> data</c>
+
+00:20:54.080 --> 00:20:54.090 align:start position:0%
+they're clustering and sharing data
+ 
+
+00:20:54.090 --> 00:20:55.580 align:start position:0%
+they're clustering and sharing data
+you<00:20:54.240><c> could</c><00:20:54.420><c> then</c><00:20:54.570><c> on</c><00:20:54.840><c> the</c><00:20:55.020><c> cloud</c><00:20:55.200><c> you</c><00:20:55.380><c> can</c>
+
+00:20:55.580 --> 00:20:55.590 align:start position:0%
+you could then on the cloud you can
+ 
+
+00:20:55.590 --> 00:20:58.280 align:start position:0%
+you could then on the cloud you can
+scale<00:20:55.860><c> that</c><00:20:55.980><c> out</c><00:20:56.040><c> to</c><00:20:56.310><c> a</c><00:20:56.340><c> massive</c><00:20:56.760><c> Multi</c><00:20:57.290><c> multi</c>
+
+00:20:58.280 --> 00:20:58.290 align:start position:0%
+scale that out to a massive Multi multi
+ 
+
+00:20:58.290 --> 00:21:00.200 align:start position:0%
+scale that out to a massive Multi multi
+gigabyte<00:20:58.710><c> in-memory</c><00:20:59.130><c> datastore</c><00:20:59.970><c> if</c><00:21:00.120><c> you</c>
+
+00:21:00.200 --> 00:21:00.210 align:start position:0%
+gigabyte in-memory datastore if you
+ 
+
+00:21:00.210 --> 00:21:02.350 align:start position:0%
+gigabyte in-memory datastore if you
+wanted<00:21:00.450><c> to</c><00:21:00.630><c> but</c><00:21:01.110><c> exactly</c><00:21:01.410><c> the</c><00:21:01.590><c> sort</c><00:21:01.860><c> of</c><00:21:01.890><c> same</c>
+
+00:21:02.350 --> 00:21:02.360 align:start position:0%
+wanted to but exactly the sort of same
+ 
+
+00:21:02.360 --> 00:21:07.580 align:start position:0%
+wanted to but exactly the sort of same
+technology<00:21:03.360><c> the</c><00:21:03.900><c> same</c><00:21:04.050><c> api's</c><00:21:05.750><c> so</c><00:21:06.750><c> it</c><00:21:07.350><c> would</c><00:21:07.500><c> be</c>
+
+00:21:07.580 --> 00:21:07.590 align:start position:0%
+technology the same api's so it would be
+ 
+
+00:21:07.590 --> 00:21:09.920 align:start position:0%
+technology the same api's so it would be
+possible<00:21:07.770><c> to</c><00:21:08.040><c> build</c><00:21:08.280><c> you</c><00:21:09.240><c> know</c><00:21:09.300><c> to</c><00:21:09.510><c> scale</c><00:21:09.780><c> out</c>
+
+00:21:09.920 --> 00:21:09.930 align:start position:0%
+possible to build you know to scale out
+ 
+
+00:21:09.930 --> 00:21:12.800 align:start position:0%
+possible to build you know to scale out
+many<00:21:10.650><c> hundreds</c><00:21:11.040><c> of</c><00:21:11.070><c> these</c><00:21:11.630><c> going</c><00:21:12.630><c> through</c><00:21:12.750><c> the</c>
+
+00:21:12.800 --> 00:21:12.810 align:start position:0%
+many hundreds of these going through the
+ 
+
+00:21:12.810 --> 00:21:14.900 align:start position:0%
+many hundreds of these going through the
+gateway<00:21:13.140><c> node</c><00:21:13.380><c> and</c><00:21:13.800><c> then</c><00:21:13.950><c> pushing</c><00:21:14.370><c> data</c><00:21:14.610><c> up</c><00:21:14.880><c> to</c>
+
+00:21:14.900 --> 00:21:14.910 align:start position:0%
+gateway node and then pushing data up to
+ 
+
+00:21:14.910 --> 00:21:17.000 align:start position:0%
+gateway node and then pushing data up to
+a<00:21:15.420><c> cloud</c><00:21:15.690><c> environment</c><00:21:15.900><c> and</c><00:21:16.410><c> using</c><00:21:16.680><c> the</c><00:21:16.800><c> same</c>
+
+00:21:17.000 --> 00:21:17.010 align:start position:0%
+a cloud environment and using the same
+ 
+
+00:21:17.010 --> 00:21:19.190 align:start position:0%
+a cloud environment and using the same
+power<00:21:17.340><c> and</c><00:21:17.520><c> micros</c><00:21:17.910><c> to</c><00:21:18.300><c> store</c><00:21:18.540><c> that</c><00:21:18.750><c> within</c><00:21:19.020><c> a</c>
+
+00:21:19.190 --> 00:21:19.200 align:start position:0%
+power and micros to store that within a
+ 
+
+00:21:19.200 --> 00:21:28.460 align:start position:0%
+power and micros to store that within a
+in-memory<00:21:20.130><c> data</c><00:21:20.490><c> grid</c><00:21:26.720><c> so</c><00:21:27.720><c> if</c><00:21:27.960><c> we</c><00:21:28.050><c> did</c><00:21:28.200><c> that</c><00:21:28.290><c> on</c>
+
+00:21:28.460 --> 00:21:28.470 align:start position:0%
+in-memory data grid so if we did that on
+ 
+
+00:21:28.470 --> 00:21:30.770 align:start position:0%
+in-memory data grid so if we did that on
+the<00:21:28.500><c> this</c><00:21:29.280><c> is</c><00:21:29.430><c> code</c><00:21:29.730><c> that</c><00:21:30.000><c> would</c><00:21:30.150><c> be</c><00:21:30.210><c> shown</c>
+
+00:21:30.770 --> 00:21:30.780 align:start position:0%
+the this is code that would be shown
+ 
+
+00:21:30.780 --> 00:21:37.400 align:start position:0%
+the this is code that would be shown
+four<00:21:32.390><c> on</c><00:21:33.390><c> this</c><00:21:33.810><c> on</c><00:21:34.110><c> the</c><00:21:34.260><c> cloud</c><00:21:34.710><c> side</c><00:21:36.260><c> this</c><00:21:37.260><c> is</c>
+
+00:21:37.400 --> 00:21:37.410 align:start position:0%
+four on this on the cloud side this is
+ 
+
+00:21:37.410 --> 00:21:40.090 align:start position:0%
+four on this on the cloud side this is
+the<00:21:37.500><c> code</c><00:21:37.710><c> that</c><00:21:37.920><c> would</c><00:21:38.010><c> be</c><00:21:38.160><c> used</c><00:21:38.430><c> to</c><00:21:38.870><c> actually</c>
+
+00:21:40.090 --> 00:21:40.100 align:start position:0%
+the code that would be used to actually
+ 
+
+00:21:40.100 --> 00:21:43.010 align:start position:0%
+the code that would be used to actually
+retrieve<00:21:41.100><c> data</c><00:21:41.310><c> and</c><00:21:41.760><c> push</c><00:21:42.150><c> it</c><00:21:42.300><c> into</c><00:21:42.480><c> a</c><00:21:42.660><c> data</c>
+
+00:21:43.010 --> 00:21:43.020 align:start position:0%
+retrieve data and push it into a data
+ 
+
+00:21:43.020 --> 00:21:44.570 align:start position:0%
+retrieve data and push it into a data
+grid<00:21:43.200><c> so</c><00:21:43.410><c> the</c><00:21:43.470><c> data</c><00:21:43.650><c> grid</c><00:21:43.830><c> is</c><00:21:43.980><c> an</c><00:21:44.070><c> in-memory</c>
+
+00:21:44.570 --> 00:21:44.580 align:start position:0%
+grid so the data grid is an in-memory
+ 
+
+00:21:44.580 --> 00:21:49.520 align:start position:0%
+grid so the data grid is an in-memory
+key<00:21:45.030><c> value</c><00:21:45.300><c> store</c><00:21:45.720><c> so</c><00:21:47.060><c> you</c><00:21:48.060><c> could</c><00:21:48.300><c> say</c><00:21:48.810><c> cluster</c>
+
+00:21:49.520 --> 00:21:49.530 align:start position:0%
+key value store so you could say cluster
+ 
+
+00:21:49.530 --> 00:21:51.800 align:start position:0%
+key value store so you could say cluster
+all<00:21:49.620><c> the</c><00:21:49.740><c> payara</c><00:21:49.920><c> micros</c><00:21:50.400><c> up</c><00:21:50.580><c> and</c><00:21:50.790><c> then</c><00:21:51.510><c> store</c>
+
+00:21:51.800 --> 00:21:51.810 align:start position:0%
+all the payara micros up and then store
+ 
+
+00:21:51.810 --> 00:21:53.150 align:start position:0%
+all the payara micros up and then store
+all<00:21:51.930><c> the</c><00:21:52.020><c> measurements</c><00:21:52.410><c> from</c><00:21:52.470><c> hundreds</c><00:21:53.040><c> of</c>
+
+00:21:53.150 --> 00:21:53.160 align:start position:0%
+all the measurements from hundreds of
+ 
+
+00:21:53.160 --> 00:21:57.830 align:start position:0%
+all the measurements from hundreds of
+devices<00:21:53.970><c> into</c><00:21:54.390><c> any</c><00:21:55.170><c> memory</c><00:21:55.440><c> data</c><00:21:55.650><c> store</c><00:21:56.840><c> so</c>
+
+00:21:57.830 --> 00:21:57.840 align:start position:0%
+devices into any memory data store so
+ 
+
+00:21:57.840 --> 00:21:59.450 align:start position:0%
+devices into any memory data store so
+exactly<00:21:58.140><c> the</c><00:21:58.260><c> same</c><00:21:58.500><c> on</c><00:21:58.800><c> the</c><00:21:58.890><c> server</c><00:21:59.100><c> side</c><00:21:59.340><c> as</c>
+
+00:21:59.450 --> 00:21:59.460 align:start position:0%
+exactly the same on the server side as
+ 
+
+00:21:59.460 --> 00:22:04.400 align:start position:0%
+exactly the same on the server side as
+would<00:21:59.610><c> be</c><00:21:59.730><c> on</c><00:21:59.910><c> the</c><00:22:00.600><c> mqtt</c><00:22:01.230><c> we</c><00:22:02.130><c> have</c><00:22:03.410><c> what's</c>
+
+00:22:04.400 --> 00:22:04.410 align:start position:0%
+would be on the mqtt we have what's
+ 
+
+00:22:04.410 --> 00:22:07.400 align:start position:0%
+would be on the mqtt we have what's
+called<00:22:04.530><c> a</c><00:22:04.620><c> message</c><00:22:04.860><c> driven</c><00:22:05.010><c> bean</c><00:22:05.990><c> it's</c><00:22:06.990><c> using</c>
+
+00:22:07.400 --> 00:22:07.410 align:start position:0%
+called a message driven bean it's using
+ 
+
+00:22:07.410 --> 00:22:10.010 align:start position:0%
+called a message driven bean it's using
+this<00:22:07.740><c> this</c><00:22:08.070><c> case</c><00:22:08.280><c> would</c><00:22:08.460><c> be</c><00:22:08.510><c> as</c><00:22:09.510><c> your</c><00:22:09.690><c> service</c>
+
+00:22:10.010 --> 00:22:10.020 align:start position:0%
+this this case would be as your service
+ 
+
+00:22:10.020 --> 00:22:13.310 align:start position:0%
+this this case would be as your service
+price<00:22:10.170><c> will</c><00:22:10.350><c> be</c><00:22:10.380><c> same</c><00:22:10.590><c> with</c><00:22:10.740><c> MQTT</c><00:22:11.400><c> and</c><00:22:12.170><c> we</c><00:22:13.170><c> have</c>
+
+00:22:13.310 --> 00:22:13.320 align:start position:0%
+price will be same with MQTT and we have
+ 
+
+00:22:13.320 --> 00:22:17.330 align:start position:0%
+price will be same with MQTT and we have
+what's<00:22:13.500><c> called</c><00:22:13.560><c> a</c><00:22:13.980><c> cache</c><00:22:15.290><c> okay</c><00:22:16.290><c> so</c><00:22:17.070><c> in</c><00:22:17.280><c> a</c>
+
+00:22:17.330 --> 00:22:17.340 align:start position:0%
+what's called a cache okay so in a
+ 
+
+00:22:17.340 --> 00:22:19.930 align:start position:0%
+what's called a cache okay so in a
+similar<00:22:17.490><c> way</c><00:22:18.080><c> when</c><00:22:19.080><c> it</c><00:22:19.230><c> receives</c><00:22:19.500><c> a</c><00:22:19.620><c> message</c>
+
+00:22:19.930 --> 00:22:19.940 align:start position:0%
+similar way when it receives a message
+ 
+
+00:22:19.940 --> 00:22:24.140 align:start position:0%
+similar way when it receives a message
+it<00:22:22.010><c> basically</c><00:22:23.010><c> takes</c><00:22:23.220><c> that</c><00:22:23.370><c> humidity</c><00:22:23.640><c> message</c>
+
+00:22:24.140 --> 00:22:24.150 align:start position:0%
+it basically takes that humidity message
+ 
+
+00:22:24.150 --> 00:22:28.040 align:start position:0%
+it basically takes that humidity message
+measurement<00:22:24.930><c> from</c><00:22:25.020><c> the</c><00:22:25.170><c> message</c><00:22:26.990><c> creates</c><00:22:27.990><c> a</c>
+
+00:22:28.040 --> 00:22:28.050 align:start position:0%
+measurement from the message creates a
+ 
+
+00:22:28.050 --> 00:22:30.140 align:start position:0%
+measurement from the message creates a
+new<00:22:28.170><c> collection</c><00:22:28.500><c> with</c><00:22:29.190><c> keyed</c><00:22:29.610><c> on</c><00:22:29.730><c> the</c><00:22:29.820><c> sensor</c>
+
+00:22:30.140 --> 00:22:30.150 align:start position:0%
+new collection with keyed on the sensor
+ 
+
+00:22:30.150 --> 00:22:31.700 align:start position:0%
+new collection with keyed on the sensor
+name<00:22:30.360><c> and</c><00:22:30.600><c> then</c><00:22:30.690><c> pushes</c><00:22:31.050><c> it</c><00:22:31.170><c> into</c><00:22:31.320><c> the</c><00:22:31.440><c> grid</c>
+
+00:22:31.700 --> 00:22:31.710 align:start position:0%
+name and then pushes it into the grid
+ 
+
+00:22:31.710 --> 00:22:33.410 align:start position:0%
+name and then pushes it into the grid
+and<00:22:32.040><c> that</c><00:22:32.100><c> that's</c><00:22:32.490><c> all</c><00:22:32.790><c> the</c><00:22:32.940><c> code</c><00:22:33.090><c> that</c><00:22:33.270><c> we</c>
+
+00:22:33.410 --> 00:22:33.420 align:start position:0%
+and that that's all the code that we
+ 
+
+00:22:33.420 --> 00:22:36.140 align:start position:0%
+and that that's all the code that we
+require<00:22:33.750><c> to</c><00:22:33.780><c> keep</c><00:22:34.170><c> that</c><00:22:34.380><c> measurement</c><00:22:35.370><c> against</c>
+
+00:22:36.140 --> 00:22:36.150 align:start position:0%
+require to keep that measurement against
+ 
+
+00:22:36.150 --> 00:22:38.290 align:start position:0%
+require to keep that measurement against
+the<00:22:36.240><c> sensor</c><00:22:36.600><c> name</c><00:22:36.780><c> in</c><00:22:37.080><c> a</c><00:22:37.440><c> in</c><00:22:37.710><c> memory</c>
+
+00:22:38.290 --> 00:22:38.300 align:start position:0%
+the sensor name in a in memory
+ 
+
+00:22:38.300 --> 00:22:47.140 align:start position:0%
+the sensor name in a in memory
+large-scale<00:22:41.000><c> cloud</c><00:22:42.000><c> side</c><00:22:42.300><c> memory</c><00:22:43.200><c> store</c><00:22:45.470><c> and</c>
+
+00:22:47.140 --> 00:22:47.150 align:start position:0%
+large-scale cloud side memory store and
+ 
+
+00:22:47.150 --> 00:22:50.090 align:start position:0%
+large-scale cloud side memory store and
+to<00:22:48.150><c> retrieve</c><00:22:48.480><c> them</c><00:22:48.690><c> again</c><00:22:49.350><c> this</c><00:22:49.800><c> could</c><00:22:49.980><c> be</c>
+
+00:22:50.090 --> 00:22:50.100 align:start position:0%
+to retrieve them again this could be
+ 
+
+00:22:50.100 --> 00:22:53.360 align:start position:0%
+to retrieve them again this could be
+used<00:22:50.340><c> on</c><00:22:50.640><c> the</c><00:22:51.060><c> device</c><00:22:51.300><c> as</c><00:22:51.480><c> well</c><00:22:52.340><c> jakarta</c><00:22:53.340><c> ii</c>
+
+00:22:53.360 --> 00:22:53.370 align:start position:0%
+used on the device as well jakarta ii
+ 
+
+00:22:53.370 --> 00:22:55.310 align:start position:0%
+used on the device as well jakarta ii
+obviously<00:22:53.940><c> supports</c><00:22:54.360><c> full</c><00:22:54.540><c> restful</c><00:22:55.020><c> web</c>
+
+00:22:55.310 --> 00:22:55.320 align:start position:0%
+obviously supports full restful web
+ 
+
+00:22:55.320 --> 00:22:59.540 align:start position:0%
+obviously supports full restful web
+services<00:22:55.770><c> as</c><00:22:55.920><c> well</c><00:22:56.930><c> so</c><00:22:57.930><c> the</c><00:22:58.050><c> code</c><00:22:58.260><c> to</c><00:22:59.160><c> retrieve</c>
+
+00:22:59.540 --> 00:22:59.550 align:start position:0%
+services as well so the code to retrieve
+ 
+
+00:22:59.550 --> 00:23:01.610 align:start position:0%
+services as well so the code to retrieve
+things<00:22:59.730><c> from</c><00:22:59.970><c> that</c><00:23:00.000><c> data</c><00:23:00.390><c> grid</c><00:23:00.630><c> is</c>
+
+00:23:01.610 --> 00:23:01.620 align:start position:0%
+things from that data grid is
+ 
+
+00:23:01.620 --> 00:23:05.120 align:start position:0%
+things from that data grid is
+essentially
+
+00:23:05.120 --> 00:23:05.130 align:start position:0%
+ 
+ 
+
+00:23:05.130 --> 00:23:08.240 align:start position:0%
+ 
+is<00:23:05.790><c> literally</c><00:23:06.450><c> you</c><00:23:07.140><c> basically</c><00:23:07.710><c> hook</c><00:23:08.010><c> it</c><00:23:08.160><c> to</c>
+
+00:23:08.240 --> 00:23:08.250 align:start position:0%
+is literally you basically hook it to
+ 
+
+00:23:08.250 --> 00:23:10.850 align:start position:0%
+is literally you basically hook it to
+the<00:23:08.340><c> same</c><00:23:08.520><c> grid</c><00:23:08.790><c> and</c><00:23:09.500><c> when</c><00:23:10.500><c> there's</c><00:23:10.650><c> a</c><00:23:10.710><c> get</c>
+
+00:23:10.850 --> 00:23:10.860 align:start position:0%
+the same grid and when there's a get
+ 
+
+00:23:10.860 --> 00:23:14.900 align:start position:0%
+the same grid and when there's a get
+request<00:23:12.920><c> passing</c><00:23:13.920><c> in</c><00:23:14.010><c> the</c><00:23:14.100><c> sensor</c><00:23:14.400><c> name</c><00:23:14.580><c> you</c>
+
+00:23:14.900 --> 00:23:14.910 align:start position:0%
+request passing in the sensor name you
+ 
+
+00:23:14.910 --> 00:23:16.220 align:start position:0%
+request passing in the sensor name you
+could<00:23:15.030><c> then</c><00:23:15.180><c> retrieve</c><00:23:15.510><c> all</c><00:23:15.660><c> the</c><00:23:15.690><c> data</c><00:23:15.990><c> and</c>
+
+00:23:16.220 --> 00:23:16.230 align:start position:0%
+could then retrieve all the data and
+ 
+
+00:23:16.230 --> 00:23:19.520 align:start position:0%
+could then retrieve all the data and
+send<00:23:16.470><c> it</c><00:23:16.590><c> down</c><00:23:16.710><c> to</c><00:23:16.920><c> a</c><00:23:16.950><c> client</c><00:23:17.910><c> device</c><00:23:18.150><c> as</c><00:23:19.050><c> JSON</c>
+
+00:23:19.520 --> 00:23:19.530 align:start position:0%
+send it down to a client device as JSON
+ 
+
+00:23:19.530 --> 00:23:30.170 align:start position:0%
+send it down to a client device as JSON
+string<00:23:25.100><c> okay</c><00:23:26.100><c> so</c><00:23:27.620><c> that's</c><00:23:28.620><c> that's</c><00:23:29.100><c> a</c><00:23:29.250><c> demo</c><00:23:29.610><c> if</c>
+
+00:23:30.170 --> 00:23:30.180 align:start position:0%
+string okay so that's that's a demo if
+ 
+
+00:23:30.180 --> 00:23:36.050 align:start position:0%
+string okay so that's that's a demo if
+you<00:23:30.330><c> like</c><00:23:30.510><c> of</c><00:23:30.980><c> a</c><00:23:32.840><c> real</c><00:23:33.860><c> code</c><00:23:34.860><c> running</c><00:23:35.160><c> on</c><00:23:35.310><c> real</c>
+
+00:23:36.050 --> 00:23:36.060 align:start position:0%
+you like of a real code running on real
+ 
+
+00:23:36.060 --> 00:23:42.610 align:start position:0%
+you like of a real code running on real
+smallish<00:23:36.780><c> devices</c><00:23:37.850><c> so</c><00:23:40.550><c> why</c><00:23:41.550><c> would</c><00:23:41.760><c> you</c><00:23:41.790><c> use</c>
+
+00:23:42.610 --> 00:23:42.620 align:start position:0%
+smallish devices so why would you use
+ 
+
+00:23:42.620 --> 00:23:45.200 align:start position:0%
+smallish devices so why would you use
+Jakarta<00:23:43.620><c> EE</c><00:23:43.800><c> on</c><00:23:44.160><c> these</c><00:23:44.310><c> devices</c><00:23:44.520><c> like</c><00:23:44.910><c> saying</c>
+
+00:23:45.200 --> 00:23:45.210 align:start position:0%
+Jakarta EE on these devices like saying
+ 
+
+00:23:45.210 --> 00:23:47.900 align:start position:0%
+Jakarta EE on these devices like saying
+PI<00:23:45.450><c> R</c><00:23:45.540><c> micro</c><00:23:45.810><c> small</c><00:23:46.140><c> so</c><00:23:46.770><c> it's</c><00:23:47.460><c> running</c><00:23:47.670><c> in</c>
+
+00:23:47.900 --> 00:23:47.910 align:start position:0%
+PI R micro small so it's running in
+ 
+
+00:23:47.910 --> 00:23:50.480 align:start position:0%
+PI R micro small so it's running in
+about<00:23:48.000><c> 30</c><00:23:48.780><c> 40</c><00:23:49.080><c> megabytes</c><00:23:49.440><c> of</c><00:23:49.710><c> JVM</c><00:23:50.310><c> heap</c>
+
+00:23:50.480 --> 00:23:50.490 align:start position:0%
+about 30 40 megabytes of JVM heap
+ 
+
+00:23:50.490 --> 00:23:52.660 align:start position:0%
+about 30 40 megabytes of JVM heap
+obviously<00:23:51.000><c> you</c><00:23:51.060><c> then</c><00:23:51.180><c> have</c><00:23:51.330><c> a</c><00:23:51.360><c> JVM</c><00:23:51.720><c> overhead</c>
+
+00:23:52.660 --> 00:23:52.670 align:start position:0%
+obviously you then have a JVM overhead
+ 
+
+00:23:52.670 --> 00:23:56.780 align:start position:0%
+obviously you then have a JVM overhead
+but<00:23:53.670><c> you</c><00:23:53.760><c> could</c><00:23:54.290><c> run</c><00:23:55.290><c> you</c><00:23:56.220><c> could</c><00:23:56.340><c> you</c><00:23:56.700><c> know</c>
+
+00:23:56.780 --> 00:23:56.790 align:start position:0%
+but you could run you could you know
+ 
+
+00:23:56.790 --> 00:23:58.040 align:start position:0%
+but you could run you could you know
+maybe<00:23:56.940><c> potentially</c><00:23:57.150><c> within</c><00:23:57.540><c> the</c><00:23:57.720><c> future</c><00:23:57.960><c> of</c>
+
+00:23:58.040 --> 00:23:58.050 align:start position:0%
+maybe potentially within the future of
+ 
+
+00:23:58.050 --> 00:24:00.680 align:start position:0%
+maybe potentially within the future of
+Java<00:23:58.230><c> 9j</c><00:23:59.190><c> link</c><00:23:59.430><c> and</c><00:23:59.640><c> java</c><00:23:59.790><c> 10</c><00:24:00.000><c> needs</c><00:24:00.240><c> shrink</c>
+
+00:24:00.680 --> 00:24:00.690 align:start position:0%
+Java 9j link and java 10 needs shrink
+ 
+
+00:24:00.690 --> 00:24:02.960 align:start position:0%
+Java 9j link and java 10 needs shrink
+that<00:24:00.810><c> down</c><00:24:00.870><c> to</c><00:24:01.230><c> exactly</c><00:24:01.560><c> what</c><00:24:01.710><c> you</c><00:24:01.800><c> need</c><00:24:01.970><c> it</c>
+
+00:24:02.960 --> 00:24:02.970 align:start position:0%
+that down to exactly what you need it
+ 
+
+00:24:02.970 --> 00:24:04.490 align:start position:0%
+that down to exactly what you need it
+also<00:24:03.120><c> comes</c><00:24:03.360><c> with</c><00:24:03.420><c> a</c><00:24:03.540><c> bunch</c><00:24:03.720><c> of</c><00:24:03.840><c> standard</c><00:24:04.230><c> api</c>
+
+00:24:04.490 --> 00:24:04.500 align:start position:0%
+also comes with a bunch of standard api
+ 
+
+00:24:04.500 --> 00:24:06.860 align:start position:0%
+also comes with a bunch of standard api
+so<00:24:04.860><c> you</c><00:24:04.920><c> don't</c><00:24:05.130><c> have</c><00:24:05.280><c> to</c><00:24:05.430><c> learn</c><00:24:05.580><c> if</c><00:24:06.210><c> you're</c><00:24:06.660><c> new</c>
+
+00:24:06.860 --> 00:24:06.870 align:start position:0%
+so you don't have to learn if you're new
+ 
+
+00:24:06.870 --> 00:24:08.810 align:start position:0%
+so you don't have to learn if you're new
+york<00:24:06.990><c> no</c><00:24:07.170><c> dobry</c><00:24:07.680><c> you</c><00:24:08.130><c> don't</c><00:24:08.310><c> have</c><00:24:08.550><c> to</c><00:24:08.670><c> learn</c>
+
+00:24:08.810 --> 00:24:08.820 align:start position:0%
+york no dobry you don't have to learn
+ 
+
+00:24:08.820 --> 00:24:10.730 align:start position:0%
+york no dobry you don't have to learn
+any<00:24:09.090><c> new</c><00:24:09.120><c> technology</c><00:24:09.810><c> to</c><00:24:09.930><c> build</c><00:24:10.080><c> for</c><00:24:10.620><c> these</c>
+
+00:24:10.730 --> 00:24:10.740 align:start position:0%
+any new technology to build for these
+ 
+
+00:24:10.740 --> 00:24:17.510 align:start position:0%
+any new technology to build for these
+devices<00:24:11.490><c> so</c><00:24:12.800><c> para</c><00:24:13.800><c> micro</c><00:24:14.160><c> itself</c><00:24:15.050><c> has</c><00:24:16.160><c> JPA</c><00:24:17.160><c> and</c>
+
+00:24:17.510 --> 00:24:17.520 align:start position:0%
+devices so para micro itself has JPA and
+ 
+
+00:24:17.520 --> 00:24:19.880 align:start position:0%
+devices so para micro itself has JPA and
+it<00:24:17.610><c> has</c><00:24:17.730><c> an</c><00:24:17.850><c> embedded</c><00:24:18.240><c> database</c><00:24:18.390><c> so</c><00:24:19.110><c> that</c>
+
+00:24:19.880 --> 00:24:19.890 align:start position:0%
+it has an embedded database so that
+ 
+
+00:24:19.890 --> 00:24:25.700 align:start position:0%
+it has an embedded database so that
+device<00:24:20.930><c> could</c><00:24:21.930><c> use</c><00:24:23.090><c> standard</c><00:24:24.090><c> JPA</c><00:24:24.710><c> database</c>
+
+00:24:25.700 --> 00:24:25.710 align:start position:0%
+device could use standard JPA database
+ 
+
+00:24:25.710 --> 00:24:28.190 align:start position:0%
+device could use standard JPA database
+if<00:24:25.950><c> it</c><00:24:26.070><c> comes</c><00:24:26.250><c> with</c><00:24:26.400><c> h2</c><00:24:26.760><c> which</c><00:24:26.910><c> is</c><00:24:27.060><c> an</c><00:24:27.200><c> embedded</c>
+
+00:24:28.190 --> 00:24:28.200 align:start position:0%
+if it comes with h2 which is an embedded
+ 
+
+00:24:28.200 --> 00:24:30.950 align:start position:0%
+if it comes with h2 which is an embedded
+one<00:24:28.350><c> to</c><00:24:29.040><c> store-and-forward</c><00:24:29.340><c> data</c><00:24:30.180><c> on</c><00:24:30.420><c> just</c><00:24:30.840><c> on</c>
+
+00:24:30.950 --> 00:24:30.960 align:start position:0%
+one to store-and-forward data on just on
+ 
+
+00:24:30.960 --> 00:24:35.420 align:start position:0%
+one to store-and-forward data on just on
+the<00:24:31.050><c> device</c><00:24:31.260><c> locally</c><00:24:33.110><c> so</c><00:24:34.110><c> you</c><00:24:34.200><c> can</c><00:24:34.350><c> build</c><00:24:34.500><c> web</c>
+
+00:24:35.420 --> 00:24:35.430 align:start position:0%
+the device locally so you can build web
+ 
+
+00:24:35.430 --> 00:24:39.520 align:start position:0%
+the device locally so you can build web
+applications<00:24:35.720><c> using</c><00:24:36.720><c> the</c><00:24:36.900><c> standard</c><00:24:37.290><c> api's</c>
+
+00:24:39.520 --> 00:24:39.530 align:start position:0%
+applications using the standard api's
+ 
+
+00:24:39.530 --> 00:24:42.860 align:start position:0%
+applications using the standard api's
+but<00:24:40.530><c> PI</c><00:24:40.680><c> or</c><00:24:40.800><c> micro</c><00:24:41.130><c> supports</c><00:24:41.640><c> you</c><00:24:41.910><c> know</c><00:24:42.000><c> JSF</c>
+
+00:24:42.860 --> 00:24:42.870 align:start position:0%
+but PI or micro supports you know JSF
+ 
+
+00:24:42.870 --> 00:24:44.090 align:start position:0%
+but PI or micro supports you know JSF
+which<00:24:43.320><c> would</c><00:24:43.440><c> be</c><00:24:43.530><c> like</c><00:24:43.680><c> little</c><00:24:43.920><c> bit</c>
+
+00:24:44.090 --> 00:24:44.100 align:start position:0%
+which would be like little bit
+ 
+
+00:24:44.100 --> 00:24:45.920 align:start position:0%
+which would be like little bit
+heavyweight<00:24:44.460><c> but</c><00:24:44.730><c> it</c><00:24:44.850><c> supports</c><00:24:45.300><c> restful</c><00:24:45.810><c> web</c>
+
+00:24:45.920 --> 00:24:45.930 align:start position:0%
+heavyweight but it supports restful web
+ 
+
+00:24:45.930 --> 00:24:49.160 align:start position:0%
+heavyweight but it supports restful web
+services<00:24:46.410><c> WebSockets</c><00:24:47.250><c> HTTP</c><00:24:48.030><c> to</c><00:24:48.240><c> all</c><00:24:48.960><c> the</c>
+
+00:24:49.160 --> 00:24:49.170 align:start position:0%
+services WebSockets HTTP to all the
+ 
+
+00:24:49.170 --> 00:24:50.480 align:start position:0%
+services WebSockets HTTP to all the
+things<00:24:49.380><c> that</c><00:24:49.500><c> you</c><00:24:49.590><c> would</c><00:24:49.710><c> need</c><00:24:49.830><c> to</c><00:24:50.010><c> build</c><00:24:50.160><c> say</c>
+
+00:24:50.480 --> 00:24:50.490 align:start position:0%
+things that you would need to build say
+ 
+
+00:24:50.490 --> 00:24:53.360 align:start position:0%
+things that you would need to build say
+an<00:24:50.580><c> embedded</c><00:24:51.020><c> embedded</c><00:24:52.020><c> web</c><00:24:52.710><c> application</c><00:24:53.250><c> on</c>
+
+00:24:53.360 --> 00:24:53.370 align:start position:0%
+an embedded embedded web application on
+ 
+
+00:24:53.370 --> 00:24:58.010 align:start position:0%
+an embedded embedded web application on
+web<00:24:54.150><c> console</c><00:24:54.540><c> on</c><00:24:54.750><c> the</c><00:24:54.780><c> device</c><00:24:56.360><c> we</c><00:24:57.360><c> have</c><00:24:57.390><c> JC</c><00:24:57.900><c> a</c>
+
+00:24:58.010 --> 00:24:58.020 align:start position:0%
+web console on the device we have JC a
+ 
+
+00:24:58.020 --> 00:24:59.990 align:start position:0%
+web console on the device we have JC a
+so<00:24:58.590><c> we</c><00:24:58.710><c> can</c><00:24:58.740><c> connect</c><00:24:59.160><c> to</c><00:24:59.280><c> messaging</c><00:24:59.610><c> systems</c>
+
+00:24:59.990 --> 00:25:00.000 align:start position:0%
+so we can connect to messaging systems
+ 
+
+00:25:00.000 --> 00:25:03.080 align:start position:0%
+so we can connect to messaging systems
+to<00:25:00.120><c> get</c><00:25:00.270><c> data</c><00:25:00.480><c> off</c><00:25:00.630><c> so</c><00:25:01.550><c> again</c><00:25:02.550><c> we</c><00:25:02.700><c> I</c><00:25:02.730><c> say</c><00:25:02.970><c> we</c>
+
+00:25:03.080 --> 00:25:03.090 align:start position:0%
+to get data off so again we I say we
+ 
+
+00:25:03.090 --> 00:25:06.140 align:start position:0%
+to get data off so again we I say we
+have<00:25:03.270><c> a</c><00:25:03.510><c> standard</c><00:25:04.100><c> at</c><00:25:05.100><c> the</c><00:25:05.310><c> box</c><00:25:05.520><c> and</c><00:25:05.670><c> qtt</c>
+
+00:25:06.140 --> 00:25:06.150 align:start position:0%
+have a standard at the box and qtt
+ 
+
+00:25:06.150 --> 00:25:08.570 align:start position:0%
+have a standard at the box and qtt
+support<00:25:06.540><c> so</c><00:25:06.840><c> you</c><00:25:06.870><c> could</c><00:25:07.170><c> send</c><00:25:07.410><c> data</c><00:25:07.590><c> by</c><00:25:07.890><c> mqtt</c>
+
+00:25:08.570 --> 00:25:08.580 align:start position:0%
+support so you could send data by mqtt
+ 
+
+00:25:08.580 --> 00:25:14.000 align:start position:0%
+support so you could send data by mqtt
+off<00:25:09.540><c> the</c><00:25:09.720><c> device</c><00:25:12.620><c> there</c><00:25:13.620><c> are</c><00:25:13.710><c> standard</c>
+
+00:25:14.000 --> 00:25:14.010 align:start position:0%
+off the device there are standard
+ 
+
+00:25:14.010 --> 00:25:18.560 align:start position:0%
+off the device there are standard
+concurrency<00:25:14.460><c> api's</c><00:25:14.850><c> in</c><00:25:16.520><c> Carter</c><00:25:17.520><c> EE</c>
+
+00:25:18.560 --> 00:25:18.570 align:start position:0%
+concurrency api's in Carter EE
+ 
+
+00:25:18.570 --> 00:25:22.400 align:start position:0%
+concurrency api's in Carter EE
+so<00:25:19.140><c> we</c><00:25:19.260><c> can</c><00:25:19.410><c> build</c><00:25:19.850><c> very</c><00:25:20.850><c> simply</c><00:25:21.410><c> asynchronous</c>
+
+00:25:22.400 --> 00:25:22.410 align:start position:0%
+so we can build very simply asynchronous
+ 
+
+00:25:22.410 --> 00:25:24.770 align:start position:0%
+so we can build very simply asynchronous
+reactive<00:25:23.220><c> multi-threaded</c><00:25:24.060><c> applications</c>
+
+00:25:24.770 --> 00:25:24.780 align:start position:0%
+reactive multi-threaded applications
+ 
+
+00:25:24.780 --> 00:25:27.740 align:start position:0%
+reactive multi-threaded applications
+using<00:25:25.470><c> the</c><00:25:26.370><c> concurrency</c><00:25:26.850><c> api's</c><00:25:27.240><c> that</c><00:25:27.540><c> come</c>
+
+00:25:27.740 --> 00:25:27.750 align:start position:0%
+using the concurrency api's that come
+ 
+
+00:25:27.750 --> 00:25:32.690 align:start position:0%
+using the concurrency api's that come
+with<00:25:27.900><c> java</c><00:25:28.080><c> re'</c><00:25:28.260><c> to</c><00:25:29.160><c> build</c><00:25:30.920><c> embedded</c><00:25:31.920><c> to</c><00:25:32.520><c> about</c>
+
+00:25:32.690 --> 00:25:32.700 align:start position:0%
+with java re' to build embedded to about
+ 
+
+00:25:32.700 --> 00:25:37.040 align:start position:0%
+with java re' to build embedded to about
+abet<00:25:33.180><c> embedded</c><00:25:33.600><c> applications</c><00:25:35.450><c> CDI</c><00:25:36.450><c> is</c><00:25:36.600><c> also</c>
+
+00:25:37.040 --> 00:25:37.050 align:start position:0%
+abet embedded applications CDI is also
+ 
+
+00:25:37.050 --> 00:25:39.530 align:start position:0%
+abet embedded applications CDI is also
+standard<00:25:37.860><c> that</c><00:25:38.040><c> as</c><00:25:38.280><c> an</c><00:25:38.760><c> advanced</c><00:25:39.030><c> dependency</c>
+
+00:25:39.530 --> 00:25:39.540 align:start position:0%
+standard that as an advanced dependency
+ 
+
+00:25:39.540 --> 00:25:45.410 align:start position:0%
+standard that as an advanced dependency
+injection<00:25:39.900><c> framework</c><00:25:41.480><c> so</c><00:25:42.480><c> you</c><00:25:44.120><c> can</c><00:25:45.120><c> use</c><00:25:45.240><c> that</c>
+
+00:25:45.410 --> 00:25:45.420 align:start position:0%
+injection framework so you can use that
+ 
+
+00:25:45.420 --> 00:25:49.490 align:start position:0%
+injection framework so you can use that
+as<00:25:45.600><c> well</c><00:25:45.750><c> and</c><00:25:47.360><c> we</c><00:25:48.360><c> also</c><00:25:48.510><c> have</c><00:25:48.720><c> restful</c><00:25:49.140><c> support</c>
+
+00:25:49.490 --> 00:25:49.500 align:start position:0%
+as well and we also have restful support
+ 
+
+00:25:49.500 --> 00:25:53.180 align:start position:0%
+as well and we also have restful support
+so<00:25:49.940><c> you</c><00:25:50.940><c> can</c><00:25:51.120><c> build</c><00:25:51.450><c> restful</c><00:25:51.930><c> endpoints</c><00:25:52.440><c> on</c>
+
+00:25:53.180 --> 00:25:53.190 align:start position:0%
+so you can build restful endpoints on
+ 
+
+00:25:53.190 --> 00:25:55.160 align:start position:0%
+so you can build restful endpoints on
+the<00:25:53.310><c> devices</c><00:25:53.580><c> to</c><00:25:54.060><c> communicate</c><00:25:54.600><c> with</c><00:25:55.080><c> the</c>
+
+00:25:55.160 --> 00:25:55.170 align:start position:0%
+the devices to communicate with the
+ 
+
+00:25:55.170 --> 00:25:58.040 align:start position:0%
+the devices to communicate with the
+device<00:25:55.610><c> it's</c><00:25:56.610><c> supposed</c><00:25:56.790><c> jax-rs</c><00:25:57.150><c> we</c><00:25:57.510><c> have</c><00:25:57.660><c> JSON</c>
+
+00:25:58.040 --> 00:25:58.050 align:start position:0%
+device it's supposed jax-rs we have JSON
+ 
+
+00:25:58.050 --> 00:26:02.060 align:start position:0%
+device it's supposed jax-rs we have JSON
+support<00:25:59.030><c> so</c><00:26:00.500><c> it</c><00:26:01.500><c> also</c><00:26:01.620><c> has</c><00:26:01.740><c> rest</c><00:26:01.980><c> client</c>
+
+00:26:02.060 --> 00:26:02.070 align:start position:0%
+support so it also has rest client
+ 
+
+00:26:02.070 --> 00:26:03.620 align:start position:0%
+support so it also has rest client
+support<00:26:02.640><c> so</c><00:26:02.790><c> you</c><00:26:02.850><c> could</c><00:26:03.060><c> use</c><00:26:03.210><c> rest</c><00:26:03.450><c> to</c>
+
+00:26:03.620 --> 00:26:03.630 align:start position:0%
+support so you could use rest to
+ 
+
+00:26:03.630 --> 00:26:05.990 align:start position:0%
+support so you could use rest to
+actually<00:26:03.960><c> as</c><00:26:04.080><c> a</c><00:26:04.110><c> client</c><00:26:04.560><c> to</c><00:26:04.620><c> invoke</c><00:26:05.000><c> other</c>
+
+00:26:05.990 --> 00:26:06.000 align:start position:0%
+actually as a client to invoke other
+ 
+
+00:26:06.000 --> 00:26:18.200 align:start position:0%
+actually as a client to invoke other
+services<00:26:06.510><c> from</c><00:26:06.780><c> from</c><00:26:07.470><c> off</c><00:26:07.590><c> the</c><00:26:07.710><c> device</c><00:26:13.280><c> so</c><00:26:17.210><c> so</c>
+
+00:26:18.200 --> 00:26:18.210 align:start position:0%
+services from from off the device so so
+ 
+
+00:26:18.210 --> 00:26:21.230 align:start position:0%
+services from from off the device so so
+is<00:26:18.390><c> Jakarta</c><00:26:18.810><c> relevant</c><00:26:19.230><c> to</c><00:26:19.290><c> IOT</c><00:26:19.970><c> so</c><00:26:20.970><c> the</c><00:26:21.060><c> answer</c>
+
+00:26:21.230 --> 00:26:21.240 align:start position:0%
+is Jakarta relevant to IOT so the answer
+ 
+
+00:26:21.240 --> 00:26:25.040 align:start position:0%
+is Jakarta relevant to IOT so the answer
+obviously<00:26:21.360><c> it</c><00:26:21.780><c> was</c><00:26:21.930><c> yes</c><00:26:22.640><c> I'm</c><00:26:23.640><c> hoping</c><00:26:24.120><c> you</c><00:26:24.930><c> know</c>
+
+00:26:25.040 --> 00:26:25.050 align:start position:0%
+obviously it was yes I'm hoping you know
+ 
+
+00:26:25.050 --> 00:26:27.620 align:start position:0%
+obviously it was yes I'm hoping you know
+that<00:26:25.080><c> we</c><00:26:25.980><c> can</c><00:26:26.130><c> demonstrate</c><00:26:26.760><c> it</c><00:26:27.210><c> that</c><00:26:27.510><c> these</c>
+
+00:26:27.620 --> 00:26:27.630 align:start position:0%
+that we can demonstrate it that these
+ 
+
+00:26:27.630 --> 00:26:31.250 align:start position:0%
+that we can demonstrate it that these
+are<00:26:27.780><c> small</c><00:26:29.390><c> one</c><00:26:30.390><c> of</c><00:26:30.480><c> the</c><00:26:30.570><c> things</c><00:26:30.810><c> that</c><00:26:30.990><c> we</c><00:26:31.080><c> did</c>
+
+00:26:31.250 --> 00:26:31.260 align:start position:0%
+are small one of the things that we did
+ 
+
+00:26:31.260 --> 00:26:33.590 align:start position:0%
+are small one of the things that we did
+about<00:26:31.470><c> when</c><00:26:31.860><c> we</c><00:26:31.980><c> built</c><00:26:32.190><c> PI</c><00:26:32.400><c> or</c><00:26:32.520><c> micro</c><00:26:32.940><c> was</c><00:26:33.450><c> to</c>
+
+00:26:33.590 --> 00:26:33.600 align:start position:0%
+about when we built PI or micro was to
+ 
+
+00:26:33.600 --> 00:26:37.220 align:start position:0%
+about when we built PI or micro was to
+bring<00:26:33.840><c> the</c><00:26:34.800><c> Jakarta</c><00:26:35.130><c> a</c><00:26:35.430><c> stroke</c><00:26:36.330><c> java</c><00:26:36.570><c> ee</c><00:26:36.780><c> to</c>
+
+00:26:37.220 --> 00:26:37.230 align:start position:0%
+bring the Jakarta a stroke java ee to
+ 
+
+00:26:37.230 --> 00:26:39.860 align:start position:0%
+bring the Jakarta a stroke java ee to
+new<00:26:37.830><c> developers</c><00:26:38.310><c> basically</c><00:26:38.820><c> because</c><00:26:39.720><c> it's</c>
+
+00:26:39.860 --> 00:26:39.870 align:start position:0%
+new developers basically because it's
+ 
+
+00:26:39.870 --> 00:26:42.140 align:start position:0%
+new developers basically because it's
+not<00:26:40.050><c> a</c><00:26:40.080><c> big</c><00:26:40.350><c> application</c><00:26:41.280><c> server</c><00:26:41.550><c> with</c><00:26:42.000><c> all</c>
+
+00:26:42.140 --> 00:26:42.150 align:start position:0%
+not a big application server with all
+ 
+
+00:26:42.150 --> 00:26:46.250 align:start position:0%
+not a big application server with all
+the<00:26:42.330><c> heavyweight</c><00:26:44.540><c> from</c><00:26:45.540><c> the</c><00:26:45.690><c> past</c><00:26:45.900><c> that</c><00:26:46.170><c> you</c>
+
+00:26:46.250 --> 00:26:46.260 align:start position:0%
+the heavyweight from the past that you
+ 
+
+00:26:46.260 --> 00:26:48.800 align:start position:0%
+the heavyweight from the past that you
+would<00:26:46.380><c> think</c><00:26:46.530><c> it's</c><00:26:47.250><c> basically</c><00:26:47.700><c> as</c><00:26:47.850><c> a</c><00:26:48.270><c> small</c>
+
+00:26:48.800 --> 00:26:48.810 align:start position:0%
+would think it's basically as a small
+ 
+
+00:26:48.810 --> 00:26:51.860 align:start position:0%
+would think it's basically as a small
+runtime<00:26:49.560><c> so</c><00:26:50.220><c> you</c><00:26:50.310><c> could</c><00:26:50.580><c> build</c><00:26:50.760><c> if</c><00:26:51.450><c> you</c><00:26:51.570><c> out</c><00:26:51.690><c> if</c>
+
+00:26:51.860 --> 00:26:51.870 align:start position:0%
+runtime so you could build if you out if
+ 
+
+00:26:51.870 --> 00:26:53.510 align:start position:0%
+runtime so you could build if you out if
+you<00:26:51.960><c> are</c><00:26:52.080><c> java</c><00:26:52.380><c> re'</c><00:26:52.500><c> developer</c><00:26:52.920><c> you</c><00:26:53.100><c> can</c><00:26:53.130><c> build</c>
+
+00:26:53.510 --> 00:26:53.520 align:start position:0%
+you are java re' developer you can build
+ 
+
+00:26:53.520 --> 00:26:56.540 align:start position:0%
+you are java re' developer you can build
+iot<00:26:54.180><c> applications</c><00:26:54.810><c> running</c><00:26:55.380><c> pi</c><00:26:55.800><c> or</c><00:26:55.950><c> micro</c><00:26:56.310><c> so</c>
+
+00:26:56.540 --> 00:26:56.550 align:start position:0%
+iot applications running pi or micro so
+ 
+
+00:26:56.550 --> 00:27:00.740 align:start position:0%
+iot applications running pi or micro so
+you<00:26:56.610><c> can</c><00:26:56.850><c> build</c><00:26:57.120><c> applications</c><00:26:57.780><c> on</c><00:26:59.750><c> small</c>
+
+00:27:00.740 --> 00:27:00.750 align:start position:0%
+you can build applications on small
+ 
+
+00:27:00.750 --> 00:27:03.170 align:start position:0%
+you can build applications on small
+devices<00:27:00.990><c> like</c><00:27:01.230><c> raspberry</c><00:27:01.560><c> pi</c><00:27:01.770><c> and</c><00:27:02.090><c> there</c><00:27:03.090><c> are</c>
+
+00:27:03.170 --> 00:27:03.180 align:start position:0%
+devices like raspberry pi and there are
+ 
+
+00:27:03.180 --> 00:27:05.090 align:start position:0%
+devices like raspberry pi and there are
+some<00:27:03.330><c> some</c><00:27:04.200><c> fun</c><00:27:04.380><c> ones</c><00:27:04.560><c> out</c><00:27:04.710><c> there</c><00:27:04.830><c> that</c><00:27:05.010><c> we</c>
+
+00:27:05.090 --> 00:27:05.100 align:start position:0%
+some some fun ones out there that we
+ 
+
+00:27:05.100 --> 00:27:09.260 align:start position:0%
+some some fun ones out there that we
+know<00:27:06.230><c> and</c><00:27:07.230><c> we</c><00:27:07.440><c> know</c><00:27:07.500><c> guys</c><00:27:07.800><c> got</c><00:27:08.010><c> is</c><00:27:08.310><c> a</c><00:27:08.910><c> remote</c>
+
+00:27:09.260 --> 00:27:09.270 align:start position:0%
+know and we know guys got is a remote
+ 
+
+00:27:09.270 --> 00:27:11.030 align:start position:0%
+know and we know guys got is a remote
+control<00:27:09.300><c> car</c><00:27:09.600><c> called</c><00:27:10.080><c> controlled</c><00:27:10.650><c> by</c><00:27:10.800><c> rest</c>
+
+00:27:11.030 --> 00:27:11.040 align:start position:0%
+control car called controlled by rest
+ 
+
+00:27:11.040 --> 00:27:13.220 align:start position:0%
+control car called controlled by rest
+endpoints<00:27:11.610><c> and</c><00:27:12.000><c> running</c><00:27:12.630><c> on</c><00:27:12.720><c> ro</c><00:27:12.870><c> surprised</c>
+
+00:27:13.220 --> 00:27:13.230 align:start position:0%
+endpoints and running on ro surprised
+ 
+
+00:27:13.230 --> 00:27:16.060 align:start position:0%
+endpoints and running on ro surprised
+but<00:27:14.190><c> from</c><00:27:14.640><c> a</c><00:27:14.700><c> serious</c><00:27:15.000><c> perspective</c><00:27:15.420><c> you</c><00:27:15.510><c> can</c>
+
+00:27:16.060 --> 00:27:16.070 align:start position:0%
+but from a serious perspective you can
+ 
+
+00:27:16.070 --> 00:27:20.330 align:start position:0%
+but from a serious perspective you can
+there's<00:27:17.070><c> many</c><00:27:17.280><c> many</c><00:27:18.590><c> probably</c><00:27:19.590><c> millions</c><00:27:20.070><c> of</c>
+
+00:27:20.330 --> 00:27:20.340 align:start position:0%
+there's many many probably millions of
+ 
+
+00:27:20.340 --> 00:27:22.100 align:start position:0%
+there's many many probably millions of
+Java<00:27:20.580><c> EE</c><00:27:20.820><c> developers</c><00:27:21.090><c> in</c><00:27:21.480><c> the</c><00:27:21.540><c> world</c><00:27:21.570><c> that</c>
+
+00:27:22.100 --> 00:27:22.110 align:start position:0%
+Java EE developers in the world that
+ 
+
+00:27:22.110 --> 00:27:24.080 align:start position:0%
+Java EE developers in the world that
+maybe<00:27:22.290><c> not</c><00:27:22.530><c> don't</c><00:27:22.770><c> want</c><00:27:22.920><c> to</c><00:27:23.010><c> learn</c><00:27:23.130><c> new</c><00:27:23.400><c> API</c><00:27:23.730><c> to</c>
+
+00:27:24.080 --> 00:27:24.090 align:start position:0%
+maybe not don't want to learn new API to
+ 
+
+00:27:24.090 --> 00:27:26.750 align:start position:0%
+maybe not don't want to learn new API to
+program<00:27:24.570><c> new</c><00:27:24.750><c> devices</c><00:27:25.050><c> either</c><00:27:25.470><c> IOT</c><00:27:26.160><c> or</c><00:27:26.340><c> on</c><00:27:26.640><c> the</c>
+
+00:27:26.750 --> 00:27:26.760 align:start position:0%
+program new devices either IOT or on the
+ 
+
+00:27:26.760 --> 00:27:29.750 align:start position:0%
+program new devices either IOT or on the
+cloud<00:27:27.500><c> PI</c><00:27:28.500><c> or</c><00:27:28.620><c> micro</c><00:27:28.980><c> is</c><00:27:29.130><c> basically</c><00:27:29.370><c> designed</c>
+
+00:27:29.750 --> 00:27:29.760 align:start position:0%
+cloud PI or micro is basically designed
+ 
+
+00:27:29.760 --> 00:27:32.029 align:start position:0%
+cloud PI or micro is basically designed
+to<00:27:30.030><c> give</c><00:27:30.210><c> those</c><00:27:30.870><c> people</c><00:27:31.080><c> somewhere</c>
+
+00:27:32.029 --> 00:27:32.039 align:start position:0%
+to give those people somewhere
+ 
+
+00:27:32.039 --> 00:27:34.070 align:start position:0%
+to give those people somewhere
+you<00:27:32.399><c> know</c><00:27:32.489><c> to</c><00:27:32.639><c> build</c><00:27:32.970><c> cloud</c><00:27:33.269><c> applications</c>
+
+00:27:34.070 --> 00:27:34.080 align:start position:0%
+you know to build cloud applications
+ 
+
+00:27:34.080 --> 00:27:36.619 align:start position:0%
+you know to build cloud applications
+build<00:27:34.320><c> IOT</c><00:27:34.710><c> applications</c><00:27:35.299><c> using</c><00:27:36.299><c> the</c><00:27:36.450><c> same</c>
+
+00:27:36.619 --> 00:27:36.629 align:start position:0%
+build IOT applications using the same
+ 
+
+00:27:36.629 --> 00:27:39.950 align:start position:0%
+build IOT applications using the same
+API<00:27:36.749><c> xeno</c><00:27:37.460><c> because</c><00:27:38.460><c> the</c><00:27:38.549><c> same</c><00:27:38.729><c> code</c><00:27:39.029><c> can</c><00:27:39.749><c> like</c>
+
+00:27:39.950 --> 00:27:39.960 align:start position:0%
+API xeno because the same code can like
+ 
+
+00:27:39.960 --> 00:27:45.129 align:start position:0%
+API xeno because the same code can like
+run<00:27:40.440><c> on</c><00:27:40.590><c> that</c><00:27:40.769><c> or</c><00:27:41.070><c> I</c><00:27:41.129><c> can</c><00:27:41.340><c> run</c><00:27:41.489><c> in</c><00:27:41.609><c> a</c><00:27:41.700><c> huge</c><00:27:42.769><c> cloud</c>
+
+00:27:45.129 --> 00:27:45.139 align:start position:0%
+run on that or I can run in a huge cloud
+ 
+
+00:27:45.139 --> 00:27:53.210 align:start position:0%
+run on that or I can run in a huge cloud
+multi<00:27:46.139><c> tags</c><00:27:46.379><c> and</c><00:27:46.559><c> node</c><00:27:46.739><c> cluster</c><00:27:47.600><c> so</c><00:27:51.590><c> so</c><00:27:52.590><c> next</c>
+
+00:27:53.210 --> 00:27:53.220 align:start position:0%
+multi tags and node cluster so so next
+ 
+
+00:27:53.220 --> 00:27:54.769 align:start position:0%
+multi tags and node cluster so so next
+steps<00:27:53.429><c> quite</c><00:27:53.729><c> a</c><00:27:53.759><c> little</c><00:27:53.970><c> bit</c><00:27:54.149><c> small</c><00:27:54.389><c> on</c><00:27:54.509><c> here</c>
+
+00:27:54.769 --> 00:27:54.779 align:start position:0%
+steps quite a little bit small on here
+ 
+
+00:27:54.779 --> 00:27:57.889 align:start position:0%
+steps quite a little bit small on here
+so<00:27:55.169><c> got</c><00:27:55.590><c> a</c><00:27:55.619><c> download</c><00:27:56.039><c> link</c><00:27:56.070><c> on</c><00:27:56.549><c> there</c><00:27:56.789><c> all</c><00:27:57.570><c> the</c>
+
+00:27:57.889 --> 00:27:57.899 align:start position:0%
+so got a download link on there all the
+ 
+
+00:27:57.899 --> 00:28:00.710 align:start position:0%
+so got a download link on there all the
+demo<00:27:58.169><c> code</c><00:27:58.409><c> is</c><00:27:58.559><c> on</c><00:27:58.649><c> github</c><00:27:58.820><c> on</c><00:27:59.820><c> that</c><00:28:00.149><c> link</c><00:28:00.570><c> as</c>
+
+00:28:00.710 --> 00:28:00.720 align:start position:0%
+demo code is on github on that link as
+ 
+
+00:28:00.720 --> 00:28:06.049 align:start position:0%
+demo code is on github on that link as
+well<00:28:00.869><c> and</c><00:28:03.499><c> have</c><00:28:04.499><c> a</c><00:28:04.559><c> go</c><00:28:04.739><c> I</c><00:28:04.979><c> mean</c><00:28:05.190><c> that</c><00:28:05.489><c> we</c><00:28:05.609><c> say</c>
+
+00:28:06.049 --> 00:28:06.059 align:start position:0%
+well and have a go I mean that we say
+ 
+
+00:28:06.059 --> 00:28:09.589 align:start position:0%
+well and have a go I mean that we say
+all<00:28:06.090><c> a</c><00:28:06.330><c> steps</c><00:28:06.690><c> open</c><00:28:06.960><c> source</c><00:28:07.169><c> so</c><00:28:08.359><c> this</c><00:28:09.359><c> this</c>
+
+00:28:09.589 --> 00:28:09.599 align:start position:0%
+all a steps open source so this this
+ 
+
+00:28:09.599 --> 00:28:11.269 align:start position:0%
+all a steps open source so this this
+whole<00:28:09.809><c> whole</c><00:28:10.139><c> code</c><00:28:10.349><c> for</c><00:28:10.559><c> this</c><00:28:10.649><c> demo</c><00:28:10.950><c> is</c><00:28:11.039><c> open</c>
+
+00:28:11.269 --> 00:28:11.279 align:start position:0%
+whole whole code for this demo is open
+ 
+
+00:28:11.279 --> 00:28:18.259 align:start position:0%
+whole whole code for this demo is open
+source<00:28:11.489><c> and</c><00:28:11.989><c> on</c><00:28:12.989><c> github</c><00:28:15.470><c> yeah</c><00:28:17.090><c> any</c><00:28:18.090><c> questions</c>
+
+00:28:18.259 --> 00:28:18.269 align:start position:0%
+source and on github yeah any questions
+ 
+
+00:28:18.269 --> 00:28:21.440 align:start position:0%
+source and on github yeah any questions
+so<00:28:18.929><c> anyone</c><00:28:19.200><c> want</c><00:28:19.379><c> to</c><00:28:19.409><c> have</c><00:28:20.070><c> a</c><00:28:20.210><c> glow</c><00:28:21.210><c> on</c><00:28:21.359><c> the</c>
+
+00:28:21.440 --> 00:28:21.450 align:start position:0%
+so anyone want to have a glow on the
+ 
+
+00:28:21.450 --> 00:28:39.499 align:start position:0%
+so anyone want to have a glow on the
+sensors<00:28:21.840><c> or</c><00:28:22.019><c> something</c><00:28:37.700><c> so</c><00:28:38.700><c> the</c><00:28:38.789><c> secret</c><00:28:39.210><c> is</c><00:28:39.299><c> is</c>
+
+00:28:39.499 --> 00:28:39.509 align:start position:0%
+sensors or something so the secret is is
+ 
+
+00:28:39.509 --> 00:28:42.580 align:start position:0%
+sensors or something so the secret is is
+actually<00:28:39.659><c> not</c><00:28:39.929><c> a</c><00:28:39.960><c> lot</c><00:28:40.139><c> of</c><00:28:40.259><c> different</c><00:28:40.879><c> okay</c><00:28:41.909><c> so</c>
+
+00:28:42.580 --> 00:28:42.590 align:start position:0%
+actually not a lot of different okay so
+ 
+
+00:28:42.590 --> 00:28:44.839 align:start position:0%
+actually not a lot of different okay so
+one<00:28:43.590><c> of</c><00:28:43.619><c> the</c><00:28:43.739><c> big</c><00:28:43.889><c> differences</c><00:28:44.070><c> is</c><00:28:44.549><c> pay</c><00:28:44.729><c> are</c>
+
+00:28:44.839 --> 00:28:44.849 align:start position:0%
+one of the big differences is pay are
+ 
+
+00:28:44.849 --> 00:28:47.749 align:start position:0%
+one of the big differences is pay are
+micro<00:28:45.320><c> servos</c><00:28:46.320><c> based</c><00:28:46.619><c> has</c><00:28:46.830><c> an</c><00:28:46.919><c> OSGi</c><00:28:47.279><c> runtime</c>
+
+00:28:47.749 --> 00:28:47.759 align:start position:0%
+micro servos based has an OSGi runtime
+ 
+
+00:28:47.759 --> 00:28:52.609 align:start position:0%
+micro servos based has an OSGi runtime
+underneath<00:28:48.470><c> ok</c><00:28:49.759><c> Paora</c><00:28:50.759><c> micro</c><00:28:51.090><c> doesn't</c><00:28:51.470><c> we</c><00:28:52.470><c> use</c>
+
+00:28:52.609 --> 00:28:52.619 align:start position:0%
+underneath ok Paora micro doesn't we use
+ 
+
+00:28:52.619 --> 00:28:57.259 align:start position:0%
+underneath ok Paora micro doesn't we use
+OSGi<00:28:54.349><c> so</c><00:28:55.349><c> it's</c><00:28:55.769><c> a</c><00:28:55.830><c> bit</c><00:28:55.979><c> has</c><00:28:56.399><c> a</c><00:28:56.429><c> slower</c><00:28:56.849><c> overhead</c>
+
+00:28:57.259 --> 00:28:57.269 align:start position:0%
+OSGi so it's a bit has a slower overhead
+ 
+
+00:28:57.269 --> 00:28:59.749 align:start position:0%
+OSGi so it's a bit has a slower overhead
+because<00:28:57.419><c> of</c><00:28:57.629><c> that</c><00:28:57.749><c> the</c><00:28:58.649><c> payara</c><00:28:58.919><c> server</c>
+
+00:28:59.749 --> 00:28:59.759 align:start position:0%
+because of that the payara server
+ 
+
+00:28:59.759 --> 00:29:04.940 align:start position:0%
+because of that the payara server
+supports<00:29:00.479><c> the</c><00:29:00.629><c> full</c><00:29:01.700><c> java</c><00:29:02.700><c> 8</c><00:29:03.109><c> w8</c><00:29:04.109><c> api</c><00:29:04.619><c> so</c>
+
+00:29:04.940 --> 00:29:04.950 align:start position:0%
+supports the full java 8 w8 api so
+ 
+
+00:29:04.950 --> 00:29:06.289 align:start position:0%
+supports the full java 8 w8 api so
+there's<00:29:05.099><c> someone</c><00:29:05.249><c> in</c><00:29:05.639><c> here</c><00:29:05.669><c> that</c><00:29:05.879><c> we</c><00:29:06.119><c> don't</c>
+
+00:29:06.289 --> 00:29:06.299 align:start position:0%
+there's someone in here that we don't
+ 
+
+00:29:06.299 --> 00:29:07.759 align:start position:0%
+there's someone in here that we don't
+support<00:29:06.419><c> you</c><00:29:07.019><c> don't</c><00:29:07.109><c> support</c><00:29:07.379><c> any</c><00:29:07.559><c> of</c><00:29:07.679><c> the</c>
+
+00:29:07.759 --> 00:29:07.769 align:start position:0%
+support you don't support any of the
+ 
+
+00:29:07.769 --> 00:29:12.649 align:start position:0%
+support you don't support any of the
+legacy<00:29:08.460><c> old</c><00:29:09.769><c> java</c><00:29:10.769><c> ee</c><00:29:10.979><c> so</c><00:29:11.279><c> no</c><00:29:11.429><c> need</c><00:29:11.970><c> to</c><00:29:12.090><c> be</c><00:29:12.179><c> 2.1</c>
+
+00:29:12.649 --> 00:29:12.659 align:start position:0%
+legacy old java ee so no need to be 2.1
+ 
+
+00:29:12.659 --> 00:29:14.810 align:start position:0%
+legacy old java ee so no need to be 2.1
+or<00:29:12.690><c> any</c><00:29:12.989><c> of</c><00:29:13.080><c> the</c><00:29:13.139><c> old</c><00:29:13.289><c> things</c><00:29:13.609><c> rich</c><00:29:14.609><c> full</c>
+
+00:29:14.810 --> 00:29:14.820 align:start position:0%
+or any of the old things rich full
+ 
+
+00:29:14.820 --> 00:29:17.869 align:start position:0%
+or any of the old things rich full
+server<00:29:15.090><c> does</c><00:29:15.889><c> there's</c><00:29:16.889><c> no</c><00:29:17.009><c> coop</c><00:29:17.309><c> or</c><00:29:17.489><c> anything</c>
+
+00:29:17.869 --> 00:29:17.879 align:start position:0%
+server does there's no coop or anything
+ 
+
+00:29:17.879 --> 00:29:21.739 align:start position:0%
+server does there's no coop or anything
+on<00:29:18.179><c> this</c><00:29:18.720><c> I</c><00:29:18.960><c> on</c><00:29:19.470><c> micro</c><00:29:19.830><c> and</c><00:29:20.639><c> it</c><00:29:21.509><c> doesn't</c>
+
+00:29:21.739 --> 00:29:21.749 align:start position:0%
+on this I on micro and it doesn't
+ 
+
+00:29:21.749 --> 00:29:23.989 align:start position:0%
+on this I on micro and it doesn't
+support<00:29:21.989><c> doesn't</c><00:29:22.950><c> have</c><00:29:23.129><c> an</c><00:29:23.220><c> embedded</c><00:29:23.460><c> JMS</c>
+
+00:29:23.989 --> 00:29:23.999 align:start position:0%
+support doesn't have an embedded JMS
+ 
+
+00:29:23.999 --> 00:29:25.879 align:start position:0%
+support doesn't have an embedded JMS
+broker<00:29:24.509><c> or</c><00:29:24.779><c> any</c><00:29:24.989><c> of</c><00:29:25.139><c> the</c><00:29:25.200><c> beaks</c><00:29:25.379><c> or</c><00:29:25.590><c> things</c>
+
+00:29:25.879 --> 00:29:25.889 align:start position:0%
+broker or any of the beaks or things
+ 
+
+00:29:25.889 --> 00:29:28.879 align:start position:0%
+broker or any of the beaks or things
+that<00:29:26.159><c> the</c><00:29:26.549><c> full</c><00:29:26.729><c> server</c><00:29:26.970><c> would</c><00:29:27.239><c> have</c><00:29:27.710><c> but</c><00:29:28.710><c> it's</c>
+
+00:29:28.879 --> 00:29:28.889 align:start position:0%
+that the full server would have but it's
+ 
+
+00:29:28.889 --> 00:29:30.589 align:start position:0%
+that the full server would have but it's
+exactly<00:29:29.190><c> the</c><00:29:29.340><c> same</c><00:29:29.549><c> code</c><00:29:29.879><c> other</c><00:29:30.299><c> than</c><00:29:30.419><c> this</c>
+
+00:29:30.589 --> 00:29:30.599 align:start position:0%
+exactly the same code other than this
+ 
+
+00:29:30.599 --> 00:29:42.380 align:start position:0%
+exactly the same code other than this
+like<00:29:30.779><c> a</c><00:29:30.809><c> wrapper</c><00:29:31.139><c> around</c><00:29:31.349><c> it</c>
+
+00:29:42.380 --> 00:29:42.390 align:start position:0%
+ 
+ 
+
+00:29:42.390 --> 00:29:55.740 align:start position:0%
+ 
+we<00:29:43.390><c> did</c><00:29:51.630><c> so</c><00:29:53.880><c> yeah</c><00:29:54.880><c> we</c><00:29:54.970><c> used</c><00:29:55.120><c> to</c><00:29:55.180><c> have</c><00:29:55.270><c> a</c><00:29:55.300><c> micro</c>
+
+00:29:55.740 --> 00:29:55.750 align:start position:0%
+we did so yeah we used to have a micro
+ 
+
+00:29:55.750 --> 00:29:57.480 align:start position:0%
+we did so yeah we used to have a micro
+profile<00:29:56.080><c> only</c><00:29:56.290><c> so</c><00:29:56.470><c> actually</c><00:29:56.860><c> payara</c><00:29:57.250><c> micro</c>
+
+00:29:57.480 --> 00:29:57.490 align:start position:0%
+profile only so actually payara micro
+ 
+
+00:29:57.490 --> 00:30:00.810 align:start position:0%
+profile only so actually payara micro
+also<00:29:57.790><c> supports</c><00:29:58.180><c> micro</c><00:29:58.510><c> profile</c><00:29:59.370><c> 1.3</c><00:30:00.370><c> probably</c>
+
+00:30:00.810 --> 00:30:00.820 align:start position:0%
+also supports micro profile 1.3 probably
+ 
+
+00:30:00.820 --> 00:30:03.900 align:start position:0%
+also supports micro profile 1.3 probably
+as<00:30:01.120><c> of</c><00:30:01.450><c> like</c><00:30:01.840><c> yesterday</c><00:30:02.610><c> exigent</c><00:30:03.610><c> you</c><00:30:03.670><c> release</c>
+
+00:30:03.900 --> 00:30:03.910 align:start position:0%
+as of like yesterday exigent you release
+ 
+
+00:30:03.910 --> 00:30:06.270 align:start position:0%
+as of like yesterday exigent you release
+yesterday<00:30:04.500><c> we'd</c><00:30:05.500><c> used</c><00:30:05.680><c> to</c><00:30:05.770><c> keep</c><00:30:05.920><c> it</c><00:30:06.040><c> just</c><00:30:06.070><c> to</c>
+
+00:30:06.270 --> 00:30:06.280 align:start position:0%
+yesterday we'd used to keep it just to
+ 
+
+00:30:06.280 --> 00:30:10.740 align:start position:0%
+yesterday we'd used to keep it just to
+PI<00:30:06.430><c> our</c><00:30:06.580><c> micro</c><00:30:07.030><c> profile</c><00:30:07.480><c> and</c><00:30:07.690><c> actually</c><00:30:09.750><c> which</c>
+
+00:30:10.740 --> 00:30:10.750 align:start position:0%
+PI our micro profile and actually which
+ 
+
+00:30:10.750 --> 00:30:11.850 align:start position:0%
+PI our micro profile and actually which
+was<00:30:10.870><c> basically</c><00:30:11.050><c> only</c><00:30:11.260><c> support</c><00:30:11.590><c> at</c><00:30:11.650><c> the</c><00:30:11.710><c> Mike</c>
+
+00:30:11.850 --> 00:30:11.860 align:start position:0%
+was basically only support at the Mike
+ 
+
+00:30:11.860 --> 00:30:14.550 align:start position:0%
+was basically only support at the Mike
+profile<00:30:12.250><c> api's</c><00:30:12.930><c> we</c><00:30:13.930><c> stopped</c><00:30:14.170><c> doing</c><00:30:14.380><c> it</c>
+
+00:30:14.550 --> 00:30:14.560 align:start position:0%
+profile api's we stopped doing it
+ 
+
+00:30:14.560 --> 00:30:16.830 align:start position:0%
+profile api's we stopped doing it
+because<00:30:14.860><c> the</c><00:30:15.100><c> resource</c><00:30:15.730><c> difference</c><00:30:16.420><c> is</c><00:30:16.570><c> not</c>
+
+00:30:16.830 --> 00:30:16.840 align:start position:0%
+because the resource difference is not
+ 
+
+00:30:16.840 --> 00:30:17.820 align:start position:0%
+because the resource difference is not
+significant
+
+00:30:17.820 --> 00:30:17.830 align:start position:0%
+significant
+ 
+
+00:30:17.830 --> 00:30:20.430 align:start position:0%
+significant
+okay<00:30:18.610><c> it</c><00:30:18.700><c> was</c><00:30:18.820><c> a</c><00:30:18.850><c> bit</c><00:30:19.090><c> so</c><00:30:19.600><c> PI</c><00:30:19.870><c> our</c><00:30:19.930><c> micro</c><00:30:20.290><c> on</c><00:30:20.410><c> a</c>
+
+00:30:20.430 --> 00:30:20.440 align:start position:0%
+okay it was a bit so PI our micro on a
+ 
+
+00:30:20.440 --> 00:30:22.080 align:start position:0%
+okay it was a bit so PI our micro on a
+reasonable<00:30:20.950><c> size</c><00:30:21.070><c> computer</c><00:30:21.550><c> not</c><00:30:21.910><c> on</c><00:30:22.030><c> a</c>
+
+00:30:22.080 --> 00:30:22.090 align:start position:0%
+reasonable size computer not on a
+ 
+
+00:30:22.090 --> 00:30:24.360 align:start position:0%
+reasonable size computer not on a
+roughly<00:30:22.450><c> PI</c><00:30:22.720><c> will</c><00:30:23.500><c> boot</c><00:30:23.710><c> in</c><00:30:23.860><c> a</c><00:30:24.100><c> couple</c><00:30:24.340><c> of</c>
+
+00:30:24.360 --> 00:30:24.370 align:start position:0%
+roughly PI will boot in a couple of
+ 
+
+00:30:24.370 --> 00:30:27.360 align:start position:0%
+roughly PI will boot in a couple of
+seconds<00:30:24.790><c> so</c><00:30:25.320><c> IR</c><00:30:26.320><c> Mike</c><00:30:26.440><c> profile</c><00:30:26.860><c> boot</c><00:30:27.040><c> lean</c><00:30:27.190><c> may</c>
+
+00:30:27.360 --> 00:30:27.370 align:start position:0%
+seconds so IR Mike profile boot lean may
+ 
+
+00:30:27.370 --> 00:30:30.960 align:start position:0%
+seconds so IR Mike profile boot lean may
+be<00:30:27.430><c> part</c><00:30:28.240><c> one</c><00:30:28.540><c> in</c><00:30:28.690><c> half</c><00:30:28.780><c> seconds</c><00:30:29.230><c> and</c><00:30:29.970><c> the</c>
+
+00:30:30.960 --> 00:30:30.970 align:start position:0%
+be part one in half seconds and the
+ 
+
+00:30:30.970 --> 00:30:32.430 align:start position:0%
+be part one in half seconds and the
+memory<00:30:31.210><c> usage</c><00:30:31.330><c> wasn't</c><00:30:31.750><c> really</c><00:30:31.930><c> any</c><00:30:32.050><c> different</c>
+
+00:30:32.430 --> 00:30:32.440 align:start position:0%
+memory usage wasn't really any different
+ 
+
+00:30:32.440 --> 00:30:37.560 align:start position:0%
+memory usage wasn't really any different
+so<00:30:34.650><c> we</c><00:30:35.650><c> actually</c><00:30:36.120><c> concentrate</c><00:30:37.120><c> on</c><00:30:37.270><c> just</c>
+
+00:30:37.560 --> 00:30:37.570 align:start position:0%
+so we actually concentrate on just
+ 
+
+00:30:37.570 --> 00:30:42.000 align:start position:0%
+so we actually concentrate on just
+keeping<00:30:38.080><c> the</c><00:30:38.400><c> full</c><00:30:39.400><c> set</c><00:30:40.090><c> of</c><00:30:40.150><c> api's</c><00:30:40.570><c> and</c><00:30:41.010><c> making</c>
+
+00:30:42.000 --> 00:30:42.010 align:start position:0%
+keeping the full set of api's and making
+ 
+
+00:30:42.010 --> 00:30:44.340 align:start position:0%
+keeping the full set of api's and making
+it<00:30:42.100><c> as</c><00:30:42.190><c> small</c><00:30:42.340><c> as</c><00:30:42.460><c> possible</c><00:30:42.720><c> we</c><00:30:43.720><c> could</c><00:30:43.930><c> do</c>
+
+00:30:44.340 --> 00:30:44.350 align:start position:0%
+it as small as possible we could do
+ 
+
+00:30:44.350 --> 00:30:47.130 align:start position:0%
+it as small as possible we could do
+modularity<00:30:44.830><c> but</c><00:30:45.760><c> it</c><00:30:45.850><c> would</c><00:30:45.970><c> be</c><00:30:46.120><c> a</c><00:30:46.150><c> do</c>
+
+00:30:47.130 --> 00:30:47.140 align:start position:0%
+modularity but it would be a do
+ 
+
+00:30:47.140 --> 00:30:48.480 align:start position:0%
+modularity but it would be a do
+marketing<00:30:47.530><c> feature</c><00:30:47.770><c> not</c><00:30:48.010><c> an</c><00:30:48.130><c> engineering</c>
+
+00:30:48.480 --> 00:30:48.490 align:start position:0%
+marketing feature not an engineering
+ 
+
+00:30:48.490 --> 00:30:58.650 align:start position:0%
+marketing feature not an engineering
+feature<00:30:48.990><c> so</c><00:30:50.400><c> so</c><00:30:51.400><c> we</c><00:30:51.460><c> haven't</c><00:30:51.700><c> bothered</c><00:30:57.660><c> okay</c>
+
+00:30:58.650 --> 00:30:58.660 align:start position:0%
+feature so so we haven't bothered okay
+ 
+
+00:30:58.660 --> 00:31:00.900 align:start position:0%
+feature so so we haven't bothered okay
+thank<00:30:59.350><c> you</c><00:30:59.410><c> very</c><00:30:59.560><c> much</c>
+
+00:31:00.900 --> 00:31:00.910 align:start position:0%
+thank you very much
+ 
+
+00:31:00.910 --> 00:31:05.249 align:start position:0%
+thank you very much
+[Applause]
+

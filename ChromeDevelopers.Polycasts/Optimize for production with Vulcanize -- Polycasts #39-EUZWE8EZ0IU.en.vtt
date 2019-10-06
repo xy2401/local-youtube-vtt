@@ -1,0 +1,773 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.856
+[MUSIC PLAYING]
+
+00:00:04.760 --> 00:00:05.840
+Hey there, Polycasters.
+
+00:00:05.840 --> 00:00:07.030
+It's Rob here.
+
+00:00:07.030 --> 00:00:09.677
+Today on the show I want
+to talk about performance.
+
+00:00:09.677 --> 00:00:11.760
+As web developers, one of
+the things that we often
+
+00:00:11.760 --> 00:00:13.843
+do when we're about to
+deploy a site to production
+
+00:00:13.843 --> 00:00:16.370
+is we take all of our
+scripts, all of our styles,
+
+00:00:16.370 --> 00:00:18.550
+and we concatenate them
+together to cut down
+
+00:00:18.550 --> 00:00:20.814
+on costly HTTP requests.
+
+00:00:20.814 --> 00:00:23.230
+Now, if you're working with
+something like Polymer and Web
+
+00:00:23.230 --> 00:00:25.890
+Components, it's important to
+remember to also concatenate
+
+00:00:25.890 --> 00:00:28.190
+your definitions for
+Web Components as well,
+
+00:00:28.190 --> 00:00:31.400
+because those count
+as HTTP requests, too.
+
+00:00:31.400 --> 00:00:33.650
+So today, what I want to
+show you is a tool that we've
+
+00:00:33.650 --> 00:00:35.250
+created called
+Vulcanize, which you
+
+00:00:35.250 --> 00:00:37.910
+can use to cut down
+on those HTTP requests
+
+00:00:37.910 --> 00:00:41.452
+and make sure your Polymer apps
+are as performant as possible.
+
+00:00:41.452 --> 00:00:42.910
+Now, before I get
+into any of that,
+
+00:00:42.910 --> 00:00:44.701
+I first want to show
+you kind of the impact
+
+00:00:44.701 --> 00:00:46.650
+that Vulcanize can
+have on your app.
+
+00:00:46.650 --> 00:00:49.350
+So what I've got here
+is over in the terminal,
+
+00:00:49.350 --> 00:00:51.642
+I'm just going to run
+Polymer Starter Kit.
+
+00:00:51.642 --> 00:00:54.100
+I'm going to use its development
+server that comes with it.
+
+00:00:54.100 --> 00:00:56.110
+So I'm going to run gulp
+serve to boot this up.
+
+00:00:56.110 --> 00:00:58.110
+And I haven't done anything
+to this project yet.
+
+00:00:58.110 --> 00:01:00.450
+It's just a fresh checkout
+of Polymer Starter Kit.
+
+00:01:00.450 --> 00:01:03.117
+So we see that sort
+of starting page.
+
+00:01:03.117 --> 00:01:04.575
+And when we open
+the Dev Tools-- so
+
+00:01:04.575 --> 00:01:07.849
+if we go to the Network panel
+and we refresh to load up
+
+00:01:07.849 --> 00:01:09.390
+our app, we can go
+down to the corner
+
+00:01:09.390 --> 00:01:11.400
+there and see that this
+application is currently
+
+00:01:11.400 --> 00:01:17.250
+making 65 HTTP requests for
+that one simple page, which
+
+00:01:17.250 --> 00:01:18.260
+is quite a lot.
+
+00:01:18.260 --> 00:01:20.620
+Now, if you look kind of
+up at the top of this,
+
+00:01:20.620 --> 00:01:23.390
+you'll notice that it
+lists these files here,
+
+00:01:23.390 --> 00:01:28.020
+like iron-fit-behavior.html
+and polymer-micro.html.
+
+00:01:28.020 --> 00:01:30.340
+Those are all of our Web
+Component definitions
+
+00:01:30.340 --> 00:01:32.400
+being fetched individually.
+
+00:01:32.400 --> 00:01:34.180
+So let's see if we
+can cut down on this
+
+00:01:34.180 --> 00:01:36.199
+using a tool like Vulcanize.
+
+00:01:36.199 --> 00:01:38.240
+So this is the same example
+again, but this time,
+
+00:01:38.240 --> 00:01:40.395
+I'm going to run
+gulp serve:dist.
+
+00:01:40.395 --> 00:01:42.030
+This is our distribution server.
+
+00:01:42.030 --> 00:01:43.675
+It's going to run
+Vulcanize for us.
+
+00:01:43.675 --> 00:01:45.300
+It's going to take
+all of those imports
+
+00:01:45.300 --> 00:01:47.230
+and concatenate them together.
+
+00:01:47.230 --> 00:01:49.990
+And now when I go to the Network
+panel and check things out,
+
+00:01:49.990 --> 00:01:52.880
+you'll notice that we've
+gone from 65 requests down
+
+00:01:52.880 --> 00:01:55.705
+to just 14 requests
+for this application.
+
+00:01:55.705 --> 00:01:57.920
+So that is a huge,
+huge difference.
+
+00:01:57.920 --> 00:02:00.520
+You can imagine, if you
+were building a massive app
+
+00:02:00.520 --> 00:02:02.560
+with hundreds of
+elements inside of it,
+
+00:02:02.560 --> 00:02:05.320
+you would definitely want
+that sort of performance
+
+00:02:05.320 --> 00:02:07.400
+boost that Vulcanize
+would give you.
+
+00:02:07.400 --> 00:02:08.283
+So how do we do this?
+
+00:02:08.283 --> 00:02:09.949
+Well, there's two
+ways to run Vulcanize.
+
+00:02:09.949 --> 00:02:11.930
+You can either run it
+from the command line,
+
+00:02:11.930 --> 00:02:13.471
+or you can integrate
+it in your build
+
+00:02:13.471 --> 00:02:15.160
+process using a tool like Gulp.
+
+00:02:15.160 --> 00:02:17.576
+So I'll start off by showing
+you the command-line version,
+
+00:02:17.576 --> 00:02:19.400
+and then we'll switch
+over to using Gulp.
+
+00:02:19.400 --> 00:02:20.858
+To start off with
+the command line,
+
+00:02:20.858 --> 00:02:23.220
+you just want to
+run npm install -g
+
+00:02:23.220 --> 00:02:25.590
+to do a global
+install of Vulcanize.
+
+00:02:25.590 --> 00:02:26.824
+So we'll pull down Vulcanize.
+
+00:02:26.824 --> 00:02:28.740
+And this is going to
+make the Vulcanize binary
+
+00:02:28.740 --> 00:02:30.500
+available to us from
+the command line.
+
+00:02:30.500 --> 00:02:32.541
+So we could just type
+vulcanize whenever we want.
+
+00:02:32.541 --> 00:02:34.516
+It'll process the file for us.
+
+00:02:34.516 --> 00:02:36.790
+[HUMMING]
+
+00:02:36.790 --> 00:02:37.530
+OK.
+
+00:02:37.530 --> 00:02:39.250
+So we've got Vulcanize
+installed now.
+
+00:02:39.250 --> 00:02:42.390
+What I've done is I've set up
+a very simple project here.
+
+00:02:42.390 --> 00:02:45.360
+You can see I've got an
+index file with a single HTML
+
+00:02:45.360 --> 00:02:48.390
+import in there that's
+pulling in elements.html.
+
+00:02:48.390 --> 00:02:50.940
+Inside that file, I've got
+a few more HTML imports,
+
+00:02:50.940 --> 00:02:53.905
+where I'm loading in these
+two elements, x-foo and x-bar.
+
+00:02:53.905 --> 00:02:55.280
+And looking at
+their definitions,
+
+00:02:55.280 --> 00:02:58.110
+these are just really vanilla,
+kind of boilerplate Polymer
+
+00:02:58.110 --> 00:02:58.744
+elements.
+
+00:02:58.744 --> 00:03:00.410
+But they're going to
+help us demonstrate
+
+00:03:00.410 --> 00:03:02.994
+how we're going to bundle
+all of this stuff together.
+
+00:03:02.994 --> 00:03:05.160
+So what I want to do is
+take that elements.html file
+
+00:03:05.160 --> 00:03:08.410
+and just sort of crunch it down
+as small as I possibly can.
+
+00:03:08.410 --> 00:03:11.580
+Over at my terminal, I'm going
+to run the vulcanize command.
+
+00:03:11.580 --> 00:03:15.462
+And I'm going to point it at
+app/elements/elements.html.
+
+00:03:15.462 --> 00:03:17.420
+And when I run this just
+from the command line,
+
+00:03:17.420 --> 00:03:20.740
+it's actually going to
+walk that tree of imports,
+
+00:03:20.740 --> 00:03:22.840
+take all those files,
+concatenate them together,
+
+00:03:22.840 --> 00:03:25.245
+and just return the
+output to standard out.
+
+00:03:25.245 --> 00:03:27.370
+So that's kind of useful
+if we were going to, like,
+
+00:03:27.370 --> 00:03:28.790
+pipe this to some other command.
+
+00:03:28.790 --> 00:03:30.790
+But what I'd really like
+to do is write this out
+
+00:03:30.790 --> 00:03:33.570
+to a file in my Dist directory.
+
+00:03:33.570 --> 00:03:35.887
+So to do that, I'll
+run Vulcanize again.
+
+00:03:35.887 --> 00:03:37.470
+First I'll make a
+directory, actually,
+
+00:03:37.470 --> 00:03:39.670
+to hold my distribution.
+
+00:03:39.670 --> 00:03:42.500
+Then I'll run Vulcanize.
+
+00:03:42.500 --> 00:03:45.490
+And I'm going to vulcanize
+that elements.html file.
+
+00:03:45.490 --> 00:03:47.540
+And then I'll just use
+the little arrow symbol
+
+00:03:47.540 --> 00:03:51.120
+to write the output to a
+file in my Dist directory,
+
+00:03:51.120 --> 00:03:54.100
+which I'll just call
+elements.html as well.
+
+00:03:54.100 --> 00:03:56.460
+Now, if you don't want to use
+the arrow key or whatever,
+
+00:03:56.460 --> 00:03:58.710
+if you want to use the options
+like command-line flags
+
+00:03:58.710 --> 00:04:01.209
+and things like that, you could
+also just use the -0 option.
+
+00:04:01.209 --> 00:04:03.200
+It basically does
+the exact same thing.
+
+00:04:03.200 --> 00:04:07.306
+And so we'll write out to this
+file, elements.vulcanize.html.
+
+00:04:07.306 --> 00:04:08.930
+Now, there's a lot
+more options that we
+
+00:04:08.930 --> 00:04:10.530
+can pass beyond just output.
+
+00:04:10.530 --> 00:04:12.140
+We could also tell
+Vulcanize that we
+
+00:04:12.140 --> 00:04:15.400
+want it to inline any external
+scripts that our elements
+
+00:04:15.400 --> 00:04:18.390
+depend on, or pull in any of
+their external style sheets,
+
+00:04:18.390 --> 00:04:20.220
+or strip out all
+of their comments.
+
+00:04:20.220 --> 00:04:22.307
+All of these are available
+as command-line flags,
+
+00:04:22.307 --> 00:04:24.390
+so you can really customize
+the bundle that you're
+
+00:04:24.390 --> 00:04:25.697
+building with Vulcanize.
+
+00:04:25.697 --> 00:04:28.280
+And honestly, I would recommend
+using all three of these flags
+
+00:04:28.280 --> 00:04:31.200
+just because it's going to
+crunch that file down as small
+
+00:04:31.200 --> 00:04:33.080
+as it possibly can be.
+
+00:04:33.080 --> 00:04:35.670
+So now that I've run that,
+I can go back to my editor,
+
+00:04:35.670 --> 00:04:37.300
+and I can look in
+the Dist directory.
+
+00:04:37.300 --> 00:04:39.640
+If we check out that
+elements.html file,
+
+00:04:39.640 --> 00:04:41.915
+you'll see that now it's
+a bunch of stuff chucked
+
+00:04:41.915 --> 00:04:42.540
+inside of here.
+
+00:04:42.540 --> 00:04:45.370
+We've got Polymer all up at the
+top, all the JavaScript for it,
+
+00:04:45.370 --> 00:04:47.522
+and any HTML that
+it depends upon.
+
+00:04:47.522 --> 00:04:49.980
+If we keep scrolling, we go
+all the way down to the bottom,
+
+00:04:49.980 --> 00:04:52.710
+we'll actually see x-foo
+and x-bar, those elements
+
+00:04:52.710 --> 00:04:54.100
+from our little sample project.
+
+00:04:54.100 --> 00:04:56.180
+They're crunched
+into this as well.
+
+00:04:56.180 --> 00:04:58.410
+All their HTML, all
+their JavaScript is here.
+
+00:04:58.410 --> 00:05:01.430
+So this application, which maybe
+was making before four or five
+
+00:05:01.430 --> 00:05:03.300
+HTTP requests to boot
+up, should now only
+
+00:05:03.300 --> 00:05:06.240
+be making one HTTP request
+for this single file.
+
+00:05:06.240 --> 00:05:07.930
+This is a really
+great start, but it's
+
+00:05:07.930 --> 00:05:10.490
+kind of a bummer to have to run
+this command from the command
+
+00:05:10.490 --> 00:05:13.107
+line every single
+time you want to build
+
+00:05:13.107 --> 00:05:14.690
+and mess around with
+your application.
+
+00:05:14.690 --> 00:05:17.780
+It'd be nicer to integrate
+it as part of a build step
+
+00:05:17.780 --> 00:05:19.219
+using a tool like Gulp.
+
+00:05:19.219 --> 00:05:21.510
+So to do that, I'm going to
+go back to my command line,
+
+00:05:21.510 --> 00:05:23.450
+and I'm just going
+to run npm install.
+
+00:05:23.450 --> 00:05:26.140
+I'm going to save it
+to my dev dependencies.
+
+00:05:26.140 --> 00:05:29.080
+And I'm going to pull down
+gulp and gulp-vulcanize.
+
+00:05:29.080 --> 00:05:32.713
+And since this is
+npm, now we wait.
+
+00:05:32.713 --> 00:05:35.671
+[CLOCK TICKING]
+
+00:05:40.108 --> 00:05:41.587
+[CLOCK TICKING]
+
+00:05:41.587 --> 00:05:44.560
+[SNORING]
+
+00:05:44.560 --> 00:05:45.916
+[CUCKOO CLOCK CHIMES]
+
+00:05:45.916 --> 00:05:48.430
+Now we've got those
+dependencies installed,
+
+00:05:48.430 --> 00:05:50.630
+we can go set up a Gulp file.
+
+00:05:50.630 --> 00:05:52.410
+So I'm going to go
+ahead and require Gulp.
+
+00:05:52.410 --> 00:05:54.054
+I'm going to require
+Gulp Vulcanize.
+
+00:05:54.054 --> 00:05:56.220
+And I'm just going to write
+out a really simple Gulp
+
+00:05:56.220 --> 00:05:58.680
+task for our Vulcanize process.
+
+00:05:58.680 --> 00:06:00.420
+We'll tell it to pull
+in elements.html.
+
+00:06:00.420 --> 00:06:02.010
+We'll pipe that to Vulcanize.
+
+00:06:02.010 --> 00:06:04.810
+And then we'll pipe that
+to our Dist directory.
+
+00:06:04.810 --> 00:06:06.810
+I'm also going to write
+a default task, which is
+
+00:06:06.810 --> 00:06:08.960
+going to run Vulcanize for us.
+
+00:06:08.960 --> 00:06:12.090
+And this is starting to shape up
+to be a pretty nice boilerplate
+
+00:06:12.090 --> 00:06:13.940
+for, like, a little
+Polymer project
+
+00:06:13.940 --> 00:06:15.640
+that we could launch
+into production.
+
+00:06:15.640 --> 00:06:17.137
+If I go to my
+terminal, I run Gulp.
+
+00:06:17.137 --> 00:06:18.720
+It's going to go
+out, it's going to do
+
+00:06:18.720 --> 00:06:20.875
+that build process for me,
+right, which is pretty cool.
+
+00:06:20.875 --> 00:06:22.916
+And there's a little bit
+more that I can do here.
+
+00:06:22.916 --> 00:06:24.990
+I showed you those
+command-line flags before
+
+00:06:24.990 --> 00:06:27.420
+for inlining scripts
+and stripping comments.
+
+00:06:27.420 --> 00:06:29.610
+We can add that to our
+Vulcanize task as well.
+
+00:06:29.610 --> 00:06:33.550
+We just pass it an Options
+object with those same options.
+
+00:06:33.550 --> 00:06:35.185
+But this time,
+they're camel-cased.
+
+00:06:35.185 --> 00:06:37.480
+And I'm also going to
+add a Copy task here,
+
+00:06:37.480 --> 00:06:40.620
+so I can copy over my Index file
+and my Web Components polyfills
+
+00:06:40.620 --> 00:06:41.890
+to my Dist directory.
+
+00:06:41.890 --> 00:06:43.880
+And now when I run
+Gulp, I basically
+
+00:06:43.880 --> 00:06:46.440
+set up everything I need for
+a production Polymer site.
+
+00:06:46.440 --> 00:06:48.580
+I can run a little server
+from that Dist directory.
+
+00:06:48.580 --> 00:06:50.919
+You can see here are
+my elements showing up.
+
+00:06:50.919 --> 00:06:52.960
+I've also got my Web
+Components polyfills loaded.
+
+00:06:52.960 --> 00:06:54.711
+So if you want, you
+can even use that Gulp
+
+00:06:54.711 --> 00:06:56.668
+file as a starting point
+the next time you want
+
+00:06:56.668 --> 00:06:58.020
+to mess around with Polymer.
+
+00:06:58.020 --> 00:06:59.230
+The main thing to
+take away from this,
+
+00:06:59.230 --> 00:07:01.500
+though, is if you're launching
+Polymer in production,
+
+00:07:01.500 --> 00:07:03.460
+you should always,
+always, always make sure
+
+00:07:03.460 --> 00:07:05.680
+that you run Vulcanize
+before you do so.
+
+00:07:05.680 --> 00:07:07.452
+It's going to
+dramatically improve
+
+00:07:07.452 --> 00:07:08.910
+the performance of
+your application
+
+00:07:08.910 --> 00:07:10.840
+by cutting down HTTP request.
+
+00:07:10.840 --> 00:07:12.950
+And ultimately,
+it's just something
+
+00:07:12.950 --> 00:07:15.347
+that everyone should be
+doing in their Polymer app.
+
+00:07:15.347 --> 00:07:17.055
+Now, I want to cover
+tools like Vulcanize
+
+00:07:17.055 --> 00:07:20.040
+and a few of its friends
+in some future episodes.
+
+00:07:20.040 --> 00:07:21.790
+If you have any questions
+on this episode,
+
+00:07:21.790 --> 00:07:24.248
+you can leave me some comments
+down below or maybe consider
+
+00:07:24.248 --> 00:07:26.690
+clicking that Like button if
+you've enjoyed the episode.
+
+00:07:26.690 --> 00:07:29.590
+Also, if you want to ping us on
+a social network like Twitter
+
+00:07:29.590 --> 00:07:33.070
+or G+, you can hit
+us up at #AskPolymer.
+
+00:07:33.070 --> 00:07:34.900
+As always, thank you
+so much for watching,
+
+00:07:34.900 --> 00:07:37.560
+and I'll see you next time.
+
+00:07:37.560 --> 00:07:40.610
+[MUSIC PLAYING]
+

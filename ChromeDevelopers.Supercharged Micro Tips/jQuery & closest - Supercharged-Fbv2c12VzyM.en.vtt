@@ -1,0 +1,116 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.976
+[MUSIC PLAYING]
+
+00:00:10.912 --> 00:00:13.090
+SURMA: In a previous
+episode, we talked
+
+00:00:13.090 --> 00:00:16.420
+about how jQuery augmented
+the API of dumb elements
+
+00:00:16.420 --> 00:00:18.430
+to make developers
+life easier when
+
+00:00:18.430 --> 00:00:21.110
+it came to the management
+of CSS classes.
+
+00:00:21.110 --> 00:00:23.470
+Another popular API
+that jQuery offered
+
+00:00:23.470 --> 00:00:25.780
+was closest, which
+returns the closest
+
+00:00:25.780 --> 00:00:29.560
+ancestor of the current element,
+which matches the selector.
+
+00:00:29.560 --> 00:00:31.210
+For example, this
+is very useful when
+
+00:00:31.210 --> 00:00:33.880
+having a reference to a
+certain button or input field
+
+00:00:33.880 --> 00:00:37.480
+and wanting to get a hold of
+the enclosing form elements.
+
+00:00:37.480 --> 00:00:39.940
+It is so useful, in fact,
+that the web platform now
+
+00:00:39.940 --> 00:00:44.410
+offers the exact same function
+directly on dumb elements.
+
+00:00:44.410 --> 00:00:46.450
+All modern browsers
+offer this API,
+
+00:00:46.450 --> 00:00:49.180
+and it can be poly-filled
+with a couple of lines of code
+
+00:00:49.180 --> 00:00:50.230
+if necessary.
+
+00:00:50.230 --> 00:00:52.600
+The fact that so
+many APIs of jQuery
+
+00:00:52.600 --> 00:00:54.640
+influenced the web
+platform itself
+
+00:00:54.640 --> 00:00:57.520
+shows that the jQuery offer is
+for real web developers that
+
+00:00:57.520 --> 00:00:59.676
+solved real problems.
+
+00:00:59.676 --> 00:01:01.300
+What would you like
+to know more about?
+
+00:01:01.300 --> 00:01:04.090
+Let us know by
+leaving a comment.
+
+00:01:04.090 --> 00:01:05.680
+I hope you have
+enjoyed this trip
+
+00:01:05.680 --> 00:01:08.260
+down this jQuery-shaped
+memory lane.
+
+00:01:08.260 --> 00:01:11.189
+If you like Supercharged and
+the short micro-tip videos,
+
+00:01:11.189 --> 00:01:12.730
+you should subscribe
+because there is
+
+00:01:12.730 --> 00:01:14.330
+going to be more in the future.
+
+00:01:14.330 --> 00:01:15.871
+In the meantime,
+though, you can just
+
+00:01:15.871 --> 00:01:19.320
+catch up on all things
+Supercharged right here.
+

@@ -1,0 +1,447 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.196 --> 00:00:01.820
+PAUL LEWIS: Today
+I've had a little bit
+
+00:00:01.820 --> 00:00:05.800
+of a play with the images
+for the Chrome Dev Summit
+
+00:00:05.800 --> 00:00:07.110
+site-- the mastered images.
+
+00:00:07.110 --> 00:00:10.005
+If you look at what
+I've got on screen,
+
+00:00:10.005 --> 00:00:12.363
+these masthead
+images have the kind
+
+00:00:12.363 --> 00:00:15.350
+of angular cutoff at the bottom.
+
+00:00:15.350 --> 00:00:16.600
+And I was thinking about this.
+
+00:00:16.600 --> 00:00:18.680
+There's kind of a couple
+of ways you could do it.
+
+00:00:18.680 --> 00:00:21.900
+One would be, you actually just
+have the image as a rectangle,
+
+00:00:21.900 --> 00:00:24.670
+and then you kind of overlay
+something on the top,
+
+00:00:24.670 --> 00:00:25.610
+like a triangle.
+
+00:00:25.610 --> 00:00:27.990
+Like, say, using
+SVG or something.
+
+00:00:27.990 --> 00:00:31.850
+And that's actually what I
+did in the holding page--
+
+00:00:31.850 --> 00:00:35.762
+the announcement page here.
+
+00:00:35.762 --> 00:00:37.970
+This has a slight angle on
+it, which you can probably
+
+00:00:37.970 --> 00:00:40.210
+see if I make it a bit smaller.
+
+00:00:40.210 --> 00:00:42.830
+It has a slight
+angle on it upwards.
+
+00:00:42.830 --> 00:00:44.900
+But the thing is, when
+you've got that triangle,
+
+00:00:44.900 --> 00:00:50.020
+when it butts up to the
+white rectangle above it
+
+00:00:50.020 --> 00:00:53.710
+in this case, sometimes
+there's a hairline crack.
+
+00:00:53.710 --> 00:00:55.860
+And I filed a bug
+against Chrome saying,
+
+00:00:55.860 --> 00:00:59.445
+there's a hairline crack on
+phones because, I assume,
+
+00:00:59.445 --> 00:01:01.160
+it's some kind of
+rounding issue to do
+
+00:01:01.160 --> 00:01:03.660
+with not exactly lining up.
+
+00:01:03.660 --> 00:01:06.273
+Anyway, so I was like, OK, I
+need to find a different way.
+
+00:01:06.273 --> 00:01:09.460
+And I've been messing
+around with SVG.
+
+00:01:09.460 --> 00:01:13.932
+And it's one of these things
+that I could not get it right.
+
+00:01:13.932 --> 00:01:15.390
+Here's what I
+actually have, right?
+
+00:01:15.390 --> 00:01:17.170
+So, I've got the image.
+
+00:01:17.170 --> 00:01:20.919
+And, see, that kind
+of roughly works.
+
+00:01:20.919 --> 00:01:22.710
+If you look at it--
+actually, let me switch
+
+00:01:22.710 --> 00:01:28.670
+across to VS code, right.
+
+00:01:28.670 --> 00:01:32.474
+What we've got is there's
+an image which is a pattern.
+
+00:01:32.474 --> 00:01:36.830
+So, there's a
+rectangle here which
+
+00:01:36.830 --> 00:01:38.250
+uses the image as a pattern.
+
+00:01:40.770 --> 00:01:43.616
+And it could have been-- I could
+have used an image element,
+
+00:01:43.616 --> 00:01:44.990
+actually, a square
+image element.
+
+00:01:44.990 --> 00:01:48.000
+Because this was kind
+of where I got to.
+
+00:01:48.000 --> 00:01:51.780
+And then there's a
+clip-path of this clip.
+
+00:01:51.780 --> 00:01:55.030
+And the clip is-- it's a
+rectangle with a triangular
+
+00:01:55.030 --> 00:01:59.750
+bit at the bottom because
+of the view box that's set.
+
+00:01:59.750 --> 00:02:01.980
+It's all kind of kept
+broadly in proportion.
+
+00:02:01.980 --> 00:02:04.030
+I don't mind the
+angle of the triangle
+
+00:02:04.030 --> 00:02:05.820
+kind of squishing in and out.
+
+00:02:05.820 --> 00:02:09.440
+It just has to look OK-ish
+for the screen size it's on.
+
+00:02:09.440 --> 00:02:13.660
+The problem is the
+effect isn't what I want,
+
+00:02:13.660 --> 00:02:17.220
+because the image is kind of
+getting smaller and shrinking
+
+00:02:17.220 --> 00:02:18.140
+to the bottom.
+
+00:02:18.140 --> 00:02:21.740
+And that's because
+it's xMid yMax
+
+00:02:21.740 --> 00:02:26.440
+on the preserve aspect ratio.
+
+00:02:26.440 --> 00:02:27.970
+So I was like, OK.
+
+00:02:27.970 --> 00:02:30.850
+Why don't we do preserve
+aspect ratio none.
+
+00:02:30.850 --> 00:02:35.070
+But then you get that,
+which is like, yeah.
+
+00:02:35.070 --> 00:02:37.130
+Now the clip is kind of
+doing what I want, right?
+
+00:02:37.130 --> 00:02:39.532
+It's always clipping there,
+but obviously, the photo
+
+00:02:39.532 --> 00:02:40.560
+is getting squashed.
+
+00:02:43.690 --> 00:02:47.790
+And it's also the
+case that if I do
+
+00:02:47.790 --> 00:02:50.747
+xMid yMid, which is kind of
+what I want from the photo.
+
+00:02:53.691 --> 00:02:56.190
+As in, I want the photo to--
+when the screen is really wide,
+
+00:02:56.190 --> 00:02:58.810
+and you can't
+really see it here.
+
+00:02:58.810 --> 00:03:04.550
+If I zoom out, it
+doesn't spread.
+
+00:03:04.550 --> 00:03:07.400
+Whereas with the-- anyway.
+
+00:03:07.400 --> 00:03:09.750
+This isn't working
+for me, right?
+
+00:03:09.750 --> 00:03:13.960
+But Chris Coyier--
+thanks, Chris,
+
+00:03:13.960 --> 00:03:17.410
+yes-- has a post on
+CSS tricks, which--
+
+00:03:17.410 --> 00:03:21.480
+I guess we'll make sure it goes
+into the description-- which
+
+00:03:21.480 --> 00:03:27.910
+talks about using SVG as a clip
+for non-SVG content, which is
+
+00:03:27.910 --> 00:03:29.410
+pretty much what I've got here.
+
+00:03:29.410 --> 00:03:35.930
+And, in fact, that's what I've
+gone ahead and done over here
+
+00:03:35.930 --> 00:03:38.170
+in index page.
+
+00:03:38.170 --> 00:03:40.340
+Now, you can see
+I've got the image
+
+00:03:40.340 --> 00:03:42.920
+doing what the image does.
+
+00:03:42.920 --> 00:03:46.240
+And that's just basically-- it's
+just a div with the background
+
+00:03:46.240 --> 00:03:47.990
+and it's set to
+background size cover.
+
+00:03:47.990 --> 00:03:51.740
+And if I don't have
+the clip on it--
+
+00:03:51.740 --> 00:03:54.120
+if you don't have
+the clip on it,
+
+00:03:54.120 --> 00:03:55.787
+you can see it just--
+that pretty much
+
+00:03:55.787 --> 00:03:56.870
+does what I want it to do.
+
+00:03:56.870 --> 00:04:00.419
+And then, I can use media
+queries to make sure that if I
+
+00:04:00.419 --> 00:04:01.710
+need a smaller image, whatever.
+
+00:04:01.710 --> 00:04:05.670
+But, I switch on the clip-path.
+
+00:04:05.670 --> 00:04:09.200
+And the clip-path is
+just basically this SVG
+
+00:04:09.200 --> 00:04:12.560
+with a clip-path that's defined
+by the object's bounding box.
+
+00:04:12.560 --> 00:04:16.279
+So it just basically maps
+to a normalized version
+
+00:04:16.279 --> 00:04:20.160
+of those previous
+view box values
+
+00:04:20.160 --> 00:04:24.830
+where one is the height--
+maximum height-- and 1100.
+
+00:04:24.830 --> 00:04:27.630
+Anyway, that all now
+works brilliantly.
+
+00:04:27.630 --> 00:04:29.740
+So, it's just more
+that I've kind of
+
+00:04:29.740 --> 00:04:33.090
+cracked that particular
+problem for now,
+
+00:04:33.090 --> 00:04:34.660
+which is kind of a weight off.
+
+00:04:34.660 --> 00:04:36.160
+The only thing that
+really caught me
+
+00:04:36.160 --> 00:04:38.930
+out when I was looking around,
+was I couldn't get clip-path
+
+00:04:38.930 --> 00:04:39.430
+to work.
+
+00:04:39.430 --> 00:04:42.740
+It doesn't throw any kind of
+warning or error in Chrome.
+
+00:04:42.740 --> 00:04:45.090
+It just doesn't do anything.
+
+00:04:45.090 --> 00:04:47.660
+It's still WebKit prefixed.
+
+00:04:47.660 --> 00:04:50.620
+But yet, it's got a
+line through it saying
+
+00:04:50.620 --> 00:04:53.420
+it's being overridden by this.
+
+00:04:53.420 --> 00:04:56.200
+So I think I'm going
+to file a bug that says
+
+00:04:56.200 --> 00:04:57.490
+it should be one or the other.
+
+00:04:57.490 --> 00:05:00.489
+We should kind of put something
+against click-path that says,
+
+00:05:00.489 --> 00:05:02.030
+actually, I don't
+support click-path.
+
+00:05:02.030 --> 00:05:04.700
+Or if we do, we should actually
+support click-path rather than
+
+00:05:04.700 --> 00:05:07.970
+WebKit click-path.
+
+00:05:07.970 --> 00:05:09.540
+Wow, I didn't realize
+that was going
+
+00:05:09.540 --> 00:05:11.820
+to be a hard word to say today.
+
+00:05:11.820 --> 00:05:12.960
+So there you go.
+
+00:05:12.960 --> 00:05:15.300
+Clipping with SVG on
+SVG Elements, that
+
+00:05:15.300 --> 00:05:19.560
+should mean that I can
+do this kind of effect
+
+00:05:19.560 --> 00:05:23.162
+and then have other stuff
+behind it peeking through
+
+00:05:23.162 --> 00:05:24.120
+and all the rest of it.
+
+00:05:24.120 --> 00:05:26.250
+Which is exactly the
+effect that I want,
+
+00:05:26.250 --> 00:05:29.650
+and I didn't know exactly how
+I was going to achieve it.
+
+00:05:29.650 --> 00:05:31.460
+Phew, weight off.
+
+00:05:31.460 --> 00:05:33.781
+Don't forget to
+subscribe if you want
+
+00:05:33.781 --> 00:05:35.030
+to catch more of these videos.
+
+00:05:35.030 --> 00:05:36.738
+And you can check out
+the code on GitHub.
+
+00:05:36.738 --> 00:05:39.160
+I've been pushing stuff there.
+
+00:05:39.160 --> 00:05:39.760
+Toodle-oo.
+
+00:05:39.760 --> 00:05:43.110
+[MUSIC PLAYING]
+

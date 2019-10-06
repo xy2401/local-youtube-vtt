@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.310 --> 00:00:05.300
+SURMA: Let's say you're
+building your node app,
+
+00:00:05.300 --> 00:00:08.080
+and once you're done, you want
+to publish it to the world.
+
+00:00:08.080 --> 00:00:10.090
+You log into your server,
+you build the app,
+
+00:00:10.090 --> 00:00:12.760
+and it doesn't work.
+
+00:00:12.760 --> 00:00:14.920
+Small differences in
+runtime environments
+
+00:00:14.920 --> 00:00:16.720
+can be extremely
+frustrating when
+
+00:00:16.720 --> 00:00:18.820
+trying to get your app running.
+
+00:00:18.820 --> 00:00:21.340
+Docker is one way to keep
+your runtime environment
+
+00:00:21.340 --> 00:00:24.970
+identical for development,
+testing, and production.
+
+00:00:24.970 --> 00:00:28.450
+Here, I have an extremely
+important and complex node app
+
+00:00:28.450 --> 00:00:29.970
+using Express.
+
+00:00:29.970 --> 00:00:31.720
+To put everything in
+a Docker container,
+
+00:00:31.720 --> 00:00:34.450
+we need to create a new
+file called Docker file
+
+00:00:34.450 --> 00:00:36.330
+and write a couple of lines.
+
+00:00:36.330 --> 00:00:38.170
+We are using the
+official node base
+
+00:00:38.170 --> 00:00:42.130
+image, set our working directory
+where our app's code will live,
+
+00:00:42.130 --> 00:00:45.820
+copy all source files off our
+app into the container image,
+
+00:00:45.820 --> 00:00:49.100
+and run NPM to install
+the dependencies.
+
+00:00:49.100 --> 00:00:51.520
+Now, we declare our port
+and define the command
+
+00:00:51.520 --> 00:00:52.990
+that starts our app.
+
+00:00:52.990 --> 00:00:56.080
+We can now build our image
+using Docker build and give it
+
+00:00:56.080 --> 00:00:56.890
+a label.
+
+00:00:56.890 --> 00:01:00.060
+Afterwards, we can use the image
+to start a new container using
+
+00:01:00.060 --> 00:01:01.390
+Docker run.
+
+00:01:01.390 --> 00:01:04.150
+Don't forget to bind
+the port to your host.
+
+00:01:04.150 --> 00:01:06.760
+Now, we can access the app
+just like we did before when
+
+00:01:06.760 --> 00:01:08.530
+the container is running.
+
+00:01:08.530 --> 00:01:10.730
+To get the app running
+on your server,
+
+00:01:10.730 --> 00:01:13.990
+you can either rebuild the
+image there, publish your image
+
+00:01:13.990 --> 00:01:16.720
+to the Docker registry,
+or save the image
+
+00:01:16.720 --> 00:01:19.660
+from your local machine to
+a file using Docker save,
+
+00:01:19.660 --> 00:01:22.194
+and publish it to your server.
+
+00:01:22.194 --> 00:01:23.110
+And there you have it.
+
+00:01:23.110 --> 00:01:25.690
+Our app is now running
+just like it was before.
+
+00:01:25.690 --> 00:01:28.630
+But this time, we can be sure
+that the runtime environment
+
+00:01:28.630 --> 00:01:33.010
+will always be exactly the same
+every single time, no matter
+
+00:01:33.010 --> 00:01:34.960
+what machine it is on.
+
+00:01:34.960 --> 00:01:35.830
+Thanks for watching.
+
+00:01:35.830 --> 00:01:37.630
+See you next time.
+
+00:01:37.630 --> 00:01:39.850
+If you're wondering
+why I'm suddenly small
+
+00:01:39.850 --> 00:01:41.650
+and only partly
+covering the screen,
+
+00:01:41.650 --> 00:01:44.440
+that is because I need to make
+room for the big Chrome logo
+
+00:01:44.440 --> 00:01:46.240
+that you can click to subscribe.
+
+00:01:46.240 --> 00:01:48.940
+And also, we need more space
+for our latest live stream
+
+00:01:48.940 --> 00:01:50.640
+over there.
+

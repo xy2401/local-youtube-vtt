@@ -1,0 +1,689 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:04.512
+FEMALE SPEAKER: [INAUDIBLE],
+take two, marker.
+
+00:00:04.512 --> 00:00:05.720
+ROB DODSON: Hey, Polycasters.
+
+00:00:05.720 --> 00:00:06.330
+What's up?
+
+00:00:06.330 --> 00:00:07.000
+Rob here.
+
+00:00:07.000 --> 00:00:09.240
+Welcome back to another
+episode of #AskPolymer.
+
+00:00:09.240 --> 00:00:10.740
+This is a little
+segment that we do,
+
+00:00:10.740 --> 00:00:13.970
+where you send in
+questions on G+ or Twitter,
+
+00:00:13.970 --> 00:00:16.020
+and I do my best to answer them.
+
+00:00:16.020 --> 00:00:19.150
+OK, our first question comes
+from Wheatley, who asks,
+
+00:00:19.150 --> 00:00:21.190
+is it possible to use
+Sass with Polymer?
+
+00:00:21.190 --> 00:00:24.360
+And if so, what's the best
+way to go about doing that?
+
+00:00:24.360 --> 00:00:26.470
+So there's are really
+two things to think about
+
+00:00:26.470 --> 00:00:28.011
+if you want to use
+Sass with Polymer.
+
+00:00:28.011 --> 00:00:31.680
+The first is that Sass needs
+to know about Polymer's custom
+
+00:00:31.680 --> 00:00:34.470
+property and CSS mixin syntax.
+
+00:00:34.470 --> 00:00:36.700
+The other is that, for
+using external style sheets
+
+00:00:36.700 --> 00:00:38.200
+or something like
+that, you're going
+
+00:00:38.200 --> 00:00:41.230
+to need to bundle everything
+into a style module.
+
+00:00:41.230 --> 00:00:43.950
+Now, for that first point,
+mixins and custom properties,
+
+00:00:43.950 --> 00:00:47.670
+there is a master bug in Sass
+tracking support for this.
+
+00:00:47.670 --> 00:00:51.020
+So you can check that
+out over here, right?
+
+00:00:51.020 --> 00:00:53.390
+Recently, Sass added support
+for custom properties.
+
+00:00:53.390 --> 00:00:54.931
+But if you want to
+use mixins, you're
+
+00:00:54.931 --> 00:00:57.200
+going to need to escape
+the mixin code using
+
+00:00:57.200 --> 00:00:59.550
+a little bit of Sass syntax.
+
+00:00:59.550 --> 00:01:01.890
+As for wrapping things
+in style modules,
+
+00:01:01.890 --> 00:01:03.850
+there's a tool that our
+teammate Eric Bidelman
+
+00:01:03.850 --> 00:01:05.370
+created called Polystyles.
+
+00:01:05.370 --> 00:01:08.690
+I will leave a link to that
+down in the show notes.
+
+00:01:08.690 --> 00:01:11.520
+So you can use that with an
+external CSS file, bundle
+
+00:01:11.520 --> 00:01:13.580
+it all up into a style
+module that Polymer
+
+00:01:13.580 --> 00:01:14.830
+knows how to work with.
+
+00:01:14.830 --> 00:01:17.970
+And that way, you can use
+Sass and style modules
+
+00:01:17.970 --> 00:01:19.180
+in your application.
+
+00:01:19.180 --> 00:01:21.480
+So thank you, Wheatley,
+for that question.
+
+00:01:21.480 --> 00:01:25.470
+So our next question comes
+from George, who was wondering,
+
+00:01:25.470 --> 00:01:27.470
+do you recommend
+putting every element
+
+00:01:27.470 --> 00:01:29.800
+inside of your
+elements.html file,
+
+00:01:29.800 --> 00:01:33.930
+or do you put your elements
+inside of other elements?
+
+00:01:33.930 --> 00:01:35.430
+So I'm assuming,
+George, that you're
+
+00:01:35.430 --> 00:01:38.870
+using the Polymer Starter Kit
+application boilerplate thing.
+
+00:01:38.870 --> 00:01:41.339
+So that actually comes with
+a little elements.html file,
+
+00:01:41.339 --> 00:01:43.380
+where we put a whole bunch
+of element definitions
+
+00:01:43.380 --> 00:01:46.410
+that we end up importing
+into our index file.
+
+00:01:46.410 --> 00:01:48.170
+So basically what
+you want to do is,
+
+00:01:48.170 --> 00:01:50.440
+if you are creating
+your own element,
+
+00:01:50.440 --> 00:01:52.550
+that element should
+always list all the things
+
+00:01:52.550 --> 00:01:55.679
+that it depends on as imports
+at the top of its file.
+
+00:01:55.679 --> 00:01:58.220
+So if you're creating an element
+that depends on paper-button
+
+00:01:58.220 --> 00:02:00.344
+or something like that,
+the import for paper-button
+
+00:02:00.344 --> 00:02:02.910
+should be right at the top
+of your elements definition.
+
+00:02:02.910 --> 00:02:06.750
+Now, if you're then using that
+element in your index file,
+
+00:02:06.750 --> 00:02:08.544
+then, yeah, sure,
+put that element
+
+00:02:08.544 --> 00:02:10.169
+that you just defined
+in elements.html.
+
+00:02:10.169 --> 00:02:13.150
+HTML But you don't need to
+put all of its dependencies
+
+00:02:13.150 --> 00:02:14.560
+in elements.html as well.
+
+00:02:14.560 --> 00:02:16.840
+Really, you can think
+of elements.html
+
+00:02:16.840 --> 00:02:20.310
+as all the things that the index
+file depends on, basically.
+
+00:02:20.310 --> 00:02:24.080
+So, yeah, elements, they
+import their dependencies.
+
+00:02:24.080 --> 00:02:26.140
+Anything that you're
+using in your index file,
+
+00:02:26.140 --> 00:02:27.432
+that can go into elements.html.
+
+00:02:27.432 --> 00:02:29.390
+Hope that sort of clears
+things up a little bit
+
+00:02:29.390 --> 00:02:30.104
+for you, George.
+
+00:02:30.104 --> 00:02:31.520
+All right, our
+next question comes
+
+00:02:31.520 --> 00:02:34.470
+from Jesse, who was
+wondering, when are we going
+
+00:02:34.470 --> 00:02:37.350
+to get a Datagrid in Polymer?
+
+00:02:37.350 --> 00:02:39.180
+So that's a good question.
+
+00:02:39.180 --> 00:02:41.020
+Right now, the
+Polymer team is not
+
+00:02:41.020 --> 00:02:43.144
+planning to ship a
+bunch of new elements.
+
+00:02:43.144 --> 00:02:44.560
+We're working on
+a few things kind
+
+00:02:44.560 --> 00:02:47.685
+of related to framework
+stuff, like a router, stuff
+
+00:02:47.685 --> 00:02:48.850
+working with the URL.
+
+00:02:48.850 --> 00:02:52.240
+But we're not planning to ship
+a bunch of new UI elements.
+
+00:02:52.240 --> 00:02:53.950
+Instead, I think
+what we'd really
+
+00:02:53.950 --> 00:02:56.600
+like to do in 2016 is
+see more elements coming
+
+00:02:56.600 --> 00:02:58.000
+from the community.
+
+00:02:58.000 --> 00:03:00.670
+And we want to do our best
+to promote those elements,
+
+00:03:00.670 --> 00:03:01.500
+because there's a
+lot of good stuff
+
+00:03:01.500 --> 00:03:03.124
+that's being built
+out there right now,
+
+00:03:03.124 --> 00:03:05.040
+but maybe everybody
+doesn't know about it.
+
+00:03:05.040 --> 00:03:06.665
+If you aren't familiar
+with it, there's
+
+00:03:06.665 --> 00:03:08.545
+a website called
+CustomElements.io.
+
+00:03:08.545 --> 00:03:10.940
+I will link to that over here.
+
+00:03:10.940 --> 00:03:12.760
+And this is basically
+like-- it's kind
+
+00:03:12.760 --> 00:03:14.932
+of like MPM for Web Components.
+
+00:03:14.932 --> 00:03:15.640
+You can go there.
+
+00:03:15.640 --> 00:03:17.190
+You can just start typing
+in what you're looking for.
+
+00:03:17.190 --> 00:03:19.565
+And there's a bunch of things
+that folks in the community
+
+00:03:19.565 --> 00:03:21.810
+have just created
+and published there.
+
+00:03:21.810 --> 00:03:23.420
+And so yeah, what
+we'd like to do
+
+00:03:23.420 --> 00:03:26.040
+is we'd like to promote some of
+the data grids, some of the UI
+
+00:03:26.040 --> 00:03:27.470
+components that are
+out there already.
+
+00:03:27.470 --> 00:03:29.655
+There's one really good one
+by a team called Vaadin.
+
+00:03:29.655 --> 00:03:31.820
+I think it's just called
+Vaaid Datagrid, perhaps.
+
+00:03:31.820 --> 00:03:33.590
+You can find it on that website.
+
+00:03:33.590 --> 00:03:35.750
+And for those you out
+there who are thinking
+
+00:03:35.750 --> 00:03:37.125
+about building
+some stuff, you're
+
+00:03:37.125 --> 00:03:40.080
+thinking about sharing it,
+share it on CustomElements.io,
+
+00:03:40.080 --> 00:03:41.350
+and then ping me on Twitter.
+
+00:03:41.350 --> 00:03:44.010
+And we can try and promote it
+and get more people involved
+
+00:03:44.010 --> 00:03:45.020
+in the ecosystem.
+
+00:03:45.020 --> 00:03:46.910
+So thank you, Jesse,
+for that question.
+
+00:03:46.910 --> 00:03:49.610
+Our next question comes
+from Zikes, who asks,
+
+00:03:49.610 --> 00:03:51.880
+what are the biggest
+barriers to adoption today?
+
+00:03:51.880 --> 00:03:55.700
+And what's on the horizon
+to overcome those barriers?
+
+00:03:55.700 --> 00:04:00.420
+So I think over the last
+year, the hardest was just
+
+00:04:00.420 --> 00:04:03.260
+making sure the components
+work well across a browser
+
+00:04:03.260 --> 00:04:04.880
+and that they were performant.
+
+00:04:04.880 --> 00:04:06.660
+I feel like we're
+starting to get
+
+00:04:06.660 --> 00:04:09.370
+to a really good place with
+Polymer, where those things
+
+00:04:09.370 --> 00:04:10.859
+have kind of settled down.
+
+00:04:10.859 --> 00:04:12.400
+Where it's still
+tough today, though,
+
+00:04:12.400 --> 00:04:15.160
+is taking a bunch of components
+and knitting them together
+
+00:04:15.160 --> 00:04:16.550
+into an application.
+
+00:04:16.550 --> 00:04:20.087
+We're sort of missing the
+framework pieces, if you will.
+
+00:04:20.087 --> 00:04:21.920
+And so what we're going
+to work on this year
+
+00:04:21.920 --> 00:04:24.310
+is rolling out an
+improved router.
+
+00:04:24.310 --> 00:04:26.700
+We're going to work on some
+stuff around data bindings
+
+00:04:26.700 --> 00:04:29.660
+and improve data flow through
+your application, some design
+
+00:04:29.660 --> 00:04:32.690
+patterns that you can use so you
+can figure out how to architect
+
+00:04:32.690 --> 00:04:33.944
+the whole thing together.
+
+00:04:33.944 --> 00:04:35.360
+And yeah, I think
+right now that's
+
+00:04:35.360 --> 00:04:37.651
+still probably the biggest
+barrier and stuff that we're
+
+00:04:37.651 --> 00:04:40.390
+going to be tackling this year
+and rolling out and hopefully
+
+00:04:40.390 --> 00:04:41.540
+improving the story there.
+
+00:04:41.540 --> 00:04:43.560
+So thank you, Zikes,
+for that question.
+
+00:04:43.560 --> 00:04:45.920
+OK, the last question
+comes from Dan,
+
+00:04:45.920 --> 00:04:48.540
+who asks, how can
+a developer using
+
+00:04:48.540 --> 00:04:52.400
+Polymer contribute the most
+to the Polymer project?
+
+00:04:52.400 --> 00:04:54.600
+So there's a couple
+ways that I think
+
+00:04:54.600 --> 00:04:56.050
+you can go about doing that.
+
+00:04:56.050 --> 00:04:59.180
+The first is go check
+out some of our projects,
+
+00:04:59.180 --> 00:05:01.040
+like Polymer Starter
+Kit, where we already
+
+00:05:01.040 --> 00:05:03.260
+have a ton of active
+community involvement.
+
+00:05:03.260 --> 00:05:05.700
+And look through
+the issue tracker.
+
+00:05:05.700 --> 00:05:09.250
+Find a bug that looks like maybe
+it's something you could work,
+
+00:05:09.250 --> 00:05:11.626
+maybe something nobody's
+working on just yet.
+
+00:05:11.626 --> 00:05:13.000
+Leave a comment
+and be like, hey,
+
+00:05:13.000 --> 00:05:15.130
+can I try and tackle this bug?
+
+00:05:15.130 --> 00:05:16.912
+And once you do, send
+us a pull request.
+
+00:05:16.912 --> 00:05:18.370
+And we'll even work
+with you to try
+
+00:05:18.370 --> 00:05:20.411
+and-- if you've never done
+a pull request before,
+
+00:05:20.411 --> 00:05:22.470
+we'll work with you to
+set that up and walk you
+
+00:05:22.470 --> 00:05:23.570
+through the process.
+
+00:05:23.570 --> 00:05:25.080
+That stuff is super helpful.
+
+00:05:25.080 --> 00:05:26.205
+You can do that on Polymer.
+
+00:05:26.205 --> 00:05:27.990
+You can do that on the
+element repos, too.
+
+00:05:27.990 --> 00:05:30.436
+If you find an element,
+there's a bug in it,
+
+00:05:30.436 --> 00:05:31.810
+rather than just
+filing an issue,
+
+00:05:31.810 --> 00:05:34.070
+see if you can get in
+there and try and fix it.
+
+00:05:34.070 --> 00:05:37.770
+Also, if you're building stuff,
+share it with the community.
+
+00:05:37.770 --> 00:05:40.400
+I mentioned earlier there's
+this site, CustomElements.io.
+
+00:05:40.400 --> 00:05:42.680
+I'm going to leave the link
+down in the show notes.
+
+00:05:42.680 --> 00:05:45.320
+But we're really trying
+to get more people
+
+00:05:45.320 --> 00:05:47.050
+building components,
+more people sharing
+
+00:05:47.050 --> 00:05:50.340
+them there so we can all
+benefit from each other's work.
+
+00:05:50.340 --> 00:05:52.540
+So those are the two big
+areas that I can think of.
+
+00:05:52.540 --> 00:05:53.990
+Pitch in on some
+of these things.
+
+00:05:53.990 --> 00:05:55.870
+Send us a pull
+request if you can.
+
+00:05:55.870 --> 00:05:57.912
+And also, share the stuff
+that you're building.
+
+00:05:57.912 --> 00:05:58.620
+Get it out there.
+
+00:05:58.620 --> 00:05:59.911
+Get some other people using it.
+
+00:05:59.911 --> 00:06:02.910
+And that way, we can just
+grow the whole ecosystem.
+
+00:06:02.910 --> 00:06:05.180
+So thank you, Dan, for
+sending in that question.
+
+00:06:05.180 --> 00:06:07.922
+All right, so thank you for
+all of those awesome questions.
+
+00:06:07.922 --> 00:06:10.130
+If you out there, if you
+have some questions that you
+
+00:06:10.130 --> 00:06:12.004
+want us to answer, just
+leave them down below
+
+00:06:12.004 --> 00:06:12.800
+in the comments.
+
+00:06:12.800 --> 00:06:15.360
+Or you can ping us on a social
+network of your choosing
+
+00:06:15.360 --> 00:06:17.130
+at #AskPolymer.
+
+00:06:17.130 --> 00:06:18.880
+As always, thank you
+so much for watching.
+
+00:06:18.880 --> 00:06:20.716
+And I'll see you next time.
+
+00:06:20.716 --> 00:06:22.820
+So I think over the
+past year or two,
+
+00:06:22.820 --> 00:06:26.740
+where most people "struggerled"
+was just getting-- what?
+
+00:06:26.740 --> 00:06:27.560
+[BLEEP].
+
+00:06:27.560 --> 00:06:29.312
+I know I said "struggerled."
+
+00:06:29.312 --> 00:06:30.728
+MALE SPEAKER: You
+want some water?
+
+00:06:30.728 --> 00:06:31.154
+ROB DODSON: No, no, no.
+
+00:06:31.154 --> 00:06:31.885
+I'm fine.
+
+00:06:31.885 --> 00:06:35.260
+I just struggled as
+I am struggling now.
+
+00:06:35.260 --> 00:06:36.590
+Words.
+
+00:06:36.590 --> 00:06:38.696
+They hard to speak.
+

@@ -1,0 +1,813 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.789 --> 00:00:13.400
+[music]
+
+00:00:13.400 --> 00:00:14.940
+Hello and welcome to section
+
+00:00:14.940 --> 00:00:17.810
+four of lesson 3.
+
+00:00:17.810 --> 00:00:20.740
+In this section we're going to be
+talking about how to use collectors
+
+00:00:20.740 --> 00:00:25.950
+as terminal operations on a stream. If we
+look at the
+
+00:00:25.950 --> 00:00:29.140
+basics of the collector, what a collector
+actually does
+
+00:00:29.140 --> 00:00:34.550
+is to perform a mutable reduction on
+a stream. So that means it takes the
+
+00:00:34.550 --> 00:00:36.309
+elements of the input stream
+
+00:00:36.309 --> 00:00:39.670
+and puts them into some kind of container,
+
+00:00:39.670 --> 00:00:44.120
+which stores the results. What this container can be
+
+00:00:44.120 --> 00:00:48.500
+is anything that we can actually change.
+And by that I mean
+
+00:00:48.500 --> 00:00:51.870
+things like collections, so we can have a
+list, we can have a map and we can
+
+00:00:51.870 --> 00:00:55.650
+add elements to that. But we can just as
+easily use
+
+00:00:55.650 --> 00:00:59.309
+something like a string, where we
+can concatenate data together
+
+00:00:59.309 --> 00:01:03.620
+to form a single result. In terms of using 
+
+00:01:03.620 --> 00:01:07.050
+the collections what we do is we use the
+collect
+
+00:01:07.050 --> 00:01:10.260
+method to terminate stream. We pass a
+
+00:01:10.260 --> 00:01:14.530
+collector to the collect method to
+determine how things are going to be
+
+00:01:14.530 --> 00:01:15.180
+collected.
+
+00:01:15.180 --> 00:01:18.580
+What you find is that in the Collectors (with an
+
+00:01:18.580 --> 00:01:22.520
+s) utility class there are a number of
+methods
+
+00:01:22.520 --> 00:01:26.190
+that can be used to create collectors.
+And there's lots of different examples
+
+00:01:26.190 --> 00:01:28.400
+that, which we're going to talk about
+in the rest of this part of the 
+
+00:01:28.400 --> 00:01:34.210
+lesson. One of the other things that you can
+do with collectors is you can actually
+
+00:01:34.210 --> 00:01:35.320
+compose them,
+
+00:01:35.320 --> 00:01:39.670
+so you can create more complex
+collectors from
+
+00:01:39.670 --> 00:01:43.310
+the basic ones that are available in the 
+Collectors class.
+
+00:01:43.310 --> 00:01:47.540
+There are a number of examples where you
+can do that.
+
+00:01:47.540 --> 00:01:50.760
+There's the method collectingAndThen,
+
+00:01:50.760 --> 00:01:55.120
+which allows you to put one collector
+to after another. 
+
+00:01:55.120 --> 00:01:58.190
+There's the groupingBy or  groupingByConcurrent
+method
+
+00:01:58.190 --> 00:02:02.360
+and we'll see how you can use those with
+what are called downstream collectors, which is
+
+00:02:02.360 --> 00:02:02.540
+a
+
+00:02:02.540 --> 00:02:05.840
+a second collector to use. Similarly mapping,
+
+00:02:05.840 --> 00:02:10.099
+where we can describe how we want to
+apply different collector for generating
+
+00:02:10.099 --> 00:02:12.060
+things when we're actually creating a map
+
+00:02:12.060 --> 00:02:16.550
+and also how we can use a secondary
+collector when're doing partitioning.
+
+00:02:16.550 --> 00:02:22.730
+but as I said we'll look at these with
+examples as we go through.
+
+00:02:22.730 --> 00:02:25.739
+If you want to collect into a collection
+
+00:02:25.739 --> 00:02:30.440
+then there's a number of methods that we can use
+to do that. The most generic, if you
+
+00:02:30.440 --> 00:02:30.879
+like,
+
+00:02:30.879 --> 00:02:34.450
+is toCollection. What that does is it
+takes
+
+00:02:34.450 --> 00:02:38.099
+a method, takes a parameter for the
+method which is a supplier
+
+00:02:38.099 --> 00:02:41.230
+and the supplier is essentially a
+factory which will
+
+00:02:41.230 --> 00:02:44.760
+create some form of collection that can be
+used by toCollection into
+
+00:02:44.760 --> 00:02:48.280
+collection to collect that
+collection.
+
+00:02:48.280 --> 00:02:52.890
+A rather long way of saying a lot of
+different collections. So we
+
+00:02:52.890 --> 00:02:56.329
+create a collection and then the
+collector will
+
+00:02:56.329 --> 00:03:01.109
+add the element to the input stream to
+that collection. In terms of
+
+00:03:01.109 --> 00:03:05.280
+a order it uses what's called encounter order, which
+basically just means
+
+00:03:05.280 --> 00:03:08.670
+that the elements that are coming from
+the input stream
+
+00:03:08.670 --> 00:03:13.579
+will be replaced into the collection in
+whatever order they are made available.
+
+00:03:13.579 --> 00:03:16.900
+If we want to be a bit more specific in
+terms
+
+00:03:16.900 --> 00:03:20.340
+of the collection we want to use
+then
+
+00:03:20.340 --> 00:03:25.060
+there are simpler versions of the 
+methods, we can say to List,
+
+00:03:25.060 --> 00:03:28.690
+which will simply gather all the elements
+of stream into a list.
+
+00:03:28.690 --> 00:03:33.569
+We can use toSet, which will add all the
+elements of the input stream to set.
+
+00:03:33.569 --> 00:03:37.410
+The thing about a set is it
+eliminates the duplicates.
+
+00:03:37.410 --> 00:03:44.560
+That's one thing that will do
+automatically. We can also collect to a map,
+
+00:03:44.560 --> 00:03:48.220
+and the way this works is that 
+
+00:03:48.220 --> 00:03:52.400
+we provide two different functions. A keyMapper
+
+00:03:52.400 --> 00:03:55.739
+and a valueMapper. Essentially what
+
+00:03:55.739 --> 00:03:59.190
+this will do is it will allow all the
+collector
+
+00:03:59.190 --> 00:04:04.379
+to take the input elements and then use
+the keyMapper function to determine what
+
+00:04:04.379 --> 00:04:08.419
+the keys of the map are going to be and
+then use the
+
+00:04:08.419 --> 00:04:11.750
+valueMapper function to determine what
+values
+
+00:04:11.750 --> 00:04:17.120
+associated with each key will be if you
+want to use just the
+
+00:04:17.120 --> 00:04:20.949
+stream elements on their own, if you don't
+want to do any specific mapping
+
+00:04:20.949 --> 00:04:24.370
+then you can use to function.identity method
+
+00:04:24.370 --> 00:04:28.349
+and that simply is a function that returns
+the value that's passed to it. It
+
+00:04:28.349 --> 00:04:30.140
+doesn't change it.
+
+00:04:30.140 --> 00:04:34.530
+We've got a example here where I'm
+taking a collection of students;
+
+00:04:34.530 --> 00:04:38.040
+and I create stream source and then I
+pass that
+
+00:04:38.040 --> 00:04:42.800
+to collect and I say that the way I want
+to collect is to use the toMap
+
+00:04:42.800 --> 00:04:46.650
+method. The keyMapper is
+
+00:04:46.650 --> 00:04:50.820
+going to use the functions.identity method, which
+means that we'll be using the
+
+00:04:50.820 --> 00:04:55.890
+student records as the keys and then the
+valueMapper
+
+00:04:55.890 --> 00:04:59.370
+is a function, which in this case will
+use the score
+
+00:04:59.370 --> 00:05:03.220
+of the students. We'll end up with a map
+of student records
+
+00:05:03.220 --> 00:05:09.540
+and the scores that they got in a
+particular exam. If we
+
+00:05:09.540 --> 00:05:14.100
+want to deal with duplicate keys in a map
+then there's another version
+
+00:05:14.100 --> 00:05:17.330
+of the toMap method. This one takes the
+same
+
+00:05:17.330 --> 00:05:20.410
+first two parameters, the keyMapper and the
+valueMapper,
+
+00:05:20.410 --> 00:05:24.130
+but it also has a binaryOperator, which
+
+00:05:24.130 --> 00:05:27.350
+is a merge function. If we look at
+
+00:05:27.350 --> 00:05:30.510
+the way that works what we can do
+
+00:05:30.510 --> 00:05:35.190
+is we can say, OK, I've got a 
+collection of people.
+
+00:05:35.190 --> 00:05:39.360
+What I want to do is collect
+those into a map
+
+00:05:39.360 --> 00:05:43.770
+and for the keys I'm going to use
+the address
+
+00:05:43.770 --> 00:05:48.350
+of the particular person that's in the
+input stream and the value
+
+00:05:48.350 --> 00:05:52.640
+will be the name of that person.
+Obviously,
+
+00:05:52.640 --> 00:05:55.980
+I may end up with several people living
+at same address.
+
+00:05:55.980 --> 00:06:00.690
+If that's the case we'll have duplicate
+keys, because they'll be the same address,
+
+00:06:00.690 --> 00:06:03.950
+so we then use the merge function,
+
+00:06:03.950 --> 00:06:07.680
+which is defined by Lambda expression.
+And in this case
+
+00:06:07.680 --> 00:06:10.900
+what we are doing is concatenating strings
+
+00:06:10.900 --> 00:06:13.960
+and placing a comma between the names of
+the people,
+
+00:06:13.960 --> 00:06:17.770
+so that we end up with a comma separated
+value string
+
+00:06:17.770 --> 00:06:23.230
+of the people living at a particular
+address.
+
+00:06:23.230 --> 00:06:25.570
+Another thing that we can do is we can group
+
+00:06:25.570 --> 00:06:28.800
+results and there are two different
+forms of the
+
+00:06:28.800 --> 00:06:33.100
+groupingBy method. The first of these takes
+just a function
+
+00:06:33.100 --> 00:06:36.740
+ as a parameter. The idea here is that it
+uses the
+
+00:06:36.740 --> 00:06:39.800
+function to determine what the keys
+
+00:06:39.800 --> 00:06:45.140
+of the map are going to be and then
+for each of those keys
+
+00:06:45.140 --> 00:06:48.210
+it will use the elements the input stream
+
+00:06:48.210 --> 00:06:52.110
+to create list of ones which map to
+
+00:06:52.110 --> 00:06:56.500
+that particular key. The easiest way to
+understand that is using an
+
+00:06:56.500 --> 00:07:00.220
+example. what I got here is collection of
+words,
+
+00:07:00.220 --> 00:07:05.140
+so I create a stream source from
+that and pass it into groupingBy
+
+00:07:05.140 --> 00:07:09.140
+which will then use the length of those
+words
+
+00:07:09.140 --> 00:07:12.420
+as the keys for the map
+
+00:07:12.420 --> 00:07:15.600
+and each other words that matches that
+length
+
+00:07:15.600 --> 00:07:19.020
+will be added to the list which is the
+
+00:07:19.020 --> 00:07:22.960
+the value associated with that key. There's then a
+
+00:07:22.960 --> 00:07:26.930
+second form of this, which has a
+second collector,
+
+00:07:26.930 --> 00:07:30.700
+and this is one of those examples of how
+we can compose collectors
+
+00:07:30.700 --> 00:07:34.710
+and use a downstream collector. In this
+case,
+
+00:07:34.710 --> 00:07:38.200
+if we look at the example we take our stream of words
+
+00:07:38.200 --> 00:07:41.660
+and this time we're going to group them by
+length again,
+
+00:07:41.660 --> 00:07:44.990
+so the keys of the map will be the
+lengths of the
+
+00:07:44.990 --> 00:07:48.440
+words, but rather than creating a list
+
+00:07:48.440 --> 00:07:52.140
+of the words which matched that length.
+What we actually want to do
+
+00:07:52.140 --> 00:07:55.480
+is to create value, which is
+
+00:07:55.480 --> 00:07:58.590
+how many words in that collection
+
+00:07:58.590 --> 00:08:01.770
+match that length. So we use the counting
+
+00:08:01.770 --> 00:08:05.600
+method to generate a count of how many
+words
+
+00:08:05.600 --> 00:08:09.190
+will have that length and that will be
+the value associated with the
+
+00:08:09.190 --> 00:08:13.570
+the key in the map.
+
+00:08:13.570 --> 00:08:16.580
+If we want to join strings we can do
+that.
+
+00:08:16.580 --> 00:08:21.430
+There's a couple of forms of that. 
+We can use joining on its own,
+
+00:08:21.430 --> 00:08:23.500
+with no method with no parameters
+
+00:08:23.500 --> 00:08:27.570
+and that will simply concatenate the input strings
+together to form one
+
+00:08:27.570 --> 00:08:31.090
+string as a result. we can also use
+
+00:08:31.090 --> 00:08:34.440
+a delimiter and we can pass that as a string.
+
+00:08:34.440 --> 00:08:38.419
+A good example there where we can use
+the Collectors.joining
+
+00:08:38.419 --> 00:08:42.370
+with a comma and that will create a
+comma separated value list.
+
+00:08:42.370 --> 00:08:45.520
+And if we want to we can even use a more
+
+00:08:45.520 --> 00:08:48.610
+sophisticated form of that where, in addition
+to a
+
+00:08:48.610 --> 00:08:52.540
+delimiter, we can also provide a prefix
+and a suffix string
+
+00:08:52.540 --> 00:08:56.470
+which will be appended both at the beginning
+and at the end of the string
+
+00:08:56.470 --> 00:09:01.040
+prefix beginning, suffix at the end , with the
+delimiter being used
+
+00:09:01.040 --> 00:09:04.740
+in between the individual values. There are
+a range
+
+00:09:04.740 --> 00:09:07.910
+of numeric collectors and
+
+00:09:07.910 --> 00:09:11.680
+what I've done to simplify this
+particular slide is just to give you the
+
+00:09:11.680 --> 00:09:16.540
+integer versions of the collector
+methods that we can talk about,
+
+00:09:16.540 --> 00:09:20.490
+but there's also versions for both
+double and long.
+
+00:09:20.490 --> 00:09:23.830
+The first of those is to give you an average.
+
+00:09:23.830 --> 00:09:27.490
+This will generate a collector
+which will use the
+
+00:09:27.490 --> 00:09:31.050
+function you supply to convert the input
+stream
+
+00:09:31.050 --> 00:09:34.240
+into it set of integer values and then the
+
+00:09:34.240 --> 00:09:39.060
+collector that are created will average
+those results. There's a
+
+00:09:39.060 --> 00:09:43.270
+summarizing collector, we can create that
+using this method.
+
+00:09:43.270 --> 00:09:47.240
+Again this uses the function that you
+pass as a parameter
+
+00:09:47.240 --> 00:09:50.730
+to determine how to convert the input
+stream to
+
+00:09:50.730 --> 00:09:54.010
+a set of numeric values. The summary
+that you get is a
+
+00:09:54.010 --> 00:09:57.750
+count of the number elements on the
+input stream,
+
+00:09:57.750 --> 00:10:01.980
+you get a total, so a sum of the values
+that are created;
+
+00:10:01.980 --> 00:10:05.290
+you get the minimum, get the maximum, and get the
+average all
+
+00:10:05.290 --> 00:10:07.530
+together.
+
+00:10:07.530 --> 00:10:10.530
+There is a the summingInt collector,
+
+00:10:10.530 --> 00:10:13.700
+which we can generate, again using a function
+and
+
+00:10:13.700 --> 00:10:18.180
+this is really equivalent to having a
+map followed by a sum.
+
+00:10:18.180 --> 00:10:22.550
+Rather than using a collector operation
+you could use map
+
+00:10:22.550 --> 00:10:26.360
+using the function to convert into
+numeric values and then you could sum
+
+00:10:26.360 --> 00:10:27.530
+those numeric values.
+
+00:10:27.530 --> 00:10:32.380
+This is just a kind of shorthand way of doing that.
+There's two others: There's maxBy and
+
+00:10:32.380 --> 00:10:36.190
+minBy, which use comparators to
+generate
+
+00:10:36.190 --> 00:10:39.340
+a collector which will give you the
+maximum
+
+00:10:39.340 --> 00:10:43.840
+or the minimum value of the input stream
+based on how the comparator works.
+
+00:10:43.840 --> 00:10:47.310
+There are few
+
+00:10:47.310 --> 00:10:51.090
+other collectors, ways of creating
+collectors.
+
+00:10:51.090 --> 00:10:55.270
+One of those is reducing and it takes a
+binary operator to
+
+00:10:55.270 --> 00:10:58.770
+explain how the collector going to be
+created.
+
+00:10:58.770 --> 00:11:01.780
+This is really equivalent to the reduce
+
+00:11:01.780 --> 00:11:06.120
+terminal operation and of course the question is,
+why would you use this is a collector
+
+00:11:06.120 --> 00:11:07.310
+rather than using
+
+00:11:07.310 --> 00:11:12.310
+the reduce operation and essentially
+this is really if you are using a
+
+00:11:12.310 --> 00:11:13.680
+downstream collector,
+
+00:11:13.680 --> 00:11:17.160
+so if you are using a secondary collector then you
+could use this
+
+00:11:17.160 --> 00:11:20.160
+to determine how you want to do a
+particular reduction.
+
+00:11:20.160 --> 00:11:23.470
+There is partioningBy
+
+00:11:23.470 --> 00:11:26.700
+and what this will create is a collector
+
+00:11:26.700 --> 00:11:30.280
+that will generate a map. The map
+
+00:11:30.280 --> 00:11:33.780
+has two keys:true and false and then
+
+00:11:33.780 --> 00:11:37.300
+each of the values is a list of the
+
+00:11:37.300 --> 00:11:41.610
+values, which match either true or false
+based on Predicate that you get.
+
+00:11:41.610 --> 00:11:45.180
+An example of this is if we took a collection of
+
+00:11:45.180 --> 00:11:48.940
+people and we wanted to partition it
+
+00:11:48.940 --> 00:11:52.810
+so that we have two groups based on their
+gender. You could use a Predicate
+
+00:11:52.810 --> 00:11:56.610
+to test whether they're male or female
+and then
+
+00:11:56.610 --> 00:11:59.860
+the partitioningBy collector would create
+
+00:11:59.860 --> 00:12:03.010
+two list: one for true, one for false, depending on
+
+00:12:03.010 --> 00:12:05.350
+whether they're male or not.
+195
+00:12:05,350 --&gt; 00:12:08,570
+There is also a mapping function
+
+00:12:08.570 --> 00:12:11.750
+collector and what this will do is
+create
+
+00:12:11.750 --> 00:12:15.620
+a new collector which can accept
+different types of elements
+
+00:12:15.620 --> 00:12:19.040
+based on the function that you provide.
+
+00:12:19.040 --> 00:12:22.490
+Best way of explaining that is using an
+example, like
+
+00:12:22.490 --> 00:12:26.380
+what we have here. What we're doing is
+we're saying, OK we want to
+
+00:12:26.380 --> 00:12:30.050
+collect based on last names by city,
+
+00:12:30.050 --> 00:12:34.430
+ so we've got a collection of people and we
+create a stream from that name again.
+
+00:12:34.430 --> 00:12:37.750
+We collect it so that we group those people
+
+00:12:37.750 --> 00:12:41.150
+by their city but then what we
+
+00:12:41.150 --> 00:12:44.520
+want to do in terms of the actual
+collection
+
+00:12:44.520 --> 00:12:48.140
+is create a mapping based on that last
+name into a set.
+
+00:12:48.140 --> 00:12:51.350
+So you get all the people's last name
+for a particular
+
+00:12:51.350 --> 00:12:56.310
+city. To summarise section 4 then,
+
+00:12:56.310 --> 00:12:59.710
+collectors provide us with a very
+powerful way of
+
+00:12:59.710 --> 00:13:02.870
+gathering the elements of the
+input stream
+
+00:13:02.870 --> 00:13:06.210
+when we want to generate some kind of
+result where we looking,
+
+00:13:06.210 --> 00:13:09.380
+not necessarily just for a single result,
+although
+
+00:13:09.380 --> 00:13:13.890
+collectors can be used for that. What we
+can do is if we want to we can collect
+
+00:13:13.890 --> 00:13:18.740
+into collection or we can collect in
+numerical ways, that we can get averages,
+
+00:13:18.740 --> 00:13:19.660
+we can get sums 
+
+00:13:19.660 --> 00:13:23.460
+and so on. We can compose collectors,
+
+00:13:23.460 --> 00:13:26.800
+so that we can build more complex ones from
+from basic ones
+
+00:13:26.800 --> 00:13:30.510
+and if you want to then you can create
+your own collector
+
+00:13:30.510 --> 00:13:34.200
+but we haven't had time to explore how to do
+that in this particular
+
+00:13:34.200 --> 00:13:37.230
+part of the lesson and that
+
+00:13:37.230 --> 00:13:40.070
+is the end of this lesson.
+

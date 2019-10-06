@@ -1,0 +1,595 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.220 --> 00:00:06.470
+Hey there, Polycasters.
+
+00:00:06.470 --> 00:00:07.664
+Rob here.
+
+00:00:07.664 --> 00:00:09.080
+In the last episode
+of "Polycast,"
+
+00:00:09.080 --> 00:00:12.370
+I showed you how to bind to
+sub properties in your markup.
+
+00:00:12.370 --> 00:00:14.440
+But I totally forgot
+to show you how
+
+00:00:14.440 --> 00:00:17.942
+to bind to those same
+changes in your JavaScript.
+
+00:00:17.942 --> 00:00:19.400
+It's actually a
+really cool feature
+
+00:00:19.400 --> 00:00:21.250
+of Polymer called observers.
+
+00:00:21.250 --> 00:00:22.560
+So let's check those out.
+
+00:00:25.530 --> 00:00:27.970
+A declared properties
+can have an observer
+
+00:00:27.970 --> 00:00:31.190
+method that runs every
+time that property changes.
+
+00:00:31.190 --> 00:00:34.480
+And I showed how that worked
+in a few episodes prior.
+
+00:00:34.480 --> 00:00:37.080
+So if you haven't seen that,
+you can go follow this link
+
+00:00:37.080 --> 00:00:38.980
+right here to check that out.
+
+00:00:38.980 --> 00:00:41.310
+But basically, what
+I've got right here
+
+00:00:41.310 --> 00:00:47.120
+is this x-unicorn element has
+a property called sparkles
+
+00:00:47.120 --> 00:00:48.774
+and an observer
+that I've defined
+
+00:00:48.774 --> 00:00:51.315
+called sparkles change, which
+is this function down here that
+
+00:00:51.315 --> 00:00:54.820
+will run any time
+sparkles is updated.
+
+00:00:54.820 --> 00:00:57.090
+So that's the first kind
+of observer function.
+
+00:00:57.090 --> 00:00:59.970
+And it's one that a lot of
+developers are familiar with.
+
+00:00:59.970 --> 00:01:02.820
+But one that we haven't
+talked about yet,
+
+00:01:02.820 --> 00:01:04.680
+which is really
+cool, is the ability
+
+00:01:04.680 --> 00:01:06.917
+to use this observer's array.
+
+00:01:06.917 --> 00:01:09.000
+So, like the previously
+mentioned observer method,
+
+00:01:09.000 --> 00:01:11.430
+we can use this array to
+specify a handler that should
+
+00:01:11.430 --> 00:01:13.500
+run when a property changes.
+
+00:01:13.500 --> 00:01:16.370
+And you do this by adding a
+method name, which is a string,
+
+00:01:16.370 --> 00:01:17.264
+to the array.
+
+00:01:17.264 --> 00:01:18.930
+And in parentheses,
+you put the property
+
+00:01:18.930 --> 00:01:20.960
+that you want to observe.
+
+00:01:20.960 --> 00:01:24.170
+So in this case, I have
+a zombie manager element.
+
+00:01:24.170 --> 00:01:27.870
+And my properties are
+the zombies object.
+
+00:01:27.870 --> 00:01:30.980
+My observers array has
+one observer in it, which
+
+00:01:30.980 --> 00:01:33.240
+is the zombies change function.
+
+00:01:33.240 --> 00:01:35.710
+And it's looking at
+the zombies property.
+
+00:01:35.710 --> 00:01:37.310
+And anytime that
+object is updated,
+
+00:01:37.310 --> 00:01:39.230
+it's going to run this
+handler right here
+
+00:01:39.230 --> 00:01:41.660
+and get the new zombies object.
+
+00:01:41.660 --> 00:01:43.130
+But there's a lot
+more that we can
+
+00:01:43.130 --> 00:01:44.810
+do with the observers array.
+
+00:01:44.810 --> 00:01:49.660
+For instance, we can use it to
+observe element sub properties.
+
+00:01:49.660 --> 00:01:52.660
+So if I want to look
+at zombies.hunger,
+
+00:01:52.660 --> 00:01:54.924
+then I have it do that instead.
+
+00:01:54.924 --> 00:01:56.340
+And that new value
+with get passed
+
+00:01:56.340 --> 00:01:58.560
+to this hungerChanged function.
+
+00:01:58.560 --> 00:02:01.030
+What's really cool
+is, we can actually
+
+00:02:01.030 --> 00:02:04.730
+observe multiple properties
+at the same time.
+
+00:02:04.730 --> 00:02:07.820
+And what's great about that
+is, if you have a method
+
+00:02:07.820 --> 00:02:12.280
+that you want to run only when
+those properties have a value,
+
+00:02:12.280 --> 00:02:14.720
+this is a good approach to
+use because that method right
+
+00:02:14.720 --> 00:02:17.230
+there's not going to execute
+if any of these properties
+
+00:02:17.230 --> 00:02:20.990
+is undefined, or null,
+or anything like that.
+
+00:02:20.990 --> 00:02:24.057
+So if you have asynchronous
+properties that
+
+00:02:24.057 --> 00:02:26.140
+take a little while to
+initialization or something
+
+00:02:26.140 --> 00:02:28.690
+like that, rather than writing
+some of the complex logic
+
+00:02:28.690 --> 00:02:30.470
+to keep track of
+all of them, you
+
+00:02:30.470 --> 00:02:33.220
+can just use an observer to
+watch multiple properties.
+
+00:02:33.220 --> 00:02:35.080
+And when they all
+finally have a value,
+
+00:02:35.080 --> 00:02:36.550
+just kick off some function.
+
+00:02:36.550 --> 00:02:38.470
+It's a really,
+really handy trick.
+
+00:02:38.470 --> 00:02:42.610
+Let me do a quick example to
+demonstrate how observers work.
+
+00:02:42.610 --> 00:02:45.320
+I've got this element
+that I've created here.
+
+00:02:45.320 --> 00:02:46.960
+And I've really
+simplified it down,
+
+00:02:46.960 --> 00:02:48.680
+so you're only seeing
+the important parts
+
+00:02:48.680 --> 00:02:50.610
+of the definition.
+
+00:02:50.610 --> 00:02:54.610
+Up here, at the top, I've got
+an image tag, which would be,
+
+00:02:54.610 --> 00:02:56.420
+presumably, inside
+of my template.
+
+00:02:56.420 --> 00:03:00.000
+And then I've got this
+binding for Blurb right here.
+
+00:03:00.000 --> 00:03:03.810
+And that value is going to
+come from my observer function.
+
+00:03:03.810 --> 00:03:07.950
+So in my elements definition,
+I have this bio property.
+
+00:03:07.950 --> 00:03:11.410
+And that's an object,
+which defaults to this guy
+
+00:03:11.410 --> 00:03:12.150
+right down here.
+
+00:03:12.150 --> 00:03:16.056
+So it's an object with a maker
+property, which, right now, is
+
+00:03:16.056 --> 00:03:17.590
+set to Dr. Frankenstein.
+
+00:03:17.590 --> 00:03:19.730
+Any time this thing
+changes, we're
+
+00:03:19.730 --> 00:03:21.340
+going to run maker change.
+
+00:03:21.340 --> 00:03:23.530
+We're going to
+observe bio.maker.
+
+00:03:23.530 --> 00:03:27.720
+And then we'll set this .blurb
+equal to that new value.
+
+00:03:27.720 --> 00:03:29.490
+And that is going
+to go and update
+
+00:03:29.490 --> 00:03:32.090
+our binding right up there.
+
+00:03:32.090 --> 00:03:34.120
+So let's do that in practice.
+
+00:03:34.120 --> 00:03:37.510
+Over here in the dev tools,
+I've got my element rendering
+
+00:03:37.510 --> 00:03:38.247
+right here.
+
+00:03:38.247 --> 00:03:40.372
+I've already got it selected
+in the elements panel.
+
+00:03:40.372 --> 00:03:44.100
+So I can use my $0
+trick to refer to it.
+
+00:03:44.100 --> 00:03:52.160
+And I'll just say
+$0.set bio.maker to Rob.
+
+00:03:52.160 --> 00:03:54.900
+And that's going to update,
+visually, right there.
+
+00:03:54.900 --> 00:03:57.210
+Now, if you aren't familiar
+with the set method,
+
+00:03:57.210 --> 00:03:59.280
+you can check out our
+previous episode, which
+
+00:03:59.280 --> 00:04:01.880
+talked about using set
+and notify path in order
+
+00:04:01.880 --> 00:04:04.060
+to update elements
+sub properties
+
+00:04:04.060 --> 00:04:06.170
+and have those update bindings.
+
+00:04:06.170 --> 00:04:09.990
+But this is kind of
+like a useful way
+
+00:04:09.990 --> 00:04:11.150
+of working with observers.
+
+00:04:11.150 --> 00:04:14.200
+But there's actually one
+last trick that observers
+
+00:04:14.200 --> 00:04:15.600
+have up their sleeve.
+
+00:04:15.600 --> 00:04:18.170
+Let's say instead of
+just observing maker,
+
+00:04:18.170 --> 00:04:19.930
+let's say that,
+maybe, this object
+
+00:04:19.930 --> 00:04:22.530
+had like 100 sub properties.
+
+00:04:22.530 --> 00:04:26.900
+And I wanted to observe
+if any of them changed.
+
+00:04:26.900 --> 00:04:29.620
+It would be really annoying
+to have to put all of those
+
+00:04:29.620 --> 00:04:32.810
+into this one huge
+observer function.
+
+00:04:32.810 --> 00:04:35.910
+And so the last trick up the
+sleeve of the observer array
+
+00:04:35.910 --> 00:04:38.930
+is its ability to
+look at wild cards.
+
+00:04:38.930 --> 00:04:40.950
+So here I've changed
+the code a little bit.
+
+00:04:40.950 --> 00:04:42.660
+And now, instead of
+looking at bio.maker,
+
+00:04:42.660 --> 00:04:45.590
+I'm looking at bio.star.
+
+00:04:45.590 --> 00:04:48.940
+And what that's going to do
+is observe any sub property.
+
+00:04:48.940 --> 00:04:51.450
+And if these were if
+these were objects,
+
+00:04:51.450 --> 00:04:52.880
+and they had more
+sub properties,
+
+00:04:52.880 --> 00:04:54.850
+they would just
+observe all that stuff
+
+00:04:54.850 --> 00:04:56.310
+inside of these bio objects.
+
+00:04:56.310 --> 00:04:58.470
+It's a really
+powerful technique.
+
+00:04:58.470 --> 00:05:01.610
+And instead of passing
+just a value, what Polymer
+
+00:05:01.610 --> 00:05:04.290
+is going to pass to
+our handler function
+
+00:05:04.290 --> 00:05:08.080
+is going to be what is
+referred to as a change record.
+
+00:05:08.080 --> 00:05:11.370
+And a change record is sort of
+like a special Polymer object.
+
+00:05:11.370 --> 00:05:13.070
+And it has three properties.
+
+00:05:13.070 --> 00:05:15.350
+It has a path.
+
+00:05:15.350 --> 00:05:17.590
+And that is a
+string which refers
+
+00:05:17.590 --> 00:05:19.730
+to the path that changed.
+
+00:05:19.730 --> 00:05:24.570
+So if we change bio.maker, this
+path string would be bio.maker.
+
+00:05:24.570 --> 00:05:28.230
+It has a value property,
+which is the actual value that
+
+00:05:28.230 --> 00:05:28.960
+was updated.
+
+00:05:28.960 --> 00:05:31.880
+And then, finally, it
+has a base property.
+
+00:05:31.880 --> 00:05:35.220
+And the base property
+refers to the object
+
+00:05:35.220 --> 00:05:37.050
+that precedes the wild card.
+
+00:05:37.050 --> 00:05:41.360
+So if we were looking
+at bio.foo.bar.star,
+
+00:05:41.360 --> 00:05:45.520
+then the base property
+would be bio.foo.bar.
+
+00:05:45.520 --> 00:05:46.290
+OK?
+
+00:05:46.290 --> 00:05:50.180
+So what I'm doing here is,
+in my bioChanged function,
+
+00:05:50.180 --> 00:05:51.560
+I'm taking the change record.
+
+00:05:51.560 --> 00:05:52.850
+And I'm looking at the path.
+
+00:05:52.850 --> 00:05:54.900
+And if it's bio.maker,
+I'm doing one thing.
+
+00:05:54.900 --> 00:05:56.260
+I'm updating this binding.
+
+00:05:56.260 --> 00:05:59.690
+If it's bio.name, I'm updating a
+different binding, this critter
+
+00:05:59.690 --> 00:06:03.440
+binding, which is going to
+update the span right here.
+
+00:06:03.440 --> 00:06:06.710
+OK, so over in our dev
+tools, let's give it a shot.
+
+00:06:06.710 --> 00:06:08.870
+So $0 set bio.name.
+
+00:06:11.550 --> 00:06:14.860
+And we'll set that to Frank.
+
+00:06:14.860 --> 00:06:17.000
+See, that updates
+our first span.
+
+00:06:17.000 --> 00:06:18.770
+And now, let's update
+the other thing.
+
+00:06:18.770 --> 00:06:22.170
+We'll set bio.maker to Rob.
+
+00:06:22.170 --> 00:06:26.190
+And voila, that updates
+our other binding.
+
+00:06:26.190 --> 00:06:29.150
+So with observers
+and change records,
+
+00:06:29.150 --> 00:06:30.959
+we now have awesome
+tools for dealing
+
+00:06:30.959 --> 00:06:32.000
+with new data in our app.
+
+00:06:32.000 --> 00:06:34.400
+And we're actually finally
+ready to start talking
+
+00:06:34.400 --> 00:06:36.180
+about binding to arrays.
+
+00:06:36.180 --> 00:06:39.220
+But I'll save that for
+the very next episode.
+
+00:06:39.220 --> 00:06:41.590
+Now, if you've
+enjoyed this episode,
+
+00:06:41.590 --> 00:06:43.476
+consider clicking
+the Subscribe button.
+
+00:06:43.476 --> 00:06:44.850
+And if you have
+questions for us,
+
+00:06:44.850 --> 00:06:47.380
+you can ping us on a social
+network of your choosing
+
+00:06:47.380 --> 00:06:49.360
+at #askpolymer.
+
+00:06:49.360 --> 00:06:51.350
+As always, thank you
+so much for watching.
+
+00:06:51.350 --> 00:06:54.710
+And I'll see you next time.
+
+00:06:54.710 --> 00:07:00.760
+[MUSIC PLAYING]
+

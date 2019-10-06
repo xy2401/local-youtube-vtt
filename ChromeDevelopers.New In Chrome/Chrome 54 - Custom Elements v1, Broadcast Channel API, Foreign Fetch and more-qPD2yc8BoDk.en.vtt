@@ -1,0 +1,264 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.590 --> 00:00:03.920
+PETE LEPAGE: You can now create
+your own custom HTML tags
+
+00:00:03.920 --> 00:00:06.980
+and make re-usable web
+components with Custom Elements
+
+00:00:06.980 --> 00:00:08.109
+v1.
+
+00:00:08.109 --> 00:00:12.220
+It's easier to send messages
+between open windows or tabs
+
+00:00:12.220 --> 00:00:15.910
+on the same origin with
+the BroadcastChannel API.
+
+00:00:15.910 --> 00:00:18.720
+Media experiences get
+better on Android,
+
+00:00:18.720 --> 00:00:22.470
+and Foreign Fetch is now
+available as an origin trial.
+
+00:00:22.470 --> 00:00:23.560
+I'm Pete LePage.
+
+00:00:23.560 --> 00:00:26.575
+Let's dive in and see what's
+new for developers in Chrome 54.
+
+00:00:31.470 --> 00:00:36.360
+Complex user interfaces often
+require a large amount of HTML.
+
+00:00:36.360 --> 00:00:40.370
+Most languages allow developers
+to create their own components
+
+00:00:40.370 --> 00:00:42.320
+built on top of
+language primitives
+
+00:00:42.320 --> 00:00:45.640
+to mitigate some
+of this verbosity.
+
+00:00:45.640 --> 00:00:49.510
+But until now, creating
+reusable components on the web
+
+00:00:49.510 --> 00:00:51.270
+has been difficult.
+
+00:00:51.270 --> 00:00:54.950
+Custom Elements allow you to
+create your own custom HTML
+
+00:00:54.950 --> 00:00:57.770
+tags and define the
+new element's API
+
+00:00:57.770 --> 00:00:59.970
+and behavior in JavaScript.
+
+00:00:59.970 --> 00:01:00.890
+The result?
+
+00:01:00.890 --> 00:01:03.690
+A browser-native way
+to build reusable,
+
+00:01:03.690 --> 00:01:06.260
+interoperable web components.
+
+00:01:06.260 --> 00:01:09.880
+Chrome 54 provides support
+for the latest Custom Elements
+
+00:01:09.880 --> 00:01:12.300
+v1 spec and will
+continue to support
+
+00:01:12.300 --> 00:01:16.290
+the v0 spec until enough
+of you have moved to v1.
+
+00:01:16.290 --> 00:01:18.740
+Check out our primer
+on Custom Elements
+
+00:01:18.740 --> 00:01:22.870
+to see how you can use it to
+create reusable web components
+
+00:01:22.870 --> 00:01:25.700
+for your site or application.
+
+00:01:25.700 --> 00:01:28.100
+It's not uncommon
+for desktop users
+
+00:01:28.100 --> 00:01:32.170
+to have multiple windows or
+tabs open simultaneously.
+
+00:01:32.170 --> 00:01:35.220
+And some sites even
+encourage this behavior,
+
+00:01:35.220 --> 00:01:39.400
+such as web editors that open
+documents in their own tab.
+
+00:01:39.400 --> 00:01:43.270
+Communicating between these
+tabs can be difficult.
+
+00:01:43.270 --> 00:01:46.610
+The BroadcastChannel
+is a new one-to-many
+
+00:01:46.610 --> 00:01:51.290
+messaging API between windows,
+tabs, iframes, web workers,
+
+00:01:51.290 --> 00:01:53.480
+and service workers.
+
+00:01:53.480 --> 00:01:57.540
+It allows scripts to create
+established named channels
+
+00:01:57.540 --> 00:02:00.160
+to send messages
+between browsing
+
+00:02:00.160 --> 00:02:03.030
+contexts of the same origin.
+
+00:02:03.030 --> 00:02:05.490
+Media is an increasingly
+important part
+
+00:02:05.490 --> 00:02:07.370
+of the browsing experience.
+
+00:02:07.370 --> 00:02:10.080
+In addition to a
+user gesture, you
+
+00:02:10.080 --> 00:02:13.200
+can now use
+Element.requestFullScreen
+
+00:02:13.200 --> 00:02:17.320
+to trigger full screen mode
+after a screen orientation
+
+00:02:17.320 --> 00:02:18.160
+change.
+
+00:02:18.160 --> 00:02:21.510
+And it allows you to create
+richer media experiences that
+
+00:02:21.510 --> 00:02:24.790
+include rotate-to-fullscreen.
+
+00:02:24.790 --> 00:02:29.340
+Imagine if a commonly used
+origin like an API provider,
+
+00:02:29.340 --> 00:02:31.590
+web font service,
+or other service
+
+00:02:31.590 --> 00:02:35.390
+had its ability to deploy
+its own service worker.
+
+00:02:35.390 --> 00:02:37.340
+Instead of always
+going to the network,
+
+00:02:37.340 --> 00:02:40.980
+the provider could implement
+their own custom networking
+
+00:02:40.980 --> 00:02:45.120
+logic and take advantage of
+a single authoritative cache
+
+00:02:45.120 --> 00:02:47.980
+instance for storing
+its responses.
+
+00:02:47.980 --> 00:02:51.730
+Now, thanks to Foreign Fetch,
+which is available in Chrome 54
+
+00:02:51.730 --> 00:02:54.460
+as an origin trial,
+it's a reality.
+
+00:02:54.460 --> 00:02:58.370
+Check out Jeffrey's post,
+linked in the description below.
+
+00:02:58.370 --> 00:03:01.010
+These are just a few of
+the changes in Chrome 54
+
+00:03:01.010 --> 00:03:02.550
+for developers.
+
+00:03:02.550 --> 00:03:05.140
+Check the description for
+more details and links
+
+00:03:05.140 --> 00:03:08.180
+to documentation
+and specifications.
+
+00:03:08.180 --> 00:03:10.650
+And don't forget to check
+out the Chrome Dev Summit.
+
+00:03:10.650 --> 00:03:14.870
+We'll be streaming it on
+YouTube on November 11 and 10.
+
+00:03:14.870 --> 00:03:16.900
+If you want to stay
+up to date with Chrome
+
+00:03:16.900 --> 00:03:19.450
+and know what's coming,
+click that Subscribe button
+
+00:03:19.450 --> 00:03:21.570
+up there or somewhere.
+
+00:03:21.570 --> 00:03:23.400
+Anyways, I'm Pete LePage.
+
+00:03:23.400 --> 00:03:25.540
+And as soon as Chrome
+55 is released,
+
+00:03:25.540 --> 00:03:28.500
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:28.500 --> 00:03:32.150
+[MUSIC PLAYING]
+

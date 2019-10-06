@@ -1,0 +1,601 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.360
+[MUSIC PLAYING]
+
+00:00:18.810 --> 00:00:21.731
+ADDY OSMANI: So build
+processes are important.
+
+00:00:21.731 --> 00:00:23.949
+Important because when
+you want to be fast,
+
+00:00:23.949 --> 00:00:25.740
+you have to sort of
+give up the things that
+
+00:00:25.740 --> 00:00:26.837
+are slowing you down.
+
+00:00:26.837 --> 00:00:27.670
+MATT GAUNT: T-shirt.
+
+00:00:27.670 --> 00:00:28.130
+ADDY OSMANI: T-shirt.
+
+00:00:28.130 --> 00:00:29.090
+It's a T-shirt slogan.
+
+00:00:29.090 --> 00:00:30.250
+MATT GAUNT: Love it.
+
+00:00:30.250 --> 00:00:32.169
+He says wearing
+a Yeoman T-shirt.
+
+00:00:32.169 --> 00:00:33.460
+ADDY OSMANI: Product placement.
+
+00:00:33.460 --> 00:00:36.950
+MATT GAUNT: [LAUGHS] But
+you're completely right.
+
+00:00:36.950 --> 00:00:41.280
+Things like minifying your
+CSS and your JavaScript,
+
+00:00:41.280 --> 00:00:42.220
+optimizing images.
+
+00:00:42.220 --> 00:00:45.100
+Like, all of that stuff
+is really laborious
+
+00:00:45.100 --> 00:00:46.600
+if you have to do it manually.
+
+00:00:46.600 --> 00:00:48.290
+So getting it in
+your build process
+
+00:00:48.290 --> 00:00:50.940
+makes total sense,
+because just whenever you
+
+00:00:50.940 --> 00:00:53.641
+do a build of your site, it's
+just done, taken care of.
+
+00:00:53.641 --> 00:00:54.391
+ADDY OSMANI: Yeah.
+
+00:00:54.391 --> 00:01:00.030
+This sort of fits into my three
+tiers of optimization tooling.
+
+00:01:00.030 --> 00:01:01.090
+I should make a pamphlet.
+
+00:01:01.090 --> 00:01:01.870
+MATT GAUNT: I feel
+like an advert
+
+00:01:01.870 --> 00:01:03.300
+is about to start playing.
+
+00:01:03.300 --> 00:01:04.319
+That's what it feels
+like right now.
+
+00:01:04.319 --> 00:01:05.569
+ADDY OSMANI: It's life advice.
+
+00:01:05.569 --> 00:01:07.380
+See the difference?
+
+00:01:07.380 --> 00:01:07.880
+OK.
+
+00:01:07.880 --> 00:01:09.710
+So there's sort of
+a baseline of tools
+
+00:01:09.710 --> 00:01:13.080
+that everybody should
+be doing these days.
+
+00:01:13.080 --> 00:01:14.300
+Hashtag I hate.
+
+00:01:14.300 --> 00:01:15.200
+Data roaming charges.
+
+00:01:15.200 --> 00:01:18.080
+I don't want anyone shipping
+1,000 images down the line.
+
+00:01:18.080 --> 00:01:20.950
+So the baseline is you
+should be at least minifying
+
+00:01:20.950 --> 00:01:24.930
+your styles and your JavaScript,
+optimizing your images,
+
+00:01:24.930 --> 00:01:26.990
+using compression
+on the server side,
+
+00:01:26.990 --> 00:01:31.760
+using async scripts, leverage
+caching, [? weed ?] redirects.
+
+00:01:31.760 --> 00:01:33.019
+That's the baseline.
+
+00:01:33.019 --> 00:01:35.310
+Then we've got stuff that
+you and I have been exploring
+
+00:01:35.310 --> 00:01:38.510
+a lot lately, which is sort
+of get fast and stay fast,
+
+00:01:38.510 --> 00:01:41.530
+tools like things that'll help
+you in-line your critical path
+
+00:01:41.530 --> 00:01:44.920
+CSS so that you can
+improve first render.
+
+00:01:44.920 --> 00:01:48.340
+Things that will help
+you remove unused CSS.
+
+00:01:48.340 --> 00:01:50.490
+MATT GAUNT: Like, a ton
+of those things-- what
+
+00:01:50.490 --> 00:01:53.020
+I'm finding myself doing is
+I'm using the build process,
+
+00:01:53.020 --> 00:01:57.530
+like building out custom,
+little things where basically, I
+
+00:01:57.530 --> 00:01:59.370
+can still control what
+the critical path is,
+
+00:01:59.370 --> 00:02:01.650
+and the build process is
+just helping me manage it.
+
+00:02:01.650 --> 00:02:03.110
+Like, I know there are
+build process steps
+
+00:02:03.110 --> 00:02:04.850
+where it's like they'll
+do everything for you.
+
+00:02:04.850 --> 00:02:05.684
+And it's like magic.
+
+00:02:05.684 --> 00:02:07.141
+And that scares
+me, because I don't
+
+00:02:07.141 --> 00:02:09.830
+feel like I understand it enough
+to know whether those tools are
+
+00:02:09.830 --> 00:02:11.310
+doing the right thing or not.
+
+00:02:11.310 --> 00:02:13.060
+So I'm still in, like,
+the learning phase.
+
+00:02:13.060 --> 00:02:15.760
+But I'm using the build
+process just to make it easier
+
+00:02:15.760 --> 00:02:17.030
+for me to explore.
+
+00:02:17.030 --> 00:02:18.260
+So there's Web Starter Kit.
+
+00:02:18.260 --> 00:02:19.885
+There's also Polymer
+Starter Kit, which
+
+00:02:19.885 --> 00:02:21.730
+is very similar
+to Web Starter Kit
+
+00:02:21.730 --> 00:02:24.110
+except it's got extra
+plugins specific to Polymer,
+
+00:02:24.110 --> 00:02:25.690
+like Vulcanize and
+things like that.
+
+00:02:25.690 --> 00:02:29.320
+But then Yeoman is basically
+like you can just go in
+
+00:02:29.320 --> 00:02:31.880
+and it'll ask you what
+generator you want to use
+
+00:02:31.880 --> 00:02:33.630
+is what they call,
+where you can then just
+
+00:02:33.630 --> 00:02:35.220
+generate any style of project.
+
+00:02:35.220 --> 00:02:36.595
+So if you wanted
+to use something
+
+00:02:36.595 --> 00:02:39.990
+like Angular, or React,
+or whatever new hotness
+
+00:02:39.990 --> 00:02:41.831
+is out there,
+chances are there's
+
+00:02:41.831 --> 00:02:44.080
+a generator that will give
+you a build process already
+
+00:02:44.080 --> 00:02:44.990
+for those things.
+
+00:02:44.990 --> 00:02:45.280
+ADDY OSMANI: Yeah.
+
+00:02:45.280 --> 00:02:45.800
+Exactly.
+
+00:02:45.800 --> 00:02:47.341
+And like, one thing
+I find-- so we've
+
+00:02:47.341 --> 00:02:49.880
+got all of the baseline
+performance optimization
+
+00:02:49.880 --> 00:02:53.960
+is pretty much covered
+by Web Starter Kit.
+
+00:02:53.960 --> 00:02:56.160
+One thing I find a
+lot of agencies doing
+
+00:02:56.160 --> 00:02:58.610
+is that they'll use Yeoman to
+scaffold out their projects.
+
+00:02:58.610 --> 00:03:01.110
+And they'll go into Web Starter
+Kit, and they'll take a look
+
+00:03:01.110 --> 00:03:03.110
+and say, OK, well, we're
+interested in the image
+
+00:03:03.110 --> 00:03:05.720
+optimization parts or the
+script minification parts.
+
+00:03:05.720 --> 00:03:08.479
+We're just going to steal,
+like, 70% of this file and just,
+
+00:03:08.479 --> 00:03:09.770
+like, drop it into our project.
+
+00:03:09.770 --> 00:03:12.270
+And that's perfectly fine.
+
+00:03:12.270 --> 00:03:13.937
+Pick and choose what
+makes sense to you.
+
+00:03:13.937 --> 00:03:16.186
+MATT GAUNT: So the way that
+I started doing this now--
+
+00:03:16.186 --> 00:03:18.560
+and I know you kind of don't
+agree with this approach.
+
+00:03:18.560 --> 00:03:18.780
+But I--
+
+00:03:18.780 --> 00:03:19.890
+ADDY OSMANI: I'm just
+going to walk out.
+
+00:03:19.890 --> 00:03:21.640
+MATT GAUNT: Yeah, you should.
+
+00:03:21.640 --> 00:03:24.570
+So I have one Gulp file
+that, basically, you can do
+
+00:03:24.570 --> 00:03:26.740
+a thing like require-directory.
+
+00:03:26.740 --> 00:03:29.310
+And then any JavaScript
+file within that directory,
+
+00:03:29.310 --> 00:03:31.670
+it will basically
+take the Gulp tasks
+
+00:03:31.670 --> 00:03:33.432
+from those each
+individual files.
+
+00:03:33.432 --> 00:03:34.890
+And then you can
+basically use them
+
+00:03:34.890 --> 00:03:37.490
+as you would just one,
+big, long Gulp file.
+
+00:03:37.490 --> 00:03:38.990
+And the reason I'm
+doing that is you
+
+00:03:38.990 --> 00:03:42.230
+can split it out into styles,
+and scripts, and images.
+
+00:03:42.230 --> 00:03:44.230
+Like, each section will
+deal with its own thing.
+
+00:03:44.230 --> 00:03:46.354
+And then I can copy those
+files into a new project,
+
+00:03:46.354 --> 00:03:48.200
+delete any old ones
+that I don't want,
+
+00:03:48.200 --> 00:03:49.666
+and just change the directories.
+
+00:03:49.666 --> 00:03:52.510
+And it's like a really nice
+way of getting reuse out
+
+00:03:52.510 --> 00:03:55.592
+of my Gulp files, because
+before, when I had big ones,
+
+00:03:55.592 --> 00:03:57.050
+everything would
+just become messy.
+
+00:03:57.050 --> 00:04:00.200
+It'd be hard to maintain or
+understand where problems were.
+
+00:04:00.200 --> 00:04:02.100
+Whereas when I've got
+them in multiple files,
+
+00:04:02.100 --> 00:04:04.360
+everything just sort
+of becomes much easier
+
+00:04:04.360 --> 00:04:06.092
+to manage, and
+maintain, and share.
+
+00:04:06.092 --> 00:04:08.050
+ADDY OSMANI: You've been
+demoted from colleague
+
+00:04:08.050 --> 00:04:09.742
+to desk occupant.
+
+00:04:09.742 --> 00:04:11.670
+MATT GAUNT: Harsh.
+
+00:04:11.670 --> 00:04:13.880
+ADDY OSMANI: This approach
+is actually pretty legit.
+
+00:04:13.880 --> 00:04:16.380
+If you're finding that you've
+got a really, really long Gulp
+
+00:04:16.380 --> 00:04:18.399
+file, splitting them
+out totally makes sense.
+
+00:04:18.399 --> 00:04:20.732
+The reason we haven't done
+it in some of our boilerplate
+
+00:04:20.732 --> 00:04:22.336
+projects is that
+for beginners, you
+
+00:04:22.336 --> 00:04:23.710
+don't want them
+to have to, like,
+
+00:04:23.710 --> 00:04:25.070
+think about one other thing.
+
+00:04:25.070 --> 00:04:28.160
+And it also gets a little bit
+trickier to debug if you've got
+
+00:04:28.160 --> 00:04:29.830
+multiple tasks and
+different files
+
+00:04:29.830 --> 00:04:30.915
+that depend on each other.
+
+00:04:30.915 --> 00:04:33.880
+It's not a whole lot more,
+but it's just another thing
+
+00:04:33.880 --> 00:04:35.290
+you've got to think about.
+
+00:04:35.290 --> 00:04:37.580
+MATT GAUNT: Yeah.
+
+00:04:37.580 --> 00:04:40.010
+This is where I always get to
+a weird point of, like, best
+
+00:04:40.010 --> 00:04:43.620
+practice versus ease of use.
+
+00:04:43.620 --> 00:04:44.505
+ADDY OSMANI: Yeah.
+
+00:04:44.505 --> 00:04:46.755
+MATT GAUNT: And I always
+tend to go for best practice,
+
+00:04:46.755 --> 00:04:50.020
+because like, if you ever look
+at any of the native platforms,
+
+00:04:50.020 --> 00:04:52.270
+they always just say, this
+is the right way of doing
+
+00:04:52.270 --> 00:04:54.730
+something for this platform,
+or this ID, or library,
+
+00:04:54.730 --> 00:04:55.530
+or whatever.
+
+00:04:55.530 --> 00:04:57.830
+There's no middle ground
+where you could do something,
+
+00:04:57.830 --> 00:04:59.579
+because it's easier.
+
+00:04:59.579 --> 00:05:00.620
+ADDY OSMANI: No, that's--
+
+00:05:00.620 --> 00:05:02.599
+MATT GAUNT: I'm not
+saying you're wrong, but--
+
+00:05:02.599 --> 00:05:03.890
+ADDY OSMANI: It's totally fair.
+
+00:05:03.890 --> 00:05:06.910
+MATT GAUNT: I remember when we
+were-- like a little while ago,
+
+00:05:06.910 --> 00:05:12.030
+you gave me a rundown of
+one of your presentations.
+
+00:05:12.030 --> 00:05:14.740
+One of the bits was
+on build processes.
+
+00:05:14.740 --> 00:05:17.150
+And you were like, everyone
+should just use Grunt.
+
+00:05:17.150 --> 00:05:18.410
+Actually, Gulp is coming out.
+
+00:05:18.410 --> 00:05:19.659
+It's the new kid on the block.
+
+00:05:19.659 --> 00:05:20.725
+It's kind of cool.
+
+00:05:20.725 --> 00:05:22.525
+Everyone should just use Gulp.
+
+00:05:22.525 --> 00:05:24.150
+Actually, there's
+this new thing that's
+
+00:05:24.150 --> 00:05:25.610
+kind of coming out
+called Broccoli
+
+00:05:25.610 --> 00:05:27.770
+that's also a build process.
+
+00:05:27.770 --> 00:05:30.590
+Then again, [? MPM ?] scripts is
+also coming, so maybe use that.
+
+00:05:30.590 --> 00:05:31.500
+ADDY OSMANI: Yup.
+
+00:05:31.500 --> 00:05:34.041
+MATT GAUNT: And in my head, I
+realized-- this was at the time
+
+00:05:34.041 --> 00:05:37.410
+where I just learned Grunt and
+I was switching over to Gulp,
+
+00:05:37.410 --> 00:05:40.680
+because it seemed like that
+was getting used a lot.
+
+00:05:40.680 --> 00:05:44.580
+And I realized that, basically,
+all of the web tooling
+
+00:05:44.580 --> 00:05:48.460
+ecosystem is basically a "Game
+of Thrones," where the minute
+
+00:05:48.460 --> 00:05:53.130
+I fall in love with one, it's
+going to die and be replaced.
+
+00:05:53.130 --> 00:05:55.600
+So there's a bit of me that
+feels like I should just
+
+00:05:55.600 --> 00:05:58.400
+never get attached to any of my
+tools, because sooner or later,
+
+00:05:58.400 --> 00:06:03.680
+by getting attached,
+I'm almost dooming it.
+
+00:06:03.680 --> 00:06:07.030
+[MUSIC PLAYING]
+

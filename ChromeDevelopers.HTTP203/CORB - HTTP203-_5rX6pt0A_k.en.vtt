@@ -1,0 +1,903 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.580
+JAKE: I was in a
+meeting yesterday.
+
+00:00:02.580 --> 00:00:03.850
+Paul Lewis was there.
+
+00:00:03.850 --> 00:00:05.940
+He did an amazing
+mixed metaphor.
+
+00:00:05.940 --> 00:00:08.541
+Something like,
+you know, we don't
+
+00:00:08.541 --> 00:00:10.290
+want to rock the boat
+til it's in the bag.
+
+00:00:10.290 --> 00:00:12.240
+And it's like, don't
+put boats in bags.
+
+00:00:12.240 --> 00:00:13.196
+Like, I can't--
+
+00:00:13.196 --> 00:00:16.064
+[MUSIC PLAYING]
+
+00:00:19.900 --> 00:00:20.420
+SURM: So.
+
+00:00:20.420 --> 00:00:26.700
+JAKE: So the topic I am putting
+on the conveyor belt is CORB.
+
+00:00:26.700 --> 00:00:27.390
+SURM: CORB.
+
+00:00:27.390 --> 00:00:28.571
+JAKE: CORB.
+
+00:00:28.571 --> 00:00:29.070
+[LAUGHTER]
+
+00:00:29.070 --> 00:00:30.390
+This is--
+
+00:00:30.390 --> 00:00:31.940
+SURM: The Swedish chef, CORB.
+
+00:00:31.940 --> 00:00:33.240
+JAKE: CORB, CORB, CORB.
+
+00:00:33.240 --> 00:00:37.050
+This is Cross-Origin
+Read Blocking.
+
+00:00:37.050 --> 00:00:39.092
+And I always want to say
+resource, but it's read.
+
+00:00:39.092 --> 00:00:40.174
+I've got it written there.
+
+00:00:40.174 --> 00:00:42.090
+SURM: Did it used to
+be Resource Blocking,
+
+00:00:42.090 --> 00:00:43.830
+it renamed to Read Blocking?
+
+00:00:46.550 --> 00:00:48.110
+JAKE: I don't know.
+
+00:00:48.110 --> 00:00:49.730
+CORS is--
+
+00:00:49.730 --> 00:00:51.230
+BOTH: Cross-Origin Resource--
+
+00:00:51.230 --> 00:00:52.377
+JAKE: Sharing.
+
+00:00:52.377 --> 00:00:53.750
+[LAUGHTER]
+
+00:00:53.750 --> 00:00:55.960
+SURM: What is the S in CORS?
+
+00:00:55.960 --> 00:00:58.340
+JAKE: Let's say sharing.
+
+00:00:58.340 --> 00:00:58.840
+Security?
+
+00:00:58.840 --> 00:00:59.340
+No.
+
+00:00:59.340 --> 00:01:00.140
+It's not Security.
+
+00:01:00.140 --> 00:01:01.020
+It's Sharing.
+
+00:01:01.020 --> 00:01:02.170
+Let's say Sharing.
+
+00:01:02.170 --> 00:01:03.020
+It's Sharing.
+
+00:01:03.020 --> 00:01:07.550
+Now, this is a new
+behavior in the Fetch Spec
+
+00:01:07.550 --> 00:01:10.000
+that was sort of added
+by some Chrome folks.
+
+00:01:10.000 --> 00:01:13.930
+And it's kind of to do
+with Meltdown and Spectre.
+
+00:01:13.930 --> 00:01:16.076
+SURM: Oh, is that where
+we had the cool headline
+
+00:01:16.076 --> 00:01:17.450
+that because of
+mother inspector,
+
+00:01:17.450 --> 00:01:19.136
+Chrome uses more ram now?
+
+00:01:19.136 --> 00:01:19.760
+JAKE: Oh, yeah.
+
+00:01:19.760 --> 00:01:22.070
+Well it's not to do
+with this exactly.
+
+00:01:22.070 --> 00:01:23.900
+But yes, that has been
+a problem with it.
+
+00:01:23.900 --> 00:01:28.207
+But the more memory thing,
+that's more to site isolation.
+
+00:01:28.207 --> 00:01:30.290
+SURM: Oh, I thought it was
+part of site isolation.
+
+00:01:30.290 --> 00:01:30.871
+Interesting.
+
+00:01:30.871 --> 00:01:31.370
+See?
+
+00:01:31.370 --> 00:01:32.350
+I learned something.
+
+00:01:32.350 --> 00:01:34.964
+JAKE: It's sort
+of to do with it.
+
+00:01:34.964 --> 00:01:36.380
+SURM: In case that
+you don't know,
+
+00:01:36.380 --> 00:01:37.650
+I wrote an article
+on site isolation.
+
+00:01:37.650 --> 00:01:38.740
+I will link to it
+in the description.
+
+00:01:38.740 --> 00:01:39.550
+JAKE: Oh, did you?
+
+00:01:39.550 --> 00:01:40.258
+SURM: I think so.
+
+00:01:40.258 --> 00:01:42.580
+[LAUGHTER]
+
+00:01:42.580 --> 00:01:45.530
+I think I had three weeks
+of security reviews on it.
+
+00:01:45.530 --> 00:01:46.340
+Because it was--
+
+00:01:46.340 --> 00:01:46.790
+JAKE: Oh, that's right.
+
+00:01:46.790 --> 00:01:47.210
+Yes.
+
+00:01:47.210 --> 00:01:48.560
+Back in the-- yes,
+of course you did.
+
+00:01:48.560 --> 00:01:50.290
+SURM: Back in the day,
+when it was announced.
+
+00:01:50.290 --> 00:01:51.140
+JAKE: When it was-- yes.
+
+00:01:51.140 --> 00:01:51.980
+So we'll add that in.
+
+00:01:51.980 --> 00:01:52.480
+Yes.
+
+00:01:52.480 --> 00:01:53.330
+And isolation is--
+
+00:01:53.330 --> 00:01:57.380
+Chrome has been putting
+tabs in different processes
+
+00:01:57.380 --> 00:01:58.430
+since version 1.
+
+00:01:58.430 --> 00:02:00.540
+We were the first
+to do that, I think.
+
+00:02:00.540 --> 00:02:03.160
+But we didn't do
+it with IFrames.
+
+00:02:03.160 --> 00:02:04.980
+And we didn't do it--
+
+00:02:04.980 --> 00:02:06.980
+in some cases, we didn't
+do it with new Windows.
+
+00:02:06.980 --> 00:02:10.360
+Like, sometimes if
+you were clicking--
+
+00:02:10.360 --> 00:02:13.410
+If it was window.open, I
+don't think we put that in a--
+
+00:02:13.410 --> 00:02:15.830
+well, that has the opener thing.
+
+00:02:15.830 --> 00:02:18.440
+So there were some cases where
+we weren't putting these things
+
+00:02:18.440 --> 00:02:20.050
+in different processes.
+
+00:02:20.050 --> 00:02:24.090
+Meltdown Spectre came along,
+and went we've got this problem.
+
+00:02:24.090 --> 00:02:25.730
+SURM: This is an
+entry point for us.
+
+00:02:25.730 --> 00:02:26.480
+JAKE: Yes.
+
+00:02:26.480 --> 00:02:29.700
+Where memory that's in
+the same process can--
+
+00:02:29.700 --> 00:02:30.334
+SURM: Freefall!
+
+00:02:30.334 --> 00:02:32.000
+You can just read it
+if you do it right.
+
+00:02:32.000 --> 00:02:34.110
+JAKE: Yes Through a lot of
+trickery, and a lot of effort.
+
+00:02:34.110 --> 00:02:35.320
+SURM: I should probably be
+more careful about what to say
+
+00:02:35.320 --> 00:02:36.860
+about mother inspector, right?
+
+00:02:36.860 --> 00:02:37.950
+JAKE: Oh, yeah.
+
+00:02:37.950 --> 00:02:38.690
+We need to get this reviewed.
+
+00:02:38.690 --> 00:02:39.990
+SURM: Spreading more
+fear, uncertainty,
+
+00:02:39.990 --> 00:02:41.970
+and doubt about this is
+probably not the best idea.
+
+00:02:41.970 --> 00:02:44.011
+JAKE: It's a very tricky
+hack, but it's something
+
+00:02:44.011 --> 00:02:45.572
+that we need to be careful of.
+
+00:02:45.572 --> 00:02:47.030
+So we thought,
+well, oh, this thing
+
+00:02:47.030 --> 00:02:49.363
+where we are putting things
+in different tabs, different
+
+00:02:49.363 --> 00:02:50.900
+processes-- really good idea.
+
+00:02:50.900 --> 00:02:53.499
+But we just need to
+finish that work.
+
+00:02:53.499 --> 00:02:54.290
+And so we did that.
+
+00:02:54.290 --> 00:02:59.110
+And that was like OOPIFs, which
+was Out-Of-Process-IFrames.
+
+00:02:59.110 --> 00:03:00.140
+SURM: Oh, the OOPIFs!
+
+00:03:00.140 --> 00:03:00.830
+JAKE: OOPIFs.
+
+00:03:00.830 --> 00:03:02.660
+And so that was all
+part of isolation.
+
+00:03:02.660 --> 00:03:03.470
+Same with Windows.
+
+00:03:03.470 --> 00:03:05.120
+And we've done that work,
+and we've shipped it.
+
+00:03:05.120 --> 00:03:06.730
+More processes
+means more memory.
+
+00:03:06.730 --> 00:03:07.700
+Ta da!
+
+00:03:07.700 --> 00:03:11.370
+But it means more security,
+and that's more important.
+
+00:03:11.370 --> 00:03:14.840
+So that solves the problem
+of another origin's IFrame
+
+00:03:14.840 --> 00:03:18.350
+sharing a process with you and
+being able to potentially maybe
+
+00:03:18.350 --> 00:03:21.890
+getting at that data
+through Meltdown-Spectre.
+
+00:03:21.890 --> 00:03:25.610
+But we have a lot
+of APIs on the web
+
+00:03:25.610 --> 00:03:28.526
+that let you read data
+from another origin.
+
+00:03:28.526 --> 00:03:31.400
+With the other origin's cookies.
+
+00:03:31.400 --> 00:03:34.970
+And have it do
+things on your page.
+
+00:03:34.970 --> 00:03:36.320
+SURM: Script tag includes.
+
+00:03:36.320 --> 00:03:37.990
+JAKE: Script tag.
+
+00:03:37.990 --> 00:03:38.650
+SURM: Images.
+
+00:03:38.650 --> 00:03:40.370
+JAKE: Images.
+
+00:03:40.370 --> 00:03:41.820
+Video-audio.
+
+00:03:41.820 --> 00:03:42.695
+SURM: Style sheets?
+
+00:03:42.695 --> 00:03:43.150
+JAKE: Style sheets.
+
+00:03:43.150 --> 00:03:43.941
+SURM: Style sheets.
+
+00:03:43.941 --> 00:03:45.230
+JAKE: Correct.
+
+00:03:45.230 --> 00:03:45.850
+Yeah.
+
+00:03:45.850 --> 00:03:48.041
+Lots of stuff.
+
+00:03:48.041 --> 00:03:49.040
+Those are the main ones.
+
+00:03:49.040 --> 00:03:51.270
+SURM: And this is
+bypassing CORS, right?
+
+00:03:51.270 --> 00:03:53.894
+This is just like, do a request.
+
+00:03:53.894 --> 00:03:55.560
+But you can't read
+it, in terms of like,
+
+00:03:55.560 --> 00:03:56.870
+Java could read it byte by byte.
+
+00:03:56.870 --> 00:03:58.930
+But it's just going to get
+incorporated into the page, one
+
+00:03:58.930 --> 00:03:59.638
+way or the other.
+
+00:03:59.638 --> 00:04:00.970
+JAKE: Exactly.
+
+00:04:00.970 --> 00:04:04.090
+And so the danger is, if
+you have this image tag,
+
+00:04:04.090 --> 00:04:09.134
+we'll say, pointing
+at Facebook.com.
+
+00:04:09.134 --> 00:04:12.300
+It's going to load that
+data in, and it's going
+
+00:04:12.300 --> 00:04:15.150
+to have an image decode error.
+
+00:04:15.150 --> 00:04:17.459
+But that data does
+go into the process.
+
+00:04:17.459 --> 00:04:18.500
+SURM: It's in the memory.
+
+00:04:18.500 --> 00:04:19.240
+JAKE: It's in the memory.
+
+00:04:19.240 --> 00:04:20.850
+SURM: Because it had to be
+there to get [INAUDIBLE]..
+
+00:04:20.850 --> 00:04:22.500
+And then the browser can
+determine, this is actually
+
+00:04:22.500 --> 00:04:23.340
+an image, mate.
+
+00:04:23.340 --> 00:04:23.880
+JAKE: Yes.
+
+00:04:23.880 --> 00:04:24.750
+And it's the same for--
+
+00:04:24.750 --> 00:04:26.874
+I mean, the Fetch API lets
+you do no-cause fetches.
+
+00:04:26.874 --> 00:04:27.814
+So that's number one.
+
+00:04:27.814 --> 00:04:29.730
+And them same with script
+tags and everything.
+
+00:04:29.730 --> 00:04:32.400
+Even if it fails to load
+because it's the wrong type,
+
+00:04:32.400 --> 00:04:34.680
+it has still gone
+into that process.
+
+00:04:34.680 --> 00:04:39.240
+So that is what
+CORB is all about.
+
+00:04:39.240 --> 00:04:44.560
+The way it works is, if it's a
+no-cause fetch kind of origin,
+
+00:04:44.560 --> 00:04:46.090
+the data comes back.
+
+00:04:46.090 --> 00:04:49.620
+And what it does is it tries
+to determine ahead of time,
+
+00:04:49.620 --> 00:04:52.680
+before it sends the data back
+to the API, like the image tag
+
+00:04:52.680 --> 00:04:55.480
+or whatever-- it 's
+like, hang on a minute.
+
+00:04:55.480 --> 00:04:58.290
+Does this seem like
+something that you're not
+
+00:04:58.290 --> 00:04:59.640
+going to be able to use anyway?
+
+00:04:59.640 --> 00:05:01.723
+Does it seem like something
+that could potentially
+
+00:05:01.723 --> 00:05:02.930
+hold private data?
+
+00:05:02.930 --> 00:05:03.870
+SURM: OK.
+
+00:05:03.870 --> 00:05:11.880
+JAKE: And it looks at MIME types
+right now for things like--
+
+00:05:11.880 --> 00:05:14.750
+SURM: MIME types deducted
+from the file extension?
+
+00:05:14.750 --> 00:05:17.880
+JAKE: Determined from
+the content type header.
+
+00:05:17.880 --> 00:05:18.380
+SURM: Oh.
+
+00:05:18.380 --> 00:05:20.750
+So basically, it
+sends out the fetch.
+
+00:05:20.750 --> 00:05:22.460
+And gets a response
+out of process.
+
+00:05:22.460 --> 00:05:23.200
+Data analysis.
+
+00:05:23.200 --> 00:05:25.700
+And then decides whether the
+data goes into the task process
+
+00:05:25.700 --> 00:05:26.000
+or not.
+
+00:05:26.000 --> 00:05:26.583
+JAKE: Exactly.
+
+00:05:26.583 --> 00:05:34.280
+And if it's text to HTML, or if
+it is JSON, or if it is XML--
+
+00:05:34.280 --> 00:05:37.550
+except for SVG-- that's
+when it kind of goes,
+
+00:05:37.550 --> 00:05:38.780
+this looks dangerous.
+
+00:05:38.780 --> 00:05:40.700
+This looks dodgy.
+
+00:05:40.700 --> 00:05:43.242
+I'm just going to fail.
+
+00:05:43.242 --> 00:05:45.200
+And that fetch will never
+go back into process.
+
+00:05:45.200 --> 00:05:46.283
+Right now, we're relying--
+
+00:05:46.283 --> 00:05:50.810
+SURM: Even when I want
+to include an HTML file?
+
+00:05:50.810 --> 00:05:53.310
+JAKE: You can't include
+an HTML file as an image.
+
+00:05:53.310 --> 00:05:56.487
+You can't include it as scripts.
+
+00:05:56.487 --> 00:05:58.820
+These are all formats that
+are definitely going to fail.
+
+00:05:58.820 --> 00:05:59.303
+SURM: True.
+
+00:05:59.303 --> 00:05:59.786
+OK.
+
+00:05:59.786 --> 00:06:00.327
+I'm with you.
+
+00:06:00.327 --> 00:06:02.270
+JAKE: Right now,
+you need the header
+
+00:06:02.270 --> 00:06:06.112
+for strict MIME type checking.
+
+00:06:06.112 --> 00:06:07.820
+But we're going a step
+further, and we're
+
+00:06:07.820 --> 00:06:09.290
+experimenting with
+actually, rather
+
+00:06:09.290 --> 00:06:12.630
+than relying on MIME
+types, to sniff the data.
+
+00:06:12.630 --> 00:06:14.020
+So even if it's
+served as script,
+
+00:06:14.020 --> 00:06:17.990
+but it's quite clearly
+HTML, or quite clearly
+
+00:06:17.990 --> 00:06:20.090
+it's not an image,
+it's something else--
+
+00:06:20.090 --> 00:06:22.314
+we can look at it and
+make a judgment call.
+
+00:06:22.314 --> 00:06:24.730
+We don't actually want this
+data to end up in the process.
+
+00:06:24.730 --> 00:06:26.313
+We're pretty confident
+this API is not
+
+00:06:26.313 --> 00:06:28.340
+going to be able to do
+anything with it anyway.
+
+00:06:28.340 --> 00:06:30.540
+And that's how it works.
+
+00:06:30.540 --> 00:06:31.790
+There's some weird edge cases.
+
+00:06:31.790 --> 00:06:35.510
+Like, text plain is
+another one of the formats
+
+00:06:35.510 --> 00:06:38.030
+that we think could
+have user data in.
+
+00:06:38.030 --> 00:06:39.330
+Less likely, but possible.
+
+00:06:39.330 --> 00:06:41.330
+SURM: But lots of script
+tags load their scripts
+
+00:06:41.330 --> 00:06:43.370
+with text plain.
+
+00:06:43.370 --> 00:06:44.715
+JAKE: Not anymore, they don't.
+
+00:06:44.715 --> 00:06:45.340
+[LAUGHTER]
+
+00:06:45.340 --> 00:06:47.390
+Because we're blocking that.
+
+00:06:47.390 --> 00:06:50.020
+No, it turns out that's
+not happening a lot.
+
+00:06:50.020 --> 00:06:50.770
+SURM: Interesting.
+
+00:06:50.770 --> 00:06:51.630
+I thought that-- OK.
+
+00:06:51.630 --> 00:06:51.790
+Sure.
+
+00:06:51.790 --> 00:06:52.290
+Cool.
+
+00:06:55.410 --> 00:06:56.810
+JAKE: Not across Origin, anyway.
+
+00:06:56.810 --> 00:06:59.780
+But one API that does
+receive a lot of text plain--
+
+00:06:59.780 --> 00:07:02.620
+can you guess which one
+receives a lot of text plain?
+
+00:07:02.620 --> 00:07:03.420
+SURM: Style sheets?
+
+00:07:03.420 --> 00:07:06.451
+JAKE: It is video.
+
+00:07:06.451 --> 00:07:06.950
+Yeah.
+
+00:07:06.950 --> 00:07:10.143
+There is a load of
+video data out there
+
+00:07:10.143 --> 00:07:12.730
+that is served as text
+plain for no good reason.
+
+00:07:12.730 --> 00:07:14.040
+SURM: That is very confusing.
+
+00:07:14.040 --> 00:07:16.081
+JAKE: So there's had to
+be an exception for that.
+
+00:07:16.081 --> 00:07:18.530
+Like, if the response
+is a range response
+
+00:07:18.530 --> 00:07:21.770
+206, then if it's
+text plain, fine.
+
+00:07:21.770 --> 00:07:22.271
+Whatever.
+
+00:07:22.271 --> 00:07:22.895
+SURM: Oh, look.
+
+00:07:22.895 --> 00:07:24.050
+It's cross-origin video.
+
+00:07:24.050 --> 00:07:25.350
+That sounds familiar.
+
+00:07:25.350 --> 00:07:25.850
+JAKE: Right.
+
+00:07:25.850 --> 00:07:26.350
+Yes.
+
+00:07:26.350 --> 00:07:27.990
+You thought about
+that before as well.
+
+00:07:27.990 --> 00:07:29.090
+So, yeah.
+
+00:07:29.090 --> 00:07:30.846
+That's CORB.
+
+00:07:30.846 --> 00:07:32.347
+People shouldn't
+see any difference.
+
+00:07:32.347 --> 00:07:34.012
+SURM: I was going to
+say, it's basically
+
+00:07:34.012 --> 00:07:35.390
+a no-op for most people.
+
+00:07:35.390 --> 00:07:39.120
+Unless you want to opt in
+with the MIME type checking
+
+00:07:39.120 --> 00:07:39.901
+to make it better?
+
+00:07:39.901 --> 00:07:40.400
+JAKE: Yes.
+
+00:07:40.400 --> 00:07:43.070
+And that will protect
+your data more against--
+
+00:07:43.070 --> 00:07:44.492
+SURM: Or your users' data.
+
+00:07:44.492 --> 00:07:45.200
+JAKE: Absolutely.
+
+00:07:45.200 --> 00:07:47.360
+Your users' data.
+
+00:07:47.360 --> 00:07:50.150
+And you might see
+failures in cases
+
+00:07:50.150 --> 00:07:53.630
+where you maybe are relying on
+this text plain thing to be--
+
+00:07:53.630 --> 00:07:55.070
+SURM: I mean, in
+the end, you want
+
+00:07:55.070 --> 00:07:57.870
+to make sure your content
+type pairs are correct anyway.
+
+00:07:57.870 --> 00:07:58.370
+JAKE: Yes.
+
+00:07:58.370 --> 00:08:01.675
+And we've a judgement
+call that it's so
+
+00:08:01.675 --> 00:08:03.050
+SURM: The percentage
+of break ins
+
+00:08:03.050 --> 00:08:05.510
+is low enough for us
+to take that damage.
+
+00:08:05.510 --> 00:08:07.550
+JAKE: And the
+benefit of a security
+
+00:08:07.550 --> 00:08:10.320
+upgrade from
+Meltdown-Spectre is worth it.
+
+00:08:10.320 --> 00:08:11.210
+So that's CORB.
+
+00:08:11.210 --> 00:08:12.290
+[MUSIC PLAYING]
+
+00:08:12.290 --> 00:08:14.690
+SURM: (SINGING) Cut my
+podcast into pieces!
+
+00:08:14.690 --> 00:08:17.190
+[LAUGHTER]
+
+00:08:17.190 --> 00:08:19.920
+JAKE: (SINGING) Cut
+my life into pizzas.
+
+00:08:19.920 --> 00:08:21.600
+This is my second course.
+
+00:08:21.600 --> 00:08:23.150
+Right.
+

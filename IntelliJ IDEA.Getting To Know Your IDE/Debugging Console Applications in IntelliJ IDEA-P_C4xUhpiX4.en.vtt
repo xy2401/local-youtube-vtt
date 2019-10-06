@@ -1,0 +1,624 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.570 --> 00:00:05.150 align:start position:0%
+ 
+debugging<00:00:03.570><c> Java</c><00:00:03.929><c> and</c><00:00:04.290><c> other</c><00:00:04.410><c> JVM</c><00:00:04.950><c> based</c>
+
+00:00:05.150 --> 00:00:05.160 align:start position:0%
+debugging Java and other JVM based
+ 
+
+00:00:05.160 --> 00:00:08.030 align:start position:0%
+debugging Java and other JVM based
+languages<00:00:05.730><c> on</c><00:00:05.940><c> IntelliJ</c><00:00:06.450><c> IDEA</c><00:00:06.870><c> is</c><00:00:07.080><c> simple</c><00:00:07.859><c> and</c>
+
+00:00:08.030 --> 00:00:08.040 align:start position:0%
+languages on IntelliJ IDEA is simple and
+ 
+
+00:00:08.040 --> 00:00:09.650 align:start position:0%
+languages on IntelliJ IDEA is simple and
+straightforward<00:00:08.430><c> with</c><00:00:09.210><c> console</c>
+
+00:00:09.650 --> 00:00:09.660 align:start position:0%
+straightforward with console
+ 
+
+00:00:09.660 --> 00:00:11.360 align:start position:0%
+straightforward with console
+applications<00:00:10.320><c> this</c><00:00:10.559><c> is</c><00:00:10.620><c> simply</c><00:00:11.009><c> a</c><00:00:11.040><c> matter</c><00:00:11.219><c> of</c>
+
+00:00:11.360 --> 00:00:11.370 align:start position:0%
+applications this is simply a matter of
+ 
+
+00:00:11.370 --> 00:00:14.539 align:start position:0%
+applications this is simply a matter of
+adding<00:00:11.879><c> a</c><00:00:12.000><c> new</c><00:00:12.330><c> run</c><00:00:12.509><c> configuration</c><00:00:13.349><c> with</c><00:00:14.339><c> your</c>
+
+00:00:14.539 --> 00:00:14.549 align:start position:0%
+adding a new run configuration with your
+ 
+
+00:00:14.549 --> 00:00:17.600 align:start position:0%
+adding a new run configuration with your
+main<00:00:14.730><c> class</c><00:00:15.089><c> any</c><00:00:15.509><c> VM</c><00:00:16.350><c> options</c><00:00:16.860><c> and</c><00:00:17.130><c> program</c>
+
+00:00:17.600 --> 00:00:17.610 align:start position:0%
+main class any VM options and program
+ 
+
+00:00:17.610 --> 00:00:19.600 align:start position:0%
+main class any VM options and program
+arguments<00:00:18.150><c> that</c><00:00:18.330><c> you'd</c><00:00:18.510><c> like</c><00:00:18.630><c> to</c><00:00:18.780><c> use</c><00:00:19.080><c> and</c>
+
+00:00:19.600 --> 00:00:19.610 align:start position:0%
+arguments that you'd like to use and
+ 
+
+00:00:19.610 --> 00:00:22.760 align:start position:0%
+arguments that you'd like to use and
+then<00:00:20.610><c> clicking</c><00:00:20.820><c> debug</c><00:00:21.420><c> in</c><00:00:21.660><c> your</c><00:00:21.960><c> run</c><00:00:22.200><c> actions</c>
+
+00:00:22.760 --> 00:00:22.770 align:start position:0%
+then clicking debug in your run actions
+ 
+
+00:00:22.770 --> 00:00:25.280 align:start position:0%
+then clicking debug in your run actions
+toolbar<00:00:23.390><c> you</c><00:00:24.390><c> can</c><00:00:24.540><c> also</c><00:00:24.660><c> kick</c><00:00:24.990><c> off</c><00:00:25.140><c> the</c>
+
+00:00:25.280 --> 00:00:25.290 align:start position:0%
+toolbar you can also kick off the
+ 
+
+00:00:25.290 --> 00:00:27.170 align:start position:0%
+toolbar you can also kick off the
+debugger<00:00:25.560><c> from</c><00:00:25.890><c> the</c><00:00:25.980><c> main</c><00:00:26.220><c> entry</c><00:00:26.640><c> point</c><00:00:26.910><c> for</c>
+
+00:00:27.170 --> 00:00:27.180 align:start position:0%
+debugger from the main entry point for
+ 
+
+00:00:27.180 --> 00:00:29.090 align:start position:0%
+debugger from the main entry point for
+your<00:00:27.270><c> application</c><00:00:27.900><c> by</c><00:00:28.140><c> clicking</c><00:00:28.320><c> on</c><00:00:28.620><c> or</c>
+
+00:00:29.090 --> 00:00:29.100 align:start position:0%
+your application by clicking on or
+ 
+
+00:00:29.100 --> 00:00:32.389 align:start position:0%
+your application by clicking on or
+inside<00:00:29.940><c> that</c><00:00:30.210><c> method</c><00:00:30.420><c> and</c><00:00:30.860><c> selecting</c><00:00:31.860><c> debug</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+inside that method and selecting debug
+ 
+
+00:00:32.399 --> 00:00:33.610 align:start position:0%
+inside that method and selecting debug
+which<00:00:32.940><c> will</c><00:00:33.090><c> launch</c><00:00:33.329><c> your</c><00:00:33.450><c> application</c>
+
+00:00:33.610 --> 00:00:33.620 align:start position:0%
+which will launch your application
+ 
+
+00:00:33.620 --> 00:00:36.230 align:start position:0%
+which will launch your application
+attach<00:00:34.620><c> an</c><00:00:34.860><c> instance</c><00:00:35.250><c> and</c><00:00:35.460><c> wait</c><00:00:35.880><c> for</c><00:00:36.090><c> it</c><00:00:36.180><c> to</c>
+
+00:00:36.230 --> 00:00:36.240 align:start position:0%
+attach an instance and wait for it to
+ 
+
+00:00:36.240 --> 00:00:38.660 align:start position:0%
+attach an instance and wait for it to
+hit<00:00:36.570><c> the</c><00:00:36.810><c> first</c><00:00:37.290><c> breakpoint</c><00:00:37.650><c> and</c><00:00:38.190><c> you</c><00:00:38.370><c> can</c><00:00:38.490><c> see</c>
+
+00:00:38.660 --> 00:00:38.670 align:start position:0%
+hit the first breakpoint and you can see
+ 
+
+00:00:38.670 --> 00:00:40.250 align:start position:0%
+hit the first breakpoint and you can see
+here<00:00:38.850><c> that</c><00:00:38.970><c> I've</c><00:00:39.090><c> set</c><00:00:39.360><c> this</c><00:00:39.540><c> breakpoint</c><00:00:39.780><c> up</c>
+
+00:00:40.250 --> 00:00:40.260 align:start position:0%
+here that I've set this breakpoint up
+ 
+
+00:00:40.260 --> 00:00:42.560 align:start position:0%
+here that I've set this breakpoint up
+with<00:00:40.890><c> a</c><00:00:40.920><c> condition</c><00:00:41.490><c> and</c><00:00:41.820><c> this</c><00:00:42.030><c> says</c><00:00:42.240><c> whenever</c>
+
+00:00:42.560 --> 00:00:42.570 align:start position:0%
+with a condition and this says whenever
+ 
+
+00:00:42.570 --> 00:00:46.760 align:start position:0%
+with a condition and this says whenever
+this<00:00:42.720><c> variable</c><00:00:43.320><c> inside</c><00:00:43.770><c> my</c><00:00:43.980><c> loop</c><00:00:44.310><c> is</c><00:00:44.840><c> 3</c><00:00:45.840><c> then</c>
+
+00:00:46.760 --> 00:00:46.770 align:start position:0%
+this variable inside my loop is 3 then
+ 
+
+00:00:46.770 --> 00:00:49.130 align:start position:0%
+this variable inside my loop is 3 then
+I'll<00:00:46.890><c> stop</c><00:00:47.220><c> the</c><00:00:47.400><c> world</c><00:00:47.840><c> you</c><00:00:48.840><c> can</c><00:00:48.989><c> also</c>
+
+00:00:49.130 --> 00:00:49.140 align:start position:0%
+I'll stop the world you can also
+ 
+
+00:00:49.140 --> 00:00:51.410 align:start position:0%
+I'll stop the world you can also
+configure<00:00:49.530><c> additional</c><00:00:49.920><c> options</c><00:00:50.420><c> for</c>
+
+00:00:51.410 --> 00:00:51.420 align:start position:0%
+configure additional options for
+ 
+
+00:00:51.420 --> 00:00:53.389 align:start position:0%
+configure additional options for
+conditional<00:00:51.900><c> breakpoints</c><00:00:52.530><c> by</c><00:00:52.770><c> clicking</c><00:00:53.160><c> more</c>
+
+00:00:53.389 --> 00:00:53.399 align:start position:0%
+conditional breakpoints by clicking more
+ 
+
+00:00:53.399 --> 00:00:55.550 align:start position:0%
+conditional breakpoints by clicking more
+and<00:00:53.730><c> you</c><00:00:54.030><c> can</c><00:00:54.180><c> tell</c><00:00:54.329><c> it</c><00:00:54.450><c> to</c><00:00:54.540><c> log</c><00:00:54.750><c> any</c><00:00:54.989><c> messages</c>
+
+00:00:55.550 --> 00:00:55.560 align:start position:0%
+and you can tell it to log any messages
+ 
+
+00:00:55.560 --> 00:00:58.100 align:start position:0%
+and you can tell it to log any messages
+to<00:00:55.860><c> the</c><00:00:55.980><c> console</c><00:00:56.899><c> evaluate</c><00:00:57.899><c> an</c><00:00:57.989><c> expression</c>
+
+00:00:58.100 --> 00:00:58.110 align:start position:0%
+to the console evaluate an expression
+ 
+
+00:00:58.110 --> 00:01:01.250 align:start position:0%
+to the console evaluate an expression
+and<00:00:59.000><c> remove</c><00:01:00.000><c> the</c><00:01:00.149><c> breakpoint</c><00:01:00.600><c> once</c><00:01:00.899><c> it's</c><00:01:01.079><c> been</c>
+
+00:01:01.250 --> 00:01:01.260 align:start position:0%
+and remove the breakpoint once it's been
+ 
+
+00:01:01.260 --> 00:01:03.350 align:start position:0%
+and remove the breakpoint once it's been
+hit<00:01:01.500><c> we'll</c><00:01:02.309><c> also</c><00:01:02.460><c> be</c><00:01:02.700><c> able</c><00:01:02.730><c> to</c><00:01:02.910><c> set</c><00:01:03.090><c> up</c><00:01:03.180><c> more</c>
+
+00:01:03.350 --> 00:01:03.360 align:start position:0%
+hit we'll also be able to set up more
+ 
+
+00:01:03.360 --> 00:01:05.240 align:start position:0%
+hit we'll also be able to set up more
+elaborate<00:01:03.899><c> scenarios</c><00:01:04.049><c> like</c><00:01:04.559><c> chaining</c>
+
+00:01:05.240 --> 00:01:05.250 align:start position:0%
+elaborate scenarios like chaining
+ 
+
+00:01:05.250 --> 00:01:07.429 align:start position:0%
+elaborate scenarios like chaining
+conditional<00:01:05.790><c> breakpoints</c><00:01:06.509><c> so</c><00:01:07.139><c> that</c><00:01:07.289><c> they're</c>
+
+00:01:07.429 --> 00:01:07.439 align:start position:0%
+conditional breakpoints so that they're
+ 
+
+00:01:07.439 --> 00:01:09.499 align:start position:0%
+conditional breakpoints so that they're
+disabled<00:01:07.979><c> until</c><00:01:08.130><c> some</c><00:01:08.549><c> other</c><00:01:08.579><c> breakpoint</c><00:01:09.299><c> is</c>
+
+00:01:09.499 --> 00:01:09.509 align:start position:0%
+disabled until some other breakpoint is
+ 
+
+00:01:09.509 --> 00:01:12.260 align:start position:0%
+disabled until some other breakpoint is
+hit<00:01:09.619><c> we</c><00:01:10.619><c> can</c><00:01:10.770><c> also</c><00:01:10.889><c> specify</c><00:01:11.069><c> certain</c><00:01:11.729><c> filters</c>
+
+00:01:12.260 --> 00:01:12.270 align:start position:0%
+hit we can also specify certain filters
+ 
+
+00:01:12.270 --> 00:01:14.719 align:start position:0%
+hit we can also specify certain filters
+for<00:01:12.749><c> this</c><00:01:12.960><c> breakpoint</c><00:01:13.280><c> so</c><00:01:14.280><c> if</c><00:01:14.340><c> we</c><00:01:14.429><c> give</c><00:01:14.579><c> it</c><00:01:14.670><c> an</c>
+
+00:01:14.719 --> 00:01:14.729 align:start position:0%
+for this breakpoint so if we give it an
+ 
+
+00:01:14.729 --> 00:01:16.639 align:start position:0%
+for this breakpoint so if we give it an
+instance<00:01:15.179><c> filter</c><00:01:15.539><c> and</c><00:01:16.109><c> the</c><00:01:16.200><c> debugger</c><00:01:16.469><c> will</c>
+
+00:01:16.639 --> 00:01:16.649 align:start position:0%
+instance filter and the debugger will
+ 
+
+00:01:16.649 --> 00:01:19.669 align:start position:0%
+instance filter and the debugger will
+only<00:01:16.859><c> stop</c><00:01:17.429><c> at</c><00:01:17.789><c> instances</c><00:01:18.450><c> of</c><00:01:18.869><c> this</c><00:01:19.289><c> class</c>
+
+00:01:19.669 --> 00:01:19.679 align:start position:0%
+only stop at instances of this class
+ 
+
+00:01:19.679 --> 00:01:24.559 align:start position:0%
+only stop at instances of this class
+with<00:01:20.490><c> a</c><00:01:20.520><c> matching</c><00:01:20.789><c> instance</c><00:01:21.420><c> ID</c><00:01:22.520><c> if</c><00:01:23.569><c> the</c>
+
+00:01:24.559 --> 00:01:24.569 align:start position:0%
+with a matching instance ID if the
+ 
+
+00:01:24.569 --> 00:01:27.050 align:start position:0%
+with a matching instance ID if the
+breakpoint<00:01:24.990><c> is</c><00:01:25.109><c> located</c><00:01:25.709><c> inside</c><00:01:25.920><c> an</c><00:01:26.459><c> abstract</c>
+
+00:01:27.050 --> 00:01:27.060 align:start position:0%
+breakpoint is located inside an abstract
+ 
+
+00:01:27.060 --> 00:01:29.569 align:start position:0%
+breakpoint is located inside an abstract
+class<00:01:27.299><c> or</c><00:01:28.109><c> default</c><00:01:28.709><c> method</c><00:01:29.130><c> then</c><00:01:29.249><c> we</c><00:01:29.280><c> can</c><00:01:29.459><c> give</c>
+
+00:01:29.569 --> 00:01:29.579 align:start position:0%
+class or default method then we can give
+ 
+
+00:01:29.579 --> 00:01:32.779 align:start position:0%
+class or default method then we can give
+it<00:01:29.670><c> a</c><00:01:29.729><c> class</c><00:01:30.030><c> filter</c><00:01:30.529><c> which</c><00:01:31.529><c> will</c><00:01:31.740><c> stop</c><00:01:32.100><c> your</c>
+
+00:01:32.779 --> 00:01:32.789 align:start position:0%
+it a class filter which will stop your
+ 
+
+00:01:32.789 --> 00:01:35.090 align:start position:0%
+it a class filter which will stop your
+programs<00:01:33.299><c> runtime</c><00:01:33.959><c> whenever</c><00:01:34.619><c> it</c><00:01:34.709><c> happens</c><00:01:34.979><c> to</c>
+
+00:01:35.090 --> 00:01:35.100 align:start position:0%
+programs runtime whenever it happens to
+ 
+
+00:01:35.100 --> 00:01:39.019 align:start position:0%
+programs runtime whenever it happens to
+be<00:01:35.130><c> inside</c><00:01:35.490><c> concrete</c><00:01:36.090><c> subclasses</c><00:01:36.689><c> or</c><00:01:37.880><c> sets</c><00:01:38.880><c> of</c>
+
+00:01:39.019 --> 00:01:39.029 align:start position:0%
+be inside concrete subclasses or sets of
+ 
+
+00:01:39.029 --> 00:01:42.889 align:start position:0%
+be inside concrete subclasses or sets of
+those<00:01:40.009><c> inside</c><00:01:41.009><c> your</c><00:01:41.159><c> project</c><00:01:41.609><c> and</c><00:01:41.819><c> we</c><00:01:42.779><c> can</c>
+
+00:01:42.889 --> 00:01:42.899 align:start position:0%
+those inside your project and we can
+ 
+
+00:01:42.899 --> 00:01:47.139 align:start position:0%
+those inside your project and we can
+also<00:01:43.020><c> exclude</c><00:01:43.319><c> certain</c><00:01:44.039><c> classes</c><00:01:44.490><c> as</c><00:01:44.700><c> well</c>
+
+00:01:47.139 --> 00:01:47.149 align:start position:0%
+also exclude certain classes as well
+ 
+
+00:01:47.149 --> 00:01:50.089 align:start position:0%
+also exclude certain classes as well
+finally<00:01:48.149><c> the</c><00:01:48.689><c> pass</c><00:01:48.929><c> count</c><00:01:49.289><c> filter</c><00:01:49.679><c> will</c><00:01:49.889><c> allow</c>
+
+00:01:50.089 --> 00:01:50.099 align:start position:0%
+finally the pass count filter will allow
+ 
+
+00:01:50.099 --> 00:01:52.370 align:start position:0%
+finally the pass count filter will allow
+you<00:01:50.159><c> to</c><00:01:50.310><c> tell</c><00:01:50.670><c> the</c><00:01:50.849><c> debugger</c><00:01:51.179><c> to</c><00:01:51.779><c> skip</c><00:01:52.139><c> the</c>
+
+00:01:52.370 --> 00:01:52.380 align:start position:0%
+you to tell the debugger to skip the
+ 
+
+00:01:52.380 --> 00:01:56.859 align:start position:0%
+you to tell the debugger to skip the
+first<00:01:52.740><c> n</c><00:01:53.479><c> times</c><00:01:54.479><c> this</c><00:01:55.289><c> breakpoint</c><00:01:55.590><c> is</c><00:01:56.099><c> hit</c>
+
+00:01:56.859 --> 00:01:56.869 align:start position:0%
+first n times this breakpoint is hit
+ 
+
+00:01:56.869 --> 00:01:59.480 align:start position:0%
+first n times this breakpoint is hit
+this<00:01:57.869><c> is</c><00:01:58.049><c> helpful</c><00:01:58.469><c> if</c><00:01:58.859><c> you</c><00:01:59.039><c> don't</c><00:01:59.249><c> have</c><00:01:59.369><c> any</c>
+
+00:01:59.480 --> 00:01:59.490 align:start position:0%
+this is helpful if you don't have any
+ 
+
+00:01:59.490 --> 00:02:01.940 align:start position:0%
+this is helpful if you don't have any
+other<00:01:59.609><c> landmarks</c><00:02:00.329><c> inside</c><00:02:00.929><c> your</c><00:02:01.169><c> local</c><00:02:01.590><c> scope</c>
+
+00:02:01.940 --> 00:02:01.950 align:start position:0%
+other landmarks inside your local scope
+ 
+
+00:02:01.950 --> 00:02:04.599 align:start position:0%
+other landmarks inside your local scope
+to<00:02:02.700><c> feed</c><00:02:02.939><c> into</c><00:02:03.149><c> the</c><00:02:03.389><c> conditional</c><00:02:03.869><c> breakpoint</c>
+
+00:02:04.599 --> 00:02:04.609 align:start position:0%
+to feed into the conditional breakpoint
+ 
+
+00:02:04.609 --> 00:02:06.949 align:start position:0%
+to feed into the conditional breakpoint
+when<00:02:05.609><c> you're</c><00:02:05.759><c> debugging</c><00:02:05.880><c> there</c><00:02:06.539><c> are</c><00:02:06.659><c> certain</c>
+
+00:02:06.949 --> 00:02:06.959 align:start position:0%
+when you're debugging there are certain
+ 
+
+00:02:06.959 --> 00:02:08.930 align:start position:0%
+when you're debugging there are certain
+actions<00:02:07.109><c> in</c><00:02:07.619><c> the</c><00:02:07.709><c> debug</c><00:02:08.009><c> tool</c><00:02:08.340><c> window</c><00:02:08.700><c> that</c>
+
+00:02:08.930 --> 00:02:08.940 align:start position:0%
+actions in the debug tool window that
+ 
+
+00:02:08.940 --> 00:02:11.300 align:start position:0%
+actions in the debug tool window that
+you<00:02:09.030><c> should</c><00:02:09.240><c> be</c><00:02:09.360><c> aware</c><00:02:09.569><c> of</c><00:02:09.769><c> such</c><00:02:10.769><c> as</c><00:02:10.920><c> the</c><00:02:11.069><c> step</c>
+
+00:02:11.300 --> 00:02:11.310 align:start position:0%
+you should be aware of such as the step
+ 
+
+00:02:11.310 --> 00:02:15.020 align:start position:0%
+you should be aware of such as the step
+actions<00:02:12.019><c> you</c><00:02:13.019><c> can</c><00:02:13.170><c> step</c><00:02:13.470><c> over</c><00:02:13.650><c> a</c><00:02:14.159><c> single</c><00:02:14.700><c> line</c>
+
+00:02:15.020 --> 00:02:15.030 align:start position:0%
+actions you can step over a single line
+ 
+
+00:02:15.030 --> 00:02:15.830 align:start position:0%
+actions you can step over a single line
+in<00:02:15.180><c> your</c><00:02:15.269><c> code</c>
+
+00:02:15.830 --> 00:02:15.840 align:start position:0%
+in your code
+ 
+
+00:02:15.840 --> 00:02:21.140 align:start position:0%
+in your code
+by<00:02:16.440><c> pressing</c><00:02:16.709><c> step</c><00:02:17.670><c> over</c><00:02:18.030><c> or</c><00:02:18.150><c> f8</c><00:02:19.730><c> you</c><00:02:20.730><c> can</c><00:02:20.880><c> step</c>
+
+00:02:21.140 --> 00:02:21.150 align:start position:0%
+by pressing step over or f8 you can step
+ 
+
+00:02:21.150 --> 00:02:22.850 align:start position:0%
+by pressing step over or f8 you can step
+into<00:02:21.540><c> another</c><00:02:21.630><c> stack</c><00:02:22.050><c> frame</c><00:02:22.080><c> by</c><00:02:22.500><c> pressing</c>
+
+00:02:22.850 --> 00:02:22.860 align:start position:0%
+into another stack frame by pressing
+ 
+
+00:02:22.860 --> 00:02:24.530 align:start position:0%
+into another stack frame by pressing
+step<00:02:23.160><c> into</c><00:02:23.670><c> which</c><00:02:23.910><c> will</c><00:02:24.060><c> take</c><00:02:24.180><c> you</c><00:02:24.300><c> to</c><00:02:24.420><c> the</c>
+
+00:02:24.530 --> 00:02:24.540 align:start position:0%
+step into which will take you to the
+ 
+
+00:02:24.540 --> 00:02:27.380 align:start position:0%
+step into which will take you to the
+first<00:02:24.840><c> call</c><00:02:25.260><c> on</c><00:02:25.290><c> that</c><00:02:25.590><c> line</c><00:02:25.890><c> and</c><00:02:26.190><c> then</c><00:02:27.000><c> step</c>
+
+00:02:27.380 --> 00:02:27.390 align:start position:0%
+first call on that line and then step
+ 
+
+00:02:27.390 --> 00:02:32.150 align:start position:0%
+first call on that line and then step
+back<00:02:27.920><c> by</c><00:02:28.920><c> pressing</c><00:02:29.150><c> step</c><00:02:30.150><c> out</c><00:02:30.980><c> if</c><00:02:31.980><c> you</c>
+
+00:02:32.150 --> 00:02:32.160 align:start position:0%
+back by pressing step out if you
+ 
+
+00:02:32.160 --> 00:02:33.650 align:start position:0%
+back by pressing step out if you
+navigate<00:02:32.340><c> to</c><00:02:32.670><c> another</c><00:02:32.760><c> place</c><00:02:33.120><c> inside</c><00:02:33.480><c> your</c>
+
+00:02:33.650 --> 00:02:33.660 align:start position:0%
+navigate to another place inside your
+ 
+
+00:02:33.660 --> 00:02:35.870 align:start position:0%
+navigate to another place inside your
+project<00:02:33.870><c> or</c><00:02:34.319><c> otherwise</c><00:02:34.620><c> lose</c><00:02:34.980><c> your</c><00:02:35.190><c> place</c><00:02:35.400><c> you</c>
+
+00:02:35.870 --> 00:02:35.880 align:start position:0%
+project or otherwise lose your place you
+ 
+
+00:02:35.880 --> 00:02:37.160 align:start position:0%
+project or otherwise lose your place you
+can<00:02:35.910><c> always</c><00:02:36.090><c> return</c><00:02:36.390><c> to</c><00:02:36.630><c> the</c><00:02:36.840><c> current</c>
+
+00:02:37.160 --> 00:02:37.170 align:start position:0%
+can always return to the current
+ 
+
+00:02:37.170 --> 00:02:39.620 align:start position:0%
+can always return to the current
+execution<00:02:37.800><c> point</c><00:02:38.010><c> by</c><00:02:38.790><c> pressing</c><00:02:39.000><c> show</c>
+
+00:02:39.620 --> 00:02:39.630 align:start position:0%
+execution point by pressing show
+ 
+
+00:02:39.630 --> 00:02:42.259 align:start position:0%
+execution point by pressing show
+execution<00:02:40.410><c> point</c><00:02:40.650><c> finally</c><00:02:41.640><c> if</c><00:02:41.910><c> you'd</c><00:02:42.030><c> like</c><00:02:42.120><c> to</c>
+
+00:02:42.259 --> 00:02:42.269 align:start position:0%
+execution point finally if you'd like to
+ 
+
+00:02:42.269 --> 00:02:43.729 align:start position:0%
+execution point finally if you'd like to
+run<00:02:42.480><c> the</c><00:02:42.630><c> debugger</c><00:02:42.780><c> to</c><00:02:43.200><c> a</c><00:02:43.230><c> particular</c>
+
+00:02:43.729 --> 00:02:43.739 align:start position:0%
+run the debugger to a particular
+ 
+
+00:02:43.739 --> 00:02:46.759 align:start position:0%
+run the debugger to a particular
+location<00:02:44.220><c> inside</c><00:02:45.120><c> your</c><00:02:45.480><c> program</c><00:02:45.690><c> but</c><00:02:46.620><c> you</c>
+
+00:02:46.759 --> 00:02:46.769 align:start position:0%
+location inside your program but you
+ 
+
+00:02:46.769 --> 00:02:48.350 align:start position:0%
+location inside your program but you
+don't<00:02:47.069><c> necessarily</c><00:02:47.250><c> want</c><00:02:47.730><c> to</c><00:02:48.090><c> set</c><00:02:48.330><c> a</c>
+
+00:02:48.350 --> 00:02:48.360 align:start position:0%
+don't necessarily want to set a
+ 
+
+00:02:48.360 --> 00:02:50.840 align:start position:0%
+don't necessarily want to set a
+breakpoint<00:02:48.590><c> you</c><00:02:49.590><c> can</c><00:02:49.739><c> press</c><00:02:49.980><c> run</c><00:02:50.459><c> to</c><00:02:50.670><c> cursor</c>
+
+00:02:50.840 --> 00:02:50.850 align:start position:0%
+breakpoint you can press run to cursor
+ 
+
+00:02:50.850 --> 00:02:53.479 align:start position:0%
+breakpoint you can press run to cursor
+which<00:02:51.540><c> will</c><00:02:51.720><c> pause</c><00:02:51.989><c> the</c><00:02:52.260><c> debugger</c><00:02:52.560><c> wherever</c>
+
+00:02:53.479 --> 00:02:53.489 align:start position:0%
+which will pause the debugger wherever
+ 
+
+00:02:53.489 --> 00:02:55.640 align:start position:0%
+which will pause the debugger wherever
+your<00:02:53.730><c> cursor</c><00:02:53.910><c> has</c><00:02:54.209><c> been</c><00:02:54.390><c> placed</c><00:02:54.660><c> when</c><00:02:55.530><c> you'd</c>
+
+00:02:55.640 --> 00:02:55.650 align:start position:0%
+your cursor has been placed when you'd
+ 
+
+00:02:55.650 --> 00:02:58.160 align:start position:0%
+your cursor has been placed when you'd
+like<00:02:55.739><c> to</c><00:02:55.890><c> resume</c><00:02:56.250><c> you</c><00:02:56.730><c> can</c><00:02:56.760><c> press</c><00:02:57.090><c> resume</c><00:02:57.299><c> or</c>
+
+00:02:58.160 --> 00:02:58.170 align:start position:0%
+like to resume you can press resume or
+ 
+
+00:02:58.170 --> 00:03:01.250 align:start position:0%
+like to resume you can press resume or
+f9<00:02:58.680><c> and</c><00:02:59.010><c> if</c><00:03:00.000><c> the</c><00:03:00.120><c> debugger</c><00:03:00.450><c> doesn't</c><00:03:00.840><c> respond</c>
+
+00:03:01.250 --> 00:03:01.260 align:start position:0%
+f9 and if the debugger doesn't respond
+ 
+
+00:03:01.260 --> 00:03:03.979 align:start position:0%
+f9 and if the debugger doesn't respond
+for<00:03:01.560><c> a</c><00:03:01.590><c> long</c><00:03:01.799><c> time</c><00:03:02.130><c> say</c><00:03:02.880><c> it's</c><00:03:03.030><c> live</c><00:03:03.299><c> lock</c><00:03:03.630><c> to</c>
+
+00:03:03.979 --> 00:03:03.989 align:start position:0%
+for a long time say it's live lock to
+ 
+
+00:03:03.989 --> 00:03:05.960 align:start position:0%
+for a long time say it's live lock to
+our<00:03:04.080><c> spin</c><00:03:04.380><c> locked</c><00:03:04.620><c> somewhere</c><00:03:05.190><c> but</c><00:03:05.670><c> you</c><00:03:05.790><c> don't</c>
+
+00:03:05.960 --> 00:03:05.970 align:start position:0%
+our spin locked somewhere but you don't
+ 
+
+00:03:05.970 --> 00:03:07.670 align:start position:0%
+our spin locked somewhere but you don't
+know<00:03:06.120><c> where</c><00:03:06.390><c> you</c><00:03:06.900><c> can</c><00:03:07.049><c> always</c><00:03:07.170><c> go</c><00:03:07.380><c> to</c><00:03:07.440><c> the</c>
+
+00:03:07.670 --> 00:03:07.680 align:start position:0%
+know where you can always go to the
+ 
+
+00:03:07.680 --> 00:03:11.320 align:start position:0%
+know where you can always go to the
+threads<00:03:08.239><c> console</c><00:03:09.239><c> view</c><00:03:09.780><c> and</c><00:03:10.019><c> expand</c><00:03:10.680><c> that</c>
+
+00:03:11.320 --> 00:03:11.330 align:start position:0%
+threads console view and expand that
+ 
+
+00:03:11.330 --> 00:03:13.339 align:start position:0%
+threads console view and expand that
+here<00:03:12.330><c> you'll</c><00:03:12.480><c> be</c><00:03:12.599><c> able</c><00:03:12.660><c> to</c><00:03:12.870><c> see</c><00:03:13.019><c> the</c><00:03:13.110><c> progress</c>
+
+00:03:13.339 --> 00:03:13.349 align:start position:0%
+here you'll be able to see the progress
+ 
+
+00:03:13.349 --> 00:03:15.890 align:start position:0%
+here you'll be able to see the progress
+which<00:03:14.099><c> threads</c><00:03:14.459><c> are</c><00:03:14.640><c> waiting</c><00:03:15.030><c> you</c><00:03:15.480><c> can</c><00:03:15.510><c> pause</c>
+
+00:03:15.890 --> 00:03:15.900 align:start position:0%
+which threads are waiting you can pause
+ 
+
+00:03:15.900 --> 00:03:19.309 align:start position:0%
+which threads are waiting you can pause
+the<00:03:15.930><c> program</c><00:03:16.790><c> resume</c><00:03:17.790><c> it</c><00:03:17.970><c> and</c><00:03:18.290><c> capture</c><00:03:19.290><c> a</c>
+
+00:03:19.309 --> 00:03:19.319 align:start position:0%
+the program resume it and capture a
+ 
+
+00:03:19.319 --> 00:03:21.259 align:start position:0%
+the program resume it and capture a
+thread<00:03:19.650><c> dump</c><00:03:19.920><c> to</c><00:03:20.280><c> determine</c><00:03:20.730><c> what</c><00:03:20.880><c> may</c><00:03:21.000><c> be</c><00:03:21.060><c> the</c>
+
+00:03:21.259 --> 00:03:21.269 align:start position:0%
+thread dump to determine what may be the
+ 
+
+00:03:21.269 --> 00:03:24.890 align:start position:0%
+thread dump to determine what may be the
+source<00:03:21.660><c> of</c><00:03:22.049><c> the</c><00:03:22.320><c> congestion</c>
+

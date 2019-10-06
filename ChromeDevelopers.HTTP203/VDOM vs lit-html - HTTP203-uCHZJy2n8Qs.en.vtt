@@ -1,0 +1,866 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.470
+SURMA: But yeah, so
+probably something happened.
+
+00:00:01.470 --> 00:00:02.261
+It was really good.
+
+00:00:02.261 --> 00:00:05.240
+I recommend everyone to
+watch all the videos.
+
+00:00:05.240 --> 00:00:07.404
+It has good talks, and
+it's even supercharged.
+
+00:00:07.404 --> 00:00:09.070
+JAKE ARCHIBALD: There
+is a supercharged?
+
+00:00:09.070 --> 00:00:09.800
+SURMA: I do say so myself.
+
+00:00:09.800 --> 00:00:10.300
+JAKE ARCHIBALD: Yes.
+
+00:00:10.300 --> 00:00:11.110
+SURMA: You were involved.
+
+00:00:11.110 --> 00:00:11.500
+JAKE ARCHIBALD: I was--
+
+00:00:11.500 --> 00:00:11.700
+SURMA: Monica was involved.
+
+00:00:11.700 --> 00:00:12.100
+JAKE ARCHIBALD: --involved.
+
+00:00:12.100 --> 00:00:12.490
+Yes.
+
+00:00:12.490 --> 00:00:13.420
+SURMA: Even I was involved.
+
+00:00:13.420 --> 00:00:13.630
+JAKE ARCHIBALD: You were?
+
+00:00:13.630 --> 00:00:15.621
+[LAUGHS] They let
+you on stage again?
+
+00:00:15.621 --> 00:00:16.120
+SURMA: Yes.
+
+00:00:16.120 --> 00:00:18.050
+JAKE ARCHIBALD:
+It was very good.
+
+00:00:18.050 --> 00:00:21.010
+I wanted to talk-- so I really
+liked [INAUDIBLE] was Justin's.
+
+00:00:21.010 --> 00:00:21.760
+SURMA: Yes.
+
+00:00:21.760 --> 00:00:24.260
+JAKE ARCHIBALD: And he was
+talking about lit-html.
+
+00:00:24.260 --> 00:00:25.451
+Like what sort a of--
+
+00:00:25.451 --> 00:00:25.950
+SURMA: Yes.
+
+00:00:25.950 --> 00:00:28.960
+And that really spoke
+to me, because he
+
+00:00:28.960 --> 00:00:34.630
+wrote an alter-- like, he wrote
+basically a VDOM alternative,
+
+00:00:34.630 --> 00:00:36.190
+or a different take on VDOM.
+
+00:00:36.190 --> 00:00:38.884
+And I've been playing around
+with VDOM a lot, basically
+
+00:00:38.884 --> 00:00:40.300
+because of tasklets
+that we talked
+
+00:00:40.300 --> 00:00:42.466
+about in the last podcast,
+which hopefully everybody
+
+00:00:42.466 --> 00:00:43.348
+has listened to.
+
+00:00:43.348 --> 00:00:44.772
+[LAUGHS]
+
+00:00:44.772 --> 00:00:47.230
+JAKE ARCHIBALD: Do you want to
+do like an American TV show?
+
+00:00:47.230 --> 00:00:49.530
+Previously. (DEEP
+VOICE) Previously on--
+
+00:00:49.530 --> 00:00:51.730
+SURMA: Oh, we do it like a
+proper announcer, though.
+
+00:00:51.730 --> 00:00:52.480
+Because my voice--
+
+00:00:52.480 --> 00:00:54.510
+JAKE ARCHIBALD:
+[EXPLOSION NOISES] So it's just
+
+00:00:54.510 --> 00:00:54.810
+a--
+
+00:00:54.810 --> 00:00:56.190
+SURMA (DEEP VOICE): Previously.
+
+00:00:56.190 --> 00:00:58.148
+JAKE ARCHIBALD: That was
+really good, actually.
+
+00:00:58.148 --> 00:00:59.138
+I liked that.
+
+00:00:59.138 --> 00:01:00.596
+SURMA: [LAUGHS]
+
+00:01:00.596 --> 00:01:04.484
+[MUSIC PLAYING]
+
+00:01:06.430 --> 00:01:08.590
+So I've been looking into VDOM.
+
+00:01:08.590 --> 00:01:11.080
+And it took-- I heard
+about VDOM a lot,
+
+00:01:11.080 --> 00:01:12.910
+and I knew basically
+what it did.
+
+00:01:12.910 --> 00:01:15.870
+That you had, like, an
+alternative in-memory
+
+00:01:15.870 --> 00:01:18.700
+representation of the DOM,
+and if you changed something,
+
+00:01:18.700 --> 00:01:21.320
+it would just create a
+completely new version
+
+00:01:21.320 --> 00:01:22.870
+and then find all
+the differences.
+
+00:01:22.870 --> 00:01:25.390
+But I never realized
+that is a solution
+
+00:01:25.390 --> 00:01:27.434
+to the data-binding problem.
+
+00:01:27.434 --> 00:01:29.350
+If you look at Polymer,
+usually like annotate,
+
+00:01:29.350 --> 00:01:33.670
+this attribute should always
+have the value of this variable
+
+00:01:33.670 --> 00:01:34.860
+that I have in my state.
+
+00:01:34.860 --> 00:01:35.560
+JAKE ARCHIBALD: Right.
+
+00:01:35.560 --> 00:01:36.700
+SURMA: And whenever
+it changes, there's
+
+00:01:36.700 --> 00:01:39.550
+some magic going on that it
+realizes, oh, this has changed.
+
+00:01:39.550 --> 00:01:42.665
+I should therefore also update
+this attribute in the DOM.
+
+00:01:42.665 --> 00:01:43.540
+JAKE ARCHIBALD: Yeah.
+
+00:01:43.540 --> 00:01:45.248
+And I worry a little
+bit, especially when
+
+00:01:45.248 --> 00:01:46.540
+it's two-way data binding.
+
+00:01:46.540 --> 00:01:47.916
+I-- it's a lot of
+magic involved.
+
+00:01:47.916 --> 00:01:49.665
+SURMA: And you look
+at the implementation,
+
+00:01:49.665 --> 00:01:51.160
+and I just never understood it.
+
+00:01:51.160 --> 00:01:54.186
+It's like mutation
+observers, but also you
+
+00:01:54.186 --> 00:01:55.810
+create magic getters
+and setters so you
+
+00:01:55.810 --> 00:01:58.730
+can hook into the
+mutation of the variable.
+
+00:01:58.730 --> 00:02:00.190
+And if either of
+the sites change,
+
+00:02:00.190 --> 00:02:01.850
+you have to do all the piping.
+
+00:02:01.850 --> 00:02:06.439
+And it's not easy to implement
+a proper two-way binding thing.
+
+00:02:06.439 --> 00:02:08.064
+And then VDOM comes
+along and basically
+
+00:02:08.064 --> 00:02:11.350
+just says, don't worry
+about the two-way binding.
+
+00:02:11.350 --> 00:02:13.390
+We're just going
+to, like, re-render
+
+00:02:13.390 --> 00:02:15.490
+the entire tree as an
+object and figure out
+
+00:02:15.490 --> 00:02:16.510
+what changed for you.
+
+00:02:16.510 --> 00:02:17.426
+JAKE ARCHIBALD: Right.
+
+00:02:17.426 --> 00:02:20.110
+SURMA: And in terms of
+algorithm, that is simpler.
+
+00:02:20.110 --> 00:02:22.693
+If you want to do like a really
+good diffing algorithm, that's
+
+00:02:22.693 --> 00:02:24.340
+not easy, but in
+terms of how it works,
+
+00:02:24.340 --> 00:02:26.170
+it's easier to understand.
+
+00:02:26.170 --> 00:02:27.430
+And I never realized, OK.
+
+00:02:27.430 --> 00:02:32.114
+So VDOM is a solution to the
+two-way data-binding thing.
+
+00:02:32.114 --> 00:02:33.030
+JAKE ARCHIBALD: Right.
+
+00:02:33.030 --> 00:02:34.124
+It becomes very one way.
+
+00:02:34.124 --> 00:02:35.540
+SURMA: And then
+on the other hand,
+
+00:02:35.540 --> 00:02:38.660
+it would use events to bubble
+up changes back into your state.
+
+00:02:38.660 --> 00:02:40.470
+And that kind of makes sense.
+
+00:02:40.470 --> 00:02:45.050
+But then after I understood
+that, I thought about it more
+
+00:02:45.050 --> 00:02:49.820
+and more, and I was like,
+this is, once again,
+
+00:02:49.820 --> 00:02:52.410
+developer experience
+over user experience.
+
+00:02:52.410 --> 00:02:53.720
+JAKE ARCHIBALD: Right, because
+it is a great developer
+
+00:02:53.720 --> 00:02:54.140
+experience.
+
+00:02:54.140 --> 00:02:56.681
+Because like, that sort of way,
+you're re-declaring the world
+
+00:02:56.681 --> 00:02:57.590
+every time.
+
+00:02:57.590 --> 00:03:00.810
+It sorts out a
+lot of state bugs.
+
+00:03:00.810 --> 00:03:02.690
+SURMA: You put in a
+fairly small library.
+
+00:03:02.690 --> 00:03:04.731
+If you look at [? pre-app, ?]
+that's 3 kilobytes.
+
+00:03:04.731 --> 00:03:05.390
+That's tiny.
+
+00:03:05.390 --> 00:03:08.010
+And it does all these things,
+plus components and other stuff
+
+00:03:08.010 --> 00:03:09.770
+even.
+
+00:03:09.770 --> 00:03:11.810
+But also, it completely
+negates the fact
+
+00:03:11.810 --> 00:03:15.007
+that, if you have a decently
+sized document with, let's say,
+
+00:03:15.007 --> 00:03:16.340
+a couple of thousand DOM nodes--
+
+00:03:16.340 --> 00:03:17.815
+JAKE ARCHIBALD: Right.
+
+00:03:17.815 --> 00:03:19.190
+SURMA: --there's
+a lot of diffing
+
+00:03:19.190 --> 00:03:21.830
+going on that is completely
+unnecessary, because you,
+
+00:03:21.830 --> 00:03:25.520
+as a developer, know that the
+big portion of your document
+
+00:03:25.520 --> 00:03:26.729
+is static and doesn't change.
+
+00:03:26.729 --> 00:03:27.644
+JAKE ARCHIBALD: Right.
+
+00:03:27.644 --> 00:03:29.645
+And you pay that cost
+per node, not per change.
+
+00:03:29.645 --> 00:03:30.145
+SURMA: Yeah.
+
+00:03:30.145 --> 00:03:36.440
+So I guess the VDOM update
+or render call scales
+
+00:03:36.440 --> 00:03:37.850
+with how big your document is.
+
+00:03:37.850 --> 00:03:39.391
+JAKE ARCHIBALD:
+Yeah, to some degree.
+
+00:03:39.391 --> 00:03:41.450
+And there's also
+shouldComponentUpdate,
+
+00:03:41.450 --> 00:03:44.030
+which is your sort
+of get out of jail--
+
+00:03:44.030 --> 00:03:44.550
+SURMA: Yeah.
+
+00:03:44.550 --> 00:03:45.050
+I guess.
+
+00:03:45.050 --> 00:03:47.383
+JAKE ARCHIBALD: If there's a
+large part of the tree that
+
+00:03:47.383 --> 00:03:50.750
+doesn't change, then you can,
+in this sort of React world,
+
+00:03:50.750 --> 00:03:53.290
+sort of avoid redoing
+the work there.
+
+00:03:53.290 --> 00:03:55.850
+So we've got this
+virtual DOM idea
+
+00:03:55.850 --> 00:03:58.460
+that React uses where you're
+paying the cost roughly
+
+00:03:58.460 --> 00:04:01.910
+per node that exists.
+
+00:04:01.910 --> 00:04:05.180
+Whereas lit-html
+and hyperHTML, which
+
+00:04:05.180 --> 00:04:06.480
+does a very similar thing.
+
+00:04:06.480 --> 00:04:07.400
+And I've been
+looking at hyperHTML.
+
+00:04:07.400 --> 00:04:09.454
+SURMA: I think Justin
+even called out hyperHTML
+
+00:04:09.454 --> 00:04:11.120
+as one of the
+inspirations for lit-html.
+
+00:04:11.120 --> 00:04:11.660
+JAKE ARCHIBALD: Oh, cool.
+
+00:04:11.660 --> 00:04:12.590
+Oh, excellent.
+
+00:04:12.590 --> 00:04:17.540
+So they use tagged templates,
+JavaScript, string, literals.
+
+00:04:17.540 --> 00:04:19.045
+[LAUGHTER]
+
+00:04:19.045 --> 00:04:19.670
+SURMA: Dot com.
+
+00:04:19.670 --> 00:04:21.310
+JAKE ARCHIBALD: Is that right?
+
+00:04:21.310 --> 00:04:24.257
+With some of those words,
+maybe not in that order,
+
+00:04:24.257 --> 00:04:25.090
+is the thing, right?
+
+00:04:25.090 --> 00:04:26.150
+SURMA: I think
+you're right, but I
+
+00:04:26.150 --> 00:04:27.816
+think I want to also
+have it as a shirt.
+
+00:04:27.816 --> 00:04:30.260
+[LAUGHTER]
+
+00:04:30.260 --> 00:04:32.790
+JAKE ARCHIBALD: So
+the benefit of using--
+
+00:04:32.790 --> 00:04:35.000
+so you've got your
+HTML in that sort
+
+00:04:35.000 --> 00:04:36.570
+of string part of the template.
+
+00:04:36.570 --> 00:04:37.910
+SURMA: Which is a very
+common pattern to have.
+
+00:04:37.910 --> 00:04:39.285
+If you have a
+custom element, you
+
+00:04:39.285 --> 00:04:43.340
+want to have your shadow
+root markup, for example,
+
+00:04:43.340 --> 00:04:46.400
+or just some styles,
+or something in there
+
+00:04:46.400 --> 00:04:49.040
+as like an HTML string
+most of the time.
+
+00:04:49.040 --> 00:04:51.810
+Which is what JSX does
+in one way or the other.
+
+00:04:51.810 --> 00:04:55.040
+And this one is basically,
+without the JSX precompilation
+
+00:04:55.040 --> 00:05:00.080
+bit, and instead using
+the HTML tagged--
+
+00:05:00.080 --> 00:05:02.090
+BOTH: --template string literal.
+
+00:05:02.090 --> 00:05:02.936
+[LAUGHS]
+
+00:05:02.936 --> 00:05:05.060
+JAKE ARCHIBALD: So, and
+one of the benefits of that
+
+00:05:05.060 --> 00:05:10.190
+is that it knows that the
+string parts of the template
+
+00:05:10.190 --> 00:05:11.030
+do not change.
+
+00:05:11.030 --> 00:05:11.530
+SURMA: No.
+
+00:05:11.530 --> 00:05:12.670
+Because what you use is--
+
+00:05:12.670 --> 00:05:16.826
+the thing about tagged template
+string literals is that--
+
+00:05:16.826 --> 00:05:18.950
+so these are the things,
+in case people don't know,
+
+00:05:18.950 --> 00:05:21.620
+the backticks, the new
+backtick strings in JavaScript,
+
+00:05:21.620 --> 00:05:24.220
+are template string literals.
+
+00:05:24.220 --> 00:05:27.290
+And you can tack them by putting
+a function name before that,
+
+00:05:27.290 --> 00:05:31.730
+and that means that the
+JavaScript [? pauser ?] will
+
+00:05:31.730 --> 00:05:35.750
+dissect the string into the
+string bits, and the bits
+
+00:05:35.750 --> 00:05:36.470
+where you--
+
+00:05:36.470 --> 00:05:37.120
+JAKE ARCHIBALD:
+--interpolate it.
+
+00:05:37.120 --> 00:05:38.536
+SURMA: --dollar
+[INAUDIBLE] braces
+
+00:05:38.536 --> 00:05:39.850
+things to put values in there.
+
+00:05:39.850 --> 00:05:40.230
+JAKE ARCHIBALD: Right, exactly.
+
+00:05:40.230 --> 00:05:42.050
+SURMA: And then you don't
+have to put the [INAUDIBLE]
+
+00:05:42.050 --> 00:05:42.549
+directly.
+
+00:05:42.549 --> 00:05:45.710
+We can do some
+processing on that first.
+
+00:05:45.710 --> 00:05:50.720
+And what Justin does is that
+he generates a template tag,
+
+00:05:50.720 --> 00:05:53.630
+the actual HTML
+template tag, and it
+
+00:05:53.630 --> 00:05:56.764
+replaces your interpolation
+variables with a placeholder.
+
+00:05:56.764 --> 00:05:57.680
+JAKE ARCHIBALD: Right.
+
+00:05:57.680 --> 00:06:01.010
+SURMA: So he basically
+remembers in the template tag
+
+00:06:01.010 --> 00:06:03.670
+where values can mutate.
+
+00:06:03.670 --> 00:06:06.334
+And that means whenever
+you change a value,
+
+00:06:06.334 --> 00:06:08.000
+he doesn't have to
+diff the entire tree,
+
+00:06:08.000 --> 00:06:10.347
+but already knows where to
+jump and where to compare.
+
+00:06:10.347 --> 00:06:11.180
+JAKE ARCHIBALD: Yes.
+
+00:06:11.180 --> 00:06:12.590
+SURMA: And that makes
+a big difference.
+
+00:06:12.590 --> 00:06:13.423
+JAKE ARCHIBALD: Yes.
+
+00:06:13.423 --> 00:06:16.570
+And a hyperHTML by
+Andrea Giammarchi
+
+00:06:16.570 --> 00:06:18.740
+is implemented very similar.
+
+00:06:18.740 --> 00:06:21.110
+Like it's-- even if you've
+got that interpolation bit
+
+00:06:21.110 --> 00:06:25.850
+in the middle of a string,
+in the middle of a text node.
+
+00:06:25.850 --> 00:06:28.870
+I think what Andrea does is
+actually at compilation time
+
+00:06:28.870 --> 00:06:31.240
+inserts a comment in
+there that you can then
+
+00:06:31.240 --> 00:06:33.740
+go and pick out and then replace
+that node with whatever you
+
+00:06:33.740 --> 00:06:34.790
+actually wanted in there.
+
+00:06:34.790 --> 00:06:36.650
+I think Justin just does it
+with some text and goes--
+
+00:06:36.650 --> 00:06:38.450
+SURMA: I think he just
+creates a separate text node.
+
+00:06:38.450 --> 00:06:39.620
+But I'm not 100% on that.
+
+00:06:39.620 --> 00:06:42.530
+But most of the time, you
+just have two operations.
+
+00:06:42.530 --> 00:06:49.100
+Either you set an attribute,
+or you replace a DOM node
+
+00:06:49.100 --> 00:06:50.520
+in the template.
+
+00:06:50.520 --> 00:06:51.800
+And it's the two operations.
+
+00:06:51.800 --> 00:06:52.680
+You can extend it.
+
+00:06:52.680 --> 00:06:55.480
+You have an extension API,
+a parts API, he calls it,
+
+00:06:55.480 --> 00:06:57.110
+where you can just
+have to ask if this
+
+00:06:57.110 --> 00:06:59.414
+is supposed to be a property
+or an event listener.
+
+00:06:59.414 --> 00:07:00.330
+JAKE ARCHIBALD: Right.
+
+00:07:00.330 --> 00:07:00.830
+Yes.
+
+00:07:00.830 --> 00:07:02.450
+SURMA: But at its
+basic level, there's
+
+00:07:02.450 --> 00:07:06.200
+only two parts, which is
+attribute modification
+
+00:07:06.200 --> 00:07:07.075
+and node replacement.
+
+00:07:07.075 --> 00:07:09.408
+JAKE ARCHIBALD: I've played
+a little bit with hyperHTML.
+
+00:07:09.408 --> 00:07:10.410
+You've played with lit.
+
+00:07:10.410 --> 00:07:11.130
+I think it's--
+
+00:07:11.130 --> 00:07:12.860
+SURMA: It's an
+interesting pattern.
+
+00:07:12.860 --> 00:07:18.560
+I feel like it could be
+the next move of what
+
+00:07:18.560 --> 00:07:20.740
+is "the thing" on the web.
+
+00:07:20.740 --> 00:07:23.540
+It's a very nice middle
+ground because I always
+
+00:07:23.540 --> 00:07:25.357
+did the manual.
+
+00:07:25.357 --> 00:07:26.690
+I'd just write a custom element.
+
+00:07:26.690 --> 00:07:28.820
+I know what things
+I need to change
+
+00:07:28.820 --> 00:07:30.720
+and will just
+mutate them manually
+
+00:07:30.720 --> 00:07:33.540
+with [INAUDIBLE] selector
+and just setting the things.
+
+00:07:33.540 --> 00:07:37.710
+And this is getting mostly
+developer experience
+
+00:07:37.710 --> 00:07:39.870
+without paying as big
+of a performance cost
+
+00:07:39.870 --> 00:07:42.257
+as with a pure VDOM
+diffing approach.
+
+00:07:42.257 --> 00:07:43.340
+JAKE ARCHIBALD: Absolutely
+
+00:07:43.340 --> 00:07:44.965
+SURMA: And that is
+really, really nice.
+
+00:07:44.965 --> 00:07:46.079
+[MUSIC PLAYING]
+
+00:07:46.079 --> 00:07:47.370
+(DEEP VOICE) The almighty Jack.
+
+00:07:47.370 --> 00:07:49.080
+JAKE ARCHIBALD:
+The almighty Jack.
+
+00:07:49.080 --> 00:07:50.410
+That's a good wrestler name.
+
+00:07:50.410 --> 00:07:50.970
+I like that.
+
+00:07:50.970 --> 00:07:51.470
+[LAUGHTER]
+
+00:07:51.470 --> 00:07:53.011
+The almighty Jack
+walks into the ring
+
+00:07:53.011 --> 00:07:55.920
+and then just freezes while the
+other guy just walks around--
+
+00:07:55.920 --> 00:07:56.940
+SURMA: Takes a
+chair from the side.
+
+00:07:56.940 --> 00:07:58.481
+JAKE ARCHIBALD: Just
+goes-- hits him.
+
+00:07:58.481 --> 00:07:59.980
+And he just falls over.
+
+00:07:59.980 --> 00:08:00.980
+It just doesn't--
+
+00:08:00.980 --> 00:08:02.110
+SURMA: --turned into a cardboard
+cutout in the meantime.
+
+00:08:02.110 --> 00:08:02.985
+JAKE ARCHIBALD: Yeah.
+
+00:08:02.985 --> 00:08:04.260
+[LAUGHS]
+

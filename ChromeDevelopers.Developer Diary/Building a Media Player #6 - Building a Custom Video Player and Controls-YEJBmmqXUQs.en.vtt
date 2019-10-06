@@ -1,0 +1,835 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:02.163
+PAUL LEWIS: So I've
+been doing a lot of what
+
+00:00:02.163 --> 00:00:04.320
+I like to think of
+as boiler plate code
+
+00:00:04.320 --> 00:00:06.900
+because I've been
+working on the site
+
+00:00:06.900 --> 00:00:10.320
+and I've been building custom
+controls for the video player.
+
+00:00:10.320 --> 00:00:15.030
+And-- so firstly, it's
+awesome that you can totally
+
+00:00:15.030 --> 00:00:17.610
+get-- like there's loads of
+events that fire off a media
+
+00:00:17.610 --> 00:00:19.440
+element, whether
+it's seeking, it's
+
+00:00:19.440 --> 00:00:22.570
+seeked, whether it's ended,
+whether it's playing.
+
+00:00:22.570 --> 00:00:24.814
+And all these things
+are really, really handy
+
+00:00:24.814 --> 00:00:26.730
+when you're making custom
+controls because you
+
+00:00:26.730 --> 00:00:28.050
+want to handle that.
+
+00:00:28.050 --> 00:00:30.360
+I just wanted-- because I've
+spent some time doing it,
+
+00:00:30.360 --> 00:00:32.420
+I just wanted to kind
+of show you very briefly
+
+00:00:32.420 --> 00:00:33.420
+around some of the code.
+
+00:00:33.420 --> 00:00:35.003
+I mean, you can find
+it all on GitHub.
+
+00:00:35.003 --> 00:00:37.080
+Just check the link
+in the description
+
+00:00:37.080 --> 00:00:39.000
+below if you want
+to actually, like,
+
+00:00:39.000 --> 00:00:42.690
+spend ages looking
+over the source code.
+
+00:00:42.690 --> 00:00:44.530
+But I will explain,
+broadly speaking,
+
+00:00:44.530 --> 00:00:49.240
+how I've decided to divide
+and conquer the code for this.
+
+00:00:49.240 --> 00:00:51.040
+Let's have a look at
+what's on my screen.
+
+00:00:51.040 --> 00:00:53.000
+So the first thing
+to note is that there
+
+00:00:53.000 --> 00:00:54.600
+is-- there are two
+things-- there's actually--
+
+00:00:54.600 --> 00:00:56.210
+there's two classes
+that are interesting.
+
+00:00:56.210 --> 00:00:56.680
+There we go.
+
+00:00:56.680 --> 00:00:57.804
+That's how I should say it.
+
+00:00:57.804 --> 00:01:00.900
+There's the video player
+and the video controls.
+
+00:01:00.900 --> 00:01:03.960
+The video player
+is what is going
+
+00:01:03.960 --> 00:01:06.907
+to decide whether
+the video is playing
+
+00:01:06.907 --> 00:01:08.240
+or whether it's actually paused.
+
+00:01:08.240 --> 00:01:10.950
+It actually controls
+the shaka-player
+
+00:01:10.950 --> 00:01:13.980
+and it controls the
+video element itself.
+
+00:01:13.980 --> 00:01:16.650
+That's the-- it's kind
+of the wrapper around--
+
+00:01:16.650 --> 00:01:19.470
+why is it a wrapper around
+a wrapper around a video?
+
+00:01:19.470 --> 00:01:22.096
+Because it's a wrapper
+around shaka around a video.
+
+00:01:22.096 --> 00:01:23.970
+This feels like it's
+going to quickly descend
+
+00:01:23.970 --> 00:01:25.650
+into some kind of
+tongue twister.
+
+00:01:25.650 --> 00:01:27.450
+It's a wrapper around
+shaka around video.
+
+00:01:27.450 --> 00:01:28.800
+Yes, I got it.
+
+00:01:28.800 --> 00:01:29.460
+Yes.
+
+00:01:29.460 --> 00:01:31.470
+Anyway, that's not
+what you came for.
+
+00:01:31.470 --> 00:01:34.590
+Let's talk about the code bits.
+
+00:01:34.590 --> 00:01:37.380
+So in the constructor for
+one of these video players,
+
+00:01:37.380 --> 00:01:39.930
+you can see I pull a lot of
+stuff from the video element
+
+00:01:39.930 --> 00:01:43.830
+because I actually put a video
+element in the page using
+
+00:01:43.830 --> 00:01:44.730
+dos-js templates.
+
+00:01:44.730 --> 00:01:46.940
+So I say look, there's
+a video element-- doo.
+
+00:01:46.940 --> 00:01:51.779
+And I pop in, in the
+HTML, all the data
+
+00:01:51.779 --> 00:01:53.070
+that I think I'm going to need.
+
+00:01:53.070 --> 00:01:55.140
+And the reason I do
+that is because I
+
+00:01:55.140 --> 00:01:57.932
+think that server side rendering
+makes a lot of sense here.
+
+00:01:57.932 --> 00:01:59.640
+Even though this is
+all JavaScript based,
+
+00:01:59.640 --> 00:02:01.770
+I don't want to make a
+request off for the JSON
+
+00:02:01.770 --> 00:02:03.300
+and then bring it
+back here and--
+
+00:02:03.300 --> 00:02:06.950
+I can encode this all inside
+the DOM if I absolutely need to.
+
+00:02:06.950 --> 00:02:08.400
+And it's working just fine.
+
+00:02:08.400 --> 00:02:11.039
+So I pick up all the things
+that I need from the DOM like
+
+00:02:11.039 --> 00:02:13.572
+the title of the video,
+the link to the manifest--
+
+00:02:13.572 --> 00:02:15.780
+as in where do I get the
+manifest for this particular
+
+00:02:15.780 --> 00:02:16.830
+video--
+
+00:02:16.830 --> 00:02:18.712
+post frames, all
+that kind of stuff.
+
+00:02:18.712 --> 00:02:20.670
+And I keep a bunch of
+things around that I need
+
+00:02:20.670 --> 00:02:23.470
+to-- just for housekeeping.
+
+00:02:23.470 --> 00:02:25.770
+This here-- with
+all these binds,
+
+00:02:25.770 --> 00:02:31.350
+you'll recognize if you
+have watched a supercharged.
+
+00:02:31.350 --> 00:02:34.770
+I'll explain it now
+just very, very briefly.
+
+00:02:34.770 --> 00:02:37.830
+The thing-- these things
+like on keydown, onclick.
+
+00:02:37.830 --> 00:02:40.170
+They are class
+methods but that's
+
+00:02:40.170 --> 00:02:46.370
+sugar over a prototype
+method in ES5 terminology.
+
+00:02:46.370 --> 00:02:49.770
+And so if I call--
+
+00:02:49.770 --> 00:02:51.642
+if I had an event
+listener that's like--
+
+00:02:51.642 --> 00:02:53.850
+that's like the click event
+handler, say, on a button
+
+00:02:53.850 --> 00:02:57.390
+and I say this dot
+onclick, by default,
+
+00:02:57.390 --> 00:03:02.340
+the onclick will be bound
+to the button, for example.
+
+00:03:02.340 --> 00:03:04.060
+So if I say this dot
+something or other,
+
+00:03:04.060 --> 00:03:05.314
+it will refer to the button.
+
+00:03:05.314 --> 00:03:07.230
+Typically, what I actually
+want it to refer to
+
+00:03:07.230 --> 00:03:08.784
+is my instance of my class.
+
+00:03:08.784 --> 00:03:10.200
+The other thing--
+the other reason
+
+00:03:10.200 --> 00:03:13.440
+I do it like this and take a
+copy of it off the prototype
+
+00:03:13.440 --> 00:03:15.360
+and onto the instance,
+is just simply
+
+00:03:15.360 --> 00:03:17.400
+so that I can do--
+add event listeners
+
+00:03:17.400 --> 00:03:20.024
+and remove event listeners and
+I can still refer to it by name.
+
+00:03:20.024 --> 00:03:23.370
+So this dot onclick
+always refers, by name,
+
+00:03:23.370 --> 00:03:25.530
+to the instance copy.
+
+00:03:25.530 --> 00:03:26.920
+So I do it for two reasons.
+
+00:03:26.920 --> 00:03:29.910
+It looks slightly odd,
+and it is slightly odd.
+
+00:03:29.910 --> 00:03:32.580
+And its just one
+of those things.
+
+00:03:32.580 --> 00:03:35.220
+I would like it if we had
+a different way to do this,
+
+00:03:35.220 --> 00:03:36.431
+but we don't at the moment.
+
+00:03:36.431 --> 00:03:36.930
+So anyway.
+
+00:03:36.930 --> 00:03:38.880
+So I set them all
+up at the start.
+
+00:03:38.880 --> 00:03:39.399
+OK.
+
+00:03:39.399 --> 00:03:41.190
+Here's actually-- yeah,
+the event listeners
+
+00:03:41.190 --> 00:03:44.556
+are things like keydown,
+click, play, pause, back 30,
+
+00:03:44.556 --> 00:03:45.061
+forward 30.
+
+00:03:45.061 --> 00:03:48.060
+So these are custom,
+specific to my app.
+
+00:03:48.060 --> 00:03:52.020
+These aren't your
+standard issue events.
+
+00:03:52.020 --> 00:03:53.581
+These come from
+the video controls.
+
+00:03:53.581 --> 00:03:55.330
+So I'll have to show
+you that in a moment.
+
+00:03:55.330 --> 00:03:57.537
+But there are some
+specific ones that I do,
+
+00:03:57.537 --> 00:03:58.870
+which go in the other direction.
+
+00:03:58.870 --> 00:04:00.828
+So when we play, we pause,
+the video has ended,
+
+00:04:00.828 --> 00:04:04.030
+or the duration changes, I
+actually notify the controls.
+
+00:04:04.030 --> 00:04:06.540
+So there's a two-- there is
+some coupling going on here.
+
+00:04:06.540 --> 00:04:09.600
+I either call into
+the video controls
+
+00:04:09.600 --> 00:04:11.010
+and give the video
+controls a bit
+
+00:04:11.010 --> 00:04:12.420
+of updated state
+about the videos
+
+00:04:12.420 --> 00:04:16.410
+so that controls can be updated
+and reflect what's going on.
+
+00:04:16.410 --> 00:04:19.829
+And the video controls will
+dispatch events back out.
+
+00:04:19.829 --> 00:04:22.510
+So the video player--
+
+00:04:22.510 --> 00:04:25.260
+the video controls
+are inside something.
+
+00:04:25.260 --> 00:04:28.060
+So I can basically
+do event handling.
+
+00:04:28.060 --> 00:04:30.819
+And so I call in,
+but I do events out.
+
+00:04:30.819 --> 00:04:32.610
+I think, actually, when
+you do V-DOM stuff,
+
+00:04:32.610 --> 00:04:35.570
+they often say that you want
+to do props down and events up.
+
+00:04:35.570 --> 00:04:37.290
+And it's not a
+dissimilar thing here.
+
+00:04:37.290 --> 00:04:40.030
+I'm sort of calling in
+and events bubble back up.
+
+00:04:40.030 --> 00:04:41.580
+And it seems to work just great.
+
+00:04:41.580 --> 00:04:44.700
+So these are the custom
+events, essentially,
+
+00:04:44.700 --> 00:04:46.110
+that I get from the controls.
+
+00:04:46.110 --> 00:04:47.526
+Then there's a few
+bits and pieces
+
+00:04:47.526 --> 00:04:49.824
+about whether we've
+gone full screen.
+
+00:04:49.824 --> 00:04:51.240
+I was surprised
+to discover things
+
+00:04:51.240 --> 00:04:56.460
+like full screen still require
+WebKit prefixing on the way
+
+00:04:56.460 --> 00:04:57.720
+through.
+
+00:04:57.720 --> 00:04:58.260
+Interesting.
+
+00:04:58.260 --> 00:05:01.805
+I thought most of the WebKit
+stuff had disappeared.
+
+00:05:01.805 --> 00:05:03.180
+In fact, I thought
+all the vendor
+
+00:05:03.180 --> 00:05:04.680
+prefix stuff had
+mostly disappeared.
+
+00:05:04.680 --> 00:05:06.549
+But there are a few
+that are hanging around.
+
+00:05:06.549 --> 00:05:08.340
+There are a couple of
+other bits and pieces
+
+00:05:08.340 --> 00:05:12.270
+like whether we support the
+newer orientation locks--
+
+00:05:12.270 --> 00:05:14.420
+which I have a quick
+test for, which
+
+00:05:14.420 --> 00:05:20.680
+is like if orientation in a
+string is in window.screen.
+
+00:05:20.680 --> 00:05:22.800
+These are convenience
+things here-- whether we
+
+00:05:22.800 --> 00:05:24.050
+support these various things.
+
+00:05:24.050 --> 00:05:25.424
+I will show you
+the media session
+
+00:05:25.424 --> 00:05:28.080
+API at some other point.
+
+00:05:28.080 --> 00:05:31.900
+Not in this one because it's
+worth seeing all by itself.
+
+00:05:31.900 --> 00:05:34.150
+It's very exciting.
+
+00:05:34.150 --> 00:05:35.370
+So we got all this going on.
+
+00:05:35.370 --> 00:05:37.161
+As I say, most of this
+is boilerplate-like.
+
+00:05:37.161 --> 00:05:41.020
+For example, if you go back 30,
+all we do is we grab the video
+
+00:05:41.020 --> 00:05:44.100
+and we just say current
+time, take off 30 seconds,
+
+00:05:44.100 --> 00:05:46.200
+and then update
+the video controls.
+
+00:05:46.200 --> 00:05:47.970
+So as I say, loads
+of boilerplate.
+
+00:05:47.970 --> 00:05:52.410
+On the video controls
+side, however, it's
+
+00:05:52.410 --> 00:05:54.120
+again actually not
+dissimilar in terms
+
+00:05:54.120 --> 00:05:58.181
+of a lot of boilerplate about,
+sort of, click handlers and so
+
+00:05:58.181 --> 00:05:58.680
+on.
+
+00:05:58.680 --> 00:06:01.095
+There's actually one global
+click handler which I--
+
+00:06:01.095 --> 00:06:04.050
+so I delegate control of
+the click handling out
+
+00:06:04.050 --> 00:06:06.590
+to the video controls.
+
+00:06:06.590 --> 00:06:07.650
+Let me show you that.
+
+00:06:07.650 --> 00:06:09.420
+Where's the onclick
+when you need it?
+
+00:06:09.420 --> 00:06:10.860
+La, la, la.
+
+00:06:10.860 --> 00:06:12.990
+Come on, Paul.
+
+00:06:12.990 --> 00:06:16.240
+I look on the button itself--
+
+00:06:16.240 --> 00:06:18.750
+oh, I look on whatever
+was actually clicked.
+
+00:06:18.750 --> 00:06:21.020
+And if it's got a
+type in its data set,
+
+00:06:21.020 --> 00:06:23.520
+so if it's got data-type
+as an attribute,
+
+00:06:23.520 --> 00:06:26.520
+I fire a custom
+event with that name,
+
+00:06:26.520 --> 00:06:30.652
+which is why in the video
+player we get things like--
+
+00:06:30.652 --> 00:06:33.900
+la, la, la-- we get, like,
+back 30 and forward 30.
+
+00:06:33.900 --> 00:06:35.942
+Because if we were to
+look in the player--
+
+00:06:35.942 --> 00:06:40.290
+[HUMMING] I hope
+you all sing when
+
+00:06:40.290 --> 00:06:42.030
+you're doing your
+look-around-you codes
+
+00:06:42.030 --> 00:06:43.440
+because I definitely do.
+
+00:06:43.440 --> 00:06:45.347
+Makes me a joy to
+work alongside.
+
+00:06:45.347 --> 00:06:47.310
+[HUMMING]
+
+00:06:47.310 --> 00:06:51.140
+Anyway, that's not
+what you came here for.
+
+00:06:51.140 --> 00:06:55.020
+Now we see-- da, da,
+da-- there we are.
+
+00:06:55.020 --> 00:06:57.990
+So like data type equals
+toggle volume or data
+
+00:06:57.990 --> 00:07:01.500
+type equals toggle Chromecast.
+
+00:07:01.500 --> 00:07:04.980
+I've yet to build
+that bit, mostly.
+
+00:07:04.980 --> 00:07:07.330
+So that data type
+is what's used to--
+
+00:07:07.330 --> 00:07:09.007
+as the event name
+and we just fire that
+
+00:07:09.007 --> 00:07:11.340
+from the video controls, pick
+it up in the video player,
+
+00:07:11.340 --> 00:07:13.185
+and then do the
+appropriate thing.
+
+00:07:13.185 --> 00:07:15.810
+It will hopefully
+all make sense.
+
+00:07:15.810 --> 00:07:16.620
+So there you go.
+
+00:07:16.620 --> 00:07:19.590
+That is a quick look
+around the video controls,
+
+00:07:19.590 --> 00:07:20.550
+the video player.
+
+00:07:20.550 --> 00:07:23.670
+That's kind of where I've been
+roughly spending nearly all
+
+00:07:23.670 --> 00:07:24.750
+of my time.
+
+00:07:24.750 --> 00:07:29.749
+I expected a lot of boilerplate,
+I got a lot of boilerplate.
+
+00:07:29.749 --> 00:07:30.540
+But on the upside--
+
+00:07:30.540 --> 00:07:31.980
+I mean, let me show you now.
+
+00:07:31.980 --> 00:07:34.380
+Let me show you what we've got.
+
+00:07:34.380 --> 00:07:36.630
+This is the video
+player as it is.
+
+00:07:36.630 --> 00:07:38.940
+And-- oh, would
+you look at that.
+
+00:07:38.940 --> 00:07:42.570
+It's me and Surma, and a
+few other people besides.
+
+00:07:42.570 --> 00:07:44.580
+We've got the pause,
+play controls.
+
+00:07:44.580 --> 00:07:46.273
+We can skip forward 30--
+
+00:07:46.273 --> 00:07:49.066
+there's the buffering--
+go back 30 as well.
+
+00:07:49.066 --> 00:07:50.560
+La, la, la.
+
+00:07:50.560 --> 00:07:54.050
+We can also drag along like
+that, which will also work.
+
+00:07:54.050 --> 00:07:57.770
+There's Rob Dodson
+looking very Rob Dodson.
+
+00:07:57.770 --> 00:07:58.770
+Yeah.
+
+00:07:58.770 --> 00:08:01.152
+Full screen-- we
+can go full screen.
+
+00:08:01.152 --> 00:08:02.406
+Boom.
+
+00:08:02.406 --> 00:08:03.300
+Look at that.
+
+00:08:03.300 --> 00:08:04.110
+That's great.
+
+00:08:04.110 --> 00:08:04.950
+So that all works.
+
+00:08:04.950 --> 00:08:08.010
+All these things you
+can do and more besides.
+
+00:08:08.010 --> 00:08:09.570
+I've got some code
+that will switch
+
+00:08:09.570 --> 00:08:11.070
+on things like the
+Chromecast button
+
+00:08:11.070 --> 00:08:12.761
+if there's a Chromecast
+on the network.
+
+00:08:12.761 --> 00:08:13.260
+All that.
+
+00:08:13.260 --> 00:08:14.570
+You can find all that
+in the source code.
+
+00:08:14.570 --> 00:08:16.903
+Now, we'll spend a bit more
+time talking about that kind
+
+00:08:16.903 --> 00:08:18.390
+of stuff in a future entry.
+
+00:08:18.390 --> 00:08:21.100
+But for now, I will wish
+you a very good day,
+
+00:08:21.100 --> 00:08:24.150
+and thank you very
+much for watching.
+
+00:08:24.150 --> 00:08:25.540
+Hey, folks, thanks for watching.
+
+00:08:25.540 --> 00:08:27.706
+Don't forget that there is
+more content that you can
+
+00:08:27.706 --> 00:08:29.330
+find, kind of, over here-ish.
+
+00:08:29.330 --> 00:08:31.843
+And if you want to subscribe
+there's probably a button,
+
+00:08:31.843 --> 00:08:33.282
+I don't know, maybe there.
+
+00:08:33.282 --> 00:08:34.490
+Maybe somewhere around there.
+
+00:08:34.490 --> 00:08:36.370
+Click that if you've
+not done that.
+
+00:08:36.370 --> 00:08:38.300
+Brilliant.
+

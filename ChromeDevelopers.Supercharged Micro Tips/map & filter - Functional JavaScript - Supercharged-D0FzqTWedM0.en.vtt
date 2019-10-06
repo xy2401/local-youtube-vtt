@@ -1,0 +1,147 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.968
+[MUSIC PLAYING]
+
+00:00:11.420 --> 00:00:13.040
+SURMA: Functional
+programming has
+
+00:00:13.040 --> 00:00:16.239
+gotten more popular on the web
+recently with state-driven UI
+
+00:00:16.239 --> 00:00:18.860
+frameworks like React
+encouraging that kind
+
+00:00:18.860 --> 00:00:20.630
+of programming pattern.
+
+00:00:20.630 --> 00:00:22.850
+In this mini series, I
+want to kickstart you
+
+00:00:22.850 --> 00:00:26.060
+with short explanations of
+the functional array methods
+
+00:00:26.060 --> 00:00:28.100
+that JavaScript has.
+
+00:00:28.100 --> 00:00:31.580
+The two most basic and arguably
+most important functional array
+
+00:00:31.580 --> 00:00:34.610
+tools are map and
+filter, both of which
+
+00:00:34.610 --> 00:00:37.520
+are methods on an array
+and create new arrays
+
+00:00:37.520 --> 00:00:40.030
+with specific properties.
+
+00:00:40.030 --> 00:00:42.790
+Filter applies a function,
+also called a predicate,
+
+00:00:42.790 --> 00:00:45.820
+to each element in the
+array and only keeps
+
+00:00:45.820 --> 00:00:49.250
+the items where the
+predicate evaluates to true.
+
+00:00:49.250 --> 00:00:51.640
+For example, if you have
+an array of input fields,
+
+00:00:51.640 --> 00:00:54.700
+you might want to filter out
+all the input fields that don't
+
+00:00:54.700 --> 00:00:56.620
+have a value typed into them.
+
+00:00:56.620 --> 00:00:59.710
+Map also applies a function
+to each element in the array
+
+00:00:59.710 --> 00:01:02.560
+and replaces the original
+value in the new array
+
+00:01:02.560 --> 00:01:05.410
+with the return value
+of that function.
+
+00:01:05.410 --> 00:01:07.090
+And that might
+sound a bit arcane,
+
+00:01:07.090 --> 00:01:09.140
+but it is extremely powerful.
+
+00:01:09.140 --> 00:01:12.400
+So for example, after filtering
+down our list of input fields,
+
+00:01:12.400 --> 00:01:15.340
+we can now stop working
+on the enter DOM element
+
+00:01:15.340 --> 00:01:18.010
+and instead create JSON
+objects per element
+
+00:01:18.010 --> 00:01:20.110
+that contain only the
+bits of information
+
+00:01:20.110 --> 00:01:21.560
+that we actually need--
+
+00:01:21.560 --> 00:01:24.830
+so for example, the field's
+name and the field's value.
+
+00:01:24.830 --> 00:01:27.040
+So whenever you are
+working with collections,
+
+00:01:27.040 --> 00:01:30.010
+map and filter come
+in incredibly handy.
+
+00:01:30.010 --> 00:01:31.185
+See ya.
+
+00:01:31.185 --> 00:01:31.810
+[MUSIC PLAYING]
+
+00:01:31.810 --> 00:01:34.900
+Two array methods
+down, many more to go.
+
+00:01:34.900 --> 00:01:36.287
+If you find this
+interesting, you
+
+00:01:36.287 --> 00:01:37.870
+should subscribe to
+this channel so we
+
+00:01:37.870 --> 00:01:40.640
+can send you a notification
+when the next episode is out.
+
+00:01:40.640 --> 00:01:44.760
+But until then, why not
+watch some more Supercharged?
+

@@ -1,0 +1,165 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.194
+[MUSIC PLAYING]
+
+00:00:03.194 --> 00:00:04.610
+SURMA: One of the
+common issues we
+
+00:00:04.610 --> 00:00:06.440
+see when looking
+at people's sites
+
+00:00:06.440 --> 00:00:07.940
+is that they don't
+cache resources
+
+00:00:07.940 --> 00:00:09.500
+as well as they could.
+
+00:00:09.500 --> 00:00:11.570
+For example, they
+set resources are
+
+00:00:11.570 --> 00:00:14.570
+unlikely to change to
+expire after a few minutes,
+
+00:00:14.570 --> 00:00:16.650
+and sometimes irregularly
+changing files
+
+00:00:16.650 --> 00:00:18.830
+are set to cache
+for several weeks.
+
+00:00:18.830 --> 00:00:20.930
+And then you get into
+cache-busting and fighting
+
+00:00:20.930 --> 00:00:22.580
+with the browser's cache.
+
+00:00:22.580 --> 00:00:24.380
+What you probably
+want to do instead
+
+00:00:24.380 --> 00:00:27.410
+is to categorize your
+resources in one of two ways--
+
+00:00:27.410 --> 00:00:30.200
+things that need to be validated
+with a server and things
+
+00:00:30.200 --> 00:00:33.800
+that don't and can come
+straight from the HTTP cache.
+
+00:00:33.800 --> 00:00:36.500
+Something that does normally
+need to be revalidated
+
+00:00:36.500 --> 00:00:39.710
+is HTML, since that's the
+primary resource and the source
+
+00:00:39.710 --> 00:00:41.410
+of truth for your app.
+
+00:00:41.410 --> 00:00:44.780
+Here you want a cache note
+like this-- private, no-cache.
+
+00:00:44.780 --> 00:00:47.030
+That tells the browser that
+the resource is intended
+
+00:00:47.030 --> 00:00:49.910
+for just that user and that it
+should check with the server
+
+00:00:49.910 --> 00:00:51.200
+before serving it.
+
+00:00:51.200 --> 00:00:53.150
+Things that don't
+need to be validated
+
+00:00:53.150 --> 00:00:56.840
+would be things like
+JavaScript, CSS, or images.
+
+00:00:56.840 --> 00:00:59.270
+Here, you'll want to tell the
+browser that it should cache
+
+00:00:59.270 --> 00:01:01.440
+the resource for like a year.
+
+00:01:01.440 --> 00:01:04.319
+But what do you do if you
+need to change that resource?
+
+00:01:04.319 --> 00:01:06.770
+You include a hash or
+a [? version ?] name
+
+00:01:06.770 --> 00:01:08.271
+in the resources path.
+
+00:01:08.271 --> 00:01:09.770
+There are plenty
+of build tools that
+
+00:01:09.770 --> 00:01:11.940
+can help you achieve just that.
+
+00:01:11.940 --> 00:01:14.900
+Bear in mind that you shouldn't
+be caching your HTML, which
+
+00:01:14.900 --> 00:01:17.960
+means that when you change
+the far future cache resource,
+
+00:01:17.960 --> 00:01:21.230
+you can update the reference to
+it in the HTML and everything
+
+00:01:21.230 --> 00:01:22.849
+should just work out.
+
+00:01:22.849 --> 00:01:24.890
+If you want to see what
+your caching headers are,
+
+00:01:24.890 --> 00:01:27.890
+head to Dev Tools, Network
+Panel, click on a resource,
+
+00:01:27.890 --> 00:01:29.600
+and choose the Headers tab.
+
+00:01:29.600 --> 00:01:30.740
+Laters.
+
+00:01:30.740 --> 00:01:33.020
+For more on this topic, you
+can watch the Supercharged
+
+00:01:33.020 --> 00:01:37.010
+livestream I did on server-side
+rendering over there,
+
+00:01:37.010 --> 00:01:41.240
+or read Jake's blog post, which
+we link to in the description.
+
+00:01:41.240 --> 00:01:45.190
+But more importantly--
+you actually know.
+

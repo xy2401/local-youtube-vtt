@@ -1,0 +1,952 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.850 --> 00:00:04.370 align:start position:0%
+ 
+the<00:00:02.850><c> purpose</c><00:00:03.270><c> of</c><00:00:03.419><c> this</c><00:00:03.510><c> short</c><00:00:03.810><c> video</c><00:00:03.959><c> is</c><00:00:04.170><c> to</c>
+
+00:00:04.370 --> 00:00:04.380 align:start position:0%
+the purpose of this short video is to
+ 
+
+00:00:04.380 --> 00:00:06.829 align:start position:0%
+the purpose of this short video is to
+show<00:00:04.799><c> how</c><00:00:05.009><c> to</c><00:00:05.069><c> set</c><00:00:05.400><c> up</c><00:00:05.430><c> the</c><00:00:05.759><c> IntelliJ</c><00:00:06.450><c> IDEA</c>
+
+00:00:06.829 --> 00:00:06.839 align:start position:0%
+show how to set up the IntelliJ IDEA
+ 
+
+00:00:06.839 --> 00:00:08.839 align:start position:0%
+show how to set up the IntelliJ IDEA
+development<00:00:07.560><c> environment</c><00:00:08.160><c> for</c><00:00:08.220><c> skaaland</c>
+
+00:00:08.839 --> 00:00:08.849 align:start position:0%
+development environment for skaaland
+ 
+
+00:00:08.849 --> 00:00:12.830 align:start position:0%
+development environment for skaaland
+development<00:00:10.340><c> prerequisites</c><00:00:11.340><c> are</c><00:00:11.690><c> that</c><00:00:12.690><c> you</c>
+
+00:00:12.830 --> 00:00:12.840 align:start position:0%
+development prerequisites are that you
+ 
+
+00:00:12.840 --> 00:00:15.350 align:start position:0%
+development prerequisites are that you
+already<00:00:12.990><c> have</c><00:00:13.469><c> a</c><00:00:13.769><c> suitable</c><00:00:14.340><c> Java</c><00:00:14.700><c> development</c>
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+already have a suitable Java development
+ 
+
+00:00:15.360 --> 00:00:19.519 align:start position:0%
+already have a suitable Java development
+kit<00:00:15.570><c> or</c><00:00:15.929><c> Java</c><00:00:16.379><c> SDK</c><00:00:16.880><c> for</c><00:00:17.880><c> your</c><00:00:18.029><c> platform</c><00:00:18.270><c> and</c><00:00:18.869><c> an</c>
+
+00:00:19.519 --> 00:00:19.529 align:start position:0%
+kit or Java SDK for your platform and an
+ 
+
+00:00:19.529 --> 00:00:22.429 align:start position:0%
+kit or Java SDK for your platform and an
+installation<00:00:20.340><c> of</c><00:00:20.970><c> IntelliJ</c><00:00:21.689><c> IDEA</c><00:00:22.020><c> itself</c>
+
+00:00:22.429 --> 00:00:22.439 align:start position:0%
+installation of IntelliJ IDEA itself
+ 
+
+00:00:22.439 --> 00:00:25.070 align:start position:0%
+installation of IntelliJ IDEA itself
+we're<00:00:23.400><c> using</c><00:00:23.640><c> the</c><00:00:23.910><c> community</c><00:00:24.480><c> edition</c><00:00:24.689><c> here</c>
+
+00:00:25.070 --> 00:00:25.080 align:start position:0%
+we're using the community edition here
+ 
+
+00:00:25.080 --> 00:00:27.800 align:start position:0%
+we're using the community edition here
+first<00:00:25.800><c> thing</c><00:00:26.070><c> after</c><00:00:26.310><c> launch</c><00:00:26.699><c> is</c><00:00:26.970><c> to</c><00:00:27.300><c> check</c><00:00:27.570><c> for</c>
+
+00:00:27.800 --> 00:00:27.810 align:start position:0%
+first thing after launch is to check for
+ 
+
+00:00:27.810 --> 00:00:31.040 align:start position:0%
+first thing after launch is to check for
+updates<00:00:28.230><c> and</c><00:00:29.179><c> here</c><00:00:30.179><c> we're</c><00:00:30.359><c> good</c><00:00:30.570><c> to</c><00:00:30.689><c> go</c><00:00:30.720><c> and</c>
+
+00:00:31.040 --> 00:00:31.050 align:start position:0%
+updates and here we're good to go and
+ 
+
+00:00:31.050 --> 00:00:34.310 align:start position:0%
+updates and here we're good to go and
+the<00:00:31.679><c> next</c><00:00:31.920><c> step</c><00:00:32.070><c> is</c><00:00:32.189><c> to</c><00:00:32.369><c> install</c><00:00:32.610><c> the</c><00:00:33.320><c> required</c>
+
+00:00:34.310 --> 00:00:34.320 align:start position:0%
+the next step is to install the required
+ 
+
+00:00:34.320 --> 00:00:38.450 align:start position:0%
+the next step is to install the required
+plugins<00:00:34.770><c> so</c><00:00:35.219><c> we'll</c><00:00:35.399><c> go</c><00:00:35.550><c> to</c><00:00:35.610><c> preferences</c><00:00:37.460><c> we'll</c>
+
+00:00:38.450 --> 00:00:38.460 align:start position:0%
+plugins so we'll go to preferences we'll
+ 
+
+00:00:38.460 --> 00:00:42.080 align:start position:0%
+plugins so we'll go to preferences we'll
+scroll<00:00:38.760><c> down</c><00:00:38.820><c> to</c><00:00:39.270><c> plugins</c><00:00:39.570><c> and</c><00:00:40.760><c> browse</c><00:00:41.760><c> the</c>
+
+00:00:42.080 --> 00:00:42.090 align:start position:0%
+scroll down to plugins and browse the
+ 
+
+00:00:42.090 --> 00:00:45.560 align:start position:0%
+scroll down to plugins and browse the
+repositories<00:00:43.520><c> the</c><00:00:44.520><c> first</c><00:00:44.879><c> plug-in</c><00:00:45.239><c> we'll</c>
+
+00:00:45.560 --> 00:00:45.570 align:start position:0%
+repositories the first plug-in we'll
+ 
+
+00:00:45.570 --> 00:00:48.560 align:start position:0%
+repositories the first plug-in we'll
+grab<00:00:45.840><c> is</c><00:00:46.170><c> not</c><00:00:46.649><c> strictly</c><00:00:47.160><c> required</c><00:00:47.460><c> but</c><00:00:48.120><c> will</c>
+
+00:00:48.560 --> 00:00:48.570 align:start position:0%
+grab is not strictly required but will
+ 
+
+00:00:48.570 --> 00:00:51.830 align:start position:0%
+grab is not strictly required but will
+be<00:00:48.719><c> using</c><00:00:49.140><c> big</c><00:00:49.379><c> bucket</c><00:00:49.770><c> a</c><00:00:49.860><c> lot</c><00:00:50.239><c> so</c><00:00:51.239><c> let's</c><00:00:51.539><c> grab</c>
+
+00:00:51.830 --> 00:00:51.840 align:start position:0%
+be using big bucket a lot so let's grab
+ 
+
+00:00:51.840 --> 00:00:55.310 align:start position:0%
+be using big bucket a lot so let's grab
+that<00:00:52.079><c> one</c><00:00:52.289><c> right</c><00:00:53.039><c> click</c><00:00:54.050><c> download</c><00:00:55.050><c> and</c>
+
+00:00:55.310 --> 00:00:55.320 align:start position:0%
+that one right click download and
+ 
+
+00:00:55.320 --> 00:01:10.040 align:start position:0%
+that one right click download and
+install
+
+00:01:10.040 --> 00:01:10.050 align:start position:0%
+ 
+ 
+
+00:01:10.050 --> 00:01:14.900 align:start position:0%
+ 
+and<00:01:10.700><c> the</c><00:01:11.700><c> next</c><00:01:11.910><c> one</c><00:01:12.210><c> is</c><00:01:12.830><c> the</c><00:01:13.830><c> Scala</c><00:01:14.280><c> plug-in</c>
+
+00:01:14.900 --> 00:01:14.910 align:start position:0%
+and the next one is the Scala plug-in
+ 
+
+00:01:14.910 --> 00:01:20.090 align:start position:0%
+and the next one is the Scala plug-in
+itself<00:01:16.310><c> click</c><00:01:17.310><c> on</c><00:01:17.490><c> that</c><00:01:17.700><c> one</c><00:01:17.940><c> right</c><00:01:19.100><c> click</c>
+
+00:01:20.090 --> 00:01:20.100 align:start position:0%
+itself click on that one right click
+ 
+
+00:01:20.100 --> 00:01:23.780 align:start position:0%
+itself click on that one right click
+download<00:01:20.610><c> and</c><00:01:20.850><c> install</c><00:01:22.010><c> this</c><00:01:23.010><c> is</c><00:01:23.190><c> a</c><00:01:23.220><c> somewhat</c>
+
+00:01:23.780 --> 00:01:23.790 align:start position:0%
+download and install this is a somewhat
+ 
+
+00:01:23.790 --> 00:01:34.460 align:start position:0%
+download and install this is a somewhat
+longer<00:01:24.090><c> download</c><00:01:32.630><c> so</c><00:01:33.630><c> the</c><00:01:33.810><c> assumption</c><00:01:34.290><c> is</c>
+
+00:01:34.460 --> 00:01:34.470 align:start position:0%
+longer download so the assumption is
+ 
+
+00:01:34.470 --> 00:01:36.890 align:start position:0%
+longer download so the assumption is
+that<00:01:34.500><c> you</c><00:01:34.920><c> would</c><00:01:35.070><c> have</c><00:01:35.480><c> closed</c><00:01:36.480><c> the</c>
+
+00:01:36.890 --> 00:01:36.900 align:start position:0%
+that you would have closed the
+ 
+
+00:01:36.900 --> 00:01:40.490 align:start position:0%
+that you would have closed the
+repository<00:01:37.740><c> browser</c><00:01:38.660><c> for</c><00:01:39.660><c> the</c><00:01:39.780><c> plugins</c><00:01:40.230><c> and</c>
+
+00:01:40.490 --> 00:01:40.500 align:start position:0%
+repository browser for the plugins and
+ 
+
+00:01:40.500 --> 00:01:44.810 align:start position:0%
+repository browser for the plugins and
+then<00:01:41.150><c> allowed</c><00:01:42.150><c> the</c><00:01:42.330><c> IDE</c><00:01:42.660><c> to</c><00:01:42.990><c> restart</c><00:01:43.530><c> and</c><00:01:43.820><c> the</c>
+
+00:01:44.810 --> 00:01:44.820 align:start position:0%
+then allowed the IDE to restart and the
+ 
+
+00:01:44.820 --> 00:01:48.520 align:start position:0%
+then allowed the IDE to restart and the
+next<00:01:45.060><c> step</c><00:01:45.240><c> is</c><00:01:45.480><c> to</c><00:01:45.780><c> create</c><00:01:46.080><c> a</c><00:01:46.110><c> new</c><00:01:46.380><c> project</c><00:01:46.820><c> and</c>
+
+00:01:48.520 --> 00:01:48.530 align:start position:0%
+next step is to create a new project and
+ 
+
+00:01:48.530 --> 00:01:52.580 align:start position:0%
+next step is to create a new project and
+we<00:01:49.530><c> will</c><00:01:49.830><c> want</c><00:01:50.040><c> an</c><00:01:50.280><c> SBT</c><00:01:50.970><c> project</c><00:01:51.540><c> SBT</c><00:01:52.080><c> is</c><00:01:52.230><c> Scala</c>
+
+00:01:52.580 --> 00:01:52.590 align:start position:0%
+we will want an SBT project SBT is Scala
+ 
+
+00:01:52.590 --> 00:01:55.280 align:start position:0%
+we will want an SBT project SBT is Scala
+simple<00:01:53.220><c> build</c><00:01:53.490><c> tool</c><00:01:53.790><c> which</c><00:01:54.600><c> allows</c><00:01:54.990><c> us</c><00:01:55.260><c> to</c>
+
+00:01:55.280 --> 00:01:55.290 align:start position:0%
+simple build tool which allows us to
+ 
+
+00:01:55.290 --> 00:01:57.830 align:start position:0%
+simple build tool which allows us to
+create<00:01:55.740><c> a</c><00:01:55.860><c> project</c><00:01:56.280><c> with</c><00:01:56.730><c> room</c><00:01:57.060><c> to</c><00:01:57.390><c> grow</c><00:01:57.420><c> in</c>
+
+00:01:57.830 --> 00:01:57.840 align:start position:0%
+create a project with room to grow in
+ 
+
+00:01:57.840 --> 00:02:00.800 align:start position:0%
+create a project with room to grow in
+terms<00:01:58.050><c> of</c><00:01:58.260><c> external</c><00:01:58.740><c> dependencies</c><00:01:59.490><c> and</c><00:02:00.390><c> we'll</c>
+
+00:02:00.800 --> 00:02:00.810 align:start position:0%
+terms of external dependencies and we'll
+ 
+
+00:02:00.810 --> 00:02:02.510 align:start position:0%
+terms of external dependencies and we'll
+put<00:02:00.990><c> this</c><00:02:01.140><c> in</c><00:02:01.380><c> a</c><00:02:01.470><c> suitable</c><00:02:01.920><c> place</c><00:02:02.190><c> in</c><00:02:02.400><c> our</c>
+
+00:02:02.510 --> 00:02:02.520 align:start position:0%
+put this in a suitable place in our
+ 
+
+00:02:02.520 --> 00:02:09.940 align:start position:0%
+put this in a suitable place in our
+directory<00:02:03.000><c> hierarchy</c><00:02:03.590><c> and</c><00:02:04.590><c> hit</c><00:02:04.770><c> finish</c><00:02:05.070><c> and</c>
+
+00:02:09.940 --> 00:02:09.950 align:start position:0%
+ 
+ 
+
+00:02:09.950 --> 00:02:15.650 align:start position:0%
+ 
+we<00:02:10.950><c> can</c><00:02:11.100><c> close</c><00:02:11.340><c> the</c><00:02:11.610><c> tooltip</c><00:02:12.090><c> and</c><00:02:14.270><c> the</c><00:02:15.270><c> first</c>
+
+00:02:15.650 --> 00:02:15.660 align:start position:0%
+we can close the tooltip and the first
+ 
+
+00:02:15.660 --> 00:02:20.710 align:start position:0%
+we can close the tooltip and the first
+thing<00:02:15.989><c> to</c><00:02:16.170><c> do</c><00:02:16.350><c> is</c><00:02:17.450><c> to</c><00:02:18.450><c> create</c><00:02:18.750><c> a</c><00:02:19.610><c> suitable</c>
+
+00:02:20.710 --> 00:02:20.720 align:start position:0%
+thing to do is to create a suitable
+ 
+
+00:02:20.720 --> 00:02:25.310 align:start position:0%
+thing to do is to create a suitable
+source<00:02:21.720><c> directory</c><00:02:23.060><c> by</c><00:02:24.060><c> clicking</c><00:02:24.690><c> on</c><00:02:24.900><c> the</c>
+
+00:02:25.310 --> 00:02:25.320 align:start position:0%
+source directory by clicking on the
+ 
+
+00:02:25.320 --> 00:02:29.210 align:start position:0%
+source directory by clicking on the
+hello<00:02:25.709><c> project</c><00:02:26.250><c> node</c><00:02:26.459><c> new</c><00:02:26.880><c> directory</c><00:02:27.570><c> and</c><00:02:28.220><c> we</c>
+
+00:02:29.210 --> 00:02:29.220 align:start position:0%
+hello project node new directory and we
+ 
+
+00:02:29.220 --> 00:02:33.440 align:start position:0%
+hello project node new directory and we
+can<00:02:29.459><c> create</c><00:02:30.170><c> the</c><00:02:31.220><c> entire</c><00:02:32.220><c> hierarchy</c><00:02:32.580><c> source</c>
+
+00:02:33.440 --> 00:02:33.450 align:start position:0%
+can create the entire hierarchy source
+ 
+
+00:02:33.450 --> 00:02:40.130 align:start position:0%
+can create the entire hierarchy source
+main<00:02:34.640><c> Scala</c><00:02:35.640><c> in</c><00:02:36.060><c> one</c><00:02:36.420><c> step</c><00:02:37.850><c> and</c><00:02:38.930><c> when</c><00:02:39.930><c> you</c><00:02:40.020><c> do</c>
+
+00:02:40.130 --> 00:02:40.140 align:start position:0%
+main Scala in one step and when you do
+ 
+
+00:02:40.140 --> 00:02:43.340 align:start position:0%
+main Scala in one step and when you do
+this<00:02:40.290><c> the</c><00:02:40.470><c> first</c><00:02:40.770><c> time</c><00:02:41.070><c> the</c><00:02:42.030><c> Scala</c><00:02:42.750><c> directory</c>
+
+00:02:43.340 --> 00:02:43.350 align:start position:0%
+this the first time the Scala directory
+ 
+
+00:02:43.350 --> 00:02:45.380 align:start position:0%
+this the first time the Scala directory
+might<00:02:43.530><c> not</c><00:02:43.709><c> show</c><00:02:43.980><c> up</c><00:02:44.130><c> in</c><00:02:44.310><c> light</c><00:02:44.520><c> blue</c><00:02:44.760><c> yet</c><00:02:45.120><c> so</c>
+
+00:02:45.380 --> 00:02:45.390 align:start position:0%
+might not show up in light blue yet so
+ 
+
+00:02:45.390 --> 00:02:46.940 align:start position:0%
+might not show up in light blue yet so
+you'll<00:02:45.570><c> probably</c><00:02:45.840><c> want</c><00:02:46.140><c> to</c><00:02:46.200><c> wait</c><00:02:46.350><c> until</c><00:02:46.770><c> that</c>
+
+00:02:46.940 --> 00:02:46.950 align:start position:0%
+you'll probably want to wait until that
+ 
+
+00:02:46.950 --> 00:02:52.060 align:start position:0%
+you'll probably want to wait until that
+happens<00:02:47.370><c> and</c><00:02:47.580><c> then</c><00:02:48.330><c> right-click</c><00:02:49.580><c> new</c><00:02:50.580><c> and</c>
+
+00:02:52.060 --> 00:02:52.070 align:start position:0%
+happens and then right-click new and
+ 
+
+00:02:52.070 --> 00:02:55.160 align:start position:0%
+happens and then right-click new and
+choose<00:02:53.070><c> Scala</c><00:02:53.760><c> class</c><00:02:54.209><c> if</c><00:02:54.570><c> you</c><00:02:54.780><c> don't</c><00:02:54.959><c> see</c>
+
+00:02:55.160 --> 00:02:55.170 align:start position:0%
+choose Scala class if you don't see
+ 
+
+00:02:55.170 --> 00:02:58.310 align:start position:0%
+choose Scala class if you don't see
+Scala<00:02:55.500><c> class</c><00:02:56.720><c> you</c><00:02:57.720><c> will</c><00:02:57.870><c> need</c><00:02:57.900><c> to</c><00:02:58.140><c> wait</c><00:02:58.260><c> a</c>
+
+00:02:58.310 --> 00:02:58.320 align:start position:0%
+Scala class you will need to wait a
+ 
+
+00:02:58.320 --> 00:03:02.110 align:start position:0%
+Scala class you will need to wait a
+little<00:02:58.590><c> longer</c><00:02:58.709><c> until</c><00:02:59.550><c> it</c><00:02:59.850><c> processes</c><00:03:00.510><c> the</c>
+
+00:03:02.110 --> 00:03:02.120 align:start position:0%
+little longer until it processes the
+ 
+
+00:03:02.120 --> 00:03:06.440 align:start position:0%
+little longer until it processes the
+plugin<00:03:03.120><c> and</c><00:03:03.920><c> indexes</c><00:03:04.920><c> the</c><00:03:04.950><c> jars</c><00:03:05.580><c> that</c><00:03:06.030><c> belong</c>
+
+00:03:06.440 --> 00:03:06.450 align:start position:0%
+plugin and indexes the jars that belong
+ 
+
+00:03:06.450 --> 00:03:08.060 align:start position:0%
+plugin and indexes the jars that belong
+to<00:03:06.480><c> the</c><00:03:06.690><c> plugins</c><00:03:07.080><c> so</c><00:03:07.230><c> let's</c><00:03:07.440><c> say</c><00:03:07.590><c> we'll</c><00:03:07.860><c> create</c>
+
+00:03:08.060 --> 00:03:08.070 align:start position:0%
+to the plugins so let's say we'll create
+ 
+
+00:03:08.070 --> 00:03:10.490 align:start position:0%
+to the plugins so let's say we'll create
+the<00:03:08.190><c> Scala</c><00:03:08.610><c> class</c><00:03:08.940><c> will</c><00:03:09.720><c> actually</c><00:03:09.750><c> want</c><00:03:10.260><c> an</c>
+
+00:03:10.490 --> 00:03:10.500 align:start position:0%
+the Scala class will actually want an
+ 
+
+00:03:10.500 --> 00:03:14.090 align:start position:0%
+the Scala class will actually want an
+object<00:03:11.100><c> and</c><00:03:11.340><c> let's</c><00:03:11.760><c> call</c><00:03:12.060><c> that</c><00:03:12.120><c> hello</c><00:03:13.100><c> and</c>
+
+00:03:14.090 --> 00:03:14.100 align:start position:0%
+object and let's call that hello and
+ 
+
+00:03:14.100 --> 00:03:16.729 align:start position:0%
+object and let's call that hello and
+we'll<00:03:14.489><c> turn</c><00:03:14.700><c> that</c><00:03:14.760><c> into</c><00:03:15.150><c> the</c><00:03:15.739><c> simplest</c>
+
+00:03:16.729 --> 00:03:16.739 align:start position:0%
+we'll turn that into the simplest
+ 
+
+00:03:16.739 --> 00:03:20.180 align:start position:0%
+we'll turn that into the simplest
+possible<00:03:17.070><c> Scala</c><00:03:17.880><c> app</c><00:03:18.150><c> so</c><00:03:18.780><c> we'll</c><00:03:19.620><c> add</c><00:03:19.830><c> here</c>
+
+00:03:20.180 --> 00:03:20.190 align:start position:0%
+possible Scala app so we'll add here
+ 
+
+00:03:20.190 --> 00:03:23.420 align:start position:0%
+possible Scala app so we'll add here
+extends<00:03:21.060><c> app</c><00:03:21.390><c> and</c><00:03:22.040><c> put</c><00:03:23.040><c> as</c>
+
+00:03:23.420 --> 00:03:23.430 align:start position:0%
+extends app and put as
+ 
+
+00:03:23.430 --> 00:03:28.459 align:start position:0%
+extends app and put as
+the<00:03:23.519><c> body</c><00:03:24.650><c> println</c><00:03:25.650><c> hello</c><00:03:26.189><c> and</c><00:03:27.140><c> we</c><00:03:28.140><c> should</c><00:03:28.349><c> be</c>
+
+00:03:28.459 --> 00:03:28.469 align:start position:0%
+the body println hello and we should be
+ 
+
+00:03:28.469 --> 00:03:32.899 align:start position:0%
+the body println hello and we should be
+good<00:03:28.620><c> to</c><00:03:28.680><c> go</c><00:03:28.829><c> so</c><00:03:29.689><c> now</c><00:03:30.689><c> let's</c><00:03:31.109><c> try</c><00:03:31.349><c> to</c><00:03:31.409><c> run</c><00:03:31.909><c> this</c>
+
+00:03:32.899 --> 00:03:32.909 align:start position:0%
+good to go so now let's try to run this
+ 
+
+00:03:32.909 --> 00:03:38.990 align:start position:0%
+good to go so now let's try to run this
+app<00:03:33.319><c> by</c><00:03:34.319><c> right-clicking</c><00:03:35.129><c> on</c><00:03:35.459><c> hello</c><00:03:36.500><c> and</c><00:03:38.000><c> we</c>
+
+00:03:38.990 --> 00:03:39.000 align:start position:0%
+app by right-clicking on hello and we
+ 
+
+00:03:39.000 --> 00:03:42.649 align:start position:0%
+app by right-clicking on hello and we
+don't<00:03:39.180><c> yet</c><00:03:39.569><c> see</c><00:03:39.989><c> an</c><00:03:40.409><c> item</c><00:03:41.400><c> to</c><00:03:41.549><c> do</c><00:03:41.700><c> that</c><00:03:41.909><c> that's</c>
+
+00:03:42.649 --> 00:03:42.659 align:start position:0%
+don't yet see an item to do that that's
+ 
+
+00:03:42.659 --> 00:03:46.160 align:start position:0%
+don't yet see an item to do that that's
+because<00:03:43.200><c> we</c><00:03:43.680><c> still</c><00:03:44.010><c> need</c><00:03:44.069><c> to</c><00:03:44.340><c> add</c><00:03:44.489><c> a</c><00:03:44.519><c> JDK</c><00:03:45.329><c> so</c>
+
+00:03:46.160 --> 00:03:46.170 align:start position:0%
+because we still need to add a JDK so
+ 
+
+00:03:46.170 --> 00:03:51.160 align:start position:0%
+because we still need to add a JDK so
+let's<00:03:46.500><c> go</c><00:03:46.799><c> to</c><00:03:46.859><c> file</c><00:03:47.670><c> project</c><00:03:48.209><c> structure</c><00:03:48.930><c> and</c>
+
+00:03:51.160 --> 00:03:51.170 align:start position:0%
+let's go to file project structure and
+ 
+
+00:03:51.170 --> 00:03:54.920 align:start position:0%
+let's go to file project structure and
+we<00:03:52.170><c> see</c><00:03:52.560><c> here</c><00:03:53.069><c> that</c><00:03:53.670><c> there</c><00:03:53.939><c> isn't</c><00:03:54.150><c> a</c><00:03:54.420><c> project</c>
+
+00:03:54.920 --> 00:03:54.930 align:start position:0%
+we see here that there isn't a project
+ 
+
+00:03:54.930 --> 00:03:58.399 align:start position:0%
+we see here that there isn't a project
+SDK<00:03:55.530><c> so</c><00:03:55.739><c> what</c><00:03:56.129><c> we</c><00:03:56.280><c> want</c><00:03:56.489><c> to</c><00:03:56.549><c> do</c><00:03:56.819><c> if</c><00:03:57.720><c> you</c><00:03:57.870><c> don't</c>
+
+00:03:58.399 --> 00:03:58.409 align:start position:0%
+SDK so what we want to do if you don't
+ 
+
+00:03:58.409 --> 00:04:01.089 align:start position:0%
+SDK so what we want to do if you don't
+see<00:03:58.680><c> a</c><00:03:58.709><c> valid</c><00:03:59.310><c> SDK</c><00:03:59.879><c> here</c><00:04:00.239><c> in</c><00:04:00.389><c> this</c><00:04:00.480><c> drop-down</c>
+
+00:04:01.089 --> 00:04:01.099 align:start position:0%
+see a valid SDK here in this drop-down
+ 
+
+00:04:01.099 --> 00:04:05.479 align:start position:0%
+see a valid SDK here in this drop-down
+we<00:04:02.099><c> will</c><00:04:02.280><c> want</c><00:04:02.519><c> to</c><00:04:02.639><c> create</c><00:04:03.090><c> a</c><00:04:03.689><c> new</c><00:04:04.169><c> an</c><00:04:04.500><c> entry</c>
+
+00:04:05.479 --> 00:04:05.489 align:start position:0%
+we will want to create a new an entry
+ 
+
+00:04:05.489 --> 00:04:11.990 align:start position:0%
+we will want to create a new an entry
+for<00:04:05.790><c> a</c><00:04:05.819><c> new</c><00:04:07.459><c> Java</c><00:04:08.459><c> 6</c><00:04:08.939><c> SDK</c><00:04:09.900><c> and</c><00:04:10.430><c> we</c><00:04:11.430><c> will</c><00:04:11.669><c> want</c><00:04:11.819><c> to</c>
+
+00:04:11.990 --> 00:04:12.000 align:start position:0%
+for a new Java 6 SDK and we will want to
+ 
+
+00:04:12.000 --> 00:04:14.750 align:start position:0%
+for a new Java 6 SDK and we will want to
+navigate<00:04:12.209><c> to</c><00:04:12.599><c> the</c><00:04:13.200><c> corresponding</c><00:04:14.129><c> Java</c><00:04:14.400><c> home</c>
+
+00:04:14.750 --> 00:04:14.760 align:start position:0%
+navigate to the corresponding Java home
+ 
+
+00:04:14.760 --> 00:04:18.830 align:start position:0%
+navigate to the corresponding Java home
+on<00:04:15.030><c> your</c><00:04:15.359><c> machine</c><00:04:15.689><c> so</c><00:04:16.560><c> in</c><00:04:17.000><c> case</c><00:04:18.000><c> of</c><00:04:18.209><c> the</c><00:04:18.329><c> Mac</c><00:04:18.570><c> it</c>
+
+00:04:18.830 --> 00:04:18.840 align:start position:0%
+on your machine so in case of the Mac it
+ 
+
+00:04:18.840 --> 00:04:29.300 align:start position:0%
+on your machine so in case of the Mac it
+would<00:04:19.019><c> be</c><00:04:21.710><c> Java</c><00:04:22.710><c> a</c><00:04:24.979><c> home</c><00:04:26.030><c> and</c><00:04:27.680><c> let's</c><00:04:28.680><c> try</c><00:04:29.039><c> that</c>
+
+00:04:29.300 --> 00:04:29.310 align:start position:0%
+would be Java a home and let's try that
+ 
+
+00:04:29.310 --> 00:04:34.430 align:start position:0%
+would be Java a home and let's try that
+and<00:04:29.520><c> that</c><00:04:29.970><c> gives</c><00:04:30.240><c> us</c><00:04:30.479><c> the</c><00:04:30.720><c> default</c><00:04:32.210><c> 1.6</c><00:04:33.440><c> Java</c>
+
+00:04:34.430 --> 00:04:34.440 align:start position:0%
+and that gives us the default 1.6 Java
+ 
+
+00:04:34.440 --> 00:04:38.149 align:start position:0%
+and that gives us the default 1.6 Java
+SDK<00:04:34.680><c> on</c><00:04:35.250><c> the</c><00:04:35.370><c> Mac</c><00:04:36.560><c> let's</c><00:04:37.560><c> look</c><00:04:37.830><c> at</c><00:04:37.979><c> these</c>
+
+00:04:38.149 --> 00:04:38.159 align:start position:0%
+SDK on the Mac let's look at these
+ 
+
+00:04:38.159 --> 00:04:43.510 align:start position:0%
+SDK on the Mac let's look at these
+errors<00:04:40.460><c> that</c><00:04:41.460><c> will</c><00:04:41.760><c> be</c><00:04:41.940><c> fixed</c><00:04:42.300><c> after</c><00:04:42.510><c> we</c><00:04:42.840><c> apply</c>
+
+00:04:43.510 --> 00:04:43.520 align:start position:0%
+errors that will be fixed after we apply
+ 
+
+00:04:43.520 --> 00:04:53.779 align:start position:0%
+errors that will be fixed after we apply
+this<00:04:44.520><c> change</c><00:04:49.639><c> and</c><00:04:50.639><c> now</c><00:04:51.590><c> it's</c><00:04:52.590><c> reindex</c><00:04:53.220><c> in</c><00:04:53.580><c> some</c>
+
+00:04:53.779 --> 00:04:53.789 align:start position:0%
+this change and now it's reindex in some
+ 
+
+00:04:53.789 --> 00:05:05.549 align:start position:0%
+this change and now it's reindex in some
+of<00:04:53.909><c> the</c><00:04:54.000><c> jars</c>
+
+00:05:05.549 --> 00:05:05.559 align:start position:0%
+ 
+ 
+
+00:05:05.559 --> 00:05:08.639 align:start position:0%
+ 
+and<00:05:05.649><c> we</c><00:05:05.829><c> should</c><00:05:06.039><c> now</c><00:05:06.189><c> be</c><00:05:06.369><c> good</c><00:05:06.549><c> to</c><00:05:06.759><c> go</c><00:05:07.649><c> so</c>
+
+00:05:08.639 --> 00:05:08.649 align:start position:0%
+and we should now be good to go so
+ 
+
+00:05:08.649 --> 00:05:10.769 align:start position:0%
+and we should now be good to go so
+right-click<00:05:08.949><c> again</c><00:05:09.369><c> and</c><00:05:09.549><c> indeed</c><00:05:10.179><c> now</c><00:05:10.359><c> it</c><00:05:10.569><c> says</c>
+
+00:05:10.769 --> 00:05:10.779 align:start position:0%
+right-click again and indeed now it says
+ 
+
+00:05:10.779 --> 00:05:11.789 align:start position:0%
+right-click again and indeed now it says
+run<00:05:11.109><c> hello</c>
+
+00:05:11.789 --> 00:05:11.799 align:start position:0%
+run hello
+ 
+
+00:05:11.799 --> 00:05:17.429 align:start position:0%
+run hello
+let's<00:05:12.699><c> try</c><00:05:12.999><c> that</c><00:05:15.269><c> and</c><00:05:16.269><c> there's</c><00:05:17.049><c> a</c><00:05:17.139><c> little</c>
+
+00:05:17.429 --> 00:05:17.439 align:start position:0%
+let's try that and there's a little
+ 
+
+00:05:17.439 --> 00:05:21.479 align:start position:0%
+let's try that and there's a little
+error<00:05:17.679><c> and</c><00:05:18.779><c> this</c><00:05:19.779><c> is</c><00:05:19.959><c> a</c><00:05:19.989><c> bug</c><00:05:20.469><c> in</c><00:05:20.709><c> the</c><00:05:21.159><c> Scala</c>
+
+00:05:21.479 --> 00:05:21.489 align:start position:0%
+error and this is a bug in the Scala
+ 
+
+00:05:21.489 --> 00:05:24.539 align:start position:0%
+error and this is a bug in the Scala
+plugin<00:05:21.999><c> as</c><00:05:22.179><c> far</c><00:05:22.989><c> as</c><00:05:23.139><c> I</c><00:05:23.229><c> can</c><00:05:23.289><c> tell</c><00:05:23.619><c> and</c><00:05:23.799><c> that</c>
+
+00:05:24.539 --> 00:05:24.549 align:start position:0%
+plugin as far as I can tell and that
+ 
+
+00:05:24.549 --> 00:05:29.129 align:start position:0%
+plugin as far as I can tell and that
+workaround<00:05:25.179><c> is</c><00:05:25.739><c> to</c><00:05:26.739><c> create</c><00:05:27.509><c> the</c><00:05:28.509><c> missing</c>
+
+00:05:29.129 --> 00:05:29.139 align:start position:0%
+workaround is to create the missing
+ 
+
+00:05:29.139 --> 00:05:33.079 align:start position:0%
+workaround is to create the missing
+output<00:05:29.859><c> directory</c><00:05:30.869><c> manually</c><00:05:31.869><c> the</c><00:05:32.169><c> first</c><00:05:32.499><c> time</c>
+
+00:05:33.079 --> 00:05:33.089 align:start position:0%
+output directory manually the first time
+ 
+
+00:05:33.089 --> 00:05:37.919 align:start position:0%
+output directory manually the first time
+so<00:05:34.089><c> we'll</c><00:05:34.359><c> create</c><00:05:34.629><c> as</c><00:05:35.379><c> it</c><00:05:35.709><c> says</c><00:05:35.949><c> down</c><00:05:36.249><c> here</c><00:05:36.929><c> a</c>
+
+00:05:37.919 --> 00:05:37.929 align:start position:0%
+so we'll create as it says down here a
+ 
+
+00:05:37.929 --> 00:05:45.199 align:start position:0%
+so we'll create as it says down here a
+target<00:05:38.679><c> slash</c><00:05:38.979><c> scallop</c><00:05:39.809><c> 2.10</c><00:05:40.869><c> slash</c><00:05:41.349><c> classes</c>
+
+00:05:45.199 --> 00:05:45.209 align:start position:0%
+ 
+ 
+
+00:05:45.209 --> 00:05:52.979 align:start position:0%
+ 
+so<00:05:46.229><c> hello</c><00:05:47.229><c> new</c><00:05:47.589><c> directory</c><00:05:49.829><c> target</c><00:05:51.029><c> Scala</c><00:05:52.029><c> -</c><00:05:52.509><c> 2</c>
+
+00:05:52.979 --> 00:05:52.989 align:start position:0%
+so hello new directory target Scala - 2
+ 
+
+00:05:52.989 --> 00:05:57.209 align:start position:0%
+so hello new directory target Scala - 2
+.<00:05:53.229><c> n</c><00:05:53.529><c> slash</c><00:05:54.519><c> classes</c><00:05:55.559><c> there</c><00:05:56.559><c> might</c><00:05:56.739><c> be</c><00:05:56.769><c> another</c>
+
+00:05:57.209 --> 00:05:57.219 align:start position:0%
+. n slash classes there might be another
+ 
+
+00:05:57.219 --> 00:06:01.349 align:start position:0%
+. n slash classes there might be another
+error<00:05:57.549><c> message</c><00:05:58.259><c> that</c><00:05:59.259><c> we</c><00:05:59.499><c> can</c><00:06:00.359><c> probably</c>
+
+00:06:01.349 --> 00:06:01.359 align:start position:0%
+error message that we can probably
+ 
+
+00:06:01.359 --> 00:06:11.459 align:start position:0%
+error message that we can probably
+ignore<00:06:06.179><c> let's</c><00:06:07.179><c> check</c><00:06:07.769><c> and</c><00:06:09.599><c> try</c><00:06:10.599><c> running</c><00:06:11.110><c> hello</c>
+
+00:06:11.459 --> 00:06:11.469 align:start position:0%
+ignore let's check and try running hello
+ 
+
+00:06:11.469 --> 00:06:40.900 align:start position:0%
+ignore let's check and try running hello
+again
+
+00:06:40.900 --> 00:06:40.910 align:start position:0%
+ 
+ 
+
+00:06:40.910 --> 00:06:44.700 align:start position:0%
+ 
+and<00:06:41.450><c> it</c><00:06:41.630><c> worked</c><00:06:42.640><c> here</c><00:06:43.640><c> we</c><00:06:43.730><c> go</c>
+
+00:06:44.700 --> 00:06:44.710 align:start position:0%
+and it worked here we go
+ 
+
+00:06:44.710 --> 00:06:49.210 align:start position:0%
+and it worked here we go
+all<00:06:45.710><c> right</c><00:06:45.890><c> so</c><00:06:46.100><c> we</c><00:06:46.310><c> successfully</c><00:06:48.010><c> created</c><00:06:49.010><c> a</c>
+
+00:06:49.210 --> 00:06:49.220 align:start position:0%
+all right so we successfully created a
+ 
+
+00:06:49.220 --> 00:06:53.980 align:start position:0%
+all right so we successfully created a
+very<00:06:50.000><c> simple</c><00:06:50.270><c> Scala</c><00:06:51.170><c> app</c><00:06:51.440><c> project</c><00:06:51.860><c> and</c><00:06:52.990><c> we're</c>
+
+00:06:53.980 --> 00:06:53.990 align:start position:0%
+very simple Scala app project and we're
+ 
+
+00:06:53.990 --> 00:06:56.080 align:start position:0%
+very simple Scala app project and we're
+able<00:06:54.140><c> to</c><00:06:54.410><c> execute</c><00:06:54.680><c> that</c><00:06:55.010><c> project</c><00:06:55.520><c> so</c><00:06:55.850><c> this</c>
+
+00:06:56.080 --> 00:06:56.090 align:start position:0%
+able to execute that project so this
+ 
+
+00:06:56.090 --> 00:06:58.540 align:start position:0%
+able to execute that project so this
+workaround<00:06:56.450><c> is</c><00:06:56.810><c> necessary</c><00:06:57.320><c> only</c><00:06:57.410><c> the</c><00:06:58.190><c> first</c>
+
+00:06:58.540 --> 00:06:58.550 align:start position:0%
+workaround is necessary only the first
+ 
+
+00:06:58.550 --> 00:07:02.740 align:start position:0%
+workaround is necessary only the first
+time<00:06:58.820><c> you</c><00:06:59.120><c> set</c><00:06:59.360><c> the</c><00:06:59.510><c> project</c><00:06:59.930><c> up</c><00:07:00.430><c> okay</c><00:07:01.750><c> one</c>
+
+00:07:02.740 --> 00:07:02.750 align:start position:0%
+time you set the project up okay one
+ 
+
+00:07:02.750 --> 00:07:05.050 align:start position:0%
+time you set the project up okay one
+other<00:07:02.860><c> thing</c><00:07:03.860><c> I</c><00:07:04.010><c> want</c><00:07:04.190><c> to</c><00:07:04.340><c> illustrate</c><00:07:04.850><c> is</c>
+
+00:07:05.050 --> 00:07:05.060 align:start position:0%
+other thing I want to illustrate is
+ 
+
+00:07:05.060 --> 00:07:07.860 align:start position:0%
+other thing I want to illustrate is
+Scala<00:07:05.780><c> worksheets</c><00:07:06.560><c> which</c><00:07:06.860><c> are</c><00:07:07.130><c> useful</c>
+
+00:07:07.860 --> 00:07:07.870 align:start position:0%
+Scala worksheets which are useful
+ 
+
+00:07:07.870 --> 00:07:11.200 align:start position:0%
+Scala worksheets which are useful
+mechanism<00:07:08.870><c> for</c><00:07:09.740><c> just</c><00:07:10.220><c> playing</c><00:07:10.580><c> around</c><00:07:10.790><c> with</c>
+
+00:07:11.200 --> 00:07:11.210 align:start position:0%
+mechanism for just playing around with
+ 
+
+00:07:11.210 --> 00:07:13.450 align:start position:0%
+mechanism for just playing around with
+code<00:07:11.510><c> before</c><00:07:12.080><c> you</c><00:07:12.440><c> make</c><00:07:12.740><c> it</c><00:07:12.890><c> part</c><00:07:13.160><c> of</c><00:07:13.280><c> an</c>
+
+00:07:13.450 --> 00:07:13.460 align:start position:0%
+code before you make it part of an
+ 
+
+00:07:13.460 --> 00:07:17.050 align:start position:0%
+code before you make it part of an
+actual<00:07:13.790><c> app</c><00:07:14.000><c> or</c><00:07:14.270><c> library</c><00:07:14.980><c> so</c><00:07:15.980><c> we</c><00:07:16.010><c> can</c><00:07:16.400><c> create</c><00:07:16.700><c> a</c>
+
+00:07:17.050 --> 00:07:17.060 align:start position:0%
+actual app or library so we can create a
+ 
+
+00:07:17.060 --> 00:07:23.170 align:start position:0%
+actual app or library so we can create a
+new<00:07:18.400><c> Scala</c><00:07:19.400><c> worksheet</c><00:07:20.150><c> and</c><00:07:21.580><c> we'll</c><00:07:22.580><c> just</c><00:07:22.880><c> call</c>
+
+00:07:23.170 --> 00:07:23.180 align:start position:0%
+new Scala worksheet and we'll just call
+ 
+
+00:07:23.180 --> 00:07:37.660 align:start position:0%
+new Scala worksheet and we'll just call
+it<00:07:27.040><c> hello</c><00:07:28.040><c> -</c><00:07:33.010><c> and</c><00:07:34.450><c> here</c><00:07:35.450><c> we</c><00:07:35.630><c> can</c><00:07:35.810><c> just</c><00:07:36.670><c> write</c>
+
+00:07:37.660 --> 00:07:37.670 align:start position:0%
+it hello - and here we can just write
+ 
+
+00:07:37.670 --> 00:07:41.260 align:start position:0%
+it hello - and here we can just write
+some<00:07:38.000><c> Java</c><00:07:38.300><c> code</c><00:07:38.420><c> so</c><00:07:39.110><c> for</c><00:07:39.380><c> example</c><00:07:39.800><c> Val</c><00:07:40.010><c> X</c><00:07:40.340><c> is</c><00:07:40.640><c> 3</c>
+
+00:07:41.260 --> 00:07:41.270 align:start position:0%
+some Java code so for example Val X is 3
+ 
+
+00:07:41.270 --> 00:07:55.280 align:start position:0%
+some Java code so for example Val X is 3
+and<00:07:42.080><c> then</c><00:07:42.950><c> X</c><00:07:43.250><c> and</c><00:07:45.760><c> now</c><00:07:46.760><c> we</c><00:07:46.940><c> can</c><00:07:47.150><c> say</c><00:07:47.540><c> run</c>
+
+00:07:55.280 --> 00:07:55.290 align:start position:0%
+ 
+ 
+
+00:07:55.290 --> 00:07:57.980 align:start position:0%
+ 
+and<00:07:55.650><c> it</c><00:07:56.040><c> just</c><00:07:56.250><c> execute</c><00:07:56.850><c> all</c><00:07:57.240><c> the</c><00:07:57.390><c> code</c><00:07:57.660><c> on</c><00:07:57.870><c> the</c>
+
+00:07:57.980 --> 00:07:57.990 align:start position:0%
+and it just execute all the code on the
+ 
+
+00:07:57.990 --> 00:08:01.430 align:start position:0%
+and it just execute all the code on the
+worksheet<00:07:59.030><c> so</c><00:08:00.030><c> you</c><00:08:00.090><c> see</c><00:08:00.420><c> here</c><00:08:00.630><c> that</c><00:08:00.660><c> it</c><00:08:01.290><c> was</c>
+
+00:08:01.430 --> 00:08:01.440 align:start position:0%
+worksheet so you see here that it was
+ 
+
+00:08:01.440 --> 00:08:04.640 align:start position:0%
+worksheet so you see here that it was
+able<00:08:01.740><c> to</c><00:08:01.860><c> define</c><00:08:02.250><c> X</c><00:08:02.580><c> and</c><00:08:02.850><c> then</c><00:08:03.480><c> to</c><00:08:03.720><c> evaluate</c><00:08:04.410><c> X</c>
+
+00:08:04.640 --> 00:08:04.650 align:start position:0%
+able to define X and then to evaluate X
+ 
+
+00:08:04.650 --> 00:08:08.470 align:start position:0%
+able to define X and then to evaluate X
+it<00:08:04.920><c> just</c><00:08:05.960><c> evaluates</c><00:08:06.960><c> that</c><00:08:07.080><c> expression</c><00:08:07.710><c> and</c>
+
+00:08:08.470 --> 00:08:08.480 align:start position:0%
+it just evaluates that expression and
+ 
+
+00:08:08.480 --> 00:08:11.180 align:start position:0%
+it just evaluates that expression and
+returns<00:08:09.480><c> the</c><00:08:09.690><c> resulting</c><00:08:10.140><c> value</c><00:08:10.470><c> so</c><00:08:10.950><c> if</c><00:08:11.070><c> we</c>
+
+00:08:11.180 --> 00:08:11.190 align:start position:0%
+returns the resulting value so if we
+ 
+
+00:08:11.190 --> 00:08:14.840 align:start position:0%
+returns the resulting value so if we
+change<00:08:11.430><c> the</c><00:08:11.700><c> expression</c><00:08:12.030><c> we</c><00:08:12.780><c> can</c><00:08:13.850><c> re-execute</c>
+
+00:08:14.840 --> 00:08:14.850 align:start position:0%
+change the expression we can re-execute
+ 
+
+00:08:14.850 --> 00:08:22.940 align:start position:0%
+change the expression we can re-execute
+the<00:08:15.360><c> worksheet</c><00:08:17.780><c> and</c><00:08:19.400><c> alum</c><00:08:21.710><c> update</c><00:08:22.710><c> that</c>
+
+00:08:22.940 --> 00:08:22.950 align:start position:0%
+the worksheet and alum update that
+ 
+
+00:08:22.950 --> 00:08:26.960 align:start position:0%
+the worksheet and alum update that
+expression<00:08:23.400><c> accordingly</c><00:08:25.550><c> so</c><00:08:26.550><c> we</c><00:08:26.790><c> can</c>
+
+00:08:26.960 --> 00:08:26.970 align:start position:0%
+expression accordingly so we can
+ 
+
+00:08:26.970 --> 00:08:28.910 align:start position:0%
+expression accordingly so we can
+probably<00:08:27.240><c> have</c><00:08:27.480><c> multiple</c><00:08:27.690><c> expressions</c><00:08:28.650><c> here</c>
+
+00:08:28.910 --> 00:08:28.920 align:start position:0%
+probably have multiple expressions here
+ 
+
+00:08:28.920 --> 00:08:39.560 align:start position:0%
+probably have multiple expressions here
+let's<00:08:29.160><c> try</c><00:08:29.430><c> that</c><00:08:37.160><c> yep</c><00:08:38.160><c> so</c><00:08:38.430><c> basically</c><00:08:39.000><c> you</c><00:08:39.510><c> know</c>
+
+00:08:39.560 --> 00:08:39.570 align:start position:0%
+let's try that yep so basically you know
+ 
+
+00:08:39.570 --> 00:08:41.240 align:start position:0%
+let's try that yep so basically you know
+you<00:08:39.660><c> can</c><00:08:39.900><c> keep</c><00:08:40.140><c> modifying</c><00:08:40.350><c> this</c><00:08:40.950><c> and</c>
+
+00:08:41.240 --> 00:08:41.250 align:start position:0%
+you can keep modifying this and
+ 
+
+00:08:41.250 --> 00:08:44.150 align:start position:0%
+you can keep modifying this and
+experimenting<00:08:42.090><c> and</c><00:08:42.270><c> once</c><00:08:42.990><c> your</c><00:08:43.860><c> code</c>
+
+00:08:44.150 --> 00:08:44.160 align:start position:0%
+experimenting and once your code
+ 
+
+00:08:44.160 --> 00:08:46.820 align:start position:0%
+experimenting and once your code
+fragments<00:08:44.880><c> are</c><00:08:45.000><c> ready</c><00:08:45.210><c> to</c><00:08:45.510><c> be</c><00:08:46.020><c> incorporated</c>
+
+00:08:46.820 --> 00:08:46.830 align:start position:0%
+fragments are ready to be incorporated
+ 
+
+00:08:46.830 --> 00:08:49.070 align:start position:0%
+fragments are ready to be incorporated
+into<00:08:47.010><c> the</c><00:08:47.250><c> actual</c><00:08:47.610><c> project</c><00:08:48.150><c> you</c><00:08:48.630><c> can</c><00:08:48.840><c> just</c>
+
+00:08:49.070 --> 00:08:49.080 align:start position:0%
+into the actual project you can just
+ 
+
+00:08:49.080 --> 00:08:55.190 align:start position:0%
+into the actual project you can just
+copy<00:08:49.950><c> and</c><00:08:50.220><c> paste</c><00:08:50.460><c> those</c><00:08:52.910><c> okay</c><00:08:53.910><c> so</c><00:08:54.510><c> that's</c><00:08:54.960><c> it</c>
+
+00:08:55.190 --> 00:08:55.200 align:start position:0%
+copy and paste those okay so that's it
+ 
+
+00:08:55.200 --> 00:08:57.860 align:start position:0%
+copy and paste those okay so that's it
+for<00:08:55.440><c> now</c><00:08:55.560><c> I</c><00:08:55.830><c> think</c><00:08:55.950><c> this</c><00:08:56.340><c> will</c><00:08:56.550><c> help</c><00:08:57.420><c> you</c><00:08:57.660><c> get</c>
+
+00:08:57.860 --> 00:08:57.870 align:start position:0%
+for now I think this will help you get
+ 
+
+00:08:57.870 --> 00:09:01.250 align:start position:0%
+for now I think this will help you get
+started<00:08:58.200><c> and</c><00:08:58.700><c> we'll</c><00:08:59.700><c> be</c><00:08:59.850><c> back</c><00:09:00.000><c> with</c><00:09:00.060><c> some</c><00:09:00.330><c> more</c>
+
+00:09:01.250 --> 00:09:01.260 align:start position:0%
+started and we'll be back with some more
+ 
+
+00:09:01.260 --> 00:09:04.910 align:start position:0%
+started and we'll be back with some more
+advanced<00:09:01.590><c> stuff</c><00:09:01.740><c> sometime</c><00:09:02.730><c> soon</c>
+

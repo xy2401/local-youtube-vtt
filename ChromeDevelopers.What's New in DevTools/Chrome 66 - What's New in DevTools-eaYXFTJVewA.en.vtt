@@ -1,0 +1,337 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.437
+[MUSIC PLAYING]
+
+00:00:05.604 --> 00:00:06.770
+KAYCE BASQUES: Welcome back.
+
+00:00:06.770 --> 00:00:10.330
+Here's what's new in
+DevTools in Chrome 66--
+
+00:00:10.330 --> 00:00:13.090
+blackboxing in the Network
+panel, auto-adjust zooming
+
+00:00:13.090 --> 00:00:16.820
+in Device mode, HTML
+rendering in the Preview tab,
+
+00:00:16.820 --> 00:00:19.550
+pretty printing in the
+Preview and Response tabs,
+
+00:00:19.550 --> 00:00:22.460
+and an improvement
+to local overrides.
+
+00:00:22.460 --> 00:00:25.910
+First up, blackboxing
+in the Network panel.
+
+00:00:25.910 --> 00:00:27.650
+The initiator column
+tells you what
+
+00:00:27.650 --> 00:00:30.170
+code caused a network request.
+
+00:00:30.170 --> 00:00:32.270
+If you don't see it,
+right-click the Table header
+
+00:00:32.270 --> 00:00:34.066
+and click Initiator.
+
+00:00:34.066 --> 00:00:36.440
+Here, in this demo, you can
+see that there is a framework
+
+00:00:36.440 --> 00:00:38.900
+wrapper around the
+requests so they all
+
+00:00:38.900 --> 00:00:41.030
+point to the same line of code.
+
+00:00:41.030 --> 00:00:43.010
+What I really want is
+to see the application
+
+00:00:43.010 --> 00:00:45.410
+code that caused each request.
+
+00:00:45.410 --> 00:00:47.720
+To do this, I hover
+over the initiator,
+
+00:00:47.720 --> 00:00:50.650
+which shows the call stack
+leading up to the request,
+
+00:00:50.650 --> 00:00:52.760
+right-click the call
+that I want to hide,
+
+00:00:52.760 --> 00:00:55.610
+then click Blackbox Script.
+
+00:00:55.610 --> 00:00:57.830
+The wrapper code is now
+hidden from the results
+
+00:00:57.830 --> 00:01:01.370
+and I can see the app code that
+really caused each request.
+
+00:01:01.370 --> 00:01:03.770
+To manage your
+blackbox scripts, type
+
+00:01:03.770 --> 00:01:06.140
+Blackbox in the Command
+menu or go to Settings.
+
+00:01:09.490 --> 00:01:11.410
+The Preview tab
+now always renders
+
+00:01:11.410 --> 00:01:14.890
+HTML and pretty
+prints minified files.
+
+00:01:14.890 --> 00:01:16.300
+Here we've got
+the Stack Overflow
+
+00:01:16.300 --> 00:01:18.430
+page for DevTools questions.
+
+00:01:18.430 --> 00:01:20.590
+When I click the request
+for the main document
+
+00:01:20.590 --> 00:01:24.760
+then open the Preview tab, I
+see a rendering of the HTML.
+
+00:01:24.760 --> 00:01:27.820
+It's not a complete browser,
+so the rendering isn't perfect,
+
+00:01:27.820 --> 00:01:29.890
+but it's good enough.
+
+00:01:29.890 --> 00:01:32.620
+This often comes in handy
+when an API returns an error
+
+00:01:32.620 --> 00:01:35.530
+code that's formatted in
+HTML and you just want
+
+00:01:35.530 --> 00:01:38.200
+to see the rendered output.
+
+00:01:38.200 --> 00:01:40.900
+The Preview tab now also
+pretty-prints minified files
+
+00:01:40.900 --> 00:01:44.900
+by default, such as
+this JQuery file.
+
+00:01:44.900 --> 00:01:47.100
+You can also pretty print
+from the Response tab
+
+00:01:47.100 --> 00:01:48.700
+by clicking the
+Pretty Print button.
+
+00:01:52.300 --> 00:01:54.070
+In Device mode, you
+can now configure
+
+00:01:54.070 --> 00:01:56.860
+DevTools to always resize
+the viewport so that it
+
+00:01:56.860 --> 00:01:59.650
+doesn't overflow your screen.
+
+00:01:59.650 --> 00:02:02.150
+First, let's see
+the old behavior.
+
+00:02:02.150 --> 00:02:05.560
+Here, I'm simulating a mobile
+viewport in Portrait mode.
+
+00:02:05.560 --> 00:02:09.610
+When I switch to landscape, the
+viewport overflows my screen.
+
+00:02:09.610 --> 00:02:12.970
+In Chrome 66, if I never
+want it to overflow,
+
+00:02:12.970 --> 00:02:17.440
+I can click the Zoom dropdown,
+then select Auto-Adjust Zoom.
+
+00:02:17.440 --> 00:02:19.720
+Now when I change
+orientation, the viewport
+
+00:02:19.720 --> 00:02:21.340
+resizes itself to fit my screen.
+
+00:02:23.950 --> 00:02:25.780
+In the last episode,
+when we announced
+
+00:02:25.780 --> 00:02:28.090
+the launch of local
+overrides, I mentioned
+
+00:02:28.090 --> 00:02:31.870
+that it had a limitation
+around CSS and HTML.
+
+00:02:31.870 --> 00:02:34.120
+If you had some CSS
+inlined in your HTML
+
+00:02:34.120 --> 00:02:37.000
+and made a change to
+that CSS, local overrides
+
+00:02:37.000 --> 00:02:38.830
+couldn't detect the change.
+
+00:02:38.830 --> 00:02:41.830
+In Chrome 66, that's fixed.
+
+00:02:41.830 --> 00:02:44.800
+Here on this super-impressive
+demo that I built,
+
+00:02:44.800 --> 00:02:48.190
+we've got a CSS rule in
+the head of the document.
+
+00:02:48.190 --> 00:02:51.880
+The rule sets the color
+of H1 elements to fuchsia.
+
+00:02:51.880 --> 00:02:55.600
+In Chrome 65, when I make a
+change to this declaration
+
+00:02:55.600 --> 00:02:58.360
+and reload the page,
+the change is gone,
+
+00:02:58.360 --> 00:03:01.540
+even though I've got
+local override set up.
+
+00:03:01.540 --> 00:03:05.320
+In Chrome 66, though, it
+works as you'd expect.
+
+00:03:05.320 --> 00:03:07.600
+I change the color,
+then reload the page,
+
+00:03:07.600 --> 00:03:10.990
+and the change is still there.
+
+00:03:10.990 --> 00:03:13.000
+That's all for Chrome 66.
+
+00:03:13.000 --> 00:03:14.710
+Here's a bonus tip.
+
+00:03:14.710 --> 00:03:17.680
+Back when I created the
+JavaScript debugging tutorial,
+
+00:03:17.680 --> 00:03:20.410
+some viewers pointed out that
+event listener breakpoints
+
+00:03:20.410 --> 00:03:23.350
+aren't that useful if you're
+building on top of a framework
+
+00:03:23.350 --> 00:03:25.060
+because your event
+listeners are usually
+
+00:03:25.060 --> 00:03:27.250
+wrapped in framework code.
+
+00:03:27.250 --> 00:03:28.810
+The blackboxing
+feature that I showed
+
+00:03:28.810 --> 00:03:31.480
+you earlier can also help here.
+
+00:03:31.480 --> 00:03:33.940
+When I click this button,
+the count increments.
+
+00:03:33.940 --> 00:03:36.990
+When I set a click breakpoint
+then click the button,
+
+00:03:36.990 --> 00:03:39.880
+DevTools pauses and
+views wrapper code,
+
+00:03:39.880 --> 00:03:41.750
+which isn't that helpful.
+
+00:03:41.750 --> 00:03:43.810
+What I really want is
+to see the app code that
+
+00:03:43.810 --> 00:03:46.120
+causes the count to increment.
+
+00:03:46.120 --> 00:03:48.610
+Since the framework code
+is in a separate file,
+
+00:03:48.610 --> 00:03:51.820
+I can blackbox that script
+from the Call Stack pane.
+
+00:03:51.820 --> 00:03:55.010
+Now if I click the button and
+trigger the breakpoint again,
+
+00:03:55.010 --> 00:03:58.630
+DevTools pauses on the code
+that I actually care about.
+
+00:03:58.630 --> 00:03:59.530
+Thanks for watching.
+
+00:03:59.530 --> 00:04:02.590
+Leave me a comment if you've
+got any questions or feedback.
+
+00:04:02.590 --> 00:04:04.800
+Otherwise, I'll see you in
+six weeks for Chrome 67.
+
+00:04:04.800 --> 00:04:08.150
+[MUSIC PLAYING]
+

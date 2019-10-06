@@ -1,0 +1,1508 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.820
+[MUSIC PLAYING]
+
+00:00:04.404 --> 00:00:06.320
+ROB DODSON: Hey everyone,
+what's up, it's Rob.
+
+00:00:06.320 --> 00:00:07.940
+Welcome back to the show.
+
+00:00:07.940 --> 00:00:09.814
+So I got on Twitter
+recently and I
+
+00:00:09.814 --> 00:00:11.480
+asked folks, what
+would they like to see
+
+00:00:11.480 --> 00:00:13.100
+in upcoming Polycasts.
+
+00:00:13.100 --> 00:00:15.380
+And kind of resoundingly,
+a lot of folks
+
+00:00:15.380 --> 00:00:17.419
+said they want to
+see more Firebase.
+
+00:00:17.419 --> 00:00:19.460
+So I thought it would be
+cool to kind of kick off
+
+00:00:19.460 --> 00:00:21.350
+a multi-part series
+where we talk
+
+00:00:21.350 --> 00:00:24.260
+about how you can integrate
+Polymer and Firebase together
+
+00:00:24.260 --> 00:00:25.820
+into your projects.
+
+00:00:25.820 --> 00:00:28.880
+So today, what we're going
+to do is just get started.
+
+00:00:28.880 --> 00:00:31.400
+We're going to set up a
+very simple Firebase project
+
+00:00:31.400 --> 00:00:34.230
+and we're going to do some
+Firebase authentication.
+
+00:00:34.230 --> 00:00:36.320
+So follow me over
+here to my laptop.
+
+00:00:36.320 --> 00:00:38.030
+And the first thing
+I'm going to do
+
+00:00:38.030 --> 00:00:40.113
+is I'm going to go to
+console.firebase.google.com.
+
+00:00:42.050 --> 00:00:43.820
+You'll want to have
+a Google account
+
+00:00:43.820 --> 00:00:45.350
+already that you can sign into.
+
+00:00:45.350 --> 00:00:48.440
+So I've signed into my
+personal account here.
+
+00:00:48.440 --> 00:00:52.507
+And I'm going to create a new
+project for my Firebase app.
+
+00:00:52.507 --> 00:00:54.590
+And this is going to let
+me do all sorts of really
+
+00:00:54.590 --> 00:00:55.200
+cool things.
+
+00:00:55.200 --> 00:00:56.960
+I can do hosting
+with Firebase, I
+
+00:00:56.960 --> 00:00:59.590
+can do database work with
+Firebase, authentication, et
+
+00:00:59.590 --> 00:01:01.220
+cetera.
+
+00:01:01.220 --> 00:01:02.220
+I got to give it a name.
+
+00:01:02.220 --> 00:01:05.090
+So I'm going to
+call this poly-fire,
+
+00:01:05.090 --> 00:01:06.630
+or something like that.
+
+00:01:06.630 --> 00:01:08.835
+And we'll create that project.
+
+00:01:08.835 --> 00:01:09.710
+Firebase will go off.
+
+00:01:09.710 --> 00:01:11.480
+It'll think for a second.
+
+00:01:11.480 --> 00:01:13.260
+The hamster wheels
+are spinning up.
+
+00:01:13.260 --> 00:01:16.980
+poly-fire is getting created
+and released into the world.
+
+00:01:16.980 --> 00:01:17.480
+OK.
+
+00:01:17.480 --> 00:01:18.110
+Cool.
+
+00:01:18.110 --> 00:01:20.540
+After that's done, you're
+going to see a dashboard that
+
+00:01:20.540 --> 00:01:22.200
+looks kind of like this.
+
+00:01:22.200 --> 00:01:25.460
+And there's a bunch of
+options and things right here.
+
+00:01:25.460 --> 00:01:26.960
+It can be a little
+bit overwhelming.
+
+00:01:26.960 --> 00:01:28.610
+But we're going to start
+off really, really small,
+
+00:01:28.610 --> 00:01:31.151
+and the only thing that we're
+going to really deal with today
+
+00:01:31.151 --> 00:01:32.210
+is authentication.
+
+00:01:32.210 --> 00:01:35.150
+And so what I want to do is
+click on this authentication
+
+00:01:35.150 --> 00:01:38.330
+tab, and it's going to ask
+me, up here at the top,
+
+00:01:38.330 --> 00:01:40.130
+what sort of sign
+in methods I would
+
+00:01:40.130 --> 00:01:41.960
+like to allow in this app.
+
+00:01:41.960 --> 00:01:44.630
+Now being a Googler,
+I got to represent.
+
+00:01:44.630 --> 00:01:47.570
+So I'm going to
+enable Google sign in.
+
+00:01:47.570 --> 00:01:52.340
+And we just flip this little
+switch and click Save.
+
+00:01:52.340 --> 00:01:53.840
+And what this is
+going to let us do,
+
+00:01:53.840 --> 00:01:55.460
+is anybody who's got
+a Google account will
+
+00:01:55.460 --> 00:01:57.126
+be able to hit a sign
+in button and sign
+
+00:01:57.126 --> 00:01:59.360
+in through that account
+in our Firebase app.
+
+00:01:59.360 --> 00:02:01.250
+The other thing
+that we need to do,
+
+00:02:01.250 --> 00:02:03.430
+is we need to go over
+here to our settings,
+
+00:02:03.430 --> 00:02:05.750
+go to Project
+Settings, and we're
+
+00:02:05.750 --> 00:02:09.800
+going to need this web API
+key that I'm copying here.
+
+00:02:09.800 --> 00:02:12.410
+Otherwise our authentication
+will not work.
+
+00:02:12.410 --> 00:02:14.010
+So copy that.
+
+00:02:14.010 --> 00:02:14.810
+OK.
+
+00:02:14.810 --> 00:02:15.950
+So I think that's
+basically everything we
+
+00:02:15.950 --> 00:02:17.060
+need in the Firebase console.
+
+00:02:17.060 --> 00:02:18.660
+There's a ton more
+that you can do here.
+
+00:02:18.660 --> 00:02:20.460
+And we're going to cover that
+in some of future episodes.
+
+00:02:20.460 --> 00:02:22.520
+But for now, we're
+pretty much ready to go
+
+00:02:22.520 --> 00:02:24.140
+with just the default setup.
+
+00:02:24.140 --> 00:02:26.360
+So the next thing I want
+to do is switch over
+
+00:02:26.360 --> 00:02:28.310
+to my command line.
+
+00:02:28.310 --> 00:02:31.460
+And I've already gone ahead
+and created a directory
+
+00:02:31.460 --> 00:02:33.110
+to hold my demo application.
+
+00:02:33.110 --> 00:02:35.420
+And Firebase also provides
+a really useful set
+
+00:02:35.420 --> 00:02:38.030
+of command line tools that you
+can install that will go ahead
+
+00:02:38.030 --> 00:02:39.905
+and scaffold a project for you.
+
+00:02:39.905 --> 00:02:41.780
+So if you don't have
+those installed already,
+
+00:02:41.780 --> 00:02:43.725
+you can do npm install
+-g firebase-tools.
+
+00:02:46.747 --> 00:02:49.080
+That'll go out, fetch all
+that stuff, set it up for you,
+
+00:02:49.080 --> 00:02:50.821
+so you'll now have
+a Firebase command.
+
+00:02:50.821 --> 00:02:52.904
+I've already got those
+installed so you don't have
+
+00:02:52.904 --> 00:02:54.150
+to watch me do any of that.
+
+00:02:54.150 --> 00:02:57.800
+So what I'm going to do, is
+I'm going to run firebase init.
+
+00:02:57.800 --> 00:03:01.509
+And it's going to put a
+very rad emoji on my screen.
+
+00:03:01.509 --> 00:03:03.800
+And then it's going to ask
+me some questions about what
+
+00:03:03.800 --> 00:03:04.940
+sort of Firebase
+features I would
+
+00:03:04.940 --> 00:03:06.196
+like to have in this project.
+
+00:03:06.196 --> 00:03:08.570
+Firebase provides a real time
+database, which is awesome,
+
+00:03:08.570 --> 00:03:10.850
+and we will be using that,
+so we'll leave that checked.
+
+00:03:10.850 --> 00:03:12.350
+And then we've got
+Firebase hosting.
+
+00:03:12.350 --> 00:03:15.670
+And that lets us basically just
+do hosting of static assets.
+
+00:03:15.670 --> 00:03:17.870
+We can host our entire site
+on Firebase if we want.
+
+00:03:17.870 --> 00:03:19.920
+So I will leave that
+in there as well.
+
+00:03:19.920 --> 00:03:21.010
+I'll hit enter.
+
+00:03:21.010 --> 00:03:22.880
+It's going to ask
+us what project
+
+00:03:22.880 --> 00:03:24.230
+we want to associate with.
+
+00:03:24.230 --> 00:03:27.090
+So since we just created
+that one called poly-fire.
+
+00:03:27.090 --> 00:03:28.640
+Here I'll move this
+up a little bit,
+
+00:03:28.640 --> 00:03:30.120
+this is a little easier to see.
+
+00:03:30.120 --> 00:03:32.780
+So we will associate
+with poly-fire.
+
+00:03:32.780 --> 00:03:35.060
+What file should be
+associated with the database?
+
+00:03:35.060 --> 00:03:37.924
+We'll just use the default
+value there database.rules.json.
+
+00:03:37.924 --> 00:03:39.340
+What directory do
+you want to use?
+
+00:03:39.340 --> 00:03:40.460
+We'll say our public one.
+
+00:03:40.460 --> 00:03:42.334
+And then it's going to
+ask if Firebase should
+
+00:03:42.334 --> 00:03:44.360
+sort of configure
+its local server
+
+00:03:44.360 --> 00:03:47.100
+rules to direct
+everything to index.html?
+
+00:03:47.100 --> 00:03:49.230
+So if we were building
+a single page web app.
+
+00:03:49.230 --> 00:03:51.230
+I'm going to say yes, I
+would like that feature,
+
+00:03:51.230 --> 00:03:52.610
+because that's pretty cool.
+
+00:03:52.610 --> 00:03:54.800
+And at that point,
+it's basically done.
+
+00:03:54.800 --> 00:03:58.330
+And if we go ahead and we open
+this up in our code editor,
+
+00:03:58.330 --> 00:04:00.560
+we'll see that this has
+started to kind of scaffold
+
+00:04:00.560 --> 00:04:01.940
+some things out for us.
+
+00:04:01.940 --> 00:04:06.140
+So I've got these
+firebase.json, firebaserc file
+
+00:04:06.140 --> 00:04:09.120
+that points to my project
+name, stuff like that.
+
+00:04:09.120 --> 00:04:11.520
+This is all just configuration
+to make Firebase work.
+
+00:04:11.520 --> 00:04:13.520
+What we're mainly going
+to be working with today
+
+00:04:13.520 --> 00:04:15.020
+though is this public directory.
+
+00:04:15.020 --> 00:04:17.321
+So this is where our
+code is going to live.
+
+00:04:17.321 --> 00:04:19.820
+The other nice thing that we
+can do with the Firebase tools,
+
+00:04:19.820 --> 00:04:22.500
+is we can start up
+a local dev server.
+
+00:04:22.500 --> 00:04:24.647
+So we'll say firebase serve.
+
+00:04:24.647 --> 00:04:26.480
+And it's actually going
+to look at the rules
+
+00:04:26.480 --> 00:04:28.146
+that we have in our
+firebase.json there.
+
+00:04:28.146 --> 00:04:30.260
+That tells it to serve
+our public directory.
+
+00:04:30.260 --> 00:04:32.849
+So we can then just
+open up localhost:5000.
+
+00:04:32.849 --> 00:04:34.640
+And you'll see a page
+that looks like this.
+
+00:04:34.640 --> 00:04:37.340
+Letting you know that your
+local instance of Firebase
+
+00:04:37.340 --> 00:04:38.030
+is working.
+
+00:04:38.030 --> 00:04:38.540
+Cool.
+
+00:04:38.540 --> 00:04:39.040
+All right.
+
+00:04:39.040 --> 00:04:40.790
+The next thing we
+want to do, is we
+
+00:04:40.790 --> 00:04:43.160
+want to go ahead
+and install Polymer,
+
+00:04:43.160 --> 00:04:45.500
+and we want to
+install Polymer Fire.
+
+00:04:45.500 --> 00:04:47.180
+Which is a set of
+Polymer elements
+
+00:04:47.180 --> 00:04:49.820
+that work specifically
+with Firebase.
+
+00:04:49.820 --> 00:04:54.170
+So, because I want everything to
+live in this public directory,
+
+00:04:54.170 --> 00:04:58.140
+I'm actually going to
+create a bowerrc file.
+
+00:04:58.140 --> 00:05:01.100
+So I'll create a .bowerrc file.
+
+00:05:01.100 --> 00:05:01.900
+So .bowerrc.
+
+00:05:01.900 --> 00:05:05.570
+RC And I will use
+this to tell bower
+
+00:05:05.570 --> 00:05:07.640
+to install all my stuff
+into that public dir.
+
+00:05:07.640 --> 00:05:14.900
+So I will say, directory
+is public/bower_components.
+
+00:05:14.900 --> 00:05:16.580
+Cool.
+
+00:05:16.580 --> 00:05:20.104
+And then in my
+terminal, bower init.
+
+00:05:20.104 --> 00:05:22.520
+Yeah, it'll ask us a bunch of
+questions about our project,
+
+00:05:22.520 --> 00:05:24.600
+we can just use the default
+values, that's fine.
+
+00:05:24.600 --> 00:05:26.390
+And then we will
+bower install --save.
+
+00:05:26.390 --> 00:05:28.727
+We will definitely
+want Polymer/polymer.
+
+00:05:28.727 --> 00:05:30.435
+We're going to want
+firebase/polymerfire.
+
+00:05:33.306 --> 00:05:35.555
+And we're going to want
+Polymer Elements/paper-button.
+
+00:05:39.910 --> 00:05:41.900
+All right, so that's
+going to go out and fetch
+
+00:05:41.900 --> 00:05:45.590
+all of those resources and dump
+them into our public directory.
+
+00:05:45.590 --> 00:05:47.360
+Finished pretty
+quickly, which is good.
+
+00:05:47.360 --> 00:05:49.706
+And now we're basically ready
+to start building our app.
+
+00:05:49.706 --> 00:05:51.080
+And remember the
+goal of this app
+
+00:05:51.080 --> 00:05:54.530
+is to basically have sort
+of a simple sign in flow
+
+00:05:54.530 --> 00:05:55.230
+for the user.
+
+00:05:55.230 --> 00:05:58.389
+So all I'm going to build
+today is a button, that when
+
+00:05:58.389 --> 00:06:00.680
+you click on it, it'll take
+you through the o-auth flow
+
+00:06:00.680 --> 00:06:02.210
+for Google sign in.
+
+00:06:02.210 --> 00:06:04.550
+And when the user is
+actually signed in,
+
+00:06:04.550 --> 00:06:06.620
+it'll just like display
+their name on screen.
+
+00:06:06.620 --> 00:06:09.280
+That way we know we at least
+have something working there.
+
+00:06:09.280 --> 00:06:12.419
+So, let's go into
+our index.html file.
+
+00:06:12.419 --> 00:06:14.960
+And there's a bunch of code here
+that Firebase sort of set up
+
+00:06:14.960 --> 00:06:17.570
+for us that I'm just going
+to go ahead and delete
+
+00:06:17.570 --> 00:06:19.649
+because I don't really
+need any of this stuff.
+
+00:06:19.649 --> 00:06:20.690
+So we'll get rid of that.
+
+00:06:20.690 --> 00:06:22.340
+We'll get rid
+everything in the body.
+
+00:06:22.340 --> 00:06:24.120
+And make this a
+little bit bigger.
+
+00:06:24.120 --> 00:06:26.744
+We'll rename this Firebase
+Auth or something like that.
+
+00:06:26.744 --> 00:06:28.660
+And because we're using
+Polymer, because we're
+
+00:06:28.660 --> 00:06:30.451
+building a Polymer app,
+I want to start off
+
+00:06:30.451 --> 00:06:33.530
+by creating just a my app
+element, that can sort of hold
+
+00:06:33.530 --> 00:06:34.730
+all of my logic.
+
+00:06:34.730 --> 00:06:36.370
+So I'll have a
+my-app element here.
+
+00:06:39.120 --> 00:06:41.210
+And I'm going to make
+sure to include an HTML
+
+00:06:41.210 --> 00:06:42.142
+import for that.
+
+00:06:45.780 --> 00:06:49.340
+So we're going to
+ask for my-app.html.
+
+00:06:49.340 --> 00:06:51.150
+OK.
+
+00:06:51.150 --> 00:06:56.550
+And inside of this my-app
+element, my-app.html,
+
+00:06:56.550 --> 00:06:59.691
+we're going to want to import
+some of the Polymer Fire
+
+00:06:59.691 --> 00:07:00.190
+elements.
+
+00:07:00.190 --> 00:07:02.340
+So let's go check
+those out really quick.
+
+00:07:02.340 --> 00:07:04.048
+So we'll going to
+beta.webcomponents.org.
+
+00:07:06.030 --> 00:07:08.760
+This is the new
+catalog where you
+
+00:07:08.760 --> 00:07:11.170
+can find all sorts of
+interesting, custom elements.
+
+00:07:11.170 --> 00:07:14.880
+The ones that I'm looking
+for are called polymerfire.
+
+00:07:14.880 --> 00:07:17.402
+So go check these out.
+
+00:07:17.402 --> 00:07:19.860
+So this is a suite of elements
+created by the Firebase team
+
+00:07:19.860 --> 00:07:21.340
+specifically for Polymer.
+
+00:07:21.340 --> 00:07:23.580
+And you can see here that
+basically what we want
+
+00:07:23.580 --> 00:07:25.590
+is this firebase-app
+element, and we're
+
+00:07:25.590 --> 00:07:28.479
+going to combine it with
+this firebase-auth element.
+
+00:07:28.479 --> 00:07:31.020
+So when I bower installed these,
+I got both of these already.
+
+00:07:31.020 --> 00:07:33.030
+But you can sort of see the
+signature for how these work.
+
+00:07:33.030 --> 00:07:34.980
+Here, I'll bump this up a
+little bit so you can read that.
+
+00:07:34.980 --> 00:07:36.090
+So you create a
+firebase-app element.
+
+00:07:36.090 --> 00:07:38.010
+You basically tell
+it about your domain,
+
+00:07:38.010 --> 00:07:40.466
+you give it that API key
+that we copied earlier,
+
+00:07:40.466 --> 00:07:42.090
+and you create a
+firebase-auth element,
+
+00:07:42.090 --> 00:07:44.730
+and that'll tell you when
+your user is signed in or not.
+
+00:07:44.730 --> 00:07:45.230
+Right.
+
+00:07:45.230 --> 00:07:46.660
+So far so good.
+
+00:07:46.660 --> 00:07:50.990
+So in our my-app
+element, over here.
+
+00:07:50.990 --> 00:07:53.760
+I basically want to
+create an element that's
+
+00:07:53.760 --> 00:07:55.692
+going to hold that
+firebase-app element.
+
+00:07:55.692 --> 00:07:57.900
+So I've got some code here
+that I've already written.
+
+00:07:57.900 --> 00:07:59.730
+Kind of stolen from
+another project.
+
+00:07:59.730 --> 00:08:02.330
+And let's go through and we'll
+update this a little bit,
+
+00:08:02.330 --> 00:08:03.790
+I can explain what's happening.
+
+00:08:03.790 --> 00:08:07.080
+So I've got a dom-module
+from my-app element.
+
+00:08:07.080 --> 00:08:09.980
+I got this firebase-app
+element inside of here.
+
+00:08:09.980 --> 00:08:12.580
+And I want to give it the
+domain for my project.
+
+00:08:12.580 --> 00:08:15.769
+So if we go back to Firebase,
+we go back to the console,
+
+00:08:15.769 --> 00:08:18.060
+we look at our project
+settings, what it actually wants
+
+00:08:18.060 --> 00:08:20.020
+is this Project ID right here.
+
+00:08:20.020 --> 00:08:24.504
+So it says Polymer fire,
+or poly-fire-11d42.
+
+00:08:24.504 --> 00:08:25.920
+So that's what
+we're going to use.
+
+00:08:25.920 --> 00:08:29.450
+So our auth-domain is going
+to be poly-fire-11d42.
+
+00:08:29.450 --> 00:08:31.860
+Our database URL, even though
+we're not using it yet,
+
+00:08:31.860 --> 00:08:33.510
+we can go ahead and set that up.
+
+00:08:33.510 --> 00:08:36.590
+And then our API key is going
+to be that one that we copied.
+
+00:08:36.590 --> 00:08:39.599
+So get rid of that and
+we'll drop in the API key
+
+00:08:39.599 --> 00:08:41.280
+that we copied there.
+
+00:08:41.280 --> 00:08:43.350
+And the last thing
+I'm going to do,
+
+00:08:43.350 --> 00:08:45.330
+is I'm going to have
+this log in element
+
+00:08:45.330 --> 00:08:46.377
+that I'm going to create.
+
+00:08:46.377 --> 00:08:48.960
+But essentially this is all that
+my app is going to do for us.
+
+00:08:48.960 --> 00:08:51.727
+It's going to set up the
+connection to Firebase app,
+
+00:08:51.727 --> 00:08:54.060
+and then it's going to have
+a little log in element that
+
+00:08:54.060 --> 00:08:57.060
+will sort of toggle on and off.
+
+00:08:57.060 --> 00:08:59.040
+Let's go ahead and create that.
+
+00:08:59.040 --> 00:09:01.345
+Create a my-login.html.
+
+00:09:01.345 --> 00:09:02.970
+So again, I've got
+a little bit of code
+
+00:09:02.970 --> 00:09:04.844
+that I'm going to steal
+and drop in here just
+
+00:09:04.844 --> 00:09:07.370
+to start to scaffold
+out my log in element.
+
+00:09:07.370 --> 00:09:09.270
+What I want to do, is
+I want to make sure
+
+00:09:09.270 --> 00:09:13.670
+that I am importing the
+Firebase app elements.
+
+00:09:13.670 --> 00:09:15.330
+I'm going to steal
+this link tag here.
+
+00:09:15.330 --> 00:09:16.740
+I don't have it in
+any of my snippets
+
+00:09:16.740 --> 00:09:18.323
+now that I'm using
+Visual Studio Code.
+
+00:09:18.323 --> 00:09:20.492
+It's making me like the
+world's slowest developer.
+
+00:09:20.492 --> 00:09:22.950
+So if anybody wants to create
+a Visual Studio Code snippets
+
+00:09:22.950 --> 00:09:23.900
+package for Polymer.
+
+00:09:23.900 --> 00:09:26.190
+I would totally be
+your best friend.
+
+00:09:26.190 --> 00:09:28.530
+What we're going to do
+is we're going to import
+
+00:09:28.530 --> 00:09:33.237
+bower_components/, is it
+polymerfire I believe.
+
+00:09:33.237 --> 00:09:34.320
+polymerfire/firebase-auth.
+
+00:09:36.731 --> 00:09:37.230
+All right.
+
+00:09:37.230 --> 00:09:38.646
+So
+polymerfire/firebase-auth.html.
+
+00:09:43.290 --> 00:09:47.810
+And we're also going to
+pull in the paper button.
+
+00:09:47.810 --> 00:09:49.560
+We'll have
+paper-button/paper-button.html.
+
+00:09:53.540 --> 00:09:54.890
+Uh huh.
+
+00:09:54.890 --> 00:09:55.910
+It's looking good.
+
+00:09:55.910 --> 00:09:58.020
+Inside of our template
+I'm going to drop
+
+00:09:58.020 --> 00:10:00.970
+in a firebase-auth element.
+
+00:10:00.970 --> 00:10:03.560
+This is the basic signature
+for a firebase-auth element.
+
+00:10:03.560 --> 00:10:04.980
+I want to give it
+an ID because I
+
+00:10:04.980 --> 00:10:07.650
+am going to need to reference
+it in JavaScript a little bit.
+
+00:10:07.650 --> 00:10:09.480
+And then it's got
+a user property
+
+00:10:09.480 --> 00:10:11.850
+that we are going to expose
+to the outside world using
+
+00:10:11.850 --> 00:10:12.570
+this binding.
+
+00:10:12.570 --> 00:10:14.760
+So we're just going to
+have a thing called user.
+
+00:10:14.760 --> 00:10:16.845
+It's also got this value
+called status-known
+
+00:10:16.845 --> 00:10:17.970
+which could be interesting.
+
+00:10:17.970 --> 00:10:19.830
+It's a boolean that
+tells you whether or not
+
+00:10:19.830 --> 00:10:23.190
+you can assert the presence
+of a user, and whether
+
+00:10:23.190 --> 00:10:25.860
+or not you're allowed to
+check the user object.
+
+00:10:25.860 --> 00:10:26.939
+So I'm including it here.
+
+00:10:26.939 --> 00:10:28.980
+I'm actually not going to
+use it in my code today
+
+00:10:28.980 --> 00:10:31.320
+because, I'll be 100%
+honest, I'm not entirely sure
+
+00:10:31.320 --> 00:10:32.960
+if I need to use it in my code.
+
+00:10:32.960 --> 00:10:34.630
+But I am including i there
+just so you know about it.
+
+00:10:34.630 --> 00:10:36.296
+Maybe in the next
+episode we'll discover
+
+00:10:36.296 --> 00:10:37.750
+if it's actually useful or not.
+
+00:10:37.750 --> 00:10:38.520
+But I'm just going
+to drop it in there
+
+00:10:38.520 --> 00:10:40.170
+so it's on everyone's radar.
+
+00:10:40.170 --> 00:10:42.000
+And lastly we have
+this provider value.
+
+00:10:42.000 --> 00:10:43.584
+Which I'm just going
+to set to Google.
+
+00:10:43.584 --> 00:10:45.291
+Because if you remember,
+we went through,
+
+00:10:45.291 --> 00:10:46.710
+and when we were
+in our dashboard,
+
+00:10:46.710 --> 00:10:49.814
+we set up the authentication
+method as, sign in with Google.
+
+00:10:49.814 --> 00:10:51.480
+The next thing we
+need to do, is we need
+
+00:10:51.480 --> 00:10:53.390
+to drop in some paper buttons.
+
+00:10:53.390 --> 00:10:56.010
+Here all close the side bar so
+you can see this a bit easier.
+
+00:10:56.010 --> 00:10:58.500
+So you have a paper
+button here, it's raised,
+
+00:10:58.500 --> 00:11:00.600
+so it'll have a bit
+of a drop shadow.
+
+00:11:00.600 --> 00:11:04.080
+And when the user taps it, it's
+going to run a log in method,
+
+00:11:04.080 --> 00:11:05.970
+and I've got this
+little thing that I'm
+
+00:11:05.970 --> 00:11:09.490
+doing here where I'm hiding
+the button if there is a user
+
+00:11:09.490 --> 00:11:09.990
+present.
+
+00:11:09.990 --> 00:11:11.940
+So if the user is
+already signed in,
+
+00:11:11.940 --> 00:11:14.072
+let's not show the
+sign in button, right?
+
+00:11:14.072 --> 00:11:16.530
+And I've got basically the
+exact same thing going down here
+
+00:11:16.530 --> 00:11:17.460
+for this other button.
+
+00:11:17.460 --> 00:11:19.260
+This will be our log out button.
+
+00:11:19.260 --> 00:11:21.340
+And we just sort
+of flip the logic.
+
+00:11:21.340 --> 00:11:24.300
+So if there is
+already a user, then
+
+00:11:24.300 --> 00:11:26.820
+let's display the
+log out button.
+
+00:11:26.820 --> 00:11:28.260
+And if there is
+not a user, we'll
+
+00:11:28.260 --> 00:11:29.950
+display the log in button.
+
+00:11:29.950 --> 00:11:30.600
+Right.
+
+00:11:30.600 --> 00:11:32.350
+Cool, so far so good.
+
+00:11:32.350 --> 00:11:35.070
+Let's also add a
+little bit of script
+
+00:11:35.070 --> 00:11:38.050
+here to define our element.
+
+00:11:38.050 --> 00:11:42.540
+So I will say this element
+is a my-login element.
+
+00:11:42.540 --> 00:11:44.550
+And for the properties,
+we basically
+
+00:11:44.550 --> 00:11:47.900
+will want to expose
+this user property.
+
+00:11:47.900 --> 00:11:51.030
+So it's a user.
+
+00:11:51.030 --> 00:11:53.200
+Which is an object.
+
+00:11:53.200 --> 00:11:55.450
+We also want to have that
+status known property.
+
+00:11:55.450 --> 00:11:58.650
+So status known.
+
+00:11:58.650 --> 00:12:00.780
+And that is also
+going to be an object.
+
+00:12:00.780 --> 00:12:01.610
+OK.
+
+00:12:01.610 --> 00:12:04.000
+And now I want to implement
+these log in and log out
+
+00:12:04.000 --> 00:12:04.610
+methods.
+
+00:12:04.610 --> 00:12:07.480
+So these should be
+pretty straightforward.
+
+00:12:07.480 --> 00:12:11.010
+We're basically just going
+to use some of the APIs
+
+00:12:11.010 --> 00:12:14.360
+that the Firebase Auth
+element expose's for us.
+
+00:12:14.360 --> 00:12:16.830
+So I'm going to just go ahead
+and paste some code in here
+
+00:12:16.830 --> 00:12:18.270
+that I already copied.
+
+00:12:18.270 --> 00:12:19.770
+And what we're going
+to do, is we're
+
+00:12:19.770 --> 00:12:22.140
+going to use the ID
+of the auth element.
+
+00:12:22.140 --> 00:12:25.059
+So remember, when
+we say this .$,
+
+00:12:25.059 --> 00:12:27.600
+that's Polymer's way of saying
+reference this thing with this
+
+00:12:27.600 --> 00:12:28.730
+ID.
+
+00:12:28.730 --> 00:12:32.790
+So we'll say this .$.auth,
+sign in with pop up.
+
+00:12:32.790 --> 00:12:35.100
+And that method basically
+tells the auth element
+
+00:12:35.100 --> 00:12:37.140
+to open the o-auth
+screen and ask someone
+
+00:12:37.140 --> 00:12:39.210
+to sign in using Google.
+
+00:12:39.210 --> 00:12:42.000
+For the log out method, it's
+basically just call sign
+
+00:12:42.000 --> 00:12:43.770
+out using that.
+
+00:12:43.770 --> 00:12:45.327
+The last thing
+that I want to do,
+
+00:12:45.327 --> 00:12:47.160
+is I want to add just
+a little template here
+
+00:12:47.160 --> 00:12:50.360
+that will toggle on and off
+when we have a user or not.
+
+00:12:50.360 --> 00:12:53.040
+And it will display
+that user's name.
+
+00:12:53.040 --> 00:12:55.290
+Just so we can verify that
+the user object we get back
+
+00:12:55.290 --> 00:12:57.360
+is correct.
+
+00:12:57.360 --> 00:13:03.240
+So I've got some code that I'm
+just going to paste in here.
+
+00:13:03.240 --> 00:13:05.790
+And yeah, so I'm using a dom-if.
+
+00:13:05.790 --> 00:13:08.040
+I'm checking if we
+have a user already.
+
+00:13:08.040 --> 00:13:09.660
+And then I've just got an h1.
+
+00:13:09.660 --> 00:13:12.740
+Where I'm just going to bind
+to the user's display name.
+
+00:13:12.740 --> 00:13:13.260
+All right.
+
+00:13:13.260 --> 00:13:16.770
+So I think we're pretty
+close to having everything
+
+00:13:16.770 --> 00:13:17.520
+where we want it.
+
+00:13:17.520 --> 00:13:19.519
+Let's just double check
+all of our imports here.
+
+00:13:19.519 --> 00:13:21.450
+We don't want to have a
+white screen of death.
+
+00:13:21.450 --> 00:13:23.160
+That does happen
+from time to time.
+
+00:13:23.160 --> 00:13:25.080
+So everything in
+my-login looks good.
+
+00:13:25.080 --> 00:13:28.580
+In my-app we need to make sure
+that we are importing my-login.
+
+00:13:28.580 --> 00:13:30.010
+So let's do that.
+
+00:13:30.010 --> 00:13:33.190
+Go back up here.
+
+00:13:33.190 --> 00:13:36.870
+So we will pull
+in my-login.html.
+
+00:13:36.870 --> 00:13:38.520
+We are also going
+to want to pull
+
+00:13:38.520 --> 00:13:40.920
+in that firebase-app element.
+
+00:13:40.920 --> 00:13:44.420
+So polymerfire.
+
+00:13:44.420 --> 00:13:46.920
+Firebase-app.
+
+00:13:46.920 --> 00:13:48.030
+All right.
+
+00:13:48.030 --> 00:13:49.710
+And then in our
+index file, we are
+
+00:13:49.710 --> 00:13:51.240
+pulling in the my-app element.
+
+00:13:51.240 --> 00:13:55.440
+So my-app contains
+firebase-app and log in.
+
+00:13:55.440 --> 00:13:58.185
+And then log in
+contains firebase-auth.
+
+00:13:58.185 --> 00:14:00.810
+Let's cross our fingers and see
+if this works on the first try.
+
+00:14:00.810 --> 00:14:05.160
+We will run the provided
+Firebase server.
+
+00:14:05.160 --> 00:14:08.730
+I know sometimes we use
+Polymer CLI to serve things.
+
+00:14:08.730 --> 00:14:11.580
+But right now I'm just doing
+everything with the provided
+
+00:14:11.580 --> 00:14:12.349
+Firebase tools.
+
+00:14:12.349 --> 00:14:14.640
+We're following their project
+structure and everything.
+
+00:14:14.640 --> 00:14:15.930
+In a later episode,
+I'll actually
+
+00:14:15.930 --> 00:14:18.210
+show how to integrate both
+Polymer tools and Firebase
+
+00:14:18.210 --> 00:14:18.952
+tools.
+
+00:14:18.952 --> 00:14:20.910
+But for now let's just
+use the Firebase server.
+
+00:14:20.910 --> 00:14:25.200
+And it will tell us that the
+app is that localhost:5000.
+
+00:14:25.200 --> 00:14:27.340
+So copy that.
+
+00:14:27.340 --> 00:14:29.580
+Drop that in here
+to the Chrome's.
+
+00:14:29.580 --> 00:14:31.510
+I see I have a sign
+in button there.
+
+00:14:31.510 --> 00:14:34.590
+Let's zoom in a little
+bit so you can see that.
+
+00:14:34.590 --> 00:14:39.410
+Clicking on that should
+give me an o-auth pop up.
+
+00:14:39.410 --> 00:14:41.486
+And ask me to sign in.
+
+00:14:41.486 --> 00:14:43.410
+And I sign in.
+
+00:14:43.410 --> 00:14:45.810
+And then boom, it says,
+welcome Rob Dodson.
+
+00:14:45.810 --> 00:14:48.240
+Lets me know that we
+have a user object.
+
+00:14:48.240 --> 00:14:50.930
+And if I want, I
+can then sign out.
+
+00:14:50.930 --> 00:14:53.354
+And start the process
+all over again.
+
+00:14:53.354 --> 00:14:54.770
+So that about
+covers it for today.
+
+00:14:54.770 --> 00:14:57.570
+We've now got kind of
+the basics of setting up
+
+00:14:57.570 --> 00:15:00.960
+Firebase and setting up Firebase
+authentication in our project.
+
+00:15:00.960 --> 00:15:03.150
+There's still a lot
+more to talk about,
+
+00:15:03.150 --> 00:15:05.214
+but I'm going to save
+that for the next episode.
+
+00:15:05.214 --> 00:15:06.880
+So if you have any
+questions, as always,
+
+00:15:06.880 --> 00:15:08.790
+you can leave them for me
+down below in the comments.
+
+00:15:08.790 --> 00:15:11.164
+Or you can hit me up on a
+social network of your choosing
+
+00:15:11.164 --> 00:15:12.735
+at #askpolymer.
+
+00:15:12.735 --> 00:15:14.360
+As always, thanks so
+much for watching,
+
+00:15:14.360 --> 00:15:16.564
+and I'll see you next time.
+
+00:15:16.564 --> 00:15:17.980
+Hey there,
+Polycasters, what's up?
+
+00:15:17.980 --> 00:15:20.880
+If you liked this episode and
+you want to see some more,
+
+00:15:20.880 --> 00:15:22.610
+you can check them
+out over here.
+
+00:15:22.610 --> 00:15:25.510
+And also be sure to click
+that little subscribe button,
+
+00:15:25.510 --> 00:15:27.060
+thanks.
+

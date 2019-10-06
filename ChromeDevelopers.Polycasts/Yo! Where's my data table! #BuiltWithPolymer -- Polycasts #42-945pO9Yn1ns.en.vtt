@@ -1,0 +1,976 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.020
+MALE SPEAKER:
+Polycast 43, take one.
+
+00:00:05.055 --> 00:00:06.930
+ROB DODSON: Hey there,
+Polycasters, Rob here.
+
+00:00:06.930 --> 00:00:08.490
+Welcome back to the show.
+
+00:00:08.490 --> 00:00:10.560
+Last week we were
+doing this thing called
+
+00:00:10.560 --> 00:00:12.770
+"Ask Polymer," where we
+take questions from you,
+
+00:00:12.770 --> 00:00:15.280
+and then we try to answer them
+here on the YouTube channel.
+
+00:00:15.280 --> 00:00:17.430
+And as we were collecting
+those questions,
+
+00:00:17.430 --> 00:00:19.760
+I noticed a lot of
+folks were asking,
+
+00:00:19.760 --> 00:00:22.330
+when's the Polymer team
+going to create a data table?
+
+00:00:22.330 --> 00:00:26.005
+Or, what is the road map
+for this particular element
+
+00:00:26.005 --> 00:00:27.440
+and stuff like that?
+
+00:00:27.440 --> 00:00:29.334
+And as we were going
+through that process,
+
+00:00:29.334 --> 00:00:31.750
+I really started to think that
+if web components are going
+
+00:00:31.750 --> 00:00:34.050
+to be successful, we're
+going to have to scale
+
+00:00:34.050 --> 00:00:35.840
+beyond the Polymer team.
+
+00:00:35.840 --> 00:00:37.940
+Really, it's going
+to be up to all of us
+
+00:00:37.940 --> 00:00:40.910
+out here in the community
+to start making cool stuff,
+
+00:00:40.910 --> 00:00:44.204
+sharing it with one another, and
+also like promoting it, right?
+
+00:00:44.204 --> 00:00:45.870
+So one of the things
+that I wanted to do
+
+00:00:45.870 --> 00:00:49.010
+was, here on this show, I want
+to start a new segment called
+
+00:00:49.010 --> 00:00:51.690
+#BuiltWithPolymer, where I take
+all the cool stuff that you're
+
+00:00:51.690 --> 00:00:53.230
+building, and we
+just show it off
+
+00:00:53.230 --> 00:00:55.490
+so other folks can get
+involved with the projects
+
+00:00:55.490 --> 00:00:58.520
+and start using it in
+their own applications.
+
+00:00:58.520 --> 00:01:00.410
+Now, to do this, we're
+going to start off
+
+00:01:00.410 --> 00:01:03.670
+by looking at a website
+called customelements.io.
+
+00:01:03.670 --> 00:01:05.980
+I'm curious, show of
+hands, how many of you
+
+00:01:05.980 --> 00:01:09.180
+have seen
+customelements.io before?
+
+00:01:09.180 --> 00:01:10.170
+[CHEERING]
+
+00:01:10.170 --> 00:01:13.060
+OK, I noticed that you did
+not raise your hand, sir.
+
+00:01:13.060 --> 00:01:15.481
+So for you and for
+other folks like you,
+
+00:01:15.481 --> 00:01:17.730
+I want to just walk you
+through how this website works
+
+00:01:17.730 --> 00:01:19.730
+and some of the cool
+stuff that's on there.
+
+00:01:19.730 --> 00:01:21.813
+So if you haven't seen it
+before customelements.io
+
+00:01:21.813 --> 00:01:23.700
+is pretty bad ass.
+
+00:01:23.700 --> 00:01:26.490
+You can think of it kind of like
+[? MPM ?] for web components.
+
+00:01:26.490 --> 00:01:28.117
+It's sort of a registry.
+
+00:01:28.117 --> 00:01:29.950
+It collects all the
+things that are actually
+
+00:01:29.950 --> 00:01:31.366
+in the Bower
+registry, and then it
+
+00:01:31.366 --> 00:01:33.190
+displays little bits
+of info about it.
+
+00:01:33.190 --> 00:01:35.010
+So you can search, and you can
+find the different components
+
+00:01:35.010 --> 00:01:36.140
+that are out there.
+
+00:01:36.140 --> 00:01:37.890
+You go to the website,
+and the first thing
+
+00:01:37.890 --> 00:01:40.820
+that you're going to see up here
+are these three main sections.
+
+00:01:40.820 --> 00:01:43.840
+You've got the stuff
+that is recently created.
+
+00:01:43.840 --> 00:01:45.160
+It's brand new.
+
+00:01:45.160 --> 00:01:47.980
+You've got the things that have
+been recently updated, which
+
+00:01:47.980 --> 00:01:48.990
+I always like to see.
+
+00:01:48.990 --> 00:01:50.312
+That's supposed to be a clock.
+
+00:01:50.312 --> 00:01:52.020
+And then you've also
+got the stuff that's
+
+00:01:52.020 --> 00:01:53.530
+the most popular
+elements out there,
+
+00:01:53.530 --> 00:01:56.600
+so the things with
+the most GitHub stars.
+
+00:01:56.600 --> 00:01:58.810
+All three of these,
+very useful categories
+
+00:01:58.810 --> 00:02:00.492
+to kind of keep tabs on.
+
+00:02:00.492 --> 00:02:02.200
+And one of things that
+I also really like
+
+00:02:02.200 --> 00:02:04.810
+is you've got this really huge
+search field up at the top.
+
+00:02:04.810 --> 00:02:06.320
+Now, anything that
+you could kind of
+
+00:02:06.320 --> 00:02:09.639
+imagine needing a component
+for you can just go type.
+
+00:02:09.639 --> 00:02:14.270
+So I might say, oh, I want
+something like a table.
+
+00:02:14.270 --> 00:02:16.000
+So go type in
+table, and now I've
+
+00:02:16.000 --> 00:02:19.080
+got all of these cool
+results popping up here
+
+00:02:19.080 --> 00:02:22.250
+for various kinds of tables.
+
+00:02:22.250 --> 00:02:24.240
+Another thing that
+customelements.io gives you,
+
+00:02:24.240 --> 00:02:26.489
+which is pretty awesome, is
+at any point, if you want,
+
+00:02:26.489 --> 00:02:28.490
+you can click on
+someone's profile photo,
+
+00:02:28.490 --> 00:02:31.580
+and this will show you not only
+their profile page, but also
+
+00:02:31.580 --> 00:02:33.114
+all the cool
+elements that they've
+
+00:02:33.114 --> 00:02:35.530
+produced in addition to that
+one that you were looking at.
+
+00:02:35.530 --> 00:02:38.010
+So if you think someone's making
+some really high-quality stuff,
+
+00:02:38.010 --> 00:02:40.230
+you can kind of stalk them
+on a customelements.io
+
+00:02:40.230 --> 00:02:42.020
+and see what else
+they're making.
+
+00:02:42.020 --> 00:02:44.530
+Going back to where we were
+last week, a lot of folks
+
+00:02:44.530 --> 00:02:46.550
+were asking, when is
+the Polymer team going
+
+00:02:46.550 --> 00:02:49.895
+to create a date picker in
+the Material Design style?
+
+00:02:49.895 --> 00:02:52.470
+Now, this is something
+that is not currently
+
+00:02:52.470 --> 00:02:54.356
+on the Polymer
+team's to-do list.
+
+00:02:54.356 --> 00:02:56.230
+We have a lot of elements
+that we've created.
+
+00:02:56.230 --> 00:02:58.105
+And right now what we
+really want to focus on
+
+00:02:58.105 --> 00:03:00.430
+is polishing those, closing
+bugs, and making sure
+
+00:03:00.430 --> 00:03:01.910
+that they work really well.
+
+00:03:01.910 --> 00:03:03.640
+So at the moment,
+no one is actively
+
+00:03:03.640 --> 00:03:06.690
+working on a paper date picker,
+and that, for a lot of folks,
+
+00:03:06.690 --> 00:03:08.005
+is sort of a dilemma.
+
+00:03:08.005 --> 00:03:09.830
+But if we go to
+customelements.io,
+
+00:03:09.830 --> 00:03:11.413
+we go to the search
+field, we can just
+
+00:03:11.413 --> 00:03:14.200
+type in date picker,
+or just date, whatever.
+
+00:03:14.200 --> 00:03:15.804
+And we can see right
+here, right away,
+
+00:03:15.804 --> 00:03:17.720
+we've got this paper
+date picker that shows up
+
+00:03:17.720 --> 00:03:19.140
+by this guy named Ben Davis.
+
+00:03:19.140 --> 00:03:21.530
+So let's scope that out.
+
+00:03:21.530 --> 00:03:25.090
+And looking at the Component
+page on customelements.io,
+
+00:03:25.090 --> 00:03:28.190
+we get a lot of information
+really quick right here.
+
+00:03:28.190 --> 00:03:33.700
+So I can see, for instance, how
+many stars this component has.
+
+00:03:33.700 --> 00:03:35.670
+I can see how many
+people have forked it
+
+00:03:35.670 --> 00:03:38.540
+and how many people are
+watching the issues on it.
+
+00:03:38.540 --> 00:03:42.390
+I also get the one-liner
+to install this on Bower.
+
+00:03:42.390 --> 00:03:45.590
+And what I think is maybe one
+of the most important aspects
+
+00:03:45.590 --> 00:03:48.590
+of the site, I get this
+Activity panel here.
+
+00:03:48.590 --> 00:03:51.740
+And on the Activity panel I
+can see that the component
+
+00:03:51.740 --> 00:03:53.440
+was created a year ago.
+
+00:03:53.440 --> 00:03:57.020
+And most importantly, I can
+see that it was last updated 11
+
+00:03:57.020 --> 00:03:59.250
+days ago, which tells
+me that this is still
+
+00:03:59.250 --> 00:04:00.880
+being actively developed.
+
+00:04:00.880 --> 00:04:02.557
+People are contributing
+to this thing.
+
+00:04:02.557 --> 00:04:03.390
+They're patching it.
+
+00:04:03.390 --> 00:04:04.360
+They're fixing bugs.
+
+00:04:04.360 --> 00:04:06.100
+And it's getting a
+lot of love right now,
+
+00:04:06.100 --> 00:04:07.766
+which is important
+for anything that I'm
+
+00:04:07.766 --> 00:04:09.580
+going to add to my application.
+
+00:04:09.580 --> 00:04:12.586
+Also, we've got the list
+of Bower dependencies
+
+00:04:12.586 --> 00:04:13.960
+down here on the
+right-hand side.
+
+00:04:13.960 --> 00:04:15.640
+And again, it's really
+valuable because I
+
+00:04:15.640 --> 00:04:18.181
+want to know that, hey, is this
+thing depending on the latest
+
+00:04:18.181 --> 00:04:21.510
+version of Polymer, or at least
+Polymer 1.0 and some version
+
+00:04:21.510 --> 00:04:22.440
+above that?
+
+00:04:22.440 --> 00:04:25.230
+I don't want an element that
+is Polymer 0.5 or Polymer
+
+00:04:25.230 --> 00:04:26.450
+0.3 or anything.
+
+00:04:26.450 --> 00:04:28.520
+That's just not going
+to work in my app.
+
+00:04:28.520 --> 00:04:30.077
+So having all of
+this information
+
+00:04:30.077 --> 00:04:31.910
+just kind of at your
+disposal every time you
+
+00:04:31.910 --> 00:04:33.326
+go check out one
+of these elements
+
+00:04:33.326 --> 00:04:36.230
+is a huge, huge benefit
+and one of the main reasons
+
+00:04:36.230 --> 00:04:39.105
+why I think everyone should
+be using customelements.io.
+
+00:04:39.105 --> 00:04:40.480
+Now, the other
+thing that it does
+
+00:04:40.480 --> 00:04:43.540
+is it slurps in the
+README for this element.
+
+00:04:43.540 --> 00:04:45.390
+So you can see here
+on the left I've
+
+00:04:45.390 --> 00:04:47.430
+got kind of the GitHub
+README that's just
+
+00:04:47.430 --> 00:04:49.120
+been pulled into the website.
+
+00:04:49.120 --> 00:04:51.460
+And, if you want, you can
+go down here and click
+
+00:04:51.460 --> 00:04:54.040
+on the Component
+page, and this is
+
+00:04:54.040 --> 00:04:57.804
+going to give you the classic
+Polymer [? dox ?] style, right?
+
+00:04:57.804 --> 00:04:59.220
+You've probably
+seen these before,
+
+00:04:59.220 --> 00:05:01.470
+where you can see properties
+that an element supports.
+
+00:05:01.470 --> 00:05:03.604
+You can see the methods
+that it supports as well.
+
+00:05:03.604 --> 00:05:06.020
+One of the things that I noticed
+was not showing up here--
+
+00:05:06.020 --> 00:05:07.519
+usually, up in the
+top-right corner,
+
+00:05:07.519 --> 00:05:08.900
+there's a little Demo button.
+
+00:05:08.900 --> 00:05:10.620
+It's not showing
+up on this page,
+
+00:05:10.620 --> 00:05:16.010
+but we can just add that by
+typing Demo into the URL bar.
+
+00:05:16.010 --> 00:05:20.362
+And now, ta-da, we've got our
+paper date picker showing up.
+
+00:05:20.362 --> 00:05:22.570
+And you can see, this thing
+looks pretty nice, right?
+
+00:05:22.570 --> 00:05:25.430
+I can go click around
+different dates.
+
+00:05:25.430 --> 00:05:27.950
+Changing the month gives me
+these sort of cool Material
+
+00:05:27.950 --> 00:05:30.090
+Design ripple effects.
+
+00:05:30.090 --> 00:05:32.250
+Close it, and then I can
+click this button again
+
+00:05:32.250 --> 00:05:33.619
+to show you how it reopens.
+
+00:05:33.619 --> 00:05:35.660
+Lastly, one of the things
+that's really important
+
+00:05:35.660 --> 00:05:38.120
+is making sure that the
+date picker is responsive.
+
+00:05:38.120 --> 00:05:40.080
+So I go grab the
+corner of my browser,
+
+00:05:40.080 --> 00:05:42.680
+start shrinking the
+page, and then, boom,
+
+00:05:42.680 --> 00:05:45.340
+you can see that it has changed
+its layout, which is really,
+
+00:05:45.340 --> 00:05:47.390
+really good for mobile devices.
+
+00:05:47.390 --> 00:05:50.890
+So that is just one element
+that Ben Davis has produced.
+
+00:05:50.890 --> 00:05:54.190
+If you go back to his
+profile on customelements.io,
+
+00:05:54.190 --> 00:05:57.255
+you can see that he's got
+a few other items here--
+
+00:05:57.255 --> 00:06:00.780
+a paper chip, paper time picker,
+slightly different from a date
+
+00:06:00.780 --> 00:06:02.300
+picker, paper
+full-screen dialog.
+
+00:06:02.300 --> 00:06:03.340
+A lot of really
+interesting looking
+
+00:06:03.340 --> 00:06:05.360
+stuff there that
+hopefully we can show off
+
+00:06:05.360 --> 00:06:06.990
+in a future episode.
+
+00:06:06.990 --> 00:06:09.500
+So go find some elements
+on customelements.io.
+
+00:06:09.500 --> 00:06:11.100
+Go find the authors, stalk them.
+
+00:06:11.100 --> 00:06:12.410
+Stalk them on GitHub.
+
+00:06:12.410 --> 00:06:13.660
+Don't stalk them in real life.
+
+00:06:13.660 --> 00:06:15.510
+But stalk them on GitHub
+and on this website
+
+00:06:15.510 --> 00:06:17.260
+so you can keep tabs
+on all the cool stuff
+
+00:06:17.260 --> 00:06:18.360
+that they're building.
+
+00:06:18.360 --> 00:06:19.901
+Another thing that
+happened last week
+
+00:06:19.901 --> 00:06:22.260
+was a lot of folks were
+asking, when's the Polymer team
+
+00:06:22.260 --> 00:06:24.130
+going to create a
+data table, something
+
+00:06:24.130 --> 00:06:26.260
+that is really sophisticated
+that I can filter,
+
+00:06:26.260 --> 00:06:28.830
+where I can rearrange columns,
+and do all sorts of stuff
+
+00:06:28.830 --> 00:06:29.397
+like that?
+
+00:06:29.397 --> 00:06:31.230
+Honestly, again, this
+is one of those things
+
+00:06:31.230 --> 00:06:33.061
+that it's such a
+big undertaking,
+
+00:06:33.061 --> 00:06:34.560
+no one on the Polymer
+team currently
+
+00:06:34.560 --> 00:06:36.520
+has it on their to-do list.
+
+00:06:36.520 --> 00:06:38.740
+Because building a
+complex data table,
+
+00:06:38.740 --> 00:06:41.970
+you could seriously just
+found a company just
+
+00:06:41.970 --> 00:06:43.660
+on making a killer data table.
+
+00:06:43.660 --> 00:06:46.900
+And, in fact, there's a group of
+folks who have done just that.
+
+00:06:46.900 --> 00:06:48.864
+So recently, a
+team called Vaadin
+
+00:06:48.864 --> 00:06:50.530
+released a set of
+elements which they're
+
+00:06:50.530 --> 00:06:52.390
+calling Vaadin Elements.
+
+00:06:52.390 --> 00:06:54.740
+And very similar to the
+product lines of the Polymer
+
+00:06:54.740 --> 00:06:56.948
+team [? vends, ?] things
+like iron elements and paper
+
+00:06:56.948 --> 00:06:58.270
+elements, they put out the set.
+
+00:06:58.270 --> 00:07:02.100
+And the Vaadin Elements are
+split into two categories.
+
+00:07:02.100 --> 00:07:05.160
+You've got these
+business-oriented elements
+
+00:07:05.160 --> 00:07:07.700
+for things like data
+tables and combo boxes.
+
+00:07:07.700 --> 00:07:11.650
+They've even created an icon
+set of kind of business-y icons.
+
+00:07:11.650 --> 00:07:15.180
+Then they've also got a
+bunch of data visualization
+
+00:07:15.180 --> 00:07:17.330
+components, Vaadin Charts.
+
+00:07:17.330 --> 00:07:19.410
+Now, the core elements,
+as they call them,
+
+00:07:19.410 --> 00:07:21.700
+these sort of
+business layout ones,
+
+00:07:21.700 --> 00:07:23.169
+these are all free
+and open source.
+
+00:07:23.169 --> 00:07:25.710
+They are Apache licensed, so
+you can use them in your project
+
+00:07:25.710 --> 00:07:26.290
+today.
+
+00:07:26.290 --> 00:07:28.860
+And then the Chart
+Elements, those
+
+00:07:28.860 --> 00:07:31.600
+are a commercial license,
+which you have to pay for.
+
+00:07:31.600 --> 00:07:33.850
+But since a lot of you were
+asking about data tables,
+
+00:07:33.850 --> 00:07:35.200
+I thought this would
+be a really good one
+
+00:07:35.200 --> 00:07:37.180
+to highlight because
+it's available on GitHub,
+
+00:07:37.180 --> 00:07:39.180
+and you can mess around
+with it and use it today
+
+00:07:39.180 --> 00:07:40.236
+in your project for free.
+
+00:07:40.236 --> 00:07:41.860
+So if you go to their
+website, which is
+
+00:07:41.860 --> 00:07:45.000
+at vaadin.com/elements, you've
+got this little Demo button.
+
+00:07:45.000 --> 00:07:48.450
+And if we click that, it's going
+to show us this cool Expense
+
+00:07:48.450 --> 00:07:49.455
+Manager Application.
+
+00:07:49.455 --> 00:07:53.390
+So I'm going to scope out
+the live demo for this puppy.
+
+00:07:53.390 --> 00:07:54.960
+And we've got a
+really, really nice
+
+00:07:54.960 --> 00:07:59.900
+looking experience here, so
+kind of classic table layout--
+
+00:07:59.900 --> 00:08:01.460
+columns and headers.
+
+00:08:01.460 --> 00:08:03.680
+What I really like
+about this is there's
+
+00:08:03.680 --> 00:08:05.940
+these filters up at the top.
+
+00:08:05.940 --> 00:08:08.930
+So I can just go and check
+some of these values.
+
+00:08:08.930 --> 00:08:11.850
+And, for instance, checking
+in progress and reimburse,
+
+00:08:11.850 --> 00:08:15.660
+you can see over here the
+amount of items in the table
+
+00:08:15.660 --> 00:08:18.025
+is changing as I'm
+changing these values.
+
+00:08:18.025 --> 00:08:19.400
+You can sort of
+see them changing
+
+00:08:19.400 --> 00:08:21.300
+over here as well on the left.
+
+00:08:21.300 --> 00:08:23.410
+We can also look for
+different merchants.
+
+00:08:23.410 --> 00:08:25.740
+So I could say, oh, I
+just want to see stuff
+
+00:08:25.740 --> 00:08:28.020
+from the Taxi
+merchant for instance,
+
+00:08:28.020 --> 00:08:29.950
+and we'll just get
+only the expenses
+
+00:08:29.950 --> 00:08:32.020
+related to that category.
+
+00:08:32.020 --> 00:08:34.829
+Likewise, we can search
+by min and max values,
+
+00:08:34.829 --> 00:08:36.370
+a lot of cool things
+you can do here.
+
+00:08:36.370 --> 00:08:38.570
+They've even got this little
+floating action button
+
+00:08:38.570 --> 00:08:40.090
+down here at the bottom.
+
+00:08:40.090 --> 00:08:42.230
+So you can use that
+to open a dialog
+
+00:08:42.230 --> 00:08:44.735
+and actually add a new
+expense to this table--
+
+00:08:44.735 --> 00:08:47.560
+a really, really cool
+example, really, really cool,
+
+00:08:47.560 --> 00:08:48.280
+powerful element.
+
+00:08:48.280 --> 00:08:50.030
+It's one of those
+things that, again, it's
+
+00:08:50.030 --> 00:08:53.470
+not on the Polymer team's
+agenda at the moment to build,
+
+00:08:53.470 --> 00:08:56.410
+but here you've got this awesome
+community-built project which
+
+00:08:56.410 --> 00:08:59.480
+we can all start
+using in our own work.
+
+00:08:59.480 --> 00:09:01.320
+So, yeah, that about
+covers it for today.
+
+00:09:01.320 --> 00:09:02.850
+I know I've only shown
+a couple elements,
+
+00:09:02.850 --> 00:09:04.891
+but there's actually a
+big, long list of elements
+
+00:09:04.891 --> 00:09:07.160
+that I want to start
+featuring on this show.
+
+00:09:07.160 --> 00:09:09.050
+But before I get
+into that, if you
+
+00:09:09.050 --> 00:09:11.010
+out there, if you've got some
+stuff that you've built which
+
+00:09:11.010 --> 00:09:13.280
+you would like for us to show
+off-- it can be elements,
+
+00:09:13.280 --> 00:09:15.363
+it could just be cool
+projects that you've built--
+
+00:09:15.363 --> 00:09:18.270
+please leave me a comment down
+there in the YouTube comments,
+
+00:09:18.270 --> 00:09:22.079
+or you can ping me on
+Twitter at #BuiltWithPolymer.
+
+00:09:22.079 --> 00:09:23.370
+That about covers it for today.
+
+00:09:23.370 --> 00:09:25.936
+So, as always, thank you
+so much for watching,
+
+00:09:25.936 --> 00:09:27.060
+and I'll see you next time.
+
+00:09:31.060 --> 00:09:32.498
+Ready?
+
+00:09:32.498 --> 00:09:36.250
+MALE SPEAKER: 43 take
+two, [INAUDIBLE].
+
+00:09:36.250 --> 00:09:39.720
+ROB DODSON: Hey there,
+Polycasters, Rob here.
+
+00:09:39.720 --> 00:09:43.630
+[BLEEP] Kind of
+pause for a second.
+
+00:09:43.630 --> 00:09:45.826
+Oh, Twitter notifications.
+

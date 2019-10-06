@@ -1,0 +1,440 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.393
+[MUSIC PLAYING]
+
+00:00:09.190 --> 00:00:11.240
+ADDY OSMANI: So Matt,
+I'm working on a new web
+
+00:00:11.240 --> 00:00:13.026
+app for lonely people.
+
+00:00:13.026 --> 00:00:13.650
+MATT GAUNT: OK.
+
+00:00:13.650 --> 00:00:15.090
+What does it do?
+
+00:00:15.090 --> 00:00:16.059
+What is it called?
+
+00:00:16.059 --> 00:00:18.170
+ADDY OSMANI: It's called
+"Words With Cats."
+
+00:00:18.170 --> 00:00:19.920
+Now-- Words With Cats.
+
+00:00:19.920 --> 00:00:21.450
+It's a brilliant name.
+
+00:00:21.450 --> 00:00:24.760
+Now, I want to show an icon
+on my phone's home screen,
+
+00:00:24.760 --> 00:00:26.260
+if someone launches
+this, and I also
+
+00:00:26.260 --> 00:00:29.680
+want to be able to show
+like an icon or some visual
+
+00:00:29.680 --> 00:00:30.500
+in a splash screen.
+
+00:00:30.500 --> 00:00:32.290
+MATT GAUNT: Of a cat reading
+a dictionary, or something?
+
+00:00:32.290 --> 00:00:34.760
+ADDY OSMANI: A cat reading--
+you're 're a thought leader.
+
+00:00:34.760 --> 00:00:36.270
+How can I get that done?
+
+00:00:36.270 --> 00:00:40.570
+MATT GAUNT: So Chrome now has
+the add to home screen stuff.
+
+00:00:40.570 --> 00:00:44.780
+So, basically, if you meet
+a certain set of criteria
+
+00:00:44.780 --> 00:00:46.962
+when a user is basically
+engaged in your web app,
+
+00:00:46.962 --> 00:00:49.420
+it will come a little banner
+saying, hey, would to add this
+
+00:00:49.420 --> 00:00:50.310
+to your home screen.
+
+00:00:50.310 --> 00:00:52.650
+So, you basically
+need to be on HBS,
+
+00:00:52.650 --> 00:00:54.960
+and to have a service
+worker, and you
+
+00:00:54.960 --> 00:00:56.440
+need a web app manifest.
+
+00:00:56.440 --> 00:00:57.904
+And then after that
+it's basically,
+
+00:00:57.904 --> 00:01:00.070
+depending on the user coming
+back a couple of times,
+
+00:01:00.070 --> 00:01:01.642
+then it will show the banner.
+
+00:01:01.642 --> 00:01:03.350
+So the web app manifest
+is the main thing
+
+00:01:03.350 --> 00:01:05.820
+that you need, to
+enable all of this,
+
+00:01:05.820 --> 00:01:07.000
+along with the other bits.
+
+00:01:07.000 --> 00:01:09.240
+But the manifest is just
+a JSON file at that point.
+
+00:01:09.240 --> 00:01:09.990
+ADDY OSMANI: Cool.
+
+00:01:09.990 --> 00:01:11.360
+So it's just a JSON file.
+
+00:01:11.360 --> 00:01:12.810
+Is this a Chrome-only thing?
+
+00:01:12.810 --> 00:01:13.601
+MATT GAUNT: No, no.
+
+00:01:13.601 --> 00:01:16.160
+This is all the standard
+space, so basically any browser
+
+00:01:16.160 --> 00:01:19.340
+can look for this link rel tag
+that links to your manifest
+
+00:01:19.340 --> 00:01:21.390
+JSON file, at that
+point they can parse it
+
+00:01:21.390 --> 00:01:23.450
+and it's just going to--
+you have certain things
+
+00:01:23.450 --> 00:01:25.650
+to find for then browsers
+to take it all out.
+
+00:01:25.650 --> 00:01:26.441
+ADDY OSMANI: Right.
+
+00:01:26.441 --> 00:01:28.960
+So the manifest lets
+me customize my icons.
+
+00:01:28.960 --> 00:01:30.710
+What other stuff can
+I configure in there?
+
+00:01:30.710 --> 00:01:32.930
+MATT GAUNT: So, you can
+define short name, which
+
+00:01:32.930 --> 00:01:34.620
+would be the text
+underneath your icon
+
+00:01:34.620 --> 00:01:35.770
+that you'd normally see.
+
+00:01:35.770 --> 00:01:38.830
+Theme color, which Chrome
+uses, is like the URL color
+
+00:01:38.830 --> 00:01:40.580
+along the URL bar.
+
+00:01:40.580 --> 00:01:43.250
+Background color is
+for the splash screen.
+
+00:01:43.250 --> 00:01:46.800
+So, if you have that add to
+home screen, then click on it,
+
+00:01:46.800 --> 00:01:49.092
+it'll launch and basically
+while Chrome's loading, what
+
+00:01:49.092 --> 00:01:50.799
+you can do is show a
+splash screen that's
+
+00:01:50.799 --> 00:01:53.050
+like a solid color and then
+have an icon on top of it
+
+00:01:53.050 --> 00:01:54.700
+along with the text.
+
+00:01:54.700 --> 00:01:56.145
+So background color does that.
+
+00:01:56.145 --> 00:01:57.770
+You've got an array
+of icons, so again,
+
+00:01:57.770 --> 00:02:00.144
+depending on what the browser
+want's to use the icon for,
+
+00:02:00.144 --> 00:02:02.060
+it will just pick
+the best size for it.
+
+00:02:02.060 --> 00:02:04.470
+Start URL is super awesome.
+
+00:02:04.470 --> 00:02:06.590
+What that is, is basically--
+you remember back
+
+00:02:06.590 --> 00:02:08.240
+in the day we used to have
+add to home screen in Chrome?
+
+00:02:08.240 --> 00:02:09.320
+It was like hidden in the menu.
+
+00:02:09.320 --> 00:02:09.889
+ADDY OSMANI: Yeah.
+
+00:02:09.889 --> 00:02:11.597
+MATT GAUNT: So, what
+that would always do
+
+00:02:11.597 --> 00:02:14.970
+is whatever page you're on
+that is where you will get
+
+00:02:14.970 --> 00:02:17.490
+pointed when you click on
+the icon for the home screen.
+
+00:02:17.490 --> 00:02:20.030
+Start URL let's you
+define where that is now.
+
+00:02:20.030 --> 00:02:23.405
+So, if someone was in the middle
+of a blog article, clicked
+
+00:02:23.405 --> 00:02:26.220
+on add to home screen, now
+you can say, actually, just
+
+00:02:26.220 --> 00:02:29.220
+go to the home of the blog.
+
+00:02:29.220 --> 00:02:30.490
+Then you've got display.
+
+00:02:30.490 --> 00:02:33.680
+Display is basically rather
+than launch in browser mode,
+
+00:02:33.680 --> 00:02:35.970
+you can say actually I
+want it to go full screen.
+
+00:02:35.970 --> 00:02:36.980
+ADDY OSMANI: Oh, so
+you can launch it full
+
+00:02:36.980 --> 00:02:39.251
+screen the same way that a
+native app might look like,
+
+00:02:39.251 --> 00:02:39.750
+right?
+
+00:02:39.750 --> 00:02:41.081
+MATT GAUNT: Yeah, exactly.
+
+00:02:41.081 --> 00:02:43.080
+But, alongside that there
+is, also, in the spec,
+
+00:02:43.080 --> 00:02:43.395
+orientations.
+
+00:02:43.395 --> 00:02:45.940
+So you could theoretically lock
+it to portrait or landscape.
+
+00:02:45.940 --> 00:02:47.020
+ADDY OSMANI: Oh,
+cool, so for games
+
+00:02:47.020 --> 00:02:48.144
+that's particularly useful.
+
+00:02:48.144 --> 00:02:52.635
+MATT GAUNT: Yeah, if you want to
+do like forced-- thumb sticks.
+
+00:02:52.635 --> 00:02:54.010
+The nice thing,
+especially, I was
+
+00:02:54.010 --> 00:02:56.630
+going to say with the Start
+URL, you can actually then add
+
+00:02:56.630 --> 00:02:58.550
+the query parameter,
+so then you can track
+
+00:02:58.550 --> 00:02:59.540
+how many people are using it.
+
+00:02:59.540 --> 00:02:59.740
+ADDY OSMANI: Ah.
+
+00:02:59.740 --> 00:03:01.926
+MATT GAUNT: So, like
+home screen equals true.
+
+00:03:01.926 --> 00:03:03.550
+And then analytics
+would just show you.
+
+00:03:03.550 --> 00:03:04.300
+ADDY OSMANI: Cool.
+
+00:03:04.300 --> 00:03:06.490
+MATT GAUNT: So that's
+pretty much the bulk of it.
+
+00:03:06.490 --> 00:03:07.240
+ADDY OSMANI: Nice.
+
+00:03:07.240 --> 00:03:09.390
+Is there-- if I wanted
+to like validate
+
+00:03:09.390 --> 00:03:12.660
+that I've got a legit manifest,
+is there are tool I can use
+
+00:03:12.660 --> 00:03:13.160
+for that?
+
+00:03:13.160 --> 00:03:14.660
+MATT GAUNT: Yes,
+someone has built
+
+00:03:14.660 --> 00:03:16.739
+a web app manifest validator.
+
+00:03:16.739 --> 00:03:18.447
+I think DevTools were
+also going to do it
+
+00:03:18.447 --> 00:03:20.625
+so you can like force
+a download the manifest
+
+00:03:20.625 --> 00:03:21.889
+and get DevTools to parse it.
+
+00:03:21.889 --> 00:03:23.680
+ADDY OSMANI: I believe
+we mentioned as much
+
+00:03:23.680 --> 00:03:27.070
+in Totally Tooling Tears.
+
+00:03:27.070 --> 00:03:29.401
+MATT GAUNT: But I haven't
+actually used it yet, myself.
+
+00:03:29.401 --> 00:03:31.650
+And, admittedly, if you don't
+use something like that,
+
+00:03:31.650 --> 00:03:33.900
+it's kind of hard to figure out
+whether it's working or not.
+
+00:03:33.900 --> 00:03:35.180
+So those are well
+worth checking out.
+
+00:03:35.180 --> 00:03:37.138
+ADDY OSMANI: OK, so we
+talked about the web app
+
+00:03:37.138 --> 00:03:40.130
+manifest, the manifest
+validator, for checking out,
+
+00:03:40.130 --> 00:03:41.830
+DevTools is looking at it.
+
+00:03:41.830 --> 00:03:43.840
+Are there docs on this
+available as well?
+
+00:03:43.840 --> 00:03:45.381
+MATT GAUNT: The best
+thing to look at
+
+00:03:45.381 --> 00:03:46.570
+is [INAUDIBLE] blog post.
+
+00:03:46.570 --> 00:03:50.320
+It covers example manifests, how
+do I get it to the HTML page,
+
+00:03:50.320 --> 00:03:52.090
+and then how to
+debug it as well.
+
+00:03:52.090 --> 00:03:53.449
+So that's probably the best bet.
+
+00:03:53.449 --> 00:03:54.240
+ADDY OSMANI: Sweet.
+
+00:03:54.240 --> 00:03:55.630
+MATT GAUNT: And plus
+it's in web starter kit,
+
+00:03:55.630 --> 00:03:57.900
+and a whole other host of
+the projects that we do.
+
+00:03:57.900 --> 00:04:01.280
+[MUSIC PLAYING]
+

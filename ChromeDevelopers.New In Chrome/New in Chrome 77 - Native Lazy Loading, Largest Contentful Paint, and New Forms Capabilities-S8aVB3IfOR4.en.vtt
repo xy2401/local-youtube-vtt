@@ -1,0 +1,376 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:01.785
+PETE LEPAGE:
+There's a better way
+
+00:00:01.785 --> 00:00:03.400
+to track the performance
+of your site,
+
+00:00:03.400 --> 00:00:08.420
+forms get some new capabilities,
+and native lazy loading is here
+
+00:00:08.420 --> 00:00:09.410
+I'm Pete LePage.
+
+00:00:09.410 --> 00:00:12.530
+Let's dive in and see what's
+new for developers in Chrome 77.
+
+00:00:12.530 --> 00:00:15.330
+[MUSIC PLAYING]
+
+00:00:15.330 --> 00:00:18.390
+Understanding and measuring
+the real world performance
+
+00:00:18.390 --> 00:00:20.940
+of your website can be hard.
+
+00:00:20.940 --> 00:00:24.120
+Metrics like load,
+DOMcontentloaded
+
+00:00:24.120 --> 00:00:27.420
+don't tell you what the
+user is seeing on screen.
+
+00:00:27.420 --> 00:00:30.120
+First Paint and First
+Contentful Paint
+
+00:00:30.120 --> 00:00:33.420
+only capture the beginning
+of the experience.
+
+00:00:33.420 --> 00:00:35.520
+First Meaningful
+Paint is better,
+
+00:00:35.520 --> 00:00:39.690
+but it's still complex
+and sometimes wrong.
+
+00:00:39.690 --> 00:00:42.210
+The largest
+Contentful Paint API,
+
+00:00:42.210 --> 00:00:45.090
+available starting
+in Chrome 77, reports
+
+00:00:45.090 --> 00:00:49.590
+the render time of the largest
+element visible in the viewport
+
+00:00:49.590 --> 00:00:51.900
+and makes it possible
+to measure when
+
+00:00:51.900 --> 00:00:55.020
+the main content of
+the page is loaded.
+
+00:00:55.020 --> 00:00:57.540
+To measure the largest
+Contentful Paint,
+
+00:00:57.540 --> 00:00:59.760
+you'll need to use a
+Performance Observer
+
+00:00:59.760 --> 00:01:03.360
+and look for the largest
+Contentful Paint events.
+
+00:01:03.360 --> 00:01:06.120
+Since a Paint often
+loads in stages,
+
+00:01:06.120 --> 00:01:09.810
+it's possible that the largest
+element on a page will change.
+
+00:01:09.810 --> 00:01:13.530
+So you should only report the
+last, largest Contentful Paint
+
+00:01:13.530 --> 00:01:15.900
+event to your analytic service.
+
+00:01:15.900 --> 00:01:18.720
+Phil has a great post on
+the largest Contentful Paint
+
+00:01:18.720 --> 00:01:21.240
+API on web.dev.
+
+00:01:21.240 --> 00:01:24.210
+Many developers build
+custom form controls
+
+00:01:24.210 --> 00:01:27.480
+either to customize the look
+and feel of existing elements
+
+00:01:27.480 --> 00:01:31.650
+or to build new controls that
+aren't built into the browser.
+
+00:01:31.650 --> 00:01:35.460
+Typically, this involves using
+JavaScript and hidden input
+
+00:01:35.460 --> 00:01:38.490
+elements, but it's not
+a perfect solution.
+
+00:01:38.490 --> 00:01:41.610
+Two new web features
+added in Chrome 77
+
+00:01:41.610 --> 00:01:44.430
+make it easier to build
+custom form controls
+
+00:01:44.430 --> 00:01:48.030
+and remove many of the
+existing limitations.
+
+00:01:48.030 --> 00:01:51.360
+The formdata event
+is a low level API
+
+00:01:51.360 --> 00:01:54.210
+that lets any JavaScript
+code participate
+
+00:01:54.210 --> 00:01:55.860
+in a form submission.
+
+00:01:55.860 --> 00:01:59.190
+To use it, add a formdata
+event listener to the form
+
+00:01:59.190 --> 00:02:01.140
+that you want to interact with.
+
+00:02:01.140 --> 00:02:03.190
+When the user clicks
+the Submit button,
+
+00:02:03.190 --> 00:02:05.490
+the forum fires
+the formdata event,
+
+00:02:05.490 --> 00:02:08.729
+which includes a formdata
+object that holds all
+
+00:02:08.729 --> 00:02:10.650
+of the data being submitted.
+
+00:02:10.650 --> 00:02:12.990
+Then in your formdata
+event handler,
+
+00:02:12.990 --> 00:02:17.100
+you can update or modify the
+formdata before it's submitted.
+
+00:02:17.100 --> 00:02:19.470
+FormAssociated
+custom elements help
+
+00:02:19.470 --> 00:02:23.550
+to bridge the gap between custom
+element and native controls.
+
+00:02:23.550 --> 00:02:26.010
+It tells the browser to
+treat the custom element
+
+00:02:26.010 --> 00:02:28.530
+like all other form
+elements and adds
+
+00:02:28.530 --> 00:02:31.200
+common properties found
+on input elements,
+
+00:02:31.200 --> 00:02:33.930
+like name, value, and validity.
+
+00:02:33.930 --> 00:02:37.930
+Check out the post on
+web.dev for all the details.
+
+00:02:37.930 --> 00:02:41.700
+I'm not sure how I missed native
+lazy loading in my last video.
+
+00:02:41.700 --> 00:02:43.000
+It's pretty amazing.
+
+00:02:43.000 --> 00:02:45.000
+So I'm including it now.
+
+00:02:45.000 --> 00:02:47.160
+Lazy loading is a
+technique that allows
+
+00:02:47.160 --> 00:02:50.550
+you to defer the loading
+of non-critical resources,
+
+00:02:50.550 --> 00:02:52.950
+like off-screen
+images or iframes,
+
+00:02:52.950 --> 00:02:56.700
+until they're needed, increasing
+the performance of your page.
+
+00:02:56.700 --> 00:02:59.430
+Starting in Chrome
+76, the browser
+
+00:02:59.430 --> 00:03:02.250
+handles lazy loading
+for you without the need
+
+00:03:02.250 --> 00:03:04.560
+to write custom
+lazy loading code
+
+00:03:04.560 --> 00:03:07.500
+or use a separate
+JavaScript library.
+
+00:03:07.500 --> 00:03:10.920
+To tell the browser that you
+want an image or iframe lazy
+
+00:03:10.920 --> 00:03:15.780
+loaded, use the
+loading="lazy" attribute.
+
+00:03:15.780 --> 00:03:18.750
+Images and iframes
+that are above the fold
+
+00:03:18.750 --> 00:03:21.420
+will load normally, and
+those that are below
+
+00:03:21.420 --> 00:03:24.690
+are only fetched when the
+user scrolls near them.
+
+00:03:24.690 --> 00:03:28.300
+Check out the post on
+web.dev for details.
+
+00:03:28.300 --> 00:03:30.720
+These are just a few of
+the changes in Chrome 77
+
+00:03:30.720 --> 00:03:31.780
+for developers.
+
+00:03:31.780 --> 00:03:34.230
+Of course, there's plenty more.
+
+00:03:34.230 --> 00:03:38.210
+The Contact Picker API,
+available as an Origin trial,
+
+00:03:38.210 --> 00:03:43.070
+is a new on-demand picker that
+allows users to select an entry
+
+00:03:43.070 --> 00:03:45.560
+or entries from
+their contact list
+
+00:03:45.560 --> 00:03:48.290
+and share limited
+details of the selected
+
+00:03:48.290 --> 00:03:50.870
+contacts with a website.
+
+00:03:50.870 --> 00:03:53.480
+And there are new
+measurement units
+
+00:03:53.480 --> 00:03:56.700
+in the Intl.NumberFormat API.
+
+00:03:56.700 --> 00:03:59.090
+Oh, and the Chrome Dev
+Summit is coming up
+
+00:03:59.090 --> 00:04:01.820
+on November 11 and 12.
+
+00:04:01.820 --> 00:04:05.210
+It's a great opportunity to
+learn about the latest tools
+
+00:04:05.210 --> 00:04:07.580
+and updates coming
+to the web platform
+
+00:04:07.580 --> 00:04:10.580
+and hear directly from the
+Chrome engineering team.
+
+00:04:10.580 --> 00:04:12.860
+It'll be streamed live
+on our YouTube channel,
+
+00:04:12.860 --> 00:04:14.930
+or if you want to
+attend in person,
+
+00:04:14.930 --> 00:04:18.950
+you can request your invite at
+the Chrome Dev Summit website.
+
+00:04:18.950 --> 00:04:21.570
+All the details,
+including docs and specs,
+
+00:04:21.570 --> 00:04:24.200
+are in the updates post
+linked in the description.
+
+00:04:24.200 --> 00:04:26.960
+Be sure to check out the latest
+Chrome DevTools video to learn
+
+00:04:26.960 --> 00:04:28.340
+what's new in DevTools.
+
+00:04:28.340 --> 00:04:30.530
+And don't forget to subscribe.
+
+00:04:30.530 --> 00:04:31.510
+I'm Pete LePage.
+
+00:04:31.510 --> 00:04:33.140
+And as soon as Chrome
+78 is released,
+
+00:04:33.140 --> 00:04:36.390
+I'll be right here to tell
+you what's new in Chrome.
+
+00:04:36.390 --> 00:04:40.040
+[MUSIC PLAYING]
+

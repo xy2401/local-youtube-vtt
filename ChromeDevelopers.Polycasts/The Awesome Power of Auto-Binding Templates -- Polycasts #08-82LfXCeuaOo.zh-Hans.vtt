@@ -1,0 +1,560 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:02.887 --> 00:00:04.220
+各位朋友  大家好
+Everyone, what's up?
+
+00:00:04.220 --> 00:00:05.070
+我是Rob Dodson
+It's Rob Dodson.
+
+00:00:05.070 --> 00:00:06.935
+欢迎回到第二季的Polycast
+Welcome back to season two of "Polycast."
+
+00:00:06.935 --> 00:00:08.810
+在今天的一集中  我们来看一下
+In today's episode, we're going to be looking
+
+00:00:08.810 --> 00:00:10.462
+自动绑定的template元素
+at the auto-binding template element.
+
+00:00:10.462 --> 00:00:12.920
+这是一个不为大多数人所知的标签之一
+It's one of those tags that not a lot of people know about,
+
+00:00:12.920 --> 00:00:15.740
+但对于构建你的应用却有很大的帮助
+but it's super useful for wiring up your application.
+
+00:00:15.740 --> 00:00:17.197
+让我们一起来看一下
+So let's check it out.
+
+00:00:17.197 --> 00:00:19.280
+如果你之前或多或少接触过web组件
+So if you've worked with web components for a bit,
+
+00:00:19.280 --> 00:00:22.080
+你可能已经认出这是新的template元素
+you've probably already seen the new template element.
+
+00:00:22.080 --> 00:00:24.672
+template元素具有一些非常酷的特性
+The template element has a few really awesome features.
+
+00:00:24.672 --> 00:00:26.880
+第一也是最重要的 你放入一个template元素的
+First and foremost, any content that you place inside
+
+00:00:26.880 --> 00:00:29.740
+任何内容都将被完全冻结
+of a template is going to be completely inert,
+
+00:00:29.740 --> 00:00:32.104
+这意味着我们放在这里的这个H1标签
+meaning this H1 that we have right here is not
+
+00:00:32.104 --> 00:00:34.020
+将不会在页面上显示出来  除非我们真正地
+going to display on the page until we actually
+
+00:00:34.020 --> 00:00:36.230
+获取这个template元素的结构并且将其释放出来
+grab the guts of this template and stamp it out.
+
+00:00:36.230 --> 00:00:37.900
+另外  任何需要
+Also, any elements that you have which
+
+00:00:37.900 --> 00:00:39.880
+外部资源的元素  比如一个图片标签
+require external resources, like an image tag,
+
+00:00:39.880 --> 00:00:42.850
+也都不会产生任何的HTTP请求
+for instance, are not going to make any HTTP requests.
+
+00:00:45.710 --> 00:00:48.150
+还有  如果你的template元素里面有脚本的存在
+Also, if you have script inside of your template,
+
+00:00:48.150 --> 00:00:50.740
+这些脚本也不会被执行  直到这些脚本
+it's not going to execute, not until it's
+
+00:00:50.740 --> 00:00:52.386
+在这个页面上被激活
+stamped out to the page.
+
+00:00:52.386 --> 00:00:53.760
+这里有一些十分便利的特性
+Some really handy features there.
+
+00:00:53.760 --> 00:00:56.052
+通常地  如果你想要显示这些内容
+Now normally, if you want actually display that content
+
+00:00:56.052 --> 00:00:58.468
+正如我说的  你需要使用一些Javascript来使
+as I said, you're going to have use some JavaScript to get
+
+00:00:58.468 --> 00:00:59.700
+这些内容展现到页面上
+all the guts onto the page.
+
+00:00:59.700 --> 00:01:01.810
+但是如果你正在使用Polymer  事实上你可以
+But if you're using Polymer, you can actually
+
+00:01:01.810 --> 00:01:03.740
+为你的template元素加一个属性
+add an attribute to your template.
+
+00:01:03.740 --> 00:01:05.782
+然后就可以设置你的template元素是自动绑定的
+You can say that your template is auto-binding.
+
+00:01:05.782 --> 00:01:07.240
+这将会
+And what that's going to do is it's
+
+00:01:07.240 --> 00:01:08.230
+把你的template元素转换为被认为是
+going to turn your template into what's
+
+00:01:08.230 --> 00:01:10.550
+一个类型扩展的自定义元素
+known as a type extension custom element.
+
+00:01:13.720 --> 00:01:15.490
+事实上  正在发生的事情就是Polymer
+Basically, what's happening is Polymer
+
+00:01:15.490 --> 00:01:17.960
+已经为这个元素确定了一个定义
+has already defined the definition for this element.
+
+00:01:17.960 --> 00:01:19.780
+实际上它加载了Polymer的库
+It actually ships with the Polymer library.
+
+00:01:19.780 --> 00:01:21.321
+所以当你启动你的应用
+So when you boot up your application,
+
+00:01:21.321 --> 00:01:22.680
+它就已经在那里并做好了被使用的准备
+it's there and ready to use.
+
+00:01:22.680 --> 00:01:23.580
+现在  你的自动绑定的template元素
+Now, your auto-binding template is
+
+00:01:23.580 --> 00:01:25.490
+将会立即携带它的所有内容
+going to immediately take all of its content
+
+00:01:25.490 --> 00:01:27.192
+并激活到页面上
+and stamp it out the page.
+
+00:01:27.192 --> 00:01:28.650
+不仅如此  实际上它还允许你
+And what's more, it actually allows
+
+00:01:28.650 --> 00:01:30.895
+使用绑定到这个内容上的数据
+you to use data bindings with this content.
+
+00:01:30.895 --> 00:01:32.992
+那么就让我来用一个例子来展示如何做到这些
+So let me show you an example of how you do that.
+
+00:01:32.992 --> 00:01:34.450
+这里我们已经准备好了一个模板元素
+Here, we've got a template element,
+
+00:01:34.450 --> 00:01:36.625
+而且其中我放了一个H1标签
+and inside, I've just placed an H1 tag.
+
+00:01:36.625 --> 00:01:39.440
+因为我设置了is参数的自动绑定属性
+And because I have this, is auto-binding attribute,
+
+00:01:39.440 --> 00:01:41.784
+所以我能借助数据绑定的威力
+I know that I can leverage the power of data binding.
+
+00:01:41.784 --> 00:01:43.200
+我要做的第一件事
+So the first thing I'm going to do
+
+00:01:43.200 --> 00:01:46.070
+就是把H1标签的内容替换成花括号
+is replace the content of that H1 with curly braces
+
+00:01:46.070 --> 00:01:47.800
+并且定义一个范围变量
+and define a scope variable.
+
+00:01:47.800 --> 00:01:50.225
+在这个例子中  我把这个变量命名为message
+In this case, I'm going to call the variable message.
+
+00:01:50.225 --> 00:01:51.600
+在另一处的JavaScript中
+Elsewhere in my JavaScript, I can
+
+00:01:51.600 --> 00:01:54.480
+我可以用querySelector选择模板元素
+select the template element using querySelector,
+
+00:01:54.480 --> 00:01:56.970
+然后为message变量提供一个值
+and then provide a value for that message variable.
+
+00:01:56.970 --> 00:02:01.190
+这个值就会被传递到我的H1标签
+This value is then going to be piped right back to my H1
+
+00:02:01.190 --> 00:02:03.660
+然后在页面上显示文本内容
+and show up as the text content on my page.
+
+00:02:03.660 --> 00:02:05.830
+好吧  我知道这是一个非常简单的例子
+All right, I know this is a really simple example,
+
+00:02:05.830 --> 00:02:07.600
+那么先切到我们的代码编辑器
+so let's switch over to our code editor,
+
+00:02:07.600 --> 00:02:10.824
+我们来试着写一些Polymer元素
+and we can actually start wiring up some Polymer elements.
+
+00:02:10.824 --> 00:02:12.990
+这里我有一个非常基础的应用程序结构
+So here, I have a really basic application structure
+
+00:02:12.990 --> 00:02:14.780
+使用了Core Drawer Panel以及一些元素
+using core-drawer-panel and some of the elements
+
+00:02:14.780 --> 00:02:16.135
+也就是我们在之前的一集中构建的
+that we've covered in previous episodes.
+
+00:02:16.135 --> 00:02:18.500
+如果你还没有相关文件  我在之前的节目中提供了链接
+And I've got links to those previous episodes down
+
+00:02:18.500 --> 00:02:20.550
+并把它们放到了视频介绍里面
+in the show notes if you'd missed them.
+
+00:02:20.550 --> 00:02:22.880
+现在如果我打开浏览器
+Now if I pop open the browser to check out
+
+00:02:22.880 --> 00:02:25.730
+检查页面的结构  你可以看到它确实很简单
+the structure of this page, you can see that it's pretty plain.
+
+00:02:25.730 --> 00:02:28.313
+我们已经有了一个core菜单和几个可以点击的按钮
+We've got a core menu with a few buttons that we can click on,
+
+00:02:28.313 --> 00:02:30.710
+在这里是我们应用的标题
+and we've also got the title of our application up there.
+
+00:02:30.710 --> 00:02:32.510
+目前为止什么都还没有发生
+Now right now, nothing's really happening.
+
+00:02:32.510 --> 00:02:34.760
+所以我想做的第一件有意思的事就是使用绑定的数据
+So the first thing that I can do is change the title of my app
+
+00:02:34.760 --> 00:02:37.235
+更改我应用的标题
+using a data binding to make it a little more interesting.
+
+00:02:37.235 --> 00:02:39.680
+回到我的编辑器  我创建一个模板
+Back in my editor, I'm going to create a template
+
+00:02:39.680 --> 00:02:41.550
+然后给它一个自动绑定的属性
+and give it an auto-binding attribute.
+
+00:02:47.299 --> 00:02:48.840
+我还要给它一个ID
+I'm also going to give it an ID, so I
+
+00:02:48.840 --> 00:02:50.995
+这样我就能在稍后的JavaScript中来调用它
+can reference it later using JavaScript.
+
+00:02:50.995 --> 00:02:53.980
+接着就直接把我应用中的所有内容剪切
+And then I can just go and cut and paste all the content
+
+00:02:53.980 --> 00:02:56.880
+然后粘贴到这个模板里面
+for my application and drop it inside of this template.
+
+00:03:00.710 --> 00:03:03.320
+接下来我找到写着My App的地方
+Next, I'm going to go down to where it says My App
+
+00:03:03.320 --> 00:03:05.670
+并且把内容替换成绑定的数据
+and replace the content with a binding, which
+
+00:03:05.670 --> 00:03:08.792
+我把这个数据绑定命名为heading
+I'm going to call heading.
+
+00:03:08.792 --> 00:03:10.375
+然后我打开我的app.js文件
+Then I'm going open up my app.js file,
+
+00:03:10.375 --> 00:03:12.990
+对我的模板使用querySelector
+and I'm going to querySelector for my template using
+
+00:03:12.990 --> 00:03:16.040
+并指定我们刚才设定好的ID
+the ID that we set earlier.
+
+00:03:16.040 --> 00:03:18.790
+同时调用我的自动绑定的template元素
+I'm also going to reference to my auto-binding template.
+
+00:03:18.790 --> 00:03:21.960
+就可以直接为那个heading变量赋值
+I can just provide a value for that heading variable.
+
+00:03:21.960 --> 00:03:27.270
+在这个例子中  我让它显示  Hello Polycasters  
+In this case, I'm going to make it say, "Hello Polycasters."
+
+00:03:27.270 --> 00:03:29.240
+现在当我刷新浏览器中的页面
+Now, when I refresh the page in my browser,
+
+00:03:29.240 --> 00:03:31.073
+你就会看到应用的标题
+you'll see that the title of the application
+
+00:03:31.073 --> 00:03:33.710
+已经变成了  Hello Polycasters
+has been updated to say, "Hello Polycasters."
+
+00:03:33.710 --> 00:03:35.672
+就如同展示的这般酷炫  但是这个菜单
+Now, that's kind of cool, but the menu
+
+00:03:35.672 --> 00:03:38.130
+仍然没有在我们的应用程序中做任何事
+itself still doesn't really do anything in our application,
+
+00:03:38.130 --> 00:03:39.705
+所以我们接下来设置它
+so let's change that next.
+
+00:03:39.705 --> 00:03:43.937
+回到我的编辑器  我定义一个名叫selected的变量并赋值为0
+Back in my editor, I'm going to set a selected value of zero.
+
+00:03:43.937 --> 00:03:45.520
+这是我创建的
+And this is, again, just another scope
+
+00:03:45.520 --> 00:03:47.170
+另一个范围变量
+variable that I'm creating.
+
+00:03:47.170 --> 00:03:49.192
+我在index文件中找到core菜单
+In my index file, I'll find my core menu
+
+00:03:49.192 --> 00:03:51.150
+然后将这个原本赋值为0的固定值
+and change its hard coded selected value, which
+
+00:03:51.150 --> 00:03:55.150
+改为调用范围变量selected
+right now is zero, to that scope variable called selected.
+
+00:03:55.150 --> 00:03:57.995
+接着往下看到我页面中的container
+And I'm also going to go down to the container for my page
+
+00:03:57.995 --> 00:04:00.370
+这里就是放置各种各样的
+where, right now, it just has some sort of generic filler
+
+00:04:00.370 --> 00:04:02.640
+需要显示在页面上的内容
+content that says site content.
+
+00:04:02.640 --> 00:04:04.230
+我们来修改一些文本
+I'll update that with some text, which
+
+00:04:04.230 --> 00:04:06.310
+这些文本最终会被输出到页面上
+is going to actually print out the page
+
+00:04:06.310 --> 00:04:09.994
+这里我们使用一下那个范围变量selected
+that we're looking at using that selected scope variable.
+
+00:04:09.994 --> 00:04:12.160
+切回浏览器  我再次刷新页面
+Switching back to the browser, if I refresh the page
+
+00:04:12.160 --> 00:04:14.850
+然后点击我菜单上的不同元素
+and start clicking on the different elements in my menu,
+
+00:04:14.850 --> 00:04:17.120
+你会看到数字在变化
+you'll see that the number is updating
+
+00:04:17.120 --> 00:04:20.296
+这使我知道当前哪个页面被选中
+to let me know which page is selected.
+
+00:04:20.296 --> 00:04:22.399
+这里还有一些给你的专业建议
+Now here is a little ProTip for you.
+
+00:04:22.399 --> 00:04:24.440
+当你使用自动绑定的template元素的时候
+As you're working with the auto-binding template,
+
+00:04:24.440 --> 00:04:27.195
+如果你需要通过JavaScript访问其中的元素
+if you need to access any of its contents using JavaScript,
+
+00:04:27.195 --> 00:04:29.990
+你就需要监听它的模板绑定事件
+you're going to want to listen for its template-bound event.
+
+00:04:29.990 --> 00:04:32.700
+其原因在于自动绑定的template元素
+And the reason is because the auto-binding template stamps
+
+00:04:32.700 --> 00:04:35.016
+是异步地输出它的内容的
+out all of its content asynchronously.
+
+00:04:35.016 --> 00:04:36.390
+为了演示如何做到这些
+So to demonstrate how to do this,
+
+00:04:36.390 --> 00:04:39.270
+我们只需要在控制台中查看
+I'm just going to log the core menu element itself
+
+00:04:39.270 --> 00:04:40.930
+core菜单元素自身的日志
+to my console.
+
+00:04:40.930 --> 00:04:43.300
+实现的方式是首先给我的template元素
+The way to do that is to first add an event listener
+
+00:04:43.300 --> 00:04:45.546
+添加一个事件监听
+to my template.
+
+00:04:45.546 --> 00:04:48.120
+然后我将监听模板绑定事件
+And I'm going to be listening for that template-bound event,
+
+00:04:48.120 --> 00:04:51.462
+这样我就能知道内容什么时候被输出到页面
+so I know when all the content has been stamped to the page.
+
+00:04:51.462 --> 00:04:52.920
+接着  在回调函数中
+Then, in the callback function, I'm
+
+00:04:52.920 --> 00:04:55.760
+我只要再次调用core菜单
+just going to grab a reference to the core menu,
+
+00:04:55.760 --> 00:04:58.330
+因为我已经知道这是一个可用的文档元素
+because now I know that it is in the document and available.
+
+00:05:06.380 --> 00:05:08.920
+这样我们就向控制台输出了日志
+And then I'm just going to log it out to the console.
+
+00:05:08.920 --> 00:05:10.060
+回到Chrome
+And I'm back in Chrome.
+
+00:05:10.060 --> 00:05:11.944
+我刷新一下页面然后打开开发人员工具
+I refresh the page and open up the dev tools.
+
+00:05:11.944 --> 00:05:13.610
+你就可以看到下面
+And you can see down here at the bottom,
+
+00:05:13.610 --> 00:05:15.401
+core菜单的日志被立即输出
+that core menu gets logged out immediately,
+
+00:05:15.401 --> 00:05:18.680
+而且上方页面中的core菜单元素以高亮显示
+and it highlights the core menu element on the page.
+
+00:05:18.680 --> 00:05:20.180
+那么现在你应该已经准备好为你自己的应用
+So now you're ready to go add data
+
+00:05:20.180 --> 00:05:21.890
+添加数据绑定了
+binding to your own application.
+
+00:05:21.890 --> 00:05:23.950
+在下一集中  我将会把自动绑定的template元素
+In the next episode, I'm going to combine
+
+00:05:23.950 --> 00:05:26.850
+与一个称作core页面的元素相结合
+the auto-binding template with an element called core pages,
+
+00:05:26.850 --> 00:05:29.340
+这样我们就能真正地动态地改变
+so we can actually dynamically swap around
+
+00:05:29.340 --> 00:05:31.370
+我们应用中的内容
+the content in our application.
+
+00:05:31.370 --> 00:05:33.020
+敬请锁定我们的节目
+Definitely stay tuned for that.
+
+00:05:33.020 --> 00:05:34.710
+总之  感谢你的观看
+As always, thank you so much watching,
+
+00:05:34.710 --> 00:05:36.478
+我们下期节目再见
+and I will see you next time.
+

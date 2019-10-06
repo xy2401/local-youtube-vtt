@@ -1,0 +1,1840 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:03.400 align:start position:0%
+ 
+[Music]
+
+00:00:03.400 --> 00:00:03.410 align:start position:0%
+[Music]
+ 
+
+00:00:03.410 --> 00:00:06.950 align:start position:0%
+[Music]
+hi<00:00:04.410><c> welcome</c><00:00:05.279><c> to</c><00:00:05.460><c> this</c><00:00:05.640><c> screencast</c><00:00:05.850><c> on</c><00:00:06.480><c> the</c><00:00:06.540><c> set</c>
+
+00:00:06.950 --> 00:00:06.960 align:start position:0%
+hi welcome to this screencast on the set
+ 
+
+00:00:06.960 --> 00:00:09.650 align:start position:0%
+hi welcome to this screencast on the set
+garbage<00:00:07.319><c> collector</c><00:00:07.740><c> i'm</c><00:00:08.340><c> pallidum</c><00:00:09.000><c> i'm</c><00:00:09.420><c> an</c>
+
+00:00:09.650 --> 00:00:09.660 align:start position:0%
+garbage collector i'm pallidum i'm an
+ 
+
+00:00:09.660 --> 00:00:11.780 align:start position:0%
+garbage collector i'm pallidum i'm an
+engineer<00:00:09.780><c> in</c><00:00:10.349><c> the</c><00:00:10.380><c> java</c><00:00:10.950><c> platform</c><00:00:11.160><c> group</c><00:00:11.490><c> at</c>
+
+00:00:11.780 --> 00:00:11.790 align:start position:0%
+engineer in the java platform group at
+ 
+
+00:00:11.790 --> 00:00:18.990 align:start position:0%
+engineer in the java platform group at
+oracle<00:00:12.290><c> working</c><00:00:13.290><c> on</c><00:00:13.440><c> garbage</c><00:00:13.860><c> collection</c>
+
+00:00:18.990 --> 00:00:19.000 align:start position:0%
+ 
+ 
+
+00:00:19.000 --> 00:00:21.760 align:start position:0%
+ 
+so<00:00:20.000><c> I'll</c><00:00:20.390><c> start</c><00:00:20.630><c> by</c><00:00:20.780><c> giving</c><00:00:20.930><c> an</c><00:00:21.140><c> overview</c><00:00:21.410><c> of</c>
+
+00:00:21.760 --> 00:00:21.770 align:start position:0%
+so I'll start by giving an overview of
+ 
+
+00:00:21.770 --> 00:00:24.280 align:start position:0%
+so I'll start by giving an overview of
+what<00:00:22.130><c> said</c><00:00:22.400><c> UC</c><00:00:22.700><c> is</c><00:00:22.850><c> and</c><00:00:23.210><c> how</c><00:00:23.300><c> it</c><00:00:23.420><c> works</c><00:00:23.600><c> we'll</c>
+
+00:00:24.280 --> 00:00:24.290 align:start position:0%
+what said UC is and how it works we'll
+ 
+
+00:00:24.290 --> 00:00:26.050 align:start position:0%
+what said UC is and how it works we'll
+have<00:00:24.590><c> a</c><00:00:24.620><c> look</c><00:00:24.770><c> at</c><00:00:24.950><c> some</c><00:00:25.190><c> performance</c><00:00:25.730><c> numbers</c>
+
+00:00:26.050 --> 00:00:26.060 align:start position:0%
+have a look at some performance numbers
+ 
+
+00:00:26.060 --> 00:00:28.690 align:start position:0%
+have a look at some performance numbers
+and<00:00:26.480><c> I'll</c><00:00:26.750><c> end</c><00:00:27.050><c> by</c><00:00:27.230><c> showing</c><00:00:27.680><c> you</c><00:00:27.980><c> how</c><00:00:28.190><c> to</c><00:00:28.460><c> get</c>
+
+00:00:28.690 --> 00:00:28.700 align:start position:0%
+and I'll end by showing you how to get
+ 
+
+00:00:28.700 --> 00:00:33.410 align:start position:0%
+and I'll end by showing you how to get
+started<00:00:28.970><c> using</c><00:00:29.180><c> CGC</c>
+
+00:00:33.410 --> 00:00:33.420 align:start position:0%
+ 
+ 
+
+00:00:33.420 --> 00:00:37.170 align:start position:0%
+ 
+so<00:00:34.650><c> said</c><00:00:35.650><c> you</c><00:00:35.800><c> see</c><00:00:36.040><c> is</c><00:00:36.400><c> a</c><00:00:36.460><c> new</c><00:00:36.760><c> garbage</c>
+
+00:00:37.170 --> 00:00:37.180 align:start position:0%
+so said you see is a new garbage
+ 
+
+00:00:37.180 --> 00:00:39.630 align:start position:0%
+so said you see is a new garbage
+collector<00:00:37.570><c> which</c><00:00:37.960><c> is</c><00:00:38.200><c> available</c><00:00:38.890><c> it</c><00:00:39.309><c> has</c><00:00:39.489><c> an</c>
+
+00:00:39.630 --> 00:00:39.640 align:start position:0%
+collector which is available it has an
+ 
+
+00:00:39.640 --> 00:00:41.369 align:start position:0%
+collector which is available it has an
+experimental<00:00:39.940><c> feature</c><00:00:40.480><c> in</c><00:00:40.690><c> starting</c><00:00:41.199><c> with</c>
+
+00:00:41.369 --> 00:00:41.379 align:start position:0%
+experimental feature in starting with
+ 
+
+00:00:41.379 --> 00:00:46.850 align:start position:0%
+experimental feature in starting with
+JDK<00:00:41.949><c> 11</c><00:00:43.620><c> we</c><00:00:44.620><c> described</c><00:00:45.460><c> said</c><00:00:45.790><c> you</c><00:00:45.940><c> see</c><00:00:46.210><c> as</c>
+
+00:00:46.850 --> 00:00:46.860 align:start position:0%
+JDK 11 we described said you see as
+ 
+
+00:00:46.860 --> 00:00:49.590 align:start position:0%
+JDK 11 we described said you see as
+scalable<00:00:47.860><c> low</c><00:00:48.220><c> latency</c><00:00:48.850><c> garbage</c><00:00:49.210><c> collector</c>
+
+00:00:49.590 --> 00:00:49.600 align:start position:0%
+scalable low latency garbage collector
+ 
+
+00:00:49.600 --> 00:00:52.229 align:start position:0%
+scalable low latency garbage collector
+and<00:00:49.870><c> to</c><00:00:50.620><c> get</c><00:00:51.040><c> a</c><00:00:51.370><c> little</c><00:00:51.850><c> bit</c><00:00:51.970><c> better</c>
+
+00:00:52.229 --> 00:00:52.239 align:start position:0%
+and to get a little bit better
+ 
+
+00:00:52.239 --> 00:00:54.299 align:start position:0%
+and to get a little bit better
+understanding<00:00:52.449><c> of</c><00:00:52.989><c> what</c><00:00:53.290><c> we</c><00:00:53.470><c> mean</c><00:00:53.680><c> with</c><00:00:54.070><c> that</c>
+
+00:00:54.299 --> 00:00:54.309 align:start position:0%
+understanding of what we mean with that
+ 
+
+00:00:54.309 --> 00:00:56.430 align:start position:0%
+understanding of what we mean with that
+let's<00:00:54.640><c> have</c><00:00:54.970><c> a</c><00:00:55.000><c> look</c><00:00:55.150><c> at</c><00:00:55.269><c> the</c><00:00:55.360><c> goals</c><00:00:55.600><c> we</c><00:00:56.080><c> had</c><00:00:56.290><c> in</c>
+
+00:00:56.430 --> 00:00:56.440 align:start position:0%
+let's have a look at the goals we had in
+ 
+
+00:00:56.440 --> 00:01:00.660 align:start position:0%
+let's have a look at the goals we had in
+mind<00:00:56.680><c> when</c><00:00:56.949><c> designing</c><00:00:57.160><c> this</c><00:00:58.829><c> so</c><00:00:59.829><c> when</c><00:01:00.190><c> we</c><00:01:00.339><c> say</c>
+
+00:01:00.660 --> 00:01:00.670 align:start position:0%
+mind when designing this so when we say
+ 
+
+00:01:00.670 --> 00:01:04.439 align:start position:0%
+mind when designing this so when we say
+it's<00:01:01.480><c> a</c><00:01:01.720><c> low</c><00:01:01.900><c> latency</c><00:01:02.110><c> GC</c><00:01:02.890><c> we</c><00:01:03.190><c> mean</c><00:01:03.400><c> that</c><00:01:03.640><c> GC</c>
+
+00:01:04.439 --> 00:01:04.449 align:start position:0%
+it's a low latency GC we mean that GC
+ 
+
+00:01:04.449 --> 00:01:07.320 align:start position:0%
+it's a low latency GC we mean that GC
+post<00:01:04.750><c> times</c><00:01:05.080><c> never</c><00:01:05.500><c> exceed</c><00:01:06.039><c> 10</c><00:01:06.640><c> milliseconds</c>
+
+00:01:07.320 --> 00:01:07.330 align:start position:0%
+post times never exceed 10 milliseconds
+ 
+
+00:01:07.330 --> 00:01:10.529 align:start position:0%
+post times never exceed 10 milliseconds
+and<00:01:07.720><c> when</c><00:01:08.710><c> we</c><00:01:08.860><c> say</c><00:01:09.190><c> it's</c><00:01:09.399><c> scalable</c><00:01:09.910><c> we</c><00:01:10.300><c> mean</c>
+
+00:01:10.529 --> 00:01:10.539 align:start position:0%
+and when we say it's scalable we mean
+ 
+
+00:01:10.539 --> 00:01:13.650 align:start position:0%
+and when we say it's scalable we mean
+that<00:01:10.899><c> this</c><00:01:11.380><c> GC</c><00:01:12.009><c> can</c><00:01:12.310><c> handle</c><00:01:12.700><c> heaps</c><00:01:13.000><c> ranging</c>
+
+00:01:13.650 --> 00:01:13.660 align:start position:0%
+that this GC can handle heaps ranging
+ 
+
+00:01:13.660 --> 00:01:16.139 align:start position:0%
+that this GC can handle heaps ranging
+from<00:01:13.899><c> small</c><00:01:14.140><c> to</c><00:01:14.710><c> very</c><00:01:14.740><c> large</c><00:01:15.009><c> we're</c><00:01:15.789><c> very</c>
+
+00:01:16.139 --> 00:01:16.149 align:start position:0%
+from small to very large we're very
+ 
+
+00:01:16.149 --> 00:01:21.330 align:start position:0%
+from small to very large we're very
+large<00:01:16.450><c> means</c><00:01:16.810><c> multi</c><00:01:17.289><c> terabytes</c><00:01:20.130><c> here</c><00:01:21.130><c> are</c>
+
+00:01:21.330 --> 00:01:21.340 align:start position:0%
+large means multi terabytes here are
+ 
+
+00:01:21.340 --> 00:01:23.520 align:start position:0%
+large means multi terabytes here are
+some<00:01:21.670><c> of</c><00:01:21.789><c> the</c><00:01:21.910><c> key</c><00:01:22.210><c> features</c><00:01:22.690><c> of</c><00:01:22.929><c> said</c><00:01:23.200><c> you</c><00:01:23.320><c> see</c>
+
+00:01:23.520 --> 00:01:23.530 align:start position:0%
+some of the key features of said you see
+ 
+
+00:01:23.530 --> 00:01:26.639 align:start position:0%
+some of the key features of said you see
+at<00:01:24.070><c> its</c><00:01:24.460><c> core</c><00:01:24.880><c> said</c><00:01:25.509><c> UC</c><00:01:25.899><c> is</c><00:01:26.080><c> a</c><00:01:26.110><c> concurrent</c>
+
+00:01:26.639 --> 00:01:26.649 align:start position:0%
+at its core said UC is a concurrent
+ 
+
+00:01:26.649 --> 00:01:29.340 align:start position:0%
+at its core said UC is a concurrent
+garbage<00:01:27.009><c> collector</c><00:01:27.310><c> which</c><00:01:28.210><c> means</c><00:01:28.690><c> that</c><00:01:29.020><c> all</c>
+
+00:01:29.340 --> 00:01:29.350 align:start position:0%
+garbage collector which means that all
+ 
+
+00:01:29.350 --> 00:01:33.120 align:start position:0%
+garbage collector which means that all
+the<00:01:29.770><c> heavy</c><00:01:30.610><c> lifting</c><00:01:30.729><c> down</c><00:01:31.539><c> by</c><00:01:31.750><c> a</c><00:01:31.780><c> GC</c><00:01:32.410><c> is</c><00:01:32.740><c> done</c>
+
+00:01:33.120 --> 00:01:33.130 align:start position:0%
+the heavy lifting down by a GC is done
+ 
+
+00:01:33.130 --> 00:01:35.900 align:start position:0%
+the heavy lifting down by a GC is done
+while<00:01:34.000><c> your</c><00:01:34.330><c> threads</c><00:01:34.660><c> continue</c><00:01:35.200><c> to</c><00:01:35.350><c> execute</c>
+
+00:01:35.900 --> 00:01:35.910 align:start position:0%
+while your threads continue to execute
+ 
+
+00:01:35.910 --> 00:01:39.120 align:start position:0%
+while your threads continue to execute
+so<00:01:36.910><c> things</c><00:01:37.179><c> like</c><00:01:37.360><c> marking</c><00:01:37.929><c> compaction</c><00:01:38.860><c> and</c>
+
+00:01:39.120 --> 00:01:39.130 align:start position:0%
+so things like marking compaction and
+ 
+
+00:01:39.130 --> 00:01:41.339 align:start position:0%
+so things like marking compaction and
+all<00:01:39.550><c> other</c><00:01:39.729><c> expensive</c><00:01:40.509><c> operations</c><00:01:41.080><c> are</c>
+
+00:01:41.339 --> 00:01:41.349 align:start position:0%
+all other expensive operations are
+ 
+
+00:01:41.349 --> 00:01:43.139 align:start position:0%
+all other expensive operations are
+handled<00:01:41.890><c> without</c><00:01:42.069><c> stopping</c><00:01:42.789><c> the</c><00:01:42.910><c> Java</c>
+
+00:01:43.139 --> 00:01:43.149 align:start position:0%
+handled without stopping the Java
+ 
+
+00:01:43.149 --> 00:01:46.529 align:start position:0%
+handled without stopping the Java
+threads<00:01:43.950><c> said</c><00:01:44.950><c> UC</c><00:01:45.310><c> currently</c><00:01:45.819><c> has</c><00:01:46.030><c> a</c><00:01:46.060><c> single</c>
+
+00:01:46.529 --> 00:01:46.539 align:start position:0%
+threads said UC currently has a single
+ 
+
+00:01:46.539 --> 00:01:49.710 align:start position:0%
+threads said UC currently has a single
+generation<00:01:47.310><c> under</c><00:01:48.310><c> the</c><00:01:48.429><c> hood</c><00:01:48.670><c> it</c><00:01:48.910><c> uses</c><00:01:49.420><c> load</c>
+
+00:01:49.710 --> 00:01:49.720 align:start position:0%
+generation under the hood it uses load
+ 
+
+00:01:49.720 --> 00:01:52.440 align:start position:0%
+generation under the hood it uses load
+barriers<00:01:50.259><c> and</c><00:01:50.470><c> caller</c><00:01:50.739><c> pointers</c><00:01:51.429><c> as</c><00:01:51.819><c> the</c><00:01:52.209><c> main</c>
+
+00:01:52.440 --> 00:01:52.450 align:start position:0%
+barriers and caller pointers as the main
+ 
+
+00:01:52.450 --> 00:01:55.830 align:start position:0%
+barriers and caller pointers as the main
+techniques<00:01:53.050><c> to</c><00:01:53.470><c> achieve</c><00:01:53.709><c> concurrency</c><00:01:54.840><c> it's</c>
+
+00:01:55.830 --> 00:01:55.840 align:start position:0%
+techniques to achieve concurrency it's
+ 
+
+00:01:55.840 --> 00:01:59.309 align:start position:0%
+techniques to achieve concurrency it's
+region<00:01:56.709><c> based</c><00:01:56.979><c> which</c><00:01:57.789><c> means</c><00:01:57.819><c> that</c><00:01:58.630><c> the</c><00:01:59.080><c> heap</c>
+
+00:01:59.309 --> 00:01:59.319 align:start position:0%
+region based which means that the heap
+ 
+
+00:01:59.319 --> 00:02:01.859 align:start position:0%
+region based which means that the heap
+is<00:01:59.560><c> divided</c><00:02:00.099><c> into</c><00:02:00.250><c> many</c><00:02:00.610><c> smaller</c><00:02:01.000><c> regions</c><00:02:01.539><c> and</c>
+
+00:02:01.859 --> 00:02:01.869 align:start position:0%
+is divided into many smaller regions and
+ 
+
+00:02:01.869 --> 00:02:04.529 align:start position:0%
+is divided into many smaller regions and
+said<00:02:02.289><c> you</c><00:02:02.440><c> see</c><00:02:02.679><c> can</c><00:02:02.920><c> choose</c><00:02:03.220><c> to</c><00:02:03.550><c> only</c><00:02:03.729><c> compact</c>
+
+00:02:04.529 --> 00:02:04.539 align:start position:0%
+said you see can choose to only compact
+ 
+
+00:02:04.539 --> 00:02:06.690 align:start position:0%
+said you see can choose to only compact
+a<00:02:04.720><c> subset</c><00:02:05.170><c> of</c><00:02:05.200><c> those</c><00:02:05.440><c> typically</c><00:02:06.220><c> those</c><00:02:06.429><c> that</c>
+
+00:02:06.690 --> 00:02:06.700 align:start position:0%
+a subset of those typically those that
+ 
+
+00:02:06.700 --> 00:02:09.749 align:start position:0%
+a subset of those typically those that
+contain<00:02:07.149><c> the</c><00:02:07.330><c> most</c><00:02:07.479><c> garbage</c><00:02:07.929><c> and</c><00:02:08.580><c> it's</c><00:02:09.580><c> also</c>
+
+00:02:09.749 --> 00:02:09.759 align:start position:0%
+contain the most garbage and it's also
+ 
+
+00:02:09.759 --> 00:02:14.790 align:start position:0%
+contain the most garbage and it's also
+Numa<00:02:10.179><c> wear</c><00:02:10.360><c> so</c><00:02:10.959><c> when</c><00:02:11.500><c> a</c><00:02:11.530><c> job</c><00:02:12.310><c> object</c><00:02:13.800><c> or</c>
+
+00:02:14.790 --> 00:02:14.800 align:start position:0%
+Numa wear so when a job object or
+ 
+
+00:02:14.800 --> 00:02:18.720 align:start position:0%
+Numa wear so when a job object or
+javathread<00:02:15.540><c> allocates</c><00:02:16.540><c> an</c><00:02:16.660><c> object</c><00:02:17.730><c> that</c>
+
+00:02:18.720 --> 00:02:18.730 align:start position:0%
+javathread allocates an object that
+ 
+
+00:02:18.730 --> 00:02:21.059 align:start position:0%
+javathread allocates an object that
+object<00:02:18.940><c> will</c><00:02:19.360><c> be</c><00:02:19.599><c> allocated</c><00:02:20.260><c> in</c><00:02:20.379><c> memory</c><00:02:20.770><c> that</c>
+
+00:02:21.059 --> 00:02:21.069 align:start position:0%
+object will be allocated in memory that
+ 
+
+00:02:21.069 --> 00:02:25.040 align:start position:0%
+object will be allocated in memory that
+is<00:02:21.340><c> local</c><00:02:21.730><c> to</c><00:02:21.760><c> the</c><00:02:22.000><c> CPU</c>
+
+00:02:25.040 --> 00:02:25.050 align:start position:0%
+ 
+ 
+
+00:02:25.050 --> 00:02:28.080 align:start position:0%
+ 
+keep<00:02:26.050><c> property</c><00:02:26.500><c> of</c><00:02:26.830><c> said</c><00:02:27.130><c> you</c><00:02:27.310><c> see</c><00:02:27.670><c> is</c><00:02:28.060><c> that</c>
+
+00:02:28.080 --> 00:02:28.090 align:start position:0%
+keep property of said you see is that
+ 
+
+00:02:28.090 --> 00:02:31.920 align:start position:0%
+keep property of said you see is that
+most<00:02:28.900><c> times</c><00:02:29.350><c> do</c><00:02:29.650><c> not</c><00:02:29.710><c> increase</c><00:02:30.580><c> with</c><00:02:31.120><c> the</c><00:02:31.720><c> heap</c>
+
+00:02:31.920 --> 00:02:31.930 align:start position:0%
+most times do not increase with the heap
+ 
+
+00:02:31.930 --> 00:02:35.310 align:start position:0%
+most times do not increase with the heap
+size<00:02:32.260><c> or</c><00:02:32.590><c> lives</c><00:02:32.860><c> its</c><00:02:33.100><c> size</c><00:02:33.540><c> so</c><00:02:34.540><c> it</c><00:02:34.900><c> doesn't</c>
+
+00:02:35.310 --> 00:02:35.320 align:start position:0%
+size or lives its size so it doesn't
+ 
+
+00:02:35.320 --> 00:02:37.530 align:start position:0%
+size or lives its size so it doesn't
+matter<00:02:35.500><c> if</c><00:02:35.680><c> you</c><00:02:35.890><c> have</c><00:02:36.100><c> a</c><00:02:36.130><c> one</c><00:02:36.490><c> gig</c><00:02:36.670><c> heap</c><00:02:36.970><c> or</c><00:02:37.480><c> a</c>
+
+00:02:37.530 --> 00:02:37.540 align:start position:0%
+matter if you have a one gig heap or a
+ 
+
+00:02:37.540 --> 00:02:40.590 align:start position:0%
+matter if you have a one gig heap or a
+one<00:02:37.810><c> terabyte</c><00:02:38.380><c> II</c><00:02:38.440><c> post</c><00:02:39.340><c> times</c><00:02:39.700><c> will</c><00:02:40.000><c> not</c><00:02:40.390><c> be</c>
+
+00:02:40.590 --> 00:02:40.600 align:start position:0%
+one terabyte II post times will not be
+ 
+
+00:02:40.600 --> 00:02:43.260 align:start position:0%
+one terabyte II post times will not be
+affected<00:02:41.110><c> by</c><00:02:41.140><c> that</c>
+
+00:02:43.260 --> 00:02:43.270 align:start position:0%
+affected by that
+ 
+
+00:02:43.270 --> 00:02:45.670 align:start position:0%
+affected by that
+so<00:02:44.270><c> let's</c><00:02:44.630><c> have</c><00:02:44.780><c> a</c><00:02:44.870><c> quick</c><00:02:45.080><c> look</c><00:02:45.110><c> at</c><00:02:45.500><c> what</c>
+
+00:02:45.670 --> 00:02:45.680 align:start position:0%
+so let's have a quick look at what
+ 
+
+00:02:45.680 --> 00:02:48.880 align:start position:0%
+so let's have a quick look at what
+happens<00:02:46.720><c> when</c><00:02:47.720><c> said</c><00:02:48.020><c> you</c><00:02:48.110><c> see</c><00:02:48.320><c> is</c><00:02:48.470><c> collecting</c>
+
+00:02:48.880 --> 00:02:48.890 align:start position:0%
+happens when said you see is collecting
+ 
+
+00:02:48.890 --> 00:02:51.580 align:start position:0%
+happens when said you see is collecting
+garbage<00:02:49.070><c> so</c><00:02:49.730><c> this</c><00:02:50.120><c> picture</c><00:02:50.360><c> shows</c><00:02:50.570><c> you</c><00:02:51.050><c> what</c><00:02:51.290><c> a</c>
+
+00:02:51.580 --> 00:02:51.590 align:start position:0%
+garbage so this picture shows you what a
+ 
+
+00:02:51.590 --> 00:02:54.460 align:start position:0%
+garbage so this picture shows you what a
+GC<00:02:52.340><c> cycle</c><00:02:52.520><c> looks</c><00:02:52.940><c> like</c><00:02:53.180><c> inside</c><00:02:53.720><c> you</c><00:02:53.900><c> see</c><00:02:54.110><c> and</c>
+
+00:02:54.460 --> 00:02:54.470 align:start position:0%
+GC cycle looks like inside you see and
+ 
+
+00:02:54.470 --> 00:02:57.120 align:start position:0%
+GC cycle looks like inside you see and
+the<00:02:54.800><c> different</c><00:02:55.160><c> places</c><00:02:55.430><c> it</c><00:02:55.820><c> goes</c><00:02:55.850><c> through</c><00:02:56.450><c> and</c>
+
+00:02:57.120 --> 00:02:57.130 align:start position:0%
+the different places it goes through and
+ 
+
+00:02:57.130 --> 00:03:00.070 align:start position:0%
+the different places it goes through and
+blue<00:02:58.130><c> arrows</c><00:02:58.550><c> here</c><00:02:58.880><c> pointing</c><00:02:59.540><c> downwards</c>
+
+00:03:00.070 --> 00:03:00.080 align:start position:0%
+blue arrows here pointing downwards
+ 
+
+00:03:00.080 --> 00:03:03.280 align:start position:0%
+blue arrows here pointing downwards
+represent<00:03:00.770><c> these</c><00:03:01.160><c> forces</c><00:03:01.610><c> and</c><00:03:01.790><c> the</c><00:03:02.390><c> gray</c>
+
+00:03:03.280 --> 00:03:03.290 align:start position:0%
+represent these forces and the gray
+ 
+
+00:03:03.290 --> 00:03:05.500 align:start position:0%
+represent these forces and the gray
+arrows<00:03:03.740><c> pointing</c><00:03:04.370><c> sideways</c><00:03:04.610><c> represent</c>
+
+00:03:05.500 --> 00:03:05.510 align:start position:0%
+arrows pointing sideways represent
+ 
+
+00:03:05.510 --> 00:03:08.260 align:start position:0%
+arrows pointing sideways represent
+concurrent<00:03:05.960><c> phases</c><00:03:06.580><c> so</c><00:03:07.580><c> let</c><00:03:07.730><c> me</c><00:03:07.850><c> walk</c><00:03:08.210><c> you</c>
+
+00:03:08.260 --> 00:03:08.270 align:start position:0%
+concurrent phases so let me walk you
+ 
+
+00:03:08.270 --> 00:03:11.530 align:start position:0%
+concurrent phases so let me walk you
+through<00:03:08.600><c> a</c><00:03:08.630><c> GC</c><00:03:09.080><c> cycle</c><00:03:09.320><c> and</c><00:03:10.150><c> briefly</c><00:03:11.150><c> describe</c>
+
+00:03:11.530 --> 00:03:11.540 align:start position:0%
+through a GC cycle and briefly describe
+ 
+
+00:03:11.540 --> 00:03:14.850 align:start position:0%
+through a GC cycle and briefly describe
+what's<00:03:11.810><c> going</c><00:03:12.110><c> on</c><00:03:12.230><c> in</c><00:03:12.440><c> each</c><00:03:12.590><c> of</c><00:03:12.770><c> these</c><00:03:12.920><c> phases</c>
+
+00:03:14.850 --> 00:03:14.860 align:start position:0%
+what's going on in each of these phases
+ 
+
+00:03:14.860 --> 00:03:18.009 align:start position:0%
+what's going on in each of these phases
+so<00:03:15.860><c> the</c><00:03:15.920><c> cycle</c><00:03:16.129><c> starts</c><00:03:16.400><c> with</c><00:03:17.239><c> the</c><00:03:17.390><c> mark</c><00:03:17.689><c> start</c>
+
+00:03:18.009 --> 00:03:18.019 align:start position:0%
+so the cycle starts with the mark start
+ 
+
+00:03:18.019 --> 00:03:20.679 align:start position:0%
+so the cycle starts with the mark start
+pause<00:03:18.349><c> this</c><00:03:19.040><c> is</c><00:03:19.250><c> where</c><00:03:19.519><c> thread</c><00:03:20.030><c> stacks</c><00:03:20.420><c> are</c>
+
+00:03:20.679 --> 00:03:20.689 align:start position:0%
+pause this is where thread stacks are
+ 
+
+00:03:20.689 --> 00:03:23.199 align:start position:0%
+pause this is where thread stacks are
+scan<00:03:21.019><c> to</c><00:03:21.319><c> find</c><00:03:21.349><c> object</c><00:03:22.250><c> pointers</c><00:03:22.640><c> these</c>
+
+00:03:23.199 --> 00:03:23.209 align:start position:0%
+scan to find object pointers these
+ 
+
+00:03:23.209 --> 00:03:27.240 align:start position:0%
+scan to find object pointers these
+object<00:03:23.930><c> pointers</c><00:03:24.260><c> are</c><00:03:24.500><c> also</c><00:03:24.890><c> known</c><00:03:25.069><c> as</c><00:03:25.189><c> routes</c>
+
+00:03:27.240 --> 00:03:27.250 align:start position:0%
+object pointers are also known as routes
+ 
+
+00:03:27.250 --> 00:03:29.649 align:start position:0%
+object pointers are also known as routes
+we<00:03:28.250><c> then</c><00:03:28.430><c> continue</c><00:03:28.909><c> with</c><00:03:29.120><c> the</c><00:03:29.180><c> concurrent</c>
+
+00:03:29.649 --> 00:03:29.659 align:start position:0%
+we then continue with the concurrent
+ 
+
+00:03:29.659 --> 00:03:33.460 align:start position:0%
+we then continue with the concurrent
+mark<00:03:29.870><c> phase</c><00:03:30.140><c> and</c><00:03:30.560><c> this</c><00:03:31.280><c> is</c><00:03:31.340><c> where</c><00:03:32.170><c> this</c><00:03:33.170><c> is</c><00:03:33.230><c> an</c>
+
+00:03:33.460 --> 00:03:33.470 align:start position:0%
+mark phase and this is where this is an
+ 
+
+00:03:33.470 --> 00:03:36.670 align:start position:0%
+mark phase and this is where this is an
+expensive<00:03:34.040><c> operation</c><00:03:34.280><c> where</c><00:03:34.879><c> the</c><00:03:35.319><c> GC</c><00:03:36.319><c> walks</c>
+
+00:03:36.670 --> 00:03:36.680 align:start position:0%
+expensive operation where the GC walks
+ 
+
+00:03:36.680 --> 00:03:39.099 align:start position:0%
+expensive operation where the GC walks
+entire<00:03:37.189><c> object</c><00:03:37.939><c> graph</c><00:03:38.150><c> and</c><00:03:38.510><c> marking</c><00:03:38.959><c> the</c>
+
+00:03:39.099 --> 00:03:39.109 align:start position:0%
+entire object graph and marking the
+ 
+
+00:03:39.109 --> 00:03:44.199 align:start position:0%
+entire object graph and marking the
+objects<00:03:39.560><c> it</c><00:03:39.680><c> finds</c><00:03:40.159><c> as</c><00:03:40.430><c> live</c><00:03:42.730><c> we</c><00:03:43.730><c> then</c><00:03:43.909><c> come</c><00:03:44.120><c> to</c>
+
+00:03:44.199 --> 00:03:44.209 align:start position:0%
+objects it finds as live we then come to
+ 
+
+00:03:44.209 --> 00:03:45.720 align:start position:0%
+objects it finds as live we then come to
+the<00:03:44.299><c> market</c><00:03:44.629><c> and</c><00:03:44.689><c> pause</c><00:03:44.959><c> this</c><00:03:45.439><c> is</c><00:03:45.650><c> a</c>
+
+00:03:45.720 --> 00:03:45.730 align:start position:0%
+the market and pause this is a
+ 
+
+00:03:45.730 --> 00:03:48.309 align:start position:0%
+the market and pause this is a
+synchronization<00:03:46.730><c> point</c><00:03:47.030><c> to</c><00:03:47.450><c> coordinate</c><00:03:48.079><c> the</c>
+
+00:03:48.309 --> 00:03:48.319 align:start position:0%
+synchronization point to coordinate the
+ 
+
+00:03:48.319 --> 00:03:51.009 align:start position:0%
+synchronization point to coordinate the
+end<00:03:48.500><c> of</c><00:03:48.769><c> the</c><00:03:48.889><c> marking</c><00:03:49.189><c> phase</c><00:03:49.400><c> and</c><00:03:49.810><c> once</c><00:03:50.810><c> this</c>
+
+00:03:51.009 --> 00:03:51.019 align:start position:0%
+end of the marking phase and once this
+ 
+
+00:03:51.019 --> 00:03:54.369 align:start position:0%
+end of the marking phase and once this
+has<00:03:51.230><c> been</c><00:03:51.409><c> reached</c><00:03:51.650><c> the</c><00:03:52.450><c> GC</c><00:03:53.450><c> now</c><00:03:53.720><c> has</c><00:03:53.959><c> complete</c>
+
+00:03:54.369 --> 00:03:54.379 align:start position:0%
+has been reached the GC now has complete
+ 
+
+00:03:54.379 --> 00:03:56.379 align:start position:0%
+has been reached the GC now has complete
+lioness<00:03:54.889><c> information</c><00:03:55.519><c> so</c><00:03:55.669><c> it</c><00:03:55.790><c> knows</c><00:03:56.030><c> which</c>
+
+00:03:56.379 --> 00:03:56.389 align:start position:0%
+lioness information so it knows which
+ 
+
+00:03:56.389 --> 00:03:58.059 align:start position:0%
+lioness information so it knows which
+objects<00:03:56.870><c> are</c><00:03:56.959><c> live</c><00:03:57.200><c> and</c><00:03:57.500><c> which</c><00:03:57.620><c> are</c><00:03:57.799><c> garbage</c>
+
+00:03:58.059 --> 00:03:58.069 align:start position:0%
+objects are live and which are garbage
+ 
+
+00:03:58.069 --> 00:04:01.119 align:start position:0%
+objects are live and which are garbage
+and<00:03:58.489><c> we</c><00:03:59.329><c> now</c><00:03:59.450><c> transition</c><00:04:00.109><c> to</c><00:04:00.290><c> the</c><00:04:00.470><c> concurrent</c>
+
+00:04:01.119 --> 00:04:01.129 align:start position:0%
+and we now transition to the concurrent
+ 
+
+00:04:01.129 --> 00:04:03.880 align:start position:0%
+and we now transition to the concurrent
+prepare<00:04:01.579><c> for</c><00:04:01.760><c> relocate</c><00:04:02.180><c> phase</c>
+
+00:04:03.880 --> 00:04:03.890 align:start position:0%
+prepare for relocate phase
+ 
+
+00:04:03.890 --> 00:04:06.250 align:start position:0%
+prepare for relocate phase
+in<00:04:04.490><c> this</c><00:04:04.880><c> phase</c><00:04:05.150><c> number</c><00:04:05.450><c> of</c><00:04:05.690><c> things</c><00:04:05.810><c> happens</c>
+
+00:04:06.250 --> 00:04:06.260 align:start position:0%
+in this phase number of things happens
+ 
+
+00:04:06.260 --> 00:04:08.860 align:start position:0%
+in this phase number of things happens
+but<00:04:06.560><c> I'll</c><00:04:07.310><c> just</c><00:04:07.580><c> highlight</c><00:04:07.850><c> two</c><00:04:08.300><c> of</c><00:04:08.630><c> the</c><00:04:08.720><c> more</c>
+
+00:04:08.860 --> 00:04:08.870 align:start position:0%
+but I'll just highlight two of the more
+ 
+
+00:04:08.870 --> 00:04:10.960 align:start position:0%
+but I'll just highlight two of the more
+interesting<00:04:09.170><c> parts</c><00:04:09.380><c> here</c><00:04:09.890><c> which</c><00:04:10.730><c> is</c>
+
+00:04:10.960 --> 00:04:10.970 align:start position:0%
+interesting parts here which is
+ 
+
+00:04:10.970 --> 00:04:13.330 align:start position:0%
+interesting parts here which is
+reference<00:04:11.480><c> processing</c><00:04:12.020><c> and</c><00:04:12.320><c> relocation</c><00:04:12.980><c> set</c>
+
+00:04:13.330 --> 00:04:13.340 align:start position:0%
+reference processing and relocation set
+ 
+
+00:04:13.340 --> 00:04:17.080 align:start position:0%
+reference processing and relocation set
+selection<00:04:14.620><c> so</c><00:04:15.620><c> reference</c><00:04:16.310><c> processing</c><00:04:16.910><c> is</c>
+
+00:04:17.080 --> 00:04:17.090 align:start position:0%
+selection so reference processing is
+ 
+
+00:04:17.090 --> 00:04:19.750 align:start position:0%
+selection so reference processing is
+where<00:04:17.359><c> the</c><00:04:17.510><c> GC</c><00:04:17.900><c> takes</c><00:04:18.230><c> care</c><00:04:18.560><c> of</c><00:04:18.590><c> soft</c><00:04:19.100><c> week</c><00:04:19.459><c> and</c>
+
+00:04:19.750 --> 00:04:19.760 align:start position:0%
+where the GC takes care of soft week and
+ 
+
+00:04:19.760 --> 00:04:23.100 align:start position:0%
+where the GC takes care of soft week and
+phantom<00:04:20.120><c> references</c><00:04:20.660><c> and</c><00:04:21.580><c> finalization</c><00:04:22.580><c> and</c>
+
+00:04:23.100 --> 00:04:23.110 align:start position:0%
+phantom references and finalization and
+ 
+
+00:04:23.110 --> 00:04:25.870 align:start position:0%
+phantom references and finalization and
+the<00:04:24.110><c> relocation</c><00:04:24.290><c> set</c><00:04:24.770><c> selection</c><00:04:25.310><c> is</c><00:04:25.610><c> where</c>
+
+00:04:25.870 --> 00:04:25.880 align:start position:0%
+the relocation set selection is where
+ 
+
+00:04:25.880 --> 00:04:28.330 align:start position:0%
+the relocation set selection is where
+the<00:04:26.060><c> GC</c><00:04:26.480><c> figures</c><00:04:26.990><c> out</c><00:04:27.200><c> what</c><00:04:27.740><c> parts</c><00:04:28.130><c> of</c><00:04:28.250><c> the</c>
+
+00:04:28.330 --> 00:04:28.340 align:start position:0%
+the GC figures out what parts of the
+ 
+
+00:04:28.340 --> 00:04:31.540 align:start position:0%
+the GC figures out what parts of the
+heap<00:04:28.610><c> needs</c><00:04:29.540><c> to</c><00:04:29.780><c> be</c><00:04:29.980><c> compacted</c><00:04:30.980><c> to</c><00:04:31.040><c> free</c><00:04:31.400><c> up</c>
+
+00:04:31.540 --> 00:04:31.550 align:start position:0%
+heap needs to be compacted to free up
+ 
+
+00:04:31.550 --> 00:04:36.100 align:start position:0%
+heap needs to be compacted to free up
+memory<00:04:34.150><c> we</c><00:04:35.150><c> then</c><00:04:35.300><c> transition</c><00:04:35.810><c> to</c><00:04:35.840><c> the</c>
+
+00:04:36.100 --> 00:04:36.110 align:start position:0%
+memory we then transition to the
+ 
+
+00:04:36.110 --> 00:04:38.770 align:start position:0%
+memory we then transition to the
+relocation<00:04:36.560><c> phase</c><00:04:37.040><c> this</c><00:04:37.910><c> starts</c><00:04:38.450><c> with</c><00:04:38.690><c> the</c>
+
+00:04:38.770 --> 00:04:38.780 align:start position:0%
+relocation phase this starts with the
+ 
+
+00:04:38.780 --> 00:04:41.770 align:start position:0%
+relocation phase this starts with the
+relocate<00:04:39.230><c> start</c><00:04:39.590><c> pools</c><00:04:39.950><c> where</c><00:04:40.910><c> thread</c><00:04:41.419><c> stacks</c>
+
+00:04:41.770 --> 00:04:41.780 align:start position:0%
+relocate start pools where thread stacks
+ 
+
+00:04:41.780 --> 00:04:44.320 align:start position:0%
+relocate start pools where thread stacks
+are<00:04:42.110><c> scanned</c><00:04:42.560><c> to</c><00:04:42.950><c> handle</c><00:04:43.310><c> roots</c><00:04:43.550><c> pointing</c>
+
+00:04:44.320 --> 00:04:44.330 align:start position:0%
+are scanned to handle roots pointing
+ 
+
+00:04:44.330 --> 00:04:49.150 align:start position:0%
+are scanned to handle roots pointing
+into<00:04:44.720><c> the</c><00:04:44.750><c> location</c><00:04:45.320><c> set</c><00:04:45.850><c> and</c><00:04:47.650><c> we</c><00:04:48.650><c> then</c><00:04:48.860><c> come</c>
+
+00:04:49.150 --> 00:04:49.160 align:start position:0%
+into the location set and we then come
+ 
+
+00:04:49.160 --> 00:04:51.250 align:start position:0%
+into the location set and we then come
+to<00:04:49.430><c> the</c><00:04:49.550><c> concurrent</c><00:04:50.060><c> relocate</c><00:04:50.540><c> face</c><00:04:50.780><c> and</c><00:04:51.110><c> this</c>
+
+00:04:51.250 --> 00:04:51.260 align:start position:0%
+to the concurrent relocate face and this
+ 
+
+00:04:51.260 --> 00:04:54.130 align:start position:0%
+to the concurrent relocate face and this
+is<00:04:51.440><c> where</c><00:04:52.130><c> the</c><00:04:52.400><c> heavy</c><00:04:52.700><c> work</c><00:04:53.060><c> of</c><00:04:53.390><c> compacting</c>
+
+00:04:54.130 --> 00:04:54.140 align:start position:0%
+is where the heavy work of compacting
+ 
+
+00:04:54.140 --> 00:04:56.830 align:start position:0%
+is where the heavy work of compacting
+the<00:04:54.169><c> heap</c><00:04:54.440><c> happens</c><00:04:54.890><c> and</c><00:04:55.180><c> by</c><00:04:56.180><c> compacting</c><00:04:56.600><c> the</c>
+
+00:04:56.830 --> 00:04:56.840 align:start position:0%
+the heap happens and by compacting the
+ 
+
+00:04:56.840 --> 00:04:59.260 align:start position:0%
+the heap happens and by compacting the
+heap<00:04:57.050><c> the</c><00:04:57.350><c> GC</c><00:04:57.710><c> will</c><00:04:58.040><c> free</c><00:04:58.640><c> up</c><00:04:58.820><c> large</c>
+
+00:04:59.260 --> 00:04:59.270 align:start position:0%
+heap the GC will free up large
+ 
+
+00:04:59.270 --> 00:05:02.080 align:start position:0%
+heap the GC will free up large
+contiguous<00:05:00.110><c> chunks</c><00:05:01.040><c> of</c><00:05:01.160><c> memory</c><00:05:01.340><c> and</c><00:05:01.850><c> make</c>
+
+00:05:02.080 --> 00:05:02.090 align:start position:0%
+contiguous chunks of memory and make
+ 
+
+00:05:02.090 --> 00:05:04.210 align:start position:0%
+contiguous chunks of memory and make
+that<00:05:02.300><c> memory</c><00:05:02.720><c> available</c><00:05:03.320><c> for</c><00:05:04.070><c> new</c>
+
+00:05:04.210 --> 00:05:04.220 align:start position:0%
+that memory available for new
+ 
+
+00:05:04.220 --> 00:05:06.070 align:start position:0%
+that memory available for new
+allocations
+
+00:05:06.070 --> 00:05:06.080 align:start position:0%
+allocations
+ 
+
+00:05:06.080 --> 00:05:11.379 align:start position:0%
+allocations
+and<00:05:06.580><c> that</c><00:05:07.580><c> completes</c><00:05:08.000><c> the</c><00:05:08.120><c> Jesus</c><00:05:08.539><c> icon</c><00:05:08.870><c> I</c><00:05:10.389><c> want</c>
+
+00:05:11.379 --> 00:05:11.389 align:start position:0%
+and that completes the Jesus icon I want
+ 
+
+00:05:11.389 --> 00:05:14.469 align:start position:0%
+and that completes the Jesus icon I want
+to<00:05:11.479><c> point</c><00:05:11.870><c> out</c><00:05:12.080><c> here</c><00:05:12.349><c> that</c><00:05:12.410><c> the</c><00:05:13.220><c> Jesus</c><00:05:14.090><c> idols</c>
+
+00:05:14.469 --> 00:05:14.479 align:start position:0%
+to point out here that the Jesus idols
+ 
+
+00:05:14.479 --> 00:05:18.040 align:start position:0%
+to point out here that the Jesus idols
+that<00:05:14.810><c> we</c><00:05:15.050><c> have</c><00:05:15.560><c> here</c><00:05:15.830><c> will</c><00:05:16.129><c> be</c><00:05:16.340><c> very</c><00:05:16.789><c> short</c><00:05:17.050><c> as</c>
+
+00:05:18.040 --> 00:05:18.050 align:start position:0%
+that we have here will be very short as
+ 
+
+00:05:18.050 --> 00:05:19.960 align:start position:0%
+that we have here will be very short as
+I<00:05:18.229><c> mentioned</c><00:05:18.560><c> before</c><00:05:18.620><c> the</c><00:05:19.129><c> reason</c><00:05:19.310><c> why</c><00:05:19.669><c> I</c><00:05:19.699><c> said</c>
+
+00:05:19.960 --> 00:05:19.970 align:start position:0%
+I mentioned before the reason why I said
+ 
+
+00:05:19.970 --> 00:05:22.119 align:start position:0%
+I mentioned before the reason why I said
+you<00:05:20.150><c> can</c><00:05:20.479><c> keep</c><00:05:20.690><c> these</c><00:05:20.960><c> forces</c><00:05:21.470><c> below</c><00:05:21.770><c> 10</c>
+
+00:05:22.119 --> 00:05:22.129 align:start position:0%
+you can keep these forces below 10
+ 
+
+00:05:22.129 --> 00:05:24.010 align:start position:0%
+you can keep these forces below 10
+milliseconds<00:05:22.849><c> is</c><00:05:23.030><c> because</c><00:05:23.360><c> no</c><00:05:23.599><c> heavy</c><00:05:23.930><c> lifting</c>
+
+00:05:24.010 --> 00:05:24.020 align:start position:0%
+milliseconds is because no heavy lifting
+ 
+
+00:05:24.020 --> 00:05:26.950 align:start position:0%
+milliseconds is because no heavy lifting
+is<00:05:24.560><c> done</c><00:05:24.970><c> while</c><00:05:25.970><c> the</c><00:05:26.270><c> jaw</c><00:05:26.449><c> threats</c><00:05:26.780><c> are</c>
+
+00:05:26.950 --> 00:05:26.960 align:start position:0%
+is done while the jaw threats are
+ 
+
+00:05:26.960 --> 00:05:29.589 align:start position:0%
+is done while the jaw threats are
+stopped<00:05:27.669><c> all</c><00:05:28.669><c> that</c><00:05:28.699><c> is</c><00:05:28.940><c> down</c><00:05:29.150><c> here</c><00:05:29.449><c> is</c>
+
+00:05:29.589 --> 00:05:29.599 align:start position:0%
+stopped all that is down here is
+ 
+
+00:05:29.599 --> 00:05:31.270 align:start position:0%
+stopped all that is down here is
+essentially<00:05:30.020><c> scanning</c><00:05:30.590><c> or</c><00:05:30.680><c> threat</c><00:05:30.919><c> stacks</c>
+
+00:05:31.270 --> 00:05:31.280 align:start position:0%
+essentially scanning or threat stacks
+ 
+
+00:05:31.280 --> 00:05:35.050 align:start position:0%
+essentially scanning or threat stacks
+and<00:05:31.699><c> this</c><00:05:31.970><c> typically</c><00:05:33.310><c> can</c><00:05:34.310><c> be</c><00:05:34.430><c> done</c><00:05:34.610><c> well</c>
+
+00:05:35.050 --> 00:05:35.060 align:start position:0%
+and this typically can be done well
+ 
+
+00:05:35.060 --> 00:05:38.810 align:start position:0%
+and this typically can be done well
+within<00:05:35.300><c> the</c><00:05:35.509><c> limits</c><00:05:35.659><c> of</c><00:05:35.990><c> 10</c><00:05:36.229><c> milliseconds</c>
+
+00:05:38.810 --> 00:05:38.820 align:start position:0%
+ 
+ 
+
+00:05:38.820 --> 00:05:41.310 align:start position:0%
+ 
+okay<00:05:39.820><c> so</c><00:05:40.180><c> let's</c><00:05:40.750><c> have</c><00:05:40.870><c> a</c><00:05:40.960><c> look</c><00:05:41.050><c> at</c><00:05:41.170><c> some</c>
+
+00:05:41.310 --> 00:05:41.320 align:start position:0%
+okay so let's have a look at some
+ 
+
+00:05:41.320 --> 00:05:44.460 align:start position:0%
+okay so let's have a look at some
+performance<00:05:41.770><c> numbers</c><00:05:42.780><c> this</c><00:05:43.780><c> shows</c><00:05:44.110><c> you</c><00:05:44.440><c> the</c>
+
+00:05:44.460 --> 00:05:44.470 align:start position:0%
+performance numbers this shows you the
+ 
+
+00:05:44.470 --> 00:05:47.760 align:start position:0%
+performance numbers this shows you the
+score<00:05:45.220><c> us</c><00:05:45.400><c> from</c><00:05:45.970><c> spectator</c><00:05:46.450><c> be</c><00:05:46.770><c> comparing</c>
+
+00:05:47.760 --> 00:05:47.770 align:start position:0%
+score us from spectator be comparing
+ 
+
+00:05:47.770 --> 00:05:49.800 align:start position:0%
+score us from spectator be comparing
+said<00:05:47.980><c> you</c><00:05:48.070><c> see</c><00:05:48.280><c> with</c><00:05:48.580><c> a</c><00:05:48.610><c> parallel</c><00:05:48.940><c> GC</c><00:05:49.390><c> and</c><00:05:49.660><c> G</c>
+
+00:05:49.800 --> 00:05:49.810 align:start position:0%
+said you see with a parallel GC and G
+ 
+
+00:05:49.810 --> 00:05:53.010 align:start position:0%
+said you see with a parallel GC and G
+one<00:05:50.190><c> spec</c><00:05:51.190><c> jb</c><00:05:51.550><c> b</c><00:05:51.700><c> is</c><00:05:51.940><c> a</c><00:05:51.970><c> well-known</c><00:05:52.600><c> java</c>
+
+00:05:53.010 --> 00:05:53.020 align:start position:0%
+one spec jb b is a well-known java
+ 
+
+00:05:53.020 --> 00:05:55.530 align:start position:0%
+one spec jb b is a well-known java
+benchmark<00:05:53.530><c> which</c><00:05:53.920><c> produces</c><00:05:54.430><c> two</c><00:05:54.640><c> scores</c><00:05:55.030><c> max</c>
+
+00:05:55.530 --> 00:05:55.540 align:start position:0%
+benchmark which produces two scores max
+ 
+
+00:05:55.540 --> 00:05:57.180 align:start position:0%
+benchmark which produces two scores max
+j<00:05:55.810><c> ups</c><00:05:55.990><c> and</c><00:05:56.140><c> critical</c><00:05:56.560><c> j</c><00:05:56.770><c> ups</c>
+
+00:05:57.180 --> 00:05:57.190 align:start position:0%
+j ups and critical j ups
+ 
+
+00:05:57.190 --> 00:06:00.000 align:start position:0%
+j ups and critical j ups
+max<00:05:58.030><c> j</c><00:05:58.300><c> UPS</c><00:05:58.450><c> is</c><00:05:58.690><c> a</c><00:05:58.720><c> row</c><00:05:59.260><c> throughput</c><00:05:59.710><c> score</c>
+
+00:06:00.000 --> 00:06:00.010 align:start position:0%
+max j UPS is a row throughput score
+ 
+
+00:06:00.010 --> 00:06:01.500 align:start position:0%
+max j UPS is a row throughput score
+while<00:06:00.430><c> critical</c><00:06:00.940><c> j</c><00:06:01.150><c> ups</c><00:06:01.300><c> is</c><00:06:01.480><c> a</c>
+
+00:06:01.500 --> 00:06:01.510 align:start position:0%
+while critical j ups is a
+ 
+
+00:06:01.510 --> 00:06:03.750 align:start position:0%
+while critical j ups is a
+latency-sensitive<00:06:02.170><c> score</c><00:06:02.950><c> showing</c><00:06:03.520><c> the</c>
+
+00:06:03.750 --> 00:06:03.760 align:start position:0%
+latency-sensitive score showing the
+ 
+
+00:06:03.760 --> 00:06:07.800 align:start position:0%
+latency-sensitive score showing the
+throughput<00:06:04.390><c> achieved</c><00:06:04.990><c> under</c><00:06:05.320><c> an</c><00:06:05.680><c> SLA</c><00:06:06.160><c> and</c><00:06:06.810><c> as</c>
+
+00:06:07.800 --> 00:06:07.810 align:start position:0%
+throughput achieved under an SLA and as
+ 
+
+00:06:07.810 --> 00:06:09.990 align:start position:0%
+throughput achieved under an SLA and as
+we<00:06:07.930><c> can</c><00:06:08.080><c> see</c><00:06:08.320><c> on</c><00:06:08.590><c> this</c><00:06:08.770><c> benchmark</c><00:06:09.400><c> you</c><00:06:09.700><c> said</c>
+
+00:06:09.990 --> 00:06:10.000 align:start position:0%
+we can see on this benchmark you said
+ 
+
+00:06:10.000 --> 00:06:12.480 align:start position:0%
+we can see on this benchmark you said
+you<00:06:10.150><c> see</c><00:06:10.390><c> is</c><00:06:10.600><c> on</c><00:06:10.750><c> par</c><00:06:11.050><c> with</c><00:06:11.080><c> a</c><00:06:11.350><c> parallel</c><00:06:11.710><c> GC</c><00:06:12.160><c> and</c>
+
+00:06:12.480 --> 00:06:12.490 align:start position:0%
+you see is on par with a parallel GC and
+ 
+
+00:06:12.490 --> 00:06:14.940 align:start position:0%
+you see is on par with a parallel GC and
+G<00:06:12.850><c> one</c><00:06:13.060><c> when</c><00:06:13.450><c> it</c><00:06:13.570><c> comes</c><00:06:13.810><c> to</c><00:06:14.020><c> row</c><00:06:14.410><c> throughput</c>
+
+00:06:14.940 --> 00:06:14.950 align:start position:0%
+G one when it comes to row throughput
+ 
+
+00:06:14.950 --> 00:06:17.820 align:start position:0%
+G one when it comes to row throughput
+and<00:06:15.250><c> said</c><00:06:16.240><c> you</c><00:06:16.360><c> see</c><00:06:16.540><c> it's</c><00:06:16.780><c> well</c><00:06:16.960><c> ahead</c><00:06:17.230><c> of</c><00:06:17.440><c> the</c>
+
+00:06:17.820 --> 00:06:17.830 align:start position:0%
+and said you see it's well ahead of the
+ 
+
+00:06:17.830 --> 00:06:19.590 align:start position:0%
+and said you see it's well ahead of the
+other<00:06:17.860><c> collectors</c><00:06:18.400><c> when</c><00:06:18.700><c> it</c><00:06:18.790><c> comes</c><00:06:19.030><c> to</c><00:06:19.300><c> the</c>
+
+00:06:19.590 --> 00:06:19.600 align:start position:0%
+other collectors when it comes to the
+ 
+
+00:06:19.600 --> 00:06:22.620 align:start position:0%
+other collectors when it comes to the
+latency<00:06:20.110><c> sensitive</c><00:06:20.290><c> score</c><00:06:20.740><c> and</c><00:06:21.360><c> this</c><00:06:22.360><c> is</c><00:06:22.480><c> of</c>
+
+00:06:22.620 --> 00:06:22.630 align:start position:0%
+latency sensitive score and this is of
+ 
+
+00:06:22.630 --> 00:06:27.510 align:start position:0%
+latency sensitive score and this is of
+course<00:06:22.990><c> thanks</c><00:06:23.680><c> to</c><00:06:23.710><c> the</c><00:06:24.100><c> low</c><00:06:24.220><c> cost</c><00:06:24.460><c> times</c><00:06:26.520><c> here</c>
+
+00:06:27.510 --> 00:06:27.520 align:start position:0%
+course thanks to the low cost times here
+ 
+
+00:06:27.520 --> 00:06:29.580 align:start position:0%
+course thanks to the low cost times here
+we<00:06:27.670><c> have</c><00:06:27.850><c> the</c><00:06:28.210><c> GC</c><00:06:28.630><c> post</c><00:06:28.960><c> times</c><00:06:29.230><c> for</c><00:06:29.470><c> the</c><00:06:29.560><c> same</c>
+
+00:06:29.580 --> 00:06:29.590 align:start position:0%
+we have the GC post times for the same
+ 
+
+00:06:29.590 --> 00:06:32.610 align:start position:0%
+we have the GC post times for the same
+benchmark<00:06:30.070><c> the</c><00:06:30.940><c> light</c><00:06:31.330><c> blue</c><00:06:31.570><c> bars</c><00:06:31.840><c> here</c><00:06:32.350><c> show</c>
+
+00:06:32.610 --> 00:06:32.620 align:start position:0%
+benchmark the light blue bars here show
+ 
+
+00:06:32.620 --> 00:06:35.640 align:start position:0%
+benchmark the light blue bars here show
+the<00:06:33.280><c> average</c><00:06:33.850><c> post</c><00:06:34.360><c> time</c><00:06:34.660><c> for</c><00:06:34.690><c> each</c><00:06:34.930><c> GC</c><00:06:35.410><c> and</c>
+
+00:06:35.640 --> 00:06:35.650 align:start position:0%
+the average post time for each GC and
+ 
+
+00:06:35.650 --> 00:06:37.920 align:start position:0%
+the average post time for each GC and
+the<00:06:35.740><c> black</c><00:06:36.100><c> part</c><00:06:36.430><c> shows</c><00:06:36.970><c> the</c><00:06:37.180><c> worst</c><00:06:37.360><c> post</c><00:06:37.750><c> time</c>
+
+00:06:37.920 --> 00:06:37.930 align:start position:0%
+the black part shows the worst post time
+ 
+
+00:06:37.930 --> 00:06:40.409 align:start position:0%
+the black part shows the worst post time
+and<00:06:38.230><c> then</c><00:06:39.160><c> we</c><00:06:39.310><c> have</c><00:06:39.520><c> some</c><00:06:40.000><c> of</c><00:06:40.120><c> the</c><00:06:40.210><c> higher</c>
+
+00:06:40.409 --> 00:06:40.419 align:start position:0%
+and then we have some of the higher
+ 
+
+00:06:40.419 --> 00:06:44.130 align:start position:0%
+and then we have some of the higher
+percentiles<00:06:41.380><c> in</c><00:06:41.590><c> between</c><00:06:42.690><c> the</c><00:06:43.690><c> post</c><00:06:43.900><c> times</c>
+
+00:06:44.130 --> 00:06:44.140 align:start position:0%
+percentiles in between the post times
+ 
+
+00:06:44.140 --> 00:06:47.700 align:start position:0%
+percentiles in between the post times
+for<00:06:44.380><c> CDC</c><00:06:44.890><c> barely</c><00:06:45.669><c> registers</c><00:06:46.180><c> here</c><00:06:46.450><c> so</c><00:06:46.990><c> to</c><00:06:47.620><c> get</c>
+
+00:06:47.700 --> 00:06:47.710 align:start position:0%
+for CDC barely registers here so to get
+ 
+
+00:06:47.710 --> 00:06:49.590 align:start position:0%
+for CDC barely registers here so to get
+a<00:06:47.770><c> better</c><00:06:47.980><c> sense</c><00:06:48.190><c> of</c><00:06:48.400><c> what's</c><00:06:48.700><c> going</c><00:06:49.060><c> on</c><00:06:49.240><c> lets</c>
+
+00:06:49.590 --> 00:06:49.600 align:start position:0%
+a better sense of what's going on lets
+ 
+
+00:06:49.600 --> 00:06:53.490 align:start position:0%
+a better sense of what's going on lets
+me<00:06:50.110><c> switch</c><00:06:50.350><c> the</c><00:06:51.540><c> time</c><00:06:52.540><c> axis</c><00:06:52.810><c> to</c><00:06:53.290><c> use</c><00:06:53.470><c> a</c>
+
+00:06:53.490 --> 00:06:53.500 align:start position:0%
+me switch the time axis to use a
+ 
+
+00:06:53.500 --> 00:06:57.600 align:start position:0%
+me switch the time axis to use a
+logarithmic<00:06:53.979><c> scale</c>
+
+00:06:57.600 --> 00:06:57.610 align:start position:0%
+ 
+ 
+
+00:06:57.610 --> 00:07:01.149 align:start position:0%
+ 
+like<00:06:58.610><c> that</c><00:06:58.939><c> and</c><00:06:59.419><c> now</c><00:06:59.689><c> we</c><00:06:59.750><c> can</c><00:06:59.990><c> see</c><00:07:00.259><c> that</c><00:07:00.800><c> the</c>
+
+00:07:01.149 --> 00:07:01.159 align:start position:0%
+like that and now we can see that the
+ 
+
+00:07:01.159 --> 00:07:03.999 align:start position:0%
+like that and now we can see that the
+average<00:07:01.430><c> post</c><00:07:01.939><c> time</c><00:07:02.300><c> for</c><00:07:02.330><c> CDC</c><00:07:03.199><c> is</c><00:07:03.379><c> roughly</c><00:07:03.740><c> one</c>
+
+00:07:03.999 --> 00:07:04.009 align:start position:0%
+average post time for CDC is roughly one
+ 
+
+00:07:04.009 --> 00:07:06.730 align:start position:0%
+average post time for CDC is roughly one
+millisecond<00:07:04.729><c> with</c><00:07:05.599><c> the</c><00:07:05.810><c> worst</c><00:07:06.050><c> forced</c><00:07:06.530><c> time</c>
+
+00:07:06.730 --> 00:07:06.740 align:start position:0%
+millisecond with the worst forced time
+ 
+
+00:07:06.740 --> 00:07:09.309 align:start position:0%
+millisecond with the worst forced time
+of<00:07:06.949><c> around</c><00:07:07.189><c> two</c><00:07:07.490><c> milliseconds</c><00:07:08.150><c> and</c><00:07:08.330><c> this</c><00:07:09.169><c> is</c>
+
+00:07:09.309 --> 00:07:09.319 align:start position:0%
+of around two milliseconds and this is
+ 
+
+00:07:09.319 --> 00:07:12.040 align:start position:0%
+of around two milliseconds and this is
+well<00:07:09.830><c> below</c><00:07:10.039><c> sadducees</c><00:07:11.030><c> goal</c><00:07:11.300><c> of</c><00:07:11.599><c> never</c>
+
+00:07:12.040 --> 00:07:12.050 align:start position:0%
+well below sadducees goal of never
+ 
+
+00:07:12.050 --> 00:07:14.320 align:start position:0%
+well below sadducees goal of never
+having<00:07:12.349><c> pauses</c><00:07:12.949><c> exceeding</c><00:07:13.490><c> 10</c><00:07:13.699><c> milliseconds</c>
+
+00:07:14.320 --> 00:07:14.330 align:start position:0%
+having pauses exceeding 10 milliseconds
+ 
+
+00:07:14.330 --> 00:07:17.860 align:start position:0%
+having pauses exceeding 10 milliseconds
+in<00:07:15.370><c> contrast</c><00:07:16.370><c> we</c><00:07:16.520><c> can</c><00:07:16.639><c> see</c><00:07:16.819><c> that</c><00:07:17.030><c> the</c><00:07:17.330><c> other</c>
+
+00:07:17.860 --> 00:07:17.870 align:start position:0%
+in contrast we can see that the other
+ 
+
+00:07:17.870 --> 00:07:21.850 align:start position:0%
+in contrast we can see that the other
+collectors<00:07:19.210><c> have</c><00:07:20.319><c> average</c><00:07:21.319><c> post</c><00:07:21.530><c> times</c>
+
+00:07:21.850 --> 00:07:21.860 align:start position:0%
+collectors have average post times
+ 
+
+00:07:21.860 --> 00:07:24.339 align:start position:0%
+collectors have average post times
+between<00:07:22.250><c> 150</c><00:07:23.120><c> and</c><00:07:23.150><c> 200</c><00:07:23.330><c> milliseconds</c><00:07:24.080><c> with</c>
+
+00:07:24.339 --> 00:07:24.349 align:start position:0%
+between 150 and 200 milliseconds with
+ 
+
+00:07:24.349 --> 00:07:26.830 align:start position:0%
+between 150 and 200 milliseconds with
+the<00:07:24.469><c> worst</c><00:07:24.680><c> post</c><00:07:24.979><c> times</c><00:07:25.310><c> on</c><00:07:25.819><c> the</c><00:07:25.939><c> order</c><00:07:26.180><c> of</c><00:07:26.270><c> 300</c>
+
+00:07:26.830 --> 00:07:26.840 align:start position:0%
+the worst post times on the order of 300
+ 
+
+00:07:26.840 --> 00:07:30.990 align:start position:0%
+the worst post times on the order of 300
+to<00:07:27.199><c> 500</c><00:07:27.770><c> milliseconds</c>
+
+00:07:30.990 --> 00:07:31.000 align:start position:0%
+ 
+ 
+
+00:07:31.000 --> 00:07:33.160 align:start position:0%
+ 
+so<00:07:32.000><c> let's</c><00:07:32.300><c> have</c><00:07:32.390><c> a</c><00:07:32.450><c> look</c><00:07:32.540><c> at</c><00:07:32.660><c> what</c><00:07:32.810><c> you</c><00:07:32.900><c> need</c><00:07:32.930><c> to</c>
+
+00:07:33.160 --> 00:07:33.170 align:start position:0%
+so let's have a look at what you need to
+ 
+
+00:07:33.170 --> 00:07:36.540 align:start position:0%
+so let's have a look at what you need to
+know<00:07:33.770><c> to</c><00:07:33.830><c> get</c><00:07:34.580><c> started</c><00:07:34.700><c> using</c><00:07:35.180><c> said</c><00:07:35.570><c> you</c><00:07:35.690><c> see</c>
+
+00:07:36.540 --> 00:07:36.550 align:start position:0%
+know to get started using said you see
+ 
+
+00:07:36.550 --> 00:07:39.610 align:start position:0%
+know to get started using said you see
+first<00:07:37.550><c> of</c><00:07:37.760><c> all</c><00:07:37.880><c> there</c><00:07:38.330><c> is</c><00:07:38.420><c> a</c><00:07:38.450><c> new</c><00:07:38.660><c> JVM</c><00:07:39.200><c> option</c>
+
+00:07:39.610 --> 00:07:39.620 align:start position:0%
+first of all there is a new JVM option
+ 
+
+00:07:39.620 --> 00:07:42.010 align:start position:0%
+first of all there is a new JVM option
+to<00:07:39.800><c> enable</c><00:07:40.310><c> said</c><00:07:40.670><c> you</c><00:07:40.790><c> see</c><00:07:40.970><c> and</c><00:07:41.300><c> that's</c><00:07:41.690><c> called</c>
+
+00:07:42.010 --> 00:07:42.020 align:start position:0%
+to enable said you see and that's called
+ 
+
+00:07:42.020 --> 00:07:46.270 align:start position:0%
+to enable said you see and that's called
+you<00:07:42.380><c> said</c><00:07:42.860><c> you</c><00:07:42.980><c> see</c><00:07:44.500><c> since</c><00:07:45.500><c> this</c><00:07:45.740><c> is</c><00:07:45.920><c> still</c><00:07:46.040><c> an</c>
+
+00:07:46.270 --> 00:07:46.280 align:start position:0%
+you said you see since this is still an
+ 
+
+00:07:46.280 --> 00:07:47.920 align:start position:0%
+you said you see since this is still an
+experimental<00:07:46.490><c> feature</c><00:07:47.030><c> you</c><00:07:47.390><c> also</c><00:07:47.540><c> need</c><00:07:47.810><c> to</c>
+
+00:07:47.920 --> 00:07:47.930 align:start position:0%
+experimental feature you also need to
+ 
+
+00:07:47.930 --> 00:07:50.080 align:start position:0%
+experimental feature you also need to
+supply<00:07:48.140><c> the</c><00:07:48.260><c> option</c><00:07:48.800><c> to</c><00:07:48.980><c> unlock</c><00:07:49.400><c> extra</c><00:07:49.610><c> rental</c>
+
+00:07:50.080 --> 00:07:50.090 align:start position:0%
+supply the option to unlock extra rental
+ 
+
+00:07:50.090 --> 00:07:55.030 align:start position:0%
+supply the option to unlock extra rental
+features<00:07:50.890><c> and</c><00:07:52.510><c> a</c><00:07:53.510><c> few</c><00:07:53.720><c> words</c><00:07:53.900><c> on</c><00:07:54.080><c> tuning</c><00:07:54.620><c> so</c>
+
+00:07:55.030 --> 00:07:55.040 align:start position:0%
+features and a few words on tuning so
+ 
+
+00:07:55.040 --> 00:07:58.030 align:start position:0%
+features and a few words on tuning so
+first<00:07:55.970><c> of</c><00:07:56.120><c> all</c><00:07:56.270><c> we've</c><00:07:56.900><c> been</c><00:07:57.140><c> working</c><00:07:57.500><c> hard</c><00:07:57.530><c> to</c>
+
+00:07:58.030 --> 00:07:58.040 align:start position:0%
+first of all we've been working hard to
+ 
+
+00:07:58.040 --> 00:08:00.670 align:start position:0%
+first of all we've been working hard to
+make<00:07:58.250><c> said</c><00:07:58.970><c> you</c><00:07:59.150><c> see</c><00:07:59.420><c> easy</c><00:07:59.690><c> to</c><00:08:00.050><c> do</c><00:08:00.230><c> and</c><00:08:00.560><c> to</c>
+
+00:08:00.670 --> 00:08:00.680 align:start position:0%
+make said you see easy to do and to
+ 
+
+00:08:00.680 --> 00:08:02.770 align:start position:0%
+make said you see easy to do and to
+avoid<00:08:00.950><c> exposing</c><00:08:01.490><c> a</c><00:08:01.760><c> lot</c><00:08:01.910><c> of</c><00:08:02.030><c> GC</c><00:08:02.480><c> tuning</c>
+
+00:08:02.770 --> 00:08:02.780 align:start position:0%
+avoid exposing a lot of GC tuning
+ 
+
+00:08:02.780 --> 00:08:04.050 align:start position:0%
+avoid exposing a lot of GC tuning
+options
+
+00:08:04.050 --> 00:08:04.060 align:start position:0%
+options
+ 
+
+00:08:04.060 --> 00:08:07.090 align:start position:0%
+options
+the<00:08:05.060><c> main</c><00:08:05.420><c> tuning</c><00:08:05.840><c> option</c><00:08:06.200><c> is</c><00:08:06.500><c> setting</c><00:08:06.980><c> the</c>
+
+00:08:07.090 --> 00:08:07.100 align:start position:0%
+the main tuning option is setting the
+ 
+
+00:08:07.100 --> 00:08:09.760 align:start position:0%
+the main tuning option is setting the
+max<00:08:07.340><c> heap</c><00:08:07.610><c> size</c><00:08:07.880><c> and</c><00:08:08.270><c> since</c><00:08:08.960><c> said</c><00:08:09.290><c> you</c><00:08:09.440><c> see</c><00:08:09.650><c> is</c>
+
+00:08:09.760 --> 00:08:09.770 align:start position:0%
+max heap size and since said you see is
+ 
+
+00:08:09.770 --> 00:08:11.620 align:start position:0%
+max heap size and since said you see is
+a<00:08:09.830><c> concurrent</c><00:08:10.370><c> collector</c><00:08:10.790><c> you</c><00:08:11.300><c> need</c><00:08:11.480><c> to</c>
+
+00:08:11.620 --> 00:08:11.630 align:start position:0%
+a concurrent collector you need to
+ 
+
+00:08:11.630 --> 00:08:15.430 align:start position:0%
+a concurrent collector you need to
+select<00:08:11.810><c> a</c><00:08:12.170><c> max</c><00:08:12.920><c> heap</c><00:08:13.190><c> size</c><00:08:13.580><c> that</c><00:08:13.970><c> well</c><00:08:14.870><c> first</c>
+
+00:08:15.430 --> 00:08:15.440 align:start position:0%
+select a max heap size that well first
+ 
+
+00:08:15.440 --> 00:08:17.680 align:start position:0%
+select a max heap size that well first
+of<00:08:15.650><c> all</c><00:08:15.770><c> can</c><00:08:16.100><c> accommodate</c><00:08:16.850><c> the</c><00:08:17.060><c> live</c><00:08:17.300><c> set</c><00:08:17.570><c> of</c>
+
+00:08:17.680 --> 00:08:17.690 align:start position:0%
+of all can accommodate the live set of
+ 
+
+00:08:17.690 --> 00:08:20.260 align:start position:0%
+of all can accommodate the live set of
+your<00:08:17.870><c> application</c><00:08:18.440><c> but</c><00:08:19.280><c> you</c><00:08:19.730><c> also</c><00:08:19.880><c> need</c><00:08:20.120><c> to</c>
+
+00:08:20.260 --> 00:08:20.270 align:start position:0%
+your application but you also need to
+ 
+
+00:08:20.270 --> 00:08:21.940 align:start position:0%
+your application but you also need to
+have<00:08:20.450><c> enough</c><00:08:20.750><c> Headroom</c><00:08:21.050><c> in</c><00:08:21.380><c> the</c><00:08:21.470><c> heap</c><00:08:21.680><c> to</c>
+
+00:08:21.940 --> 00:08:21.950 align:start position:0%
+have enough Headroom in the heap to
+ 
+
+00:08:21.950 --> 00:08:24.850 align:start position:0%
+have enough Headroom in the heap to
+allow<00:08:22.870><c> allocations</c><00:08:23.870><c> to</c><00:08:23.960><c> be</c><00:08:24.200><c> serviced</c>
+
+00:08:24.850 --> 00:08:24.860 align:start position:0%
+allow allocations to be serviced
+ 
+
+00:08:24.860 --> 00:08:27.280 align:start position:0%
+allow allocations to be serviced
+while<00:08:25.070><c> the</c><00:08:25.280><c> G's</c><00:08:25.490><c> is</c><00:08:25.700><c> running</c><00:08:26.090><c> how</c><00:08:26.990><c> much</c>
+
+00:08:27.280 --> 00:08:27.290 align:start position:0%
+while the G's is running how much
+ 
+
+00:08:27.290 --> 00:08:29.290 align:start position:0%
+while the G's is running how much
+Headroom<00:08:27.560><c> you</c><00:08:27.830><c> need</c><00:08:28.010><c> very</c><00:08:28.430><c> much</c><00:08:28.610><c> depends</c><00:08:29.150><c> on</c>
+
+00:08:29.290 --> 00:08:29.300 align:start position:0%
+Headroom you need very much depends on
+ 
+
+00:08:29.300 --> 00:08:31.960 align:start position:0%
+Headroom you need very much depends on
+the<00:08:29.450><c> allocation</c><00:08:29.690><c> rate</c><00:08:30.140><c> and</c><00:08:30.500><c> the</c><00:08:31.400><c> live</c><00:08:31.730><c> set</c>
+
+00:08:31.960 --> 00:08:31.970 align:start position:0%
+the allocation rate and the live set
+ 
+
+00:08:31.970 --> 00:08:35.350 align:start position:0%
+the allocation rate and the live set
+size<00:08:32.210><c> of</c><00:08:32.540><c> your</c><00:08:32.750><c> application</c><00:08:33.470><c> and</c><00:08:33.820><c> in</c><00:08:34.820><c> general</c>
+
+00:08:35.350 --> 00:08:35.360 align:start position:0%
+size of your application and in general
+ 
+
+00:08:35.360 --> 00:08:37.900 align:start position:0%
+size of your application and in general
+the<00:08:35.870><c> more</c><00:08:36.260><c> memory</c><00:08:36.680><c> you</c><00:08:36.710><c> give</c><00:08:37.010><c> to</c><00:08:37.310><c> said</c><00:08:37.550><c> you</c><00:08:37.669><c> see</c>
+
+00:08:37.900 --> 00:08:37.910 align:start position:0%
+the more memory you give to said you see
+ 
+
+00:08:37.910 --> 00:08:40.450 align:start position:0%
+the more memory you give to said you see
+the<00:08:38.150><c> better</c><00:08:38.360><c> but</c><00:08:39.260><c> at</c><00:08:39.470><c> the</c><00:08:39.620><c> same</c><00:08:39.830><c> time</c><00:08:40.130><c> you</c>
+
+00:08:40.450 --> 00:08:40.460 align:start position:0%
+the better but at the same time you
+ 
+
+00:08:40.460 --> 00:08:43.210 align:start position:0%
+the better but at the same time you
+don't<00:08:40.610><c> want</c><00:08:40.790><c> to</c><00:08:40.880><c> waste</c><00:08:41.060><c> memory</c><00:08:41.510><c> so</c><00:08:42.169><c> it's</c><00:08:43.010><c> all</c>
+
+00:08:43.210 --> 00:08:43.220 align:start position:0%
+don't want to waste memory so it's all
+ 
+
+00:08:43.220 --> 00:08:45.490 align:start position:0%
+don't want to waste memory so it's all
+about<00:08:43.250><c> finding</c><00:08:43.820><c> a</c><00:08:44.030><c> balance</c><00:08:44.060><c> between</c><00:08:44.600><c> memory</c>
+
+00:08:45.490 --> 00:08:45.500 align:start position:0%
+about finding a balance between memory
+ 
+
+00:08:45.500 --> 00:08:48.870 align:start position:0%
+about finding a balance between memory
+usage<00:08:46.040><c> and</c><00:08:46.280><c> how</c><00:08:46.370><c> often</c><00:08:46.790><c> the</c><00:08:47.060><c> GC</c><00:08:47.270><c> needs</c><00:08:47.600><c> to</c><00:08:47.780><c> run</c>
+
+00:08:48.870 --> 00:08:48.880 align:start position:0%
+usage and how often the GC needs to run
+ 
+
+00:08:48.880 --> 00:08:51.850 align:start position:0%
+usage and how often the GC needs to run
+the<00:08:49.880><c> second</c><00:08:50.360><c> tuner</c><00:08:50.660><c> option</c><00:08:51.050><c> that</c><00:08:51.200><c> you</c><00:08:51.470><c> might</c>
+
+00:08:51.850 --> 00:08:51.860 align:start position:0%
+the second tuner option that you might
+ 
+
+00:08:51.860 --> 00:08:54.250 align:start position:0%
+the second tuner option that you might
+want<00:08:52.520><c> to</c><00:08:52.580><c> look</c><00:08:52.700><c> at</c><00:08:52.910><c> is</c><00:08:53.210><c> setting</c><00:08:53.690><c> the</c><00:08:53.840><c> number</c><00:08:54.140><c> of</c>
+
+00:08:54.250 --> 00:08:54.260 align:start position:0%
+want to look at is setting the number of
+ 
+
+00:08:54.260 --> 00:08:57.310 align:start position:0%
+want to look at is setting the number of
+concurrent<00:08:54.620><c> GC</c><00:08:54.920><c> threads</c><00:08:55.630><c> said</c><00:08:56.630><c> UC</c><00:08:56.960><c> has</c>
+
+00:08:57.310 --> 00:08:57.320 align:start position:0%
+concurrent GC threads said UC has
+ 
+
+00:08:57.320 --> 00:08:59.890 align:start position:0%
+concurrent GC threads said UC has
+heuristics<00:08:58.250><c> to</c><00:08:58.580><c> select</c><00:08:59.030><c> this</c><00:08:59.390><c> number</c><00:08:59.750><c> and</c>
+
+00:08:59.890 --> 00:08:59.900 align:start position:0%
+heuristics to select this number and
+ 
+
+00:08:59.900 --> 00:09:03.160 align:start position:0%
+heuristics to select this number and
+this<00:09:00.710><c> usually</c><00:09:00.950><c> works</c><00:09:01.460><c> well</c><00:09:01.730><c> but</c><00:09:02.270><c> depending</c><00:09:03.080><c> on</c>
+
+00:09:03.160 --> 00:09:03.170 align:start position:0%
+this usually works well but depending on
+ 
+
+00:09:03.170 --> 00:09:05.050 align:start position:0%
+this usually works well but depending on
+what<00:09:03.230><c> type</c><00:09:03.650><c> of</c><00:09:03.860><c> workload</c><00:09:04.070><c> you're</c><00:09:04.520><c> running</c><00:09:04.880><c> you</c>
+
+00:09:05.050 --> 00:09:05.060 align:start position:0%
+what type of workload you're running you
+ 
+
+00:09:05.060 --> 00:09:08.050 align:start position:0%
+what type of workload you're running you
+might<00:09:05.420><c> want</c><00:09:05.720><c> to</c><00:09:05.810><c> adjust</c><00:09:05.900><c> this</c><00:09:06.670><c> this</c><00:09:07.670><c> option</c>
+
+00:09:08.050 --> 00:09:08.060 align:start position:0%
+might want to adjust this this option
+ 
+
+00:09:08.060 --> 00:09:10.840 align:start position:0%
+might want to adjust this this option
+basically<00:09:08.480><c> it</c><00:09:08.600><c> says</c><00:09:08.870><c> how</c><00:09:09.710><c> much</c><00:09:09.920><c> CPU</c><00:09:10.250><c> time</c>
+
+00:09:10.840 --> 00:09:10.850 align:start position:0%
+basically it says how much CPU time
+ 
+
+00:09:10.850 --> 00:09:13.780 align:start position:0%
+basically it says how much CPU time
+you're<00:09:11.120><c> willing</c><00:09:11.480><c> to</c><00:09:11.510><c> give</c><00:09:11.870><c> to</c><00:09:12.140><c> the</c><00:09:12.230><c> GC</c><00:09:12.650><c> and</c><00:09:12.920><c> if</c>
+
+00:09:13.780 --> 00:09:13.790 align:start position:0%
+you're willing to give to the GC and if
+ 
+
+00:09:13.790 --> 00:09:15.970 align:start position:0%
+you're willing to give to the GC and if
+you<00:09:13.910><c> give</c><00:09:14.120><c> it</c><00:09:14.240><c> too</c><00:09:14.390><c> much</c><00:09:14.570><c> then</c><00:09:15.140><c> the</c><00:09:15.200><c> GC</c><00:09:15.770><c> will</c>
+
+00:09:15.970 --> 00:09:15.980 align:start position:0%
+you give it too much then the GC will
+ 
+
+00:09:15.980 --> 00:09:18.130 align:start position:0%
+you give it too much then the GC will
+steal<00:09:16.310><c> too</c><00:09:16.670><c> much</c><00:09:16.880><c> CPU</c><00:09:17.180><c> time</c><00:09:17.630><c> from</c><00:09:17.960><c> your</c>
+
+00:09:18.130 --> 00:09:18.140 align:start position:0%
+steal too much CPU time from your
+ 
+
+00:09:18.140 --> 00:09:20.620 align:start position:0%
+steal too much CPU time from your
+application<00:09:18.550><c> but</c><00:09:19.550><c> on</c><00:09:19.970><c> the</c><00:09:20.090><c> other</c><00:09:20.180><c> hand</c><00:09:20.270><c> if</c>
+
+00:09:20.620 --> 00:09:20.630 align:start position:0%
+application but on the other hand if
+ 
+
+00:09:20.630 --> 00:09:23.590 align:start position:0%
+application but on the other hand if
+this<00:09:21.020><c> number</c><00:09:21.230><c> is</c><00:09:21.470><c> too</c><00:09:21.650><c> low</c><00:09:21.860><c> then</c><00:09:22.340><c> the</c><00:09:22.940><c> GC</c><00:09:23.360><c> might</c>
+
+00:09:23.590 --> 00:09:23.600 align:start position:0%
+this number is too low then the GC might
+ 
+
+00:09:23.600 --> 00:09:26.860 align:start position:0%
+this number is too low then the GC might
+not<00:09:23.810><c> be</c><00:09:23.990><c> able</c><00:09:24.110><c> to</c><00:09:24.290><c> keep</c><00:09:24.560><c> up</c><00:09:24.770><c> and</c><00:09:25.870><c> that's</c>
+
+00:09:26.860 --> 00:09:26.870 align:start position:0%
+not be able to keep up and that's
+ 
+
+00:09:26.870 --> 00:09:29.490 align:start position:0%
+not be able to keep up and that's
+basically<00:09:27.530><c> it</c><00:09:27.770><c> when</c><00:09:28.220><c> it</c><00:09:28.340><c> comes</c><00:09:28.580><c> to</c><00:09:28.760><c> tuning</c>
+
+00:09:29.490 --> 00:09:29.500 align:start position:0%
+basically it when it comes to tuning
+ 
+
+00:09:29.500 --> 00:09:32.290 align:start position:0%
+basically it when it comes to tuning
+there<00:09:30.500><c> are</c><00:09:30.800><c> a</c><00:09:30.830><c> few</c><00:09:31.130><c> other</c><00:09:31.310><c> options</c><00:09:31.820><c> but</c><00:09:32.090><c> these</c>
+
+00:09:32.290 --> 00:09:32.300 align:start position:0%
+there are a few other options but these
+ 
+
+00:09:32.300 --> 00:09:34.210 align:start position:0%
+there are a few other options but these
+are<00:09:32.540><c> the</c><00:09:32.810><c> two</c><00:09:33.110><c> main</c><00:09:33.350><c> options</c><00:09:33.800><c> you</c><00:09:33.950><c> want</c><00:09:34.160><c> to</c>
+
+00:09:34.210 --> 00:09:34.220 align:start position:0%
+are the two main options you want to
+ 
+
+00:09:34.220 --> 00:09:38.130 align:start position:0%
+are the two main options you want to
+look<00:09:34.340><c> at</c><00:09:34.550><c> when</c><00:09:34.790><c> tuning</c><00:09:35.000><c> set</c><00:09:35.330><c> you</c><00:09:35.450><c> see</c>
+
+00:09:38.130 --> 00:09:38.140 align:start position:0%
+ 
+ 
+
+00:09:38.140 --> 00:09:41.100 align:start position:0%
+ 
+to<00:09:38.530><c> enable</c><00:09:38.710><c> logging</c><00:09:39.270><c> I'd</c><00:09:40.270><c> recommend</c><00:09:40.780><c> you</c><00:09:40.930><c> use</c>
+
+00:09:41.100 --> 00:09:41.110 align:start position:0%
+to enable logging I'd recommend you use
+ 
+
+00:09:41.110 --> 00:09:43.680 align:start position:0%
+to enable logging I'd recommend you use
+one<00:09:41.380><c> of</c><00:09:41.410><c> the</c><00:09:41.680><c> following</c><00:09:41.980><c> two</c><00:09:42.040><c> options</c><00:09:42.520><c> X</c><00:09:43.390><c> log</c>
+
+00:09:43.680 --> 00:09:43.690 align:start position:0%
+one of the following two options X log
+ 
+
+00:09:43.690 --> 00:09:46.290 align:start position:0%
+one of the following two options X log
+GC<00:09:44.170><c> will</c><00:09:44.620><c> give</c><00:09:44.800><c> you</c><00:09:45.010><c> basic</c><00:09:45.400><c> logging</c><00:09:46.030><c> with</c><00:09:46.270><c> a</c>
+
+00:09:46.290 --> 00:09:46.300 align:start position:0%
+GC will give you basic logging with a
+ 
+
+00:09:46.300 --> 00:09:49.440 align:start position:0%
+GC will give you basic logging with a
+single<00:09:46.720><c> line</c><00:09:46.900><c> printed</c><00:09:47.410><c> per</c><00:09:47.590><c> GC</c><00:09:48.210><c> this</c><00:09:49.210><c> line</c>
+
+00:09:49.440 --> 00:09:49.450 align:start position:0%
+single line printed per GC this line
+ 
+
+00:09:49.450 --> 00:09:51.510 align:start position:0%
+single line printed per GC this line
+will<00:09:49.720><c> only</c><00:09:49.780><c> provide</c><00:09:50.290><c> high-level</c><00:09:50.980><c> information</c>
+
+00:09:51.510 --> 00:09:51.520 align:start position:0%
+will only provide high-level information
+ 
+
+00:09:51.520 --> 00:09:54.840 align:start position:0%
+will only provide high-level information
+such<00:09:52.510><c> as</c><00:09:52.780><c> why</c><00:09:53.470><c> the</c><00:09:53.530><c> GC</c><00:09:53.980><c> was</c><00:09:54.250><c> triggered</c><00:09:54.640><c> and</c>
+
+00:09:54.840 --> 00:09:54.850 align:start position:0%
+such as why the GC was triggered and
+ 
+
+00:09:54.850 --> 00:09:57.600 align:start position:0%
+such as why the GC was triggered and
+what<00:09:55.120><c> the</c><00:09:55.270><c> heap</c><00:09:55.450><c> size</c><00:09:55.780><c> or</c><00:09:56.500><c> heap</c><00:09:56.830><c> usage</c><00:09:57.310><c> was</c>
+
+00:09:57.600 --> 00:09:57.610 align:start position:0%
+what the heap size or heap usage was
+ 
+
+00:09:57.610 --> 00:10:01.560 align:start position:0%
+what the heap size or heap usage was
+before<00:09:58.180><c> and</c><00:09:58.330><c> after</c><00:09:58.600><c> the</c><00:09:58.720><c> GC</c><00:09:59.430><c> X</c><00:10:00.430><c> log</c><00:10:00.700><c> G</c><00:10:00.940><c> C</c><00:10:01.180><c> star</c>
+
+00:10:01.560 --> 00:10:01.570 align:start position:0%
+before and after the GC X log G C star
+ 
+
+00:10:01.570 --> 00:10:04.280 align:start position:0%
+before and after the GC X log G C star
+will<00:10:02.110><c> give</c><00:10:02.320><c> you</c><00:10:02.560><c> a</c><00:10:02.590><c> more</c><00:10:02.950><c> detailed</c><00:10:03.280><c> logging</c>
+
+00:10:04.280 --> 00:10:04.290 align:start position:0%
+will give you a more detailed logging
+ 
+
+00:10:04.290 --> 00:10:07.650 align:start position:0%
+will give you a more detailed logging
+this<00:10:05.290><c> can</c><00:10:05.560><c> be</c><00:10:05.650><c> useful</c><00:10:05.830><c> when</c><00:10:06.370><c> tuning</c><00:10:06.640><c> or</c><00:10:07.210><c> if</c><00:10:07.450><c> you</c>
+
+00:10:07.650 --> 00:10:07.660 align:start position:0%
+this can be useful when tuning or if you
+ 
+
+00:10:07.660 --> 00:10:09.690 align:start position:0%
+this can be useful when tuning or if you
+just<00:10:07.930><c> want</c><00:10:08.170><c> more</c><00:10:08.500><c> information</c><00:10:09.130><c> on</c><00:10:09.220><c> what's</c>
+
+00:10:09.690 --> 00:10:09.700 align:start position:0%
+just want more information on what's
+ 
+
+00:10:09.700 --> 00:10:12.630 align:start position:0%
+just want more information on what's
+going<00:10:10.000><c> on</c><00:10:10.120><c> under</c><00:10:10.390><c> the</c><00:10:10.450><c> hood</c>
+
+00:10:12.630 --> 00:10:12.640 align:start position:0%
+ 
+ 
+
+00:10:12.640 --> 00:10:15.220 align:start position:0%
+ 
+sadducees<00:10:13.640><c> currently</c><00:10:14.180><c> only</c><00:10:14.390><c> available</c><00:10:14.570><c> on</c>
+
+00:10:15.220 --> 00:10:15.230 align:start position:0%
+sadducees currently only available on
+ 
+
+00:10:15.230 --> 00:10:19.000 align:start position:0%
+sadducees currently only available on
+linux<00:10:15.590><c> x86</c><00:10:16.310><c> 64</c><00:10:16.760><c> bit</c><00:10:17.800><c> additional</c><00:10:18.800><c> platforms</c>
+
+00:10:19.000 --> 00:10:19.010 align:start position:0%
+linux x86 64 bit additional platforms
+ 
+
+00:10:19.010 --> 00:10:21.310 align:start position:0%
+linux x86 64 bit additional platforms
+might<00:10:19.700><c> be</c><00:10:20.000><c> supported</c><00:10:20.540><c> in</c><00:10:20.600><c> the</c><00:10:20.690><c> future</c><00:10:20.720><c> if</c>
+
+00:10:21.310 --> 00:10:21.320 align:start position:0%
+might be supported in the future if
+ 
+
+00:10:21.320 --> 00:10:25.050 align:start position:0%
+might be supported in the future if
+there<00:10:21.770><c> is</c><00:10:21.860><c> enough</c><00:10:22.220><c> demand</c><00:10:22.400><c> for</c><00:10:22.820><c> them</c>
+
+00:10:25.050 --> 00:10:25.060 align:start position:0%
+ 
+ 
+
+00:10:25.060 --> 00:10:28.360 align:start position:0%
+ 
+so<00:10:26.060><c> to</c><00:10:26.120><c> summarize</c><00:10:26.660><c> said</c><00:10:27.560><c> you</c><00:10:27.680><c> see</c><00:10:27.860><c> offers</c><00:10:28.190><c> low</c>
+
+00:10:28.360 --> 00:10:28.370 align:start position:0%
+so to summarize said you see offers low
+ 
+
+00:10:28.370 --> 00:10:30.700 align:start position:0%
+so to summarize said you see offers low
+latency<00:10:28.880><c> with</c><00:10:29.390><c> the</c><00:10:29.570><c> post</c><00:10:29.810><c> time</c><00:10:30.080><c> staying</c><00:10:30.470><c> below</c>
+
+00:10:30.700 --> 00:10:30.710 align:start position:0%
+latency with the post time staying below
+ 
+
+00:10:30.710 --> 00:10:33.670 align:start position:0%
+latency with the post time staying below
+10<00:10:31.130><c> milliseconds</c><00:10:31.820><c> its</c><00:10:32.390><c> scalable</c><00:10:33.080><c> so</c><00:10:33.410><c> you</c><00:10:33.500><c> can</c>
+
+00:10:33.670 --> 00:10:33.680 align:start position:0%
+10 milliseconds its scalable so you can
+ 
+
+00:10:33.680 --> 00:10:36.220 align:start position:0%
+10 milliseconds its scalable so you can
+have<00:10:33.890><c> a</c><00:10:34.130><c> huge</c><00:10:34.490><c> heap</c><00:10:34.790><c> without</c><00:10:35.180><c> affecting</c><00:10:35.930><c> the</c>
+
+00:10:36.220 --> 00:10:36.230 align:start position:0%
+have a huge heap without affecting the
+ 
+
+00:10:36.230 --> 00:10:41.260 align:start position:0%
+have a huge heap without affecting the
+GC<00:10:36.530><c> post</c><00:10:36.740><c> times</c><00:10:37.090><c> it's</c><00:10:38.090><c> easy</c><00:10:38.510><c> to</c><00:10:38.750><c> tune</c><00:10:38.990><c> and</c><00:10:40.270><c> it's</c>
+
+00:10:41.260 --> 00:10:41.270 align:start position:0%
+GC post times it's easy to tune and it's
+ 
+
+00:10:41.270 --> 00:10:46.270 align:start position:0%
+GC post times it's easy to tune and it's
+available<00:10:41.510><c> in</c><00:10:41.990><c> JDK</c><00:10:42.530><c> 11</c><00:10:44.860><c> you</c><00:10:45.860><c> can</c><00:10:46.010><c> find</c>
+
+00:10:46.270 --> 00:10:46.280 align:start position:0%
+available in JDK 11 you can find
+ 
+
+00:10:46.280 --> 00:10:47.980 align:start position:0%
+available in JDK 11 you can find
+additional<00:10:46.460><c> information</c><00:10:47.270><c> on</c><00:10:47.390><c> that</c><00:10:47.450><c> you</c><00:10:47.780><c> see</c>
+
+00:10:47.980 --> 00:10:47.990 align:start position:0%
+additional information on that you see
+ 
+
+00:10:47.990 --> 00:10:53.570 align:start position:0%
+additional information on that you see
+on<00:10:48.290><c> the</c><00:10:48.830><c> open</c><00:10:49.280><c> JDK</c><00:10:49.430><c> wiki</c>
+
+00:10:53.570 --> 00:10:53.580 align:start position:0%
+ 
+ 
+
+00:10:53.580 --> 00:10:57.380 align:start position:0%
+ 
+download<00:10:54.060><c> JDK</c><00:10:54.570><c> 11</c><00:10:54.900><c> today</c><00:10:55.020><c> at</c><00:10:55.440><c> Oracle</c><00:10:56.250><c> comm</c><00:10:56.940><c> /</c>
+
+00:10:57.380 --> 00:10:57.390 align:start position:0%
+download JDK 11 today at Oracle comm /
+ 
+
+00:10:57.390 --> 00:11:00.320 align:start position:0%
+download JDK 11 today at Oracle comm /
+Java<00:10:58.020><c> download</c><00:10:58.200><c> and</c><00:10:58.730><c> if</c><00:10:59.730><c> you're</c><00:10:59.880><c> interested</c>
+
+00:11:00.320 --> 00:11:00.330 align:start position:0%
+Java download and if you're interested
+ 
+
+00:11:00.330 --> 00:11:02.660 align:start position:0%
+Java download and if you're interested
+in<00:11:00.390><c> participating</c><00:11:00.840><c> in</c><00:11:01.350><c> open</c><00:11:01.590><c> JDK</c><00:11:01.920><c> development</c>
+
+00:11:02.660 --> 00:11:02.670 align:start position:0%
+in participating in open JDK development
+ 
+
+00:11:02.670 --> 00:11:06.320 align:start position:0%
+in participating in open JDK development
+go<00:11:03.210><c> to</c><00:11:03.270><c> open</c><00:11:03.960><c> JDK</c><00:11:04.130><c> java.net</c><00:11:05.130><c> or</c><00:11:05.790><c> you</c><00:11:06.120><c> can</c>
+
+00:11:06.320 --> 00:11:06.330 align:start position:0%
+go to open JDK java.net or you can
+ 
+
+00:11:06.330 --> 00:11:08.390 align:start position:0%
+go to open JDK java.net or you can
+follow<00:11:06.570><c> us</c><00:11:06.780><c> on</c><00:11:07.080><c> Twitter</c><00:11:07.440><c> for</c><00:11:08.010><c> news</c><00:11:08.370><c> and</c>
+
+00:11:08.390 --> 00:11:08.400 align:start position:0%
+follow us on Twitter for news and
+ 
+
+00:11:08.400 --> 00:11:11.890 align:start position:0%
+follow us on Twitter for news and
+updates<00:11:09.530><c> thanks</c><00:11:10.530><c> for</c><00:11:10.680><c> watching</c>
+
+00:11:11.890 --> 00:11:11.900 align:start position:0%
+updates thanks for watching
+ 
+
+00:11:11.900 --> 00:11:16.039 align:start position:0%
+updates thanks for watching
+[Music]
+

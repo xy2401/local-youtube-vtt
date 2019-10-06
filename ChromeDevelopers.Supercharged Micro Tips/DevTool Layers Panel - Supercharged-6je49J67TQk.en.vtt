@@ -1,0 +1,126 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.062
+[MUSIC PLAYING]
+
+00:00:03.062 --> 00:00:05.520
+SURMA: From time to time, we
+have built some fairly complex
+
+00:00:05.520 --> 00:00:07.740
+animations on "Supercharged"--
+some might even
+
+00:00:07.740 --> 00:00:09.780
+say unnecessarily complex.
+
+00:00:09.780 --> 00:00:11.790
+So for example, do you
+remember this flipswitch
+
+00:00:11.790 --> 00:00:13.710
+we built at the
+Polymer Summit 2016?
+
+00:00:13.710 --> 00:00:15.450
+It looks pretty neat, right?
+
+00:00:15.450 --> 00:00:17.022
+But what is actually happening?
+
+00:00:17.022 --> 00:00:19.230
+Whenever you find one of
+these animations on the web,
+
+00:00:19.230 --> 00:00:22.150
+it can be interesting to see
+how the animation was done,
+
+00:00:22.150 --> 00:00:23.880
+but sometimes the
+code is obfuscated,
+
+00:00:23.880 --> 00:00:27.250
+and it is not really obvious to
+see what is actually happening
+
+00:00:27.250 --> 00:00:28.920
+and what is just slight of hand.
+
+00:00:28.920 --> 00:00:30.240
+Enter DevTools.
+
+00:00:30.240 --> 00:00:32.910
+If you open DevTools, you
+can open the context menu
+
+00:00:32.910 --> 00:00:36.132
+on the right and take a
+look at the more tools menu.
+
+00:00:36.132 --> 00:00:37.590
+There's a couple
+of things in there
+
+00:00:37.590 --> 00:00:40.020
+that you might not
+know DevTools had.
+
+00:00:40.020 --> 00:00:42.420
+One of them is the layers panel.
+
+00:00:42.420 --> 00:00:45.540
+Set the animation speed to
+10% and adjust the perspective
+
+00:00:45.540 --> 00:00:48.030
+on the layers panel, so you
+can see the individual layers
+
+00:00:48.030 --> 00:00:49.140
+from the side.
+
+00:00:49.140 --> 00:00:51.990
+If you now play the animation,
+it becomes crystal clear
+
+00:00:51.990 --> 00:00:54.840
+what animation is happening
+and in what order.
+
+00:00:54.840 --> 00:00:56.066
+Pretty useful, right?
+
+00:00:56.066 --> 00:00:56.940
+So there you have it.
+
+00:00:56.940 --> 00:00:59.130
+Some of the less discoverable
+features in DevTools
+
+00:00:59.130 --> 00:01:01.080
+can prove quite useful.
+
+00:01:01.080 --> 00:01:02.972
+Thanks for watching,
+and see you next time.
+
+00:01:02.972 --> 00:01:05.804
+[MUSIC PLAYING]
+
+00:01:09.120 --> 00:01:09.990
+One more?
+
+00:01:09.990 --> 00:01:11.280
+[INAUDIBLE] one more?
+
+00:01:14.540 --> 00:01:16.790
+OK, so the deal is I need
+you to subscribe or watch
+
+00:01:16.790 --> 00:01:20.380
+the latest "Supercharged" video,
+or they won't let me go home.
+

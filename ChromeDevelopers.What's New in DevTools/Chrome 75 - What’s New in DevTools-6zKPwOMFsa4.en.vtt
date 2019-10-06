@@ -1,0 +1,513 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.325
+[MUSIC PLAYING]
+
+00:00:05.427 --> 00:00:06.260
+KAYCE BASQUES: Hola!
+
+00:00:06.260 --> 00:00:10.320
+Here's what's new in
+DevTools in Chrome 75.
+
+00:00:10.320 --> 00:00:12.510
+When autocompleting
+CSS properties
+
+00:00:12.510 --> 00:00:15.330
+that take functions as
+values, DevTools now
+
+00:00:15.330 --> 00:00:18.480
+autocompletes the
+meaningful values.
+
+00:00:18.480 --> 00:00:20.340
+Back in an older
+version of Chrome,
+
+00:00:20.340 --> 00:00:23.580
+when I add a filter property
+to document that body
+
+00:00:23.580 --> 00:00:25.920
+and browse the
+autocomplete values,
+
+00:00:25.920 --> 00:00:29.100
+I don't see any changes, even
+though the DOM tree shows me
+
+00:00:29.100 --> 00:00:32.800
+that the property is being
+updated in real time.
+
+00:00:32.800 --> 00:00:36.690
+That's because each of these
+values is actually a function.
+
+00:00:36.690 --> 00:00:41.280
+For example, to blur a, page I
+need to pass something like 5px
+
+00:00:41.280 --> 00:00:43.110
+as an argument.
+
+00:00:43.110 --> 00:00:46.410
+As of Chrome 75, when I
+add the filter property
+
+00:00:46.410 --> 00:00:48.600
+and browse the
+autocomplete values,
+
+00:00:48.600 --> 00:00:51.510
+I now see how each value
+affects the styling,
+
+00:00:51.510 --> 00:00:53.820
+because DevTools is
+supplying default
+
+00:00:53.820 --> 00:00:55.020
+arguments for each function.
+
+00:00:57.540 --> 00:01:00.120
+When you want to delete
+all site storage data,
+
+00:01:00.120 --> 00:01:03.150
+you can now do so
+from the Command Menu.
+
+00:01:03.150 --> 00:01:06.480
+Previously, the only easy
+way to clear all site data
+
+00:01:06.480 --> 00:01:08.980
+was to open the
+application panel,
+
+00:01:08.980 --> 00:01:12.420
+go to the Clear Storage pane,
+select what types of storage
+
+00:01:12.420 --> 00:01:16.510
+to delete, then click the
+Clear Site Data button.
+
+00:01:16.510 --> 00:01:19.800
+Now, you can clear site
+data from the Command Menu.
+
+00:01:19.800 --> 00:01:24.420
+Open the main menu, click
+Run Command, type Clear,
+
+00:01:24.420 --> 00:01:27.030
+select the Clear
+Site Data command,
+
+00:01:27.030 --> 00:01:29.850
+then press Enter
+to run the command.
+
+00:01:29.850 --> 00:01:32.820
+You can control what data
+gets saved or deleted
+
+00:01:32.820 --> 00:01:37.710
+by unchecking or checking boxes
+in the Clear Storage pane.
+
+00:01:37.710 --> 00:01:39.990
+When you've got an
+IndexedDB database
+
+00:01:39.990 --> 00:01:41.760
+from a third party
+on your page, you
+
+00:01:41.760 --> 00:01:44.310
+can now inspect that database.
+
+00:01:44.310 --> 00:01:49.350
+In this demo, I'm just embedding
+MDN'S IDB demo in an iframe.
+
+00:01:49.350 --> 00:01:54.180
+I'll set note title to tony
+and note text to good cat,
+
+00:01:54.180 --> 00:01:56.610
+and then click Create New Note.
+
+00:01:56.610 --> 00:01:58.320
+On this older version
+of Chrome, when
+
+00:01:58.320 --> 00:02:00.960
+I go to the application
+panel and then open
+
+00:02:00.960 --> 00:02:05.610
+the IndexedDB pane to inspect
+the database, I see nothing.
+
+00:02:05.610 --> 00:02:09.000
+On Chrome 75, after
+creating the same note,
+
+00:02:09.000 --> 00:02:12.330
+I see the database as expected.
+
+00:02:12.330 --> 00:02:15.870
+Also new in Chrome 75,
+when inspecting databases,
+
+00:02:15.870 --> 00:02:18.120
+DevTools now tells
+you the total number
+
+00:02:18.120 --> 00:02:21.690
+of items in that database.
+
+00:02:21.690 --> 00:02:25.170
+When you want to view a network
+resource's compressed size
+
+00:02:25.170 --> 00:02:29.100
+versus its uncompressed , size
+you can now do so by hovering
+
+00:02:29.100 --> 00:02:31.470
+over the Size column.
+
+00:02:31.470 --> 00:02:35.190
+Previously, you could only see
+uncompressed resource sizes
+
+00:02:35.190 --> 00:02:37.410
+when using large request rows.
+
+00:02:37.410 --> 00:02:41.220
+For example, after I click
+Use Large Request Rows,
+
+00:02:41.220 --> 00:02:43.770
+I see two values
+in the Size column.
+
+00:02:43.770 --> 00:02:46.350
+The top value represents
+the transfer size,
+
+00:02:46.350 --> 00:02:48.300
+which is the total
+amount of data
+
+00:02:48.300 --> 00:02:50.410
+that was transferred
+over the network,
+
+00:02:50.410 --> 00:02:52.980
+including headers and content.
+
+00:02:52.980 --> 00:02:56.070
+The bottom value represents
+the full, uncompressed size
+
+00:02:56.070 --> 00:02:58.410
+of the resource content.
+
+00:02:58.410 --> 00:03:01.650
+If the top value is much
+smaller than the bottom value,
+
+00:03:01.650 --> 00:03:04.960
+then the server is probably
+using text compression,
+
+00:03:04.960 --> 00:03:08.640
+which is a good practice
+because it speeds up page loads.
+
+00:03:08.640 --> 00:03:11.280
+If the two values are the
+same, or the top value
+
+00:03:11.280 --> 00:03:13.920
+is slightly larger
+than the bottom value,
+
+00:03:13.920 --> 00:03:17.120
+then the resource is
+not being compressed.
+
+00:03:17.120 --> 00:03:20.510
+As of Chrome 75, you no
+longer need large request rows
+
+00:03:20.510 --> 00:03:22.280
+to view this data.
+
+00:03:22.280 --> 00:03:24.710
+First, I'll click Use
+Small Request Rows
+
+00:03:24.710 --> 00:03:26.570
+to go back to the default view.
+
+00:03:26.570 --> 00:03:29.240
+And now, when I hover
+over the Size column,
+
+00:03:29.240 --> 00:03:33.520
+I see the transfer
+size and the resources.
+
+00:03:33.520 --> 00:03:36.400
+Inline breakpoints can now be
+managed from the Breakpoints
+
+00:03:36.400 --> 00:03:37.960
+pane.
+
+00:03:37.960 --> 00:03:41.140
+In this example, I want to
+pause before Map is called.
+
+00:03:41.140 --> 00:03:44.050
+So first, I add a line
+of code breakpoint.
+
+00:03:44.050 --> 00:03:46.810
+Then I click the
+icon next to Map.
+
+00:03:46.810 --> 00:03:49.120
+I don't want to
+pause before props,
+
+00:03:49.120 --> 00:03:52.360
+so I'll click to
+disable that breakpoint.
+
+00:03:52.360 --> 00:03:54.950
+I also want to pause
+before createElement,
+
+00:03:54.950 --> 00:03:58.913
+so I enabled that inline
+breakpoint there as well.
+
+00:03:58.913 --> 00:04:00.580
+In this older version
+of Chrome, there's
+
+00:04:00.580 --> 00:04:02.920
+only one entry in
+the Breakpoints pane,
+
+00:04:02.920 --> 00:04:05.980
+although there really
+should be two, one for Map
+
+00:04:05.980 --> 00:04:08.550
+and one for createElement.
+
+00:04:08.550 --> 00:04:12.090
+Now, after creating the same
+breakpoints in Chrome 75,
+
+00:04:12.090 --> 00:04:16.070
+there's two entries in the
+Breakpoints pane, as expected.
+
+00:04:16.070 --> 00:04:18.529
+By the way, if you ever
+need to disable or delete
+
+00:04:18.529 --> 00:04:20.720
+all breakpoints, just
+right-click the Breakpoints
+
+00:04:20.720 --> 00:04:21.220
+pane.
+
+00:04:24.620 --> 00:04:28.010
+If you prefer a minimal
+UI when inspecting nodes,
+
+00:04:28.010 --> 00:04:31.520
+there is now a setting for
+disabling the detailed tooltip
+
+00:04:31.520 --> 00:04:34.880
+that we introduced in Chrome 73.
+
+00:04:34.880 --> 00:04:38.060
+After I click Inspect and
+hover over this paragraph,
+
+00:04:38.060 --> 00:04:40.760
+I see a tooltip containing
+style information
+
+00:04:40.760 --> 00:04:42.830
+about that paragraph node.
+
+00:04:42.830 --> 00:04:45.560
+If you just want to hide
+the tooltip sometimes,
+
+00:04:45.560 --> 00:04:50.510
+you can hold Control or Command
+on Mac to hide it temporarily.
+
+00:04:50.510 --> 00:04:52.640
+If you want to
+permanently disable it,
+
+00:04:52.640 --> 00:04:54.920
+press F1 to open Settings.
+
+00:04:54.920 --> 00:04:58.350
+Go to the Preferences
+page, if not already open.
+
+00:04:58.350 --> 00:05:01.880
+Go to the Elements section,
+then disable the Show Detailed
+
+00:05:01.880 --> 00:05:05.030
+Inspect Tooltip checkbox.
+
+00:05:05.030 --> 00:05:08.210
+Now, when I hover over
+nodes while in inspect mode,
+
+00:05:08.210 --> 00:05:09.770
+I see a more minimal tooltip.
+
+00:05:12.780 --> 00:05:15.060
+If you navigate DevTools
+with a keyboard,
+
+00:05:15.060 --> 00:05:17.340
+there is now a setting
+to prevent the tab
+
+00:05:17.340 --> 00:05:20.050
+trap in the Sources panel.
+
+00:05:20.050 --> 00:05:22.990
+Right now, my focus is
+on the Elements tab.
+
+00:05:22.990 --> 00:05:26.800
+When I press Control, right
+square bracket, or Command,
+
+00:05:26.800 --> 00:05:30.580
+right square bracket on Mac,
+I navigate to the console.
+
+00:05:30.580 --> 00:05:34.690
+And when I press it again, I
+navigate to the Sources panel.
+
+00:05:34.690 --> 00:05:36.760
+When I try to tab
+out of the editor,
+
+00:05:36.760 --> 00:05:39.430
+it just indents
+the code instead.
+
+00:05:39.430 --> 00:05:42.550
+To fix this, press F1
+to open Settings again.
+
+00:05:42.550 --> 00:05:45.830
+Go to the Preferences
+page, if not already open.
+
+00:05:45.830 --> 00:05:48.700
+Go to the Sources section
+and enable the checkbox
+
+00:05:48.700 --> 00:05:51.910
+for Enable Tab Moves Focus.
+
+00:05:51.910 --> 00:05:54.520
+Now, when I go back
+to the Elements panel
+
+00:05:54.520 --> 00:05:57.670
+and use my keyboard to
+navigate to the Sources panel
+
+00:05:57.670 --> 00:06:00.430
+and then press Tab,
+my focus moves out
+
+00:06:00.430 --> 00:06:02.940
+of the editor as expected.
+
+00:06:02.940 --> 00:06:04.590
+By the way, there's
+been a lot of work
+
+00:06:04.590 --> 00:06:07.290
+recently around making
+DevTools more accessible.
+
+00:06:07.290 --> 00:06:10.350
+Check out Rob's Navigate
+DevTools With Assistive
+
+00:06:10.350 --> 00:06:11.810
+Technology guide to learn more.
+
+00:06:14.720 --> 00:06:18.410
+Here's a bonus tip on how to
+enable the built-in dark theme
+
+00:06:18.410 --> 00:06:21.050
+that we've had since 2016.
+
+00:06:21.050 --> 00:06:24.890
+Press Control-Shift-P or
+Command-Shift-P on Mac
+
+00:06:24.890 --> 00:06:26.990
+to open the Command menu.
+
+00:06:26.990 --> 00:06:29.210
+Type "dark," and
+then press Enter
+
+00:06:29.210 --> 00:06:32.430
+to run the Switch to
+Dark Theme command.
+
+00:06:32.430 --> 00:06:34.790
+You can also access
+this from Settings,
+
+00:06:34.790 --> 00:06:38.060
+Preferences, Appearance, Theme.
+
+00:06:38.060 --> 00:06:40.760
+Thanks for watching, and
+we'll be back for Chrome 76
+
+00:06:40.760 --> 00:06:41.810
+in six weeks.
+
+00:06:41.810 --> 00:06:44.860
+[MUSIC PLAYING]
+

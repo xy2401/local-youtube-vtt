@@ -1,0 +1,658 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.970
+JAKE ARCHIBALD:
+Recently I was asked
+
+00:00:02.970 --> 00:00:07.138
+to write an article about
+the visual viewport API.
+
+00:00:07.138 --> 00:00:08.086
+SURMA: Oh.
+
+00:00:08.086 --> 00:00:12.210
+So I thought of the viewport
+as basically the rectangle
+
+00:00:12.210 --> 00:00:15.090
+off the top of your entire
+document, the subsection
+
+00:00:15.090 --> 00:00:15.970
+that you can see.
+
+00:00:15.970 --> 00:00:16.260
+JAKE ARCHIBALD: Right.
+
+00:00:16.260 --> 00:00:16.400
+SURMA: Right?
+
+00:00:16.400 --> 00:00:17.140
+JAKE ARCHIBALD: Exactly.
+
+00:00:17.140 --> 00:00:17.806
+SURMA: OK, good.
+
+00:00:17.806 --> 00:00:20.400
+JAKE ARCHIBALD: And that was
+kind of how things started on
+
+00:00:20.400 --> 00:00:21.499
+mobile as well.
+
+00:00:21.499 --> 00:00:24.040
+We had that, you know, the idea
+of a whole document, and then
+
+00:00:24.040 --> 00:00:26.310
+a viewport, which was the
+bit you were looking at.
+
+00:00:26.310 --> 00:00:30.150
+But what Apple decided is
+to have this extra viewport.
+
+00:00:30.150 --> 00:00:31.740
+So when you pinch
+zoom in, you're
+
+00:00:31.740 --> 00:00:34.420
+now in a viewport (WHISPERING)
+inside the viewport.
+
+00:00:34.420 --> 00:00:35.896
+Du-du-du.
+
+00:00:35.896 --> 00:00:37.770
+SURMA: That's very Inception-y.
+
+00:00:37.770 --> 00:00:38.880
+JAKE ARCHIBALD: It is.
+
+00:00:38.880 --> 00:00:40.275
+SURMA: Uh.
+
+00:00:40.275 --> 00:00:43.150
+JAKE ARCHIBALD: Wah.
+
+00:00:43.150 --> 00:00:46.090
+[MUSICAL SOUND EFFECT]
+
+00:00:47.080 --> 00:00:49.300
+Surma wins again.
+
+00:00:49.300 --> 00:00:51.540
+SURMA: I think my
+job is done here.
+
+00:00:51.540 --> 00:00:53.990
+[MUSIC PLAYING]
+
+00:00:58.280 --> 00:00:59.780
+JAKE ARCHIBALD: So
+here's the thing.
+
+00:00:59.780 --> 00:01:02.320
+And this is how a lot
+of browsers implemented
+
+00:01:02.320 --> 00:01:06.440
+it at first is like
+position fixed items
+
+00:01:06.440 --> 00:01:09.230
+would sit on the
+viewport, right?
+
+00:01:09.230 --> 00:01:11.910
+If you positioned
+something fixed to top,
+
+00:01:11.910 --> 00:01:15.000
+it sits wherever you do
+that on the viewport.
+
+00:01:15.000 --> 00:01:16.750
+So you're scrolling
+along, it stays fixed.
+
+00:01:16.750 --> 00:01:18.373
+SURMA: So if you zoom in, it
+would still stick to the top
+
+00:01:18.373 --> 00:01:18.660
+instead of--
+
+00:01:18.660 --> 00:01:20.120
+JAKE ARCHIBALD: It gets bigger.
+
+00:01:20.120 --> 00:01:22.520
+And, you know,
+eventually you can't--
+
+00:01:22.520 --> 00:01:24.750
+your positioned, fixed
+items, if you have them--
+
+00:01:24.750 --> 00:01:24.820
+SURMA: Just cover--
+
+00:01:24.820 --> 00:01:26.278
+JAKE ARCHIBALD:
+Are now taking up--
+
+00:01:26.278 --> 00:01:27.570
+right, the whole screen.
+
+00:01:27.570 --> 00:01:29.480
+And this is something
+that I think
+
+00:01:29.480 --> 00:01:34.115
+Apple pioneered is the idea
+of adding multiple viewports.
+
+00:01:34.115 --> 00:01:36.770
+And the names we've given
+them is the layout viewport
+
+00:01:36.770 --> 00:01:37.765
+is the outer one.
+
+00:01:37.765 --> 00:01:41.390
+And that's what's-- that's kind
+of the outer scroll viewport
+
+00:01:41.390 --> 00:01:42.710
+of the document.
+
+00:01:42.710 --> 00:01:45.254
+That's where the position
+fixed items will stick to.
+
+00:01:45.254 --> 00:01:46.670
+And when you pinch
+zoom in, you're
+
+00:01:46.670 --> 00:01:49.080
+now in the visual viewport.
+
+00:01:49.080 --> 00:01:49.580
+SURMA: OK.
+
+00:01:49.580 --> 00:01:52.370
+So it doesn't mean, though,
+that the layout viewport only
+
+00:01:52.370 --> 00:01:53.079
+moves vertically?
+
+00:01:53.079 --> 00:01:55.286
+JAKE ARCHIBALD: No, it can
+move horizontally as well.
+
+00:01:55.286 --> 00:01:57.700
+SURMA: Because it can still
+have a layout that's wider
+
+00:01:57.700 --> 00:01:58.940
+than your layout viewport.
+
+00:01:58.940 --> 00:02:00.310
+So you can still
+move both directions.
+
+00:02:00.310 --> 00:02:01.010
+JAKE ARCHIBALD: Absolutely.
+
+00:02:01.010 --> 00:02:01.280
+Yeah.
+
+00:02:01.280 --> 00:02:01.660
+SURMA: Yeah, OK.
+
+00:02:01.660 --> 00:02:03.826
+JAKE ARCHIBALD: You can
+think of the layout viewport
+
+00:02:03.826 --> 00:02:07.330
+as being the same as the visual
+viewport when you're zoomed out
+
+00:02:07.330 --> 00:02:08.979
+as far as you can go.
+
+00:02:08.979 --> 00:02:13.090
+One of the problems that a lot
+of mobile browsers had is they
+
+00:02:13.090 --> 00:02:17.910
+couldn't decide which viewport
+the value should be for.
+
+00:02:17.910 --> 00:02:24.300
+So one of these ones is
+getBoundingClientRect.
+
+00:02:24.300 --> 00:02:25.260
+Right?
+
+00:02:25.260 --> 00:02:26.220
+SURMA: Yes, I see.
+
+00:02:26.220 --> 00:02:28.380
+That would be a problem
+because usually those
+
+00:02:28.380 --> 00:02:31.000
+are the coordinates of the
+rectangle of the object
+
+00:02:31.000 --> 00:02:34.260
+that you're calling that
+function on "on screen,"
+
+00:02:34.260 --> 00:02:36.285
+but now "on screen," right?
+
+00:02:36.285 --> 00:02:37.410
+JAKE ARCHIBALD: Aha, right.
+
+00:02:37.410 --> 00:02:39.300
+And most browsers agreed
+that that was going
+
+00:02:39.300 --> 00:02:41.429
+to be to the layout viewport.
+
+00:02:41.429 --> 00:02:42.720
+So pinch zooming didn't matter.
+
+00:02:42.720 --> 00:02:44.235
+SURMA: I would tend to agree.
+
+00:02:44.235 --> 00:02:45.780
+JAKE ARCHIBALD: Right.
+
+00:02:45.780 --> 00:02:51.260
+But then most browsers
+also agreed that scroll top
+
+00:02:51.260 --> 00:02:55.006
+would mean the visual viewport.
+
+00:02:55.006 --> 00:02:55.760
+SURMA: Really?
+
+00:02:55.760 --> 00:02:56.676
+JAKE ARCHIBALD: Right.
+
+00:02:56.676 --> 00:02:57.837
+Yeah, exactly.
+
+00:02:57.837 --> 00:02:58.420
+And this had--
+
+00:02:58.420 --> 00:02:59.870
+SURMA: I would have seen
+that the visual viewport's
+
+00:02:59.870 --> 00:03:02.080
+like a complete
+abstract [INAUDIBLE]..
+
+00:03:02.080 --> 00:03:04.600
+Layout viewport implies layout.
+
+00:03:04.600 --> 00:03:06.910
+And then the visual
+viewport is just
+
+00:03:06.910 --> 00:03:11.250
+basically a visual trimming
+of whatever you laid out.
+
+00:03:11.250 --> 00:03:12.250
+JAKE ARCHIBALD: Exactly.
+
+00:03:12.250 --> 00:03:15.460
+And that's what browsers
+are now trying to do.
+
+00:03:15.460 --> 00:03:16.400
+SURMA: Yes.
+
+00:03:16.400 --> 00:03:16.780
+JAKE ARCHIBALD: They're
+trying to get to-- yes,
+
+00:03:16.780 --> 00:03:18.406
+you've come up with
+the correct answer.
+
+00:03:18.406 --> 00:03:19.696
+Unfortunately, you're too late.
+
+00:03:19.696 --> 00:03:22.300
+Other people already got
+there and are implementing it.
+
+00:03:22.300 --> 00:03:26.550
+And this is kind of an agreement
+between Chrome and Apple,
+
+00:03:26.550 --> 00:03:29.080
+and others are agreeing as well.
+
+00:03:29.080 --> 00:03:32.080
+So one of the things you would
+do with getBoundingClientRect
+
+00:03:32.080 --> 00:03:34.297
+is you didn't want that
+position within the viewport.
+
+00:03:34.297 --> 00:03:36.130
+You wanted the position
+within the document.
+
+00:03:36.130 --> 00:03:37.963
+SURMA: I was just about
+to say, and then you
+
+00:03:37.963 --> 00:03:40.570
+need both scroll top and
+getBoundingClientRect
+
+00:03:40.570 --> 00:03:42.790
+to be layout viewport
+because then you
+
+00:03:42.790 --> 00:03:44.170
+can just add the two up--
+
+00:03:44.170 --> 00:03:44.410
+JAKE ARCHIBALD: Right.
+
+00:03:44.410 --> 00:03:46.330
+SURMA: And find the position
+within the document, which
+
+00:03:46.330 --> 00:03:48.454
+is super important, which
+I just recently ran into.
+
+00:03:48.454 --> 00:03:50.410
+Because sometimes
+you want an element
+
+00:03:50.410 --> 00:03:55.947
+to detach from however it's laid
+out and position it absolutely
+
+00:03:55.947 --> 00:03:57.155
+but relative to the document.
+
+00:03:57.155 --> 00:03:57.545
+JAKE ARCHIBALD: Right.
+
+00:03:57.545 --> 00:03:58.985
+Because you want to do an
+animation or something.
+
+00:03:58.985 --> 00:03:59.610
+SURMA: Exactly.
+
+00:03:59.610 --> 00:04:02.360
+And that's why you need to be
+able to do that kind of math.
+
+00:04:02.360 --> 00:04:05.540
+I guess if we had
+chosen the other way,
+
+00:04:05.540 --> 00:04:07.430
+it's all relative to
+the visual viewport.
+
+00:04:07.430 --> 00:04:09.170
+It would have
+probably added some
+
+00:04:09.170 --> 00:04:12.579
+calls to get to do the
+calculations in there,
+
+00:04:12.579 --> 00:04:14.120
+but that's unnecessarily
+complicated.
+
+00:04:14.120 --> 00:04:15.710
+So I'm really happy
+they went that way.
+
+00:04:15.710 --> 00:04:17.710
+JAKE ARCHIBALD: But the
+web is full of this code
+
+00:04:17.710 --> 00:04:20.269
+now that is doing that
+getBoundingClientRect
+
+00:04:20.269 --> 00:04:23.465
+plus scroll top, which breaks
+as soon as you pinch zoom in.
+
+00:04:23.465 --> 00:04:24.090
+SURMA: Oh, yes.
+
+00:04:24.090 --> 00:04:24.200
+True.
+
+00:04:24.200 --> 00:04:24.980
+We would have broken the web.
+
+00:04:24.980 --> 00:04:26.270
+JAKE ARCHIBALD: Yeah, exactly.
+
+00:04:26.270 --> 00:04:30.580
+So this is going to-- this move
+to making everything the layout
+
+00:04:30.580 --> 00:04:33.470
+viewport is actually starting
+to fix existing code, which
+
+00:04:33.470 --> 00:04:34.115
+is really nice.
+
+00:04:34.115 --> 00:04:34.615
+SURMA: Nice.
+
+00:04:34.615 --> 00:04:35.114
+Yeah.
+
+00:04:35.114 --> 00:04:37.340
+JAKE ARCHIBALD: So the
+idea is, like you say, make
+
+00:04:37.340 --> 00:04:40.550
+the pinch zooming thing
+pretty much entirely
+
+00:04:40.550 --> 00:04:42.380
+transparent-- like
+not something that is
+
+00:04:42.380 --> 00:04:45.611
+reflected in any web APIs.
+
+00:04:45.611 --> 00:04:47.420
+SURMA: Is it exposed in any way?
+
+00:04:47.420 --> 00:04:49.570
+Can I figure out if
+the user is zoomed in?
+
+00:04:49.570 --> 00:04:52.290
+JAKE ARCHIBALD: So that's what
+the visual viewport API is for.
+
+00:04:52.290 --> 00:04:53.700
+SURMA: Ha.
+
+00:04:53.700 --> 00:04:56.967
+[LAUGHING]
+
+00:04:56.967 --> 00:04:57.800
+JAKE ARCHIBALD: Yes.
+
+00:04:57.800 --> 00:04:59.660
+That is what the visual
+viewport API is for.
+
+00:04:59.660 --> 00:05:01.205
+And it is basically--
+the idea is
+
+00:05:01.205 --> 00:05:03.080
+that this is going to
+be the only place where
+
+00:05:03.080 --> 00:05:03.980
+that is exposed.
+
+00:05:03.980 --> 00:05:06.790
+And it will tell you
+the position and scale
+
+00:05:06.790 --> 00:05:09.250
+of the visual viewport relative
+to the layout viewport.
+
+00:05:09.250 --> 00:05:11.083
+I think one of the
+things it would be useful
+
+00:05:11.083 --> 00:05:13.870
+for is when the user zooms in,
+get rid of all of the position
+
+00:05:13.870 --> 00:05:16.660
+fixed stuff because that is
+kind of getting in the way--
+
+00:05:16.660 --> 00:05:19.414
+unless that is what the user's
+zooming in on, in which case
+
+00:05:19.414 --> 00:05:20.330
+that will be annoying.
+
+00:05:20.330 --> 00:05:21.800
+SURMA: I mean it
+just now landed,
+
+00:05:21.800 --> 00:05:24.127
+so I'm assuming
+some best practice
+
+00:05:24.127 --> 00:05:26.210
+and explorations are going
+to start happening soon
+
+00:05:26.210 --> 00:05:27.080
+around that.
+
+00:05:27.080 --> 00:05:27.955
+JAKE ARCHIBALD: Yeah.
+
+00:05:27.955 --> 00:05:30.440
+And I think it's one
+of those extensible web
+
+00:05:30.440 --> 00:05:33.230
+things where it's like
+it's information we have.
+
+00:05:33.230 --> 00:05:34.860
+We should be giving
+developers it
+
+00:05:34.860 --> 00:05:34.930
+and see what they
+come up with it.
+
+00:05:34.930 --> 00:05:36.638
+SURMA: And you can
+use it if you need it.
+
+00:05:36.638 --> 00:05:39.200
+If not, everything's just going
+to behave the same, or better
+
+00:05:39.200 --> 00:05:39.940
+now, I guess.
+
+00:05:39.940 --> 00:05:40.260
+JAKE ARCHIBALD: Yeah.
+
+00:05:40.260 --> 00:05:41.960
+I mean even to something
+like analytics.
+
+00:05:41.960 --> 00:05:43.632
+So you could, you
+know, find out where
+
+00:05:43.632 --> 00:05:44.840
+your users are pinch zooming.
+
+00:05:44.840 --> 00:05:47.800
+You might find on one particular
+page, everyone's pinch zooming
+
+00:05:47.800 --> 00:05:48.300
+in.
+
+00:05:48.300 --> 00:05:50.180
+So you can then go and
+investigate and go, oh yeah,
+
+00:05:50.180 --> 00:05:51.846
+these buttons aren't
+great or something.
+
+00:05:51.846 --> 00:05:53.430
+So yeah, that would be one way.
+
+00:05:53.430 --> 00:05:55.994
+But yeah, that's
+the visual viewport.
+
+00:05:55.994 --> 00:05:57.410
+And this is something
+that I think
+
+00:05:57.410 --> 00:06:01.940
+that Apple pioneered is the idea
+of adding multiple viewports.
+
+00:06:01.940 --> 00:06:03.123
+SURMA: Apple pie-oneered?
+
+00:06:05.710 --> 00:06:06.491
+[LAUGHING]
+
+00:06:08.104 --> 00:06:09.020
+JAKE ARCHIBALD: Surma.
+
+00:06:09.020 --> 00:06:09.936
+SURMA: I had to do it.
+
+00:06:09.936 --> 00:06:11.320
+I had to do it.
+

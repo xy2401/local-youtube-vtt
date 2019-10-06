@@ -1,0 +1,487 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.537
+[MUSIC PLAYING]
+
+00:00:03.537 --> 00:00:04.120
+Hey, everyone.
+
+00:00:04.120 --> 00:00:04.390
+What's up?
+
+00:00:04.390 --> 00:00:05.200
+It's Rob Dodson.
+
+00:00:05.200 --> 00:00:06.853
+In today's episode
+of Polycasts, I'm
+
+00:00:06.853 --> 00:00:08.990
+going to show you how to
+dynamically swap around
+
+00:00:08.990 --> 00:00:11.080
+all the content in
+your application using
+
+00:00:11.080 --> 00:00:13.889
+the core pages element,
+so check it out.
+
+00:00:13.889 --> 00:00:15.680
+The hallmark of any
+single-page application
+
+00:00:15.680 --> 00:00:17.480
+is that it doesn't
+refresh the page
+
+00:00:17.480 --> 00:00:19.984
+as the user is navigating
+to different sections.
+
+00:00:19.984 --> 00:00:21.650
+So using the Polymer
+site as an example,
+
+00:00:21.650 --> 00:00:24.312
+you can see that, as I'm
+clicking around the menu items,
+
+00:00:24.312 --> 00:00:25.770
+all the content on
+the page is just
+
+00:00:25.770 --> 00:00:27.610
+sort of instantaneously
+changing.
+
+00:00:27.610 --> 00:00:30.550
+It makes the whole app have this
+really nice, snappy feel to it.
+
+00:00:30.550 --> 00:00:33.720
+Now there's a few ways that
+you can achieve this effect.
+
+00:00:33.720 --> 00:00:35.850
+The most basic, and the
+one that I'll cover today,
+
+00:00:35.850 --> 00:00:39.190
+involves showing and hiding
+different bits of content that
+
+00:00:39.190 --> 00:00:41.490
+are already available
+on the page,
+
+00:00:41.490 --> 00:00:43.200
+basically just telling
+some to display
+
+00:00:43.200 --> 00:00:45.410
+block and others
+to display none.
+
+00:00:45.410 --> 00:00:47.340
+There are other
+strategies which include
+
+00:00:47.340 --> 00:00:50.700
+using Ajax to go talk to your
+server, grab some content,
+
+00:00:50.700 --> 00:00:54.740
+and then inject that back into
+the document or piping data
+
+00:00:54.740 --> 00:00:57.710
+to templates that you already
+have that are on the page
+
+00:00:57.710 --> 00:01:00.552
+and then sort of inflating them.
+
+00:01:00.552 --> 00:01:01.052
+All right.
+
+00:01:01.052 --> 00:01:02.040
+I'm going to cover
+these other two
+
+00:01:02.040 --> 00:01:03.960
+techniques in future
+episodes, but let's start off
+
+00:01:03.960 --> 00:01:05.470
+with a really
+simple example today
+
+00:01:05.470 --> 00:01:08.292
+just switching some
+sections on and off.
+
+00:01:08.292 --> 00:01:10.000
+So here I am in Sublime,
+and I've already
+
+00:01:10.000 --> 00:01:12.080
+gone ahead and set up a
+really simple project.
+
+00:01:12.080 --> 00:01:14.121
+In my bower.json, I've
+included the core elements
+
+00:01:14.121 --> 00:01:16.980
+and installed everything to
+my Bower Components directory.
+
+00:01:16.980 --> 00:01:19.063
+So to get rolling, the
+first thing I'm going to do
+
+00:01:19.063 --> 00:01:21.510
+is open my elements HTML
+file and add the core pages
+
+00:01:21.510 --> 00:01:25.045
+elements so it gets imported.
+
+00:01:25.045 --> 00:01:29.270
+Then in my index HTML file,
+I'll write out a core pages tag,
+
+00:01:29.270 --> 00:01:33.460
+and I'm going to give it
+a selected attribute of 0.
+
+00:01:33.460 --> 00:01:36.300
+I'm also going to go in and
+set some kind of boilerplate
+
+00:01:36.300 --> 00:01:36.986
+content up.
+
+00:01:41.900 --> 00:01:44.390
+Now, the selected attribute
+up here is really important,
+
+00:01:44.390 --> 00:01:46.180
+and the way it works
+is it basically
+
+00:01:46.180 --> 00:01:49.310
+tells core pages which of
+its children to display.
+
+00:01:49.310 --> 00:01:51.750
+It's kind of like an
+index on an array.
+
+00:01:51.750 --> 00:01:54.850
+So this child right here
+is going to be child 0,
+
+00:01:54.850 --> 00:01:58.870
+this child is child 1, and this
+section is going to be child 2.
+
+00:01:58.870 --> 00:02:01.140
+Since I've set
+selected equal to 1,
+
+00:02:01.140 --> 00:02:04.630
+it's going to actually try
+to render this portfolio
+
+00:02:04.630 --> 00:02:06.544
+section down here.
+
+00:02:06.544 --> 00:02:09.639
+If you hop on into Chrome
+and refresh the page,
+
+00:02:09.639 --> 00:02:13.430
+you should see that portfolio
+content showing up right there.
+
+00:02:13.430 --> 00:02:15.712
+But you're not limited
+to using a numeric index.
+
+00:02:15.712 --> 00:02:17.170
+If you give your
+core pages element
+
+00:02:17.170 --> 00:02:19.690
+a value attribute
+instead, you can
+
+00:02:19.690 --> 00:02:23.040
+select any child that
+matches that value attribute.
+
+00:02:25.560 --> 00:02:28.424
+I'm going to set value
+attribute to data category.
+
+00:02:28.424 --> 00:02:30.590
+This is an attribute that
+I've just totally made up.
+
+00:02:30.590 --> 00:02:32.950
+And I'm going to give
+each of these sections
+
+00:02:32.950 --> 00:02:36.730
+a matching data
+category attribute.
+
+00:02:36.730 --> 00:02:39.870
+Now, if I set my selected value
+to contact, what that does
+
+00:02:39.870 --> 00:02:43.320
+is it tells core pages to find
+the child with a matching data
+
+00:02:43.320 --> 00:02:45.130
+category of contact.
+
+00:02:45.130 --> 00:02:46.710
+Looking through our
+sections, we can
+
+00:02:46.710 --> 00:02:50.040
+see that this one right
+down here matches.
+
+00:02:50.040 --> 00:02:53.310
+And so, when we hop over to
+Chrome, refresh the page,
+
+00:02:53.310 --> 00:02:56.620
+we should see our Contact
+section is now displaying.
+
+00:02:56.620 --> 00:02:58.870
+All right, so if you
+recall in the last episode,
+
+00:02:58.870 --> 00:03:01.440
+I wrapped all of my elements
+in an auto-binding template
+
+00:03:01.440 --> 00:03:02.180
+element.
+
+00:03:02.180 --> 00:03:03.800
+Now, we can do the
+same thing here
+
+00:03:03.800 --> 00:03:06.080
+to connect our core
+pages element to a menu.
+
+00:03:06.080 --> 00:03:07.732
+Let's check it out.
+
+00:03:07.732 --> 00:03:10.190
+All right, I've added a little
+bit more markup to our page,
+
+00:03:10.190 --> 00:03:11.980
+so, now we have a
+core drawer panel.
+
+00:03:11.980 --> 00:03:13.360
+It's holding all of our pages.
+
+00:03:13.360 --> 00:03:15.867
+We also have header panels and
+toolbars, a bunch of elements
+
+00:03:15.867 --> 00:03:17.450
+that we've shown in
+previous episodes.
+
+00:03:17.450 --> 00:03:18.824
+And if you missed
+those episodes,
+
+00:03:18.824 --> 00:03:22.440
+we've got links to them
+down in the show notes.
+
+00:03:22.440 --> 00:03:24.250
+First thing I'm going
+do is wrap everything
+
+00:03:24.250 --> 00:03:26.090
+inside of an
+auto-binding template,
+
+00:03:26.090 --> 00:03:30.880
+so I'm going to use that is
+equals auto-binding attribute,
+
+00:03:30.880 --> 00:03:33.440
+grab all my content,
+paste it inside there,
+
+00:03:33.440 --> 00:03:36.040
+and also give my
+template an ID of app,
+
+00:03:36.040 --> 00:03:39.370
+so that way I can refer to
+it later using JavaScript.
+
+00:03:39.370 --> 00:03:42.100
+Next, I'm going to pop open
+my elements HTML file and drop
+
+00:03:42.100 --> 00:03:45.710
+in a core menu and
+core items imports.
+
+00:03:45.710 --> 00:03:48.000
+And back in my index file,
+I'll write out a core menu
+
+00:03:48.000 --> 00:03:49.591
+and populate it with
+items that match
+
+00:03:49.591 --> 00:03:50.715
+all of our page categories.
+
+00:03:55.770 --> 00:03:57.290
+Now comes the magic moment.
+
+00:03:57.290 --> 00:04:00.792
+Because core menu and core pages
+extend the same common parent
+
+00:04:00.792 --> 00:04:02.250
+called core selector,
+it means they
+
+00:04:02.250 --> 00:04:04.475
+can both take advantage
+of value attribute.
+
+00:04:04.475 --> 00:04:06.620
+I'm going to give
+each of my core items
+
+00:04:06.620 --> 00:04:10.990
+a data category that matches
+the core page's data categories,
+
+00:04:10.990 --> 00:04:13.590
+and I can set my selected
+value equal to a scope
+
+00:04:13.590 --> 00:04:18.060
+variable, which I'm just going
+to make up and call page.
+
+00:04:18.060 --> 00:04:20.050
+Then I can go down to
+my core pages section
+
+00:04:20.050 --> 00:04:22.600
+and give it a scope variable
+for its selected value,
+
+00:04:22.600 --> 00:04:24.130
+also called page.
+
+00:04:24.130 --> 00:04:26.560
+And now, in effect, I've
+linked these two elements,
+
+00:04:26.560 --> 00:04:30.270
+my menu to my pages.
+
+00:04:30.270 --> 00:04:32.324
+If I hop open to Chrome
+and refresh the page,
+
+00:04:32.324 --> 00:04:34.240
+you'll see that as I'm
+clicking my menu items,
+
+00:04:34.240 --> 00:04:37.890
+it's also updating
+the page content.
+
+00:04:37.890 --> 00:04:40.040
+To set a default page,
+I'm going to select
+
+00:04:40.040 --> 00:04:42.300
+the auto-binding template
+in my app JS file
+
+00:04:42.300 --> 00:04:44.820
+and give it an initial
+value for its page variable.
+
+00:04:50.300 --> 00:04:52.395
+I'll just go ahead and
+set page equal to home.
+
+00:04:55.465 --> 00:04:56.840
+Now when I set up
+my application,
+
+00:04:56.840 --> 00:04:59.754
+it's displaying the
+home page by default.
+
+00:04:59.754 --> 00:05:01.170
+All right, now
+that you can change
+
+00:05:01.170 --> 00:05:02.690
+between the different
+states in your application
+
+00:05:02.690 --> 00:05:04.630
+using core pages, you
+can start to think
+
+00:05:04.630 --> 00:05:06.690
+about adding additional
+things like routing.
+
+00:05:06.690 --> 00:05:09.231
+That's exactly what we're going
+to cover in the next episode,
+
+00:05:09.231 --> 00:05:10.270
+so be sure to subscribe.
+
+00:05:10.270 --> 00:05:11.680
+Definitely leave
+comments down below
+
+00:05:11.680 --> 00:05:12.940
+to let us know what you think.
+
+00:05:12.940 --> 00:05:14.689
+As always, thank you
+so much for watching,
+
+00:05:14.689 --> 00:05:16.040
+and I will see you next time.
+
+00:05:16.040 --> 00:05:21.490
+[MUSIC PLAYING]
+

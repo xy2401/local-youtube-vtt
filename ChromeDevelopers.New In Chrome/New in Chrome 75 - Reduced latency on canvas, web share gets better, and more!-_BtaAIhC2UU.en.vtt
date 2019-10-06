@@ -1,0 +1,297 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:02.440
+PETE LEPAGE: There's a
+new way to reduce latency
+
+00:00:02.440 --> 00:00:04.240
+on canvas elements.
+
+00:00:04.240 --> 00:00:07.840
+Web apps can now share files
+to other installed apps using
+
+00:00:07.840 --> 00:00:10.150
+the system-level
+share sheet, and all
+
+00:00:10.150 --> 00:00:13.250
+of our talks from Google I/O
+are on our YouTube channel.
+
+00:00:13.250 --> 00:00:14.140
+I'm Pete LePage.
+
+00:00:14.140 --> 00:00:17.170
+Let's dive in and see what's
+new for developers in Chrome 75.
+
+00:00:17.170 --> 00:00:20.030
+[MUSIC PLAYING]
+
+00:00:20.030 --> 00:00:22.520
+Drawing on-screen with
+the canvas element
+
+00:00:22.520 --> 00:00:26.030
+requires that the page
+synchronizes graphics updates
+
+00:00:26.030 --> 00:00:27.380
+with the DOM.
+
+00:00:27.380 --> 00:00:31.010
+This synchronization can
+sometimes cause latency.
+
+00:00:31.010 --> 00:00:33.650
+For example, in a
+drawing app, latencies
+
+00:00:33.650 --> 00:00:36.170
+longer than 50
+milliseconds can interfere
+
+00:00:36.170 --> 00:00:39.755
+with hand/eye coordination,
+making them difficult to use.
+
+00:00:39.755 --> 00:00:44.120
+The desynchronized hint when
+creating a canvas context
+
+00:00:44.120 --> 00:00:48.620
+uses a different code path that
+bypasses the usual DOM update
+
+00:00:48.620 --> 00:00:49.850
+mechanism.
+
+00:00:49.850 --> 00:00:52.220
+The hint tells
+the system to skip
+
+00:00:52.220 --> 00:00:54.830
+as much compositing as it can.
+
+00:00:54.830 --> 00:00:57.710
+In some cases, the
+canvas's underlying buffer
+
+00:00:57.710 --> 00:01:01.520
+is sent directly to the
+screen's display controller.
+
+00:01:01.520 --> 00:01:05.000
+This eliminates the latency
+that would be caused by using
+
+00:01:05.000 --> 00:01:08.420
+the [? render-compositer ?] cue.
+
+00:01:08.420 --> 00:01:10.890
+Using the desynchronized
+hint is simple.
+
+00:01:10.890 --> 00:01:13.580
+Just add desynchronized
+true to the Options
+
+00:01:13.580 --> 00:01:15.660
+object when creating the canvas.
+
+00:01:15.660 --> 00:01:18.620
+Check out Joe's article,
+"Low-Latency Rendering with
+
+00:01:18.620 --> 00:01:21.390
+the Desynchronized
+Hint" for more details,
+
+00:01:21.390 --> 00:01:24.710
+including how to do
+feature detection for it.
+
+00:01:24.710 --> 00:01:29.210
+The Web Share API allows you to
+plug in to the system's share
+
+00:01:29.210 --> 00:01:31.490
+service provided
+by the OS, making
+
+00:01:31.490 --> 00:01:35.840
+it easy to share web pages and
+apps with other installed apps
+
+00:01:35.840 --> 00:01:37.610
+on the user's device.
+
+00:01:37.610 --> 00:01:40.640
+In Chrome 75, the
+Web Share API now
+
+00:01:40.640 --> 00:01:42.890
+supports the sharing of files.
+
+00:01:42.890 --> 00:01:45.020
+I'm particularly
+excited about this
+
+00:01:45.020 --> 00:01:47.810
+because it makes it way
+easier for apps to share
+
+00:01:47.810 --> 00:01:50.010
+photos, videos, and more.
+
+00:01:50.010 --> 00:01:53.750
+In fact, [INAUDIBLE] is adding
+support for this to share files
+
+00:01:53.750 --> 00:01:56.270
+once you finish
+compressing them.
+
+00:01:56.270 --> 00:01:58.040
+It's best to use
+feature detection
+
+00:01:58.040 --> 00:02:00.950
+to see if the Web
+Share API is supported,
+
+00:02:00.950 --> 00:02:03.350
+and fall back to your
+traditional mechanism
+
+00:02:03.350 --> 00:02:04.730
+if it's not.
+
+00:02:04.730 --> 00:02:07.250
+And you can use
+Navigator.canShare
+
+00:02:07.250 --> 00:02:09.949
+to check to see if file
+sharing is supported.
+
+00:02:09.949 --> 00:02:13.920
+For now, you can share
+audio files, images, videos,
+
+00:02:13.920 --> 00:02:17.470
+and text documents, but that
+may change in the future.
+
+00:02:17.470 --> 00:02:21.470
+If Navigator.canShare returns
+true, sharing of those files
+
+00:02:21.470 --> 00:02:24.650
+is supported, so you
+can call Navigator.share
+
+00:02:24.650 --> 00:02:26.810
+and pass an object
+with the array of files
+
+00:02:26.810 --> 00:02:28.490
+that you want to share.
+
+00:02:28.490 --> 00:02:30.680
+Chrome will open the
+system share sheet
+
+00:02:30.680 --> 00:02:34.550
+and give you a list of installed
+apps that you can share to.
+
+00:02:34.550 --> 00:02:36.590
+Check out the
+article "Share Files
+
+00:02:36.590 --> 00:02:39.110
+with Web Share" for
+complete details.
+
+00:02:39.110 --> 00:02:40.940
+If you didn't make it
+to I/O, or maybe you
+
+00:02:40.940 --> 00:02:42.830
+did and didn't
+see all the talks,
+
+00:02:42.830 --> 00:02:44.510
+they're all up on
+our YouTube channel,
+
+00:02:44.510 --> 00:02:47.090
+or by going to the
+link on-screen.
+
+00:02:47.090 --> 00:02:50.390
+Tom and I presented "Unlocking
+New Capabilities for the Web,"
+
+00:02:50.390 --> 00:02:52.880
+covering some of the
+amazing new capabilities
+
+00:02:52.880 --> 00:02:56.000
+that are landing in
+browsers this year.
+
+00:02:56.000 --> 00:02:58.880
+[? Addy ?] and Katie covered
+some cool performance tips
+
+00:02:58.880 --> 00:03:01.610
+and tricks and speed at scale.
+
+00:03:01.610 --> 00:03:05.430
+Elizabeth and Paul dove into
+some cool DevTools things
+
+00:03:05.430 --> 00:03:09.410
+and demystifying speed tooling,
+and [? Mariko ?] showed us how
+
+00:03:09.410 --> 00:03:12.260
+she and her crew built
+[? Procs ?] to work on any
+
+00:03:12.260 --> 00:03:15.740
+device, from feature phone
+to smartphone to desktop.
+
+00:03:15.740 --> 00:03:17.300
+If you haven't tried
+[? Procs ?] yet,
+
+00:03:17.300 --> 00:03:19.880
+it's a super fun
+Minesweeper clone.
+
+00:03:19.880 --> 00:03:22.310
+Subscribing is the best
+way to stay up-to-date
+
+00:03:22.310 --> 00:03:24.690
+with all the cool stuff
+that we've got going on.
+
+00:03:24.690 --> 00:03:26.090
+So click that button.
+
+00:03:26.090 --> 00:03:29.040
+I'm Pete LePage, and as soon
+as Chrome 76 is released,
+
+00:03:29.040 --> 00:03:33.100
+I'll be right here to tell
+you what's new in Chrome.
+

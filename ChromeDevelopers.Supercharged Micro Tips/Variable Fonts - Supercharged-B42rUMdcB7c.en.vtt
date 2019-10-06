@@ -1,0 +1,138 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.290
+[MUSIC PLAYING]
+
+00:00:03.290 --> 00:00:05.980
+SURMA: Fonts-- let's talk
+some more about fonts.
+
+00:00:05.980 --> 00:00:08.590
+Most designers will use a
+number of different fonts
+
+00:00:08.590 --> 00:00:10.330
+when they're
+designing a website,
+
+00:00:10.330 --> 00:00:13.510
+but will also reuse the same
+font using different weights,
+
+00:00:13.510 --> 00:00:15.250
+widths, or slants.
+
+00:00:15.250 --> 00:00:17.920
+On the web, that usually means
+downloading an additional font
+
+00:00:17.920 --> 00:00:19.540
+file per configuration.
+
+00:00:19.540 --> 00:00:21.790
+And that can add up to
+a few hundred kilobytes
+
+00:00:21.790 --> 00:00:23.200
+quite quickly.
+
+00:00:23.200 --> 00:00:25.630
+And this is where variable
+fonts come into play.
+
+00:00:25.630 --> 00:00:27.370
+With variable fonts,
+you can change
+
+00:00:27.370 --> 00:00:29.290
+certain settings of
+a font without having
+
+00:00:29.290 --> 00:00:31.010
+to load a new font file.
+
+00:00:31.010 --> 00:00:32.740
+So for example, using
+the gingham font,
+
+00:00:32.740 --> 00:00:35.320
+I can change both the
+weight and the width
+
+00:00:35.320 --> 00:00:38.539
+of the font using the font
+variations headings attribute.
+
+00:00:38.539 --> 00:00:40.330
+Some settings-- that
+is, width and weight--
+
+00:00:40.330 --> 00:00:43.280
+have standardized abbreviations
+that I'm using here.
+
+00:00:43.280 --> 00:00:45.250
+But fonts can expose
+an arbitrary number
+
+00:00:45.250 --> 00:00:47.140
+of settings for you to change.
+
+00:00:47.140 --> 00:00:48.670
+While it should
+be used with care,
+
+00:00:48.670 --> 00:00:50.260
+you can even animate
+these headings
+
+00:00:50.260 --> 00:00:52.960
+to transition between
+different font layouts.
+
+00:00:52.960 --> 00:00:55.210
+Keep in mind, though, that
+this will cause the browser
+
+00:00:55.210 --> 00:00:58.510
+to relayout and repaint, which
+will become quite expensive
+
+00:00:58.510 --> 00:01:00.392
+really, really quickly.
+
+00:01:00.392 --> 00:01:01.730
+Bye.
+
+00:01:01.730 --> 00:01:03.790
+I've been continuing
+Surma's analysis.
+
+00:01:03.790 --> 00:01:05.890
+And a new graph just came in.
+
+00:01:05.890 --> 00:01:07.420
+If you prefer the
+yellow line, you
+
+00:01:07.420 --> 00:01:09.220
+should be subscribing
+to this channel.
+
+00:01:09.220 --> 00:01:10.960
+If you prefer the
+green line, you
+
+00:01:10.960 --> 00:01:13.269
+should be watching the
+latest "Supercharged" video.
+
+00:01:13.269 --> 00:01:14.810
+But really, these
+lines mean nothing.
+
+00:01:14.810 --> 00:01:17.520
+You should just be doing both.
+

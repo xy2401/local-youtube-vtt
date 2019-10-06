@@ -1,0 +1,3400 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:05.059 align:start position:0%
+ 
+OpenJDK<00:00:01.140><c> performance</c><00:00:02.149><c> primarily</c><00:00:03.980><c> so</c><00:00:04.980><c> i've</c>
+
+00:00:05.059 --> 00:00:05.069 align:start position:0%
+OpenJDK performance primarily so i've
+ 
+
+00:00:05.069 --> 00:00:06.170 align:start position:0%
+OpenJDK performance primarily so i've
+been<00:00:05.100><c> doing</c><00:00:05.339><c> a</c><00:00:05.520><c> little</c><00:00:05.609><c> bit</c><00:00:05.819><c> over</c><00:00:05.970><c> the</c><00:00:06.089><c> last</c>
+
+00:00:06.170 --> 00:00:06.180 align:start position:0%
+been doing a little bit over the last
+ 
+
+00:00:06.180 --> 00:00:10.870 align:start position:0%
+been doing a little bit over the last
+couple<00:00:06.299><c> of</c><00:00:06.509><c> years</c><00:00:06.810><c> some</c><00:00:08.090><c> tuning</c><00:00:09.090><c> of</c><00:00:09.210><c> our</c>
+
+00:00:10.870 --> 00:00:10.880 align:start position:0%
+couple of years some tuning of our
+ 
+
+00:00:10.880 --> 00:00:16.150 align:start position:0%
+couple of years some tuning of our
+startup<00:00:11.880><c> of</c><00:00:12.059><c> the</c><00:00:12.269><c> bass</c><00:00:13.139><c> openjdk</c><00:00:14.299><c> experience</c>
+
+00:00:16.150 --> 00:00:16.160 align:start position:0%
+startup of the bass openjdk experience
+ 
+
+00:00:16.160 --> 00:00:17.990 align:start position:0%
+startup of the bass openjdk experience
+before<00:00:17.160><c> I</c><00:00:17.190><c> start</c><00:00:17.580><c> lying</c>
+
+00:00:17.990 --> 00:00:18.000 align:start position:0%
+before I start lying
+ 
+
+00:00:18.000 --> 00:00:20.330 align:start position:0%
+before I start lying
+I<00:00:18.119><c> have</c><00:00:18.449><c> to</c><00:00:18.570><c> show</c><00:00:18.690><c> you</c><00:00:18.750><c> this</c><00:00:18.960><c> one</c><00:00:19.230><c> and</c><00:00:19.470><c> then</c>
+
+00:00:20.330 --> 00:00:20.340 align:start position:0%
+I have to show you this one and then
+ 
+
+00:00:20.340 --> 00:00:21.859 align:start position:0%
+I have to show you this one and then
+let's<00:00:21.000><c> let's</c><00:00:21.510><c> go</c>
+
+00:00:21.859 --> 00:00:21.869 align:start position:0%
+let's let's go
+ 
+
+00:00:21.869 --> 00:00:25.750 align:start position:0%
+let's let's go
+so<00:00:22.519><c> the</c><00:00:23.519><c> startup</c><00:00:23.880><c> challenges</c><00:00:24.359><c> that</c><00:00:24.510><c> we</c>
+
+00:00:25.750 --> 00:00:25.760 align:start position:0%
+so the startup challenges that we
+ 
+
+00:00:25.760 --> 00:00:30.650 align:start position:0%
+so the startup challenges that we
+experience<00:00:26.760><c> as</c><00:00:27.140><c> as</c><00:00:28.140><c> Java</c><00:00:28.590><c> users</c><00:00:28.980><c> and</c><00:00:29.160><c> and</c><00:00:29.660><c> JVM</c>
+
+00:00:30.650 --> 00:00:30.660 align:start position:0%
+experience as as Java users and and JVM
+ 
+
+00:00:30.660 --> 00:00:35.510 align:start position:0%
+experience as as Java users and and JVM
+developers<00:00:31.349><c> are</c><00:00:31.650><c> manifold</c><00:00:32.520><c> and</c><00:00:34.160><c> the</c><00:00:35.160><c> open</c><00:00:35.430><c> air</c>
+
+00:00:35.510 --> 00:00:35.520 align:start position:0%
+developers are manifold and the open air
+ 
+
+00:00:35.520 --> 00:00:39.619 align:start position:0%
+developers are manifold and the open air
+decay<00:00:35.790><c> is</c><00:00:36.390><c> optimized</c><00:00:37.050><c> for</c><00:00:38.149><c> peak</c><00:00:39.149><c> performance</c>
+
+00:00:39.619 --> 00:00:39.629 align:start position:0%
+decay is optimized for peak performance
+ 
+
+00:00:39.629 --> 00:00:43.520 align:start position:0%
+decay is optimized for peak performance
+and<00:00:40.879><c> recently</c><00:00:41.879><c> we'd</c><00:00:42.030><c> said</c><00:00:42.270><c> GC</c><00:00:42.690><c> and</c><00:00:42.960><c> others</c><00:00:43.170><c> you</c>
+
+00:00:43.520 --> 00:00:43.530 align:start position:0%
+and recently we'd said GC and others you
+ 
+
+00:00:43.530 --> 00:00:48.590 align:start position:0%
+and recently we'd said GC and others you
+know<00:00:44.239><c> low</c><00:00:45.469><c> low</c><00:00:46.469><c> latency</c><00:00:46.950><c> and</c><00:00:47.450><c> startup</c><00:00:48.450><c> and</c>
+
+00:00:48.590 --> 00:00:48.600 align:start position:0%
+know low low latency and startup and
+ 
+
+00:00:48.600 --> 00:00:51.200 align:start position:0%
+know low low latency and startup and
+footprint<00:00:48.930><c> has</c><00:00:49.020><c> always</c><00:00:49.170><c> been</c><00:00:49.500><c> these</c><00:00:50.120><c> kind</c><00:00:51.120><c> of</c>
+
+00:00:51.200 --> 00:00:51.210 align:start position:0%
+footprint has always been these kind of
+ 
+
+00:00:51.210 --> 00:00:56.810 align:start position:0%
+footprint has always been these kind of
+nice<00:00:52.110><c> to</c><00:00:52.320><c> have</c><00:00:52.500><c> things</c><00:00:54.440><c> that</c><00:00:55.440><c> you</c><00:00:55.860><c> kind</c><00:00:56.730><c> of</c>
+
+00:00:56.810 --> 00:00:56.820 align:start position:0%
+nice to have things that you kind of
+ 
+
+00:00:56.820 --> 00:00:59.389 align:start position:0%
+nice to have things that you kind of
+expect<00:00:56.910><c> in</c><00:00:57.300><c> client</c><00:00:57.690><c> settings</c><00:00:57.899><c> but</c><00:00:58.469><c> the</c><00:00:59.100><c> client</c>
+
+00:00:59.389 --> 00:00:59.399 align:start position:0%
+expect in client settings but the client
+ 
+
+00:00:59.399 --> 00:01:04.009 align:start position:0%
+expect in client settings but the client
+VM<00:00:59.670><c> has</c><00:00:59.850><c> been</c><00:01:00.379><c> drifting</c><00:01:01.379><c> away</c><00:01:01.680><c> from</c><00:01:02.750><c> from</c><00:01:03.750><c> open</c>
+
+00:01:04.009 --> 00:01:04.019 align:start position:0%
+VM has been drifting away from from open
+ 
+
+00:01:04.019 --> 00:01:06.730 align:start position:0%
+VM has been drifting away from from open
+JDK
+
+00:01:06.730 --> 00:01:06.740 align:start position:0%
+ 
+ 
+
+00:01:06.740 --> 00:01:09.560 align:start position:0%
+ 
+interest<00:01:07.740><c> for</c><00:01:08.280><c> some</c><00:01:08.400><c> time</c><00:01:08.580><c> so</c><00:01:09.060><c> startup</c><00:01:09.420><c> is</c>
+
+00:01:09.560 --> 00:01:09.570 align:start position:0%
+interest for some time so startup is
+ 
+
+00:01:09.570 --> 00:01:11.690 align:start position:0%
+interest for some time so startup is
+something<00:01:10.229><c> that</c><00:01:10.350><c> is</c><00:01:10.470><c> often</c><00:01:11.130><c> drawing</c><00:01:11.400><c> and</c>
+
+00:01:11.690 --> 00:01:11.700 align:start position:0%
+something that is often drawing and
+ 
+
+00:01:11.700 --> 00:01:13.460 align:start position:0%
+something that is often drawing and
+drawing<00:01:12.180><c> the</c><00:01:12.390><c> shortest</c><00:01:12.720><c> straw'</c><00:01:13.140><c> when</c><00:01:13.380><c> it</c>
+
+00:01:13.460 --> 00:01:13.470 align:start position:0%
+drawing the shortest straw' when it
+ 
+
+00:01:13.470 --> 00:01:16.340 align:start position:0%
+drawing the shortest straw' when it
+comes<00:01:13.650><c> to</c><00:01:13.890><c> what</c><00:01:14.250><c> to</c><00:01:14.400><c> optimize</c><00:01:14.790><c> what</c><00:01:14.970><c> to</c><00:01:15.350><c> fix</c>
+
+00:01:16.340 --> 00:01:16.350 align:start position:0%
+comes to what to optimize what to fix
+ 
+
+00:01:16.350 --> 00:01:20.179 align:start position:0%
+comes to what to optimize what to fix
+for<00:01:16.590><c> and</c><00:01:17.840><c> the</c><00:01:18.840><c> nature</c><00:01:19.350><c> of</c><00:01:19.380><c> the</c><00:01:19.530><c> beast</c><00:01:19.650><c> and</c><00:01:19.950><c> is</c>
+
+00:01:20.179 --> 00:01:20.189 align:start position:0%
+for and the nature of the beast and is
+ 
+
+00:01:20.189 --> 00:01:21.800 align:start position:0%
+for and the nature of the beast and is
+that<00:01:20.430><c> you're</c><00:01:21.030><c> adding</c><00:01:21.210><c> features</c><00:01:21.450><c> you're</c>
+
+00:01:21.800 --> 00:01:21.810 align:start position:0%
+that you're adding features you're
+ 
+
+00:01:21.810 --> 00:01:24.830 align:start position:0%
+that you're adding features you're
+adding<00:01:22.080><c> new</c><00:01:22.979><c> new</c><00:01:23.520><c> cool</c><00:01:23.759><c> things</c><00:01:24.060><c> that</c><00:01:24.270><c> optimize</c>
+
+00:01:24.830 --> 00:01:24.840 align:start position:0%
+adding new new cool things that optimize
+ 
+
+00:01:24.840 --> 00:01:27.560 align:start position:0%
+adding new new cool things that optimize
+you<00:01:25.350><c> make</c><00:01:25.710><c> you</c><00:01:26.340><c> make</c><00:01:26.460><c> optimization</c><00:01:27.090><c> to</c><00:01:27.240><c> see</c><00:01:27.390><c> to</c>
+
+00:01:27.560 --> 00:01:27.570 align:start position:0%
+you make you make optimization to see to
+ 
+
+00:01:27.570 --> 00:01:28.969 align:start position:0%
+you make you make optimization to see to
+you<00:01:27.810><c> know</c><00:01:27.900><c> make</c><00:01:28.080><c> optimization</c><00:01:28.680><c> to</c><00:01:28.829><c> some</c>
+
+00:01:28.969 --> 00:01:28.979 align:start position:0%
+you know make optimization to some
+ 
+
+00:01:28.979 --> 00:01:30.649 align:start position:0%
+you know make optimization to some
+library<00:01:29.400><c> it</c><00:01:29.820><c> adds</c><00:01:30.090><c> bloat</c>
+
+00:01:30.649 --> 00:01:30.659 align:start position:0%
+library it adds bloat
+ 
+
+00:01:30.659 --> 00:01:32.800 align:start position:0%
+library it adds bloat
+it<00:01:30.780><c> adds</c><00:01:30.990><c> you</c><00:01:31.650><c> know</c><00:01:31.740><c> death</c><00:01:31.979><c> by</c><00:01:32.159><c> a</c><00:01:32.189><c> thousand</c><00:01:32.549><c> cut</c>
+
+00:01:32.800 --> 00:01:32.810 align:start position:0%
+it adds you know death by a thousand cut
+ 
+
+00:01:32.810 --> 00:01:38.060 align:start position:0%
+it adds you know death by a thousand cut
+to<00:01:33.829><c> to</c><00:01:34.829><c> the</c><00:01:35.009><c> open</c><00:01:35.250><c> JDK</c><00:01:35.369><c> experience</c><00:01:36.299><c> so</c><00:01:37.070><c> over</c>
+
+00:01:38.060 --> 00:01:38.070 align:start position:0%
+to to the open JDK experience so over
+ 
+
+00:01:38.070 --> 00:01:40.399 align:start position:0%
+to to the open JDK experience so over
+six<00:01:38.610><c> seven</c><00:01:38.880><c> eight</c><00:01:39.030><c> and</c><00:01:39.170><c> especially</c><00:01:40.170><c> maybe</c>
+
+00:01:40.399 --> 00:01:40.409 align:start position:0%
+six seven eight and especially maybe
+ 
+
+00:01:40.409 --> 00:01:43.190 align:start position:0%
+six seven eight and especially maybe
+nine<00:01:40.650><c> you've</c><00:01:41.520><c> seen</c><00:01:41.759><c> small</c><00:01:42.540><c> small</c><00:01:42.780><c> additions</c>
+
+00:01:43.190 --> 00:01:43.200 align:start position:0%
+nine you've seen small small additions
+ 
+
+00:01:43.200 --> 00:01:45.800 align:start position:0%
+nine you've seen small small additions
+of<00:01:43.729><c> little</c><00:01:44.729><c> little</c><00:01:45.149><c> things</c><00:01:45.329><c> that</c><00:01:45.390><c> are</c><00:01:45.600><c> in</c>
+
+00:01:45.800 --> 00:01:45.810 align:start position:0%
+of little little things that are in
+ 
+
+00:01:45.810 --> 00:01:47.719 align:start position:0%
+of little little things that are in
+getting<00:01:45.930><c> run</c><00:01:46.200><c> at</c><00:01:46.500><c> startup</c><00:01:46.710><c> or</c><00:01:47.250><c> every</c><00:01:47.460><c> time</c><00:01:47.610><c> you</c>
+
+00:01:47.719 --> 00:01:47.729 align:start position:0%
+getting run at startup or every time you
+ 
+
+00:01:47.729 --> 00:01:50.480 align:start position:0%
+getting run at startup or every time you
+boot<00:01:48.090><c> straps</c><00:01:48.390><c> and</c><00:01:48.509><c> something</c><00:01:49.079><c> that</c><00:01:49.619><c> adds</c><00:01:49.829><c> you</c>
+
+00:01:50.480 --> 00:01:50.490 align:start position:0%
+boot straps and something that adds you
+ 
+
+00:01:50.490 --> 00:01:52.910 align:start position:0%
+boot straps and something that adds you
+know<00:01:50.579><c> you</c><00:01:50.670><c> typically</c><00:01:51.420><c> don't</c><00:01:51.540><c> see</c><00:01:51.869><c> see</c><00:01:52.740><c> them</c>
+
+00:01:52.910 --> 00:01:52.920 align:start position:0%
+know you typically don't see see them
+ 
+
+00:01:52.920 --> 00:01:56.539 align:start position:0%
+know you typically don't see see them
+but<00:01:53.040><c> they</c><00:01:53.130><c> do</c><00:01:53.189><c> add</c><00:01:53.430><c> up</c><00:01:53.610><c> over</c><00:01:53.850><c> time</c><00:01:54.860><c> also</c><00:01:55.860><c> in</c>
+
+00:01:56.539 --> 00:01:56.549 align:start position:0%
+but they do add up over time also in
+ 
+
+00:01:56.549 --> 00:01:59.690 align:start position:0%
+but they do add up over time also in
+recent<00:01:57.450><c> I</c><00:01:57.750><c> was</c><00:01:58.680><c> almost</c><00:01:58.920><c> saying</c><00:01:59.159><c> decades</c><00:01:59.549><c> but</c>
+
+00:01:59.690 --> 00:01:59.700 align:start position:0%
+recent I was almost saying decades but
+ 
+
+00:01:59.700 --> 00:02:02.270 align:start position:0%
+recent I was almost saying decades but
+years<00:02:00.060><c> we've</c><00:02:00.990><c> been</c><00:02:01.170><c> adding</c><00:02:01.350><c> more</c><00:02:02.100><c> and</c><00:02:02.189><c> more</c>
+
+00:02:02.270 --> 00:02:02.280 align:start position:0%
+years we've been adding more and more
+ 
+
+00:02:02.280 --> 00:02:05.810 align:start position:0%
+years we've been adding more and more
+dynamic<00:02:03.229><c> setup</c><00:02:04.229><c> things</c><00:02:04.439><c> Don</c><00:02:05.280><c> hiding</c><00:02:05.610><c> I</c><00:02:05.670><c> was</c>
+
+00:02:05.810 --> 00:02:05.820 align:start position:0%
+dynamic setup things Don hiding I was
+ 
+
+00:02:05.820 --> 00:02:08.900 align:start position:0%
+dynamic setup things Don hiding I was
+here<00:02:06.000><c> talking</c><00:02:06.329><c> about</c><00:02:07.009><c> Indian</c><00:02:08.009><c> comedy</c><00:02:08.340><c> earlier</c>
+
+00:02:08.900 --> 00:02:08.910 align:start position:0%
+here talking about Indian comedy earlier
+ 
+
+00:02:08.910 --> 00:02:11.119 align:start position:0%
+here talking about Indian comedy earlier
+and<00:02:09.149><c> that's</c><00:02:09.660><c> kind</c><00:02:09.899><c> of</c><00:02:09.989><c> the</c><00:02:10.110><c> trend</c><00:02:10.410><c> that</c><00:02:10.619><c> we</c><00:02:11.099><c> are</c>
+
+00:02:11.119 --> 00:02:11.129 align:start position:0%
+and that's kind of the trend that we are
+ 
+
+00:02:11.129 --> 00:02:13.400 align:start position:0%
+and that's kind of the trend that we are
+on<00:02:11.730><c> to</c><00:02:12.180><c> use</c>
+
+00:02:13.400 --> 00:02:13.410 align:start position:0%
+on to use
+ 
+
+00:02:13.410 --> 00:02:14.930 align:start position:0%
+on to use
+dynamic<00:02:13.740><c> bootstraps</c><00:02:14.190><c> for</c><00:02:14.520><c> more</c><00:02:14.670><c> and</c><00:02:14.820><c> more</c>
+
+00:02:14.930 --> 00:02:14.940 align:start position:0%
+dynamic bootstraps for more and more
+ 
+
+00:02:14.940 --> 00:02:17.870 align:start position:0%
+dynamic bootstraps for more and more
+things<00:02:15.120><c> and</c><00:02:15.480><c> those</c><00:02:15.780><c> things</c><00:02:16.500><c> well</c><00:02:17.340><c> they're</c><00:02:17.790><c> not</c>
+
+00:02:17.870 --> 00:02:17.880 align:start position:0%
+things and those things well they're not
+ 
+
+00:02:17.880 --> 00:02:20.420 align:start position:0%
+things and those things well they're not
+for<00:02:17.940><c> free</c><00:02:18.240><c> especially</c><00:02:18.600><c> not</c><00:02:18.990><c> for</c><00:02:19.410><c> from</c><00:02:20.370><c> a</c>
+
+00:02:20.420 --> 00:02:20.430 align:start position:0%
+for free especially not for from a
+ 
+
+00:02:20.430 --> 00:02:23.840 align:start position:0%
+for free especially not for from a
+starter<00:02:20.730><c> point</c><00:02:20.910><c> of</c><00:02:21.030><c> view</c><00:02:22.160><c> also</c><00:02:23.160><c> for</c><00:02:23.400><c> from</c><00:02:23.760><c> a</c>
+
+00:02:23.840 --> 00:02:23.850 align:start position:0%
+starter point of view also for from a
+ 
+
+00:02:23.850 --> 00:02:27.830 align:start position:0%
+starter point of view also for from a
+footprint<00:02:24.420><c> point</c><00:02:24.660><c> of</c><00:02:24.750><c> view</c><00:02:24.870><c> so</c><00:02:26.720><c> and</c><00:02:27.720><c> we're</c>
+
+00:02:27.830 --> 00:02:27.840 align:start position:0%
+footprint point of view so and we're
+ 
+
+00:02:27.840 --> 00:02:30.650 align:start position:0%
+footprint point of view so and we're
+going<00:02:27.990><c> to</c><00:02:28.080><c> add</c><00:02:28.170><c> more</c><00:02:28.320><c> of</c><00:02:28.440><c> those</c><00:02:28.670><c> probably</c><00:02:29.670><c> so</c>
+
+00:02:30.650 --> 00:02:30.660 align:start position:0%
+going to add more of those probably so
+ 
+
+00:02:30.660 --> 00:02:33.830 align:start position:0%
+going to add more of those probably so
+how<00:02:30.810><c> do</c><00:02:30.870><c> we</c><00:02:30.960><c> deal</c><00:02:31.170><c> with</c><00:02:31.200><c> that</c><00:02:32.240><c> that</c><00:02:33.240><c> conundrum</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+how do we deal with that that conundrum
+ 
+
+00:02:33.840 --> 00:02:37.010 align:start position:0%
+how do we deal with that that conundrum
+to<00:02:34.070><c> try</c><00:02:35.070><c> and</c><00:02:35.190><c> keep</c><00:02:35.280><c> at</c><00:02:35.460><c> least</c><00:02:35.520><c> startup</c><00:02:36.020><c> stable</c>
+
+00:02:37.010 --> 00:02:37.020 align:start position:0%
+to try and keep at least startup stable
+ 
+
+00:02:37.020 --> 00:02:40.030 align:start position:0%
+to try and keep at least startup stable
+or<00:02:37.230><c> improving</c><00:02:37.500><c> our</c><00:02:37.950><c> time</c><00:02:38.220><c> without</c><00:02:38.940><c> blocking</c>
+
+00:02:40.030 --> 00:02:40.040 align:start position:0%
+or improving our time without blocking
+ 
+
+00:02:40.040 --> 00:02:44.450 align:start position:0%
+or improving our time without blocking
+nice<00:02:41.040><c> feature</c><00:02:41.370><c> improvements</c><00:02:41.730><c> using</c><00:02:43.280><c> Indy</c><00:02:44.280><c> and</c>
+
+00:02:44.450 --> 00:02:44.460 align:start position:0%
+nice feature improvements using Indy and
+ 
+
+00:02:44.460 --> 00:02:48.560 align:start position:0%
+nice feature improvements using Indy and
+other<00:02:44.580><c> features</c><00:02:44.760><c> so</c><00:02:45.410><c> well</c><00:02:46.790><c> before</c><00:02:47.790><c> you</c><00:02:47.910><c> before</c>
+
+00:02:48.560 --> 00:02:48.570 align:start position:0%
+other features so well before you before
+ 
+
+00:02:48.570 --> 00:02:50.090 align:start position:0%
+other features so well before you before
+you<00:02:48.720><c> optimize</c><00:02:49.380><c> anything</c><00:02:49.620><c> you</c><00:02:49.800><c> have</c><00:02:49.920><c> to</c><00:02:50.040><c> ask</c>
+
+00:02:50.090 --> 00:02:50.100 align:start position:0%
+you optimize anything you have to ask
+ 
+
+00:02:50.100 --> 00:02:54.320 align:start position:0%
+you optimize anything you have to ask
+yourself<00:02:50.730><c> why</c><00:02:51.380><c> why</c><00:02:52.380><c> bother</c><00:02:53.030><c> well</c><00:02:54.030><c> there's</c>
+
+00:02:54.320 --> 00:02:54.330 align:start position:0%
+yourself why why bother well there's
+ 
+
+00:02:54.330 --> 00:02:57.170 align:start position:0%
+yourself why why bother well there's
+been<00:02:54.480><c> a</c><00:02:54.600><c> there's</c><00:02:54.960><c> been</c><00:02:55.110><c> a</c><00:02:55.170><c> range</c><00:02:55.320><c> of</c><00:02:56.180><c> interests</c>
+
+00:02:57.170 --> 00:02:57.180 align:start position:0%
+been a there's been a range of interests
+ 
+
+00:02:57.180 --> 00:03:01.040 align:start position:0%
+been a there's been a range of interests
+in<00:02:57.360><c> making</c><00:02:57.810><c> Java</c><00:02:58.230><c> faster</c><00:02:58.710><c> to</c><00:02:59.250><c> start</c><00:02:59.520><c> up</c><00:03:00.050><c> and</c>
+
+00:03:01.040 --> 00:03:01.050 align:start position:0%
+in making Java faster to start up and
+ 
+
+00:03:01.050 --> 00:03:03.440 align:start position:0%
+in making Java faster to start up and
+anything<00:03:01.560><c> from</c><00:03:01.710><c> people</c><00:03:02.070><c> you</c><00:03:02.790><c> know</c><00:03:02.880><c> picking</c><00:03:03.240><c> up</c>
+
+00:03:03.440 --> 00:03:03.450 align:start position:0%
+anything from people you know picking up
+ 
+
+00:03:03.450 --> 00:03:05.540 align:start position:0%
+anything from people you know picking up
+languages<00:03:03.930><c> just</c><00:03:04.110><c> you</c><00:03:04.380><c> write</c><00:03:04.620><c> some</c><00:03:04.830><c> CLI</c><00:03:05.340><c> tool</c>
+
+00:03:05.540 --> 00:03:05.550 align:start position:0%
+languages just you write some CLI tool
+ 
+
+00:03:05.550 --> 00:03:08.890 align:start position:0%
+languages just you write some CLI tool
+or<00:03:05.970><c> your</c><00:03:06.210><c> your</c><00:03:07.170><c> function</c><00:03:07.620><c> as</c><00:03:07.710><c> a</c><00:03:07.740><c> service</c>
+
+00:03:08.890 --> 00:03:08.900 align:start position:0%
+or your your function as a service
+ 
+
+00:03:08.900 --> 00:03:12.370 align:start position:0%
+or your your function as a service
+vendor<00:03:09.900><c> wants</c><00:03:10.410><c> to</c><00:03:10.940><c> cut</c><00:03:11.940><c> a</c><00:03:11.970><c> few</c><00:03:12.180><c> mic</c>
+
+00:03:12.370 --> 00:03:12.380 align:start position:0%
+vendor wants to cut a few mic
+ 
+
+00:03:12.380 --> 00:03:16.130 align:start position:0%
+vendor wants to cut a few mic
+milliseconds<00:03:13.380><c> off</c><00:03:13.590><c> of</c><00:03:13.800><c> your</c><00:03:14.930><c> service</c><00:03:15.930><c> times</c>
+
+00:03:16.130 --> 00:03:16.140 align:start position:0%
+milliseconds off of your service times
+ 
+
+00:03:16.140 --> 00:03:18.020 align:start position:0%
+milliseconds off of your service times
+when<00:03:16.350><c> you're</c><00:03:16.470><c> bootstrapping</c><00:03:17.100><c> a</c><00:03:17.280><c> new</c><00:03:17.430><c> VM</c><00:03:17.790><c> every</c>
+
+00:03:18.020 --> 00:03:18.030 align:start position:0%
+when you're bootstrapping a new VM every
+ 
+
+00:03:18.030 --> 00:03:19.880 align:start position:0%
+when you're bootstrapping a new VM every
+time<00:03:18.209><c> you're</c><00:03:18.480><c> servicing</c><00:03:19.080><c> in</c><00:03:19.320><c> a</c><00:03:19.350><c> request</c><00:03:19.650><c> which</c>
+
+00:03:19.880 --> 00:03:19.890 align:start position:0%
+time you're servicing in a request which
+ 
+
+00:03:19.890 --> 00:03:23.480 align:start position:0%
+time you're servicing in a request which
+seems<00:03:20.190><c> a</c><00:03:20.430><c> little</c><00:03:21.030><c> bit</c><00:03:21.709><c> high</c><00:03:22.709><c> on</c><00:03:22.740><c> the</c><00:03:23.130><c> overhead</c>
+
+00:03:23.480 --> 00:03:23.490 align:start position:0%
+seems a little bit high on the overhead
+ 
+
+00:03:23.490 --> 00:03:27.860 align:start position:0%
+seems a little bit high on the overhead
+side<00:03:25.070><c> and</c><00:03:26.070><c> of</c><00:03:26.220><c> course</c><00:03:26.400><c> you</c><00:03:26.520><c> have</c><00:03:26.780><c> you</c><00:03:27.780><c> know</c>
+
+00:03:27.860 --> 00:03:27.870 align:start position:0%
+side and of course you have you know
+ 
+
+00:03:27.870 --> 00:03:30.020 align:start position:0%
+side and of course you have you know
+legacy<00:03:28.350><c> efforts</c><00:03:28.650><c> in</c><00:03:28.860><c> the</c><00:03:29.070><c> open</c><00:03:29.280><c> UDK</c><00:03:29.550><c> community</c>
+
+00:03:30.020 --> 00:03:30.030 align:start position:0%
+legacy efforts in the open UDK community
+ 
+
+00:03:30.030 --> 00:03:33.620 align:start position:0%
+legacy efforts in the open UDK community
+you<00:03:30.209><c> have</c><00:03:30.360><c> embedded</c><00:03:31.230><c> and</c><00:03:31.740><c> client</c><00:03:32.190><c> vm</c><00:03:32.400><c> etc</c><00:03:33.090><c> and</c>
+
+00:03:33.620 --> 00:03:33.630 align:start position:0%
+you have embedded and client vm etc and
+ 
+
+00:03:33.630 --> 00:03:35.240 align:start position:0%
+you have embedded and client vm etc and
+we're<00:03:33.780><c> mostly</c><00:03:33.930><c> focusing</c><00:03:34.470><c> on</c><00:03:34.590><c> on</c><00:03:34.860><c> the</c><00:03:34.980><c> server</c>
+
+00:03:35.240 --> 00:03:35.250 align:start position:0%
+we're mostly focusing on on the server
+ 
+
+00:03:35.250 --> 00:03:39.460 align:start position:0%
+we're mostly focusing on on the server
+VM<00:03:35.970><c> today</c><00:03:36.390><c> so</c><00:03:36.870><c> how</c><00:03:37.500><c> do</c><00:03:37.560><c> we</c><00:03:37.740><c> make</c><00:03:37.950><c> the</c><00:03:38.160><c> server</c><00:03:38.670><c> VM</c>
+
+00:03:39.460 --> 00:03:39.470 align:start position:0%
+VM today so how do we make the server VM
+ 
+
+00:03:39.470 --> 00:03:42.170 align:start position:0%
+VM today so how do we make the server VM
+encompass<00:03:40.470><c> and</c><00:03:40.770><c> you</c><00:03:41.010><c> know</c><00:03:41.100><c> accommodate</c><00:03:41.610><c> some</c>
+
+00:03:42.170 --> 00:03:42.180 align:start position:0%
+encompass and you know accommodate some
+ 
+
+00:03:42.180 --> 00:03:43.820 align:start position:0%
+encompass and you know accommodate some
+of<00:03:42.209><c> the</c><00:03:42.390><c> use</c><00:03:42.510><c> cases</c><00:03:42.630><c> previously</c><00:03:43.470><c> done</c><00:03:43.620><c> in</c>
+
+00:03:43.820 --> 00:03:43.830 align:start position:0%
+of the use cases previously done in
+ 
+
+00:03:43.830 --> 00:03:47.780 align:start position:0%
+of the use cases previously done in
+different<00:03:45.680><c> optimization</c><00:03:46.790><c> different</c>
+
+00:03:47.780 --> 00:03:47.790 align:start position:0%
+different optimization different
+ 
+
+00:03:47.790 --> 00:03:51.949 align:start position:0%
+different optimization different
+repositories<00:03:49.370><c> well</c><00:03:50.370><c> and</c><00:03:50.670><c> you</c><00:03:51.180><c> know</c><00:03:51.270><c> the</c><00:03:51.480><c> other</c>
+
+00:03:51.949 --> 00:03:51.959 align:start position:0%
+repositories well and you know the other
+ 
+
+00:03:51.959 --> 00:03:56.900 align:start position:0%
+repositories well and you know the other
+reasons<00:03:52.320><c> are</c><00:03:52.410><c> more</c><00:03:54.470><c> maybe</c><00:03:55.580><c> personal</c><00:03:56.580><c> I</c><00:03:56.730><c> like</c>
+
+00:03:56.900 --> 00:03:56.910 align:start position:0%
+reasons are more maybe personal I like
+ 
+
+00:03:56.910 --> 00:03:59.870 align:start position:0%
+reasons are more maybe personal I like
+to<00:03:57.120><c> keep</c><00:03:57.870><c> fighting</c><00:03:58.650><c> the</c><00:03:58.950><c> misconception</c><00:03:59.850><c> that</c>
+
+00:03:59.870 --> 00:03:59.880 align:start position:0%
+to keep fighting the misconception that
+ 
+
+00:03:59.880 --> 00:04:02.270 align:start position:0%
+to keep fighting the misconception that
+Java<00:04:00.270><c> is</c><00:04:00.300><c> slow</c><00:04:00.600><c> and</c><00:04:00.840><c> I</c><00:04:00.989><c> like</c><00:04:01.200><c> to</c><00:04:01.440><c> improve</c><00:04:02.130><c> the</c>
+
+00:04:02.270 --> 00:04:02.280 align:start position:0%
+Java is slow and I like to improve the
+ 
+
+00:04:02.280 --> 00:04:03.790 align:start position:0%
+Java is slow and I like to improve the
+quality<00:04:02.370><c> of</c><00:04:02.640><c> life</c><00:04:02.820><c> of</c><00:04:03.060><c> my</c><00:04:03.480><c> own</c>
+
+00:04:03.790 --> 00:04:03.800 align:start position:0%
+quality of life of my own
+ 
+
+00:04:03.800 --> 00:04:07.040 align:start position:0%
+quality of life of my own
+development<00:04:04.850><c> experience</c><00:04:05.850><c> you</c><00:04:06.360><c> know</c><00:04:06.480><c> every</c>
+
+00:04:07.040 --> 00:04:07.050 align:start position:0%
+development experience you know every
+ 
+
+00:04:07.050 --> 00:04:08.720 align:start position:0%
+development experience you know every
+every<00:04:07.260><c> 10</c><00:04:07.739><c> millisecond</c><00:04:08.220><c> we</c><00:04:08.340><c> can</c><00:04:08.459><c> cut</c><00:04:08.640><c> away</c>
+
+00:04:08.720 --> 00:04:08.730 align:start position:0%
+every 10 millisecond we can cut away
+ 
+
+00:04:08.730 --> 00:04:10.729 align:start position:0%
+every 10 millisecond we can cut away
+from<00:04:09.000><c> startup</c><00:04:09.480><c> mix</c><00:04:09.690><c> you</c><00:04:10.020><c> know</c><00:04:10.140><c> our</c><00:04:10.290><c> testing</c>
+
+00:04:10.729 --> 00:04:10.739 align:start position:0%
+from startup mix you know our testing
+ 
+
+00:04:10.739 --> 00:04:14.570 align:start position:0%
+from startup mix you know our testing
+environment<00:04:11.220><c> from</c><00:04:11.400><c> half</c><00:04:12.180><c> an</c><00:04:12.300><c> hour</c><00:04:12.360><c> faster</c><00:04:13.580><c> so</c>
+
+00:04:14.570 --> 00:04:14.580 align:start position:0%
+environment from half an hour faster so
+ 
+
+00:04:14.580 --> 00:04:15.320 align:start position:0%
+environment from half an hour faster so
+there's<00:04:14.910><c> that</c>
+
+00:04:15.320 --> 00:04:15.330 align:start position:0%
+there's that
+ 
+
+00:04:15.330 --> 00:04:18.170 align:start position:0%
+there's that
+when<00:04:16.260><c> it</c><00:04:16.350><c> comes</c><00:04:16.530><c> to</c><00:04:16.880><c> startup</c><00:04:17.880><c> techniques</c>
+
+00:04:18.170 --> 00:04:18.180 align:start position:0%
+when it comes to startup techniques
+ 
+
+00:04:18.180 --> 00:04:20.270 align:start position:0%
+when it comes to startup techniques
+there<00:04:18.870><c> are</c><00:04:18.900><c> a</c><00:04:19.080><c> lot</c><00:04:19.260><c> of</c><00:04:19.290><c> high</c><00:04:19.739><c> level</c><00:04:19.799><c> things</c>
+
+00:04:20.270 --> 00:04:20.280 align:start position:0%
+there are a lot of high level things
+ 
+
+00:04:20.280 --> 00:04:22.070 align:start position:0%
+there are a lot of high level things
+that<00:04:20.489><c> have</c><00:04:20.640><c> been</c><00:04:20.850><c> you</c><00:04:21.330><c> know</c><00:04:21.390><c> feature</c><00:04:21.750><c> iced</c>
+
+00:04:22.070 --> 00:04:22.080 align:start position:0%
+that have been you know feature iced
+ 
+
+00:04:22.080 --> 00:04:26.750 align:start position:0%
+that have been you know feature iced
+over<00:04:23.039><c> the</c><00:04:23.100><c> years</c><00:04:24.169><c> going</c><00:04:25.169><c> way</c><00:04:25.440><c> back</c><00:04:25.710><c> you</c><00:04:25.919><c> have</c>
+
+00:04:26.750 --> 00:04:26.760 align:start position:0%
+over the years going way back you have
+ 
+
+00:04:26.760 --> 00:04:29.870 align:start position:0%
+over the years going way back you have
+Stata<00:04:27.030><c> sharing</c><00:04:27.450><c> Sidious</c><00:04:28.320><c> it</c><00:04:28.740><c> was</c><00:04:28.920><c> incepted</c>
+
+00:04:29.870 --> 00:04:29.880 align:start position:0%
+Stata sharing Sidious it was incepted
+ 
+
+00:04:29.880 --> 00:04:33.200 align:start position:0%
+Stata sharing Sidious it was incepted
+back<00:04:30.660><c> in</c><00:04:30.870><c> in</c><00:04:31.530><c> the</c><00:04:31.650><c> client</c><00:04:32.010><c> vm</c><00:04:32.190><c> mostly</c><00:04:32.970><c> first</c>
+
+00:04:33.200 --> 00:04:33.210 align:start position:0%
+back in in the client vm mostly first
+ 
+
+00:04:33.210 --> 00:04:35.390 align:start position:0%
+back in in the client vm mostly first
+implemented<00:04:33.570><c> for</c><00:04:33.840><c> Windows</c><00:04:34.200><c> 2</c><00:04:34.680><c> to</c><00:04:35.250><c> make</c>
+
+00:04:35.390 --> 00:04:35.400 align:start position:0%
+implemented for Windows 2 to make
+ 
+
+00:04:35.400 --> 00:04:38.780 align:start position:0%
+implemented for Windows 2 to make
+applets<00:04:35.790><c> start</c><00:04:36.030><c> faster</c><00:04:37.310><c> why</c><00:04:38.310><c> is</c><00:04:38.370><c> it</c><00:04:38.550><c> still</c><00:04:38.760><c> a</c>
+
+00:04:38.780 --> 00:04:38.790 align:start position:0%
+applets start faster why is it still a
+ 
+
+00:04:38.790 --> 00:04:40.520 align:start position:0%
+applets start faster why is it still a
+thing<00:04:39.000><c> well</c><00:04:39.270><c> someone</c><00:04:39.690><c> realized</c><00:04:40.230><c> that</c><00:04:40.410><c> there</c>
+
+00:04:40.520 --> 00:04:40.530 align:start position:0%
+thing well someone realized that there
+ 
+
+00:04:40.530 --> 00:04:42.410 align:start position:0%
+thing well someone realized that there
+we<00:04:40.770><c> can</c><00:04:40.920><c> we</c><00:04:41.100><c> can</c><00:04:41.220><c> adapt</c><00:04:41.490><c> this</c><00:04:41.640><c> and</c><00:04:41.850><c> use</c><00:04:41.940><c> this</c><00:04:42.150><c> on</c>
+
+00:04:42.410 --> 00:04:42.420 align:start position:0%
+we can we can adapt this and use this on
+ 
+
+00:04:42.420 --> 00:04:47.300 align:start position:0%
+we can we can adapt this and use this on
+server<00:04:42.960><c> class</c><00:04:43.410><c> VMs</c><00:04:44.960><c> expanded</c><00:04:45.960><c> to</c><00:04:46.200><c> include</c><00:04:46.680><c> the</c>
+
+00:04:47.300 --> 00:04:47.310 align:start position:0%
+server class VMs expanded to include the
+ 
+
+00:04:47.310 --> 00:04:50.740 align:start position:0%
+server class VMs expanded to include the
+application<00:04:49.040><c> application</c><00:04:50.040><c> classes</c><00:04:50.220><c> themself</c>
+
+00:04:50.740 --> 00:04:50.750 align:start position:0%
+application application classes themself
+ 
+
+00:04:50.750 --> 00:04:52.970 align:start position:0%
+application application classes themself
+so<00:04:51.750><c> it</c><00:04:51.870><c> was</c><00:04:52.020><c> kind</c><00:04:52.230><c> of</c><00:04:52.290><c> built</c><00:04:52.500><c> as</c><00:04:52.680><c> a</c><00:04:52.710><c> commercial</c>
+
+00:04:52.970 --> 00:04:52.980 align:start position:0%
+so it was kind of built as a commercial
+ 
+
+00:04:52.980 --> 00:04:57.620 align:start position:0%
+so it was kind of built as a commercial
+feature<00:04:53.370><c> for</c><00:04:55.010><c> for</c><00:04:56.010><c> Oracle</c><00:04:56.340><c> VMs</c><00:04:56.820><c> to</c><00:04:57.000><c> support</c><00:04:57.420><c> of</c>
+
+00:04:57.620 --> 00:04:57.630 align:start position:0%
+feature for for Oracle VMs to support of
+ 
+
+00:04:57.630 --> 00:04:59.540 align:start position:0%
+feature for for Oracle VMs to support of
+logic<00:04:57.870><c> servers</c><00:04:58.260><c> with</c><00:04:58.560><c> application</c><00:04:59.130><c> class</c>
+
+00:04:59.540 --> 00:04:59.550 align:start position:0%
+logic servers with application class
+ 
+
+00:04:59.550 --> 00:05:01.550 align:start position:0%
+logic servers with application class
+data<00:04:59.730><c> sharing</c><00:05:00.030><c> and</c><00:05:00.540><c> this</c><00:05:00.930><c> commercial</c><00:05:01.380><c> feature</c>
+
+00:05:01.550 --> 00:05:01.560 align:start position:0%
+data sharing and this commercial feature
+ 
+
+00:05:01.560 --> 00:05:06.650 align:start position:0%
+data sharing and this commercial feature
+open<00:05:02.490><c> sourced</c><00:05:02.880><c> fully</c><00:05:03.720><c> in</c><00:05:04.110><c> 11</c><00:05:04.830><c> so</c><00:05:05.820><c> now</c><00:05:06.420><c> we</c><00:05:06.480><c> can</c>
+
+00:05:06.650 --> 00:05:06.660 align:start position:0%
+open sourced fully in 11 so now we can
+ 
+
+00:05:06.660 --> 00:05:08.840 align:start position:0%
+open sourced fully in 11 so now we can
+use<00:05:06.770><c> application</c><00:05:07.770><c> class</c><00:05:08.130><c> data</c><00:05:08.340><c> sharing</c><00:05:08.610><c> and</c>
+
+00:05:08.840 --> 00:05:08.850 align:start position:0%
+use application class data sharing and
+ 
+
+00:05:08.850 --> 00:05:13.220 align:start position:0%
+use application class data sharing and
+it's<00:05:09.450><c> kind</c><00:05:09.870><c> of</c><00:05:09.960><c> cool</c><00:05:10.350><c> you</c><00:05:10.650><c> you</c><00:05:11.280><c> had</c><00:05:11.370><c> it</c><00:05:12.110><c> run</c><00:05:13.110><c> it</c>
+
+00:05:13.220 --> 00:05:13.230 align:start position:0%
+it's kind of cool you you had it run it
+ 
+
+00:05:13.230 --> 00:05:15.110 align:start position:0%
+it's kind of cool you you had it run it
+for<00:05:13.470><c> your</c><00:05:13.620><c> application</c><00:05:14.160><c> and</c><00:05:14.340><c> it</c><00:05:14.460><c> can</c><00:05:14.580><c> cut</c><00:05:14.820><c> up</c>
+
+00:05:15.110 --> 00:05:15.120 align:start position:0%
+for your application and it can cut up
+ 
+
+00:05:15.120 --> 00:05:17.840 align:start position:0%
+for your application and it can cut up
+to<00:05:15.440><c> 50</c><00:05:16.440><c> percent</c><00:05:16.740><c> of</c><00:05:16.890><c> your</c><00:05:17.190><c> startup</c><00:05:17.610><c> if</c><00:05:17.760><c> you're</c>
+
+00:05:17.840 --> 00:05:17.850 align:start position:0%
+to 50 percent of your startup if you're
+ 
+
+00:05:17.850 --> 00:05:23.660 align:start position:0%
+to 50 percent of your startup if you're
+lucky<00:05:18.980><c> your</c><00:05:19.980><c> mileage</c><00:05:20.310><c> may</c><00:05:20.460><c> vary</c><00:05:21.770><c> the</c><00:05:22.770><c> aut</c>
+
+00:05:23.660 --> 00:05:23.670 align:start position:0%
+lucky your mileage may vary the aut
+ 
+
+00:05:23.670 --> 00:05:29.050 align:start position:0%
+lucky your mileage may vary the aut
+effort<00:05:24.120><c> in</c><00:05:24.240><c> Java</c><00:05:24.420><c> 9</c><00:05:24.770><c> added</c><00:05:25.820><c> an</c><00:05:26.820><c> experimental</c>
+
+00:05:29.050 --> 00:05:29.060 align:start position:0%
+effort in Java 9 added an experimental
+ 
+
+00:05:29.060 --> 00:05:32.290 align:start position:0%
+effort in Java 9 added an experimental
+experimental<00:05:30.060><c> ahead</c><00:05:30.810><c> of</c><00:05:30.930><c> time</c><00:05:31.170><c> compiler</c>
+
+00:05:32.290 --> 00:05:32.300 align:start position:0%
+experimental ahead of time compiler
+ 
+
+00:05:32.300 --> 00:05:36.350 align:start position:0%
+experimental ahead of time compiler
+coming<00:05:33.300><c> out</c><00:05:33.420><c> of</c><00:05:33.570><c> the</c><00:05:33.860><c> draw</c><00:05:35.030><c> effort</c><00:05:36.030><c> so</c><00:05:36.150><c> it's</c><00:05:36.210><c> a</c>
+
+00:05:36.350 --> 00:05:36.360 align:start position:0%
+coming out of the draw effort so it's a
+ 
+
+00:05:36.360 --> 00:05:38.600 align:start position:0%
+coming out of the draw effort so it's a
+girl<00:05:36.600><c> based</c><00:05:36.920><c> compiler</c><00:05:37.920><c> shipped</c><00:05:38.160><c> with</c><00:05:38.370><c> open</c>
+
+00:05:38.600 --> 00:05:38.610 align:start position:0%
+girl based compiler shipped with open
+ 
+
+00:05:38.610 --> 00:05:41.150 align:start position:0%
+girl based compiler shipped with open
+indicated<00:05:39.030><c> it</c><00:05:39.120><c> allows</c><00:05:39.360><c> you</c><00:05:39.540><c> to</c><00:05:39.770><c> pre</c><00:05:40.770><c> compile</c>
+
+00:05:41.150 --> 00:05:41.160 align:start position:0%
+indicated it allows you to pre compile
+ 
+
+00:05:41.160 --> 00:05:43.910 align:start position:0%
+indicated it allows you to pre compile
+your<00:05:41.550><c> yoga</c><00:05:41.820><c> classes</c><00:05:42.090><c> to</c><00:05:42.510><c> an</c><00:05:42.840><c> 880</c><00:05:43.650><c> shared</c>
+
+00:05:43.910 --> 00:05:43.920 align:start position:0%
+your yoga classes to an 880 shared
+ 
+
+00:05:43.920 --> 00:05:48.230 align:start position:0%
+your yoga classes to an 880 shared
+library<00:05:45.170><c> which</c><00:05:46.700><c> has</c><00:05:47.700><c> a</c><00:05:47.760><c> little</c><00:05:47.940><c> bit</c><00:05:48.060><c> of</c><00:05:48.180><c> a</c>
+
+00:05:48.230 --> 00:05:48.240 align:start position:0%
+library which has a little bit of a
+ 
+
+00:05:48.240 --> 00:05:53.390 align:start position:0%
+library which has a little bit of a
+mixed<00:05:48.510><c> mixed</c><00:05:48.960><c> bag</c><00:05:49.170><c> of</c><00:05:49.410><c> results</c><00:05:51.860><c> but</c><00:05:52.860><c> the</c>
+
+00:05:53.390 --> 00:05:53.400 align:start position:0%
+mixed mixed bag of results but the
+ 
+
+00:05:53.400 --> 00:05:56.120 align:start position:0%
+mixed mixed bag of results but the
+benefit<00:05:53.700><c> is</c><00:05:53.730><c> your</c><00:05:54.390><c> 80</c><00:05:54.900><c> archives</c><00:05:55.560><c> are</c><00:05:55.800><c> loaded</c>
+
+00:05:56.120 --> 00:05:56.130 align:start position:0%
+benefit is your 80 archives are loaded
+ 
+
+00:05:56.130 --> 00:05:58.100 align:start position:0%
+benefit is your 80 archives are loaded
+in<00:05:56.220><c> and</c><00:05:56.520><c> it</c><00:05:56.670><c> doesn't</c><00:05:56.850><c> really</c><00:05:57.090><c> affect</c><00:05:57.240><c> your</c>
+
+00:05:58.100 --> 00:05:58.110 align:start position:0%
+in and it doesn't really affect your
+ 
+
+00:05:58.110 --> 00:06:02.780 align:start position:0%
+in and it doesn't really affect your
+application<00:05:58.980><c> other</c><00:05:59.370><c> than</c><00:05:59.760><c> that</c><00:06:00.030><c> it</c><00:06:00.240><c> adds</c><00:06:01.790><c> and</c>
+
+00:06:02.780 --> 00:06:02.790 align:start position:0%
+application other than that it adds and
+ 
+
+00:06:02.790 --> 00:06:05.630 align:start position:0%
+application other than that it adds and
+message<00:06:03.660><c> to</c><00:06:03.870><c> whatever</c><00:06:04.050><c> to</c><00:06:04.260><c> your</c><00:06:04.430><c> code</c><00:06:05.430><c> cache</c>
+
+00:06:05.630 --> 00:06:05.640 align:start position:0%
+message to whatever to your code cache
+ 
+
+00:06:05.640 --> 00:06:06.020 align:start position:0%
+message to whatever to your code cache
+button
+
+00:06:06.020 --> 00:06:06.030 align:start position:0%
+button
+ 
+
+00:06:06.030 --> 00:06:11.600 align:start position:0%
+button
+well<00:06:06.840><c> the</c><00:06:07.050><c> peak</c><00:06:07.650><c> performance</c><00:06:10.220><c> won't</c><00:06:11.220><c> do</c><00:06:11.460><c> guys</c>
+
+00:06:11.600 --> 00:06:11.610 align:start position:0%
+well the peak performance won't do guys
+ 
+
+00:06:11.610 --> 00:06:13.190 align:start position:0%
+well the peak performance won't do guys
+too<00:06:11.730><c> much</c><00:06:11.850><c> but</c><00:06:12.060><c> I'm</c><00:06:12.180><c> not</c><00:06:12.510><c> going</c><00:06:12.870><c> to</c><00:06:12.900><c> talk</c><00:06:13.140><c> much</c>
+
+00:06:13.190 --> 00:06:13.200 align:start position:0%
+too much but I'm not going to talk much
+ 
+
+00:06:13.200 --> 00:06:17.330 align:start position:0%
+too much but I'm not going to talk much
+about<00:06:13.790><c> äôt</c><00:06:15.560><c> and</c><00:06:16.560><c> then</c><00:06:16.710><c> there</c><00:06:16.860><c> are</c><00:06:16.890><c> other</c><00:06:17.070><c> more</c>
+
+00:06:17.330 --> 00:06:17.340 align:start position:0%
+about äôt and then there are other more
+ 
+
+00:06:17.340 --> 00:06:20.720 align:start position:0%
+about äôt and then there are other more
+intrusive<00:06:17.880><c> and</c><00:06:18.720><c> experimental</c><00:06:19.460><c> features</c><00:06:20.460><c> like</c>
+
+00:06:20.720 --> 00:06:20.730 align:start position:0%
+intrusive and experimental features like
+ 
+
+00:06:20.730 --> 00:06:23.810 align:start position:0%
+intrusive and experimental features like
+the<00:06:21.200><c> well</c><00:06:22.200><c> what</c><00:06:22.470><c> you</c><00:06:22.560><c> can</c><00:06:22.680><c> do</c><00:06:22.770><c> with</c><00:06:22.920><c> jailing</c><00:06:23.490><c> to</c>
+
+00:06:23.810 --> 00:06:23.820 align:start position:0%
+the well what you can do with jailing to
+ 
+
+00:06:23.820 --> 00:06:26.450 align:start position:0%
+the well what you can do with jailing to
+cut<00:06:24.420><c> away</c><00:06:24.540><c> things</c><00:06:25.140><c> from</c><00:06:25.410><c> your</c><00:06:25.590><c> runtime</c><00:06:25.860><c> images</c>
+
+00:06:26.450 --> 00:06:26.460 align:start position:0%
+cut away things from your runtime images
+ 
+
+00:06:26.460 --> 00:06:29.680 align:start position:0%
+cut away things from your runtime images
+or<00:06:27.360><c> compress</c><00:06:28.050><c> them</c><00:06:28.260><c> or</c><00:06:28.530><c> do</c><00:06:28.740><c> other</c><00:06:28.890><c> things</c>
+
+00:06:29.680 --> 00:06:29.690 align:start position:0%
+or compress them or do other things
+ 
+
+00:06:29.690 --> 00:06:34.280 align:start position:0%
+or compress them or do other things
+basically<00:06:31.340><c> enables</c><00:06:32.340><c> to</c><00:06:32.730><c> write</c><00:06:33.090><c> plugins</c><00:06:33.450><c> that</c>
+
+00:06:34.280 --> 00:06:34.290 align:start position:0%
+basically enables to write plugins that
+ 
+
+00:06:34.290 --> 00:06:37.010 align:start position:0%
+basically enables to write plugins that
+would<00:06:34.470><c> do</c><00:06:34.620><c> that</c><00:06:35.580><c> could</c><00:06:35.850><c> theoretically</c><00:06:36.450><c> do</c><00:06:36.990><c> a</c>
+
+00:06:37.010 --> 00:06:37.020 align:start position:0%
+would do that could theoretically do a
+ 
+
+00:06:37.020 --> 00:06:38.540 align:start position:0%
+would do that could theoretically do a
+lot<00:06:37.200><c> of</c><00:06:37.230><c> the</c><00:06:37.590><c> things</c><00:06:37.830><c> that</c><00:06:37.890><c> you</c><00:06:38.070><c> are</c><00:06:38.220><c> doing</c>
+
+00:06:38.540 --> 00:06:38.550 align:start position:0%
+lot of the things that you are doing
+ 
+
+00:06:38.550 --> 00:06:39.970 align:start position:0%
+lot of the things that you are doing
+today<00:06:38.760><c> with</c>
+
+00:06:39.970 --> 00:06:39.980 align:start position:0%
+today with
+ 
+
+00:06:39.980 --> 00:06:42.040 align:start position:0%
+today with
+agents<00:06:40.520><c> but</c><00:06:40.640><c> you</c><00:06:40.730><c> can</c><00:06:40.850><c> do</c><00:06:40.940><c> them</c><00:06:41.120><c> ahead</c><00:06:41.810><c> of</c><00:06:41.960><c> time</c>
+
+00:06:42.040 --> 00:06:42.050 align:start position:0%
+agents but you can do them ahead of time
+ 
+
+00:06:42.050 --> 00:06:44.730 align:start position:0%
+agents but you can do them ahead of time
+in<00:06:42.620><c> as</c><00:06:43.100><c> a</c><00:06:43.130><c> j-link</c>
+
+00:06:44.730 --> 00:06:44.740 align:start position:0%
+in as a j-link
+ 
+
+00:06:44.740 --> 00:06:49.110 align:start position:0%
+in as a j-link
+pipeline<00:06:45.790><c> so</c><00:06:46.790><c> it's</c><00:06:47.300><c> something</c><00:06:47.780><c> that</c><00:06:47.900><c> links</c>
+
+00:06:49.110 --> 00:06:49.120 align:start position:0%
+pipeline so it's something that links
+ 
+
+00:06:49.120 --> 00:06:52.600 align:start position:0%
+pipeline so it's something that links
+your<00:06:50.120><c> image</c><00:06:50.870><c> ahead</c><00:06:51.380><c> of</c><00:06:51.470><c> time</c><00:06:51.680><c> so</c><00:06:52.340><c> if</c><00:06:52.460><c> you're</c>
+
+00:06:52.600 --> 00:06:52.610 align:start position:0%
+your image ahead of time so if you're
+ 
+
+00:06:52.610 --> 00:06:55.150 align:start position:0%
+your image ahead of time so if you're
+shipping<00:06:53.470><c> image</c><00:06:54.470><c> you</c><00:06:54.560><c> can</c><00:06:54.710><c> do</c><00:06:54.770><c> that</c><00:06:54.920><c> ahead</c><00:06:55.040><c> of</c>
+
+00:06:55.150 --> 00:06:55.160 align:start position:0%
+shipping image you can do that ahead of
+ 
+
+00:06:55.160 --> 00:07:00.580 align:start position:0%
+shipping image you can do that ahead of
+time<00:06:57.340><c> native</c><00:06:58.340><c> image</c><00:06:58.580><c> is</c><00:06:59.390><c> also</c><00:06:59.930><c> something</c><00:07:00.380><c> that</c>
+
+00:07:00.580 --> 00:07:00.590 align:start position:0%
+time native image is also something that
+ 
+
+00:07:00.590 --> 00:07:02.620 align:start position:0%
+time native image is also something that
+is<00:07:00.740><c> on</c><00:07:00.860><c> the</c><00:07:00.980><c> radar</c><00:07:01.370><c> but</c><00:07:01.490><c> it's</c><00:07:01.640><c> not</c><00:07:01.850><c> included</c><00:07:02.270><c> in</c>
+
+00:07:02.620 --> 00:07:02.630 align:start position:0%
+is on the radar but it's not included in
+ 
+
+00:07:02.630 --> 00:07:06.670 align:start position:0%
+is on the radar but it's not included in
+this<00:07:02.750><c> talk</c><00:07:02.990><c> so</c><00:07:03.910><c> it's</c><00:07:04.910><c> it's</c><00:07:05.750><c> a</c><00:07:05.870><c> girl</c><00:07:06.140><c> VM</c><00:07:06.410><c> effort</c>
+
+00:07:06.670 --> 00:07:06.680 align:start position:0%
+this talk so it's it's a girl VM effort
+ 
+
+00:07:06.680 --> 00:07:10.510 align:start position:0%
+this talk so it's it's a girl VM effort
+to<00:07:07.720><c> compile</c><00:07:08.720><c> your</c><00:07:09.380><c> java</c><00:07:09.740><c> application</c><00:07:10.310><c> down</c>
+
+00:07:10.510 --> 00:07:10.520 align:start position:0%
+to compile your java application down
+ 
+
+00:07:10.520 --> 00:07:12.840 align:start position:0%
+to compile your java application down
+into<00:07:11.000><c> with</c><00:07:11.600><c> close</c><00:07:11.930><c> to</c><00:07:12.080><c> world</c><00:07:12.230><c> assumptions</c>
+
+00:07:12.840 --> 00:07:12.850 align:start position:0%
+into with close to world assumptions
+ 
+
+00:07:12.850 --> 00:07:15.820 align:start position:0%
+into with close to world assumptions
+down<00:07:13.850><c> to</c><00:07:14.060><c> a</c><00:07:14.090><c> single</c><00:07:14.690><c> binary</c><00:07:14.930><c> so</c><00:07:15.350><c> it's</c><00:07:15.470><c> kind</c><00:07:15.680><c> of</c>
+
+00:07:15.820 --> 00:07:15.830 align:start position:0%
+down to a single binary so it's kind of
+ 
+
+00:07:15.830 --> 00:07:18.070 align:start position:0%
+down to a single binary so it's kind of
+cuts<00:07:15.980><c> most</c><00:07:16.340><c> of</c><00:07:16.460><c> the</c><00:07:16.550><c> avium</c><00:07:16.910><c> after</c><00:07:17.630><c> the</c><00:07:17.750><c> picture</c>
+
+00:07:18.070 --> 00:07:18.080 align:start position:0%
+cuts most of the avium after the picture
+ 
+
+00:07:18.080 --> 00:07:22.060 align:start position:0%
+cuts most of the avium after the picture
+and<00:07:18.530><c> gives</c><00:07:18.800><c> you</c><00:07:18.980><c> a</c><00:07:20.170><c> runtime</c><00:07:21.170><c> image</c><00:07:21.410><c> so</c><00:07:21.980><c> the</c>
+
+00:07:22.060 --> 00:07:22.070 align:start position:0%
+and gives you a runtime image so the
+ 
+
+00:07:22.070 --> 00:07:24.300 align:start position:0%
+and gives you a runtime image so the
+efforts<00:07:22.310><c> in</c><00:07:22.550><c> this</c><00:07:22.730><c> is</c><00:07:23.000><c> it's</c><00:07:23.600><c> out</c><00:07:23.750><c> of</c><00:07:23.780><c> scope</c><00:07:24.170><c> for</c>
+
+00:07:24.300 --> 00:07:24.310 align:start position:0%
+efforts in this is it's out of scope for
+ 
+
+00:07:24.310 --> 00:07:27.730 align:start position:0%
+efforts in this is it's out of scope for
+for<00:07:25.310><c> this</c><00:07:25.370><c> talk</c><00:07:25.610><c> but</c><00:07:25.760><c> it's</c><00:07:25.910><c> fun</c><00:07:26.450><c> things</c><00:07:26.750><c> to</c><00:07:26.930><c> to</c>
+
+00:07:27.730 --> 00:07:27.740 align:start position:0%
+for this talk but it's fun things to to
+ 
+
+00:07:27.740 --> 00:07:29.470 align:start position:0%
+for this talk but it's fun things to to
+look<00:07:27.890><c> at</c><00:07:28.040><c> if</c><00:07:28.190><c> you're</c><00:07:28.310><c> really</c><00:07:29.030><c> just</c><00:07:29.300><c> looking</c>
+
+00:07:29.470 --> 00:07:29.480 align:start position:0%
+look at if you're really just looking
+ 
+
+00:07:29.480 --> 00:07:31.810 align:start position:0%
+look at if you're really just looking
+for<00:07:29.750><c> something</c><00:07:30.020><c> that</c><00:07:30.170><c> starts</c><00:07:30.650><c> fast</c><00:07:30.890><c> runs</c><00:07:31.610><c> with</c>
+
+00:07:31.810 --> 00:07:31.820 align:start position:0%
+for something that starts fast runs with
+ 
+
+00:07:31.820 --> 00:07:35.850 align:start position:0%
+for something that starts fast runs with
+a<00:07:31.850><c> minimal</c><00:07:32.270><c> binary</c><00:07:32.870><c> size</c><00:07:33.050><c> and</c><00:07:33.260><c> such</c><00:07:34.180><c> but</c><00:07:35.180><c> I'm</c>
+
+00:07:35.850 --> 00:07:35.860 align:start position:0%
+a minimal binary size and such but I'm
+ 
+
+00:07:35.860 --> 00:07:38.710 align:start position:0%
+a minimal binary size and such but I'm
+well<00:07:36.860><c> not</c><00:07:37.580><c> looking</c><00:07:37.880><c> at</c><00:07:37.970><c> those</c><00:07:38.150><c> things</c><00:07:38.510><c> right</c>
+
+00:07:38.710 --> 00:07:38.720 align:start position:0%
+well not looking at those things right
+ 
+
+00:07:38.720 --> 00:07:40.960 align:start position:0%
+well not looking at those things right
+now<00:07:38.780><c> I'm</c><00:07:39.170><c> more</c><00:07:39.290><c> looking</c><00:07:39.590><c> from</c><00:07:39.820><c> perspective</c><00:07:40.820><c> of</c>
+
+00:07:40.960 --> 00:07:40.970 align:start position:0%
+now I'm more looking from perspective of
+ 
+
+00:07:40.970 --> 00:07:45.630 align:start position:0%
+now I'm more looking from perspective of
+you<00:07:41.630><c> know</c><00:07:42.160><c> OpenJDK</c><00:07:43.160><c> how</c><00:07:43.550><c> do</c><00:07:43.610><c> we</c><00:07:43.910><c> make</c><00:07:44.110><c> java</c><00:07:45.110><c> has</c>
+
+00:07:45.630 --> 00:07:45.640 align:start position:0%
+you know OpenJDK how do we make java has
+ 
+
+00:07:45.640 --> 00:07:47.590 align:start position:0%
+you know OpenJDK how do we make java has
+everyone<00:07:46.640><c> knows</c><00:07:46.790><c> it</c><00:07:46.970><c> start</c><00:07:47.270><c> a</c><00:07:47.360><c> little</c><00:07:47.450><c> bit</c>
+
+00:07:47.590 --> 00:07:47.600 align:start position:0%
+everyone knows it start a little bit
+ 
+
+00:07:47.600 --> 00:07:51.250 align:start position:0%
+everyone knows it start a little bit
+faster<00:07:47.930><c> because</c><00:07:48.890><c> reasons</c><00:07:50.050><c> so</c><00:07:51.050><c> I</c><00:07:51.080><c> usually</c>
+
+00:07:51.250 --> 00:07:51.260 align:start position:0%
+faster because reasons so I usually
+ 
+
+00:07:51.260 --> 00:07:55.690 align:start position:0%
+faster because reasons so I usually
+start<00:07:51.440><c> with</c><00:07:51.940><c> well</c><00:07:53.710><c> with</c><00:07:54.710><c> hello</c><00:07:54.980><c> world</c><00:07:55.220><c> which</c>
+
+00:07:55.690 --> 00:07:55.700 align:start position:0%
+start with well with hello world which
+ 
+
+00:07:55.700 --> 00:07:58.960 align:start position:0%
+start with well with hello world which
+is<00:07:56.830><c> everyone's</c><00:07:57.830><c> favorite</c><00:07:58.010><c> startup</c><00:07:58.610><c> micro</c>
+
+00:07:58.960 --> 00:07:58.970 align:start position:0%
+is everyone's favorite startup micro
+ 
+
+00:07:58.970 --> 00:08:02.590 align:start position:0%
+is everyone's favorite startup micro
+benchmark<00:07:59.360><c> since</c><00:07:59.630><c> since</c><00:08:00.290><c> at</c><00:08:00.470><c> least</c><00:08:00.530><c> 95</c><00:08:01.600><c> and</c>
+
+00:08:02.590 --> 00:08:02.600 align:start position:0%
+benchmark since since at least 95 and
+ 
+
+00:08:02.600 --> 00:08:05.200 align:start position:0%
+benchmark since since at least 95 and
+when<00:08:03.050><c> it</c><00:08:03.110><c> comes</c><00:08:03.230><c> to</c><00:08:03.500><c> well</c><00:08:04.190><c> what</c><00:08:04.700><c> do</c><00:08:04.880><c> you</c><00:08:04.970><c> mean</c>
+
+00:08:05.200 --> 00:08:05.210 align:start position:0%
+when it comes to well what do you mean
+ 
+
+00:08:05.210 --> 00:08:07.660 align:start position:0%
+when it comes to well what do you mean
+we'd<00:08:05.480><c> start</c><00:08:05.810><c> up</c><00:08:06.280><c> it's</c><00:08:07.280><c> a</c><00:08:07.370><c> little</c><00:08:07.550><c> bit</c>
+
+00:08:07.660 --> 00:08:07.670 align:start position:0%
+we'd start up it's a little bit
+ 
+
+00:08:07.670 --> 00:08:10.300 align:start position:0%
+we'd start up it's a little bit
+ill-defined<00:08:08.260><c> but</c><00:08:09.260><c> most</c><00:08:09.470><c> most</c><00:08:09.770><c> people</c><00:08:09.830><c> kind</c><00:08:10.160><c> of</c>
+
+00:08:10.300 --> 00:08:10.310 align:start position:0%
+ill-defined but most most people kind of
+ 
+
+00:08:10.310 --> 00:08:13.300 align:start position:0%
+ill-defined but most most people kind of
+they<00:08:10.790><c> run</c><00:08:10.970><c> hello</c><00:08:11.150><c> world</c><00:08:11.480><c> and</c><00:08:11.950><c> they</c><00:08:12.950><c> clock</c><00:08:13.160><c> it</c>
+
+00:08:13.300 --> 00:08:13.310 align:start position:0%
+they run hello world and they clock it
+ 
+
+00:08:13.310 --> 00:08:15.370 align:start position:0%
+they run hello world and they clock it
+with<00:08:13.490><c> with</c><00:08:14.090><c> you</c><00:08:14.210><c> spend</c><00:08:14.540><c> time</c><00:08:14.720><c> or</c><00:08:14.930><c> whatever</c><00:08:15.080><c> and</c>
+
+00:08:15.370 --> 00:08:15.380 align:start position:0%
+with with you spend time or whatever and
+ 
+
+00:08:15.380 --> 00:08:18.460 align:start position:0%
+with with you spend time or whatever and
+say<00:08:15.590><c> like</c><00:08:15.770><c> oh</c><00:08:15.950><c> my</c><00:08:16.640><c> JVM</c><00:08:17.030><c> started</c><00:08:17.390><c> in</c><00:08:17.540><c> 100</c>
+
+00:08:18.460 --> 00:08:18.470 align:start position:0%
+say like oh my JVM started in 100
+ 
+
+00:08:18.470 --> 00:08:21.310 align:start position:0%
+say like oh my JVM started in 100
+milliseconds<00:08:18.950><c> well</c><00:08:19.700><c> I</c><00:08:19.730><c> didn't</c><00:08:20.660><c> only</c><00:08:20.780><c> start</c><00:08:21.140><c> it</c>
+
+00:08:21.310 --> 00:08:21.320 align:start position:0%
+milliseconds well I didn't only start it
+ 
+
+00:08:21.320 --> 00:08:25.120 align:start position:0%
+milliseconds well I didn't only start it
+it<00:08:22.310><c> also</c><00:08:22.490><c> ran</c><00:08:23.210><c> its</c><00:08:23.390><c> course</c><00:08:23.540><c> and</c><00:08:24.080><c> then</c><00:08:24.260><c> it</c><00:08:24.860><c> shut</c>
+
+00:08:25.120 --> 00:08:25.130 align:start position:0%
+it also ran its course and then it shut
+ 
+
+00:08:25.130 --> 00:08:28.530 align:start position:0%
+it also ran its course and then it shut
+everything<00:08:25.370><c> down</c><00:08:25.520><c> and</c><00:08:26.000><c> all</c><00:08:26.540><c> those</c><00:08:27.020><c> you</c><00:08:27.770><c> know</c>
+
+00:08:28.530 --> 00:08:28.540 align:start position:0%
+everything down and all those you know
+ 
+
+00:08:28.540 --> 00:08:31.390 align:start position:0%
+everything down and all those you know
+handoffs<00:08:29.540><c> and</c><00:08:29.750><c> synchronization</c><00:08:30.740><c> with</c><00:08:31.070><c> the</c><00:08:31.100><c> OS</c>
+
+00:08:31.390 --> 00:08:31.400 align:start position:0%
+handoffs and synchronization with the OS
+ 
+
+00:08:31.400 --> 00:08:34.690 align:start position:0%
+handoffs and synchronization with the OS
+adds<00:08:31.670><c> a</c><00:08:32.030><c> lot</c><00:08:32.210><c> of</c><00:08:32.270><c> time</c><00:08:32.540><c> depending</c><00:08:32.990><c> on</c><00:08:33.700><c> for</c>
+
+00:08:34.690 --> 00:08:34.700 align:start position:0%
+adds a lot of time depending on for
+ 
+
+00:08:34.700 --> 00:08:36.880 align:start position:0%
+adds a lot of time depending on for
+example<00:08:35.030><c> if</c><00:08:35.090><c> your</c><00:08:35.270><c> concurrent</c><00:08:36.140><c> GC</c><00:08:36.440><c> cycle</c><00:08:36.590><c> has</c>
+
+00:08:36.880 --> 00:08:36.890 align:start position:0%
+example if your concurrent GC cycle has
+ 
+
+00:08:36.890 --> 00:08:39.339 align:start position:0%
+example if your concurrent GC cycle has
+already<00:08:37.250><c> started</c><00:08:37.490><c> and</c><00:08:37.790><c> one</c><00:08:38.270><c> or</c><00:08:38.900><c> whichever</c>
+
+00:08:39.339 --> 00:08:39.349 align:start position:0%
+already started and one or whichever
+ 
+
+00:08:39.349 --> 00:08:41.170 align:start position:0%
+already started and one or whichever
+collector<00:08:40.099><c> you're</c><00:08:40.280><c> running</c><00:08:40.669><c> might</c><00:08:40.940><c> be</c>
+
+00:08:41.170 --> 00:08:41.180 align:start position:0%
+collector you're running might be
+ 
+
+00:08:41.180 --> 00:08:44.650 align:start position:0%
+collector you're running might be
+blocking<00:08:41.570><c> for</c><00:08:41.870><c> for</c><00:08:42.260><c> some</c><00:08:43.040><c> some</c><00:08:43.550><c> level</c><00:08:43.970><c> of</c><00:08:44.030><c> some</c>
+
+00:08:44.650 --> 00:08:44.660 align:start position:0%
+blocking for for some some level of some
+ 
+
+00:08:44.660 --> 00:08:47.980 align:start position:0%
+blocking for for some some level of some
+amount<00:08:44.900><c> of</c><00:08:44.990><c> time</c><00:08:45.520><c> so</c><00:08:46.520><c> if</c><00:08:47.330><c> you</c><00:08:47.390><c> really</c><00:08:47.630><c> want</c><00:08:47.870><c> you</c>
+
+00:08:47.980 --> 00:08:47.990 align:start position:0%
+amount of time so if you really want you
+ 
+
+00:08:47.990 --> 00:08:50.560 align:start position:0%
+amount of time so if you really want you
+to<00:08:48.580><c> measure</c><00:08:49.580><c> startup</c><00:08:50.210><c> you</c><00:08:50.300><c> should</c><00:08:50.450><c> you</c><00:08:50.540><c> have</c>
+
+00:08:50.560 --> 00:08:50.570 align:start position:0%
+to measure startup you should you have
+ 
+
+00:08:50.570 --> 00:08:53.890 align:start position:0%
+to measure startup you should you have
+some<00:08:50.900><c> way</c><00:08:51.050><c> to</c><00:08:51.080><c> well</c><00:08:52.060><c> maybe</c><00:08:53.060><c> some</c><00:08:53.300><c> external</c>
+
+00:08:53.890 --> 00:08:53.900 align:start position:0%
+some way to well maybe some external
+ 
+
+00:08:53.900 --> 00:08:57.430 align:start position:0%
+some way to well maybe some external
+that<00:08:54.880><c> recognizes</c><00:08:55.880><c> when</c><00:08:56.060><c> your</c><00:08:56.320><c> application</c><00:08:57.320><c> is</c>
+
+00:08:57.430 --> 00:08:57.440 align:start position:0%
+that recognizes when your application is
+ 
+
+00:08:57.440 --> 00:08:59.019 align:start position:0%
+that recognizes when your application is
+actually<00:08:57.560><c> up</c><00:08:57.800><c> and</c><00:08:57.950><c> running</c><00:08:58.010><c> for</c><00:08:58.580><c> example</c><00:08:58.880><c> when</c>
+
+00:08:59.019 --> 00:08:59.029 align:start position:0%
+actually up and running for example when
+ 
+
+00:08:59.029 --> 00:09:01.300 align:start position:0%
+actually up and running for example when
+when<00:08:59.300><c> the</c><00:08:59.510><c> hello</c><00:08:59.660><c> world</c><00:08:59.900><c> print</c><00:09:00.200><c> is</c><00:09:00.380><c> printed</c><00:09:01.220><c> on</c>
+
+00:09:01.300 --> 00:09:01.310 align:start position:0%
+when the hello world print is printed on
+ 
+
+00:09:01.310 --> 00:09:03.880 align:start position:0%
+when the hello world print is printed on
+the<00:09:01.339><c> only</c><00:09:02.240><c> terminal</c><00:09:02.660><c> whatever</c><00:09:02.960><c> and</c><00:09:03.230><c> times</c>
+
+00:09:03.880 --> 00:09:03.890 align:start position:0%
+the only terminal whatever and times
+ 
+
+00:09:03.890 --> 00:09:06.490 align:start position:0%
+the only terminal whatever and times
+that<00:09:04.040><c> section</c><00:09:04.760><c> but</c><00:09:05.089><c> let's</c><00:09:05.510><c> ignore</c><00:09:05.779><c> let's</c>
+
+00:09:06.490 --> 00:09:06.500 align:start position:0%
+that section but let's ignore let's
+ 
+
+00:09:06.500 --> 00:09:08.470 align:start position:0%
+that section but let's ignore let's
+ignore<00:09:06.710><c> that</c><00:09:06.860><c> and</c><00:09:07.160><c> just</c><00:09:07.400><c> run</c><00:09:07.820><c> everything</c><00:09:08.089><c> free</c>
+
+00:09:08.470 --> 00:09:08.480 align:start position:0%
+ignore that and just run everything free
+ 
+
+00:09:08.480 --> 00:09:10.660 align:start position:0%
+ignore that and just run everything free
+from<00:09:09.020><c> here</c><00:09:09.170><c> on</c><00:09:09.350><c> out</c><00:09:09.380><c> in</c><00:09:09.740><c> this</c><00:09:09.890><c> talk</c><00:09:10.100><c> run</c>
+
+00:09:10.660 --> 00:09:10.670 align:start position:0%
+from here on out in this talk run
+ 
+
+00:09:10.670 --> 00:09:11.890 align:start position:0%
+from here on out in this talk run
+everything<00:09:10.940><c> from</c><00:09:11.089><c> start</c><00:09:11.420><c> to</c><00:09:11.480><c> finish</c><00:09:11.510><c> if</c>
+
+00:09:11.890 --> 00:09:11.900 align:start position:0%
+everything from start to finish if
+ 
+
+00:09:11.900 --> 00:09:13.750 align:start position:0%
+everything from start to finish if
+you're<00:09:12.050><c> running</c><00:09:12.170><c> bigger</c><00:09:12.620><c> things</c><00:09:12.950><c> might</c><00:09:13.730><c> be</c>
+
+00:09:13.750 --> 00:09:13.760 align:start position:0%
+you're running bigger things might be
+ 
+
+00:09:13.760 --> 00:09:17.320 align:start position:0%
+you're running bigger things might be
+more<00:09:14.120><c> important</c><00:09:14.540><c> to</c><00:09:14.740><c> define</c><00:09:16.000><c> startup</c><00:09:17.000><c> as</c><00:09:17.120><c> the</c>
+
+00:09:17.320 --> 00:09:17.330 align:start position:0%
+more important to define startup as the
+ 
+
+00:09:17.330 --> 00:09:22.960 align:start position:0%
+more important to define startup as the
+initial<00:09:18.170><c> face</c><00:09:19.089><c> so</c><00:09:20.089><c> I</c><00:09:21.490><c> really</c><00:09:22.490><c> started</c><00:09:22.700><c> looking</c>
+
+00:09:22.960 --> 00:09:22.970 align:start position:0%
+initial face so I really started looking
+ 
+
+00:09:22.970 --> 00:09:31.680 align:start position:0%
+initial face so I really started looking
+at<00:09:23.180><c> startup</c><00:09:24.080><c> in</c><00:09:24.650><c> the</c><00:09:24.730><c> lead</c><00:09:25.730><c> up</c><00:09:25.970><c> to</c><00:09:26.000><c> JDK</c><00:09:26.839><c> 9</c><00:09:27.910><c> and</c>
+
+00:09:31.680 --> 00:09:31.690 align:start position:0%
+ 
+ 
+
+00:09:31.690 --> 00:09:37.090 align:start position:0%
+ 
+well<00:09:33.490><c> the</c><00:09:34.490><c> module</c><00:09:34.910><c> system</c><00:09:35.800><c> that</c><00:09:36.800><c> everyone</c>
+
+00:09:37.090 --> 00:09:37.100 align:start position:0%
+well the module system that everyone
+ 
+
+00:09:37.100 --> 00:09:41.140 align:start position:0%
+well the module system that everyone
+loves<00:09:38.089><c> some</c><00:09:38.330><c> places</c><00:09:38.630><c> these</c><00:09:38.960><c> days</c><00:09:39.850><c> came</c><00:09:40.850><c> with</c>
+
+00:09:41.140 --> 00:09:41.150 align:start position:0%
+loves some places these days came with
+ 
+
+00:09:41.150 --> 00:09:44.829 align:start position:0%
+loves some places these days came with
+some<00:09:42.050><c> level</c><00:09:42.230><c> of</c><00:09:42.460><c> initial</c><00:09:43.460><c> overheads</c><00:09:43.850><c> German</c>
+
+00:09:44.829 --> 00:09:44.839 align:start position:0%
+some level of initial overheads German
+ 
+
+00:09:44.839 --> 00:09:48.640 align:start position:0%
+some level of initial overheads German
+nein<00:09:45.940><c> regressed</c><00:09:46.940><c> well</c><00:09:47.570><c> wasn't</c><00:09:48.140><c> too</c><00:09:48.350><c> much</c><00:09:48.500><c> on</c>
+
+00:09:48.640 --> 00:09:48.650 align:start position:0%
+nein regressed well wasn't too much on
+ 
+
+00:09:48.650 --> 00:09:51.130 align:start position:0%
+nein regressed well wasn't too much on
+my<00:09:48.770><c> workstation</c><00:09:49.070><c> but</c><00:09:49.400><c> maybe</c><00:09:49.640><c> from</c><00:09:49.940><c> if</c><00:09:50.450><c> I</c><00:09:50.930><c> saw</c>
+
+00:09:51.130 --> 00:09:51.140 align:start position:0%
+my workstation but maybe from if I saw
+ 
+
+00:09:51.140 --> 00:09:53.980 align:start position:0%
+my workstation but maybe from if I saw
+90<00:09:51.560><c> milliseconds</c><00:09:52.040><c> startup</c><00:09:52.339><c> times</c><00:09:52.580><c> on</c><00:09:52.990><c> startup</c>
+
+00:09:53.980 --> 00:09:53.990 align:start position:0%
+90 milliseconds startup times on startup
+ 
+
+00:09:53.990 --> 00:09:57.460 align:start position:0%
+90 milliseconds startup times on startup
+times<00:09:54.170><c> on</c><00:09:54.410><c> Java</c><00:09:55.040><c> 8</c><00:09:55.190><c> I</c><00:09:55.220><c> could</c><00:09:55.640><c> see</c><00:09:55.880><c> them</c><00:09:56.060><c> grow</c><00:09:56.470><c> to</c>
+
+00:09:57.460 --> 00:09:57.470 align:start position:0%
+times on Java 8 I could see them grow to
+ 
+
+00:09:57.470 --> 00:10:00.370 align:start position:0%
+times on Java 8 I could see them grow to
+Java<00:09:57.710><c> well</c><00:09:58.160><c> in</c><00:09:58.520><c> Java</c><00:09:58.820><c> 9</c><00:09:59.029><c> to</c><00:09:59.270><c> 110</c><00:09:59.839><c> milliseconds</c>
+
+00:10:00.370 --> 00:10:00.380 align:start position:0%
+Java well in Java 9 to 110 milliseconds
+ 
+
+00:10:00.380 --> 00:10:02.170 align:start position:0%
+Java well in Java 9 to 110 milliseconds
+you<00:10:00.529><c> don't</c><00:10:01.100><c> want</c><00:10:01.220><c> to</c><00:10:01.279><c> see</c><00:10:01.400><c> the</c><00:10:01.610><c> early</c><00:10:01.940><c> access</c>
+
+00:10:02.170 --> 00:10:02.180 align:start position:0%
+you don't want to see the early access
+ 
+
+00:10:02.180 --> 00:10:04.630 align:start position:0%
+you don't want to see the early access
+bills<00:10:02.600><c> of</c><00:10:02.990><c> jigsaw</c><00:10:03.440><c> that</c><00:10:03.620><c> I</c><00:10:03.650><c> started</c><00:10:04.339><c> mission</c>
+
+00:10:04.630 --> 00:10:04.640 align:start position:0%
+bills of jigsaw that I started mission
+ 
+
+00:10:04.640 --> 00:10:06.190 align:start position:0%
+bills of jigsaw that I started mission
+when<00:10:04.820><c> I</c><00:10:04.910><c> started</c><00:10:05.209><c> measuring</c><00:10:05.390><c> this</c><00:10:05.690><c> they</c><00:10:06.140><c> were</c>
+
+00:10:06.190 --> 00:10:06.200 align:start position:0%
+when I started measuring this they were
+ 
+
+00:10:06.200 --> 00:10:09.940 align:start position:0%
+when I started measuring this they were
+probably<00:10:07.100><c> in</c><00:10:07.370><c> like</c><00:10:07.700><c> in</c><00:10:08.080><c> 250</c><00:10:09.080><c> 300</c><00:10:09.500><c> millisecond</c>
+
+00:10:09.940 --> 00:10:09.950 align:start position:0%
+probably in like in 250 300 millisecond
+ 
+
+00:10:09.950 --> 00:10:14.500 align:start position:0%
+probably in like in 250 300 millisecond
+range<00:10:10.959><c> but</c><00:10:11.959><c> the</c><00:10:12.680><c> module</c><00:10:13.040><c> system</c><00:10:13.339><c> itself</c><00:10:13.580><c> kind</c>
+
+00:10:14.500 --> 00:10:14.510 align:start position:0%
+range but the module system itself kind
+ 
+
+00:10:14.510 --> 00:10:18.130 align:start position:0%
+range but the module system itself kind
+of<00:10:14.650><c> the</c><00:10:15.650><c> project</c><00:10:16.570><c> unfolded</c><00:10:17.570><c> and</c><00:10:17.720><c> folded</c>
+
+00:10:18.130 --> 00:10:18.140 align:start position:0%
+of the project unfolded and folded
+ 
+
+00:10:18.140 --> 00:10:20.560 align:start position:0%
+of the project unfolded and folded
+various<00:10:19.010><c> things</c><00:10:19.310><c> into</c><00:10:19.730><c> a</c><00:10:19.760><c> linked</c><00:10:20.180><c> plug-ins</c>
+
+00:10:20.560 --> 00:10:20.570 align:start position:0%
+various things into a linked plug-ins
+ 
+
+00:10:20.570 --> 00:10:23.560 align:start position:0%
+various things into a linked plug-ins
+and<00:10:20.810><c> did</c><00:10:21.350><c> a</c><00:10:21.380><c> lot</c><00:10:21.560><c> of</c><00:10:21.620><c> things</c><00:10:21.920><c> to</c><00:10:22.130><c> cut</c><00:10:22.880><c> cut</c><00:10:23.330><c> away</c>
+
+00:10:23.560 --> 00:10:23.570 align:start position:0%
+and did a lot of things to cut cut away
+ 
+
+00:10:23.570 --> 00:10:26.949 align:start position:0%
+and did a lot of things to cut cut away
+a<00:10:23.600><c> lot</c><00:10:23.839><c> of</c><00:10:23.959><c> the</c><00:10:24.230><c> overhead</c><00:10:25.130><c> before</c><00:10:25.820><c> we</c><00:10:26.270><c> released</c>
+
+00:10:26.949 --> 00:10:26.959 align:start position:0%
+a lot of the overhead before we released
+ 
+
+00:10:26.959 --> 00:10:29.769 align:start position:0%
+a lot of the overhead before we released
+gamma<00:10:27.500><c> 9</c><00:10:27.760><c> but</c><00:10:28.760><c> we</c><00:10:28.790><c> also</c><00:10:29.000><c> saw</c><00:10:29.209><c> progressions</c><00:10:29.690><c> in</c>
+
+00:10:29.769 --> 00:10:29.779 align:start position:0%
+gamma 9 but we also saw progressions in
+ 
+
+00:10:29.779 --> 00:10:31.750 align:start position:0%
+gamma 9 but we also saw progressions in
+yeoman<00:10:30.080><c> I'm</c><00:10:30.230><c> due</c><00:10:30.529><c> to</c><00:10:30.560><c> you</c><00:10:31.550><c> know</c><00:10:31.640><c> the</c>
+
+00:10:31.750 --> 00:10:31.760 align:start position:0%
+yeoman I'm due to you know the
+ 
+
+00:10:31.760 --> 00:10:34.390 align:start position:0%
+yeoman I'm due to you know the
+accumulation<00:10:32.330><c> of</c><00:10:32.690><c> features</c><00:10:33.470><c> in</c><00:10:33.740><c> the</c><00:10:33.890><c> VM</c><00:10:34.190><c> and</c>
+
+00:10:34.390 --> 00:10:34.400 align:start position:0%
+accumulation of features in the VM and
+ 
+
+00:10:34.400 --> 00:10:39.519 align:start position:0%
+accumulation of features in the VM and
+elsewhere<00:10:34.850><c> over</c><00:10:35.600><c> three</c><00:10:36.290><c> years</c><00:10:36.730><c> and</c><00:10:37.730><c> this</c><00:10:38.660><c> this</c>
+
+00:10:39.519 --> 00:10:39.529 align:start position:0%
+elsewhere over three years and this this
+ 
+
+00:10:39.529 --> 00:10:41.980 align:start position:0%
+elsewhere over three years and this this
+comparison<00:10:40.089><c> adds</c><00:10:41.089><c> a</c><00:10:41.300><c> few</c><00:10:41.450><c> milliseconds</c>
+
+00:10:41.980 --> 00:10:41.990 align:start position:0%
+comparison adds a few milliseconds
+ 
+
+00:10:41.990 --> 00:10:44.079 align:start position:0%
+comparison adds a few milliseconds
+simply<00:10:42.740><c> due</c><00:10:42.860><c> to</c><00:10:42.920><c> the</c><00:10:43.130><c> fact</c><00:10:43.160><c> that</c><00:10:43.370><c> we</c><00:10:43.550><c> made</c><00:10:43.700><c> g1</c>
+
+00:10:44.079 --> 00:10:44.089 align:start position:0%
+simply due to the fact that we made g1
+ 
+
+00:10:44.089 --> 00:10:47.620 align:start position:0%
+simply due to the fact that we made g1
+default<00:10:44.450><c> and</c><00:10:45.220><c> we</c><00:10:46.220><c> added</c><00:10:46.370><c> support</c><00:10:46.910><c> segments</c>
+
+00:10:47.620 --> 00:10:47.630 align:start position:0%
+default and we added support segments
+ 
+
+00:10:47.630 --> 00:10:54.400 align:start position:0%
+default and we added support segments
+the<00:10:47.750><c> code</c><00:10:47.930><c> cache</c><00:10:48.790><c> basically</c><00:10:50.110><c> separate</c><00:10:53.110><c> c1</c><00:10:54.110><c> and</c>
+
+00:10:54.400 --> 00:10:54.410 align:start position:0%
+the code cache basically separate c1 and
+ 
+
+00:10:54.410 --> 00:10:58.800 align:start position:0%
+the code cache basically separate c1 and
+c2<00:10:55.930><c> generated</c><00:10:56.930><c> code</c><00:10:57.140><c> into</c><00:10:57.500><c> different</c><00:10:57.770><c> areas</c>
+
+00:10:58.800 --> 00:10:58.810 align:start position:0%
+c2 generated code into different areas
+ 
+
+00:10:58.810 --> 00:11:01.930 align:start position:0%
+c2 generated code into different areas
+whereas<00:10:59.810><c> previously</c><00:11:00.410><c> they</c><00:11:00.650><c> were</c><00:11:00.940><c> intermixed</c>
+
+00:11:01.930 --> 00:11:01.940 align:start position:0%
+whereas previously they were intermixed
+ 
+
+00:11:01.940 --> 00:11:04.150 align:start position:0%
+whereas previously they were intermixed
+but<00:11:02.690><c> the</c><00:11:02.780><c> separation</c><00:11:02.959><c> themselves</c><00:11:03.740><c> added</c><00:11:04.100><c> a</c>
+
+00:11:04.150 --> 00:11:04.160 align:start position:0%
+but the separation themselves added a
+ 
+
+00:11:04.160 --> 00:11:05.710 align:start position:0%
+but the separation themselves added a
+little<00:11:04.280><c> bit</c><00:11:04.459><c> of</c><00:11:04.550><c> indirection</c><00:11:04.910><c> which</c><00:11:05.300><c> nine</c>
+
+00:11:05.710 --> 00:11:05.720 align:start position:0%
+little bit of indirection which nine
+ 
+
+00:11:05.720 --> 00:11:06.940 align:start position:0%
+little bit of indirection which nine
+cost<00:11:06.110><c> some</c>
+
+00:11:06.940 --> 00:11:06.950 align:start position:0%
+cost some
+ 
+
+00:11:06.950 --> 00:11:09.220 align:start position:0%
+cost some
+methods<00:11:07.280><c> to</c><00:11:07.370><c> be</c><00:11:07.790><c> become</c><00:11:08.390><c> virtual</c><00:11:08.750><c> methods</c><00:11:09.080><c> and</c>
+
+00:11:09.220 --> 00:11:09.230 align:start position:0%
+methods to be become virtual methods and
+ 
+
+00:11:09.230 --> 00:11:12.190 align:start position:0%
+methods to be become virtual methods and
+that<00:11:09.350><c> a</c><00:11:09.380><c> little</c><00:11:09.740><c> bit</c><00:11:09.830><c> of</c><00:11:09.950><c> overhead</c><00:11:10.250><c> there</c><00:11:11.200><c> so</c>
+
+00:11:12.190 --> 00:11:12.200 align:start position:0%
+that a little bit of overhead there so
+ 
+
+00:11:12.200 --> 00:11:15.330 align:start position:0%
+that a little bit of overhead there so
+that<00:11:12.520><c> various</c><00:11:13.520><c> very</c><00:11:13.880><c> small</c><00:11:14.210><c> things</c><00:11:14.540><c> adding</c><00:11:14.930><c> up</c>
+
+00:11:15.330 --> 00:11:15.340 align:start position:0%
+that various very small things adding up
+ 
+
+00:11:15.340 --> 00:11:20.020 align:start position:0%
+that various very small things adding up
+JVM<00:11:16.340><c> CI</c><00:11:16.550><c> at</c><00:11:17.240><c> the</c><00:11:17.390><c> to</c><00:11:17.600><c> support</c><00:11:18.640><c> growl</c><00:11:19.640><c> as</c><00:11:19.910><c> an</c>
+
+00:11:20.020 --> 00:11:20.030 align:start position:0%
+JVM CI at the to support growl as an
+ 
+
+00:11:20.030 --> 00:11:22.360 align:start position:0%
+JVM CI at the to support growl as an
+experimental<00:11:20.690><c> compiler</c><00:11:21.530><c> in</c><00:11:21.650><c> JAMA</c><00:11:21.830><c> nine</c><00:11:22.040><c> adds</c>
+
+00:11:22.360 --> 00:11:22.370 align:start position:0%
+experimental compiler in JAMA nine adds
+ 
+
+00:11:22.370 --> 00:11:24.190 align:start position:0%
+experimental compiler in JAMA nine adds
+a<00:11:22.520><c> little</c><00:11:22.640><c> bit</c><00:11:22.760><c> of</c><00:11:22.880><c> overhead</c><00:11:23.690><c> to</c><00:11:23.750><c> everyone</c>
+
+00:11:24.190 --> 00:11:24.200 align:start position:0%
+a little bit of overhead to everyone
+ 
+
+00:11:24.200 --> 00:11:26.260 align:start position:0%
+a little bit of overhead to everyone
+else<00:11:24.320><c> as</c><00:11:24.500><c> well</c><00:11:24.820><c> things</c><00:11:25.820><c> like</c><00:11:25.910><c> that</c>
+
+00:11:26.260 --> 00:11:26.270 align:start position:0%
+else as well things like that
+ 
+
+00:11:26.270 --> 00:11:29.530 align:start position:0%
+else as well things like that
+my<00:11:26.840><c> favorite</c><00:11:27.260><c> regression</c><00:11:27.890><c> was</c><00:11:28.070><c> due</c><00:11:28.280><c> to</c><00:11:28.520><c> the</c><00:11:28.790><c> VM</c>
+
+00:11:29.530 --> 00:11:29.540 align:start position:0%
+my favorite regression was due to the VM
+ 
+
+00:11:29.540 --> 00:11:31.480 align:start position:0%
+my favorite regression was due to the VM
+flag<00:11:29.840><c> constraint</c><00:11:30.470><c> checking</c><00:11:30.560><c> that</c><00:11:30.980><c> was</c><00:11:31.130><c> added</c>
+
+00:11:31.480 --> 00:11:31.490 align:start position:0%
+flag constraint checking that was added
+ 
+
+00:11:31.490 --> 00:11:35.260 align:start position:0%
+flag constraint checking that was added
+in<00:11:31.580><c> Java</c><00:11:31.730><c> nine</c><00:11:32.680><c> which</c><00:11:33.680><c> adds</c><00:11:33.920><c> on</c><00:11:34.700><c> the</c><00:11:34.910><c> order</c><00:11:35.150><c> of</c>
+
+00:11:35.260 --> 00:11:35.270 align:start position:0%
+in Java nine which adds on the order of
+ 
+
+00:11:35.270 --> 00:11:37.540 align:start position:0%
+in Java nine which adds on the order of
+like<00:11:35.390><c> fifteen</c><00:11:35.840><c> million</c><00:11:36.170><c> instructions</c><00:11:36.950><c> being</c>
+
+00:11:37.540 --> 00:11:37.550 align:start position:0%
+like fifteen million instructions being
+ 
+
+00:11:37.550 --> 00:11:42.310 align:start position:0%
+like fifteen million instructions being
+retired<00:11:38.260><c> on</c><00:11:39.260><c> every</c><00:11:39.650><c> VN</c><00:11:40.180><c> start</c><00:11:41.180><c> just</c><00:11:41.870><c> to</c><00:11:42.140><c> check</c>
+
+00:11:42.310 --> 00:11:42.320 align:start position:0%
+retired on every VN start just to check
+ 
+
+00:11:42.320 --> 00:11:45.160 align:start position:0%
+retired on every VN start just to check
+if<00:11:42.560><c> your</c><00:11:42.800><c> if</c><00:11:43.520><c> your</c><00:11:43.880><c> command-line</c><00:11:44.540><c> arguments</c>
+
+00:11:45.160 --> 00:11:45.170 align:start position:0%
+if your if your command-line arguments
+ 
+
+00:11:45.170 --> 00:11:47.400 align:start position:0%
+if your if your command-line arguments
+are<00:11:45.410><c> within</c><00:11:45.650><c> range</c><00:11:45.980><c> of</c><00:11:46.220><c> the</c><00:11:46.370><c> allowed</c><00:11:46.610><c> numbers</c>
+
+00:11:47.400 --> 00:11:47.410 align:start position:0%
+are within range of the allowed numbers
+ 
+
+00:11:47.410 --> 00:11:50.350 align:start position:0%
+are within range of the allowed numbers
+so<00:11:48.410><c> that</c><00:11:48.710><c> was</c><00:11:49.460><c> the</c><00:11:49.550><c> case</c><00:11:49.700><c> when</c><00:11:49.970><c> there</c><00:11:50.090><c> were</c><00:11:50.180><c> no</c>
+
+00:11:50.350 --> 00:11:50.360 align:start position:0%
+so that was the case when there were no
+ 
+
+00:11:50.360 --> 00:11:55.300 align:start position:0%
+so that was the case when there were no
+command<00:11:50.780><c> line</c><00:11:50.960><c> flags</c><00:11:51.320><c> at</c><00:11:51.530><c> all</c><00:11:53.230><c> so</c><00:11:54.230><c> yeah</c><00:11:55.010><c> I</c>
+
+00:11:55.300 --> 00:11:55.310 align:start position:0%
+command line flags at all so yeah I
+ 
+
+00:11:55.310 --> 00:12:01.240 align:start position:0%
+command line flags at all so yeah I
+started<00:11:56.300><c> there</c><00:11:56.840><c> fixing</c><00:11:57.740><c> that</c><00:11:57.890><c> one</c><00:11:58.960><c> and</c><00:12:00.250><c> we</c>
+
+00:12:01.240 --> 00:12:01.250 align:start position:0%
+started there fixing that one and we
+ 
+
+00:12:01.250 --> 00:12:02.980 align:start position:0%
+started there fixing that one and we
+started<00:12:01.550><c> looking</c><00:12:01.640><c> at</c><00:12:01.850><c> you</c><00:12:02.030><c> know</c><00:12:02.150><c> we</c><00:12:02.780><c> kept</c>
+
+00:12:02.980 --> 00:12:02.990 align:start position:0%
+started looking at you know we kept
+ 
+
+00:12:02.990 --> 00:12:04.120 align:start position:0%
+started looking at you know we kept
+looking<00:12:03.170><c> and</c><00:12:03.440><c> I've</c><00:12:03.590><c> been</c><00:12:03.740><c> looking</c><00:12:03.860><c> at</c>
+
+00:12:04.120 --> 00:12:04.130 align:start position:0%
+looking and I've been looking at
+ 
+
+00:12:04.130 --> 00:12:07.180 align:start position:0%
+looking and I've been looking at
+optimizing<00:12:04.670><c> unique</c><00:12:05.300><c> so</c><00:12:05.480><c> for</c><00:12:05.950><c> well</c><00:12:06.950><c> over</c><00:12:06.980><c> a</c>
+
+00:12:07.180 --> 00:12:07.190 align:start position:0%
+optimizing unique so for well over a
+ 
+
+00:12:07.190 --> 00:12:09.630 align:start position:0%
+optimizing unique so for well over a
+year<00:12:07.280><c> but</c><00:12:07.670><c> for</c><00:12:07.820><c> you</c><00:12:07.940><c> over</c><00:12:08.060><c> ten</c><00:12:08.270><c> we</c><00:12:08.690><c> kept</c>
+
+00:12:09.630 --> 00:12:09.640 align:start position:0%
+year but for you over ten we kept
+ 
+
+00:12:09.640 --> 00:12:12.460 align:start position:0%
+year but for you over ten we kept
+fighting<00:12:10.640><c> the</c><00:12:10.970><c> technical</c><00:12:11.480><c> depth</c><00:12:11.660><c> and</c><00:12:12.050><c> that</c><00:12:12.320><c> we</c>
+
+00:12:12.460 --> 00:12:12.470 align:start position:0%
+fighting the technical depth and that we
+ 
+
+00:12:12.470 --> 00:12:19.050 align:start position:0%
+fighting the technical depth and that we
+had<00:12:12.650><c> built</c><00:12:13.340><c> up</c><00:12:13.520><c> in</c><00:12:13.640><c> German</c><00:12:13.880><c> nein</c><00:12:15.370><c> ja</c><00:12:16.370><c> well</c><00:12:17.300><c> we</c>
+
+00:12:19.050 --> 00:12:19.060 align:start position:0%
+had built up in German nein ja well we
+ 
+
+00:12:19.060 --> 00:12:21.670 align:start position:0%
+had built up in German nein ja well we
+fixed<00:12:20.060><c> numerous</c><00:12:20.360><c> of</c><00:12:20.510><c> these</c><00:12:20.660><c> small</c><00:12:20.900><c> library</c>
+
+00:12:21.670 --> 00:12:21.680 align:start position:0%
+fixed numerous of these small library
+ 
+
+00:12:21.680 --> 00:12:23.290 align:start position:0%
+fixed numerous of these small library
+and<00:12:21.830><c> other</c><00:12:21.920><c> runtime</c><00:12:22.370><c> optimizations</c><00:12:23.030><c> like</c><00:12:23.090><c> the</c>
+
+00:12:23.290 --> 00:12:23.300 align:start position:0%
+and other runtime optimizations like the
+ 
+
+00:12:23.300 --> 00:12:26.620 align:start position:0%
+and other runtime optimizations like the
+VM<00:12:23.540><c> flag</c><00:12:23.750><c> checking</c><00:12:24.400><c> cat</c><00:12:25.400><c> so</c><00:12:25.550><c> it</c><00:12:25.670><c> cuts</c><00:12:26.000><c> away</c><00:12:26.120><c> you</c>
+
+00:12:26.620 --> 00:12:26.630 align:start position:0%
+VM flag checking cat so it cuts away you
+ 
+
+00:12:26.630 --> 00:12:30.730 align:start position:0%
+VM flag checking cat so it cuts away you
+know<00:12:26.750><c> my</c><00:12:28.450><c> fractions</c><00:12:29.450><c> of</c><00:12:29.660><c> milliseconds</c><00:12:30.260><c> for</c>
+
+00:12:30.730 --> 00:12:30.740 align:start position:0%
+know my fractions of milliseconds for
+ 
+
+00:12:30.740 --> 00:12:33.930 align:start position:0%
+know my fractions of milliseconds for
+each<00:12:30.830><c> such</c><00:12:31.780><c> infraction</c>
+
+00:12:33.930 --> 00:12:33.940 align:start position:0%
+each such infraction
+ 
+
+00:12:33.940 --> 00:12:37.750 align:start position:0%
+each such infraction
+other<00:12:34.940><c> other</c><00:12:35.570><c> other</c><00:12:36.230><c> other</c><00:12:36.760><c> optimizations</c>
+
+00:12:37.750 --> 00:12:37.760 align:start position:0%
+other other other other optimizations
+ 
+
+00:12:37.760 --> 00:12:39.580 align:start position:0%
+other other other other optimizations
+came<00:12:38.000><c> from</c><00:12:38.240><c> you</c><00:12:38.540><c> know</c><00:12:38.570><c> others</c><00:12:38.960><c> like</c><00:12:39.320><c> Thomas</c>
+
+00:12:39.580 --> 00:12:39.590 align:start position:0%
+came from you know others like Thomas
+ 
+
+00:12:39.590 --> 00:12:41.290 align:start position:0%
+came from you know others like Thomas
+Quetzal<00:12:39.980><c> doing</c><00:12:40.280><c> g1</c><00:12:40.670><c> and</c><00:12:40.880><c> startup</c><00:12:41.180><c> and</c>
+
+00:12:41.290 --> 00:12:41.300 align:start position:0%
+Quetzal doing g1 and startup and
+ 
+
+00:12:41.300 --> 00:12:43.540 align:start position:0%
+Quetzal doing g1 and startup and
+footprint<00:12:41.630><c> improvements</c><00:12:42.170><c> for</c><00:12:42.440><c> for</c><00:12:43.310><c> some</c><00:12:43.430><c> of</c>
+
+00:12:43.540 --> 00:12:43.550 align:start position:0%
+footprint improvements for for some of
+ 
+
+00:12:43.550 --> 00:12:46.540 align:start position:0%
+footprint improvements for for some of
+our<00:12:43.640><c> big</c><00:12:43.850><c> customers</c><00:12:44.030><c> that</c><00:12:44.750><c> help</c><00:12:45.560><c> helps</c><00:12:46.070><c> also</c>
+
+00:12:46.540 --> 00:12:46.550 align:start position:0%
+our big customers that help helps also
+ 
+
+00:12:46.550 --> 00:12:49.210 align:start position:0%
+our big customers that help helps also
+the<00:12:46.930><c> nominal</c><00:12:47.930><c> and</c><00:12:48.170><c> you</c><00:12:48.350><c> know</c><00:12:48.470><c> early</c><00:12:48.800><c> startup</c>
+
+00:12:49.210 --> 00:12:49.220 align:start position:0%
+the nominal and you know early startup
+ 
+
+00:12:49.220 --> 00:12:53.620 align:start position:0%
+the nominal and you know early startup
+of<00:12:49.340><c> of</c><00:12:49.700><c> Java</c><00:12:50.060><c> for</c><00:12:50.420><c> everyone</c><00:12:52.240><c> there</c><00:12:53.240><c> were</c><00:12:53.330><c> you</c>
+
+00:12:53.620 --> 00:12:53.630 align:start position:0%
+of of Java for everyone there were you
+ 
+
+00:12:53.630 --> 00:12:55.810 align:start position:0%
+of of Java for everyone there were you
+know<00:12:53.690><c> improvements</c><00:12:54.350><c> to</c><00:12:54.440><c> CD</c><00:12:54.680><c> s</c><00:12:54.800><c> starting</c><00:12:55.700><c> to</c>
+
+00:12:55.810 --> 00:12:55.820 align:start position:0%
+know improvements to CD s starting to
+ 
+
+00:12:55.820 --> 00:12:58.560 align:start position:0%
+know improvements to CD s starting to
+add<00:12:56.260><c> support</c><00:12:57.260><c> for</c><00:12:57.290><c> previous</c><00:12:57.740><c> or</c><00:12:57.920><c> having</c>
+
+00:12:58.560 --> 00:12:58.570 align:start position:0%
+add support for previous or having
+ 
+
+00:12:58.570 --> 00:13:01.720 align:start position:0%
+add support for previous or having
+constituents<00:12:59.570><c> or</c><00:12:59.690><c> whatever</c><00:12:59.960><c> so</c><00:13:00.500><c> JDK</c><00:13:01.190><c> tell</c><00:13:01.400><c> 10</c>
+
+00:13:01.720 --> 00:13:01.730 align:start position:0%
+constituents or whatever so JDK tell 10
+ 
+
+00:13:01.730 --> 00:13:02.350 align:start position:0%
+constituents or whatever so JDK tell 10
+on<00:13:01.880><c> my</c><00:13:02.030><c> machine</c>
+
+00:13:02.350 --> 00:13:02.360 align:start position:0%
+on my machine
+ 
+
+00:13:02.360 --> 00:13:07.090 align:start position:0%
+on my machine
+we<00:13:02.690><c> actually</c><00:13:03.080><c> was</c><00:13:03.830><c> able</c><00:13:03.980><c> to</c><00:13:05.890><c> get</c><00:13:06.890><c> back</c><00:13:07.040><c> to</c>
+
+00:13:07.090 --> 00:13:07.100 align:start position:0%
+we actually was able to get back to
+ 
+
+00:13:07.100 --> 00:13:13.660 align:start position:0%
+we actually was able to get back to
+break<00:13:07.580><c> even</c><00:13:08.000><c> with</c><00:13:08.750><c> with</c><00:13:09.140><c> Java</c><00:13:09.410><c> Java</c><00:13:09.830><c> 8</c><00:13:12.040><c> I'm</c><00:13:13.040><c> not</c>
+
+00:13:13.660 --> 00:13:13.670 align:start position:0%
+break even with with Java Java 8 I'm not
+ 
+
+00:13:13.670 --> 00:13:17.410 align:start position:0%
+break even with with Java Java 8 I'm not
+sure<00:13:14.830><c> were</c><00:13:15.830><c> there</c><00:13:16.130><c> were</c><00:13:16.220><c> small</c><00:13:16.490><c> incremental</c>
+
+00:13:17.410 --> 00:13:17.420 align:start position:0%
+sure were there were small incremental
+ 
+
+00:13:17.420 --> 00:13:18.880 align:start position:0%
+sure were there were small incremental
+regressions
+
+00:13:18.880 --> 00:13:18.890 align:start position:0%
+regressions
+ 
+
+00:13:18.890 --> 00:13:21.070 align:start position:0%
+regressions
+on<00:13:19.130><c> some</c><00:13:19.490><c> measures</c><00:13:20.180><c> but</c><00:13:20.360><c> no</c><00:13:20.480><c> not</c><00:13:20.810><c> on</c><00:13:20.930><c> hello</c>
+
+00:13:21.070 --> 00:13:21.080 align:start position:0%
+on some measures but no not on hello
+ 
+
+00:13:21.080 --> 00:13:23.590 align:start position:0%
+on some measures but no not on hello
+world<00:13:21.320><c> mostly</c><00:13:21.950><c> most</c><00:13:22.640><c> of</c><00:13:22.730><c> the</c><00:13:22.790><c> time</c><00:13:22.970><c> there</c><00:13:23.480><c> were</c>
+
+00:13:23.590 --> 00:13:23.600 align:start position:0%
+world mostly most of the time there were
+ 
+
+00:13:23.600 --> 00:13:25.210 align:start position:0%
+world mostly most of the time there were
+there<00:13:24.050><c> were</c><00:13:24.140><c> the</c><00:13:24.290><c> regressions</c><00:13:24.800><c> there</c><00:13:25.040><c> were</c>
+
+00:13:25.210 --> 00:13:25.220 align:start position:0%
+there were the regressions there were
+ 
+
+00:13:25.220 --> 00:13:29.260 align:start position:0%
+there were the regressions there were
+seen<00:13:25.400><c> on</c><00:13:25.520><c> with</c><00:13:25.970><c> larger</c><00:13:26.360><c> things</c><00:13:26.800><c> but</c><00:13:28.150><c> most</c><00:13:29.150><c> of</c>
+
+00:13:29.260 --> 00:13:29.270 align:start position:0%
+seen on with larger things but most of
+ 
+
+00:13:29.270 --> 00:13:31.860 align:start position:0%
+seen on with larger things but most of
+them<00:13:29.390><c> were</c><00:13:29.510><c> resolved</c><00:13:30.110><c> during</c><00:13:30.680><c> the</c><00:13:30.860><c> eight</c>
+
+00:13:31.860 --> 00:13:31.870 align:start position:0%
+them were resolved during the eight
+ 
+
+00:13:31.870 --> 00:13:35.680 align:start position:0%
+them were resolved during the eight
+updates<00:13:32.870><c> so</c><00:13:33.800><c> eight</c><00:13:33.950><c> updates</c><00:13:34.400><c> kind</c><00:13:35.090><c> of</c><00:13:35.210><c> started</c>
+
+00:13:35.680 --> 00:13:35.690 align:start position:0%
+updates so eight updates kind of started
+ 
+
+00:13:35.690 --> 00:13:44.230 align:start position:0%
+updates so eight updates kind of started
+improving<00:13:36.620><c> trend</c><00:13:37.070><c> as</c><00:13:37.190><c> well</c><00:13:39.430><c> right</c><00:13:41.530><c> well</c><00:13:43.240><c> the</c>
+
+00:13:44.230 --> 00:13:44.240 align:start position:0%
+improving trend as well right well the
+ 
+
+00:13:44.240 --> 00:13:46.870 align:start position:0%
+improving trend as well right well the
+project<00:13:45.020><c> to</c><00:13:45.320><c> keep</c><00:13:45.800><c> improving</c><00:13:46.070><c> startup</c><00:13:46.550><c> kind</c>
+
+00:13:46.870 --> 00:13:46.880 align:start position:0%
+project to keep improving startup kind
+ 
+
+00:13:46.880 --> 00:13:50.530 align:start position:0%
+project to keep improving startup kind
+of<00:13:46.970><c> trapped</c><00:13:47.360><c> on</c><00:13:47.680><c> into</c><00:13:48.680><c> into</c><00:13:49.490><c> JDK</c><00:13:49.880><c> 11</c><00:13:50.300><c> because</c>
+
+00:13:50.530 --> 00:13:50.540 align:start position:0%
+of trapped on into into JDK 11 because
+ 
+
+00:13:50.540 --> 00:13:53.560 align:start position:0%
+of trapped on into into JDK 11 because
+well<00:13:50.800><c> was</c><00:13:51.820><c> slated</c><00:13:52.820><c> to</c><00:13:52.970><c> be</c><00:13:53.120><c> a</c><00:13:53.150><c> long</c><00:13:53.420><c> term</c>
+
+00:13:53.560 --> 00:13:53.570 align:start position:0%
+well was slated to be a long term
+ 
+
+00:13:53.570 --> 00:13:55.420 align:start position:0%
+well was slated to be a long term
+support<00:13:53.930><c> early</c><00:13:54.110><c> so</c><00:13:54.320><c> there</c><00:13:54.650><c> was</c><00:13:54.770><c> still</c>
+
+00:13:55.420 --> 00:13:55.430 align:start position:0%
+support early so there was still
+ 
+
+00:13:55.430 --> 00:13:58.810 align:start position:0%
+support early so there was still
+interesting<00:13:56.140><c> keeping</c><00:13:57.140><c> keeping</c><00:13:57.560><c> these</c><00:13:57.950><c> things</c>
+
+00:13:58.810 --> 00:13:58.820 align:start position:0%
+interesting keeping keeping these things
+ 
+
+00:13:58.820 --> 00:14:03.120 align:start position:0%
+interesting keeping keeping these things
+rolling<00:14:00.490><c> we</c><00:14:01.490><c> got</c><00:14:01.640><c> a</c><00:14:01.670><c> little</c><00:14:01.850><c> bit</c><00:14:02.030><c> of</c><00:14:02.180><c> you</c><00:14:02.870><c> know</c>
+
+00:14:03.120 --> 00:14:03.130 align:start position:0%
+rolling we got a little bit of you know
+ 
+
+00:14:03.130 --> 00:14:05.740 align:start position:0%
+rolling we got a little bit of you know
+unintended<00:14:04.130><c> helped</c><00:14:04.640><c> by</c><00:14:05.000><c> the</c><00:14:05.060><c> fact</c><00:14:05.270><c> that</c><00:14:05.420><c> just</c>
+
+00:14:05.740 --> 00:14:05.750 align:start position:0%
+unintended helped by the fact that just
+ 
+
+00:14:05.750 --> 00:14:07.590 align:start position:0%
+unintended helped by the fact that just
+removing<00:14:06.230><c> a</c><00:14:06.350><c> number</c><00:14:06.620><c> of</c><00:14:06.680><c> modules</c><00:14:06.830><c> helps</c>
+
+00:14:07.590 --> 00:14:07.600 align:start position:0%
+removing a number of modules helps
+ 
+
+00:14:07.600 --> 00:14:10.540 align:start position:0%
+removing a number of modules helps
+improve<00:14:08.600><c> startup</c><00:14:08.960><c> at</c><00:14:09.920><c> least</c><00:14:10.190><c> in</c><00:14:10.400><c> the</c>
+
+00:14:10.540 --> 00:14:10.550 align:start position:0%
+improve startup at least in the
+ 
+
+00:14:10.550 --> 00:14:14.350 align:start position:0%
+improve startup at least in the
+framework<00:14:10.910><c> or</c><00:14:11.420><c> in</c><00:14:11.540><c> the</c><00:14:11.660><c> context</c><00:14:12.110><c> of</c><00:14:12.200><c> 11</c><00:14:13.360><c> so</c>
+
+00:14:14.350 --> 00:14:14.360 align:start position:0%
+framework or in the context of 11 so
+ 
+
+00:14:14.360 --> 00:14:17.740 align:start position:0%
+framework or in the context of 11 so
+getting<00:14:14.840><c> rid</c><00:14:15.110><c> of</c><00:14:15.250><c> java</c><00:14:16.250><c> xml</c><00:14:16.790><c> bind</c><00:14:17.270><c> and</c><00:14:17.540><c> other</c>
+
+00:14:17.740 --> 00:14:17.750 align:start position:0%
+getting rid of java xml bind and other
+ 
+
+00:14:17.750 --> 00:14:20.170 align:start position:0%
+getting rid of java xml bind and other
+other<00:14:18.500><c> other</c><00:14:18.590><c> couple</c><00:14:19.370><c> of</c><00:14:19.430><c> modules</c><00:14:19.550><c> that</c>
+
+00:14:20.170 --> 00:14:20.180 align:start position:0%
+other other couple of modules that
+ 
+
+00:14:20.180 --> 00:14:24.580 align:start position:0%
+other other couple of modules that
+bring-bring<00:14:22.210><c> didn't</c><00:14:23.210><c> spark</c><00:14:23.510><c> yuri</c><00:14:23.810><c> enough</c><00:14:24.110><c> to</c>
+
+00:14:24.580 --> 00:14:24.590 align:start position:0%
+bring-bring didn't spark yuri enough to
+ 
+
+00:14:24.590 --> 00:14:28.330 align:start position:0%
+bring-bring didn't spark yuri enough to
+be<00:14:25.430><c> kept</c><00:14:25.670><c> in</c><00:14:26.030><c> the</c><00:14:26.060><c> jdk</c><00:14:26.890><c> because</c><00:14:27.890><c> they</c><00:14:28.010><c> can</c><00:14:28.190><c> be</c>
+
+00:14:28.330 --> 00:14:28.340 align:start position:0%
+be kept in the jdk because they can be
+ 
+
+00:14:28.340 --> 00:14:32.380 align:start position:0%
+be kept in the jdk because they can be
+you<00:14:28.580><c> know</c><00:14:28.670><c> in</c><00:14:28.850><c> pulled</c><00:14:29.720><c> in</c><00:14:29.900><c> as</c><00:14:30.460><c> as</c><00:14:31.460><c> dependencies</c>
+
+00:14:32.380 --> 00:14:32.390 align:start position:0%
+you know in pulled in as as dependencies
+ 
+
+00:14:32.390 --> 00:14:34.570 align:start position:0%
+you know in pulled in as as dependencies
+and<00:14:32.570><c> probably</c><00:14:32.900><c> you</c><00:14:33.140><c> should</c><00:14:33.290><c> usually</c><00:14:33.530><c> you</c><00:14:34.370><c> want</c>
+
+00:14:34.570 --> 00:14:34.580 align:start position:0%
+and probably you should usually you want
+ 
+
+00:14:34.580 --> 00:14:37.380 align:start position:0%
+and probably you should usually you want
+to<00:14:34.700><c> you</c><00:14:35.210><c> know</c><00:14:35.300><c> i</c><00:14:35.510><c> don't</c><00:14:36.320><c> know</c><00:14:36.350><c> how</c><00:14:36.410><c> many</c>
+
+00:14:37.380 --> 00:14:37.390 align:start position:0%
+to you know i don't know how many
+ 
+
+00:14:37.390 --> 00:14:39.550 align:start position:0%
+to you know i don't know how many
+enterprise<00:14:38.390><c> systems</c><00:14:38.750><c> I've</c><00:14:38.930><c> been</c><00:14:39.110><c> in</c><00:14:39.260><c> where</c>
+
+00:14:39.550 --> 00:14:39.560 align:start position:0%
+enterprise systems I've been in where
+ 
+
+00:14:39.560 --> 00:14:42.490 align:start position:0%
+enterprise systems I've been in where
+where<00:14:40.160><c> you</c><00:14:40.640><c> had</c><00:14:40.820><c> the</c><00:14:40.910><c> dependency</c><00:14:41.420><c> on</c><00:14:41.500><c> Jack's</c>
+
+00:14:42.490 --> 00:14:42.500 align:start position:0%
+where you had the dependency on Jack's
+ 
+
+00:14:42.500 --> 00:14:46.260 align:start position:0%
+where you had the dependency on Jack's
+be<00:14:42.760><c> 2.1</c><00:14:43.760><c> but</c><00:14:44.180><c> your</c><00:14:44.390><c> jdk</c><00:14:45.170><c> of</c><00:14:45.290><c> choice</c><00:14:45.530><c> ships</c><00:14:45.950><c> with</c>
+
+00:14:46.260 --> 00:14:46.270 align:start position:0%
+be 2.1 but your jdk of choice ships with
+ 
+
+00:14:46.270 --> 00:14:48.850 align:start position:0%
+be 2.1 but your jdk of choice ships with
+2.0<00:14:47.270><c> which</c><00:14:47.600><c> someone</c><00:14:47.870><c> else</c><00:14:48.050><c> has</c><00:14:48.230><c> in</c><00:14:48.380><c> dependency</c>
+
+00:14:48.850 --> 00:14:48.860 align:start position:0%
+2.0 which someone else has in dependency
+ 
+
+00:14:48.860 --> 00:14:52.000 align:start position:0%
+2.0 which someone else has in dependency
+on<00:14:48.890><c> and</c><00:14:49.250><c> you</c><00:14:49.370><c> have</c><00:14:49.550><c> this</c><00:14:49.700><c> lib</c><00:14:50.690><c> xed</c><00:14:50.990><c> path</c><00:14:51.230><c> you</c>
+
+00:14:52.000 --> 00:14:52.010 align:start position:0%
+on and you have this lib xed path you
+ 
+
+00:14:52.010 --> 00:14:54.910 align:start position:0%
+on and you have this lib xed path you
+know<00:14:52.130><c> all</c><00:14:52.790><c> that</c><00:14:53.480><c> fun</c><00:14:53.720><c> enjoy</c><00:14:54.080><c> that</c><00:14:54.380><c> that</c><00:14:54.860><c> the</c>
+
+00:14:54.910 --> 00:14:54.920 align:start position:0%
+know all that fun enjoy that that the
+ 
+
+00:14:54.920 --> 00:14:58.090 align:start position:0%
+know all that fun enjoy that that the
+module<00:14:55.220><c> system</c><00:14:55.340><c> wanted</c><00:14:55.850><c> to</c><00:14:55.910><c> get</c><00:14:56.060><c> you</c><00:14:56.540><c> know</c><00:14:57.100><c> get</c>
+
+00:14:58.090 --> 00:14:58.100 align:start position:0%
+module system wanted to get you know get
+ 
+
+00:14:58.100 --> 00:14:59.860 align:start position:0%
+module system wanted to get you know get
+to<00:14:58.220><c> the</c><00:14:58.250><c> bottom</c><00:14:58.460><c> of</c><00:14:58.670><c> and</c><00:14:58.880><c> kind</c><00:14:59.060><c> of</c><00:14:59.180><c> succeeded</c>
+
+00:14:59.860 --> 00:14:59.870 align:start position:0%
+to the bottom of and kind of succeeded
+ 
+
+00:14:59.870 --> 00:15:03.610 align:start position:0%
+to the bottom of and kind of succeeded
+but<00:14:59.990><c> to</c><00:15:00.710><c> the</c><00:15:00.890><c> grief</c><00:15:01.250><c> and</c><00:15:02.020><c> anointment</c><00:15:03.020><c> of</c><00:15:03.200><c> lots</c>
+
+00:15:03.610 --> 00:15:03.620 align:start position:0%
+but to the grief and anointment of lots
+ 
+
+00:15:03.620 --> 00:15:07.690 align:start position:0%
+but to the grief and anointment of lots
+of<00:15:03.970><c> deployers</c><00:15:05.260><c> anyhow</c><00:15:06.700><c> library</c>
+
+00:15:07.690 --> 00:15:07.700 align:start position:0%
+of deployers anyhow library
+ 
+
+00:15:07.700 --> 00:15:09.940 align:start position:0%
+of deployers anyhow library
+optimizations<00:15:08.510><c> continue</c><00:15:09.020><c> as</c><00:15:09.110><c> well</c><00:15:09.260><c> but</c>
+
+00:15:09.940 --> 00:15:09.950 align:start position:0%
+optimizations continue as well but
+ 
+
+00:15:09.950 --> 00:15:14.320 align:start position:0%
+optimizations continue as well but
+didn't<00:15:11.080><c> you</c><00:15:12.080><c> know</c><00:15:12.110><c> we</c><00:15:12.440><c> kept</c><00:15:13.160><c> a</c><00:15:13.280><c> nice</c><00:15:13.730><c> downward</c>
+
+00:15:14.320 --> 00:15:14.330 align:start position:0%
+didn't you know we kept a nice downward
+ 
+
+00:15:14.330 --> 00:15:17.620 align:start position:0%
+didn't you know we kept a nice downward
+trajectory<00:15:14.750><c> I</c><00:15:15.380><c> would</c><00:15:15.770><c> say</c><00:15:16.240><c> and</c><00:15:17.240><c> we</c><00:15:17.330><c> kept</c><00:15:17.540><c> on</c>
+
+00:15:17.620 --> 00:15:17.630 align:start position:0%
+trajectory I would say and we kept on
+ 
+
+00:15:17.630 --> 00:15:22.830 align:start position:0%
+trajectory I would say and we kept on
+digging<00:15:19.210><c> for</c><00:15:20.210><c> for</c><00:15:20.570><c> Java</c><00:15:20.780><c> 12</c><00:15:21.580><c> these</c><00:15:22.580><c> are</c>
+
+00:15:22.830 --> 00:15:22.840 align:start position:0%
+digging for for Java 12 these are
+ 
+
+00:15:22.840 --> 00:15:25.630 align:start position:0%
+digging for for Java 12 these are
+slightly<00:15:23.840><c> old</c><00:15:24.170><c> slides</c><00:15:24.530><c> so</c><00:15:25.220><c> I</c><00:15:25.250><c> should</c><00:15:25.460><c> probably</c>
+
+00:15:25.630 --> 00:15:25.640 align:start position:0%
+slightly old slides so I should probably
+ 
+
+00:15:25.640 --> 00:15:28.330 align:start position:0%
+slightly old slides so I should probably
+remove<00:15:26.120><c> the</c><00:15:26.270><c> question</c><00:15:26.540><c> mark</c><00:15:26.930><c> in</c><00:15:27.440><c> the</c><00:15:27.470><c> title</c>
+
+00:15:28.330 --> 00:15:28.340 align:start position:0%
+remove the question mark in the title
+ 
+
+00:15:28.340 --> 00:15:31.000 align:start position:0%
+remove the question mark in the title
+here<00:15:28.990><c> we'll</c><00:15:29.990><c> kept</c>
+
+00:15:31.000 --> 00:15:31.010 align:start position:0%
+here we'll kept
+ 
+
+00:15:31.010 --> 00:15:35.319 align:start position:0%
+here we'll kept
+kept<00:15:31.279><c> improving</c><00:15:31.430><c> things</c><00:15:32.740><c> c.d.s</c><00:15:34.149><c> can</c><00:15:35.149><c> now</c>
+
+00:15:35.319 --> 00:15:35.329 align:start position:0%
+kept improving things c.d.s can now
+ 
+
+00:15:35.329 --> 00:15:38.470 align:start position:0%
+kept improving things c.d.s can now
+sterilize<00:15:36.459><c> default</c><00:15:37.459><c> model</c><00:15:37.760><c> graphs</c><00:15:38.029><c> so</c><00:15:38.240><c> we</c><00:15:38.389><c> are</c>
+
+00:15:38.470 --> 00:15:38.480 align:start position:0%
+sterilize default model graphs so we are
+ 
+
+00:15:38.480 --> 00:15:41.800 align:start position:0%
+sterilize default model graphs so we are
+we're<00:15:39.279><c> where</c><00:15:40.279><c> we</c><00:15:40.699><c> have</c><00:15:40.910><c> the</c><00:15:41.089><c> facilities</c><00:15:41.660><c> in</c>
+
+00:15:41.800 --> 00:15:41.810 align:start position:0%
+we're where we have the facilities in
+ 
+
+00:15:41.810 --> 00:15:44.230 align:start position:0%
+we're where we have the facilities in
+place<00:15:41.839><c> to</c><00:15:42.320><c> kind</c><00:15:43.190><c> of</c><00:15:43.310><c> not</c><00:15:43.459><c> run</c><00:15:43.699><c> the</c><00:15:43.850><c> Java</c><00:15:44.029><c> code</c>
+
+00:15:44.230 --> 00:15:44.240 align:start position:0%
+place to kind of not run the Java code
+ 
+
+00:15:44.240 --> 00:15:45.759 align:start position:0%
+place to kind of not run the Java code
+to<00:15:44.510><c> do</c><00:15:44.660><c> a</c><00:15:44.690><c> lot</c><00:15:44.899><c> of</c><00:15:44.990><c> the</c><00:15:45.139><c> things</c><00:15:45.350><c> that</c><00:15:45.529><c> we</c><00:15:45.649><c> do</c>
+
+00:15:45.759 --> 00:15:45.769 align:start position:0%
+to do a lot of the things that we do
+ 
+
+00:15:45.769 --> 00:15:49.480 align:start position:0%
+to do a lot of the things that we do
+during<00:15:46.300><c> module</c><00:15:47.300><c> setup</c><00:15:47.870><c> it</c><00:15:48.019><c> at</c><00:15:48.350><c> all</c><00:15:48.529><c> we're</c><00:15:48.949><c> just</c>
+
+00:15:49.480 --> 00:15:49.490 align:start position:0%
+during module setup it at all we're just
+ 
+
+00:15:49.490 --> 00:15:52.930 align:start position:0%
+during module setup it at all we're just
+loading<00:15:50.180><c> the</c><00:15:50.420><c> result</c><00:15:51.230><c> of</c><00:15:51.380><c> it</c><00:15:51.529><c> from</c><00:15:52.160><c> the</c><00:15:52.579><c> CD</c><00:15:52.820><c> s</c>
+
+00:15:52.930 --> 00:15:52.940 align:start position:0%
+loading the result of it from the CD s
+ 
+
+00:15:52.940 --> 00:15:54.939 align:start position:0%
+loading the result of it from the CD s
+archive<00:15:53.240><c> so</c><00:15:53.449><c> we</c><00:15:53.570><c> we</c><00:15:53.839><c> don't</c><00:15:53.959><c> have</c><00:15:54.139><c> to</c><00:15:54.260><c> run</c><00:15:54.410><c> you</c>
+
+00:15:54.939 --> 00:15:54.949 align:start position:0%
+archive so we we don't have to run you
+ 
+
+00:15:54.949 --> 00:15:57.490 align:start position:0%
+archive so we we don't have to run you
+know<00:15:55.120><c> quite</c><00:15:56.120><c> a</c><00:15:56.149><c> substantial</c><00:15:56.389><c> chunk</c><00:15:57.019><c> of</c><00:15:57.260><c> Java</c>
+
+00:15:57.490 --> 00:15:57.500 align:start position:0%
+know quite a substantial chunk of Java
+ 
+
+00:15:57.500 --> 00:15:59.860 align:start position:0%
+know quite a substantial chunk of Java
+code<00:15:57.620><c> during</c><00:15:58.279><c> bootstrap</c><00:15:58.820><c> to</c><00:15:58.850><c> set</c><00:15:59.449><c> things</c><00:15:59.720><c> up</c>
+
+00:15:59.860 --> 00:15:59.870 align:start position:0%
+code during bootstrap to set things up
+ 
+
+00:15:59.870 --> 00:16:02.680 align:start position:0%
+code during bootstrap to set things up
+and<00:16:00.350><c> we</c><00:16:00.560><c> we</c><00:16:01.310><c> have</c><00:16:01.430><c> a</c><00:16:01.459><c> toolbox</c><00:16:01.880><c> now</c><00:16:02.089><c> to</c><00:16:02.149><c> keep</c><00:16:02.540><c> on</c>
+
+00:16:02.680 --> 00:16:02.690 align:start position:0%
+and we we have a toolbox now to keep on
+ 
+
+00:16:02.690 --> 00:16:04.629 align:start position:0%
+and we we have a toolbox now to keep on
+doing<00:16:02.839><c> that</c><00:16:02.990><c> for</c><00:16:03.500><c> all</c><00:16:03.889><c> of</c><00:16:03.920><c> the</c><00:16:04.040><c> things</c><00:16:04.250><c> that</c><00:16:04.399><c> we</c>
+
+00:16:04.629 --> 00:16:04.639 align:start position:0%
+doing that for all of the things that we
+ 
+
+00:16:04.639 --> 00:16:07.060 align:start position:0%
+doing that for all of the things that we
+are<00:16:04.790><c> you</c><00:16:05.269><c> know</c><00:16:05.360><c> doing</c><00:16:05.810><c> every</c><00:16:06.680><c> time</c><00:16:06.829><c> we're</c>
+
+00:16:07.060 --> 00:16:07.070 align:start position:0%
+are you know doing every time we're
+ 
+
+00:16:07.070 --> 00:16:08.949 align:start position:0%
+are you know doing every time we're
+starting<00:16:07.190><c> like</c><00:16:07.490><c> creating</c><00:16:08.209><c> locales</c><00:16:08.660><c> and</c>
+
+00:16:08.949 --> 00:16:08.959 align:start position:0%
+starting like creating locales and
+ 
+
+00:16:08.959 --> 00:16:11.019 align:start position:0%
+starting like creating locales and
+character<00:16:09.529><c> datasets</c><00:16:09.920><c> that</c><00:16:10.040><c> are</c><00:16:10.339><c> so</c><00:16:10.880><c> we</c><00:16:11.000><c> can</c>
+
+00:16:11.019 --> 00:16:11.029 align:start position:0%
+character datasets that are so we can
+ 
+
+00:16:11.029 --> 00:16:13.150 align:start position:0%
+character datasets that are so we can
+probably<00:16:11.510><c> keep</c><00:16:11.959><c> on</c><00:16:12.170><c> doing</c><00:16:12.709><c> there</c><00:16:12.860><c> we</c><00:16:12.949><c> have</c><00:16:13.100><c> a</c>
+
+00:16:13.150 --> 00:16:13.160 align:start position:0%
+probably keep on doing there we have a
+ 
+
+00:16:13.160 --> 00:16:15.550 align:start position:0%
+probably keep on doing there we have a
+nice<00:16:13.490><c> new</c><00:16:13.699><c> tool</c><00:16:13.940><c> set</c><00:16:14.180><c> even</c><00:16:14.899><c> though</c><00:16:15.110><c> we</c><00:16:15.230><c> are</c><00:16:15.380><c> not</c>
+
+00:16:15.550 --> 00:16:15.560 align:start position:0%
+nice new tool set even though we are not
+ 
+
+00:16:15.560 --> 00:16:18.280 align:start position:0%
+nice new tool set even though we are not
+using<00:16:16.130><c> it</c><00:16:16.220><c> as</c><00:16:16.730><c> extensively</c><00:16:17.360><c> as</c><00:16:17.449><c> we</c><00:16:17.870><c> could</c><00:16:18.019><c> but</c>
+
+00:16:18.280 --> 00:16:18.290 align:start position:0%
+using it as extensively as we could but
+ 
+
+00:16:18.290 --> 00:16:22.360 align:start position:0%
+using it as extensively as we could but
+good<00:16:18.949><c> good</c><00:16:19.550><c> good</c><00:16:20.529><c> place</c><00:16:21.529><c> to</c><00:16:21.709><c> keep</c><00:16:21.860><c> keep</c><00:16:22.220><c> on</c>
+
+00:16:22.360 --> 00:16:22.370 align:start position:0%
+good good good place to keep keep on
+ 
+
+00:16:22.370 --> 00:16:25.660 align:start position:0%
+good good good place to keep keep on
+digging<00:16:23.230><c> all</c><00:16:24.230><c> these</c><00:16:24.500><c> numbers</c><00:16:24.889><c> are</c><00:16:25.100><c> with</c><00:16:25.339><c> C</c>
+
+00:16:25.660 --> 00:16:25.670 align:start position:0%
+digging all these numbers are with C
+ 
+
+00:16:25.670 --> 00:16:28.960 align:start position:0%
+digging all these numbers are with C
+that<00:16:25.699><c> CD</c><00:16:26.180><c> s</c><00:16:26.380><c> enabled</c><00:16:27.380><c> and</c><00:16:28.070><c> a</c><00:16:28.339><c> new</c><00:16:28.610><c> thing</c><00:16:28.940><c> that</c>
+
+00:16:28.960 --> 00:16:28.970 align:start position:0%
+that CD s enabled and a new thing that
+ 
+
+00:16:28.970 --> 00:16:32.379 align:start position:0%
+that CD s enabled and a new thing that
+might<00:16:29.209><c> help</c><00:16:29.360><c> people</c><00:16:30.519><c> pulling</c><00:16:31.519><c> in</c><00:16:31.639><c> and</c><00:16:32.060><c> testing</c>
+
+00:16:32.379 --> 00:16:32.389 align:start position:0%
+might help people pulling in and testing
+ 
+
+00:16:32.389 --> 00:16:34.629 align:start position:0%
+might help people pulling in and testing
+on<00:16:32.510><c> CD</c><00:16:32.779><c> over</c><00:16:33.440><c> twelve</c><00:16:33.680><c> is</c><00:16:33.920><c> that</c><00:16:34.100><c> CD</c><00:16:34.339><c> essence</c><00:16:34.550><c> now</c>
+
+00:16:34.629 --> 00:16:34.639 align:start position:0%
+on CD over twelve is that CD essence now
+ 
+
+00:16:34.639 --> 00:16:36.819 align:start position:0%
+on CD over twelve is that CD essence now
+enabled<00:16:35.060><c> by</c><00:16:35.149><c> default</c><00:16:35.209><c> you</c><00:16:35.720><c> don't</c><00:16:35.899><c> have</c><00:16:36.050><c> to</c><00:16:36.260><c> go</c>
+
+00:16:36.819 --> 00:16:36.829 align:start position:0%
+enabled by default you don't have to go
+ 
+
+00:16:36.829 --> 00:16:40.059 align:start position:0%
+enabled by default you don't have to go
+through<00:16:37.100><c> the</c><00:16:37.339><c> hoops</c><00:16:37.550><c> of</c><00:16:38.440><c> dumping</c><00:16:39.440><c> or</c><00:16:39.800><c> whatever</c>
+
+00:16:40.059 --> 00:16:40.069 align:start position:0%
+through the hoops of dumping or whatever
+ 
+
+00:16:40.069 --> 00:16:42.639 align:start position:0%
+through the hoops of dumping or whatever
+is<00:16:40.190><c> you'll</c><00:16:40.790><c> have</c><00:16:40.970><c> a</c><00:16:41.000><c> base</c><00:16:41.240><c> archive</c><00:16:41.779><c> ready</c><00:16:42.380><c> set</c>
+
+00:16:42.639 --> 00:16:42.649 align:start position:0%
+is you'll have a base archive ready set
+ 
+
+00:16:42.649 --> 00:16:45.220 align:start position:0%
+is you'll have a base archive ready set
+that<00:16:43.310><c> will</c><00:16:43.459><c> always</c><00:16:43.639><c> work</c><00:16:44.000><c> and</c><00:16:44.360><c> there's</c><00:16:44.630><c> been</c>
+
+00:16:45.220 --> 00:16:45.230 align:start position:0%
+that will always work and there's been
+ 
+
+00:16:45.230 --> 00:16:47.410 align:start position:0%
+that will always work and there's been
+improvements<00:16:45.709><c> to</c><00:16:45.769><c> make</c><00:16:45.920><c> sure</c><00:16:46.069><c> that</c><00:16:46.279><c> even</c><00:16:47.149><c> if</c>
+
+00:16:47.410 --> 00:16:47.420 align:start position:0%
+improvements to make sure that even if
+ 
+
+00:16:47.420 --> 00:16:49.269 align:start position:0%
+improvements to make sure that even if
+the<00:16:47.569><c> CD</c><00:16:47.959><c> historico</c><00:16:48.410><c> wasn't</c><00:16:48.740><c> you</c><00:16:49.190><c> know</c>
+
+00:16:49.269 --> 00:16:49.279 align:start position:0%
+the CD historico wasn't you know
+ 
+
+00:16:49.279 --> 00:16:52.780 align:start position:0%
+the CD historico wasn't you know
+generated<00:16:49.850><c> for</c><00:16:50.060><c> the</c><00:16:50.269><c> exact</c><00:16:51.100><c> heap</c><00:16:52.100><c> sizes</c><00:16:52.610><c> etc</c>
+
+00:16:52.780 --> 00:16:52.790 align:start position:0%
+generated for the exact heap sizes etc
+ 
+
+00:16:52.790 --> 00:16:55.780 align:start position:0%
+generated for the exact heap sizes etc
+because<00:16:53.690><c> it</c><00:16:53.839><c> it</c><00:16:54.260><c> modulates</c><00:16:54.560><c> a</c><00:16:55.100><c> little</c><00:16:55.339><c> bit</c><00:16:55.459><c> a</c>
+
+00:16:55.780 --> 00:16:55.790 align:start position:0%
+because it it modulates a little bit a
+ 
+
+00:16:55.790 --> 00:16:58.389 align:start position:0%
+because it it modulates a little bit a
+few<00:16:56.360><c> of</c><00:16:56.449><c> the</c><00:16:56.510><c> things</c><00:16:56.630><c> it</c><00:16:57.380><c> it</c><00:16:57.769><c> kind</c><00:16:58.100><c> of</c><00:16:58.220><c> allows</c>
+
+00:16:58.389 --> 00:16:58.399 align:start position:0%
+few of the things it it kind of allows
+ 
+
+00:16:58.399 --> 00:17:01.509 align:start position:0%
+few of the things it it kind of allows
+for<00:16:58.819><c> in</c><00:16:59.360><c> a</c><00:16:59.600><c> very</c><00:16:59.810><c> very</c><00:16:59.959><c> quick</c><00:17:00.339><c> patching</c><00:17:01.339><c> of</c>
+
+00:17:01.509 --> 00:17:01.519 align:start position:0%
+for in a very very quick patching of
+ 
+
+00:17:01.519 --> 00:17:04.510 align:start position:0%
+for in a very very quick patching of
+these<00:17:01.790><c> archives</c><00:17:02.389><c> into</c><00:17:02.630><c> memory</c><00:17:03.380><c> so</c><00:17:03.410><c> so</c><00:17:04.400><c> it</c>
+
+00:17:04.510 --> 00:17:04.520 align:start position:0%
+these archives into memory so so it
+ 
+
+00:17:04.520 --> 00:17:07.659 align:start position:0%
+these archives into memory so so it
+should<00:17:05.209><c> always</c><00:17:05.390><c> being</c><00:17:05.839><c> a</c><00:17:06.140><c> substantial</c><00:17:06.980><c> start</c>
+
+00:17:07.659 --> 00:17:07.669 align:start position:0%
+should always being a substantial start
+ 
+
+00:17:07.669 --> 00:17:12.579 align:start position:0%
+should always being a substantial start
+up<00:17:07.790><c> improvement</c><00:17:10.329><c> yeah</c><00:17:11.329><c> of</c><00:17:11.750><c> course</c><00:17:12.020><c> as</c><00:17:12.290><c> in</c><00:17:12.470><c> an</c>
+
+00:17:12.579 --> 00:17:12.589 align:start position:0%
+up improvement yeah of course as in an
+ 
+
+00:17:12.589 --> 00:17:14.350 align:start position:0%
+up improvement yeah of course as in an
+unreleased<00:17:13.100><c> our</c><00:17:13.400><c> local</c><00:17:13.699><c> regressions</c><00:17:14.089><c> that</c><00:17:14.240><c> we</c>
+
+00:17:14.350 --> 00:17:14.360 align:start position:0%
+unreleased our local regressions that we
+ 
+
+00:17:14.360 --> 00:17:20.789 align:start position:0%
+unreleased our local regressions that we
+are<00:17:14.419><c> looking</c><00:17:14.600><c> into</c><00:17:14.780><c> but</c><00:17:15.500><c> you</c><00:17:15.890><c> know</c><00:17:18.699><c> yeah</c><00:17:19.699><c> so</c>
+
+00:17:20.789 --> 00:17:20.799 align:start position:0%
+are looking into but you know yeah so
+ 
+
+00:17:20.799 --> 00:17:24.100 align:start position:0%
+are looking into but you know yeah so
+another<00:17:21.799><c> view</c><00:17:22.189><c> of</c><00:17:22.220><c> this</c><00:17:22.490><c> is</c><00:17:22.730><c> to</c><00:17:22.939><c> measure</c><00:17:23.689><c> the</c>
+
+00:17:24.100 --> 00:17:24.110 align:start position:0%
+another view of this is to measure the
+ 
+
+00:17:24.110 --> 00:17:26.340 align:start position:0%
+another view of this is to measure the
+amount<00:17:24.770><c> of</c><00:17:24.860><c> bytecode</c><00:17:25.370><c> that</c><00:17:25.549><c> we</c><00:17:25.699><c> execute</c>
+
+00:17:26.340 --> 00:17:26.350 align:start position:0%
+amount of bytecode that we execute
+ 
+
+00:17:26.350 --> 00:17:30.880 align:start position:0%
+amount of bytecode that we execute
+during<00:17:27.350><c> startup</c><00:17:27.740><c> and</c><00:17:29.140><c> the</c><00:17:30.140><c> number</c><00:17:30.559><c> of</c><00:17:30.679><c> byte</c>
+
+00:17:30.880 --> 00:17:30.890 align:start position:0%
+during startup and the number of byte
+ 
+
+00:17:30.890 --> 00:17:33.220 align:start position:0%
+during startup and the number of byte
+codes<00:17:31.160><c> we</c><00:17:31.460><c> execute</c><00:17:31.880><c> kind</c><00:17:32.150><c> of</c><00:17:32.270><c> shifts</c>
+
+00:17:33.220 --> 00:17:33.230 align:start position:0%
+codes we execute kind of shifts
+ 
+
+00:17:33.230 --> 00:17:36.400 align:start position:0%
+codes we execute kind of shifts
+depending<00:17:33.470><c> on</c><00:17:33.860><c> what</c><00:17:34.010><c> kind</c><00:17:34.190><c> of</c><00:17:35.230><c> machine</c><00:17:36.230><c> we</c><00:17:36.380><c> are</c>
+
+00:17:36.400 --> 00:17:36.410 align:start position:0%
+depending on what kind of machine we are
+ 
+
+00:17:36.410 --> 00:17:41.260 align:start position:0%
+depending on what kind of machine we are
+on<00:17:36.679><c> if</c><00:17:37.160><c> you</c><00:17:37.400><c> have</c><00:17:37.520><c> a</c><00:17:37.549><c> machine</c><00:17:37.730><c> with</c>
+
+00:17:41.260 --> 00:17:41.270 align:start position:0%
+ 
+ 
+
+00:17:41.270 --> 00:17:44.539 align:start position:0%
+ 
+well<00:17:42.289><c> this</c><00:17:43.289><c> oh</c><00:17:43.950><c> sorry</c>
+
+00:17:44.539 --> 00:17:44.549 align:start position:0%
+well this oh sorry
+ 
+
+00:17:44.549 --> 00:17:47.870 align:start position:0%
+well this oh sorry
+this<00:17:45.150><c> light</c><00:17:45.360><c> is</c><00:17:45.679><c> comparing</c><00:17:46.679><c> if</c><00:17:47.460><c> you</c><00:17:47.580><c> run</c><00:17:47.730><c> an</c>
+
+00:17:47.870 --> 00:17:47.880 align:start position:0%
+this light is comparing if you run an
+ 
+
+00:17:47.880 --> 00:17:51.799 align:start position:0%
+this light is comparing if you run an
+interpreter<00:17:48.510><c> only</c><00:17:49.370><c> with</c><00:17:50.809><c> out-of-the-box</c>
+
+00:17:51.799 --> 00:17:51.809 align:start position:0%
+interpreter only with out-of-the-box
+ 
+
+00:17:51.809 --> 00:17:55.220 align:start position:0%
+interpreter only with out-of-the-box
+experience<00:17:52.140><c> so</c><00:17:52.860><c> you'll</c><00:17:53.640><c> see</c><00:17:53.880><c> that</c><00:17:54.230><c> Jade</c>
+
+00:17:55.220 --> 00:17:55.230 align:start position:0%
+experience so you'll see that Jade
+ 
+
+00:17:55.230 --> 00:17:59.390 align:start position:0%
+experience so you'll see that Jade
+threads<00:17:55.669><c> quickly</c><00:17:57.620><c> take</c><00:17:58.620><c> all</c><00:17:58.890><c> the</c><00:17:59.039><c> other</c><00:17:59.190><c> code</c>
+
+00:17:59.390 --> 00:17:59.400 align:start position:0%
+threads quickly take all the other code
+ 
+
+00:17:59.400 --> 00:18:01.190 align:start position:0%
+threads quickly take all the other code
+that<00:17:59.429><c> you're</c><00:17:59.700><c> running</c><00:17:59.880><c> during</c><00:18:00.299><c> bootstrap</c><00:18:00.900><c> and</c>
+
+00:18:01.190 --> 00:18:01.200 align:start position:0%
+that you're running during bootstrap and
+ 
+
+00:18:01.200 --> 00:18:03.409 align:start position:0%
+that you're running during bootstrap and
+runs<00:18:01.650><c> them</c><00:18:01.830><c> through</c><00:18:01.860><c> yet</c><00:18:02.250><c> optimized</c><00:18:03.120><c> system</c>
+
+00:18:03.409 --> 00:18:03.419 align:start position:0%
+runs them through yet optimized system
+ 
+
+00:18:03.419 --> 00:18:08.210 align:start position:0%
+runs them through yet optimized system
+away<00:18:04.730><c> so</c><00:18:05.730><c> we</c><00:18:05.820><c> see</c><00:18:06.000><c> that</c><00:18:06.770><c> the</c><00:18:07.770><c> number</c><00:18:07.980><c> of</c><00:18:08.010><c> byte</c>
+
+00:18:08.210 --> 00:18:08.220 align:start position:0%
+away so we see that the number of byte
+ 
+
+00:18:08.220 --> 00:18:11.320 align:start position:0%
+away so we see that the number of byte
+codes<00:18:08.990><c> executed</c><00:18:09.990><c> kind</c><00:18:10.289><c> of</c><00:18:10.380><c> shifts</c>
+
+00:18:11.320 --> 00:18:11.330 align:start position:0%
+codes executed kind of shifts
+ 
+
+00:18:11.330 --> 00:18:14.750 align:start position:0%
+codes executed kind of shifts
+dramatically<00:18:12.330><c> and</c><00:18:12.809><c> dynamically</c><00:18:13.350><c> with</c><00:18:13.760><c> each</c>
+
+00:18:14.750 --> 00:18:14.760 align:start position:0%
+dramatically and dynamically with each
+ 
+
+00:18:14.760 --> 00:18:20.930 align:start position:0%
+dramatically and dynamically with each
+release<00:18:15.029><c> but</c><00:18:15.510><c> yeah</c><00:18:16.049><c> let's</c><00:18:18.710><c> so</c><00:18:19.710><c> and</c><00:18:20.070><c> well</c><00:18:20.640><c> the</c>
+
+00:18:20.930 --> 00:18:20.940 align:start position:0%
+release but yeah let's so and well the
+ 
+
+00:18:20.940 --> 00:18:24.950 align:start position:0%
+release but yeah let's so and well the
+gist<00:18:21.570><c> of</c><00:18:21.720><c> it</c><00:18:21.840><c> is</c><00:18:21.899><c> that</c><00:18:22.020><c> in</c><00:18:22.919><c> Java</c><00:18:23.309><c> 9</c><00:18:23.549><c> the</c><00:18:23.909><c> the</c><00:18:24.179><c> raw</c>
+
+00:18:24.950 --> 00:18:24.960 align:start position:0%
+gist of it is that in Java 9 the the raw
+ 
+
+00:18:24.960 --> 00:18:27.159 align:start position:0%
+gist of it is that in Java 9 the the raw
+amount<00:18:25.380><c> about</c><00:18:25.590><c> code</c><00:18:25.860><c> needed</c><00:18:26.070><c> to</c><00:18:26.220><c> bootstrap</c><00:18:26.700><c> a</c>
+
+00:18:27.159 --> 00:18:27.169 align:start position:0%
+amount about code needed to bootstrap a
+ 
+
+00:18:27.169 --> 00:18:32.960 align:start position:0%
+amount about code needed to bootstrap a
+JVM<00:18:28.190><c> increased</c><00:18:29.190><c> by</c><00:18:29.549><c> 9x</c><00:18:30.950><c> and</c><00:18:31.950><c> then</c><00:18:32.190><c> we</c><00:18:32.399><c> started</c>
+
+00:18:32.960 --> 00:18:32.970 align:start position:0%
+JVM increased by 9x and then we started
+ 
+
+00:18:32.970 --> 00:18:35.120 align:start position:0%
+JVM increased by 9x and then we started
+you<00:18:33.270><c> know</c><00:18:33.360><c> cutting</c><00:18:33.779><c> away</c><00:18:34.020><c> at</c><00:18:34.559><c> the</c><00:18:34.830><c> number</c><00:18:35.070><c> of</c>
+
+00:18:35.120 --> 00:18:35.130 align:start position:0%
+you know cutting away at the number of
+ 
+
+00:18:35.130 --> 00:18:38.360 align:start position:0%
+you know cutting away at the number of
+robot<00:18:35.789><c> codes</c><00:18:36.029><c> needed</c><00:18:36.419><c> to</c><00:18:36.480><c> execute</c><00:18:37.220><c> in</c><00:18:38.220><c> each</c>
+
+00:18:38.360 --> 00:18:38.370 align:start position:0%
+robot codes needed to execute in each
+ 
+
+00:18:38.370 --> 00:18:42.649 align:start position:0%
+robot codes needed to execute in each
+subsequent<00:18:39.090><c> release</c><00:18:39.600><c> and</c><00:18:40.100><c> yet</c><00:18:41.100><c> threads</c><00:18:41.659><c> are</c>
+
+00:18:42.649 --> 00:18:42.659 align:start position:0%
+subsequent release and yet threads are
+ 
+
+00:18:42.659 --> 00:18:45.649 align:start position:0%
+subsequent release and yet threads are
+you<00:18:43.470><c> know</c><00:18:43.559><c> starting</c><00:18:44.520><c> faster</c><00:18:44.940><c> or</c><00:18:45.179><c> starting</c><00:18:45.570><c> up</c>
+
+00:18:45.649 --> 00:18:45.659 align:start position:0%
+you know starting faster or starting up
+ 
+
+00:18:45.659 --> 00:18:49.220 align:start position:0%
+you know starting faster or starting up
+faster<00:18:46.049><c> in</c><00:18:46.200><c> the</c><00:18:46.500><c> in</c><00:18:46.919><c> the</c><00:18:47.010><c> bootstrap</c><00:18:47.340><c> cycle</c><00:18:48.230><c> so</c>
+
+00:18:49.220 --> 00:18:49.230 align:start position:0%
+faster in the in the bootstrap cycle so
+ 
+
+00:18:49.230 --> 00:18:54.019 align:start position:0%
+faster in the in the bootstrap cycle so
+so<00:18:49.679><c> it</c><00:18:49.860><c> it</c><00:18:50.899><c> well</c><00:18:51.899><c> in</c><00:18:52.289><c> the</c><00:18:52.649><c> end</c><00:18:52.770><c> we</c><00:18:53.279><c> execute</c><00:18:53.789><c> less</c>
+
+00:18:54.019 --> 00:18:54.029 align:start position:0%
+so it it well in the end we execute less
+ 
+
+00:18:54.029 --> 00:18:57.380 align:start position:0%
+so it it well in the end we execute less
+bytecode<00:18:54.570><c> even</c><00:18:54.929><c> though</c><00:18:55.320><c> we're</c><00:18:55.559><c> doing</c><00:18:55.980><c> more</c><00:18:56.490><c> in</c>
+
+00:18:57.380 --> 00:18:57.390 align:start position:0%
+bytecode even though we're doing more in
+ 
+
+00:18:57.390 --> 00:19:00.350 align:start position:0%
+bytecode even though we're doing more in
+in<00:18:57.990><c> the</c><00:18:58.110><c> bootstrap</c><00:18:58.470><c> than</c><00:18:58.770><c> before</c><00:18:59.360><c> before</c>
+
+00:19:00.350 --> 00:19:00.360 align:start position:0%
+in the bootstrap than before before
+ 
+
+00:19:00.360 --> 00:19:04.250 align:start position:0%
+in the bootstrap than before before
+you're<00:19:00.539><c> late</c><00:19:01.250><c> anyhow</c><00:19:02.840><c> you'll</c><00:19:03.840><c> see</c><00:19:04.080><c> different</c>
+
+00:19:04.250 --> 00:19:04.260 align:start position:0%
+you're late anyhow you'll see different
+ 
+
+00:19:04.260 --> 00:19:06.200 align:start position:0%
+you're late anyhow you'll see different
+slightly<00:19:04.860><c> different</c><00:19:05.190><c> numbers</c><00:19:05.549><c> maybe</c><00:19:05.760><c> on</c>
+
+00:19:06.200 --> 00:19:06.210 align:start position:0%
+slightly different numbers maybe on
+ 
+
+00:19:06.210 --> 00:19:08.960 align:start position:0%
+slightly different numbers maybe on
+systems<00:19:06.960><c> depending</c><00:19:07.380><c> on</c><00:19:07.620><c> how</c><00:19:08.010><c> many</c><00:19:08.070><c> course</c><00:19:08.549><c> I</c>
+
+00:19:08.960 --> 00:19:08.970 align:start position:0%
+systems depending on how many course I
+ 
+
+00:19:08.970 --> 00:19:11.269 align:start position:0%
+systems depending on how many course I
+mean<00:19:09.179><c> it</c><00:19:09.750><c> threads</c><00:19:10.080><c> you</c><00:19:10.260><c> can</c><00:19:10.440><c> throw</c><00:19:10.830><c> what</c><00:19:11.039><c> the</c>
+
+00:19:11.269 --> 00:19:11.279 align:start position:0%
+mean it threads you can throw what the
+ 
+
+00:19:11.279 --> 00:19:16.360 align:start position:0%
+mean it threads you can throw what the
+problem<00:19:11.820><c> of</c><00:19:11.970><c> you</c><00:19:12.390><c> know</c><00:19:14.419><c> optimizing</c><00:19:15.419><c> away</c>
+
+00:19:16.360 --> 00:19:16.370 align:start position:0%
+problem of you know optimizing away
+ 
+
+00:19:16.370 --> 00:19:19.279 align:start position:0%
+problem of you know optimizing away
+otherwise<00:19:17.370><c> interpreted</c><00:19:18.090><c> Java</c><00:19:18.270><c> code</c><00:19:18.539><c> for</c>
+
+00:19:19.279 --> 00:19:19.289 align:start position:0%
+otherwise interpreted Java code for
+ 
+
+00:19:19.289 --> 00:19:21.380 align:start position:0%
+otherwise interpreted Java code for
+example<00:19:19.380><c> the</c><00:19:19.770><c> top</c><00:19:19.980><c> top</c><00:19:20.760><c> here</c><00:19:21.029><c> is</c><00:19:21.179><c> my</c>
+
+00:19:21.380 --> 00:19:21.390 align:start position:0%
+example the top top here is my
+ 
+
+00:19:21.390 --> 00:19:24.370 align:start position:0%
+example the top top here is my
+workstation<00:19:21.750><c> which</c><00:19:22.230><c> is</c><00:19:22.380><c> a</c><00:19:22.409><c> dual</c><00:19:23.100><c> socket</c>
+
+00:19:24.370 --> 00:19:24.380 align:start position:0%
+workstation which is a dual socket
+ 
+
+00:19:24.380 --> 00:19:30.740 align:start position:0%
+workstation which is a dual socket
+workstation<00:19:25.399><c> it</c><00:19:27.080><c> quickly</c><00:19:28.490><c> sees</c><00:19:29.490><c> you</c><00:19:30.330><c> know</c><00:19:30.450><c> the</c>
+
+00:19:30.740 --> 00:19:30.750 align:start position:0%
+workstation it quickly sees you know the
+ 
+
+00:19:30.750 --> 00:19:36.110 align:start position:0%
+workstation it quickly sees you know the
+improvements<00:19:31.429><c> from</c><00:19:32.429><c> from</c><00:19:32.850><c> from</c><00:19:33.179><c> 9</c><00:19:33.750><c> to</c><00:19:34.020><c> 12</c><00:19:35.120><c> lead</c>
+
+00:19:36.110 --> 00:19:36.120 align:start position:0%
+improvements from from from 9 to 12 lead
+ 
+
+00:19:36.120 --> 00:19:39.529 align:start position:0%
+improvements from from from 9 to 12 lead
+lead<00:19:36.600><c> into</c><00:19:36.990><c> and</c><00:19:37.169><c> you</c><00:19:37.679><c> know</c><00:19:37.799><c> we</c><00:19:38.460><c> are</c><00:19:38.640><c> we</c><00:19:39.299><c> are</c><00:19:39.330><c> now</c>
+
+00:19:39.529 --> 00:19:39.539 align:start position:0%
+lead into and you know we are we are now
+ 
+
+00:19:39.539 --> 00:19:41.840 align:start position:0%
+lead into and you know we are we are now
+starting<00:19:39.809><c> and</c><00:19:40.140><c> running</c><00:19:40.230><c> faster</c><00:19:40.799><c> than</c><00:19:41.190><c> Java</c><00:19:41.669><c> 8</c>
+
+00:19:41.840 --> 00:19:41.850 align:start position:0%
+starting and running faster than Java 8
+ 
+
+00:19:41.850 --> 00:19:45.680 align:start position:0%
+starting and running faster than Java 8
+but<00:19:42.600><c> I</c><00:19:42.659><c> don't</c><00:19:42.840><c> I</c><00:19:42.960><c> don't</c><00:19:43.080><c> see</c><00:19:43.380><c> I</c><00:19:44.450><c> kind</c><00:19:45.450><c> of</c><00:19:45.510><c> break</c>
+
+00:19:45.680 --> 00:19:45.690 align:start position:0%
+but I don't I don't see I kind of break
+ 
+
+00:19:45.690 --> 00:19:49.190 align:start position:0%
+but I don't I don't see I kind of break
+even<00:19:46.080><c> on</c><00:19:46.169><c> my</c><00:19:46.320><c> laptop</c><00:19:46.850><c> because</c><00:19:47.850><c> it</c><00:19:48.720><c> has</c><00:19:48.899><c> fewer</c>
+
+00:19:49.190 --> 00:19:49.200 align:start position:0%
+even on my laptop because it has fewer
+ 
+
+00:19:49.200 --> 00:19:53.310 align:start position:0%
+even on my laptop because it has fewer
+yet<00:19:49.590><c> threads</c><00:19:49.950><c> to</c><00:19:50.250><c> to</c><00:19:50.850><c> kind</c><00:19:51.419><c> of</c><00:19:51.480><c> leverage</c><00:19:51.720><c> the</c>
+
+00:19:53.310 --> 00:19:53.320 align:start position:0%
+yet threads to to kind of leverage the
+ 
+
+00:19:53.320 --> 00:19:56.700 align:start position:0%
+yet threads to to kind of leverage the
+the<00:19:53.519><c> the</c><00:19:54.519><c> improvements</c><00:19:55.269><c> that</c><00:19:55.299><c> we've</c><00:19:55.600><c> done</c><00:19:55.750><c> but</c>
+
+00:19:56.700 --> 00:19:56.710 align:start position:0%
+the the improvements that we've done but
+ 
+
+00:19:56.710 --> 00:20:02.509 align:start position:0%
+the the improvements that we've done but
+they're<00:19:56.889><c> very</c><00:19:57.820><c> very</c><00:19:57.940><c> even</c><00:19:58.389><c> now</c><00:19:58.539><c> on</c><00:19:59.730><c> Java</c><00:20:00.730><c> 13</c>
+
+00:20:02.509 --> 00:20:02.519 align:start position:0%
+they're very very even now on Java 13
+ 
+
+00:20:02.519 --> 00:20:13.220 align:start position:0%
+they're very very even now on Java 13
+anyhow<00:20:03.519><c> let's</c><00:20:06.570><c> move</c><00:20:07.570><c> on</c><00:20:07.750><c> to</c><00:20:09.600><c> lambdas</c><00:20:10.600><c> and</c><00:20:11.909><c> well</c>
+
+00:20:13.220 --> 00:20:13.230 align:start position:0%
+anyhow let's move on to lambdas and well
+ 
+
+00:20:13.230 --> 00:20:18.720 align:start position:0%
+anyhow let's move on to lambdas and well
+what<00:20:15.630><c> we</c><00:20:16.740><c> since</c><00:20:17.740><c> since</c><00:20:17.950><c> you</c><00:20:18.070><c> have</c><00:20:18.190><c> eight</c><00:20:18.399><c> when</c>
+
+00:20:18.720 --> 00:20:18.730 align:start position:0%
+what we since since you have eight when
+ 
+
+00:20:18.730 --> 00:20:21.570 align:start position:0%
+what we since since you have eight when
+lambdas<00:20:19.059><c> were</c><00:20:19.179><c> introduced</c><00:20:20.220><c> we've</c><00:20:21.220><c> kind</c><00:20:21.490><c> of</c>
+
+00:20:21.570 --> 00:20:21.580 align:start position:0%
+lambdas were introduced we've kind of
+ 
+
+00:20:21.580 --> 00:20:24.060 align:start position:0%
+lambdas were introduced we've kind of
+been<00:20:22.480><c> cognizant</c><00:20:23.350><c> to</c><00:20:23.590><c> the</c><00:20:23.710><c> fact</c><00:20:23.950><c> that</c>
+
+00:20:24.060 --> 00:20:24.070 align:start position:0%
+been cognizant to the fact that
+ 
+
+00:20:24.070 --> 00:20:28.529 align:start position:0%
+been cognizant to the fact that
+bootstrapping<00:20:25.029><c> lambdas</c><00:20:25.480><c> is</c><00:20:25.750><c> kind</c><00:20:26.710><c> of</c><00:20:27.539><c> heavy</c>
+
+00:20:28.529 --> 00:20:28.539 align:start position:0%
+bootstrapping lambdas is kind of heavy
+ 
+
+00:20:28.539 --> 00:20:33.889 align:start position:0%
+bootstrapping lambdas is kind of heavy
+on<00:20:28.690><c> the</c><00:20:29.139><c> on</c><00:20:29.740><c> the</c><00:20:30.039><c> cost</c><00:20:30.940><c> on</c><00:20:31.350><c> first</c><00:20:32.350><c> or</c><00:20:32.620><c> initial</c>
+
+00:20:33.889 --> 00:20:33.899 align:start position:0%
+on the on the cost on first or initial
+ 
+
+00:20:33.899 --> 00:20:41.940 align:start position:0%
+on the on the cost on first or initial
+initial<00:20:34.899><c> use</c><00:20:37.379><c> so</c><00:20:38.820><c> on</c><00:20:39.820><c> Java</c><00:20:40.330><c> 8</c><00:20:40.570><c> if</c><00:20:41.200><c> you</c><00:20:41.379><c> take</c><00:20:41.740><c> the</c>
+
+00:20:41.940 --> 00:20:41.950 align:start position:0%
+initial use so on Java 8 if you take the
+ 
+
+00:20:41.950 --> 00:20:46.940 align:start position:0%
+initial use so on Java 8 if you take the
+simple<00:20:43.230><c> simplest</c><00:20:44.789><c> Java</c><00:20:45.789><c> Java</c><00:20:46.419><c> lambda</c>
+
+00:20:46.940 --> 00:20:46.950 align:start position:0%
+simple simplest Java Java lambda
+ 
+
+00:20:46.950 --> 00:20:50.070 align:start position:0%
+simple simplest Java Java lambda
+benchmark<00:20:47.950><c> and</c><00:20:48.250><c> and</c><00:20:49.179><c> run</c><00:20:49.509><c> it</c><00:20:49.629><c> you'll</c><00:20:49.809><c> see</c><00:20:50.049><c> that</c>
+
+00:20:50.070 --> 00:20:50.080 align:start position:0%
+benchmark and and run it you'll see that
+ 
+
+00:20:50.080 --> 00:20:52.499 align:start position:0%
+benchmark and and run it you'll see that
+it'll<00:20:50.679><c> have</c><00:20:51.009><c> an</c><00:20:51.220><c> overhead</c><00:20:51.549><c> of</c><00:20:51.850><c> the</c><00:20:51.970><c> equivalent</c>
+
+00:20:52.499 --> 00:20:52.509 align:start position:0%
+it'll have an overhead of the equivalent
+ 
+
+00:20:52.509 --> 00:20:58.860 align:start position:0%
+it'll have an overhead of the equivalent
+you<00:20:53.289><c> know</c><00:20:55.440><c> legacy</c><00:20:56.440><c> in</c><00:20:56.649><c> Java</c><00:20:56.889><c> code</c><00:20:57.070><c> that</c><00:20:57.669><c> was</c><00:20:58.480><c> a</c>
+
+00:20:58.860 --> 00:20:58.870 align:start position:0%
+you know legacy in Java code that was a
+ 
+
+00:20:58.870 --> 00:21:00.570 align:start position:0%
+you know legacy in Java code that was a
+little<00:20:59.289><c> bit</c><00:20:59.379><c> on</c><00:20:59.470><c> the</c><00:20:59.559><c> heavy</c><00:20:59.649><c> side</c><00:20:59.769><c> my</c>
+
+00:21:00.570 --> 00:21:00.580 align:start position:0%
+little bit on the heavy side my
+ 
+
+00:21:00.580 --> 00:21:02.669 align:start position:0%
+little bit on the heavy side my
+workstation<00:21:00.850><c> I</c><00:21:01.120><c> could</c><00:21:01.509><c> see</c><00:21:01.629><c> about</c><00:21:02.289><c> 90</c>
+
+00:21:02.669 --> 00:21:02.679 align:start position:0%
+workstation I could see about 90
+ 
+
+00:21:02.679 --> 00:21:06.419 align:start position:0%
+workstation I could see about 90
+milliseconds<00:21:03.539><c> we</c><00:21:04.919><c> started</c><00:21:05.919><c> looking</c><00:21:06.129><c> at</c><00:21:06.250><c> that</c>
+
+00:21:06.419 --> 00:21:06.429 align:start position:0%
+milliseconds we started looking at that
+ 
+
+00:21:06.429 --> 00:21:10.159 align:start position:0%
+milliseconds we started looking at that
+in<00:21:06.820><c> Java</c><00:21:07.240><c> 9</c><00:21:07.539><c> -</c><00:21:08.200><c> the</c><00:21:08.559><c> way</c><00:21:09.250><c> a</c><00:21:09.519><c> lot</c><00:21:09.820><c> of</c><00:21:09.940><c> the</c>
+
+00:21:10.159 --> 00:21:10.169 align:start position:0%
+in Java 9 - the way a lot of the
+ 
+
+00:21:10.169 --> 00:21:13.519 align:start position:0%
+in Java 9 - the way a lot of the
+overheads<00:21:11.169><c> of</c><00:21:11.289><c> these</c><00:21:11.639><c> invokedynamic</c>
+
+00:21:13.519 --> 00:21:13.529 align:start position:0%
+overheads of these invokedynamic
+ 
+
+00:21:13.529 --> 00:21:18.419 align:start position:0%
+overheads of these invokedynamic
+the<00:21:14.529><c> of</c><00:21:14.799><c> the</c><00:21:14.950><c> lambda</c><00:21:15.879><c> meter</c><00:21:16.090><c> factory</c><00:21:16.769><c> thing</c><00:21:17.769><c> so</c>
+
+00:21:18.419 --> 00:21:18.429 align:start position:0%
+the of the lambda meter factory thing so
+ 
+
+00:21:18.429 --> 00:21:21.119 align:start position:0%
+the of the lambda meter factory thing so
+we<00:21:19.169><c> cleaned</c><00:21:20.169><c> up</c><00:21:20.289><c> the</c><00:21:20.350><c> implementation</c><00:21:20.590><c> a</c><00:21:20.980><c> lot</c>
+
+00:21:21.119 --> 00:21:21.129 align:start position:0%
+we cleaned up the implementation a lot
+ 
+
+00:21:21.129 --> 00:21:25.950 align:start position:0%
+we cleaned up the implementation a lot
+in<00:21:21.460><c> the</c><00:21:21.580><c> opening</c><00:21:21.850><c> decay</c><00:21:22.120><c> we</c><00:21:24.179><c> wrote</c><00:21:25.179><c> a</c><00:21:25.450><c> jailing</c>
+
+00:21:25.950 --> 00:21:25.960 align:start position:0%
+in the opening decay we wrote a jailing
+ 
+
+00:21:25.960 --> 00:21:28.470 align:start position:0%
+in the opening decay we wrote a jailing
+plugin<00:21:26.409><c> that</c><00:21:26.620><c> allows</c><00:21:26.740><c> for</c><00:21:27.370><c> a</c><00:21:27.399><c> pre</c><00:21:27.879><c> generation</c>
+
+00:21:28.470 --> 00:21:28.480 align:start position:0%
+plugin that allows for a pre generation
+ 
+
+00:21:28.480 --> 00:21:30.539 align:start position:0%
+plugin that allows for a pre generation
+of<00:21:28.659><c> some</c><00:21:28.899><c> of</c><00:21:29.019><c> the</c><00:21:29.139><c> methyl</c><00:21:29.440><c> handles</c><00:21:29.830><c> or</c><00:21:30.129><c> method</c>
+
+00:21:30.539 --> 00:21:30.549 align:start position:0%
+of some of the methyl handles or method
+ 
+
+00:21:30.549 --> 00:21:34.049 align:start position:0%
+of some of the methyl handles or method
+yeah<00:21:31.419><c> method</c><00:21:31.750><c> handle</c><00:21:31.960><c> forms</c><00:21:32.460><c> like</c><00:21:33.460><c> link</c><00:21:33.759><c> link</c>
+
+00:21:34.049 --> 00:21:34.059 align:start position:0%
+yeah method handle forms like link link
+ 
+
+00:21:34.059 --> 00:21:35.970 align:start position:0%
+yeah method handle forms like link link
+lambda<00:21:34.750><c> forms</c><00:21:34.960><c> etcetera</c><00:21:35.080><c> there</c><00:21:35.409><c> are</c><00:21:35.529><c> like</c><00:21:35.860><c> the</c>
+
+00:21:35.970 --> 00:21:35.980 align:start position:0%
+lambda forms etcetera there are like the
+ 
+
+00:21:35.980 --> 00:21:40.230 align:start position:0%
+lambda forms etcetera there are like the
+constituents<00:21:37.440><c> building</c><00:21:38.440><c> blocks</c><00:21:38.679><c> off</c><00:21:39.009><c> of</c><00:21:40.000><c> some</c>
+
+00:21:40.230 --> 00:21:40.240 align:start position:0%
+constituents building blocks off of some
+ 
+
+00:21:40.240 --> 00:21:42.299 align:start position:0%
+constituents building blocks off of some
+of<00:21:40.360><c> the</c><00:21:40.480><c> metal</c><00:21:40.779><c> handle</c><00:21:41.080><c> framework</c><00:21:41.529><c> that</c><00:21:42.159><c> is</c>
+
+00:21:42.299 --> 00:21:42.309 align:start position:0%
+of the metal handle framework that is
+ 
+
+00:21:42.309 --> 00:21:45.539 align:start position:0%
+of the metal handle framework that is
+used<00:21:42.549><c> to</c><00:21:42.840><c> implement</c><00:21:44.039><c> java.lang</c><00:21:45.039><c> invoking</c><00:21:45.429><c> in</c>
+
+00:21:45.539 --> 00:21:45.549 align:start position:0%
+used to implement java.lang invoking in
+ 
+
+00:21:45.549 --> 00:21:48.930 align:start position:0%
+used to implement java.lang invoking in
+d<00:21:45.700><c> and</c><00:21:46.480><c> we</c><00:21:46.929><c> could</c><00:21:47.049><c> cut</c><00:21:47.230><c> away</c><00:21:47.440><c> like</c><00:21:47.830><c> 50%</c><00:21:48.669><c> of</c><00:21:48.789><c> the</c>
+
+00:21:48.930 --> 00:21:48.940 align:start position:0%
+d and we could cut away like 50% of the
+ 
+
+00:21:48.940 --> 00:21:54.509 align:start position:0%
+d and we could cut away like 50% of the
+overhead<00:21:49.419><c> of</c><00:21:49.450><c> of</c><00:21:50.220><c> lambdas</c><00:21:51.720><c> so</c><00:21:53.370><c> even</c><00:21:54.370><c> though</c>
+
+00:21:54.509 --> 00:21:54.519 align:start position:0%
+overhead of of lambdas so even though
+ 
+
+00:21:54.519 --> 00:21:56.999 align:start position:0%
+overhead of of lambdas so even though
+then<00:21:54.940><c> start</c><00:21:55.840><c> up</c><00:21:55.929><c> in</c><00:21:56.080><c> general</c><00:21:56.200><c> regressed</c><00:21:56.860><c> in</c>
+
+00:21:56.999 --> 00:21:57.009 align:start position:0%
+then start up in general regressed in
+ 
+
+00:21:57.009 --> 00:22:00.509 align:start position:0%
+then start up in general regressed in
+jama<00:21:57.190><c> 9</c><00:21:57.399><c> as</c><00:21:58.090><c> if</c><00:21:58.419><c> your</c><00:21:58.629><c> application</c><00:21:59.320><c> hand</c><00:21:59.559><c> one</c>
+
+00:22:00.509 --> 00:22:00.519 align:start position:0%
+jama 9 as if your application hand one
+ 
+
+00:22:00.519 --> 00:22:01.649 align:start position:0%
+jama 9 as if your application hand one
+or<00:22:00.669><c> a</c><00:22:00.700><c> few</c><00:22:00.879><c> lambdas</c><00:22:01.299><c> you</c><00:22:01.419><c> were</c><00:22:01.510><c> actually</c>
+
+00:22:01.649 --> 00:22:01.659 align:start position:0%
+or a few lambdas you were actually
+ 
+
+00:22:01.659 --> 00:22:05.220 align:start position:0%
+or a few lambdas you were actually
+improving<00:22:01.990><c> even</c><00:22:02.620><c> on</c><00:22:02.830><c> nine</c>
+
+00:22:05.220 --> 00:22:05.230 align:start position:0%
+improving even on nine
+ 
+
+00:22:05.230 --> 00:22:07.860 align:start position:0%
+improving even on nine
+and<00:22:05.919><c> we</c><00:22:06.010><c> kept</c><00:22:06.190><c> improving</c><00:22:06.309><c> in</c><00:22:06.669><c> nine</c><00:22:06.880><c> and</c><00:22:07.539><c> in</c><00:22:07.690><c> ten</c>
+
+00:22:07.860 --> 00:22:07.870 align:start position:0%
+and we kept improving in nine and in ten
+ 
+
+00:22:07.870 --> 00:22:11.130 align:start position:0%
+and we kept improving in nine and in ten
+as<00:22:07.990><c> well</c><00:22:08.019><c> and</c><00:22:09.000><c> then</c><00:22:10.000><c> I</c><00:22:10.120><c> realized</c><00:22:10.480><c> that</c><00:22:10.630><c> most</c><00:22:10.990><c> of</c>
+
+00:22:11.130 --> 00:22:11.140 align:start position:0%
+as well and then I realized that most of
+ 
+
+00:22:11.140 --> 00:22:13.680 align:start position:0%
+as well and then I realized that most of
+the<00:22:11.260><c> method</c><00:22:11.860><c> handle</c><00:22:12.159><c> adaptive</c><00:22:12.669><c> adapter</c><00:22:13.480><c> stuff</c>
+
+00:22:13.680 --> 00:22:13.690 align:start position:0%
+the method handle adaptive adapter stuff
+ 
+
+00:22:13.690 --> 00:22:17.370 align:start position:0%
+the method handle adaptive adapter stuff
+that<00:22:13.840><c> we</c><00:22:13.990><c> did</c><00:22:14.140><c> in</c><00:22:15.630><c> in</c><00:22:16.630><c> setting</c><00:22:17.049><c> up</c><00:22:17.110><c> the</c><00:22:17.350><c> first</c>
+
+00:22:17.370 --> 00:22:17.380 align:start position:0%
+that we did in in setting up the first
+ 
+
+00:22:17.380 --> 00:22:20.159 align:start position:0%
+that we did in in setting up the first
+in<00:22:18.010><c> initial</c><00:22:18.549><c> invocation</c><00:22:18.970><c> of</c><00:22:19.179><c> a</c><00:22:19.299><c> lambda</c><00:22:19.480><c> was</c>
+
+00:22:20.159 --> 00:22:20.169 align:start position:0%
+in initial invocation of a lambda was
+ 
+
+00:22:20.169 --> 00:22:21.810 align:start position:0%
+in initial invocation of a lambda was
+actually<00:22:20.470><c> an</c><00:22:20.559><c> unnecessary</c><00:22:21.070><c> and</c><00:22:21.220><c> an</c><00:22:21.309><c> artifact</c>
+
+00:22:21.810 --> 00:22:21.820 align:start position:0%
+actually an unnecessary and an artifact
+ 
+
+00:22:21.820 --> 00:22:24.899 align:start position:0%
+actually an unnecessary and an artifact
+that<00:22:22.000><c> we</c><00:22:22.210><c> weren't</c><00:22:22.840><c> using</c><00:22:23.429><c> static</c><00:22:24.429><c> type</c>
+
+00:22:24.899 --> 00:22:24.909 align:start position:0%
+that we weren't using static type
+ 
+
+00:22:24.909 --> 00:22:27.149 align:start position:0%
+that we weren't using static type
+information<00:22:25.570><c> in</c><00:22:25.809><c> the</c><00:22:25.960><c> code</c><00:22:26.169><c> that</c><00:22:26.409><c> called</c><00:22:26.919><c> the</c>
+
+00:22:27.149 --> 00:22:27.159 align:start position:0%
+information in the code that called the
+ 
+
+00:22:27.159 --> 00:22:28.980 align:start position:0%
+information in the code that called the
+bootstrap<00:22:27.460><c> method</c><00:22:27.970><c> so</c><00:22:28.090><c> we</c><00:22:28.179><c> fixed</c><00:22:28.450><c> that</c><00:22:28.480><c> got</c>
+
+00:22:28.980 --> 00:22:28.990 align:start position:0%
+bootstrap method so we fixed that got
+ 
+
+00:22:28.990 --> 00:22:33.600 align:start position:0%
+bootstrap method so we fixed that got
+rid<00:22:29.230><c> of</c><00:22:29.260><c> another</c><00:22:29.799><c> 75</c><00:22:30.370><c> percent</c><00:22:30.669><c> of</c><00:22:30.850><c> the</c><00:22:31.570><c> Oh</c>
+

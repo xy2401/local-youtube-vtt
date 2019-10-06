@@ -1,0 +1,692 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.155
+[ELECTRONIC THEME MUSIC]
+
+00:00:16.610 --> 00:00:17.690
+[CLICK]
+
+00:00:18.530 --> 00:00:21.890
+MATT: So what do you think
+the future holds for life?
+
+00:00:21.890 --> 00:00:23.790
+ADDY: The future for life?
+
+00:00:23.790 --> 00:00:30.340
+Global warming, Skynet taking
+over, the human species just
+
+00:00:30.340 --> 00:00:31.750
+being obliterated.
+
+00:00:31.750 --> 00:00:33.660
+But on the flip
+side we've got ES6,
+
+00:00:33.660 --> 00:00:34.844
+so it's all going to be OK.
+
+00:00:34.844 --> 00:00:36.510
+MATT: Everything
+worked out great, then.
+
+00:00:36.510 --> 00:00:37.960
+ADDY: It's going to be great.
+
+00:00:37.960 --> 00:00:39.600
+MATT: Anyway, you were right.
+
+00:00:39.600 --> 00:00:41.187
+ES6 is awesome.
+
+00:00:41.187 --> 00:00:42.020
+ADDY: It is awesome.
+
+00:00:44.382 --> 00:00:46.590
+MATT: I guess the one thing
+is, at the moment, is you
+
+00:00:46.590 --> 00:00:51.220
+can't just use vanilla ES6 in
+the browser like, right now.
+
+00:00:51.220 --> 00:00:54.935
+ADDY: We've been landing a
+lot of ES6 features in Chrome
+
+00:00:54.935 --> 00:00:56.810
+and V8 over the last
+couple of years.
+
+00:00:56.810 --> 00:00:58.810
+Other browser vendors have been
+doing an amazing job of this,
+
+00:00:58.810 --> 00:00:59.040
+too.
+
+00:00:59.040 --> 00:01:00.623
+But we're not quite
+at the point where
+
+00:01:00.623 --> 00:01:04.280
+you can just use it in
+production without requiring
+
+00:01:04.280 --> 00:01:05.580
+transpilation.
+
+00:01:05.580 --> 00:01:08.690
+And on that side of
+things, a lot of people
+
+00:01:08.690 --> 00:01:10.280
+probably need a good transpiler.
+
+00:01:10.280 --> 00:01:12.675
+I think most people are
+using Babel at the moment.
+
+00:01:12.675 --> 00:01:14.550
+MATT: Yeah, that seems
+to be the popular one.
+
+00:01:14.550 --> 00:01:16.250
+ADDY: It's pretty legit.
+
+00:01:16.250 --> 00:01:18.134
+And if you're using
+Babel and you're
+
+00:01:18.134 --> 00:01:20.550
+trying to get it into your
+build process, what we probably
+
+00:01:20.550 --> 00:01:23.160
+use are things like Gulp-Babel.
+
+00:01:23.160 --> 00:01:25.120
+Just a few lines of
+code, get set up,
+
+00:01:25.120 --> 00:01:27.130
+it's very, very straightforward.
+
+00:01:27.130 --> 00:01:29.260
+But I think you've
+been playing around
+
+00:01:29.260 --> 00:01:32.684
+with Browserify and
+Babelify for bundles, right?
+
+00:01:32.684 --> 00:01:34.100
+MATT: Yeah, so the
+only reason I'm
+
+00:01:34.100 --> 00:01:38.294
+using both is Browserify will
+grab any of the imported files
+
+00:01:38.294 --> 00:01:40.460
+and bring them all into
+one, so that when you run it
+
+00:01:40.460 --> 00:01:42.940
+through Babelify it's got
+everything in one place
+
+00:01:42.940 --> 00:01:45.680
+and it can just munge
+it all together.
+
+00:01:45.680 --> 00:01:47.570
+And that seems to
+be working out OK.
+
+00:01:47.570 --> 00:01:50.250
+One thing you see in
+a lot of tutorials
+
+00:01:50.250 --> 00:01:53.220
+is people will just say,
+define your script file
+
+00:01:53.220 --> 00:01:54.640
+and then run it
+through Browserify
+
+00:01:54.640 --> 00:01:57.470
+and then run that through Babel,
+and then everything will just
+
+00:01:57.470 --> 00:01:58.620
+work out.
+
+00:01:58.620 --> 00:02:00.340
+And it's just for that one file.
+
+00:02:00.340 --> 00:02:03.470
+And that's fine,
+but the minute you
+
+00:02:03.470 --> 00:02:06.084
+add another file for a
+separate page or something,
+
+00:02:06.084 --> 00:02:07.250
+everything just falls apart.
+
+00:02:07.250 --> 00:02:08.131
+ADDY: Yep.
+
+00:02:08.131 --> 00:02:10.214
+MATT: So I've had to do a
+little bit of work there
+
+00:02:10.214 --> 00:02:12.990
+where it's just like, I'm
+using glob.sync to basically
+
+00:02:12.990 --> 00:02:15.180
+just go through a set of
+files in my build process.
+
+00:02:15.180 --> 00:02:18.470
+And it looks for just .es6.js.
+
+00:02:18.470 --> 00:02:21.574
+And those files will then
+get run through Browserify,
+
+00:02:21.574 --> 00:02:23.240
+and then once it gets
+through Browserify
+
+00:02:23.240 --> 00:02:25.860
+it gets sent through Babelify,
+and then it creates the files.
+
+00:02:25.860 --> 00:02:26.680
+ADDY: That's legit.
+
+00:02:26.680 --> 00:02:29.550
+MATT: So I've got a nice little
+workflow going right now, so
+
+00:02:29.550 --> 00:02:31.120
+that I can just
+write ES6 and then
+
+00:02:31.120 --> 00:02:33.300
+everything's ready
+for the server on ES5.
+
+00:02:33.300 --> 00:02:34.030
+Good to go.
+
+00:02:34.030 --> 00:02:34.530
+ADDY: Cool.
+
+00:02:34.530 --> 00:02:38.186
+So the first step
+is transpilation.
+
+00:02:38.186 --> 00:02:39.560
+One thing we need
+to do, usually,
+
+00:02:39.560 --> 00:02:43.460
+is both lint our code
+and style check it.
+
+00:02:43.460 --> 00:02:46.190
+Now what I've been mostly
+using for this stuff is,
+
+00:02:46.190 --> 00:02:51.140
+I've used JSHint pretty heavily
+in the past for code linting
+
+00:02:51.140 --> 00:02:53.510
+and JSCS for code
+style checking.
+
+00:02:53.510 --> 00:02:57.480
+And JSCS 2.0 now supports
+Babel, so you can style
+
+00:02:57.480 --> 00:02:58.310
+check your code.
+
+00:02:58.310 --> 00:03:01.962
+It also has a number
+of ES6-only features,
+
+00:03:01.962 --> 00:03:02.920
+which are kind of nice.
+
+00:03:02.920 --> 00:03:04.600
+Like ES6-only rules.
+
+00:03:04.600 --> 00:03:06.630
+So let's say I've
+got some code that's
+
+00:03:06.630 --> 00:03:08.130
+using string concatenation.
+
+00:03:08.130 --> 00:03:11.350
+I can actually add a
+rule to my JSCS config
+
+00:03:11.350 --> 00:03:13.230
+and say, well, I
+want that code to be
+
+00:03:13.230 --> 00:03:14.920
+using template strings instead.
+
+00:03:14.920 --> 00:03:17.042
+And then throw it a
+little exception and say,
+
+00:03:17.042 --> 00:03:19.181
+you should be using
+template strings.
+
+00:03:19.181 --> 00:03:19.680
+MATT: Nice.
+
+00:03:19.680 --> 00:03:22.480
+So if you want to do
+things like-- in this case
+
+00:03:22.480 --> 00:03:25.650
+you could use the fat arrow
+function force.start as just
+
+00:03:25.650 --> 00:03:26.500
+a linting rule.
+
+00:03:26.500 --> 00:03:27.390
+ADDY: Yes, exactly.
+
+00:03:27.390 --> 00:03:27.890
+MATT: Nice.
+
+00:03:27.890 --> 00:03:29.620
+ADDY: Which is kind of sweet.
+
+00:03:29.620 --> 00:03:31.430
+On the linting side
+of things, there
+
+00:03:31.430 --> 00:03:36.390
+are a few people that have been
+switching over to using ESLint.
+
+00:03:36.390 --> 00:03:38.990
+ESLint is a tool by
+Nicholas Zakas that
+
+00:03:38.990 --> 00:03:42.320
+tries to combine some of the
+features you'd find in JSCS
+
+00:03:42.320 --> 00:03:46.570
+and JSHint, but one could
+argue it's a little bit
+
+00:03:46.570 --> 00:03:47.640
+more future-facing.
+
+00:03:47.640 --> 00:03:50.190
+Tries to support ES6
+a little bit better.
+
+00:03:50.190 --> 00:03:52.690
+I still personally
+use JSHint and JSCS,
+
+00:03:52.690 --> 00:03:54.659
+but ESLint is really solid.
+
+00:03:54.659 --> 00:03:56.450
+It's an option a bunch
+of people are using,
+
+00:03:56.450 --> 00:03:58.530
+so it's worth checking out too.
+
+00:03:58.530 --> 00:03:59.290
+MATT: Yeah.
+
+00:03:59.290 --> 00:04:01.610
+I've still just stuck
+to JSHint and JSCS.
+
+00:04:01.610 --> 00:04:03.610
+Logic is like, that's
+what I'm used to.
+
+00:04:03.610 --> 00:04:06.750
+The only thing you have to
+do is add in the esnext:true
+
+00:04:06.750 --> 00:04:11.705
+into the .jshintrc
+and .jscsrc files.
+
+00:04:11.705 --> 00:04:14.240
+So yeah, esnext: true, and
+then all the linting rules just
+
+00:04:14.240 --> 00:04:15.001
+started working.
+
+00:04:15.001 --> 00:04:16.959
+Like, everything that it
+was complaining about,
+
+00:04:16.959 --> 00:04:18.769
+something just went away
+and it's just like, oh, OK,
+
+00:04:18.769 --> 00:04:20.144
+we're using a
+class, that's fine.
+
+00:04:20.144 --> 00:04:22.770
+There you go.
+
+00:04:22.770 --> 00:04:24.750
+That has basically
+been my setup process,
+
+00:04:24.750 --> 00:04:27.041
+which has actually been fairly
+simple once I got it all
+
+00:04:27.041 --> 00:04:28.650
+set up.
+
+00:04:28.650 --> 00:04:30.590
+The major feature
+that I'm just in love
+
+00:04:30.590 --> 00:04:32.900
+with is the fact
+that you can have
+
+00:04:32.900 --> 00:04:34.615
+a file with a
+function or a class
+
+00:04:34.615 --> 00:04:38.320
+and you basically
+just define an export,
+
+00:04:38.320 --> 00:04:40.840
+saying this part, this
+function, or this class,
+
+00:04:40.840 --> 00:04:44.870
+is allowed to be exported and
+imported by another class.
+
+00:04:44.870 --> 00:04:47.380
+And that alone, I've
+just fallen in love with.
+
+00:04:47.380 --> 00:04:50.930
+Everything to do with
+ES6 Modules is fantastic.
+
+00:04:50.930 --> 00:04:52.750
+Ability to import,
+which means you can then
+
+00:04:52.750 --> 00:04:55.400
+extend one of your classes
+into the other one.
+
+00:04:55.400 --> 00:04:57.150
+And then just all the
+boilerplate for this
+
+00:04:57.150 --> 00:05:01.080
+.prototype, just getting rid
+of of that and just defining
+
+00:05:01.080 --> 00:05:02.280
+a function.
+
+00:05:02.280 --> 00:05:04.370
+Like, my code, I'm
+so much happier
+
+00:05:04.370 --> 00:05:06.190
+with how much cleaner it looks.
+
+00:05:06.190 --> 00:05:09.590
+And because I come from a
+bit of a Java background,
+
+00:05:09.590 --> 00:05:13.366
+this is just so super
+friendly to me, it's insane.
+
+00:05:13.366 --> 00:05:14.990
+What are your favorite
+features in ES6?
+
+00:05:14.990 --> 00:05:17.680
+ADDY: I'm not gonna critique
+you for Java too much.
+
+00:05:17.680 --> 00:05:20.980
+But what do I like?
+
+00:05:20.980 --> 00:05:23.070
+I like everything.
+
+00:05:23.070 --> 00:05:24.640
+I kind of like template strings.
+
+00:05:24.640 --> 00:05:25.181
+They're neat.
+
+00:05:27.810 --> 00:05:31.580
+The shorthand object
+literal stuff, super neat,
+
+00:05:31.580 --> 00:05:33.620
+a lot less boilerplate involved.
+
+00:05:33.620 --> 00:05:36.770
+I love computed property names.
+
+00:05:36.770 --> 00:05:38.470
+Having that in the
+language is amazing.
+
+00:05:38.470 --> 00:05:39.730
+Fat arrows are neat, too.
+
+00:05:39.730 --> 00:05:40.570
+WeakMaps.
+
+00:05:40.570 --> 00:05:42.580
+WeakMaps and WeakSets.
+
+00:05:42.580 --> 00:05:45.390
+But I did want to name-drop
+one or two things.
+
+00:05:45.390 --> 00:05:46.910
+MATT: Another name-drop, Addy?
+
+00:05:46.910 --> 00:05:47.410
+Really?
+
+00:05:47.410 --> 00:05:48.820
+ADDY: I know, you're shocked.
+
+00:05:48.820 --> 00:05:50.820
+MATT: I'm surprised you're
+not wearing a T-shirt
+
+00:05:50.820 --> 00:05:52.610
+with said name-drop right now.
+
+00:05:52.610 --> 00:05:54.729
+ADDY: No, no, I'm
+wearing a T-shirt that
+
+00:05:54.729 --> 00:05:56.020
+says Never Forget Floppy Disks.
+
+00:05:58.550 --> 00:05:59.130
+Never forget.
+
+00:05:59.130 --> 00:06:02.630
+So I've put together a
+repo called ES6 Tools that
+
+00:06:02.630 --> 00:06:04.860
+tries to summarize the
+whole landscape of tooling
+
+00:06:04.860 --> 00:06:08.480
+for ES6, ES2015, whatever
+you want to call it.
+
+00:06:08.480 --> 00:06:11.750
+It tries to capture stuff that
+you need for Grunt and Gulp
+
+00:06:11.750 --> 00:06:14.429
+and all the polyfills you need
+and all that other fun stuff.
+
+00:06:14.429 --> 00:06:15.970
+MATT: So it's kind
+of like, depending
+
+00:06:15.970 --> 00:06:18.340
+on what your setup is,
+you could go to this
+
+00:06:18.340 --> 00:06:19.420
+and it wil just list
+down all the things
+
+00:06:19.420 --> 00:06:20.410
+that will apply to you
+right there and then.
+
+00:06:20.410 --> 00:06:21.290
+ADDY: That's the idea.
+
+00:06:21.290 --> 00:06:21.640
+MATT: Nice.
+
+00:06:21.640 --> 00:06:23.098
+ADDY: But I also
+wanted to mention,
+
+00:06:23.098 --> 00:06:25.622
+there's two really
+good books that
+
+00:06:25.622 --> 00:06:27.110
+are free to read
+online if people
+
+00:06:27.110 --> 00:06:29.020
+want to learn more about ES6.
+
+00:06:29.020 --> 00:06:33.150
+The first is Understanding ES6,
+which I've been reading a lot.
+
+00:06:33.150 --> 00:06:36.190
+It's by Nicholas Zakas
+again, solid book.
+
+00:06:36.190 --> 00:06:38.580
+And there's another one
+called Exploring ES6
+
+00:06:38.580 --> 00:06:40.700
+by Axel Rauschmayer.
+
+00:06:40.700 --> 00:06:44.100
+Both solid books, both really,
+really knowledgeable guys.
+
+00:06:44.100 --> 00:06:46.070
+So yeah, people should
+check those out.
+
+00:06:46.070 --> 00:06:47.440
+MATT: Yeah, I loved it.
+
+00:06:47.440 --> 00:06:49.960
+The amount of code that
+you can delete just
+
+00:06:49.960 --> 00:06:52.990
+from a ton of these features,
+and the maintainability
+
+00:06:52.990 --> 00:06:54.960
+feels so much cleaner
+with this kind of thing.
+
+00:06:54.960 --> 00:06:55.460
+ADDY: Yeah.
+
+00:06:55.460 --> 00:06:56.640
+MATT: Absolutely love it.
+
+00:06:56.640 --> 00:06:59.240
+For me, I think everyone should
+be checking out ES6 and just
+
+00:06:59.240 --> 00:07:00.830
+playing around with it.
+
+00:07:00.830 --> 00:07:03.380
+Like I said, for me, it just
+makes everything much more
+
+00:07:03.380 --> 00:07:05.770
+like Java, which I love.
+
+00:07:05.770 --> 00:07:06.980
+ADDY: What?
+
+00:07:06.980 --> 00:07:07.870
+No.
+
+00:07:07.870 --> 00:07:10.920
+No, we're taking
+ES6 away from you.
+
+00:07:10.920 --> 00:07:12.460
+No more Babel for Matt.
+
+00:07:12.460 --> 00:07:13.810
+MATT: [LAUGHS]
+
+00:07:13.810 --> 00:07:19.660
+[ELECTRONIC THEME MUSIC]
+
+00:07:19.660 --> 00:07:21.510
+[CLICK]
+

@@ -1,0 +1,780 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.844
+[MUSIC PLAYING]
+
+00:00:03.892 --> 00:00:05.350
+ROB DODSON: Hey
+there, Polycasters.
+
+00:00:05.350 --> 00:00:05.850
+Rob here.
+
+00:00:05.850 --> 00:00:06.730
+Welcome back to the show.
+
+00:00:06.730 --> 00:00:09.030
+So today, we're going to
+complete our three-part series
+
+00:00:09.030 --> 00:00:10.620
+on building
+accessible components
+
+00:00:10.620 --> 00:00:12.086
+by talking about labeling.
+
+00:00:12.086 --> 00:00:14.230
+Labeling is super
+important for accessibility
+
+00:00:14.230 --> 00:00:18.100
+because it allows us to tell
+the user what a control is for.
+
+00:00:18.100 --> 00:00:20.880
+And let me show you an example
+to explain what I mean by that.
+
+00:00:20.880 --> 00:00:23.360
+So over here, I've
+got JS Bin set up.
+
+00:00:23.360 --> 00:00:25.220
+And I'm just going
+to start creating
+
+00:00:25.220 --> 00:00:26.850
+a bit of a form element.
+
+00:00:26.850 --> 00:00:29.080
+So I'll drop in an input tag.
+
+00:00:29.080 --> 00:00:31.370
+And you can see, cool,
+I've got a text input.
+
+00:00:31.370 --> 00:00:33.580
+What am I going to ask
+the user for, though?
+
+00:00:33.580 --> 00:00:35.460
+Well, I'll add a label.
+
+00:00:35.460 --> 00:00:39.050
+And I'm just going to wrap
+that label around the input.
+
+00:00:39.050 --> 00:00:42.170
+And I will say, hey,
+I would like to know
+
+00:00:42.170 --> 00:00:44.650
+the user's shipping address.
+
+00:00:44.650 --> 00:00:48.130
+So anyone filling out a
+form who is a sighted user
+
+00:00:48.130 --> 00:00:49.830
+will be able to go
+through and see, OK,
+
+00:00:49.830 --> 00:00:50.955
+there's a text input field.
+
+00:00:50.955 --> 00:00:51.870
+There's a label here.
+
+00:00:51.870 --> 00:00:54.530
+I'm assuming these
+two are associated.
+
+00:00:54.530 --> 00:00:56.647
+And because I have used
+nice, semantic HTML
+
+00:00:56.647 --> 00:00:58.730
+and I've built this
+relationship between the label
+
+00:00:58.730 --> 00:01:00.570
+element and the
+input, check out what
+
+00:01:00.570 --> 00:01:04.021
+happens to my screen reader
+when I interact with this thing.
+
+00:01:04.021 --> 00:01:05.479
+SCREEN READER:
+VoiceOver on Chrome,
+
+00:01:05.479 --> 00:01:07.110
+check Shipping
+Address, edit text.
+
+00:01:07.110 --> 00:01:07.818
+ROB DODSON: Nice.
+
+00:01:07.818 --> 00:01:10.160
+So we've created that
+alternative interface
+
+00:01:10.160 --> 00:01:12.160
+for our users who
+rely on screen readers
+
+00:01:12.160 --> 00:01:14.620
+because we've built this
+nice, semantic relationship.
+
+00:01:14.620 --> 00:01:17.360
+Now, the tricky bit here is
+that the label element only
+
+00:01:17.360 --> 00:01:19.520
+works with a handful of tags.
+
+00:01:19.520 --> 00:01:21.610
+So if we're building
+a custom element,
+
+00:01:21.610 --> 00:01:24.200
+we're going to have to come up
+with our own way of labeling
+
+00:01:24.200 --> 00:01:27.720
+it and providing that sort of
+accessible name to our users.
+
+00:01:27.720 --> 00:01:30.950
+So let's go check out the
+ARIA Authoring Best Practices
+
+00:01:30.950 --> 00:01:33.810
+guide to maybe get some hints
+on how we could do this.
+
+00:01:33.810 --> 00:01:35.310
+So switching over
+to that document,
+
+00:01:35.310 --> 00:01:36.976
+I'm going to go to
+the Checkbox section.
+
+00:01:36.976 --> 00:01:38.606
+And if I scroll
+down to the bottom,
+
+00:01:38.606 --> 00:01:39.980
+the second bullet
+point here says
+
+00:01:39.980 --> 00:01:43.470
+that the checkbox should have
+an accessible label, preferably
+
+00:01:43.470 --> 00:01:45.490
+provided by a visible
+label associated
+
+00:01:45.490 --> 00:01:46.947
+using aria-labelledby.
+
+00:01:46.947 --> 00:01:49.280
+Now, we haven't really talked
+about aria-labelledby yet,
+
+00:01:49.280 --> 00:01:51.738
+but now seems like a really
+great time to cover that topic.
+
+00:01:51.738 --> 00:01:54.890
+So in the world of ARIA,
+there's really three ways
+
+00:01:54.890 --> 00:01:56.200
+that we can label something.
+
+00:01:56.200 --> 00:01:58.920
+There's aria-label,
+sort of the singular,
+
+00:01:58.920 --> 00:02:01.790
+which is for basically applying
+a text alternative directly
+
+00:02:01.790 --> 00:02:02.850
+to an element.
+
+00:02:02.850 --> 00:02:05.010
+There's aria-labelledby,
+where we can actually
+
+00:02:05.010 --> 00:02:07.820
+have another element and sort
+of reference that element
+
+00:02:07.820 --> 00:02:09.210
+and use that as our label.
+
+00:02:09.210 --> 00:02:11.570
+And then in some
+instances, we can actually
+
+00:02:11.570 --> 00:02:14.080
+generate a label or a name
+for an element just based
+
+00:02:14.080 --> 00:02:15.270
+on its content.
+
+00:02:15.270 --> 00:02:17.610
+And we're going to cover
+all three of those today.
+
+00:02:17.610 --> 00:02:20.360
+So let me start by talking about
+aria-label because that one's
+
+00:02:20.360 --> 00:02:22.560
+pretty easy and
+straightforward to explain.
+
+00:02:22.560 --> 00:02:25.070
+I'm going to switch
+over to my code editor.
+
+00:02:25.070 --> 00:02:27.950
+And here is our dash checkbox
+from the previous episode.
+
+00:02:27.950 --> 00:02:31.850
+And I'm just going to give
+it an aria-label attribute.
+
+00:02:31.850 --> 00:02:35.640
+And we'll say the value
+is going to be Sign Up.
+
+00:02:35.640 --> 00:02:37.770
+So we're assuming the
+user checks this checkbox
+
+00:02:37.770 --> 00:02:39.760
+and they're signing
+up for something.
+
+00:02:39.760 --> 00:02:42.060
+So we switch over to Chrome.
+
+00:02:42.060 --> 00:02:43.780
+We refresh the page.
+
+00:02:43.780 --> 00:02:46.840
+Now, if we look at this
+checkbox now in the dev tools,
+
+00:02:46.840 --> 00:02:50.880
+we can see that aria-label
+has been applied here.
+
+00:02:50.880 --> 00:02:53.580
+And let's check out what happens
+when I interact with this
+
+00:02:53.580 --> 00:02:54.977
+using my screen reader.
+
+00:02:54.977 --> 00:02:55.935
+SCREEN READER: Sign up.
+
+00:02:55.935 --> 00:02:57.615
+Uncheck checkbox.
+
+00:02:57.615 --> 00:02:59.990
+ROB DODSON: So you heard the
+screen reader say, "Sign up.
+
+00:02:59.990 --> 00:03:01.950
+Uncheck checkbox," right?
+
+00:03:01.950 --> 00:03:06.230
+It has generated a name based
+on that aria-label attribute.
+
+00:03:06.230 --> 00:03:09.450
+But we don't have a
+visible label on screen.
+
+00:03:09.450 --> 00:03:12.550
+So we could add a visible
+label on screen using something
+
+00:03:12.550 --> 00:03:15.370
+like a span, but now we're kind
+of duplicating our work there.
+
+00:03:15.370 --> 00:03:17.430
+Maybe a better approach
+would be to use something
+
+00:03:17.430 --> 00:03:18.830
+like aria-labelledby.
+
+00:03:18.830 --> 00:03:20.480
+So let me show you
+how that works.
+
+00:03:20.480 --> 00:03:22.320
+We'll go back to
+our code editor.
+
+00:03:22.320 --> 00:03:25.000
+We'll get rid of this
+aria-label attribute.
+
+00:03:25.000 --> 00:03:26.840
+I'm going to add a span here.
+
+00:03:26.840 --> 00:03:29.800
+I'll say "sign up" in that span.
+
+00:03:29.800 --> 00:03:31.290
+And the way
+aria-label works is it
+
+00:03:31.290 --> 00:03:33.170
+takes an ID reference
+to another element
+
+00:03:33.170 --> 00:03:34.280
+to use that as its label.
+
+00:03:34.280 --> 00:03:38.260
+So I'll give span
+here an ID of sign
+
+00:03:38.260 --> 00:03:41.820
+up label, something like that.
+
+00:03:41.820 --> 00:03:43.370
+And then we'll take
+our dash checkbox
+
+00:03:43.370 --> 00:03:48.690
+and we'll say aria-labelledby
+equals sign up label.
+
+00:03:48.690 --> 00:03:52.020
+So now we've linked these two
+together by that ID reference.
+
+00:03:52.020 --> 00:03:52.640
+We go back.
+
+00:03:52.640 --> 00:03:53.709
+We refresh the page.
+
+00:03:53.709 --> 00:03:56.000
+You can see the CSS, the
+height is a little off, right?
+
+00:03:56.000 --> 00:03:57.375
+This thing is not
+quite centered.
+
+00:03:57.375 --> 00:03:58.460
+That's easy enough to fix.
+
+00:03:58.460 --> 00:04:01.010
+But we do have a visible label
+on screen now, which is good.
+
+00:04:01.010 --> 00:04:02.520
+And let's look at
+what happens when
+
+00:04:02.520 --> 00:04:04.329
+we activate our screen reader.
+
+00:04:04.329 --> 00:04:06.370
+SCREEN READER: VoiceOver
+on Chrome, dash sign up.
+
+00:04:06.370 --> 00:04:07.537
+Uncheck checkbox.
+
+00:04:07.537 --> 00:04:10.120
+ROB DODSON: So you heard there
+that now it's saying, "Sign up.
+
+00:04:10.120 --> 00:04:11.110
+Uncheck checkbox."
+
+00:04:11.110 --> 00:04:11.610
+OK.
+
+00:04:11.610 --> 00:04:12.360
+This is great.
+
+00:04:12.360 --> 00:04:14.450
+This is basically what we want.
+
+00:04:14.450 --> 00:04:16.420
+But it is a little
+burdensome to have
+
+00:04:16.420 --> 00:04:19.839
+to ask everyone who's using our
+checkbox to also include a span
+
+00:04:19.839 --> 00:04:22.029
+and create this label
+linkage between the two.
+
+00:04:22.029 --> 00:04:23.570
+One final approach
+that we could take
+
+00:04:23.570 --> 00:04:25.460
+is to actually have
+the checkbox's name
+
+00:04:25.460 --> 00:04:26.815
+generated by its content.
+
+00:04:26.815 --> 00:04:29.040
+Now, this works for
+smaller elements--
+
+00:04:29.040 --> 00:04:31.260
+a checkbox, a radio button,
+something like that.
+
+00:04:31.260 --> 00:04:33.740
+It wouldn't work so well
+for really large elements,
+
+00:04:33.740 --> 00:04:36.934
+like an article or some
+big landmarks like that.
+
+00:04:36.934 --> 00:04:39.100
+But for something really
+small, a little controlled,
+
+00:04:39.100 --> 00:04:40.770
+this technique could work.
+
+00:04:40.770 --> 00:04:43.910
+So going back to
+my code editor, I'm
+
+00:04:43.910 --> 00:04:46.270
+going to get rid of that span.
+
+00:04:46.270 --> 00:04:48.790
+I'm going to get rid of
+the aria-labelledby here.
+
+00:04:48.790 --> 00:04:50.550
+So we'll nuke these.
+
+00:04:50.550 --> 00:04:53.270
+And we'll go to our dash
+checkbox definition.
+
+00:04:53.270 --> 00:04:56.620
+And right now, we're
+using the host selector
+
+00:04:56.620 --> 00:04:59.850
+to draw a rectangle
+around our element.
+
+00:04:59.850 --> 00:05:01.900
+And then when it is
+aria-checked true,
+
+00:05:01.900 --> 00:05:04.040
+we're putting a little
+check mark inside of it.
+
+00:05:04.040 --> 00:05:05.370
+And so we're going to
+need to add a little bit
+
+00:05:05.370 --> 00:05:06.200
+of additional markup.
+
+00:05:06.200 --> 00:05:07.700
+We're going to need
+to actually have
+
+00:05:07.700 --> 00:05:10.182
+that rectangle and that
+checkbox over in a container.
+
+00:05:10.182 --> 00:05:12.640
+And then we're going to need
+to have another element, which
+
+00:05:12.640 --> 00:05:14.550
+will act as our label.
+
+00:05:14.550 --> 00:05:16.930
+So I'm going to add a
+little bit of HTML here.
+
+00:05:16.930 --> 00:05:17.754
+Let's see.
+
+00:05:17.754 --> 00:05:19.800
+So I'll drop in a div.
+
+00:05:19.800 --> 00:05:22.690
+I'll call this first
+div-- let's see.
+
+00:05:22.690 --> 00:05:26.169
+We'll call it
+checkbox container.
+
+00:05:26.169 --> 00:05:27.960
+That's going to hold
+our actual check mark.
+
+00:05:27.960 --> 00:05:29.800
+I'm going to make
+another div here.
+
+00:05:29.800 --> 00:05:34.310
+And we'll call this
+one-- let's see.
+
+00:05:34.310 --> 00:05:36.790
+We'll do checkbox label.
+
+00:05:36.790 --> 00:05:38.710
+And then I'm just going
+to replace the CSS
+
+00:05:38.710 --> 00:05:41.980
+that I have here with some
+updated CSS, some updated
+
+00:05:41.980 --> 00:05:42.597
+styles.
+
+00:05:42.597 --> 00:05:44.180
+Let's walk through
+these really quick.
+
+00:05:44.180 --> 00:05:46.440
+So what I've done is
+I've kept the host
+
+00:05:46.440 --> 00:05:49.700
+style of just making sure this
+whole element is inline block.
+
+00:05:49.700 --> 00:05:51.910
+The checkbox container
+now has the styles
+
+00:05:51.910 --> 00:05:54.750
+for drawing our rectangle.
+
+00:05:54.750 --> 00:05:57.060
+When the host has
+aria-checked applied,
+
+00:05:57.060 --> 00:05:58.560
+the checkbox container
+will actually
+
+00:05:58.560 --> 00:06:00.080
+get the check mark inside of it.
+
+00:06:00.080 --> 00:06:01.560
+And then the
+checkbox label, we're
+
+00:06:01.560 --> 00:06:03.559
+just differentiating it
+by bumping the font size
+
+00:06:03.559 --> 00:06:05.750
+up a little bit and making
+sure that both of these
+
+00:06:05.750 --> 00:06:07.540
+are set to vertical
+align middle.
+
+00:06:07.540 --> 00:06:09.240
+So that way, the
+text and the checkbox
+
+00:06:09.240 --> 00:06:11.680
+look nice and centered.
+
+00:06:11.680 --> 00:06:14.950
+The last thing I want to do is
+inside of this checkbox label,
+
+00:06:14.950 --> 00:06:19.240
+I'm going to add
+a content element.
+
+00:06:19.240 --> 00:06:23.160
+And what this is going to let
+me do is in my index file inside
+
+00:06:23.160 --> 00:06:26.200
+of dash checkbox, now I can
+just write my label right
+
+00:06:26.200 --> 00:06:27.880
+inside the element like that.
+
+00:06:27.880 --> 00:06:30.924
+It's going to project that
+into that element's shadow dom.
+
+00:06:30.924 --> 00:06:32.840
+And then the browser
+should be able to compute
+
+00:06:32.840 --> 00:06:36.270
+the element's name or its
+label based on that content.
+
+00:06:36.270 --> 00:06:37.430
+So let's check that out.
+
+00:06:37.430 --> 00:06:38.780
+We'll go back to Chrome.
+
+00:06:38.780 --> 00:06:39.880
+We'll refresh the page.
+
+00:06:39.880 --> 00:06:41.838
+You can see that the text
+is little bit bigger.
+
+00:06:41.838 --> 00:06:42.710
+It's centered now.
+
+00:06:42.710 --> 00:06:45.752
+We turn on our screen reader
+and let's see what happens.
+
+00:06:45.752 --> 00:06:47.210
+SCREEN READER:
+VoiceOver on Chrome.
+
+00:06:47.210 --> 00:06:47.709
+Sign up.
+
+00:06:47.709 --> 00:06:49.005
+Uncheck checkbox.
+
+00:06:49.005 --> 00:06:50.130
+ROB DODSON: So there we go.
+
+00:06:50.130 --> 00:06:52.350
+We've got a slightly
+nicer, easier way
+
+00:06:52.350 --> 00:06:53.890
+to give our user a label.
+
+00:06:53.890 --> 00:06:55.390
+Another really cool
+thing about this
+
+00:06:55.390 --> 00:06:57.800
+is that since the label is
+now inside of the element
+
+00:06:57.800 --> 00:07:00.160
+itself, when I
+click on the label,
+
+00:07:00.160 --> 00:07:02.274
+it also focuses and
+activates the element.
+
+00:07:02.274 --> 00:07:03.690
+And this is something
+that you see
+
+00:07:03.690 --> 00:07:06.680
+with native elements, native
+input, native checkbox, when
+
+00:07:06.680 --> 00:07:09.080
+you associate them with
+a native label element.
+
+00:07:09.080 --> 00:07:11.380
+So now we've created a
+very similar association
+
+00:07:11.380 --> 00:07:14.214
+with our custom element
+here, which is really nice.
+
+00:07:14.214 --> 00:07:15.630
+So that about
+covers it for today.
+
+00:07:15.630 --> 00:07:17.050
+There's always more
+to talk about when
+
+00:07:17.050 --> 00:07:18.190
+we touch on accessibility.
+
+00:07:18.190 --> 00:07:20.420
+But hopefully now you
+have a better foundational
+
+00:07:20.420 --> 00:07:23.070
+understanding of how these
+things work in the platform.
+
+00:07:23.070 --> 00:07:24.390
+If you have any more
+questions, though, I'm
+
+00:07:24.390 --> 00:07:25.280
+always happy to answer them.
+
+00:07:25.280 --> 00:07:27.840
+So please leave them for me
+down below in the comments.
+
+00:07:27.840 --> 00:07:30.173
+Or you can reach me on a
+social network of your choosing
+
+00:07:30.173 --> 00:07:31.454
+at #AskPolymer.
+
+00:07:31.454 --> 00:07:33.162
+As always, thank you
+so much for watching
+
+00:07:33.162 --> 00:07:34.500
+and I'll see you next time.
+
+00:07:34.500 --> 00:07:36.950
+[MUSIC PLAYING]
+

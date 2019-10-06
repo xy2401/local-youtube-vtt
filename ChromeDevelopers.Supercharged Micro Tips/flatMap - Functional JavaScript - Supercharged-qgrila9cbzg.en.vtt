@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.388
+[MUSIC PLAYING]
+
+00:00:06.292 --> 00:00:09.680
+[BOOM]
+
+00:00:11.574 --> 00:00:13.490
+SURMA: Now that the
+naming is finally settled,
+
+00:00:13.490 --> 00:00:15.760
+it's time we talked
+about flatMap.
+
+00:00:15.760 --> 00:00:18.710
+flatMap is the newest of the
+functional array methods,
+
+00:00:18.710 --> 00:00:20.914
+and browsers are
+just implementing it.
+
+00:00:20.914 --> 00:00:22.580
+But I expect it won't
+be long until it's
+
+00:00:22.580 --> 00:00:24.200
+available in stable releases.
+
+00:00:24.200 --> 00:00:27.160
+So let's get an early
+look at this new gem.
+
+00:00:27.160 --> 00:00:29.610
+flatMap is similar
+to map insofar
+
+00:00:29.610 --> 00:00:33.210
+that it applies a function to
+every element in the array.
+
+00:00:33.210 --> 00:00:36.380
+However, if this function
+returns an array itself,
+
+00:00:36.380 --> 00:00:39.680
+each element of that array will
+be an element of the resulting
+
+00:00:39.680 --> 00:00:40.430
+array.
+
+00:00:40.430 --> 00:00:42.200
+That means that flat
+mapping an array
+
+00:00:42.200 --> 00:00:45.050
+can result in a new
+array with more elements
+
+00:00:45.050 --> 00:00:46.800
+than you started with.
+
+00:00:46.800 --> 00:00:48.290
+So for example,
+let's say you want
+
+00:00:48.290 --> 00:00:51.710
+to show your user the name
+of the items they ordered
+
+00:00:51.710 --> 00:00:53.810
+in the past but
+your database only
+
+00:00:53.810 --> 00:00:56.420
+has a list of orders,
+each containing
+
+00:00:56.420 --> 00:00:58.370
+potentially multiple items.
+
+00:00:58.370 --> 00:01:00.830
+flatMap comes to the rescue.
+
+00:01:00.830 --> 00:01:04.670
+We use map to pick the names
+of the items from every order,
+
+00:01:04.670 --> 00:01:07.460
+and flatMap takes care
+of flattening all of this
+
+00:01:07.460 --> 00:01:10.100
+into one big list of item names.
+
+00:01:10.100 --> 00:01:13.165
+Quite handy and
+concise, isn't it?
+
+00:01:13.165 --> 00:01:14.540
+So if you found
+this interesting,
+
+00:01:14.540 --> 00:01:17.395
+I did some more videos on
+functional array methods.
+
+00:01:17.395 --> 00:01:18.770
+So if you haven't
+seen those, you
+
+00:01:18.770 --> 00:01:20.700
+should go back and
+watch them now.
+
+00:01:20.700 --> 00:01:22.700
+And if you want to stay
+up to date with the most
+
+00:01:22.700 --> 00:01:26.920
+recent Supercharged, you should
+subscribe to this channel.
+

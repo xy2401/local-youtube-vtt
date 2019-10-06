@@ -1,0 +1,1200 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:01.138
+SURMA: How old are you?
+
+00:00:01.138 --> 00:00:02.700
+[LAUGHTER]
+
+00:00:03.660 --> 00:00:06.300
+That's what my partner does.
+
+00:00:06.300 --> 00:00:09.180
+I'm like-- I'm playing Zelda.
+
+00:00:09.180 --> 00:00:09.930
+And then I'm done.
+
+00:00:09.930 --> 00:00:12.000
+And I stand up and
+make some stupid joke.
+
+00:00:12.000 --> 00:00:13.523
+And he's like, you're 29, mate.
+
+00:00:13.523 --> 00:00:14.522
+JAKE: (LAUGHING) Ha, No.
+
+00:00:14.522 --> 00:00:15.570
+No, no, no.
+
+00:00:15.570 --> 00:00:16.984
+Farts are still funny.
+
+00:00:16.984 --> 00:00:19.404
+[THEME SONG]
+
+00:00:23.750 --> 00:00:24.250
+So.
+
+00:00:24.250 --> 00:00:25.090
+SURMA: So.
+
+00:00:25.090 --> 00:00:28.270
+JAKE: The official starting
+word of any HTTP203 episode.
+
+00:00:28.270 --> 00:00:30.270
+SURMA: I thought I would
+do some code this time.
+
+00:00:30.270 --> 00:00:31.103
+JAKE: Oh, all right.
+
+00:00:31.103 --> 00:00:33.640
+SURMA: Because it's been you
+and I'm getting bored of that.
+
+00:00:33.640 --> 00:00:35.380
+So I thought I would
+talk about something
+
+00:00:35.380 --> 00:00:38.140
+that I've been
+encountering, and realized,
+
+00:00:38.140 --> 00:00:39.860
+that's actually kind of new.
+
+00:00:39.860 --> 00:00:43.060
+And it's polyfills,
+which are not new.
+
+00:00:43.060 --> 00:00:46.690
+But conditional loading of
+polyfills in a world where
+
+00:00:46.690 --> 00:00:47.914
+we all use ES6 modules.
+
+00:00:47.914 --> 00:00:48.580
+JAKE: All right.
+
+00:00:48.580 --> 00:00:50.579
+Because it's quite an
+important thing to do now.
+
+00:00:50.579 --> 00:00:53.410
+Because we're in a situation
+where some browsers have web
+
+00:00:53.410 --> 00:00:54.720
+components, some don't.
+
+00:00:54.720 --> 00:00:55.940
+And you don't want to be
+loading all those polyfills
+
+00:00:55.940 --> 00:00:56.480
+for old browsers.
+
+00:00:56.480 --> 00:00:57.938
+SURMA: Because it
+can be quite big.
+
+00:00:57.938 --> 00:01:00.010
+But also, you don't
+want to go to the lowest
+
+00:01:00.010 --> 00:01:02.721
+common denominator all the
+time, because that's not
+
+00:01:02.721 --> 00:01:04.470
+a great experience for
+you as a developer.
+
+00:01:04.470 --> 00:01:04.720
+All right.
+
+00:01:04.720 --> 00:01:05.303
+JAKE: Come on.
+
+00:01:05.303 --> 00:01:08.040
+Show me what you got.
+
+00:01:08.040 --> 00:01:08.540
+Right.
+
+00:01:08.540 --> 00:01:09.940
+SURMA: It's not polyfills yet.
+
+00:01:09.940 --> 00:01:13.440
+But for example, let's say I
+want to use transform streams.
+
+00:01:13.440 --> 00:01:15.630
+Personally, I've been
+loving transform streams.
+
+00:01:15.630 --> 00:01:17.070
+JAKE: They are amazing, yes.
+
+00:01:17.070 --> 00:01:19.320
+SURMA: Not only just to
+do streams, but I actually
+
+00:01:19.320 --> 00:01:21.510
+just use them as a FIFO cue.
+
+00:01:21.510 --> 00:01:23.670
+For example, if you
+have an event handler,
+
+00:01:23.670 --> 00:01:26.370
+and you want to make sure your
+previous event is completely
+
+00:01:26.370 --> 00:01:28.320
+processed before you
+process the next one,
+
+00:01:28.320 --> 00:01:29.940
+just pipe them to
+a transform stream.
+
+00:01:29.940 --> 00:01:31.800
+JAKE: Because if you're
+returning a promise
+
+00:01:31.800 --> 00:01:33.266
+from your transform
+stream handler,
+
+00:01:33.266 --> 00:01:34.890
+it's not going to
+give you the next one
+
+00:01:34.890 --> 00:01:35.940
+until all of that's resolved.
+
+00:01:35.940 --> 00:01:37.380
+SURMA: And it buffers
+it up until then.
+
+00:01:37.380 --> 00:01:38.630
+So that's actually quite neat.
+
+00:01:38.630 --> 00:01:39.780
+JAKE: Very clever.
+
+00:01:39.780 --> 00:01:40.710
+Right.
+
+00:01:40.710 --> 00:01:41.430
+OK.
+
+00:01:41.430 --> 00:01:42.540
+SURMA: Problem, though.
+
+00:01:42.540 --> 00:01:44.610
+We have transformed
+stream in Chrome.
+
+00:01:44.610 --> 00:01:48.000
+I think they're just
+bound to land in Safari.
+
+00:01:48.000 --> 00:01:49.374
+They're not in Firefox?
+
+00:01:49.374 --> 00:01:50.290
+I should look this up.
+
+00:01:50.290 --> 00:01:50.620
+I don't know.
+
+00:01:50.620 --> 00:01:52.590
+But basically what I'm
+saying is the landscape
+
+00:01:52.590 --> 00:01:55.080
+is uneven in terms of support
+for transform streams.
+
+00:01:55.080 --> 00:01:55.580
+JAKE: Right
+
+00:01:55.580 --> 00:01:58.450
+SURMA: So what you want
+to do is load a polyfill.
+
+00:01:58.450 --> 00:01:58.950
+JAKE: Yes.
+
+00:01:58.950 --> 00:02:01.870
+SURMA: And so in the olden days,
+you would just do this, right?
+
+00:02:01.870 --> 00:02:03.900
+You would just put
+a script tag ahead,
+
+00:02:03.900 --> 00:02:06.870
+and you could be sure that
+that script would execute
+
+00:02:06.870 --> 00:02:08.130
+before the other one executes.
+
+00:02:08.130 --> 00:02:10.436
+JAKE: Transform stream
+is fully polyfillable.
+
+00:02:10.436 --> 00:02:11.060
+SURMA: Exactly.
+
+00:02:11.060 --> 00:02:11.640
+JAKE: "Pulifillibul."
+
+00:02:11.640 --> 00:02:13.556
+SURMA: It's technically
+completely user-lined.
+
+00:02:13.556 --> 00:02:15.731
+But you don't want to
+load that code usually.
+
+00:02:15.731 --> 00:02:16.230
+JAKE: Right.
+
+00:02:16.230 --> 00:02:18.570
+SURMA: So in this
+case, the polyfill
+
+00:02:18.570 --> 00:02:22.440
+would put their
+implantation on the global.
+
+00:02:22.440 --> 00:02:24.667
+Maybe even only if it
+is not already there.
+
+00:02:24.667 --> 00:02:26.250
+So you would use a
+native implantation
+
+00:02:26.250 --> 00:02:27.509
+because it might be faster.
+
+00:02:27.509 --> 00:02:28.800
+And otherwise, it just adds it.
+
+00:02:28.800 --> 00:02:29.760
+And then the transform
+stream exists,
+
+00:02:29.760 --> 00:02:30.760
+and you can just use it.
+
+00:02:30.760 --> 00:02:31.301
+Great.
+
+00:02:31.301 --> 00:02:31.800
+JAKE: Right.
+
+00:02:31.800 --> 00:02:32.430
+Brilliant.
+
+00:02:32.430 --> 00:02:35.200
+SURMA: Problem, now, of course,
+is it gets old every time.
+
+00:02:35.200 --> 00:02:35.700
+JAKE: Yes.
+
+00:02:35.700 --> 00:02:37.440
+SURMA: And you
+might have a browser
+
+00:02:37.440 --> 00:02:39.080
+that doesn't need to load that.
+
+00:02:39.080 --> 00:02:39.910
+And it might go--
+
+00:02:39.910 --> 00:02:41.081
+JAKE: Like Chrome right now.
+
+00:02:41.081 --> 00:02:41.580
+Like Safari.
+
+00:02:41.580 --> 00:02:43.282
+SURMA: And if you
+can avoid that,
+
+00:02:43.282 --> 00:02:44.490
+you would want to avoid that.
+
+00:02:44.490 --> 00:02:45.040
+JAKE: Excellent.
+
+00:02:45.040 --> 00:02:47.581
+SURMA: So now let's look into
+how you do conditional loading.
+
+00:02:47.581 --> 00:02:49.110
+And that's where
+we already started
+
+00:02:49.110 --> 00:02:51.559
+looking into importing stuff.
+
+00:02:51.559 --> 00:02:53.100
+Because in the olden
+days, again, you
+
+00:02:53.100 --> 00:02:54.960
+would probably create a
+script tag dynamically
+
+00:02:54.960 --> 00:02:56.210
+and wait for the unload event.
+
+00:02:56.210 --> 00:02:57.729
+Now we have dynamic import.
+
+00:02:57.729 --> 00:02:59.520
+JAKE: I think this is
+something I got wrong
+
+00:02:59.520 --> 00:03:00.436
+in a previous episode.
+
+00:03:00.436 --> 00:03:03.257
+Because you can use
+the dynamic import even
+
+00:03:03.257 --> 00:03:04.090
+in a regular script.
+
+00:03:04.090 --> 00:03:04.950
+SURMA: Yes, you can.
+
+00:03:04.950 --> 00:03:05.670
+JAKE: That's very good.
+
+00:03:05.670 --> 00:03:06.753
+SURMA: It's very exciting.
+
+00:03:06.753 --> 00:03:10.240
+You don't have to use a module
+script to use dynamic import.
+
+00:03:10.240 --> 00:03:11.532
+Only for static import.
+
+00:03:11.532 --> 00:03:12.990
+So in this case,
+I'm just checking,
+
+00:03:12.990 --> 00:03:16.170
+does transform
+stream exist on self?
+
+00:03:16.170 --> 00:03:19.710
+And if that is not the case,
+time to load the thing.
+
+00:03:19.710 --> 00:03:20.670
+JAKE: Right.
+
+00:03:20.670 --> 00:03:24.740
+So this is a module that's
+not returning anything.
+
+00:03:24.740 --> 00:03:25.450
+SURMA: No.
+
+00:03:25.450 --> 00:03:26.120
+It's a polyfill.
+
+00:03:26.120 --> 00:03:27.420
+It just attaches to the global.
+
+00:03:27.420 --> 00:03:27.600
+JAKE: Right.
+
+00:03:27.600 --> 00:03:27.920
+OK.
+
+00:03:27.920 --> 00:03:29.420
+SURMA: But that's
+exactly the point.
+
+00:03:29.420 --> 00:03:33.160
+We are now preferring in
+advocating people to--
+
+00:03:33.160 --> 00:03:35.010
+in general, polyfills
+shouldn't do that.
+
+00:03:35.010 --> 00:03:36.390
+They shouldn't attach
+themselves to the globals,
+
+00:03:36.390 --> 00:03:38.100
+because then you
+land in this place
+
+00:03:38.100 --> 00:03:40.530
+where you might be overriding
+a native implementation that
+
+00:03:40.530 --> 00:03:42.557
+might not be up to
+date, or it can--
+
+00:03:42.557 --> 00:03:43.890
+there are so many complications.
+
+00:03:43.890 --> 00:03:45.420
+JAKE: The whole
+"smoosh" problem.
+
+00:03:45.420 --> 00:03:45.780
+SURMA: Exactly.
+
+00:03:45.780 --> 00:03:47.446
+We don't want to have
+a second "smoosh."
+
+00:03:47.446 --> 00:03:50.390
+So usually, if you
+publish a polyfill,
+
+00:03:50.390 --> 00:03:52.890
+you use something that
+exposes just the thing to you.
+
+00:03:52.890 --> 00:03:55.680
+And you can decide if you want
+to attach it to the global
+
+00:03:55.680 --> 00:03:56.670
+or handle it yourself.
+
+00:03:56.670 --> 00:03:57.360
+JAKE: Brilliant.
+
+00:03:57.360 --> 00:03:59.550
+SURMA: So instead of a polyfill,
+you would use a module.
+
+00:03:59.550 --> 00:04:00.049
+JAKE: Ah.
+
+00:04:00.049 --> 00:04:02.070
+SURMA: Something that
+doesn't actually modify
+
+00:04:02.070 --> 00:04:05.520
+the global at all, but just
+returns something to you
+
+00:04:05.520 --> 00:04:06.450
+that you can use.
+
+00:04:06.450 --> 00:04:07.440
+JAKE: OK.
+
+00:04:07.440 --> 00:04:10.500
+SURMA: And so in this case,
+we are just importing,
+
+00:04:10.500 --> 00:04:11.590
+and don't use it.
+
+00:04:11.590 --> 00:04:14.229
+So in this case, this
+will still be undefined.
+
+00:04:14.229 --> 00:04:15.770
+So this pattern
+doesn't work anymore.
+
+00:04:15.770 --> 00:04:16.269
+JAKE: Right.
+
+00:04:16.269 --> 00:04:19.380
+Because it's expecting something
+around here to be returned.
+
+00:04:19.380 --> 00:04:21.269
+And that would be your module.
+
+00:04:21.269 --> 00:04:22.280
+Right.
+
+00:04:22.280 --> 00:04:24.040
+OK.
+
+00:04:24.040 --> 00:04:26.460
+SURMA: So now we have a module
+that exposes these things.
+
+00:04:26.460 --> 00:04:27.460
+JAKE: Yes.
+
+00:04:27.460 --> 00:04:30.192
+SURMA: But you can't just
+attach them to the global
+
+00:04:30.192 --> 00:04:32.150
+because you have to load
+them ahead every time.
+
+00:04:32.150 --> 00:04:34.140
+You have to, at the
+start of your module,
+
+00:04:34.140 --> 00:04:36.470
+you have now to
+check, does it exist?
+
+00:04:36.470 --> 00:04:37.220
+Does it not exist?
+
+00:04:37.220 --> 00:04:40.760
+And if it doesn't exist,
+hold the entire module
+
+00:04:40.760 --> 00:04:42.680
+until I've loaded the polyfill.
+
+00:04:42.680 --> 00:04:43.880
+JAKE: Oh, I see.
+
+00:04:43.880 --> 00:04:46.610
+SURMA: And then I have
+to load the module,
+
+00:04:46.610 --> 00:04:48.381
+rip it out, and attach
+it to the global.
+
+00:04:48.381 --> 00:04:48.880
+JAKE: Right.
+
+00:04:48.880 --> 00:04:50.750
+Because especially if
+it's third party code,
+
+00:04:50.750 --> 00:04:52.340
+you want all it to wait somehow.
+
+00:04:52.340 --> 00:04:53.720
+SURMA: And it gets really weird.
+
+00:04:53.720 --> 00:04:54.000
+JAKE: Right.
+
+00:04:54.000 --> 00:04:54.210
+OK.
+
+00:04:54.210 --> 00:04:54.710
+Yep.
+
+00:04:54.710 --> 00:04:57.271
+SURMA: So now let's move on
+to proper modern world ES6
+
+00:04:57.271 --> 00:04:57.770
+modules.
+
+00:04:57.770 --> 00:04:58.600
+How could we solve?
+
+00:04:58.600 --> 00:05:00.050
+So the first version--
+
+00:05:00.050 --> 00:05:01.550
+JAKE: Bracing for
+modern JavaScript.
+
+00:05:01.550 --> 00:05:01.850
+SURMA: Boom.
+
+00:05:01.850 --> 00:05:02.990
+JAKE: Ooh, Look at
+that modern JavaScript.
+
+00:05:02.990 --> 00:05:05.510
+SURMA: We just turn it into
+a very, very small two line
+
+00:05:05.510 --> 00:05:08.120
+module that loads the module,
+attaches it to the global,
+
+00:05:08.120 --> 00:05:10.630
+and you depend on this
+module in every other module
+
+00:05:10.630 --> 00:05:11.380
+that uses streams.
+
+00:05:11.380 --> 00:05:11.880
+JAKE: Right.
+
+00:05:11.880 --> 00:05:13.134
+And we've avoided the whole--
+
+00:05:13.134 --> 00:05:15.050
+I mean, this is still
+going to be asynchronous
+
+00:05:15.050 --> 00:05:17.216
+in terms of it's not going
+to block the main thread.
+
+00:05:17.216 --> 00:05:21.240
+But it's synchronous in terms of
+that code that comes after it.
+
+00:05:21.240 --> 00:05:24.020
+SURMA: And so this is a
+completely valid, completely
+
+00:05:24.020 --> 00:05:26.060
+acceptable way to go about it.
+
+00:05:26.060 --> 00:05:26.630
+Right?
+
+00:05:26.630 --> 00:05:26.990
+JAKE: Right.
+
+00:05:26.990 --> 00:05:28.365
+SURMA: So this
+works in the sense
+
+00:05:28.365 --> 00:05:30.830
+that you load the polyfill,
+and it attaches to the global.
+
+00:05:30.830 --> 00:05:33.380
+And all your code now works
+for the polyfill if necessary,
+
+00:05:33.380 --> 00:05:35.610
+but we lost the
+conditional loading.
+
+00:05:35.610 --> 00:05:36.110
+JAKE: Ah.
+
+00:05:36.110 --> 00:05:36.560
+Yes.
+
+00:05:36.560 --> 00:05:37.040
+Of course.
+
+00:05:37.040 --> 00:05:38.748
+SURMA: Because
+conditional loading is not
+
+00:05:38.748 --> 00:05:40.400
+possible with static imports.
+
+00:05:40.400 --> 00:05:41.810
+Because they're static.
+
+00:05:41.810 --> 00:05:42.830
+JAKE: Yes.
+
+00:05:42.830 --> 00:05:43.940
+That is true.
+
+00:05:43.940 --> 00:05:45.650
+SURMA: It's kind of hidden.
+
+00:05:45.650 --> 00:05:46.640
+And once you think of
+it, it's like, wait.
+
+00:05:46.640 --> 00:05:47.211
+I cannot do--
+
+00:05:47.211 --> 00:05:49.460
+JAKE: Yeah, you can't put
+an if statement around that.
+
+00:05:49.460 --> 00:05:50.230
+The import has to be
+sort of top level.
+
+00:05:50.230 --> 00:05:52.980
+SURMA: Either you depend on
+this module, or you don't.
+
+00:05:52.980 --> 00:05:53.480
+JAKE: Right.
+
+00:05:53.480 --> 00:05:56.480
+SURMA: But the second you want
+to do conditional loading,
+
+00:05:56.480 --> 00:05:58.220
+you have to go to
+dynamic import.
+
+00:05:58.220 --> 00:05:59.720
+And then you're
+back at the problem.
+
+00:05:59.720 --> 00:06:02.870
+Because now I have
+to hold my module
+
+00:06:02.870 --> 00:06:07.359
+until the polyfill is loaded,
+and that's really weird.
+
+00:06:07.359 --> 00:06:08.150
+JAKE: Do you have--
+
+00:06:08.150 --> 00:06:09.330
+I hope this is going
+to end with a solution.
+
+00:06:09.330 --> 00:06:10.400
+SURMA: I have a solution.
+
+00:06:10.400 --> 00:06:12.310
+I don't think it's perfect, but
+I actually have been using it,
+
+00:06:12.310 --> 00:06:13.143
+and it's quite nice.
+
+00:06:13.143 --> 00:06:16.180
+Because the second problem
+with static import is it
+
+00:06:16.180 --> 00:06:19.090
+delays the execution
+of the module,
+
+00:06:19.090 --> 00:06:22.060
+even though you might only
+need the transform stream
+
+00:06:22.060 --> 00:06:24.000
+in some specific method.
+
+00:06:24.000 --> 00:06:24.500
+JAKE: Right.
+
+00:06:24.500 --> 00:06:25.000
+I see.
+
+00:06:25.000 --> 00:06:27.840
+And that could be a
+few interactions away,
+
+00:06:27.840 --> 00:06:28.505
+or something.
+
+00:06:28.505 --> 00:06:28.760
+SURMA: Exactly.
+
+00:06:28.760 --> 00:06:30.801
+So you might want to load
+it at a deferred point,
+
+00:06:30.801 --> 00:06:33.870
+or even on demand if it's
+some sort of background task.
+
+00:06:33.870 --> 00:06:36.514
+So what I've been using
+is a different approach,
+
+00:06:36.514 --> 00:06:38.680
+which feels a bit weird,
+but actually, as a pattern,
+
+00:06:38.680 --> 00:06:39.620
+works really well.
+
+00:06:39.620 --> 00:06:40.581
+JAKE: All right.
+
+00:06:40.581 --> 00:06:41.830
+SURMA: I'm creating a promise.
+
+00:06:41.830 --> 00:06:42.460
+JAKE: You are.
+
+00:06:42.460 --> 00:06:43.510
+Yes.
+
+00:06:43.510 --> 00:06:46.430
+SURMA: And so I'm creating
+a transform stream promise.
+
+00:06:46.430 --> 00:06:49.750
+And that, I can now
+use an if statement.
+
+00:06:49.750 --> 00:06:52.642
+And then, if transform
+stream exists,
+
+00:06:52.642 --> 00:06:54.850
+I'm just going to return
+the native transform stream.
+
+00:06:54.850 --> 00:06:56.170
+JAKE: I see.
+
+00:06:56.170 --> 00:07:00.550
+SURMA: And if not, I'm going to
+dynamically load the polyfill,
+
+00:07:00.550 --> 00:07:02.620
+and return that one.
+
+00:07:02.620 --> 00:07:03.760
+JAKE: Yes.
+
+00:07:03.760 --> 00:07:05.680
+SURMA: So now we
+have a promise that
+
+00:07:05.680 --> 00:07:09.320
+will always resolve to a
+transform stream constructor.
+
+00:07:09.320 --> 00:07:10.870
+And it might be the native one.
+
+00:07:10.870 --> 00:07:12.686
+It might be the polyfilled one.
+
+00:07:12.686 --> 00:07:14.560
+But you don't have to
+worry about it anymore.
+
+00:07:14.560 --> 00:07:15.060
+JAKE: Right.
+
+00:07:15.060 --> 00:07:17.050
+SURMA: And that means
+your module can execute
+
+00:07:17.050 --> 00:07:19.650
+as fast as possible,
+or as soon as possible,
+
+00:07:19.650 --> 00:07:22.060
+and will load the code
+the second you need to.
+
+00:07:22.060 --> 00:07:23.580
+JAKE: And so this
+is going to be--
+
+00:07:23.580 --> 00:07:25.580
+you've got the asynchronous
+problem back, right?
+
+00:07:25.580 --> 00:07:26.130
+SURMA: Sure.
+
+00:07:26.130 --> 00:07:27.890
+But that is usually--
+
+00:07:27.890 --> 00:07:30.220
+this is kind of specific
+to the point of streams,
+
+00:07:30.220 --> 00:07:34.090
+but-- most of the time, streams
+are in asynchronous context
+
+00:07:34.090 --> 00:07:34.661
+anyway.
+
+00:07:34.661 --> 00:07:35.410
+JAKE: That's true.
+
+00:07:35.410 --> 00:07:37.000
+SURMA: So either on
+the sending side,
+
+00:07:37.000 --> 00:07:38.375
+you don't need to
+worry that it's
+
+00:07:38.375 --> 00:07:42.160
+a promise most of the time,
+because you can just resolve it
+
+00:07:42.160 --> 00:07:42.730
+in line.
+
+00:07:42.730 --> 00:07:44.890
+The function can return
+earlier, and just
+
+00:07:44.890 --> 00:07:47.110
+wait for this problem to
+resolve, and then send it,
+
+00:07:47.110 --> 00:07:48.818
+because you don't need
+to worry about it.
+
+00:07:48.818 --> 00:07:51.130
+On the receiving side,
+it's asynchronous anyway,
+
+00:07:51.130 --> 00:07:52.210
+because it's a stream.
+
+00:07:52.210 --> 00:07:53.835
+So you, most of the
+time, have an async
+
+00:07:53.835 --> 00:07:55.480
+that you can use to
+await this thing.
+
+00:07:55.480 --> 00:07:56.146
+JAKE: Excellent.
+
+00:07:56.146 --> 00:07:59.200
+So this is a pattern that
+works really well for code
+
+00:07:59.200 --> 00:08:01.090
+that you're in
+control of, right?
+
+00:08:01.090 --> 00:08:02.980
+Because you are now
+using a transform stream
+
+00:08:02.980 --> 00:08:04.570
+promise, instead of a transform.
+
+00:08:04.570 --> 00:08:08.050
+If it's for third
+party code that
+
+00:08:08.050 --> 00:08:10.062
+is expecting transform
+to be on the global,
+
+00:08:10.062 --> 00:08:11.770
+that's when you're
+going to have to start
+
+00:08:11.770 --> 00:08:13.180
+delaying the loading of
+that third party code.
+
+00:08:13.180 --> 00:08:14.470
+SURMA: That being said, if
+you have third party code that
+
+00:08:14.470 --> 00:08:17.669
+relies on transform streams,
+something is a little bit
+
+00:08:17.669 --> 00:08:18.460
+going wrong, right?
+
+00:08:18.460 --> 00:08:19.132
+JAKE: Oh.
+
+00:08:19.132 --> 00:08:20.590
+I've got mixed
+feelings about that.
+
+00:08:20.590 --> 00:08:22.090
+Because I see what
+you're saying.
+
+00:08:22.090 --> 00:08:26.026
+But then you could end up--
+if each library is loading
+
+00:08:26.026 --> 00:08:27.400
+a polyfill for
+transform streams,
+
+00:08:27.400 --> 00:08:28.816
+you could end up
+with this problem
+
+00:08:28.816 --> 00:08:31.486
+where you're loading
+five libraries that
+
+00:08:31.486 --> 00:08:32.860
+are using transform
+streams, each
+
+00:08:32.860 --> 00:08:34.123
+loading their own polyfill.
+
+00:08:34.123 --> 00:08:36.039
+Unless they're using
+exactly the same version.
+
+00:08:36.039 --> 00:08:37.960
+SURMA: In that
+sense though, that's
+
+00:08:37.960 --> 00:08:40.497
+where you would dynamically
+load the polyfill,
+
+00:08:40.497 --> 00:08:42.580
+attach it to the global,
+and then dynamically load
+
+00:08:42.580 --> 00:08:43.700
+the third party.
+
+00:08:43.700 --> 00:08:44.200
+JAKE: Yes.
+
+00:08:44.200 --> 00:08:44.699
+Exactly.
+
+00:08:44.699 --> 00:08:46.630
+SURMA: And that's
+because some people might
+
+00:08:46.630 --> 00:08:49.540
+be disgusted by this
+pattern at the bottom, where
+
+00:08:49.540 --> 00:08:52.229
+you await something, and
+immediately call new.
+
+00:08:52.229 --> 00:08:54.520
+You can often write in two
+lines, which might be nicer.
+
+00:08:54.520 --> 00:08:55.000
+JAKE: Of course.
+
+00:08:55.000 --> 00:08:56.560
+SURMA: Probably even if
+will go back and package it
+
+00:08:56.560 --> 00:08:58.685
+back up, because of what
+manufacturers do nowadays.
+
+00:08:58.685 --> 00:09:01.060
+JAKE: And if you're confident
+that the polyfill is
+
+00:09:01.060 --> 00:09:03.040
+feature complete and
+the spec is settled,
+
+00:09:03.040 --> 00:09:05.740
+then this is a point where you
+could assign it to the global
+
+00:09:05.740 --> 00:09:07.720
+if you were loading
+third party code.
+
+00:09:07.720 --> 00:09:09.610
+SURMA: But I feel
+like the promise
+
+00:09:09.610 --> 00:09:13.510
+if I constructor pattern is
+a really nice way of loading
+
+00:09:13.510 --> 00:09:17.532
+polyfills on demand, ensuring
+for you to run as much code
+
+00:09:17.532 --> 00:09:18.990
+as possible with
+as little requests
+
+00:09:18.990 --> 00:09:19.930
+as possible at the start.
+
+00:09:19.930 --> 00:09:21.721
+JAKE: And you're loading
+this ahead of time
+
+00:09:21.721 --> 00:09:23.220
+as well, but asynchronously.
+
+00:09:23.220 --> 00:09:23.920
+SURMA: And that's
+your choice now.
+
+00:09:23.920 --> 00:09:25.600
+You can decide when
+the loading happens.
+
+00:09:25.600 --> 00:09:26.974
+If you're like,
+actually, I don't
+
+00:09:26.974 --> 00:09:28.900
+need to load this
+right at the start.
+
+00:09:28.900 --> 00:09:32.560
+I can actually load it
+and request callback,
+
+00:09:32.560 --> 00:09:33.850
+you can do that as well.
+
+00:09:33.850 --> 00:09:34.980
+That' how things work now.
+
+00:09:34.980 --> 00:09:35.810
+[MUSIC PLAYING]
+
+00:09:35.810 --> 00:09:36.740
+Hulk is back.
+
+00:09:36.740 --> 00:09:38.175
+JAKE: (LAUGHING) Hulk is back?
+
+00:09:38.175 --> 00:09:39.216
+That's your normal state?
+
+00:09:39.216 --> 00:09:40.490
+SURMA: Have you seen my bicep?
+
+00:09:40.490 --> 00:09:42.650
+This is, like, made of steel!
+
+00:09:42.650 --> 00:09:43.890
+JAKE: Made of soy, mate.
+
+00:09:43.890 --> 00:09:46.453
+[LAUGHTER]
+

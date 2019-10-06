@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.000
+[MUSIC PLAYING]
+
+00:00:08.094 --> 00:00:10.060
+In this Mini Tip, I
+want to introduce you
+
+00:00:10.060 --> 00:00:12.320
+to a little tool which
+allows you to play around
+
+00:00:12.320 --> 00:00:14.260
+with HTTP/2 locally.
+
+00:00:14.260 --> 00:00:14.900
+I'm Surma.
+
+00:00:14.900 --> 00:00:17.290
+And I'm also the
+author of this tool.
+
+00:00:17.290 --> 00:00:20.370
+HTTP/2 is supported in almost
+all browsers at this point
+
+00:00:20.370 --> 00:00:22.750
+and brings a lot of changes
+both in how we design
+
+00:00:22.750 --> 00:00:25.045
+as well as build our web apps.
+
+00:00:25.045 --> 00:00:27.950
+The support on the server side
+is a little bit more lacking.
+
+00:00:27.950 --> 00:00:29.670
+So just quickly
+playing around with it
+
+00:00:29.670 --> 00:00:31.660
+gets a little tough,
+especially considering
+
+00:00:31.660 --> 00:00:34.240
+you need a TLS certificate
+for HTTP/2 to work.
+
+00:00:34.240 --> 00:00:37.120
+Generating a self-signed
+certificate for a local host
+
+00:00:37.120 --> 00:00:38.930
+is kind of tedious
+as well, which
+
+00:00:38.930 --> 00:00:41.840
+was motivation enough for me
+to write this little tool.
+
+00:00:41.840 --> 00:00:44.510
+Most web developers should
+be familiar with Python's
+
+00:00:44.510 --> 00:00:47.160
+built-in web server
+called Simple HTTP Server.
+
+00:00:47.160 --> 00:00:49.780
+You usually start it
+over the command line.
+
+00:00:49.780 --> 00:00:52.610
+And it serves the current
+directory over HTTP.
+
+00:00:52.610 --> 00:00:56.020
+What I wrote is called Simple
+HTTP/2 Server and behaves
+
+00:00:56.020 --> 00:00:59.380
+exactly the same, but
+uses HTTP/2 instead
+
+00:00:59.380 --> 00:01:02.140
+and takes care of generating
+a certificate for you.
+
+00:01:02.140 --> 00:01:04.769
+I wrote it in Go instead
+of Python because A,
+
+00:01:04.769 --> 00:01:06.610
+I am pretty useless
+when it comes to Python;
+
+00:01:06.610 --> 00:01:09.680
+and B, Go has the nice
+side effect that you only
+
+00:01:09.680 --> 00:01:13.620
+need to download one binary and
+don't need a runtime or an SDK.
+
+00:01:13.620 --> 00:01:16.970
+You can find all these binaries
+for Windows, Linux, and OS
+
+00:01:16.970 --> 00:01:20.100
+X in the release section of
+the repository on GitHub.
+
+00:01:20.100 --> 00:01:22.900
+You basically install this
+tool by putting the binary
+
+00:01:22.900 --> 00:01:23.830
+in your path.
+
+00:01:23.830 --> 00:01:25.690
+If you start the
+tool, it will generate
+
+00:01:25.690 --> 00:01:27.825
+a key.pem and a
+cert.pem, which are
+
+00:01:27.825 --> 00:01:30.850
+the private and the public
+parts of the certificate.
+
+00:01:30.850 --> 00:01:34.480
+It then starts up a web server
+serving the current directory.
+
+00:01:34.480 --> 00:01:36.960
+If you open up Def tools,
+go to the Network tab
+
+00:01:36.960 --> 00:01:38.540
+and add the Protocol column.
+
+00:01:38.540 --> 00:01:41.510
+You'll hopefully
+see H2 showing up.
+
+00:01:41.510 --> 00:01:43.820
+That is the official
+symbol for HTTP/2.
+
+00:01:43.820 --> 00:01:45.610
+And it means that it's working.
+
+00:01:45.610 --> 00:01:48.800
+One interesting feature
+of HTTP/2 is called push.
+
+00:01:48.800 --> 00:01:51.510
+It allows you to send additional
+resources to the client
+
+00:01:51.510 --> 00:01:54.050
+that the client doesn't
+even know it needs yet.
+
+00:01:54.050 --> 00:01:57.050
+So, for example, you could put
+your JavaScript in CSS files
+
+00:01:57.050 --> 00:01:59.680
+when someone is
+requesting the index html.
+
+00:01:59.680 --> 00:02:03.600
+Simple HTTP/2 Server has
+support for this, too.
+
+00:02:03.600 --> 00:02:05.130
+You need to write
+a JSON file that
+
+00:02:05.130 --> 00:02:07.410
+lists all the resources
+that should be pushed when
+
+00:02:07.410 --> 00:02:09.310
+a certain file is requested.
+
+00:02:09.310 --> 00:02:12.520
+Save that file as push.json
+in the root of the project
+
+00:02:12.520 --> 00:02:14.980
+and start Simple HTTP/2 Server.
+
+00:02:14.980 --> 00:02:17.700
+As you can see, the error
+about a missing push manifest
+
+00:02:17.700 --> 00:02:18.940
+is now gone.
+
+00:02:18.940 --> 00:02:21.970
+The server will now push as
+you specified in the manifest.
+
+00:02:21.970 --> 00:02:23.290
+And that's it already.
+
+00:02:23.290 --> 00:02:25.890
+Keep in mind that this tool
+is for experimenting and not
+
+00:02:25.890 --> 00:02:27.210
+a production web server.
+
+00:02:27.210 --> 00:02:28.930
+If you have any
+problems or questions,
+
+00:02:28.930 --> 00:02:30.330
+feel free to hit
+me up on Twitter
+
+00:02:30.330 --> 00:02:33.080
+or open up an issue on
+the GitHub Repository.
+
+00:02:33.080 --> 00:02:33.910
+Enjoy HTTP/2.
+
+00:02:33.910 --> 00:02:36.360
+[MUSIC PLAYING]
+

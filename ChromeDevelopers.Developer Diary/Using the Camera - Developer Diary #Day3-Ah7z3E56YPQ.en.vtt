@@ -1,0 +1,1050 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.083
+MAT SCALES: Hey, everyone.
+
+00:00:01.083 --> 00:00:03.180
+I'm back again to talk
+about building my camera.
+
+00:00:03.180 --> 00:00:05.096
+This time I want to talk
+about actually taking
+
+00:00:05.096 --> 00:00:07.471
+control of the device camera
+and taking pictures with it.
+
+00:00:07.471 --> 00:00:09.595
+I already talked about how
+you got hold of an image
+
+00:00:09.595 --> 00:00:11.337
+when you don't have
+access to the camera.
+
+00:00:11.337 --> 00:00:13.170
+So here we don't have
+to worry quite so much
+
+00:00:13.170 --> 00:00:15.330
+about compatibility
+except to make sure
+
+00:00:15.330 --> 00:00:18.420
+that we use feature detection
+to disable this feature where
+
+00:00:18.420 --> 00:00:20.220
+it isn't available.
+
+00:00:20.220 --> 00:00:22.494
+As it happens, though,
+the release of Safari 11,
+
+00:00:22.494 --> 00:00:24.660
+the latest stable version
+of all the major browsers,
+
+00:00:24.660 --> 00:00:27.540
+now actually supports
+the getUserMedia API,
+
+00:00:27.540 --> 00:00:29.890
+which is the core
+feature that we need.
+
+00:00:29.890 --> 00:00:32.250
+So let's have a look at
+how we handle all of this.
+
+00:00:32.250 --> 00:00:34.250
+As I said, one of the
+first things we need to do
+
+00:00:34.250 --> 00:00:35.290
+is feature detection.
+
+00:00:35.290 --> 00:00:37.650
+So I have a constants
+file here, which
+
+00:00:37.650 --> 00:00:39.540
+just has a couple of things.
+
+00:00:39.540 --> 00:00:44.760
+So I'm checking for the image
+capture object in the window.
+
+00:00:44.760 --> 00:00:48.180
+I'm checking for the media
+devices object in Navigator.
+
+00:00:48.180 --> 00:00:51.450
+We'll use those to determine
+that these two APIs actually
+
+00:00:51.450 --> 00:00:52.710
+exist.
+
+00:00:52.710 --> 00:00:56.910
+So I've extracted all of the
+camera related code for my app
+
+00:00:56.910 --> 00:01:00.760
+into this helper class that
+I've just called Camera Helper.
+
+00:01:00.760 --> 00:01:03.440
+This is going to handle all of
+the interaction with the device
+
+00:01:03.440 --> 00:01:07.080
+so that the UI layer can just
+concentrate on how to present
+
+00:01:07.080 --> 00:01:08.580
+this information to the user.
+
+00:01:08.580 --> 00:01:10.290
+So one of the first
+things we need to do
+
+00:01:10.290 --> 00:01:13.537
+is if the feature is
+available in the browser,
+
+00:01:13.537 --> 00:01:15.370
+it doesn't actually
+mean we've got a camera.
+
+00:01:15.370 --> 00:01:19.440
+So we need a way to let
+the UI layer determine
+
+00:01:19.440 --> 00:01:20.880
+what cameras are available.
+
+00:01:20.880 --> 00:01:24.710
+So that's what this method is
+for, the getCameras method.
+
+00:01:24.710 --> 00:01:27.180
+If the media device's
+API is available,
+
+00:01:27.180 --> 00:01:31.470
+then we'll use that, the
+navigator media device's
+
+00:01:31.470 --> 00:01:35.400
+enumerate devices method to
+get hold of all of the media
+
+00:01:35.400 --> 00:01:39.330
+devices that are attached to
+our phone or laptop or whatever.
+
+00:01:39.330 --> 00:01:43.410
+But this will include video
+cameras as well as microphones.
+
+00:01:43.410 --> 00:01:47.100
+So we then filter this
+to get only devices that
+
+00:01:47.100 --> 00:01:49.630
+are video input devices.
+
+00:01:49.630 --> 00:01:50.880
+And then we return that.
+
+00:01:50.880 --> 00:01:53.850
+And if this API isn't
+available, then getCameras
+
+00:01:53.850 --> 00:01:55.700
+will just return an empty array.
+
+00:01:55.700 --> 00:01:58.860
+Once the UI knows that
+there is a camera available,
+
+00:01:58.860 --> 00:02:01.320
+it can call us to say that
+it wants to start a stream
+
+00:02:01.320 --> 00:02:03.340
+and it can pass in a device ID.
+
+00:02:03.340 --> 00:02:05.880
+Now this device ID comes
+from the objects that
+
+00:02:05.880 --> 00:02:08.430
+were returned from
+getCameras, and this
+
+00:02:08.430 --> 00:02:10.889
+allows the UI to say
+that it specifically
+
+00:02:10.889 --> 00:02:13.260
+wants one of those cameras.
+
+00:02:13.260 --> 00:02:16.380
+So this allows for UI
+features like switching
+
+00:02:16.380 --> 00:02:19.320
+between the front-facing
+and rear-facing cameras,
+
+00:02:19.320 --> 00:02:22.910
+or just to pick a known camera
+from a drop-down, for example.
+
+00:02:22.910 --> 00:02:26.550
+Then when we actually want to
+get the data from the camera,
+
+00:02:26.550 --> 00:02:31.470
+we need to use the navigator dot
+mediaDevices dot getUserMedia
+
+00:02:31.470 --> 00:02:33.970
+call to get a stream.
+
+00:02:33.970 --> 00:02:35.980
+Now there's a bit
+of terminology here,
+
+00:02:35.980 --> 00:02:38.040
+which is a little bit confusing.
+
+00:02:38.040 --> 00:02:40.230
+There's a few overloaded words.
+
+00:02:40.230 --> 00:02:44.130
+So start off with
+a stream is just
+
+00:02:44.130 --> 00:02:46.090
+a bunch of media information.
+
+00:02:46.090 --> 00:02:49.310
+And it will consist of
+tracks, one or more tracks.
+
+00:02:49.310 --> 00:02:53.530
+And those tracks could
+be video or audio.
+
+00:02:53.530 --> 00:02:56.220
+So in theory, a stream can
+have multiple video fee--
+
+00:02:56.220 --> 00:03:00.720
+multiple video tracks and
+multiple audio tracks.
+
+00:03:00.720 --> 00:03:04.820
+In this case, we're
+expecting to get just video.
+
+00:03:04.820 --> 00:03:06.940
+And I'll say why in a moment.
+
+00:03:06.940 --> 00:03:09.150
+And we should just have one.
+
+00:03:09.150 --> 00:03:11.700
+So we have stream,
+and we have a track.
+
+00:03:11.700 --> 00:03:14.160
+And the track is the
+first video track.
+
+00:03:14.160 --> 00:03:16.600
+Now for each of these
+streams and tracks,
+
+00:03:16.600 --> 00:03:21.090
+there are things called
+constraints, settings,
+
+00:03:21.090 --> 00:03:22.470
+and capabilities.
+
+00:03:22.470 --> 00:03:28.770
+A stream has both
+constraints and capabilities.
+
+00:03:28.770 --> 00:03:32.430
+The browser has capabilities.
+
+00:03:32.430 --> 00:03:38.092
+And a track has capabilities,
+constraints, and settings.
+
+00:03:38.092 --> 00:03:40.050
+And then when we want to
+actually take a photo,
+
+00:03:40.050 --> 00:03:42.280
+if we're using the
+Image Capture API,
+
+00:03:42.280 --> 00:03:44.700
+that, again, takes
+another settings object.
+
+00:03:44.700 --> 00:03:47.880
+So I apologize if you get
+confused with constraints
+
+00:03:47.880 --> 00:03:50.140
+and capabilities and settings.
+
+00:03:50.140 --> 00:03:52.950
+There are several
+things called that.
+
+00:03:52.950 --> 00:03:55.320
+That's just the way the API is.
+
+00:03:55.320 --> 00:03:57.360
+So the first place that
+we're going to use this
+
+00:03:57.360 --> 00:03:59.650
+is in our actual
+getUserMedia call.
+
+00:03:59.650 --> 00:04:04.320
+We pass in constraints
+for the stream.
+
+00:04:04.320 --> 00:04:08.910
+This is our way of telling the
+browser what kind of camera
+
+00:04:08.910 --> 00:04:09.474
+we want.
+
+00:04:09.474 --> 00:04:11.640
+So most of our constraints
+are defined as a constant
+
+00:04:11.640 --> 00:04:12.960
+here at the top of the file.
+
+00:04:12.960 --> 00:04:14.310
+You can see that they--
+
+00:04:14.310 --> 00:04:15.774
+we say that we want video.
+
+00:04:15.774 --> 00:04:17.190
+This is why we're
+not going to get
+
+00:04:17.190 --> 00:04:20.382
+any audio because the audio
+property is by default false.
+
+00:04:20.382 --> 00:04:21.840
+So we're only saying
+we want video.
+
+00:04:21.840 --> 00:04:23.640
+And we're not setting
+the device ID here,
+
+00:04:23.640 --> 00:04:24.890
+but we set it in the function.
+
+00:04:24.890 --> 00:04:26.250
+I'll show that in a sec.
+
+00:04:26.250 --> 00:04:27.920
+We say that we want
+the facing mode
+
+00:04:27.920 --> 00:04:30.390
+to be either user, that
+is, the camera is facing
+
+00:04:30.390 --> 00:04:33.060
+the user-- it's a selfie
+camera-- or environment-- it's
+
+00:04:33.060 --> 00:04:36.420
+facing away from the user into
+whatever you're looking at.
+
+00:04:36.420 --> 00:04:41.600
+And we say that the width and
+height should ideally be--
+
+00:04:41.600 --> 00:04:45.010
+this is 1080p HD resolution.
+
+00:04:45.010 --> 00:04:46.920
+Now with these
+constraints, I could
+
+00:04:46.920 --> 00:04:50.490
+have said that the facing
+mode was just user.
+
+00:04:50.490 --> 00:04:52.500
+I could've said I
+only want selfie mode.
+
+00:04:52.500 --> 00:04:55.320
+Or I could have said that I
+want the width and the height
+
+00:04:55.320 --> 00:04:58.530
+to be exactly 1080p resolution.
+
+00:04:58.530 --> 00:05:03.480
+But if these constraints
+can't be satisfied,
+
+00:05:03.480 --> 00:05:07.270
+then you won't get
+any stream at all.
+
+00:05:07.270 --> 00:05:12.650
+So if I ran this with
+exact here, or having
+
+00:05:12.650 --> 00:05:15.240
+the just user on my laptop
+here, this would actually
+
+00:05:15.240 --> 00:05:19.050
+fail because my laptop
+will only give me
+
+00:05:19.050 --> 00:05:24.000
+720p resolution out
+of camera, and it only
+
+00:05:24.000 --> 00:05:25.430
+supports an environment camera.
+
+00:05:25.430 --> 00:05:27.180
+I mean, technically,
+it's facing the user,
+
+00:05:27.180 --> 00:05:29.880
+but it describes it as
+an environment camera.
+
+00:05:29.880 --> 00:05:31.590
+So we're using
+whatever device ID
+
+00:05:31.590 --> 00:05:35.730
+was passed in from the UI
+layer to change the constraints
+
+00:05:35.730 --> 00:05:39.430
+for the video so that
+when we call getUserMedia,
+
+00:05:39.430 --> 00:05:41.620
+we're getting a
+particular camera.
+
+00:05:41.620 --> 00:05:44.550
+So that's the initial
+constraints for getUserMedia.
+
+00:05:44.550 --> 00:05:49.770
+We also have various settings
+we can put on the stream
+
+00:05:49.770 --> 00:05:50.550
+once it's going.
+
+00:05:50.550 --> 00:05:53.070
+So once our stream
+is going, we pull out
+
+00:05:53.070 --> 00:05:56.730
+the first video track of that
+stream and we store it away.
+
+00:05:56.730 --> 00:06:00.512
+We can now set options, set
+constraints on the track.
+
+00:06:00.512 --> 00:06:02.220
+When we want to set
+an option on a track,
+
+00:06:02.220 --> 00:06:04.303
+we need to make sure that
+it's actually supported.
+
+00:06:04.303 --> 00:06:06.430
+So there are two things
+that we need to look at.
+
+00:06:06.430 --> 00:06:09.060
+One is at the top
+of the file here,
+
+00:06:09.060 --> 00:06:12.060
+we have this supported
+constraints object,
+
+00:06:12.060 --> 00:06:15.690
+which we're setting with
+navigator dot mediaDevices dot
+
+00:06:15.690 --> 00:06:17.670
+getSupportedConstraints,
+assuming
+
+00:06:17.670 --> 00:06:20.790
+that we support the media
+device's API, that is.
+
+00:06:20.790 --> 00:06:23.370
+This will tell us which
+constraints the browser
+
+00:06:23.370 --> 00:06:24.360
+supports.
+
+00:06:24.360 --> 00:06:26.490
+So these are the ones that
+the browser knows about.
+
+00:06:26.490 --> 00:06:31.740
+It's things like white balance
+and exposure, brightness, zoom,
+
+00:06:31.740 --> 00:06:33.540
+focus distance,
+things like that.
+
+00:06:33.540 --> 00:06:35.700
+These are the things
+that we can set
+
+00:06:35.700 --> 00:06:39.870
+to change how the camera is
+physically operating, you know,
+
+00:06:39.870 --> 00:06:44.350
+what kind of image that we're
+getting back from the camera.
+
+00:06:44.350 --> 00:06:46.350
+And this is real time.
+
+00:06:46.350 --> 00:06:50.070
+This is affecting the video feed
+that is coming from the camera.
+
+00:06:50.070 --> 00:06:55.020
+So now we know which constraints
+the browser supports.
+
+00:06:55.020 --> 00:06:57.360
+We also need to take into
+account which constraints
+
+00:06:57.360 --> 00:06:59.730
+the track that we
+currently have supports,
+
+00:06:59.730 --> 00:07:01.240
+because it might be different.
+
+00:07:01.240 --> 00:07:04.350
+For example, on my
+phone, the selfie camera
+
+00:07:04.350 --> 00:07:06.120
+doesn't have a flash.
+
+00:07:06.120 --> 00:07:08.950
+It doesn't support zoom
+or anything like that.
+
+00:07:08.950 --> 00:07:11.070
+Whereas the environment
+camera does have a flash.
+
+00:07:11.070 --> 00:07:15.420
+So on that one, we'll have a
+different set of constraints--
+
+00:07:15.420 --> 00:07:17.700
+sorry, a different
+set of capabilities
+
+00:07:17.700 --> 00:07:19.860
+that we can apply
+constraints to.
+
+00:07:19.860 --> 00:07:22.650
+So if we want to get the
+available capabilities
+
+00:07:22.650 --> 00:07:25.590
+for the track, that's
+another API call.
+
+00:07:25.590 --> 00:07:28.710
+If we are currently dealing with
+the track, because we might not
+
+00:07:28.710 --> 00:07:30.330
+actually have
+started our stream,
+
+00:07:30.330 --> 00:07:33.654
+and if that track supports
+the getCapabilities method--
+
+00:07:33.654 --> 00:07:35.320
+because this is a
+relatively new method,
+
+00:07:35.320 --> 00:07:37.290
+so this is a feature
+detection-- if it supports
+
+00:07:37.290 --> 00:07:39.290
+both of those things,
+then we call that function
+
+00:07:39.290 --> 00:07:42.200
+and it gives us the list of
+capabilities for the track.
+
+00:07:42.200 --> 00:07:46.020
+This is the same kind of object
+as the supported capabilities
+
+00:07:46.020 --> 00:07:50.200
+for the browser, only now
+we know that, specifically,
+
+00:07:50.200 --> 00:07:51.810
+this track also supports them.
+
+00:07:51.810 --> 00:07:55.440
+So when we want to change a
+constraint on this video feed,
+
+00:07:55.440 --> 00:07:58.350
+we need to check that it
+is a support constraint.
+
+00:07:58.350 --> 00:08:00.120
+So we check in our
+supportConstraints
+
+00:08:00.120 --> 00:08:02.160
+that it exists and
+that it is true.
+
+00:08:02.160 --> 00:08:04.970
+We then get the capabilities
+for the current track.
+
+00:08:04.970 --> 00:08:08.310
+And if that's also true, then
+we'll make a note of that.
+
+00:08:08.310 --> 00:08:11.250
+We'll set in our
+trackConstraints object that's
+
+00:08:11.250 --> 00:08:14.340
+recording what constraints we
+want that this particular value
+
+00:08:14.340 --> 00:08:16.297
+is set to this name.
+
+00:08:16.297 --> 00:08:18.630
+And then we'll apply all the
+constraints that we've got.
+
+00:08:18.630 --> 00:08:22.620
+The constraints object is
+just a little bit weird.
+
+00:08:22.620 --> 00:08:25.680
+Instead of being an
+object with keys,
+
+00:08:25.680 --> 00:08:29.377
+it's an object with a single
+key, which is called Advanced,
+
+00:08:29.377 --> 00:08:30.210
+and that's an array.
+
+00:08:30.210 --> 00:08:32.710
+And inside that you
+put in more objects.
+
+00:08:32.710 --> 00:08:35.366
+So because you can't
+directly map things
+
+00:08:35.366 --> 00:08:36.990
+because you could
+have multiple entries
+
+00:08:36.990 --> 00:08:41.460
+for the same constraint,
+I would just have to--
+
+00:08:41.460 --> 00:08:43.570
+I'm just building
+this array here.
+
+00:08:43.570 --> 00:08:48.750
+And then we actually apply
+those constraints to the track.
+
+00:08:48.750 --> 00:08:50.370
+With newer browsers,
+we can actually
+
+00:08:50.370 --> 00:08:54.630
+use an API called the
+Image Capture API.
+
+00:08:54.630 --> 00:08:59.670
+And this lets us direct
+the control actually taking
+
+00:08:59.670 --> 00:09:01.380
+a photo.
+
+00:09:01.380 --> 00:09:03.829
+But we still need to
+support older browsers that
+
+00:09:03.829 --> 00:09:04.620
+don't support this.
+
+00:09:04.620 --> 00:09:07.860
+So there is a fallback way,
+which involves using a canvas.
+
+00:09:07.860 --> 00:09:10.320
+So if we support image
+capture, we're doing one thing,
+
+00:09:10.320 --> 00:09:14.130
+but let's just quickly have
+a look at the fallback case.
+
+00:09:14.130 --> 00:09:18.510
+So we create a canvas, and
+we set its width to the same
+
+00:09:18.510 --> 00:09:20.410
+as the video that we're getting.
+
+00:09:20.410 --> 00:09:24.270
+And then we draw the
+video into the canvas.
+
+00:09:24.270 --> 00:09:28.410
+So that would just draw the
+current frame into the canvas.
+
+00:09:28.410 --> 00:09:31.150
+And then you can use the helper
+that I talked about last time
+
+00:09:31.150 --> 00:09:34.650
+to turn that canvas into
+a blob, which we can then
+
+00:09:34.650 --> 00:09:37.860
+store or manipulate or
+whatever else we want to do.
+
+00:09:37.860 --> 00:09:40.910
+One of the problems with
+this is that getUserMedia
+
+00:09:40.910 --> 00:09:44.190
+itself for the
+video streams only
+
+00:09:44.190 --> 00:09:47.640
+supports up to HD resolution.
+
+00:09:47.640 --> 00:09:50.280
+And obviously, if you have
+a modern mobile phone,
+
+00:09:50.280 --> 00:09:53.400
+your phone is probably much
+better than a 4K resolution
+
+00:09:53.400 --> 00:09:56.310
+when it actually takes photos.
+
+00:09:56.310 --> 00:09:58.700
+So this is why we want to
+use the Image Capture API.
+
+00:09:58.700 --> 00:10:02.320
+So if the Image Capture
+API is supported,
+
+00:10:02.320 --> 00:10:04.560
+then we take that
+stream and we're
+
+00:10:04.560 --> 00:10:06.510
+going to get hold of
+its track, and we're
+
+00:10:06.510 --> 00:10:07.884
+going to create
+this ImageCapture
+
+00:10:07.884 --> 00:10:09.210
+object for that track.
+
+00:10:09.210 --> 00:10:10.980
+And then the simple
+thing that we can do
+
+00:10:10.980 --> 00:10:13.500
+is we can say the
+capture.takePhoto.
+
+00:10:13.500 --> 00:10:17.580
+That will return us a
+photo from the camera.
+
+00:10:17.580 --> 00:10:19.140
+And this, because
+we're specifically
+
+00:10:19.140 --> 00:10:21.930
+telling it to take a photo,
+we use the full resolution
+
+00:10:21.930 --> 00:10:24.120
+of the camera to
+get us that photo.
+
+00:10:24.120 --> 00:10:26.680
+So this is already
+a huge improvement.
+
+00:10:26.680 --> 00:10:32.100
+However, if we have
+a modern browser that
+
+00:10:32.100 --> 00:10:35.710
+allows us to get the
+capabilities of the camera,
+
+00:10:35.710 --> 00:10:38.080
+we can also set some
+additional features.
+
+00:10:38.080 --> 00:10:41.490
+So here you see I'm checking
+this photoCapabilities object.
+
+00:10:41.490 --> 00:10:46.020
+And I skipped over it initially,
+but in the start stream,
+
+00:10:46.020 --> 00:10:49.050
+if image capture is supported,
+I set the photoCapabilities
+
+00:10:49.050 --> 00:10:53.400
+object to be the return
+result of getPhotoCapabilities
+
+00:10:53.400 --> 00:10:56.550
+on an Image Capture
+API for the track.
+
+00:10:56.550 --> 00:10:58.380
+Now these photo
+capabilities, it's
+
+00:10:58.380 --> 00:11:00.570
+a much smaller list of things.
+
+00:11:00.570 --> 00:11:03.480
+It's just something
+called fill light mode
+
+00:11:03.480 --> 00:11:06.632
+it's red eye reduction and then
+image heighten and image width.
+
+00:11:06.632 --> 00:11:09.090
+In my app, I don't actually
+want to change the image height
+
+00:11:09.090 --> 00:11:09.756
+and image width.
+
+00:11:09.756 --> 00:11:12.360
+I want the full resolution.
+
+00:11:12.360 --> 00:11:15.100
+But the other two are
+pretty interesting.
+
+00:11:15.100 --> 00:11:19.770
+So if this track
+supports fill light mode,
+
+00:11:19.770 --> 00:11:22.020
+that's firing the flash.
+
+00:11:22.020 --> 00:11:24.360
+So the options for
+a fill light mode
+
+00:11:24.360 --> 00:11:27.840
+when we actually take a photo,
+assuming it's supported,
+
+00:11:27.840 --> 00:11:31.330
+will be either auto, off, or on.
+
+00:11:31.330 --> 00:11:33.030
+So on meaning always
+fire the flash,
+
+00:11:33.030 --> 00:11:35.640
+auto meaning depending on
+the light levels, whatever
+
+00:11:35.640 --> 00:11:37.920
+the camera would normally do.
+
+00:11:37.920 --> 00:11:40.180
+Similarly, for
+red eye reduction.
+
+00:11:40.180 --> 00:11:42.120
+So the way we do that
+is that in TakePhoto,
+
+00:11:42.120 --> 00:11:44.220
+if we have this
+photoCapabilities object
+
+00:11:44.220 --> 00:11:47.830
+and the fill light mode
+includes whatever we're trying
+
+00:11:47.830 --> 00:11:51.160
+and set the flash to,
+then set the settings fill
+
+00:11:51.160 --> 00:11:52.710
+light mode to be that.
+
+00:11:52.710 --> 00:11:56.040
+And similarly, if the
+photoCapabilities red eye
+
+00:11:56.040 --> 00:11:58.410
+reduction is
+controllable, then we'll
+
+00:11:58.410 --> 00:12:00.660
+allow whatever our red
+eye reduction setting
+
+00:12:00.660 --> 00:12:02.370
+is to be set there.
+
+00:12:02.370 --> 00:12:04.920
+And red eye reduction and flash
+are just public properties
+
+00:12:04.920 --> 00:12:06.628
+on the camera helper,
+so that they can be
+
+00:12:06.628 --> 00:12:08.410
+set from the UX layer whenever.
+
+00:12:08.410 --> 00:12:11.667
+So then we can pass that
+settings object to TakePhoto,
+
+00:12:11.667 --> 00:12:14.250
+and it will fire the flash if
+we arrest it to, use the red eye
+
+00:12:14.250 --> 00:12:15.970
+reduction.
+
+00:12:15.970 --> 00:12:17.710
+It will do whatever we want.
+
+00:12:17.710 --> 00:12:19.800
+So that's settings,
+capabilities,
+
+00:12:19.800 --> 00:12:25.620
+and constraints for streams,
+tracks, and the taking a photo.
+
+00:12:25.620 --> 00:12:27.900
+Hopefully, that's all clear now.
+
+00:12:27.900 --> 00:12:29.010
+Yeah, there we go.
+
+00:12:29.010 --> 00:12:31.481
+Proper access to all of
+the features of the camera.
+
+00:12:31.481 --> 00:12:32.730
+Thanks very much for watching.
+
+00:12:32.730 --> 00:12:35.797
+And until next
+time, happy coding.
+
+00:12:35.797 --> 00:12:36.630
+Thanks for watching.
+
+00:12:36.630 --> 00:12:38.296
+If you'd like to see
+more of our videos,
+
+00:12:38.296 --> 00:12:40.170
+click here, and see you again.
+
+00:12:40.170 --> 00:12:41.720
+Cheers.
+

@@ -1,0 +1,638 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:00.000 --> 00:00:16.269
+[MUSIC PLAYING]
+
+00:00:18.750 --> 00:00:20.690
+安全就像汽车保险
+ADDY: Security is a lot like car insurance.
+
+00:00:20.690 --> 00:00:22.232
+大部分人都不会想买
+Most people don't want to pay for it.
+
+00:00:22.232 --> 00:00:23.231
+我同意
+MATT: I agree with that.
+
+00:00:23.231 --> 00:00:24.730
+一些人就是不会去买它
+ADDY: Some people don't pay for it.
+
+00:00:24.730 --> 00:00:25.990
+所以这里有一个问题
+MATT: So here's the thing.
+
+00:00:25.990 --> 00:00:28.320
+对我而言  我不介意在汽车保险上花钱
+For me, I don't mind paying for car insurance
+
+00:00:28.320 --> 00:00:30.360
+因为万一我弄坏了我的车
+because it means that if I destroy my car,
+
+00:00:30.360 --> 00:00:32.710
+或者我的车被偷了  我就能获得赔偿
+or it gets stolen, you get your money back.
+
+00:00:32.710 --> 00:00:33.580
+这能减少我的损失
+And then it's fine.
+
+00:00:33.580 --> 00:00:35.011
+这其实算是一种投资
+It's sort of an investment.
+
+00:00:35.011 --> 00:00:36.510
+我不喜欢它的地方是
+The thing that I don't like about it
+
+00:00:36.510 --> 00:00:38.950
+在办理过程中他们会发份法律文件给你
+is, I'm not going to read the massive 50-page long legal
+
+00:00:38.950 --> 00:00:43.580
+一份长达 50 页长篇大论式的法律文件  我可不打算去读它
+document they send you in the process of getting said car insurance.
+
+00:00:43.580 --> 00:00:47.260
+当事情发生了我可以获得赔偿
+I'm fine with it happening, the payment going out to get it.
+
+00:00:47.260 --> 00:00:49.510
+做这么多事就是为了这个
+It's everything around it.
+
+00:00:49.510 --> 00:00:51.167
+我从来没读过那些合同
+ADDY: I never read those agreements.
+
+00:00:51.167 --> 00:00:54.620
+我甚至没读过 iTunes 的许可协议
+I'm not even committed enough to read the iTunes license agreement.
+
+00:00:54.620 --> 00:00:57.130
+是的  这和我为我的网站做的一些安全工作
+MATT: And yeah, that's basically exactly the same thing
+
+00:00:57.130 --> 00:00:58.560
+基本是同一个情况
+as I've done for my site.
+
+00:00:58.560 --> 00:01:01.720
+SSL 的目的就是为了保证用户的安全
+The whole point of SSL is to keep users secure.
+
+00:01:01.720 --> 00:01:04.519
+而 Service Worker 的存在也是有它的意义的
+And Service Worker, it does actually make a lot of sense.
+
+00:01:04.519 --> 00:01:06.784
+因为你会需要一些东西在后台
+Because you're going to have something controlling
+
+00:01:06.784 --> 00:01:07.950
+控制你的页面
+your page in the background.
+
+00:01:07.950 --> 00:01:09.160
+如果有人能侵入到这中间
+And if someone can get in the middle,
+
+00:01:09.160 --> 00:01:10.590
+然后替换掉 Service Worker
+and then swap out Service Worker,
+
+00:01:10.590 --> 00:01:15.520
+比如让 addyosmani.com/blog 指向我的网站  我的博客文章
+like addyosmani.com/blog could go straight to my site, my blog posts.
+
+00:01:15.520 --> 00:01:18.470
+啥
+ADDY: What?
+
+00:01:18.470 --> 00:01:20.450
+我可以窃取你所有的广告收入
+MATT: I could steal all your ad revenue.
+
+00:01:20.450 --> 00:01:21.949
+如果真这样的话我觉得是
+ADDY: If anything, it would probably
+
+00:01:21.949 --> 00:01:23.910
+对内容质量的一次改进
+be an improvement in content quality.
+
+00:01:23.910 --> 00:01:25.370
+开玩笑的
+MATT: Not true.
+
+00:01:25.370 --> 00:01:28.030
+但是我知道出现这种情况的根本原因
+But I can understand the main point of it.
+
+00:01:28.030 --> 00:01:30.250
+之所以出现这些问题原因在于
+The problem I have with all of this
+
+00:01:30.250 --> 00:01:32.380
+学习 SSL 真是太难了
+is it's really hard to learn about SSL.
+
+00:01:32.380 --> 00:01:35.010
+首先  许多资料都蛮旧的了
+A, there's tons of old content.
+
+00:01:35.010 --> 00:01:36.910
+你可以通过他们了解如何为你的网站配置 SSL
+This is how you set up SSL on your site.
+
+00:01:36.910 --> 00:01:39.020
+虽然有用  不过太旧了
+It's useful, but it's old.
+
+00:01:39.020 --> 00:01:42.070
+其次  影响整件事结果的因素
+And then secondly, there were so many different factors
+
+00:01:42.070 --> 00:01:42.960
+太复杂了
+to the whole thing.
+
+00:01:42.960 --> 00:01:45.760
+所以当我试着为我的网站配置它的时候
+ADDY: So when I was trying to set this stuff up on my site--
+
+00:01:45.760 --> 00:01:48.950
+我甚至没有将 HTTPS 设置为默认
+and I don't even default to HTTPS just yet, because there's
+
+00:01:48.950 --> 00:01:52.320
+因为我还是不知道怎么处理
+still-- I still don't know how to handle all the mixed content
+
+00:01:52.320 --> 00:01:54.520
+那些来自我加载的第三方模块的安全警示
+security warnings I'm getting from the third parties
+
+00:01:54.520 --> 00:01:57.100
+比如一些小部件  还有分享按钮等等
+I'm loading, like widgets, and share buttons, and from.
+
+00:01:57.100 --> 00:01:57.720
+没错
+MATT: Yeah.
+
+00:01:57.720 --> 00:01:59.010
+感觉这一切对我来说
+ADDY: And it's like all the tooling around this
+
+00:01:59.010 --> 00:02:00.690
+就像是一片雷区
+is sort of a minefield to me.
+
+00:02:00.690 --> 00:02:03.510
+我发现我很难找到方向
+I find it hard to navigate those waters.
+
+00:02:03.510 --> 00:02:06.850
+我也确实  我已经反复在我的网站上
+MATT: So I've literally-- I've done numerous steps
+
+00:02:06.850 --> 00:02:10.970
+配置过很多次了  但即使是这样  我还是会遇到问题
+into how I got it on my site, and even then, I've got issues.
+
+00:02:10.970 --> 00:02:13.700
+所以第一个我要说的是 SSL labs
+So the first one was SSL labs.
+
+00:02:13.700 --> 00:02:14.990
+你只管给它一个 URL
+You just bung in your URL.
+
+00:02:14.990 --> 00:02:16.830
+然后它就会去查看你的网站
+And it will look at your site and figure out
+
+00:02:16.830 --> 00:02:20.250
+检查 HTTP 是否会重定向到 HTTPS
+whether HTTP redirects to HTTPS, and just
+
+00:02:20.250 --> 00:02:22.950
+还能看到你网站的 HTTPS 的配置
+the configuration of HTTPS on your site.
+
+00:02:22.950 --> 00:02:27.880
+所以如果我在 SSL labs 里输入 gauntface.com
+So if I bung in gauntface.com in SSL labs, I was, at one point,
+
+00:02:27.880 --> 00:02:30.930
+我曾经很荣幸拿到过一个 A+ 的评价  我当时挺开心的
+getting a glorious A-plus, which I was very happy about,
+
+00:02:30.930 --> 00:02:33.690
+然而现在我只拿到了 C
+and now I've been downgraded to a C.
+
+00:02:33.690 --> 00:02:36.210
+你的网站改了很多吗
+ADDY: Have you changed your site a lot?
+
+00:02:36.210 --> 00:02:36.710
+MATT: 不
+MATT: No.
+
+00:02:36.710 --> 00:02:38.350
+又或者是
+So-- ADDY: Is there a way of--
+
+00:02:38.350 --> 00:02:43.150
+其实是因为发现了 POODLE 漏洞
+MATT: So what's happened is there was the POODLE vulnerability.
+
+00:02:43.150 --> 00:02:47.120
+我想这多半是由于 SSL3
+And I think that's basically all through SSL3.
+
+00:02:47.120 --> 00:02:51.059
+而且我仍然在我的网站上  我知道了
+And I've still got SSL3 support-- ADDY: Oh, I see.
+
+00:02:51.059 --> 00:02:51.850
+使用 SSL3
+MATT: --on my site.
+
+00:02:51.850 --> 00:02:54.183
+所以即使在其他方面做的很不错
+So even though everything is actually doing really well,
+
+00:02:54.183 --> 00:02:58.260
+比如在每一个顶层项目上都拿到了 100 或是 90 的高分
+like 190's for the scores on each top-level topic,
+
+00:02:58.260 --> 00:03:02.300
+介于 SSL3 和 POODLE 漏洞他们还是只能给我 C
+they've kept me to a C because of SSL3 and POODLE.
+
+00:03:02.300 --> 00:03:04.760
+他们能够保证你的网站跟得上时代  这点很不错
+ADDY: I guess it's cool that they're keeping it up to date.
+
+00:03:04.760 --> 00:03:06.040
+是的  你可以时常在上面
+MATT: Yeah, so this is the nice thing,
+
+00:03:06.040 --> 00:03:07.760
+测试你的网站
+is you can keep on regularly running through this,
+
+00:03:07.760 --> 00:03:10.080
+保证你的网站跟得上时代并且追踪潜在的问题
+and will keep it up to date and track everything.
+
+00:03:10.080 --> 00:03:13.280
+另一个好处在于
+The really nice thing with this is it's really good.
+
+00:03:13.280 --> 00:03:16.190
+它包括了非常多的信息  都有点太多了
+It's a ton of information, possibly too much.
+
+00:03:16.190 --> 00:03:19.790
+但是在这时候  比如说协议  就像这样
+But at the same time, things like protocols, it's saying,
+
+00:03:19.790 --> 00:03:20.750
+你支持 SSL2 吗
+do you support SSL2?
+
+00:03:20.750 --> 00:03:21.250
+不
+No.
+
+00:03:21.250 --> 00:03:22.190
+你支持 SSL3 吗
+Do you support SSL3?
+
+00:03:22.190 --> 00:03:22.689
+是的
+Yes.
+
+00:03:22.689 --> 00:03:23.571
+这不安全
+It's insecure.
+
+00:03:23.571 --> 00:03:25.320
+这些是你使用的 cipher suite
+These are the cipher suites that you have.
+
+00:03:25.320 --> 00:03:27.010
+然后它应该  如果发现有什么问题
+And it literally-- if there's one particular thing that
+
+00:03:27.010 --> 00:03:30.330
+比如说发现不好的实现  它就该将它标注出来
+is, like, this is actually really a bad practice, it highlights it.
+
+00:03:30.330 --> 00:03:33.962
+这样你起码可以去 Google 一下解决方法
+And then you can at least go and Google and find out the problem.
+
+00:03:33.962 --> 00:03:35.670
+所以这里是我发现的第一个解决方法
+So this was the first thing that I found.
+
+00:03:35.670 --> 00:03:37.461
+我在很多方面都不在行
+I was like, sweet, these are all the places
+
+00:03:37.461 --> 00:03:42.220
+总的说做的很烂  好吧我认了
+that I suck, and overall I'm doing bad, well, or whatever.
+
+00:03:42.220 --> 00:03:46.970
+不过之后我发现 Mozilla SSL
+The best thing I found after this was the Mozilla SSL
+
+00:03:46.970 --> 00:03:48.620
+配置生成器
+configuration generator.
+
+00:03:48.620 --> 00:03:50.907
+简直是个神器
+And this thing is a godsend.
+
+00:03:50.907 --> 00:03:52.490
+它替你把这些事都做了吗
+ADDY: Does it do all the work for you?
+
+00:03:52.490 --> 00:03:53.600
+是的  太棒了
+MATT: Yes, so good.
+
+00:03:53.600 --> 00:03:55.760
+我遇到的其中一个问题是
+So basically, one of the issues that I had was,
+
+00:03:55.760 --> 00:03:59.230
+我怎么知道怎样的 SSL cipher suite 才算好
+how do I know what a good SSL cipher suite is?
+
+00:03:59.230 --> 00:04:01.147
+SSL labs 会告诉你是好是坏
+And SSL labs tells you good or bad.
+
+00:04:01.147 --> 00:04:02.730
+但是它却不会告诉你
+The problem is, it doesn't necessarily
+
+00:04:02.730 --> 00:04:06.080
+你该怎么进行配置
+tell you the right names to put in your configuration file.
+
+00:04:06.080 --> 00:04:08.220
+使用 Mozilla SSL 配置生成器
+Enter a Mozilla SSL Config Generator.
+
+00:04:08.220 --> 00:04:11.100
+你可以选择服务器是 Apache 或者 Nginx
+So you can select, like, Apache or Nginx.
+
+00:04:11.100 --> 00:04:13.310
+你可以选择想要支持哪些浏览器
+You can select what sort of browser support you want.
+
+00:04:13.310 --> 00:04:14.970
+这样你可以很直接的处理一些情况
+So you can be really harsh and be
+
+00:04:14.970 --> 00:04:17.959
+比如  如果有个很旧的浏览器它需要运行一些东西
+like, if there's an old browser that requires xyz to work,
+
+00:04:17.959 --> 00:04:20.019
+你就可以简单的说  抱歉
+you can just basically say, sorry, I'm
+
+00:04:20.019 --> 00:04:23.770
+介于安全原因  这个功能不被支持或是其他什么的
+not going to support that for security reasons or whatever else.
+
+00:04:23.770 --> 00:04:26.630
+你可以直接使用它获取配置文件
+And it literally just gives you the config file,
+
+00:04:26.630 --> 00:04:27.665
+所有都已经配置好了
+everything just set up.
+
+00:04:27.665 --> 00:04:28.540
+这太好了
+ADDY: That's awesome.
+
+00:04:28.540 --> 00:04:31.040
+之后我也检查了下 SSL 配置中确实不包含 SSL3
+MATT: So I'm looking at it, and already the SSL protocols
+
+00:04:31.040 --> 00:04:34.340
+这避免了 POODLE 漏洞
+doesn't include SSL3, which is why I'm now susceptible to POODLE.
+
+00:04:34.340 --> 00:04:37.190
+我只要复制这份配置
+So all I have to do is literally copy this back over,
+
+00:04:37.190 --> 00:04:39.060
+一切都搞定了
+and I'm good to go.
+
+00:04:39.060 --> 00:04:42.670
+然后最近  就在上周还是什么时候
+Then, very recently, the past week or so,
+
+00:04:42.670 --> 00:04:45.682
+有人向我介绍了 httpsecurityreport.com
+someone introduced me to httpsecurityreport.com.
+
+00:04:45.682 --> 00:04:48.010
+httpsecurityreport.com 好吧
+ADDY: httpsecurityreport.com, OK.
+
+00:04:48.010 --> 00:04:48.900
+这是干什么的
+What does it do?
+
+00:04:48.900 --> 00:04:51.607
+这其实和 SSL labs 很像
+MATT: So, it literally is very similar to SSL labs.
+
+00:04:51.607 --> 00:04:53.190
+它做的很不错  你可以从
+It's kind of nice because it gives you
+
+00:04:53.190 --> 00:04:55.230
+更高层次总览你的网站上
+an even higher level of overview of where
+
+00:04:55.230 --> 00:04:57.257
+做的好的部分
+you're doing well on your site.
+
+00:04:57.257 --> 00:04:59.090
+但是它还关注了一些不同的东西
+But this looks at slightly different things.
+
+00:04:59.090 --> 00:05:01.950
+比如  我从来没有考虑过网站的内容安全策略
+Like, I've never considered the content security policy
+
+00:05:01.950 --> 00:05:04.055
+这个东西就是说
+of my site, which is things like,
+
+00:05:04.055 --> 00:05:05.930
+如果你引入了第三方资源
+if you're pulling in a third-party resources,
+
+00:05:05.930 --> 00:05:08.720
+比如 Google Fonts
+like Google Fonts, you can basically say,
+
+00:05:08.720 --> 00:05:11.850
+并且你的 CSP 策略中不包含它  这样即使你在页面中调用了它
+if I have a CSP policy which excludes that, it won't load,
+
+00:05:11.850 --> 00:05:14.240
+它也不会被加载
+even though I called it in on my web page.
+
+00:05:14.240 --> 00:05:15.760
+所以如果你的页面混杂了许多内容
+So with your mixed-content thing,
+
+00:05:15.760 --> 00:05:18.500
+你可以坐下说 CSP 只包含 addyosmani.com
+you could sit there and say, CSP is just addyosmani.com.
+
+00:05:18.500 --> 00:05:20.610
+这样除了它之外的资源都不会加载
+That would all just get shut down.
+
+00:05:20.610 --> 00:05:24.300
+这样可能不是你想要的结果  但是有趣的地方是
+Which is not what you want, but it's an interesting point
+
+00:05:24.300 --> 00:05:27.890
+在没有使用过这种工具之前这些东西都不会引起我的重视
+that I've never even considered as a thing until I used this tool.
+
+00:05:27.890 --> 00:05:29.680
+这工具不错
+ADDY: This tool is neat.
+
+00:05:29.680 --> 00:05:33.810
+目前我的网站默认是非 HTTPS 版本的
+The current default non-HTTPS version of my site
+
+00:05:33.810 --> 00:05:39.570
+100 分里确实只能拿到 17 分
+is getting a very, very respectable 17 out of 100 at the moment.
+
+00:05:39.570 --> 00:05:40.790
+是的
+MATT: That's good.
+
+00:05:40.790 --> 00:05:42.270
+很不错
+ADDY: It's great.
+
+00:05:42.270 --> 00:05:47.320
+其实我一猜就猜到是这个分数了
+MATT: I'm guessing 17 out of 100, rather than 20, just saying.
+
+00:05:47.320 --> 00:05:48.680
+让我们继续
+ADDY: Let's go with that.
+
+00:05:48.680 --> 00:05:53.080
+而 HTTPS 版本能拿到个整整 51 分
+And the HTTPS version is getting a solid 51.
+
+00:05:53.080 --> 00:05:54.000
+漂亮
+MATT: Nice.
+
+00:05:54.000 --> 00:05:55.460
+还不算太糟
+That's not too bad.
+
+00:05:55.460 --> 00:05:56.980
+我只有 62
+I'm only on 62.
+
+00:05:56.980 --> 00:05:58.512
+所以我还要继续改进
+So I've got some work to do.
+
+00:05:58.512 --> 00:05:59.970
+但是有趣的地方是
+But the interesting thing with this
+
+00:05:59.970 --> 00:06:03.520
+它能准确的捕获如 web 框架这样的信息
+is it actually picks up things like web framework information.
+
+00:06:03.520 --> 00:06:05.960
+这就是说如果你使用 PHP
+And that's things like, oh, PHP is actually
+
+00:06:05.960 --> 00:06:07.410
+它会告诉你支持的 PHP 版本
+saying this is the version of PHP
+
+00:06:07.410 --> 00:06:11.140
+或者你正在使用某个引擎的某个版本
+you support, or you're actually on version x of engine x.
+
+00:06:11.140 --> 00:06:13.580
+同样的  我还是没有想过去仔细看
+Which, again, I wouldn't have ever thought
+
+00:06:13.580 --> 00:06:15.700
+因为在我的脑子里
+of looking into because in my head,
+
+00:06:15.700 --> 00:06:18.140
+我跟本没想过这类工具
+I wouldn't expect those tools to be sharing
+
+00:06:18.140 --> 00:06:20.430
+默认会透露这些信息
+that kind of information by default, let alone
+
+00:06:20.430 --> 00:06:23.520
+就这样放任这些安全隐患不管
+it be a security issue anyway.
+
+00:06:23.520 --> 00:06:26.622
+但是这三样东西我发现非常有用
+But those three things, I found immensely helpful.
+
+00:06:26.622 --> 00:06:28.580
+我通常使用它们来指导我进行
+I'm using them basically to guide where I spend
+
+00:06:28.580 --> 00:06:30.220
+下一步的工作
+all my time and effort on work.
+
+00:06:30.220 --> 00:06:32.560
+听上去不错
+ADDY: Sounds good.
+
+00:06:32.560 --> 00:06:35.010
+[MUSIC PLAYING]
+

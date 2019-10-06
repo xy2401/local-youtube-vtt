@@ -1,0 +1,703 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:12.390
+[music]
+
+00:00:12.390 --> 00:00:14.790
+Hello and welcome to section 3
+
+00:00:14.790 --> 00:00:16.770
+of lesson 1.
+
+00:00:16.770 --> 00:00:20.080
+In this part of the lesson we'll be
+talking about functional interfaces and
+
+00:00:20.080 --> 00:00:20.860
+their definition.
+
+00:00:20.860 --> 00:00:23.990
+These are places where you can use Lambda
+expressions
+
+00:00:23.990 --> 00:00:29.689
+in your code. In the previous part of
+the lesson
+
+00:00:29.689 --> 00:00:33.680
+I described how a Lambda expression is
+an anonymous function
+
+00:00:33.680 --> 00:00:36.699
+and by that I meant it's like a method,
+
+00:00:36.699 --> 00:00:40.260
+but one that is not associated with
+a class.
+
+00:00:40.260 --> 00:00:43.550
+That's okay; we have a method,
+
+00:00:43.550 --> 00:00:48.210
+an anonymous function but not associated with
+a class. The issue here is that
+
+00:00:48.210 --> 00:00:53.750
+Java is a strongly typed language, so we
+must make sure that whatever we’re using
+
+00:00:53.750 --> 00:00:58.150
+has a type associated with it. In the case
+of a Lambda expression,
+
+00:00:58.150 --> 00:01:01.720
+although it represents a method and it's an
+anonymous function
+
+00:01:01.720 --> 00:01:04.970
+there must be a type for the Lambda
+expression,
+
+00:01:04.970 --> 00:01:08.010
+and to simplify this
+
+00:01:08.010 --> 00:01:11.350
+what we have said with JDK 8 is that
+
+00:01:11.350 --> 00:01:14.380
+you can use a Lambda expression wherever
+the
+
+00:01:14.380 --> 00:01:17.770
+type that's being used is
+
+00:01:17.770 --> 00:01:20.789
+a functional interface.
+
+00:01:20.789 --> 00:01:24.210
+A functional interface is one has a
+single
+
+00:01:24.210 --> 00:01:28.799
+abstract method. Because it has a single
+
+00:01:28.799 --> 00:01:32.299
+abstract method we can easily map
+
+00:01:32.299 --> 00:01:36.179
+the Lambda expression to be the
+implementation
+
+00:01:36.179 --> 00:01:39.390
+of that abstract method, so that
+
+00:01:39.390 --> 00:01:42.609
+in effect, the compiler
+
+00:01:42.609 --> 00:01:45.740
+and the runtime is generating an object
+of
+
+00:01:45.740 --> 00:01:50.140
+that type using the Lambda expression to
+represent the method.
+
+00:01:50.140 --> 00:01:53.179
+But, and this is very important, even though
+
+00:01:53.179 --> 00:01:56.289
+there is this idea of a type associated
+
+00:01:56.289 --> 00:02:00.359
+there is no class, so there's no object
+associated
+
+00:02:00.359 --> 00:02:04.679
+with the Lambda expression directly. It’s
+a kind of strange situation, where
+
+00:02:04.679 --> 00:02:08.990
+it has a type but no object and we'll
+talk more about this
+
+00:02:08.990 --> 00:02:14.450
+as we go through the rest of this
+particular lesson.
+
+00:02:14.450 --> 00:02:16.500
+Let's go through the real
+
+00:02:16.500 --> 00:02:19.640
+definition of a functional interface and
+make sure we
+
+00:02:19.640 --> 00:02:24.430
+understand exactly what that means.
+The first thing is that it has to be
+
+00:02:24.430 --> 00:02:27.770
+an interface. This might seem like a little
+bit of
+
+00:02:27.770 --> 00:02:31.080
+an obvious thing when I say it's
+functional interface
+
+00:02:31.080 --> 00:02:35.300
+but I also said that it has a single
+abstract method.
+
+00:02:35.300 --> 00:02:39.350
+Some people suggest that, well if it only
+needs to have a single
+
+00:02:39.350 --> 00:02:42.890
+abstract method, could I not create an
+abstract
+
+00:02:42.890 --> 00:02:46.630
+class which only has one abstract method
+defined in it.
+
+00:02:46.630 --> 00:02:49.770
+In theory you could but for JDK 8
+
+00:02:49.770 --> 00:02:54.320
+we don't support that. So functional
+interface, where you can use a Lambda
+
+00:02:54.320 --> 00:02:54.980
+expression,
+
+00:02:54.980 --> 00:02:59.530
+has to be an interface. It also has to have
+
+00:02:59.530 --> 00:03:03.480
+one and only one abstract method because
+remember the
+
+00:03:03.480 --> 00:03:07.570
+Lambda expression provides an
+implementation of that abstract method.
+
+00:03:07.570 --> 00:03:10.580
+If we had more than one abstract method
+we wouldn't know
+
+00:03:10.580 --> 00:03:14.160
+which particular method the Lambda
+expression related to
+
+00:03:14.160 --> 00:03:18.980
+and we would be left with one or more
+methods that don't have an implementation.
+
+00:03:18.980 --> 00:03:22.160
+So one abstract method, Lambda expression,
+
+00:03:22.160 --> 00:03:26.340
+maps to the implementation of that method.
+Now
+
+00:03:26.340 --> 00:03:30.030
+before JDK 8 if you looked at a method
+
+00:03:30.030 --> 00:03:34.280
+interface definition it was very
+easy to see if it was going to be a
+
+00:03:34.280 --> 00:03:35.370
+functional interface.
+
+00:03:35.370 --> 00:03:38.410
+That was one that had only one method.
+
+00:03:38.410 --> 00:03:41.510
+In JDK 8
+
+00:03:41.510 --> 00:03:46.090
+we also introduced a couple of other new
+features, and a couple of new changes to the
+
+00:03:46.090 --> 00:03:46.870
+syntax
+
+00:03:46.870 --> 00:03:52.090
+of the language. One of those was
+specifically so that we could
+
+00:03:52.090 --> 00:03:56.570
+make it easier to extend the existing
+Collections API
+
+00:03:56.570 --> 00:04:01.530
+which relies a lot on interfaces without
+breaking backwards compatibility.
+
+00:04:01.530 --> 00:04:05.890
+So to do that we introduced the idea of the
+default method,
+
+00:04:05.890 --> 00:04:09.090
+the default method is simply one that
+can be placed
+
+00:04:09.090 --> 00:04:12.370
+in an interface which is an abstract
+
+00:04:12.370 --> 00:04:16.380
+because it has an implementation
+associated with it.
+
+00:04:16.380 --> 00:04:20.220
+The idea that is if you're using an old
+version
+
+00:04:20.220 --> 00:04:23.440
+of a class which implemented the
+interface before these methods were
+
+00:04:23.440 --> 00:04:28.590
+added, when the compiler tries to resolve
+one of those methods,
+
+00:04:28.590 --> 00:04:32.350
+rather than going to the the old version
+of the class and saying, oh
+
+00:04:32.350 --> 00:04:35.830
+that method doesn't exist, I can’t compile,
+it goes to the
+
+00:04:35.830 --> 00:04:40.000
+class and says, oh that method doesn't exist,
+goes back to the interface
+
+00:04:40.000 --> 00:04:43.130
+and finds the default implementation to
+use for that.
+
+00:04:43.130 --> 00:04:47.920
+This is way we have added
+multiple inheritance of behavior to
+
+00:04:47.920 --> 00:04:48.630
+Java
+
+00:04:48.630 --> 00:04:51.990
+in the same way we would have multiple
+inheritance of types.
+
+00:04:51.990 --> 00:04:55.060
+Now because we can now have
+
+00:04:55.060 --> 00:04:59.190
+behavior in an interface, it also makes sense
+
+00:04:59.190 --> 00:05:02.520
+to allow static methods to be added to
+interfaces as well.
+
+00:05:02.520 --> 00:05:05.640
+Those are the two changes that we need to
+understand.
+
+00:05:05.640 --> 00:05:08.640
+And, in order to
+
+00:05:08.640 --> 00:05:12.970
+have the compiler check
+whether what we think is a functional
+
+00:05:12.970 --> 00:05:13.510
+interface
+
+00:05:13.510 --> 00:05:17.430
+really is, there is an annotation that
+could be added,
+
+00:05:17.430 --> 00:05:20.900
+@FunctionalInterface, and the compiler will
+then check there is only
+
+00:05:20.900 --> 00:05:24.130
+one abstract method in that particular
+interface.
+
+00:05:24.130 --> 00:05:28.740
+Let's look at some examples
+
+00:05:28.740 --> 00:05:31.960
+of interfaces that we already have in
+Java before JDK 8
+
+00:05:31.960 --> 00:05:35.330
+that can use Lambda expressions
+
+00:05:35.330 --> 00:05:40.200
+to represent them. FileFilter is a good
+example because it has a single method,
+
+00:05:40.200 --> 00:05:43.490
+accept, which returns a boolean, takes a file.
+
+00:05:43.490 --> 00:05:46.700
+ActionListener, same thing, has a single
+method
+
+00:05:46.700 --> 00:05:50.610
+ActionPerformed and callable has a single
+action
+
+00:05:50.610 --> 00:05:54.130
+call. All of those existed in Java
+before JDK 8
+
+00:05:54.130 --> 00:05:57.860
+and we can use Lambda expressions for
+those if we want to
+
+00:05:57.860 --> 00:06:02.110
+because they are functional interfaces.
+
+00:06:02.110 --> 00:06:06.200
+Let's have a look at some
+other interfaces and decide whether
+
+00:06:06.200 --> 00:06:07.690
+they're actually function or not.
+
+00:06:07.690 --> 00:06:11.760
+Here we have the runnable interface
+and that has one method:
+
+00:06:11.760 --> 00:06:16.340
+public abstract void run. The
+question is,
+
+00:06:16.340 --> 00:06:20.220
+is this in fact a functional interface? The
+answer is
+
+00:06:20.220 --> 00:06:23.970
+fairly straightforward because, yes, we only
+have one
+
+00:06:23.970 --> 00:06:28.110
+abstract method. I tried to make it as obvious
+as possible here, actually defined as
+
+00:06:28.110 --> 00:06:28.830
+abstract.
+
+00:06:28.830 --> 00:06:32.730
+There’s one abstract method in this interface
+and therefore
+
+00:06:32.730 --> 00:06:37.910
+it is a functional interface. Let's look at
+
+00:06:37.910 --> 00:06:41.960
+a slightly more complicated one. This is
+the predicate interface,
+
+00:06:41.960 --> 00:06:45.210
+which is one of the new java.util.function
+
+00:06:45.210 --> 00:06:49.900
+interfaces and we'll talk more about
+this later on. This has
+
+00:06:49.900 --> 00:06:53.790
+five methods in it. Three of those
+methods
+
+00:06:53.790 --> 00:06:57.540
+are default methods and then we have a
+static method
+
+00:06:57.540 --> 00:07:00.630
+and then we also have one method called
+test,
+
+00:07:00.630 --> 00:07:05.610
+which returns a boolean. If we want to
+determine whether this is a functional
+
+00:07:05.610 --> 00:07:06.870
+interface or not
+
+00:07:06.870 --> 00:07:10.690
+obviously we need to decide whether all
+those methods count
+
+00:07:10.690 --> 00:07:14.980
+in terms of abstract methods are not.
+I said that,
+
+00:07:14.980 --> 00:07:18.270
+in terms of default methods, these don't
+count.
+
+00:07:18.270 --> 00:07:21.780
+Because these have an implementation
+associated with them,
+
+00:07:21.780 --> 00:07:26.450
+by definition they are not abstract.
+Similarly,
+
+00:07:26.450 --> 00:07:29.730
+the static method isEquals has
+
+00:07:29.730 --> 00:07:32.920
+an implementation associated with it;
+therefore by default
+
+00:07:32.920 --> 00:07:37.470
+it is not an abstract method. That leaves us
+with just
+
+00:07:37.470 --> 00:07:40.770
+one method, boolean test, which
+
+00:07:40.770 --> 00:07:44.820
+is abstract, therefore we have one
+abstract method
+
+00:07:44.820 --> 00:07:48.300
+in our interface and therefore it is
+a functional
+
+00:07:48.300 --> 00:07:53.360
+interface. One last method that we’ll have
+a look at, because
+
+00:07:53.360 --> 00:07:56.410
+this is a little more tricky this one.
+Comparator.
+
+00:07:56.410 --> 00:08:01.000
+Comparator has some static methods;
+has some default methods
+
+00:08:01.000 --> 00:08:04.650
+which I've left out because we’ve agreed
+that those don't count.
+
+00:08:04.650 --> 00:08:08.460
+There are still two methods in this
+interface:
+
+00:08:08.460 --> 00:08:10.629
+there’s a compare method and
+
+00:08:10.629 --> 00:08:14.259
+there’s an equal method. You would think,
+
+00:08:14.259 --> 00:08:18.250
+based on this, that this was not a
+functional interface.
+
+00:08:18.250 --> 00:08:21.270
+But there is one rule that I haven't told you
+about
+
+00:08:21.270 --> 00:08:24.430
+which is still applicable in terms
+
+00:08:24.430 --> 00:08:28.270
+of determining whether this is a
+functional interface. In the case of this
+
+00:08:28.270 --> 00:08:28.870
+one
+
+00:08:28.870 --> 00:08:31.979
+the equals method is actually
+
+00:08:31.979 --> 00:08:35.610
+implicitly inherited from the object class.
+
+00:08:35.610 --> 00:08:40.060
+Remember object is the superclass of all
+classes and we're actually
+
+00:08:40.060 --> 00:08:43.610
+inheriting the equals class from the
+object class.
+
+00:08:43.610 --> 00:08:46.910
+Because of that it doesn't count in terms
+of
+
+00:08:46.910 --> 00:08:50.130
+an abstract method for this particular
+interface
+
+00:08:50.130 --> 00:08:55.130
+and so we still only have one abstract
+method which is the compare method
+
+00:08:55.130 --> 00:09:00.430
+and so this is in fact a functional interface.
+Just as an aside,
+
+00:09:00.430 --> 00:09:04.040
+I did look at why the equals method was
+
+00:09:04.040 --> 00:09:07.370
+included in this particular interface,
+because
+
+00:09:07.370 --> 00:09:11.640
+other interfaces don't include this and
+I needed to understand why that was the
+
+00:09:11.640 --> 00:09:12.100
+case.
+
+00:09:12.100 --> 00:09:16.209
+It turns out the only reason that the equals
+method is defined
+
+00:09:16.209 --> 00:09:19.420
+in this interface is because it is
+inherited from
+
+00:09:19.420 --> 00:09:23.230
+the object class is so that some
+different documentation
+
+00:09:23.230 --> 00:09:26.519
+can be included in the javadoc above
+that particular method
+
+00:09:26.519 --> 00:09:30.140
+when it's used in terms of compare. 
+That’s just
+
+00:09:30.140 --> 00:09:35.540
+an interesting aside. When we want to use a
+Lambda expression
+
+00:09:35.540 --> 00:09:38.820
+we can either use it assigning it to a
+
+00:09:38.820 --> 00:09:41.990
+variable or we can use it as a parameter
+to a method.
+
+00:09:41.990 --> 00:09:45.860
+In the case of the first example here, I
+have a callable c
+
+00:09:45.860 --> 00:09:49.459
+(remember callable has a single
+abstract method, therefore
+
+00:09:49.459 --> 00:09:52.800
+we can represent it by a Lambda
+expression)
+
+00:09:52.800 --> 00:09:56.540
+and the Lambda expression is simply to call
+process. The
+
+00:09:56.540 --> 00:10:00.149
+call method of the callable doesn't
+have any parameters
+
+00:10:00.149 --> 00:10:02.570
+so we use empty brackets.
+
+00:10:02.570 --> 00:10:05.450
+Same thing applies in terms of a method
+parameter,
+
+00:10:05.450 --> 00:10:09.270
+so in this example I’m creating a new thread
+object and
+
+00:10:09.270 --> 00:10:13.600
+I'm passing the Lambda expression as the
+parameter to the constructor.
+
+00:10:13.600 --> 00:10:17.080
+Again, we want to use the same approach
+so we have a
+
+00:10:17.080 --> 00:10:20.430
+Lambda expression that represents
+the run method
+
+00:10:20.430 --> 00:10:23.900
+will be process and it doesn't take
+any parameters
+
+00:10:23.900 --> 00:10:27.680
+as arguments so we use empty brackets.
+That’s just
+
+00:10:27.680 --> 00:10:31.050
+a way of how we can use them both as
+variable assignment
+
+00:10:31.050 --> 00:10:37.460
+and when we pass parameters to methods.
+To summarize section 3,
+
+00:10:37.460 --> 00:10:41.580
+we can use a Lambda expression
+anywhere the type
+
+00:10:41.580 --> 00:10:44.880
+of where we want to use it
+is
+
+00:10:44.880 --> 00:10:48.500
+a functional interface. Remember
+a functional interface
+
+00:10:48.500 --> 00:10:52.740
+is one that has only one abstract method.
+For JDK 8 that
+
+00:10:52.740 --> 00:10:57.020
+doesn't mean that it only has one method.
+If it has default methods,
+
+00:10:57.020 --> 00:11:00.770
+if it has static methods, if has methods that
+are inherited from
+
+00:11:00.770 --> 00:11:06.350
+the object class then they don't count.
+In terms of what the Lambda expression
+
+00:11:06.350 --> 00:11:07.500
+represents,
+
+00:11:07.500 --> 00:11:11.070
+is it is the implementation of that
+single
+
+00:11:11.070 --> 00:11:14.130
+abstract method of that functional
+interface, so the
+
+00:11:14.130 --> 00:11:17.280
+abstract method we’re going to use the
+
+00:11:17.280 --> 00:11:20.380
+Lambda expression represents the
+implementation of that.
+
+00:11:20.380 --> 00:11:23.590
+And that is the end
+
+00:11:23.590 --> 00:11:25.870
+of section 3 of this lesson
+

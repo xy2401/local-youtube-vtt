@@ -1,0 +1,418 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.499 --> 00:00:02.370
+PAUL LEWIS: Well,
+it's a good day today
+
+00:00:02.370 --> 00:00:06.970
+because I think there are a few
+minor issues notwithstanding,
+
+00:00:06.970 --> 00:00:08.750
+but actually the
+majority of the site
+
+00:00:08.750 --> 00:00:12.360
+is now built, at least from
+a static point of view.
+
+00:00:12.360 --> 00:00:15.550
+So I thought what I'd do
+is just show you around
+
+00:00:15.550 --> 00:00:20.320
+very briefly so you can see
+what's going on, really.
+
+00:00:20.320 --> 00:00:24.000
+So the home page, I think
+this was pretty much done last
+
+00:00:24.000 --> 00:00:25.900
+I showed you.
+
+00:00:25.900 --> 00:00:29.180
+But the location
+wasn't, and that now
+
+00:00:29.180 --> 00:00:32.830
+is, has all the
+information in there.
+
+00:00:32.830 --> 00:00:35.160
+That's good.
+
+00:00:35.160 --> 00:00:37.420
+Code of conduct,
+that was also done,
+
+00:00:37.420 --> 00:00:40.430
+but the schedule was not done.
+
+00:00:40.430 --> 00:00:42.680
+And within that
+you've got-- and let
+
+00:00:42.680 --> 00:00:45.922
+me show you that when you
+scale it down, basically
+
+00:00:45.922 --> 00:00:49.480
+I lose the images.
+
+00:00:49.480 --> 00:00:51.970
+That was sort of less important.
+
+00:00:51.970 --> 00:00:54.070
+So one of the--
+there's the images,
+
+00:00:54.070 --> 00:00:56.190
+the images of the speakers
+
+00:00:56.190 --> 00:00:58.075
+That leaves me here.
+
+00:00:58.075 --> 00:00:59.700
+Actually one of the
+things I need to do
+
+00:00:59.700 --> 00:01:01.710
+is just do a kind of
+rollover state for these
+
+00:01:01.710 --> 00:01:06.190
+so you know which one you're
+actually going to click into.
+
+00:01:06.190 --> 00:01:10.171
+So I have built
+sort of two states
+
+00:01:10.171 --> 00:01:11.420
+I think is the way to call it.
+
+00:01:11.420 --> 00:01:15.445
+So there's the
+pretalk where we just
+
+00:01:15.445 --> 00:01:18.130
+are going to give you some
+information about the session.
+
+00:01:18.130 --> 00:01:19.800
+And again, there's
+a little more to it.
+
+00:01:19.800 --> 00:01:21.750
+Like for example, there's
+no Back button in there.
+
+00:01:21.750 --> 00:01:22.820
+And I need to decide
+what I'm going
+
+00:01:22.820 --> 00:01:24.360
+to do with the masthead area.
+
+00:01:24.360 --> 00:01:29.100
+I might just have the
+picture of the speaker
+
+00:01:29.100 --> 00:01:31.590
+or something like that, or I
+might move the title in there.
+
+00:01:31.590 --> 00:01:34.681
+It really depends
+on how I'm feeling,
+
+00:01:34.681 --> 00:01:36.430
+and actually what the
+titles are because I
+
+00:01:36.430 --> 00:01:38.846
+have no idea what the sessions
+are going to be called yet.
+
+00:01:38.846 --> 00:01:40.870
+So I've tried to be
+fairly agnostic about it.
+
+00:01:40.870 --> 00:01:45.730
+However, after the
+talk has gone live,
+
+00:01:45.730 --> 00:01:47.550
+then we need to be
+able to embed the talk.
+
+00:01:47.550 --> 00:01:51.030
+So we've kind of got this, which
+is kind of borrowed, I suppose,
+
+00:01:51.030 --> 00:01:55.400
+from the live page, which
+I'll show you in a moment.
+
+00:01:55.400 --> 00:01:57.343
+So you've got
+basically the video.
+
+00:01:57.343 --> 00:02:02.040
+There will be the picture of
+the speaker, the title, the name
+
+00:02:02.040 --> 00:02:04.150
+and job title, and then
+a bit of a description
+
+00:02:04.150 --> 00:02:07.170
+about what the actual talk is.
+
+00:02:07.170 --> 00:02:09.800
+So that's all fine and dandy.
+
+00:02:09.800 --> 00:02:13.590
+Basically we are pretty
+much ready to go.
+
+00:02:13.590 --> 00:02:17.490
+If I show you this-- so
+I have this is_live flag
+
+00:02:17.490 --> 00:02:18.660
+in the Python.
+
+00:02:18.660 --> 00:02:24.070
+And I will probably, on
+the day itself or the days
+
+00:02:24.070 --> 00:02:27.800
+themselves, I will switch
+this flag from false to true.
+
+00:02:27.800 --> 00:02:30.590
+And I might even make
+it date specific.
+
+00:02:30.590 --> 00:02:31.120
+I might not.
+
+00:02:31.120 --> 00:02:33.860
+I'm not quite sure exactly how
+I'm going to do it just yet.
+
+00:02:33.860 --> 00:02:36.130
+But anyway, I'll set
+it to true right now.
+
+00:02:36.130 --> 00:02:39.630
+And that basically adds
+this extra banner to the top
+
+00:02:39.630 --> 00:02:43.640
+of the pages which
+don't have a video,
+
+00:02:43.640 --> 00:02:45.470
+because if they've
+already got a video,
+
+00:02:45.470 --> 00:02:48.050
+then I don't really want to--
+like if you go into the live
+
+00:02:48.050 --> 00:02:49.370
+stream page, then we don't--
+
+00:02:49.370 --> 00:02:49.480
+[VIDEO PLAYBACK]
+
+00:02:49.480 --> 00:02:51.077
+-Today I've had
+a little bit of--
+
+00:02:51.077 --> 00:02:51.660
+[END PLAYBACK]
+
+00:02:51.660 --> 00:02:55.150
+PAUL LEWIS: It's me,
+on screen, talking
+
+00:02:55.150 --> 00:02:56.650
+about building this site.
+
+00:02:56.650 --> 00:03:00.710
+So, hang on, that's
+me on this site
+
+00:03:00.710 --> 00:03:07.080
+looking at a video of me
+talking about this site-- whoa,
+
+00:03:07.080 --> 00:03:10.150
+so meta, wonderfully meta.
+
+00:03:10.150 --> 00:03:10.720
+Good.
+
+00:03:10.720 --> 00:03:12.940
+So, what was I saying?
+
+00:03:12.940 --> 00:03:14.090
+What was I saying?
+
+00:03:14.090 --> 00:03:16.686
+Oh yeah, if you've
+got a video playing,
+
+00:03:16.686 --> 00:03:18.560
+we don't want to have
+that watch live stream,
+
+00:03:18.560 --> 00:03:20.560
+because you're already
+watching the live stream.
+
+00:03:20.560 --> 00:03:22.430
+So that's just kind
+of a minor thing.
+
+00:03:22.430 --> 00:03:24.530
+And it's got this
+little Live now,
+
+00:03:24.530 --> 00:03:28.130
+Up Next, and then things
+that are coming up
+
+00:03:28.130 --> 00:03:29.810
+the rest of the day.
+
+00:03:29.810 --> 00:03:32.960
+So my next step
+with all this, now
+
+00:03:32.960 --> 00:03:38.680
+that this is all
+fully working, is
+
+00:03:38.680 --> 00:03:41.010
+to make it kind of
+a little bit more
+
+00:03:41.010 --> 00:03:44.330
+exciting and dynamic I suppose,
+because we've got a solid base.
+
+00:03:44.330 --> 00:03:47.515
+You could deploy this
+site, and there would
+
+00:03:47.515 --> 00:03:48.830
+be nothing wrong with that.
+
+00:03:48.830 --> 00:03:51.670
+This is a perfectly
+functioning site.
+
+00:03:51.670 --> 00:03:55.250
+So anything I add on now, which
+would be to do a proper service
+
+00:03:55.250 --> 00:03:57.040
+worker, to-- I'm
+going to try and do
+
+00:03:57.040 --> 00:03:59.180
+some transitions between
+sections and kind
+
+00:03:59.180 --> 00:04:03.110
+of dynamically load in content
+rather than like a full page
+
+00:04:03.110 --> 00:04:03.890
+refresh.
+
+00:04:03.890 --> 00:04:07.840
+I'm hoping to kind of
+fade content in and out
+
+00:04:07.840 --> 00:04:08.950
+and move things around.
+
+00:04:08.950 --> 00:04:13.030
+All that kind of stuff is a
+progressive enhancement move
+
+00:04:13.030 --> 00:04:13.670
+by me.
+
+00:04:13.670 --> 00:04:19.670
+So I don't have to do any of it,
+but it's worth doing, I think.
+
+00:04:19.670 --> 00:04:23.000
+OK, so there isn't much
+code to show you today.
+
+00:04:23.000 --> 00:04:24.570
+I just wanted to
+kind of check in
+
+00:04:24.570 --> 00:04:26.450
+to show you that
+we've got to a point
+
+00:04:26.450 --> 00:04:28.330
+now where we could
+deploy this site.
+
+00:04:28.330 --> 00:04:29.512
+We could call this one done.
+
+00:04:29.512 --> 00:04:31.095
+But we're going to
+take it further on.
+
+00:04:31.095 --> 00:04:34.790
+I'm going to try and make
+some more exciting maneuvers
+
+00:04:34.790 --> 00:04:38.020
+in there, and we'll see
+how it all pans out.
+
+00:04:38.020 --> 00:04:41.310
+Thank you so much for coming
+along on this journey with me.
+
+00:04:41.310 --> 00:04:45.000
+I am loving every minute
+of sharing all this stuff
+
+00:04:45.000 --> 00:04:45.500
+with you.
+
+00:04:45.500 --> 00:04:48.500
+Thank you to everybody who's
+commenting, who's subscribing,
+
+00:04:48.500 --> 00:04:53.030
+and checking out the
+code on GitHub as well.
+
+00:04:53.030 --> 00:04:54.770
+Let's make it
+progressively enhanced
+
+00:04:54.770 --> 00:04:57.390
+and betterer and awesomer, yes.
+
+00:04:57.390 --> 00:05:00.740
+[MUSIC PLAYING]
+

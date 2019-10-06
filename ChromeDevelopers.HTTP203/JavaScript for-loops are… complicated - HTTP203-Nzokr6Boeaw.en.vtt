@@ -1,0 +1,1449 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.035
+JAKE: So--
+
+00:00:01.035 --> 00:00:03.480
+SURMA: I just want to have
+a count of how many videos
+
+00:00:03.480 --> 00:00:04.590
+we started with "so."
+
+00:00:04.590 --> 00:00:05.974
+[LAUGHING]
+
+00:00:05.974 --> 00:00:06.640
+Hashtag natural.
+
+00:00:06.640 --> 00:00:09.696
+[MUSIC PLAYING]
+
+00:00:13.464 --> 00:00:17.240
+JAKE: So last time we spoke
+about code on HTTP203.
+
+00:00:17.240 --> 00:00:22.760
+We looked at tree shaking,
+pipeline operator, the bind
+
+00:00:22.760 --> 00:00:25.220
+operator, like really
+future-facing stuff.
+
+00:00:25.220 --> 00:00:27.980
+But I thought this
+time we'll go and look
+
+00:00:27.980 --> 00:00:30.920
+at something that has been
+there forever or for a long time
+
+00:00:30.920 --> 00:00:33.230
+and how a feature has
+developed over time--
+
+00:00:33.230 --> 00:00:34.510
+this.
+
+00:00:34.510 --> 00:00:36.030
+SURMA: That's a for loop.
+
+00:00:36.030 --> 00:00:37.142
+JAKE: Well done.
+
+00:00:37.142 --> 00:00:38.350
+You're still good at quizzes.
+
+00:00:38.350 --> 00:00:39.520
+Excellent.
+
+00:00:39.520 --> 00:00:40.915
+SURMA: One point for me.
+
+00:00:40.915 --> 00:00:44.650
+JAKE: So I wanted to talk
+about how far loops actually
+
+00:00:44.650 --> 00:00:46.889
+work under the hood, right.
+
+00:00:46.889 --> 00:00:48.430
+SURMA: You say
+"actually" as if there
+
+00:00:48.430 --> 00:00:50.260
+was a big twist to the story.
+
+00:00:50.260 --> 00:00:53.730
+JAKE: Well, here's how it goes.
+
+00:00:53.730 --> 00:00:55.730
+So this bit runs, right?
+
+00:00:55.730 --> 00:00:57.300
+SURMA: Mm-hmm.
+
+00:00:57.300 --> 00:00:59.380
+A for loop has
+three instructions,
+
+00:00:59.380 --> 00:01:03.390
+the initialization, the
+condition, and the incrementer,
+
+00:01:03.390 --> 00:01:03.890
+or whatever?
+
+00:01:03.890 --> 00:01:04.622
+JAKE: Sure, yeah.
+
+00:01:04.622 --> 00:01:05.330
+SURMA: Iteration.
+
+00:01:05.330 --> 00:01:07.380
+JAKE: They're just expressions.
+
+00:01:07.380 --> 00:01:08.330
+So this one runs.
+
+00:01:08.330 --> 00:01:09.530
+And this one runs.
+
+00:01:09.530 --> 00:01:10.790
+And then the body runs.
+
+00:01:10.790 --> 00:01:12.110
+And then this one runs.
+
+00:01:12.110 --> 00:01:13.252
+And then this one runs.
+
+00:01:13.252 --> 00:01:14.210
+And then the body runs.
+
+00:01:14.210 --> 00:01:15.140
+And then this one runs.
+
+00:01:15.140 --> 00:01:15.610
+And this one runs.
+
+00:01:15.610 --> 00:01:16.100
+And the body runs.
+
+00:01:16.100 --> 00:01:17.090
+And this one runs.
+
+00:01:17.090 --> 00:01:24.230
+And it only stops if this bit
+evaluates to something false-y.
+
+00:01:24.230 --> 00:01:25.838
+And that is how for loops work.
+
+00:01:25.838 --> 00:01:29.254
+[MUSIC PLAYING]
+
+00:01:29.254 --> 00:01:30.230
+[DISK SCRATCH]
+
+00:01:30.230 --> 00:01:33.950
+But it has gotten
+more complicated
+
+00:01:33.950 --> 00:01:35.110
+in the past few years.
+
+00:01:35.110 --> 00:01:37.156
+SURMA: I haven't
+learned anything today.
+
+00:01:37.156 --> 00:01:38.690
+JAKE: I mean, that
+was all correct.
+
+00:01:38.690 --> 00:01:39.580
+It is just that.
+
+00:01:39.580 --> 00:01:41.560
+For loops were
+really, really simple.
+
+00:01:41.560 --> 00:01:44.050
+SURMA: I mean, they have been
+in the oldest programming
+
+00:01:44.050 --> 00:01:47.290
+language in exactly this format
+with these three statements
+
+00:01:47.290 --> 00:01:49.900
+that get evaluated in that
+specific order over and over.
+
+00:01:49.900 --> 00:01:52.670
+JAKE: Let's have a look at this.
+
+00:01:52.670 --> 00:01:55.482
+What is going to be logged
+in this piece of code?
+
+00:01:55.482 --> 00:01:57.690
+SURMA: What we have in here,
+which is kind of hidden,
+
+00:01:57.690 --> 00:01:58.940
+is a closure, right?
+
+00:01:58.940 --> 00:01:59.440
+So--
+
+00:01:59.440 --> 00:02:00.066
+JAKE: Yes, yes.
+
+00:02:00.066 --> 00:02:01.356
+SURMA: We're passing a closure.
+
+00:02:01.356 --> 00:02:03.430
+The set time was like,
+Execute this closure in--
+
+00:02:03.430 --> 00:02:04.635
+JAKE: Some amount of time.
+
+00:02:04.635 --> 00:02:06.760
+SURMA: Apparently, it's
+zero milliseconds, I think.
+
+00:02:06.760 --> 00:02:08.051
+JAKE: It would default to zero.
+
+00:02:08.051 --> 00:02:09.880
+The browser will
+add a padding to it.
+
+00:02:09.880 --> 00:02:10.380
+SURMA: Four.
+
+00:02:10.380 --> 00:02:12.760
+JAKE: Four, 15-- the browser
+is allowed to do whatever.
+
+00:02:12.760 --> 00:02:14.620
+But the key is
+that this is going
+
+00:02:14.620 --> 00:02:17.429
+to happen asynchronously
+after the for loop
+
+00:02:17.429 --> 00:02:18.220
+has been completed.
+
+00:02:18.220 --> 00:02:22.090
+SURMA: It would close over the
+i variable, which in this case
+
+00:02:22.090 --> 00:02:23.830
+is a primitive value.
+
+00:02:23.830 --> 00:02:25.850
+And therefore, the
+value will be captured.
+
+00:02:25.850 --> 00:02:31.550
+So this would mean that we
+will see free logs, zero, one,
+
+00:02:31.550 --> 00:02:32.395
+and two.
+
+00:02:32.395 --> 00:02:34.460
+JAKE: Not quite.
+
+00:02:34.460 --> 00:02:37.760
+There is only one
+i in the story.
+
+00:02:37.760 --> 00:02:38.690
+SURMA: Interesting.
+
+00:02:38.690 --> 00:02:40.700
+JAKE: And that's
+going to be scoped
+
+00:02:40.700 --> 00:02:42.930
+to the parent function
+or the global scope
+
+00:02:42.930 --> 00:02:44.180
+if there's no parent function.
+
+00:02:44.180 --> 00:02:45.465
+SURMA: Oh, right, yeah.
+
+00:02:45.465 --> 00:02:49.350
+JAKE: So when we increment
+it, it increments--
+
+00:02:49.350 --> 00:02:52.224
+SURMA: It will be evaluated when
+the closure is being executed.
+
+00:02:52.224 --> 00:02:54.140
+So that's actually when
+it looks up the value.
+
+00:02:54.140 --> 00:02:54.723
+JAKE: Exactly.
+
+00:02:54.723 --> 00:02:55.500
+SURMA: I see.
+
+00:02:55.500 --> 00:03:00.730
+JAKE: So we're going to get
+console.log of two twice.
+
+00:03:00.730 --> 00:03:03.210
+SURMA: Three times-- twice.
+
+00:03:03.210 --> 00:03:06.303
+[LAUGHTER]
+
+00:03:07.679 --> 00:03:09.220
+JAKE: We are
+professional developers.
+
+00:03:09.220 --> 00:03:10.640
+I had to start at that as well.
+
+00:03:10.640 --> 00:03:12.730
+And it's like, I
+ran this code early.
+
+00:03:12.730 --> 00:03:14.240
+Maybe, I don't know.
+
+00:03:14.240 --> 00:03:16.600
+SURMA: I just lost
+all my credibility.
+
+00:03:16.600 --> 00:03:17.530
+JAKE: It's OK.
+
+00:03:17.530 --> 00:03:18.810
+You've got time to regain it.
+
+00:03:18.810 --> 00:03:20.900
+Here we go.
+
+00:03:20.900 --> 00:03:22.580
+But dun dun dun.
+
+00:03:25.250 --> 00:03:27.086
+Things have changed.
+
+00:03:27.086 --> 00:03:32.390
+SURMA: So intuitively,
+I would think and hope
+
+00:03:32.390 --> 00:03:34.350
+that it wouldn't
+change anything.
+
+00:03:34.350 --> 00:03:37.275
+But I'm guessing you set this up
+in a way that it actually does.
+
+00:03:37.275 --> 00:03:39.000
+JAKE: Things have changed.
+
+00:03:39.000 --> 00:03:41.208
+SURMA: Actually, I think
+you hinted at it because you
+
+00:03:41.208 --> 00:03:44.220
+said that previously, the
+i was declared as a var,
+
+00:03:44.220 --> 00:03:46.290
+meaning it has been
+declared within the function
+
+00:03:46.290 --> 00:03:47.880
+scope, which, if there is
+nothing outside of this,
+
+00:03:47.880 --> 00:03:49.320
+this would be the global scope.
+
+00:03:49.320 --> 00:03:52.430
+JAKE: Yes, so let's
+take a look at this.
+
+00:03:52.430 --> 00:03:55.180
+So what we have here
+is an if (true).
+
+00:03:55.180 --> 00:03:56.812
+So this block is
+always going to run.
+
+00:03:56.812 --> 00:03:58.020
+And we're declaring in there.
+
+00:03:58.020 --> 00:04:01.360
+We've got a var, a
+const, and a let.
+
+00:04:01.360 --> 00:04:03.420
+That's logging them all out.
+
+00:04:03.420 --> 00:04:08.130
+The var is scoped to the parent
+function or the global scope,
+
+00:04:08.130 --> 00:04:10.810
+whereas const and
+let are I think
+
+00:04:10.810 --> 00:04:12.180
+the term is lexically scoped.
+
+00:04:12.180 --> 00:04:13.050
+SURMA: To the block.
+
+00:04:13.050 --> 00:04:15.210
+JAKE: To the block, right.
+
+00:04:15.210 --> 00:04:17.160
+So what happens here
+with these console logs,
+
+00:04:17.160 --> 00:04:18.209
+this first one works.
+
+00:04:18.209 --> 00:04:19.829
+It will log one.
+
+00:04:19.829 --> 00:04:22.470
+But what we hit here with
+this console.log(innerConst)
+
+00:04:22.470 --> 00:04:26.681
+and innerLet is that's going to
+throw because it has no access
+
+00:04:26.681 --> 00:04:27.180
+to those.
+
+00:04:27.180 --> 00:04:28.515
+They are scoped within there.
+
+00:04:28.515 --> 00:04:30.120
+And like you say,
+it's all blocks.
+
+00:04:30.120 --> 00:04:32.730
+And I thought the folks
+don't need to know this,
+
+00:04:32.730 --> 00:04:34.860
+but yeah, you can just have
+a bare block like that.
+
+00:04:34.860 --> 00:04:36.318
+I actually find
+that really useful.
+
+00:04:36.318 --> 00:04:37.350
+SURMA: It can be.
+
+00:04:37.350 --> 00:04:39.360
+Since const and let, I
+have used that every now
+
+00:04:39.360 --> 00:04:41.902
+and then to just declare that
+this variables just need it
+
+00:04:41.902 --> 00:04:43.110
+for these three instructions.
+
+00:04:43.110 --> 00:04:46.479
+JAKE: Yes, especially if
+you've got like a global--
+
+00:04:46.479 --> 00:04:48.520
+if you're doing some inline
+script in script tag,
+
+00:04:48.520 --> 00:04:50.104
+I just wrap it in
+these to make sure--
+
+00:04:50.104 --> 00:04:52.020
+SURMA: Or you want to
+shell out something just
+
+00:04:52.020 --> 00:04:53.340
+for a specific number of lines.
+
+00:04:53.340 --> 00:04:55.590
+JAKE: Exactly that, yes,
+that's what I've used it for.
+
+00:04:55.590 --> 00:04:58.500
+So back to this example.
+
+00:04:58.500 --> 00:05:00.530
+So you're saying same
+as var, is that--
+
+00:05:00.530 --> 00:05:03.280
+SURMA: So now that we
+have caught up on that,
+
+00:05:03.280 --> 00:05:07.089
+the question now is the
+let is technically--
+
+00:05:07.089 --> 00:05:08.630
+I want to say
+geographically, the let
+
+00:05:08.630 --> 00:05:10.920
+is outside of the block.
+
+00:05:10.920 --> 00:05:11.880
+But is it, though?
+
+00:05:11.880 --> 00:05:12.880
+JAKE: But is it, though?
+
+00:05:12.880 --> 00:05:14.280
+SURMA: It is a for statement.
+
+00:05:16.920 --> 00:05:19.470
+My intuition would still
+be it should work the same.
+
+00:05:19.470 --> 00:05:21.300
+But I would also
+understand if it didn't.
+
+00:05:21.300 --> 00:05:22.800
+But I don't know
+what the answer is.
+
+00:05:22.800 --> 00:05:25.040
+JAKE: The ECMAScript spec
+actually special cases
+
+00:05:25.040 --> 00:05:27.640
+this, this situation.
+
+00:05:27.640 --> 00:05:30.170
+So I agree with you that
+geographically, this
+
+00:05:30.170 --> 00:05:33.360
+let statement looks like it's
+outside the block of the for.
+
+00:05:33.360 --> 00:05:35.770
+But it does magic tricks.
+
+00:05:35.770 --> 00:05:37.830
+And this is where for
+loops are just like, ho!
+
+00:05:37.830 --> 00:05:39.210
+This thing that
+was really simple
+
+00:05:39.210 --> 00:05:42.130
+before is now actually
+really complicated.
+
+00:05:42.130 --> 00:05:43.650
+So what you will
+actually get here
+
+00:05:43.650 --> 00:05:47.534
+is a console.log of 0 and 1.
+
+00:05:47.534 --> 00:05:48.325
+SURMA: Interesting.
+
+00:05:48.325 --> 00:05:53.670
+JAKE: It creates a lexical
+scope of each iteration.
+
+00:05:53.670 --> 00:05:56.592
+SURMA: So it's
+literally a new i.
+
+00:05:56.592 --> 00:05:58.800
+It's not just the same
+variable assigned a new value.
+
+00:05:58.800 --> 00:06:00.615
+It's a new variable.
+
+00:06:00.615 --> 00:06:02.100
+JAKE: It is, yes.
+
+00:06:02.100 --> 00:06:03.150
+It is a new variable.
+
+00:06:03.150 --> 00:06:04.020
+SURMA: Wow.
+
+00:06:04.020 --> 00:06:05.853
+JAKE: And there's a lot
+of trickery in here.
+
+00:06:05.853 --> 00:06:08.430
+And this exposes some
+interesting behaviors
+
+00:06:08.430 --> 00:06:10.570
+I've never really thought
+about before about how
+
+00:06:10.570 --> 00:06:11.760
+for loops are specced.
+
+00:06:11.760 --> 00:06:12.660
+And one of them is--
+
+00:06:12.660 --> 00:06:15.750
+so this ++ at the
+end, the incrementer,
+
+00:06:15.750 --> 00:06:18.570
+I always thought of that as
+being at the end of a for loop
+
+00:06:18.570 --> 00:06:20.530
+iteration.
+
+00:06:20.530 --> 00:06:24.970
+So do this, do this,
+do that, and then--
+
+00:06:24.970 --> 00:06:28.400
+SURMA: Well, that would work
+if it's a new variable, right?
+
+00:06:28.400 --> 00:06:29.670
+Well, I guess it could.
+
+00:06:29.670 --> 00:06:33.540
+JAKE: Well, because this
+log 0 rather than 1,
+
+00:06:33.540 --> 00:06:34.980
+we know that this
+is not happening
+
+00:06:34.980 --> 00:06:38.092
+as part of that same iteration.
+
+00:06:38.092 --> 00:06:39.550
+And what actually
+happens is this--
+
+00:06:39.550 --> 00:06:41.860
+SURMA: No, it could be
+just after the body, right?
+
+00:06:41.860 --> 00:06:42.720
+It could be still--
+
+00:06:42.720 --> 00:06:44.678
+JAKE: Well, no, because
+then this is a closure.
+
+00:06:44.678 --> 00:06:45.690
+So this is being logged.
+
+00:06:45.690 --> 00:06:46.750
+SURMA: Oh, you're right.
+
+00:06:46.750 --> 00:06:47.970
+Yeah, yeah.
+
+00:06:47.970 --> 00:06:50.040
+JAKE: And so this
+is the weird thing.
+
+00:06:50.040 --> 00:06:51.870
+It exposes that the
+incrementer runs
+
+00:06:51.870 --> 00:06:56.260
+at the start of every
+iteration except the first one.
+
+00:06:56.260 --> 00:06:57.081
+I know, right?
+
+00:06:57.081 --> 00:06:57.580
+This is--
+
+00:06:57.580 --> 00:06:59.710
+SURMA: Throw all the
+elegance out of the window.
+
+00:06:59.710 --> 00:07:04.000
+JAKE: So the way
+it actually works--
+
+00:07:04.000 --> 00:07:06.760
+well, actually let's
+introduce an extra thing.
+
+00:07:09.966 --> 00:07:12.790
+SURMA: So now the
+question is does it
+
+00:07:12.790 --> 00:07:16.850
+copy the value at
+the end of the body
+
+00:07:16.850 --> 00:07:21.312
+to the first value of the next
+iteration and then apply the--
+
+00:07:21.312 --> 00:07:23.770
+JAKE: I think you've got your
+credibility back because that
+
+00:07:23.770 --> 00:07:25.330
+is exactly what it does.
+
+00:07:25.330 --> 00:07:27.130
+SURMA: Ooh, I mean,
+it would have to
+
+00:07:27.130 --> 00:07:31.230
+because if you go back
+to var land, it would--
+
+00:07:31.230 --> 00:07:32.760
+JAKE: --behave like that.
+
+00:07:32.760 --> 00:07:35.460
+You can alter the
+value of i within--
+
+00:07:35.460 --> 00:07:39.740
+yeah, so what happens
+is it does this bit,
+
+00:07:39.740 --> 00:07:42.930
+this special bit that it
+treats as a declaration.
+
+00:07:42.930 --> 00:07:44.834
+It records all of the
+things that it sets.
+
+00:07:44.834 --> 00:07:46.250
+So it has a
+bookkeeping there of--
+
+00:07:46.250 --> 00:07:46.833
+SURMA: Really?
+
+00:07:46.833 --> 00:07:48.780
+JAKE: So in this
+case, it's i, just i.
+
+00:07:48.780 --> 00:07:51.580
+But you could declare many.
+
+00:07:51.580 --> 00:07:54.060
+It runs its check here.
+
+00:07:54.060 --> 00:07:56.070
+SURMA: Cool.
+
+00:07:56.070 --> 00:07:58.320
+JAKE: So it actually creates
+a new lexical environment
+
+00:07:58.320 --> 00:08:00.250
+before it runs this check.
+
+00:08:00.250 --> 00:08:02.257
+And it copies the
+value of i into it.
+
+00:08:02.257 --> 00:08:03.840
+SURMA: Because that
+check can actually
+
+00:08:03.840 --> 00:08:05.100
+be a side effect, right?
+
+00:08:05.100 --> 00:08:06.450
+It can be all kind of stupid.
+
+00:08:06.450 --> 00:08:09.050
+JAKE: They can all
+be side effect-y,
+
+00:08:09.050 --> 00:08:11.216
+which is the amazing thing.
+
+00:08:11.216 --> 00:08:13.590
+So then it runs the body in
+that same lexical environment
+
+00:08:13.590 --> 00:08:15.110
+that we did this bit.
+
+00:08:15.110 --> 00:08:16.360
+So we've got our setTimeout().
+
+00:08:16.360 --> 00:08:16.943
+We're logging.
+
+00:08:16.943 --> 00:08:18.730
+So at this point, i is 0.
+
+00:08:18.730 --> 00:08:19.500
+[INAUDIBLE]
+
+00:08:19.500 --> 00:08:20.610
+Then we're doing i++.
+
+00:08:20.610 --> 00:08:24.345
+So this is where we're
+mutating i to be 1.
+
+00:08:24.345 --> 00:08:26.470
+And then that's the end of
+that lexical environment
+
+00:08:26.470 --> 00:08:28.829
+because it then creates
+a new lexical environment
+
+00:08:28.829 --> 00:08:30.870
+to do the next iteration,
+which begins with this.
+
+00:08:30.870 --> 00:08:31.786
+And yes, you're right.
+
+00:08:31.786 --> 00:08:34.470
+It copies the value
+from one into the other.
+
+00:08:34.470 --> 00:08:37.789
+For everything listed in this
+section, it copies the value.
+
+00:08:37.789 --> 00:08:39.600
+So now it's taking
+i, which is 1,
+
+00:08:39.600 --> 00:08:41.669
+into the new
+lexical environment.
+
+00:08:41.669 --> 00:08:43.020
+We do our ++ on it.
+
+00:08:43.020 --> 00:08:44.130
+i is now 2.
+
+00:08:44.130 --> 00:08:45.420
+We do our check.
+
+00:08:45.420 --> 00:08:47.857
+If it's not less
+than 2, so you--
+
+00:08:47.857 --> 00:08:49.065
+SURMA: And we get a log of 1.
+
+00:08:49.065 --> 00:08:49.900
+JAKE: And we get a log of 1.
+
+00:08:49.900 --> 00:08:51.275
+SURMA: Even though
+we incremented
+
+00:08:51.275 --> 00:08:52.815
+after scheduling the task.
+
+00:08:52.815 --> 00:08:54.870
+JAKE: Yes, because
+it's still pointing
+
+00:08:54.870 --> 00:08:56.540
+at that instance of 1 that we--
+
+00:08:56.540 --> 00:09:00.720
+SURMA: So just for the record,
+for the people at home, don't.
+
+00:09:00.720 --> 00:09:03.175
+That is, if you have to
+know these intricacies--
+
+00:09:03.175 --> 00:09:06.162
+if your code relies
+on these intricacies,
+
+00:09:06.162 --> 00:09:07.620
+most likely it's
+a bad idea, right?
+
+00:09:07.620 --> 00:09:09.495
+JAKE: Well, I would say
+that this is actually
+
+00:09:09.495 --> 00:09:12.130
+pretty intuitive because as you
+say, it works a lot like var
+
+00:09:12.130 --> 00:09:12.930
+did.
+
+00:09:12.930 --> 00:09:15.464
+But it's doing so many
+jumping other hoops and--
+
+00:09:15.464 --> 00:09:17.880
+SURMA: I mean, I would have
+said the same thing about var.
+
+00:09:17.880 --> 00:09:20.910
+If you rely on--
+
+00:09:20.910 --> 00:09:23.580
+I mean, this is kind of
+out of order, then, right?
+
+00:09:23.580 --> 00:09:25.020
+You do things to
+a variable that's
+
+00:09:25.020 --> 00:09:26.910
+already been used beforehand.
+
+00:09:26.910 --> 00:09:29.220
+And you're relying on
+the value-- these things,
+
+00:09:29.220 --> 00:09:32.160
+while possible, sh--
+
+00:09:32.160 --> 00:09:34.010
+don't use them if you
+any way to avoid it.
+
+00:09:34.010 --> 00:09:35.310
+JAKE: Yeah, if you
+can async/await
+
+00:09:35.310 --> 00:09:36.810
+rather than something
+like this, your code's
+
+00:09:36.810 --> 00:09:37.643
+a lot more sensible.
+
+00:09:37.643 --> 00:09:40.320
+But yeah, so the
+copying between stuff
+
+00:09:40.320 --> 00:09:42.060
+only happens with
+things declared there.
+
+00:09:42.060 --> 00:09:44.785
+So if you have another
+variable in there,
+
+00:09:44.785 --> 00:09:47.721
+it is not copying that
+between the executing context
+
+00:09:47.721 --> 00:09:49.470
+because it's not one
+of the ones declared.
+
+00:09:49.470 --> 00:09:52.290
+It's got a special thing
+where it deals with that.
+
+00:09:52.290 --> 00:09:55.020
+SURMA: So does const
+behave any different?
+
+00:09:55.020 --> 00:09:58.090
+JAKE: Well, so you can
+actually put const there.
+
+00:09:58.090 --> 00:09:59.109
+SURMA: Yeah, I know.
+
+00:09:59.109 --> 00:10:01.275
+JAKE: But then it will fail
+as soon as this happens.
+
+00:10:01.275 --> 00:10:02.000
+SURMA: Oh, really?
+
+00:10:02.000 --> 00:10:02.760
+JAKE: Well, but it's constant.
+
+00:10:02.760 --> 00:10:03.570
+You can't really assign to it.
+
+00:10:03.570 --> 00:10:05.612
+SURMA: I mean, if it's a
+new variable every time,
+
+00:10:05.612 --> 00:10:06.153
+let alone a--
+
+00:10:06.153 --> 00:10:08.370
+JAKE: Well, no, because it
+creates the new variable.
+
+00:10:08.370 --> 00:10:10.065
+And then you are executing this.
+
+00:10:10.065 --> 00:10:12.000
+So that's when the
+mutation happens.
+
+00:10:12.000 --> 00:10:14.944
+So it is odd that the spec does
+sort of allow that to happen.
+
+00:10:14.944 --> 00:10:16.110
+But it will only ever work--
+
+00:10:16.110 --> 00:10:18.960
+SURMA: I mean, it could
+still be a valid for loop
+
+00:10:18.960 --> 00:10:21.957
+if you have no code in your
+incrementer bit, right?
+
+00:10:21.957 --> 00:10:23.790
+JAKE: So the spec still
+has to deal with it.
+
+00:10:23.790 --> 00:10:25.320
+SURMA: [SIGHS]
+
+00:10:25.320 --> 00:10:27.272
+JAKE: So final one.
+
+00:10:27.272 --> 00:10:28.980
+SURMA: If you format
+your code like this,
+
+00:10:28.980 --> 00:10:29.904
+I'm going to slap you.
+
+00:10:29.904 --> 00:10:32.680
+JAKE: [LAUGHING]
+
+00:10:32.680 --> 00:10:36.600
+The reason is because
+I'm going to do this.
+
+00:10:36.600 --> 00:10:39.020
+SURMA: Why?
+
+00:10:39.020 --> 00:10:41.220
+JAKE: OK, so I am jumping
+through some hoops here.
+
+00:10:41.220 --> 00:10:44.720
+All I'm doing is I'm
+assigning 0 to i.
+
+00:10:44.720 --> 00:10:46.260
+But I'm just using
+the statement.
+
+00:10:46.260 --> 00:10:47.464
+So I can stuff--
+
+00:10:47.464 --> 00:10:49.130
+SURMA: Oh, I miscounted
+the parentheses.
+
+00:10:49.130 --> 00:10:51.697
+I was like, wait, you're
+storing the timeout ID in i.
+
+00:10:51.697 --> 00:10:52.280
+But it's not--
+
+00:10:52.280 --> 00:10:53.400
+JAKE: No, there's a
+lot of parentheses--
+
+00:10:53.400 --> 00:10:55.858
+SURMA: So this is another thing
+that people not necessarily
+
+00:10:55.858 --> 00:10:57.330
+know that you can--
+
+00:10:57.330 --> 00:11:00.030
+if you want to concatenate
+commands in JavaScript,
+
+00:11:00.030 --> 00:11:03.450
+you can use and and,
+you can use a semicolon,
+
+00:11:03.450 --> 00:11:05.160
+and you can use a comma.
+
+00:11:05.160 --> 00:11:07.500
+They all have slightly
+different meanings
+
+00:11:07.500 --> 00:11:10.430
+in how they concatenate and
+when they abort to concatenate.
+
+00:11:10.430 --> 00:11:11.579
+JAKE: Yeah, that's why--
+
+00:11:11.579 --> 00:11:12.870
+I could have used and and here.
+
+00:11:12.870 --> 00:11:14.400
+I didn't think about that.
+
+00:11:14.400 --> 00:11:14.900
+But it's--
+
+00:11:14.900 --> 00:11:16.470
+SURMA: Just calling it as it is.
+
+00:11:16.470 --> 00:11:18.760
+This is not a function
+parameter comma.
+
+00:11:18.760 --> 00:11:22.200
+This is a "concatenating to
+individual expressions" comma.
+
+00:11:22.200 --> 00:11:25.770
+JAKE: Yes, because I can't
+use semicolon because that's
+
+00:11:25.770 --> 00:11:27.560
+part of the for loop stuff.
+
+00:11:27.560 --> 00:11:29.190
+SURMA: I mean, you could have
+used an anonymous function
+
+00:11:29.190 --> 00:11:30.106
+that you immediately--
+
+00:11:30.106 --> 00:11:31.890
+JAKE: Ha.
+
+00:11:31.890 --> 00:11:36.040
+Look, I would have to make the
+font even smaller to do that.
+
+00:11:36.040 --> 00:11:41.340
+So you've talked around
+some of the problem.
+
+00:11:41.340 --> 00:11:43.960
+So my question is what is
+going to be logged here.
+
+00:11:43.960 --> 00:11:45.320
+So I've got my i++ here.
+
+00:11:45.320 --> 00:11:49.060
+You've got your i++ there.
+
+00:11:49.060 --> 00:11:50.641
+What do you think?
+
+00:11:50.641 --> 00:11:52.110
+SURMA: I just want to leave.
+
+00:11:52.110 --> 00:11:54.096
+JAKE: Do you know what?
+
+00:11:54.096 --> 00:11:55.970
+I didn't know this until
+I looked at the spec
+
+00:11:55.970 --> 00:11:57.745
+because I wanted to talk about
+the complication behind a
+
+00:11:57.745 --> 00:11:58.310
+for loop.
+
+00:11:58.310 --> 00:12:00.690
+And I only discovered this
+particular thing this morning.
+
+00:12:00.690 --> 00:12:05.410
+SURMA: So what I kind of
+assume is that this parentheses
+
+00:12:05.410 --> 00:12:08.650
+expressions, which is the
+setTimeout() and the "return
+
+00:12:08.650 --> 00:12:14.910
+0," in a way, that is
+being assigned to i once
+
+00:12:14.910 --> 00:12:16.880
+at the start, right?
+
+00:12:16.880 --> 00:12:18.590
+JAKE: But this i, it's going--
+
+00:12:18.590 --> 00:12:19.530
+so this call here--
+
+00:12:19.530 --> 00:12:20.274
+SURMA: So wait.
+
+00:12:20.274 --> 00:12:21.690
+You just asked me
+what do I think.
+
+00:12:21.690 --> 00:12:24.240
+What is the actual question?
+
+00:12:24.240 --> 00:12:26.790
+The body should run once, right?
+
+00:12:26.790 --> 00:12:28.860
+JAKE: The question
+comes down to which
+
+00:12:28.860 --> 00:12:31.660
+lexical scope is this code
+going to be running in.
+
+00:12:31.660 --> 00:12:33.780
+Like we said, there are
+many within a for loop.
+
+00:12:36.331 --> 00:12:37.830
+So what possible
+mutations are going
+
+00:12:37.830 --> 00:12:40.014
+to happen to i before
+this code runs?
+
+00:12:40.014 --> 00:12:42.180
+Because this for loop is
+going to run to completion.
+
+00:12:42.180 --> 00:12:43.350
+SURMA: I mean, this is a task.
+
+00:12:43.350 --> 00:12:44.640
+This will run out
+of the for loop--
+
+00:12:44.640 --> 00:12:45.390
+[INTERPOSING VOICES]
+
+00:12:45.390 --> 00:12:46.265
+SURMA: --synchronous.
+
+00:12:46.265 --> 00:12:53.080
+So technically, you said this
+i++ is creating a new lexical
+
+00:12:53.080 --> 00:12:53.840
+scope.
+
+00:12:53.840 --> 00:12:56.470
+But does it mean it's referring
+to a different variable
+
+00:12:56.470 --> 00:12:58.780
+now or not?
+
+00:12:58.780 --> 00:13:00.160
+JAKE: I'm having so much fun.
+
+00:13:00.160 --> 00:13:02.125
+SURMA: I'm going
+to say it logs a 1.
+
+00:13:02.125 --> 00:13:03.400
+JAKE: Logs a 1.
+
+00:13:03.400 --> 00:13:06.370
+And that is what I
+would have said as well.
+
+00:13:06.370 --> 00:13:08.100
+But it is not correct.
+
+00:13:08.100 --> 00:13:09.880
+No, I seriously--
+
+00:13:09.880 --> 00:13:11.290
+So here's the weird thing.
+
+00:13:11.290 --> 00:13:14.320
+It creates an
+additional lexical scope
+
+00:13:14.320 --> 00:13:17.730
+for this initial
+statement of the for loop.
+
+00:13:17.730 --> 00:13:22.269
+So it creates a lexical
+scope, runs this line,
+
+00:13:22.269 --> 00:13:23.810
+and once it's run
+that, it goes well,
+
+00:13:23.810 --> 00:13:25.870
+what are the values of
+everything declared?
+
+00:13:25.870 --> 00:13:28.365
+And then it copied them
+into a new lexical scope.
+
+00:13:28.365 --> 00:13:28.990
+SURMA: Oh, boy.
+
+00:13:28.990 --> 00:13:30.280
+JAKE: --to do the
+rest of the for loop.
+
+00:13:30.280 --> 00:13:31.270
+To do this and then this.
+
+00:13:31.270 --> 00:13:32.270
+SURMA: So it will log 0.
+
+00:13:32.270 --> 00:13:36.390
+JAKE: Because it never gets
+any of these mutational points.
+
+00:13:36.390 --> 00:13:37.430
+It's really weird.
+
+00:13:37.430 --> 00:13:39.127
+So you get so many
+lexical scopes
+
+00:13:39.127 --> 00:13:40.210
+in just a simple for loop.
+
+00:13:40.210 --> 00:13:42.380
+SURMA: So wait, what we're
+saying is don't use for loops.
+
+00:13:42.380 --> 00:13:42.880
+JAKE: Yeah.
+
+00:13:42.880 --> 00:13:44.296
+SURMA: Is that our
+general advice?
+
+00:13:44.296 --> 00:13:45.320
+JAKE: No, use for-of.
+
+00:13:45.320 --> 00:13:46.550
+It's so much simpler.
+
+00:13:46.550 --> 00:13:47.310
+That is the story.
+
+00:13:47.310 --> 00:13:49.060
+You don't have to worry
+about any of this.
+
+00:13:49.060 --> 00:13:50.890
+Just use iterators and for-of.
+
+00:13:50.890 --> 00:13:53.230
+So I've essentially just
+wasted everyone's time.
+
+00:13:53.230 --> 00:13:54.160
+SURMA: Well done.
+
+00:13:54.160 --> 00:13:55.630
+Welcome to HTTP203.
+
+00:13:55.630 --> 00:13:56.614
+We are back.
+
+00:13:56.614 --> 00:13:58.530
+JAKE: Maybe we should
+be one of those podcasts
+
+00:13:58.530 --> 00:13:59.950
+that has a little
+jingle between--
+
+00:13:59.950 --> 00:14:01.616
+SURMA: Yeah, we need
+transition jingles.
+
+00:14:01.616 --> 00:14:03.220
+JAKE: (SINGING)
+Da-da da-da da-da!
+
+00:14:03.220 --> 00:14:04.470
+Welcome back, listeners.
+
+00:14:04.470 --> 00:14:05.840
+We were talking about lasers.
+
+00:14:05.840 --> 00:14:07.298
+But we're now going
+to pick up on--
+
+00:14:07.298 --> 00:14:11.070
+SURMA: Today, we are sponsored
+by Google Microkitchen.
+
+00:14:11.070 --> 00:14:13.689
+JAKE: This one's by
+Google Chrome again.
+
+00:14:13.689 --> 00:14:14.480
+SURMA: [INAUDIBLE].
+
+00:14:14.480 --> 00:14:17.370
+JAKE: Download Chrome everyone.
+

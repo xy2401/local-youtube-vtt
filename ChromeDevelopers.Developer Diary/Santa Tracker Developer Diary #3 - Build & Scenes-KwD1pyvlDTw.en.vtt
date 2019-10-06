@@ -1,0 +1,757 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.208
+SAM THOROGOOD: Hey, Everyone.
+
+00:00:01.208 --> 00:00:02.172
+It's Sam here.
+
+00:00:02.172 --> 00:00:04.130
+So you might have watched
+a few episodes so far
+
+00:00:04.130 --> 00:00:06.588
+and learned a little bit about
+the different parts of Santa
+
+00:00:06.588 --> 00:00:07.740
+Tracker and how it works.
+
+00:00:07.740 --> 00:00:10.040
+What I want to do today is
+talk about how you actually
+
+00:00:10.040 --> 00:00:13.040
+build it yourself, and how you
+can, quite literally, check out
+
+00:00:13.040 --> 00:00:15.390
+the source code and
+run your own version.
+
+00:00:15.390 --> 00:00:17.974
+So to start with, let's have
+a look at our command line.
+
+00:00:17.974 --> 00:00:19.640
+We've already checked
+out Santa Tracker.
+
+00:00:19.640 --> 00:00:21.640
+We've gone to Get
+Help and got the repo.
+
+00:00:21.640 --> 00:00:23.360
+And let's look at
+what we do now.
+
+00:00:23.360 --> 00:00:24.620
+Start by checking it out.
+
+00:00:24.620 --> 00:00:25.210
+You can have a look.
+
+00:00:25.210 --> 00:00:26.270
+We've got some content here.
+
+00:00:26.270 --> 00:00:27.390
+It's got a bunch of stuff.
+
+00:00:27.390 --> 00:00:29.181
+But what you can start
+with is by basically
+
+00:00:29.181 --> 00:00:31.280
+running Yarn install.
+
+00:00:31.280 --> 00:00:32.870
+And so Yarn's a package manager.
+
+00:00:32.870 --> 00:00:34.640
+You can fetch that with
+Homebrew or some equivalent
+
+00:00:34.640 --> 00:00:36.110
+on your machine,
+and it will then
+
+00:00:36.110 --> 00:00:37.304
+go and do a bunch of stuff.
+
+00:00:37.304 --> 00:00:38.720
+In our case, you
+can see here it's
+
+00:00:38.720 --> 00:00:41.090
+pretty fast, because I've
+actually checked it out before.
+
+00:00:41.090 --> 00:00:42.950
+And so it will go and fetch
+all its dependencies and things
+
+00:00:42.950 --> 00:00:43.859
+like that.
+
+00:00:43.859 --> 00:00:45.650
+What it's actually
+doing is it's internally
+
+00:00:45.650 --> 00:00:48.240
+calling Bower, which is a
+package management tool.
+
+00:00:48.240 --> 00:00:49.460
+It's a little bit older.
+
+00:00:49.460 --> 00:00:51.230
+It's still needed
+for Polymer 2.0.
+
+00:00:51.230 --> 00:00:53.929
+I know Polymer 3.0 is upgrading
+to NPM and that repository,
+
+00:00:53.929 --> 00:00:55.970
+but for now we still need
+to have Bower installed
+
+00:00:55.970 --> 00:00:58.030
+to check out all the code.
+
+00:00:58.030 --> 00:00:59.540
+We then run our
+build tool, which
+
+00:00:59.540 --> 00:01:01.400
+is using the gulp build system.
+
+00:01:01.400 --> 00:01:03.353
+So the default task
+that we have in gulp
+
+00:01:03.353 --> 00:01:05.269
+will build Santa Tracker,
+and it will actually
+
+00:01:05.269 --> 00:01:06.990
+let us serve that folder.
+
+00:01:06.990 --> 00:01:10.310
+So if I just run serve here and
+hit Enter and then load it up--
+
+00:01:10.310 --> 00:01:11.870
+load this URL--
+
+00:01:11.870 --> 00:01:16.500
+we'll see that-- it will
+take a few seconds to load--
+
+00:01:16.500 --> 00:01:18.960
+and Santa Tracker will
+load up with all its fun
+
+00:01:18.960 --> 00:01:20.534
+exciting stuff going on.
+
+00:01:20.534 --> 00:01:22.200
+This version will be
+a little bit slower
+
+00:01:22.200 --> 00:01:24.408
+than production version for
+a bunch of reasons, which
+
+00:01:24.408 --> 00:01:26.210
+I'll cover in a few seconds.
+
+00:01:26.210 --> 00:01:29.740
+So because we're developers,
+and we've got access
+
+00:01:29.740 --> 00:01:31.600
+to Santa's Village
+whenever we like,
+
+00:01:31.600 --> 00:01:32.890
+you can actually go and
+click on these scenes
+
+00:01:32.890 --> 00:01:34.010
+to see what's going on.
+
+00:01:34.010 --> 00:01:36.930
+So we can cut Santa's
+beard and things like that.
+
+00:01:39.205 --> 00:01:41.080
+One thing to think about
+is that these scenes
+
+00:01:41.080 --> 00:01:42.229
+will load dynamically.
+
+00:01:42.229 --> 00:01:44.020
+So if we load the dev
+tools, firstly, we'll
+
+00:01:44.020 --> 00:01:45.900
+see our lovely
+responsive design.
+
+00:01:45.900 --> 00:01:50.740
+But if we go to network here and
+set the speed to, say, fast 3G,
+
+00:01:50.740 --> 00:01:52.150
+we can see the loading happen.
+
+00:01:52.150 --> 00:01:54.024
+So we actually loaded
+the Santa Selfie scene.
+
+00:01:54.024 --> 00:01:55.330
+So that will load really fast.
+
+00:01:55.330 --> 00:01:57.280
+Let's go to a scene
+we haven't loaded yet.
+
+00:01:57.280 --> 00:01:59.960
+So this might be
+the gift slingshot.
+
+00:01:59.960 --> 00:02:02.250
+And I love this scene,
+which I call boat load.
+
+00:02:02.250 --> 00:02:06.430
+That's its actual ID, because
+it's actually pretty small.
+
+00:02:06.430 --> 00:02:07.630
+It's not too complicated.
+
+00:02:07.630 --> 00:02:10.360
+Yet, it does most of the
+things that a regular Santa
+
+00:02:10.360 --> 00:02:11.080
+scene will do.
+
+00:02:11.080 --> 00:02:14.560
+And we've got every house
+in the village, these cards,
+
+00:02:14.560 --> 00:02:16.572
+is what we call a scene.
+
+00:02:16.572 --> 00:02:17.747
+Let's click on that now.
+
+00:02:17.747 --> 00:02:19.580
+What you can notice is
+that we're actually--
+
+00:02:19.580 --> 00:02:21.066
+there's a red bar
+at the top here.
+
+00:02:21.066 --> 00:02:22.690
+And that slowly moves
+across the screen
+
+00:02:22.690 --> 00:02:25.150
+as all the resources, that
+are on the right here,
+
+00:02:25.150 --> 00:02:26.516
+are loaded into the page.
+
+00:02:26.516 --> 00:02:27.890
+And this is a
+pretty small scene.
+
+00:02:27.890 --> 00:02:32.020
+So it loads pretty fast
+even on a slow connection.
+
+00:02:32.020 --> 00:02:34.480
+We can also play this game.
+
+00:02:34.480 --> 00:02:37.300
+So how do we get
+to these scenes?
+
+00:02:37.300 --> 00:02:43.240
+If we go to the code and
+look at santaapp.html,
+
+00:02:43.240 --> 00:02:44.500
+this is a Polymer element.
+
+00:02:44.500 --> 00:02:46.300
+And we've had another
+episode on Polymer.
+
+00:02:46.300 --> 00:02:48.070
+So I won't cover
+this extensively.
+
+00:02:48.070 --> 00:02:51.010
+In the middle here is what we
+call the lazy pages element.
+
+00:02:51.010 --> 00:02:52.630
+And this element is
+entirely designed
+
+00:02:52.630 --> 00:02:54.800
+to load these pages at runtime.
+
+00:02:54.800 --> 00:02:56.732
+So interestingly
+enough, these scenes
+
+00:02:56.732 --> 00:02:58.690
+aren't on the page when
+you load Santa Tracker.
+
+00:02:58.690 --> 00:03:00.880
+These are essentially
+unknown HTML elements
+
+00:03:00.880 --> 00:03:03.040
+that your browser doesn't
+know how to render.
+
+00:03:03.040 --> 00:03:06.120
+What lazy pages does is
+that when the route changes
+
+00:03:06.120 --> 00:03:08.740
+to that URL, when we want
+to load the boat load scene,
+
+00:03:08.740 --> 00:03:11.320
+for instance, it then
+goes and finds, OK, here's
+
+00:03:11.320 --> 00:03:12.520
+the boat load scene.
+
+00:03:12.520 --> 00:03:13.540
+It goes, cool.
+
+00:03:13.540 --> 00:03:17.980
+The path is this HTML path,
+including a language field.
+
+00:03:17.980 --> 00:03:19.630
+It then loads that
+into the page.
+
+00:03:19.630 --> 00:03:21.170
+And when that's
+loaded, we can then
+
+00:03:21.170 --> 00:03:23.169
+show that scene, because
+all the resources to do
+
+00:03:23.169 --> 00:03:25.370
+with that element
+are now on the page.
+
+00:03:25.370 --> 00:03:28.490
+So if you notice, we've
+got it open as well.
+
+00:03:28.490 --> 00:03:29.950
+So a couple of
+things to note here.
+
+00:03:29.950 --> 00:03:33.110
+So firstly is that we bring in
+the JavaScript for the scene.
+
+00:03:33.110 --> 00:03:36.170
+So when you first build and
+check out Santa Tracker,
+
+00:03:36.170 --> 00:03:38.650
+your build might still be
+running, because we actually
+
+00:03:38.650 --> 00:03:41.596
+compile every scene's JavaScript
+with Closure Compiler.
+
+00:03:41.596 --> 00:03:42.970
+The reason we do
+this is actually
+
+00:03:42.970 --> 00:03:44.980
+because a lot of the
+scenes are quite old.
+
+00:03:44.980 --> 00:03:46.810
+They typically
+predate-- the majority
+
+00:03:46.810 --> 00:03:47.942
+of scenes predate Polymer.
+
+00:03:47.942 --> 00:03:49.900
+And there's a few scenes
+which are very modern,
+
+00:03:49.900 --> 00:03:51.691
+and they're built a
+little bit differently,
+
+00:03:51.691 --> 00:03:53.980
+but most of our games are
+written fairly generically.
+
+00:03:53.980 --> 00:03:55.210
+They don't really
+care about Polymer.
+
+00:03:55.210 --> 00:03:57.418
+And actually, it's kind of
+a nice strength of Polymer
+
+00:03:57.418 --> 00:04:00.580
+in that we kind of wrap
+up the HTML and JavaScript
+
+00:04:00.580 --> 00:04:03.680
+in a very neat way just
+within this one file.
+
+00:04:03.680 --> 00:04:05.557
+So this scene might
+have a bunch of things.
+
+00:04:05.557 --> 00:04:07.390
+It's got a template,
+which includes the kind
+
+00:04:07.390 --> 00:04:09.010
+of inbuilt style we care about.
+
+00:04:09.010 --> 00:04:10.810
+It also has a bunch
+of divs and elements,
+
+00:04:10.810 --> 00:04:12.250
+like trees and elves and stuff.
+
+00:04:12.250 --> 00:04:17.430
+This is the cute things you
+see around the slingshot scene.
+
+00:04:17.430 --> 00:04:18.899
+A bit down-- a
+bit further below,
+
+00:04:18.899 --> 00:04:20.649
+we've got a very
+interesting message here.
+
+00:04:20.649 --> 00:04:23.260
+This is an i18n message.
+
+00:04:23.260 --> 00:04:26.710
+In production, we actually
+remove this div completely.
+
+00:04:26.710 --> 00:04:30.490
+We swap it out for
+the message that's
+
+00:04:30.490 --> 00:04:31.930
+appropriate for your language.
+
+00:04:31.930 --> 00:04:33.100
+But in dev, it lives here.
+
+00:04:33.100 --> 00:04:34.922
+So we can quickly
+switch languages.
+
+00:04:34.922 --> 00:04:36.880
+You can actually see this
+if we go to the site,
+
+00:04:36.880 --> 00:04:41.050
+and we got to console and type
+document.documentelement.lang
+
+00:04:41.050 --> 00:04:43.956
+equals, let's say, German.
+
+00:04:43.956 --> 00:04:46.580
+And a few seconds later, we see
+all the language stuff changes.
+
+00:04:46.580 --> 00:04:48.976
+And the way we do that
+is with that element.
+
+00:04:48.976 --> 00:04:50.350
+But in production,
+we've actually
+
+00:04:50.350 --> 00:04:51.550
+got rid of that
+element completely.
+
+00:04:51.550 --> 00:04:53.174
+If you're curious
+about how we do that,
+
+00:04:53.174 --> 00:04:57.920
+you can actually load
+up the gulp scripts--
+
+00:04:57.920 --> 00:04:59.264
+the replace script here.
+
+00:04:59.264 --> 00:05:00.930
+So if you have a look
+around, what we do
+
+00:05:00.930 --> 00:05:05.102
+is we actually load
+each page into memory,
+
+00:05:05.102 --> 00:05:06.560
+which is this mutate
+function here,
+
+00:05:06.560 --> 00:05:08.610
+and we do regular
+query selectors.
+
+00:05:08.610 --> 00:05:10.470
+We say, so for everything
+with a message ID,
+
+00:05:10.470 --> 00:05:12.130
+or everything with a--
+
+00:05:12.130 --> 00:05:14.050
+of this tag name--
+
+00:05:14.050 --> 00:05:14.550
+OK.
+
+00:05:14.550 --> 00:05:15.900
+This actually is the wrong--
+
+00:05:15.900 --> 00:05:16.400
+I see.
+
+00:05:16.400 --> 00:05:18.108
+Because each message
+has that message ID.
+
+00:05:18.108 --> 00:05:19.365
+So we catch it here first.
+
+00:05:19.365 --> 00:05:21.990
+We'll actually replace the
+content of that message ID
+
+00:05:21.990 --> 00:05:22.762
+for that language.
+
+00:05:22.762 --> 00:05:23.720
+So that's kind of cool.
+
+00:05:23.720 --> 00:05:26.465
+That's part of our
+build process as well.
+
+00:05:26.465 --> 00:05:28.590
+And so finally, let's talk
+a little bit about gulp.
+
+00:05:28.590 --> 00:05:31.510
+So I mentioned earlier that
+we use gulp to build stuff.
+
+00:05:31.510 --> 00:05:33.810
+We can also use gulp
+to serve things.
+
+00:05:33.810 --> 00:05:36.151
+So if we type gulp
+serve here, we actually
+
+00:05:36.151 --> 00:05:37.400
+see it will do the same thing.
+
+00:05:37.400 --> 00:05:39.720
+It'll do this default compile
+step, which yet again is
+
+00:05:39.720 --> 00:05:41.952
+happening pretty fast for me.
+
+00:05:41.952 --> 00:05:43.660
+And then we'll actually
+run a web server.
+
+00:05:43.660 --> 00:05:45.826
+This is the best way to run
+it and test it and track
+
+00:05:45.826 --> 00:05:46.840
+it yourself.
+
+00:05:46.840 --> 00:05:49.470
+And the serve command, as well,
+will also do auto reloading.
+
+00:05:49.470 --> 00:05:53.460
+So if I change something-- let's
+say I change this boat load
+
+00:05:53.460 --> 00:05:56.410
+scene to have some
+text just somewhere--
+
+00:05:56.410 --> 00:05:57.810
+Hello.
+
+00:05:57.810 --> 00:06:00.649
+Then what you'll see is this
+page will automatically reload.
+
+00:06:00.649 --> 00:06:02.440
+And actually we weren't
+even on that scene,
+
+00:06:02.440 --> 00:06:04.814
+but if we load it up, you can
+see that text now appearing
+
+00:06:04.814 --> 00:06:06.101
+there.
+
+00:06:06.101 --> 00:06:06.600
+Very good.
+
+00:06:06.600 --> 00:06:08.434
+Very suddenly in the
+corner there's a hello.
+
+00:06:08.434 --> 00:06:10.141
+So hopefully, you've
+learned a little bit
+
+00:06:10.141 --> 00:06:12.720
+about the way you can build
+and test Santa Tracker even
+
+00:06:12.720 --> 00:06:14.280
+on your own machine.
+
+00:06:14.280 --> 00:06:17.520
+So Santa Tracker is a big,
+complicated, single-page
+
+00:06:17.520 --> 00:06:18.450
+application.
+
+00:06:18.450 --> 00:06:20.310
+It really has one entry
+point, and then it
+
+00:06:20.310 --> 00:06:22.740
+loads the individual scenes
+as we need them, which
+
+00:06:22.740 --> 00:06:24.329
+is super interesting in itself.
+
+00:06:24.329 --> 00:06:26.370
+If you want to learn a
+little bit more about that
+
+00:06:26.370 --> 00:06:27.870
+and also build
+instructions of how
+
+00:06:27.870 --> 00:06:31.260
+to run and build Santa Tracker,
+there's some links below.
+
+00:06:31.260 --> 00:06:33.840
+The article I'm linking to is
+an article I wrote last year,
+
+00:06:33.840 --> 00:06:36.210
+which talks about how
+Santa Tracker was made
+
+00:06:36.210 --> 00:06:37.710
+into a progressive web app.
+
+00:06:37.710 --> 00:06:38.640
+And while, of course,
+that's a little bit
+
+00:06:38.640 --> 00:06:40.410
+of a different
+topic, it actually
+
+00:06:40.410 --> 00:06:42.120
+covers a little
+bit about loading.
+
+00:06:42.120 --> 00:06:45.120
+And this is important
+because as a PWA
+
+00:06:45.120 --> 00:06:46.742
+we care about
+offline and caching.
+
+00:06:46.742 --> 00:06:48.450
+And so one thing we
+do that's interesting
+
+00:06:48.450 --> 00:06:51.700
+is that we only cache scenes
+users have been to before.
+
+00:06:51.700 --> 00:06:54.690
+And that matches the way we load
+scenes only as users need them,
+
+00:06:54.690 --> 00:06:57.140
+rather than loading
+the whole site at once.
+
+00:06:57.140 --> 00:07:00.210
+So thanks for watching,
+and I'll see you next time.
+
+00:07:00.210 --> 00:07:01.090
+Thanks for watching.
+
+00:07:01.090 --> 00:07:03.423
+You can subscribe to the
+Google Chrome Developer channel
+
+00:07:03.423 --> 00:07:06.700
+down here, or check out some
+other great videos along here.
+

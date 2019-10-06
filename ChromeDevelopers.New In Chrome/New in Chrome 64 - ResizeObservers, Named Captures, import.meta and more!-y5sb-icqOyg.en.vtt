@@ -1,0 +1,324 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.660 --> 00:00:02.310
+PETE LEPAGE: Chrome
+64 adds support
+
+00:00:02.310 --> 00:00:04.830
+for resize observers,
+which will notify you
+
+00:00:04.830 --> 00:00:06.970
+when element size has changed.
+
+00:00:06.970 --> 00:00:10.500
+Modules can now access
+host-specific metadata
+
+00:00:10.500 --> 00:00:12.360
+with import dot metadata.
+
+00:00:12.360 --> 00:00:14.070
+The pop-up blocker
+gets stronger.
+
+00:00:14.070 --> 00:00:14.760
+And plenty more.
+
+00:00:14.760 --> 00:00:16.110
+I'm Pete LePage.
+
+00:00:16.110 --> 00:00:19.110
+Let's dive in and see what's
+new for developers in Chrome 64.
+
+00:00:19.110 --> 00:00:21.880
+[MUSIC PLAYING]
+
+00:00:21.880 --> 00:00:24.190
+Tracking when an
+element's size has changed
+
+00:00:24.190 --> 00:00:25.630
+can be a bit of a pain.
+
+00:00:25.630 --> 00:00:28.000
+Most likely, you'll need
+to attach a listener
+
+00:00:28.000 --> 00:00:30.700
+to the document's
+resize event, then
+
+00:00:30.700 --> 00:00:35.830
+call get bounding client
+rect or get computed style.
+
+00:00:35.830 --> 00:00:39.220
+But both of those can
+cause layout thrashing.
+
+00:00:39.220 --> 00:00:42.370
+And what if the browser
+window didn't change size,
+
+00:00:42.370 --> 00:00:44.860
+but a new element was
+added to the document?
+
+00:00:44.860 --> 00:00:47.720
+Or you added display
+none to an element?
+
+00:00:47.720 --> 00:00:50.200
+Both of those can change
+the size of other elements
+
+00:00:50.200 --> 00:00:51.820
+within the page.
+
+00:00:51.820 --> 00:00:55.360
+Resize Observer notifies you
+whenever an element's size
+
+00:00:55.360 --> 00:00:57.670
+changes and provides
+the new height
+
+00:00:57.670 --> 00:00:59.470
+and width of the
+element, reducing
+
+00:00:59.470 --> 00:01:01.450
+the risk of layout thrashing.
+
+00:01:01.450 --> 00:01:04.300
+Like other observers,
+using it is pretty simple.
+
+00:01:04.300 --> 00:01:07.540
+Create a resize observer
+object and pass callback
+
+00:01:07.540 --> 00:01:08.830
+to the constructor.
+
+00:01:08.830 --> 00:01:12.430
+The callback will be given
+an array of resize observer
+
+00:01:12.430 --> 00:01:15.730
+entries, one entry per
+observed element, which
+
+00:01:15.730 --> 00:01:18.460
+contains the new
+dimensions for the element.
+
+00:01:18.460 --> 00:01:21.310
+Check out [INAUDIBLE] post for
+more details and real world
+
+00:01:21.310 --> 00:01:23.500
+examples.
+
+00:01:23.500 --> 00:01:25.330
+I hate tab unders.
+
+00:01:25.330 --> 00:01:26.010
+You know them.
+
+00:01:26.010 --> 00:01:28.870
+It's when a page opens a
+pop-up to some destination
+
+00:01:28.870 --> 00:01:30.650
+and navigates the page.
+
+00:01:30.650 --> 00:01:34.540
+Usually one of them is an ad or
+something you just don't want.
+
+00:01:34.540 --> 00:01:37.330
+Starting in Chrome 64,
+these types of navigations
+
+00:01:37.330 --> 00:01:40.330
+will be blocked, and Chrome
+will show some native UI
+
+00:01:40.330 --> 00:01:42.070
+to the user, allowing
+them to follow
+
+00:01:42.070 --> 00:01:44.440
+the redirect if they want.
+
+00:01:44.440 --> 00:01:46.480
+When writing JavaScript
+modules, you often
+
+00:01:46.480 --> 00:01:49.060
+want access to
+host-specific metadata
+
+00:01:49.060 --> 00:01:50.650
+about the current module.
+
+00:01:50.650 --> 00:01:53.060
+Chrome 64 now
+supports the import
+
+00:01:53.060 --> 00:01:56.380
+dot meta property within
+modules and exposes
+
+00:01:56.380 --> 00:02:00.850
+the URL for the module
+via import meta dot URL.
+
+00:02:00.850 --> 00:02:03.940
+This is really helpful when
+you want to resolve resources
+
+00:02:03.940 --> 00:02:06.220
+relative to the
+module file as opposed
+
+00:02:06.220 --> 00:02:08.630
+to the current HTML document.
+
+00:02:08.630 --> 00:02:10.750
+These are just a few of
+the changes in Chrome 64
+
+00:02:10.750 --> 00:02:11.750
+for developers.
+
+00:02:11.750 --> 00:02:13.810
+Of course, there's plenty more.
+
+00:02:13.810 --> 00:02:16.360
+Chrome now supports
+named captures
+
+00:02:16.360 --> 00:02:18.140
+and regular expressions.
+
+00:02:18.140 --> 00:02:21.340
+The default preload value
+for audio and video elements
+
+00:02:21.340 --> 00:02:22.770
+is now metadata.
+
+00:02:22.770 --> 00:02:25.090
+This brings Chrome in
+line with other browsers
+
+00:02:25.090 --> 00:02:27.340
+and helps to reduce
+bandwidth and resource
+
+00:02:27.340 --> 00:02:30.130
+usage by only loading
+the metadata and not
+
+00:02:30.130 --> 00:02:31.900
+the media itself.
+
+00:02:31.900 --> 00:02:34.090
+You can now use request
+dot prototype dot
+
+00:02:34.090 --> 00:02:37.420
+cache to view the
+cache mode of a request
+
+00:02:37.420 --> 00:02:40.910
+and determine whether the
+request is a reload request.
+
+00:02:40.910 --> 00:02:43.240
+And using the Focus
+Management API,
+
+00:02:43.240 --> 00:02:45.730
+you can now focus an
+element without scrolling
+
+00:02:45.730 --> 00:02:48.610
+to it with the prevent
+scroll attribute.
+
+00:02:48.610 --> 00:02:49.990
+Oh, and one more.
+
+00:02:49.990 --> 00:02:52.180
+While this isn't really
+a developer feature,
+
+00:02:52.180 --> 00:02:53.550
+it makes me happy.
+
+00:02:53.550 --> 00:02:56.900
+Window dot alert no longer
+brings a background tab
+
+00:02:56.900 --> 00:02:57.970
+to the foreground.
+
+00:02:57.970 --> 00:03:01.090
+Instead, the alert will be shown
+when the user switches back
+
+00:03:01.090 --> 00:03:02.350
+to that tab.
+
+00:03:02.350 --> 00:03:04.870
+No more random tab
+switches because something
+
+00:03:04.870 --> 00:03:07.000
+fired a window dot alert on me.
+
+00:03:07.000 --> 00:03:09.280
+I'm looking at you,
+Google Calendar.
+
+00:03:09.280 --> 00:03:12.010
+All the details, including
+links to docs and specs,
+
+00:03:12.010 --> 00:03:13.480
+are in the description below.
+
+00:03:13.480 --> 00:03:16.060
+And be sure to check out the
+latest New In Chrome DevTools
+
+00:03:16.060 --> 00:03:18.490
+video to learn what's
+new in Dev Tools.
+
+00:03:18.490 --> 00:03:20.440
+Then click the Subscribe
+button and you'll
+
+00:03:20.440 --> 00:03:22.930
+get an email notification
+whenever we launch a new video.
+
+00:03:22.930 --> 00:03:26.200
+I'm Pete LePage, and as soon
+as Chrome 65 is released,
+
+00:03:26.200 --> 00:03:29.050
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:29.050 --> 00:03:31.200
+[MUSIC PLAYING]
+

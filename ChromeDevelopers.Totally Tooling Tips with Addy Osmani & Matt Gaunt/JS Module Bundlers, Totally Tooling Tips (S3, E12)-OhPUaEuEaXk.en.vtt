@@ -1,0 +1,866 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:10.030 --> 00:00:12.480
+ADDY OSMANI: So we're in
+a coffee shop, sort of.
+
+00:00:12.480 --> 00:00:13.100
+MATT GAUNT: No, we're out.
+
+00:00:13.100 --> 00:00:13.720
+ADDY OSMANI: We're in a tavern.
+
+00:00:13.720 --> 00:00:14.420
+We're not in a coffee shop.
+
+00:00:14.420 --> 00:00:15.200
+We're in a tavern.
+
+00:00:15.200 --> 00:00:16.079
+MATT GAUNT: Why are you lying?
+
+00:00:16.079 --> 00:00:17.662
+ADDY OSMANI: We're
+in an empty tavern.
+
+00:00:17.662 --> 00:00:18.810
+It's a completely organic--
+
+00:00:18.810 --> 00:00:19.935
+MATT GAUNT: We're in a pub.
+
+00:00:19.935 --> 00:00:22.332
+ADDY OSMANI: It's an
+organic-- it's an empty space.
+
+00:00:22.332 --> 00:00:23.290
+MATT GAUNT: It's a pub.
+
+00:00:23.290 --> 00:00:24.290
+ADDY OSMANI: It's a pub.
+
+00:00:24.290 --> 00:00:26.152
+So module bundling is a thing.
+
+00:00:26.152 --> 00:00:27.610
+It's one of those
+other things that
+
+00:00:27.610 --> 00:00:30.260
+make us cry on a daily
+basis, to be honest.
+
+00:00:30.260 --> 00:00:31.850
+MATT GAUNT: But it's
+a necessary evil,
+
+00:00:31.850 --> 00:00:35.006
+because then we get all
+the S2015 goodness today.
+
+00:00:35.006 --> 00:00:37.547
+ADDY OSMANI: You've been dealing
+with a lot of the tools that
+
+00:00:37.547 --> 00:00:41.870
+end in "-ify" or if-eye--
+Browserify, Babelify.
+
+00:00:41.870 --> 00:00:44.240
+MATT GAUNT: Rollupify
+is my current "ify"
+
+00:00:44.240 --> 00:00:47.320
+set, because I tried
+Babel and [? Rollup ?]
+
+00:00:47.320 --> 00:00:51.350
+without the "ify" bits,
+and it didn't work.
+
+00:00:51.350 --> 00:00:53.140
+ADDY OSMANI: Somewhere
+someone envies you.
+
+00:00:53.140 --> 00:00:53.575
+It's not me.
+
+00:00:53.575 --> 00:00:54.540
+But someone probably does.
+
+00:00:54.540 --> 00:00:55.520
+MATT GAUNT: No, they don't.
+
+00:00:55.520 --> 00:00:55.840
+No one does.
+
+00:00:55.840 --> 00:00:57.320
+ADDY OSMANI: So
+we should probably
+
+00:00:57.320 --> 00:00:59.300
+talk about what
+all that stuff is.
+
+00:00:59.300 --> 00:01:00.460
+MATT GAUNT: Yeah, you
+tell me how to fix it,
+
+00:01:00.460 --> 00:01:01.240
+and that'd be great.
+
+00:01:01.240 --> 00:01:02.573
+ADDY OSMANI: It's not happening.
+
+00:01:02.573 --> 00:01:05.489
+So Browserify-- we'll
+start off with Browserify.
+
+00:01:05.489 --> 00:01:08.070
+It's a tool for compiling
+your node flavor common JS
+
+00:01:08.070 --> 00:01:09.790
+modules into the browser.
+
+00:01:09.790 --> 00:01:13.150
+It's basically stuff
+you grab off MPM.
+
+00:01:13.150 --> 00:01:14.675
+It'll analyze your
+require calls,
+
+00:01:14.675 --> 00:01:17.050
+build a bundle that you can
+serve up to the browser using
+
+00:01:17.050 --> 00:01:17.640
+a script tag.
+
+00:01:17.640 --> 00:01:18.380
+It's pretty--
+
+00:01:18.380 --> 00:01:19.880
+MATT GAUNT: Yeah,
+so basically, when
+
+00:01:19.880 --> 00:01:23.050
+you do like require brackets,
+whatever you put inside,
+
+00:01:23.050 --> 00:01:26.160
+what it does is it looks at that
+file and then just [INAUDIBLE]
+
+00:01:26.160 --> 00:01:29.230
+basically in-lines it into
+one single JavaScript file.
+
+00:01:29.230 --> 00:01:31.200
+So then you create
+a JavaScript bundle.
+
+00:01:31.200 --> 00:01:32.658
+ADDY OSMANI: So
+basically, packages
+
+00:01:32.658 --> 00:01:34.840
+published MPM originally
+intended for node
+
+00:01:34.840 --> 00:01:36.090
+will just work in the browser.
+
+00:01:36.090 --> 00:01:38.548
+It's kind of nice for little
+utilities and stuff like that.
+
+00:01:38.548 --> 00:01:39.940
+MATT GAUNT: Yeah.
+
+00:01:39.940 --> 00:01:41.210
+ADDY OSMANI: Using it is
+pretty straightforward.
+
+00:01:41.210 --> 00:01:43.376
+So you go and require
+something, like, I don't know,
+
+00:01:43.376 --> 00:01:44.310
+a module called Magic.
+
+00:01:44.310 --> 00:01:46.560
+There probably is a-- I don't
+even want to look it up.
+
+00:01:46.560 --> 00:01:47.280
+MATT GAUNT: You've made it.
+
+00:01:47.280 --> 00:01:48.000
+ADDY OSMANI: I haven't made it.
+
+00:01:48.000 --> 00:01:48.630
+MATT GAUNT: You have.
+
+00:01:48.630 --> 00:01:48.970
+ADDY OSMANI: [INAUDIBLE].
+
+00:01:48.970 --> 00:01:49.850
+MATT GAUNT: Carry on.
+
+00:01:49.850 --> 00:01:49.955
+ADDY OSMANI: OK.
+
+00:01:49.955 --> 00:01:51.020
+So let's say that
+you've required
+
+00:01:51.020 --> 00:01:52.450
+in a module called Unicorn.
+
+00:01:52.450 --> 00:01:55.400
+You can then go and start using
+it, like do unicorn.dance.
+
+00:01:55.400 --> 00:01:57.250
+You go and run
+Browserify against it
+
+00:01:57.250 --> 00:01:58.806
+to generate a bundle.
+
+00:01:58.806 --> 00:02:00.430
+And when you try it
+out in the browser,
+
+00:02:00.430 --> 00:02:02.100
+it'll go and log a message.
+
+00:02:02.100 --> 00:02:04.016
+MATT GAUNT: Dance like
+nobody is watching you.
+
+00:02:04.016 --> 00:02:06.330
+ADDY OSMANI:
+Because they're not.
+
+00:02:06.330 --> 00:02:08.440
+MATT GAUNT: I'll always
+watch you dance, Addy.
+
+00:02:08.440 --> 00:02:10.523
+ADDY OSMANI: And that's
+where the lawyers come in.
+
+00:02:10.523 --> 00:02:13.290
+So we talked about Browserify.
+
+00:02:13.290 --> 00:02:14.450
+We'll come back to that.
+
+00:02:14.450 --> 00:02:16.190
+We also have to mention Webpack.
+
+00:02:16.190 --> 00:02:17.657
+So Webpack--
+
+00:02:17.657 --> 00:02:19.490
+MATT GAUNT: Webpack is
+like the new hotness,
+
+00:02:19.490 --> 00:02:22.640
+and I've not looked at
+it, because the last time
+
+00:02:22.640 --> 00:02:24.500
+I spoke to you using
+this, you seemed
+
+00:02:24.500 --> 00:02:26.700
+like you were in severe pain.
+
+00:02:26.700 --> 00:02:30.000
+ADDY OSMANI: I had bucket
+next to my desk from my tears.
+
+00:02:30.000 --> 00:02:31.182
+It just came from Webpack.
+
+00:02:31.182 --> 00:02:32.140
+So Webpack, it's great.
+
+00:02:32.140 --> 00:02:32.860
+It's useful.
+
+00:02:32.860 --> 00:02:35.100
+It's just it's not the
+nicest thing to use.
+
+00:02:35.100 --> 00:02:37.050
+So Webpack is another
+module bundler,
+
+00:02:37.050 --> 00:02:41.780
+packs common JS modules, your
+AMD modules in the browser.
+
+00:02:41.780 --> 00:02:43.106
+It has a few other features.
+
+00:02:43.106 --> 00:02:44.480
+It's got like
+things like loaders
+
+00:02:44.480 --> 00:02:47.130
+for transforming
+resources into JavaScript.
+
+00:02:47.130 --> 00:02:50.665
+So you can take something
+like JSX, just load it in.
+
+00:02:50.665 --> 00:02:52.860
+It'll do all the
+transformations for you.
+
+00:02:52.860 --> 00:02:56.540
+Loaders are sort of like
+tasks in other build tools.
+
+00:02:56.540 --> 00:02:59.650
+So you'd use it as a way to
+get you sort of front end
+
+00:02:59.650 --> 00:03:03.060
+build steps-- ish.
+
+00:03:03.060 --> 00:03:06.200
+MATT GAUNT: I'd like--- I'm
+still trying to figure out what
+
+00:03:06.200 --> 00:03:08.940
+it does over Browserify
+and everything else.
+
+00:03:08.940 --> 00:03:12.200
+ADDY OSMANI: OK, so let's ignore
+anything that I've said there.
+
+00:03:12.200 --> 00:03:14.140
+The main thing that
+I like Webpack for
+
+00:03:14.140 --> 00:03:16.660
+is a feature called
+code splitting.
+
+00:03:16.660 --> 00:03:19.720
+So code splitting lets you
+basically split your code base
+
+00:03:19.720 --> 00:03:21.270
+into chunks.
+
+00:03:21.270 --> 00:03:24.340
+You can then go and
+load them on demands.
+
+00:03:24.340 --> 00:03:25.092
+It's kind of nice.
+
+00:03:25.092 --> 00:03:26.550
+MATT GAUNT: So this
+is just to have
+
+00:03:26.550 --> 00:03:28.727
+a cross-browser way of
+loading in these extra chunks
+
+00:03:28.727 --> 00:03:29.310
+of JavaScript.
+
+00:03:29.310 --> 00:03:30.685
+ADDY OSMANI: Yeah,
+basically, you
+
+00:03:30.685 --> 00:03:33.770
+can configure what you want,
+how it is that you want
+
+00:03:33.770 --> 00:03:35.690
+to split your code base up.
+
+00:03:35.690 --> 00:03:37.480
+And it'll just
+figure out the rest.
+
+00:03:37.480 --> 00:03:38.230
+It's kind of nice.
+
+00:03:38.230 --> 00:03:39.220
+MATT GAUNT: OK.
+
+00:03:39.220 --> 00:03:41.761
+ADDY OSMANI: It also has this
+other feature called Hot Module
+
+00:03:41.761 --> 00:03:42.350
+Replacement.
+
+00:03:42.350 --> 00:03:43.990
+Have you heard of that before?
+
+00:03:43.990 --> 00:03:44.920
+MATT GAUNT: No.
+
+00:03:44.920 --> 00:03:46.128
+ADDY OSMANI: It sounds great.
+
+00:03:46.128 --> 00:03:47.260
+It's HMR.
+
+00:03:47.260 --> 00:03:49.570
+So that's used to
+inject updated modules
+
+00:03:49.570 --> 00:03:50.720
+into your active runtime.
+
+00:03:50.720 --> 00:03:52.800
+So let's say that we
+had like, I don't know,
+
+00:03:52.800 --> 00:03:55.065
+a chart widget of
+some sort that relied
+
+00:03:55.065 --> 00:03:56.775
+on a lot on a bunch
+of different modules.
+
+00:03:56.775 --> 00:03:58.900
+And some of those modules
+ended up getting updated.
+
+00:03:58.900 --> 00:04:00.630
+You could inject
+like the updates
+
+00:04:00.630 --> 00:04:04.230
+into your active running
+runtime and just get it working.
+
+00:04:04.230 --> 00:04:05.230
+MATT GAUNT: Fair enough.
+
+00:04:05.230 --> 00:04:06.050
+ADDY OSMANI: It's kind of cool.
+
+00:04:06.050 --> 00:04:08.520
+It's like live reload for
+every module, sort of.
+
+00:04:08.520 --> 00:04:10.047
+MATT GAUNT: But on live code.
+
+00:04:10.047 --> 00:04:11.255
+ADDY OSMANI: It's extra live.
+
+00:04:11.255 --> 00:04:12.713
+MATT GAUNT:
+[INAUDIBLE] production.
+
+00:04:12.713 --> 00:04:14.306
+ADDY OSMANI: Yeah-- live, live.
+
+00:04:14.306 --> 00:04:15.930
+Using Webpack's pretty
+straightforward.
+
+00:04:15.930 --> 00:04:17.471
+Go in and install
+it globally, run it
+
+00:04:17.471 --> 00:04:19.630
+against your app to go
+and generate a bundle,
+
+00:04:19.630 --> 00:04:21.630
+and then just include
+using some script tags.
+
+00:04:21.630 --> 00:04:22.935
+It's pretty straightforward.
+
+00:04:22.935 --> 00:04:23.310
+MATT GAUNT: Nice.
+
+00:04:23.310 --> 00:04:25.143
+ADDY OSMANI: It's got
+a config file as well.
+
+00:04:25.143 --> 00:04:28.949
+Everything's got to have
+its own config these days.
+
+00:04:28.949 --> 00:04:31.490
+You're probably wondering what
+the difference between Webpack
+
+00:04:31.490 --> 00:04:33.090
+and-- you don't care anymore.
+
+00:04:33.090 --> 00:04:34.976
+You're just dead on the inside.
+
+00:04:34.976 --> 00:04:36.350
+MATT GAUNT: No,
+I can kind of see
+
+00:04:36.350 --> 00:04:37.240
+there being some advantages.
+
+00:04:37.240 --> 00:04:39.120
+But at the same time,
+I don't think I'd ever
+
+00:04:39.120 --> 00:04:42.590
+use the Webpack features.
+
+00:04:42.590 --> 00:04:44.049
+ADDY OSMANI: What's
+wrong with you?
+
+00:04:44.049 --> 00:04:45.965
+MATT GAUNT: Well,
+Browserify just makes sense.
+
+00:04:45.965 --> 00:04:48.610
+And if I can get away with not
+using Browserify, then I would.
+
+00:04:48.610 --> 00:04:49.940
+But I can't, so.
+
+00:04:49.940 --> 00:04:53.100
+ADDY OSMANI: Picking a
+choice between Webpack
+
+00:04:53.100 --> 00:04:54.570
+and Browserify is
+a little bit more
+
+00:04:54.570 --> 00:04:56.971
+nuanced than just saying
+they both do the same thing.
+
+00:04:56.971 --> 00:04:59.470
+If you only care about features,
+it depends on the features.
+
+00:04:59.470 --> 00:05:01.800
+Like if you want the code
+splitting or the hot module
+
+00:05:01.800 --> 00:05:03.830
+replacement, go and use Webpack.
+
+00:05:03.830 --> 00:05:09.200
+Browserify is a little bit
+smaller and more modular,
+
+00:05:09.200 --> 00:05:12.954
+lets you go and select
+plugins, and compose them
+
+00:05:12.954 --> 00:05:13.620
+with transforms.
+
+00:05:13.620 --> 00:05:14.340
+It's nice.
+
+00:05:14.340 --> 00:05:17.630
+Webpack, I would say, brings
+more features to the table,
+
+00:05:17.630 --> 00:05:19.522
+and it puts those in core.
+
+00:05:19.522 --> 00:05:20.980
+But they're both
+pretty extensible.
+
+00:05:20.980 --> 00:05:22.660
+So try them both out.
+
+00:05:22.660 --> 00:05:23.820
+Use whatever makes sense.
+
+00:05:23.820 --> 00:05:24.550
+MATT GAUNT: Yeah.
+
+00:05:24.550 --> 00:05:26.920
+ADDY OSMANI: Moving on,
+Sam Saccone recently
+
+00:05:26.920 --> 00:05:29.900
+put together this repo called
+"The Cost of Transpiing
+
+00:05:29.900 --> 00:05:32.140
+ES2015 to ES2016,"
+and he tried out
+
+00:05:32.140 --> 00:05:36.120
+a whole range of different
+module bundling strategies.
+
+00:05:36.120 --> 00:05:38.780
+He found out that there
+were like some very small
+
+00:05:38.780 --> 00:05:39.870
+differences.
+
+00:05:39.870 --> 00:05:42.700
+Once you start pairing like
+Browserify and Babelify,
+
+00:05:42.700 --> 00:05:47.340
+your web pap configs and other
+bits and pieces, the numbers,
+
+00:05:47.340 --> 00:05:49.360
+they vary slightly.
+
+00:05:49.360 --> 00:05:52.010
+But you don't start really
+seeing huge wins until you
+
+00:05:52.010 --> 00:05:54.060
+try out like Closure or Rollup.
+
+00:05:54.060 --> 00:05:56.190
+Have you tried
+out Rollup before?
+
+00:05:56.190 --> 00:05:58.070
+MATT GAUNT: I vetted
+it now, like because I
+
+00:05:58.070 --> 00:05:59.778
+think we had this
+discussion of why would
+
+00:05:59.778 --> 00:06:03.610
+you need Rollup in a
+Browserify/Babelify world.
+
+00:06:03.610 --> 00:06:05.780
+And it was the tree shaking.
+
+00:06:05.780 --> 00:06:08.730
+ADDY OSMANI: Yeah, so Rollup
+assumes that in some cases
+
+00:06:08.730 --> 00:06:11.550
+that you're going to be probably
+working with the S2015 modules,
+
+00:06:11.550 --> 00:06:13.300
+and it's got this nice
+feature called tree
+
+00:06:13.300 --> 00:06:17.956
+shaking that excludes your
+unused exports from bundles.
+
+00:06:17.956 --> 00:06:22.570
+Webpack 2 beta, I want
+to say, has got support
+
+00:06:22.570 --> 00:06:24.750
+for tree shaking
+as well, if people
+
+00:06:24.750 --> 00:06:27.030
+want to stick with Webpack.
+
+00:06:27.030 --> 00:06:31.570
+But it's a useful feature,
+good for eliminating dead code
+
+00:06:31.570 --> 00:06:34.000
+that you don't really need.
+
+00:06:34.000 --> 00:06:37.470
+I believe Richard Harris has got
+a good blog post on Medium that
+
+00:06:37.470 --> 00:06:40.000
+explains the differences between
+tree shaking and dead code
+
+00:06:40.000 --> 00:06:43.580
+elimination and how all
+that stuff plays out.
+
+00:06:43.580 --> 00:06:44.720
+It's worth checking out.
+
+00:06:44.720 --> 00:06:46.511
+But Rollup's pretty
+straightforward to use.
+
+00:06:46.511 --> 00:06:48.280
+Just go install it
+globally, specify
+
+00:06:48.280 --> 00:06:50.660
+what format you want your
+output bundle to take,
+
+00:06:50.660 --> 00:06:52.330
+whether it's common
+JS or what have you,
+
+00:06:52.330 --> 00:06:54.370
+and it just does its thing.
+
+00:06:54.370 --> 00:06:56.430
+As it turns out,
+Rollup's output's
+
+00:06:56.430 --> 00:06:57.670
+a few kilobytes smaller.
+
+00:06:57.670 --> 00:06:59.586
+I think I read somewhere
+that a few people who
+
+00:06:59.586 --> 00:07:01.044
+are trying the
+stuff out have found
+
+00:07:01.044 --> 00:07:04.340
+like on average they were
+getting 20% or 30% wins using
+
+00:07:04.340 --> 00:07:04.840
+Rollup.
+
+00:07:04.840 --> 00:07:06.290
+That's, again, assuming
+you're playing around
+
+00:07:06.290 --> 00:07:07.249
+with the S2015 modules.
+
+00:07:07.249 --> 00:07:09.581
+MATT GAUNT: But presumably,
+as you use it more and more,
+
+00:07:09.581 --> 00:07:11.930
+the wins might actually grows
+well if more libraries are
+
+00:07:11.930 --> 00:07:14.190
+using S2015.
+
+00:07:14.190 --> 00:07:14.940
+ADDY OSMANI: Yeah.
+
+00:07:14.940 --> 00:07:17.760
+But also, this is a nice
+little visual from Sam.
+
+00:07:17.760 --> 00:07:20.840
+Basically, the tl:dr is Closure
+actually ends up giving you
+
+00:07:20.840 --> 00:07:23.660
+the smallest size if you're
+looking at module bundling
+
+00:07:23.660 --> 00:07:24.160
+stuff.
+
+00:07:24.160 --> 00:07:26.970
+We didn't even talk
+about Closure at all.
+
+00:07:26.970 --> 00:07:29.650
+But people should
+check out this repo.
+
+00:07:29.650 --> 00:07:32.460
+It's a good helper
+for roughly guessing
+
+00:07:32.460 --> 00:07:36.259
+what's going to be useful
+running through its runtime.
+
+00:07:36.259 --> 00:07:38.550
+MATT GAUNT: Yeah, and it's
+nice seeing all the options.
+
+00:07:38.550 --> 00:07:39.980
+I think the thing
+is it comes down
+
+00:07:39.980 --> 00:07:42.140
+to a point of what
+works for your project
+
+00:07:42.140 --> 00:07:47.126
+and is the easiest for you
+to work with, because there's
+
+00:07:47.126 --> 00:07:49.334
+no clear winner on that to
+the point where it's like,
+
+00:07:49.334 --> 00:07:50.833
+oh, if you clearly
+do all this pain,
+
+00:07:50.833 --> 00:07:53.800
+you're going to get to a nice
+clear reduction in file size.
+
+00:07:53.800 --> 00:07:55.870
+It's going to be minimal.
+
+00:07:55.870 --> 00:07:56.590
+ADDY OSMANI: Yes.
+
+00:07:56.590 --> 00:08:00.880
+So if you're not using an "ify"
+tool in your current workflow--
+
+00:08:00.880 --> 00:08:03.090
+well, Webpack doesn't
+have an "ify" in it,
+
+00:08:03.090 --> 00:08:04.524
+until we've got Webpackify.
+
+00:08:04.524 --> 00:08:05.940
+MATT GAUNT: See,
+the saddest thing
+
+00:08:05.940 --> 00:08:09.900
+is I can see it happening
+next week now-- Webpackify.
+
+00:08:09.900 --> 00:08:12.400
+ADDY OSMANI: Well, that's our
+job-- slowly making JavaScript
+
+00:08:12.400 --> 00:08:15.020
+worse on a week-to-week basis.
+

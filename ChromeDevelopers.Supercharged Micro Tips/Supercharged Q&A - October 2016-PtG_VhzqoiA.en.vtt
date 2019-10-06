@@ -1,0 +1,362 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.320 --> 00:00:05.170
+SPEAKER: Hello, and welcome
+to the Supercharged Q&amp;A.
+
+00:00:05.170 --> 00:00:07.100
+On the YouTube
+videos that we do,
+
+00:00:07.100 --> 00:00:09.500
+the most commonly occurring
+question seems to be,
+
+00:00:09.500 --> 00:00:10.894
+what code editor are you using?
+
+00:00:10.894 --> 00:00:12.810
+And I thought, well,
+I'll answer the question.
+
+00:00:12.810 --> 00:00:13.917
+It's fair enough.
+
+00:00:13.917 --> 00:00:15.750
+But before I do, I just
+want to say, for me,
+
+00:00:15.750 --> 00:00:17.060
+it's not a big deal.
+
+00:00:17.060 --> 00:00:20.170
+I used to work-- in a
+former life-- on servers.
+
+00:00:20.170 --> 00:00:22.260
+And I'd get to one
+of the servers,
+
+00:00:22.260 --> 00:00:25.042
+and it would basically
+have no editor whatsoever,
+
+00:00:25.042 --> 00:00:27.000
+and I would just use
+Notepad and fix the thing.
+
+00:00:27.000 --> 00:00:29.720
+So, for me, I come from
+a place where it's just
+
+00:00:29.720 --> 00:00:31.450
+a way to mess around with code.
+
+00:00:31.450 --> 00:00:32.750
+And I like it fairly minimal.
+
+00:00:32.750 --> 00:00:37.670
+I like it to kind of be without
+bells and whistles, I suppose.
+
+00:00:37.670 --> 00:00:39.146
+So with that caveat
+sort of said,
+
+00:00:39.146 --> 00:00:41.020
+let's actually have a
+look at what I'm using.
+
+00:00:41.020 --> 00:00:43.340
+Now, in my case, I am
+using Visual Studio Code,
+
+00:00:43.340 --> 00:00:46.350
+which I recently switched to
+and which I think is brilliant.
+
+00:00:46.350 --> 00:00:47.070
+I love it.
+
+00:00:47.070 --> 00:00:49.470
+Let me show you around a
+couple of things that I think
+
+00:00:49.470 --> 00:00:51.140
+are really good about it.
+
+00:00:51.140 --> 00:00:53.880
+Let's say I've got this send
+event function in my code.
+
+00:00:53.880 --> 00:00:57.090
+If I say new custom event or
+something like that, which
+
+00:00:57.090 --> 00:00:59.670
+is part of the web
+platform, it will tell me
+
+00:00:59.670 --> 00:01:01.270
+what I should be
+putting in there.
+
+00:01:01.270 --> 00:01:03.320
+So it says-- there's
+a string that
+
+00:01:03.320 --> 00:01:06.012
+is the name or the type
+of the event that it is.
+
+00:01:06.012 --> 00:01:07.970
+So I can just do, I want
+the name of the event.
+
+00:01:07.970 --> 00:01:08.886
+That's going to do it.
+
+00:01:08.886 --> 00:01:11.560
+And then I can use a
+dictionary for all the stuff
+
+00:01:11.560 --> 00:01:14.530
+that I need in there, like
+bubbles, true, and stuff.
+
+00:01:14.530 --> 00:01:17.450
+So, for me, the
+fact that it's going
+
+00:01:17.450 --> 00:01:20.120
+to start recommending
+what I should actually
+
+00:01:20.120 --> 00:01:24.010
+put into these as parameters,
+for me, that's a huge deal.
+
+00:01:24.010 --> 00:01:25.800
+I think that's
+incredibly helpful.
+
+00:01:25.800 --> 00:01:28.470
+It saves me having to go
+off and do reference type
+
+00:01:28.470 --> 00:01:29.630
+stuff all the time.
+
+00:01:29.630 --> 00:01:31.130
+The other thing is
+you see here I've
+
+00:01:31.130 --> 00:01:34.230
+got the red line
+under New, and that's
+
+00:01:34.230 --> 00:01:38.100
+because I've actually got a
+bunch of extensions installed,
+
+00:01:38.100 --> 00:01:39.360
+one of which is ESLint.
+
+00:01:39.360 --> 00:01:41.832
+In fact, let's just talk
+about the extensions
+
+00:01:41.832 --> 00:01:42.540
+I have installed.
+
+00:01:42.540 --> 00:01:46.100
+I have editor config,
+which is a very good way
+
+00:01:46.100 --> 00:01:50.180
+of setting what the
+project's settings are
+
+00:01:50.180 --> 00:01:51.060
+that you want to use.
+
+00:01:51.060 --> 00:01:54.990
+So in my case, this is the
+Supercharged code that we do,
+
+00:01:54.990 --> 00:01:57.770
+server and I. The editor
+config is fairly lightweight.
+
+00:01:57.770 --> 00:01:59.530
+We indent with
+spaces, two spaces.
+
+00:01:59.530 --> 00:02:01.363
+There's a little fight
+that we can all have,
+
+00:02:01.363 --> 00:02:04.360
+tabs versus spaces.
+
+00:02:04.360 --> 00:02:06.480
+Whichever works for you.
+
+00:02:06.480 --> 00:02:09.500
+The character set, trim,
+trailing whitespace,
+
+00:02:09.500 --> 00:02:10.729
+and insert final new lines.
+
+00:02:10.729 --> 00:02:13.579
+So, basically, this is,
+like, project-wide settings
+
+00:02:13.579 --> 00:02:14.370
+that I want to use.
+
+00:02:14.370 --> 00:02:16.970
+So that's a really
+handy little extension.
+
+00:02:16.970 --> 00:02:19.980
+ESLint is the other one, and
+that's why that code is red,
+
+00:02:19.980 --> 00:02:22.650
+because I basically do not
+use New for side effects while
+
+00:02:22.650 --> 00:02:24.650
+I'm-- just because I'm
+not assigned to anything.
+
+00:02:24.650 --> 00:02:26.710
+So event equals that.
+
+00:02:26.710 --> 00:02:29.330
+And then I can just-- now it's
+saying, you didn't use event,
+
+00:02:29.330 --> 00:02:30.402
+so there we go.
+
+00:02:30.402 --> 00:02:31.360
+So I'll just send that.
+
+00:02:31.360 --> 00:02:31.901
+There you go.
+
+00:02:31.901 --> 00:02:33.820
+And there's my function
+actually finished.
+
+00:02:33.820 --> 00:02:36.270
+That's really nice, and now
+I know there are no errors.
+
+00:02:36.270 --> 00:02:38.449
+And so for me, the
+linting-- built in linting--
+
+00:02:38.449 --> 00:02:40.740
+and, again, you can get that
+with virtually any editor,
+
+00:02:40.740 --> 00:02:42.057
+so that's cool.
+
+00:02:42.057 --> 00:02:44.640
+And then, last, I'll mention the
+document list, which, for me,
+
+00:02:44.640 --> 00:02:45.806
+is also a nice little thing.
+
+00:02:45.806 --> 00:02:47.590
+If I just do that,
+then it starts
+
+00:02:47.590 --> 00:02:52.475
+to fill in the
+[? JSdoc ?] for me there.
+
+00:02:52.475 --> 00:02:55.040
+And it's saying param is that,
+but I would say it's a string,
+
+00:02:55.040 --> 00:02:56.490
+so that's fine.
+
+00:02:56.490 --> 00:02:58.460
+Sends a custom event.
+
+00:02:58.460 --> 00:03:01.500
+You see how grown up I'm being?
+
+00:03:01.500 --> 00:03:03.392
+I'm documenting my code.
+
+00:03:03.392 --> 00:03:04.350
+What's wrong with that?
+
+00:03:04.350 --> 00:03:05.370
+Absolutely nothing.
+
+00:03:05.370 --> 00:03:06.210
+So there you go.
+
+00:03:06.210 --> 00:03:09.407
+That is as much as I
+actually have in my editor.
+
+00:03:09.407 --> 00:03:11.740
+I mean, there are loads of
+other things, as we all know,
+
+00:03:11.740 --> 00:03:14.090
+that you can add, but, for
+me, that's the minimal thing.
+
+00:03:14.090 --> 00:03:14.960
+I like the checking.
+
+00:03:14.960 --> 00:03:17.760
+I like this sort
+of code completion,
+
+00:03:17.760 --> 00:03:20.340
+suggestions stuff that you get.
+
+00:03:20.340 --> 00:03:23.230
+And so, I mean, I recommend
+it, but I'd recommend
+
+00:03:23.230 --> 00:03:24.690
+Atom, as well, and Sublime.
+
+00:03:24.690 --> 00:03:26.330
+They're all very good.
+
+00:03:26.330 --> 00:03:27.830
+So pick whichever
+one works for you.
+
+00:03:27.830 --> 00:03:29.200
+But thanks for the questions.
+
+00:03:29.200 --> 00:03:32.470
+Hopefully, now that
+puts that one to rest.
+
+00:03:32.470 --> 00:03:35.270
+And I'll catch you--
+probably with [INAUDIBLE],
+
+00:03:35.270 --> 00:03:38.830
+because he'll be showing up
+at some point-- next time.
+

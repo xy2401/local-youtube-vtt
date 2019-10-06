@@ -1,0 +1,780 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.908
+[MUSIC PLAYING]
+
+00:00:09.282 --> 00:00:10.740
+SPEAKER 1: Hey
+look, so today we're
+
+00:00:10.740 --> 00:00:13.260
+going to talk about keeping an
+eye on your JavaScript bundle
+
+00:00:13.260 --> 00:00:13.790
+size.
+
+00:00:13.790 --> 00:00:15.070
+SPEAKER 2: Very, very important.
+
+00:00:15.070 --> 00:00:17.355
+We've already been hit on
+that by a number of projects.
+
+00:00:17.355 --> 00:00:18.688
+SPEAKER 1: A number of projects.
+
+00:00:18.688 --> 00:00:21.660
+So there are a few different
+ways that you can do this.
+
+00:00:21.660 --> 00:00:24.524
+If your project's
+on GitHub and you
+
+00:00:24.524 --> 00:00:26.440
+care about things like
+continuous integration,
+
+00:00:26.440 --> 00:00:27.990
+there's a nice
+little package called
+
+00:00:27.990 --> 00:00:29.576
+Bundle Size you can drop in.
+
+00:00:29.576 --> 00:00:32.159
+SPEAKER 2: It's also a CLI, so
+you can use it locally as well.
+
+00:00:32.159 --> 00:00:33.084
+SPEAKER 1: Also CLI.
+
+00:00:33.084 --> 00:00:34.500
+And the idea behind
+Bundle Size is
+
+00:00:34.500 --> 00:00:36.840
+that once you've got it
+configured, you can say well,
+
+00:00:36.840 --> 00:00:37.980
+I've got these bundles.
+
+00:00:37.980 --> 00:00:39.230
+I've got like a vendor bundle.
+
+00:00:39.230 --> 00:00:41.320
+I've got my main
+application and logic ones.
+
+00:00:41.320 --> 00:00:44.580
+And I don't want those bundles
+to exceed a certain size.
+
+00:00:44.580 --> 00:00:47.910
+And so if people are filing
+PRs against your project,
+
+00:00:47.910 --> 00:00:50.070
+it's very easy to see
+where they're falling off,
+
+00:00:50.070 --> 00:00:53.170
+tell them hey, this is crossing
+our budget for JavaScript
+
+00:00:53.170 --> 00:00:55.309
+bundle size, please
+make your code smaller.
+
+00:00:55.309 --> 00:00:56.850
+SPEAKER 2: The nice
+thing is, well, I
+
+00:00:56.850 --> 00:01:00.060
+think it actually reports
+like what the PR size would
+
+00:01:00.060 --> 00:01:02.760
+be in terms of a particular--
+like this file is this size,
+
+00:01:02.760 --> 00:01:03.420
+this file is this size.
+
+00:01:03.420 --> 00:01:05.220
+Even if you're not
+reaching your threshold,
+
+00:01:05.220 --> 00:01:06.270
+maybe you could
+say actually this
+
+00:01:06.270 --> 00:01:08.340
+is a huge jump compared
+to what I saw last PR.
+
+00:01:10.900 --> 00:01:13.150
+The other side, it doesn't
+have to be a bundle, right?
+
+00:01:13.150 --> 00:01:14.700
+Like you could just say
+this JavaScript file,
+
+00:01:14.700 --> 00:01:15.410
+what size is it.
+
+00:01:15.410 --> 00:01:16.034
+SPEAKER 1: Yeah
+
+00:01:16.034 --> 00:01:16.890
+SPEAKER 2: Yeah.
+
+00:01:16.890 --> 00:01:17.490
+Just checking.
+
+00:01:17.490 --> 00:01:18.300
+SPEAKER 1: No, it's all good.
+
+00:01:18.300 --> 00:01:19.084
+It's pretty nice.
+
+00:01:19.084 --> 00:01:21.000
+And it works off of
+[INAUDIBLE] sizes as well.
+
+00:01:21.000 --> 00:01:25.224
+So you get a picture into what
+the final size might look like.
+
+00:01:25.224 --> 00:01:25.890
+SPEAKER 2: Nice.
+
+00:01:25.890 --> 00:01:28.380
+SPEAKER 1: So Bundle Size
+took me like only 10 minutes
+
+00:01:28.380 --> 00:01:30.810
+to set up on one of my
+apps, fairly low friction,
+
+00:01:30.810 --> 00:01:32.620
+mostly works off your
+package.JSON file.
+
+00:01:32.620 --> 00:01:34.020
+Folks, check it out.
+
+00:01:34.020 --> 00:01:36.250
+You've been looking at
+some of the stuff too.
+
+00:01:36.250 --> 00:01:38.640
+SPEAKER 2: Yeah, so
+with Workbox we kind of
+
+00:01:38.640 --> 00:01:40.519
+have a file size
+kind of concern.
+
+00:01:40.519 --> 00:01:42.810
+And we've been trying to
+figure out how we can actually
+
+00:01:42.810 --> 00:01:45.462
+stay on top of it because we
+kind of did all this work,
+
+00:01:45.462 --> 00:01:46.420
+we released this thing.
+
+00:01:46.420 --> 00:01:48.340
+And now we're like, cool,
+what is the actual file
+
+00:01:48.340 --> 00:01:48.881
+size of this.
+
+00:01:48.881 --> 00:01:50.890
+And it's not where
+we'd like it to be.
+
+00:01:50.890 --> 00:01:53.140
+So we're working on
+a rewrite and part
+
+00:01:53.140 --> 00:01:56.250
+of that is let's get it into
+RCIs so that way we can just,
+
+00:01:56.250 --> 00:01:59.580
+whenever we do a PR, what is the
+current size, what is it now.
+
+00:01:59.580 --> 00:02:01.560
+And it's super nice,
+the idea I think
+
+00:02:01.560 --> 00:02:04.920
+we took from Mohsen at
+Lyft, where he's actually
+
+00:02:04.920 --> 00:02:07.590
+like written a little
+bot that would say,
+
+00:02:07.590 --> 00:02:08.910
+this is the change for this PR.
+
+00:02:08.910 --> 00:02:09.618
+Has it gone down?
+
+00:02:09.618 --> 00:02:10.770
+Has it gone up?
+
+00:02:10.770 --> 00:02:14.040
+And started flagging thresholds
+around the percentage
+
+00:02:14.040 --> 00:02:16.000
+of increase or decrease.
+
+00:02:16.000 --> 00:02:18.256
+So I've been making my
+own little bot thing
+
+00:02:18.256 --> 00:02:20.880
+so we can do the same thing, and
+maybe some additional stuff as
+
+00:02:20.880 --> 00:02:22.050
+well, with little plug-ins.
+
+00:02:22.050 --> 00:02:23.633
+The idea is just to
+help with tracking
+
+00:02:23.633 --> 00:02:26.310
+like what is master, what
+is this pull request doing,
+
+00:02:26.310 --> 00:02:28.452
+and then adding those
+similar sort of thresholds.
+
+00:02:28.452 --> 00:02:29.160
+SPEAKER 1: Great.
+
+00:02:29.160 --> 00:02:30.480
+And one of the nice
+things about that is it's
+
+00:02:30.480 --> 00:02:32.670
+able to show you the
+before and after cost
+
+00:02:32.670 --> 00:02:34.584
+for every single file.
+
+00:02:34.584 --> 00:02:35.250
+SPEAKER 2: Yeah.
+
+00:02:35.250 --> 00:02:38.089
+Like, I don't know,
+I think Mohsen's one
+
+00:02:38.089 --> 00:02:39.630
+was the first one
+where I've actually
+
+00:02:39.630 --> 00:02:42.060
+seen it was like, oh, that
+actually totally makes sense.
+
+00:02:42.060 --> 00:02:43.393
+You should definitely have that.
+
+00:02:43.393 --> 00:02:45.639
+And everyone should just
+have it in their CI.
+
+00:02:45.639 --> 00:02:47.430
+SPEAKER 1: I would love
+to see more people,
+
+00:02:47.430 --> 00:02:49.680
+like more teams integrating
+this into their workflow.
+
+00:02:49.680 --> 00:02:51.330
+I just think it's really tight.
+
+00:02:51.330 --> 00:02:53.280
+And another thing Lyft
+had been doing is,
+
+00:02:53.280 --> 00:02:55.220
+so we talked about
+Lighthouse and CI
+
+00:02:55.220 --> 00:02:57.960
+in one of our last
+episodes, they're
+
+00:02:57.960 --> 00:03:00.030
+combining sort of
+bundle size impact
+
+00:03:00.030 --> 00:03:02.830
+measurement with Lighthouse
+measurements as well.
+
+00:03:02.830 --> 00:03:04.710
+So keep an eye on
+all their fronts,
+
+00:03:04.710 --> 00:03:05.880
+just kind of nice to see.
+
+00:03:05.880 --> 00:03:07.379
+SPEAKER 2: It's
+almost as if there's
+
+00:03:07.379 --> 00:03:09.570
+a tool that would take
+plug-ins and run it on GitHub
+
+00:03:09.570 --> 00:03:11.165
+would just be super
+useful right now.
+
+00:03:11.165 --> 00:03:11.998
+SPEAKER 1: It would.
+
+00:03:11.998 --> 00:03:13.210
+It would.
+
+00:03:13.210 --> 00:03:15.660
+So another thing you can do
+if you're locally developing
+
+00:03:15.660 --> 00:03:18.830
+is we worked on this
+feature with Webpack
+
+00:03:18.830 --> 00:03:20.430
+called Performance Budgets.
+
+00:03:20.430 --> 00:03:23.820
+And the idea is that you're
+able to set the budgets that you
+
+00:03:23.820 --> 00:03:27.220
+want you and your team to follow
+for your different bundles.
+
+00:03:27.220 --> 00:03:29.490
+So by default, Webpack
+uses a bundle size
+
+00:03:29.490 --> 00:03:31.604
+of about 250 kilobytes.
+
+00:03:31.604 --> 00:03:34.020
+Your team might have something
+a little bit more specific,
+
+00:03:34.020 --> 00:03:35.670
+little bit smaller,
+little bit larger.
+
+00:03:35.670 --> 00:03:38.010
+But this feature is just
+great for every time you're
+
+00:03:38.010 --> 00:03:39.090
+working on a change,
+you're trying
+
+00:03:39.090 --> 00:03:40.860
+to do a local build, just
+being able to make sure
+
+00:03:40.860 --> 00:03:43.590
+that you're not exceeding your
+team's budgets quite as much
+
+00:03:43.590 --> 00:03:44.257
+as you could be.
+
+00:03:44.257 --> 00:03:46.214
+SPEAKER 2: So this would
+do this at build time.
+
+00:03:46.214 --> 00:03:47.880
+And presumably-- does
+it throw an error
+
+00:03:47.880 --> 00:03:50.020
+or does it still let
+you build and deploy,
+
+00:03:50.020 --> 00:03:52.380
+but it's just flagging
+it as an issue?
+
+00:03:52.380 --> 00:03:54.000
+SPEAKER 1: So it
+can do a warning.
+
+00:03:54.000 --> 00:03:56.208
+It can also throw it as an
+error is my understanding.
+
+00:03:56.208 --> 00:03:59.340
+So you've got your
+bases covered there.
+
+00:03:59.340 --> 00:04:01.870
+So that's Wepack's
+Performance Budget features.
+
+00:04:01.870 --> 00:04:03.870
+Something we saw this
+week that was kind of neat
+
+00:04:03.870 --> 00:04:07.350
+was another tool called-- it's
+a plug-in for Visual Studio
+
+00:04:07.350 --> 00:04:12.297
+Code called the VS Code
+Import Cost Extension.
+
+00:04:12.297 --> 00:04:14.130
+And one of the really
+nice things about this
+
+00:04:14.130 --> 00:04:16.260
+is that it can display
+in line in your editor
+
+00:04:16.260 --> 00:04:18.637
+as you're working on your
+code like the cost of imports
+
+00:04:18.637 --> 00:04:19.720
+as you're working on them.
+
+00:04:19.720 --> 00:04:20.700
+So it shows you
+like a little bit
+
+00:04:20.700 --> 00:04:22.680
+of a comment at the
+very end of a line that
+
+00:04:22.680 --> 00:04:24.702
+says like [INAUDIBLE]
+is 70 kilobytes.
+
+00:04:24.702 --> 00:04:26.160
+SPEAKER 2: I was
+going to say, this
+
+00:04:26.160 --> 00:04:28.590
+is like highlighting the
+issue that we flagged up
+
+00:04:28.590 --> 00:04:31.740
+a couple of episodes ago around
+using particular plug-ins
+
+00:04:31.740 --> 00:04:33.960
+to help you get around
+certain file size things.
+
+00:04:33.960 --> 00:04:35.334
+And this is a
+really nice example
+
+00:04:35.334 --> 00:04:38.760
+where it actually flags it
+like right in your editor which
+
+00:04:38.760 --> 00:04:39.330
+is awesome.
+
+00:04:39.330 --> 00:04:41.190
+SPEAKER 1: And this is running
+like the [INAUDIBLE] Webpack
+
+00:04:41.190 --> 00:04:42.273
+plug-in behind the scenes.
+
+00:04:42.273 --> 00:04:45.870
+So it's for ES module
+style packages,
+
+00:04:45.870 --> 00:04:47.430
+it's going to at
+least be giving you
+
+00:04:47.430 --> 00:04:49.500
+an approximate for what
+the minified size is
+
+00:04:49.500 --> 00:04:50.707
+going to look like.
+
+00:04:50.707 --> 00:04:53.040
+We've also been talking to
+them about maybe highlighting
+
+00:04:53.040 --> 00:04:56.064
+the [INAUDIBLE] size, but it's
+still a good gut check for now.
+
+00:04:56.064 --> 00:04:56.730
+SPEAKER 2: Yeah.
+
+00:04:56.730 --> 00:04:57.271
+I don't know.
+
+00:04:57.271 --> 00:04:59.740
+I think anything where it
+immediately makes you think,
+
+00:04:59.740 --> 00:05:02.354
+OK, I'm about to require
+this third party module,
+
+00:05:02.354 --> 00:05:03.770
+it's instantly
+like, well, this is
+
+00:05:03.770 --> 00:05:07.010
+the hit you're incurring
+from that, which
+
+00:05:07.010 --> 00:05:08.310
+is really nice, really useful.
+
+00:05:08.310 --> 00:05:10.120
+SPEAKER 1: So we talked
+about continuous integration.
+
+00:05:10.120 --> 00:05:12.090
+We talked about what
+you can do locally.
+
+00:05:12.090 --> 00:05:14.180
+Another thing folks
+might benefit from
+
+00:05:14.180 --> 00:05:16.460
+is being able to measure
+like in production
+
+00:05:16.460 --> 00:05:19.280
+what the impact of their
+bundle sizes are over time.
+
+00:05:19.280 --> 00:05:22.999
+Two good services for this
+are Speedcurve and Caliber.
+
+00:05:22.999 --> 00:05:25.040
+SPEAKER 2: These are kind
+of tools where you say,
+
+00:05:25.040 --> 00:05:25.850
+this is my website.
+
+00:05:25.850 --> 00:05:28.260
+And they'll keep on pinging
+it on a regular basis, run
+
+00:05:28.260 --> 00:05:30.260
+a load of tests on them,
+and then kind of report
+
+00:05:30.260 --> 00:05:31.170
+on an ongoing basis.
+
+00:05:31.170 --> 00:05:31.670
+Right?
+
+00:05:31.670 --> 00:05:32.628
+SPEAKER 1: Pretty much.
+
+00:05:32.628 --> 00:05:33.290
+Yeah.
+
+00:05:33.290 --> 00:05:35.120
+So one of the nice
+things about Caliber
+
+00:05:35.120 --> 00:05:37.347
+is that you're able to
+specify your target devices.
+
+00:05:37.347 --> 00:05:39.305
+You can say, well, yeah,
+I'm targeting desktop.
+
+00:05:39.305 --> 00:05:41.030
+I'm targeting these
+mobile devices.
+
+00:05:41.030 --> 00:05:43.662
+And it'll be able to show you
+your bundle size over time,
+
+00:05:43.662 --> 00:05:45.995
+like your JavaScript that
+you're sending down to people.
+
+00:05:45.995 --> 00:05:47.960
+SPEAKER 2: So that's
+super handy if you're
+
+00:05:47.960 --> 00:05:51.140
+like basically sending
+down different assets based
+
+00:05:51.140 --> 00:05:53.379
+on media queries or user
+agents or what have you.
+
+00:05:53.379 --> 00:05:54.170
+SPEAKER 1: Exactly.
+
+00:05:54.170 --> 00:05:54.815
+SPEAKER 2: Nice.
+
+00:05:54.815 --> 00:05:56.300
+SPEAKER 1: So if a
+member of your team
+
+00:05:56.300 --> 00:05:57.966
+accidentally pushes
+out a feature that's
+
+00:05:57.966 --> 00:06:01.180
+got a lot of JavaScript in there
+that's going to decrease time
+
+00:06:01.180 --> 00:06:03.725
+to interactive, have an impact
+on your page performance--
+
+00:06:03.725 --> 00:06:05.930
+SPEAKER 2: Or if they push
+out a pull request that
+
+00:06:05.930 --> 00:06:08.190
+means that everything is way
+faster because the bundle
+
+00:06:08.190 --> 00:06:09.130
+size is smaller.
+
+00:06:09.130 --> 00:06:09.880
+Let's be positive.
+
+00:06:09.880 --> 00:06:10.570
+SPEAKER 1: Yeah.
+
+00:06:10.570 --> 00:06:11.070
+Yeah.
+
+00:06:11.070 --> 00:06:11.720
+That as well.
+
+00:06:11.720 --> 00:06:14.180
+Good way to see
+both wins and places
+
+00:06:14.180 --> 00:06:16.490
+where you should probably cry.
+
+00:06:16.490 --> 00:06:19.020
+But Caliber's really great
+for checking that stuff out.
+
+00:06:19.020 --> 00:06:21.650
+So hopefully folks have
+got their bases covered.
+
+00:06:21.650 --> 00:06:24.244
+If they want to check the stuff
+out locally, they've got it.
+
+00:06:24.244 --> 00:06:25.410
+SPEAKER 2: They got the CLI.
+
+00:06:25.410 --> 00:06:26.660
+They got the pull requests.
+
+00:06:26.660 --> 00:06:30.320
+And then they've got actual
+production regular testing.
+
+00:06:30.320 --> 00:06:33.650
+And it's worth saying it's
+worth doing this stuff upfront,
+
+00:06:33.650 --> 00:06:35.210
+because a little
+bit of effort now
+
+00:06:35.210 --> 00:06:37.370
+should help you in the
+long term because it's just
+
+00:06:37.370 --> 00:06:38.712
+regular tracking.
+
+00:06:38.712 --> 00:06:39.670
+There's no babysitting.
+
+00:06:39.670 --> 00:06:41.320
+It's just letting you
+know of these things,
+
+00:06:41.320 --> 00:06:42.740
+so you should definitely
+check these tools out.
+
+00:06:42.740 --> 00:06:43.760
+SPEAKER 1: Yeah.
+
+00:06:43.760 --> 00:06:45.500
+These tools are
+awesome for helping.
+
+00:06:45.500 --> 00:06:47.541
+Just make sure you're
+shipping the minimal amount
+
+00:06:47.541 --> 00:06:49.940
+of JavaScript to your users
+to [INAUDIBLE] that work
+
+00:06:49.940 --> 00:06:51.380
+until a later point in time.
+
+00:06:51.380 --> 00:06:52.540
+But, yeah, try them out.
+
+00:06:52.540 --> 00:06:53.665
+Let us know what you think.
+
+00:06:53.665 --> 00:06:55.220
+SPEAKER 2: Thanks
+

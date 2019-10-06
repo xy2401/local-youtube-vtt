@@ -1,0 +1,419 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.550
+[SCATTERED APPLAUSE]
+
+00:00:02.550 --> 00:00:04.620
+PETE LEPAGE: It's been
+10 years since Chrome
+
+00:00:04.620 --> 00:00:05.970
+was first released.
+
+00:00:05.970 --> 00:00:07.680
+A lot has changed since then.
+
+00:00:07.680 --> 00:00:10.410
+But our goal of
+providing a great,
+
+00:00:10.410 --> 00:00:14.610
+solid platform for building
+modern web applications hasn't.
+
+00:00:14.610 --> 00:00:18.480
+In Chrome 69, there is support
+for CSS scroll snapping,
+
+00:00:18.480 --> 00:00:21.570
+support for notches,
+support for web locks,
+
+00:00:21.570 --> 00:00:24.420
+and a few new CSS 4 features.
+
+00:00:24.420 --> 00:00:25.470
+I'm Pete LePage.
+
+00:00:25.470 --> 00:00:27.690
+Let's dive in, and see
+what's new for developers
+
+00:00:27.690 --> 00:00:29.729
+on What's New in Chrome 69.
+
+00:00:29.729 --> 00:00:30.812
+[INDIE FOLK MUSIC PLAYING]
+
+00:00:30.812 --> 00:00:31.812
+[CHAMPAGNE CORK POPPING]
+
+00:00:31.812 --> 00:00:33.800
+[CHAMPAGNE POURING]
+
+00:00:33.800 --> 00:00:35.294
+[GLASSES CLINKING]
+
+00:00:39.776 --> 00:00:40.772
+[FIREWORKS BANG]
+
+00:00:40.772 --> 00:00:42.266
+[FIREWORKS WHISTLING]
+
+00:00:42.266 --> 00:00:43.760
+[CHEERING]
+
+00:00:46.250 --> 00:00:50.060
+CSS Scroll Snap allows e to
+create smooth, slick scrolling
+
+00:00:50.060 --> 00:00:53.510
+experiences by declaring
+scroll snap positions that
+
+00:00:53.510 --> 00:00:57.890
+tell the browser where to stop
+after each scrolling operation.
+
+00:00:57.890 --> 00:01:00.380
+This is super helpful
+for image carousels
+
+00:01:00.380 --> 00:01:03.110
+or paginated sections,
+where you want the user
+
+00:01:03.110 --> 00:01:05.870
+to scroll to a specific point.
+
+00:01:05.870 --> 00:01:10.850
+For an image carousel, I'd add
+Scroll Snap type x mandatory
+
+00:01:10.850 --> 00:01:14.990
+to the scroll container,
+and scroll-snap-align center
+
+00:01:14.990 --> 00:01:16.370
+to each image.
+
+00:01:16.370 --> 00:01:19.340
+Then, as the user scrolls
+through the carousel,
+
+00:01:19.340 --> 00:01:21.410
+each image will be
+smoothly scrolled
+
+00:01:21.410 --> 00:01:23.500
+into the perfect position.
+
+00:01:23.500 --> 00:01:26.240
+CSS Scroll snapping
+works well, even when
+
+00:01:26.240 --> 00:01:28.730
+targets have different
+sizes or when they're
+
+00:01:28.730 --> 00:01:30.800
+larger than the scroller.
+
+00:01:30.800 --> 00:01:33.680
+Check out the updates post for
+more details and some samples
+
+00:01:33.680 --> 00:01:35.330
+that you can try.
+
+00:01:35.330 --> 00:01:37.520
+There are an increasing
+number of mobile devices
+
+00:01:37.520 --> 00:01:41.480
+being released with a display
+cutout, sometimes called notch.
+
+00:01:41.480 --> 00:01:44.080
+To deal with the notch,
+browsers add a little bit
+
+00:01:44.080 --> 00:01:46.850
+of extra margin to your
+page so that the content
+
+00:01:46.850 --> 00:01:48.230
+isn't obscured.
+
+00:01:48.230 --> 00:01:50.990
+But what if you want
+to use that space?
+
+00:01:50.990 --> 00:01:54.710
+With CSS environment variables
+and the viewport-fit meta tag,
+
+00:01:54.710 --> 00:01:56.040
+now you can.
+
+00:01:56.040 --> 00:01:59.360
+For example, to tell the browser
+to expand into the display
+
+00:01:59.360 --> 00:02:02.450
+cutout area, set the
+viewport-fit property
+
+00:02:02.450 --> 00:02:04.790
+and the viewport
+meta tag to cover.
+
+00:02:04.790 --> 00:02:09.020
+You can then use the safe area
+inset CSS environment variables
+
+00:02:09.020 --> 00:02:11.009
+to lay out your content.
+
+00:02:11.009 --> 00:02:12.860
+It's important to
+test this well.
+
+00:02:12.860 --> 00:02:14.570
+Remember, you're
+telling the browser
+
+00:02:14.570 --> 00:02:16.910
+that it's OK if
+some of your content
+
+00:02:16.910 --> 00:02:19.790
+gets hidden behind
+the display cutout.
+
+00:02:19.790 --> 00:02:23.000
+And don't forget to test this
+both in portrait and landscape
+
+00:02:23.000 --> 00:02:24.110
+mode.
+
+00:02:24.110 --> 00:02:27.440
+There is a great post on the
+"WebKit" blog about designing
+
+00:02:27.440 --> 00:02:30.950
+for iPhone 10, or check
+out the explainer or spec
+
+00:02:30.950 --> 00:02:32.150
+for more details.
+
+00:02:32.150 --> 00:02:35.060
+All of these are linked
+in the description.
+
+00:02:35.060 --> 00:02:39.170
+The Web Locks API allows you to
+asynchronously acquire a lock,
+
+00:02:39.170 --> 00:02:42.100
+hold it while work is
+performed, then release it.
+
+00:02:42.100 --> 00:02:45.200
+While the lock is held, no
+other script in the origin
+
+00:02:45.200 --> 00:02:48.140
+can acquire the same lock,
+helping to coordinate
+
+00:02:48.140 --> 00:02:50.250
+the usage of shared resources.
+
+00:02:50.250 --> 00:02:53.390
+For example, if a web app
+running in multiple tabs
+
+00:02:53.390 --> 00:02:56.900
+wants to ensure that only one
+tab is syncing to the network,
+
+00:02:56.900 --> 00:03:00.110
+the sync code would attempt to
+acquire a lock named network
+
+00:03:00.110 --> 00:03:01.340
+sync lock.
+
+00:03:01.340 --> 00:03:03.410
+The first tab to
+acquire the lock
+
+00:03:03.410 --> 00:03:05.420
+will sync the data
+to the network.
+
+00:03:05.420 --> 00:03:08.150
+If another tab tries to
+acquire the same lock,
+
+00:03:08.150 --> 00:03:09.440
+it will be queued.
+
+00:03:09.440 --> 00:03:12.920
+Once the lock has been released,
+the next queued request
+
+00:03:12.920 --> 00:03:15.420
+will be granted the
+lock, and execute.
+
+00:03:15.420 --> 00:03:18.170
+MDN has a great primer
+on using Web Locks,
+
+00:03:18.170 --> 00:03:20.750
+and includes a more
+in-depth explanation
+
+00:03:20.750 --> 00:03:24.260
+with lots of examples, linked
+in the description below.
+
+00:03:24.260 --> 00:03:26.570
+These are just a few of
+the changes in Chrome 69
+
+00:03:26.570 --> 00:03:27.540
+for developers.
+
+00:03:27.540 --> 00:03:29.570
+Of course, there's plenty more.
+
+00:03:29.570 --> 00:03:33.410
+From the CSS 4 spec, you can
+now create color transitions
+
+00:03:33.410 --> 00:03:37.045
+around the circumference of a
+circle using conic gradients.
+
+00:03:37.045 --> 00:03:40.430
+Lea Verou has a great page
+with examples and a polyfill
+
+00:03:40.430 --> 00:03:42.260
+that you can use
+for other browsers
+
+00:03:42.260 --> 00:03:44.240
+until it's available there.
+
+00:03:44.240 --> 00:03:47.390
+There's a new toggle
+attribute method on Elements
+
+00:03:47.390 --> 00:03:49.640
+that toggles the
+existence of an attribute,
+
+00:03:49.640 --> 00:03:52.220
+similar to a classList.toggle.
+
+00:03:52.220 --> 00:03:54.620
+JavaScript arrays are
+getting two new methods,
+
+00:03:54.620 --> 00:03:56.330
+flat and flatMap.
+
+00:03:56.330 --> 00:03:59.530
+They return a new array with
+all the sub-array elements
+
+00:03:59.530 --> 00:04:01.250
+smushed into it.
+
+00:04:01.250 --> 00:04:05.300
+And offscreenCanvas moves
+the work off the main thread
+
+00:04:05.300 --> 00:04:07.340
+into a worker,
+helping to eliminate
+
+00:04:07.340 --> 00:04:09.530
+performance bottlenecks.
+
+00:04:09.530 --> 00:04:12.230
+All the details,
+including docs and specs,
+
+00:04:12.230 --> 00:04:14.870
+are in the updates post
+linked in the description.
+
+00:04:14.870 --> 00:04:17.120
+And be sure to click
+the Subscribe button,
+
+00:04:17.120 --> 00:04:18.890
+and you'll get an
+email notification
+
+00:04:18.890 --> 00:04:20.930
+whenever we launch a new video.
+
+00:04:20.930 --> 00:04:22.370
+Happy 10th birthday, Chrome.
+
+00:04:22.370 --> 00:04:23.820
+I'm Pete LePage.
+
+00:04:23.820 --> 00:04:27.500
+Here's to the future, and
+an even more capable web.
+
+00:04:27.500 --> 00:04:28.760
+Ooh, cake.
+
+00:04:28.760 --> 00:04:29.867
+See you next time.
+
+00:04:29.867 --> 00:04:30.950
+[INDIE FOLK MUSIC PLAYING]
+
+00:04:30.950 --> 00:04:31.930
+[FIREWORKS EXPLODING]
+
+00:04:31.930 --> 00:04:33.400
+[FIREWORKS WHISTLING]
+
+00:04:33.400 --> 00:04:34.870
+[CHEERING]
+
+00:04:38.800 --> 00:04:39.900
+You still watching?
+
+00:04:39.900 --> 00:04:40.650
+This is good cake.
+
+00:04:43.990 --> 00:04:44.700
+Sorry, guys.
+
+00:04:44.700 --> 00:04:46.697
+This is good.
+
+00:04:46.697 --> 00:04:47.530
+I hope there's more.
+
+00:04:50.830 --> 00:04:51.430
+See ya.
+
+00:04:55.930 --> 00:04:57.780
+[LAUGHTER]
+

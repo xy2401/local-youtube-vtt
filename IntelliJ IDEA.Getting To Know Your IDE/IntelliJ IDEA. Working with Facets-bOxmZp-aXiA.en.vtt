@@ -1,0 +1,456 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.980 --> 00:00:05.940 align:start position:0%
+ 
+now<00:00:03.820><c> an</c><00:00:03.970><c> IntelliJ</c><00:00:04.450><c> IDEA</c><00:00:04.750><c> your</c><00:00:05.410><c> project</c><00:00:05.859><c> is</c>
+
+00:00:05.940 --> 00:00:05.950 align:start position:0%
+now an IntelliJ IDEA your project is
+ 
+
+00:00:05.950 --> 00:00:07.950 align:start position:0%
+now an IntelliJ IDEA your project is
+organized<00:00:06.340><c> into</c><00:00:06.609><c> one</c><00:00:06.910><c> or</c><00:00:07.029><c> more</c><00:00:07.060><c> modules</c><00:00:07.630><c> and</c>
+
+00:00:07.950 --> 00:00:07.960 align:start position:0%
+organized into one or more modules and
+ 
+
+00:00:07.960 --> 00:00:10.320 align:start position:0%
+organized into one or more modules and
+these<00:00:08.500><c> modules</c><00:00:08.680><c> represent</c><00:00:09.519><c> a</c><00:00:09.700><c> collection</c><00:00:09.940><c> of</c>
+
+00:00:10.320 --> 00:00:10.330 align:start position:0%
+these modules represent a collection of
+ 
+
+00:00:10.330 --> 00:00:12.539 align:start position:0%
+these modules represent a collection of
+sources<00:00:10.840><c> and</c><00:00:11.080><c> other</c><00:00:11.230><c> resources</c><00:00:11.950><c> that</c><00:00:11.980><c> the</c><00:00:12.250><c> IDE</c>
+
+00:00:12.539 --> 00:00:12.549 align:start position:0%
+sources and other resources that the IDE
+ 
+
+00:00:12.549 --> 00:00:14.539 align:start position:0%
+sources and other resources that the IDE
+will<00:00:12.820><c> use</c><00:00:13.089><c> in</c><00:00:13.629><c> order</c><00:00:13.809><c> to</c><00:00:13.900><c> build</c><00:00:14.019><c> your</c><00:00:14.169><c> project</c>
+
+00:00:14.539 --> 00:00:14.549 align:start position:0%
+will use in order to build your project
+ 
+
+00:00:14.549 --> 00:00:18.300 align:start position:0%
+will use in order to build your project
+so<00:00:15.549><c> each</c><00:00:15.849><c> of</c><00:00:15.999><c> these</c><00:00:16.150><c> modules</c><00:00:16.540><c> can</c><00:00:17.530><c> have</c><00:00:17.740><c> one</c><00:00:18.190><c> or</c>
+
+00:00:18.300 --> 00:00:18.310 align:start position:0%
+so each of these modules can have one or
+ 
+
+00:00:18.310 --> 00:00:20.520 align:start position:0%
+so each of these modules can have one or
+more<00:00:18.490><c> facets</c><00:00:19.120><c> associated</c><00:00:19.720><c> with</c><00:00:19.840><c> them</c><00:00:19.990><c> and</c>
+
+00:00:20.520 --> 00:00:20.530 align:start position:0%
+more facets associated with them and
+ 
+
+00:00:20.530 --> 00:00:22.920 align:start position:0%
+more facets associated with them and
+these<00:00:20.710><c> facets</c><00:00:21.160><c> are</c><00:00:21.400><c> a</c><00:00:21.670><c> technology</c><00:00:22.360><c> or</c><00:00:22.660><c> a</c>
+
+00:00:22.920 --> 00:00:22.930 align:start position:0%
+these facets are a technology or a
+ 
+
+00:00:22.930 --> 00:00:25.770 align:start position:0%
+these facets are a technology or a
+framework<00:00:23.350><c> that</c><00:00:24.340><c> IntelliJ</c><00:00:24.850><c> IDEA</c><00:00:25.090><c> will</c><00:00:25.270><c> use</c><00:00:25.540><c> to</c>
+
+00:00:25.770 --> 00:00:25.780 align:start position:0%
+framework that IntelliJ IDEA will use to
+ 
+
+00:00:25.780 --> 00:00:28.080 align:start position:0%
+framework that IntelliJ IDEA will use to
+sort<00:00:25.930><c> of</c><00:00:25.990><c> help</c><00:00:26.170><c> understand</c><00:00:26.770><c> how</c><00:00:27.070><c> your</c><00:00:27.670><c> project</c>
+
+00:00:28.080 --> 00:00:28.090 align:start position:0%
+sort of help understand how your project
+ 
+
+00:00:28.090 --> 00:00:32.040 align:start position:0%
+sort of help understand how your project
+and<00:00:28.270><c> each</c><00:00:28.840><c> module</c><00:00:29.110><c> is</c><00:00:29.650><c> organized</c><00:00:30.160><c> and</c><00:00:30.490><c> so</c><00:00:31.210><c> say</c>
+
+00:00:32.040 --> 00:00:32.050 align:start position:0%
+and each module is organized and so say
+ 
+
+00:00:32.050 --> 00:00:33.959 align:start position:0%
+and each module is organized and so say
+it's<00:00:32.169><c> a</c><00:00:32.230><c> web</c><00:00:32.410><c> facet</c><00:00:32.920><c> so</c><00:00:33.430><c> then</c><00:00:33.579><c> it</c><00:00:33.670><c> will</c><00:00:33.760><c> have</c>
+
+00:00:33.959 --> 00:00:33.969 align:start position:0%
+it's a web facet so then it will have
+ 
+
+00:00:33.969 --> 00:00:35.880 align:start position:0%
+it's a web facet so then it will have
+some<00:00:34.149><c> configuration</c><00:00:34.840><c> files</c><00:00:35.080><c> associated</c><00:00:35.470><c> with</c>
+
+00:00:35.880 --> 00:00:35.890 align:start position:0%
+some configuration files associated with
+ 
+
+00:00:35.890 --> 00:00:38.850 align:start position:0%
+some configuration files associated with
+it<00:00:36.010><c> some</c><00:00:36.160><c> XML</c><00:00:36.550><c> files</c><00:00:36.850><c> and</c><00:00:37.440><c> some</c><00:00:38.440><c> deployment</c>
+
+00:00:38.850 --> 00:00:38.860 align:start position:0%
+it some XML files and some deployment
+ 
+
+00:00:38.860 --> 00:00:40.410 align:start position:0%
+it some XML files and some deployment
+descriptors<00:00:39.340><c> that</c><00:00:39.610><c> will</c><00:00:39.730><c> tell</c><00:00:39.940><c> intelligent</c>
+
+00:00:40.410 --> 00:00:40.420 align:start position:0%
+descriptors that will tell intelligent
+ 
+
+00:00:40.420 --> 00:00:43.530 align:start position:0%
+descriptors that will tell intelligent
+idea<00:00:40.750><c> where</c><00:00:41.470><c> to</c><00:00:41.620><c> deploy</c><00:00:41.860><c> your</c><00:00:42.100><c> web</c><00:00:42.310><c> app</c><00:00:42.540><c> you</c>
+
+00:00:43.530 --> 00:00:43.540 align:start position:0%
+idea where to deploy your web app you
+ 
+
+00:00:43.540 --> 00:00:45.569 align:start position:0%
+idea where to deploy your web app you
+can<00:00:43.690><c> manage</c><00:00:44.050><c> all</c><00:00:44.260><c> of</c><00:00:44.320><c> these</c><00:00:44.560><c> facets</c><00:00:45.160><c> inside</c>
+
+00:00:45.569 --> 00:00:45.579 align:start position:0%
+can manage all of these facets inside
+ 
+
+00:00:45.579 --> 00:00:47.790 align:start position:0%
+can manage all of these facets inside
+your<00:00:45.790><c> project</c><00:00:46.030><c> under</c><00:00:46.930><c> the</c><00:00:47.050><c> project</c><00:00:47.500><c> structure</c>
+
+00:00:47.790 --> 00:00:47.800 align:start position:0%
+your project under the project structure
+ 
+
+00:00:47.800 --> 00:00:50.250 align:start position:0%
+your project under the project structure
+dialog<00:00:48.430><c> here</c><00:00:48.730><c> under</c><00:00:49.570><c> project</c><00:00:49.960><c> settings</c>
+
+00:00:50.250 --> 00:00:50.260 align:start position:0%
+dialog here under project settings
+ 
+
+00:00:50.260 --> 00:00:52.710 align:start position:0%
+dialog here under project settings
+you'll<00:00:50.470><c> select</c><00:00:50.650><c> facets</c><00:00:51.430><c> you</c><00:00:52.150><c> can</c><00:00:52.300><c> see</c><00:00:52.570><c> that</c>
+
+00:00:52.710 --> 00:00:52.720 align:start position:0%
+you'll select facets you can see that
+ 
+
+00:00:52.720 --> 00:00:54.240 align:start position:0%
+you'll select facets you can see that
+there<00:00:52.900><c> are</c><00:00:53.020><c> three</c><00:00:53.350><c> types</c><00:00:53.650><c> of</c><00:00:53.800><c> facets</c>
+
+00:00:54.240 --> 00:00:54.250 align:start position:0%
+there are three types of facets
+ 
+
+00:00:54.250 --> 00:00:55.710 align:start position:0%
+there are three types of facets
+associated<00:00:54.790><c> with</c><00:00:54.910><c> this</c><00:00:55.000><c> project</c><00:00:55.510><c> that</c><00:00:55.630><c> I'm</c>
+
+00:00:55.710 --> 00:00:55.720 align:start position:0%
+associated with this project that I'm
+ 
+
+00:00:55.720 --> 00:00:58.560 align:start position:0%
+associated with this project that I'm
+working<00:00:55.899><c> with</c><00:00:56.050><c> right</c><00:00:56.380><c> now</c><00:00:56.880><c> if</c><00:00:57.880><c> you</c><00:00:58.000><c> add</c><00:00:58.180><c> a</c><00:00:58.210><c> new</c>
+
+00:00:58.560 --> 00:00:58.570 align:start position:0%
+working with right now if you add a new
+ 
+
+00:00:58.570 --> 00:01:00.660 align:start position:0%
+working with right now if you add a new
+facet<00:00:58.870><c> you</c><00:00:59.590><c> can</c><00:00:59.770><c> optionally</c><00:01:00.070><c> enable</c>
+
+00:01:00.660 --> 00:01:00.670 align:start position:0%
+facet you can optionally enable
+ 
+
+00:01:00.670 --> 00:01:03.330 align:start position:0%
+facet you can optionally enable
+framework<00:01:01.300><c> detection</c><00:01:01.870><c> where</c><00:01:02.530><c> IntelliJ</c><00:01:03.040><c> IDEA</c>
+
+00:01:03.330 --> 00:01:03.340 align:start position:0%
+framework detection where IntelliJ IDEA
+ 
+
+00:01:03.340 --> 00:01:05.460 align:start position:0%
+framework detection where IntelliJ IDEA
+will<00:01:03.640><c> detect</c><00:01:04.030><c> any</c><00:01:04.239><c> modules</c><00:01:04.780><c> that</c><00:01:04.989><c> are</c><00:01:05.110><c> added</c>
+
+00:01:05.460 --> 00:01:05.470 align:start position:0%
+will detect any modules that are added
+ 
+
+00:01:05.470 --> 00:01:07.559 align:start position:0%
+will detect any modules that are added
+to<00:01:05.710><c> your</c><00:01:05.890><c> project</c><00:01:06.159><c> based</c><00:01:06.640><c> on</c><00:01:06.820><c> their</c><00:01:07.119><c> unique</c>
+
+00:01:07.559 --> 00:01:07.569 align:start position:0%
+to your project based on their unique
+ 
+
+00:01:07.569 --> 00:01:10.800 align:start position:0%
+to your project based on their unique
+file<00:01:07.990><c> and</c><00:01:08.350><c> directory</c><00:01:09.009><c> structure</c><00:01:09.880><c> so</c><00:01:10.569><c> if</c><00:01:10.689><c> I'd</c>
+
+00:01:10.800 --> 00:01:10.810 align:start position:0%
+file and directory structure so if I'd
+ 
+
+00:01:10.810 --> 00:01:12.929 align:start position:0%
+file and directory structure so if I'd
+like<00:01:10.929><c> to</c><00:01:11.079><c> add</c><00:01:11.200><c> a</c><00:01:11.229><c> new</c><00:01:11.560><c> facet</c><00:01:11.889><c> in</c><00:01:12.249><c> my</c><00:01:12.399><c> project</c>
+
+00:01:12.929 --> 00:01:12.939 align:start position:0%
+like to add a new facet in my project
+ 
+
+00:01:12.939 --> 00:01:16.709 align:start position:0%
+like to add a new facet in my project
+and<00:01:13.569><c> I</c><00:01:13.689><c> can</c><00:01:13.869><c> add</c><00:01:14.049><c> say</c><00:01:14.560><c> a</c><00:01:14.799><c> GWT</c><00:01:15.310><c> facet</c><00:01:15.939><c> I</c><00:01:16.119><c> can</c>
+
+00:01:16.709 --> 00:01:16.719 align:start position:0%
+and I can add say a GWT facet I can
+ 
+
+00:01:16.719 --> 00:01:18.449 align:start position:0%
+and I can add say a GWT facet I can
+choose<00:01:16.929><c> any</c><00:01:17.079><c> one</c><00:01:17.200><c> of</c><00:01:17.350><c> these</c><00:01:17.560><c> modules</c><00:01:18.100><c> to</c><00:01:18.340><c> add</c>
+
+00:01:18.449 --> 00:01:18.459 align:start position:0%
+choose any one of these modules to add
+ 
+
+00:01:18.459 --> 00:01:21.059 align:start position:0%
+choose any one of these modules to add
+it<00:01:18.700><c> into</c><00:01:18.850><c> so</c><00:01:19.719><c> let's</c><00:01:20.170><c> say</c><00:01:20.350><c> I'd</c><00:01:20.469><c> like</c><00:01:20.649><c> to</c><00:01:20.770><c> add</c><00:01:20.889><c> it</c>
+
+00:01:21.059 --> 00:01:21.069 align:start position:0%
+it into so let's say I'd like to add it
+ 
+
+00:01:21.069 --> 00:01:24.510 align:start position:0%
+it into so let's say I'd like to add it
+into<00:01:21.189><c> this</c><00:01:21.490><c> one</c><00:01:21.700><c> I'll</c><00:01:22.389><c> click</c><00:01:22.600><c> OK</c><00:01:22.929><c> and</c><00:01:23.399><c> since</c><00:01:24.399><c> we</c>
+
+00:01:24.510 --> 00:01:24.520 align:start position:0%
+into this one I'll click OK and since we
+ 
+
+00:01:24.520 --> 00:01:26.340 align:start position:0%
+into this one I'll click OK and since we
+already<00:01:24.670><c> have</c><00:01:24.969><c> a</c><00:01:24.999><c> web</c><00:01:25.240><c> facet</c><00:01:25.689><c> associated</c><00:01:26.259><c> with</c>
+
+00:01:26.340 --> 00:01:26.350 align:start position:0%
+already have a web facet associated with
+ 
+
+00:01:26.350 --> 00:01:28.709 align:start position:0%
+already have a web facet associated with
+this<00:01:26.439><c> module</c><00:01:26.920><c> IntelliJ</c><00:01:27.789><c> IDEA</c><00:01:28.090><c> will</c><00:01:28.240><c> allow</c><00:01:28.539><c> us</c>
+
+00:01:28.709 --> 00:01:28.719 align:start position:0%
+this module IntelliJ IDEA will allow us
+ 
+
+00:01:28.719 --> 00:01:31.440 align:start position:0%
+this module IntelliJ IDEA will allow us
+to<00:01:28.749><c> select</c><00:01:29.079><c> that</c><00:01:29.469><c> facet</c><00:01:29.950><c> as</c><00:01:30.609><c> a</c><00:01:30.670><c> target</c><00:01:31.240><c> and</c>
+
+00:01:31.440 --> 00:01:31.450 align:start position:0%
+to select that facet as a target and
+ 
+
+00:01:31.450 --> 00:01:33.510 align:start position:0%
+to select that facet as a target and
+then<00:01:31.959><c> we</c><00:01:32.020><c> can</c><00:01:32.170><c> give</c><00:01:32.289><c> it</c><00:01:32.409><c> a</c><00:01:32.469><c> path</c><00:01:32.709><c> the</c><00:01:33.039><c> GWT</c>
+
+00:01:33.510 --> 00:01:33.520 align:start position:0%
+then we can give it a path the GWT
+ 
+
+00:01:33.520 --> 00:01:36.149 align:start position:0%
+then we can give it a path the GWT
+installation<00:01:34.060><c> directory</c><00:01:34.420><c> and</c><00:01:34.569><c> so</c><00:01:34.749><c> forth</c><00:01:35.159><c> so</c>
+
+00:01:36.149 --> 00:01:36.159 align:start position:0%
+installation directory and so forth so
+ 
+
+00:01:36.159 --> 00:01:38.069 align:start position:0%
+installation directory and so forth so
+not<00:01:36.520><c> only</c><00:01:36.639><c> will</c><00:01:36.819><c> you'll</c><00:01:36.969><c> be</c><00:01:37.090><c> able</c><00:01:37.209><c> to</c><00:01:37.539><c> add</c><00:01:37.810><c> and</c>
+
+00:01:38.069 --> 00:01:38.079 align:start position:0%
+not only will you'll be able to add and
+ 
+
+00:01:38.079 --> 00:01:40.499 align:start position:0%
+not only will you'll be able to add and
+remove<00:01:38.170><c> these</c><00:01:38.950><c> facets</c><00:01:39.549><c> to</c><00:01:39.789><c> your</c><00:01:39.880><c> modules</c><00:01:40.299><c> but</c>
+
+00:01:40.499 --> 00:01:40.509 align:start position:0%
+remove these facets to your modules but
+ 
+
+00:01:40.509 --> 00:01:42.959 align:start position:0%
+remove these facets to your modules but
+IntelliJ<00:01:40.869><c> IDEA</c><00:01:41.170><c> will</c><00:01:41.439><c> allow</c><00:01:41.679><c> you</c><00:01:41.740><c> to</c><00:01:41.920><c> use</c><00:01:42.759><c> one</c>
+
+00:01:42.959 --> 00:01:42.969 align:start position:0%
+IntelliJ IDEA will allow you to use one
+ 
+
+00:01:42.969 --> 00:01:45.330 align:start position:0%
+IntelliJ IDEA will allow you to use one
+or<00:01:42.999><c> more</c><00:01:43.119><c> facets</c><00:01:43.659><c> together</c><00:01:44.049><c> and</c><00:01:44.409><c> it</c><00:01:45.130><c> will</c><00:01:45.219><c> give</c>
+
+00:01:45.330 --> 00:01:45.340 align:start position:0%
+or more facets together and it will give
+ 
+
+00:01:45.340 --> 00:01:46.980 align:start position:0%
+or more facets together and it will give
+you<00:01:45.429><c> the</c><00:01:45.549><c> tools</c><00:01:45.819><c> to</c><00:01:46.090><c> make</c><00:01:46.209><c> them</c><00:01:46.359><c> work</c><00:01:46.509><c> side</c><00:01:46.810><c> by</c>
+
+00:01:46.980 --> 00:01:46.990 align:start position:0%
+you the tools to make them work side by
+ 
+
+00:01:46.990 --> 00:01:49.289 align:start position:0%
+you the tools to make them work side by
+side<00:01:47.319><c> you</c><00:01:47.619><c> can</c><00:01:48.249><c> find</c><00:01:48.459><c> support</c><00:01:48.819><c> for</c><00:01:48.969><c> many</c><00:01:49.119><c> types</c>
+
+00:01:49.289 --> 00:01:49.299 align:start position:0%
+side you can find support for many types
+ 
+
+00:01:49.299 --> 00:01:51.870 align:start position:0%
+side you can find support for many types
+of<00:01:49.450><c> facets</c><00:01:49.959><c> under</c><00:01:50.259><c> the</c><00:01:50.349><c> ad</c><00:01:50.469><c> facet</c><00:01:51.219><c> menu</c><00:01:51.549><c> here</c>
+
+00:01:51.870 --> 00:01:51.880 align:start position:0%
+of facets under the ad facet menu here
+ 
+
+00:01:51.880 --> 00:01:54.149 align:start position:0%
+of facets under the ad facet menu here
+everything<00:01:52.509><c> from</c><00:01:52.539><c> languages</c><00:01:53.439><c> to</c><00:01:53.679><c> frameworks</c>
+
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+everything from languages to frameworks
+ 
+
+00:01:54.159 --> 00:01:55.769 align:start position:0%
+everything from languages to frameworks
+to<00:01:54.310><c> tools</c><00:01:54.670><c> that</c><00:01:54.939><c> you</c><00:01:55.060><c> can</c><00:01:55.209><c> use</c><00:01:55.389><c> to</c><00:01:55.569><c> build</c><00:01:55.659><c> your</c>
+
+00:01:55.769 --> 00:01:55.779 align:start position:0%
+to tools that you can use to build your
+ 
+
+00:01:55.779 --> 00:01:58.019 align:start position:0%
+to tools that you can use to build your
+project<00:01:56.049><c> and</c><00:01:56.490><c> all</c><00:01:57.490><c> of</c><00:01:57.609><c> these</c><00:01:57.759><c> are</c><00:01:57.909><c> available</c>
+
+00:01:58.019 --> 00:01:58.029 align:start position:0%
+project and all of these are available
+ 
+
+00:01:58.029 --> 00:02:00.510 align:start position:0%
+project and all of these are available
+when<00:01:58.509><c> you</c><00:01:58.599><c> create</c><00:01:58.929><c> a</c><00:01:58.959><c> new</c><00:01:59.139><c> project</c><00:01:59.319><c> as</c><00:01:59.679><c> well</c><00:01:59.889><c> so</c>
+
+00:02:00.510 --> 00:02:00.520 align:start position:0%
+when you create a new project as well so
+ 
+
+00:02:00.520 --> 00:02:02.159 align:start position:0%
+when you create a new project as well so
+if<00:02:00.639><c> you</c><00:02:00.729><c> open</c><00:02:00.819><c> up</c><00:02:00.969><c> the</c><00:02:01.119><c> new</c><00:02:01.299><c> project</c><00:02:01.749><c> dialog</c>
+
+00:02:02.159 --> 00:02:02.169 align:start position:0%
+if you open up the new project dialog
+ 
+
+00:02:02.169 --> 00:02:03.779 align:start position:0%
+if you open up the new project dialog
+when<00:02:02.439><c> you</c><00:02:02.529><c> create</c><00:02:02.919><c> the</c><00:02:03.039><c> project</c><00:02:03.279><c> you</c><00:02:03.609><c> can</c>
+
+00:02:03.779 --> 00:02:03.789 align:start position:0%
+when you create the project you can
+ 
+
+00:02:03.789 --> 00:02:05.580 align:start position:0%
+when you create the project you can
+select<00:02:03.999><c> additional</c><00:02:04.990><c> libraries</c><00:02:05.409><c> and</c>
+
+00:02:05.580 --> 00:02:05.590 align:start position:0%
+select additional libraries and
+ 
+
+00:02:05.590 --> 00:02:07.050 align:start position:0%
+select additional libraries and
+frameworks<00:02:05.679><c> to</c><00:02:06.130><c> use</c><00:02:06.369><c> with</c><00:02:06.579><c> inside</c><00:02:06.880><c> your</c>
+
+00:02:07.050 --> 00:02:07.060 align:start position:0%
+frameworks to use with inside your
+ 
+
+00:02:07.060 --> 00:02:09.089 align:start position:0%
+frameworks to use with inside your
+project<00:02:07.270><c> these</c><00:02:08.020><c> will</c><00:02:08.170><c> be</c><00:02:08.229><c> automatically</c><00:02:08.830><c> set</c>
+
+00:02:09.089 --> 00:02:09.099 align:start position:0%
+project these will be automatically set
+ 
+
+00:02:09.099 --> 00:02:10.949 align:start position:0%
+project these will be automatically set
+up<00:02:09.250><c> so</c><00:02:09.789><c> that</c><00:02:09.910><c> when</c><00:02:10.000><c> you</c><00:02:10.090><c> create</c><00:02:10.390><c> your</c><00:02:10.420><c> project</c>
+
+00:02:10.949 --> 00:02:10.959 align:start position:0%
+up so that when you create your project
+ 
+
+00:02:10.959 --> 00:02:12.059 align:start position:0%
+up so that when you create your project
+you'll<00:02:11.049><c> have</c><00:02:11.170><c> a</c><00:02:11.200><c> template</c><00:02:11.620><c> right</c><00:02:11.829><c> there</c>
+
+00:02:12.059 --> 00:02:12.069 align:start position:0%
+you'll have a template right there
+ 
+
+00:02:12.069 --> 00:02:16.260 align:start position:0%
+you'll have a template right there
+waiting<00:02:12.340><c> for</c><00:02:12.370><c> you</c><00:02:12.989><c> thanks</c><00:02:13.989><c> for</c><00:02:14.140><c> watching</c>
+

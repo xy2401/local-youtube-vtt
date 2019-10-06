@@ -1,0 +1,680 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.375 --> 00:00:01.450
+Hey everybody, what's up?
+
+00:00:01.450 --> 00:00:02.370
+It's Rob Dodson.
+
+00:00:02.370 --> 00:00:03.560
+And in today's
+episode of Polycast,
+
+00:00:03.560 --> 00:00:05.476
+we're going to be picking
+up where we left off
+
+00:00:05.476 --> 00:00:07.070
+last time with the
+core header panel.
+
+00:00:07.070 --> 00:00:09.380
+We're going to take that mobile
+site that we started to build,
+
+00:00:09.380 --> 00:00:11.630
+and we're going to incorporate
+one more element called
+
+00:00:11.630 --> 00:00:14.210
+core drawer panel so we get an
+experience that looks really
+
+00:00:14.210 --> 00:00:17.060
+great both on our desktop
+and on our mobile device.
+
+00:00:17.060 --> 00:00:17.840
+So let's dive in.
+
+00:00:17.840 --> 00:00:19.930
+So this is where we left
+things off in our last video.
+
+00:00:19.930 --> 00:00:21.466
+We've got the site
+that looks really
+
+00:00:21.466 --> 00:00:22.590
+great on our mobile device.
+
+00:00:22.590 --> 00:00:25.150
+But on our desktop, it's
+just a little stretched out.
+
+00:00:25.150 --> 00:00:27.770
+I mean, I'm not even showing
+my browser at full width here.
+
+00:00:27.770 --> 00:00:30.437
+What I'd like to do is to add a
+sidebar over here on the left,
+
+00:00:30.437 --> 00:00:32.020
+and that way our
+content is just going
+
+00:00:32.020 --> 00:00:33.380
+to look a little bit nicer.
+
+00:00:33.380 --> 00:00:34.210
+So what we're going
+to do is we're
+
+00:00:34.210 --> 00:00:36.501
+going to use a core drawer
+panel, which is a responsive
+
+00:00:36.501 --> 00:00:39.390
+container that combines a side
+drawer with a main content
+
+00:00:39.390 --> 00:00:40.170
+area.
+
+00:00:40.170 --> 00:00:43.010
+Now any content that you
+place in the drawer panel
+
+00:00:43.010 --> 00:00:44.820
+that you give a
+drawer attribute to
+
+00:00:44.820 --> 00:00:47.290
+is going to actually end up
+over here in your sidebar.
+
+00:00:47.290 --> 00:00:49.990
+Likewise, any content that
+you have a main attribute on
+
+00:00:49.990 --> 00:00:51.632
+is going to end up
+in your main area.
+
+00:00:51.632 --> 00:00:53.340
+Now the cool thing
+about the drawer panel
+
+00:00:53.340 --> 00:00:57.470
+is that it's actually
+responsive by default.
+
+00:00:57.470 --> 00:00:59.870
+And so that means that,
+on smaller screens,
+
+00:00:59.870 --> 00:01:02.610
+it knows to move the
+drawer out of the way.
+
+00:01:02.610 --> 00:01:05.580
+And we can just wire it up to
+something like a hamburger menu
+
+00:01:05.580 --> 00:01:07.910
+to display that drawer again
+when someone clicks on it.
+
+00:01:07.910 --> 00:01:09.550
+Now by default,
+the drawer panel is
+
+00:01:09.550 --> 00:01:12.560
+going to collapse when
+it's at about 640 pixels.
+
+00:01:12.560 --> 00:01:14.310
+And so if we want to
+change that behavior,
+
+00:01:14.310 --> 00:01:17.017
+we can give it a
+responsive width attribute
+
+00:01:17.017 --> 00:01:19.100
+and set the responsive
+width to a different value.
+
+00:01:19.100 --> 00:01:21.985
+For instance, we could set it
+equal to like 800 pixels if we
+
+00:01:21.985 --> 00:01:24.700
+would prefer it to
+collapse at that size.
+
+00:01:24.700 --> 00:01:27.470
+Now, you might be wondering, how
+does the drawer panel actually
+
+00:01:27.470 --> 00:01:29.360
+know where to
+render its children?
+
+00:01:29.360 --> 00:01:30.860
+So let me show you
+a little example.
+
+00:01:30.860 --> 00:01:32.080
+Over here on the left,
+we have the mark up
+
+00:01:32.080 --> 00:01:33.288
+that we've been working with.
+
+00:01:33.288 --> 00:01:35.650
+You can consider
+this our Light Dom.
+
+00:01:35.650 --> 00:01:38.370
+In the center here, we've got
+the kind of abbreviated source
+
+00:01:38.370 --> 00:01:39.950
+for the core drawer
+panel itself.
+
+00:01:39.950 --> 00:01:41.606
+We can say this
+is our Shadow Dom.
+
+00:01:41.606 --> 00:01:42.980
+And over here on
+the right, we've
+
+00:01:42.980 --> 00:01:44.688
+got a rendering of
+what our final page is
+
+00:01:44.688 --> 00:01:45.660
+going to look like.
+
+00:01:45.660 --> 00:01:50.110
+So notice these content elements
+inside of the drawer panel.
+
+00:01:50.110 --> 00:01:52.386
+These are what are known
+as insertion points.
+
+00:01:52.386 --> 00:01:54.260
+And what insertion points
+do is they actually
+
+00:01:54.260 --> 00:01:58.500
+invite content from the Light
+Dom over into the Shadow Dom.
+
+00:01:58.500 --> 00:02:01.144
+This is done through a process
+that is known as distribution.
+
+00:02:01.144 --> 00:02:02.560
+You can think of
+distribution kind
+
+00:02:02.560 --> 00:02:04.929
+of like pointing a movie
+projector at a wall.
+
+00:02:04.929 --> 00:02:06.470
+So what we're doing
+is we're actually
+
+00:02:06.470 --> 00:02:08.470
+taking the content from
+our drawer element here.
+
+00:02:08.470 --> 00:02:11.510
+And it's being projected
+into the Shadow Dom,
+
+00:02:11.510 --> 00:02:14.280
+just like you would project
+video content at a wall.
+
+00:02:14.280 --> 00:02:17.490
+And that's being displayed
+over here in our drawer area.
+
+00:02:17.490 --> 00:02:19.310
+Likewise, with
+this main element,
+
+00:02:19.310 --> 00:02:21.980
+it's being projected
+into the Shadow Dom.
+
+00:02:21.980 --> 00:02:24.752
+And that gets rendered
+as our primary content.
+
+00:02:24.752 --> 00:02:26.210
+Now the cool thing
+here is that you
+
+00:02:26.210 --> 00:02:28.602
+can have all sorts
+of markup and CSS
+
+00:02:28.602 --> 00:02:30.060
+and whatever you
+want in the Shadow
+
+00:02:30.060 --> 00:02:32.640
+Dom that frames these elements.
+
+00:02:32.640 --> 00:02:36.540
+So we can create really complex
+structures in the Shadow Dom
+
+00:02:36.540 --> 00:02:38.770
+and then take advantage
+of them in the Light Dom
+
+00:02:38.770 --> 00:02:41.100
+just by using a
+few lines of HTML.
+
+00:02:41.100 --> 00:02:42.860
+I think that's really powerful.
+
+00:02:42.860 --> 00:02:45.318
+So over in our code editor,
+the first thing I'm going to do
+
+00:02:45.318 --> 00:02:46.740
+is open up the
+elements HTML file.
+
+00:02:46.740 --> 00:02:48.896
+And I'm going to import
+the definition for the tags
+
+00:02:48.896 --> 00:02:50.770
+that we're going to be
+using in this example.
+
+00:02:50.770 --> 00:02:53.274
+So I'm going to import
+the core drawer panel.
+
+00:02:53.274 --> 00:02:54.690
+I'm going to import
+the core menu.
+
+00:02:54.690 --> 00:02:57.560
+And I'm going to
+import the core item.
+
+00:02:57.560 --> 00:02:59.350
+Now back in my
+next HTML file, I'm
+
+00:02:59.350 --> 00:03:01.740
+going to create a core
+drawer panel element.
+
+00:03:01.740 --> 00:03:04.250
+And then I'm just going to grab
+this header panel right here
+
+00:03:04.250 --> 00:03:07.050
+and actually move it up
+into my drawer panel.
+
+00:03:07.050 --> 00:03:09.885
+And I've got to remember to
+include that main attribute.
+
+00:03:09.885 --> 00:03:13.790
+And that way, it's going to
+render as our primary content.
+
+00:03:13.790 --> 00:03:15.290
+And we can ditch
+the flex attribute,
+
+00:03:15.290 --> 00:03:16.380
+because that drawer
+panel is going
+
+00:03:16.380 --> 00:03:18.395
+to handle laying this
+element out for us.
+
+00:03:18.395 --> 00:03:21.360
+Now I'm also going to
+create a second header panel
+
+00:03:21.360 --> 00:03:22.014
+inside of here.
+
+00:03:22.014 --> 00:03:23.680
+And this is going to
+be the content that
+
+00:03:23.680 --> 00:03:25.379
+goes into our drawer.
+
+00:03:25.379 --> 00:03:27.670
+So I've got to make sure to
+give it a drawer attribute.
+
+00:03:27.670 --> 00:03:28.465
+And then I'm just
+going to create
+
+00:03:28.465 --> 00:03:30.060
+a toolbar inside of here.
+
+00:03:30.060 --> 00:03:35.430
+And we'll say, give it a
+title of something like, menu.
+
+00:03:35.430 --> 00:03:37.700
+Then below that, we'll throw
+in that core menu element
+
+00:03:37.700 --> 00:03:40.540
+that we imported, and
+we'll create two menu items
+
+00:03:40.540 --> 00:03:42.090
+inside of here.
+
+00:03:42.090 --> 00:03:43.920
+We'll just give each
+of these a label
+
+00:03:43.920 --> 00:03:46.110
+that will represent the
+different pages in our site.
+
+00:03:46.110 --> 00:03:47.780
+So we'll say one and two.
+
+00:03:47.780 --> 00:03:49.759
+Now we're going to add
+some CSS and JavaScript
+
+00:03:49.759 --> 00:03:50.550
+to our application.
+
+00:03:50.550 --> 00:03:54.080
+But first, I want to go down
+here to our core icon button.
+
+00:03:54.080 --> 00:03:56.952
+And I want to give
+it an ID of nav icon.
+
+00:03:56.952 --> 00:03:58.660
+That's just going to
+make it a lot easier
+
+00:03:58.660 --> 00:03:59.672
+to work with later on.
+
+00:03:59.672 --> 00:04:01.630
+I'm also going to go up
+to my core drawer panel
+
+00:04:01.630 --> 00:04:04.520
+and give it an ID
+of drawer panel.
+
+00:04:04.520 --> 00:04:05.950
+Now, over in our
+app CSS, I'm just
+
+00:04:05.950 --> 00:04:07.730
+going to paste in a few styles.
+
+00:04:07.730 --> 00:04:09.500
+And this is some
+pretty typical stuff.
+
+00:04:09.500 --> 00:04:11.610
+We're setting a
+background color.
+
+00:04:11.610 --> 00:04:15.035
+We're setting another background
+color in our drawer panel.
+
+00:04:15.035 --> 00:04:17.160
+But there's this really
+interesting style down here
+
+00:04:17.160 --> 00:04:19.326
+at the bottom where I'm
+saying, when the core drawer
+
+00:04:19.326 --> 00:04:24.600
+panel is not narrow, the nav
+icon should be display none.
+
+00:04:24.600 --> 00:04:27.410
+So what does that mean exactly?
+
+00:04:27.410 --> 00:04:29.420
+Well, if we hop over
+to the documentation,
+
+00:04:29.420 --> 00:04:31.960
+and we scroll down to
+the Attributes section
+
+00:04:31.960 --> 00:04:33.360
+for the core drawer
+panel, you'll
+
+00:04:33.360 --> 00:04:36.100
+see that there's this
+narrow attribute right here.
+
+00:04:36.100 --> 00:04:38.810
+And basically what happens
+with the narrow attribute is,
+
+00:04:38.810 --> 00:04:40.810
+when the door
+panel is collapsed,
+
+00:04:40.810 --> 00:04:42.570
+the narrow attribute
+gets set to true
+
+00:04:42.570 --> 00:04:44.410
+and it ends up
+showing up on the tag.
+
+00:04:44.410 --> 00:04:46.200
+When the drawer panel
+is at full size,
+
+00:04:46.200 --> 00:04:48.890
+the narrow attribute
+gets removed.
+
+00:04:48.890 --> 00:04:51.140
+So basically, what our
+CSS is saying right here
+
+00:04:51.140 --> 00:04:54.642
+is, hide the hamburger
+menu when we're expanded,
+
+00:04:54.642 --> 00:04:56.225
+and then show it
+when we're collapsed.
+
+00:04:56.225 --> 00:04:58.860
+It moves out of the way,
+and that hammer icon
+
+00:04:58.860 --> 00:05:01.580
+appears up there
+in the top left.
+
+00:05:01.580 --> 00:05:03.117
+And if we stretch
+things out again,
+
+00:05:03.117 --> 00:05:04.950
+you'll see that the
+hamburger menu is hidden
+
+00:05:04.950 --> 00:05:06.960
+and the drawer panel
+slides back out.
+
+00:05:06.960 --> 00:05:07.620
+Pretty cool.
+
+00:05:07.620 --> 00:05:09.290
+Now, there's one
+missing piece here.
+
+00:05:09.290 --> 00:05:11.300
+When I click the
+hamburger menu, I
+
+00:05:11.300 --> 00:05:13.770
+want the drawer to
+actually slide back out.
+
+00:05:13.770 --> 00:05:15.980
+So how are we going
+to go about that?
+
+00:05:15.980 --> 00:05:18.500
+Well if we hop back in
+to the documentation,
+
+00:05:18.500 --> 00:05:21.527
+and if we scroll down
+to the methods section,
+
+00:05:21.527 --> 00:05:23.610
+you'll see that there's a
+toggle panel method here
+
+00:05:23.610 --> 00:05:26.284
+which allows us to toggle
+the panel open and closed.
+
+00:05:26.284 --> 00:05:27.700
+So in our application,
+we're going
+
+00:05:27.700 --> 00:05:29.260
+to create a new
+file called app js.
+
+00:05:32.766 --> 00:05:34.224
+And then inside
+this file, I'm just
+
+00:05:34.224 --> 00:05:36.360
+going to paste in a
+little bit of JavaScript.
+
+00:05:36.360 --> 00:05:38.430
+And I'll walk you through
+what's going on here.
+
+00:05:38.430 --> 00:05:41.065
+We're first listening for
+the polymer ready event.
+
+00:05:41.065 --> 00:05:43.190
+That way, we're guaranteed
+that all of our elements
+
+00:05:43.190 --> 00:05:45.356
+have upgraded and
+they're ready to rock.
+
+00:05:45.356 --> 00:05:47.230
+We're taking the nav
+icon in the drawer panel
+
+00:05:47.230 --> 00:05:49.510
+that we gave IDs to earlier.
+
+00:05:49.510 --> 00:05:52.052
+And we're telling the nav icon
+to listen to any click events.
+
+00:05:52.052 --> 00:05:53.509
+And when it hears
+a click event, it
+
+00:05:53.509 --> 00:05:55.420
+should tell the drawer
+panel to toggle open.
+
+00:05:55.420 --> 00:05:57.530
+So if we preview this is
+our application, click
+
+00:05:57.530 --> 00:05:59.169
+the hamburger, it
+opens the drawer.
+
+00:05:59.169 --> 00:06:01.710
+And then we can mess around with
+our menu buttons if we want.
+
+00:06:01.710 --> 00:06:03.900
+Clicking the grey area
+collapses it again.
+
+00:06:03.900 --> 00:06:06.630
+So just like that, we have
+a fully responsive website.
+
+00:06:06.630 --> 00:06:09.180
+And we only had to write a
+tiny bit of CSS and JavaScript.
+
+00:06:09.180 --> 00:06:10.431
+I think that's pretty awesome.
+
+00:06:10.431 --> 00:06:12.846
+In the next episode, I'm going
+to show you one weird trick
+
+00:06:12.846 --> 00:06:14.410
+to spice up your
+core drawer panel.
+
+00:06:14.410 --> 00:06:16.201
+And after that, we're
+going to start wiring
+
+00:06:16.201 --> 00:06:17.650
+this up with some real content.
+
+00:06:17.650 --> 00:06:19.450
+So as always,
+thanks for watching.
+
+00:06:19.450 --> 00:06:21.480
+I'll see you next time.
+

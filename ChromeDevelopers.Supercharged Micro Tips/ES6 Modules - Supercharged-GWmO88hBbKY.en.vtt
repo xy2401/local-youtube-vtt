@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.830
+[MUSIC PLAYING]
+
+00:00:02.830 --> 00:00:06.120
+SURMA: ES6 native modules
+have stable support
+
+00:00:06.120 --> 00:00:08.730
+on Chrome 60 and Safari 10.
+
+00:00:08.730 --> 00:00:12.000
+Other browsers have it in
+development and behind a flag.
+
+00:00:12.000 --> 00:00:15.030
+So while a couple of browsers
+can handle the new import
+
+00:00:15.030 --> 00:00:17.430
+and export syntax,
+others cannot.
+
+00:00:17.430 --> 00:00:20.229
+The question is, what do
+you ship to the browser?
+
+00:00:20.229 --> 00:00:22.020
+Traditionally, you
+would have two choices--
+
+00:00:22.020 --> 00:00:24.480
+use Babel to transpile
+the native module
+
+00:00:24.480 --> 00:00:26.910
+syntax to one of the
+older open source formats,
+
+00:00:26.910 --> 00:00:31.260
+like CommonJS AMD or SystemJS,
+or bundle your modules
+
+00:00:31.260 --> 00:00:33.780
+into one file using Rollup.
+
+00:00:33.780 --> 00:00:36.450
+The former requires you to
+load an additional loader,
+
+00:00:36.450 --> 00:00:39.420
+while the latter produces big
+monolithic JavaScript files
+
+00:00:39.420 --> 00:00:41.340
+that don't cache very well.
+
+00:00:41.340 --> 00:00:44.610
+Surprisingly, another
+solution is to do both--
+
+00:00:44.610 --> 00:00:47.490
+include both the native
+and the transpiled version
+
+00:00:47.490 --> 00:00:48.530
+of your code.
+
+00:00:48.530 --> 00:00:51.360
+The transpiled version
+gets the nomodule attribute
+
+00:00:51.360 --> 00:00:54.240
+on the script tag, while
+the module version must have
+
+00:00:54.240 --> 00:00:56.040
+type="module".
+
+00:00:56.040 --> 00:00:58.560
+Browsers that
+support type="module"
+
+00:00:58.560 --> 00:01:01.770
+also ignore script tags
+with nomodule attribute.
+
+00:01:01.770 --> 00:01:05.550
+So in this case, only one of
+the two versions will be loaded.
+
+00:01:05.550 --> 00:01:09.150
+Browsers without module support
+won't load the type="module"
+
+00:01:09.150 --> 00:01:12.090
+script tag, as they don't
+know what the type is.
+
+00:01:12.090 --> 00:01:14.040
+And these browsers
+also don't know
+
+00:01:14.040 --> 00:01:16.200
+what nomodule means,
+which means they
+
+00:01:16.200 --> 00:01:18.270
+will load this script instead.
+
+00:01:18.270 --> 00:01:22.276
+As you can see, every browser
+will only load one version.
+
+00:01:22.276 --> 00:01:24.150
+This allows you to
+deliver better performance
+
+00:01:24.150 --> 00:01:26.970
+to newer browsers without
+breaking older ones.
+
+00:01:26.970 --> 00:01:28.860
+Hooray for modules.
+
+00:01:28.860 --> 00:01:30.780
+See you next time.
+
+00:01:30.780 --> 00:01:33.300
+Do you sometimes sit at home
+and think, I could really
+
+00:01:33.300 --> 00:01:34.860
+use some live coding right now?
+
+00:01:34.860 --> 00:01:37.890
+I can help with that, because
+our most recent live stream is
+
+00:01:37.890 --> 00:01:39.150
+right over there.
+
+00:01:39.150 --> 00:01:42.410
+And if you want more
+Micro Tips, subscribe.
+

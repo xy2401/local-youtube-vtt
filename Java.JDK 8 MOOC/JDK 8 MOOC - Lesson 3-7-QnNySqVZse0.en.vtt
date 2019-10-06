@@ -1,0 +1,324 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.750 --> 00:00:03.320
+[music]
+
+00:00:13.269 --> 00:00:15.840
+Hello and welcome to section 7
+
+00:00:15.840 --> 00:00:19.300
+of lesson 3. This is really just
+the conclusion
+
+00:00:19.300 --> 00:00:22.750
+of the entire course where I want to
+recap on
+
+00:00:22.750 --> 00:00:26.189
+all the different aspects that we've
+looked at over the 3
+
+00:00:26.189 --> 00:00:31.489
+lessons that we've been doing. Firstly
+
+00:00:31.489 --> 00:00:36.760
+let's just recap on Lambda expressions.
+The important thing about Lambda expressions
+
+00:00:36.760 --> 00:00:39.140
+is that it gives us a simple way now
+
+00:00:39.140 --> 00:00:44.010
+to define behavior. Behavior that we can
+assign to a variable,
+
+00:00:44.010 --> 00:00:48.160
+behavior that we can pass as a parameter. Rather than using
+
+00:00:48.160 --> 00:00:51.379
+these anonymous inner classes that we had before with
+
+00:00:51.379 --> 00:00:55.320
+rather complex syntax it's very simple,
+very clean way
+
+00:00:55.320 --> 00:00:58.670
+of allowing us to pass behavior as a
+parameter.
+
+00:00:58.670 --> 00:01:01.730
+Where you can use a Lambda expression
+
+00:01:01.730 --> 00:01:05.940
+is anywhere where the type of the object that
+you're going to use
+
+00:01:05.940 --> 00:01:10.330
+whether it's a parameter or a variable you're
+assigning to is a functional interface.
+
+00:01:10.330 --> 00:01:13.440
+Remember a functional interface is one that has
+
+00:01:13.440 --> 00:01:17.820
+only one abstract method, but that
+doesn't necessarily mean
+
+00:01:17.820 --> 00:01:21.660
+now in JDK 8 that it only has one method in the
+interface.
+
+00:01:21.660 --> 00:01:24.670
+What the Lambda expression does
+
+00:01:24.670 --> 00:01:28.740
+is provide an implementation of that
+abstract method.
+
+00:01:28.740 --> 00:01:33.100
+You can think of an Lambda expression like a
+method, but remember it's not associated
+
+00:01:33.100 --> 00:01:36.380
+with a class therefore it's an anonymous
+function.
+
+00:01:36.380 --> 00:01:41.110
+In terms of the stream API
+
+00:01:41.110 --> 00:01:45.520
+what this gives us is a way of having a
+pipeline of operations
+
+00:01:45.520 --> 00:01:48.720
+so that we can process collections
+of data.
+
+00:01:48.720 --> 00:01:52.140
+Number of elements of data can be
+processed this way.
+
+00:01:52.140 --> 00:01:55.950
+We can acquire sources 
+
+00:01:55.950 --> 00:02:00.440
+for a stream from various different places.
+The collections API
+
+00:02:00.440 --> 00:02:04.780
+is one that has a number of ways of doing
+that, but there are other places
+
+00:02:04.780 --> 00:02:08.340
+in the standard classes where you can
+get streams from.
+
+00:02:08.340 --> 00:02:14.230
+In terms of files, in terms of directories, zip
+files and so on.
+
+00:02:14.230 --> 00:02:17.540
+The important thing about streams is
+that they can be processed
+
+00:02:17.540 --> 00:02:21.760
+sequentially or in parallel and, for the
+majority of the time,
+
+00:02:21.760 --> 00:02:25.420
+the way that they're processed, whether it's sequential or parallel
+
+00:02:25.420 --> 00:02:30.909
+won't affect the outcome and the code to
+use is exactly the same regardless of
+
+00:02:30.909 --> 00:02:32.019
+how it's being processed.
+
+00:02:32.019 --> 00:02:35.220
+In terms of the structure of the
+
+00:02:35.220 --> 00:02:40.370
+stream you have a source then
+potentially intermediate operations
+
+00:02:40.370 --> 00:02:44.439
+and some form a terminal operation. How
+the
+
+00:02:44.439 --> 00:02:47.540
+intermediate operation and how the
+terminal operation
+
+00:02:47.540 --> 00:02:51.540
+actually works is often defined using
+Lambda expressions.
+
+00:02:51.540 --> 00:02:54.959
+That's the reason Lambda expressions were
+introduced into JDK 8
+
+00:02:54.959 --> 00:03:00.409
+so that we could build the stream API in a
+simple way. Terminal operations,
+
+00:03:00.409 --> 00:03:04.069
+because we don't know whether they will
+actually return something that is
+
+00:03:04.069 --> 00:03:07.329
+value return an optional and the
+
+00:03:07.329 --> 00:03:11.959
+optional class now allows us to avoid a
+lot of the problems we had in the past
+
+00:03:11.959 --> 00:03:15.030
+with using a null reference and potentially
+having
+
+00:03:15.030 --> 00:03:19.090
+a NullPointerException. Putting all these
+things together
+
+00:03:19.090 --> 00:03:22.790
+we now have a functional style of programming
+
+00:03:22.790 --> 00:03:29.769
+available to us in Java. One of the
+really important things as a Java
+
+00:03:29.769 --> 00:03:30.540
+programmer
+
+00:03:30.540 --> 00:03:33.769
+when you approach using Lambda
+expressions and streams
+
+00:03:33.769 --> 00:03:37.979
+is that you do need to think differently.
+What you've got to do
+
+00:03:37.979 --> 00:03:42.479
+is you've got to stop thinking
+imperatively, stop thinking in terms of
+
+00:03:42.479 --> 00:03:43.159
+loops,
+
+00:03:43.159 --> 00:03:47.379
+stop thinking in terms of using mutable
+state and variables to hold
+
+00:03:47.379 --> 00:03:50.709
+values. Think functionally
+
+00:03:50.709 --> 00:03:55.190
+remember the things that we've done
+in this course. Think,
+
+00:03:55.190 --> 00:03:58.299
+rather than using a loop, an explicit
+loop of
+
+00:03:58.299 --> 00:04:01.939
+using recursion, where you chain
+together a sequence of method calls, a
+
+00:04:01.939 --> 00:04:03.199
+sequence of functions
+
+00:04:03.199 --> 00:04:07.349
+to provide repeated behavior.
+
+00:04:07.349 --> 00:04:11.840
+If you are going to use the forEach
+method think very carefully before you
+
+00:04:11.840 --> 00:04:12.530
+actually do it.
+
+00:04:12.530 --> 00:04:16.139
+Is there a more functional way of
+replacing that forEach method?
+
+00:04:16.139 --> 00:04:20.109
+If you're just printing out values that's
+fine, but if you're trying to manipulate
+
+00:04:20.109 --> 00:04:20.989
+things
+
+00:04:20.989 --> 00:04:24.849
+within your forEach statement then you do
+probably need to
+
+00:04:24.849 --> 00:04:25.930
+replace it
+
+00:04:25.930 --> 00:04:29.680
+with more functional code. Streams
+
+00:04:29.680 --> 00:04:33.590
+can be infinite, but infinite streams
+don't need to go on forever.
+
+00:04:33.590 --> 00:04:37.460
+We saw that with using things like findFirst or findAny
+
+00:04:37.460 --> 00:04:40.510
+you can terminate an infinite stream
+
+00:04:40.510 --> 00:04:45.400
+at a certain point when a particular
+criteria is met.
+
+00:04:45.400 --> 00:04:48.860
+The other thing, because we can
+
+00:04:48.860 --> 00:04:52.170
+execute code in a stream in parallel
+
+00:04:52.170 --> 00:04:56.110
+don't always think that the code is
+going to execute faster.
+
+00:04:56.110 --> 00:05:01.040
+Yes, parallel enables you to do several things
+at the same time,
+
+00:05:01.040 --> 00:05:04.640
+but a parallel streams will always involve more work.
+
+00:05:04.640 --> 00:05:08.910
+Sometimes that will happen quicker than
+if you do sequentially.
+
+00:05:08.910 --> 00:05:13.910
+And that is the end of this three-week
+course.
+
+00:05:13.910 --> 00:05:18.160
+I hope you enjoyed everything that we've gone
+through, I hope that you find a lot of
+
+00:05:18.160 --> 00:05:19.660
+useful information here
+
+00:05:19.660 --> 00:05:23.080
+and it helps you to understand how to use
+Lambda expressions,
+
+00:05:23.080 --> 00:05:26.700
+how to use streams and how to develop
+much
+
+00:05:26.700 --> 00:05:30.490
+cleaner, much more elegant code using
+Java.
+
+00:05:30.490 --> 00:05:31.590
+Thank you very much
+

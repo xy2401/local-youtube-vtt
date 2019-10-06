@@ -1,0 +1,319 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.405
+[MUSIC PLAYING]
+
+00:00:05.275 --> 00:00:06.150
+KAYCE BASQUES: Howdy.
+
+00:00:06.150 --> 00:00:08.970
+Here's what's new in
+Dev Tools in Chrome 74.
+
+00:00:08.970 --> 00:00:11.850
+First up, DevTools now
+highlights all nodes
+
+00:00:11.850 --> 00:00:15.020
+affected by a CSS property.
+
+00:00:15.020 --> 00:00:18.230
+Here, I've got DevTools
+open alongside the DevTools
+
+00:00:18.230 --> 00:00:19.280
+homepage.
+
+00:00:19.280 --> 00:00:21.500
+I want to view the styles
+for this paragraph,
+
+00:00:21.500 --> 00:00:24.890
+so I click Inspect, and
+then I click the paragraph.
+
+00:00:24.890 --> 00:00:27.620
+When I hover over margin,
+I see orange boxes
+
+00:00:27.620 --> 00:00:30.890
+before and after
+each paragraph node.
+
+00:00:30.890 --> 00:00:33.800
+This means that the margin
+property I'm hovering over
+
+00:00:33.800 --> 00:00:35.690
+applies to all these nodes.
+
+00:00:35.690 --> 00:00:37.940
+When I change
+padding to 10 pixels
+
+00:00:37.940 --> 00:00:42.380
+and then hover over that, I see
+green boxes around the node.
+
+00:00:42.380 --> 00:00:45.530
+The Audits panel has a new
+tap targets audit, as well as
+
+00:00:45.530 --> 00:00:49.310
+a new badging system
+for the PWA audit.
+
+00:00:49.310 --> 00:00:52.670
+The new tap targets audit
+checks that interactive nodes
+
+00:00:52.670 --> 00:00:56.250
+like buttons and links are
+usable for mobile users.
+
+00:00:56.250 --> 00:00:58.460
+For example, if a
+button and a link
+
+00:00:58.460 --> 00:01:00.980
+are too small and
+too close together,
+
+00:01:00.980 --> 00:01:04.190
+a mobile user may tap the link
+by mistake when they actually
+
+00:01:04.190 --> 00:01:06.140
+meant to tap the button.
+
+00:01:06.140 --> 00:01:08.120
+In this report,
+the Audits panel is
+
+00:01:08.120 --> 00:01:11.750
+saying that the File a Bug link
+is overlapping the View Source
+
+00:01:11.750 --> 00:01:12.590
+link.
+
+00:01:12.590 --> 00:01:14.630
+To simulate mobile
+and see this problem
+
+00:01:14.630 --> 00:01:17.450
+myself, I'll click
+Toggle Device Toolbar
+
+00:01:17.450 --> 00:01:21.740
+and pick an arbitrary
+mobile device, say Pixels 2.
+
+00:01:21.740 --> 00:01:23.540
+When I scroll to
+the bottom, I see
+
+00:01:23.540 --> 00:01:26.300
+the File a Bug link with
+the View Source link right
+
+00:01:26.300 --> 00:01:27.600
+below it.
+
+00:01:27.600 --> 00:01:29.690
+So it makes sense
+that these tap targets
+
+00:01:29.690 --> 00:01:32.030
+might be too close on mobile.
+
+00:01:32.030 --> 00:01:34.310
+In general, to pass
+the audit, I need
+
+00:01:34.310 --> 00:01:37.790
+to make sure that the targets
+are at least 48 pixels tall
+
+00:01:37.790 --> 00:01:41.000
+and 48 pixels wide,
+with 8 pixels of space
+
+00:01:41.000 --> 00:01:42.650
+between targets.
+
+00:01:42.650 --> 00:01:46.620
+Moving on to the PWA category,
+when you pass a section,
+
+00:01:46.620 --> 00:01:49.540
+such as Fast and
+Reliable, you get a badge.
+
+00:01:49.540 --> 00:01:51.650
+And if you pass
+all three sections,
+
+00:01:51.650 --> 00:01:55.550
+you get a checkmark for the
+PWA category [INAUDIBLE]..
+
+00:01:55.550 --> 00:01:57.980
+You can now view binary
+WebSocket messages
+
+00:01:57.980 --> 00:02:00.650
+from the Network panel.
+
+00:02:00.650 --> 00:02:03.800
+To view WebSocket messages,
+go to the Network panel,
+
+00:02:03.800 --> 00:02:07.070
+click the row that represents
+a WebSocket connection,
+
+00:02:07.070 --> 00:02:09.440
+then open the Messages tab.
+
+00:02:09.440 --> 00:02:12.080
+A binary message from
+the browser to the server
+
+00:02:12.080 --> 00:02:15.860
+has a green up arrow next
+to it, and a binary message
+
+00:02:15.860 --> 00:02:17.990
+from the server
+to the browser has
+
+00:02:17.990 --> 00:02:20.350
+a red down arrow next to it.
+
+00:02:20.350 --> 00:02:22.520
+Click a binary message
+to view its content
+
+00:02:22.520 --> 00:02:25.000
+in the section below the table.
+
+00:02:25.000 --> 00:02:28.295
+Click the Format list to
+convert from the default hex
+
+00:02:28.295 --> 00:02:33.530
+to base 64 or UTF-8, and
+click Copy to copy the message
+
+00:02:33.530 --> 00:02:36.000
+content to your clipboard.
+
+00:02:36.000 --> 00:02:37.850
+The Command menu
+now has a command
+
+00:02:37.850 --> 00:02:40.820
+for capturing area screenshots.
+
+00:02:40.820 --> 00:02:44.360
+Press Control-Shift-P or
+Command-Shift-P on Mac
+
+00:02:44.360 --> 00:02:45.860
+to open the Command menu.
+
+00:02:45.860 --> 00:02:50.120
+Start typing "area," then
+press Enter to run the command.
+
+00:02:50.120 --> 00:02:52.370
+Drag your mouse over the
+section of the viewport
+
+00:02:52.370 --> 00:02:54.170
+that you want to
+screenshot, then
+
+00:02:54.170 --> 00:02:58.640
+release your mouse to
+capture the screenshot.
+
+00:02:58.640 --> 00:03:01.420
+You can now filter the network
+log to only show requests
+
+00:03:01.420 --> 00:03:05.680
+that a service worker
+caused or intercepted.
+
+00:03:05.680 --> 00:03:09.370
+Type is:service-worker-initiated
+to view requests that were
+
+00:03:09.370 --> 00:03:12.130
+caused by a service
+worker, or type
+
+00:03:12.130 --> 00:03:15.730
+is:service-worker-intercepted
+to view requests that matched
+
+00:03:15.730 --> 00:03:18.070
+a service worker route.
+
+00:03:18.070 --> 00:03:23.140
+The Performance panel now marks
+up long tasks and First Paint.
+
+00:03:23.140 --> 00:03:25.180
+Here, I've got a
+recording of the page load
+
+00:03:25.180 --> 00:03:27.310
+performance of Google Maps.
+
+00:03:27.310 --> 00:03:31.300
+Tasks are now shown at the top
+of the main thread flame chart.
+
+00:03:31.300 --> 00:03:35.530
+Long tasks have a red triangle
+in their top-right corner.
+
+00:03:35.530 --> 00:03:40.840
+In the Timing section, the new
+First Paint marker is shown.
+
+00:03:40.840 --> 00:03:43.390
+Here's a bonus tip on a
+lesser-known feature that's
+
+00:03:43.390 --> 00:03:46.540
+been in DevTools
+for a long time.
+
+00:03:46.540 --> 00:03:49.930
+By default, the Styles
+pane shows hex color codes.
+
+00:03:49.930 --> 00:03:55.760
+To view RGB or HSL, hold Shift
+then click the color box.
+
+00:03:55.760 --> 00:03:57.220
+That's all for Chrome 74.
+
+00:03:57.220 --> 00:03:59.810
+Leave me questions and
+feedback in the comments.
+
+00:03:59.810 --> 00:04:03.720
+Otherwise, I'll see you in
+six weeks for Chrome 75.
+
+00:04:03.720 --> 00:04:06.470
+[MUSIC PLAYING]
+

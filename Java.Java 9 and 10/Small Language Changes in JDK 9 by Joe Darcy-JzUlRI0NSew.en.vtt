@@ -1,0 +1,2832 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.750 align:start position:0%
+ 
+hello<00:00:00.329><c> my</c><00:00:00.930><c> name</c><00:00:01.110><c> is</c><00:00:01.140><c> Joe</c><00:00:01.860><c> Darcy</c><00:00:02.220><c> I'm</c><00:00:02.520><c> an</c>
+
+00:00:02.750 --> 00:00:02.760 align:start position:0%
+hello my name is Joe Darcy I'm an
+ 
+
+00:00:02.760 --> 00:00:05.059 align:start position:0%
+hello my name is Joe Darcy I'm an
+engineer<00:00:03.149><c> in</c><00:00:03.330><c> Oracle's</c><00:00:03.899><c> Java</c><00:00:04.140><c> platform</c><00:00:04.560><c> team</c>
+
+00:00:05.059 --> 00:00:05.069 align:start position:0%
+engineer in Oracle's Java platform team
+ 
+
+00:00:05.069 --> 00:00:07.400 align:start position:0%
+engineer in Oracle's Java platform team
+and<00:00:05.430><c> I'll</c><00:00:05.850><c> be</c><00:00:05.970><c> speaking</c><00:00:06.299><c> today</c><00:00:06.420><c> about</c><00:00:06.750><c> small</c>
+
+00:00:07.400 --> 00:00:07.410 align:start position:0%
+and I'll be speaking today about small
+ 
+
+00:00:07.410 --> 00:00:12.169 align:start position:0%
+and I'll be speaking today about small
+language<00:00:07.770><c> changes</c><00:00:08.160><c> in</c><00:00:08.340><c> jt9</c><00:00:09.950><c> first</c><00:00:10.950><c> however</c><00:00:11.370><c> we</c>
+
+00:00:12.169 --> 00:00:12.179 align:start position:0%
+language changes in jt9 first however we
+ 
+
+00:00:12.179 --> 00:00:13.190 align:start position:0%
+language changes in jt9 first however we
+should<00:00:12.389><c> mention</c><00:00:12.509><c> that</c><00:00:12.690><c> there</c><00:00:12.929><c> was</c><00:00:13.019><c> a</c><00:00:13.049><c> very</c>
+
+00:00:13.190 --> 00:00:13.200 align:start position:0%
+should mention that there was a very
+ 
+
+00:00:13.200 --> 00:00:15.829 align:start position:0%
+should mention that there was a very
+large<00:00:13.530><c> language</c><00:00:13.889><c> change</c><00:00:14.340><c> made</c><00:00:14.940><c> in</c><00:00:14.969><c> JDK</c><00:00:15.420><c> 9</c><00:00:15.599><c> as</c>
+
+00:00:15.829 --> 00:00:15.839 align:start position:0%
+large language change made in JDK 9 as
+ 
+
+00:00:15.839 --> 00:00:18.620 align:start position:0%
+large language change made in JDK 9 as
+part<00:00:16.289><c> of</c><00:00:16.379><c> modularity</c><00:00:16.980><c> that</c><00:00:17.420><c> his</c><00:00:18.420><c> project</c>
+
+00:00:18.620 --> 00:00:18.630 align:start position:0%
+part of modularity that his project
+ 
+
+00:00:18.630 --> 00:00:21.679 align:start position:0%
+part of modularity that his project
+jigsaw<00:00:19.550><c> there's</c><00:00:20.550><c> a</c><00:00:20.670><c> new</c><00:00:20.820><c> kind</c><00:00:21.090><c> of</c><00:00:21.150><c> source</c><00:00:21.420><c> file</c>
+
+00:00:21.679 --> 00:00:21.689 align:start position:0%
+jigsaw there's a new kind of source file
+ 
+
+00:00:21.689 --> 00:00:24.560 align:start position:0%
+jigsaw there's a new kind of source file
+a<00:00:21.960><c> module</c><00:00:22.800><c> info</c><00:00:23.039><c> dot</c><00:00:23.220><c> Java</c><00:00:23.490><c> file</c><00:00:23.789><c> that's</c><00:00:24.300><c> used</c>
+
+00:00:24.560 --> 00:00:24.570 align:start position:0%
+a module info dot Java file that's used
+ 
+
+00:00:24.570 --> 00:00:27.529 align:start position:0%
+a module info dot Java file that's used
+to<00:00:24.720><c> declare</c><00:00:26.000><c> dependencies</c><00:00:27.000><c> between</c><00:00:27.150><c> modules</c>
+
+00:00:27.529 --> 00:00:27.539 align:start position:0%
+to declare dependencies between modules
+ 
+
+00:00:27.539 --> 00:00:31.160 align:start position:0%
+to declare dependencies between modules
+as<00:00:28.019><c> well</c><00:00:28.800><c> as</c><00:00:28.920><c> to</c><00:00:29.039><c> declare</c><00:00:29.189><c> what</c><00:00:29.970><c> packages</c><00:00:30.929><c> a</c>
+
+00:00:31.160 --> 00:00:31.170 align:start position:0%
+as well as to declare what packages a
+ 
+
+00:00:31.170 --> 00:00:32.930 align:start position:0%
+as well as to declare what packages a
+module<00:00:31.560><c> exports</c><00:00:32.009><c> and</c><00:00:32.219><c> other</c><00:00:32.610><c> information</c>
+
+00:00:32.930 --> 00:00:32.940 align:start position:0%
+module exports and other information
+ 
+
+00:00:32.940 --> 00:00:36.290 align:start position:0%
+module exports and other information
+like<00:00:33.649><c> that</c><00:00:34.649><c> there's</c><00:00:35.550><c> much</c><00:00:35.760><c> more</c><00:00:35.940><c> to</c><00:00:36.000><c> be</c><00:00:36.090><c> said</c>
+
+00:00:36.290 --> 00:00:36.300 align:start position:0%
+like that there's much more to be said
+ 
+
+00:00:36.300 --> 00:00:38.150 align:start position:0%
+like that there's much more to be said
+about<00:00:36.360><c> modules</c><00:00:36.960><c> and</c><00:00:37.200><c> to</c><00:00:37.710><c> learn</c><00:00:37.860><c> more</c><00:00:38.100><c> about</c>
+
+00:00:38.150 --> 00:00:38.160 align:start position:0%
+about modules and to learn more about
+ 
+
+00:00:38.160 --> 00:00:41.330 align:start position:0%
+about modules and to learn more about
+modules<00:00:38.760><c> I</c><00:00:39.000><c> recommend</c><00:00:39.899><c> you</c><00:00:40.320><c> listen</c><00:00:40.920><c> to</c><00:00:41.219><c> the</c>
+
+00:00:41.330 --> 00:00:41.340 align:start position:0%
+modules I recommend you listen to the
+ 
+
+00:00:41.340 --> 00:00:44.060 align:start position:0%
+modules I recommend you listen to the
+modules<00:00:42.000><c> and</c><00:00:42.239><c> JDK</c><00:00:42.450><c> 9</c><00:00:42.719><c> talk</c><00:00:43.020><c> by</c><00:00:43.530><c> my</c><00:00:43.649><c> colleague</c>
+
+00:00:44.060 --> 00:00:44.070 align:start position:0%
+modules and JDK 9 talk by my colleague
+ 
+
+00:00:44.070 --> 00:00:47.150 align:start position:0%
+modules and JDK 9 talk by my colleague
+Alex<00:00:44.370><c> Buckley</c><00:00:45.440><c> for</c><00:00:46.440><c> the</c><00:00:46.530><c> smaller</c><00:00:46.770><c> language</c>
+
+00:00:47.150 --> 00:00:47.160 align:start position:0%
+Alex Buckley for the smaller language
+ 
+
+00:00:47.160 --> 00:00:50.180 align:start position:0%
+Alex Buckley for the smaller language
+changes<00:00:47.579><c> made</c><00:00:47.969><c> in</c><00:00:48.000><c> JDK</c><00:00:48.539><c> 9</c><00:00:48.719><c> they</c><00:00:49.710><c> come</c><00:00:49.890><c> in</c><00:00:50.010><c> two</c>
+
+00:00:50.180 --> 00:00:50.190 align:start position:0%
+changes made in JDK 9 they come in two
+ 
+
+00:00:50.190 --> 00:00:52.819 align:start position:0%
+changes made in JDK 9 they come in two
+categories<00:00:50.399><c> one</c><00:00:51.000><c> is</c><00:00:51.660><c> a</c><00:00:51.899><c> set</c><00:00:52.110><c> of</c><00:00:52.260><c> planned</c>
+
+00:00:52.819 --> 00:00:52.829 align:start position:0%
+categories one is a set of planned
+ 
+
+00:00:52.829 --> 00:00:55.520 align:start position:0%
+categories one is a set of planned
+refinements<00:00:53.489><c> for</c><00:00:53.780><c> project</c><00:00:54.780><c> lambda</c><00:00:55.050><c> from</c><00:00:55.170><c> JDK</c>
+
+00:00:55.520 --> 00:00:55.530 align:start position:0%
+refinements for project lambda from JDK
+ 
+
+00:00:55.530 --> 00:00:58.430 align:start position:0%
+refinements for project lambda from JDK
+8<00:00:55.559><c> and</c><00:00:55.920><c> project</c><00:00:56.460><c> coin</c><00:00:56.640><c> from</c><00:00:56.820><c> JDK</c><00:00:57.210><c> 7</c><00:00:57.570><c> and</c><00:00:57.780><c> the</c>
+
+00:00:58.430 --> 00:00:58.440 align:start position:0%
+8 and project coin from JDK 7 and the
+ 
+
+00:00:58.440 --> 00:01:00.080 align:start position:0%
+8 and project coin from JDK 7 and the
+second<00:00:58.739><c> set</c><00:00:58.859><c> of</c><00:00:58.949><c> changes</c><00:00:59.160><c> involves</c><00:00:59.910><c> making</c>
+
+00:01:00.080 --> 00:01:00.090 align:start position:0%
+second set of changes involves making
+ 
+
+00:01:00.090 --> 00:01:01.910 align:start position:0%
+second set of changes involves making
+the<00:01:00.600><c> deprecation</c><00:01:01.079><c> facility</c><00:01:01.649><c> more</c>
+
+00:01:01.910 --> 00:01:01.920 align:start position:0%
+the deprecation facility more
+ 
+
+00:01:01.920 --> 00:01:05.090 align:start position:0%
+the deprecation facility more
+informative<00:01:02.780><c> project</c><00:01:03.780><c> coin</c><00:01:03.899><c> and</c><00:01:04.049><c> JDK</c><00:01:04.260><c> 7</c><00:01:04.799><c> was</c><00:01:05.070><c> a</c>
+
+00:01:05.090 --> 00:01:05.100 align:start position:0%
+informative project coin and JDK 7 was a
+ 
+
+00:01:05.100 --> 00:01:07.940 align:start position:0%
+informative project coin and JDK 7 was a
+collection<00:01:05.489><c> of</c><00:01:05.670><c> half</c><00:01:06.630><c> a</c><00:01:06.750><c> dozen</c><00:01:06.950><c> small</c>
+
+00:01:07.940 --> 00:01:07.950 align:start position:0%
+collection of half a dozen small
+ 
+
+00:01:07.950 --> 00:01:09.890 align:start position:0%
+collection of half a dozen small
+language<00:01:08.310><c> changes</c><00:01:08.700><c> and</c><00:01:08.970><c> we</c><00:01:09.390><c> made</c><00:01:09.600><c> further</c>
+
+00:01:09.890 --> 00:01:09.900 align:start position:0%
+language changes and we made further
+ 
+
+00:01:09.900 --> 00:01:12.020 align:start position:0%
+language changes and we made further
+refinements<00:01:10.500><c> to</c><00:01:10.530><c> 3</c><00:01:10.830><c> of</c><00:01:10.920><c> those</c><00:01:11.040><c> in</c><00:01:11.340><c> JDK</c><00:01:11.880><c> 9</c>
+
+00:01:12.020 --> 00:01:12.030 align:start position:0%
+refinements to 3 of those in JDK 9
+ 
+
+00:01:12.030 --> 00:01:14.539 align:start position:0%
+refinements to 3 of those in JDK 9
+diamond<00:01:12.840><c> try</c><00:01:13.080><c> earth's</c><00:01:13.229><c> resources</c><00:01:13.350><c> and</c><00:01:13.979><c> Varg</c>
+
+00:01:14.539 --> 00:01:14.549 align:start position:0%
+diamond try earth's resources and Varg
+ 
+
+00:01:14.549 --> 00:01:17.590 align:start position:0%
+diamond try earth's resources and Varg
+warnings<00:01:15.320><c> the</c><00:01:16.320><c> small</c><00:01:16.560><c> language</c><00:01:16.860><c> changes</c><00:01:17.189><c> in</c>
+
+00:01:17.590 --> 00:01:17.600 align:start position:0%
+warnings the small language changes in
+ 
+
+00:01:17.600 --> 00:01:20.240 align:start position:0%
+warnings the small language changes in
+included<00:01:18.600><c> those</c><00:01:18.750><c> updates</c><00:01:19.080><c> the</c><00:01:19.200><c> coin</c><00:01:19.439><c> as</c><00:01:19.710><c> well</c>
+
+00:01:20.240 --> 00:01:20.250 align:start position:0%
+included those updates the coin as well
+ 
+
+00:01:20.250 --> 00:01:22.640 align:start position:0%
+included those updates the coin as well
+as<00:01:20.430><c> two</c><00:01:20.759><c> updates</c><00:01:21.000><c> related</c><00:01:21.810><c> to</c><00:01:21.960><c> project</c><00:01:22.200><c> lambda</c>
+
+00:01:22.640 --> 00:01:22.650 align:start position:0%
+as two updates related to project lambda
+ 
+
+00:01:22.650 --> 00:01:24.890 align:start position:0%
+as two updates related to project lambda
+from<00:01:22.860><c> dedicate</c><00:01:23.250><c> and</c><00:01:23.670><c> will</c><00:01:24.000><c> speak</c><00:01:24.750><c> through</c>
+
+00:01:24.890 --> 00:01:24.900 align:start position:0%
+from dedicate and will speak through
+ 
+
+00:01:24.900 --> 00:01:27.590 align:start position:0%
+from dedicate and will speak through
+these<00:01:25.080><c> in</c><00:01:25.320><c> terms</c><00:01:25.470><c> first</c><00:01:26.250><c> safe</c><00:01:26.880><c> are</c><00:01:27.090><c> args</c><00:01:27.450><c> on</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+these in terms first safe are args on
+ 
+
+00:01:27.600 --> 00:01:30.080 align:start position:0%
+these in terms first safe are args on
+private<00:01:28.080><c> instance</c><00:01:28.380><c> methods</c><00:01:28.820><c> you</c><00:01:29.820><c> could</c><00:01:29.970><c> write</c>
+
+00:01:30.080 --> 00:01:30.090 align:start position:0%
+private instance methods you could write
+ 
+
+00:01:30.090 --> 00:01:31.819 align:start position:0%
+private instance methods you could write
+code<00:01:30.329><c> like</c><00:01:30.540><c> this</c><00:01:30.720><c> for</c><00:01:31.380><c> some</c><00:01:31.560><c> time</c>
+
+00:01:31.819 --> 00:01:31.829 align:start position:0%
+code like this for some time
+ 
+
+00:01:31.829 --> 00:01:35.120 align:start position:0%
+code like this for some time
+even<00:01:32.159><c> back</c><00:01:32.310><c> in</c><00:01:32.340><c> jdk</c><00:01:33.000><c> 5</c><00:01:33.210><c> or</c><00:01:33.420><c> 6</c><00:01:33.740><c> using</c><00:01:34.740><c> the</c>
+
+00:01:35.120 --> 00:01:35.130 align:start position:0%
+even back in jdk 5 or 6 using the
+ 
+
+00:01:35.130 --> 00:01:37.310 align:start position:0%
+even back in jdk 5 or 6 using the
+utility<00:01:35.579><c> method</c><00:01:35.880><c> arrays</c><00:01:36.240><c> dot</c><00:01:36.450><c> as</c><00:01:36.630><c> lists</c><00:01:36.930><c> in</c><00:01:37.200><c> a</c>
+
+00:01:37.310 --> 00:01:37.320 align:start position:0%
+utility method arrays dot as lists in a
+ 
+
+00:01:37.320 --> 00:01:41.300 align:start position:0%
+utility method arrays dot as lists in a
+platform<00:01:37.560><c> to</c><00:01:38.869><c> we</c><00:01:39.869><c> easily</c><00:01:40.049><c> create</c><00:01:40.590><c> in</c><00:01:41.040><c> this</c>
+
+00:01:41.300 --> 00:01:41.310 align:start position:0%
+platform to we easily create in this
+ 
+
+00:01:41.310 --> 00:01:44.539 align:start position:0%
+platform to we easily create in this
+case<00:01:41.520><c> a</c><00:01:41.820><c> list</c><00:01:42.509><c> of</c><00:01:42.750><c> list</c><00:01:42.960><c> of</c><00:01:43.049><c> strings</c><00:01:43.549><c> however</c>
+
+00:01:44.539 --> 00:01:44.549 align:start position:0%
+case a list of list of strings however
+ 
+
+00:01:44.549 --> 00:01:47.870 align:start position:0%
+case a list of list of strings however
+when<00:01:44.939><c> you</c><00:01:45.360><c> compile</c><00:01:45.869><c> this</c><00:01:46.079><c> code</c><00:01:46.520><c> if</c><00:01:47.520><c> you</c><00:01:47.759><c> were</c>
+
+00:01:47.870 --> 00:01:47.880 align:start position:0%
+when you compile this code if you were
+ 
+
+00:01:47.880 --> 00:01:49.249 align:start position:0%
+when you compile this code if you were
+diligent<00:01:48.270><c> about</c><00:01:48.360><c> your</c><00:01:48.600><c> warning</c><00:01:48.899><c> message</c>
+
+00:01:49.249 --> 00:01:49.259 align:start position:0%
+diligent about your warning message
+ 
+
+00:01:49.259 --> 00:01:51.530 align:start position:0%
+diligent about your warning message
+messages<00:01:50.250><c> you'd</c><00:01:50.579><c> note</c><00:01:50.790><c> a</c><00:01:50.820><c> warning</c><00:01:51.210><c> like</c><00:01:51.329><c> this</c>
+
+00:01:51.530 --> 00:01:51.540 align:start position:0%
+messages you'd note a warning like this
+ 
+
+00:01:51.540 --> 00:01:54.200 align:start position:0%
+messages you'd note a warning like this
+warning<00:01:52.280><c> unchecked</c><00:01:53.280><c> generic</c><00:01:53.610><c> array</c><00:01:53.759><c> creation</c>
+
+00:01:54.200 --> 00:01:54.210 align:start position:0%
+warning unchecked generic array creation
+ 
+
+00:01:54.210 --> 00:01:56.630 align:start position:0%
+warning unchecked generic array creation
+for<00:01:54.479><c> VAR</c><00:01:54.630><c> x</c><00:01:54.810><c> parameter</c><00:01:55.290><c> so</c><00:01:56.130><c> what's</c><00:01:56.310><c> going</c><00:01:56.549><c> on</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+for VAR x parameter so what's going on
+ 
+
+00:01:56.640 --> 00:02:00.170 align:start position:0%
+for VAR x parameter so what's going on
+here<00:01:56.960><c> this</c><00:01:57.960><c> warning</c><00:01:58.380><c> is</c><00:01:58.790><c> actually</c><00:01:59.790><c> mandated</c>
+
+00:02:00.170 --> 00:02:00.180 align:start position:0%
+here this warning is actually mandated
+ 
+
+00:02:00.180 --> 00:02:01.840 align:start position:0%
+here this warning is actually mandated
+by<00:02:00.390><c> the</c><00:02:00.420><c> java</c><00:02:00.750><c> language</c><00:02:00.869><c> specification</c>
+
+00:02:01.840 --> 00:02:01.850 align:start position:0%
+by the java language specification
+ 
+
+00:02:01.850 --> 00:02:05.060 align:start position:0%
+by the java language specification
+because<00:02:02.850><c> it's</c><00:02:03.420><c> possible</c><00:02:04.110><c> something</c><00:02:04.740><c> bad</c>
+
+00:02:05.060 --> 00:02:05.070 align:start position:0%
+because it's possible something bad
+ 
+
+00:02:05.070 --> 00:02:07.160 align:start position:0%
+because it's possible something bad
+could<00:02:05.280><c> be</c><00:02:05.399><c> happening</c><00:02:05.759><c> that</c><00:02:06.540><c> something</c><00:02:06.869><c> bad</c><00:02:06.990><c> is</c>
+
+00:02:07.160 --> 00:02:07.170 align:start position:0%
+could be happening that something bad is
+ 
+
+00:02:07.170 --> 00:02:08.900 align:start position:0%
+could be happening that something bad is
+called<00:02:07.380><c> heat</c><00:02:07.590><c> pollution</c><00:02:07.740><c> and</c><00:02:08.250><c> it's</c><00:02:08.550><c> discussed</c>
+
+00:02:08.900 --> 00:02:08.910 align:start position:0%
+called heat pollution and it's discussed
+ 
+
+00:02:08.910 --> 00:02:11.600 align:start position:0%
+called heat pollution and it's discussed
+in<00:02:09.119><c> detail</c><00:02:09.509><c> in</c><00:02:09.690><c> the</c><00:02:09.869><c> specification</c><00:02:10.610><c> however</c>
+
+00:02:11.600 --> 00:02:11.610 align:start position:0%
+in detail in the specification however
+ 
+
+00:02:11.610 --> 00:02:13.700 align:start position:0%
+in detail in the specification however
+when<00:02:11.970><c> you</c><00:02:12.060><c> call</c><00:02:12.330><c> the</c><00:02:12.660><c> platform</c><00:02:13.260><c> array</c>
+
+00:02:13.700 --> 00:02:13.710 align:start position:0%
+when you call the platform array
+ 
+
+00:02:13.710 --> 00:02:16.820 align:start position:0%
+when you call the platform array
+thoughtless<00:02:13.920><c> method</c><00:02:15.080><c> nothing</c><00:02:16.080><c> bad</c><00:02:16.290><c> actually</c>
+
+00:02:16.820 --> 00:02:16.830 align:start position:0%
+thoughtless method nothing bad actually
+ 
+
+00:02:16.830 --> 00:02:19.520 align:start position:0%
+thoughtless method nothing bad actually
+happens<00:02:17.190><c> in</c><00:02:17.310><c> this</c><00:02:17.400><c> case</c><00:02:17.810><c> the</c><00:02:18.810><c> platform</c><00:02:19.260><c> method</c>
+
+00:02:19.520 --> 00:02:19.530 align:start position:0%
+happens in this case the platform method
+ 
+
+00:02:19.530 --> 00:02:21.680 align:start position:0%
+happens in this case the platform method
+is<00:02:19.620><c> not</c><00:02:19.770><c> misbehaving</c><00:02:20.340><c> so</c><00:02:20.640><c> this</c><00:02:21.270><c> error</c><00:02:21.570><c> is</c>
+
+00:02:21.680 --> 00:02:21.690 align:start position:0%
+is not misbehaving so this error is
+ 
+
+00:02:21.690 --> 00:02:23.900 align:start position:0%
+is not misbehaving so this error is
+uninformative<00:02:22.350><c> even</c><00:02:23.130><c> though</c><00:02:23.190><c> it's</c><00:02:23.340><c> mandated</c>
+
+00:02:23.900 --> 00:02:23.910 align:start position:0%
+uninformative even though it's mandated
+ 
+
+00:02:23.910 --> 00:02:26.510 align:start position:0%
+uninformative even though it's mandated
+by<00:02:24.150><c> the</c><00:02:24.180><c> platform</c><00:02:24.950><c> we</c><00:02:25.950><c> didn't</c><00:02:26.130><c> think</c><00:02:26.220><c> that</c><00:02:26.310><c> was</c>
+
+00:02:26.510 --> 00:02:26.520 align:start position:0%
+by the platform we didn't think that was
+ 
+
+00:02:26.520 --> 00:02:27.770 align:start position:0%
+by the platform we didn't think that was
+a<00:02:26.550><c> very</c><00:02:26.790><c> good</c><00:02:26.940><c> situation</c>
+
+00:02:27.770 --> 00:02:27.780 align:start position:0%
+a very good situation
+ 
+
+00:02:27.780 --> 00:02:29.630 align:start position:0%
+a very good situation
+so<00:02:28.170><c> in</c><00:02:28.290><c> project</c><00:02:28.710><c> Coyne</c><00:02:28.920><c> we</c><00:02:29.160><c> created</c><00:02:29.580><c> a</c>
+
+00:02:29.630 --> 00:02:29.640 align:start position:0%
+so in project Coyne we created a
+ 
+
+00:02:29.640 --> 00:02:31.070 align:start position:0%
+so in project Coyne we created a
+facility<00:02:30.120><c> to</c><00:02:30.270><c> get</c><00:02:30.720><c> rid</c><00:02:30.870><c> of</c><00:02:30.900><c> these</c>
+
+00:02:31.070 --> 00:02:31.080 align:start position:0%
+facility to get rid of these
+ 
+
+00:02:31.080 --> 00:02:33.740 align:start position:0%
+facility to get rid of these
+uninformative<00:02:31.770><c> warning</c><00:02:32.490><c> messages</c><00:02:32.820><c> and</c><00:02:33.120><c> that</c>
+
+00:02:33.740 --> 00:02:33.750 align:start position:0%
+uninformative warning messages and that
+ 
+
+00:02:33.750 --> 00:02:36.170 align:start position:0%
+uninformative warning messages and that
+facility<00:02:34.320><c> was</c><00:02:34.650><c> the</c><00:02:35.070><c> save</c><00:02:35.580><c> our</c><00:02:35.850><c> args</c>
+
+00:02:36.170 --> 00:02:36.180 align:start position:0%
+facility was the save our args
+ 
+
+00:02:36.180 --> 00:02:39.380 align:start position:0%
+facility was the save our args
+annotation<00:02:37.250><c> if</c><00:02:38.250><c> a</c><00:02:38.400><c> programmer</c><00:02:38.790><c> applies</c><00:02:39.180><c> the</c>
+
+00:02:39.380 --> 00:02:39.390 align:start position:0%
+annotation if a programmer applies the
+ 
+
+00:02:39.390 --> 00:02:41.540 align:start position:0%
+annotation if a programmer applies the
+safe<00:02:39.600><c> varargs</c><00:02:40.140><c> annotation</c><00:02:40.770><c> to</c><00:02:41.040><c> of</c><00:02:41.190><c> our</c><00:02:41.340><c> org</c>
+
+00:02:41.540 --> 00:02:41.550 align:start position:0%
+safe varargs annotation to of our org
+ 
+
+00:02:41.550 --> 00:02:43.580 align:start position:0%
+safe varargs annotation to of our org
+method<00:02:41.910><c> it</c><00:02:42.270><c> lets</c><00:02:42.510><c> the</c><00:02:42.630><c> compiler</c><00:02:43.080><c> know</c><00:02:43.260><c> that</c>
+
+00:02:43.580 --> 00:02:43.590 align:start position:0%
+method it lets the compiler know that
+ 
+
+00:02:43.590 --> 00:02:46.640 align:start position:0%
+method it lets the compiler know that
+the<00:02:43.970><c> programmer</c><00:02:44.970><c> is</c><00:02:45.210><c> asserting</c><00:02:45.690><c> that</c><00:02:45.720><c> the</c><00:02:46.470><c> VAR</c>
+
+00:02:46.640 --> 00:02:46.650 align:start position:0%
+the programmer is asserting that the VAR
+ 
+
+00:02:46.650 --> 00:02:49.040 align:start position:0%
+the programmer is asserting that the VAR
+arguments<00:02:47.100><c> that</c><00:02:47.160><c> does</c><00:02:47.520><c> not</c><00:02:47.670><c> misbehave</c><00:02:48.300><c> that</c>
+
+00:02:49.040 --> 00:02:49.050 align:start position:0%
+arguments that does not misbehave that
+ 
+
+00:02:49.050 --> 00:02:51.770 align:start position:0%
+arguments that does not misbehave that
+heat<00:02:49.290><c> pollution</c><00:02:49.680><c> does</c><00:02:50.400><c> not</c><00:02:50.580><c> occur</c><00:02:50.910><c> and</c>
+
+00:02:51.770 --> 00:02:51.780 align:start position:0%
+heat pollution does not occur and
+ 
+
+00:02:51.780 --> 00:02:53.480 align:start position:0%
+heat pollution does not occur and
+because<00:02:52.380><c> of</c><00:02:52.500><c> that</c><00:02:52.590><c> the</c><00:02:52.860><c> compiler</c><00:02:53.130><c> is</c>
+
+00:02:53.480 --> 00:02:53.490 align:start position:0%
+because of that the compiler is
+ 
+
+00:02:53.490 --> 00:02:56.020 align:start position:0%
+because of that the compiler is
+justified<00:02:54.060><c> by</c><00:02:54.690><c> the</c><00:02:54.750><c> updated</c><00:02:55.140><c> specification</c>
+
+00:02:56.020 --> 00:02:56.030 align:start position:0%
+justified by the updated specification
+ 
+
+00:02:56.030 --> 00:02:59.920 align:start position:0%
+justified by the updated specification
+to<00:02:57.030><c> not</c><00:02:57.450><c> emit</c><00:02:57.810><c> warning</c><00:02:58.230><c> messages</c><00:02:58.620><c> at</c><00:02:59.280><c> the</c>
+
+00:02:59.920 --> 00:02:59.930 align:start position:0%
+to not emit warning messages at the
+ 
+
+00:02:59.930 --> 00:03:02.270 align:start position:0%
+to not emit warning messages at the
+declaration<00:03:00.930><c> site</c><00:03:01.140><c> of</c><00:03:01.290><c> the</c><00:03:01.350><c> method</c><00:03:01.650><c> and</c><00:03:01.800><c> more</c>
+
+00:03:02.270 --> 00:03:02.280 align:start position:0%
+declaration site of the method and more
+ 
+
+00:03:02.280 --> 00:03:04.040 align:start position:0%
+declaration site of the method and more
+importantly<00:03:02.700><c> any</c><00:03:03.000><c> of</c><00:03:03.240><c> the</c><00:03:03.330><c> call</c><00:03:03.570><c> sites</c><00:03:03.810><c> of</c><00:03:03.990><c> the</c>
+
+00:03:04.040 --> 00:03:04.050 align:start position:0%
+importantly any of the call sites of the
+ 
+
+00:03:04.050 --> 00:03:07.340 align:start position:0%
+importantly any of the call sites of the
+method<00:03:04.350><c> so</c><00:03:05.160><c> now</c><00:03:05.340><c> as</c><00:03:05.910><c> of</c><00:03:06.180><c> JDK</c><00:03:06.420><c> 7</c><00:03:06.900><c> you</c><00:03:07.080><c> don't</c><00:03:07.260><c> get</c>
+
+00:03:07.340 --> 00:03:07.350 align:start position:0%
+method so now as of JDK 7 you don't get
+ 
+
+00:03:07.350 --> 00:03:09.650 align:start position:0%
+method so now as of JDK 7 you don't get
+warning<00:03:07.710><c> messages</c><00:03:08.100><c> calling</c><00:03:08.730><c> arrays</c><00:03:09.300><c> dot</c><00:03:09.480><c> as</c>
+
+00:03:09.650 --> 00:03:09.660 align:start position:0%
+warning messages calling arrays dot as
+ 
+
+00:03:09.660 --> 00:03:12.680 align:start position:0%
+warning messages calling arrays dot as
+list<00:03:11.000><c> because</c><00:03:12.000><c> the</c><00:03:12.120><c> design</c><00:03:12.450><c> of</c><00:03:12.630><c> the</c>
+
+00:03:12.680 --> 00:03:12.690 align:start position:0%
+list because the design of the
+ 
+
+00:03:12.690 --> 00:03:14.870 align:start position:0%
+list because the design of the
+annotation<00:03:13.200><c> facility</c><00:03:13.710><c> annotations</c><00:03:14.610><c> are</c><00:03:14.730><c> only</c>
+
+00:03:14.870 --> 00:03:14.880 align:start position:0%
+annotation facility annotations are only
+ 
+
+00:03:14.880 --> 00:03:17.660 align:start position:0%
+annotation facility annotations are only
+inherited<00:03:15.450><c> on</c><00:03:15.600><c> classes</c><00:03:16.170><c> not</c><00:03:16.860><c> interfaces</c><00:03:17.490><c> or</c>
+
+00:03:17.660 --> 00:03:17.670 align:start position:0%
+inherited on classes not interfaces or
+ 
+
+00:03:17.670 --> 00:03:20.030 align:start position:0%
+inherited on classes not interfaces or
+methods<00:03:18.120><c> therefore</c><00:03:19.080><c> the</c><00:03:19.500><c> safe</c><00:03:19.710><c> args</c>
+
+00:03:20.030 --> 00:03:20.040 align:start position:0%
+methods therefore the safe args
+ 
+
+00:03:20.040 --> 00:03:21.890 align:start position:0%
+methods therefore the safe args
+annotation<00:03:20.610><c> can</c><00:03:20.820><c> only</c><00:03:20.970><c> be</c><00:03:21.120><c> used</c><00:03:21.300><c> on</c><00:03:21.480><c> methods</c>
+
+00:03:21.890 --> 00:03:21.900 align:start position:0%
+annotation can only be used on methods
+ 
+
+00:03:21.900 --> 00:03:24.230 align:start position:0%
+annotation can only be used on methods
+that<00:03:22.050><c> cannot</c><00:03:22.410><c> be</c><00:03:22.470><c> overridden</c><00:03:23.030><c> what</c><00:03:24.030><c> are</c><00:03:24.180><c> the</c>
+
+00:03:24.230 --> 00:03:24.240 align:start position:0%
+that cannot be overridden what are the
+ 
+
+00:03:24.240 --> 00:03:25.280 align:start position:0%
+that cannot be overridden what are the
+kinds<00:03:24.540><c> of</c><00:03:24.630><c> methods</c><00:03:24.930><c> that</c><00:03:25.050><c> can't</c><00:03:25.260><c> be</c>
+
+00:03:25.280 --> 00:03:25.290 align:start position:0%
+kinds of methods that can't be
+ 
+
+00:03:25.290 --> 00:03:27.560 align:start position:0%
+kinds of methods that can't be
+overridden<00:03:25.740><c> we</c><00:03:26.580><c> can't</c><00:03:26.790><c> override</c><00:03:27.060><c> final</c>
+
+00:03:27.560 --> 00:03:27.570 align:start position:0%
+overridden we can't override final
+ 
+
+00:03:27.570 --> 00:03:32.030 align:start position:0%
+overridden we can't override final
+methods<00:03:28.040><c> or</c><00:03:29.040><c> static</c><00:03:29.460><c> methods</c><00:03:31.040><c> constructors</c>
+
+00:03:32.030 --> 00:03:32.040 align:start position:0%
+methods or static methods constructors
+ 
+
+00:03:32.040 --> 00:03:35.240 align:start position:0%
+methods or static methods constructors
+also<00:03:32.460><c> can't</c><00:03:32.730><c> be</c><00:03:32.790><c> overridden</c><00:03:33.470><c> from</c><00:03:34.470><c> the</c><00:03:35.040><c> VM</c>
+
+00:03:35.240 --> 00:03:35.250 align:start position:0%
+also can't be overridden from the VM
+ 
+
+00:03:35.250 --> 00:03:37.070 align:start position:0%
+also can't be overridden from the VM
+point<00:03:35.490><c> of</c><00:03:35.610><c> view</c><00:03:35.760><c> constructors</c><00:03:36.450><c> are</c><00:03:36.480><c> just</c><00:03:36.840><c> very</c>
+
+00:03:37.070 --> 00:03:37.080 align:start position:0%
+point of view constructors are just very
+ 
+
+00:03:37.080 --> 00:03:39.410 align:start position:0%
+point of view constructors are just very
+special<00:03:37.260><c> cons</c><00:03:37.920><c> of</c><00:03:38.040><c> static</c><00:03:38.310><c> methods</c><00:03:38.640><c> there's</c>
+
+00:03:39.410 --> 00:03:39.420 align:start position:0%
+special cons of static methods there's
+ 
+
+00:03:39.420 --> 00:03:41.210 align:start position:0%
+special cons of static methods there's
+another<00:03:39.870><c> category</c><00:03:40.170><c> of</c><00:03:40.560><c> methods</c><00:03:40.710><c> that</c><00:03:40.950><c> can't</c>
+
+00:03:41.210 --> 00:03:41.220 align:start position:0%
+another category of methods that can't
+ 
+
+00:03:41.220 --> 00:03:43.340 align:start position:0%
+another category of methods that can't
+be<00:03:41.280><c> overridden</c><00:03:41.790><c> and</c><00:03:42.090><c> those</c><00:03:42.870><c> are</c><00:03:43.050><c> private</c>
+
+00:03:43.340 --> 00:03:43.350 align:start position:0%
+be overridden and those are private
+ 
+
+00:03:43.350 --> 00:03:46.400 align:start position:0%
+be overridden and those are private
+methods<00:03:43.800><c> and</c><00:03:44.550><c> we</c><00:03:44.910><c> omitted</c><00:03:45.240><c> those</c><00:03:45.390><c> back</c><00:03:45.930><c> in</c><00:03:46.110><c> JDK</c>
+
+00:03:46.400 --> 00:03:46.410 align:start position:0%
+methods and we omitted those back in JDK
+ 
+
+00:03:46.410 --> 00:03:49.160 align:start position:0%
+methods and we omitted those back in JDK
+7<00:03:46.740><c> but</c><00:03:47.700><c> now</c><00:03:47.850><c> in</c><00:03:48.000><c> jdk</c><00:03:48.300><c> 9</c><00:03:48.480><c> we've</c><00:03:48.720><c> gotten</c><00:03:48.990><c> around</c>
+
+00:03:49.160 --> 00:03:49.170 align:start position:0%
+7 but now in jdk 9 we've gotten around
+ 
+
+00:03:49.170 --> 00:03:51.520 align:start position:0%
+7 but now in jdk 9 we've gotten around
+to<00:03:49.380><c> adding</c><00:03:49.650><c> them</c><00:03:49.770><c> so</c><00:03:50.610><c> we</c><00:03:50.730><c> had</c><00:03:50.880><c> a</c><00:03:50.910><c> very</c><00:03:51.120><c> small</c>
+
+00:03:51.520 --> 00:03:51.530 align:start position:0%
+to adding them so we had a very small
+ 
+
+00:03:51.530 --> 00:03:53.330 align:start position:0%
+to adding them so we had a very small
+update<00:03:52.530><c> to</c><00:03:52.680><c> the</c><00:03:52.770><c> java</c><00:03:53.190><c> language</c>
+
+00:03:53.330 --> 00:03:53.340 align:start position:0%
+update to the java language
+ 
+
+00:03:53.340 --> 00:03:55.940 align:start position:0%
+update to the java language
+specification<00:03:53.700><c> to</c><00:03:54.690><c> now</c><00:03:54.870><c> also</c><00:03:55.260><c> allow</c><00:03:55.440><c> say</c><00:03:55.680><c> far</c>
+
+00:03:55.940 --> 00:03:55.950 align:start position:0%
+specification to now also allow say far
+ 
+
+00:03:55.950 --> 00:04:00.110 align:start position:0%
+specification to now also allow say far
+arcs<00:03:56.280><c> on</c><00:03:56.430><c> private</c><00:03:56.880><c> methods</c><00:03:58.550><c> next</c><00:03:59.550><c> effectively</c>
+
+00:04:00.110 --> 00:04:00.120 align:start position:0%
+arcs on private methods next effectively
+ 
+
+00:04:00.120 --> 00:04:02.930 align:start position:0%
+arcs on private methods next effectively
+final<00:04:00.480><c> variables</c><00:04:00.900><c> and</c><00:04:01.170><c> tribes</c><00:04:01.650><c> resources</c><00:04:02.250><c> as</c>
+
+00:04:02.930 --> 00:04:02.940 align:start position:0%
+final variables and tribes resources as
+ 
+
+00:04:02.940 --> 00:04:05.090 align:start position:0%
+final variables and tribes resources as
+a<00:04:03.930><c> reminder</c><00:04:04.260><c> with</c><00:04:04.650><c> the</c><00:04:04.740><c> tribe</c><00:04:04.950><c> earth</c>
+
+00:04:05.090 --> 00:04:05.100 align:start position:0%
+a reminder with the tribe earth
+ 
+
+00:04:05.100 --> 00:04:07.280 align:start position:0%
+a reminder with the tribe earth
+resources<00:04:05.610><c> statement</c><00:04:06.180><c> you</c><00:04:06.630><c> have</c><00:04:06.660><c> a</c><00:04:06.840><c> try</c><00:04:07.110><c> block</c>
+
+00:04:07.280 --> 00:04:07.290 align:start position:0%
+resources statement you have a try block
+ 
+
+00:04:07.290 --> 00:04:09.410 align:start position:0%
+resources statement you have a try block
+that<00:04:07.620><c> manages</c><00:04:08.010><c> your</c><00:04:08.220><c> resource</c><00:04:08.640><c> R</c><00:04:08.910><c> in</c><00:04:09.300><c> this</c>
+
+00:04:09.410 --> 00:04:09.420 align:start position:0%
+that manages your resource R in this
+ 
+
+00:04:09.420 --> 00:04:12.200 align:start position:0%
+that manages your resource R in this
+case<00:04:09.480><c> and</c><00:04:09.990><c> the</c><00:04:10.860><c> compiler</c><00:04:11.370><c> internally</c>
+
+00:04:12.200 --> 00:04:12.210 align:start position:0%
+case and the compiler internally
+ 
+
+00:04:12.210 --> 00:04:14.410 align:start position:0%
+case and the compiler internally
+translates<00:04:12.900><c> this</c><00:04:13.200><c> into</c><00:04:13.740><c> a</c><00:04:13.770><c> class</c><00:04:14.100><c> file</c>
+
+00:04:14.410 --> 00:04:14.420 align:start position:0%
+translates this into a class file
+ 
+
+00:04:14.420 --> 00:04:17.510 align:start position:0%
+translates this into a class file
+roughly<00:04:15.420><c> equivalent</c><00:04:15.660><c> to</c><00:04:15.990><c> this</c><00:04:16.590><c> where</c><00:04:17.340><c> there's</c>
+
+00:04:17.510 --> 00:04:17.520 align:start position:0%
+roughly equivalent to this where there's
+ 
+
+00:04:17.520 --> 00:04:20.450 align:start position:0%
+roughly equivalent to this where there's
+a<00:04:17.580><c> finally</c><00:04:17.970><c> block</c><00:04:18.440><c> wrapping</c><00:04:19.440><c> a</c><00:04:19.500><c> try</c><00:04:19.710><c> and</c><00:04:20.070><c> in</c>
+
+00:04:20.450 --> 00:04:20.460 align:start position:0%
+a finally block wrapping a try and in
+ 
+
+00:04:20.460 --> 00:04:22.550 align:start position:0%
+a finally block wrapping a try and in
+the<00:04:20.580><c> finally</c><00:04:20.940><c> block</c><00:04:20.970><c> close</c><00:04:21.870><c> gets</c><00:04:22.140><c> called</c><00:04:22.380><c> on</c>
+
+00:04:22.550 --> 00:04:22.560 align:start position:0%
+the finally block close gets called on
+ 
+
+00:04:22.560 --> 00:04:24.760 align:start position:0%
+the finally block close gets called on
+the<00:04:22.740><c> resource</c><00:04:23.070><c> as</c><00:04:23.669><c> long</c><00:04:23.850><c> as</c><00:04:23.970><c> it's</c><00:04:24.120><c> not</c><00:04:24.270><c> null</c>
+
+00:04:24.760 --> 00:04:24.770 align:start position:0%
+the resource as long as it's not null
+ 
+
+00:04:24.770 --> 00:04:26.930 align:start position:0%
+the resource as long as it's not null
+now<00:04:25.770><c> it's</c><00:04:26.280><c> actually</c><00:04:26.460><c> a</c><00:04:26.669><c> little</c><00:04:26.850><c> more</c>
+
+00:04:26.930 --> 00:04:26.940 align:start position:0%
+now it's actually a little more
+ 
+
+00:04:26.940 --> 00:04:27.440 align:start position:0%
+now it's actually a little more
+complicated
+
+00:04:27.440 --> 00:04:27.450 align:start position:0%
+complicated
+ 
+
+00:04:27.450 --> 00:04:29.720 align:start position:0%
+complicated
+this<00:04:27.810><c> to</c><00:04:28.440><c> give</c><00:04:28.590><c> better</c><00:04:28.770><c> exception</c><00:04:29.490><c> handling</c>
+
+00:04:29.720 --> 00:04:29.730 align:start position:0%
+this to give better exception handling
+ 
+
+00:04:29.730 --> 00:04:32.660 align:start position:0%
+this to give better exception handling
+so<00:04:30.720><c> in</c><00:04:30.870><c> terms</c><00:04:31.050><c> of</c><00:04:31.200><c> full</c><00:04:31.470><c> disclosure</c><00:04:31.560><c> this</c><00:04:32.460><c> is</c>
+
+00:04:32.660 --> 00:04:32.670 align:start position:0%
+so in terms of full disclosure this is
+ 
+
+00:04:32.670 --> 00:04:36.250 align:start position:0%
+so in terms of full disclosure this is
+what<00:04:32.940><c> the</c><00:04:33.300><c> full</c><00:04:34.260><c> destroyed</c><00:04:34.650><c> ring</c><00:04:34.860><c> looks</c><00:04:35.700><c> like</c>
+
+00:04:36.250 --> 00:04:36.260 align:start position:0%
+what the full destroyed ring looks like
+ 
+
+00:04:36.260 --> 00:04:38.240 align:start position:0%
+what the full destroyed ring looks like
+we<00:04:37.260><c> don't</c><00:04:37.350><c> have</c><00:04:37.530><c> to</c><00:04:37.650><c> worry</c><00:04:37.800><c> about</c><00:04:37.890><c> this</c><00:04:38.130><c> as</c>
+
+00:04:38.240 --> 00:04:38.250 align:start position:0%
+we don't have to worry about this as
+ 
+
+00:04:38.250 --> 00:04:40.250 align:start position:0%
+we don't have to worry about this as
+programmers<00:04:38.640><c> because</c><00:04:39.090><c> the</c><00:04:39.240><c> compiler</c><00:04:39.510><c> takes</c>
+
+00:04:40.250 --> 00:04:40.260 align:start position:0%
+programmers because the compiler takes
+ 
+
+00:04:40.260 --> 00:04:41.710 align:start position:0%
+programmers because the compiler takes
+care<00:04:40.500><c> of</c><00:04:40.560><c> this</c><00:04:40.650><c> for</c><00:04:40.830><c> us</c>
+
+00:04:41.710 --> 00:04:41.720 align:start position:0%
+care of this for us
+ 
+
+00:04:41.720 --> 00:04:46.760 align:start position:0%
+care of this for us
+so<00:04:43.340><c> back</c><00:04:44.340><c> in</c><00:04:44.370><c> JDK</c><00:04:44.820><c> 7</c><00:04:45.150><c> the</c><00:04:45.840><c> requirement</c><00:04:46.380><c> was</c><00:04:46.530><c> the</c>
+
+00:04:46.760 --> 00:04:46.770 align:start position:0%
+so back in JDK 7 the requirement was the
+ 
+
+00:04:46.770 --> 00:04:48.260 align:start position:0%
+so back in JDK 7 the requirement was the
+resource<00:04:47.220><c> to</c><00:04:47.430><c> be</c><00:04:47.520><c> managed</c><00:04:47.850><c> by</c><00:04:47.880><c> the</c><00:04:48.000><c> try</c><00:04:48.240><c> with</c>
+
+00:04:48.260 --> 00:04:48.270 align:start position:0%
+resource to be managed by the try with
+ 
+
+00:04:48.270 --> 00:04:50.630 align:start position:0%
+resource to be managed by the try with
+resources<00:04:48.510><c> statement</c><00:04:49.350><c> had</c><00:04:49.800><c> to</c><00:04:49.950><c> be</c><00:04:50.070><c> a</c><00:04:50.100><c> fresh</c>
+
+00:04:50.630 --> 00:04:50.640 align:start position:0%
+resources statement had to be a fresh
+ 
+
+00:04:50.640 --> 00:04:52.280 align:start position:0%
+resources statement had to be a fresh
+variable<00:04:51.150><c> declared</c><00:04:51.480><c> as</c><00:04:51.870><c> part</c><00:04:52.110><c> of</c><00:04:52.170><c> the</c>
+
+00:04:52.280 --> 00:04:52.290 align:start position:0%
+variable declared as part of the
+ 
+
+00:04:52.290 --> 00:04:54.800 align:start position:0%
+variable declared as part of the
+statement<00:04:52.860><c> that</c><00:04:53.420><c> wasn't</c><00:04:54.420><c> the</c><00:04:54.510><c> original</c>
+
+00:04:54.800 --> 00:04:54.810 align:start position:0%
+statement that wasn't the original
+ 
+
+00:04:54.810 --> 00:04:57.410 align:start position:0%
+statement that wasn't the original
+proposal<00:04:55.640><c> originally</c><00:04:56.640><c> you</c><00:04:56.820><c> could</c><00:04:57.000><c> use</c><00:04:57.150><c> any</c>
+
+00:04:57.410 --> 00:04:57.420 align:start position:0%
+proposal originally you could use any
+ 
+
+00:04:57.420 --> 00:04:59.450 align:start position:0%
+proposal originally you could use any
+expression<00:04:57.930><c> that</c><00:04:58.050><c> had</c><00:04:58.170><c> the</c><00:04:58.320><c> right</c><00:04:58.470><c> type</c><00:04:58.740><c> if</c><00:04:59.040><c> it</c>
+
+00:04:59.450 --> 00:04:59.460 align:start position:0%
+expression that had the right type if it
+ 
+
+00:04:59.460 --> 00:05:02.390 align:start position:0%
+expression that had the right type if it
+was<00:04:59.670><c> the</c><00:05:00.440><c> article</c><00:05:01.440><c> is</c><00:05:01.560><c> full</c><00:05:01.710><c> interface</c><00:05:02.160><c> type</c>
+
+00:05:02.390 --> 00:05:02.400 align:start position:0%
+was the article is full interface type
+ 
+
+00:05:02.400 --> 00:05:03.770 align:start position:0%
+was the article is full interface type
+that<00:05:02.610><c> had</c><00:05:02.700><c> the</c><00:05:02.790><c> closed</c><00:05:02.970><c> methods</c><00:05:03.420><c> that</c><00:05:03.600><c> was</c>
+
+00:05:03.770 --> 00:05:03.780 align:start position:0%
+that had the closed methods that was
+ 
+
+00:05:03.780 --> 00:05:06.500 align:start position:0%
+that had the closed methods that was
+fine<00:05:04.040><c> however</c><00:05:05.040><c> we</c><00:05:05.700><c> noticed</c><00:05:06.270><c> there</c><00:05:06.360><c> was</c><00:05:06.480><c> a</c>
+
+00:05:06.500 --> 00:05:06.510 align:start position:0%
+fine however we noticed there was a
+ 
+
+00:05:06.510 --> 00:05:08.780 align:start position:0%
+fine however we noticed there was a
+problem<00:05:06.840><c> with</c><00:05:06.900><c> that</c><00:05:07.020><c> proposal</c><00:05:07.530><c> we</c><00:05:08.280><c> see</c><00:05:08.670><c> that</c>
+
+00:05:08.780 --> 00:05:08.790 align:start position:0%
+problem with that proposal we see that
+ 
+
+00:05:08.790 --> 00:05:10.430 align:start position:0%
+problem with that proposal we see that
+here<00:05:09.090><c> let's</c><00:05:09.480><c> say</c><00:05:09.630><c> you</c><00:05:09.690><c> have</c><00:05:09.900><c> your</c><00:05:10.020><c> resource</c>
+
+00:05:10.430 --> 00:05:10.440 align:start position:0%
+here let's say you have your resource
+ 
+
+00:05:10.440 --> 00:05:13.280 align:start position:0%
+here let's say you have your resource
+are<00:05:10.770><c> initialized</c><00:05:11.520><c> to</c><00:05:11.670><c> a</c><00:05:11.790><c> new</c><00:05:12.000><c> resource</c><00:05:12.330><c> you</c>
+
+00:05:13.280 --> 00:05:13.290 align:start position:0%
+are initialized to a new resource you
+ 
+
+00:05:13.290 --> 00:05:15.530 align:start position:0%
+are initialized to a new resource you
+manage<00:05:13.650><c> the</c><00:05:14.520><c> variable</c><00:05:14.880><c> R</c><00:05:15.030><c> with</c><00:05:15.210><c> you</c><00:05:15.270><c> try</c><00:05:15.420><c> our</c>
+
+00:05:15.530 --> 00:05:15.540 align:start position:0%
+manage the variable R with you try our
+ 
+
+00:05:15.540 --> 00:05:17.330 align:start position:0%
+manage the variable R with you try our
+three<00:05:15.720><c> sources</c><00:05:15.900><c> statement</c><00:05:16.410><c> and</c><00:05:16.740><c> within</c><00:05:17.160><c> the</c>
+
+00:05:17.330 --> 00:05:17.340 align:start position:0%
+three sources statement and within the
+ 
+
+00:05:17.340 --> 00:05:18.530 align:start position:0%
+three sources statement and within the
+block<00:05:17.520><c> you</c><00:05:17.730><c> make</c><00:05:17.850><c> it</c><00:05:17.970><c> point</c><00:05:18.150><c> to</c><00:05:18.210><c> something</c>
+
+00:05:18.530 --> 00:05:18.540 align:start position:0%
+block you make it point to something
+ 
+
+00:05:18.540 --> 00:05:21.620 align:start position:0%
+block you make it point to something
+else<00:05:19.400><c> now</c><00:05:20.400><c> when</c><00:05:20.730><c> you</c><00:05:20.790><c> come</c><00:05:20.940><c> to</c><00:05:21.030><c> the</c><00:05:21.120><c> end</c><00:05:21.300><c> of</c><00:05:21.510><c> the</c>
+
+00:05:21.620 --> 00:05:21.630 align:start position:0%
+else now when you come to the end of the
+ 
+
+00:05:21.630 --> 00:05:24.320 align:start position:0%
+else now when you come to the end of the
+charters<00:05:21.930><c> resources</c><00:05:22.530><c> block</c><00:05:22.950><c> which</c><00:05:23.670><c> objects</c>
+
+00:05:24.320 --> 00:05:24.330 align:start position:0%
+charters resources block which objects
+ 
+
+00:05:24.330 --> 00:05:25.730 align:start position:0%
+charters resources block which objects
+should<00:05:24.720><c> have</c><00:05:24.840><c> its</c><00:05:25.020><c> closed</c><00:05:25.200><c> method</c><00:05:25.560><c> call</c>
+
+00:05:25.730 --> 00:05:25.740 align:start position:0%
+should have its closed method call
+ 
+
+00:05:25.740 --> 00:05:29.180 align:start position:0%
+should have its closed method call
+resource<00:05:26.640><c> 1</c><00:05:26.850><c> or</c><00:05:27.000><c> resource</c><00:05:27.300><c> two</c><00:05:27.800><c> we</c><00:05:28.800><c> decide</c><00:05:29.100><c> we</c>
+
+00:05:29.180 --> 00:05:29.190 align:start position:0%
+resource 1 or resource two we decide we
+ 
+
+00:05:29.190 --> 00:05:30.020 align:start position:0%
+resource 1 or resource two we decide we
+didn't<00:05:29.370><c> want</c><00:05:29.490><c> to</c><00:05:29.520><c> have</c><00:05:29.640><c> to</c><00:05:29.700><c> solve</c><00:05:29.910><c> this</c>
+
+00:05:30.020 --> 00:05:30.030 align:start position:0%
+didn't want to have to solve this
+ 
+
+00:05:30.030 --> 00:05:32.120 align:start position:0%
+didn't want to have to solve this
+problem<00:05:30.210><c> and</c><00:05:30.600><c> the</c><00:05:30.960><c> solution</c><00:05:31.350><c> was</c><00:05:31.530><c> to</c><00:05:31.800><c> require</c>
+
+00:05:32.120 --> 00:05:32.130 align:start position:0%
+problem and the solution was to require
+ 
+
+00:05:32.130 --> 00:05:36.770 align:start position:0%
+problem and the solution was to require
+a<00:05:32.550><c> fresh</c><00:05:33.420><c> final</c><00:05:33.990><c> variable</c><00:05:34.790><c> to</c><00:05:35.790><c> be</c><00:05:36.390><c> used</c><00:05:36.630><c> with</c>
+
+00:05:36.770 --> 00:05:36.780 align:start position:0%
+a fresh final variable to be used with
+ 
+
+00:05:36.780 --> 00:05:38.000 align:start position:0%
+a fresh final variable to be used with
+the<00:05:36.840><c> try</c><00:05:36.960><c> over</c><00:05:37.110><c> three</c><00:05:37.260><c> sources</c><00:05:37.470><c> statement</c>
+
+00:05:38.000 --> 00:05:38.010 align:start position:0%
+the try over three sources statement
+ 
+
+00:05:38.010 --> 00:05:40.400 align:start position:0%
+the try over three sources statement
+however<00:05:38.790><c> that</c><00:05:39.180><c> was</c><00:05:39.330><c> a</c><00:05:39.360><c> little</c><00:05:39.660><c> overly</c>
+
+00:05:40.400 --> 00:05:40.410 align:start position:0%
+however that was a little overly
+ 
+
+00:05:40.410 --> 00:05:43.970 align:start position:0%
+however that was a little overly
+restrictive<00:05:40.970><c> because</c><00:05:41.970><c> if</c><00:05:42.420><c> the</c><00:05:43.260><c> expression</c>
+
+00:05:43.970 --> 00:05:43.980 align:start position:0%
+restrictive because if the expression
+ 
+
+00:05:43.980 --> 00:05:46.490 align:start position:0%
+restrictive because if the expression
+was<00:05:44.160><c> already</c><00:05:44.520><c> a</c><00:05:44.780><c> final</c><00:05:45.780><c> or</c><00:05:45.870><c> effectively</c><00:05:46.140><c> final</c>
+
+00:05:46.490 --> 00:05:46.500 align:start position:0%
+was already a final or effectively final
+ 
+
+00:05:46.500 --> 00:05:49.310 align:start position:0%
+was already a final or effectively final
+variable<00:05:46.770><c> this</c><00:05:47.700><c> problem</c><00:05:48.060><c> wouldn't</c><00:05:48.210><c> occur</c><00:05:48.480><c> so</c>
+
+00:05:49.310 --> 00:05:49.320 align:start position:0%
+variable this problem wouldn't occur so
+ 
+
+00:05:49.320 --> 00:05:52.160 align:start position:0%
+variable this problem wouldn't occur so
+in<00:05:49.560><c> JDK</c><00:05:49.920><c> 9</c><00:05:50.130><c> we've</c><00:05:50.610><c> relaxed</c><00:05:51.120><c> the</c><00:05:51.240><c> rules</c><00:05:51.270><c> so</c><00:05:51.750><c> if</c>
+
+00:05:52.160 --> 00:05:52.170 align:start position:0%
+in JDK 9 we've relaxed the rules so if
+ 
+
+00:05:52.170 --> 00:05:54.230 align:start position:0%
+in JDK 9 we've relaxed the rules so if
+you<00:05:52.320><c> already</c><00:05:52.500><c> have</c><00:05:52.620><c> a</c><00:05:53.100><c> final</c><00:05:53.880><c> or</c><00:05:53.940><c> effectively</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+you already have a final or effectively
+ 
+
+00:05:54.240 --> 00:05:55.730 align:start position:0%
+you already have a final or effectively
+final<00:05:54.600><c> resource</c><00:05:54.870><c> you</c><00:05:55.200><c> don't</c><00:05:55.350><c> have</c><00:05:55.470><c> to</c><00:05:55.560><c> clear</c>
+
+00:05:55.730 --> 00:05:55.740 align:start position:0%
+final resource you don't have to clear
+ 
+
+00:05:55.740 --> 00:05:57.740 align:start position:0%
+final resource you don't have to clear
+new<00:05:55.890><c> variable</c><00:05:56.250><c> for</c><00:05:56.430><c> it</c><00:05:56.460><c> so</c><00:05:57.300><c> instead</c><00:05:57.630><c> of</c>
+
+00:05:57.740 --> 00:05:57.750 align:start position:0%
+new variable for it so instead of
+ 
+
+00:05:57.750 --> 00:06:01.040 align:start position:0%
+new variable for it so instead of
+declaring<00:05:58.590><c> the</c><00:05:59.370><c> resource</c><00:05:59.700><c> R</c><00:05:59.940><c> 2</c><00:06:00.210><c> in</c><00:06:00.510><c> this</c><00:06:00.990><c> case</c>
+
+00:06:01.040 --> 00:06:01.050 align:start position:0%
+declaring the resource R 2 in this case
+ 
+
+00:06:01.050 --> 00:06:03.260 align:start position:0%
+declaring the resource R 2 in this case
+you<00:06:01.470><c> can</c><00:06:01.590><c> just</c><00:06:01.620><c> reuse</c><00:06:02.520><c> your</c><00:06:02.850><c> existing</c>
+
+00:06:03.260 --> 00:06:03.270 align:start position:0%
+you can just reuse your existing
+ 
+
+00:06:03.270 --> 00:06:04.880 align:start position:0%
+you can just reuse your existing
+resource<00:06:03.630><c> variable</c><00:06:03.990><c> our</c><00:06:04.110><c> little</c>
+
+00:06:04.880 --> 00:06:04.890 align:start position:0%
+resource variable our little
+ 
+
+00:06:04.890 --> 00:06:07.010 align:start position:0%
+resource variable our little
+simplification<00:06:05.280><c> that</c><00:06:05.940><c> gets</c><00:06:06.690><c> rid</c><00:06:06.810><c> of</c><00:06:06.870><c> some</c>
+
+00:06:07.010 --> 00:06:07.020 align:start position:0%
+simplification that gets rid of some
+ 
+
+00:06:07.020 --> 00:06:10.430 align:start position:0%
+simplification that gets rid of some
+unnecessary<00:06:07.380><c> boilerplate</c><00:06:08.340><c> in</c><00:06:08.550><c> the</c><00:06:08.670><c> code</c><00:06:09.440><c> next</c>
+
+00:06:10.430 --> 00:06:10.440 align:start position:0%
+unnecessary boilerplate in the code next
+ 
+
+00:06:10.440 --> 00:06:12.170 align:start position:0%
+unnecessary boilerplate in the code next
+we'll<00:06:10.680><c> talk</c><00:06:10.800><c> about</c><00:06:11.040><c> diamonds</c><00:06:11.340><c> with</c><00:06:11.760><c> anonymous</c>
+
+00:06:12.170 --> 00:06:12.180 align:start position:0%
+we'll talk about diamonds with anonymous
+ 
+
+00:06:12.180 --> 00:06:14.570 align:start position:0%
+we'll talk about diamonds with anonymous
+classes<00:06:12.530><c> diamond</c><00:06:13.530><c> uses</c><00:06:13.980><c> type</c><00:06:14.220><c> inference</c>
+
+00:06:14.570 --> 00:06:14.580 align:start position:0%
+classes diamond uses type inference
+ 
+
+00:06:14.580 --> 00:06:16.760 align:start position:0%
+classes diamond uses type inference
+inside<00:06:15.150><c> the</c><00:06:15.270><c> compiler</c><00:06:15.540><c> to</c><00:06:15.870><c> allow</c><00:06:16.320><c> programmers</c>
+
+00:06:16.760 --> 00:06:16.770 align:start position:0%
+inside the compiler to allow programmers
+ 
+
+00:06:16.770 --> 00:06:19.310 align:start position:0%
+inside the compiler to allow programmers
+to<00:06:16.890><c> avoid</c><00:06:17.280><c> having</c><00:06:17.640><c> the</c><00:06:17.880><c> type</c><00:06:18.060><c> explicit</c><00:06:18.750><c> type</c>
+
+00:06:19.310 --> 00:06:19.320 align:start position:0%
+to avoid having the type explicit type
+ 
+
+00:06:19.320 --> 00:06:20.810 align:start position:0%
+to avoid having the type explicit type
+parameters<00:06:19.740><c> when</c><00:06:19.920><c> calling</c><00:06:20.160><c> constructors</c>
+
+00:06:20.810 --> 00:06:20.820 align:start position:0%
+parameters when calling constructors
+ 
+
+00:06:20.820 --> 00:06:23.690 align:start position:0%
+parameters when calling constructors
+so<00:06:21.600><c> back</c><00:06:22.080><c> before</c><00:06:22.290><c> diamond</c><00:06:22.890><c> if</c><00:06:23.100><c> you</c><00:06:23.280><c> wanted</c><00:06:23.580><c> to</c>
+
+00:06:23.690 --> 00:06:23.700 align:start position:0%
+so back before diamond if you wanted to
+ 
+
+00:06:23.700 --> 00:06:26.570 align:start position:0%
+so back before diamond if you wanted to
+do<00:06:23.820><c> something</c><00:06:24.240><c> like</c><00:06:24.570><c> initialize</c><00:06:25.320><c> your</c><00:06:25.580><c> list</c>
+
+00:06:26.570 --> 00:06:26.580 align:start position:0%
+do something like initialize your list
+ 
+
+00:06:26.580 --> 00:06:31.100 align:start position:0%
+do something like initialize your list
+of<00:06:26.820><c> maps</c><00:06:27.690><c> of</c><00:06:27.990><c> strings</c><00:06:28.440><c> to</c><00:06:28.650><c> integers</c><00:06:29.480><c> you'd</c><00:06:30.480><c> say</c>
+
+00:06:31.100 --> 00:06:31.110 align:start position:0%
+of maps of strings to integers you'd say
+ 
+
+00:06:31.110 --> 00:06:33.110 align:start position:0%
+of maps of strings to integers you'd say
+call<00:06:31.410><c> new</c><00:06:31.620><c> ArrayList</c><00:06:31.980><c> and</c><00:06:32.490><c> you'd</c><00:06:32.790><c> repeat</c>
+
+00:06:33.110 --> 00:06:33.120 align:start position:0%
+call new ArrayList and you'd repeat
+ 
+
+00:06:33.120 --> 00:06:35.420 align:start position:0%
+call new ArrayList and you'd repeat
+those<00:06:33.450><c> type</c><00:06:33.720><c> arguments</c><00:06:34.290><c> map</c><00:06:34.560><c> strings</c><00:06:35.250><c> and</c>
+
+00:06:35.420 --> 00:06:35.430 align:start position:0%
+those type arguments map strings and
+ 
+
+00:06:35.430 --> 00:06:37.580 align:start position:0%
+those type arguments map strings and
+integers<00:06:35.930><c> but</c><00:06:36.930><c> you</c><00:06:37.050><c> don't</c><00:06:37.200><c> have</c><00:06:37.320><c> to</c><00:06:37.380><c> do</c><00:06:37.470><c> that</c>
+
+00:06:37.580 --> 00:06:37.590 align:start position:0%
+integers but you don't have to do that
+ 
+
+00:06:37.590 --> 00:06:39.650 align:start position:0%
+integers but you don't have to do that
+anymore<00:06:37.860><c> now</c><00:06:38.280><c> you</c><00:06:38.730><c> can</c><00:06:38.970><c> just</c><00:06:39.180><c> say</c><00:06:39.330><c> new</c>
+
+00:06:39.650 --> 00:06:39.660 align:start position:0%
+anymore now you can just say new
+ 
+
+00:06:39.660 --> 00:06:41.499 align:start position:0%
+anymore now you can just say new
+ArrayList
+
+00:06:41.499 --> 00:06:41.509 align:start position:0%
+ArrayList
+ 
+
+00:06:41.509 --> 00:06:44.089 align:start position:0%
+ArrayList
+less<00:06:42.509><c> the</c><00:06:42.629><c> greater-than</c><00:06:42.840><c> and</c><00:06:43.319><c> the</c><00:06:43.770><c> compiler</c>
+
+00:06:44.089 --> 00:06:44.099 align:start position:0%
+less the greater-than and the compiler
+ 
+
+00:06:44.099 --> 00:06:46.760 align:start position:0%
+less the greater-than and the compiler
+will<00:06:44.310><c> infer</c><00:06:44.639><c> the</c><00:06:44.939><c> rest</c><00:06:45.120><c> for</c><00:06:45.330><c> you</c><00:06:45.530><c> now</c><00:06:46.530><c> this</c>
+
+00:06:46.760 --> 00:06:46.770 align:start position:0%
+will infer the rest for you now this
+ 
+
+00:06:46.770 --> 00:06:48.800 align:start position:0%
+will infer the rest for you now this
+language<00:06:47.129><c> feature</c><00:06:47.430><c> is</c><00:06:47.669><c> very</c><00:06:47.879><c> effective</c><00:06:48.150><c> at</c>
+
+00:06:48.800 --> 00:06:48.810 align:start position:0%
+language feature is very effective at
+ 
+
+00:06:48.810 --> 00:06:50.629 align:start position:0%
+language feature is very effective at
+removing<00:06:49.110><c> the</c><00:06:49.439><c> need</c><00:06:49.620><c> for</c><00:06:49.650><c> explicit</c><00:06:50.249><c> type</c>
+
+00:06:50.629 --> 00:06:50.639 align:start position:0%
+removing the need for explicit type
+ 
+
+00:06:50.639 --> 00:06:52.879 align:start position:0%
+removing the need for explicit type
+arguments<00:06:51.240><c> however</c><00:06:51.900><c> there</c><00:06:52.229><c> are</c><00:06:52.379><c> some</c><00:06:52.650><c> cases</c>
+
+00:06:52.879 --> 00:06:52.889 align:start position:0%
+arguments however there are some cases
+ 
+
+00:06:52.889 --> 00:06:55.550 align:start position:0%
+arguments however there are some cases
+you<00:06:53.219><c> can't</c><00:06:53.460><c> use</c><00:06:53.669><c> it</c><00:06:53.849><c> because</c><00:06:54.289><c> of</c><00:06:55.289><c> a</c><00:06:55.379><c> bad</c>
+
+00:06:55.550 --> 00:06:55.560 align:start position:0%
+you can't use it because of a bad
+ 
+
+00:06:55.560 --> 00:06:59.119 align:start position:0%
+you can't use it because of a bad
+worst-case<00:06:56.340><c> interaction</c><00:06:56.969><c> between</c><00:06:58.129><c> diamond</c>
+
+00:06:59.119 --> 00:06:59.129 align:start position:0%
+worst-case interaction between diamond
+ 
+
+00:06:59.129 --> 00:07:01.850 align:start position:0%
+worst-case interaction between diamond
+and<00:06:59.279><c> anonymous</c><00:06:59.639><c> classes</c><00:07:00.139><c> you</c><00:07:01.139><c> cannot</c><00:07:01.439><c> use</c>
+
+00:07:01.850 --> 00:07:01.860 align:start position:0%
+and anonymous classes you cannot use
+ 
+
+00:07:01.860 --> 00:07:04.550 align:start position:0%
+and anonymous classes you cannot use
+those<00:07:02.180><c> with</c><00:07:03.180><c> each</c><00:07:03.300><c> other</c><00:07:03.509><c> the</c><00:07:04.110><c> problem</c><00:07:04.469><c> is</c>
+
+00:07:04.550 --> 00:07:04.560 align:start position:0%
+those with each other the problem is
+ 
+
+00:07:04.560 --> 00:07:06.350 align:start position:0%
+those with each other the problem is
+there<00:07:04.800><c> are</c><00:07:04.919><c> cases</c><00:07:05.159><c> where</c><00:07:05.520><c> type</c><00:07:05.759><c> inference</c><00:07:06.060><c> can</c>
+
+00:07:06.350 --> 00:07:06.360 align:start position:0%
+there are cases where type inference can
+ 
+
+00:07:06.360 --> 00:07:07.969 align:start position:0%
+there are cases where type inference can
+infer<00:07:06.659><c> something</c><00:07:06.870><c> called</c><00:07:07.110><c> a</c><00:07:07.199><c> non</c><00:07:07.469><c> des</c><00:07:07.650><c> notable</c>
+
+00:07:07.969 --> 00:07:07.979 align:start position:0%
+infer something called a non des notable
+ 
+
+00:07:07.979 --> 00:07:11.330 align:start position:0%
+infer something called a non des notable
+type<00:07:08.300><c> that</c><00:07:09.300><c> nan</c><00:07:09.810><c> de</c><00:07:09.930><c> notable</c><00:07:10.259><c> type</c><00:07:10.439><c> is</c><00:07:10.710><c> outside</c>
+
+00:07:11.330 --> 00:07:11.340 align:start position:0%
+type that nan de notable type is outside
+ 
+
+00:07:11.340 --> 00:07:13.369 align:start position:0%
+type that nan de notable type is outside
+the<00:07:11.669><c> type</c><00:07:11.939><c> system</c><00:07:12.150><c> we</c><00:07:12.779><c> can</c><00:07:12.990><c> use</c><00:07:13.020><c> as</c>
+
+00:07:13.369 --> 00:07:13.379 align:start position:0%
+the type system we can use as
+ 
+
+00:07:13.379 --> 00:07:16.040 align:start position:0%
+the type system we can use as
+programmers<00:07:13.919><c> and</c><00:07:14.129><c> it</c><00:07:15.090><c> cannot</c><00:07:15.330><c> be</c><00:07:15.509><c> represented</c>
+
+00:07:16.040 --> 00:07:16.050 align:start position:0%
+programmers and it cannot be represented
+ 
+
+00:07:16.050 --> 00:07:17.480 align:start position:0%
+programmers and it cannot be represented
+in<00:07:16.139><c> the</c><00:07:16.229><c> class</c><00:07:16.439><c> file</c><00:07:16.740><c> that</c><00:07:17.159><c> needs</c><00:07:17.189><c> to</c><00:07:17.460><c> be</c>
+
+00:07:17.480 --> 00:07:17.490 align:start position:0%
+in the class file that needs to be
+ 
+
+00:07:17.490 --> 00:07:19.420 align:start position:0%
+in the class file that needs to be
+generated<00:07:17.580><c> for</c><00:07:18.449><c> the</c><00:07:18.569><c> anonymous</c><00:07:18.719><c> class</c>
+
+00:07:19.420 --> 00:07:19.430 align:start position:0%
+generated for the anonymous class
+ 
+
+00:07:19.430 --> 00:07:22.129 align:start position:0%
+generated for the anonymous class
+however<00:07:20.430><c> that's</c><00:07:20.789><c> a</c><00:07:20.969><c> worst</c><00:07:21.210><c> case</c><00:07:21.300><c> outcome</c><00:07:21.900><c> in</c>
+
+00:07:22.129 --> 00:07:22.139 align:start position:0%
+however that's a worst case outcome in
+ 
+
+00:07:22.139 --> 00:07:24.980 align:start position:0%
+however that's a worst case outcome in
+many<00:07:22.949><c> cases</c><00:07:23.430><c> a</c><00:07:23.669><c> de</c><00:07:23.849><c> notable</c><00:07:24.210><c> type</c><00:07:24.389><c> is</c><00:07:24.659><c> inferred</c>
+
+00:07:24.980 --> 00:07:24.990 align:start position:0%
+many cases a de notable type is inferred
+ 
+
+00:07:24.990 --> 00:07:26.959 align:start position:0%
+many cases a de notable type is inferred
+and<00:07:25.229><c> that</c><00:07:25.529><c> could</c><00:07:25.860><c> be</c><00:07:25.979><c> represented</c><00:07:26.189><c> in</c><00:07:26.699><c> a</c><00:07:26.759><c> class</c>
+
+00:07:26.959 --> 00:07:26.969 align:start position:0%
+and that could be represented in a class
+ 
+
+00:07:26.969 --> 00:07:29.719 align:start position:0%
+and that could be represented in a class
+file<00:07:27.210><c> so</c><00:07:27.750><c> we</c><00:07:27.900><c> thought</c><00:07:28.050><c> this</c><00:07:28.229><c> restriction</c><00:07:28.729><c> was</c>
+
+00:07:29.719 --> 00:07:29.729 align:start position:0%
+file so we thought this restriction was
+ 
+
+00:07:29.729 --> 00:07:31.730 align:start position:0%
+file so we thought this restriction was
+a<00:07:29.759><c> bit</c><00:07:30.029><c> unfortunate</c><00:07:30.659><c> and</c><00:07:31.110><c> we</c><00:07:31.199><c> did</c><00:07:31.379><c> note</c><00:07:31.560><c> when</c>
+
+00:07:31.730 --> 00:07:31.740 align:start position:0%
+a bit unfortunate and we did note when
+ 
+
+00:07:31.740 --> 00:07:34.640 align:start position:0%
+a bit unfortunate and we did note when
+we<00:07:31.770><c> were</c><00:07:31.949><c> finishing</c><00:07:32.490><c> up</c><00:07:32.669><c> project</c><00:07:33.449><c> coin</c><00:07:33.659><c> in</c><00:07:33.990><c> JDK</c>
+
+00:07:34.640 --> 00:07:34.650 align:start position:0%
+we were finishing up project coin in JDK
+ 
+
+00:07:34.650 --> 00:07:36.769 align:start position:0%
+we were finishing up project coin in JDK
+7<00:07:35.009><c> that</c><00:07:35.279><c> in</c><00:07:35.400><c> the</c><00:07:35.490><c> future</c><00:07:35.669><c> we</c><00:07:36.000><c> might</c><00:07:36.150><c> relax</c><00:07:36.479><c> this</c>
+
+00:07:36.769 --> 00:07:36.779 align:start position:0%
+7 that in the future we might relax this
+ 
+
+00:07:36.779 --> 00:07:39.079 align:start position:0%
+7 that in the future we might relax this
+restriction<00:07:37.199><c> and</c><00:07:37.560><c> allow</c><00:07:38.310><c> diamond</c><00:07:38.939><c> and</c>
+
+00:07:39.079 --> 00:07:39.089 align:start position:0%
+restriction and allow diamond and
+ 
+
+00:07:39.089 --> 00:07:40.760 align:start position:0%
+restriction and allow diamond and
+anonymous<00:07:39.479><c> classes</c><00:07:39.900><c> to</c><00:07:40.020><c> be</c><00:07:40.110><c> used</c><00:07:40.259><c> together</c><00:07:40.379><c> as</c>
+
+00:07:40.760 --> 00:07:40.770 align:start position:0%
+anonymous classes to be used together as
+ 
+
+00:07:40.770 --> 00:07:43.010 align:start position:0%
+anonymous classes to be used together as
+long<00:07:41.550><c> as</c><00:07:41.699><c> that</c><00:07:41.789><c> worst-case</c><00:07:42.270><c> outcome</c><00:07:42.689><c> didn't</c>
+
+00:07:43.010 --> 00:07:43.020 align:start position:0%
+long as that worst-case outcome didn't
+ 
+
+00:07:43.020 --> 00:07:45.769 align:start position:0%
+long as that worst-case outcome didn't
+occur<00:07:43.289><c> and</c><00:07:43.529><c> that</c><00:07:44.129><c> is</c><00:07:44.339><c> indeed</c><00:07:44.759><c> what</c><00:07:45.389><c> we've</c><00:07:45.539><c> done</c>
+
+00:07:45.769 --> 00:07:45.779 align:start position:0%
+occur and that is indeed what we've done
+ 
+
+00:07:45.779 --> 00:07:47.899 align:start position:0%
+occur and that is indeed what we've done
+now<00:07:45.990><c> in</c><00:07:46.259><c> JDK</c><00:07:46.740><c> 9</c><00:07:46.889><c> we've</c><00:07:47.490><c> loosened</c><00:07:47.699><c> the</c>
+
+00:07:47.899 --> 00:07:47.909 align:start position:0%
+now in JDK 9 we've loosened the
+ 
+
+00:07:47.909 --> 00:07:49.999 align:start position:0%
+now in JDK 9 we've loosened the
+restriction<00:07:48.389><c> and</c><00:07:48.539><c> now</c><00:07:49.169><c> you</c><00:07:49.229><c> can</c><00:07:49.560><c> use</c><00:07:49.710><c> diamond</c>
+
+00:07:49.999 --> 00:07:50.009 align:start position:0%
+restriction and now you can use diamond
+ 
+
+00:07:50.009 --> 00:07:53.390 align:start position:0%
+restriction and now you can use diamond
+with<00:07:50.129><c> anonymous</c><00:07:50.490><c> classes</c><00:07:50.699><c> in</c><00:07:51.060><c> many</c><00:07:51.300><c> cases</c><00:07:52.400><c> in</c>
+
+00:07:53.390 --> 00:07:53.400 align:start position:0%
+with anonymous classes in many cases in
+ 
+
+00:07:53.400 --> 00:07:55.670 align:start position:0%
+with anonymous classes in many cases in
+JDK<00:07:53.729><c> 7</c><00:07:54.060><c> we</c><00:07:54.240><c> found</c><00:07:54.479><c> that</c><00:07:54.599><c> diamond</c><00:07:54.990><c> was</c><00:07:55.349><c> very</c>
+
+00:07:55.670 --> 00:07:55.680 align:start position:0%
+JDK 7 we found that diamond was very
+ 
+
+00:07:55.680 --> 00:07:57.529 align:start position:0%
+JDK 7 we found that diamond was very
+effective<00:07:56.159><c> at</c><00:07:56.310><c> eliminating</c><00:07:56.399><c> explicit</c><00:07:57.389><c> type</c>
+
+00:07:57.529 --> 00:07:57.539 align:start position:0%
+effective at eliminating explicit type
+ 
+
+00:07:57.539 --> 00:08:00.320 align:start position:0%
+effective at eliminating explicit type
+arguments<00:07:58.020><c> over</c><00:07:58.560><c> 90%</c><00:07:59.129><c> of</c><00:07:59.189><c> a</c><00:07:59.279><c> constructor</c><00:08:00.120><c> call</c>
+
+00:08:00.320 --> 00:08:00.330 align:start position:0%
+arguments over 90% of a constructor call
+ 
+
+00:08:00.330 --> 00:08:03.439 align:start position:0%
+arguments over 90% of a constructor call
+sites<00:08:00.629><c> and</c><00:08:00.899><c> with</c><00:08:01.529><c> this</c><00:08:01.620><c> new</c><00:08:01.830><c> enhancement</c><00:08:02.449><c> we</c>
+
+00:08:03.439 --> 00:08:03.449 align:start position:0%
+sites and with this new enhancement we
+ 
+
+00:08:03.449 --> 00:08:05.329 align:start position:0%
+sites and with this new enhancement we
+feel<00:08:03.659><c> that</c><00:08:04.020><c> allowing</c><00:08:04.740><c> diamond</c><00:08:05.039><c> with</c>
+
+00:08:05.329 --> 00:08:05.339 align:start position:0%
+feel that allowing diamond with
+ 
+
+00:08:05.339 --> 00:08:07.279 align:start position:0%
+feel that allowing diamond with
+anonymous<00:08:05.729><c> classes</c><00:08:05.969><c> allow</c><00:08:06.629><c> removal</c><00:08:06.930><c> of</c><00:08:07.199><c> a</c>
+
+00:08:07.279 --> 00:08:07.289 align:start position:0%
+anonymous classes allow removal of a
+ 
+
+00:08:07.289 --> 00:08:08.679 align:start position:0%
+anonymous classes allow removal of a
+large<00:08:07.469><c> fraction</c><00:08:07.919><c> of</c><00:08:07.949><c> the</c><00:08:08.069><c> remaining</c><00:08:08.430><c> 10%</c>
+
+00:08:08.679 --> 00:08:08.689 align:start position:0%
+large fraction of the remaining 10%
+ 
+
+00:08:08.689 --> 00:08:11.959 align:start position:0%
+large fraction of the remaining 10%
+we've<00:08:09.689><c> had</c><00:08:09.870><c> good</c><00:08:10.110><c> experiences</c><00:08:10.800><c> using</c><00:08:11.430><c> this</c>
+
+00:08:11.959 --> 00:08:11.969 align:start position:0%
+we've had good experiences using this
+ 
+
+00:08:11.969 --> 00:08:13.459 align:start position:0%
+we've had good experiences using this
+feature<00:08:12.180><c> in</c><00:08:12.419><c> the</c><00:08:12.449><c> JDK</c><00:08:12.810><c> codebase</c><00:08:13.199><c> and</c>
+
+00:08:13.459 --> 00:08:13.469 align:start position:0%
+feature in the JDK codebase and
+ 
+
+00:08:13.469 --> 00:08:16.129 align:start position:0%
+feature in the JDK codebase and
+eliminated<00:08:14.279><c> hundreds</c><00:08:14.610><c> of</c><00:08:14.789><c> additional</c><00:08:15.419><c> call</c>
+
+00:08:16.129 --> 00:08:16.139 align:start position:0%
+eliminated hundreds of additional call
+ 
+
+00:08:16.139 --> 00:08:19.610 align:start position:0%
+eliminated hundreds of additional call
+sites<00:08:17.330><c> the</c><00:08:18.330><c> next</c><00:08:18.569><c> two</c><00:08:18.750><c> small</c><00:08:19.289><c> language</c>
+
+00:08:19.610 --> 00:08:19.620 align:start position:0%
+sites the next two small language
+ 
+
+00:08:19.620 --> 00:08:21.950 align:start position:0%
+sites the next two small language
+changes<00:08:20.009><c> are</c><00:08:20.250><c> updates</c><00:08:21.180><c> to</c><00:08:21.479><c> the</c><00:08:21.599><c> project</c>
+
+00:08:21.950 --> 00:08:21.960 align:start position:0%
+changes are updates to the project
+ 
+
+00:08:21.960 --> 00:08:23.570 align:start position:0%
+changes are updates to the project
+lambda<00:08:22.439><c> features</c><00:08:22.740><c> that</c><00:08:22.919><c> were</c><00:08:23.039><c> added</c><00:08:23.279><c> in</c><00:08:23.399><c> eight</c>
+
+00:08:23.570 --> 00:08:23.580 align:start position:0%
+lambda features that were added in eight
+ 
+
+00:08:23.580 --> 00:08:26.149 align:start position:0%
+lambda features that were added in eight
+first<00:08:24.509><c> underscore</c><00:08:25.229><c> is</c><00:08:25.379><c> no</c><00:08:25.649><c> longer</c><00:08:25.919><c> an</c>
+
+00:08:26.149 --> 00:08:26.159 align:start position:0%
+first underscore is no longer an
+ 
+
+00:08:26.159 --> 00:08:29.570 align:start position:0%
+first underscore is no longer an
+identifier<00:08:26.639><c> name</c><00:08:26.879><c> starting</c><00:08:27.870><c> in</c><00:08:27.990><c> 8</c><00:08:28.580><c> the</c>
+
+00:08:29.570 --> 00:08:29.580 align:start position:0%
+identifier name starting in 8 the
+ 
+
+00:08:29.580 --> 00:08:31.939 align:start position:0%
+identifier name starting in 8 the
+compiler<00:08:30.449><c> issued</c><00:08:30.870><c> warnings</c><00:08:31.289><c> if</c><00:08:31.500><c> you</c><00:08:31.649><c> used</c>
+
+00:08:31.939 --> 00:08:31.949 align:start position:0%
+compiler issued warnings if you used
+ 
+
+00:08:31.949 --> 00:08:34.670 align:start position:0%
+compiler issued warnings if you used
+underscore<00:08:32.669><c> as</c><00:08:32.820><c> an</c><00:08:32.940><c> identifier</c><00:08:33.589><c> warning</c><00:08:34.589><c> that</c>
+
+00:08:34.670 --> 00:08:34.680 align:start position:0%
+underscore as an identifier warning that
+ 
+
+00:08:34.680 --> 00:08:36.709 align:start position:0%
+underscore as an identifier warning that
+it<00:08:34.829><c> might</c><00:08:35.039><c> be</c><00:08:35.519><c> not</c><00:08:35.909><c> be</c><00:08:36.029><c> allowed</c><00:08:36.209><c> in</c><00:08:36.390><c> future</c>
+
+00:08:36.709 --> 00:08:36.719 align:start position:0%
+it might be not be allowed in future
+ 
+
+00:08:36.719 --> 00:08:39.680 align:start position:0%
+it might be not be allowed in future
+versions<00:08:36.839><c> of</c><00:08:37.110><c> the</c><00:08:37.169><c> platform</c><00:08:37.579><c> and</c><00:08:38.579><c> indeed</c><00:08:38.909><c> now</c>
+
+00:08:39.680 --> 00:08:39.690 align:start position:0%
+versions of the platform and indeed now
+ 
+
+00:08:39.690 --> 00:08:43.040 align:start position:0%
+versions of the platform and indeed now
+in<00:08:39.899><c> JT</c><00:08:40.169><c> 9</c><00:08:40.320><c> it</c><00:08:40.500><c> is</c><00:08:40.529><c> not</c><00:08:40.740><c> allowed</c><00:08:41.010><c> and</c><00:08:41.849><c> what</c><00:08:42.839><c> was</c><00:08:43.019><c> a</c>
+
+00:08:43.040 --> 00:08:43.050 align:start position:0%
+in JT 9 it is not allowed and what was a
+ 
+
+00:08:43.050 --> 00:08:46.430 align:start position:0%
+in JT 9 it is not allowed and what was a
+warning<00:08:43.529><c> message</c><00:08:43.680><c> is</c><00:08:44.070><c> now</c><00:08:44.370><c> an</c><00:08:44.550><c> error</c><00:08:45.290><c> so</c><00:08:46.290><c> why</c>
+
+00:08:46.430 --> 00:08:46.440 align:start position:0%
+warning message is now an error so why
+ 
+
+00:08:46.440 --> 00:08:48.470 align:start position:0%
+warning message is now an error so why
+are<00:08:46.529><c> we</c><00:08:46.589><c> doing</c><00:08:46.860><c> this</c><00:08:46.980><c> we</c><00:08:47.610><c> want</c><00:08:47.820><c> to</c><00:08:47.910><c> reclaim</c><00:08:48.180><c> the</c>
+
+00:08:48.470 --> 00:08:48.480 align:start position:0%
+are we doing this we want to reclaim the
+ 
+
+00:08:48.480 --> 00:08:51.250 align:start position:0%
+are we doing this we want to reclaim the
+underscore<00:08:49.019><c> as</c><00:08:49.230><c> syntactic</c><00:08:49.800><c> real-estate</c><00:08:50.399><c> and</c>
+
+00:08:51.250 --> 00:08:51.260 align:start position:0%
+underscore as syntactic real-estate and
+ 
+
+00:08:51.260 --> 00:08:54.680 align:start position:0%
+underscore as syntactic real-estate and
+repurpose<00:08:52.260><c> it</c><00:08:52.380><c> for</c><00:08:52.560><c> more</c><00:08:53.519><c> useful</c><00:08:53.850><c> things</c>
+
+00:08:54.680 --> 00:08:54.690 align:start position:0%
+repurpose it for more useful things
+ 
+
+00:08:54.690 --> 00:08:56.629 align:start position:0%
+repurpose it for more useful things
+those<00:08:54.959><c> more</c><00:08:55.259><c> useful</c><00:08:55.589><c> things</c><00:08:55.829><c> are</c><00:08:56.129><c> described</c>
+
+00:08:56.629 --> 00:08:56.639 align:start position:0%
+those more useful things are described
+ 
+
+00:08:56.639 --> 00:09:00.110 align:start position:0%
+those more useful things are described
+in<00:08:56.879><c> JEP</c><00:08:57.180><c> 302</c><00:08:57.540><c> lambda</c><00:08:58.350><c> leftovers</c><00:08:58.800><c> JEP</c><00:08:59.610><c> being</c><00:08:59.970><c> a</c>
+
+00:09:00.110 --> 00:09:00.120 align:start position:0%
+in JEP 302 lambda leftovers JEP being a
+ 
+
+00:09:00.120 --> 00:09:04.100 align:start position:0%
+in JEP 302 lambda leftovers JEP being a
+JDK<00:09:00.509><c> enhancement</c><00:09:01.110><c> proposal</c><00:09:02.540><c> as</c><00:09:03.540><c> part</c><00:09:03.899><c> of</c><00:09:03.930><c> land</c>
+
+00:09:04.100 --> 00:09:04.110 align:start position:0%
+JDK enhancement proposal as part of land
+ 
+
+00:09:04.110 --> 00:09:09.460 align:start position:0%
+JDK enhancement proposal as part of land
+in<00:09:04.440><c> JDK</c><00:09:04.889><c> 8</c><00:09:04.920><c> you</c><00:09:05.910><c> could</c><00:09:06.120><c> add</c><00:09:07.220><c> methods</c><00:09:08.220><c> to</c>
+
+00:09:09.460 --> 00:09:09.470 align:start position:0%
+in JDK 8 you could add methods to
+ 
+
+00:09:09.470 --> 00:09:11.900 align:start position:0%
+in JDK 8 you could add methods to
+interfaces<00:09:10.470><c> that</c><00:09:10.740><c> had</c><00:09:10.949><c> code</c><00:09:11.279><c> these</c><00:09:11.850><c> are</c>
+
+00:09:11.900 --> 00:09:11.910 align:start position:0%
+interfaces that had code these are
+ 
+
+00:09:11.910 --> 00:09:14.449 align:start position:0%
+interfaces that had code these are
+called<00:09:12.240><c> default</c><00:09:12.509><c> methods</c><00:09:12.959><c> so</c><00:09:13.829><c> these</c><00:09:14.040><c> methods</c>
+
+00:09:14.449 --> 00:09:14.459 align:start position:0%
+called default methods so these methods
+ 
+
+00:09:14.459 --> 00:09:17.240 align:start position:0%
+called default methods so these methods
+are<00:09:14.579><c> non</c><00:09:14.850><c> abstract</c><00:09:15.449><c> and</c><00:09:15.750><c> thus</c><00:09:16.620><c> they</c><00:09:16.800><c> have</c><00:09:16.829><c> a</c>
+
+00:09:17.240 --> 00:09:17.250 align:start position:0%
+are non abstract and thus they have a
+ 
+
+00:09:17.250 --> 00:09:20.590 align:start position:0%
+are non abstract and thus they have a
+method<00:09:17.639><c> body</c><00:09:18.079><c> at</c><00:09:19.079><c> the</c><00:09:19.319><c> VM</c><00:09:19.620><c> level</c><00:09:19.889><c> and</c><00:09:20.040><c> JDK</c><00:09:20.370><c> 8</c>
+
+00:09:20.590 --> 00:09:20.600 align:start position:0%
+method body at the VM level and JDK 8
+ 
+
+00:09:20.600 --> 00:09:22.579 align:start position:0%
+method body at the VM level and JDK 8
+interfaces<00:09:21.600><c> could</c><00:09:21.750><c> have</c><00:09:21.870><c> private</c><00:09:22.259><c> methods</c>
+
+00:09:22.579 --> 00:09:22.589 align:start position:0%
+interfaces could have private methods
+ 
+
+00:09:22.589 --> 00:09:24.170 align:start position:0%
+interfaces could have private methods
+and<00:09:22.769><c> these</c><00:09:23.189><c> were</c><00:09:23.370><c> used</c><00:09:23.550><c> to</c><00:09:23.759><c> help</c><00:09:23.939><c> implement</c>
+
+00:09:24.170 --> 00:09:24.180 align:start position:0%
+and these were used to help implement
+ 
+
+00:09:24.180 --> 00:09:27.110 align:start position:0%
+and these were used to help implement
+the<00:09:24.720><c> lambdas</c><00:09:25.110><c> and</c><00:09:25.139><c> so</c><00:09:25.410><c> forth</c><00:09:25.790><c> however</c><00:09:26.790><c> at</c><00:09:27.000><c> the</c>
+
+00:09:27.110 --> 00:09:27.120 align:start position:0%
+the lambdas and so forth however at the
+ 
+
+00:09:27.120 --> 00:09:29.059 align:start position:0%
+the lambdas and so forth however at the
+source<00:09:27.360><c> level</c><00:09:27.709><c> programmers</c><00:09:28.709><c> could</c><00:09:28.889><c> not</c>
+
+00:09:29.059 --> 00:09:29.069 align:start position:0%
+source level programmers could not
+ 
+
+00:09:29.069 --> 00:09:31.220 align:start position:0%
+source level programmers could not
+declare<00:09:29.279><c> a</c><00:09:29.490><c> private</c><00:09:29.639><c> interface</c><00:09:30.149><c> methods</c><00:09:30.569><c> in</c>
+
+00:09:31.220 --> 00:09:31.230 align:start position:0%
+declare a private interface methods in
+ 
+
+00:09:31.230 --> 00:09:36.110 align:start position:0%
+declare a private interface methods in
+JDK<00:09:31.769><c> 8</c><00:09:31.800><c> and</c><00:09:32.420><c> now</c><00:09:33.420><c> we</c><00:09:33.480><c> can</c><00:09:33.930><c> in</c><00:09:34.259><c> JDK</c><00:09:34.829><c> 9</c><00:09:35.009><c> you</c><00:09:35.850><c> can</c>
+
+00:09:36.110 --> 00:09:36.120 align:start position:0%
+JDK 8 and now we can in JDK 9 you can
+ 
+
+00:09:36.120 --> 00:09:38.809 align:start position:0%
+JDK 8 and now we can in JDK 9 you can
+declare<00:09:36.660><c> both</c><00:09:37.110><c> private</c><00:09:37.980><c> static</c><00:09:38.279><c> methods</c><00:09:38.610><c> as</c>
+
+00:09:38.809 --> 00:09:38.819 align:start position:0%
+declare both private static methods as
+ 
+
+00:09:38.819 --> 00:09:41.119 align:start position:0%
+declare both private static methods as
+well<00:09:39.209><c> as</c><00:09:39.420><c> private</c><00:09:39.870><c> instance</c><00:09:40.259><c> methods</c><00:09:40.620><c> how</c>
+
+00:09:41.119 --> 00:09:41.129 align:start position:0%
+well as private instance methods how
+ 
+
+00:09:41.129 --> 00:09:42.619 align:start position:0%
+well as private instance methods how
+would<00:09:41.370><c> you</c><00:09:41.490><c> use</c><00:09:41.519><c> such</c><00:09:41.910><c> a</c><00:09:41.939><c> private</c><00:09:42.329><c> method</c><00:09:42.540><c> on</c>
+
+00:09:42.619 --> 00:09:42.629 align:start position:0%
+would you use such a private method on
+ 
+
+00:09:42.629 --> 00:09:44.329 align:start position:0%
+would you use such a private method on
+an<00:09:42.750><c> interface</c><00:09:42.930><c> you</c><00:09:43.500><c> can</c><00:09:43.620><c> use</c><00:09:43.800><c> them</c><00:09:43.920><c> as</c><00:09:44.040><c> helper</c>
+
+00:09:44.329 --> 00:09:44.339 align:start position:0%
+an interface you can use them as helper
+ 
+
+00:09:44.339 --> 00:09:46.369 align:start position:0%
+an interface you can use them as helper
+message<00:09:44.699><c> to</c><00:09:45.000><c> implement</c><00:09:45.449><c> the</c><00:09:45.870><c> other</c><00:09:46.079><c> public</c>
+
+00:09:46.369 --> 00:09:46.379 align:start position:0%
+message to implement the other public
+ 
+
+00:09:46.379 --> 00:09:49.309 align:start position:0%
+message to implement the other public
+default<00:09:46.949><c> methods</c><00:09:47.279><c> and</c><00:09:47.550><c> we've</c><00:09:48.120><c> found</c><00:09:49.079><c> this</c>
+
+00:09:49.309 --> 00:09:49.319 align:start position:0%
+default methods and we've found this
+ 
+
+00:09:49.319 --> 00:09:51.139 align:start position:0%
+default methods and we've found this
+feature<00:09:49.740><c> to</c><00:09:49.889><c> be</c><00:09:49.949><c> very</c><00:09:50.160><c> useful</c><00:09:50.550><c> in</c><00:09:50.759><c> writing</c><00:09:51.089><c> the</c>
+
+00:09:51.139 --> 00:09:51.149 align:start position:0%
+feature to be very useful in writing the
+ 
+
+00:09:51.149 --> 00:09:54.710 align:start position:0%
+feature to be very useful in writing the
+JDK<00:09:51.509><c> the</c><00:09:52.399><c> next</c><00:09:53.399><c> two</c><00:09:53.610><c> small</c><00:09:53.879><c> changes</c><00:09:54.269><c> are</c><00:09:54.449><c> both</c>
+
+00:09:54.710 --> 00:09:54.720 align:start position:0%
+JDK the next two small changes are both
+ 
+
+00:09:54.720 --> 00:09:56.480 align:start position:0%
+JDK the next two small changes are both
+related<00:09:55.139><c> to</c><00:09:55.230><c> the</c><00:09:55.470><c> deprecation</c><00:09:55.889><c> facility</c>
+
+00:09:56.480 --> 00:09:56.490 align:start position:0%
+related to the deprecation facility
+ 
+
+00:09:56.490 --> 00:09:58.879 align:start position:0%
+related to the deprecation facility
+first<00:09:57.209><c> we'll</c><00:09:57.660><c> talk</c><00:09:57.810><c> about</c><00:09:57.889><c> deprecation</c>
+
+00:09:58.879 --> 00:09:58.889 align:start position:0%
+first we'll talk about deprecation
+ 
+
+00:09:58.889 --> 00:10:01.429 align:start position:0%
+first we'll talk about deprecation
+warnings<00:09:58.920><c> and</c><00:09:59.459><c> imports</c><00:10:00.139><c> one</c><00:10:01.139><c> of</c><00:10:01.230><c> the</c><00:10:01.290><c> ways</c>
+
+00:10:01.429 --> 00:10:01.439 align:start position:0%
+warnings and imports one of the ways
+ 
+
+00:10:01.439 --> 00:10:03.679 align:start position:0%
+warnings and imports one of the ways
+we've<00:10:01.829><c> paid</c><00:10:02.639><c> down</c><00:10:02.850><c> the</c><00:10:02.880><c> technical</c><00:10:03.389><c> debt</c><00:10:03.540><c> in</c>
+
+00:10:03.679 --> 00:10:03.689 align:start position:0%
+we've paid down the technical debt in
+ 
+
+00:10:03.689 --> 00:10:06.139 align:start position:0%
+we've paid down the technical debt in
+the<00:10:03.779><c> JDK</c><00:10:04.199><c> is</c><00:10:04.500><c> to</c><00:10:05.100><c> reduce</c><00:10:05.670><c> the</c><00:10:05.850><c> number</c><00:10:06.120><c> of</c>
+
+00:10:06.139 --> 00:10:06.149 align:start position:0%
+the JDK is to reduce the number of
+ 
+
+00:10:06.149 --> 00:10:08.509 align:start position:0%
+the JDK is to reduce the number of
+warnings<00:10:06.600><c> in</c><00:10:06.750><c> our</c><00:10:06.870><c> code</c><00:10:07.019><c> base</c><00:10:07.250><c> we've</c><00:10:08.250><c> actually</c>
+
+00:10:08.509 --> 00:10:08.519 align:start position:0%
+warnings in our code base we've actually
+ 
+
+00:10:08.519 --> 00:10:11.059 align:start position:0%
+warnings in our code base we've actually
+cleared<00:10:09.209><c> of</c><00:10:09.389><c> all</c><00:10:09.930><c> categories</c><00:10:10.199><c> of</c><00:10:10.500><c> warnings</c><00:10:10.889><c> in</c>
+
+00:10:11.059 --> 00:10:11.069 align:start position:0%
+cleared of all categories of warnings in
+ 
+
+00:10:11.069 --> 00:10:13.550 align:start position:0%
+cleared of all categories of warnings in
+large<00:10:11.310><c> fractions</c><00:10:11.819><c> to</c><00:10:11.939><c> code</c><00:10:12.120><c> and</c><00:10:12.389><c> that</c><00:10:12.990><c> has</c>
+
+00:10:13.550 --> 00:10:13.560 align:start position:0%
+large fractions to code and that has
+ 
+
+00:10:13.560 --> 00:10:15.439 align:start position:0%
+large fractions to code and that has
+included<00:10:14.040><c> eliminating</c><00:10:14.730><c> the</c><00:10:15.060><c> deprecation</c>
+
+00:10:15.439 --> 00:10:15.449 align:start position:0%
+included eliminating the deprecation
+ 
+
+00:10:15.449 --> 00:10:18.050 align:start position:0%
+included eliminating the deprecation
+warnings<00:10:15.860><c> now</c><00:10:16.860><c> when</c><00:10:17.220><c> do</c><00:10:17.310><c> you</c><00:10:17.370><c> get</c><00:10:17.490><c> deprecation</c>
+
+00:10:18.050 --> 00:10:18.060 align:start position:0%
+warnings now when do you get deprecation
+ 
+
+00:10:18.060 --> 00:10:20.120 align:start position:0%
+warnings now when do you get deprecation
+warnings<00:10:18.089><c> these</c><00:10:19.050><c> are</c><00:10:19.230><c> discussed</c><00:10:19.680><c> in</c><00:10:19.860><c> the</c><00:10:19.920><c> java</c>
+
+00:10:20.120 --> 00:10:20.130 align:start position:0%
+warnings these are discussed in the java
+ 
+
+00:10:20.130 --> 00:10:22.009 align:start position:0%
+warnings these are discussed in the java
+language<00:10:20.279><c> specification</c><00:10:20.639><c> and</c><00:10:21.449><c> you</c><00:10:21.689><c> get</c><00:10:21.870><c> them</c>
+
+00:10:22.009 --> 00:10:22.019 align:start position:0%
+language specification and you get them
+ 
+
+00:10:22.019 --> 00:10:24.050 align:start position:0%
+language specification and you get them
+when<00:10:22.199><c> you</c><00:10:22.350><c> use</c><00:10:22.680><c> a</c><00:10:22.709><c> deprecated</c><00:10:23.370><c> type</c><00:10:23.550><c> method</c>
+
+00:10:24.050 --> 00:10:24.060 align:start position:0%
+when you use a deprecated type method
+ 
+
+00:10:24.060 --> 00:10:26.389 align:start position:0%
+when you use a deprecated type method
+constructor<00:10:24.810><c> and</c><00:10:24.930><c> so</c><00:10:25.079><c> forth</c><00:10:25.380><c> and</c><00:10:25.709><c> there's</c>
+
+00:10:26.389 --> 00:10:26.399 align:start position:0%
+constructor and so forth and there's
+ 
+
+00:10:26.399 --> 00:10:27.590 align:start position:0%
+constructor and so forth and there's
+three<00:10:26.610><c> ways</c><00:10:26.790><c> you</c><00:10:26.819><c> can</c><00:10:27.180><c> resolve</c><00:10:27.389><c> those</c>
+
+00:10:27.590 --> 00:10:27.600 align:start position:0%
+three ways you can resolve those
+ 
+
+00:10:27.600 --> 00:10:30.829 align:start position:0%
+three ways you can resolve those
+warnings<00:10:28.189><c> you</c><00:10:29.189><c> can</c><00:10:29.399><c> stop</c><00:10:30.149><c> using</c><00:10:30.420><c> the</c>
+
+00:10:30.829 --> 00:10:30.839 align:start position:0%
+warnings you can stop using the
+ 
+
+00:10:30.839 --> 00:10:32.780 align:start position:0%
+warnings you can stop using the
+deprecated<00:10:31.170><c> elements</c><00:10:31.589><c> that's</c><00:10:32.370><c> preferred</c>
+
+00:10:32.780 --> 00:10:32.790 align:start position:0%
+deprecated elements that's preferred
+ 
+
+00:10:32.790 --> 00:10:34.400 align:start position:0%
+deprecated elements that's preferred
+when<00:10:33.000><c> you</c><00:10:33.089><c> can</c><00:10:33.240><c> do</c><00:10:33.360><c> it</c><00:10:33.509><c> what</c><00:10:33.930><c> you</c><00:10:34.050><c> can't</c><00:10:34.230><c> always</c>
+
+00:10:34.400 --> 00:10:34.410 align:start position:0%
+when you can do it what you can't always
+ 
+
+00:10:34.410 --> 00:10:37.040 align:start position:0%
+when you can do it what you can't always
+do<00:10:34.620><c> it</c><00:10:34.800><c> you</c><00:10:35.730><c> can</c><00:10:35.910><c> propagate</c><00:10:36.149><c> the</c><00:10:36.449><c> deprecated</c>
+
+00:10:37.040 --> 00:10:37.050 align:start position:0%
+do it you can propagate the deprecated
+ 
+
+00:10:37.050 --> 00:10:39.290 align:start position:0%
+do it you can propagate the deprecated
+annotation<00:10:37.769><c> to</c><00:10:37.889><c> the</c><00:10:37.920><c> use</c><00:10:38.130><c> sites</c><00:10:38.370><c> now</c><00:10:39.120><c> that's</c>
+
+00:10:39.290 --> 00:10:39.300 align:start position:0%
+annotation to the use sites now that's
+ 
+
+00:10:39.300 --> 00:10:40.549 align:start position:0%
+annotation to the use sites now that's
+worse<00:10:39.540><c> than</c><00:10:39.720><c> the</c><00:10:39.839><c> disease</c><00:10:40.110><c> because</c><00:10:40.410><c> you're</c>
+
+00:10:40.549 --> 00:10:40.559 align:start position:0%
+worse than the disease because you're
+ 
+
+00:10:40.559 --> 00:10:42.620 align:start position:0%
+worse than the disease because you're
+expanding<00:10:41.069><c> rather</c><00:10:41.459><c> than</c><00:10:41.759><c> contracting</c><00:10:42.509><c> the</c>
+
+00:10:42.620 --> 00:10:42.630 align:start position:0%
+expanding rather than contracting the
+ 
+
+00:10:42.630 --> 00:10:45.040 align:start position:0%
+expanding rather than contracting the
+number<00:10:42.899><c> of</c><00:10:43.050><c> deprecated</c><00:10:43.920><c> elements</c><00:10:44.639><c> and</c>
+
+00:10:45.040 --> 00:10:45.050 align:start position:0%
+number of deprecated elements and
+ 
+
+00:10:45.050 --> 00:10:47.150 align:start position:0%
+number of deprecated elements and
+finally<00:10:46.050><c> you</c><00:10:46.290><c> can</c><00:10:46.470><c> use</c><00:10:46.649><c> the</c><00:10:46.860><c> suppress</c>
+
+00:10:47.150 --> 00:10:47.160 align:start position:0%
+finally you can use the suppress
+ 
+
+00:10:47.160 --> 00:10:48.920 align:start position:0%
+finally you can use the suppress
+warnings<00:10:47.490><c> annotation</c><00:10:48.029><c> to</c><00:10:48.329><c> let</c><00:10:48.630><c> the</c><00:10:48.689><c> compiler</c>
+
+00:10:48.920 --> 00:10:48.930 align:start position:0%
+warnings annotation to let the compiler
+ 
+
+00:10:48.930 --> 00:10:51.369 align:start position:0%
+warnings annotation to let the compiler
+know<00:10:49.170><c> that</c><00:10:49.470><c> you</c><00:10:49.889><c> don't</c><00:10:50.730><c> want</c><00:10:50.879><c> to</c><00:10:50.970><c> get</c><00:10:51.089><c> this</c>
+
+00:10:51.369 --> 00:10:51.379 align:start position:0%
+know that you don't want to get this
+ 
+
+00:10:51.379 --> 00:10:54.110 align:start position:0%
+know that you don't want to get this
+warning<00:10:52.379><c> message</c><00:10:52.439><c> anymore</c><00:10:52.860><c> so</c><00:10:53.519><c> let's</c><00:10:53.759><c> say</c><00:10:54.059><c> you</c>
+
+00:10:54.110 --> 00:10:54.120 align:start position:0%
+warning message anymore so let's say you
+ 
+
+00:10:54.120 --> 00:10:56.150 align:start position:0%
+warning message anymore so let's say you
+have<00:10:54.389><c> your</c><00:10:54.600><c> client</c><00:10:54.990><c> library</c><00:10:55.410><c> and</c><00:10:55.709><c> you're</c>
+
+00:10:56.150 --> 00:10:56.160 align:start position:0%
+have your client library and you're
+ 
+
+00:10:56.160 --> 00:10:59.869 align:start position:0%
+have your client library and you're
+using<00:10:56.550><c> a</c><00:10:56.879><c> deprecated</c><00:10:57.800><c> library</c><00:10:58.800><c> and</c><00:10:59.069><c> you</c><00:10:59.279><c> you</c>
+
+00:10:59.869 --> 00:10:59.879 align:start position:0%
+using a deprecated library and you you
+ 
+
+00:10:59.879 --> 00:11:02.240 align:start position:0%
+using a deprecated library and you you
+want<00:11:00.509><c> to</c><00:11:00.600><c> suppress</c><00:11:01.079><c> the</c><00:11:01.259><c> warnings</c><00:11:01.620><c> from</c><00:11:02.069><c> the</c>
+
+00:11:02.240 --> 00:11:02.250 align:start position:0%
+want to suppress the warnings from the
+ 
+
+00:11:02.250 --> 00:11:05.179 align:start position:0%
+want to suppress the warnings from the
+annotations<00:11:02.899><c> because</c><00:11:03.899><c> you</c><00:11:04.470><c> get</c><00:11:04.649><c> the</c><00:11:04.980><c> warning</c>
+
+00:11:05.179 --> 00:11:05.189 align:start position:0%
+annotations because you get the warning
+ 
+
+00:11:05.189 --> 00:11:06.679 align:start position:0%
+annotations because you get the warning
+message<00:11:05.339><c> here</c><00:11:05.790><c> and</c><00:11:05.910><c> you</c><00:11:06.000><c> want</c><00:11:06.329><c> to</c><00:11:06.389><c> get</c><00:11:06.540><c> rid</c><00:11:06.660><c> of</c>
+
+00:11:06.679 --> 00:11:06.689 align:start position:0%
+message here and you want to get rid of
+ 
+
+00:11:06.689 --> 00:11:07.710 align:start position:0%
+message here and you want to get rid of
+that
+
+00:11:07.710 --> 00:11:07.720 align:start position:0%
+that
+ 
+
+00:11:07.720 --> 00:11:10.259 align:start position:0%
+that
+you<00:11:08.230><c> might</c><00:11:08.410><c> think</c><00:11:08.709><c> alright</c><00:11:09.310><c> right</c><00:11:09.790><c> at</c><00:11:10.000><c> the</c><00:11:10.089><c> top</c>
+
+00:11:10.259 --> 00:11:10.269 align:start position:0%
+you might think alright right at the top
+ 
+
+00:11:10.269 --> 00:11:12.629 align:start position:0%
+you might think alright right at the top
+of<00:11:10.540><c> the</c><00:11:10.990><c> class</c><00:11:11.199><c> I'll</c><00:11:11.649><c> suppress</c><00:11:12.189><c> the</c>
+
+00:11:12.629 --> 00:11:12.639 align:start position:0%
+of the class I'll suppress the
+ 
+
+00:11:12.639 --> 00:11:15.990 align:start position:0%
+of the class I'll suppress the
+deprecation<00:11:13.629><c> warnings</c><00:11:14.019><c> and</c><00:11:14.800><c> I</c><00:11:15.519><c> won't</c><00:11:15.730><c> have</c><00:11:15.910><c> to</c>
+
+00:11:15.990 --> 00:11:16.000 align:start position:0%
+deprecation warnings and I won't have to
+ 
+
+00:11:16.000 --> 00:11:17.850 align:start position:0%
+deprecation warnings and I won't have to
+do<00:11:16.089><c> anything</c><00:11:16.329><c> else</c><00:11:16.540><c> however</c><00:11:17.110><c> when</c><00:11:17.769><c> you</c>
+
+00:11:17.850 --> 00:11:17.860 align:start position:0%
+do anything else however when you
+ 
+
+00:11:17.860 --> 00:11:20.730 align:start position:0%
+do anything else however when you
+compile<00:11:18.220><c> this</c><00:11:18.430><c> code</c><00:11:18.930><c> you</c><00:11:19.930><c> find</c><00:11:20.170><c> you</c><00:11:20.319><c> still</c><00:11:20.529><c> get</c>
+
+00:11:20.730 --> 00:11:20.740 align:start position:0%
+compile this code you find you still get
+ 
+
+00:11:20.740 --> 00:11:23.069 align:start position:0%
+compile this code you find you still get
+the<00:11:21.040><c> deprecation</c><00:11:21.459><c> warning</c><00:11:21.819><c> so</c><00:11:22.600><c> what's</c><00:11:22.810><c> going</c>
+
+00:11:23.069 --> 00:11:23.079 align:start position:0%
+the deprecation warning so what's going
+ 
+
+00:11:23.079 --> 00:11:26.460 align:start position:0%
+the deprecation warning so what's going
+on<00:11:23.170><c> here</c><00:11:23.470><c> well</c><00:11:23.939><c> if</c><00:11:24.939><c> you</c><00:11:25.060><c> look</c><00:11:25.569><c> at</c><00:11:25.689><c> the</c><00:11:25.810><c> warning</c>
+
+00:11:26.460 --> 00:11:26.470 align:start position:0%
+on here well if you look at the warning
+ 
+
+00:11:26.470 --> 00:11:28.980 align:start position:0%
+on here well if you look at the warning
+message<00:11:26.500><c> in</c><00:11:26.829><c> more</c><00:11:27.009><c> detail</c><00:11:27.339><c> the</c><00:11:28.300><c> warning</c><00:11:28.660><c> isn't</c>
+
+00:11:28.980 --> 00:11:28.990 align:start position:0%
+message in more detail the warning isn't
+ 
+
+00:11:28.990 --> 00:11:32.400 align:start position:0%
+message in more detail the warning isn't
+from<00:11:29.170><c> the</c><00:11:29.230><c> body</c><00:11:29.769><c> of</c><00:11:30.209><c> the</c><00:11:31.209><c> code</c><00:11:31.810><c> in</c><00:11:32.079><c> the</c><00:11:32.199><c> class</c>
+
+00:11:32.400 --> 00:11:32.410 align:start position:0%
+from the body of the code in the class
+ 
+
+00:11:32.410 --> 00:11:34.379 align:start position:0%
+from the body of the code in the class
+it's<00:11:33.100><c> actually</c><00:11:33.459><c> from</c><00:11:33.550><c> the</c><00:11:33.699><c> import</c><00:11:34.029><c> statement</c>
+
+00:11:34.379 --> 00:11:34.389 align:start position:0%
+it's actually from the import statement
+ 
+
+00:11:34.389 --> 00:11:36.960 align:start position:0%
+it's actually from the import statement
+instead<00:11:35.019><c> right</c><00:11:35.230><c> at</c><00:11:35.290><c> the</c><00:11:35.350><c> top</c><00:11:35.500><c> of</c><00:11:35.589><c> the</c><00:11:35.649><c> file</c><00:11:35.970><c> now</c>
+
+00:11:36.960 --> 00:11:36.970 align:start position:0%
+instead right at the top of the file now
+ 
+
+00:11:36.970 --> 00:11:39.449 align:start position:0%
+instead right at the top of the file now
+this<00:11:37.839><c> import</c><00:11:38.290><c> is</c><00:11:38.439><c> mandated</c><00:11:38.980><c> by</c><00:11:39.100><c> the</c><00:11:39.160><c> Java</c>
+
+00:11:39.449 --> 00:11:39.459 align:start position:0%
+this import is mandated by the Java
+ 
+
+00:11:39.459 --> 00:11:42.869 align:start position:0%
+this import is mandated by the Java
+language<00:11:39.610><c> specification</c><00:11:40.439><c> and</c><00:11:41.490><c> worse</c><00:11:42.490><c> you</c>
+
+00:11:42.869 --> 00:11:42.879 align:start position:0%
+language specification and worse you
+ 
+
+00:11:42.879 --> 00:11:44.249 align:start position:0%
+language specification and worse you
+can't<00:11:43.120><c> use</c><00:11:43.389><c> the</c><00:11:43.569><c> suppress</c><00:11:43.870><c> warnings</c>
+
+00:11:44.249 --> 00:11:44.259 align:start position:0%
+can't use the suppress warnings
+ 
+
+00:11:44.259 --> 00:11:46.110 align:start position:0%
+can't use the suppress warnings
+annotations<00:11:44.800><c> on</c><00:11:45.009><c> the</c><00:11:45.069><c> import</c><00:11:45.639><c> statement</c><00:11:46.029><c> is</c>
+
+00:11:46.110 --> 00:11:46.120 align:start position:0%
+annotations on the import statement is
+ 
+
+00:11:46.120 --> 00:11:48.929 align:start position:0%
+annotations on the import statement is
+not<00:11:46.449><c> syntactically</c><00:11:46.779><c> allowed</c><00:11:47.350><c> so</c><00:11:48.339><c> this</c>
+
+00:11:48.929 --> 00:11:48.939 align:start position:0%
+not syntactically allowed so this
+ 
+
+00:11:48.939 --> 00:11:50.699 align:start position:0%
+not syntactically allowed so this
+warning<00:11:49.240><c> is</c><00:11:49.360><c> pretty</c><00:11:49.569><c> unhelpful</c><00:11:49.990><c> if</c><00:11:50.350><c> all</c><00:11:50.589><c> the</c>
+
+00:11:50.699 --> 00:11:50.709 align:start position:0%
+warning is pretty unhelpful if all the
+ 
+
+00:11:50.709 --> 00:11:52.470 align:start position:0%
+warning is pretty unhelpful if all the
+other<00:11:50.860><c> uses</c><00:11:51.069><c> of</c><00:11:51.279><c> the</c><00:11:51.490><c> deprecated</c><00:11:52.029><c> type</c><00:11:52.180><c> can</c><00:11:52.449><c> be</c>
+
+00:11:52.470 --> 00:11:52.480 align:start position:0%
+other uses of the deprecated type can be
+ 
+
+00:11:52.480 --> 00:11:53.040 align:start position:0%
+other uses of the deprecated type can be
+suppressed
+
+00:11:53.040 --> 00:11:53.050 align:start position:0%
+suppressed
+ 
+
+00:11:53.050 --> 00:11:56.129 align:start position:0%
+suppressed
+why<00:11:53.949><c> can't</c><00:11:54.279><c> you</c><00:11:54.600><c> eliminate</c><00:11:55.600><c> the</c><00:11:55.720><c> warning</c><00:11:56.050><c> from</c>
+
+00:11:56.129 --> 00:11:56.139 align:start position:0%
+why can't you eliminate the warning from
+ 
+
+00:11:56.139 --> 00:11:57.600 align:start position:0%
+why can't you eliminate the warning from
+the<00:11:56.230><c> import</c><00:11:56.589><c> statement</c><00:11:56.949><c> that</c><00:11:57.160><c> doesn't</c><00:11:57.370><c> seem</c>
+
+00:11:57.600 --> 00:11:57.610 align:start position:0%
+the import statement that doesn't seem
+ 
+
+00:11:57.610 --> 00:12:00.929 align:start position:0%
+the import statement that doesn't seem
+very<00:11:58.620><c> helpful</c><00:11:59.620><c> and</c><00:11:59.829><c> indeed</c><00:12:00.189><c> we</c><00:12:00.399><c> change</c><00:12:00.699><c> this</c>
+
+00:12:00.929 --> 00:12:00.939 align:start position:0%
+very helpful and indeed we change this
+ 
+
+00:12:00.939 --> 00:12:04.949 align:start position:0%
+very helpful and indeed we change this
+behavior<00:12:01.389><c> in</c><00:12:01.689><c> JDK</c><00:12:02.470><c> 9</c><00:12:02.649><c> by</c><00:12:03.519><c> not</c><00:12:04.149><c> requiring</c><00:12:04.360><c> a</c>
+
+00:12:04.949 --> 00:12:04.959 align:start position:0%
+behavior in JDK 9 by not requiring a
+ 
+
+00:12:04.959 --> 00:12:07.319 align:start position:0%
+behavior in JDK 9 by not requiring a
+warning<00:12:05.439><c> message</c><00:12:05.560><c> in</c><00:12:06.339><c> that</c><00:12:06.519><c> location</c><00:12:06.790><c> anymore</c>
+
+00:12:07.319 --> 00:12:07.329 align:start position:0%
+warning message in that location anymore
+ 
+
+00:12:07.329 --> 00:12:11.100 align:start position:0%
+warning message in that location anymore
+and<00:12:08.189><c> because</c><00:12:09.189><c> of</c><00:12:09.339><c> this</c><00:12:09.579><c> it's</c><00:12:10.420><c> now</c><00:12:10.660><c> tractable</c>
+
+00:12:11.100 --> 00:12:11.110 align:start position:0%
+and because of this it's now tractable
+ 
+
+00:12:11.110 --> 00:12:12.389 align:start position:0%
+and because of this it's now tractable
+to<00:12:11.230><c> clear</c><00:12:11.470><c> a</c><00:12:11.500><c> large</c><00:12:11.829><c> code</c><00:12:12.069><c> base</c><00:12:12.250><c> at</c>
+
+00:12:12.389 --> 00:12:12.399 align:start position:0%
+to clear a large code base at
+ 
+
+00:12:12.399 --> 00:12:14.460 align:start position:0%
+to clear a large code base at
+deprecation<00:12:12.939><c> warnings</c><00:12:12.990><c> and</c><00:12:13.990><c> we</c><00:12:14.110><c> have</c><00:12:14.259><c> an</c>
+
+00:12:14.460 --> 00:12:14.470 align:start position:0%
+deprecation warnings and we have an
+ 
+
+00:12:14.470 --> 00:12:16.710 align:start position:0%
+deprecation warnings and we have an
+existence<00:12:14.980><c> proof</c><00:12:15.040><c> of</c><00:12:15.279><c> that</c><00:12:15.430><c> from</c><00:12:16.089><c> the</c><00:12:16.329><c> JDK</c>
+
+00:12:16.710 --> 00:12:16.720 align:start position:0%
+existence proof of that from the JDK
+ 
+
+00:12:16.720 --> 00:12:19.410 align:start position:0%
+existence proof of that from the JDK
+both<00:12:17.050><c> the</c><00:12:17.259><c> Java</c><00:12:17.470><c> based</c><00:12:17.800><c> module</c><00:12:18.339><c> and</c><00:12:18.610><c> Java</c>
+
+00:12:19.410 --> 00:12:19.420 align:start position:0%
+both the Java based module and Java
+ 
+
+00:12:19.420 --> 00:12:21.059 align:start position:0%
+both the Java based module and Java
+desktop<00:12:19.779><c> modules</c><00:12:20.379><c> have</c><00:12:20.589><c> been</c><00:12:20.709><c> cleared</c><00:12:20.949><c> of</c>
+
+00:12:21.059 --> 00:12:21.069 align:start position:0%
+desktop modules have been cleared of
+ 
+
+00:12:21.069 --> 00:12:22.610 align:start position:0%
+desktop modules have been cleared of
+deprecation<00:12:21.579><c> warnings</c>
+
+00:12:22.610 --> 00:12:22.620 align:start position:0%
+deprecation warnings
+ 
+
+00:12:22.620 --> 00:12:25.290 align:start position:0%
+deprecation warnings
+what<00:12:23.620><c> does</c><00:12:23.740><c> deprecation</c><00:12:24.279><c> means</c><00:12:24.490><c> it's</c><00:12:24.970><c> a</c>
+
+00:12:25.290 --> 00:12:25.300 align:start position:0%
+what does deprecation means it's a
+ 
+
+00:12:25.300 --> 00:12:26.999 align:start position:0%
+what does deprecation means it's a
+facility<00:12:25.870><c> that's</c><00:12:25.990><c> been</c><00:12:26.170><c> in</c><00:12:26.290><c> the</c><00:12:26.379><c> platform</c><00:12:26.829><c> for</c>
+
+00:12:26.999 --> 00:12:27.009 align:start position:0%
+facility that's been in the platform for
+ 
+
+00:12:27.009 --> 00:12:28.769 align:start position:0%
+facility that's been in the platform for
+a<00:12:27.040><c> long</c><00:12:27.220><c> time</c><00:12:27.459><c> but</c><00:12:28.209><c> there's</c><00:12:28.389><c> been</c><00:12:28.600><c> some</c>
+
+00:12:28.769 --> 00:12:28.779 align:start position:0%
+a long time but there's been some
+ 
+
+00:12:28.779 --> 00:12:31.350 align:start position:0%
+a long time but there's been some
+uncertainty<00:12:29.350><c> about</c><00:12:29.379><c> the</c><00:12:29.740><c> semantics</c><00:12:30.129><c> of</c><00:12:30.220><c> it</c><00:12:30.370><c> if</c>
+
+00:12:31.350 --> 00:12:31.360 align:start position:0%
+uncertainty about the semantics of it if
+ 
+
+00:12:31.360 --> 00:12:32.490 align:start position:0%
+uncertainty about the semantics of it if
+something<00:12:31.660><c> deprecated</c><00:12:32.110><c> because</c><00:12:32.350><c> it's</c>
+
+00:12:32.490 --> 00:12:32.500 align:start position:0%
+something deprecated because it's
+ 
+
+00:12:32.500 --> 00:12:34.889 align:start position:0%
+something deprecated because it's
+harmful<00:12:32.709><c> or</c><00:12:33.459><c> is</c><00:12:33.610><c> it</c><00:12:33.730><c> deprecated</c><00:12:34.269><c> because</c><00:12:34.720><c> it's</c>
+
+00:12:34.889 --> 00:12:34.899 align:start position:0%
+harmful or is it deprecated because it's
+ 
+
+00:12:34.899 --> 00:12:36.660 align:start position:0%
+harmful or is it deprecated because it's
+going<00:12:35.050><c> away</c><00:12:35.319><c> and</c><00:12:35.800><c> if</c><00:12:36.189><c> it's</c><00:12:36.309><c> deprecated</c>
+
+00:12:36.660 --> 00:12:36.670 align:start position:0%
+going away and if it's deprecated
+ 
+
+00:12:36.670 --> 00:12:37.519 align:start position:0%
+going away and if it's deprecated
+because<00:12:36.850><c> it's</c><00:12:37.029><c> going</c><00:12:37.180><c> away</c>
+
+00:12:37.519 --> 00:12:37.529 align:start position:0%
+because it's going away
+ 
+
+00:12:37.529 --> 00:12:40.980 align:start position:0%
+because it's going away
+why<00:12:38.529><c> haven't</c><00:12:38.769><c> more</c><00:12:39.040><c> items</c><00:12:39.339><c> been</c><00:12:39.839><c> removed</c><00:12:40.839><c> from</c>
+
+00:12:40.980 --> 00:12:40.990 align:start position:0%
+why haven't more items been removed from
+ 
+
+00:12:40.990 --> 00:12:43.439 align:start position:0%
+why haven't more items been removed from
+the<00:12:41.139><c> JDK</c><00:12:41.529><c> over</c><00:12:41.860><c> the</c><00:12:41.949><c> years</c><00:12:42.149><c> we've</c><00:12:43.149><c> made</c><00:12:43.240><c> some</c>
+
+00:12:43.439 --> 00:12:43.449 align:start position:0%
+the JDK over the years we've made some
+ 
+
+00:12:43.449 --> 00:12:45.240 align:start position:0%
+the JDK over the years we've made some
+progress<00:12:43.600><c> removing</c><00:12:44.139><c> removing</c><00:12:44.559><c> deprecated</c>
+
+00:12:45.240 --> 00:12:45.250 align:start position:0%
+progress removing removing deprecated
+ 
+
+00:12:45.250 --> 00:12:47.970 align:start position:0%
+progress removing removing deprecated
+items<00:12:45.550><c> in</c><00:12:45.699><c> JDK</c><00:12:46.000><c> 9</c><00:12:46.209><c> but</c><00:12:47.050><c> we</c><00:12:47.170><c> also</c><00:12:47.319><c> thought</c><00:12:47.589><c> more</c>
+
+00:12:47.970 --> 00:12:47.980 align:start position:0%
+items in JDK 9 but we also thought more
+ 
+
+00:12:47.980 --> 00:12:50.189 align:start position:0%
+items in JDK 9 but we also thought more
+information<00:12:48.550><c> you</c><00:12:48.759><c> needed</c><00:12:49.209><c> to</c><00:12:49.389><c> be</c><00:12:49.480><c> conveyed</c><00:12:49.930><c> in</c>
+
+00:12:50.189 --> 00:12:50.199 align:start position:0%
+information you needed to be conveyed in
+ 
+
+00:12:50.199 --> 00:12:52.350 align:start position:0%
+information you needed to be conveyed in
+the<00:12:50.589><c> deprecation</c><00:12:51.009><c> annotation</c><00:12:51.579><c> to</c>
+
+00:12:52.350 --> 00:12:52.360 align:start position:0%
+the deprecation annotation to
+ 
+
+00:12:52.360 --> 00:12:53.429 align:start position:0%
+the deprecation annotation to
+distinguish<00:12:52.839><c> between</c><00:12:52.959><c> these</c><00:12:53.290><c> different</c>
+
+00:12:53.429 --> 00:12:53.439 align:start position:0%
+distinguish between these different
+ 
+
+00:12:53.439 --> 00:12:56.790 align:start position:0%
+distinguish between these different
+cases<00:12:54.449><c> and</c><00:12:55.449><c> we</c><00:12:55.899><c> did</c><00:12:56.079><c> that</c><00:12:56.230><c> by</c><00:12:56.410><c> adding</c><00:12:56.709><c> a</c><00:12:56.769><c> new</c>
+
+00:12:56.790 --> 00:12:56.800 align:start position:0%
+cases and we did that by adding a new
+ 
+
+00:12:56.800 --> 00:12:59.280 align:start position:0%
+cases and we did that by adding a new
+method<00:12:57.220><c> to</c><00:12:57.250><c> the</c><00:12:57.459><c> deprecation</c><00:12:57.879><c> annotation</c><00:12:58.629><c> for</c>
+
+00:12:59.280 --> 00:12:59.290 align:start position:0%
+method to the deprecation annotation for
+ 
+
+00:12:59.290 --> 00:13:01.319 align:start position:0%
+method to the deprecation annotation for
+removal<00:12:59.709><c> method</c><00:13:00.009><c> that</c><00:13:00.459><c> was</c><00:13:00.579><c> either</c><00:13:01.059><c> true</c><00:13:01.300><c> or</c>
+
+00:13:01.319 --> 00:13:01.329 align:start position:0%
+removal method that was either true or
+ 
+
+00:13:01.329 --> 00:13:04.650 align:start position:0%
+removal method that was either true or
+false<00:13:01.709><c> it</c><00:13:02.709><c> defaults</c><00:13:03.370><c> to</c><00:13:03.519><c> false</c><00:13:03.550><c> however</c><00:13:04.240><c> if</c>
+
+00:13:04.650 --> 00:13:04.660 align:start position:0%
+false it defaults to false however if
+ 
+
+00:13:04.660 --> 00:13:06.420 align:start position:0%
+false it defaults to false however if
+it's<00:13:04.899><c> marked</c><00:13:05.170><c> as</c><00:13:05.319><c> true</c><00:13:05.589><c> that's</c><00:13:05.949><c> an</c><00:13:06.069><c> indication</c>
+
+00:13:06.420 --> 00:13:06.430 align:start position:0%
+it's marked as true that's an indication
+ 
+
+00:13:06.430 --> 00:13:08.910 align:start position:0%
+it's marked as true that's an indication
+to<00:13:06.850><c> you</c><00:13:07.000><c> as</c><00:13:07.329><c> a</c><00:13:07.389><c> developer</c><00:13:07.629><c> that</c><00:13:08.529><c> you</c><00:13:08.769><c> should</c>
+
+00:13:08.910 --> 00:13:08.920 align:start position:0%
+to you as a developer that you should
+ 
+
+00:13:08.920 --> 00:13:10.650 align:start position:0%
+to you as a developer that you should
+migrate<00:13:09.100><c> away</c><00:13:09.370><c> from</c><00:13:09.459><c> using</c><00:13:09.759><c> that</c><00:13:09.939><c> because</c><00:13:10.389><c> it</c>
+
+00:13:10.650 --> 00:13:10.660 align:start position:0%
+migrate away from using that because it
+ 
+
+00:13:10.660 --> 00:13:12.629 align:start position:0%
+migrate away from using that because it
+will<00:13:10.809><c> be</c><00:13:10.930><c> removed</c><00:13:11.230><c> in</c><00:13:11.559><c> some</c><00:13:11.740><c> future</c><00:13:12.069><c> release</c>
+
+00:13:12.629 --> 00:13:12.639 align:start position:0%
+will be removed in some future release
+ 
+
+00:13:12.639 --> 00:13:15.720 align:start position:0%
+will be removed in some future release
+of<00:13:12.850><c> the</c><00:13:12.970><c> platform</c><00:13:14.009><c> the</c><00:13:15.009><c> tooling</c><00:13:15.579><c> around</c>
+
+00:13:15.720 --> 00:13:15.730 align:start position:0%
+of the platform the tooling around
+ 
+
+00:13:15.730 --> 00:13:18.329 align:start position:0%
+of the platform the tooling around
+deprecation<00:13:16.509><c> was</c><00:13:16.899><c> operated</c><00:13:17.589><c> to</c><00:13:17.769><c> handle</c><00:13:18.220><c> this</c>
+
+00:13:18.329 --> 00:13:18.339 align:start position:0%
+deprecation was operated to handle this
+ 
+
+00:13:18.339 --> 00:13:21.570 align:start position:0%
+deprecation was operated to handle this
+about<00:13:18.970><c> both</c><00:13:19.480><c> the</c><00:13:19.870><c> language</c><00:13:20.679><c> specification</c>
+
+00:13:21.570 --> 00:13:21.580 align:start position:0%
+about both the language specification
+ 
+
+00:13:21.580 --> 00:13:23.670 align:start position:0%
+about both the language specification
+as<00:13:21.670><c> well</c><00:13:21.970><c> as</c><00:13:22.090><c> Java</c><00:13:22.390><c> C</c><00:13:22.570><c> and</c><00:13:22.720><c> Java</c><00:13:22.960><c> to</c><00:13:23.050><c> talk</c><00:13:23.350><c> all</c>
+
+00:13:23.670 --> 00:13:23.680 align:start position:0%
+as well as Java C and Java to talk all
+ 
+
+00:13:23.680 --> 00:13:26.430 align:start position:0%
+as well as Java C and Java to talk all
+had<00:13:24.010><c> updates</c><00:13:24.550><c> to</c><00:13:24.730><c> handle</c><00:13:25.000><c> this</c><00:13:25.120><c> and</c><00:13:25.630><c> there's</c><00:13:26.380><c> a</c>
+
+00:13:26.430 --> 00:13:26.440 align:start position:0%
+had updates to handle this and there's a
+ 
+
+00:13:26.440 --> 00:13:29.310 align:start position:0%
+had updates to handle this and there's a
+new<00:13:27.040><c> static</c><00:13:27.430><c> analysis</c><00:13:27.790><c> analysis</c><00:13:28.390><c> tool</c><00:13:28.870><c> in</c><00:13:29.200><c> the</c>
+
+00:13:29.310 --> 00:13:29.320 align:start position:0%
+new static analysis analysis tool in the
+ 
+
+00:13:29.320 --> 00:13:32.340 align:start position:0%
+new static analysis analysis tool in the
+JDK<00:13:29.740><c> J</c><00:13:30.190><c> deeper</c><00:13:30.430><c> scan</c><00:13:30.760><c> that</c><00:13:31.570><c> analyzes</c><00:13:31.990><c> class</c>
+
+00:13:32.340 --> 00:13:32.350 align:start position:0%
+JDK J deeper scan that analyzes class
+ 
+
+00:13:32.350 --> 00:13:34.560 align:start position:0%
+JDK J deeper scan that analyzes class
+files<00:13:32.650><c> and</c><00:13:32.860><c> jar</c><00:13:33.010><c> files</c><00:13:33.250><c> for</c><00:13:33.640><c> uses</c><00:13:34.120><c> of</c><00:13:34.240><c> api's</c>
+
+00:13:34.560 --> 00:13:34.570 align:start position:0%
+files and jar files for uses of api's
+ 
+
+00:13:34.570 --> 00:13:36.390 align:start position:0%
+files and jar files for uses of api's
+that<00:13:34.810><c> are</c><00:13:34.900><c> deprecated</c><00:13:35.260><c> in</c><00:13:35.380><c> the</c><00:13:35.470><c> jdk</c><00:13:35.860><c> to</c><00:13:36.280><c> give</c>
+
+00:13:36.390 --> 00:13:36.400 align:start position:0%
+that are deprecated in the jdk to give
+ 
+
+00:13:36.400 --> 00:13:38.180 align:start position:0%
+that are deprecated in the jdk to give
+you<00:13:36.550><c> additional</c><00:13:36.760><c> warning</c><00:13:37.300><c> that</c><00:13:37.780><c> your</c>
+
+00:13:38.180 --> 00:13:38.190 align:start position:0%
+you additional warning that your
+ 
+
+00:13:38.190 --> 00:13:40.170 align:start position:0%
+you additional warning that your
+application<00:13:39.190><c> might</c><00:13:39.280><c> be</c><00:13:39.400><c> using</c><00:13:39.670><c> them</c><00:13:39.790><c> so</c><00:13:40.090><c> you</c>
+
+00:13:40.170 --> 00:13:40.180 align:start position:0%
+application might be using them so you
+ 
+
+00:13:40.180 --> 00:13:42.200 align:start position:0%
+application might be using them so you
+can<00:13:40.300><c> take</c><00:13:40.450><c> some</c><00:13:40.570><c> action</c><00:13:40.870><c> to</c><00:13:40.900><c> stop</c><00:13:41.170><c> using</c><00:13:41.350><c> them</c>
+
+00:13:42.200 --> 00:13:42.210 align:start position:0%
+can take some action to stop using them
+ 
+
+00:13:42.210 --> 00:13:45.570 align:start position:0%
+can take some action to stop using them
+so<00:13:43.210><c> in</c><00:13:43.540><c> conclusion</c><00:13:43.950><c> modularity</c><00:13:44.950><c> is</c><00:13:45.220><c> the</c><00:13:45.370><c> large</c>
+
+00:13:45.570 --> 00:13:45.580 align:start position:0%
+so in conclusion modularity is the large
+ 
+
+00:13:45.580 --> 00:13:47.610 align:start position:0%
+so in conclusion modularity is the large
+language<00:13:45.820><c> change</c><00:13:46.240><c> coming</c><00:13:46.540><c> in</c><00:13:46.630><c> jdk</c><00:13:46.990><c> 9</c><00:13:47.170><c> but</c>
+
+00:13:47.610 --> 00:13:47.620 align:start position:0%
+language change coming in jdk 9 but
+ 
+
+00:13:47.620 --> 00:13:49.530 align:start position:0%
+language change coming in jdk 9 but
+there<00:13:47.740><c> are</c><00:13:47.800><c> many</c><00:13:47.920><c> other</c><00:13:48.160><c> useful</c><00:13:48.400><c> updates</c><00:13:48.910><c> we</c>
+
+00:13:49.530 --> 00:13:49.540 align:start position:0%
+there are many other useful updates we
+ 
+
+00:13:49.540 --> 00:13:51.240 align:start position:0%
+there are many other useful updates we
+went<00:13:50.200><c> through</c><00:13:50.440><c> doing</c><00:13:50.740><c> plan</c><00:13:50.980><c> language</c>
+
+00:13:51.240 --> 00:13:51.250 align:start position:0%
+went through doing plan language
+ 
+
+00:13:51.250 --> 00:13:53.790 align:start position:0%
+went through doing plan language
+improvements<00:13:51.910><c> to</c><00:13:52.690><c> the</c><00:13:52.870><c> language</c><00:13:53.410><c> changes</c>
+
+00:13:53.790 --> 00:13:53.800 align:start position:0%
+improvements to the language changes
+ 
+
+00:13:53.800 --> 00:13:56.160 align:start position:0%
+improvements to the language changes
+previously<00:13:54.700><c> made</c><00:13:54.880><c> in</c><00:13:55.090><c> JDK</c><00:13:55.450><c> seven</c><00:13:55.720><c> and</c><00:13:55.840><c> eight</c>
+
+00:13:56.160 --> 00:13:56.170 align:start position:0%
+previously made in JDK seven and eight
+ 
+
+00:13:56.170 --> 00:13:57.990 align:start position:0%
+previously made in JDK seven and eight
+these<00:13:56.830><c> are</c><00:13:56.950><c> great</c><00:13:57.070><c> very</c><00:13:57.400><c> straightforward</c><00:13:57.970><c> to</c>
+
+00:13:57.990 --> 00:13:58.000 align:start position:0%
+these are great very straightforward to
+ 
+
+00:13:58.000 --> 00:13:59.730 align:start position:0%
+these are great very straightforward to
+use<00:13:58.270><c> and</c><00:13:58.540><c> you</c><00:13:58.750><c> can</c><00:13:58.930><c> use</c><00:13:59.050><c> them</c><00:13:59.260><c> in</c><00:13:59.410><c> your</c><00:13:59.470><c> own</c>
+
+00:13:59.730 --> 00:13:59.740 align:start position:0%
+use and you can use them in your own
+ 
+
+00:13:59.740 --> 00:14:02.760 align:start position:0%
+use and you can use them in your own
+code<00:13:59.980><c> today</c><00:14:00.270><c> and</c><00:14:01.270><c> to</c><00:14:01.600><c> start</c><00:14:01.870><c> using</c><00:14:02.050><c> them</c><00:14:02.260><c> in</c>
+
+00:14:02.760 --> 00:14:02.770 align:start position:0%
+code today and to start using them in
+ 
+
+00:14:02.770 --> 00:14:04.800 align:start position:0%
+code today and to start using them in
+your<00:14:02.980><c> new</c><00:14:03.100><c> code</c><00:14:03.340><c> you</c><00:14:04.060><c> can</c><00:14:04.240><c> download</c><00:14:04.420><c> a</c><00:14:04.630><c> version</c>
+
+00:14:04.800 --> 00:14:04.810 align:start position:0%
+your new code you can download a version
+ 
+
+00:14:04.810 --> 00:14:07.410 align:start position:0%
+your new code you can download a version
+of<00:14:04.990><c> the</c><00:14:05.080><c> JDK</c><00:14:05.260><c> for</c><00:14:05.830><c> your</c><00:14:05.950><c> platform</c><00:14:06.240><c> if</c><00:14:07.240><c> you're</c>
+
+00:14:07.410 --> 00:14:07.420 align:start position:0%
+of the JDK for your platform if you're
+ 
+
+00:14:07.420 --> 00:14:09.120 align:start position:0%
+of the JDK for your platform if you're
+interested<00:14:07.930><c> in</c><00:14:08.110><c> getting</c><00:14:08.410><c> involved</c><00:14:08.650><c> in</c><00:14:08.980><c> the</c>
+
+00:14:09.120 --> 00:14:09.130 align:start position:0%
+interested in getting involved in the
+ 
+
+00:14:09.130 --> 00:14:11.340 align:start position:0%
+interested in getting involved in the
+development<00:14:09.610><c> to</c><00:14:09.670><c> open</c><00:14:09.940><c> JDK</c><00:14:10.180><c> you</c><00:14:10.930><c> can</c><00:14:11.110><c> look</c><00:14:11.260><c> at</c>
+
+00:14:11.340 --> 00:14:11.350 align:start position:0%
+development to open JDK you can look at
+ 
+
+00:14:11.350 --> 00:14:13.020 align:start position:0%
+development to open JDK you can look at
+the<00:14:11.440><c> mailing</c><00:14:11.740><c> lists</c><00:14:12.040><c> on</c><00:14:12.190><c> the</c><00:14:12.580><c> open</c><00:14:12.910><c> JDK</c>
+
+00:14:13.020 --> 00:14:13.030 align:start position:0%
+the mailing lists on the open JDK
+ 
+
+00:14:13.030 --> 00:14:15.810 align:start position:0%
+the mailing lists on the open JDK
+website<00:14:13.810><c> and</c><00:14:14.020><c> you</c><00:14:14.680><c> can</c><00:14:14.830><c> also</c><00:14:14.950><c> get</c><00:14:15.160><c> updates</c><00:14:15.610><c> on</c>
+
+00:14:15.810 --> 00:14:15.820 align:start position:0%
+website and you can also get updates on
+ 
+
+00:14:15.820 --> 00:14:18.720 align:start position:0%
+website and you can also get updates on
+open<00:14:16.330><c> JDK</c><00:14:16.450><c> by</c><00:14:17.380><c> following</c><00:14:17.830><c> open</c><00:14:18.220><c> JDK</c><00:14:18.340><c> on</c>
+
+00:14:18.720 --> 00:14:18.730 align:start position:0%
+open JDK by following open JDK on
+ 
+
+00:14:18.730 --> 00:14:21.330 align:start position:0%
+open JDK by following open JDK on
+Twitter<00:14:18.970><c> thank</c><00:14:19.240><c> you</c>
+

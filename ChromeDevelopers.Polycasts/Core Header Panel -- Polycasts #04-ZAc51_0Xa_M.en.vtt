@@ -1,0 +1,1257 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.337 --> 00:00:01.670
+ROB DODSON: Everyone, what's up?
+
+00:00:01.670 --> 00:00:02.452
+It's Rob Dodson.
+
+00:00:02.452 --> 00:00:03.910
+And in today's
+episode, we're going
+
+00:00:03.910 --> 00:00:04.880
+to be picking up
+where we left off
+
+00:00:04.880 --> 00:00:06.234
+last time with the core toolbar.
+
+00:00:06.234 --> 00:00:08.400
+And we're going to be
+combining it with our new best
+
+00:00:08.400 --> 00:00:09.983
+friend, the core
+header panel to build
+
+00:00:09.983 --> 00:00:11.380
+our very first application.
+
+00:00:11.380 --> 00:00:12.610
+So let's check it out.
+
+00:00:12.610 --> 00:00:15.310
+Now, the core header
+panel is the first element
+
+00:00:15.310 --> 00:00:17.060
+we've touched upon
+that's going to give us
+
+00:00:17.060 --> 00:00:19.471
+the beginnings of a full-blown
+application scaffold.
+
+00:00:19.471 --> 00:00:21.470
+But before we dive into
+the header panel itself,
+
+00:00:21.470 --> 00:00:23.400
+I want to take a
+moment to reflect
+
+00:00:23.400 --> 00:00:24.730
+on where we're at this point.
+
+00:00:24.730 --> 00:00:27.110
+Now, so far, we've been
+learning each element
+
+00:00:27.110 --> 00:00:28.820
+as a single-purpose
+building block.
+
+00:00:28.820 --> 00:00:30.280
+And the value in doing
+this is that, once you've
+
+00:00:30.280 --> 00:00:31.970
+mastered a few of
+these building blocks,
+
+00:00:31.970 --> 00:00:34.655
+you can start to assemble them
+into different structures.
+
+00:00:34.655 --> 00:00:36.530
+You can think of this
+kind of in the same way
+
+00:00:36.530 --> 00:00:40.025
+that you put together all the
+bricks that make up a house.
+
+00:00:40.025 --> 00:00:41.650
+In the programming
+world, this is often
+
+00:00:41.650 --> 00:00:44.446
+referred to as composition.
+
+00:00:44.446 --> 00:00:46.320
+And generally, I like
+to think of composition
+
+00:00:46.320 --> 00:00:49.840
+as taking one really big
+thing and assembling it out
+
+00:00:49.840 --> 00:00:53.420
+of a bunch of smaller single
+purpose pieces that are really
+
+00:00:53.420 --> 00:00:55.015
+easy to understand.
+
+00:00:55.015 --> 00:00:56.390
+That's basically
+what we're going
+
+00:00:56.390 --> 00:00:57.973
+to be doing with the
+core header panel
+
+00:00:57.973 --> 00:01:00.030
+today and really
+just moving forward
+
+00:01:00.030 --> 00:01:02.150
+with Web Components in general.
+
+00:01:02.150 --> 00:01:04.150
+So as we're working,
+I want you to keep
+
+00:01:04.150 --> 00:01:06.380
+that idea of composition
+in the back your head.
+
+00:01:06.380 --> 00:01:08.080
+I want you to see if you can
+pick up the places where we're
+
+00:01:08.080 --> 00:01:10.790
+taking simple building blocks
+and composing them together
+
+00:01:10.790 --> 00:01:14.029
+into these bigger, more
+complex structures.
+
+00:01:14.029 --> 00:01:15.820
+So let's get started
+with the header panel.
+
+00:01:15.820 --> 00:01:17.600
+Here's what we're
+planning to build today.
+
+00:01:17.600 --> 00:01:19.266
+As you can see, we've
+got the beginnings
+
+00:01:19.266 --> 00:01:21.050
+of a really simple
+mobile application.
+
+00:01:21.050 --> 00:01:22.730
+Now, the core header
+panel by itself
+
+00:01:22.730 --> 00:01:24.660
+is really just a scaffold.
+
+00:01:24.660 --> 00:01:27.210
+It's got a header area up at
+the top which can hold something
+
+00:01:27.210 --> 00:01:28.690
+like a core toolbar.
+
+00:01:28.690 --> 00:01:30.844
+And it's got a content
+area down below.
+
+00:01:30.844 --> 00:01:33.260
+One thing to note is that for
+the header panel to display,
+
+00:01:33.260 --> 00:01:35.720
+both it and its parent
+are going to need
+
+00:01:35.720 --> 00:01:37.160
+to have an explicit height set.
+
+00:01:37.160 --> 00:01:38.660
+Now, this is a
+really common pitfall
+
+00:01:38.660 --> 00:01:39.950
+for developers when
+they first start
+
+00:01:39.950 --> 00:01:41.370
+working with the header panel.
+
+00:01:41.370 --> 00:01:43.200
+They'll drop the
+tag on the page,
+
+00:01:43.200 --> 00:01:44.600
+but then, they
+won't see anything
+
+00:01:44.600 --> 00:01:45.540
+showing up on their screen.
+
+00:01:45.540 --> 00:01:47.373
+And that's because those
+heights aren't set.
+
+00:01:47.373 --> 00:01:50.010
+Even if the header panel had
+a default height in percents,
+
+00:01:50.010 --> 00:01:51.740
+you still wouldn't
+see anything until you
+
+00:01:51.740 --> 00:01:53.260
+give the parent,
+which in this case
+
+00:01:53.260 --> 00:01:55.500
+is the body, an
+explicit height as well.
+
+00:01:55.500 --> 00:01:58.540
+Now, you can do this in CSS by
+setting the HTML and the body
+
+00:01:58.540 --> 00:02:00.230
+to have a height
+of 100% and then,
+
+00:02:00.230 --> 00:02:02.980
+telling the core header panel to
+have a height of 100% to match.
+
+00:02:02.980 --> 00:02:05.060
+Or you can get a
+little fancy, and you
+
+00:02:05.060 --> 00:02:07.430
+can just layout attributes
+do this with flexbox.
+
+00:02:07.430 --> 00:02:08.930
+And that's how we're
+going to do it.
+
+00:02:08.930 --> 00:02:11.039
+So we're going to use
+a layout attribute
+
+00:02:11.039 --> 00:02:12.229
+and a vertical attribute.
+
+00:02:12.229 --> 00:02:14.270
+And these are going that
+tell the body to lay out
+
+00:02:14.270 --> 00:02:16.605
+its children vertically
+from top to bottom.
+
+00:02:16.605 --> 00:02:18.230
+And we're also going
+to tell our header
+
+00:02:18.230 --> 00:02:20.470
+panel that we want it to flex.
+
+00:02:20.470 --> 00:02:23.280
+And that way it's going to try
+to fill as much of the screen
+
+00:02:23.280 --> 00:02:24.020
+as it can.
+
+00:02:24.020 --> 00:02:26.360
+And you should also remember
+the full bleed attribute
+
+00:02:26.360 --> 00:02:27.256
+from our last video.
+
+00:02:27.256 --> 00:02:28.630
+That's going to
+tell the body tag
+
+00:02:28.630 --> 00:02:30.540
+to remove all of its
+margin and padding.
+
+00:02:30.540 --> 00:02:32.240
+And that way our
+content can go right up
+
+00:02:32.240 --> 00:02:33.950
+to the edges of the screen.
+
+00:02:33.950 --> 00:02:35.480
+Now, to make our
+toolbar display,
+
+00:02:35.480 --> 00:02:38.110
+we're just going to drop a core
+toolbar element into our header
+
+00:02:38.110 --> 00:02:38.470
+panel.
+
+00:02:38.470 --> 00:02:40.761
+And the cool thing is, the
+header panel is smart enough
+
+00:02:40.761 --> 00:02:43.250
+to know that if it has
+a core toolbar child,
+
+00:02:43.250 --> 00:02:46.380
+it should just place it up
+here at the top of the screen.
+
+00:02:46.380 --> 00:02:48.780
+And by default, it's actually
+going to keep it pinned up.
+
+00:02:48.780 --> 00:02:50.615
+There it's actually
+a sticky toolbar.
+
+00:02:50.615 --> 00:02:53.240
+And I'll show an example of what
+that looks like in just a bit.
+
+00:02:53.240 --> 00:02:54.140
+Now, another thing
+to point out is
+
+00:02:54.140 --> 00:02:56.255
+that you don't have to
+use a core toolbar here
+
+00:02:56.255 --> 00:02:57.130
+if you don't want to.
+
+00:02:57.130 --> 00:03:00.000
+You could also use a div with
+the class of core header.
+
+00:03:00.000 --> 00:03:02.170
+That would also get pinned
+to the top of the screen.
+
+00:03:02.170 --> 00:03:04.390
+Now, for the content
+inside of our header panel,
+
+00:03:04.390 --> 00:03:06.700
+we're just going to
+drop a div on the page.
+
+00:03:06.700 --> 00:03:09.072
+And I've just going ahead and
+filled it with some markup
+
+00:03:09.072 --> 00:03:10.780
+and some shapes so
+that we have something
+
+00:03:10.780 --> 00:03:12.350
+displayed in our application.
+
+00:03:12.350 --> 00:03:14.660
+And any child is not
+a core toolbar element
+
+00:03:14.660 --> 00:03:16.840
+or doesn't have that
+core header class,
+
+00:03:16.840 --> 00:03:19.450
+it's going to end up displaying
+in this main content area
+
+00:03:19.450 --> 00:03:19.990
+down here.
+
+00:03:19.990 --> 00:03:22.200
+So you're not limited
+to just this one div.
+
+00:03:22.200 --> 00:03:24.390
+You could have as
+many as you want.
+
+00:03:24.390 --> 00:03:26.660
+Generally, I just put one here.
+
+00:03:26.660 --> 00:03:29.260
+That way I can give the
+content of my application
+
+00:03:29.260 --> 00:03:30.840
+some consistent padding.
+
+00:03:30.840 --> 00:03:32.480
+Now, the header
+panel's main job is
+
+00:03:32.480 --> 00:03:35.770
+to control the scrolling
+behavior on the page.
+
+00:03:35.770 --> 00:03:39.090
+So you'll see that, as the
+user's swiping on their phone,
+
+00:03:39.090 --> 00:03:42.650
+the toolbar stays pinned
+up the top of the document.
+
+00:03:42.650 --> 00:03:45.105
+And the content is
+sliding underneath it.
+
+00:03:45.105 --> 00:03:46.980
+Now, the thing to note
+here is that we're not
+
+00:03:46.980 --> 00:03:50.340
+writing any CSS
+nor are we writing
+
+00:03:50.340 --> 00:03:53.294
+any JavaScript to
+make this happen.
+
+00:03:53.294 --> 00:03:54.710
+The header panel
+is just a smarter
+
+00:03:54.710 --> 00:03:57.190
+primitive that knows what to
+do when there's a core toolbar
+
+00:03:57.190 --> 00:03:57.800
+inside of it.
+
+00:03:57.800 --> 00:04:00.300
+Now, if you want to change the
+behavior of our header panel,
+
+00:04:00.300 --> 00:04:02.850
+it's really as simple as
+changing an attribute.
+
+00:04:02.850 --> 00:04:07.322
+If we give it a mode attribute
+and set it to scroll,
+
+00:04:07.322 --> 00:04:09.850
+now, you'll see that, as the
+user is scrolling the page,
+
+00:04:09.850 --> 00:04:13.222
+the toolbar moves with
+the rest of the content.
+
+00:04:13.222 --> 00:04:16.079
+Now, there's a few other values
+that we can use for that mode.
+
+00:04:16.079 --> 00:04:17.620
+But instead of just
+talking about it,
+
+00:04:17.620 --> 00:04:19.161
+how about we hop
+into our code editor
+
+00:04:19.161 --> 00:04:21.855
+and actually get some of
+this showing up on screen.
+
+00:04:21.855 --> 00:04:23.230
+So over on my
+terminal, I'm going
+
+00:04:23.230 --> 00:04:30.506
+to write bower install,
+save, polymer/coreelements.
+
+00:04:30.506 --> 00:04:32.420
+Now, that's actually
+going to go and fetch
+
+00:04:32.420 --> 00:04:34.376
+all the elements
+in the course set.
+
+00:04:34.376 --> 00:04:36.250
+And the reason I'm doing
+this is because when
+
+00:04:36.250 --> 00:04:38.040
+I'm developing a site
+or an application,
+
+00:04:38.040 --> 00:04:41.494
+it's just a lot easier to
+install everything in the set.
+
+00:04:41.494 --> 00:04:43.910
+And that way I don't have to
+keep switching back and forth
+
+00:04:43.910 --> 00:04:46.000
+between my project
+and the terminal
+
+00:04:46.000 --> 00:04:48.510
+just to install a
+few more elements.
+
+00:04:48.510 --> 00:04:50.340
+Also, the only elements
+that are actually
+
+00:04:50.340 --> 00:04:52.190
+served in my
+application are the ones
+
+00:04:52.190 --> 00:04:54.667
+that I've written
+HTML imports for.
+
+00:04:54.667 --> 00:04:56.500
+So if you're OK with
+having all the elements
+
+00:04:56.500 --> 00:04:58.820
+on your local disk, this can
+be a really convenient way
+
+00:04:58.820 --> 00:04:59.750
+to develop.
+
+00:04:59.750 --> 00:05:01.350
+Switching to our
+code editor, we've
+
+00:05:01.350 --> 00:05:03.290
+already laid out a
+basic application
+
+00:05:03.290 --> 00:05:05.412
+using the code from
+the previous slides.
+
+00:05:05.412 --> 00:05:06.870
+The first thing
+I'm going to do is,
+
+00:05:06.870 --> 00:05:09.328
+I'm going to create a file to
+hold all the imports that I'm
+
+00:05:09.328 --> 00:05:11.370
+going to use in my application.
+
+00:05:11.370 --> 00:05:13.516
+So I'll pop open my
+sidebar, and I'll
+
+00:05:13.516 --> 00:05:15.140
+create a new file
+called elements.html.
+
+00:05:19.980 --> 00:05:21.960
+Now, I'm just going to
+paste in all the imports
+
+00:05:21.960 --> 00:05:24.180
+that I'm going to
+use in this project.
+
+00:05:24.180 --> 00:05:26.065
+And really quickly,
+what I've got here is,
+
+00:05:26.065 --> 00:05:30.430
+I've got a core header panel,
+a core toolbar, core icon
+
+00:05:30.430 --> 00:05:33.890
+buttons, and core icons.html.
+
+00:05:33.890 --> 00:05:36.480
+And that's going to load in the
+definition for the core icon
+
+00:05:36.480 --> 00:05:39.360
+element as well as
+the default icon set.
+
+00:05:39.360 --> 00:05:40.650
+So save this.
+
+00:05:40.650 --> 00:05:42.700
+And back in my
+index HTML file, I'm
+
+00:05:42.700 --> 00:05:44.860
+going to create an
+import to load in
+
+00:05:44.860 --> 00:05:47.846
+that elements HTML file
+that I just created.
+
+00:05:47.846 --> 00:05:50.260
+Now, this is going
+to do two things.
+
+00:05:50.260 --> 00:05:52.260
+It's going to keep the
+head tag on my index HTML
+
+00:05:52.260 --> 00:05:53.900
+file nice and tidy.
+
+00:05:53.900 --> 00:05:57.170
+It's also going to make it
+much easier to vulcanize
+
+00:05:57.170 --> 00:05:58.660
+all my imports
+together when it's
+
+00:05:58.660 --> 00:06:00.330
+time to ship this
+into production.
+
+00:06:00.330 --> 00:06:01.830
+Now, taking a look
+down at the code,
+
+00:06:01.830 --> 00:06:03.280
+you'll see that it's
+basically the same thing
+
+00:06:03.280 --> 00:06:04.610
+that we had in the slides.
+
+00:06:04.610 --> 00:06:07.960
+We've got full bleed attribute
+and a few of the other layout
+
+00:06:07.960 --> 00:06:09.419
+attributes like
+layout in vertical.
+
+00:06:09.419 --> 00:06:11.376
+We've got our core header
+panel inside of here.
+
+00:06:11.376 --> 00:06:13.380
+And inside of that, we've
+got our core toolbar.
+
+00:06:13.380 --> 00:06:15.520
+One thing to note is that
+down in my content div,
+
+00:06:15.520 --> 00:06:17.780
+if I pop this open,
+you'll see that there's
+
+00:06:17.780 --> 00:06:19.750
+a whole bunch of
+markup inside of here.
+
+00:06:19.750 --> 00:06:21.550
+This is just boilerplate
+that I've created,
+
+00:06:21.550 --> 00:06:23.008
+so we can lay out
+a bunch of shapes
+
+00:06:23.008 --> 00:06:24.681
+on the screen of our
+apps some content.
+
+00:06:24.681 --> 00:06:26.430
+You don't actually
+need to worry about any
+
+00:06:26.430 --> 00:06:27.710
+of the code that's
+inside of this element.
+
+00:06:27.710 --> 00:06:29.500
+It's really just
+for presentation.
+
+00:06:29.500 --> 00:06:30.999
+Now, back in our
+terminal, I'm going
+
+00:06:30.999 --> 00:06:34.480
+to start up a local server, so
+we can preview the application.
+
+00:06:34.480 --> 00:06:37.460
+I'm going to do Python-m
+simple HTTP server
+
+00:06:37.460 --> 00:06:39.440
+and run it on Port 9000.
+
+00:06:39.440 --> 00:06:41.750
+You can use any local
+server that you want.
+
+00:06:41.750 --> 00:06:44.490
+I'm just using Python because
+it comes pre-installed on Macs.
+
+00:06:44.490 --> 00:06:47.660
+But if you want to start it in
+Node server or Apache server,
+
+00:06:47.660 --> 00:06:49.190
+all that will work just fine.
+
+00:06:49.190 --> 00:06:51.900
+Now, hopping back into Chrome,
+if we open a page at Localhost
+
+00:06:51.900 --> 00:06:53.910
+9000, this is what
+we should see.
+
+00:06:53.910 --> 00:06:55.670
+We've got our toolbar
+up at the top,
+
+00:06:55.670 --> 00:06:58.814
+and all our content is
+scrolling underneath it.
+
+00:06:58.814 --> 00:07:00.230
+So right now, the
+layout is really
+
+00:07:00.230 --> 00:07:02.940
+designed for a mobile device.
+
+00:07:02.940 --> 00:07:04.959
+It's not so great
+on our desktop.
+
+00:07:04.959 --> 00:07:07.000
+If we want to actually
+preview this on our phone,
+
+00:07:07.000 --> 00:07:08.930
+we can open up the
+Hamburger menu,
+
+00:07:08.930 --> 00:07:12.360
+and go down to More
+Tool, Inspect Devices.
+
+00:07:12.360 --> 00:07:14.614
+And that's going to pop
+up this window right here.
+
+00:07:14.614 --> 00:07:16.780
+And I'm actually just going
+to zoom in a little bit,
+
+00:07:16.780 --> 00:07:18.250
+so you can see what's happening.
+
+00:07:18.250 --> 00:07:20.910
+It's going to ask us if we want
+to forward one of our ports.
+
+00:07:20.910 --> 00:07:23.400
+I've already got
+Localhost 9000 set up here
+
+00:07:23.400 --> 00:07:26.830
+because that's the place where
+we're running our local server.
+
+00:07:26.830 --> 00:07:31.650
+So put in Localhost 9000,
+go down and click Done.
+
+00:07:31.650 --> 00:07:34.400
+And over in this little box,
+we can just type in the URL
+
+00:07:34.400 --> 00:07:35.940
+that we'd like Chrome to open.
+
+00:07:35.940 --> 00:07:41.370
+So I'll type in
+http://localhost9000.
+
+00:07:41.370 --> 00:07:44.424
+And if I've got Chrome running
+on my device, I can click Open.
+
+00:07:44.424 --> 00:07:46.090
+And now, you can see
+that we've actually
+
+00:07:46.090 --> 00:07:49.160
+got the application
+running here on our phone.
+
+00:07:49.160 --> 00:07:51.110
+And it looks really nice.
+
+00:07:51.110 --> 00:07:51.610
+All right.
+
+00:07:51.610 --> 00:07:53.600
+So this is looking
+really great on my phone.
+
+00:07:53.600 --> 00:07:57.030
+And more importantly, this is
+just a really useful debugging
+
+00:07:57.030 --> 00:07:58.314
+technique to know about.
+
+00:07:58.314 --> 00:07:59.980
+So if you're interested
+in learning more
+
+00:07:59.980 --> 00:08:01.400
+about remote debugging,
+follow the link
+
+00:08:01.400 --> 00:08:02.567
+at the bottom of the screen.
+
+00:08:02.567 --> 00:08:04.233
+Now, let's dive back
+in our code editor,
+
+00:08:04.233 --> 00:08:05.770
+and we'll finish
+up our application.
+
+00:08:05.770 --> 00:08:07.436
+Now, switching back
+to our site, I'm
+
+00:08:07.436 --> 00:08:08.810
+going to pop up
+in the dev tools.
+
+00:08:08.810 --> 00:08:10.809
+And I'm going to boost
+the page up a little bit,
+
+00:08:10.809 --> 00:08:13.010
+so it's easy to see
+what we're doing.
+
+00:08:13.010 --> 00:08:15.660
+And over here in
+our dev tools, I'm
+
+00:08:15.660 --> 00:08:19.240
+going to select the core header
+panel in the Elements tab.
+
+00:08:22.320 --> 00:08:24.390
+If you recall, I mentioned
+before that there
+
+00:08:24.390 --> 00:08:27.060
+are various modes that we can
+put the header panel into.
+
+00:08:27.060 --> 00:08:30.850
+So to demonstrate this, I'm
+going to add an attribute here.
+
+00:08:30.850 --> 00:08:34.867
+And I'm going to give
+it a mode of scroll.
+
+00:08:34.867 --> 00:08:36.450
+And now, our toolbar
+is actually going
+
+00:08:36.450 --> 00:08:40.047
+to scroll with the rest of
+the content of the page.
+
+00:08:40.047 --> 00:08:41.630
+Now, there's a few
+other modes that we
+
+00:08:41.630 --> 00:08:43.350
+can place the toolbar into.
+
+00:08:43.350 --> 00:08:45.550
+If we want, we can place
+it into a seamed mode.
+
+00:08:45.550 --> 00:08:47.133
+What that's going
+to do is, it's going
+
+00:08:47.133 --> 00:08:48.850
+to keep the toolbar sticky.
+
+00:08:48.850 --> 00:08:51.330
+But you'll see that there's
+no longer a drop shadow
+
+00:08:51.330 --> 00:08:53.820
+as our content is
+scrolling underneath it.
+
+00:08:53.820 --> 00:08:56.310
+Another variation on this
+is, if we change the mode
+
+00:08:56.310 --> 00:09:00.686
+to Waterfall, the toolbar will
+start off in a seamed mode.
+
+00:09:00.686 --> 00:09:02.560
+But as we scroll, you'll
+see that there's now
+
+00:09:02.560 --> 00:09:05.100
+a drop shadow that appears
+underneath the toolbar
+
+00:09:05.100 --> 00:09:07.240
+and above the rest
+of the content.
+
+00:09:07.240 --> 00:09:10.210
+And there's one more mode that's
+actually pretty interesting.
+
+00:09:10.210 --> 00:09:14.772
+If we change it from Waterfall
+to Waterfall-Tall-- now,
+
+00:09:14.772 --> 00:09:16.230
+pay attention to
+what happens here.
+
+00:09:16.230 --> 00:09:18.780
+--the toolbar itself
+gets a lot bigger.
+
+00:09:18.780 --> 00:09:21.180
+And if you inspect the
+core toolbar element,
+
+00:09:21.180 --> 00:09:25.309
+you'll see that it now has these
+two classes, Animate and Tall.
+
+00:09:25.309 --> 00:09:27.100
+Basically, the header
+panel has reached in,
+
+00:09:27.100 --> 00:09:28.840
+and it has told
+the toolbar that it
+
+00:09:28.840 --> 00:09:31.270
+should have these
+additional classes.
+
+00:09:31.270 --> 00:09:33.070
+Now, if you remember
+from the last episode,
+
+00:09:33.070 --> 00:09:35.920
+we can add classes to the
+children of a core toolbar,
+
+00:09:35.920 --> 00:09:38.580
+to pin them to
+different locations.
+
+00:09:38.580 --> 00:09:41.740
+So if I open up my
+core header panel,
+
+00:09:41.740 --> 00:09:45.410
+find the title div
+inside of my toolbar,
+
+00:09:45.410 --> 00:09:47.400
+then, I can actually give
+it some classes here.
+
+00:09:47.400 --> 00:09:49.375
+I'm going to give it a
+bottom and indent class.
+
+00:09:52.765 --> 00:09:54.890
+And you'll see now that
+the title of my application
+
+00:09:54.890 --> 00:09:56.764
+has kind of jumped to
+the bottom the toolbar.
+
+00:09:56.764 --> 00:09:58.530
+It sort of indented
+over, so it has
+
+00:09:58.530 --> 00:10:00.410
+moved of the way of
+our Hamburger menu
+
+00:10:00.410 --> 00:10:03.640
+up here in the top left.
+
+00:10:03.640 --> 00:10:06.520
+What's going to happen
+is, as we scroll the page,
+
+00:10:06.520 --> 00:10:09.320
+you'll see that the
+toolbar collapses,
+
+00:10:09.320 --> 00:10:12.030
+and the title of our
+application moves with it.
+
+00:10:12.030 --> 00:10:14.540
+And this is a pretty wild
+effect, which you get basically
+
+00:10:14.540 --> 00:10:16.440
+for free by adding an
+attribute and setting
+
+00:10:16.440 --> 00:10:18.250
+a few classes on your toolbar.
+
+00:10:18.250 --> 00:10:19.345
+I think it's pretty neat.
+
+00:10:19.345 --> 00:10:19.860
+All right.
+
+00:10:19.860 --> 00:10:21.270
+There's one more mode
+for the header panel
+
+00:10:21.270 --> 00:10:22.190
+that I want to show you.
+
+00:10:22.190 --> 00:10:24.440
+But we're going to need to
+hop back in our code editor
+
+00:10:24.440 --> 00:10:25.500
+to look at it.
+
+00:10:25.500 --> 00:10:26.890
+So beck in our
+code editor, we're
+
+00:10:26.890 --> 00:10:29.174
+going to set one final
+node on the header panel.
+
+00:10:29.174 --> 00:10:30.840
+We're going to change
+its mode to Cover.
+
+00:10:30.840 --> 00:10:34.080
+And the Cover mode is going
+to take this content div,
+
+00:10:34.080 --> 00:10:36.620
+and it's actually
+a float it visibly
+
+00:10:36.620 --> 00:10:39.210
+on top of the core toolbar.
+
+00:10:39.210 --> 00:10:42.460
+So to do this, we're going
+to open up our app CSS file.
+
+00:10:42.460 --> 00:10:44.450
+And I'm just going
+to drop in some CSS
+
+00:10:44.450 --> 00:10:46.450
+that I've already
+got saved here.
+
+00:10:46.450 --> 00:10:48.750
+And I'll walk you
+through what's going on.
+
+00:10:48.750 --> 00:10:51.650
+So we're selecting
+the core header panel,
+
+00:10:51.650 --> 00:10:54.600
+and then, we're using this
+shadow so pseudo-element
+
+00:10:54.600 --> 00:10:58.769
+to target its main
+container child.
+
+00:10:58.769 --> 00:11:01.310
+And the main container child is
+where the content of our page
+
+00:11:01.310 --> 00:11:03.124
+is actually being projected.
+
+00:11:03.124 --> 00:11:04.790
+So we're telling the
+content of the page
+
+00:11:04.790 --> 00:11:10.210
+to move over from the left edge
+of the screen by 180 pixels.
+
+00:11:10.210 --> 00:11:12.066
+Then, we're selecting
+the content element.
+
+00:11:12.066 --> 00:11:13.440
+And we're telling
+it that we want
+
+00:11:13.440 --> 00:11:17.070
+to have a right
+margin of 180 pixels.
+
+00:11:17.070 --> 00:11:19.810
+Now, I know this makes
+absolutely no sense
+
+00:11:19.810 --> 00:11:22.250
+until you see what I'm
+doing in the screen.
+
+00:11:22.250 --> 00:11:24.750
+So let's hop back
+over to Chrome.
+
+00:11:24.750 --> 00:11:27.770
+You'll see here that we've now
+got a page with our content
+
+00:11:27.770 --> 00:11:30.310
+with kind of like a medium
+gray background behind it.
+
+00:11:30.310 --> 00:11:32.200
+As were scrolling
+the page, the content
+
+00:11:32.200 --> 00:11:36.130
+is actually visibly
+floating above the toolbar.
+
+00:11:36.130 --> 00:11:41.629
+And on either side, we've
+got 180 pixels of space.
+
+00:11:41.629 --> 00:11:43.420
+So it's a pretty
+interesting visual effect,
+
+00:11:43.420 --> 00:11:46.400
+and now, you know how to
+pull it off in your own app.
+
+00:11:46.400 --> 00:11:47.960
+So in this video,
+we covered a lot
+
+00:11:47.960 --> 00:11:49.350
+of really interesting stuff.
+
+00:11:49.350 --> 00:11:51.250
+We've started down the
+path of composition
+
+00:11:51.250 --> 00:11:53.340
+by taking the header
+panel and combining it
+
+00:11:53.340 --> 00:11:56.157
+with the core toolbar, and the
+icon button, and the icons.
+
+00:11:56.157 --> 00:11:57.740
+We've gotten an
+application that looks
+
+00:11:57.740 --> 00:11:59.640
+really great on our phone.
+
+00:11:59.640 --> 00:12:01.580
+It looks a little
+iffy on our desktop.
+
+00:12:01.580 --> 00:12:03.199
+And so in the next
+video, I'm going
+
+00:12:03.199 --> 00:12:05.240
+to show you one more
+element that you can combine
+
+00:12:05.240 --> 00:12:07.531
+with the core header panel
+to make an experience that's
+
+00:12:07.531 --> 00:12:11.230
+both gorgeous on your desktop
+as well as your mobile device.
+
+00:12:11.230 --> 00:12:12.250
+So thanks for watching.
+
+00:12:12.250 --> 00:12:14.290
+We'll see you next time.
+

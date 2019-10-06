@@ -1,0 +1,289 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.856
+[MUSIC PLAYING]
+
+00:00:05.790 --> 00:00:06.970
+KAYCE BASQUES: Welcome back.
+
+00:00:06.970 --> 00:00:10.170
+Here's what's new in
+DevTools in Chrome 72.
+
+00:00:10.170 --> 00:00:12.270
+The timing section of
+the Performance panel
+
+00:00:12.270 --> 00:00:15.000
+now includes
+performance metrics.
+
+00:00:15.000 --> 00:00:18.330
+Here I've got a performance
+recording of our optimized site
+
+00:00:18.330 --> 00:00:19.770
+speed tutorial.
+
+00:00:19.770 --> 00:00:23.070
+The new performance metrics
+are here in the timing section.
+
+00:00:23.070 --> 00:00:25.780
+FCP represents First
+Contentful Paint,
+
+00:00:25.780 --> 00:00:28.470
+which is when the browser
+render the first bit of content
+
+00:00:28.470 --> 00:00:29.850
+from the DOM.
+
+00:00:29.850 --> 00:00:33.240
+FMP is First Meaningful
+Paint, which approximates when
+
+00:00:33.240 --> 00:00:35.640
+meaningful content is visible.
+
+00:00:35.640 --> 00:00:38.760
+DCL is DOM Content
+Loaded, which the browser
+
+00:00:38.760 --> 00:00:41.430
+fires when the initial
+html document has
+
+00:00:41.430 --> 00:00:43.620
+been loaded and parsed.
+
+00:00:43.620 --> 00:00:45.690
+And L is the Load
+Event, which is
+
+00:00:45.690 --> 00:00:48.750
+fired when all resources
+have finished loading.
+
+00:00:48.750 --> 00:00:50.500
+How do you use this information?
+
+00:00:50.500 --> 00:00:53.310
+Well, if you want to get initial
+content to screen faster,
+
+00:00:53.310 --> 00:00:56.220
+for example, you'd focus
+on all the activity that
+
+00:00:56.220 --> 00:00:59.100
+occurs before your FMP event.
+
+00:00:59.100 --> 00:01:02.520
+Deferring any unnecessary
+network requests or JavaScript
+
+00:01:02.520 --> 00:01:06.100
+calls should help push
+your FMP event to the left,
+
+00:01:06.100 --> 00:01:09.270
+meaning that the page is
+rendering the first bit faster.
+
+00:01:09.270 --> 00:01:11.580
+Check out this optimized
+site speed tutorial
+
+00:01:11.580 --> 00:01:14.760
+to learn the basics of
+analyzing load performance.
+
+00:01:14.760 --> 00:01:17.520
+Hovering over a text
+node in the DOM tree now
+
+00:01:17.520 --> 00:01:19.730
+highlights that node
+in the viewport.
+
+00:01:19.730 --> 00:01:22.980
+Back in Chrome 71, when
+I hover over a text node,
+
+00:01:22.980 --> 00:01:24.330
+nothing happens.
+
+00:01:24.330 --> 00:01:27.570
+In Chrome 72, when I
+hover over that same node,
+
+00:01:27.570 --> 00:01:30.120
+it gets highlighted
+in the viewport.
+
+00:01:30.120 --> 00:01:32.580
+Suppose you're writing
+an automation test that
+
+00:01:32.580 --> 00:01:34.710
+involves clicking a DOM node.
+
+00:01:34.710 --> 00:01:38.520
+Copy JS path provides a fast way
+to get a JavaScript reference
+
+00:01:38.520 --> 00:01:41.700
+to that node from
+within DevTools.
+
+00:01:41.700 --> 00:01:43.560
+Here on this Shadow
+DOM tutorial,
+
+00:01:43.560 --> 00:01:46.000
+I need a reference to
+the first paragraph.
+
+00:01:46.000 --> 00:01:48.240
+So I right-click the
+node, then select
+
+00:01:48.240 --> 00:01:50.850
+Inspect, which opens
+up the Elements panel
+
+00:01:50.850 --> 00:01:53.790
+and highlights the
+node in the DOM tree.
+
+00:01:53.790 --> 00:01:56.070
+Then I right-click
+the node, go to Copy,
+
+00:01:56.070 --> 00:01:59.520
+and select Copy JS Path.
+
+00:01:59.520 --> 00:02:01.950
+A document.querySelector
+expression
+
+00:02:01.950 --> 00:02:05.980
+that resolves to this node is
+now copied to my clipboard.
+
+00:02:05.980 --> 00:02:08.250
+I can confirm this by
+pasting the expression
+
+00:02:08.250 --> 00:02:10.509
+into the console.
+
+00:02:10.509 --> 00:02:13.090
+Eager eval shows me that
+the expression evaluates
+
+00:02:13.090 --> 00:02:15.700
+to the node as expected.
+
+00:02:15.700 --> 00:02:20.050
+Next up, the Audits
+panel has one new audit.
+
+00:02:20.050 --> 00:02:23.860
+Under the Past Audit section
+of the Best Practices category,
+
+00:02:23.860 --> 00:02:28.600
+you'll find a new audit called
+Detected JavaScript Libraries.
+
+00:02:28.600 --> 00:02:31.300
+As the name suggests,
+this audit lists out
+
+00:02:31.300 --> 00:02:35.090
+all JavaScript libraries that
+were detected on the page.
+
+00:02:35.090 --> 00:02:36.490
+Here's a bonus tip.
+
+00:02:36.490 --> 00:02:39.790
+Device mode can help you
+inspect media queries.
+
+00:02:39.790 --> 00:02:43.420
+Click Toggle Device Toolbar
+to enter Device mode.
+
+00:02:43.420 --> 00:02:46.550
+You need to be in Responsive
+mode for this feature,
+
+00:02:46.550 --> 00:02:51.440
+so switch back to it if you're
+simulating a specific device.
+
+00:02:51.440 --> 00:02:56.170
+Click More Options, then
+select Show Media Queries.
+
+00:02:56.170 --> 00:02:57.810
+The blue bar contains
+media queries
+
+00:02:57.810 --> 00:03:00.450
+that only set a maximum width.
+
+00:03:00.450 --> 00:03:02.310
+The green bar
+contains queries that
+
+00:03:02.310 --> 00:03:05.710
+set a minimum width
+and a maximum width.
+
+00:03:05.710 --> 00:03:07.830
+And the orange bar
+contains queries
+
+00:03:07.830 --> 00:03:10.790
+that only set a minimum width.
+
+00:03:10.790 --> 00:03:13.070
+Click a query to
+resize the viewport so
+
+00:03:13.070 --> 00:03:15.240
+that the query gets triggered.
+
+00:03:15.240 --> 00:03:18.300
+Right-click a query, and
+select Reveal in Source Code
+
+00:03:18.300 --> 00:03:21.570
+to see its source code
+in the Sources panel.
+
+00:03:21.570 --> 00:03:24.450
+If the CSS file is
+minified, click Format,
+
+00:03:24.450 --> 00:03:27.930
+and DevTools shows you a more
+readable version of the query.
+
+00:03:27.930 --> 00:03:28.810
+Thanks for watching.
+
+00:03:28.810 --> 00:03:31.200
+See you in six
+weeks for Chrome 73.
+
+00:03:31.200 --> 00:03:35.150
+[MUSIC PLAYING]
+

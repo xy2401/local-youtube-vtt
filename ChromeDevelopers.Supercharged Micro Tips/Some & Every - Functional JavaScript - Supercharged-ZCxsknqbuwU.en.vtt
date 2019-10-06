@@ -1,0 +1,137 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.423
+[MUSIC PLAYING]
+
+00:00:11.247 --> 00:00:14.110
+SURMA: Last time, we talked
+about the filter method
+
+00:00:14.110 --> 00:00:16.930
+on arrays that allows you to
+throw away array elements that
+
+00:00:16.930 --> 00:00:18.940
+don't fulfill a predicate.
+
+00:00:18.940 --> 00:00:22.000
+Sometimes, however, you're not
+really into in throwing stuff
+
+00:00:22.000 --> 00:00:24.910
+away but rather, in whether
+there will be anything
+
+00:00:24.910 --> 00:00:26.560
+left at all after filtering.
+
+00:00:26.560 --> 00:00:29.620
+And for this very reason,
+there's "some" and "every."
+
+00:00:29.620 --> 00:00:32.590
+Let's say we have a form with
+a couple of mandatory input
+
+00:00:32.590 --> 00:00:33.340
+fields.
+
+00:00:33.340 --> 00:00:35.050
+Before submitting
+the form, we want
+
+00:00:35.050 --> 00:00:37.420
+to make sure that every
+mandatory field has
+
+00:00:37.420 --> 00:00:38.720
+a value in it.
+
+00:00:38.720 --> 00:00:41.110
+And surprise, we can
+use "every" here.
+
+00:00:41.110 --> 00:00:44.920
+"Every" only returns true when
+every element in the array
+
+00:00:44.920 --> 00:00:47.380
+fulfills the given predicate.
+
+00:00:47.380 --> 00:00:50.860
+Its counterpart is "some,"
+a method that returns true
+
+00:00:50.860 --> 00:00:53.650
+if there's at least one
+element in the array that
+
+00:00:53.650 --> 00:00:54.880
+fulfills the predicate.
+
+00:00:54.880 --> 00:00:56.620
+Let's say you have a
+couple of functions
+
+00:00:56.620 --> 00:00:59.620
+that validate address formats
+from different countries.
+
+00:00:59.620 --> 00:01:02.290
+In this scenario, all
+you're really interested in
+
+00:01:02.290 --> 00:01:04.269
+is if any of these
+validators say
+
+00:01:04.269 --> 00:01:06.970
+that the address given
+by the user is valid,
+
+00:01:06.970 --> 00:01:10.540
+and not necessarily which of
+these validators is saying so.
+
+00:01:10.540 --> 00:01:12.310
+So keep "every"
+and "some" in mind
+
+00:01:12.310 --> 00:01:15.580
+whenever you use these words
+to describe a condition.
+
+00:01:15.580 --> 00:01:16.510
+[WHISTLES]
+
+00:01:16.510 --> 00:01:18.130
+In case you missed
+it, we already
+
+00:01:18.130 --> 00:01:20.410
+had one episode on
+functional array methods
+
+00:01:20.410 --> 00:01:21.980
+in JavaScript last time.
+
+00:01:21.980 --> 00:01:25.700
+So if you missed that one,
+you should watch it over here.
+
+00:01:25.700 --> 00:01:28.301
+And if you want to know when
+the next episode comes out,
+
+00:01:28.301 --> 00:01:29.800
+you should subscribe
+to this channel
+
+00:01:29.800 --> 00:01:31.008
+so you can get notifications.
+
+00:01:31.008 --> 00:01:33.100
+[MUSIC PLAYING]
+

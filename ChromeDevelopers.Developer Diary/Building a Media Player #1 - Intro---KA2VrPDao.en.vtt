@@ -1,0 +1,756 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.330
+PAUL LEWIS: Hello, folks, and
+welcome to the second season
+
+00:00:03.330 --> 00:00:04.500
+of the "Developer Diary."
+
+00:00:04.500 --> 00:00:07.680
+The first one, I built the
+Chrome Dev Summit site.
+
+00:00:07.680 --> 00:00:11.850
+This time, I'm going to be
+building a video media app.
+
+00:00:11.850 --> 00:00:14.780
+So expect things like
+Chromecast support,
+
+00:00:14.780 --> 00:00:17.820
+expect things like
+adaptive streaming,
+
+00:00:17.820 --> 00:00:23.860
+expect things like service
+workers and offline media.
+
+00:00:23.860 --> 00:00:24.840
+There's gonna be loads.
+
+00:00:24.840 --> 00:00:27.137
+Clearly, there's
+going to be loads.
+
+00:00:27.137 --> 00:00:29.220
+But what I thought I'd do
+in this particular entry
+
+00:00:29.220 --> 00:00:30.710
+is just show you
+around the design.
+
+00:00:30.710 --> 00:00:32.400
+So in the past
+little while, I've
+
+00:00:32.400 --> 00:00:34.950
+been working on the designs.
+
+00:00:34.950 --> 00:00:35.970
+I'm not a designer.
+
+00:00:35.970 --> 00:00:40.300
+So I just sort of
+play at design,
+
+00:00:40.300 --> 00:00:44.100
+and I'm now going to
+show you what I designed.
+
+00:00:44.100 --> 00:00:45.000
+So there we go.
+
+00:00:45.000 --> 00:00:46.530
+That's me.
+
+00:00:46.530 --> 00:00:47.981
+That's what I do apparently.
+
+00:00:47.981 --> 00:00:48.480
+Right.
+
+00:00:48.480 --> 00:00:51.086
+On my screen, then let's
+have a look what we've got.
+
+00:00:51.086 --> 00:00:51.960
+Let me show you this.
+
+00:00:51.960 --> 00:00:53.710
+This is quite interesting.
+
+00:00:53.710 --> 00:00:56.080
+I mean, I think it's
+quite interesting.
+
+00:00:56.080 --> 00:01:00.580
+I guess you do too because you
+got this far into the video.
+
+00:01:00.580 --> 00:01:01.080
+Right.
+
+00:01:01.080 --> 00:01:02.300
+These are the icons.
+
+00:01:02.300 --> 00:01:04.709
+Now, you might be like, why
+has he got so many icons?
+
+00:01:04.709 --> 00:01:09.000
+The answer is this top one, this
+kind of greeny-turquoisey one,
+
+00:01:09.000 --> 00:01:12.709
+that's what I'm currently
+going with as the default icon,
+
+00:01:12.709 --> 00:01:14.875
+probably the one that gets
+added to the home screen.
+
+00:01:17.880 --> 00:01:21.330
+And then below it,
+this purple one.
+
+00:01:21.330 --> 00:01:23.509
+Let me explain.
+
+00:01:23.509 --> 00:01:25.050
+The problem with
+the turquoisey-green
+
+00:01:25.050 --> 00:01:27.480
+is what if you get
+some poster frame
+
+00:01:27.480 --> 00:01:31.944
+for video that's really orangey
+or just a really different
+
+00:01:31.944 --> 00:01:33.360
+color, something
+that would really
+
+00:01:33.360 --> 00:01:34.890
+clash with that turquoise.
+
+00:01:34.890 --> 00:01:36.850
+So I thought well, I'll
+tell you what we'll do.
+
+00:01:36.850 --> 00:01:39.960
+We'll just change
+the color scheme
+
+00:01:39.960 --> 00:01:44.130
+of the site, the icons, and
+everything else to just match.
+
+00:01:44.130 --> 00:01:49.260
+So I've been working on some
+code, which I'll show you soon,
+
+00:01:49.260 --> 00:01:52.530
+that does a thing called
+median cut, which is just
+
+00:01:52.530 --> 00:01:55.800
+a way of slicing and dicing
+the colors from an image
+
+00:01:55.800 --> 00:01:57.785
+so that you get a
+representative palette,
+
+00:01:57.785 --> 00:02:00.540
+a representative
+sample from that image.
+
+00:02:00.540 --> 00:02:04.279
+It's not that complex to
+understand or even to do,
+
+00:02:04.279 --> 00:02:05.820
+but it seems to work
+out pretty well.
+
+00:02:05.820 --> 00:02:09.354
+Anyway, so I thought if the
+album art picture, post frame--
+
+00:02:09.354 --> 00:02:10.770
+I don't know what
+to call it, it's
+
+00:02:10.770 --> 00:02:12.020
+got loads of different names--
+
+00:02:12.020 --> 00:02:14.130
+but if the picture
+that represents a video
+
+00:02:14.130 --> 00:02:16.167
+is this purply one
+here, which looks
+
+00:02:16.167 --> 00:02:18.250
+to be the Millennium Bridge
+in London looking over
+
+00:02:18.250 --> 00:02:21.834
+to Saint Paul's
+Cathedral, if it's that,
+
+00:02:21.834 --> 00:02:23.000
+then it's a more purply one.
+
+00:02:23.000 --> 00:02:26.420
+You can see the icon's purply.
+
+00:02:26.420 --> 00:02:31.250
+Then this flamingo that
+is not doing the flamenco.
+
+00:02:31.250 --> 00:02:34.400
+But if it was, it would be
+a flamingo doing a flamenco.
+
+00:02:34.400 --> 00:02:37.910
+This bright orange
+flamingo, that gives us
+
+00:02:37.910 --> 00:02:39.390
+this kind of orangey look.
+
+00:02:39.390 --> 00:02:43.520
+Bottom one arguably
+should be a bit bluer,
+
+00:02:43.520 --> 00:02:47.480
+but the code came up with
+these kind of grayish colors.
+
+00:02:47.480 --> 00:02:49.459
+So that's what I kind
+of opted for for now.
+
+00:02:49.459 --> 00:02:51.500
+I'll probably adjust the
+code as it goes through.
+
+00:02:51.500 --> 00:02:54.740
+Anyway, icons, they
+are going to adapt
+
+00:02:54.740 --> 00:02:57.776
+to the content of the site.
+
+00:02:57.776 --> 00:02:59.400
+So what does the
+actual site look like?
+
+00:02:59.400 --> 00:03:01.233
+Well, this is what it
+looks like on desktop.
+
+00:03:01.233 --> 00:03:03.010
+Let me zoom in for you here.
+
+00:03:03.010 --> 00:03:04.550
+Too far, Paul, too far.
+
+00:03:04.550 --> 00:03:05.460
+Back it up.
+
+00:03:05.460 --> 00:03:06.421
+There we are.
+
+00:03:06.421 --> 00:03:06.920
+Right.
+
+00:03:06.920 --> 00:03:09.720
+At the top, you can
+see there's the icon.
+
+00:03:09.720 --> 00:03:11.489
+There's basically
+a featured video
+
+00:03:11.489 --> 00:03:13.280
+with a big play button
+in the middle that's
+
+00:03:13.280 --> 00:03:16.466
+like, this is the one that
+I think you should watch.
+
+00:03:16.466 --> 00:03:18.590
+And in the top right-hand
+corner, if I do sign in--
+
+00:03:18.590 --> 00:03:22.665
+not sure I'm going to need to
+or want to, see how it goes.
+
+00:03:22.665 --> 00:03:25.040
+There isn't a big need to,
+but it's an opportunity for me
+
+00:03:25.040 --> 00:03:28.057
+to try using the
+credentials API,
+
+00:03:28.057 --> 00:03:29.640
+so that seems like
+a good thing to do.
+
+00:03:29.640 --> 00:03:31.170
+Anyway, we will see how it goes.
+
+00:03:31.170 --> 00:03:33.890
+If you tap on your
+little avatar picture,
+
+00:03:33.890 --> 00:03:36.830
+you get a menu there
+with the managing
+
+00:03:36.830 --> 00:03:40.520
+your downloads, and your
+history, and stuff like that.
+
+00:03:40.520 --> 00:03:44.720
+Star rating, the
+name of the show
+
+00:03:44.720 --> 00:03:46.880
+and then the episode
+underneath it.
+
+00:03:46.880 --> 00:03:49.440
+Underneath that, we
+got some new releases.
+
+00:03:49.440 --> 00:03:51.200
+There's sort of
+thumbnails for those,
+
+00:03:51.200 --> 00:03:53.870
+whether or not you've watched
+a particular one, star rating.
+
+00:03:53.870 --> 00:03:56.270
+For some reason, I only
+bothered putting in the duration
+
+00:03:56.270 --> 00:03:57.860
+on the left-hand one.
+
+00:03:57.860 --> 00:04:02.810
+Obviously, I was having a
+lazy day because really it
+
+00:04:02.810 --> 00:04:05.680
+should be on all of them.
+
+00:04:05.680 --> 00:04:06.830
+Oh, well.
+
+00:04:06.830 --> 00:04:10.907
+So below that, we also have
+a kind of marketing area.
+
+00:04:10.907 --> 00:04:13.115
+Because, again, if you're
+going to build a media app,
+
+00:04:13.115 --> 00:04:14.550
+you kind of want
+to be like, hey,
+
+00:04:14.550 --> 00:04:17.691
+you should add to home
+screen and be awesome.
+
+00:04:17.691 --> 00:04:19.149
+And then below
+that, there's just--
+
+00:04:19.149 --> 00:04:20.565
+I haven't even put
+the thumbnails,
+
+00:04:20.565 --> 00:04:21.920
+didn't even put thumbnails in--
+
+00:04:21.920 --> 00:04:24.650
+I just dropped in
+a grid placeholder
+
+00:04:24.650 --> 00:04:27.320
+for more content that's
+going to go here and then
+
+00:04:27.320 --> 00:04:28.510
+a footer at the bottom.
+
+00:04:28.510 --> 00:04:31.410
+So fairly straightforward.
+
+00:04:31.410 --> 00:04:33.680
+Let me see what else
+is worth showing you.
+
+00:04:33.680 --> 00:04:35.300
+Because you can go
+offline, there's
+
+00:04:35.300 --> 00:04:37.310
+a version here where
+we've said, show me
+
+00:04:37.310 --> 00:04:41.630
+only the downloaded ones
+only, and then we gray out any
+
+00:04:41.630 --> 00:04:43.340
+that you can't play.
+
+00:04:43.340 --> 00:04:45.260
+We put this banner
+at the top that's
+
+00:04:45.260 --> 00:04:48.160
+like, I'm only showing
+you the downloaded ones.
+
+00:04:48.160 --> 00:04:53.150
+If you want to see all your
+videos, switch off that.
+
+00:04:53.150 --> 00:04:56.440
+So that grays out all the
+ones that you can't see.
+
+00:04:56.440 --> 00:05:00.530
+Mobile is actually not--
+
+00:05:00.530 --> 00:05:02.150
+let me just open up
+properly-- mobile
+
+00:05:02.150 --> 00:05:05.720
+is not vastly different
+really to the desktop.
+
+00:05:05.720 --> 00:05:08.906
+When I design, I tend
+to design desktop first
+
+00:05:08.906 --> 00:05:11.030
+because it means that I
+think about everything that
+
+00:05:11.030 --> 00:05:13.460
+needs to go in there,
+and then I think
+
+00:05:13.460 --> 00:05:15.650
+about how to fit
+that appropriately
+
+00:05:15.650 --> 00:05:18.585
+into a mobile space, rather
+than starting mobile and adding
+
+00:05:18.585 --> 00:05:20.210
+features in because
+I think that can be
+
+00:05:20.210 --> 00:05:21.419
+quite frustrating for people.
+
+00:05:21.419 --> 00:05:23.459
+They're like, but you can
+do them on the desktop.
+
+00:05:23.459 --> 00:05:24.800
+Why can't I do that on a phone?
+
+00:05:24.800 --> 00:05:27.680
+So that tends to be
+how I do the design.
+
+00:05:27.680 --> 00:05:30.700
+I actually build mobile first,
+but I design desktop first.
+
+00:05:33.850 --> 00:05:36.010
+Whatever.
+
+00:05:36.010 --> 00:05:36.510
+Right.
+
+00:05:36.510 --> 00:05:37.551
+What else can I show you?
+
+00:05:37.551 --> 00:05:39.580
+Oh, the video player.
+
+00:05:39.580 --> 00:05:42.180
+The actual video player,
+that's where all the fun
+
+00:05:42.180 --> 00:05:45.300
+stuff is probably going
+to be hiding, I imagine.
+
+00:05:45.300 --> 00:05:47.029
+This is what it looks like.
+
+00:05:47.029 --> 00:05:48.570
+We could zoom that
+down a little bit.
+
+00:05:48.570 --> 00:05:51.390
+It's a bit big.
+
+00:05:51.390 --> 00:05:53.402
+So we have video playing.
+
+00:05:53.402 --> 00:05:54.360
+There's a Close button.
+
+00:05:54.360 --> 00:05:58.040
+There's a skipping back
+and forwards by 30 seconds.
+
+00:05:58.040 --> 00:05:59.395
+I might see how that feels.
+
+00:05:59.395 --> 00:06:01.020
+Thirty seconds might
+be a bit too much.
+
+00:06:01.020 --> 00:06:02.580
+I don't know.
+
+00:06:02.580 --> 00:06:04.590
+Pause/play, big one in
+the middle, but also
+
+00:06:04.590 --> 00:06:06.881
+a small one if your thumb is
+down in the bottom corner,
+
+00:06:06.881 --> 00:06:08.280
+you might want to just tap that.
+
+00:06:08.280 --> 00:06:13.020
+A time slider scrubbing
+thing that moves you further
+
+00:06:13.020 --> 00:06:14.010
+into the video.
+
+00:06:14.010 --> 00:06:16.980
+Volume control,
+that may or may not
+
+00:06:16.980 --> 00:06:21.470
+pan out because on a mobile,
+you tend to, I think,
+
+00:06:21.470 --> 00:06:22.740
+do you tap that button?
+
+00:06:22.740 --> 00:06:25.257
+Would you or would you just
+use the phone's volume?
+
+00:06:25.257 --> 00:06:27.090
+I think you probably
+use the phone's volume.
+
+00:06:27.090 --> 00:06:28.260
+I'm not sure about that one.
+
+00:06:28.260 --> 00:06:30.240
+Full screen, again,
+on something like iOS,
+
+00:06:30.240 --> 00:06:32.460
+you'd probably have
+full screen by default
+
+00:06:32.460 --> 00:06:34.340
+if you tapped on a video.
+
+00:06:34.340 --> 00:06:35.840
+I'm pretty sure
+that's what it still
+
+00:06:35.840 --> 00:06:40.130
+does, whereas other ones
+might be in line playback.
+
+00:06:40.130 --> 00:06:41.640
+I guess we'll see how that goes.
+
+00:06:41.640 --> 00:06:47.280
+Taking the video, making
+available offline is grand.
+
+00:06:47.280 --> 00:06:50.250
+And then a Chromecast button.
+
+00:06:50.250 --> 00:06:52.770
+Gonna be fun adding
+Chromecast support.
+
+00:06:52.770 --> 00:06:55.080
+There's actually,
+I think, two ways
+
+00:06:55.080 --> 00:06:57.480
+to do it, which is interesting.
+
+00:06:57.480 --> 00:07:01.710
+I think the presentation
+API, and then there's
+
+00:07:01.710 --> 00:07:04.410
+the remote playback API.
+
+00:07:04.410 --> 00:07:06.730
+Wow, we've got
+fun stuff to come.
+
+00:07:06.730 --> 00:07:09.990
+Anyway, so that's
+playing videos.
+
+00:07:09.990 --> 00:07:13.170
+So hopefully you see the kind of
+thing that I'm trying to build.
+
+00:07:13.170 --> 00:07:15.960
+Think of any video
+playback service,
+
+00:07:15.960 --> 00:07:17.820
+like video on-demand
+playback service.
+
+00:07:17.820 --> 00:07:20.730
+It's that kind of app basically.
+
+00:07:20.730 --> 00:07:21.230
+Cool.
+
+00:07:21.230 --> 00:07:21.480
+Right.
+
+00:07:21.480 --> 00:07:23.896
+I'm going to stop it there
+because I don't want to take up
+
+00:07:23.896 --> 00:07:24.935
+too much of your time.
+
+00:07:24.935 --> 00:07:26.310
+I think in the
+next entry, what I
+
+00:07:26.310 --> 00:07:28.260
+want to do is I want to
+talk a little bit more
+
+00:07:28.260 --> 00:07:33.420
+about video formats and just
+what I've discovered so far
+
+00:07:33.420 --> 00:07:38.360
+about how video
+playback can be done.
+
+00:07:38.360 --> 00:07:40.590
+It's interesting.
+
+00:07:40.590 --> 00:07:42.360
+It's definitely
+much more involved
+
+00:07:42.360 --> 00:07:44.236
+than I thought it
+was going to be.
+
+00:07:44.236 --> 00:07:45.950
+[NERVOUS LAUGHTER]
+
+00:07:45.950 --> 00:07:47.810
+See you then.
+
+00:07:47.810 --> 00:07:50.310
+Hey, folks, if you're upset
+that this video has finished,
+
+00:07:50.310 --> 00:07:51.300
+don't worry.
+
+00:07:51.300 --> 00:07:52.130
+There's more.
+
+00:07:52.130 --> 00:07:53.270
+They're about here.
+
+00:07:53.270 --> 00:07:55.587
+And you can click on them,
+and then they'll start,
+
+00:07:55.587 --> 00:07:56.920
+and then there'll be more video.
+
+00:07:56.920 --> 00:07:57.840
+And at the end of
+that, you'll probably
+
+00:07:57.840 --> 00:07:59.298
+see me at the end
+going, if you are
+
+00:07:59.298 --> 00:08:02.090
+disappointed that this video
+is finished, then there's more.
+
+00:08:02.090 --> 00:08:04.419
+And you can do that
+all day everyday.
+
+00:08:04.419 --> 00:08:06.960
+Or if you decide to not do that
+all day everyday and you want
+
+00:08:06.960 --> 00:08:09.740
+to subscribe, there's a
+button kind of here-ish
+
+00:08:09.740 --> 00:08:10.650
+you should click.
+
+00:08:10.650 --> 00:08:12.316
+And then you'll always
+get notified when
+
+00:08:12.316 --> 00:08:13.490
+we put stuff on the channel.
+
+00:08:13.490 --> 00:08:15.890
+Ah, brilliant.
+

@@ -1,0 +1,1357 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.340
+PAUL LEWIS: Hello, and welcome
+to bonus round number two,
+
+00:00:03.340 --> 00:00:06.385
+also known as, give the
+people what they want.
+
+00:00:06.385 --> 00:00:08.885
+In bonus round one, I showed
+you that we added notifications
+
+00:00:08.885 --> 00:00:10.470
+to the site, and
+I said, just let
+
+00:00:10.470 --> 00:00:12.760
+me know if you want to
+see the backend code.
+
+00:00:12.760 --> 00:00:15.360
+And virtually every
+comment in YouTube
+
+00:00:15.360 --> 00:00:19.000
+was like, show us the
+back end code, now.
+
+00:00:19.000 --> 00:00:20.020
+OK, all right.
+
+00:00:20.020 --> 00:00:23.200
+Well, far be it from
+me to prevent you
+
+00:00:23.200 --> 00:00:25.860
+from seeing the code
+you wish to see.
+
+00:00:25.860 --> 00:00:28.080
+At the moment, the
+code is not on GitHub.
+
+00:00:28.080 --> 00:00:30.760
+But who knows, by the time
+this goes out, it may well be.
+
+00:00:30.760 --> 00:00:32.320
+I just need to do
+a bit of tidy up,
+
+00:00:32.320 --> 00:00:35.240
+and just generally look
+through it, and just make
+
+00:00:35.240 --> 00:00:38.906
+sure there's nothing in there.
+
+00:00:38.906 --> 00:00:40.280
+I'm sure you can
+imagine, there's
+
+00:00:40.280 --> 00:00:43.540
+things like OAuth,
+secrets, and stuff
+
+00:00:43.540 --> 00:00:45.150
+like that for actual
+authentication.
+
+00:00:45.150 --> 00:00:47.108
+So I just need to make
+sure that none of that's
+
+00:00:47.108 --> 00:00:51.557
+actually going to
+go out unexpectedly.
+
+00:00:51.557 --> 00:00:53.390
+So it might just take
+me a little bit longer
+
+00:00:53.390 --> 00:00:54.700
+to just get through that,
+because I do actually
+
+00:00:54.700 --> 00:00:56.770
+have a bunch of stuff
+on at the moment.
+
+00:00:56.770 --> 00:00:58.180
+There you go.
+
+00:00:58.180 --> 00:01:01.560
+Excuses come as standard.
+
+00:01:01.560 --> 00:01:03.830
+Right, let's look at
+some code, since that's
+
+00:01:03.830 --> 00:01:06.290
+what we're all here for.
+
+00:01:06.290 --> 00:01:08.840
+That's a really
+good little motion.
+
+00:01:08.840 --> 00:01:10.000
+Right, OK.
+
+00:01:10.000 --> 00:01:11.930
+So the thing about
+the server-side side
+
+00:01:11.930 --> 00:01:14.350
+of sending push notifications,
+there's two parts
+
+00:01:14.350 --> 00:01:15.510
+that you need to think of.
+
+00:01:15.510 --> 00:01:21.300
+Firstly, there's the master
+and then there's the workers.
+
+00:01:21.300 --> 00:01:24.050
+Probably in correct terminology,
+I would call them slaves,
+
+00:01:24.050 --> 00:01:25.130
+but there we go.
+
+00:01:25.130 --> 00:01:27.150
+I'm calling them workers.
+
+00:01:27.150 --> 00:01:30.610
+So you see on screen
+I have the index
+
+00:01:30.610 --> 00:01:33.320
+that the thing is actually
+going to run, first of all.
+
+00:01:33.320 --> 00:01:35.890
+And it uses nodes
+cluster module which
+
+00:01:35.890 --> 00:01:37.470
+is really helpful
+in this situation.
+
+00:01:37.470 --> 00:01:42.240
+And what it does is,
+the first node process
+
+00:01:42.240 --> 00:01:44.610
+to run this code will be
+considered the master.
+
+00:01:44.610 --> 00:01:49.840
+And so I assign it
+the role of master,
+
+00:01:49.840 --> 00:01:54.199
+and then everybody else is
+assigned the role of worker.
+
+00:01:54.199 --> 00:01:55.990
+And you'll see what
+that means in a moment.
+
+00:01:55.990 --> 00:01:57.924
+So basically I'm
+requiring whichever role
+
+00:01:57.924 --> 00:02:00.090
+you've been given, and then
+I tell that one to init.
+
+00:02:00.090 --> 00:02:02.019
+So both of these modules
+the master and worker
+
+00:02:02.019 --> 00:02:03.810
+both have been init,
+so I can just call it,
+
+00:02:03.810 --> 00:02:05.739
+and it'll be fine.
+
+00:02:05.739 --> 00:02:07.280
+So let's look at
+master first of all.
+
+00:02:07.280 --> 00:02:11.850
+Master has really
+kind of two jobs.
+
+00:02:11.850 --> 00:02:15.110
+One is to spin up an express
+server so that there's
+
+00:02:15.110 --> 00:02:17.986
+an admin interface.
+
+00:02:17.986 --> 00:02:18.860
+Let me show you that.
+
+00:02:18.860 --> 00:02:20.360
+Looks like this.
+
+00:02:20.360 --> 00:02:23.814
+And you can see that we've
+got all the various sessions.
+
+00:02:23.814 --> 00:02:26.230
+And then there's the generic,
+"I want to send an event". "
+
+00:02:26.230 --> 00:02:28.170
+So it's not the prettiest
+thing in the world,
+
+00:02:28.170 --> 00:02:30.810
+but it'll do the job
+just fine and dandy.
+
+00:02:30.810 --> 00:02:32.512
+So it spins that
+up as an express
+
+00:02:32.512 --> 00:02:33.970
+server, and the
+other thing it does
+
+00:02:33.970 --> 00:02:36.820
+is it maintains a list
+of all the messages
+
+00:02:36.820 --> 00:02:38.460
+that need to be sent.
+
+00:02:38.460 --> 00:02:40.460
+So in the backend, when
+we click on the button--
+
+00:02:40.460 --> 00:02:41.810
+and I'll show you code
+for this in a moment.
+
+00:02:41.810 --> 00:02:43.434
+When we click on the
+button, that says,
+
+00:02:43.434 --> 00:02:46.620
+OK, tell everybody the
+keynote's starting.
+
+00:02:46.620 --> 00:02:50.810
+It puts this here, actually,
+you can see this in queue here.
+
+00:02:50.810 --> 00:02:53.110
+Pushes the task
+onto the task list,
+
+00:02:53.110 --> 00:02:56.460
+and it will wake up the
+workers to go and actually do
+
+00:02:56.460 --> 00:03:00.790
+that work, and we'll come
+back to that in but a moment.
+
+00:03:00.790 --> 00:03:04.734
+So most of this is not
+that exciting, perhaps.
+
+00:03:04.734 --> 00:03:05.650
+Let me just-- hang on.
+
+00:03:05.650 --> 00:03:07.400
+Where's a good place
+to-- ah, there we go.
+
+00:03:07.400 --> 00:03:12.065
+The init that I called, it
+creates the workers as needed,
+
+00:03:12.065 --> 00:03:13.690
+which we'll have a
+look at in a moment.
+
+00:03:13.690 --> 00:03:15.490
+And also init's the server.
+
+00:03:15.490 --> 00:03:19.580
+So the 'create workers as
+a needed' function is here.
+
+00:03:19.580 --> 00:03:23.450
+And I basically look
+through the number
+
+00:03:23.450 --> 00:03:26.440
+of existing workers, which
+at the start will be zero.
+
+00:03:26.440 --> 00:03:30.700
+And then I figure out the total
+work account minus the number
+
+00:03:30.700 --> 00:03:31.710
+that we've already got.
+
+00:03:31.710 --> 00:03:34.490
+So the work account is
+right up at the top,
+
+00:03:34.490 --> 00:03:39.330
+and it's based on the
+number of CPUs available.
+
+00:03:39.330 --> 00:03:42.310
+That means that if I say, I
+have a machine with eight cores,
+
+00:03:42.310 --> 00:03:44.180
+I take one off the length.
+
+00:03:44.180 --> 00:03:48.890
+So I basically assign one
+CPU to being the master,
+
+00:03:48.890 --> 00:03:50.500
+and running the express server.
+
+00:03:50.500 --> 00:03:56.470
+And then the remaining seven
+would go to running workers.
+
+00:03:56.470 --> 00:04:01.770
+If I had 32 cores, or 32 CPUs,
+it would be 31 for the workers,
+
+00:04:01.770 --> 00:04:05.150
+and one again for the
+process, the master.
+
+00:04:05.150 --> 00:04:08.351
+And I default it
+to four, so even
+
+00:04:08.351 --> 00:04:09.850
+if I have a machine
+with one CPA I'm
+
+00:04:09.850 --> 00:04:13.150
+going to run four
+workers, and then one.
+
+00:04:13.150 --> 00:04:17.459
+So at least a minimum
+of five node processors.
+
+00:04:17.459 --> 00:04:19.230
+So that's how that works.
+
+00:04:19.230 --> 00:04:22.530
+Let's have a look at the server
+code, because most of it's
+
+00:04:22.530 --> 00:04:24.950
+sort of what you'd expect.
+
+00:04:24.950 --> 00:04:29.370
+It's kind of standard
+express stuff.
+
+00:04:29.370 --> 00:04:32.980
+Although what I do,
+right at the start,
+
+00:04:32.980 --> 00:04:37.190
+I actually load the
+session's JSON from the site.
+
+00:04:37.190 --> 00:04:43.050
+And I pass that through
+to the admin renderer,
+
+00:04:43.050 --> 00:04:48.965
+in order to actually--
+where are you?
+
+00:04:48.965 --> 00:04:51.090
+In the admin section, to
+actually render the admin.
+
+00:04:51.090 --> 00:04:54.090
+So I get the sessions, and
+then I render the admin section
+
+00:04:54.090 --> 00:04:54.590
+with that.
+
+00:04:54.590 --> 00:04:56.300
+And then that's just
+handlebars, just
+
+00:04:56.300 --> 00:04:58.440
+stepping through those objects.
+
+00:04:58.440 --> 00:05:00.340
+All works just fine.
+
+00:05:00.340 --> 00:05:03.520
+When we actually
+send a message-- let
+
+00:05:03.520 --> 00:05:05.150
+me go into the
+code for that, this
+
+00:05:05.150 --> 00:05:08.630
+is in the subscriptions area.
+
+00:05:08.630 --> 00:05:17.051
+It's ping, and it takes the
+keys, which is done here.
+
+00:05:17.051 --> 00:05:17.550
+Yep.
+
+00:05:17.550 --> 00:05:21.360
+I'm using the web-push
+library, which
+
+00:05:21.360 --> 00:05:22.654
+we'll link to in the notes.
+
+00:05:22.654 --> 00:05:25.070
+I said that in the last episode,
+and I don't think we did.
+
+00:05:25.070 --> 00:05:26.870
+But I think we will this time.
+
+00:05:26.870 --> 00:05:29.260
+I'm using the Web Push
+library from node,
+
+00:05:29.260 --> 00:05:31.510
+and you can ask it to
+generate vapid keys.
+
+00:05:31.510 --> 00:05:36.224
+Vapid is the cross
+browser encryption
+
+00:05:36.224 --> 00:05:37.640
+keys that you need
+if you're going
+
+00:05:37.640 --> 00:05:39.630
+to send a payload to devices.
+
+00:05:39.630 --> 00:05:46.160
+And it means that you can deal
+with Google Cloud end points
+
+00:05:46.160 --> 00:05:48.650
+if your subscribers
+are using Chrome,
+
+00:05:48.650 --> 00:05:53.070
+or a Mozilla end point
+If they're using Firefox.
+
+00:05:53.070 --> 00:05:58.160
+And vapid is the cross browser
+way of encrypting your payload.
+
+00:05:58.160 --> 00:05:59.630
+And so you want
+something, really,
+
+00:05:59.630 --> 00:06:01.060
+that generates
+vapid keys for you,
+
+00:06:01.060 --> 00:06:03.780
+because doing encryption on
+your own is not that much fun,
+
+00:06:03.780 --> 00:06:06.434
+and this does it for me,
+so I can create vapid keys.
+
+00:06:06.434 --> 00:06:08.600
+And the other thing you'll
+see around the code here,
+
+00:06:08.600 --> 00:06:10.700
+is this ds, which
+is the data store.
+
+00:06:10.700 --> 00:06:12.790
+I'm using a Google
+Cloud data store
+
+00:06:12.790 --> 00:06:16.360
+to store all the keys,
+and the subscriptions,
+
+00:06:16.360 --> 00:06:17.340
+and everything else.
+
+00:06:17.340 --> 00:06:18.900
+You could just as
+well use MySQL,
+
+00:06:18.900 --> 00:06:22.940
+you could just as well use
+MongoDB, whatever backend
+
+00:06:22.940 --> 00:06:24.310
+data store would make sense.
+
+00:06:24.310 --> 00:06:27.100
+In my case, I'm running on
+Google Cloud, so why not
+
+00:06:27.100 --> 00:06:27.850
+use that?
+
+00:06:27.850 --> 00:06:32.060
+It makes perfect sense, and
+it's very convenient for me.
+
+00:06:32.060 --> 00:06:35.290
+So when we do a
+ping, we've already
+
+00:06:35.290 --> 00:06:38.520
+got the keys, because I generate
+those once at the start.
+
+00:06:38.520 --> 00:06:41.340
+And I store those
+in the data store,
+
+00:06:41.340 --> 00:06:44.040
+so that I'm not generating
+new keys every time,
+
+00:06:44.040 --> 00:06:46.140
+you want to have the same keys.
+
+00:06:46.140 --> 00:06:52.670
+The ID is the slug,
+the dev summit
+
+00:06:52.670 --> 00:06:55.320
+slash schedule slash keynote.
+
+00:06:55.320 --> 00:06:57.170
+Because when we're
+in the backend,
+
+00:06:57.170 --> 00:07:02.850
+we can send to, say, for
+example, those people.
+
+00:07:02.850 --> 00:07:06.107
+And so the ID, that target,
+if you like, is those.
+
+00:07:06.107 --> 00:07:08.440
+The message that we want to
+send will be the same thing.
+
+00:07:08.440 --> 00:07:10.523
+It'll actually, mostly
+likely be this [INAUDIBLE].
+
+00:07:10.523 --> 00:07:14.320
+Or it could be, if it's
+the general 'send an event'
+
+00:07:14.320 --> 00:07:16.430
+it'll just be some
+free text or some emoji
+
+00:07:16.430 --> 00:07:18.520
+or whatever it needs to be.
+
+00:07:18.520 --> 00:07:20.850
+And then there's a link
+back to the master,
+
+00:07:20.850 --> 00:07:22.530
+so I do a kind of
+dependency injection
+
+00:07:22.530 --> 00:07:24.100
+when I init the server.
+
+00:07:24.100 --> 00:07:27.050
+You'll notice here, I pass
+in a reference to a master
+
+00:07:27.050 --> 00:07:31.470
+here so that it can ping back.
+
+00:07:31.470 --> 00:07:32.090
+OK.
+
+00:07:32.090 --> 00:07:34.430
+So for argument's
+sake, let's say
+
+00:07:34.430 --> 00:07:40.990
+we've got a 1,000 endpoints
+registered across a whole range
+
+00:07:40.990 --> 00:07:42.430
+of sessions.
+
+00:07:42.430 --> 00:07:45.330
+This retrieval filters
+them down by those
+
+00:07:45.330 --> 00:07:48.350
+who just want to,
+say, get the keynote,
+
+00:07:48.350 --> 00:07:53.060
+or just get Jake's session on
+the future of service worker
+
+00:07:53.060 --> 00:07:54.240
+stuff.
+
+00:07:54.240 --> 00:07:57.790
+So we filter those down, and we
+get back a bunch of endpoints.
+
+00:07:57.790 --> 00:08:00.710
+And for each of those endpoints,
+as I mentioned earlier,
+
+00:08:00.710 --> 00:08:02.580
+there is an enqueue
+function in the master.
+
+00:08:02.580 --> 00:08:06.950
+And we pass through both
+the keys, the endpoint,
+
+00:08:06.950 --> 00:08:10.340
+and subscription, and the actual
+message that we want to send.
+
+00:08:10.340 --> 00:08:14.170
+And then in my case, I also
+log the number of people,
+
+00:08:14.170 --> 00:08:17.250
+or the number of endpoints
+that we've pinged.
+
+00:08:17.250 --> 00:08:21.180
+So we can see in the
+backend, this one definitely
+
+00:08:21.180 --> 00:08:24.590
+went to, like, 300 people, or
+it went to however many people.
+
+00:08:24.590 --> 00:08:28.220
+Don't know how many
+it's going to be.
+
+00:08:28.220 --> 00:08:33.360
+Right, so the master enqueue,
+I mentioned it before.
+
+00:08:33.360 --> 00:08:35.659
+All it does is, it pushes
+the task onto an array.
+
+00:08:35.659 --> 00:08:39.480
+So the master has
+this global array
+
+00:08:39.480 --> 00:08:41.600
+of messages that
+need to be sent.
+
+00:08:41.600 --> 00:08:45.010
+It steps through all the
+workers that were created,
+
+00:08:45.010 --> 00:08:46.640
+and it pings them.
+
+00:08:46.640 --> 00:08:48.680
+It just sends this
+ping message, which
+
+00:08:48.680 --> 00:08:51.470
+will cause them to wake up.
+
+00:08:51.470 --> 00:08:54.820
+And again, there's a bit
+of [INAUDIBLE] from me,
+
+00:08:54.820 --> 00:08:58.070
+just to kind of go,
+the job started.
+
+00:08:58.070 --> 00:08:59.260
+Yeah.
+
+00:08:59.260 --> 00:08:59.840
+Right.
+
+00:08:59.840 --> 00:09:01.610
+Now we get to talk
+about the workers,
+
+00:09:01.610 --> 00:09:03.026
+they're on the
+other side of this.
+
+00:09:03.026 --> 00:09:05.750
+So as I said, our
+master has got two jobs.
+
+00:09:05.750 --> 00:09:08.700
+One is to maintain this
+queue, and when we send,
+
+00:09:08.700 --> 00:09:10.030
+we populate this queue.
+
+00:09:10.030 --> 00:09:13.280
+So, let's say, we had
+a 1,000 endpoints,
+
+00:09:13.280 --> 00:09:15.780
+100 people wanted the keynote,
+so we'll fill this array,
+
+00:09:15.780 --> 00:09:19.050
+and it'll have 100 entries
+in it at this point.
+
+00:09:19.050 --> 00:09:22.750
+And we ping the
+workers to wake up.
+
+00:09:22.750 --> 00:09:26.120
+The 'on' message is
+where that then kicks in.
+
+00:09:26.120 --> 00:09:29.100
+And if it gets a ping and
+it is sleeping, it wakes up.
+
+00:09:29.100 --> 00:09:33.510
+And we call processs
+dot next tick, which
+
+00:09:33.510 --> 00:09:37.690
+is kind of like a set-to
+media, or setTimeout zero.
+
+00:09:37.690 --> 00:09:40.170
+But it's proper, neat, and tidy.
+
+00:09:40.170 --> 00:09:41.610
+It's not setTimeout zero.
+
+00:09:44.966 --> 00:09:46.707
+It's the proper node
+way of doing it,
+
+00:09:46.707 --> 00:09:47.790
+is the best way to say it.
+
+00:09:47.790 --> 00:09:50.331
+And they've optimized it, it's
+not just like setTimeout zero.
+
+00:09:50.331 --> 00:09:53.800
+It's properly done, apparently,
+to call this request tasker.
+
+00:09:53.800 --> 00:09:58.040
+So the request task is up here.
+
+00:09:58.040 --> 00:10:00.820
+All that does is, it calls
+this send function, which
+
+00:10:00.820 --> 00:10:06.010
+you see there, basically posts
+back to the master, and says,
+
+00:10:06.010 --> 00:10:07.940
+I want a task, please.
+
+00:10:07.940 --> 00:10:09.549
+So the master has woken them up.
+
+00:10:09.549 --> 00:10:11.840
+Each of the workers is going
+to come back to the master
+
+00:10:11.840 --> 00:10:14.840
+and say, I want a task, please.
+
+00:10:14.840 --> 00:10:17.710
+Which you can see down
+here, on work message.
+
+00:10:17.710 --> 00:10:21.730
+If they say, I want to task
+please, we pop one off the end.
+
+00:10:21.730 --> 00:10:25.740
+So you, strictly speaking,
+might want to unshift, then
+
+00:10:25.740 --> 00:10:27.480
+take the front of the queue.
+
+00:10:27.480 --> 00:10:30.090
+I don't, I just pop
+the back off the queue.
+
+00:10:34.055 --> 00:10:35.650
+It doesn't matter, really.
+
+00:10:35.650 --> 00:10:39.310
+Ultimately the queue will get
+depleted, one way or another.
+
+00:10:39.310 --> 00:10:41.550
+And it sends that
+back to the worker,
+
+00:10:41.550 --> 00:10:42.950
+it says, here's a task for you.
+
+00:10:42.950 --> 00:10:46.270
+One task, off you go and do it.
+
+00:10:46.270 --> 00:10:51.401
+So the worker, well,
+when it's got a task--
+
+00:10:51.401 --> 00:10:53.760
+oh yeah, you see, if there
+is no task for it to do,
+
+00:10:53.760 --> 00:10:56.680
+the queue's empty, the
+worker goes back to sleep.
+
+00:10:56.680 --> 00:10:59.350
+OK, and we'll wait for the next
+ping before it tries again.
+
+00:10:59.350 --> 00:11:01.430
+But assuming it
+gets given a task,
+
+00:11:01.430 --> 00:11:05.980
+it sets the vapid keys that
+it had from way back when.
+
+00:11:05.980 --> 00:11:08.770
+And there's also a
+URL that you give it.
+
+00:11:08.770 --> 00:11:11.800
+I default the TTL to 30 minutes.
+
+00:11:17.985 --> 00:11:19.651
+A session's about
+30 minutes, I think.
+
+00:11:19.651 --> 00:11:21.650
+I don't know we've got
+any more than 30 minutes.
+
+00:11:21.650 --> 00:11:23.149
+If for some reason
+you don't pick up
+
+00:11:23.149 --> 00:11:25.176
+that message in 30
+minutes, it doesn't
+
+00:11:25.176 --> 00:11:27.550
+feel right to be like, "Hey,
+the keynote's starting now,"
+
+00:11:27.550 --> 00:11:30.220
+if the keynote's
+no longer running.
+
+00:11:30.220 --> 00:11:31.790
+So I'm hoping that
+that will just
+
+00:11:31.790 --> 00:11:34.520
+mean that the
+messages will expire,
+
+00:11:34.520 --> 00:11:37.850
+and we don't over notify
+and bug people, when
+
+00:11:37.850 --> 00:11:40.556
+they don't need to be bothered.
+
+00:11:40.556 --> 00:11:42.180
+And then we call the
+send notification,
+
+00:11:42.180 --> 00:11:44.970
+which is, again, a convenience
+method on the library,
+
+00:11:44.970 --> 00:11:45.796
+which is brilliant.
+
+00:11:45.796 --> 00:11:47.170
+And you give it
+the subscription,
+
+00:11:47.170 --> 00:11:49.461
+which will contain the endpoint
+and the keys, some more
+
+00:11:49.461 --> 00:11:51.980
+keys, the message that
+you wanted to send.
+
+00:11:51.980 --> 00:11:55.870
+And if there's any issues at
+all, I just kill the worker.
+
+00:11:55.870 --> 00:11:59.906
+And there is, in the
+master, if a worker
+
+00:11:59.906 --> 00:12:04.110
+is killed-- there we are,
+on exit, on disconnect--
+
+00:12:04.110 --> 00:12:07.830
+it will come back and it will
+try and recreate any workers.
+
+00:12:07.830 --> 00:12:11.050
+So say, for example,
+for whatever reason,
+
+00:12:11.050 --> 00:12:13.600
+we had eight workers, and
+four of them were killed,
+
+00:12:13.600 --> 00:12:17.900
+then we would create four new
+ones here to kind of replenish
+
+00:12:17.900 --> 00:12:21.000
+and always bring us back
+up to the correct number.
+
+00:12:21.000 --> 00:12:23.120
+So it's good.
+
+00:12:23.120 --> 00:12:25.850
+That works just fine as well.
+
+00:12:25.850 --> 00:12:27.350
+So what else do we
+need to show you,
+
+00:12:27.350 --> 00:12:29.210
+or do I need to show
+you, in the workers?
+
+00:12:29.210 --> 00:12:33.900
+So hopefully at this point we've
+managed to send a notification.
+
+00:12:33.900 --> 00:12:36.170
+And then we go back and
+ask for another task.
+
+00:12:36.170 --> 00:12:38.780
+So as each worker is getting
+to the end of its task,
+
+00:12:38.780 --> 00:12:40.280
+it goes back to the
+master and says,
+
+00:12:40.280 --> 00:12:42.050
+have you got any
+more work for me?
+
+00:12:42.050 --> 00:12:43.840
+Eventually that queue
+will be depleted,
+
+00:12:43.840 --> 00:12:46.330
+and the worker will say,
+oh, I've got nothing,
+
+00:12:46.330 --> 00:12:49.000
+I will go to sleep.
+
+00:12:49.000 --> 00:12:50.500
+And it will then
+wait until it gets
+
+00:12:50.500 --> 00:12:52.333
+the ping from the master
+saying, oh, there's
+
+00:12:52.333 --> 00:12:54.840
+a new job for everybody,
+let's get through this.
+
+00:12:54.840 --> 00:12:57.840
+Now I like this approach
+because of the fact
+
+00:12:57.840 --> 00:13:00.640
+that I get to control
+the number of workers.
+
+00:13:00.640 --> 00:13:04.050
+If I decide to deploy
+something with 32 cores,
+
+00:13:04.050 --> 00:13:07.570
+or 16 cores, or 8
+cores, or 4 cores,
+
+00:13:07.570 --> 00:13:12.340
+it means that I get to decide
+how many workers there are.
+
+00:13:12.340 --> 00:13:15.665
+Well, there will always be
+one for the master process.
+
+00:13:15.665 --> 00:13:17.290
+But this, for me, is
+good, because if I
+
+00:13:17.290 --> 00:13:19.270
+feel like this is
+going to be bursty,
+
+00:13:19.270 --> 00:13:22.570
+I could be like, OK, just
+spin up a load of workers.
+
+00:13:22.570 --> 00:13:25.290
+And they can churn
+through the queue,
+
+00:13:25.290 --> 00:13:29.020
+they can go at the same time,
+concurrently, or parallelized.
+
+00:13:29.020 --> 00:13:31.330
+They're different things.
+
+00:13:31.330 --> 00:13:35.150
+They are, and I forget the
+difference in definition.
+
+00:13:35.150 --> 00:13:35.650
+Meh.
+
+00:13:35.650 --> 00:13:36.899
+But they run at the same time.
+
+00:13:36.899 --> 00:13:40.340
+It was splitting the work out,
+and that's under my control
+
+00:13:40.340 --> 00:13:42.050
+as to how many of
+those there are.
+
+00:13:42.050 --> 00:13:44.340
+I can just have one, I can
+have as many as I need,
+
+00:13:44.340 --> 00:13:47.520
+and that means it works
+out really well for me.
+
+00:13:47.520 --> 00:13:49.730
+So there you go, that
+is the backend code.
+
+00:13:49.730 --> 00:13:50.720
+It is in JavaScript.
+
+00:13:50.720 --> 00:13:53.280
+For those of you wondering why
+it's in JavaScript, and not
+
+00:13:53.280 --> 00:13:58.870
+in Python, for legacy reasons
+the site is in Python.
+
+00:13:58.870 --> 00:14:01.600
+As it's always been in
+Python since I first
+
+00:14:01.600 --> 00:14:04.880
+did it four years ago, three
+years ago, I don't know.
+
+00:14:04.880 --> 00:14:07.060
+I guess three years ago.
+
+00:14:07.060 --> 00:14:09.077
+And it's just always
+been in Python,
+
+00:14:09.077 --> 00:14:10.160
+and that's not a big deal.
+
+00:14:10.160 --> 00:14:12.080
+But this I wanted
+to keep separate.
+
+00:14:12.080 --> 00:14:14.850
+I wanted it on it's
+its own separate thing.
+
+00:14:14.850 --> 00:14:17.250
+As a separate almost
+service that I
+
+00:14:17.250 --> 00:14:21.540
+can spin up and spin down for
+Chrome Dev Summit independently
+
+00:14:21.540 --> 00:14:22.120
+of the site.
+
+00:14:22.120 --> 00:14:26.180
+So it felt wrong to
+me to have something
+
+00:14:26.180 --> 00:14:28.990
+that is both serving the site
+and handling notifications.
+
+00:14:28.990 --> 00:14:33.170
+Because if the pushing
+notifications sort of
+
+00:14:33.170 --> 00:14:35.480
+becomes CPU intensive,
+for whatever reason,
+
+00:14:35.480 --> 00:14:38.830
+I didn't want to jeopardize the
+site serving in that process.
+
+00:14:38.830 --> 00:14:41.280
+So it felt like it just
+kept them separate,
+
+00:14:41.280 --> 00:14:44.640
+and that all works
+out well for me.
+
+00:14:44.640 --> 00:14:48.180
+And the other main thing,
+and it is not insignificant,
+
+00:14:48.180 --> 00:14:51.340
+is that the Web Push library
+for node is really good.
+
+00:14:51.340 --> 00:14:55.020
+It's incredibly convenient, and
+it does the things you need.
+
+00:14:55.020 --> 00:14:57.760
+It generates the keys, it will
+encrypt a message for you,
+
+00:14:57.760 --> 00:15:00.110
+and it will send
+it to the endpoint.
+
+00:15:00.110 --> 00:15:02.300
+The three things you
+really need it to do
+
+00:15:02.300 --> 00:15:04.950
+are the three things it
+will do just perfectly.
+
+00:15:04.950 --> 00:15:08.470
+So the fact that
+it's a well tested,
+
+00:15:08.470 --> 00:15:10.922
+robust library for actually
+doing the push messaging,
+
+00:15:10.922 --> 00:15:12.880
+combined with the fact
+that things like express
+
+00:15:12.880 --> 00:15:14.590
+are really nice as
+well, just meant
+
+00:15:14.590 --> 00:15:18.140
+it was a very easy fit to do
+all this bit in JavaScript.
+
+00:15:18.140 --> 00:15:19.070
+Cool.
+
+00:15:19.070 --> 00:15:22.800
+I hope by this point
+the code is on GitHub.
+
+00:15:22.800 --> 00:15:24.780
+If it is, you'll
+be able to find it.
+
+00:15:24.780 --> 00:15:29.600
+Probably there will be a link
+in the description below.
+
+00:15:29.600 --> 00:15:31.330
+Brilliant.
+
+00:15:31.330 --> 00:15:34.680
+Who knows if there'll
+be another bonus round?
+
+00:15:34.680 --> 00:15:36.000
+I don't know.
+
+00:15:36.000 --> 00:15:40.050
+It depends on how much more
+I get done before Chrome Dev
+
+00:15:40.050 --> 00:15:40.910
+Summit itself.
+
+00:15:40.910 --> 00:15:43.350
+Speaking of which, don't
+forget that you can subscribe
+
+00:15:43.350 --> 00:15:45.892
+to the channel, and as
+the live stream goes live,
+
+00:15:45.892 --> 00:15:47.100
+you'll get that notification.
+
+00:15:47.100 --> 00:15:48.710
+You can get actual
+notifications.
+
+00:15:48.710 --> 00:15:51.084
+We have talked about this
+before, don't know if you know.
+
+00:15:51.084 --> 00:15:53.260
+But you can get
+those on the site,
+
+00:15:53.260 --> 00:15:57.110
+so if you want to subscribe
+to a particular session.
+
+00:15:57.110 --> 00:15:58.870
+I don't have any
+sessions this year.
+
+00:16:04.560 --> 00:16:06.310
+But if I did, you could
+subscribe to that.
+
+00:16:06.310 --> 00:16:08.450
+But you can subscribe
+to someone like, Jake's.
+
+00:16:08.450 --> 00:16:12.756
+He's got a session,
+and I have it
+
+00:16:12.756 --> 00:16:14.380
+on good authority
+that it's going to be
+
+00:16:14.380 --> 00:16:16.016
+another good one from him.
+
+00:16:16.016 --> 00:16:17.390
+But they're all
+going to be good,
+
+00:16:17.390 --> 00:16:20.790
+so you should subscribe
+to all of them.
+
+00:16:20.790 --> 00:16:21.630
+Good.
+
+00:16:21.630 --> 00:16:22.700
+Right.
+
+00:16:22.700 --> 00:16:25.300
+Thank you very much for
+joining me once again.
+
+00:16:25.300 --> 00:16:27.640
+Take it easy, and
+I'll catch you, maybe,
+
+00:16:27.640 --> 00:16:28.640
+in another one of these.
+
+00:16:28.640 --> 00:16:40.390
+[MUSIC PLAYING]
+

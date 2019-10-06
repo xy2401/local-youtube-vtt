@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.764
+[MUSIC PLAYING]
+
+00:00:03.090 --> 00:00:05.850
+SURMA: Custom properties
+are a new addition to CSS.
+
+00:00:05.850 --> 00:00:08.200
+They are better known
+under a different name--
+
+00:00:08.200 --> 00:00:10.000
+CSS variables.
+
+00:00:10.000 --> 00:00:12.750
+In the past, web developers
+have used preprocessors
+
+00:00:12.750 --> 00:00:16.360
+like Sass, LESS, or Stylus
+to have this functionality.
+
+00:00:16.360 --> 00:00:19.560
+The advantage of using the
+standardized custom properties
+
+00:00:19.560 --> 00:00:22.230
+is that you can change the
+values during runtime using
+
+00:00:22.230 --> 00:00:24.540
+media queries,
+JavaScript, or dev tools,
+
+00:00:24.540 --> 00:00:27.600
+and immediately see the
+effect of your changes.
+
+00:00:27.600 --> 00:00:29.100
+With this in place,
+it makes sense
+
+00:00:29.100 --> 00:00:32.430
+to make a lot of your values
+dependent on custom properties.
+
+00:00:32.430 --> 00:00:34.410
+In this example, the
+size of the ribbon,
+
+00:00:34.410 --> 00:00:36.510
+as well as the ribbon
+flap, have been
+
+00:00:36.510 --> 00:00:38.430
+defined using custom
+properties, and are
+
+00:00:38.430 --> 00:00:40.560
+used in many calc
+expressions to position
+
+00:00:40.560 --> 00:00:42.480
+and size other elements.
+
+00:00:42.480 --> 00:00:44.460
+I can change these
+properties in dev tools
+
+00:00:44.460 --> 00:00:47.490
+to find the ideal
+value for my layout.
+
+00:00:47.490 --> 00:00:50.340
+It's especially useful to
+define a padding variable that
+
+00:00:50.340 --> 00:00:52.890
+is used as a base unit
+whenever you're defining
+
+00:00:52.890 --> 00:00:55.230
+a gutter, margin, or padding.
+
+00:00:55.230 --> 00:00:56.820
+This way, you have
+a single lever
+
+00:00:56.820 --> 00:01:00.210
+to make a design feel
+more or less spacious.
+
+00:01:00.210 --> 00:01:01.839
+More patterns will
+probably evolve
+
+00:01:01.839 --> 00:01:03.630
+in the near future
+around custom properties
+
+00:01:03.630 --> 00:01:05.250
+as they become best practice.
+
+00:01:05.250 --> 00:01:07.620
+But even now, they are
+widely supported and allow
+
+00:01:07.620 --> 00:01:10.410
+you to make rapid changes and
+keep your design much more
+
+00:01:10.410 --> 00:01:11.310
+flexible.
+
+00:01:11.310 --> 00:01:12.510
+Good stuff, isn't it?
+
+00:01:12.510 --> 00:01:13.650
+See you next time.
+
+00:01:13.650 --> 00:01:15.810
+I mean, we all know that
+Supercharged is clearly
+
+00:01:15.810 --> 00:01:18.000
+the best, but we do
+other series as well
+
+00:01:18.000 --> 00:01:19.322
+which you should totally watch.
+
+00:01:19.322 --> 00:01:21.030
+And for that reason,
+you should subscribe
+
+00:01:21.030 --> 00:01:22.750
+to this YouTube channel.
+
+00:01:22.750 --> 00:01:25.440
+And if you want to see the most
+recent Supercharged livestream,
+
+00:01:25.440 --> 00:01:28.820
+you can click it over there.
+

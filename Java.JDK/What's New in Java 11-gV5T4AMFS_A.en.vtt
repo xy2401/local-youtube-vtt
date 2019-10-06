@@ -1,0 +1,2216 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.960 --> 00:00:06.010 align:start position:0%
+ 
+hi<00:00:03.650><c> everyone</c><00:00:03.950><c> welcome</c><00:00:04.730><c> to</c><00:00:05.029><c> the</c><00:00:05.330><c> Java</c><00:00:05.600><c> 11</c>
+
+00:00:06.010 --> 00:00:06.020 align:start position:0%
+hi everyone welcome to the Java 11
+ 
+
+00:00:06.020 --> 00:00:08.500 align:start position:0%
+hi everyone welcome to the Java 11
+overview<00:00:06.470><c> session</c><00:00:06.710><c> my</c><00:00:07.340><c> name</c><00:00:07.370><c> is</c><00:00:07.850><c> banal</c><00:00:08.210><c> the</c>
+
+00:00:08.500 --> 00:00:08.510 align:start position:0%
+overview session my name is banal the
+ 
+
+00:00:08.510 --> 00:00:11.080 align:start position:0%
+overview session my name is banal the
+traverse'<00:00:09.049><c> I</c><00:00:09.290><c> am</c><00:00:10.040><c> the</c><00:00:10.219><c> vice</c><00:00:10.400><c> president</c><00:00:10.430><c> of</c>
+
+00:00:11.080 --> 00:00:11.090 align:start position:0%
+traverse' I am the vice president of
+ 
+
+00:00:11.090 --> 00:00:14.230 align:start position:0%
+traverse' I am the vice president of
+engineering<00:00:11.330><c> of</c><00:00:11.870><c> the</c><00:00:12.170><c> Java</c><00:00:12.410><c> platform</c><00:00:12.730><c> I</c><00:00:13.730><c> am</c>
+
+00:00:14.230 --> 00:00:14.240 align:start position:0%
+engineering of the Java platform I am
+ 
+
+00:00:14.240 --> 00:00:16.299 align:start position:0%
+engineering of the Java platform I am
+responsible<00:00:14.719><c> for</c><00:00:15.050><c> the</c><00:00:15.440><c> Java</c><00:00:15.769><c> SE</c><00:00:16.099><c> development</c>
+
+00:00:16.299 --> 00:00:16.309 align:start position:0%
+responsible for the Java SE development
+ 
+
+00:00:16.309 --> 00:00:18.760 align:start position:0%
+responsible for the Java SE development
+I<00:00:16.880><c> have</c><00:00:17.450><c> been</c><00:00:17.599><c> working</c><00:00:18.110><c> on</c><00:00:18.230><c> the</c><00:00:18.349><c> Java</c><00:00:18.560><c> platform</c>
+
+00:00:18.760 --> 00:00:18.770 align:start position:0%
+I have been working on the Java platform
+ 
+
+00:00:18.770 --> 00:00:22.269 align:start position:0%
+I have been working on the Java platform
+since<00:00:19.369><c> 1998</c><00:00:20.270><c> and</c><00:00:20.480><c> I've</c><00:00:21.110><c> managed</c><00:00:21.529><c> Java</c>
+
+00:00:22.269 --> 00:00:22.279 align:start position:0%
+since 1998 and I've managed Java
+ 
+
+00:00:22.279 --> 00:00:25.210 align:start position:0%
+since 1998 and I've managed Java
+platform<00:00:22.520><c> development</c><00:00:23.119><c> since</c><00:00:23.660><c> Java</c><00:00:24.230><c> 7</c><00:00:24.529><c> first</c>
+
+00:00:25.210 --> 00:00:25.220 align:start position:0%
+platform development since Java 7 first
+ 
+
+00:00:25.220 --> 00:00:27.940 align:start position:0%
+platform development since Java 7 first
+we'll<00:00:26.149><c> talk</c><00:00:26.390><c> about</c><00:00:26.450><c> the</c><00:00:26.720><c> new</c><00:00:27.169><c> six</c><00:00:27.470><c> months</c><00:00:27.800><c> with</c>
+
+00:00:27.940 --> 00:00:27.950 align:start position:0%
+we'll talk about the new six months with
+ 
+
+00:00:27.950 --> 00:00:28.389 align:start position:0%
+we'll talk about the new six months with
+each<00:00:27.980><c> other</c>
+
+00:00:28.389 --> 00:00:28.399 align:start position:0%
+each other
+ 
+
+00:00:28.399 --> 00:00:31.240 align:start position:0%
+each other
+second<00:00:29.210><c> we</c><00:00:29.930><c> will</c><00:00:30.050><c> provide</c><00:00:30.470><c> an</c><00:00:30.649><c> overview</c><00:00:31.009><c> of</c>
+
+00:00:31.240 --> 00:00:31.250 align:start position:0%
+second we will provide an overview of
+ 
+
+00:00:31.250 --> 00:00:34.240 align:start position:0%
+second we will provide an overview of
+the<00:00:31.489><c> new</c><00:00:31.669><c> features</c><00:00:32.170><c> introduced</c><00:00:33.170><c> in</c><00:00:33.380><c> Java</c><00:00:33.649><c> 11</c>
+
+00:00:34.240 --> 00:00:34.250 align:start position:0%
+the new features introduced in Java 11
+ 
+
+00:00:34.250 --> 00:00:37.299 align:start position:0%
+the new features introduced in Java 11
+third<00:00:34.940><c> we</c><00:00:35.600><c> will</c><00:00:35.719><c> discuss</c><00:00:36.199><c> the</c><00:00:36.500><c> key</c><00:00:36.739><c> advantages</c>
+
+00:00:37.299 --> 00:00:37.309 align:start position:0%
+third we will discuss the key advantages
+ 
+
+00:00:37.309 --> 00:00:40.569 align:start position:0%
+third we will discuss the key advantages
+to<00:00:37.640><c> upgrade</c><00:00:37.969><c> to</c><00:00:38.090><c> Java</c><00:00:38.420><c> 11</c><00:00:38.840><c> 4</c><00:00:39.260><c> we</c><00:00:39.980><c> will</c><00:00:40.100><c> discuss</c>
+
+00:00:40.569 --> 00:00:40.579 align:start position:0%
+to upgrade to Java 11 4 we will discuss
+ 
+
+00:00:40.579 --> 00:00:44.169 align:start position:0%
+to upgrade to Java 11 4 we will discuss
+the<00:00:41.179><c> recently</c><00:00:41.629><c> introduced</c><00:00:41.859><c> new</c><00:00:42.859><c> monthly</c><00:00:43.219><c> Java</c>
+
+00:00:44.169 --> 00:00:44.179 align:start position:0%
+the recently introduced new monthly Java
+ 
+
+00:00:44.179 --> 00:00:47.889 align:start position:0%
+the recently introduced new monthly Java
+AC<00:00:44.329><c> support</c><00:00:44.929><c> subscriptions</c><00:00:45.530><c> free</c><00:00:46.489><c> gdk9</c><00:00:46.940><c> the</c>
+
+00:00:47.889 --> 00:00:47.899 align:start position:0%
+AC support subscriptions free gdk9 the
+ 
+
+00:00:47.899 --> 00:00:50.349 align:start position:0%
+AC support subscriptions free gdk9 the
+really<00:00:48.170><c> sacred</c><00:00:48.379><c> cycle</c><00:00:49.100><c> four</c><00:00:49.399><c> major</c><00:00:49.699><c> gdka</c>
+
+00:00:50.349 --> 00:00:50.359 align:start position:0%
+really sacred cycle four major gdka
+ 
+
+00:00:50.359 --> 00:00:52.959 align:start position:0%
+really sacred cycle four major gdka
+thesis<00:00:50.809><c> was</c><00:00:50.989><c> about</c><00:00:51.019><c> to</c><00:00:51.530><c> use</c><00:00:51.739><c> while</c><00:00:52.489><c> we</c><00:00:52.699><c> plan</c>
+
+00:00:52.959 --> 00:00:52.969 align:start position:0%
+thesis was about to use while we plan
+ 
+
+00:00:52.969 --> 00:00:55.299 align:start position:0%
+thesis was about to use while we plan
+for<00:00:53.179><c> three</c><00:00:53.420><c> years</c><00:00:53.660><c> as</c><00:00:54.409><c> it</c><00:00:54.649><c> is</c><00:00:54.769><c> unfortunately</c>
+
+00:00:55.299 --> 00:00:55.309 align:start position:0%
+for three years as it is unfortunately
+ 
+
+00:00:55.309 --> 00:00:58.119 align:start position:0%
+for three years as it is unfortunately
+the<00:00:55.370><c> case</c><00:00:55.489><c> with</c><00:00:56.030><c> large</c><00:00:56.390><c> and</c><00:00:56.690><c> complex</c><00:00:57.199><c> feature</c>
+
+00:00:58.119 --> 00:00:58.129 align:start position:0%
+the case with large and complex feature
+ 
+
+00:00:58.129 --> 00:01:01.750 align:start position:0%
+the case with large and complex feature
+driven<00:00:58.670><c> project</c><00:00:59.420><c> we</c><00:01:00.140><c> ended</c><00:01:00.559><c> up</c><00:01:00.710><c> dealing</c><00:01:01.309><c> the</c>
+
+00:01:01.750 --> 00:01:01.760 align:start position:0%
+driven project we ended up dealing the
+ 
+
+00:01:01.760 --> 00:01:04.720 align:start position:0%
+driven project we ended up dealing the
+release<00:01:02.059><c> by</c><00:01:02.749><c> more</c><00:01:03.050><c> than</c><00:01:03.260><c> 12</c><00:01:03.530><c> months</c><00:01:03.710><c> to</c><00:01:04.580><c> ensure</c>
+
+00:01:04.720 --> 00:01:04.730 align:start position:0%
+release by more than 12 months to ensure
+ 
+
+00:01:04.730 --> 00:01:07.600 align:start position:0%
+release by more than 12 months to ensure
+that<00:01:05.120><c> the</c><00:01:05.300><c> long</c><00:01:05.540><c> fall</c><00:01:05.870><c> features</c><00:01:06.460><c> lambda</c><00:01:07.460><c> in</c>
+
+00:01:07.600 --> 00:01:07.610 align:start position:0%
+that the long fall features lambda in
+ 
+
+00:01:07.610 --> 00:01:11.399 align:start position:0%
+that the long fall features lambda in
+PDA<00:01:08.090><c> in</c><00:01:08.450><c> module</c><00:01:09.259><c> in</c><00:01:09.439><c> gdk9</c><00:01:09.829><c> we're</c><00:01:10.790><c> fully</c><00:01:11.060><c> done</c>
+
+00:01:11.399 --> 00:01:11.409 align:start position:0%
+PDA in module in gdk9 we're fully done
+ 
+
+00:01:11.409 --> 00:01:14.170 align:start position:0%
+PDA in module in gdk9 we're fully done
+while<00:01:12.409><c> this</c><00:01:12.649><c> word</c><00:01:12.860><c> is</c><00:01:12.979><c> model</c><00:01:13.280><c> work</c><00:01:13.490><c> work</c><00:01:13.880><c> well</c>
+
+00:01:14.170 --> 00:01:14.180 align:start position:0%
+while this word is model work work well
+ 
+
+00:01:14.180 --> 00:01:16.990 align:start position:0%
+while this word is model work work well
+for<00:01:14.420><c> Java</c><00:01:14.689><c> for</c><00:01:14.990><c> many</c><00:01:15.170><c> years</c><00:01:15.439><c> the</c><00:01:16.280><c> advance</c><00:01:16.640><c> of</c>
+
+00:01:16.990 --> 00:01:17.000 align:start position:0%
+for Java for many years the advance of
+ 
+
+00:01:17.000 --> 00:01:19.959 align:start position:0%
+for Java for many years the advance of
+modern<00:01:17.540><c> have</c><00:01:17.960><c> developed</c><00:01:18.439><c> the</c><00:01:19.310><c> requirement</c>
+
+00:01:19.959 --> 00:01:19.969 align:start position:0%
+modern have developed the requirement
+ 
+
+00:01:19.969 --> 00:01:22.810 align:start position:0%
+modern have developed the requirement
+for<00:01:20.060><c> more</c><00:01:20.479><c> frequent</c><00:01:20.750><c> software</c><00:01:21.530><c> grade</c><00:01:21.799><c> due</c><00:01:22.640><c> to</c>
+
+00:01:22.810 --> 00:01:22.820 align:start position:0%
+for more frequent software grade due to
+ 
+
+00:01:22.820 --> 00:01:25.090 align:start position:0%
+for more frequent software grade due to
+security<00:01:23.030><c> concerns</c><00:01:23.439><c> and</c><00:01:24.439><c> the</c><00:01:24.680><c> industry</c>
+
+00:01:25.090 --> 00:01:25.100 align:start position:0%
+security concerns and the industry
+ 
+
+00:01:25.100 --> 00:01:26.530 align:start position:0%
+security concerns and the industry
+trying<00:01:25.399><c> to</c><00:01:25.579><c> use</c><00:01:25.759><c> continuous</c><00:01:26.270><c> integration</c>
+
+00:01:26.530 --> 00:01:26.540 align:start position:0%
+trying to use continuous integration
+ 
+
+00:01:26.540 --> 00:01:29.620 align:start position:0%
+trying to use continuous integration
+system<00:01:27.409><c> with</c><00:01:28.070><c> both</c><00:01:28.369><c> frequent</c><00:01:28.880><c> upgrades</c><00:01:29.090><c> have</c>
+
+00:01:29.620 --> 00:01:29.630 align:start position:0%
+system with both frequent upgrades have
+ 
+
+00:01:29.630 --> 00:01:32.649 align:start position:0%
+system with both frequent upgrades have
+led<00:01:30.320><c> us</c><00:01:30.500><c> to</c><00:01:30.680><c> explore</c><00:01:31.100><c> the</c><00:01:31.789><c> faster</c><00:01:32.360><c> and</c><00:01:32.630><c> more</c>
+
+00:01:32.649 --> 00:01:32.659 align:start position:0%
+led us to explore the faster and more
+ 
+
+00:01:32.659 --> 00:01:35.830 align:start position:0%
+led us to explore the faster and more
+predictable<00:01:33.530><c> with</c><00:01:34.009><c> his</c><00:01:34.100><c> model</c><00:01:34.430><c> for</c><00:01:34.640><c> job</c><00:01:34.880><c> al</c>
+
+00:01:35.830 --> 00:01:35.840 align:start position:0%
+predictable with his model for job al
+ 
+
+00:01:35.840 --> 00:01:37.569 align:start position:0%
+predictable with his model for job al
+Jessica<00:01:36.350><c> Curran</c><00:01:36.680><c> you</c><00:01:36.860><c> know</c><00:01:36.979><c> what</c><00:01:37.159><c> recently</c>
+
+00:01:37.569 --> 00:01:37.579 align:start position:0%
+Jessica Curran you know what recently
+ 
+
+00:01:37.579 --> 00:01:39.700 align:start position:0%
+Jessica Curran you know what recently
+the<00:01:38.450><c> software</c><00:01:38.840><c> industry</c><00:01:38.930><c> has</c><00:01:39.289><c> discovered</c>
+
+00:01:39.700 --> 00:01:39.710 align:start position:0%
+the software industry has discovered
+ 
+
+00:01:39.710 --> 00:01:42.069 align:start position:0%
+the software industry has discovered
+that's<00:01:40.009><c> more</c><00:01:40.460><c> and</c><00:01:40.759><c> frequent</c><00:01:41.479><c> update</c><00:01:41.780><c> me</c><00:01:42.020><c> to</c>
+
+00:01:42.069 --> 00:01:42.079 align:start position:0%
+that's more and frequent update me to
+ 
+
+00:01:42.079 --> 00:01:44.380 align:start position:0%
+that's more and frequent update me to
+make<00:01:42.500><c> feature</c><00:01:42.799><c> delivery</c><00:01:43.310><c> was</c><00:01:43.520><c> faster</c><00:01:44.119><c> and</c>
+
+00:01:44.380 --> 00:01:44.390 align:start position:0%
+make feature delivery was faster and
+ 
+
+00:01:44.390 --> 00:01:47.859 align:start position:0%
+make feature delivery was faster and
+safer<00:01:44.859><c> Java</c><00:01:45.859><c> is</c><00:01:45.979><c> no</c><00:01:46.130><c> exception</c><00:01:46.490><c> in</c><00:01:46.869><c> agreement</c>
+
+00:01:47.859 --> 00:01:47.869 align:start position:0%
+safer Java is no exception in agreement
+ 
+
+00:01:47.869 --> 00:01:50.560 align:start position:0%
+safer Java is no exception in agreement
+with<00:01:48.170><c> the</c><00:01:48.380><c> open</c><00:01:48.590><c> JDK</c><00:01:48.770><c> community</c><00:01:49.460><c> we</c><00:01:50.119><c> moved</c><00:01:50.390><c> to</c>
+
+00:01:50.560 --> 00:01:50.570 align:start position:0%
+with the open JDK community we moved to
+ 
+
+00:01:50.570 --> 00:01:52.810 align:start position:0%
+with the open JDK community we moved to
+a<00:01:50.600><c> six</c><00:01:50.930><c> months</c><00:01:51.289><c> with</c><00:01:51.409><c> it</c><00:01:51.500><c> again</c><00:01:51.680><c> while</c><00:01:52.490><c> we</c><00:01:52.700><c> were</c>
+
+00:01:52.810 --> 00:01:52.820 align:start position:0%
+a six months with it again while we were
+ 
+
+00:01:52.820 --> 00:01:54.249 align:start position:0%
+a six months with it again while we were
+moving<00:01:53.180><c> to</c><00:01:53.210><c> the</c><00:01:53.450><c> six</c><00:01:53.719><c> months</c><00:01:54.020><c> with</c><00:01:54.140><c> his</c>
+
+00:01:54.249 --> 00:01:54.259 align:start position:0%
+moving to the six months with his
+ 
+
+00:01:54.259 --> 00:01:56.770 align:start position:0%
+moving to the six months with his
+guidance<00:01:54.619><c> we</c><00:01:55.280><c> also</c><00:01:55.430><c> took</c><00:01:55.670><c> the</c><00:01:56.060><c> opportunities</c>
+
+00:01:56.770 --> 00:01:56.780 align:start position:0%
+guidance we also took the opportunities
+ 
+
+00:01:56.780 --> 00:01:59.529 align:start position:0%
+guidance we also took the opportunities
+to<00:01:56.960><c> revamp</c><00:01:57.439><c> the</c><00:01:57.770><c> JDK</c><00:01:58.549><c> version</c><00:01:58.609><c> the</c><00:01:59.240><c> barracks</c>
+
+00:01:59.529 --> 00:01:59.539 align:start position:0%
+to revamp the JDK version the barracks
+ 
+
+00:01:59.539 --> 00:02:02.830 align:start position:0%
+to revamp the JDK version the barracks
+we<00:01:59.899><c> set</c><00:02:00.170><c> on</c><00:02:00.380><c> on</c><00:02:00.950><c> the</c><00:02:01.159><c> simple</c><00:02:01.670><c> numbering</c><00:02:02.570><c> scheme</c>
+
+00:02:02.830 --> 00:02:02.840 align:start position:0%
+we set on on the simple numbering scheme
+ 
+
+00:02:02.840 --> 00:02:04.929 align:start position:0%
+we set on on the simple numbering scheme
+that<00:02:03.109><c> increase</c><00:02:03.649><c> the</c><00:02:03.799><c> major</c><00:02:04.009><c> it</c><00:02:04.310><c> is</c><00:02:04.399><c> number</c><00:02:04.729><c> by</c>
+
+00:02:04.929 --> 00:02:04.939 align:start position:0%
+that increase the major it is number by
+ 
+
+00:02:04.939 --> 00:02:08.109 align:start position:0%
+that increase the major it is number by
+one<00:02:05.240><c> for</c><00:02:06.020><c> each</c><00:02:06.320><c> six</c><00:02:06.859><c> months</c><00:02:07.130><c> with</c><00:02:07.280><c> this</c>
+
+00:02:08.109 --> 00:02:08.119 align:start position:0%
+one for each six months with this
+ 
+
+00:02:08.119 --> 00:02:10.719 align:start position:0%
+one for each six months with this
+general<00:02:08.570><c> scheme</c><00:02:08.929><c> allow</c><00:02:09.590><c> us</c><00:02:09.830><c> to</c><00:02:10.009><c> deliver</c>
+
+00:02:10.719 --> 00:02:10.729 align:start position:0%
+general scheme allow us to deliver
+ 
+
+00:02:10.729 --> 00:02:13.240 align:start position:0%
+general scheme allow us to deliver
+Java<00:02:11.270><c> language</c><00:02:11.510><c> productivity</c><00:02:12.440><c> improvements</c>
+
+00:02:13.240 --> 00:02:13.250 align:start position:0%
+Java language productivity improvements
+ 
+
+00:02:13.250 --> 00:02:16.870 align:start position:0%
+Java language productivity improvements
+in<00:02:13.790><c> the</c><00:02:13.970><c> six</c><00:02:14.240><c> months</c><00:02:14.540><c> with</c><00:02:14.660><c> by</c><00:02:15.650><c> Jesse</c><00:02:16.070><c> Pierrot</c>
+
+00:02:16.870 --> 00:02:16.880 align:start position:0%
+in the six months with by Jesse Pierrot
+ 
+
+00:02:16.880 --> 00:02:18.430 align:start position:0%
+in the six months with by Jesse Pierrot
+language<00:02:17.420><c> changes</c><00:02:17.870><c> to</c><00:02:18.080><c> the</c><00:02:18.230><c> Java</c>
+
+00:02:18.430 --> 00:02:18.440 align:start position:0%
+language changes to the Java
+ 
+
+00:02:18.440 --> 00:02:20.980 align:start position:0%
+language changes to the Java
+specifications<00:02:19.340><c> requires</c><00:02:20.300><c> a</c><00:02:20.420><c> hearse</c><00:02:20.720><c> to</c>
+
+00:02:20.980 --> 00:02:20.990 align:start position:0%
+specifications requires a hearse to
+ 
+
+00:02:20.990 --> 00:02:23.980 align:start position:0%
+specifications requires a hearse to
+increase<00:02:21.380><c> the</c><00:02:22.100><c> majority's</c><00:02:22.700><c> number</c><00:02:23.060><c> beside</c>
+
+00:02:23.980 --> 00:02:23.990 align:start position:0%
+increase the majority's number beside
+ 
+
+00:02:23.990 --> 00:02:25.750 align:start position:0%
+increase the majority's number beside
+the<00:02:24.140><c> challenge</c><00:02:24.590><c> to</c><00:02:24.770><c> move</c><00:02:24.920><c> from</c><00:02:25.130><c> eight</c><00:02:25.340><c> to</c><00:02:25.550><c> nine</c>
+
+00:02:25.750 --> 00:02:25.760 align:start position:0%
+the challenge to move from eight to nine
+ 
+
+00:02:25.760 --> 00:02:28.810 align:start position:0%
+the challenge to move from eight to nine
+the<00:02:26.450><c> overall</c><00:02:26.900><c> feedback</c><00:02:27.200><c> is</c><00:02:28.010><c> that</c><00:02:28.250><c> people</c><00:02:28.670><c> we</c>
+
+00:02:28.810 --> 00:02:28.820 align:start position:0%
+the overall feedback is that people we
+ 
+
+00:02:28.820 --> 00:02:31.090 align:start position:0%
+the overall feedback is that people we
+moved<00:02:29.060><c> to</c><00:02:29.210><c> nine</c><00:02:29.420><c> found</c><00:02:30.230><c> the</c><00:02:30.530><c> move</c><00:02:30.740><c> to</c><00:02:30.890><c> 10</c>
+
+00:02:31.090 --> 00:02:31.100 align:start position:0%
+moved to nine found the move to 10
+ 
+
+00:02:31.100 --> 00:02:34.570 align:start position:0%
+moved to nine found the move to 10
+trivial<00:02:31.610><c> for</c><00:02:32.270><c> instance</c><00:02:32.720><c> Heidi</c><00:02:33.710><c> supported</c><00:02:34.430><c> the</c>
+
+00:02:34.570 --> 00:02:34.580 align:start position:0%
+trivial for instance Heidi supported the
+ 
+
+00:02:34.580 --> 00:02:37.120 align:start position:0%
+trivial for instance Heidi supported the
+new<00:02:34.760><c> box</c><00:02:35.060><c> and</c><00:02:35.360><c> text</c><00:02:35.600><c> features</c><00:02:35.990><c> and</c><00:02:36.590><c> producing</c>
+
+00:02:37.120 --> 00:02:37.130 align:start position:0%
+new box and text features and producing
+ 
+
+00:02:37.130 --> 00:02:40.420 align:start position:0%
+new box and text features and producing
+GDK<00:02:37.490><c> 10</c><00:02:37.760><c> by</c><00:02:38.420><c> the</c><00:02:38.480><c> launch</c><00:02:38.920><c> it</c><00:02:39.920><c> is</c><00:02:40.040><c> still</c><00:02:40.220><c> early</c>
+
+00:02:40.420 --> 00:02:40.430 align:start position:0%
+GDK 10 by the launch it is still early
+ 
+
+00:02:40.430 --> 00:02:42.670 align:start position:0%
+GDK 10 by the launch it is still early
+has<00:02:40.940><c> a</c><00:02:41.120><c> co</c><00:02:41.270><c> system</c><00:02:41.690><c> need</c><00:02:41.930><c> to</c><00:02:41.960><c> transition</c><00:02:42.350><c> to</c>
+
+00:02:42.670 --> 00:02:42.680 align:start position:0%
+has a co system need to transition to
+ 
+
+00:02:42.680 --> 00:02:44.980 align:start position:0%
+has a co system need to transition to
+the<00:02:42.800><c> new</c><00:02:43.130><c> model</c><00:02:43.400><c> but</c><00:02:44.120><c> we</c><00:02:44.300><c> remain</c><00:02:44.570><c> optimistic</c>
+
+00:02:44.980 --> 00:02:44.990 align:start position:0%
+the new model but we remain optimistic
+ 
+
+00:02:44.990 --> 00:02:46.870 align:start position:0%
+the new model but we remain optimistic
+the<00:02:45.560><c> new</c><00:02:45.800><c> six</c><00:02:46.100><c> months</c><00:02:46.400><c> where</c><00:02:46.550><c> this</c><00:02:46.640><c> cadence</c>
+
+00:02:46.870 --> 00:02:46.880 align:start position:0%
+the new six months where this cadence
+ 
+
+00:02:46.880 --> 00:02:49.810 align:start position:0%
+the new six months where this cadence
+will<00:02:47.600><c> continue</c><00:02:48.050><c> to</c><00:02:48.170><c> be</c><00:02:48.290><c> successful</c><00:02:48.860><c> while</c><00:02:49.640><c> we</c>
+
+00:02:49.810 --> 00:02:49.820 align:start position:0%
+will continue to be successful while we
+ 
+
+00:02:49.820 --> 00:02:51.580 align:start position:0%
+will continue to be successful while we
+were<00:02:49.970><c> considering</c><00:02:50.600><c> a</c><00:02:50.780><c> faster</c><00:02:51.410><c> release</c>
+
+00:02:51.580 --> 00:02:51.590 align:start position:0%
+were considering a faster release
+ 
+
+00:02:51.590 --> 00:02:53.800 align:start position:0%
+were considering a faster release
+cadence<00:02:52.100><c> we</c><00:02:52.760><c> also</c><00:02:52.880><c> acknowledge</c><00:02:53.180><c> the</c><00:02:53.510><c> need</c><00:02:53.780><c> for</c>
+
+00:02:53.800 --> 00:02:53.810 align:start position:0%
+cadence we also acknowledge the need for
+ 
+
+00:02:53.810 --> 00:02:56.880 align:start position:0%
+cadence we also acknowledge the need for
+most<00:02:54.290><c> people</c><00:02:54.770><c> in</c><00:02:55.040><c> long</c><00:02:55.550><c> term</c><00:02:55.850><c> support</c><00:02:56.300><c> already</c>
+
+00:02:56.880 --> 00:02:56.890 align:start position:0%
+most people in long term support already
+ 
+
+00:02:56.890 --> 00:02:59.800 align:start position:0%
+most people in long term support already
+many<00:02:57.890><c> enterprise</c><00:02:58.430><c> workload</c><00:02:58.940><c> are</c><00:02:59.120><c> likely</c><00:02:59.600><c> to</c>
+
+00:02:59.800 --> 00:02:59.810 align:start position:0%
+many enterprise workload are likely to
+ 
+
+00:02:59.810 --> 00:03:02.580 align:start position:0%
+many enterprise workload are likely to
+need<00:02:59.840><c> more</c><00:03:00.260><c> time</c><00:03:00.680><c> to</c><00:03:01.340><c> uptake</c><00:03:01.640><c> new</c><00:03:01.940><c> javadi's</c>
+
+00:03:02.580 --> 00:03:02.590 align:start position:0%
+need more time to uptake new javadi's
+ 
+
+00:03:02.590 --> 00:03:05.740 align:start position:0%
+need more time to uptake new javadi's
+to<00:03:03.590><c> address</c><00:03:03.860><c> this</c><00:03:04.010><c> concern</c><00:03:04.250><c> we</c><00:03:05.150><c> decided</c><00:03:05.600><c> to</c>
+
+00:03:05.740 --> 00:03:05.750 align:start position:0%
+to address this concern we decided to
+ 
+
+00:03:05.750 --> 00:03:08.320 align:start position:0%
+to address this concern we decided to
+identify<00:03:06.370><c> roughly</c><00:03:07.370><c> every</c><00:03:07.460><c> three</c><00:03:07.610><c> years</c><00:03:07.820><c> at</c>
+
+00:03:08.320 --> 00:03:08.330 align:start position:0%
+identify roughly every three years at
+ 
+
+00:03:08.330 --> 00:03:10.990 align:start position:0%
+identify roughly every three years at
+six<00:03:08.900><c> months</c><00:03:09.200><c> Chris</c><00:03:09.410><c> Callen</c><00:03:09.770><c> as</c><00:03:09.950><c> a</c><00:03:10.010><c> long</c><00:03:10.700><c> term</c>
+
+00:03:10.990 --> 00:03:11.000 align:start position:0%
+six months Chris Callen as a long term
+ 
+
+00:03:11.000 --> 00:03:13.930 align:start position:0%
+six months Chris Callen as a long term
+supported<00:03:11.630><c> with</c><00:03:11.920><c> this</c><00:03:12.920><c> model</c><00:03:13.250><c> of</c><00:03:13.370><c> six</c><00:03:13.670><c> months</c>
+
+00:03:13.930 --> 00:03:13.940 align:start position:0%
+supported with this model of six months
+ 
+
+00:03:13.940 --> 00:03:17.710 align:start position:0%
+supported with this model of six months
+and<00:03:14.300><c> long</c><00:03:14.840><c> term</c><00:03:15.140><c> or</c><00:03:15.440><c> LTS</c><00:03:16.040><c> releases</c><00:03:16.610><c> is</c><00:03:17.180><c> not</c><00:03:17.480><c> new</c>
+
+00:03:17.710 --> 00:03:17.720 align:start position:0%
+and long term or LTS releases is not new
+ 
+
+00:03:17.720 --> 00:03:19.810 align:start position:0%
+and long term or LTS releases is not new
+within<00:03:17.960><c> our</c><00:03:18.170><c> industry</c><00:03:18.380><c> and</c><00:03:18.800><c> is</c><00:03:19.310><c> already</c><00:03:19.670><c> being</c>
+
+00:03:19.810 --> 00:03:19.820 align:start position:0%
+within our industry and is already being
+ 
+
+00:03:19.820 --> 00:03:22.300 align:start position:0%
+within our industry and is already being
+used<00:03:19.910><c> by</c><00:03:20.750><c> many</c><00:03:20.780><c> software</c><00:03:21.470><c> distribution</c><00:03:22.070><c> such</c>
+
+00:03:22.300 --> 00:03:22.310 align:start position:0%
+used by many software distribution such
+ 
+
+00:03:22.310 --> 00:03:25.330 align:start position:0%
+used by many software distribution such
+as<00:03:22.340><c> Linux</c><00:03:22.880><c> so</c><00:03:23.720><c> in</c><00:03:23.840><c> summary</c><00:03:24.230><c> six</c><00:03:25.040><c> months</c>
+
+00:03:25.330 --> 00:03:25.340 align:start position:0%
+as Linux so in summary six months
+ 
+
+00:03:25.340 --> 00:03:28.030 align:start position:0%
+as Linux so in summary six months
+queries<00:03:25.610><c> are</c><00:03:26.030><c> all</c><00:03:26.330><c> about</c><00:03:26.540><c> rapid</c><00:03:27.530><c> paced</c><00:03:27.800><c> of</c>
+
+00:03:28.030 --> 00:03:28.040 align:start position:0%
+queries are all about rapid paced of
+ 
+
+00:03:28.040 --> 00:03:30.370 align:start position:0%
+queries are all about rapid paced of
+innovations<00:03:28.730><c> improve</c><00:03:29.570><c> performance</c><00:03:30.170><c> and</c>
+
+00:03:30.370 --> 00:03:30.380 align:start position:0%
+innovations improve performance and
+ 
+
+00:03:30.380 --> 00:03:34.180 align:start position:0%
+innovations improve performance and
+continuous<00:03:31.160><c> integration</c><00:03:32.080><c> LTS</c><00:03:33.080><c> releases</c><00:03:33.500><c> are</c>
+
+00:03:34.180 --> 00:03:34.190 align:start position:0%
+continuous integration LTS releases are
+ 
+
+00:03:34.190 --> 00:03:37.330 align:start position:0%
+continuous integration LTS releases are
+all<00:03:34.910><c> about</c><00:03:35.270><c> long-term</c><00:03:36.050><c> commitment</c><00:03:37.040><c> to</c>
+
+00:03:37.330 --> 00:03:37.340 align:start position:0%
+all about long-term commitment to
+ 
+
+00:03:37.340 --> 00:03:39.880 align:start position:0%
+all about long-term commitment to
+provide<00:03:38.030><c> stability</c><00:03:38.330><c> and</c><00:03:39.020><c> security</c><00:03:39.590><c> updates</c>
+
+00:03:39.880 --> 00:03:39.890 align:start position:0%
+provide stability and security updates
+ 
+
+00:03:39.890 --> 00:03:43.030 align:start position:0%
+provide stability and security updates
+y12<00:03:40.580><c> provides</c><00:03:40.880><c> users</c><00:03:41.320><c> as</c><00:03:42.320><c> we</c><00:03:42.530><c> are</c><00:03:42.620><c> changing</c>
+
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+y12 provides users as we are changing
+ 
+
+00:03:43.040 --> 00:03:45.460 align:start position:0%
+y12 provides users as we are changing
+the<00:03:43.220><c> radius</c><00:03:43.430><c> model</c><00:03:43.790><c> we</c><00:03:44.510><c> also</c><00:03:44.600><c> saw</c><00:03:44.990><c> that</c><00:03:45.020><c> this</c>
+
+00:03:45.460 --> 00:03:45.470 align:start position:0%
+the radius model we also saw that this
+ 
+
+00:03:45.470 --> 00:03:47.380 align:start position:0%
+the radius model we also saw that this
+was<00:03:45.710><c> the</c><00:03:45.860><c> right</c><00:03:46.040><c> time</c><00:03:46.100><c> to</c><00:03:46.580><c> address</c><00:03:46.730><c> feedback</c>
+
+00:03:47.380 --> 00:03:47.390 align:start position:0%
+was the right time to address feedback
+ 
+
+00:03:47.390 --> 00:03:51.130 align:start position:0%
+was the right time to address feedback
+on<00:03:47.870><c> the</c><00:03:48.170><c> Java</c><00:03:48.470><c> busier</c><00:03:48.860><c> life</c><00:03:49.480><c> the</c><00:03:50.480><c> binary</c><00:03:50.870><c> card</c>
+
+00:03:51.130 --> 00:03:51.140 align:start position:0%
+on the Java busier life the binary card
+ 
+
+00:03:51.140 --> 00:03:53.860 align:start position:0%
+on the Java busier life the binary card
+license<00:03:51.560><c> or</c><00:03:51.860><c> BCL</c><00:03:52.430><c> has</c><00:03:53.090><c> been</c><00:03:53.390><c> the</c><00:03:53.570><c> predominant</c>
+
+00:03:53.860 --> 00:03:53.870 align:start position:0%
+license or BCL has been the predominant
+ 
+
+00:03:53.870 --> 00:03:56.140 align:start position:0%
+license or BCL has been the predominant
+license<00:03:54.650><c> for</c><00:03:54.890><c> the</c><00:03:55.040><c> java</c><00:03:55.250><c> technology</c><00:03:55.490><c> for</c>
+
+00:03:56.140 --> 00:03:56.150 align:start position:0%
+license for the java technology for
+ 
+
+00:03:56.150 --> 00:03:59.530 align:start position:0%
+license for the java technology for
+we're<00:03:56.360><c> over</c><00:03:56.570><c> ready</c><00:03:57.280><c> to</c><00:03:58.280><c> clarify</c><00:03:58.670><c> licensing</c>
+
+00:03:59.530 --> 00:03:59.540 align:start position:0%
+we're over ready to clarify licensing
+ 
+
+00:03:59.540 --> 00:04:00.640 align:start position:0%
+we're over ready to clarify licensing
+going<00:03:59.900><c> forward</c>
+
+00:04:00.640 --> 00:04:00.650 align:start position:0%
+going forward
+ 
+
+00:04:00.650 --> 00:04:04.480 align:start position:0%
+going forward
+oracle<00:04:01.490><c> will</c><00:04:02.210><c> now</c><00:04:02.450><c> be</c><00:04:02.720><c> producing</c><00:04:03.290><c> true</c>
+
+00:04:04.480 --> 00:04:04.490 align:start position:0%
+oracle will now be producing true
+ 
+
+00:04:04.490 --> 00:04:07.390 align:start position:0%
+oracle will now be producing true
+I<00:04:04.520><c> don't</c><00:04:05.030><c> recall</c><00:04:05.240><c> GDK</c><00:04:05.900><c> distributions</c><00:04:06.620><c> out</c><00:04:06.890><c> of</c>
+
+00:04:07.390 --> 00:04:07.400 align:start position:0%
+I don't recall GDK distributions out of
+ 
+
+00:04:07.400 --> 00:04:10.540 align:start position:0%
+I don't recall GDK distributions out of
+the<00:04:07.580><c> same</c><00:04:08.080><c> OpenJDK</c><00:04:09.080><c> source</c><00:04:09.380><c> code</c><00:04:09.650><c> for</c><00:04:10.190><c> all</c><00:04:10.400><c> the</c>
+
+00:04:10.540 --> 00:04:10.550 align:start position:0%
+the same OpenJDK source code for all the
+ 
+
+00:04:10.550 --> 00:04:12.240 align:start position:0%
+the same OpenJDK source code for all the
+platform<00:04:11.060><c> usable</c>
+
+00:04:12.240 --> 00:04:12.250 align:start position:0%
+platform usable
+ 
+
+00:04:12.250 --> 00:04:15.640 align:start position:0%
+platform usable
+oracle<00:04:13.250><c> open</c><00:04:13.280><c> JDK</c><00:04:13.910><c> will</c><00:04:14.720><c> be</c><00:04:14.870><c> available</c><00:04:15.380><c> under</c>
+
+00:04:15.640 --> 00:04:15.650 align:start position:0%
+oracle open JDK will be available under
+ 
+
+00:04:15.650 --> 00:04:18.760 align:start position:0%
+oracle open JDK will be available under
+the<00:04:15.980><c> GPL</c><00:04:16.310><c> license</c><00:04:16.820><c> for</c><00:04:17.120><c> free</c><00:04:17.359><c> or</c><00:04:18.020><c> user</c>
+
+00:04:18.760 --> 00:04:18.770 align:start position:0%
+the GPL license for free or user
+ 
+
+00:04:18.770 --> 00:04:21.059 align:start position:0%
+the GPL license for free or user
+normally<00:04:19.400><c> accustomed</c><00:04:19.910><c> to</c><00:04:20.180><c> the</c><00:04:20.299><c> PCL</c>
+
+00:04:21.059 --> 00:04:21.069 align:start position:0%
+normally accustomed to the PCL
+ 
+
+00:04:21.069 --> 00:04:24.219 align:start position:0%
+normally accustomed to the PCL
+Oracle<00:04:22.069><c> JDK</c><00:04:22.280><c> ladies</c><00:04:22.699><c> under</c><00:04:23.569><c> the</c><00:04:23.750><c> Oracle</c>
+
+00:04:24.219 --> 00:04:24.229 align:start position:0%
+Oracle JDK ladies under the Oracle
+ 
+
+00:04:24.229 --> 00:04:25.809 align:start position:0%
+Oracle JDK ladies under the Oracle
+commercial<00:04:24.710><c> license</c><00:04:25.190><c> for</c><00:04:25.789><c> commercial</c>
+
+00:04:25.809 --> 00:04:25.819 align:start position:0%
+commercial license for commercial
+ 
+
+00:04:25.819 --> 00:04:28.390 align:start position:0%
+commercial license for commercial
+shipping<00:04:26.479><c> this</c><00:04:27.259><c> transition</c><00:04:27.830><c> is</c><00:04:27.949><c> going</c><00:04:28.160><c> very</c>
+
+00:04:28.390 --> 00:04:28.400 align:start position:0%
+shipping this transition is going very
+ 
+
+00:04:28.400 --> 00:04:31.689 align:start position:0%
+shipping this transition is going very
+well<00:04:28.550><c> and</c><00:04:28.940><c> we</c><00:04:29.569><c> are</c><00:04:29.599><c> now</c><00:04:29.840><c> producing</c><00:04:30.699><c> Oracle</c>
+
+00:04:31.689 --> 00:04:31.699 align:start position:0%
+well and we are now producing Oracle
+ 
+
+00:04:31.699 --> 00:04:34.900 align:start position:0%
+well and we are now producing Oracle
+OpenJDK<00:04:32.360><c> bills</c><00:04:32.660><c> and</c><00:04:33.259><c> all</c><00:04:33.530><c> conceded</c><00:04:34.039><c> in</c><00:04:34.490><c> Oracle</c>
+
+00:04:34.900 --> 00:04:34.910 align:start position:0%
+OpenJDK bills and all conceded in Oracle
+ 
+
+00:04:34.910 --> 00:04:39.640 align:start position:0%
+OpenJDK bills and all conceded in Oracle
+GDP<00:04:35.389><c> since</c><00:04:36.080><c> Billiken</c><00:04:36.729><c> we</c><00:04:37.729><c> are</c><00:04:37.849><c> now</c><00:04:38.060><c> 99%</c><00:04:39.020><c> there</c>
+
+00:04:39.640 --> 00:04:39.650 align:start position:0%
+GDP since Billiken we are now 99% there
+ 
+
+00:04:39.650 --> 00:04:42.249 align:start position:0%
+GDP since Billiken we are now 99% there
+with<00:04:39.979><c> the</c><00:04:40.099><c> conversion</c><00:04:40.460><c> between</c><00:04:40.870><c> Oracle</c><00:04:41.870><c> open</c>
+
+00:04:42.249 --> 00:04:42.259 align:start position:0%
+with the conversion between Oracle open
+ 
+
+00:04:42.259 --> 00:04:46.120 align:start position:0%
+with the conversion between Oracle open
+GDP<00:04:42.620><c> and</c><00:04:42.889><c> Oracle</c><00:04:43.430><c> GDP</c><00:04:43.819><c> which</c><00:04:44.060><c> is</c><00:04:44.150><c> a</c><00:04:45.130><c> common</c>
+
+00:04:46.120 --> 00:04:46.130 align:start position:0%
+GDP and Oracle GDP which is a common
+ 
+
+00:04:46.130 --> 00:04:49.450 align:start position:0%
+GDP and Oracle GDP which is a common
+misunderstanding<00:04:47.060><c> on</c><00:04:47.150><c> Oracle</c><00:04:47.599><c> JDK</c><00:04:47.810><c> 11</c><00:04:48.740><c> go</c><00:04:49.340><c> in</c>
+
+00:04:49.450 --> 00:04:49.460 align:start position:0%
+misunderstanding on Oracle JDK 11 go in
+ 
+
+00:04:49.460 --> 00:04:51.879 align:start position:0%
+misunderstanding on Oracle JDK 11 go in
+commercial<00:04:50.060><c> and</c><00:04:50.330><c> Java</c><00:04:51.139><c> not</c><00:04:51.349><c> being</c><00:04:51.590><c> free</c>
+
+00:04:51.879 --> 00:04:51.889 align:start position:0%
+commercial and Java not being free
+ 
+
+00:04:51.889 --> 00:04:54.640 align:start position:0%
+commercial and Java not being free
+anymore<00:04:52.310><c> is</c><00:04:52.849><c> that</c><00:04:53.150><c> now</c><00:04:53.630><c> we</c><00:04:54.199><c> are</c><00:04:54.229><c> also</c>
+
+00:04:54.640 --> 00:04:54.650 align:start position:0%
+anymore is that now we are also
+ 
+
+00:04:54.650 --> 00:04:57.760 align:start position:0%
+anymore is that now we are also
+producing<00:04:55.400><c> or</c><00:04:56.000><c> I</c><00:04:56.060><c> call</c><00:04:56.509><c> up</c><00:04:56.780><c> Angelique</c><00:04:57.349><c> liberal</c>
+
+00:04:57.760 --> 00:04:57.770 align:start position:0%
+producing or I call up Angelique liberal
+ 
+
+00:04:57.770 --> 00:05:01.089 align:start position:0%
+producing or I call up Angelique liberal
+and<00:04:58.280><c> they</c><00:04:58.460><c> are</c><00:04:58.520><c> the</c><00:04:58.699><c> free</c><00:04:58.970><c> DP</c><00:04:59.330><c> allies</c><00:05:00.009><c> so</c><00:05:01.009><c> you</c>
+
+00:05:01.089 --> 00:05:01.099 align:start position:0%
+and they are the free DP allies so you
+ 
+
+00:05:01.099 --> 00:05:03.580 align:start position:0%
+and they are the free DP allies so you
+should<00:05:01.280><c> consider</c><00:05:01.639><c> the</c><00:05:02.060><c> new</c><00:05:02.330><c> oracle</c><00:05:03.199><c> open</c><00:05:03.229><c> JDK</c>
+
+00:05:03.580 --> 00:05:03.590 align:start position:0%
+should consider the new oracle open JDK
+ 
+
+00:05:03.590 --> 00:05:07.540 align:start position:0%
+should consider the new oracle open JDK
+build<00:05:04.190><c> as</c><00:05:04.340><c> all</c><00:05:05.030><c> public</c><00:05:05.449><c> update</c><00:05:05.780><c> in</c><00:05:06.590><c> fact</c><00:05:06.949><c> they</c>
+
+00:05:07.540 --> 00:05:07.550 align:start position:0%
+build as all public update in fact they
+ 
+
+00:05:07.550 --> 00:05:09.070 align:start position:0%
+build as all public update in fact they
+are<00:05:07.639><c> always</c><00:05:07.880><c> been</c><00:05:08.240><c> a</c><00:05:08.270><c> six</c><00:05:08.630><c> month</c><00:05:08.840><c> with</c><00:05:08.990><c> his</c>
+
+00:05:09.070 --> 00:05:09.080 align:start position:0%
+are always been a six month with his
+ 
+
+00:05:09.080 --> 00:05:11.529 align:start position:0%
+are always been a six month with his
+guidance<00:05:09.409><c> for</c><00:05:09.919><c> the</c><00:05:10.069><c> GDP</c><00:05:10.430><c> it</c><00:05:10.880><c> was</c><00:05:11.090><c> just</c><00:05:11.330><c> number</c>
+
+00:05:11.529 --> 00:05:11.539 align:start position:0%
+guidance for the GDP it was just number
+ 
+
+00:05:11.539 --> 00:05:16.180 align:start position:0%
+guidance for the GDP it was just number
+different<00:05:12.099><c> when</c><00:05:13.099><c> you</c><00:05:13.220><c> went</c><00:05:13.430><c> from</c><00:05:13.699><c> 80</c><00:05:14.360><c> 20</c><00:05:14.990><c> 80</c><00:05:15.620><c> 40</c>
+
+00:05:16.180 --> 00:05:16.190 align:start position:0%
+different when you went from 80 20 80 40
+ 
+
+00:05:16.190 --> 00:05:19.420 align:start position:0%
+different when you went from 80 20 80 40
+to<00:05:16.819><c> 80</c><00:05:16.970><c> 60</c><00:05:17.360><c> then</c><00:05:18.229><c> you</c><00:05:18.409><c> were</c><00:05:18.590><c> on</c><00:05:18.800><c> the</c><00:05:18.919><c> six</c><00:05:19.159><c> months</c>
+
+00:05:19.420 --> 00:05:19.430 align:start position:0%
+to 80 60 then you were on the six months
+ 
+
+00:05:19.430 --> 00:05:21.129 align:start position:0%
+to 80 60 then you were on the six months
+with<00:05:19.520><c> its</c><00:05:19.639><c> balance</c><00:05:19.970><c> of</c><00:05:20.180><c> roughly</c><00:05:20.810><c> the</c><00:05:20.960><c> same</c>
+
+00:05:21.129 --> 00:05:21.139 align:start position:0%
+with its balance of roughly the same
+ 
+
+00:05:21.139 --> 00:05:24.100 align:start position:0%
+with its balance of roughly the same
+scope<00:05:21.440><c> so</c><00:05:22.250><c> you</c><00:05:22.310><c> need</c><00:05:22.520><c> to</c><00:05:22.639><c> consider</c><00:05:22.970><c> the</c><00:05:23.810><c> free</c>
+
+00:05:24.100 --> 00:05:24.110 align:start position:0%
+scope so you need to consider the free
+ 
+
+00:05:24.110 --> 00:05:28.749 align:start position:0%
+scope so you need to consider the free
+for<00:05:24.319><c> record</c><00:05:24.680><c> open</c><00:05:24.800><c> JDK</c><00:05:25.099><c> 12</c><00:05:26.110><c> 13</c><00:05:27.110><c> and</c><00:05:27.320><c> 14</c><00:05:27.759><c> radius</c>
+
+00:05:28.749 --> 00:05:28.759 align:start position:0%
+for record open JDK 12 13 and 14 radius
+ 
+
+00:05:28.759 --> 00:05:33.909 align:start position:0%
+for record open JDK 12 13 and 14 radius
+has<00:05:29.389><c> all</c><00:05:29.750><c> numbering</c><00:05:30.400><c> 11</c><00:05:31.419><c> 2011</c><00:05:32.419><c> update</c><00:05:32.990><c> 40</c><00:05:33.560><c> and</c>
+
+00:05:33.909 --> 00:05:33.919 align:start position:0%
+has all numbering 11 2011 update 40 and
+ 
+
+00:05:33.919 --> 00:05:36.010 align:start position:0%
+has all numbering 11 2011 update 40 and
+11<00:05:34.310><c> ellipses</c><00:05:34.789><c> yes</c>
+
+00:05:36.010 --> 00:05:36.020 align:start position:0%
+11 ellipses yes
+ 
+
+00:05:36.020 --> 00:05:40.779 align:start position:0%
+11 ellipses yes
+Java<00:05:36.530><c> is</c><00:05:36.560><c> did</c><00:05:36.889><c> free</c><00:05:37.570><c> JDK</c><00:05:38.570><c> 11</c><00:05:38.930><c> is</c><00:05:39.320><c> delivering</c><00:05:39.800><c> 17</c>
+
+00:05:40.779 --> 00:05:40.789 align:start position:0%
+Java is did free JDK 11 is delivering 17
+ 
+
+00:05:40.789 --> 00:05:43.390 align:start position:0%
+Java is did free JDK 11 is delivering 17
+new<00:05:41.030><c> major</c><00:05:41.330><c> features</c><00:05:41.780><c> I</c><00:05:42.080><c> will</c><00:05:42.650><c> not</c><00:05:42.889><c> cover</c><00:05:43.099><c> all</c>
+
+00:05:43.390 --> 00:05:43.400 align:start position:0%
+new major features I will not cover all
+ 
+
+00:05:43.400 --> 00:05:45.249 align:start position:0%
+new major features I will not cover all
+the<00:05:43.699><c> new</c><00:05:43.849><c> feature</c><00:05:44.120><c> in</c><00:05:44.449><c> this</c><00:05:44.599><c> video</c><00:05:44.990><c> I</c>
+
+00:05:45.249 --> 00:05:45.259 align:start position:0%
+the new feature in this video I
+ 
+
+00:05:45.259 --> 00:05:47.980 align:start position:0%
+the new feature in this video I
+encourage<00:05:46.250><c> you</c><00:05:46.400><c> to</c><00:05:46.430><c> watch</c><00:05:46.820><c> the</c><00:05:47.210><c> other</c><00:05:47.719><c> video</c>
+
+00:05:47.980 --> 00:05:47.990 align:start position:0%
+encourage you to watch the other video
+ 
+
+00:05:47.990 --> 00:05:51.129 align:start position:0%
+encourage you to watch the other video
+we<00:05:48.380><c> have</c><00:05:48.469><c> published</c><00:05:48.889><c> on</c><00:05:49.039><c> this</c><00:05:49.219><c> chart</c><00:05:50.139><c> besides</c>
+
+00:05:51.129 --> 00:05:51.139 align:start position:0%
+we have published on this chart besides
+ 
+
+00:05:51.139 --> 00:05:53.680 align:start position:0%
+we have published on this chart besides
+internal<00:05:51.800><c> JVM</c><00:05:52.460><c> feature</c><00:05:52.729><c> to</c><00:05:53.120><c> improve</c><00:05:53.240><c> the</c>
+
+00:05:53.680 --> 00:05:53.690 align:start position:0%
+internal JVM feature to improve the
+ 
+
+00:05:53.690 --> 00:05:57.730 align:start position:0%
+internal JVM feature to improve the
+efficiency<00:05:54.409><c> of</c><00:05:54.440><c> the</c><00:05:54.650><c> GBM</c><00:05:55.069><c> such</c><00:05:55.969><c> as</c><00:05:56.150><c> jab</c><00:05:56.740><c> 181</c>
+
+00:05:57.730 --> 00:05:57.740 align:start position:0%
+efficiency of the GBM such as jab 181
+ 
+
+00:05:57.740 --> 00:05:59.890 align:start position:0%
+efficiency of the GBM such as jab 181
+nest<00:05:58.430><c> based</c><00:05:58.759><c> access</c><00:05:59.030><c> control</c>
+
+00:05:59.890 --> 00:05:59.900 align:start position:0%
+nest based access control
+ 
+
+00:05:59.900 --> 00:06:03.640 align:start position:0%
+nest based access control
+Jeb<00:06:00.620><c> 209</c><00:06:01.219><c> dynamic</c><00:06:02.120><c> constant</c><00:06:02.599><c> I</c><00:06:02.719><c> want</c><00:06:03.530><c> to</c>
+
+00:06:03.640 --> 00:06:03.650 align:start position:0%
+Jeb 209 dynamic constant I want to
+ 
+
+00:06:03.650 --> 00:06:06.159 align:start position:0%
+Jeb 209 dynamic constant I want to
+mention<00:06:03.830><c> Jeb</c><00:06:04.960><c> 321</c>
+
+00:06:06.159 --> 00:06:06.169 align:start position:0%
+mention Jeb 321
+ 
+
+00:06:06.169 --> 00:06:09.459 align:start position:0%
+mention Jeb 321
+the<00:06:06.770><c> new</c><00:06:07.039><c> HTTP</c><00:06:07.729><c> stack</c><00:06:08.030><c> that</c><00:06:08.599><c> is</c><00:06:08.810><c> graduating</c>
+
+00:06:09.459 --> 00:06:09.469 align:start position:0%
+the new HTTP stack that is graduating
+ 
+
+00:06:09.469 --> 00:06:11.920 align:start position:0%
+the new HTTP stack that is graduating
+from<00:06:09.500><c> being</c><00:06:10.039><c> an</c><00:06:10.340><c> incubator</c><00:06:10.969><c> of</c><00:06:11.180><c> features</c><00:06:11.599><c> and</c>
+
+00:06:11.920 --> 00:06:11.930 align:start position:0%
+from being an incubator of features and
+ 
+
+00:06:11.930 --> 00:06:14.320 align:start position:0%
+from being an incubator of features and
+will<00:06:12.380><c> significantly</c><00:06:12.680><c> improve</c><00:06:13.340><c> HTTP</c>
+
+00:06:14.320 --> 00:06:14.330 align:start position:0%
+will significantly improve HTTP
+ 
+
+00:06:14.330 --> 00:06:15.390 align:start position:0%
+will significantly improve HTTP
+performance
+
+00:06:15.390 --> 00:06:15.400 align:start position:0%
+performance
+ 
+
+00:06:15.400 --> 00:06:20.170 align:start position:0%
+performance
+Jeb<00:06:16.659><c> 331</c><00:06:17.659><c> provide</c><00:06:18.289><c> low</c><00:06:18.860><c> very</c><00:06:19.159><c> profiling</c><00:06:19.849><c> and</c>
+
+00:06:20.170 --> 00:06:20.180 align:start position:0%
+Jeb 331 provide low very profiling and
+ 
+
+00:06:20.180 --> 00:06:22.570 align:start position:0%
+Jeb 331 provide low very profiling and
+is<00:06:20.449><c> a</c><00:06:20.479><c> contribution</c><00:06:20.870><c> from</c><00:06:21.229><c> Google</c><00:06:21.620><c> as</c><00:06:22.370><c> we</c>
+
+00:06:22.570 --> 00:06:22.580 align:start position:0%
+is a contribution from Google as we
+ 
+
+00:06:22.580 --> 00:06:25.450 align:start position:0%
+is a contribution from Google as we
+announced<00:06:22.849><c> we</c><00:06:23.180><c> are</c><00:06:23.599><c> removing</c><00:06:23.930><c> Kaba</c><00:06:24.650><c> in</c><00:06:25.039><c> Java</c>
+
+00:06:25.450 --> 00:06:25.460 align:start position:0%
+announced we are removing Kaba in Java
+ 
+
+00:06:25.460 --> 00:06:27.629 align:start position:0%
+announced we are removing Kaba in Java
+EE<00:06:25.580><c> component</c><00:06:26.240><c> from</c><00:06:26.539><c> GE</c>
+
+00:06:27.629 --> 00:06:27.639 align:start position:0%
+EE component from GE
+ 
+
+00:06:27.639 --> 00:06:31.149 align:start position:0%
+EE component from GE
+kolba<00:06:28.639><c> in</c><00:06:29.120><c> the</c><00:06:29.449><c> Java</c><00:06:29.750><c> EE</c><00:06:29.779><c> module</c><00:06:30.289><c> we</c><00:06:30.710><c> still</c><00:06:31.010><c> be</c>
+
+00:06:31.149 --> 00:06:31.159 align:start position:0%
+kolba in the Java EE module we still be
+ 
+
+00:06:31.159 --> 00:06:33.760 align:start position:0%
+kolba in the Java EE module we still be
+available<00:06:31.250><c> as</c><00:06:31.849><c> separate</c><00:06:32.389><c> module</c><00:06:32.870><c> to</c><00:06:33.380><c> ensure</c>
+
+00:06:33.760 --> 00:06:33.770 align:start position:0%
+available as separate module to ensure
+ 
+
+00:06:33.770 --> 00:06:34.690 align:start position:0%
+available as separate module to ensure
+smooth
+
+00:06:34.690 --> 00:06:34.700 align:start position:0%
+smooth
+ 
+
+00:06:34.700 --> 00:06:38.410 align:start position:0%
+smooth
+visions<00:06:35.180><c> to</c><00:06:35.780><c> our</c><00:06:35.870><c> Java</c><00:06:36.260><c> EE</c><00:06:36.470><c> users</c><00:06:37.270><c> we</c><00:06:38.270><c> also</c>
+
+00:06:38.410 --> 00:06:38.420 align:start position:0%
+visions to our Java EE users we also
+ 
+
+00:06:38.420 --> 00:06:41.860 align:start position:0%
+visions to our Java EE users we also
+another<00:06:38.780><c> announcing</c><00:06:39.440><c> in</c><00:06:39.710><c> j11</c><00:06:40.130><c> our</c><00:06:41.090><c> intent</c><00:06:41.750><c> to</c>
+
+00:06:41.860 --> 00:06:41.870 align:start position:0%
+another announcing in j11 our intent to
+ 
+
+00:06:41.870 --> 00:06:45.760 align:start position:0%
+another announcing in j11 our intent to
+deprecated<00:06:42.380><c> national</c><00:06:42.950><c> in</c><00:06:43.370><c> fact</c><00:06:43.670><c> one</c><00:06:44.380><c> now</c><00:06:45.380><c> that</c>
+
+00:06:45.760 --> 00:06:45.770 align:start position:0%
+deprecated national in fact one now that
+ 
+
+00:06:45.770 --> 00:06:48.490 align:start position:0%
+deprecated national in fact one now that
+Java<00:06:46.070><c> has</c><00:06:46.370><c> a</c><00:06:46.430><c> module</c><00:06:46.850><c> system</c><00:06:47.180><c> we</c><00:06:48.080><c> can</c><00:06:48.290><c> more</c>
+
+00:06:48.490 --> 00:06:48.500 align:start position:0%
+Java has a module system we can more
+ 
+
+00:06:48.500 --> 00:06:51.190 align:start position:0%
+Java has a module system we can more
+clearly<00:06:48.830><c> separate</c><00:06:49.640><c> optional</c><00:06:50.600><c> module</c><00:06:50.930><c> from</c>
+
+00:06:51.190 --> 00:06:51.200 align:start position:0%
+clearly separate optional module from
+ 
+
+00:06:51.200 --> 00:06:53.410 align:start position:0%
+clearly separate optional module from
+the<00:06:51.410><c> core</c><00:06:51.590><c> platform</c><00:06:51.710><c> and</c><00:06:52.370><c> let</c><00:06:52.970><c> those</c><00:06:53.180><c> modules</c>
+
+00:06:53.410 --> 00:06:53.420 align:start position:0%
+the core platform and let those modules
+ 
+
+00:06:53.420 --> 00:06:55.560 align:start position:0%
+the core platform and let those modules
+evolve<00:06:54.050><c> at</c><00:06:54.500><c> their</c><00:06:54.710><c> own</c><00:06:54.890><c> pace</c>
+
+00:06:55.560 --> 00:06:55.570 align:start position:0%
+evolve at their own pace
+ 
+
+00:06:55.570 --> 00:06:58.120 align:start position:0%
+evolve at their own pace
+Angelica<00:06:56.570><c> 11</c><00:06:57.050><c> we</c><00:06:57.410><c> are</c><00:06:57.500><c> introducing</c><00:06:57.980><c> a</c><00:06:58.100><c> new</c>
+
+00:06:58.120 --> 00:06:58.130 align:start position:0%
+Angelica 11 we are introducing a new
+ 
+
+00:06:58.130 --> 00:07:02.020 align:start position:0%
+Angelica 11 we are introducing a new
+feature<00:06:58.550><c> to</c><00:06:58.790><c> simplify</c><00:07:00.010><c> on-ramp</c><00:07:01.010><c> of</c><00:07:01.280><c> new</c><00:07:01.670><c> Java</c>
+
+00:07:02.020 --> 00:07:02.030 align:start position:0%
+feature to simplify on-ramp of new Java
+ 
+
+00:07:02.030 --> 00:07:05.290 align:start position:0%
+feature to simplify on-ramp of new Java
+developers<00:07:02.770><c> aggeliki</c><00:07:03.770><c> 11</c><00:07:04.280><c> allow</c><00:07:05.000><c> you</c><00:07:05.120><c> to</c>
+
+00:07:05.290 --> 00:07:05.300 align:start position:0%
+developers aggeliki 11 allow you to
+ 
+
+00:07:05.300 --> 00:07:07.870 align:start position:0%
+developers aggeliki 11 allow you to
+launch<00:07:05.560><c> single</c><00:07:06.560><c> Java</c><00:07:06.860><c> source</c><00:07:07.160><c> file</c><00:07:07.460><c> from</c><00:07:07.790><c> a</c>
+
+00:07:07.870 --> 00:07:07.880 align:start position:0%
+launch single Java source file from a
+ 
+
+00:07:07.880 --> 00:07:10.210 align:start position:0%
+launch single Java source file from a
+single<00:07:08.300><c> command</c><00:07:08.720><c> instead</c><00:07:09.410><c> of</c><00:07:09.530><c> the</c><00:07:09.650><c> previous</c><00:07:10.070><c> 2</c>
+
+00:07:10.210 --> 00:07:10.220 align:start position:0%
+single command instead of the previous 2
+ 
+
+00:07:10.220 --> 00:07:13.930 align:start position:0%
+single command instead of the previous 2
+step<00:07:10.490><c> compile</c><00:07:11.450><c> and</c><00:07:11.780><c> then</c><00:07:12.170><c> run</c><00:07:12.430><c> this</c><00:07:13.430><c> is</c><00:07:13.640><c> going</c>
+
+00:07:13.930 --> 00:07:13.940 align:start position:0%
+step compile and then run this is going
+ 
+
+00:07:13.940 --> 00:07:16.270 align:start position:0%
+step compile and then run this is going
+in<00:07:14.060><c> the</c><00:07:14.210><c> direction</c><00:07:14.480><c> to</c><00:07:15.140><c> reduce</c><00:07:15.560><c> a</c><00:07:15.710><c> friction</c>
+
+00:07:16.270 --> 00:07:16.280 align:start position:0%
+in the direction to reduce a friction
+ 
+
+00:07:16.280 --> 00:07:19.780 align:start position:0%
+in the direction to reduce a friction
+for<00:07:16.820><c> new</c><00:07:17.060><c> developers</c><00:07:17.540><c> launcher</c><00:07:18.460><c> we</c><00:07:19.460><c> are</c><00:07:19.550><c> very</c>
+
+00:07:19.780 --> 00:07:19.790 align:start position:0%
+for new developers launcher we are very
+ 
+
+00:07:19.790 --> 00:07:22.120 align:start position:0%
+for new developers launcher we are very
+excited<00:07:20.150><c> to</c><00:07:20.360><c> introducing</c><00:07:20.720><c> GD</c><00:07:21.290><c> 11</c><00:07:21.800><c> an</c>
+
+00:07:22.120 --> 00:07:22.130 align:start position:0%
+excited to introducing GD 11 an
+ 
+
+00:07:22.130 --> 00:07:27.540 align:start position:0%
+excited to introducing GD 11 an
+experimental<00:07:23.090><c> new</c><00:07:23.690><c> low</c><00:07:24.050><c> latency</c><00:07:24.590><c> G's</c><00:07:24.910><c> jab</c><00:07:26.470><c> 333</c>
+
+00:07:27.540 --> 00:07:27.550 align:start position:0%
+experimental new low latency G's jab 333
+ 
+
+00:07:27.550 --> 00:07:31.750 align:start position:0%
+experimental new low latency G's jab 333
+VG's<00:07:29.020><c> VDC</c><00:07:30.020><c> implement</c><00:07:30.530><c> a</c><00:07:30.770><c> novel</c><00:07:31.310><c> approach</c><00:07:31.430><c> to</c>
+
+00:07:31.750 --> 00:07:31.760 align:start position:0%
+VG's VDC implement a novel approach to
+ 
+
+00:07:31.760 --> 00:07:34.720 align:start position:0%
+VG's VDC implement a novel approach to
+tease<00:07:32.260><c> enabling</c><00:07:33.260><c> for</c><00:07:33.980><c> concurrent</c>
+
+00:07:34.720 --> 00:07:34.730 align:start position:0%
+tease enabling for concurrent
+ 
+
+00:07:34.730 --> 00:07:37.300 align:start position:0%
+tease enabling for concurrent
+collections<00:07:35.390><c> with</c><00:07:36.080><c> smart</c><00:07:36.590><c> with</c><00:07:36.860><c> barriers</c>
+
+00:07:37.300 --> 00:07:37.310 align:start position:0%
+collections with smart with barriers
+ 
+
+00:07:37.310 --> 00:07:40.840 align:start position:0%
+collections with smart with barriers
+that<00:07:38.240><c> will</c><00:07:38.450><c> allow</c><00:07:38.750><c> to</c><00:07:38.810><c> deliver</c><00:07:39.580><c> predictable</c><00:07:40.580><c> a</c>
+
+00:07:40.840 --> 00:07:40.850 align:start position:0%
+that will allow to deliver predictable a
+ 
+
+00:07:40.850 --> 00:07:43.390 align:start position:0%
+that will allow to deliver predictable a
+very<00:07:41.450><c> low</c><00:07:41.630><c> past</c><00:07:41.930><c> time</c><00:07:42.260><c> of</c><00:07:42.560><c> a</c><00:07:42.920><c> few</c><00:07:42.950><c> milliseconds</c>
+
+00:07:43.390 --> 00:07:43.400 align:start position:0%
+very low past time of a few milliseconds
+ 
+
+00:07:43.400 --> 00:07:46.930 align:start position:0%
+very low past time of a few milliseconds
+at<00:07:44.300><c> the</c><00:07:44.540><c> scale</c><00:07:44.930><c> of</c><00:07:44.960><c> a</c><00:07:45.200><c> multi</c><00:07:45.560><c> terabyte</c><00:07:46.010><c> all</c>
+
+00:07:46.930 --> 00:07:46.940 align:start position:0%
+at the scale of a multi terabyte all
+ 
+
+00:07:46.940 --> 00:07:49.750 align:start position:0%
+at the scale of a multi terabyte all
+these<00:07:47.480><c> with</c><00:07:48.230><c> only</c><00:07:48.500><c> a</c><00:07:48.680><c> small</c><00:07:48.950><c> swoop</c><00:07:49.580><c> with</c>
+
+00:07:49.750 --> 00:07:49.760 align:start position:0%
+these with only a small swoop with
+ 
+
+00:07:49.760 --> 00:07:53.770 align:start position:0%
+these with only a small swoop with
+reductions<00:07:50.260><c> less</c><00:07:51.260><c> than</c><00:07:51.470><c> 15</c><00:07:51.860><c> pose</c><00:07:52.780><c> delivering</c>
+
+00:07:53.770 --> 00:07:53.780 align:start position:0%
+reductions less than 15 pose delivering
+ 
+
+00:07:53.780 --> 00:07:56.140 align:start position:0%
+reductions less than 15 pose delivering
+that<00:07:53.990><c> GC</c><00:07:54.470><c> required</c><00:07:55.250><c> us</c><00:07:55.370><c> to</c><00:07:55.400><c> look</c><00:07:55.730><c> at</c><00:07:56.000><c> the</c>
+
+00:07:56.140 --> 00:07:56.150 align:start position:0%
+that GC required us to look at the
+ 
+
+00:07:56.150 --> 00:07:59.650 align:start position:0%
+that GC required us to look at the
+entire<00:07:56.600><c> JVM</c><00:07:57.140><c> Layton's</c><00:07:57.700><c> GC</c><00:07:58.700><c> one</c><00:07:59.210><c> time</c><00:07:59.510><c> in</c>
+
+00:07:59.650 --> 00:07:59.660 align:start position:0%
+entire JVM Layton's GC one time in
+ 
+
+00:07:59.660 --> 00:08:02.800 align:start position:0%
+entire JVM Layton's GC one time in
+compiler<00:08:00.190><c> we</c><00:08:01.190><c> are</c><00:08:01.310><c> very</c><00:08:01.550><c> excited</c><00:08:02.000><c> about</c><00:08:02.390><c> the</c>
+
+00:08:02.800 --> 00:08:02.810 align:start position:0%
+compiler we are very excited about the
+ 
+
+00:08:02.810 --> 00:08:05.800 align:start position:0%
+compiler we are very excited about the
+future<00:08:03.320><c> that</c><00:08:03.380><c> the</c><00:08:03.770><c> GC</c><00:08:04.190><c> will</c><00:08:04.340><c> enable</c><00:08:04.550><c> by</c><00:08:05.360><c> taking</c>
+
+00:08:05.800 --> 00:08:05.810 align:start position:0%
+future that the GC will enable by taking
+ 
+
+00:08:05.810 --> 00:08:08.050 align:start position:0%
+future that the GC will enable by taking
+into<00:08:06.050><c> account</c><00:08:06.220><c> hardware</c><00:08:07.220><c> memory</c><00:08:07.520><c> latency</c>
+
+00:08:08.050 --> 00:08:08.060 align:start position:0%
+into account hardware memory latency
+ 
+
+00:08:08.060 --> 00:08:10.810 align:start position:0%
+into account hardware memory latency
+characteristic<00:08:08.780><c> to</c><00:08:09.350><c> optimize</c><00:08:09.950><c> object</c>
+
+00:08:10.810 --> 00:08:10.820 align:start position:0%
+characteristic to optimize object
+ 
+
+00:08:10.820 --> 00:08:13.140 align:start position:0%
+characteristic to optimize object
+locations<00:08:11.480><c> in</c><00:08:11.900><c> different</c><00:08:12.110><c> regions</c><00:08:12.530><c> of</c>
+
+00:08:13.140 --> 00:08:13.150 align:start position:0%
+locations in different regions of
+ 
+
+00:08:13.150 --> 00:08:15.430 align:start position:0%
+locations in different regions of
+security<00:08:14.150><c> is</c><00:08:14.420><c> an</c><00:08:15.050><c> issue</c>
+
+00:08:15.430 --> 00:08:15.440 align:start position:0%
+security is an issue
+ 
+
+00:08:15.440 --> 00:08:17.620 align:start position:0%
+security is an issue
+essential<00:08:16.070><c> part</c><00:08:16.370><c> in</c><00:08:16.580><c> critical</c><00:08:17.090><c> element</c><00:08:17.510><c> of</c>
+
+00:08:17.620 --> 00:08:17.630 align:start position:0%
+essential part in critical element of
+ 
+
+00:08:17.630 --> 00:08:19.930 align:start position:0%
+essential part in critical element of
+the<00:08:17.780><c> Java</c><00:08:18.020><c> block</c><00:08:18.260><c> we</c><00:08:19.220><c> are</c><00:08:19.340><c> massively</c>
+
+00:08:19.930 --> 00:08:19.940 align:start position:0%
+the Java block we are massively
+ 
+
+00:08:19.940 --> 00:08:22.660 align:start position:0%
+the Java block we are massively
+investing<00:08:20.810><c> in</c><00:08:20.990><c> security</c><00:08:21.620><c> to</c><00:08:22.100><c> keep</c><00:08:22.280><c> the</c><00:08:22.460><c> Java</c>
+
+00:08:22.660 --> 00:08:22.670 align:start position:0%
+investing in security to keep the Java
+ 
+
+00:08:22.670 --> 00:08:26.050 align:start position:0%
+investing in security to keep the Java
+platform<00:08:22.880><c> sick</c><00:08:23.560><c> jab</c><00:08:24.820><c> 332</c>
+
+00:08:26.050 --> 00:08:26.060 align:start position:0%
+platform sick jab 332
+ 
+
+00:08:26.060 --> 00:08:30.550 align:start position:0%
+platform sick jab 332
+is<00:08:26.210><c> implementing</c><00:08:27.050><c> TLS</c><00:08:27.620><c> 1.3</c><00:08:28.420><c> TLS</c><00:08:29.420><c> 1.3</c><00:08:30.110><c> is</c><00:08:30.500><c> a</c>
+
+00:08:30.550 --> 00:08:30.560 align:start position:0%
+is implementing TLS 1.3 TLS 1.3 is a
+ 
+
+00:08:30.560 --> 00:08:33.640 align:start position:0%
+is implementing TLS 1.3 TLS 1.3 is a
+major<00:08:30.950><c> overall</c><00:08:31.520><c> of</c><00:08:31.970><c> the</c><00:08:32.450><c> TLS</c><00:08:32.810><c> protocol</c><00:08:33.110><c> and</c>
+
+00:08:33.640 --> 00:08:33.650 align:start position:0%
+major overall of the TLS protocol and
+ 
+
+00:08:33.650 --> 00:08:36.159 align:start position:0%
+major overall of the TLS protocol and
+provide<00:08:34.450><c> significant</c><00:08:35.450><c> security</c><00:08:35.960><c> and</c>
+
+00:08:36.159 --> 00:08:36.169 align:start position:0%
+provide significant security and
+ 
+
+00:08:36.169 --> 00:08:37.500 align:start position:0%
+provide significant security and
+performance
+
+00:08:37.500 --> 00:08:37.510 align:start position:0%
+performance
+ 
+
+00:08:37.510 --> 00:08:40.690 align:start position:0%
+performance
+Kilis<00:08:38.510><c> wounded</c><00:08:38.540><c> 3</c><00:08:39.280><c> superseded</c><00:08:40.280><c> previous</c>
+
+00:08:40.690 --> 00:08:40.700 align:start position:0%
+Kilis wounded 3 superseded previous
+ 
+
+00:08:40.700 --> 00:08:44.980 align:start position:0%
+Kilis wounded 3 superseded previous
+version<00:08:41.030><c> of</c><00:08:41.120><c> TLS</c><00:08:41.530><c> including</c><00:08:42.530><c> version</c><00:08:43.490><c> 1</c><00:08:43.880><c> that</c>
+
+00:08:44.980 --> 00:08:44.990 align:start position:0%
+version of TLS including version 1 that
+ 
+
+00:08:44.990 --> 00:08:47.260 align:start position:0%
+version of TLS including version 1 that
+we<00:08:45.530><c> are</c><00:08:45.590><c> very</c><00:08:46.130><c> pleased</c><00:08:46.370><c> also</c><00:08:46.820><c> to</c><00:08:46.880><c> follow</c>
+
+00:08:47.260 --> 00:08:47.270 align:start position:0%
+we are very pleased also to follow
+ 
+
+00:08:47.270 --> 00:08:49.450 align:start position:0%
+we are very pleased also to follow
+through<00:08:47.660><c> on</c><00:08:47.900><c> our</c><00:08:48.410><c> commitment</c><00:08:49.160><c> to</c><00:08:49.340><c> an</c><00:08:49.430><c> open</c>
+
+00:08:49.450 --> 00:08:49.460 align:start position:0%
+through on our commitment to an open
+ 
+
+00:08:49.460 --> 00:08:52.570 align:start position:0%
+through on our commitment to an open
+source<00:08:50.390><c> the</c><00:08:50.990><c> java</c><00:08:51.230><c> fly</c><00:08:51.530><c> recorder</c><00:08:52.070><c> commercial</c>
+
+00:08:52.570 --> 00:08:52.580 align:start position:0%
+source the java fly recorder commercial
+ 
+
+00:08:52.580 --> 00:08:55.620 align:start position:0%
+source the java fly recorder commercial
+features<00:08:53.050><c> java</c><00:08:54.050><c> fly</c><00:08:54.470><c> recorder</c><00:08:55.070><c> provides</c>
+
+00:08:55.620 --> 00:08:55.630 align:start position:0%
+features java fly recorder provides
+ 
+
+00:08:55.630 --> 00:08:58.450 align:start position:0%
+features java fly recorder provides
+extremely<00:08:56.630><c> low</c><00:08:56.930><c> average</c><00:08:57.050><c> for</c><00:08:57.920><c> filing</c>
+
+00:08:58.450 --> 00:08:58.460 align:start position:0%
+extremely low average for filing
+ 
+
+00:08:58.460 --> 00:09:02.080 align:start position:0%
+extremely low average for filing
+capabilities<00:08:59.150><c> blaze</c><00:08:59.900><c> and</c><00:09:00.110><c> Windows</c><00:09:00.530><c> of</c><00:09:01.490><c> filing</c>
+
+00:09:02.080 --> 00:09:02.090 align:start position:0%
+capabilities blaze and Windows of filing
+ 
+
+00:09:02.090 --> 00:09:06.070 align:start position:0%
+capabilities blaze and Windows of filing
+bill<00:09:02.330><c> deep</c><00:09:03.020><c> inside</c><00:09:03.830><c> the</c><00:09:03.980><c> JVM</c><00:09:04.430><c> energy</c><00:09:05.080><c> always</c>
+
+00:09:06.070 --> 00:09:06.080 align:start position:0%
+bill deep inside the JVM energy always
+ 
+
+00:09:06.080 --> 00:09:08.170 align:start position:0%
+bill deep inside the JVM energy always
+on<00:09:06.500><c> in</c><00:09:06.650><c> production</c><00:09:07.160><c> deployment</c><00:09:07.700><c> for</c>
+
+00:09:08.170 --> 00:09:08.180 align:start position:0%
+on in production deployment for
+ 
+
+00:09:08.180 --> 00:09:10.480 align:start position:0%
+on in production deployment for
+mission-critical<00:09:08.720><c> Rockler</c><00:09:09.560><c> in</c><00:09:09.860><c> more</c>
+
+00:09:10.480 --> 00:09:10.490 align:start position:0%
+mission-critical Rockler in more
+ 
+
+00:09:10.490 --> 00:09:13.030 align:start position:0%
+mission-critical Rockler in more
+accurate<00:09:11.140><c> allocation</c><00:09:12.140><c> for</c><00:09:12.410><c> fighting</c><00:09:12.860><c> with</c>
+
+00:09:13.030 --> 00:09:13.040 align:start position:0%
+accurate allocation for fighting with
+ 
+
+00:09:13.040 --> 00:09:15.970 align:start position:0%
+accurate allocation for fighting with
+automatic<00:09:13.970><c> memory</c><00:09:14.510><c> leak</c><00:09:14.780><c> detection</c><00:09:15.170><c> the</c>
+
+00:09:15.970 --> 00:09:15.980 align:start position:0%
+automatic memory leak detection the
+ 
+
+00:09:15.980 --> 00:09:18.460 align:start position:0%
+automatic memory leak detection the
+great<00:09:16.220><c> features</c><00:09:16.720><c> there</c><00:09:17.720><c> are</c><00:09:17.870><c> so</c><00:09:18.080><c> many</c><00:09:18.170><c> reasons</c>
+
+00:09:18.460 --> 00:09:18.470 align:start position:0%
+great features there are so many reasons
+ 
+
+00:09:18.470 --> 00:09:21.280 align:start position:0%
+great features there are so many reasons
+why<00:09:19.340><c> you</c><00:09:19.400><c> want</c><00:09:19.910><c> to</c><00:09:20.030><c> upgrade</c><00:09:20.150><c> to</c><00:09:20.480><c> GDP</c><00:09:20.900><c> level</c>
+
+00:09:21.280 --> 00:09:21.290 align:start position:0%
+why you want to upgrade to GDP level
+ 
+
+00:09:21.290 --> 00:09:24.520 align:start position:0%
+why you want to upgrade to GDP level
+especially<00:09:22.010><c> if</c><00:09:22.400><c> you</c><00:09:22.550><c> are</c><00:09:22.640><c> still</c><00:09:22.850><c> on</c><00:09:22.940><c> GD</c><00:09:23.530><c> GD</c>
+
+00:09:24.520 --> 00:09:24.530 align:start position:0%
+especially if you are still on GD GD
+ 
+
+00:09:24.530 --> 00:09:28.150 align:start position:0%
+especially if you are still on GD GD
+cannot<00:09:24.980><c> nine</c><00:09:25.400><c> dedicate</c><00:09:26.300><c> an</c><00:09:26.570><c> energy</c><00:09:27.350><c> TP</c><00:09:27.620><c> 11</c>
+
+00:09:28.150 --> 00:09:28.160 align:start position:0%
+cannot nine dedicate an energy TP 11
+ 
+
+00:09:28.160 --> 00:09:31.000 align:start position:0%
+cannot nine dedicate an energy TP 11
+introduced<00:09:29.230><c> significant</c><00:09:30.230><c> stability</c>
+
+00:09:31.000 --> 00:09:31.010 align:start position:0%
+introduced significant stability
+ 
+
+00:09:31.010 --> 00:09:32.680 align:start position:0%
+introduced significant stability
+functionally<00:09:32.000><c> and</c><00:09:32.150><c> performance</c>
+
+00:09:32.680 --> 00:09:32.690 align:start position:0%
+functionally and performance
+ 
+
+00:09:32.690 --> 00:09:36.190 align:start position:0%
+functionally and performance
+improvements<00:09:33.380><c> compared</c><00:09:34.190><c> to</c><00:09:34.370><c> GDP</c><00:09:34.990><c> to</c><00:09:35.990><c> name</c><00:09:36.170><c> a</c>
+
+00:09:36.190 --> 00:09:36.200 align:start position:0%
+improvements compared to GDP to name a
+ 
+
+00:09:36.200 --> 00:09:36.730 align:start position:0%
+improvements compared to GDP to name a
+few
+
+00:09:36.730 --> 00:09:36.740 align:start position:0%
+few
+ 
+
+00:09:36.740 --> 00:09:39.610 align:start position:0%
+few
+compact<00:09:37.430><c> string</c><00:09:37.730><c> is</c><00:09:38.270><c> reducing</c><00:09:38.840><c> footprint</c><00:09:39.500><c> and</c>
+
+00:09:39.610 --> 00:09:39.620 align:start position:0%
+compact string is reducing footprint and
+ 
+
+00:09:39.620 --> 00:09:43.450 align:start position:0%
+compact string is reducing footprint and
+start<00:09:39.920><c> up</c><00:09:40.490><c> to</c><00:09:40.790><c> 30%</c><00:09:41.240><c> of</c><00:09:41.840><c> reductions</c><00:09:42.500><c> in</c><00:09:42.800><c> 20%</c>
+
+00:09:43.450 --> 00:09:43.460 align:start position:0%
+start up to 30% of reductions in 20%
+ 
+
+00:09:43.460 --> 00:09:47.710 align:start position:0%
+start up to 30% of reductions in 20%
+star<00:09:44.920><c> c2g</c><00:09:45.920><c> compiler</c><00:09:46.370><c> crypto</c><00:09:46.790><c> intrinsic</c><00:09:47.330><c> from</c>
+
+00:09:47.710 --> 00:09:47.720 align:start position:0%
+star c2g compiler crypto intrinsic from
+ 
+
+00:09:47.720 --> 00:09:50.620 align:start position:0%
+star c2g compiler crypto intrinsic from
+Intel<00:09:48.110><c> up</c><00:09:48.590><c> to</c><00:09:48.890><c> 30%</c><00:09:49.370><c> crypto</c><00:09:50.150><c> government</c>
+
+00:09:50.620 --> 00:09:50.630 align:start position:0%
+Intel up to 30% crypto government
+ 
+
+00:09:50.630 --> 00:09:54.550 align:start position:0%
+Intel up to 30% crypto government
+support<00:09:51.340><c> overall</c><00:09:52.340><c> g1</c><00:09:52.880><c> improvement</c><00:09:53.450><c> as</c><00:09:53.690><c> g1</c>
+
+00:09:54.550 --> 00:09:54.560 align:start position:0%
+support overall g1 improvement as g1
+ 
+
+00:09:54.560 --> 00:09:57.660 align:start position:0%
+support overall g1 improvement as g1
+become<00:09:55.040><c> the</c><00:09:55.550><c> default</c><00:09:55.760><c> GC</c><00:09:56.240><c> engine</c><00:09:56.810><c> in</c><00:09:57.080><c> AI</c>
+
+00:09:57.660 --> 00:09:57.670 align:start position:0%
+become the default GC engine in AI
+ 
+
+00:09:57.670 --> 00:10:01.030 align:start position:0%
+become the default GC engine in AI
+application<00:09:58.670><c> class</c><00:09:59.180><c> data</c><00:09:59.450><c> sharing</c><00:09:59.780><c> up</c><00:10:00.140><c> to</c><00:10:00.680><c> 30%</c>
+
+00:10:01.030 --> 00:10:01.040 align:start position:0%
+application class data sharing up to 30%
+ 
+
+00:10:01.040 --> 00:10:04.120 align:start position:0%
+application class data sharing up to 30%
+star<00:10:01.640><c> of</c><00:10:01.760><c> improvement</c><00:10:02.330><c> in</c><00:10:02.510><c> 20%</c><00:10:03.470><c> footprint</c>
+
+00:10:04.120 --> 00:10:04.130 align:start position:0%
+star of improvement in 20% footprint
+ 
+
+00:10:04.130 --> 00:10:06.400 align:start position:0%
+star of improvement in 20% footprint
+reductions<00:10:04.660><c> another</c><00:10:05.660><c> commercial</c><00:10:05.990><c> feature</c>
+
+00:10:06.400 --> 00:10:06.410 align:start position:0%
+reductions another commercial feature
+ 
+
+00:10:06.410 --> 00:10:09.880 align:start position:0%
+reductions another commercial feature
+that<00:10:06.800><c> we</c><00:10:06.950><c> open</c><00:10:07.190><c> source</c><00:10:07.430><c> making</c><00:10:08.150><c> java</c><00:10:08.630><c> mode</c><00:10:08.890><c> we</c>
+
+00:10:09.880 --> 00:10:09.890 align:start position:0%
+that we open source making java mode we
+ 
+
+00:10:09.890 --> 00:10:13.020 align:start position:0%
+that we open source making java mode we
+highly<00:10:10.340><c> recommend</c><00:10:10.430><c> that</c><00:10:11.120><c> your</c><00:10:11.630><c> great</c><00:10:11.930><c> to</c><00:10:12.140><c> GDP</c>
+
+00:10:13.020 --> 00:10:13.030 align:start position:0%
+highly recommend that your great to GDP
+ 
+
+00:10:13.030 --> 00:10:15.220 align:start position:0%
+highly recommend that your great to GDP
+we<00:10:14.030><c> are</c><00:10:14.150><c> very</c><00:10:14.360><c> pleased</c><00:10:14.600><c> to</c><00:10:14.780><c> recently</c>
+
+00:10:15.220 --> 00:10:15.230 align:start position:0%
+we are very pleased to recently
+ 
+
+00:10:15.230 --> 00:10:17.770 align:start position:0%
+we are very pleased to recently
+introduced<00:10:15.440><c> a</c><00:10:15.950><c> new</c><00:10:16.150><c> simplified</c><00:10:17.150><c> an</c>
+
+00:10:17.770 --> 00:10:17.780 align:start position:0%
+introduced a new simplified an
+ 
+
+00:10:17.780 --> 00:10:20.410 align:start position:0%
+introduced a new simplified an
+affordable<00:10:18.650><c> Java</c><00:10:19.100><c> EE</c><00:10:19.400><c> support</c><00:10:19.850><c> subscription</c>
+
+00:10:20.410 --> 00:10:20.420 align:start position:0%
+affordable Java EE support subscription
+ 
+
+00:10:20.420 --> 00:10:22.870 align:start position:0%
+affordable Java EE support subscription
+to<00:10:20.600><c> our</c><00:10:20.660><c> enterprise</c><00:10:21.290><c> customers</c><00:10:21.700><c> the</c><00:10:22.700><c> new</c>
+
+00:10:22.870 --> 00:10:22.880 align:start position:0%
+to our enterprise customers the new
+ 
+
+00:10:22.880 --> 00:10:26.500 align:start position:0%
+to our enterprise customers the new
+pricing<00:10:23.360><c> model</c><00:10:23.390><c> is</c><00:10:24.460><c> $25</c><00:10:25.460><c> cameras</c><00:10:26.240><c> per</c>
+
+00:10:26.500 --> 00:10:26.510 align:start position:0%
+pricing model is $25 cameras per
+ 
+
+00:10:26.510 --> 00:10:30.460 align:start position:0%
+pricing model is $25 cameras per
+processors<00:10:27.080><c> for</c><00:10:27.260><c> servers</c><00:10:28.930><c> $2.50</c><00:10:29.930><c> per</c><00:10:30.050><c> month</c>
+
+00:10:30.460 --> 00:10:30.470 align:start position:0%
+processors for servers $2.50 per month
+ 
+
+00:10:30.470 --> 00:10:33.970 align:start position:0%
+processors for servers $2.50 per month
+per<00:10:30.740><c> user</c><00:10:30.800><c> for</c><00:10:31.160><c> desta</c><00:10:32.500><c> significant</c><00:10:33.500><c> discount</c>
+
+00:10:33.970 --> 00:10:33.980 align:start position:0%
+per user for desta significant discount
+ 
+
+00:10:33.980 --> 00:10:35.680 align:start position:0%
+per user for desta significant discount
+is<00:10:34.100><c> available</c><00:10:34.580><c> for</c><00:10:34.850><c> large</c><00:10:35.030><c> deployments</c><00:10:35.240><c> you</c>
+
+00:10:35.680 --> 00:10:35.690 align:start position:0%
+is available for large deployments you
+ 
+
+00:10:35.690 --> 00:10:38.080 align:start position:0%
+is available for large deployments you
+for<00:10:36.350><c> example</c><00:10:36.800><c> if</c><00:10:37.280><c> you</c><00:10:37.430><c> are</c><00:10:37.460><c> looking</c><00:10:37.520><c> up</c><00:10:37.910><c> to</c>
+
+00:10:38.080 --> 00:10:38.090 align:start position:0%
+for example if you are looking up to
+ 
+
+00:10:38.090 --> 00:10:40.870 align:start position:0%
+for example if you are looking up to
+20,000<00:10:38.870><c> processor</c><00:10:39.260><c> support</c><00:10:39.800><c> if</c><00:10:40.700><c> we</c>
+
+00:10:40.870 --> 00:10:40.880 align:start position:0%
+20,000 processor support if we
+ 
+
+00:10:40.880 --> 00:10:45.130 align:start position:0%
+20,000 processor support if we
+discounted<00:10:41.420><c> at</c><00:10:41.510><c> 50%</c><00:10:42.380><c> of</c><00:10:42.620><c> $12</c><00:10:43.490><c> in</c><00:10:43.730><c> people</c><00:10:44.140><c> we</c>
+
+00:10:45.130 --> 00:10:45.140 align:start position:0%
+discounted at 50% of $12 in people we
+ 
+
+00:10:45.140 --> 00:10:47.230 align:start position:0%
+discounted at 50% of $12 in people we
+are<00:10:45.260><c> ready</c><00:10:45.500><c> making</c><00:10:45.860><c> java</c><00:10:46.310><c> support</c><00:10:46.550><c> affordable</c>
+
+00:10:47.230 --> 00:10:47.240 align:start position:0%
+are ready making java support affordable
+ 
+
+00:10:47.240 --> 00:10:50.680 align:start position:0%
+are ready making java support affordable
+to<00:10:47.780><c> everyone</c><00:10:48.130><c> into</c><00:10:49.130><c> our</c><00:10:49.220><c> customers</c><00:10:49.670><c> you</c><00:10:50.660><c> can</c>
+
+00:10:50.680 --> 00:10:50.690 align:start position:0%
+to everyone into our customers you can
+ 
+
+00:10:50.690 --> 00:10:53.250 align:start position:0%
+to everyone into our customers you can
+find<00:10:51.110><c> more</c><00:10:51.350><c> informations</c><00:10:52.100><c> on</c><00:10:52.520><c> the</c><00:10:52.580><c> provided</c>
+
+00:10:53.250 --> 00:10:53.260 align:start position:0%
+find more informations on the provided
+ 
+
+00:10:53.260 --> 00:10:56.140 align:start position:0%
+find more informations on the provided
+why<00:10:54.260><c> choosing</c><00:10:54.740><c> oracle</c><00:10:55.460><c> for</c><00:10:55.700><c> commercial</c>
+
+00:10:56.140 --> 00:10:56.150 align:start position:0%
+why choosing oracle for commercial
+ 
+
+00:10:56.150 --> 00:10:59.200 align:start position:0%
+why choosing oracle for commercial
+support<00:10:56.890><c> simply</c><00:10:57.890><c> because</c><00:10:58.340><c> you</c><00:10:58.520><c> want</c><00:10:58.700><c> support</c>
+
+00:10:59.200 --> 00:10:59.210 align:start position:0%
+support simply because you want support
+ 
+
+00:10:59.210 --> 00:11:01.420 align:start position:0%
+support simply because you want support
+from<00:10:59.510><c> the</c><00:10:59.720><c> ste</c><00:10:59.990><c> world</c><00:11:00.260><c> of</c><00:11:00.650><c> the</c><00:11:00.980><c> Java</c><00:11:01.190><c> platform</c>
+
+00:11:01.420 --> 00:11:01.430 align:start position:0%
+from the ste world of the Java platform
+ 
+
+00:11:01.430 --> 00:11:03.730 align:start position:0%
+from the ste world of the Java platform
+the<00:11:02.330><c> company</c><00:11:02.840><c> that</c><00:11:03.020><c> is</c><00:11:03.200><c> leading</c><00:11:03.470><c> the</c>
+
+00:11:03.730 --> 00:11:03.740 align:start position:0%
+the company that is leading the
+ 
+
+00:11:03.740 --> 00:11:06.310 align:start position:0%
+the company that is leading the
+development<00:11:04.310><c> of</c><00:11:04.430><c> Java</c><00:11:04.790><c> in</c><00:11:04.880><c> of</c><00:11:05.030><c> NDK</c><00:11:05.570><c> and</c><00:11:05.750><c> as</c><00:11:06.290><c> a</c>
+
+00:11:06.310 --> 00:11:06.320 align:start position:0%
+development of Java in of NDK and as a
+ 
+
+00:11:06.320 --> 00:11:09.460 align:start position:0%
+development of Java in of NDK and as a
+deepest<00:11:06.860><c> expertise</c><00:11:07.550><c> to</c><00:11:08.210><c> address</c><00:11:08.300><c> any</c><00:11:08.840><c> of</c><00:11:09.140><c> you</c>
+
+00:11:09.460 --> 00:11:09.470 align:start position:0%
+deepest expertise to address any of you
+ 
+
+00:11:09.470 --> 00:11:12.070 align:start position:0%
+deepest expertise to address any of you
+mission<00:11:09.890><c> critical</c><00:11:10.370><c> issues</c><00:11:10.760><c> in</c><00:11:11.000><c> all</c><00:11:11.540><c> areas</c><00:11:12.050><c> of</c>
+
+00:11:12.070 --> 00:11:12.080 align:start position:0%
+mission critical issues in all areas of
+ 
+
+00:11:12.080 --> 00:11:15.190 align:start position:0%
+mission critical issues in all areas of
+the<00:11:12.380><c> platform</c><00:11:12.830><c> from</c><00:11:13.430><c> client</c><00:11:14.090><c> security</c><00:11:14.600><c> to</c>
+
+00:11:15.190 --> 00:11:15.200 align:start position:0%
+the platform from client security to
+ 
+
+00:11:15.200 --> 00:11:19.450 align:start position:0%
+the platform from client security to
+library<00:11:15.800><c> GBM</c><00:11:16.700><c> GC</c><00:11:17.570><c> a</c><00:11:17.600><c> runtime</c><00:11:18.200><c> JIT</c><00:11:18.890><c> compiler</c><00:11:19.340><c> of</c>
+
+00:11:19.450 --> 00:11:19.460 align:start position:0%
+library GBM GC a runtime JIT compiler of
+ 
+
+00:11:19.460 --> 00:11:23.140 align:start position:0%
+library GBM GC a runtime JIT compiler of
+serviceability<00:11:20.150><c> in</c><00:11:20.450><c> language</c><00:11:21.130><c> more</c><00:11:22.130><c> than</c><00:11:22.400><c> 90%</c>
+
+00:11:23.140 --> 00:11:23.150 align:start position:0%
+serviceability in language more than 90%
+ 
+
+00:11:23.150 --> 00:11:25.000 align:start position:0%
+serviceability in language more than 90%
+of<00:11:23.690><c> the</c><00:11:23.750><c> development</c><00:11:24.380><c> of</c><00:11:24.470><c> the</c><00:11:24.590><c> Java</c><00:11:24.800><c> platform</c>
+
+00:11:25.000 --> 00:11:25.010 align:start position:0%
+of the development of the Java platform
+ 
+
+00:11:25.010 --> 00:11:28.540 align:start position:0%
+of the development of the Java platform
+is<00:11:25.760><c> done</c><00:11:26.000><c> by</c><00:11:26.240><c> Oracle</c><00:11:26.930><c> engineers</c><00:11:27.380><c> in</c><00:11:27.890><c> open</c><00:11:28.220><c> GDP</c>
+
+00:11:28.540 --> 00:11:28.550 align:start position:0%
+is done by Oracle engineers in open GDP
+ 
+
+00:11:28.550 --> 00:11:30.880 align:start position:0%
+is done by Oracle engineers in open GDP
+you<00:11:29.360><c> will</c><00:11:29.480><c> get</c><00:11:29.630><c> access</c><00:11:29.960><c> to</c><00:11:29.990><c> performance</c>
+
+00:11:30.880 --> 00:11:30.890 align:start position:0%
+you will get access to performance
+ 
+
+00:11:30.890 --> 00:11:33.580 align:start position:0%
+you will get access to performance
+stability<00:11:31.310><c> and</c><00:11:31.820><c> the</c><00:11:32.180><c> update</c><00:11:32.480><c> directly</c><00:11:33.230><c> from</c>
+
+00:11:33.580 --> 00:11:33.590 align:start position:0%
+stability and the update directly from
+ 
+
+00:11:33.590 --> 00:11:34.470 align:start position:0%
+stability and the update directly from
+Oracle
+
+00:11:34.470 --> 00:11:34.480 align:start position:0%
+Oracle
+ 
+
+00:11:34.480 --> 00:11:37.420 align:start position:0%
+Oracle
+beyond<00:11:35.480><c> JDK</c><00:11:35.870><c> demand</c><00:11:36.140><c> support</c><00:11:36.590><c> you</c><00:11:37.160><c> will</c><00:11:37.310><c> also</c>
+
+00:11:37.420 --> 00:11:37.430 align:start position:0%
+beyond JDK demand support you will also
+ 
+
+00:11:37.430 --> 00:11:40.510 align:start position:0%
+beyond JDK demand support you will also
+get<00:11:37.700><c> access</c><00:11:37.880><c> to</c><00:11:38.150><c> GT</c><00:11:39.080><c> key</c><00:11:39.230><c> eight</c><00:11:39.470><c> and</c><00:11:39.800><c> seventy</c>
+
+00:11:40.510 --> 00:11:40.520 align:start position:0%
+get access to GT key eight and seventy
+ 
+
+00:11:40.520 --> 00:11:44.410 align:start position:0%
+get access to GT key eight and seventy
+three<00:11:40.910><c> updates</c><00:11:41.800><c> 24</c><00:11:42.800><c> by</c><00:11:42.950><c> 7</c><00:11:43.310><c> support</c><00:11:43.490><c> and</c><00:11:43.940><c> access</c>
+
+00:11:44.410 --> 00:11:44.420 align:start position:0%
+three updates 24 by 7 support and access
+ 
+
+00:11:44.420 --> 00:11:46.990 align:start position:0%
+three updates 24 by 7 support and access
+to<00:11:44.660><c> critical</c><00:11:45.050><c> bug</c><00:11:45.470><c> fixes</c><00:11:45.890><c> before</c><00:11:46.700><c> they</c><00:11:46.850><c> get</c>
+
+00:11:46.990 --> 00:11:47.000 align:start position:0%
+to critical bug fixes before they get
+ 
+
+00:11:47.000 --> 00:11:49.480 align:start position:0%
+to critical bug fixes before they get
+included<00:11:47.480><c> in</c><00:11:47.570><c> publicly</c><00:11:48.050><c> available</c><00:11:48.230><c> base</c><00:11:48.650><c> all</c>
+
+00:11:49.480 --> 00:11:49.490 align:start position:0%
+included in publicly available base all
+ 
+
+00:11:49.490 --> 00:11:52.930 align:start position:0%
+included in publicly available base all
+these<00:11:50.000><c> with</c><00:11:50.660><c> a</c><00:11:50.810><c> simple</c><00:11:51.470><c> monthly</c><00:11:52.160><c> subscription</c>
+
+00:11:52.930 --> 00:11:52.940 align:start position:0%
+these with a simple monthly subscription
+ 
+
+00:11:52.940 --> 00:11:56.740 align:start position:0%
+these with a simple monthly subscription
+prices<00:11:53.560><c> pay</c><00:11:54.560><c> as</c><00:11:54.710><c> you</c><00:11:54.740><c> use</c><00:11:54.920><c> and</c><00:11:55.430><c> pay</c><00:11:56.060><c> as</c><00:11:56.360><c> your</c>
+
+00:11:56.740 --> 00:11:56.750 align:start position:0%
+prices pay as you use and pay as your
+ 
+
+00:11:56.750 --> 00:12:00.010 align:start position:0%
+prices pay as you use and pay as your
+business<00:11:56.900><c> is</c><00:11:57.110><c> going</c><00:11:57.820><c> in</c><00:11:58.820><c> summary</c><00:11:59.330><c> we</c><00:11:59.990><c> have</c>
+
+00:12:00.010 --> 00:12:00.020 align:start position:0%
+business is going in summary we have
+ 
+
+00:12:00.020 --> 00:12:02.200 align:start position:0%
+business is going in summary we have
+accelerated<00:12:00.680><c> the</c><00:12:00.830><c> pace</c><00:12:01.160><c> of</c><00:12:01.430><c> innovation</c><00:12:01.580><c> for</c>
+
+00:12:02.200 --> 00:12:02.210 align:start position:0%
+accelerated the pace of innovation for
+ 
+
+00:12:02.210 --> 00:12:04.510 align:start position:0%
+accelerated the pace of innovation for
+Java<00:12:02.510><c> with</c><00:12:03.080><c> six</c><00:12:03.380><c> months</c><00:12:03.620><c> with</c><00:12:03.740><c> ease</c><00:12:03.890><c> while</c>
+
+00:12:04.510 --> 00:12:04.520 align:start position:0%
+Java with six months with ease while
+ 
+
+00:12:04.520 --> 00:12:07.030 align:start position:0%
+Java with six months with ease while
+providing<00:12:05.030><c> stability</c><00:12:06.010><c> security</c><00:12:07.010><c> and</c>
+
+00:12:07.030 --> 00:12:07.040 align:start position:0%
+providing stability security and
+ 
+
+00:12:07.040 --> 00:12:10.330 align:start position:0%
+providing stability security and
+commitment<00:12:07.730><c> to</c><00:12:08.330><c> enterprise</c><00:12:08.750><c> users</c><00:12:09.410><c> before</c><00:12:10.100><c> I</c>
+
+00:12:10.330 --> 00:12:10.340 align:start position:0%
+commitment to enterprise users before I
+ 
+
+00:12:10.340 --> 00:12:13.720 align:start position:0%
+commitment to enterprise users before I
+cordially<00:12:10.550><c> key</c><00:12:10.970><c> idea</c><00:12:11.300><c> skills</c><00:12:12.250><c> GDK</c><00:12:13.250><c> 11</c><00:12:13.580><c> is</c>
+
+00:12:13.720 --> 00:12:13.730 align:start position:0%
+cordially key idea skills GDK 11 is
+ 
+
+00:12:13.730 --> 00:12:16.690 align:start position:0%
+cordially key idea skills GDK 11 is
+packed<00:12:14.060><c> with</c><00:12:14.420><c> innovations</c><00:12:15.310><c> security</c><00:12:16.310><c> for</c><00:12:16.610><c> the</c>
+
+00:12:16.690 --> 00:12:16.700 align:start position:0%
+packed with innovations security for the
+ 
+
+00:12:16.700 --> 00:12:19.990 align:start position:0%
+packed with innovations security for the
+DVD<00:12:17.120><c> and</c><00:12:17.270><c> performance</c><00:12:18.370><c> we</c><00:12:19.370><c> have</c><00:12:19.460><c> follow</c><00:12:19.730><c> up</c><00:12:19.880><c> on</c>
+
+00:12:19.990 --> 00:12:20.000 align:start position:0%
+DVD and performance we have follow up on
+ 
+
+00:12:20.000 --> 00:12:22.600 align:start position:0%
+DVD and performance we have follow up on
+our<00:12:20.090><c> commitment</c><00:12:20.780><c> to</c><00:12:21.410><c> open</c><00:12:21.710><c> source</c><00:12:21.920><c> all</c><00:12:22.430><c> our</c>
+
+00:12:22.600 --> 00:12:22.610 align:start position:0%
+our commitment to open source all our
+ 
+
+00:12:22.610 --> 00:12:26.080 align:start position:0%
+our commitment to open source all our
+commercial<00:12:23.150><c> features</c><00:12:23.650><c> gf4</c><00:12:24.730><c> obsidian</c><00:12:25.730><c> and</c>
+
+00:12:26.080 --> 00:12:26.090 align:start position:0%
+commercial features gf4 obsidian and
+ 
+
+00:12:26.090 --> 00:12:29.590 align:start position:0%
+commercial features gf4 obsidian and
+edges<00:12:26.930><c> and</c><00:12:27.410><c> make</c><00:12:28.070><c> java</c><00:12:28.370><c> more</c><00:12:28.790><c> open</c><00:12:29.180><c> and</c><00:12:29.360><c> free</c>
+
+00:12:29.590 --> 00:12:29.600 align:start position:0%
+edges and make java more open and free
+ 
+
+00:12:29.600 --> 00:12:31.390 align:start position:0%
+edges and make java more open and free
+we<00:12:30.320><c> have</c><00:12:30.350><c> simplified</c>
+
+00:12:31.390 --> 00:12:31.400 align:start position:0%
+we have simplified
+ 
+
+00:12:31.400 --> 00:12:33.790 align:start position:0%
+we have simplified
+Java<00:12:32.090><c> licensing</c><00:12:32.780><c> by</c><00:12:32.960><c> transitioning</c><00:12:33.680><c> out</c><00:12:33.770><c> of</c>
+
+00:12:33.790 --> 00:12:33.800 align:start position:0%
+Java licensing by transitioning out of
+ 
+
+00:12:33.800 --> 00:12:36.540 align:start position:0%
+Java licensing by transitioning out of
+the<00:12:33.920><c> BCA</c><00:12:34.340><c> license</c><00:12:34.880><c> and</c><00:12:35.150><c> delivering</c><00:12:35.900><c> now</c><00:12:36.110><c> but</c>
+
+00:12:36.540 --> 00:12:36.550 align:start position:0%
+the BCA license and delivering now but
+ 
+
+00:12:36.550 --> 00:12:39.790 align:start position:0%
+the BCA license and delivering now but
+oracle<00:12:37.550><c> open</c><00:12:37.580><c> GD</c><00:12:38.000><c> key</c><00:12:38.180><c> under</c><00:12:38.900><c> of</c><00:12:38.960><c> the</c><00:12:39.110><c> free</c><00:12:39.380><c> GPL</c>
+
+00:12:39.790 --> 00:12:39.800 align:start position:0%
+oracle open GD key under of the free GPL
+ 
+
+00:12:39.800 --> 00:12:42.880 align:start position:0%
+oracle open GD key under of the free GPL
+license<00:12:40.310><c> and</c><00:12:41.000><c> oracle</c><00:12:41.780><c> GDP</c><00:12:42.200><c> and</c><00:12:42.440><c> their</c>
+
+00:12:42.880 --> 00:12:42.890 align:start position:0%
+license and oracle GDP and their
+ 
+
+00:12:42.890 --> 00:12:44.050 align:start position:0%
+license and oracle GDP and their
+commercial<00:12:43.400><c> license</c><00:12:43.820><c> for</c><00:12:44.030><c> commercial</c>
+
+00:12:44.050 --> 00:12:44.060 align:start position:0%
+commercial license for commercial
+ 
+
+00:12:44.060 --> 00:12:46.960 align:start position:0%
+commercial license for commercial
+support<00:12:44.810><c> yes</c><00:12:45.620><c> we</c><00:12:45.950><c> shall</c><00:12:46.130><c> buy</c><00:12:46.250><c> continues</c><00:12:46.700><c> to</c><00:12:46.880><c> be</c>
+
+00:12:46.960 --> 00:12:46.970 align:start position:0%
+support yes we shall buy continues to be
+ 
+
+00:12:46.970 --> 00:12:49.420 align:start position:0%
+support yes we shall buy continues to be
+free<00:12:47.210><c> we</c><00:12:48.170><c> introduced</c><00:12:48.590><c> a</c><00:12:48.830><c> new</c><00:12:49.040><c> support</c>
+
+00:12:49.420 --> 00:12:49.430 align:start position:0%
+free we introduced a new support
+ 
+
+00:12:49.430 --> 00:12:52.300 align:start position:0%
+free we introduced a new support
+subscriptions<00:12:50.390><c> to</c><00:12:50.960><c> make</c><00:12:51.140><c> Java</c><00:12:51.740><c> long-term</c>
+
+00:12:52.300 --> 00:12:52.310 align:start position:0%
+subscriptions to make Java long-term
+ 
+
+00:12:52.310 --> 00:12:55.050 align:start position:0%
+subscriptions to make Java long-term
+support<00:12:52.790><c> more</c><00:12:53.030><c> affordable</c><00:12:53.630><c> to</c><00:12:53.810><c> everyone</c>
+
+00:12:55.050 --> 00:12:55.060 align:start position:0%
+support more affordable to everyone
+ 
+
+00:12:55.060 --> 00:12:58.110 align:start position:0%
+support more affordable to everyone
+beyond<00:12:55.870><c> Java</c><00:12:56.200><c> 11</c><00:12:56.530><c> we</c><00:12:56.980><c> have</c><00:12:57.010><c> a</c><00:12:57.130><c> very</c><00:12:57.520><c> solid</c><00:12:58.000><c> and</c>
+
+00:12:58.110 --> 00:12:58.120 align:start position:0%
+beyond Java 11 we have a very solid and
+ 
+
+00:12:58.120 --> 00:13:01.050 align:start position:0%
+beyond Java 11 we have a very solid and
+exciting<00:12:58.690><c> technical</c><00:12:59.170><c> one</c><00:12:59.320><c> I</c><00:12:59.820><c> would</c><00:13:00.820><c> like</c><00:13:00.940><c> to</c>
+
+00:13:01.050 --> 00:13:01.060 align:start position:0%
+exciting technical one I would like to
+ 
+
+00:13:01.060 --> 00:13:02.490 align:start position:0%
+exciting technical one I would like to
+take<00:13:01.240><c> this</c><00:13:01.420><c> opportunity</c><00:13:01.570><c> to</c><00:13:02.110><c> especially</c>
+
+00:13:02.490 --> 00:13:02.500 align:start position:0%
+take this opportunity to especially
+ 
+
+00:13:02.500 --> 00:13:06.380 align:start position:0%
+take this opportunity to especially
+thank<00:13:02.740><c> everyone</c><00:13:03.580><c> that</c><00:13:04.000><c> contributed</c><00:13:04.990><c> to</c><00:13:05.050><c> GE</c><00:13:05.410><c> 11</c>
+
+00:13:06.380 --> 00:13:06.390 align:start position:0%
+thank everyone that contributed to GE 11
+ 
+
+00:13:06.390 --> 00:13:09.270 align:start position:0%
+thank everyone that contributed to GE 11
+let's<00:13:07.390><c> continue</c><00:13:07.690><c> to</c><00:13:07.930><c> innovate</c><00:13:08.050><c> in</c><00:13:08.500><c> advance</c><00:13:09.130><c> in</c>
+
+00:13:09.270 --> 00:13:09.280 align:start position:0%
+let's continue to innovate in advance in
+ 
+
+00:13:09.280 --> 00:13:11.850 align:start position:0%
+let's continue to innovate in advance in
+Java<00:13:09.490><c> platform</c><00:13:09.640><c> together</c><00:13:10.740><c> thanks</c><00:13:11.740><c> for</c>
+
+00:13:11.850 --> 00:13:11.860 align:start position:0%
+Java platform together thanks for
+ 
+
+00:13:11.860 --> 00:13:14.160 align:start position:0%
+Java platform together thanks for
+watching
+

@@ -1,0 +1,2364 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.972 --> 00:00:03.791
+SURMA: Maybe we should
+always speak fast.
+
+00:00:03.791 --> 00:00:06.524
+It just sounds like check
+marks are appearing.
+
+00:00:09.488 --> 00:00:13.440
+[MUSIC PLAYING]
+
+00:00:16.590 --> 00:00:20.490
+Welcome back to the 203 2018
+Web Development Feature World
+
+00:00:20.490 --> 00:00:21.590
+Championship.
+
+00:00:21.590 --> 00:00:23.420
+JAKE: Contest 2018.
+
+00:00:23.420 --> 00:00:25.180
+Yes.
+
+00:00:25.180 --> 00:00:25.680
+Yeah.
+
+00:00:25.680 --> 00:00:27.900
+Well, we've been looking
+at web features that
+
+00:00:27.900 --> 00:00:30.600
+have landed in Chrome
+in 2018, because I
+
+00:00:30.600 --> 00:00:33.060
+went on to all of the
+New in Chrome posts
+
+00:00:33.060 --> 00:00:33.995
+and ripped them out.
+
+00:00:33.995 --> 00:00:35.495
+SURMA: Then put them in, right?
+
+00:00:35.495 --> 00:00:36.930
+JAKE: Yes, thank you, Pete.
+
+00:00:36.930 --> 00:00:38.490
+Put them into a chart here.
+
+00:00:38.490 --> 00:00:43.096
+And we whittled 16 of them
+down to one, Scroll Snap.
+
+00:00:43.096 --> 00:00:44.470
+SURMA: That's the
+first finalist.
+
+00:00:44.470 --> 00:00:44.580
+JAKE: Yeah.
+
+00:00:44.580 --> 00:00:45.954
+That was a spoiler
+if you haven't
+
+00:00:45.954 --> 00:00:47.340
+watched the other videos.
+
+00:00:47.340 --> 00:00:48.570
+So there's no point
+watching them now.
+
+00:00:48.570 --> 00:00:49.500
+SURMA: It sucks to be you.
+
+00:00:49.500 --> 00:00:49.650
+JAKE: Yeah.
+
+00:00:49.650 --> 00:00:52.080
+Well, it sucks to be us,
+because we don't get the views.
+
+00:00:52.080 --> 00:00:54.300
+SURMA: It's fair enough.
+
+00:00:54.300 --> 00:00:55.610
+All the way back to the bottom.
+
+00:00:55.610 --> 00:00:56.370
+JAKE: All the way
+back to the bottom.
+
+00:00:56.370 --> 00:00:58.350
+We're going to look
+at some more features.
+
+00:00:58.350 --> 00:01:00.120
+And the first one I
+want to talk about
+
+00:01:00.120 --> 00:01:03.780
+is WebAuth PublicKeyCredential.
+
+00:01:03.780 --> 00:01:04.379
+SURMA: Yes.
+
+00:01:04.379 --> 00:01:05.970
+JAKE: Yes, it is.
+
+00:01:05.970 --> 00:01:08.980
+This is part of the WebAuth API.
+
+00:01:08.980 --> 00:01:09.790
+SURMA: OK.
+
+00:01:09.790 --> 00:01:13.385
+JAKE: The Credential Management
+stuff, which is-- maybe I
+
+00:01:13.385 --> 00:01:15.630
+have not really looked
+at, and I struggled
+
+00:01:15.630 --> 00:01:19.590
+to find like an example of this.
+
+00:01:19.590 --> 00:01:20.580
+I found a demo.
+
+00:01:20.580 --> 00:01:22.570
+I struggled to get
+the code out of it,
+
+00:01:22.570 --> 00:01:25.980
+which is really bad of me.
+
+00:01:25.980 --> 00:01:28.852
+But basically, I can describe
+what the feature's going to do.
+
+00:01:28.852 --> 00:01:30.690
+SURMA: ISUVPAA.
+
+00:01:30.690 --> 00:01:31.880
+JAKE: What's a "zoof"?
+
+00:01:31.880 --> 00:01:33.200
+SURMA: ISUVPAA.
+
+00:01:33.200 --> 00:01:35.200
+JAKE: I have no
+idea what that is.
+
+00:01:35.200 --> 00:01:37.707
+Well, I'm going to press it.
+
+00:01:37.707 --> 00:01:40.290
+SURMA: User verifying platform
+authenticator is not available.
+
+00:01:40.290 --> 00:01:42.040
+JAKE: That's what even
+what that-- oh, OK.
+
+00:01:42.040 --> 00:01:43.470
+So the user verifying platform--
+
+00:01:43.470 --> 00:01:44.430
+SURMA: Authenticator.
+
+00:01:44.430 --> 00:01:45.300
+JAKE: Oh, who knows?
+
+00:01:45.300 --> 00:01:46.890
+That was exciting,
+though, wasn't it?
+
+00:01:46.890 --> 00:01:47.599
+It's a bit of a--
+
+00:01:47.599 --> 00:01:49.390
+SURMA: Is this like
+the nubby things maybe?
+
+00:01:49.390 --> 00:01:49.910
+Integrated.
+
+00:01:49.910 --> 00:01:52.240
+JAKE: No, this is
+the nubby things.
+
+00:01:52.240 --> 00:01:52.950
+SURMA: Oh.
+
+00:01:52.950 --> 00:01:56.350
+JAKE: It's now asking me
+to insert a security key.
+
+00:01:56.350 --> 00:01:58.750
+And it can be a Bluetooth
+one or a USB one.
+
+00:01:58.750 --> 00:02:00.210
+SURMA: Do you have one?
+
+00:02:00.210 --> 00:02:01.680
+JAKE: No.
+
+00:02:01.680 --> 00:02:05.730
+But I tried it earlier, and it
+will give you the key details,
+
+00:02:05.730 --> 00:02:07.530
+like the private files.
+
+00:02:07.530 --> 00:02:08.447
+Not the private files.
+
+00:02:08.447 --> 00:02:09.446
+Don't say private files.
+
+00:02:09.446 --> 00:02:11.220
+SURMA: You don't see
+the private parts.
+
+00:02:11.220 --> 00:02:12.466
+Well, that's good.
+
+00:02:12.466 --> 00:02:13.840
+JAKE: It gives
+you enough details
+
+00:02:13.840 --> 00:02:15.750
+so you can authenticate
+that user later on.
+
+00:02:15.750 --> 00:02:16.249
+SURMA: OK.
+
+00:02:16.249 --> 00:02:17.400
+So basically I can skip--
+
+00:02:17.400 --> 00:02:18.990
+I could allow users
+to skip all kinds
+
+00:02:18.990 --> 00:02:22.110
+of username/password
+thingamajigs and just be like--
+
+00:02:22.110 --> 00:02:22.680
+JAKE: Yes.
+
+00:02:22.680 --> 00:02:23.880
+SURMA: Put in your nubby.
+
+00:02:23.880 --> 00:02:25.350
+JAKE: Put in your nubby.
+
+00:02:25.350 --> 00:02:27.410
+Is that the name
+for those things?
+
+00:02:27.410 --> 00:02:28.285
+Is that a brand name?
+
+00:02:28.285 --> 00:02:29.400
+SURMA: I don't know.
+
+00:02:29.400 --> 00:02:30.510
+JAKE: I don't know.
+
+00:02:30.510 --> 00:02:33.750
+It sounds horrendous.
+
+00:02:33.750 --> 00:02:36.764
+But yes, so you-- and I
+used this with GitHub,
+
+00:02:36.764 --> 00:02:37.680
+being able to use it--
+
+00:02:37.680 --> 00:02:38.820
+SURMA: Oh, that's so convenient.
+
+00:02:38.820 --> 00:02:39.010
+Yeah, I love that.
+
+00:02:39.010 --> 00:02:40.080
+JAKE: The two-factor
+authentication.
+
+00:02:40.080 --> 00:02:40.920
+SURMA: Maybe we don't use that.
+
+00:02:40.920 --> 00:02:41.580
+JAKE: I don't know.
+
+00:02:41.580 --> 00:02:42.360
+SURMA: Because I
+think for now it
+
+00:02:42.360 --> 00:02:44.742
+was pretty much Chrome only
+that had native support
+
+00:02:44.742 --> 00:02:45.450
+for those things.
+
+00:02:45.450 --> 00:02:45.990
+JAKE: Yes.
+
+00:02:45.990 --> 00:02:47.800
+That is true.
+
+00:02:47.800 --> 00:02:51.810
+So yes, that is Public Auth,
+Public Web Key Credential
+
+00:02:51.810 --> 00:02:52.530
+thing.
+
+00:02:52.530 --> 00:02:56.490
+SURMA: Going up against the
+Web PublicKeyCredential thing
+
+00:02:56.490 --> 00:02:58.600
+is ToggleAttribute.
+
+00:02:58.600 --> 00:03:01.770
+Now, this code sample, the code
+that I've written for this,
+
+00:03:01.770 --> 00:03:04.030
+is going to blow you away.
+
+00:03:04.030 --> 00:03:04.530
+JAKE: OK.
+
+00:03:04.530 --> 00:03:05.575
+Here we go.
+
+00:03:05.575 --> 00:03:06.450
+Oh, that's it, is it?
+
+00:03:09.320 --> 00:03:10.120
+Can I guess?
+
+00:03:10.120 --> 00:03:10.620
+SURMA: Yes.
+
+00:03:10.620 --> 00:03:12.117
+Go take a wild guess.
+
+00:03:12.117 --> 00:03:14.200
+JAKE: It's going to toggle
+an attribute, isn't it?
+
+00:03:14.200 --> 00:03:14.810
+SURMA: It is.
+
+00:03:14.810 --> 00:03:15.660
+It's brilliant.
+
+00:03:15.660 --> 00:03:17.797
+JAKE: So OK.
+
+00:03:17.797 --> 00:03:19.630
+SURMA: It's literally
+like classless toggle,
+
+00:03:19.630 --> 00:03:21.010
+but for attributes.
+
+00:03:21.010 --> 00:03:21.730
+JAKE: Right.
+
+00:03:21.730 --> 00:03:23.860
+SURMA: It also has the
+second Boolean parameter
+
+00:03:23.860 --> 00:03:26.130
+if you wanted to like
+toggle like classless does,
+
+00:03:26.130 --> 00:03:28.130
+but most of the time you
+want to toggle a class.
+
+00:03:28.130 --> 00:03:30.213
+JAKE: But this is going
+to be destructive, though,
+
+00:03:30.213 --> 00:03:32.430
+because if I toggle-- because
+it could have a value.
+
+00:03:32.430 --> 00:03:34.265
+It could be hidden
+equals something.
+
+00:03:34.265 --> 00:03:35.431
+SURMA: That's actually true.
+
+00:03:35.431 --> 00:03:37.860
+I didn't check that, if
+you can pass a value.
+
+00:03:37.860 --> 00:03:39.194
+JAKE: No, I don't think you can.
+
+00:03:39.194 --> 00:03:39.859
+SURMA: Yeah, OK.
+
+00:03:39.859 --> 00:03:40.450
+There you go.
+
+00:03:40.450 --> 00:03:40.860
+Cool.
+
+00:03:40.860 --> 00:03:41.526
+JAKE: That's it.
+
+00:03:41.526 --> 00:03:42.040
+OK.
+
+00:03:42.040 --> 00:03:42.540
+OK.
+
+00:03:42.540 --> 00:03:43.859
+So we'll--
+
+00:03:43.859 --> 00:03:45.150
+SURMA: Go back to the brackets.
+
+00:03:45.150 --> 00:03:47.794
+JAKE: Back to the brackets.
+
+00:03:47.794 --> 00:03:49.210
+We've got
+ToggleAttribute versus--
+
+00:03:49.210 --> 00:03:52.085
+now, although I really badly
+sold the PublicKeyCredentials.
+
+00:03:52.085 --> 00:03:54.210
+SURMA: I'm actually very
+excited about the prospect
+
+00:03:54.210 --> 00:03:57.600
+of being able to access
+two-factor authentication
+
+00:03:57.600 --> 00:03:59.469
+tokens through the browser.
+
+00:03:59.469 --> 00:04:01.260
+JAKE: Yeah, it's one
+of those things that--
+
+00:04:01.260 --> 00:04:03.300
+credentials payments
+are the things where
+
+00:04:03.300 --> 00:04:04.800
+native apps are so far ahead.
+
+00:04:04.800 --> 00:04:05.300
+SURMA: Yeah.
+
+00:04:05.300 --> 00:04:06.300
+JAKE: Or were.
+
+00:04:06.300 --> 00:04:08.312
+And so having these
+sort of things.
+
+00:04:08.312 --> 00:04:10.020
+SURMA: If I can at
+some point write a web
+
+00:04:10.020 --> 00:04:11.940
+app where people can
+authenticate with a fingerprint
+
+00:04:11.940 --> 00:04:13.980
+or something, and I
+didn't have to loop them
+
+00:04:13.980 --> 00:04:17.450
+through an authentication
+flow in my back end,
+
+00:04:17.450 --> 00:04:19.339
+but just do it all
+client side, winning.
+
+00:04:19.339 --> 00:04:20.130
+Absolutely winning.
+
+00:04:20.130 --> 00:04:21.120
+JAKE: Brilliant.
+
+00:04:21.120 --> 00:04:22.026
+SURMA: There we go.
+
+00:04:22.026 --> 00:04:22.900
+JAKE: Put it through.
+
+00:04:22.900 --> 00:04:23.610
+OK.
+
+00:04:23.610 --> 00:04:25.980
+Let's look at our next
+couple of features.
+
+00:04:25.980 --> 00:04:28.370
+I would like to talk
+about OffscreenCanvas.
+
+00:04:28.370 --> 00:04:29.490
+SURMA: I know you're
+excited about that one.
+
+00:04:29.490 --> 00:04:30.830
+JAKE: We've already talked
+about this, haven't we?
+
+00:04:30.830 --> 00:04:31.570
+SURMA: A little bit.
+
+00:04:31.570 --> 00:04:33.540
+JAKE: I think we talked
+about it in a podcast.
+
+00:04:33.540 --> 00:04:34.350
+But not--
+
+00:04:34.350 --> 00:04:35.617
+SURMA: Yes, a little bit.
+
+00:04:35.617 --> 00:04:35.820
+JAKE: And we maybe--
+
+00:04:35.820 --> 00:04:37.440
+SURMA: About the Bitmap
+Renderer as well.
+
+00:04:37.440 --> 00:04:38.773
+JAKE: The Bitmap Prerenderer-er.
+
+00:04:38.773 --> 00:04:39.520
+SURMA: Er-er.
+
+00:04:39.520 --> 00:04:40.550
+JAKE: Or whatever it is.
+
+00:04:40.550 --> 00:04:42.450
+OffscreenCanvas, there you go.
+
+00:04:42.450 --> 00:04:44.167
+SURMA: It's like a
+canvas, but offscreen.
+
+00:04:44.167 --> 00:04:45.000
+JAKE: But offscreen.
+
+00:04:45.000 --> 00:04:46.210
+SURMA: And therefore
+available to worker.
+
+00:04:46.210 --> 00:04:47.280
+JAKE: Yeah, exactly.
+
+00:04:47.280 --> 00:04:47.770
+SURMA: That's exciting.
+
+00:04:47.770 --> 00:04:49.080
+JAKE: So if you want to
+do bitmap manipulation
+
+00:04:49.080 --> 00:04:50.830
+in the worker, that's great.
+
+00:04:50.830 --> 00:04:53.730
+You can also proxy
+it so you're doing
+
+00:04:53.730 --> 00:04:56.010
+the computation in the worker.
+
+00:04:56.010 --> 00:04:58.760
+Because this has just
+got regular Canvas now.
+
+00:04:58.760 --> 00:05:00.360
+You know, 2D WebGL.
+
+00:05:00.360 --> 00:05:03.391
+But you can also sort
+of transfer it so the--
+
+00:05:03.391 --> 00:05:04.890
+SURMA: Create it
+on the main thread.
+
+00:05:04.890 --> 00:05:05.940
+Send it over to a worker.
+
+00:05:05.940 --> 00:05:08.148
+And all the paint operation
+the worker does magically
+
+00:05:08.148 --> 00:05:08.815
+appears on the--
+
+00:05:08.815 --> 00:05:09.523
+JAKE: Well, yeah.
+
+00:05:09.523 --> 00:05:10.450
+The other way around.
+
+00:05:10.450 --> 00:05:13.100
+So your main thread,
+basically of your webpage
+
+00:05:13.100 --> 00:05:18.300
+is being updated by the workers,
+which I do think is amazing.
+
+00:05:18.300 --> 00:05:22.769
+SURMA: Going up against this
+is the Focus Management API.
+
+00:05:22.769 --> 00:05:24.060
+Now, this is a very fancy word.
+
+00:05:24.060 --> 00:05:25.980
+It was mentioned
+in one of the New
+
+00:05:25.980 --> 00:05:29.340
+in Chrome blog posts with
+no explanation of what
+
+00:05:29.340 --> 00:05:32.242
+this API is, no code
+sample, no link to the spec.
+
+00:05:32.242 --> 00:05:32.950
+And I googled it.
+
+00:05:32.950 --> 00:05:34.050
+It was very hard to find.
+
+00:05:34.050 --> 00:05:36.630
+It turns out it's
+the focus method.
+
+00:05:36.630 --> 00:05:39.112
+So you might remember
+you can focus an element.
+
+00:05:39.112 --> 00:05:40.570
+JAKE: It's been
+around for a while.
+
+00:05:40.570 --> 00:05:41.445
+SURMA: It's very old.
+
+00:05:41.445 --> 00:05:44.640
+So what's new about this, it
+takes a new options object now,
+
+00:05:44.640 --> 00:05:46.360
+which has exactly one option.
+
+00:05:46.360 --> 00:05:49.500
+And that option
+is preventScroll.
+
+00:05:49.500 --> 00:05:51.977
+So you can focus an element
+without scrolling to it.
+
+00:05:51.977 --> 00:05:54.060
+JAKE: It almost feels like
+calling this the Scroll
+
+00:05:54.060 --> 00:05:55.695
+Management API is a little--
+
+00:05:58.020 --> 00:05:59.520
+SURMA: Someone
+wanted to feel legit.
+
+00:05:59.520 --> 00:06:01.180
+JAKE: That's someone making
+up their own job title
+
+00:06:01.180 --> 00:06:02.810
+of like Master of Development.
+
+00:06:02.810 --> 00:06:04.457
+SURMA: I own the
+Focus Management API.
+
+00:06:04.457 --> 00:06:05.290
+Thank you very much.
+
+00:06:05.290 --> 00:06:05.450
+JAKE: Yeah.
+
+00:06:05.450 --> 00:06:06.270
+SURMA: OK.
+
+00:06:06.270 --> 00:06:08.849
+JAKE: So it's just one
+option, but it is useful.
+
+00:06:08.849 --> 00:06:09.390
+SURMA: Maybe.
+
+00:06:09.390 --> 00:06:10.020
+Yeah, sure.
+
+00:06:10.020 --> 00:06:11.395
+JAKE: If you wanted
+to send focus
+
+00:06:11.395 --> 00:06:13.380
+for accessibility
+reasons, especially,
+
+00:06:13.380 --> 00:06:14.520
+and you didn't want
+it messing around
+
+00:06:14.520 --> 00:06:15.200
+with the scroll position.
+
+00:06:15.200 --> 00:06:16.170
+SURMA: Yeah, I guess.
+
+00:06:16.170 --> 00:06:17.160
+That probably is the use case.
+
+00:06:17.160 --> 00:06:18.451
+That's why it got standardized.
+
+00:06:18.451 --> 00:06:18.972
+I did not--
+
+00:06:18.972 --> 00:06:20.430
+JAKE: There probably
+are use cases.
+
+00:06:20.430 --> 00:06:21.721
+That's why it got standardized.
+
+00:06:21.721 --> 00:06:24.970
+That's a good way
+to think about it.
+
+00:06:24.970 --> 00:06:27.510
+SURMA: I have not
+run into this myself.
+
+00:06:27.510 --> 00:06:29.835
+And it's-- yeah.
+
+00:06:29.835 --> 00:06:31.764
+JAKE: I feel like I
+might have if the default
+
+00:06:31.764 --> 00:06:33.930
+way the browser would scroll
+might still be obscured
+
+00:06:33.930 --> 00:06:36.390
+by a position fixed element.
+
+00:06:36.390 --> 00:06:37.460
+I don't know.
+
+00:06:37.460 --> 00:06:38.010
+Yeah, OK.
+
+00:06:38.010 --> 00:06:38.670
+Yeah, OK.
+
+00:06:38.670 --> 00:06:39.780
+Let's stop talking.
+
+00:06:39.780 --> 00:06:41.710
+SURMA: So putting up
+against each other
+
+00:06:41.710 --> 00:06:43.335
+is OffscreenCanvas
+versus Focus API.
+
+00:06:43.335 --> 00:06:44.210
+It's OffscreenCanvas.
+
+00:06:44.210 --> 00:06:45.190
+JAKE: I'm going to put
+Offscreen Canvas through.
+
+00:06:45.190 --> 00:06:46.898
+SURMA: Yeah, that's
+not a big discussion.
+
+00:06:46.898 --> 00:06:49.350
+JAKE: I mean, just because
+it does so much more.
+
+00:06:49.350 --> 00:06:51.750
+It's something that-- well,
+from a selfish point of view,
+
+00:06:51.750 --> 00:06:53.760
+I've wanted it for ages.
+
+00:06:53.760 --> 00:06:56.010
+Although, there is a
+negative point against it,
+
+00:06:56.010 --> 00:07:00.340
+because we tried to use
+Offscreen Canvas for Squoosh
+
+00:07:00.340 --> 00:07:01.780
+and there's a bug in Chrome.
+
+00:07:01.780 --> 00:07:04.260
+SURMA: Yeah, it
+forces a GPU switch.
+
+00:07:04.260 --> 00:07:07.140
+If you have a laptop with two
+GPUs, an integrated one which
+
+00:07:07.140 --> 00:07:09.090
+is not as powerful,
+but does most
+
+00:07:09.090 --> 00:07:11.640
+of the time, and the discrete
+one for like high power things,
+
+00:07:11.640 --> 00:07:14.560
+for some reason, it forces a
+switch, and that's super janky.
+
+00:07:14.560 --> 00:07:15.060
+JAKE: Yes.
+
+00:07:15.060 --> 00:07:17.059
+SURMA: It's like a 1
+second pause in the system.
+
+00:07:17.059 --> 00:07:19.890
+JAKE: Because I was doing
+some rotation of an image.
+
+00:07:19.890 --> 00:07:23.040
+And it meant with very
+little code in a worker.
+
+00:07:23.040 --> 00:07:25.270
+It wouldn't-- I was actually
+rotating big images,
+
+00:07:25.270 --> 00:07:26.860
+so it was taking
+300 milliseconds,
+
+00:07:26.860 --> 00:07:29.740
+even with the power of
+the GPU and everything.
+
+00:07:29.740 --> 00:07:31.860
+But that 300 milliseconds,
+like moving that
+
+00:07:31.860 --> 00:07:35.370
+off the main thread,
+was just destroyed
+
+00:07:35.370 --> 00:07:38.610
+by the 1 second of
+operating system jank
+
+00:07:38.610 --> 00:07:41.070
+you get with a GPU switch.
+
+00:07:41.070 --> 00:07:41.910
+So that's a shame.
+
+00:07:41.910 --> 00:07:44.160
+SURMA: So as a result of
+OffscreenCanvas winning,
+
+00:07:44.160 --> 00:07:49.170
+we now have to decide WebAuth
+PublicKeyCredential API
+
+00:07:49.170 --> 00:07:50.210
+versus OffscreenCanvas.
+
+00:07:50.210 --> 00:07:51.126
+JAKE: OffscreenCanvas.
+
+00:07:51.126 --> 00:07:53.970
+SURMA: So are we talking
+about the current incarnation
+
+00:07:53.970 --> 00:07:56.850
+of OffscreenCanvas
+or the projected
+
+00:07:56.850 --> 00:07:58.790
+future of OffscreenCanvas?
+
+00:07:58.790 --> 00:08:02.412
+JAKE: Well, so what do you mean
+in terms of-- like with that?
+
+00:08:02.412 --> 00:08:03.495
+SURMA: Do we incorporate--
+
+00:08:03.495 --> 00:08:04.332
+JAKE: The bug fix?
+
+00:08:04.332 --> 00:08:05.540
+SURMA: This bug, for example.
+
+00:08:05.540 --> 00:08:07.581
+JAKE: Let's assume the
+bug is going to get fixed.
+
+00:08:07.581 --> 00:08:11.640
+SURMA: Yeah, because I think
+OffscreenCanvas is massive.
+
+00:08:11.640 --> 00:08:14.280
+Yes, for me, it would
+be OffscreenCanvas.
+
+00:08:14.280 --> 00:08:17.020
+JAKE: I think if we were talking
+about WebAuth as a whole,
+
+00:08:17.020 --> 00:08:20.215
+not just this sort
+of part of WebAuth,
+
+00:08:20.215 --> 00:08:21.840
+I think I'd be putting
+WebAuth through.
+
+00:08:21.840 --> 00:08:23.300
+But I think I'm going to put--
+
+00:08:23.300 --> 00:08:24.340
+SURMA: Yeah, you
+might have a point.
+
+00:08:24.340 --> 00:08:25.140
+JAKE: I'm going to put--
+
+00:08:25.140 --> 00:08:26.430
+I'm going to agree with you
+and go with OffscreenCanvas.
+
+00:08:26.430 --> 00:08:27.570
+SURMA: OffscreenCanvas.
+
+00:08:27.570 --> 00:08:28.236
+JAKE: All right.
+
+00:08:28.236 --> 00:08:30.180
+That goes through to
+the quarterfinals.
+
+00:08:30.180 --> 00:08:32.179
+SURMA: I think the other
+problem is that I don't
+
+00:08:32.179 --> 00:08:33.630
+build apps that have login.
+
+00:08:33.630 --> 00:08:36.046
+Maybe I should change it to
+get some experience with that.
+
+00:08:36.046 --> 00:08:37.205
+JAKE: Ah, you've done quiz.
+
+00:08:37.205 --> 00:08:37.704
+SURMA: True.
+
+00:08:37.704 --> 00:08:39.879
+JAKE: But we used Google.
+
+00:08:39.879 --> 00:08:40.731
+OK.
+
+00:08:40.731 --> 00:08:41.230
+Fine.
+
+00:08:41.230 --> 00:08:41.970
+Fine.
+
+00:08:41.970 --> 00:08:44.790
+Let's look at the
+next set of features.
+
+00:08:44.790 --> 00:08:48.620
+I would like to talk
+to you about Sensors.
+
+00:08:48.620 --> 00:08:49.470
+SURMA: Sensors.
+
+00:08:49.470 --> 00:08:51.090
+JAKE: Sensors.
+
+00:08:51.090 --> 00:08:54.030
+Specifically the
+generic Sensor API.
+
+00:08:54.030 --> 00:08:55.500
+And that is these things.
+
+00:08:55.500 --> 00:08:57.083
+SURMA: Which is like
+an umbrella term.
+
+00:08:57.083 --> 00:08:58.685
+We already had, I
+think, gyroscope,
+
+00:08:58.685 --> 00:09:00.060
+for example, for
+a long time now.
+
+00:09:00.060 --> 00:09:01.940
+JAKE: Yes, it was
+like an event on the--
+
+00:09:01.940 --> 00:09:02.640
+SURMA: Yeah, some weird thing.
+
+00:09:02.640 --> 00:09:04.098
+JAKE: On the document
+or something.
+
+00:09:04.098 --> 00:09:06.540
+And the motion
+changed or something.
+
+00:09:06.540 --> 00:09:08.161
+This brings them all together.
+
+00:09:08.161 --> 00:09:09.660
+SURMA: There's a
+lot of sensors, yo.
+
+00:09:09.660 --> 00:09:10.440
+JAKE: There's a lot of sensors.
+
+00:09:10.440 --> 00:09:12.356
+And these are the ones
+that are in Chrome now.
+
+00:09:12.356 --> 00:09:15.130
+But they all have
+a very similar API
+
+00:09:15.130 --> 00:09:17.400
+in that you get like a
+reading event out of them,
+
+00:09:17.400 --> 00:09:18.990
+and then the properties
+of the object has changed.
+
+00:09:18.990 --> 00:09:19.781
+So you'll get the--
+
+00:09:19.781 --> 00:09:21.780
+SURMA: I think the event
+name really bugs me.
+
+00:09:21.780 --> 00:09:23.120
+JAKE: Reading.
+
+00:09:23.120 --> 00:09:24.210
+Yeah, do you know what?
+
+00:09:24.210 --> 00:09:25.920
+Because when I first
+saw that, I thought
+
+00:09:25.920 --> 00:09:28.549
+that meant it has begun reading.
+
+00:09:28.549 --> 00:09:30.590
+SURMA: Yeah, like a stream
+in there or something.
+
+00:09:30.590 --> 00:09:32.924
+But you probably get an event
+every time there's a new--
+
+00:09:32.924 --> 00:09:33.923
+JAKE: I think it's the--
+
+00:09:33.923 --> 00:09:35.520
+SURMA: Dataset
+available to read.
+
+00:09:35.520 --> 00:09:38.710
+JAKE: I think it's
+not the verb reading.
+
+00:09:38.710 --> 00:09:39.540
+It's the noun.
+
+00:09:39.540 --> 00:09:41.260
+It's a reading.
+
+00:09:41.260 --> 00:09:41.760
+SURMA: Cool.
+
+00:09:41.760 --> 00:09:42.721
+JAKE: Which I would--
+
+00:09:42.721 --> 00:09:44.220
+SURMA: I would think
+it to be like--
+
+00:09:44.220 --> 00:09:45.650
+JAKE: Change events,
+like we have a lot of.
+
+00:09:45.650 --> 00:09:45.900
+SURMA: Yeah.
+
+00:09:45.900 --> 00:09:47.608
+JAKE: I'm sure there
+must be a reason why
+
+00:09:47.608 --> 00:09:48.609
+it's not a change event.
+
+00:09:48.609 --> 00:09:50.524
+And I think it's because
+it's debounced maybe.
+
+00:09:50.524 --> 00:09:51.510
+SURMA: It's there now.
+
+00:09:51.510 --> 00:09:52.340
+It will be.
+
+00:09:52.340 --> 00:09:54.954
+It'll stick around forever.
+
+00:09:54.954 --> 00:09:56.370
+JAKE: So you get
+all these things.
+
+00:09:56.370 --> 00:09:57.430
+SURMA: These are
+actually really useful.
+
+00:09:57.430 --> 00:09:58.350
+So that's kind of cool
+that they're there.
+
+00:09:58.350 --> 00:09:59.940
+JAKE: It's especially
+for like XR, VR.
+
+00:09:59.940 --> 00:10:00.940
+SURMA: All these things.
+
+00:10:00.940 --> 00:10:02.020
+JAKE: All of that sort of stuff.
+
+00:10:02.020 --> 00:10:02.728
+SURMA: All right.
+
+00:10:02.728 --> 00:10:05.300
+Going up against
+the Sensors is--
+
+00:10:05.300 --> 00:10:07.430
+JAKE: I forgot that you
+might want to do one.
+
+00:10:07.430 --> 00:10:08.320
+SURMA: Is BigInt.
+
+00:10:08.320 --> 00:10:09.220
+JAKE: A BigInt.
+
+00:10:09.220 --> 00:10:09.886
+SURMA: A BigInt.
+
+00:10:09.886 --> 00:10:10.600
+JAKE: A BigInt.
+
+00:10:10.600 --> 00:10:11.030
+SURMA: So basically--
+
+00:10:11.030 --> 00:10:11.760
+JAKE: I like BigInts.
+
+00:10:11.760 --> 00:10:12.820
+SURMA: You might have
+seen them before.
+
+00:10:12.820 --> 00:10:13.020
+JAKE: BigInt.
+
+00:10:13.020 --> 00:10:14.110
+SURMA: This is a BigInt.
+
+00:10:14.110 --> 00:10:15.614
+It's a very big integer.
+
+00:10:15.614 --> 00:10:16.780
+JAKE: That is a big integer.
+
+00:10:16.780 --> 00:10:18.940
+SURMA: Yeah, because there's
+a magic n at the end.
+
+00:10:18.940 --> 00:10:23.759
+JAKE: That's bigger than
+numbers I know, like 12 and 89.
+
+00:10:23.759 --> 00:10:25.300
+SURMA: So we've got
+the n at the end.
+
+00:10:25.300 --> 00:10:26.133
+Java comes out null.
+
+00:10:26.133 --> 00:10:28.420
+So this is supposed
+to be an integer,
+
+00:10:28.420 --> 00:10:29.710
+and not just a float number.
+
+00:10:29.710 --> 00:10:32.270
+And it can be arbitrarily big.
+
+00:10:32.270 --> 00:10:32.770
+JAKE: Oh.
+
+00:10:32.770 --> 00:10:35.440
+SURMA: Java will always
+be saving every digit.
+
+00:10:35.440 --> 00:10:37.750
+And you can have
+multiplication and addition
+
+00:10:37.750 --> 00:10:41.315
+and all these things now working
+on arbitrarily large numbers.
+
+00:10:41.315 --> 00:10:41.940
+JAKE: Division?
+
+00:10:44.620 --> 00:10:46.510
+SURMA: There's a module.
+
+00:10:46.510 --> 00:10:48.160
+There's probably
+integer division.
+
+00:10:48.160 --> 00:10:48.970
+I wouldn't--
+
+00:10:48.970 --> 00:10:49.560
+JAKE: Oh, OK.
+
+00:10:49.560 --> 00:10:50.420
+Integer division.
+
+00:10:50.420 --> 00:10:52.240
+[MUMBLING]
+
+00:10:52.240 --> 00:10:52.990
+Integer division.
+
+00:10:52.990 --> 00:10:53.380
+Right.
+
+00:10:53.380 --> 00:10:53.879
+OK.
+
+00:10:53.879 --> 00:10:57.550
+SURMA: Fun side fact, it is
+actually a new primitive type.
+
+00:10:57.550 --> 00:10:58.720
+JAKE: Oh, excellent.
+
+00:10:58.720 --> 00:11:01.100
+Which is we don't
+get those very often.
+
+00:11:01.100 --> 00:11:01.600
+SURMA: No.
+
+00:11:01.600 --> 00:11:02.141
+JAKE: Symbol.
+
+00:11:02.141 --> 00:11:03.910
+SURMA: It's been--
+yeah, we got symbol.
+
+00:11:03.910 --> 00:11:05.493
+It's probably the
+most recent edition.
+
+00:11:05.493 --> 00:11:09.070
+Before it was number,
+object, function, string.
+
+00:11:09.070 --> 00:11:10.321
+JAKE: BigInt.
+
+00:11:10.321 --> 00:11:10.820
+OK.
+
+00:11:10.820 --> 00:11:11.380
+Excellent.
+
+00:11:11.380 --> 00:11:11.920
+Right.
+
+00:11:11.920 --> 00:11:16.690
+So let's talk about them
+two, Sensors, BigInt.
+
+00:11:16.690 --> 00:11:20.620
+Now, these both feel like
+things that not many developers
+
+00:11:20.620 --> 00:11:21.760
+are going to use.
+
+00:11:21.760 --> 00:11:25.725
+SURMA: I have run into
+big integer concerns
+
+00:11:25.725 --> 00:11:27.350
+and chose to ignore
+them, because there
+
+00:11:27.350 --> 00:11:28.860
+was no other way around them.
+
+00:11:28.860 --> 00:11:33.680
+JAKE: Would you use
+BigInt for small ints?
+
+00:11:33.680 --> 00:11:34.180
+Wait.
+
+00:11:34.180 --> 00:11:35.930
+Hear me out.
+
+00:11:35.930 --> 00:11:37.330
+I realize this sounds stupid.
+
+00:11:37.330 --> 00:11:39.860
+But I'm going to try and
+rescue it in the next sentence.
+
+00:11:39.860 --> 00:11:41.900
+Would you use BigInt
+for small ints
+
+00:11:41.900 --> 00:11:44.750
+if you did not want
+floats to happen.
+
+00:11:44.750 --> 00:11:46.325
+Like for instance you--
+
+00:11:46.325 --> 00:11:48.350
+SURMA: To make sure
+it is always integers.
+
+00:11:48.350 --> 00:11:49.320
+JAKE: So I'm thinking
+like if you had--
+
+00:11:49.320 --> 00:11:49.430
+SURMA: Money.
+
+00:11:49.430 --> 00:11:50.055
+JAKE: Currency.
+
+00:11:50.055 --> 00:11:50.890
+SURMA: Yeah.
+
+00:11:50.890 --> 00:11:51.525
+Yeah.
+
+00:11:51.525 --> 00:11:52.359
+Now we're like boom.
+
+00:11:52.359 --> 00:11:54.608
+JAKE: Wouldn't it have been
+better if we said the same
+
+00:11:54.608 --> 00:11:55.550
+thing, but we didn't.
+
+00:11:55.550 --> 00:11:58.420
+We couldn't possibly
+reshoot this and edit it in.
+
+00:11:58.420 --> 00:12:00.410
+Let's leave it at that.
+
+00:12:00.410 --> 00:12:01.730
+SURMA: Maybe, actually.
+
+00:12:01.730 --> 00:12:02.450
+Maybe.
+
+00:12:02.450 --> 00:12:04.070
+But also, I often--
+
+00:12:04.070 --> 00:12:06.830
+whenever you like
+talk about certain--
+
+00:12:06.830 --> 00:12:10.454
+I wonder if these work in JSON,
+actually, if you send them down
+
+00:12:10.454 --> 00:12:11.120
+from the server.
+
+00:12:11.120 --> 00:12:12.980
+If JSON parse will
+actually understand them.
+
+00:12:12.980 --> 00:12:13.550
+JAKE: Nope!
+
+00:12:13.550 --> 00:12:14.383
+SURMA: Probably not.
+
+00:12:14.383 --> 00:12:15.500
+JAKE: The answer is no.
+
+00:12:15.500 --> 00:12:17.570
+That much I know.
+
+00:12:17.570 --> 00:12:19.610
+SURMA: But there's
+oftentimes when I just
+
+00:12:19.610 --> 00:12:23.270
+don't want to worry about
+if I'm going to overflow.
+
+00:12:23.270 --> 00:12:24.980
+Whenever I build
+certain libraries,
+
+00:12:24.980 --> 00:12:28.810
+generating random UUIDs instead
+of like distributing integers
+
+00:12:28.810 --> 00:12:30.560
+across an array and
+then doing operations,
+
+00:12:30.560 --> 00:12:33.710
+I could just build one UUID
+and then just slice it up.
+
+00:12:33.710 --> 00:12:37.970
+There are many use cases where
+I see them as being useful.
+
+00:12:37.970 --> 00:12:40.790
+Sensors are more niche
+to me than BigInts.
+
+00:12:40.790 --> 00:12:41.790
+JAKE: Yeah, that's fine.
+
+00:12:41.790 --> 00:12:44.165
+SURMA: I'm going to admit that
+still BigInts are probably
+
+00:12:44.165 --> 00:12:45.124
+kind of niche and not--
+
+00:12:45.124 --> 00:12:46.081
+JAKE: That's the thing.
+
+00:12:46.081 --> 00:12:47.330
+These are both really niche.
+
+00:12:47.330 --> 00:12:48.080
+SURMA: Not really.
+
+00:12:48.080 --> 00:12:51.625
+I think Sensors are more
+niche, except in XR land.
+
+00:12:51.625 --> 00:12:52.250
+JAKE: Yeah, OK.
+
+00:12:52.250 --> 00:12:53.320
+Yeah, OK.
+
+00:12:53.320 --> 00:12:54.000
+Yeah.
+
+00:12:54.000 --> 00:12:54.680
+Yeah, OK.
+
+00:12:54.680 --> 00:12:55.696
+Yeah, OK.
+
+00:12:55.696 --> 00:12:57.320
+Mostly because I
+can't make a decision,
+
+00:12:57.320 --> 00:13:00.750
+I'm going to let you
+make the decision.
+
+00:13:00.750 --> 00:13:02.840
+BigInt goes through
+to the next round.
+
+00:13:02.840 --> 00:13:04.460
+Excellent.
+
+00:13:04.460 --> 00:13:06.617
+Next up, here we go.
+
+00:13:06.617 --> 00:13:07.700
+This is the Lifecycle API.
+
+00:13:07.700 --> 00:13:09.033
+We did a big episode about this.
+
+00:13:09.033 --> 00:13:11.070
+SURMA: We did a big
+episode on this one.
+
+00:13:11.070 --> 00:13:13.403
+JAKE: I don't even know how
+much we talk about it again.
+
+00:13:13.403 --> 00:13:14.100
+But it's this.
+
+00:13:14.100 --> 00:13:15.740
+SURMA: It's the first time we've
+shown code about it, I think.
+
+00:13:15.740 --> 00:13:17.531
+JAKE: Yeah, I think
+you're right, actually.
+
+00:13:17.531 --> 00:13:18.637
+It was a podcast one.
+
+00:13:18.637 --> 00:13:20.220
+SURMA: In a way,
+it's just new events,
+
+00:13:20.220 --> 00:13:21.304
+but they're really useful.
+
+00:13:21.304 --> 00:13:21.803
+JAKE: Yes!
+
+00:13:21.803 --> 00:13:23.630
+It takes stuff that
+mobile browsers already
+
+00:13:23.630 --> 00:13:27.830
+do, discarding tabs,
+because to save memory.
+
+00:13:27.830 --> 00:13:29.630
+It kind of wraps
+a spec around it.
+
+00:13:29.630 --> 00:13:32.130
+It also introduces this idea
+that page will be frozen,
+
+00:13:32.130 --> 00:13:33.879
+which means that it's
+not running anymore,
+
+00:13:33.879 --> 00:13:36.890
+but the memory for it still
+exists, so it can be resumed.
+
+00:13:36.890 --> 00:13:39.500
+So this is if it is discarded,
+as in it's taken out of memory,
+
+00:13:39.500 --> 00:13:41.750
+and the user revisits the
+tab, the page is essentially
+
+00:13:41.750 --> 00:13:43.722
+reloaded, but you
+can detect that.
+
+00:13:43.722 --> 00:13:45.680
+SURMA: It's something
+that all native platforms
+
+00:13:45.680 --> 00:13:48.160
+have from literally version 1.
+
+00:13:48.160 --> 00:13:49.640
+Lifecycles are the
+first thing they
+
+00:13:49.640 --> 00:13:52.386
+build to recycle views to
+figure out where they go.
+
+00:13:52.386 --> 00:13:53.510
+And the web didn't have it.
+
+00:13:53.510 --> 00:13:54.176
+And now it does.
+
+00:13:54.176 --> 00:13:56.480
+So it's a massive step in
+actually building something
+
+00:13:56.480 --> 00:13:58.719
+that behaves more like an
+app and how you expect it.
+
+00:13:58.719 --> 00:14:00.260
+JAKE: You sold it
+better than I have.
+
+00:14:00.260 --> 00:14:01.926
+Let's see how you do
+on one of your own.
+
+00:14:01.926 --> 00:14:02.935
+SURMA: What do I have?
+
+00:14:02.935 --> 00:14:03.560
+Server-Timings.
+
+00:14:03.560 --> 00:14:04.680
+I didn't know about
+this, and I actually
+
+00:14:04.680 --> 00:14:06.090
+found it quite interesting.
+
+00:14:06.090 --> 00:14:08.450
+So Server-Timings
+in and of themselves
+
+00:14:08.450 --> 00:14:10.580
+are literally just a new header.
+
+00:14:10.580 --> 00:14:13.850
+So it allows you to
+put a word in there,
+
+00:14:13.850 --> 00:14:16.710
+and say like this request
+missed the cache, for example.
+
+00:14:16.710 --> 00:14:21.200
+You can have multiple
+Server-Timings in a header.
+
+00:14:21.200 --> 00:14:24.380
+For example, this request
+took 2.4 milliseconds
+
+00:14:24.380 --> 00:14:26.190
+to be processed.
+
+00:14:26.190 --> 00:14:27.730
+JAKE: Of CPU time?
+
+00:14:27.730 --> 00:14:29.166
+SURMA: This is
+just random names.
+
+00:14:29.166 --> 00:14:30.540
+You can give them
+your own names.
+
+00:14:30.540 --> 00:14:30.560
+JAKE: Oh!
+
+00:14:30.560 --> 00:14:32.893
+SURMA: These are just names
+for these different timings.
+
+00:14:32.893 --> 00:14:35.860
+So I said, this one has a flag
+set to true called missedCache.
+
+00:14:35.860 --> 00:14:37.774
+The CPU Server-Timing
+is set to 2.4.
+
+00:14:37.774 --> 00:14:38.440
+JAKE: Oh, I see.
+
+00:14:38.440 --> 00:14:38.940
+I see.
+
+00:14:38.940 --> 00:14:41.355
+SURMA: If I wanted to, I
+can even add a description.
+
+00:14:41.355 --> 00:14:43.730
+And these are sent along with
+a response from the server.
+
+00:14:43.730 --> 00:14:47.420
+So you can send your
+Server-Timings to the client.
+
+00:14:47.420 --> 00:14:48.920
+And over there,
+you basically use
+
+00:14:48.920 --> 00:14:52.250
+the performance.getEntriesBy
+resource array,
+
+00:14:52.250 --> 00:14:54.620
+which are used for the
+requests on your page.
+
+00:14:54.620 --> 00:14:55.590
+You can now inspect.
+
+00:14:55.590 --> 00:14:57.770
+And in there, you have--
+
+00:14:57.770 --> 00:14:59.780
+every entry is a
+resource, and each entry
+
+00:14:59.780 --> 00:15:01.940
+has an array of Server-Timings.
+
+00:15:01.940 --> 00:15:04.220
+And so in there, you have
+the missedCache flag.
+
+00:15:04.220 --> 00:15:06.080
+You have the CPU thing
+that I set up there.
+
+00:15:06.080 --> 00:15:07.460
+JAKE: What would you
+do with this data?
+
+00:15:07.460 --> 00:15:10.220
+SURMA: Probably send it to your
+analytics to tie it to a user,
+
+00:15:10.220 --> 00:15:14.090
+and be like, oh, a user on
+this device had problems,
+
+00:15:14.090 --> 00:15:15.510
+but the server was already slow.
+
+00:15:15.510 --> 00:15:18.460
+And maybe correlate
+certain features.
+
+00:15:18.460 --> 00:15:19.460
+It's mostly analytics.
+
+00:15:19.460 --> 00:15:22.490
+JAKE: Your server sends
+these things to the client.
+
+00:15:22.490 --> 00:15:22.990
+SURMA: Yeah.
+
+00:15:22.990 --> 00:15:25.100
+JAKE: So the client can
+send it to the server.
+
+00:15:25.100 --> 00:15:25.790
+SURMA: Well, the problem--
+
+00:15:25.790 --> 00:15:26.914
+yes, it sounds a bit weird.
+
+00:15:26.914 --> 00:15:30.050
+But the problem is that often
+when you have load balancers,
+
+00:15:30.050 --> 00:15:32.711
+they make a decision based on,
+for example, the user agent.
+
+00:15:32.711 --> 00:15:33.210
+JAKE: Right.
+
+00:15:33.210 --> 00:15:35.480
+SURMA: So these timings
+might differ depending
+
+00:15:35.480 --> 00:15:36.680
+on what the client is.
+
+00:15:36.680 --> 00:15:39.050
+So you want to tie these
+measurements to the client,
+
+00:15:39.050 --> 00:15:43.144
+and ideally, to get timing that
+might emit more measurements
+
+00:15:43.144 --> 00:15:44.310
+on the client side later on.
+
+00:15:44.310 --> 00:15:44.810
+JAKE: Right.
+
+00:15:44.810 --> 00:15:46.730
+Of course, because you
+could take the client
+
+00:15:46.730 --> 00:15:48.940
+processing performance
+stuff as well
+
+00:15:48.940 --> 00:15:51.170
+and tie that into one big
+analytic that you send.
+
+00:15:51.170 --> 00:15:53.900
+SURMA: Maybe one user has
+an extraordinary large music
+
+00:15:53.900 --> 00:15:56.160
+collection, and so all the
+clients have become slow,
+
+00:15:56.160 --> 00:15:59.090
+but there's no way to tie these
+two timings together until now.
+
+00:15:59.090 --> 00:16:00.680
+JAKE: Until now.
+
+00:16:00.680 --> 00:16:01.280
+Fair enough.
+
+00:16:01.280 --> 00:16:01.910
+Fair enough.
+
+00:16:01.910 --> 00:16:02.420
+OK.
+
+00:16:02.420 --> 00:16:05.810
+Let's discuss these ones then.
+
+00:16:05.810 --> 00:16:08.030
+SURMA: Still an
+easy one, I think.
+
+00:16:08.030 --> 00:16:09.170
+JAKE: Oh, OK.
+
+00:16:09.170 --> 00:16:11.201
+I was going to say Lifecycle.
+
+00:16:11.201 --> 00:16:11.700
+SURMA: Yeah.
+
+00:16:11.700 --> 00:16:12.140
+JAKE: Oh, OK.
+
+00:16:12.140 --> 00:16:12.445
+OK.
+
+00:16:12.445 --> 00:16:12.945
+That's good.
+
+00:16:12.945 --> 00:16:14.000
+SURMA: I think--
+
+00:16:14.000 --> 00:16:16.010
+I know there's many
+data-driven people out there
+
+00:16:16.010 --> 00:16:17.870
+who get super excited
+about collecting more data.
+
+00:16:17.870 --> 00:16:19.161
+JAKE: And I'm excited for them.
+
+00:16:19.161 --> 00:16:21.330
+SURMA: And statistics
+are great and everything.
+
+00:16:21.330 --> 00:16:24.909
+But for me as a developer,
+Lifecycle is just a big hitter.
+
+00:16:24.909 --> 00:16:25.450
+JAKE: Agreed.
+
+00:16:25.450 --> 00:16:27.200
+I am excited about the
+sort of stuff we'll
+
+00:16:27.200 --> 00:16:28.520
+learn from Server-Timings.
+
+00:16:28.520 --> 00:16:30.950
+I'm excited that hopefully
+things like Google Analytics
+
+00:16:30.950 --> 00:16:33.670
+will make that not something
+I have to implement.
+
+00:16:33.670 --> 00:16:34.170
+SURMA: True.
+
+00:16:34.170 --> 00:16:35.169
+JAKE: It'll just happen.
+
+00:16:35.169 --> 00:16:36.382
+SURMA: Actually true, yeah.
+
+00:16:36.382 --> 00:16:38.840
+JAKE: Although, I guess, maybe
+if some of the server stuff,
+
+00:16:38.840 --> 00:16:39.620
+I would have to do that.
+
+00:16:39.620 --> 00:16:40.703
+But that's not a big deal.
+
+00:16:40.703 --> 00:16:42.470
+But yet, Lifecycle,
+for me, it just
+
+00:16:42.470 --> 00:16:45.740
+explains some platform
+things, which have
+
+00:16:45.740 --> 00:16:47.761
+been under spec for so long.
+
+00:16:47.761 --> 00:16:48.260
+SURMA: Yeah.
+
+00:16:48.260 --> 00:16:52.130
+JAKE: And to finally
+have them is a big deal.
+
+00:16:52.130 --> 00:16:54.890
+And now we need to figure out--
+
+00:16:54.890 --> 00:16:55.780
+SURMA: BigInt
+
+00:16:55.780 --> 00:16:57.187
+JAKE: Versus Lifecycle API.
+
+00:16:57.187 --> 00:16:58.520
+I'm going to go Lifecycle there.
+
+00:16:58.520 --> 00:16:59.390
+SURMA: Yeah, I agree.
+
+00:16:59.390 --> 00:17:00.260
+It's not a big
+discussion for me.
+
+00:17:00.260 --> 00:17:02.090
+BigInt is great, and I
+love that we have it,
+
+00:17:02.090 --> 00:17:03.798
+because all the
+libraries were super big.
+
+00:17:03.798 --> 00:17:07.819
+But again, it's niche,
+while Lifecycle is literally
+
+00:17:07.819 --> 00:17:09.200
+every app.
+
+00:17:09.200 --> 00:17:12.156
+Literally every app will
+probably touch this API
+
+00:17:12.156 --> 00:17:13.280
+if you want to do it right.
+
+00:17:13.280 --> 00:17:14.089
+JAKE: And to be able to--
+
+00:17:14.089 --> 00:17:16.400
+especially on mobile to be
+able to go back to a tab
+
+00:17:16.400 --> 00:17:18.316
+and have a way to--
+
+00:17:18.316 --> 00:17:19.940
+even though the page
+is closed, reload.
+
+00:17:19.940 --> 00:17:20.670
+SURMA: Restore the state.
+
+00:17:20.670 --> 00:17:22.130
+JAKE: It restores the state.
+
+00:17:22.130 --> 00:17:23.589
+Yeah, absolutely.
+
+00:17:23.589 --> 00:17:26.109
+And this means we get to
+decide our next semifinalist.
+
+00:17:26.109 --> 00:17:28.420
+SURMA: Now, that's rough.
+
+00:17:28.420 --> 00:17:30.007
+JAKE: This is a tough one.
+
+00:17:30.007 --> 00:17:30.840
+This is a tough one.
+
+00:17:30.840 --> 00:17:32.810
+OffscreenCanvas
+versus Lifecycle API.
+
+00:17:32.810 --> 00:17:34.940
+SURMA: I know,
+politically, in terms
+
+00:17:34.940 --> 00:17:37.850
+of the overarching-- the
+story arc of the web.
+
+00:17:37.850 --> 00:17:39.050
+JAKE: Yeah.
+
+00:17:39.050 --> 00:17:40.700
+SURMA: It would be Lifecycle.
+
+00:17:40.700 --> 00:17:43.650
+For me, personally, the
+things that I do on the web,
+
+00:17:43.650 --> 00:17:44.890
+it would be OffscreenCanvas.
+
+00:17:44.890 --> 00:17:45.390
+JAKE: OK.
+
+00:17:45.390 --> 00:17:48.457
+So the Squoosh use case,
+which was like doing things
+
+00:17:48.457 --> 00:17:49.040
+like rotation.
+
+00:17:49.040 --> 00:17:50.270
+SURMA: I think you built
+an image compressor.
+
+00:17:50.270 --> 00:17:50.955
+JAKE: We did.
+
+00:17:50.955 --> 00:17:52.610
+We finally built an
+image compressor.
+
+00:17:52.610 --> 00:17:54.680
+But doing things like
+rotation, resize, and that
+
+00:17:54.680 --> 00:17:56.647
+without experiencing
+Main Thread stuff.
+
+00:17:56.647 --> 00:17:57.980
+SURMA: Generating a new favicon.
+
+00:17:57.980 --> 00:18:00.170
+All these little things
+that you often want to do.
+
+00:18:00.170 --> 00:18:00.670
+JAKE: Yes.
+
+00:18:00.670 --> 00:18:01.820
+And that's-- yeah.
+
+00:18:01.820 --> 00:18:04.910
+If you're generating a
+notification icon in a service
+
+00:18:04.910 --> 00:18:07.370
+worker, like here's
+the two people
+
+00:18:07.370 --> 00:18:08.920
+that are part of this chat.
+
+00:18:08.920 --> 00:18:10.400
+Generate the icon for that.
+
+00:18:10.400 --> 00:18:11.240
+I'd like that.
+
+00:18:11.240 --> 00:18:13.290
+I worry it's niche, but then--
+
+00:18:13.290 --> 00:18:14.240
+so here's the thing.
+
+00:18:14.240 --> 00:18:15.800
+Lifecycle shouldn't be niche.
+
+00:18:15.800 --> 00:18:17.240
+Everyone should be doing it.
+
+00:18:17.240 --> 00:18:17.380
+SURMA: Yeah.
+
+00:18:17.380 --> 00:18:19.040
+JAKE: Because everyone
+should enable their tab
+
+00:18:19.040 --> 00:18:21.123
+to come back to life in the
+same state that it was before.
+
+00:18:21.123 --> 00:18:23.456
+SURMA: And that actually
+requires a big mentality shift,
+
+00:18:23.456 --> 00:18:25.520
+because right now nobody
+writes apps in this way.
+
+00:18:25.520 --> 00:18:27.270
+JAKE: Although, if you
+do it with the URL,
+
+00:18:27.270 --> 00:18:29.510
+if all of your state is
+in the URL, you're fine.
+
+00:18:29.510 --> 00:18:30.160
+SURMA: I guess.
+
+00:18:30.160 --> 00:18:32.150
+But in a lot of
+apps, that's hard.
+
+00:18:32.150 --> 00:18:35.410
+If you think about just
+a simple to-do list,
+
+00:18:35.410 --> 00:18:38.330
+you're in the process of writing
+a to-do, you switch tabs,
+
+00:18:38.330 --> 00:18:40.220
+it gets frozen or discarded.
+
+00:18:40.220 --> 00:18:43.400
+Nobody persists that
+half-written to-do
+
+00:18:43.400 --> 00:18:44.930
+to the URL bar.
+
+00:18:44.930 --> 00:18:45.790
+JAKE: That's true.
+
+00:18:45.790 --> 00:18:46.880
+SURMA: You want to
+go back and still
+
+00:18:46.880 --> 00:18:48.380
+have your half-written
+to-do list there.
+
+00:18:48.380 --> 00:18:48.880
+JAKE: Yeah.
+
+00:18:48.880 --> 00:18:51.770
+And it will rely on something,
+checking IDB and page
+
+00:18:51.770 --> 00:18:55.697
+load, which I know GitHub
+does a good job of.
+
+00:18:55.697 --> 00:18:57.530
+SURMA: So if requires
+a big mentality shift.
+
+00:18:57.530 --> 00:19:01.370
+But so does moving work to a
+worker, as I have found out.
+
+00:19:01.370 --> 00:19:03.825
+It's very hard to get
+developers in that mindset.
+
+00:19:03.825 --> 00:19:04.910
+So I think both of them--
+
+00:19:04.910 --> 00:19:06.030
+JAKE: I've got this pain.
+
+00:19:06.030 --> 00:19:06.330
+SURMA: It is.
+
+00:19:06.330 --> 00:19:07.210
+I'm working on it.
+
+00:19:07.210 --> 00:19:07.400
+JAKE: It's painful.
+
+00:19:07.400 --> 00:19:08.540
+SURMA: I'm working on it.
+
+00:19:08.540 --> 00:19:09.600
+I'm going to say--
+
+00:19:09.600 --> 00:19:12.190
+I think we agree that
+Lifecycle is probably,
+
+00:19:12.190 --> 00:19:15.512
+overarching, the more
+important problem to solve.
+
+00:19:15.512 --> 00:19:16.470
+JAKE: Let's go with it.
+
+00:19:16.470 --> 00:19:18.260
+I'm definitely willing
+to go with that.
+
+00:19:18.260 --> 00:19:20.270
+SURMA: Now we have
+Lifecycle API is
+
+00:19:20.270 --> 00:19:22.450
+our first second semifinalist.
+
+00:19:22.450 --> 00:19:24.260
+JAKE: Our first
+second semifinalist.
+
+00:19:24.260 --> 00:19:24.790
+Exactly.
+
+00:19:24.790 --> 00:19:26.449
+That makes sense.
+
+00:19:26.449 --> 00:19:28.865
+So yeah, we're going to leave
+that there for this episode.
+
+00:19:28.865 --> 00:19:32.600
+SURMA: We're going to find our
+second second semifinalist in--
+
+00:19:32.600 --> 00:19:33.230
+JAKE: And our--
+
+00:19:33.230 --> 00:19:34.480
+SURMA: And our winner, actually.
+
+00:19:34.480 --> 00:19:35.010
+JAKE: Yes!
+
+00:19:35.010 --> 00:19:36.676
+We're going to find
+our second finalist.
+
+00:19:36.676 --> 00:19:39.030
+And while we're there, we
+may as well do the winner.
+
+00:19:39.030 --> 00:19:40.280
+SURMA: I'm not ready for that.
+
+00:19:42.615 --> 00:19:44.240
+JAKE: Oh, you want
+to say that as well?
+
+00:19:44.240 --> 00:19:44.550
+SURMA: I don't know.
+
+00:19:44.550 --> 00:19:45.049
+Maybe.
+
+00:19:47.790 --> 00:19:50.360
+JAKE: Nothing's
+going to be linear.
+
+00:19:50.360 --> 00:19:52.370
+We've really messed this one up.
+
+00:19:52.370 --> 00:19:54.940
+We're going to get
+it right from now on.
+

@@ -1,0 +1,252 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.879 --> 00:00:07.759
+IntelliJ IDEA has powerful refactoring capabilities.
+
+00:00:07.759 --> 00:00:14.340
+In this screencast, we'll cover why, when
+and how to apply the Inline Method refactoring
+
+00:00:14.340 --> 00:00:18.270
+and how IntelliJ IDEA can help you get started.
+
+00:00:18.270 --> 00:00:21.869
+The idea of Inline Refactoring is simple.
+
+00:00:21.869 --> 00:00:25.419
+Just replace a method call with its contents.
+
+00:00:25.419 --> 00:00:31.239
+In IntelliJ IDEA, you can either select a
+method name or place your cursor at the start/
+
+00:00:31.239 --> 00:00:33.900
+end/ middle of a method name.
+
+00:00:33.900 --> 00:00:36.870
+Use the 'Inline Method' from the menu.
+
+00:00:36.870 --> 00:00:44.160
+Or you can also use the shortcut Alt+Ctrl+N
+on Windows/ Linux and Option+Command+N on
+
+00:00:44.160 --> 00:00:45.930
+macOS.
+
+00:00:45.930 --> 00:00:51.640
+IntelliJ IDEA gives you the option of deleting
+or keeping the method, after you inline its
+
+00:00:51.640 --> 00:00:52.640
+contents.
+
+00:00:52.640 --> 00:00:55.800
+For this example, we'll delete the method.
+
+00:00:55.800 --> 00:00:58.290
+But why would you want to inline your methods?
+
+00:00:58.290 --> 00:01:00.850
+Let's work with a few use use cases.
+
+00:01:00.850 --> 00:01:07.570
+When a method call disrupts the flow in your
+code rather than simplifying it, you can consider
+
+00:01:07.570 --> 00:01:11.210
+applying Inline Method.
+
+00:01:11.210 --> 00:01:18.909
+In this code, call to the method compareRatingWithMethodParameter()
+is inserting unnecessary indirection in the
+
+00:01:18.909 --> 00:01:21.700
+method scheduleSession().
+
+00:01:21.700 --> 00:01:26.460
+This code can be simplified by inlining the
+method compareRatingWithMethodParameter().
+
+00:01:26.460 --> 00:01:34.520
+However, you don’t have to inline every
+method that defines just one line of code.
+
+00:01:34.520 --> 00:01:38.740
+The decision should depend on whether it is
+helping you to understand the flow in your
+
+00:01:38.740 --> 00:01:39.810
+method.
+
+00:01:39.810 --> 00:01:46.170
+When migrating your code to a later Java version,
+you may want to inline a couple of methods
+
+00:01:46.170 --> 00:01:49.009
+so that you can modify it together.
+
+00:01:49.009 --> 00:01:56.340
+In this example, lets inline these two methods
+and then see how we could further refactor
+
+00:01:56.340 --> 00:01:58.140
+this code.
+
+00:01:58.140 --> 00:02:01.429
+Let's start by inlining method sortSpeakerNames.
+
+00:02:01.429 --> 00:02:05.119
+You can see the shortcuts at the bottom of
+the screencast.
+
+00:02:05.119 --> 00:02:08.310
+Now lets inline the method extractNamesFromSpeakerList().
+
+00:02:08.310 --> 00:02:13.100
+Time to apply IntelliJ IDEA's magic.
+
+00:02:13.100 --> 00:02:15.820
+Let's start by converting for loop to a stream.
+
+00:02:15.820 --> 00:02:21.920
+By using Alt+Enter you can invoke context
+actions in your code - which suggest what
+
+00:02:21.920 --> 00:02:24.060
+you could do with a code construct.
+
+00:02:24.060 --> 00:02:32.250
+Now, I'll jump to the next errors/ suggestions
+by IntelliJ IDEA by using F2 and then using
+
+00:02:32.250 --> 00:02:36.140
+Alt+Enter to view the available suggestions.
+
+00:02:36.140 --> 00:02:42.390
+You can use this combination to remove unused
+imports, get suggestions on stream operations,
+
+00:02:42.390 --> 00:02:52.120
+remove redundant local variables and much
+more.
+
+00:02:52.120 --> 00:02:57.230
+Often you might see a piece of code, which
+is refactored poorly.
+
+00:02:57.230 --> 00:03:01.030
+Code in this method calls another method almost
+on all lines.
+
+00:03:01.030 --> 00:03:08.150
+Though it is readable, let's see if we could
+inline these methods and refactor it again
+
+00:03:08.150 --> 00:03:10.830
+to improve the intent of the code.
+
+00:03:10.830 --> 00:03:20.250
+Let's start by inlining methods outputTrackName
+and the other method outputSpeakerList.
+
+00:03:20.250 --> 00:03:25.530
+Since both these methods were used to output
+paramater values, let's extract them to a
+
+00:03:25.530 --> 00:03:29.080
+single method by using Extract Method Refactoring.
+
+00:03:29.080 --> 00:03:37.900
+Now, let's inline the other two methods - filterSpeakersWithoutTracks
+and findSpeakerSpeakingOnTrack.
+
+00:03:37.900 --> 00:03:44.740
+Now, lets remove an intermediate collect and
+join both streams together.
+
+00:03:44.740 --> 00:03:51.390
+By using Alt+Enter on the filter method, you
+get an option of merging filter chain on streams.
+
+00:03:51.390 --> 00:03:57.850
+By using F2, you can navigate to the next
+error, which states that local variable panelists
+
+00:03:57.850 --> 00:03:59.220
+is redundant.
+
+00:03:59.220 --> 00:04:05.360
+Use Alt+Enter to inline variable.
+
+00:04:05.360 --> 00:04:13.080
+IntelliJ IDEA 2019.2 includes significant
+improvements to the Inline Method refactoring.
+
+00:04:13.080 --> 00:04:19.750
+A method might include multiple exit points
+by defining multiple return statements.
+
+00:04:19.750 --> 00:04:27.370
+When you inline such method in IntelliJ IDEA
+2019.2, it can be modified to define just
+
+00:04:27.370 --> 00:04:33.800
+one exit point in the form of a single return
+statement.
+
+00:04:33.800 --> 00:04:41.310
+IntelliJ IDEA refers to this feature as ‘transforms
+to single exit point’.
+
+00:04:41.310 --> 00:04:49.770
+With the enhancements in IntelliJ IDEA 2019.2,
+the Inline Method refactoring also supports
+
+00:04:49.770 --> 00:04:52.350
+negation at call site.
+
+00:04:52.350 --> 00:04:57.791
+In this code, when you inline the method check()
+with negation, it won’t be modified to a
+
+00:04:57.791 --> 00:04:59.800
+‘single exit point’.
+
+00:04:59.800 --> 00:05:04.240
+Before we inline this method, note the return
+values.
+
+00:05:04.240 --> 00:05:11.360
+It returns a false here, a false here, and
+the result of this expression here.
+
+00:05:11.360 --> 00:05:15.660
+Let's inline this method.
+
+00:05:15.660 --> 00:05:22.590
+See how the inlined code is negated – notice
+the reversal of return values (from false
+
+00:05:22.590 --> 00:05:29.370
+to true) and the condition (from equal to,
+To not equal to).
+
+00:05:29.370 --> 00:05:32.430
+As developers, we refactor our code often.
+
+00:05:32.430 --> 00:05:39.690
+To refactor efficiently, we must know the
+use cases – why, when, and how to refactor
+
+00:05:39.690 --> 00:05:40.690
+it.
+
+00:05:40.690 --> 00:05:46.100
+IntelliJ IDEA plays a crucial role by automating
+the various refactoring options for you.
+
+00:05:46.100 --> 00:05:46.990
+Thanks for watching.
+

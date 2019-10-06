@@ -1,0 +1,3075 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:04.850
+SURMA: (BEATBOXING)
+Let's do some some 203.
+
+00:00:04.850 --> 00:00:05.810
+Are we good?
+
+00:00:05.810 --> 00:00:06.886
+JAKE: We are good.
+
+00:00:06.886 --> 00:00:09.862
+[THEME MUSIC PLAYING]
+
+00:00:13.340 --> 00:00:15.140
+SURMA: I don't know
+if you've noticed,
+
+00:00:15.140 --> 00:00:16.662
+but we've built a thing.
+
+00:00:16.662 --> 00:00:18.620
+JAKE: Are we going to
+talk about Squoosh again?
+
+00:00:18.620 --> 00:00:19.400
+SURMA: A little bit.
+
+00:00:19.400 --> 00:00:19.670
+JAKE: OK.
+
+00:00:19.670 --> 00:00:21.590
+SURMA: Maybe, but another
+aspect of Squoosh.
+
+00:00:21.590 --> 00:00:21.920
+JAKE: All right.
+
+00:00:21.920 --> 00:00:23.000
+SURMA: So that's
+kind of interesting.
+
+00:00:23.000 --> 00:00:23.580
+JAKE: OK.
+
+00:00:23.580 --> 00:00:25.970
+SURMA: So this might be a
+long one, so bear with me.
+
+00:00:25.970 --> 00:00:28.350
+I'm going to start
+at where we started,
+
+00:00:28.350 --> 00:00:32.590
+and then we kind of fell
+down into this rabbit hole.
+
+00:00:32.590 --> 00:00:36.050
+And I want the audience to fall
+into this rabbit hole with us.
+
+00:00:36.050 --> 00:00:38.510
+JAKE: Yes, and I'm really
+looking forward to this one.
+
+00:00:38.510 --> 00:00:42.000
+Because sometimes when
+we do these, one of us
+
+00:00:42.000 --> 00:00:45.260
+is maybe slightly pretending
+to know less about the subject
+
+00:00:45.260 --> 00:00:46.700
+than we do.
+
+00:00:46.700 --> 00:00:48.560
+Whereas in this
+one, there's a lot
+
+00:00:48.560 --> 00:00:49.950
+that I really don't understand.
+
+00:00:49.950 --> 00:00:50.450
+So--
+
+00:00:50.450 --> 00:00:53.060
+SURMA: And I'm really worried
+that I might not actually
+
+00:00:53.060 --> 00:00:55.880
+be able to explain everything
+as much as you would like me to.
+
+00:00:55.880 --> 00:00:56.450
+JAKE: OK.
+
+00:00:56.450 --> 00:00:56.870
+Well, I'll--
+
+00:00:56.870 --> 00:00:57.830
+SURMA: So let's see
+where we end up.
+
+00:00:57.830 --> 00:00:59.413
+JAKE: Yes, I'll let
+you know honestly.
+
+00:00:59.413 --> 00:01:01.700
+SURMA: Let's start with,
+what are images on the web
+
+00:01:01.700 --> 00:01:04.220
+if we manipulate
+them with JavaScript?
+
+00:01:04.220 --> 00:01:06.680
+So let's talk about image
+data, which is a data structure
+
+00:01:06.680 --> 00:01:07.638
+that we use in Squoosh.
+
+00:01:07.638 --> 00:01:09.472
+So once we get an image
+in and we decode it,
+
+00:01:09.472 --> 00:01:10.850
+and we turn it
+into an image data
+
+00:01:10.850 --> 00:01:12.433
+object, which is a
+data structure that
+
+00:01:12.433 --> 00:01:13.580
+exists on a platform.
+
+00:01:13.580 --> 00:01:15.538
+Basically, it has three
+properties-- the width,
+
+00:01:15.538 --> 00:01:17.200
+the height, and data.
+
+00:01:17.200 --> 00:01:20.360
+And data, there is
+a Uint8ClampedArray.
+
+00:01:20.360 --> 00:01:24.420
+And in there, you have just
+four bytes for each pixel.
+
+00:01:24.420 --> 00:01:24.920
+JAKE: Yes.
+
+00:01:24.920 --> 00:01:28.620
+SURMA: And it's the first row,
+and the second row, and so on.
+
+00:01:28.620 --> 00:01:31.341
+JAKE: And then each one is like
+red, green, blue, alpha, right?
+
+00:01:31.341 --> 00:01:31.966
+SURMA: Exactly.
+
+00:01:31.966 --> 00:01:32.810
+So what you see
+here is like it's
+
+00:01:32.810 --> 00:01:35.110
+a red pixel, then a green
+pixel, and a blue pixel,
+
+00:01:35.110 --> 00:01:36.070
+and a white pixel.
+
+00:01:36.070 --> 00:01:38.932
+And because the image is 2 by
+2, that is what the image would
+
+00:01:38.932 --> 00:01:39.640
+look like, right?
+
+00:01:39.640 --> 00:01:40.200
+JAKE: Huh, nice.
+
+00:01:40.200 --> 00:01:41.783
+SURMA: So it's
+basically just a series
+
+00:01:41.783 --> 00:01:46.142
+of numbers with no concept
+of rows or columns.
+
+00:01:46.142 --> 00:01:47.600
+But because of that
+information, we
+
+00:01:47.600 --> 00:01:49.730
+can rearrange them
+and interpret them
+
+00:01:49.730 --> 00:01:51.250
+as a proper
+two-dimensional image.
+
+00:01:51.250 --> 00:01:51.917
+JAKE: Brilliant.
+
+00:01:51.917 --> 00:01:53.760
+SURMA: That's kind
+of how it works.
+
+00:01:53.760 --> 00:01:54.960
+All right.
+
+00:01:54.960 --> 00:01:57.230
+So now, in Squoosh,
+we had the goal
+
+00:01:57.230 --> 00:01:58.945
+to rotate an image
+by 90 degrees.
+
+00:01:58.945 --> 00:02:00.320
+JAKE: Sounds like
+a simple thing.
+
+00:02:00.320 --> 00:02:02.150
+Probably only take 10 minutes.
+
+00:02:02.150 --> 00:02:03.980
+SURMA: I mean, you wrote it--
+
+00:02:03.980 --> 00:02:05.060
+the first version, right?
+
+00:02:05.060 --> 00:02:07.850
+And so let's talk
+about how you wrote it.
+
+00:02:07.850 --> 00:02:09.782
+You rotate an image
+by 90 degrees,
+
+00:02:09.782 --> 00:02:11.990
+gets an input image, which
+is this image data object.
+
+00:02:11.990 --> 00:02:12.920
+JAKE: Yes, it is.
+
+00:02:12.920 --> 00:02:14.420
+SURMA: And what we
+do, we figure out
+
+00:02:14.420 --> 00:02:17.220
+by 90 degrees, what is the
+width and the new height,
+
+00:02:17.220 --> 00:02:19.820
+which is pretty much just
+height and width swapped.
+
+00:02:19.820 --> 00:02:21.870
+JAKE: You're doing fancy
+Surma code already.
+
+00:02:21.870 --> 00:02:24.620
+SURMA: It's a little bit because
+otherwise it wouldn't fit.
+
+00:02:24.620 --> 00:02:26.630
+So I'm compressing things down.
+
+00:02:26.630 --> 00:02:27.350
+JAKE: Right, OK.
+
+00:02:27.350 --> 00:02:28.300
+SURMA: This is
+actually kind of two--
+
+00:02:28.300 --> 00:02:29.675
+JAKE: So here,
+you're essentially
+
+00:02:29.675 --> 00:02:31.322
+assigning the
+height to the width,
+
+00:02:31.322 --> 00:02:33.530
+and the width to the height,
+because it's 90 degrees.
+
+00:02:33.530 --> 00:02:34.520
+Right, OK, I'm following.
+
+00:02:34.520 --> 00:02:36.020
+SURMA: And I'm
+trading in new output
+
+00:02:36.020 --> 00:02:38.350
+image, which has this new
+width and the new height.
+
+00:02:38.350 --> 00:02:38.850
+JAKE: Yes.
+
+00:02:38.850 --> 00:02:40.640
+SURMA: So now the goal is
+to go through the pixels
+
+00:02:40.640 --> 00:02:42.440
+and put them in the right
+spot in the output image.
+
+00:02:42.440 --> 00:02:43.315
+JAKE: Ba ba ba ba ba.
+
+00:02:43.315 --> 00:02:46.040
+SURMA: So what we do,
+we for loop over all the
+
+00:02:46.040 --> 00:02:49.820
+pixels in the input
+image, and we figure out
+
+00:02:49.820 --> 00:02:52.650
+where they would have to
+land in the output image.
+
+00:02:52.650 --> 00:02:54.140
+So basically the
+new x-coordinate
+
+00:02:54.140 --> 00:02:57.160
+is that kind of formula,
+the new y-coordinate's that.
+
+00:02:57.160 --> 00:02:59.158
+Then we figure out
+which input pixel
+
+00:02:59.158 --> 00:03:01.200
+it is, which output pixel,
+and just copy it over.
+
+00:03:01.200 --> 00:03:02.617
+JAKE: More fancy
+Surma code here--
+
+00:03:02.617 --> 00:03:03.950
+wouldn't get through review.
+
+00:03:03.950 --> 00:03:04.533
+SURMA: I know.
+
+00:03:04.533 --> 00:03:05.393
+You don't like it.
+
+00:03:05.393 --> 00:03:06.310
+JAKE: OK, that's fine.
+
+00:03:06.310 --> 00:03:09.590
+SURMA: And then because we
+have four bytes per pixel,
+
+00:03:09.590 --> 00:03:12.290
+we just loop over four times,
+and just do another thing.
+
+00:03:12.290 --> 00:03:14.863
+We copy the r value, the
+g value, the b value,
+
+00:03:14.863 --> 00:03:15.530
+and the a value.
+
+00:03:15.530 --> 00:03:16.030
+JAKE: Yep.
+
+00:03:16.030 --> 00:03:16.613
+And off we go.
+
+00:03:16.613 --> 00:03:17.530
+SURMA: And this works.
+
+00:03:17.530 --> 00:03:19.082
+And this was actually
+decently fast.
+
+00:03:19.082 --> 00:03:20.040
+We shipped it this way.
+
+00:03:20.040 --> 00:03:24.480
+JAKE: We should say the reason
+we did this rather than canvas
+
+00:03:24.480 --> 00:03:26.810
+is because we wanted
+to run it in a worker.
+
+00:03:26.810 --> 00:03:28.477
+SURMA: That's an
+entire different story.
+
+00:03:28.477 --> 00:03:31.310
+But yes, we did a lot
+of tests with what
+
+00:03:31.310 --> 00:03:34.447
+seemed more fancy [INAUDIBLE]
+technology didn't seem to work.
+
+00:03:34.447 --> 00:03:36.530
+So we ended up writing our
+own piece of JavaScript
+
+00:03:36.530 --> 00:03:37.710
+just for this problem.
+
+00:03:37.710 --> 00:03:39.210
+JAKE: Yes, because
+offscreen canvas,
+
+00:03:39.210 --> 00:03:41.690
+only in a couple of browsers,
+whereas this is just basic--
+
+00:03:41.690 --> 00:03:42.440
+SURMA: JavaScript.
+
+00:03:42.440 --> 00:03:43.790
+JAKE: --JavaScript, so
+that works everywhere.
+
+00:03:43.790 --> 00:03:44.750
+SURMA: And it can
+run in the worker
+
+00:03:44.750 --> 00:03:45.710
+because it has the image of it.
+
+00:03:45.710 --> 00:03:46.880
+So this-- we shipped this.
+
+00:03:46.880 --> 00:03:47.450
+This worked.
+
+00:03:47.450 --> 00:03:47.950
+JAKE: Yes.
+
+00:03:47.950 --> 00:03:48.070
+Yes, it did.
+
+00:03:48.070 --> 00:03:50.487
+SURMA: And then I looked at
+some point, and was like, hmm,
+
+00:03:50.487 --> 00:03:53.750
+there's actually kind of
+an obvious optimization
+
+00:03:53.750 --> 00:03:54.480
+that you missed.
+
+00:03:54.480 --> 00:03:58.760
+And so I basically
+added a little patch.
+
+00:03:58.760 --> 00:04:00.750
+This all stays the
+same, same as before.
+
+00:04:00.750 --> 00:04:04.160
+But now I'm creating
+a u32 array.
+
+00:04:04.160 --> 00:04:05.550
+JAKE: Yes, yes.
+
+00:04:05.550 --> 00:04:07.700
+SURMA: But basically we
+have the same underlying
+
+00:04:07.700 --> 00:04:12.560
+chunk of memory, but instead of
+seeing it as a series of bytes,
+
+00:04:12.560 --> 00:04:14.630
+we see it as a
+series of 32 bits--
+
+00:04:14.630 --> 00:04:18.890
+numbers-- because every pixel
+consists of a 32-bit number,
+
+00:04:18.890 --> 00:04:20.720
+right, for r, g, b, and a.
+
+00:04:20.720 --> 00:04:24.530
+And so this way, we can
+simplify or actually remove
+
+00:04:24.530 --> 00:04:25.350
+the inner loop.
+
+00:04:25.350 --> 00:04:27.290
+JAKE: So it's this bit
+that was here that--
+
+00:04:27.290 --> 00:04:29.442
+doing something four
+times every time,
+
+00:04:29.442 --> 00:04:30.650
+we're now just doing it once.
+
+00:04:30.650 --> 00:04:32.180
+SURMA: It's now one copy
+operation which actually
+
+00:04:32.180 --> 00:04:33.410
+maps to a machine instruction.
+
+00:04:33.410 --> 00:04:35.360
+Most of the times, the V8 will
+be, like, super smart and go,
+
+00:04:35.360 --> 00:04:36.370
+like, whoa fast.
+
+00:04:36.370 --> 00:04:38.840
+So this was actually
+quite a bit faster.
+
+00:04:38.840 --> 00:04:40.100
+So, cool.
+
+00:04:40.100 --> 00:04:41.690
+And then we ship
+this-- still fine.
+
+00:04:41.690 --> 00:04:46.100
+And then it turns out that for
+some reason, in one browser,
+
+00:04:46.100 --> 00:04:47.460
+this was super slow.
+
+00:04:47.460 --> 00:04:47.960
+JAKE: Right.
+
+00:04:47.960 --> 00:04:50.300
+And we've been
+advised by legal--
+
+00:04:50.300 --> 00:04:52.800
+SURMA: By our legal department
+to not name the browser.
+
+00:04:52.800 --> 00:04:55.090
+JAKE: Apparently it's a
+Chrome policy not to--
+
+00:04:55.090 --> 00:04:56.840
+SURMA: I've never heard
+that before, but--
+
+00:04:56.840 --> 00:04:59.215
+JAKE: No, we're not allowed
+to talk about other browsers.
+
+00:04:59.215 --> 00:05:01.533
+So we can't mention
+which browser it is.
+
+00:05:01.533 --> 00:05:03.700
+SURMA: But it's one that
+didn't run in our machines.
+
+00:05:03.700 --> 00:05:05.533
+JAKE: It didn't run on
+your machine, did it?
+
+00:05:05.533 --> 00:05:08.220
+You had to use a VM to run
+this different browser.
+
+00:05:08.220 --> 00:05:08.720
+OK.
+
+00:05:08.720 --> 00:05:11.450
+SURMA: Either way-- like, most
+browsers were fine, good enough
+
+00:05:11.450 --> 00:05:13.510
+at least, and then
+for some reason,
+
+00:05:13.510 --> 00:05:16.160
+this one browser just ended
+up being extremely slow,
+
+00:05:16.160 --> 00:05:17.490
+like unreasonably slow.
+
+00:05:17.490 --> 00:05:19.410
+So we must have hit
+some weird corner case.
+
+00:05:19.410 --> 00:05:19.910
+JAKE: Yes.
+
+00:05:19.910 --> 00:05:21.868
+SURMA: Because this
+browser isn't slow usually.
+
+00:05:21.868 --> 00:05:23.068
+It's a very good browser.
+
+00:05:23.068 --> 00:05:24.860
+JAKE: Yes, and different
+JavaScript engines
+
+00:05:24.860 --> 00:05:26.152
+optimize with different things.
+
+00:05:26.152 --> 00:05:28.020
+So the fact that one
+browser was slower here
+
+00:05:28.020 --> 00:05:30.030
+isn't saying that that
+browser is terrible.
+
+00:05:30.030 --> 00:05:34.340
+It's just saying V8 is very good
+with this kind of tight loop
+
+00:05:34.340 --> 00:05:37.490
+code, over engines that
+have optimized for, like,
+
+00:05:37.490 --> 00:05:38.785
+more dumb bindings stuff.
+
+00:05:38.785 --> 00:05:39.410
+SURMA: Exactly.
+
+00:05:39.410 --> 00:05:41.360
+JAKE: So it wasn't
+that surprising
+
+00:05:41.360 --> 00:05:44.330
+that one browser was completely
+different in terms of problems
+
+00:05:44.330 --> 00:05:45.380
+with this piece of code.
+
+00:05:45.380 --> 00:05:47.130
+SURMA: So we thought,
+well, what do we do?
+
+00:05:47.130 --> 00:05:49.720
+Maybe we frame a web assembly
+at the problem, right?
+
+00:05:49.720 --> 00:05:50.220
+JAKE: Aye.
+
+00:05:50.220 --> 00:05:52.100
+SURMA: So we looked into that.
+
+00:05:52.100 --> 00:05:54.148
+And the first
+problem we had that,
+
+00:05:54.148 --> 00:05:55.940
+when you write WebAssembly
+and you load it,
+
+00:05:55.940 --> 00:05:58.158
+it turns into a module
+that has functions,
+
+00:05:58.158 --> 00:06:00.200
+the functions that you
+wrote in whatever language
+
+00:06:00.200 --> 00:06:00.800
+you were using.
+
+00:06:00.800 --> 00:06:01.200
+JAKE: Yes.
+
+00:06:01.200 --> 00:06:01.790
+SURMA: Right?
+
+00:06:01.790 --> 00:06:04.450
+JAKE: This is different
+to an ECMAScript module.
+
+00:06:04.450 --> 00:06:05.300
+It's a Wasm module.
+
+00:06:05.300 --> 00:06:06.060
+It's a different thing.
+
+00:06:06.060 --> 00:06:07.310
+SURMA: It's a different thing.
+
+00:06:07.310 --> 00:06:11.810
+And these functions can only
+take in and return numbers.
+
+00:06:11.810 --> 00:06:13.880
+So there is no easy
+way, straight up,
+
+00:06:13.880 --> 00:06:16.440
+to pass in an image.
+
+00:06:16.440 --> 00:06:18.100
+So what do you do, right?
+
+00:06:18.100 --> 00:06:19.700
+So what we ended up doing--
+
+00:06:19.700 --> 00:06:22.257
+I'm going to reuse the video
+I made for my article--
+
+00:06:22.257 --> 00:06:23.090
+JAKE: Oh, brilliant.
+
+00:06:23.090 --> 00:06:24.507
+SURMA: --basically,
+the JavaScript
+
+00:06:24.507 --> 00:06:27.180
+was going to load the image, put
+it into the WebAssembly memory,
+
+00:06:27.180 --> 00:06:29.263
+and then we're going to
+use WebAssembly to just do
+
+00:06:29.263 --> 00:06:32.120
+the reordering within that
+WebAssembly memory buffer
+
+00:06:32.120 --> 00:06:34.700
+and use JavaScript to
+read it back afterwards.
+
+00:06:34.700 --> 00:06:35.210
+JAKE: Right.
+
+00:06:35.210 --> 00:06:37.002
+SURMA: So that means
+the WebAssembly really
+
+00:06:37.002 --> 00:06:40.297
+is completely isolated from
+all of the outer world,
+
+00:06:40.297 --> 00:06:41.130
+really, so to speak.
+
+00:06:41.130 --> 00:06:43.040
+It just has its chunk
+of memory to work
+
+00:06:43.040 --> 00:06:44.930
+and will read in the
+image, do the reordering
+
+00:06:44.930 --> 00:06:46.820
+that was shown before,
+and then JavaScript
+
+00:06:46.820 --> 00:06:49.650
+comes back, takes over, and
+reads back the resulting image.
+
+00:06:49.650 --> 00:06:51.620
+JAKE: So JavaScript
+and WebAssembly,
+
+00:06:51.620 --> 00:06:53.700
+the thing they share is memory.
+
+00:06:53.700 --> 00:06:54.200
+That they--
+
+00:06:54.200 --> 00:06:55.232
+SURMA: Pretty much.
+
+00:06:55.232 --> 00:06:56.690
+JAKE: WebAssembly,
+it's its memory.
+
+00:06:56.690 --> 00:06:58.065
+SURMA: So this
+WebAssembly.memory
+
+00:06:58.065 --> 00:07:00.170
+is WebAssembly-specific memory.
+
+00:07:00.170 --> 00:07:02.470
+But it is also exposed
+as an array buffer
+
+00:07:02.470 --> 00:07:05.520
+that we can use as a u32
+array or whatever we need
+
+00:07:05.520 --> 00:07:06.830
+in that very instance, right?
+
+00:07:06.830 --> 00:07:08.550
+JAKE: So the amount of memory
+we need for WebAssembly
+
+00:07:08.550 --> 00:07:10.520
+is essentially double
+the size of the image,
+
+00:07:10.520 --> 00:07:11.630
+because it's going to--
+
+00:07:11.630 --> 00:07:12.170
+SURMA: Yeah.
+
+00:07:12.170 --> 00:07:14.970
+JAKE: --have the main image in
+memory and then the next bit.
+
+00:07:14.970 --> 00:07:16.640
+OK.
+
+00:07:16.640 --> 00:07:18.020
+SURMA: So how do we create Wasm?
+
+00:07:18.020 --> 00:07:19.790
+We've done it before
+with mScript in C.
+
+00:07:19.790 --> 00:07:21.150
+But that's also Rust.
+
+00:07:21.150 --> 00:07:23.150
+But we actually found a
+very interesting project
+
+00:07:23.150 --> 00:07:25.250
+we stumbled over
+called AssemblyScript.
+
+00:07:25.250 --> 00:07:25.850
+JAKE: Yes.
+
+00:07:25.850 --> 00:07:27.890
+SURMA: Which is a--
+
+00:07:27.890 --> 00:07:29.480
+they call themselves
+a type script
+
+00:07:29.480 --> 00:07:33.410
+to WebAssembly
+compiler, which is true.
+
+00:07:33.410 --> 00:07:35.150
+But might be a little
+bit misleading.
+
+00:07:35.150 --> 00:07:37.760
+Because you can't just
+take any type script
+
+00:07:37.760 --> 00:07:39.350
+and compile it to WebAssembly.
+
+00:07:39.350 --> 00:07:41.420
+It is using the
+TypeScript syntax
+
+00:07:41.420 --> 00:07:44.308
+and the TypeScript
+standard library things,
+
+00:07:44.308 --> 00:07:46.100
+but with their own
+version of their library
+
+00:07:46.100 --> 00:07:48.603
+that is specifically
+tailored to WebAssembly.
+
+00:07:48.603 --> 00:07:50.520
+So what you can see here
+is the signature way.
+
+00:07:50.520 --> 00:07:53.400
+Now we have types, as you
+know, from TypeScript.
+
+00:07:53.400 --> 00:07:56.830
+But there's the I32 type, which
+is the type WebAssembly has,
+
+00:07:56.830 --> 00:07:57.818
+but JavaScript doesn't.
+
+00:07:57.818 --> 00:07:59.610
+JAKE: And that's the
+32-bit integer, right?
+
+00:07:59.610 --> 00:08:01.700
+SURMA: Yes, the
+signed 32-bit integer.
+
+00:08:01.700 --> 00:08:02.310
+JAKE: Signed.
+
+00:08:02.310 --> 00:08:05.300
+SURMA: That's also be u32,
+which is the unsigned.
+
+00:08:05.300 --> 00:08:07.717
+JAKE: Why are we using signed?
+
+00:08:07.717 --> 00:08:08.550
+SURMA: Four reasons.
+
+00:08:08.550 --> 00:08:09.050
+JAKE: Four reasons?
+
+00:08:09.050 --> 00:08:09.550
+OK.
+
+00:08:09.550 --> 00:08:10.558
+Let's gloss over it.
+
+00:08:10.558 --> 00:08:11.100
+This is good.
+
+00:08:11.100 --> 00:08:12.808
+Because I can recognize this.
+
+00:08:12.808 --> 00:08:14.100
+It looks a lot like JavaScript.
+
+00:08:14.100 --> 00:08:15.120
+It looks a lot like TypeScript.
+
+00:08:15.120 --> 00:08:17.203
+SURMA: And so will the
+rest, except for two lines.
+
+00:08:17.203 --> 00:08:18.200
+So this looks the same.
+
+00:08:18.200 --> 00:08:19.800
+So we switch height and width.
+
+00:08:19.800 --> 00:08:20.868
+JAKE: Yep.
+
+00:08:20.868 --> 00:08:22.410
+SURMA: Now this is
+a bit interesting.
+
+00:08:22.410 --> 00:08:25.820
+Because we have this
+chunk of memory,
+
+00:08:25.820 --> 00:08:28.650
+we need to know where
+our input image starts
+
+00:08:28.650 --> 00:08:30.840
+and where our
+output image starts.
+
+00:08:30.840 --> 00:08:32.340
+That's what these
+two variables are.
+
+00:08:32.340 --> 00:08:34.840
+So our input image starts at
+0, at address 0 in this memory.
+
+00:08:34.840 --> 00:08:35.965
+JAKE: Which is always does.
+
+00:08:35.965 --> 00:08:38.429
+SURMA: Index 0, you can say,
+and the output image is right
+
+00:08:38.429 --> 00:08:39.929
+after the input image ends.
+
+00:08:39.929 --> 00:08:44.010
+And the input image consists of
+width times height times four--
+
+00:08:44.010 --> 00:08:45.210
+JAKE: Four bits per pixel.
+
+00:08:45.210 --> 00:08:45.500
+SURMA: Bytes.
+
+00:08:45.500 --> 00:08:46.450
+JAKE: Bytes per pixel.
+
+00:08:46.450 --> 00:08:49.560
+[LAUGHTER]
+
+00:08:49.560 --> 00:08:51.540
+See the thing
+about this, and I'm
+
+00:08:51.540 --> 00:08:52.890
+sorry to interrupt the flow.
+
+00:08:52.890 --> 00:08:55.650
+I should say that
+I came to the web
+
+00:08:55.650 --> 00:09:00.020
+as a CSS person, CSS Front-End,
+and I learned JavaScript.
+
+00:09:00.020 --> 00:09:01.885
+Whereas you came to
+the web from being
+
+00:09:01.885 --> 00:09:04.260
+a programmer-- well, and then
+you went to the web, right?
+
+00:09:04.260 --> 00:09:06.900
+SURMA: [INAUDIBLE] I
+did embedded systems.
+
+00:09:06.900 --> 00:09:08.880
+Like I was literally
+writing kernel
+
+00:09:08.880 --> 00:09:10.680
+code and low level
+memory management.
+
+00:09:10.680 --> 00:09:13.140
+And I had no idea
+about CSS and how
+
+00:09:13.140 --> 00:09:15.090
+to do UI and anything like that.
+
+00:09:15.090 --> 00:09:15.630
+JAKE: Right.
+
+00:09:15.630 --> 00:09:18.100
+SURMA: It's just two
+completely different angles.
+
+00:09:18.100 --> 00:09:20.350
+JAKE: But I would say that
+if anyone is watching this,
+
+00:09:20.350 --> 00:09:21.700
+thinking what is going on?
+
+00:09:21.700 --> 00:09:22.200
+SURMA: Yeah.
+
+00:09:22.200 --> 00:09:22.500
+This is--
+
+00:09:22.500 --> 00:09:24.030
+JAKE: I am feeling
+exactly the same.
+
+00:09:24.030 --> 00:09:25.480
+So don't worry
+too much about it.
+
+00:09:25.480 --> 00:09:25.980
+All right.
+
+00:09:25.980 --> 00:09:26.340
+Come on.
+
+00:09:26.340 --> 00:09:27.090
+Let's-- Let's go.
+
+00:09:27.090 --> 00:09:30.025
+SURMA: But for now, these are
+basic indices in the array.
+
+00:09:30.025 --> 00:09:31.400
+Where does the
+input image start?
+
+00:09:31.400 --> 00:09:32.950
+Where does the
+output image start?
+
+00:09:32.950 --> 00:09:35.325
+And then this looks familiar--
+looping of all the pixels.
+
+00:09:35.325 --> 00:09:36.070
+JAKE: Yep.
+
+00:09:36.070 --> 00:09:39.240
+SURMA: And figuring out where
+the new coordinates are.
+
+00:09:39.240 --> 00:09:40.470
+We did all this before.
+
+00:09:40.470 --> 00:09:43.560
+And now there's these two
+AssemblyScript specific
+
+00:09:43.560 --> 00:09:44.770
+functions.
+
+00:09:44.770 --> 00:09:46.290
+The first one is
+load, which allows
+
+00:09:46.290 --> 00:09:51.470
+me to load a u32 from the
+memory at a given address.
+
+00:09:51.470 --> 00:09:52.040
+JAKE: Right.
+
+00:09:52.040 --> 00:09:53.790
+SURMA: And so in this
+case, what I'm doing
+
+00:09:53.790 --> 00:09:56.300
+is I'm using the input image
+space, where the image starts,
+
+00:09:56.300 --> 00:09:57.900
+plus the pixel I want to read.
+
+00:09:57.900 --> 00:10:00.317
+JAKE: So this is very similar
+to what we were doing before
+
+00:10:00.317 --> 00:10:02.400
+with the uint32array.
+
+00:10:02.400 --> 00:10:04.803
+But it's where-- but there's
+a special command to get it
+
+00:10:04.803 --> 00:10:06.220
+straight from
+memory rather than--
+
+00:10:06.220 --> 00:10:06.360
+SURMA: Yeah.
+
+00:10:06.360 --> 00:10:07.760
+Because it's a
+WebAssembly memory.
+
+00:10:07.760 --> 00:10:08.150
+And that's, like--
+
+00:10:08.150 --> 00:10:08.480
+JAKE: Right.
+
+00:10:08.480 --> 00:10:09.000
+SURMA: --implicit.
+
+00:10:09.000 --> 00:10:11.042
+It's not something you
+get handed as a reference.
+
+00:10:11.042 --> 00:10:12.940
+It's just there is a
+global, almost like.
+
+00:10:12.940 --> 00:10:14.190
+JAKE: But it's the same thing.
+
+00:10:14.190 --> 00:10:15.820
+We're passing the
+same indices into it.
+
+00:10:15.820 --> 00:10:16.320
+Yes.
+
+00:10:16.320 --> 00:10:16.700
+SURMA: Exactly.
+
+00:10:16.700 --> 00:10:16.880
+JAKE: OK.
+
+00:10:16.880 --> 00:10:18.298
+SURMA: So we're
+loading our pixel
+
+00:10:18.298 --> 00:10:20.090
+and then all we have
+to do is write it back
+
+00:10:20.090 --> 00:10:20.900
+to the output image.
+
+00:10:20.900 --> 00:10:22.733
+And it's the same thing,
+restoring the value
+
+00:10:22.733 --> 00:10:25.100
+v, which we just
+read, back as a user
+
+00:10:25.100 --> 00:10:26.910
+to into the output image space.
+
+00:10:26.910 --> 00:10:27.560
+JAKE: OK.
+
+00:10:27.560 --> 00:10:30.360
+SURMA: And now we have
+written AssemblyScript.
+
+00:10:30.360 --> 00:10:32.830
+JAKE: And then this
+converts to WebAssembly.
+
+00:10:32.830 --> 00:10:34.910
+And what really
+struck me with this
+
+00:10:34.910 --> 00:10:38.360
+is that if I wanted
+to write WebAssembly,
+
+00:10:38.360 --> 00:10:39.710
+this is the tool I would use.
+
+00:10:39.710 --> 00:10:40.210
+SURMA: Yeah.
+
+00:10:40.210 --> 00:10:42.830
+JAKE: Because this looks
+really familiar to me.
+
+00:10:42.830 --> 00:10:43.280
+SURMA: You don't have to
+learn a new language, right?
+
+00:10:43.280 --> 00:10:43.590
+Because--
+
+00:10:43.590 --> 00:10:44.190
+JAKE: Yeah.
+
+00:10:44.190 --> 00:10:47.330
+SURMA: --I think you've learned
+a bit of C because of Squoosh.
+
+00:10:47.330 --> 00:10:47.990
+JAKE: Yes.
+
+00:10:47.990 --> 00:10:50.115
+SURMA: But that's pretty
+much it, as far as I know.
+
+00:10:50.115 --> 00:10:51.770
+You've not written
+Rust, I think.
+
+00:10:51.770 --> 00:10:52.340
+You kind of--
+
+00:10:52.340 --> 00:10:53.048
+JAKE: I know PHP.
+
+00:10:53.048 --> 00:10:54.328
+[LAUGHTER]
+
+00:10:54.328 --> 00:10:56.620
+SURMA: [INAUDIBLE] PHP to a
+WebAssembly compiler, then.
+
+00:10:56.620 --> 00:10:57.800
+JAKE: I would love it.
+
+00:10:57.800 --> 00:10:59.600
+It was the first
+language I learned.
+
+00:10:59.600 --> 00:11:01.100
+SURMA: So we have
+this function now.
+
+00:11:01.100 --> 00:11:02.933
+And now I want to compile
+it to WebAssembly.
+
+00:11:02.933 --> 00:11:04.970
+And luckily, AssemblyScript
+makes it very easy.
+
+00:11:04.970 --> 00:11:07.680
+So we just installed the
+AssemblyScript package.
+
+00:11:07.680 --> 00:11:09.740
+And then we have an
+ASC command, which
+
+00:11:09.740 --> 00:11:12.200
+we give our TypeScript file to.
+
+00:11:12.200 --> 00:11:14.120
+And it will give us
+back a WebAssembly file,
+
+00:11:14.120 --> 00:11:16.580
+with no additional
+glue or JavaScript,
+
+00:11:16.580 --> 00:11:18.140
+which I think is
+quite interesting.
+
+00:11:18.140 --> 00:11:20.790
+Because most other
+implementations for WebAssembly
+
+00:11:20.790 --> 00:11:22.540
+give you glue code,
+which is the initial--
+
+00:11:22.540 --> 00:11:25.850
+JAKE: A huge JavaScript file,
+otherwise, is really difficult
+
+00:11:25.850 --> 00:11:27.710
+to deal with and work with.
+
+00:11:27.710 --> 00:11:29.150
+But this is just--
+
+00:11:29.150 --> 00:11:30.630
+yeah, just Wasm, right?
+
+00:11:30.630 --> 00:11:32.900
+SURMA: So we did this.
+
+00:11:32.900 --> 00:11:34.260
+We got a rotate.wasm file.
+
+00:11:34.260 --> 00:11:37.310
+And now the interesting bit
+might be how to load it.
+
+00:11:37.310 --> 00:11:39.260
+Because usually, glue
+code loads it for you.
+
+00:11:39.260 --> 00:11:40.638
+But now you don't
+have glue code.
+
+00:11:40.638 --> 00:11:41.430
+How does this work?
+
+00:11:41.430 --> 00:11:43.100
+It's actually not
+that difficult.
+
+00:11:43.100 --> 00:11:45.920
+What you do is you take
+the instantiate streaming
+
+00:11:45.920 --> 00:11:48.028
+function from the
+WebAssembly object
+
+00:11:48.028 --> 00:11:49.070
+and put a fetch in there.
+
+00:11:49.070 --> 00:11:50.810
+Because the
+WebAssembly compiler,
+
+00:11:50.810 --> 00:11:53.390
+at least the
+non-optimizing one, can
+
+00:11:53.390 --> 00:11:55.520
+compile while the Wasm
+file is still downloading.
+
+00:11:55.520 --> 00:11:57.860
+JAKE: So this instantiate
+streaming takes a promise.
+
+00:11:57.860 --> 00:12:01.130
+SURMA: A promise, or
+response, or an array buffer--
+
+00:12:01.130 --> 00:12:02.360
+JAKE: That's a weird API.
+
+00:12:02.360 --> 00:12:04.712
+It's, like, why does
+it take a promise?
+
+00:12:04.712 --> 00:12:07.170
+SURMA: Because they want to
+make this simple-- if you don't
+
+00:12:07.170 --> 00:12:09.060
+have to wait the fetch, right?
+
+00:12:09.060 --> 00:12:10.083
+JAKE: OK.
+
+00:12:10.083 --> 00:12:11.000
+I don't agree with it.
+
+00:12:11.000 --> 00:12:11.740
+But that's fine.
+
+00:12:11.740 --> 00:12:11.850
+SURMA: Sure, fine.
+
+00:12:11.850 --> 00:12:12.830
+JAKE: You should just
+put an array in there.
+
+00:12:12.830 --> 00:12:13.900
+SURMA: Either way--
+
+00:12:13.900 --> 00:12:14.600
+I find it really interesting.
+
+00:12:14.600 --> 00:12:16.642
+It starts compiling while
+it's still downloading.
+
+00:12:16.642 --> 00:12:19.130
+So it's not like
+download, then compile.
+
+00:12:19.130 --> 00:12:21.710
+It's actually
+almost in parallel,
+
+00:12:21.710 --> 00:12:25.190
+which for WebAssembly modules,
+which can be quite big.
+
+00:12:25.190 --> 00:12:25.910
+You know?
+
+00:12:25.910 --> 00:12:29.773
+I think that the Unreal Engine
+one is, like, 40 megabytes.
+
+00:12:29.773 --> 00:12:31.190
+That will make
+quite a difference.
+
+00:12:31.190 --> 00:12:32.810
+JAKE: Yes, absolutely.
+
+00:12:32.810 --> 00:12:33.670
+Not so much here.
+
+00:12:33.670 --> 00:12:35.030
+SURMA: So no, absolutely not--
+
+00:12:35.030 --> 00:12:36.697
+so yeah, the Wasm
+module is, by the way,
+
+00:12:36.697 --> 00:12:38.850
+it's, like, 500
+bytes or something.
+
+00:12:38.850 --> 00:12:39.950
+So it's really small.
+
+00:12:39.950 --> 00:12:43.280
+It's smaller than the compressed
+ng's of JavaScript code
+
+00:12:43.280 --> 00:12:43.850
+that we had.
+
+00:12:43.850 --> 00:12:44.180
+JAKE: Nice.
+
+00:12:44.180 --> 00:12:45.680
+SURMA: That was
+actually quite cool.
+
+00:12:45.680 --> 00:12:47.670
+So now we get an instance
+back from this one.
+
+00:12:47.670 --> 00:12:50.960
+And on that instance,
+we can have exports.
+
+00:12:50.960 --> 00:12:53.210
+And exports is all the
+functions, but also the memory
+
+00:12:53.210 --> 00:12:54.890
+that we are going to work on.
+
+00:12:54.890 --> 00:12:55.460
+JAKE: Right.
+
+00:12:55.460 --> 00:12:56.450
+SURMA: So we can
+grow our memory.
+
+00:12:56.450 --> 00:12:58.117
+Because we didn't
+know what size it has.
+
+00:12:58.117 --> 00:13:02.340
+But we have to go to the size
+that fits our images two times,
+
+00:13:02.340 --> 00:13:02.840
+right?
+
+00:13:02.840 --> 00:13:03.515
+Which we would
+have to calculate.
+
+00:13:03.515 --> 00:13:04.390
+We'll skip this here.
+
+00:13:04.390 --> 00:13:05.230
+But I would--
+
+00:13:05.230 --> 00:13:07.730
+JAKE: So that would just be
+that the size of the [INAUDIBLE]
+
+00:13:07.730 --> 00:13:09.080
+array data times 2.
+
+00:13:09.080 --> 00:13:09.590
+SURMA: Yeah.
+
+00:13:09.590 --> 00:13:09.720
+JAKE: OK.
+
+00:13:09.720 --> 00:13:10.293
+OK.
+
+00:13:10.293 --> 00:13:12.210
+SURMA: And then I will
+somehow load this image
+
+00:13:12.210 --> 00:13:13.730
+into the buffer,
+which is really just--
+
+00:13:13.730 --> 00:13:16.440
+memory has a dot buffer property
+which is a normal array buffer.
+
+00:13:16.440 --> 00:13:18.230
+Plus we can use
+all the [INAUDIBLE]
+
+00:13:18.230 --> 00:13:19.530
+to put data in there.
+
+00:13:19.530 --> 00:13:20.030
+JAKE: Right.
+
+00:13:20.030 --> 00:13:20.947
+SURMA: Just put it in.
+
+00:13:20.947 --> 00:13:22.000
+JAKE: Yep.
+
+00:13:22.000 --> 00:13:25.053
+SURMA: And then you call
+rotate 90, and we'd image back,
+
+00:13:25.053 --> 00:13:25.720
+and you're done.
+
+00:13:25.720 --> 00:13:26.220
+JAKE: Ah.
+
+00:13:26.220 --> 00:13:27.950
+So exports has all
+of the methods.
+
+00:13:27.950 --> 00:13:29.158
+SURMA: So this is the method.
+
+00:13:29.158 --> 00:13:31.300
+This is the magic, where
+you call into WebAssembly.
+
+00:13:31.300 --> 00:13:32.220
+And you can also see
+it's synchronous.
+
+00:13:32.220 --> 00:13:34.330
+So WebAssembly is something
+that will actually
+
+00:13:34.330 --> 00:13:37.090
+take the control away from
+JavaScript and do its thing,
+
+00:13:37.090 --> 00:13:39.200
+and then return the
+control back to JavaScript.
+
+00:13:39.200 --> 00:13:40.850
+It's just like an
+actual function.
+
+00:13:40.850 --> 00:13:41.350
+JAKE: OK.
+
+00:13:41.350 --> 00:13:41.640
+OK.
+
+00:13:41.640 --> 00:13:43.098
+SURMA: Which I
+think is super nice.
+
+00:13:43.098 --> 00:13:45.730
+And so this was fast, and we
+were super happy about this.
+
+00:13:45.730 --> 00:13:46.400
+JAKE: Yes.
+
+00:13:46.400 --> 00:13:49.270
+This was much faster than--
+
+00:13:49.270 --> 00:13:51.460
+SURMA: It wasn't faster
+in Chrome in the sense
+
+00:13:51.460 --> 00:13:53.230
+that it didn't
+outperform JavaScript.
+
+00:13:53.230 --> 00:13:55.180
+It was as fast,
+or almost as fast.
+
+00:13:55.180 --> 00:13:58.110
+But it was consistently
+fast across all browsers.
+
+00:13:58.110 --> 00:13:58.710
+JAKE: Yes.
+
+00:13:58.710 --> 00:14:01.030
+It had taken the
+browser that doesn't
+
+00:14:01.030 --> 00:14:05.228
+run a Mac from seven
+seconds down to, like, 500
+
+00:14:05.228 --> 00:14:06.520
+or something, 500 milliseconds.
+
+00:14:06.520 --> 00:14:07.820
+SURMA: It was very,
+very acceptable.
+
+00:14:07.820 --> 00:14:08.380
+JAKE: Yes.
+
+00:14:08.380 --> 00:14:10.372
+It was really nice to
+see that similar value--
+
+00:14:10.372 --> 00:14:11.580
+SURMA: --across all browsers.
+
+00:14:11.580 --> 00:14:13.180
+So we were super
+happy about this.
+
+00:14:13.180 --> 00:14:16.330
+So we opened PR in our
+Squoosh and you reviewed it.
+
+00:14:16.330 --> 00:14:17.440
+And we wrote an article.
+
+00:14:17.440 --> 00:14:21.172
+And then "Hacker News" happened.
+
+00:14:21.172 --> 00:14:22.380
+JAKE: "Hacker News" happened.
+
+00:14:22.380 --> 00:14:23.520
+SURMA: And that's something
+I would never say.
+
+00:14:23.520 --> 00:14:25.800
+Because usually the
+comments on our articles
+
+00:14:25.800 --> 00:14:28.810
+are quite annoying.
+
+00:14:28.810 --> 00:14:30.800
+[LAUGHTER]
+
+00:14:30.800 --> 00:14:33.800
+JAKE: "Hacker News" can
+sometimes be quite pedantic,
+
+00:14:33.800 --> 00:14:34.670
+I find.
+
+00:14:34.670 --> 00:14:38.150
+But in this instance,
+there was some pedantry.
+
+00:14:38.150 --> 00:14:40.165
+But the pedantry was
+really interesting.
+
+00:14:40.165 --> 00:14:41.540
+SURMA: It was
+really interesting.
+
+00:14:41.540 --> 00:14:43.250
+JAKE: Some fascinating results--
+
+00:14:43.250 --> 00:14:46.647
+and just a lot of it
+I didn't understand.
+
+00:14:46.647 --> 00:14:48.480
+And I hope you're going
+to explain it to me.
+
+00:14:48.480 --> 00:14:48.980
+SURMA: Yeah.
+
+00:14:48.980 --> 00:14:51.097
+So someone said, why
+aren't they using tiling?
+
+00:14:51.097 --> 00:14:52.680
+Tiling would make
+this so much faster.
+
+00:14:52.680 --> 00:14:53.390
+Let me quickly try it.
+
+00:14:53.390 --> 00:14:54.640
+And yeah, I totally
+did it for something,
+
+00:14:54.640 --> 00:14:55.680
+like, 20 milliseconds.
+
+00:14:55.680 --> 00:14:57.830
+I was, like, what?
+
+00:14:57.830 --> 00:14:58.330
+JAKE: Yeah.
+
+00:14:58.330 --> 00:15:01.430
+So they had taken it
+from-- what was it,
+
+00:15:01.430 --> 00:15:03.710
+sort of framed to fall
+into milliseconds down
+
+00:15:03.710 --> 00:15:04.490
+to-- what was it?
+
+00:15:04.490 --> 00:15:05.240
+SURMA: I think 40.
+
+00:15:05.240 --> 00:15:07.508
+JAKE: 40, which is such
+a huge improvement.
+
+00:15:07.508 --> 00:15:09.050
+And that was even
+faster than we were
+
+00:15:09.050 --> 00:15:11.270
+seeing from a canvas element.
+
+00:15:11.270 --> 00:15:11.930
+Yeah.
+
+00:15:11.930 --> 00:15:14.450
+SURMA: So and I had to
+obviously sit down and actually
+
+00:15:14.450 --> 00:15:15.780
+understand what's happening.
+
+00:15:15.780 --> 00:15:17.670
+So let's talk about
+what tiling actually is.
+
+00:15:17.670 --> 00:15:18.170
+JAKE: Yes.
+
+00:15:18.170 --> 00:15:18.670
+Please do.
+
+00:15:18.670 --> 00:15:20.130
+Because I have no idea.
+
+00:15:20.130 --> 00:15:22.100
+SURMA: So I'm going
+to explain tiling.
+
+00:15:22.100 --> 00:15:23.690
+But there was also
+another suggestion
+
+00:15:23.690 --> 00:15:24.410
+for performance optimization.
+
+00:15:24.410 --> 00:15:25.993
+I'm going to talk
+about both of these.
+
+00:15:25.993 --> 00:15:27.710
+But I'm going to get
+the other one first
+
+00:15:27.710 --> 00:15:28.627
+to get it out the way.
+
+00:15:28.627 --> 00:15:30.630
+Basically, some
+people were saying,
+
+00:15:30.630 --> 00:15:32.950
+oh, if you look at
+this y times width,
+
+00:15:32.950 --> 00:15:36.020
+it's completely independent
+of the inner loops.
+
+00:15:36.020 --> 00:15:39.347
+If I move it out between the
+outer and the inner loop,
+
+00:15:39.347 --> 00:15:40.430
+that would make it faster.
+
+00:15:40.430 --> 00:15:42.410
+Because that calculation
+can happen only once
+
+00:15:42.410 --> 00:15:43.070
+per outer loop.
+
+00:15:43.070 --> 00:15:45.230
+It doesn't need to happen
+every time in the inner loop.
+
+00:15:45.230 --> 00:15:45.730
+JAKE: Yes.
+
+00:15:45.730 --> 00:15:48.200
+And I thought this was going
+to be the kind of thing
+
+00:15:48.200 --> 00:15:52.220
+that the optimizer thingy doo
+dah would take care of for me.
+
+00:15:52.220 --> 00:15:52.980
+SURMA: And it is.
+
+00:15:52.980 --> 00:15:53.480
+JAKE: Ah.
+
+00:15:53.480 --> 00:15:54.200
+SURMA: So this is
+the kind of advice
+
+00:15:54.200 --> 00:15:56.750
+where you don't have to worry
+about these kind of things.
+
+00:15:56.750 --> 00:15:59.120
+Like moving constants
+out of a loop
+
+00:15:59.120 --> 00:16:01.768
+is something that not only most
+compilers can do-- so, like,
+
+00:16:01.768 --> 00:16:04.310
+the [INAUDIBLE] compiler could
+do this or the Rust compiler--
+
+00:16:04.310 --> 00:16:09.530
+but even the V8 compiler
+that go from the JavaScript
+
+00:16:09.530 --> 00:16:11.570
+to machine code or
+from WebAssembly
+
+00:16:11.570 --> 00:16:14.173
+byte code to machine
+code, will do this.
+
+00:16:14.173 --> 00:16:16.340
+So this is an optimization
+that we don't have to do.
+
+00:16:16.340 --> 00:16:19.010
+And where we can say let's
+keep it readable and obvious
+
+00:16:19.010 --> 00:16:20.510
+and don't introduce
+another variable
+
+00:16:20.510 --> 00:16:22.052
+where people that
+read the code would
+
+00:16:22.052 --> 00:16:23.810
+have to have even more
+state in their head
+
+00:16:23.810 --> 00:16:24.830
+to understand what's going on.
+
+00:16:24.830 --> 00:16:25.400
+JAKE: Yes.
+
+00:16:25.400 --> 00:16:25.970
+OK.
+
+00:16:25.970 --> 00:16:28.070
+SURMA: But the other
+thing is tiling.
+
+00:16:28.070 --> 00:16:30.500
+And tiling is something
+that I hadn't heard of.
+
+00:16:30.500 --> 00:16:31.812
+I actually had heard of it.
+
+00:16:31.812 --> 00:16:33.270
+But I also was
+under the impression
+
+00:16:33.270 --> 00:16:34.850
+that compilers
+would do it for us.
+
+00:16:34.850 --> 00:16:36.042
+And in this case, it is not.
+
+00:16:36.042 --> 00:16:36.750
+JAKE: What is it?
+
+00:16:36.750 --> 00:16:36.990
+Tell me.
+
+00:16:36.990 --> 00:16:37.670
+SURMA: So what is tiling?
+
+00:16:37.670 --> 00:16:38.750
+So this is an image--
+
+00:16:38.750 --> 00:16:39.080
+JAKE: Correct.
+
+00:16:39.080 --> 00:16:40.940
+SURMA: --it's actually the
+album cover of our podcast.
+
+00:16:40.940 --> 00:16:41.210
+I don't know.
+
+00:16:41.210 --> 00:16:42.740
+Did you know that we
+do a podcast, Jake?
+
+00:16:42.740 --> 00:16:43.980
+JAKE: We do a podcast, as well.
+
+00:16:43.980 --> 00:16:45.890
+SURMA: We should link to it
+in the description, Jake.
+
+00:16:45.890 --> 00:16:46.390
+JAKE: Yes.
+
+00:16:46.390 --> 00:16:47.780
+We should.
+
+00:16:47.780 --> 00:16:52.140
+SURMA: So we have been reading
+this image so far like this.
+
+00:16:52.140 --> 00:16:53.460
+We've been going row by row.
+
+00:16:53.460 --> 00:16:53.960
+JAKE: Yeah.
+
+00:16:53.960 --> 00:16:55.765
+SURMA: And just--
+what is this pixel?
+
+00:16:55.765 --> 00:16:56.640
+Where does it belong?
+
+00:16:56.640 --> 00:16:56.840
+OK.
+
+00:16:56.840 --> 00:16:57.200
+Copy.
+
+00:16:57.200 --> 00:16:59.070
+And look at the next
+pixel in the same row.
+
+00:16:59.070 --> 00:17:01.440
+That's kind of what we
+did, and we thought fine.
+
+00:17:01.440 --> 00:17:02.940
+Tiling is a different
+approach where
+
+00:17:02.940 --> 00:17:05.869
+you tile the image into tiles.
+
+00:17:05.869 --> 00:17:06.619
+JAKE: That's good.
+
+00:17:06.619 --> 00:17:07.579
+Yeah, those are tiles.
+
+00:17:07.579 --> 00:17:08.119
+Excellent.
+
+00:17:08.119 --> 00:17:10.430
+SURMA: And then do
+whatever you're trying
+
+00:17:10.430 --> 00:17:13.069
+to do within a tile first.
+
+00:17:13.069 --> 00:17:15.970
+So instead of going row by
+row, you just go tile by tile.
+
+00:17:15.970 --> 00:17:18.710
+And within the tile,
+you go row by row.
+
+00:17:18.710 --> 00:17:20.750
+JAKE: This is legitimately--
+
+00:17:20.750 --> 00:17:22.030
+SURMA: It's the same thing.
+
+00:17:22.030 --> 00:17:23.780
+JAKE: This is legitimately
+a different way
+
+00:17:23.780 --> 00:17:25.130
+of doing the same thing.
+
+00:17:25.130 --> 00:17:25.970
+SURMA: I know.
+
+00:17:25.970 --> 00:17:28.012
+Now the interesting thing
+is that this turned out
+
+00:17:28.012 --> 00:17:29.490
+to be so much faster.
+
+00:17:29.490 --> 00:17:29.990
+JAKE: Yeah.
+
+00:17:29.990 --> 00:17:31.340
+Like, a tenth of the time.
+
+00:17:31.340 --> 00:17:33.020
+I still don't understand yet.
+
+00:17:33.020 --> 00:17:34.770
+SURMA: So let's implement
+this real quick.
+
+00:17:34.770 --> 00:17:36.290
+Which it's not actually--
+
+00:17:36.290 --> 00:17:39.350
+JAKE: Can I just say one of
+our previous recent episodes,
+
+00:17:39.350 --> 00:17:42.220
+we talk about the dangers
+of over optimization.
+
+00:17:42.220 --> 00:17:42.720
+SURMA: Yeah.
+
+00:17:42.720 --> 00:17:45.840
+JAKE: And why are we doing this?
+
+00:17:45.840 --> 00:17:48.050
+SURMA: Because it ends
+up being so much faster.
+
+00:17:48.050 --> 00:17:48.550
+JAKE: OK.
+
+00:17:48.550 --> 00:17:48.850
+OK.
+
+00:17:48.850 --> 00:17:49.280
+OK.
+
+00:17:49.280 --> 00:17:51.072
+SURMA: We actually,
+with this optimization,
+
+00:17:51.072 --> 00:17:54.100
+we end up going well below
+100 milliseconds, which
+
+00:17:54.100 --> 00:17:55.610
+within the RAIL
+guidelines makes it
+
+00:17:55.610 --> 00:17:58.140
+feel like an instantaneous
+response to the button.
+
+00:17:58.140 --> 00:17:59.235
+JAKE: It is an
+optimization that matters.
+
+00:17:59.235 --> 00:17:59.330
+Cool.
+
+00:17:59.330 --> 00:18:01.850
+SURMA: And before that, we
+were at, like, 300 to 500.
+
+00:18:01.850 --> 00:18:05.480
+Which was fine, but if
+you can go under 100,
+
+00:18:05.480 --> 00:18:06.590
+we should go under 100.
+
+00:18:06.590 --> 00:18:07.650
+JAKE: Especially
+for bigger images.
+
+00:18:07.650 --> 00:18:08.150
+OK.
+
+00:18:08.150 --> 00:18:11.390
+SURMA: So basically, I just do
+an additional two outer loops.
+
+00:18:11.390 --> 00:18:13.360
+Which usually sounds
+wrong, but in this case
+
+00:18:13.360 --> 00:18:15.890
+is very, very right,
+where we iterate over
+
+00:18:15.890 --> 00:18:18.260
+all the tiles that we have.
+
+00:18:18.260 --> 00:18:21.230
+And then, in there, we basically
+have the same old loop,
+
+00:18:21.230 --> 00:18:23.180
+where we loop over
+each individual tile.
+
+00:18:23.180 --> 00:18:26.660
+JAKE: I'm starting
+to hyperventilate.
+
+00:18:26.660 --> 00:18:28.100
+Why?
+
+00:18:28.100 --> 00:18:29.590
+OK.
+
+00:18:29.590 --> 00:18:31.310
+SURMA: So this is
+tiling implemented.
+
+00:18:31.310 --> 00:18:32.870
+JAKE: So I get it.
+
+00:18:32.870 --> 00:18:35.400
+SURMA: Let's talk about why
+this might make things faster.
+
+00:18:35.400 --> 00:18:35.900
+JAKE: OK.
+
+00:18:35.900 --> 00:18:37.520
+That is the bit I
+don't understand.
+
+00:18:37.520 --> 00:18:39.530
+SURMA: So originally, tiling--
+
+00:18:39.530 --> 00:18:41.720
+when I Googled tiling
+and researched it,
+
+00:18:41.720 --> 00:18:46.050
+it was mostly the use case
+for matrix multiplication,
+
+00:18:46.050 --> 00:18:47.300
+which is a different use case.
+
+00:18:47.300 --> 00:18:52.130
+Because input values
+are used multiple times.
+
+00:18:52.130 --> 00:18:54.920
+If you multiply
+two matrices, you
+
+00:18:54.920 --> 00:18:58.340
+have to read the cell
+at 1, 1 multiple times
+
+00:18:58.340 --> 00:19:00.350
+for, I think, for each
+column that you're
+
+00:19:00.350 --> 00:19:01.750
+calculating the output matrix.
+
+00:19:01.750 --> 00:19:02.030
+JAKE: OK.
+
+00:19:02.030 --> 00:19:04.045
+SURMA: So it makes sense
+that, if you do tiling,
+
+00:19:04.045 --> 00:19:06.170
+you have a better chance
+of having that value still
+
+00:19:06.170 --> 00:19:07.520
+in the cache.
+
+00:19:07.520 --> 00:19:10.922
+We're talking now processor
+level 1 cache, by the way.
+
+00:19:10.922 --> 00:19:11.630
+JAKE: So hang on.
+
+00:19:14.130 --> 00:19:14.630
+OK.
+
+00:19:14.630 --> 00:19:17.130
+We will need to explain what
+that is at some point, as well.
+
+00:19:17.130 --> 00:19:21.080
+But my feeling is, by
+reading memory sequentially,
+
+00:19:21.080 --> 00:19:22.970
+you're more likely
+to hit caches.
+
+00:19:22.970 --> 00:19:25.790
+Because you're dealing
+with a little bit of memory
+
+00:19:25.790 --> 00:19:28.020
+that was very close to
+the last bit of memory.
+
+00:19:28.020 --> 00:19:29.900
+SURMA: So if I have
+these two really big
+
+00:19:29.900 --> 00:19:33.380
+matrices, and I go through the
+first row of the input matrix,
+
+00:19:33.380 --> 00:19:35.180
+by the time I come--
+
+00:19:35.180 --> 00:19:37.983
+I end up at the end, the
+values from the start
+
+00:19:37.983 --> 00:19:39.650
+might have been kicked
+out of the cache.
+
+00:19:39.650 --> 00:19:42.170
+Because level 1 cache in the
+processor is really small.
+
+00:19:42.170 --> 00:19:45.260
+We're talking like 200 kilobytes
+of cache, maybe, or less.
+
+00:19:45.260 --> 00:19:45.770
+JAKE: Right.
+
+00:19:45.770 --> 00:19:49.050
+So the processor
+has an L1 cache--
+
+00:19:49.050 --> 00:19:50.630
+SURMA: Which is,
+like, super fast.
+
+00:19:50.630 --> 00:19:52.490
+JAKE: --so that there's
+these set of caches
+
+00:19:52.490 --> 00:19:53.910
+that gets bigger and slower.
+
+00:19:53.910 --> 00:19:54.410
+SURMA: Yeah.
+
+00:19:54.410 --> 00:19:55.220
+JAKE: Until you get to memory--
+
+00:19:55.220 --> 00:19:56.570
+SURMA: Actually, memory
+is actually really slow.
+
+00:19:56.570 --> 00:19:58.220
+JAKE: Memory is really slow--
+
+00:19:58.220 --> 00:19:59.050
+in relative terms.
+
+00:19:59.050 --> 00:19:59.470
+SURMA: Yeah.
+
+00:19:59.470 --> 00:19:59.970
+JAKE: OK.
+
+00:19:59.970 --> 00:20:01.610
+SURMA: And so what
+the tiling does
+
+00:20:01.610 --> 00:20:04.900
+is, by shortening
+the amount of time
+
+00:20:04.900 --> 00:20:06.983
+you spend going away
+from the initial value,
+
+00:20:06.983 --> 00:20:09.400
+you have a better chance of
+having the initial value still
+
+00:20:09.400 --> 00:20:09.900
+in the--
+
+00:20:09.900 --> 00:20:12.505
+JAKE: Buh, buh, buh,
+buh, buh, buh, but--
+
+00:20:12.505 --> 00:20:13.880
+SURMA: For matrix
+multiplication.
+
+00:20:13.880 --> 00:20:14.690
+So with this one--
+
+00:20:14.690 --> 00:20:15.190
+JAKE: Yeah.
+
+00:20:15.190 --> 00:20:16.490
+SURMA: This is
+going to make sense
+
+00:20:16.490 --> 00:20:17.200
+why this would make it faster.
+
+00:20:17.200 --> 00:20:20.260
+JAKE: Because the second row is
+a massive jump from the first--
+
+00:20:20.260 --> 00:20:21.350
+SURMA: Yeah.
+
+00:20:21.350 --> 00:20:23.335
+The rotation-- we
+read every value once,
+
+00:20:23.335 --> 00:20:24.210
+and we write it once.
+
+00:20:24.210 --> 00:20:26.792
+So why would caching
+make things better?
+
+00:20:26.792 --> 00:20:29.000
+JAKE: That is roughly the
+question I have in my head.
+
+00:20:29.000 --> 00:20:30.610
+SURMA: So there's two theories.
+
+00:20:30.610 --> 00:20:33.805
+And I don't know which one
+of them is actually true.
+
+00:20:33.805 --> 00:20:35.680
+JAKE: Are you telling
+me you don't even know?
+
+00:20:35.680 --> 00:20:38.860
+SURMA: Well, I even talked to
+Benedict, our V8 VM engineer.
+
+00:20:38.860 --> 00:20:40.360
+And he's, like, I
+have two theories.
+
+00:20:40.360 --> 00:20:42.630
+But it's really hard to test.
+
+00:20:42.630 --> 00:20:43.440
+JAKE: OK.
+
+00:20:43.440 --> 00:20:43.940
+OK.
+
+00:20:43.940 --> 00:20:46.370
+SURMA: So one version
+is that [INAUDIBLE]
+
+00:20:46.370 --> 00:20:49.510
+are really smart at
+predicting what memory you
+
+00:20:49.510 --> 00:20:51.950
+are going to grab next.
+
+00:20:51.950 --> 00:20:53.780
+So by basically
+seeing the tiles,
+
+00:20:53.780 --> 00:20:56.150
+it can make better
+predictions what--
+
+00:20:56.150 --> 00:20:56.650
+JAKE: Oh.
+
+00:20:56.650 --> 00:20:58.733
+SURMA: --cells to grab,
+already put into the cache
+
+00:20:58.733 --> 00:21:01.370
+for you, even though you
+haven't exited that code yet.
+
+00:21:01.370 --> 00:21:04.660
+And the other thing is that,
+because the cache is so small,
+
+00:21:04.660 --> 00:21:08.020
+that there's a certain
+pattern which cell can
+
+00:21:08.020 --> 00:21:11.210
+be cached in which cache cell.
+
+00:21:11.210 --> 00:21:12.710
+So this gets a
+little bit confusing.
+
+00:21:12.710 --> 00:21:14.252
+But basically, if
+you think about it,
+
+00:21:14.252 --> 00:21:15.980
+if you have like
+three cache cells,
+
+00:21:15.980 --> 00:21:17.780
+just three individual cells--
+
+00:21:17.780 --> 00:21:19.062
+JAKE: What can go in a cell?
+
+00:21:19.062 --> 00:21:19.770
+SURMA: One value.
+
+00:21:19.770 --> 00:21:20.610
+JAKE: One value, OK.
+
+00:21:20.610 --> 00:21:21.140
+OK.
+
+00:21:21.140 --> 00:21:21.640
+SURMA: OK.
+
+00:21:21.640 --> 00:21:25.055
+So memory error zero can
+only go in cache cell zero.
+
+00:21:25.055 --> 00:21:26.780
+And cache one can go
+in cache cell one.
+
+00:21:26.780 --> 00:21:29.390
+Cache two can go
+in cache cell two.
+
+00:21:29.390 --> 00:21:31.482
+Memory error three can
+only go in zero again.
+
+00:21:31.482 --> 00:21:32.440
+You wrap around, right?
+
+00:21:32.440 --> 00:21:34.140
+So you assign those.
+
+00:21:34.140 --> 00:21:34.640
+JAKE: Yep.
+
+00:21:34.640 --> 00:21:36.515
+SURMA: And then again,
+by keeping it smaller,
+
+00:21:36.515 --> 00:21:39.035
+you have a better chance of
+not overwriting the old value
+
+00:21:39.035 --> 00:21:42.740
+that you have put into
+your level one cache.
+
+00:21:42.740 --> 00:21:46.610
+So basically, all this is
+about is, by making things,
+
+00:21:46.610 --> 00:21:48.830
+making your access
+memory smaller,
+
+00:21:48.830 --> 00:21:50.510
+so that you don't
+evict the cache
+
+00:21:50.510 --> 00:21:51.680
+from the things that you--
+
+00:21:51.680 --> 00:21:53.090
+JAKE: No, this is
+basically, it's
+
+00:21:53.090 --> 00:21:55.160
+working because our
+inner loops are smaller.
+
+00:21:55.160 --> 00:21:56.020
+SURMA: Yeah.
+
+00:21:56.020 --> 00:21:56.570
+JAKE: Right.
+
+00:21:56.570 --> 00:22:00.440
+SURMA: So it makes the processor
+make better predictions
+
+00:22:00.440 --> 00:22:02.930
+and also make the processor
+not evict the cache.
+
+00:22:02.930 --> 00:22:05.218
+Because the area we
+work on is smaller.
+
+00:22:05.218 --> 00:22:06.635
+JAKE: So then does
+the tile size--
+
+00:22:09.550 --> 00:22:10.910
+yeah, what's the tile size?
+
+00:22:10.910 --> 00:22:12.820
+SURMA: So that's what
+I thought, right.
+
+00:22:12.820 --> 00:22:14.800
+And so I did some benchmarks.
+
+00:22:14.800 --> 00:22:17.110
+On a MacBook, on an
+iMac, and a Pixel 3--
+
+00:22:17.110 --> 00:22:21.280
+because the bigger the machine
+or the bigger the processor,
+
+00:22:21.280 --> 00:22:23.920
+the bigger the level
+one cache usually is.
+
+00:22:23.920 --> 00:22:24.760
+JAKE: Right.
+
+00:22:24.760 --> 00:22:30.240
+SURMA: So the iMac that I have
+is an 18 core massive processor
+
+00:22:30.240 --> 00:22:30.740
+thing.
+
+00:22:30.740 --> 00:22:33.340
+It has massive [INAUDIBLE],,
+while the Pixel 3, obviously,
+
+00:22:33.340 --> 00:22:35.537
+has a very, very
+tiny level 1 cache.
+
+00:22:35.537 --> 00:22:37.620
+JAKE: All this code is
+single call, anyway, right?
+
+00:22:37.620 --> 00:22:38.200
+SURMA: Yeah.
+
+00:22:38.200 --> 00:22:38.700
+JAKE: Yeah.
+
+00:22:38.700 --> 00:22:41.500
+SURMA: So basically, at
+zero is the relative time
+
+00:22:41.500 --> 00:22:42.950
+it took for no tiling.
+
+00:22:42.950 --> 00:22:44.200
+JAKE: So that's the original--
+
+00:22:44.200 --> 00:22:45.467
+SURMA: That's baseline tiling.
+
+00:22:45.467 --> 00:22:46.300
+JAKE: --wasn't, yes.
+
+00:22:46.300 --> 00:22:47.717
+SURMA: So what you
+can see here is
+
+00:22:47.717 --> 00:22:50.680
+how the time shifted
+relatively to that base
+
+00:22:50.680 --> 00:22:52.885
+time, depending on
+what the tile size is.
+
+00:22:52.885 --> 00:22:53.960
+JAKE: Interesting.
+
+00:22:53.960 --> 00:22:56.390
+SURMA: So if I have
+a tile size of two,
+
+00:22:56.390 --> 00:22:59.502
+a two-by-two pixel grid,
+it makes the code slower.
+
+00:22:59.502 --> 00:23:01.210
+Which is not very
+surprising, because you
+
+00:23:01.210 --> 00:23:04.070
+have so much more looping
+going on and more jumps.
+
+00:23:04.070 --> 00:23:04.918
+JAKE: OK.
+
+00:23:04.918 --> 00:23:06.710
+SURMA: It gets faster
+really, really quick.
+
+00:23:06.710 --> 00:23:11.230
+At some point, over here, you
+kind of hit level one cache
+
+00:23:11.230 --> 00:23:13.400
+boundaries where it
+then gets slower again.
+
+00:23:13.400 --> 00:23:14.260
+JAKE: Right.
+
+00:23:14.260 --> 00:23:15.160
+I see.
+
+00:23:15.160 --> 00:23:15.730
+OK.
+
+00:23:15.730 --> 00:23:18.230
+SURMA: To be honest, there's
+one weird thing where the Pixel
+
+00:23:18.230 --> 00:23:20.690
+3 is slow, even with
+the massive grid,
+
+00:23:20.690 --> 00:23:22.590
+which I'm not quite
+sure why that is.
+
+00:23:22.590 --> 00:23:23.090
+I think--
+
+00:23:23.090 --> 00:23:24.030
+JAKE: You mean it's fast even--
+
+00:23:24.030 --> 00:23:24.310
+SURMA: Yeah.
+
+00:23:24.310 --> 00:23:24.700
+JAKE: It's faster.
+
+00:23:24.700 --> 00:23:25.900
+SURMA: I expected the
+pace was going to, like,
+
+00:23:25.900 --> 00:23:27.715
+go up somewhere around here.
+
+00:23:27.715 --> 00:23:29.590
+JAKE: You would assume
+the level one cache is
+
+00:23:29.590 --> 00:23:30.933
+less than any Mac book.
+
+00:23:30.933 --> 00:23:31.850
+SURMA: It probably is.
+
+00:23:31.850 --> 00:23:32.765
+And there's probably
+another effect
+
+00:23:32.765 --> 00:23:34.090
+here that I don't
+quite understand.
+
+00:23:34.090 --> 00:23:34.540
+JAKE: OK.
+
+00:23:34.540 --> 00:23:35.190
+SURMA: But what I felt--
+
+00:23:35.190 --> 00:23:36.310
+JAKE: There's different
+architecture, as well,
+
+00:23:36.310 --> 00:23:36.775
+in that processor.
+
+00:23:36.775 --> 00:23:37.275
+OK.
+
+00:23:37.275 --> 00:23:40.570
+SURMA: But it seems to be a
+sweet spot between, like, 16
+
+00:23:40.570 --> 00:23:44.320
+and, I don't know, 64,
+depending on what you want.
+
+00:23:44.320 --> 00:23:47.660
+I think 16 looks really
+promising in this graph.
+
+00:23:47.660 --> 00:23:50.620
+Which means you have, like,
+a 256 pixel grid that you
+
+00:23:50.620 --> 00:23:51.182
+work with.
+
+00:23:51.182 --> 00:23:53.390
+JAKE: I thought I was going
+to come into this episode
+
+00:23:53.390 --> 00:23:55.840
+and I was going to
+go away understanding
+
+00:23:55.840 --> 00:23:56.715
+why the tiling works.
+
+00:23:56.715 --> 00:23:57.215
+No.
+
+00:23:57.215 --> 00:23:57.760
+It just does.
+
+00:24:00.280 --> 00:24:01.900
+SURMA: I spent the
+last week on this.
+
+00:24:01.900 --> 00:24:02.400
+Right?
+
+00:24:02.400 --> 00:24:02.650
+JAKE: Right.
+
+00:24:02.650 --> 00:24:04.130
+SURMA: You've been kind
+of sitting across from me
+
+00:24:04.130 --> 00:24:07.190
+and hearing me talking to people
+and trying to figure this out.
+
+00:24:07.190 --> 00:24:09.920
+This is as close I've
+gotten to understand it.
+
+00:24:09.920 --> 00:24:11.560
+In that there is
+this interaction
+
+00:24:11.560 --> 00:24:15.040
+between the processor predicting
+what values went in the cache.
+
+00:24:15.040 --> 00:24:17.650
+And then, not forcing the
+processor to evict that cache,
+
+00:24:17.650 --> 00:24:19.760
+because you read too far ahead.
+
+00:24:19.760 --> 00:24:22.990
+JAKE: But this is a massive case
+for tools, not rules, right?
+
+00:24:22.990 --> 00:24:24.770
+Don't go away and
+rewrite all your code--
+
+00:24:24.770 --> 00:24:25.280
+SURMA: With tiling.
+
+00:24:25.280 --> 00:24:26.240
+JAKE: --with tiling.
+
+00:24:26.240 --> 00:24:26.480
+SURMA: No.
+
+00:24:26.480 --> 00:24:26.850
+Right.
+
+00:24:26.850 --> 00:24:28.225
+JAKE: This is
+something you would
+
+00:24:28.225 --> 00:24:31.215
+have to very carefully profile
+on a wide range of machines
+
+00:24:31.215 --> 00:24:33.090
+with different processor
+architectures to see
+
+00:24:33.090 --> 00:24:34.490
+is this actually
+working across--
+
+00:24:34.490 --> 00:24:36.032
+SURMA: And also I
+find it interesting
+
+00:24:36.032 --> 00:24:38.530
+because we started at let's
+rotate an image, a very
+
+00:24:38.530 --> 00:24:39.970
+high level use case.
+
+00:24:39.970 --> 00:24:41.080
+And we fell down.
+
+00:24:41.080 --> 00:24:42.820
+And ended up with,
+like, let's talk
+
+00:24:42.820 --> 00:24:45.520
+about processor architecture
+and level one caches.
+
+00:24:45.520 --> 00:24:46.713
+JAKE: Yes.
+
+00:24:46.713 --> 00:24:48.130
+SURMA: So thanks
+to "Hacker News",
+
+00:24:48.130 --> 00:24:49.720
+I guess, for ruining my week.
+
+00:24:49.720 --> 00:24:51.610
+But it's been actually
+been very educational,
+
+00:24:51.610 --> 00:24:53.750
+even though I still don't
+fully understand it.
+
+00:24:53.750 --> 00:24:54.470
+JAKE: But I feel like--
+
+00:24:54.470 --> 00:24:55.000
+SURMA: I'm OK with that.
+
+00:24:55.000 --> 00:24:57.458
+JAKE: Yeah, and I feel that my
+understanding of lower level
+
+00:24:57.458 --> 00:24:58.010
+stuff is--
+
+00:24:58.010 --> 00:24:59.890
+like I say, there's
+that confusion element.
+
+00:24:59.890 --> 00:25:02.767
+But I feel like I've got
+an appreciation for--
+
+00:25:02.767 --> 00:25:03.850
+SURMA: The smarts, right--
+
+00:25:03.850 --> 00:25:04.310
+JAKE: Yeah.
+
+00:25:04.310 --> 00:25:05.435
+SURMA: --that go into that.
+
+00:25:05.435 --> 00:25:07.300
+JAKE: It's incredible.
+
+00:25:07.300 --> 00:25:09.770
+SURMA: So let's take a breather.
+
+00:25:09.770 --> 00:25:12.530
+And we'll see our poor audience.
+
+00:25:12.530 --> 00:25:13.435
+next time.
+
+00:25:13.435 --> 00:25:14.830
+[LAUGHTER]
+
+00:25:14.830 --> 00:25:16.720
+JAKE: But this is
+going into Squoosh in--
+
+00:25:16.720 --> 00:25:16.900
+SURMA: Yeah.
+
+00:25:16.900 --> 00:25:17.250
+It's going to be--
+
+00:25:17.250 --> 00:25:18.326
+[INTERPOSING VOICES]
+
+00:25:18.326 --> 00:25:20.420
+[MUSIC PLAYING]
+
+00:25:20.420 --> 00:25:20.980
+JAKE: Yes.
+
+00:25:20.980 --> 00:25:21.480
+SURMA: Oh.
+
+00:25:21.480 --> 00:25:22.510
+That's the one thing--
+
+00:25:22.510 --> 00:25:23.010
+ah.
+
+00:25:23.010 --> 00:25:26.770
+[GRUNTS] I have to
+write this down.
+
+00:25:26.770 --> 00:25:28.234
+How do I fix this?
+
+00:25:28.234 --> 00:25:32.440
+JAKE: [LAUGHS] (SINGING)
+Something for the edit.
+
+00:25:32.440 --> 00:25:33.590
+Something for the edit.
+
+00:25:33.590 --> 00:25:34.090
+SURMA: OK.
+
+00:25:34.090 --> 00:25:36.060
+Let's go from here.
+

@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:11.540 --> 00:00:15.090
+Reduce() is both a powerful,
+and often misunderstood function
+
+00:00:15.090 --> 00:00:16.140
+on arrays.
+
+00:00:16.140 --> 00:00:18.720
+In other functional languages,
+it's often called fold,
+
+00:00:18.720 --> 00:00:22.040
+or compress, or accumulate,
+but it's quite aptly named
+
+00:00:22.040 --> 00:00:26.040
+in JavaScript, as it reduces an
+entire array to a single value
+
+00:00:26.040 --> 00:00:27.870
+determined by the reducer--
+
+00:00:27.870 --> 00:00:30.120
+the function it
+takes as an argument.
+
+00:00:30.120 --> 00:00:31.770
+The standard example
+is calculating
+
+00:00:31.770 --> 00:00:34.000
+the sum of an array of numbers.
+
+00:00:34.000 --> 00:00:37.050
+So let's take a closer look at
+how reduce() and the reducer
+
+00:00:37.050 --> 00:00:38.070
+interacts.
+
+00:00:38.070 --> 00:00:41.010
+Reduce() takes the first
+two elements in the array,
+
+00:00:41.010 --> 00:00:44.610
+and uses the reducer function to
+reduce them to a single value.
+
+00:00:44.610 --> 00:00:48.090
+Next, the process repeats with
+the previously calculated value
+
+00:00:48.090 --> 00:00:50.190
+and the next value in the array.
+
+00:00:50.190 --> 00:00:52.290
+And this process keeps
+repeating until we
+
+00:00:52.290 --> 00:00:54.660
+are left with a single value.
+
+00:00:54.660 --> 00:00:57.330
+Reduce() needs a bit of getting
+used to in the way it works,
+
+00:00:57.330 --> 00:01:00.210
+but once you are there,
+it is incredibly useful.
+
+00:01:00.210 --> 00:01:02.670
+It can be used to implement
+set partitioning, finding
+
+00:01:02.670 --> 00:01:05.190
+the maximum, array
+flattening, and solve
+
+00:01:05.190 --> 00:01:08.220
+many other common problems
+in a very flexible way.
+
+00:01:12.460 --> 00:01:14.761
+We have one more episode
+left in this miniseries,
+
+00:01:14.761 --> 00:01:17.260
+and in the next one we're going
+to talk about the rather new
+
+00:01:17.260 --> 00:01:18.550
+flatMap().
+
+00:01:18.550 --> 00:01:20.410
+So if you find that
+interesting, you
+
+00:01:20.410 --> 00:01:23.140
+should subscribe so you
+can get a notification when
+
+00:01:23.140 --> 00:01:24.680
+the new episode comes out.
+
+00:01:24.680 --> 00:01:27.040
+But until then, there are
+some more "Supercharged"
+
+00:01:27.040 --> 00:01:29.100
+for you to watch.
+

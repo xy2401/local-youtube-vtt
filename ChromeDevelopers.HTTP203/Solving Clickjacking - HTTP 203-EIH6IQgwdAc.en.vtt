@@ -1,0 +1,1423 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.175 --> 00:00:02.300
+JAKE ARCHIBALD: So what
+are you doing this evening?
+
+00:00:02.300 --> 00:00:03.000
+I don't know.
+
+00:00:03.000 --> 00:00:04.490
+I don't have any small talk.
+
+00:00:04.490 --> 00:00:07.901
+I didn't become a
+developer to do small talk.
+
+00:00:07.901 --> 00:00:10.310
+It's literally why I became
+a developer, because I can't.
+
+00:00:10.310 --> 00:00:11.893
+SURMA: Maybe we can
+sneak out and just
+
+00:00:11.893 --> 00:00:13.640
+replace ourselves with--
+
+00:00:13.640 --> 00:00:16.730
+SPEAKER: And action.
+
+00:00:16.730 --> 00:00:19.110
+[MUSIC PLAYING]
+
+00:00:23.558 --> 00:00:24.350
+JAKE ARCHIBALD: So.
+
+00:00:24.350 --> 00:00:25.048
+SURMA: So.
+
+00:00:25.048 --> 00:00:25.840
+JAKE ARCHIBALD: So.
+
+00:00:25.840 --> 00:00:27.350
+SURMA: We haven't used it
+in the last two episodes.
+
+00:00:27.350 --> 00:00:28.060
+JAKE ARCHIBALD:
+We're using it now,
+
+00:00:28.060 --> 00:00:29.350
+and we're going to use it a lot.
+
+00:00:29.350 --> 00:00:29.890
+So--
+
+00:00:29.890 --> 00:00:30.740
+SURMA: So.
+
+00:00:30.740 --> 00:00:33.080
+JAKE ARCHIBALD: --I want
+to talk about clickjacking.
+
+00:00:33.080 --> 00:00:33.963
+SURMA: Oh, yes.
+
+00:00:33.963 --> 00:00:35.630
+JAKE ARCHIBALD: Now,
+this is a hack that
+
+00:00:35.630 --> 00:00:38.940
+was discovered in the 2000s.
+
+00:00:38.940 --> 00:00:39.480
+SURMA: Yeah.
+
+00:00:39.480 --> 00:00:39.860
+JAKE ARCHIBALD:
+And this is where
+
+00:00:39.860 --> 00:00:41.150
+you'd have a setup like this.
+
+00:00:41.150 --> 00:00:44.870
+You have a button that's
+part of a website,
+
+00:00:44.870 --> 00:00:48.630
+and then you have this, which
+is an iframe to another website.
+
+00:00:48.630 --> 00:00:50.085
+SURMA: Mm-hm.
+
+00:00:50.085 --> 00:00:50.930
+Another website.
+
+00:00:50.930 --> 00:00:52.388
+JAKE ARCHIBALD:
+Some other website,
+
+00:00:52.388 --> 00:00:54.750
+some other social media site.
+
+00:00:54.750 --> 00:00:58.490
+And the idea is, you click that,
+and it will like this page.
+
+00:00:58.490 --> 00:01:01.400
+It's bringing an interactive
+element from another site
+
+00:01:01.400 --> 00:01:02.670
+onto your site.
+
+00:01:02.670 --> 00:01:04.670
+Yes, and because it's an
+iframe, any clicks that
+
+00:01:04.670 --> 00:01:08.000
+are happening there will
+be owned by the iframe--
+
+00:01:08.000 --> 00:01:08.500
+SURMA: Yeah.
+
+00:01:08.500 --> 00:01:08.790
+[INTERPOSING VOICES]
+
+00:01:08.790 --> 00:01:10.070
+JAKE ARCHIBALD: --rather
+than the parent page--
+
+00:01:10.070 --> 00:01:11.240
+SURMA: Yes.
+
+00:01:11.240 --> 00:01:12.290
+JAKE ARCHIBALD: --to the
+point where, in order
+
+00:01:12.290 --> 00:01:14.610
+to drag this around, I've had
+to add this little bit here,
+
+00:01:14.610 --> 00:01:15.620
+which is part of
+the parent page,
+
+00:01:15.620 --> 00:01:18.037
+because if I do that, the click
+goes into the iframe and I
+
+00:01:18.037 --> 00:01:18.840
+can't control it.
+
+00:01:18.840 --> 00:01:22.010
+So clickjacking was
+this thing where
+
+00:01:22.010 --> 00:01:27.260
+people would abuse this
+feature by tricking people
+
+00:01:27.260 --> 00:01:31.730
+to like a page, buy something,
+or generally interact
+
+00:01:31.730 --> 00:01:35.360
+with a site that they don't
+think they're interacting with.
+
+00:01:35.360 --> 00:01:38.330
+And what would happen is,
+they would put a button,
+
+00:01:38.330 --> 00:01:41.788
+like, over the top, like
+this, but then make it--
+
+00:01:41.788 --> 00:01:43.330
+SURMA: This is the
+worst clickjacking
+
+00:01:43.330 --> 00:01:44.680
+attempt I've ever seen!
+
+00:01:44.680 --> 00:01:45.930
+JAKE ARCHIBALD: This is great!
+
+00:01:45.930 --> 00:01:46.340
+And then you'll get--
+
+00:01:46.340 --> 00:01:47.590
+SURMA: You want to click this.
+
+00:01:47.590 --> 00:01:48.400
+Click me, please.
+
+00:01:48.400 --> 00:01:49.100
+JAKE ARCHIBALD: I
+would fall for it.
+
+00:01:49.100 --> 00:01:49.610
+SURMA: Please, sir!
+
+00:01:49.610 --> 00:01:51.110
+JAKE ARCHIBALD: I
+would fall for it.
+
+00:01:51.110 --> 00:01:51.860
+I'm quite stupid.
+
+00:01:51.860 --> 00:01:53.510
+But it'll give it [INAUDIBLE].
+
+00:01:53.510 --> 00:01:56.420
+So when you click that, that
+would go down into the iframe
+
+00:01:56.420 --> 00:01:58.290
+and you've liked the page.
+
+00:01:58.290 --> 00:02:01.250
+Another way of doing it would be
+to put the Like button on top,
+
+00:02:01.250 --> 00:02:03.590
+but bring the
+opacity of it down.
+
+00:02:03.590 --> 00:02:05.840
+So you're clicking there,
+but you're actually clicking
+
+00:02:05.840 --> 00:02:08.923
+on the iframe, which is on top.
+
+00:02:08.923 --> 00:02:10.340
+Oh, various other
+tricks you could
+
+00:02:10.340 --> 00:02:13.613
+do by visually
+obscuring it like that
+
+00:02:13.613 --> 00:02:15.030
+and tricking the
+user to click it.
+
+00:02:15.030 --> 00:02:16.470
+They don't realize it's--
+
+00:02:16.470 --> 00:02:18.933
+although that content is
+controlled by the other site,
+
+00:02:18.933 --> 00:02:20.600
+you've done something
+to it to the point
+
+00:02:20.600 --> 00:02:22.220
+where it's no longer legible.
+
+00:02:22.220 --> 00:02:24.800
+Another one would be to put
+a message there and just
+
+00:02:24.800 --> 00:02:28.270
+encourage the user tech click
+on this little bit here.
+
+00:02:28.270 --> 00:02:30.680
+And the context of
+the actual button
+
+00:02:30.680 --> 00:02:33.690
+is gone, because you've covered
+it up [INAUDIBLE] with this.
+
+00:02:33.690 --> 00:02:36.030
+So this was a problem.
+
+00:02:36.030 --> 00:02:36.530
+SURMA: Yes.
+
+00:02:36.530 --> 00:02:39.140
+JAKE ARCHIBALD: This is a
+problem that they had to fix.
+
+00:02:39.140 --> 00:02:42.530
+And they fixed it in
+sort of 2009-2010,
+
+00:02:42.530 --> 00:02:43.970
+depending on the browser.
+
+00:02:43.970 --> 00:02:46.123
+And this was the solution.
+
+00:02:46.123 --> 00:02:47.540
+SURMA: The X-Frame
+Options header.
+
+00:02:47.540 --> 00:02:49.735
+JAKE ARCHIBALD: And
+this is another one
+
+00:02:49.735 --> 00:02:51.110
+of the things in
+the web platform
+
+00:02:51.110 --> 00:02:52.990
+that should have
+been the default.
+
+00:02:52.990 --> 00:02:54.740
+But because it wasn't
+there at the start--
+
+00:02:54.740 --> 00:02:55.710
+SURMA: Just like cause.
+
+00:02:55.710 --> 00:02:58.680
+JAKE ARCHIBALD: --just like
+cause and like no cause
+
+00:02:58.680 --> 00:03:00.380
+blah, blah, blah.
+
+00:03:00.380 --> 00:03:02.750
+So you put this
+header, and that says,
+
+00:03:02.750 --> 00:03:04.850
+I cannot be in an iframe--
+
+00:03:04.850 --> 00:03:05.660
+SURMA: OK.
+
+00:03:05.660 --> 00:03:07.952
+JAKE ARCHIBALD: --because,
+as well as things like Like
+
+00:03:07.952 --> 00:03:09.410
+buttons, what people
+were doing was
+
+00:03:09.410 --> 00:03:13.430
+creating like a
+whack-a-mole game, where
+
+00:03:13.430 --> 00:03:15.890
+you're playing whack-a-mole,
+like, oh, blip, blip, blip,
+
+00:03:15.890 --> 00:03:16.390
+blip.
+
+00:03:16.390 --> 00:03:17.030
+SURMA: Oh!
+
+00:03:17.030 --> 00:03:18.257
+Then suddenly, Like button.
+
+00:03:18.257 --> 00:03:20.090
+JAKE ARCHIBALD: No, but
+what you didn't know
+
+00:03:20.090 --> 00:03:24.590
+was there was an iframe over
+the top of, like, Amazon,
+
+00:03:24.590 --> 00:03:27.240
+and those moles were
+appearing in the places
+
+00:03:27.240 --> 00:03:29.240
+where you would navigate
+your way through Amazon
+
+00:03:29.240 --> 00:03:31.200
+and buy a thing.
+
+00:03:31.200 --> 00:03:31.860
+SURMA: Wow.
+
+00:03:31.860 --> 00:03:33.150
+JAKE ARCHIBALD: And that
+was one of the hacks
+
+00:03:33.150 --> 00:03:34.650
+that you could
+actually get the user
+
+00:03:34.650 --> 00:03:36.030
+to navigate around the site.
+
+00:03:36.030 --> 00:03:38.602
+And if you knew roughly where
+the buttons were going to be--
+
+00:03:38.602 --> 00:03:39.810
+SURMA: That's pretty amazing.
+
+00:03:39.810 --> 00:03:40.643
+JAKE ARCHIBALD: Yes.
+
+00:03:40.643 --> 00:03:42.820
+So this was the
+solution for that.
+
+00:03:42.820 --> 00:03:46.200
+SURMA: But the
+social button thing
+
+00:03:46.200 --> 00:03:47.783
+works with iframes
+to this day, right?
+
+00:03:47.783 --> 00:03:49.450
+JAKE ARCHIBALD: They
+want to be iframes.
+
+00:03:49.450 --> 00:03:51.960
+So what you'll see that happens
+now is you click on the Like
+
+00:03:51.960 --> 00:03:54.920
+button, and it will open a
+new tab or a pop-up window--
+
+00:03:54.920 --> 00:03:56.170
+SURMA: [INAUDIBLE] Like again.
+
+00:03:56.170 --> 00:03:58.690
+JAKE ARCHIBALD: --that is
+just to the social media site
+
+00:03:58.690 --> 00:04:00.690
+or to whatever site,
+and that is where
+
+00:04:00.690 --> 00:04:02.550
+you have to complete
+the final interaction,
+
+00:04:02.550 --> 00:04:04.662
+because that's the
+only time it's safe.
+
+00:04:04.662 --> 00:04:06.870
+SURMA: So basically, the
+embedder took responsibility
+
+00:04:06.870 --> 00:04:07.920
+for this at that point.
+
+00:04:07.920 --> 00:04:09.337
+JAKE ARCHIBALD:
+Yes, exactly that.
+
+00:04:09.337 --> 00:04:10.020
+SURMA: Embedee.
+
+00:04:10.020 --> 00:04:10.680
+JAKE ARCHIBALD: Yes.
+
+00:04:10.680 --> 00:04:12.055
+And then, because
+it's safe then,
+
+00:04:12.055 --> 00:04:15.930
+because the other site can't
+render anything over the top.
+
+00:04:15.930 --> 00:04:18.838
+But people are asking
+now, can we fix this?
+
+00:04:18.838 --> 00:04:20.880
+Can we make this actually
+work, so you don't have
+
+00:04:20.880 --> 00:04:22.050
+to go off to the other site?
+
+00:04:22.050 --> 00:04:24.630
+Can we make this safe?
+
+00:04:24.630 --> 00:04:29.190
+And in order to do this, as
+the owner of this button,
+
+00:04:29.190 --> 00:04:31.650
+I would need to
+confirm that nothing
+
+00:04:31.650 --> 00:04:36.841
+has messed with the rendering of
+the button in any sort of way.
+
+00:04:36.841 --> 00:04:39.493
+Like nothing's on top of it, but
+also, I haven't been blurred,
+
+00:04:39.493 --> 00:04:41.160
+I haven't had filters
+applied, I haven't
+
+00:04:41.160 --> 00:04:43.350
+had anything that
+is going to trick
+
+00:04:43.350 --> 00:04:44.663
+the user into doing something--
+
+00:04:44.663 --> 00:04:46.080
+SURMA: It's
+interesting, because--
+
+00:04:46.080 --> 00:04:46.620
+JAKE ARCHIBALD: --that
+I'm not aware of.
+
+00:04:46.620 --> 00:04:49.050
+SURMA: --this button probably is
+still an iframe, so it hasn't--
+
+00:04:49.050 --> 00:04:49.360
+JAKE ARCHIBALD: Yes.
+
+00:04:49.360 --> 00:04:51.030
+SURMA: --really have any context
+of what the other site is
+
+00:04:51.030 --> 00:04:52.130
+doing to that iframe.
+
+00:04:52.130 --> 00:04:53.130
+JAKE ARCHIBALD: Exactly.
+
+00:04:53.130 --> 00:04:56.070
+SURMA: And the
+IntersectionObserver
+
+00:04:56.070 --> 00:04:58.590
+already does this a
+little bit, because it
+
+00:04:58.590 --> 00:04:59.865
+has this feature where--
+
+00:04:59.865 --> 00:05:01.980
+oh, it's the first API,
+that's what I want to say.
+
+00:05:01.980 --> 00:05:03.522
+IntersectionObserver
+is the first API
+
+00:05:03.522 --> 00:05:06.180
+I've heard of that can
+penetrate iframes in a way,
+
+00:05:06.180 --> 00:05:09.330
+because it can track
+invisibility even if you're
+
+00:05:09.330 --> 00:05:10.650
+inside an iframe.
+
+00:05:10.650 --> 00:05:14.037
+JAKE ARCHIBALD: Yeah, there's
+a couple of APIs that give you
+
+00:05:14.037 --> 00:05:15.120
+information about iframes.
+
+00:05:15.120 --> 00:05:17.525
+There's the
+ancestorOrigins property
+
+00:05:17.525 --> 00:05:18.900
+that will, as an
+iframe, tell you
+
+00:05:18.900 --> 00:05:20.520
+what the origins of
+the parent iframes are.
+
+00:05:20.520 --> 00:05:21.540
+SURMA: Oh, I didn't
+know that one!
+
+00:05:21.540 --> 00:05:21.990
+Interesting.
+
+00:05:21.990 --> 00:05:22.830
+JAKE ARCHIBALD: That's
+a security feature.
+
+00:05:22.830 --> 00:05:24.870
+But as you say,
+IntersectionObserver, why
+
+00:05:24.870 --> 00:05:26.190
+do you know so much about this?
+
+00:05:26.190 --> 00:05:27.510
+Look who wrote the article!
+
+00:05:27.510 --> 00:05:27.920
+SURMA: That was me.
+
+00:05:27.920 --> 00:05:29.220
+JAKE ARCHIBALD: It's Mr. Surma.
+
+00:05:29.220 --> 00:05:30.960
+Yes, as you say, the
+IntersectionObserver
+
+00:05:30.960 --> 00:05:33.392
+will tell you when an element--
+
+00:05:33.392 --> 00:05:35.565
+oh, you've got a
+lovely demo here--
+
+00:05:35.565 --> 00:05:36.487
+is visible or not.
+
+00:05:36.487 --> 00:05:37.570
+And it works in an iframe.
+
+00:05:37.570 --> 00:05:39.820
+SURMA: So either you can
+scroll the iframe out of view
+
+00:05:39.820 --> 00:05:42.930
+or you can scroll the content
+inside the iframe out of view,
+
+00:05:42.930 --> 00:05:44.580
+and both times,
+the sections will
+
+00:05:44.580 --> 00:05:46.660
+be able to tell you
+if you are visible,
+
+00:05:46.660 --> 00:05:49.210
+which was made for stuff like
+ads who want to know if they're
+
+00:05:49.210 --> 00:05:51.710
+actually visible, so you get
+paid for it, or similar things.
+
+00:05:51.710 --> 00:05:53.340
+JAKE ARCHIBALD: Yes,
+or lazy loading--
+
+00:05:53.340 --> 00:05:53.820
+SURMA: Lazy loading as well.
+
+00:05:53.820 --> 00:05:54.300
+True.
+
+00:05:54.300 --> 00:05:56.050
+JAKE ARCHIBALD:
+--stop/starting animations
+
+00:05:56.050 --> 00:05:57.180
+until they come into view.
+
+00:05:57.180 --> 00:05:59.640
+It's one of my favorite
+additions to the web, actually.
+
+00:05:59.640 --> 00:06:02.010
+It makes a bunch of
+stuff a lot simpler.
+
+00:06:02.010 --> 00:06:03.980
+SURMA: Apparently
+ResizeObserver is better.
+
+00:06:03.980 --> 00:06:05.730
+JAKE ARCHIBALD:
+ResizeObserver is amazing.
+
+00:06:05.730 --> 00:06:07.180
+I think this came out a
+year previously, didn't it?
+
+00:06:07.180 --> 00:06:07.560
+SURMA: Oh, that's right.
+
+00:06:07.560 --> 00:06:09.150
+JAKE ARCHIBALD: So it didn't
+make it into our competition.
+
+00:06:09.150 --> 00:06:11.233
+SURMA: If you don't know
+what we're talking about,
+
+00:06:11.233 --> 00:06:16.230
+watch our "HTTP 203" Christmas
+2018 feature rundown.
+
+00:06:16.230 --> 00:06:18.990
+JAKE ARCHIBALD:
+You're great at these.
+
+00:06:18.990 --> 00:06:21.930
+Oh, we got to get those
+Likes and Subscribes.
+
+00:06:21.930 --> 00:06:24.910
+IntersectionObserver is looking
+at solving the clickjacking
+
+00:06:24.910 --> 00:06:25.410
+problem.
+
+00:06:25.410 --> 00:06:26.590
+SURMA: Cool!
+
+00:06:26.590 --> 00:06:27.090
+All right.
+
+00:06:27.090 --> 00:06:29.850
+JAKE ARCHIBALD: So this is in
+IntersectionObserver v2, which
+
+00:06:29.850 --> 00:06:33.210
+is in Canary right now, behind
+the Experimental Web Platform
+
+00:06:33.210 --> 00:06:34.515
+Features flag.
+
+00:06:34.515 --> 00:06:35.850
+SURMA: OK.
+
+00:06:35.850 --> 00:06:38.017
+JAKE ARCHIBALD: So this is
+what IntersectionObserver
+
+00:06:38.017 --> 00:06:39.240
+looks like right now.
+
+00:06:39.240 --> 00:06:41.280
+And do you know what?
+
+00:06:41.280 --> 00:06:42.750
+I don't like this API pattern.
+
+00:06:42.750 --> 00:06:43.720
+SURMA: No, I'm not a big fan.
+
+00:06:43.720 --> 00:06:45.095
+JAKE ARCHIBALD:
+It's super weird.
+
+00:06:45.095 --> 00:06:46.170
+It feels inside out.
+
+00:06:46.170 --> 00:06:48.510
+SURMA: Yeah, and you
+always have the entries,
+
+00:06:48.510 --> 00:06:49.900
+but most of the time,
+you only get one entry.
+
+00:06:49.900 --> 00:06:50.983
+JAKE ARCHIBALD: One entry.
+
+00:06:50.983 --> 00:06:52.920
+Yeah, I find it a really
+weirdly designed API.
+
+00:06:52.920 --> 00:06:55.020
+But we'll gloss over that.
+
+00:06:55.020 --> 00:06:56.228
+This is the new bit.
+
+00:06:56.228 --> 00:06:57.020
+SURMA: Oh, options.
+
+00:06:57.020 --> 00:06:58.860
+JAKE ARCHIBALD:
+So in the options,
+
+00:06:58.860 --> 00:07:00.660
+you say you want to
+track visibility.
+
+00:07:00.660 --> 00:07:04.660
+Now, IntersectionObserver
+calls this thing visibility.
+
+00:07:04.660 --> 00:07:06.910
+SURMA: Which is what the
+original IntersectionObserver
+
+00:07:06.910 --> 00:07:08.487
+already--
+
+00:07:08.487 --> 00:07:09.320
+JAKE ARCHIBALD: Yes.
+
+00:07:09.320 --> 00:07:11.147
+I think this is badly named.
+
+00:07:11.147 --> 00:07:12.730
+SURMA: The
+IntersectionObserver's kind
+
+00:07:12.730 --> 00:07:15.340
+of correctly and both bad
+named, because, yes, it
+
+00:07:15.340 --> 00:07:19.355
+tracks intersections
+with your viewport,
+
+00:07:19.355 --> 00:07:21.130
+but it's also kind
+of called visibility.
+
+00:07:21.130 --> 00:07:23.620
+But to be fair, you can
+use IntersectionObserver
+
+00:07:23.620 --> 00:07:25.690
+to track actual intersections,
+even off-screen,
+
+00:07:25.690 --> 00:07:27.850
+by changing what
+it is relative to.
+
+00:07:27.850 --> 00:07:29.158
+So fair game.
+
+00:07:29.158 --> 00:07:31.700
+But still, it's very confusing
+this is now called visibility.
+
+00:07:31.700 --> 00:07:34.630
+JAKE ARCHIBALD: Yeah, and I
+think they might rename it,
+
+00:07:34.630 --> 00:07:35.860
+but they're kind of like--
+
+00:07:35.860 --> 00:07:37.360
+I said, I think
+this is badly named.
+
+00:07:37.360 --> 00:07:39.193
+And they said, well,
+what name should it be?
+
+00:07:39.193 --> 00:07:39.970
+And I went--
+
+00:07:39.970 --> 00:07:41.100
+SURMA: Obscuredness.
+
+00:07:41.100 --> 00:07:42.850
+JAKE ARCHIBALD: Yeah,
+and I said something
+
+00:07:42.850 --> 00:07:45.935
+like that, definitely
+not being clickjacked.
+
+00:07:45.935 --> 00:07:47.260
+I don't know.
+
+00:07:47.260 --> 00:07:47.890
+I don't know.
+
+00:07:47.890 --> 00:07:49.390
+So I don't know.
+
+00:07:49.390 --> 00:07:51.670
+You have to supply
+the delay property.
+
+00:07:51.670 --> 00:07:55.390
+Because this is a more
+expensive bit of computation,
+
+00:07:55.390 --> 00:07:57.830
+you have to give it a delay,
+which just sort of de-bounces
+
+00:07:57.830 --> 00:07:59.020
+the amount of times
+you hear about it.
+
+00:07:59.020 --> 00:08:00.145
+SURMA: Why do I have to go?
+
+00:08:00.145 --> 00:08:01.220
+Why is this-- sets?
+
+00:08:01.220 --> 00:08:02.230
+How low can I go?
+
+00:08:02.230 --> 00:08:04.105
+JAKE ARCHIBALD: That is
+as low as you can go.
+
+00:08:04.105 --> 00:08:04.390
+SURMA: OK.
+
+00:08:04.390 --> 00:08:05.410
+JAKE ARCHIBALD: 100 is
+as low as you can go.
+
+00:08:05.410 --> 00:08:06.480
+You can go higher.
+
+00:08:06.480 --> 00:08:07.150
+But 100 is as low as can go.
+
+00:08:07.150 --> 00:08:08.570
+SURMA: But you can be
+nice and tell the browser,
+
+00:08:08.570 --> 00:08:09.880
+I don't need to know this often.
+
+00:08:09.880 --> 00:08:10.070
+Like--
+
+00:08:10.070 --> 00:08:10.510
+JAKE ARCHIBALD:
+Yeah, this is low--
+
+00:08:10.510 --> 00:08:10.750
+SURMA: --just take your time.
+
+00:08:10.750 --> 00:08:11.530
+JAKE ARCHIBALD:
+--priority, just--
+
+00:08:11.530 --> 00:08:11.860
+SURMA: OK.
+
+00:08:11.860 --> 00:08:12.220
+That's actually nice.
+
+00:08:12.220 --> 00:08:13.512
+JAKE ARCHIBALD: --I don't mind.
+
+00:08:13.512 --> 00:08:20.080
+And then in your doodad
+thingy-bob, callback here,
+
+00:08:20.080 --> 00:08:22.600
+in the entries, it tells you
+it's visible, and it'll--
+
+00:08:22.600 --> 00:08:24.370
+SURMA: [INAUDIBLE] obscures.
+
+00:08:24.370 --> 00:08:26.390
+JAKE ARCHIBALD: Yes,
+well, the opposite.
+
+00:08:26.390 --> 00:08:26.670
+SURMA: It's not obscured.
+
+00:08:26.670 --> 00:08:27.460
+JAKE ARCHIBALD:
+It's not obscured.
+
+00:08:27.460 --> 00:08:29.127
+Yes, see, it's gray
+if you [INAUDIBLE]..
+
+00:08:31.780 --> 00:08:34.945
+I think it's really good.
+
+00:08:34.945 --> 00:08:37.070
+The naming aside, the
+functionality is really good.
+
+00:08:37.070 --> 00:08:40.240
+And what I'm going
+to do is enable it.
+
+00:08:40.240 --> 00:08:40.830
+There we go.
+
+00:08:40.830 --> 00:08:41.330
+SURMA: Cool.
+
+00:08:41.330 --> 00:08:43.635
+JAKE ARCHIBALD: OK, so now
+it's the same as before.
+
+00:08:43.635 --> 00:08:46.302
+There's just a bit of extra code
+running in here that knows when
+
+00:08:46.302 --> 00:08:46.445
+it's--
+
+00:08:46.445 --> 00:08:47.205
+SURMA: It loads.
+
+00:08:47.205 --> 00:08:49.080
+JAKE ARCHIBALD: --being
+hijacked or whatever.
+
+00:08:49.080 --> 00:08:50.830
+So you can see, I can
+sort of move this around
+
+00:08:50.830 --> 00:08:51.710
+and everything's fine.
+
+00:08:51.710 --> 00:08:52.130
+SURMA: Oh, cool.
+
+00:08:52.130 --> 00:08:52.850
+Not obscured.
+
+00:08:52.850 --> 00:08:54.170
+JAKE ARCHIBALD: So I'm
+going to try the hack now
+
+00:08:54.170 --> 00:08:55.730
+where I'm going to put
+the button over there,
+
+00:08:55.730 --> 00:08:57.470
+and I'm going to
+change the opacity.
+
+00:08:57.470 --> 00:09:00.100
+And as soon as I change the
+opacity, it's like, nah.
+
+00:09:00.100 --> 00:09:01.610
+SURMA: Can't tell
+for sure, I guess.
+
+00:09:01.610 --> 00:09:03.460
+They're being conservative
+about this, aren't they?
+
+00:09:03.460 --> 00:09:05.918
+JAKE ARCHIBALD: Absolutely,
+and that's what the aim of this
+
+00:09:05.918 --> 00:09:09.050
+is right now is it doesn't
+care so much if there's
+
+00:09:09.050 --> 00:09:10.610
+false positives.
+
+00:09:10.610 --> 00:09:12.853
+They don't want false negatives.
+
+00:09:12.853 --> 00:09:14.270
+It wants to play
+on the safe side.
+
+00:09:14.270 --> 00:09:16.970
+SURMA: So they want to basically
+have 100% success rate of--
+
+00:09:16.970 --> 00:09:19.250
+they want to get all
+the obscured cases
+
+00:09:19.250 --> 00:09:22.790
+at the cost of maybe saying
+you're obscured when you're not
+
+00:09:22.790 --> 00:09:23.670
+actually obscured.
+
+00:09:23.670 --> 00:09:24.030
+JAKE ARCHIBALD: Yep.
+
+00:09:24.030 --> 00:09:24.330
+Yep.
+
+00:09:24.330 --> 00:09:26.372
+And the same goes for
+other things, like filters.
+
+00:09:26.372 --> 00:09:28.590
+So if I bring the blur here--
+
+00:09:28.590 --> 00:09:29.090
+SURMA: No.
+
+00:09:29.090 --> 00:09:31.010
+JAKE ARCHIBALD: As soon as
+it's blurred to any degree--
+
+00:09:31.010 --> 00:09:33.302
+because you don't know what
+that button actually means,
+
+00:09:33.302 --> 00:09:35.810
+but it knows that it's
+being messed around with.
+
+00:09:35.810 --> 00:09:36.890
+And same here.
+
+00:09:36.890 --> 00:09:39.057
+As soon as there's an
+intersection, it's like, nope.
+
+00:09:39.057 --> 00:09:41.265
+So you can't do the trick
+where you encourage someone
+
+00:09:41.265 --> 00:09:42.240
+to click there.
+
+00:09:42.240 --> 00:09:44.280
+And one thing I thought
+was quite nice--
+
+00:09:44.280 --> 00:09:45.830
+and I'm going to
+move that to there--
+
+00:09:45.830 --> 00:09:47.960
+if I apply some
+blur to this, you'll
+
+00:09:47.960 --> 00:09:52.093
+see eventually, eventually, as
+it gets blurry, it triggers it.
+
+00:09:52.093 --> 00:09:53.510
+SURMA: Oh, because
+there's a tiny,
+
+00:09:53.510 --> 00:09:54.998
+little blur overlapping into--
+
+00:09:54.998 --> 00:09:56.540
+JAKE ARCHIBALD: Yes,
+so it's not just
+
+00:09:56.540 --> 00:09:57.950
+intersecting at a layout level.
+
+00:09:57.950 --> 00:09:59.540
+It's intersecting
+at a paint level.
+
+00:09:59.540 --> 00:10:00.650
+SURMA: That's really good.
+
+00:10:00.650 --> 00:10:02.608
+JAKE ARCHIBALD: And that's
+because this element
+
+00:10:02.608 --> 00:10:04.085
+is appearing on top.
+
+00:10:04.085 --> 00:10:05.960
+But as soon as I make
+that one appear on top,
+
+00:10:05.960 --> 00:10:08.025
+it's fine, because
+it's on the top level.
+
+00:10:08.025 --> 00:10:09.440
+SURMA: Cool.
+
+00:10:09.440 --> 00:10:12.620
+JAKE ARCHIBALD: Yeah,
+that's really it.
+
+00:10:12.620 --> 00:10:14.160
+SURMA: That's
+really interesting.
+
+00:10:14.160 --> 00:10:16.820
+JAKE ARCHIBALD: And it's
+designed to detect things like
+
+00:10:16.820 --> 00:10:18.805
+clip-path, scrolling,
+anything that would be--
+
+00:10:18.805 --> 00:10:19.930
+SURMA: Yeah, I'm guessing--
+
+00:10:19.930 --> 00:10:20.510
+JAKE ARCHIBALD: [INAUDIBLE]
+
+00:10:20.510 --> 00:10:21.885
+SURMA: --they
+spend a lot of time
+
+00:10:21.885 --> 00:10:24.650
+going through all the possible
+ways you can mess around
+
+00:10:24.650 --> 00:10:28.070
+with obscuring and hiding
+and pretending to be there
+
+00:10:28.070 --> 00:10:29.280
+when you're actually not.
+
+00:10:29.280 --> 00:10:31.113
+JAKE ARCHIBALD: And
+there's more work to do.
+
+00:10:31.113 --> 00:10:32.570
+It's still a work in progress.
+
+00:10:32.570 --> 00:10:33.680
+I filed a few bugs
+recently where
+
+00:10:33.680 --> 00:10:35.763
+I found someone's like,
+oh, I can actually do this
+
+00:10:35.763 --> 00:10:36.993
+and it doesn't realize.
+
+00:10:36.993 --> 00:10:38.660
+So those will be fixed
+before launching.
+
+00:10:38.660 --> 00:10:41.155
+But the idea is we can start
+bringing back this behavior
+
+00:10:41.155 --> 00:10:43.280
+that we used to have before
+we figured out it was--
+
+00:10:43.280 --> 00:10:45.155
+SURMA: Actual compatible,
+composable widgets.
+
+00:10:45.155 --> 00:10:46.988
+JAKE ARCHIBALD: Yeah,
+so you can click Like,
+
+00:10:46.988 --> 00:10:49.128
+it will actually work,
+or even a Buy Now button,
+
+00:10:49.128 --> 00:10:50.420
+and it will do the right thing.
+
+00:10:50.420 --> 00:10:52.950
+SURMA: You know that you can
+detect if this is legit click
+
+00:10:52.950 --> 00:10:53.450
+or not.
+
+00:10:53.450 --> 00:10:54.450
+JAKE ARCHIBALD: Exactly.
+
+00:10:54.450 --> 00:10:55.880
+And that's the
+important detail is
+
+00:10:55.880 --> 00:10:59.466
+the owner of the button
+knows what's happening to it.
+
+00:10:59.466 --> 00:11:03.020
+SURMA: So it's still the
+responsibility of the embeddee
+
+00:11:03.020 --> 00:11:04.977
+to make sure the click is legit.
+
+00:11:04.977 --> 00:11:05.810
+JAKE ARCHIBALD: Yes.
+
+00:11:05.810 --> 00:11:08.060
+SURMA: But now they can
+at a reliable level,
+
+00:11:08.060 --> 00:11:10.910
+because before this was
+practically impossible,
+
+00:11:10.910 --> 00:11:13.190
+no way to tell if there was
+content on top, I think.
+
+00:11:13.190 --> 00:11:13.790
+JAKE ARCHIBALD: Exactly.
+
+00:11:13.790 --> 00:11:15.748
+Yes, there was no way of
+doing this beforehand.
+
+00:11:15.748 --> 00:11:16.890
+This is entirely new.
+
+00:11:16.890 --> 00:11:19.100
+SURMA: So you said this
+is in Canary right now.
+
+00:11:19.100 --> 00:11:20.600
+JAKE ARCHIBALD: In
+Canary right now.
+
+00:11:20.600 --> 00:11:23.990
+SURMA: Do we have any
+signals from other people?
+
+00:11:23.990 --> 00:11:28.140
+I feel like this is something
+that, historically, Apple
+
+00:11:28.140 --> 00:11:30.540
+would be interested in, in
+securing these kind of things
+
+00:11:30.540 --> 00:11:31.150
+on the web.
+
+00:11:31.150 --> 00:11:33.030
+JAKE ARCHIBALD: There's
+definitely interest.
+
+00:11:33.030 --> 00:11:35.732
+It's something that the owners
+of these kind of buttons
+
+00:11:35.732 --> 00:11:36.690
+are very interested in.
+
+00:11:36.690 --> 00:11:37.815
+SURMA: Yeah, I can imagine.
+
+00:11:37.815 --> 00:11:40.103
+JAKE ARCHIBALD: So it's
+sort of popular with them.
+
+00:11:40.103 --> 00:11:42.520
+Right now, I think the other
+browsers are happy for Chrome
+
+00:11:42.520 --> 00:11:46.080
+to experiment and to prove
+that the API can actually work,
+
+00:11:46.080 --> 00:11:48.750
+can be done, and be fast,
+because you don't want just
+
+00:11:48.750 --> 00:11:51.178
+using this API to break
+the performance of the web.
+
+00:11:51.178 --> 00:11:51.970
+SURMA: That's true.
+
+00:11:51.970 --> 00:11:53.550
+JAKE ARCHIBALD: And that's
+what we're working on now.
+
+00:11:53.550 --> 00:11:55.130
+I have no more content.
+
+00:11:55.130 --> 00:11:56.520
+It's all done.
+
+00:11:56.520 --> 00:11:57.300
+That's it.
+
+00:11:57.300 --> 00:11:59.280
+This sheet of paper, done!
+
+00:11:59.280 --> 00:11:59.790
+That was it.
+
+00:11:59.790 --> 00:12:00.610
+SURMA: Tablet, done!
+
+00:12:00.610 --> 00:12:02.902
+JAKE ARCHIBALD: What did you
+want, another half an hour
+
+00:12:02.902 --> 00:12:04.020
+episode?
+
+00:12:04.020 --> 00:12:05.730
+SURMA: Yeah, tell
+me about something.
+
+00:12:05.730 --> 00:12:06.870
+He doesn't say cut.
+
+00:12:06.870 --> 00:12:08.870
+What do we do?
+

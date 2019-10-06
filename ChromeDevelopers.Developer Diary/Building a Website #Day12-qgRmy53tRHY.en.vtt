@@ -1,0 +1,1370 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.327 --> 00:00:02.160
+PAUL LEWIS: Hello, it's
+only the bonus round
+
+00:00:02.160 --> 00:00:03.993
+of Developer Diary for
+the Chrome Dev Summit
+
+00:00:03.993 --> 00:00:06.340
+website with me, your host.
+
+00:00:06.340 --> 00:00:08.590
+Now, don't-- I'm not going--
+I'm not taking it in that
+
+00:00:08.590 --> 00:00:09.390
+direction.
+
+00:00:09.390 --> 00:00:14.010
+We got this far without me being
+ridiculous-- too ridiculous.
+
+00:00:14.010 --> 00:00:16.540
+Let's just move on.
+
+00:00:16.540 --> 00:00:17.570
+So good news.
+
+00:00:17.570 --> 00:00:18.330
+Yay.
+
+00:00:18.330 --> 00:00:21.560
+Thing that I've added
+to the website is this.
+
+00:00:21.560 --> 00:00:23.840
+This little button
+in the corner.
+
+00:00:23.840 --> 00:00:27.640
+However, when you click
+on the little button,
+
+00:00:27.640 --> 00:00:29.960
+out comes the notification
+settings for the Chrome Dev
+
+00:00:29.960 --> 00:00:31.320
+Summit website.
+
+00:00:31.320 --> 00:00:32.630
+Yay.
+
+00:00:32.630 --> 00:00:34.770
+So the idea we had
+was, well, you know,
+
+00:00:34.770 --> 00:00:35.900
+obviously push is a thing.
+
+00:00:35.900 --> 00:00:38.820
+Let's add it to the
+site so that people
+
+00:00:38.820 --> 00:00:42.320
+can be notified when
+any of the sessions
+
+00:00:42.320 --> 00:00:43.850
+start or, as you
+can see, if there
+
+00:00:43.850 --> 00:00:47.400
+are event updates like-- I don't
+know-- I'm sorry, we're running
+
+00:00:47.400 --> 00:00:52.150
+late, or don't forget
+to get your passes,
+
+00:00:52.150 --> 00:00:55.722
+or whatever people need.
+
+00:00:55.722 --> 00:00:57.930
+So when you click on it, I
+guess I've already-- yeah,
+
+00:00:57.930 --> 00:00:58.790
+there you go.
+
+00:00:58.790 --> 00:01:00.580
+Show notifications?
+
+00:01:00.580 --> 00:01:01.800
+So I'll allow that.
+
+00:01:01.800 --> 00:01:04.310
+And it goes off on the back--
+it sends the registration
+
+00:01:04.310 --> 00:01:05.950
+across to the backend server.
+
+00:01:05.950 --> 00:01:07.810
+And then there we
+go, once it's got
+
+00:01:07.810 --> 00:01:09.930
+a response back from the
+backend server that's
+
+00:01:09.930 --> 00:01:12.750
+storing these
+subscriptions, it does that.
+
+00:01:12.750 --> 00:01:16.790
+And I'll tell you what, let me
+register for Darren's keynote,
+
+00:01:16.790 --> 00:01:18.790
+like so.
+
+00:01:18.790 --> 00:01:20.840
+Over here, on my
+other machine that you
+
+00:01:20.840 --> 00:01:23.620
+can't see that I can
+see, that is down here--
+
+00:01:23.620 --> 00:01:26.490
+that's why I pointed--
+I've got my admin interface
+
+00:01:26.490 --> 00:01:28.460
+for the backend server.
+
+00:01:28.460 --> 00:01:29.010
+Bear with me.
+
+00:01:31.620 --> 00:01:35.480
+Now, what I'm going to do is
+I'm going to-- let's pretend.
+
+00:01:35.480 --> 00:01:39.600
+Let's pretend, you and I, now,
+that it is in fact the day
+
+00:01:39.600 --> 00:01:41.490
+of the Chrome Dev Summit.
+
+00:01:41.490 --> 00:01:44.540
+And you know, we're
+off, we're doing
+
+00:01:44.540 --> 00:01:46.680
+whatever, we're doing whatever.
+
+00:01:46.680 --> 00:01:49.015
+And we send out a
+notification for the keynote.
+
+00:01:49.015 --> 00:01:55.001
+And all being well-- la, la, la.
+
+00:01:55.001 --> 00:01:55.500
+Boop.
+
+00:01:55.500 --> 00:01:57.359
+There we go, in the top corner.
+
+00:01:57.359 --> 00:01:59.400
+Chrome Dev Summit, the
+keynote with Darren Fisher
+
+00:01:59.400 --> 00:02:00.940
+is starting now.
+
+00:02:00.940 --> 00:02:03.315
+And then when you click on
+it, because it'll be the live,
+
+00:02:03.315 --> 00:02:05.580
+it will actually take you
+into the Chrome Dev Summit
+
+00:02:05.580 --> 00:02:07.840
+site or whatever, and
+you'll have the live stream
+
+00:02:07.840 --> 00:02:09.169
+and off you go.
+
+00:02:09.169 --> 00:02:09.699
+Great.
+
+00:02:09.699 --> 00:02:12.710
+OK, let me show you around the
+code quickly for the things
+
+00:02:12.710 --> 00:02:14.380
+that I think are interesting.
+
+00:02:14.380 --> 00:02:17.410
+If you're interested, I can
+show you the backend code
+
+00:02:17.410 --> 00:02:20.086
+in another bonus Dev Diary.
+
+00:02:20.086 --> 00:02:21.460
+Just let us know
+in the comments.
+
+00:02:21.460 --> 00:02:23.160
+For now, I'm going
+to be concentrating
+
+00:02:23.160 --> 00:02:25.420
+purely on the front-end stuff.
+
+00:02:25.420 --> 00:02:27.340
+And a lot of it is
+actually state management,
+
+00:02:27.340 --> 00:02:29.610
+so I'm not going to dive
+into too much of that
+
+00:02:29.610 --> 00:02:31.460
+because it is quite
+sort of nitty-gritty,
+
+00:02:31.460 --> 00:02:33.585
+have they clicked this
+button, have they done that.
+
+00:02:33.585 --> 00:02:37.906
+But I'll show you what I
+think, hopefully, makes sense.
+
+00:02:37.906 --> 00:02:39.280
+So the thing is--
+the first thing
+
+00:02:39.280 --> 00:02:41.680
+I suppose is in the
+service worker installation
+
+00:02:41.680 --> 00:02:45.680
+bit I listened on the ready of
+the serviceWorker installation.
+
+00:02:45.680 --> 00:02:48.800
+And if there is a push
+manager in the registration,
+
+00:02:48.800 --> 00:02:50.429
+then I initialize
+my push manager,
+
+00:02:50.429 --> 00:02:52.470
+which I had changed this
+morning to push handler.
+
+00:02:52.470 --> 00:02:53.900
+But I haven't pushed
+the code to GitHub
+
+00:02:53.900 --> 00:02:55.520
+yet, so this is still
+the old name for it
+
+00:02:55.520 --> 00:02:56.895
+because I didn't
+want to conflict
+
+00:02:56.895 --> 00:03:01.940
+with the actual push manager--
+I'm an idiot, like anybody
+
+00:03:01.940 --> 00:03:04.090
+needed a reminder.
+
+00:03:04.090 --> 00:03:06.030
+However, nonetheless,
+we have this init.
+
+00:03:06.030 --> 00:03:09.740
+In the init we have this setup
+which is going to basically
+
+00:03:09.740 --> 00:03:12.039
+fetch from the remote
+server, which we'll see is
+
+00:03:12.039 --> 00:03:13.080
+the cds-push.appspot.com.
+
+00:03:16.110 --> 00:03:18.660
+And when it fetches that
+and pulls that back,
+
+00:03:18.660 --> 00:03:24.010
+I've set it so that
+cds-push.appspot.com will
+
+00:03:24.010 --> 00:03:28.380
+respond with the public key
+that it needs in order to do
+
+00:03:28.380 --> 00:03:29.390
+the registration.
+
+00:03:29.390 --> 00:03:30.890
+OK?
+
+00:03:30.890 --> 00:03:34.040
+So we get that and we
+basically store that back.
+
+00:03:34.040 --> 00:03:38.750
+Now, I'm using Jake's
+idbKeyval to do this
+
+00:03:38.750 --> 00:03:43.570
+because his idbKeyval
+is basically
+
+00:03:43.570 --> 00:03:46.740
+like this lightweight, super
+lightweight, thing that
+
+00:03:46.740 --> 00:03:49.310
+sits on top of index db
+that makes it behave more
+
+00:03:49.310 --> 00:03:50.130
+like local storage.
+
+00:03:50.130 --> 00:03:51.960
+Because I just want
+name value pairs,
+
+00:03:51.960 --> 00:03:53.650
+but I don't want to
+spend all my time--
+
+00:03:53.650 --> 00:03:56.810
+I don't use local storage
+because it's synchronous
+
+00:03:56.810 --> 00:03:59.650
+and it can be slow, apparently.
+
+00:03:59.650 --> 00:04:03.085
+And idb is the right
+call, here, but I
+
+00:04:03.085 --> 00:04:04.960
+don't want to do all
+that kind of transaction
+
+00:04:04.960 --> 00:04:05.840
+open the database
+blah, blah, blah.
+
+00:04:05.840 --> 00:04:06.506
+Don't like that.
+
+00:04:06.506 --> 00:04:07.850
+It's not a nice API.
+
+00:04:07.850 --> 00:04:09.950
+And so Jake's written
+this idbKeyval,
+
+00:04:09.950 --> 00:04:12.090
+which kind of does the
+Get, Set, Delete keys,
+
+00:04:12.090 --> 00:04:13.130
+all that kind of stuff.
+
+00:04:13.130 --> 00:04:14.671
+And it's really nice
+and lightweight.
+
+00:04:14.671 --> 00:04:15.800
+So I'm using that.
+
+00:04:15.800 --> 00:04:18.290
+So we basically still
+have the App key.
+
+00:04:18.290 --> 00:04:20.990
+And then we basically
+do a bunch of updating
+
+00:04:20.990 --> 00:04:25.070
+of the initial view, which is
+set up the controls, make sure
+
+00:04:25.070 --> 00:04:26.590
+that any buttons
+that are on screen
+
+00:04:26.590 --> 00:04:29.360
+say the right thing so
+that if you come back
+
+00:04:29.360 --> 00:04:31.370
+into the site-- so
+for example, let's go,
+
+00:04:31.370 --> 00:04:33.430
+actually-- let me show you this.
+
+00:04:33.430 --> 00:04:37.460
+When we go to the schedule, now,
+and I go to Darren's keynote,
+
+00:04:37.460 --> 00:04:38.710
+it says notifications enabled.
+
+00:04:38.710 --> 00:04:42.145
+It already says that because
+that's what that function is
+
+00:04:42.145 --> 00:04:44.520
+doing is basically looking
+for any of those in the update
+
+00:04:44.520 --> 00:04:46.603
+current view, it's looking
+for any of the existing
+
+00:04:46.603 --> 00:04:48.970
+buttons in the page and
+it says, switch them
+
+00:04:48.970 --> 00:04:50.980
+to notifications enabled
+or disabled depending
+
+00:04:50.980 --> 00:04:54.460
+on what we've actually
+got in the key val--
+
+00:04:54.460 --> 00:04:57.356
+the idbKeyval value
+for that session.
+
+00:04:57.356 --> 00:04:59.380
+Fair enough.
+
+00:04:59.380 --> 00:05:01.829
+And that's largely what that
+stuff is going to be doing.
+
+00:05:01.829 --> 00:05:03.870
+It's like find here, you
+see a updateCurrentView,
+
+00:05:03.870 --> 00:05:09.010
+find the notification buttons,
+find from the idbKeyval
+
+00:05:09.010 --> 00:05:12.130
+whether it's disabled or enabled
+for that particular thing,
+
+00:05:12.130 --> 00:05:14.060
+and so on.
+
+00:05:14.060 --> 00:05:18.290
+Processing changes is not so--
+it disables all the buttons,
+
+00:05:18.290 --> 00:05:21.350
+finds out what the current
+value is, updates it
+
+00:05:21.350 --> 00:05:24.130
+using this push manager, and
+then it does a bit of toasting
+
+00:05:24.130 --> 00:05:27.360
+and all the rest of it to
+kind of say what happened.
+
+00:05:27.360 --> 00:05:29.030
+The actual getting
+of a subscription
+
+00:05:29.030 --> 00:05:30.700
+is quite interesting.
+
+00:05:30.700 --> 00:05:36.570
+You ask the service worker,
+and if there is a subscription
+
+00:05:36.570 --> 00:05:38.520
+already and the key
+hasn't changed--
+
+00:05:38.520 --> 00:05:41.130
+the public key on the
+server hasn't changed since,
+
+00:05:41.130 --> 00:05:42.100
+you can just return it.
+
+00:05:42.100 --> 00:05:45.910
+Otherwise I set the
+Keyval for the app key
+
+00:05:45.910 --> 00:05:48.350
+and I ask the registration
+for a subscription.
+
+00:05:48.350 --> 00:05:50.100
+And you have to set
+this user visible only
+
+00:05:50.100 --> 00:05:51.670
+to true today in Chrome.
+
+00:05:51.670 --> 00:05:55.040
+It basically is the key that
+says, if I get a push message,
+
+00:05:55.040 --> 00:05:58.177
+I will definitely
+show a notification.
+
+00:05:58.177 --> 00:06:00.260
+And the other thing is the
+application server key,
+
+00:06:00.260 --> 00:06:06.350
+which is a Base64 encoded
+version of the public key
+
+00:06:06.350 --> 00:06:07.000
+or something.
+
+00:06:07.000 --> 00:06:07.620
+Oh no, no, no.
+
+00:06:07.620 --> 00:06:08.119
+It's not.
+
+00:06:08.119 --> 00:06:11.580
+Actually you have to convert
+the Base64 over to a [? UN-8 ?]
+
+00:06:11.580 --> 00:06:12.940
+array.
+
+00:06:12.940 --> 00:06:13.970
+I don't know why.
+
+00:06:13.970 --> 00:06:16.345
+I'll be honest with you, it
+was one of those moments when
+
+00:06:16.345 --> 00:06:18.510
+I saw that and I
+was like-- I mean,
+
+00:06:18.510 --> 00:06:21.520
+surely if I gave it
+Base64 encoded string it
+
+00:06:21.520 --> 00:06:22.890
+would be able to do it for me.
+
+00:06:22.890 --> 00:06:24.306
+Maybe I should
+give that feedback.
+
+00:06:27.410 --> 00:06:30.040
+Anyway, push manager
+handles the global
+
+00:06:30.040 --> 00:06:31.200
+do you have a subscription?
+
+00:06:31.200 --> 00:06:32.760
+If not, do you want one?
+
+00:06:32.760 --> 00:06:34.370
+All that kind of stuff.
+
+00:06:34.370 --> 00:06:39.644
+The push controls-- not a lot
+to really talk about, here.
+
+00:06:39.644 --> 00:06:41.060
+I mean I know
+there's a-- like, it
+
+00:06:41.060 --> 00:06:43.060
+looks like there's a
+little bit of showbiz going
+
+00:06:43.060 --> 00:06:44.898
+on with that kind
+of woo, and the woo.
+
+00:06:44.898 --> 00:06:48.240
+But really, mostly no.
+
+00:06:51.000 --> 00:06:54.480
+And so the way it actually
+works is-- in fact,
+
+00:06:54.480 --> 00:06:56.270
+let me just slow it
+down in DevTools.
+
+00:06:56.270 --> 00:06:58.130
+And you'll see it's
+actually in canary.
+
+00:06:58.130 --> 00:06:59.730
+It's a bit blurry.
+
+00:06:59.730 --> 00:07:02.420
+So I might take a
+look at that today.
+
+00:07:02.420 --> 00:07:04.720
+In fact, let's go at 10% speed.
+
+00:07:04.720 --> 00:07:10.300
+And-- OK.
+
+00:07:10.300 --> 00:07:11.785
+The elements that
+are doing things
+
+00:07:11.785 --> 00:07:17.100
+like these is this, which
+is-- basically is the button.
+
+00:07:17.100 --> 00:07:18.850
+And then there's the headline.
+
+00:07:18.850 --> 00:07:20.630
+And then there's the list.
+
+00:07:20.630 --> 00:07:23.380
+And the headline and the
+list are basically faded out.
+
+00:07:23.380 --> 00:07:28.420
+And they're transformed down by
+100% of the containing element
+
+00:07:28.420 --> 00:07:31.360
+when they're-- once
+they collapse like this,
+
+00:07:31.360 --> 00:07:32.550
+and faded out.
+
+00:07:32.550 --> 00:07:37.130
+So I have a ripple inside,
+here, and the ripple basically
+
+00:07:37.130 --> 00:07:40.920
+expands to be big enough
+and it's in-- so this, OK.
+
+00:07:40.920 --> 00:07:42.690
+Let's go back.
+
+00:07:42.690 --> 00:07:46.950
+This containing element is
+however big it needs to be.
+
+00:07:46.950 --> 00:07:49.550
+And the ripple always expands
+and it's overflow hidden.
+
+00:07:49.550 --> 00:07:52.290
+So as the ripple expands, its
+just a circle that gets bigger.
+
+00:07:52.290 --> 00:07:56.590
+It basically hits the edge of
+that block and just disappears.
+
+00:07:56.590 --> 00:07:58.260
+OK, that's one bit.
+
+00:07:58.260 --> 00:08:03.080
+Then the-- meanwhile, the button
+and the headline and the list,
+
+00:08:03.080 --> 00:08:05.390
+they're just basically
+sliding up and fading in.
+
+00:08:05.390 --> 00:08:09.290
+And because of the timing of
+it, mostly you don't really
+
+00:08:09.290 --> 00:08:12.670
+see-- there you go.
+
+00:08:12.670 --> 00:08:16.574
+And it's all scales, transforms,
+all the usual-- and opacity--
+
+00:08:16.574 --> 00:08:18.490
+how do we make it friendly
+for the compositer,
+
+00:08:18.490 --> 00:08:21.560
+the usual tricks,
+a little smattering
+
+00:08:21.560 --> 00:08:24.130
+of will change or whatever.
+
+00:08:24.130 --> 00:08:26.260
+And you get that effect.
+
+00:08:26.260 --> 00:08:27.680
+There you go.
+
+00:08:27.680 --> 00:08:29.200
+And then the picking
+up the buttons
+
+00:08:29.200 --> 00:08:31.830
+is, again, it just tells the
+push manager, oh, they clicked
+
+00:08:31.830 --> 00:08:33.669
+on-- they clicked on this.
+
+00:08:33.669 --> 00:08:35.409
+And so it disables
+the buttons, makes
+
+00:08:35.409 --> 00:08:37.159
+the remote request,
+when it comes back, it
+
+00:08:37.159 --> 00:08:38.860
+enables all the button.
+
+00:08:38.860 --> 00:08:39.360
+Right.
+
+00:08:39.360 --> 00:08:42.610
+Final piece of the
+jigsaw today is
+
+00:08:42.610 --> 00:08:44.930
+what happens in
+the service worker
+
+00:08:44.930 --> 00:08:48.749
+when you got the
+message coming in.
+
+00:08:48.749 --> 00:08:49.540
+How does that work?
+
+00:08:49.540 --> 00:08:52.930
+Well, when you have
+a registration,
+
+00:08:52.930 --> 00:08:55.480
+there's an endpoint
+and some keys
+
+00:08:55.480 --> 00:09:00.520
+and-- I think that's mostly it--
+that you send to your server.
+
+00:09:00.520 --> 00:09:05.820
+And there's a library called
+Web-Push, which we can link to
+
+00:09:05.820 --> 00:09:09.420
+in the notes, and it will-- it
+generates all the keys you need
+
+00:09:09.420 --> 00:09:13.910
+and does all the things you need
+to have a server in JavaScript
+
+00:09:13.910 --> 00:09:18.090
+to basically encrypt to
+payload, which is great,
+
+00:09:18.090 --> 00:09:21.120
+and ping the endpoint that
+you got from the subscription
+
+00:09:21.120 --> 00:09:25.572
+process, and that's
+what it does.
+
+00:09:25.572 --> 00:09:26.540
+Yeah.
+
+00:09:26.540 --> 00:09:33.150
+So that means that on the
+client side, on the Chrome side,
+
+00:09:33.150 --> 00:09:35.876
+there is-- in the service worker
+that you register this onPush.
+
+00:09:35.876 --> 00:09:37.500
+So that when the
+endpoint gets pinged--
+
+00:09:37.500 --> 00:09:39.320
+so you make your registration,
+you get an endpoint,
+
+00:09:39.320 --> 00:09:40.486
+you send that to the server.
+
+00:09:40.486 --> 00:09:42.520
+The server then pings
+it with a payload.
+
+00:09:42.520 --> 00:09:44.950
+That causes whichever
+messaging service is actually
+
+00:09:44.950 --> 00:09:46.750
+underpinning all this
+to actually ping back
+
+00:09:46.750 --> 00:09:48.500
+to your service worker
+and go, by the way,
+
+00:09:48.500 --> 00:09:52.640
+a thing happened-- yay-- which
+we get in the onPush, right?
+
+00:09:52.640 --> 00:09:53.640
+So that's what happens.
+
+00:09:53.640 --> 00:09:55.570
+We ping the endpoint
+and I get-- the payload
+
+00:09:55.570 --> 00:09:58.760
+I give it is actually
+the slug of the session.
+
+00:09:58.760 --> 00:10:02.640
+So like slash deficit, slash
+schedule, slash keynote,
+
+00:10:02.640 --> 00:10:04.100
+something like that.
+
+00:10:04.100 --> 00:10:08.340
+And what I then do
+is I just set up
+
+00:10:08.340 --> 00:10:15.950
+an initial payload for this
+push, the notification.
+
+00:10:15.950 --> 00:10:18.200
+And then I basically--
+I look up the sessions.
+
+00:10:18.200 --> 00:10:24.190
+And I go through and I look
+to see if the URL matches
+
+00:10:24.190 --> 00:10:26.990
+the slug that I was sent.
+
+00:10:26.990 --> 00:10:27.780
+Right?
+
+00:10:27.780 --> 00:10:28.375
+Yeah.
+
+00:10:28.375 --> 00:10:30.470
+Thought that makes sense.
+
+00:10:30.470 --> 00:10:33.035
+The session being what
+was actually posted from
+
+00:10:33.035 --> 00:10:34.410
+is part of the
+push notification.
+
+00:10:34.410 --> 00:10:37.406
+So if I see like, slash deficit,
+slash schedule, slash keynote,
+
+00:10:37.406 --> 00:10:40.810
+I'll go, oh, it's the
+keynote with Darren Fisher
+
+00:10:40.810 --> 00:10:42.190
+is starting now.
+
+00:10:42.190 --> 00:10:48.114
+And I set the icon to be the
+image of the speaker, which
+
+00:10:48.114 --> 00:10:49.780
+takes me to the next
+part of the process
+
+00:10:49.780 --> 00:10:53.530
+where I do something that
+I'm not that fond of.
+
+00:10:53.530 --> 00:10:55.500
+But honestly, it
+feels a bit funny,
+
+00:10:55.500 --> 00:10:57.210
+but all the same it works.
+
+00:10:57.210 --> 00:11:00.540
+I take that and I find
+the image in the cache.
+
+00:11:00.540 --> 00:11:02.850
+And then I get a
+blob of the image
+
+00:11:02.850 --> 00:11:09.270
+and then I use a file reader to
+read that image as a data URL.
+
+00:11:09.270 --> 00:11:15.410
+And then I set the icon to be
+that Base64 encoded image URL.
+
+00:11:15.410 --> 00:11:17.370
+Which then means that
+I can show notification
+
+00:11:17.370 --> 00:11:20.770
+with the title and the message
+that's been generated entirely
+
+00:11:20.770 --> 00:11:23.120
+from the cache.
+
+00:11:23.120 --> 00:11:25.770
+Your alternative is
+to just sort of assume
+
+00:11:25.770 --> 00:11:27.930
+that-- hey, they had a
+good enough connection
+
+00:11:27.930 --> 00:11:30.030
+to get a push, so they
+probably have enough data
+
+00:11:30.030 --> 00:11:32.580
+to go out and get the
+image and the text
+
+00:11:32.580 --> 00:11:34.210
+or whatever I feel
+like sending them.
+
+00:11:34.210 --> 00:11:35.990
+But that's a
+request that doesn't
+
+00:11:35.990 --> 00:11:37.480
+need to be made, in my view.
+
+00:11:37.480 --> 00:11:41.450
+And also it means that my server
+has to be able to go-- OK,
+
+00:11:41.450 --> 00:11:43.450
+who are you, what do
+you need to know, oh,
+
+00:11:43.450 --> 00:11:46.422
+here's the image you need,
+and here's the-- whatever.
+
+00:11:46.422 --> 00:11:48.970
+It didn't seem like
+it's worth doing to me.
+
+00:11:48.970 --> 00:11:51.320
+It felt like it was sort
+of a case of you know what?
+
+00:11:51.320 --> 00:11:54.640
+All I need to tell you is
+which session is starting
+
+00:11:54.640 --> 00:11:56.580
+and everything else will
+take care of itself.
+
+00:11:56.580 --> 00:12:01.400
+Now, if I send you a
+push without a message--
+
+00:12:01.400 --> 00:12:05.286
+as in without a session,
+then this bit will fail.
+
+00:12:05.286 --> 00:12:07.700
+Don't say fail, it just,
+it won't do anything,
+
+00:12:07.700 --> 00:12:10.610
+it doesn't matter.
+
+00:12:10.610 --> 00:12:14.540
+And what I'll do
+is I just assume
+
+00:12:14.540 --> 00:12:19.000
+that whatever the literal
+text is that came in
+
+00:12:19.000 --> 00:12:20.300
+is what we should be sending.
+
+00:12:20.300 --> 00:12:21.883
+So that's how we do
+the event updates.
+
+00:12:21.883 --> 00:12:23.420
+So if in the
+backend, we just put
+
+00:12:23.420 --> 00:12:27.830
+in some random string or emoji
+or whatever, when it comes in,
+
+00:12:27.830 --> 00:12:30.437
+that text will not be matched
+to any of the sessions,
+
+00:12:30.437 --> 00:12:32.520
+so we just propagate it
+straight through as that's
+
+00:12:32.520 --> 00:12:33.960
+what they wanted to say.
+
+00:12:33.960 --> 00:12:35.920
+Which is true, that's
+what they wanted to say.
+
+00:12:35.920 --> 00:12:38.750
+They didn't want to say one of
+the sessions was starting now.
+
+00:12:38.750 --> 00:12:42.220
+And the icon defaults to
+their Chrome Dev Summit 512
+
+00:12:42.220 --> 00:12:45.730
+icon, which is-- you
+probably remember--
+
+00:12:45.730 --> 00:12:53.120
+is this one here, general Chrome
+Dev Summit-iness in an icon.
+
+00:12:53.120 --> 00:12:53.930
+So there you go.
+
+00:12:53.930 --> 00:12:56.550
+Good news is that I'm going to
+be pushing this out hopefully
+
+00:12:56.550 --> 00:12:59.350
+today, unless I find any
+catastrophic bugs between now
+
+00:12:59.350 --> 00:13:01.540
+and actually pushing it live.
+
+00:13:01.540 --> 00:13:03.540
+But I've been working on
+this for quite a while.
+
+00:13:03.540 --> 00:13:05.210
+This has taken some work.
+
+00:13:05.210 --> 00:13:07.250
+Not on the client
+side, surprisingly.
+
+00:13:07.250 --> 00:13:10.040
+On the server side it's been
+quite an interesting process
+
+00:13:10.040 --> 00:13:12.270
+of just making sure
+everything's just aligned
+
+00:13:12.270 --> 00:13:15.770
+and trying to make sure that
+people don't get multi-notified
+
+00:13:15.770 --> 00:13:17.256
+and all that kind of stuff.
+
+00:13:17.256 --> 00:13:22.705
+Oh, final bit that I will
+show you-- is on-- you
+
+00:13:22.705 --> 00:13:24.320
+know that user visible only?
+
+00:13:24.320 --> 00:13:25.350
+Is that what it was?
+
+00:13:25.350 --> 00:13:26.487
+What was the flag?
+
+00:13:26.487 --> 00:13:28.070
+It was in the push
+manager, wasn't it,
+
+00:13:28.070 --> 00:13:28.970
+when we did the subscription?
+
+00:13:28.970 --> 00:13:30.844
+Let me just find out
+which exact-- yeah, user
+
+00:13:30.844 --> 00:13:32.130
+visible only, yeah, it was.
+
+00:13:32.130 --> 00:13:35.270
+Because that's set to true,
+if you remember, I said,
+
+00:13:35.270 --> 00:13:37.160
+when you have that
+flag, you're promising
+
+00:13:37.160 --> 00:13:38.730
+to show a notification.
+
+00:13:38.730 --> 00:13:41.500
+Here's something I discovered.
+
+00:13:41.500 --> 00:13:43.184
+The event for the
+onPush, you want
+
+00:13:43.184 --> 00:13:45.100
+it to wait until-- so
+you're basically saying,
+
+00:13:45.100 --> 00:13:49.570
+OK, don't go away, I've
+got some stuff to do.
+
+00:13:49.570 --> 00:13:51.640
+And this will take a promise.
+
+00:13:51.640 --> 00:13:53.980
+And when the promise
+change finishes,
+
+00:13:53.980 --> 00:13:55.600
+you must make sure
+that you've shown
+
+00:13:55.600 --> 00:13:57.040
+a notification by that point.
+
+00:13:57.040 --> 00:13:59.467
+And I was finding out
+that sometimes I'd
+
+00:13:59.467 --> 00:14:00.300
+get my notification.
+
+00:14:00.300 --> 00:14:02.900
+And then sometimes,
+Chrome would say,
+
+00:14:02.900 --> 00:14:06.091
+this website's updating in the
+background, just so you know.
+
+00:14:06.091 --> 00:14:07.715
+And then I'd also
+get my notifications.
+
+00:14:07.715 --> 00:14:10.215
+So I was getting like a double
+notification, and I was like,
+
+00:14:10.215 --> 00:14:12.160
+what is going on?
+
+00:14:12.160 --> 00:14:14.350
+Bit of a Stack
+Overflow search for me.
+
+00:14:14.350 --> 00:14:16.950
+And it turns out that
+it's because when
+
+00:14:16.950 --> 00:14:21.310
+you do the self.registratio
+n.showNotification call,
+
+00:14:21.310 --> 00:14:23.010
+you must return it.
+
+00:14:23.010 --> 00:14:25.180
+It must be part of
+the promise chain,
+
+00:14:25.180 --> 00:14:29.400
+otherwise this promise
+chain will finish
+
+00:14:29.400 --> 00:14:31.255
+and there will be no
+notification shown.
+
+00:14:31.255 --> 00:14:32.630
+And so Chrome will
+say, oh, well,
+
+00:14:32.630 --> 00:14:34.316
+they said user
+visible only was true.
+
+00:14:34.316 --> 00:14:36.440
+So I better put that message
+up that says this site
+
+00:14:36.440 --> 00:14:38.480
+updated in the background.
+
+00:14:38.480 --> 00:14:40.090
+Fair enough.
+
+00:14:40.090 --> 00:14:42.759
+And then your show
+notification code actually then
+
+00:14:42.759 --> 00:14:44.550
+kicks in at some other
+point, so you end up
+
+00:14:44.550 --> 00:14:45.508
+with two notifications.
+
+00:14:45.508 --> 00:14:47.990
+Whereas if you return
+it, you're basically
+
+00:14:47.990 --> 00:14:50.020
+saying that
+event.waitUntil will wait
+
+00:14:50.020 --> 00:14:53.090
+until I've shown a
+notification, which is actually
+
+00:14:53.090 --> 00:14:54.090
+what I wanted to do.
+
+00:14:54.090 --> 00:14:56.310
+So just an FYI.
+
+00:14:56.310 --> 00:15:00.750
+I don't recall seeing this
+much in various samples
+
+00:15:00.750 --> 00:15:03.910
+around the web about how to
+actually show notification.
+
+00:15:03.910 --> 00:15:06.314
+You must make sure
+that it is returned.
+
+00:15:06.314 --> 00:15:06.980
+So there you go.
+
+00:15:06.980 --> 00:15:08.010
+Code is up on GitHub.
+
+00:15:08.010 --> 00:15:09.780
+Have a proper look around.
+
+00:15:09.780 --> 00:15:12.257
+As always, thank you for
+joining me on the journey.
+
+00:15:12.257 --> 00:15:14.340
+We're getting very close
+to Chrome Dev Summit now.
+
+00:15:14.340 --> 00:15:17.150
+I think it's like two
+or three weeks away.
+
+00:15:17.150 --> 00:15:20.530
+So you can subscribe
+for notifications
+
+00:15:20.530 --> 00:15:23.790
+if you want to be
+notified, now, when
+
+00:15:23.790 --> 00:15:26.360
+the event's starting
+or a particular event--
+
+00:15:26.360 --> 00:15:29.450
+a particular session of interest
+to you is actually starting.
+
+00:15:29.450 --> 00:15:30.770
+That's the whole point of this.
+
+00:15:30.770 --> 00:15:32.710
+And also there's the
+code there, so you can
+
+00:15:32.710 --> 00:15:34.400
+have a good old look through.
+
+00:15:34.400 --> 00:15:34.910
+Brilliant.
+
+00:15:34.910 --> 00:15:37.460
+Have a great day, and thank
+you very much for joining me
+
+00:15:37.460 --> 00:15:39.080
+on bonus round number 1.
+
+00:15:39.080 --> 00:15:40.630
+[MUSIC PLAYING]
+

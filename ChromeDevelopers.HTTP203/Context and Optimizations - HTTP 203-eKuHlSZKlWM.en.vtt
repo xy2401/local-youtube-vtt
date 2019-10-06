@@ -1,0 +1,678 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:01.840
+JAKE: Performance matters.
+
+00:00:01.840 --> 00:00:02.065
+Remember that?
+
+00:00:02.065 --> 00:00:02.760
+Remember when we
+used to say that?
+
+00:00:02.760 --> 00:00:03.593
+SURMA: Perf matters.
+
+00:00:03.593 --> 00:00:04.840
+JAKE: Perf matters.
+
+00:00:04.840 --> 00:00:07.670
+But only when it matters.
+
+00:00:07.670 --> 00:00:11.909
+[MUSIC PLAYING]
+
+00:00:15.220 --> 00:00:17.470
+SURMA: There's another thing
+I've been thinking about,
+
+00:00:17.470 --> 00:00:20.110
+how people think about
+optimization and performance
+
+00:00:20.110 --> 00:00:20.796
+in general.
+
+00:00:20.796 --> 00:00:21.420
+And I've been--
+
+00:00:21.420 --> 00:00:22.390
+JAKE: Do they think about it?
+
+00:00:22.390 --> 00:00:23.600
+SURMA: That's the thing.
+
+00:00:23.600 --> 00:00:24.700
+So I feel like--
+
+00:00:24.700 --> 00:00:25.000
+JAKE: [? I ?] [? know ?]
+[? you ?] [? do. ?]
+
+00:00:25.000 --> 00:00:26.500
+SURMA: At some point
+on the web, you
+
+00:00:26.500 --> 00:00:28.719
+you're bound to think about it.
+
+00:00:28.719 --> 00:00:30.760
+Sometimes it is just too
+easy to just do it wrong
+
+00:00:30.760 --> 00:00:31.760
+and get horrible
+performance out of it.
+
+00:00:31.760 --> 00:00:33.430
+And people will
+start yelling at you.
+
+00:00:33.430 --> 00:00:36.476
+But I feel like people
+fall into three camps
+
+00:00:36.476 --> 00:00:37.600
+of how they think about it.
+
+00:00:37.600 --> 00:00:40.550
+The first camp is
+the snake oil camp.
+
+00:00:40.550 --> 00:00:42.730
+Just apply snake oil
+generously to areas.
+
+00:00:42.730 --> 00:00:44.950
+Like [? you hurt, ?]
+scrolling is slow.
+
+00:00:44.950 --> 00:00:47.047
+I must change everything,
+and it will get faster.
+
+00:00:47.047 --> 00:00:48.130
+JAKE: Oh, right, yes, yes.
+
+00:00:48.130 --> 00:00:49.630
+SURMA: It's that kind of person.
+
+00:00:49.630 --> 00:00:52.804
+It's basically rules not
+tools, where people just
+
+00:00:52.804 --> 00:00:54.220
+hear something
+like, you shouldn't
+
+00:00:54.220 --> 00:00:56.050
+be using async functions
+because they're slower
+
+00:00:56.050 --> 00:00:57.430
+than [? functions. ?]
+And they just hear rules.
+
+00:00:57.430 --> 00:00:59.221
+They don't question
+them and just use them.
+
+00:00:59.221 --> 00:01:01.150
+That's obviously not a
+good pattern to be in.
+
+00:01:01.150 --> 00:01:04.330
+JAKE: I still see
+code where, instead
+
+00:01:04.330 --> 00:01:06.100
+of using string
+concatenation, it's
+
+00:01:06.100 --> 00:01:08.050
+an array of strings
+that's joined,
+
+00:01:08.050 --> 00:01:11.200
+because that was faster in '96.
+
+00:01:11.200 --> 00:01:13.060
+But I still see code
+getting published.
+
+00:01:13.060 --> 00:01:15.260
+And it's like, you question
+it in a code review.
+
+00:01:15.260 --> 00:01:16.926
+And it's like, oh,
+it's faster this way.
+
+00:01:16.926 --> 00:01:18.790
+It's like, not for six years.
+
+00:01:18.790 --> 00:01:20.505
+SURMA: And even if
+it was, it's the--
+
+00:01:20.505 --> 00:01:21.630
+we're going to get to that.
+
+00:01:21.630 --> 00:01:21.970
+JAKE: OK, OK.
+
+00:01:21.970 --> 00:01:23.620
+SURMA: So the second
+tier I see-- and that's,
+
+00:01:23.620 --> 00:01:24.850
+I want to say, the majority.
+
+00:01:24.850 --> 00:01:26.891
+I don't want to call anyone
+out or point fingers.
+
+00:01:26.891 --> 00:01:29.590
+But I feel like it's what
+I see the most on Twitter
+
+00:01:29.590 --> 00:01:32.564
+is people who do benchmarks.
+
+00:01:32.564 --> 00:01:33.480
+They look for numbers.
+
+00:01:33.480 --> 00:01:35.780
+And if a number is smaller,
+then that must be better.
+
+00:01:35.780 --> 00:01:39.040
+And so they say like, oh,
+if arrow functions are
+
+00:01:39.040 --> 00:01:44.230
+smaller or for-of loops are
+slower than old school for let
+
+00:01:44.230 --> 00:01:46.030
+i, blah.
+
+00:01:46.030 --> 00:01:49.090
+JAKE: We caught this recently in
+the project we were working on.
+
+00:01:49.090 --> 00:01:52.570
+I was using matrix
+objects for like pendulum
+
+00:01:52.570 --> 00:01:53.860
+effects with calculator.
+
+00:01:53.860 --> 00:01:56.600
+Because it, for me,
+read really well,
+
+00:01:56.600 --> 00:01:57.850
+and I think the question came.
+
+00:01:57.850 --> 00:02:00.310
+It was like, well, why don't
+we just do this with maths?
+
+00:02:00.310 --> 00:02:02.860
+And it's like, well, number
+A, I don't know the maths.
+
+00:02:02.860 --> 00:02:06.680
+But more importantly, it would
+be harder to read afterwards.
+
+00:02:06.680 --> 00:02:08.610
+So let's just use the
+objects that are there,
+
+00:02:08.610 --> 00:02:09.735
+and it's more maintainable.
+
+00:02:09.735 --> 00:02:10.704
+It is probably slow--
+
+00:02:10.704 --> 00:02:11.620
+well, probably slower.
+
+00:02:11.620 --> 00:02:12.130
+SURMA: And that's the thing.
+
+00:02:12.130 --> 00:02:15.072
+So people often tunnel on the
+microbenchmarks, I feel like.
+
+00:02:15.072 --> 00:02:16.780
+Like, oh, if you this
+thing, it's slower.
+
+00:02:16.780 --> 00:02:19.600
+And in Safari, it's even more
+slower than in other browsers.
+
+00:02:19.600 --> 00:02:23.590
+And I hear you, and
+you're probably correct.
+
+00:02:23.590 --> 00:02:25.262
+But I think that
+people should strive
+
+00:02:25.262 --> 00:02:26.470
+to be more in the third camp.
+
+00:02:26.470 --> 00:02:28.330
+Because the answer,
+usually, is it depends.
+
+00:02:28.330 --> 00:02:31.285
+Your context is so important
+on the performance side.
+
+00:02:31.285 --> 00:02:33.700
+It always depends on what
+you're talking about.
+
+00:02:33.700 --> 00:02:35.127
+And it's always a trade-off.
+
+00:02:35.127 --> 00:02:35.710
+JAKE: Exactly.
+
+00:02:35.710 --> 00:02:41.020
+SURMA: So you always trade-off
+readability or reusability or
+
+00:02:41.020 --> 00:02:41.590
+scalability.
+
+00:02:41.590 --> 00:02:44.730
+Or something is the trade-off
+for switching the technique.
+
+00:02:44.730 --> 00:02:47.350
+And you might gain performance
+on a microbenchmark,
+
+00:02:47.350 --> 00:02:48.820
+but it might not
+actually help you.
+
+00:02:48.820 --> 00:02:49.370
+JAKE: No, no it doesn't.
+
+00:02:49.370 --> 00:02:50.380
+SURMA: So that's
+two things there.
+
+00:02:50.380 --> 00:02:52.420
+So on one hand, people
+like to optimize things
+
+00:02:52.420 --> 00:02:53.390
+that are not their bottleneck.
+
+00:02:53.390 --> 00:02:54.726
+JAKE: Yeah, it's the inside of
+the loop and not the outside
+
+00:02:54.726 --> 00:02:55.960
+of the loop that's the problem.
+
+00:02:55.960 --> 00:02:56.585
+SURMA: Exactly.
+
+00:02:56.585 --> 00:02:59.172
+So the first rule
+is always measure.
+
+00:02:59.172 --> 00:03:00.880
+See if you're optimizing
+and the time you
+
+00:03:00.880 --> 00:03:03.400
+spend on optimizing that
+bit is actually giving you
+
+00:03:03.400 --> 00:03:05.650
+any notable advantages.
+
+00:03:05.650 --> 00:03:07.900
+If I make my for
+loop over 10 objects
+
+00:03:07.900 --> 00:03:12.370
+faster by using a for-let
+loop instead of a for-of loop,
+
+00:03:12.370 --> 00:03:13.430
+sure, it might be faster.
+
+00:03:13.430 --> 00:03:14.770
+We are talking microseconds.
+
+00:03:14.770 --> 00:03:17.297
+And nobody's going to notice
+or have any benefit from it.
+
+00:03:17.297 --> 00:03:18.380
+So that's the first thing.
+
+00:03:18.380 --> 00:03:22.180
+The other thing is readability
+is very important, for example.
+
+00:03:22.180 --> 00:03:26.900
+And I lost my train of thought.
+
+00:03:26.900 --> 00:03:28.280
+JAKE: Readability is important.
+
+00:03:28.280 --> 00:03:29.170
+SURMA: It is.
+
+00:03:29.170 --> 00:03:31.460
+JAKE: And it's more important.
+
+00:03:31.460 --> 00:03:32.794
+Performance matters.
+
+00:03:32.794 --> 00:03:33.377
+Remember that?
+
+00:03:33.377 --> 00:03:34.180
+Remember when we
+used to say that?
+
+00:03:34.180 --> 00:03:35.263
+SURMA: Perf matters, yeah.
+
+00:03:35.263 --> 00:03:36.150
+JAKE: Perf matters.
+
+00:03:36.150 --> 00:03:39.715
+But only when it matters.
+
+00:03:39.715 --> 00:03:41.090
+SURMA: Oh, I got
+my example back.
+
+00:03:41.090 --> 00:03:43.180
+JAKE: If you're still
+your frame budget--
+
+00:03:43.180 --> 00:03:43.810
+SURMA: Exactly.
+
+00:03:43.810 --> 00:03:46.850
+So thinking in budgets
+is super helpful
+
+00:03:46.850 --> 00:03:48.700
+because, as you
+might know, I've been
+
+00:03:48.700 --> 00:03:52.880
+looking into using workers more,
+moving off the main thread.
+
+00:03:52.880 --> 00:03:55.360
+And so when I hit
+a button, I now
+
+00:03:55.360 --> 00:03:58.722
+have to send a message to the
+worker and do my logic there.
+
+00:03:58.722 --> 00:04:01.180
+Because my logic is now in a
+worker without the [? dong. ?]
+
+00:04:01.180 --> 00:04:02.750
+The other thing, and then up
+[? at ?] [? the ?] [INAUDIBLE]
+
+00:04:02.750 --> 00:04:03.610
+back.
+
+00:04:03.610 --> 00:04:06.784
+So if you measure that, yes,
+the response to a button tap
+
+00:04:06.784 --> 00:04:08.950
+will be longer, because
+there's an actual round trip
+
+00:04:08.950 --> 00:04:11.320
+and thread hops involved.
+
+00:04:11.320 --> 00:04:13.804
+And so people, there were
+some people who said,
+
+00:04:13.804 --> 00:04:14.720
+you shouldn't do that.
+
+00:04:14.720 --> 00:04:15.490
+It's slower.
+
+00:04:15.490 --> 00:04:16.060
+JAKE: Right.
+
+00:04:16.060 --> 00:04:17.320
+SURMA: And it's
+not a good pattern
+
+00:04:17.320 --> 00:04:18.320
+because it will make
+your app slower.
+
+00:04:18.320 --> 00:04:20.350
+And then you're like,
+well, my reaction time
+
+00:04:20.350 --> 00:04:22.480
+to the button press went
+from eight milliseconds
+
+00:04:22.480 --> 00:04:23.590
+to 60 milliseconds.
+
+00:04:23.590 --> 00:04:24.570
+JAKE: Right, which is--
+
+00:04:24.570 --> 00:04:26.570
+SURMA: And according--
+if you use some guidance,
+
+00:04:26.570 --> 00:04:29.590
+for example, Rail, I have 100
+milliseconds to react to a tap.
+
+00:04:29.590 --> 00:04:31.490
+So I'm very much still
+within my budget.
+
+00:04:31.490 --> 00:04:34.580
+So the question is, yes, it's
+slower, but what did I gain?
+
+00:04:34.580 --> 00:04:36.790
+JAKE: And you gained,
+if it is expensive--
+
+00:04:36.790 --> 00:04:38.790
+SURMA: For some reason,
+yeah, if the worker gets
+
+00:04:38.790 --> 00:04:40.990
+an expensive API
+response to parse
+
+00:04:40.990 --> 00:04:44.410
+or the device is super
+slow and totally busy
+
+00:04:44.410 --> 00:04:46.480
+or something, suddenly,
+it's resilient to all
+
+00:04:46.480 --> 00:04:48.910
+these little side effects
+and will keep the [INAUDIBLE]
+
+00:04:48.910 --> 00:04:50.826
+before the user can
+scroll it and doesn't even
+
+00:04:50.826 --> 00:04:53.657
+notice that something is
+going on under the hood.
+
+00:04:53.657 --> 00:04:55.240
+And also it gives
+me a nice appearance
+
+00:04:55.240 --> 00:04:57.406
+so that I can actually have
+a separation of concerns
+
+00:04:57.406 --> 00:04:59.740
+and don't have a tight coupling
+between my UI framework
+
+00:04:59.740 --> 00:05:02.000
+and my logic and the worker.
+
+00:05:02.000 --> 00:05:03.250
+So there's many aspects to it.
+
+00:05:03.250 --> 00:05:06.481
+And I feel like people need
+to be more after the context.
+
+00:05:06.481 --> 00:05:08.980
+So whenever somebody asks me,
+which [? is ?] [? something ?]
+
+00:05:08.980 --> 00:05:10.540
+if they're like, should
+I be using this or this,
+
+00:05:10.540 --> 00:05:11.979
+because I heard this was faster?
+
+00:05:11.979 --> 00:05:13.270
+I was like, what's the context?
+
+00:05:13.270 --> 00:05:13.870
+What are you trying to do?
+
+00:05:13.870 --> 00:05:15.036
+And what are you working on?
+
+00:05:15.036 --> 00:05:18.190
+Because that makes and
+breaks the decision
+
+00:05:18.190 --> 00:05:19.630
+that you're working on, right?
+
+00:05:19.630 --> 00:05:20.130
+JAKE: Yeah.
+
+00:05:20.130 --> 00:05:22.250
+SURMA: So double topic--
+
+00:05:22.250 --> 00:05:24.091
+JAKE: So what's your conclusion?
+
+00:05:24.091 --> 00:05:24.840
+SURMA: It depends.
+
+00:05:24.840 --> 00:05:25.150
+JAKE: It depends.
+
+00:05:25.150 --> 00:05:26.358
+Good, it's a good conclusion.
+
+00:05:26.358 --> 00:05:28.390
+That is the correct
+conclusion for most things.
+
+00:05:28.390 --> 00:05:29.000
+OK.
+
+00:05:29.000 --> 00:05:29.090
+SURMA: So?
+
+00:05:29.090 --> 00:05:30.390
+Oh, we [INAUDIBLE] different.
+
+00:05:30.390 --> 00:05:31.000
+That took me off guard.
+
+00:05:31.000 --> 00:05:31.530
+JAKE: OK.
+
+00:05:31.530 --> 00:05:32.050
+OK.
+
+00:05:32.050 --> 00:05:32.550
+SURMA: OK.
+
+00:05:32.550 --> 00:05:33.050
+JAKE: OK.
+
+00:05:33.050 --> 00:05:33.570
+SURMA: Well?
+
+00:05:33.570 --> 00:05:34.070
+JAKE: OK.
+
+00:05:34.070 --> 00:05:36.910
+I had a university
+lecturer who used to say--
+
+00:05:36.910 --> 00:05:39.352
+we used to keep a tally of
+how many times he said OK.
+
+00:05:39.352 --> 00:05:40.310
+SURMA: That's annoying.
+
+00:05:40.310 --> 00:05:42.330
+JAKE: And they would
+string them together.
+
+00:05:42.330 --> 00:05:45.490
+And that was the most satisfying
+ones where they'd be like--
+
+00:05:45.490 --> 00:05:49.220
+and if you look at this,
+this is how it should be.
+
+00:05:49.220 --> 00:05:51.872
+OK, OK, OK, so--
+
+00:05:51.872 --> 00:05:53.830
+and we'd be like, we got
+three, three in a row,
+
+00:05:53.830 --> 00:05:54.640
+three times combo.
+
+00:05:54.640 --> 00:05:55.181
+SURMA: Bingo.
+
+00:05:55.181 --> 00:05:56.340
+JAKE: Foomp.
+

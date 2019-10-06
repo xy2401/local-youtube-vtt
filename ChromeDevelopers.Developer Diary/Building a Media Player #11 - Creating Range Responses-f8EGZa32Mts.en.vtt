@@ -1,0 +1,1368 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.449 --> 00:00:01.490
+PAUL LEWIS: Hello, folks.
+
+00:00:01.490 --> 00:00:03.170
+You may remember
+in the last entry
+
+00:00:03.170 --> 00:00:06.540
+I talked about the idea of
+chunking the downloads as they
+
+00:00:06.540 --> 00:00:07.040
+came in.
+
+00:00:07.040 --> 00:00:10.460
+So imagine you've got the large
+video, the large audio file,
+
+00:00:10.460 --> 00:00:12.990
+and you want to chunk
+them up into bytes,
+
+00:00:12.990 --> 00:00:15.890
+into like half-meg chunks or
+something because we don't want
+
+00:00:15.890 --> 00:00:19.220
+to be pulling out
+that entire video,
+
+00:00:19.220 --> 00:00:22.880
+however big it is, from end
+to end just to get a slice out
+
+00:00:22.880 --> 00:00:23.700
+of the middle.
+
+00:00:23.700 --> 00:00:24.740
+Does that make sense?
+
+00:00:24.740 --> 00:00:25.610
+Maybe not.
+
+00:00:25.610 --> 00:00:29.720
+Well, join me on the journey
+through the range request.
+
+00:00:29.720 --> 00:00:34.760
+Now, in case you haven't
+seen to this point, when
+
+00:00:34.760 --> 00:00:39.029
+we make a request for a
+video or part of a video,
+
+00:00:39.029 --> 00:00:40.820
+we do a thing called
+a range request, which
+
+00:00:40.820 --> 00:00:45.830
+is get me the bytes 0 to
+1,000, 2,000 to 5,000,
+
+00:00:45.830 --> 00:00:47.420
+whatever you like.
+
+00:00:47.420 --> 00:00:49.820
+And so in order to
+satisfy that, we actually
+
+00:00:49.820 --> 00:00:53.720
+have in our service worker
+to handle the range response.
+
+00:00:53.720 --> 00:00:56.420
+We need to be able to
+take in a range request
+
+00:00:56.420 --> 00:00:59.150
+and satisfy from the
+cache a range response.
+
+00:00:59.150 --> 00:01:01.040
+As such, we don't
+want to be pulling
+
+00:01:01.040 --> 00:01:04.160
+out a large amount of data just
+to get a small chunk of it.
+
+00:01:04.160 --> 00:01:07.370
+So the idea of chunking the
+files in the first place
+
+00:01:07.370 --> 00:01:09.950
+is to make sure that we can pull
+out as little information as
+
+00:01:09.950 --> 00:01:12.000
+possible, reasonably
+so, and just
+
+00:01:12.000 --> 00:01:14.930
+getting a little bit we kind
+of need and pop that out.
+
+00:01:14.930 --> 00:01:17.960
+Now, I'd like it if the cache's
+API actually supported it.
+
+00:01:17.960 --> 00:01:20.570
+But it doesn't, so
+we do it ourselves.
+
+00:01:20.570 --> 00:01:22.840
+So as we left things last time--
+
+00:01:22.840 --> 00:01:26.660
+in fact, let me show you where
+things had got to last time.
+
+00:01:26.660 --> 00:01:35.870
+We have a copy of a video in
+the cache that looks like this.
+
+00:01:35.870 --> 00:01:39.740
+So zero, one, these are all
+the chunks for the 720p video.
+
+00:01:39.740 --> 00:01:42.710
+Let me show you what happens
+when the Shaka Player starts
+
+00:01:42.710 --> 00:01:45.102
+to request video.
+
+00:01:45.102 --> 00:01:46.680
+Look at these guys, eh?
+
+00:01:46.680 --> 00:01:49.070
+What a pair of monkeys.
+
+00:01:49.070 --> 00:01:50.060
+Right.
+
+00:01:50.060 --> 00:01:52.460
+Let's have a look at
+one of these requests.
+
+00:01:52.460 --> 00:01:55.329
+There we are-- the
+header request.
+
+00:01:55.329 --> 00:01:56.120
+That's the options.
+
+00:01:56.120 --> 00:01:56.911
+We don't need that.
+
+00:01:56.911 --> 00:02:00.090
+We want-- (HUMMING)
+there we are.
+
+00:02:00.090 --> 00:02:01.685
+There's the range
+part of the request.
+
+00:02:01.685 --> 00:02:09.539
+It says it wants bytes
+2614503 to 4152439.
+
+00:02:09.539 --> 00:02:11.330
+So let's have a look
+at the service worker.
+
+00:02:11.330 --> 00:02:12.350
+This is the fetch.
+
+00:02:12.350 --> 00:02:14.690
+So whenever a request
+is made by the page,
+
+00:02:14.690 --> 00:02:17.540
+it's going to come to the
+service worker's fetch handler,
+
+00:02:17.540 --> 00:02:20.205
+which is registered
+here as onFetch.
+
+00:02:20.205 --> 00:02:21.830
+Now, the first thing
+that I actually do
+
+00:02:21.830 --> 00:02:25.580
+is I say, given this
+request, I hand this off
+
+00:02:25.580 --> 00:02:29.480
+to my ranged response class,
+which is exactly what where
+
+00:02:29.480 --> 00:02:31.670
+going to be looking
+in but a moment.
+
+00:02:31.670 --> 00:02:36.170
+And I ask it, look, with
+this request that you've got,
+
+00:02:36.170 --> 00:02:37.700
+can you handle it?
+
+00:02:37.700 --> 00:02:40.484
+And if it's not a range request,
+it's going to say, well, no.
+
+00:02:40.484 --> 00:02:41.900
+And if it is a
+range request, it's
+
+00:02:41.900 --> 00:02:45.560
+going to start going, well, do
+I have enough bytes to actually
+
+00:02:45.560 --> 00:02:47.134
+handle that particular range?
+
+00:02:47.134 --> 00:02:49.550
+Because if I don't, you should
+really definitely fall back
+
+00:02:49.550 --> 00:02:50.780
+to the network.
+
+00:02:50.780 --> 00:02:54.620
+So we basically start with,
+well, can you handle it?
+
+00:02:54.620 --> 00:02:57.020
+If you can, sure, go
+ahead and handle it.
+
+00:02:57.020 --> 00:02:59.120
+If you can't, just check
+to see whether there's
+
+00:02:59.120 --> 00:03:00.920
+a match for the
+file in the cache,
+
+00:03:00.920 --> 00:03:03.770
+because it may not
+be a range request.
+
+00:03:03.770 --> 00:03:06.040
+But it may be a request
+for something like an icon
+
+00:03:06.040 --> 00:03:10.360
+or one of the album arts
+or the poster frames
+
+00:03:10.360 --> 00:03:11.465
+and things like that.
+
+00:03:11.465 --> 00:03:13.340
+In which case, that
+might exist in the cache,
+
+00:03:13.340 --> 00:03:15.830
+and we can just respond with
+it directly from the cache
+
+00:03:15.830 --> 00:03:17.340
+without a range response.
+
+00:03:17.340 --> 00:03:19.340
+And then last but not
+least, for everything else
+
+00:03:19.340 --> 00:03:23.180
+that we don't have, we fall
+through to a standard issue
+
+00:03:23.180 --> 00:03:27.410
+go to the network, fetch it,
+and then just bring it back.
+
+00:03:27.410 --> 00:03:29.210
+So all the interesting
+stuff, I think,
+
+00:03:29.210 --> 00:03:32.240
+is happening inside this
+ranged response class.
+
+00:03:32.240 --> 00:03:34.550
+This is the ranged
+response class.
+
+00:03:34.550 --> 00:03:37.110
+And you can see that
+here's the can handle.
+
+00:03:37.110 --> 00:03:41.350
+And the first question
+is, is it a range request?
+
+00:03:41.350 --> 00:03:44.290
+Because if it isn't,
+we don't care.
+
+00:03:44.290 --> 00:03:46.830
+So the question is, when
+we go to the request
+
+00:03:46.830 --> 00:03:49.590
+and we look at its headers,
+is there a range header?
+
+00:03:49.590 --> 00:03:50.950
+And if there is, then great.
+
+00:03:50.950 --> 00:03:52.740
+If not, there isn't and so on.
+
+00:03:52.740 --> 00:03:57.780
+And assuming that it is a range
+request, the next thing we do
+
+00:03:57.780 --> 00:03:59.670
+is we actually look for the URL.
+
+00:03:59.670 --> 00:04:01.140
+So we try and get--
+
+00:04:01.140 --> 00:04:08.680
+in theory we get the
+whole file from the cache.
+
+00:04:08.680 --> 00:04:11.880
+And if we can just respond
+with that, then we would.
+
+00:04:11.880 --> 00:04:14.010
+The chances are-- in fact,
+we probably don't even
+
+00:04:14.010 --> 00:04:15.540
+need this code anymore.
+
+00:04:15.540 --> 00:04:18.501
+I might just remove that
+because it is a range request.
+
+00:04:18.501 --> 00:04:20.459
+And so just responding
+with the entire response
+
+00:04:20.459 --> 00:04:21.630
+would be a bit bizarre.
+
+00:04:21.630 --> 00:04:23.400
+So I might need
+to drop that code.
+
+00:04:23.400 --> 00:04:25.350
+So let's assume
+that after this I
+
+00:04:25.350 --> 00:04:27.960
+will, in fact, drop that code.
+
+00:04:27.960 --> 00:04:30.180
+What will happen next
+is that we go through
+
+00:04:30.180 --> 00:04:32.850
+and we say, right, what
+is the range request?
+
+00:04:32.850 --> 00:04:34.950
+And I ask for things
+like the start and end.
+
+00:04:34.950 --> 00:04:36.780
+So because that range
+request is a string
+
+00:04:36.780 --> 00:04:38.467
+and it's like
+bytes this to this,
+
+00:04:38.467 --> 00:04:40.050
+there's a little bit
+of string parsing
+
+00:04:40.050 --> 00:04:42.000
+in the get start and end.
+
+00:04:42.000 --> 00:04:47.190
+We can pull out two values, the
+start byte and the end byte.
+
+00:04:47.190 --> 00:04:50.480
+Now, if you remember, I
+was chunking the files up
+
+00:04:50.480 --> 00:04:52.800
+into, I think it was,
+half-megabyte chunks.
+
+00:04:52.800 --> 00:04:54.450
+And so what I do is
+I say, well, look,
+
+00:04:54.450 --> 00:04:58.140
+given the start and end values,
+which chunks do we need?
+
+00:04:58.140 --> 00:05:02.430
+And I say, look, do you have
+the file underscore, say, 9
+
+00:05:02.430 --> 00:05:07.050
+and underscore 10, which would
+be based off these values?
+
+00:05:07.050 --> 00:05:08.990
+And it might be
+like 9 through 12.
+
+00:05:08.990 --> 00:05:10.860
+And I assume that if
+you've got 9 and 12,
+
+00:05:10.860 --> 00:05:12.870
+you've got 10 and 11
+in the middle, which
+
+00:05:12.870 --> 00:05:14.600
+is an assumption on my part.
+
+00:05:14.600 --> 00:05:16.970
+But there you go.
+
+00:05:16.970 --> 00:05:19.954
+It works out fine for me
+in my particular situation.
+
+00:05:19.954 --> 00:05:20.800
+So there we go.
+
+00:05:20.800 --> 00:05:22.820
+And we basically
+say, well, look,
+
+00:05:22.820 --> 00:05:25.320
+do you have a response for every
+single one of those chunks?
+
+00:05:25.320 --> 00:05:30.000
+Do you have, like, 9 and 10,
+or 9 through 11, whatever?
+
+00:05:30.000 --> 00:05:31.650
+And if the answer is yes--
+
+00:05:31.650 --> 00:05:33.780
+or if the answer is
+no, then we just bail.
+
+00:05:33.780 --> 00:05:36.660
+If the answer is yes, then
+I have to start diving
+
+00:05:36.660 --> 00:05:37.872
+in a little bit more.
+
+00:05:37.872 --> 00:05:39.330
+And I have to start
+looking in each
+
+00:05:39.330 --> 00:05:42.690
+of those chunks,
+particularly the last chunk.
+
+00:05:42.690 --> 00:05:45.910
+Remember, perhaps, in the
+bit where we were actually
+
+00:05:45.910 --> 00:05:47.940
+storing each of these
+chunks, we might actually
+
+00:05:47.940 --> 00:05:49.200
+have a partial chunk.
+
+00:05:49.200 --> 00:05:52.190
+We might not have an exactly
+half-megabyte chunk at the end.
+
+00:05:52.190 --> 00:05:54.300
+We might have, say, 200 bytes.
+
+00:05:54.300 --> 00:05:57.180
+And so I stole this header
+on the actual chunk size
+
+00:05:57.180 --> 00:05:58.230
+against that chunk.
+
+00:05:58.230 --> 00:06:01.026
+And so later on I can
+say, well, look, get me
+
+00:06:01.026 --> 00:06:02.400
+what the actual
+chunk says it is.
+
+00:06:02.400 --> 00:06:07.140
+Because even if you
+think it's 512K,
+
+00:06:07.140 --> 00:06:08.640
+it might actually
+be only 200 bytes.
+
+00:06:08.640 --> 00:06:09.280
+So I need to know.
+
+00:06:09.280 --> 00:06:11.738
+And what I do is I say, all
+right, what was the byte range?
+
+00:06:11.738 --> 00:06:14.160
+And what's the actual
+final byte that I
+
+00:06:14.160 --> 00:06:15.260
+have stored in the cache?
+
+00:06:15.260 --> 00:06:17.970
+Now, if I've stored the entire
+thing offline, we're good.
+
+00:06:17.970 --> 00:06:20.310
+If I've only stored
+part of the file,
+
+00:06:20.310 --> 00:06:24.540
+like in the case of prefetching
+the first 30 seconds,
+
+00:06:24.540 --> 00:06:27.450
+eventually I'm going to run out
+of data that I've prefetched.
+
+00:06:27.450 --> 00:06:30.360
+And so that's where this
+one really helps us out
+
+00:06:30.360 --> 00:06:34.350
+because it's the bit where we
+say we definitely can or cannot
+
+00:06:34.350 --> 00:06:36.960
+handle the range, even if
+we got part of that data.
+
+00:06:36.960 --> 00:06:40.650
+If we can't do the entire
+byte range, we should say no.
+
+00:06:40.650 --> 00:06:44.760
+So eventually if the final
+bytes in the end chunk
+
+00:06:44.760 --> 00:06:46.470
+is less than the
+end, we just say no.
+
+00:06:46.470 --> 00:06:48.210
+Otherwise we say, sure.
+
+00:06:48.210 --> 00:06:50.850
+And that's the bit where
+we're just checking now,
+
+00:06:50.850 --> 00:06:53.844
+can you handle this
+range response?
+
+00:06:53.844 --> 00:06:55.260
+Can you create
+this range response
+
+00:06:55.260 --> 00:06:57.210
+from this range request?
+
+00:06:57.210 --> 00:06:58.620
+So that's that first part.
+
+00:06:58.620 --> 00:07:00.910
+Then-- so there are a
+few helpers in here.
+
+00:07:00.910 --> 00:07:03.420
+And here's the other
+one, actually creating
+
+00:07:03.420 --> 00:07:06.240
+the ranged response.
+
+00:07:06.240 --> 00:07:10.530
+So what we want to do is we want
+to go through and we want to--
+
+00:07:10.530 --> 00:07:13.044
+in fact, it's in
+create, isn't it?
+
+00:07:13.044 --> 00:07:16.809
+(HUMMING) Yes, create from
+chunks, that's probably
+
+00:07:16.809 --> 00:07:17.850
+the more interesting one.
+
+00:07:17.850 --> 00:07:19.140
+You can have a look through
+all the source code.
+
+00:07:19.140 --> 00:07:20.010
+It is on GiHub.
+
+00:07:20.010 --> 00:07:21.510
+Have a proper look
+through this file
+
+00:07:21.510 --> 00:07:24.480
+to see all the different
+things that I'm doing.
+
+00:07:24.480 --> 00:07:26.280
+What we do in the
+createFrom chunk--
+
+00:07:26.280 --> 00:07:28.000
+so again, we've got this video.
+
+00:07:28.000 --> 00:07:29.167
+It's in loads of chunks.
+
+00:07:29.167 --> 00:07:31.500
+And we want to get just the
+chunks we need and pop those
+
+00:07:31.500 --> 00:07:34.670
+together and then use that
+to create our response.
+
+00:07:34.670 --> 00:07:38.260
+What we do is we go
+through, and, again,
+
+00:07:38.260 --> 00:07:39.720
+we do with the request.
+
+00:07:39.720 --> 00:07:43.290
+We find out which
+indexes we need.
+
+00:07:43.290 --> 00:07:46.350
+If the start and the end
+indexes are totally the same,
+
+00:07:46.350 --> 00:07:51.492
+then we can sort of
+shortcut this next process,
+
+00:07:51.492 --> 00:07:52.950
+because, well, it's
+just one chunk.
+
+00:07:52.950 --> 00:07:54.540
+So you might well just
+pull that one chunk out,
+
+00:07:54.540 --> 00:07:56.580
+slice the bit you need,
+and send that back.
+
+00:07:56.580 --> 00:08:00.290
+But if you need to do multiple
+chunks, that's the next bit.
+
+00:08:00.290 --> 00:08:02.880
+And there's just a
+bunch of wrangling here,
+
+00:08:02.880 --> 00:08:04.290
+which isn't all that much fun.
+
+00:08:04.290 --> 00:08:07.890
+But what we do that's probably
+of interest, at least to me,
+
+00:08:07.890 --> 00:08:09.280
+was copying the buffer.
+
+00:08:09.280 --> 00:08:11.760
+So we make one big buffer
+for the number of chunks
+
+00:08:11.760 --> 00:08:15.750
+that we've got, and we copy
+each of the buffers in.
+
+00:08:15.750 --> 00:08:17.460
+So now we've got
+one big buffer with,
+
+00:08:17.460 --> 00:08:20.340
+like, all the bytes from the
+chunks that we pulled out,
+
+00:08:20.340 --> 00:08:21.840
+so like 9, 10, 11.
+
+00:08:21.840 --> 00:08:24.660
+Let's get all those
+bytes and make a buffer
+
+00:08:24.660 --> 00:08:26.820
+that's got enough space
+for 9, 10, 11, shove them
+
+00:08:26.820 --> 00:08:27.990
+all in there, thump.
+
+00:08:27.990 --> 00:08:29.520
+That's the thing we send across.
+
+00:08:29.520 --> 00:08:31.960
+And then we can create the
+ranged response from that.
+
+00:08:31.960 --> 00:08:33.120
+We go through.
+
+00:08:33.120 --> 00:08:36.900
+And given the start and
+the end and whatever else,
+
+00:08:36.900 --> 00:08:39.960
+we slice off the
+start and the end
+
+00:08:39.960 --> 00:08:43.197
+from that particular
+buffer that we had.
+
+00:08:43.197 --> 00:08:45.530
+And you can see that there's,
+like, an offset value here
+
+00:08:45.530 --> 00:08:49.040
+because we started
+part way into the file.
+
+00:08:49.040 --> 00:08:51.495
+So if I say I need
+bytes, I don't know--
+
+00:08:51.495 --> 00:08:53.120
+can't do the maths
+quickly enough here.
+
+00:08:53.120 --> 00:08:57.260
+But if I said I needed
+bytes 10,000 to 11,000
+
+00:08:57.260 --> 00:09:02.060
+and I've only given you an array
+of 2,000 bytes because I've
+
+00:09:02.060 --> 00:09:05.060
+kind of offset you by the
+number of chunks that we've got,
+
+00:09:05.060 --> 00:09:07.490
+I need to offset you back so
+that your indexes that you're
+
+00:09:07.490 --> 00:09:10.370
+actually looking for have been
+offset by the number of chunks
+
+00:09:10.370 --> 00:09:11.220
+in that we were.
+
+00:09:11.220 --> 00:09:12.770
+Eh, it's all wrangling.
+
+00:09:12.770 --> 00:09:14.300
+I tell you, it's all wrangling.
+
+00:09:14.300 --> 00:09:16.820
+Eventually, though,
+thankfully, we
+
+00:09:16.820 --> 00:09:20.240
+can see that the
+response comes back.
+
+00:09:20.240 --> 00:09:22.190
+And we do have the bytes.
+
+00:09:22.190 --> 00:09:28.280
+And it all kind of does the
+thing that we wanted it to do.
+
+00:09:28.280 --> 00:09:30.140
+So it does mean that
+we are responding
+
+00:09:30.140 --> 00:09:33.950
+from the cache with the chunks
+that we need and everything
+
+00:09:33.950 --> 00:09:36.560
+is working.
+
+00:09:36.560 --> 00:09:40.179
+Now, what else can I explain
+to you about all this?
+
+00:09:40.179 --> 00:09:41.720
+Well, there's one
+little thing that I
+
+00:09:41.720 --> 00:09:44.600
+thought was quite interesting,
+which I didn't realize
+
+00:09:44.600 --> 00:09:46.790
+at all before I got to this.
+
+00:09:46.790 --> 00:09:48.440
+These video files
+that you'll see,
+
+00:09:48.440 --> 00:09:52.250
+they're coming from the
+storage.googleapis.com.
+
+00:09:52.250 --> 00:09:57.110
+They're actually being stored in
+a cloud bucket, a Google Cloud
+
+00:09:57.110 --> 00:09:59.570
+bucket, which is great.
+
+00:09:59.570 --> 00:10:01.250
+But it doesn't mean
+that I'm making
+
+00:10:01.250 --> 00:10:04.660
+calls requests because they're
+not in the same origin as me.
+
+00:10:04.660 --> 00:10:07.400
+They're not coming
+from local host 8080.
+
+00:10:07.400 --> 00:10:12.170
+And I have had a fairly troubled
+relationship with calls.
+
+00:10:12.170 --> 00:10:13.580
+It never seems to
+sink in for me.
+
+00:10:13.580 --> 00:10:17.900
+It's just one of those things
+that I'm not very OK with.
+
+00:10:17.900 --> 00:10:19.100
+I'll be honest with you.
+
+00:10:19.100 --> 00:10:22.340
+And I was used to the idea
+that you have the access
+
+00:10:22.340 --> 00:10:24.620
+control allow origin.
+
+00:10:24.620 --> 00:10:26.960
+And most people would star
+if they're comfy with that,
+
+00:10:26.960 --> 00:10:29.180
+or they'll put in
+the specific origin.
+
+00:10:29.180 --> 00:10:32.840
+What I didn't realize is that
+you also need to say whether
+
+00:10:32.840 --> 00:10:34.740
+the request can be
+made with credentials--
+
+00:10:34.740 --> 00:10:37.220
+so that's things like
+cookies and whatever--
+
+00:10:37.220 --> 00:10:40.880
+and the headers that are
+allowed to be exposed.
+
+00:10:40.880 --> 00:10:47.180
+You can see here in the
+access control expose headers,
+
+00:10:47.180 --> 00:10:52.860
+one of these is the
+x from cache header.
+
+00:10:52.860 --> 00:10:55.850
+Now, the reason I do this,
+I've got the x from cache
+
+00:10:55.850 --> 00:10:57.800
+header in here
+because there's times
+
+00:10:57.800 --> 00:11:01.940
+where I will need to know that
+a particular chunk came in
+
+00:11:01.940 --> 00:11:03.020
+from the cache.
+
+00:11:03.020 --> 00:11:03.920
+Why?
+
+00:11:03.920 --> 00:11:07.730
+Well, the Shaka Player
+is one very good reason
+
+00:11:07.730 --> 00:11:12.200
+for this is that it does this
+bandwidth with estimations
+
+00:11:12.200 --> 00:11:16.380
+based on each of these
+responses coming back in, cool?
+
+00:11:16.380 --> 00:11:17.450
+OK.
+
+00:11:17.450 --> 00:11:19.940
+But the problem is if
+it comes from a cache,
+
+00:11:19.940 --> 00:11:21.740
+it's going to come
+back really quickly.
+
+00:11:21.740 --> 00:11:24.590
+And so it's going to estimate
+that the bandwidth is
+
+00:11:24.590 --> 00:11:26.570
+super good.
+
+00:11:26.570 --> 00:11:28.220
+Doesn't sound too
+bad, and it's not bad
+
+00:11:28.220 --> 00:11:30.304
+if you've got the entire
+video cached for offline.
+
+00:11:30.304 --> 00:11:32.261
+Because it doesn't really
+matter what it thinks
+
+00:11:32.261 --> 00:11:33.860
+the bandwidth is,
+because I've also
+
+00:11:33.860 --> 00:11:36.680
+locked it into a particular
+representation of the video.
+
+00:11:36.680 --> 00:11:38.870
+But what if you're in
+the situation where
+
+00:11:38.870 --> 00:11:41.930
+you've preloaded the, say,
+first 30 seconds of the video
+
+00:11:41.930 --> 00:11:45.380
+and then you're dropping back
+down to a network and adaptive
+
+00:11:45.380 --> 00:11:46.370
+later on?
+
+00:11:46.370 --> 00:11:48.401
+In that situation, you
+can't get away with that.
+
+00:11:48.401 --> 00:11:50.150
+So what you have to
+do is you have to say,
+
+00:11:50.150 --> 00:11:53.300
+right, first of all,
+this first 30 seconds,
+
+00:11:53.300 --> 00:11:55.640
+ignore these for the
+bandwidth calculations.
+
+00:11:55.640 --> 00:11:57.710
+And that's what the x
+from cash header really
+
+00:11:57.710 --> 00:11:58.620
+is going to be doing.
+
+00:11:58.620 --> 00:12:02.110
+It's going to be telling Shaka,
+don't include these chunks
+
+00:12:02.110 --> 00:12:02.610
+there.
+
+00:12:02.610 --> 00:12:03.800
+They're misrepresentative.
+
+00:12:03.800 --> 00:12:05.120
+They're not actually
+the kind of chunks
+
+00:12:05.120 --> 00:12:07.453
+you want to be accounting for
+when you do your bandwidth
+
+00:12:07.453 --> 00:12:08.480
+estimations.
+
+00:12:08.480 --> 00:12:11.570
+But in order for that to
+work, in order for that header
+
+00:12:11.570 --> 00:12:14.600
+to be passed
+through, you actually
+
+00:12:14.600 --> 00:12:18.660
+have to say it's
+an allowed header,
+
+00:12:18.660 --> 00:12:20.690
+it's an exposed
+header and a header
+
+00:12:20.690 --> 00:12:24.170
+you're allow to expose
+on the server side.
+
+00:12:24.170 --> 00:12:25.040
+Why?
+
+00:12:25.040 --> 00:12:27.170
+Well, what happens is this.
+
+00:12:27.170 --> 00:12:29.960
+I make from my page a request.
+
+00:12:29.960 --> 00:12:34.160
+The request is handled
+by the service worker,
+
+00:12:34.160 --> 00:12:39.470
+and the service worker is using
+the responses for the videos
+
+00:12:39.470 --> 00:12:43.850
+and so on that it got
+from the cloud bucket.
+
+00:12:43.850 --> 00:12:47.162
+And so what it does is
+it goes, right, which
+
+00:12:47.162 --> 00:12:48.370
+headers am I allowed to send?
+
+00:12:48.370 --> 00:12:51.680
+And I want it to say,
+well, it's an x from cache
+
+00:12:51.680 --> 00:12:53.700
+response, which you'll
+see in the code here--
+
+00:12:53.700 --> 00:12:55.340
+this x from cache.
+
+00:12:55.340 --> 00:12:58.220
+But if the server
+side didn't say
+
+00:12:58.220 --> 00:13:02.030
+that it was an allowed header,
+the service worker will go,
+
+00:13:02.030 --> 00:13:04.340
+I'm going to filter
+any headers that server
+
+00:13:04.340 --> 00:13:06.626
+didn't tell me could go with
+this particular response.
+
+00:13:06.626 --> 00:13:08.750
+So even though I'm adding
+it in the service worker,
+
+00:13:08.750 --> 00:13:10.610
+if a server side
+doesn't say you're
+
+00:13:10.610 --> 00:13:12.740
+allowed to put the header
+on, the service worker
+
+00:13:12.740 --> 00:13:14.590
+it will filter it out,
+which makes sense.
+
+00:13:14.590 --> 00:13:20.330
+I can't just take a
+cross-origin resource,
+
+00:13:20.330 --> 00:13:22.210
+add on my own custom
+headers, and then expect
+
+00:13:22.210 --> 00:13:24.042
+it to ship out exactly as was.
+
+00:13:24.042 --> 00:13:25.750
+I have to make sure
+that the service said
+
+00:13:25.750 --> 00:13:29.010
+that those headers were allowed
+to be added in the first place.
+
+00:13:29.010 --> 00:13:30.960
+So there you go.
+
+00:13:30.960 --> 00:13:33.530
+That's something that I
+found quite interesting.
+
+00:13:33.530 --> 00:13:35.870
+I kind of followed the
+chain of logic to the end.
+
+00:13:35.870 --> 00:13:38.529
+But it did take me a
+little while to kind of go,
+
+00:13:38.529 --> 00:13:40.070
+oh, I wonder if it's
+something that I
+
+00:13:40.070 --> 00:13:41.707
+need to configure
+on the server side
+
+00:13:41.707 --> 00:13:43.290
+to say that those
+headers are allowed.
+
+00:13:43.290 --> 00:13:45.395
+Because I was looking
+at responses going,
+
+00:13:45.395 --> 00:13:47.520
+those headers are coming
+in, but none of my headers
+
+00:13:47.520 --> 00:13:48.457
+are coming in.
+
+00:13:48.457 --> 00:13:50.040
+Why would my headers
+get filtered out?
+
+00:13:50.040 --> 00:13:51.873
+And it turns out, yes,
+if the server doesn't
+
+00:13:51.873 --> 00:13:55.080
+say you're allowed to actually
+add them in or have them there,
+
+00:13:55.080 --> 00:13:57.837
+then the service worker will--
+it'll let you add them but.
+
+00:13:57.837 --> 00:13:59.670
+It will then filter
+them out before it sends
+
+00:13:59.670 --> 00:14:01.150
+the response back to the page.
+
+00:14:01.150 --> 00:14:01.860
+So there you go.
+
+00:14:01.860 --> 00:14:04.710
+Now we've all learned
+something thrilling.
+
+00:14:04.710 --> 00:14:06.232
+Nobody ever says
+that about calls.
+
+00:14:06.232 --> 00:14:07.440
+Do you know what I did today?
+
+00:14:07.440 --> 00:14:09.420
+I did calls, hooray.
+
+00:14:09.420 --> 00:14:10.510
+It's not a fun area.
+
+00:14:10.510 --> 00:14:14.130
+But it's a very necessary
+one for making sure
+
+00:14:14.130 --> 00:14:16.352
+that resources are
+loaded correctly
+
+00:14:16.352 --> 00:14:17.310
+and all the rest of it.
+
+00:14:17.310 --> 00:14:18.602
+So I see it's value.
+
+00:14:18.602 --> 00:14:20.060
+I just don't enjoy
+working with it.
+
+00:14:20.060 --> 00:14:21.340
+It's just one of those things.
+
+00:14:21.340 --> 00:14:24.900
+Anyway, that's the
+service worker side
+
+00:14:24.900 --> 00:14:26.790
+of things for
+handling the chunks
+
+00:14:26.790 --> 00:14:32.640
+and for putting things back
+together into ranged responses.
+
+00:14:32.640 --> 00:14:35.460
+Definitely have a read
+through that code.
+
+00:14:35.460 --> 00:14:39.590
+I tried to make it as
+verbose as possible
+
+00:14:39.590 --> 00:14:42.360
+so that in six months
+when I look back at it,
+
+00:14:42.360 --> 00:14:44.050
+I'm not completely confused.
+
+00:14:44.050 --> 00:14:46.770
+And hopefully that will
+mean that if you look at it,
+
+00:14:46.770 --> 00:14:49.087
+you won't be completely
+confused either.
+
+00:14:49.087 --> 00:14:50.670
+But if you've got
+questions, well, you
+
+00:14:50.670 --> 00:14:52.620
+know exactly where
+to put those--
+
+00:14:52.620 --> 00:14:54.300
+down there, as usual.
+
+00:14:54.300 --> 00:14:56.970
+And don't forget that you
+can subscribe and say hello
+
+00:14:56.970 --> 00:15:00.190
+to me on Twitter or
+wherever you like.
+
+00:15:00.190 --> 00:15:04.200
+And I will catch you, oh,
+yeah, in the next entry.
+
+00:15:04.200 --> 00:15:06.580
+Bye.
+
+00:15:06.580 --> 00:15:07.080
+Hello.
+
+00:15:07.080 --> 00:15:08.020
+Thanks for watching.
+
+00:15:08.020 --> 00:15:09.570
+If you enjoyed this
+video, well, you
+
+00:15:09.570 --> 00:15:11.640
+may enjoy other videos
+that we make too.
+
+00:15:11.640 --> 00:15:13.362
+So don't forget that
+you can subscribe.
+
+00:15:13.362 --> 00:15:15.570
+And you'll get notified when
+we push out a new video.
+
+00:15:15.570 --> 00:15:18.390
+And there's more videos
+over there or down there,
+
+00:15:18.390 --> 00:15:21.090
+depending on how you're
+watching the YouTubes right now.
+
+00:15:21.090 --> 00:15:23.330
+Definitely click on those.
+

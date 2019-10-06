@@ -1,0 +1,562 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:05.220 --> 00:00:06.470
+你们好
+Hey there, Polycasters.
+
+00:00:06.470 --> 00:00:07.664
+我是 Rob
+Rob here.
+
+00:00:07.664 --> 00:00:09.080
+在上一集的 Polycast 中
+In the last episode of "Polycast"
+
+00:00:09.080 --> 00:00:12.370
+我向你演示了如何在 HTML 中绑定子属性
+I showed you how to bind to sub properties in your markup.
+
+00:00:12.370 --> 00:00:14.440
+但我彻底忘记告诉你如何
+But I totally forgot to show you how
+
+00:00:14.440 --> 00:00:17.942
+在 JavaScript 中做这些绑定
+to bind to those same changes in your JavaScript.
+
+00:00:17.942 --> 00:00:21.250
+这是 Polymer 一个很酷的特性  叫做 observer 
+It's actually a really cool feature of Polymer called observers.
+
+00:00:21.250 --> 00:00:22.560
+让我们看看
+So let's check those out.
+
+00:00:25.530 --> 00:00:27.970
+一个声明的属性可以拥有一个 observer 方法
+A declared properties can have an observer
+
+00:00:27.970 --> 00:00:31.190
+在每次属性更改时运行
+method that runs every time that property changes.
+
+00:00:31.190 --> 00:00:34.480
+我已经在几集之前就向你演示过了
+And I showed how that worked in a few episodes prior.
+
+00:00:34.480 --> 00:00:37.080
+所以如果你还没有看过的话  你可以输入
+So if you haven't seen that, you can go follow this link
+
+00:00:37.080 --> 00:00:38.980
+下面的链接来查看
+right here to check that out.
+
+00:00:38.980 --> 00:00:41.310
+但我们现在有的基本上就是这个
+But basically, what I've got right here
+
+00:00:41.310 --> 00:00:47.120
+x-unicorn 元素有一个叫 sparkles 的属性
+is this x-unicorn element has a property called sparkles
+
+00:00:47.120 --> 00:00:48.774
+和一个叫 sparklesChanged 的 observer 函数
+and an observer that I've defined
+
+00:00:48.774 --> 00:00:51.315
+也就是这个函数
+called sparkles change, which is this function down here that
+
+00:00:51.315 --> 00:00:54.820
+每次 sparkles 更新时就会运行
+will run any time sparkles is updated.
+
+00:00:54.820 --> 00:00:57.090
+这就是第一种 observer 函数
+So that's the first kind of observer function.
+
+00:00:57.090 --> 00:00:59.970
+也是大多数开发者熟悉的一种
+And it's one that a lot of developers are familiar with.
+
+00:00:59.970 --> 00:01:02.820
+但还有一种很酷的方式我们还没有讨论到
+But one that we haven't talked about yet,
+
+00:01:02.820 --> 00:01:06.917
+是使用 observer 数组的能力
+which is really cool, is the ability to use this observer's array.
+
+00:01:06.917 --> 00:01:09.000
+就像之前提到的 observer 方法
+So, like the previously mentioned observer method,
+
+00:01:09.000 --> 00:01:11.430
+我们可以用这个数组来指定一个属性变化时
+we can use this array to specify a handler that should
+
+00:01:11.430 --> 00:01:13.500
+运行的 handler
+run when a property changes.
+
+00:01:13.500 --> 00:01:16.370
+你可以在数组中增加一个
+And you do this by adding a method name, which is a string,
+
+00:01:16.370 --> 00:01:17.264
+字符串类型的方法名
+to the array.
+
+00:01:17.264 --> 00:01:20.960
+在括号中写下你想要观察的属性
+And in parentheses, you put the property that you want to observe.
+
+00:01:20.960 --> 00:01:24.170
+在这个例子中  我有一个 zombie-manager 元素
+So in this case, I have a zombie manager element.
+
+00:01:24.170 --> 00:01:27.870
+我的属性都是 zombie 对象
+And my properties are the zombies object.
+
+00:01:27.870 --> 00:01:30.980
+我的 observer 数组中有一个 observer 
+My observers array has one observer in it, which
+
+00:01:30.980 --> 00:01:33.240
+也就是 zombiesChanged 函数
+is the zombies change function.
+
+00:01:33.240 --> 00:01:35.710
+它监听着 zombies 属性
+And it's looking at the zombies property.
+
+00:01:35.710 --> 00:01:37.310
+每当对象更新时
+And anytime that object is updated,
+
+00:01:37.310 --> 00:01:39.230
+它会运行这里的 handler
+it's going to run this handler right here
+
+00:01:39.230 --> 00:01:41.660
+获取新的 zombies 对象
+and get the new zombies object.
+
+00:01:41.660 --> 00:01:44.810
+但我们可以用 observer 数组做更多的事情
+But there's a lot more that we can do with the observers array.
+
+00:01:44.810 --> 00:01:49.660
+比如说  我们可以用它来观察对象的子属性
+For instance, we can use it to observe element sub properties.
+
+00:01:49.660 --> 00:01:52.660
+如果我想监视 zombies.hunger
+So if I want to look at zombies.hunger,
+
+00:01:52.660 --> 00:01:54.924
+我可以这样做
+then I have it do that instead.
+
+00:01:54.924 --> 00:01:58.560
+get 到的新值传递给 hungerChanged 函数
+And that new value with get passed to this hungerChanged function.
+
+00:01:58.560 --> 00:02:01.030
+真正酷的是
+What's really cool is, we can actually
+
+00:02:01.030 --> 00:02:04.730
+我们可以同时观察很多属性
+observe multiple properties at the same time.
+
+00:02:04.730 --> 00:02:07.820
+这点很赞  因为如果你有一个方法
+And what's great about that is, if you have a method
+
+00:02:07.820 --> 00:02:12.280
+只想在那些属性值存在时运行
+that you want to run only when those properties have a value,
+
+00:02:12.280 --> 00:02:14.720
+这是一个好方法
+this is a good approach to use because that method right
+
+00:02:14.720 --> 00:02:17.230
+因为任何一个属性是 undefined  null  或者类似的值
+there's not going to execute if any of these properties
+
+00:02:17.230 --> 00:02:20.990
+这里的方法不会运行
+is undefined, or null, or anything like that.
+
+00:02:20.990 --> 00:02:24.057
+如果你有你有异步属性
+So if you have asynchronous properties that
+
+00:02:24.057 --> 00:02:26.140
+需要一点时间初始化什么的
+take a little while to initialization or something
+
+00:02:26.140 --> 00:02:28.690
+与其写一些复杂的逻辑
+like that, rather than writing some of the complex logic
+
+00:02:28.690 --> 00:02:30.470
+来跟踪它们
+to keep track of all of them, you
+
+00:02:30.470 --> 00:02:33.220
+不如直接用一个 observer 来监视多个属性
+can just use an observer to watch multiple properties.
+
+00:02:33.220 --> 00:02:36.550
+当它们最后获取到值时  触发某个函数
+And when they all finally have a value, just kick off some function.
+
+00:02:36.550 --> 00:02:38.470
+这是非常非常实用的技巧
+It's a really, really handy trick.
+
+00:02:38.470 --> 00:02:42.610
+让我写一个简单的例子来演示 observer 是如何工作的吧
+Let me do a quick example to demonstrate how observers work.
+
+00:02:42.610 --> 00:02:45.320
+我在这里创建了一些元素
+I've got this element that I've created here.
+
+00:02:45.320 --> 00:02:46.960
+我已经简化了很多东西
+And I've really simplified it down,
+
+00:02:46.960 --> 00:02:50.610
+你看到的只是定义中重要的部分
+so you're only seeing the important parts of the definition.
+
+00:02:50.610 --> 00:02:54.610
+在上面有一个 image 标签
+Up here, at the top, I've got an image tag, which would be,
+
+00:02:54.610 --> 00:02:56.420
+我们假设它在模板之中
+presumably, inside of my template.
+
+00:02:56.420 --> 00:03:00.000
+我们还有一个 Blurb 的绑定
+And then I've got this binding for Blurb right here.
+
+00:03:00.000 --> 00:03:03.810
+值从 observer 函数中来
+And that value is going to come from my observer function.
+
+00:03:03.810 --> 00:03:07.950
+在元素定义中  我有这个 bio 属性
+So in my elements definition, I have this bio property.
+
+00:03:07.950 --> 00:03:12.150
+这是一个对象  默认为这个人
+And that's an object, which defaults to this guy right down here.
+
+00:03:12.150 --> 00:03:16.056
+这是一个带有 maker 属性的对象
+So it's an object with a maker property, which, right now, is
+
+00:03:16.056 --> 00:03:17.590
+现在被设为 Dr. Frankenstein
+set to Dr. Frankenstein.
+
+00:03:17.590 --> 00:03:21.340
+当它更改时  我们运行 makerChanged
+Any time this thing changes, we're going to run maker change.
+
+00:03:21.340 --> 00:03:23.530
+我们要观察 bio.maker
+We're going to observe bio.maker.
+
+00:03:23.530 --> 00:03:27.720
+然后将 this.blurb 设为新值
+And then we'll set this .blurb equal to that new value.
+
+00:03:27.720 --> 00:03:32.090
+这将会更新上面的绑定
+And that is going to go and update our binding right up there.
+
+00:03:32.090 --> 00:03:34.120
+让我们实践一下
+So let's do that in practice.
+
+00:03:34.120 --> 00:03:37.510
+在开发者工具中  我的元素
+Over here in the dev tools, I've got my element rendering
+
+00:03:37.510 --> 00:03:38.247
+已经渲染出来了
+right here.
+
+00:03:38.247 --> 00:03:40.372
+我已经在 elements 面板中选中了它
+I've already got it selected in the elements panel.
+
+00:03:40.372 --> 00:03:44.100
+我可以用 $0 这个小技巧来指向它
+So I can use my $0 trick to refer to it.
+
+00:03:44.100 --> 00:03:52.160
+我只需要输入 $0.set ('bio.maker','Rob')
+And I'll just say $0.set bio.maker to Rob.
+
+00:03:52.160 --> 00:03:54.900
+更新会表示在视图中
+And that's going to update, visually, right there.
+
+00:03:54.900 --> 00:03:57.210
+现在  如果你对 set 方法不熟悉
+Now, if you aren't familiar with the set method,
+
+00:03:57.210 --> 00:03:59.280
+你可以回去看上一集
+you can check out our previous episode, which
+
+00:03:59.280 --> 00:04:01.880
+其中讲到了使用 set 和 notifyPath
+talked about using set and notify path in order
+
+00:04:01.880 --> 00:04:06.170
+来更新元素的子属性以及绑定这些更新
+to update elements sub properties and have those update bindings.
+
+00:04:06.170 --> 00:04:11.150
+这有点像使用 observer 的实用用法
+But this is kind of like a useful way of working with observers.
+
+00:04:11.150 --> 00:04:14.200
+但事实上 observer 还有一个
+But there's actually one last trick that observers
+
+00:04:14.200 --> 00:04:15.600
+独门秘籍
+have up their sleeve.
+
+00:04:15.600 --> 00:04:18.170
+如果说我们不光要观察 maker 的变化
+Let's say instead of just observing maker,
+
+00:04:18.170 --> 00:04:22.530
+这个对象有差不多 100 个子属性
+let's say that, maybe, this object had like 100 sub properties.
+
+00:04:22.530 --> 00:04:26.900
+我想要观察其中某个属性是否变化了
+And I wanted to observe if any of them changed.
+
+00:04:26.900 --> 00:04:29.620
+如果把所有属性都放进一个臃肿的 observer 函数
+It would be really annoying to have to put all of those
+
+00:04:29.620 --> 00:04:32.810
+将会是非常烦人的
+into this one huge observer function.
+
+00:04:32.810 --> 00:04:35.910
+所以 observer 数组最后一个独门秘籍
+And so the last trick up the sleeve of the observer array
+
+00:04:35.910 --> 00:04:38.930
+便是能够使用通配符
+is its ability to look at wild cards.
+
+00:04:38.930 --> 00:04:40.950
+这里我稍微修改了一些代码
+So here I've changed the code a little bit.
+
+00:04:40.950 --> 00:04:45.590
+现在  我们观察 bio.*  而不是 bio.maker
+And now, instead of looking at bio.maker, I'm looking at bio.star.
+
+00:04:45.590 --> 00:04:48.940
+每个子属性都被监听了
+And what that's going to do is observe any sub property.
+
+00:04:48.940 --> 00:04:51.450
+如果它们是对象
+And if these were if these were objects,
+
+00:04:51.450 --> 00:04:52.880
+它们会有更多子属性
+and they had more sub properties,
+
+00:04:52.880 --> 00:04:56.310
+bio 对象中所有东西都会被观察
+they would just observe all that stuff inside of these bio objects.
+
+00:04:56.310 --> 00:04:58.470
+这是一个非常强大的技术
+It's a really powerful technique.
+
+00:04:58.470 --> 00:05:01.610
+Polymer 不只传递值
+And instead of passing just a value, what Polymer
+
+00:05:01.610 --> 00:05:04.290
+而是传递 handler 函数
+is going to pass to our handler function
+
+00:05:04.290 --> 00:05:08.080
+这被称为变化记录
+is going to be what is referred to as a change record.
+
+00:05:08.080 --> 00:05:11.370
+这是一种特殊的 Polymer 对象
+And a change record is sort of like a special Polymer object.
+
+00:05:11.370 --> 00:05:13.070
+它有三个属性
+And it has three properties.
+
+00:05:13.070 --> 00:05:15.350
+有一个路径
+It has a path.
+
+00:05:15.350 --> 00:05:19.730
+指向变化路径的字符串
+And that is a string which refers to the path that changed.
+
+00:05:19.730 --> 00:05:24.570
+如果我们更改 bio.maker  路径字符串就是 bio.maker
+So if we change bio.maker, this path string would be bio.maker.
+
+00:05:24.570 --> 00:05:28.960
+它有一个值属性  也就是被更新的那个值
+It has a value property, which is the actual value that was updated.
+
+00:05:28.960 --> 00:05:31.880
+最后  它有一个基属性
+And then, finally, it has a base property.
+
+00:05:31.880 --> 00:05:35.220
+基属性指向通配符之前的
+And the base property refers to the object
+
+00:05:35.220 --> 00:05:37.050
+对象
+that precedes the wild card.
+
+00:05:37.050 --> 00:05:41.360
+如果我们要观察 bio.foo.bar.*
+So if we were looking at bio.foo.bar.star,
+
+00:05:41.360 --> 00:05:45.520
+那么基属性就是 bio.foo.bar
+then the base property would be bio.foo.bar.
+
+00:05:45.520 --> 00:05:46.290
+知道了吧
+OK?
+
+00:05:46.290 --> 00:05:50.180
+这里的 bioChanged 函数中
+So what I'm doing here is, in my bioChanged function,
+
+00:05:50.180 --> 00:05:51.560
+我接受变化记录
+I'm taking the change record.
+
+00:05:51.560 --> 00:05:52.850
+观察路径
+And I'm looking at the path.
+
+00:05:52.850 --> 00:05:54.900
+如果是 bio.maker  就做一件事
+And if it's bio.maker, I'm doing one thing.
+
+00:05:54.900 --> 00:05:56.260
+更新这个绑定
+I'm updating this binding.
+
+00:05:56.260 --> 00:05:59.690
+如果是 bio.name  更新另一个绑定
+If it's bio.name, I'm updating a different binding, this critter
+
+00:05:59.690 --> 00:06:03.440
+critter 这个绑定  来更新这里的 span
+binding, which is going to update the span right here.
+
+00:06:03.440 --> 00:06:06.710
+让我们看一眼我们的开发者工具
+OK, so over in our dev tools, let's give it a shot.
+
+00:06:06.710 --> 00:06:08.870
+$0.set ('bio.name','Frank')
+So $0 set bio.name.
+
+00:06:11.550 --> 00:06:14.860
+And we'll set that to Frank.
+
+00:06:14.860 --> 00:06:17.000
+第一个 span 被更新了
+See, that updates our first span.
+
+00:06:17.000 --> 00:06:18.770
+接下来让我们更新另一个地方
+And now, let's update the other thing.
+
+00:06:18.770 --> 00:06:22.170
+我们将 bio.maker 设为 Rob
+We'll set bio.maker to Rob.
+
+00:06:22.170 --> 00:06:26.190
+和 voila  更新我们另一个绑定
+And voila, that updates our other binding.
+
+00:06:26.190 --> 00:06:29.150
+通过 observer 和变化记录
+So with observers and change records,
+
+00:06:29.150 --> 00:06:32.000
+我们有了在应用中处理新数据的超赞工具
+we now have awesome tools for dealing with new data in our app.
+
+00:06:32.000 --> 00:06:34.400
+我们事实上终于可以开始
+And we're actually finally ready to start talking
+
+00:06:34.400 --> 00:06:36.180
+讨论数组绑定了
+about binding to arrays.
+
+00:06:36.180 --> 00:06:39.220
+我会在下一集中讲这个内容
+But I'll save that for the very next episode.
+
+00:06:39.220 --> 00:06:41.590
+如果你喜欢这集
+Now, if you've enjoyed this episode,
+
+00:06:41.590 --> 00:06:43.476
+请点击下方的订阅按钮
+consider clicking the Subscribe button.
+
+00:06:43.476 --> 00:06:44.850
+如果你对我们有什么疑问
+And if you have questions for us,
+
+00:06:44.850 --> 00:06:49.360
+你可以在你的社交网络上用 #askpolymer 联系我们
+you can ping us on a social network of your choosing at #askpolymer.
+
+00:06:49.360 --> 00:06:51.350
+同样地  感谢观看
+As always, thank you so much for watching.
+
+00:06:51.350 --> 00:06:54.710
+下期再见
+And I'll see you next time.
+
+00:06:54.710 --> 00:07:00.760
+[MUSIC PLAYING]
+

@@ -1,0 +1,347 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.850
+[MUSIC PLAYING]
+
+00:00:05.619 --> 00:00:06.660
+KAYCE BASQUES: Greetings.
+
+00:00:06.660 --> 00:00:08.620
+Chrome 71 has arrived.
+
+00:00:08.620 --> 00:00:10.830
+Here's what's new in DevTools.
+
+00:00:10.830 --> 00:00:13.330
+Back in Chrome 70, we
+shipped live expressions,
+
+00:00:13.330 --> 00:00:16.450
+which let you pin an expression
+to the top of your console
+
+00:00:16.450 --> 00:00:18.970
+and monitor its
+value in real time.
+
+00:00:18.970 --> 00:00:22.390
+In Chrome 71, when you hover
+over a live expression that
+
+00:00:22.390 --> 00:00:24.880
+points to a DOM node,
+DevTools highlights
+
+00:00:24.880 --> 00:00:27.730
+that node in the viewport.
+
+00:00:27.730 --> 00:00:29.830
+To create a live
+expression, click
+
+00:00:29.830 --> 00:00:32.229
+this little eye of Mordor icon.
+
+00:00:32.229 --> 00:00:36.610
+Type the expression, then click
+outside of the UI to save it.
+
+00:00:36.610 --> 00:00:39.250
+Here, I'm watching
+document.activeelement, which
+
+00:00:39.250 --> 00:00:41.650
+tells me what node has focus.
+
+00:00:41.650 --> 00:00:43.630
+When I hover over
+the result, DevTools
+
+00:00:43.630 --> 00:00:47.770
+shows the node's box
+model in the viewport.
+
+00:00:47.770 --> 00:00:50.400
+When working in the
+console or Elements panel,
+
+00:00:50.400 --> 00:00:54.400
+you can now store DOM
+nodes as global variables.
+
+00:00:54.400 --> 00:00:57.690
+Suppose I want to quickly get a
+reference to this button node.
+
+00:00:57.690 --> 00:01:00.660
+Before Chrome 71, I'd have
+to do something hacky,
+
+00:01:00.660 --> 00:01:02.790
+like select the node
+in the DOM tree,
+
+00:01:02.790 --> 00:01:06.160
+then assign dollar
+sign 0 to a console.
+
+00:01:06.160 --> 00:01:08.260
+Now, you can just right
+click the DOM tree
+
+00:01:08.260 --> 00:01:11.560
+and select Store
+as Global Variable.
+
+00:01:11.560 --> 00:01:13.270
+If you're logging
+nodes to the console,
+
+00:01:13.270 --> 00:01:16.330
+you can right click the result
+and select Store as Global
+
+00:01:16.330 --> 00:01:19.270
+Variable from there, too.
+
+00:01:19.270 --> 00:01:22.680
+HAR files let you share network
+logs with your teammates.
+
+00:01:22.680 --> 00:01:26.470
+DevTools' HAR files now contain
+custom fields for initiator
+
+00:01:26.470 --> 00:01:28.880
+and priority information.
+
+00:01:28.880 --> 00:01:31.360
+The Initiator field tells
+you why the resource was
+
+00:01:31.360 --> 00:01:33.520
+downloaded, and
+the Priority field
+
+00:01:33.520 --> 00:01:35.680
+tells you what download
+priority Chrome
+
+00:01:35.680 --> 00:01:38.020
+assigned to the resource.
+
+00:01:38.020 --> 00:01:41.980
+To export a HAR file, first
+capture some network traffic,
+
+00:01:41.980 --> 00:01:46.560
+then right click and select
+Save All as HAR with Content.
+
+00:01:46.560 --> 00:01:49.210
+The new fields are called
+underscore initiator
+
+00:01:49.210 --> 00:01:51.670
+and underscore priority.
+
+00:01:51.670 --> 00:01:54.430
+The underscore means that
+they are custom fields, not
+
+00:01:54.430 --> 00:01:56.530
+part of the HAR spec.
+
+00:01:56.530 --> 00:01:59.050
+To import a HAR file
+back into DevTools,
+
+00:01:59.050 --> 00:02:02.260
+just drag and drop it
+into the Network panel.
+
+00:02:02.260 --> 00:02:05.350
+You'll notice that the Initiator
+and Priority columns now
+
+00:02:05.350 --> 00:02:08.740
+get properly populated
+after an input.
+
+00:02:08.740 --> 00:02:11.500
+If you can't see these columns,
+right click the Table header
+
+00:02:11.500 --> 00:02:14.290
+and enable them.
+
+00:02:14.290 --> 00:02:17.890
+You can now access the Command
+menu from the main menu.
+
+00:02:17.890 --> 00:02:20.590
+Click the three dots icon
+to open the main menu,
+
+00:02:20.590 --> 00:02:22.780
+then select Run Command.
+
+00:02:22.780 --> 00:02:24.550
+From here, you can do
+lots of handy stuff,
+
+00:02:24.550 --> 00:02:27.700
+such as open panels,
+open drawers,
+
+00:02:27.700 --> 00:02:29.890
+change the appearance
+of DevTools, and so on.
+
+00:02:34.070 --> 00:02:35.140
+Here's a bonus tip.
+
+00:02:35.140 --> 00:02:40.060
+To view the events fired on an
+element, use Monitor Events.
+
+00:02:40.060 --> 00:02:43.150
+In this demo, I've
+got a big button.
+
+00:02:43.150 --> 00:02:45.220
+I want to add a red
+border to the button
+
+00:02:45.220 --> 00:02:48.850
+when I focus it,
+and then type R-E-D.
+
+00:02:48.850 --> 00:02:50.530
+But I don't know the
+names of the events
+
+00:02:50.530 --> 00:02:53.270
+that I need in order to do this.
+
+00:02:53.270 --> 00:02:55.810
+So I right click the
+node in the DOM tree
+
+00:02:55.810 --> 00:02:58.930
+and use our handy new Store
+as Global Variable feature
+
+00:02:58.930 --> 00:03:01.440
+to get a reference to it.
+
+00:03:01.440 --> 00:03:03.990
+Then I call Monitor
+Events and pass the node
+
+00:03:03.990 --> 00:03:07.080
+as the first argument.
+
+00:03:07.080 --> 00:03:08.960
+Now, when I hover
+over the button,
+
+00:03:08.960 --> 00:03:12.920
+we see a bunch of mouse move
+and pointer move events.
+
+00:03:12.920 --> 00:03:15.740
+When I click the button, we
+see the trusty Click event,
+
+00:03:15.740 --> 00:03:17.870
+which we all know and love.
+
+00:03:17.870 --> 00:03:22.410
+When I press Tab to focus the
+node, we see a focus event.
+
+00:03:22.410 --> 00:03:26.930
+Last, when I type R, we see
+key down, key press, and key
+
+00:03:26.930 --> 00:03:28.550
+up events.
+
+00:03:28.550 --> 00:03:33.430
+Same for E and D.
+
+00:03:33.430 --> 00:03:36.100
+So it looks like I just
+need the key press events
+
+00:03:36.100 --> 00:03:37.660
+to get this feature working.
+
+00:03:37.660 --> 00:03:39.940
+And indeed, over
+here I got a sample
+
+00:03:39.940 --> 00:03:42.970
+working using only
+the key press events.
+
+00:03:42.970 --> 00:03:45.730
+When you want to stop
+monitoring a node's events,
+
+00:03:45.730 --> 00:03:49.150
+call Unmonitor Events, and pass
+the node as the first argument
+
+00:03:49.150 --> 00:03:49.650
+again.
+
+00:03:52.250 --> 00:03:54.140
+You can also limit
+what events get
+
+00:03:54.140 --> 00:03:57.410
+logged by passing an array
+as the second argument, where
+
+00:03:57.410 --> 00:03:59.900
+each item of the array
+is the name of an event
+
+00:03:59.900 --> 00:04:04.590
+that you care about, such
+as key press and focus.
+
+00:04:04.590 --> 00:04:06.440
+We also have a few
+shorthand codes
+
+00:04:06.440 --> 00:04:11.700
+that let you monitor a group
+of related events all at once.
+
+00:04:11.700 --> 00:04:14.060
+For example, passing
+the mouse code
+
+00:04:14.060 --> 00:04:17.839
+tells DevTools to log
+all mouse-related events.
+
+00:04:17.839 --> 00:04:22.110
+Check out the Monitor Events
+API reference to learn more.
+
+00:04:22.110 --> 00:04:23.010
+Thanks for watching.
+
+00:04:23.010 --> 00:04:26.490
+See you in six
+weeks for Chrome 72.
+
+00:04:26.490 --> 00:04:30.140
+[MUSIC PLAYING]
+

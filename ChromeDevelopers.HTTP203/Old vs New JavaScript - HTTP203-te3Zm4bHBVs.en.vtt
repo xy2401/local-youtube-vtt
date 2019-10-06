@@ -1,0 +1,1583 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:00.330
+SURMA: Right.
+
+00:00:00.330 --> 00:00:01.270
+I don't know that this works.
+
+00:00:01.270 --> 00:00:02.561
+Why is it [INAUDIBLE] all Jake?
+
+00:00:02.561 --> 00:00:03.385
+What did you do?
+
+00:00:03.385 --> 00:00:06.710
+[MUSIC PLAYING]
+
+00:00:10.040 --> 00:00:12.040
+JAKE: So we did an episode
+where we were looking
+
+00:00:12.040 --> 00:00:14.350
+at future JavaScript stuff.
+
+00:00:14.350 --> 00:00:15.070
+SURMA: We did.
+
+00:00:15.070 --> 00:00:15.910
+People liked that.
+
+00:00:15.910 --> 00:00:17.080
+JAKE: Yes.
+
+00:00:17.080 --> 00:00:21.760
+So what I thought we'd do
+is look at new stuff that's
+
+00:00:21.760 --> 00:00:22.840
+already landed--
+
+00:00:22.840 --> 00:00:23.660
+SURMA: Oh, I thought
+you were going to say,
+
+00:00:23.660 --> 00:00:24.440
+let's look at old stuff.
+
+00:00:24.440 --> 00:00:25.220
+I was like, well,
+that doesn't make--
+
+00:00:25.220 --> 00:00:27.345
+JAKE: Well, I think new
+stuff that's already landed
+
+00:00:27.345 --> 00:00:29.970
+is probably how you would
+define old stuff, really.
+
+00:00:29.970 --> 00:00:32.554
+I feel like I'm doing a
+bad job of introducing
+
+00:00:32.554 --> 00:00:33.470
+what this actually is.
+
+00:00:33.470 --> 00:00:34.720
+So I'm just going to show you.
+
+00:00:34.720 --> 00:00:35.890
+SURMA: Let's look at ES3.
+
+00:00:35.890 --> 00:00:37.930
+JAKE: Well, yes.
+
+00:00:37.930 --> 00:00:38.650
+SURMA: Oh.
+
+00:00:38.650 --> 00:00:40.720
+I was trying to
+make a joke, but--
+
+00:00:40.720 --> 00:00:43.620
+JAKE: Don't ever do
+that again, mate.
+
+00:00:43.620 --> 00:00:48.820
+Just tell me what
+is going on here.
+
+00:00:48.820 --> 00:00:50.200
+SURMA: This is
+like the throwback
+
+00:00:50.200 --> 00:00:52.770
+to object oriented programming
+in JavaScript before we
+
+00:00:52.770 --> 00:00:53.770
+had classes, isn't it?
+
+00:00:53.770 --> 00:00:54.530
+JAKE: Exactly.
+
+00:00:54.530 --> 00:00:55.030
+Yeah.
+
+00:00:55.030 --> 00:00:56.930
+SURMA: Where you
+define a function,
+
+00:00:56.930 --> 00:00:59.374
+and suddenly you
+can add properties
+
+00:00:59.374 --> 00:01:00.790
+on the prototype
+of that function.
+
+00:01:00.790 --> 00:01:03.257
+It sounds really weird,
+but that's how you did it.
+
+00:01:03.257 --> 00:01:04.340
+JAKE: So what's happening?
+
+00:01:04.340 --> 00:01:04.839
+Talk to me.
+
+00:01:04.839 --> 00:01:06.670
+SURMA: So you define
+a function Car.
+
+00:01:06.670 --> 00:01:07.720
+I'm not going to
+talk about what's
+
+00:01:07.720 --> 00:01:08.886
+inside the function for now.
+
+00:01:08.886 --> 00:01:11.610
+But then you can add
+things in the prototype
+
+00:01:11.610 --> 00:01:13.570
+of this function called Car.
+
+00:01:13.570 --> 00:01:16.900
+And I think that
+prototype is used
+
+00:01:16.900 --> 00:01:20.110
+when you use the function
+with the new keyword.
+
+00:01:20.110 --> 00:01:22.890
+So if I say new
+Car, then the things
+
+00:01:22.890 --> 00:01:25.292
+in the prototype in that
+thing I can use also,
+
+00:01:25.292 --> 00:01:26.250
+on the instance of Car.
+
+00:01:26.250 --> 00:01:28.000
+That was a really
+bad explanation.
+
+00:01:28.000 --> 00:01:28.870
+JAKE: It was.
+
+00:01:28.870 --> 00:01:30.560
+Yes.
+
+00:01:30.560 --> 00:01:32.730
+SURMA: I always
+found it confusing.
+
+00:01:32.730 --> 00:01:37.401
+It's-- what is it called--
+in prototypical inheritance?
+
+00:01:37.401 --> 00:01:37.900
+JAKE: Yes.
+
+00:01:37.900 --> 00:01:38.580
+SURMA: Something like that?
+
+00:01:38.580 --> 00:01:39.371
+JAKE: Prototypical.
+
+00:01:39.371 --> 00:01:40.130
+Prototypical.
+
+00:01:40.130 --> 00:01:42.580
+But what about--
+
+00:01:42.580 --> 00:01:45.220
+SURMA: You're just
+already doing weird stuff.
+
+00:01:45.220 --> 00:01:45.950
+JAKE: This.
+
+00:01:45.950 --> 00:01:48.804
+So I guess we should
+explain that you
+
+00:01:48.804 --> 00:01:50.220
+were relatively
+recent to the web,
+
+00:01:50.220 --> 00:01:51.787
+but you have ramped up fast.
+
+00:01:51.787 --> 00:01:52.870
+SURMA: Yeah, I never did--
+
+00:01:52.870 --> 00:01:54.220
+JAKE: You would have
+never have done this.
+
+00:01:54.220 --> 00:01:55.780
+SURMA: I've done
+it at university.
+
+00:01:55.780 --> 00:01:57.190
+Not that specific.
+
+00:01:57.190 --> 00:02:00.784
+I just used [? Car.prototype ?]
+[? dot ?] first function equals
+
+00:02:00.784 --> 00:02:01.700
+and then the function.
+
+00:02:01.700 --> 00:02:05.630
+JAKE: But this Car
+inherits from Vehicle.
+
+00:02:05.630 --> 00:02:09.590
+And this is how we
+used to do inheritance.
+
+00:02:09.590 --> 00:02:11.080
+SURMA: But that's disgusting.
+
+00:02:11.080 --> 00:02:11.650
+JAKE: Yes.
+
+00:02:11.650 --> 00:02:12.310
+Isn't it?
+
+00:02:12.310 --> 00:02:13.061
+Isn't it horrible?
+
+00:02:13.061 --> 00:02:13.560
+SURMA: Wow.
+
+00:02:13.560 --> 00:02:14.500
+JAKE: Because I mean--
+
+00:02:14.500 --> 00:02:16.458
+SURMA: That's why people
+use frameworks, right?
+
+00:02:16.458 --> 00:02:18.637
+Or little libraries that
+would give you that.
+
+00:02:18.637 --> 00:02:19.220
+JAKE: Exactly.
+
+00:02:19.220 --> 00:02:22.540
+And so because you
+want Car.prototype
+
+00:02:22.540 --> 00:02:24.850
+to be an instance of Vehicle.
+
+00:02:24.850 --> 00:02:29.350
+But Vehicle has-- you need to
+call the function with stuff.
+
+00:02:29.350 --> 00:02:31.240
+It has options and things.
+
+00:02:31.240 --> 00:02:33.760
+So what you needed to do is
+create a new constructor,
+
+00:02:33.760 --> 00:02:36.340
+copy the prototype over, or
+reference the prototype over,
+
+00:02:36.340 --> 00:02:39.190
+create a new one of those,
+and that meant your Car now
+
+00:02:39.190 --> 00:02:40.600
+inherits from Vehicle.
+
+00:02:40.600 --> 00:02:44.200
+And then here, this is where
+you were doing the [INAUDIBLE]..
+
+00:02:44.200 --> 00:02:46.920
+My point is we've got classes.
+
+00:02:46.920 --> 00:02:48.319
+This is what we have now.
+
+00:02:48.319 --> 00:02:49.860
+So this is what I
+want to talk about,
+
+00:02:49.860 --> 00:02:51.932
+is just some of the things
+that we've got now--
+
+00:02:51.932 --> 00:02:54.140
+SURMA: And we're taking for
+granted almost, isn't it?
+
+00:02:54.140 --> 00:02:55.920
+JAKE: And we almost
+take for granted.
+
+00:02:55.920 --> 00:02:57.360
+SURMA: The old version, the
+prototypical inheritance,
+
+00:02:57.360 --> 00:02:59.526
+always reminds me of Lua,
+where you only have tables
+
+00:02:59.526 --> 00:03:00.990
+and you have tables
+within tables
+
+00:03:00.990 --> 00:03:03.114
+if you want to inherit--
+it just gets super weird.
+
+00:03:03.114 --> 00:03:04.030
+It feels very similar.
+
+00:03:04.030 --> 00:03:05.570
+And this is just--
+
+00:03:05.570 --> 00:03:06.685
+ha, feels better.
+
+00:03:06.685 --> 00:03:07.560
+JAKE: Never done Lua.
+
+00:03:07.560 --> 00:03:10.070
+I'll take your word for it.
+
+00:03:10.070 --> 00:03:11.680
+What's happening here?
+
+00:03:11.680 --> 00:03:13.717
+SURMA: You are defining
+a function called spin.
+
+00:03:13.717 --> 00:03:14.300
+JAKE: Correct.
+
+00:03:14.300 --> 00:03:15.633
+SURMA: Let's take a closer look.
+
+00:03:15.633 --> 00:03:18.580
+So the options-- oh, OK.
+
+00:03:18.580 --> 00:03:20.630
+So this is basically
+sanitization
+
+00:03:20.630 --> 00:03:22.170
+of the options object.
+
+00:03:22.170 --> 00:03:23.000
+JAKE: Yeah.
+
+00:03:23.000 --> 00:03:24.530
+SURMA: Which, you
+know, even there
+
+00:03:24.530 --> 00:03:26.030
+is also [INAUDIBLE],,
+where you just
+
+00:03:26.030 --> 00:03:28.520
+define a syntax, what the
+options object would look like.
+
+00:03:28.520 --> 00:03:30.330
+Because otherwise, you
+would have to write this,
+
+00:03:30.330 --> 00:03:32.150
+and this is just like-- it
+took me a while to actually
+
+00:03:32.150 --> 00:03:33.270
+understand what you were doing.
+
+00:03:33.270 --> 00:03:34.550
+And now I didn't
+read every detail,
+
+00:03:34.550 --> 00:03:36.500
+because I recognized the
+pattern, because I've
+
+00:03:36.500 --> 00:03:37.334
+written that before.
+
+00:03:37.334 --> 00:03:37.833
+JAKE: Yes.
+
+00:03:37.833 --> 00:03:39.500
+SURMA: If you don't
+know the pattern,
+
+00:03:39.500 --> 00:03:42.170
+this would be a lot of reading
+time spent until you know,
+
+00:03:42.170 --> 00:03:46.441
+oh, you were just checking that
+certain properties are present,
+
+00:03:46.441 --> 00:03:48.190
+and if they're not,
+using a default value.
+
+00:03:48.190 --> 00:03:48.689
+JAKE: Yes.
+
+00:03:48.689 --> 00:03:51.820
+And this got a lot easier
+with object.assign,
+
+00:03:51.820 --> 00:03:53.890
+which was essentially
+what the library--
+
+00:03:53.890 --> 00:03:57.460
+we all had to be doing
+something like object.assign,
+
+00:03:57.460 --> 00:04:00.680
+and that's what we'd
+use here, but nowadays--
+
+00:04:00.680 --> 00:04:03.580
+SURMA: Destructuring
+with the full values.
+
+00:04:03.580 --> 00:04:04.240
+JAKE: Yes.
+
+00:04:04.240 --> 00:04:06.202
+So what we see here,
+we're destructuring.
+
+00:04:06.202 --> 00:04:07.660
+We're giving it
+the default values,
+
+00:04:07.660 --> 00:04:09.868
+and then a default value
+for the option object there,
+
+00:04:09.868 --> 00:04:11.030
+so it's entirely optional.
+
+00:04:11.030 --> 00:04:13.929
+But I brought this
+example for a reason.
+
+00:04:13.929 --> 00:04:15.220
+SURMA: Because I don't like it.
+
+00:04:15.220 --> 00:04:16.930
+JAKE: Because you
+don't like it, do you?
+
+00:04:16.930 --> 00:04:18.730
+SURMA: So I do like the
+structuring and default base.
+
+00:04:18.730 --> 00:04:20.313
+I've gotten around
+to it a little bit.
+
+00:04:20.313 --> 00:04:26.140
+I don't like it in the actual
+function parameter definition.
+
+00:04:26.140 --> 00:04:29.350
+I prefer this where
+you destructure
+
+00:04:29.350 --> 00:04:31.450
+in a separate place,
+because, otherwise, it
+
+00:04:31.450 --> 00:04:35.540
+gets a little bit nested,
+and it looks a bit crammed.
+
+00:04:35.540 --> 00:04:38.830
+And especially if
+you have TypeScript,
+
+00:04:38.830 --> 00:04:41.110
+it gets even weirder,
+because then the types just
+
+00:04:41.110 --> 00:04:42.075
+go all over the place.
+
+00:04:42.075 --> 00:04:43.450
+So when I use
+TypeScript, I often
+
+00:04:43.450 --> 00:04:47.216
+have a type that's called
+function name with the word
+
+00:04:47.216 --> 00:04:48.590
+options appended
+to the end where
+
+00:04:48.590 --> 00:04:51.000
+I define what structure
+the options object have.
+
+00:04:51.000 --> 00:04:53.060
+And then I have the
+first line in my function
+
+00:04:53.060 --> 00:04:55.300
+will then assign
+the default values.
+
+00:04:55.300 --> 00:04:58.190
+JAKE: Yeah, and I agree.
+
+00:04:58.190 --> 00:04:58.690
+Yeah.
+
+00:04:58.690 --> 00:05:00.610
+This looks a lot neater.
+
+00:05:00.610 --> 00:05:05.260
+The reason I would still do this
+is because a static analyzer
+
+00:05:05.260 --> 00:05:08.020
+knows that these are the
+properties of the option
+
+00:05:08.020 --> 00:05:08.740
+object.
+
+00:05:08.740 --> 00:05:09.910
+In this case, it's not--
+
+00:05:09.910 --> 00:05:10.690
+SURMA: True.
+
+00:05:10.690 --> 00:05:13.880
+This is probably preferable
+if you don't have TypeScript.
+
+00:05:13.880 --> 00:05:14.380
+JAKE: Right.
+
+00:05:14.380 --> 00:05:16.540
+So that's that.
+
+00:05:16.540 --> 00:05:17.972
+SURMA: What's happening here?
+
+00:05:17.972 --> 00:05:19.930
+JAKE: If you don't know
+what's happening here--
+
+00:05:19.930 --> 00:05:20.971
+SURMA: I need to get out.
+
+00:05:20.971 --> 00:05:22.710
+JAKE: We have to fire you, yeah.
+
+00:05:22.710 --> 00:05:26.530
+SURMA: You're making the DOM
+element with a class whatever
+
+00:05:26.530 --> 00:05:31.120
+be 100 pixel tall.
+
+00:05:31.120 --> 00:05:32.390
+JAKE: Well saved.
+
+00:05:32.390 --> 00:05:38.140
+So I spend a lot of my
+time designing in DevTools.
+
+00:05:38.140 --> 00:05:42.792
+I'll throw some rough
+styles just into the editor,
+
+00:05:42.792 --> 00:05:44.500
+and then I'll go into
+DevTools and that's
+
+00:05:44.500 --> 00:05:47.440
+where I'll be shifting values
+around to make it look then--
+
+00:05:47.440 --> 00:05:49.172
+SURMA: Copy and paste.
+
+00:05:49.172 --> 00:05:51.430
+JAKE: It's exactly that, yeah.
+
+00:05:51.430 --> 00:05:54.310
+In this case, editing
+this in DevTools
+
+00:05:54.310 --> 00:05:56.620
+is hard, because what I want--
+
+00:05:56.620 --> 00:06:00.280
+in this case, I want
+whatever to be the same width
+
+00:06:00.280 --> 00:06:02.390
+as it is high.
+
+00:06:02.390 --> 00:06:07.570
+I want it to be square is
+how a human would say that.
+
+00:06:07.570 --> 00:06:10.090
+And it means that if I'm
+shifting values around
+
+00:06:10.090 --> 00:06:13.180
+in DevTools, I shift
+one, and then I
+
+00:06:13.180 --> 00:06:17.410
+have to Tab twice, or whatever,
+and shift the other one.
+
+00:06:17.410 --> 00:06:18.370
+And that's a pain.
+
+00:06:18.370 --> 00:06:19.661
+So here's one of the solutions.
+
+00:06:19.661 --> 00:06:21.756
+SURMA: Yes, that's the
+proper solution, I'd say.
+
+00:06:21.756 --> 00:06:24.130
+JAKE: Yeah, and it's been nice
+now that this is supported
+
+00:06:24.130 --> 00:06:26.194
+in all modern browsers.
+
+00:06:26.194 --> 00:06:27.860
+I've just found this
+a dream, and it's--
+
+00:06:27.860 --> 00:06:30.304
+SURMA: For what it's worth,
+size is coming to CSS.
+
+00:06:30.304 --> 00:06:31.720
+JAKE: Is that
+right, and it's just
+
+00:06:31.720 --> 00:06:33.270
+an alias width plus height.
+
+00:06:33.270 --> 00:06:34.195
+Oh, that's exciting.
+
+00:06:34.195 --> 00:06:36.320
+SURMA: Yeah, because we
+have a lot of other things.
+
+00:06:36.320 --> 00:06:40.150
+For example, I think
+background image size.
+
+00:06:40.150 --> 00:06:41.950
+Certain other size
+properties exist
+
+00:06:41.950 --> 00:06:44.336
+where you can have one
+value or two values,
+
+00:06:44.336 --> 00:06:46.960
+and if it's only one value, it's
+the same for width and height.
+
+00:06:46.960 --> 00:06:49.492
+But we don't have it for the
+actual size of the document.
+
+00:06:49.492 --> 00:06:51.700
+JAKE: So it becomes a shortcut
+for width and height--
+
+00:06:51.700 --> 00:06:54.400
+SURMA: Yeah, and you can also
+do size 100 pixel, 200 pixel,
+
+00:06:54.400 --> 00:06:56.519
+if you want it to be
+100 pixels wide and--
+
+00:06:56.519 --> 00:06:58.560
+JAKE: In the same way you
+do for background size.
+
+00:06:58.560 --> 00:06:58.960
+SURMA: Exactly.
+
+00:06:58.960 --> 00:06:59.510
+JAKE: Oh, OK.
+
+00:06:59.510 --> 00:07:00.010
+That's good.
+
+00:07:00.010 --> 00:07:01.343
+But in the meantime, this works.
+
+00:07:01.343 --> 00:07:03.705
+SURMA: For now, this works.
+
+00:07:03.705 --> 00:07:05.610
+JAKE: What's happening here?
+
+00:07:05.610 --> 00:07:08.807
+SURMA: I'm assuming that UL and
+LI are well-named variables,
+
+00:07:08.807 --> 00:07:10.390
+and you're not trying
+to throw me off.
+
+00:07:10.390 --> 00:07:13.620
+So you have a list that
+you add a click handler
+
+00:07:13.620 --> 00:07:17.670
+and then you get the
+event targets from the LI,
+
+00:07:17.670 --> 00:07:21.590
+and if it's not an LI, then
+you say, well, you bubble up.
+
+00:07:21.590 --> 00:07:22.110
+Oh, OK.
+
+00:07:22.110 --> 00:07:24.420
+So what you're doing
+is you, basically,
+
+00:07:24.420 --> 00:07:27.030
+do the event delegation where
+you have one click handler
+
+00:07:27.030 --> 00:07:29.970
+on the UL of each
+individual list item,
+
+00:07:29.970 --> 00:07:32.410
+and then you try to figure
+out, on the click event,
+
+00:07:32.410 --> 00:07:34.664
+what is the actual list
+item that you click on.
+
+00:07:34.664 --> 00:07:36.580
+JAKE: Yeah, so one event
+listener on the list,
+
+00:07:36.580 --> 00:07:38.960
+but you're using it to detect
+a click on all the list items.
+
+00:07:38.960 --> 00:07:40.830
+That means you can move
+those list items around, add
+
+00:07:40.830 --> 00:07:41.340
+and remove them.
+
+00:07:41.340 --> 00:07:42.510
+You don't have to
+change the list item.
+
+00:07:42.510 --> 00:07:43.968
+SURMA: But then
+the problem becomes
+
+00:07:43.968 --> 00:07:46.170
+that if your list item
+has an anchor tag,
+
+00:07:46.170 --> 00:07:49.100
+that event or target might be
+the anchor tag within the list
+
+00:07:49.100 --> 00:07:49.600
+item.
+
+00:07:49.600 --> 00:07:50.820
+JAKE: It might just
+be the list itself.
+
+00:07:50.820 --> 00:07:51.870
+SURMA: Or it might
+be the list itself.
+
+00:07:51.870 --> 00:07:53.060
+JAKE: Click to list item.
+
+00:07:53.060 --> 00:07:54.518
+SURMA: And then
+what you have to do
+
+00:07:54.518 --> 00:07:56.670
+is you have to walk
+up the tree manually
+
+00:07:56.670 --> 00:07:59.779
+to find what the containing
+list element is, if it exists.
+
+00:07:59.779 --> 00:08:01.320
+JAKE: Yeah, and I
+always found this--
+
+00:08:01.320 --> 00:08:03.194
+it's only a little bit
+of code, but it always
+
+00:08:03.194 --> 00:08:06.210
+felt like a barrier to
+using event delegation.
+
+00:08:06.210 --> 00:08:06.999
+Whereas, now--
+
+00:08:06.999 --> 00:08:08.040
+SURMA: We've got closest.
+
+00:08:08.040 --> 00:08:10.740
+JAKE: We've got closest,
+and it's so good, because it
+
+00:08:10.740 --> 00:08:11.990
+doesn't have to be a tag name.
+
+00:08:11.990 --> 00:08:12.420
+It could be a class name.
+
+00:08:12.420 --> 00:08:14.640
+SURMA: I wonder if I did a
+"Supercharged" episode on this?
+
+00:08:14.640 --> 00:08:15.330
+Oh, wait.
+
+00:08:15.330 --> 00:08:16.140
+I did.
+
+00:08:16.140 --> 00:08:16.930
+JAKE: Oh, right.
+
+00:08:16.930 --> 00:08:17.530
+Yeah.
+
+00:08:17.530 --> 00:08:19.250
+I did worry that
+maybe there's going
+
+00:08:19.250 --> 00:08:21.270
+to be a lot of crossover
+between what I show now
+
+00:08:21.270 --> 00:08:22.620
+and "Supercharged."
+
+00:08:22.620 --> 00:08:24.540
+SURMA: This is just
+because, as far as I know,
+
+00:08:24.540 --> 00:08:28.900
+closest was inspired by jQuery,
+and at the jQuery series.
+
+00:08:28.900 --> 00:08:32.100
+JAKE: There might be some
+of those coming up as well.
+
+00:08:32.100 --> 00:08:34.620
+Let's carry on.
+
+00:08:34.620 --> 00:08:36.159
+What is happening here?
+
+00:08:36.159 --> 00:08:36.961
+Good luck.
+
+00:08:36.961 --> 00:08:37.669
+SURMA: All right.
+
+00:08:37.669 --> 00:08:38.220
+Wait, wait.
+
+00:08:38.220 --> 00:08:42.509
+So you're replacing just a plus?
+
+00:08:45.170 --> 00:08:48.380
+Anything before the plus
+will that match pluses?
+
+00:08:48.380 --> 00:08:50.400
+JAKE: Yes, that would
+be a literal plus.
+
+00:08:50.400 --> 00:08:53.540
+SURMA: Wow, that is confusing,
+because usually the plus means
+
+00:08:53.540 --> 00:08:57.179
+the preceding matcher once
+or many times repeated.
+
+00:08:57.179 --> 00:08:58.970
+JAKE: But if there's
+no preceding matcher--
+
+00:08:58.970 --> 00:09:00.230
+I'm pretty sure that works.
+
+00:09:00.230 --> 00:09:02.075
+Some of these I haven't
+checked thoroughly.
+
+00:09:02.075 --> 00:09:03.200
+I'm pretty sure that works.
+
+00:09:03.200 --> 00:09:05.720
+SURMA: I would probably
+backslash it for clarity
+
+00:09:05.720 --> 00:09:08.420
+anyway, unless it then
+breaks, because right axis.
+
+00:09:08.420 --> 00:09:10.120
+JAKE: Get over the first line.
+
+00:09:10.120 --> 00:09:12.770
+SURMA: We are replacing
+pluses with spaces.
+
+00:09:12.770 --> 00:09:16.060
+And then we have a result--
+
+00:09:16.060 --> 00:09:18.334
+oh, you are totally parsing
+your alts, aren't you?
+
+00:09:18.334 --> 00:09:19.000
+JAKE: Yes, I am.
+
+00:09:19.000 --> 00:09:22.231
+Well, specifically
+the query string.
+
+00:09:22.231 --> 00:09:23.230
+SURMA: The query string.
+
+00:09:23.230 --> 00:09:26.120
+Yeah, because
+spaces are in code.
+
+00:09:26.120 --> 00:09:28.690
+It's pluses and the
+individual parameters
+
+00:09:28.690 --> 00:09:32.380
+are separated by
+ampersands, and then you
+
+00:09:32.380 --> 00:09:33.670
+do the [INAUDIBLE] split.
+
+00:09:33.670 --> 00:09:35.170
+Then, actually, in
+the end-- oh, you
+
+00:09:35.170 --> 00:09:37.840
+do the URI component decode.
+
+00:09:37.840 --> 00:09:39.170
+That is a lot of work.
+
+00:09:39.170 --> 00:09:41.250
+JAKE: It's a lot of
+work, and it looks--
+
+00:09:41.250 --> 00:09:42.880
+SURMA: And it's frustrating,
+because the browser can
+
+00:09:42.880 --> 00:09:44.440
+actually understand it
+in coding, and doing it
+
+00:09:44.440 --> 00:09:45.790
+yourself is super frustrating.
+
+00:09:45.790 --> 00:09:46.420
+JAKE: Exactly.
+
+00:09:46.420 --> 00:09:49.300
+And it's useful to look at
+the URL to decide stuff.
+
+00:09:49.300 --> 00:09:50.866
+It could either be
+the current URL,
+
+00:09:50.866 --> 00:09:52.240
+or it could be
+the URL of a link,
+
+00:09:52.240 --> 00:09:54.160
+or it could be some form data
+that you're trying to send,
+
+00:09:54.160 --> 00:09:55.930
+because it's the same in coding.
+
+00:09:55.930 --> 00:09:57.610
+And having to do this
+to figure it out--
+
+00:10:00.420 --> 00:10:04.030
+SURMA: URL search parents.
+
+00:10:04.030 --> 00:10:06.760
+JAKE: It's just so much
+nicer that we have that now,
+
+00:10:06.760 --> 00:10:08.330
+and we have that
+across all modern--
+
+00:10:08.330 --> 00:10:09.955
+SURMA: I'm still very
+annoyed that they
+
+00:10:09.955 --> 00:10:13.489
+didn't add a new property
+onto the location object.
+
+00:10:13.489 --> 00:10:14.530
+JAKE: So do you know why?
+
+00:10:14.530 --> 00:10:18.460
+So if you do new URL
+and parse a URL in,
+
+00:10:18.460 --> 00:10:20.145
+you now have
+URL.search parameters,
+
+00:10:20.145 --> 00:10:21.770
+which is an instance
+of this, which you
+
+00:10:21.770 --> 00:10:23.500
+represent in the query string.
+
+00:10:23.500 --> 00:10:26.740
+The problem is the
+location object
+
+00:10:26.740 --> 00:10:30.386
+is available across windows.
+
+00:10:30.386 --> 00:10:31.760
+SURMA: Oh, so if
+I open a window,
+
+00:10:31.760 --> 00:10:32.834
+I can get access to the--
+
+00:10:32.834 --> 00:10:35.250
+JAKE: Yeah, and even if that
+window is in another process,
+
+00:10:35.250 --> 00:10:39.230
+like an iframe, you still have
+access to the location object,
+
+00:10:39.230 --> 00:10:40.790
+and this has been
+the whole problem
+
+00:10:40.790 --> 00:10:45.765
+of implementing that, is having
+this extra object that exists.
+
+00:10:45.765 --> 00:10:47.310
+SURMA: Why is that a problem?
+
+00:10:47.310 --> 00:10:50.600
+JAKE: Because we have window
+proxy, and so we would need
+
+00:10:50.600 --> 00:10:53.350
+the equivalent of a
+search parameter's proxy,
+
+00:10:53.350 --> 00:10:55.100
+because of things like
+[INAUDIBLE] and all
+
+00:10:55.100 --> 00:10:56.480
+of that sort of stuff,
+it's not referencing
+
+00:10:56.480 --> 00:10:57.530
+exactly the same object.
+
+00:10:57.530 --> 00:10:58.550
+SURMA: I would be fine
+if we just defined
+
+00:10:58.550 --> 00:11:01.400
+a [INAUDIBLE] function that
+just gives me a new instance.
+
+00:11:01.400 --> 00:11:04.010
+JAKE: In the same
+realm or something.
+
+00:11:04.010 --> 00:11:06.090
+SURMA: Every time I
+do new URL search,
+
+00:11:06.090 --> 00:11:11.060
+new URL and then
+location.string or something--
+
+00:11:11.060 --> 00:11:12.904
+it's a small
+[INAUDIBLE] compared
+
+00:11:12.904 --> 00:11:14.070
+to what we had to do before.
+
+00:11:14.070 --> 00:11:14.600
+JAKE: Agreed.
+
+00:11:14.600 --> 00:11:17.058
+It's work-aroundable, but it
+would be nice if it was there.
+
+00:11:17.058 --> 00:11:19.520
+But yeah, this
+[INAUDIBLE] it does
+
+00:11:19.520 --> 00:11:21.470
+the encoding, the decoding.
+
+00:11:21.470 --> 00:11:24.020
+And it's just there,
+and it's brilliant.
+
+00:11:24.020 --> 00:11:26.195
+Excellent.
+
+00:11:26.195 --> 00:11:29.230
+SURMA: Ah, FileReader.
+
+00:11:29.230 --> 00:11:31.450
+I'm not sure about FileReader.
+
+00:11:31.450 --> 00:11:36.850
+So it was supposed to help
+you read Blobs and files that
+
+00:11:36.850 --> 00:11:39.310
+are given from file picker
+and these kind of things.
+
+00:11:39.310 --> 00:11:41.774
+And it's this super
+non promise based
+
+00:11:41.774 --> 00:11:42.940
+API, which are always great.
+
+00:11:42.940 --> 00:11:46.450
+It's like [INAUDIBLE]
+but for files, in a way.
+
+00:11:46.450 --> 00:11:49.471
+Is the support
+super flaky across
+
+00:11:49.471 --> 00:11:50.720
+browsers or is this actually--
+
+00:11:50.720 --> 00:11:52.390
+JAKE: No, this is
+well-supported.
+
+00:11:52.390 --> 00:11:55.150
+As you say, it
+predates promises.
+
+00:11:55.150 --> 00:11:57.049
+It will take a Blob or
+a file, because file
+
+00:11:57.049 --> 00:11:57.840
+inherits from Blob.
+
+00:11:57.840 --> 00:11:59.890
+And if you wanted to take that--
+
+00:11:59.890 --> 00:12:02.172
+because Blob, you don't
+get access to the bytes.
+
+00:12:02.172 --> 00:12:03.630
+If you want access
+to the bytes, as
+
+00:12:03.630 --> 00:12:05.890
+like text or an
+array buffer, this
+
+00:12:05.890 --> 00:12:09.820
+is the mess you would
+have to deal with.
+
+00:12:09.820 --> 00:12:13.010
+Nowadays [INAUDIBLE].
+
+00:12:13.010 --> 00:12:16.870
+SURMA: [INAUDIBLE] that you
+recently tweaked it, I think,
+
+00:12:16.870 --> 00:12:18.640
+and that's where I learned it.
+
+00:12:18.640 --> 00:12:22.390
+Yeah, I never thought about
+abusing response in that way.
+
+00:12:22.390 --> 00:12:24.250
+I don't think it's
+actually abuse, because--
+
+00:12:24.250 --> 00:12:25.480
+JAKE: It's creating a
+response when you don't really
+
+00:12:25.480 --> 00:12:27.450
+need to just because it
+has these methods on there.
+
+00:12:27.450 --> 00:12:28.840
+SURMA: But it's suddenly
+promise based, [INAUDIBLE]
+
+00:12:28.840 --> 00:12:30.820
+because actually, you
+know what's going on,
+
+00:12:30.820 --> 00:12:32.000
+and I think that's
+a big difference.
+
+00:12:32.000 --> 00:12:34.166
+JAKE: And that's one of the
+things, when we designed
+
+00:12:34.166 --> 00:12:37.467
+the response API, we wanted
+it to be very easy to get
+
+00:12:37.467 --> 00:12:39.550
+these other formats out
+like text or array buffer,
+
+00:12:39.550 --> 00:12:40.660
+those sort of things.
+
+00:12:40.660 --> 00:12:41.987
+Nice promise based API.
+
+00:12:41.987 --> 00:12:43.570
+Obviously, async
+functions are a thing
+
+00:12:43.570 --> 00:12:46.600
+we didn't used to have that
+I take for granted now.
+
+00:12:46.600 --> 00:12:50.060
+It all made browsers
+so much easier.
+
+00:12:50.060 --> 00:12:51.760
+So the last one.
+
+00:12:51.760 --> 00:12:52.554
+SURMA: Wait, what?
+
+00:12:52.554 --> 00:12:54.220
+JAKE: If you could
+at least get a flavor
+
+00:12:54.220 --> 00:12:56.480
+for what's going on here.
+
+00:12:56.480 --> 00:13:01.390
+SURMA: We are creating
+a styles object.
+
+00:13:01.390 --> 00:13:04.290
+We are creating a
+random animation.
+
+00:13:08.120 --> 00:13:10.955
+Generating the animation
+[INAUDIBLE] wide translation
+
+00:13:10.955 --> 00:13:15.380
+and we add the new styles,
+then we add that new animation
+
+00:13:15.380 --> 00:13:18.232
+to an object, wait for--
+
+00:13:18.232 --> 00:13:19.190
+JAKE: Do you know what?
+
+00:13:19.190 --> 00:13:20.822
+I'll save you time.
+
+00:13:20.822 --> 00:13:22.280
+This is if you're
+wanting to create
+
+00:13:22.280 --> 00:13:25.244
+a programmatic animation.
+
+00:13:25.244 --> 00:13:26.540
+SURMA: I see.
+
+00:13:26.540 --> 00:13:29.485
+Because back in the
+day you only had CSS.
+
+00:13:29.485 --> 00:13:31.610
+JAKE: Yes, so if I wanted
+to animate from something
+
+00:13:31.610 --> 00:13:34.400
+to something else, this is the
+kind of thing I have to do.
+
+00:13:34.400 --> 00:13:35.880
+I have to create the key frames.
+
+00:13:35.880 --> 00:13:37.463
+SURMA: AD hoc the
+key frame animation,
+
+00:13:37.463 --> 00:13:38.992
+add it as a styles tag.
+
+00:13:38.992 --> 00:13:41.060
+JAKE: And this is because
+an animation could end
+
+00:13:41.060 --> 00:13:43.820
+or it could cancel, so I need
+to listen for both to know
+
+00:13:43.820 --> 00:13:45.380
+when the animation is done.
+
+00:13:45.380 --> 00:13:47.270
+And turn that into a promise.
+
+00:13:51.860 --> 00:13:52.360
+Ta-da.
+
+00:13:52.360 --> 00:13:54.160
+SURMA: Web animation's API.
+
+00:13:54.160 --> 00:13:56.050
+It's finally coming
+to a point where it
+
+00:13:56.050 --> 00:13:57.760
+becomes usable across browsers.
+
+00:13:57.760 --> 00:14:00.220
+JAKE: Yeah, and this
+is themed differently
+
+00:14:00.220 --> 00:14:05.110
+from the other examples because
+we still don't have this.
+
+00:14:05.110 --> 00:14:07.452
+SURMA: We have it in
+Chrome, at least a subset.
+
+00:14:07.452 --> 00:14:09.160
+JAKE: We don't have
+the finished promise.
+
+00:14:09.160 --> 00:14:10.150
+SURMA: No, we don't.
+
+00:14:10.150 --> 00:14:10.820
+We sold out.
+
+00:14:10.820 --> 00:14:11.320
+That's true.
+
+00:14:11.320 --> 00:14:13.070
+JAKE: And do you know
+whose fault that is?
+
+00:14:13.070 --> 00:14:16.070
+SURMA: My mom's?
+
+00:14:16.070 --> 00:14:17.990
+JAKE: By extension, yes.
+
+00:14:17.990 --> 00:14:24.561
+It's my fault, because at the
+time that he designed this,
+
+00:14:24.561 --> 00:14:26.810
+we hadn't decided what to
+do with cancellable promises
+
+00:14:26.810 --> 00:14:27.970
+at the time.
+
+00:14:27.970 --> 00:14:33.564
+And because finished is a
+promise that may cancel,
+
+00:14:33.564 --> 00:14:36.230
+I put the brakes on, and said we
+can't ship this yet, because it
+
+00:14:36.230 --> 00:14:37.250
+might turn out to be--
+
+00:14:37.250 --> 00:14:40.040
+SURMA: Ladies and gentlemen,
+please tweet at Jake.
+
+00:14:40.040 --> 00:14:40.880
+JAKE: I'm sorry.
+
+00:14:40.880 --> 00:14:42.110
+And do you know what's worse?
+
+00:14:42.110 --> 00:14:45.500
+The thing they were doing
+is what we ended up doing.
+
+00:14:45.500 --> 00:14:49.160
+So if we shipped it, it
+would have been fine.
+
+00:14:49.160 --> 00:14:52.940
+I used to do a JavaScript
+library for the BBC,
+
+00:14:52.940 --> 00:14:57.680
+and we were having to target
+things like Safari 1.3,
+
+00:14:57.680 --> 00:14:59.275
+and this is the sort of stuff.
+
+00:14:59.275 --> 00:15:00.650
+All this stuff
+I'm showing you, I
+
+00:15:00.650 --> 00:15:02.441
+would have killed for
+this stuff back then.
+
+00:15:02.441 --> 00:15:04.889
+And it is nice to see that--
+
+00:15:04.889 --> 00:15:06.930
+we look at the future cool
+stuff that might land,
+
+00:15:06.930 --> 00:15:08.350
+and it's like, oh,
+that looks interesting.
+
+00:15:08.350 --> 00:15:10.934
+And it's nice to stop and look
+at that things have got better.
+
+00:15:10.934 --> 00:15:12.308
+SURMA: We've got
+nice things now.
+
+00:15:12.308 --> 00:15:13.560
+JAKE: Things have got better.
+
+00:15:13.560 --> 00:15:18.140
+I tend to, on stage,
+I lock my arms in.
+
+00:15:18.140 --> 00:15:20.090
+I walk around like
+a camp zombie.
+
+00:15:20.090 --> 00:15:21.710
+SURMA: Is that a sweat fear?
+
+00:15:21.710 --> 00:15:24.290
+JAKE: I think it might be that.
+
+00:15:24.290 --> 00:15:26.469
+So I'm a talking--
+
+00:15:26.469 --> 00:15:27.760
+and here's how this is working.
+
+00:15:27.760 --> 00:15:29.810
+SURMA: T rex mode engaged.
+
+00:15:29.810 --> 00:15:31.190
+JAKE: Typing on my keyboard.
+
+00:15:31.190 --> 00:15:33.100
+Driving my car.
+

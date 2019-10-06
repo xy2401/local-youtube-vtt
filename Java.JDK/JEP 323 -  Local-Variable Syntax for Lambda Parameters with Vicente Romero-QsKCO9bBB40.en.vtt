@@ -1,0 +1,496 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.319 --> 00:00:07.400 align:start position:0%
+ 
+hi<00:00:04.319><c> my</c><00:00:04.799><c> name</c><00:00:04.980><c> is</c><00:00:05.009><c> Vicente</c><00:00:05.640><c> Romero</c><00:00:05.970><c> I</c><00:00:06.270><c> work</c><00:00:07.200><c> at</c>
+
+00:00:07.400 --> 00:00:07.410 align:start position:0%
+hi my name is Vicente Romero I work at
+ 
+
+00:00:07.410 --> 00:00:10.180 align:start position:0%
+hi my name is Vicente Romero I work at
+the<00:00:07.560><c> job</c><00:00:07.770><c> Hudson</c><00:00:08.340><c> group</c><00:00:08.490><c> at</c><00:00:08.940><c> coracle</c><00:00:09.630><c> and</c>
+
+00:00:10.180 --> 00:00:10.190 align:start position:0%
+the job Hudson group at coracle and
+ 
+
+00:00:10.190 --> 00:00:13.009 align:start position:0%
+the job Hudson group at coracle and
+today<00:00:11.190><c> I'm</c><00:00:11.550><c> going</c><00:00:11.790><c> to</c><00:00:11.880><c> meet</c><00:00:12.090><c> an</c><00:00:12.330><c> introduction</c>
+
+00:00:13.009 --> 00:00:13.019 align:start position:0%
+today I'm going to meet an introduction
+ 
+
+00:00:13.019 --> 00:00:16.039 align:start position:0%
+today I'm going to meet an introduction
+to<00:00:13.049><c> Jeff</c><00:00:13.940><c> three-two-three</c><00:00:14.940><c> local</c><00:00:15.660><c> burial</c>
+
+00:00:16.039 --> 00:00:16.049 align:start position:0%
+to Jeff three-two-three local burial
+ 
+
+00:00:16.049 --> 00:00:21.340 align:start position:0%
+to Jeff three-two-three local burial
+syntax<00:00:16.680><c> for</c><00:00:17.039><c> another</c><00:00:17.279><c> parameters</c>
+
+00:00:21.340 --> 00:00:21.350 align:start position:0%
+ 
+ 
+
+00:00:21.350 --> 00:00:24.019 align:start position:0%
+ 
+in<00:00:22.350><c> this</c><00:00:22.529><c> section</c><00:00:22.800><c> we're</c><00:00:23.220><c> going</c><00:00:23.430><c> to</c><00:00:23.550><c> talk</c>
+
+00:00:24.019 --> 00:00:24.029 align:start position:0%
+in this section we're going to talk
+ 
+
+00:00:24.029 --> 00:00:27.470 align:start position:0%
+in this section we're going to talk
+about<00:00:24.920><c> local</c><00:00:25.920><c> variable</c><00:00:26.310><c> syntax</c><00:00:26.849><c> for</c><00:00:27.150><c> lambda</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+about local variable syntax for lambda
+ 
+
+00:00:27.480 --> 00:00:29.650 align:start position:0%
+about local variable syntax for lambda
+parameter<00:00:27.599><c> which</c><00:00:28.500><c> is</c><00:00:28.529><c> a</c><00:00:28.710><c> new</c><00:00:28.980><c> feature</c>
+
+00:00:29.650 --> 00:00:29.660 align:start position:0%
+parameter which is a new feature
+ 
+
+00:00:29.660 --> 00:00:32.749 align:start position:0%
+parameter which is a new feature
+included<00:00:30.660><c> in</c><00:00:30.810><c> Java</c><00:00:31.170><c> SE</c><00:00:31.579><c> 11</c>
+
+00:00:32.749 --> 00:00:32.759 align:start position:0%
+included in Java SE 11
+ 
+
+00:00:32.759 --> 00:00:34.910 align:start position:0%
+included in Java SE 11
+this<00:00:33.390><c> feature</c><00:00:33.690><c> is</c><00:00:33.960><c> related</c><00:00:34.500><c> to</c><00:00:34.530><c> previous</c>
+
+00:00:34.910 --> 00:00:34.920 align:start position:0%
+this feature is related to previous
+ 
+
+00:00:34.920 --> 00:00:38.569 align:start position:0%
+this feature is related to previous
+feature<00:00:35.540><c> name</c><00:00:36.739><c> local</c><00:00:37.739><c> variable</c><00:00:38.309><c> type</c>
+
+00:00:38.569 --> 00:00:38.579 align:start position:0%
+feature name local variable type
+ 
+
+00:00:38.579 --> 00:00:41.750 align:start position:0%
+feature name local variable type
+inference<00:00:39.180><c> which</c><00:00:39.719><c> had</c><00:00:39.989><c> a</c><00:00:40.260><c> broader</c><00:00:40.530><c> goal</c><00:00:40.920><c> as</c><00:00:41.399><c> it</c>
+
+00:00:41.750 --> 00:00:41.760 align:start position:0%
+inference which had a broader goal as it
+ 
+
+00:00:41.760 --> 00:00:45.170 align:start position:0%
+inference which had a broader goal as it
+affected<00:00:42.620><c> local</c><00:00:43.620><c> variables</c><00:00:44.190><c> which</c><00:00:44.430><c> are</c><00:00:44.940><c> in</c>
+
+00:00:45.170 --> 00:00:45.180 align:start position:0%
+affected local variables which are in
+ 
+
+00:00:45.180 --> 00:00:47.779 align:start position:0%
+affected local variables which are in
+general<00:00:45.500><c> more</c><00:00:46.500><c> frequent</c><00:00:47.039><c> than</c><00:00:47.340><c> the</c>
+
+00:00:47.779 --> 00:00:47.789 align:start position:0%
+general more frequent than the
+ 
+
+00:00:47.789 --> 00:00:50.150 align:start position:0%
+general more frequent than the
+parameters<00:00:48.329><c> this</c><00:00:49.050><c> new</c><00:00:49.200><c> feature</c><00:00:49.440><c> were</c><00:00:49.800><c> talking</c>
+
+00:00:50.150 --> 00:00:50.160 align:start position:0%
+parameters this new feature were talking
+ 
+
+00:00:50.160 --> 00:00:53.600 align:start position:0%
+parameters this new feature were talking
+about<00:00:50.370><c> the</c><00:00:50.989><c> employee</c><00:00:51.989><c> changes</c><00:00:52.860><c> to</c><00:00:53.070><c> the</c><00:00:53.219><c> Java</c>
+
+00:00:53.600 --> 00:00:53.610 align:start position:0%
+about the employee changes to the Java
+ 
+
+00:00:53.610 --> 00:00:56.299 align:start position:0%
+about the employee changes to the Java
+language<00:00:53.820><c> specification</c><00:00:54.390><c> and</c><00:00:55.289><c> tools</c><00:00:55.710><c> like</c>
+
+00:00:56.299 --> 00:00:56.309 align:start position:0%
+language specification and tools like
+ 
+
+00:00:56.309 --> 00:01:02.599 align:start position:0%
+language specification and tools like
+jealousy<00:00:57.000><c> and</c><00:00:57.329><c> each</c><00:00:57.660><c> shell</c><00:01:01.219><c> local</c><00:01:02.219><c> burlock</c>
+
+00:01:02.599 --> 00:01:02.609 align:start position:0%
+jealousy and each shell local burlock
+ 
+
+00:01:02.609 --> 00:01:05.750 align:start position:0%
+jealousy and each shell local burlock
+type<00:01:02.879><c> inference</c><00:01:03.769><c> extended</c><00:01:04.769><c> type</c><00:01:05.220><c> inference</c>
+
+00:01:05.750 --> 00:01:05.760 align:start position:0%
+type inference extended type inference
+ 
+
+00:01:05.760 --> 00:01:08.030 align:start position:0%
+type inference extended type inference
+to<00:01:06.150><c> the</c><00:01:06.180><c> corrections</c><00:01:06.900><c> of</c><00:01:07.080><c> local</c><00:01:07.500><c> variables</c>
+
+00:01:08.030 --> 00:01:08.040 align:start position:0%
+to the corrections of local variables
+ 
+
+00:01:08.040 --> 00:01:12.230 align:start position:0%
+to the corrections of local variables
+with<00:01:09.080><c> initializers</c><00:01:10.130><c> i've</c><00:01:11.130><c> shown</c><00:01:11.670><c> in</c><00:01:12.090><c> the</c>
+
+00:01:12.230 --> 00:01:12.240 align:start position:0%
+with initializers i've shown in the
+ 
+
+00:01:12.240 --> 00:01:15.289 align:start position:0%
+with initializers i've shown in the
+provided<00:01:12.720><c> example</c><00:01:13.350><c> the</c><00:01:13.740><c> compiler</c><00:01:14.220><c> and</c><00:01:14.670><c> infer</c>
+
+00:01:15.289 --> 00:01:15.299 align:start position:0%
+provided example the compiler and infer
+ 
+
+00:01:15.299 --> 00:01:18.580 align:start position:0%
+provided example the compiler and infer
+the<00:01:16.259><c> types</c><00:01:16.500><c> of</c><00:01:16.619><c> local</c><00:01:16.920><c> variables</c><00:01:17.549><c> with</c><00:01:18.090><c> the</c>
+
+00:01:18.580 --> 00:01:18.590 align:start position:0%
+the types of local variables with the
+ 
+
+00:01:18.590 --> 00:01:21.800 align:start position:0%
+the types of local variables with the
+from<00:01:19.590><c> the</c><00:01:19.710><c> initializer</c><00:01:20.220><c> without</c><00:01:21.210><c> additional</c>
+
+00:01:21.800 --> 00:01:21.810 align:start position:0%
+from the initializer without additional
+ 
+
+00:01:21.810 --> 00:01:25.190 align:start position:0%
+from the initializer without additional
+information<00:01:22.710><c> from</c><00:01:22.830><c> the</c><00:01:22.920><c> user</c><00:01:23.540><c> this</c><00:01:24.540><c> leads</c><00:01:24.930><c> to</c>
+
+00:01:25.190 --> 00:01:25.200 align:start position:0%
+information from the user this leads to
+ 
+
+00:01:25.200 --> 00:01:29.539 align:start position:0%
+information from the user this leads to
+less<00:01:25.740><c> ceremony</c><00:01:26.700><c> but</c><00:01:27.270><c> keeps</c><00:01:27.659><c> Java</c><00:01:28.380><c> full</c><00:01:29.100><c> static</c>
+
+00:01:29.539 --> 00:01:29.549 align:start position:0%
+less ceremony but keeps Java full static
+ 
+
+00:01:29.549 --> 00:01:40.630 align:start position:0%
+less ceremony but keeps Java full static
+type<00:01:29.790><c> safety</c><00:01:35.689><c> others</c><00:01:36.689><c> local</c><00:01:37.290><c> variable</c><00:01:37.799><c> syntax</c>
+
+00:01:40.630 --> 00:01:40.640 align:start position:0%
+type safety others local variable syntax
+ 
+
+00:01:40.640 --> 00:01:45.999 align:start position:0%
+type safety others local variable syntax
+for<00:01:41.640><c> nano</c><00:01:41.820><c> parameters</c><00:01:42.450><c> are</c><00:01:43.399><c> in</c><00:01:44.399><c> a</c><00:01:44.549><c> nutshell</c>
+
+00:01:45.999 --> 00:01:46.009 align:start position:0%
+for nano parameters are in a nutshell
+ 
+
+00:01:46.009 --> 00:01:50.420 align:start position:0%
+for nano parameters are in a nutshell
+uniformity<00:01:47.009><c> it</c><00:01:47.610><c> aligns</c><00:01:48.119><c> the</c><00:01:48.390><c> syntax</c><00:01:48.990><c> of</c><00:01:49.430><c> the</c>
+
+00:01:50.420 --> 00:01:50.430 align:start position:0%
+uniformity it aligns the syntax of the
+ 
+
+00:01:50.430 --> 00:01:53.060 align:start position:0%
+uniformity it aligns the syntax of the
+formal<00:01:50.820><c> parameter</c><00:01:51.299><c> declaration</c><00:01:51.920><c> in</c><00:01:52.920><c> an</c>
+
+00:01:53.060 --> 00:01:53.070 align:start position:0%
+formal parameter declaration in an
+ 
+
+00:01:53.070 --> 00:01:56.120 align:start position:0%
+formal parameter declaration in an
+especially<00:01:53.220><c> type</c><00:01:53.909><c> land</c><00:01:54.420><c> expression</c><00:01:55.110><c> with</c><00:01:56.009><c> the</c>
+
+00:01:56.120 --> 00:01:56.130 align:start position:0%
+especially type land expression with the
+ 
+
+00:01:56.130 --> 00:01:59.800 align:start position:0%
+especially type land expression with the
+syntax<00:01:56.430><c> of</c><00:01:56.909><c> a</c><00:01:57.090><c> local</c><00:01:57.420><c> variable</c><00:01:58.340><c> declaration</c>
+
+00:01:59.800 --> 00:01:59.810 align:start position:0%
+syntax of a local variable declaration
+ 
+
+00:01:59.810 --> 00:02:05.959 align:start position:0%
+syntax of a local variable declaration
+ensured<00:02:01.219><c> the</c><00:02:02.219><c> two</c><00:02:02.430><c> decorations</c><00:02:03.180><c> shown</c><00:02:04.969><c> shown</c>
+
+00:02:05.959 --> 00:02:05.969 align:start position:0%
+ensured the two decorations shown shown
+ 
+
+00:02:05.969 --> 00:02:08.600 align:start position:0%
+ensured the two decorations shown shown
+here<00:02:06.600><c> are</c><00:02:07.170><c> allowed</c><00:02:07.860><c> by</c><00:02:08.009><c> the</c><00:02:08.160><c> Java</c><00:02:08.399><c> compiler</c>
+
+00:02:08.600 --> 00:02:08.610 align:start position:0%
+here are allowed by the Java compiler
+ 
+
+00:02:08.610 --> 00:02:16.750 align:start position:0%
+here are allowed by the Java compiler
+and<00:02:09.830><c> are</c><00:02:10.830><c> considered</c><00:02:11.550><c> equivalent</c>
+
+00:02:16.750 --> 00:02:16.760 align:start position:0%
+ 
+ 
+
+00:02:16.760 --> 00:02:20.390 align:start position:0%
+ 
+as<00:02:17.760><c> an</c><00:02:18.030><c> additional</c><00:02:18.510><c> benefit</c><00:02:19.050><c> now</c>
+
+00:02:20.390 --> 00:02:20.400 align:start position:0%
+as an additional benefit now
+ 
+
+00:02:20.400 --> 00:02:23.830 align:start position:0%
+as an additional benefit now
+annotations<00:02:21.120><c> can</c><00:02:21.540><c> be</c><00:02:21.750><c> applied</c><00:02:22.260><c> to</c><00:02:22.530><c> lambda</c>
+
+00:02:23.830 --> 00:02:23.840 align:start position:0%
+annotations can be applied to lambda
+ 
+
+00:02:23.840 --> 00:02:28.310 align:start position:0%
+annotations can be applied to lambda
+formal<00:02:24.840><c> without</c><00:02:25.680><c> losing</c><00:02:26.430><c> Bertie</c><00:02:27.030><c> as</c><00:02:27.840><c> we</c><00:02:28.140><c> can</c>
+
+00:02:28.310 --> 00:02:28.320 align:start position:0%
+formal without losing Bertie as we can
+ 
+
+00:02:28.320 --> 00:02:33.950 align:start position:0%
+formal without losing Bertie as we can
+see<00:02:28.530><c> in</c><00:02:28.800><c> this</c><00:02:28.920><c> example</c><00:02:32.690><c> there</c><00:02:33.690><c> are</c><00:02:33.720><c> some</c>
+
+00:02:33.950 --> 00:02:33.960 align:start position:0%
+see in this example there are some
+ 
+
+00:02:33.960 --> 00:02:36.290 align:start position:0%
+see in this example there are some
+restrictions<00:02:34.350><c> to</c><00:02:34.770><c> the</c><00:02:34.920><c> use</c><00:02:35.310><c> of</c><00:02:35.580><c> the</c><00:02:35.970><c> local</c>
+
+00:02:36.290 --> 00:02:36.300 align:start position:0%
+restrictions to the use of the local
+ 
+
+00:02:36.300 --> 00:02:38.120 align:start position:0%
+restrictions to the use of the local
+variable<00:02:36.720><c> syntax</c><00:02:37.170><c> for</c><00:02:37.410><c> the</c><00:02:37.620><c> parameters</c>
+
+00:02:38.120 --> 00:02:38.130 align:start position:0%
+variable syntax for the parameters
+ 
+
+00:02:38.130 --> 00:02:41.360 align:start position:0%
+variable syntax for the parameters
+though<00:02:38.430><c> it</c><00:02:39.420><c> can</c><00:02:39.720><c> only</c><00:02:39.990><c> be</c><00:02:40.230><c> used</c><00:02:40.500><c> for</c><00:02:41.220><c> the</c>
+
+00:02:41.360 --> 00:02:41.370 align:start position:0%
+though it can only be used for the
+ 
+
+00:02:41.370 --> 00:02:43.820 align:start position:0%
+though it can only be used for the
+formal<00:02:41.850><c> parameters</c><00:02:42.510><c> of</c><00:02:42.780><c> increasingly</c><00:02:43.470><c> type</c>
+
+00:02:43.820 --> 00:02:43.830 align:start position:0%
+formal parameters of increasingly type
+ 
+
+00:02:43.830 --> 00:02:48.110 align:start position:0%
+formal parameters of increasingly type
+lambda<00:02:44.550><c> and</c><00:02:44.760><c> is</c><00:02:45.570><c> used</c><00:02:45.990><c> for</c><00:02:46.260><c> one</c><00:02:47.090><c> for</c><00:02:48.090><c> one</c>
+
+00:02:48.110 --> 00:02:48.120 align:start position:0%
+lambda and is used for one for one
+ 
+
+00:02:48.120 --> 00:02:51.530 align:start position:0%
+lambda and is used for one for one
+parameter<00:02:48.620><c> in</c><00:02:49.620><c> an</c><00:02:49.890><c> expression</c><00:02:50.550><c> it</c><00:02:51.090><c> should</c><00:02:51.390><c> be</c>
+
+00:02:51.530 --> 00:02:51.540 align:start position:0%
+parameter in an expression it should be
+ 
+
+00:02:51.540 --> 00:02:55.160 align:start position:0%
+parameter in an expression it should be
+used<00:02:51.750><c> for</c><00:02:52.020><c> roadman</c><00:02:52.590><c> as</c><00:02:53.520><c> a</c><00:02:53.790><c> consequence</c><00:02:54.360><c> the</c>
+
+00:02:55.160 --> 00:02:55.170 align:start position:0%
+used for roadman as a consequence the
+ 
+
+00:02:55.170 --> 00:02:59.120 align:start position:0%
+used for roadman as a consequence the
+following<00:02:55.560><c> example</c><00:02:56.840><c> are</c><00:02:57.840><c> considered</c><00:02:58.710><c> legal</c>
+
+00:02:59.120 --> 00:02:59.130 align:start position:0%
+following example are considered legal
+ 
+
+00:02:59.130 --> 00:03:03.950 align:start position:0%
+following example are considered legal
+by<00:02:59.640><c> the</c><00:02:59.670><c> compiler</c><00:03:02.720><c> there</c><00:03:03.720><c> are</c><00:03:03.780><c> some</c>
+
+00:03:03.950 --> 00:03:03.960 align:start position:0%
+by the compiler there are some
+ 
+
+00:03:03.960 --> 00:03:07.580 align:start position:0%
+by the compiler there are some
+additional<00:03:04.170><c> restrictions</c><00:03:06.020><c> for</c><00:03:07.020><c> example</c><00:03:07.440><c> he</c>
+
+00:03:07.580 --> 00:03:07.590 align:start position:0%
+additional restrictions for example he
+ 
+
+00:03:07.590 --> 00:03:09.800 align:start position:0%
+additional restrictions for example he
+was<00:03:07.710><c> decided</c><00:03:08.400><c> that</c><00:03:08.700><c> should</c><00:03:09.240><c> in</c><00:03:09.450><c> order</c><00:03:09.630><c> to</c>
+
+00:03:09.800 --> 00:03:09.810 align:start position:0%
+was decided that should in order to
+ 
+
+00:03:09.810 --> 00:03:11.780 align:start position:0%
+was decided that should in order to
+maintain<00:03:09.960><c> the</c><00:03:10.380><c> brevity</c><00:03:10.740><c> of</c><00:03:10.920><c> the</c><00:03:11.130><c> shorthand</c>
+
+00:03:11.780 --> 00:03:11.790 align:start position:0%
+maintain the brevity of the shorthand
+ 
+
+00:03:11.790 --> 00:03:15.980 align:start position:0%
+maintain the brevity of the shorthand
+syntax<00:03:13.670><c> the</c><00:03:14.670><c> following</c><00:03:15.120><c> example</c><00:03:15.780><c> is</c>
+
+00:03:15.980 --> 00:03:15.990 align:start position:0%
+syntax the following example is
+ 
+
+00:03:15.990 --> 00:03:19.490 align:start position:0%
+syntax the following example is
+considered<00:03:16.430><c> illegal</c><00:03:17.430><c> by</c><00:03:18.420><c> the</c><00:03:18.480><c> Java</c><00:03:18.870><c> language</c>
+
+00:03:19.490 --> 00:03:19.500 align:start position:0%
+considered illegal by the Java language
+ 
+
+00:03:19.500 --> 00:03:28.420 align:start position:0%
+considered illegal by the Java language
+and<00:03:19.860><c> compiler</c><00:03:25.430><c> Oracle</c><00:03:26.430><c> is</c><00:03:26.880><c> the</c><00:03:27.200><c> steward</c><00:03:28.200><c> of</c>
+
+00:03:28.420 --> 00:03:28.430 align:start position:0%
+and compiler Oracle is the steward of
+ 
+
+00:03:28.430 --> 00:03:31.400 align:start position:0%
+and compiler Oracle is the steward of
+Java<00:03:29.480><c> providing</c><00:03:30.480><c> a</c><00:03:30.630><c> large</c><00:03:30.900><c> amount</c><00:03:31.260><c> of</c>
+
+00:03:31.400 --> 00:03:31.410 align:start position:0%
+Java providing a large amount of
+ 
+
+00:03:31.410 --> 00:03:35.180 align:start position:0%
+Java providing a large amount of
+development<00:03:32.480><c> engineering</c><00:03:33.480><c> found</c><00:03:33.870><c> in</c><00:03:34.190><c> the</c>
+
+00:03:35.180 --> 00:03:35.190 align:start position:0%
+development engineering found in the
+ 
+
+00:03:35.190 --> 00:03:39.200 align:start position:0%
+development engineering found in the
+Java<00:03:35.730><c> platform</c><00:03:36.240><c> and</c><00:03:36.810><c> open</c><00:03:37.290><c> JDK</c><00:03:38.210><c> Oracle</c>
+
+00:03:39.200 --> 00:03:39.210 align:start position:0%
+Java platform and open JDK Oracle
+ 
+
+00:03:39.210 --> 00:03:42.080 align:start position:0%
+Java platform and open JDK Oracle
+provides<00:03:39.690><c> living</c><00:03:40.680><c> class</c><00:03:40.950><c> premium</c><00:03:41.460><c> supports</c>
+
+00:03:42.080 --> 00:03:42.090 align:start position:0%
+provides living class premium supports
+ 
+
+00:03:42.090 --> 00:03:46.190 align:start position:0%
+provides living class premium supports
+for<00:03:42.930><c> a</c><00:03:42.960><c> low</c><00:03:43.110><c> cost</c><00:03:43.440><c> easy</c><00:03:44.000><c> to</c><00:03:45.000><c> purchase</c><00:03:45.240><c> with</c>
+
+00:03:46.190 --> 00:03:46.200 align:start position:0%
+for a low cost easy to purchase with
+ 
+
+00:03:46.200 --> 00:03:49.880 align:start position:0%
+for a low cost easy to purchase with
+simple<00:03:46.830><c> pricing</c><00:03:47.370><c> tiers</c><00:03:47.760><c> and</c><00:03:48.660><c> with</c><00:03:48.840><c> that</c><00:03:49.110><c> thank</c>
+
+00:03:49.880 --> 00:03:49.890 align:start position:0%
+simple pricing tiers and with that thank
+ 
+
+00:03:49.890 --> 00:03:52.550 align:start position:0%
+simple pricing tiers and with that thank
+you<00:03:49.950><c> for</c><00:03:50.040><c> watching</c>
+
+00:03:52.550 --> 00:03:52.560 align:start position:0%
+ 
+ 
+
+00:03:52.560 --> 00:03:54.620 align:start position:0%
+ 
+you
+

@@ -1,0 +1,408 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:02.690 align:start position:0%
+ 
+hey<00:00:01.140><c> welcome</c><00:00:01.500><c> to</c><00:00:01.620><c> this</c><00:00:01.770><c> quick</c><00:00:02.040><c> demo</c><00:00:02.310><c> of</c><00:00:02.399><c> spring</c>
+
+00:00:02.690 --> 00:00:02.700 align:start position:0%
+hey welcome to this quick demo of spring
+ 
+
+00:00:02.700 --> 00:00:05.180 align:start position:0%
+hey welcome to this quick demo of spring
+boot<00:00:02.970><c> and</c><00:00:03.330><c> spring</c><00:00:03.689><c> loaded</c><00:00:04.080><c> so</c><00:00:04.500><c> I</c><00:00:04.529><c> have</c><00:00:04.710><c> an</c><00:00:04.799><c> STS</c>
+
+00:00:05.180 --> 00:00:05.190 align:start position:0%
+boot and spring loaded so I have an STS
+ 
+
+00:00:05.190 --> 00:00:07.760 align:start position:0%
+boot and spring loaded so I have an STS
+here<00:00:05.810><c> I'm</c><00:00:06.810><c> gonna</c><00:00:06.960><c> use</c><00:00:07.020><c> a</c><00:00:07.109><c> spring</c><00:00:07.410><c> starter</c>
+
+00:00:07.760 --> 00:00:07.770 align:start position:0%
+here I'm gonna use a spring starter
+ 
+
+00:00:07.770 --> 00:00:09.169 align:start position:0%
+here I'm gonna use a spring starter
+project<00:00:08.069><c> wizard</c><00:00:08.160><c> which</c><00:00:08.519><c> talks</c><00:00:08.820><c> to</c><00:00:09.030><c> the</c>
+
+00:00:09.169 --> 00:00:09.179 align:start position:0%
+project wizard which talks to the
+ 
+
+00:00:09.179 --> 00:00:11.540 align:start position:0%
+project wizard which talks to the
+initializer<00:00:09.870><c> wrap</c><00:00:10.110><c> I'm</c><00:00:11.010><c> gonna</c><00:00:11.190><c> make</c><00:00:11.309><c> this</c><00:00:11.400><c> a</c>
+
+00:00:11.540 --> 00:00:11.550 align:start position:0%
+initializer wrap I'm gonna make this a
+ 
+
+00:00:11.550 --> 00:00:18.019 align:start position:0%
+initializer wrap I'm gonna make this a
+new<00:00:11.759><c> using</c><00:00:12.420><c> the</c><00:00:12.480><c> web</c><00:00:12.599><c> starter</c><00:00:16.760><c> create</c><00:00:17.760><c> the</c><00:00:17.880><c> app</c>
+
+00:00:18.019 --> 00:00:18.029 align:start position:0%
+new using the web starter create the app
+ 
+
+00:00:18.029 --> 00:00:22.730 align:start position:0%
+new using the web starter create the app
+and<00:00:19.699><c> be</c><00:00:20.699><c> an</c><00:00:20.789><c> app</c><00:00:20.910><c> that</c><00:00:21.230><c> it's</c><00:00:22.230><c> just</c><00:00:22.410><c> gonna</c><00:00:22.560><c> run</c>
+
+00:00:22.730 --> 00:00:22.740 align:start position:0%
+and be an app that it's just gonna run
+ 
+
+00:00:22.740 --> 00:00:27.560 align:start position:0%
+and be an app that it's just gonna run
+that<00:00:22.890><c> using</c><00:00:23.310><c> the</c><00:00:23.460><c> built-in</c><00:00:26.300><c> launch</c><00:00:27.300><c> and</c><00:00:27.510><c> we</c>
+
+00:00:27.560 --> 00:00:27.570 align:start position:0%
+that using the built-in launch and we
+ 
+
+00:00:27.570 --> 00:00:30.310 align:start position:0%
+that using the built-in launch and we
+have<00:00:27.689><c> new</c><00:00:27.869><c> tabs</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+ 
+ 
+
+00:00:30.320 --> 00:00:31.960 align:start position:0%
+ 
+just<00:00:30.919><c> checking</c><00:00:31.160><c> that's</c><00:00:31.339><c> behaving</c><00:00:31.550><c> that</c><00:00:31.849><c> also</c>
+
+00:00:31.960 --> 00:00:31.970 align:start position:0%
+just checking that's behaving that also
+ 
+
+00:00:31.970 --> 00:00:33.369 align:start position:0%
+just checking that's behaving that also
+creates<00:00:32.329><c> a</c><00:00:32.390><c> launch</c><00:00:32.540><c> configuration</c><00:00:33.110><c> that</c><00:00:33.260><c> I'm</c>
+
+00:00:33.369 --> 00:00:33.379 align:start position:0%
+creates a launch configuration that I'm
+ 
+
+00:00:33.379 --> 00:00:36.160 align:start position:0%
+creates a launch configuration that I'm
+going<00:00:33.530><c> to</c><00:00:33.590><c> edit</c><00:00:33.680><c> in</c><00:00:33.860><c> a</c><00:00:33.920><c> minute</c><00:00:34.600><c> I'm</c><00:00:35.600><c> into</c><00:00:36.050><c> this</c>
+
+00:00:36.160 --> 00:00:36.170 align:start position:0%
+going to edit in a minute I'm into this
+ 
+
+00:00:36.170 --> 00:00:49.930 align:start position:0%
+going to edit in a minute I'm into this
+app<00:00:36.350><c> I'm</c><00:00:36.680><c> gonna</c><00:00:36.890><c> add</c><00:00:37.160><c> a</c><00:00:37.190><c> new</c><00:00:37.610><c> controller</c>
+
+00:00:49.930 --> 00:00:49.940 align:start position:0%
+ 
+ 
+
+00:00:49.940 --> 00:00:52.959 align:start position:0%
+ 
+tralala<00:00:51.280><c> configuration</c><00:00:52.280><c> gonna</c><00:00:52.730><c> ride</c><00:00:52.940><c> a</c>
+
+00:00:52.959 --> 00:00:52.969 align:start position:0%
+tralala configuration gonna ride a
+ 
+
+00:00:52.969 --> 00:01:01.870 align:start position:0%
+tralala configuration gonna ride a
+simple<00:00:53.719><c> request</c><00:00:54.320><c> mapping</c>
+
+00:01:01.870 --> 00:01:01.880 align:start position:0%
+ 
+ 
+
+00:01:01.880 --> 00:01:09.520 align:start position:0%
+ 
+sorry
+
+00:01:09.520 --> 00:01:09.530 align:start position:0%
+ 
+ 
+
+00:01:09.530 --> 00:01:11.710 align:start position:0%
+ 
+so<00:01:10.490><c> that's</c><00:01:10.640><c> all</c><00:01:10.820><c> bad</c><00:01:10.970><c> I'm</c><00:01:11.120><c> gonna</c><00:01:11.240><c> run</c><00:01:11.420><c> it</c><00:01:11.540><c> but</c>
+
+00:01:11.710 --> 00:01:11.720 align:start position:0%
+so that's all bad I'm gonna run it but
+ 
+
+00:01:11.720 --> 00:01:12.700 align:start position:0%
+so that's all bad I'm gonna run it but
+this<00:01:11.840><c> time</c><00:01:12.050><c> I've</c><00:01:12.200><c> been</c><00:01:12.230><c> a</c><00:01:12.350><c> turn-on</c>
+
+00:01:12.700 --> 00:01:12.710 align:start position:0%
+this time I've been a turn-on
+ 
+
+00:01:12.710 --> 00:01:17.200 align:start position:0%
+this time I've been a turn-on
+spring-loaded<00:01:13.190><c> so</c><00:01:14.060><c> all</c><00:01:14.420><c> I</c><00:01:14.450><c> do</c><00:01:14.600><c> is</c><00:01:16.030><c> pass</c><00:01:17.030><c> in</c><00:01:17.180><c> a</c>
+
+00:01:17.200 --> 00:01:17.210 align:start position:0%
+spring-loaded so all I do is pass in a
+ 
+
+00:01:17.210 --> 00:01:22.840 align:start position:0%
+spring-loaded so all I do is pass in a
+shelter<00:01:17.570><c> agent</c><00:01:21.070><c> and</c><00:01:22.070><c> turn</c><00:01:22.310><c> off</c><00:01:22.400><c> the</c><00:01:22.520><c> verify</c>
+
+00:01:22.840 --> 00:01:22.850 align:start position:0%
+shelter agent and turn off the verify
+ 
+
+00:01:22.850 --> 00:01:27.550 align:start position:0%
+shelter agent and turn off the verify
+don't<00:01:23.420><c> panic</c><00:01:23.720><c> now</c><00:01:25.660><c> there's</c><00:01:26.660><c> nothing</c><00:01:26.990><c> SDSU's</c>
+
+00:01:27.550 --> 00:01:27.560 align:start position:0%
+don't panic now there's nothing SDSU's
+ 
+
+00:01:27.560 --> 00:01:29.020 align:start position:0%
+don't panic now there's nothing SDSU's
+hear<00:01:27.770><c> about</c><00:01:27.979><c> the</c><00:01:28.130><c> reloading</c><00:01:28.520><c> that's</c><00:01:28.670><c> going</c><00:01:28.940><c> on</c>
+
+00:01:29.020 --> 00:01:29.030 align:start position:0%
+hear about the reloading that's going on
+ 
+
+00:01:29.030 --> 00:01:30.880 align:start position:0%
+hear about the reloading that's going on
+spring<00:01:29.990><c> loaded</c><00:01:30.229><c> runs</c><00:01:30.530><c> entirely</c>
+
+00:01:30.880 --> 00:01:30.890 align:start position:0%
+spring loaded runs entirely
+ 
+
+00:01:30.890 --> 00:01:34.750 align:start position:0%
+spring loaded runs entirely
+independently<00:01:31.490><c> Artfest</c><00:01:32.030><c> yes</c><00:01:32.979><c> just</c><00:01:33.979><c> it's</c>
+
+00:01:34.750 --> 00:01:34.760 align:start position:0%
+independently Artfest yes just it's
+ 
+
+00:01:34.760 --> 00:01:37.990 align:start position:0%
+independently Artfest yes just it's
+easier<00:01:35.060><c> to</c><00:01:35.180><c> show</c><00:01:35.210><c> you</c><00:01:35.680><c> inside</c><00:01:36.680><c> sts</c><00:01:37.310><c> from</c><00:01:37.940><c> a</c>
+
+00:01:37.990 --> 00:01:38.000 align:start position:0%
+easier to show you inside sts from a
+ 
+
+00:01:38.000 --> 00:01:41.290 align:start position:0%
+easier to show you inside sts from a
+demo<00:01:38.180><c> Pont</c><00:01:38.450><c> of</c><00:01:38.510><c> view</c><00:01:39.460><c> so</c><00:01:40.460><c> now</c><00:01:40.700><c> the</c><00:01:40.760><c> apps</c><00:01:41.000><c> being</c>
+
+00:01:41.290 --> 00:01:41.300 align:start position:0%
+demo Pont of view so now the apps being
+ 
+
+00:01:41.300 --> 00:01:43.810 align:start position:0%
+demo Pont of view so now the apps being
+modified<00:01:41.630><c> at</c><00:01:41.899><c> startup</c><00:01:42.290><c> so</c><00:01:43.100><c> it</c><00:01:43.250><c> can</c><00:01:43.399><c> be</c><00:01:43.490><c> changed</c>
+
+00:01:43.810 --> 00:01:43.820 align:start position:0%
+modified at startup so it can be changed
+ 
+
+00:01:43.820 --> 00:01:46.980 align:start position:0%
+modified at startup so it can be changed
+here<00:01:43.940><c> runtime</c><00:01:44.800><c> the</c><00:01:45.800><c> apps</c><00:01:45.950><c> running</c><00:01:46.190><c> looks</c>
+
+00:01:46.980 --> 00:01:46.990 align:start position:0%
+here runtime the apps running looks
+ 
+
+00:01:46.990 --> 00:01:49.870 align:start position:0%
+here runtime the apps running looks
+check-in<00:01:47.990><c> points</c><00:01:48.290><c> there</c><00:01:48.590><c> yep</c><00:01:49.130><c> same</c><00:01:49.640><c> plan</c>
+
+00:01:49.870 --> 00:01:49.880 align:start position:0%
+check-in points there yep same plan
+ 
+
+00:01:49.880 --> 00:01:51.609 align:start position:0%
+check-in points there yep same plan
+points<00:01:50.180><c> there</c><00:01:50.360><c> and</c><00:01:50.540><c> reads</c><00:01:51.020><c> three</c><00:01:51.170><c> motors</c><00:01:51.500><c> in</c>
+
+00:01:51.609 --> 00:01:51.619 align:start position:0%
+points there and reads three motors in
+ 
+
+00:01:51.619 --> 00:01:58.540 align:start position:0%
+points there and reads three motors in
+mix<00:01:51.830><c> so</c><00:01:52.009><c> I</c><00:01:52.040><c> can</c><00:01:52.960><c> edit</c><00:01:53.960><c> my</c><00:01:54.050><c> up</c><00:01:57.550><c> without</c>
+
+00:01:58.540 --> 00:01:58.550 align:start position:0%
+mix so I can edit my up without
+ 
+
+00:01:58.550 --> 00:02:02.330 align:start position:0%
+mix so I can edit my up without
+restarting
+
+00:02:02.330 --> 00:02:02.340 align:start position:0%
+ 
+ 
+
+00:02:02.340 --> 00:02:06.690 align:start position:0%
+ 
+it's<00:02:02.880><c> tearing</c><00:02:03.090><c> show</c><00:02:03.360><c> method</c><00:02:03.659><c> refactoring</c>
+
+00:02:06.690 --> 00:02:06.700 align:start position:0%
+ 
+ 
+
+00:02:06.700 --> 00:02:09.960 align:start position:0%
+ 
+so<00:02:07.700><c> this</c><00:02:07.820><c> create</c><00:02:08.030><c> a</c><00:02:08.119><c> new</c><00:02:08.209><c> method</c><00:02:08.390><c> on</c><00:02:08.599><c> the</c><00:02:08.690><c> fly</c>
+
+00:02:09.960 --> 00:02:09.970 align:start position:0%
+so this create a new method on the fly
+ 
+
+00:02:09.970 --> 00:02:13.320 align:start position:0%
+so this create a new method on the fly
+show<00:02:10.970><c> you're</c><00:02:11.120><c> doing</c><00:02:11.180><c> something</c><00:02:11.599><c> different</c>
+
+00:02:13.320 --> 00:02:13.330 align:start position:0%
+show you're doing something different
+ 
+
+00:02:13.330 --> 00:02:16.479 align:start position:0%
+show you're doing something different
+yeah<00:02:14.330><c> so</c><00:02:14.569><c> that's</c><00:02:14.750><c> all</c><00:02:14.930><c> working</c><00:02:15.080><c> I</c><00:02:15.620><c> can</c><00:02:15.890><c> add</c>
+
+00:02:16.479 --> 00:02:16.489 align:start position:0%
+yeah so that's all working I can add
+ 
+
+00:02:16.489 --> 00:02:48.730 align:start position:0%
+yeah so that's all working I can add
+another<00:02:16.610><c> request</c><00:02:17.030><c> mapping</c>
+
+00:02:48.730 --> 00:02:48.740 align:start position:0%
+ 
+ 
+
+00:02:48.740 --> 00:02:51.550 align:start position:0%
+ 
+so<00:02:49.340><c> happy</c><00:02:49.790><c> and</c><00:02:50.150><c> we</c><00:02:50.210><c> started</c><00:02:50.540><c> again</c><00:02:50.780><c> so</c><00:02:51.470><c> the</c>
+
+00:02:51.550 --> 00:02:51.560 align:start position:0%
+so happy and we started again so the
+ 
+
+00:02:51.560 --> 00:02:53.050 align:start position:0%
+so happy and we started again so the
+older<00:02:51.800><c> ones</c><00:02:52.070><c> there</c><00:02:52.310><c> but</c><00:02:52.580><c> actually</c><00:02:52.640><c> the</c><00:02:52.910><c> new</c>
+
+00:02:53.050 --> 00:02:53.060 align:start position:0%
+older ones there but actually the new
+ 
+
+00:02:53.060 --> 00:02:56.050 align:start position:0%
+older ones there but actually the new
+point<00:02:53.750><c> is</c><00:02:53.930><c> there</c><00:02:54.430><c> and</c><00:02:55.430><c> it</c><00:02:55.640><c> supported</c><00:02:55.970><c> a</c>
+
+00:02:56.050 --> 00:02:56.060 align:start position:0%
+point is there and it supported a
+ 
+
+00:02:56.060 --> 00:02:59.530 align:start position:0%
+point is there and it supported a
+request<00:02:56.450><c> power</c><00:02:56.750><c> arm</c><00:02:57.850><c> it's</c><00:02:58.850><c> passed</c><00:02:59.150><c> that</c><00:02:59.360><c> in</c>
+
+00:02:59.530 --> 00:02:59.540 align:start position:0%
+request power arm it's passed that in
+ 
+
+00:02:59.540 --> 00:03:03.970 align:start position:0%
+request power arm it's passed that in
+it's<00:03:00.260><c> working</c><00:03:01.190><c> I</c><00:03:01.400><c> can</c><00:03:01.580><c> change</c><00:03:01.940><c> this</c><00:03:02.980><c> binding</c>
+
+00:03:03.970 --> 00:03:03.980 align:start position:0%
+it's working I can change this binding
+ 
+
+00:03:03.980 --> 00:03:11.020 align:start position:0%
+it's working I can change this binding
+for<00:03:04.130><c> the</c><00:03:04.160><c> request</c><00:03:04.550><c> per</c><00:03:04.730><c> am</c><00:03:09.610><c> there</c><00:03:10.610><c> you</c><00:03:10.700><c> go</c>
+
+00:03:11.020 --> 00:03:11.030 align:start position:0%
+for the request per am there you go
+ 
+
+00:03:11.030 --> 00:03:13.420 align:start position:0%
+for the request per am there you go
+I<00:03:11.060><c> can</c><00:03:11.720><c> carry</c><00:03:11.870><c> on</c><00:03:11.990><c> adding</c><00:03:12.350><c> more</c><00:03:12.530><c> methods</c><00:03:13.280><c> or</c>
+
+00:03:13.420 --> 00:03:13.430 align:start position:0%
+I can carry on adding more methods or
+ 
+
+00:03:13.430 --> 00:03:17.020 align:start position:0%
+I can carry on adding more methods or
+more<00:03:14.410><c> handlers</c><00:03:15.410><c> change</c><00:03:16.310><c> those</c><00:03:16.490><c> handlers</c><00:03:16.880><c> all</c>
+
+00:03:17.020 --> 00:03:17.030 align:start position:0%
+more handlers change those handlers all
+ 
+
+00:03:17.030 --> 00:03:19.150 align:start position:0%
+more handlers change those handlers all
+the<00:03:17.180><c> annotations</c><00:03:17.750><c> add</c><00:03:18.500><c> them</c><00:03:18.650><c> and</c><00:03:18.740><c> remove</c><00:03:19.010><c> them</c>
+
+00:03:19.150 --> 00:03:19.160 align:start position:0%
+the annotations add them and remove them
+ 
+
+00:03:19.160 --> 00:03:20.950 align:start position:0%
+the annotations add them and remove them
+all<00:03:19.580><c> without</c><00:03:19.850><c> restarting</c><00:03:20.300><c> the</c><00:03:20.420><c> app</c><00:03:20.540><c> all</c>
+
+00:03:20.950 --> 00:03:20.960 align:start position:0%
+all without restarting the app all
+ 
+
+00:03:20.960 --> 00:03:22.300 align:start position:0%
+all without restarting the app all
+because<00:03:21.320><c> of</c><00:03:21.350><c> what</c><00:03:21.560><c> spring-loaded</c><00:03:21.950><c> to</c><00:03:22.130><c> doing</c>
+
+00:03:22.300 --> 00:03:22.310 align:start position:0%
+because of what spring-loaded to doing
+ 
+
+00:03:22.310 --> 00:03:24.420 align:start position:0%
+because of what spring-loaded to doing
+in<00:03:22.400><c> other</c><00:03:22.490><c> colors</c><00:03:22.820><c> there</c><00:03:23.030><c> are</c><00:03:23.780><c> restrictions</c>
+
+00:03:24.420 --> 00:03:24.430 align:start position:0%
+in other colors there are restrictions
+ 
+
+00:03:24.430 --> 00:03:26.890 align:start position:0%
+in other colors there are restrictions
+but<00:03:25.430><c> covering</c><00:03:26.090><c> those</c><00:03:26.180><c> would</c><00:03:26.390><c> be</c><00:03:26.450><c> boring</c><00:03:26.780><c> I</c>
+
+00:03:26.890 --> 00:03:26.900 align:start position:0%
+but covering those would be boring I
+ 
+
+00:03:26.900 --> 00:03:30.160 align:start position:0%
+but covering those would be boring I
+just<00:03:27.200><c> wanted</c><00:03:27.380><c> to</c><00:03:27.470><c> show</c><00:03:27.620><c> the</c><00:03:27.740><c> cool</c><00:03:27.920><c> stuff</c>
+

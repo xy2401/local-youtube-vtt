@@ -1,0 +1,400 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.052 --> 00:00:01.260
+SAM THOROGOOD: Hey, everyone.
+
+00:00:01.260 --> 00:00:02.330
+It's Sam here.
+
+00:00:02.330 --> 00:00:04.910
+On this episode of the
+Santa Tracker series,
+
+00:00:04.910 --> 00:00:06.925
+I'm going to talk a little
+bit about performance
+
+00:00:06.925 --> 00:00:09.050
+and performance in terms
+of the DIVs and the layers
+
+00:00:09.050 --> 00:00:11.000
+that we see on the page
+when we look at it.
+
+00:00:11.000 --> 00:00:13.080
+So let's have a quick
+look at the site itself.
+
+00:00:13.080 --> 00:00:16.280
+So what we see here is a
+bunch of DIVs and layers.
+
+00:00:16.280 --> 00:00:17.660
+If you bring up
+the Rendering tab
+
+00:00:17.660 --> 00:00:19.370
+in the bottom of
+your DevTools, you'll
+
+00:00:19.370 --> 00:00:22.080
+see we have paint flashing
+and layered borders turned on.
+
+00:00:22.080 --> 00:00:23.330
+So that's the effects you see.
+
+00:00:23.330 --> 00:00:24.740
+The brown outlines
+are the layers
+
+00:00:24.740 --> 00:00:27.140
+that the GPU knows
+about, and the green
+
+00:00:27.140 --> 00:00:29.300
+is where the GPU is
+currently drawing.
+
+00:00:29.300 --> 00:00:31.610
+And so there's a lot
+of stuff going on.
+
+00:00:31.610 --> 00:00:34.010
+Santa is a complicated site,
+and we do render things
+
+00:00:34.010 --> 00:00:35.240
+as we go along.
+
+00:00:35.240 --> 00:00:37.640
+This game, for instance
+is causing a few redraws.
+
+00:00:37.640 --> 00:00:40.760
+And you can kind of
+see some of our effects
+
+00:00:40.760 --> 00:00:43.050
+don't have drawing cost at all.
+
+00:00:43.050 --> 00:00:45.920
+For instance, this little cute
+scene of reindeers down here--
+
+00:00:45.920 --> 00:00:48.080
+they don't actually need
+to be redrawn or reframed.
+
+00:00:48.080 --> 00:00:49.454
+We've done some
+work to make sure
+
+00:00:49.454 --> 00:00:53.066
+that they're only happening in
+the GPU, which is pretty cool.
+
+00:00:53.066 --> 00:00:54.690
+But of course, for
+our countdown timer,
+
+00:00:54.690 --> 00:00:57.700
+we quite literally draw a
+new number every second,
+
+00:00:57.700 --> 00:00:58.685
+which makes sense.
+
+00:00:58.685 --> 00:01:01.060
+So what we're trying to do is
+reduce the number of layers
+
+00:01:01.060 --> 00:01:01.930
+that we're drawing.
+
+00:01:01.930 --> 00:01:03.430
+So if you see in
+the example, you'll
+
+00:01:03.430 --> 00:01:05.830
+see that the second
+counter is actually
+
+00:01:05.830 --> 00:01:06.970
+highlighting every frame.
+
+00:01:06.970 --> 00:01:08.450
+And we don't really know why.
+
+00:01:08.450 --> 00:01:10.649
+So let's have a look at that.
+
+00:01:10.649 --> 00:01:12.440
+So this little counter
+here is our problem.
+
+00:01:12.440 --> 00:01:13.830
+We've also got
+this DIV at the top
+
+00:01:13.830 --> 00:01:15.980
+with this little green effect
+up here, which is actually
+
+00:01:15.980 --> 00:01:16.480
+related.
+
+00:01:16.480 --> 00:01:18.680
+And I'll explain why
+in just a second.
+
+00:01:18.680 --> 00:01:20.605
+So if you go to
+our source code--
+
+00:01:20.605 --> 00:01:21.980
+and we can actually
+see that I've
+
+00:01:21.980 --> 00:01:24.605
+kind of commented things
+out rather than typing it
+
+00:01:24.605 --> 00:01:25.970
+in on the spot--
+
+00:01:25.970 --> 00:01:27.590
+we want to change
+a couple of things.
+
+00:01:27.590 --> 00:01:31.452
+So firstly, this element only
+takes up about 70 pixels high.
+
+00:01:31.452 --> 00:01:32.410
+And that's fine, right?
+
+00:01:32.410 --> 00:01:34.070
+That's how you want
+to use the element.
+
+00:01:34.070 --> 00:01:35.840
+But note that it actually
+gets bigger around the top
+
+00:01:35.840 --> 00:01:38.464
+and bottom because we have this
+effect of this number appearing
+
+00:01:38.464 --> 00:01:44.000
+and disappearing as
+the number changes.
+
+00:01:44.000 --> 00:01:45.740
+So what we're going to do--
+
+00:01:45.740 --> 00:01:48.110
+and this is in SAS, so you
+can see some dollar sign
+
+00:01:48.110 --> 00:01:49.232
+variables here--
+
+00:01:49.232 --> 00:01:50.690
+is we're going to
+set the overflow.
+
+00:01:50.690 --> 00:01:54.500
+So that overflow is
+going to be the size
+
+00:01:54.500 --> 00:01:55.640
+of the element in half.
+
+00:01:55.640 --> 00:01:59.460
+So we want to make this element
+bigger by half on both sides.
+
+00:01:59.460 --> 00:02:01.280
+So what we can do is
+set a negative margin
+
+00:02:01.280 --> 00:02:03.500
+to make the element
+bigger instead of padding
+
+00:02:03.500 --> 00:02:05.279
+to make the element
+smaller again.
+
+00:02:05.279 --> 00:02:07.820
+What that means is that we can
+force the GPU to make a bigger
+
+00:02:07.820 --> 00:02:10.610
+layer, which is really
+good because it'll then
+
+00:02:10.610 --> 00:02:14.570
+contain our elements that
+move up and down as we count.
+
+00:02:14.570 --> 00:02:17.620
+We've also set a z-index
+and set the overflow hidden.
+
+00:02:17.620 --> 00:02:19.120
+Because we can now
+tell the browser,
+
+00:02:19.120 --> 00:02:21.050
+hey, this layout
+which is now bigger
+
+00:02:21.050 --> 00:02:22.750
+really doesn't have
+anything outside it.
+
+00:02:22.750 --> 00:02:25.460
+Whereas previously,
+our core layer actually
+
+00:02:25.460 --> 00:02:26.960
+couldn't be restricted.
+
+00:02:26.960 --> 00:02:28.370
+It overflowed.
+
+00:02:28.370 --> 00:02:31.331
+Those things did expand
+out of its space.
+
+00:02:31.331 --> 00:02:36.470
+So now if we hit Save
+and hopefully Refresh,
+
+00:02:36.470 --> 00:02:37.940
+it should happen automatically.
+
+00:02:37.940 --> 00:02:40.820
+We'll see that actually we've
+got this bigger element here.
+
+00:02:40.820 --> 00:02:41.900
+But we've still got
+some problems here.
+
+00:02:41.900 --> 00:02:43.483
+This is still flashing
+for some reason
+
+00:02:43.483 --> 00:02:45.194
+we don't quite understand.
+
+00:02:45.194 --> 00:02:47.110
+What's actually happening
+here is this minutes
+
+00:02:47.110 --> 00:02:48.640
+and seconds and hours thing--
+
+00:02:48.640 --> 00:02:51.707
+that layer is on top of the
+numbers, not below the numbers.
+
+00:02:51.707 --> 00:02:53.290
+And that sounds a
+bit counterintuitive
+
+00:02:53.290 --> 00:02:56.710
+because surely the numbers are
+kind of below the text there.
+
+00:02:56.710 --> 00:02:59.710
+But because they're
+in the wrong way,
+
+00:02:59.710 --> 00:03:01.570
+the browser thinks
+that it needs to redraw
+
+00:03:01.570 --> 00:03:03.905
+that text every frame,
+which isn't quite true.
+
+00:03:03.905 --> 00:03:05.530
+So what we're going
+to do is go on here
+
+00:03:05.530 --> 00:03:08.950
+and say this holder,
+which contains our number,
+
+00:03:08.950 --> 00:03:09.970
+let's put it on top.
+
+00:03:09.970 --> 00:03:12.080
+Let's make its
+z-index much higher.
+
+00:03:12.080 --> 00:03:14.170
+So this is 100 here, which
+is just a random value.
+
+00:03:14.170 --> 00:03:15.045
+Because we're in a
+stacking context,
+
+00:03:15.045 --> 00:03:16.711
+it doesn't really
+matter what we choose.
+
+00:03:18.961 --> 00:03:21.460
+So if we refresh the page-- and
+that happens automatically--
+
+00:03:21.460 --> 00:03:26.640
+you'll see that now that number
+is just ticking up on its own.
+
+00:03:26.640 --> 00:03:28.920
+So that's pretty much all
+I wanted to cover today.
+
+00:03:28.920 --> 00:03:31.545
+Hopefully what you've learnt is
+a little bit about how to trick
+
+00:03:31.545 --> 00:03:35.190
+the browser into making bigger
+DIVs that are GPU layers
+
+00:03:35.190 --> 00:03:37.830
+and basically using things like
+z-index to basically convince
+
+00:03:37.830 --> 00:03:40.780
+the browser to only draw
+the bits you care about.
+
+00:03:40.780 --> 00:03:43.090
+So thanks for watching,
+and I'll see you next time.
+
+00:03:43.090 --> 00:03:43.960
+Thanks for watching.
+
+00:03:43.960 --> 00:03:45.570
+You can subscribe to the
+Google Chrome Developer Channel
+
+00:03:45.570 --> 00:03:48.630
+down here, or check out some
+other great videos along here.
+
+00:03:48.630 --> 00:03:51.080
+[BELLS JINGLING]
+

@@ -1,0 +1,158 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.340 --> 00:00:06.520
+SURMA: A very common thing
+we see on websites is FUT--
+
+00:00:06.520 --> 00:00:09.010
+a Flash of Unstyled Text.
+
+00:00:09.010 --> 00:00:11.710
+When using web fonts, the
+text will be invisible
+
+00:00:11.710 --> 00:00:13.520
+until either the
+web font's loaded
+
+00:00:13.520 --> 00:00:15.850
+or three seconds have
+passed, at which point
+
+00:00:15.850 --> 00:00:17.560
+the fallback font is used.
+
+00:00:17.560 --> 00:00:19.660
+To give developers
+more choice over how
+
+00:00:19.660 --> 00:00:22.210
+to deal with the
+loading font, CSS now
+
+00:00:22.210 --> 00:00:24.490
+has the font display property.
+
+00:00:24.490 --> 00:00:27.520
+The property defines three
+time spans-- the block period,
+
+00:00:27.520 --> 00:00:30.640
+the swap period, and
+the failer period.
+
+00:00:30.640 --> 00:00:32.290
+During the block
+period, the text
+
+00:00:32.290 --> 00:00:35.470
+will be made invisible if the
+web font hasn't loaded yet,
+
+00:00:35.470 --> 00:00:38.350
+rendering it as blocked
+on the web font.
+
+00:00:38.350 --> 00:00:40.390
+During the swap period,
+the fallback font
+
+00:00:40.390 --> 00:00:43.660
+will be used to render text, but
+if the web font is successfully
+
+00:00:43.660 --> 00:00:45.820
+loaded during the
+swap period, the font
+
+00:00:45.820 --> 00:00:49.390
+can be swapped from fallback
+to the actual web font.
+
+00:00:49.390 --> 00:00:52.330
+If the failure period is
+reached, loading the web font
+
+00:00:52.330 --> 00:00:55.720
+is considered to have failed and
+the fallback font will be used.
+
+00:00:55.720 --> 00:00:57.910
+Font display offers
+modes that allocate
+
+00:00:57.910 --> 00:01:00.460
+different amounts of time
+to the different periods.
+
+00:01:00.460 --> 00:01:02.680
+I recommend font
+display optional.
+
+00:01:02.680 --> 00:01:05.530
+This means either web font
+is available within 100
+
+00:01:05.530 --> 00:01:08.020
+milliseconds, which it can
+achieve with a service worker,
+
+00:01:08.020 --> 00:01:10.270
+or it is not used at all.
+
+00:01:10.270 --> 00:01:13.120
+Font display is very new and
+not consistently supported,
+
+00:01:13.120 --> 00:01:14.620
+but it is a progressive
+enhancement.
+
+00:01:14.620 --> 00:01:17.230
+The directive is ignored
+unless the browser
+
+00:01:17.230 --> 00:01:20.260
+understands it and will make
+your user experience much,
+
+00:01:20.260 --> 00:01:21.460
+much better.
+
+00:01:21.460 --> 00:01:22.020
+Got it?
+
+00:01:22.020 --> 00:01:22.690
+Great.
+
+00:01:22.690 --> 00:01:24.190
+See you next time.
+
+00:01:24.190 --> 00:01:25.170
+Surprise!
+
+00:01:25.170 --> 00:01:26.000
+I'm back.
+
+00:01:26.000 --> 00:01:28.044
+You just saw me talk
+about font display.
+
+00:01:28.044 --> 00:01:29.710
+And now, I want to
+ask you to subscribe,
+
+00:01:29.710 --> 00:01:32.560
+because you probably want
+to see more of these videos.
+
+00:01:32.560 --> 00:01:34.570
+And if you're interested
+in our live streams,
+
+00:01:34.570 --> 00:01:37.626
+the most recent
+one is over there.
+

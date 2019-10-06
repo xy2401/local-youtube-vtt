@@ -1,0 +1,1089 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.090 --> 00:00:01.839
+SURMA: Can we have,
+like, a pile of papers
+
+00:00:01.839 --> 00:00:04.094
+so every time we can go like--
+
+00:00:04.094 --> 00:00:05.570
+JAKE: Now on web news.
+
+00:00:05.570 --> 00:00:07.336
+There we go.
+
+00:00:07.336 --> 00:00:10.174
+[MUSIC PLAYING]
+
+00:00:13.219 --> 00:00:14.760
+SURMA: Oh, are we
+talking Smoosh now?
+
+00:00:14.760 --> 00:00:15.960
+JAKE: Well, I guess
+we should describe
+
+00:00:15.960 --> 00:00:17.160
+what actually happened.
+
+00:00:17.160 --> 00:00:19.535
+SURMA: Yeah, it might actually
+not be clear for everyone,
+
+00:00:19.535 --> 00:00:22.030
+that there is no SmooshGate
+and actually don't
+
+00:00:22.030 --> 00:00:23.370
+know what is behind this.
+
+00:00:23.370 --> 00:00:24.420
+So MooTools.
+
+00:00:24.420 --> 00:00:27.480
+JAKE: MooTools is one of the
+ancient JavaScript libraries
+
+00:00:27.480 --> 00:00:29.700
+which modified the
+Prototype chain.
+
+00:00:29.700 --> 00:00:32.120
+SURMA: And they had
+things like array tooling
+
+00:00:32.120 --> 00:00:33.870
+and probably lots of
+other things as well.
+
+00:00:33.870 --> 00:00:35.700
+It was like pre-jQuery?
+
+00:00:35.700 --> 00:00:38.185
+JAKE: Yes, I would say,
+or it's certainly--
+
+00:00:38.185 --> 00:00:39.560
+SURMA: Same year
+at least, right?
+
+00:00:39.560 --> 00:00:40.060
+JAKE: Yeah.
+
+00:00:40.060 --> 00:00:43.880
+I mean, it was very similar to
+Prototype, which was definitely
+
+00:00:43.880 --> 00:00:45.180
+pre-jQuery.
+
+00:00:45.180 --> 00:00:48.990
+So they were modifying-- adding
+things to array, objects.
+
+00:00:48.990 --> 00:00:49.740
+So loads of stuff.
+
+00:00:52.920 --> 00:00:55.290
+Now, I thought that--
+so we had array.flatten
+
+00:00:55.290 --> 00:00:58.170
+is the proposal that TC-39 made.
+
+00:00:58.170 --> 00:00:59.790
+And it's like a stage 3.
+
+00:00:59.790 --> 00:01:02.292
+And we spoke about it a
+couple of episodes ago.
+
+00:01:02.292 --> 00:01:02.875
+SURMA: Did we?
+
+00:01:02.875 --> 00:01:03.010
+JAKE: Yes.
+
+00:01:03.010 --> 00:01:04.800
+SURMA: Oh, yeah-- oh,
+flatten and flatMap.
+
+00:01:04.800 --> 00:01:05.300
+JAKE: And flatMap.
+
+00:01:05.300 --> 00:01:05.924
+SURMA: FlatMap.
+
+00:01:05.924 --> 00:01:06.777
+JAKE: Yes.
+
+00:01:06.777 --> 00:01:08.610
+I think it was in one
+of the Christmas ones.
+
+00:01:08.610 --> 00:01:14.310
+But the problem is is MooTools
+also had array.flatten.
+
+00:01:14.310 --> 00:01:16.770
+Now at first, I
+thought the problem was
+
+00:01:16.770 --> 00:01:21.780
+that they were doing if
+not array.prototype.flatten
+
+00:01:21.780 --> 00:01:23.350
+and then they would
+add their own.
+
+00:01:23.350 --> 00:01:24.880
+SURMA: Which I think
+they are doing.
+
+00:01:24.880 --> 00:01:27.420
+JAKE: No, this is the thing.
+
+00:01:27.420 --> 00:01:31.290
+Because I went into
+the MooTools' code,
+
+00:01:31.290 --> 00:01:35.671
+and they are overwriting
+that method no matter what.
+
+00:01:35.671 --> 00:01:37.170
+SURMA: But then
+where's the problem?
+
+00:01:37.170 --> 00:01:38.503
+JAKE: Because this is the thing.
+
+00:01:38.503 --> 00:01:39.810
+That's the right thing to do--
+
+00:01:39.810 --> 00:01:43.500
+well, If you must
+override a prototype.
+
+00:01:43.500 --> 00:01:45.687
+If there isn't a spec
+to follow, then--
+
+00:01:45.687 --> 00:01:46.770
+yeah, you have to always--
+
+00:01:46.770 --> 00:01:47.970
+SURMA: You do it
+unconditionally.
+
+00:01:47.970 --> 00:01:49.920
+JAKE: Yes, because otherwise
+in the future something else
+
+00:01:49.920 --> 00:01:51.660
+comes along with a
+different behavior
+
+00:01:51.660 --> 00:01:53.705
+and has taken over
+your namespace.
+
+00:01:53.705 --> 00:01:55.080
+SURMA: I was under
+the impression
+
+00:01:55.080 --> 00:01:56.700
+it did it conditionally.
+
+00:01:56.700 --> 00:01:57.720
+JAKE: No.
+
+00:01:57.720 --> 00:02:02.130
+The real problem is even
+more interesting than that.
+
+00:02:02.130 --> 00:02:06.710
+And it's nothing to do with
+code that calls array.flatten.
+
+00:02:06.710 --> 00:02:07.350
+Ooh.
+
+00:02:07.350 --> 00:02:08.762
+SURMA: Ooh.
+
+00:02:08.762 --> 00:02:10.970
+JAKE: This is where we would
+cut for the next episode
+
+00:02:10.970 --> 00:02:13.190
+if we wanted to
+retain more viewers.
+
+00:02:13.190 --> 00:02:14.660
+SURMA: Cue the "X-Files" theme.
+
+00:02:14.660 --> 00:02:17.720
+JAKE: Yes, tune in next week to
+find out what it's actually on.
+
+00:02:17.720 --> 00:02:19.349
+So they had this
+thing called elements,
+
+00:02:19.349 --> 00:02:21.140
+which is sort of
+representing, essentially,
+
+00:02:21.140 --> 00:02:22.260
+an array of elements.
+
+00:02:22.260 --> 00:02:23.820
+SURMA: Is that the thing that
+[INAUDIBLE] had underscored us,
+
+00:02:23.820 --> 00:02:25.570
+where you say like,
+underscore parentheses
+
+00:02:25.570 --> 00:02:27.387
+and it wraps an entire array.
+
+00:02:27.387 --> 00:02:28.970
+JAKE: It could very
+well be like that.
+
+00:02:28.970 --> 00:02:30.520
+I mean this is certainly
+what jQuery does.
+
+00:02:30.520 --> 00:02:31.160
+SURMA: OK.
+
+00:02:31.160 --> 00:02:33.430
+Or the jQuery elements that
+you'd-- that they did with
+
+00:02:33.430 --> 00:02:33.930
+a dollar.
+
+00:02:33.930 --> 00:02:35.840
+JAKE: Which is
+sort of inheriting
+
+00:02:35.840 --> 00:02:37.520
+from array-- sort of kind of.
+
+00:02:37.520 --> 00:02:39.100
+It's array-like.
+
+00:02:39.100 --> 00:02:41.240
+And what-- they had
+a bit of code that--
+
+00:02:41.240 --> 00:02:44.900
+to save time, they thought,
+well, this elements thing--
+
+00:02:44.900 --> 00:02:48.180
+it's kind of-- we want it to
+behave a lot like an array.
+
+00:02:48.180 --> 00:02:53.120
+So let's do a for in
+loop of all the stuff
+
+00:02:53.120 --> 00:02:55.990
+we've added onto
+the array prototype.
+
+00:02:55.990 --> 00:02:56.690
+SURMA: OK.
+
+00:02:56.690 --> 00:02:56.980
+JAKE: OK?
+
+00:02:56.980 --> 00:02:57.563
+SURMA: Mm-hmm.
+
+00:02:57.563 --> 00:02:58.140
+JAKE: Yeah?
+
+00:02:58.140 --> 00:03:02.270
+So if you do
+array.prototype.foo and set that
+
+00:03:02.270 --> 00:03:05.420
+to a function or something,
+that becomes enumerable.
+
+00:03:05.420 --> 00:03:08.840
+If you do a for in loop,
+that key is going to appear.
+
+00:03:08.840 --> 00:03:09.460
+SURMA: OK.
+
+00:03:09.460 --> 00:03:10.850
+JAKE: Yeah?
+
+00:03:10.850 --> 00:03:14.180
+But if you do
+array.prototype.sort and set
+
+00:03:14.180 --> 00:03:18.487
+that to a different function,
+it remains not enumerable,
+
+00:03:18.487 --> 00:03:19.070
+because sort--
+
+00:03:19.070 --> 00:03:21.320
+SURMA: Because the
+properties are defined as a--
+
+00:03:21.320 --> 00:03:22.910
+not enumerable property.
+
+00:03:22.910 --> 00:03:24.470
+JAKE: Exactly.
+
+00:03:24.470 --> 00:03:25.400
+SURMA: Interesting.
+
+00:03:25.400 --> 00:03:29.680
+JAKE: And that's what happened
+is by shipping array.flatten,
+
+00:03:29.680 --> 00:03:32.620
+it became non-enumerable.
+
+00:03:32.620 --> 00:03:35.680
+So their added
+method was no longer
+
+00:03:35.680 --> 00:03:38.380
+showing up in this for in loop.
+
+00:03:38.380 --> 00:03:41.850
+So it was no longer being
+added to their elements object.
+
+00:03:41.850 --> 00:03:44.350
+SURMA: And so those people who
+are using the wrapped element
+
+00:03:44.350 --> 00:03:45.730
+couldn't call flatten anymore.
+
+00:03:45.730 --> 00:03:47.230
+JAKE: Couldn't call
+flatten anymore.
+
+00:03:47.230 --> 00:03:49.660
+SURMA: Despite unconditionally
+overriding the prototype.
+
+00:03:49.660 --> 00:03:50.244
+JAKE: Exactly.
+
+00:03:50.244 --> 00:03:51.451
+SURMA: So that's interesting.
+
+00:03:51.451 --> 00:03:52.640
+So because they defined--
+
+00:03:52.640 --> 00:03:55.200
+because TC-39 wanted
+to ship flatten.
+
+00:03:55.200 --> 00:03:56.890
+It would have
+removed the function
+
+00:03:56.890 --> 00:03:59.110
+from the people
+relying on MooTools.
+
+00:03:59.110 --> 00:04:00.120
+JAKE: Yes.
+
+00:04:00.120 --> 00:04:02.030
+SURMA: That is very unintuitive.
+
+00:04:02.030 --> 00:04:02.600
+Interesting.
+
+00:04:02.600 --> 00:04:04.450
+JAKE: And that was
+a surprise to me,
+
+00:04:04.450 --> 00:04:06.460
+that it would remain
+non-enumerable.
+
+00:04:06.460 --> 00:04:07.925
+SURMA: Really?
+
+00:04:07.925 --> 00:04:10.870
+Because if the property exists,
+you are assigning a new value.
+
+00:04:10.870 --> 00:04:11.370
+JAKE: Yeah.
+
+00:04:11.370 --> 00:04:12.300
+SURMA: Like, it makes sense.
+
+00:04:12.300 --> 00:04:13.758
+JAKE: I suppose it
+does make sense.
+
+00:04:13.758 --> 00:04:16.410
+But when I read that,
+it was like, oh.
+
+00:04:16.410 --> 00:04:17.550
+Yeah, OK.
+
+00:04:17.550 --> 00:04:20.610
+SURMA: So that's why
+the first intuition was
+
+00:04:20.610 --> 00:04:23.846
+to not ship TC-39's
+flatten as flatten,
+
+00:04:23.846 --> 00:04:26.220
+but under a different name to
+just avoid the whole clash.
+
+00:04:26.220 --> 00:04:29.400
+JAKE: There was a Twitter poll
+done by someone in TC-39 of,
+
+00:04:29.400 --> 00:04:30.750
+like, what should we do here?
+
+00:04:30.750 --> 00:04:32.110
+Should we break the web?
+
+00:04:32.110 --> 00:04:34.200
+Should we call it Smoosh?
+
+00:04:34.200 --> 00:04:38.220
+Shall we change, like, how
+our implementation works
+
+00:04:38.220 --> 00:04:39.380
+to match MooTools?
+
+00:04:39.380 --> 00:04:40.920
+SURMA: That wouldn't
+solve anything.
+
+00:04:40.920 --> 00:04:41.504
+JAKE: Exactly.
+
+00:04:41.504 --> 00:04:43.878
+Because they were already
+unconditionally overwriting it,
+
+00:04:43.878 --> 00:04:45.210
+and that's why I think, oh--
+
+00:04:45.210 --> 00:04:47.543
+I have some sympathy for
+people who were confused by it,
+
+00:04:47.543 --> 00:04:48.840
+because I was confused by it.
+
+00:04:48.840 --> 00:04:50.410
+SURMA: That was very confusing--
+
+00:04:50.410 --> 00:04:51.487
+three, four days.
+
+00:04:51.487 --> 00:04:53.070
+I mean, technically,
+it's still going,
+
+00:04:53.070 --> 00:04:54.270
+I think, at the time
+of recording this,
+
+00:04:54.270 --> 00:04:55.730
+still people are going-- eee.
+
+00:04:55.730 --> 00:04:57.105
+JAKE: Yes, and
+one of the options
+
+00:04:57.105 --> 00:05:01.270
+is to rename the flatten
+method to something--
+
+00:05:01.270 --> 00:05:02.701
+SURMA: Like, let's say, Smoosh.
+
+00:05:02.701 --> 00:05:03.450
+JAKE: Like Smoosh.
+
+00:05:03.450 --> 00:05:05.040
+And Smoosh is the joke one.
+
+00:05:05.040 --> 00:05:06.820
+But it was a PR for it.
+
+00:05:06.820 --> 00:05:09.120
+So is that a joke?
+
+00:05:09.120 --> 00:05:09.930
+I don't know.
+
+00:05:09.930 --> 00:05:11.330
+I think that's--
+
+00:05:11.330 --> 00:05:14.150
+I think that was an in-joke
+that sort of leaked out.
+
+00:05:14.150 --> 00:05:15.240
+SURMA: Maybe.
+
+00:05:15.240 --> 00:05:16.920
+Turns out GitHub is not private.
+
+00:05:16.920 --> 00:05:18.120
+JAKE: Exactly.
+
+00:05:18.120 --> 00:05:20.730
+Yeah, it's not a
+place for in-jokes.
+
+00:05:20.730 --> 00:05:24.950
+And so people were kind of angry
+at this ridiculous method name.
+
+00:05:24.950 --> 00:05:26.865
+SURMA: Yeah.
+
+00:05:26.865 --> 00:05:29.700
+To be fair, I think in
+name, it hasn't shipped yet
+
+00:05:29.700 --> 00:05:33.270
+and was an unreasonable
+amount of anger.
+
+00:05:33.270 --> 00:05:35.579
+JAKE: I think some people
+felt it was a done deal.
+
+00:05:35.579 --> 00:05:36.120
+And it's not.
+
+00:05:36.120 --> 00:05:37.905
+It's still in
+absolutely [INAUDIBLE]..
+
+00:05:37.905 --> 00:05:39.780
+SURMA: Maybe that's
+where the confusion came,
+
+00:05:39.780 --> 00:05:41.114
+was the most drastic [INAUDIBLE]
+
+00:05:41.114 --> 00:05:43.446
+JAKE: Or when there's a PR
+to actually change the method
+
+00:05:43.446 --> 00:05:45.910
+name, it's reasonable to think
+that it's got a little bit--
+
+00:05:45.910 --> 00:05:46.410
+SURMA: Well, it's a PR.
+
+00:05:46.410 --> 00:05:46.510
+It's not merge.
+
+00:05:46.510 --> 00:05:48.150
+When it was in merge
+it would be like.
+
+00:05:48.150 --> 00:05:48.900
+JAKE: Right,
+
+00:05:48.900 --> 00:05:49.441
+SURMA: Right?
+
+00:05:49.441 --> 00:05:51.120
+JAKE: That's fair enough.
+
+00:05:51.120 --> 00:05:57.340
+So yeah, so the options really
+are rename it or break the web.
+
+00:05:57.340 --> 00:06:01.477
+And there are a lot of
+sites in the top 1,000 sites
+
+00:06:01.477 --> 00:06:03.310
+that are using Moo
+MooTools, whether they're
+
+00:06:03.310 --> 00:06:05.904
+using elements.flatten, we don't
+have the data for that yet.
+
+00:06:05.904 --> 00:06:07.320
+SURMA: I think
+Paul Irish has said
+
+00:06:07.320 --> 00:06:09.821
+it's like 1.8% of something?
+
+00:06:09.821 --> 00:06:11.320
+JAKE: Well, that
+was using MooTools.
+
+00:06:11.320 --> 00:06:11.670
+SURMA: Yeah.
+
+00:06:11.670 --> 00:06:12.420
+JAKE: So we don't
+know that they're
+
+00:06:12.420 --> 00:06:12.680
+using the flatten as well.
+
+00:06:12.680 --> 00:06:14.346
+SURMA: Well, of course,
+but at least you
+
+00:06:14.346 --> 00:06:16.050
+can see that MooTools,
+despite its age
+
+00:06:16.050 --> 00:06:18.420
+or however you
+want to look at it,
+
+00:06:18.420 --> 00:06:22.117
+it's still on fairly
+many page loads.
+
+00:06:22.117 --> 00:06:22.700
+JAKE: Exactly.
+
+00:06:22.700 --> 00:06:23.700
+So it's a big risk.
+
+00:06:23.700 --> 00:06:25.845
+And we have seen
+big sites break.
+
+00:06:25.845 --> 00:06:28.790
+Well, Firefox [INAUDIBLE]
+break in the Nightly
+
+00:06:28.790 --> 00:06:30.120
+with flatten shipped.
+
+00:06:30.120 --> 00:06:32.160
+A lot of people
+are saying, well,
+
+00:06:32.160 --> 00:06:34.400
+MooTools is stupid
+for doing that.
+
+00:06:34.400 --> 00:06:36.900
+And then some people are jumping
+to MooTools' defense going,
+
+00:06:36.900 --> 00:06:38.490
+well, we didn't know back then.
+
+00:06:38.490 --> 00:06:41.490
+And that's a lie, because we
+did, because I was writing
+
+00:06:41.490 --> 00:06:42.900
+JavaScript libraries back then.
+
+00:06:42.900 --> 00:06:45.750
+And a lot of those who were
+writing libraries which
+
+00:06:45.750 --> 00:06:47.490
+didn't touch the
+prototype were shouting
+
+00:06:47.490 --> 00:06:49.200
+at the libraries
+that were going,
+
+00:06:49.200 --> 00:06:52.870
+this is going to become
+a problem really soon.
+
+00:06:52.870 --> 00:06:53.880
+SURMA: The prophet!
+
+00:06:53.880 --> 00:06:55.740
+JAKE: Yeah.
+
+00:06:55.740 --> 00:06:58.570
+But I mean, we saw it
+happen with a prototype.
+
+00:06:58.570 --> 00:07:01.130
+They had getElements
+by class name.
+
+00:07:01.130 --> 00:07:06.330
+And that clashed with a
+real method eventually.
+
+00:07:06.330 --> 00:07:09.040
+So we knew this was a problem.
+
+00:07:09.040 --> 00:07:09.540
+So, yeah.
+
+00:07:09.540 --> 00:07:13.050
+SURMA: I think same with
+the array has contains
+
+00:07:13.050 --> 00:07:15.210
+and class list has includes.
+
+00:07:15.210 --> 00:07:18.440
+And like that contains
+includes and has or something,
+
+00:07:18.440 --> 00:07:21.270
+the triple of these functions
+completely inconsistent
+
+00:07:21.270 --> 00:07:24.221
+because of other libraries
+hogging that name in the past.
+
+00:07:24.221 --> 00:07:24.720
+JAKE: Yes.
+
+00:07:24.720 --> 00:07:27.300
+So we have string contains
+rather than string includes.
+
+00:07:27.300 --> 00:07:30.610
+And it is for exactly the
+same reason as Smoosh,
+
+00:07:30.610 --> 00:07:31.570
+as the flatten.
+
+00:07:31.570 --> 00:07:34.055
+But it's the same bit
+of code in MooTools.
+
+00:07:34.055 --> 00:07:35.430
+SURMA: Oh, it's
+also in MooTools.
+
+00:07:35.430 --> 00:07:35.790
+didn't know that.
+
+00:07:35.790 --> 00:07:37.390
+JAKE: Yes, it's the for in loop.
+
+00:07:37.390 --> 00:07:41.270
+So MooTools is wrong A, for
+messing around with prototypes.
+
+00:07:41.270 --> 00:07:46.099
+But B, the way they are
+completely unsubjectively wrong
+
+00:07:46.099 --> 00:07:47.640
+is that for in loop
+is not doing what
+
+00:07:47.640 --> 00:07:50.726
+they think it does, because
+it's not catering for the idea
+
+00:07:50.726 --> 00:07:53.225
+that methods will come in later
+and change the enumerability
+
+00:07:53.225 --> 00:07:54.744
+of properties.
+
+00:07:54.744 --> 00:07:56.160
+We can't punish
+MooTools for this.
+
+00:07:56.160 --> 00:07:58.980
+Because if you break the web,
+you're not punishing MooTools,
+
+00:07:58.980 --> 00:08:01.710
+you're punishing
+the users of sites.
+
+00:08:01.710 --> 00:08:02.910
+SURMA: I think--
+
+00:08:02.910 --> 00:08:07.350
+I had this idea, and I would
+like to call it quirks mode.
+
+00:08:07.350 --> 00:08:08.510
+JAKE: Right.
+
+00:08:08.510 --> 00:08:09.720
+Oh.
+
+00:08:09.720 --> 00:08:13.290
+So, OK, so what would
+your new trigger be for--
+
+00:08:13.290 --> 00:08:16.710
+SURMA: If you include MooTools,
+you are in quirks mode.
+
+00:08:16.710 --> 00:08:18.450
+JAKE: So that has
+been considered.
+
+00:08:18.450 --> 00:08:18.870
+And that is still--
+
+00:08:18.870 --> 00:08:19.350
+SURMA: Really?
+
+00:08:19.350 --> 00:08:20.962
+JAKE: --on the table,
+to some degree.
+
+00:08:20.962 --> 00:08:21.726
+SURMA: [LAUGHS]
+
+00:08:21.726 --> 00:08:24.630
+JAKE: Well, because we've done
+it before, like document.all.
+
+00:08:24.630 --> 00:08:27.670
+Document.all is a
+thing that works.
+
+00:08:27.670 --> 00:08:33.000
+But if document.all
+returns false, it doesn't--
+
+00:08:33.000 --> 00:08:34.220
+Yeah, you do know--
+
+00:08:34.220 --> 00:08:34.980
+yeah.
+
+00:08:34.980 --> 00:08:38.589
+Document.all inside an if
+statement will be falsey.
+
+00:08:38.589 --> 00:08:39.380
+SURMA: Interesting.
+
+00:08:39.380 --> 00:08:42.650
+JAKE: Even though it's an
+object with properties.
+
+00:08:42.650 --> 00:08:44.330
+And this was because
+a lot of code
+
+00:08:44.330 --> 00:08:46.780
+would branch on
+that document.all.
+
+00:08:46.780 --> 00:08:48.280
+SURMA: As a detection
+kind of thing.
+
+00:08:48.280 --> 00:08:48.780
+JAKE: Yeah.
+
+00:08:48.780 --> 00:08:51.238
+And this is the part where my
+memory's fading a little bit.
+
+00:08:51.238 --> 00:08:58.190
+But I think people were using
+it as a branch for IE or not.
+
+00:08:58.190 --> 00:08:59.380
+I can't remember.
+
+00:08:59.380 --> 00:09:03.110
+It was used as a big assumption
+of the browser, which
+
+00:09:03.110 --> 00:09:04.590
+is no longer true.
+
+00:09:04.590 --> 00:09:07.050
+So in order for the browser
+to support document.all
+
+00:09:07.050 --> 00:09:08.570
+for sites that
+were still using it
+
+00:09:08.570 --> 00:09:10.653
+but didn't want to be part
+of those if statements,
+
+00:09:10.653 --> 00:09:12.060
+that's why that was introduced.
+
+00:09:12.060 --> 00:09:14.900
+So it is possible that
+we introduced them kind
+
+00:09:14.900 --> 00:09:16.160
+of similar hacks [INAUDIBLE].
+
+00:09:16.160 --> 00:09:17.180
+SURMA: Oh, boy.
+
+00:09:17.180 --> 00:09:17.940
+JAKE: Yeah.
+
+00:09:17.940 --> 00:09:20.110
+But if you override
+array.prototype.flatten
+
+00:09:20.110 --> 00:09:25.570
+and it becomes enumerable,
+it's a horrible hack.
+
+00:09:25.570 --> 00:09:28.385
+And it's really silly but--
+
+00:09:28.385 --> 00:09:31.650
+SURMA: It would break less
+sites than the other way around.
+
+00:09:31.650 --> 00:09:32.150
+JAKE: Yes.
+
+00:09:32.150 --> 00:09:34.790
+But it just means that when you
+teach JavaScript to someone,
+
+00:09:34.790 --> 00:09:37.580
+you have to go, oh, by the way,
+if you overwrite a property,
+
+00:09:37.580 --> 00:09:39.687
+it remains its
+enumerability except for.
+
+00:09:39.687 --> 00:09:41.520
+SURMA: The web is like
+French at this point.
+
+00:09:41.520 --> 00:09:43.894
+You have rules, but you have
+more exceptions to the rules
+
+00:09:43.894 --> 00:09:44.996
+than you have rules.
+
+00:09:44.996 --> 00:09:46.820
+JAKE: [LAUGHS] Right.
+
+00:09:46.820 --> 00:09:47.720
+And so maybe it's--
+
+00:09:47.720 --> 00:09:50.066
+I think a new one is not bad.
+
+00:09:50.066 --> 00:09:52.190
+But the alternative is we
+just come up with a name,
+
+00:09:52.190 --> 00:09:55.512
+a new name that's not
+as silly as Smoosh.
+
+00:09:55.512 --> 00:09:57.220
+SURMA: That's not
+flatten and not Smoosh.
+
+00:09:57.220 --> 00:09:58.970
+JAKE: Exactly.
+
+00:09:58.970 --> 00:10:01.010
+SURMA: Do you think we
+have babbled on enough?
+
+00:10:01.010 --> 00:10:04.229
+JAKE: We have It does feel like
+we have "babled--" babled--
+
+00:10:04.229 --> 00:10:05.270
+SURMA: Babled on, babled.
+
+00:10:05.270 --> 00:10:06.520
+JAKE: The library
+is Babel, right?
+
+00:10:06.520 --> 00:10:07.660
+It's pronounced "babble," right?
+
+00:10:07.660 --> 00:10:07.980
+SURMA: I don't know.
+
+00:10:07.980 --> 00:10:08.885
+JAKE: No, it is "babble."
+
+00:10:08.885 --> 00:10:09.098
+SURMA: Is it?
+
+00:10:09.098 --> 00:10:10.010
+JAKE: Because I'm
+quite upset about that
+
+00:10:10.010 --> 00:10:11.120
+because it was always--
+
+00:10:11.120 --> 00:10:13.333
+like that word was
+always "bay-ble" me.
+
+00:10:13.333 --> 00:10:13.984
+SURMA: Yeah.
+
+00:10:13.984 --> 00:10:16.150
+JAKE: Because of "Hitchhiker's
+Guide to the Galaxy."
+
+00:10:16.150 --> 00:10:16.846
+That's the way--
+
+00:10:16.846 --> 00:10:17.970
+JAKE: The bable fish, yeah.
+
+00:10:17.970 --> 00:10:19.970
+SURMA: Yeah, the bable fish.
+

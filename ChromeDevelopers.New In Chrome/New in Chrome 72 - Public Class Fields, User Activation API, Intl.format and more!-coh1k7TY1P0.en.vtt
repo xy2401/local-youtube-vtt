@@ -1,0 +1,319 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.499 --> 00:00:03.180
+PETE LEPAGE: In Chrome 72,
+creating public class fields
+
+00:00:03.180 --> 00:00:05.790
+in JavaScript is
+now a lot cleaner.
+
+00:00:05.790 --> 00:00:08.820
+You can see if a page has been
+activated with the new user
+
+00:00:08.820 --> 00:00:13.990
+activation API, and localizing
+lists becomes way easier.
+
+00:00:13.990 --> 00:00:15.500
+And there's plenty more.
+
+00:00:15.500 --> 00:00:16.560
+I'm Pete LePage.
+
+00:00:16.560 --> 00:00:20.100
+Let's dive in and see what's
+new for developers in Chrome 72.
+
+00:00:20.100 --> 00:00:22.720
+[MUSIC PLAYING]
+
+00:00:22.720 --> 00:00:24.760
+My first language was Java.
+
+00:00:24.760 --> 00:00:26.440
+And when I started
+learning JavaScript,
+
+00:00:26.440 --> 00:00:28.210
+it threw me for a bit of a loop.
+
+00:00:28.210 --> 00:00:31.430
+How did I create a class,
+or deal with inheritance?
+
+00:00:31.430 --> 00:00:34.720
+What about public and private
+properties and methods?
+
+00:00:34.720 --> 00:00:37.180
+Many of the recent
+updates to JavaScript
+
+00:00:37.180 --> 00:00:41.120
+make object-oriented
+programming much easier.
+
+00:00:41.120 --> 00:00:44.320
+I can now create classes that
+mostly work like I expect them
+
+00:00:44.320 --> 00:00:46.540
+to, complete with
+constructors, getters
+
+00:00:46.540 --> 00:00:50.620
+and setters, static methods,
+and public properties.
+
+00:00:50.620 --> 00:00:54.880
+Thanks to V8 7.2, which
+ships with Chrome 72,
+
+00:00:54.880 --> 00:00:58.180
+you can now declare public
+class fields directly
+
+00:00:58.180 --> 00:01:00.820
+in the class definition,
+eliminating the need
+
+00:01:00.820 --> 00:01:02.530
+to do it in the constructor.
+
+00:01:02.530 --> 00:01:06.160
+Support for private class
+field is in the works.
+
+00:01:06.160 --> 00:01:08.950
+Head over to Matthias's
+article on class fields
+
+00:01:08.950 --> 00:01:10.820
+for more details.
+
+00:01:10.820 --> 00:01:13.630
+Remember when sites could
+automatically play sound
+
+00:01:13.630 --> 00:01:15.680
+as soon as the page loaded?
+
+00:01:15.680 --> 00:01:17.530
+You had to scramble
+to hit the Mute key
+
+00:01:17.530 --> 00:01:20.890
+or figure out which tab
+it was and close it.
+
+00:01:20.890 --> 00:01:25.120
+That's why some APIs require
+activation via user gesture
+
+00:01:25.120 --> 00:01:26.740
+before they work.
+
+00:01:26.740 --> 00:01:29.440
+Unfortunately, browsers
+handle this activation
+
+00:01:29.440 --> 00:01:31.180
+in different ways.
+
+00:01:31.180 --> 00:01:35.020
+Chrome 72 introduces
+user activation v2,
+
+00:01:35.020 --> 00:01:39.370
+which simplifies user
+activation for all gated APIs.
+
+00:01:39.370 --> 00:01:41.290
+It's based on a
+new specification
+
+00:01:41.290 --> 00:01:44.020
+that aims to standardize
+how activation
+
+00:01:44.020 --> 00:01:46.450
+works across all browsers.
+
+00:01:46.450 --> 00:01:48.520
+There's a new user
+activation property
+
+00:01:48.520 --> 00:01:51.310
+on both navigator
+and message event
+
+00:01:51.310 --> 00:01:55.750
+that has two properties-- has
+been active and is active.
+
+00:01:55.750 --> 00:02:00.010
+Has been active indicates if
+the associated window has ever
+
+00:02:00.010 --> 00:02:04.870
+seen a user activation in
+its life cycle, and is active
+
+00:02:04.870 --> 00:02:07.600
+indicates if the
+associated window currently
+
+00:02:07.600 --> 00:02:10.780
+has a user activation
+in its life cycle.
+
+00:02:10.780 --> 00:02:13.435
+We'll have a detailed
+write-up on developers.googl
+
+00:02:13.435 --> 00:02:18.760
+e.com/web/updates shortly,
+so keep an eye out for that.
+
+00:02:18.760 --> 00:02:21.160
+I really love the Intl APIs.
+
+00:02:21.160 --> 00:02:23.590
+They're super helpful
+for localizing content
+
+00:02:23.590 --> 00:02:25.480
+into other languages.
+
+00:02:25.480 --> 00:02:28.030
+In Chrome 72, there's
+a new method that
+
+00:02:28.030 --> 00:02:30.880
+makes rendering lists easier.
+
+00:02:30.880 --> 00:02:33.730
+Like other Intl APIs,
+it shifts the burden
+
+00:02:33.730 --> 00:02:37.720
+to the JavaScript engine
+without sacrificing performance.
+
+00:02:37.720 --> 00:02:41.530
+Initialize it with the local
+you want, then call format
+
+00:02:41.530 --> 00:02:44.950
+and it'll use the
+correct words and syntax.
+
+00:02:44.950 --> 00:02:47.800
+It can do conjunctions,
+which adds the localized
+
+00:02:47.800 --> 00:02:52.810
+equivalent of and, and look at
+those beautiful Oxford commas.
+
+00:02:52.810 --> 00:02:57.500
+It can do disjunctions, adding
+the localized equivalent of or,
+
+00:02:57.500 --> 00:03:00.570
+and by providing some additional
+options, you can do even more.
+
+00:03:00.570 --> 00:03:03.530
+Check out Matthias's
+post for more details.
+
+00:03:03.530 --> 00:03:05.860
+These are just a few of
+the changes in Chrome 72
+
+00:03:05.860 --> 00:03:06.850
+for developers.
+
+00:03:06.850 --> 00:03:08.440
+There's plenty more.
+
+00:03:08.440 --> 00:03:12.160
+Chrome 72 changes the
+behavior of cache.addALL
+
+00:03:12.160 --> 00:03:14.110
+to better match the spec.
+
+00:03:14.110 --> 00:03:16.780
+Previously, if there
+were duplicate entries
+
+00:03:16.780 --> 00:03:19.990
+in the same call, later
+requests would simply
+
+00:03:19.990 --> 00:03:22.030
+overwrite that first request.
+
+00:03:22.030 --> 00:03:25.000
+To match the spec if there
+are duplicate entries,
+
+00:03:25.000 --> 00:03:28.430
+it will reject with an
+invalid state error.
+
+00:03:28.430 --> 00:03:32.290
+Requests for fave icons are now
+handled by the service worker
+
+00:03:32.290 --> 00:03:36.160
+as long as the request URL is on
+the same origin as the service
+
+00:03:36.160 --> 00:03:36.940
+worker.
+
+00:03:36.940 --> 00:03:38.720
+And of course,
+there's plenty more.
+
+00:03:38.720 --> 00:03:39.830
+So check them out.
+
+00:03:39.830 --> 00:03:42.380
+All the details,
+including docs and specs,
+
+00:03:42.380 --> 00:03:45.160
+are in the updates post
+linked in the description.
+
+00:03:45.160 --> 00:03:47.950
+Be sure to check out the latest
+Chrome DevTools video to learn
+
+00:03:47.950 --> 00:03:49.720
+what's new in DevTools.
+
+00:03:49.720 --> 00:03:51.910
+Then click the Subscribe
+button and you'll
+
+00:03:51.910 --> 00:03:55.270
+get an email notification
+whenever we launch a new video.
+
+00:03:55.270 --> 00:03:58.370
+I'm Pete LePage, and as soon
+as Chrome 73 is released,
+
+00:03:58.370 --> 00:04:02.340
+I'll be right here to tell
+you what's new in Chrome.
+

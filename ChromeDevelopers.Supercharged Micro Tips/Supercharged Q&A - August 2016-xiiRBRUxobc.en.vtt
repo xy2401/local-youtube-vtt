@@ -1,0 +1,463 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.910
+[MUSIC PLAYING]
+
+00:00:03.910 --> 00:00:06.510
+PAUL LEWIS: Hello, and welcome
+to this Supercharged Q&amp;A.
+
+00:00:06.510 --> 00:00:07.380
+I'm Paul.
+
+00:00:07.380 --> 00:00:08.255
+SURMA: And I'm Surma.
+
+00:00:08.255 --> 00:00:09.713
+PAUL LEWIS: Now,
+today, we're going
+
+00:00:09.713 --> 00:00:11.000
+to answer another question.
+
+00:00:11.000 --> 00:00:13.785
+And as usual, it seems
+Surma has chosen one.
+
+00:00:13.785 --> 00:00:14.660
+What have you chosen?
+
+00:00:14.660 --> 00:00:16.510
+SURMA: I have chosen
+a question once again.
+
+00:00:16.510 --> 00:00:19.500
+And this week, it
+is going to be.
+
+00:00:19.500 --> 00:00:21.090
+"I'm, in general,
+very interested
+
+00:00:21.090 --> 00:00:22.910
+in gesture driven
+animations that
+
+00:00:22.910 --> 00:00:24.870
+use physics-based equations.
+
+00:00:24.870 --> 00:00:26.380
+Would be great to
+hear about that."
+
+00:00:26.380 --> 00:00:27.930
+PAUL LEWIS: OK, cool.
+
+00:00:27.930 --> 00:00:29.880
+Well, actually,
+as a side note, I
+
+00:00:29.880 --> 00:00:32.140
+was playing with this
+[INAUDIBLE] preview,
+
+00:00:32.140 --> 00:00:36.450
+and they've just recently added
+this spring, a timing function.
+
+00:00:36.450 --> 00:00:37.260
+Have you seen this?
+
+00:00:37.260 --> 00:00:37.420
+SURMA: Ooh.
+
+00:00:37.420 --> 00:00:38.320
+Yeah, I heard about it.
+
+00:00:38.320 --> 00:00:39.860
+I haven't actually looked
+at what it looks like.
+
+00:00:39.860 --> 00:00:41.693
+PAUL LEWIS: Yeah, so
+basically, what they do
+
+00:00:41.693 --> 00:00:44.460
+is instead of saying,
+timing-function ease-out,
+
+00:00:44.460 --> 00:00:45.870
+you can say spring,
+and then it's
+
+00:00:45.870 --> 00:00:50.616
+like mass, the dampening
+factor, the initial velocity,
+
+00:00:50.616 --> 00:00:51.740
+and a bunch of other stuff.
+
+00:00:51.740 --> 00:00:52.910
+SURMA: It sounds
+really physics-based.
+
+00:00:52.910 --> 00:00:53.430
+PAUL LEWIS: It is.
+
+00:00:53.430 --> 00:00:55.013
+And the weird thing
+is, at the moment,
+
+00:00:55.013 --> 00:00:57.955
+you can actually put a duration
+on it, and after that time,
+
+00:00:57.955 --> 00:01:00.330
+it'll just snap to the final
+location, which kind of felt
+
+00:01:00.330 --> 00:01:00.770
+a bit strange.
+
+00:01:00.770 --> 00:01:02.140
+SURMA: That does not
+sound very physics-based.
+
+00:01:02.140 --> 00:01:02.630
+PAUL LEWIS: No, it doesn't.
+
+00:01:02.630 --> 00:01:04.250
+It sounds kind of
+a weird hybrid.
+
+00:01:04.250 --> 00:01:06.570
+But nonetheless, it's
+an interesting proposal
+
+00:01:06.570 --> 00:01:11.820
+to introduce physics-based stuff
+to existing CSS animations.
+
+00:01:11.820 --> 00:01:13.960
+But how that's going to
+pan out, I do not know.
+
+00:01:13.960 --> 00:01:15.668
+What are your thoughts
+on the whole area?
+
+00:01:15.668 --> 00:01:18.230
+SURMA: Well, something
+that you actually
+
+00:01:18.230 --> 00:01:23.160
+taught me, I guess, or told
+me was when it looks right,
+
+00:01:23.160 --> 00:01:23.660
+it is right.
+
+00:01:23.660 --> 00:01:24.326
+PAUL LEWIS: Yes.
+
+00:01:24.326 --> 00:01:26.614
+SURMA: Which is something
+that we've been employing
+
+00:01:26.614 --> 00:01:27.530
+in codes all the time.
+
+00:01:27.530 --> 00:01:29.870
+For example, with the
+swipeable cards that you wrote,
+
+00:01:29.870 --> 00:01:31.661
+you just went with this
+formula which said,
+
+00:01:31.661 --> 00:01:33.595
+current position
+minus end position,
+
+00:01:33.595 --> 00:01:35.720
+or the other way around,
+divided by 4, every frame,
+
+00:01:35.720 --> 00:01:39.490
+will have a real nice
+smooth out effect, which
+
+00:01:39.490 --> 00:01:41.450
+is not physics-based at all.
+
+00:01:41.450 --> 00:01:43.170
+It isn't even
+framerate-independent.
+
+00:01:43.170 --> 00:01:44.882
+But in 99% of the
+time, it's going
+
+00:01:44.882 --> 00:01:47.090
+to feel right to the user,
+and that is the only thing
+
+00:01:47.090 --> 00:01:48.000
+that actually counts.
+
+00:01:48.000 --> 00:01:50.580
+PAUL LEWIS: I think, yeah,
+because I got that from one
+
+00:01:50.580 --> 00:01:51.730
+of my teachers at school.
+
+00:01:51.730 --> 00:01:53.599
+When we were doing
+some drawing work,
+
+00:01:53.599 --> 00:01:55.890
+basically, he was like, if
+it looks right, it is right.
+
+00:01:55.890 --> 00:01:57.181
+And it's kind of stuck with me.
+
+00:01:57.181 --> 00:01:59.840
+And yeah, I think there's
+two parts to this, which
+
+00:01:59.840 --> 00:02:02.550
+is, firstly, if somebody's
+interacting with something
+
+00:02:02.550 --> 00:02:05.782
+on-screen, it's got to feel like
+it's sticking to their finger,
+
+00:02:05.782 --> 00:02:08.240
+assuming that's the kind of
+feel you're actually going for.
+
+00:02:08.240 --> 00:02:08.820
+SURMA: Sure.
+
+00:02:08.820 --> 00:02:11.540
+PAUL LEWIS: After that, you
+can get away with quite a lot,
+
+00:02:11.540 --> 00:02:14.245
+because it's not a real
+thing that they're--
+
+00:02:14.245 --> 00:02:14.870
+SURMA: Exactly.
+
+00:02:14.870 --> 00:02:15.490
+PAUL LEWIS: --interacting
+with, right?
+
+00:02:15.490 --> 00:02:17.698
+I mean, this is the whole
+idea behind material design
+
+00:02:17.698 --> 00:02:21.280
+is this kind of-- these
+layers that sort of respond
+
+00:02:21.280 --> 00:02:24.100
+sort of like a real-world
+thing, but also kind of magical
+
+00:02:24.100 --> 00:02:24.690
+as well.
+
+00:02:24.690 --> 00:02:27.200
+SURMA: It's a metaphor, and
+it stops there, I think.
+
+00:02:27.200 --> 00:02:29.410
+PAUL LEWIS: Right, and
+even with skeomorphic stuff
+
+00:02:29.410 --> 00:02:32.350
+of yesteryear, it was kind
+of realistic, but also
+
+00:02:32.350 --> 00:02:33.700
+kind of not as well.
+
+00:02:33.700 --> 00:02:36.585
+And I think, as you say,
+so long as it looks right,
+
+00:02:36.585 --> 00:02:38.960
+or apparently from what I say,
+as long as it looks right,
+
+00:02:38.960 --> 00:02:40.160
+I think it is right.
+
+00:02:40.160 --> 00:02:42.590
+And the thing about doing
+something that's physics-based,
+
+00:02:42.590 --> 00:02:46.039
+generally, is there's a
+increased computational cost
+
+00:02:46.039 --> 00:02:47.455
+of doing the physics
+calculations.
+
+00:02:47.455 --> 00:02:48.690
+SURMA: For the real gain.
+
+00:02:48.690 --> 00:02:51.020
+PAUL LEWIS: For arguably
+questionable gain.
+
+00:02:51.020 --> 00:02:51.610
+I think--
+
+00:02:51.610 --> 00:02:52.943
+SURMA: [INAUDIBLE] metaphrasing.
+
+00:02:52.943 --> 00:02:55.970
+PAUL LEWIS: Yeah, in some
+cases, it's going to be right.
+
+00:02:55.970 --> 00:02:58.579
+It's going to be the right
+thing to do, depending on the UI
+
+00:02:58.579 --> 00:02:59.370
+that you're making.
+
+00:02:59.370 --> 00:03:01.390
+But in other cases, I
+think, if you can fake it
+
+00:03:01.390 --> 00:03:03.647
+and you can get close to
+it, absolutely do that,
+
+00:03:03.647 --> 00:03:06.230
+and especially if it's going to
+mean that you're spending less
+
+00:03:06.230 --> 00:03:08.760
+time on the CPU and you're much
+more likely to hit like a 60
+
+00:03:08.760 --> 00:03:09.440
+frames a second animation.
+
+00:03:09.440 --> 00:03:10.380
+SURMA: And I think it's
+kind of unwieldy when
+
+00:03:10.380 --> 00:03:12.463
+you go physics-based really
+fast, because you have
+
+00:03:12.463 --> 00:03:15.550
+to basically pretend
+that a certain item has
+
+00:03:15.550 --> 00:03:18.530
+weight so you can kind of figure
+out how fast it's going to go.
+
+00:03:18.530 --> 00:03:19.770
+So all these kind of things--
+
+00:03:19.770 --> 00:03:19.990
+PAUL LEWIS: Yeah.
+
+00:03:19.990 --> 00:03:21.520
+SURMA: --that get really
+annoying, because you're like,
+
+00:03:21.520 --> 00:03:22.520
+I have a div.
+
+00:03:22.520 --> 00:03:25.380
+Let's pretend it
+weighs five kilograms.
+
+00:03:25.380 --> 00:03:27.740
+And then you get more
+variants you can tune,
+
+00:03:27.740 --> 00:03:29.320
+and it gets really
+hard to juggle
+
+00:03:29.320 --> 00:03:30.340
+all these things in your head.
+
+00:03:30.340 --> 00:03:32.506
+And I think, most of the
+time, especially when we're
+
+00:03:32.506 --> 00:03:34.710
+talking about simple
+UI, that it's not
+
+00:03:34.710 --> 00:03:36.850
+worth the effort or the
+computational time that
+
+00:03:36.850 --> 00:03:37.950
+comes with it.
+
+00:03:37.950 --> 00:03:38.790
+PAUL LEWIS: Exactly.
+
+00:03:38.790 --> 00:03:39.665
+So there you have it.
+
+00:03:39.665 --> 00:03:41.530
+I think if you can do it, great.
+
+00:03:41.530 --> 00:03:45.770
+Don't stress out about it and
+just give it your best shot.
+
+00:03:45.770 --> 00:03:47.430
+And I think that
+most of the time,
+
+00:03:47.430 --> 00:03:49.221
+so long as you're doing
+60 frames a second,
+
+00:03:49.221 --> 00:03:52.800
+stick to finger, and everything
+kind of plays out, generally,
+
+00:03:52.800 --> 00:03:54.740
+quite nicely with
+eases and so forth,
+
+00:03:54.740 --> 00:03:57.227
+most of the time, that'll
+actually cover you pretty well.
+
+00:03:57.227 --> 00:03:58.810
+So thank you very
+much for joining us.
+
+00:03:58.810 --> 00:04:02.210
+Don't forget to subscribe, and
+we will catch you next time.
+
+00:04:02.210 --> 00:04:03.410
+SURMA: See you.
+
+00:04:03.410 --> 00:04:06.760
+[MUSIC PLAYING]
+

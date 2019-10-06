@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.290
+[MUSIC PLAYING]
+
+00:00:03.290 --> 00:00:04.310
+SURMA: For loops.
+
+00:00:04.310 --> 00:00:05.330
+We all write them.
+
+00:00:05.330 --> 00:00:06.410
+We all love them.
+
+00:00:06.410 --> 00:00:08.720
+And we all have to use
+them to iterate over
+
+00:00:08.720 --> 00:00:09.950
+an array of things.
+
+00:00:09.950 --> 00:00:11.560
+Do you see what I did there?
+
+00:00:11.560 --> 00:00:13.430
+Modern JavaScript has
+improved for loops
+
+00:00:13.430 --> 00:00:15.290
+to make the process
+of iterating over
+
+00:00:15.290 --> 00:00:17.450
+things much more convenient.
+
+00:00:17.450 --> 00:00:19.610
+First in line is
+the for of loop.
+
+00:00:19.610 --> 00:00:23.240
+It iterates over the members
+of an iterable, like an array.
+
+00:00:23.240 --> 00:00:25.490
+Instead of having to
+maintain an index variable
+
+00:00:25.490 --> 00:00:27.660
+and checking against
+the length of an array,
+
+00:00:27.660 --> 00:00:29.900
+we can instead use
+the of keyword.
+
+00:00:29.900 --> 00:00:33.800
+The loop body will be executed
+for each member of the array.
+
+00:00:33.800 --> 00:00:36.260
+For a while now,
+JavaScript and web APIs
+
+00:00:36.260 --> 00:00:39.140
+have been making
+extensive use of promises.
+
+00:00:39.140 --> 00:00:41.630
+To handle any sort of
+asynchronous iteration
+
+00:00:41.630 --> 00:00:43.790
+more elegantly,
+JavaScript has also
+
+00:00:43.790 --> 00:00:46.490
+gotten support for
+the for await loop.
+
+00:00:46.490 --> 00:00:49.470
+It works the same as our
+previous for of loop.
+
+00:00:49.470 --> 00:00:51.470
+But if the value is
+a promise, the loop
+
+00:00:51.470 --> 00:00:53.360
+will await the promise.
+
+00:00:53.360 --> 00:00:56.240
+This means it will block until
+the promise resolves and will
+
+00:00:56.240 --> 00:00:58.490
+be using the value the
+promise resolves to
+
+00:00:58.490 --> 00:00:59.890
+for the loop's body.
+
+00:00:59.890 --> 00:01:00.430
+But wait!
+
+00:01:00.430 --> 00:01:01.670
+There's even more.
+
+00:01:01.670 --> 00:01:03.980
+You can make any of
+your own types iterable
+
+00:01:03.980 --> 00:01:06.800
+or use generators, which are
+functions that make creating
+
+00:01:06.800 --> 00:01:08.750
+iterable types extremely easy.
+
+00:01:08.750 --> 00:01:10.430
+If you want to know
+more, take a look
+
+00:01:10.430 --> 00:01:12.200
+at Jake's article
+in the description.
+
+00:01:12.200 --> 00:01:14.295
+Enjoy looping and iterating.
+
+00:01:14.295 --> 00:01:15.245
+[MUSIC PLAYING]
+
+00:01:15.245 --> 00:01:17.150
+Yeah?
+
+00:01:17.150 --> 00:01:17.960
+What?
+
+00:01:17.960 --> 00:01:19.990
+Really?
+
+00:01:19.990 --> 00:01:21.390
+OK.
+
+00:01:21.390 --> 00:01:23.850
+I'm being told you want to
+watch more "Supercharged."
+
+00:01:23.850 --> 00:01:27.408
+Well, there's two buttons
+for your convenience.
+

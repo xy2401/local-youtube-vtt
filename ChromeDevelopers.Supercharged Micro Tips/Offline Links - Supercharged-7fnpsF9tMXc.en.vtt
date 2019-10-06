@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.604
+[MUSIC PLAYING]
+
+00:00:02.604 --> 00:00:04.640
+SURMA: Making your
+app work offline
+
+00:00:04.640 --> 00:00:08.080
+is one of the cornerstones of
+a good progressive web app.
+
+00:00:08.080 --> 00:00:10.720
+But not everything can
+be made to work offline.
+
+00:00:10.720 --> 00:00:13.960
+And letting your users know
+what they can and cannot do is
+
+00:00:13.960 --> 00:00:16.450
+important for a smooth
+user experience.
+
+00:00:16.450 --> 00:00:19.510
+As a simple example, while
+the landing page of your blog
+
+00:00:19.510 --> 00:00:21.640
+will surely be
+available offline,
+
+00:00:21.640 --> 00:00:24.700
+you probably won't have
+all your posts cached.
+
+00:00:24.700 --> 00:00:27.130
+Some blog posts on the
+landing page can be clicked,
+
+00:00:27.130 --> 00:00:28.820
+while others cannot.
+
+00:00:28.820 --> 00:00:30.940
+To convey this to the
+user, a simple trick
+
+00:00:30.940 --> 00:00:32.980
+is to fade out the
+links of articles
+
+00:00:32.980 --> 00:00:34.780
+that are not available.
+
+00:00:34.780 --> 00:00:36.400
+When the offline
+event is omitted,
+
+00:00:36.400 --> 00:00:39.350
+you can traverse all your links,
+check if they're in the cache
+
+00:00:39.350 --> 00:00:41.830
+by using the cache
+API, and set a style
+
+00:00:41.830 --> 00:00:43.670
+that fades the text out.
+
+00:00:43.670 --> 00:00:46.120
+Additionally, set
+pointer events to none,
+
+00:00:46.120 --> 00:00:48.190
+so that they become unclickable.
+
+00:00:48.190 --> 00:00:50.140
+When the online
+event is omitted,
+
+00:00:50.140 --> 00:00:51.970
+remove the stars
+again, and everything
+
+00:00:51.970 --> 00:00:53.740
+will be back to normal.
+
+00:00:53.740 --> 00:00:56.440
+And that's it-- a simple trick
+with a couple lines of code
+
+00:00:56.440 --> 00:00:59.920
+to make your UI respond to
+changes in connectivity.
+
+00:00:59.920 --> 00:01:02.560
+Keep in mind, though, that an
+online event doesn't actually
+
+00:01:02.560 --> 00:01:04.450
+mean the user has connectivity.
+
+00:01:04.450 --> 00:01:06.940
+For example, they could
+be behind a captive portal
+
+00:01:06.940 --> 00:01:07.880
+at an airport.
+
+00:01:07.880 --> 00:01:09.910
+So Li-Fi is a thing.
+
+00:01:09.910 --> 00:01:11.410
+See you next time.
+
+00:01:11.410 --> 00:01:13.840
+If you like Supercharged,
+you should probably
+
+00:01:13.840 --> 00:01:15.340
+subscribe to this
+channel, so you
+
+00:01:15.340 --> 00:01:17.350
+know about all the new videos.
+
+00:01:17.350 --> 00:01:18.910
+Or if you don't
+want to wait, you
+
+00:01:18.910 --> 00:01:22.490
+can watch our most recent
+live stream over there.
+
+00:01:22.490 --> 00:01:25.110
+And actually, you
+should do both.
+

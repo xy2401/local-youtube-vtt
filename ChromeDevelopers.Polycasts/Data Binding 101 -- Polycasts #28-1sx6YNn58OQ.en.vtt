@@ -1,0 +1,906 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.499 --> 00:00:03.185
+[MUSIC PLAYING]
+
+00:00:04.962 --> 00:00:05.920
+Hey there, polycasters.
+
+00:00:05.920 --> 00:00:07.000
+Rob here.
+
+00:00:07.000 --> 00:00:09.775
+So I have a little
+confession for you today.
+
+00:00:09.775 --> 00:00:11.400
+I've been using the
+data binding system
+
+00:00:11.400 --> 00:00:14.040
+in Polymer for almost
+two years now but,
+
+00:00:14.040 --> 00:00:18.110
+up until very recently, I didn't
+actually know how it worked.
+
+00:00:18.110 --> 00:00:20.080
+Sure, I could use
+the binding syntax
+
+00:00:20.080 --> 00:00:23.160
+to pass data around
+inside of my app but,
+
+00:00:23.160 --> 00:00:26.410
+because I didn't understand what
+was going on under the hood,
+
+00:00:26.410 --> 00:00:28.800
+it sort of all felt
+like magic to me
+
+00:00:28.800 --> 00:00:31.110
+and, ultimately, that made
+the application a lot harder
+
+00:00:31.110 --> 00:00:32.710
+to debug.
+
+00:00:32.710 --> 00:00:35.020
+So I wanted to create
+this series of videos
+
+00:00:35.020 --> 00:00:37.100
+so you could
+understand how bindings
+
+00:00:37.100 --> 00:00:39.290
+are working in your own app.
+
+00:00:39.290 --> 00:00:41.190
+Now to do this,
+we're going to have
+
+00:00:41.190 --> 00:00:45.000
+to first know about these things
+called binding annotations.
+
+00:00:45.000 --> 00:00:48.160
+These are the little symbols
+that you write in your HTML
+
+00:00:48.160 --> 00:00:51.620
+to tell Polymer that you want to
+create a binding at that spot.
+
+00:00:51.620 --> 00:00:55.140
+One way annotations-- which are
+signified by square brackets--
+
+00:00:55.140 --> 00:00:58.910
+allow you to flow data from a
+host element down to a target,
+
+00:00:58.910 --> 00:01:02.096
+but never back from the
+target up to the host.
+
+00:01:02.096 --> 00:01:03.470
+To do something
+like that, you'll
+
+00:01:03.470 --> 00:01:05.770
+want to use two-way annotations,
+or what are sometimes
+
+00:01:05.770 --> 00:01:08.440
+called automatic annotations.
+
+00:01:08.440 --> 00:01:10.280
+This lets the host
+and the target
+
+00:01:10.280 --> 00:01:12.335
+pass data back and forth.
+
+00:01:12.335 --> 00:01:14.460
+Now I'll explain this a
+little bit more in a minute
+
+00:01:14.460 --> 00:01:16.850
+but first, I just
+want to stop and think
+
+00:01:16.850 --> 00:01:19.970
+what's actually going
+on inside of my app
+
+00:01:19.970 --> 00:01:23.310
+when Polymer encounters
+an annotation?
+
+00:01:23.310 --> 00:01:26.031
+So when Polymer first
+sees your element,
+
+00:01:26.031 --> 00:01:28.280
+you're trying to register
+it and everything, Polymer's
+
+00:01:28.280 --> 00:01:30.540
+going to parse your
+element's template
+
+00:01:30.540 --> 00:01:34.230
+and actually look for these
+nodes with these binding
+
+00:01:34.230 --> 00:01:35.710
+annotations.
+
+00:01:35.710 --> 00:01:38.270
+And when it finds these
+sort of binding annotations,
+
+00:01:38.270 --> 00:01:42.890
+it's going to create what
+it calls property effects.
+
+00:01:42.890 --> 00:01:45.170
+And a property effect
+is a little object
+
+00:01:45.170 --> 00:01:49.070
+that knows which node in
+the DOM to update whenever
+
+00:01:49.070 --> 00:01:51.490
+this property has changed.
+
+00:01:51.490 --> 00:01:53.090
+So, in this example,
+Polymer is going
+
+00:01:53.090 --> 00:01:56.200
+to create a property effect
+for this div right here
+
+00:01:56.200 --> 00:01:59.670
+and another property effect
+for this paper input element.
+
+00:01:59.670 --> 00:02:01.880
+So we'll have two
+property effects.
+
+00:02:01.880 --> 00:02:06.390
+And all of these property effect
+objects get stored in an array.
+
+00:02:06.390 --> 00:02:09.250
+Now I like to think of that
+array of property effects
+
+00:02:09.250 --> 00:02:11.770
+as kind of like a
+checklist of actions
+
+00:02:11.770 --> 00:02:15.220
+that need to run any time
+that property updates.
+
+00:02:15.220 --> 00:02:19.410
+And you can actually go and
+look at this actual array,
+
+00:02:19.410 --> 00:02:20.090
+if you want.
+
+00:02:20.090 --> 00:02:22.820
+You can hop into the dev
+tools and this is an element
+
+00:02:22.820 --> 00:02:24.165
+that I created.
+
+00:02:24.165 --> 00:02:26.540
+You can use that little trick
+that I've shown you before,
+
+00:02:26.540 --> 00:02:30.450
+where you can select it in the
+Elements Panel and then just do
+
+00:02:30.450 --> 00:02:36.000
+dollar sign zero and
+type ._propertyeffects.
+
+00:02:36.000 --> 00:02:37.584
+Now this is a private
+part of Polymer.
+
+00:02:37.584 --> 00:02:39.458
+It's not something we
+should be messing with,
+
+00:02:39.458 --> 00:02:40.420
+but we can inspect it.
+
+00:02:40.420 --> 00:02:41.750
+It's kind of fun.
+
+00:02:41.750 --> 00:02:45.050
+And it'll give you this
+object with this array.
+
+00:02:45.050 --> 00:02:47.760
+And you can see here, there's
+two objects inside of here.
+
+00:02:47.760 --> 00:02:49.220
+These are our two
+property effects
+
+00:02:49.220 --> 00:02:51.820
+and you can see a little bit of
+info about the property effect
+
+00:02:51.820 --> 00:02:52.320
+itself.
+
+00:02:52.320 --> 00:02:54.720
+It's a text property effect.
+
+00:02:54.720 --> 00:02:58.500
+It's set to use curly brace
+mode, which I'm assuming
+
+00:02:58.500 --> 00:03:01.685
+means it's in some sort of two
+way binding mode, et cetera.
+
+00:03:01.685 --> 00:03:03.810
+So it's just kind of
+interesting that you can go in
+
+00:03:03.810 --> 00:03:07.350
+and you can kind of inspect
+this checklist a little bit.
+
+00:03:07.350 --> 00:03:09.180
+Now looking back
+at our example, I'm
+
+00:03:09.180 --> 00:03:10.630
+going to simplify things
+just a little bit so,
+
+00:03:10.630 --> 00:03:12.000
+there's less markup to look at.
+
+00:03:12.000 --> 00:03:14.610
+So this is our template and
+this is our Polymer element
+
+00:03:14.610 --> 00:03:15.592
+definition.
+
+00:03:15.592 --> 00:03:17.050
+Now the other thing
+that Polymer is
+
+00:03:17.050 --> 00:03:19.890
+going to do, aside from
+creating property effects,
+
+00:03:19.890 --> 00:03:24.330
+is it's going to create a setter
+for this property that we've
+
+00:03:24.330 --> 00:03:27.090
+got here, this foo property.
+
+00:03:27.090 --> 00:03:30.340
+So you can see we've got this
+little set foo setter down here
+
+00:03:30.340 --> 00:03:32.610
+and, if you're not familiar
+with syntax like this,
+
+00:03:32.610 --> 00:03:35.940
+I'll link to a little
+doc on MDN that
+
+00:03:35.940 --> 00:03:38.340
+talks about JavaScript setters.
+
+00:03:38.340 --> 00:03:41.310
+And I should stress, this
+is not the exact syntax
+
+00:03:41.310 --> 00:03:42.410
+that Polymer uses it.
+
+00:03:42.410 --> 00:03:45.610
+It does it kind of a little
+differently at runtime
+
+00:03:45.610 --> 00:03:49.310
+but, essentially, what happens
+is, once it's created property
+
+00:03:49.310 --> 00:03:51.350
+effects for a property,
+it also creates
+
+00:03:51.350 --> 00:03:53.670
+a setter for that property.
+
+00:03:53.670 --> 00:03:56.780
+And inside of this
+setter, there's
+
+00:03:56.780 --> 00:03:59.390
+a few interesting
+things that take place.
+
+00:03:59.390 --> 00:04:01.700
+The first is, anytime
+the property changes,
+
+00:04:01.700 --> 00:04:06.540
+Polymer is going to do what
+it calls dirty checking.
+
+00:04:06.540 --> 00:04:10.170
+So a dirty check is when
+you compare an old value
+
+00:04:10.170 --> 00:04:13.280
+to a new value and you see
+if they've actually changed.
+
+00:04:13.280 --> 00:04:15.090
+And what Polymer
+does is it actually
+
+00:04:15.090 --> 00:04:20.300
+stores this foo property in a
+super duper private variable
+
+00:04:20.300 --> 00:04:23.837
+called underscore underscore
+data underscore underscore.
+
+00:04:23.837 --> 00:04:26.420
+And you can kind of poke around
+and see this in the dev tools,
+
+00:04:26.420 --> 00:04:27.420
+as well.
+
+00:04:27.420 --> 00:04:30.280
+It stores the original
+value over there
+
+00:04:30.280 --> 00:04:33.140
+and, whenever someone
+changes the property,
+
+00:04:33.140 --> 00:04:35.180
+changes our foo
+property, if they change
+
+00:04:35.180 --> 00:04:37.414
+it through JavaScript or
+changing the attribute
+
+00:04:37.414 --> 00:04:38.830
+or something like
+that, it's first
+
+00:04:38.830 --> 00:04:41.600
+going to check to see if the
+old value and the new value
+
+00:04:41.600 --> 00:04:42.360
+are different.
+
+00:04:42.360 --> 00:04:43.910
+Because if they're
+the same, there's
+
+00:04:43.910 --> 00:04:45.900
+no point in doing
+a bunch of work.
+
+00:04:45.900 --> 00:04:48.920
+If they are different, if
+we do pass the dirty check,
+
+00:04:48.920 --> 00:04:52.309
+then we're going to hold
+onto that new value.
+
+00:04:52.309 --> 00:04:54.100
+And the next thing
+after that is we're just
+
+00:04:54.100 --> 00:04:57.180
+going to loop over all
+of our property effects,
+
+00:04:57.180 --> 00:04:59.610
+give them that new
+value, and then
+
+00:04:59.610 --> 00:05:03.780
+that tells them to go update
+these nodes in the DOM.
+
+00:05:03.780 --> 00:05:07.250
+So if this is sort of our fake
+checklist of property effects--
+
+00:05:07.250 --> 00:05:09.180
+and again, this is
+all just pseudo code,
+
+00:05:09.180 --> 00:05:10.596
+but this is kind
+of what they look
+
+00:05:10.596 --> 00:05:13.120
+like, right-- someone
+passes in a new value,
+
+00:05:13.120 --> 00:05:15.770
+we say, hey it's different
+from the old value.
+
+00:05:15.770 --> 00:05:17.490
+Cool, let's hold on to it.
+
+00:05:17.490 --> 00:05:20.100
+Now let's just start walking
+through that checklist
+
+00:05:20.100 --> 00:05:23.720
+of properties and we'll say, all
+right, let's set that new value
+
+00:05:23.720 --> 00:05:25.820
+up here on this div.
+
+00:05:25.820 --> 00:05:27.580
+Cool, done.
+
+00:05:27.580 --> 00:05:30.470
+Next one, let's
+set that new value
+
+00:05:30.470 --> 00:05:34.630
+over here in the input
+element and so on and so on.
+
+00:05:34.630 --> 00:05:38.200
+And if these elements,
+within themselves,
+
+00:05:38.200 --> 00:05:41.120
+have property effects,
+those will kick off and run
+
+00:05:41.120 --> 00:05:44.460
+and basically that's how data
+gets passed all the way down
+
+00:05:44.460 --> 00:05:46.864
+the line, through all
+the different children.
+
+00:05:46.864 --> 00:05:49.280
+Now I'm sure some of you are
+seeing this and saying, well,
+
+00:05:49.280 --> 00:05:51.290
+what about the
+property's object?
+
+00:05:51.290 --> 00:05:55.320
+Because I know this is also
+part of the mix, right?
+
+00:05:55.320 --> 00:05:57.370
+How does this
+thing get involved?
+
+00:05:57.370 --> 00:05:59.470
+Well the property's
+object basically allows
+
+00:05:59.470 --> 00:06:03.260
+you to add what I think of
+as sort of like metadata
+
+00:06:03.260 --> 00:06:06.110
+to your property
+setter, if you will.
+
+00:06:06.110 --> 00:06:09.170
+So here's our example again and
+I've got this property's object
+
+00:06:09.170 --> 00:06:12.300
+now and I've got my foo
+property inside of here.
+
+00:06:12.300 --> 00:06:13.730
+And the setter is
+already set up,
+
+00:06:13.730 --> 00:06:16.740
+so it's going to first
+dirty check for new values,
+
+00:06:16.740 --> 00:06:18.470
+it's going to run
+the property effects,
+
+00:06:18.470 --> 00:06:20.080
+if things are different.
+
+00:06:20.080 --> 00:06:22.600
+And let's say, in my
+properties object,
+
+00:06:22.600 --> 00:06:24.639
+I add an observer, right?
+
+00:06:24.639 --> 00:06:26.180
+And I say, OK, well
+when foo changes,
+
+00:06:26.180 --> 00:06:29.630
+I want you to run this
+observer function right here.
+
+00:06:29.630 --> 00:06:31.850
+Well what happens is,
+inside of the setter,
+
+00:06:31.850 --> 00:06:35.590
+Polymer is just going to
+literally call that function.
+
+00:06:35.590 --> 00:06:36.969
+And I know it
+seems like it might
+
+00:06:36.969 --> 00:06:39.510
+be doing something more magical
+but, really, this is just it.
+
+00:06:39.510 --> 00:06:41.718
+It's just going to call that
+function as soon as it's
+
+00:06:41.718 --> 00:06:43.900
+done doing any other work.
+
+00:06:43.900 --> 00:06:47.940
+If you give it a
+notify true flag--
+
+00:06:47.940 --> 00:06:51.440
+and this enables two way binding
+throughout the Polymer system--
+
+00:06:51.440 --> 00:06:55.120
+well what this is actually
+doing is it's just calling this
+
+00:06:55.120 --> 00:06:58.580
+.fire, which dispatches an
+event and it's just dispatching
+
+00:06:58.580 --> 00:07:03.110
+an event called foo-changed
+and passing along the value,
+
+00:07:03.110 --> 00:07:04.700
+the brand new value.
+
+00:07:04.700 --> 00:07:07.280
+So any time you do
+this on a property,
+
+00:07:07.280 --> 00:07:10.180
+Polymer will always create
+this sort of event dispatch
+
+00:07:10.180 --> 00:07:13.720
+and the event is always
+called something dash changed.
+
+00:07:13.720 --> 00:07:16.800
+Whatever the property
+name is, dash changed.
+
+00:07:16.800 --> 00:07:18.520
+And this is really
+interesting because it
+
+00:07:18.520 --> 00:07:22.760
+means if you yourself are
+binding to an element,
+
+00:07:22.760 --> 00:07:27.200
+like here I'm binding to paper
+input's value attribute, what
+
+00:07:27.200 --> 00:07:29.670
+Polymer does when it
+first boots up is it says,
+
+00:07:29.670 --> 00:07:32.460
+OK, I found an annotation here.
+
+00:07:32.460 --> 00:07:34.760
+Let me create a property
+effect and everything.
+
+00:07:34.760 --> 00:07:38.154
+Are we bound to some
+other elements attribute?
+
+00:07:38.154 --> 00:07:38.820
+Ah, yes, we are.
+
+00:07:38.820 --> 00:07:41.380
+I can see that we're
+bound to this value thing.
+
+00:07:41.380 --> 00:07:48.130
+So if this then fires a
+event called value changed,
+
+00:07:48.130 --> 00:07:51.450
+then hearing that event is
+going to tell me to update
+
+00:07:51.450 --> 00:07:53.016
+this property right here.
+
+00:07:53.016 --> 00:07:55.140
+So really that's all that's
+happening in properties
+
+00:07:55.140 --> 00:07:56.280
+to a binding system.
+
+00:07:56.280 --> 00:07:58.860
+Your element fires
+a changed event,
+
+00:07:58.860 --> 00:08:01.180
+some other element
+that is bound to it
+
+00:08:01.180 --> 00:08:04.280
+listens to that changed event,
+and it updates its own property
+
+00:08:04.280 --> 00:08:05.890
+because of that.
+
+00:08:05.890 --> 00:08:07.740
+Now here I've got
+a two way binding
+
+00:08:07.740 --> 00:08:09.950
+and so you can actually
+see the system in play
+
+00:08:09.950 --> 00:08:11.010
+that I just described.
+
+00:08:11.010 --> 00:08:12.510
+So I'm going to go
+in here, and this
+
+00:08:12.510 --> 00:08:14.130
+is a representation
+of our element,
+
+00:08:14.130 --> 00:08:17.340
+and I can type into
+the paper input field
+
+00:08:17.340 --> 00:08:19.630
+and it's going to fire
+those changed events
+
+00:08:19.630 --> 00:08:23.049
+and then that means I update
+foo, and, because it's
+
+00:08:23.049 --> 00:08:25.340
+going to go through and play
+through all of my property
+
+00:08:25.340 --> 00:08:28.150
+effects, that means the foo
+gets updated right here as well.
+
+00:08:28.150 --> 00:08:29.270
+And you can see that here.
+
+00:08:29.270 --> 00:08:31.000
+So they end up matching.
+
+00:08:31.000 --> 00:08:33.780
+But what if I'm using a
+one way binding, right?
+
+00:08:33.780 --> 00:08:35.580
+So here I'm using
+square brackets now,
+
+00:08:35.580 --> 00:08:37.120
+instead of the curly braces.
+
+00:08:37.120 --> 00:08:40.870
+Well that just tells Polymer
+hey, don't set up the event
+
+00:08:40.870 --> 00:08:42.390
+listener for value changed.
+
+00:08:42.390 --> 00:08:43.980
+That's really all
+that happens there.
+
+00:08:43.980 --> 00:08:46.590
+So now I go in, I type
+in this input field
+
+00:08:46.590 --> 00:08:49.320
+and, because I'm not
+listening for those events,
+
+00:08:49.320 --> 00:08:52.110
+I don't hear anything
+and this property up here
+
+00:08:52.110 --> 00:08:53.770
+remains what it always was.
+
+00:08:53.770 --> 00:08:56.924
+So we're not pushing
+any new data up there.
+
+00:08:56.924 --> 00:08:59.590
+So the last thing I want to talk
+about are read only properties.
+
+00:08:59.590 --> 00:09:02.540
+So you can set a read
+only flag and that
+
+00:09:02.540 --> 00:09:05.710
+means that an outsider
+using your element
+
+00:09:05.710 --> 00:09:08.560
+can't push data
+into it, in any way.
+
+00:09:08.560 --> 00:09:11.010
+So what happens there
+is Polymer just doesn't
+
+00:09:11.010 --> 00:09:12.530
+create the setter, right?
+
+00:09:12.530 --> 00:09:14.240
+It doesn't create a
+public setter at all,
+
+00:09:14.240 --> 00:09:16.720
+because we don't want someone
+accidentally calling that.
+
+00:09:16.720 --> 00:09:19.800
+And instead, because it
+does still internally
+
+00:09:19.800 --> 00:09:23.020
+need to work with that data, it
+creates a little private setter
+
+00:09:23.020 --> 00:09:25.340
+that it prefixes
+with this underscore.
+
+00:09:25.340 --> 00:09:27.000
+And you can actually
+work with these.
+
+00:09:27.000 --> 00:09:29.640
+This is the actual
+syntax that it uses.
+
+00:09:29.640 --> 00:09:32.080
+So if you need to work with
+your read only property
+
+00:09:32.080 --> 00:09:35.570
+from within your element, you
+can use this private setter
+
+00:09:35.570 --> 00:09:38.840
+to update it and that
+is how that works.
+
+00:09:38.840 --> 00:09:41.420
+All right, so now you know
+the basics of data binding.
+
+00:09:41.420 --> 00:09:43.280
+But there's still
+a lot of cool stuff
+
+00:09:43.280 --> 00:09:46.540
+to cover-- binding two
+arrays and deeply nested
+
+00:09:46.540 --> 00:09:49.840
+objects and computer
+properties and change records
+
+00:09:49.840 --> 00:09:52.800
+and notifications and,
+well, anyway, I'll
+
+00:09:52.800 --> 00:09:54.680
+save that for another episode.
+
+00:09:54.680 --> 00:09:57.672
+Now if you've enjoyed this
+video, be sure to go down
+
+00:09:57.672 --> 00:10:00.130
+and click the Subscribe button,
+because that's actually how
+
+00:10:00.130 --> 00:10:02.080
+we get to keep making these.
+
+00:10:02.080 --> 00:10:03.790
+Also if you have
+questions for me,
+
+00:10:03.790 --> 00:10:05.780
+leave them down in the
+comments or ping me
+
+00:10:05.780 --> 00:10:09.570
+on a social network of your
+choosing, hash tag #askPolymer.
+
+00:10:09.570 --> 00:10:11.900
+As always, thank you
+so much for watching.
+
+00:10:11.900 --> 00:10:12.900
+I'll see you next time.
+
+00:10:12.900 --> 00:10:15.950
+[MUSIC PLAYING]
+

@@ -1,0 +1,1572 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.740
+PAUL LEWIS: Well, aren't we
+just finishing up the site?
+
+00:00:03.740 --> 00:00:08.900
+That's pretty much where
+I'm at, I think, sort of.
+
+00:00:08.900 --> 00:00:15.120
+OK, let me list
+what's at least to do.
+
+00:00:15.120 --> 00:00:17.360
+There's basically putting
+in the final sessions,
+
+00:00:17.360 --> 00:00:19.140
+and I'm still waiting on those.
+
+00:00:19.140 --> 00:00:22.580
+There's push messaging
+and notifications
+
+00:00:22.580 --> 00:00:25.690
+if I can get to it in time.
+
+00:00:25.690 --> 00:00:31.416
+And I think there might be one
+other thing that's escaping me
+
+00:00:31.416 --> 00:00:32.290
+at this exact moment.
+
+00:00:32.290 --> 00:00:33.890
+If it's important,
+I'll remember it.
+
+00:00:33.890 --> 00:00:35.620
+If not, I won't.
+
+00:00:35.620 --> 00:00:37.290
+I have a to-do list somewhere.
+
+00:00:37.290 --> 00:00:40.420
+It'll probably be on there.
+
+00:00:40.420 --> 00:00:44.607
+But since I last recorded a
+video-- it's been a few days.
+
+00:00:44.607 --> 00:00:46.065
+And the reason it's
+been a few days
+
+00:00:46.065 --> 00:00:49.570
+is because I have been working
+on the service worker part.
+
+00:00:49.570 --> 00:00:52.760
+And I wanted to try and
+get that just right.
+
+00:00:52.760 --> 00:00:55.520
+And it's working.
+
+00:00:55.520 --> 00:00:58.780
+I mean, I've had a service
+worker in place from the start.
+
+00:00:58.780 --> 00:01:00.907
+But I don't know
+if you remember,
+
+00:01:00.907 --> 00:01:03.240
+but it basically was like a
+pass-through service worker.
+
+00:01:03.240 --> 00:01:06.160
+It didn't do anything
+in particular.
+
+00:01:06.160 --> 00:01:08.130
+All requests just
+went through it.
+
+00:01:08.130 --> 00:01:11.730
+And it was a fetch to go
+and get the resources.
+
+00:01:11.730 --> 00:01:15.240
+And the next step for
+me was to actually
+
+00:01:15.240 --> 00:01:19.090
+have it populate
+a cache of items,
+
+00:01:19.090 --> 00:01:23.760
+and actually respond
+from the cache,
+
+00:01:23.760 --> 00:01:25.660
+and do a couple of
+other bits and pieces.
+
+00:01:25.660 --> 00:01:27.750
+So let's actually have
+a look at the code
+
+00:01:27.750 --> 00:01:31.150
+because I think that
+will illuminate things.
+
+00:01:31.150 --> 00:01:33.020
+Firstly, though, we'll
+go into the Python
+
+00:01:33.020 --> 00:01:40.990
+because I have got to the point
+now where we basically hot swap
+
+00:01:40.990 --> 00:01:44.400
+the home page.
+
+00:01:44.400 --> 00:01:47.630
+Well, hot swapping the home
+page is related to this item.
+
+00:01:47.630 --> 00:01:51.980
+I now have a JSON file of
+the actual sessions, which
+
+00:01:51.980 --> 00:01:55.410
+is currently filled out
+with nonsense sessions
+
+00:01:55.410 --> 00:01:59.060
+that I have just
+made up for now.
+
+00:01:59.060 --> 00:02:02.610
+And you can see that the data
+is the first key and then
+
+00:02:02.610 --> 00:02:07.910
+the time of each,
+and this is in PST
+
+00:02:07.910 --> 00:02:11.580
+because that's the time zone
+of the-- of Chrome Dev Summit.
+
+00:02:11.580 --> 00:02:13.670
+It's in San
+Francisco, which will
+
+00:02:13.670 --> 00:02:18.460
+be PST, which means it's, I
+think, seven hours behind UTC
+
+00:02:18.460 --> 00:02:21.560
+or GMT as you might
+call it, depending
+
+00:02:21.560 --> 00:02:26.006
+on how you refer to time zones.
+
+00:02:26.006 --> 00:02:28.610
+I mean, who doesn't just sit
+there referring to time zones?
+
+00:02:28.610 --> 00:02:31.820
+I know I do.
+
+00:02:31.820 --> 00:02:35.830
+So I've got the JSON
+file, and the JSON file
+
+00:02:35.830 --> 00:02:39.390
+is loaded in by the Python.
+
+00:02:39.390 --> 00:02:41.770
+And that's actually
+important because I do things
+
+00:02:41.770 --> 00:02:46.980
+like I basically
+start to step through.
+
+00:02:46.980 --> 00:02:49.470
+Basically the
+sessions file is now
+
+00:02:49.470 --> 00:02:54.250
+the source of all sorts of
+bits and pieces in the site.
+
+00:02:54.250 --> 00:02:57.460
+For example, I've moved
+the filters out as well,
+
+00:02:57.460 --> 00:02:59.640
+out to their own file.
+
+00:02:59.640 --> 00:03:03.175
+So you've got things like
+getting the current session.
+
+00:03:03.175 --> 00:03:07.630
+And so we get the
+current UTC time,
+
+00:03:07.630 --> 00:03:10.830
+and we step through all
+the individual sessions
+
+00:03:10.830 --> 00:03:11.950
+from that JSON file.
+
+00:03:11.950 --> 00:03:14.990
+I have to add seven hours
+on, which is that there.
+
+00:03:14.990 --> 00:03:16.990
+This is a bit of a funny
+way to do date parsing.
+
+00:03:16.990 --> 00:03:19.612
+Normally you'd pass it things.
+
+00:03:19.612 --> 00:03:21.820
+But because I need to adjust
+the time-- I don't know.
+
+00:03:21.820 --> 00:03:24.080
+I might go back to this
+now that I've actually got
+
+00:03:24.080 --> 00:03:25.371
+it working and just tidy it up.
+
+00:03:25.371 --> 00:03:29.087
+Because I could ask to
+parse it based on-- I
+
+00:03:29.087 --> 00:03:31.420
+could make a string and then
+ask it to parse it properly
+
+00:03:31.420 --> 00:03:32.669
+rather than doing it this way.
+
+00:03:32.669 --> 00:03:34.215
+It's a bit of a
+funny way to do it.
+
+00:03:34.215 --> 00:03:36.340
+But we have things for
+getting the current session,
+
+00:03:36.340 --> 00:03:37.790
+getting the next session.
+
+00:03:37.790 --> 00:03:40.290
+And there are some interesting
+bits and pieces in there.
+
+00:03:40.290 --> 00:03:42.290
+Like you have to make
+sure that the next session
+
+00:03:42.290 --> 00:03:45.110
+has a different day
+to the current day
+
+00:03:45.110 --> 00:03:47.080
+and bits and pieces like that.
+
+00:03:47.080 --> 00:03:48.750
+But it's all dynamic.
+
+00:03:48.750 --> 00:03:52.930
+And also, when it comes to
+the actual home page, which
+
+00:03:52.930 --> 00:03:55.480
+is this, if template is
+non, as in the home page,
+
+00:03:55.480 --> 00:04:01.060
+we have to make a
+decision based on the time
+
+00:04:01.060 --> 00:04:02.420
+as the server thinks it is.
+
+00:04:02.420 --> 00:04:04.140
+But that's OK because
+all these things
+
+00:04:04.140 --> 00:04:08.170
+are in UTC anyway mostly.
+
+00:04:08.170 --> 00:04:10.830
+Basically, if the number of
+days between the first day
+
+00:04:10.830 --> 00:04:16.050
+of the conference and today
+is zero adjusting for PST,
+
+00:04:16.050 --> 00:04:17.950
+then it's the live day one.
+
+00:04:17.950 --> 00:04:22.240
+If it's the second
+day, live day two,
+
+00:04:22.240 --> 00:04:25.310
+because these will, I think,
+have different YouTube embeds.
+
+00:04:25.310 --> 00:04:29.850
+So I have to have
+effectively different files
+
+00:04:29.850 --> 00:04:32.390
+for those, different templates.
+
+00:04:32.390 --> 00:04:37.720
+And then a final one is we're on
+neither day of the conference,
+
+00:04:37.720 --> 00:04:40.700
+so show the home page.
+
+00:04:40.700 --> 00:04:42.239
+This works just fine.
+
+00:04:42.239 --> 00:04:44.030
+In fact, let me just
+show you what happens.
+
+00:04:44.030 --> 00:04:45.840
+I will do this without
+any service worker.
+
+00:04:45.840 --> 00:04:48.340
+So we'll just directly--
+if you hit Command-Shift-R,
+
+00:04:48.340 --> 00:04:49.940
+if you working on
+service workers,
+
+00:04:49.940 --> 00:04:52.290
+Command-Shift-R will actually
+cause your page to load.
+
+00:04:52.290 --> 00:04:54.000
+You can see it in
+the networks there,
+
+00:04:54.000 --> 00:04:55.850
+cause it to load without
+any service worker.
+
+00:04:55.850 --> 00:04:57.350
+And none of those
+requests are going
+
+00:04:57.350 --> 00:04:58.474
+through the service worker.
+
+00:04:58.474 --> 00:05:01.890
+And so that can be a really
+good way to sort of test that,
+
+00:05:01.890 --> 00:05:05.200
+is my server actually
+responding with the right things
+
+00:05:05.200 --> 00:05:09.870
+before I introduce
+the service worker?
+
+00:05:09.870 --> 00:05:13.080
+Also, while we're here, let me
+just change the date and time.
+
+00:05:13.080 --> 00:05:17.650
+So I've set it to
+yesterday, if you like.
+
+00:05:17.650 --> 00:05:20.420
+So let's set it to the
+first day of the conference
+
+00:05:20.420 --> 00:05:22.270
+and then hit
+Command-Shift-R. And you
+
+00:05:22.270 --> 00:05:26.720
+can see that not only
+is it-- let me just move
+
+00:05:26.720 --> 00:05:28.839
+this out of the way.
+
+00:05:28.839 --> 00:05:29.380
+I'll do that.
+
+00:05:29.380 --> 00:05:32.550
+Actually, we'll come back
+to that in a little bit.
+
+00:05:32.550 --> 00:05:35.050
+So you can see that I've
+actually chosen the "Developer
+
+00:05:35.050 --> 00:05:36.940
+Diary" day one so that I know
+that this is actually the day
+
+00:05:36.940 --> 00:05:37.300
+one.
+
+00:05:37.300 --> 00:05:38.810
+It was just like, oh,
+OK, yeah, it's definitely
+
+00:05:38.810 --> 00:05:39.851
+doing the right template.
+
+00:05:39.851 --> 00:05:41.010
+It's day one.
+
+00:05:41.010 --> 00:05:42.790
+And you'll see that up next.
+
+00:05:42.790 --> 00:05:46.970
+And this has been
+adjusted for local time.
+
+00:05:46.970 --> 00:05:55.532
+If I disable JavaScript
+for a moment-- down here,
+
+00:05:55.532 --> 00:05:56.940
+up here, Disable Javascript.
+
+00:05:56.940 --> 00:05:58.550
+There you are.
+
+00:05:58.550 --> 00:06:02.086
+Command-Shift-R, you can
+see it's 8:00 AM PST.
+
+00:06:02.086 --> 00:06:03.710
+Oh, it doesn't have
+the title in there.
+
+00:06:03.710 --> 00:06:06.520
+Oh, I'm going to go
+back and fix that.
+
+00:06:06.520 --> 00:06:09.940
+And if we re-enable
+JavaScript, it's
+
+00:06:09.940 --> 00:06:13.110
+the same content, once I've
+got the title back in there,
+
+00:06:13.110 --> 00:06:15.630
+but it's been adjusted
+for the local time, which
+
+00:06:15.630 --> 00:06:17.050
+is just done in the JavaScript.
+
+00:06:17.050 --> 00:06:20.230
+I have a bit of JavaScript
+that constantly-- well,
+
+00:06:20.230 --> 00:06:22.220
+not constantly but
+kind of watches
+
+00:06:22.220 --> 00:06:26.220
+for changes in the
+schedule, which
+
+00:06:26.220 --> 00:06:32.210
+I can show you if this
+video doesn't get too long.
+
+00:06:32.210 --> 00:06:34.746
+Anyway, the theory,
+then, is this is day one.
+
+00:06:34.746 --> 00:06:37.880
+And you can see that, coming up
+at 4 o'clock local time for me,
+
+00:06:37.880 --> 00:06:39.080
+which is in about what?
+
+00:06:39.080 --> 00:06:40.700
+Five hours, there
+or thereabouts.
+
+00:06:40.700 --> 00:06:43.500
+Five hours, it will be
+registration and breakfast.
+
+00:06:43.500 --> 00:06:46.670
+Obviously as we get
+into the other sessions,
+
+00:06:46.670 --> 00:06:48.110
+it'll make more sense.
+
+00:06:48.110 --> 00:06:49.350
+Open Date and Time.
+
+00:06:49.350 --> 00:06:57.240
+So let's say it is, in
+fact, 6 o'clock in the UK.
+
+00:06:57.240 --> 00:07:00.220
+You can see now we've got--
+the current session is
+
+00:07:00.220 --> 00:07:02.390
+Alex Russell and-- oh, good!
+
+00:07:02.390 --> 00:07:05.680
+We've gone from breakfast
+pretty much straight to lunch.
+
+00:07:05.680 --> 00:07:10.510
+This time traveling thing
+is working out just fine.
+
+00:07:10.510 --> 00:07:12.160
+So anyway, and you
+can see here, I've
+
+00:07:12.160 --> 00:07:15.130
+got this refreshing listing in--
+oh, just less than a minute.
+
+00:07:15.130 --> 00:07:17.858
+We could wait and see
+what happens next.
+
+00:07:17.858 --> 00:07:19.480
+Duh dut dah dah!
+
+00:07:19.480 --> 00:07:20.980
+I might get them
+to time-lapse this.
+
+00:07:23.842 --> 00:07:28.680
+[HUMMING] Still waiting.
+
+00:07:28.680 --> 00:07:29.300
+There it goes.
+
+00:07:29.300 --> 00:07:30.700
+Ah, it happened!
+
+00:07:30.700 --> 00:07:34.550
+You can see that the one that
+was up next becomes live,
+
+00:07:34.550 --> 00:07:37.700
+and now the next one has
+appeared in the listings.
+
+00:07:37.700 --> 00:07:40.670
+So that it will be--
+as the video is playing
+
+00:07:40.670 --> 00:07:43.710
+I'll basically be
+swapping the sessions.
+
+00:07:43.710 --> 00:07:49.140
+So that's kind of what happens
+with the live stuff, which
+
+00:07:49.140 --> 00:07:50.640
+is all very, very cool.
+
+00:07:50.640 --> 00:07:54.380
+And the code for that is
+kicking around in Components.
+
+00:07:54.380 --> 00:07:59.490
+There's the live session info,
+which basically goes through.
+
+00:07:59.490 --> 00:08:02.182
+In many ways, it's a duplicate
+of those filters on the server
+
+00:08:02.182 --> 00:08:04.390
+side, because it's got to
+do similar kinds of things.
+
+00:08:04.390 --> 00:08:06.181
+It's got to look through
+that session JSON.
+
+00:08:06.181 --> 00:08:07.690
+So they share that JSON.
+
+00:08:07.690 --> 00:08:11.380
+The server-side and client-side,
+both look at that same JSON
+
+00:08:11.380 --> 00:08:15.690
+and make some decisions on
+what the next session switch
+
+00:08:15.690 --> 00:08:18.410
+time will be, which is basically
+look for the next session
+
+00:08:18.410 --> 00:08:22.040
+and find out what the
+time is and then set
+
+00:08:22.040 --> 00:08:26.430
+a timeout to basically go
+and do it a check for that.
+
+00:08:26.430 --> 00:08:28.950
+It works just fine.
+
+00:08:28.950 --> 00:08:31.970
+Well, it seems to work
+just fine, anyway.
+
+00:08:31.970 --> 00:08:34.309
+So those all working.
+
+00:08:34.309 --> 00:08:37.510
+You know, JavaScript, it
+swaps sessions, all that.
+
+00:08:37.510 --> 00:08:44.540
+Now if we reload and look
+at the network, these,
+
+00:08:44.540 --> 00:08:49.390
+all these requests are actually
+coming from the service worker.
+
+00:08:49.390 --> 00:08:52.230
+Let me show you
+the service worker.
+
+00:08:52.230 --> 00:08:57.810
+The service worker from the top,
+import scripts, and then I'm
+
+00:08:57.810 --> 00:09:03.610
+sure you recall the add
+hash remark filter thing.
+
+00:09:03.610 --> 00:09:05.140
+That basically is
+going to make sure
+
+00:09:05.140 --> 00:09:08.520
+that, if this file changes,
+that this import scripts line is
+
+00:09:08.520 --> 00:09:10.530
+going to actually be different.
+
+00:09:10.530 --> 00:09:13.760
+So if we look at the
+service worker itself,
+
+00:09:13.760 --> 00:09:15.510
+you can see that it's
+cached out manifest.
+
+00:09:15.510 --> 00:09:20.019
+And then there's the long
+alphanumeric hash string
+
+00:09:20.019 --> 00:09:20.810
+that goes in there.
+
+00:09:20.810 --> 00:09:23.750
+So if I change whatever the
+contents are of this cache
+
+00:09:23.750 --> 00:09:26.340
+manifest, then this
+will be updated.
+
+00:09:26.340 --> 00:09:27.950
+The service worker will update.
+
+00:09:27.950 --> 00:09:29.845
+It will run its install,
+and its activation,
+
+00:09:29.845 --> 00:09:31.660
+and go through its lifecycle.
+
+00:09:31.660 --> 00:09:35.890
+If, by the way, you have not
+come across the service worker
+
+00:09:35.890 --> 00:09:41.440
+lifecycle, there is a brand
+new document guide article
+
+00:09:41.440 --> 00:09:43.850
+thing on Google Web
+Fundamentals, which
+
+00:09:43.850 --> 00:09:45.931
+we will link to
+in the description
+
+00:09:45.931 --> 00:09:48.430
+and possibly they'll even put
+one of those fancy annotations
+
+00:09:48.430 --> 00:09:49.440
+on this video as well.
+
+00:09:49.440 --> 00:09:51.330
+Who knows?
+
+00:09:51.330 --> 00:09:53.340
+So what goes into
+the cache manifest?
+
+00:09:53.340 --> 00:09:54.840
+Glad you asked.
+
+00:09:54.840 --> 00:09:56.684
+The cache manifest is here.
+
+00:09:56.684 --> 00:09:58.100
+And you'll see
+that it's basically
+
+00:09:58.100 --> 00:10:00.940
+a list of all the things
+that I want caching.
+
+00:10:00.940 --> 00:10:09.010
+And good news, I don't create
+those myself or this myself.
+
+00:10:09.010 --> 00:10:12.290
+What I do is I go to--
+I've made this file
+
+00:10:12.290 --> 00:10:14.080
+called build resource list.
+
+00:10:14.080 --> 00:10:17.560
+And I have a bunch of things
+that I want it to ignore.
+
+00:10:17.560 --> 00:10:20.460
+And I have a bunch of
+resources, like URLs
+
+00:10:20.460 --> 00:10:23.780
+that I know I definitely want,
+like the various sections
+
+00:10:23.780 --> 00:10:25.405
+of the site.
+
+00:10:25.405 --> 00:10:27.030
+This partial flag
+means that I actually
+
+00:10:27.030 --> 00:10:30.390
+don't have the server bake in
+any of the session information.
+
+00:10:30.390 --> 00:10:32.670
+It just means that
+they come through empty
+
+00:10:32.670 --> 00:10:34.420
+because I know the
+JavaScript is going
+
+00:10:34.420 --> 00:10:37.072
+to populate them later on.
+
+00:10:37.072 --> 00:10:38.530
+I also get the
+session information.
+
+00:10:38.530 --> 00:10:41.260
+And I go through each
+session, and I get its URL
+
+00:10:41.260 --> 00:10:43.744
+because I know I want
+to cache that offline.
+
+00:10:43.744 --> 00:10:45.410
+And then I walk through
+the static file.
+
+00:10:45.410 --> 00:10:47.680
+So I go through
+dot slash static.
+
+00:10:47.680 --> 00:10:49.175
+So basically the
+static file here,
+
+00:10:49.175 --> 00:10:52.840
+which has the images, the JSON,
+the Javascripts-- excluding
+
+00:10:52.840 --> 00:10:56.260
+the service worker
+itself-- the styles,
+
+00:10:56.260 --> 00:11:01.010
+and any third party stuff, and
+manifest, and whatever else.
+
+00:11:01.010 --> 00:11:06.230
+That, as I say, results in
+this big, long file here.
+
+00:11:06.230 --> 00:11:10.770
+And in the service worker,
+once that gets imported
+
+00:11:10.770 --> 00:11:13.200
+and whatever else, the
+install essentially
+
+00:11:13.200 --> 00:11:15.510
+steps through each of
+those, and it makes
+
+00:11:15.510 --> 00:11:17.420
+a request for each of those.
+
+00:11:17.420 --> 00:11:21.230
+And it will wait until the
+caches have been opened,
+
+00:11:21.230 --> 00:11:22.980
+and we've added all those items.
+
+00:11:22.980 --> 00:11:24.660
+And then it does
+the skip waiting,
+
+00:11:24.660 --> 00:11:29.210
+which basically means go
+straight to the activated
+
+00:11:29.210 --> 00:11:29.710
+stage.
+
+00:11:29.710 --> 00:11:32.040
+So the lifecycle,
+it's installing,
+
+00:11:32.040 --> 00:11:34.522
+and then it waits until
+all the clients that
+
+00:11:34.522 --> 00:11:35.980
+are connected to
+the service worker
+
+00:11:35.980 --> 00:11:38.563
+have disconnected, as in you do,
+like, a force refresh, or you
+
+00:11:38.563 --> 00:11:39.240
+close the tab.
+
+00:11:39.240 --> 00:11:42.680
+When all the tabs to the Chrome
+Dev Summit site have closed,
+
+00:11:42.680 --> 00:11:45.160
+it would normally then
+switch the service worker
+
+00:11:45.160 --> 00:11:48.260
+across to activating.
+
+00:11:48.260 --> 00:11:50.540
+But in this case, I'm telling
+it to just go straight
+
+00:11:50.540 --> 00:11:51.540
+to the activating stage.
+
+00:11:51.540 --> 00:11:54.770
+Don't worry about anything
+that's already connected.
+
+00:11:54.770 --> 00:11:56.300
+I'm hoping that
+will work out fine.
+
+00:11:56.300 --> 00:11:59.420
+I'm hoping there won't be any
+breaking changes by doing that.
+
+00:11:59.420 --> 00:12:04.030
+The activation itself looks
+through previous installation
+
+00:12:04.030 --> 00:12:04.740
+caches.
+
+00:12:04.740 --> 00:12:06.573
+So every time we install
+the service worker,
+
+00:12:06.573 --> 00:12:07.740
+it populates the cache.
+
+00:12:07.740 --> 00:12:11.110
+I'm saying, find all
+those other caches that
+
+00:12:11.110 --> 00:12:13.350
+aren't this one, the
+one that we've just
+
+00:12:13.350 --> 00:12:15.960
+populated through the
+install, and get rid of them.
+
+00:12:15.960 --> 00:12:18.030
+Delete those caches
+so that we're not
+
+00:12:18.030 --> 00:12:20.574
+building up space, and
+space, and space over time.
+
+00:12:20.574 --> 00:12:22.240
+This probably could
+do with a little bit
+
+00:12:22.240 --> 00:12:26.220
+of an improvement in that
+I think it should possibly
+
+00:12:26.220 --> 00:12:29.666
+have a couple of caches--
+caches for things that are less
+
+00:12:29.666 --> 00:12:31.290
+likely to change,
+and caches for things
+
+00:12:31.290 --> 00:12:34.200
+that are more likely to change,
+like the JavaScript or the CSS.
+
+00:12:34.200 --> 00:12:37.670
+I'm likely to find minor
+things in there, minor bugs
+
+00:12:37.670 --> 00:12:40.080
+that I just want to tweak
+or change or whatever.
+
+00:12:40.080 --> 00:12:42.360
+And so rather than
+invalidating the whole cache
+
+00:12:42.360 --> 00:12:46.070
+and downloading everything every
+time, a better version of this
+
+00:12:46.070 --> 00:12:48.550
+would be the things that I
+think are likely to change,
+
+00:12:48.550 --> 00:12:49.925
+those should have
+their own cache
+
+00:12:49.925 --> 00:12:51.590
+that I can just
+delete and repopulate.
+
+00:12:51.590 --> 00:12:53.173
+And the things that
+I think are pretty
+
+00:12:53.173 --> 00:12:55.810
+static and unlikely to change,
+put them in their own cache
+
+00:12:55.810 --> 00:12:57.140
+as well.
+
+00:12:57.140 --> 00:13:03.415
+Again, well, it's a function
+of time to see how we get on.
+
+00:13:03.415 --> 00:13:05.260
+And this client's claim--
+if I understand it
+
+00:13:05.260 --> 00:13:08.460
+correctly-- on activation
+when this service worker has
+
+00:13:08.460 --> 00:13:11.220
+been activated, it
+basically says, OK, I
+
+00:13:11.220 --> 00:13:15.290
+will now respond to all future
+requests from this point on.
+
+00:13:15.290 --> 00:13:20.010
+So if the page then asks
+for an image or a URL,
+
+00:13:20.010 --> 00:13:21.090
+I will handle it.
+
+00:13:21.090 --> 00:13:24.220
+And it basically pushes
+the old service worker off
+
+00:13:24.220 --> 00:13:27.460
+to wherever service
+workers go when
+
+00:13:27.460 --> 00:13:30.490
+they're not needed anymore.
+
+00:13:30.490 --> 00:13:33.019
+Oh, on message, this is an
+interesting little thing.
+
+00:13:33.019 --> 00:13:35.060
+I mean, I think it's an
+interesting little thing.
+
+00:13:35.060 --> 00:13:38.050
+I wanted to do this.
+
+00:13:38.050 --> 00:13:45.220
+I was like, how do I decide
+whether to notify somebody?
+
+00:13:45.220 --> 00:13:46.730
+Like if the service
+worker changes,
+
+00:13:46.730 --> 00:13:48.164
+it might be a minor change.
+
+00:13:48.164 --> 00:13:50.330
+And I don't really want to
+put a little thing that's
+
+00:13:50.330 --> 00:13:52.913
+like, hey, new version, because
+it might just be really minor.
+
+00:13:52.913 --> 00:13:55.090
+It just might be like
+a typo or something.
+
+00:13:55.090 --> 00:13:58.930
+And I'm like, eh, it
+can cope for next time.
+
+00:13:58.930 --> 00:14:02.560
+What I do is the version
+that's baked in here, which
+
+00:14:02.560 --> 00:14:07.300
+is from the packaged-up JSON,
+if it gets a message asking
+
+00:14:07.300 --> 00:14:10.425
+for version-- and that message
+will come from the page,
+
+00:14:10.425 --> 00:14:12.300
+I'll show you that in
+a moment-- it basically
+
+00:14:12.300 --> 00:14:16.580
+posts a message back
+saying, here's my version.
+
+00:14:16.580 --> 00:14:22.180
+In the service worker
+install-- where are you?
+
+00:14:22.180 --> 00:14:23.110
+Where are you?
+
+00:14:23.110 --> 00:14:25.140
+Yeah, if we've got an
+active service worker,
+
+00:14:25.140 --> 00:14:27.390
+we post a message going,
+what's the version?
+
+00:14:27.390 --> 00:14:32.530
+When that comes back, if we've
+not already had a version,
+
+00:14:32.530 --> 00:14:33.870
+then we store that.
+
+00:14:33.870 --> 00:14:36.980
+And then if there's one
+that's updating, as in we get,
+
+00:14:36.980 --> 00:14:39.550
+so you've-- imagine
+the situation.
+
+00:14:39.550 --> 00:14:40.880
+You've got one service worker.
+
+00:14:40.880 --> 00:14:41.709
+It's installed.
+
+00:14:41.709 --> 00:14:42.250
+It's running.
+
+00:14:42.250 --> 00:14:42.900
+It's activated.
+
+00:14:42.900 --> 00:14:43.930
+It's doing its thing.
+
+00:14:43.930 --> 00:14:49.610
+And then a new one comes in and
+is like, OK, I'm taking over.
+
+00:14:49.610 --> 00:14:52.030
+Well, we've asked the first
+one, what's your version?
+
+00:14:52.030 --> 00:14:58.087
+And it said 0.1, 0.0
+because it's [INAUDIBLE].
+
+00:14:58.087 --> 00:14:58.920
+Let me just do that.
+
+00:14:58.920 --> 00:15:00.770
+Let's say 1.0.0.
+
+00:15:00.770 --> 00:15:02.630
+That would have
+been a better one.
+
+00:15:02.630 --> 00:15:04.400
+And so we've got
+that version back.
+
+00:15:04.400 --> 00:15:05.990
+And then the new
+one gets installed.
+
+00:15:05.990 --> 00:15:08.250
+And we ask it,
+what's your version?
+
+00:15:08.250 --> 00:15:12.700
+And it comes back
+and says, I'm 2.0.0.
+
+00:15:12.700 --> 00:15:15.030
+I split the current and
+the new version on dots.
+
+00:15:15.030 --> 00:15:17.900
+And I basically said,
+if the major version
+
+00:15:17.900 --> 00:15:21.490
+is the same, just log it out
+to the console going, yeah,
+
+00:15:21.490 --> 00:15:24.680
+I updated the service worker.
+
+00:15:24.680 --> 00:15:29.070
+If it's a major version
+change, like 1.0 to 2.0,
+
+00:15:29.070 --> 00:15:32.502
+then we push this toast.
+that's like, really, you know,
+
+00:15:32.502 --> 00:15:34.516
+you should refresh the site.
+
+00:15:34.516 --> 00:15:36.390
+And again, these are
+things that I might just
+
+00:15:36.390 --> 00:15:38.850
+improve over the coming days.
+
+00:15:38.850 --> 00:15:40.380
+We'll see how we go.
+
+00:15:40.380 --> 00:15:44.170
+So you can see-- actually
+if I go to package.json,
+
+00:15:44.170 --> 00:15:48.570
+and I change that
+to 2.0.3, hopefully,
+
+00:15:48.570 --> 00:15:52.100
+when I refresh the page, ta-da!
+
+00:15:52.100 --> 00:15:55.420
+You see Site updated,
+refresh to get the latest.
+
+00:15:55.420 --> 00:16:05.375
+Whereas if I do 2.0.4,
+but I look in the console,
+
+00:16:05.375 --> 00:16:07.500
+you can see we just get
+this-- Service worker moved
+
+00:16:07.500 --> 00:16:09.760
+from 2.0.3 to 2.0.4.
+
+00:16:09.760 --> 00:16:11.520
+So it's a way for
+me to kind of decide
+
+00:16:11.520 --> 00:16:16.750
+how much do I want to bother
+the person at the other end?
+
+00:16:16.750 --> 00:16:19.880
+OK, I don't want to take up
+too much more of your time.
+
+00:16:19.880 --> 00:16:23.030
+But I do think it is
+worth looking very finely
+
+00:16:23.030 --> 00:16:25.800
+at the fetch itself.
+
+00:16:25.800 --> 00:16:29.500
+This is the function that's
+going to be called whenever
+
+00:16:29.500 --> 00:16:32.400
+you make a request to the page.
+
+00:16:32.400 --> 00:16:35.630
+One thing is, if the
+image ends in @1x,
+
+00:16:35.630 --> 00:16:38.290
+I always respond with a 1.5x.
+
+00:16:38.290 --> 00:16:41.320
+This means that I only
+have to cache the 1.5x.
+
+00:16:41.320 --> 00:16:43.960
+And I would just hot swap it.
+
+00:16:43.960 --> 00:16:44.740
+It doesn't matter.
+
+00:16:44.740 --> 00:16:47.054
+You've asked for the
+1x, you get the 1.5x.
+
+00:16:47.054 --> 00:16:48.970
+In my case, it's always
+background size cover.
+
+00:16:48.970 --> 00:16:50.745
+So I can respond
+with a bigger image.
+
+00:16:50.745 --> 00:16:53.530
+And it means I don't have
+to cache the 1x and the 1.5x
+
+00:16:53.530 --> 00:16:54.365
+offline.
+
+00:16:54.365 --> 00:16:55.980
+It's handy.
+
+00:16:55.980 --> 00:16:59.680
+If the request itself
+doesn't end with devsummit,
+
+00:16:59.680 --> 00:17:02.679
+then I just say, stick
+to the current request.
+
+00:17:07.170 --> 00:17:12.220
+If, however, you have
+asked for the home page,
+
+00:17:12.220 --> 00:17:14.290
+I go through the sessions.
+
+00:17:14.290 --> 00:17:16.450
+And I basically
+look at each day.
+
+00:17:16.450 --> 00:17:18.510
+And I adjust for PST.
+
+00:17:18.510 --> 00:17:24.520
+And then I say, if you're
+inside the first day,
+
+00:17:24.520 --> 00:17:26.970
+respond with live day
+one from the cache.
+
+00:17:26.970 --> 00:17:29.830
+If you're inside day two,
+respond with live day two
+
+00:17:29.830 --> 00:17:31.102
+from the cache.
+
+00:17:31.102 --> 00:17:32.560
+And if not, you're
+going to respond
+
+00:17:32.560 --> 00:17:34.104
+with the devsummit/home.
+
+00:17:34.104 --> 00:17:35.520
+And then, if there
+are any errors,
+
+00:17:35.520 --> 00:17:38.050
+just respond with
+devsummit/home.
+
+00:17:38.050 --> 00:17:40.090
+So that means that
+what we get is
+
+00:17:40.090 --> 00:17:41.760
+we basically call this first.
+
+00:17:41.760 --> 00:17:43.430
+So we're saying
+either we're just
+
+00:17:43.430 --> 00:17:45.010
+going to leave the
+request as it is,
+
+00:17:45.010 --> 00:17:47.040
+or if it's a request
+for the home page,
+
+00:17:47.040 --> 00:17:50.700
+we might remap it just like the
+server was doing in the Python.
+
+00:17:50.700 --> 00:17:54.360
+We have to replicate that
+behavior in the service worker.
+
+00:17:54.360 --> 00:17:56.590
+And I guess if you had
+a JavaScript server,
+
+00:17:56.590 --> 00:17:59.789
+you might actually use
+the isomoroso-- iso--
+
+00:17:59.789 --> 00:18:00.580
+I'm as bad as Jake.
+
+00:18:00.580 --> 00:18:02.520
+He couldn't say
+"isomorphic" either.
+
+00:18:02.520 --> 00:18:07.860
+Isomorphic JavaScript-- there we
+go-- to do the same logic here
+
+00:18:07.860 --> 00:18:11.870
+of going is this on
+conference day one, day two?
+
+00:18:11.870 --> 00:18:14.760
+If not, respond with
+whichever page, whatever.
+
+00:18:14.760 --> 00:18:18.240
+So we're doing the same kind
+of remapping and rewriting.
+
+00:18:18.240 --> 00:18:20.880
+And if we didn't do that,
+then on the conference days,
+
+00:18:20.880 --> 00:18:23.110
+you might get the old home page.
+
+00:18:23.110 --> 00:18:24.800
+And you'd have to
+kind of force refresh
+
+00:18:24.800 --> 00:18:27.270
+to see the livestream,
+which we don't want.
+
+00:18:27.270 --> 00:18:29.440
+So we potentially remap
+the request if it's needed.
+
+00:18:29.440 --> 00:18:31.120
+If not, we'll just
+leave it as is.
+
+00:18:31.120 --> 00:18:32.634
+Check for the cache.
+
+00:18:32.634 --> 00:18:34.300
+If the cache has got
+that request, which
+
+00:18:34.300 --> 00:18:40.740
+for all of the files apart from
+say, like, YouTube thumbnails,
+
+00:18:40.740 --> 00:18:44.220
+anything for Analytics, or
+basically any third party
+
+00:18:44.220 --> 00:18:48.930
+stuff, it won't exist in the
+cache, and we'll just fetch it.
+
+00:18:48.930 --> 00:18:51.900
+And for everything that
+we do have from the cache,
+
+00:18:51.900 --> 00:18:53.570
+we'll just respond
+if we've got it.
+
+00:18:53.570 --> 00:18:57.239
+So, goodness me, that was a
+lot of information, wasn't it?
+
+00:18:57.239 --> 00:18:58.780
+But it has been a
+few days since I've
+
+00:18:58.780 --> 00:19:00.090
+had chance to record a video.
+
+00:19:00.090 --> 00:19:00.790
+So there you go.
+
+00:19:00.790 --> 00:19:05.860
+That's what happens if I
+don't record them often.
+
+00:19:05.860 --> 00:19:11.190
+At this point, I think the
+site is pretty much shippable.
+
+00:19:11.190 --> 00:19:15.940
+And this will probably
+be the last Dev Diary
+
+00:19:15.940 --> 00:19:17.330
+that I'm going to record.
+
+00:19:17.330 --> 00:19:19.910
+And maybe if there's
+something that comes up
+
+00:19:19.910 --> 00:19:23.370
+in the next little while that's
+like, oh, I must tell you,
+
+00:19:23.370 --> 00:19:24.770
+then I'll be back.
+
+00:19:24.770 --> 00:19:27.450
+But for now, all
+I want to say is
+
+00:19:27.450 --> 00:19:30.120
+thank you so much for coming
+on this journey with me.
+
+00:19:30.120 --> 00:19:32.750
+Thank you for all the
+comments, all the feedback,
+
+00:19:32.750 --> 00:19:34.010
+all the chatter.
+
+00:19:34.010 --> 00:19:39.010
+And I hope you've enjoyed coming
+along this journey with me.
+
+00:19:39.010 --> 00:19:40.730
+I've enjoyed having you along.
+
+00:19:40.730 --> 00:19:46.030
+And you know what, let's
+do this again sometime.
+
+00:19:46.030 --> 00:19:48.430
+But maybe you can do the coding.
+
+00:19:48.430 --> 00:19:49.620
+Yes!
+
+00:19:49.620 --> 00:19:51.660
+What a concept.
+
+00:19:51.660 --> 00:19:52.190
+Toodle-oo!
+
+00:19:52.190 --> 00:19:53.740
+[MUSIC PLAYING]
+

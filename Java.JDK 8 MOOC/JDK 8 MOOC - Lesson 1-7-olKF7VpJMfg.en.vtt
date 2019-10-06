@@ -1,0 +1,651 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:06.000
+[music]
+
+00:00:12.740 --> 00:00:15.100
+Hello and welcome to section seven
+
+00:00:15.100 --> 00:00:16.990
+of lesson one.
+
+00:00:16.990 --> 00:00:19.910
+In this section we're going to look at
+some of the new methods that have been
+
+00:00:19.910 --> 00:00:21.210
+added in JDK 8
+
+00:00:21.210 --> 00:00:24.449
+to the standard class libraries where,
+
+00:00:24.449 --> 00:00:28.910
+because the parameters are on functional
+interfaces,
+
+00:00:28.910 --> 00:00:33.309
+you can use Lambda expressions to
+express the behavior
+
+00:00:33.309 --> 00:00:39.210
+that you want from these methods. The
+first of these
+
+00:00:39.210 --> 00:00:42.730
+is in the the Iterable interface. What
+this means is that
+
+00:00:42.730 --> 00:00:46.350
+if you have a class now which implements
+the Iterable interface
+
+00:00:46.350 --> 00:00:49.430
+it will have a new method called forEach
+
+00:00:49.430 --> 00:00:52.570
+available to it and the forEach method
+
+00:00:52.570 --> 00:00:58.300
+takes a consumer as a parameter. As we can
+see from the example here
+
+00:00:58.300 --> 00:01:02.640
+what we can now do is have myList, which
+is a list of type string,
+
+00:01:02.640 --> 00:01:05.660
+and then we can say that for each element
+
+00:01:05.660 --> 00:01:08.970
+in that collection we want to print out
+its value.
+
+00:01:08.970 --> 00:01:13.869
+Rather than having to construct an
+explicit loop ourselves in doing for
+
+00:01:13.869 --> 00:01:16.899
+over the collection and have a body of
+the for loop
+
+00:01:16.899 --> 00:01:20.780
+to do whatever we want do we can use the
+Lambda expression
+
+00:01:20.780 --> 00:01:24.680
+to say what it is we want to do in each
+
+00:01:24.680 --> 00:01:28.310
+iteration of the elements that we have
+in the collection.
+
+00:01:28.310 --> 00:01:32.290
+Here we just want to print out lines,
+print out the
+
+00:01:32.290 --> 00:01:35.740
+the elements of the collection and, again,
+we can do that in
+
+00:01:35.740 --> 00:01:39.600
+a simplified form using the equivalent
+method reference.
+
+00:01:39.600 --> 00:01:43.630
+The collection interface
+
+00:01:43.630 --> 00:01:46.649
+has had a very useful new method 
+added to it,
+
+00:01:46.649 --> 00:01:49.899
+which is removeif, and removeif
+
+00:01:49.899 --> 00:01:54.430
+takes a predicate as a parameter. What
+this allows us to do
+
+00:01:54.430 --> 00:01:58.439
+is for a particular collection, which in
+this case is example is a
+
+00:01:58.439 --> 00:02:01.899
+list of type string, we can specify which
+
+00:02:01.899 --> 00:02:05.189
+elements of that collection we want to 
+remove based
+
+00:02:05.189 --> 00:02:09.750
+on whether the predicate we use returns
+true or false.
+
+00:02:09.750 --> 00:02:13.640
+In the example what I'm trying to do is
+remove
+
+00:02:13.640 --> 00:02:18.250
+any elements from this list of strings,
+which are zero characters in length.
+
+00:02:18.250 --> 00:02:21.540
+It's very simple, we just say
+where
+
+00:02:21.540 --> 00:02:24.360
+the length of the string is zero then
+
+00:02:24.360 --> 00:02:28.810
+those will be removed. Again, it’s the
+ability to
+
+00:02:28.810 --> 00:02:33.150
+eliminate all the extra work that we would
+have to do to have an explicit loop
+
+00:02:33.150 --> 00:02:36.670
+where we have to go through the
+collection ourselves, test whether the
+
+00:02:36.670 --> 00:02:40.280
+length of the string is zero and then 
+remove it explicitly from the collection
+
+00:02:40.280 --> 00:02:46.050
+all this is now achieved in one line of
+code.
+
+00:02:46.050 --> 00:02:49.740
+The list interface, which is obviously a subclass of the
+
+00:02:49.740 --> 00:02:52.980
+collection interface, has also had a new
+
+00:02:52.980 --> 00:02:56.459
+method added to it. In this case it's
+called replaceAll
+
+00:02:56.459 --> 00:02:59.720
+and that takes a UnaryOperator.
+
+00:02:59.720 --> 00:03:03.440
+If you remember back to the earlier part of
+the lesson where we talked about
+
+00:03:03.440 --> 00:03:07.320
+the interfaces in the
+
+00:03:07.320 --> 00:03:12.430
+java.util.function package. Again,
+what we can do here is take our
+
+00:03:12.430 --> 00:03:13.950
+list of strings
+
+00:03:13.950 --> 00:03:18.130
+and what we want to do is replace all of
+the contents
+
+00:03:18.130 --> 00:03:21.880
+of that collection in terms of
+those strings
+
+00:03:21.880 --> 00:03:25.550
+with strings that have been converted
+in some way
+
+00:03:25.550 --> 00:03:28.700
+using that UnaryOperator. In this case, we
+
+00:03:28.700 --> 00:03:32.510
+want to convert all of the strings to upper 
+case and
+
+00:03:32.510 --> 00:03:36.320
+we can do that with Lambda expression
+where we say s is the parameter
+
+00:03:36.320 --> 00:03:39.510
+s.toUpperCase is the body of the
+expression.
+
+00:03:39.510 --> 00:03:42.820
+We can use the equivalent method
+reference
+
+00:03:42.820 --> 00:03:46.400
+where, if you remember from earlier in
+the lesson, we use the type
+
+00:03:46.400 --> 00:03:49.790
+of the parameter, s, as our class,
+
+00:03:49.790 --> 00:03:52.860
+string and we use to UpperCase
+
+00:03:52.860 --> 00:03:55.959
+as the name of the method. That will give
+us the equivalent
+
+00:03:55.959 --> 00:04:00.420
+of the the code above.
+
+00:04:00.420 --> 00:04:04.160
+The list interface also has another method
+added to it, which is sort
+
+00:04:04.160 --> 00:04:08.260
+and this is really a kind of replacement
+
+00:04:08.260 --> 00:04:12.130
+for an existing method which is
+Collections.sort,
+
+00:04:12.130 --> 00:04:16.030
+where you can pass in a list and a 
+comparator, but this way
+
+00:04:16.030 --> 00:04:19.769
+it's built into the list interface, so
+you can call sort directly
+
+00:04:19.769 --> 00:04:24.890
+on the list that you've got rather than having to call a static method on the Collections
+
+00:04:24.890 --> 00:04:30.880
+utility class. Now, again, with my list of
+strings we can simply call sort
+
+00:04:30.880 --> 00:04:35.770
+and we can pass in a comparator. We've
+seen the comparator used before.
+
+00:04:35.770 --> 00:04:39.190
+We’re passing in two parameters, x and y,
+
+00:04:39.190 --> 00:04:42.430
+and remember that the compiler can use
+type inference.
+
+00:04:42.430 --> 00:04:47.050
+It knows that list of type string so it
+knows that the comparator will be of type
+
+00:04:47.050 --> 00:04:47.620
+string,
+
+00:04:47.620 --> 00:04:51.520
+so x and y, which are arguments to the 
+comparator must be of type string.
+
+00:04:51.520 --> 00:04:55.450
+The body of the comparator, compare
+method
+
+00:04:55.450 --> 00:04:59.230
+is to simply return the difference in length between the strings,
+
+00:04:59.230 --> 00:05:03.580
+which means that what we’ll actually be
+doing is sorting the strings by length.
+
+00:05:03.580 --> 00:05:07.170
+The
+
+00:05:07.170 --> 00:05:10.930
+logger class. This is a quite a common
+problem
+
+00:05:10.930 --> 00:05:15.130
+we see with logging and there aren't
+many other situations like this as well,
+
+00:05:15.130 --> 00:05:15.560
+but
+
+00:05:15.560 --> 00:05:18.680
+logging is a very good example. What I'm
+doing
+
+00:05:18.680 --> 00:05:22.320
+is I want to log a certain type of
+message
+
+00:05:22.320 --> 00:05:26.180
+and the way that that message needs to
+be generated is using this
+
+00:05:26.180 --> 00:05:30.630
+method called createComplexMessage.
+I'm using the
+
+00:05:30.630 --> 00:05:33.790
+finest message in the logging
+
+00:05:33.790 --> 00:05:37.590
+API to say that I only want to record
+these messages
+
+00:05:37.590 --> 00:05:41.130
+when the logging level is set to the
+very finest
+
+00:05:41.130 --> 00:05:45.770
+level. That's fine, but the problem we
+have
+
+00:05:45.770 --> 00:05:49.290
+is that createComplexMessage must be
+called
+
+00:05:49.290 --> 00:05:52.800
+every time, even when it's not required.
+
+00:05:52.800 --> 00:05:56.070
+if I set the logging level to be info or
+warning
+
+00:05:56.070 --> 00:06:01.510
+then, when the complex message is created
+and passed to that method
+
+00:06:01.510 --> 00:06:05.650
+the finest method will say ah, 
+level is not set to
+
+00:06:05.650 --> 00:06:10.100
+finest, so we don't need to use this
+message so we just ignore it. But
+
+00:06:10.100 --> 00:06:12.440
+createComplexMessage has been called.
+
+00:06:12.440 --> 00:06:17.160
+If, for the sake of argument, that takes 
+five seconds to create the complicated 
+message,
+
+00:06:17.160 --> 00:06:22.760
+then every time we call this we’re being
+delayed by five seconds, regardless
+
+00:06:22.760 --> 00:06:27.639
+of whether this is used or not. This
+is in some ways like Heisenberg's
+
+00:06:27.639 --> 00:06:29.669
+uncertainty principle applied to
+software.
+
+00:06:29.669 --> 00:06:33.060
+Now Heisenberg's uncertainty principle
+is from quantum mechanics and
+
+00:06:33.060 --> 00:06:37.270
+says that the act of observing something
+changes what you're observing
+
+00:06:37.270 --> 00:06:41.510
+but it has the same kind of effect
+in terms of what we do with our logging
+
+00:06:41.510 --> 00:06:42.180
+messages.
+
+00:06:42.180 --> 00:06:47.630
+To make this a lot easier and to avoid
+these problems
+
+00:06:47.630 --> 00:06:51.680
+in the logger class we’ve now added new
+versions of each of
+
+00:06:51.680 --> 00:06:54.950
+the logging APIs, so the finest, fine,
+
+00:06:54.950 --> 00:06:58.520
+warning, info, and so on which take a 
+supplier
+
+00:06:58.520 --> 00:07:02.470
+as an argument. Again, remember back, that 
+a supplier
+
+00:07:02.470 --> 00:07:06.180
+is a functional interface, has one abstract
+method
+
+00:07:06.180 --> 00:07:09.520
+and we can use Lambda expression to
+represent that.
+
+00:07:09.520 --> 00:07:12.690
+That means that by changing our code
+
+00:07:12.690 --> 00:07:15.919
+very slightly we can have a big
+impact on performance
+
+00:07:15.919 --> 00:07:19.450
+Now, what we're doing is simply changing
+
+00:07:19.450 --> 00:07:23.960
+the call to finest. Rather than passing
+createComplexMessage,
+
+00:07:23.960 --> 00:07:27.770
+we pass a Lambda expression, which is the
+
+00:07:27.770 --> 00:07:30.960
+supplier. In this case it takes no arguments,
+
+00:07:30.960 --> 00:07:34.289
+so the left hand side is empty brackets.
+The right hand side is
+
+00:07:34.289 --> 00:07:38.330
+to create our complex message. Now what's
+gonna happen is we’re
+
+00:07:38.330 --> 00:07:41.910
+going to pass this Lambda expression to
+finest
+
+00:07:41.910 --> 00:07:44.940
+and then only if finest needs it will it
+actually
+
+00:07:44.940 --> 00:07:48.590
+use this supplier and call the appropriate
+method
+
+00:07:48.590 --> 00:07:53.030
+and then create the complex message. The
+great thing is that
+
+00:07:53.030 --> 00:07:56.460
+what we’re doing now is passing behavior
+
+00:07:56.460 --> 00:08:01.530
+rather than value. We’re passing a
+description
+
+00:08:01.530 --> 00:08:05.340
+of how to create the message, not the 
+actual message.
+
+00:08:05.340 --> 00:08:09.520
+That way if we want to ignore it, rather
+than ignoring the message
+
+00:08:09.520 --> 00:08:13.520
+which has been created by a very long
+process we’re
+
+00:08:13.520 --> 00:08:16.820
+just ignoring the description, which
+takes no time at all.
+
+00:08:16.820 --> 00:08:19.110
+Much much better.
+
+00:08:19.110 --> 00:08:22.790
+This is also the kind of thing you can use 
+in your own code if you have a
+
+00:08:22.790 --> 00:08:26.330
+kind of conditional situation where you
+don't know whether
+
+00:08:26.330 --> 00:08:30.400
+the value that’s being passed is going to 
+be used or not. Passing a way of
+
+00:08:30.400 --> 00:08:36.340
+how to construct that message could be
+much more efficient. To summarize section
+
+00:08:36.340 --> 00:08:36.830
+seven, then,
+
+00:08:36.830 --> 00:08:40.560
+there are a number of new methods in JDK
+8,
+
+00:08:40.560 --> 00:08:44.640
+which provide you the ability to use
+Lambda expressions
+
+00:08:44.640 --> 00:08:48.700
+as parameters and most of these are
+based around
+
+00:08:48.700 --> 00:08:52.900
+avoiding having to do a lot of extra loop
+constructs,
+
+00:08:52.900 --> 00:08:56.150
+although not always because, if you think
+of the
+
+00:08:56.150 --> 00:08:59.640
+logging API what this allows us to do
+
+00:08:59.640 --> 00:09:03.390
+is to eliminate some of the overhead
+performance that we get
+
+00:09:03.390 --> 00:09:06.840
+by always passing values. By passing
+
+00:09:06.840 --> 00:09:10.380
+behavior to describe how we want to
+create these messages or
+
+00:09:10.380 --> 00:09:14.610
+how we want to do something this can
+really help us to improve
+
+00:09:14.610 --> 00:09:19.740
+the performance of our application.
+
+00:09:19.740 --> 00:09:24.490
+That is the end of the first lesson
+and what I’d just like doing now is to
+
+00:09:24.490 --> 00:09:27.150
+spend a couple minutes summarizing what
+we've covered
+
+00:09:27.150 --> 00:09:33.710
+in this lesson and what you've learnt so
+far. We’ve talked about Lambda
+
+00:09:33.710 --> 00:09:34.600
+expressions
+
+00:09:34.600 --> 00:09:38.200
+and the key thing that I really want to
+get across
+
+00:09:38.200 --> 00:09:42.060
+from this lesson is that Lambda
+expressions provide you with a simple
+
+00:09:42.060 --> 00:09:42.760
+way
+
+00:09:42.760 --> 00:09:47.340
+to pass behavior as parameter. Rather than
+always passing
+
+00:09:47.340 --> 00:09:51.180
+values we can pass description of how to
+create something
+
+00:09:51.180 --> 00:09:56.060
+in terms of that parameter. When we can
+use Lambda
+
+00:09:56.060 --> 00:09:59.380
+expressions is wherever we have a
+functional interface.
+
+00:09:59.380 --> 00:10:02.630
+Remember a functional interface is one
+that has a single
+
+00:10:02.630 --> 00:10:06.600
+abstract method and the Lambda expression,
+
+00:10:06.600 --> 00:10:10.690
+although it's not associated with
+a class, provides
+
+00:10:10.690 --> 00:10:14.410
+an implementation of the abstract
+method that is
+
+00:10:14.410 --> 00:10:18.480
+contained in that functional interface. We
+have
+
+00:10:18.480 --> 00:10:22.430
+shorthand forms for certain types of
+Lambda expressions where
+
+00:10:22.430 --> 00:10:25.830
+we're using a single method in terms
+of the Lambda body
+
+00:10:25.830 --> 00:10:29.490
+then we can use method references. If
+we’re using a constructor
+
+00:10:29.490 --> 00:10:31.630
+as a single statement in our Lambda
+
+00:10:31.630 --> 00:10:35.100
+expression we can use a constructor
+reference.
+
+00:10:35.100 --> 00:10:39.130
+As we've just seen there are a number of 
+useful new methods
+
+00:10:39.130 --> 00:10:42.620
+in JDK 8 that can use Lambdas and these 
+are ones
+
+00:10:42.620 --> 00:10:45.690
+outside of the streams API, which we’re 
+going to cover
+
+00:10:45.690 --> 00:10:49.590
+in the next lesson. And that is the end
+
+00:10:49.590 --> 00:10:50.520
+of the first lesson.
+

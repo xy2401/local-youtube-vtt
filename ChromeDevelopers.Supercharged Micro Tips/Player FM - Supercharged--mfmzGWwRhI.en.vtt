@@ -1,0 +1,922 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.150
+[MUSIC PLAYING]
+
+00:00:19.715 --> 00:00:21.460
+Hello, and welcome
+to "Supercharged."
+
+00:00:21.460 --> 00:00:23.330
+I'm Paul.
+
+00:00:23.330 --> 00:00:24.620
+Oh!
+
+00:00:24.620 --> 00:00:25.120
+Aah!
+
+00:00:25.120 --> 00:00:26.940
+That's why we don't
+do it live action.
+
+00:00:26.940 --> 00:00:28.680
+The show where I take the
+sites that you've submitted,
+
+00:00:28.680 --> 00:00:29.530
+and I go through them.
+
+00:00:29.530 --> 00:00:30.810
+And I look for
+performance issues,
+
+00:00:30.810 --> 00:00:31.934
+and I recommend some fixes.
+
+00:00:31.934 --> 00:00:33.120
+That's the show.
+
+00:00:33.120 --> 00:00:33.660
+Welcome!
+
+00:00:33.660 --> 00:00:35.400
+Today I have Player FM.
+
+00:00:35.400 --> 00:00:37.560
+And Player FM is an
+interesting one for me
+
+00:00:37.560 --> 00:00:40.810
+because it's run by
+Mike [? Marmov ?] who
+
+00:00:40.810 --> 00:00:43.100
+is a small business
+owner, and so he's
+
+00:00:43.100 --> 00:00:45.390
+dealing with the sites and
+the app that he's built
+
+00:00:45.390 --> 00:00:48.470
+and lots of other
+things besides.
+
+00:00:48.470 --> 00:00:51.220
+And so for him I suspect that
+performance is important,
+
+00:00:51.220 --> 00:00:53.900
+but it's not necessarily
+what's on his mind day to day.
+
+00:00:53.900 --> 00:00:56.920
+He's just trying to run his
+business and do well there.
+
+00:00:56.920 --> 00:00:59.046
+So it was an opportunity
+to look at something where
+
+00:00:59.046 --> 00:01:01.128
+the constraints are little
+bit different, at least
+
+00:01:01.128 --> 00:01:02.370
+from the business side.
+
+00:01:02.370 --> 00:01:04.430
+Serious performance work
+about to take place.
+
+00:01:04.430 --> 00:01:07.170
+Hmm, yes, one has goggles.
+
+00:01:07.170 --> 00:01:10.890
+Not strictly necessary, but
+they do make you look fabulous.
+
+00:01:10.890 --> 00:01:13.260
+I have the home page
+up on screen here.
+
+00:01:13.260 --> 00:01:15.390
+And what I wanted
+to do was just do
+
+00:01:15.390 --> 00:01:17.740
+a WebPagetest first and
+foremost, and have a quick look
+
+00:01:17.740 --> 00:01:21.511
+and just see if there's anything
+quick and easy to fix in there.
+
+00:01:21.511 --> 00:01:24.010
+And I've gone to the filmstrip
+view which you can get if you
+
+00:01:24.010 --> 00:01:26.880
+chick-- check, chick, check--
+
+00:01:26.880 --> 00:01:29.080
+[CLUCKING]
+
+00:01:29.080 --> 00:01:32.230
+If you check the box
+that says, capture video,
+
+00:01:32.230 --> 00:01:33.222
+it'll capture a video.
+
+00:01:33.222 --> 00:01:35.180
+And that will give you
+the filmstrip view which
+
+00:01:35.180 --> 00:01:36.430
+is what we're looking at here.
+
+00:01:41.925 --> 00:01:43.300
+The thing I notice,
+first of all,
+
+00:01:43.300 --> 00:01:46.780
+is that when you look at where
+the first paint happens--
+
+00:01:46.780 --> 00:01:48.270
+which is here.
+
+00:01:48.270 --> 00:01:50.510
+It's actually that green
+line there on the waterfall,
+
+00:01:50.510 --> 00:01:51.700
+I believe.
+
+00:01:51.700 --> 00:01:54.830
+You can see there's actually
+blocking on a few things.
+
+00:01:54.830 --> 00:01:56.910
+There's the fonts.
+
+00:01:56.910 --> 00:02:01.330
+There's the page CSS which
+is quite big as well.
+
+00:02:01.330 --> 00:02:03.130
+It's like 100K or so.
+
+00:02:03.130 --> 00:02:05.005
+So you'd really feel this on 3G.
+
+00:02:05.005 --> 00:02:06.380
+Now I'm not doing
+it on 3G today.
+
+00:02:06.380 --> 00:02:09.331
+Because I figure for most
+people, if they're on mobile,
+
+00:02:09.331 --> 00:02:11.080
+they've probably got
+the app, for example.
+
+00:02:11.080 --> 00:02:14.210
+So I opted to go with a
+desktop audience here.
+
+00:02:14.210 --> 00:02:16.630
+So we have-- the page comes in.
+
+00:02:16.630 --> 00:02:17.880
+Then there's the CSS.
+
+00:02:17.880 --> 00:02:19.140
+There is an image.
+
+00:02:19.140 --> 00:02:20.110
+There's the JavaScript.
+
+00:02:20.110 --> 00:02:23.370
+There's the fonts which
+then need to be transferred.
+
+00:02:23.370 --> 00:02:24.970
+There seems to be
+some-- what's this?
+
+00:02:24.970 --> 00:02:31.420
+There's a Google
+JavaScript client there,
+
+00:02:31.420 --> 00:02:32.810
+and then there's the web fonts.
+
+00:02:32.810 --> 00:02:34.670
+And then eventually
+it goes right-- now
+
+00:02:34.670 --> 00:02:35.934
+I've got enough to render.
+
+00:02:35.934 --> 00:02:37.350
+So I think the
+first thing I'd say
+
+00:02:37.350 --> 00:02:39.700
+is, it's a critical
+rendering path.
+
+00:02:39.700 --> 00:02:43.100
+Our job here is to
+[? interline ?] some styles.
+
+00:02:43.100 --> 00:02:46.111
+Let's have a look-- see if there
+are any in the page source.
+
+00:02:46.111 --> 00:02:48.470
+[GULP]
+
+00:02:48.470 --> 00:02:50.080
+Gaaah.
+
+00:02:50.080 --> 00:02:52.790
+So I suspect there aren't any.
+
+00:02:52.790 --> 00:02:54.290
+Because they'd be
+here if they were.
+
+00:02:54.290 --> 00:02:56.540
+And I think that's
+probably one of the options
+
+00:02:56.540 --> 00:02:59.810
+that we have here is
+to try and reprioritize
+
+00:02:59.810 --> 00:03:03.970
+the page load to try and get
+critical rendering path done.
+
+00:03:03.970 --> 00:03:06.780
+But even with that
+in play, there's
+
+00:03:06.780 --> 00:03:09.340
+something quite interesting
+about this home page,
+
+00:03:09.340 --> 00:03:11.830
+which is the
+scrolling performance.
+
+00:03:11.830 --> 00:03:13.400
+Let me bring up DevTools.
+
+00:03:13.400 --> 00:03:16.250
+And this has recently
+changed, its seems.
+
+00:03:16.250 --> 00:03:19.850
+And you can find the old
+school rendering tools
+
+00:03:19.850 --> 00:03:24.680
+under more tools and
+then rendering settings.
+
+00:03:24.680 --> 00:03:27.232
+And then you can go to
+enable paint flashing.
+
+00:03:27.232 --> 00:03:28.590
+Flash.
+
+00:03:28.590 --> 00:03:33.644
+As you scroll, you'll see that
+the whole page goes green.
+
+00:03:33.644 --> 00:03:35.810
+And that basically means
+the whole page is painting.
+
+00:03:35.810 --> 00:03:40.310
+And also it's painting-- you
+see it's pretty slow to paint.
+
+00:03:40.310 --> 00:03:42.470
+So let's have a look at why.
+
+00:03:42.470 --> 00:03:44.080
+We're in the timeline.
+
+00:03:44.080 --> 00:03:47.280
+We can hit record, and
+we'll do a scroll test
+
+00:03:47.280 --> 00:03:48.340
+in the background.
+
+00:03:48.340 --> 00:03:50.150
+Stop scrolling.
+
+00:03:50.150 --> 00:03:53.140
+And you see these red
+triangles here in the corner
+
+00:03:53.140 --> 00:03:55.410
+is basically where Chrome
+is telling you that it's not
+
+00:03:55.410 --> 00:03:57.020
+able to hit 60 frames a second.
+
+00:03:57.020 --> 00:03:59.670
+And it's a little bit
+forgiving around the 60 frames
+
+00:03:59.670 --> 00:04:00.520
+a second mark.
+
+00:04:00.520 --> 00:04:02.860
+I can't remember
+the exact numbers.
+
+00:04:02.860 --> 00:04:06.651
+But we are at eight frames
+a second, 10, seven.
+
+00:04:06.651 --> 00:04:08.900
+So for something that should
+be scrolling at 60 frames
+
+00:04:08.900 --> 00:04:11.050
+a second, we're
+really struggling.
+
+00:04:11.050 --> 00:04:13.350
+And what we can do is we
+can have a look at why.
+
+00:04:13.350 --> 00:04:15.696
+And you see these tile
+workers-- which are basically
+
+00:04:15.696 --> 00:04:18.070
+the parts of Chrome that are
+doing the painting-- they're
+
+00:04:18.070 --> 00:04:19.630
+all very, very clogged up.
+
+00:04:19.630 --> 00:04:20.697
+So we can have a look in.
+
+00:04:20.697 --> 00:04:22.530
+We can hit the w key
+on the keyboard-- which
+
+00:04:22.530 --> 00:04:25.857
+is like the zoom in-- and
+it says, rasterize paint.
+
+00:04:25.857 --> 00:04:27.940
+And that correlates very
+closely with what we saw,
+
+00:04:27.940 --> 00:04:30.390
+that sort of green paint
+that we saw earlier.
+
+00:04:30.390 --> 00:04:33.740
+So let me see if we
+can figure out why.
+
+00:04:33.740 --> 00:04:36.260
+And I'm betting it's the
+parallax thing that's
+
+00:04:36.260 --> 00:04:40.390
+going on, would be my
+guess because I've seen
+
+00:04:40.390 --> 00:04:42.520
+sites that do similar things.
+
+00:04:42.520 --> 00:04:44.220
+So we'll just
+inspect that element.
+
+00:04:44.220 --> 00:04:46.310
+See if we can bring that up.
+
+00:04:46.310 --> 00:04:47.890
+Section.
+
+00:04:47.890 --> 00:04:48.580
+Yes.
+
+00:04:48.580 --> 00:04:52.940
+We have background
+position-- 50.
+
+00:04:52.940 --> 00:04:54.080
+Blah blah blah.
+
+00:04:54.080 --> 00:04:55.840
+So these all look
+like-- yeah they're
+
+00:04:55.840 --> 00:04:57.173
+being changed by the JavaScript.
+
+00:04:57.173 --> 00:04:59.720
+You can see that you can watch
+the numbers change up here.
+
+00:04:59.720 --> 00:05:02.830
+And the problem we have is that
+this is causing it to paint.
+
+00:05:02.830 --> 00:05:04.740
+What we'll do is, we'll
+stop it doing this.
+
+00:05:04.740 --> 00:05:06.850
+And then I will show
+you how you can actually
+
+00:05:06.850 --> 00:05:08.980
+have a proper look at this
+in more detail yourself.
+
+00:05:08.980 --> 00:05:10.438
+So what I'll do
+is-- I'm just going
+
+00:05:10.438 --> 00:05:14.512
+to set background
+position to be-- I'm
+
+00:05:14.512 --> 00:05:15.970
+just going to do--
+what has he got?
+
+00:05:15.970 --> 00:05:18.190
+Like roughly 50%, zero.
+
+00:05:18.190 --> 00:05:19.830
+And I'm going to
+put important on it
+
+00:05:19.830 --> 00:05:22.880
+just so that it never changes.
+
+00:05:22.880 --> 00:05:25.340
+And those images
+are fixed right now.
+
+00:05:25.340 --> 00:05:28.700
+So when they're fixed-- when we
+scroll, what's going to happen
+
+00:05:28.700 --> 00:05:31.200
+is-- Chrome's going to go, well
+that's got to be there still
+
+00:05:31.200 --> 00:05:33.033
+on the page, so it
+paints it again and again
+
+00:05:33.033 --> 00:05:34.210
+and again and again.
+
+00:05:34.210 --> 00:05:36.472
+So what we can do is we
+can find, presumably, a [?
+
+00:05:36.472 --> 00:05:38.962
+background attachment:
+fixed. ?] Yes here it is.
+
+00:05:38.962 --> 00:05:40.920
+I'm just going to toggle
+that off for a second.
+
+00:05:40.920 --> 00:05:42.670
+So that they scroll
+with the page content.
+
+00:05:42.670 --> 00:05:45.310
+Now even though these
+styles are being
+
+00:05:45.310 --> 00:05:49.212
+updated by the page
+in the JavaScript,
+
+00:05:49.212 --> 00:05:51.170
+they're not going to
+change the actual position
+
+00:05:51.170 --> 00:05:54.280
+because we changed it to
+important and don't move.
+
+00:05:54.280 --> 00:05:57.300
+So with that all in place,
+let's now go back over here
+
+00:05:57.300 --> 00:06:01.210
+and we're going to hit record,
+and we're going to scroll.
+
+00:06:01.210 --> 00:06:05.230
+And we are, pretty much,
+back to 60 frames a second.
+
+00:06:05.230 --> 00:06:07.790
+There are few things like
+these image decodes and so on.
+
+00:06:07.790 --> 00:06:11.310
+But the main gist of it
+is that by just not doing
+
+00:06:11.310 --> 00:06:14.430
+that background
+position scroll thing,
+
+00:06:14.430 --> 00:06:15.725
+we're in a lot better state.
+
+00:06:18.910 --> 00:06:19.656
+Yes!
+
+00:06:19.656 --> 00:06:21.780
+So awhile ago, I wrote this
+post about parallaxing.
+
+00:06:21.780 --> 00:06:24.430
+And in here is the
+option two, which
+
+00:06:24.430 --> 00:06:26.330
+is what I'd suggest--
+it would be worth
+
+00:06:26.330 --> 00:06:27.750
+doing here for Player FM.
+
+00:06:27.750 --> 00:06:31.390
+It's using DOM elements rather
+than background position.
+
+00:06:31.390 --> 00:06:34.171
+Put those images onto
+their own element,
+
+00:06:34.171 --> 00:06:36.420
+and then use a 3D transform--
+or even a 2D transform--
+
+00:06:36.420 --> 00:06:39.810
+with something like, will
+change our [? translateZ(0 ?].
+
+00:06:39.810 --> 00:06:41.620
+That's right, I'll
+hack if necessary.
+
+00:06:41.620 --> 00:06:44.150
+We're quite pragmatic
+around these parts.
+
+00:06:44.150 --> 00:06:46.940
+And you can here
+see what it's like
+
+00:06:46.940 --> 00:06:49.366
+if you just use that approach.
+
+00:06:49.366 --> 00:06:51.800
+And what I'll do is, I'll
+do a timeline recording
+
+00:06:51.800 --> 00:06:53.090
+just so that you see it.
+
+00:06:53.090 --> 00:06:55.670
+And scroll up and down.
+
+00:06:55.670 --> 00:06:57.970
+And it's pretty much 60
+frames a second everywhere.
+
+00:06:57.970 --> 00:07:00.180
+And the reason it's 60 frames
+a second is because we're using
+
+00:07:00.180 --> 00:07:00.830
+transforms.
+
+00:07:00.830 --> 00:07:03.960
+And transforms we can do--
+if it's on its own layer,
+
+00:07:03.960 --> 00:07:07.220
+it can be done by the GPU,
+and that's extremely fast.
+
+00:07:07.220 --> 00:07:09.662
+So you can do 60 frames a
+second parallax effects.
+
+00:07:09.662 --> 00:07:11.120
+I think right now
+the way that it's
+
+00:07:11.120 --> 00:07:13.760
+being done on this
+page where it uses
+
+00:07:13.760 --> 00:07:16.640
+background position, that's not
+going to be 60 frames a second.
+
+00:07:16.640 --> 00:07:19.610
+But when you can do it with
+a transform and have it
+
+00:07:19.610 --> 00:07:24.460
+operate on individual
+elements, that you can do.
+
+00:07:24.460 --> 00:07:25.261
+I can't juggle.
+
+00:07:25.261 --> 00:07:25.760
+I can't.
+
+00:07:25.760 --> 00:07:27.011
+I don't even know why I tried.
+
+00:07:27.011 --> 00:07:27.676
+All right, cool.
+
+00:07:27.676 --> 00:07:28.879
+So that's the homepage done.
+
+00:07:28.879 --> 00:07:30.920
+So what we'll do is we'll
+actually switch across,
+
+00:07:30.920 --> 00:07:33.330
+and we'll look at
+a details page--
+
+00:07:33.330 --> 00:07:35.510
+as in for one of the series.
+
+00:07:35.510 --> 00:07:37.870
+And it just so happens
+I have exactly the right
+
+00:07:37.870 --> 00:07:42.940
+URL up my sleeve,
+which involves two idiots--
+
+00:07:42.940 --> 00:07:46.910
+me and Wakey Jakey Vegas,
+doing a nice
+
+00:07:46.910 --> 00:07:47.920
+HTTP 203 podcast.
+
+00:07:47.920 --> 00:07:49.670
+It's a subtle plug.
+
+00:07:49.670 --> 00:07:52.231
+If you just pay the
+slightest attention,
+
+00:07:52.231 --> 00:07:54.230
+it's almost like I'm
+saying, subscribe subscribe
+
+00:07:54.230 --> 00:07:56.430
+subscribe subscribe subscribe
+subscribe subscribe.
+
+00:07:56.430 --> 00:07:58.221
+This time we don't have
+any, I don't think,
+
+00:07:58.221 --> 00:08:00.930
+any scroll performance
+issues particularly.
+
+00:08:00.930 --> 00:08:03.040
+Basically because the
+page is fairly static.
+
+00:08:03.040 --> 00:08:04.530
+However, I think
+what we can do is,
+
+00:08:04.530 --> 00:08:08.390
+we can have ourselves another
+sneaky peek at WebPagetest.
+
+00:08:08.390 --> 00:08:10.650
+So let's pop that in there.
+
+00:08:10.650 --> 00:08:12.040
+Do that.
+
+00:08:12.040 --> 00:08:14.030
+We'll do it on Chrome cable.
+
+00:08:14.030 --> 00:08:14.530
+Seems good.
+
+00:08:14.530 --> 00:08:19.310
+Capture a video so that you can
+do the video filmstrip thing.
+
+00:08:19.310 --> 00:08:22.255
+Oh yes, we're waiting.
+
+00:08:22.255 --> 00:08:24.806
+What's he going to do next?
+
+00:08:24.806 --> 00:08:25.820
+Yes, that's right.
+
+00:08:25.820 --> 00:08:27.706
+He's going to
+jettison his career.
+
+00:08:27.706 --> 00:08:28.580
+Here are the results.
+
+00:08:28.580 --> 00:08:31.990
+We've switched up to a one tenth
+of a second for the intervals.
+
+00:08:31.990 --> 00:08:36.980
+And yet, similar kind of story--
+I think-- to the homepage.
+
+00:08:36.980 --> 00:08:40.809
+Except this time, we
+look-- to my eye--
+
+00:08:40.809 --> 00:08:45.900
+like we're blocking on
+the, obviously, the page.
+
+00:08:45.900 --> 00:08:47.340
+But then there's
+some JavaScript,
+
+00:08:47.340 --> 00:08:49.520
+and then there's
+some CSS-- bunch
+
+00:08:49.520 --> 00:08:52.674
+of image assets, which is fine.
+
+00:08:52.674 --> 00:08:53.590
+It's kind of expected.
+
+00:08:53.590 --> 00:08:55.089
+But then there's
+web fonts, and then
+
+00:08:55.089 --> 00:08:57.920
+only after the web
+fonts have arrived,
+
+00:08:57.920 --> 00:09:01.472
+do we actually do
+the initial paint.
+
+00:09:01.472 --> 00:09:03.180
+And yeah, actually,
+you can see if you're
+
+00:09:03.180 --> 00:09:06.620
+to look into one
+of these pages, you
+
+00:09:06.620 --> 00:09:12.860
+get that blank, white
+screen before the font
+
+00:09:12.860 --> 00:09:14.100
+is actually available.
+
+00:09:14.100 --> 00:09:17.575
+So that can be quite
+frustrating for users,
+
+00:09:17.575 --> 00:09:19.950
+depending on how long it takes
+for the font to come down.
+
+00:09:19.950 --> 00:09:25.220
+One option is to have
+the font essentially not
+
+00:09:25.220 --> 00:09:26.990
+be there-- use a system font.
+
+00:09:26.990 --> 00:09:29.830
+And then try and get the
+web font for the next time.
+
+00:09:29.830 --> 00:09:33.550
+So lazy load it and then
+deal with it next time.
+
+00:09:33.550 --> 00:09:36.640
+That could be a bit of a
+challenge to orchestrate,
+
+00:09:36.640 --> 00:09:39.890
+which is hopefully where things
+like font display will help.
+
+00:09:39.890 --> 00:09:41.550
+But for the time
+being, it might just
+
+00:09:41.550 --> 00:09:46.230
+be worth switching this font
+back out to a system font--
+
+00:09:46.230 --> 00:09:48.750
+if it is a web font,
+and it looks like it is.
+
+00:09:48.750 --> 00:09:51.800
+Or just using the
+web font for titles
+
+00:09:51.800 --> 00:09:55.125
+and leaving the system font for
+the majority of the content.
+
+00:09:55.125 --> 00:09:56.500
+There's a few
+things I would look
+
+00:09:56.500 --> 00:10:03.010
+at on both the homepage and
+the individual podcast pages.
+
+00:10:03.010 --> 00:10:05.720
+And, you know, that's great.
+
+00:10:05.720 --> 00:10:07.850
+So don't forget you
+can submit your sites.
+
+00:10:07.850 --> 00:10:09.912
+Don't forget to subscribe.
+
+00:10:09.912 --> 00:10:11.120
+You should click that button.
+
+00:10:11.120 --> 00:10:12.036
+That would be awesome.
+
+00:10:12.036 --> 00:10:14.710
+And I will catch you next time.
+
+00:10:14.710 --> 00:10:15.335
+[MUSIC PLAYING]
+
+00:10:15.335 --> 00:10:17.965
+I haven't been allowed out
+of this room in three weeks.
+
+00:10:17.965 --> 00:10:20.298
+Put makeup on you before you
+go out on camera, you know.
+
+00:10:20.298 --> 00:10:21.600
+Ha ha.
+
+00:10:21.600 --> 00:10:25.210
+There, they said, Paul,
+you've got a shiny head.
+

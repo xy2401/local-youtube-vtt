@@ -1,0 +1,396 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.884 --> 00:00:06.120
+Hey there, Polycasters.
+
+00:00:06.120 --> 00:00:06.620
+Rob here.
+
+00:00:06.620 --> 00:00:08.590
+Welcome back to Ask
+Polymer, the show where
+
+00:00:08.590 --> 00:00:11.130
+you send in your
+hashtagged questions
+
+00:00:11.130 --> 00:00:13.571
+and we do our best to
+answer them on air.
+
+00:00:13.571 --> 00:00:15.570
+So today we're going to
+lead off with a question
+
+00:00:15.570 --> 00:00:17.778
+that a lot of people have
+asked which is, "How do you
+
+00:00:17.778 --> 00:00:21.217
+get your hand to show up in the
+screencast that you record?"
+
+00:00:21.217 --> 00:00:22.550
+So it's a really great question.
+
+00:00:22.550 --> 00:00:24.529
+We've actually got a
+pretty elaborate rig
+
+00:00:24.529 --> 00:00:26.320
+that we've built that
+allows us to do this.
+
+00:00:26.320 --> 00:00:30.380
+We've got a camera mounted
+above a Wacom Cintiq tablet.
+
+00:00:30.380 --> 00:00:32.840
+And then use a free program
+called OmniDazzle that
+
+00:00:32.840 --> 00:00:34.250
+lets us draw on the screen.
+
+00:00:34.250 --> 00:00:36.790
+We do all of our screen
+casting in Camtasia
+
+00:00:36.790 --> 00:00:38.750
+and we take all of
+that and we throw it
+
+00:00:38.750 --> 00:00:40.492
+into a big keynote deck.
+
+00:00:40.492 --> 00:00:42.700
+We just walk through that
+and record the whole thing,
+
+00:00:42.700 --> 00:00:44.060
+mash it together, and post.
+
+00:00:44.060 --> 00:00:46.159
+So it's a pretty
+cool set up and it
+
+00:00:46.159 --> 00:00:47.950
+allows us to do that
+really awesome effect.
+
+00:00:47.950 --> 00:00:49.366
+All right, our
+next question comes
+
+00:00:49.366 --> 00:00:53.490
+from Jay who asks, "Does Polymer
+play nice with Typescript?
+
+00:00:53.490 --> 00:00:56.570
+And are there official type
+definitions for Polymer?"
+
+00:00:56.570 --> 00:00:58.100
+So a great question, Jay.
+
+00:00:58.100 --> 00:01:00.210
+There are not
+official definitions
+
+00:01:00.210 --> 00:01:02.380
+that have been created by
+the Polymer team, however,
+
+00:01:02.380 --> 00:01:05.590
+the definitely
+typed repo on GitHub
+
+00:01:05.590 --> 00:01:08.600
+does have Polymer definitions
+which you can use to get up
+
+00:01:08.600 --> 00:01:10.950
+and running with Typescript
+and Polymer in your project.
+
+00:01:10.950 --> 00:01:14.141
+I've used them a little bit
+in an Angular 2 experiment
+
+00:01:14.141 --> 00:01:14.640
+that I did.
+
+00:01:14.640 --> 00:01:16.194
+So you can use those.
+
+00:01:16.194 --> 00:01:17.860
+They're not fully
+featured, if you will,
+
+00:01:17.860 --> 00:01:19.640
+but they will get
+you started rolling
+
+00:01:19.640 --> 00:01:20.830
+with Typescript and Polymer.
+
+00:01:20.830 --> 00:01:23.230
+So thank you, Jay, for
+sending in that question.
+
+00:01:23.230 --> 00:01:25.130
+Our next question
+comes from Thomas
+
+00:01:25.130 --> 00:01:28.930
+who asks, "How do I go about
+including a third party library
+
+00:01:28.930 --> 00:01:31.500
+in my Polymer elements?"
+
+00:01:31.500 --> 00:01:33.040
+Good question there, Thomas.
+
+00:01:33.040 --> 00:01:36.350
+What I would recommend is
+creating an HTML import that
+
+00:01:36.350 --> 00:01:40.000
+contains the script tag for
+that third party library,
+
+00:01:40.000 --> 00:01:43.020
+and then your elements
+can depend on that import.
+
+00:01:43.020 --> 00:01:45.990
+So you can see an example
+of this right over here
+
+00:01:45.990 --> 00:01:49.170
+from this Chart.js element
+set that I created.
+
+00:01:49.170 --> 00:01:52.730
+There's an import for Chart.js,
+everybody else depends on that.
+
+00:01:52.730 --> 00:01:55.800
+Hopefully, in the future,
+authors just bend those imports
+
+00:01:55.800 --> 00:01:58.690
+for us, but today that's the
+workaround that we recommend.
+
+00:01:58.690 --> 00:02:00.170
+And I should add
+the reason we do
+
+00:02:00.170 --> 00:02:02.350
+that is so you can have
+multiple elements depending
+
+00:02:02.350 --> 00:02:04.200
+on that thing and
+HTML imports will just
+
+00:02:04.200 --> 00:02:05.940
+de-duplicate it for you.
+
+00:02:05.940 --> 00:02:07.200
+Great question, Thomas.
+
+00:02:07.200 --> 00:02:08.454
+Thank you for sending that in.
+
+00:02:08.454 --> 00:02:09.870
+All right, our
+next question comes
+
+00:02:09.870 --> 00:02:13.400
+from Wheatley who asks, "What
+would be the suggested way
+
+00:02:13.400 --> 00:02:16.710
+to do routing in a
+Polymer application?"
+
+00:02:16.710 --> 00:02:18.340
+Excellent question, Wheatley.
+
+00:02:18.340 --> 00:02:22.500
+What I would recommend is you
+go check out a previous episode
+
+00:02:22.500 --> 00:02:25.940
+on using Page.js, that is
+actually how I've been doing it
+
+00:02:25.940 --> 00:02:27.480
+in my applications.
+
+00:02:27.480 --> 00:02:30.300
+We also did an episode on an
+element called Moar Routing,
+
+00:02:30.300 --> 00:02:34.370
+but it's not so well
+maintained these days,
+
+00:02:34.370 --> 00:02:36.730
+so I'd recommend
+sticking with Page.js.
+
+00:02:36.730 --> 00:02:39.140
+Also if you're interested,
+you can check out
+
+00:02:39.140 --> 00:02:42.600
+over here this thing that
+we've been working on on GitHub
+
+00:02:42.600 --> 00:02:44.160
+called web-component-shards.
+
+00:02:44.160 --> 00:02:46.930
+So that actually allows you
+to take your element bundles
+
+00:02:46.930 --> 00:02:50.720
+and break them up into pieces,
+and maybe lazy load them.
+
+00:02:50.720 --> 00:02:54.050
+This is still very
+experimental, but this
+
+00:02:54.050 --> 00:02:57.000
+might be our long-term solution
+to allowing you to lazy load
+
+00:02:57.000 --> 00:02:58.260
+stuff with your router.
+
+00:02:58.260 --> 00:03:00.220
+So thank you so much,
+Wheatley, for sending
+
+00:03:00.220 --> 00:03:02.200
+in that awesome,
+awesome question.
+
+00:03:02.200 --> 00:03:02.700
+All right.
+
+00:03:02.700 --> 00:03:04.680
+Our last question
+comes from Paul
+
+00:03:04.680 --> 00:03:08.560
+who asks, "Are there plans to
+add paper elements for date
+
+00:03:08.560 --> 00:03:10.310
+and time pickers?"
+
+00:03:10.310 --> 00:03:11.440
+Great question, Paul.
+
+00:03:11.440 --> 00:03:13.240
+We want to make sure
+that before we go
+
+00:03:13.240 --> 00:03:16.040
+and create new elements that
+we've got our current paper
+
+00:03:16.040 --> 00:03:17.720
+elements as buttoned
+up as possible.
+
+00:03:17.720 --> 00:03:19.572
+So that means
+fixing bugs on them,
+
+00:03:19.572 --> 00:03:21.280
+making sure that
+they're really polished,
+
+00:03:21.280 --> 00:03:23.470
+the APIs do everything
+everybody wants.
+
+00:03:23.470 --> 00:03:26.920
+So there's no near term plans
+to add those extra elements,
+
+00:03:26.920 --> 00:03:29.470
+because we want to focus on
+the set that we currently have.
+
+00:03:29.470 --> 00:03:32.177
+However, having said that,
+there are community members
+
+00:03:32.177 --> 00:03:34.260
+who have created their own
+implementations of both
+
+00:03:34.260 --> 00:03:34.760
+of these.
+
+00:03:34.760 --> 00:03:37.090
+So you can check out
+a date-picker here
+
+00:03:37.090 --> 00:03:39.210
+and a time-picker over here.
+
+00:03:39.210 --> 00:03:41.810
+Those are also available
+on customelements.io.
+
+00:03:41.810 --> 00:03:44.670
+You can browse through some
+of the elements on that site.
+
+00:03:44.670 --> 00:03:47.525
+Maybe go try those out and
+they might meet your needs.
+
+00:03:47.525 --> 00:03:49.900
+Thank you so much for that
+really awesome question, Paul.
+
+00:03:49.900 --> 00:03:51.020
+So that's it for today.
+
+00:03:51.020 --> 00:03:52.741
+Thanks to everyone
+who sent in questions.
+
+00:03:52.741 --> 00:03:54.990
+If you out there have questions
+you want us to answer,
+
+00:03:54.990 --> 00:03:57.390
+you can ping us on a social
+network of your choosing
+
+00:03:57.390 --> 00:03:59.920
+at #AskPolymer.
+
+00:03:59.920 --> 00:04:01.700
+As always, thank you
+so much for watching
+
+00:04:01.700 --> 00:04:04.824
+and I'll see you next time.
+
+00:04:04.824 --> 00:04:06.810
+I'm K-Pax.
+

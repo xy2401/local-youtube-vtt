@@ -1,0 +1,434 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:00.000 --> 00:00:02.393
+[MUSIC PLAYING]
+
+00:00:09.190 --> 00:00:13.026
+Matt  我正在为感到孤独的人打造一个网络应用
+ADDY OSMANI: So Matt, I'm working on a new web app for lonely people.
+
+00:00:13.026 --> 00:00:13.650
+不错
+MATT GAUNT: OK.
+
+00:00:13.650 --> 00:00:15.090
+它是干什么的
+What does it do?
+
+00:00:15.090 --> 00:00:16.059
+它叫什么
+What is it called?
+
+00:00:16.059 --> 00:00:19.920
+叫做  跟猫聊天
+ADDY OSMANI: It's called "Words With Cats." Now-- Words With Cats.
+
+00:00:19.920 --> 00:00:21.450
+这名字很好
+It's a brilliant name.
+
+00:00:21.450 --> 00:00:24.760
+我希望手机主屏幕上能有个图标
+Now, I want to show an icon on my phone's home screen,
+
+00:00:24.760 --> 00:00:26.260
+如果有人启动它
+if someone launches this, and I also
+
+00:00:26.260 --> 00:00:29.680
+我希望能像一个图标一样
+want to be able to show like an icon or some visual
+
+00:00:29.680 --> 00:00:30.500
+或者有启动画面
+in a splash screen.
+
+00:00:30.500 --> 00:00:32.290
+比如一只猫在翻字典之类的
+MATT GAUNT: Of a cat reading a dictionary, or something?
+
+00:00:32.290 --> 00:00:34.760
+一只猫读  你真是智多星  
+ADDY OSMANI: A cat reading-- you're 're a thought leader.
+
+00:00:34.760 --> 00:00:36.270
+我怎么才能做到
+How can I get that done?
+
+00:00:36.270 --> 00:00:40.570
+Chrome 现在有添加到主屏幕功能
+MATT GAUNT: So Chrome now has the add to home screen stuff.
+
+00:00:40.570 --> 00:00:44.780
+基本上  你只要满足一些条件
+So, basically, if you meet a certain set of criteria
+
+00:00:44.780 --> 00:00:46.962
+当用户使用你的网络应用时
+when a user is basically engaged in your web app,
+
+00:00:46.962 --> 00:00:49.420
+会有一条小横幅
+it will come a little banner saying, hey, would to add this
+
+00:00:49.420 --> 00:00:50.310
+上面写着是否把它添加到主屏幕
+to your home screen.
+
+00:00:50.310 --> 00:00:52.650
+你需要使用 HTTPS
+So, you basically need to be on HBS,
+
+00:00:52.650 --> 00:00:56.440
+service worker  以及 web app manifest
+and to have a service worker, and you need a web app manifest.
+
+00:00:56.440 --> 00:00:57.904
+之后的话
+And then after that it's basically,
+
+00:00:57.904 --> 00:01:00.070
+只要用户多次使用了
+depending on the user coming back a couple of times,
+
+00:01:00.070 --> 00:01:01.642
+就会出现横幅提示
+then it will show the banner.
+
+00:01:01.642 --> 00:01:03.350
+你所需要的主要是 web app manifest
+So the web app manifest is the main thing
+
+00:01:03.350 --> 00:01:07.000
+它能实现这些功能  当然还有其他的
+that you need, to enable all of this, along with the other bits.
+
+00:01:07.000 --> 00:01:09.240
+但是 manifest 现在只是一个 JSON 文件
+But the manifest is just a JSON file at that point.
+
+00:01:09.240 --> 00:01:09.990
+棒
+ADDY OSMANI: Cool.
+
+00:01:09.990 --> 00:01:11.360
+它只是一个 JSON 文件
+So it's just a JSON file.
+
+00:01:11.360 --> 00:01:12.810
+仅限于 Chrome 平台么
+Is this a Chrome-only thing?
+
+00:01:12.810 --> 00:01:13.601
+不
+MATT GAUNT: No, no.
+
+00:01:13.601 --> 00:01:16.160
+这是标准通用的
+This is all the standard space, so basically any browser
+
+00:01:16.160 --> 00:01:19.340
+基本上所有浏览器都能从 link rel 标签中
+can look for this link rel tag that links to your manifest
+
+00:01:19.340 --> 00:01:21.390
+链接到你的 manifest JSON 文件  解析它
+JSON file, at that point they can parse it
+
+00:01:21.390 --> 00:01:23.450
+你想要实现的那些
+and it's just going to-- you have certain things
+
+00:01:23.450 --> 00:01:25.650
+浏览器就会展现出来
+to find for then browsers to take it all out.
+
+00:01:25.650 --> 00:01:26.441
+好
+ADDY OSMANI: Right.
+
+00:01:26.441 --> 00:01:28.960
+所以说 manifest 能让我修改图标
+So the manifest lets me customize my icons.
+
+00:01:28.960 --> 00:01:30.710
+还有其他什么是我能配置的么
+What other stuff can I configure in there?
+
+00:01:30.710 --> 00:01:32.930
+你可以定义 short name
+MATT GAUNT: So, you can define short name, which
+
+00:01:32.930 --> 00:01:35.770
+它会显示在你常使用的图标下
+would be the text underneath your icon that you'd normally see.
+
+00:01:35.770 --> 00:01:38.830
+Theme color  Chrome 会在 URL 栏
+Theme color, which Chrome uses, is like the URL color
+
+00:01:38.830 --> 00:01:40.580
+给 URL 设定颜色
+along the URL bar.
+
+00:01:40.580 --> 00:01:43.250
+Background color  在启动画面中使用
+Background color is for the splash screen.
+
+00:01:43.250 --> 00:01:46.800
+如果你已经添加到主屏幕  点击后
+So, if you have that add to home screen, then click on it,
+
+00:01:46.800 --> 00:01:49.092
+它就会启动  基本上当 Chrome 在加载时
+it'll launch and basically while Chrome's loading, what
+
+00:01:49.092 --> 00:01:50.799
+你可以展示以单色为底
+you can do is show a splash screen that's
+
+00:01:50.799 --> 00:01:53.050
+包括带有文字的图标
+like a solid color and then have an icon on top of it
+
+00:01:53.050 --> 00:01:54.700
+的启动画面
+along with the text.
+
+00:01:54.700 --> 00:01:56.145
+这就是 Background color 的用处
+So background color does that.
+
+00:01:56.145 --> 00:01:57.770
+比如你有一系列的图标
+You've got an array of icons, so again,
+
+00:01:57.770 --> 00:02:00.144
+它会根据浏览器需要使用图标的场景
+depending on what the browser want's to use the icon for,
+
+00:02:00.144 --> 00:02:02.060
+选择大小最合适的
+it will just pick the best size for it.
+
+00:02:02.060 --> 00:02:04.470
+Start URL 非常棒 
+Start URL is super awesome.
+
+00:02:04.470 --> 00:02:06.590
+它的用处是
+What that is, is basically-- you remember back
+
+00:02:06.590 --> 00:02:08.240
+你还记得原来我们在 Chrome 中使用添加到主屏幕么
+in the day we used to have add to home screen in Chrome?
+
+00:02:08.240 --> 00:02:09.320
+它藏在菜单中
+It was like hidden in the menu.
+
+00:02:09.320 --> 00:02:09.889
+恩
+ADDY OSMANI: Yeah.
+
+00:02:09.889 --> 00:02:11.597
+它的作用就是
+MATT GAUNT: So, what that would always do
+
+00:02:11.597 --> 00:02:14.970
+不管你在哪个页面
+is whatever page you're on that is where you will get
+
+00:02:14.970 --> 00:02:17.490
+当你点击添加到主屏幕时  都会重新指向它
+pointed when you click on the icon for the home screen.
+
+00:02:17.490 --> 00:02:20.030
+Start URL 可以设定它在哪
+Start URL let's you define where that is now.
+
+00:02:20.030 --> 00:02:23.405
+比如有人正在看博客文章
+So, if someone was in the middle of a blog article, clicked
+
+00:02:23.405 --> 00:02:26.220
+点击添加到主屏幕  现在你就知道了
+on add to home screen, now you can say, actually, just
+
+00:02:26.220 --> 00:02:29.220
+它会回到博客主页
+go to the home of the blog.
+
+00:02:29.220 --> 00:02:30.490
+你还可以配置 display
+Then you've got display.
+
+00:02:30.490 --> 00:02:33.680
+display 不是以浏览器模式启动
+Display is basically rather than launch in browser mode,
+
+00:02:33.680 --> 00:02:35.970
+它可以全屏显示
+you can say actually I want it to go full screen.
+
+00:02:35.970 --> 00:02:36.980
+它就像原生应用一样
+ADDY OSMANI: Oh, so you can launch it full
+
+00:02:36.980 --> 00:02:39.750
+能够全屏显示  是么
+screen the same way that a native app might look like, right?
+
+00:02:39.750 --> 00:02:41.081
+就是这样
+MATT GAUNT: Yeah, exactly.
+
+00:02:41.081 --> 00:02:43.395
+除此之外  还有 orientations
+But, alongside that there is, also, in the spec, orientations.
+
+00:02:43.395 --> 00:02:45.940
+理论上你可以锁定为纵向或者横向
+So you could theoretically lock it to portrait or landscape.
+
+00:02:45.940 --> 00:02:48.144
+棒  这对游戏很有用
+ADDY OSMANI: Oh, cool, so for games that's particularly useful.
+
+00:02:48.144 --> 00:02:52.635
+对  当你想只用手柄时
+MATT GAUNT: Yeah, if you want to do like forced-- thumb sticks.
+
+00:02:52.635 --> 00:02:54.010
+关于 start URL
+The nice thing, especially, I was
+
+00:02:54.010 --> 00:02:56.630
+还有一点特别棒
+going to say with the Start URL, you can actually then add
+
+00:02:56.630 --> 00:02:58.550
+你可以添加查询参数
+the query parameter, so then you can track
+
+00:02:58.550 --> 00:02:59.540
+这样你就能追踪到使用人数了
+how many people are using it.
+
+00:02:59.540 --> 00:02:59.740
+啊
+ADDY OSMANI: Ah.
+
+00:02:59.740 --> 00:03:01.926
+比如主屏幕参数为真值
+MATT GAUNT: So, like home screen equals true.
+
+00:03:01.926 --> 00:03:03.550
+分析结果就会显示给你
+And then analytics would just show you.
+
+00:03:03.550 --> 00:03:04.300
+不错
+ADDY OSMANI: Cool.
+
+00:03:04.300 --> 00:03:06.490
+基本上就是这些东西了
+MATT GAUNT: So that's pretty much the bulk of it.
+
+00:03:06.490 --> 00:03:07.240
+好的
+ADDY OSMANI: Nice.
+
+00:03:07.240 --> 00:03:09.390
+有没有  比如我想验证 manifest 的合法性
+Is there-- if I wanted to like validate
+
+00:03:09.390 --> 00:03:13.160
+有没有什么工具可以做到这一点
+that I've got a legit manifest, is there are tool I can use for that?
+
+00:03:13.160 --> 00:03:16.739
+有  有人做了一个 web app manifest 验证器
+MATT GAUNT: Yes, someone has built a web app manifest validator.
+
+00:03:16.739 --> 00:03:18.447
+我觉得 DevTools 也会实现这个功能
+I think DevTools were also going to do it
+
+00:03:18.447 --> 00:03:20.625
+你可以下载 manifest
+so you can like force a download the manifest
+
+00:03:20.625 --> 00:03:21.889
+让 DevTools 去解析它
+and get DevTools to parse it.
+
+00:03:21.889 --> 00:03:27.070
+我觉得我们在 Totally Tooling Tears 中也提到过
+ADDY OSMANI: I believe we mentioned as much in Totally Tooling Tears.
+
+00:03:27.070 --> 00:03:29.401
+但我还没亲自用过
+MATT GAUNT: But I haven't actually used it yet, myself.
+
+00:03:29.401 --> 00:03:31.650
+诚然  如果你不用这类工具
+And, admittedly, if you don't use something like that,
+
+00:03:31.650 --> 00:03:33.900
+就很难知道 manifest 有没有效
+it's kind of hard to figure out whether it's working or not.
+
+00:03:33.900 --> 00:03:35.180
+所以值得去验证一下
+So those are well worth checking out.
+
+00:03:35.180 --> 00:03:37.138
+好吧  所以我们谈到了 web app manifest
+ADDY OSMANI: OK, so we talked about the web app
+
+00:03:37.138 --> 00:03:40.130
+还有用来验证它的 manifest 验证器
+manifest, the manifest validator, for checking out,
+
+00:03:40.130 --> 00:03:41.830
+DevTools 也在着手这个
+DevTools is looking at it.
+
+00:03:41.830 --> 00:03:43.840
+有没有这方面的文档可以参考呢
+Are there docs on this available as well?
+
+00:03:43.840 --> 00:03:46.570
+最佳的参考资料就是我们的博客文章
+MATT GAUNT: The best thing to look at is [INAUDIBLE] blog post.
+
+00:03:46.570 --> 00:03:50.320
+它包括示例 manifests  如何把它加到 HTML 页面
+It covers example manifests, how do I get it to the HTML page,
+
+00:03:50.320 --> 00:03:52.090
+还有如何调试它
+and then how to debug it as well.
+
+00:03:52.090 --> 00:03:53.449
+这应该是最好的方法了
+So that's probably the best bet.
+
+00:03:53.449 --> 00:03:54.240
+真棒
+ADDY OSMANI: Sweet.
+
+00:03:54.240 --> 00:03:55.630
+还有它包括在 web starter kit 里
+MATT GAUNT: And plus it's in web starter kit,
+
+00:03:55.630 --> 00:03:57.900
+以及我们做的很多其他项目中
+and a whole other host of the projects that we do.
+
+00:03:57.900 --> 00:04:01.280
+[MUSIC PLAYING]
+

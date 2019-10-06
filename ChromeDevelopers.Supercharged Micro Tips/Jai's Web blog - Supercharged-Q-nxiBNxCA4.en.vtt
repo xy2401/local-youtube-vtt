@@ -1,0 +1,508 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:19.720
+[THEME MUSIC]
+
+00:00:19.720 --> 00:00:23.830
+Hello, and welcome
+to "Supercharged."
+
+00:00:23.830 --> 00:00:24.330
+I am Paul.
+
+00:00:24.330 --> 00:00:26.580
+This is the show where I
+take the websites that you've
+
+00:00:26.580 --> 00:00:28.210
+submitted, and I
+go through them,
+
+00:00:28.210 --> 00:00:29.720
+and I look for
+performance issues,
+
+00:00:29.720 --> 00:00:31.520
+and I try and figure
+out what they are
+
+00:00:31.520 --> 00:00:33.230
+and how we can do a better job.
+
+00:00:33.230 --> 00:00:36.660
+So today I have Jai's Weblog.
+
+00:00:36.660 --> 00:00:39.850
+He's a UI engineer at
+FlipKart and an ex-Yahooian.
+
+00:00:39.850 --> 00:00:42.100
+And when I saw this
+site, I thought, hmmm,
+
+00:00:42.100 --> 00:00:43.800
+there's an interesting
+thing here.
+
+00:00:43.800 --> 00:00:46.160
+Not the page load,
+which we normally do,
+
+00:00:46.160 --> 00:00:48.400
+but actually this side
+menu caught my attention,
+
+00:00:48.400 --> 00:00:51.110
+because I thought,
+that jenks a little bit
+
+00:00:51.110 --> 00:00:52.740
+when it comes out on a desktop.
+
+00:00:52.740 --> 00:00:56.580
+And I wonder if it's just doing
+something a little bit funny.
+
+00:00:56.580 --> 00:01:00.144
+And what it would look
+like on a mobile device.
+
+00:01:00.144 --> 00:01:01.810
+So what we're going
+to do is we're going
+
+00:01:01.810 --> 00:01:06.990
+to hit Chrome inspect, like so.
+
+00:01:06.990 --> 00:01:11.460
+I have my Nexus device, my
+Nexus 5 here, plugged in.
+
+00:01:11.460 --> 00:01:15.000
+And what I can do is I
+can go and grab this URL,
+
+00:01:15.000 --> 00:01:18.000
+and I could pop it
+in here and say Open,
+
+00:01:18.000 --> 00:01:22.087
+and it opens a new tab on here,
+which is magical and wonderful.
+
+00:01:22.087 --> 00:01:23.170
+And it's going to load up.
+
+00:01:23.170 --> 00:01:27.120
+And I can do Inspect, and it
+brings up Chrome's dev tools
+
+00:01:27.120 --> 00:01:29.760
+as we know and love.
+
+00:01:29.760 --> 00:01:31.170
+So good.
+
+00:01:31.170 --> 00:01:32.820
+And that means
+that I can inspect
+
+00:01:32.820 --> 00:01:35.340
+what's going on on the phone
+in just the same way as I would
+
+00:01:35.340 --> 00:01:37.430
+on desktop, except
+that I also get
+
+00:01:37.430 --> 00:01:39.370
+this additional
+feature, which actually
+
+00:01:39.370 --> 00:01:40.860
+shows me what's on the device.
+
+00:01:40.860 --> 00:01:43.800
+So if I click on this, it
+actually happens on the phone,
+
+00:01:43.800 --> 00:01:47.700
+or I can click on here and
+it happens on the screen.
+
+00:01:47.700 --> 00:01:49.280
+It's magical.
+
+00:01:49.280 --> 00:01:49.870
+I love that.
+
+00:01:49.870 --> 00:01:51.270
+Even looking at
+what's on the phone,
+
+00:01:51.270 --> 00:01:52.936
+I can tell you that
+this animation isn't
+
+00:01:52.936 --> 00:01:54.440
+running at 60 frames a second.
+
+00:01:54.440 --> 00:01:55.960
+Let's give ourselves a baseline.
+
+00:01:55.960 --> 00:01:57.710
+We're in the timeline.
+
+00:01:57.710 --> 00:02:02.040
+So what we'll do is we'll hit
+the Record button like so.
+
+00:02:02.040 --> 00:02:05.700
+And I will hit that button
+over there on the phone.
+
+00:02:05.700 --> 00:02:07.340
+And you see, yeah, goodness.
+
+00:02:07.340 --> 00:02:07.930
+OK.
+
+00:02:07.930 --> 00:02:11.170
+So it's just about 60
+frames a second sometimes
+
+00:02:11.170 --> 00:02:15.390
+and towards the end there,
+it's shooting off the top.
+
+00:02:15.390 --> 00:02:18.420
+This rasterize is, what's that?
+
+00:02:18.420 --> 00:02:19.670
+72 milliseconds.
+
+00:02:19.670 --> 00:02:21.750
+I'm holding Shift
+here as I click, drag,
+
+00:02:21.750 --> 00:02:23.150
+and that gives me a time range.
+
+00:02:23.150 --> 00:02:24.860
+So 72 milliseconds.
+
+00:02:24.860 --> 00:02:27.015
+For an animation like
+this, we want to be 16.
+
+00:02:27.015 --> 00:02:27.640
+So what's that?
+
+00:02:27.640 --> 00:02:29.470
+That's like four or five times.
+
+00:02:29.470 --> 00:02:31.820
+So, I don't know, 10,
+12 frames a second.
+
+00:02:31.820 --> 00:02:32.450
+Roughly.
+
+00:02:32.450 --> 00:02:38.300
+Let's figure out why we're doing
+an animation that's so slow.
+
+00:02:38.300 --> 00:02:39.330
+Right.
+
+00:02:39.330 --> 00:02:42.854
+The way to do this, let's
+switch off the device bit.
+
+00:02:42.854 --> 00:02:44.020
+Actually, let's leave it on.
+
+00:02:44.020 --> 00:02:44.722
+Why not?
+
+00:02:44.722 --> 00:02:45.680
+We're all friends here.
+
+00:02:48.190 --> 00:02:48.690
+OK.
+
+00:02:48.690 --> 00:02:51.120
+So, straight away,
+actually, on the body
+
+00:02:51.120 --> 00:02:53.100
+there is a class
+of nav open which
+
+00:02:53.100 --> 00:02:57.270
+feels like it's something that's
+relevant to our interests.
+
+00:02:57.270 --> 00:02:58.190
+Yes.
+
+00:02:58.190 --> 00:02:58.870
+OK.
+
+00:02:58.870 --> 00:02:59.890
+Margin left.
+
+00:02:59.890 --> 00:03:05.690
+Now I know from other work that
+if you do something like margin
+
+00:03:05.690 --> 00:03:09.110
+left, there we go, margin left.
+
+00:03:09.110 --> 00:03:11.709
+Changing margin left is
+going to trigger layout,
+
+00:03:11.709 --> 00:03:13.250
+it's going to trigger
+paint, and it's
+
+00:03:13.250 --> 00:03:14.690
+going to trigger composite.
+
+00:03:14.690 --> 00:03:16.700
+All three tasks are
+quite expensive for us
+
+00:03:16.700 --> 00:03:18.220
+to do during an animation.
+
+00:03:18.220 --> 00:03:20.450
+What we want to do
+is if we're animating
+
+00:03:20.450 --> 00:03:22.430
+we want to just a two
+composite operations.
+
+00:03:22.430 --> 00:03:26.020
+So we can do that by
+using, say, a transform.
+
+00:03:26.020 --> 00:03:28.020
+And in this case, a
+transform in the whole body
+
+00:03:28.020 --> 00:03:31.320
+would actually work really well
+rather than using margin left.
+
+00:03:31.320 --> 00:03:34.600
+So what I'm going to do is I'm
+going to go back, check out
+
+00:03:34.600 --> 00:03:36.012
+csstriggers.com.
+
+00:03:36.012 --> 00:03:38.840
+I mean, I built it, so
+I'm going to promote it.
+
+00:03:38.840 --> 00:03:40.270
+But it's still
+pretty cool anyway.
+
+00:03:40.270 --> 00:03:41.019
+Let's have a look.
+
+00:03:41.019 --> 00:03:44.117
+We have dev tools open still.
+
+00:03:44.117 --> 00:03:45.950
+So rather than margin
+left, what did we say?
+
+00:03:45.950 --> 00:03:48.000
+We're going to do a transform.
+
+00:03:48.000 --> 00:03:53.270
+And let's translate
+X, 15.75 VMs,
+
+00:03:53.270 --> 00:03:56.050
+we have a transition,
+which we're
+
+00:03:56.050 --> 00:03:59.250
+going to change from
+margin to transform.
+
+00:03:59.250 --> 00:04:00.410
+Transform.
+
+00:04:00.410 --> 00:04:01.500
+There we go.
+
+00:04:01.500 --> 00:04:04.827
+There is a Webkit version
+here, [INAUDIBLE],
+
+00:04:04.827 --> 00:04:06.410
+so you could do the
+[INAUDIBLE] prefix
+
+00:04:06.410 --> 00:04:08.230
+version as well
+if you were doing
+
+00:04:08.230 --> 00:04:09.540
+something similar to this.
+
+00:04:09.540 --> 00:04:14.460
+And let's see now, if we switch
+on show paint rectangles.
+
+00:04:14.460 --> 00:04:17.790
+So with that in
+place, does that work?
+
+00:04:17.790 --> 00:04:18.290
+Oh.
+
+00:04:18.290 --> 00:04:19.123
+It's still painting.
+
+00:04:21.800 --> 00:04:23.220
+What we need to
+do, what we should
+
+00:04:23.220 --> 00:04:25.810
+do is since we're
+doing a transform,
+
+00:04:25.810 --> 00:04:29.320
+we should tell
+Chrome in this case
+
+00:04:29.320 --> 00:04:32.070
+that we will be
+changing the transform
+
+00:04:32.070 --> 00:04:34.169
+of the elements in question.
+
+00:04:34.169 --> 00:04:35.710
+So there's a green
+flash there, which
+
+00:04:35.710 --> 00:04:38.370
+tells us that it's just promoted
+something to its own layer,
+
+00:04:38.370 --> 00:04:39.530
+I guess.
+
+00:04:39.530 --> 00:04:43.720
+So now if we actually leave
+the show paint rectangles on,
+
+00:04:43.720 --> 00:04:47.690
+yeah, there's a green
+flash where the button was.
+
+00:04:47.690 --> 00:04:50.730
+Which makes sense because it's
+probably got a selected state.
+
+00:04:50.730 --> 00:04:54.820
+And now, let's go back to
+timeline to record again.
+
+00:04:59.930 --> 00:05:00.980
+There we go.
+
+00:05:00.980 --> 00:05:05.180
+We've gone from 10, 12 frames
+a second in some places to 60.
+
+00:05:05.180 --> 00:05:08.036
+There's a little
+bit of a jump there,
+
+00:05:08.036 --> 00:05:09.410
+which may or may
+not be something
+
+00:05:09.410 --> 00:05:11.465
+depending on how
+we did, but you can
+
+00:05:11.465 --> 00:05:13.290
+see that we've hit
+60 frames a second.
+
+00:05:13.290 --> 00:05:15.470
+We're in a really good spot.
+
+00:05:15.470 --> 00:05:19.351
+Instead of animating margin
+left, or any of the properties
+
+00:05:19.351 --> 00:05:20.850
+that would trigger
+layout and paint,
+
+00:05:20.850 --> 00:05:23.180
+you just want to stick to things
+like transform and opacity
+
+00:05:23.180 --> 00:05:24.390
+where we can for animations.
+
+00:05:24.390 --> 00:05:26.380
+And certainly in this
+case we definitely can.
+
+00:05:26.380 --> 00:05:30.840
+And by doing that, we've gone
+from 30 frames a second-ish all
+
+00:05:30.840 --> 00:05:32.100
+the way up to 60.
+
+00:05:32.100 --> 00:05:33.760
+So take a look at
+your animations.
+
+00:05:33.760 --> 00:05:35.900
+See if there's
+opportunities to switch out
+
+00:05:35.900 --> 00:05:39.470
+those kind of expensive
+operations for the easier,
+
+00:05:39.470 --> 00:05:43.300
+cheaper ones, and hopefully
+you'll get a good performance
+
+00:05:43.300 --> 00:05:44.700
+base there, too.
+
+00:05:44.700 --> 00:05:47.730
+Don't forget to subscribe
+and I'll catch you next time.
+
+00:05:47.730 --> 00:05:49.550
+Some mornings I get
+out of bed and I'm just
+
+00:05:49.550 --> 00:05:54.395
+Paul, some days I am Paul,
+master of the performance, king
+
+00:05:54.395 --> 00:05:56.529
+of the timeline.
+

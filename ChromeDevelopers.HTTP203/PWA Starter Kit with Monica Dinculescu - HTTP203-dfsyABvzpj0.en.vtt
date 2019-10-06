@@ -1,0 +1,1448 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:01.140
+MONICA DINCULESCU:
+What is my personality?
+
+00:00:01.140 --> 00:00:01.723
+SURMA: A-plus.
+
+00:00:01.723 --> 00:00:02.510
+That's an A-plus.
+
+00:00:02.510 --> 00:00:03.700
+JAKE: Yeah, your
+personality is correct.
+
+00:00:03.700 --> 00:00:04.130
+Like, because that--
+
+00:00:04.130 --> 00:00:05.910
+SURMA: Your
+personality is correct!
+
+00:00:05.910 --> 00:00:06.540
+MONICA DINCULESCU:
+Oh, thank God.
+
+00:00:06.540 --> 00:00:06.564
+JAKE: Well done.
+
+00:00:06.564 --> 00:00:06.588
+It's not defective.
+
+00:00:06.588 --> 00:00:07.968
+You can keep it.
+
+00:00:07.968 --> 00:00:09.967
+It doesn't need to go
+into the store for repair.
+
+00:00:09.967 --> 00:00:13.783
+[MUSIC PLAYING]
+
+00:00:16.180 --> 00:00:17.207
+Who are you and why?
+
+00:00:17.207 --> 00:00:19.540
+MONICA DINCULESCU: Yes, very
+well, thank you for asking.
+
+00:00:19.540 --> 00:00:21.550
+I am Monica, and
+because I can be.
+
+00:00:21.550 --> 00:00:23.475
+Somebody has to be,
+so it can only be me.
+
+00:00:23.475 --> 00:00:24.600
+JAKE: That's a good answer.
+
+00:00:24.600 --> 00:00:25.050
+MONICA DINCULESCU: Thank you.
+
+00:00:25.050 --> 00:00:26.700
+SURMA: That went deep.
+
+00:00:26.700 --> 00:00:28.420
+What-- what do you talk about?
+
+00:00:28.420 --> 00:00:30.730
+What is your plan for I/O?
+
+00:00:30.730 --> 00:00:33.117
+What sounds are you going
+to make on stage here?
+
+00:00:33.117 --> 00:00:34.450
+MONICA DINCULESCU: Mouth sounds.
+
+00:00:34.450 --> 00:00:35.080
+SURMA: Mouth sounds?
+
+00:00:35.080 --> 00:00:35.380
+MONICA DINCULESCU: Yes.
+
+00:00:35.380 --> 00:00:37.940
+JAKE: That's good, because
+I tried a different way.
+
+00:00:37.940 --> 00:00:39.280
+[LAUGHTER]
+
+00:00:39.280 --> 00:00:40.685
+It did not go well.
+
+00:00:40.685 --> 00:00:42.393
+SURMA: Not a popular
+session, I've heard.
+
+00:00:42.393 --> 00:00:43.601
+MONICA DINCULESCU: You would.
+
+00:00:43.601 --> 00:00:47.000
+I am making mouth sounds
+about the PWA starter kit.
+
+00:00:47.000 --> 00:00:50.242
+So my team has been building
+this awesome bunch of templates
+
+00:00:50.242 --> 00:00:50.950
+that you can use.
+
+00:00:50.950 --> 00:00:53.670
+And you can pick them up
+and you can build a PWA.
+
+00:00:53.670 --> 00:00:55.420
+And we try to do most
+of the heavy lifting
+
+00:00:55.420 --> 00:00:57.430
+for you, so that you don't have.
+
+00:00:57.430 --> 00:00:58.930
+JAKE: Is this a
+kind of similar tool
+
+00:00:58.930 --> 00:01:02.020
+to like Yeoman or Preact CLI?
+
+00:01:02.020 --> 00:01:03.880
+Is that similar to
+this sort of thing?
+
+00:01:03.880 --> 00:01:04.150
+SURMA: That was buzzword-y.
+
+00:01:04.150 --> 00:01:04.635
+Jesus.
+
+00:01:04.635 --> 00:01:05.230
+MONICA DINCULESCU: Yeah.
+
+00:01:05.230 --> 00:01:06.813
+So we looked at a
+whole bunch of CLIs,
+
+00:01:06.813 --> 00:01:09.190
+and we saw what they were
+doing, and we tried to--
+
+00:01:09.190 --> 00:01:10.482
+SURMA: And you deemed it wrong.
+
+00:01:10.482 --> 00:01:12.065
+MONICA DINCULESCU:
+Well, a lot of them
+
+00:01:12.065 --> 00:01:14.020
+deal with starting
+up with a framework,
+
+00:01:14.020 --> 00:01:16.630
+whereas starting out with a
+PWA is a little bit different.
+
+00:01:16.630 --> 00:01:19.000
+Because what you're trying
+to do is make like a fairly
+
+00:01:19.000 --> 00:01:22.261
+framework-agnostic,
+work-with-everything--
+
+00:01:22.261 --> 00:01:22.760
+SURMA: Yeah.
+
+00:01:22.760 --> 00:01:23.801
+MONICA DINCULESCU: --PWA.
+
+00:01:23.801 --> 00:01:25.920
+So ours tries to use
+things off the shelf,
+
+00:01:25.920 --> 00:01:27.560
+so we have Redux for
+state management.
+
+00:01:27.560 --> 00:01:29.500
+We didn't invent our own.
+
+00:01:29.500 --> 00:01:33.322
+We're using lit-elemental
+HTML for the rendering.
+
+00:01:33.322 --> 00:01:34.780
+JAKE: That sounds
+like a framework.
+
+00:01:34.780 --> 00:01:35.480
+SURMA: Yeah.
+
+00:01:35.480 --> 00:01:36.197
+A little bit.
+
+00:01:36.197 --> 00:01:37.530
+MONICA DINCULESCU: It's like 2k.
+
+00:01:37.530 --> 00:01:39.460
+You find me a
+framework that's 2k.
+
+00:01:39.460 --> 00:01:40.367
+It's not a framework.
+
+00:01:40.367 --> 00:01:42.200
+SURMA: So I've heard--
+that's a Redux thing.
+
+00:01:42.200 --> 00:01:42.919
+Redux-- Redux?
+
+00:01:42.919 --> 00:01:43.960
+MONICA DINCULESCU: Redux.
+
+00:01:43.960 --> 00:01:44.140
+SURMA: Redux.
+
+00:01:44.140 --> 00:01:44.920
+MONICA DINCULESCU: Redux?
+
+00:01:44.920 --> 00:01:46.350
+SURMA: I've heard
+that word a lot.
+
+00:01:46.350 --> 00:01:47.350
+MONICA DINCULESCU: Yeah.
+
+00:01:47.350 --> 00:01:49.320
+SURMA: I still don't
+know what it is.
+
+00:01:49.320 --> 00:01:51.670
+It's like Flux Redux
+and React Redux.
+
+00:01:51.670 --> 00:01:55.540
+It's always in there, but
+I don't know what it is.
+
+00:01:55.540 --> 00:01:58.660
+MONICA DINCULESCU: It's
+a tiny state container.
+
+00:01:58.660 --> 00:02:01.522
+It's like a very
+glorified key-value store.
+
+00:02:01.522 --> 00:02:03.730
+And it has a whole bunch of
+patterns, what you can do
+
+00:02:03.730 --> 00:02:05.080
+and can't do with your data.
+
+00:02:05.080 --> 00:02:07.600
+The whole point being there
+is one source of truth,
+
+00:02:07.600 --> 00:02:09.360
+only the store has
+access to your data.
+
+00:02:09.360 --> 00:02:11.860
+SURMA: So that's the thing where
+you connect your elements--
+
+00:02:11.860 --> 00:02:12.220
+MONICA DINCULESCU: Yeah.
+
+00:02:12.220 --> 00:02:13.480
+SURMA: --and they get updates
+when something changes.
+
+00:02:13.480 --> 00:02:14.480
+MONICA DINCULESCU: Yeah.
+
+00:02:14.480 --> 00:02:16.750
+An element can care about
+data getting updated,
+
+00:02:16.750 --> 00:02:18.820
+or wants to
+communicate that data
+
+00:02:18.820 --> 00:02:21.590
+needs to be updated, but can
+never just poke at the data,
+
+00:02:21.590 --> 00:02:22.465
+because that's gross.
+
+00:02:22.465 --> 00:02:24.945
+JAKE: But I thought that
+was a react thing, right?
+
+00:02:24.945 --> 00:02:25.861
+MONICA DINCULESCU: No.
+
+00:02:25.861 --> 00:02:31.520
+Redux is a framework-agnostic,
+view-independent thingamajig.
+
+00:02:31.520 --> 00:02:33.120
+SURMA: You've practiced this.
+
+00:02:33.120 --> 00:02:34.120
+MONICA DINCULESCU: I do.
+
+00:02:34.120 --> 00:02:34.870
+I have a slide.
+
+00:02:34.870 --> 00:02:37.131
+I have it in the
+palace of my mind.
+
+00:02:37.131 --> 00:02:37.630
+JAKE: OK.
+
+00:02:37.630 --> 00:02:37.790
+So yeah.
+
+00:02:37.790 --> 00:02:39.130
+So it can work with
+any framework--
+
+00:02:39.130 --> 00:02:39.730
+MONICA DINCULESCU:
+Yeah, which is
+
+00:02:39.730 --> 00:02:41.120
+why it's really popular,
+because you can just
+
+00:02:41.120 --> 00:02:41.920
+jam it into anything.
+
+00:02:41.920 --> 00:02:44.410
+And a whole bunch of frameworks
+have like little adapters,
+
+00:02:44.410 --> 00:02:46.618
+so that it makes it easier
+inside of their framework.
+
+00:02:46.618 --> 00:02:48.929
+But you can just use vanilla
+Redux with no problems.
+
+00:02:48.929 --> 00:02:51.220
+JAKE: You sort of-- you threw
+down, like, lit-element--
+
+00:02:51.220 --> 00:02:52.261
+MONICA DINCULESCU: I did.
+
+00:02:52.261 --> 00:02:53.428
+JAKE: --like that's a thing.
+
+00:02:53.428 --> 00:02:55.469
+MONICA DINCULESCU: You
+haven't heard of it, Jake?
+
+00:02:55.469 --> 00:02:56.460
+God.
+
+00:02:56.460 --> 00:02:57.940
+It's already,
+like, two days old.
+
+00:02:57.940 --> 00:02:58.470
+JAKE: I'm so far behind.
+
+00:02:58.470 --> 00:02:59.970
+MONICA DINCULESCU:
+Yes, so, lit-html
+
+00:02:59.970 --> 00:03:02.540
+is a tiny little library
+that Justin wrote last year.
+
+00:03:02.540 --> 00:03:06.114
+And it basically lets
+you render templates--
+
+00:03:06.114 --> 00:03:07.480
+HTML templates-- in JavaScript.
+
+00:03:07.480 --> 00:03:09.010
+And it's super fast
+because it's super optimal
+
+00:03:09.010 --> 00:03:10.720
+about how it re-renders
+them and stuff like that.
+
+00:03:10.720 --> 00:03:11.428
+And lit-element--
+
+00:03:11.428 --> 00:03:14.250
+SURMA: It's like they did the
+little value bindings thingy,
+
+00:03:14.250 --> 00:03:14.920
+right?
+
+00:03:14.920 --> 00:03:15.310
+MONICA DINCULESCU: Yeah.
+
+00:03:15.310 --> 00:03:16.810
+And lit-element
+does the same thing,
+
+00:03:16.810 --> 00:03:19.450
+where we took lit-html and took
+all of that rendering logic
+
+00:03:19.450 --> 00:03:22.660
+and put it in a custom
+element base class.
+
+00:03:22.660 --> 00:03:25.870
+So it has things that
+you're familiar with.
+
+00:03:25.870 --> 00:03:28.360
+It has a render method, so
+that that gets called when
+
+00:03:28.360 --> 00:03:29.780
+your properties get updated.
+
+00:03:29.780 --> 00:03:31.630
+And whatever you put
+in your render method
+
+00:03:31.630 --> 00:03:33.421
+is basically magic
+because it's JavaScript.
+
+00:03:33.421 --> 00:03:35.470
+You can go to town
+if you want to.
+
+00:03:35.470 --> 00:03:37.680
+And other tiny little
+helpers, like lifecycle
+
+00:03:37.680 --> 00:03:38.780
+helpers, that you might
+need in a custom element.
+
+00:03:38.780 --> 00:03:40.780
+SURMA: I mean, that seems like--
+what I know from [INAUDIBLE]
+
+00:03:40.780 --> 00:03:43.660
+is like it's almost individual,
+tiny, little helpers that
+
+00:03:43.660 --> 00:03:46.060
+will use everything-- buy
+everything all at once.
+
+00:03:46.060 --> 00:03:47.780
+It seems like something that
+your team is doing well.
+
+00:03:47.780 --> 00:03:48.250
+MONICA DINCULESCU:
+And now we can get rid
+
+00:03:48.250 --> 00:03:50.680
+of a lot of what
+Polymer 1 used to have,
+
+00:03:50.680 --> 00:03:54.434
+because four browsers
+almost have custom elements.
+
+00:03:54.434 --> 00:03:56.350
+JAKE: So what is the
+status, in terms of that?
+
+00:03:56.350 --> 00:03:59.226
+Because, I'd just like to say,
+my project, Service Worker,
+
+00:03:59.226 --> 00:04:00.600
+has just shipped
+in all browsers.
+
+00:04:00.600 --> 00:04:02.500
+So where are we
+with your project?
+
+00:04:02.500 --> 00:04:03.970
+MONICA DINCULESCU: Is that
+all you've been doing?
+
+00:04:03.970 --> 00:04:04.520
+JAKE: Oh, yeah.
+
+00:04:04.520 --> 00:04:05.020
+OK.
+
+00:04:05.020 --> 00:04:05.676
+[LAUGHTER]
+
+00:04:05.676 --> 00:04:06.550
+I-11 doesn't have it.
+
+00:04:06.550 --> 00:04:08.091
+MONICA DINCULESCU:
+So we have Chrome.
+
+00:04:08.091 --> 00:04:08.840
+We have Safari.
+
+00:04:08.840 --> 00:04:09.340
+JAKE: Good.
+
+00:04:09.340 --> 00:04:10.600
+MONICA DINCULESCU: We
+have custom elements
+
+00:04:10.600 --> 00:04:11.770
+and Firefox behind a flag.
+
+00:04:11.770 --> 00:04:13.870
+And I've heard Shadow
+DOM is very close.
+
+00:04:13.870 --> 00:04:14.390
+JAKE: Oh.
+
+00:04:14.390 --> 00:04:14.890
+OK.
+
+00:04:14.890 --> 00:04:15.575
+SURMA: Rumors!
+
+00:04:15.575 --> 00:04:17.200
+MONICA DINCULESCU:
+And that is the end.
+
+00:04:17.200 --> 00:04:17.980
+SURMA: Good ones, though.
+
+00:04:17.980 --> 00:04:20.170
+MONICA DINCULESCU: I mean--
+and probably Opera and--
+
+00:04:20.170 --> 00:04:20.839
+JAKE: Oh, because-- yeah.
+
+00:04:20.839 --> 00:04:21.120
+SURMA: Opera--
+
+00:04:21.120 --> 00:04:21.806
+JAKE: All the Chrome.
+
+00:04:21.806 --> 00:04:22.150
+MONICA DINCULESCU:
+Yeah, all the Chrome.
+
+00:04:22.150 --> 00:04:23.136
+SURMA: Yeah.
+
+00:04:23.136 --> 00:04:24.760
+MONICA DINCULESCU:
+We do not have Edge.
+
+00:04:24.760 --> 00:04:27.370
+We have interest from Edge, but
+not implementation from Edge.
+
+00:04:27.370 --> 00:04:29.119
+JAKE: What's the state
+of polyfills, then,
+
+00:04:29.119 --> 00:04:30.890
+if people wanted to
+use your stuff today?
+
+00:04:30.890 --> 00:04:32.140
+MONICA DINCULESCU: They exist.
+
+00:04:32.140 --> 00:04:32.330
+JAKE: Good.
+
+00:04:32.330 --> 00:04:33.695
+SURMA: They've existed
+for a long time.
+
+00:04:33.695 --> 00:04:34.140
+A month.
+
+00:04:34.140 --> 00:04:34.240
+MONICA DINCULESCU: Yeah.
+
+00:04:34.240 --> 00:04:36.520
+So polyfills have
+existed for a long time.
+
+00:04:36.520 --> 00:04:39.020
+We've updated the polyfills
+to work with modules,
+
+00:04:39.020 --> 00:04:41.290
+now that HTML imports are
+kind of on the dying end.
+
+00:04:41.290 --> 00:04:43.704
+So we've switched to using
+modules for everything.
+
+00:04:43.704 --> 00:04:45.370
+And the polyfills
+also work with modules
+
+00:04:45.370 --> 00:04:48.160
+and don't try to import HTML
+imports and stuff like that.
+
+00:04:48.160 --> 00:04:49.870
+JAKE: So with the
+HTML imports, that
+
+00:04:49.870 --> 00:04:54.430
+would have your styles
+in there, and then
+
+00:04:54.430 --> 00:04:57.200
+the definitions for
+your custom elements.
+
+00:04:57.200 --> 00:04:59.022
+How does that look
+in a module world?
+
+00:04:59.022 --> 00:05:01.230
+MONICA DINCULESCU: So, in
+a module world, all of that
+
+00:05:01.230 --> 00:05:03.360
+looks together, but
+in a giant, you know,
+
+00:05:03.360 --> 00:05:05.410
+template JavaScript literal.
+
+00:05:05.410 --> 00:05:07.662
+This is what a template
+literal looks like.
+
+00:05:07.662 --> 00:05:09.120
+SURMA: I mean,
+yeah, with lit HTML,
+
+00:05:09.120 --> 00:05:10.536
+it makes sense
+because you already
+
+00:05:10.536 --> 00:05:14.887
+have your markup in an HTML
+template tag string literal
+
+00:05:14.887 --> 00:05:16.720
+anyway, so it kind of
+just adds some styles.
+
+00:05:16.720 --> 00:05:17.145
+MONICA DINCULESCU: Yeah.
+
+00:05:17.145 --> 00:05:18.160
+SURMA: Put the markup in there.
+
+00:05:18.160 --> 00:05:19.993
+MONICA DINCULESCU: So
+we've updated ShadyDOM
+
+00:05:19.993 --> 00:05:22.090
+to work with that so you
+can have a module that
+
+00:05:22.090 --> 00:05:25.150
+exports a style node
+with all its goodness,
+
+00:05:25.150 --> 00:05:27.711
+and import it as a squiggle
+inside of your render function.
+
+00:05:27.711 --> 00:05:29.710
+SURMA: I think that's
+actually a proper keyword.
+
+00:05:29.710 --> 00:05:30.590
+It's a squiggle.
+
+00:05:30.590 --> 00:05:32.800
+MONICA DINCULESCU: What
+do you call the squiggles?
+
+00:05:32.800 --> 00:05:33.380
+JAKE: Code braces?
+
+00:05:33.380 --> 00:05:34.290
+MONICA DINCULESCU: Yeah.
+
+00:05:34.290 --> 00:05:34.710
+Squiggles.
+
+00:05:34.710 --> 00:05:36.043
+SURMA: Imported with a squiggle.
+
+00:05:36.043 --> 00:05:36.799
+I like that.
+
+00:05:36.799 --> 00:05:38.090
+JAKE: Imported with a squiggle.
+
+00:05:38.090 --> 00:05:39.490
+That's your new
+tag-line for polymer.
+
+00:05:39.490 --> 00:05:40.236
+MONICA DINCULESCU: Thank you.
+
+00:05:40.236 --> 00:05:41.540
+JAKE: I think that's good.
+
+00:05:41.540 --> 00:05:45.190
+So we've been doing some work
+with web components recently,
+
+00:05:45.190 --> 00:05:51.130
+and my feeling is the polyfill
+for straight-up custom elements
+
+00:05:51.130 --> 00:05:55.480
+is super light and small and
+great, and everything's happy.
+
+00:05:55.480 --> 00:05:57.529
+But my feeling with the
+Shadow DOM polyfills--
+
+00:05:57.529 --> 00:05:59.070
+MONICA DINCULESCU:
+Yeah, it turns out
+
+00:05:59.070 --> 00:06:02.800
+reinventing the DOM in
+JavaScript is really hard.
+
+00:06:02.800 --> 00:06:03.975
+Who saw that coming?
+
+00:06:03.975 --> 00:06:04.770
+SURMA: It's not an easy problem.
+
+00:06:04.770 --> 00:06:06.110
+MONICA DINCULESCU: It's
+not an easy problem.
+
+00:06:06.110 --> 00:06:07.970
+And the problem is it's
+not really the DOM.
+
+00:06:07.970 --> 00:06:09.160
+It's the CSS parts--
+
+00:06:09.160 --> 00:06:10.150
+SURMA: It's a
+scoping thing, right?
+
+00:06:10.150 --> 00:06:12.650
+MONICA DINCULESCU: --and telling
+CSS that it needs to update
+
+00:06:12.650 --> 00:06:15.040
+and runs some styles
+when things update.
+
+00:06:15.040 --> 00:06:16.490
+So that's what makes it hard.
+
+00:06:16.490 --> 00:06:19.194
+So if you're using
+all of them together,
+
+00:06:19.194 --> 00:06:21.610
+it's very easy because you get
+a callback when all of them
+
+00:06:21.610 --> 00:06:23.410
+have rendered.
+
+00:06:23.410 --> 00:06:25.600
+But mostly, you have
+to take a template
+
+00:06:25.600 --> 00:06:28.630
+and be like, hey, Shady DOM
+and CSS, here's a template.
+
+00:06:28.630 --> 00:06:29.950
+Do your thing so that--
+
+00:06:29.950 --> 00:06:32.500
+you imbibe it with magic
+so that it works later.
+
+00:06:32.500 --> 00:06:35.110
+JAKE: If we're
+building stuff now
+
+00:06:35.110 --> 00:06:36.880
+with the hope of it
+sort of being there
+
+00:06:36.880 --> 00:06:39.046
+in the future, where all
+browser support [INAUDIBLE]
+
+00:06:39.046 --> 00:06:40.810
+web components
+things, should people
+
+00:06:40.810 --> 00:06:42.976
+be sort of avoiding
+Shadow DOM for now?
+
+00:06:42.976 --> 00:06:44.350
+MONICA DINCULESCU:
+No, I like it.
+
+00:06:44.350 --> 00:06:44.530
+JAKE: No?
+
+00:06:44.530 --> 00:06:45.970
+We should go all
+in on Shadow DOM?
+
+00:06:45.970 --> 00:06:46.560
+MONICA DINCULESCU:
+Shadow DOM is--
+
+00:06:46.560 --> 00:06:46.900
+JAKE: Stuff's not
+going to break?
+
+00:06:46.900 --> 00:06:49.460
+MONICA DINCULESCU: --very
+good if you need Shadow DOM.
+
+00:06:49.460 --> 00:06:50.918
+Shadow DOM gives
+you encapsulation.
+
+00:06:50.918 --> 00:06:53.010
+SURMA: Now that's the
+worst tag-line I've seen.
+
+00:06:53.010 --> 00:06:54.760
+MONICA DINCULESCU:
+[DISGRUNTLED NOISE] No,
+
+00:06:54.760 --> 00:06:56.560
+"Shadow DOM hides
+you in a corner"
+
+00:06:56.560 --> 00:06:58.500
+is probably the worst tag-line.
+
+00:06:58.500 --> 00:07:01.990
+JAKE: I like, "Shadow DOM,
+it's there if you need it."
+
+00:07:01.990 --> 00:07:04.270
+That's a very
+wholesome tag-line.
+
+00:07:04.270 --> 00:07:06.520
+MONICA DINCULESCU: If you're
+like a reusable component
+
+00:07:06.520 --> 00:07:08.380
+library-- you're
+Vaadin or Ionic--
+
+00:07:08.380 --> 00:07:10.990
+and you're making a button-- or
+you're a design system instead
+
+00:07:10.990 --> 00:07:11.892
+of a big company--
+
+00:07:11.892 --> 00:07:12.850
+you're making a button.
+
+00:07:12.850 --> 00:07:15.332
+That button has to always be
+that kind of shade of blue.
+
+00:07:15.332 --> 00:07:16.540
+You want Shadow DOM for that.
+
+00:07:16.540 --> 00:07:18.580
+You don't want anybody poking
+and prodding it, being like,
+
+00:07:18.580 --> 00:07:20.320
+your shade of blue is
+slightly incorrect.
+
+00:07:20.320 --> 00:07:22.060
+I'll just add my
+fourteenth shade of blue
+
+00:07:22.060 --> 00:07:23.230
+to this application, right?
+
+00:07:23.230 --> 00:07:24.438
+You want Shadow DOM for that.
+
+00:07:24.438 --> 00:07:28.270
+But if you're building the
+top view of an application,
+
+00:07:28.270 --> 00:07:31.622
+maybe you want something like a
+jQuery plugin to work in there.
+
+00:07:31.622 --> 00:07:33.580
+Maybe that's not going
+to work with Shadow DOM.
+
+00:07:33.580 --> 00:07:36.280
+Maybe that's a thing that you
+don't want encapsulation for.
+
+00:07:36.280 --> 00:07:38.270
+JAKE: So I tried to
+build a web component
+
+00:07:38.270 --> 00:07:39.680
+of doing syntax highlighting.
+
+00:07:39.680 --> 00:07:40.680
+MONICA DINCULESCU: Yeah.
+
+00:07:40.680 --> 00:07:42.730
+JAKE: So just an element,
+you put your code in.
+
+00:07:42.730 --> 00:07:43.875
+It syntax highlights it.
+
+00:07:43.875 --> 00:07:45.790
+And it felt like Shadow
+DOM was a good choice
+
+00:07:45.790 --> 00:07:48.290
+there because it's going to
+hide all of those extra elements
+
+00:07:48.290 --> 00:07:50.500
+that I needed to do that
+syntax highlighting.
+
+00:07:50.500 --> 00:07:53.402
+But I was worried about the
+amount of extra polyfill
+
+00:07:53.402 --> 00:07:54.610
+I'm going to need to do that.
+
+00:07:54.610 --> 00:07:57.079
+But also, how do I get
+user styling in there
+
+00:07:57.079 --> 00:07:59.120
+if they wanted to change
+the syntax highlighting?
+
+00:07:59.120 --> 00:08:01.286
+MONICA DINCULESCU: Oh man, do
+I have exciting news for you.
+
+00:08:01.286 --> 00:08:02.260
+JAKE: Ready-- no, no.
+
+00:08:02.260 --> 00:08:03.250
+I'm not ready.
+
+00:08:03.250 --> 00:08:03.610
+MONICA DINCULESCU:
+Are you ready?
+
+00:08:03.610 --> 00:08:04.210
+JAKE: Yes.
+
+00:08:04.210 --> 00:08:04.890
+Yeah, I'm ready.
+
+00:08:04.890 --> 00:08:05.390
+OK.
+
+00:08:05.390 --> 00:08:06.220
+MONICA DINCULESCU:
+There's a new spec.
+
+00:08:06.220 --> 00:08:07.210
+I'm very excited about it.
+
+00:08:07.210 --> 00:08:08.410
+It's called Part and Theme.
+
+00:08:08.410 --> 00:08:09.916
+And it basically works how--
+
+00:08:09.916 --> 00:08:10.790
+JAKE: Part and Theme.
+
+00:08:10.790 --> 00:08:11.660
+MONICA DINCULESCU:
+Part and Theme.
+
+00:08:11.660 --> 00:08:12.951
+They come together as a couple.
+
+00:08:12.951 --> 00:08:15.700
+Well, actually, they
+come as cousins.
+
+00:08:15.700 --> 00:08:16.640
+JAKE: As a couple?
+
+00:08:16.640 --> 00:08:20.157
+Oh, gosh, this is sounding
+really bad already.
+
+00:08:20.157 --> 00:08:20.990
+So they're a couple.
+
+00:08:20.990 --> 00:08:21.990
+They're cousins.
+
+00:08:21.990 --> 00:08:23.034
+MONICA DINCULESCU: No.
+
+00:08:23.034 --> 00:08:24.700
+JAKE: And this is
+something we all want?
+
+00:08:24.700 --> 00:08:25.784
+MONICA DINCULESCU: No, no.
+
+00:08:25.784 --> 00:08:27.408
+SURMA: I think we
+shouldn't shame them.
+
+00:08:27.408 --> 00:08:28.940
+MONICA DINCULESCU:
+You're a monster.
+
+00:08:28.940 --> 00:08:29.320
+MONICA DINCULESCU: No.
+
+00:08:29.320 --> 00:08:31.970
+So Part is basically-- when
+you're building a custom
+
+00:08:31.970 --> 00:08:34.299
+element, it lets you
+specify little divs,
+
+00:08:34.299 --> 00:08:36.549
+or little elements, that a
+user might want to style.
+
+00:08:36.549 --> 00:08:38.570
+And you put a part on them,
+and you give them a name.
+
+00:08:38.570 --> 00:08:39.960
+Say, if you are
+an input element,
+
+00:08:39.960 --> 00:08:42.370
+you would call them
+a webkit placeholder,
+
+00:08:42.370 --> 00:08:45.299
+or a webkit spinner up,
+and webkit spinner down--
+
+00:08:45.299 --> 00:08:46.090
+JAKE AND SURMA: Oh.
+
+00:08:46.090 --> 00:08:47.410
+MONICA DINCULESCU: --those
+are basically the parts
+
+00:08:47.410 --> 00:08:49.460
+that input exposes for styling.
+
+00:08:49.460 --> 00:08:51.586
+So then you could do this
+too, as a custom element.
+
+00:08:51.586 --> 00:08:54.001
+And you'd be like, these are
+the bases that you can style.
+
+00:08:54.001 --> 00:08:55.120
+And then you can use them.
+
+00:08:55.120 --> 00:08:56.920
+You can use pseudo
+selectors and hovers
+
+00:08:56.920 --> 00:08:59.290
+and shit like that on
+them, and they work.
+
+00:08:59.290 --> 00:09:01.240
+SURMA: So the fun fact
+is that we invited you
+
+00:09:01.240 --> 00:09:03.700
+to this CSS working group
+because of these two
+
+00:09:03.700 --> 00:09:04.390
+new things--
+
+00:09:04.390 --> 00:09:04.900
+MONICA DINCULESCU: Yes.
+
+00:09:04.900 --> 00:09:05.830
+SURMA: --and then we
+didn't talk about them.
+
+00:09:05.830 --> 00:09:06.990
+MONICA DINCULESCU: Correct.
+
+00:09:06.990 --> 00:09:09.198
+But then I learned how
+layouting works, so it's fine.
+
+00:09:09.198 --> 00:09:11.450
+SURMA: You're also a member
+of the Emoji Committee,
+
+00:09:11.450 --> 00:09:13.950
+and that's something where we
+actually know what's going on.
+
+00:09:13.950 --> 00:09:14.710
+MONICA DINCULESCU:
+Sub-committee, thank you.
+
+00:09:14.710 --> 00:09:15.580
+Emoji Sub-committee.
+
+00:09:15.580 --> 00:09:17.950
+SURMA: Sorry.
+
+00:09:17.950 --> 00:09:21.736
+So how is there no shark emoji,
+but there is a dinosaur emoji?
+
+00:09:21.736 --> 00:09:23.860
+MONICA DINCULESCU: Do you
+know how much people have
+
+00:09:23.860 --> 00:09:25.176
+whined for the dinosaur emoji?
+
+00:09:25.176 --> 00:09:27.550
+Do you know how many people
+asked for the dinosaur emoji?
+
+00:09:27.550 --> 00:09:28.341
+SURMA: No, I don't.
+
+00:09:28.341 --> 00:09:30.121
+But it's not a real animal.
+
+00:09:30.121 --> 00:09:30.870
+I mean, it's real.
+
+00:09:30.870 --> 00:09:32.260
+It doesn't exist anymore.
+
+00:09:32.260 --> 00:09:33.160
+While a shark--
+
+00:09:33.160 --> 00:09:34.310
+MONICA DINCULESCU:
+There's floppy disks,
+
+00:09:34.310 --> 00:09:35.630
+and they don't exist anymore.
+
+00:09:35.630 --> 00:09:36.380
+SURMA: That's art.
+
+00:09:36.380 --> 00:09:36.940
+JAKE: Oh.
+
+00:09:36.940 --> 00:09:39.460
+MONICA DINCULESCU:
+So emoji get accepted
+
+00:09:39.460 --> 00:09:42.387
+based on how many people--
+
+00:09:42.387 --> 00:09:44.470
+it's not necessarily how
+many people request them,
+
+00:09:44.470 --> 00:09:46.750
+but how popular that concept is.
+
+00:09:46.750 --> 00:09:48.760
+And if you search for
+dinosaur on Google,
+
+00:09:48.760 --> 00:09:51.256
+you'll find a bunch of results
+because a lot of people
+
+00:09:51.256 --> 00:09:52.130
+talk about dinosaurs.
+
+00:09:52.130 --> 00:09:53.380
+And when you're trying
+to text somebody,
+
+00:09:53.380 --> 00:09:55.540
+you would like a
+representation of a dinosaur.
+
+00:09:55.540 --> 00:09:57.670
+I agree that sharks
+should also be there.
+
+00:09:57.670 --> 00:09:58.900
+Maybe nobody proposed it.
+
+00:09:58.900 --> 00:10:00.983
+JAKE: Is that what we're
+saying, is that dinosaurs
+
+00:10:00.983 --> 00:10:02.449
+are more popular than sharks?
+
+00:10:02.449 --> 00:10:04.490
+SURMA: I can get behind
+that statement, honestly.
+
+00:10:04.490 --> 00:10:05.650
+MONICA DINCULESCU: This feels
+a lot like "Shark Week,"
+
+00:10:05.650 --> 00:10:07.830
+and I am uncomfortable
+with that statement,
+
+00:10:07.830 --> 00:10:09.340
+on behalf of all
+sharks out there.
+
+00:10:09.340 --> 00:10:10.630
+Maybe nobody proposed a shark.
+
+00:10:10.630 --> 00:10:12.245
+We don't propose emoji.
+
+00:10:12.245 --> 00:10:13.120
+People propose emoji.
+
+00:10:13.120 --> 00:10:14.620
+We just review them.
+
+00:10:14.620 --> 00:10:17.999
+JAKE: So can we get
+a HTTP203 emoji?
+
+00:10:17.999 --> 00:10:18.790
+What's the process?
+
+00:10:18.790 --> 00:10:19.665
+How do we start that?
+
+00:10:19.665 --> 00:10:23.430
+And what characters would
+you have to combine?
+
+00:10:23.430 --> 00:10:25.900
+SURMA: So first, we need to
+get a Surma and Jake emoji--
+
+00:10:25.900 --> 00:10:27.150
+MONICA DINCULESCU: Oh, my god.
+
+00:10:27.150 --> 00:10:28.620
+You guys, there is this emoji.
+
+00:10:28.620 --> 00:10:29.475
+This emoji exists.
+
+00:10:29.475 --> 00:10:30.746
+It's like the two bunny boys.
+
+00:10:30.746 --> 00:10:32.704
+There were the two bunny
+girls, and now there's
+
+00:10:32.704 --> 00:10:33.496
+the two bunny boys.
+
+00:10:33.496 --> 00:10:34.870
+JAKE: Well, I
+thought, for me, it
+
+00:10:34.870 --> 00:10:37.020
+would have to be the
+boy emoji and then
+
+00:10:37.020 --> 00:10:39.549
+the white color, and then
+the white color, and then
+
+00:10:39.549 --> 00:10:41.340
+the white color, and
+the white color again.
+
+00:10:41.340 --> 00:10:42.375
+And then it would be
+like, that's Jake.
+
+00:10:42.375 --> 00:10:43.920
+MONICA DINCULESCU: Shockingly,
+your shade of white
+
+00:10:43.920 --> 00:10:46.086
+is not on the Fitzpatrick
+scale quite yet.
+
+00:10:46.086 --> 00:10:48.460
+JAKE: We need to invent a new
+color space, I think, for--
+
+00:10:48.460 --> 00:10:49.675
+it's whatever's after HDR.
+
+00:10:49.675 --> 00:10:51.706
+MONICA DINCULESCU: The
+reflective color space.
+
+00:10:51.706 --> 00:10:53.580
+JAKE: We've had to do
+all sorts of gymnastics
+
+00:10:53.580 --> 00:10:56.880
+with covers to stop me just
+kind of exploding the cameras.
+
+00:10:56.880 --> 00:10:57.930
+MONICA DINCULESCU: Yeah,
+they paid no attention
+
+00:10:57.930 --> 00:10:59.930
+to Surma and I, and they
+set up lighting for you
+
+00:10:59.930 --> 00:11:00.660
+for 45 minutes.
+
+00:11:00.660 --> 00:11:01.110
+JAKE: Yeah, I know.
+
+00:11:01.110 --> 00:11:02.776
+SURMA: Otherwise,
+he's just a reflector.
+
+00:11:02.776 --> 00:11:05.660
+I become lighter because the
+sun reflects off his face.
+
+00:11:05.660 --> 00:11:08.118
+MONICA DINCULESCU: I burned
+some light bulbs in my kitchen,
+
+00:11:08.118 --> 00:11:09.810
+if you want to just
+come hang out there.
+
+00:11:09.810 --> 00:11:11.915
+JAKE: We're going to link to
+your talk in the show notes.
+
+00:11:11.915 --> 00:11:12.290
+MONICA DINCULESCU: Yes.
+
+00:11:12.290 --> 00:11:13.710
+JAKE: Which you haven't
+given yet, but--
+
+00:11:13.710 --> 00:11:14.841
+MONICA DINCULESCU:
+It's going to be great.
+
+00:11:14.841 --> 00:11:16.270
+SURMA: How will
+your audience have
+
+00:11:16.270 --> 00:11:18.560
+reacted by the point
+you've given your talk?
+
+00:11:18.560 --> 00:11:21.060
+MONICA DINCULESCU: It's going
+to be amazing, best talk ever.
+
+00:11:21.060 --> 00:11:23.721
+No talking comes second to it.
+

@@ -1,0 +1,63 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.270
+[MUSIC PLAYING]
+
+00:00:02.270 --> 00:00:03.680
+Here's an old
+school tip for you.
+
+00:00:03.680 --> 00:00:05.930
+If you can animate something
+based on user input,
+
+00:00:05.930 --> 00:00:08.138
+you probably don't want to
+have it update immediately
+
+00:00:08.138 --> 00:00:10.900
+to track the input event because
+it can often feel very jittery.
+
+00:00:10.900 --> 00:00:13.740
+Instead, what you should do is
+use the oldest easing equation
+
+00:00:13.740 --> 00:00:15.580
+in the book, which
+looks like this.
+
+00:00:15.580 --> 00:00:18.554
+Value plus equals target minus
+value, all over strength.
+
+00:00:18.554 --> 00:00:20.720
+Here, we're changing the
+value based on how close it
+
+00:00:20.720 --> 00:00:21.874
+is to the target.
+
+00:00:21.874 --> 00:00:23.290
+The closer it is,
+the less it gets
+
+00:00:23.290 --> 00:00:25.184
+moved, making it look way nicer.
+
+00:00:25.184 --> 00:00:26.600
+So there you have
+it, a little tip
+
+00:00:26.600 --> 00:00:28.150
+to make your
+input-based animations
+
+00:00:28.150 --> 00:00:29.170
+a teeny bit smoother.
+
+00:00:29.170 --> 00:00:32.220
+[MUSIC PLAYING]
+

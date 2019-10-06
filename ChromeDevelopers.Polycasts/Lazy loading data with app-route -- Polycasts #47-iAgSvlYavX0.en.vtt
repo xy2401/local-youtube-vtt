@@ -1,0 +1,1740 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.446
+[MUSIC PLAYING]
+
+00:00:04.446 --> 00:00:05.920
+Hey there, Polycasters.
+
+00:00:05.920 --> 00:00:06.460
+Rob here.
+
+00:00:06.460 --> 00:00:07.820
+Welcome back to the show.
+
+00:00:07.820 --> 00:00:10.380
+So it's been a little
+while since we last talked.
+
+00:00:10.380 --> 00:00:12.210
+In the previous
+episode, we started off
+
+00:00:12.210 --> 00:00:15.250
+a series using carbon-route
+to build an application.
+
+00:00:15.250 --> 00:00:17.840
+And actually, since
+we did that episode,
+
+00:00:17.840 --> 00:00:20.960
+the Polymer team has renamed
+that element to app-route.
+
+00:00:20.960 --> 00:00:23.605
+So we're going to be picking
+up where we left off last time.
+
+00:00:23.605 --> 00:00:24.980
+This time, though,
+we'll be using
+
+00:00:24.980 --> 00:00:26.955
+app-route to continue
+working on our blog.
+
+00:00:26.955 --> 00:00:29.010
+And what we're going
+to do is make sure
+
+00:00:29.010 --> 00:00:31.450
+that we can lazy load
+content onto this blog,
+
+00:00:31.450 --> 00:00:34.670
+and that we can also manage
+the flash of unstyled content
+
+00:00:34.670 --> 00:00:37.360
+that we see when we switch
+between pages on a slower
+
+00:00:37.360 --> 00:00:38.420
+connection.
+
+00:00:38.420 --> 00:00:40.500
+So to grok what I'm
+talking about here,
+
+00:00:40.500 --> 00:00:42.080
+let's switch over to the laptop.
+
+00:00:42.080 --> 00:00:44.830
+And you'll see that I've
+got the blog as we left it
+
+00:00:44.830 --> 00:00:46.650
+last time showing here.
+
+00:00:46.650 --> 00:00:50.170
+And I'm going to just go
+over to the Network panel,
+
+00:00:50.170 --> 00:00:52.500
+and I will click
+this tab right here.
+
+00:00:52.500 --> 00:00:55.090
+And this will let me actually
+throttle my connection down.
+
+00:00:55.090 --> 00:00:58.220
+Let me zoom in on this a little
+bit so it's easier to see.
+
+00:00:58.220 --> 00:01:00.540
+So I'll go to the Network tab.
+
+00:01:00.540 --> 00:01:03.350
+I will go right over here
+where it says throttling.
+
+00:01:03.350 --> 00:01:07.040
+And we can set our connection
+to something like regular 3G.
+
+00:01:07.040 --> 00:01:10.000
+So this is what someone on a
+typical cell phone connection
+
+00:01:10.000 --> 00:01:12.570
+is going to experience when
+they're trying to use our site.
+
+00:01:12.570 --> 00:01:15.410
+So maybe I go and I click
+on the Film section.
+
+00:01:15.410 --> 00:01:18.790
+And maybe I go and click
+on one of these posts.
+
+00:01:18.790 --> 00:01:20.640
+And I go back to
+the Art section.
+
+00:01:20.640 --> 00:01:23.230
+And you see how there
+was a moment where
+
+00:01:23.230 --> 00:01:25.730
+we saw a flash of
+the old Film section
+
+00:01:25.730 --> 00:01:27.310
+when we switched
+to the Art section?
+
+00:01:27.310 --> 00:01:29.226
+That's the thing that I
+want to address today.
+
+00:01:29.226 --> 00:01:31.450
+I want to deal with that
+flash of unstyled content,
+
+00:01:31.450 --> 00:01:33.784
+make sure that when our users
+are using our application,
+
+00:01:33.784 --> 00:01:35.200
+the only thing
+that they're seeing
+
+00:01:35.200 --> 00:01:37.540
+is the relevant page and
+something that's really fresh
+
+00:01:37.540 --> 00:01:38.840
+and up to date.
+
+00:01:38.840 --> 00:01:42.400
+So to do that, we're going to
+switch over to our code editor.
+
+00:01:42.400 --> 00:01:45.210
+And this is where we left
+the project last time.
+
+00:01:45.210 --> 00:01:49.740
+And I've already gone ahead
+and renamed and downloaded
+
+00:01:49.740 --> 00:01:51.987
+our app route, renamed it
+throughout our project.
+
+00:01:51.987 --> 00:01:53.570
+So we don't have to
+do anything there.
+
+00:01:53.570 --> 00:01:55.850
+Any place you see carbon
+route in the old project,
+
+00:01:55.850 --> 00:01:57.460
+we can just update
+that to app route.
+
+00:01:57.460 --> 00:02:00.270
+The API and everything is still
+essentially the same, just
+
+00:02:00.270 --> 00:02:01.550
+a small name change.
+
+00:02:01.550 --> 00:02:03.929
+So thankfully, we don't have
+to do a lot of work there.
+
+00:02:03.929 --> 00:02:05.470
+Now, one thing that
+we do need to do,
+
+00:02:05.470 --> 00:02:07.290
+which I noticed in
+the previous episode,
+
+00:02:07.290 --> 00:02:12.010
+is I made a little mistake
+in this blog app element.
+
+00:02:12.010 --> 00:02:14.530
+So if you see down here when
+we set up our Iron Selector
+
+00:02:14.530 --> 00:02:18.860
+menu, in the previous episode,
+I was passing category data
+
+00:02:18.860 --> 00:02:21.450
+as this two-way
+binding, like this.
+
+00:02:21.450 --> 00:02:26.820
+And while this is cool and
+this approach did actually
+
+00:02:26.820 --> 00:02:29.590
+work, what was happening
+was it was creating
+
+00:02:29.590 --> 00:02:32.660
+this weird situation where when
+you clicked on this binding,
+
+00:02:32.660 --> 00:02:35.040
+because it was a two-way
+binding, what happened
+
+00:02:35.040 --> 00:02:38.450
+was first it would look down
+at this data page element,
+
+00:02:38.450 --> 00:02:39.970
+and it would say,
+oh, you're trying
+
+00:02:39.970 --> 00:02:41.820
+to go to the Film section.
+
+00:02:41.820 --> 00:02:45.760
+So I'm just going to update
+carbon location to /film.
+
+00:02:45.760 --> 00:02:47.430
+Then it would see
+that, well, actually,
+
+00:02:47.430 --> 00:02:50.615
+we clicked on an anchor, so
+we want to go to /film/list.
+
+00:02:50.615 --> 00:02:51.740
+And it would say, OK, cool.
+
+00:02:51.740 --> 00:02:54.480
+I'll update it to /film/list.
+
+00:02:54.480 --> 00:02:57.480
+Now, what would happen then is
+we would change the URL twice
+
+00:02:57.480 --> 00:02:59.180
+really, really fast,
+so fast that no one
+
+00:02:59.180 --> 00:03:01.305
+would notice if they were
+just looking at the site.
+
+00:03:01.305 --> 00:03:04.492
+But if you Hit the Back button,
+it would go back to /film.
+
+00:03:04.492 --> 00:03:05.950
+We don't actually
+have a Film page,
+
+00:03:05.950 --> 00:03:07.384
+so everything would just break.
+
+00:03:07.384 --> 00:03:08.800
+So the fix there
+is pretty simple.
+
+00:03:08.800 --> 00:03:10.450
+What we want to do
+is just change this
+
+00:03:10.450 --> 00:03:12.250
+to a one-way binding.
+
+00:03:12.250 --> 00:03:14.950
+So basically, the menu
+always gets its information
+
+00:03:14.950 --> 00:03:17.450
+passed down to it
+from carbon location.
+
+00:03:17.450 --> 00:03:19.210
+And if you click on
+Anchor or something,
+
+00:03:19.210 --> 00:03:20.409
+it will dispatch that event.
+
+00:03:20.409 --> 00:03:22.700
+That will go back up through
+carbon location, back down
+
+00:03:22.700 --> 00:03:23.366
+to our elements.
+
+00:03:23.366 --> 00:03:27.000
+So it's this nice, one-way
+loop, and that solves that bug.
+
+00:03:27.000 --> 00:03:28.530
+Now, the next
+thing we want to do
+
+00:03:28.530 --> 00:03:31.280
+is we want to tackle that funky,
+weird Flash [INAUDIBLE] styled
+
+00:03:31.280 --> 00:03:32.200
+content.
+
+00:03:32.200 --> 00:03:34.150
+And there's two things
+that are going on here.
+
+00:03:34.150 --> 00:03:36.890
+The first is I'm loading
+new JSON for the page,
+
+00:03:36.890 --> 00:03:38.490
+so our text is going to swap.
+
+00:03:38.490 --> 00:03:41.072
+And the second is we're
+loading new paths for images.
+
+00:03:41.072 --> 00:03:43.280
+Ad those actually have to
+go out and fetch the images
+
+00:03:43.280 --> 00:03:44.777
+and redownload them.
+
+00:03:44.777 --> 00:03:47.110
+So I want to tackle each of
+these problems individually.
+
+00:03:47.110 --> 00:03:49.350
+I'll start with what
+to do so we don't
+
+00:03:49.350 --> 00:03:51.990
+display stale or outdated text.
+
+00:03:51.990 --> 00:03:54.030
+And my thinking
+here is I'm probably
+
+00:03:54.030 --> 00:03:56.020
+going to display an
+overlay over the screen
+
+00:03:56.020 --> 00:03:57.260
+with a little spinner.
+
+00:03:57.260 --> 00:04:00.870
+So that way, the user
+doesn't see a weird swaparoo
+
+00:04:00.870 --> 00:04:01.620
+with our headings.
+
+00:04:01.620 --> 00:04:03.150
+They just see a spinner page.
+
+00:04:03.150 --> 00:04:05.250
+And then when that
+content is finally ready,
+
+00:04:05.250 --> 00:04:09.030
+it just reveals the new heading
+and the new paragraph content.
+
+00:04:09.030 --> 00:04:12.200
+So to do that, I'll go over
+to this Blog page's element.
+
+00:04:12.200 --> 00:04:17.490
+And I'm going to go
+ahead and drop in a div.
+
+00:04:17.490 --> 00:04:19.589
+I'm going to call this overlay.
+
+00:04:19.589 --> 00:04:24.250
+And inside of here, I will
+drop in a paper spinner.
+
+00:04:24.250 --> 00:04:27.760
+And I'll just leave it
+with this active attribute.
+
+00:04:27.760 --> 00:04:29.920
+And I need to go up to the
+top and make sure that I
+
+00:04:29.920 --> 00:04:31.960
+have imported paper spinner.
+
+00:04:31.960 --> 00:04:33.700
+So far, so good there.
+
+00:04:33.700 --> 00:04:37.510
+And then I'm going
+to go to my overlay,
+
+00:04:37.510 --> 00:04:39.460
+and I want to give
+it some CSS style
+
+00:04:39.460 --> 00:04:42.020
+so it's actually full screen.
+
+00:04:42.020 --> 00:04:46.196
+So I'm going to drop
+in a little bit of CSS.
+
+00:04:46.196 --> 00:04:48.460
+I've already got the CSS
+saved, because I'm totally
+
+00:04:48.460 --> 00:04:49.270
+cheating here.
+
+00:04:49.270 --> 00:04:51.353
+And I'm going to boost
+this up a little bit so you
+
+00:04:51.353 --> 00:04:52.870
+can read it a bit easier.
+
+00:04:52.870 --> 00:04:56.820
+So here, I am positioning
+the overlay so it's absolute.
+
+00:04:56.820 --> 00:04:58.740
+Top, left, right,
+and bottom are all 0,
+
+00:04:58.740 --> 00:05:00.114
+so it's actually
+going to stretch
+
+00:05:00.114 --> 00:05:01.870
+to fill the entire screen.
+
+00:05:01.870 --> 00:05:04.820
+I'm setting it to display
+flex and setting flex
+
+00:05:04.820 --> 00:05:07.117
+direction to column
+and align items
+
+00:05:07.117 --> 00:05:08.700
+and justify content
+to center, center.
+
+00:05:08.700 --> 00:05:10.880
+And that basically means
+that paper spinner trial
+
+00:05:10.880 --> 00:05:12.370
+that I added there
+is going to be
+
+00:05:12.370 --> 00:05:14.400
+vertically and
+horizontally centered right
+
+00:05:14.400 --> 00:05:15.889
+in the middle of the screen.
+
+00:05:15.889 --> 00:05:18.180
+And finally, I'll set the
+background to an opaque white
+
+00:05:18.180 --> 00:05:21.280
+so it hides whatever page
+content is behind it.
+
+00:05:21.280 --> 00:05:25.070
+So we can actually just
+verify that this is working.
+
+00:05:25.070 --> 00:05:28.840
+I can go back over to the
+blog that I was working on.
+
+00:05:28.840 --> 00:05:30.940
+I can probably go ahead
+and close the dev tools
+
+00:05:30.940 --> 00:05:32.750
+and refresh the page.
+
+00:05:32.750 --> 00:05:35.150
+So now we're just seeing that
+overlay and that spinner.
+
+00:05:35.150 --> 00:05:36.880
+It's blocking all
+of the page content,
+
+00:05:36.880 --> 00:05:39.570
+so I at least know
+that that is working.
+
+00:05:39.570 --> 00:05:43.380
+But I only want this to display
+when we have a page that
+
+00:05:43.380 --> 00:05:45.490
+is in a loading state.
+
+00:05:45.490 --> 00:05:48.372
+So what I'll do next is I'll
+go into my list page element.
+
+00:05:48.372 --> 00:05:49.830
+Remember, list page
+is the one that
+
+00:05:49.830 --> 00:05:52.352
+lists all of our
+individual blog posts.
+
+00:05:52.352 --> 00:05:55.844
+And I'm going to give
+it a loading property.
+
+00:05:55.844 --> 00:05:57.260
+So down here in
+its properties, we
+
+00:05:57.260 --> 00:06:01.804
+have active for when the page
+gets swapped to by our route.
+
+00:06:01.804 --> 00:06:03.470
+But it could still
+be in a loading state
+
+00:06:03.470 --> 00:06:05.890
+then, so we'll add
+a loading property.
+
+00:06:05.890 --> 00:06:08.290
+This is also going
+to be a Boolean.
+
+00:06:08.290 --> 00:06:10.690
+The value is going
+to default to False.
+
+00:06:10.690 --> 00:06:13.150
+And I'm going to set
+it to notify true,
+
+00:06:13.150 --> 00:06:15.790
+because I'm going to need to
+have the outside world listen
+
+00:06:15.790 --> 00:06:17.500
+to this as well.
+
+00:06:17.500 --> 00:06:20.950
+So next, I'll go up to
+my Iron Ajax element.
+
+00:06:20.950 --> 00:06:23.910
+Now, this is the one that's
+loading all of our blog post
+
+00:06:23.910 --> 00:06:25.680
+data for this page.
+
+00:06:25.680 --> 00:06:28.490
+And it actually has
+already inside of it--
+
+00:06:28.490 --> 00:06:30.910
+Iron Ajax has a
+loading property.
+
+00:06:30.910 --> 00:06:33.410
+So here, I can just
+bind my loading property
+
+00:06:33.410 --> 00:06:34.860
+to its loading property.
+
+00:06:34.860 --> 00:06:35.860
+So that's pretty nice.
+
+00:06:35.860 --> 00:06:39.020
+So now this page can
+tell the outside world
+
+00:06:39.020 --> 00:06:40.060
+when it's loading.
+
+00:06:40.060 --> 00:06:41.670
+And really, what
+it's doing is it's
+
+00:06:41.670 --> 00:06:44.880
+telling the outside world
+when Iron Ajax is loading.
+
+00:06:44.880 --> 00:06:47.930
+So back in Blog Pages, which
+is the common parent of all
+
+00:06:47.930 --> 00:06:53.760
+these guys, I will add a
+property or an attribute here.
+
+00:06:53.760 --> 00:06:57.012
+So I'll listen for this
+dude's loading property.
+
+00:06:57.012 --> 00:06:58.720
+And I'm going to call
+my attribute-- just
+
+00:06:58.720 --> 00:07:00.428
+so I can differentiate
+them a little bit,
+
+00:07:00.428 --> 00:07:02.330
+I'll call it Is Loading.
+
+00:07:02.330 --> 00:07:04.226
+So I can do that here.
+
+00:07:04.226 --> 00:07:06.100
+Now, down in my overlay,
+what I'm going to do
+
+00:07:06.100 --> 00:07:08.110
+is I'm going to bind
+the state of the overlay
+
+00:07:08.110 --> 00:07:09.870
+to that loading property.
+
+00:07:09.870 --> 00:07:13.370
+So we'll say, OK, we'll use
+the HTML hidden attribute.
+
+00:07:13.370 --> 00:07:15.890
+I use the dollar sign
+binding so I can bind
+
+00:07:15.890 --> 00:07:17.700
+right to the attribute itself.
+
+00:07:17.700 --> 00:07:20.290
+And we'll say that--
+this is one of those fun
+
+00:07:20.290 --> 00:07:24.350
+double negative things-- so
+we'll say when is loading
+
+00:07:24.350 --> 00:07:30.720
+is false, hidden should be true.
+
+00:07:30.720 --> 00:07:34.440
+So when is loading is
+false, hide the overlay.
+
+00:07:34.440 --> 00:07:36.191
+When we are not loading,
+hide the overlay.
+
+00:07:36.191 --> 00:07:37.856
+This is one of those
+things where you've
+
+00:07:37.856 --> 00:07:39.450
+go think about it for a second.
+
+00:07:39.450 --> 00:07:41.570
+And in the active
+state of our spinner,
+
+00:07:41.570 --> 00:07:43.460
+we're actually going
+to do the reverse.
+
+00:07:43.460 --> 00:07:45.376
+We're going to say, OK,
+well, if it's loading,
+
+00:07:45.376 --> 00:07:48.060
+then we do want the
+spinner to be active.
+
+00:07:48.060 --> 00:07:50.860
+So that means now as we switch
+back and forth between the list
+
+00:07:50.860 --> 00:07:53.320
+page, we should see that
+overlay for just a second.
+
+00:07:53.320 --> 00:07:55.640
+And when all that content
+comes in from Iron Ajax,
+
+00:07:55.640 --> 00:07:57.100
+it should hide itself.
+
+00:07:57.100 --> 00:07:58.680
+I'm going to go
+ahead and actually do
+
+00:07:58.680 --> 00:08:01.589
+the exact same thing
+for my Post page.
+
+00:08:01.589 --> 00:08:03.380
+So I'll give it a
+loading property as well.
+
+00:08:07.230 --> 00:08:10.800
+Boolean defaults to false.
+
+00:08:10.800 --> 00:08:12.675
+And we want to
+notify true, so we
+
+00:08:12.675 --> 00:08:17.130
+can bind to And we will
+also bind it to the loading
+
+00:08:17.130 --> 00:08:19.230
+property of Iron Ajax.
+
+00:08:19.230 --> 00:08:20.900
+And now we can
+duplicate that work
+
+00:08:20.900 --> 00:08:23.970
+that we did for those
+pages over in Post page.
+
+00:08:23.970 --> 00:08:26.350
+At this point,
+you may be saying,
+
+00:08:26.350 --> 00:08:29.010
+these pages, the
+signature of them
+
+00:08:29.010 --> 00:08:31.334
+is looking very, very
+similar in our markup.
+
+00:08:31.334 --> 00:08:33.250
+So it might be a good
+time to consider perhaps
+
+00:08:33.250 --> 00:08:36.760
+rolling some of those common
+behaviors into behavior,
+
+00:08:36.760 --> 00:08:38.960
+I should say-- so
+actually sharing
+
+00:08:38.960 --> 00:08:40.750
+that functionality
+between the elements
+
+00:08:40.750 --> 00:08:42.780
+instead of duplicating
+the code in both places.
+
+00:08:42.780 --> 00:08:44.155
+So that's something
+that we might
+
+00:08:44.155 --> 00:08:46.620
+do in a future episode
+to tidy things up a bit.
+
+00:08:46.620 --> 00:08:49.020
+But for new, let's just
+verify that this works.
+
+00:08:49.020 --> 00:08:52.320
+So I'm going to switch
+back over to my browser.
+
+00:08:52.320 --> 00:08:55.340
+And we'll refresh the page,
+zoom out a little bit.
+
+00:08:55.340 --> 00:08:57.190
+So we're pretty zoomed in there.
+
+00:08:57.190 --> 00:09:01.800
+And what I can do is because
+this content is going
+
+00:09:01.800 --> 00:09:04.046
+to load in really fast
+because I have it local,
+
+00:09:04.046 --> 00:09:05.420
+I'll go back to
+my Network panel,
+
+00:09:05.420 --> 00:09:08.060
+and I'll throttle the
+connection way down.
+
+00:09:08.060 --> 00:09:10.630
+So I'm going to set it to GPRS.
+
+00:09:10.630 --> 00:09:14.620
+And now when I click on Film,
+I should see that loading state
+
+00:09:14.620 --> 00:09:15.710
+for just a second.
+
+00:09:15.710 --> 00:09:18.310
+Now, you notice that my image
+still did that weird swaparoo
+
+00:09:18.310 --> 00:09:22.050
+thing, but we're not seeing any
+stale text when we go and click
+
+00:09:22.050 --> 00:09:23.542
+on these items.
+
+00:09:23.542 --> 00:09:25.000
+One thing that does
+happen, though,
+
+00:09:25.000 --> 00:09:26.958
+when we switch between
+these is we can actually
+
+00:09:26.958 --> 00:09:29.874
+still scroll the page while
+that overlay is displayed.
+
+00:09:29.874 --> 00:09:31.040
+And that's kind of a bummer.
+
+00:09:31.040 --> 00:09:32.560
+We definitely don't want that.
+
+00:09:32.560 --> 00:09:36.090
+So I'm going to add one more
+little trick to Blog Pages.
+
+00:09:36.090 --> 00:09:39.090
+I'm going to add an
+observer for is loading.
+
+00:09:39.090 --> 00:09:41.680
+So my observers array.
+
+00:09:41.680 --> 00:09:42.930
+Add some more space down here.
+
+00:09:42.930 --> 00:09:45.060
+So I'll create an
+observer for-- we'll
+
+00:09:45.060 --> 00:09:50.850
+say we're going to lock scroll
+whenever is loading changes.
+
+00:09:50.850 --> 00:09:52.500
+And lock scroll will
+just be a method
+
+00:09:52.500 --> 00:09:55.260
+that I define where we
+say, all right, what
+
+00:09:55.260 --> 00:09:57.450
+is the state of is loading?
+
+00:09:57.450 --> 00:10:00.952
+And if is loading
+is true, then--
+
+00:10:00.952 --> 00:10:02.410
+we're actually
+going to cheat here.
+
+00:10:02.410 --> 00:10:03.784
+We'll reach outside
+of ourselves.
+
+00:10:03.784 --> 00:10:06.640
+We'll go to
+document.body and set
+
+00:10:06.640 --> 00:10:11.090
+the overflow style to hidden
+if is loading is true.
+
+00:10:11.090 --> 00:10:12.744
+And what that's going
+to do is chop off
+
+00:10:12.744 --> 00:10:15.410
+the page, and that way, the user
+won't be able to scroll and see
+
+00:10:15.410 --> 00:10:17.090
+that content underneath there.
+
+00:10:17.090 --> 00:10:19.140
+Otherwise, if is
+loading is false,
+
+00:10:19.140 --> 00:10:24.710
+then we'll set document body
+style overflow to visible,
+
+00:10:24.710 --> 00:10:26.051
+I think, is the correct value.
+
+00:10:26.051 --> 00:10:27.735
+I'll double check.
+
+00:10:27.735 --> 00:10:30.571
+And we'll swap back over
+and bust out our dev tools
+
+00:10:30.571 --> 00:10:32.070
+so we can throttle
+this thing again.
+
+00:10:32.070 --> 00:10:33.270
+So refresh the page.
+
+00:10:33.270 --> 00:10:34.451
+So far, so good.
+
+00:10:34.451 --> 00:10:35.700
+We'll go to our Network panel.
+
+00:10:35.700 --> 00:10:38.510
+We'll set Throttling to GPRS.
+
+00:10:38.510 --> 00:10:40.330
+And we'll click on
+the Film section.
+
+00:10:40.330 --> 00:10:43.050
+You notice my scroll
+bar even goes away.
+
+00:10:43.050 --> 00:10:46.320
+So I can tell I can't scroll
+or anything until that content
+
+00:10:46.320 --> 00:10:48.550
+actually has loaded in.
+
+00:10:48.550 --> 00:10:49.110
+OK, cool.
+
+00:10:49.110 --> 00:10:51.280
+So we handled the
+issue of the text
+
+00:10:51.280 --> 00:10:53.360
+being stale and that
+loading in, but now
+
+00:10:53.360 --> 00:10:55.190
+we still have these images.
+
+00:10:55.190 --> 00:10:56.860
+And this is a really
+tricky problem,
+
+00:10:56.860 --> 00:10:59.470
+because when our data
+loads, all it's looting
+
+00:10:59.470 --> 00:11:01.580
+is a path to a new image,
+but we still have to go
+
+00:11:01.580 --> 00:11:04.480
+make that HTTP request
+to fetch that content.
+
+00:11:04.480 --> 00:11:07.540
+And that could take a
+super long time to load.
+
+00:11:07.540 --> 00:11:10.470
+But I don't want my
+user to be waiting
+
+00:11:10.470 --> 00:11:13.260
+when they could be reading
+the text of the article
+
+00:11:13.260 --> 00:11:15.280
+while they still wait
+on that image to load.
+
+00:11:15.280 --> 00:11:17.640
+So we could do a
+little tradeoff there,
+
+00:11:17.640 --> 00:11:19.910
+where we give them the
+text of the article,
+
+00:11:19.910 --> 00:11:23.330
+but maybe we serve
+a downgraded image.
+
+00:11:23.330 --> 00:11:25.110
+So something loads
+faster, and then
+
+00:11:25.110 --> 00:11:29.560
+we wait and upgrade that image
+as the nicer version loads in.
+
+00:11:29.560 --> 00:11:30.440
+So let me do that.
+
+00:11:30.440 --> 00:11:33.670
+And this is a cool trick that I
+discovered recently by looking
+
+00:11:33.670 --> 00:11:36.174
+at a project the Polymer
+team did called Shop,
+
+00:11:36.174 --> 00:11:38.340
+which you can find over at
+shop.Polymer-project.org.
+
+00:11:42.975 --> 00:11:44.350
+And if you go to
+the site, you'll
+
+00:11:44.350 --> 00:11:47.510
+notice that when we
+first boot up the page,
+
+00:11:47.510 --> 00:11:50.210
+it does this fade in
+effect on this image.
+
+00:11:50.210 --> 00:11:54.019
+You see a low res version,
+and then it just fades in.
+
+00:11:54.019 --> 00:11:55.810
+And what the Polymer
+team is actually doing
+
+00:11:55.810 --> 00:11:57.680
+is they're taking
+the original image,
+
+00:11:57.680 --> 00:12:00.080
+and then they're
+downsizing it to 1%,
+
+00:12:00.080 --> 00:12:02.220
+so you get something
+that's like 200 bytes,
+
+00:12:02.220 --> 00:12:04.920
+and then in CSS,
+scaling that back up
+
+00:12:04.920 --> 00:12:06.860
+to the full size of the image.
+
+00:12:06.860 --> 00:12:10.080
+And then we're loading
+the higher res version,
+
+00:12:10.080 --> 00:12:12.100
+and we just cross fade
+them when the higher res
+
+00:12:12.100 --> 00:12:13.310
+version loads in.
+
+00:12:13.310 --> 00:12:17.090
+So this gives a perceived
+performance improvement.
+
+00:12:17.090 --> 00:12:19.090
+The user can access our
+content a lot faster,
+
+00:12:19.090 --> 00:12:22.640
+but they're not waiting
+around on a super big image.
+
+00:12:22.640 --> 00:12:25.520
+So we can do that with our site.
+
+00:12:25.520 --> 00:12:28.800
+What I'm going to do
+is over in Finder,
+
+00:12:28.800 --> 00:12:31.600
+I will find the blog that
+I've been working on here.
+
+00:12:31.600 --> 00:12:35.260
+Blog, Images.
+
+00:12:35.260 --> 00:12:37.887
+And I've already gone ahead
+and downsampled these images,
+
+00:12:37.887 --> 00:12:39.970
+but I'll walk you through
+the process of doing it.
+
+00:12:39.970 --> 00:12:42.340
+So we'll take this photo
+of a lion that we've got.
+
+00:12:42.340 --> 00:12:44.810
+So we've got Photoshop here.
+
+00:12:44.810 --> 00:12:46.980
+We'll drop in this
+image of a lion.
+
+00:12:46.980 --> 00:12:48.860
+Now, this is a really
+high res image.
+
+00:12:48.860 --> 00:12:51.680
+It's like 900 by
+512, so pretty beefy.
+
+00:12:51.680 --> 00:12:55.820
+And I'm going to go to the
+Image Panel Property, whatever
+
+00:12:55.820 --> 00:12:59.370
+this thing is called, and
+set image size to percent,
+
+00:12:59.370 --> 00:13:01.140
+and we'll set it to 1%.
+
+00:13:01.140 --> 00:13:03.810
+So that brings it
+down to 9 by 5 pixels.
+
+00:13:03.810 --> 00:13:07.120
+And if we super zoom in, you
+can see this thing is just
+
+00:13:07.120 --> 00:13:08.890
+a bunch of random squares now.
+
+00:13:08.890 --> 00:13:12.950
+But it roughly approximates
+our final image.
+
+00:13:12.950 --> 00:13:16.150
+And then we can
+export that for web.
+
+00:13:16.150 --> 00:13:18.850
+And I usually use a
+medium quality setting.
+
+00:13:18.850 --> 00:13:20.600
+And I'm going to give
+it a different name.
+
+00:13:20.600 --> 00:13:24.860
+So I'll call it Picture
+1 Low Res or something.
+
+00:13:24.860 --> 00:13:26.360
+Now, the next thing
+I'm going to do
+
+00:13:26.360 --> 00:13:29.360
+is take that low res
+image and base 64
+
+00:13:29.360 --> 00:13:31.900
+encode it into a string.
+
+00:13:31.900 --> 00:13:34.820
+So that way, I can
+load that string along
+
+00:13:34.820 --> 00:13:36.696
+with all of the text
+content from my article.
+
+00:13:36.696 --> 00:13:38.278
+Now, there's a number
+of ways that you
+
+00:13:38.278 --> 00:13:39.800
+can base 64 encode an image.
+
+00:13:39.800 --> 00:13:41.300
+You can do it from
+the command line,
+
+00:13:41.300 --> 00:13:43.900
+I believe, with the base
+64 for command in Unix.
+
+00:13:43.900 --> 00:13:46.100
+Or there's a bunch
+of websites out there
+
+00:13:46.100 --> 00:13:47.882
+where you just look
+up base 64 image,
+
+00:13:47.882 --> 00:13:49.840
+and you can upload an
+image, and it'll give you
+
+00:13:49.840 --> 00:13:51.050
+back a big string of text.
+
+00:13:51.050 --> 00:13:53.530
+And that's one technique
+that I used in this case,
+
+00:13:53.530 --> 00:13:55.410
+because I'm lazy.
+
+00:13:55.410 --> 00:13:57.040
+So I've already gone
+ahead and base 64
+
+00:13:57.040 --> 00:13:58.081
+encoded all these images.
+
+00:13:58.081 --> 00:14:00.500
+I have all the strings for them.
+
+00:14:00.500 --> 00:14:02.410
+And I'll go over to
+the data that I'm
+
+00:14:02.410 --> 00:14:06.480
+loading in my application,
+open up the list page.
+
+00:14:06.480 --> 00:14:09.210
+And along with the title
+and the slug and the image
+
+00:14:09.210 --> 00:14:10.760
+and the alt tag an
+everything, I've
+
+00:14:10.760 --> 00:14:13.700
+got this image place
+holder value now.
+
+00:14:13.700 --> 00:14:16.690
+And inside of there, I just
+have this humongous base
+
+00:14:16.690 --> 00:14:17.640
+64-encoded string.
+
+00:14:17.640 --> 00:14:18.890
+Well, it's not that humongous.
+
+00:14:18.890 --> 00:14:21.150
+It's like 200, 300 bytes
+or something, which
+
+00:14:21.150 --> 00:14:22.649
+is really actually quite tiny.
+
+00:14:22.649 --> 00:14:24.440
+And this is what I'm
+going to actually load
+
+00:14:24.440 --> 00:14:25.480
+into my application.
+
+00:14:25.480 --> 00:14:30.700
+Now, I can't just use a regular
+image tag to load this thing.
+
+00:14:30.700 --> 00:14:32.850
+I need to use a special element.
+
+00:14:32.850 --> 00:14:35.550
+And the Polymer team has
+just such an element.
+
+00:14:35.550 --> 00:14:38.520
+So if I go to the
+Polymer catalog--
+
+00:14:38.520 --> 00:14:42.557
+Polymer Iron Image is the name.
+
+00:14:42.557 --> 00:14:44.890
+So we can check this out on
+the Polymer element catalog.
+
+00:14:44.890 --> 00:14:47.010
+This thing is awesome.
+
+00:14:47.010 --> 00:14:50.130
+And what it will let us
+do is load a placeholder
+
+00:14:50.130 --> 00:14:52.950
+while it waits on the higher
+res version to come down.
+
+00:14:52.950 --> 00:14:55.372
+So I'm going to just grab--
+there's a snippet of code
+
+00:14:55.372 --> 00:14:56.080
+here that I want.
+
+00:14:56.080 --> 00:14:57.090
+Here we go.
+
+00:14:57.090 --> 00:15:00.030
+I'm going to grab
+this snippet of code,
+
+00:15:00.030 --> 00:15:02.600
+and I can go back
+to my list page
+
+00:15:02.600 --> 00:15:06.010
+and find this image tag
+that I was using previously.
+
+00:15:06.010 --> 00:15:08.130
+I'm going to replace
+it with an iron image.
+
+00:15:08.130 --> 00:15:09.000
+So let's see.
+
+00:15:09.000 --> 00:15:14.430
+So we'll set width to
+900 pixels, height 512.
+
+00:15:14.430 --> 00:15:16.600
+You could also do
+this in CSS if you
+
+00:15:16.600 --> 00:15:18.624
+wanted to have media query
+breakpoints to change
+
+00:15:18.624 --> 00:15:19.540
+the size of the image.
+
+00:15:19.540 --> 00:15:21.200
+I'm working quick
+and dirty here,
+
+00:15:21.200 --> 00:15:22.900
+so I'll just do it in line.
+
+00:15:22.900 --> 00:15:26.830
+For the placeholder, if you
+go back and look at our data,
+
+00:15:26.830 --> 00:15:29.540
+we called that value
+image placeholder.
+
+00:15:29.540 --> 00:15:30.390
+So I'll grab that.
+
+00:15:30.390 --> 00:15:31.681
+We can use that in our binding.
+
+00:15:33.901 --> 00:15:37.780
+So image per item, because we're
+in a dom-repeat, item image
+
+00:15:37.780 --> 00:15:38.970
+placeholder.
+
+00:15:38.970 --> 00:15:41.390
+Size and cover--
+yeah, that looks good.
+
+00:15:41.390 --> 00:15:42.960
+I totally want to do that.
+
+00:15:42.960 --> 00:15:44.340
+Preload.
+
+00:15:44.340 --> 00:15:46.447
+There is a fade effect
+that Iron Image gives us
+
+00:15:46.447 --> 00:15:47.780
+if we go and look at their docs.
+
+00:15:47.780 --> 00:15:48.988
+This is kind of a nice thing.
+
+00:15:48.988 --> 00:15:51.400
+So there's a Fade attribute
+we can set on this guy.
+
+00:15:51.400 --> 00:15:54.360
+So I'll say preload fade.
+
+00:15:54.360 --> 00:16:00.150
+The source is going
+to be item.image.
+
+00:16:00.150 --> 00:16:01.900
+And then we can add
+an alt attribute, too,
+
+00:16:01.900 --> 00:16:03.460
+which is important
+for accessibility.
+
+00:16:03.460 --> 00:16:06.930
+So we'll say Alt equals-- I
+believe it item.image_alt.
+
+00:16:09.960 --> 00:16:11.160
+So this is going to go out.
+
+00:16:11.160 --> 00:16:13.840
+It's going to quickly
+display a placeholder
+
+00:16:13.840 --> 00:16:15.510
+and then fetch the
+higher res version
+
+00:16:15.510 --> 00:16:18.140
+and fade that up
+when it is loaded.
+
+00:16:18.140 --> 00:16:22.520
+I'm also going to add the same
+chunk of code over to our--
+
+00:16:22.520 --> 00:16:24.450
+what is it-- our Post page.
+
+00:16:24.450 --> 00:16:27.750
+So our Post page, we
+got an image here.
+
+00:16:27.750 --> 00:16:29.542
+Replace that with Iron Images.
+
+00:16:29.542 --> 00:16:31.000
+And here we called
+it Post Content,
+
+00:16:31.000 --> 00:16:32.790
+so I just need to
+update wherever
+
+00:16:32.790 --> 00:16:37.150
+it says item Post Content.
+
+00:16:37.150 --> 00:16:38.960
+Hide that old image.
+
+00:16:38.960 --> 00:16:40.250
+OK.
+
+00:16:40.250 --> 00:16:41.790
+Let's give it a shot.
+
+00:16:41.790 --> 00:16:43.120
+So I've turned off throttling.
+
+00:16:43.120 --> 00:16:44.710
+I'm going to refresh the page.
+
+00:16:44.710 --> 00:16:46.710
+And you'll actually even
+see-- even though we're
+
+00:16:46.710 --> 00:16:47.800
+on a fast connection,
+we'll actually
+
+00:16:47.800 --> 00:16:49.380
+see some of that
+crossfade happening.
+
+00:16:49.380 --> 00:16:51.600
+Because it's able to load
+that placeholder super,
+
+00:16:51.600 --> 00:16:53.460
+super, super fast,
+because it's so tiny.
+
+00:16:53.460 --> 00:16:55.210
+But this makes a huge
+difference if you're
+
+00:16:55.210 --> 00:16:57.350
+on a slower connection.
+
+00:16:57.350 --> 00:16:59.300
+So again, we'll
+go to the network.
+
+00:16:59.300 --> 00:17:02.830
+Let's turn throttling on now.
+
+00:17:02.830 --> 00:17:06.482
+We'll set it to regular 3G.
+
+00:17:06.482 --> 00:17:08.190
+And now let's switch
+to a different page.
+
+00:17:08.190 --> 00:17:10.340
+So we'll go from Art to Film.
+
+00:17:10.340 --> 00:17:10.839
+OK, cool.
+
+00:17:10.839 --> 00:17:12.980
+So we didn't see
+any stale images,
+
+00:17:12.980 --> 00:17:16.640
+and we were able to get
+that nice fade-in effect
+
+00:17:16.640 --> 00:17:19.940
+while we were waiting on
+these other images to load.
+
+00:17:19.940 --> 00:17:22.470
+If we go to a really slow
+connection, like GPRS
+
+00:17:22.470 --> 00:17:25.280
+here, what you'll see
+is as I go and maybe
+
+00:17:25.280 --> 00:17:26.900
+click on one of
+these posts, we see
+
+00:17:26.900 --> 00:17:28.720
+the spinner for just a second.
+
+00:17:28.720 --> 00:17:30.550
+Then we see the page
+content, though,
+
+00:17:30.550 --> 00:17:32.130
+and then that image fades up.
+
+00:17:32.130 --> 00:17:33.780
+And this is really, really nice.
+
+00:17:33.780 --> 00:17:35.510
+Let's actually do a
+super hard refresh
+
+00:17:35.510 --> 00:17:37.910
+to clear our cache so you can
+really see this in action.
+
+00:17:37.910 --> 00:17:38.410
+OK.
+
+00:17:38.410 --> 00:17:41.140
+So let's say I hit this page
+for the very first time.
+
+00:17:41.140 --> 00:17:42.480
+I'm going to switch it to GPRS.
+
+00:17:42.480 --> 00:17:45.280
+Now I'm super super,
+super slow phone.
+
+00:17:45.280 --> 00:17:47.510
+I'm going to switch
+to the Film section.
+
+00:17:47.510 --> 00:17:50.620
+And my text loads
+in super quick.
+
+00:17:50.620 --> 00:17:53.932
+And these images, they're
+rolling in along after it.
+
+00:17:53.932 --> 00:17:55.640
+But I don't have to
+wait for those images
+
+00:17:55.640 --> 00:17:57.515
+to be able to actually
+start reading the page
+
+00:17:57.515 --> 00:17:59.850
+and interacting with
+the page content.
+
+00:17:59.850 --> 00:18:02.170
+So the final product is
+just super, super nice,
+
+00:18:02.170 --> 00:18:04.250
+and it's very, very
+responsive and very
+
+00:18:04.250 --> 00:18:07.944
+friendly to folks who might
+be on slower cell connections.
+
+00:18:07.944 --> 00:18:09.360
+So that about
+covers it for today.
+
+00:18:09.360 --> 00:18:12.530
+We've built an amazing site
+that is super quick on mobile
+
+00:18:12.530 --> 00:18:15.550
+using some of the fancier new
+app routing and Iron Image
+
+00:18:15.550 --> 00:18:17.620
+trickery that the Polymer
+team has given us.
+
+00:18:17.620 --> 00:18:19.220
+Now, if you haven't
+done so, please
+
+00:18:19.220 --> 00:18:21.761
+go check out some of the talks
+that the Polymer team recorded
+
+00:18:21.761 --> 00:18:23.970
+at I/O. These are all up
+and available on the Chrome
+
+00:18:23.970 --> 00:18:25.280
+Developer's YouTube channel.
+
+00:18:25.280 --> 00:18:26.480
+And if you have any
+questions for me,
+
+00:18:26.480 --> 00:18:28.340
+you leave them in the
+comments down below,
+
+00:18:28.340 --> 00:18:31.480
+or you can always hit me up on a
+social network of your choosing
+
+00:18:31.480 --> 00:18:33.060
+at hashtag #AskPolymer.
+
+00:18:33.060 --> 00:18:34.870
+As always, thank you
+so much for watching,
+
+00:18:34.870 --> 00:18:36.000
+and I'll see you next time.
+
+00:18:36.000 --> 00:18:42.050
+[MUSIC PLAYING]
+

@@ -1,0 +1,678 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.500
+[MUSIC PLAYING]
+
+00:00:09.230 --> 00:00:11.830
+ADDY: So Matt, what's the
+one feature that keeps
+
+00:00:11.830 --> 00:00:13.700
+you coming back to native apps?
+
+00:00:13.700 --> 00:00:15.250
+MATT: Probably, offline support.
+
+00:00:15.250 --> 00:00:16.731
+It's that whole
+thing of you know
+
+00:00:16.731 --> 00:00:18.730
+you're going to be somewhere
+with flaky network,
+
+00:00:18.730 --> 00:00:19.965
+and you just want it to work.
+
+00:00:19.965 --> 00:00:20.390
+ADDY: Yeah.
+
+00:00:20.390 --> 00:00:21.160
+MATT: That's probably it.
+
+00:00:21.160 --> 00:00:23.120
+ADDY: So offline's
+probably the one thing
+
+00:00:23.120 --> 00:00:25.510
+that keeps me going back
+to native apps as well.
+
+00:00:25.510 --> 00:00:27.540
+Now, there's a bunch of apps
+that I need offline support in,
+
+00:00:27.540 --> 00:00:29.180
+like news readers
+and things like that.
+
+00:00:29.180 --> 00:00:30.680
+But there's probably--
+I don't know.
+
+00:00:30.680 --> 00:00:33.970
+Kids today use a ton of apps
+that I don't, like dating apps.
+
+00:00:33.970 --> 00:00:36.180
+Back in my day, you had
+to run through the city
+
+00:00:36.180 --> 00:00:40.790
+with a megaphone screaming,
+why does no one want me?
+
+00:00:40.790 --> 00:00:43.590
+MATT: You're probably doing it
+wrong, I'm just going to say.
+
+00:00:43.590 --> 00:00:45.112
+ADDY: Probably am.
+
+00:00:45.112 --> 00:00:48.052
+So offline, a user
+goes to your web page.
+
+00:00:48.052 --> 00:00:50.010
+They probably are going
+to run into a situation
+
+00:00:50.010 --> 00:00:51.930
+where they have a flaky network.
+
+00:00:51.930 --> 00:00:54.530
+Maybe they're on the train,
+maybe they're at a conference,
+
+00:00:54.530 --> 00:00:55.200
+or in a hotel.
+
+00:00:55.200 --> 00:00:55.530
+MATT: Yeah.
+
+00:00:55.530 --> 00:00:55.860
+ADDY: Right.
+
+00:00:55.860 --> 00:00:57.484
+Now in the past,
+we've had capabilities
+
+00:00:57.484 --> 00:00:59.925
+like app cache, which
+weren't really that reliable
+
+00:00:59.925 --> 00:01:01.300
+and sort of a
+nightmare to debug.
+
+00:01:01.300 --> 00:01:03.210
+MATT: Yeah, no one
+really used it.
+
+00:01:03.210 --> 00:01:06.290
+And there's that
+classic Jake blog post.
+
+00:01:06.290 --> 00:01:07.640
+ADDY: Cache is a douche bag.
+
+00:01:07.640 --> 00:01:08.440
+MATT: Yeah.
+
+00:01:08.440 --> 00:01:08.566
+ADDY: Yes.
+
+00:01:08.566 --> 00:01:10.566
+These days, we're in a
+slightly better position.
+
+00:01:10.566 --> 00:01:12.860
+We've got new APIs,
+like Service Worker.
+
+00:01:12.860 --> 00:01:14.850
+Now Service Worker
+is like a script
+
+00:01:14.850 --> 00:01:17.270
+that's run by your
+browser in the background.
+
+00:01:17.270 --> 00:01:20.940
+And it opens up the door to
+lots of new capabilities.
+
+00:01:20.940 --> 00:01:21.440
+MATT: Yeah.
+
+00:01:21.440 --> 00:01:22.620
+So there's push.
+
+00:01:22.620 --> 00:01:23.760
+There's offline support.
+
+00:01:23.760 --> 00:01:24.821
+There's background sync.
+
+00:01:24.821 --> 00:01:27.320
+ADDY: And there's a whole host
+of other features coming down
+
+00:01:27.320 --> 00:01:27.890
+the pipeline.
+
+00:01:27.890 --> 00:01:28.390
+MATT: Yeah.
+
+00:01:28.390 --> 00:01:30.950
+ADDY: But it's like this
+really nice low-level API that
+
+00:01:30.950 --> 00:01:32.556
+lets you intercept
+network requests
+
+00:01:32.556 --> 00:01:34.805
+and just take control of
+what's going on with caching.
+
+00:01:34.805 --> 00:01:35.070
+Super nice.
+
+00:01:35.070 --> 00:01:35.569
+MATT: Yeah.
+
+00:01:35.569 --> 00:01:38.130
+So you've got your web page,
+Service Worker in the middle,
+
+00:01:38.130 --> 00:01:39.379
+before it gets to the network.
+
+00:01:39.379 --> 00:01:42.280
+So we can kind of manipulate,
+basically, outgoing traffic,
+
+00:01:42.280 --> 00:01:44.270
+or just keep stuff from
+going to the network
+
+00:01:44.270 --> 00:01:45.950
+and just return from a cache.
+
+00:01:45.950 --> 00:01:48.420
+ADDY: So the first step
+to getting your app
+
+00:01:48.420 --> 00:01:51.320
+working with Service Worker is
+to register a Service Worker
+
+00:01:51.320 --> 00:01:52.270
+script.
+
+00:01:52.270 --> 00:01:55.050
+That allows background
+functionality,
+
+00:01:55.050 --> 00:01:57.220
+without the web page
+necessarily having to be open.
+
+00:01:57.220 --> 00:01:57.610
+MATT: Yep.
+
+00:01:57.610 --> 00:01:59.110
+You're just making
+the browser aware
+
+00:01:59.110 --> 00:02:01.867
+that this is my special
+Service Worker JavaScript file.
+
+00:02:01.867 --> 00:02:03.700
+ADDY: How about we take
+a look at some code?
+
+00:02:03.700 --> 00:02:05.050
+MATT: So the first
+thing you're always
+
+00:02:05.050 --> 00:02:07.508
+going to want to do is just
+check whether Service Worker is
+
+00:02:07.508 --> 00:02:09.960
+actually supported, so if
+serviceWorker in navigator.
+
+00:02:09.960 --> 00:02:11.700
+Assuming it is,
+you then just call
+
+00:02:11.700 --> 00:02:13.310
+navigator.servic
+eWorker.register.
+
+00:02:13.310 --> 00:02:16.010
+And you pass in the path through
+your Service Worker file.
+
+00:02:16.010 --> 00:02:17.950
+And here, we're
+just using Promises.
+
+00:02:17.950 --> 00:02:20.380
+So then, in cache, you just
+say whether it worked or not.
+
+00:02:20.380 --> 00:02:22.400
+And that's literally it.
+
+00:02:22.400 --> 00:02:24.870
+And the important
+thing to point out here
+
+00:02:24.870 --> 00:02:27.021
+is it's a progressive
+enhancement, right?
+
+00:02:27.021 --> 00:02:29.270
+So if you're in a browser
+that doesn't support Service
+
+00:02:29.270 --> 00:02:30.990
+Worker, that never gets called.
+
+00:02:30.990 --> 00:02:32.520
+You're just in
+exactly the same land
+
+00:02:32.520 --> 00:02:33.840
+as you would have been
+without Service Worker.
+
+00:02:33.840 --> 00:02:34.340
+ADDY: Right.
+
+00:02:34.340 --> 00:02:36.357
+So you get your same
+non-offline experience
+
+00:02:36.357 --> 00:02:37.490
+without Service Worker.
+
+00:02:37.490 --> 00:02:39.614
+What about what's inside
+the Service Worker script?
+
+00:02:39.614 --> 00:02:42.122
+MATT: So the minute that kicks
+off, what the browser will do
+
+00:02:42.122 --> 00:02:44.330
+is it will just go and grab
+your Service Worker file,
+
+00:02:44.330 --> 00:02:46.920
+and then just start running it
+in the background of the page.
+
+00:02:46.920 --> 00:02:49.378
+So in this case, the first
+thing you're going to want to do
+
+00:02:49.378 --> 00:02:51.630
+is manage the install event.
+
+00:02:51.630 --> 00:02:53.490
+So in this case,
+self.addEventListener.
+
+00:02:53.490 --> 00:02:57.280
+So you're just saying, in the
+Service Worker, add this event.
+
+00:02:57.280 --> 00:03:00.340
+And you want to open up
+a cache, so caches.open.
+
+00:03:00.340 --> 00:03:01.795
+You give it some name.
+
+00:03:01.795 --> 00:03:03.920
+That's kind of important
+because, over time, you're
+
+00:03:03.920 --> 00:03:05.160
+going to want to add a different
+version [? of this name. ?]
+
+00:03:05.160 --> 00:03:05.520
+ADDY: What's this?
+
+00:03:05.520 --> 00:03:06.478
+Your name space, right?
+
+00:03:06.478 --> 00:03:07.240
+MATT: Yep.
+
+00:03:07.240 --> 00:03:09.730
+And once you've got
+your cache object,
+
+00:03:09.730 --> 00:03:11.037
+you just call cache.addAll.
+
+00:03:11.037 --> 00:03:12.620
+This is a super
+helpful little method,
+
+00:03:12.620 --> 00:03:16.040
+because you literally
+pass in an array of paths.
+
+00:03:16.040 --> 00:03:17.770
+And everything
+inside that array,
+
+00:03:17.770 --> 00:03:20.090
+it would just go and fetch
+in the network and cache.
+
+00:03:20.090 --> 00:03:22.500
+ADDY: So here, you're
+interacting with the cache API?
+
+00:03:22.500 --> 00:03:23.150
+MATT: Yes.
+
+00:03:23.150 --> 00:03:25.220
+So that's different
+from the HTTP cache.
+
+00:03:25.220 --> 00:03:26.870
+This is a cache
+that you control.
+
+00:03:26.870 --> 00:03:30.450
+So nothing will get deleted,
+or replaced, or added to it,
+
+00:03:30.450 --> 00:03:33.280
+unless you explicitly do it.
+
+00:03:33.280 --> 00:03:33.780
+But yeah.
+
+00:03:33.780 --> 00:03:35.990
+So the only real
+caveat to all of this
+
+00:03:35.990 --> 00:03:38.890
+is, in the cache.addAll, if
+you add in some random file
+
+00:03:38.890 --> 00:03:42.420
+that your server errors out on
+and returns an error code, that
+
+00:03:42.420 --> 00:03:44.442
+will make the
+install event fail.
+
+00:03:44.442 --> 00:03:45.900
+The install event
+fails, that means
+
+00:03:45.900 --> 00:03:47.310
+the Service Worker
+won't install,
+
+00:03:47.310 --> 00:03:49.559
+which means the web
+page will never use it.
+
+00:03:49.559 --> 00:03:51.100
+It's kind of just
+a safety mechanism.
+
+00:03:51.100 --> 00:03:53.016
+If something bad happens
+in the install event,
+
+00:03:53.016 --> 00:03:55.860
+Service Worker just won't
+affect your page whatsoever.
+
+00:03:55.860 --> 00:03:59.260
+It will retry, but it won't
+actually affect the page.
+
+00:03:59.260 --> 00:04:01.414
+So that's the install event.
+
+00:04:01.414 --> 00:04:03.830
+That won't actually give you
+offline support, because it's
+
+00:04:03.830 --> 00:04:04.913
+not actually getting used.
+
+00:04:04.913 --> 00:04:07.050
+Nothing's saying, use
+this, use the cache
+
+00:04:07.050 --> 00:04:08.320
+to respond to a network.
+
+00:04:08.320 --> 00:04:10.080
+That's where you've
+got the fetch event.
+
+00:04:10.080 --> 00:04:11.150
+Ta-da!
+
+00:04:11.150 --> 00:04:14.179
+ADDY: Now, fetch is using
+the new fetch API, right?
+
+00:04:14.179 --> 00:04:15.345
+MATT: In this example, yeah.
+
+00:04:15.345 --> 00:04:17.576
+But it's slightly
+unfortunate the fact there's
+
+00:04:17.576 --> 00:04:18.950
+the fetch event,
+and then there's
+
+00:04:18.950 --> 00:04:21.300
+the Fetch API, because
+obviously, the name is exactly
+
+00:04:21.300 --> 00:04:22.084
+the same.
+
+00:04:22.084 --> 00:04:23.250
+They are slightly different.
+
+00:04:23.250 --> 00:04:24.954
+So the fetch event will fire.
+
+00:04:24.954 --> 00:04:26.620
+And basically, this
+will happen whenever
+
+00:04:26.620 --> 00:04:29.465
+a page that's controlled by a
+Service Worker makes a request.
+
+00:04:29.465 --> 00:04:32.170
+So for the page itself,
+images, styles, anything,
+
+00:04:32.170 --> 00:04:34.680
+it will run through this event.
+
+00:04:34.680 --> 00:04:37.250
+And here what we're
+saying is, caches.match.
+
+00:04:37.250 --> 00:04:38.900
+This is a super
+helpful little method
+
+00:04:38.900 --> 00:04:40.672
+that just says,
+for this request,
+
+00:04:40.672 --> 00:04:42.130
+is there anything
+in the cache that
+
+00:04:42.130 --> 00:04:44.360
+can actually respond with it?
+
+00:04:44.360 --> 00:04:48.320
+So here, in the following thing,
+we say, if there is a response,
+
+00:04:48.320 --> 00:04:49.170
+then just return it.
+
+00:04:49.170 --> 00:04:51.230
+Otherwise, return the fetch.
+
+00:04:51.230 --> 00:04:53.802
+So here, that's where the
+actual fetch API comes in.
+
+00:04:53.802 --> 00:04:55.510
+And this is basically
+the same as an XHL.
+
+00:04:55.510 --> 00:04:57.590
+So it will go off
+to the network,
+
+00:04:57.590 --> 00:04:58.580
+find it, and return it.
+
+00:04:58.580 --> 00:05:01.030
+And then, that will pump
+it up to the browser.
+
+00:05:01.030 --> 00:05:02.840
+Those two steps
+alone will then just
+
+00:05:02.840 --> 00:05:05.580
+give you offline support, if you
+cache everything ahead of time.
+
+00:05:05.580 --> 00:05:05.840
+ADDY: OK.
+
+00:05:05.840 --> 00:05:07.260
+So once you've got
+all this set up
+
+00:05:07.260 --> 00:05:09.140
+and you want to test
+that your Service Worker
+
+00:05:09.140 --> 00:05:10.820
+setup is working
+correctly, you've
+
+00:05:10.820 --> 00:05:12.220
+got to dive in to DevTools.
+
+00:05:12.220 --> 00:05:13.040
+MATT: Yep.
+
+00:05:13.040 --> 00:05:16.050
+ADDY: So serve up your
+app, check that it works.
+
+00:05:16.050 --> 00:05:20.730
+Go to Network Throttling
+and just toggle Offline.
+
+00:05:20.730 --> 00:05:21.230
+MATT: Doink.
+
+00:05:21.230 --> 00:05:24.220
+ADDY: And if you
+refresh your page--
+
+00:05:24.220 --> 00:05:24.720
+[AIR HORN]
+
+00:05:24.720 --> 00:05:26.928
+MATT: And yes, we can do
+the annoying air horn noise.
+
+00:05:26.928 --> 00:05:28.355
+[AIR HORN]
+
+00:05:28.355 --> 00:05:30.640
+ADDY: That doesn't just
+work on desktop, right?
+
+00:05:30.640 --> 00:05:33.570
+That should still work
+on phones as well.
+
+00:05:33.570 --> 00:05:35.530
+[AIR HORN]
+
+00:05:35.530 --> 00:05:37.500
+That's the best thing ever.
+
+00:05:37.500 --> 00:05:38.180
+MATT: But yeah.
+
+00:05:38.180 --> 00:05:39.555
+So now you know
+it works offline,
+
+00:05:39.555 --> 00:05:40.900
+which is super awesome.
+
+00:05:40.900 --> 00:05:43.140
+And this is super high level.
+
+00:05:43.140 --> 00:05:46.287
+There is a much better place
+to get all of this information,
+
+00:05:46.287 --> 00:05:48.120
+in terms of stepping
+through Service Worker.
+
+00:05:48.120 --> 00:05:49.920
+It also covers some
+of the caveats,
+
+00:05:49.920 --> 00:05:52.470
+as well as the activate step,
+which we haven't covered.
+
+00:05:52.470 --> 00:05:52.970
+ADDY: Yeah.
+
+00:05:52.970 --> 00:05:56.390
+If you want to learn more, check
+out the Service Worker Offline
+
+00:05:56.390 --> 00:05:58.450
+Collab over on Web Fundamentals.
+
+00:05:58.450 --> 00:06:01.200
+[MUSIC PLAYING]
+

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.943
+INTRO TO DATABASE TOOLS
+
+00:00:04.156 --> 00:00:07.100
+IntelliJ IDEA has
+some handy database tools
+
+00:00:07.171 --> 00:00:10.766
+for working with databases
+from right inside your IDE.
+
+00:00:10.936 --> 00:00:16.831
+We’re going to give you tips for using
+the database tools in IntelliJ IDEA.
+
+00:00:17.070 --> 00:00:24.148
+First you'll need to add a new data source
+via our Database tool window.
+
+00:00:24.963 --> 00:00:30.266
+Here you can add a new data source
+from a number of providers.
+
+00:00:30.583 --> 00:00:33.166
+Here we’ll choose a SQLite database.
+
+00:00:33.253 --> 00:00:35.951
+If we have a driver already installed,
+
+00:00:36.223 --> 00:00:40.300
+we'll be able to simply add that
+without any further configuration.
+
+00:00:40.405 --> 00:00:44.676
+I'll need to specify the database file,
+so, if I have a database dump,
+
+00:00:45.096 --> 00:00:50.700
+I can import that directly,
+test the connection to see that it works,
+
+00:00:51.156 --> 00:00:55.733
+and apply to see
+what the database looks like.
+
+00:00:56.590 --> 00:01:00.100
+IntelliJ IDEA will import
+the database schema.
+
+00:01:00.281 --> 00:01:04.338
+On the right side
+in the database tool window...
+
+00:01:04.575 --> 00:01:07.800
+if you expand some of the nodes,
+
+00:01:08.128 --> 00:01:11.443
+you'll see a number of columns
+inside these tables
+
+00:01:12.238 --> 00:01:13.633
+but this isn't very helpful.
+
+00:01:13.816 --> 00:01:16.833
+If you’d like to view the schema visually,
+
+00:01:17.115 --> 00:01:20.716
+you can press Ctrl+Shift+U
+to show the visualization
+
+00:01:21.225 --> 00:01:25.700
+and you'll see
+how tables are related to each other
+
+00:01:26.053 --> 00:01:27.703
+by the foreign key here.
+
+00:01:27.771 --> 00:01:32.430
+You can also navigate any of the tables
+by using your navigation keys.
+
+00:01:32.555 --> 00:01:35.110
+You can jump to its source
+and then press it again
+
+00:01:35.620 --> 00:01:37.151
+to open up a table.
+
+00:01:37.643 --> 00:01:41.733
+If you want to reform a query
+against some tables in this database,
+
+00:01:42.145 --> 00:01:46.776
+you can open up the console window
+and write some SQL.
+
+00:01:50.468 --> 00:01:55.101
+From the console window, you'll get
+code completion and static analysis
+
+00:01:55.170 --> 00:01:58.143
+for whichever dialect
+of SQL you're using.
+
+00:01:59.583 --> 00:02:04.776
+In the join condition, it'll offer
+to autocomplete the foreign key for me.
+
+00:02:05.156 --> 00:02:08.318
+I can just select that
+and it'll automatically complete it.
+
+00:02:08.546 --> 00:02:12.058
+I can execute this query
+by pressing Ctrl+Enter.
+
+00:02:12.658 --> 00:02:18.933
+Inside the result window, you'll see
+all the results for the query we just ran.
+
+00:02:19.718 --> 00:02:24.845
+THANKS FOR WATCHING!
+

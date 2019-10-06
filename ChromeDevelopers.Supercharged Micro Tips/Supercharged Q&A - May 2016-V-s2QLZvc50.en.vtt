@@ -1,0 +1,506 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.458
+[MUSIC PLAYING]
+
+00:00:10.380 --> 00:00:12.180
+PAUL LEWIS: Welcome to
+this "Supercharged."
+
+00:00:12.180 --> 00:00:14.230
+Now normally when
+we do our videos,
+
+00:00:14.230 --> 00:00:15.930
+we get lots of comments.
+
+00:00:15.930 --> 00:00:17.920
+We get lots of
+questions on Twitter,
+
+00:00:17.920 --> 00:00:19.940
+loads of things that
+kind of come into us.
+
+00:00:19.940 --> 00:00:21.690
+And so we thought, why
+not, let's actually
+
+00:00:21.690 --> 00:00:24.420
+take a step back and answer
+some of those questions.
+
+00:00:24.420 --> 00:00:25.990
+How are SVGs rendered?
+
+00:00:25.990 --> 00:00:26.960
+They seem quite slow.
+
+00:00:26.960 --> 00:00:28.660
+Are they GPU accelerated?
+
+00:00:28.660 --> 00:00:32.049
+If so, in what ways?
+
+00:00:32.049 --> 00:00:33.490
+SURMA: I have actually no idea.
+
+00:00:33.490 --> 00:00:34.290
+PAUL LEWIS: Cool, I do.
+
+00:00:34.290 --> 00:00:34.790
+So--
+
+00:00:34.790 --> 00:00:36.520
+[LAUGHS]
+
+00:00:36.520 --> 00:00:38.280
+--they're actually DOM elements.
+
+00:00:38.280 --> 00:00:39.010
+They--
+
+00:00:39.010 --> 00:00:42.041
+SURMA: Not only the SVG, put
+every child is an actual DOM
+
+00:00:42.041 --> 00:00:42.540
+element.
+
+00:00:42.540 --> 00:00:43.248
+PAUL LEWIS: Yeah.
+
+00:00:43.248 --> 00:00:44.430
+SURMA: All the rectangle--
+
+00:00:44.430 --> 00:00:44.720
+PAUL LEWIS: Right.
+
+00:00:44.720 --> 00:00:46.800
+So you've got to be careful
+because if you move them
+
+00:00:46.800 --> 00:00:48.466
+around, they're going
+to trigger layout.
+
+00:00:48.466 --> 00:00:51.130
+But the layer operation
+will stop at the SVG root.
+
+00:00:51.130 --> 00:00:52.797
+That's one of the
+times we actually have
+
+00:00:52.797 --> 00:00:55.130
+what we call a layout boundary
+where the layout actually
+
+00:00:55.130 --> 00:00:56.090
+is not document scoped.
+
+00:00:56.090 --> 00:00:57.990
+It's going to be scoped
+to the SVG element.
+
+00:00:57.990 --> 00:00:59.240
+SURMA: Would you look at that.
+
+00:00:59.240 --> 00:01:01.031
+PAUL LEWIS: The other
+thing is a transform.
+
+00:01:01.031 --> 00:01:02.800
+Normally we promote
+this to its own layer
+
+00:01:02.800 --> 00:01:04.289
+and then transform it around.
+
+00:01:04.289 --> 00:01:06.081
+That doesn't work in
+SVG context in Chrome.
+
+00:01:06.081 --> 00:01:07.497
+I'm not sure about
+other browsers.
+
+00:01:07.497 --> 00:01:09.940
+But in Chrome, we don't promote
+anything to its own layer
+
+00:01:09.940 --> 00:01:12.357
+when you actually add will
+change or translates easier.
+
+00:01:12.357 --> 00:01:13.690
+SURMA: So it's always a repaint?
+
+00:01:13.690 --> 00:01:14.525
+PAUL LEWIS: It's
+always a repaint.
+
+00:01:14.525 --> 00:01:16.289
+So you've got to be
+cautious with that.
+
+00:01:16.289 --> 00:01:18.580
+SURMA: To be fair, I actually
+expected that for an SVG.
+
+00:01:18.580 --> 00:01:20.510
+Because for some
+reason, I think of it
+
+00:01:20.510 --> 00:01:22.720
+more than canvas-like
+than anything else.
+
+00:01:22.720 --> 00:01:23.590
+PAUL LEWIS: Right.
+
+00:01:23.590 --> 00:01:26.530
+But hopefully--
+hopefully at some point,
+
+00:01:26.530 --> 00:01:30.150
+that optimization might
+[? land. ?] Don't know, though.
+
+00:01:30.150 --> 00:01:32.220
+And then are they
+GPU accelerated?
+
+00:01:32.220 --> 00:01:34.950
+They can be if you've got GPU
+rasterization switched on.
+
+00:01:34.950 --> 00:01:38.670
+In fact, one of the best ways
+to improve SVG performance today
+
+00:01:38.670 --> 00:01:40.430
+on mobile is to make
+sure that you've
+
+00:01:40.430 --> 00:01:42.470
+got GPU rasterization,
+at least for Chrome.
+
+00:01:42.470 --> 00:01:44.480
+And where to get
+that, if you just
+
+00:01:44.480 --> 00:01:47.790
+Google for-- I think
+it is actually magic
+
+00:01:47.790 --> 00:01:50.550
+viewport Chromium, possibly.
+
+00:01:50.550 --> 00:01:54.640
+Or I think Ganesh or GPU
+rasterization Chrome.
+
+00:01:54.640 --> 00:01:57.620
+One of those will get
+you into the world
+
+00:01:57.620 --> 00:01:58.650
+that you need to be in.
+
+00:01:58.650 --> 00:02:03.260
+Next question-- is it
+possible to disable-- I don't
+
+00:02:03.260 --> 00:02:05.480
+know why they put it in quotes.
+
+00:02:05.480 --> 00:02:07.770
+Is it possible to
+disable web animations
+
+00:02:07.770 --> 00:02:11.400
+on very, very, very,
+very, very slow devices.
+
+00:02:11.400 --> 00:02:12.890
+So it has to be at least five.
+
+00:02:12.890 --> 00:02:14.954
+And they put three
+tortoise emojis afterwards.
+
+00:02:14.954 --> 00:02:17.120
+SURMA: I think I know what
+that person's getting at.
+
+00:02:17.120 --> 00:02:19.880
+PAUL LEWIS: They're going for
+slow, going fully slow devices.
+
+00:02:19.880 --> 00:02:24.690
+I can't think of a way to adapt
+to your animations, really.
+
+00:02:24.690 --> 00:02:27.160
+SURMA: I think
+what you could do,
+
+00:02:27.160 --> 00:02:30.380
+potentially the
+performance observer that
+
+00:02:30.380 --> 00:02:34.000
+is in the works, at the
+very least right now,
+
+00:02:34.000 --> 00:02:36.227
+could eventually
+help you do this.
+
+00:02:36.227 --> 00:02:38.060
+My first intuition when
+I read this question
+
+00:02:38.060 --> 00:02:41.850
+was that maybe you can
+kind of abuse request
+
+00:02:41.850 --> 00:02:45.250
+idle callback, because that
+will only be called if your web
+
+00:02:45.250 --> 00:02:46.366
+page is not too busy.
+
+00:02:46.366 --> 00:02:48.240
+And if that is being
+called, you could use it
+
+00:02:48.240 --> 00:02:49.590
+to enable your web animations.
+
+00:02:49.590 --> 00:02:51.910
+Go the other way around, have
+them disabled by default,
+
+00:02:51.910 --> 00:02:54.990
+and basically enhance your
+web page with the animations,
+
+00:02:54.990 --> 00:02:57.875
+provided it is not under
+too much of a load.
+
+00:02:57.875 --> 00:02:59.500
+PAUL LEWIS: The
+problem I had with that
+
+00:02:59.500 --> 00:03:03.394
+is that your now main thread--
+so if you're animating
+
+00:03:03.394 --> 00:03:05.060
+with JavaScript, all
+your animations are
+
+00:03:05.060 --> 00:03:07.360
+coming from the main
+thread, which is fine.
+
+00:03:07.360 --> 00:03:09.820
+So you can then test for
+main thread availability
+
+00:03:09.820 --> 00:03:13.100
+with requestIdleCallback or
+requestAnimationFrame or both.
+
+00:03:13.100 --> 00:03:15.560
+But if you've got
+something that's like--
+
+00:03:15.560 --> 00:03:17.210
+say there's this
+animation that is
+
+00:03:17.210 --> 00:03:18.450
+done with, say, a transition.
+
+00:03:18.450 --> 00:03:20.120
+And you're just using
+the compositive thread.
+
+00:03:20.120 --> 00:03:21.494
+And it's just
+going to keep going
+
+00:03:21.494 --> 00:03:23.864
+even if the main
+thread is janked up,
+
+00:03:23.864 --> 00:03:25.780
+then you can't use that
+technique because it's
+
+00:03:25.780 --> 00:03:29.030
+going to be like, well, I can't
+do any animations right now.
+
+00:03:29.030 --> 00:03:32.020
+And the problem I have is that
+even with the frame timing API,
+
+00:03:32.020 --> 00:03:33.824
+it's still only main
+thread availability.
+
+00:03:33.824 --> 00:03:35.490
+So it's kind of going
+to benefit anybody
+
+00:03:35.490 --> 00:03:37.020
+who's animating JavaScript.
+
+00:03:37.020 --> 00:03:38.850
+But it's not going
+to benefit anybody
+
+00:03:38.850 --> 00:03:40.970
+who's animating just
+purely with, say, CSS
+
+00:03:40.970 --> 00:03:42.680
+or something like that.
+
+00:03:42.680 --> 00:03:45.560
+Overall, though, the thing I
+wanted to kind of ask myself
+
+00:03:45.560 --> 00:03:49.749
+was, is it the right decision
+to disable the animations
+
+00:03:49.749 --> 00:03:50.540
+in the first place?
+
+00:03:50.540 --> 00:03:53.700
+Because I was like, if your
+UX can stand not having
+
+00:03:53.700 --> 00:03:58.510
+the animation, it feels like
+you don't need the animation.
+
+00:03:58.510 --> 00:04:00.937
+Animations just shouldn't
+be for the sake of, ideally.
+
+00:04:00.937 --> 00:04:02.520
+SURMA: But usually
+they serve a point.
+
+00:04:02.520 --> 00:04:03.910
+And if they don't
+serve a point, then you
+
+00:04:03.910 --> 00:04:05.420
+might as well skip
+them because it's
+
+00:04:05.420 --> 00:04:08.350
+about being a little bit mindful
+about the user's resource.
+
+00:04:08.350 --> 00:04:09.567
+PAUL LEWIS: Right.
+
+00:04:09.567 --> 00:04:11.400
+But again, it's a sliding
+scale and somebody
+
+00:04:11.400 --> 00:04:13.840
+might be like, hey, it's an
+added bonus if your device can
+
+00:04:13.840 --> 00:04:15.990
+take it or whatever.
+
+00:04:15.990 --> 00:04:18.560
+As I say, I don't think you
+can do it reliably today.
+
+00:04:18.560 --> 00:04:20.224
+And I don't know
+of anything that's
+
+00:04:20.224 --> 00:04:22.390
+in the works that's just
+like, this is the cast iron
+
+00:04:22.390 --> 00:04:24.545
+way of saying, this device
+should be good to go.
+
+00:04:24.545 --> 00:04:26.920
+But I think you're right,
+requestIdleCallback is probably
+
+00:04:26.920 --> 00:04:28.310
+the closest we're going to get.
+
+00:04:28.310 --> 00:04:29.120
+Well, there you go.
+
+00:04:29.120 --> 00:04:31.010
+So those are the
+questions that you asked.
+
+00:04:31.010 --> 00:04:33.660
+And we would invite you to ask
+more questions in the comments
+
+00:04:33.660 --> 00:04:34.560
+below.
+
+00:04:34.560 --> 00:04:36.670
+Twitter, I'm @aerotwist.
+
+00:04:36.670 --> 00:04:38.140
+SURMA: @DasSurma.
+
+00:04:38.140 --> 00:04:40.060
+PAUL LEWIS: That's
+like The Surma,
+
+00:04:40.060 --> 00:04:41.936
+but in German, which I learned.
+
+00:04:41.936 --> 00:04:44.010
+I'd forgotten all
+my German until--
+
+00:04:44.010 --> 00:04:45.130
+SURMA: I taught him.
+
+00:04:45.130 --> 00:04:45.990
+PAUL LEWIS: He did.
+
+00:04:45.990 --> 00:04:48.530
+He did.
+
+00:04:48.530 --> 00:04:49.880
+So ask your questions.
+
+00:04:49.880 --> 00:04:51.000
+Ping us on Twitter.
+
+00:04:51.000 --> 00:04:53.250
+And we will catch you next time.
+
+00:04:53.250 --> 00:04:56.900
+[MUSIC PLAYING]
+

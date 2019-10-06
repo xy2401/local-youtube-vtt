@@ -1,0 +1,472 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.129 --> 00:00:04.490 align:start position:0%
+ 
+the<00:00:02.129><c> rename</c><00:00:02.580><c> refactoring</c><00:00:02.760><c> in</c><00:00:03.600><c> IntelliJ</c><00:00:04.230><c> IDEA</c>
+
+00:00:04.490 --> 00:00:04.500 align:start position:0%
+the rename refactoring in IntelliJ IDEA
+ 
+
+00:00:04.500 --> 00:00:06.200 align:start position:0%
+the rename refactoring in IntelliJ IDEA
+is<00:00:04.650><c> probably</c><00:00:05.040><c> the</c><00:00:05.220><c> simplest</c><00:00:05.549><c> type</c><00:00:05.940><c> of</c><00:00:05.970><c> a</c>
+
+00:00:06.200 --> 00:00:06.210 align:start position:0%
+is probably the simplest type of a
+ 
+
+00:00:06.210 --> 00:00:08.390 align:start position:0%
+is probably the simplest type of a
+factoring<00:00:06.660><c> that</c><00:00:06.810><c> you</c><00:00:06.930><c> can</c><00:00:07.049><c> perform</c><00:00:07.280><c> but</c><00:00:08.280><c> for</c>
+
+00:00:08.390 --> 00:00:08.400 align:start position:0%
+factoring that you can perform but for
+ 
+
+00:00:08.400 --> 00:00:10.520 align:start position:0%
+factoring that you can perform but for
+such<00:00:08.519><c> a</c><00:00:08.550><c> simple</c><00:00:08.820><c> refactoring</c><00:00:09.630><c> it</c><00:00:10.019><c> has</c><00:00:10.260><c> a</c><00:00:10.290><c> lot</c>
+
+00:00:10.520 --> 00:00:10.530 align:start position:0%
+such a simple refactoring it has a lot
+ 
+
+00:00:10.530 --> 00:00:12.140 align:start position:0%
+such a simple refactoring it has a lot
+of<00:00:10.559><c> neat</c><00:00:11.010><c> functionality</c><00:00:11.730><c> that</c><00:00:11.820><c> goes</c><00:00:11.880><c> on</c>
+
+00:00:12.140 --> 00:00:12.150 align:start position:0%
+of neat functionality that goes on
+ 
+
+00:00:12.150 --> 00:00:14.629 align:start position:0%
+of neat functionality that goes on
+behind<00:00:12.420><c> the</c><00:00:12.840><c> scenes</c><00:00:13.139><c> and</c><00:00:13.920><c> so</c><00:00:14.190><c> first</c><00:00:14.400><c> let's</c>
+
+00:00:14.629 --> 00:00:14.639 align:start position:0%
+behind the scenes and so first let's
+ 
+
+00:00:14.639 --> 00:00:16.550 align:start position:0%
+behind the scenes and so first let's
+describe<00:00:15.030><c> what</c><00:00:15.240><c> this</c><00:00:15.360><c> or</c><00:00:15.540><c> factoring</c><00:00:15.960><c> does</c>
+
+00:00:16.550 --> 00:00:16.560 align:start position:0%
+describe what this or factoring does
+ 
+
+00:00:16.560 --> 00:00:19.460 align:start position:0%
+describe what this or factoring does
+whenever<00:00:17.550><c> you</c><00:00:17.670><c> rename</c><00:00:18.000><c> a</c><00:00:18.029><c> variable</c><00:00:18.750><c> or</c><00:00:18.930><c> a</c>
+
+00:00:19.460 --> 00:00:19.470 align:start position:0%
+whenever you rename a variable or a
+ 
+
+00:00:19.470 --> 00:00:22.730 align:start position:0%
+whenever you rename a variable or a
+class<00:00:19.830><c> or</c><00:00:20.279><c> any</c><00:00:20.760><c> type</c><00:00:21.000><c> of</c><00:00:21.180><c> field</c><00:00:21.449><c> inside</c><00:00:22.109><c> your</c>
+
+00:00:22.730 --> 00:00:22.740 align:start position:0%
+class or any type of field inside your
+ 
+
+00:00:22.740 --> 00:00:26.509 align:start position:0%
+class or any type of field inside your
+code<00:00:23.130><c> then</c><00:00:24.000><c> IntelliJ</c><00:00:24.779><c> IDEA</c><00:00:25.109><c> will</c><00:00:25.949><c> rename</c><00:00:26.250><c> all</c>
+
+00:00:26.509 --> 00:00:26.519 align:start position:0%
+code then IntelliJ IDEA will rename all
+ 
+
+00:00:26.519 --> 00:00:29.689 align:start position:0%
+code then IntelliJ IDEA will rename all
+references<00:00:27.269><c> to</c><00:00:27.660><c> that</c><00:00:27.779><c> field</c><00:00:28.230><c> immediately</c>
+
+00:00:29.689 --> 00:00:29.699 align:start position:0%
+references to that field immediately
+ 
+
+00:00:29.699 --> 00:00:32.179 align:start position:0%
+references to that field immediately
+now<00:00:30.630><c> this</c><00:00:30.779><c> refactoring</c><00:00:31.470><c> may</c><00:00:31.650><c> seem</c><00:00:31.980><c> very</c>
+
+00:00:32.179 --> 00:00:32.189 align:start position:0%
+now this refactoring may seem very
+ 
+
+00:00:32.189 --> 00:00:34.400 align:start position:0%
+now this refactoring may seem very
+simple<00:00:32.579><c> at</c><00:00:32.669><c> first</c><00:00:32.700><c> glance</c><00:00:33.270><c> but</c><00:00:33.780><c> it</c><00:00:34.260><c> really</c>
+
+00:00:34.400 --> 00:00:34.410 align:start position:0%
+simple at first glance but it really
+ 
+
+00:00:34.410 --> 00:00:36.590 align:start position:0%
+simple at first glance but it really
+involves<00:00:34.890><c> three</c><00:00:35.309><c> steps</c><00:00:35.670><c> as</c><00:00:35.969><c> you</c><00:00:36.329><c> may</c><00:00:36.450><c> be</c><00:00:36.480><c> aware</c>
+
+00:00:36.590 --> 00:00:36.600 align:start position:0%
+involves three steps as you may be aware
+ 
+
+00:00:36.600 --> 00:00:39.500 align:start position:0%
+involves three steps as you may be aware
+IntelliJ<00:00:37.440><c> IDEA</c><00:00:37.770><c> indexes</c><00:00:38.489><c> all</c><00:00:38.700><c> of</c><00:00:39.000><c> the</c><00:00:39.090><c> symbols</c>
+
+00:00:39.500 --> 00:00:39.510 align:start position:0%
+IntelliJ IDEA indexes all of the symbols
+ 
+
+00:00:39.510 --> 00:00:42.080 align:start position:0%
+IntelliJ IDEA indexes all of the symbols
+inside<00:00:40.230><c> your</c><00:00:40.469><c> editor</c><00:00:40.800><c> and</c><00:00:40.950><c> so</c><00:00:41.670><c> whenever</c><00:00:41.940><c> you</c>
+
+00:00:42.080 --> 00:00:42.090 align:start position:0%
+inside your editor and so whenever you
+ 
+
+00:00:42.090 --> 00:00:44.000 align:start position:0%
+inside your editor and so whenever you
+click<00:00:42.420><c> on</c><00:00:42.660><c> one</c><00:00:42.930><c> of</c><00:00:43.050><c> these</c><00:00:43.170><c> symbols</c><00:00:43.440><c> it</c><00:00:43.829><c> will</c>
+
+00:00:44.000 --> 00:00:44.010 align:start position:0%
+click on one of these symbols it will
+ 
+
+00:00:44.010 --> 00:00:45.889 align:start position:0%
+click on one of these symbols it will
+link<00:00:44.250><c> to</c><00:00:44.489><c> another</c><00:00:44.640><c> symbol</c><00:00:45.180><c> you</c><00:00:45.510><c> can</c><00:00:45.660><c> do</c><00:00:45.750><c> this</c>
+
+00:00:45.889 --> 00:00:45.899 align:start position:0%
+link to another symbol you can do this
+ 
+
+00:00:45.899 --> 00:00:48.950 align:start position:0%
+link to another symbol you can do this
+within<00:00:46.110><c> your</c><00:00:46.379><c> own</c><00:00:46.530><c> code</c><00:00:46.920><c> and</c><00:00:47.390><c> to</c><00:00:48.390><c> an</c><00:00:48.480><c> external</c>
+
+00:00:48.950 --> 00:00:48.960 align:start position:0%
+within your own code and to an external
+ 
+
+00:00:48.960 --> 00:00:51.410 align:start position:0%
+within your own code and to an external
+code<00:00:49.649><c> base</c><00:00:49.860><c> as</c><00:00:50.160><c> well</c><00:00:50.370><c> which</c><00:00:51.149><c> will</c><00:00:51.329><c> be</c>
+
+00:00:51.410 --> 00:00:51.420 align:start position:0%
+code base as well which will be
+ 
+
+00:00:51.420 --> 00:00:53.900 align:start position:0%
+code base as well which will be
+decompiled<00:00:52.140><c> for</c><00:00:52.860><c> you</c><00:00:52.980><c> this</c><00:00:53.520><c> is</c><00:00:53.699><c> all</c>
+
+00:00:53.900 --> 00:00:53.910 align:start position:0%
+decompiled for you this is all
+ 
+
+00:00:53.910 --> 00:00:55.430 align:start position:0%
+decompiled for you this is all
+accomplished<00:00:54.420><c> through</c><00:00:54.690><c> a</c><00:00:54.719><c> simple</c><00:00:55.140><c> index</c>
+
+00:00:55.430 --> 00:00:55.440 align:start position:0%
+accomplished through a simple index
+ 
+
+00:00:55.440 --> 00:00:58.189 align:start position:0%
+accomplished through a simple index
+whenever<00:00:55.980><c> you</c><00:00:56.129><c> navigate</c><00:00:56.699><c> to</c><00:00:57.449><c> the</c><00:00:57.570><c> definition</c>
+
+00:00:58.189 --> 00:00:58.199 align:start position:0%
+whenever you navigate to the definition
+ 
+
+00:00:58.199 --> 00:01:01.010 align:start position:0%
+whenever you navigate to the definition
+for<00:00:58.559><c> a</c><00:00:58.949><c> symbol</c><00:00:59.460><c> inside</c><00:00:59.820><c> your</c><00:01:00.000><c> editor</c><00:01:00.329><c> then</c>
+
+00:01:01.010 --> 00:01:01.020 align:start position:0%
+for a symbol inside your editor then
+ 
+
+00:01:01.020 --> 00:01:02.990 align:start position:0%
+for a symbol inside your editor then
+IntelliJ<00:01:01.620><c> IDEA</c><00:01:01.890><c> will</c><00:01:02.070><c> look</c><00:01:02.250><c> up</c><00:01:02.430><c> the</c><00:01:02.460><c> location</c>
+
+00:01:02.990 --> 00:01:03.000 align:start position:0%
+IntelliJ IDEA will look up the location
+ 
+
+00:01:03.000 --> 00:01:04.820 align:start position:0%
+IntelliJ IDEA will look up the location
+of<00:01:03.359><c> where</c><00:01:03.660><c> that</c><00:01:03.809><c> symbol</c><00:01:04.170><c> is</c><00:01:04.260><c> being</c><00:01:04.470><c> defined</c>
+
+00:01:04.820 --> 00:01:04.830 align:start position:0%
+of where that symbol is being defined
+ 
+
+00:01:04.830 --> 00:01:07.310 align:start position:0%
+of where that symbol is being defined
+and<00:01:05.129><c> take</c><00:01:05.280><c> you</c><00:01:05.400><c> directly</c><00:01:05.820><c> there</c><00:01:06.110><c> now</c><00:01:07.110><c> there's</c>
+
+00:01:07.310 --> 00:01:07.320 align:start position:0%
+and take you directly there now there's
+ 
+
+00:01:07.320 --> 00:01:09.230 align:start position:0%
+and take you directly there now there's
+also<00:01:07.470><c> something</c><00:01:07.799><c> called</c><00:01:08.189><c> an</c><00:01:08.340><c> inverted</c><00:01:08.790><c> index</c>
+
+00:01:09.230 --> 00:01:09.240 align:start position:0%
+also something called an inverted index
+ 
+
+00:01:09.240 --> 00:01:12.020 align:start position:0%
+also something called an inverted index
+where<00:01:09.630><c> if</c><00:01:10.229><c> you</c><00:01:10.350><c> click</c><00:01:10.619><c> on</c><00:01:10.799><c> a</c><00:01:11.159><c> variable</c><00:01:11.640><c> or</c><00:01:11.970><c> a</c>
+
+00:01:12.020 --> 00:01:12.030 align:start position:0%
+where if you click on a variable or a
+ 
+
+00:01:12.030 --> 00:01:14.719 align:start position:0%
+where if you click on a variable or a
+symbol<00:01:12.600><c> inside</c><00:01:13.229><c> your</c><00:01:13.439><c> editor</c><00:01:13.740><c> and</c><00:01:14.159><c> press</c><00:01:14.460><c> alt</c>
+
+00:01:14.719 --> 00:01:14.729 align:start position:0%
+symbol inside your editor and press alt
+ 
+
+00:01:14.729 --> 00:01:18.109 align:start position:0%
+symbol inside your editor and press alt
+f7<00:01:15.080><c> then</c><00:01:16.080><c> the</c><00:01:16.229><c> IDE</c><00:01:16.560><c> will</c><00:01:16.950><c> return</c><00:01:17.340><c> an</c><00:01:17.640><c> inverted</c>
+
+00:01:18.109 --> 00:01:18.119 align:start position:0%
+f7 then the IDE will return an inverted
+ 
+
+00:01:18.119 --> 00:01:20.840 align:start position:0%
+f7 then the IDE will return an inverted
+index<00:01:18.240><c> where</c><00:01:19.229><c> the</c><00:01:19.409><c> key</c><00:01:19.770><c> is</c><00:01:20.040><c> the</c><00:01:20.340><c> name</c><00:01:20.580><c> of</c><00:01:20.610><c> the</c>
+
+00:01:20.840 --> 00:01:20.850 align:start position:0%
+index where the key is the name of the
+ 
+
+00:01:20.850 --> 00:01:22.670 align:start position:0%
+index where the key is the name of the
+symbol<00:01:21.150><c> you're</c><00:01:21.240><c> looking</c><00:01:21.570><c> for</c><00:01:21.840><c> and</c><00:01:22.020><c> the</c><00:01:22.200><c> values</c>
+
+00:01:22.670 --> 00:01:22.680 align:start position:0%
+symbol you're looking for and the values
+ 
+
+00:01:22.680 --> 00:01:24.859 align:start position:0%
+symbol you're looking for and the values
+are<00:01:22.890><c> all</c><00:01:23.549><c> of</c><00:01:23.670><c> the</c><00:01:23.790><c> occurrences</c><00:01:24.390><c> of</c><00:01:24.450><c> that</c>
+
+00:01:24.859 --> 00:01:24.869 align:start position:0%
+are all of the occurrences of that
+ 
+
+00:01:24.869 --> 00:01:27.410 align:start position:0%
+are all of the occurrences of that
+symbol<00:01:25.170><c> all</c><00:01:25.680><c> of</c><00:01:25.979><c> its</c><00:01:26.130><c> usages</c><00:01:26.610><c> inside</c><00:01:27.150><c> your</c>
+
+00:01:27.410 --> 00:01:27.420 align:start position:0%
+symbol all of its usages inside your
+ 
+
+00:01:27.420 --> 00:01:28.550 align:start position:0%
+symbol all of its usages inside your
+entire<00:01:27.750><c> project</c>
+
+00:01:28.550 --> 00:01:28.560 align:start position:0%
+entire project
+ 
+
+00:01:28.560 --> 00:01:31.399 align:start position:0%
+entire project
+so<00:01:29.490><c> whenever</c><00:01:29.670><c> rename</c><00:01:30.240><c> something</c><00:01:30.540><c> inside</c><00:01:31.290><c> our</c>
+
+00:01:31.399 --> 00:01:31.409 align:start position:0%
+so whenever rename something inside our
+ 
+
+00:01:31.409 --> 00:01:35.210 align:start position:0%
+so whenever rename something inside our
+editor<00:01:31.740><c> three</c><00:01:32.490><c> things</c><00:01:32.759><c> need</c><00:01:33.119><c> to</c><00:01:33.150><c> happen</c><00:01:33.860><c> if</c><00:01:34.860><c> we</c>
+
+00:01:35.210 --> 00:01:35.220 align:start position:0%
+editor three things need to happen if we
+ 
+
+00:01:35.220 --> 00:01:37.730 align:start position:0%
+editor three things need to happen if we
+rename<00:01:35.579><c> a</c><00:01:35.610><c> variable</c><00:01:36.270><c> inside</c><00:01:36.750><c> a</c><00:01:36.810><c> method</c><00:01:37.049><c> then</c>
+
+00:01:37.730 --> 00:01:37.740 align:start position:0%
+rename a variable inside a method then
+ 
+
+00:01:37.740 --> 00:01:39.469 align:start position:0%
+rename a variable inside a method then
+we<00:01:37.829><c> can</c><00:01:37.950><c> just</c><00:01:38.130><c> get</c><00:01:38.220><c> away</c><00:01:38.430><c> with</c><00:01:38.640><c> renaming</c><00:01:39.060><c> all</c>
+
+00:01:39.469 --> 00:01:39.479 align:start position:0%
+we can just get away with renaming all
+ 
+
+00:01:39.479 --> 00:01:42.319 align:start position:0%
+we can just get away with renaming all
+usages<00:01:40.350><c> of</c><00:01:40.409><c> that</c><00:01:40.650><c> variable</c><00:01:41.250><c> and</c><00:01:41.490><c> calling</c><00:01:42.150><c> it</c><00:01:42.240><c> a</c>
+
+00:01:42.319 --> 00:01:42.329 align:start position:0%
+usages of that variable and calling it a
+ 
+
+00:01:42.329 --> 00:01:45.020 align:start position:0%
+usages of that variable and calling it a
+day<00:01:42.360><c> our</c><00:01:42.990><c> job</c><00:01:43.320><c> is</c><00:01:43.530><c> done</c><00:01:43.770><c> if</c><00:01:44.460><c> we</c><00:01:44.700><c> were</c><00:01:44.820><c> named</c><00:01:45.000><c> a</c>
+
+00:01:45.020 --> 00:01:45.030 align:start position:0%
+day our job is done if we were named a
+ 
+
+00:01:45.030 --> 00:01:48.980 align:start position:0%
+day our job is done if we were named a
+field<00:01:46.100><c> then</c><00:01:47.100><c> we'll</c><00:01:47.220><c> need</c><00:01:47.340><c> to</c><00:01:47.490><c> rename</c><00:01:47.820><c> the</c><00:01:48.659><c> name</c>
+
+00:01:48.980 --> 00:01:48.990 align:start position:0%
+field then we'll need to rename the name
+ 
+
+00:01:48.990 --> 00:01:52.069 align:start position:0%
+field then we'll need to rename the name
+of<00:01:49.229><c> the</c><00:01:49.380><c> variable</c><00:01:49.619><c> itself</c><00:01:50.430><c> and</c><00:01:50.850><c> any</c><00:01:51.450><c> usages</c>
+
+00:01:52.069 --> 00:01:52.079 align:start position:0%
+of the variable itself and any usages
+ 
+
+00:01:52.079 --> 00:01:56.780 align:start position:0%
+of the variable itself and any usages
+where<00:01:52.320><c> it</c><00:01:52.409><c> occurs</c><00:01:54.560><c> but</c><00:01:55.560><c> also</c><00:01:55.770><c> potentially</c><00:01:56.640><c> the</c>
+
+00:01:56.780 --> 00:01:56.790 align:start position:0%
+where it occurs but also potentially the
+ 
+
+00:01:56.790 --> 00:01:58.670 align:start position:0%
+where it occurs but also potentially the
+name<00:01:56.969><c> of</c><00:01:57.119><c> the</c><00:01:57.210><c> getter</c><00:01:57.450><c> and</c><00:01:57.659><c> setter</c><00:01:57.750><c> as</c><00:01:58.469><c> well</c>
+
+00:01:58.670 --> 00:01:58.680 align:start position:0%
+name of the getter and setter as well
+ 
+
+00:01:58.680 --> 00:02:00.620 align:start position:0%
+name of the getter and setter as well
+and<00:01:58.890><c> then</c><00:01:59.460><c> maybe</c><00:01:59.700><c> any</c><00:02:00.000><c> constructor</c>
+
+00:02:00.620 --> 00:02:00.630 align:start position:0%
+and then maybe any constructor
+ 
+
+00:02:00.630 --> 00:02:02.389 align:start position:0%
+and then maybe any constructor
+parameters<00:02:01.110><c> that</c><00:02:01.290><c> are</c><00:02:01.350><c> assigned</c><00:02:01.770><c> to</c><00:02:01.950><c> it</c><00:02:02.100><c> in</c>
+
+00:02:02.389 --> 00:02:02.399 align:start position:0%
+parameters that are assigned to it in
+ 
+
+00:02:02.399 --> 00:02:06.050 align:start position:0%
+parameters that are assigned to it in
+order<00:02:02.670><c> to</c><00:02:02.820><c> be</c><00:02:03.000><c> consistent</c><00:02:04.189><c> finally</c><00:02:05.189><c> if</c><00:02:05.490><c> we</c>
+
+00:02:06.050 --> 00:02:06.060 align:start position:0%
+order to be consistent finally if we
+ 
+
+00:02:06.060 --> 00:02:08.719 align:start position:0%
+order to be consistent finally if we
+change<00:02:06.479><c> the</c><00:02:06.689><c> name</c><00:02:06.810><c> of</c><00:02:06.990><c> a</c><00:02:07.079><c> type</c><00:02:07.320><c> such</c><00:02:07.770><c> as</c><00:02:07.979><c> here</c>
+
+00:02:08.719 --> 00:02:08.729 align:start position:0%
+change the name of a type such as here
+ 
+
+00:02:08.729 --> 00:02:11.449 align:start position:0%
+change the name of a type such as here
+in<00:02:08.819><c> enum</c><00:02:09.709><c> then</c><00:02:10.709><c> we'll</c><00:02:10.830><c> need</c><00:02:10.920><c> to</c><00:02:11.039><c> do</c><00:02:11.160><c> all</c><00:02:11.430><c> of</c>
+
+00:02:11.449 --> 00:02:11.459 align:start position:0%
+in enum then we'll need to do all of
+ 
+
+00:02:11.459 --> 00:02:13.820 align:start position:0%
+in enum then we'll need to do all of
+that
+
+00:02:13.820 --> 00:02:13.830 align:start position:0%
+ 
+ 
+
+00:02:13.830 --> 00:02:17.870 align:start position:0%
+ 
+in<00:02:14.830><c> addition</c><00:02:15.580><c> to</c><00:02:15.670><c> any</c><00:02:15.790><c> parameters</c><00:02:16.530><c> fields</c><00:02:17.530><c> and</c>
+
+00:02:17.870 --> 00:02:17.880 align:start position:0%
+in addition to any parameters fields and
+ 
+
+00:02:17.880 --> 00:02:21.510 align:start position:0%
+in addition to any parameters fields and
+possibly<00:02:18.880><c> method</c><00:02:19.420><c> names</c><00:02:19.660><c> as</c><00:02:19.870><c> well</c><00:02:20.400><c> so</c><00:02:21.400><c> the</c>
+
+00:02:21.510 --> 00:02:21.520 align:start position:0%
+possibly method names as well so the
+ 
+
+00:02:21.520 --> 00:02:23.400 align:start position:0%
+possibly method names as well so the
+goal<00:02:21.700><c> here</c><00:02:22.000><c> really</c><00:02:22.030><c> isn't</c><00:02:22.450><c> just</c><00:02:22.720><c> to</c><00:02:22.810><c> find</c><00:02:23.110><c> and</c>
+
+00:02:23.400 --> 00:02:23.410 align:start position:0%
+goal here really isn't just to find and
+ 
+
+00:02:23.410 --> 00:02:25.110 align:start position:0%
+goal here really isn't just to find and
+replace<00:02:23.800><c> the</c><00:02:24.160><c> end</c><00:02:24.280><c> result</c><00:02:24.580><c> needs</c><00:02:24.790><c> to</c><00:02:25.000><c> be</c>
+
+00:02:25.110 --> 00:02:25.120 align:start position:0%
+replace the end result needs to be
+ 
+
+00:02:25.120 --> 00:02:27.510 align:start position:0%
+replace the end result needs to be
+readable<00:02:25.570><c> and</c><00:02:25.990><c> by</c><00:02:26.650><c> using</c><00:02:26.920><c> this</c><00:02:27.130><c> rename</c>
+
+00:02:27.510 --> 00:02:27.520 align:start position:0%
+readable and by using this rename
+ 
+
+00:02:27.520 --> 00:02:29.730 align:start position:0%
+readable and by using this rename
+refactoring<00:02:27.640><c> you</c><00:02:28.270><c> can</c><00:02:28.390><c> accomplish</c><00:02:28.720><c> all</c><00:02:29.200><c> three</c>
+
+00:02:29.730 --> 00:02:29.740 align:start position:0%
+refactoring you can accomplish all three
+ 
+
+00:02:29.740 --> 00:02:33.180 align:start position:0%
+refactoring you can accomplish all three
+thanks<00:02:30.730><c> for</c><00:02:30.880><c> watching</c>
+

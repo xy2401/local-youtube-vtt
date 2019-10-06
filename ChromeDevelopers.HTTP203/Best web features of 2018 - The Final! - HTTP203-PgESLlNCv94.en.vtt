@@ -1,0 +1,3176 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.150 --> 00:00:02.160
+SPEAKER 1: I barely ever
+only trim on one side.
+
+00:00:02.160 --> 00:00:02.775
+I usually just--
+
+00:00:02.775 --> 00:00:03.030
+SPEAKER 2: Really?
+
+00:00:03.030 --> 00:00:03.370
+SPEAKER 1: call trim.
+
+00:00:03.370 --> 00:00:04.953
+SPEAKER 2: Is that
+a lifestyle choice?
+
+00:00:04.953 --> 00:00:06.323
+[LAUGHTER]
+
+00:00:06.323 --> 00:00:10.251
+[MUSIC PLAYING]
+
+00:00:12.720 --> 00:00:15.100
+SPEAKER 1: Welcome back
+to the HTTP203 World
+
+00:00:15.100 --> 00:00:16.325
+Cup of Web Features 2018.
+
+00:00:16.325 --> 00:00:17.960
+SPEAKER 2: Oh, you're
+bringing the enthusiasm back.
+
+00:00:17.960 --> 00:00:18.230
+SPEAKER 1: Yeah.
+
+00:00:18.230 --> 00:00:19.110
+SPEAKER 2: That was really good.
+
+00:00:19.110 --> 00:00:21.584
+SPEAKER 1: This is the episode
+where we find out who wins.
+
+00:00:21.584 --> 00:00:22.500
+SPEAKER 2: Yes, it is.
+
+00:00:22.500 --> 00:00:23.030
+SPEAKER 1: And that's exciting.
+
+00:00:23.030 --> 00:00:24.940
+SPEAKER 2: In the
+previous few episodes,
+
+00:00:24.940 --> 00:00:27.334
+we figured out one finalist.
+
+00:00:27.334 --> 00:00:29.250
+Do we reveal that now,
+or should we just see--
+
+00:00:29.250 --> 00:00:30.120
+SPEAKER 1: No, because
+I've forgotten,
+
+00:00:30.120 --> 00:00:32.549
+and I want to keep it that
+way so I don't incorporate it
+
+00:00:32.549 --> 00:00:33.907
+into my decision--
+
+00:00:33.907 --> 00:00:35.240
+SPEAKER 2: That's good thinking.
+
+00:00:35.240 --> 00:00:36.420
+SPEAKER 1: We did, in
+the last episode, figure
+
+00:00:36.420 --> 00:00:38.055
+out the other
+semifinalist, which--
+
+00:00:38.055 --> 00:00:38.680
+SPEAKER 2: Yes.
+
+00:00:38.680 --> 00:00:41.140
+SPEAKER 1: --is the
+pitch lifecycle API.
+
+00:00:41.140 --> 00:00:42.140
+SPEAKER 2: Yes, correct.
+
+00:00:42.140 --> 00:00:43.200
+SPEAKER 1: Why did you
+skip the word page?
+
+00:00:43.200 --> 00:00:45.000
+It's part of the
+API name, isn't it?
+
+00:00:45.000 --> 00:00:46.000
+SPEAKER 2: I just keep--
+
+00:00:46.000 --> 00:00:46.740
+makes it--
+
+00:00:46.740 --> 00:00:48.505
+[INTERPOSING VOICES]
+
+00:00:48.505 --> 00:00:50.880
+SPEAKER 2: I'm going to try
+using that tactic of argument
+
+00:00:50.880 --> 00:00:53.070
+in this next phase, as well.
+
+00:00:53.070 --> 00:00:53.856
+[LAUGHTER]
+
+00:00:53.856 --> 00:00:54.870
+[GIBBERISH]
+
+00:00:56.310 --> 00:00:57.325
+Oh, OK.
+
+00:00:57.325 --> 00:00:58.550
+Trim Start Trim End.
+
+00:00:58.550 --> 00:01:01.140
+Once again, the font is
+making it almost illegible.
+
+00:01:01.140 --> 00:01:02.764
+SPEAKER 1: OK.
+
+00:01:02.764 --> 00:01:03.430
+SPEAKER 2: But--
+
+00:01:03.430 --> 00:01:04.846
+SPEAKER 1: I feel
+like-- it says--
+
+00:01:04.846 --> 00:01:05.540
+yeah, OK.
+
+00:01:05.540 --> 00:01:07.100
+Explain to me, and I'll--
+
+00:01:07.100 --> 00:01:07.855
+SPEAKER 2: Trim?
+
+00:01:07.855 --> 00:01:08.480
+SPEAKER 1: Mmm.
+
+00:01:08.480 --> 00:01:09.000
+Gotcha.
+
+00:01:09.000 --> 00:01:11.516
+Remove them space
+at start and end.
+
+00:01:11.516 --> 00:01:12.890
+SPEAKER 2: Trim
+left, trim right.
+
+00:01:12.890 --> 00:01:14.420
+SPEAKER 1: Yeah, I thought that
+was already left and right,
+
+00:01:14.420 --> 00:01:16.350
+so I wonder if
+you type out trim.
+
+00:01:16.350 --> 00:01:18.315
+SPEAKER 2: Non-standard.
+
+00:01:18.315 --> 00:01:18.940
+SPEAKER 1: Ooh.
+
+00:01:18.940 --> 00:01:21.900
+SPEAKER 2: But in pretty
+much all browsers,
+
+00:01:21.900 --> 00:01:23.132
+I think, except Edge.
+
+00:01:23.132 --> 00:01:24.610
+SPEAKER 1: OK.
+
+00:01:24.610 --> 00:01:26.340
+SPEAKER 2: Trim start, trim end.
+
+00:01:26.340 --> 00:01:27.390
+There you go.
+
+00:01:27.390 --> 00:01:29.400
+SPEAKER 1: Here's a
+question then, though.
+
+00:01:29.400 --> 00:01:33.930
+Does trim start
+behave differently
+
+00:01:33.930 --> 00:01:35.330
+in right-to-left languages?
+
+00:01:35.330 --> 00:01:35.980
+SPEAKER 2: Oh.
+
+00:01:35.980 --> 00:01:36.480
+[INAUDIBLE]
+
+00:01:36.480 --> 00:01:37.970
+I was wondering that.
+
+00:01:37.970 --> 00:01:42.764
+But because there's no language
+applied to a JavaScript
+
+00:01:42.764 --> 00:01:44.430
+environment-- yes,
+in a web environment,
+
+00:01:44.430 --> 00:01:46.560
+but not in a JavaScript
+environment, which this is,
+
+00:01:46.560 --> 00:01:48.850
+I'm pretty sure there is
+absolutely no difference.
+
+00:01:48.850 --> 00:01:50.250
+SPEAKER 1: So we're calling
+it trim start trim end
+
+00:01:50.250 --> 00:01:52.083
+because we already have
+trim left and right,
+
+00:01:52.083 --> 00:01:53.146
+but that's not standard.
+
+00:01:53.146 --> 00:01:55.020
+SPEAKER 2: And we have
+pad start and pad end,
+
+00:01:55.020 --> 00:01:57.191
+and it's basically to make--
+
+00:01:57.191 --> 00:01:57.690
+you OK?
+
+00:01:57.690 --> 00:01:58.606
+SPEAKER 1: Sure, yeah.
+
+00:01:58.606 --> 00:02:00.051
+[LAUGHTER]
+
+00:02:00.051 --> 00:02:01.050
+SPEAKER 2: So that's it.
+
+00:02:01.050 --> 00:02:04.050
+And scanning my notes,
+yes, this is now
+
+00:02:04.050 --> 00:02:07.230
+in everything except Edge,
+but it has landed in Chakra,
+
+00:02:07.230 --> 00:02:10.375
+so it's likely to be in
+the next version of Edge.
+
+00:02:10.375 --> 00:02:11.250
+SPEAKER 1: All right.
+
+00:02:11.250 --> 00:02:16.230
+Going up against
+that is import.meta.
+
+00:02:16.230 --> 00:02:18.090
+So import.meta is
+basically an object
+
+00:02:18.090 --> 00:02:21.120
+where you have metadata
+about the module
+
+00:02:21.120 --> 00:02:22.490
+that you're currently in.
+
+00:02:22.490 --> 00:02:22.720
+SPEAKER 2: OK.
+
+00:02:22.720 --> 00:02:25.345
+SPEAKER 1: And I think the only
+thing that's on there right now
+
+00:02:25.345 --> 00:02:26.420
+is the URL property.
+
+00:02:26.420 --> 00:02:29.090
+And that's more or
+less equivalent to what
+
+00:02:29.090 --> 00:02:31.822
+document.currentscript.source
+used to be.
+
+00:02:31.822 --> 00:02:32.530
+SPEAKER 2: Right.
+
+00:02:32.530 --> 00:02:33.946
+SPEAKER 1: The
+thing you can't use
+
+00:02:33.946 --> 00:02:35.310
+that is because if you have--
+
+00:02:35.310 --> 00:02:39.179
+so document.currentscript gives
+you the script tag of the--
+
+00:02:39.179 --> 00:02:40.970
+SPEAKER 2: That's
+included in the document.
+
+00:02:40.970 --> 00:02:41.130
+SPEAKER 1: Yeah.
+
+00:02:41.130 --> 00:02:41.450
+SPEAKER 2: Yeah.
+
+00:02:41.450 --> 00:02:41.640
+Right.
+
+00:02:41.640 --> 00:02:42.630
+SPEAKER 1: That's
+currently running.
+
+00:02:42.630 --> 00:02:43.338
+SPEAKER 2: Right.
+
+00:02:43.338 --> 00:02:45.510
+SPEAKER 1: Now, the problem
+is that a JavaScript
+
+00:02:45.510 --> 00:02:48.657
+module can have an
+import, and so that
+
+00:02:48.657 --> 00:02:49.740
+doesn't have a script tag.
+
+00:02:49.740 --> 00:02:51.559
+So what is current
+script supposed to be?
+
+00:02:51.559 --> 00:02:53.100
+SPEAKER 2: So it's
+giving you the URL
+
+00:02:53.100 --> 00:02:54.359
+of the current scripts, not--
+
+00:02:54.359 --> 00:02:55.150
+SPEAKER 1: Exactly.
+
+00:02:55.150 --> 00:02:57.930
+And that is super important
+if you think about--
+
+00:02:57.930 --> 00:03:00.480
+if you want to do some path
+mangling for dynamic imports,
+
+00:03:00.480 --> 00:03:02.760
+or any kind of module
+loader, or maybe just
+
+00:03:02.760 --> 00:03:04.860
+do a relative path
+resolution-- all these things.
+
+00:03:04.860 --> 00:03:08.629
+SPEAKER 2: So DIR name, the
+thing that you have in Node.
+
+00:03:08.629 --> 00:03:09.670
+SPEAKER 1: Yeah, exactly.
+
+00:03:09.670 --> 00:03:09.960
+SPEAKER 2: OK.
+
+00:03:09.960 --> 00:03:10.260
+OK.
+
+00:03:10.260 --> 00:03:10.990
+SPEAKER 1: That kind of thing.
+
+00:03:10.990 --> 00:03:11.200
+SPEAKER 2: OK.
+
+00:03:11.200 --> 00:03:12.699
+SPEAKER 1: So it's
+a simple feature,
+
+00:03:12.699 --> 00:03:14.850
+but it's actually quite
+powerful and useful.
+
+00:03:14.850 --> 00:03:16.350
+SPEAKER 2: All right.
+
+00:03:16.350 --> 00:03:19.080
+So it feels like we had two
+quite small, simple features
+
+00:03:19.080 --> 00:03:19.650
+there.
+
+00:03:19.650 --> 00:03:20.720
+SPEAKER 1: It's a nice change.
+
+00:03:20.720 --> 00:03:22.440
+SPEAKER 2: Yeah, some
+of them might be bigger.
+
+00:03:22.440 --> 00:03:24.523
+So it feels like we could
+probably make a decision
+
+00:03:24.523 --> 00:03:25.710
+reasonably quickly.
+
+00:03:25.710 --> 00:03:26.960
+But then--
+
+00:03:26.960 --> 00:03:29.836
+SPEAKER 1: I-- so trim start
+trim end doesn't feel that new,
+
+00:03:29.836 --> 00:03:30.960
+because we already have it.
+
+00:03:30.960 --> 00:03:33.540
+And also, I barely ever
+only trim on one side.
+
+00:03:33.540 --> 00:03:34.660
+I usually just call trim.
+
+00:03:34.660 --> 00:03:35.130
+SPEAKER 2: Really?
+
+00:03:35.130 --> 00:03:36.254
+Is that a lifestyle choice?
+
+00:03:36.254 --> 00:03:38.555
+[LAUGHTER]
+
+00:03:39.510 --> 00:03:41.880
+SPEAKER 1: Yeah, I
+usually trim all the way.
+
+00:03:41.880 --> 00:03:44.220
+SPEAKER 2: I am
+going to vote for--
+
+00:03:44.220 --> 00:03:45.710
+same reasons as
+you-- import meta.
+
+00:03:45.710 --> 00:03:46.360
+SPEAKER 1: Yeah, absolutely.
+
+00:03:46.360 --> 00:03:47.510
+SPEAKER 2: It's
+more of a feature.
+
+00:03:47.510 --> 00:03:48.510
+It is a new thing, where--
+
+00:03:48.510 --> 00:03:50.718
+SPEAKER 1: And it's actually
+currently really painful
+
+00:03:50.718 --> 00:03:52.830
+once you run into the
+problem that it's not
+
+00:03:52.830 --> 00:03:53.935
+supported in all browsers.
+
+00:03:53.935 --> 00:03:54.210
+SPEAKER 2: Yep.
+
+00:03:54.210 --> 00:03:55.835
+SPEAKER 1: And
+[INAUDIBLE] modules are,
+
+00:03:55.835 --> 00:03:58.470
+but import.meta is not, and
+it's sometimes really annoying.
+
+00:03:58.470 --> 00:03:58.920
+SPEAKER 2: Sold.
+
+00:03:58.920 --> 00:03:59.419
+There we go.
+
+00:03:59.419 --> 00:04:00.360
+Import.meta.
+
+00:04:00.360 --> 00:04:03.800
+Let's introduce the
+next feature, which is--
+
+00:04:03.800 --> 00:04:05.380
+this is a lot of letters.
+
+00:04:05.380 --> 00:04:06.090
+SPEAKER 1: RegEx?
+
+00:04:06.090 --> 00:04:06.977
+SPEAKER 2: RegEx.
+
+00:04:06.977 --> 00:04:08.060
+See, the font is terrible.
+
+00:04:08.060 --> 00:04:10.260
+It looks like BegEx.
+
+00:04:10.260 --> 00:04:12.184
+BegEx named capture groups.
+
+00:04:12.184 --> 00:04:12.850
+SPEAKER 1: Yeah.
+
+00:04:12.850 --> 00:04:13.516
+SPEAKER 2: Yeah.
+
+00:04:13.516 --> 00:04:14.980
+SPEAKER 1: I know these.
+
+00:04:14.980 --> 00:04:16.980
+SPEAKER 2: Oh, see,
+I heard of them.
+
+00:04:16.980 --> 00:04:18.640
+I never actually
+looked at the syntax.
+
+00:04:18.640 --> 00:04:21.540
+But it is just this.
+
+00:04:21.540 --> 00:04:24.685
+I find RegEx to be write only.
+
+00:04:24.685 --> 00:04:26.560
+SPEAKER 1: Yeah, it's
+execute the line noise.
+
+00:04:26.560 --> 00:04:26.820
+SPEAKER 2: Yeah.
+
+00:04:26.820 --> 00:04:27.550
+SPEAKER 1: Once
+you've written it,
+
+00:04:27.550 --> 00:04:29.180
+it's absolutely
+impossible to know--
+
+00:04:29.180 --> 00:04:30.846
+SPEAKER 2: You write
+some RegEx, and you
+
+00:04:30.846 --> 00:04:33.570
+go, 1, 2, 3, what is this?
+
+00:04:33.570 --> 00:04:34.570
+I don't know.
+
+00:04:34.570 --> 00:04:36.232
+It makes no sense.
+
+00:04:36.232 --> 00:04:37.190
+I knew it a second ago.
+
+00:04:37.190 --> 00:04:38.386
+I now don't.
+
+00:04:38.386 --> 00:04:39.510
+But being able to do this--
+
+00:04:39.510 --> 00:04:42.240
+name groups like this, and
+then-- so result.groups,
+
+00:04:42.240 --> 00:04:43.790
+you get the stuff out.
+
+00:04:43.790 --> 00:04:44.290
+Brilliant.
+
+00:04:44.290 --> 00:04:45.930
+SPEAKER 1: Before that, you
+only had a numbered array,
+
+00:04:45.930 --> 00:04:47.730
+and it would be
+completely unclear--
+
+00:04:47.730 --> 00:04:48.210
+SPEAKER 2: Exactly.
+
+00:04:48.210 --> 00:04:48.790
+SPEAKER 1: --what
+you were doing.
+
+00:04:48.790 --> 00:04:49.570
+SPEAKER 2: And
+another place that it
+
+00:04:49.570 --> 00:04:51.570
+would be unclear is when
+you're using string.replace.
+
+00:04:51.570 --> 00:04:52.200
+SPEAKER 1: Oh, yeah.
+
+00:04:52.200 --> 00:04:54.010
+SPEAKER 2: But you can use the
+group names there, as well.
+
+00:04:54.010 --> 00:04:55.620
+So in this example,
+I'm changing it
+
+00:04:55.620 --> 00:04:58.307
+from being year, month,
+day to day, month, year.
+
+00:04:58.307 --> 00:05:00.890
+SPEAKER 1: Because month, day,
+year is absolutely nonsensical,
+
+00:05:00.890 --> 00:05:01.820
+and should not be used.
+
+00:05:01.820 --> 00:05:02.240
+SPEAKER 2: Agreed.
+
+00:05:02.240 --> 00:05:02.739
+Yes.
+
+00:05:02.739 --> 00:05:04.470
+Two people, European.
+
+00:05:04.470 --> 00:05:04.970
+There we go.
+
+00:05:04.970 --> 00:05:06.705
+We absolutely think that.
+
+00:05:06.705 --> 00:05:08.330
+SPEAKER 1: More on
+that next Wednesday.
+
+00:05:08.330 --> 00:05:09.560
+[LAUGHTER]
+
+00:05:09.560 --> 00:05:11.810
+SPEAKER 2: OK, we've been
+proven to be non-trustworthy
+
+00:05:11.810 --> 00:05:12.860
+when it comes to dating.
+
+00:05:12.860 --> 00:05:13.360
+OK.
+
+00:05:13.360 --> 00:05:14.050
+Fair enough.
+
+00:05:14.050 --> 00:05:15.480
+Dating-- that's
+not what I meant.
+
+00:05:15.480 --> 00:05:15.980
+[LAUGHTER]
+
+00:05:15.980 --> 00:05:17.020
+But still, also true.
+
+00:05:17.020 --> 00:05:18.270
+SPEAKER 1: Also probably true.
+
+00:05:18.270 --> 00:05:19.621
+[LAUGHTER]
+
+00:05:19.621 --> 00:05:20.120
+All right.
+
+00:05:20.120 --> 00:05:23.090
+Going up against RegEx
+Name Capture Groups--
+
+00:05:23.090 --> 00:05:23.857
+SPEAKER 2: Yep.
+
+00:05:23.857 --> 00:05:25.190
+SPEAKER 1: Oh, I did that right.
+
+00:05:25.190 --> 00:05:26.590
+Is Relative Time Format.
+
+00:05:26.590 --> 00:05:27.590
+SPEAKER 2: We're going--
+
+00:05:27.590 --> 00:05:30.110
+well, the other thing wasn't
+strictly to do with dates,
+
+00:05:30.110 --> 00:05:31.947
+but we're still sticking
+with that theme.
+
+00:05:31.947 --> 00:05:33.780
+SPEAKER 1: We're sticking
+in that territory.
+
+00:05:33.780 --> 00:05:37.170
+This is basically
+Moment.js on the platform.
+
+00:05:37.170 --> 00:05:37.910
+SPEAKER 2: Oh.
+
+00:05:37.910 --> 00:05:39.034
+SPEAKER 1: Yeah, we got it.
+
+00:05:39.034 --> 00:05:42.140
+So you can basically create
+a Relative Time Format
+
+00:05:42.140 --> 00:05:44.090
+instance that is localized.
+
+00:05:44.090 --> 00:05:46.092
+In this case, I'm using
+English because we've
+
+00:05:46.092 --> 00:05:47.300
+been mostly speaking English.
+
+00:05:47.300 --> 00:05:48.750
+We could've done
+German, but I didn't.
+
+00:05:48.750 --> 00:05:49.130
+SPEAKER 2: OK.
+
+00:05:49.130 --> 00:05:50.370
+SPEAKER 1: Also, I mostly
+copied and pasted it,
+
+00:05:50.370 --> 00:05:52.578
+and I was too lazy to actually
+generate a German one.
+
+00:05:52.578 --> 00:05:53.250
+SPEAKER 2: Yep.
+
+00:05:53.250 --> 00:05:53.630
+SPEAKER 1: Yeah.
+
+00:05:53.630 --> 00:05:55.214
+You just pass in--
+here's a number.
+
+00:05:55.214 --> 00:05:55.880
+Here's the unit.
+
+00:05:55.880 --> 00:05:59.047
+It will give you that
+as a localized string.
+
+00:05:59.047 --> 00:05:59.630
+SPEAKER 2: Oh.
+
+00:05:59.630 --> 00:06:01.796
+SPEAKER 1: And there's,
+obviously, many more options
+
+00:06:01.796 --> 00:06:05.950
+if you want to have a full
+breakdown of just the highest--
+
+00:06:05.950 --> 00:06:09.140
+if you want to have four months,
+three days, and two hours ago,
+
+00:06:09.140 --> 00:06:11.816
+or if you want to
+just have one of them.
+
+00:06:11.816 --> 00:06:13.940
+If you want to have it more
+numeric, or spelled out
+
+00:06:13.940 --> 00:06:14.440
+as words.
+
+00:06:14.440 --> 00:06:15.680
+All these options are there.
+
+00:06:15.680 --> 00:06:18.170
+But basically, Moment.js
+on the platform.
+
+00:06:18.170 --> 00:06:21.350
+It's a big dependency that
+you can hopefully ditch now.
+
+00:06:21.350 --> 00:06:24.740
+SPEAKER 2: Well, I
+mean, I felt like it
+
+00:06:24.740 --> 00:06:27.380
+was going to be an easy
+one, but now I'm less sure.
+
+00:06:30.200 --> 00:06:32.570
+Things like Moment.js are
+one of the things that leads
+
+00:06:32.570 --> 00:06:33.770
+to quite big bundle sizes.
+
+00:06:33.770 --> 00:06:33.920
+SPEAKER 1: Yeah.
+
+00:06:33.920 --> 00:06:35.730
+SPEAKER 2: Because you end
+up with these large libraries
+
+00:06:35.730 --> 00:06:35.980
+and--
+
+00:06:35.980 --> 00:06:38.396
+SPEAKER 1: Yeah, especially
+if you don't [INAUDIBLE] them.
+
+00:06:38.396 --> 00:06:40.660
+They have all the
+localization still in there.
+
+00:06:40.660 --> 00:06:41.540
+SPEAKER 2: Right.
+
+00:06:41.540 --> 00:06:43.370
+So having that just
+in the platform,
+
+00:06:43.370 --> 00:06:45.410
+that feels a huge win.
+
+00:06:45.410 --> 00:06:48.391
+The RegEx thing is really useful
+for the readability of RegEx.
+
+00:06:48.391 --> 00:06:48.890
+But--
+
+00:06:48.890 --> 00:06:50.473
+SPEAKER 1: How often
+do you use RegEx?
+
+00:06:50.473 --> 00:06:52.160
+I know Jason lives off of RegEx.
+
+00:06:52.160 --> 00:06:52.880
+SPEAKER 2: Yes.
+
+00:06:52.880 --> 00:06:54.470
+You mean our colleague Jason.
+
+00:06:54.470 --> 00:06:55.040
+SPEAKER 1: Jason Miller.
+
+00:06:55.040 --> 00:06:55.120
+Yeah.
+
+00:06:55.120 --> 00:06:56.786
+SPEAKER 2: Because
+it sounds like you're
+
+00:06:56.786 --> 00:06:58.100
+talking about the web standard.
+
+00:06:58.100 --> 00:06:58.700
+SPEAKER 1: Oh, JSON?
+
+00:06:58.700 --> 00:07:00.033
+SPEAKER 2: JSON lives off RegEx.
+
+00:07:00.033 --> 00:07:02.390
+It's like, you should not
+pause your JSON with RegEx.
+
+00:07:02.390 --> 00:07:04.130
+SPEAKER 1: Turns out, you can
+parse languages with RegEx.
+
+00:07:04.130 --> 00:07:04.730
+No, I meant--
+
+00:07:04.730 --> 00:07:04.760
+SPEAKER 2: Absolutely.
+
+00:07:04.760 --> 00:07:06.176
+SPEAKER 1: --I
+meant Jason Miller,
+
+00:07:06.176 --> 00:07:10.060
+who does all kinds of
+minification, and mini-code--
+
+00:07:10.060 --> 00:07:11.420
+micro library magic.
+
+00:07:11.420 --> 00:07:13.287
+And it's often because RegEx.
+
+00:07:13.287 --> 00:07:15.620
+SPEAKER 2: But I'm going to
+say the Relative Time thing.
+
+00:07:15.620 --> 00:07:16.070
+SPEAKER 1: Yeah, I agree.
+
+00:07:16.070 --> 00:07:17.945
+SPEAKER 2: It's one of
+the first bits of intl
+
+00:07:17.945 --> 00:07:21.150
+that I am really, really
+happy with, I'd say.
+
+00:07:21.150 --> 00:07:22.020
+SPEAKER 1: Yeah.
+
+00:07:22.020 --> 00:07:23.210
+SPEAKER 2: Some of
+that, I found it to be--
+
+00:07:23.210 --> 00:07:24.680
+SPEAKER 1: It's a
+well-designed API, it seems.
+
+00:07:24.680 --> 00:07:25.070
+SPEAKER 2: Yes.
+
+00:07:25.070 --> 00:07:26.300
+SPEAKER 1: I think there
+are still some things that
+
+00:07:26.300 --> 00:07:27.575
+could be even better.
+
+00:07:27.575 --> 00:07:28.510
+But you know what?
+
+00:07:28.510 --> 00:07:29.934
+I'm going to cut my losses here.
+
+00:07:29.934 --> 00:07:30.600
+It's a good API.
+
+00:07:30.600 --> 00:07:30.860
+SPEAKER 2: Yeah.
+
+00:07:30.860 --> 00:07:32.651
+It is something that
+you could legitimately
+
+00:07:32.651 --> 00:07:34.150
+replace Moment with.
+
+00:07:34.150 --> 00:07:35.196
+SPEAKER 1: Yeah.
+
+00:07:35.196 --> 00:07:37.990
+SPEAKER 2: And look, we
+have a new thing to decide.
+
+00:07:37.990 --> 00:07:39.870
+So import.meta or
+Relative Time Format.
+
+00:07:39.870 --> 00:07:41.930
+I'm going to go with
+Relative Time Format.
+
+00:07:41.930 --> 00:07:44.090
+Oh, you're less sure.
+
+00:07:44.090 --> 00:07:45.740
+SPEAKER 1: I'm trying to--
+
+00:07:45.740 --> 00:07:50.150
+subjectively, I have run
+more often into import.meta
+
+00:07:50.150 --> 00:07:53.150
+when writing stuff than
+into Relative Time Format.
+
+00:07:53.150 --> 00:07:56.090
+That being said, pretty much--
+
+00:07:56.090 --> 00:07:57.980
+a lot of apps need the
+Relative Time Format.
+
+00:07:57.980 --> 00:08:01.130
+Many apps probably
+don't need import.meta,
+
+00:08:01.130 --> 00:08:03.590
+in terms of the
+average developer.
+
+00:08:03.590 --> 00:08:04.840
+I'm going to sided with you.
+
+00:08:04.840 --> 00:08:07.400
+RTF is the big hitter here.
+
+00:08:07.400 --> 00:08:09.139
+SPEAKER 2: Yeah,
+the wins for the web
+
+00:08:09.139 --> 00:08:10.930
+by reducing those model
+sizes, I just think
+
+00:08:10.930 --> 00:08:12.860
+feels bigger
+[INAUDIBLE] import.meta,
+
+00:08:12.860 --> 00:08:16.069
+you could probably work
+around, in a lot of cases.
+
+00:08:16.069 --> 00:08:18.110
+SPEAKER 1: There's probably
+a babel plug in there
+
+00:08:18.110 --> 00:08:19.264
+or something that does it.
+
+00:08:19.264 --> 00:08:20.930
+SPEAKER 2: Very
+possibly, very possibly.
+
+00:08:20.930 --> 00:08:21.480
+Right.
+
+00:08:21.480 --> 00:08:22.660
+OK.
+
+00:08:22.660 --> 00:08:23.160
+Yeah.
+
+00:08:23.160 --> 00:08:23.701
+There you go.
+
+00:08:23.701 --> 00:08:27.420
+So we got Relative Time Formats
+through to the next stage.
+
+00:08:27.420 --> 00:08:30.425
+But now, I want to talk
+about Resize Observer.
+
+00:08:30.425 --> 00:08:31.300
+SPEAKER 1: I like it.
+
+00:08:31.300 --> 00:08:34.309
+SPEAKER 2: I've
+got a feeling this
+
+00:08:34.309 --> 00:08:35.720
+might go far in this contest.
+
+00:08:35.720 --> 00:08:36.540
+Because--
+
+00:08:36.540 --> 00:08:37.970
+SPEAKER 1: It's because I
+wrote the article on it.
+
+00:08:37.970 --> 00:08:39.899
+SPEAKER 2: You did
+write the article on it.
+
+00:08:39.899 --> 00:08:41.399
+It's a really good
+article, as well,
+
+00:08:41.399 --> 00:08:43.760
+and it's such an amazing
+feature, I think.
+
+00:08:43.760 --> 00:08:45.420
+SPEAKER 1: It's
+also quite simple.
+
+00:08:45.420 --> 00:08:48.677
+SPEAKER 2: It is also
+quite simple, I would say.
+
+00:08:48.677 --> 00:08:50.510
+You give it an element,
+and it will tell you
+
+00:08:50.510 --> 00:08:51.370
+when it changes size.
+
+00:08:51.370 --> 00:08:51.710
+SPEAKER 1: Yeah.
+
+00:08:51.710 --> 00:08:53.168
+SPEAKER 2: Some of
+the complexities
+
+00:08:53.168 --> 00:08:55.505
+in how it handles recursive
+changes, like it'll only
+
+00:08:55.505 --> 00:08:57.880
+fit sort of things inside that
+element that are changing.
+
+00:08:57.880 --> 00:08:57.986
+SPEAKER 1: Yeah.
+
+00:08:57.986 --> 00:08:59.610
+But most of the time,
+that is something
+
+00:08:59.610 --> 00:09:00.880
+you shouldn't be running into.
+
+00:09:00.880 --> 00:09:04.610
+But mostly, you just say this
+is a resize event for elements,
+
+00:09:04.610 --> 00:09:05.870
+rather than just the window.
+
+00:09:05.870 --> 00:09:07.070
+SPEAKER 2: Absolutely.
+
+00:09:07.070 --> 00:09:08.450
+And that--
+
+00:09:08.450 --> 00:09:10.370
+SPEAKER 1: You can
+build element queries,
+
+00:09:10.370 --> 00:09:13.010
+I think they are called,
+on top of all these things.
+
+00:09:13.010 --> 00:09:14.926
+SPEAKER 2: That, for me,
+is the selling point.
+
+00:09:14.926 --> 00:09:16.705
+It's the element
+container query stuff--
+
+00:09:16.705 --> 00:09:18.080
+SPEAKER 1: Container
+query, yeah.
+
+00:09:18.080 --> 00:09:19.590
+SPEAKER 2: --that we've
+been wanting for ages.
+
+00:09:19.590 --> 00:09:20.173
+SPEAKER 1: OK.
+
+00:09:20.173 --> 00:09:22.100
+Let's see who has to
+beat the Resize Observer.
+
+00:09:22.100 --> 00:09:22.766
+SPEAKER 2: Yeah.
+
+00:09:22.766 --> 00:09:24.080
+SPEAKER 1: It's Audio Worklet.
+
+00:09:24.080 --> 00:09:24.830
+SPEAKER 2: Oh, OK.
+
+00:09:24.830 --> 00:09:25.850
+SPEAKER 1: So another worklet.
+
+00:09:25.850 --> 00:09:27.230
+The worklets are
+coming to the platform.
+
+00:09:27.230 --> 00:09:27.710
+SPEAKER 2: Yes.
+
+00:09:27.710 --> 00:09:28.960
+It's the year of the worklets.
+
+00:09:28.960 --> 00:09:31.100
+SPEAKER 1: So a little catch-up.
+
+00:09:31.100 --> 00:09:33.780
+Usually, when you do audio,
+you create an audio context,
+
+00:09:33.780 --> 00:09:36.630
+and then you can create
+notes and connect them.
+
+00:09:36.630 --> 00:09:38.840
+So in this case, I'm
+creating a track note
+
+00:09:38.840 --> 00:09:40.311
+from an audio element.
+
+00:09:40.311 --> 00:09:41.810
+Then I'm creating
+a gain note, which
+
+00:09:41.810 --> 00:09:43.280
+allows me to adjust the gain.
+
+00:09:43.280 --> 00:09:46.052
+How much louder or quieter do
+I want this audio to become?
+
+00:09:46.052 --> 00:09:46.760
+SPEAKER 2: Right.
+
+00:09:46.760 --> 00:09:47.520
+SPEAKER 1: And a panner.
+
+00:09:47.520 --> 00:09:49.250
+Do I want it on the left
+speaker, the right speaker,
+
+00:09:49.250 --> 00:09:50.280
+somewhere in the middle?
+
+00:09:50.280 --> 00:09:50.550
+SPEAKER 2: OK.
+
+00:09:50.550 --> 00:09:52.100
+SPEAKER 1: And then I
+connect these nodes.
+
+00:09:52.100 --> 00:09:53.720
+It's like a little
+data flow model.
+
+00:09:53.720 --> 00:09:54.500
+SPEAKER 2: It's
+very similar to what
+
+00:09:54.500 --> 00:09:56.780
+you would do in an audio system,
+where you're plugging things
+
+00:09:56.780 --> 00:09:58.440
+into each other,
+different processes.
+
+00:09:58.440 --> 00:09:58.850
+SPEAKER 1: The
+reason it's written
+
+00:09:58.850 --> 00:10:00.500
+this way is because
+all of this is
+
+00:10:00.500 --> 00:10:01.755
+running in a different thread.
+
+00:10:01.755 --> 00:10:02.630
+SPEAKER 2: Of course.
+
+00:10:02.630 --> 00:10:04.310
+SPEAKER 1: So all
+this data mangling
+
+00:10:04.310 --> 00:10:05.726
+is happening on a
+different thread
+
+00:10:05.726 --> 00:10:08.450
+because its audio has to be,
+usually, super low latency.
+
+00:10:08.450 --> 00:10:11.360
+Latency is one of the biggest
+factors when you do audio work.
+
+00:10:11.360 --> 00:10:12.440
+SPEAKER 2: It's
+kind of declarative.
+
+00:10:12.440 --> 00:10:12.930
+SPEAKER 1: Yeah.
+
+00:10:12.930 --> 00:10:13.670
+SPEAKER 2: Yeah.
+
+00:10:13.670 --> 00:10:14.870
+SPEAKER 1: But then,
+people are like, well,
+
+00:10:14.870 --> 00:10:16.730
+I kind of want to manipulate
+the buffers myself.
+
+00:10:16.730 --> 00:10:19.100
+I want to get an audio buffer,
+and do some math myself.
+
+00:10:19.100 --> 00:10:19.450
+SPEAKER 2: Right.
+
+00:10:19.450 --> 00:10:20.670
+SPEAKER 1: And they
+were looking at it like,
+
+00:10:20.670 --> 00:10:21.800
+do we do it with events?
+
+00:10:21.800 --> 00:10:23.900
+But events are async by
+default. So it gets really
+
+00:10:23.900 --> 00:10:25.610
+hard with the real time-ness.
+
+00:10:25.610 --> 00:10:27.410
+And now worklets
+are a primitive that
+
+00:10:27.410 --> 00:10:29.201
+actually give the
+solution, because now you
+
+00:10:29.201 --> 00:10:30.090
+can do your own node.
+
+00:10:30.090 --> 00:10:32.540
+So this is the same code,
+but now, there is a sum node.
+
+00:10:32.540 --> 00:10:33.140
+SPEAKER 2: Oh.
+
+00:10:33.140 --> 00:10:35.514
+SPEAKER 1: And the sum node
+is basically an audio worklet
+
+00:10:35.514 --> 00:10:37.070
+node, and it takes
+a name, and then,
+
+00:10:37.070 --> 00:10:41.750
+in a different file,
+that we loaded up here,
+
+00:10:41.750 --> 00:10:43.860
+I can extend
+AudioWorkletProcessor,
+
+00:10:43.860 --> 00:10:46.430
+which is the basic node,
+and create my own one.
+
+00:10:46.430 --> 00:10:48.260
+And just, in there,
+I'll have access
+
+00:10:48.260 --> 00:10:50.870
+to my inputs, which is
+an array of buffers.
+
+00:10:50.870 --> 00:10:53.582
+And I can define what
+is in the outputs.
+
+00:10:53.582 --> 00:10:54.290
+SPEAKER 2: Right.
+
+00:10:54.290 --> 00:10:56.456
+Because there are ways to
+do this sort of processing
+
+00:10:56.456 --> 00:10:59.330
+on the main thread, and I
+think it's now a deprecated API
+
+00:10:59.330 --> 00:11:01.402
+because you run
+into all of this.
+
+00:11:01.402 --> 00:11:02.860
+SPEAKER 1: The
+asyncedness, and all
+
+00:11:02.860 --> 00:11:03.640
+the real time-ness problems.
+
+00:11:03.640 --> 00:11:05.420
+And it adds latency with
+the thread hops in, as well,
+
+00:11:05.420 --> 00:11:06.990
+because audio is already
+a different thread,
+
+00:11:06.990 --> 00:11:08.900
+but now you have to jump
+back to main thread.
+
+00:11:08.900 --> 00:11:09.710
+It gets unwieldy.
+
+00:11:09.710 --> 00:11:12.280
+And the worklets can just be
+migrated to a different thread,
+
+00:11:12.280 --> 00:11:13.430
+run on the same thread.
+
+00:11:13.430 --> 00:11:16.910
+You can still maintain
+the same declarative API,
+
+00:11:16.910 --> 00:11:20.780
+and allow basically now to
+have DSP plugins on the web.
+
+00:11:20.780 --> 00:11:22.790
+All the effects that
+people do can now just
+
+00:11:22.790 --> 00:11:24.080
+be ported to an audio worklet.
+
+00:11:24.080 --> 00:11:25.038
+SPEAKER 2: That's nice.
+
+00:11:25.038 --> 00:11:26.990
+That is nice, actually.
+
+00:11:26.990 --> 00:11:28.124
+But--
+
+00:11:28.124 --> 00:11:28.790
+SPEAKER 1: But--
+
+00:11:28.790 --> 00:11:31.280
+SPEAKER 2: But-- it's not
+Resize Observer, though, is it?
+
+00:11:31.280 --> 00:11:32.450
+SPEAKER 1: It's not.
+
+00:11:32.450 --> 00:11:36.005
+Audio is still-- it's
+just in each use case.
+
+00:11:36.005 --> 00:11:37.880
+In general, audio is
+actually kind of frowned
+
+00:11:37.880 --> 00:11:38.680
+upon on the web.
+
+00:11:38.680 --> 00:11:39.860
+And apps, in general--
+
+00:11:39.860 --> 00:11:42.262
+things that just start
+playing audio are bad.
+
+00:11:42.262 --> 00:11:43.220
+SPEAKER 2: That's true.
+
+00:11:43.220 --> 00:11:45.553
+SPEAKER 1: And there is audio
+apps, and those are great.
+
+00:11:45.553 --> 00:11:47.810
+I'm really impressed
+with how far people get.
+
+00:11:47.810 --> 00:11:50.414
+But the audience that can
+use these, fairly small.
+
+00:11:50.414 --> 00:11:51.080
+SPEAKER 2: Yeah.
+
+00:11:51.080 --> 00:11:53.246
+The little bits of audio
+stuff I've done on the web,
+
+00:11:53.246 --> 00:11:54.420
+I've really enjoyed.
+
+00:11:54.420 --> 00:11:54.580
+SPEAKER 1: Yeah.
+
+00:11:54.580 --> 00:11:56.163
+SPEAKER 2: I had
+loads of fun with it.
+
+00:11:56.163 --> 00:11:58.860
+But it is-- I've only
+done it once or twice.
+
+00:11:58.860 --> 00:12:00.440
+SPEAKER 1: [INAUDIBLE] The first
+time was one of them, right?
+
+00:12:00.440 --> 00:12:02.170
+SPEAKER 2: Yeah, that actually
+might be the only one.
+
+00:12:02.170 --> 00:12:02.750
+[LAUGHTER]
+
+00:12:02.750 --> 00:12:04.791
+And I did a little bit of
+extra stuff after that,
+
+00:12:04.791 --> 00:12:05.890
+but it was mostly that.
+
+00:12:05.890 --> 00:12:06.747
+[INTERPOSING VOICES]
+
+00:12:06.747 --> 00:12:08.330
+SPEAKER 1: --observer
+is just so good.
+
+00:12:08.330 --> 00:12:10.670
+SPEAKER 2: I want [INAUDIBLE]
+in every browser today,
+
+00:12:10.670 --> 00:12:13.190
+please, so I can do
+that sort of stuff,
+
+00:12:13.190 --> 00:12:17.982
+have the container queries sort
+of thing stop just attaching.
+
+00:12:17.982 --> 00:12:20.440
+Because what we do right now
+is we attach a Resize Listener
+
+00:12:20.440 --> 00:12:23.069
+to the window, but that
+doesn't necessarily mean that--
+
+00:12:23.069 --> 00:12:24.860
+that's not going to
+catch all cases where--
+
+00:12:24.860 --> 00:12:26.200
+SPEAKER 1: No, and then you call
+get [INAUDIBLE] client direct,
+
+00:12:26.200 --> 00:12:27.620
+and becomes a
+performance footgun.
+
+00:12:27.620 --> 00:12:29.064
+It's so hard to do right.
+
+00:12:29.064 --> 00:12:30.230
+SPEAKER 2: Exactly, exactly.
+
+00:12:30.230 --> 00:12:30.730
+Right.
+
+00:12:30.730 --> 00:12:32.730
+So that goes through
+to the next stage.
+
+00:12:32.730 --> 00:12:35.719
+And now we are coming onto
+the final two features
+
+00:12:35.719 --> 00:12:37.010
+that we're going to talk about.
+
+00:12:37.010 --> 00:12:38.335
+SPEAKER 1: Yeah.
+
+00:12:38.335 --> 00:12:41.825
+SPEAKER 2: I want to
+talk about CacheMode.
+
+00:12:41.825 --> 00:12:42.710
+SPEAKER 1: On Fetch.
+
+00:12:42.710 --> 00:12:43.110
+SPEAKER 2: Yes.
+
+00:12:43.110 --> 00:12:44.690
+So this is part of
+request objects.
+
+00:12:44.690 --> 00:12:45.950
+Because it's part
+of request objects,
+
+00:12:45.950 --> 00:12:48.020
+you always get-- it's this
+second parameter of Fetch,
+
+00:12:48.020 --> 00:12:48.570
+as well.
+
+00:12:48.570 --> 00:12:49.277
+SPEAKER 1: Yeah.
+
+00:12:49.277 --> 00:12:51.110
+SPEAKER 2: And what
+you're essentially doing
+
+00:12:51.110 --> 00:12:56.270
+is saying how this request
+should go through the cache,
+
+00:12:56.270 --> 00:12:57.180
+if at all.
+
+00:12:57.180 --> 00:13:02.760
+So with reload, I'm saying, on
+the way out, ignore the cache.
+
+00:13:02.760 --> 00:13:05.564
+But on the way back, it
+can go into the cache.
+
+00:13:05.564 --> 00:13:07.730
+SPEAKER 1: Oh, you have
+control over both "path-es."
+
+00:13:07.730 --> 00:13:08.661
+SPEAKER 2: Yes.
+
+00:13:08.661 --> 00:13:09.160
+Yes.
+
+00:13:09.160 --> 00:13:09.500
+SPEAKER 1: Paths.
+
+00:13:09.500 --> 00:13:10.375
+SPEAKER 2: "Path-es."
+
+00:13:10.375 --> 00:13:11.635
+No, no, no, you say "path-es."
+
+00:13:11.635 --> 00:13:12.270
+Why not?
+
+00:13:12.270 --> 00:13:13.155
+It's Christmas.
+
+00:13:13.155 --> 00:13:13.780
+Treat yourself.
+
+00:13:13.780 --> 00:13:16.175
+Treat yourself to some new
+words that you just made up.
+
+00:13:16.175 --> 00:13:16.675
+That's fine.
+
+00:13:16.675 --> 00:13:18.450
+[LAUGHTER]
+
+00:13:18.450 --> 00:13:20.664
+So yeah, but this
+is good if you know
+
+00:13:20.664 --> 00:13:22.080
+there's a more
+up-to-date version,
+
+00:13:22.080 --> 00:13:26.680
+but the user has one in
+the cache that's set.
+
+00:13:26.680 --> 00:13:28.180
+SPEAKER 1: If you
+one in the cashe--
+
+00:13:28.180 --> 00:13:29.013
+[INTERPOSING VOICES]
+
+00:13:29.013 --> 00:13:29.710
+[LAUGHTER]
+
+00:13:29.710 --> 00:13:31.611
+SPEAKER 2: What's in this?
+
+00:13:31.611 --> 00:13:32.110
+Yes.
+
+00:13:32.110 --> 00:13:34.366
+So you can bypass the cache--
+
+00:13:34.366 --> 00:13:35.740
+SPEAKER 1: So
+basically, no store
+
+00:13:35.740 --> 00:13:37.260
+would then be--
+on the way out, it
+
+00:13:37.260 --> 00:13:39.460
+can hit the cache,
+or probably not.
+
+00:13:39.460 --> 00:13:42.537
+SPEAKER 2: No store behaves
+as if the cache doesn't exist.
+
+00:13:42.537 --> 00:13:43.120
+SPEAKER 1: OK.
+
+00:13:43.120 --> 00:13:45.036
+SPEAKER 2: So it bypasses
+the cache both ways.
+
+00:13:45.036 --> 00:13:46.036
+SPEAKER 1: And no cache?
+
+00:13:46.036 --> 00:13:46.702
+SPEAKER 2: Yeah.
+
+00:13:46.702 --> 00:13:48.340
+I'm reading this off
+a piece of paper.
+
+00:13:51.100 --> 00:13:55.150
+Even if there's-- if there's
+an item that is fresh
+
+00:13:55.150 --> 00:13:57.790
+in the cache, it bypasses
+it, but it will still do
+
+00:13:57.790 --> 00:13:59.325
+a re-evaluate, potentially.
+
+00:13:59.325 --> 00:13:59.960
+SPEAKER 1: Freshen the cache.
+
+00:13:59.960 --> 00:14:00.580
+SPEAKER 2: Freshen the cache.
+
+00:14:00.580 --> 00:14:01.070
+SPEAKER 1: Yeah, all right.
+
+00:14:01.070 --> 00:14:01.350
+Cool.
+
+00:14:01.350 --> 00:14:01.933
+SPEAKER 2: OK.
+
+00:14:01.933 --> 00:14:03.940
+Force cache means if
+there's something--
+
+00:14:03.940 --> 00:14:05.523
+SPEAKER 1: Basically,
+the stuff if I'm
+
+00:14:05.523 --> 00:14:07.870
+doing the cache-busting thing,
+where we put random query
+
+00:14:07.870 --> 00:14:09.562
+things, amongst other things.
+
+00:14:09.562 --> 00:14:11.020
+SPEAKER 2: But with
+force cache, it
+
+00:14:11.020 --> 00:14:12.978
+means that you could take
+the item in the cache
+
+00:14:12.978 --> 00:14:14.887
+even if it's stale
+[INAUDIBLE] like Max Edge.
+
+00:14:14.887 --> 00:14:15.970
+And only if cached means--
+
+00:14:15.970 --> 00:14:17.620
+SPEAKER 1: And also don't hit
+the network at all, right?
+
+00:14:17.620 --> 00:14:19.660
+SPEAKER 2: Well, force cache
+will still hit the network,
+
+00:14:19.660 --> 00:14:20.660
+only if cached will not.
+
+00:14:20.660 --> 00:14:21.618
+SPEAKER 1: Interesting.
+
+00:14:21.618 --> 00:14:22.570
+SPEAKER 2: That's it.
+
+00:14:22.570 --> 00:14:23.180
+SPEAKER 1: Lots of control.
+
+00:14:23.180 --> 00:14:23.890
+I like it.
+
+00:14:23.890 --> 00:14:25.889
+SPEAKER 2: Only if cached
+has to be same origin.
+
+00:14:25.889 --> 00:14:27.070
+That is the feature.
+
+00:14:27.070 --> 00:14:27.945
+SPEAKER 1: All right.
+
+00:14:27.945 --> 00:14:29.890
+Going up against
+that is class fields.
+
+00:14:29.890 --> 00:14:30.900
+SPEAKER 2: Oh.
+
+00:14:30.900 --> 00:14:31.750
+Oh.
+
+00:14:31.750 --> 00:14:32.530
+SPEAKER 1: Yeah.
+
+00:14:32.530 --> 00:14:33.820
+SPEAKER 2: I don't know a
+lot about this, so I'm--
+
+00:14:33.820 --> 00:14:35.070
+SPEAKER 1: It's pretty simple.
+
+00:14:35.070 --> 00:14:36.630
+It's this.
+
+00:14:36.630 --> 00:14:37.870
+SPEAKER 2: OK.
+
+00:14:37.870 --> 00:14:39.080
+SPEAKER 1: So far--
+
+00:14:39.080 --> 00:14:39.665
+so one--
+
+00:14:39.665 --> 00:14:41.290
+SPEAKER 2: So this doesn't
+include the private.
+
+00:14:41.290 --> 00:14:41.840
+SPEAKER 1: No.
+
+00:14:41.840 --> 00:14:43.756
+But it will, basically,
+be built on top of it.
+
+00:14:43.756 --> 00:14:45.490
+So once-- this is
+landed in Chrome.
+
+00:14:45.490 --> 00:14:48.634
+The private ones are the
+names that start with a--
+
+00:14:48.634 --> 00:14:49.300
+SPEAKER 2: Hash.
+
+00:14:49.300 --> 00:14:50.200
+SPEAKER 1: --hash.
+
+00:14:50.200 --> 00:14:50.530
+SPEAKER 2: Hashtag.
+
+00:14:50.530 --> 00:14:51.640
+SPEAKER 1: Hash-- yes.
+
+00:14:51.640 --> 00:14:52.750
+SPEAKER 2: Hashtag's what
+the kids call it now.
+
+00:14:52.750 --> 00:14:53.110
+SPEAKER 1: And
+those will only be
+
+00:14:53.110 --> 00:14:55.270
+accessible from
+within the function--
+
+00:14:55.270 --> 00:14:57.730
+from within the class,
+not from outside.
+
+00:14:57.730 --> 00:15:01.720
+This is pretty much
+just sugar, I guess,
+
+00:15:01.720 --> 00:15:03.482
+over getters-- and
+set it getters.
+
+00:15:03.482 --> 00:15:05.440
+But the biggest beneficiary
+would, for example,
+
+00:15:05.440 --> 00:15:06.231
+be custom elements.
+
+00:15:06.231 --> 00:15:09.900
+Because you have the
+observed attributes field
+
+00:15:09.900 --> 00:15:13.140
+that always has to be a
+static getter function,
+
+00:15:13.140 --> 00:15:15.584
+and now it could just be
+a proper static attribute.
+
+00:15:15.584 --> 00:15:18.250
+And it just looks nice, and it's
+easier to read what's going on.
+
+00:15:18.250 --> 00:15:19.916
+SPEAKER 2: What about
+the instance ones?
+
+00:15:21.519 --> 00:15:23.685
+Where do they happen in
+relation to the constructed?
+
+00:15:23.685 --> 00:15:24.480
+Do you know?
+
+00:15:24.480 --> 00:15:25.521
+SPEAKER 1: I do not know.
+
+00:15:25.521 --> 00:15:27.540
+I'm assuming it runs
+before the constructed.
+
+00:15:27.540 --> 00:15:28.455
+[INTERPOSING VOICES]
+
+00:15:28.455 --> 00:15:29.280
+SPEAKER 1: After the
+super constructer,
+
+00:15:29.280 --> 00:15:30.540
+but before your own constructor.
+
+00:15:30.540 --> 00:15:31.770
+SPEAKER 2: I think that's
+what TypeScript does.
+
+00:15:31.770 --> 00:15:33.110
+So that would make sense.
+
+00:15:33.110 --> 00:15:33.220
+SPEAKER 1: Yeah.
+
+00:15:33.220 --> 00:15:33.780
+SPEAKER 2: I think.
+
+00:15:33.780 --> 00:15:34.170
+SPEAKER 1: Maybe.
+
+00:15:34.170 --> 00:15:34.800
+Who knows?
+
+00:15:34.800 --> 00:15:35.670
+SPEAKER 2: Maybe.
+
+00:15:35.670 --> 00:15:36.330
+Right.
+
+00:15:36.330 --> 00:15:38.070
+OK.
+
+00:15:38.070 --> 00:15:40.020
+SPEAKER 1: That means
+away with the slides,
+
+00:15:40.020 --> 00:15:42.014
+and in with the bracket.
+
+00:15:42.014 --> 00:15:42.930
+SPEAKER 2: This is it.
+
+00:15:46.050 --> 00:15:49.650
+So OK, one of the things that
+is pushing me towards the cache
+
+00:15:49.650 --> 00:15:51.180
+mode is that--
+
+00:15:51.180 --> 00:15:53.820
+SPEAKER 1: It's actually
+capability, right?
+
+00:15:53.820 --> 00:15:56.280
+SPEAKER 2: Well,
+class was a sugar,
+
+00:15:56.280 --> 00:15:57.600
+and it's also sugar that--
+
+00:15:57.600 --> 00:15:59.274
+I write a lot of
+TypeScript these days.
+
+00:15:59.274 --> 00:15:59.940
+SPEAKER 1: Yeah.
+
+00:15:59.940 --> 00:16:01.290
+SPEAKER 2: So I already have it.
+
+00:16:01.290 --> 00:16:02.623
+SPEAKER 1: Yeah, yeah, I get it.
+
+00:16:02.623 --> 00:16:05.585
+SPEAKER 2: I'm glad that it's
+going to JavaScript proper,
+
+00:16:05.585 --> 00:16:09.310
+but I'm more excited about the
+private instance properties.
+
+00:16:09.310 --> 00:16:10.260
+SPEAKER 1: True, true.
+
+00:16:10.260 --> 00:16:11.676
+SPEAKER 2: And the
+things of like,
+
+00:16:11.676 --> 00:16:14.865
+well, they could be munged
+in code unification because--
+
+00:16:14.865 --> 00:16:15.990
+SPEAKER 1: They're private.
+
+00:16:15.990 --> 00:16:17.364
+SPEAKER 2: Yeah,
+they're private.
+
+00:16:17.364 --> 00:16:18.727
+So I'm more excited about that.
+
+00:16:18.727 --> 00:16:20.560
+So I'd be tempted to
+put Cache Mode through.
+
+00:16:22.825 --> 00:16:25.200
+SPEAKER 1: I haven't run into
+the problem with Cache Mode
+
+00:16:25.200 --> 00:16:26.616
+very often, I have
+to say, where I
+
+00:16:26.616 --> 00:16:29.440
+wanted to have control over
+how the Fetch is being handled.
+
+00:16:29.440 --> 00:16:31.640
+That being said, I
+think it's a very--
+
+00:16:31.640 --> 00:16:33.050
+SPEAKER 2: [INAUDIBLE] case.
+
+00:16:33.050 --> 00:16:34.840
+So you've updated
+your service worker.
+
+00:16:34.840 --> 00:16:37.230
+You want to get the freshest
+version of these things,
+
+00:16:37.230 --> 00:16:39.210
+and you've been-- you're not
+in control GitHub's headers.
+
+00:16:39.210 --> 00:16:39.876
+SPEAKER 1: Yeah.
+
+00:16:39.876 --> 00:16:42.640
+I guess it mostly happened when
+I was inside my [INAUDIBLE]..
+
+00:16:42.640 --> 00:16:43.730
+But yeah, I agree.
+
+00:16:43.730 --> 00:16:46.720
+SPEAKER 2: What I would say
+is anything we pick now,
+
+00:16:46.720 --> 00:16:49.420
+I'm going to be voting Resize
+Observer in the next thing.
+
+00:16:49.420 --> 00:16:51.670
+SPEAKER 1: Both of these
+lose against Resize Observer.
+
+00:16:51.670 --> 00:16:53.160
+SPEAKER 2: So go on,
+I'll let you pick.
+
+00:16:53.160 --> 00:16:54.090
+What do you want to put through?
+
+00:16:54.090 --> 00:16:55.070
+SPEAKER 1: Let's put
+cache mode through.
+
+00:16:55.070 --> 00:16:55.450
+SPEAKER 2: All right.
+
+00:16:55.450 --> 00:16:56.380
+SPEAKER 1: It's an
+actual capability was
+
+00:16:56.380 --> 00:16:57.632
+missing, while class fields--
+
+00:16:57.632 --> 00:16:59.590
+we had a workaround for
+years that's been fine.
+
+00:16:59.590 --> 00:17:00.215
+SPEAKER 2: Yes.
+
+00:17:00.215 --> 00:17:01.540
+SPEAKER 1: And it's nice.
+
+00:17:01.540 --> 00:17:02.110
+It's nice.
+
+00:17:02.110 --> 00:17:03.070
+SPEAKER 2: Yes.
+
+00:17:03.070 --> 00:17:03.970
+So next bit.
+
+00:17:03.970 --> 00:17:05.530
+SPEAKER 1: We already said it.
+
+00:17:05.530 --> 00:17:06.040
+Yeah.
+
+00:17:06.040 --> 00:17:07.040
+SPEAKER 2: Yeah, you agree?
+
+00:17:07.040 --> 00:17:07.609
+SPEAKER 1: Yeah, I agree.
+
+00:17:07.609 --> 00:17:09.069
+SPEAKER 2: Oh, we'll going
+to rattle through these.
+
+00:17:09.069 --> 00:17:11.170
+Yeah, I just think
+Resize Observer--
+
+00:17:11.170 --> 00:17:15.240
+the amount of stuff that
+it solves is amazing.
+
+00:17:15.240 --> 00:17:15.740
+Yeah.
+
+00:17:15.740 --> 00:17:16.660
+So Resize Observer.
+
+00:17:16.660 --> 00:17:18.010
+The amount of stuff
+that you can do with it.
+
+00:17:18.010 --> 00:17:18.676
+SPEAKER 1: Yeah.
+
+00:17:18.676 --> 00:17:20.079
+It's very versatile.
+
+00:17:20.079 --> 00:17:23.530
+SPEAKER 2: It solves just
+such a longstanding problem.
+
+00:17:23.530 --> 00:17:24.490
+So now--
+
+00:17:24.490 --> 00:17:26.760
+SPEAKER 1: Now we're getting
+to the interesting bits.
+
+00:17:26.760 --> 00:17:27.550
+SPEAKER 2: Yeah.
+
+00:17:27.550 --> 00:17:28.591
+So what have we got here?
+
+00:17:28.591 --> 00:17:30.715
+Relative time format
+and Resize Observer.
+
+00:17:30.715 --> 00:17:33.400
+SPEAKER 1: It's still
+Resize Observer for me.
+
+00:17:33.400 --> 00:17:34.330
+SPEAKER 2: I agree.
+
+00:17:34.330 --> 00:17:34.840
+I agree.
+
+00:17:34.840 --> 00:17:37.000
+The amount of times
+that I've wanted Resize
+
+00:17:37.000 --> 00:17:39.004
+Observer in the past is loads.
+
+00:17:39.004 --> 00:17:39.670
+SPEAKER 1: Yeah.
+
+00:17:39.670 --> 00:17:41.010
+SPEAKER 2: It's loads.
+
+00:17:41.010 --> 00:17:42.580
+It's probably four or five.
+
+00:17:42.580 --> 00:17:44.710
+SPEAKER 1: The
+physical unit is loads.
+
+00:17:44.710 --> 00:17:47.920
+SPEAKER 2: Is loads, yeah.
+
+00:17:47.920 --> 00:17:50.710
+Yeah, loads times
+two, I would say.
+
+00:17:50.710 --> 00:17:53.530
+So let's put Resize Observer
+through to the next round,
+
+00:17:53.530 --> 00:17:55.540
+and we'll see where
+that leaves us.
+
+00:17:55.540 --> 00:17:57.830
+Here we go.
+
+00:17:57.830 --> 00:17:59.240
+SPEAKER 1: Now we're getting--
+
+00:17:59.240 --> 00:18:00.120
+that's a rough one.
+
+00:18:00.120 --> 00:18:01.160
+SPEAKER 2: Oh.
+
+00:18:01.160 --> 00:18:03.550
+Now-- yeah, I could
+have predicted this.
+
+00:18:03.550 --> 00:18:05.020
+SPEAKER 1: The thing is--
+
+00:18:05.020 --> 00:18:07.270
+SPEAKER 2: Interesting that
+there's a commonality here
+
+00:18:07.270 --> 00:18:10.960
+that these both solve
+longstanding problems.
+
+00:18:10.960 --> 00:18:11.950
+SPEAKER 1: Yeah.
+
+00:18:11.950 --> 00:18:16.280
+SPEAKER 2: The tab discarding
+thing has existed since mobile,
+
+00:18:16.280 --> 00:18:18.830
+and there's only now
+a solution to it.
+
+00:18:18.830 --> 00:18:21.830
+The Resize Observer, you
+could sort of equally
+
+00:18:21.830 --> 00:18:24.170
+say that this has been a
+problem since mobile, as well.
+
+00:18:24.170 --> 00:18:25.580
+Because that's when the
+whole responsive thing--
+
+00:18:25.580 --> 00:18:25.895
+SPEAKER 1: Exactly.
+
+00:18:25.895 --> 00:18:27.615
+SPEAKER 2: --really
+came into be.
+
+00:18:27.615 --> 00:18:29.031
+SPEAKER 1: I'm
+going to be honest.
+
+00:18:29.031 --> 00:18:31.700
+I feel like
+lifecycle API is more
+
+00:18:31.700 --> 00:18:34.765
+work-aroundable than
+Resize Observer.
+
+00:18:34.765 --> 00:18:35.390
+SPEAKER 2: Yes.
+
+00:18:35.390 --> 00:18:37.310
+Because you could put stuff in--
+
+00:18:37.310 --> 00:18:37.840
+SPEAKER 1: You have session--
+
+00:18:37.840 --> 00:18:39.048
+SPEAKER 2: --session storage.
+
+00:18:39.048 --> 00:18:41.630
+SPEAKER 1: On [INAUDIBLE] has
+been there for a long time.
+
+00:18:41.630 --> 00:18:42.380
+And you have IDB.
+
+00:18:42.380 --> 00:18:43.338
+You have local storage.
+
+00:18:43.338 --> 00:18:45.650
+You have means to
+persist state locally.
+
+00:18:45.650 --> 00:18:46.490
+SPEAKER 2: Yes.
+
+00:18:46.490 --> 00:18:47.480
+SPEAKER 1: So you
+could have done
+
+00:18:47.480 --> 00:18:49.140
+the right thing for a
+long, long time now,
+
+00:18:49.140 --> 00:18:50.720
+and this is just the
+cherry on top for you.
+
+00:18:50.720 --> 00:18:52.340
+While Resize Observer,
+you had to go
+
+00:18:52.340 --> 00:18:54.830
+to get [INAUDIBLE] client
+direct, and other awful things.
+
+00:18:54.830 --> 00:18:57.686
+SPEAKER 2: I'm pressing the
+button because I absolutely
+
+00:18:57.686 --> 00:18:58.310
+agree with you.
+
+00:18:58.310 --> 00:18:59.934
+SPEAKER 1: And I
+think I now remember--
+
+00:18:59.934 --> 00:19:03.030
+this is our second finalist,
+if I remember correctly.
+
+00:19:03.030 --> 00:19:03.772
+SPEAKER 2: Oh.
+
+00:19:03.772 --> 00:19:05.480
+SPEAKER 1: And I think
+I remember now who
+
+00:19:05.480 --> 00:19:08.105
+our finalist is, and that means
+we have one CSS feature and one
+
+00:19:08.105 --> 00:19:09.479
+JavaScript feature
+in our finals,
+
+00:19:09.479 --> 00:19:10.565
+which I think is amazing.
+
+00:19:10.565 --> 00:19:12.360
+SPEAKER 2: That is exciting.
+
+00:19:12.360 --> 00:19:13.610
+Oh, you're right.
+
+00:19:13.610 --> 00:19:15.020
+Yes, I had forgotten about it.
+
+00:19:15.020 --> 00:19:16.118
+So--
+
+00:19:16.118 --> 00:19:18.279
+SPEAKER 1: Dun-dun, dun.
+
+00:19:18.279 --> 00:19:20.070
+SPEAKER 2: So listen,
+it's kind of horrible
+
+00:19:20.070 --> 00:19:21.569
+that, with the
+amount of work that's
+
+00:19:21.569 --> 00:19:24.260
+gone into these features, and
+the diversity of the features,
+
+00:19:24.260 --> 00:19:27.950
+that we now have to just declare
+one the best, arbitrarily,
+
+00:19:27.950 --> 00:19:30.800
+based on just some loose
+opinions, while wearing
+
+00:19:30.800 --> 00:19:32.650
+a ridiculous jumper.
+
+00:19:32.650 --> 00:19:33.710
+We should-- I feel like--
+
+00:19:33.710 --> 00:19:34.224
+[LAUGHTER]
+
+00:19:34.224 --> 00:19:35.765
+Is that going in
+your ear every time?
+
+00:19:35.765 --> 00:19:36.020
+SPEAKER 1: Yeah.
+
+00:19:36.020 --> 00:19:36.370
+SPEAKER 2: Brilliant.
+
+00:19:36.370 --> 00:19:37.170
+Excellent.
+
+00:19:37.170 --> 00:19:38.480
+SPEAKER 1: You want
+to start, or should I?
+
+00:19:38.480 --> 00:19:40.063
+SPEAKER 2: Well, it
+feels like we have
+
+00:19:40.063 --> 00:19:42.890
+to summarize scroll snap again.
+
+00:19:42.890 --> 00:19:43.430
+Because--
+
+00:19:43.430 --> 00:19:45.940
+SPEAKER 1: No, I think we
+should link back to the video.
+
+00:19:45.940 --> 00:19:46.940
+SPEAKER 2: You just
+want another view.
+
+00:19:46.940 --> 00:19:47.230
+SPEAKER 1: Yeah.
+
+00:19:47.230 --> 00:19:47.900
+SPEAKER 2: Yeah, why not?
+
+00:19:47.900 --> 00:19:48.470
+Excellent.
+
+00:19:48.470 --> 00:19:49.490
+SPEAKER 1: Watch the
+video if you don't
+
+00:19:49.490 --> 00:19:50.960
+know what Scroll Snap is about.
+
+00:19:50.960 --> 00:19:52.994
+SPEAKER 2: So we've got the--
+
+00:19:52.994 --> 00:19:54.410
+I am going to show
+the demo again.
+
+00:19:54.410 --> 00:19:56.100
+Why not?
+
+00:19:56.100 --> 00:19:58.130
+It's a tab we've got here.
+
+00:19:58.130 --> 00:19:59.080
+I now remember.
+
+00:19:59.080 --> 00:20:00.950
+So this is Scroll Snap.
+
+00:20:00.950 --> 00:20:02.132
+SPEAKER 1: Isn't it great?
+
+00:20:02.132 --> 00:20:04.340
+SPEAKER 2: It's not the best
+demo anyone's ever made.
+
+00:20:04.340 --> 00:20:05.740
+SPEAKER 1: It might be a
+slightly underwhelming demo,
+
+00:20:05.740 --> 00:20:06.830
+now that I think about it.
+
+00:20:06.830 --> 00:20:07.472
+But--
+
+00:20:07.472 --> 00:20:09.680
+SPEAKER 2: If this loses,
+then whoever made this demo
+
+00:20:09.680 --> 00:20:11.054
+is going to feel
+pretty terrible.
+
+00:20:11.054 --> 00:20:12.840
+[LAUGHTER]
+
+00:20:12.840 --> 00:20:13.340
+Yeah.
+
+00:20:13.340 --> 00:20:17.310
+So this is like having a
+paginated system within you're
+
+00:20:17.310 --> 00:20:17.810
+scrolling.
+
+00:20:17.810 --> 00:20:18.080
+SPEAKER 1: Yeah.
+
+00:20:18.080 --> 00:20:19.829
+And you see that on
+the mobile UIs, right,
+
+00:20:19.829 --> 00:20:22.180
+where you have-- you swipe
+between individual panels,
+
+00:20:22.180 --> 00:20:24.020
+and you just want them
+to lock into view.
+
+00:20:24.020 --> 00:20:24.310
+SPEAKER 2: Yes.
+
+00:20:24.310 --> 00:20:25.400
+SPEAKER 1: But you don't
+want to reinvent the wheel.
+
+00:20:25.400 --> 00:20:27.740
+It would ideally just
+use the scroller,
+
+00:20:27.740 --> 00:20:30.274
+and just let the rest be
+handled by the operating system.
+
+00:20:30.274 --> 00:20:30.940
+SPEAKER 2: Yeah.
+
+00:20:30.940 --> 00:20:33.230
+And it's nice that it's in
+CSS, so it's super smooth.
+
+00:20:33.230 --> 00:20:35.197
+It's bringing
+something that is--
+
+00:20:35.197 --> 00:20:36.530
+SPEAKER 1: Composited scrolling.
+
+00:20:36.530 --> 00:20:38.863
+SPEAKER 2: Composited scrolling
+is a very native-feeling
+
+00:20:38.863 --> 00:20:39.530
+feature.
+
+00:20:39.530 --> 00:20:39.650
+SPEAKER 1: Yeah.
+
+00:20:39.650 --> 00:20:41.120
+Because the browser [INAUDIBLE].
+
+00:20:41.120 --> 00:20:43.834
+Even the browser might yield
+to the operating system.
+
+00:20:43.834 --> 00:20:45.500
+SPEAKER 2: And this
+isn't even something
+
+00:20:45.500 --> 00:20:47.546
+that Animation Worklet
+is going to solve.
+
+00:20:47.546 --> 00:20:48.670
+Because Animation Worklet--
+
+00:20:48.670 --> 00:20:48.980
+SPEAKER 1: It used to.
+
+00:20:48.980 --> 00:20:50.021
+It doesn't anymore, yeah.
+
+00:20:50.021 --> 00:20:50.605
+SPEAKER 2: OK.
+
+00:20:50.605 --> 00:20:52.354
+SPEAKER 1: We used to
+want it to solve it.
+
+00:20:52.354 --> 00:20:54.650
+But actually, you can in a
+way, but it's quite tech.
+
+00:20:54.650 --> 00:20:56.115
+You can still-- if
+you don't like--
+
+00:20:56.115 --> 00:20:57.990
+SPEAKER 2: You would
+have a scroll container,
+
+00:20:57.990 --> 00:20:59.030
+and then you'd sort
+of fake it in between.
+
+00:20:59.030 --> 00:20:59.110
+SPEAKER 1: Yeah.
+
+00:20:59.110 --> 00:21:00.110
+If you don't like how
+Scroll Snap works,
+
+00:21:00.110 --> 00:21:01.870
+Animation Worklet
+is your SK patch.
+
+00:21:01.870 --> 00:21:02.870
+SPEAKER 2: OK, OK.
+
+00:21:02.870 --> 00:21:04.745
+SPEAKER 1: It's not as
+easy as it used to be,
+
+00:21:04.745 --> 00:21:09.165
+but honestly, Scroll Snap covers
+the 95 percentile, I would say.
+
+00:21:09.165 --> 00:21:10.040
+SPEAKER 2: All right.
+
+00:21:10.040 --> 00:21:12.200
+SPEAKER 1: I think that's
+where my argument lies.
+
+00:21:12.200 --> 00:21:13.127
+Both of these are--
+
+00:21:13.127 --> 00:21:14.960
+SPEAKER 2: They solve
+longstanding problems.
+
+00:21:14.960 --> 00:21:16.040
+SPEAKER 1: --incredibly
+powerful tools,
+
+00:21:16.040 --> 00:21:18.210
+big problems that have been
+around for a long time.
+
+00:21:18.210 --> 00:21:22.130
+SPEAKER 2: So Resize Observer
+does more types of UI
+
+00:21:22.130 --> 00:21:23.720
+than it solves a problem for.
+
+00:21:23.720 --> 00:21:25.100
+SPEAKER 1: Yeah.
+
+00:21:25.100 --> 00:21:25.850
+SPEAKER 2: I can--
+
+00:21:25.850 --> 00:21:26.900
+there are definitely
+cases I would
+
+00:21:26.900 --> 00:21:29.120
+use Scroll Snap, like the
+two cases we mentioned.
+
+00:21:29.120 --> 00:21:32.210
+Having a carousel, which is
+the example we were looking at,
+
+00:21:32.210 --> 00:21:34.520
+and having those--
+
+00:21:34.520 --> 00:21:35.800
+yeah, paged UI--
+
+00:21:35.800 --> 00:21:36.506
+SPEAKER 1: Yeah.
+
+00:21:36.506 --> 00:21:37.880
+SPEAKER 2: --things,
+which I have
+
+00:21:37.880 --> 00:21:39.004
+written that in JavaScript.
+
+00:21:39.004 --> 00:21:41.705
+It's incredibly hard, and it's
+still a bit janky and slow.
+
+00:21:41.705 --> 00:21:43.940
+Resize Observer, once
+that's in all browsers,
+
+00:21:43.940 --> 00:21:46.610
+I feel like I'm
+going to have, like,
+
+00:21:46.610 --> 00:21:48.704
+five elements on the
+page, all doing--
+
+00:21:48.704 --> 00:21:50.870
+having their Resize Observer
+doing different things,
+
+00:21:50.870 --> 00:21:53.510
+applying class names.
+
+00:21:53.510 --> 00:21:54.680
+This is really difficult.
+
+00:21:54.680 --> 00:21:57.020
+SPEAKER 1: For me,
+my argument here
+
+00:21:57.020 --> 00:22:01.030
+is going to be
+the amount of code
+
+00:22:01.030 --> 00:22:03.160
+that Scroll Snap
+allows me to not
+
+00:22:03.160 --> 00:22:06.690
+write just outweighs what Resize
+Observer allows me to save.
+
+00:22:06.690 --> 00:22:09.580
+SPEAKER 2: Oh, that's a really
+compelling argument, actually.
+
+00:22:09.580 --> 00:22:10.080
+I like that.
+
+00:22:10.080 --> 00:22:12.660
+SPEAKER 1: Because if you
+write Scroll Snap yourself
+
+00:22:12.660 --> 00:22:14.370
+in JavaScript, it's
+on the main thread.
+
+00:22:14.370 --> 00:22:16.134
+You have to do the
+physics things.
+
+00:22:16.134 --> 00:22:16.800
+SPEAKER 2: Yeah.
+
+00:22:16.800 --> 00:22:19.320
+SPEAKER 1: And it's going to
+be different from, for example,
+
+00:22:19.320 --> 00:22:19.770
+Android [INAUDIBLE].
+
+00:22:19.770 --> 00:22:21.570
+They feel different
+when they scroll,
+
+00:22:21.570 --> 00:22:23.754
+and you're either going
+to be an uncanny valley,
+
+00:22:23.754 --> 00:22:25.670
+or you have to have two
+implementations aiming
+
+00:22:25.670 --> 00:22:26.790
+at both perfectly.
+
+00:22:26.790 --> 00:22:28.040
+SPEAKER 2: Yeah.
+
+00:22:28.040 --> 00:22:29.290
+SPEAKER 1: It's a lot of code.
+
+00:22:29.290 --> 00:22:31.500
+It's very hard to get right.
+
+00:22:31.500 --> 00:22:33.310
+For me, it's Scroll Snap.
+
+00:22:33.310 --> 00:22:37.200
+SPEAKER 2: But then the
+extensible web person within me
+
+00:22:37.200 --> 00:22:38.950
+is looking at two features here.
+
+00:22:38.950 --> 00:22:42.060
+One is a high-level feature
+that I can't really hook into,
+
+00:22:42.060 --> 00:22:44.790
+and the other is very
+much a primitive.
+
+00:22:44.790 --> 00:22:47.040
+SPEAKER 1: But that being
+said, Extensible Web
+
+00:22:47.040 --> 00:22:49.230
+doesn't say there should
+not be high-level features.
+
+00:22:49.230 --> 00:22:49.350
+SPEAKER 2: No, no.
+
+00:22:49.350 --> 00:22:51.141
+SPEAKER 1: They should
+just be built in a--
+
+00:22:51.141 --> 00:22:53.940
+they should just be taken out
+of exposing low levels first,
+
+00:22:53.940 --> 00:22:55.862
+and then see the
+popular patterns,
+
+00:22:55.862 --> 00:22:57.570
+and then providing
+easier ways for those.
+
+00:22:57.570 --> 00:22:59.736
+SPEAKER 2: And if we were
+talking about an Animation
+
+00:22:59.736 --> 00:23:03.230
+Worklet where you can control
+scroll position in this way,
+
+00:23:03.230 --> 00:23:04.480
+that feels like the next step.
+
+00:23:04.480 --> 00:23:05.611
+So this a big step up.
+
+00:23:05.611 --> 00:23:07.860
+SPEAKER 1: That's the big
+asterisk about the Animation
+
+00:23:07.860 --> 00:23:10.490
+Worklet story here, where
+you can't really control
+
+00:23:10.490 --> 00:23:11.490
+scroll position anymore.
+
+00:23:11.490 --> 00:23:13.980
+You used to, but that's
+been removed from the spec.
+
+00:23:13.980 --> 00:23:17.664
+But you can still achieve
+the same visual effect--
+
+00:23:17.664 --> 00:23:18.330
+SPEAKER 2: Yeah.
+
+00:23:18.330 --> 00:23:19.788
+SPEAKER 1: --by
+snapping into view.
+
+00:23:19.788 --> 00:23:22.710
+So it is an escape
+hatch for this.
+
+00:23:22.710 --> 00:23:24.300
+SPEAKER 2: Resize
+Observer, we can--
+
+00:23:24.300 --> 00:23:26.310
+you've got the window
+Resize listener.
+
+00:23:26.310 --> 00:23:30.520
+You could infer stuff
+in other ways, I guess.
+
+00:23:30.520 --> 00:23:31.710
+It's difficult code.
+
+00:23:31.710 --> 00:23:33.210
+Worse comes to
+worst, you could have
+
+00:23:33.210 --> 00:23:36.351
+a RAF that's checking layout.
+
+00:23:36.351 --> 00:23:38.600
+SPEAKER 1: I mean, usually
+you know your breakpoints--
+
+00:23:38.600 --> 00:23:39.620
+your CSS breakpoints.
+
+00:23:39.620 --> 00:23:42.439
+You could actually avoid
+the get-bonding claim
+
+00:23:42.439 --> 00:23:43.230
+if you do it right.
+
+00:23:43.230 --> 00:23:44.852
+[INTERPOSING VOICES]
+
+00:23:44.852 --> 00:23:46.560
+SPEAKER 2: It's
+difficult to make modules
+
+00:23:46.560 --> 00:23:48.010
+like that-- modules and
+components like that.
+
+00:23:48.010 --> 00:23:48.676
+SPEAKER 1: Yeah.
+
+00:23:48.676 --> 00:23:50.290
+SPEAKER 2: But absolutely this.
+
+00:23:50.290 --> 00:23:53.110
+SPEAKER 1: Is it settled?
+
+00:23:53.110 --> 00:23:54.240
+SPEAKER 2: I think I agree.
+
+00:23:54.240 --> 00:23:55.073
+I think Scroll Snap.
+
+00:23:55.073 --> 00:23:56.820
+SPEAKER 1: Yeah.
+
+00:23:56.820 --> 00:23:59.130
+SPEAKER 2: Just how
+smoothly it does it.
+
+00:23:59.130 --> 00:24:00.790
+And although it's
+not something I'm
+
+00:24:00.790 --> 00:24:03.760
+going to be necessarily using
+on every page, as you say,
+
+00:24:03.760 --> 00:24:07.557
+it's a much bigger step
+in the right direction
+
+00:24:07.557 --> 00:24:09.890
+from how we were doing it
+today, versus Resize Observer,
+
+00:24:09.890 --> 00:24:13.230
+which is still a massive step.
+
+00:24:13.230 --> 00:24:16.650
+SPEAKER 1: So with that,
+our HTTP 203 World Feature
+
+00:24:16.650 --> 00:24:18.470
+Championship 2018--
+
+00:24:18.470 --> 00:24:20.880
+SPEAKER 2: [INAUDIBLE]
+feature thing--
+
+00:24:20.880 --> 00:24:22.100
+SPEAKER 1: Renderer.
+
+00:24:22.100 --> 00:24:23.160
+SPEAKER 2: --is going
+to be Scroll Snap.
+
+00:24:23.160 --> 00:24:23.490
+SPEAKER 1: Scroll Snap?
+
+00:24:23.490 --> 00:24:24.740
+SPEAKER 2: It's Scroll Snap.
+
+00:24:24.740 --> 00:24:25.948
+SPEAKER 1: It is Scroll Snap.
+
+00:24:25.948 --> 00:24:28.470
+He wins the orange carrot of--
+
+00:24:28.470 --> 00:24:30.540
+SPEAKER 2: I was going
+to ask what they win,
+
+00:24:30.540 --> 00:24:32.370
+and I was thinking
+it was nothing
+
+00:24:32.370 --> 00:24:34.962
+because our opinion is
+essentially meaningless, oh
+
+00:24:34.962 --> 00:24:35.750
+but then--
+
+00:24:35.750 --> 00:24:36.850
+just what we like.
+
+00:24:36.850 --> 00:24:42.210
+But are we going to send them
+the glittery carrot of the 2008
+
+00:24:42.210 --> 00:24:43.140
+Glittery Carrot Award?
+
+00:24:45.820 --> 00:24:46.750
+I like it.
+
+00:24:46.750 --> 00:24:48.010
+We should do it next year.
+
+00:24:48.010 --> 00:24:49.150
+SPEAKER 1: Until next year.
+
+00:24:49.150 --> 00:24:51.275
+SPEAKER 2: Until next year,
+well done, Scroll Snap.
+
+00:24:51.275 --> 00:24:51.940
+[MUSIC PLAYING]
+
+00:24:51.940 --> 00:24:54.400
+I'm fumbling for time because
+this is saying internal server
+
+00:24:54.400 --> 00:24:54.900
+error.
+
+00:24:54.900 --> 00:24:57.520
+[LAUGHTER]
+
+00:24:59.690 --> 00:25:00.680
+Let me try this again.
+
+00:25:00.680 --> 00:25:04.110
+[MUSIC CONTINUES]
+
+00:25:04.110 --> 00:25:05.570
+I really want to go to the pub.
+
+00:25:05.570 --> 00:25:07.435
+[LAUGHTER]
+
+00:25:07.435 --> 00:25:08.060
+SPEAKER 1: Yes.
+
+00:25:08.060 --> 00:25:08.490
+SPEAKER 2: Yes.
+
+00:25:08.490 --> 00:25:08.630
+OK.
+
+00:25:08.630 --> 00:25:09.090
+SPEAKER 1: Yes.
+
+00:25:09.090 --> 00:25:09.480
+SPEAKER 2: OK.
+
+00:25:09.480 --> 00:25:10.030
+It's working.
+
+00:25:10.030 --> 00:25:11.730
+We're back in.
+

@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.479
+[MUSIC PLAYING]
+
+00:00:11.440 --> 00:00:15.000
+SURMA: The web of 2006 was a
+roller coaster to work with.
+
+00:00:15.000 --> 00:00:17.680
+jQuery was made to even
+out the lumpy platform
+
+00:00:17.680 --> 00:00:20.290
+the web offered and made
+cross-browser development
+
+00:00:20.290 --> 00:00:21.220
+easier.
+
+00:00:21.220 --> 00:00:24.100
+It did such a great job that
+it was not only widely adopted
+
+00:00:24.100 --> 00:00:27.280
+by developers, but even
+browser vendors were convinced
+
+00:00:27.280 --> 00:00:29.950
+by the usefulness of these
+APIs, and they started
+
+00:00:29.950 --> 00:00:31.930
+shipping some of them natively.
+
+00:00:31.930 --> 00:00:34.020
+Let's look at an example.
+
+00:00:34.020 --> 00:00:36.660
+Arguably, the most
+well-known feature of jQuery
+
+00:00:36.660 --> 00:00:39.900
+was the ability to find
+elements with a CSS selector.
+
+00:00:39.900 --> 00:00:41.640
+Here, we are looking
+for a div that
+
+00:00:41.640 --> 00:00:43.530
+has the username class on it.
+
+00:00:43.530 --> 00:00:46.605
+This functionality proved to be
+so useful that browsers brought
+
+00:00:46.605 --> 00:00:49.440
+it to the platform under
+the name of querySelector
+
+00:00:49.440 --> 00:00:51.210
+and querySelector All.
+
+00:00:51.210 --> 00:00:53.640
+You can use querySelector
+in all browsers
+
+00:00:53.640 --> 00:00:56.280
+including into the Explorer 8.
+
+00:00:56.280 --> 00:00:57.750
+And here's a little fun fact.
+
+00:00:57.750 --> 00:00:59.550
+Because so many
+developers are used
+
+00:00:59.550 --> 00:01:03.528
+to jQuery's total notation, it
+is even supported by dev tools.
+
+00:01:03.528 --> 00:01:05.280
+Neat.
+
+00:01:05.280 --> 00:01:07.500
+As you can see, jQuery
+had a lot of influence
+
+00:01:07.500 --> 00:01:08.850
+over the shape of the web.
+
+00:01:08.850 --> 00:01:11.540
+And we will talk some more about
+that in the future episodes.
+
+00:01:11.540 --> 00:01:13.290
+So if you're interested,
+you should really
+
+00:01:13.290 --> 00:01:14.820
+subscribe to this channel.
+
+00:01:14.820 --> 00:01:17.970
+But in the meantime, why not
+watch some older "Supercharged"
+
+00:01:17.970 --> 00:01:19.790
+with this button.
+

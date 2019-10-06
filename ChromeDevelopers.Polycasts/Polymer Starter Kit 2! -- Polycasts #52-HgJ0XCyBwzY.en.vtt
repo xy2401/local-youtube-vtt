@@ -1,0 +1,1110 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.385 --> 00:00:06.260
+ROB DODSON: Hey there,
+Polycasters, Rob here.
+
+00:00:06.260 --> 00:00:07.520
+Welcome back to the show.
+
+00:00:07.520 --> 00:00:09.945
+So a lot of people recently
+have been asking me
+
+00:00:09.945 --> 00:00:11.570
+if I'm starting a
+new project, should I
+
+00:00:11.570 --> 00:00:15.389
+be using Polymer Starter Kit,
+or should I use Polymer CLI?
+
+00:00:15.389 --> 00:00:16.930
+Now, to help with
+this problem, we've
+
+00:00:16.930 --> 00:00:18.640
+recently taken
+Polymer Starter Kit
+
+00:00:18.640 --> 00:00:23.190
+and migrated it over to being a
+Polymer CLI compliant template.
+
+00:00:23.190 --> 00:00:25.040
+So now we can sort
+of definitively say,
+
+00:00:25.040 --> 00:00:26.290
+you're starting a new project.
+
+00:00:26.290 --> 00:00:28.794
+You should absolutely
+be using Polymer CLI.
+
+00:00:28.794 --> 00:00:30.460
+Follow me over here
+to my laptop and let
+
+00:00:30.460 --> 00:00:31.860
+me show you how this works.
+
+00:00:31.860 --> 00:00:37.600
+So I'm going to start off by
+running npm install -g polymer
+
+00:00:37.600 --> 00:00:38.590
+CLI.
+
+00:00:38.590 --> 00:00:41.410
+This will pull down the latest
+version of Polymer CLI, which
+
+00:00:41.410 --> 00:00:43.550
+includes our new templates.
+
+00:00:43.550 --> 00:00:45.360
+And once you installed
+that, you can
+
+00:00:45.360 --> 00:00:49.140
+run Polymer init, after
+you've created a new project
+
+00:00:49.140 --> 00:00:50.220
+directory, of course.
+
+00:00:50.220 --> 00:00:52.980
+And you'll see that you've got
+a few options here-- Element,
+
+00:00:52.980 --> 00:00:53.590
+Application.
+
+00:00:53.590 --> 00:00:56.270
+Shop, Starter Kit, and we'll
+talk about this last one,
+
+00:00:56.270 --> 00:00:57.650
+Custom Build, in just a second.
+
+00:00:57.650 --> 00:00:59.730
+But the one we want
+right now is Starter Kit.
+
+00:00:59.730 --> 00:01:00.390
+So you go.
+
+00:01:00.390 --> 00:01:01.070
+You hit Enter on that.
+
+00:01:01.070 --> 00:01:01.850
+It's going to run npm install.
+
+00:01:01.850 --> 00:01:03.280
+It's going to run bower install.
+
+00:01:03.280 --> 00:01:06.210
+So it will take a minute or
+two to pull everything down.
+
+00:01:06.210 --> 00:01:08.490
+I've already got it set up
+on my machine over here,
+
+00:01:08.490 --> 00:01:11.340
+so let's just go ahead and
+open this Starter Kit app,
+
+00:01:11.340 --> 00:01:12.930
+take a look around the code.
+
+00:01:12.930 --> 00:01:15.720
+What I've got here is
+pretty straightforward.
+
+00:01:15.720 --> 00:01:17.980
+I've got an index HTML
+file inside of here.
+
+00:01:17.980 --> 00:01:20.402
+I've got all the
+appropriate meta tags
+
+00:01:20.402 --> 00:01:22.610
+so I can get the right app
+icons and things like that
+
+00:01:22.610 --> 00:01:23.600
+on different browsers.
+
+00:01:23.600 --> 00:01:26.010
+I've also got a link
+to a web app manifest.
+
+00:01:26.010 --> 00:01:29.000
+I've got my polyfills
+being lazy loaded.
+
+00:01:29.000 --> 00:01:31.620
+I've already got some
+critical CSS in here.
+
+00:01:31.620 --> 00:01:33.120
+And then we can go
+all the way down,
+
+00:01:33.120 --> 00:01:35.970
+you can see that I've
+got a My App element.
+
+00:01:35.970 --> 00:01:37.720
+And then looking in
+the source for My App,
+
+00:01:37.720 --> 00:01:42.282
+you can see that we're using
+the latest app layout elements,
+
+00:01:42.282 --> 00:01:43.990
+and we're also, if
+you scroll down a bit,
+
+00:01:43.990 --> 00:01:47.170
+you can see that we're also
+using the purple loading
+
+00:01:47.170 --> 00:01:49.960
+pattern to lazy load
+in our dependencies.
+
+00:01:49.960 --> 00:01:52.590
+You see that down here in
+this page change handler.
+
+00:01:52.590 --> 00:01:54.048
+Now, a lot of this
+is stuff that we
+
+00:01:54.048 --> 00:01:56.500
+covered in a previous
+episode on Polymer CLI,
+
+00:01:56.500 --> 00:01:58.612
+so I will link to that
+episode over here.
+
+00:01:58.612 --> 00:01:59.820
+So you can go check that out.
+
+00:01:59.820 --> 00:02:01.700
+You can see how this
+project is built.
+
+00:02:01.700 --> 00:02:04.550
+Because basically what we did is
+we took the original app drawer
+
+00:02:04.550 --> 00:02:07.240
+template that shipped
+with Polymer CLI,
+
+00:02:07.240 --> 00:02:10.380
+and we just migrated it over
+to being our new Starter Kit.
+
+00:02:10.380 --> 00:02:12.880
+We tweaked it in a few places
+to make it a little bit nicer,
+
+00:02:12.880 --> 00:02:14.280
+but basically we
+thought that was
+
+00:02:14.280 --> 00:02:16.220
+a really good
+place for new users
+
+00:02:16.220 --> 00:02:17.700
+to start hacking on Polymer.
+
+00:02:17.700 --> 00:02:20.487
+So we just rebranded it,
+and that's what this is.
+
+00:02:20.487 --> 00:02:23.070
+If we go over to our terminal,
+we want to test this thing out.
+
+00:02:23.070 --> 00:02:25.720
+We just run Polymer
+Serve, and that
+
+00:02:25.720 --> 00:02:27.760
+will boot up our local server.
+
+00:02:27.760 --> 00:02:29.980
+I'm going to fire
+up local host 8080,
+
+00:02:29.980 --> 00:02:33.205
+and you can see this is a
+pretty great little starter kit.
+
+00:02:33.205 --> 00:02:34.140
+It's using app routes.
+
+00:02:34.140 --> 00:02:37.800
+You can see as I'm clicking
+on these different menu items,
+
+00:02:37.800 --> 00:02:40.020
+my URL is changing up here.
+
+00:02:40.020 --> 00:02:41.940
+And if we want to
+build this project,
+
+00:02:41.940 --> 00:02:45.450
+so we want to have it
+vulcanize and get sharded
+
+00:02:45.450 --> 00:02:49.465
+into different bundles, we
+can just run Polymer Build,
+
+00:02:49.465 --> 00:02:50.590
+and that's going to go out.
+
+00:02:50.590 --> 00:02:52.714
+It's going to generate two
+versions of our project.
+
+00:02:52.714 --> 00:02:56.250
+It's going to generate a built
+version, or bundled version.
+
+00:02:56.250 --> 00:02:58.690
+And it's going to generate
+and unbundled version.
+
+00:02:58.690 --> 00:03:01.509
+So the bundled version is for
+people who need vulcanized.
+
+00:03:01.509 --> 00:03:03.050
+They need web
+component shards, which
+
+00:03:03.050 --> 00:03:05.190
+is most folks at the moment.
+
+00:03:05.190 --> 00:03:06.910
+The unbundled version
+is for those folks
+
+00:03:06.910 --> 00:03:09.118
+who are living a little bit
+more on the bleeding edge
+
+00:03:09.118 --> 00:03:12.280
+and can use HTTP to
+server push to push down
+
+00:03:12.280 --> 00:03:13.450
+all of their resources.
+
+00:03:13.450 --> 00:03:15.450
+So that one doesn't do
+any sort of concatenation
+
+00:03:15.450 --> 00:03:16.160
+or vulcanization.
+
+00:03:16.160 --> 00:03:19.300
+It just keeps all of the
+source files separate.
+
+00:03:19.300 --> 00:03:21.771
+But I'm going to test
+out the bundled version,
+
+00:03:21.771 --> 00:03:23.770
+just to verify everything
+worked after my build.
+
+00:03:23.770 --> 00:03:27.550
+So I do Polymer Serve
+Build slash Bundled.
+
+00:03:27.550 --> 00:03:30.180
+And again, I can go
+fire up local host 8080.
+
+00:03:30.180 --> 00:03:31.670
+I can see we get the same site.
+
+00:03:31.670 --> 00:03:34.060
+I've got no console errors
+or anything like that.
+
+00:03:34.060 --> 00:03:35.130
+Everything looks good.
+
+00:03:35.130 --> 00:03:38.010
+And now working on the
+vulcanized version and the one
+
+00:03:38.010 --> 00:03:40.640
+that has been sharded
+using web component shards.
+
+00:03:40.640 --> 00:03:42.160
+So this is really great.
+
+00:03:42.160 --> 00:03:44.710
+But I know that a lot of people
+really liked Polymer Starter
+
+00:03:44.710 --> 00:03:48.130
+Kit because it came with this
+really powerful gulp file.
+
+00:03:48.130 --> 00:03:50.370
+And if you look at our
+source code over here,
+
+00:03:50.370 --> 00:03:52.720
+you can see that there's
+a lot of things included.
+
+00:03:52.720 --> 00:03:55.186
+But what is not
+included is a gulp file.
+
+00:03:55.186 --> 00:03:56.560
+Instead, Polymer
+Starter Kit just
+
+00:03:56.560 --> 00:04:01.320
+relies on the default build that
+the Polymer CLI does for you.
+
+00:04:01.320 --> 00:04:04.050
+And that's a pretty compelling
+option there, right?
+
+00:04:04.050 --> 00:04:05.230
+It still does vulcanization.
+
+00:04:05.230 --> 00:04:07.280
+And it'll actually generate
+your service worker for you.
+
+00:04:07.280 --> 00:04:09.530
+It does web component shards
+based on your Polymer JSON
+
+00:04:09.530 --> 00:04:09.770
+file.
+
+00:04:09.770 --> 00:04:11.353
+So there's a lot of
+really cool things
+
+00:04:11.353 --> 00:04:12.790
+you get from that default build.
+
+00:04:12.790 --> 00:04:14.580
+But I recognize
+that like some teams
+
+00:04:14.580 --> 00:04:17.769
+have additional things that they
+want to add to their process.
+
+00:04:17.769 --> 00:04:19.480
+And so to support
+those folks, we've
+
+00:04:19.480 --> 00:04:21.459
+taken Polymer Starter
+Kit, and we've also
+
+00:04:21.459 --> 00:04:23.930
+created an additional
+generator, which we just
+
+00:04:23.930 --> 00:04:26.570
+call the Custom Build Template.
+
+00:04:26.570 --> 00:04:30.470
+So to install this project
+over in your terminal,
+
+00:04:30.470 --> 00:04:32.080
+you would run--
+here I'm actually
+
+00:04:32.080 --> 00:04:34.887
+going to go to the GitHub
+page and grab the name here.
+
+00:04:34.887 --> 00:04:37.220
+So you can find this on GitHub
+at Generator Polymer Init
+
+00:04:37.220 --> 00:04:38.210
+Custom Build.
+
+00:04:38.210 --> 00:04:41.600
+The name is a little verbose,
+but the magic part here
+
+00:04:41.600 --> 00:04:44.300
+is any project that starts
+with generator Polymer
+
+00:04:44.300 --> 00:04:48.610
+init can actually be plugged
+into the Polymer CLI.
+
+00:04:48.610 --> 00:04:50.340
+So what we're going
+to do is we'll
+
+00:04:50.340 --> 00:04:54.720
+run npm install -g, generator
+Polymer init custom build.
+
+00:04:54.720 --> 00:04:55.330
+That will go.
+
+00:04:55.330 --> 00:04:56.984
+It'll fetch all the
+right resources.
+
+00:04:56.984 --> 00:04:58.400
+And then the cool
+thing about that
+
+00:04:58.400 --> 00:05:00.700
+is once that is
+installed on our system,
+
+00:05:00.700 --> 00:05:03.070
+we can just run Polymer
+init, and now you
+
+00:05:03.070 --> 00:05:05.740
+can see we have this extra
+option down here for custom
+
+00:05:05.740 --> 00:05:06.810
+build.
+
+00:05:06.810 --> 00:05:09.260
+So I've already got this
+set up on my machine.
+
+00:05:09.260 --> 00:05:12.385
+Let me go and check out
+that custom build app.
+
+00:05:12.385 --> 00:05:13.840
+Let's go to my desktop.
+
+00:05:13.840 --> 00:05:17.140
+I'll cd into Custom App.
+
+00:05:17.140 --> 00:05:20.410
+Let's take a look at this.
+
+00:05:20.410 --> 00:05:22.460
+Now, this project is set
+up pretty much identical
+
+00:05:22.460 --> 00:05:23.418
+to Polymer Starter Kit.
+
+00:05:23.418 --> 00:05:25.730
+It's literally based on
+that Polymer Starter Kit
+
+00:05:25.730 --> 00:05:28.600
+that we were just looking at,
+with the exception that it
+
+00:05:28.600 --> 00:05:31.130
+has this really cool gulp
+file that it ships with.
+
+00:05:31.130 --> 00:05:33.345
+So over here we've
+got this gulp file JS.
+
+00:05:33.345 --> 00:05:34.970
+I'll boost this up
+a little bit for you
+
+00:05:34.970 --> 00:05:37.240
+so you can kind of
+see what's going on.
+
+00:05:37.240 --> 00:05:40.400
+And the main magic that is
+going on in the gulp file
+
+00:05:40.400 --> 00:05:44.850
+is rather than just rely
+on vanilla gulp by itself,
+
+00:05:44.850 --> 00:05:47.970
+we're actually using the
+library that powers Polymer
+
+00:05:47.970 --> 00:05:52.750
+CLI's build to sort of like help
+us construct our pipeline here.
+
+00:05:52.750 --> 00:05:54.690
+So that library, if
+we go over to GitHub,
+
+00:05:54.690 --> 00:05:55.981
+I can show you the page for it.
+
+00:05:55.981 --> 00:05:57.750
+It's called Polymer Build.
+
+00:05:57.750 --> 00:06:00.740
+And this is just the
+underlying node module
+
+00:06:00.740 --> 00:06:02.900
+that powers Polymer CLI.
+
+00:06:02.900 --> 00:06:04.630
+And the cool thing
+about this is we
+
+00:06:04.630 --> 00:06:06.110
+can run our files through this.
+
+00:06:06.110 --> 00:06:08.068
+We can have it do all of
+the things it normally
+
+00:06:08.068 --> 00:06:10.530
+does, like generate our service
+worker and stuff like that.
+
+00:06:10.530 --> 00:06:14.100
+But it also gives us hooks where
+we can step in and we can say,
+
+00:06:14.100 --> 00:06:16.050
+hey, I want to do some
+additional processing
+
+00:06:16.050 --> 00:06:17.480
+of the source files.
+
+00:06:17.480 --> 00:06:19.849
+So over in the
+gulp file here you
+
+00:06:19.849 --> 00:06:22.140
+can see that there's a little
+bit of configuration data
+
+00:06:22.140 --> 00:06:24.260
+up here at the top, right?
+
+00:06:24.260 --> 00:06:27.470
+So this lets you set the name of
+the output directory and things
+
+00:06:27.470 --> 00:06:30.560
+like that, the name of your
+service worker file, et cetera.
+
+00:06:30.560 --> 00:06:32.518
+And then you can see that
+we've also gone ahead
+
+00:06:32.518 --> 00:06:35.225
+and we've sort of pre-defined a
+few useful gulp tasks for you.
+
+00:06:35.225 --> 00:06:38.990
+So we've got a clean task here,
+a task for minifying images.
+
+00:06:38.990 --> 00:06:41.550
+These all live over in
+this Gulp Task Directory.
+
+00:06:41.550 --> 00:06:43.490
+If you want to create
+additional gulp tasks,
+
+00:06:43.490 --> 00:06:46.115
+you want to have sort of like a
+modular gulp file, where things
+
+00:06:46.115 --> 00:06:48.560
+are separated out like that,
+you can add your own task
+
+00:06:48.560 --> 00:06:49.760
+to this Gulp Task Directory.
+
+00:06:49.760 --> 00:06:51.820
+That's really what
+it's there for.
+
+00:06:51.820 --> 00:06:54.300
+And then we've got these
+two functions here-- source
+
+00:06:54.300 --> 00:06:55.920
+and dependencies.
+
+00:06:55.920 --> 00:06:58.250
+The source function is
+where we process all
+
+00:06:58.250 --> 00:07:00.240
+of your actual source files.
+
+00:07:00.240 --> 00:07:01.850
+What the Polymer
+build library does
+
+00:07:01.850 --> 00:07:03.830
+is it looks at all
+of your HTML imports,
+
+00:07:03.830 --> 00:07:08.860
+and it extracts the inline CSS
+and JavaScript and the HTML,
+
+00:07:08.860 --> 00:07:11.290
+and it turns it into
+just one big file
+
+00:07:11.290 --> 00:07:14.120
+stream that we can then
+just filter and pass
+
+00:07:14.120 --> 00:07:15.860
+to different gulp tasks.
+
+00:07:15.860 --> 00:07:19.060
+So you can see here we're
+calling split resources.
+
+00:07:19.060 --> 00:07:22.120
+This project object here is part
+of the Polymer build library.
+
+00:07:22.120 --> 00:07:23.495
+So we're splitting
+our resources.
+
+00:07:23.495 --> 00:07:25.840
+We're turning it into
+that one big stream.
+
+00:07:25.840 --> 00:07:30.360
+And then we can just use gulp
+if to filter by file type
+
+00:07:30.360 --> 00:07:32.556
+and then pass that resource
+to a particular task.
+
+00:07:32.556 --> 00:07:33.930
+So here we're
+saying, hey, filter
+
+00:07:33.930 --> 00:07:35.480
+by all the different images.
+
+00:07:35.480 --> 00:07:39.300
+When you find an image, pass
+it through this minify task.
+
+00:07:39.300 --> 00:07:41.270
+We also have this
+dependencies task down here.
+
+00:07:41.270 --> 00:07:43.840
+This is where we do basically
+the exact same thing,
+
+00:07:43.840 --> 00:07:45.490
+but we do it for
+your dependencies
+
+00:07:45.490 --> 00:07:47.047
+instead of your source files.
+
+00:07:47.047 --> 00:07:48.630
+So if you want to
+do something special
+
+00:07:48.630 --> 00:07:51.320
+to your bower components
+or something like that,
+
+00:07:51.320 --> 00:07:52.920
+that's where you
+would do that work.
+
+00:07:52.920 --> 00:07:54.680
+So I think what would
+be a cool example
+
+00:07:54.680 --> 00:07:57.370
+is for me to just show you
+how you can add your own gulp
+
+00:07:57.370 --> 00:07:59.190
+task to this file.
+
+00:07:59.190 --> 00:08:02.660
+So right now I'll just run
+gulp to generate a build.
+
+00:08:02.660 --> 00:08:03.990
+And we can see what it outputs.
+
+00:08:03.990 --> 00:08:06.330
+And you can see that
+it mention that it
+
+00:08:06.330 --> 00:08:09.570
+minifed our images, because we
+have that custom task in there.
+
+00:08:09.570 --> 00:08:12.645
+And going back to our editor,
+I'll go look at the build file.
+
+00:08:12.645 --> 00:08:14.650
+I'll look at the
+bundled version.
+
+00:08:14.650 --> 00:08:16.860
+And I'm going to
+open the My App file.
+
+00:08:16.860 --> 00:08:19.150
+So this is sort of like
+the place where everything
+
+00:08:19.150 --> 00:08:20.567
+is being vulcanized into.
+
+00:08:20.567 --> 00:08:22.150
+You'll see that
+there's a lot of stuff
+
+00:08:22.150 --> 00:08:23.930
+kind of mushed into this file.
+
+00:08:23.930 --> 00:08:25.430
+So you've got all
+of the source code
+
+00:08:25.430 --> 00:08:27.490
+for Polymer being
+mushed in here.
+
+00:08:27.490 --> 00:08:29.040
+And then if I go
+down to the bottom,
+
+00:08:29.040 --> 00:08:31.620
+you can see this is the source
+code for my actual My App
+
+00:08:31.620 --> 00:08:32.120
+element.
+
+00:08:32.120 --> 00:08:34.309
+And right now none
+of this JavaScript
+
+00:08:34.309 --> 00:08:37.140
+has been minified in
+any way whatsoever.
+
+00:08:37.140 --> 00:08:38.020
+So let's change that.
+
+00:08:38.020 --> 00:08:40.640
+Let's run this code
+through a minifier.
+
+00:08:40.640 --> 00:08:43.630
+To do that, I'm going
+to go to my console.
+
+00:08:43.630 --> 00:08:46.880
+I'm going to do in
+npm install save dev,
+
+00:08:46.880 --> 00:08:50.520
+and we're going to
+throw in gulp uglify.
+
+00:08:50.520 --> 00:08:54.481
+So wait a sec for that to
+download off of the interwebs.
+
+00:08:54.481 --> 00:08:57.190
+[HUMMING]
+
+00:08:57.190 --> 00:09:00.390
+OK, so now we've got
+uglify in our project.
+
+00:09:00.390 --> 00:09:03.210
+And I'm going to go over
+to the gulp file here.
+
+00:09:03.210 --> 00:09:06.290
+I'm going to go over to where
+my gulp tasks currently are,
+
+00:09:06.290 --> 00:09:14.850
+and I'll drop in a
+const for uglify.
+
+00:09:14.850 --> 00:09:17.230
+And now in this
+sources section I'm
+
+00:09:17.230 --> 00:09:19.370
+going to drop in a
+little one liner here,
+
+00:09:19.370 --> 00:09:23.410
+where I pipe any of my
+files through gulp if.
+
+00:09:23.410 --> 00:09:25.850
+If those files look
+like JavaScript files,
+
+00:09:25.850 --> 00:09:28.810
+let's run them through uglify.
+
+00:09:28.810 --> 00:09:31.110
+So remember, we're in the
+source's function here.
+
+00:09:31.110 --> 00:09:34.560
+So this is just going to be
+applied to our actual source
+
+00:09:34.560 --> 00:09:36.610
+files, not to our dependencies.
+
+00:09:36.610 --> 00:09:39.327
+So let's see what the
+output of that looks like.
+
+00:09:39.327 --> 00:09:40.410
+We'll run it through gulp.
+
+00:09:43.520 --> 00:09:44.740
+We're going to go back.
+
+00:09:44.740 --> 00:09:48.755
+We will look at our build,
+look at the bundled version.
+
+00:09:48.755 --> 00:09:50.260
+We look at My App.
+
+00:09:50.260 --> 00:09:53.030
+And now you can see that
+down here at the bottom,
+
+00:09:53.030 --> 00:09:56.027
+you can see that my
+code was minified.
+
+00:09:56.027 --> 00:09:58.110
+So the definition for the
+My App element, that got
+
+00:09:58.110 --> 00:09:59.250
+mushed together, right?
+
+00:09:59.250 --> 00:10:00.190
+That looks good.
+
+00:10:00.190 --> 00:10:01.564
+But if we go back
+to the top, you
+
+00:10:01.564 --> 00:10:03.890
+can see that all of this
+Polymer source code, this
+
+00:10:03.890 --> 00:10:06.130
+remains unminfied, right?
+
+00:10:06.130 --> 00:10:08.860
+It's still all huge
+and gigantic here.
+
+00:10:08.860 --> 00:10:11.810
+So I can do basically the
+same thing that I did there.
+
+00:10:11.810 --> 00:10:15.010
+I can apply that same
+task to my dependencies.
+
+00:10:15.010 --> 00:10:17.040
+So I could run my
+dependencies through uglify
+
+00:10:17.040 --> 00:10:18.950
+as well, if I would like.
+
+00:10:18.950 --> 00:10:20.480
+I will run gulp again.
+
+00:10:23.815 --> 00:10:25.190
+This time it'll
+take a little bit
+
+00:10:25.190 --> 00:10:29.060
+longer because we're processing
+a lot more code through uglify.
+
+00:10:29.060 --> 00:10:32.220
+And when I go back,
+now I look at my build,
+
+00:10:32.220 --> 00:10:35.360
+and now you can see that
+all of that dependency code
+
+00:10:35.360 --> 00:10:38.069
+has been minified as well.
+
+00:10:38.069 --> 00:10:39.610
+If you want, the
+last thing we can do
+
+00:10:39.610 --> 00:10:43.110
+is we can just run a Polymer
+serve build slash bundled,
+
+00:10:43.110 --> 00:10:44.050
+and then we will--
+
+00:10:44.050 --> 00:10:45.421
+[BUZZING]
+
+00:10:45.421 --> 00:10:47.900
+I should probably put my
+phone in airplane mode.
+
+00:10:47.900 --> 00:10:50.220
+By the way, that was my mom
+calling about my wedding.
+
+00:10:53.540 --> 00:10:56.090
+So we'll go back
+to our terminal.
+
+00:10:56.090 --> 00:11:01.130
+We'll run Polymer serve
+build slash bundled.
+
+00:11:01.130 --> 00:11:04.000
+Go over to a local
+host 8080, and now we
+
+00:11:04.000 --> 00:11:06.680
+can see we are running
+our built version
+
+00:11:06.680 --> 00:11:08.122
+with minified JavaScript.
+
+00:11:08.122 --> 00:11:10.580
+And we still have everything
+that we have from Starter Kit.
+
+00:11:10.580 --> 00:11:14.260
+We've still got that cool router
+and the app layout elements.
+
+00:11:14.260 --> 00:11:16.610
+But we now have
+the option of kind
+
+00:11:16.610 --> 00:11:19.480
+of hooking in where we want
+to and adding our own gulp
+
+00:11:19.480 --> 00:11:20.720
+task, which is pretty great.
+
+00:11:20.720 --> 00:11:21.910
+That about covers it for today.
+
+00:11:21.910 --> 00:11:23.410
+In the next episode,
+I actually want
+
+00:11:23.410 --> 00:11:26.050
+to talk about how you can build
+your own generator, how you can
+
+00:11:26.050 --> 00:11:29.550
+actually plug into Polymer CLI
+and create your own scaffold,
+
+00:11:29.550 --> 00:11:31.740
+just like we did with
+this custom build here.
+
+00:11:31.740 --> 00:11:33.900
+But if you have any
+questions on this episode,
+
+00:11:33.900 --> 00:11:36.470
+please leave them for me
+down below in the comments,
+
+00:11:36.470 --> 00:11:38.680
+or, as always, you can hit
+me up on a social network
+
+00:11:38.680 --> 00:11:40.683
+of your choosing,
+at #askPolymer.
+
+00:11:40.683 --> 00:11:42.433
+As always, thank you
+so much for watching,
+
+00:11:42.433 --> 00:11:45.080
+and I'll see you next time.
+
+00:11:45.080 --> 00:11:46.630
+[MUSIC PLAYING]
+

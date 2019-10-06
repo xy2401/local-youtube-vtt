@@ -1,0 +1,828 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.180 --> 00:00:05.670
+JAKE ARCHIBALD: Another
+day, another journey.
+
+00:00:05.670 --> 00:00:07.680
+PAUL LEWIS: I know
+we did, right?
+
+00:00:07.680 --> 00:00:10.960
+How is your aim?
+
+00:00:10.960 --> 00:00:13.570
+JAKE ARCHIBALD: Well, not great
+in the middle of the night,
+
+00:00:13.570 --> 00:00:15.760
+but I sometimes just sit down.
+
+00:00:15.760 --> 00:00:20.230
+PAUL LEWIS: No, actually, I
+mean your snooker, your pool,
+
+00:00:20.230 --> 00:00:22.590
+or in this case, your billiards.
+
+00:00:22.590 --> 00:00:23.869
+JAKE ARCHIBALD: Ooh.
+
+00:00:23.869 --> 00:00:25.160
+We're going to a billiard hall?
+
+00:00:25.160 --> 00:00:27.480
+PAUL LEWIS: That we are, sir.
+
+00:00:27.480 --> 00:00:30.362
+[MUSIC PLAYING]
+
+00:00:33.980 --> 00:00:36.362
+JAKE ARCHIBALD:
+So I made a thing.
+
+00:00:36.362 --> 00:00:37.820
+PAUL LEWIS: That's
+unusual for you.
+
+00:00:37.820 --> 00:00:38.430
+JAKE ARCHIBALD: I know.
+
+00:00:38.430 --> 00:00:38.940
+I'm quite proud of myself.
+
+00:00:38.940 --> 00:00:41.606
+PAUL LEWIS: You've done like two
+in as many months or something?
+
+00:00:41.606 --> 00:00:43.340
+JAKE ARCHIBALD: Yeah,
+it's a new thing.
+
+00:00:43.340 --> 00:00:43.620
+It's really--
+
+00:00:43.620 --> 00:00:44.480
+PAUL LEWIS: What is it?
+
+00:00:44.480 --> 00:00:45.350
+JAKE ARCHIBALD:
+It's a little wiki--
+
+00:00:45.350 --> 00:00:45.980
+PAUL LEWIS: Is it a web app?
+
+00:00:45.980 --> 00:00:46.910
+JAKE ARCHIBALD: Yes,
+it is a web app.
+
+00:00:46.910 --> 00:00:47.920
+PAUL LEWIS: Is it a website?
+
+00:00:47.920 --> 00:00:48.630
+What's the difference, Jake?
+
+00:00:48.630 --> 00:00:48.870
+JAKE ARCHIBALD: Shut up.
+
+00:00:48.870 --> 00:00:49.786
+PAUL LEWIS: [LAUGHING]
+
+00:00:49.786 --> 00:00:52.280
+JAKE ARCHIBALD: We're not doing
+web apps versus web sites.
+
+00:00:52.280 --> 00:00:53.852
+I would say it's an app.
+
+00:00:53.852 --> 00:00:55.560
+PAUL LEWIS: Oh dear,
+an app with content?
+
+00:00:55.560 --> 00:00:56.935
+JAKE ARCHIBALD:
+I flipped a coin.
+
+00:00:56.935 --> 00:00:57.810
+It's an app.
+
+00:00:57.810 --> 00:00:58.380
+No, it's not.
+
+00:00:58.380 --> 00:00:59.020
+It's a site.
+
+00:00:59.020 --> 00:01:02.000
+It's is a Wikipedia
+article viewer,
+
+00:01:02.000 --> 00:01:04.337
+which I realize is what
+Wikipedia does already,
+
+00:01:04.337 --> 00:01:06.795
+but this was more of an exercise
+in looking at performance,
+
+00:01:06.795 --> 00:01:08.375
+like page load time performance.
+
+00:01:08.375 --> 00:01:12.800
+PAUL LEWIS: But you think you
+can beat Wikipedia at a service
+
+00:01:12.800 --> 00:01:13.890
+side render, do you?
+
+00:01:13.890 --> 00:01:14.330
+JAKE ARCHIBALD: I did.
+
+00:01:14.330 --> 00:01:15.280
+PAUL LEWIS: You did!
+
+00:01:15.280 --> 00:01:17.071
+JAKE ARCHIBALD: Well,
+so this is the thing.
+
+00:01:17.071 --> 00:01:19.970
+So I was posting on GitHub, so I
+was doing a client side render.
+
+00:01:19.970 --> 00:01:20.560
+PAUL LEWIS: [GASPING]
+
+00:01:20.560 --> 00:01:21.130
+JAKE ARCHIBALD: I know!
+
+00:01:21.130 --> 00:01:22.630
+PAUL LEWIS: After
+all you've said!
+
+00:01:22.630 --> 00:01:25.320
+JAKE ARCHIBALD: It seemed like a
+nice simple way to get into it.
+
+00:01:25.320 --> 00:01:28.242
+So I was serving just
+JavaScript down the wire,
+
+00:01:28.242 --> 00:01:30.200
+then JavaScript's going
+and getting the content
+
+00:01:30.200 --> 00:01:31.325
+and putting it on the page.
+
+00:01:31.325 --> 00:01:33.590
+And I was seeing, looking
+at my official figures,
+
+00:01:33.590 --> 00:01:37.370
+2.6 seconds for the first
+render, and 4.7 seconds
+
+00:01:37.370 --> 00:01:39.610
+for content, which
+even at that point
+
+00:01:39.610 --> 00:01:42.900
+was faster than Wikipedia's
+actual official site.
+
+00:01:42.900 --> 00:01:45.130
+But I knew it could
+be better than that.
+
+00:01:45.130 --> 00:01:45.910
+PAUL LEWIS: OK.
+
+00:01:45.910 --> 00:01:47.290
+What was in that first render?
+
+00:01:47.290 --> 00:01:48.831
+JAKE ARCHIBALD:
+First render was just
+
+00:01:48.831 --> 00:01:52.690
+like the top toolbar that said
+like Wikipedia and a spin.
+
+00:01:52.690 --> 00:01:54.650
+PAUL LEWIS: OK, but from
+a user point of view,
+
+00:01:54.650 --> 00:01:55.720
+they've got something.
+
+00:01:55.720 --> 00:01:56.590
+They know they're on the way.
+
+00:01:56.590 --> 00:01:58.090
+JAKE ARCHIBALD:
+Yeah, and then if it
+
+00:01:58.090 --> 00:02:00.872
+was 4.7 seconds until the actual
+Wikipedia article came down.
+
+00:02:00.872 --> 00:02:03.080
+PAUL LEWIS: So you've actually
+got here a good couple
+
+00:02:03.080 --> 00:02:05.060
+of seconds there where
+you're spinning up,
+
+00:02:05.060 --> 00:02:08.360
+where your app doesn't seem
+to be-- like it's idle,
+
+00:02:08.360 --> 00:02:08.860
+essentially?
+
+00:02:08.860 --> 00:02:10.310
+JAKE ARCHIBALD: Yeah, I know
+you're pulling your sad face,
+
+00:02:10.310 --> 00:02:10.840
+but don't worry.
+
+00:02:10.840 --> 00:02:11.330
+That's not the end of the story.
+
+00:02:11.330 --> 00:02:12.360
+PAUL LEWIS: I'm puling
+a stalling face.
+
+00:02:12.360 --> 00:02:13.068
+I'm mulling over.
+
+00:02:13.068 --> 00:02:16.980
+JAKE ARCHIBALD: OK, so while
+you're pulling a mulling face,
+
+00:02:16.980 --> 00:02:18.752
+I can tell you what
+I did to fix it.
+
+00:02:18.752 --> 00:02:19.460
+There's a happy--
+
+00:02:19.460 --> 00:02:21.043
+PAUL LEWIS: What
+about my other faces?
+
+00:02:21.043 --> 00:02:22.840
+JAKE ARCHIBALD: Are you OK?
+
+00:02:22.840 --> 00:02:23.840
+Are you having a stroke?
+
+00:02:23.840 --> 00:02:25.462
+PAUL LEWIS: [LAUGHING]
+
+00:02:26.670 --> 00:02:31.010
+JAKE ARCHIBALD: So yeah, I
+made the JavaScript async,
+
+00:02:31.010 --> 00:02:34.650
+and put some markup on the
+page for that first render.
+
+00:02:34.650 --> 00:02:37.710
+And I inlined the CSS
+for that first render.
+
+00:02:37.710 --> 00:02:39.650
+PAUL LEWIS: Good,
+normal, all normal.
+
+00:02:39.650 --> 00:02:40.490
+JAKE ARCHIBALD:
+Well, you say normal.
+
+00:02:40.490 --> 00:02:43.073
+When I first heard that rule as
+like, oh take some of your CSS
+
+00:02:43.073 --> 00:02:45.790
+out and put it in the
+head, I was like, oh,
+
+00:02:45.790 --> 00:02:47.680
+that's it's a big ask
+for developers, really.
+
+00:02:47.680 --> 00:02:49.896
+PAUL LEWIS: Whoa, big what?
+
+00:02:49.896 --> 00:02:52.145
+You said big ask again!
+
+00:02:52.145 --> 00:02:53.270
+You know, you keep saying--
+
+00:02:53.270 --> 00:02:54.180
+JAKE ARCHIBALD: It's a big ask.
+
+00:02:54.180 --> 00:02:55.681
+PAUL LEWIS: It's a request, pal.
+
+00:02:55.681 --> 00:02:56.430
+That's what it is.
+
+00:02:56.430 --> 00:02:56.910
+JAKE ARCHIBALD: I know.
+
+00:02:56.910 --> 00:02:58.130
+Oh my god, I hate
+it when people--
+
+00:02:58.130 --> 00:02:59.010
+PAUL LEWIS: You've
+become that person.
+
+00:02:59.010 --> 00:02:59.490
+You've become that person.
+
+00:02:59.490 --> 00:03:00.280
+JAKE ARCHIBALD: --When
+people say that.
+
+00:03:00.280 --> 00:03:00.988
+PAUL LEWIS: Yeah.
+
+00:03:00.988 --> 00:03:03.680
+Next you'll be asking to reason
+about things, or using modulo.
+
+00:03:03.680 --> 00:03:05.096
+JAKE ARCHIBALD:
+To reason about, I
+
+00:03:05.096 --> 00:03:07.430
+hate that one, because it is
+just developers not wanting
+
+00:03:07.430 --> 00:03:08.637
+to say they don't understand.
+
+00:03:08.637 --> 00:03:10.350
+PAUL LEWIS: I actually
+do like modulo.
+
+00:03:10.350 --> 00:03:12.250
+JAKE ARCHIBALD: So
+I do agree that it's
+
+00:03:12.250 --> 00:03:14.466
+too hard to async load CSS.
+
+00:03:14.466 --> 00:03:17.090
+This is something that we have
+a problem with, on the platform,
+
+00:03:17.090 --> 00:03:17.570
+right?
+
+00:03:17.570 --> 00:03:18.310
+PAUL LEWIS: Yes, I
+actually tried it.
+
+00:03:18.310 --> 00:03:18.860
+It's rubbish.
+
+00:03:18.860 --> 00:03:21.151
+JAKE ARCHIBALD: We got loadCSS
+from the Filament Group,
+
+00:03:21.151 --> 00:03:23.700
+but it's more script
+than you should need.
+
+00:03:23.700 --> 00:03:25.630
+It should just be async
+on the link element.
+
+00:03:25.630 --> 00:03:26.540
+PAUL LEWIS: Yeah, it
+should be declarative.
+
+00:03:26.540 --> 00:03:28.081
+JAKE ARCHIBALD: But
+moreover, I think
+
+00:03:28.081 --> 00:03:31.030
+what Firefox and IE do at the
+moment is actually really good.
+
+00:03:31.030 --> 00:03:33.930
+It's a bit of nonstandard
+behavior, but I really like it.
+
+00:03:33.930 --> 00:03:36.530
+Put the link element
+on the page in the body
+
+00:03:36.530 --> 00:03:38.720
+just before the
+[? content net ?] needs it,
+
+00:03:38.720 --> 00:03:41.712
+and it will block the
+rendering-- wait for it.
+
+00:03:41.712 --> 00:03:43.920
+It will block the rendering
+of the subsequent content
+
+00:03:43.920 --> 00:03:45.560
+until that CSS loads.
+
+00:03:45.560 --> 00:03:47.320
+It's not blocking
+all page rendering.
+
+00:03:47.320 --> 00:03:48.120
+PAUL LEWIS: OK, OK.
+
+00:03:48.120 --> 00:03:48.840
+JAKE ARCHIBALD: It's
+just the elements
+
+00:03:48.840 --> 00:03:49.870
+after don't go into
+the render tree.
+
+00:03:49.870 --> 00:03:50.920
+PAUL LEWIS: True, fair enough.
+
+00:03:50.920 --> 00:03:52.230
+JAKE ARCHIBALD:
+We should do that.
+
+00:03:52.230 --> 00:03:54.280
+We should take that one, and we
+should also have async as well.
+
+00:03:54.280 --> 00:03:55.010
+PAUL LEWIS: OK, so right.
+
+00:03:55.010 --> 00:03:56.384
+JAKE ARCHIBALD:
+Yeah, where am I?
+
+00:03:56.384 --> 00:03:58.520
+PAUL LEWIS: We had a
+parallelizable thing, last
+
+00:03:58.520 --> 00:04:01.290
+I understood, of where you had
+the JavaScript that went off
+
+00:04:01.290 --> 00:04:03.804
+to get the Wikipedia page, and
+I was saying that's bonkers.
+
+00:04:03.804 --> 00:04:06.220
+JAKE ARCHIBALD: And so yes, I
+came to the same conclusion.
+
+00:04:06.220 --> 00:04:07.520
+I thought that this
+needs server rendering.
+
+00:04:07.520 --> 00:04:08.520
+PAUL LEWIS: Wise man!
+
+00:04:08.520 --> 00:04:09.480
+JAKE ARCHIBALD: Yeah, thank you.
+
+00:04:09.480 --> 00:04:10.230
+Let's do a cheers.
+
+00:04:10.230 --> 00:04:11.250
+Cheers to server rendering.
+
+00:04:11.250 --> 00:04:11.810
+PAUL LEWIS: Cheers to
+server side rendering.
+
+00:04:11.810 --> 00:04:14.054
+Well, this is the nerdiest
+cheer that ever went up.
+
+00:04:14.054 --> 00:04:16.220
+JAKE ARCHIBALD: So I was
+looking at my calculations,
+
+00:04:16.220 --> 00:04:21.260
+once I introduced server
+rendering, things got slower.
+
+00:04:21.260 --> 00:04:22.790
+PAUL LEWIS: Right.
+
+00:04:22.790 --> 00:04:23.840
+That's a bit annoying.
+
+00:04:23.840 --> 00:04:25.590
+JAKE ARCHIBALD: My
+content render actually
+
+00:04:25.590 --> 00:04:27.530
+sort of came down a
+little bit, not much,
+
+00:04:27.530 --> 00:04:29.450
+but my first render skyrocketed.
+
+00:04:29.450 --> 00:04:30.410
+PAUL LEWIS: Why?
+
+00:04:30.410 --> 00:04:33.220
+JAKE ARCHIBALD: It was slower
+because connection goes off
+
+00:04:33.220 --> 00:04:34.280
+to my server.
+
+00:04:34.280 --> 00:04:36.570
+My server goes up to
+Wikipedia, gets the data,
+
+00:04:36.570 --> 00:04:38.880
+comes back, [? destructs ?]
+the page, sends it on.
+
+00:04:38.880 --> 00:04:41.421
+You're looking at white screen
+for longer now, because you've
+
+00:04:41.421 --> 00:04:44.510
+got the bottleneck of
+your third-party service.
+
+00:04:44.510 --> 00:04:47.790
+By taking that, just the
+JavaScript, CSS, the basic page
+
+00:04:47.790 --> 00:04:50.865
+shell-- down to 0.1
+seconds, like as good
+
+00:04:50.865 --> 00:04:52.480
+as instant for
+that first render,
+
+00:04:52.480 --> 00:04:54.340
+because it's all offline.
+
+00:04:54.340 --> 00:04:55.840
+But here's an
+interesting thing that
+
+00:04:55.840 --> 00:04:58.420
+happened, is my content render
+went-- because I'm now back
+
+00:04:58.420 --> 00:05:02.780
+to doing client side rendering--
+content render's gone up again,
+
+00:05:02.780 --> 00:05:05.645
+because even though it's
+coming from the cache,
+
+00:05:05.645 --> 00:05:06.520
+there's two problems.
+
+00:05:06.520 --> 00:05:08.435
+There's one that the
+request to Wikipedia
+
+00:05:08.435 --> 00:05:10.060
+is a little bit
+delayed, because it has
+
+00:05:10.060 --> 00:05:11.060
+to parse the JavaScript to--
+
+00:05:11.060 --> 00:05:12.300
+PAUL LEWIS: To Wiki pedia.
+
+00:05:12.300 --> 00:05:14.159
+JAKE ARCHIBALD: To Wikipedia.
+
+00:05:14.159 --> 00:05:15.200
+PAUL LEWIS: It's delayed.
+
+00:05:15.200 --> 00:05:15.700
+I like that.
+
+00:05:15.700 --> 00:05:16.550
+It's almost like a--
+
+00:05:16.550 --> 00:05:17.520
+JAKE ARCHIBALD: I didn't
+do that on purpose.
+
+00:05:17.520 --> 00:05:18.980
+PAUL LEWIS: Really?
+
+00:05:18.980 --> 00:05:20.731
+But yeah, so I cut
+that delay by-- as soon
+
+00:05:20.731 --> 00:05:22.521
+as the request went to
+the service worker--
+
+00:05:22.521 --> 00:05:25.260
+had the service worker go off
+and fetch stuff from Wikipedia.
+
+00:05:25.260 --> 00:05:27.100
+PAUL LEWIS: OK, so
+how do you then--
+
+00:05:27.100 --> 00:05:29.710
+because you still want to send
+your response back with the app
+
+00:05:29.710 --> 00:05:30.690
+shell stuff--
+
+00:05:30.690 --> 00:05:32.065
+JAKE ARCHIBALD:
+Yeah, what you're
+
+00:05:32.065 --> 00:05:34.450
+talking about there
+is chunked in coding.
+
+00:05:34.450 --> 00:05:37.090
+So this is the art
+of being able just
+
+00:05:37.090 --> 00:05:40.680
+to quickly send data back,
+without knowing your whole page
+
+00:05:40.680 --> 00:05:41.390
+content.
+
+00:05:41.390 --> 00:05:44.457
+So I was able to send back the
+header and the first render
+
+00:05:44.457 --> 00:05:46.290
+stuff, essentially, so
+now the browser knows
+
+00:05:46.290 --> 00:05:48.200
+what the extra CSS
+and JavaScript needs.
+
+00:05:48.200 --> 00:05:50.604
+Meanwhile, or at the first
+possible opportunity,
+
+00:05:50.604 --> 00:05:52.020
+my server's going
+off to Wikipedia
+
+00:05:52.020 --> 00:05:53.390
+and it's gathering that.
+
+00:05:53.390 --> 00:05:55.780
+And then as it arrives, it
+just streams it through,
+
+00:05:55.780 --> 00:05:58.680
+and that slashed
+the rendering time.
+
+00:05:58.680 --> 00:06:01.480
+We got down to-- well, so
+we're at 1.4 seconds for first
+
+00:06:01.480 --> 00:06:06.280
+render, and while I get
+the official figures up--
+
+00:06:06.280 --> 00:06:08.504
+PAUL LEWIS: [DRUM ROLL NOISE]
+
+00:06:09.480 --> 00:06:12.200
+JAKE ARCHIBALD: It went down
+to 2.4 seconds for the content,
+
+00:06:12.200 --> 00:06:14.440
+and that's a two second saving,
+compared to JavaScript on 3G.
+
+00:06:14.440 --> 00:06:15.648
+PAUL LEWIS: Wow, that's good.
+
+00:06:15.648 --> 00:06:17.273
+JAKE ARCHIBALD: Yeah,
+it's pretty huge.
+
+00:06:17.273 --> 00:06:19.897
+PAUL LEWIS: You can't really get
+any better than that, can you?
+
+00:06:19.897 --> 00:06:21.350
+JAKE ARCHIBALD:
+Oh, you can, sir,
+
+00:06:21.350 --> 00:06:24.570
+by using a little technology you
+might not have heard of before.
+
+00:06:24.570 --> 00:06:25.790
+PAUL LEWIS: [TRUMPET NOISE]
+
+00:06:25.790 --> 00:06:27.090
+JAKE ARCHIBALD: Service worker!
+
+00:06:27.090 --> 00:06:27.520
+PAUL LEWIS: Yay!
+
+00:06:27.520 --> 00:06:29.440
+JAKE ARCHIBALD: But yeah, as
+soon as you set the content--
+
+00:06:29.440 --> 00:06:31.180
+the page shell
+offline, that's it.
+
+00:06:31.180 --> 00:06:34.939
+You can get to that first
+rendering in 0.1 seconds,
+
+00:06:34.939 --> 00:06:35.980
+the measurement came out.
+
+00:06:35.980 --> 00:06:38.690
+But it's instant really.
+
+00:06:38.690 --> 00:06:41.610
+But it took 9K of the
+content down the wire,
+
+00:06:41.610 --> 00:06:43.860
+and once I had that,
+wrote it to the page,
+
+00:06:43.860 --> 00:06:45.620
+and then wrote again
+once I had to rest.
+
+00:06:45.620 --> 00:06:47.520
+And it was a total
+hack to do that.
+
+00:06:47.520 --> 00:06:50.890
+And this is why my next wish
+for the internet-- for the web
+
+00:06:50.890 --> 00:06:52.870
+standard is streams,
+because I want
+
+00:06:52.870 --> 00:06:55.920
+to be able to take some content
+that we're downloading, pipe
+
+00:06:55.920 --> 00:06:57.500
+into an element, and it appears.
+
+00:06:57.500 --> 00:07:00.440
+And I think once we have
+that, that kind of rendering
+
+00:07:00.440 --> 00:07:02.260
+as it goes along,
+I think that's when
+
+00:07:02.260 --> 00:07:04.900
+we can see client side
+rendering apps become
+
+00:07:04.900 --> 00:07:06.547
+competitive with
+server end apps.
+
+00:07:06.547 --> 00:07:07.880
+PAUL LEWIS: We'll drink to that.
+
+00:07:07.880 --> 00:07:08.838
+JAKE ARCHIBALD: Cheers.
+
+00:07:08.838 --> 00:07:11.830
+[MUSIC PLAYING]
+

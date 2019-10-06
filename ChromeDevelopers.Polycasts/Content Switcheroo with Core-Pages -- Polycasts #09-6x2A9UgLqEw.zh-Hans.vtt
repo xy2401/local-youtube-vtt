@@ -1,0 +1,500 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:03.537 --> 00:00:04.120
+嗨  大家好
+Hey, everyone.
+
+00:00:04.120 --> 00:00:04.390
+过得还好吧  
+What's up?
+
+00:00:04.390 --> 00:00:05.200
+我是Rob Dodson罗布  多德森
+It's Rob Dodson.
+
+00:00:05.200 --> 00:00:06.853
+在今天的Polycasts节目里  
+In today's episode of Polycasts, I'm
+
+00:00:06.853 --> 00:00:08.990
+我将向你们展示在使用core-pages元素的应用程序中
+going to show you how to dynamically swap around
+
+00:00:08.990 --> 00:00:11.080
+如何实现动态地切换
+all the content in your application using
+
+00:00:11.080 --> 00:00:13.889
+所有内容  那么开始吧
+the core pages element, so check it out.
+
+00:00:13.889 --> 00:00:15.680
+所有单页应用程序的特点是
+The hallmark of any single-page application
+
+00:00:15.680 --> 00:00:17.480
+当用户浏览不同部分时
+is that it doesn't refresh the page
+
+00:00:17.480 --> 00:00:19.984
+它不会刷新整个页面
+as the user is navigating to different sections.
+
+00:00:19.984 --> 00:00:21.650
+以Polymer网站为例
+So using the Polymer site as an example,
+
+00:00:21.650 --> 00:00:24.312
+你可以看到  当我点击菜单条目时  
+you can see that, as I'm clicking around the menu items,
+
+00:00:24.312 --> 00:00:25.770
+页面上的所有内容
+all the content on the page is just
+
+00:00:25.770 --> 00:00:27.610
+都是几乎瞬间改变的
+sort of instantaneously changing.
+
+00:00:27.610 --> 00:00:30.550
+这使得整个应用有非常漂亮和轻快的感觉
+It makes the whole app have this really nice, snappy feel to it.
+
+00:00:30.550 --> 00:00:33.720
+有很多方法可以实现这个效果
+Now there's a few ways that you can achieve this effect.
+
+00:00:33.720 --> 00:00:35.850
+最基本的  也就是我今天要讲的一个
+The most basic, and the one that I'll cover today,
+
+00:00:35.850 --> 00:00:39.190
+包括显示和隐藏在页面上可用的
+involves showing and hiding different bits of content that
+
+00:00:39.190 --> 00:00:41.490
+的不同的内容
+are already available on the page,
+
+00:00:41.490 --> 00:00:43.200
+简单说来就是把一些部分设置为display:block正常显示
+basically just telling some to display
+
+00:00:43.200 --> 00:00:45.410
+而其他的部分设置为display:none不显示
+block and others to display none.
+
+00:00:45.410 --> 00:00:47.340
+还有些其他的办法
+There are other strategies which include
+
+00:00:47.340 --> 00:00:50.700
+包括使用Ajax技术去和你的服务器对话 抓取一些内容
+using Ajax to go talk to your server, grab some content,
+
+00:00:50.700 --> 00:00:54.740
+然后注入到文档中或是输送数据到
+and then inject that back into the document or piping data
+
+00:00:54.740 --> 00:00:57.710
+页面上已经存在的模板中
+to templates that you already have that are on the page
+
+00:00:57.710 --> 00:01:00.552
+然后填充他们
+and then sort of inflating them.
+
+00:01:00.552 --> 00:01:01.052
+好
+All right.
+
+00:01:01.052 --> 00:01:02.040
+我将在未来的课程里讲
+I'm going to cover these other two
+
+00:01:02.040 --> 00:01:03.960
+其他的两个技术  但今天就从一个
+techniques in future episodes, but let's start off
+
+00:01:03.960 --> 00:01:05.470
+简单的例子开始
+with a really simple example today
+
+00:01:05.470 --> 00:01:08.292
+就是让一些部分在显示和不显示间来回切换
+just switching some sections on and off.
+
+00:01:08.292 --> 00:01:10.000
+这里我使用Sublime编辑器 而且已经准备好
+So here I am in Sublime, and I've already
+
+00:01:10.000 --> 00:01:12.080
+建立了一个很简单的工程
+gone ahead and set up a really simple project.
+
+00:01:12.080 --> 00:01:14.121
+在bower.json文件里  我已经包括了core元素
+In my bower.json, I've included the core elements
+
+00:01:14.121 --> 00:01:16.980
+而且把所有内容安装到Bower Components目录里
+and installed everything to my Bower Components directory.
+
+00:01:16.980 --> 00:01:19.063
+那么继续进行  我将做的第一件事情就是
+So to get rolling, the first thing I'm going to do
+
+00:01:19.063 --> 00:01:21.510
+打开elements.html文件且把core-pages元素
+is open my elements HTML file and add the core pages
+
+00:01:21.510 --> 00:01:25.045
+加进去  它就被导入了
+elements so it gets imported.
+
+00:01:25.045 --> 00:01:29.270
+然后  在index.html文件的索引里  我将写出core-pages标签
+Then in my index HTML file, I'll write out a core pages tag,
+
+00:01:29.270 --> 00:01:33.460
+同时把它的selected属性设为0
+and I'm going to give it a selected attribute of 0.
+
+00:01:33.460 --> 00:01:36.300
+我还要进入并且设置些样本
+I'm also going to go in and set some kind of boilerplate
+
+00:01:36.300 --> 00:01:36.986
+内容
+content up.
+
+00:01:41.900 --> 00:01:44.390
+现在  这里的selected属性就很重要了
+Now, the selected attribute up here is really important,
+
+00:01:44.390 --> 00:01:46.180
+而且它工作的方式基本上是这样
+and the way it works is it basically
+
+00:01:46.180 --> 00:01:49.310
+告诉core-pages标签选择哪一个子元素去显示
+tells core pages which of its children to display.
+
+00:01:49.310 --> 00:01:51.750
+这有点类似于数组里的索引
+It's kind of like an index on an array.
+
+00:01:51.750 --> 00:01:54.850
+因此这个子元素将会是子元素0
+So this child right here is going to be child 0,
+
+00:01:54.850 --> 00:01:58.870
+这个子元素会成为子标签1  而这部分会是子元素2
+this child is child 1, and this section is going to be child 2.
+
+00:01:58.870 --> 00:02:01.140
+因为我已经设置selected等于1
+Since I've set selected equal to 1,
+
+00:02:01.140 --> 00:02:04.630
+它将实际上使用了
+it's going to actually try to render this portfolio
+
+00:02:04.630 --> 00:02:06.544
+下面这个portfolio节
+section down here.
+
+00:02:06.544 --> 00:02:09.639
+如果你到Chrome上刷新页面
+If you hop on into Chrome and refresh the page,
+
+00:02:09.639 --> 00:02:13.430
+你应该看到那个portfolio content刚好显示在这里
+you should see that portfolio content showing up right there.
+
+00:02:13.430 --> 00:02:15.712
+但你不局限于使用数字索引
+But you're not limited to using a numeric index.
+
+00:02:15.712 --> 00:02:17.170
+如果你给core-pages元素一个
+If you give your core pages element
+
+00:02:17.170 --> 00:02:19.690
+带值的属性  你可以
+a value attribute instead, you can
+
+00:02:19.690 --> 00:02:23.040
+选择匹配这个值属性的任何子元素
+select any child that matches that value attribute.
+
+00:02:25.560 --> 00:02:28.424
+我要去设定值属性为data-category
+I'm going to set value attribute to data category.
+
+00:02:28.424 --> 00:02:30.590
+这是一个我已经完全做好的属性
+This is an attribute that I've just totally made up.
+
+00:02:30.590 --> 00:02:32.950
+而且我将给每一部分
+And I'm going to give each of these sections
+
+00:02:32.950 --> 00:02:36.730
+一个相应的data-category属性
+a matching data category attribute.
+
+00:02:36.730 --> 00:02:39.870
+现在  如果我设置选择的值为contact  这样就
+Now, if I set my selected value to contact, what that does
+
+00:02:39.870 --> 00:02:43.320
+让core-pages元素使用data-category属性是contact作为匹配值来
+is it tells core pages to find the child with a matching data
+
+00:02:43.320 --> 00:02:45.130
+寻找子元素
+category of contact.
+
+00:02:45.130 --> 00:02:46.710
+看看我们的各个部分  我们可以
+Looking through our sections, we can
+
+00:02:46.710 --> 00:02:50.040
+发现这个刚好匹配
+see that this one right down here matches.
+
+00:02:50.040 --> 00:02:53.310
+因此  当我们跳转到Chrome更新这个页面时
+And so, when we hop over to Chrome, refresh the page,
+
+00:02:53.310 --> 00:02:56.620
+我们会看到我们的Contact部分现在显示出来了
+we should see our Contact section is now displaying.
+
+00:02:56.620 --> 00:02:58.870
+OK  如果你回顾一下上节课
+All right, so if you recall in the last episode,
+
+00:02:58.870 --> 00:03:01.440
+我把所有的元素都放入一个自动绑定的template
+I wrapped all of my elements in an auto-binding template
+
+00:03:01.440 --> 00:03:02.180
+元素里
+element.
+
+00:03:02.180 --> 00:03:03.800
+现在  我们可以做同样的事
+Now, we can do the same thing here
+
+00:03:03.800 --> 00:03:06.080
+来把我们的core页面元素关联到一个菜单
+to connect our core pages element to a menu.
+
+00:03:06.080 --> 00:03:07.732
+让我们看一下
+Let's check it out.
+
+00:03:07.732 --> 00:03:10.190
+好的  我已经加了一些标记到我们的页面中
+All right, I've added a little bit more markup to our page,
+
+00:03:10.190 --> 00:03:11.980
+因此  我们有一个core-drawer-panel元素
+so, now we have a core drawer panel.
+
+00:03:11.980 --> 00:03:13.360
+它包含了我们所有的页面
+It's holding all of our pages.
+
+00:03:13.360 --> 00:03:15.867
+我们也有core-header-panel和core-toolbar元素  一堆在之前课程里
+We also have header panels and toolbars, a bunch of elements
+
+00:03:15.867 --> 00:03:17.450
+讲过的元素
+that we've shown in previous episodes.
+
+00:03:17.450 --> 00:03:18.824
+如果你错过了那些剧集
+And if you missed those episodes,
+
+00:03:18.824 --> 00:03:22.440
+我们下边的显示注释里有相关链接
+we've got links to them down in the show notes.
+
+00:03:22.440 --> 00:03:24.250
+我要做的第一件事就是把所有一切包装
+First thing I'm going do is wrap everything
+
+00:03:24.250 --> 00:03:26.090
+到自动绑定template之内
+inside of an auto-binding template,
+
+00:03:26.090 --> 00:03:30.880
+因此我将使用等于auto-binding的is属性
+so I'm going to use that is equals auto-binding attribute,
+
+00:03:30.880 --> 00:03:33.440
+抓取我们所有的内容粘贴在里边
+grab all my content, paste it inside there,
+
+00:03:33.440 --> 00:03:36.040
+并且也要给我的template元素一个ID属性为app
+and also give my template an ID of app,
+
+00:03:36.040 --> 00:03:39.370
+那样的话之后我可以用Javascript引用它
+so that way I can refer to it later using JavaScript.
+
+00:03:39.370 --> 00:03:42.100
+下一步  我会弹开我的elements.html文件并
+Next, I'm going to pop open my elements HTML file and drop
+
+00:03:42.100 --> 00:03:45.710
+导入一个core-menu.html和一个core-item.html进去
+in a core menu and core items imports.
+
+00:03:45.710 --> 00:03:48.000
+回到我的index.html文件  我将写一个core-menu
+And back in my index file, I'll write out a core menu
+
+00:03:48.000 --> 00:03:49.591
+并用和我们页类别相对应的core-item
+and populate it with items that match
+
+00:03:49.591 --> 00:03:50.715
+来填充它
+all of our page categories.
+
+00:03:55.770 --> 00:03:57.290
+现在是魔法时刻
+Now comes the magic moment.
+
+00:03:57.290 --> 00:04:00.792
+因为core-menu元素和core-pages元素扩展相同的公共父
+Because core menu and core pages extend the same common parent
+
+00:04:00.792 --> 00:04:02.250
+叫做core-selector  这意味着它们
+called core selector, it means they
+
+00:04:02.250 --> 00:04:04.475
+都可以利用到值属性的特性
+can both take advantage of value attribute.
+
+00:04:04.475 --> 00:04:06.620
+我将给这里的每个core-item
+I'm going to give each of my core items
+
+00:04:06.620 --> 00:04:10.990
+一个data-category属性  它们匹配core-page元素的data-category
+a data category that matches the core page's data categories,
+
+00:04:10.990 --> 00:04:13.590
+并且我将设定selected属性值等于一个局部
+and I can set my selected value equal to a scope
+
+00:04:13.590 --> 00:04:18.060
+变量  我正在构造并命名为page
+variable, which I'm just going to make up and call page.
+
+00:04:18.060 --> 00:04:20.050
+接着  我到core-pages部分
+Then I can go down to my core pages section
+
+00:04:20.050 --> 00:04:22.600
+将selected属性赋值为一个局部变量
+and give it a scope variable for its selected value,
+
+00:04:22.600 --> 00:04:24.130
+也叫做page
+also called page.
+
+00:04:24.130 --> 00:04:26.560
+现在  事实上  我已经把这两个元素连接到起来了
+And now, in effect, I've linked these two elements,
+
+00:04:26.560 --> 00:04:30.270
+我的菜单到我的页面
+my menu to my pages.
+
+00:04:30.270 --> 00:04:32.324
+如果我打开Chrome并刷新页面
+If I hop open to Chrome and refresh the page,
+
+00:04:32.324 --> 00:04:34.240
+你将看到我在点击菜单项时
+you'll see that as I'm clicking my menu items,
+
+00:04:34.240 --> 00:04:37.890
+它同时也在更新页面的内容
+it's also updating the page content.
+
+00:04:37.890 --> 00:04:40.040
+为了设置一个默认页面  我要
+To set a default page, I'm going to select
+
+00:04:40.040 --> 00:04:42.300
+在app.js文件里的选择自动绑定template元素
+the auto-binding template in my app JS file
+
+00:04:42.300 --> 00:04:44.820
+并给它的page变量一个初始值
+and give it an initial value for its page variable.
+
+00:04:50.300 --> 00:04:52.395
+我将更进一步并设置page变量等于home
+I'll just go ahead and set page equal to home.
+
+00:04:55.465 --> 00:04:56.840
+现在  当我建立应用程序时
+Now when I set up my application,
+
+00:04:56.840 --> 00:04:59.754
+它会默认显示home网页
+it's displaying the home page by default.
+
+00:04:59.754 --> 00:05:01.170
+好  使用core-pages
+All right, now that you can change
+
+00:05:01.170 --> 00:05:02.690
+在你应用程序中  你可以在不同状态之间改变
+between the different states in your application
+
+00:05:02.690 --> 00:05:04.630
+你可以开始考虑
+using core pages, you can start to think
+
+00:05:04.630 --> 00:05:06.690
+添加像路由这样的额外的东西
+about adding additional things like routing.
+
+00:05:06.690 --> 00:05:09.231
+那也是我们下节课要讲的内容
+That's exactly what we're going to cover in the next episode,
+
+00:05:09.231 --> 00:05:10.270
+所以一定要订阅
+so be sure to subscribe.
+
+00:05:10.270 --> 00:05:11.680
+一定要在下面留下评论
+Definitely leave comments down below
+
+00:05:11.680 --> 00:05:12.940
+让我们知道您的想法
+to let us know what you think.
+
+00:05:12.940 --> 00:05:14.689
+与往常一样  非常感谢您的收看，
+As always, thank you so much for watching,
+
+00:05:14.689 --> 00:05:16.040
+下次再见
+and I will see you next time.
+

@@ -1,0 +1,731 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.940
+[MUSIC PLAYING]
+
+00:00:04.642 --> 00:00:06.100
+ROB DODSON: Hey
+there, Polycasters.
+
+00:00:06.100 --> 00:00:06.719
+It's Rob here.
+
+00:00:06.719 --> 00:00:07.760
+Welcome back to the show.
+
+00:00:07.760 --> 00:00:09.900
+So today, we're going to
+be continuing our series
+
+00:00:09.900 --> 00:00:12.649
+on accessibility by talking
+about screen readers
+
+00:00:12.649 --> 00:00:14.440
+and making sure that
+the elements we create
+
+00:00:14.440 --> 00:00:16.820
+have the right semantics
+to be announced properly
+
+00:00:16.820 --> 00:00:18.630
+by those screen readers.
+
+00:00:18.630 --> 00:00:21.156
+Semantics is a pretty important
+concept in web development.
+
+00:00:21.156 --> 00:00:22.530
+But sometimes,
+you got to wonder,
+
+00:00:22.530 --> 00:00:24.370
+like, why is it important?
+
+00:00:24.370 --> 00:00:27.250
+And really, who does it benefit
+when I use good, semantically
+
+00:00:27.250 --> 00:00:28.490
+rich elements?
+
+00:00:28.490 --> 00:00:30.242
+And so I want to do
+a quick demo here
+
+00:00:30.242 --> 00:00:32.200
+using a screen reader so
+you kind of understand
+
+00:00:32.200 --> 00:00:33.860
+the importance of this topic.
+
+00:00:33.860 --> 00:00:35.235
+So over in the
+browser, I've just
+
+00:00:35.235 --> 00:00:37.160
+got a native checkbox element.
+
+00:00:37.160 --> 00:00:39.160
+And I'm going to start
+up the screen reader that
+
+00:00:39.160 --> 00:00:40.739
+comes built-in on my computer.
+
+00:00:40.739 --> 00:00:43.030
+So if you're on a Mac, there's
+a built-in screen reader
+
+00:00:43.030 --> 00:00:46.022
+called VoiceOver, which you
+can turn on with Command-F5.
+
+00:00:46.022 --> 00:00:48.480
+If you're on Windows, you have
+to download a screen reader.
+
+00:00:48.480 --> 00:00:50.230
+There's a free one called NVDA.
+
+00:00:50.230 --> 00:00:52.664
+Or there's another one called
+JAWS which you can use.
+
+00:00:52.664 --> 00:00:54.830
+Or there's even a Chrome
+extension called ChromeVox,
+
+00:00:54.830 --> 00:00:55.890
+which you can install.
+
+00:00:55.890 --> 00:00:57.990
+And that's actually a
+browser-run screen reader.
+
+00:00:57.990 --> 00:01:00.156
+But over here on my Mac,
+I'm going to use VoiceOver.
+
+00:01:00.156 --> 00:01:01.490
+I'll turn on the screen reader.
+
+00:01:01.490 --> 00:01:03.615
+SCREEN READER: VoiceOver
+on Chrome, JS Bin, window.
+
+00:01:03.615 --> 00:01:06.369
+ROB DODSON: And I'm going to
+navigate over to this checkbox.
+
+00:01:06.369 --> 00:01:07.785
+SCREEN READER:
+Unchecked checkbox.
+
+00:01:07.785 --> 00:01:09.784
+ROB DODSON: And you can
+see that when I do that,
+
+00:01:09.784 --> 00:01:13.829
+the checkbox was announced
+as a "unchecked" checkbox
+
+00:01:13.829 --> 00:01:15.620
+because it's a nice,
+semantic-rich element.
+
+00:01:15.620 --> 00:01:17.950
+I've used the correct
+input tag here.
+
+00:01:17.950 --> 00:01:20.020
+Now let's look at
+what happens when
+
+00:01:20.020 --> 00:01:22.180
+we try to do that with
+the custom element
+
+00:01:22.180 --> 00:01:23.864
+that we created in
+the last episode.
+
+00:01:23.864 --> 00:01:25.530
+So I'm going to turn
+on my screen reader
+
+00:01:25.530 --> 00:01:27.390
+and focus this item.
+
+00:01:27.390 --> 00:01:29.265
+SCREEN READER: VoiceOver
+on Chrome -group.
+
+00:01:29.265 --> 00:01:31.390
+ROB DODSON: And you see
+that the screen reader just
+
+00:01:31.390 --> 00:01:33.350
+announced it as "group."
+
+00:01:33.350 --> 00:01:35.190
+And that's because,
+as I mentioned before,
+
+00:01:35.190 --> 00:01:37.190
+when we create a custom
+element, we're basically
+
+00:01:37.190 --> 00:01:38.649
+extending the HTML language.
+
+00:01:38.649 --> 00:01:40.940
+We're creating something that
+has never existed before.
+
+00:01:40.940 --> 00:01:44.060
+And that means that it doesn't
+have any built-in semantics.
+
+00:01:44.060 --> 00:01:46.290
+To the browser, a
+custom element is really
+
+00:01:46.290 --> 00:01:48.990
+no different from
+a span or a div.
+
+00:01:48.990 --> 00:01:52.420
+So there's nothing that
+instructs it or instructs
+
+00:01:52.420 --> 00:01:55.220
+our users that it needs
+to be clicked upon.
+
+00:01:55.220 --> 00:01:58.310
+So how do we add the appropriate
+semantics to our elements
+
+00:01:58.310 --> 00:02:01.120
+so that users who actually
+rely on screen readers
+
+00:02:01.120 --> 00:02:02.084
+can interact with them?
+
+00:02:02.084 --> 00:02:04.250
+And there's a few ways that
+you could go about this.
+
+00:02:04.250 --> 00:02:06.208
+You could, of course,
+just go and start reading
+
+00:02:06.208 --> 00:02:07.850
+through a bunch
+of specifications.
+
+00:02:07.850 --> 00:02:10.308
+But if you want to get kind of
+started right away, what I'd
+
+00:02:10.308 --> 00:02:13.040
+recommend is checking out that
+ARIA Authoring Practices Guide
+
+00:02:13.040 --> 00:02:14.861
+that we looked at in
+the previous episode.
+
+00:02:14.861 --> 00:02:16.110
+So I'm going to go over there.
+
+00:02:16.110 --> 00:02:18.520
+And I'm going to
+look for the pattern
+
+00:02:18.520 --> 00:02:22.560
+that I'm building, which
+in this case is a checkbox.
+
+00:02:22.560 --> 00:02:24.740
+So we'll go to the ARIA
+Authoring Practices Guide.
+
+00:02:24.740 --> 00:02:28.000
+We'll go over to the sidebar
+and look for a checkbox.
+
+00:02:28.000 --> 00:02:30.592
+And along with sort of
+the keyboard interaction
+
+00:02:30.592 --> 00:02:32.300
+support that we need
+to add, you can also
+
+00:02:32.300 --> 00:02:36.030
+see that there's a section
+here on what it calls ARIA
+
+00:02:36.030 --> 00:02:39.037
+Roles, States, and Properties.
+
+00:02:39.037 --> 00:02:40.870
+So ARIA, if you've never
+heard of it before,
+
+00:02:40.870 --> 00:02:43.520
+stands for Accessible Rich
+Internet Applications.
+
+00:02:43.520 --> 00:02:45.850
+And it's basically
+a set of attributes
+
+00:02:45.850 --> 00:02:48.540
+that you can apply to
+an element to kind of do
+
+00:02:48.540 --> 00:02:50.690
+surgery on the
+accessibility tree
+
+00:02:50.690 --> 00:02:53.700
+and actually add in
+additional semantics.
+
+00:02:53.700 --> 00:02:56.270
+So if we look at the guidance
+here on the Authoring Practices
+
+00:02:56.270 --> 00:02:58.020
+Guide, it tells us
+that our checkbox needs
+
+00:02:58.020 --> 00:03:02.240
+to have a role of checkbox, that
+it needs to have an accessible
+
+00:03:02.240 --> 00:03:05.910
+label-- and we'll actually
+cover this in the next episode--
+
+00:03:05.910 --> 00:03:07.870
+and that our checkbox
+when checked needs
+
+00:03:07.870 --> 00:03:10.850
+to have aria-checked set to
+true, and when it's unchecked,
+
+00:03:10.850 --> 00:03:13.199
+it needs to have
+aria-checked set to false.
+
+00:03:13.199 --> 00:03:14.740
+And there's a few
+other items in here
+
+00:03:14.740 --> 00:03:17.120
+about building mixed checkboxes
+and things like that.
+
+00:03:17.120 --> 00:03:19.529
+We're not going to cover
+any of that in this series.
+
+00:03:19.529 --> 00:03:21.570
+But for today, what we
+can do is we can make sure
+
+00:03:21.570 --> 00:03:24.490
+that we get the appropriate
+role and the appropriate check
+
+00:03:24.490 --> 00:03:25.870
+states.
+
+00:03:25.870 --> 00:03:28.795
+So let's switch back
+over to our code editor.
+
+00:03:28.795 --> 00:03:30.420
+And if you recall,
+in the last episode,
+
+00:03:30.420 --> 00:03:32.860
+I used this
+hostAttributes property
+
+00:03:32.860 --> 00:03:36.390
+in order to have my tag sort
+of self-apply a tabindex
+
+00:03:36.390 --> 00:03:37.400
+attribute.
+
+00:03:37.400 --> 00:03:41.190
+And we can use the same property
+to self-apply the appropriate
+
+00:03:41.190 --> 00:03:41.719
+role.
+
+00:03:41.719 --> 00:03:44.010
+So along with tabindex, we're
+going to ask this element
+
+00:03:44.010 --> 00:03:47.160
+to apply a role of checkbox.
+
+00:03:47.160 --> 00:03:51.829
+And if we actually switch back
+to Chrome and refresh the page,
+
+00:03:51.829 --> 00:03:52.870
+we can open our DevTools.
+
+00:03:52.870 --> 00:03:55.980
+We can verify that the element
+is now applying that role.
+
+00:03:55.980 --> 00:03:57.950
+So we see role equals checkbox.
+
+00:03:57.950 --> 00:04:01.800
+And let's use our screen reader
+and see what it announces now.
+
+00:04:01.800 --> 00:04:04.270
+SCREEN READER: VoiceOver on
+Chrome-- unchecked, checkbox.
+
+00:04:04.270 --> 00:04:05.410
+ROB DODSON: So you can
+see now that the screen
+
+00:04:05.410 --> 00:04:08.260
+reader's announcing that this
+is an unchecked checkbox.
+
+00:04:08.260 --> 00:04:11.050
+It's actually even inferring
+that it's unchecked because
+
+00:04:11.050 --> 00:04:12.870
+of the role that we've applied.
+
+00:04:12.870 --> 00:04:16.420
+In the world of ARIA, the role
+is kind of the most important
+
+00:04:16.420 --> 00:04:16.920
+attribute.
+
+00:04:16.920 --> 00:04:18.459
+It is the thing
+that you absolutely
+
+00:04:18.459 --> 00:04:20.000
+want to make sure
+that you get right.
+
+00:04:20.000 --> 00:04:22.089
+There's a lot of ARIA
+attributes which don't even
+
+00:04:22.089 --> 00:04:25.860
+work if they are not paired
+with the appropriate role.
+
+00:04:25.860 --> 00:04:27.980
+So already, we've done
+kind of the 80% thing.
+
+00:04:27.980 --> 00:04:30.100
+We've gotten the correct
+role, which is great.
+
+00:04:30.100 --> 00:04:32.800
+The next thing we got to do
+is add those ARIA check states
+
+00:04:32.800 --> 00:04:35.150
+when we toggle our checkbox.
+
+00:04:35.150 --> 00:04:37.690
+So going back to our code
+editor, if you remember,
+
+00:04:37.690 --> 00:04:40.314
+I have this checked property
+that we're toggling on and off
+
+00:04:40.314 --> 00:04:42.230
+whenever the user either
+clicks on the element
+
+00:04:42.230 --> 00:04:43.855
+or hits space bar.
+
+00:04:43.855 --> 00:04:45.480
+So what we can do is
+we're going to add
+
+00:04:45.480 --> 00:04:47.920
+an observer to this property.
+
+00:04:47.920 --> 00:04:51.940
+And I'll call my observer
+function checkChanged.
+
+00:04:51.940 --> 00:04:54.760
+And then I'll add a little
+bit of additional space
+
+00:04:54.760 --> 00:04:57.230
+down here just so
+you can see things.
+
+00:04:57.230 --> 00:05:01.085
+I'll define a
+checkChanged function.
+
+00:05:01.085 --> 00:05:03.086
+And I'm just going to
+paste that in here.
+
+00:05:03.086 --> 00:05:05.460
+So what we're saying is we're
+going to call setAttribute.
+
+00:05:05.460 --> 00:05:07.739
+We're going to set the
+aria-checked attribute.
+
+00:05:07.739 --> 00:05:09.280
+And we're going to
+set it to whatever
+
+00:05:09.280 --> 00:05:11.590
+the value of this.checked is.
+
+00:05:11.590 --> 00:05:13.150
+And remember, we're
+sort of toggling
+
+00:05:13.150 --> 00:05:15.610
+that value inside of our
+onTap handler that gets
+
+00:05:15.610 --> 00:05:18.400
+run when someone clicks on it
+with a mouse or hits space bar.
+
+00:05:18.400 --> 00:05:20.220
+Now, calling
+setAttribute in this way
+
+00:05:20.220 --> 00:05:22.490
+is going to serialize
+the value of this.checked
+
+00:05:22.490 --> 00:05:24.100
+to a string, which is important.
+
+00:05:24.100 --> 00:05:26.110
+In ARIA, whenever you set
+a true or false value,
+
+00:05:26.110 --> 00:05:28.800
+you actually have to do it as
+an actual sort of literal string
+
+00:05:28.800 --> 00:05:31.320
+of "true" or "false," which is
+kind of an interesting quirk
+
+00:05:31.320 --> 00:05:32.630
+of ARIA.
+
+00:05:32.630 --> 00:05:34.000
+So that part looks good.
+
+00:05:34.000 --> 00:05:36.309
+The last thing that I want
+to do is sort of change
+
+00:05:36.309 --> 00:05:37.350
+how this thing is styled.
+
+00:05:37.350 --> 00:05:39.900
+Now, if you remember,
+in the last episode,
+
+00:05:39.900 --> 00:05:42.340
+we had this host selector
+for the checked attribute.
+
+00:05:42.340 --> 00:05:43.923
+And that's how we
+actually figured out
+
+00:05:43.923 --> 00:05:46.501
+when we wanted to
+apply our check mark.
+
+00:05:46.501 --> 00:05:48.000
+But something that
+can be nice to do
+
+00:05:48.000 --> 00:05:51.870
+is rather than rely on
+a class or some sort
+
+00:05:51.870 --> 00:05:54.130
+of random, made-up
+attribute that we've
+
+00:05:54.130 --> 00:05:55.970
+created in this case,
+we could actually
+
+00:05:55.970 --> 00:05:58.700
+rely on the state
+of the ARIA value.
+
+00:05:58.700 --> 00:06:00.760
+So I'm going to say any
+time aria-checked is
+
+00:06:00.760 --> 00:06:04.542
+set to true, that is when we
+should apply our checkbox.
+
+00:06:04.542 --> 00:06:06.250
+The cool thing here
+is we're now creating
+
+00:06:06.250 --> 00:06:09.760
+sort of a symbiotic relationship
+between our ARIA attribute
+
+00:06:09.760 --> 00:06:12.350
+and the actual visual
+state of the element.
+
+00:06:12.350 --> 00:06:14.050
+And we can use that
+to verify that ARIA
+
+00:06:14.050 --> 00:06:16.050
+is working appropriately.
+
+00:06:16.050 --> 00:06:17.880
+So let's go back to Chrome.
+
+00:06:17.880 --> 00:06:19.440
+We'll open up our DevTools.
+
+00:06:19.440 --> 00:06:23.070
+We can see that aria-checked
+is starting out as false.
+
+00:06:23.070 --> 00:06:25.470
+If I hit Tab and
+select this element,
+
+00:06:25.470 --> 00:06:27.890
+we can see that that, then,
+toggles to true, along
+
+00:06:27.890 --> 00:06:29.940
+with the checked
+attribute being applied.
+
+00:06:29.940 --> 00:06:32.090
+And we can see that the
+appropriate check mark
+
+00:06:32.090 --> 00:06:33.274
+style is showing up.
+
+00:06:33.274 --> 00:06:35.440
+And the last thing I want
+to do is just try this out
+
+00:06:35.440 --> 00:06:36.570
+with my screen reader.
+
+00:06:36.570 --> 00:06:39.950
+So I'll uncheck the checkbox,
+turn on my screen reader.
+
+00:06:39.950 --> 00:06:42.444
+SCREEN READER: VoiceOver on
+Chrome-- unchecked, checkbox.
+
+00:06:42.444 --> 00:06:44.860
+ROB DODSON: Initially, it says
+it's an unchecked checkbox.
+
+00:06:44.860 --> 00:06:46.280
+When we hit spacebar--
+
+00:06:46.280 --> 00:06:47.100
+SCREEN READER:
+Checked, checkbox.
+
+00:06:47.100 --> 00:06:49.558
+ROB DODSON: Now it updates the
+state to a checked checkbox.
+
+00:06:49.558 --> 00:06:52.500
+So now we've created a nice,
+accessible checkbox that
+
+00:06:52.500 --> 00:06:53.910
+works well for the keyboard.
+
+00:06:53.910 --> 00:06:55.347
+It works well for
+screen readers.
+
+00:06:55.347 --> 00:06:57.430
+The last thing that we
+need to do is add labeling.
+
+00:06:57.430 --> 00:06:59.892
+But I'm going to save
+that for the next episode.
+
+00:06:59.892 --> 00:07:02.350
+Now, if you have any questions
+about what we covered today,
+
+00:07:02.350 --> 00:07:05.020
+please be sure to leave them
+down in the comments below.
+
+00:07:05.020 --> 00:07:07.220
+Or as always, you can hit
+me up on a social network
+
+00:07:07.220 --> 00:07:10.010
+of your choosing at #AskPolymer.
+
+00:07:10.010 --> 00:07:11.450
+Thank you so much for watching.
+
+00:07:11.450 --> 00:07:12.720
+I'll see you next time.
+
+00:07:12.720 --> 00:07:15.770
+[MUSIC PLAYING]
+

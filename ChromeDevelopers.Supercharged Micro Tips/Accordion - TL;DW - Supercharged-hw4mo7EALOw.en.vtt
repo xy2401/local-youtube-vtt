@@ -1,0 +1,617 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:10.190
+[MUSIC PLAYING] [EXPLOSION]
+
+00:00:10.190 --> 00:00:13.140
+PAUL LEWIS: Hello, and welcome
+to this Supercharged TL;DW.
+
+00:00:13.140 --> 00:00:16.280
+Last time, [? Sermer ?]
+and I made an accordion.
+
+00:00:16.280 --> 00:00:18.560
+Not the musical kind.
+[ACCORDION NOISES] That
+
+00:00:18.560 --> 00:00:19.930
+would be weird.
+
+00:00:19.930 --> 00:00:22.340
+No, instead, what we
+made was a UI element.
+
+00:00:22.340 --> 00:00:24.116
+Let's take a look
+at what we made.
+
+00:00:24.116 --> 00:00:25.490
+So you can see on
+screen here, we
+
+00:00:25.490 --> 00:00:27.880
+have a bunch of panels--
+one, two, three.
+
+00:00:27.880 --> 00:00:30.090
+And you can see that
+they're sliding up and down.
+
+00:00:30.090 --> 00:00:34.130
+Now you can also use
+your keyboard as well.
+
+00:00:34.130 --> 00:00:37.344
+Tab, and arrow keys,
+and so forth as well.
+
+00:00:37.344 --> 00:00:39.010
+Let's also look at
+the performance side.
+
+00:00:39.010 --> 00:00:41.460
+I've the timeline here
+in Dev Tools open.
+
+00:00:41.460 --> 00:00:44.717
+If I click around
+these panels, you'll
+
+00:00:44.717 --> 00:00:47.050
+see that each one of those
+clicks, there's an animation.
+
+00:00:47.050 --> 00:00:50.390
+And if we zoom in, it's a
+comfortable 60 frames a second.
+
+00:00:50.390 --> 00:00:51.430
+Lovely and green.
+
+00:00:51.430 --> 00:00:52.850
+No red markers there.
+
+00:00:52.850 --> 00:00:54.100
+Working really well.
+
+00:00:54.100 --> 00:00:55.190
+So how do we make it?
+
+00:00:55.190 --> 00:00:57.980
+Well, as we get into
+that, of course,
+
+00:00:57.980 --> 00:01:00.311
+there's only one place to
+go for this discussion.
+
+00:01:00.311 --> 00:01:00.810
+Yes.
+
+00:01:00.810 --> 00:01:01.630
+Yes.
+
+00:01:01.630 --> 00:01:04.190
+Theory Corner.
+
+00:01:04.190 --> 00:01:05.430
+Hello, my friends.
+
+00:01:05.430 --> 00:01:07.180
+Welcome to Theory Corner.
+
+00:01:07.180 --> 00:01:09.750
+Now, here's our set this time.
+
+00:01:09.750 --> 00:01:10.875
+We have a bunch of panels.
+
+00:01:10.875 --> 00:01:12.500
+And, by default, what
+we're going to do
+
+00:01:12.500 --> 00:01:14.660
+is we're going to
+leave those well alone.
+
+00:01:14.660 --> 00:01:15.480
+Sounds odd.
+
+00:01:15.480 --> 00:01:17.170
+But if JavaScript
+doesn't run, we
+
+00:01:17.170 --> 00:01:18.670
+don't want to lose this content.
+
+00:01:18.670 --> 00:01:20.660
+So we're going to
+style based on the fact
+
+00:01:20.660 --> 00:01:22.360
+that JavaScript is running.
+
+00:01:22.360 --> 00:01:24.350
+So if JavaScript isn't
+running for some reason,
+
+00:01:24.350 --> 00:01:26.180
+these panels will just stack up.
+
+00:01:26.180 --> 00:01:26.850
+OK?
+
+00:01:26.850 --> 00:01:28.480
+If JavaScript is
+running, we're going
+
+00:01:28.480 --> 00:01:30.020
+to set a flag on
+the element, which
+
+00:01:30.020 --> 00:01:34.300
+is going to cause the panels to
+rejig into this format, where
+
+00:01:34.300 --> 00:01:36.795
+we have them kind of
+stacked up like this.
+
+00:01:36.795 --> 00:01:38.420
+And the other things
+that we need to do
+
+00:01:38.420 --> 00:01:41.120
+is, as you click
+on a panel header,
+
+00:01:41.120 --> 00:01:44.640
+we're going to slide
+that panel into place.
+
+00:01:44.640 --> 00:01:46.690
+For this to also work,
+we want to make sure
+
+00:01:46.690 --> 00:01:49.300
+that all content that's kind
+of outside this box is hidden.
+
+00:01:49.300 --> 00:01:50.970
+So we use overflow:hidden.
+
+00:01:50.970 --> 00:01:53.880
+And we want to make sure
+that the content itself only
+
+00:01:53.880 --> 00:01:55.780
+takes up this amount of room.
+
+00:01:55.780 --> 00:01:59.320
+And anything that's longer than
+that would need a scroll bar.
+
+00:01:59.320 --> 00:02:00.060
+Fair enough.
+
+00:02:00.060 --> 00:02:00.560
+OK.
+
+00:02:00.560 --> 00:02:03.430
+Let's go and have
+a look at the code.
+
+00:02:03.430 --> 00:02:04.130
+Welcome back.
+
+00:02:04.130 --> 00:02:05.540
+Let's look at the code.
+
+00:02:05.540 --> 00:02:07.250
+Have you ever noticed
+how you never have
+
+00:02:07.250 --> 00:02:09.139
+heavy metal and an accordion?
+
+00:02:09.139 --> 00:02:12.350
+[ACCORDION NOISES]
+Never works out.
+
+00:02:12.350 --> 00:02:14.090
+So let's look at
+the code itself.
+
+00:02:14.090 --> 00:02:16.964
+Now, the code is quite
+interesting overall.
+
+00:02:16.964 --> 00:02:18.380
+And if you've got
+time, definitely
+
+00:02:18.380 --> 00:02:19.296
+watch that Livestream.
+
+00:02:19.296 --> 00:02:21.576
+It's about an hour
+long, but there's bugs
+
+00:02:21.576 --> 00:02:23.700
+and there's loads of stuff
+and loads of discussion.
+
+00:02:23.700 --> 00:02:25.519
+Some brilliant questions
+from the people
+
+00:02:25.519 --> 00:02:27.560
+who are watching Livestream,
+so it's really worth
+
+00:02:27.560 --> 00:02:28.601
+catching that if you can.
+
+00:02:28.601 --> 00:02:30.970
+But there are main things
+that we can dive into
+
+00:02:30.970 --> 00:02:32.721
+and actually have
+a proper look at.
+
+00:02:32.721 --> 00:02:34.720
+And the main thing that
+I think we'll start with
+
+00:02:34.720 --> 00:02:35.880
+is the attached call back.
+
+00:02:35.880 --> 00:02:38.910
+We're using custom elements
+here for the accordion
+
+00:02:38.910 --> 00:02:39.694
+and the panes.
+
+00:02:39.694 --> 00:02:41.110
+You see that
+actually in the HTML.
+
+00:02:41.110 --> 00:02:42.220
+Let's have a look there quickly.
+
+00:02:42.220 --> 00:02:43.150
+There's the accordion.
+
+00:02:43.150 --> 00:02:43.960
+Tada.
+
+00:02:43.960 --> 00:02:46.670
+And then each of those panes
+is in there with a header
+
+00:02:46.670 --> 00:02:48.439
+button and the content itself.
+
+00:02:48.439 --> 00:02:49.980
+So let's look at
+the accordion again.
+
+00:02:49.980 --> 00:02:51.840
+So when it gets
+attached, what we do
+
+00:02:51.840 --> 00:02:53.759
+is we ask for all
+the panes, and then
+
+00:02:53.759 --> 00:02:54.925
+we calculate the geometries.
+
+00:02:54.925 --> 00:03:00.790
+And the geometries is basically
+how tall is the header.
+
+00:03:00.790 --> 00:03:01.960
+OK?
+
+00:03:01.960 --> 00:03:04.300
+And then we figure out
+the available height
+
+00:03:04.300 --> 00:03:07.310
+based on the total height of
+the accordion minus the number
+
+00:03:07.310 --> 00:03:08.340
+of headers we've got.
+
+00:03:08.340 --> 00:03:11.490
+And that's the amount of
+content space that we've got.
+
+00:03:11.490 --> 00:03:13.845
+When we move the panels
+around and we set up
+
+00:03:13.845 --> 00:03:15.220
+everything, what
+we want to do is
+
+00:03:15.220 --> 00:03:18.870
+we want to make sure that we
+reset the pane content height
+
+00:03:18.870 --> 00:03:20.170
+to be that available height.
+
+00:03:20.170 --> 00:03:24.484
+So you see over
+there, the flower?
+
+00:03:24.484 --> 00:03:25.650
+That's the available height.
+
+00:03:25.650 --> 00:03:26.720
+That's where that bit is.
+
+00:03:26.720 --> 00:03:28.678
+So we want to make sure
+that all our panes have
+
+00:03:28.678 --> 00:03:30.670
+that available height.
+
+00:03:30.670 --> 00:03:32.030
+Perfect.
+
+00:03:32.030 --> 00:03:35.500
+When we see a pane that has
+the area expanded attribute,
+
+00:03:35.500 --> 00:03:36.506
+then we jump down.
+
+00:03:36.506 --> 00:03:37.880
+Because that's
+the expanded pane.
+
+00:03:37.880 --> 00:03:39.310
+So we need to make sure that
+all of the other content
+
+00:03:39.310 --> 00:03:40.300
+stacks up below it.
+
+00:03:40.300 --> 00:03:41.120
+Fair enough.
+
+00:03:41.120 --> 00:03:42.310
+All good.
+
+00:03:42.310 --> 00:03:45.580
+So we've done that, and
+the calculate geometries,
+
+00:03:45.580 --> 00:03:46.122
+move panels.
+
+00:03:46.122 --> 00:03:47.580
+Then we set up some
+event listeners
+
+00:03:47.580 --> 00:03:50.620
+for handling clicks and
+handling other things.
+
+00:03:50.620 --> 00:03:53.470
+And then we basically set this
+attribute, which is active.
+
+00:03:53.470 --> 00:03:55.610
+And that means that
+the accordion is now
+
+00:03:55.610 --> 00:03:56.680
+ready for business.
+
+00:03:56.680 --> 00:03:58.610
+And we can get going.
+
+00:03:58.610 --> 00:04:00.590
+But maybe you're
+wondering how, in fact, do
+
+00:04:00.590 --> 00:04:02.452
+you do the bit where
+you click on a header
+
+00:04:02.452 --> 00:04:04.410
+or you select it with a
+keyboard and hit Enter.
+
+00:04:04.410 --> 00:04:05.520
+What happens then?
+
+00:04:05.520 --> 00:04:06.460
+Glad you asked.
+
+00:04:06.460 --> 00:04:09.070
+Here to answer your
+questions indeed.
+
+00:04:09.070 --> 00:04:14.070
+So we have to jump over to the
+SC pane JavaScript for that.
+
+00:04:14.070 --> 00:04:17.079
+And all we have in here, really
+apart from a couple of getters,
+
+00:04:17.079 --> 00:04:18.239
+is this attach callback.
+
+00:04:18.239 --> 00:04:21.720
+And when you click on the
+header inside one of the panes,
+
+00:04:21.720 --> 00:04:23.430
+we dispatch a custom event.
+
+00:04:23.430 --> 00:04:25.680
+Now, if you've never come
+across custom events before,
+
+00:04:25.680 --> 00:04:26.760
+they're brilliant.
+
+00:04:26.760 --> 00:04:29.220
+What they do is they
+act like a normal event,
+
+00:04:29.220 --> 00:04:31.580
+except that you get to name
+it and you get to set things
+
+00:04:31.580 --> 00:04:33.540
+like whether it bubbles,
+or it's cancellable,
+
+00:04:33.540 --> 00:04:34.650
+all that kind stuff.
+
+00:04:34.650 --> 00:04:37.030
+Here we're using one
+called Panel Change.
+
+00:04:37.030 --> 00:04:38.960
+And we're going to say
+that it's bubbling up
+
+00:04:38.960 --> 00:04:41.418
+through the dom, which is great
+because we want to delegate
+
+00:04:41.418 --> 00:04:44.830
+the handling of the panel change
+up to the accordion element
+
+00:04:44.830 --> 00:04:45.780
+itself.
+
+00:04:45.780 --> 00:04:48.840
+Which you will notice
+in the event listeners.
+
+00:04:48.840 --> 00:04:51.180
+Event listeners here,
+there's this panel change.
+
+00:04:51.180 --> 00:04:52.070
+Same name, great.
+
+00:04:52.070 --> 00:04:54.670
+And then there's this stop
+on panel change, which
+
+00:04:54.670 --> 00:04:57.200
+involves basically
+stepping through all
+
+00:04:57.200 --> 00:05:00.450
+the available panes, turn
+them all to collapse,
+
+00:05:00.450 --> 00:05:03.000
+and then finding the one
+that you actually selected,
+
+00:05:03.000 --> 00:05:05.520
+and telling that one to expand.
+
+00:05:05.520 --> 00:05:08.590
+Last but not least, we then
+call Move Panels again.
+
+00:05:08.590 --> 00:05:13.015
+And Move Panels is going to
+basically tell all the panels
+
+00:05:13.015 --> 00:05:13.890
+where they should be.
+
+00:05:13.890 --> 00:05:20.370
+And, basically, by the power
+of transitions on transforms,
+
+00:05:20.370 --> 00:05:24.030
+what will happen is, as you tell
+a pane to be translate y, 200
+
+00:05:24.030 --> 00:05:27.550
+pixels, it's going to go up down
+the screen, which ultimately
+
+00:05:27.550 --> 00:05:29.530
+gives you the effect
+that we saw before.
+
+00:05:29.530 --> 00:05:32.780
+So we're basically sliding
+panels around the screen.
+
+00:05:32.780 --> 00:05:33.975
+Performed really well.
+
+00:05:33.975 --> 00:05:34.850
+So there you have it.
+
+00:05:34.850 --> 00:05:38.370
+A prototype of an accordion
+that is performance and has
+
+00:05:38.370 --> 00:05:41.160
+a really good foundation for
+something like accessibility.
+
+00:05:41.160 --> 00:05:43.530
+Now don't forget that you
+can subscribe to the channel,
+
+00:05:43.530 --> 00:05:44.590
+and you can watch
+the Livestream.
+
+00:05:44.590 --> 00:05:46.110
+It's about an hour
+long, but there's
+
+00:05:46.110 --> 00:05:50.270
+loads in there-- great
+discussions, bugs, bug fixes,
+
+00:05:50.270 --> 00:05:51.330
+whole heap of things.
+
+00:05:51.330 --> 00:05:56.690
+And I will catch you,
+of course, next time.
+
+00:05:56.690 --> 00:05:59.344
+Now, I know it
+looks a bit strange.
+
+00:05:59.344 --> 00:06:01.440
+Just click it and subscribe.
+
+00:06:01.440 --> 00:06:05.680
+Also Livestream, over there,
+that's worth watching, bugs
+
+00:06:05.680 --> 00:06:07.310
+and everything.
+

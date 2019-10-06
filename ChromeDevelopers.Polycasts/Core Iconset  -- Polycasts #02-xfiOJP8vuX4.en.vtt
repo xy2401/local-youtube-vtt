@@ -1,0 +1,883 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.009 --> 00:00:01.050
+ROB DODSON: Hey everyone!
+
+00:00:01.050 --> 00:00:01.550
+What's up?
+
+00:00:01.550 --> 00:00:03.310
+It's Rob Dodson here,
+and in this episode,
+
+00:00:03.310 --> 00:00:05.434
+I'm going to show you how
+you can beef up your core
+
+00:00:05.434 --> 00:00:08.290
+icons by loading in
+additional icon sets.
+
+00:00:08.290 --> 00:00:10.730
+I'm also going to show you
+how you create your own custom
+
+00:00:10.730 --> 00:00:12.850
+icon sets using SVG.
+
+00:00:12.850 --> 00:00:14.690
+So let's check it out.
+
+00:00:14.690 --> 00:00:17.520
+So we're going to start
+by building our own icon
+
+00:00:17.520 --> 00:00:18.572
+set from scratch.
+
+00:00:18.572 --> 00:00:20.030
+That will show off
+all the concepts
+
+00:00:20.030 --> 00:00:21.529
+that we want to
+cover in this video.
+
+00:00:21.529 --> 00:00:24.410
+So we're going to be using
+the core-iconset-svg element.
+
+00:00:24.410 --> 00:00:26.820
+And keep in mind, there's
+also a core-iconset element
+
+00:00:26.820 --> 00:00:30.140
+that's primarily for
+generating raster icon sets.
+
+00:00:30.140 --> 00:00:31.980
+We're going to focus
+on the SVG version
+
+00:00:31.980 --> 00:00:33.770
+because it looks
+nicer, and tends
+
+00:00:33.770 --> 00:00:36.500
+to scale better on
+different screens.
+
+00:00:36.500 --> 00:00:39.000
+Now this is the first icon that
+we're going to be producing,
+
+00:00:39.000 --> 00:00:42.540
+and we're going to give
+it the name fancy-circles.
+
+00:00:42.540 --> 00:00:45.560
+And it's not
+actually that fancy,
+
+00:00:45.560 --> 00:00:47.620
+it's just a few
+overlapping circles,
+
+00:00:47.620 --> 00:00:49.810
+but it'll be a good starting
+point for our icon set.
+
+00:00:49.810 --> 00:00:51.226
+The first thing
+we've got to do is
+
+00:00:51.226 --> 00:00:54.310
+we need to import the definition
+for our core-iconset-svg
+
+00:00:54.310 --> 00:00:54.900
+element.
+
+00:00:54.900 --> 00:00:59.240
+So over here, I've got bower
+components/core iconset SVG,
+
+00:00:59.240 --> 00:01:01.900
+and that's going to actually
+load in this tag over here,
+
+00:01:01.900 --> 00:01:04.884
+so I can start using
+it in my application.
+
+00:01:04.884 --> 00:01:06.300
+And the next thing
+I want to do is
+
+00:01:06.300 --> 00:01:07.591
+I want to configure this thing.
+
+00:01:07.591 --> 00:01:10.200
+So I've got to give
+it an ID, and this ID
+
+00:01:10.200 --> 00:01:13.020
+is really important,
+because this is actually
+
+00:01:13.020 --> 00:01:15.360
+the name of my icon set.
+
+00:01:15.360 --> 00:01:17.874
+This is how people are going
+to refer to my icon set later
+
+00:01:17.874 --> 00:01:19.790
+on when they want to
+pull something out of it.
+
+00:01:19.790 --> 00:01:22.410
+So we're calling
+it custom-icons.
+
+00:01:22.410 --> 00:01:26.620
+And if we want, we can also
+give it an optional icon size.
+
+00:01:26.620 --> 00:01:29.180
+Here, I'm setting it to
+50, which means 50 pixels.
+
+00:01:29.180 --> 00:01:31.540
+By default, all the icons
+coming out of our set
+
+00:01:31.540 --> 00:01:37.210
+would be 24 pixels, but
+setting this icon size
+
+00:01:37.210 --> 00:01:38.790
+is going to boost
+that up for us.
+
+00:01:38.790 --> 00:01:40.290
+Again, it's optional,
+you don't have
+
+00:01:40.290 --> 00:01:42.346
+to include it if
+you don't want to.
+
+00:01:42.346 --> 00:01:45.330
+Now I'm going to open
+my icon set tag up,
+
+00:01:45.330 --> 00:01:48.400
+and I'm going to drop some
+SVG markup inside of here.
+
+00:01:48.400 --> 00:01:50.590
+And this is actually
+the SVG code
+
+00:01:50.590 --> 00:01:53.200
+that's going to generate
+those circles for us.
+
+00:01:53.200 --> 00:01:55.090
+The thing to note
+here is that we also
+
+00:01:55.090 --> 00:01:57.940
+need to give this an
+ID, and this is actually
+
+00:01:57.940 --> 00:02:00.550
+the name of our icon.
+
+00:02:00.550 --> 00:02:02.300
+So when someone wants
+to use this icon,
+
+00:02:02.300 --> 00:02:04.139
+they're going to ask
+for the icon set,
+
+00:02:04.139 --> 00:02:05.930
+and then they're going
+to ask for the icon.
+
+00:02:05.930 --> 00:02:07.305
+I'll show you an
+example of that.
+
+00:02:07.305 --> 00:02:09.470
+So here I've got a
+core-icon element.
+
+00:02:09.470 --> 00:02:11.494
+The icon attribute's
+totally empty.
+
+00:02:11.494 --> 00:02:12.910
+So we're going to
+ask for the icon
+
+00:02:12.910 --> 00:02:15.400
+set, which was custom-icons.
+
+00:02:15.400 --> 00:02:17.530
+We'll ask for the icon,
+which is fancy-circles.
+
+00:02:17.530 --> 00:02:19.470
+We'll separate them
+with a little colon,
+
+00:02:19.470 --> 00:02:22.090
+and now our icon is
+showing up on screen.
+
+00:02:22.090 --> 00:02:24.450
+But it doesn't quite look
+like what we imagined, right?
+
+00:02:24.450 --> 00:02:27.320
+It's all one color, so
+it's kind of boring.
+
+00:02:27.320 --> 00:02:30.700
+But this is actually one of
+the cooler aspects of SVG.
+
+00:02:30.700 --> 00:02:33.620
+Because under the hood
+everything is markup,
+
+00:02:33.620 --> 00:02:37.230
+we can actually go in and target
+the different SVG elements,
+
+00:02:37.230 --> 00:02:39.010
+and style them individually.
+
+00:02:39.010 --> 00:02:40.829
+So let me show you
+how that works.
+
+00:02:40.829 --> 00:02:42.370
+So here's my icon
+over here, and I've
+
+00:02:42.370 --> 00:02:44.650
+got a style element on the left.
+
+00:02:44.650 --> 00:02:47.010
+And what I'm going to do
+is start writing selectors
+
+00:02:47.010 --> 00:02:49.910
+to target the bits of the
+icon that I want to colorize.
+
+00:02:49.910 --> 00:02:51.780
+So I'll start with
+this top circle,
+
+00:02:51.780 --> 00:02:55.370
+and move my way down all
+the way to the bottom.
+
+00:02:55.370 --> 00:02:58.360
+So I can go in and style the
+individual parts if I want.
+
+00:02:58.360 --> 00:02:59.840
+If you remember
+in the last video,
+
+00:02:59.840 --> 00:03:02.410
+we showed how you can use
+the color property to give
+
+00:03:02.410 --> 00:03:05.550
+an icon a uniform color
+all the way across.
+
+00:03:05.550 --> 00:03:08.350
+You can still do that with
+this icon if you want,
+
+00:03:08.350 --> 00:03:11.060
+but SVG allows you a
+little bit more control
+
+00:03:11.060 --> 00:03:13.210
+if you need it,
+which is pretty cool.
+
+00:03:13.210 --> 00:03:14.710
+All right, so now
+you've gone ahead.
+
+00:03:14.710 --> 00:03:17.409
+You've made your first icon set,
+you know how all that works.
+
+00:03:17.409 --> 00:03:18.950
+The next thing I
+want to do is I want
+
+00:03:18.950 --> 00:03:22.640
+to take somebody else's icon
+set and load it into my project.
+
+00:03:22.640 --> 00:03:24.450
+Now, if you recall
+in the last video,
+
+00:03:24.450 --> 00:03:27.020
+I showed you this
+link, which goes
+
+00:03:27.020 --> 00:03:31.602
+to the documentation for the
+core icon default icon set.
+
+00:03:31.602 --> 00:03:33.060
+But if you scroll
+around that page,
+
+00:03:33.060 --> 00:03:34.550
+you'll see that there's
+actually a whole bunch
+
+00:03:34.550 --> 00:03:35.780
+of other stuff on here.
+
+00:03:35.780 --> 00:03:36.950
+There's other icon sets.
+
+00:03:36.950 --> 00:03:41.770
+There's AV icons for
+audiovisual, maps, hardware.
+
+00:03:41.770 --> 00:03:44.480
+So if you want to load an
+icon from one of those sets,
+
+00:03:44.480 --> 00:03:47.440
+the cool thing is that it
+works exactly the same way
+
+00:03:47.440 --> 00:03:49.810
+as the custom icon set
+we were just showing.
+
+00:03:49.810 --> 00:03:51.740
+So I'll give you
+an example here.
+
+00:03:51.740 --> 00:03:56.400
+Let's say I want to load in this
+play icon from the AV icon set.
+
+00:03:56.400 --> 00:03:59.510
+So I'm going to import the
+definition for those icons.
+
+00:03:59.510 --> 00:04:04.560
+So I'm going to ask for
+core-icons, av-icons,
+
+00:04:04.560 --> 00:04:08.820
+and then I can just use the AV
+icon in my core icon elements.
+
+00:04:08.820 --> 00:04:15.410
+I'm going to say I want an
+av icon, colon, play-arrow,
+
+00:04:15.410 --> 00:04:17.880
+and that's going to give me
+this icon right over here.
+
+00:04:17.880 --> 00:04:20.050
+Super simple.
+
+00:04:20.050 --> 00:04:22.541
+All right, so now you know how
+to create your own icon set.
+
+00:04:22.541 --> 00:04:25.040
+You know how to take an icon
+set that somebody else has made
+
+00:04:25.040 --> 00:04:27.272
+for you, and actually
+load it into your project.
+
+00:04:27.272 --> 00:04:28.980
+Let's switch over to
+our code editor now,
+
+00:04:28.980 --> 00:04:29.880
+and we're actually
+going to get some
+
+00:04:29.880 --> 00:04:31.370
+of this showing up on screen.
+
+00:04:31.370 --> 00:04:33.270
+All right, so here
+we've got a project
+
+00:04:33.270 --> 00:04:34.975
+that's all set up
+and ready to go.
+
+00:04:34.975 --> 00:04:37.600
+And the first thing we're going
+to want to do is create a brand
+
+00:04:37.600 --> 00:04:39.130
+new file called
+custom-icons.html.
+
+00:04:41.394 --> 00:04:42.810
+This is actually
+where we're going
+
+00:04:42.810 --> 00:04:46.242
+to put the definition for
+the icon that we write.
+
+00:04:46.242 --> 00:04:47.700
+Now that we've got
+this file ready,
+
+00:04:47.700 --> 00:04:49.270
+we can just import
+the definition
+
+00:04:49.270 --> 00:04:53.150
+for the core-iconset-svg
+element.
+
+00:04:53.150 --> 00:04:55.300
+So I'm assuming it's
+in bower_components,
+
+00:04:55.300 --> 00:04:56.675
+and I'm pulling
+core-iconset-svg.
+
+00:04:58.902 --> 00:05:00.610
+And now that that's
+ready, I can actually
+
+00:05:00.610 --> 00:05:05.490
+just use the icon set tag on
+my page, so core-iconset-svg.
+
+00:05:05.490 --> 00:05:06.930
+And we're going to configure it.
+
+00:05:06.930 --> 00:05:09.290
+We're going to make
+sure to give it the ID,
+
+00:05:09.290 --> 00:05:10.760
+so our icon set has a name.
+
+00:05:10.760 --> 00:05:13.780
+So we're going to
+call it custom-icons.
+
+00:05:13.780 --> 00:05:17.730
+And we'll also throw in the
+iconSize attribute as well.
+
+00:05:17.730 --> 00:05:20.240
+We'll set it equal to 50.
+
+00:05:20.240 --> 00:05:22.952
+Now remember, this iconSize
+attribute is optional,
+
+00:05:22.952 --> 00:05:24.160
+you don't have to include it.
+
+00:05:24.160 --> 00:05:27.100
+I'm just throwing it
+in here for funsies,
+
+00:05:27.100 --> 00:05:29.530
+so you guys can see it.
+
+00:05:29.530 --> 00:05:31.570
+So I'm just going to
+go down and actually
+
+00:05:31.570 --> 00:05:35.350
+paste in the code, the
+SVG code, for my icon.
+
+00:05:35.350 --> 00:05:37.550
+And you'll see here
+that I've got that ID.
+
+00:05:37.550 --> 00:05:39.812
+So my icon has a name
+of fancy-circles.
+
+00:05:39.812 --> 00:05:42.270
+And at this point my icon set
+is basically complete, right?
+
+00:05:42.270 --> 00:05:45.120
+It's an icon set of one,
+there's only one icon in it.
+
+00:05:45.120 --> 00:05:47.980
+But that's cool, we'll see
+what we can get showing up.
+
+00:05:47.980 --> 00:05:49.584
+So over in my
+index file, there's
+
+00:05:49.584 --> 00:05:50.750
+a few things I've got to do.
+
+00:05:50.750 --> 00:05:52.900
+I've got to make sure
+to pull in the platform,
+
+00:05:52.900 --> 00:05:55.483
+so I'm going to pull in bower
+components/platform/platform.js.
+
+00:05:58.980 --> 00:06:02.347
+I'm going to import in the
+definition for the core icon
+
+00:06:02.347 --> 00:06:04.180
+elements, so I can
+actually display my icon.
+
+00:06:06.960 --> 00:06:08.580
+And I'm going to
+import the definition
+
+00:06:08.580 --> 00:06:13.630
+for this custom-icons
+file that I just created.
+
+00:06:13.630 --> 00:06:15.930
+So now my icon set is available.
+
+00:06:15.930 --> 00:06:19.540
+And then in my body tag, I'll
+just throw in a core-icon.
+
+00:06:19.540 --> 00:06:21.310
+And I'm going to set
+the icon attribute
+
+00:06:21.310 --> 00:06:25.830
+equal to custom-icons,
+and put a colon in there,
+
+00:06:25.830 --> 00:06:28.380
+and then fancy-circles.
+
+00:06:28.380 --> 00:06:33.230
+If I save this, hop over to my
+browser, and refresh the page,
+
+00:06:33.230 --> 00:06:36.320
+up there in the corner
+you'll see a little icon.
+
+00:06:36.320 --> 00:06:39.540
+And I'm going to boost this up,
+so you can see it a bit easier.
+
+00:06:39.540 --> 00:06:41.980
+There's our fancy-circles
+ready to go.
+
+00:06:41.980 --> 00:06:43.550
+Now if you recall,
+we gotta go in,
+
+00:06:43.550 --> 00:06:46.340
+and we gotta add some style to
+it, so it looks like we expect.
+
+00:06:46.340 --> 00:06:49.390
+So I'm going to add
+a style element.
+
+00:06:49.390 --> 00:06:51.950
+And again, I'm just going
+to paste in the CSS here,
+
+00:06:51.950 --> 00:06:54.255
+so you guys don't have to
+watch me type it all out.
+
+00:06:54.255 --> 00:06:55.630
+Now that's in,
+and I'm just going
+
+00:06:55.630 --> 00:06:57.540
+to clean up the
+formatting a little bit.
+
+00:06:57.540 --> 00:07:00.600
+So we save this,
+refresh the page,
+
+00:07:00.600 --> 00:07:04.080
+and now our icon's
+showing up as we expected.
+
+00:07:04.080 --> 00:07:06.090
+Now what's really
+cool is we can go in
+
+00:07:06.090 --> 00:07:08.560
+and we can change these fill
+colors to whatever we want.
+
+00:07:08.560 --> 00:07:11.922
+So we can set this equal
+to red, green, blue.
+
+00:07:11.922 --> 00:07:13.880
+And it's not going to be
+the best looking icon,
+
+00:07:13.880 --> 00:07:16.750
+but it will sort of demonstrate
+the point that we really
+
+00:07:16.750 --> 00:07:19.660
+can go in and target
+different parts of our icon,
+
+00:07:19.660 --> 00:07:23.230
+and change the appearance,
+which is really handy.
+
+00:07:23.230 --> 00:07:27.240
+So I've shown you how to
+load in your custom icon.
+
+00:07:27.240 --> 00:07:29.720
+Let's go back and
+clean that up a little.
+
+00:07:29.720 --> 00:07:33.410
+Now let's actually load an icon
+from one of the additional sets
+
+00:07:33.410 --> 00:07:36.200
+that come with the
+core-icons package.
+
+00:07:36.200 --> 00:07:39.570
+So I'm going to, up
+here in my imports area,
+
+00:07:39.570 --> 00:07:45.140
+I'm going to import the
+definition for the AV icon set.
+
+00:07:48.142 --> 00:07:49.850
+So I'm assuming it's
+in bower_components,
+
+00:07:49.850 --> 00:07:51.766
+I'm going to ask for
+core-icons/av-icons.html.
+
+00:07:57.199 --> 00:07:59.490
+If you want, if you actually
+open your Bower components
+
+00:07:59.490 --> 00:08:01.440
+folder and open the
+core-icons package,
+
+00:08:01.440 --> 00:08:03.990
+you can see all the different
+icon sets that are in here.
+
+00:08:03.990 --> 00:08:06.690
+So there's AV icons,
+communication, device,
+
+00:08:06.690 --> 00:08:07.390
+hardware.
+
+00:08:07.390 --> 00:08:09.389
+Lots of cool stuff in
+there to play around with.
+
+00:08:09.389 --> 00:08:12.790
+And it's really as easy as
+just importing the definition.
+
+00:08:12.790 --> 00:08:17.057
+So down here my body tag, I'm
+going to add another core-icon.
+
+00:08:17.057 --> 00:08:19.390
+And this time, I'm going to
+set the icon attribute equal
+
+00:08:19.390 --> 00:08:25.070
+to av:play-arrow, and that's
+going to give me the play arrow
+
+00:08:25.070 --> 00:08:26.800
+from the AV set.
+
+00:08:26.800 --> 00:08:30.140
+Refresh my page, and now I've
+got this black icon up here.
+
+00:08:30.140 --> 00:08:32.980
+If I want to style it,
+and give it some color,
+
+00:08:32.980 --> 00:08:36.210
+I can maybe give it a class
+name, or something like that.
+
+00:08:36.210 --> 00:08:39.030
+So I'll say the class
+is equal to icon-play.
+
+00:08:41.770 --> 00:08:44.270
+And then in my CSS, I'll
+just style off of that class.
+
+00:08:44.270 --> 00:08:48.840
+And say, hey, icon-play should
+have a color of light green,
+
+00:08:48.840 --> 00:08:49.444
+or something.
+
+00:08:49.444 --> 00:08:51.110
+Just to show that you
+can go in, and you
+
+00:08:51.110 --> 00:08:53.980
+can style an entire
+icon one color.
+
+00:08:53.980 --> 00:08:54.685
+Cool, awesome.
+
+00:08:54.685 --> 00:08:56.060
+Now one thing
+that's really neat,
+
+00:08:56.060 --> 00:08:57.810
+which we haven't
+touched on before,
+
+00:08:57.810 --> 00:08:59.830
+is to point out the
+fact that there's
+
+00:08:59.830 --> 00:09:03.230
+a bunch of different
+elements in the core elements
+
+00:09:03.230 --> 00:09:06.020
+set that support
+icon attributes.
+
+00:09:06.020 --> 00:09:08.910
+So I'm actually going to import
+the definition for a core icon
+
+00:09:08.910 --> 00:09:09.450
+button.
+
+00:09:09.450 --> 00:09:11.616
+This is something that we
+haven't actually seen yet,
+
+00:09:11.616 --> 00:09:12.830
+but it's really handy.
+
+00:09:12.830 --> 00:09:16.190
+So I'll pull in a
+core icon button,
+
+00:09:16.190 --> 00:09:18.740
+and then I'm just going
+to use its icon attribute
+
+00:09:18.740 --> 00:09:21.860
+to load in one of
+these AV icons.
+
+00:09:21.860 --> 00:09:24.200
+So I'm asking for
+a core-icon-button,
+
+00:09:24.200 --> 00:09:29.930
+I'm going to set its icon
+equal to av:play-arrow,
+
+00:09:29.930 --> 00:09:33.380
+swap back over to the
+browser, refresh the page,
+
+00:09:33.380 --> 00:09:36.220
+and if I sort of adjust the
+size down on our browser window,
+
+00:09:36.220 --> 00:09:38.760
+now we've got this
+really cool play button.
+
+00:09:38.760 --> 00:09:39.840
+Super simple.
+
+00:09:39.840 --> 00:09:43.130
+All right, so you're now
+officially a core icon master.
+
+00:09:43.130 --> 00:09:44.945
+You know how to
+create icon sets,
+
+00:09:44.945 --> 00:09:47.870
+you know how to load icon sets
+that other people have made
+
+00:09:47.870 --> 00:09:51.226
+for you, and you know how
+to style all it using CSS.
+
+00:09:51.226 --> 00:09:53.350
+That means it's your turn
+to go out there and start
+
+00:09:53.350 --> 00:09:54.960
+creating some really awesome.
+
+00:09:54.960 --> 00:09:56.780
+Thanks for watching.
+

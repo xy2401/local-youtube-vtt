@@ -1,0 +1,276 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.140 --> 00:00:09.000
+As developers, we fear working with legacy
+code because it is difficult to understand,
+
+00:00:09.000 --> 00:00:10.920
+modify, or extend.
+
+00:00:10.920 --> 00:00:16.279
+The good part is, you can refactor your code
+bases to improve its design or structure.
+
+00:00:16.279 --> 00:00:22.170
+I know, we avoid refactoring because it can
+break our existing code.
+
+00:00:22.170 --> 00:00:28.770
+In this screen cast, we'll look at how IntelliJ
+IDEA can help you to refactor your code safely,
+
+00:00:28.770 --> 00:00:31.150
+with extract variable refactorings.
+
+00:00:31.150 --> 00:00:37.399
+We'll also talk about some of the dos and
+don'ts because refactoring is not a magic
+
+00:00:37.399 --> 00:00:39.600
+bullet.
+
+00:00:39.600 --> 00:00:44.960
+In this code, lets extract the highlight expression
+to a variable.
+
+00:00:44.960 --> 00:00:50.719
+You can use the shortcut keys Control-Alt-V
+on a windows system or Command-Alt-V on a
+
+00:00:50.719 --> 00:00:51.949
+Mac.
+
+00:00:51.949 --> 00:00:57.730
+Depending on your context, IntelliJ IDEA suggests
+a default name for the extracted variable,
+
+00:00:57.730 --> 00:01:00.030
+which you can change.
+
+00:01:00.030 --> 00:01:04.500
+You can choose to define this variable as
+final or by using var.
+
+00:01:04.500 --> 00:01:08.590
+For this example, I'll choose both of them.
+
+00:01:08.590 --> 00:01:13.829
+Option to use var during extraction is new
+to IntelliJ IDEA 2019.1.
+
+00:01:13.829 --> 00:01:17.659
+Also var was added in Java 10.
+
+00:01:17.659 --> 00:01:23.740
+So you should configure project language level
+to 10+ in IntelliJ IDEA - which is available
+
+00:01:23.740 --> 00:01:26.630
+with JDKs 10 or higher).
+
+00:01:26.630 --> 00:01:32.040
+By extracting a part of the expression into
+a new variable, the original expression is
+
+00:01:32.040 --> 00:01:34.470
+easy to read and follow now.
+
+00:01:34.470 --> 00:01:40.460
+Now let's work with a comparatively complex
+example, which uses current date and time
+
+00:01:40.460 --> 00:01:44.689
+to return a unique string in a predefined
+format.
+
+00:01:44.689 --> 00:01:48.460
+Most of the work is being done here by the
+return statement.
+
+00:01:48.460 --> 00:01:52.939
+It concatenates a string value and date time
+components.
+
+00:01:52.939 --> 00:01:59.460
+However, over time, it might become difficult
+to follow all this logic.
+
+00:01:59.460 --> 00:02:06.009
+So, lets simplify this expression by extracting
+its parts to variables.
+
+00:02:06.009 --> 00:02:11.340
+Select the String literal "J" and extract
+it to variable 'prefix'.
+
+00:02:11.340 --> 00:02:17.480
+Now select the expression that extracts year
+for LocalDateTime instance.
+
+00:02:17.480 --> 00:02:21.000
+IntelliJ IDEA suggests an appropriate name.
+
+00:02:21.000 --> 00:02:26.280
+Now, lets extract the highlighted expression
+to a variable.
+
+00:02:26.280 --> 00:02:30.270
+This expression returns month using two digits.
+
+00:02:30.270 --> 00:02:40.390
+For months that have a single digit, it prefixes
+them with zero.
+
+00:02:40.390 --> 00:02:46.459
+Let's extract this expression to a variable
+too.
+
+00:02:46.459 --> 00:02:54.409
+Let's rearrange the modified expression to
+see how easy it has become to read and follow.
+
+00:02:54.409 --> 00:03:00.350
+IntelliJ IDEA is quick to detect if the expression
+that you are extracting to another variable
+
+00:03:00.350 --> 00:03:03.180
+is duplicated in multiple places.
+
+00:03:03.180 --> 00:03:09.790
+If it is, it offers to replace one or all
+occurrences of the selected expression.
+
+00:03:09.790 --> 00:03:14.980
+You can also change the default variable name
+suggested by IntelliJ IDEA.
+
+00:03:14.980 --> 00:03:20.220
+You can find complex expressions in various
+places, like a field initializer.
+
+00:03:20.220 --> 00:03:27.900
+With IntelliJ IDEA 2019.1, you can also use
+extract refactoring with complex expressions
+
+00:03:27.900 --> 00:03:29.420
+in field initializers.
+
+00:03:29.420 --> 00:03:36.690
+Interestingly, the Java compiler also moves
+the initialization code from your field declaration
+
+00:03:36.690 --> 00:03:39.930
+to instance initializers.
+
+00:03:39.930 --> 00:03:47.720
+IntelliJ IDEA 2019.1 can convert ternary operators
+to if-else statements in select cases.
+
+00:03:47.720 --> 00:03:54.080
+As developers, we would need it because a
+ternary operator can become complex, especially
+
+00:03:54.080 --> 00:03:59.920
+if it includes checks – such as instanceof
+or null for a variable.
+
+00:03:59.920 --> 00:04:06.480
+In such cases, IntelliJ IDEA can help you
+extract a variable and also replace the ternary
+
+00:04:06.480 --> 00:04:11.329
+operator with an if statement.
+
+00:04:11.329 --> 00:04:17.209
+Besides modiying the name of the extracted
+variable here, the real value of this extraction
+
+00:04:17.209 --> 00:04:23.610
+lies in how you could modify it further in
+your code.
+
+00:04:23.610 --> 00:04:27.160
+Automatic refactoring is not a magic bullet.
+
+00:04:27.160 --> 00:04:33.140
+To use variable refactoring in IntelliJ IDEA
+effectively, you must know when it works safely
+
+00:04:33.140 --> 00:04:36.850
+and when you need to exercise caution.
+
+00:04:36.850 --> 00:04:39.760
+Let's understand it using this code.
+
+00:04:39.760 --> 00:04:44.630
+Before I refactor, let's quickly execute and
+see the output.
+
+00:04:44.630 --> 00:04:45.830
+Here it is.
+
+00:04:45.830 --> 00:04:57.510
+Now, let me extract emp.title into a new variable
+and replace all its occurrences.
+
+00:04:57.510 --> 00:05:05.510
+It can output unexpected results because of
+the runnable here, which might execute before
+
+00:05:05.510 --> 00:05:09.310
+or after I call the log method.
+
+00:05:09.310 --> 00:05:15.120
+And here'e the output of the modified code,
+which is not what we expected.
+
+00:05:15.120 --> 00:05:17.980
+Let's work with another example.
+
+00:05:17.980 --> 00:05:24.550
+When you extract a variable that includes
+a method call, IntelliJ IDEA let's you choose
+
+00:05:24.550 --> 00:05:28.750
+whether you replace just one occurrence or
+all of them.
+
+00:05:28.750 --> 00:05:31.790
+Be careful in such cases.
+
+00:05:31.790 --> 00:05:36.870
+Such extraction may change your code behavior
+irrespective of whether the method called
+
+00:05:36.870 --> 00:05:41.370
+that you extract into a variable is pure or
+not.
+
+00:05:41.370 --> 00:05:49.140
+In this case, getTimeNow() was extracted to
+variable timeNow, which is used twice.
+
+00:05:49.140 --> 00:05:55.320
+This code will always return value zero as
+the execution time - no matter how long the
+
+00:05:55.320 --> 00:05:57.890
+loop takes to execute.
+
+00:05:57.890 --> 00:06:04.100
+Before you get started with some serious refactoring
+of your code, please ensure you have an automated
+
+00:06:04.100 --> 00:06:10.930
+test suite set up to check all functionality
+is still the same after the modification.
+
+00:06:10.930 --> 00:06:17.740
+You can use IntelliJ IDEA to help you get
+started with defining unit tests.
+
+00:06:17.740 --> 00:06:19.820
+Happy refactoring and thanks for watching.
+

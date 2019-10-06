@@ -1,0 +1,516 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.416
+[MUSIC PLAYING]
+
+00:00:05.860 --> 00:00:06.960
+SPEAKER 1: Welcome back.
+
+00:00:06.960 --> 00:00:09.960
+We've got a lot of new
+features coming in Chrome 65,
+
+00:00:09.960 --> 00:00:12.660
+including local overrides,
+new accessibility
+
+00:00:12.660 --> 00:00:15.690
+tools, the Changes
+tab, new performance
+
+00:00:15.690 --> 00:00:19.410
+audits, a whole new
+category of SEO audits,
+
+00:00:19.410 --> 00:00:21.750
+multiple recordings in
+the Performance Panel,
+
+00:00:21.750 --> 00:00:26.700
+and reliable code stepping
+for workers and async code.
+
+00:00:26.700 --> 00:00:29.040
+If you've ever changed
+some CSS in Dev Tools,
+
+00:00:29.040 --> 00:00:30.630
+you've probably
+learned the hard way
+
+00:00:30.630 --> 00:00:33.740
+that your changes get erased
+when you reload the page.
+
+00:00:33.740 --> 00:00:36.360
+Local overrides provides
+a lightweight solution
+
+00:00:36.360 --> 00:00:39.600
+for saving your
+changes across reloads.
+
+00:00:39.600 --> 00:00:43.470
+Before I set up overrides,
+let's see the old behavior.
+
+00:00:43.470 --> 00:00:46.380
+When I change this link to
+PRPL, then reload the page,
+
+00:00:46.380 --> 00:00:47.860
+the change is gone.
+
+00:00:47.860 --> 00:00:51.600
+Now I'll set up overrides
+and try it again.
+
+00:00:51.600 --> 00:00:54.560
+Go to the Sources panel,
+open the Overrides tab,
+
+00:00:54.560 --> 00:00:58.400
+click Select Folder for
+Overrides, choose a location,
+
+00:00:58.400 --> 00:01:02.730
+then click Allow to give Dev
+Tools access to that folder.
+
+00:01:02.730 --> 00:01:05.690
+Now when I edit the links
+color and reload the page,
+
+00:01:05.690 --> 00:01:07.730
+the change is still there.
+
+00:01:07.730 --> 00:01:11.105
+The way it works is that when
+the page requests this file,
+
+00:01:11.105 --> 00:01:15.510
+Dev Tools serves the modified
+file on my computer instead.
+
+00:01:15.510 --> 00:01:17.280
+This PRPL dot next
+to the file name
+
+00:01:17.280 --> 00:01:21.290
+means that overrides is
+set up for this file.
+
+00:01:21.290 --> 00:01:24.000
+Overrides has two limitations.
+
+00:01:24.000 --> 00:01:27.140
+First, changes to the
+dom tree don't work.
+
+00:01:27.140 --> 00:01:30.260
+For example, when I edit some
+text and reload the page,
+
+00:01:30.260 --> 00:01:32.360
+the change is gone.
+
+00:01:32.360 --> 00:01:36.470
+Editing HTML from the Sources
+panel does work, though.
+
+00:01:36.470 --> 00:01:39.530
+Second, changes here
+on element.style
+
+00:01:39.530 --> 00:01:41.370
+don't work either.
+
+00:01:41.370 --> 00:01:44.720
+I can explain why that
+is in the comments.
+
+00:01:44.720 --> 00:01:47.450
+In terms of accessibility,
+contrast ratio
+
+00:01:47.450 --> 00:01:49.610
+affects how readable text is.
+
+00:01:49.610 --> 00:01:52.280
+For example, if some
+text is light gray
+
+00:01:52.280 --> 00:01:54.930
+and the background behind
+that text is white,
+
+00:01:54.930 --> 00:01:57.020
+that text will be hard to read.
+
+00:01:57.020 --> 00:01:58.550
+The color picker
+now warns you when
+
+00:01:58.550 --> 00:02:00.470
+the contrast ratio
+of a text element
+
+00:02:00.470 --> 00:02:04.160
+falls below recommended
+accessibility levels.
+
+00:02:04.160 --> 00:02:06.890
+To open the color picker,
+select a text element,
+
+00:02:06.890 --> 00:02:09.350
+then click the Preview icon
+next to the element's color
+
+00:02:09.350 --> 00:02:10.570
+property.
+
+00:02:10.570 --> 00:02:12.530
+One check mark means
+that the element
+
+00:02:12.530 --> 00:02:15.880
+meets the minimum
+recommended contrast ratio.
+
+00:02:15.880 --> 00:02:17.750
+Two check marks
+means that it meets
+
+00:02:17.750 --> 00:02:20.210
+the enhanced recommendation.
+
+00:02:20.210 --> 00:02:23.600
+Click the contrast ratio section
+to show the contrast ratio
+
+00:02:23.600 --> 00:02:25.850
+line appear in the spectrum.
+
+00:02:25.850 --> 00:02:28.490
+Since this element
+meets recommendations,
+
+00:02:28.490 --> 00:02:30.290
+it means that anything
+below this line
+
+00:02:30.290 --> 00:02:32.750
+also meets recommendations.
+
+00:02:32.750 --> 00:02:35.630
+Anything above the line doesn't.
+
+00:02:35.630 --> 00:02:38.990
+The second new accessibility
+feature coming in Chrome 65
+
+00:02:38.990 --> 00:02:41.590
+is the Accessibility tab.
+
+00:02:41.590 --> 00:02:43.400
+Select an element
+in the dom tree,
+
+00:02:43.400 --> 00:02:45.940
+then open the
+Accessibility tab, and you
+
+00:02:45.940 --> 00:02:48.490
+can see its position in
+the accessibility tree
+
+00:02:48.490 --> 00:02:50.260
+as well as its
+[? aria ?] properties
+
+00:02:50.260 --> 00:02:52.800
+and computed
+accessibility properties.
+
+00:02:55.880 --> 00:02:58.280
+The Audits panel has
+a whole new category
+
+00:02:58.280 --> 00:03:01.070
+of SEO audits, which may
+help you improve your search
+
+00:03:01.070 --> 00:03:05.530
+rankings as well as many
+new performance audits.
+
+00:03:05.530 --> 00:03:08.380
+By the way, the Google
+Webmaster blog recently
+
+00:03:08.380 --> 00:03:09.940
+mentioned that
+page speed will be
+
+00:03:09.940 --> 00:03:13.340
+a factor in mobile
+rankings starting in July.
+
+00:03:13.340 --> 00:03:15.970
+So if you've been meaning to
+improve your load performance
+
+00:03:15.970 --> 00:03:18.720
+but didn't know where to
+start, the Audits panel
+
+00:03:18.720 --> 00:03:21.250
+is definitely the
+best place to begin.
+
+00:03:21.250 --> 00:03:23.950
+To run audits against
+whatever page you've got open,
+
+00:03:23.950 --> 00:03:27.460
+just go to the Audits panel,
+then click Perform An Audit.
+
+00:03:27.460 --> 00:03:31.420
+We've also got audits for
+best practices, accessibility,
+
+00:03:31.420 --> 00:03:34.090
+and progressive web apps.
+
+00:03:34.090 --> 00:03:36.250
+After 20 seconds
+or so, Dev Tools
+
+00:03:36.250 --> 00:03:40.210
+gives you a report like this on
+how you can improve the page.
+
+00:03:40.210 --> 00:03:42.730
+In Chrome 65, there's
+some subtle changes
+
+00:03:42.730 --> 00:03:46.090
+to how Dev Tools steps through
+code that passes messages
+
+00:03:46.090 --> 00:03:48.520
+to workers.
+
+00:03:48.520 --> 00:03:51.330
+First, let me show
+you the old behavior.
+
+00:03:51.330 --> 00:03:54.820
+I click this button, and I
+pause in the click listener.
+
+00:03:54.820 --> 00:03:56.830
+When I step into the
+next function call,
+
+00:03:56.830 --> 00:03:59.950
+it goes to the next line
+of the click listener.
+
+00:03:59.950 --> 00:04:03.820
+When I step again, we jump
+to the on-message listener.
+
+00:04:03.820 --> 00:04:07.750
+In other words, we can't see
+what's going on in the worker.
+
+00:04:07.750 --> 00:04:09.750
+Now, here's the new behavior.
+
+00:04:09.750 --> 00:04:13.340
+I click the button and pause
+in the Click Listener again.
+
+00:04:13.340 --> 00:04:15.040
+Now when I step
+into the next call,
+
+00:04:15.040 --> 00:04:17.110
+it takes me to the worker code.
+
+00:04:17.110 --> 00:04:19.750
+This worker code happens
+to just post this message
+
+00:04:19.750 --> 00:04:21.860
+in reverse back to
+the main thread.
+
+00:04:21.860 --> 00:04:25.440
+So let's see what happens
+when I step into that call.
+
+00:04:25.440 --> 00:04:28.560
+It brings me back to the main
+threads on Message Listener,
+
+00:04:28.560 --> 00:04:31.540
+as you'd expect.
+
+00:04:31.540 --> 00:04:33.940
+We've also made some changes
+around how Dev Tools steps
+
+00:04:33.940 --> 00:04:35.780
+through async code.
+
+00:04:35.780 --> 00:04:37.150
+Here's the old behavior.
+
+00:04:37.150 --> 00:04:40.540
+When I click this button, I
+pause in the Click Listener.
+
+00:04:40.540 --> 00:04:42.700
+When I step in to
+set timeout, it
+
+00:04:42.700 --> 00:04:47.080
+jumps to the next line of code
+that chronologically executes.
+
+00:04:47.080 --> 00:04:48.910
+Eventually, if I
+keep stepping, I'll
+
+00:04:48.910 --> 00:04:52.070
+pause in the set
+timeout callback.
+
+00:04:52.070 --> 00:04:54.470
+Now let's see the new behavior.
+
+00:04:54.470 --> 00:04:57.020
+This time when I step
+into Set Timeout,
+
+00:04:57.020 --> 00:05:00.080
+Dev Tools runs all of the
+other code behind the scenes
+
+00:05:00.080 --> 00:05:03.740
+and now I'm paused at the
+first line of the callback.
+
+00:05:03.740 --> 00:05:06.920
+If you want the old behavior,
+you can use the new Step button
+
+00:05:06.920 --> 00:05:08.120
+over here.
+
+00:05:08.120 --> 00:05:11.180
+In the Performance panel, you
+can now temporarily save up
+
+00:05:11.180 --> 00:05:13.560
+to five recordings.
+
+00:05:13.560 --> 00:05:15.630
+Over on the Dev
+Tools home page, I'll
+
+00:05:15.630 --> 00:05:20.740
+start a recording and scroll a
+bit, then stop the recording,
+
+00:05:20.740 --> 00:05:23.560
+and we can see the recording
+here in the Performance panel.
+
+00:05:23.560 --> 00:05:25.300
+Now I'll start
+another recording,
+
+00:05:25.300 --> 00:05:28.990
+and open the search
+box, and close it, then
+
+00:05:28.990 --> 00:05:30.340
+stop the recording.
+
+00:05:30.340 --> 00:05:33.100
+And now we can see
+that second recording.
+
+00:05:33.100 --> 00:05:35.140
+To go back to the
+first recording,
+
+00:05:35.140 --> 00:05:36.820
+I just use this
+dropdown menu here.
+
+00:05:40.030 --> 00:05:42.590
+All right, that's
+all for Chrome 65.
+
+00:05:42.590 --> 00:05:46.280
+The bonus tip for this
+week is a Node.js library
+
+00:05:46.280 --> 00:05:49.250
+built by the Dev Tools
+team called Puppeteer.
+
+00:05:49.250 --> 00:05:52.370
+Puppeteer is essentially
+a browser automation tool
+
+00:05:52.370 --> 00:05:55.610
+that has access to
+Dev Tools features.
+
+00:05:55.610 --> 00:05:59.130
+Here I've got a little Puppeteer
+script to take a screenshot.
+
+00:05:59.130 --> 00:06:02.000
+It opens headless Chrome,
+then loads a page,
+
+00:06:02.000 --> 00:06:05.300
+then takes a screenshot
+of that page.
+
+00:06:05.300 --> 00:06:07.940
+I run it like any
+other Node script.
+
+00:06:07.940 --> 00:06:10.130
+And then after a
+few seconds, I've
+
+00:06:10.130 --> 00:06:12.230
+got a screenshot of
+that page on my desktop.
+
+00:06:15.220 --> 00:06:16.250
+Thanks for watching.
+
+00:06:16.250 --> 00:06:19.000
+If you've got any questions,
+drop me a line in the comments.
+
+00:06:19.000 --> 00:06:21.910
+And I'll see you in six
+weeks for Chrome 66.
+
+00:06:21.910 --> 00:06:25.560
+[MUSIC PLAYING]
+

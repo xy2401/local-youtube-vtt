@@ -1,0 +1,305 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.892
+[MUSIC PLAYING]
+
+00:00:06.760 --> 00:00:08.575
+JAKE: It's December,
+Christmas time.
+
+00:00:08.575 --> 00:00:10.700
+I thought we'd talk about
+some of the features that
+
+00:00:10.700 --> 00:00:13.860
+are coming in 2018, and
+I'll try and describe it
+
+00:00:13.860 --> 00:00:15.460
+to you in two minutes.
+
+00:00:15.460 --> 00:00:16.710
+But you can ask the questions.
+
+00:00:16.710 --> 00:00:17.490
+SURMA: OK.
+
+00:00:17.490 --> 00:00:19.953
+JAKE: I want to talk
+about the Web Locks API.
+
+00:00:19.953 --> 00:00:20.452
+Go.
+
+00:00:20.452 --> 00:00:22.340
+SURMA: Is that like warlocks?
+
+00:00:22.340 --> 00:00:23.130
+JAKE: No.
+
+00:00:23.130 --> 00:00:24.290
+SURMA: So it's like--
+
+00:00:24.290 --> 00:00:26.970
+like mutex locks and stuff?
+
+00:00:26.970 --> 00:00:28.652
+JAKE: Yes, correct.
+
+00:00:28.652 --> 00:00:29.610
+SURMA: What-- what is--
+
+00:00:29.610 --> 00:00:30.780
+what-- how?
+
+00:00:30.780 --> 00:00:31.650
+JAKE: Right, OK.
+
+00:00:31.650 --> 00:00:35.550
+So the idea is in a page or
+in worker, you would say,
+
+00:00:35.550 --> 00:00:37.475
+I want a lock named bluh.
+
+00:00:37.475 --> 00:00:38.600
+And you can give it a name.
+
+00:00:38.600 --> 00:00:40.183
+Any name you want,
+it's just a string.
+
+00:00:40.183 --> 00:00:43.230
+All right, and then it will
+wait until nothing else
+
+00:00:43.230 --> 00:00:46.010
+has a lock of that name open.
+
+00:00:46.010 --> 00:00:49.167
+And then once it's open,
+you get a call back.
+
+00:00:49.167 --> 00:00:51.000
+And you'd usually use
+an async function here
+
+00:00:51.000 --> 00:00:53.070
+because it's expected
+to return a promise.
+
+00:00:53.070 --> 00:00:55.460
+And you, like,
+return the promise--
+
+00:00:55.460 --> 00:00:57.960
+resolve the promise, like
+return from the async function
+
+00:00:57.960 --> 00:01:01.650
+once you have done the work that
+you were wanting to look for.
+
+00:01:01.650 --> 00:01:02.940
+SURMA: OK.
+
+00:01:02.940 --> 00:01:06.114
+And so that lock is
+shared across the origin,
+
+00:01:06.114 --> 00:01:06.780
+I would presume?
+
+00:01:06.780 --> 00:01:07.279
+JAKE: Yes.
+
+00:01:07.279 --> 00:01:08.080
+The whole origin.
+
+00:01:08.080 --> 00:01:08.770
+Yeah.
+
+00:01:08.770 --> 00:01:12.010
+SURMA: OK, so I mean, we have
+locks on shared [INAUDIBLE],,
+
+00:01:12.010 --> 00:01:13.180
+right?
+
+00:01:13.180 --> 00:01:14.917
+JAKE: We have atomics.
+
+00:01:14.917 --> 00:01:16.000
+SURMA: The atomic things--
+
+00:01:16.480 --> 00:01:16.980
+JAKE: Right.
+
+00:01:16.980 --> 00:01:19.871
+SURMA: --which you can wait and
+lock-- you can build a lock.
+
+00:01:19.871 --> 00:01:20.370
+JAKE: Yes.
+
+00:01:20.370 --> 00:01:22.740
+But you cannot wait on the
+main thread with an atomic.
+
+00:01:22.740 --> 00:01:23.100
+SURMA: True.
+
+00:01:23.100 --> 00:01:24.080
+JAKE: You can only
+wait on a worker,
+
+00:01:24.080 --> 00:01:26.325
+whereas with this it's
+an asynchronous thing.
+
+00:01:26.325 --> 00:01:27.060
+Whoo.
+
+00:01:27.060 --> 00:01:29.400
+So it can work on
+a page as well.
+
+00:01:29.400 --> 00:01:33.220
+And it also lets you
+do shared locks, right?
+
+00:01:33.220 --> 00:01:33.720
+SURMA: OK.
+
+00:01:33.720 --> 00:01:35.940
+JAKE: Right, so
+in a shared mode,
+
+00:01:35.940 --> 00:01:37.800
+you can say, like, I
+want a lock on this.
+
+00:01:37.800 --> 00:01:40.960
+But I'm prepared to share
+with other shared things.
+
+00:01:40.960 --> 00:01:41.477
+SURMA: OK.
+
+00:01:41.477 --> 00:01:43.560
+JAKE: But then when a
+non-shared thing comes along
+
+00:01:43.560 --> 00:01:45.420
+for the same name, it has to
+wait for all of the shared
+
+00:01:45.420 --> 00:01:46.390
+things to finish.
+
+00:01:46.390 --> 00:01:46.490
+SURMA: So this is like--
+
+00:01:46.490 --> 00:01:47.600
+JAKE: And it's like
+an exclusive lock.
+
+00:01:47.600 --> 00:01:49.860
+SURMA: --like read/write mutex,
+where lots of people can read,
+
+00:01:49.860 --> 00:01:51.227
+but only one person can write.
+
+00:01:51.227 --> 00:01:52.560
+JAKE: Like read and write stuff.
+
+00:01:52.560 --> 00:01:55.080
+And it means you can kind of
+do some of this similar stuff,
+
+00:01:55.080 --> 00:01:58.360
+with like local
+storage or with books.
+
+00:01:58.360 --> 00:02:00.270
+You run into problems
+if a tab crashes,
+
+00:02:00.270 --> 00:02:01.562
+or if it closes before it can--
+
+00:02:01.562 --> 00:02:02.520
+SURMA: Ah, the cleanup.
+
+00:02:02.520 --> 00:02:03.580
+JAKE: --create a lock.
+
+00:02:03.580 --> 00:02:05.730
+Whereas this will all
+happen because it's--
+
+00:02:05.730 --> 00:02:06.735
+[INTERPOSING VOICES]
+
+00:02:07.134 --> 00:02:07.800
+SURMA: Yeah, OK.
+
+00:02:07.800 --> 00:02:09.720
+JAKE: There you go.
+
+00:02:09.720 --> 00:02:11.410
+Yeah, are you convinced?
+
+00:02:11.410 --> 00:02:12.390
+Is that signed off?
+
+00:02:12.390 --> 00:02:13.310
+Can we have it now?
+
+00:02:13.310 --> 00:02:14.540
+SURMA: I'll think about it.
+
+00:02:14.540 --> 00:02:15.860
+JAKE: OK, fair enough.
+
+00:02:18.940 --> 00:02:20.938
+We have three seconds to go.
+
+00:02:20.938 --> 00:02:21.876
+[LAUGHTER]
+
+00:02:21.876 --> 00:02:25.630
+[MUSIC PLAYING]
+
+00:02:25.630 --> 00:02:27.410
+Architecture, that's buildings.
+
+00:02:27.410 --> 00:02:29.770
+It's not [INAUDIBLE] the
+web, mate, you got confused.
+
+00:02:29.770 --> 00:02:33.430
+SURMA: Well, the
+thing is that lots
+
+00:02:33.430 --> 00:02:35.996
+of other fields like enterprise
+engineering and gaming
+
+00:02:35.996 --> 00:02:38.620
+have, like, these architectural
+patterns when they build, like,
+
+00:02:38.620 --> 00:02:39.630
+really complex things.
+
+00:02:39.630 --> 00:02:41.421
+JAKE: Nope, fields
+don't have architecture,
+
+00:02:41.421 --> 00:02:42.720
+you're thinking of cities.
+

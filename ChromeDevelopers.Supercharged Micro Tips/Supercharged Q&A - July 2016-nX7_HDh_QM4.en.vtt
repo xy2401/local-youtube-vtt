@@ -1,0 +1,639 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.790 --> 00:00:06.440
+PAUL: Hello, and welcome to the
+"Supercharged" Q&amp;A. I'm Paul.
+
+00:00:06.440 --> 00:00:07.320
+SURMA: And I'm Surma.
+
+00:00:07.320 --> 00:00:08.029
+PAUL: Yes.
+
+00:00:08.029 --> 00:00:10.950
+Now, we get
+questions on YouTube,
+
+00:00:10.950 --> 00:00:12.424
+on Twitter, all sorts of places.
+
+00:00:12.424 --> 00:00:14.840
+And this time we're going to
+answer just the one question.
+
+00:00:14.840 --> 00:00:15.650
+And you've chosen it.
+
+00:00:15.650 --> 00:00:16.670
+Which one did you go for?
+
+00:00:16.670 --> 00:00:18.850
+SURMA: I chose the question
+that I thought was interesting,
+
+00:00:18.850 --> 00:00:20.100
+because it had so many layers.
+
+00:00:20.100 --> 00:00:23.120
+And it is, what's the
+best way of injecting
+
+00:00:23.120 --> 00:00:25.920
+new content on scroll,
+because layout is expensive?
+
+00:00:25.920 --> 00:00:29.051
+You see what I did
+there with the layers?
+
+00:00:29.051 --> 00:00:29.550
+PAUL: Dude.
+
+00:00:29.550 --> 00:00:30.050
+Get a grip.
+
+00:00:30.050 --> 00:00:31.221
+SURMA: Sorry, sorry.
+
+00:00:31.221 --> 00:00:31.720
+PAUL: Yeah.
+
+00:00:31.720 --> 00:00:32.940
+The person's right.
+
+00:00:32.940 --> 00:00:35.909
+Injecting content is
+expensive on scroll.
+
+00:00:35.909 --> 00:00:36.700
+Two reasons, right?
+
+00:00:36.700 --> 00:00:38.970
+You're scrolling, so
+you've got an animation.
+
+00:00:38.970 --> 00:00:40.430
+And so you want to keep
+everything nice and fluid,
+
+00:00:40.430 --> 00:00:41.320
+60 frames a second.
+
+00:00:41.320 --> 00:00:44.810
+And then you basically
+trigger layouts and styles
+
+00:00:44.810 --> 00:00:47.890
+and paint in one go by
+attaching content to the DOM.
+
+00:00:47.890 --> 00:00:50.040
+So I totally get where
+they're going for.
+
+00:00:50.040 --> 00:00:51.390
+Or what they're going for.
+
+00:00:51.390 --> 00:00:54.560
+The first thing I thought was to
+use something like containment.
+
+00:00:54.560 --> 00:00:56.440
+But that's only going
+to be Chrome 52.
+
+00:00:56.440 --> 00:00:58.227
+And it's not
+available everywhere.
+
+00:00:58.227 --> 00:01:00.810
+But you'll be able to be like,
+the thing that's having content
+
+00:01:00.810 --> 00:01:03.540
+injected, you'll be like,
+contain content, or contain
+
+00:01:03.540 --> 00:01:06.240
+strict, and then at least
+the layout and paint
+
+00:01:06.240 --> 00:01:07.960
+and so on, all
+those calculations,
+
+00:01:07.960 --> 00:01:09.820
+are at least locked
+into that element.
+
+00:01:09.820 --> 00:01:12.830
+But I know that you've been
+doing some work recently
+
+00:01:12.830 --> 00:01:15.120
+with some Chrome engineers
+on an infinite scroller.
+
+00:01:15.120 --> 00:01:17.660
+So why don't you explain
+what's going on there?
+
+00:01:17.660 --> 00:01:20.220
+SURMA: So layout is expensive.
+
+00:01:20.220 --> 00:01:23.690
+But it's also something that
+you can't really get around.
+
+00:01:23.690 --> 00:01:25.190
+When you attach
+something new, it
+
+00:01:25.190 --> 00:01:28.150
+will has to be a layout
+into your document.
+
+00:01:28.150 --> 00:01:30.260
+Otherwise, the browser
+won't know where to put it.
+
+00:01:30.260 --> 00:01:33.610
+So another approach to
+basically keeping the cost down
+
+00:01:33.610 --> 00:01:36.390
+is to just keep the
+number of elements
+
+00:01:36.390 --> 00:01:37.675
+that are in the DOM low.
+
+00:01:37.675 --> 00:01:39.300
+PAUL: So we've seen
+this before, right?
+
+00:01:39.300 --> 00:01:41.867
+With recycling views
+basically on native.
+
+00:01:41.867 --> 00:01:43.200
+This is a fairly standard thing.
+
+00:01:43.200 --> 00:01:44.251
+Just recycling them.
+
+00:01:44.251 --> 00:01:44.750
+OK.
+
+00:01:44.750 --> 00:01:48.300
+SURMA: So then one thing that
+we did that basically, we
+
+00:01:48.300 --> 00:01:50.941
+keep only the elements that
+are actually on screen,
+
+00:01:50.941 --> 00:01:52.690
+and a little bit on
+the top and the bottom
+
+00:01:52.690 --> 00:01:54.530
+when you scroll up and down.
+
+00:01:54.530 --> 00:01:56.695
+But basically, the
+further out you go,
+
+00:01:56.695 --> 00:01:58.570
+there's not going to be
+any elements anymore.
+
+00:01:58.570 --> 00:02:02.080
+We just used the space
+with an empty element
+
+00:02:02.080 --> 00:02:04.230
+instead of having all the
+actual content up there.
+
+00:02:04.230 --> 00:02:05.620
+PAUL: So you've still
+got the recycling,
+
+00:02:05.620 --> 00:02:08.289
+which I going to trigger layout
+and paint and all those things.
+
+00:02:08.289 --> 00:02:11.330
+But by the sounds it, by
+keeping the DOM count low--
+
+00:02:11.330 --> 00:02:12.296
+SURMA: Exactly.
+
+00:02:12.296 --> 00:02:13.360
+PAUL: You basically--
+
+00:02:13.360 --> 00:02:15.030
+SURMA: It is fast enough.
+
+00:02:15.030 --> 00:02:16.460
+PAUL: Fast enough.
+
+00:02:16.460 --> 00:02:19.244
+As in fast enough on mobile or
+just fast enough on desktop?
+
+00:02:19.244 --> 00:02:20.160
+SURMA: Both, actually.
+
+00:02:20.160 --> 00:02:21.350
+That was one of the targets.
+
+00:02:21.350 --> 00:02:24.790
+Actually fast enough even on
+mid-range to low range devices,
+
+00:02:24.790 --> 00:02:26.600
+that they can keep
+up with the work.
+
+00:02:26.600 --> 00:02:29.010
+So you will have
+the smooth scrolling
+
+00:02:29.010 --> 00:02:30.340
+at 60 frames per second.
+
+00:02:30.340 --> 00:02:30.840
+PAUL: OK.
+
+00:02:30.840 --> 00:02:33.880
+So the other
+question I had is, I
+
+00:02:33.880 --> 00:02:35.130
+know it does some tombstoning.
+
+00:02:35.130 --> 00:02:38.910
+So explain, at
+least for me again,
+
+00:02:38.910 --> 00:02:41.010
+what the tombstoning
+thing actually does.
+
+00:02:41.010 --> 00:02:43.430
+SURMA: So tombstoning
+is this technique
+
+00:02:43.430 --> 00:02:47.170
+where you, because you
+don't have your data yet--
+
+00:02:47.170 --> 00:02:48.920
+in this example, you're
+actually embedding
+
+00:02:48.920 --> 00:02:51.003
+a network source, where
+we get the data in that we
+
+00:02:51.003 --> 00:02:51.700
+want to show.
+
+00:02:51.700 --> 00:02:53.900
+But sometimes, people
+scroll that fast,
+
+00:02:53.900 --> 00:02:55.740
+that you have to be
+on screen, but you
+
+00:02:55.740 --> 00:02:57.270
+don't have the data yet.
+
+00:02:57.270 --> 00:03:00.850
+So instead of putting nothing
+or janking or blocking,
+
+00:03:00.850 --> 00:03:02.760
+we put a tombstone,
+which says, there's
+
+00:03:02.760 --> 00:03:04.000
+going to be content here.
+
+00:03:04.000 --> 00:03:06.490
+Which is something that Facebook
+actually does prominently
+
+00:03:06.490 --> 00:03:07.270
+when you open the app.
+
+00:03:07.270 --> 00:03:09.228
+Where you just show,
+here's going to be a post.
+
+00:03:09.228 --> 00:03:12.120
+And it show empty lines with
+no text, just gray boxes.
+
+00:03:12.120 --> 00:03:12.620
+PAUL: OK.
+
+00:03:12.620 --> 00:03:14.350
+SURMA: And once data
+arrives, it actually
+
+00:03:14.350 --> 00:03:17.340
+turns into the actual item
+it's supposed to displayed.
+
+00:03:17.340 --> 00:03:18.520
+And we do the same thing.
+
+00:03:18.520 --> 00:03:21.220
+So when the user
+actually scrolls
+
+00:03:21.220 --> 00:03:23.350
+too fast for us to
+keep up with, we,
+
+00:03:23.350 --> 00:03:26.120
+instead of attaching nothing
+and not being able to scroll,
+
+00:03:26.120 --> 00:03:28.960
+we attach tombstones.
+
+00:03:28.960 --> 00:03:31.190
+So that allows us to
+keep the school going,
+
+00:03:31.190 --> 00:03:34.330
+and then we take care of
+staying in the same position
+
+00:03:34.330 --> 00:03:36.580
+once the data arrives, because
+the element could grow,
+
+00:03:36.580 --> 00:03:39.680
+because it is unexpectedly
+large amount of text
+
+00:03:39.680 --> 00:03:40.980
+or there is an image in there.
+
+00:03:40.980 --> 00:03:42.170
+All these kind of things.
+
+00:03:42.170 --> 00:03:44.204
+And it makes the user
+experience very smooth.
+
+00:03:44.204 --> 00:03:46.120
+PAUL: So one of the
+things that occurred to me
+
+00:03:46.120 --> 00:03:49.330
+about this was, it sounds
+like that prioritizes
+
+00:03:49.330 --> 00:03:51.680
+the scroll above
+everything else, which is
+
+00:03:51.680 --> 00:03:53.350
+absolutely crucial thing to do.
+
+00:03:53.350 --> 00:03:54.725
+It's like, that's
+the interaction
+
+00:03:54.725 --> 00:03:55.884
+that the user's got.
+
+00:03:55.884 --> 00:03:57.300
+Yes, they want to
+see the content,
+
+00:03:57.300 --> 00:03:59.633
+but they don't want you to
+get in the way of the scroll,
+
+00:03:59.633 --> 00:04:01.880
+because that feels
+awful to people.
+
+00:04:01.880 --> 00:04:04.140
+Do you use anything
+like requestIdleCallback
+
+00:04:04.140 --> 00:04:07.080
+to make sure that the main
+thread is available for work
+
+00:04:07.080 --> 00:04:09.920
+before actually spending time
+trying to populate the dataset,
+
+00:04:09.920 --> 00:04:11.760
+or is that not something
+that gets done yet?
+
+00:04:11.760 --> 00:04:16.940
+SURMA: We animate a fetch, and
+once data comes back, we check.
+
+00:04:16.940 --> 00:04:18.649
+I don't think we use
+requestIdleCallback
+
+00:04:18.649 --> 00:04:19.730
+in the demo.
+
+00:04:19.730 --> 00:04:22.620
+But we check if the
+element is still on screen.
+
+00:04:22.620 --> 00:04:24.014
+If it even needs
+to get attached.
+
+00:04:24.014 --> 00:04:25.430
+Because if its off
+screen already,
+
+00:04:25.430 --> 00:04:27.310
+and the user has been
+scrolling so fast,
+
+00:04:27.310 --> 00:04:29.100
+there's no need in
+treating the layout
+
+00:04:29.100 --> 00:04:31.100
+and then removing it
+again, because it's already
+
+00:04:31.100 --> 00:04:32.866
+way off screen.
+
+00:04:32.866 --> 00:04:34.990
+So that is the kind of
+booking. requestIdleCallback
+
+00:04:34.990 --> 00:04:38.680
+would be great though, if we
+know that we are on screen,
+
+00:04:38.680 --> 00:04:41.600
+but maybe the browser is
+still busy with decoding
+
+00:04:41.600 --> 00:04:42.890
+fetch request or something.
+
+00:04:42.890 --> 00:04:45.524
+So it would be worth
+decoding that first,
+
+00:04:45.524 --> 00:04:47.190
+and waiting until the
+browser's actually
+
+00:04:47.190 --> 00:04:50.844
+available to attach the data
+to replacing the tombstone.
+
+00:04:50.844 --> 00:04:51.510
+PAUL: All right.
+
+00:04:51.510 --> 00:04:51.670
+Cool.
+
+00:04:51.670 --> 00:04:53.380
+So basically, I
+think in summary,
+
+00:04:53.380 --> 00:04:55.095
+it's like avoid it if you can.
+
+00:04:55.095 --> 00:04:57.299
+If you can't avoid it,
+keep the cost down.
+
+00:04:57.299 --> 00:04:59.840
+And then basically, be really,
+really tactical about the work
+
+00:04:59.840 --> 00:05:02.362
+that you do, either by checking
+that the thing is still
+
+00:05:02.362 --> 00:05:04.320
+in the window and still
+needs to be dealt with.
+
+00:05:04.320 --> 00:05:05.650
+Or maybe even
+considering something
+
+00:05:05.650 --> 00:05:05.890
+like requestIdleCallback.
+
+00:05:05.890 --> 00:05:08.300
+SURMA: Only do the go work
+that you really need to do.
+
+00:05:08.300 --> 00:05:10.216
+That is one of the things
+I learned with this.
+
+00:05:10.216 --> 00:05:11.710
+And also really
+important I think
+
+00:05:11.710 --> 00:05:14.660
+is, always test
+on a real device.
+
+00:05:14.660 --> 00:05:17.159
+Like we have
+emulation mode, which
+
+00:05:17.159 --> 00:05:19.700
+is good to see if layout works
+and you can even throttle down
+
+00:05:19.700 --> 00:05:20.210
+the network.
+
+00:05:20.210 --> 00:05:22.168
+You can, I think, in
+future versions of Chrome,
+
+00:05:22.168 --> 00:05:26.460
+you can even throttle down the
+CPU to emulate a slower device.
+
+00:05:26.460 --> 00:05:29.390
+But nothing is going to
+tell you how weird it really
+
+00:05:29.390 --> 00:05:33.560
+feels once you're on a RAM
+constrained and CPU constrained
+
+00:05:33.560 --> 00:05:34.240
+device.
+
+00:05:34.240 --> 00:05:36.850
+And realize, even though
+it works fine on desktop,
+
+00:05:36.850 --> 00:05:39.650
+on mobile, you're
+way below 60 FPS.
+
+00:05:39.650 --> 00:05:41.990
+Which we had a couple of
+times with this thing.
+
+00:05:41.990 --> 00:05:44.500
+And it's just a
+complete new experience
+
+00:05:44.500 --> 00:05:46.060
+if you actually are on a device.
+
+00:05:46.060 --> 00:05:46.220
+PAUL: OK.
+
+00:05:46.220 --> 00:05:47.025
+Well, I guess that's it.
+
+00:05:47.025 --> 00:05:49.191
+Like we said, basically
+avoid the work when you can.
+
+00:05:49.191 --> 00:05:51.050
+Performance is the
+art of avoiding work.
+
+00:05:51.050 --> 00:05:53.860
+And if you can't avoid
+it, keep it to a minimum.
+
+00:05:53.860 --> 00:05:58.210
+So with that, I guess,
+we'll catch you next time.
+
+00:05:58.210 --> 00:06:00.960
+[MUSIC PLAYING]
+

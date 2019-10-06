@@ -1,0 +1,1464 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.119 align:start position:0%
+ 
+so<00:00:00.120><c> how</c><00:00:00.870><c> many</c><00:00:01.079><c> how</c><00:00:01.410><c> many</c><00:00:01.439><c> of</c><00:00:01.680><c> you</c><00:00:01.800><c> have</c><00:00:01.949><c> had</c><00:00:02.100><c> to</c>
+
+00:00:02.119 --> 00:00:02.129 align:start position:0%
+so how many how many of you have had to
+ 
+
+00:00:02.129 --> 00:00:05.980 align:start position:0%
+so how many how many of you have had to
+write<00:00:02.460><c> JavaScript</c><00:00:03.380><c> form</c><00:00:04.380><c> validation</c><00:00:04.980><c> code</c>
+
+00:00:05.980 --> 00:00:05.990 align:start position:0%
+write JavaScript form validation code
+ 
+
+00:00:05.990 --> 00:00:09.379 align:start position:0%
+write JavaScript form validation code
+right<00:00:06.990><c> so</c><00:00:07.799><c> one</c><00:00:08.760><c> of</c><00:00:08.790><c> the</c><00:00:08.910><c> things</c><00:00:09.090><c> I</c><00:00:09.179><c> want</c><00:00:09.360><c> to</c>
+
+00:00:09.379 --> 00:00:09.389 align:start position:0%
+right so one of the things I want to
+ 
+
+00:00:09.389 --> 00:00:10.640 align:start position:0%
+right so one of the things I want to
+challenge<00:00:09.630><c> you</c><00:00:09.870><c> to</c><00:00:09.900><c> think</c><00:00:09.990><c> about</c><00:00:10.200><c> as</c><00:00:10.469><c> I</c><00:00:10.530><c> go</c>
+
+00:00:10.640 --> 00:00:10.650 align:start position:0%
+challenge you to think about as I go
+ 
+
+00:00:10.650 --> 00:00:12.890 align:start position:0%
+challenge you to think about as I go
+through<00:00:10.679><c> this</c><00:00:10.980><c> talk</c><00:00:11.219><c> is</c><00:00:11.580><c> how</c><00:00:12.150><c> much</c><00:00:12.599><c> could</c><00:00:12.870><c> you</c>
+
+00:00:12.890 --> 00:00:12.900 align:start position:0%
+through this talk is how much could you
+ 
+
+00:00:12.900 --> 00:00:15.849 align:start position:0%
+through this talk is how much could you
+reuse<00:00:13.559><c> that</c><00:00:13.830><c> exact</c><00:00:14.340><c> same</c><00:00:14.670><c> validation</c><00:00:15.509><c> logic</c>
+
+00:00:15.849 --> 00:00:15.859 align:start position:0%
+reuse that exact same validation logic
+ 
+
+00:00:15.859 --> 00:00:19.250 align:start position:0%
+reuse that exact same validation logic
+inside<00:00:16.859><c> your</c><00:00:17.190><c> java</c><00:00:17.430><c> application</c><00:00:18.270><c> there's</c><00:00:19.050><c> so</c>
+
+00:00:19.250 --> 00:00:19.260 align:start position:0%
+inside your java application there's so
+ 
+
+00:00:19.260 --> 00:00:21.230 align:start position:0%
+inside your java application there's so
+there's<00:00:19.439><c> more</c><00:00:19.680><c> and</c><00:00:19.740><c> more</c><00:00:19.980><c> tools</c><00:00:20.369><c> to</c><00:00:20.730><c> do</c><00:00:21.090><c> this</c>
+
+00:00:21.230 --> 00:00:21.240 align:start position:0%
+there's more and more tools to do this
+ 
+
+00:00:21.240 --> 00:00:22.939 align:start position:0%
+there's more and more tools to do this
+kind<00:00:21.570><c> of</c><00:00:21.630><c> thing</c><00:00:21.840><c> one</c><00:00:22.080><c> of</c><00:00:22.170><c> the</c><00:00:22.230><c> classics</c><00:00:22.740><c> is</c>
+
+00:00:22.939 --> 00:00:22.949 align:start position:0%
+kind of thing one of the classics is
+ 
+
+00:00:22.949 --> 00:00:25.370 align:start position:0%
+kind of thing one of the classics is
+Rhino<00:00:23.369><c> that's</c><00:00:23.850><c> been</c><00:00:24.090><c> around</c><00:00:24.269><c> a</c><00:00:24.359><c> long</c><00:00:24.510><c> time</c><00:00:24.570><c> but</c>
+
+00:00:25.370 --> 00:00:25.380 align:start position:0%
+Rhino that's been around a long time but
+ 
+
+00:00:25.380 --> 00:00:28.580 align:start position:0%
+Rhino that's been around a long time but
+in<00:00:25.619><c> Java</c><00:00:26.250><c> and</c><00:00:26.490><c> in</c><00:00:26.910><c> the</c><00:00:27.119><c> VM</c><00:00:27.539><c> now</c><00:00:27.930><c> standard</c><00:00:28.500><c> in</c>
+
+00:00:28.580 --> 00:00:28.590 align:start position:0%
+in Java and in the VM now standard in
+ 
+
+00:00:28.590 --> 00:00:30.650 align:start position:0%
+in Java and in the VM now standard in
+the<00:00:28.740><c> VM</c><00:00:29.160><c> there's</c><00:00:29.400><c> a</c><00:00:29.460><c> tool</c><00:00:29.670><c> called</c><00:00:29.699><c> nashorn</c>
+
+00:00:30.650 --> 00:00:30.660 align:start position:0%
+the VM there's a tool called nashorn
+ 
+
+00:00:30.660 --> 00:00:33.920 align:start position:0%
+the VM there's a tool called nashorn
+anybody<00:00:31.230><c> use</c><00:00:31.349><c> natural</c><00:00:31.740><c> one</c><00:00:32.390><c> so</c><00:00:33.390><c> national</c><00:00:33.809><c> arne</c>
+
+00:00:33.920 --> 00:00:33.930 align:start position:0%
+anybody use natural one so national arne
+ 
+
+00:00:33.930 --> 00:00:35.750 align:start position:0%
+anybody use natural one so national arne
+is<00:00:34.050><c> a</c><00:00:34.079><c> much</c><00:00:34.380><c> more</c><00:00:34.760><c> high-performance</c>
+
+00:00:35.750 --> 00:00:35.760 align:start position:0%
+is a much more high-performance
+ 
+
+00:00:35.760 --> 00:00:37.880 align:start position:0%
+is a much more high-performance
+JavaScript<00:00:35.880><c> environment</c><00:00:36.809><c> that's</c><00:00:37.380><c> built</c><00:00:37.649><c> into</c>
+
+00:00:37.880 --> 00:00:37.890 align:start position:0%
+JavaScript environment that's built into
+ 
+
+00:00:37.890 --> 00:00:39.889 align:start position:0%
+JavaScript environment that's built into
+your<00:00:38.040><c> JVM</c><00:00:38.610><c> all</c><00:00:38.879><c> the</c><00:00:39.000><c> time</c><00:00:39.180><c> I'm</c><00:00:39.420><c> not</c><00:00:39.540><c> talking</c><00:00:39.870><c> to</c>
+
+00:00:39.889 --> 00:00:39.899 align:start position:0%
+your JVM all the time I'm not talking to
+ 
+
+00:00:39.899 --> 00:00:42.020 align:start position:0%
+your JVM all the time I'm not talking to
+that<00:00:39.989><c> but</c><00:00:40.469><c> there's</c><00:00:40.649><c> also</c><00:00:40.860><c> things</c><00:00:41.820><c> like</c>
+
+00:00:42.020 --> 00:00:42.030 align:start position:0%
+that but there's also things like
+ 
+
+00:00:42.030 --> 00:00:44.030 align:start position:0%
+that but there's also things like
+closure<00:00:42.480><c> script</c><00:00:43.050><c> which</c><00:00:43.469><c> if</c><00:00:43.620><c> you're</c><00:00:43.770><c> writing</c>
+
+00:00:44.030 --> 00:00:44.040 align:start position:0%
+closure script which if you're writing
+ 
+
+00:00:44.040 --> 00:00:47.299 align:start position:0%
+closure script which if you're writing
+closure<00:00:44.520><c> you</c><00:00:44.850><c> can</c><00:00:45.480><c> compile</c><00:00:45.989><c> closure</c><00:00:46.530><c> into</c>
+
+00:00:47.299 --> 00:00:47.309 align:start position:0%
+closure you can compile closure into
+ 
+
+00:00:47.309 --> 00:00:49.400 align:start position:0%
+closure you can compile closure into
+JavaScript<00:00:48.030><c> with</c><00:00:48.210><c> closure</c><00:00:48.450><c> script</c><00:00:48.899><c> but</c>
+
+00:00:49.400 --> 00:00:49.410 align:start position:0%
+JavaScript with closure script but
+ 
+
+00:00:49.410 --> 00:00:52.279 align:start position:0%
+JavaScript with closure script but
+there's<00:00:49.590><c> also</c><00:00:49.770><c> J</c><00:00:50.250><c> sweet</c><00:00:50.640><c> which</c><00:00:51.329><c> J</c><00:00:51.660><c> sweet</c><00:00:51.930><c> you</c>
+
+00:00:52.279 --> 00:00:52.289 align:start position:0%
+there's also J sweet which J sweet you
+ 
+
+00:00:52.289 --> 00:00:54.410 align:start position:0%
+there's also J sweet which J sweet you
+can<00:00:52.440><c> write</c><00:00:52.680><c> standard</c><00:00:53.520><c> Java</c><00:00:53.820><c> and</c><00:00:54.180><c> it</c><00:00:54.270><c> will</c>
+
+00:00:54.410 --> 00:00:54.420 align:start position:0%
+can write standard Java and it will
+ 
+
+00:00:54.420 --> 00:00:56.600 align:start position:0%
+can write standard Java and it will
+compile<00:00:54.870><c> your</c><00:00:55.140><c> java</c><00:00:55.440><c> into</c><00:00:55.920><c> JavaScript</c><00:00:56.489><c> that</c>
+
+00:00:56.600 --> 00:00:56.610 align:start position:0%
+compile your java into JavaScript that
+ 
+
+00:00:56.610 --> 00:00:59.650 align:start position:0%
+compile your java into JavaScript that
+you<00:00:56.730><c> can</c><00:00:56.879><c> then</c><00:00:57.030><c> put</c><00:00:57.059><c> into</c><00:00:57.420><c> your</c><00:00:57.480><c> browser</c><00:00:57.719><c> pages</c>
+
+00:00:59.650 --> 00:00:59.660 align:start position:0%
+you can then put into your browser pages
+ 
+
+00:00:59.660 --> 00:01:01.939 align:start position:0%
+you can then put into your browser pages
+so<00:01:00.660><c> what</c><00:01:00.809><c> about</c><00:01:00.899><c> national</c><00:01:01.320><c> or</c><00:01:01.379><c> national</c><00:01:01.829><c> horn</c>
+
+00:01:01.939 --> 00:01:01.949 align:start position:0%
+so what about national or national horn
+ 
+
+00:01:01.949 --> 00:01:05.030 align:start position:0%
+so what about national or national horn
+like<00:01:02.489><c> I</c><00:01:02.609><c> said</c><00:01:02.820><c> it's</c><00:01:02.969><c> the</c><00:01:03.030><c> JD</c><00:01:03.719><c> kaise</c><00:01:04.049><c> JavaScript</c>
+
+00:01:05.030 --> 00:01:05.040 align:start position:0%
+like I said it's the JD kaise JavaScript
+ 
+
+00:01:05.040 --> 00:01:08.300 align:start position:0%
+like I said it's the JD kaise JavaScript
+solution<00:01:05.460><c> ship</c><00:01:05.790><c> standard</c><00:01:06.390><c> in</c><00:01:06.570><c> in</c><00:01:07.320><c> the</c><00:01:07.530><c> JDK</c><00:01:08.040><c> in</c>
+
+00:01:08.300 --> 00:01:08.310 align:start position:0%
+solution ship standard in in the JDK in
+ 
+
+00:01:08.310 --> 00:01:10.640 align:start position:0%
+solution ship standard in in the JDK in
+the<00:01:08.610><c> Java</c><00:01:08.850><c> VM</c><00:01:09.150><c> so</c><00:01:09.750><c> there</c><00:01:09.900><c> all</c><00:01:10.049><c> the</c><00:01:10.170><c> time</c><00:01:10.200><c> and</c>
+
+00:01:10.640 --> 00:01:10.650 align:start position:0%
+the Java VM so there all the time and
+ 
+
+00:01:10.650 --> 00:01:13.670 align:start position:0%
+the Java VM so there all the time and
+there<00:01:11.490><c> Oracle</c><00:01:12.180><c> is</c><00:01:12.270><c> putting</c><00:01:12.630><c> serious</c><00:01:13.350><c> effort</c>
+
+00:01:13.670 --> 00:01:13.680 align:start position:0%
+there Oracle is putting serious effort
+ 
+
+00:01:13.680 --> 00:01:15.740 align:start position:0%
+there Oracle is putting serious effort
+into<00:01:13.890><c> making</c><00:01:14.070><c> it</c><00:01:14.310><c> high-performance</c><00:01:15.119><c> in</c><00:01:15.330><c> you</c>
+
+00:01:15.740 --> 00:01:15.750 align:start position:0%
+into making it high-performance in you
+ 
+
+00:01:15.750 --> 00:01:18.080 align:start position:0%
+into making it high-performance in you
+know<00:01:15.840><c> in</c><00:01:15.990><c> Java</c><00:01:16.320><c> 7</c><00:01:16.680><c> you</c><00:01:17.040><c> had</c><00:01:17.159><c> invokedynamic</c>
+
+00:01:18.080 --> 00:01:18.090 align:start position:0%
+know in Java 7 you had invokedynamic
+ 
+
+00:01:18.090 --> 00:01:21.140 align:start position:0%
+know in Java 7 you had invokedynamic
+there's<00:01:18.990><c> there's</c><00:01:19.590><c> improvements</c><00:01:20.490><c> going</c><00:01:20.640><c> in</c><00:01:20.939><c> in</c>
+
+00:01:21.140 --> 00:01:21.150 align:start position:0%
+there's there's improvements going in in
+ 
+
+00:01:21.150 --> 00:01:23.330 align:start position:0%
+there's there's improvements going in in
+every<00:01:21.600><c> Java</c><00:01:21.869><c> release</c><00:01:22.290><c> to</c><00:01:22.590><c> improve</c><00:01:23.130><c> the</c>
+
+00:01:23.330 --> 00:01:23.340 align:start position:0%
+every Java release to improve the
+ 
+
+00:01:23.340 --> 00:01:25.700 align:start position:0%
+every Java release to improve the
+performance<00:01:23.490><c> of</c><00:01:24.000><c> Nashua</c><00:01:24.390><c> I</c><00:01:24.689><c> won't</c><00:01:25.259><c> tell</c><00:01:25.530><c> you</c>
+
+00:01:25.700 --> 00:01:25.710 align:start position:0%
+performance of Nashua I won't tell you
+ 
+
+00:01:25.710 --> 00:01:28.130 align:start position:0%
+performance of Nashua I won't tell you
+that<00:01:26.130><c> it's</c><00:01:26.310><c> at</c><00:01:26.520><c> parity</c><00:01:27.060><c> with</c><00:01:27.420><c> nodejs</c>
+
+00:01:28.130 --> 00:01:28.140 align:start position:0%
+that it's at parity with nodejs
+ 
+
+00:01:28.140 --> 00:01:30.890 align:start position:0%
+that it's at parity with nodejs
+but<00:01:28.740><c> the</c><00:01:28.860><c> gap</c><00:01:29.130><c> is</c><00:01:29.369><c> closing</c><00:01:30.000><c> in</c><00:01:30.329><c> many</c>
+
+00:01:30.890 --> 00:01:30.900 align:start position:0%
+but the gap is closing in many
+ 
+
+00:01:30.900 --> 00:01:32.899 align:start position:0%
+but the gap is closing in many
+situations<00:01:31.710><c> it's</c><00:01:32.009><c> going</c><00:01:32.189><c> to</c><00:01:32.250><c> perform</c>
+
+00:01:32.899 --> 00:01:32.909 align:start position:0%
+situations it's going to perform
+ 
+
+00:01:32.909 --> 00:01:36.950 align:start position:0%
+situations it's going to perform
+he<00:01:33.180><c> knows</c><00:01:33.329><c> close</c><00:01:34.229><c> to</c><00:01:34.740><c> node</c><00:01:34.950><c> J</c><00:01:34.979><c> s</c><00:01:35.400><c> but</c><00:01:36.150><c> it</c><00:01:36.420><c> you</c>
+
+00:01:36.950 --> 00:01:36.960 align:start position:0%
+he knows close to node J s but it you
+ 
+
+00:01:36.960 --> 00:01:38.840 align:start position:0%
+he knows close to node J s but it you
+know<00:01:37.049><c> the</c><00:01:37.170><c> big</c><00:01:37.740><c> difference</c><00:01:38.369><c> with</c><00:01:38.520><c> it</c><00:01:38.670><c> is</c>
+
+00:01:38.840 --> 00:01:38.850 align:start position:0%
+know the big difference with it is
+ 
+
+00:01:38.850 --> 00:01:41.390 align:start position:0%
+know the big difference with it is
+you're<00:01:39.270><c> in</c><00:01:39.450><c> the</c><00:01:39.630><c> Java</c><00:01:39.900><c> VM</c><00:01:40.200><c> so</c><00:01:40.890><c> you</c><00:01:40.979><c> have</c><00:01:41.220><c> access</c>
+
+00:01:41.390 --> 00:01:41.400 align:start position:0%
+you're in the Java VM so you have access
+ 
+
+00:01:41.400 --> 00:01:44.300 align:start position:0%
+you're in the Java VM so you have access
+to<00:01:41.820><c> facilities</c><00:01:42.000><c> in</c><00:01:42.689><c> the</c><00:01:43.170><c> Java</c><00:01:43.409><c> VM</c><00:01:43.710><c> that</c><00:01:43.799><c> just</c>
+
+00:01:44.300 --> 00:01:44.310 align:start position:0%
+to facilities in the Java VM that just
+ 
+
+00:01:44.310 --> 00:01:47.179 align:start position:0%
+to facilities in the Java VM that just
+don't<00:01:44.549><c> exist</c><00:01:44.759><c> in</c><00:01:45.360><c> node.js</c><00:01:45.720><c> root</c><00:01:46.229><c> right</c><00:01:46.500><c> no</c><00:01:46.920><c> js'</c>
+
+00:01:47.179 --> 00:01:47.189 align:start position:0%
+don't exist in node.js root right no js'
+ 
+
+00:01:47.189 --> 00:01:49.160 align:start position:0%
+don't exist in node.js root right no js'
+doesn't<00:01:47.579><c> have</c><00:01:47.700><c> threads</c><00:01:48.000><c> right</c><00:01:48.689><c> there</c><00:01:49.020><c> are</c><00:01:49.079><c> no</c>
+
+00:01:49.160 --> 00:01:49.170 align:start position:0%
+doesn't have threads right there are no
+ 
+
+00:01:49.170 --> 00:01:52.639 align:start position:0%
+doesn't have threads right there are no
+threads<00:01:49.439><c> for</c><00:01:49.979><c> for</c><00:01:50.460><c> node.js</c><00:01:50.670><c> so</c><00:01:51.570><c> anything</c><00:01:52.470><c> you</c>
+
+00:01:52.639 --> 00:01:52.649 align:start position:0%
+threads for for node.js so anything you
+ 
+
+00:01:52.649 --> 00:01:56.030 align:start position:0%
+threads for for node.js so anything you
+do<00:01:52.920><c> with</c><00:01:53.340><c> a</c><00:01:53.420><c> its</c><00:01:54.420><c> you</c><00:01:54.689><c> know</c><00:01:54.810><c> sending</c><00:01:55.259><c> data</c><00:01:55.740><c> back</c>
+
+00:01:56.030 --> 00:01:56.040 align:start position:0%
+do with a its you know sending data back
+ 
+
+00:01:56.040 --> 00:01:58.249 align:start position:0%
+do with a its you know sending data back
+and<00:01:56.070><c> forth</c><00:01:56.340><c> between</c><00:01:56.700><c> workers</c><00:01:57.180><c> you</c><00:01:57.930><c> have</c><00:01:57.960><c> to</c>
+
+00:01:58.249 --> 00:01:58.259 align:start position:0%
+and forth between workers you have to
+ 
+
+00:01:58.259 --> 00:02:00.109 align:start position:0%
+and forth between workers you have to
+send<00:01:58.439><c> essentially</c><00:01:58.920><c> message</c><00:01:59.369><c> objects</c><00:01:59.880><c> and</c>
+
+00:02:00.109 --> 00:02:00.119 align:start position:0%
+send essentially message objects and
+ 
+
+00:02:00.119 --> 00:02:02.450 align:start position:0%
+send essentially message objects and
+pass<00:02:00.329><c> data</c><00:02:00.659><c> by</c><00:02:00.899><c> value</c><00:02:01.380><c> but</c><00:02:02.040><c> you</c><00:02:02.189><c> know</c><00:02:02.280><c> let's</c>
+
+00:02:02.450 --> 00:02:02.460 align:start position:0%
+pass data by value but you know let's
+ 
+
+00:02:02.460 --> 00:02:04.670 align:start position:0%
+pass data by value but you know let's
+say<00:02:02.640><c> you</c><00:02:02.700><c> have</c><00:02:02.909><c> something</c><00:02:03.390><c> like</c><00:02:03.420><c> the</c><00:02:03.869><c> the</c>
+
+00:02:04.670 --> 00:02:04.680 align:start position:0%
+say you have something like the the
+ 
+
+00:02:04.680 --> 00:02:06.889 align:start position:0%
+say you have something like the the
+disrupter<00:02:05.369><c> ring</c><00:02:05.729><c> buffer</c><00:02:06.119><c> right</c><00:02:06.479><c> which</c><00:02:06.719><c> is</c><00:02:06.869><c> a</c>
+
+00:02:06.889 --> 00:02:06.899 align:start position:0%
+disrupter ring buffer right which is a
+ 
+
+00:02:06.899 --> 00:02:09.469 align:start position:0%
+disrupter ring buffer right which is a
+super<00:02:07.680><c> high</c><00:02:07.829><c> performance</c><00:02:08.489><c> Java</c><00:02:08.910><c> ring</c><00:02:09.239><c> buffer</c>
+
+00:02:09.469 --> 00:02:09.479 align:start position:0%
+super high performance Java ring buffer
+ 
+
+00:02:09.479 --> 00:02:11.690 align:start position:0%
+super high performance Java ring buffer
+structure<00:02:10.110><c> it's</c><00:02:10.440><c> used</c><00:02:10.770><c> a</c><00:02:10.920><c> lot</c><00:02:11.190><c> like</c><00:02:11.430><c> some</c>
+
+00:02:11.690 --> 00:02:11.700 align:start position:0%
+structure it's used a lot like some
+ 
+
+00:02:11.700 --> 00:02:14.000 align:start position:0%
+structure it's used a lot like some
+stock<00:02:12.209><c> trading</c><00:02:12.690><c> applications</c><00:02:13.379><c> use</c><00:02:13.560><c> it</c>
+
+00:02:14.000 --> 00:02:14.010 align:start position:0%
+stock trading applications use it
+ 
+
+00:02:14.010 --> 00:02:15.890 align:start position:0%
+stock trading applications use it
+if<00:02:14.099><c> you've</c><00:02:14.220><c> got</c><00:02:14.370><c> an</c><00:02:14.489><c> 8</c><00:02:14.670><c> gigabyte</c><00:02:15.060><c> in-memory</c>
+
+00:02:15.890 --> 00:02:15.900 align:start position:0%
+if you've got an 8 gigabyte in-memory
+ 
+
+00:02:15.900 --> 00:02:17.809 align:start position:0%
+if you've got an 8 gigabyte in-memory
+data<00:02:16.440><c> structure</c><00:02:17.010><c> that</c><00:02:17.400><c> you're</c><00:02:17.580><c> sharing</c>
+
+00:02:17.809 --> 00:02:17.819 align:start position:0%
+data structure that you're sharing
+ 
+
+00:02:17.819 --> 00:02:19.369 align:start position:0%
+data structure that you're sharing
+between<00:02:18.330><c> a</c><00:02:18.360><c> bunch</c><00:02:18.599><c> of</c><00:02:18.750><c> threads</c><00:02:18.989><c> that</c><00:02:19.230><c> the</c>
+
+00:02:19.369 --> 00:02:19.379 align:start position:0%
+between a bunch of threads that the
+ 
+
+00:02:19.379 --> 00:02:21.410 align:start position:0%
+between a bunch of threads that the
+threads<00:02:19.650><c> are</c><00:02:19.799><c> simultaneously</c><00:02:20.670><c> manipulating</c>
+
+00:02:21.410 --> 00:02:21.420 align:start position:0%
+threads are simultaneously manipulating
+ 
+
+00:02:21.420 --> 00:02:23.390 align:start position:0%
+threads are simultaneously manipulating
+that<00:02:21.540><c> you</c><00:02:21.959><c> can't</c><00:02:22.170><c> go</c><00:02:22.319><c> handing</c><00:02:22.739><c> an</c><00:02:22.830><c> 8</c><00:02:23.010><c> gig</c>
+
+00:02:23.390 --> 00:02:23.400 align:start position:0%
+that you can't go handing an 8 gig
+ 
+
+00:02:23.400 --> 00:02:26.720 align:start position:0%
+that you can't go handing an 8 gig
+object<00:02:24.330><c> between</c><00:02:24.720><c> workers</c><00:02:25.019><c> right</c><00:02:25.739><c> so</c><00:02:26.069><c> you</c><00:02:26.549><c> can</c>
+
+00:02:26.720 --> 00:02:26.730 align:start position:0%
+object between workers right so you can
+ 
+
+00:02:26.730 --> 00:02:29.630 align:start position:0%
+object between workers right so you can
+do<00:02:26.970><c> things</c><00:02:27.239><c> with</c><00:02:27.650><c> JavaScript</c><00:02:28.650><c> in</c><00:02:28.830><c> the</c><00:02:29.069><c> Java</c><00:02:29.310><c> VM</c>
+
+00:02:29.630 --> 00:02:29.640 align:start position:0%
+do things with JavaScript in the Java VM
+ 
+
+00:02:29.640 --> 00:02:31.640 align:start position:0%
+do things with JavaScript in the Java VM
+that<00:02:30.030><c> you</c><00:02:30.390><c> just</c><00:02:30.569><c> can't</c><00:02:30.780><c> even</c><00:02:30.930><c> do</c><00:02:31.230><c> in</c><00:02:31.440><c> node.js</c>
+
+00:02:31.640 --> 00:02:31.650 align:start position:0%
+that you just can't even do in node.js
+ 
+
+00:02:31.650 --> 00:02:34.670 align:start position:0%
+that you just can't even do in node.js
+right<00:02:32.310><c> just</c><00:02:32.610><c> not</c><00:02:32.700><c> even</c><00:02:32.970><c> possible</c><00:02:33.180><c> so</c><00:02:33.690><c> a</c><00:02:33.720><c> apples</c>
+
+00:02:34.670 --> 00:02:34.680 align:start position:0%
+right just not even possible so a apples
+ 
+
+00:02:34.680 --> 00:02:36.740 align:start position:0%
+right just not even possible so a apples
+to<00:02:34.830><c> apples</c><00:02:35.220><c> performance</c><00:02:35.879><c> comparison</c><00:02:36.450><c> is</c><00:02:36.569><c> hard</c>
+
+00:02:36.740 --> 00:02:36.750 align:start position:0%
+to apples performance comparison is hard
+ 
+
+00:02:36.750 --> 00:02:38.750 align:start position:0%
+to apples performance comparison is hard
+to<00:02:36.870><c> make</c><00:02:37.080><c> because</c><00:02:37.680><c> the</c><00:02:37.980><c> facilities</c><00:02:38.580><c> are</c>
+
+00:02:38.750 --> 00:02:38.760 align:start position:0%
+to make because the facilities are
+ 
+
+00:02:38.760 --> 00:02:42.229 align:start position:0%
+to make because the facilities are
+simply<00:02:39.060><c> not</c><00:02:39.239><c> there</c><00:02:39.450><c> and</c><00:02:40.430><c> how</c><00:02:41.430><c> easy</c><00:02:41.640><c> is</c><00:02:41.970><c> it</c><00:02:42.000><c> to</c>
+
+00:02:42.229 --> 00:02:42.239 align:start position:0%
+simply not there and how easy is it to
+ 
+
+00:02:42.239 --> 00:02:42.920 align:start position:0%
+simply not there and how easy is it to
+get<00:02:42.360><c> going</c>
+
+00:02:42.920 --> 00:02:42.930 align:start position:0%
+get going
+ 
+
+00:02:42.930 --> 00:02:44.630 align:start position:0%
+get going
+so<00:02:43.200><c> these</c><00:02:43.379><c> two</c><00:02:43.620><c> lines</c><00:02:43.650><c> kind</c><00:02:44.220><c> of</c><00:02:44.280><c> show</c><00:02:44.459><c> you</c><00:02:44.549><c> a</c>
+
+00:02:44.630 --> 00:02:44.640 align:start position:0%
+so these two lines kind of show you a
+ 
+
+00:02:44.640 --> 00:02:46.640 align:start position:0%
+so these two lines kind of show you a
+super<00:02:45.060><c> simple</c><00:02:45.450><c> example</c><00:02:45.959><c> of</c><00:02:46.140><c> doing</c><00:02:46.319><c> a</c><00:02:46.470><c> little</c>
+
+00:02:46.640 --> 00:02:46.650 align:start position:0%
+super simple example of doing a little
+ 
+
+00:02:46.650 --> 00:02:49.430 align:start position:0%
+super simple example of doing a little
+Java<00:02:46.920><c> Script</c><00:02:47.280><c> the</c><00:02:47.910><c> you</c><00:02:48.420><c> get</c><00:02:48.750><c> asked</c><00:02:49.049><c> for</c><00:02:49.230><c> a</c><00:02:49.260><c> new</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+Java Script the you get asked for a new
+ 
+
+00:02:49.440 --> 00:02:51.020 align:start position:0%
+Java Script the you get asked for a new
+script<00:02:49.799><c> engine</c><00:02:50.160><c> from</c><00:02:50.400><c> the</c><00:02:50.430><c> script</c><00:02:50.730><c> engine</c>
+
+00:02:51.020 --> 00:02:51.030 align:start position:0%
+script engine from the script engine
+ 
+
+00:02:51.030 --> 00:02:53.270 align:start position:0%
+script engine from the script engine
+manager<00:02:51.510><c> you</c><00:02:51.810><c> ask</c><00:02:51.989><c> for</c><00:02:52.230><c> it</c><00:02:52.349><c> by</c><00:02:52.440><c> name</c><00:02:52.650><c> Nashorn</c>
+
+00:02:53.270 --> 00:02:53.280 align:start position:0%
+manager you ask for it by name Nashorn
+ 
+
+00:02:53.280 --> 00:02:55.729 align:start position:0%
+manager you ask for it by name Nashorn
+and<00:02:53.489><c> then</c><00:02:53.940><c> here</c><00:02:54.150><c> you</c><00:02:54.269><c> go</c><00:02:54.359><c> engine</c><00:02:54.810><c> eval</c><00:02:55.200><c> and</c><00:02:55.650><c> you</c>
+
+00:02:55.729 --> 00:02:55.739 align:start position:0%
+and then here you go engine eval and you
+ 
+
+00:02:55.739 --> 00:02:57.470 align:start position:0%
+and then here you go engine eval and you
+can<00:02:55.890><c> put</c><00:02:56.040><c> any</c><00:02:56.220><c> JavaScript</c><00:02:56.879><c> you</c><00:02:57.000><c> want</c><00:02:57.209><c> in</c><00:02:57.329><c> there</c>
+
+00:02:57.470 --> 00:02:57.480 align:start position:0%
+can put any JavaScript you want in there
+ 
+
+00:02:57.480 --> 00:03:00.229 align:start position:0%
+can put any JavaScript you want in there
+and<00:02:57.690><c> it'll</c><00:02:58.379><c> run</c><00:02:58.530><c> it</c><00:02:58.709><c> it</c><00:02:59.579><c> will</c><00:02:59.730><c> convert</c><00:03:00.120><c> it</c><00:03:00.209><c> to</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+and it'll run it it will convert it to
+ 
+
+00:03:00.239 --> 00:03:02.900 align:start position:0%
+and it'll run it it will convert it to
+Java<00:03:00.540><c> bytecode</c><00:03:00.840><c> and</c><00:03:01.079><c> execute</c><00:03:01.680><c> it</c><00:03:01.769><c> but</c><00:03:02.430><c> you</c><00:03:02.760><c> can</c>
+
+00:03:02.900 --> 00:03:02.910 align:start position:0%
+Java bytecode and execute it but you can
+ 
+
+00:03:02.910 --> 00:03:04.789 align:start position:0%
+Java bytecode and execute it but you can
+not<00:03:03.090><c> only</c><00:03:03.269><c> you</c><00:03:03.660><c> know</c><00:03:03.690><c> spit</c><00:03:04.260><c> something</c><00:03:04.560><c> to</c>
+
+00:03:04.789 --> 00:03:04.799 align:start position:0%
+not only you know spit something to
+ 
+
+00:03:04.799 --> 00:03:06.589 align:start position:0%
+not only you know spit something to
+standard<00:03:05.220><c> out</c><00:03:05.370><c> if</c><00:03:05.609><c> you</c><00:03:05.819><c> instantiate</c><00:03:06.180><c> an</c>
+
+00:03:06.589 --> 00:03:06.599 align:start position:0%
+standard out if you instantiate an
+ 
+
+00:03:06.599 --> 00:03:09.199 align:start position:0%
+standard out if you instantiate an
+object<00:03:06.750><c> in</c><00:03:07.379><c> JavaScript</c><00:03:08.129><c> here</c><00:03:08.370><c> and</c><00:03:08.549><c> return</c>
+
+00:03:09.199 --> 00:03:09.209 align:start position:0%
+object in JavaScript here and return
+ 
+
+00:03:09.209 --> 00:03:11.030 align:start position:0%
+object in JavaScript here and return
+that<00:03:09.450><c> you're</c><00:03:10.079><c> going</c><00:03:10.230><c> to</c><00:03:10.290><c> get</c><00:03:10.530><c> back</c><00:03:10.709><c> an</c><00:03:10.920><c> object</c>
+
+00:03:11.030 --> 00:03:11.040 align:start position:0%
+that you're going to get back an object
+ 
+
+00:03:11.040 --> 00:03:13.520 align:start position:0%
+that you're going to get back an object
+handle<00:03:11.700><c> in</c><00:03:11.910><c> Java</c><00:03:12.239><c> that</c><00:03:12.750><c> you</c><00:03:12.900><c> can</c><00:03:13.079><c> call</c><00:03:13.290><c> methods</c>
+
+00:03:13.520 --> 00:03:13.530 align:start position:0%
+handle in Java that you can call methods
+ 
+
+00:03:13.530 --> 00:03:16.970 align:start position:0%
+handle in Java that you can call methods
+on<00:03:13.950><c> and</c><00:03:14.220><c> you</c><00:03:15.120><c> can</c><00:03:15.269><c> even</c><00:03:15.510><c> pass</c><00:03:15.750><c> Java</c><00:03:16.349><c> objects</c>
+
+00:03:16.970 --> 00:03:16.980 align:start position:0%
+on and you can even pass Java objects
+ 
+
+00:03:16.980 --> 00:03:19.220 align:start position:0%
+on and you can even pass Java objects
+into<00:03:17.400><c> and</c><00:03:17.700><c> have</c><00:03:17.910><c> that</c><00:03:18.120><c> JavaScript</c><00:03:18.780><c> object</c>
+
+00:03:19.220 --> 00:03:19.230 align:start position:0%
+into and have that JavaScript object
+ 
+
+00:03:19.230 --> 00:03:23.059 align:start position:0%
+into and have that JavaScript object
+call<00:03:19.500><c> methods</c><00:03:20.010><c> on</c><00:03:20.130><c> your</c><00:03:20.819><c> Java</c><00:03:21.120><c> object</c><00:03:21.720><c> and</c><00:03:22.069><c> it</c>
+
+00:03:23.059 --> 00:03:23.069 align:start position:0%
+call methods on your Java object and it
+ 
+
+00:03:23.069 --> 00:03:25.099 align:start position:0%
+call methods on your Java object and it
+all<00:03:23.310><c> works</c><00:03:23.730><c> seamlessly</c><00:03:23.970><c> right</c><00:03:24.540><c> it's</c><00:03:24.690><c> all</c><00:03:24.840><c> just</c>
+
+00:03:25.099 --> 00:03:25.109 align:start position:0%
+all works seamlessly right it's all just
+ 
+
+00:03:25.109 --> 00:03:27.470 align:start position:0%
+all works seamlessly right it's all just
+more<00:03:25.349><c> objects</c><00:03:25.980><c> in</c><00:03:26.069><c> the</c><00:03:26.160><c> Java</c><00:03:26.400><c> VM</c><00:03:26.669><c> so</c><00:03:27.329><c> that's</c>
+
+00:03:27.470 --> 00:03:27.480 align:start position:0%
+more objects in the Java VM so that's
+ 
+
+00:03:27.480 --> 00:03:28.430 align:start position:0%
+more objects in the Java VM so that's
+one<00:03:27.630><c> of</c><00:03:27.720><c> the</c><00:03:27.780><c> things</c><00:03:27.900><c> I</c><00:03:28.019><c> want</c><00:03:28.169><c> you</c><00:03:28.260><c> guys</c><00:03:28.380><c> to</c>
+
+00:03:28.430 --> 00:03:28.440 align:start position:0%
+one of the things I want you guys to
+ 
+
+00:03:28.440 --> 00:03:30.349 align:start position:0%
+one of the things I want you guys to
+think<00:03:28.799><c> about</c><00:03:29.010><c> is</c><00:03:29.250><c> don't</c><00:03:29.639><c> think</c><00:03:29.760><c> about</c><00:03:29.970><c> it</c><00:03:30.239><c> as</c>
+
+00:03:30.349 --> 00:03:30.359 align:start position:0%
+think about is don't think about it as
+ 
+
+00:03:30.359 --> 00:03:32.210 align:start position:0%
+think about is don't think about it as
+like<00:03:30.389><c> there's</c><00:03:30.780><c> JavaScript</c><00:03:31.470><c> world</c><00:03:31.650><c> in</c><00:03:31.919><c> Java</c>
+
+00:03:32.210 --> 00:03:32.220 align:start position:0%
+like there's JavaScript world in Java
+ 
+
+00:03:32.220 --> 00:03:35.449 align:start position:0%
+like there's JavaScript world in Java
+world<00:03:32.489><c> Java</c><00:03:33.299><c> is</c><00:03:33.599><c> a</c><00:03:33.660><c> human</c><00:03:34.290><c> language</c><00:03:34.470><c> the</c><00:03:35.130><c> Java</c>
+
+00:03:35.449 --> 00:03:35.459 align:start position:0%
+world Java is a human language the Java
+ 
+
+00:03:35.459 --> 00:03:38.150 align:start position:0%
+world Java is a human language the Java
+VM<00:03:35.760><c> does</c><00:03:36.030><c> not</c><00:03:36.209><c> run</c><00:03:36.540><c> Java</c><00:03:36.900><c> source</c><00:03:37.440><c> code</c><00:03:37.560><c> right</c>
+
+00:03:38.150 --> 00:03:38.160 align:start position:0%
+VM does not run Java source code right
+ 
+
+00:03:38.160 --> 00:03:39.740 align:start position:0%
+VM does not run Java source code right
+it<00:03:38.370><c> runs</c><00:03:38.609><c> Java</c><00:03:38.970><c> bytecode</c>
+
+00:03:39.740 --> 00:03:39.750 align:start position:0%
+it runs Java bytecode
+ 
+
+00:03:39.750 --> 00:03:42.920 align:start position:0%
+it runs Java bytecode
+well<00:03:40.169><c> Nashorn</c><00:03:40.919><c> compiles</c><00:03:41.730><c> JavaScript</c><00:03:41.930><c> into</c>
+
+00:03:42.920 --> 00:03:42.930 align:start position:0%
+well Nashorn compiles JavaScript into
+ 
+
+00:03:42.930 --> 00:03:45.710 align:start position:0%
+well Nashorn compiles JavaScript into
+Java<00:03:43.200><c> bytecode</c><00:03:43.530><c> so</c><00:03:44.130><c> javascript</c><00:03:44.880><c> with</c><00:03:45.150><c> Nashorn</c>
+
+00:03:45.710 --> 00:03:45.720 align:start position:0%
+Java bytecode so javascript with Nashorn
+ 
+
+00:03:45.720 --> 00:03:47.839 align:start position:0%
+Java bytecode so javascript with Nashorn
+is<00:03:45.900><c> just</c><00:03:46.290><c> another</c><00:03:46.620><c> way</c><00:03:46.919><c> to</c><00:03:46.950><c> produce</c><00:03:47.280><c> Java</c>
+
+00:03:47.839 --> 00:03:47.849 align:start position:0%
+is just another way to produce Java
+ 
+
+00:03:47.849 --> 00:03:51.170 align:start position:0%
+is just another way to produce Java
+bytecode<00:03:48.510><c> so</c><00:03:49.410><c> if</c><00:03:49.739><c> you</c><00:03:49.889><c> have</c><00:03:50.160><c> already</c><00:03:50.970><c> have</c>
+
+00:03:51.170 --> 00:03:51.180 align:start position:0%
+bytecode so if you have already have
+ 
+
+00:03:51.180 --> 00:03:52.879 align:start position:0%
+bytecode so if you have already have
+validation<00:03:51.930><c> logic</c><00:03:52.079><c> if</c><00:03:52.470><c> you</c><00:03:52.560><c> already</c><00:03:52.680><c> have</c>
+
+00:03:52.879 --> 00:03:52.889 align:start position:0%
+validation logic if you already have
+ 
+
+00:03:52.889 --> 00:03:56.300 align:start position:0%
+validation logic if you already have
+value<00:03:53.370><c> in</c><00:03:53.639><c> your</c><00:03:54.560><c> existing</c><00:03:55.560><c> JavaScript</c><00:03:56.190><c> that</c>
+
+00:03:56.300 --> 00:03:56.310 align:start position:0%
+value in your existing JavaScript that
+ 
+
+00:03:56.310 --> 00:03:58.069 align:start position:0%
+value in your existing JavaScript that
+you've<00:03:56.459><c> had</c><00:03:56.609><c> to</c><00:03:56.760><c> write</c><00:03:56.940><c> for</c><00:03:57.209><c> web</c><00:03:57.359><c> applications</c>
+
+00:03:58.069 --> 00:03:58.079 align:start position:0%
+you've had to write for web applications
+ 
+
+00:03:58.079 --> 00:04:00.680 align:start position:0%
+you've had to write for web applications
+before<00:03:58.829><c> you</c><00:03:59.160><c> rewrite</c><00:03:59.489><c> it</c><00:03:59.639><c> in</c><00:03:59.730><c> Java</c><00:04:00.000><c> take</c><00:04:00.660><c> a</c>
+
+00:04:00.680 --> 00:04:00.690 align:start position:0%
+before you rewrite it in Java take a
+ 
+
+00:04:00.690 --> 00:04:02.599 align:start position:0%
+before you rewrite it in Java take a
+step<00:04:00.989><c> back</c><00:04:01.200><c> and</c><00:04:01.410><c> go</c><00:04:01.500><c> like</c><00:04:01.650><c> can</c><00:04:02.099><c> we</c><00:04:02.129><c> just</c><00:04:02.400><c> use</c>
+
+00:04:02.599 --> 00:04:02.609 align:start position:0%
+step back and go like can we just use
+ 
+
+00:04:02.609 --> 00:04:04.190 align:start position:0%
+step back and go like can we just use
+that<00:04:02.790><c> do</c><00:04:03.120><c> we</c><00:04:03.180><c> have</c><00:04:03.299><c> to</c><00:04:03.419><c> rewrite</c><00:04:03.750><c> that</c><00:04:03.989><c> and</c>
+
+00:04:04.190 --> 00:04:04.200 align:start position:0%
+that do we have to rewrite that and
+ 
+
+00:04:04.200 --> 00:04:06.110 align:start position:0%
+that do we have to rewrite that and
+really<00:04:04.829><c> think</c><00:04:05.040><c> about</c><00:04:05.280><c> that</c><00:04:05.459><c> right</c><00:04:05.639><c> because</c><00:04:05.849><c> if</c>
+
+00:04:06.110 --> 00:04:06.120 align:start position:0%
+really think about that right because if
+ 
+
+00:04:06.120 --> 00:04:08.720 align:start position:0%
+really think about that right because if
+you<00:04:06.329><c> get</c><00:04:06.959><c> in</c><00:04:07.079><c> the</c><00:04:07.169><c> position</c><00:04:07.379><c> of</c><00:04:07.919><c> that</c><00:04:08.400><c> you're</c>
+
+00:04:08.720 --> 00:04:08.730 align:start position:0%
+you get in the position of that you're
+ 
+
+00:04:08.730 --> 00:04:11.990 align:start position:0%
+you get in the position of that you're
+not<00:04:09.510><c> only</c><00:04:09.750><c> doing</c><00:04:10.139><c> your</c><00:04:10.370><c> validation</c><00:04:11.370><c> logic</c>
+
+00:04:11.990 --> 00:04:12.000 align:start position:0%
+not only doing your validation logic
+ 
+
+00:04:12.000 --> 00:04:14.659 align:start position:0%
+not only doing your validation logic
+let's<00:04:12.180><c> say</c><00:04:12.449><c> in</c><00:04:12.750><c> in</c><00:04:13.379><c> your</c><00:04:13.590><c> web</c><00:04:13.739><c> application</c><00:04:14.489><c> but</c>
+
+00:04:14.659 --> 00:04:14.669 align:start position:0%
+let's say in in your web application but
+ 
+
+00:04:14.669 --> 00:04:16.490 align:start position:0%
+let's say in in your web application but
+now<00:04:14.970><c> you're</c><00:04:15.150><c> talking</c><00:04:15.299><c> about</c><00:04:15.540><c> doing</c><00:04:15.870><c> an</c><00:04:15.989><c> iOS</c>
+
+00:04:16.490 --> 00:04:16.500 align:start position:0%
+now you're talking about doing an iOS
+ 
+
+00:04:16.500 --> 00:04:17.779 align:start position:0%
+now you're talking about doing an iOS
+native<00:04:16.769><c> app</c><00:04:17.130><c> and</c><00:04:17.370><c> you're</c><00:04:17.459><c> talking</c><00:04:17.609><c> about</c>
+
+00:04:17.779 --> 00:04:17.789 align:start position:0%
+native app and you're talking about
+ 
+
+00:04:17.789 --> 00:04:19.849 align:start position:0%
+native app and you're talking about
+doing<00:04:18.120><c> an</c><00:04:18.209><c> Android</c><00:04:18.720><c> native</c><00:04:19.079><c> app</c><00:04:19.229><c> you</c><00:04:19.739><c> know</c>
+
+00:04:19.849 --> 00:04:19.859 align:start position:0%
+doing an Android native app you know
+ 
+
+00:04:19.859 --> 00:04:21.310 align:start position:0%
+doing an Android native app you know
+that<00:04:20.099><c> you're</c><00:04:20.340><c> going</c><00:04:20.430><c> to</c><00:04:20.489><c> have</c><00:04:20.579><c> to</c><00:04:20.729><c> keep</c><00:04:21.060><c> your</c>
+
+00:04:21.310 --> 00:04:21.320 align:start position:0%
+that you're going to have to keep your
+ 
+
+00:04:21.320 --> 00:04:23.690 align:start position:0%
+that you're going to have to keep your
+objective-c<00:04:22.320><c> version</c><00:04:23.039><c> of</c><00:04:23.159><c> that</c><00:04:23.250><c> validation</c>
+
+00:04:23.690 --> 00:04:23.700 align:start position:0%
+objective-c version of that validation
+ 
+
+00:04:23.700 --> 00:04:25.850 align:start position:0%
+objective-c version of that validation
+like<00:04:24.000><c> logic</c><00:04:24.690><c> your</c><00:04:24.870><c> java</c><00:04:25.229><c> version</c><00:04:25.530><c> of</c><00:04:25.770><c> that</c>
+
+00:04:25.850 --> 00:04:25.860 align:start position:0%
+like logic your java version of that
+ 
+
+00:04:25.860 --> 00:04:27.890 align:start position:0%
+like logic your java version of that
+validation<00:04:26.310><c> logic</c><00:04:26.580><c> your</c><00:04:26.940><c> java</c><00:04:27.270><c> script</c>
+
+00:04:27.890 --> 00:04:27.900 align:start position:0%
+validation logic your java script
+ 
+
+00:04:27.900 --> 00:04:29.510 align:start position:0%
+validation logic your java script
+that<00:04:28.110><c> validation</c><00:04:28.530><c> logic</c><00:04:28.770><c> that's</c><00:04:29.220><c> all</c>
+
+00:04:29.510 --> 00:04:29.520 align:start position:0%
+that validation logic that's all
+ 
+
+00:04:29.520 --> 00:04:31.520 align:start position:0%
+that validation logic that's all
+engineering<00:04:30.150><c> hours</c><00:04:30.540><c> and</c><00:04:30.750><c> those</c><00:04:31.199><c> are</c><00:04:31.350><c> all</c>
+
+00:04:31.520 --> 00:04:31.530 align:start position:0%
+engineering hours and those are all
+ 
+
+00:04:31.530 --> 00:04:34.370 align:start position:0%
+engineering hours and those are all
+opportunities<00:04:32.430><c> for</c><00:04:33.150><c> failure</c><00:04:33.570><c> right</c><00:04:34.020><c> you</c><00:04:34.229><c> can</c>
+
+00:04:34.370 --> 00:04:34.380 align:start position:0%
+opportunities for failure right you can
+ 
+
+00:04:34.380 --> 00:04:36.350 align:start position:0%
+opportunities for failure right you can
+have<00:04:34.500><c> drift</c><00:04:34.949><c> between</c><00:04:35.340><c> your</c><00:04:35.729><c> versions</c><00:04:36.180><c> and</c>
+
+00:04:36.350 --> 00:04:36.360 align:start position:0%
+have drift between your versions and
+ 
+
+00:04:36.360 --> 00:04:38.350 align:start position:0%
+have drift between your versions and
+that's<00:04:36.780><c> how</c><00:04:36.930><c> you</c><00:04:36.990><c> get</c><00:04:37.199><c> serious</c><00:04:37.680><c> bugs</c><00:04:37.979><c> in</c><00:04:38.280><c> your</c>
+
+00:04:38.350 --> 00:04:38.360 align:start position:0%
+that's how you get serious bugs in your
+ 
+
+00:04:38.360 --> 00:04:40.850 align:start position:0%
+that's how you get serious bugs in your
+platform<00:04:39.360><c> so</c><00:04:39.720><c> you</c><00:04:39.780><c> want</c><00:04:40.020><c> to</c><00:04:40.110><c> you</c><00:04:40.470><c> know</c><00:04:40.560><c> don't</c>
+
+00:04:40.850 --> 00:04:40.860 align:start position:0%
+platform so you want to you know don't
+ 
+
+00:04:40.860 --> 00:04:42.740 align:start position:0%
+platform so you want to you know don't
+repeat<00:04:41.190><c> yourself</c><00:04:41.340><c> single</c><00:04:42.270><c> source</c><00:04:42.539><c> of</c><00:04:42.690><c> truth</c>
+
+00:04:42.740 --> 00:04:42.750 align:start position:0%
+repeat yourself single source of truth
+ 
+
+00:04:42.750 --> 00:04:45.320 align:start position:0%
+repeat yourself single source of truth
+can<00:04:43.560><c> you</c><00:04:43.770><c> reuse</c><00:04:44.009><c> that</c><00:04:44.370><c> code</c><00:04:44.430><c> and</c><00:04:44.940><c> that's</c><00:04:45.120><c> what</c>
+
+00:04:45.320 --> 00:04:45.330 align:start position:0%
+can you reuse that code and that's what
+ 
+
+00:04:45.330 --> 00:04:47.540 align:start position:0%
+can you reuse that code and that's what
+that's<00:04:45.960><c> what</c><00:04:46.169><c> isomorphic</c><00:04:46.590><c> applications</c><00:04:47.430><c> are</c>
+
+00:04:47.540 --> 00:04:47.550 align:start position:0%
+that's what isomorphic applications are
+ 
+
+00:04:47.550 --> 00:04:53.390 align:start position:0%
+that's what isomorphic applications are
+about<00:04:51.259><c> it's</c><00:04:52.259><c> Ekman</c><00:04:52.650><c> script</c><00:04:52.889><c> five</c><00:04:53.130><c> I</c><00:04:53.160><c> think</c>
+
+00:04:53.390 --> 00:04:53.400 align:start position:0%
+about it's Ekman script five I think
+ 
+
+00:04:53.400 --> 00:04:55.310 align:start position:0%
+about it's Ekman script five I think
+there's<00:04:53.669><c> some</c><00:04:53.850><c> Xmas</c><00:04:54.060><c> scripts</c><00:04:54.509><c> six</c><00:04:54.750><c> coming</c><00:04:55.080><c> but</c>
+
+00:04:55.310 --> 00:04:55.320 align:start position:0%
+there's some Xmas scripts six coming but
+ 
+
+00:04:55.320 --> 00:04:56.900 align:start position:0%
+there's some Xmas scripts six coming but
+you<00:04:55.440><c> can</c><00:04:55.740><c> you</c><00:04:56.070><c> know</c><00:04:56.100><c> like</c><00:04:56.370><c> you</c><00:04:56.550><c> can</c><00:04:56.699><c> run</c>
+
+00:04:56.900 --> 00:04:56.910 align:start position:0%
+you can you know like you can run
+ 
+
+00:04:56.910 --> 00:05:00.350 align:start position:0%
+you can you know like you can run
+Express<00:04:57.479><c> with</c><00:04:58.229><c> Babel</c><00:04:59.190><c> like</c><00:04:59.940><c> you</c><00:05:00.060><c> can</c><00:05:00.210><c> use</c>
+
+00:05:00.350 --> 00:05:00.360 align:start position:0%
+Express with Babel like you can use
+ 
+
+00:05:00.360 --> 00:05:03.020 align:start position:0%
+Express with Babel like you can use
+webpack<00:05:00.840><c> and</c><00:05:01.139><c> Babel</c><00:05:01.530><c> and</c><00:05:01.680><c> produce</c><00:05:02.400><c> with</c><00:05:03.000><c> the</c>
+
+00:05:03.020 --> 00:05:03.030 align:start position:0%
+webpack and Babel and produce with the
+ 
+
+00:05:03.030 --> 00:05:06.350 align:start position:0%
+webpack and Babel and produce with the
+transpiler<00:05:03.770><c> that</c><00:05:04.770><c> will</c><00:05:05.039><c> work</c><00:05:05.280><c> on</c><00:05:05.610><c> nashua</c><00:05:06.090><c> so</c>
+
+00:05:06.350 --> 00:05:06.360 align:start position:0%
+transpiler that will work on nashua so
+ 
+
+00:05:06.360 --> 00:05:09.140 align:start position:0%
+transpiler that will work on nashua so
+you<00:05:06.449><c> can</c><00:05:06.690><c> use</c><00:05:06.930><c> Eknath</c><00:05:07.320><c> script</c><00:05:07.560><c> six</c><00:05:08.150><c> constructs</c>
+
+00:05:09.140 --> 00:05:09.150 align:start position:0%
+you can use Eknath script six constructs
+ 
+
+00:05:09.150 --> 00:05:11.420 align:start position:0%
+you can use Eknath script six constructs
+they're<00:05:09.479><c> just</c><00:05:09.690><c> transpiled</c><00:05:10.289><c> so</c><00:05:11.100><c> there's</c><00:05:11.280><c> some</c>
+
+00:05:11.420 --> 00:05:11.430 align:start position:0%
+they're just transpiled so there's some
+ 
+
+00:05:11.430 --> 00:05:13.129 align:start position:0%
+they're just transpiled so there's some
+performance<00:05:11.910><c> considerations</c><00:05:12.360><c> but</c><00:05:12.780><c> like</c><00:05:13.020><c> I</c>
+
+00:05:13.129 --> 00:05:13.139 align:start position:0%
+performance considerations but like I
+ 
+
+00:05:13.139 --> 00:05:14.930 align:start position:0%
+performance considerations but like I
+said<00:05:13.199><c> natural</c><00:05:14.100><c> one</c><00:05:14.190><c> is</c><00:05:14.280><c> definitely</c><00:05:14.520><c> under</c>
+
+00:05:14.930 --> 00:05:14.940 align:start position:0%
+said natural one is definitely under
+ 
+
+00:05:14.940 --> 00:05:17.480 align:start position:0%
+said natural one is definitely under
+active<00:05:15.300><c> development</c><00:05:15.680><c> Oracle</c><00:05:16.680><c> is</c><00:05:16.800><c> definitely</c>
+
+00:05:17.480 --> 00:05:17.490 align:start position:0%
+active development Oracle is definitely
+ 
+
+00:05:17.490 --> 00:05:19.760 align:start position:0%
+active development Oracle is definitely
+gets<00:05:17.760><c> it</c><00:05:17.940><c> the</c><00:05:18.060><c> JavaScript</c><00:05:18.720><c> in</c><00:05:18.930><c> Java</c><00:05:19.260><c> is</c><00:05:19.470><c> a</c><00:05:19.500><c> big</c>
+
+00:05:19.760 --> 00:05:19.770 align:start position:0%
+gets it the JavaScript in Java is a big
+ 
+
+00:05:19.770 --> 00:05:22.300 align:start position:0%
+gets it the JavaScript in Java is a big
+deal<00:05:19.979><c> and</c><00:05:20.220><c> then</c><00:05:20.729><c> they</c><00:05:20.940><c> are</c><00:05:21.120><c> pursuing</c><00:05:21.570><c> that</c>
+
+00:05:22.300 --> 00:05:22.310 align:start position:0%
+deal and then they are pursuing that
+ 
+
+00:05:22.310 --> 00:05:25.100 align:start position:0%
+deal and then they are pursuing that
+because<00:05:23.310><c> you</c><00:05:23.580><c> know</c><00:05:23.699><c> the</c><00:05:23.789><c> reality</c><00:05:24.030><c> is</c><00:05:24.210><c> for</c><00:05:24.810><c> Java</c>
+
+00:05:25.100 --> 00:05:25.110 align:start position:0%
+because you know the reality is for Java
+ 
+
+00:05:25.110 --> 00:05:27.490 align:start position:0%
+because you know the reality is for Java
+and<00:05:25.380><c> the</c><00:05:25.440><c> browser</c><00:05:25.680><c> applets</c><00:05:26.310><c> are</c><00:05:26.490><c> gone</c><00:05:26.759><c> right</c>
+
+00:05:27.490 --> 00:05:27.500 align:start position:0%
+and the browser applets are gone right
+ 
+
+00:05:27.500 --> 00:05:29.480 align:start position:0%
+and the browser applets are gone right
+nobody's<00:05:28.500><c> even</c><00:05:28.620><c> thinking</c><00:05:29.039><c> about</c><00:05:29.220><c> I</c><00:05:29.250><c> mean</c>
+
+00:05:29.480 --> 00:05:29.490 align:start position:0%
+nobody's even thinking about I mean
+ 
+
+00:05:29.490 --> 00:05:31.100 align:start position:0%
+nobody's even thinking about I mean
+before<00:05:29.849><c> there</c><00:05:30.000><c> and</c><00:05:30.210><c> now</c><00:05:30.300><c> that</c><00:05:30.330><c> even</c><00:05:30.810><c> that</c>
+
+00:05:31.100 --> 00:05:31.110 align:start position:0%
+before there and now that even that
+ 
+
+00:05:31.110 --> 00:05:33.050 align:start position:0%
+before there and now that even that
+they're<00:05:31.259><c> officially</c><00:05:31.680><c> gone</c><00:05:31.949><c> nobody</c><00:05:32.699><c> was</c>
+
+00:05:33.050 --> 00:05:33.060 align:start position:0%
+they're officially gone nobody was
+ 
+
+00:05:33.060 --> 00:05:35.810 align:start position:0%
+they're officially gone nobody was
+really<00:05:33.449><c> that</c><00:05:34.260><c> happy</c><00:05:34.860><c> about</c><00:05:34.979><c> using</c><00:05:35.430><c> applets</c>
+
+00:05:35.810 --> 00:05:35.820 align:start position:0%
+really that happy about using applets
+ 
+
+00:05:35.820 --> 00:05:38.689 align:start position:0%
+really that happy about using applets
+for<00:05:36.030><c> a</c><00:05:36.090><c> while</c><00:05:36.330><c> now</c><00:05:36.630><c> so</c><00:05:37.320><c> the</c><00:05:38.310><c> web</c><00:05:38.490><c> is</c><00:05:38.669><c> just</c>
+
+00:05:38.689 --> 00:05:38.699 align:start position:0%
+for a while now so the web is just
+ 
+
+00:05:38.699 --> 00:05:40.490 align:start position:0%
+for a while now so the web is just
+getting<00:05:39.120><c> to</c><00:05:39.210><c> be</c><00:05:39.330><c> a</c><00:05:39.360><c> bigger</c><00:05:39.690><c> and</c><00:05:39.930><c> bigger</c><00:05:40.110><c> deal</c>
+
+00:05:40.490 --> 00:05:40.500 align:start position:0%
+getting to be a bigger and bigger deal
+ 
+
+00:05:40.500 --> 00:05:43.700 align:start position:0%
+getting to be a bigger and bigger deal
+and<00:05:41.630><c> javascript</c><00:05:42.630><c> is</c><00:05:42.780><c> everywhere</c><00:05:43.320><c> you</c><00:05:43.590><c> know</c>
+
+00:05:43.700 --> 00:05:43.710 align:start position:0%
+and javascript is everywhere you know
+ 
+
+00:05:43.710 --> 00:05:45.920 align:start position:0%
+and javascript is everywhere you know
+with<00:05:43.979><c> and</c><00:05:44.159><c> with</c><00:05:44.280><c> tools</c><00:05:44.520><c> like</c><00:05:44.789><c> PhoneGap</c><00:05:45.120><c> Apache</c>
+
+00:05:45.920 --> 00:05:45.930 align:start position:0%
+with and with tools like PhoneGap Apache
+ 
+
+00:05:45.930 --> 00:05:47.810 align:start position:0%
+with and with tools like PhoneGap Apache
+Cordova<00:05:46.229><c> anybody</c><00:05:46.830><c> ever</c><00:05:46.979><c> play</c><00:05:47.220><c> with</c><00:05:47.250><c> that</c><00:05:47.550><c> you</c>
+
+00:05:47.810 --> 00:05:47.820 align:start position:0%
+Cordova anybody ever play with that you
+ 
+
+00:05:47.820 --> 00:05:50.089 align:start position:0%
+Cordova anybody ever play with that you
+can<00:05:48.690><c> you</c><00:05:49.050><c> can</c><00:05:49.080><c> build</c><00:05:49.380><c> a</c><00:05:49.560><c> simple</c><00:05:49.770><c> web</c>
+
+00:05:50.089 --> 00:05:50.099 align:start position:0%
+can you can build a simple web
+ 
+
+00:05:50.099 --> 00:05:52.790 align:start position:0%
+can you can build a simple web
+application<00:05:50.849><c> and</c><00:05:51.030><c> package</c><00:05:51.840><c> it</c><00:05:52.020><c> for</c><00:05:52.199><c> the</c><00:05:52.650><c> web</c>
+
+00:05:52.790 --> 00:05:52.800 align:start position:0%
+application and package it for the web
+ 
+
+00:05:52.800 --> 00:05:54.230 align:start position:0%
+application and package it for the web
+store<00:05:53.070><c> you</c><00:05:53.250><c> can</c><00:05:53.370><c> put</c><00:05:53.550><c> it</c><00:05:53.639><c> into</c><00:05:53.820><c> the</c><00:05:53.909><c> Apple</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+store you can put it into the Apple
+ 
+
+00:05:54.240 --> 00:05:55.969 align:start position:0%
+store you can put it into the Apple
+Store<00:05:54.449><c> put</c><00:05:54.630><c> it</c><00:05:54.750><c> in</c><00:05:54.840><c> the</c><00:05:54.930><c> Android</c><00:05:55.320><c> store</c><00:05:55.650><c> so</c>
+
+00:05:55.969 --> 00:05:55.979 align:start position:0%
+Store put it in the Android store so
+ 
+
+00:05:55.979 --> 00:05:57.890 align:start position:0%
+Store put it in the Android store so
+there's<00:05:56.190><c> these</c><00:05:56.370><c> powerful</c><00:05:56.880><c> platforms</c><00:05:57.750><c> that</c>
+
+00:05:57.890 --> 00:05:57.900 align:start position:0%
+there's these powerful platforms that
+ 
+
+00:05:57.900 --> 00:06:00.110 align:start position:0%
+there's these powerful platforms that
+are<00:05:58.020><c> emerging</c><00:05:58.199><c> to</c><00:05:58.440><c> let</c><00:05:58.680><c> you</c><00:05:58.830><c> move</c><00:05:59.580><c> your</c><00:05:59.880><c> code</c>
+
+00:06:00.110 --> 00:06:00.120 align:start position:0%
+are emerging to let you move your code
+ 
+
+00:06:00.120 --> 00:06:01.550 align:start position:0%
+are emerging to let you move your code
+between<00:06:00.419><c> all</c><00:06:00.930><c> kinds</c><00:06:01.349><c> of</c><00:06:01.409><c> different</c>
+
+00:06:01.550 --> 00:06:01.560 align:start position:0%
+between all kinds of different
+ 
+
+00:06:01.560 --> 00:06:05.000 align:start position:0%
+between all kinds of different
+environments<00:06:02.659><c> you</c><00:06:03.659><c> can</c><00:06:03.810><c> get</c><00:06:03.990><c> nodejs</c><00:06:04.560><c> kind</c><00:06:04.919><c> of</c>
+
+00:06:05.000 --> 00:06:05.010 align:start position:0%
+environments you can get nodejs kind of
+ 
+
+00:06:05.010 --> 00:06:17.110 align:start position:0%
+environments you can get nodejs kind of
+style<00:06:05.430><c> work</c><00:06:06.120><c> with</c><00:06:06.710><c> yeah</c>
+
+00:06:17.110 --> 00:06:17.120 align:start position:0%
+ 
+ 
+
+00:06:17.120 --> 00:06:25.010 align:start position:0%
+ 
+yes<00:06:18.680><c> yes</c><00:06:22.220><c> so</c><00:06:23.220><c> you</c><00:06:23.340><c> can</c><00:06:23.700><c> you</c><00:06:24.480><c> should</c><00:06:24.510><c> be</c><00:06:24.780><c> able</c><00:06:24.900><c> to</c>
+
+00:06:25.010 --> 00:06:25.020 align:start position:0%
+yes yes so you can you should be able to
+ 
+
+00:06:25.020 --> 00:06:28.040 align:start position:0%
+yes yes so you can you should be able to
+call<00:06:25.320><c> any</c><00:06:25.680><c> method</c><00:06:26.280><c> on</c><00:06:26.400><c> any</c><00:06:26.640><c> java</c><00:06:27.000><c> object</c><00:06:27.630><c> from</c>
+
+00:06:28.040 --> 00:06:28.050 align:start position:0%
+call any method on any java object from
+ 
+
+00:06:28.050 --> 00:06:31.100 align:start position:0%
+call any method on any java object from
+javascript<00:06:28.890><c> using</c><00:06:29.280><c> Nashorn</c><00:06:30.000><c> so</c><00:06:30.420><c> anything</c><00:06:30.990><c> you</c>
+
+00:06:31.100 --> 00:06:31.110 align:start position:0%
+javascript using Nashorn so anything you
+ 
+
+00:06:31.110 --> 00:06:34.040 align:start position:0%
+javascript using Nashorn so anything you
+could<00:06:31.290><c> write</c><00:06:31.560><c> in</c><00:06:31.800><c> Java</c><00:06:32.280><c> I</c><00:06:32.580><c> believe</c><00:06:32.960><c> and</c><00:06:33.960><c> I</c>
+
+00:06:34.040 --> 00:06:34.050 align:start position:0%
+could write in Java I believe and I
+ 
+
+00:06:34.050 --> 00:06:35.240 align:start position:0%
+could write in Java I believe and I
+believe<00:06:34.080><c> you</c><00:06:34.410><c> should</c><00:06:34.590><c> be</c><00:06:34.740><c> able</c><00:06:34.800><c> to</c><00:06:34.890><c> MIT</c><00:06:35.070><c> you</c>
+
+00:06:35.240 --> 00:06:35.250 align:start position:0%
+believe you should be able to MIT you
+ 
+
+00:06:35.250 --> 00:06:37.240 align:start position:0%
+believe you should be able to MIT you
+can<00:06:35.610><c> do</c><00:06:35.760><c> things</c><00:06:35.940><c> like</c><00:06:36.090><c> manipulate</c><00:06:36.780><c> threads</c>
+
+00:06:37.240 --> 00:06:37.250 align:start position:0%
+can do things like manipulate threads
+ 
+
+00:06:37.250 --> 00:06:40.880 align:start position:0%
+can do things like manipulate threads
+from<00:06:38.250><c> JavaScript</c><00:06:39.180><c> in</c><00:06:39.390><c> using</c><00:06:40.050><c> Nashorn</c><00:06:40.530><c> like</c>
+
+00:06:40.880 --> 00:06:40.890 align:start position:0%
+from JavaScript in using Nashorn like
+ 
+
+00:06:40.890 --> 00:06:42.530 align:start position:0%
+from JavaScript in using Nashorn like
+you<00:06:41.040><c> know</c><00:06:41.130><c> if</c><00:06:41.280><c> you</c><00:06:41.400><c> have</c><00:06:41.580><c> a</c><00:06:41.610><c> handle</c><00:06:42.090><c> to</c><00:06:42.330><c> those</c>
+
+00:06:42.530 --> 00:06:42.540 align:start position:0%
+you know if you have a handle to those
+ 
+
+00:06:42.540 --> 00:06:44.930 align:start position:0%
+you know if you have a handle to those
+objects<00:06:43.170><c> you</c><00:06:43.470><c> can</c><00:06:43.680><c> call</c><00:06:43.920><c> you</c><00:06:44.400><c> just</c><00:06:44.610><c> you</c><00:06:44.760><c> can</c>
+
+00:06:44.930 --> 00:06:44.940 align:start position:0%
+objects you can call you just you can
+ 
+
+00:06:44.940 --> 00:06:46.940 align:start position:0%
+objects you can call you just you can
+call<00:06:45.120><c> methods</c><00:06:45.270><c> on</c><00:06:45.600><c> Java</c><00:06:45.900><c> objects</c><00:06:46.470><c> so</c><00:06:46.560><c> anything</c>
+
+00:06:46.940 --> 00:06:46.950 align:start position:0%
+call methods on Java objects so anything
+ 
+
+00:06:46.950 --> 00:06:49.460 align:start position:0%
+call methods on Java objects so anything
+you<00:06:47.100><c> can</c><00:06:47.250><c> do</c><00:06:47.430><c> via</c><00:06:48.180><c> calling</c><00:06:48.720><c> methods</c><00:06:49.080><c> on</c><00:06:49.200><c> Java</c>
+
+00:06:49.460 --> 00:06:49.470 align:start position:0%
+you can do via calling methods on Java
+ 
+
+00:06:49.470 --> 00:06:51.740 align:start position:0%
+you can do via calling methods on Java
+objects<00:06:50.010><c> you</c><00:06:50.580><c> may</c><00:06:50.730><c> you</c><00:06:51.090><c> may</c><00:06:51.120><c> have</c><00:06:51.330><c> to</c><00:06:51.450><c> do</c><00:06:51.570><c> some</c>
+
+00:06:51.740 --> 00:06:51.750 align:start position:0%
+objects you may you may have to do some
+ 
+
+00:06:51.750 --> 00:06:53.780 align:start position:0%
+objects you may you may have to do some
+casting<00:06:52.290><c> you</c><00:06:52.530><c> may</c><00:06:52.650><c> have</c><00:06:52.770><c> to</c><00:06:52.920><c> go</c><00:06:53.190><c> depending</c><00:06:53.700><c> out</c>
+
+00:06:53.780 --> 00:06:53.790 align:start position:0%
+casting you may have to go depending out
+ 
+
+00:06:53.790 --> 00:06:55.160 align:start position:0%
+casting you may have to go depending out
+like<00:06:53.940><c> if</c><00:06:54.060><c> you</c><00:06:54.180><c> try</c><00:06:54.360><c> to</c><00:06:54.420><c> do</c><00:06:54.600><c> something</c><00:06:54.840><c> really</c>
+
+00:06:55.160 --> 00:06:55.170 align:start position:0%
+like if you try to do something really
+ 
+
+00:06:55.170 --> 00:06:58.130 align:start position:0%
+like if you try to do something really
+low-level<00:06:55.470><c> I</c><00:06:56.010><c> don't</c><00:06:56.910><c> have</c><00:06:57.060><c> a</c><00:06:57.090><c> Pat</c><00:06:57.390><c> answer</c><00:06:57.870><c> in</c>
+
+00:06:58.130 --> 00:06:58.140 align:start position:0%
+low-level I don't have a Pat answer in
+ 
+
+00:06:58.140 --> 00:07:01.280 align:start position:0%
+low-level I don't have a Pat answer in
+terms<00:06:58.500><c> of</c><00:06:58.800><c> you</c><00:06:59.010><c> know</c><00:06:59.040><c> will</c><00:07:00.000><c> it</c><00:07:00.150><c> be</c><00:07:00.270><c> easy</c><00:07:00.510><c> but</c>
+
+00:07:01.280 --> 00:07:01.290 align:start position:0%
+terms of you know will it be easy but
+ 
+
+00:07:01.290 --> 00:07:03.020 align:start position:0%
+terms of you know will it be easy but
+you<00:07:01.560><c> should</c><00:07:01.770><c> be</c><00:07:01.920><c> anything</c><00:07:02.130><c> you</c><00:07:02.280><c> can</c><00:07:02.790><c> do</c><00:07:03.000><c> in</c>
+
+00:07:03.020 --> 00:07:03.030 align:start position:0%
+you should be anything you can do in
+ 
+
+00:07:03.030 --> 00:07:04.640 align:start position:0%
+you should be anything you can do in
+Java<00:07:03.390><c> you</c><00:07:03.600><c> should</c><00:07:03.900><c> be</c><00:07:04.080><c> able</c><00:07:04.170><c> to</c><00:07:04.320><c> do</c><00:07:04.500><c> in</c>
+
+00:07:04.640 --> 00:07:04.650 align:start position:0%
+Java you should be able to do in
+ 
+
+00:07:04.650 --> 00:07:08.570 align:start position:0%
+Java you should be able to do in
+JavaScript<00:07:05.210><c> there</c><00:07:06.210><c> may</c><00:07:06.330><c> be</c><00:07:06.360><c> some</c><00:07:06.720><c> like</c><00:07:07.580><c> there</c>
+
+00:07:08.570 --> 00:07:08.580 align:start position:0%
+JavaScript there may be some like there
+ 
+
+00:07:08.580 --> 00:07:09.980 align:start position:0%
+JavaScript there may be some like there
+may<00:07:08.730><c> be</c><00:07:08.760><c> some</c><00:07:08.880><c> interesting</c><00:07:09.480><c> things</c><00:07:09.660><c> when</c><00:07:09.900><c> it</c>
+
+00:07:09.980 --> 00:07:09.990 align:start position:0%
+may be some interesting things when it
+ 
+
+00:07:09.990 --> 00:07:11.960 align:start position:0%
+may be some interesting things when it
+comes<00:07:10.200><c> to</c><00:07:10.470><c> getting</c><00:07:10.740><c> if</c><00:07:11.010><c> you</c><00:07:11.130><c> have</c><00:07:11.340><c> like</c><00:07:11.610><c> you</c>
+
+00:07:11.960 --> 00:07:11.970 align:start position:0%
+comes to getting if you have like you
+ 
+
+00:07:11.970 --> 00:07:14.330 align:start position:0%
+comes to getting if you have like you
+know<00:07:12.000><c> a</c><00:07:12.090><c> method</c><00:07:12.720><c> that</c><00:07:12.900><c> you're</c><00:07:13.050><c> using</c><00:07:13.340><c> casting</c>
+
+00:07:14.330 --> 00:07:14.340 align:start position:0%
+know a method that you're using casting
+ 
+
+00:07:14.340 --> 00:07:16.520 align:start position:0%
+know a method that you're using casting
+you<00:07:14.730><c> know</c><00:07:14.760><c> to</c><00:07:14.910><c> that</c><00:07:15.420><c> the</c><00:07:15.570><c> type</c><00:07:15.780><c> detection</c>
+
+00:07:16.520 --> 00:07:16.530 align:start position:0%
+you know to that the type detection
+ 
+
+00:07:16.530 --> 00:07:18.860 align:start position:0%
+you know to that the type detection
+plays<00:07:17.070><c> a</c><00:07:17.100><c> big</c><00:07:17.400><c> role</c><00:07:17.430><c> in</c><00:07:17.670><c> it</c><00:07:17.910><c> it</c><00:07:18.090><c> may</c><00:07:18.540><c> get</c><00:07:18.720><c> a</c>
+
+00:07:18.860 --> 00:07:18.870 align:start position:0%
+plays a big role in it it may get a
+ 
+
+00:07:18.870 --> 00:07:20.990 align:start position:0%
+plays a big role in it it may get a
+little<00:07:19.140><c> complicated</c><00:07:19.920><c> but</c><00:07:20.550><c> so</c><00:07:20.700><c> you</c><00:07:20.790><c> may</c><00:07:20.910><c> have</c>
+
+00:07:20.990 --> 00:07:21.000 align:start position:0%
+little complicated but so you may have
+ 
+
+00:07:21.000 --> 00:07:22.520 align:start position:0%
+little complicated but so you may have
+to<00:07:21.120><c> do</c><00:07:21.210><c> something</c><00:07:21.570><c> like</c><00:07:21.660><c> write</c><00:07:21.930><c> an</c><00:07:22.080><c> adapter</c>
+
+00:07:22.520 --> 00:07:22.530 align:start position:0%
+to do something like write an adapter
+ 
+
+00:07:22.530 --> 00:07:25.220 align:start position:0%
+to do something like write an adapter
+class<00:07:22.770><c> in</c><00:07:23.040><c> Java</c><00:07:23.340><c> that</c><00:07:23.490><c> like</c><00:07:23.850><c> gives</c><00:07:24.230><c> JavaScript</c>
+
+00:07:25.220 --> 00:07:25.230 align:start position:0%
+class in Java that like gives JavaScript
+ 
+
+00:07:25.230 --> 00:07:27.560 align:start position:0%
+class in Java that like gives JavaScript
+little<00:07:25.500><c> help</c><00:07:25.650><c> in</c><00:07:25.800><c> hand</c><00:07:26.040><c> just</c><00:07:26.220><c> to</c><00:07:27.060><c> understand</c>
+
+00:07:27.560 --> 00:07:27.570 align:start position:0%
+little help in hand just to understand
+ 
+
+00:07:27.570 --> 00:07:30.320 align:start position:0%
+little help in hand just to understand
+the<00:07:27.690><c> typing</c><00:07:28.110><c> system</c>
+

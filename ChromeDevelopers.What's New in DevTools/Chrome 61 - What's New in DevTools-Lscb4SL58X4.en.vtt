@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.395
+[MUSIC PLAYING]
+
+00:00:05.270 --> 00:00:06.270
+KAYCE BASQUES: Hi there.
+
+00:00:06.270 --> 00:00:10.680
+I'm Kayce, and here's what's
+new in DevTools in Chrome 61.
+
+00:00:10.680 --> 00:00:12.420
+The new Mobile Device
+Throttling menu
+
+00:00:12.420 --> 00:00:15.420
+lets you simulate a low-end
+or mid-tier mobile device
+
+00:00:15.420 --> 00:00:17.850
+with a couple of clicks.
+
+00:00:17.850 --> 00:00:21.000
+Press Toggle Device Toolbar
+to enter device mode.
+
+00:00:21.000 --> 00:00:22.620
+The Mobile Device
+Throttling menu
+
+00:00:22.620 --> 00:00:25.080
+is set to Online
+by default. Click
+
+00:00:25.080 --> 00:00:27.600
+it to see the mobile
+device options.
+
+00:00:27.600 --> 00:00:29.340
+Select low-end
+mobile, and you see
+
+00:00:29.340 --> 00:00:33.610
+warning icons pop up next to the
+Network and Performance tabs.
+
+00:00:33.610 --> 00:00:36.240
+These are here to remind you
+that you've got network and CPU
+
+00:00:36.240 --> 00:00:38.040
+throttling enabled.
+
+00:00:38.040 --> 00:00:39.780
+Now when you interact
+with your pages,
+
+00:00:39.780 --> 00:00:42.540
+you can get a better idea
+of how they load and respond
+
+00:00:42.540 --> 00:00:44.550
+on a low-end device.
+
+00:00:44.550 --> 00:00:47.700
+To see exactly how DevTools
+defines a low-end device,
+
+00:00:47.700 --> 00:00:50.910
+hover over the menu or go
+to the Performance panel
+
+00:00:50.910 --> 00:00:53.460
+and open the Capture
+Settings menu.
+
+00:00:53.460 --> 00:00:55.260
+The Throttling menu
+is just a shortcut
+
+00:00:55.260 --> 00:00:58.620
+for setting the network
+and CPU options here.
+
+00:00:58.620 --> 00:01:00.150
+You can see that
+they automatically
+
+00:01:00.150 --> 00:01:03.960
+update when I set the
+Throttling menu back to Online.
+
+00:01:03.960 --> 00:01:06.420
+The new usage chart on
+the Clear Storage pane
+
+00:01:06.420 --> 00:01:08.150
+breaks down how much
+storage your page
+
+00:01:08.150 --> 00:01:11.400
+is using, organized
+by technology.
+
+00:01:11.400 --> 00:01:13.260
+Another new feature in
+the application panel
+
+00:01:13.260 --> 00:01:15.480
+is the Time Cached
+column, which tells you
+
+00:01:15.480 --> 00:01:17.910
+when a response was cached.
+
+00:01:17.910 --> 00:01:20.490
+Also new, you can now
+enable the FPS meter
+
+00:01:20.490 --> 00:01:22.720
+from the Command menu.
+
+00:01:22.720 --> 00:01:25.540
+Press Command-Shift-P on
+Mac, or Control-Shift-P
+
+00:01:25.540 --> 00:01:28.540
+on Windows and Linux to
+open the Command menu.
+
+00:01:28.540 --> 00:01:32.834
+Type FPS, then select Show
+Frames Per Second Meter.
+
+00:01:32.834 --> 00:01:34.250
+In the top right
+of your viewport,
+
+00:01:34.250 --> 00:01:37.010
+there's now an overlay
+that shows your page's FPS
+
+00:01:37.010 --> 00:01:39.680
+performance in real time.
+
+00:01:39.680 --> 00:01:41.730
+If you work with a lot of
+performance recordings,
+
+00:01:41.730 --> 00:01:44.210
+there's now a setting to
+change how your mouse wheel
+
+00:01:44.210 --> 00:01:47.700
+or trackpad behaves while
+you're analyzing a recording.
+
+00:01:47.700 --> 00:01:50.270
+Here I've got a
+recording of a page load.
+
+00:01:50.270 --> 00:01:52.280
+By default, when I
+swipe up and down
+
+00:01:52.280 --> 00:01:54.390
+with two fingers
+on this section,
+
+00:01:54.390 --> 00:01:56.360
+DevTools zooms in and out.
+
+00:01:56.360 --> 00:01:59.810
+But if I open up Settings and
+set Flame Chart Mouse Wheel
+
+00:01:59.810 --> 00:02:02.330
+Action to Scroll,
+now that action
+
+00:02:02.330 --> 00:02:03.560
+scrolls the section instead.
+
+00:02:06.770 --> 00:02:09.620
+ES6 modules are shipping
+natively in Chrome 61,
+
+00:02:09.620 --> 00:02:13.940
+and debugging in DevTools
+works as you'd expect it to.
+
+00:02:13.940 --> 00:02:18.564
+Right now we're paused on this
+On function in bootstrap.js.
+
+00:02:18.564 --> 00:02:20.480
+It says here that we're
+importing the function
+
+00:02:20.480 --> 00:02:23.030
+from helpers.js.
+
+00:02:23.030 --> 00:02:24.530
+When I step into
+this function, it
+
+00:02:24.530 --> 00:02:28.071
+should jump us to its
+definition in helpers.js.
+
+00:02:28.071 --> 00:02:28.570
+Neat.
+
+00:02:31.140 --> 00:02:32.490
+That's all for Chrome 61.
+
+00:02:32.490 --> 00:02:33.480
+Thanks for watching.
+
+00:02:33.480 --> 00:02:36.090
+Tweet us at ChromeDevTools, or
+start a thread in the mailing
+
+00:02:36.090 --> 00:02:39.330
+list to discuss these changes,
+and subscribe to the Chrome
+
+00:02:39.330 --> 00:02:42.660
+Developers YouTube channel to
+keep up on the latest ideas.
+
+00:02:42.660 --> 00:02:45.130
+I'll see you in six
+weeks for Chrome 62.
+
+00:02:45.130 --> 00:02:48.480
+[MUSIC PLAYING]
+

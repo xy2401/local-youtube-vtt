@@ -1,0 +1,279 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.970
+[MUSIC PLAYING]
+
+00:00:08.920 --> 00:00:11.950
+Chrome 45 is rolling out now.
+
+00:00:11.950 --> 00:00:16.600
+There's new ATMOS script 2015
+functionality, improvements
+
+00:00:16.600 --> 00:00:19.560
+to app install banners,
+and a new security
+
+00:00:19.560 --> 00:00:23.750
+feature to ensure that no one
+is messing with your code.
+
+00:00:23.750 --> 00:00:26.090
+From the Empire Hotel
+in New York City,
+
+00:00:26.090 --> 00:00:29.250
+let's take a look at
+what's new in Chrome.
+
+00:00:29.250 --> 00:00:33.240
+Over the past year, we've added
+a number of new JavaScript
+
+00:00:33.240 --> 00:00:37.970
+features, defined in the ATMOS
+script 2015 specification,
+
+00:00:37.970 --> 00:00:41.060
+formerly known as ES6.
+
+00:00:41.060 --> 00:00:45.990
+In Chrome 45, we've added
+support for arrow functions.
+
+00:00:45.990 --> 00:00:48.750
+Beyond the shorter
+syntax, they eliminate
+
+00:00:48.750 --> 00:00:51.940
+the need for dot
+bind or the var self
+
+00:00:51.940 --> 00:00:56.540
+equals this hack necessary
+for anonymous functions,
+
+00:00:56.540 --> 00:01:00.410
+because they lexically
+bind the this value.
+
+00:01:00.410 --> 00:01:03.450
+Arrow functions may take
+some getting used to,
+
+00:01:03.450 --> 00:01:05.200
+but once you've
+played with them,
+
+00:01:05.200 --> 00:01:08.040
+they become second nature.
+
+00:01:08.040 --> 00:01:10.560
+Jason Orendorff
+has a detailed post
+
+00:01:10.560 --> 00:01:14.660
+on arrow functions
+on hacks.Mozilla.org.
+
+00:01:14.660 --> 00:01:17.920
+You can find the link in
+the description below.
+
+00:01:17.920 --> 00:01:20.670
+There are new methods
+on the array object,
+
+00:01:20.670 --> 00:01:24.660
+like from, of,
+fill, find, and find
+
+00:01:24.660 --> 00:01:29.560
+index, that make dealing
+with arrays much easier.
+
+00:01:29.560 --> 00:01:33.150
+On Android, you can now defer
+the add to the home screen
+
+00:01:33.150 --> 00:01:36.690
+banner and show it at a
+more convenient time, when
+
+00:01:36.690 --> 00:01:40.230
+it doesn't interrupt
+the application flow.
+
+00:01:40.230 --> 00:01:42.700
+Simply prevent
+the default action
+
+00:01:42.700 --> 00:01:47.480
+by calling preventDefault on
+the before install prompt event
+
+00:01:47.480 --> 00:01:50.620
+and save a reference
+to the event for later.
+
+00:01:50.620 --> 00:01:53.200
+Then, when you're
+ready, re-trigger
+
+00:01:53.200 --> 00:01:57.250
+the prompt by calling
+prompt on the stored event.
+
+00:01:57.250 --> 00:02:00.920
+We've also added the ability
+to install native apps,
+
+00:02:00.920 --> 00:02:02.940
+directly from your site.
+
+00:02:02.940 --> 00:02:06.300
+It works in much the same
+way as add to home screen.
+
+00:02:06.300 --> 00:02:09.660
+Your site needs to
+be served over HTTPS,
+
+00:02:09.660 --> 00:02:13.180
+have a web app manifest file
+that includes information
+
+00:02:13.180 --> 00:02:14.770
+about your native app.
+
+00:02:14.770 --> 00:02:19.510
+Then, if a user visits your site
+at least twice over a two week
+
+00:02:19.510 --> 00:02:22.130
+period, they'll see the banner.
+
+00:02:22.130 --> 00:02:23.930
+Check the link in
+the description
+
+00:02:23.930 --> 00:02:26.060
+below for full details.
+
+00:02:26.060 --> 00:02:28.230
+Oh, perfect.
+
+00:02:28.230 --> 00:02:30.386
+Could I get the
+fruit cup please?
+
+00:02:30.386 --> 00:02:32.770
+Awesome.
+
+00:02:32.770 --> 00:02:36.920
+To help protect users,
+sub-resource integrity
+
+00:02:36.920 --> 00:02:39.430
+provides a mechanism
+for the browser
+
+00:02:39.430 --> 00:02:42.060
+to verify that a
+fetch resource has
+
+00:02:42.060 --> 00:02:46.240
+been delivered without
+unexpected manipulation.
+
+00:02:46.240 --> 00:02:50.490
+You can use this to mitigate
+the risk of a compromised server
+
+00:02:50.490 --> 00:02:54.680
+or ensure that only carefully
+reviewed third party code
+
+00:02:54.680 --> 00:02:56.520
+is executed.
+
+00:02:56.520 --> 00:03:00.990
+This helps to ensure that the
+expected resource is used,
+
+00:03:00.990 --> 00:03:06.080
+not just any resource that
+lives at a particular URL.
+
+00:03:06.080 --> 00:03:09.190
+The current spec
+and implementation
+
+00:03:09.190 --> 00:03:15.010
+covers only script and link
+rel equals stylesheet elements.
+
+00:03:15.010 --> 00:03:17.340
+Once the file has
+been retrieved,
+
+00:03:17.340 --> 00:03:21.120
+the browser compares
+the hash of the file
+
+00:03:21.120 --> 00:03:23.760
+to the hash provided
+by the integrity
+
+00:03:23.760 --> 00:03:25.570
+attribute of the element.
+
+00:03:25.570 --> 00:03:29.200
+If the hashes don't match,
+the browser won't use it.
+
+00:03:29.200 --> 00:03:31.970
+Oh, perfect!
+
+00:03:31.970 --> 00:03:35.340
+Hey, this isn't what I ordered.
+
+00:03:35.340 --> 00:03:36.520
+Oh, well.
+
+00:03:36.520 --> 00:03:39.940
+To learn more about
+sub resource integrity,
+
+00:03:39.940 --> 00:03:44.770
+check out the link and samples
+in the description below.
+
+00:03:44.770 --> 00:03:48.520
+These are just a few of the
+new features in Chrome 45
+
+00:03:48.520 --> 00:03:49.880
+for developers.
+
+00:03:49.880 --> 00:03:52.690
+You can get more details
+in the links below.
+
+00:03:52.690 --> 00:03:56.160
+I'm Pete LePage and as soon
+as Chrome 46 is released,
+
+00:03:56.160 --> 00:03:59.240
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:59.240 --> 00:04:04.360
+But for now, it's time to grab
+a drink and sit by the pool.
+
+00:04:04.360 --> 00:04:07.410
+[MSUCI PLAYING]
+

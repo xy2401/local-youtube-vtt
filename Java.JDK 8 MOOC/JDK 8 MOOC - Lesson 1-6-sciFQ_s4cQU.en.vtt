@@ -1,0 +1,421 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:02.810
+[music]
+
+00:00:02.810 --> 00:00:12.440
+ 
+
+00:00:12.440 --> 00:00:14.820
+Hello and welcome to part six
+
+00:00:14.820 --> 00:00:17.890
+of lesson one. Here we're going to
+talk about
+
+00:00:17.890 --> 00:00:21.140
+how you can reference external variables
+
+00:00:21.140 --> 00:00:24.710
+when you're dealing with a Lambda expression
+and how you can go about using
+
+00:00:24.710 --> 00:00:30.360
+variables data from the surrounding scope. 
+If you look at
+
+00:00:30.360 --> 00:00:33.920
+anonymous inner classes there are
+restrictions on
+
+00:00:33.920 --> 00:00:37.250
+how you can reference variables in the
+surrounding scope.
+
+00:00:37.250 --> 00:00:40.340
+Essentially, any variable that you
+reference
+
+00:00:40.340 --> 00:00:44.580
+must be marked as final which means it’s
+value is set once
+
+00:00:44.580 --> 00:00:47.870
+and isn't modified. This is because
+
+00:00:47.870 --> 00:00:51.559
+in terms of what an anonymous inner class 
+provides,
+
+00:00:51.559 --> 00:00:54.780
+it’s effectively a closure on
+
+00:00:54.780 --> 00:00:59.409
+a value, not a closure on a variable.
+Different programming languages take
+
+00:00:59.409 --> 00:01:00.589
+different approaches
+
+00:01:00.589 --> 00:01:05.210
+in terms of closures. Java has the idea of
+closures on values,
+
+00:01:05.210 --> 00:01:09.280
+so do languages like Haskell. Some
+languages
+
+00:01:09.280 --> 00:01:13.299
+like Scala, for example, allow you to
+check closures on variables,
+
+00:01:13.299 --> 00:01:16.780
+which means you can modify a variable
+
+00:01:16.780 --> 00:01:20.350
+from the surrounding scope. In terms of
+
+00:01:20.350 --> 00:01:25.689
+why this is quite important is because,
+for multi-threaded code,
+
+00:01:25.689 --> 00:01:29.469
+what you actually want to do is avoid
+modifying state.
+
+00:01:29.469 --> 00:01:33.109
+We talked a little about this earlier in the
+lesson but
+
+00:01:33.109 --> 00:01:37.219
+the problem can occur is if you use a
+Lambda expression, if you were able to
+
+00:01:37.219 --> 00:01:38.350
+modify the state
+
+00:01:38.350 --> 00:01:42.869
+of a variable in the surrounding scope it 
+could be that that Lambda expression is being 
+used in
+
+00:01:42.869 --> 00:01:44.359
+several different threads
+
+00:01:44.359 --> 00:01:48.159
+and you could get race conditions, you
+could get inconsistent data.
+
+00:01:48.159 --> 00:01:53.600
+For Lambda expressions, because they can
+be used wherever
+
+00:01:53.600 --> 00:01:57.499
+you could have the equivalent anonymous inner 
+class we still have the same restriction.
+
+00:01:57.499 --> 00:01:57.820
+ 
+
+00:01:57.820 --> 00:02:02.659
+We still have the idea of closures on
+values, but what we've done
+
+00:02:02.659 --> 00:02:06.579
+is to relax the rules a little bit.
+
+00:02:06.579 --> 00:02:09.940
+In terms of accessing a variable in the 
+surrounding scope
+
+00:02:09.940 --> 00:02:14.960
+it must be effectively final. That means
+it doesn't have to be marked
+
+00:02:14.960 --> 00:02:19.400
+as final, but it has to behave in exactly
+the same way
+
+00:02:19.400 --> 00:02:21.959
+as if it was marked final.
+
+00:02:21.959 --> 00:02:25.480
+I’ve got an example here where I’ve got a 
+method called expire
+
+00:02:25.480 --> 00:02:28.549
+and I’m passing a variable called before
+
+00:02:28.549 --> 00:02:33.109
+into that method. I then want to use that
+
+00:02:33.109 --> 00:02:37.200
+variable, the value before within my
+Lambda expression.
+
+00:02:37.200 --> 00:02:41.599
+Here I'm testing whether the last
+modified date is before that date.
+
+00:02:41.599 --> 00:02:45.310
+Even though before is not marked as
+final,
+
+00:02:45.310 --> 00:02:49.099
+its value is only set once it's not
+modified in the code
+
+00:02:49.099 --> 00:02:53.359
+so it behaves exactly the same way as if
+it was marked final.
+
+00:02:53.359 --> 00:02:57.209
+If I added a final into that definition
+of the parameter
+
+00:02:57.209 --> 00:03:01.569
+nothing would change in the way the code
+worked, so I can use that
+
+00:03:01.569 --> 00:03:07.409
+in my Lambda expression. We need to
+understand
+
+00:03:07.409 --> 00:03:10.450
+what this means in terms
+
+00:03:10.450 --> 00:03:13.489
+of a Lambda expression. Now we use this
+
+00:03:13.489 --> 00:03:17.989
+in Java represent the instance of the
+object that we’re actually using
+
+00:03:17.989 --> 00:03:22.430
+at that time. In the case of a Lambda
+expression
+
+00:03:22.430 --> 00:03:26.129
+remember I've said already that a Lambda
+expression is not
+
+00:03:26.129 --> 00:03:29.530
+associated with a class and therefore
+there's no
+
+00:03:29.530 --> 00:03:35.150
+object that a Lambda expression is
+directly associated with. It’s not like an
+
+00:03:35.150 --> 00:03:36.459
+anonymous inner class
+
+00:03:36.459 --> 00:03:40.510
+where the compiler will create a
+synthetic class for you
+
+00:03:40.510 --> 00:03:44.569
+on the run time will then instantiate
+that class and create an object
+
+00:03:44.569 --> 00:03:47.609
+of that which you can then refer to as
+this
+
+00:03:47.609 --> 00:03:50.669
+within an anonymous inner class. A Lambda
+expression
+
+00:03:50.669 --> 00:03:53.739
+doesn't have a class; there is no object
+
+00:03:53.739 --> 00:03:57.699
+so this cannot refer to the lambda
+expression itself.
+
+00:03:57.699 --> 00:04:01.519
+If you use this in a Lambda expression,
+
+00:04:01.519 --> 00:04:04.650
+what you will be referring to is the
+object
+
+00:04:04.650 --> 00:04:09.479
+of the surrounding scope. That's
+something that is a difference between
+
+00:04:09.479 --> 00:04:13.780
+Lambda expressions and anonymous inner 
+classes, and it's something to be
+
+00:04:13.780 --> 00:04:16.720
+aware of.
+
+00:04:16.720 --> 00:04:20.760
+That can have some strange effects.
+
+00:04:20.760 --> 00:04:23.970
+This was some code that I wrote,
+
+00:04:23.970 --> 00:04:27.730
+very much like this, in terms of some
+real code that I was working on.
+
+00:04:27.730 --> 00:04:31.060
+What I did was I had my method called
+process,
+
+00:04:31.060 --> 00:04:34.220
+got some data from somewhere
+
+00:04:34.220 --> 00:04:37.520
+and then I incremented currentValue
+
+00:04:37.520 --> 00:04:42.330
+which is a variable in the surrounding scope, 
+and the compiler didn’t complain,
+
+00:04:42.330 --> 00:04:45.460
+it compiled the code quite happily.
+I ran the code and it worked.
+
+00:04:45.460 --> 00:04:48.890
+I looked at it and I thought, that shouldn’t
+work
+
+00:04:48.890 --> 00:04:52.530
+because I’m modifying a variable in the 
+surrounding scope,
+
+00:04:52.530 --> 00:04:55.750
+and it's not final and it’s not effectively
+final
+
+00:04:55.750 --> 00:05:00.500
+so why does that work? It took me a little
+while to track this down, but
+
+00:05:00.500 --> 00:05:04.150
+the compiler in this case does a little
+trick
+
+00:05:04.150 --> 00:05:08.240
+on your behalf. What it does, is
+actually inserts
+
+00:05:08.240 --> 00:05:11.900
+a reference to this and remember that this
+
+00:05:11.900 --> 00:05:14.919
+refers to the object of the surrounding
+scope,
+
+00:05:14.919 --> 00:05:18.260
+in this case the DataProcessor object and
+
+00:05:18.260 --> 00:05:22.570
+this is effectively final. Its value is set
+once it's not modified.
+
+00:05:22.570 --> 00:05:27.530
+We can use the reference to this as
+an effectively final variable
+
+00:05:27.530 --> 00:05:30.890
+and then reference currentValue through
+
+00:05:30.890 --> 00:05:34.040
+this. We don't need to worry about
+
+00:05:34.040 --> 00:05:37.710
+modifying currentValue and it being a non
+final variable.
+
+00:05:37.710 --> 00:05:41.600
+Personally, I think this is a little bit
+dangerous because,
+
+00:05:41.600 --> 00:05:45.510
+as I said, if you have multi-threaded
+environment you could end up with a
+
+00:05:45.510 --> 00:05:46.700
+situation where you getting
+
+00:05:46.700 --> 00:05:50.970
+inconsistent data and by the compiler
+inserting this for you
+
+00:05:50.970 --> 00:05:54.220
+silently it doesn’t
+
+00:05:54.220 --> 00:05:58.100
+make it obvious what's actually happening.
+
+00:05:58.100 --> 00:06:01.790
+Like as I said, I had to dig quite deep to
+find out what was actually happening
+
+00:06:01.790 --> 00:06:02.360
+here,
+
+00:06:02.360 --> 00:06:05.370
+so be aware of this as a potential,
+
+00:06:05.370 --> 00:06:09.020
+in some ways a potentially useful
+feature, but also a potentially problematic
+
+00:06:09.020 --> 00:06:10.000
+feature
+
+00:06:10.000 --> 00:06:13.780
+when you’re using multiple threads.
+
+00:06:13.780 --> 00:06:16.780
+To summarize section six you can
+
+00:06:16.780 --> 00:06:20.360
+access variables in the surrounding
+scope of a Lambda
+
+00:06:20.360 --> 00:06:23.680
+so long as they are effectively final,
+
+00:06:23.680 --> 00:06:28.090
+meaning that they are final or
+they behave in exactly the same way
+
+00:06:28.090 --> 00:06:32.539
+as a final variable. If you use this
+
+00:06:32.539 --> 00:06:36.379
+with a Lambda, it refers to the object
+
+00:06:36.379 --> 00:06:39.740
+of the surrounding scope and, as I said,
+be aware
+
+00:06:39.740 --> 00:06:43.860
+that in situations like the one I showed
+you the compiler will insert a
+
+00:06:43.860 --> 00:06:48.949
+reference silently for you to enable
+you to reference a variable in the
+
+00:06:48.949 --> 00:06:49.460
+surrounding scope
+
+00:06:49.460 --> 00:06:52.729
+without having the problems of it being
+not
+
+00:06:52.729 --> 00:06:56.680
+effectively final. And that is the end
+
+00:06:56.680 --> 00:06:58.300
+of this section of the lesson.
+

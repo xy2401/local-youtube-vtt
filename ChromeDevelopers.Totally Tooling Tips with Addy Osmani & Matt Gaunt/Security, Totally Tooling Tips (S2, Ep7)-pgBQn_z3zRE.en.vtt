@@ -1,0 +1,634 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:16.269
+[MUSIC PLAYING]
+
+00:00:18.750 --> 00:00:20.690
+ADDY: Security is a
+lot like car insurance.
+
+00:00:20.690 --> 00:00:22.232
+Most people don't
+want to pay for it.
+
+00:00:22.232 --> 00:00:23.231
+MATT: I agree with that.
+
+00:00:23.231 --> 00:00:24.730
+ADDY: Some people
+don't pay for it.
+
+00:00:24.730 --> 00:00:25.990
+MATT: So here's the thing.
+
+00:00:25.990 --> 00:00:28.320
+For me, I don't mind
+paying for car insurance
+
+00:00:28.320 --> 00:00:30.360
+because it means that
+if I destroy my car,
+
+00:00:30.360 --> 00:00:32.710
+or it gets stolen, you
+get your money back.
+
+00:00:32.710 --> 00:00:33.580
+And then it's fine.
+
+00:00:33.580 --> 00:00:35.011
+It's sort of an investment.
+
+00:00:35.011 --> 00:00:36.510
+The thing that I
+don't like about it
+
+00:00:36.510 --> 00:00:38.950
+is, I'm not going to read the
+massive 50-page long legal
+
+00:00:38.950 --> 00:00:40.950
+document they send you
+in the process of getting
+
+00:00:40.950 --> 00:00:43.580
+said car insurance.
+
+00:00:43.580 --> 00:00:47.260
+I'm fine with it happening, the
+payment going out to get it.
+
+00:00:47.260 --> 00:00:49.510
+It's everything around it.
+
+00:00:49.510 --> 00:00:51.167
+ADDY: I never read
+those agreements.
+
+00:00:51.167 --> 00:00:53.500
+I'm not even committed enough
+to read the iTunes license
+
+00:00:53.500 --> 00:00:54.620
+agreement.
+
+00:00:54.620 --> 00:00:57.130
+MATT: And yeah, that's
+basically exactly the same thing
+
+00:00:57.130 --> 00:00:58.560
+as I've done for my site.
+
+00:00:58.560 --> 00:01:01.720
+The whole point of SSL
+is to keep users secure.
+
+00:01:01.720 --> 00:01:04.519
+And Service Worker, it does
+actually make a lot of sense.
+
+00:01:04.519 --> 00:01:06.784
+Because you're going to
+have something controlling
+
+00:01:06.784 --> 00:01:07.950
+your page in the background.
+
+00:01:07.950 --> 00:01:09.160
+And if someone can
+get in the middle,
+
+00:01:09.160 --> 00:01:10.590
+and then swap out
+Service Worker,
+
+00:01:10.590 --> 00:01:14.700
+like addyosmani.com/blog
+could go straight to my site,
+
+00:01:14.700 --> 00:01:15.520
+my blog posts.
+
+00:01:15.520 --> 00:01:18.470
+ADDY: What?
+
+00:01:18.470 --> 00:01:20.450
+MATT: I could steal
+all your ad revenue.
+
+00:01:20.450 --> 00:01:21.949
+ADDY: If anything,
+it would probably
+
+00:01:21.949 --> 00:01:23.910
+be an improvement
+in content quality.
+
+00:01:23.910 --> 00:01:25.370
+MATT: Not true.
+
+00:01:25.370 --> 00:01:28.030
+But I can understand
+the main point of it.
+
+00:01:28.030 --> 00:01:30.250
+The problem I have
+with all of this
+
+00:01:30.250 --> 00:01:32.380
+is it's really hard
+to learn about SSL.
+
+00:01:32.380 --> 00:01:35.010
+A, there's tons of old content.
+
+00:01:35.010 --> 00:01:36.910
+This is how you set
+up SSL on your site.
+
+00:01:36.910 --> 00:01:39.020
+It's useful, but it's old.
+
+00:01:39.020 --> 00:01:42.070
+And then secondly, there were
+so many different factors
+
+00:01:42.070 --> 00:01:42.960
+to the whole thing.
+
+00:01:42.960 --> 00:01:45.760
+ADDY: So when I was trying to
+set this stuff up on my site--
+
+00:01:45.760 --> 00:01:48.950
+and I don't even default to
+HTTPS just yet, because there's
+
+00:01:48.950 --> 00:01:52.320
+still-- I still don't know how
+to handle all the mixed content
+
+00:01:52.320 --> 00:01:54.520
+security warnings I'm getting
+from the third parties
+
+00:01:54.520 --> 00:01:57.100
+I'm loading, like widgets,
+and share buttons, and from.
+
+00:01:57.100 --> 00:01:57.720
+MATT: Yeah.
+
+00:01:57.720 --> 00:01:59.010
+ADDY: And it's like all
+the tooling around this
+
+00:01:59.010 --> 00:02:00.690
+is sort of a minefield to me.
+
+00:02:00.690 --> 00:02:03.510
+I find it hard to
+navigate those waters.
+
+00:02:03.510 --> 00:02:06.850
+MATT: So I've literally--
+I've done numerous steps
+
+00:02:06.850 --> 00:02:10.970
+into how I got it on my site,
+and even then, I've got issues.
+
+00:02:10.970 --> 00:02:13.700
+So the first one was SSL labs.
+
+00:02:13.700 --> 00:02:14.990
+You just bung in your URL.
+
+00:02:14.990 --> 00:02:16.830
+And it will look at
+your site and figure out
+
+00:02:16.830 --> 00:02:20.250
+whether HTTP redirects
+to HTTPS, and just
+
+00:02:20.250 --> 00:02:22.950
+the configuration of
+HTTPS on your site.
+
+00:02:22.950 --> 00:02:27.880
+So if I bung in gauntface.com in
+SSL labs, I was, at one point,
+
+00:02:27.880 --> 00:02:30.930
+getting a glorious A-plus,
+which I was very happy about,
+
+00:02:30.930 --> 00:02:33.690
+and now I've been
+downgraded to a C.
+
+00:02:33.690 --> 00:02:36.210
+ADDY: Have you changed
+your site a lot?
+
+00:02:36.210 --> 00:02:36.710
+MATT: No.
+
+00:02:36.710 --> 00:02:37.210
+So--
+
+00:02:37.210 --> 00:02:38.350
+ADDY: Is there a way of--
+
+00:02:38.350 --> 00:02:40.750
+MATT: So what's
+happened is there
+
+00:02:40.750 --> 00:02:43.150
+was the POODLE vulnerability.
+
+00:02:43.150 --> 00:02:47.120
+And I think that's
+basically all through SSL3.
+
+00:02:47.120 --> 00:02:49.430
+And I've still
+got SSL3 support--
+
+00:02:49.430 --> 00:02:51.059
+ADDY: Oh, I see.
+
+00:02:51.059 --> 00:02:51.850
+MATT: --on my site.
+
+00:02:51.850 --> 00:02:54.183
+So even though everything is
+actually doing really well,
+
+00:02:54.183 --> 00:02:58.260
+like 190's for the scores
+on each top-level topic,
+
+00:02:58.260 --> 00:03:02.300
+they've kept me to a C
+because of SSL3 and POODLE.
+
+00:03:02.300 --> 00:03:04.760
+ADDY: I guess it's cool that
+they're keeping it up to date.
+
+00:03:04.760 --> 00:03:06.040
+MATT: Yeah, so this
+is the nice thing,
+
+00:03:06.040 --> 00:03:07.760
+is you can keep on regularly
+running through this,
+
+00:03:07.760 --> 00:03:10.080
+and will keep it up to
+date and track everything.
+
+00:03:10.080 --> 00:03:13.280
+The really nice thing with
+this is it's really good.
+
+00:03:13.280 --> 00:03:16.190
+It's a ton of information,
+possibly too much.
+
+00:03:16.190 --> 00:03:19.790
+But at the same time, things
+like protocols, it's saying,
+
+00:03:19.790 --> 00:03:20.750
+do you support SSL2?
+
+00:03:20.750 --> 00:03:21.250
+No.
+
+00:03:21.250 --> 00:03:22.190
+Do you support SSL3?
+
+00:03:22.190 --> 00:03:22.689
+Yes.
+
+00:03:22.689 --> 00:03:23.571
+It's insecure.
+
+00:03:23.571 --> 00:03:25.320
+These are the cipher
+suites that you have.
+
+00:03:25.320 --> 00:03:27.010
+And it literally-- if there's
+one particular thing that
+
+00:03:27.010 --> 00:03:29.540
+is, like, this is actually
+really a bad practice,
+
+00:03:29.540 --> 00:03:30.330
+it highlights it.
+
+00:03:30.330 --> 00:03:32.790
+And then you can at least
+go and Google and find out
+
+00:03:32.790 --> 00:03:33.962
+the problem.
+
+00:03:33.962 --> 00:03:35.670
+So this was the first
+thing that I found.
+
+00:03:35.670 --> 00:03:37.461
+I was like, sweet,
+these are all the places
+
+00:03:37.461 --> 00:03:42.220
+that I suck, and overall I'm
+doing bad, well, or whatever.
+
+00:03:42.220 --> 00:03:46.970
+The best thing I found after
+this was the Mozilla SSL
+
+00:03:46.970 --> 00:03:48.620
+configuration generator.
+
+00:03:48.620 --> 00:03:50.907
+And this thing is a godsend.
+
+00:03:50.907 --> 00:03:52.490
+ADDY: Does it do all
+the work for you?
+
+00:03:52.490 --> 00:03:53.600
+MATT: Yes, so good.
+
+00:03:53.600 --> 00:03:55.760
+So basically, one of the
+issues that I had was,
+
+00:03:55.760 --> 00:03:59.230
+how do I know what a
+good SSL cipher suite is?
+
+00:03:59.230 --> 00:04:01.147
+And SSL labs tells
+you good or bad.
+
+00:04:01.147 --> 00:04:02.730
+The problem is, it
+doesn't necessarily
+
+00:04:02.730 --> 00:04:06.080
+tell you the right names to
+put in your configuration file.
+
+00:04:06.080 --> 00:04:08.220
+Enter a Mozilla SSL
+Config Generator.
+
+00:04:08.220 --> 00:04:11.100
+So you can select,
+like, Apache or Nginx.
+
+00:04:11.100 --> 00:04:13.310
+You can select what sort of
+browser support you want.
+
+00:04:13.310 --> 00:04:14.970
+So you can be
+really harsh and be
+
+00:04:14.970 --> 00:04:17.959
+like, if there's an old browser
+that requires xyz to work,
+
+00:04:17.959 --> 00:04:20.019
+you can just basically
+say, sorry, I'm
+
+00:04:20.019 --> 00:04:22.330
+not going to support
+that for security reasons
+
+00:04:22.330 --> 00:04:23.770
+or whatever else.
+
+00:04:23.770 --> 00:04:26.630
+And it literally just
+gives you the config file,
+
+00:04:26.630 --> 00:04:27.665
+everything just set up.
+
+00:04:27.665 --> 00:04:28.540
+ADDY: That's awesome.
+
+00:04:28.540 --> 00:04:31.040
+MATT: So I'm looking at it,
+and already the SSL protocols
+
+00:04:31.040 --> 00:04:32.980
+doesn't include
+SSL3, which is why
+
+00:04:32.980 --> 00:04:34.340
+I'm now susceptible to POODLE.
+
+00:04:34.340 --> 00:04:37.190
+So all I have to do is
+literally copy this back over,
+
+00:04:37.190 --> 00:04:39.060
+and I'm good to go.
+
+00:04:39.060 --> 00:04:42.670
+Then, very recently,
+the past week or so,
+
+00:04:42.670 --> 00:04:45.682
+someone introduced me to
+httpsecurityreport.com.
+
+00:04:45.682 --> 00:04:48.010
+ADDY:
+httpsecurityreport.com, OK.
+
+00:04:48.010 --> 00:04:48.900
+What does it do?
+
+00:04:48.900 --> 00:04:51.607
+MATT: So, it literally is
+very similar to SSL labs.
+
+00:04:51.607 --> 00:04:53.190
+It's kind of nice
+because it gives you
+
+00:04:53.190 --> 00:04:55.230
+an even higher level
+of overview of where
+
+00:04:55.230 --> 00:04:57.257
+you're doing well on your site.
+
+00:04:57.257 --> 00:04:59.090
+But this looks at
+slightly different things.
+
+00:04:59.090 --> 00:05:01.950
+Like, I've never considered
+the content security policy
+
+00:05:01.950 --> 00:05:04.055
+of my site, which
+is things like,
+
+00:05:04.055 --> 00:05:05.930
+if you're pulling in a
+third-party resources,
+
+00:05:05.930 --> 00:05:08.720
+like Google Fonts,
+you can basically say,
+
+00:05:08.720 --> 00:05:11.850
+if I have a CSP policy which
+excludes that, it won't load,
+
+00:05:11.850 --> 00:05:14.240
+even though I called
+it in on my web page.
+
+00:05:14.240 --> 00:05:15.760
+So with your
+mixed-content thing,
+
+00:05:15.760 --> 00:05:18.500
+you could sit there and say,
+CSP is just addyosmani.com.
+
+00:05:18.500 --> 00:05:20.610
+That would all
+just get shut down.
+
+00:05:20.610 --> 00:05:24.300
+Which is not what you want,
+but it's an interesting point
+
+00:05:24.300 --> 00:05:26.050
+that I've never even
+considered as a thing
+
+00:05:26.050 --> 00:05:27.890
+until I used this tool.
+
+00:05:27.890 --> 00:05:29.680
+ADDY: This tool is neat.
+
+00:05:29.680 --> 00:05:33.810
+The current default
+non-HTTPS version of my site
+
+00:05:33.810 --> 00:05:38.350
+is getting a very,
+very respectable 17 out
+
+00:05:38.350 --> 00:05:39.570
+of 100 at the moment.
+
+00:05:39.570 --> 00:05:40.790
+MATT: That's good.
+
+00:05:40.790 --> 00:05:42.270
+ADDY: It's great.
+
+00:05:42.270 --> 00:05:44.900
+MATT: I'm guessing 17 out
+of 100, rather than 20,
+
+00:05:44.900 --> 00:05:47.320
+just saying.
+
+00:05:47.320 --> 00:05:48.680
+ADDY: Let's go with that.
+
+00:05:48.680 --> 00:05:53.080
+And the HTTPS version
+is getting a solid 51.
+
+00:05:53.080 --> 00:05:54.000
+MATT: Nice.
+
+00:05:54.000 --> 00:05:55.460
+That's not too bad.
+
+00:05:55.460 --> 00:05:56.980
+I'm only on 62.
+
+00:05:56.980 --> 00:05:58.512
+So I've got some work to do.
+
+00:05:58.512 --> 00:05:59.970
+But the interesting
+thing with this
+
+00:05:59.970 --> 00:06:03.520
+is it actually picks up things
+like web framework information.
+
+00:06:03.520 --> 00:06:05.960
+And that's things like,
+oh, PHP is actually
+
+00:06:05.960 --> 00:06:07.410
+saying this is
+the version of PHP
+
+00:06:07.410 --> 00:06:11.140
+you support, or you're actually
+on version x of engine x.
+
+00:06:11.140 --> 00:06:13.580
+Which, again, I wouldn't
+have ever thought
+
+00:06:13.580 --> 00:06:15.700
+of looking into
+because in my head,
+
+00:06:15.700 --> 00:06:18.140
+I wouldn't expect those
+tools to be sharing
+
+00:06:18.140 --> 00:06:20.430
+that kind of information
+by default, let alone
+
+00:06:20.430 --> 00:06:23.520
+it be a security issue anyway.
+
+00:06:23.520 --> 00:06:26.622
+But those three things, I
+found immensely helpful.
+
+00:06:26.622 --> 00:06:28.580
+I'm using them basically
+to guide where I spend
+
+00:06:28.580 --> 00:06:30.220
+all my time and effort on work.
+
+00:06:30.220 --> 00:06:32.560
+ADDY: Sounds good.
+
+00:06:32.560 --> 00:06:35.010
+[MUSIC PLAYING]
+

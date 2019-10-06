@@ -1,0 +1,952 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.802
+[MUSIC PLAYING]
+
+00:00:04.542 --> 00:00:05.500
+Hey there, Polycasters.
+
+00:00:05.500 --> 00:00:06.120
+Rob, here.
+
+00:00:06.120 --> 00:00:08.830
+Today on the show we're going to
+be continuing our series on Web
+
+00:00:08.830 --> 00:00:10.870
+Component Tester by
+looking at Travis
+
+00:00:10.870 --> 00:00:14.180
+CI, and continuous
+integration with Sauce Labs.
+
+00:00:14.180 --> 00:00:16.400
+A lot of fancy buzz words
+there, but basically,
+
+00:00:16.400 --> 00:00:18.540
+what I'm describing
+is testing your site
+
+00:00:18.540 --> 00:00:20.770
+on multiple browsers
+in the cloud.
+
+00:00:20.770 --> 00:00:23.110
+So, to do that, first thing
+that we're going to do
+
+00:00:23.110 --> 00:00:25.300
+is set up Travis CI.
+
+00:00:25.300 --> 00:00:27.690
+Now, if you've never
+heard of Travis CI before,
+
+00:00:27.690 --> 00:00:29.649
+you may have actually
+seen it and not known it.
+
+00:00:29.649 --> 00:00:31.106
+Oftentimes, you go
+to GitHub repos,
+
+00:00:31.106 --> 00:00:32.770
+and they have these
+little green badges
+
+00:00:32.770 --> 00:00:35.370
+that say "bill passing,"
+that's Travis CI.
+
+00:00:35.370 --> 00:00:38.260
+It's a little service that
+lets you run unit tests up
+
+00:00:38.260 --> 00:00:39.530
+in the cloud.
+
+00:00:39.530 --> 00:00:41.450
+Now, one of the cool
+things about Travis
+
+00:00:41.450 --> 00:00:43.520
+is that it can sort of
+work with other services,
+
+00:00:43.520 --> 00:00:46.020
+and one of those services that
+we're going to couple it with
+
+00:00:46.020 --> 00:00:47.810
+is called Sauce Labs.
+
+00:00:47.810 --> 00:00:50.090
+Now, Sauce Labs'
+whole thing is letting
+
+00:00:50.090 --> 00:00:52.620
+you run your test
+against multiple browsers
+
+00:00:52.620 --> 00:00:53.870
+on different VMs.
+
+00:00:53.870 --> 00:00:57.480
+So, imagine being able to test
+Windows, Internet Explorer
+
+00:00:57.480 --> 00:01:02.260
+10, and also iOS, and
+also old Android browser,
+
+00:01:02.260 --> 00:01:03.620
+all using the same service.
+
+00:01:03.620 --> 00:01:04.995
+That's what Sauce
+Labs gives you.
+
+00:01:04.995 --> 00:01:07.495
+So, today, we're going to be
+kind of combining both of those
+
+00:01:07.495 --> 00:01:09.260
+to verify that our
+components work really
+
+00:01:09.260 --> 00:01:10.547
+well on different platforms.
+
+00:01:10.547 --> 00:01:12.130
+Now, the first thing
+we're going to do
+
+00:01:12.130 --> 00:01:14.460
+is set up our Travis account.
+
+00:01:14.460 --> 00:01:16.769
+So, here, I've already
+gone and registered
+
+00:01:16.769 --> 00:01:17.810
+and everything like that.
+
+00:01:17.810 --> 00:01:19.680
+And what I want to
+do is go over to up
+
+00:01:19.680 --> 00:01:21.406
+on the top right,
+where it says Accounts.
+
+00:01:21.406 --> 00:01:23.530
+Click on that, that'll take
+you to this page, here.
+
+00:01:23.530 --> 00:01:25.500
+And there's some
+steps that it outlines
+
+00:01:25.500 --> 00:01:28.650
+for setting up your account
+to work with Travis.
+
+00:01:28.650 --> 00:01:31.470
+The first is going and finding
+your repo in there, and just,
+
+00:01:31.470 --> 00:01:33.750
+like, flipping that little
+switch to enable your repo.
+
+00:01:33.750 --> 00:01:35.250
+Then, you're going
+to need to set up
+
+00:01:35.250 --> 00:01:37.640
+a little travis.yml
+configuration file.
+
+00:01:37.640 --> 00:01:40.140
+And that's basically just to
+give Travis instructions, like,
+
+00:01:40.140 --> 00:01:43.750
+hey, what do I do when
+you push new code, right?
+
+00:01:43.750 --> 00:01:45.130
+The last thing
+you're going to do
+
+00:01:45.130 --> 00:01:48.570
+is just trigger a bill by
+doing a regular old git push.
+
+00:01:48.570 --> 00:01:51.450
+So, for these tests, we're going
+to be using a set of elements
+
+00:01:51.450 --> 00:01:53.700
+that I've already created,
+called chart elements.
+
+00:01:53.700 --> 00:01:56.960
+So, let's go find
+those in the list.
+
+00:01:56.960 --> 00:01:58.645
+[MOUTH NOUSE]
+
+00:01:58.645 --> 00:01:59.270
+There they are.
+
+00:01:59.270 --> 00:02:02.090
+We're going to flip
+this switch right here.
+
+00:02:02.090 --> 00:02:03.540
+And that is basically it.
+
+00:02:03.540 --> 00:02:05.930
+Now we've linked Travis
+to this GitHub repo.
+
+00:02:05.930 --> 00:02:07.620
+So when I'm pushing
+new code, it's
+
+00:02:07.620 --> 00:02:09.699
+going to-- if there's a
+configuration file-- tell
+
+00:02:09.699 --> 00:02:11.280
+Travis to do a
+bunch of cool stuff.
+
+00:02:11.280 --> 00:02:13.613
+And the next thing I want to
+do is go over to Sauce Labs
+
+00:02:13.613 --> 00:02:15.290
+and create my Sauce account.
+
+00:02:15.290 --> 00:02:16.120
+Saucy.
+
+00:02:16.120 --> 00:02:19.631
+Sauce has a section on their
+website called Open Sauce.
+
+00:02:19.631 --> 00:02:21.880
+And basically, what they do
+is they give free accounts
+
+00:02:21.880 --> 00:02:23.713
+to folks who are doing
+open source software,
+
+00:02:23.713 --> 00:02:25.614
+which is maybe
+you, in this case.
+
+00:02:25.614 --> 00:02:27.780
+I'll include a link to this
+down in the description,
+
+00:02:27.780 --> 00:02:29.446
+so you don't have to
+hunt around for it.
+
+00:02:29.446 --> 00:02:32.590
+You go to that page, and if
+you scroll down to the bottom
+
+00:02:32.590 --> 00:02:35.300
+there, you're going
+to see a little button
+
+00:02:35.300 --> 00:02:36.397
+for creating your account.
+
+00:02:36.397 --> 00:02:36.980
+Click on that.
+
+00:02:36.980 --> 00:02:39.550
+It'll take you through a pretty
+typical flow for setting up
+
+00:02:39.550 --> 00:02:41.480
+your own Sauce account.
+
+00:02:41.480 --> 00:02:44.490
+And once you're done, it's going
+to take you to a dashboard that
+
+00:02:44.490 --> 00:02:45.900
+looks kind of like this.
+
+00:02:45.900 --> 00:02:47.570
+Now, the really important
+thing in this dashboard,
+
+00:02:47.570 --> 00:02:48.944
+is down there in
+the bottom left,
+
+00:02:48.944 --> 00:02:51.155
+you've got this little
+access key, right?
+
+00:02:51.155 --> 00:02:53.030
+So, I'm going to blur
+that out in this video,
+
+00:02:53.030 --> 00:02:56.020
+so you can't see mine, but
+yours will not be blurred.
+
+00:02:56.020 --> 00:02:58.044
+Get that access key, save
+it to your clipboard,
+
+00:02:58.044 --> 00:02:59.960
+because we're going to
+use that in just a sec.
+
+00:02:59.960 --> 00:03:01.334
+The next thing
+that we want to do
+
+00:03:01.334 --> 00:03:03.450
+is figure out what browsers
+do we want to test.
+
+00:03:03.450 --> 00:03:03.950
+So.
+
+00:03:03.950 --> 00:03:05.658
+If we go to the Sauce
+Labs wiki, and I'll
+
+00:03:05.658 --> 00:03:08.000
+include a link to that in
+the description as well.
+
+00:03:08.000 --> 00:03:10.861
+You can see that there's a whole
+host of different browsers,
+
+00:03:10.861 --> 00:03:12.860
+different version numbers,
+different platforms--
+
+00:03:12.860 --> 00:03:15.700
+right-- all of these are
+available for us to test upon.
+
+00:03:15.700 --> 00:03:19.120
+So, we could test Android, we
+could test Chrome or Firefox,
+
+00:03:19.120 --> 00:03:21.590
+we could test on
+Windows or Vista or Mac
+
+00:03:21.590 --> 00:03:22.590
+or what have you, right?
+
+00:03:22.590 --> 00:03:23.500
+All these are available.
+
+00:03:23.500 --> 00:03:26.124
+So I'm just going to go through
+and kind of pick a few of these
+
+00:03:26.124 --> 00:03:28.240
+that we can use in
+our application.
+
+00:03:28.240 --> 00:03:31.370
+Next, we'll go to the Web
+Component Tester website,
+
+00:03:31.370 --> 00:03:33.390
+and we'll look at the
+Read Me file, which has
+
+00:03:33.390 --> 00:03:35.840
+a little section on plugins.
+
+00:03:35.840 --> 00:03:39.990
+Now, Web Component Tester
+ships with a Sauce Labs plugin,
+
+00:03:39.990 --> 00:03:43.945
+so we can just copy this little
+block of JavaScript right here,
+
+00:03:43.945 --> 00:03:45.770
+go over to our text
+editor, paste that
+
+00:03:45.770 --> 00:03:53.240
+in, in a web components conf
+JSON file, so wct.conf.Json,
+
+00:03:53.240 --> 00:03:54.500
+right.
+
+00:03:54.500 --> 00:03:58.080
+So, we're going to do plugins,
+Sauce browsers, and inside
+
+00:03:58.080 --> 00:04:00.334
+of browsers, I'm just
+going to go ahead and chuck
+
+00:04:00.334 --> 00:04:01.750
+in a whole bunch
+of these browsers
+
+00:04:01.750 --> 00:04:03.940
+that I grab from
+the Sauce Labs wiki.
+
+00:04:03.940 --> 00:04:06.032
+So, I've got Microsoft
+Edge on Windows 10--
+
+00:04:06.032 --> 00:04:08.240
+there's no version number
+because that's an evergreen
+
+00:04:08.240 --> 00:04:09.800
+browser-- but just
+below that, we've
+
+00:04:09.800 --> 00:04:13.385
+got Internet Explorer running
+version 11 on Windows 8.1.
+
+00:04:13.385 --> 00:04:15.410
+And it's really awesome
+that you have just all
+
+00:04:15.410 --> 00:04:17.500
+of these different
+platforms available to you.
+
+00:04:17.500 --> 00:04:20.089
+If you're a Windows user, maybe
+don't have access to a Mac,
+
+00:04:20.089 --> 00:04:23.500
+then we can test on Safari on
+different versions of OS X,
+
+00:04:23.500 --> 00:04:25.781
+right, very cool stuff there.
+
+00:04:25.781 --> 00:04:27.280
+Once I've got that
+squared away, I'm
+
+00:04:27.280 --> 00:04:30.980
+going to go back to
+the Polymer/tools repo.
+
+00:04:30.980 --> 00:04:32.851
+Inside of here, there's
+a sample Travis file
+
+00:04:32.851 --> 00:04:34.350
+and a bunch of steps
+that'll outline
+
+00:04:34.350 --> 00:04:38.190
+how we get things working
+with Travis and Sauce Labs.
+
+00:04:38.190 --> 00:04:41.720
+So, going down here, there's
+a list of the different Travis
+
+00:04:41.720 --> 00:04:42.850
+commands that you can do.
+
+00:04:42.850 --> 00:04:44.558
+We've actually done
+all of these already,
+
+00:04:44.558 --> 00:04:46.750
+but you have them here
+again for reference.
+
+00:04:46.750 --> 00:04:48.320
+And then we're going to go down
+to the section that says Web
+
+00:04:48.320 --> 00:04:49.870
+Component Tester with Sauce.
+
+00:04:49.870 --> 00:04:50.570
+Right?
+
+00:04:50.570 --> 00:04:53.340
+So, there's a few items
+here that we need to tackle.
+
+00:04:53.340 --> 00:04:56.820
+The first is, we need to
+grab this sample Travis file.
+
+00:04:56.820 --> 00:05:00.560
+And then, we're going to need
+to install the Travis Ruby gem.
+
+00:05:00.560 --> 00:05:03.120
+And lastly, we're going to
+run these two commands here
+
+00:05:03.120 --> 00:05:06.230
+to encrypt our Sauce Labs info.
+
+00:05:06.230 --> 00:05:10.580
+So, we're going to go grab this
+Travis file, Travis with Sauce,
+
+00:05:10.580 --> 00:05:12.760
+and-- I'm just going
+to go to raw mode,
+
+00:05:12.760 --> 00:05:14.750
+hit enhance, enhance,
+enhance-- OK.
+
+00:05:14.750 --> 00:05:17.030
+And now it is nice
+and ginormous.
+
+00:05:17.030 --> 00:05:19.045
+I'll paste that
+into my text editor.
+
+00:05:19.045 --> 00:05:19.544
+Mmm.
+
+00:05:19.544 --> 00:05:20.430
+Boop.
+
+00:05:20.430 --> 00:05:23.180
+Now, this is a lot of codes.
+
+00:05:23.180 --> 00:05:24.055
+What's going on here?
+
+00:05:24.055 --> 00:05:25.721
+Let's walk through
+these piece by piece.
+
+00:05:25.721 --> 00:05:27.630
+Up at the top, the first
+thing that I'm doing
+
+00:05:27.630 --> 00:05:30.345
+is, I'm just telling Travis
+what environment to run in.
+
+00:05:30.345 --> 00:05:32.470
+Travis can run all sorts
+of different environments.
+
+00:05:32.470 --> 00:05:34.650
+Here, I'm just saying I
+want it to be node js.
+
+00:05:34.650 --> 00:05:36.880
+I want it to run the most
+stable version of node.
+
+00:05:36.880 --> 00:05:39.790
+And I don't want it to call
+sudo or do anything like that.
+
+00:05:39.790 --> 00:05:42.740
+Next, I'm telling
+Travis what browsers
+
+00:05:42.740 --> 00:05:45.030
+I want it to install locally.
+
+00:05:45.030 --> 00:05:47.880
+Now, you don't have to do this
+part-- this part is optional--
+
+00:05:47.880 --> 00:05:49.240
+but I just thought it would
+be kind of a cool thing
+
+00:05:49.240 --> 00:05:50.110
+to include.
+
+00:05:50.110 --> 00:05:52.754
+Travis itself has access
+to a couple browsers,
+
+00:05:52.754 --> 00:05:55.170
+if you want to try and test,
+like, Firefox or Chrome, just
+
+00:05:55.170 --> 00:05:56.240
+there locally.
+
+00:05:56.240 --> 00:05:58.120
+So, I'm actually putting
+in these commands.
+
+00:05:58.120 --> 00:06:01.144
+This will install those on
+Travis, so we have them.
+
+00:06:01.144 --> 00:06:03.060
+And then below that,
+there's this little block
+
+00:06:03.060 --> 00:06:05.210
+called before_scripts.
+
+00:06:05.210 --> 00:06:07.410
+So, this is all the
+codes that's going to run
+
+00:06:07.410 --> 00:06:09.244
+before I kick off my test.
+
+00:06:09.244 --> 00:06:11.160
+And this is-- basically,
+it's all the preamble
+
+00:06:11.160 --> 00:06:13.500
+to set up and prep the VM.
+
+00:06:13.500 --> 00:06:15.660
+So, I'm installing
+Web Component Tester.
+
+00:06:15.660 --> 00:06:17.200
+I'm installing bower.
+
+00:06:17.200 --> 00:06:20.490
+I'm exporting the path to
+the node modules binaries
+
+00:06:20.490 --> 00:06:22.150
+for Web Component Tester.
+
+00:06:22.150 --> 00:06:23.960
+And I'm also going
+and calling bower
+
+00:06:23.960 --> 00:06:27.016
+install to install
+all of my components.
+
+00:06:27.016 --> 00:06:28.640
+So, that is going to
+set everything up.
+
+00:06:28.640 --> 00:06:30.159
+Now the environment is primed.
+
+00:06:30.159 --> 00:06:31.700
+The last thing that
+we're going to do
+
+00:06:31.700 --> 00:06:35.290
+is call these two
+scripts down here.
+
+00:06:35.290 --> 00:06:36.760
+And you might be
+looking at these,
+
+00:06:36.760 --> 00:06:40.450
+being like, whoa, I have no
+idea what any of that does.
+
+00:06:40.450 --> 00:06:42.290
+Let me decipher it a little bit.
+
+00:06:42.290 --> 00:06:46.200
+That first line that says
+xvfb-run wct, that basically
+
+00:06:46.200 --> 00:06:49.560
+says, hey, on Travis,
+just here locally,
+
+00:06:49.560 --> 00:06:51.120
+I want to run Web
+Component Tester,
+
+00:06:51.120 --> 00:06:53.578
+and that's actually going to
+test those two browsers that I
+
+00:06:53.578 --> 00:06:56.060
+installed: local Firefox
+and local Chrome.
+
+00:06:56.060 --> 00:06:58.700
+The line after that is
+going to check to see
+
+00:06:58.700 --> 00:07:00.410
+if this was a pull request.
+
+00:07:00.410 --> 00:07:03.460
+If it was not, if we just,
+like, pushed some code to GitHub
+
+00:07:03.460 --> 00:07:04.950
+or something like
+that, then it's
+
+00:07:04.950 --> 00:07:06.950
+going to run our
+test in Sauce Labs,
+
+00:07:06.950 --> 00:07:08.770
+using that whole
+huge list of browsers
+
+00:07:08.770 --> 00:07:10.540
+that I wrote out before.
+
+00:07:10.540 --> 00:07:13.754
+Now, to make this work
+exactly as we specced it out,
+
+00:07:13.754 --> 00:07:16.170
+I'm going to need to add a
+couple flags to these commands.
+
+00:07:16.170 --> 00:07:19.230
+This first line here, I'm going
+to add the skip-plugin sauce
+
+00:07:19.230 --> 00:07:21.200
+command, and the
+second line below, I'll
+
+00:07:21.200 --> 00:07:23.730
+add the skip-plugin
+local command.
+
+00:07:23.730 --> 00:07:26.580
+Basically, what that means is,
+when we're testing in Travis,
+
+00:07:26.580 --> 00:07:28.500
+we only want to use
+the local browsers.
+
+00:07:28.500 --> 00:07:30.000
+When we're testing
+in Sauce Labs,
+
+00:07:30.000 --> 00:07:33.260
+we only want to use that list of
+browsers that we defined there.
+
+00:07:33.260 --> 00:07:36.767
+Everything is square, let's now
+go and set up our Sauce keys,
+
+00:07:36.767 --> 00:07:39.350
+and this is going to lead us to,
+sort of, secure communication
+
+00:07:39.350 --> 00:07:41.440
+back and forth between
+Travis and Sauce Labs.
+
+00:07:41.440 --> 00:07:44.250
+I've already gone ahead and
+installed the Travis gem,
+
+00:07:44.250 --> 00:07:47.810
+and if you have not done that,
+you can run gem install Travis.
+
+00:07:47.810 --> 00:07:49.840
+And then call travis encrypt.
+
+00:07:49.840 --> 00:07:52.640
+You're passing your Sauce
+user name and the add flag,
+
+00:07:52.640 --> 00:07:55.860
+and then travis encrypt,
+passing your Sauce access key
+
+00:07:55.860 --> 00:07:58.031
+and do the add flag
+there, as well.
+
+00:07:58.031 --> 00:08:00.530
+And that's going to write all
+those values to your YML file.
+
+00:08:00.530 --> 00:08:02.946
+You can actually go back and
+verify that you've got these,
+
+00:08:02.946 --> 00:08:05.910
+like, big secure
+blocks of hashes.
+
+00:08:05.910 --> 00:08:07.610
+This means you're
+square, you're set up,
+
+00:08:07.610 --> 00:08:10.730
+and now you can actually start
+working with Travis and Sauce.
+
+00:08:10.730 --> 00:08:12.740
+Go back to our
+terminal, and we're
+
+00:08:12.740 --> 00:08:16.860
+going to run git add, git
+commit, and, lastly, git push.
+
+00:08:16.860 --> 00:08:19.500
+We're just going to-- pew--
+send all that code up there,
+
+00:08:19.500 --> 00:08:21.620
+and then we can
+switch over to Travis,
+
+00:08:21.620 --> 00:08:24.260
+and we can actually watch all
+of our tests running against all
+
+00:08:24.260 --> 00:08:25.510
+these different browsers live.
+
+00:08:25.510 --> 00:08:27.750
+So, you can just sit there
+and watch the output,
+
+00:08:27.750 --> 00:08:31.346
+as it runs Chrome 47, Firefox,
+et cetera, right-- those
+
+00:08:31.346 --> 00:08:34.330
+are those local browsers
+that Travis already has.
+
+00:08:34.330 --> 00:08:35.820
+And then if we let
+it keep running,
+
+00:08:35.820 --> 00:08:38.750
+now we'll start to
+see Windows 10, OS X,
+
+00:08:38.750 --> 00:08:40.700
+this is now it
+talking to Sauce Labs,
+
+00:08:40.700 --> 00:08:42.960
+kicking off all these other
+browsers in the cloud.
+
+00:08:42.960 --> 00:08:44.501
+And you can see that
+all of our tests
+
+00:08:44.501 --> 00:08:45.765
+are passing there, as well.
+
+00:08:45.765 --> 00:08:46.630
+Saucy.
+
+00:08:46.630 --> 00:08:49.750
+That is the basics of
+setting up Travis and Sauce.
+
+00:08:49.750 --> 00:08:51.897
+It is a great approach
+to take, if you
+
+00:08:51.897 --> 00:08:54.480
+want to go ahead and figure out
+if your components are working
+
+00:08:54.480 --> 00:08:56.207
+well in a cross-browser fashion.
+
+00:08:56.207 --> 00:08:58.540
+There's a lot more that I
+want to cover on these topics,
+
+00:08:58.540 --> 00:08:59.560
+so if there's things
+that maybe you're
+
+00:08:59.560 --> 00:09:02.190
+interested in seeing, please
+leave us a comment down below.
+
+00:09:02.190 --> 00:09:03.856
+Let us know what you
+want to talk about.
+
+00:09:03.856 --> 00:09:05.679
+Also, consider clicking
+that Like button
+
+00:09:05.679 --> 00:09:07.970
+or the Subscribe button, if
+you want to see more of me.
+
+00:09:07.970 --> 00:09:09.745
+If you want to ping
+us on a social network
+
+00:09:09.745 --> 00:09:11.120
+of your choosing,
+you can send us
+
+00:09:11.120 --> 00:09:13.561
+some questions at #AskPolymer.
+
+00:09:13.561 --> 00:09:15.310
+As always, thank you
+so much for watching,
+
+00:09:15.310 --> 00:09:17.255
+and I'll see you next time.
+
+00:09:17.255 --> 00:09:17.880
+[MUSIC PLAYING]
+
+00:09:17.880 --> 00:09:20.220
+[HANDS CLAPPING]
+
+00:09:20.220 --> 00:09:23.190
+I'm doing, like, a
+cheerleader hand dance.
+
+00:09:23.190 --> 00:09:26.240
+[SNAPPING]
+

@@ -1,0 +1,904 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.109 --> 00:00:01.650
+ROB DODSON: Hey,
+everyone, what's up?
+
+00:00:01.650 --> 00:00:04.070
+It's Rob Dodson here, from
+the Google Developer Relations
+
+00:00:04.070 --> 00:00:04.380
+Team.
+
+00:00:04.380 --> 00:00:05.880
+And in this video,
+we're going to be
+
+00:00:05.880 --> 00:00:07.610
+looking at the
+core-toolbar element.
+
+00:00:07.610 --> 00:00:09.300
+Now, I personally
+think core-toolbar
+
+00:00:09.300 --> 00:00:11.550
+is one of the coolest elements
+out there, because it's
+
+00:00:11.550 --> 00:00:13.400
+really handy, and it's
+very easy to master.
+
+00:00:13.400 --> 00:00:14.660
+So let's take a look.
+
+00:00:14.660 --> 00:00:17.370
+So the core-toolbar is
+a really basic container
+
+00:00:17.370 --> 00:00:19.660
+for laying out controls,
+like tabs or buttons.
+
+00:00:20.814 --> 00:00:22.980
+So what I'm doing here is
+I've got a toolbar element
+
+00:00:22.980 --> 00:00:24.420
+on my page.
+
+00:00:24.420 --> 00:00:27.289
+And I've just put a div
+inside of it that says My App.
+
+00:00:27.289 --> 00:00:28.830
+And that's going to
+give me the title
+
+00:00:28.830 --> 00:00:30.640
+of my application up
+here on the top left.
+
+00:00:31.860 --> 00:00:33.970
+Now, if I want, I can
+nest additional items
+
+00:00:33.970 --> 00:00:35.340
+inside of here.
+
+00:00:35.340 --> 00:00:37.400
+I could include a
+core-icon button.
+
+00:00:37.400 --> 00:00:39.089
+Maybe give it an icon menu.
+
+00:00:39.089 --> 00:00:41.130
+And that's going to give
+me this little hamburger
+
+00:00:41.130 --> 00:00:42.432
+menu that you see up here.
+
+00:00:42.432 --> 00:00:44.390
+But the other cool thing
+that's going to happen
+
+00:00:44.390 --> 00:00:46.450
+is the toolbar is
+smart enough to know
+
+00:00:46.450 --> 00:00:48.300
+to just scoot my
+title out of the way.
+
+00:00:48.300 --> 00:00:50.640
+It'll just move it over
+there horizontally,
+
+00:00:50.640 --> 00:00:53.140
+and I don't need to write any
+CSS to make this happen, which
+
+00:00:53.140 --> 00:00:53.860
+is pretty handy.
+
+00:00:55.090 --> 00:00:57.620
+Now, the toolbar also comes
+with some built-in stylings.
+
+00:00:57.620 --> 00:01:01.020
+For instance, if you give
+it a class of medium-tall,
+
+00:01:01.020 --> 00:01:03.465
+you can see that it gets
+just a little bit bigger.
+
+00:01:04.819 --> 00:01:07.950
+And if we give it a class of
+tall, it'll get even larger.
+
+00:01:09.180 --> 00:01:09.680
+All right.
+
+00:01:09.680 --> 00:01:11.180
+Now, there's some
+really cool things
+
+00:01:11.180 --> 00:01:13.580
+that we can do with these
+larger toolbars, so let's hop
+
+00:01:13.580 --> 00:01:14.375
+into our terminal.
+
+00:01:14.375 --> 00:01:16.592
+We'll actually install
+everything using Bower,
+
+00:01:16.592 --> 00:01:18.300
+and we'll use our Code
+Editor to show off
+
+00:01:18.300 --> 00:01:19.716
+some of these
+additional features.
+
+00:01:20.520 --> 00:01:22.020
+So over in our
+terminal, we're going
+
+00:01:22.020 --> 00:01:23.950
+to use Bower to install
+the core-toolbar.
+
+00:01:25.000 --> 00:01:26.470
+So I'll type bower install.
+
+00:01:26.470 --> 00:01:28.652
+I'll pass the Save flag,
+which is really important,
+
+00:01:28.652 --> 00:01:30.110
+so that way, these
+dependencies get
+
+00:01:30.110 --> 00:01:31.805
+written to in my
+Bower JSON file.
+
+00:01:31.805 --> 00:01:33.805
+Then, I'm going to ask
+for Polymer/core-toolbar.
+
+00:01:35.440 --> 00:01:37.772
+I'll ask for
+Polymer/paper-icon-button,
+
+00:01:37.772 --> 00:01:39.230
+which we haven't
+touched on before,
+
+00:01:39.230 --> 00:01:41.220
+but we'll be demonstrating
+in this video.
+
+00:01:41.220 --> 00:01:43.770
+I'm also going to ask for
+the paper-progress element,
+
+00:01:43.770 --> 00:01:46.104
+another cool element that
+we're going to show off today.
+
+00:01:46.104 --> 00:01:47.561
+So that's going to
+go out and fetch
+
+00:01:47.561 --> 00:01:49.010
+all these different
+dependencies.
+
+00:01:49.010 --> 00:01:52.210
+And once that's loaded, we can
+switch over to our Code Editor.
+
+00:01:52.210 --> 00:01:54.400
+So over here, we've
+got the basics
+
+00:01:54.400 --> 00:01:56.595
+of an application ready to go.
+
+00:01:56.595 --> 00:01:58.470
+And the first thing
+we're going to need to do
+
+00:01:58.470 --> 00:02:00.980
+is we're going to
+include the platform.
+
+00:02:00.980 --> 00:02:02.700
+And that way, we can
+use web components
+
+00:02:02.700 --> 00:02:04.990
+in browsers that lack support.
+
+00:02:04.990 --> 00:02:07.198
+So I'll say, bower_components
+/platforms/platform.js.
+
+00:02:09.800 --> 00:02:11.820
+Now that that's in
+place, I can go ahead
+
+00:02:11.820 --> 00:02:14.510
+and import the definition
+for our core-toolbar.
+
+00:02:14.510 --> 00:02:16.317
+So, I'll say
+bower_components/core-toobar,
+
+00:02:16.317 --> 00:02:17.400
+ask for core-toolbar.html.
+
+00:02:20.060 --> 00:02:22.310
+And then I can hop
+down to my body tag,
+
+00:02:22.310 --> 00:02:25.345
+and drop a core-toolbar element
+right there on the page.
+
+00:02:27.840 --> 00:02:30.580
+And inside, we'll just
+nest a little div,
+
+00:02:30.580 --> 00:02:32.955
+and we'll say My App for the
+title of our application.
+
+00:02:34.415 --> 00:02:35.790
+Now, some of you
+may have noticed
+
+00:02:35.790 --> 00:02:37.970
+this fullbleed
+attribute and wondered,
+
+00:02:37.970 --> 00:02:39.840
+what's this all about?
+
+00:02:39.840 --> 00:02:42.100
+Well, that's actually one
+of our layout attributes.
+
+00:02:42.100 --> 00:02:43.474
+And what it's
+going to do is it's
+
+00:02:43.474 --> 00:02:47.780
+going to make sure that the
+browser, that the body tag
+
+00:02:47.780 --> 00:02:50.670
+within it, doesn't have any
+white space around the outside.
+
+00:02:50.670 --> 00:02:52.480
+So our toolbar is
+going to go right up
+
+00:02:52.480 --> 00:02:54.880
+to the edge of the screen
+and look really nice.
+
+00:02:56.920 --> 00:02:59.720
+So refresh the page, and
+what we're going to see
+
+00:02:59.720 --> 00:03:01.000
+is our toolbar showing up.
+
+00:03:01.000 --> 00:03:01.890
+And it's going
+right up to the edge
+
+00:03:01.890 --> 00:03:03.610
+of the browser,
+which is really cool.
+
+00:03:03.610 --> 00:03:05.990
+And right now, it's kind
+of this drab grey color.
+
+00:03:05.990 --> 00:03:07.860
+It's not super
+exciting to look at.
+
+00:03:07.860 --> 00:03:10.710
+So we can change that by
+going back into our Editor.
+
+00:03:13.440 --> 00:03:16.170
+And we'll just drop
+in a style sheet.
+
+00:03:16.170 --> 00:03:19.630
+So I'm going to pop open
+the sidebar in Sublime,
+
+00:03:19.630 --> 00:03:20.740
+create a new file.
+
+00:03:22.024 --> 00:03:23.940
+And I'm just going to
+call this thing app.css.
+
+00:03:26.660 --> 00:03:30.090
+And over in app.css, I'll write
+a style for the core-toolbar.
+
+00:03:30.090 --> 00:03:31.800
+So I'll ask for a core-toolbar.
+
+00:03:31.800 --> 00:03:35.280
+Set the background color
+equal to-- actually,
+
+00:03:35.280 --> 00:03:36.280
+I've got one saved here.
+
+00:03:36.280 --> 00:03:37.371
+I'll just drop that in.
+
+00:03:37.371 --> 00:03:39.745
+And then we'll set the color
+equal to white for the text.
+
+00:03:40.924 --> 00:03:42.340
+And back in our
+index file, we got
+
+00:03:42.340 --> 00:03:44.006
+to make sure to include
+that style sheet
+
+00:03:44.006 --> 00:03:45.380
+so our styles actually show up.
+
+00:03:48.556 --> 00:03:50.180
+Now when we go and
+refresh the browser,
+
+00:03:50.180 --> 00:03:51.971
+we've got a slightly
+nicer looking toolbar.
+
+00:03:51.971 --> 00:03:54.494
+It's got kind of a cool color
+to it and some white text.
+
+00:03:54.494 --> 00:03:56.660
+But it's still missing
+controls, so you can't really
+
+00:03:56.660 --> 00:03:57.606
+do much with it.
+
+00:03:57.606 --> 00:03:58.480
+So let's change that.
+
+00:03:58.480 --> 00:04:00.560
+We'll go back to our Editor.
+
+00:04:00.560 --> 00:04:03.010
+And we're going to import
+some more definitions here.
+
+00:04:03.010 --> 00:04:04.509
+We're going to
+import the definition
+
+00:04:04.509 --> 00:04:07.435
+for that paper-icon-button
+that we installed earlier.
+
+00:04:07.435 --> 00:04:09.810
+Now we haven't really talked
+about the paper-icon-button.
+
+00:04:09.810 --> 00:04:11.740
+But we did show the
+core-icon-button
+
+00:04:11.740 --> 00:04:13.130
+in one of the previous videos.
+
+00:04:13.130 --> 00:04:14.880
+And you can think of
+the paper-icon-button
+
+00:04:14.880 --> 00:04:17.339
+as being basically the same
+as the core-icon-button,
+
+00:04:17.339 --> 00:04:20.290
+but it's just got a little
+bit more pizazz to it.
+
+00:04:20.290 --> 00:04:22.900
+So I'm also going to be
+sure to load the definition
+
+00:04:22.900 --> 00:04:24.780
+for the core-icons elements set.
+
+00:04:24.780 --> 00:04:26.761
+This will just give
+me the default icons
+
+00:04:26.761 --> 00:04:28.760
+that I can start working
+with, and dropping them
+
+00:04:28.760 --> 00:04:29.843
+into my paper-icon-button.
+
+00:04:31.850 --> 00:04:33.370
+And then down in
+my toolbar, I'll
+
+00:04:33.370 --> 00:04:34.620
+include the paper-icon-button.
+
+00:04:40.430 --> 00:04:42.730
+And I'll configure its icon
+attribute, and I'll say,
+
+00:04:42.730 --> 00:04:43.720
+I want a menu icon.
+
+00:04:45.800 --> 00:04:48.190
+So now when I
+refresh the page, I
+
+00:04:48.190 --> 00:04:50.200
+get this little hamburger
+menu over on the left.
+
+00:04:50.200 --> 00:04:53.739
+And when I click on it, you this
+the sort of splashy ink effect.
+
+00:04:53.739 --> 00:04:56.030
+That's the cool pizazz that
+I was talking about before.
+
+00:04:57.320 --> 00:04:59.970
+Now, I want another icon, so
+I'll just duplicate this line
+
+00:04:59.970 --> 00:05:01.710
+here, and I'll
+add a search icon.
+
+00:05:02.526 --> 00:05:04.650
+And we go back and refresh
+the page in our browser,
+
+00:05:04.650 --> 00:05:07.590
+now we've got this magnifying
+glass over here as well.
+
+00:05:07.590 --> 00:05:10.680
+But the problem is the layout
+is not exactly what I want.
+
+00:05:10.680 --> 00:05:13.370
+I kind of what the
+Search icon to appear
+
+00:05:13.370 --> 00:05:16.291
+like somewhere over here,
+over on the right-hand side
+
+00:05:16.291 --> 00:05:17.040
+of my application.
+
+00:05:18.300 --> 00:05:20.350
+So in our Editor,
+what I'm going to do
+
+00:05:20.350 --> 00:05:23.955
+is I'm just going to give
+the div a flex attribute.
+
+00:05:25.190 --> 00:05:26.990
+And because the toolbar
+is using flexbox
+
+00:05:26.990 --> 00:05:28.448
+to lay out its
+children, you'll see
+
+00:05:28.448 --> 00:05:31.009
+that now, our magnifying
+glass moves all the way over
+
+00:05:31.009 --> 00:05:32.550
+to the right-hand
+side of the screen.
+
+00:05:32.550 --> 00:05:34.450
+The title is kind of
+pushing it over there.
+
+00:05:35.469 --> 00:05:37.010
+Well, that's really
+cool, but there's
+
+00:05:37.010 --> 00:05:38.630
+a slight problem
+to this approach.
+
+00:05:38.630 --> 00:05:41.950
+If we open the DevTools, and
+we actually inspect the My App
+
+00:05:41.950 --> 00:05:44.480
+element, you can
+see that it sort
+
+00:05:44.480 --> 00:05:47.420
+of spans this entire distance.
+
+00:05:47.420 --> 00:05:51.060
+And if I made My App a clickable
+link or something like that,
+
+00:05:51.060 --> 00:05:54.200
+then this whole area in
+here would be clickable,
+
+00:05:54.200 --> 00:05:56.300
+and we don't really want that.
+
+00:05:56.300 --> 00:05:58.910
+So what we're going to do is
+instead of putting the flex
+
+00:05:58.910 --> 00:06:01.630
+attribute on My App, we'll
+just drop in a span tag,
+
+00:06:01.630 --> 00:06:03.410
+and we'll put the flex
+attribute on that.
+
+00:06:03.410 --> 00:06:05.243
+And this is kind of a
+little bit of a trick,
+
+00:06:05.243 --> 00:06:06.354
+but it's pretty handy.
+
+00:06:06.354 --> 00:06:07.770
+And now when we
+open the DevTools,
+
+00:06:07.770 --> 00:06:10.430
+you'll see that
+My App is only as
+
+00:06:10.430 --> 00:06:12.940
+big as the content inside of it.
+
+00:06:12.940 --> 00:06:15.960
+And that span tag is
+basically shimming the space
+
+00:06:15.960 --> 00:06:18.900
+between the title of our app
+and that magnifying glass.
+
+00:06:19.924 --> 00:06:22.340
+All right, so if you recall
+at the beginning of the video,
+
+00:06:22.340 --> 00:06:24.214
+I said that there's some
+really cool features
+
+00:06:24.214 --> 00:06:26.449
+that we get from working
+with larger toolbars.
+
+00:06:26.449 --> 00:06:27.990
+Now that our toolbars
+are showing up,
+
+00:06:27.990 --> 00:06:29.750
+we've got some controls
+inside of them,
+
+00:06:29.750 --> 00:06:31.610
+we're going to actually
+explore those awesome features.
+
+00:06:31.610 --> 00:06:32.420
+Let's check it out.
+
+00:06:34.339 --> 00:06:36.880
+So over in our Code Editor, the
+first thing we're going to do
+
+00:06:36.880 --> 00:06:39.370
+is we're going to add a tall
+class to our core-toolbar.
+
+00:06:40.572 --> 00:06:43.120
+And that's going to give us
+that much larger toolbar that we
+
+00:06:43.120 --> 00:06:45.070
+showed earlier in the slides.
+
+00:06:45.070 --> 00:06:47.210
+So save this and go
+and refresh the page.
+
+00:06:47.210 --> 00:06:49.480
+And now, we've got this
+much larger toolbar
+
+00:06:49.480 --> 00:06:50.790
+that we can work with.
+
+00:06:50.790 --> 00:06:52.050
+And now that we've
+got a bigger toolbar,
+
+00:06:52.050 --> 00:06:53.549
+the interesting
+thing that we can do
+
+00:06:53.549 --> 00:06:55.820
+is we can actually start
+pinning these child elements
+
+00:06:55.820 --> 00:06:58.880
+to different locations
+within the toolbar.
+
+00:06:58.880 --> 00:07:00.480
+So if you look at
+our Code Editor,
+
+00:07:00.480 --> 00:07:03.390
+I'm going to hop
+down to this div tag,
+
+00:07:03.390 --> 00:07:06.227
+and I'm just going to
+give it a class of bottom.
+
+00:07:06.227 --> 00:07:08.060
+And what that's going
+to do is it's actually
+
+00:07:08.060 --> 00:07:10.950
+going to jump My App down to
+the bottom of the toolbar.
+
+00:07:10.950 --> 00:07:12.380
+It's pretty nice.
+
+00:07:12.380 --> 00:07:14.130
+Now, there's a few
+other built-in classes.
+
+00:07:14.130 --> 00:07:16.230
+If I want, I can pop
+back into my editor,
+
+00:07:16.230 --> 00:07:18.620
+and bump it up to the
+middle of the toolbar.
+
+00:07:20.690 --> 00:07:23.320
+Save that and
+refresh the page, We
+
+00:07:23.320 --> 00:07:26.544
+can also indent the
+title if we want,
+
+00:07:26.544 --> 00:07:28.210
+just sort of scoot
+it over a little bit.
+
+00:07:30.302 --> 00:07:32.260
+Now, the other interesting
+thing that we can do
+
+00:07:32.260 --> 00:07:35.630
+is we can actually fit an
+item right to the bottom
+
+00:07:35.630 --> 00:07:38.542
+without any sort of margin
+or padding or anything.
+
+00:07:38.542 --> 00:07:40.750
+You can imagine loading
+something like a progress bar
+
+00:07:40.750 --> 00:07:41.260
+down there.
+
+00:07:41.260 --> 00:07:43.420
+And in fact, that's exactly
+what we're going to do.
+
+00:07:43.420 --> 00:07:46.250
+So hop back into my
+Code Editor, and I'm
+
+00:07:46.250 --> 00:07:49.410
+going to import the definition
+for that paper-progress element
+
+00:07:49.410 --> 00:07:50.470
+that we installed before.
+
+00:07:51.887 --> 00:07:54.470
+Now, paper-progress is basically
+just a really simple progress
+
+00:07:54.470 --> 00:07:54.970
+bar.
+
+00:07:54.970 --> 00:07:56.844
+I'm going to clean this
+up just a little bit,
+
+00:07:56.844 --> 00:07:58.500
+so the import looks a bit nicer.
+
+00:07:58.500 --> 00:08:00.610
+And then down here
+in my core-toolbar,
+
+00:08:00.610 --> 00:08:02.560
+I'll drop in the
+paper-progress element.
+
+00:08:07.000 --> 00:08:08.300
+I'll give it a class.
+
+00:08:08.300 --> 00:08:09.450
+We're going to use the
+bottom class, which
+
+00:08:09.450 --> 00:08:11.680
+you saw before to move it
+to the bottom of the screen.
+
+00:08:11.680 --> 00:08:12.760
+Then we'll give
+it another class.
+
+00:08:12.760 --> 00:08:14.190
+We'll add a fit
+class, and that's
+
+00:08:14.190 --> 00:08:16.705
+going to remove any
+margin or padding
+
+00:08:16.705 --> 00:08:17.705
+from the toolbar itself.
+
+00:08:18.780 --> 00:08:20.210
+We'll also give
+it a value of 30,
+
+00:08:20.210 --> 00:08:22.852
+so that you can see that it's
+kind of partially filled up.
+
+00:08:22.852 --> 00:08:24.310
+And now, when I
+refresh the screen,
+
+00:08:24.310 --> 00:08:27.200
+you'll see that I've got this
+sort of green toolbar here,
+
+00:08:27.200 --> 00:08:30.580
+and you've kind of got this gray
+area where it's not filled in.
+
+00:08:30.580 --> 00:08:32.860
+So that's one way that
+you could add a progress
+
+00:08:32.860 --> 00:08:34.276
+bar to your application.
+
+00:08:34.276 --> 00:08:36.400
+And you could imagine
+updating that value attribute
+
+00:08:36.400 --> 00:08:38.858
+using something like JavaScript,
+so you see this thing kind
+
+00:08:38.858 --> 00:08:40.809
+of animating and
+zipping along as content
+
+00:08:40.809 --> 00:08:42.250
+is loading into the page.
+
+00:08:42.250 --> 00:08:43.730
+So that about covers
+everything you
+
+00:08:43.730 --> 00:08:46.170
+need to know to work
+with the core-toolbar.
+
+00:08:46.170 --> 00:08:48.080
+It's not a very complex
+element, and that's
+
+00:08:48.080 --> 00:08:49.720
+kind of the beauty of it.
+
+00:08:49.720 --> 00:08:51.460
+Once you've mastered
+it, you can just
+
+00:08:51.460 --> 00:08:53.460
+reach for it out of your
+toolbox, the same way
+
+00:08:53.460 --> 00:08:57.134
+that you pull out
+div, paragraph, table.
+
+00:08:57.134 --> 00:08:58.800
+In the next video,
+I'm going to show you
+
+00:08:58.800 --> 00:09:00.520
+how you can incorporate
+the core-toolbar
+
+00:09:00.520 --> 00:09:02.425
+with some other
+scaffolding elements,
+
+00:09:02.425 --> 00:09:03.800
+and we're going
+to begin to build
+
+00:09:03.800 --> 00:09:06.930
+what look like the beginnings
+of mobile applications.
+
+00:09:06.930 --> 00:09:08.080
+So stay tuned for that.
+
+00:09:08.080 --> 00:09:09.890
+Hope to see you there.
+

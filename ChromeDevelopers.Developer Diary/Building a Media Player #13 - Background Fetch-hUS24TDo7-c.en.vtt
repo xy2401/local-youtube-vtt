@@ -1,0 +1,1077 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.120
+PAUL LEWIS: Hello again.
+
+00:00:01.120 --> 00:00:02.810
+Long time no see.
+
+00:00:02.810 --> 00:00:05.820
+It turns out that I've been
+doing other bits and pieces
+
+00:00:05.820 --> 00:00:08.310
+in between working
+on the media app.
+
+00:00:08.310 --> 00:00:10.610
+Small clue, Google
+I/O is coming up.
+
+00:00:10.610 --> 00:00:13.400
+So that's probably what it is.
+
+00:00:13.400 --> 00:00:17.230
+Anyway, what I wanted
+to do is at least
+
+00:00:17.230 --> 00:00:21.430
+talk about one feature that
+has been very experimental.
+
+00:00:21.430 --> 00:00:24.310
+Always fun to be on the
+cutting edge of stuff,
+
+00:00:24.310 --> 00:00:27.050
+and no different in this
+particular situation.
+
+00:00:27.050 --> 00:00:29.410
+I've been working
+very closely with one
+
+00:00:29.410 --> 00:00:32.500
+of the Chrome engineers,
+Peter Beverloo, and his team
+
+00:00:32.500 --> 00:00:36.550
+as well, to try and get some
+background fetch into the app.
+
+00:00:36.550 --> 00:00:38.170
+So what is Background fetch?
+
+00:00:38.170 --> 00:00:40.120
+Background fetch
+is, imagine you are
+
+00:00:40.120 --> 00:00:42.070
+doing a normal
+foreground fetch, where
+
+00:00:42.070 --> 00:00:46.090
+you call fetch in your code.
+
+00:00:46.090 --> 00:00:46.640
+That works.
+
+00:00:46.640 --> 00:00:49.140
+But if you close the tab or
+you go to a different URL
+
+00:00:49.140 --> 00:00:51.460
+or whatever, the fetch stops.
+
+00:00:51.460 --> 00:00:54.170
+That's how all the networking
+stuff normally works.
+
+00:00:54.170 --> 00:00:56.950
+Background fetch is
+different insofar as you
+
+00:00:56.950 --> 00:00:59.230
+trigger it from inside
+your service worker.
+
+00:00:59.230 --> 00:01:01.750
+It goes off, makes
+a load of requests
+
+00:01:01.750 --> 00:01:03.190
+that you ask it to make.
+
+00:01:03.190 --> 00:01:06.910
+And then you get an event that
+fires in your service worker
+
+00:01:06.910 --> 00:01:09.699
+to say, hey, that
+download is finished.
+
+00:01:09.699 --> 00:01:10.990
+What do you want to do with it?
+
+00:01:10.990 --> 00:01:12.698
+And you can do whatever
+you want with it.
+
+00:01:12.698 --> 00:01:14.020
+You can put them in the cache.
+
+00:01:14.020 --> 00:01:16.920
+You can put them in the
+response's IndexedDB.
+
+00:01:16.920 --> 00:01:18.760
+It's really up to
+you what you do.
+
+00:01:18.760 --> 00:01:22.264
+But that makes it a much more
+robust download experience.
+
+00:01:22.264 --> 00:01:24.430
+And especially for something
+like this, a media app,
+
+00:01:24.430 --> 00:01:27.340
+it's probably one of
+the perfect vehicles
+
+00:01:27.340 --> 00:01:29.770
+for trying background fetch
+out because, hey, we've
+
+00:01:29.770 --> 00:01:30.600
+got big videos.
+
+00:01:30.600 --> 00:01:33.220
+And what if you want to kind of
+go off and do something else?
+
+00:01:33.220 --> 00:01:35.260
+Well obviously it
+makes sense for you
+
+00:01:35.260 --> 00:01:38.750
+to kind of keep that download
+going in the background.
+
+00:01:38.750 --> 00:01:40.250
+So it's very early days.
+
+00:01:40.250 --> 00:01:43.844
+This kind of the very first
+implementation of background
+
+00:01:43.844 --> 00:01:45.010
+fetch that landed in Chrome.
+
+00:01:45.010 --> 00:01:48.520
+So I'm sure there's more to do.
+
+00:01:48.520 --> 00:01:50.570
+I know there's more to do.
+
+00:01:50.570 --> 00:01:53.980
+But I just wanted to at least
+show you around this code
+
+00:01:53.980 --> 00:01:57.490
+as it is today, just
+so you've seen it.
+
+00:01:57.490 --> 00:01:59.440
+All right, so let me
+show you what actually
+
+00:01:59.440 --> 00:02:00.689
+is different on the front end.
+
+00:02:00.689 --> 00:02:04.600
+So I have on the browser,
+or in the browser--
+
+00:02:04.600 --> 00:02:05.530
+on the browser.
+
+00:02:05.530 --> 00:02:12.010
+What is the correct thing,
+in, on, by, with, from?
+
+00:02:12.010 --> 00:02:16.280
+I don't know, one of those
+with the browser involved.
+
+00:02:16.280 --> 00:02:17.560
+I have been able--
+
+00:02:17.560 --> 00:02:19.420
+experimental web
+platform features
+
+00:02:19.420 --> 00:02:23.650
+in about flags, which you should
+do if you want to test this.
+
+00:02:23.650 --> 00:02:26.980
+And that means that we
+then get background fetch.
+
+00:02:26.980 --> 00:02:28.930
+Let me show you in the console.
+
+00:02:28.930 --> 00:02:31.300
+If I say BackgroundFetch--
+there you are.
+
+00:02:31.300 --> 00:02:32.560
+You see BackgroundFetchFetch.
+
+00:02:32.560 --> 00:02:34.300
+I love the naming of these.
+
+00:02:34.300 --> 00:02:37.480
+BackgroundFetchManager,
+that's a thing.
+
+00:02:37.480 --> 00:02:40.270
+That won't exist in
+window otherwise.
+
+00:02:40.270 --> 00:02:43.900
+So if you actually wanted to
+feature detect it, you'd say,
+
+00:02:43.900 --> 00:02:50.800
+you'd say BackgroundFetchManager
+in window, true.
+
+00:02:50.800 --> 00:02:54.730
+Or in Chrome stable or
+whatever, it would be false.
+
+00:02:54.730 --> 00:02:56.140
+So there you go.
+
+00:02:56.140 --> 00:03:00.370
+So the BackgroundFetchManager
+and the BackgroundFetch
+
+00:03:00.370 --> 00:03:03.430
+and all those other things
+are available in the window.
+
+00:03:03.430 --> 00:03:05.800
+They're also available
+in the service worker.
+
+00:03:05.800 --> 00:03:07.570
+So when I said
+before the service
+
+00:03:07.570 --> 00:03:09.070
+worker does the
+background download,
+
+00:03:09.070 --> 00:03:10.140
+it's only partly true.
+
+00:03:10.140 --> 00:03:12.500
+You can make the
+foreground do it.
+
+00:03:12.500 --> 00:03:13.330
+We'll get to that.
+
+00:03:13.330 --> 00:03:16.690
+Anyway, let me show you
+around the code a little bit.
+
+00:03:16.690 --> 00:03:19.690
+So if you've had a look
+at the code itself,
+
+00:03:19.690 --> 00:03:23.380
+you'll have seen there is
+an offline cache JavaScript
+
+00:03:23.380 --> 00:03:25.280
+file which has sort
+of grown over time.
+
+00:03:25.280 --> 00:03:29.290
+And I think it's generally
+true of this app now that--
+
+00:03:29.290 --> 00:03:31.624
+if you remember way
+back at the start
+
+00:03:31.624 --> 00:03:33.040
+I said I know
+nothing about media.
+
+00:03:33.040 --> 00:03:35.770
+And this has been a journey
+of exploration for me.
+
+00:03:35.770 --> 00:03:39.790
+Knowing now what I know, I
+think I would have structured
+
+00:03:39.790 --> 00:03:42.557
+the app a little differently.
+
+00:03:42.557 --> 00:03:44.140
+But that's the nature
+of these things.
+
+00:03:44.140 --> 00:03:45.973
+Sometimes you kind of
+get to the end and go,
+
+00:03:45.973 --> 00:03:47.346
+OK, I learned a lot.
+
+00:03:47.346 --> 00:03:48.220
+It's not that is bad.
+
+00:03:48.220 --> 00:03:51.490
+It's just that, I don't
+know, it just sort have
+
+00:03:51.490 --> 00:03:53.240
+grown organically over time.
+
+00:03:53.240 --> 00:03:57.150
+And I think I would love to kind
+of take a step back and go, OK,
+
+00:03:57.150 --> 00:03:59.289
+that's how these
+pieces would normally
+
+00:03:59.289 --> 00:04:01.330
+interact if all these
+features had been available
+
+00:04:01.330 --> 00:04:02.080
+at the start.
+
+00:04:02.080 --> 00:04:02.710
+There we go.
+
+00:04:02.710 --> 00:04:04.270
+Right, background fetch.
+
+00:04:04.270 --> 00:04:05.770
+So here's the thing here.
+
+00:04:05.770 --> 00:04:08.905
+I have some code that says if
+you support background fetch,
+
+00:04:08.905 --> 00:04:10.780
+which is pretty much
+what I just showed you--
+
+00:04:10.780 --> 00:04:13.770
+it's that BackgroundFetchManager
+in window--
+
+00:04:13.770 --> 00:04:16.149
+that would be true
+or it would be false.
+
+00:04:16.149 --> 00:04:19.899
+If it's true, then I do
+download in the background.
+
+00:04:19.899 --> 00:04:21.790
+Otherwise I fall back
+to what I had before,
+
+00:04:21.790 --> 00:04:24.750
+which, if you recall,
+is the download where
+
+00:04:24.750 --> 00:04:27.352
+we sort of see the pie
+chart and everything else.
+
+00:04:27.352 --> 00:04:29.560
+And it's a foreground fetch
+that happens in the page.
+
+00:04:29.560 --> 00:04:34.310
+If you close the page,
+nothing I can do for you.
+
+00:04:34.310 --> 00:04:37.330
+So _downloadBackground,
+what happens in there?
+
+00:04:37.330 --> 00:04:40.180
+Well, what I do is I--
+
+00:04:40.180 --> 00:04:42.790
+by this point, when I
+call _downloadBackground,
+
+00:04:42.790 --> 00:04:46.030
+I know which files I need,
+which is like the video file,
+
+00:04:46.030 --> 00:04:52.000
+the artwork, all the stuff that
+I would be fetching to make
+
+00:04:52.000 --> 00:04:54.500
+sure this thing is available,
+like the HTML as well.
+
+00:04:54.500 --> 00:04:57.927
+So I wait until the
+service worker is ready.
+
+00:04:57.927 --> 00:05:00.510
+This is a promise that resolves
+whenever the service worker is
+
+00:05:00.510 --> 00:05:01.050
+available.
+
+00:05:01.050 --> 00:05:02.799
+So if there's no service
+worker available,
+
+00:05:02.799 --> 00:05:05.320
+then background fetch
+won't be available.
+
+00:05:05.320 --> 00:05:08.980
+So that's just how it is.
+
+00:05:08.980 --> 00:05:14.910
+And I fire off an
+event just for the UI.
+
+00:05:14.910 --> 00:05:18.310
+But I also post the message
+over to the service worker,
+
+00:05:18.310 --> 00:05:22.350
+the active service worker,
+with an action which
+
+00:05:22.350 --> 00:05:27.237
+happens to be offline, the
+name that I want it to use,
+
+00:05:27.237 --> 00:05:27.820
+and the asset.
+
+00:05:27.820 --> 00:05:31.180
+So the name is an
+important thing.
+
+00:05:31.180 --> 00:05:33.240
+You tag a particular
+background fetch
+
+00:05:33.240 --> 00:05:36.550
+so that if you have multiple
+background fetches going on,
+
+00:05:36.550 --> 00:05:39.600
+they have different
+names in there
+
+00:05:39.600 --> 00:05:40.980
+so that you can differentiate.
+
+00:05:40.980 --> 00:05:43.380
+So you can actually have
+multiple downloads going off
+
+00:05:43.380 --> 00:05:45.400
+at the same time.
+
+00:05:45.400 --> 00:05:50.160
+So on the service worker
+side, let me fire that up.
+
+00:05:50.160 --> 00:05:51.870
+Serviceworker.js, there we are.
+
+00:05:51.870 --> 00:05:53.970
+On message, perfect.
+
+00:05:53.970 --> 00:05:58.240
+In the case of the offline,
+I just pull out those values
+
+00:05:58.240 --> 00:06:00.270
+and I call into
+this separate class
+
+00:06:00.270 --> 00:06:02.920
+that I made called
+BackgroundFetchHelper,
+
+00:06:02.920 --> 00:06:04.980
+and I ask it to do the fetch.
+
+00:06:04.980 --> 00:06:09.030
+So that leads us very neatly
+onto the BackgroundFetchHelper,
+
+00:06:09.030 --> 00:06:11.130
+which we can look in here.
+
+00:06:11.130 --> 00:06:15.940
+And the BackgroundFetchHelper,
+the fetch call here--
+
+00:06:15.940 --> 00:06:17.610
+so the first thing
+I do is I'm using
+
+00:06:17.610 --> 00:06:22.150
+Jake's idb-keyval library,
+because two reasons.
+
+00:06:22.150 --> 00:06:26.046
+One is IDB is the
+only store that's
+
+00:06:26.046 --> 00:06:27.420
+available inside
+a service worker
+
+00:06:27.420 --> 00:06:29.550
+because that's where
+this code is running.
+
+00:06:29.550 --> 00:06:30.940
+Local storage isn't available.
+
+00:06:30.940 --> 00:06:33.660
+And two, I don't
+like working with IDB
+
+00:06:33.660 --> 00:06:35.540
+directly if I can avoid it.
+
+00:06:35.540 --> 00:06:39.120
+And Jake has written this
+very small, very helpful
+
+00:06:39.120 --> 00:06:41.640
+key-value store
+that works with IDB.
+
+00:06:41.640 --> 00:06:45.830
+So, well done, Jake.
+
+00:06:45.830 --> 00:06:48.060
+But what I do is,
+if you bear in mind
+
+00:06:48.060 --> 00:06:50.640
+that when you start
+a background fetch,
+
+00:06:50.640 --> 00:06:55.650
+you may also then close the
+tab, or any number of things
+
+00:06:55.650 --> 00:06:56.629
+could happen.
+
+00:06:56.629 --> 00:06:58.170
+Because what's
+happening is the fetch
+
+00:06:58.170 --> 00:07:01.660
+is being handled by some
+other machinery somewhere.
+
+00:07:01.660 --> 00:07:03.660
+And so we need to kind
+of between states,
+
+00:07:03.660 --> 00:07:06.690
+if you close the tab and
+you brought the tab back,
+
+00:07:06.690 --> 00:07:08.320
+we need to know,
+hang on a minute,
+
+00:07:08.320 --> 00:07:10.970
+there should be a background
+fetch in progress,
+
+00:07:10.970 --> 00:07:13.414
+or what have you.
+
+00:07:13.414 --> 00:07:15.330
+And also when we get all
+the various responses
+
+00:07:15.330 --> 00:07:16.530
+in from the background
+fetch, we kind of
+
+00:07:16.530 --> 00:07:18.180
+have to tie it back to
+the original request.
+
+00:07:18.180 --> 00:07:19.804
+And that's exactly
+what I'm doing here.
+
+00:07:19.804 --> 00:07:22.760
+So you can see what I do is
+I set, based on the tag name,
+
+00:07:22.760 --> 00:07:27.090
+I store in IDB the assets
+that we are requesting.
+
+00:07:27.090 --> 00:07:30.880
+And then I set up
+this background fetch,
+
+00:07:30.880 --> 00:07:33.720
+which you can see is that's
+the actual background fetch API
+
+00:07:33.720 --> 00:07:35.520
+here on the
+registration, because now
+
+00:07:35.520 --> 00:07:38.640
+our backgroundFetch
+property, which I think
+
+00:07:38.640 --> 00:07:41.949
+is the BackgroundFetchManager
+or an instance of that,
+
+00:07:41.949 --> 00:07:43.740
+and then you call dot
+fetch and you give it
+
+00:07:43.740 --> 00:07:48.630
+the stuff that it needs, it
+goes off, does its thing.
+
+00:07:48.630 --> 00:07:50.880
+At the end of which
+you see we have--
+
+00:07:50.880 --> 00:07:53.410
+I've got currently registered
+background fetch failed,
+
+00:07:53.410 --> 00:07:55.230
+which would be if we
+went on the responses
+
+00:07:55.230 --> 00:08:01.111
+404ed, 500ed, or
+something elsed.
+
+00:08:01.111 --> 00:08:03.360
+And then background fetch
+says, if all the things that
+
+00:08:03.360 --> 00:08:07.790
+I've requested come back as
+200s or just generally A-OK,
+
+00:08:07.790 --> 00:08:10.517
+then we can call
+_onBackgroundFetched.
+
+00:08:10.517 --> 00:08:12.600
+So in the background fetch,
+now what we have to do
+
+00:08:12.600 --> 00:08:14.160
+is we have to consolidate.
+
+00:08:14.160 --> 00:08:16.889
+Because we made a request
+for, say, 10 files.
+
+00:08:16.889 --> 00:08:18.930
+And the background fetch,
+let's say it succeeded.
+
+00:08:18.930 --> 00:08:20.460
+We get back 10 responses.
+
+00:08:20.460 --> 00:08:23.720
+What we have to do is we have
+to kind of go through and say,
+
+00:08:23.720 --> 00:08:24.970
+well, what do I do with these?
+
+00:08:24.970 --> 00:08:29.100
+Now if you recall
+from previous times,
+
+00:08:29.100 --> 00:08:33.107
+the videos get chunked
+up into various pieces.
+
+00:08:33.107 --> 00:08:34.690
+And so we'll need
+to do the same here.
+
+00:08:34.690 --> 00:08:37.860
+We basically have to go
+through each of the responses,
+
+00:08:37.860 --> 00:08:40.770
+figure out, which
+response was it?
+
+00:08:40.770 --> 00:08:42.450
+Which asset was I
+actually requesting?
+
+00:08:42.450 --> 00:08:45.030
+And we look at the response URL.
+
+00:08:45.030 --> 00:08:47.949
+We look at the asset URL, the
+one that we were requesting,
+
+00:08:47.949 --> 00:08:50.490
+we kind of go, oh, that must be
+that response for that thing.
+
+00:08:50.490 --> 00:08:51.365
+What do I do with it?
+
+00:08:51.365 --> 00:08:52.470
+Does that one get chunked?
+
+00:08:52.470 --> 00:08:54.402
+Does that just go into
+the cache as it is?
+
+00:08:54.402 --> 00:08:55.860
+What am I supposed
+to do with that?
+
+00:08:55.860 --> 00:08:59.049
+So that's what the consolidation
+step that I'm doing,
+
+00:08:59.049 --> 00:09:00.590
+that's what it's
+designed to do here.
+
+00:09:00.590 --> 00:09:02.965
+You say I've got, for example,
+if it's not chunking, just
+
+00:09:02.965 --> 00:09:05.050
+put it straight into the cache.
+
+00:09:05.050 --> 00:09:08.730
+If it is being chunked and being
+split up into various blocks,
+
+00:09:08.730 --> 00:09:11.220
+then we call cacheInChunks.
+
+00:09:11.220 --> 00:09:15.600
+After we're done with handling
+that array of responses,
+
+00:09:15.600 --> 00:09:17.680
+then we can call this
+_notifyAllClients,
+
+00:09:17.680 --> 00:09:20.800
+which is basically a POST
+back to all available clients.
+
+00:09:20.800 --> 00:09:23.487
+So if you're new to
+service worker stuff,
+
+00:09:23.487 --> 00:09:25.320
+there's the idea that
+you've got one service
+
+00:09:25.320 --> 00:09:28.920
+worker which is shared amongst
+possibly multiple tabs.
+
+00:09:28.920 --> 00:09:32.370
+And so rather than kind of
+trying to figure out exactly
+
+00:09:32.370 --> 00:09:36.810
+which one of the tabs
+requested the background fetch,
+
+00:09:36.810 --> 00:09:39.330
+I just notify them all
+and just say, by the way,
+
+00:09:39.330 --> 00:09:41.050
+this background fetch happened.
+
+00:09:41.050 --> 00:09:42.840
+Here's the tag name.
+
+00:09:42.840 --> 00:09:44.520
+And then I have
+some front end code
+
+00:09:44.520 --> 00:09:48.210
+that consolidates that
+and goes, oh yes, I
+
+00:09:48.210 --> 00:09:52.734
+should throw up a toast and
+say that that was downloaded.
+
+00:09:52.734 --> 00:09:54.150
+And then there's
+a bit of teardown
+
+00:09:54.150 --> 00:09:57.380
+here, which is to
+remove the IDB.
+
+00:09:57.380 --> 00:09:59.130
+And you can see--
+actually, let me go down
+
+00:09:59.130 --> 00:10:03.820
+here-- that we delete the IDB
+key-val so that if we were
+
+00:10:03.820 --> 00:10:08.440
+to delete the downloaded videos
+and then hit download again,
+
+00:10:08.440 --> 00:10:11.067
+then it would all work as
+expected rather than kind
+
+00:10:11.067 --> 00:10:13.150
+of going, oh, I've already
+got something in flight
+
+00:10:13.150 --> 00:10:19.120
+there with that key-value
+pair inside IDB.
+
+00:10:19.120 --> 00:10:23.080
+So with all that code
+in place, this is--
+
+00:10:23.080 --> 00:10:25.884
+let me just get rid of that--
+this is what it actually does.
+
+00:10:25.884 --> 00:10:28.300
+So for argument's sake, so I'm
+doing the background fetch.
+
+00:10:28.300 --> 00:10:31.190
+And I can go off to Home.
+
+00:10:31.190 --> 00:10:37.240
+And as I say in normals land
+there, you'd do a notification.
+
+00:10:37.240 --> 00:10:41.212
+And I think the
+spec, or at least
+
+00:10:41.212 --> 00:10:42.670
+the explainer for
+background fetch,
+
+00:10:42.670 --> 00:10:46.630
+suggests that there might
+be some UI work to do there
+
+00:10:46.630 --> 00:10:48.901
+about showing a notification.
+
+00:10:48.901 --> 00:10:50.650
+But nonetheless when
+we come back in here,
+
+00:10:50.650 --> 00:10:52.702
+you can see I was on a
+completely different page.
+
+00:10:52.702 --> 00:10:54.160
+But you can see
+that we've actually
+
+00:10:54.160 --> 00:10:56.620
+now got the offline copy.
+
+00:10:56.620 --> 00:11:00.340
+And in fact, I can show you
+inside of the application
+
+00:11:00.340 --> 00:11:06.280
+here, inside of
+the cache storage,
+
+00:11:06.280 --> 00:11:10.390
+we have the Chrome
+channel trailer.
+
+00:11:10.390 --> 00:11:13.660
+And these are all the
+chunks of video and so on.
+
+00:11:13.660 --> 00:11:15.370
+So the background
+fetch happened.
+
+00:11:15.370 --> 00:11:16.450
+We populated the cache.
+
+00:11:16.450 --> 00:11:18.824
+And then when I came
+back into the page,
+
+00:11:18.824 --> 00:11:20.740
+I did the check that I
+would have done anyway,
+
+00:11:20.740 --> 00:11:24.140
+which is, do I have something
+in the cache for this video?
+
+00:11:24.140 --> 00:11:26.734
+If yes, I'll assume that
+we have an offline video
+
+00:11:26.734 --> 00:11:27.400
+available to us.
+
+00:11:27.400 --> 00:11:31.690
+So the machinery that stores
+and chunks and everything else
+
+00:11:31.690 --> 00:11:33.940
+is kind of agnostic
+to the front end
+
+00:11:33.940 --> 00:11:35.381
+check to see whether it exists.
+
+00:11:35.381 --> 00:11:37.130
+And that's actually
+been extremely useful.
+
+00:11:37.130 --> 00:11:39.670
+It means I don't really mind
+whether background fetch
+
+00:11:39.670 --> 00:11:41.780
+populates the cache
+or a foreground
+
+00:11:41.780 --> 00:11:45.830
+fetch populates the cache or
+anything populates the cache.
+
+00:11:45.830 --> 00:11:48.460
+So long as it's there
+when I load this page,
+
+00:11:48.460 --> 00:11:51.032
+I will assume that all
+is good, because there's
+
+00:11:51.032 --> 00:11:52.990
+only so many ways it
+could have been populated.
+
+00:11:52.990 --> 00:11:56.680
+And hopefully one of
+them was me in my code.
+
+00:11:56.680 --> 00:11:57.850
+So there you go.
+
+00:11:57.850 --> 00:12:01.480
+That's a very, very speedy
+tour around background fetch.
+
+00:12:01.480 --> 00:12:03.152
+Have a look at the code.
+
+00:12:03.152 --> 00:12:04.360
+Have a look at the explainer.
+
+00:12:04.360 --> 00:12:06.490
+We'll pop that in
+the notes below.
+
+00:12:06.490 --> 00:12:08.590
+That's written by Jake.
+
+00:12:08.590 --> 00:12:11.470
+Turns out he's quite useful.
+
+00:12:11.470 --> 00:12:12.010
+Who knew?
+
+00:12:15.790 --> 00:12:16.760
+Shocker of the day.
+
+00:12:16.760 --> 00:12:19.770
+Anyway, also don't forget
+you can comment, subscribe,
+
+00:12:19.770 --> 00:12:21.100
+all that good stuff.
+
+00:12:21.100 --> 00:12:23.410
+And let me know how you get on.
+
+00:12:23.410 --> 00:12:29.650
+And I'll see you in the roundup
+video for the media PWA.
+
+00:12:29.650 --> 00:12:31.100
+Hey, folks, thanks for watching.
+
+00:12:31.100 --> 00:12:33.100
+Don't forget that there
+is more content that you
+
+00:12:33.100 --> 00:12:34.667
+can find kind of over hereish.
+
+00:12:34.667 --> 00:12:37.000
+And if you want to subscribe,
+there's probably a button.
+
+00:12:37.000 --> 00:12:40.220
+I don't know, maybe there,
+maybe somewhere around there.
+
+00:12:40.220 --> 00:12:41.990
+Click that if you've
+not done that.
+
+00:12:41.990 --> 00:12:43.840
+Brilliant.
+

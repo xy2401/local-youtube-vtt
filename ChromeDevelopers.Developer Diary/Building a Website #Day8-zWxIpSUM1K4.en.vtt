@@ -1,0 +1,1065 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.300
+PAUL LEWIS: So with
+the site mostly done
+
+00:00:02.300 --> 00:00:04.350
+from a visual point
+of view, I wanted
+
+00:00:04.350 --> 00:00:07.140
+to go back and take a
+look at accessibility.
+
+00:00:07.140 --> 00:00:11.190
+Now I'm not an
+accessibility expert.
+
+00:00:11.190 --> 00:00:14.600
+I know it much less than
+I understand other things,
+
+00:00:14.600 --> 00:00:17.100
+like performance
+or CSS or whatever.
+
+00:00:17.100 --> 00:00:21.140
+So I wanted to kind of
+show it because it's
+
+00:00:21.140 --> 00:00:23.210
+a journey I'm kind of
+going on to kind of improve
+
+00:00:23.210 --> 00:00:24.630
+my understanding in this area.
+
+00:00:24.630 --> 00:00:28.520
+And so I at least want to show
+you the changes that I made,
+
+00:00:28.520 --> 00:00:31.430
+or at least kind of how I
+checked some of the changes
+
+00:00:31.430 --> 00:00:33.810
+that I made on the site.
+
+00:00:33.810 --> 00:00:37.610
+So on screen, I have-- I'm
+going to enable a VoiceOver.
+
+00:00:37.610 --> 00:00:40.390
+VOICEOVER: Welcome to
+OS X. VoiceOver is on.
+
+00:00:40.390 --> 00:00:43.530
+System Preferences,
+Accessibility window,
+
+00:00:43.530 --> 00:00:44.750
+Help button.
+
+00:00:44.750 --> 00:00:47.160
+PAUL LEWIS: OK,
+it's definitely on,
+
+00:00:47.160 --> 00:00:48.930
+because it's
+talking at me, which
+
+00:00:48.930 --> 00:00:50.250
+is kind of what you're hoping--
+
+00:00:50.250 --> 00:00:52.041
+VOICEOVER: You are
+currently on the button.
+
+00:00:52.041 --> 00:00:54.630
+To click this button,
+press Control-Option-Space.
+
+00:00:54.630 --> 00:00:56.960
+PAUL LEWIS: OK, I don't
+want to do anything.
+
+00:00:56.960 --> 00:00:58.660
+Don't talk.
+
+00:00:58.660 --> 00:00:59.720
+I'm talking.
+
+00:00:59.720 --> 00:01:00.520
+I'm talking.
+
+00:01:00.520 --> 00:01:01.950
+You don't talk.
+
+00:01:01.950 --> 00:01:02.880
+Stop it.
+
+00:01:02.880 --> 00:01:06.800
+OK, what I'm going to do is I'm
+going to dive into the page.
+
+00:01:06.800 --> 00:01:09.240
+And then this is before
+I made my changes.
+
+00:01:09.240 --> 00:01:11.010
+OK, all right.
+
+00:01:11.010 --> 00:01:15.415
+VOICEOVER: Chrome, Chrome Dev
+Summit 2-0-1-6 window, footer,
+
+00:01:15.415 --> 00:01:20.570
+vi-- vi-- visited link.
+
+00:01:20.570 --> 00:01:22.590
+Chrome Dev Summit.
+
+00:01:22.590 --> 00:01:25.592
+PAUL LEWIS: OK,
+it'll talk again.
+
+00:01:25.592 --> 00:01:26.800
+It has a thing about talking.
+
+00:01:26.800 --> 00:01:29.630
+VOICEOVER: You are currently
+on a link inside of a banner.
+
+00:01:29.630 --> 00:01:32.980
+To click this link, press
+Control-Option-Space.
+
+00:01:32.980 --> 00:01:35.810
+The help tag is Go to Home page.
+
+00:01:35.810 --> 00:01:38.730
+PAUL LEWIS: OK, Go to Home
+page, seems like a good thing.
+
+00:01:38.730 --> 00:01:42.270
+OK, so to keep this
+video brief, I'm
+
+00:01:42.270 --> 00:01:45.410
+just going to kind of show
+only a couple of changes
+
+00:01:45.410 --> 00:01:46.700
+that I've made.
+
+00:01:46.700 --> 00:01:48.750
+But you can
+extrapolate that I've
+
+00:01:48.750 --> 00:01:51.180
+made changes to
+all the templates
+
+00:01:51.180 --> 00:01:54.920
+around the site off the back
+of this, all being well.
+
+00:01:54.920 --> 00:01:56.354
+Let me see if I got this right.
+
+00:01:56.354 --> 00:01:57.770
+VOICEOVER: Navigation,
+four items.
+
+00:01:57.770 --> 00:01:59.478
+PAUL LEWIS: Oh no,
+this is the old build.
+
+00:01:59.478 --> 00:02:01.760
+Oh dear, let's have a look.
+
+00:02:01.760 --> 00:02:04.350
+VOICEOVER: System--
+term-- npm run build.
+
+00:02:07.830 --> 00:02:11.880
+Chrome-- Chrome Dev Summit
+2-0-1-- banner three items,
+
+00:02:11.880 --> 00:02:15.460
+visited link, Chrome Dev
+Summit, list four items.
+
+00:02:15.460 --> 00:02:15.960
+Schedule--
+
+00:02:15.960 --> 00:02:17.690
+PAUL LEWIS: OK,
+this is the old one.
+
+00:02:17.690 --> 00:02:18.190
+Right--
+
+00:02:18.190 --> 00:02:19.398
+VOICEOVER: Chrome Dev Summit.
+
+00:02:19.398 --> 00:02:21.680
+PAUL LEWIS: Yep.
+
+00:02:21.680 --> 00:02:22.960
+I know you're going to talk.
+
+00:02:22.960 --> 00:02:25.060
+I'm going to go
+across to the list.
+
+00:02:25.060 --> 00:02:26.750
+VOICEOVER: List four items.
+
+00:02:26.750 --> 00:02:28.360
+PAUL LEWIS: Now it's not a list.
+
+00:02:28.360 --> 00:02:30.990
+This is the thing,
+it's actually a nav.
+
+00:02:30.990 --> 00:02:33.610
+VOICEOVER: You are currently
+on a list inside of a banner.
+
+00:02:33.610 --> 00:02:34.330
+PAUL LEWIS: See, I'm not.
+
+00:02:34.330 --> 00:02:34.940
+I'm not.
+
+00:02:34.940 --> 00:02:38.630
+I'm in a navigation,
+admittedly inside of a banner.
+
+00:02:38.630 --> 00:02:40.240
+I'll take that up.
+
+00:02:40.240 --> 00:02:42.750
+So that's one thing
+that isn't right.
+
+00:02:42.750 --> 00:02:45.150
+And actually when we
+look at the source code
+
+00:02:45.150 --> 00:02:49.590
+in a moment-- in fact, let
+me just switch off-- no,
+
+00:02:49.590 --> 00:02:51.130
+I'll show you the
+other bit as well.
+
+00:02:51.130 --> 00:02:54.650
+So we can use-- it's like
+Control-Left, Right arrows
+
+00:02:54.650 --> 00:02:57.410
+to kind of skip
+through elements.
+
+00:02:57.410 --> 00:02:59.504
+VOICEOVER: Visited end of list.
+
+00:02:59.504 --> 00:03:00.670
+PAUL LEWIS: End of list, OK.
+
+00:03:00.670 --> 00:03:01.870
+VOICEOVER: Visited link.
+
+00:03:01.870 --> 00:03:03.240
+Watch the live stream now.
+
+00:03:03.240 --> 00:03:04.156
+PAUL LEWIS: Seem good.
+
+00:03:04.156 --> 00:03:06.744
+VOICEOVER: End of-- heading
+level one, Chrome Dev Summit.
+
+00:03:06.744 --> 00:03:07.910
+PAUL LEWIS: Also seems good.
+
+00:03:07.910 --> 00:03:09.190
+VOICEOVER:
+Complimentary one item.
+
+00:03:09.190 --> 00:03:10.530
+PAUL LEWIS: Not complimentary.
+
+00:03:10.530 --> 00:03:11.810
+VOICEOVER: Connect
+with Chrome engineers
+
+00:03:11.810 --> 00:03:13.350
+and other leading
+developers for a two day
+
+00:03:13.350 --> 00:03:15.390
+exploration of building
+beautiful and performant
+
+00:03:15.390 --> 00:03:15.911
+experiences.
+
+00:03:15.911 --> 00:03:16.910
+PAUL LEWIS: Sounds good.
+
+00:03:16.910 --> 00:03:18.040
+VOICEOVER: End of complimentary.
+
+00:03:18.040 --> 00:03:19.373
+PAUL LEWIS: Not a complimentary.
+
+00:03:19.373 --> 00:03:20.820
+VOICEOVER: Visited link.
+
+00:03:20.820 --> 00:03:22.570
+Schedule will take a
+look over the agenda.
+
+00:03:22.570 --> 00:03:23.220
+PAUL LEWIS: Feels
+like you should
+
+00:03:23.220 --> 00:03:25.770
+be giving me a little bit of
+a gap there, like a full stop.
+
+00:03:25.770 --> 00:03:27.070
+VOICEOVER: Visited link.
+
+00:03:27.070 --> 00:03:29.970
+Code lab, check out our
+step by step coding guides.
+
+00:03:29.970 --> 00:03:31.400
+Visited link.
+
+00:03:31.400 --> 00:03:34.195
+Location Chrome Dev
+Summit is at S-F-J-A-Z-Z.
+
+00:03:34.195 --> 00:03:37.760
+PAUL LEWIS: S-F-J-A-Z-Z-- not
+really, it's at "SF Jazz."
+
+00:03:37.760 --> 00:03:39.470
+And I understand why
+a screen reader--
+
+00:03:39.470 --> 00:03:42.740
+VOICEOVER: You are currently on
+a link inside of HTML content.
+
+00:03:42.740 --> 00:03:46.790
+To click this link, press
+Control-Option-Space.
+
+00:03:46.790 --> 00:03:48.910
+PAUL LEWIS: I can understand
+why a screen reader
+
+00:03:48.910 --> 00:03:52.090
+wouldn't understand
+that it's SFJAZZ,
+
+00:03:52.090 --> 00:03:55.610
+that it would think it's
+S-F-J-A-Z-Z, or "zed-zed"
+
+00:03:55.610 --> 00:03:58.650
+for me because English.
+
+00:03:58.650 --> 00:04:04.300
+So what I will do is
+I will temporarily
+
+00:04:04.300 --> 00:04:06.880
+switch off VoiceOver.
+
+00:04:06.880 --> 00:04:07.530
+Let's do that.
+
+00:04:07.530 --> 00:04:09.300
+VOICEOVER: System--
+system preference--
+
+00:04:09.300 --> 00:04:10.340
+PAUL LEWIS: Quick.
+
+00:04:10.340 --> 00:04:12.270
+Oh no, no, no, no, no, stop it.
+
+00:04:12.270 --> 00:04:16.560
+OK, ooh-- ooh.
+
+00:04:16.560 --> 00:04:20.120
+So there's a small chance it can
+be a little bit stressful when
+
+00:04:20.120 --> 00:04:22.940
+it's talking at you,
+especially when you're
+
+00:04:22.940 --> 00:04:27.140
+trying to record a video
+explaining-- yeah, right.
+
+00:04:27.140 --> 00:04:30.380
+Let me move the build on.
+
+00:04:30.380 --> 00:04:32.020
+I think the build
+I want is that one.
+
+00:04:32.020 --> 00:04:34.950
+Yeah, it has labels
+and what not.
+
+00:04:34.950 --> 00:04:38.270
+And we'll do a fresh build.
+
+00:04:38.270 --> 00:04:40.620
+So now you can see,
+when I do that--
+
+00:04:40.620 --> 00:04:44.020
+and let's see if the
+code is there as well.
+
+00:04:44.020 --> 00:04:46.670
+Let's go and find.
+
+00:04:46.670 --> 00:04:48.710
+Where would be a good place?
+
+00:04:48.710 --> 00:04:53.860
+I think the masthead
+is certainly one place.
+
+00:04:53.860 --> 00:04:55.750
+You can see the
+masthead graphic,
+
+00:04:55.750 --> 00:04:58.880
+which is that SVG
+debacle-- let's
+
+00:04:58.880 --> 00:05:03.050
+call it what it is, the
+debacle that was-- has an ARIA
+
+00:05:03.050 --> 00:05:05.030
+label of now masthead.
+
+00:05:05.030 --> 00:05:07.600
+And then I've added this
+masthead image title.
+
+00:05:07.600 --> 00:05:09.900
+So that's going to be
+something that should hopefully
+
+00:05:09.900 --> 00:05:11.820
+be announced as well.
+
+00:05:11.820 --> 00:05:15.800
+Things like titles, that's
+gone on as well in the head,
+
+00:05:15.800 --> 00:05:17.000
+maybe, or in the header.
+
+00:05:17.000 --> 00:05:19.290
+Did I bring that-- it's in
+the header-- in the header.
+
+00:05:23.520 --> 00:05:24.170
+Or is it head?
+
+00:05:24.170 --> 00:05:26.222
+Which one is it?
+
+00:05:26.222 --> 00:05:30.490
+Whoa, hang on.
+
+00:05:30.490 --> 00:05:32.072
+That's weird.
+
+00:05:32.072 --> 00:05:33.530
+Why are they saying
+the same thing?
+
+00:05:33.530 --> 00:05:35.960
+That's not the right thing.
+
+00:05:35.960 --> 00:05:38.030
+Or has it got itself confused?
+
+00:05:38.030 --> 00:05:41.187
+It might have got
+itself confused.
+
+00:05:41.187 --> 00:05:42.520
+OK, I'll tell you what we'll do.
+
+00:05:42.520 --> 00:05:44.728
+We'll just look at it in
+the source code of the page.
+
+00:05:44.728 --> 00:05:46.030
+That'll do it.
+
+00:05:46.030 --> 00:05:50.990
+Instead, we now have a
+nav called menu__nav.
+
+00:05:50.990 --> 00:05:53.590
+And instead of there being
+a list, they're just divs.
+
+00:05:53.590 --> 00:05:56.930
+And because this is set to
+display flex, this is fine.
+
+00:05:56.930 --> 00:05:59.425
+They're individual
+items, each with anchor.
+
+00:05:59.425 --> 00:06:01.300
+I probably don't even
+need the divs actually.
+
+00:06:01.300 --> 00:06:03.914
+I might just remove
+those and put the class
+
+00:06:03.914 --> 00:06:04.955
+straight onto the anchor.
+
+00:06:04.955 --> 00:06:07.030
+That would probably be
+even tidier, less markup.
+
+00:06:07.030 --> 00:06:09.270
+I might just do
+that today in fact.
+
+00:06:09.270 --> 00:06:11.220
+What an idea.
+
+00:06:11.220 --> 00:06:14.580
+And then here's another
+little thing that I did,
+
+00:06:14.580 --> 00:06:16.630
+which I just want to show.
+
+00:06:16.630 --> 00:06:19.850
+This is after a chat
+with-- let me zoom in--
+
+00:06:19.850 --> 00:06:23.060
+after a chat with Jake
+Archibald, my colleague.
+
+00:06:23.060 --> 00:06:25.190
+Hopefully many of you know Jake.
+
+00:06:25.190 --> 00:06:27.030
+If you don't, he's
+one of my colleagues.
+
+00:06:27.030 --> 00:06:29.670
+I said that.
+
+00:06:29.670 --> 00:06:34.210
+So now Chrome Dev Summit
+is at SF, and then Jazz,
+
+00:06:34.210 --> 00:06:35.990
+in lower case.
+
+00:06:35.990 --> 00:06:38.750
+And then this in between
+it, you might be thinking,
+
+00:06:38.750 --> 00:06:41.050
+what on earth is that?
+
+00:06:41.050 --> 00:06:44.090
+The answer is, it's
+the Unicode character
+
+00:06:44.090 --> 00:06:51.730
+for a nonvisible space so that
+it renders as SFJAZZ together,
+
+00:06:51.730 --> 00:06:55.636
+but it's actually
+pronounced as SF Jazz.
+
+00:06:55.636 --> 00:06:58.856
+So we're kind of doing
+the visual thing as well
+
+00:06:58.856 --> 00:06:59.980
+as the screen reader thing.
+
+00:06:59.980 --> 00:07:02.510
+And then I use a
+CSS text transform
+
+00:07:02.510 --> 00:07:04.420
+to bring that all
+to uppercase, which
+
+00:07:04.420 --> 00:07:07.310
+is why it's wrapped
+in a span you see.
+
+00:07:07.310 --> 00:07:08.550
+That will do the trick.
+
+00:07:08.550 --> 00:07:16.050
+Now with that said, I can now
+switch on VoiceOver once more.
+
+00:07:16.050 --> 00:07:19.410
+It's going to talk at us again.
+
+00:07:19.410 --> 00:07:22.300
+VOICEOVER: Welcome to
+OS X. VoiceOver is on.
+
+00:07:22.300 --> 00:07:25.440
+System Preferences,
+Accessibility window,
+
+00:07:25.440 --> 00:07:27.282
+Help button.
+
+00:07:27.282 --> 00:07:29.740
+PAUL LEWIS: OK, and we'll start
+hopefully at the top again.
+
+00:07:29.740 --> 00:07:32.430
+VOICEOVER: Schedule,
+select visited link.
+
+00:07:32.430 --> 00:07:35.590
+Chrome Dev Summit, banner
+three-- navigation four items.
+
+00:07:35.590 --> 00:07:37.360
+PAUL LEWIS: Navigation
+four items, better.
+
+00:07:37.360 --> 00:07:40.062
+VOICEOVER: Visited link,
+visited link, location.
+
+00:07:40.062 --> 00:07:40.770
+PAUL LEWIS: Fine.
+
+00:07:40.770 --> 00:07:42.340
+VOICEOVER: End of navigation.
+
+00:07:42.340 --> 00:07:43.600
+Visited link.
+
+00:07:43.600 --> 00:07:45.240
+Watch the live stream now.
+
+00:07:45.240 --> 00:07:46.480
+End of banner.
+
+00:07:46.480 --> 00:07:47.370
+Heading level one.
+
+00:07:47.370 --> 00:07:47.850
+PAUL LEWIS: And?
+
+00:07:47.850 --> 00:07:50.190
+VOICEOVER: Masthead, Darin
+Fisher delivering the keynote
+
+00:07:50.190 --> 00:07:52.235
+at Chrome Dev Summit 2-0-1-5.
+
+00:07:52.235 --> 00:07:52.735
+Image.
+
+00:07:52.735 --> 00:07:54.920
+PAUL LEWIS: I would have
+said 20-15, but whatever.
+
+00:07:54.920 --> 00:07:56.210
+VOICEOVER: Connect
+with Chrome engineers
+
+00:07:56.210 --> 00:07:58.030
+and other leading developers
+for a two day expo.
+
+00:07:58.030 --> 00:07:58.696
+PAUL LEWIS: Yep.
+
+00:07:58.696 --> 00:07:59.700
+VOICEOVER: Visited link.
+
+00:07:59.700 --> 00:08:00.680
+Schedule.
+
+00:08:00.680 --> 00:08:02.160
+Take a look over the agenda.
+
+00:08:02.160 --> 00:08:04.160
+PAUL LEWIS: That's because
+I used an after there
+
+00:08:04.160 --> 00:08:05.460
+to put a full stop in.
+
+00:08:05.460 --> 00:08:06.760
+VOICEOVER: Visited link.
+
+00:08:06.760 --> 00:08:07.800
+Code labs.
+
+00:08:07.800 --> 00:08:09.750
+Check out our step by
+step coding guides.
+
+00:08:09.750 --> 00:08:11.420
+PAUL LEWIS: And that after
+has an opacity of zero.
+
+00:08:11.420 --> 00:08:12.030
+And--
+
+00:08:12.030 --> 00:08:13.190
+VOICEOVER: Visited link.
+
+00:08:13.190 --> 00:08:14.230
+Location.
+
+00:08:14.230 --> 00:08:16.220
+Chrome Dev Summit
+is at "SF Jazz."
+
+00:08:16.220 --> 00:08:18.020
+PAUL LEWIS: Yes.
+
+00:08:18.020 --> 00:08:20.920
+VOICEOVER: Visual--
+System Preferences.
+
+00:08:20.920 --> 00:08:22.360
+PAUL LEWIS: Right.
+
+00:08:22.360 --> 00:08:24.420
+So basically that's
+what I've been doing
+
+00:08:24.420 --> 00:08:26.940
+is I've been going through,
+making sure that there's
+
+00:08:26.940 --> 00:08:27.780
+Tab focus.
+
+00:08:27.780 --> 00:08:31.492
+And when you Tab between things
+or use the focus shifting
+
+00:08:31.492 --> 00:08:33.700
+in VoiceOver-- I'm not even
+sure what that's probably
+
+00:08:33.700 --> 00:08:36.076
+called-- that it announces
+the things that I expect
+
+00:08:36.076 --> 00:08:37.659
+it to announce in
+the way that I would
+
+00:08:37.659 --> 00:08:38.950
+expect them to be announced.
+
+00:08:38.950 --> 00:08:41.710
+So most of the time it's
+a case of putting titles
+
+00:08:41.710 --> 00:08:44.120
+on things or alternate
+images, or things
+
+00:08:44.120 --> 00:08:48.490
+like the masthead where
+there isn't a-- like I'm
+
+00:08:48.490 --> 00:08:50.820
+using multiple elements
+to kind of achieve
+
+00:08:50.820 --> 00:08:52.020
+the effect of whatever.
+
+00:08:52.020 --> 00:08:55.050
+I'm having to use ARIA
+role, or just role
+
+00:08:55.050 --> 00:08:58.550
+equals image for
+example, and then
+
+00:08:58.550 --> 00:09:02.240
+ARIA label equals, and then
+what I would put in an alt text
+
+00:09:02.240 --> 00:09:03.720
+should it have been an image.
+
+00:09:03.720 --> 00:09:07.230
+The other thing, let me just see
+if I can switch it on quickly.
+
+00:09:07.230 --> 00:09:09.980
+If not, I will show
+you how one does it.
+
+00:09:09.980 --> 00:09:11.590
+Yes, so it's not
+switched on on here.
+
+00:09:11.590 --> 00:09:19.310
+So let's go to chrome://flags,
+and Developer Tools
+
+00:09:19.310 --> 00:09:20.060
+experiments.
+
+00:09:20.060 --> 00:09:22.797
+We'll enable that.
+
+00:09:22.797 --> 00:09:23.297
+Relaunch.
+
+00:09:25.920 --> 00:09:31.340
+And now inside of the
+Dev Tools settings,
+
+00:09:31.340 --> 00:09:32.434
+we have the experiments.
+
+00:09:32.434 --> 00:09:34.100
+And there's an
+accessibility inspection.
+
+00:09:34.100 --> 00:09:38.090
+And it is always
+worth pointing out
+
+00:09:38.090 --> 00:09:41.040
+that these experiments
+could be dangerous.
+
+00:09:41.040 --> 00:09:44.350
+But let's make that bigger.
+
+00:09:44.350 --> 00:09:50.170
+They could be dangerous
+and may require a restart.
+
+00:09:50.170 --> 00:09:51.930
+And they could
+cause other issues.
+
+00:09:51.930 --> 00:09:54.970
+So switch them on
+at your own peril.
+
+00:09:54.970 --> 00:10:01.150
+But anyway, I'll switch on
+the accessibly inspection.
+
+00:10:01.150 --> 00:10:05.240
+And then let's take
+our inspect here.
+
+00:10:05.240 --> 00:10:06.010
+We'll do that.
+
+00:10:06.010 --> 00:10:08.210
+And there's now an
+Accessibility tab down here.
+
+00:10:08.210 --> 00:10:11.183
+And you can see the
+name, which is location,
+
+00:10:11.183 --> 00:10:15.820
+Chrome Dev Summit is at SFJAZZ,
+contents, and what its role is.
+
+00:10:15.820 --> 00:10:17.530
+So you can very
+quickly, if you just
+
+00:10:17.530 --> 00:10:20.880
+want to check without
+actually switching on a screen
+
+00:10:20.880 --> 00:10:24.390
+reader or anything like that,
+you can have a do with a that
+
+00:10:24.390 --> 00:10:26.370
+and switch that on and
+play around with that.
+
+00:10:26.370 --> 00:10:28.453
+And hopefully it will tell
+you all the right kinds
+
+00:10:28.453 --> 00:10:29.410
+of things or labels.
+
+00:10:29.410 --> 00:10:31.820
+And let me just try
+that on the masthead.
+
+00:10:31.820 --> 00:10:35.266
+Let's see, I think it's
+on masthead itself maybe.
+
+00:10:35.266 --> 00:10:37.390
+Well maybe the masthead
+graphic-- masthead graphic.
+
+00:10:37.390 --> 00:10:37.960
+There we are.
+
+00:10:37.960 --> 00:10:41.430
+Role of image, and ARIA
+label of what we'd expect.
+
+00:10:41.430 --> 00:10:44.680
+And as you see, it bears out
+that when I actually use,
+
+00:10:44.680 --> 00:10:47.040
+at least VoiceOver
+anyway, that I'm getting
+
+00:10:47.040 --> 00:10:48.190
+the right kinds of things.
+
+00:10:48.190 --> 00:10:50.189
+I know I still have more
+work to do in this area
+
+00:10:50.189 --> 00:10:56.300
+because the side nav, I
+will need to put on inert.
+
+00:10:56.300 --> 00:10:58.610
+And if not heard
+of inert, we will
+
+00:10:58.610 --> 00:11:03.590
+link to Rob Dodson's inert
+polyfill A11lycast, which
+
+00:11:03.590 --> 00:11:06.410
+you should definitely watch,
+is a very straightforward way
+
+00:11:06.410 --> 00:11:11.924
+of saying, this thing is
+not visible right now.
+
+00:11:11.924 --> 00:11:13.340
+And I'll probably
+need that if I'm
+
+00:11:13.340 --> 00:11:15.127
+going to do a sliding
+in and out side nav.
+
+00:11:15.127 --> 00:11:17.460
+And in fact he actually talked
+about a previous side nav
+
+00:11:17.460 --> 00:11:18.880
+I'd built in that episode.
+
+00:11:18.880 --> 00:11:21.970
+And also I need to find
+a way of making sure
+
+00:11:21.970 --> 00:11:24.999
+that the tab focus is sort
+of locked into the side nav
+
+00:11:24.999 --> 00:11:27.040
+when it's out, because
+it's kind of like a modal.
+
+00:11:27.040 --> 00:11:29.090
+Anyway, all that and
+more you will discover
+
+00:11:29.090 --> 00:11:30.210
+if you watch A11lycasts.
+
+00:11:30.210 --> 00:11:35.940
+So, as always, check
+out the code on GitHub.
+
+00:11:35.940 --> 00:11:38.031
+You can see hello to
+me in the comments.
+
+00:11:38.031 --> 00:11:39.280
+I've been responding to a lot.
+
+00:11:39.280 --> 00:11:42.310
+If I've missed your
+comment, I'm very sorry.
+
+00:11:42.310 --> 00:11:43.690
+Keep trying.
+
+00:11:43.690 --> 00:11:46.860
+You can say hello to me
+on Twitter @AeroTwist.
+
+00:11:46.860 --> 00:11:52.570
+And I will, of course,
+see you in the next entry.
+
+00:11:52.570 --> 00:11:56.330
+Yes, that's when I'll be back.
+
+00:11:56.330 --> 00:11:56.890
+Brilliant.
+
+00:11:56.890 --> 00:11:57.556
+Have a good day.
+
+00:11:57.556 --> 00:12:00.840
+[MUSIC PLAYING]
+

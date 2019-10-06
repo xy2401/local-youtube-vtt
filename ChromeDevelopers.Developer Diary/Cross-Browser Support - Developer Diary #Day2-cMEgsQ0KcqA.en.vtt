@@ -1,0 +1,423 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.220
+MAT SCALES: Hey, everyone.
+
+00:00:01.220 --> 00:00:03.230
+Welcome back to my
+Developer Diary series,
+
+00:00:03.230 --> 00:00:07.160
+where I'm talking about how
+I'm making a camera app.
+
+00:00:07.160 --> 00:00:10.010
+One of the things that I
+want to cover in this series
+
+00:00:10.010 --> 00:00:13.760
+is places where things
+didn't go quite right.
+
+00:00:13.760 --> 00:00:16.160
+One of the things that trips
+up a lot of developers,
+
+00:00:16.160 --> 00:00:18.920
+and I wanted to experience
+that pain along with you,
+
+00:00:18.920 --> 00:00:21.519
+is cross-browser support.
+
+00:00:21.519 --> 00:00:23.060
+So in particular,
+I really need to be
+
+00:00:23.060 --> 00:00:25.670
+able to support iOS and Android.
+
+00:00:25.670 --> 00:00:29.450
+So that's Chrome on
+Android and Safari on iOS.
+
+00:00:29.450 --> 00:00:32.479
+So last time, I talked about
+capturing images in a way that
+
+00:00:32.479 --> 00:00:35.030
+works across lots of browsers.
+
+00:00:35.030 --> 00:00:39.020
+But now, I need to be able
+to store them on the device.
+
+00:00:39.020 --> 00:00:41.180
+My initial thought was
+to use the CacheStorage
+
+00:00:41.180 --> 00:00:44.450
+API, which is part of
+the service worker spec.
+
+00:00:44.450 --> 00:00:49.040
+This is a very good way
+of storing resources
+
+00:00:49.040 --> 00:00:51.170
+against a URL, which is perfect.
+
+00:00:51.170 --> 00:00:53.400
+Because eventually
+these local resources
+
+00:00:53.400 --> 00:00:54.650
+will be uploaded to a server--
+
+00:00:54.650 --> 00:00:57.170
+so be able to just store
+them against the URL
+
+00:00:57.170 --> 00:00:59.600
+they will eventually have.
+
+00:00:59.600 --> 00:01:03.092
+Sadly CacheStorage is not
+actually implemented on Safari.
+
+00:01:03.092 --> 00:01:05.300
+So instead, we have to fall
+back to something that is
+
+00:01:05.300 --> 00:01:07.490
+available on both platforms--
+
+00:01:07.490 --> 00:01:10.880
+IndexedDB, otherwise
+known as IDB.
+
+00:01:10.880 --> 00:01:15.210
+IDB isn't my favorite API,
+but it is very capable.
+
+00:01:15.210 --> 00:01:17.940
+So I just wrote a simple
+abstraction layer around it
+
+00:01:17.940 --> 00:01:21.220
+in order to do the things
+that I needed to do.
+
+00:01:21.220 --> 00:01:24.760
+So here is that
+abstraction layer.
+
+00:01:24.760 --> 00:01:28.120
+It's a simple class that
+wraps around IndexedDB.
+
+00:01:28.120 --> 00:01:30.400
+And it's called an ImageDb.
+
+00:01:30.400 --> 00:01:32.830
+You might notice at this
+point that I've actually
+
+00:01:32.830 --> 00:01:35.345
+written this in TypeScript.
+
+00:01:35.345 --> 00:01:36.970
+If you're not familiar
+with TypeScript,
+
+00:01:36.970 --> 00:01:38.428
+just take any of
+these parts that's
+
+00:01:38.428 --> 00:01:40.690
+like a colon and then a
+type, and just pretend
+
+00:01:40.690 --> 00:01:42.190
+it's documentation.
+
+00:01:42.190 --> 00:01:44.170
+TypeScript is really
+just JavaScript
+
+00:01:44.170 --> 00:01:47.110
+with this little
+extra layer on top.
+
+00:01:47.110 --> 00:01:49.920
+That said, let's talk about
+what this is actually doing.
+
+00:01:49.920 --> 00:01:54.300
+So when you create an ImageDB,
+it creates the database
+
+00:01:54.300 --> 00:01:57.120
+and sets up these
+event handlers.
+
+00:01:57.120 --> 00:01:59.550
+Nothing particularly
+exciting there.
+
+00:01:59.550 --> 00:02:02.400
+I've got a method for
+storing this thing, which
+
+00:02:02.400 --> 00:02:04.910
+is called an ImageRecord.
+
+00:02:04.910 --> 00:02:06.780
+An ImageRecord is just--
+
+00:02:06.780 --> 00:02:10.949
+it's a plain object that stores
+the images and any metadata
+
+00:02:10.949 --> 00:02:13.230
+that I need about those images.
+
+00:02:13.230 --> 00:02:18.030
+Then I can retrieve an
+ImageRecord from the database.
+
+00:02:18.030 --> 00:02:20.110
+I've got a method
+here called all,
+
+00:02:20.110 --> 00:02:22.100
+which just gets all
+of the image records
+
+00:02:22.100 --> 00:02:23.420
+that are in the database.
+
+00:02:23.420 --> 00:02:24.860
+This is used for
+the browse page,
+
+00:02:24.860 --> 00:02:27.530
+where I show all of the
+images that are available.
+
+00:02:27.530 --> 00:02:30.380
+And then there's these sort
+of internal helpers here.
+
+00:02:30.380 --> 00:02:32.150
+And the only real
+important one here
+
+00:02:32.150 --> 00:02:35.060
+is the createObjectStore
+method, which actually creates
+
+00:02:35.060 --> 00:02:38.097
+the database the first time
+you go to the app, or grades
+
+00:02:38.097 --> 00:02:39.930
+it if you've been there
+before with an older
+
+00:02:39.930 --> 00:02:41.610
+version of the application.
+
+00:02:41.610 --> 00:02:43.910
+So this layer was working
+pretty great for me,
+
+00:02:43.910 --> 00:02:46.050
+but I soon ran into a problem.
+
+00:02:46.050 --> 00:02:48.260
+So the ImageRecord
+objects that I'm using,
+
+00:02:48.260 --> 00:02:52.240
+I was originally using blobs
+to store any image data.
+
+00:02:52.240 --> 00:02:54.170
+I mean, this made perfect sense.
+
+00:02:54.170 --> 00:02:57.570
+When I wanted to get an image
+through file upload, copy
+
+00:02:57.570 --> 00:03:00.500
+and paste, getting an
+image out of a canvas,
+
+00:03:00.500 --> 00:03:02.150
+they all gave me a blob.
+
+00:03:02.150 --> 00:03:04.910
+And when I wanted to display
+an image, I'd get a blob
+
+00:03:04.910 --> 00:03:07.170
+and get its URL and
+use that blob URL
+
+00:03:07.170 --> 00:03:09.860
+as the source of an image.
+
+00:03:09.860 --> 00:03:16.430
+Unfortunately, you can't store
+blobs in Safari on iOS at all.
+
+00:03:16.430 --> 00:03:19.340
+What you can do is
+store an ArrayBuffer.
+
+00:03:19.340 --> 00:03:21.497
+So instead of using
+blobs everywhere,
+
+00:03:21.497 --> 00:03:23.330
+I just need to do a
+little bit of conversion
+
+00:03:23.330 --> 00:03:24.890
+any time that I
+get a blob, turn it
+
+00:03:24.890 --> 00:03:27.290
+into an ArrayBuffer to
+store it, and turn it back
+
+00:03:27.290 --> 00:03:29.160
+into a blob to use it.
+
+00:03:29.160 --> 00:03:31.479
+So let's have a look
+at that conversion.
+
+00:03:31.479 --> 00:03:33.020
+So if you have an
+ArrayBuffer and you
+
+00:03:33.020 --> 00:03:36.020
+want to turn it into a
+blob, that's pretty easy.
+
+00:03:36.020 --> 00:03:38.510
+You use the blob constructor.
+
+00:03:38.510 --> 00:03:42.650
+You pass in the ArrayBuffer in
+an array as the first element.
+
+00:03:42.650 --> 00:03:45.330
+And then you just pass in the
+type that you want it to be.
+
+00:03:45.330 --> 00:03:48.930
+So here, this will be
+something like image/jpeg.
+
+00:03:48.930 --> 00:03:51.450
+To go the other way around
+is slightly more complicated.
+
+00:03:51.450 --> 00:03:54.192
+So I created a
+little helper here.
+
+00:03:54.192 --> 00:03:56.650
+If you want to take a blob and
+turn it into an ArrayBuffer,
+
+00:03:56.650 --> 00:03:58.790
+you can use the FileReader API.
+
+00:03:58.790 --> 00:04:01.190
+So you create a FileReader.
+
+00:04:01.190 --> 00:04:06.050
+And then you say that you want
+to readAsArrayBuffer some blob.
+
+00:04:06.050 --> 00:04:08.149
+And then, eventually, you
+get this Loadend event.
+
+00:04:08.149 --> 00:04:10.190
+And here, you can see,
+I've wrapped in a Promise.
+
+00:04:10.190 --> 00:04:13.040
+And I just resolve
+with the result.
+
+00:04:13.040 --> 00:04:14.570
+So there you go.
+
+00:04:14.570 --> 00:04:17.130
+It was kind of tricky to work
+out how to get around this.
+
+00:04:17.130 --> 00:04:19.800
+But in the end, it was possible.
+
+00:04:19.800 --> 00:04:22.700
+Sure, you can't store
+blobs in IDB on iOS,
+
+00:04:22.700 --> 00:04:24.300
+but there was a way around it.
+
+00:04:24.300 --> 00:04:27.110
+And that's the story for a lot
+of web development nowadays.
+
+00:04:27.110 --> 00:04:29.420
+Modern web development is
+all about finding out what
+
+00:04:29.420 --> 00:04:31.700
+works across all the browsers.
+
+00:04:31.700 --> 00:04:34.610
+Hopefully, this is
+getting easier over time.
+
+00:04:34.610 --> 00:04:38.850
+But you know, these
+things will still happen.
+
+00:04:38.850 --> 00:04:40.730
+So hopefully that was
+useful to anyone who's
+
+00:04:40.730 --> 00:04:42.800
+coming across the same problem.
+
+00:04:42.800 --> 00:04:45.890
+And join me next time when
+we'll learn about something new.
+
+00:04:45.890 --> 00:04:47.067
+[MUSIC PLAYING]
+
+00:04:47.067 --> 00:04:47.900
+Thanks for watching.
+
+00:04:47.900 --> 00:04:49.566
+If you'd like to see
+more of our videos,
+
+00:04:49.566 --> 00:04:51.750
+click here, and see you again.
+
+00:04:51.750 --> 00:04:53.300
+Cheers.
+

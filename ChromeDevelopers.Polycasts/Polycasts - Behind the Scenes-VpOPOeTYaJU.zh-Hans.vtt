@@ -1,0 +1,135 @@
+WEBVTT
+Kind: captions
+Language: zh-CN
+
+00:00:00.220 --> 00:00:02.920
+Polycast 是面向那些对 Polymer 的 web 组件感兴趣的人
+Polycast is for anybody who's really into web components in Polymer.
+
+00:00:02.920 --> 00:00:04.290
+如果你是个新手
+If you're an absolute beginner, you
+
+00:00:04.290 --> 00:00:05.570
+还没有接触过这些东西  我会
+haven't worked with these things before, I'm
+
+00:00:05.570 --> 00:00:07.550
+给你一些便于你入门的材料  给你演示
+going to give you some getting started material, show you how
+
+00:00:07.550 --> 00:00:08.800
+如何操作一些组件
+to work with a few components.
+
+00:00:08.800 --> 00:00:10.620
+如果你是有一定经验的开发者
+If you're a more advanced developer,
+
+00:00:10.620 --> 00:00:12.410
+我有一些小贴士和技巧
+I actually have some tips and tricks
+
+00:00:12.410 --> 00:00:15.500
+以及其它一些很酷的东西  都是 Polymer 团队独家的哦
+and other cool stuff that's coming exclusive from the Polymer teams.
+
+00:00:15.500 --> 00:00:17.960
+那你几乎可以比外面的任何人都
+So you get to hear about it before pretty much anybody else
+
+00:00:17.960 --> 00:00:18.940
+提早知道
+in the outside world.
+
+00:00:18.940 --> 00:00:20.650
+我们用了一些神奇的东西
+We've got a little bit of Hollywood magic
+
+00:00:20.650 --> 00:00:22.300
+来应用到节目里
+that we've incorporated into the show
+
+00:00:22.300 --> 00:00:24.200
+我可以在屏幕上画画
+so that I can draw on the screen,
+
+00:00:24.200 --> 00:00:26.630
+我可以指出代码的细节
+I can point out the particulars of the code,
+
+00:00:26.630 --> 00:00:29.410
+而且我可以带你们一起进入文本编辑器
+and I can actually bring you inside the text editor with me.
+
+00:00:29.410 --> 00:00:32.100
+这样的感觉更像是我们在一起创建组件
+So it can feel more like we're building a component together,
+
+00:00:32.100 --> 00:00:34.560
+而不是你干坐在那看视频
+and not like you're just sitting there watching some video.
+
+00:00:34.560 --> 00:00:36.830
+Polycast 在 Google Developers Youtude 频道上
+Polycast comes out on the Google Developers YouTube
+
+00:00:36.830 --> 00:00:38.070
+每两周发布一次视频
+channel every two weeks.
+
+00:00:38.070 --> 00:00:39.620
+你可以订阅那个频道
+So you can subscribe to that channel.
+
+00:00:39.620 --> 00:00:42.420
+那样的话你就一集也不会错过了  很棒吧
+And that way, you will never miss an episode, which is pretty awesome.
+
+00:00:42.420 --> 00:00:44.800
+你也可以在我们的频道上查看播放列表
+You can also go find our playlist on the channel.
+
+00:00:44.800 --> 00:00:48.040
+你可以标记书签  而且你可以看到所有原先的记录
+You can bookmark that, and you can see the entire back catalog.
+
+00:00:48.040 --> 00:00:50.000
+我想跟所有在观看视频的开发者说的是
+One thing I would say to any developer watching
+
+00:00:50.000 --> 00:00:51.870
+如果你真的喜欢这个节目
+is that if you really like the show,
+
+00:00:51.870 --> 00:00:53.580
+别忘了在 Youtube 视频下评论
+leave me a comment down there on YouTube.
+
+00:00:53.580 --> 00:00:54.770
+我会阅读所有的评论
+I read all of the comments.
+
+00:00:54.770 --> 00:00:56.860
+而且会尽量回复
+I try to respond to as many as I possibly can.
+
+00:00:56.860 --> 00:00:58.610
+当你问了很有价值的问题时
+And when you leave a really good question,
+
+00:00:58.610 --> 00:01:00.370
+我们可以在未来的节目中提出
+we can highlight it in future episodes.
+
+00:01:00.370 --> 00:01:02.660
+今天在 Polycast 我要向你们展示一个很重要的技巧
+Today on Polycast, I'm going to show you a very important trick.
+
+00:01:02.660 --> 00:01:03.560
+现在我们开始吧
+So let's dive in.
+
+00:01:03.560 --> 00:01:06.620
+[MUSIC PLAYING]
+

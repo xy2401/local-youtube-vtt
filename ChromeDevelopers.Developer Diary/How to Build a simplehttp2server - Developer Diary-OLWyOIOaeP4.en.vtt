@@ -1,0 +1,1182 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.499 --> 00:00:01.695
+SURMA: Surprise.
+
+00:00:01.695 --> 00:00:03.390
+I'm back.
+
+00:00:03.390 --> 00:00:07.700
+It's been awhile, and I
+apologize, but I thought,
+
+00:00:07.700 --> 00:00:10.340
+we probably have seen enough
+of Paul's face for a while.
+
+00:00:10.340 --> 00:00:14.239
+So I thought I'd just swoop
+in and do a video of my own
+
+00:00:14.239 --> 00:00:14.780
+for a change.
+
+00:00:14.780 --> 00:00:16.370
+So here I am.
+
+00:00:16.370 --> 00:00:21.890
+And I thought I'd show you
+a simple HTTP/2 server.
+
+00:00:21.890 --> 00:00:25.970
+It's a tool that I've written
+a long time ago for a Udacity
+
+00:00:25.970 --> 00:00:29.710
+course I did about
+HTTP an HTTP/2.
+
+00:00:29.710 --> 00:00:32.756
+I should probably put
+the link down here,
+
+00:00:32.756 --> 00:00:34.880
+or in the description--
+you'll probably find a link
+
+00:00:34.880 --> 00:00:37.250
+to the Udacity course there.
+
+00:00:37.250 --> 00:00:40.190
+And it's a tool that you
+just download and start,
+
+00:00:40.190 --> 00:00:43.280
+and it surfs the current
+directory over HTTP/2.
+
+00:00:43.280 --> 00:00:47.060
+So it's very similar to
+Python's simple HTTP/2 server
+
+00:00:47.060 --> 00:00:51.590
+to Python's simple HTTP server,
+but my server does HTTP/2.
+
+00:00:51.590 --> 00:00:56.420
+And it needed the new tool,
+because HTTP/2, by design,
+
+00:00:56.420 --> 00:00:59.720
+is always encrypted and always
+needs a TLS certificate.
+
+00:00:59.720 --> 00:01:02.330
+And because generating
+these for certificates
+
+00:01:02.330 --> 00:01:04.736
+is really annoying and
+really time consuming,
+
+00:01:04.736 --> 00:01:06.360
+I just built it
+straight into the tool.
+
+00:01:06.360 --> 00:01:08.651
+So it does it right away for
+you, and you just start it
+
+00:01:08.651 --> 00:01:11.687
+and it spins up, and there
+you go with the HTTP/2.
+
+00:01:11.687 --> 00:01:14.270
+And it really didn't go because
+Go was very early with support
+
+00:01:14.270 --> 00:01:17.180
+on HTTP/2 and because
+I just love Go.
+
+00:01:17.180 --> 00:01:22.220
+But back when I wrote it, they
+didn't have support for Push,
+
+00:01:22.220 --> 00:01:24.044
+and that was one
+of the big things
+
+00:01:24.044 --> 00:01:25.460
+that I wanted to
+play around with.
+
+00:01:25.460 --> 00:01:27.020
+So what I did is I
+basically grabbed
+
+00:01:27.020 --> 00:01:29.150
+the code from the
+[INAUDIBLE] library
+
+00:01:29.150 --> 00:01:32.030
+put it in my project and
+monkey-patched support for Push
+
+00:01:32.030 --> 00:01:33.110
+in there.
+
+00:01:33.110 --> 00:01:37.190
+But now, just a few weeks
+ago, Go 1.8 came out,
+
+00:01:37.190 --> 00:01:39.507
+and while there's
+lots of improvements
+
+00:01:39.507 --> 00:01:41.840
+and some of performance and
+garbage collection, but also
+
+00:01:41.840 --> 00:01:44.150
+they now have native
+support for Push.
+
+00:01:44.150 --> 00:01:47.450
+So I could finally throw out
+my monkey-patched version.
+
+00:01:47.450 --> 00:01:49.970
+And I used the opportunity
+when I was working on the tool
+
+00:01:49.970 --> 00:01:51.950
+anyway to basically to
+do a whole refactoring.
+
+00:01:51.950 --> 00:01:54.680
+To just split the code
+up-- it was really messy,
+
+00:01:54.680 --> 00:01:56.030
+really grown--
+
+00:01:56.030 --> 00:01:58.730
+and make nice little
+files and modules
+
+00:01:58.730 --> 00:02:01.970
+and make it more
+accessible for all of you
+
+00:02:01.970 --> 00:02:04.250
+out there, who may want
+to contribute to this tool
+
+00:02:04.250 --> 00:02:06.630
+because you want a
+feature or something.
+
+00:02:06.630 --> 00:02:10.070
+So now the code is hopefully
+much more modular, much more
+
+00:02:10.070 --> 00:02:11.030
+readable.
+
+00:02:11.030 --> 00:02:14.000
+And I thought I'd just dive
+in and explain a little bit
+
+00:02:14.000 --> 00:02:17.310
+on how it now works.
+
+00:02:17.310 --> 00:02:21.500
+So before I had a
+so-called Push manifest--
+
+00:02:21.500 --> 00:02:25.280
+and this Push manifest
+was just a way for you
+
+00:02:25.280 --> 00:02:28.610
+to define which resources are
+supposed to be pushed when
+
+00:02:28.610 --> 00:02:30.050
+a certain request comes in.
+
+00:02:30.050 --> 00:02:33.140
+And Eric Bidelman and I
+kind of came up with that,
+
+00:02:33.140 --> 00:02:36.170
+and we kind of wanted to
+make an industry standard.
+
+00:02:36.170 --> 00:02:39.410
+But it turns out that most
+people already had a solution,
+
+00:02:39.410 --> 00:02:41.870
+and those were actually
+HTTP link headers.
+
+00:02:41.870 --> 00:02:45.200
+So now I kind of threw
+away this manifest idea,
+
+00:02:45.200 --> 00:02:47.090
+and went back to
+basically allowing
+
+00:02:47.090 --> 00:02:48.935
+you to specify headers--
+
+00:02:48.935 --> 00:02:51.060
+because that's something
+that people wanted to have
+
+00:02:51.060 --> 00:02:52.894
+anyway, because sometimes
+you can experiment
+
+00:02:52.894 --> 00:02:54.268
+with caching
+headers, or you need
+
+00:02:54.268 --> 00:02:56.110
+to add custom headers
+for whatever reason,
+
+00:02:56.110 --> 00:02:58.760
+or you do sub-circuit
+work, for example.
+
+00:02:58.760 --> 00:03:01.310
+So I added that and
+sketched up a little config,
+
+00:03:01.310 --> 00:03:04.310
+because sometimes you want it
+to do single-page applications,
+
+00:03:04.310 --> 00:03:05.930
+where you need to do rewrites.
+
+00:03:05.930 --> 00:03:08.390
+And I sketched on a
+config, and, in the end,
+
+00:03:08.390 --> 00:03:11.330
+I kind of realized what I
+had was pretty much the same
+
+00:03:11.330 --> 00:03:14.270
+as Firebase has on
+their static hosting.
+
+00:03:14.270 --> 00:03:17.590
+So I decided to basically
+just adopt the entire Firebase
+
+00:03:17.590 --> 00:03:18.830
+config.
+
+00:03:18.830 --> 00:03:21.620
+Which is pretty cool, because,
+while Firebase does have a tool
+
+00:03:21.620 --> 00:03:23.090
+to allow your
+offline development
+
+00:03:23.090 --> 00:03:26.992
+for the static hosting, they
+don't support HTTP/2 or Push.
+
+00:03:26.992 --> 00:03:29.450
+And so with simplehttp2server,
+you can kind of do that now.
+
+00:03:29.450 --> 00:03:32.210
+I mean, it's not
+100% high fidelity,
+
+00:03:32.210 --> 00:03:33.800
+the implementation that I wrote.
+
+00:03:33.800 --> 00:03:35.600
+But so far, it's worked
+with every product
+
+00:03:35.600 --> 00:03:38.760
+that I have on Firebase. and
+I thought that's pretty cool.
+
+00:03:38.760 --> 00:03:39.260
+So yeah.
+
+00:03:39.260 --> 00:03:41.210
+After that, I basically
+just got implementing,
+
+00:03:41.210 --> 00:03:44.330
+and that's what I
+want to talk about.
+
+00:03:44.330 --> 00:03:47.240
+So if you want to start
+by getting the code,
+
+00:03:47.240 --> 00:03:49.490
+you would have to
+go on to GitHub.
+
+00:03:49.490 --> 00:03:52.310
+It is in the Google Chrome
+org in the record called
+
+00:03:52.310 --> 00:03:54.440
+simplehttp2server--
+
+00:03:54.440 --> 00:03:55.940
+who would have thought--
+
+00:03:55.940 --> 00:03:59.360
+and the Read Me has hopefully
+all the information you need.
+
+00:03:59.360 --> 00:04:02.270
+How to get it, how to install
+it, but, also obviously,
+
+00:04:02.270 --> 00:04:03.140
+it has the code.
+
+00:04:03.140 --> 00:04:06.380
+And so the entry point to
+the code, the main function--
+
+00:04:06.380 --> 00:04:10.910
+literally, the main function--
+is in simplehttp2server.go.
+
+00:04:10.910 --> 00:04:13.890
+And in a way, it's
+straightforward.
+
+00:04:13.890 --> 00:04:15.380
+It's just a lot
+of manual config,
+
+00:04:15.380 --> 00:04:17.570
+because I'm doing some
+tricky stuff, which
+
+00:04:17.570 --> 00:04:18.709
+I'm going to explain later.
+
+00:04:18.709 --> 00:04:19.790
+But I do flag parsing.
+
+00:04:19.790 --> 00:04:22.380
+I set up the server, and
+then I have one function
+
+00:04:22.380 --> 00:04:25.655
+which is going to be called for
+every request that comes in.
+
+00:04:25.655 --> 00:04:29.120
+And this function gets pretty
+similar to Express-- actually
+
+00:04:29.120 --> 00:04:30.890
+gets a response
+object where you put
+
+00:04:30.890 --> 00:04:32.990
+in your response and your
+headers in the response,
+
+00:04:32.990 --> 00:04:36.590
+and the request object
+has all the request data.
+
+00:04:36.590 --> 00:04:41.380
+And I basically wrote a function
+called "process with config"
+
+00:04:41.380 --> 00:04:44.450
+that takes both these
+objects and just mangles them
+
+00:04:44.450 --> 00:04:46.490
+according to the config.
+
+00:04:46.490 --> 00:04:50.210
+So if the request
+matches a rewrite rule,
+
+00:04:50.210 --> 00:04:52.010
+it will just
+rewrite the request.
+
+00:04:52.010 --> 00:04:53.920
+If the request
+matches a header rule,
+
+00:04:53.920 --> 00:04:58.280
+it will add these
+headers to the response,
+
+00:04:58.280 --> 00:05:00.030
+and then just returns.
+
+00:05:00.030 --> 00:05:02.660
+What you get back is you figure
+out if you have to redirect it,
+
+00:05:02.660 --> 00:05:05.000
+because then you stop, or
+otherwise you will push
+
+00:05:05.000 --> 00:05:07.820
+the resources-- if
+there's any link headers--
+
+00:05:07.820 --> 00:05:12.890
+or you will grab the files from
+the file system that you need,
+
+00:05:12.890 --> 00:05:16.389
+and just push them
+out to the client.
+
+00:05:16.389 --> 00:05:17.180
+And I have one bit.
+
+00:05:17.180 --> 00:05:21.710
+I used the Gzip implementation
+from The New York Times.
+
+00:05:21.710 --> 00:05:23.420
+They have a Go
+implementation for Gzip
+
+00:05:23.420 --> 00:05:26.750
+Not for Gzip but for an
+HTTP-compatible version of Gzip
+
+00:05:26.750 --> 00:05:31.490
+where, as long as I'm sure
+that the contents of the file
+
+00:05:31.490 --> 00:05:33.737
+are text-based, I'm
+going to run through Gzip
+
+00:05:33.737 --> 00:05:35.570
+And I think a lot of
+local development tools
+
+00:05:35.570 --> 00:05:39.080
+are missing out on this feature,
+because in production you
+
+00:05:39.080 --> 00:05:43.040
+almost always want to have Gzip
+enabled, especially for CSS,
+
+00:05:43.040 --> 00:05:49.280
+because there's so much wins
+if you are enable Gzip for CSS.
+
+00:05:49.280 --> 00:05:52.100
+And in local development,
+you miss out on these gains,
+
+00:05:52.100 --> 00:05:55.790
+and so you might spend
+time optimizing things that
+
+00:05:55.790 --> 00:05:57.180
+don't need optimizing.
+
+00:05:57.180 --> 00:05:58.974
+So, with simplehttp2server,
+you always
+
+00:05:58.974 --> 00:06:00.890
+have Gzip enabled for
+local development, which
+
+00:06:00.890 --> 00:06:02.910
+I think is pretty important.
+
+00:06:02.910 --> 00:06:05.000
+And if it is Gzip then
+I just put up the files.
+
+00:06:05.000 --> 00:06:10.770
+And that's basically the
+whole request-response cycle.
+
+00:06:10.770 --> 00:06:12.717
+So I've been mentioning
+Push, but I said
+
+00:06:12.717 --> 00:06:13.925
+I removed the Push manifests.
+
+00:06:13.925 --> 00:06:15.230
+So how does that work now?
+
+00:06:15.230 --> 00:06:20.090
+So most CDNs use a link
+header, the HTTP link header.
+
+00:06:20.090 --> 00:06:24.650
+If it has a "rel=preload,"
+the CDN's like,
+
+00:06:24.650 --> 00:06:28.190
+Cloudflare or Arcam, I will turn
+this header into an additional
+
+00:06:28.190 --> 00:06:29.000
+push.
+
+00:06:29.000 --> 00:06:31.870
+So if you look into the
+Read Me further down,
+
+00:06:31.870 --> 00:06:34.160
+you will have an example
+where the header's down here,
+
+00:06:34.160 --> 00:06:36.710
+where I say the key
+is "link"-- so I'm
+
+00:06:36.710 --> 00:06:38.180
+specifying a link header--
+
+00:06:38.180 --> 00:06:40.340
+and the value is
+the file that I want
+
+00:06:40.340 --> 00:06:42.200
+to push, in angle brackets.
+
+00:06:42.200 --> 00:06:45.810
+And then I say "rel=preload,"
+because only rel=preload will
+
+00:06:45.810 --> 00:06:46.310
+be pushed.
+
+00:06:46.310 --> 00:06:48.740
+There's also "prefetch,"
+which will actually
+
+00:06:48.740 --> 00:06:51.020
+make the browser download
+and parse the entire file.
+
+00:06:51.020 --> 00:06:53.450
+So preload is a
+little different.
+
+00:06:53.450 --> 00:06:54.980
+And usually it's
+also a good idea
+
+00:06:54.980 --> 00:06:58.220
+to specify what this file is--
+if it's an image or a script--
+
+00:06:58.220 --> 00:07:01.820
+because the browser might
+prioritize how much bandwidth
+
+00:07:01.820 --> 00:07:03.380
+to allocate to that push.
+
+00:07:03.380 --> 00:07:05.930
+But that's stuff that this
+tool allows to play around
+
+00:07:05.930 --> 00:07:07.070
+with and experiment.
+
+00:07:07.070 --> 00:07:11.140
+So this is now
+how you do pushes.
+
+00:07:11.140 --> 00:07:13.390
+And another thing I want to
+touch on-- which I thought
+
+00:07:13.390 --> 00:07:14.230
+was--
+
+00:07:14.230 --> 00:07:16.060
+I felt a little bit
+smart after doing it,
+
+00:07:16.060 --> 00:07:18.226
+but then it turns out a lot
+of people do it already,
+
+00:07:18.226 --> 00:07:22.000
+but still, I totally
+thought I came up with it--
+
+00:07:22.000 --> 00:07:26.380
+is the hijack HTTP
+listener that I wrote.
+
+00:07:26.380 --> 00:07:29.170
+If you look into
+the HTTPS detect.go,
+
+00:07:29.170 --> 00:07:32.050
+what I'm doing here is--
+
+00:07:32.050 --> 00:07:35.380
+for a web server, you usually
+open a listener on port 8080
+
+00:07:35.380 --> 00:07:37.870
+or some port that listens
+for incoming connections
+
+00:07:37.870 --> 00:07:41.410
+and then it gives a connection,
+and usually that connection
+
+00:07:41.410 --> 00:07:43.106
+is handed to the web server.
+
+00:07:43.106 --> 00:07:44.980
+And the web server reads
+from the connection,
+
+00:07:44.980 --> 00:07:48.610
+does the HTTP protocol parsing,
+all that kind of shenanigans,
+
+00:07:48.610 --> 00:07:51.370
+and sends back a response
+via the connection.
+
+00:07:51.370 --> 00:07:53.260
+This hijack listener
+basically is
+
+00:07:53.260 --> 00:07:56.620
+a wedge in between the web
+server and the listener.
+
+00:07:56.620 --> 00:08:01.240
+Because the problem is that if
+you bind an HTTP web server,
+
+00:08:01.240 --> 00:08:05.260
+which HTTP/2 practically
+is, to port 8080,
+
+00:08:05.260 --> 00:08:08.140
+and you type "localhost:8080"
+in your browser,
+
+00:08:08.140 --> 00:08:12.340
+the browser will attempt to
+connect using HTTP plain text.
+
+00:08:12.340 --> 00:08:15.010
+And it's just going to fail,
+because the browser sends
+
+00:08:15.010 --> 00:08:16.904
+a plain text request,
+but the server
+
+00:08:16.904 --> 00:08:18.820
+is trying to do a TLS
+handshake, and it's just
+
+00:08:18.820 --> 00:08:21.680
+going to fail miserably and it's
+going to close the connection.
+
+00:08:21.680 --> 00:08:23.800
+So what I'm doing
+here, basically,
+
+00:08:23.800 --> 00:08:27.250
+is I'm taking the connection
+before it gets to the server
+
+00:08:27.250 --> 00:08:31.620
+implementation, and
+checking if the first byte
+
+00:08:31.620 --> 00:08:34.549
+on the connection
+is the number 22.
+
+00:08:34.549 --> 00:08:36.539
+It's the check I'm
+doing right here.
+
+00:08:36.539 --> 00:08:39.169
+If it's the number 22,
+I can be really sure
+
+00:08:39.169 --> 00:08:41.909
+that it is an HTTPS connection,
+because the first byte
+
+00:08:41.909 --> 00:08:44.580
+of the TLS handshake is byte 22.
+
+00:08:44.580 --> 00:08:46.770
+So if that happens, then
+I say, I'm fine, continue,
+
+00:08:46.770 --> 00:08:48.090
+go to the web server.
+
+00:08:48.090 --> 00:08:51.570
+If it's not, however, I
+basically just ignore whatever
+
+00:08:51.570 --> 00:08:54.030
+the server is-- the
+client is sending me,
+
+00:08:54.030 --> 00:08:57.920
+and just dump a redirect
+response to the web--
+
+00:08:57.920 --> 00:08:59.910
+to the browser, so
+the browser knows,
+
+00:08:59.910 --> 00:09:02.910
+oh, I have to
+reconnect via HTTPS,
+
+00:09:02.910 --> 00:09:04.960
+and now it will be an
+encrypted connection.
+
+00:09:04.960 --> 00:09:08.040
+So now, even if you
+forget to type in HTTPS,
+
+00:09:08.040 --> 00:09:10.190
+it will redirect you, and
+you won't even notice.
+
+00:09:10.190 --> 00:09:12.270
+So it always works
+which I thought
+
+00:09:12.270 --> 00:09:14.550
+is super helpful, because
+I didn't have it before
+
+00:09:14.550 --> 00:09:15.900
+and it was super annoying.
+
+00:09:15.900 --> 00:09:17.550
+So this is like a
+really neat trick
+
+00:09:17.550 --> 00:09:21.450
+that I found, and I
+thought was kind of cool.
+
+00:09:21.450 --> 00:09:24.690
+I guess you could talk a little
+bit about the Firebase config.
+
+00:09:27.540 --> 00:09:32.040
+Basically in Go, you usually
+take any kind of JSON
+
+00:09:32.040 --> 00:09:33.756
+file by defining a struct.
+
+00:09:33.756 --> 00:09:34.880
+And that's what I did here.
+
+00:09:34.880 --> 00:09:39.450
+I just wrote down what the
+JSON looks like as a struct,
+
+00:09:39.450 --> 00:09:43.270
+and the Go JSON powers just
+will fill in the fields for me.
+
+00:09:43.270 --> 00:09:46.500
+So it's super easy and
+go to read JSON files.
+
+00:09:46.500 --> 00:09:49.470
+And then I just take, as I
+said, with a process function.
+
+00:09:49.470 --> 00:09:52.680
+Take response and request, and
+go through all these rules,
+
+00:09:52.680 --> 00:09:56.820
+and do whenever I find something
+that matches this request.
+
+00:09:56.820 --> 00:10:00.510
+The only problem
+here is that Firebase
+
+00:10:00.510 --> 00:10:04.680
+shows not an odd
+format, but the way
+
+00:10:04.680 --> 00:10:09.240
+you define patterns to limit
+rules only to certain requests,
+
+00:10:09.240 --> 00:10:10.400
+they use globbing.
+
+00:10:10.400 --> 00:10:13.380
+So I expect this, usually, but
+they use globbing, and globbing
+
+00:10:13.380 --> 00:10:15.780
+is what you usually
+used on shelves.
+
+00:10:15.780 --> 00:10:17.910
+So if you type something
+like "star.js,"
+
+00:10:17.910 --> 00:10:20.160
+it means every file
+that ends in ".js."
+
+00:10:20.160 --> 00:10:22.470
+You probably have
+encountered this.
+
+00:10:22.470 --> 00:10:25.080
+And these are
+extended globs, which
+
+00:10:25.080 --> 00:10:28.260
+add a few more capabilities
+to this so-called globbing.
+
+00:10:28.260 --> 00:10:31.800
+So, while "star" only matches
+files in the current directory,
+
+00:10:31.800 --> 00:10:36.030
+"star star" means all the
+files in this directory
+
+00:10:36.030 --> 00:10:38.190
+and all other
+directories below this.
+
+00:10:38.190 --> 00:10:44.160
+You have a syntax to group
+multiple file endings.
+
+00:10:44.160 --> 00:10:45.780
+But the problem is
+that this is kind
+
+00:10:45.780 --> 00:10:49.440
+of a very node-specific
+syntax, and there
+
+00:10:49.440 --> 00:10:51.270
+is no package for it in Go.
+
+00:10:51.270 --> 00:10:54.150
+So I had no choice
+but to write my own.
+
+00:10:54.150 --> 00:10:55.044
+And I thought--
+
+00:10:55.044 --> 00:10:57.210
+I'm not going to explain
+how it works, but basically
+
+00:10:57.210 --> 00:10:59.043
+what I'm doing is I'm
+taking the glob string
+
+00:10:59.043 --> 00:11:02.430
+and using simple string-replace
+functions to turn
+
+00:11:02.430 --> 00:11:05.740
+the glob into a Reg X.
+
+00:11:05.740 --> 00:11:07.350
+I'm going to leave it as--
+
+00:11:07.350 --> 00:11:11.190
+let's call it an exercise for
+the reader, to read this code
+
+00:11:11.190 --> 00:11:13.590
+and understand it
+and explain why there
+
+00:11:13.590 --> 00:11:16.040
+is a pig emoji in the middle.
+
+00:11:16.040 --> 00:11:17.869
+So enjoy that.
+
+00:11:17.869 --> 00:11:19.410
+But basically what
+it allows me to do
+
+00:11:19.410 --> 00:11:21.601
+is to compile these
+extended globs
+
+00:11:21.601 --> 00:11:23.100
+and turn it into
+Reg X's, and then I
+
+00:11:23.100 --> 00:11:25.590
+can use the old Reg
+X matching functions
+
+00:11:25.590 --> 00:11:30.100
+to see if a request should be
+mangled with this rule, or not.
+
+00:11:30.100 --> 00:11:35.200
+So I thought, that's kind of
+like a neat little detail.
+
+00:11:35.200 --> 00:11:37.020
+And something I want
+to touch on in the end
+
+00:11:37.020 --> 00:11:40.920
+is that, in the repo, you'll
+find all the instructions
+
+00:11:40.920 --> 00:11:43.030
+on how to install
+it on your system.
+
+00:11:43.030 --> 00:11:45.660
+So if you have Go installed,
+you can just "go get,"
+
+00:11:45.660 --> 00:11:47.952
+and install simplehttp2server.
+
+00:11:47.952 --> 00:11:49.410
+If you don't have
+Go installed, you
+
+00:11:49.410 --> 00:11:51.902
+can find binaries in
+the release section,
+
+00:11:51.902 --> 00:11:52.860
+which I linked to here.
+
+00:11:52.860 --> 00:11:55.920
+So you just click there, and
+you'll see for every release,
+
+00:11:55.920 --> 00:11:59.550
+I upload binaries for Mac
+OS, Linux, and Windows.
+
+00:11:59.550 --> 00:12:01.779
+So whatever system you're
+on, you should be fine.
+
+00:12:01.779 --> 00:12:04.320
+I also have Linux on binary, so
+you can use on your Raspberry
+
+00:12:04.320 --> 00:12:05.459
+Pie, if you are into that.
+
+00:12:05.459 --> 00:12:07.500
+I have it running at home
+on Raspberry Pie, which
+
+00:12:07.500 --> 00:12:09.840
+is kind of cool.
+
+00:12:09.840 --> 00:12:12.510
+I also added a Brew formula,
+which makes it really easy,
+
+00:12:12.510 --> 00:12:18.030
+if you're on Mac OS, to
+just tap into the Brew keg,
+
+00:12:18.030 --> 00:12:21.585
+I think they call it,
+and install it by that
+
+00:12:21.585 --> 00:12:23.460
+and keep up to date,
+because it automatically
+
+00:12:23.460 --> 00:12:24.280
+updates with Brew.
+
+00:12:24.280 --> 00:12:27.294
+And also, recently, I added a
+Docker file, which I thought
+
+00:12:27.294 --> 00:12:27.960
+was pretty neat.
+
+00:12:27.960 --> 00:12:30.030
+Because you don't
+need to have anything
+
+00:12:30.030 --> 00:12:32.400
+installed in your
+system except Docker,
+
+00:12:32.400 --> 00:12:35.550
+and can surf the current
+directory via simplehttp2server
+
+00:12:35.550 --> 00:12:37.551
+using the Docker image.
+
+00:12:37.551 --> 00:12:39.300
+And then, if you wanted
+to, you could even
+
+00:12:39.300 --> 00:12:41.910
+push the Docker image to
+a Google Cloud platform,
+
+00:12:41.910 --> 00:12:44.230
+and share it with a colleague.
+
+00:12:44.230 --> 00:12:47.620
+However, I just want to mention
+simplehttp2server is not
+
+00:12:47.620 --> 00:12:48.870
+a production-ready web server.
+
+00:12:48.870 --> 00:12:50.245
+It's meant for
+local development.
+
+00:12:50.245 --> 00:12:54.420
+So I didn't do any profiling,
+performance optimizations--
+
+00:12:54.420 --> 00:12:56.160
+I didn't even think
+about security.
+
+00:12:56.160 --> 00:12:58.820
+I think by default, it's
+completely course-enabled,
+
+00:12:58.820 --> 00:13:00.906
+so it just opens up
+everything to the world.
+
+00:13:00.906 --> 00:13:02.030
+Don't use it in production.
+
+00:13:02.030 --> 00:13:03.830
+It's for local development.
+
+00:13:03.830 --> 00:13:06.300
+But, if you want to
+fix something up,
+
+00:13:06.300 --> 00:13:09.630
+then I feel much more
+comfortable now inviting you
+
+00:13:09.630 --> 00:13:11.130
+into the repo,
+because now the code
+
+00:13:11.130 --> 00:13:13.870
+is actually more approachable.
+
+00:13:13.870 --> 00:13:16.440
+So if you want to do that,
+feel free to go to the repo.
+
+00:13:16.440 --> 00:13:19.200
+I'll put links to all of
+this in the description,
+
+00:13:19.200 --> 00:13:21.210
+so you can just
+click and go there--
+
+00:13:21.210 --> 00:13:22.110
+maybe start.
+
+00:13:22.110 --> 00:13:23.130
+That would be nice.
+
+00:13:23.130 --> 00:13:25.560
+Also, if you like this video,
+and want more of those,
+
+00:13:25.560 --> 00:13:27.240
+you should probably subscribe.
+
+00:13:27.240 --> 00:13:32.110
+Because, then, you'll get
+notified about new videos.
+
+00:13:32.110 --> 00:13:36.812
+I think-- I think that's
+it for this video and--
+
+00:13:36.812 --> 00:13:38.770
+it hurts me to say-- but
+I guess the next video
+
+00:13:38.770 --> 00:13:41.420
+is going to be Paul, again.
+
+00:13:41.420 --> 00:13:43.551
+Well, stick around if
+you want to see that.
+
+00:13:43.551 --> 00:13:44.300
+See you next time.
+
+00:13:44.300 --> 00:13:47.650
+[MUSIC PLAYING]
+

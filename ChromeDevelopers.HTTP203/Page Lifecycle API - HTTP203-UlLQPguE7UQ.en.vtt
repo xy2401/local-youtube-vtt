@@ -1,0 +1,1311 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.050 --> 00:00:00.800
+SURMA: What is it?
+
+00:00:00.800 --> 00:00:01.940
+Give me the TLDR.
+
+00:00:01.940 --> 00:00:02.570
+JAKE: Well, OK.
+
+00:00:02.570 --> 00:00:05.125
+On mobile-- this is
+not going to be a TLDR.
+
+00:00:05.125 --> 00:00:06.166
+This is going to be long.
+
+00:00:06.166 --> 00:00:07.960
+[LAUGHING]
+
+00:00:07.960 --> 00:00:10.190
+SURMA: I want a
+T-- that makes it
+
+00:00:10.190 --> 00:00:12.090
+like an appetizer
+for the audience.
+
+00:00:12.090 --> 00:00:12.590
+JAKE: OK.
+
+00:00:12.590 --> 00:00:15.210
+In, like, a movie
+trailer-esque--
+
+00:00:15.210 --> 00:00:17.270
+SURMA: One tab, one desire.
+
+00:00:17.270 --> 00:00:17.375
+JAKE: (IMITATES
+TRAILER NARRATOR)
+
+00:00:17.375 --> 00:00:19.190
+We don't have enough
+memory for all these tabs!
+
+00:00:19.190 --> 00:00:19.790
+It doesn't matter.
+
+00:00:19.790 --> 00:00:20.960
+We don't need all the tabs.
+
+00:00:20.960 --> 00:00:26.100
+[MIMICS EXPLOSIONS] Coming soon
+to a browser near you, the Page
+
+00:00:26.100 --> 00:00:27.830
+Lifecycle API!
+
+00:00:27.830 --> 00:00:31.190
+[MUSIC PLAYING]
+
+00:00:34.550 --> 00:00:36.570
+I've been reading an article--
+
+00:00:36.570 --> 00:00:37.300
+well, OK.
+
+00:00:37.300 --> 00:00:41.150
+So I was involved very roughly
+at the start of this API.
+
+00:00:41.150 --> 00:00:44.190
+But I didn't have time to do
+anything meaningful to it.
+
+00:00:44.190 --> 00:00:45.730
+SURMA: That's just
+the career, man.
+
+00:00:45.730 --> 00:00:46.860
+JAKE: Yeah.
+
+00:00:46.860 --> 00:00:49.610
+I was saying that at the start,
+it seems like it lends me some
+
+00:00:49.610 --> 00:00:51.600
+credibility, but
+it really doesn't.
+
+00:00:51.600 --> 00:00:54.749
+But Phil Walton
+has been involved
+
+00:00:54.749 --> 00:00:55.790
+with this from the start.
+
+00:00:55.790 --> 00:00:58.900
+And he wrote an article
+that we'll link to as well.
+
+00:00:58.900 --> 00:01:01.975
+This is the Page Lifecycle API.
+
+00:01:01.975 --> 00:01:02.600
+SURMA: Oh, yes.
+
+00:01:02.600 --> 00:01:05.990
+JAKE: This is a new thing
+that dropped in Chrome 68.
+
+00:01:05.990 --> 00:01:06.984
+Very exciting.
+
+00:01:06.984 --> 00:01:07.900
+I think it's exciting.
+
+00:01:07.900 --> 00:01:08.880
+SURMA: OK.
+
+00:01:08.880 --> 00:01:09.380
+What is it?
+
+00:01:09.380 --> 00:01:10.525
+Give me the TLDR.
+
+00:01:10.525 --> 00:01:11.150
+JAKE: Well, OK.
+
+00:01:11.150 --> 00:01:13.694
+On mobile-- this is
+not going to be a TLDR.
+
+00:01:13.694 --> 00:01:14.735
+This is going to be long.
+
+00:01:14.735 --> 00:01:16.100
+[LAUGHING]
+
+00:01:16.100 --> 00:01:17.290
+SURMA: I want a T--
+
+00:01:17.290 --> 00:01:20.395
+that makes it like an
+appetizer for the audience
+
+00:01:20.395 --> 00:01:21.530
+to keep listening.
+
+00:01:21.530 --> 00:01:23.520
+JAKE: Pages can be
+torn down, right?
+
+00:01:23.520 --> 00:01:25.110
+Like, on mobile, there's no--
+
+00:01:25.110 --> 00:01:26.260
+SURMA: And they often are.
+
+00:01:26.260 --> 00:01:26.780
+JAKE: Yeah.
+
+00:01:26.780 --> 00:01:28.550
+On mobile, you go away
+from the browser--
+
+00:01:28.550 --> 00:01:29.220
+SURMA: The second you--
+
+00:01:29.220 --> 00:01:30.090
+JAKE: --pages go away,
+
+00:01:30.090 --> 00:01:30.940
+SURMA: So you said--
+
+00:01:30.940 --> 00:01:31.100
+JAKE: --the whole
+browser goes away.
+
+00:01:31.100 --> 00:01:32.600
+SURMA: --when you go away
+from the browser, or just
+
+00:01:32.600 --> 00:01:33.260
+different tab?
+
+00:01:33.260 --> 00:01:33.440
+Or--
+
+00:01:33.440 --> 00:01:34.400
+JAKE: Different tabs, as well.
+
+00:01:34.400 --> 00:01:34.580
+SURMA: Yeah.
+
+00:01:34.580 --> 00:01:35.130
+JAKE: Yeah.
+
+00:01:35.130 --> 00:01:36.380
+If you go to a different tab--
+
+00:01:36.380 --> 00:01:37.850
+SURMA: Doesn't it have, like,
+I'm going to type something in.
+
+00:01:37.850 --> 00:01:40.670
+Oh, I need to look up what
+the code was on the other tab.
+
+00:01:40.670 --> 00:01:42.360
+Go back, go back,
+everything is gone.
+
+00:01:42.360 --> 00:01:43.057
+Noooo!
+
+00:01:43.057 --> 00:01:43.640
+JAKE: Exactly.
+
+00:01:43.640 --> 00:01:47.110
+And so it's worse on
+devices with less memory.
+
+00:01:47.110 --> 00:01:48.860
+If you got a bit more
+memory, it's better.
+
+00:01:48.860 --> 00:01:51.140
+But I think, by default,
+if a tab has not
+
+00:01:51.140 --> 00:01:54.390
+been used for five minutes
+on Android, we get rid.
+
+00:01:54.390 --> 00:01:55.370
+SURMA: OK.
+
+00:01:55.370 --> 00:01:58.620
+JAKE: Other mobile platforms do
+exactly the same thing, right?
+
+00:01:58.620 --> 00:02:00.650
+Like, phones have less memory.
+
+00:02:03.510 --> 00:02:06.080
+So it's kind of like, can we
+get that into the specs somehow?
+
+00:02:06.080 --> 00:02:07.370
+Can we do the sensible thing?
+
+00:02:07.370 --> 00:02:08.744
+So the current
+state of things is
+
+00:02:08.744 --> 00:02:11.990
+that, we can think of a
+page having an active state
+
+00:02:11.990 --> 00:02:13.340
+and a passive state.
+
+00:02:13.340 --> 00:02:14.600
+This exists already.
+
+00:02:14.600 --> 00:02:16.492
+Active is, you're
+using that page.
+
+00:02:16.492 --> 00:02:17.450
+You're clicking around.
+
+00:02:17.450 --> 00:02:18.350
+You're doing stuff.
+
+00:02:18.350 --> 00:02:19.880
+Brilliant.
+
+00:02:19.880 --> 00:02:23.599
+And then passive
+is, it's blurred.
+
+00:02:23.599 --> 00:02:24.640
+SURMA: You've lost focus.
+
+00:02:24.640 --> 00:02:26.051
+JAKE: You've lost focus.
+
+00:02:26.051 --> 00:02:27.800
+And that's what we
+call the passive state.
+
+00:02:27.800 --> 00:02:29.410
+And you get events for that.
+
+00:02:29.410 --> 00:02:31.700
+You've had events for that
+for ages-- unfocused, blur.
+
+00:02:31.700 --> 00:02:32.400
+Yeah.
+
+00:02:32.400 --> 00:02:33.379
+unfocus, unblur.
+
+00:02:33.379 --> 00:02:35.170
+SURMA: But these are
+the only [INAUDIBLE],,
+
+00:02:35.170 --> 00:02:37.930
+because these are also on
+the input elements, right?
+
+00:02:37.930 --> 00:02:39.940
+When an individual input
+element gets focus,
+
+00:02:39.940 --> 00:02:40.990
+literally, the code is in there.
+
+00:02:40.990 --> 00:02:42.850
+But there's also
+document-level focus and blur.
+
+00:02:42.850 --> 00:02:43.510
+JAKE: Exactly.
+
+00:02:43.510 --> 00:02:44.680
+Yes.
+
+00:02:44.680 --> 00:02:47.031
+And so when it's in the
+passive state, it could still--
+
+00:02:47.031 --> 00:02:49.030
+because it will run
+JavaScript and stuff, right?
+
+00:02:49.030 --> 00:02:50.050
+Because that's your--
+
+00:02:50.050 --> 00:02:51.261
+SURMA: setTimeout [INAUDIBLE]
+
+00:02:51.261 --> 00:02:51.760
+JAKE: Yeah.
+
+00:02:51.760 --> 00:02:53.470
+Some things might be reduced.
+
+00:02:53.470 --> 00:02:58.100
+They tend not to be too much
+because it's still visible.
+
+00:02:58.100 --> 00:03:00.144
+It could be on your
+second monitor, your--
+
+00:03:00.144 --> 00:03:01.810
+SURMA: Yes, but we're
+not talking mobile
+
+00:03:01.810 --> 00:03:02.647
+here exclusively.
+
+00:03:02.647 --> 00:03:04.480
+We're talking about
+both mobile and desktop.
+
+00:03:04.480 --> 00:03:04.979
+JAKE: Yes.
+
+00:03:04.979 --> 00:03:07.750
+But I mean, with phones
+that have split screen view,
+
+00:03:07.750 --> 00:03:12.220
+you could still have
+this style thing.
+
+00:03:12.220 --> 00:03:14.900
+And then the next
+state is Hidden.
+
+00:03:14.900 --> 00:03:16.765
+SURMA: Ah, that's
+Visibility API, isn't it?
+
+00:03:16.765 --> 00:03:17.640
+JAKE: Visibility API.
+
+00:03:17.640 --> 00:03:19.389
+So you've got the
+Visibility Change event.
+
+00:03:19.389 --> 00:03:21.970
+And this is when you
+switch to another tab.
+
+00:03:21.970 --> 00:03:24.710
+SURMA: Does the desktop actually
+detect occlusion, as well?
+
+00:03:24.710 --> 00:03:25.090
+JAKE: Do you know what?
+
+00:03:25.090 --> 00:03:26.300
+I knew you were
+going to ask this.
+
+00:03:26.300 --> 00:03:27.700
+So I tested it, and it does not.
+
+00:03:27.700 --> 00:03:28.199
+SURMA: Cool.
+
+00:03:28.199 --> 00:03:29.530
+JAKE: But do you know what?
+
+00:03:29.530 --> 00:03:30.844
+Browsers could do that.
+
+00:03:30.844 --> 00:03:32.260
+That would be a
+valid thing to do.
+
+00:03:32.260 --> 00:03:34.420
+So what they do-- or the
+ones I tested anyway,
+
+00:03:34.420 --> 00:03:38.920
+which is browsers on Mac,
+Firefox, Safari, and Chrome--
+
+00:03:38.920 --> 00:03:40.330
+I should remember that last one.
+
+00:03:40.330 --> 00:03:43.880
+If you switch desktops,
+it will Visibility
+
+00:03:43.880 --> 00:03:45.630
+Hidden, because
+technically, it is hidden.
+
+00:03:45.630 --> 00:03:47.180
+SURMA: Full screen?
+
+00:03:47.180 --> 00:03:50.170
+Or also on workspace
+to workspace?
+
+00:03:50.170 --> 00:03:50.800
+JAKE: So--
+
+00:03:50.800 --> 00:03:51.260
+SURMA: I gotcha!
+
+00:03:51.260 --> 00:03:52.020
+Didn't test that.
+
+00:03:52.020 --> 00:03:52.960
+JAKE: Yeah, I didn't
+test full screen.
+
+00:03:52.960 --> 00:03:54.876
+But I presume it would
+work because it's still
+
+00:03:54.876 --> 00:03:56.740
+going onto a desktop
+that's dominant view.
+
+00:03:56.740 --> 00:03:59.120
+So you get events
+for that as well.
+
+00:03:59.120 --> 00:04:02.920
+And then you can go from
+Hidden to Terminated, right?
+
+00:04:02.920 --> 00:04:04.500
+You close a tab.
+
+00:04:04.500 --> 00:04:06.230
+It's going to go
+through those phases.
+
+00:04:06.230 --> 00:04:08.800
+And it is mostly a line, right?
+
+00:04:08.800 --> 00:04:09.580
+You can go--
+
+00:04:09.580 --> 00:04:10.240
+SURMA: Yeah, it's like a--
+
+00:04:10.240 --> 00:04:11.440
+JAKE: Active and
+Passive in Mac, you
+
+00:04:11.440 --> 00:04:13.180
+can go from Passive
+to Hidden, then back.
+
+00:04:13.180 --> 00:04:14.680
+You can go from
+Hidden to Terminate.
+
+00:04:14.680 --> 00:04:15.850
+You can't go back
+from that one, but--
+
+00:04:15.850 --> 00:04:16.349
+SURMA: True.
+
+00:04:16.349 --> 00:04:19.720
+But you can't go
+from Hidden to--
+
+00:04:19.720 --> 00:04:20.347
+JAKE: Active.
+
+00:04:20.347 --> 00:04:21.430
+SURMA: Active in one step.
+
+00:04:21.430 --> 00:04:23.846
+There has to be the "you are
+now visible" step in between.
+
+00:04:23.846 --> 00:04:26.547
+So it's like a nice hierarchy
+of states that you can be in.
+
+00:04:26.547 --> 00:04:27.130
+JAKE: Exactly.
+
+00:04:27.130 --> 00:04:29.421
+And saying that you can't go
+from Active to Terminated,
+
+00:04:29.421 --> 00:04:31.034
+ah, except if--
+
+00:04:31.034 --> 00:04:31.950
+SURMA: Except you can.
+
+00:04:31.950 --> 00:04:33.070
+JAKE: I think on mobile you can.
+
+00:04:33.070 --> 00:04:34.810
+And that's like if the
+browser goes out of memory.
+
+00:04:34.810 --> 00:04:36.268
+If a tab crashes,
+of course, you've
+
+00:04:36.268 --> 00:04:38.230
+gone from Active to Terminated.
+
+00:04:38.230 --> 00:04:42.120
+But mostly, it's a
+nice linear system.
+
+00:04:42.120 --> 00:04:43.272
+New bits.
+
+00:04:43.272 --> 00:04:44.230
+From the Hidden state--
+
+00:04:44.230 --> 00:04:45.271
+SURMA: So what's missing?
+
+00:04:45.271 --> 00:04:46.650
+Why are we doing new bits?
+
+00:04:46.650 --> 00:04:48.649
+JAKE: Well, so--
+
+00:04:48.649 --> 00:04:50.440
+SURMA: Because you want
+to hook into these.
+
+00:04:50.440 --> 00:04:51.940
+And we have a couple of events.
+
+00:04:51.940 --> 00:04:55.050
+JAKE: So we want this new
+state called "Frozen."
+
+00:04:55.050 --> 00:04:55.630
+SURMA: OK.
+
+00:04:55.630 --> 00:04:57.850
+JAKE: And this is
+where you've got--
+
+00:04:57.850 --> 00:05:00.460
+we want to start
+turning off timers.
+
+00:05:00.460 --> 00:05:02.259
+We want to start, essentially--
+
+00:05:02.259 --> 00:05:03.550
+SURMA: Like set timeout timers.
+
+00:05:03.550 --> 00:05:05.174
+JAKE: We want to stop
+the page running.
+
+00:05:05.174 --> 00:05:06.160
+SURMA: OK.
+
+00:05:06.160 --> 00:05:06.720
+JAKE: But--
+
+00:05:06.720 --> 00:05:07.720
+SURMA: Not terminate it.
+
+00:05:07.720 --> 00:05:08.470
+JAKE: We want to be able to--
+
+00:05:08.470 --> 00:05:10.130
+yeah, we want to be
+able to bring back.
+
+00:05:10.130 --> 00:05:12.396
+You're still going
+to use memory.
+
+00:05:12.396 --> 00:05:14.770
+Or I mean, I suppose you could
+write that memory to disk.
+
+00:05:14.770 --> 00:05:17.197
+SURMA: I guess you
+want to freeze it.
+
+00:05:17.197 --> 00:05:19.030
+JAKE: That would be a
+good name for it, yes.
+
+00:05:19.030 --> 00:05:19.990
+Exactly.
+
+00:05:19.990 --> 00:05:21.280
+So this is the new state.
+
+00:05:21.280 --> 00:05:23.950
+And it's also browsers that
+have a back-forward page
+
+00:05:23.950 --> 00:05:27.280
+cache are going to use to
+define that, the BF cache.
+
+00:05:27.280 --> 00:05:28.651
+So yeah, it's called Frozen.
+
+00:05:28.651 --> 00:05:30.400
+And then so you'll get
+a Frozen event when
+
+00:05:30.400 --> 00:05:33.340
+it goes from Hidden to Frozen,
+and a Resume event when
+
+00:05:33.340 --> 00:05:36.100
+it goes from Frozen to Hidden.
+
+00:05:36.100 --> 00:05:42.790
+And another new state, from
+Frozen, it can go to Discarded.
+
+00:05:42.790 --> 00:05:43.300
+SURMA: OK.
+
+00:05:43.300 --> 00:05:46.750
+JAKE: And this is
+specifically for that.
+
+00:05:46.750 --> 00:05:50.860
+It's gone, but there might
+still be UI representing it.
+
+00:05:50.860 --> 00:05:52.360
+And this is what
+you have on mobile,
+
+00:05:52.360 --> 00:05:53.320
+because although we get--
+
+00:05:53.320 --> 00:05:53.830
+SURMA: Ah, is this
+the Android thing
+
+00:05:53.830 --> 00:05:56.560
+where they just save the
+screenshot, more or less,
+
+00:05:56.560 --> 00:05:58.100
+off the app so we
+can swipe through.
+
+00:05:58.100 --> 00:06:01.210
+But if you actually activate
+it, it actually has to boot up.
+
+00:06:01.210 --> 00:06:01.880
+JAKE: Exactly.
+
+00:06:01.880 --> 00:06:04.780
+And so, yeah, even Androids,
+the browser goes out of memory,
+
+00:06:04.780 --> 00:06:06.520
+you open it up, all
+those tabs are there.
+
+00:06:06.520 --> 00:06:07.936
+Some of them,
+through screenshots,
+
+00:06:07.936 --> 00:06:10.720
+try and pretend that
+they're still active.
+
+00:06:10.720 --> 00:06:11.630
+But they're not.
+
+00:06:11.630 --> 00:06:13.330
+They're going to
+do a full reload.
+
+00:06:13.330 --> 00:06:15.850
+So this is a new thing.
+
+00:06:15.850 --> 00:06:17.590
+You've got events
+for all of these,
+
+00:06:17.590 --> 00:06:18.790
+including these new ones.
+
+00:06:18.790 --> 00:06:20.373
+SURMA: All of these,
+and the old ones,
+
+00:06:20.373 --> 00:06:21.612
+as well, you said are events.
+
+00:06:21.612 --> 00:06:22.570
+JAKE: Yeah, yeah, yeah.
+
+00:06:22.570 --> 00:06:23.361
+They're all events.
+
+00:06:23.361 --> 00:06:26.050
+SURMA: So can I prevent
+defaulting, and be like, no!
+
+00:06:26.050 --> 00:06:27.880
+I don't want you to suspend me!
+
+00:06:27.880 --> 00:06:29.050
+JAKE: You may not.
+
+00:06:29.050 --> 00:06:29.839
+No.
+
+00:06:29.839 --> 00:06:32.380
+You can react to them, but no,
+you can't control any of them.
+
+00:06:32.380 --> 00:06:32.820
+SURMA: That's interesting.
+
+00:06:32.820 --> 00:06:34.400
+So you say I can react to them.
+
+00:06:34.400 --> 00:06:37.540
+So there's a grace
+period where I'm still
+
+00:06:37.540 --> 00:06:39.797
+allowed to run code
+before the actual freezing
+
+00:06:39.797 --> 00:06:40.630
+or whatever happens?
+
+00:06:40.630 --> 00:06:43.332
+JAKE: So the recommendation
+is, on Hidden,
+
+00:06:43.332 --> 00:06:45.040
+when you get into the
+Hidden stage, which
+
+00:06:45.040 --> 00:06:48.310
+is that you use the Visibility
+Change to pick that up--
+
+00:06:48.310 --> 00:06:49.869
+save any data that you--
+
+00:06:49.869 --> 00:06:51.160
+SURMA: Like to IDB or whatever.
+
+00:06:51.160 --> 00:06:53.780
+JAKE: To IDB or whatever.
+
+00:06:53.780 --> 00:06:56.590
+And when you get
+the Freeze event,
+
+00:06:56.590 --> 00:06:59.320
+you have the length of that
+event, really, synchronously.
+
+00:06:59.320 --> 00:07:00.950
+SURMA: So no async.
+
+00:07:00.950 --> 00:07:02.450
+JAKE: There might
+be a grace period,
+
+00:07:02.450 --> 00:07:03.850
+but you really,
+for safety, would
+
+00:07:03.850 --> 00:07:04.690
+treat that as synchronous.
+
+00:07:04.690 --> 00:07:06.100
+SURMA: Wouldn't this be a great
+use case for like prevent F4--
+
+00:07:06.100 --> 00:07:07.829
+JAKE: For wait until-- yeah.
+
+00:07:07.829 --> 00:07:09.370
+That was discussed,
+but I don't think
+
+00:07:09.370 --> 00:07:12.210
+anyone could agree on
+what the time should be.
+
+00:07:12.210 --> 00:07:14.170
+And there's worries
+about, people would just
+
+00:07:14.170 --> 00:07:16.480
+use it to keep the page
+alive or something like that.
+
+00:07:16.480 --> 00:07:17.660
+SURMA: Yeah, OK, fair.
+
+00:07:17.660 --> 00:07:19.743
+JAKE: I mean, that might
+still happen in some ways
+
+00:07:19.743 --> 00:07:22.150
+because heuristics--
+if sound is playing,
+
+00:07:22.150 --> 00:07:24.040
+it's not going to freeze a tab.
+
+00:07:24.040 --> 00:07:27.160
+So you'd get that hackware,
+play an empty sound.
+
+00:07:27.160 --> 00:07:31.490
+And you use everyone's battery,
+but you get to stay alive.
+
+00:07:31.490 --> 00:07:36.230
+So yeah, but on Freeze, you
+get that length of time.
+
+00:07:36.230 --> 00:07:39.850
+And this is like an API
+which I have not used in ages
+
+00:07:39.850 --> 00:07:41.550
+comes into play.
+
+00:07:41.550 --> 00:07:44.220
+And that's session storage.
+
+00:07:44.220 --> 00:07:45.970
+So there's a bit of
+special behavior here.
+
+00:07:45.970 --> 00:07:49.120
+And I was looking at
+the spec versus the--
+
+00:07:49.120 --> 00:07:51.190
+this doesn't seem well
+written in the space.
+
+00:07:51.190 --> 00:07:53.600
+It's kind of as an example.
+
+00:07:53.600 --> 00:07:57.920
+But the suggestion is that,
+if a tab is discarded--
+
+00:07:57.920 --> 00:07:59.470
+so the page is
+essentially unloaded.
+
+00:07:59.470 --> 00:08:00.696
+It's gone.
+
+00:08:00.696 --> 00:08:01.820
+You saw that the tab there.
+
+00:08:01.820 --> 00:08:04.900
+And when you click back to
+it, it's going to reload.
+
+00:08:04.900 --> 00:08:06.709
+Session storage will persist.
+
+00:08:06.709 --> 00:08:07.500
+SURMA: Interesting.
+
+00:08:07.500 --> 00:08:08.800
+JAKE: Because the
+tab is still there.
+
+00:08:08.800 --> 00:08:11.008
+SURMA: But if I close the
+tab, and then Command-Shift
+
+00:08:11.008 --> 00:08:12.380
+to reopen, that will be--
+
+00:08:12.380 --> 00:08:13.570
+JAKE: Then it's gone.
+
+00:08:13.570 --> 00:08:17.290
+So it's a nice safe place
+to put data that's--
+
+00:08:17.290 --> 00:08:20.500
+for maybe legal reasons or for
+usability reasons-- that you
+
+00:08:20.500 --> 00:08:24.040
+don't think should persist
+beyond the life of a tab,
+
+00:08:24.040 --> 00:08:26.420
+but it will persist
+beyond discarding.
+
+00:08:26.420 --> 00:08:30.720
+And once the page reloads, there
+is document dot was discarded.
+
+00:08:30.720 --> 00:08:33.700
+SURMA: Oh, for if you're
+being restored or actually
+
+00:08:33.700 --> 00:08:35.650
+being loaded completely fresh.
+
+00:08:35.650 --> 00:08:37.870
+JAKE: So if the user
+closes the tab to the app,
+
+00:08:37.870 --> 00:08:41.500
+and they go back to it, we
+could, using web storage,
+
+00:08:41.500 --> 00:08:42.400
+show them--
+
+00:08:42.400 --> 00:08:44.800
+put the app into the
+same state it was before.
+
+00:08:44.800 --> 00:08:48.159
+And I've always been really
+unsure about that because--
+
+00:08:48.159 --> 00:08:49.700
+SURMA: I mean, it
+depends on the app.
+
+00:08:49.700 --> 00:08:52.770
+But in this app it seems
+unexpected, I guess.
+
+00:08:52.770 --> 00:08:56.047
+JAKE: Right, because I think
+one of the benefits of doing
+
+00:08:56.047 --> 00:08:58.630
+something like image compression
+on the client is you can say,
+
+00:08:58.630 --> 00:09:00.780
+we're not sending it to
+the server or anything.
+
+00:09:00.780 --> 00:09:03.010
+This is fine to use
+for private data.
+
+00:09:03.010 --> 00:09:06.310
+But the problem is, someone
+puts a sensitive image
+
+00:09:06.310 --> 00:09:09.190
+into the app, close
+the app, and then
+
+00:09:09.190 --> 00:09:11.270
+they give their laptop
+someone else or something,
+
+00:09:11.270 --> 00:09:13.030
+or they open it on stage.
+
+00:09:13.030 --> 00:09:16.915
+And suddenly there's,
+let's say, a receipt
+
+00:09:16.915 --> 00:09:18.040
+with important information.
+
+00:09:18.040 --> 00:09:18.539
+SURMA: Yeah.
+
+00:09:18.539 --> 00:09:19.280
+Not nudes.
+
+00:09:19.280 --> 00:09:22.030
+JAKE: Not nudes, no.
+
+00:09:22.030 --> 00:09:25.150
+But with this, this sounds like
+a good way of doing it, right,
+
+00:09:25.150 --> 00:09:26.360
+this being able to--
+
+00:09:26.360 --> 00:09:26.414
+SURMA: Yeah.
+
+00:09:26.414 --> 00:09:28.180
+Now, you have a proper
+semantic for when to check
+
+00:09:28.180 --> 00:09:29.350
+what you've stored, and--
+
+00:09:29.350 --> 00:09:30.933
+JAKE: Because it
+seems understandable,
+
+00:09:30.933 --> 00:09:32.860
+if there's a tab
+still there, it's
+
+00:09:32.860 --> 00:09:34.660
+understanding from
+a user's perspective
+
+00:09:34.660 --> 00:09:36.792
+that if they go
+back into that tab,
+
+00:09:36.792 --> 00:09:38.750
+it should be in the same
+state as they left it.
+
+00:09:38.750 --> 00:09:39.160
+SURMA: Yes.
+
+00:09:39.160 --> 00:09:39.440
+Exactly.
+
+00:09:39.440 --> 00:09:40.750
+JAKE: In fact, it's almost
+unexpected to be the opposite.
+
+00:09:40.750 --> 00:09:43.130
+SURMA: I haven't looked at
+session storage ever, I think.
+
+00:09:43.130 --> 00:09:44.900
+Is it synchronous
+like local storage?
+
+00:09:44.900 --> 00:09:45.840
+JAKE: Yep.
+
+00:09:45.840 --> 00:09:49.460
+It's the same kind of API.
+
+00:09:49.460 --> 00:09:54.310
+The benefit of it in
+legal terms, I think,
+
+00:09:54.310 --> 00:09:56.500
+is that the storage
+is held in memory.
+
+00:09:56.500 --> 00:09:58.810
+I think in certain
+circumstances,
+
+00:09:58.810 --> 00:10:01.240
+rules change once
+that goes onto disk.
+
+00:10:01.240 --> 00:10:02.230
+SURMA: Yeah.
+
+00:10:02.230 --> 00:10:03.937
+And you've got--
+
+00:10:03.937 --> 00:10:06.520
+I think, historically you would
+be using cookies or something,
+
+00:10:06.520 --> 00:10:08.240
+but that would actually
+go onto the network.
+
+00:10:08.240 --> 00:10:09.190
+And you don't want that.
+
+00:10:09.190 --> 00:10:11.610
+JAKE: Right, and that's on disk,
+as well, and on the network.
+
+00:10:11.610 --> 00:10:12.943
+I think it's just local storage.
+
+00:10:12.943 --> 00:10:16.210
+SURMA: So Lifecycle API,
+you said it's in Chrome 68?
+
+00:10:16.210 --> 00:10:17.170
+JAKE: Chrome 68.
+
+00:10:17.170 --> 00:10:18.620
+There's some nice
+debugging tools.
+
+00:10:18.620 --> 00:10:22.240
+If you go to Chrome
+colon Discards,
+
+00:10:22.240 --> 00:10:25.930
+there's a nice little API
+there where you can put pages
+
+00:10:25.930 --> 00:10:27.230
+into certain states.
+
+00:10:27.230 --> 00:10:29.892
+Because we have ambitions to
+do this on desktop, as well.
+
+00:10:29.892 --> 00:10:30.850
+SURMA: I would hope so.
+
+00:10:30.850 --> 00:10:32.360
+JAKE: Because, I mean, I
+don't know about the amount
+
+00:10:32.360 --> 00:10:33.296
+of tabs you have.
+
+00:10:33.296 --> 00:10:34.420
+SURMA: I have many of them.
+
+00:10:34.420 --> 00:10:36.940
+And I am the Great Suspender,
+because I have so many tabs,
+
+00:10:36.940 --> 00:10:37.990
+and they all stay active.
+
+00:10:37.990 --> 00:10:38.490
+Right?
+
+00:10:38.490 --> 00:10:40.849
+So I have a Chrome extension
+that puts them to sleep.
+
+00:10:40.849 --> 00:10:41.890
+JAKE: Puts them to sleep.
+
+00:10:41.890 --> 00:10:42.390
+Right.
+
+00:10:42.390 --> 00:10:45.070
+SURMA: So if I cannot
+have to have an extension,
+
+00:10:45.070 --> 00:10:47.210
+but rather Chrome do it
+itself, I'm all for that.
+
+00:10:47.210 --> 00:10:48.900
+JAKE: And it's good
+for memory, as well,
+
+00:10:48.900 --> 00:10:50.191
+because you know that stuff's--
+
+00:10:50.191 --> 00:10:53.174
+SURMA: But to be clear,
+this is a standard, right?
+
+00:10:53.174 --> 00:10:54.590
+JAKE: Yes, this
+is a web standard.
+
+00:10:54.590 --> 00:10:56.950
+It's on the YCG Page Lifecycle.
+
+00:10:56.950 --> 00:10:58.049
+Yeah.
+
+00:10:58.049 --> 00:11:00.340
+Things like back-forward
+cache have been built into it.
+
+00:11:00.340 --> 00:11:04.060
+So it's not just with Chrome in
+mind, it's with other browsers,
+
+00:11:04.060 --> 00:11:04.810
+as well.
+
+00:11:04.810 --> 00:11:05.310
+SURMA: Cool.
+
+00:11:05.310 --> 00:11:07.790
+JAKE: So Safari and Firefox
+have the back-forward cache.
+
+00:11:07.790 --> 00:11:08.490
+Yeah.
+
+00:11:08.490 --> 00:11:09.760
+I think it's really good.
+
+00:11:09.760 --> 00:11:11.344
+I think it's not
+just good for mobile,
+
+00:11:11.344 --> 00:11:13.051
+I think it's going to
+be good for desktop
+
+00:11:13.051 --> 00:11:14.042
+down the line as well.
+
+00:11:14.042 --> 00:11:15.290
+SURMA: Cool.
+
+00:11:15.290 --> 00:11:16.900
+JAKE: I'm not
+entirely comfortable
+
+00:11:16.900 --> 00:11:19.970
+with the idea of human contact.
+
+00:11:19.970 --> 00:11:21.420
+I don't think it's right.
+
+00:11:21.420 --> 00:11:23.420
+SURMA: I mean, that's not
+surprising considering
+
+00:11:23.420 --> 00:11:26.230
+you are very vocal about
+not being a hugger.
+
+00:11:26.230 --> 00:11:26.740
+JAKE: Yeah.
+
+00:11:26.740 --> 00:11:28.720
+I'm not a great hugger.
+
+00:11:28.720 --> 00:11:30.100
+I do it if necessary.
+
+00:11:30.100 --> 00:11:31.950
+[LAUGHTER]
+

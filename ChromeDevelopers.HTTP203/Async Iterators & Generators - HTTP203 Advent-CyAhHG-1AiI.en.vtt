@@ -1,0 +1,340 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.339
+[MUSIC PLAYING]
+
+00:00:06.680 --> 00:00:09.577
+SURMA: So, 2018--
+
+00:00:09.577 --> 00:00:10.410
+JAKE ARCHIBALD: Yes.
+
+00:00:10.410 --> 00:00:11.460
+SURMA: --almost starting.
+
+00:00:11.460 --> 00:00:12.543
+JAKE ARCHIBALD: Yes it is.
+
+00:00:12.543 --> 00:00:14.090
+SURMA: And it's an entire year--
+
+00:00:14.090 --> 00:00:14.280
+JAKE ARCHIBALD: Oh.
+
+00:00:14.280 --> 00:00:14.960
+SURMA: --if you
+didn't know that.
+
+00:00:14.960 --> 00:00:16.710
+JAKE ARCHIBALD: This time
+around it's an entire year?
+
+00:00:16.710 --> 00:00:17.110
+SURMA: Yeah.
+
+00:00:17.110 --> 00:00:18.870
+And so, in a year, a lot
+of things can happen.
+
+00:00:18.870 --> 00:00:20.220
+And a lot of things will happen.
+
+00:00:20.220 --> 00:00:22.110
+And some things will be
+happening to the web.
+
+00:00:22.110 --> 00:00:24.160
+And so I think it's interesting
+to talk about the things that
+
+00:00:24.160 --> 00:00:26.400
+are going to be happening to
+the web in the year of 2018.
+
+00:00:26.400 --> 00:00:26.820
+JAKE ARCHIBALD: Let's do it.
+
+00:00:26.820 --> 00:00:30.120
+SURMA: So I thought I'll try to
+explain to you one thing in two
+
+00:00:30.120 --> 00:00:30.621
+minutes.
+
+00:00:30.621 --> 00:00:31.703
+JAKE ARCHIBALD: All right.
+
+00:00:31.703 --> 00:00:34.609
+SURMA: I'm going to talk about
+Async Iterators and Generators.
+
+00:00:34.609 --> 00:00:35.400
+JAKE ARCHIBALD: OK.
+
+00:00:35.400 --> 00:00:37.800
+Now, I'm aware of iterators.
+
+00:00:37.800 --> 00:00:39.635
+I am aware of generators.
+
+00:00:39.635 --> 00:00:40.260
+SURMA: Exactly.
+
+00:00:40.260 --> 00:00:40.930
+JAKE ARCHIBALD: What
+you've done there
+
+00:00:40.930 --> 00:00:42.760
+put the word Async
+in front of them,
+
+00:00:42.760 --> 00:00:43.650
+and you're trying to pass
+it off as a new thing.
+
+00:00:43.650 --> 00:00:43.740
+SURMA: That's pretty much it.
+
+00:00:43.740 --> 00:00:44.780
+I think we're done.
+
+00:00:44.780 --> 00:00:45.990
+JAKE ARCHIBALD: Oh,
+excellent, brilliant.
+
+00:00:45.990 --> 00:00:46.490
+SURMA: OK.
+
+00:00:46.490 --> 00:00:50.340
+So, iterators are
+a type that you
+
+00:00:50.340 --> 00:00:52.100
+can use in for
+loops, for example,
+
+00:00:52.100 --> 00:00:55.720
+in for off loops, where
+you have an iterator
+
+00:00:55.720 --> 00:00:57.820
+and just get, like--
+arrays have an iterator.
+
+00:00:57.820 --> 00:00:59.080
+So you can iterate
+all of the values.
+
+00:00:59.080 --> 00:01:00.130
+JAKE ARCHIBALD: But you
+can create an iterator,
+
+00:01:00.130 --> 00:01:01.329
+which is infinite as well.
+
+00:01:01.329 --> 00:01:02.370
+SURMA: For example, Yeah.
+
+00:01:02.370 --> 00:01:04.950
+Then, you have generators,
+which are the star functions
+
+00:01:04.950 --> 00:01:08.070
+with the yield keyword,
+where you can basically
+
+00:01:08.070 --> 00:01:11.070
+construct an iterator on the
+fly using a generator function.
+
+00:01:11.070 --> 00:01:12.903
+JAKE ARCHIBALD: Like a
+sort of helper method
+
+00:01:12.903 --> 00:01:13.895
+to create an iterator.
+
+00:01:13.895 --> 00:01:15.270
+SURMA: Sometimes,
+the problem was
+
+00:01:15.270 --> 00:01:17.460
+you want it to not
+only yield values,
+
+00:01:17.460 --> 00:01:19.472
+but you want it
+to yield promises.
+
+00:01:19.472 --> 00:01:21.930
+And you want it to kind of know
+that only the next value is
+
+00:01:21.930 --> 00:01:24.240
+available once the
+previous promise is
+
+00:01:24.240 --> 00:01:26.037
+done resolving to something.
+
+00:01:26.037 --> 00:01:27.120
+JAKE ARCHIBALD: Right, OK.
+
+00:01:27.120 --> 00:01:27.825
+SURMA: And that's
+where they came up
+
+00:01:27.825 --> 00:01:30.239
+with the concept of
+Async iterators, which
+
+00:01:30.239 --> 00:01:31.030
+are the same thing.
+
+00:01:31.030 --> 00:01:35.839
+But instead of returning values,
+they iterate over promises.
+
+00:01:35.839 --> 00:01:36.630
+JAKE ARCHIBALD: OK.
+
+00:01:36.630 --> 00:01:40.410
+So if I've, like,
+fetched three things,
+
+00:01:40.410 --> 00:01:42.540
+I have a promise for
+each of those things.
+
+00:01:42.540 --> 00:01:45.200
+An Async iterator, is that
+going to let me loop--
+
+00:01:45.200 --> 00:01:47.280
+SURMA: Yeah-- you would
+iterate them in order
+
+00:01:47.280 --> 00:01:49.500
+and you will not be able
+to go to the second one
+
+00:01:49.500 --> 00:01:52.300
+until the first one had resolved
+and has been processed by you.
+
+00:01:52.300 --> 00:01:53.550
+JAKE ARCHIBALD: Excellent, OK.
+
+00:01:53.550 --> 00:01:54.591
+So that's Async iterator.
+
+00:01:54.591 --> 00:01:55.860
+What about Async generator?
+
+00:01:55.860 --> 00:01:57.630
+I guess it means it's going
+to be to helper function.
+
+00:01:57.630 --> 00:01:58.600
+SURMA: It's the helper function.
+
+00:01:58.600 --> 00:01:59.850
+But in this, you
+can yield promises.
+
+00:01:59.850 --> 00:02:01.440
+And it's going to be
+super helpful-- exactly
+
+00:02:01.440 --> 00:02:03.821
+like you said-- for fetches
+or in a service worker, when
+
+00:02:03.821 --> 00:02:05.820
+you want to fetch your
+header, your main content
+
+00:02:05.820 --> 00:02:07.290
+in the footer.
+
+00:02:07.290 --> 00:02:08.750
+And you want these
+to be in order,
+
+00:02:08.750 --> 00:02:10.666
+because if your footer
+comes before the header
+
+00:02:10.666 --> 00:02:12.530
+or the content, that
+wouldn't make sense.
+
+00:02:12.530 --> 00:02:15.480
+So you kind of want to yield
+those bits and bobs in order
+
+00:02:15.480 --> 00:02:17.970
+and then just stitch them
+together, or just forward
+
+00:02:17.970 --> 00:02:20.545
+them to the main thread
+so the page can build up.
+
+00:02:20.545 --> 00:02:22.920
+So I think it's going to be
+really, really useful once we
+
+00:02:22.920 --> 00:02:24.630
+have it in our
+JavaScript environment,
+
+00:02:24.630 --> 00:02:26.940
+and just be able to work
+with asynchronous values--
+
+00:02:26.940 --> 00:02:28.148
+JAKE ARCHIBALD: Like streams?
+
+00:02:28.148 --> 00:02:29.160
+[GASP]
+
+00:02:29.160 --> 00:02:29.867
+SURMA: Yes.
+
+00:02:29.867 --> 00:02:31.200
+JAKE ARCHIBALD: Brilliant, sold.
+
+00:02:31.200 --> 00:02:35.040
+[MUSIC PLAYING]
+
+00:02:35.610 --> 00:02:36.886
+The fetch observer.
+
+00:02:36.886 --> 00:02:38.260
+SURMA: The fetch
+observer doesn't
+
+00:02:38.260 --> 00:02:39.510
+have to do with actual fetch.
+
+00:02:39.510 --> 00:02:40.200
+JAKE ARCHIBALD: Yes, it does.
+
+00:02:40.200 --> 00:02:40.880
+SURMA: Does it observe fetches?
+
+00:02:40.880 --> 00:02:41.490
+JAKE ARCHIBALD: Yes, it does.
+
+00:02:41.490 --> 00:02:42.087
+SURMA: How?
+
+00:02:42.087 --> 00:02:43.170
+JAKE ARCHIBALD: Uh, magic.
+
+00:02:43.170 --> 00:02:45.620
+[LAUGHING]
+

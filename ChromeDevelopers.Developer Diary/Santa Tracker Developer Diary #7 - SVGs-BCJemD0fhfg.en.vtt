@@ -1,0 +1,508 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.192 --> 00:00:01.400
+SAM THOROGOOD: Hey, everyone.
+
+00:00:01.400 --> 00:00:02.500
+It's Sam here.
+
+00:00:02.500 --> 00:00:05.170
+On this very short episode of
+today's Santa Tracker Developer
+
+00:00:05.170 --> 00:00:07.780
+Diary, I want to
+talk about SVGs.
+
+00:00:07.780 --> 00:00:09.760
+These are the lovely
+responsive images
+
+00:00:09.760 --> 00:00:11.920
+that we use all over the
+place in Santa Tracker.
+
+00:00:11.920 --> 00:00:14.440
+Our houses, our elves,
+our cute little scenes
+
+00:00:14.440 --> 00:00:17.680
+are all SVGs with only a
+few PNGs to sort of round
+
+00:00:17.680 --> 00:00:19.100
+out the edges.
+
+00:00:19.100 --> 00:00:20.619
+Now, a disclaimer.
+
+00:00:20.619 --> 00:00:21.410
+I'm not a designer.
+
+00:00:21.410 --> 00:00:23.030
+I didn't make these SVGs.
+
+00:00:23.030 --> 00:00:24.520
+And what I want
+to tell you today
+
+00:00:24.520 --> 00:00:27.070
+is about how I, as an engineer,
+will work with these SVGs
+
+00:00:27.070 --> 00:00:29.590
+to make them smaller and
+better for your users.
+
+00:00:29.590 --> 00:00:30.995
+So let's have a look.
+
+00:00:30.995 --> 00:00:33.370
+So when you think of SVGs,
+this is what you might expect.
+
+00:00:33.370 --> 00:00:34.731
+You will see an SVG tag.
+
+00:00:34.731 --> 00:00:35.980
+You'll see a few other things.
+
+00:00:35.980 --> 00:00:37.750
+And this is basically XML.
+
+00:00:37.750 --> 00:00:39.370
+SVG is really two things.
+
+00:00:39.370 --> 00:00:41.052
+It's mockup and content.
+
+00:00:41.052 --> 00:00:42.010
+So this is very normal.
+
+00:00:42.010 --> 00:00:43.710
+The mockup looks
+very structured.
+
+00:00:43.710 --> 00:00:46.330
+However, when we actually
+ship our assets to users,
+
+00:00:46.330 --> 00:00:47.897
+we use a tool called SVGO--
+
+00:00:47.897 --> 00:00:50.230
+and there's an online version,
+which is in the resources
+
+00:00:50.230 --> 00:00:51.040
+below--
+
+00:00:51.040 --> 00:00:53.387
+to convert these files to
+something that's very small.
+
+00:00:53.387 --> 00:00:55.720
+What's important to remember
+is this really just shrinks
+
+00:00:55.720 --> 00:00:56.440
+the mockup.
+
+00:00:56.440 --> 00:00:58.510
+It doesn't shrink the
+content in any way.
+
+00:00:58.510 --> 00:01:01.660
+So if you have too much content,
+which I'll explain in a second,
+
+00:01:01.660 --> 00:01:04.959
+your file size will go
+down, but not enormously.
+
+00:01:04.959 --> 00:01:08.080
+The sort of assets we deal
+with are reasonably large SVGs.
+
+00:01:08.080 --> 00:01:10.600
+Quite simply, when I try
+to think about my SVGs
+
+00:01:10.600 --> 00:01:13.150
+and how I can make them
+smaller, I'll just sort by size
+
+00:01:13.150 --> 00:01:15.320
+and maybe pick on
+the biggest file.
+
+00:01:15.320 --> 00:01:17.950
+So in this case, we've got
+two Easter egg trees here.
+
+00:01:17.950 --> 00:01:20.390
+And actually, the old one
+is the one we had last year.
+
+00:01:20.390 --> 00:01:23.630
+And the new one, the lower one,
+is the one we had this year.
+
+00:01:23.630 --> 00:01:25.010
+They look exactly the same.
+
+00:01:25.010 --> 00:01:26.680
+So why are they
+different in size?
+
+00:01:26.680 --> 00:01:28.240
+Let's have a look
+at the old version.
+
+00:01:28.240 --> 00:01:29.490
+So on my Mac, I've got Sketch.
+
+00:01:29.490 --> 00:01:30.610
+But you might be
+using some other tool
+
+00:01:30.610 --> 00:01:31.920
+on a different platform.
+
+00:01:31.920 --> 00:01:33.436
+This asset looks fine.
+
+00:01:33.436 --> 00:01:34.810
+It looks the same
+as the new one.
+
+00:01:34.810 --> 00:01:36.560
+And actually, it's
+still reasonably small.
+
+00:01:36.560 --> 00:01:39.280
+It's about 150k, which for a
+complicated asset with lots
+
+00:01:39.280 --> 00:01:41.750
+of small detail,
+does make sense.
+
+00:01:41.750 --> 00:01:43.390
+But it's worth
+looking at your SVGs,
+
+00:01:43.390 --> 00:01:46.410
+especially considering that
+the tools that generate these,
+
+00:01:46.410 --> 00:01:47.770
+they're computer programs, too.
+
+00:01:47.770 --> 00:01:49.990
+And they also make mistakes.
+
+00:01:49.990 --> 00:01:51.900
+So let's look at this
+tree we've now opened.
+
+00:01:51.900 --> 00:01:53.470
+So it looks pretty good.
+
+00:01:53.470 --> 00:01:55.140
+It's about 150k,
+which makes sense.
+
+00:01:55.140 --> 00:01:56.640
+It's a complicated
+tree, and there's
+
+00:01:56.640 --> 00:01:59.098
+a lot of fine detail on the
+bottom with the different elves
+
+00:01:59.098 --> 00:02:00.140
+and so on.
+
+00:02:00.140 --> 00:02:01.600
+But if we dig around
+this XML file,
+
+00:02:01.600 --> 00:02:04.060
+we can actually see that
+these dots at the bottom here,
+
+00:02:04.060 --> 00:02:06.330
+the totems I guess
+you'd call them,
+
+00:02:06.330 --> 00:02:07.930
+are actually made
+up of a lot of dots.
+
+00:02:07.930 --> 00:02:09.241
+So that's kind of weird.
+
+00:02:09.241 --> 00:02:10.990
+We noticed this last
+year, and we actually
+
+00:02:10.990 --> 00:02:13.530
+could delete most of them.
+
+00:02:13.530 --> 00:02:16.960
+And now you'll see that we have
+one blue dot and one gray dot.
+
+00:02:16.960 --> 00:02:19.840
+And so rather than shoving what
+was about 30 different dots,
+
+00:02:19.840 --> 00:02:24.160
+I think, times however many
+totems were around the circle,
+
+00:02:24.160 --> 00:02:27.520
+we then shrunk that image by
+just modifying those gray dots
+
+00:02:27.520 --> 00:02:30.085
+manually to make them
+big, to make them lines.
+
+00:02:30.085 --> 00:02:32.710
+And so that was a way we shrunk
+that asset almost by half, just
+
+00:02:32.710 --> 00:02:34.840
+by simplifying some
+detail that didn't really
+
+00:02:34.840 --> 00:02:36.490
+matter for users
+looking at that tree
+
+00:02:36.490 --> 00:02:37.960
+in the middle of their village.
+
+00:02:37.960 --> 00:02:41.260
+The next thing we often look
+at is things like storyboards.
+
+00:02:41.260 --> 00:02:42.500
+And what does that mean?
+
+00:02:42.500 --> 00:02:44.583
+So if we load up a different
+asset-- in this case,
+
+00:02:44.583 --> 00:02:47.560
+it's the road image that sits in
+the back of our village here--
+
+00:02:47.560 --> 00:02:49.900
+you'll see that while the
+main part of the image
+
+00:02:49.900 --> 00:02:52.750
+is to the right here, we have
+this storyboard in the very
+
+00:02:52.750 --> 00:02:53.740
+top left.
+
+00:02:53.740 --> 00:02:56.165
+Now, as an engineer,
+you might think, oh,
+
+00:02:56.165 --> 00:02:57.040
+I should delete that.
+
+00:02:57.040 --> 00:02:58.290
+It'll save me space.
+
+00:02:58.290 --> 00:02:59.957
+But interestingly
+enough, this is a case
+
+00:02:59.957 --> 00:03:01.373
+where actually
+getting rid of them
+
+00:03:01.373 --> 00:03:02.800
+doesn't really
+help you very much.
+
+00:03:02.800 --> 00:03:06.490
+So these assets up here are all
+found in the village itself.
+
+00:03:06.490 --> 00:03:09.400
+And the way this SVG was
+written is that this is actually
+
+00:03:09.400 --> 00:03:10.270
+like a symbol.
+
+00:03:10.270 --> 00:03:12.125
+So it's duplicated
+in two places.
+
+00:03:12.125 --> 00:03:14.250
+So if I delete this, which
+is totally possible if I
+
+00:03:14.250 --> 00:03:18.244
+go toggle clickthrough,
+select, and delete,
+
+00:03:18.244 --> 00:03:20.410
+you'll find that the exported
+version doesn't really
+
+00:03:20.410 --> 00:03:22.160
+get much smaller,
+because it's really just
+
+00:03:22.160 --> 00:03:23.470
+a duplication of that asset.
+
+00:03:23.470 --> 00:03:26.080
+And that's a value that
+SVG has in terms of mockup.
+
+00:03:26.080 --> 00:03:28.730
+Unlike a PNG, that
+doesn't take up space.
+
+00:03:28.730 --> 00:03:31.090
+But it's something
+that you can simplify,
+
+00:03:31.090 --> 00:03:32.570
+but it doesn't really help you.
+
+00:03:32.570 --> 00:03:34.660
+Another thing I want to call out
+is that if I was to export this
+
+00:03:34.660 --> 00:03:36.550
+image-- and this is
+a complicated asset--
+
+00:03:36.550 --> 00:03:40.900
+it's about 136k,
+as we discovered,
+
+00:03:40.900 --> 00:03:43.500
+it actually ends up
+being about 1.5 meg.
+
+00:03:43.500 --> 00:03:45.460
+So in this case, that
+makes total sense.
+
+00:03:45.460 --> 00:03:47.050
+This is a very
+large asset, which
+
+00:03:47.050 --> 00:03:49.120
+lives across the entire
+site, and we use it
+
+00:03:49.120 --> 00:03:50.690
+at multiple screen sizes.
+
+00:03:50.690 --> 00:03:51.950
+So an SVG is perfect.
+
+00:03:51.950 --> 00:03:54.550
+We really never want to
+convert this to a PNG.
+
+00:03:54.550 --> 00:03:57.340
+However, if you have very fine
+detail, like small assets,
+
+00:03:57.340 --> 00:03:59.346
+this is the case where
+a PNG is really useful.
+
+00:03:59.346 --> 00:04:01.970
+And this is the reason we use it
+in a few places like [? new ?]
+
+00:04:01.970 --> 00:04:04.180
+[? Today ?] cards, for
+instance, are all PNGs,
+
+00:04:04.180 --> 00:04:07.660
+because this has a lot of very
+solid colors that is always
+
+00:04:07.660 --> 00:04:09.940
+used at a one
+consistent screen size.
+
+00:04:09.940 --> 00:04:11.080
+So one last thing.
+
+00:04:11.080 --> 00:04:12.880
+You can compress your SVGs.
+
+00:04:12.880 --> 00:04:16.346
+You can use gzip to convert your
+SVGs to an SVG Z file, which
+
+00:04:16.346 --> 00:04:17.470
+kind of makes sense, right?
+
+00:04:17.470 --> 00:04:19.450
+Your PNGs are
+fundamentally compressed,
+
+00:04:19.450 --> 00:04:21.339
+so why not your SVGs?
+
+00:04:21.339 --> 00:04:24.010
+But the reality is is that
+nearly every web server
+
+00:04:24.010 --> 00:04:25.780
+is gzipping your files anyway.
+
+00:04:25.780 --> 00:04:27.880
+And so most clients
+will receive your files,
+
+00:04:27.880 --> 00:04:31.544
+whether they be
+HTML, PNG, or SVGs,
+
+00:04:31.544 --> 00:04:33.460
+gzipped down, so there
+are already fewer bytes
+
+00:04:33.460 --> 00:04:35.230
+for your clients, anyway.
+
+00:04:35.230 --> 00:04:38.177
+That was SVGs done with Santa
+Tracker I'll see you next time.
+
+00:04:38.177 --> 00:04:40.510
+You can subscribe to the
+Google Chrome Developer channel
+
+00:04:40.510 --> 00:04:43.520
+down here, or check out some
+other great videos along here.
+
+00:04:43.520 --> 00:04:44.120
+[BELLS]
+
+00:04:44.120 --> 00:04:46.265
+[MUSIC PLAYING]
+

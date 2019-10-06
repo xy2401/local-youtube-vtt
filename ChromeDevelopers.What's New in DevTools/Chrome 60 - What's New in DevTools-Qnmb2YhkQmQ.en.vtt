@@ -1,0 +1,327 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.458
+[MUSIC PLAYING]
+
+00:00:04.735 --> 00:00:05.610
+KAYCE BASQUES: Hello.
+
+00:00:05.610 --> 00:00:09.982
+I'm Kayce, and here's what's
+new in Dev Tools in Chrome 60.
+
+00:00:09.982 --> 00:00:11.940
+If you want to improve
+the quality of your site
+
+00:00:11.940 --> 00:00:14.700
+but don't know where to
+start, the new Audits Panel
+
+00:00:14.700 --> 00:00:17.580
+is a great place to
+get some inspiration.
+
+00:00:17.580 --> 00:00:19.800
+To run an audit,
+click the Audits tab,
+
+00:00:19.800 --> 00:00:22.530
+click Perform an Audit,
+then click Run Audit.
+
+00:00:22.530 --> 00:00:24.510
+After 15 seconds
+or so, Dev Tools
+
+00:00:24.510 --> 00:00:26.530
+gives you a report on the page.
+
+00:00:26.530 --> 00:00:28.230
+These top level
+scores are a summary
+
+00:00:28.230 --> 00:00:30.030
+of how you did in that category.
+
+00:00:30.030 --> 00:00:32.040
+Below that are the
+individual tests that
+
+00:00:32.040 --> 00:00:34.080
+make up each category's score.
+
+00:00:34.080 --> 00:00:37.860
+Fix the failing tests to improve
+the quality of your page.
+
+00:00:37.860 --> 00:00:40.170
+This new Audits Panel is
+powered by an Open Source
+
+00:00:40.170 --> 00:00:41.610
+project called Lighthouse.
+
+00:00:41.610 --> 00:00:43.320
+Check out the
+Lighthouse GitHub repo
+
+00:00:43.320 --> 00:00:45.990
+if you've got some ideas
+for audits we should build,
+
+00:00:45.990 --> 00:00:49.260
+or if you want to
+contribute them yourself.
+
+00:00:49.260 --> 00:00:50.940
+If you're working on
+a big site, chances
+
+00:00:50.940 --> 00:00:53.310
+are that your pages
+interact with components
+
+00:00:53.310 --> 00:00:56.520
+from other teams in your
+company, or ad networks,
+
+00:00:56.520 --> 00:00:58.770
+or libraries, and so on.
+
+00:00:58.770 --> 00:01:01.800
+Third party badges help you see
+which third parties might not
+
+00:01:01.800 --> 00:01:04.980
+be playing too nicely
+with your pages.
+
+00:01:04.980 --> 00:01:07.740
+Enable badges by opening
+the Command menu, which
+
+00:01:07.740 --> 00:01:11.460
+is Command-Shift-P on
+Mac, or Control-Shift-P
+
+00:01:11.460 --> 00:01:13.780
+on Windows and Linux.
+
+00:01:13.780 --> 00:01:18.296
+Start typing badges, then
+select Show Third Party Badges.
+
+00:01:18.296 --> 00:01:19.670
+In the Network
+Panel, you can now
+
+00:01:19.670 --> 00:01:22.400
+see a little badge next
+to each request indicating
+
+00:01:22.400 --> 00:01:23.922
+who caused it.
+
+00:01:23.922 --> 00:01:25.380
+And in the console,
+you can see who
+
+00:01:25.380 --> 00:01:28.420
+caused a message or a
+violation to be logged.
+
+00:01:28.420 --> 00:01:30.150
+You can also sort
+performance recordings
+
+00:01:30.150 --> 00:01:32.560
+by selecting the Group
+Bi-Product option.
+
+00:01:35.349 --> 00:01:36.890
+When you're paused
+on a line of code,
+
+00:01:36.890 --> 00:01:38.840
+you often want to
+continue execution up
+
+00:01:38.840 --> 00:01:40.250
+to some later point.
+
+00:01:40.250 --> 00:01:44.270
+The new Continue to Here gesture
+can speed up this workflow.
+
+00:01:44.270 --> 00:01:46.400
+Right now, I'm
+paused on line nine.
+
+00:01:46.400 --> 00:01:50.150
+I want to execute up to line
+20 then pause on that line.
+
+00:01:50.150 --> 00:01:52.490
+To do this, I hold
+Command on Mac,
+
+00:01:52.490 --> 00:01:55.550
+or Control on Windows
+and Linux, and Dev Tools
+
+00:01:55.550 --> 00:01:58.040
+highlights Destinations in blue.
+
+00:01:58.040 --> 00:01:59.630
+From here, I click
+on the destination
+
+00:01:59.630 --> 00:02:03.080
+to execute the script
+up to that point.
+
+00:02:03.080 --> 00:02:05.960
+The Context Selection menu
+now provides more information
+
+00:02:05.960 --> 00:02:07.370
+about the frames on a page.
+
+00:02:07.370 --> 00:02:09.860
+Before, you would just get
+a default dropdown menu.
+
+00:02:09.860 --> 00:02:13.010
+Now Dev Tools gives frames
+more descriptive names.
+
+00:02:13.010 --> 00:02:14.600
+Also, when you
+hover over a frame,
+
+00:02:14.600 --> 00:02:17.640
+Dev Tools highlights
+it in the viewport.
+
+00:02:17.640 --> 00:02:20.780
+The console now provides
+more helpful object previews.
+
+00:02:20.780 --> 00:02:23.840
+Before, Dev Tools would just
+display the string object
+
+00:02:23.840 --> 00:02:25.610
+when logging out an object.
+
+00:02:25.610 --> 00:02:27.350
+Not that useful.
+
+00:02:27.350 --> 00:02:31.130
+Now it shows you more of
+the object's contents.
+
+00:02:31.130 --> 00:02:33.620
+The Coverage tab now
+provides real time updates
+
+00:02:33.620 --> 00:02:34.810
+while recording.
+
+00:02:34.810 --> 00:02:37.100
+Before, it would
+just say recording,
+
+00:02:37.100 --> 00:02:39.440
+which would force you to
+stop your recording in order
+
+00:02:39.440 --> 00:02:41.330
+to analyze the results.
+
+00:02:41.330 --> 00:02:43.040
+But now you can
+analyze the results
+
+00:02:43.040 --> 00:02:45.930
+while the recording
+is still happening.
+
+00:02:45.930 --> 00:02:47.430
+The Network Throttling
+menu has been
+
+00:02:47.430 --> 00:02:51.870
+simplified to the most popular
+options, Slow 3G, Fast 3G,
+
+00:02:51.870 --> 00:02:53.550
+and Offline.
+
+00:02:53.550 --> 00:02:55.020
+Also, the team
+tweaked the settings
+
+00:02:55.020 --> 00:02:57.690
+to better match real
+world 3G connections.
+
+00:02:57.690 --> 00:03:00.570
+So you might notice that
+pages load slower now
+
+00:03:00.570 --> 00:03:03.290
+when throttling is enabled.
+
+00:03:03.290 --> 00:03:07.450
+Last, the Async checkbox in the
+Sources panel has been removed.
+
+00:03:07.450 --> 00:03:09.620
+And its functionality
+is now on by default,
+
+00:03:09.620 --> 00:03:12.940
+because there's no longer
+a performance overhead.
+
+00:03:12.940 --> 00:03:14.530
+You can still disable
+it from Settings
+
+00:03:14.530 --> 00:03:17.430
+if you need it off
+for some reason.
+
+00:03:17.430 --> 00:03:18.690
+That's all for Chrome 60.
+
+00:03:18.690 --> 00:03:20.400
+If you want to
+discuss these changes,
+
+00:03:20.400 --> 00:03:22.830
+start a thread in the
+mailing list, or tweet
+
+00:03:22.830 --> 00:03:24.600
+us @ChromeDevTools.
+
+00:03:24.600 --> 00:03:27.330
+And if you want the latest news
+and ideas in web development,
+
+00:03:27.330 --> 00:03:30.840
+subscribe to the Google Chrome
+Developer's YouTube channel.
+
+00:03:30.840 --> 00:03:33.030
+I'll see you in six
+weeks for Chrome 61.
+
+00:03:33.030 --> 00:03:36.980
+[MUSIC PLAYING]
+

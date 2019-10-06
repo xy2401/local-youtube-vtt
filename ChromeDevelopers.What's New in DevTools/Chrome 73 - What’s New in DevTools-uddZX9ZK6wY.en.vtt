@@ -1,0 +1,483 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.430
+[MUSIC PLAYING]
+
+00:00:05.880 --> 00:00:07.020
+KAYCE BASQUES: Salutations.
+
+00:00:07.020 --> 00:00:09.990
+We've got seven new features
+and one minor change
+
+00:00:09.990 --> 00:00:12.930
+coming to DevTools in Chrome 73.
+
+00:00:12.930 --> 00:00:15.420
+Logpoints let you log
+messages to the console
+
+00:00:15.420 --> 00:00:19.650
+without cluttering up your code
+with console.log statements.
+
+00:00:19.650 --> 00:00:22.520
+First, you need to open a
+file in the Sources panel.
+
+00:00:22.520 --> 00:00:24.420
+A fast way to do
+that when you know
+
+00:00:24.420 --> 00:00:28.740
+the file name is to press
+Control-O, or Command-O on Mac,
+
+00:00:28.740 --> 00:00:31.800
+type the file name,
+then press Enter.
+
+00:00:31.800 --> 00:00:34.740
+To add a logpoint,
+right-click a line number
+
+00:00:34.740 --> 00:00:37.200
+and select Add Logpoint.
+
+00:00:37.200 --> 00:00:39.390
+In the Breakpoint Editor,
+type the expression
+
+00:00:39.390 --> 00:00:42.030
+that you want to
+log to the console.
+
+00:00:42.030 --> 00:00:44.790
+Side note, check out the
+Art of Debugging article
+
+00:00:44.790 --> 00:00:46.680
+that we've linked to
+in the description
+
+00:00:46.680 --> 00:00:50.430
+to learn more about this
+handy shorthand syntax.
+
+00:00:50.430 --> 00:00:53.890
+When your expression is
+ready, press Enter to save it.
+
+00:00:53.890 --> 00:00:55.710
+The next time that
+the code runs,
+
+00:00:55.710 --> 00:00:59.040
+the result of the logpoint
+is logged to the console.
+
+00:00:59.040 --> 00:01:01.110
+First I'll press
+Escape so that we
+
+00:01:01.110 --> 00:01:03.760
+can see the console directly.
+
+00:01:03.760 --> 00:01:06.180
+In this case, I need to
+reload the page in order
+
+00:01:06.180 --> 00:01:08.430
+for this code to run.
+
+00:01:08.430 --> 00:01:12.420
+As expected, the expression
+has been logged to the console.
+
+00:01:12.420 --> 00:01:14.775
+To temporarily
+deactivate the logpoint,
+
+00:01:14.775 --> 00:01:17.160
+hold Shift and then click it.
+
+00:01:17.160 --> 00:01:20.040
+To delete a logpoint, just
+give it a regular click.
+
+00:01:23.000 --> 00:01:25.190
+When inspecting a
+node, DevTools now
+
+00:01:25.190 --> 00:01:28.280
+shows an expanded tool tip
+containing commonly needed
+
+00:01:28.280 --> 00:01:30.800
+information about the node.
+
+00:01:30.800 --> 00:01:33.710
+To enter Inspect mode,
+press Control-Shift-C,
+
+00:01:33.710 --> 00:01:38.150
+or Command-Shift-C on Mac, or
+click the Inspect Mode icon.
+
+00:01:38.150 --> 00:01:40.160
+Back in an earlier
+version of Chrome,
+
+00:01:40.160 --> 00:01:44.360
+when I hover over a node, I just
+see the node type and its size.
+
+00:01:44.360 --> 00:01:46.700
+When I do the same
+in Chrome 73, I
+
+00:01:46.700 --> 00:01:50.060
+see the node's color,
+font, margin, and contrast.
+
+00:01:52.840 --> 00:01:57.340
+Code coverage data can now
+be exported as a JSON file.
+
+00:01:57.340 --> 00:02:00.670
+To open the Coverage tab,
+press Control-Shift-P,
+
+00:02:00.670 --> 00:02:04.090
+or Command-Shift-P on Mac,
+to open the Command menu.
+
+00:02:04.090 --> 00:02:07.900
+Start typing Coverage
+then select Show Coverage.
+
+00:02:07.900 --> 00:02:09.970
+To review, when I
+reload the page,
+
+00:02:09.970 --> 00:02:12.790
+DevTools tells me how
+much code from each file
+
+00:02:12.790 --> 00:02:14.860
+is actually being used.
+
+00:02:14.860 --> 00:02:18.670
+When I click a file, I see
+a line-by-line breakdown.
+
+00:02:18.670 --> 00:02:21.160
+To export the
+code, click Export,
+
+00:02:21.160 --> 00:02:24.210
+which downloads the
+data as a JSON file.
+
+00:02:24.210 --> 00:02:27.730
+The URL property describes
+what file is analyzed,
+
+00:02:27.730 --> 00:02:30.610
+the Arranges property
+describes the portions of code
+
+00:02:30.610 --> 00:02:33.130
+that were used, and
+the Text property
+
+00:02:33.130 --> 00:02:37.220
+contains the full
+text of the file.
+
+00:02:37.220 --> 00:02:39.040
+In this example,
+the JSON is telling
+
+00:02:39.040 --> 00:02:41.710
+me that the substring
+between index 0
+
+00:02:41.710 --> 00:02:45.580
+and index 21 of the
+text string was used
+
+00:02:45.580 --> 00:02:50.260
+as well as the substring
+between index 49 and index 71.
+
+00:02:50.260 --> 00:02:52.300
+To extract the used
+code, I would just
+
+00:02:52.300 --> 00:02:56.230
+concatenate these substrings.
+
+00:02:56.230 --> 00:02:59.380
+The console can now be
+navigated with a keyboard.
+
+00:02:59.380 --> 00:03:01.750
+To start navigating the
+console with a keyboard,
+
+00:03:01.750 --> 00:03:03.400
+press Shift-Tab.
+
+00:03:03.400 --> 00:03:05.740
+Use the Up and Down
+arrow keys to select
+
+00:03:05.740 --> 00:03:08.380
+messages or parts of a message.
+
+00:03:08.380 --> 00:03:11.050
+When a URL is selected,
+pressing Enter
+
+00:03:11.050 --> 00:03:14.860
+opens that file in a new tab
+if it's an external file.
+
+00:03:14.860 --> 00:03:17.500
+To expand a message,
+you need to first select
+
+00:03:17.500 --> 00:03:20.860
+the whole message, which is
+indicated by a blue background,
+
+00:03:20.860 --> 00:03:23.170
+and then press the
+Right arrow key.
+
+00:03:23.170 --> 00:03:26.020
+Pressing Enter on a
+link to a page resource
+
+00:03:26.020 --> 00:03:28.150
+opens up the Sources
+panel for scripts
+
+00:03:28.150 --> 00:03:31.150
+or the Network panel
+for network requests.
+
+00:03:31.150 --> 00:03:34.270
+To collapse, press Left to
+reflect the message then
+
+00:03:34.270 --> 00:03:36.370
+press Left again.
+
+00:03:36.370 --> 00:03:41.140
+The Color Picker now shows a AAA
+contrast ratio line in addition
+
+00:03:41.140 --> 00:03:43.180
+to the AA line.
+
+00:03:43.180 --> 00:03:45.850
+To see contrast ratio
+information in the Color
+
+00:03:45.850 --> 00:03:50.170
+Picker, enter Inspect Mode,
+select a node containing text,
+
+00:03:50.170 --> 00:03:53.770
+go to the Styles pane, click
+the box next to the node's color
+
+00:03:53.770 --> 00:03:56.830
+property, then click Show More.
+
+00:03:56.830 --> 00:03:59.650
+Since this node meets
+the AAA recommendation,
+
+00:03:59.650 --> 00:04:03.140
+anything below this line also
+meets the AAA recommendation,
+
+00:04:03.140 --> 00:04:05.380
+which is considered
+very readable.
+
+00:04:05.380 --> 00:04:08.950
+Anything between the two lines
+meets the AA recommendation
+
+00:04:08.950 --> 00:04:11.560
+but does not meet the AAA one.
+
+00:04:11.560 --> 00:04:15.340
+In other words, this is the
+bare minimum for readability.
+
+00:04:15.340 --> 00:04:18.160
+And anything above the
+top line doesn't even
+
+00:04:18.160 --> 00:04:24.310
+satisfy the AA recommendation,
+which is considered unreadable.
+
+00:04:24.310 --> 00:04:29.080
+Custom geolocation overrides can
+now be saved across sessions.
+
+00:04:29.080 --> 00:04:32.500
+Press Control-Shift-P, or
+Command-Shift-P on Mac,
+
+00:04:32.500 --> 00:04:34.330
+to open the Command menu.
+
+00:04:34.330 --> 00:04:37.810
+Start typing Sensors
+then select Show Sensors.
+
+00:04:37.810 --> 00:04:39.970
+The Sensors tab is
+where you can manually
+
+00:04:39.970 --> 00:04:43.600
+override your geolocation
+while DevTools is open.
+
+00:04:43.600 --> 00:04:46.570
+Click Manage, then
+click Add Location.
+
+00:04:46.570 --> 00:04:49.990
+Enter the name, latitude,
+and longitude of your custom
+
+00:04:49.990 --> 00:04:51.550
+location, then click Add.
+
+00:04:54.060 --> 00:04:58.740
+The Sources and Network panels
+now support code folding.
+
+00:04:58.740 --> 00:05:03.540
+To enable code folding, press
+F1 to open Settings, scroll
+
+00:05:03.540 --> 00:05:06.750
+to the Sources section,
+then check the Code Folding
+
+00:05:06.750 --> 00:05:07.890
+checkbox.
+
+00:05:07.890 --> 00:05:11.220
+To fold a section of code,
+hover near the line number
+
+00:05:11.220 --> 00:05:12.540
+and press the Fold icon.
+
+00:05:15.330 --> 00:05:18.270
+The name of the tab for
+inspecting WebSocket messages
+
+00:05:18.270 --> 00:05:20.040
+has changed.
+
+00:05:20.040 --> 00:05:22.830
+When you wanted to inspect
+WebSocket connections
+
+00:05:22.830 --> 00:05:25.560
+in earlier versions of
+Chrome, the Frames tab
+
+00:05:25.560 --> 00:05:27.960
+was where you inspected
+the upstream and downstream
+
+00:05:27.960 --> 00:05:29.250
+messages.
+
+00:05:29.250 --> 00:05:33.410
+As of Chrome 73, this tab is
+now called the Messages tab.
+
+00:05:33.410 --> 00:05:36.970
+Its behavior is
+the same as before.
+
+00:05:36.970 --> 00:05:39.390
+Here's a bonus tip about
+a lesser-known DevTools
+
+00:05:39.390 --> 00:05:42.070
+feature that has been
+around for a long time.
+
+00:05:42.070 --> 00:05:44.400
+The Network panel
+supports special keywords
+
+00:05:44.400 --> 00:05:46.890
+that let you filter
+network resources based
+
+00:05:46.890 --> 00:05:50.760
+on certain properties
+of each resource.
+
+00:05:50.760 --> 00:05:52.980
+To log network activity,
+I'll go to the Network
+
+00:05:52.980 --> 00:05:54.930
+panel then reload the page.
+
+00:05:54.930 --> 00:05:58.200
+To filter by domain,
+I type Domain:
+
+00:05:58.200 --> 00:06:01.710
+and I see a list of
+domains of page resources.
+
+00:06:01.710 --> 00:06:04.770
+To only share resources
+larger than 10 kilobytes,
+
+00:06:04.770 --> 00:06:10.050
+I type larger-than:
+and then select 10k.
+
+00:06:10.050 --> 00:06:13.470
+Check out the Filter Requests by
+Property section in our Network
+
+00:06:13.470 --> 00:06:16.800
+Reference to see the
+full list of keywords.
+
+00:06:16.800 --> 00:06:17.880
+That's all, folks.
+
+00:06:17.880 --> 00:06:20.790
+Send me questions and
+feedback in the comments
+
+00:06:20.790 --> 00:06:23.120
+and see you in six
+weeks for Chrome 74.
+
+00:06:23.120 --> 00:06:26.470
+[MUSIC PLAYING]
+

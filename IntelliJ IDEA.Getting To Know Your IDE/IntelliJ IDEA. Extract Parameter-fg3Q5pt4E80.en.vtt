@@ -1,0 +1,368 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.720 --> 00:00:05.390 align:start position:0%
+ 
+there<00:00:03.720><c> are</c><00:00:03.840><c> several</c><00:00:04.110><c> extractor</c><00:00:04.890><c> factorings</c>
+
+00:00:05.390 --> 00:00:05.400 align:start position:0%
+there are several extractor factorings
+ 
+
+00:00:05.400 --> 00:00:08.089 align:start position:0%
+there are several extractor factorings
+in<00:00:05.730><c> IntelliJ</c><00:00:06.210><c> IDEA</c><00:00:06.750><c> including</c><00:00:07.589><c> extract</c>
+
+00:00:08.089 --> 00:00:08.099 align:start position:0%
+in IntelliJ IDEA including extract
+ 
+
+00:00:08.099 --> 00:00:11.120 align:start position:0%
+in IntelliJ IDEA including extract
+method<00:00:08.570><c> extract</c><00:00:09.570><c> variable</c><00:00:09.840><c> and</c><00:00:10.349><c> extract</c>
+
+00:00:11.120 --> 00:00:11.130 align:start position:0%
+method extract variable and extract
+ 
+
+00:00:11.130 --> 00:00:14.060 align:start position:0%
+method extract variable and extract
+parameter<00:00:11.700><c> and</c><00:00:12.030><c> with</c><00:00:12.900><c> the</c><00:00:13.019><c> extract</c><00:00:13.469><c> parameter</c>
+
+00:00:14.060 --> 00:00:14.070 align:start position:0%
+parameter and with the extract parameter
+ 
+
+00:00:14.070 --> 00:00:16.599 align:start position:0%
+parameter and with the extract parameter
+of<00:00:14.219><c> factoring</c><00:00:14.670><c> allows</c><00:00:15.210><c> you</c><00:00:15.389><c> to</c><00:00:15.509><c> do</c><00:00:15.690><c> is</c><00:00:15.990><c> select</c>
+
+00:00:16.599 --> 00:00:16.609 align:start position:0%
+of factoring allows you to do is select
+ 
+
+00:00:16.609 --> 00:00:19.820 align:start position:0%
+of factoring allows you to do is select
+expression<00:00:17.609><c> inside</c><00:00:17.970><c> a</c><00:00:18.000><c> method</c><00:00:18.480><c> and</c><00:00:18.830><c> quickly</c>
+
+00:00:19.820 --> 00:00:19.830 align:start position:0%
+expression inside a method and quickly
+ 
+
+00:00:19.830 --> 00:00:22.970 align:start position:0%
+expression inside a method and quickly
+pull<00:00:20.160><c> out</c><00:00:20.340><c> or</c><00:00:20.670><c> parameterize</c><00:00:21.539><c> that</c><00:00:22.350><c> expression</c>
+
+00:00:22.970 --> 00:00:22.980 align:start position:0%
+pull out or parameterize that expression
+ 
+
+00:00:22.980 --> 00:00:25.700 align:start position:0%
+pull out or parameterize that expression
+in<00:00:23.130><c> a</c><00:00:23.580><c> few</c><00:00:23.730><c> simple</c><00:00:23.939><c> keystrokes</c><00:00:24.539><c> you</c><00:00:25.320><c> can</c><00:00:25.500><c> see</c>
+
+00:00:25.700 --> 00:00:25.710 align:start position:0%
+in a few simple keystrokes you can see
+ 
+
+00:00:25.710 --> 00:00:28.490 align:start position:0%
+in a few simple keystrokes you can see
+that<00:00:25.859><c> that</c><00:00:25.949><c> expressions</c><00:00:26.609><c> return</c><00:00:27.150><c> type</c><00:00:27.539><c> will</c>
+
+00:00:28.490 --> 00:00:28.500 align:start position:0%
+that that expressions return type will
+ 
+
+00:00:28.500 --> 00:00:30.560 align:start position:0%
+that that expressions return type will
+be<00:00:28.529><c> added</c><00:00:29.039><c> as</c><00:00:29.189><c> a</c><00:00:29.220><c> new</c><00:00:29.519><c> parameter</c><00:00:29.789><c> to</c><00:00:30.390><c> the</c>
+
+00:00:30.560 --> 00:00:30.570 align:start position:0%
+be added as a new parameter to the
+ 
+
+00:00:30.570 --> 00:00:33.290 align:start position:0%
+be added as a new parameter to the
+method<00:00:30.900><c> and</c><00:00:31.080><c> then</c><00:00:31.650><c> any</c><00:00:31.949><c> places</c><00:00:32.279><c> that</c><00:00:32.520><c> call</c><00:00:33.059><c> the</c>
+
+00:00:33.290 --> 00:00:33.300 align:start position:0%
+method and then any places that call the
+ 
+
+00:00:33.300 --> 00:00:36.410 align:start position:0%
+method and then any places that call the
+method<00:00:33.719><c> will</c><00:00:34.469><c> pass</c><00:00:34.800><c> in</c><00:00:35.190><c> that</c><00:00:35.460><c> value</c><00:00:35.969><c> as</c><00:00:36.210><c> an</c>
+
+00:00:36.410 --> 00:00:36.420 align:start position:0%
+method will pass in that value as an
+ 
+
+00:00:36.420 --> 00:00:38.630 align:start position:0%
+method will pass in that value as an
+argument<00:00:36.809><c> so</c><00:00:37.200><c> you</c><00:00:37.230><c> can</c><00:00:37.680><c> do</c><00:00:37.829><c> that</c><00:00:37.980><c> by</c><00:00:38.399><c> placing</c>
+
+00:00:38.630 --> 00:00:38.640 align:start position:0%
+argument so you can do that by placing
+ 
+
+00:00:38.640 --> 00:00:40.850 align:start position:0%
+argument so you can do that by placing
+your<00:00:38.850><c> cursor</c><00:00:38.969><c> over</c><00:00:39.360><c> the</c><00:00:39.809><c> value</c><00:00:40.230><c> in</c><00:00:40.469><c> the</c><00:00:40.620><c> code</c>
+
+00:00:40.850 --> 00:00:40.860 align:start position:0%
+your cursor over the value in the code
+ 
+
+00:00:40.860 --> 00:00:46.160 align:start position:0%
+your cursor over the value in the code
+and<00:00:42.170><c> pressing</c><00:00:43.170><c> ctrl</c><00:00:43.710><c> or</c><00:00:43.980><c> command</c><00:00:44.040><c> alt</c><00:00:44.910><c> P</c><00:00:45.329><c> now</c>
+
+00:00:46.160 --> 00:00:46.170 align:start position:0%
+and pressing ctrl or command alt P now
+ 
+
+00:00:46.170 --> 00:00:47.779 align:start position:0%
+and pressing ctrl or command alt P now
+if<00:00:46.320><c> that</c><00:00:46.469><c> parameter</c><00:00:46.710><c> happens</c><00:00:47.219><c> to</c><00:00:47.399><c> be</c><00:00:47.550><c> in</c><00:00:47.670><c> the</c>
+
+00:00:47.779 --> 00:00:47.789 align:start position:0%
+if that parameter happens to be in the
+ 
+
+00:00:47.789 --> 00:00:51.049 align:start position:0%
+if that parameter happens to be in the
+form<00:00:48.090><c> of</c><00:00:48.239><c> a</c><00:00:48.329><c> chained</c><00:00:48.719><c> method</c><00:00:49.320><c> call</c><00:00:49.760><c> then</c><00:00:50.760><c> I</c><00:00:50.789><c> can</c>
+
+00:00:51.049 --> 00:00:51.059 align:start position:0%
+form of a chained method call then I can
+ 
+
+00:00:51.059 --> 00:00:52.760 align:start position:0%
+form of a chained method call then I can
+just<00:00:51.210><c> place</c><00:00:51.510><c> the</c><00:00:51.719><c> cursor</c><00:00:51.899><c> over</c><00:00:52.140><c> the</c><00:00:52.469><c> value</c>
+
+00:00:52.760 --> 00:00:52.770 align:start position:0%
+just place the cursor over the value
+ 
+
+00:00:52.770 --> 00:00:55.069 align:start position:0%
+just place the cursor over the value
+that<00:00:52.949><c> I'd</c><00:00:53.070><c> like</c><00:00:53.219><c> to</c><00:00:53.370><c> extract</c><00:00:53.879><c> and</c><00:00:54.180><c> do</c><00:00:54.690><c> the</c><00:00:54.809><c> same</c>
+
+00:00:55.069 --> 00:00:55.079 align:start position:0%
+that I'd like to extract and do the same
+ 
+
+00:00:55.079 --> 00:00:58.549 align:start position:0%
+that I'd like to extract and do the same
+to<00:00:55.379><c> add</c><00:00:56.129><c> it</c><00:00:56.280><c> as</c><00:00:56.399><c> a</c><00:00:56.430><c> parameter</c><00:00:57.379><c> however</c><00:00:58.379><c> if</c><00:00:58.469><c> you</c>
+
+00:00:58.549 --> 00:00:58.559 align:start position:0%
+to add it as a parameter however if you
+ 
+
+00:00:58.559 --> 00:01:00.319 align:start position:0%
+to add it as a parameter however if you
+look<00:00:58.770><c> carefully</c><00:00:59.039><c> you'll</c><00:00:59.520><c> notice</c><00:00:59.910><c> that</c><00:01:00.149><c> you</c>
+
+00:01:00.319 --> 00:01:00.329 align:start position:0%
+look carefully you'll notice that you
+ 
+
+00:01:00.329 --> 00:01:02.900 align:start position:0%
+look carefully you'll notice that you
+won't<00:01:00.690><c> be</c><00:01:01.050><c> able</c><00:01:01.170><c> to</c><00:01:01.620><c> parametrize</c><00:01:02.399><c> an</c>
+
+00:01:02.900 --> 00:01:02.910 align:start position:0%
+won't be able to parametrize an
+ 
+
+00:01:02.910 --> 00:01:05.960 align:start position:0%
+won't be able to parametrize an
+expression<00:01:03.840><c> that</c><00:01:03.870><c> returns</c><00:01:04.110><c> a</c><00:01:04.650><c> void</c><00:01:04.860><c> type</c><00:01:05.369><c> such</c>
+
+00:01:05.960 --> 00:01:05.970 align:start position:0%
+expression that returns a void type such
+ 
+
+00:01:05.970 --> 00:01:09.050 align:start position:0%
+expression that returns a void type such
+as<00:01:06.000><c> this</c><00:01:06.240><c> call</c><00:01:06.510><c> to</c><00:01:06.750><c> print</c><00:01:07.020><c> line</c><00:01:07.970><c> with</c><00:01:08.970><c> the</c>
+
+00:01:09.050 --> 00:01:09.060 align:start position:0%
+as this call to print line with the
+ 
+
+00:01:09.060 --> 00:01:10.910 align:start position:0%
+as this call to print line with the
+introduction<00:01:09.570><c> of</c><00:01:09.689><c> lambdas</c><00:01:10.200><c> and</c><00:01:10.470><c> functional</c>
+
+00:01:10.910 --> 00:01:10.920 align:start position:0%
+introduction of lambdas and functional
+ 
+
+00:01:10.920 --> 00:01:13.460 align:start position:0%
+introduction of lambdas and functional
+interfaces<00:01:11.400><c> in</c><00:01:11.729><c> Java</c><00:01:11.760><c> 8</c><00:01:12.240><c> it's</c><00:01:12.960><c> now</c><00:01:13.200><c> possible</c>
+
+00:01:13.460 --> 00:01:13.470 align:start position:0%
+interfaces in Java 8 it's now possible
+ 
+
+00:01:13.470 --> 00:01:16.460 align:start position:0%
+interfaces in Java 8 it's now possible
+to<00:01:14.040><c> extract</c><00:01:14.610><c> a</c><00:01:14.760><c> functional</c><00:01:15.270><c> expression</c><00:01:15.810><c> by</c>
+
+00:01:16.460 --> 00:01:16.470 align:start position:0%
+to extract a functional expression by
+ 
+
+00:01:16.470 --> 00:01:20.210 align:start position:0%
+to extract a functional expression by
+pressing<00:01:16.890><c> ctrl</c><00:01:17.460><c> or</c><00:01:17.640><c> command</c><00:01:17.670><c> alt</c><00:01:18.420><c> shift</c><00:01:19.220><c> P</c>
+
+00:01:20.210 --> 00:01:20.220 align:start position:0%
+pressing ctrl or command alt shift P
+ 
+
+00:01:20.220 --> 00:01:22.670 align:start position:0%
+pressing ctrl or command alt shift P
+which<00:01:21.060><c> will</c><00:01:21.240><c> automatically</c><00:01:21.689><c> match</c><00:01:22.020><c> the</c><00:01:22.380><c> shape</c>
+
+00:01:22.670 --> 00:01:22.680 align:start position:0%
+which will automatically match the shape
+ 
+
+00:01:22.680 --> 00:01:25.490 align:start position:0%
+which will automatically match the shape
+of<00:01:22.920><c> the</c><00:01:23.250><c> inbound</c><00:01:23.610><c> variables</c><00:01:24.299><c> and</c><00:01:24.540><c> return</c><00:01:25.140><c> type</c>
+
+00:01:25.490 --> 00:01:25.500 align:start position:0%
+of the inbound variables and return type
+ 
+
+00:01:25.500 --> 00:01:28.249 align:start position:0%
+of the inbound variables and return type
+with<00:01:26.189><c> an</c><00:01:26.340><c> appropriate</c><00:01:26.880><c> functional</c><00:01:27.509><c> interface</c>
+
+00:01:28.249 --> 00:01:28.259 align:start position:0%
+with an appropriate functional interface
+ 
+
+00:01:28.259 --> 00:01:31.280 align:start position:0%
+with an appropriate functional interface
+so<00:01:29.220><c> here</c><00:01:29.430><c> we</c><00:01:29.520><c> can</c><00:01:29.670><c> choose</c><00:01:29.909><c> a</c><00:01:30.150><c> by</c><00:01:30.450><c> function</c><00:01:31.049><c> and</c>
+
+00:01:31.280 --> 00:01:31.290 align:start position:0%
+so here we can choose a by function and
+ 
+
+00:01:31.290 --> 00:01:33.620 align:start position:0%
+so here we can choose a by function and
+then<00:01:31.890><c> that</c><00:01:32.070><c> by</c><00:01:32.250><c> function</c><00:01:32.790><c> will</c><00:01:32.970><c> be</c><00:01:33.090><c> introduced</c>
+
+00:01:33.620 --> 00:01:33.630 align:start position:0%
+then that by function will be introduced
+ 
+
+00:01:33.630 --> 00:01:35.899 align:start position:0%
+then that by function will be introduced
+as<00:01:33.990><c> a</c><00:01:34.020><c> parameter</c><00:01:34.439><c> in</c><00:01:34.860><c> the</c><00:01:35.100><c> method</c><00:01:35.400><c> signature</c>
+
+00:01:35.899 --> 00:01:35.909 align:start position:0%
+as a parameter in the method signature
+ 
+
+00:01:35.909 --> 00:01:38.510 align:start position:0%
+as a parameter in the method signature
+with<00:01:36.210><c> its</c><00:01:36.420><c> definition</c><00:01:37.140><c> introduced</c><00:01:38.130><c> at</c><00:01:38.400><c> the</c>
+
+00:01:38.510 --> 00:01:38.520 align:start position:0%
+with its definition introduced at the
+ 
+
+00:01:38.520 --> 00:01:40.969 align:start position:0%
+with its definition introduced at the
+call<00:01:38.729><c> site</c><00:01:39.000><c> by</c><00:01:39.600><c> default</c><00:01:40.110><c> it</c><00:01:40.259><c> will</c><00:01:40.350><c> use</c><00:01:40.740><c> the</c>
+
+00:01:40.969 --> 00:01:40.979 align:start position:0%
+call site by default it will use the
+ 
+
+00:01:40.979 --> 00:01:43.789 align:start position:0%
+call site by default it will use the
+anonymous<00:01:41.430><c> inner</c><00:01:41.729><c> class</c><00:01:42.090><c> syntax</c><00:01:42.780><c> so</c><00:01:43.439><c> it</c><00:01:43.649><c> can</c>
+
+00:01:43.789 --> 00:01:43.799 align:start position:0%
+anonymous inner class syntax so it can
+ 
+
+00:01:43.799 --> 00:01:46.550 align:start position:0%
+anonymous inner class syntax so it can
+be<00:01:43.920><c> compatible</c><00:01:44.280><c> with</c><00:01:44.520><c> Java</c><00:01:44.850><c> 6</c><00:01:45.270><c> and</c><00:01:45.540><c> 7</c><00:01:45.930><c> however</c>
+
+00:01:46.550 --> 00:01:46.560 align:start position:0%
+be compatible with Java 6 and 7 however
+ 
+
+00:01:46.560 --> 00:01:49.100 align:start position:0%
+be compatible with Java 6 and 7 however
+you<00:01:46.680><c> can</c><00:01:46.829><c> migrate</c><00:01:47.070><c> to</c><00:01:47.970><c> the</c><00:01:48.119><c> Java</c><00:01:48.360><c> 8</c><00:01:48.570><c> syntax</c>
+
+00:01:49.100 --> 00:01:49.110 align:start position:0%
+you can migrate to the Java 8 syntax
+ 
+
+00:01:49.110 --> 00:01:51.830 align:start position:0%
+you can migrate to the Java 8 syntax
+with<00:01:49.890><c> the</c><00:01:50.070><c> intention</c><00:01:50.610><c> action</c><00:01:51.000><c> and</c><00:01:51.360><c> if</c><00:01:51.720><c> you'd</c>
+
+00:01:51.830 --> 00:01:51.840 align:start position:0%
+with the intention action and if you'd
+ 
+
+00:01:51.840 --> 00:01:53.870 align:start position:0%
+with the intention action and if you'd
+like<00:01:51.899><c> to</c><00:01:52.049><c> inline</c><00:01:52.890><c> any</c><00:01:53.280><c> of</c><00:01:53.430><c> these</c><00:01:53.549><c> parameters</c>
+
+00:01:53.870 --> 00:01:53.880 align:start position:0%
+like to inline any of these parameters
+ 
+
+00:01:53.880 --> 00:01:57.620 align:start position:0%
+like to inline any of these parameters
+or<00:01:54.479><c> reverse</c><00:01:55.290><c> the</c><00:01:56.219><c> extract</c><00:01:56.909><c> parameter</c><00:01:57.509><c> or</c>
+
+00:01:57.620 --> 00:01:57.630 align:start position:0%
+or reverse the extract parameter or
+ 
+
+00:01:57.630 --> 00:01:59.719 align:start position:0%
+or reverse the extract parameter or
+factor<00:01:57.659><c> and</c><00:01:58.110><c> you</c><00:01:58.200><c> can</c><00:01:58.350><c> simply</c><00:01:58.680><c> do</c><00:01:58.860><c> so</c><00:01:59.130><c> by</c>
+
+00:01:59.719 --> 00:01:59.729 align:start position:0%
+factor and you can simply do so by
+ 
+
+00:01:59.729 --> 00:02:03.740 align:start position:0%
+factor and you can simply do so by
+pressing<00:01:59.759><c> ctrl</c><00:02:00.659><c> or</c><00:02:01.079><c> command</c><00:02:01.110><c> alt</c><00:02:01.590><c> n</c><00:02:01.829><c> to</c><00:02:02.820><c> inline</c>
+
+00:02:03.740 --> 00:02:03.750 align:start position:0%
+pressing ctrl or command alt n to inline
+ 
+
+00:02:03.750 --> 00:02:06.080 align:start position:0%
+pressing ctrl or command alt n to inline
+the<00:02:03.780><c> same</c><00:02:04.229><c> parameter</c><00:02:04.710><c> back</c><00:02:05.640><c> to</c><00:02:05.820><c> its</c><00:02:05.939><c> original</c>
+
+00:02:06.080 --> 00:02:06.090 align:start position:0%
+the same parameter back to its original
+ 
+
+00:02:06.090 --> 00:02:08.509 align:start position:0%
+the same parameter back to its original
+position
+

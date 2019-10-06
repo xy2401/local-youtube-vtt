@@ -1,0 +1,338 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.880
+JAKE: We're going to another one
+of our HTTP203 microtask speed
+
+00:00:03.880 --> 00:00:04.380
+runs.
+
+00:00:04.380 --> 00:00:04.879
+Right?
+
+00:00:04.900 --> 00:00:05.020
+SURMA: Yes.
+
+00:00:05.020 --> 00:00:06.420
+Oh, now it's
+microtask speed runs?
+
+00:00:06.420 --> 00:00:07.220
+JAKE: Oh, I don't know.
+
+00:00:07.220 --> 00:00:07.720
+And we haven't--
+
+00:00:07.720 --> 00:00:09.160
+SURMA: We've got to work
+on the branding, mate.
+
+00:00:09.160 --> 00:00:11.100
+JAKE: I think micro task is
+a good brand name for it.
+
+00:00:11.100 --> 00:00:11.370
+Right?
+
+00:00:11.470 --> 00:00:11.970
+SURMA: Yeah.
+
+00:00:11.970 --> 00:00:13.920
+JAKE: The idea is
+you're going to explain
+
+00:00:13.920 --> 00:00:16.740
+a thing in two minutes.
+
+00:00:16.740 --> 00:00:17.876
+SURMA: Yup.
+
+00:00:17.876 --> 00:00:20.864
+[MUSIC PLAYING]
+
+00:00:24.840 --> 00:00:25.340
+JAKE: Go.
+
+00:00:25.340 --> 00:00:27.410
+SURMA: Broadcast channel.
+
+00:00:27.410 --> 00:00:28.410
+JAKE: Broadcast channel.
+
+00:00:28.410 --> 00:00:29.080
+SURMA: Yeah.
+
+00:00:29.080 --> 00:00:29.580
+JAKE: OK.
+
+00:00:29.580 --> 00:00:30.930
+So it's-- it's-- oh.
+
+00:00:30.930 --> 00:00:31.430
+Hang on.
+
+00:00:31.430 --> 00:00:32.549
+Broadcast is a web RTC.
+
+00:00:32.549 --> 00:00:33.680
+You're gonna get
+in trouble here.
+
+00:00:33.680 --> 00:00:33.840
+SURMA: No, no, no.
+
+00:00:33.840 --> 00:00:35.250
+We're in a different area.
+
+00:00:35.250 --> 00:00:36.090
+It's In API.
+
+00:00:36.090 --> 00:00:38.130
+It also has been around
+for quite a time,
+
+00:00:38.130 --> 00:00:39.810
+similar to workers.
+
+00:00:39.810 --> 00:00:42.200
+But it doesn't have
+as wide support,
+
+00:00:42.200 --> 00:00:43.866
+sadly, because it's
+not been used a lot.
+
+00:00:43.866 --> 00:00:44.820
+But it's really cool.
+
+00:00:44.820 --> 00:00:46.341
+JAKE: So a type of worker?
+
+00:00:46.341 --> 00:00:46.840
+SURMA: No.
+
+00:00:46.840 --> 00:00:48.673
+So-- but it has to do
+with workers in a way.
+
+00:00:48.673 --> 00:00:50.220
+So a broadcast
+channel is basically
+
+00:00:50.220 --> 00:00:53.670
+a post-message channel
+associated with a name.
+
+00:00:53.670 --> 00:00:55.830
+So I can say, new
+broadcast channel Surma.
+
+00:00:55.830 --> 00:00:59.490
+And now I get a post-message
+endpoint for the name Surma.
+
+00:00:59.490 --> 00:01:02.940
+And any other site-- every
+other realm from my origin,
+
+00:01:02.940 --> 00:01:04.830
+like my workers,
+my service worker,
+
+00:01:04.830 --> 00:01:07.680
+all the other tabs that
+are open for my site--
+
+00:01:07.680 --> 00:01:11.040
+can now communicate through
+this same message channel
+
+00:01:11.040 --> 00:01:12.630
+because they know the same name.
+
+00:01:12.630 --> 00:01:14.430
+JAKE: So it's like pub/sub.
+
+00:01:14.430 --> 00:01:14.930
+SURMA: Yes.
+
+00:01:14.930 --> 00:01:16.620
+JAKE: But across
+tabs and across--
+
+00:01:16.620 --> 00:01:16.680
+SURMA: Yes.
+
+00:01:16.680 --> 00:01:18.120
+And you don't have to
+worry about knowing which
+
+00:01:18.120 --> 00:01:19.870
+tabs are open, do I
+have a soft server,
+
+00:01:19.870 --> 00:01:21.000
+how many workers are there.
+
+00:01:21.000 --> 00:01:22.011
+It just works.
+
+00:01:22.011 --> 00:01:24.510
+And then it's brilliant, because
+what it allows you to do is
+
+00:01:24.510 --> 00:01:27.690
+to write little pieces of
+code-- little modules--
+
+00:01:27.690 --> 00:01:30.180
+that just hook up to
+this broadcast channel
+
+00:01:30.180 --> 00:01:31.680
+and start working.
+
+00:01:31.680 --> 00:01:34.394
+JAKE: So previously you would
+have to use shared workers
+
+00:01:34.394 --> 00:01:35.560
+to be the sort of middleman.
+
+00:01:35.560 --> 00:01:35.880
+SURMA: Yeah.
+
+00:01:35.880 --> 00:01:37.940
+And have some kind of management
+telling you this module
+
+00:01:37.940 --> 00:01:38.610
+is now here.
+
+00:01:38.610 --> 00:01:39.810
+Do you want to talk to it?
+
+00:01:39.810 --> 00:01:42.800
+And now you just have the
+central unit in the platform.
+
+00:01:42.800 --> 00:01:44.550
+And whenever a module
+is finished loading,
+
+00:01:44.550 --> 00:01:46.890
+it just hooks itself
+up to the thing.
+
+00:01:46.890 --> 00:01:48.210
+And now you can talk to it.
+
+00:01:48.210 --> 00:01:49.680
+And then it's
+absolutely amazing,
+
+00:01:49.680 --> 00:01:51.892
+as I've recently discovered,
+for code splitting.
+
+00:01:51.892 --> 00:01:53.850
+Because you just load
+things whenever you need,
+
+00:01:53.850 --> 00:01:54.970
+and they start working.
+
+00:01:54.970 --> 00:01:57.120
+You don't have to actually
+statically import.
+
+00:01:57.120 --> 00:01:58.440
+You just dynamically import.
+
+00:01:58.440 --> 00:01:59.310
+JAKE: So what kind
+of messages are you
+
+00:01:59.310 --> 00:02:00.280
+sending through this then?
+
+00:02:00.280 --> 00:02:02.238
+SURMA: So I have like a
+cache manager in there.
+
+00:02:02.238 --> 00:02:05.550
+I have things that do my
+color scheme adjustments.
+
+00:02:05.550 --> 00:02:06.530
+My animator.
+
+00:02:06.530 --> 00:02:09.750
+All these things are now just
+like little tiny independent
+
+00:02:09.750 --> 00:02:10.665
+JavaScript modules.
+
+00:02:10.665 --> 00:02:12.790
+And they use broadcast
+channel to talk to a worker,
+
+00:02:12.790 --> 00:02:13.110
+to my mainframe.
+
+00:02:13.110 --> 00:02:14.850
+JAKE: So one page
+receives an update.
+
+00:02:14.850 --> 00:02:16.650
+And it can just tell all the
+times, I've got this data.
+
+00:02:16.650 --> 00:02:17.860
+You don't need to
+go and re-fetch it.
+
+00:02:17.860 --> 00:02:18.360
+SURMA: Yeah.
+
+00:02:18.360 --> 00:02:19.191
+JAKE: It's there.
+
+00:02:19.191 --> 00:02:19.690
+Brilliant.
+
+00:02:19.690 --> 00:02:22.520
+And what browsers?
+
+00:02:22.520 --> 00:02:24.159
+SURMA: No.
+
+00:02:24.159 --> 00:02:25.200
+JAKE: Chrome and Firefox.
+
+00:02:25.200 --> 00:02:25.699
+Brilliant.
+
+00:02:25.699 --> 00:02:27.158
+There we go.
+
+00:02:27.158 --> 00:02:28.740
+SURMA: I like that
+you knew that.
+
+00:02:29.224 --> 00:02:29.724
+[AHEM]
+
+00:02:30.708 --> 00:02:35.630
+[UNPLEASANT THROAT NOISE]
+
+00:02:35.630 --> 00:02:37.014
+JAKE: How was that
+for you, mate?
+
+00:02:37.014 --> 00:02:39.830
+Was that-- right in the ears.
+

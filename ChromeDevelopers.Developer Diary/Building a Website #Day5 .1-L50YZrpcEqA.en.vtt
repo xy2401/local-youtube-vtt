@@ -1,0 +1,296 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.980 --> 00:00:02.230
+PAUL LEWIS: I'm such an idiot.
+
+00:00:04.950 --> 00:00:07.340
+I know that errors
+are going to happen.
+
+00:00:07.340 --> 00:00:09.970
+And so help me, I
+should write code
+
+00:00:09.970 --> 00:00:13.020
+that says when an error
+happens, what actually happened.
+
+00:00:13.020 --> 00:00:17.560
+But I was-- I didn't.
+
+00:00:17.560 --> 00:00:23.859
+In my Python, I had
+this template not found.
+
+00:00:23.859 --> 00:00:25.400
+And now you can see
+here in the code,
+
+00:00:25.400 --> 00:00:27.316
+it actually says, template not
+found, and then the template
+
+00:00:27.316 --> 00:00:28.899
+I was looking for,
+and then which file
+
+00:00:28.899 --> 00:00:30.370
+is actually requested by.
+
+00:00:30.370 --> 00:00:36.350
+If you look at the code before
+this, it said, not found.
+
+00:00:36.350 --> 00:00:37.060
+That was it.
+
+00:00:37.060 --> 00:00:38.040
+That's all it said.
+
+00:00:38.040 --> 00:00:41.830
+And what I found was
+that the build script,
+
+00:00:41.830 --> 00:00:43.950
+the Travis build
+script, was not working.
+
+00:00:43.950 --> 00:00:44.590
+It was failing.
+
+00:00:44.590 --> 00:00:48.610
+And I was like,
+(STUTTERING) but why?
+
+00:00:48.610 --> 00:00:50.930
+So in a previous
+video, I mentioned
+
+00:00:50.930 --> 00:00:53.650
+I couldn't get the
+Travis stuff working.
+
+00:00:58.000 --> 00:01:01.180
+The Travis image wasn't working.
+
+00:01:01.180 --> 00:01:04.370
+And a bit of a Google around
+and somebody else [INAUDIBLE]
+
+00:01:04.370 --> 00:01:07.300
+said, you just want to restart
+your default Docker machine.
+
+00:01:07.300 --> 00:01:12.790
+So it's like, docker dash
+machine stop default and then
+
+00:01:12.790 --> 00:01:16.200
+docker dash machine start
+default. And what that does
+
+00:01:16.200 --> 00:01:18.390
+is it restarts the default
+Docker machine, which
+
+00:01:18.390 --> 00:01:21.190
+is kind of what you'd expect,
+given the name of the command.
+
+00:01:21.190 --> 00:01:23.250
+And after that, I
+could download Travis.
+
+00:01:23.250 --> 00:01:26.210
+So I downloaded
+the Travis image,
+
+00:01:26.210 --> 00:01:29.020
+which was about a gig and a
+half, I think, in the end.
+
+00:01:29.020 --> 00:01:31.450
+It was pretty
+sizable, this thing,
+
+00:01:31.450 --> 00:01:32.690
+so that took a while to do.
+
+00:01:32.690 --> 00:01:35.110
+So I'm sitting there
+kind of like, mm-hmm.
+
+00:01:35.110 --> 00:01:38.190
+Got the file, go to
+Travis image, boot it up,
+
+00:01:38.190 --> 00:01:40.795
+and I went in and I run each
+command, command, command.
+
+00:01:40.795 --> 00:01:42.170
+Because this is
+what I was saying
+
+00:01:42.170 --> 00:01:45.162
+on on the log for the Travis.
+
+00:01:45.162 --> 00:01:46.870
+It goes, blah, blah,
+blah, doing a thing.
+
+00:01:46.870 --> 00:01:49.430
+And then it just says, well,
+it was saying, not found.
+
+00:01:49.430 --> 00:01:50.860
+Now, this is the
+interim version,
+
+00:01:50.860 --> 00:01:52.068
+which was still not building.
+
+00:01:52.068 --> 00:01:54.500
+It says, template not
+found sections home.
+
+00:01:54.500 --> 00:01:56.660
+And I was like, what?
+
+00:01:56.660 --> 00:01:57.610
+Why?
+
+00:01:57.610 --> 00:01:58.560
+Why?
+
+00:01:58.560 --> 00:01:59.090
+What?
+
+00:01:59.090 --> 00:02:01.610
+So anyway, I get it running,
+duplicate all the steps
+
+00:02:01.610 --> 00:02:04.050
+that this is going through
+on that Travis image.
+
+00:02:04.050 --> 00:02:07.920
+And it turns out that because
+it's a fresh clone, even
+
+00:02:07.920 --> 00:02:10.800
+after the MPM installed, I
+haven't actually run a build.
+
+00:02:10.800 --> 00:02:15.860
+So I don't actually bake out
+the styles and the JavaScript
+
+00:02:15.860 --> 00:02:17.530
+as part of the Travis script.
+
+00:02:17.530 --> 00:02:21.140
+And so now you can
+see in the Travis YAML
+
+00:02:21.140 --> 00:02:24.730
+the last thing it does is an
+MPM run build to actually make
+
+00:02:24.730 --> 00:02:27.620
+the JavaScript and CSS work.
+
+00:02:27.620 --> 00:02:31.100
+And I've learned
+something-- re-learned
+
+00:02:31.100 --> 00:02:33.900
+an old lesson, which
+is if you actually
+
+00:02:33.900 --> 00:02:37.110
+output what the actual
+problem is, then
+
+00:02:37.110 --> 00:02:40.740
+you will actually discover what
+the probable solution will be.
+
+00:02:40.740 --> 00:02:42.750
+Rather than just
+writing not found,
+
+00:02:42.750 --> 00:02:47.250
+I actually have slightly more
+meaningful messages here.
+
+00:02:47.250 --> 00:02:49.520
+Probably won't be the
+last time it bites me.
+
+00:02:49.520 --> 00:02:52.700
+But it did, and it took me
+probably a good couple of hours
+
+00:02:52.700 --> 00:02:55.250
+last night to try and get to
+the bottom of why it was--
+
+00:02:55.250 --> 00:02:56.990
+an embarrassingly long time.
+
+00:02:56.990 --> 00:03:00.300
+But that's what happens.
+
+00:03:00.300 --> 00:03:02.950
+So there you go, yeah.
+
+00:03:02.950 --> 00:03:05.280
+Subscribe to the channel
+if you want more of these.
+
+00:03:05.280 --> 00:03:07.370
+Thank you so many--
+thank you so many?
+
+00:03:07.370 --> 00:03:09.350
+No, try that again, Paul.
+
+00:03:09.350 --> 00:03:15.160
+Thank you for all the
+comments and all the questions
+
+00:03:15.160 --> 00:03:16.830
+and all that kind of stuff.
+
+00:03:16.830 --> 00:03:19.420
+You can get the code on GitHub,
+and you should definitely
+
+00:03:19.420 --> 00:03:21.290
+go and take a look.
+
+00:03:21.290 --> 00:03:23.170
+You can see what I'm doing.
+
+00:03:23.170 --> 00:03:25.550
+I'm just committing
+stuff in as I go.
+
+00:03:25.550 --> 00:03:28.154
+And it's really fun to
+share all this with you.
+
+00:03:28.154 --> 00:03:29.320
+So thank you for joining me.
+
+00:03:29.320 --> 00:03:31.153
+As I say, subscribe if
+you want to get more.
+
+00:03:31.153 --> 00:03:33.950
+And I'll catch you
+in the next entry.
+

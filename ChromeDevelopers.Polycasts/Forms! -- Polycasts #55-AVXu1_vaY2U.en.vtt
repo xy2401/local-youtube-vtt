@@ -1,0 +1,502 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.970 --> 00:00:06.546
+MONICA DINCULESCU:
+Hey Polycasters!
+
+00:00:06.546 --> 00:00:07.920
+And welcome to a
+surprise edition
+
+00:00:07.920 --> 00:00:09.822
+of "The Meowni.ca Show."
+
+00:00:09.822 --> 00:00:11.280
+I thought I should
+steal the camera
+
+00:00:11.280 --> 00:00:13.613
+from Rob for a little bit so
+I can tell you about forms.
+
+00:00:13.613 --> 00:00:15.390
+That's the thing that
+I'm excited about.
+
+00:00:15.390 --> 00:00:17.120
+Forms are really
+awesome because you
+
+00:00:17.120 --> 00:00:19.490
+get to send data that a
+user types into a server
+
+00:00:19.490 --> 00:00:21.620
+without doing any work
+or writing any JavaScript
+
+00:00:21.620 --> 00:00:22.560
+and that's great.
+
+00:00:22.560 --> 00:00:24.030
+But if you've noticed,
+forms don't really
+
+00:00:24.030 --> 00:00:25.870
+work with custom elements that
+you may have been writing.
+
+00:00:25.870 --> 00:00:28.570
+Because forms only care about
+the native input element.
+
+00:00:28.570 --> 00:00:30.430
+So in Polymer we try
+to fix that by making
+
+00:00:30.430 --> 00:00:32.170
+something called an iron-form.
+
+00:00:32.170 --> 00:00:34.665
+Iron-form is really great if
+you get to control the custom
+
+00:00:34.665 --> 00:00:36.090
+element that you're
+writing, because you need
+
+00:00:36.090 --> 00:00:38.006
+to do a little bit of
+work so that it actually
+
+00:00:38.006 --> 00:00:39.207
+talks to an iron-form.
+
+00:00:39.207 --> 00:00:40.790
+So what I want to
+do today is show you
+
+00:00:40.790 --> 00:00:43.590
+how you can get a native form to
+actually care about your custom
+
+00:00:43.590 --> 00:00:45.960
+element with just
+doing one little trick.
+
+00:00:45.960 --> 00:00:49.030
+And that is to basically copy
+a value into a hidden input
+
+00:00:49.030 --> 00:00:51.650
+element so that the
+form actually sees it.
+
+00:00:51.650 --> 00:00:53.430
+Come to my computer, here.
+
+00:00:53.430 --> 00:00:56.290
+So the first thing I want
+to do is create a form.
+
+00:00:56.290 --> 00:00:59.830
+And you'll notice here that I'm
+using something called httpbin.
+
+00:00:59.830 --> 00:01:02.420
+Httpbin is an awesome
+service that basically
+
+00:01:02.420 --> 00:01:05.300
+lets you send a request to it,
+and it responds with the thing
+
+00:01:05.300 --> 00:01:06.116
+that you sent.
+
+00:01:06.116 --> 00:01:07.990
+This is really awesome
+because I don't really
+
+00:01:07.990 --> 00:01:10.490
+want to write a server
+to make this demo.
+
+00:01:10.490 --> 00:01:11.950
+Nobody does.
+
+00:01:11.950 --> 00:01:13.730
+So whatever I send
+to httpbin is going
+
+00:01:13.730 --> 00:01:17.020
+to tell me the arguments and
+the headers and the stuff.
+
+00:01:17.020 --> 00:01:17.700
+They're great.
+
+00:01:17.700 --> 00:01:18.930
+So I've created a form.
+
+00:01:18.930 --> 00:01:21.830
+And I have some form styles here
+included, so that it actually
+
+00:01:21.830 --> 00:01:23.110
+looks pretty and not terrible.
+
+00:01:23.110 --> 00:01:25.030
+So you're impressed
+with my mad CSS skills.
+
+00:01:25.030 --> 00:01:27.310
+And in this form I'm going to
+put something called a birthday
+
+00:01:27.310 --> 00:01:27.870
+input.
+
+00:01:27.870 --> 00:01:30.270
+The thing that I'm going to demo
+is basically a custom element
+
+00:01:30.270 --> 00:01:31.910
+that gets her birthdate
+so that I can send you
+
+00:01:31.910 --> 00:01:33.630
+cake when it's
+actually your birthday.
+
+00:01:33.630 --> 00:01:35.490
+It's going to be
+amazing for everyone.
+
+00:01:35.490 --> 00:01:37.115
+So I'm going to put
+an input over here.
+
+00:01:37.115 --> 00:01:38.736
+And I'm going to put a button.
+
+00:01:38.736 --> 00:01:40.110
+It's got a class,
+so it's pretty.
+
+00:01:40.110 --> 00:01:42.730
+And if we go over here to my
+demo and I refresh my page,
+
+00:01:42.730 --> 00:01:43.590
+I have a form.
+
+00:01:43.590 --> 00:01:44.440
+It has a button.
+
+00:01:44.440 --> 00:01:45.350
+Very exciting.
+
+00:01:45.350 --> 00:01:47.490
+So let's actually implement
+this custom element.
+
+00:01:47.490 --> 00:01:48.990
+It's a birthday
+input, so it's going
+
+00:01:48.990 --> 00:01:52.680
+to have a label to tell
+you what this input does.
+
+00:01:52.680 --> 00:01:56.727
+And then I'm going
+to put a date input.
+
+00:01:56.727 --> 00:01:58.560
+That's really just two
+text fields together.
+
+00:01:58.560 --> 00:02:01.570
+And one of them is a month,
+and one of them is a date.
+
+00:02:01.570 --> 00:02:06.100
+So if I refresh my from here,
+I should also import it.
+
+00:02:06.100 --> 00:02:10.240
+So I'm going to go ahead and
+include my element in the demo.
+
+00:02:10.240 --> 00:02:12.330
+And then when I refresh it, bam.
+
+00:02:12.330 --> 00:02:13.410
+There is an input.
+
+00:02:13.410 --> 00:02:15.990
+The thing is, I didn't tell
+the form to care about it.
+
+00:02:15.990 --> 00:02:20.207
+So if I actually try to
+submit a date in here,
+
+00:02:20.207 --> 00:02:21.040
+http doesn't see it.
+
+00:02:21.040 --> 00:02:22.640
+I didn't send any
+arguments with that form.
+
+00:02:22.640 --> 00:02:23.515
+And that makes sense.
+
+00:02:23.515 --> 00:02:24.810
+We didn't do any of the magic.
+
+00:02:24.810 --> 00:02:27.140
+So let's go ahead and do it.
+
+00:02:27.140 --> 00:02:30.080
+So the first thing I
+want to do is actually
+
+00:02:30.080 --> 00:02:31.769
+assemble this birthday somehow.
+
+00:02:31.769 --> 00:02:33.810
+So I'm going to create a
+property called birthday
+
+00:02:33.810 --> 00:02:35.602
+on my input, which
+is just a string.
+
+00:02:35.602 --> 00:02:37.810
+And I'm going to get it from
+the thing that you type.
+
+00:02:37.810 --> 00:02:39.710
+So I'm going to add an
+event listener for input
+
+00:02:39.710 --> 00:02:41.543
+so that every time you
+type something in one
+
+00:02:41.543 --> 00:02:43.217
+of these fields, I get an event.
+
+00:02:43.217 --> 00:02:45.050
+In this event listener,
+what I'm going to do
+
+00:02:45.050 --> 00:02:47.440
+is just take the two values
+and smash them together
+
+00:02:47.440 --> 00:02:49.690
+with a slash.
+
+00:02:49.690 --> 00:02:52.620
+And they're going to go into
+this property called birthday.
+
+00:02:52.620 --> 00:02:53.240
+Cool.
+
+00:02:53.240 --> 00:02:55.090
+So that's still not going to
+work because I still didn't
+
+00:02:55.090 --> 00:02:56.310
+tell the form how to use it.
+
+00:02:56.310 --> 00:02:58.220
+So let's do this.
+
+00:02:58.220 --> 00:03:00.330
+I'm going to have
+my input element,
+
+00:03:00.330 --> 00:03:01.867
+and it has the birthday.
+
+00:03:01.867 --> 00:03:03.450
+And I'm going to
+bind it to a variable
+
+00:03:03.450 --> 00:03:06.070
+so that I can actually
+pass this variable to one
+
+00:03:06.070 --> 00:03:07.410
+of my hidden inputs.
+
+00:03:07.410 --> 00:03:10.520
+So I'm going to create this
+hidden element, it's an input,
+
+00:03:10.520 --> 00:03:11.030
+it's hidden.
+
+00:03:11.030 --> 00:03:12.946
+So that means it doesn't
+show up in your form.
+
+00:03:12.946 --> 00:03:14.387
+Our form looks exactly the same.
+
+00:03:14.387 --> 00:03:15.720
+And I'm going to give it a name.
+
+00:03:15.720 --> 00:03:17.330
+Unless your input
+has a name, the form
+
+00:03:17.330 --> 00:03:18.880
+doesn't care about it either.
+
+00:03:18.880 --> 00:03:22.220
+And then its value is going to
+be the value from the birthday
+
+00:03:22.220 --> 00:03:23.135
+input element.
+
+00:03:23.135 --> 00:03:23.760
+So that's cool.
+
+00:03:23.760 --> 00:03:24.926
+I've wired them up together.
+
+00:03:24.926 --> 00:03:26.840
+And for this to actually
+work in our demo,
+
+00:03:26.840 --> 00:03:28.910
+you got to put them
+inside a dumb bind.
+
+00:03:28.910 --> 00:03:30.960
+Sweet.
+
+00:03:30.960 --> 00:03:31.990
+All of this should work.
+
+00:03:31.990 --> 00:03:34.230
+Let's go and refresh our demo.
+
+00:03:34.230 --> 00:03:35.770
+It looks exactly the same.
+
+00:03:35.770 --> 00:03:37.392
+I'm going to put in my birthday.
+
+00:03:37.392 --> 00:03:38.600
+This is actually my birthday.
+
+00:03:38.600 --> 00:03:39.680
+Please send me presents.
+
+00:03:39.680 --> 00:03:41.340
+I will appreciate them greatly.
+
+00:03:41.340 --> 00:03:43.010
+And now when I
+submit, look at this.
+
+00:03:43.010 --> 00:03:44.580
+We've sent something to httpbin.
+
+00:03:44.580 --> 00:03:46.360
+It confirms I've
+sent it a birthdate.
+
+00:03:46.360 --> 00:03:48.230
+Everything is
+working as expected.
+
+00:03:48.230 --> 00:03:48.730
+Amazing.
+
+00:03:48.730 --> 00:03:51.105
+And that's how you trick a
+form to care about your custom
+
+00:03:51.105 --> 00:03:51.859
+element.
+
+00:03:51.859 --> 00:03:53.150
+Thank you so much for watching.
+
+00:03:53.150 --> 00:03:54.108
+I'll see you next time.
+
+00:03:54.108 --> 00:03:57.010
+If you have any questions, put
+them in the comments below,
+
+00:03:57.010 --> 00:03:58.280
+or you can find me in Twitter.
+
+00:03:58.280 --> 00:03:59.580
+I'm @notwaldorf.
+
+00:03:59.580 --> 00:04:00.690
+Subscribe to the channel.
+
+00:04:00.690 --> 00:04:03.850
+And yeah, bye friends.
+
+00:04:03.850 --> 00:04:05.338
+[CLAP]
+
+00:04:05.338 --> 00:04:06.330
+Hi Polycasters.
+
+00:04:06.330 --> 00:04:08.260
+And welcome to another
+edition of oh no.
+
+00:04:08.260 --> 00:04:09.617
+This is not another edition.
+
+00:04:09.617 --> 00:04:11.080
+[CLAP]
+
+00:04:11.080 --> 00:04:14.990
+Hello poly-- uh [BLEEP]
+Don't make me laugh!
+
+00:04:14.990 --> 00:04:15.490
+[CLAP]
+
+00:04:15.490 --> 00:04:16.864
+If you've noticed,
+and if you try
+
+00:04:16.864 --> 00:04:19.539
+to use them with some of our
+custom elements-- uh. [BLEEP]
+
+00:04:19.539 --> 00:04:22.476
+SPEAKER 2: Rolling [CLAP]
+
+00:04:22.476 --> 00:04:22.976
+[CLAP]
+
+00:04:22.976 --> 00:04:24.934
+MONICA DINCULESCU: Thanks
+so much for watching.
+
+00:04:24.934 --> 00:04:27.218
+um, I forgot everything.
+
+00:04:27.218 --> 00:04:30.336
+God [BLEEP] this is hard.
+

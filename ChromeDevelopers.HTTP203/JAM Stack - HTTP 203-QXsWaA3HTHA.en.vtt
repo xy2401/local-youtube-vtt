@@ -1,0 +1,1283 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.290 --> 00:00:00.930
+JAKE: I actually do that.
+
+00:00:00.930 --> 00:00:01.763
+Do you ever do that?
+
+00:00:01.763 --> 00:00:02.850
+If it's a quiet tube--
+
+00:00:02.850 --> 00:00:03.060
+SURMA: Yeah.
+
+00:00:03.060 --> 00:00:04.300
+JAKE: You just adopt a skiing--
+
+00:00:04.300 --> 00:00:04.950
+SURMA: I try to surf it.
+
+00:00:04.950 --> 00:00:05.450
+JAKE: Yeah.
+
+00:00:05.450 --> 00:00:07.440
+SURMA: And try to, like,
+counteract the curves.
+
+00:00:07.440 --> 00:00:08.648
+JAKE: Bent knees, ski stance.
+
+00:00:08.648 --> 00:00:09.724
+SURMA: Silver Surfer!
+
+00:00:09.724 --> 00:00:10.640
+JAKE: Surf the-- yeah.
+
+00:00:10.640 --> 00:00:10.790
+Yeah.
+
+00:00:10.790 --> 00:00:11.300
+I do that.
+
+00:00:11.300 --> 00:00:12.091
+SURMA: We're weird.
+
+00:00:12.091 --> 00:00:18.270
+[MUSIC PLAYING]
+
+00:00:18.270 --> 00:00:21.030
+Tech in general, but
+web dev specifically,
+
+00:00:21.030 --> 00:00:23.775
+suffers a lot from people
+creating acronyms and throwing
+
+00:00:23.775 --> 00:00:24.400
+them out there.
+
+00:00:24.400 --> 00:00:26.040
+And then, they just develop
+a life of their own,
+
+00:00:26.040 --> 00:00:28.210
+and suddenly everyone is
+using AJAX and nobody knows
+
+00:00:28.210 --> 00:00:29.340
+what it actually stands for.
+
+00:00:29.340 --> 00:00:29.710
+JAKE: Yes.
+
+00:00:29.710 --> 00:00:31.890
+SURMA: Or serverless, or you
+know, all of these things.
+
+00:00:31.890 --> 00:00:32.848
+Like, wait, serverless?
+
+00:00:32.848 --> 00:00:34.210
+JAKE: PWA.
+
+00:00:34.210 --> 00:00:36.130
+SURMA: [VOCALIZING]
+
+00:00:36.130 --> 00:00:36.812
+[LAUGHTER]
+
+00:00:36.812 --> 00:00:37.770
+JAKE: It is a buzzword.
+
+00:00:37.770 --> 00:00:38.370
+It is a buzzword.
+
+00:00:38.370 --> 00:00:39.370
+SURMA: It is a buzzword.
+
+00:00:39.370 --> 00:00:41.580
+And honestly, we never had
+a good definition of PWA.
+
+00:00:41.580 --> 00:00:43.680
+So people kind of don't
+know what they're supposed
+
+00:00:43.680 --> 00:00:45.080
+to do if they want to be a PWA.
+
+00:00:45.080 --> 00:00:45.690
+JAKE: Yeah.
+
+00:00:45.690 --> 00:00:47.606
+SURMA: But another thing
+I've heard recently--
+
+00:00:47.606 --> 00:00:50.070
+and I'm not sure if Netlify
+people came up with it,
+
+00:00:50.070 --> 00:00:51.510
+or if they are just pushing it--
+
+00:00:51.510 --> 00:00:55.121
+but there's a buzzword
+around the JAMstack.
+
+00:00:55.121 --> 00:00:55.620
+JAKE: Right.
+
+00:00:55.620 --> 00:00:57.745
+And it's a word I've heard,
+and I couldn't actually
+
+00:00:57.745 --> 00:00:59.347
+tell you what it means.
+
+00:00:59.347 --> 00:01:00.930
+Phil Hawksworth who
+works in Netlify--
+
+00:01:00.930 --> 00:01:01.050
+SURMA: Yeah.
+
+00:01:01.050 --> 00:01:02.620
+JAKE: I've seen
+him speak about it.
+
+00:01:02.620 --> 00:01:03.030
+SURMA: Exactly.
+
+00:01:03.030 --> 00:01:04.250
+JAKE: And I feel you
+should be offended that I
+
+00:01:04.250 --> 00:01:05.069
+don't know what it stands for.
+
+00:01:05.069 --> 00:01:07.060
+SURMA: I heard [INAUDIBLE] as
+well, and he talked about it.
+
+00:01:07.060 --> 00:01:09.060
+And it was like, so
+basically what you're saying
+
+00:01:09.060 --> 00:01:10.190
+is common sense?
+
+00:01:10.190 --> 00:01:10.950
+JAKE: Oh!
+
+00:01:10.950 --> 00:01:12.950
+SURMA: And now I looked
+into the actual website,
+
+00:01:12.950 --> 00:01:15.920
+and it felt really interesting
+because it's a good pitch,
+
+00:01:15.920 --> 00:01:20.580
+but I actually don't agree
+with it in that absolute way
+
+00:01:20.580 --> 00:01:21.540
+as it is presented.
+
+00:01:21.540 --> 00:01:23.135
+JAKE: Oh, so like AJAX, then?
+
+00:01:23.135 --> 00:01:23.760
+SURMA: Kind of.
+
+00:01:23.760 --> 00:01:24.300
+Yeah.
+
+00:01:24.300 --> 00:01:28.032
+So I sort of just copied the
+definitions that they give
+
+00:01:28.032 --> 00:01:29.490
+and the explanation
+that they give.
+
+00:01:29.490 --> 00:01:30.970
+And I thought we could just
+talk about them, because it's
+
+00:01:30.970 --> 00:01:33.600
+actually quite-- it's
+because we have built
+
+00:01:33.600 --> 00:01:36.221
+things in the recent past.
+
+00:01:36.221 --> 00:01:36.720
+JAKE: Yes.
+
+00:01:36.720 --> 00:01:37.980
+SURMA: And we might
+have opinions.
+
+00:01:37.980 --> 00:01:38.480
+JAKE: OK.
+
+00:01:38.480 --> 00:01:42.752
+SURMA: So for context, Netlify,
+if you haven't used it, is a--
+
+00:01:42.752 --> 00:01:44.960
+to give an understatement,
+it's a static site hoster.
+
+00:01:44.960 --> 00:01:45.220
+JAKE: Yes.
+
+00:01:45.220 --> 00:01:46.190
+SURMA: Like, it
+hosts a static site.
+
+00:01:46.190 --> 00:01:46.290
+JAKE: Yes, CDN.
+
+00:01:46.290 --> 00:01:48.540
+SURMA: But it just integrates
+really well into your GitHub,
+
+00:01:48.540 --> 00:01:50.820
+and it has, like, tools for
+supporting forms and all
+
+00:01:50.820 --> 00:01:51.390
+these little things.
+
+00:01:51.390 --> 00:01:52.020
+JAKE: And we're big fans.
+
+00:01:52.020 --> 00:01:53.490
+Like, it integrates
+really well with--
+
+00:01:53.490 --> 00:01:54.150
+SURMA: Yes, not sponsored.
+
+00:01:54.150 --> 00:01:54.890
+JAKE: Not sponsored.
+
+00:01:54.890 --> 00:01:55.650
+That'd be nice, though.
+
+00:01:55.650 --> 00:01:55.980
+SURMA: Why not?
+
+00:01:55.980 --> 00:01:56.240
+Yeah.
+
+00:01:56.240 --> 00:01:57.380
+JAKE: We should get some.
+
+00:01:57.380 --> 00:01:59.200
+I do actually have a
+Netlify hoodie, so you know.
+
+00:01:59.200 --> 00:02:00.658
+SURMA: Oh, I want
+a Netlify hoodie.
+
+00:02:00.658 --> 00:02:02.580
+JAKE: And this probably
+counts as being dodgy.
+
+00:02:02.580 --> 00:02:04.080
+SURMA: So let's start
+with the basics, I guess.
+
+00:02:04.080 --> 00:02:06.040
+The JAMstack-- what
+does it stand for?
+
+00:02:06.040 --> 00:02:06.150
+JAKE: Right.
+
+00:02:06.150 --> 00:02:06.870
+SURMA: So it's
+basically an acronym--
+
+00:02:06.870 --> 00:02:08.470
+J, A, and M, and
+that's your stack.
+
+00:02:08.470 --> 00:02:08.970
+JAKE: Yeah.
+
+00:02:08.970 --> 00:02:10.627
+SURMA: And J stands
+for JavaScript.
+
+00:02:10.627 --> 00:02:11.460
+JAKE: Yeah, it does.
+
+00:02:11.460 --> 00:02:12.410
+SURMA: Big surprise.
+
+00:02:12.410 --> 00:02:13.350
+And basically, what
+they're saying is--
+
+00:02:13.350 --> 00:02:14.250
+JAKE: Like the J in AJAX.
+
+00:02:14.250 --> 00:02:14.400
+Good.
+
+00:02:14.400 --> 00:02:14.610
+Right.
+
+00:02:14.610 --> 00:02:17.220
+SURMA: Any dynamic programming
+during the request response
+
+00:02:17.220 --> 00:02:20.632
+cycle is handled by JavaScript
+running entirely on the client.
+
+00:02:20.632 --> 00:02:22.590
+This could be any frontend,
+framework, library,
+
+00:02:22.590 --> 00:02:24.232
+or even vanilla JavaScript.
+
+00:02:24.232 --> 00:02:25.440
+They make it sound so absurd.
+
+00:02:25.440 --> 00:02:26.470
+JAKE: Even vanilla JavaScripts?
+
+00:02:26.470 --> 00:02:26.730
+SURMA: I know.
+
+00:02:26.730 --> 00:02:27.402
+It can.
+
+00:02:27.402 --> 00:02:28.110
+That makes sense.
+
+00:02:28.110 --> 00:02:29.430
+JAKE: You can do that now.
+
+00:02:29.430 --> 00:02:30.240
+SURMA: That's absurd, isn't it?
+
+00:02:30.240 --> 00:02:30.610
+JAKE: OK.
+
+00:02:30.610 --> 00:02:32.901
+SURMA: And I'm wondering,
+like, any dynamic programming
+
+00:02:32.901 --> 00:02:34.390
+during the request
+response cycle?
+
+00:02:34.390 --> 00:02:35.090
+Why won't output be--
+
+00:02:35.090 --> 00:02:36.440
+JAKE: So it could stand
+for, not JavaScript.
+
+00:02:36.440 --> 00:02:37.480
+Is that what we're saying?
+
+00:02:37.480 --> 00:02:37.980
+SURMA: No.
+
+00:02:37.980 --> 00:02:39.720
+But it has to be
+handled by JavaScript.
+
+00:02:39.720 --> 00:02:40.660
+And we're like, what's
+the alternative?
+
+00:02:40.660 --> 00:02:42.650
+How can you handle any
+dynamic programming on the--
+
+00:02:42.650 --> 00:02:42.790
+JAKE: Oh, I see.
+
+00:02:42.790 --> 00:02:43.150
+I see.
+
+00:02:43.150 --> 00:02:43.691
+SURMA: Right?
+
+00:02:43.691 --> 00:02:45.029
+So it's a bit, OK, cool.
+
+00:02:45.029 --> 00:02:47.070
+So the one part of the
+stack is using JavaScript.
+
+00:02:47.070 --> 00:02:47.780
+Cool.
+
+00:02:47.780 --> 00:02:50.444
+Then, they're saying the
+A for APIs, meaning that--
+
+00:02:50.444 --> 00:02:52.110
+JAKE: Oh, so that
+stands for an acronym.
+
+00:02:52.110 --> 00:02:52.680
+Good.
+
+00:02:52.680 --> 00:02:55.013
+SURMA: All server-side processes
+or database actions are
+
+00:02:55.013 --> 00:02:57.930
+abstracted into reusable
+APIs accessed over HTTPS--
+
+00:02:57.930 --> 00:02:59.820
+good-- with JavaScript.
+
+00:02:59.820 --> 00:03:03.950
+And these can be custom built or
+leverage third-party services.
+
+00:03:03.950 --> 00:03:04.450
+JAKE: OK.
+
+00:03:04.450 --> 00:03:04.680
+SURMA: Sure.
+
+00:03:04.680 --> 00:03:05.430
+So you use APIs.
+
+00:03:05.430 --> 00:03:07.530
+That's something that has
+been around for a while.
+
+00:03:07.530 --> 00:03:08.430
+I mean, the--
+
+00:03:08.430 --> 00:03:11.150
+JAKE: Someone thought
+of JAM, and then
+
+00:03:11.150 --> 00:03:12.460
+thought of what words--
+
+00:03:12.460 --> 00:03:12.960
+SURMA: Maybe
+
+00:03:12.960 --> 00:03:14.418
+JAKE: These things
+could stand for.
+
+00:03:14.418 --> 00:03:15.060
+Anyway, OK.
+
+00:03:15.060 --> 00:03:16.309
+I'll try not to be as cynical.
+
+00:03:16.309 --> 00:03:17.490
+SURMA: M stands for Markup.
+
+00:03:17.490 --> 00:03:20.130
+And basically, templated
+markup should be pre-built
+
+00:03:20.130 --> 00:03:22.080
+at deploy time,
+usually using a site
+
+00:03:22.080 --> 00:03:24.750
+generator for content sites
+or a build tool for web apps.
+
+00:03:24.750 --> 00:03:27.810
+JAKE: So as cynical as I am
+about, like, the acronym,
+
+00:03:27.810 --> 00:03:29.002
+it's nice that--
+
+00:03:29.002 --> 00:03:30.710
+template markup
+pre-built at deploy time.
+
+00:03:30.710 --> 00:03:33.570
+That sounds like a really good
+thing, especially if you're
+
+00:03:33.570 --> 00:03:35.940
+going to have a server and a--
+
+00:03:35.940 --> 00:03:36.930
+JavaScript is good.
+
+00:03:36.930 --> 00:03:38.330
+APIs are definitely a thing.
+
+00:03:38.330 --> 00:03:39.330
+It seems OK.
+
+00:03:39.330 --> 00:03:39.830
+It seems OK.
+
+00:03:39.830 --> 00:03:40.160
+SURMA: Exactly.
+
+00:03:40.160 --> 00:03:42.284
+So I found it interesting,
+because the next section
+
+00:03:42.284 --> 00:03:44.160
+on the website is, when
+is something not JAM?
+
+00:03:44.160 --> 00:03:44.660
+JAKE: Right.
+
+00:03:44.660 --> 00:03:46.380
+SURMA: And that's, I think,
+a really interesting way
+
+00:03:46.380 --> 00:03:46.921
+to phrase it.
+
+00:03:46.921 --> 00:03:48.390
+Like, where do we draw the line?
+
+00:03:48.390 --> 00:03:48.670
+JAKE: Marmalade.
+
+00:03:48.670 --> 00:03:50.070
+SURMA: And so for
+example, a site
+
+00:03:50.070 --> 00:03:52.470
+built with a server-side
+CMS like WordPress, Drupal,
+
+00:03:52.470 --> 00:03:55.297
+or Joomla, or
+Squarespace is not JAM.
+
+00:03:55.297 --> 00:03:56.880
+So basically, what
+they're saying is--
+
+00:03:56.880 --> 00:03:58.760
+JAKE: Is that because their
+live generating marker
+
+00:03:58.760 --> 00:03:59.010
+of, like, a service site?
+
+00:03:59.010 --> 00:03:59.790
+SURMA: I guess.
+
+00:03:59.790 --> 00:04:02.700
+It feels like now that
+JAM is strictly opposed
+
+00:04:02.700 --> 00:04:03.855
+to server-type rendering.
+
+00:04:03.855 --> 00:04:04.980
+JAKE: Well, that's a shame.
+
+00:04:04.980 --> 00:04:08.040
+SURMA: Which I don't
+necessarily agree with,
+
+00:04:08.040 --> 00:04:09.840
+because it's such
+a big performance
+
+00:04:09.840 --> 00:04:11.840
+parameter for the first visit.
+
+00:04:11.840 --> 00:04:14.320
+JAKE: And it's nice that
+they're doing static deploy.
+
+00:04:14.320 --> 00:04:14.460
+SURMA: Yeah.
+
+00:04:14.460 --> 00:04:15.600
+JAKE: But that's
+not always possible.
+
+00:04:15.600 --> 00:04:16.230
+SURMA: Not always, no.
+
+00:04:16.230 --> 00:04:18.329
+For example, like, there's
+this image compressor
+
+00:04:18.329 --> 00:04:21.860
+that we're building which
+is completely static,
+
+00:04:21.860 --> 00:04:25.535
+and we have I think a
+pretty good static site,
+
+00:04:25.535 --> 00:04:26.160
+but sometimes--
+
+00:04:26.160 --> 00:04:27.962
+JAKE: We will do, someday.
+
+00:04:27.962 --> 00:04:30.420
+SURMA: So what they're saying
+is, in Netlify, for instance,
+
+00:04:30.420 --> 00:04:33.660
+like, instead of
+building it on the fly,
+
+00:04:33.660 --> 00:04:35.774
+they kick off their static
+site generation process
+
+00:04:35.774 --> 00:04:36.940
+every time the data changes.
+
+00:04:36.940 --> 00:04:39.057
+So for a blog, instead
+of [INAUDIBLE] a site,
+
+00:04:39.057 --> 00:04:40.890
+they generate it on the
+fly with PHP, right?
+
+00:04:40.890 --> 00:04:42.720
+A request comes in,
+PHP hits the database,
+
+00:04:42.720 --> 00:04:44.790
+gets the most recent blog post,
+gives you a list of blog posts.
+
+00:04:44.790 --> 00:04:45.210
+JAKE: Yeah.
+
+00:04:45.210 --> 00:04:47.459
+SURMA: They say, whenever
+you publish a new blog post,
+
+00:04:47.459 --> 00:04:51.240
+you kick off your build process
+and generate a new static site.
+
+00:04:51.240 --> 00:04:52.960
+JAKE: Scalability issues, there.
+
+00:04:52.960 --> 00:04:55.250
+SURMA: So that's why, for
+example, Phil Hawksworth
+
+00:04:55.250 --> 00:05:00.780
+built a website with a clock
+that gets rebuilt every second.
+
+00:05:00.780 --> 00:05:02.190
+And I feel like I get it.
+
+00:05:02.190 --> 00:05:02.691
+But also--
+
+00:05:02.691 --> 00:05:03.856
+JAKE: That's good, actually.
+
+00:05:03.856 --> 00:05:05.670
+Well hang on, what was
+his point with that?
+
+00:05:05.670 --> 00:05:06.450
+I mean, because it--
+
+00:05:06.450 --> 00:05:07.350
+SURMA: He said, like, it scales.
+
+00:05:07.350 --> 00:05:09.010
+You can build
+in-site every second.
+
+00:05:09.010 --> 00:05:10.692
+And our infrastructure
+will handle that.
+
+00:05:10.692 --> 00:05:13.150
+And they have some advantages
+that I'm going to talk about.
+
+00:05:13.150 --> 00:05:16.500
+But I feel like I get it,
+and probably lots of cases
+
+00:05:16.500 --> 00:05:18.640
+will benefit from it,
+but it shouldn't be--
+
+00:05:18.640 --> 00:05:20.650
+I guess what we
+should be saying is,
+
+00:05:20.650 --> 00:05:23.151
+the JAMstack might not
+always be the right choice.
+
+00:05:23.151 --> 00:05:23.650
+JAKE: Right.
+
+00:05:23.650 --> 00:05:25.430
+SURMA: It's a very popular
+choice right now, especially
+
+00:05:25.430 --> 00:05:27.730
+because it's so well-supported,
+because you can just
+
+00:05:27.730 --> 00:05:30.054
+drop your stuff in a GCS
+bucket or some storage thing
+
+00:05:30.054 --> 00:05:30.970
+and it will just work.
+
+00:05:30.970 --> 00:05:32.886
+JAKE: Yeah, I've built
+a few projects recently
+
+00:05:32.886 --> 00:05:33.931
+that fit into bucket--
+
+00:05:33.931 --> 00:05:35.627
+into this definition
+very easily.
+
+00:05:35.627 --> 00:05:37.960
+SURMA: The second example
+they give for something that's
+
+00:05:37.960 --> 00:05:40.620
+not a JAMstack website--
+a single-page app that
+
+00:05:40.620 --> 00:05:43.120
+uses isomorphic rendering
+to build views on the server
+
+00:05:43.120 --> 00:05:46.330
+at runtime, which I guess is an
+extension of the first thing.
+
+00:05:46.330 --> 00:05:48.615
+JAKE: It seems very
+much like they're
+
+00:05:48.615 --> 00:05:49.990
+very much against
+the things that
+
+00:05:49.990 --> 00:05:52.174
+don't run on Netlify Stack.
+
+00:05:52.174 --> 00:05:52.840
+Call me cynical.
+
+00:05:52.840 --> 00:05:54.927
+SURMA: Ironic.
+
+00:05:54.927 --> 00:05:57.135
+And the third example is,
+a monolithic server-run web
+
+00:05:57.135 --> 00:05:58.540
+app that relies
+on the Ruby, Node
+
+00:05:58.540 --> 00:05:59.870
+or another backend language.
+
+00:05:59.870 --> 00:06:01.210
+So basically what they're
+saying is, the JAMstack--
+
+00:06:01.210 --> 00:06:03.680
+and I have to say, they're
+not saying that the JAMstack
+
+00:06:03.680 --> 00:06:04.930
+is the solution to everything.
+
+00:06:04.930 --> 00:06:05.200
+JAKE: Oh, that's fair enough.
+
+00:06:05.200 --> 00:06:06.310
+SURMA: And everybody
+should be using JAMstack,
+
+00:06:06.310 --> 00:06:08.352
+but I guess they're
+saying that it's not JAM.
+
+00:06:08.352 --> 00:06:09.310
+And that's fair to say.
+
+00:06:09.310 --> 00:06:09.790
+JAKE: Right, fair enough.
+
+00:06:09.790 --> 00:06:11.164
+SURMA: And the
+JAMstack, I guess,
+
+00:06:11.164 --> 00:06:14.980
+has advantages where like,
+OK, if you have no dynamically
+
+00:06:14.980 --> 00:06:16.690
+generated websites
+in your backend,
+
+00:06:16.690 --> 00:06:18.179
+but it's all static
+at build time,
+
+00:06:18.179 --> 00:06:19.720
+you have an easier
+time with caching.
+
+00:06:19.720 --> 00:06:19.990
+JAKE: Yes, absolutely.
+
+00:06:19.990 --> 00:06:22.030
+SURMA: Because you can
+just deploy it to backend,
+
+00:06:22.030 --> 00:06:23.750
+get it to all the edge
+servers straight away.
+
+00:06:23.750 --> 00:06:23.950
+JAKE: Yes.
+
+00:06:23.950 --> 00:06:25.491
+SURMA: And no requests
+will ever have
+
+00:06:25.491 --> 00:06:26.770
+to go back to your backend.
+
+00:06:26.770 --> 00:06:28.330
+And that can be a
+massive speedup.
+
+00:06:28.330 --> 00:06:29.680
+JAKE: Yes.
+
+00:06:29.680 --> 00:06:32.429
+My blog right now
+is not a JAMstack.
+
+00:06:32.429 --> 00:06:33.220
+SURMA: Interesting.
+
+00:06:33.220 --> 00:06:37.720
+JAKE: It's a Python
+Django setup.
+
+00:06:37.720 --> 00:06:40.840
+And it's on my list of things
+that I'll never get around to.
+
+00:06:40.840 --> 00:06:43.150
+But it would be to
+rebuild it as something
+
+00:06:43.150 --> 00:06:45.310
+more closely resembling
+a JAMstack-- like,
+
+00:06:45.310 --> 00:06:48.010
+something that would
+just be built from GitHub
+
+00:06:48.010 --> 00:06:49.482
+and then sort of deployed.
+
+00:06:49.482 --> 00:06:51.940
+Because I don't think I'll ever
+hit the scalability problem
+
+00:06:51.940 --> 00:06:53.530
+with MetaBot because of my blog.
+
+00:06:53.530 --> 00:06:56.660
+I've only posted a
+couple this year.
+
+00:06:56.660 --> 00:06:58.060
+And it feels--
+
+00:06:58.060 --> 00:06:59.260
+I don't want to--
+
+00:06:59.260 --> 00:07:00.610
+my server goes down, Surma.
+
+00:07:00.610 --> 00:07:03.310
+My server goes down
+and I never know why.
+
+00:07:03.310 --> 00:07:05.560
+I turn it off and on again,
+and sometimes that works.
+
+00:07:05.560 --> 00:07:06.370
+Sometimes it doesn't.
+
+00:07:06.370 --> 00:07:08.036
+Sometimes it's just
+used up all the disk
+
+00:07:08.036 --> 00:07:10.545
+space with Linux kernels
+it doesn't need anymore.
+
+00:07:10.545 --> 00:07:11.920
+And it's the kind
+of stuff I just
+
+00:07:11.920 --> 00:07:12.920
+don't want to have to
+deal with ever again.
+
+00:07:12.920 --> 00:07:13.410
+SURMA: I know, right?
+
+00:07:13.410 --> 00:07:13.730
+JAKE: It's-- yeah.
+
+00:07:13.730 --> 00:07:14.860
+SURMA: So you have
+Cloudflare in front,
+
+00:07:14.860 --> 00:07:16.359
+and if your server
+goes down, people
+
+00:07:16.359 --> 00:07:17.450
+can still read your stuff?
+
+00:07:17.450 --> 00:07:18.650
+JAKE: For a little bit.
+
+00:07:18.650 --> 00:07:19.150
+SURMA: OK.
+
+00:07:19.150 --> 00:07:20.320
+JAKE: It's not long.
+
+00:07:20.320 --> 00:07:22.570
+But yes, Cloudflare is in
+front and it handles, like,
+
+00:07:22.570 --> 00:07:24.540
+if an article I write
+does become popular.
+
+00:07:24.540 --> 00:07:25.040
+SURMA: Yeah.
+
+00:07:25.040 --> 00:07:26.710
+JAKE: Like, Cloudflare's
+taking care of all of that.
+
+00:07:26.710 --> 00:07:28.510
+SURMA: So I'm a big
+fan of the JAMstack.
+
+00:07:28.510 --> 00:07:30.370
+I feel like it's a good pattern.
+
+00:07:33.011 --> 00:07:35.635
+I guess what I wanted to see is,
+like, an alternative, like not
+
+00:07:35.635 --> 00:07:37.430
+just saying this is
+not JAM, but like,
+
+00:07:37.430 --> 00:07:39.560
+when is it good to be not JAM?
+
+00:07:39.560 --> 00:07:41.930
+Because sometimes I
+think it is appropriate.
+
+00:07:41.930 --> 00:07:44.750
+JAKE: I think it must be in
+that scaling point, right?
+
+00:07:44.750 --> 00:07:46.910
+SURMA: Maybe, yeah.
+
+00:07:46.910 --> 00:07:49.190
+I mean, I guess
+what they're trying
+
+00:07:49.190 --> 00:07:51.380
+to prove is, like, even
+a website that publishes
+
+00:07:51.380 --> 00:07:53.290
+multiple news articles a
+day, like a big newspaper,
+
+00:07:53.290 --> 00:07:53.390
+could still--
+
+00:07:53.390 --> 00:07:54.750
+JAKE: I was thinking BBC, right?
+
+00:07:54.750 --> 00:07:55.380
+BBC, "Guardian."
+
+00:07:55.380 --> 00:07:56.755
+SURMA: Could still
+technically be
+
+00:07:56.755 --> 00:07:58.490
+a JAMstack, where
+you just rebuilt
+
+00:07:58.490 --> 00:08:00.179
+every time a new
+thing gets published?
+
+00:08:00.179 --> 00:08:01.220
+JAKE: You would have to--
+
+00:08:01.220 --> 00:08:02.594
+I mean, if you
+made a change that
+
+00:08:02.594 --> 00:08:05.726
+was going to impact every page,
+like, you changed the header--
+
+00:08:05.726 --> 00:08:07.600
+SURMA: Your build system
+must be really fast.
+
+00:08:07.600 --> 00:08:08.100
+JAKE: Yeah.
+
+00:08:08.100 --> 00:08:09.900
+SURMA: And that probably
+isn't possible at the moment.
+
+00:08:09.900 --> 00:08:10.680
+JAKE: Yeah.
+
+00:08:10.680 --> 00:08:14.030
+Not for the amount of articles
+the BBC turns out a week.
+
+00:08:14.030 --> 00:08:18.300
+I imagine it's going to be a
+tough thing for them to do.
+
+00:08:18.300 --> 00:08:20.630
+So I think that's a
+case where you want--
+
+00:08:20.630 --> 00:08:26.690
+I guess it's the, when does
+the number of visits or number
+
+00:08:26.690 --> 00:08:30.012
+of articles you have change--
+
+00:08:30.012 --> 00:08:31.970
+I'm trying to figure out
+my words, here, right?
+
+00:08:31.970 --> 00:08:32.630
+SURMA: There must
+be an inflection
+
+00:08:32.630 --> 00:08:35.062
+point in the build time
+versus how often you deploy,
+
+00:08:35.062 --> 00:08:36.770
+where it's like, at
+this point, it is not
+
+00:08:36.770 --> 00:08:38.659
+feasible to stay on a
+JAMstack and I need just
+
+00:08:38.659 --> 00:08:39.480
+server-side rendering on it.
+
+00:08:39.480 --> 00:08:39.980
+JAKE: Right.
+
+00:08:39.980 --> 00:08:41.387
+And I think there's
+a possibility
+
+00:08:41.387 --> 00:08:43.220
+that for things like
+"The Guardian" and BBC,
+
+00:08:43.220 --> 00:08:47.120
+they might have
+articles that might not
+
+00:08:47.120 --> 00:08:49.500
+be accessed between deploys.
+
+00:08:49.500 --> 00:08:50.000
+SURMA: Yeah.
+
+00:08:50.000 --> 00:08:51.470
+JAKE: Because, like,
+really old stuff.
+
+00:08:51.470 --> 00:08:53.950
+Or would be accessed, like,
+much later after it's deployed.
+
+00:08:53.950 --> 00:08:56.810
+SURMA: So you could
+optimize you build pipeline
+
+00:08:56.810 --> 00:08:59.840
+to delay the inflection point
+of staying on JAM, I guess.
+
+00:08:59.840 --> 00:09:02.710
+JAKE: Well, what I think we want
+is a gradual build process that
+
+00:09:02.710 --> 00:09:06.481
+is triggered by visits to the
+website, which is not JAM,
+
+00:09:06.481 --> 00:09:06.980
+right?
+
+00:09:06.980 --> 00:09:08.795
+It's their server build time.
+
+00:09:08.795 --> 00:09:10.100
+SURMA: Yeah it is.
+
+00:09:10.100 --> 00:09:10.880
+JAKE: But yeah.
+
+00:09:10.880 --> 00:09:12.860
+SURMA: The one thing I really
+like about this is, it pushes--
+
+00:09:12.860 --> 00:09:14.670
+if people adhere to the
+JAMstack and we make it a thing,
+
+00:09:14.670 --> 00:09:17.045
+then we can just be like, you
+should be using a JAMstack,
+
+00:09:17.045 --> 00:09:19.524
+we will get more web apps
+that have an API by default.
+
+00:09:19.524 --> 00:09:22.065
+Because one thing I hate-- and
+it's something that, actually,
+
+00:09:22.065 --> 00:09:23.940
+our Google pros are
+also not good at--
+
+00:09:23.940 --> 00:09:26.540
+is providing an API
+for third-party apps
+
+00:09:26.540 --> 00:09:29.750
+to just build something
+against it, and use the data,
+
+00:09:29.750 --> 00:09:31.050
+or just give a better UI.
+
+00:09:31.050 --> 00:09:32.400
+Show that it could
+be done differently.
+
+00:09:32.400 --> 00:09:33.470
+All these things
+I sometimes miss.
+
+00:09:33.470 --> 00:09:34.910
+And this would
+enforce that there
+
+00:09:34.910 --> 00:09:36.705
+is an API that you can
+use, because that's what
+
+00:09:36.705 --> 00:09:37.830
+it prescribes, pretty much.
+
+00:09:37.830 --> 00:09:39.380
+JAKE: Yeah, absolutely.
+
+00:09:39.380 --> 00:09:41.160
+Excuse me, sir, I need
+you to stand there.
+
+00:09:41.160 --> 00:09:42.072
+Just wait a minute.
+
+00:09:42.072 --> 00:09:43.280
+SURMA: I need to face myself.
+
+00:09:43.280 --> 00:09:45.171
+JAKE: I know you have
+to go, but like, just--
+
+00:09:45.171 --> 00:09:45.670
+[LAUGHTER]
+
+00:09:45.670 --> 00:09:47.150
+Jake, I need your help.
+
+00:09:47.150 --> 00:09:49.754
+SURMA: Who is the
+prettiest off them all?
+
+00:09:49.754 --> 00:09:51.920
+[LAUGHTER]
+
+00:09:51.920 --> 00:09:55.060
+JAKE: So this quandary--
+what do you do?
+

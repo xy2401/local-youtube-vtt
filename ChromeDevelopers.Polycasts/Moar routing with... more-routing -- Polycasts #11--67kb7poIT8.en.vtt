@@ -1,0 +1,513 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.862 --> 00:00:04.570
+So in the last episode
+I talked about how
+
+00:00:04.570 --> 00:00:06.490
+you can work with Polymer
+and JavaScript routers,
+
+00:00:06.490 --> 00:00:08.531
+but I'm sure some of you
+were thinking, hey dude,
+
+00:00:08.531 --> 00:00:09.640
+this is web components.
+
+00:00:09.640 --> 00:00:12.480
+Can't I just do all my routing
+with an element or something?
+
+00:00:12.480 --> 00:00:14.729
+Now for anyone out there
+thinking that this episode is
+
+00:00:14.729 --> 00:00:16.059
+just for you, I'm Rob Dodson.
+
+00:00:16.059 --> 00:00:17.975
+Today on Polycast, I'm
+going to be showing you
+
+00:00:17.975 --> 00:00:20.490
+how to do all your routing
+using nothing but HTML, so let's
+
+00:00:20.490 --> 00:00:22.320
+check it out.
+
+00:00:22.320 --> 00:00:24.410
+So today's element
+extraordinaire
+
+00:00:24.410 --> 00:00:25.470
+is called more-routing.
+
+00:00:28.050 --> 00:00:30.200
+It's a little library of
+elements thrown together
+
+00:00:30.200 --> 00:00:31.600
+by a member of the Polymer team.
+
+00:00:31.600 --> 00:00:35.120
+And to be honest, it could
+not be easier to work with.
+
+00:00:35.120 --> 00:00:37.731
+First, you configure it to
+tell it what kind of routes
+
+00:00:37.731 --> 00:00:38.230
+you want.
+
+00:00:38.230 --> 00:00:40.680
+You can either do hash
+routes or Pretty URLs.
+
+00:00:40.680 --> 00:00:42.375
+Then you define
+your list of routes.
+
+00:00:42.375 --> 00:00:43.940
+You can optionally
+give each route
+
+00:00:43.940 --> 00:00:46.584
+a name so they're easier
+to refer to later.
+
+00:00:46.584 --> 00:00:48.000
+So I've got these
+two routes here.
+
+00:00:48.000 --> 00:00:50.810
+I'm calling the first one
+home and the second one users.
+
+00:00:50.810 --> 00:00:52.750
+Lastly, you can drop
+in any element that
+
+00:00:52.750 --> 00:00:54.370
+extends core-selector,
+and give it
+
+00:00:54.370 --> 00:00:57.196
+a few children that sync
+up with the various routes.
+
+00:00:57.196 --> 00:00:58.820
+Since the core-pages
+element that we've
+
+00:00:58.820 --> 00:01:01.130
+covered in the previous
+episodes extends core-selector,
+
+00:01:01.130 --> 00:01:02.810
+we can use that for our example.
+
+00:01:02.810 --> 00:01:05.385
+So let's hop over to another
+code editor and get cracking.
+
+00:01:05.385 --> 00:01:07.890
+Now the first thing I need to
+do is install more routing.
+
+00:01:07.890 --> 00:01:09.970
+So over in terminal,
+I'm going to type
+
+00:01:09.970 --> 00:01:13.580
+out bower install Polymore--
+note the spelling there--
+
+00:01:13.580 --> 00:01:15.060
+more-routing.
+
+00:01:15.060 --> 00:01:17.065
+Polymore is a side
+project created by one
+
+00:01:17.065 --> 00:01:18.430
+of the Polymer team members.
+
+00:01:18.430 --> 00:01:20.450
+It's basically just a,
+kind of, catch-all place
+
+00:01:20.450 --> 00:01:22.770
+for interesting elements
+that he's created.
+
+00:01:22.770 --> 00:01:25.300
+Next, I'm going to create
+a routes HTML file,
+
+00:01:25.300 --> 00:01:27.830
+and this way I can keep all
+my routes in a separate place,
+
+00:01:27.830 --> 00:01:30.070
+so they don't clutter
+up my main document.
+
+00:01:30.070 --> 00:01:31.670
+Inside of routes
+HTML, I'll first
+
+00:01:31.670 --> 00:01:33.680
+import the more-routing element.
+
+00:01:33.680 --> 00:01:36.550
+And I'm going to configure it
+using the more-routing config
+
+00:01:36.550 --> 00:01:37.190
+element.
+
+00:01:37.190 --> 00:01:39.280
+I'm going to tell it
+to use hash URLs so I
+
+00:01:39.280 --> 00:01:41.530
+don't have to bother with
+setting up the [? server. ?]
+
+00:01:41.530 --> 00:01:43.030
+Then I'll define
+a list of routes.
+
+00:01:43.030 --> 00:01:45.000
+I can give each
+route a name-- so
+
+00:01:45.000 --> 00:01:46.830
+that way I can easily
+refer to it later--
+
+00:01:46.830 --> 00:01:48.550
+and a path, which
+is going to actually
+
+00:01:48.550 --> 00:01:50.270
+be used to update my URL.
+
+00:01:50.270 --> 00:01:51.892
+Now over in my
+elements HTML file,
+
+00:01:51.892 --> 00:01:53.600
+I've already got a
+few elements imported,
+
+00:01:53.600 --> 00:01:55.080
+so I'm just going
+to add a new line
+
+00:01:55.080 --> 00:01:57.904
+to import my routes.html file.
+
+00:01:57.904 --> 00:01:59.320
+And back on my
+main document, I'll
+
+00:01:59.320 --> 00:02:01.660
+create a
+more-route-selector element.
+
+00:02:01.660 --> 00:02:05.140
+And I'm going to drop
+in a few core pages tags
+
+00:02:05.140 --> 00:02:06.453
+for it to control.
+
+00:02:06.453 --> 00:02:09.020
+The last thing I'm going to
+add some sections in here,
+
+00:02:09.020 --> 00:02:12.040
+and just fill those with
+some [? W ?] content.
+
+00:02:12.040 --> 00:02:14.970
+And, very important, I'm going
+to give each section a route
+
+00:02:14.970 --> 00:02:18.420
+attribute, which matches one
+of those named routes I created
+
+00:02:18.420 --> 00:02:19.799
+in the routes HTML file.
+
+00:02:19.799 --> 00:02:21.340
+Now I'm also going
+to go up top here,
+
+00:02:21.340 --> 00:02:25.540
+and I'm going to wrap my core
+menu in a route-selector.
+
+00:02:25.540 --> 00:02:28.470
+I'm going to give each menu
+item a route attribute as well.
+
+00:02:33.040 --> 00:02:35.840
+I'm also going to give
+these anchors URLs.
+
+00:02:35.840 --> 00:02:38.730
+And to do this, I'm going to use
+more-routing's some very handy
+
+00:02:38.730 --> 00:02:40.590
+URL4 helper.
+
+00:02:40.590 --> 00:02:44.080
+So I pass to URL4 the name
+of all my various named
+
+00:02:44.080 --> 00:02:46.920
+routes, and that way, I can
+generate these URLs really
+
+00:02:46.920 --> 00:02:47.420
+easily.
+
+00:02:47.420 --> 00:02:50.310
+I don't have to explicitly
+write the path in there, which
+
+00:02:50.310 --> 00:02:52.670
+is really nice in case
+the path to, for instance,
+
+00:02:52.670 --> 00:02:55.319
+the users section, if that
+needs to change at some point,
+
+00:02:55.319 --> 00:02:57.110
+the name of the route
+will remain the same.
+
+00:02:57.110 --> 00:02:58.609
+The path can change
+and I don't have
+
+00:02:58.609 --> 00:03:01.190
+to go back and update my
+code in a bunch of places.
+
+00:03:01.190 --> 00:03:02.950
+Now if I pop open
+my browser, you'll
+
+00:03:02.950 --> 00:03:05.210
+see that I can click on
+the different menu items.
+
+00:03:05.210 --> 00:03:07.320
+And it's going to
+update the URL, as well
+
+00:03:07.320 --> 00:03:08.812
+as the content in the page.
+
+00:03:08.812 --> 00:03:10.270
+The important thing
+to note here is
+
+00:03:10.270 --> 00:03:12.520
+that, so far, I haven't
+written any JavaScript, which
+
+00:03:12.520 --> 00:03:14.702
+is pretty cool.
+
+00:03:14.702 --> 00:03:16.160
+Now some of you
+might be wondering,
+
+00:03:16.160 --> 00:03:18.760
+how can I handle
+parameters in my routes?
+
+00:03:18.760 --> 00:03:20.840
+For example, if you're
+in a user section,
+
+00:03:20.840 --> 00:03:22.460
+you've got the
+username up in the URL.
+
+00:03:22.460 --> 00:03:25.030
+You might want to actually
+use that in your application.
+
+00:03:25.030 --> 00:03:27.100
+So let me show you
+how to hook that up.
+
+00:03:27.100 --> 00:03:29.350
+I'm going to add a new
+route for a specific user,
+
+00:03:29.350 --> 00:03:32.440
+and name it user-info.
+
+00:03:32.440 --> 00:03:35.630
+And I'm going to nest this route
+underneath my existing users
+
+00:03:35.630 --> 00:03:36.700
+route.
+
+00:03:36.700 --> 00:03:40.900
+Note that the route has
+a colon in this URL here.
+
+00:03:40.900 --> 00:03:42.400
+Now what this is
+going to do is it's
+
+00:03:42.400 --> 00:03:44.620
+going to create a property
+on the params object,
+
+00:03:44.620 --> 00:03:46.450
+with the key name.
+
+00:03:46.450 --> 00:03:49.027
+And that way I can use it
+to access the value later.
+
+00:03:49.027 --> 00:03:50.860
+Now you can create any
+kind of key you want.
+
+00:03:50.860 --> 00:03:54.060
+For instance, you could write
+colon [? fu, ?] and then you
+
+00:03:54.060 --> 00:03:57.090
+would have a property
+called, [? params.fu. ?]
+
+00:03:57.090 --> 00:03:58.550
+Over in my users
+section, I'm just
+
+00:03:58.550 --> 00:04:00.770
+going to add an anchor
+for a user named
+
+00:04:00.770 --> 00:04:04.362
+Rob, using the URL4 helper.
+
+00:04:04.362 --> 00:04:06.070
+I'm also going to pass
+a second parameter
+
+00:04:06.070 --> 00:04:09.300
+to the URL4 method, which will
+populate the anchor's href.
+
+00:04:09.300 --> 00:04:11.455
+So this anchor would
+link to /users/Rob.
+
+00:04:15.960 --> 00:04:17.459
+Then in my route
+selector, I'm going
+
+00:04:17.459 --> 00:04:20.160
+to bind the selected
+params attribute to a scope
+
+00:04:20.160 --> 00:04:22.540
+variable called params.
+
+00:04:22.540 --> 00:04:24.640
+Selected params is
+an object exposing
+
+00:04:24.640 --> 00:04:27.446
+the parameters for my URL.
+
+00:04:27.446 --> 00:04:30.570
+But then I can create a new
+section with a matching user
+
+00:04:30.570 --> 00:04:33.270
+info route attribute,
+and just populate it
+
+00:04:33.270 --> 00:04:36.130
+with some dummy text that
+uses that params.name binding.
+
+00:04:38.990 --> 00:04:41.490
+Now when I pop open my browser,
+and go to the users section,
+
+00:04:41.490 --> 00:04:44.700
+I can click that little link,
+and see the parameter up there
+
+00:04:44.700 --> 00:04:49.080
+in my URL, and the value
+gets reflected on the page.
+
+00:04:49.080 --> 00:04:51.020
+Pretty neat.
+
+00:04:51.020 --> 00:04:53.690
+And there you have it, routing
+using nothing but HTML.
+
+00:04:53.690 --> 00:04:55.380
+It's a really fast
+and convenient way
+
+00:04:55.380 --> 00:04:57.254
+to wire up the application,
+and it definitely
+
+00:04:57.254 --> 00:04:58.850
+cuts down on boilerplate code.
+
+00:04:58.850 --> 00:05:00.740
+Now you're ready to go build
+something really awesome.
+
+00:05:00.740 --> 00:05:02.310
+Be sure to hit me
+up on Twitter to let
+
+00:05:02.310 --> 00:05:03.360
+me know what you've created.
+
+00:05:03.360 --> 00:05:05.276
+Also, make sure you click
+the Subscribe button
+
+00:05:05.276 --> 00:05:06.800
+so you see our future episodes.
+
+00:05:06.800 --> 00:05:08.550
+As always, thank you
+so much for watching,
+
+00:05:08.550 --> 00:05:09.680
+and I'll see you next time.
+
+00:05:09.680 --> 00:05:12.430
+[MIDI MUSIC PLAYING]
+

@@ -1,0 +1,1204 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.347
+[MUSIC PLAYING]
+
+00:00:04.347 --> 00:00:05.680
+Hey there, Polycasters.
+
+00:00:05.680 --> 00:00:06.230
+Rob here.
+
+00:00:06.230 --> 00:00:07.400
+Welcome back to the show.
+
+00:00:07.400 --> 00:00:08.858
+So today, we're
+going to be talking
+
+00:00:08.858 --> 00:00:12.640
+about probably one of the
+most requested topics ever,
+
+00:00:12.640 --> 00:00:13.890
+carbon routing.
+
+00:00:13.890 --> 00:00:16.387
+So routing itself
+is a very big topic.
+
+00:00:16.387 --> 00:00:17.845
+And what we're
+going to be doing is
+
+00:00:17.845 --> 00:00:20.710
+we're going to break this into
+sort of a multipart series.
+
+00:00:20.710 --> 00:00:23.340
+So today, we'll be covering
+kind of the basics of routing.
+
+00:00:23.340 --> 00:00:26.110
+And then we'll look at things
+like lazy loading and data
+
+00:00:26.110 --> 00:00:28.170
+and showing spinners
+and stuff like that,
+
+00:00:28.170 --> 00:00:30.100
+managing Flash 21 style content.
+
+00:00:30.100 --> 00:00:31.539
+And also, any
+questions or things
+
+00:00:31.539 --> 00:00:34.080
+like that you want me to cover,
+leave them down the comments.
+
+00:00:34.080 --> 00:00:36.910
+And we'll try and do those in
+some of these future episodes.
+
+00:00:36.910 --> 00:00:38.910
+To start us off, what
+we're going to be building
+
+00:00:38.910 --> 00:00:42.910
+is a simple blog application
+that looks like this.
+
+00:00:42.910 --> 00:00:46.800
+So you can see here that I've
+got a few different sections
+
+00:00:46.800 --> 00:00:49.935
+that I can flip between--
+art, film, and photo.
+
+00:00:49.935 --> 00:00:52.360
+I've got some lovely
+nature photography here
+
+00:00:52.360 --> 00:00:54.950
+that I took off
+of the interwebs.
+
+00:00:54.950 --> 00:00:56.950
+And clicking on any
+of these pictures
+
+00:00:56.950 --> 00:00:59.199
+will then show us
+the actual blog post
+
+00:00:59.199 --> 00:01:00.240
+that we're interested in.
+
+00:01:00.240 --> 00:01:03.100
+And as we're doing this,
+keep an eye on the URL
+
+00:01:03.100 --> 00:01:05.519
+up here, which is going
+to be updating as we go
+
+00:01:05.519 --> 00:01:06.810
+and as we do our work.
+
+00:01:06.810 --> 00:01:09.030
+When we're talking
+about carbon route,
+
+00:01:09.030 --> 00:01:12.210
+we need to think of it
+as two separate pieces.
+
+00:01:12.210 --> 00:01:15.590
+The first is this element
+called carbon location.
+
+00:01:15.590 --> 00:01:19.950
+And carbon location's job
+is just to watch the URL bar
+
+00:01:19.950 --> 00:01:22.300
+and either reflect
+the state of the URL
+
+00:01:22.300 --> 00:01:24.600
+or take any changes
+from our application
+
+00:01:24.600 --> 00:01:27.430
+and transfer those
+back to the URL.
+
+00:01:27.430 --> 00:01:30.770
+It does this using its
+route property, which
+
+00:01:30.770 --> 00:01:32.700
+we're going to expose
+in our application using
+
+00:01:32.700 --> 00:01:35.970
+a two-way binding, which we're
+also going to call route.
+
+00:01:35.970 --> 00:01:38.330
+We then couple the
+carbon location
+
+00:01:38.330 --> 00:01:42.270
+with one or more
+carbon route elements.
+
+00:01:42.270 --> 00:01:46.460
+The carbon route elements take
+the route from carbon location.
+
+00:01:46.460 --> 00:01:49.890
+They bind to it using
+their own route property.
+
+00:01:49.890 --> 00:01:53.105
+They define a pattern,
+which is sort of the URL
+
+00:01:53.105 --> 00:01:55.230
+that they're interested in
+that they want to match.
+
+00:01:55.230 --> 00:01:57.550
+So in this case, we're
+saying the pattern is slash,
+
+00:01:57.550 --> 00:01:59.890
+and then we're using
+this sort of token syntax
+
+00:01:59.890 --> 00:02:04.270
+to say anything after slash
+we'll refer to as page.
+
+00:02:04.270 --> 00:02:06.260
+You could also have
+a multi-part URL.
+
+00:02:06.260 --> 00:02:10.940
+So you could say /foo/bar/ colon
+some piece of data that you
+
+00:02:10.940 --> 00:02:12.787
+might be interested in.
+
+00:02:12.787 --> 00:02:14.370
+Once we have a little
+data token here,
+
+00:02:14.370 --> 00:02:17.810
+we can expose that to the rest
+of the app using this data
+
+00:02:17.810 --> 00:02:18.480
+attribute.
+
+00:02:18.480 --> 00:02:20.670
+And I'm just going
+to call it page data.
+
+00:02:20.670 --> 00:02:25.790
+So if the user was on a page
+called /foo, in this case,
+
+00:02:25.790 --> 00:02:28.639
+pageData would equal--
+I'll write it all out here.
+
+00:02:28.639 --> 00:02:29.680
+So it'd be pageData.page.
+
+00:02:33.400 --> 00:02:37.380
+That matches this token right
+here that we just named page.
+
+00:02:37.380 --> 00:02:41.480
+PageData.page equals foo.
+
+00:02:41.480 --> 00:02:43.320
+I know that this is
+good handwriting.
+
+00:02:43.320 --> 00:02:45.730
+Thank you, whoever was halfway
+through typing a YouTube
+
+00:02:45.730 --> 00:02:46.330
+comment.
+
+00:02:46.330 --> 00:02:46.870
+I know.
+
+00:02:46.870 --> 00:02:49.720
+I already know that
+it looked really good.
+
+00:02:49.720 --> 00:02:53.630
+Now, anything after the pattern
+that we have not matched
+
+00:02:53.630 --> 00:02:56.650
+gets exposed to our
+application as the tail.
+
+00:02:56.650 --> 00:02:58.980
+And I'm going to expose
+that using this binding
+
+00:02:58.980 --> 00:03:00.390
+called pageTail.
+
+00:03:00.390 --> 00:03:02.807
+Now, the idea of a tail
+is sort of interesting.
+
+00:03:02.807 --> 00:03:04.390
+And basically, what
+it allows us to do
+
+00:03:04.390 --> 00:03:08.860
+is kind of break up our URL into
+different sort of subsections
+
+00:03:08.860 --> 00:03:10.460
+that our app cares about.
+
+00:03:10.460 --> 00:03:13.260
+So I can bind the tail
+and sort of pass that
+
+00:03:13.260 --> 00:03:14.489
+into a child component.
+
+00:03:14.489 --> 00:03:16.030
+And then that child
+component doesn't
+
+00:03:16.030 --> 00:03:18.749
+have to know anything
+else about the URL,
+
+00:03:18.749 --> 00:03:20.540
+or even the entire rest
+of the application.
+
+00:03:20.540 --> 00:03:22.190
+All it knows or
+all it cares about
+
+00:03:22.190 --> 00:03:25.080
+is that one piece of the
+URL that it is scoped to.
+
+00:03:25.080 --> 00:03:28.040
+So it allows you create these
+sort of modular subsections
+
+00:03:28.040 --> 00:03:29.049
+in your app.
+
+00:03:29.049 --> 00:03:30.590
+Now, the last thing
+I want to mention
+
+00:03:30.590 --> 00:03:32.370
+is this active attribute.
+
+00:03:32.370 --> 00:03:34.820
+So we can use this
+as kind of a flag
+
+00:03:34.820 --> 00:03:37.250
+to tell us when our
+carbon route is matching.
+
+00:03:37.250 --> 00:03:37.750
+OK?
+
+00:03:37.750 --> 00:03:38.700
+Pretty simple.
+
+00:03:38.700 --> 00:03:41.590
+Now, for the blog app that
+we're going to be building,
+
+00:03:41.590 --> 00:03:44.650
+we need to think a little
+bit about the URL structure
+
+00:03:44.650 --> 00:03:45.706
+that we want to use.
+
+00:03:45.706 --> 00:03:47.830
+So in that application,
+I'm going to start off with
+
+00:03:47.830 --> 00:03:49.250
+/category.
+
+00:03:49.250 --> 00:03:51.740
+And that could be
+art, film, or photo.
+
+00:03:51.740 --> 00:03:53.350
+And then, based
+on that category,
+
+00:03:53.350 --> 00:03:55.430
+there's two views
+that I could show.
+
+00:03:55.430 --> 00:03:59.170
+The first would be a list
+view of all of the blog posts,
+
+00:03:59.170 --> 00:04:01.510
+so /art/list.
+
+00:04:01.510 --> 00:04:03.707
+And then the other one
+would be an individual post,
+
+00:04:03.707 --> 00:04:05.540
+so /art/posts/check out
+this rad lion thing.
+
+00:04:11.039 --> 00:04:12.830
+That's kind of the URL
+structure that we're
+
+00:04:12.830 --> 00:04:14.121
+going to be using for this app.
+
+00:04:14.121 --> 00:04:16.209
+We're going to have two
+views, lists and posts.
+
+00:04:16.209 --> 00:04:17.976
+So with that in
+mind, we're actually
+
+00:04:17.976 --> 00:04:20.100
+ready to go ahead and just
+start writing some code.
+
+00:04:20.100 --> 00:04:23.430
+So let's go over
+and hop into Atom.
+
+00:04:23.430 --> 00:04:27.110
+So in my index.html, file
+I have a blog-app element.
+
+00:04:27.110 --> 00:04:30.770
+And that's going to contain all
+the logic for our application.
+
+00:04:30.770 --> 00:04:33.570
+Inside a blog-app,
+I've gone ahead
+
+00:04:33.570 --> 00:04:35.020
+and I've imported
+carbon location.
+
+00:04:35.020 --> 00:04:36.630
+I've imported carbon route.
+
+00:04:36.630 --> 00:04:38.644
+I also pulled in iron selector.
+
+00:04:38.644 --> 00:04:40.810
+And then I pulled an element
+called blogPages, which
+
+00:04:40.810 --> 00:04:42.830
+we'll talk about in just a sec.
+
+00:04:42.830 --> 00:04:45.880
+Now, inside my template, I'm
+going to go ahead and write out
+
+00:04:45.880 --> 00:04:48.310
+that carbon location.
+
+00:04:48.310 --> 00:04:51.490
+I'm going to take its route and
+expose that to the application
+
+00:04:51.490 --> 00:04:54.520
+as a scope variable
+called route.
+
+00:04:54.520 --> 00:04:58.920
+And then I'm going to bind that
+to a carbon route instance.
+
+00:04:58.920 --> 00:05:02.630
+So we'll link these two with
+that route scope variable.
+
+00:05:02.630 --> 00:05:08.820
+And then we're going to say that
+we want to match the pattern
+
+00:05:08.820 --> 00:05:12.010
+of /:category.
+
+00:05:12.010 --> 00:05:17.630
+We want to expose that data
+to our application as category
+
+00:05:17.630 --> 00:05:20.430
+data.
+
+00:05:20.430 --> 00:05:22.810
+And lastly, we want
+to take the tail.
+
+00:05:22.810 --> 00:05:26.470
+We want to take everything
+after the category,
+
+00:05:26.470 --> 00:05:31.070
+and we want to expose that to
+our app as the category tail.
+
+00:05:31.070 --> 00:05:33.070
+Now, with this in
+place, I can go ahead
+
+00:05:33.070 --> 00:05:35.440
+and I can actually
+write a little menu
+
+00:05:35.440 --> 00:05:39.190
+whose state will sort of
+match whatever my URL is.
+
+00:05:39.190 --> 00:05:42.080
+So I'm going to use the iron
+selector element to do that.
+
+00:05:42.080 --> 00:05:44.790
+And I'm just going to throw some
+anchor tags inside of there.
+
+00:05:44.790 --> 00:05:48.090
+So I'll say iron-selector.
+
+00:05:48.090 --> 00:05:51.590
+The selected property will
+be categoryData.category.
+
+00:05:54.400 --> 00:05:58.990
+We'll then say that it should
+use attribute for selected.
+
+00:05:58.990 --> 00:06:01.230
+So we can give a
+unique attribute
+
+00:06:01.230 --> 00:06:04.050
+to all of our menu items
+to identify and match
+
+00:06:04.050 --> 00:06:06.140
+against that category
+data property.
+
+00:06:06.140 --> 00:06:07.660
+So the attribute for selected.
+
+00:06:07.660 --> 00:06:09.493
+In this case, I'm just
+going to make one up.
+
+00:06:09.493 --> 00:06:11.970
+I'll make up an attribute
+called data-page.
+
+00:06:11.970 --> 00:06:14.820
+And then I'm going to
+create three anchors.
+
+00:06:14.820 --> 00:06:16.190
+I'll duplicate this three times.
+
+00:06:18.780 --> 00:06:22.770
+The first one will be /art/list,
+the second one will be
+
+00:06:22.770 --> 00:06:27.640
+/film/list, we'll
+do /photo/list.
+
+00:06:27.640 --> 00:06:32.450
+Put the appropriate anchor text
+in there, art, film, and photo.
+
+00:06:32.450 --> 00:06:35.390
+And I'm also going to give
+each of these a data page.
+
+00:06:35.390 --> 00:06:40.960
+So data-page equals
+art, film, and photo.
+
+00:06:40.960 --> 00:06:43.790
+Now, you may have noticed that
+I've used hash routing here.
+
+00:06:43.790 --> 00:06:45.165
+I've got this
+little pound symbol
+
+00:06:45.165 --> 00:06:46.750
+at the beginning of my URLs.
+
+00:06:46.750 --> 00:06:49.569
+I want to make sure to tell
+carbon location to use hash
+
+00:06:49.569 --> 00:06:51.610
+routing in our application
+because at the moment,
+
+00:06:51.610 --> 00:06:55.440
+I haven't set up a fancy server
+for doing any sort of index
+
+00:06:55.440 --> 00:06:56.831
+redirect or anything like that.
+
+00:06:56.831 --> 00:06:59.330
+We're just going to go ahead
+and use pretty straightforward,
+
+00:06:59.330 --> 00:07:00.750
+simple hash routing.
+
+00:07:00.750 --> 00:07:03.200
+Use hash as path.
+
+00:07:03.200 --> 00:07:05.300
+We'll give that attribute
+to carbon location.
+
+00:07:05.300 --> 00:07:07.840
+And now it knows that
+anytime I update the URL,
+
+00:07:07.840 --> 00:07:10.160
+it should put a
+little hash in there.
+
+00:07:10.160 --> 00:07:14.300
+So with this in place, we may be
+ready to go ahead and actually
+
+00:07:14.300 --> 00:07:15.870
+test our application.
+
+00:07:15.870 --> 00:07:17.670
+So I'm going to go
+over here to Chrome,
+
+00:07:17.670 --> 00:07:21.234
+and I'm going to
+hit the Blog page.
+
+00:07:21.234 --> 00:07:23.650
+And we're going to see we get
+Art, Film, and Photo showing
+
+00:07:23.650 --> 00:07:24.300
+up.
+
+00:07:24.300 --> 00:07:26.350
+Those anchor tags are in place.
+
+00:07:26.350 --> 00:07:28.400
+When I click on
+them, you'll notice
+
+00:07:28.400 --> 00:07:33.760
+that the URL has now updated to
+reflect the state-- art, film,
+
+00:07:33.760 --> 00:07:34.450
+photo.
+
+00:07:34.450 --> 00:07:36.840
+If I refresh the page,
+we see that the state
+
+00:07:36.840 --> 00:07:38.710
+has been reflected to our menu.
+
+00:07:38.710 --> 00:07:41.127
+So now that we have our menu
+hooked up to our router,
+
+00:07:41.127 --> 00:07:42.710
+the next thing we
+want to do is create
+
+00:07:42.710 --> 00:07:45.780
+those two views, one for
+listing all of our blog posts,
+
+00:07:45.780 --> 00:07:48.420
+and the other for actually
+showing an individual blog
+
+00:07:48.420 --> 00:07:49.040
+post.
+
+00:07:49.040 --> 00:07:51.940
+To do that, I will
+go back to Atom.
+
+00:07:51.940 --> 00:07:55.970
+And I'm going to, in my
+blog-app application,
+
+00:07:55.970 --> 00:07:58.890
+create a main element.
+
+00:07:58.890 --> 00:08:04.150
+And I'm going to add
+that blog-pages element
+
+00:08:04.150 --> 00:08:07.230
+that I showed before that
+I had imported there.
+
+00:08:07.230 --> 00:08:09.120
+And this blog-pages
+element is kind
+
+00:08:09.120 --> 00:08:11.570
+of going to be like a
+replacement for iron pages
+
+00:08:11.570 --> 00:08:12.380
+in our app.
+
+00:08:12.380 --> 00:08:15.104
+So I'm going to tell it which
+category is currently selected.
+
+00:08:15.104 --> 00:08:16.895
+I'll pass that in as
+categoryData.category.
+
+00:08:20.300 --> 00:08:22.530
+And I'm also going to
+tell it the current route.
+
+00:08:22.530 --> 00:08:26.120
+So I'll just pass that
+in as categoryTail.
+
+00:08:26.120 --> 00:08:28.450
+And this way, blog-pages
+doesn't actually
+
+00:08:28.450 --> 00:08:31.450
+sort of care so much about what
+the category URL looks like.
+
+00:08:31.450 --> 00:08:33.730
+It only cares about everything
+that comes after that.
+
+00:08:33.730 --> 00:08:38.159
+Basically, is this list
+view or is this a post view?
+
+00:08:38.159 --> 00:08:40.630
+Over in our category
+pages element,
+
+00:08:40.630 --> 00:08:43.990
+the first thing I'm going to
+do is create two carbon routes
+
+00:08:43.990 --> 00:08:47.550
+to sort of monitor
+list and posts.
+
+00:08:47.550 --> 00:08:50.240
+So we'll have a
+carbon route here.
+
+00:08:50.240 --> 00:08:53.680
+Its route is just going
+to come in as route.
+
+00:08:53.680 --> 00:08:55.870
+That again gets passed
+in by the parent here,
+
+00:08:55.870 --> 00:08:57.590
+route equals categoryTail.
+
+00:08:57.590 --> 00:08:59.309
+So that's going to be route.
+
+00:08:59.309 --> 00:09:01.600
+The pattern that we'll be
+matching on this first carbon
+
+00:09:01.600 --> 00:09:02.960
+route will be /list.
+
+00:09:04.940 --> 00:09:06.440
+And then the last
+thing I want to do
+
+00:09:06.440 --> 00:09:10.130
+is I want to know, when is
+this particular route active?
+
+00:09:10.130 --> 00:09:12.050
+So I'll say active equals.
+
+00:09:12.050 --> 00:09:16.380
+I'll create a little scope
+variable called listActive.
+
+00:09:16.380 --> 00:09:19.700
+Similarly, if someone wants
+to view an individual post,
+
+00:09:19.700 --> 00:09:22.310
+we'll do another carbon route.
+
+00:09:22.310 --> 00:09:24.690
+We'll set that route
+equal to the route.
+
+00:09:24.690 --> 00:09:30.990
+We'll set its pattern equal to
+/posts/ and then we're going
+
+00:09:30.990 --> 00:09:33.070
+to have another token here.
+
+00:09:33.070 --> 00:09:35.050
+So we're going to
+ask for the slug.
+
+00:09:35.050 --> 00:09:38.580
+Which post slug is the
+person looking for?
+
+00:09:38.580 --> 00:09:41.920
+And again, we'll also say,
+what is currently active?
+
+00:09:41.920 --> 00:09:44.180
+So we'll say is post active?
+
+00:09:44.180 --> 00:09:48.960
+And lastly, we want to
+expose the data for that slug
+
+00:09:48.960 --> 00:09:51.140
+to the actual post page.
+
+00:09:51.140 --> 00:09:54.720
+So we'll expose
+that as postData.
+
+00:09:54.720 --> 00:09:55.220
+OK.
+
+00:09:55.220 --> 00:09:57.640
+So I've got these two
+carbon routes now coming
+
+00:09:57.640 --> 00:09:59.570
+from the tail of
+the previous page.
+
+00:09:59.570 --> 00:10:02.440
+And what I'm going to do is take
+a list page element and a post
+
+00:10:02.440 --> 00:10:05.137
+page element and hook
+those up to the routes.
+
+00:10:05.137 --> 00:10:06.720
+So this part is
+pretty straightforward
+
+00:10:06.720 --> 00:10:08.250
+because, much like
+a cooking show,
+
+00:10:08.250 --> 00:10:10.660
+I've already prepared these
+elements ahead of time.
+
+00:10:10.660 --> 00:10:15.510
+So I can just go ahead and drop
+the codes for them in here.
+
+00:10:15.510 --> 00:10:18.980
+We've got list page, whose
+category comes from the parent.
+
+00:10:18.980 --> 00:10:21.830
+Remember, we took the
+category and we passed that
+
+00:10:21.830 --> 00:10:22.760
+into blog pages.
+
+00:10:22.760 --> 00:10:24.845
+So that's already
+available to us.
+
+00:10:24.845 --> 00:10:26.470
+And we're going to
+set its active state
+
+00:10:26.470 --> 00:10:28.890
+to the listActive
+scope variable.
+
+00:10:28.890 --> 00:10:31.320
+Similarly, we've got
+a post-page element.
+
+00:10:31.320 --> 00:10:36.080
+Its post is going to come
+from that postData.slug token.
+
+00:10:36.080 --> 00:10:38.550
+And it's also going to have
+this little active attribute
+
+00:10:38.550 --> 00:10:40.050
+to tell us if that
+route is matching
+
+00:10:40.050 --> 00:10:41.540
+and if that page
+is active as well.
+
+00:10:41.540 --> 00:10:44.790
+Now, active, in this case,
+this isn't like a fancy thing
+
+00:10:44.790 --> 00:10:47.477
+that these pages support
+or anything like that.
+
+00:10:47.477 --> 00:10:49.810
+If we actually crack them
+open and we look at their CSS,
+
+00:10:49.810 --> 00:10:53.400
+you can see that we just have a
+host selector on each of these.
+
+00:10:53.400 --> 00:10:55.240
+By default, they're
+display none.
+
+00:10:55.240 --> 00:10:57.350
+And when they have
+an active attribute,
+
+00:10:57.350 --> 00:10:58.710
+they're display block.
+
+00:10:58.710 --> 00:11:00.500
+So we're just going
+to toggle which
+
+00:11:00.500 --> 00:11:04.006
+one is visible based on which
+route is currently active.
+
+00:11:04.006 --> 00:11:05.880
+Now, inside of these
+elements, I'm not really
+
+00:11:05.880 --> 00:11:07.180
+doing anything too fancy.
+
+00:11:07.180 --> 00:11:09.900
+I have an iron-ajax tag,
+which is set to Auto.
+
+00:11:09.900 --> 00:11:13.150
+And I'm computing the URL
+based on the values that
+
+00:11:13.150 --> 00:11:13.880
+are passed in.
+
+00:11:13.880 --> 00:11:16.850
+So on the list page, when
+you pass in a category,
+
+00:11:16.850 --> 00:11:20.120
+we figure out what the URL is
+to load some category JSON,
+
+00:11:20.120 --> 00:11:23.900
+and then we display that in
+this little template down here.
+
+00:11:23.900 --> 00:11:25.720
+Similarly, for the
+post page, it's
+
+00:11:25.720 --> 00:11:27.020
+basically the exact same setup.
+
+00:11:27.020 --> 00:11:29.270
+I've got an iron-ajax
+tag inside of here.
+
+00:11:29.270 --> 00:11:32.850
+I'm computing the URL based on
+the slug that was passed in.
+
+00:11:32.850 --> 00:11:34.690
+I also have a
+little template here
+
+00:11:34.690 --> 00:11:37.850
+that will show the actual
+content for that post.
+
+00:11:37.850 --> 00:11:39.680
+One thing that I want
+to make sure I do
+
+00:11:39.680 --> 00:11:43.010
+is when the user first comes to
+our site, if they just go to /,
+
+00:11:43.010 --> 00:11:45.470
+I want to redirect
+them to a section
+
+00:11:45.470 --> 00:11:47.189
+so that they see
+some initial content.
+
+00:11:47.189 --> 00:11:49.730
+What I want to do is probably
+redirect them to something like
+
+00:11:49.730 --> 00:11:54.710
+/art/list so they see that
+whole list of art blog posts.
+
+00:11:54.710 --> 00:11:57.060
+So I'll go back to
+my blog-app element.
+
+00:11:57.060 --> 00:11:59.390
+I'm just going to drop
+in this attached handler,
+
+00:11:59.390 --> 00:12:02.970
+where I'm going to say,
+if this.route.path is null
+
+00:12:02.970 --> 00:12:07.824
+or undefined, then set the
+route path to /art/list.
+
+00:12:07.824 --> 00:12:09.490
+So now we sort of see
+the two-way nature
+
+00:12:09.490 --> 00:12:10.950
+of carbon location.
+
+00:12:10.950 --> 00:12:13.810
+So normally, it passes a
+location into the page.
+
+00:12:13.810 --> 00:12:16.950
+But we can also sort of
+imperatively set a location
+
+00:12:16.950 --> 00:12:19.150
+and pass that back
+to the URL bar.
+
+00:12:19.150 --> 00:12:20.950
+So I think we've got
+all of our code here.
+
+00:12:20.950 --> 00:12:23.158
+We can actually switch over
+to Chrome now and preview
+
+00:12:23.158 --> 00:12:24.660
+this application.
+
+00:12:24.660 --> 00:12:27.520
+So we go back to Chrome,
+refresh the page.
+
+00:12:27.520 --> 00:12:30.910
+And now we can see we've got
+our entire blog listed out here
+
+00:12:30.910 --> 00:12:31.410
+for us.
+
+00:12:31.410 --> 00:12:33.940
+If you look at our
+initial URL up here,
+
+00:12:33.940 --> 00:12:36.720
+it's redirected to art/list.
+
+00:12:36.720 --> 00:12:37.290
+And I can go.
+
+00:12:37.290 --> 00:12:39.180
+I can change the
+different categories
+
+00:12:39.180 --> 00:12:40.965
+to look at film, photo.
+
+00:12:40.965 --> 00:12:42.340
+And scrolling
+around, I can click
+
+00:12:42.340 --> 00:12:44.380
+on any of these
+different blog posts
+
+00:12:44.380 --> 00:12:48.184
+and actually see the content
+that they're displaying.
+
+00:12:48.184 --> 00:12:49.600
+So that about
+covers it for today.
+
+00:12:49.600 --> 00:12:51.980
+We've hit on the
+basics of carbon route,
+
+00:12:51.980 --> 00:12:54.120
+but there's still a lot
+more to cover, right?
+
+00:12:54.120 --> 00:12:57.650
+We can talk more about how to
+show spinners as we lazy load
+
+00:12:57.650 --> 00:12:59.870
+data, how we manage
+Flash 21 styled content,
+
+00:12:59.870 --> 00:13:02.330
+how we deal with scroll
+position as we change
+
+00:13:02.330 --> 00:13:03.900
+between the different sections.
+
+00:13:03.900 --> 00:13:06.614
+So I'll save all of that
+for a future episode.
+
+00:13:06.614 --> 00:13:09.030
+Now, if you yourself, if you
+have some questions or things
+
+00:13:09.030 --> 00:13:11.890
+you want to see as we keep
+exploring carbon route,
+
+00:13:11.890 --> 00:13:14.640
+please leave them for me
+down below in the comments.
+
+00:13:14.640 --> 00:13:17.160
+Or you can ping me on a social
+network of your choosing
+
+00:13:17.160 --> 00:13:18.870
+at #AskPolymer.
+
+00:13:18.870 --> 00:13:20.750
+As always, thank you
+so much for watching
+
+00:13:20.750 --> 00:13:23.293
+and I'll see you next time.
+
+00:13:23.293 --> 00:13:24.876
+Do you want me to
+tell some bad jokes?
+
+00:13:24.876 --> 00:13:25.376
+OK.
+
+00:13:25.376 --> 00:13:27.274
+I've got some bad jokes.
+
+00:13:27.274 --> 00:13:28.188
+Um.
+
+00:13:28.188 --> 00:13:29.061
+OK.
+
+00:13:29.061 --> 00:13:29.560
+[LAUGHTER]
+
+00:13:29.560 --> 00:13:32.524
+Oh my god.
+
+00:13:32.524 --> 00:13:33.510
+Um, OK.
+
+00:13:33.510 --> 00:13:35.780
+OK, unihorse.
+
+00:13:35.780 --> 00:13:41.117
+What's the difference
+between a hippo and a Zippo?
+
+00:13:41.117 --> 00:13:42.548
+[LAUGHTER]
+
+00:13:45.890 --> 00:13:48.330
+A Zippo's a little lighter.
+
+00:13:48.330 --> 00:13:50.780
+[LAUGHTER]
+

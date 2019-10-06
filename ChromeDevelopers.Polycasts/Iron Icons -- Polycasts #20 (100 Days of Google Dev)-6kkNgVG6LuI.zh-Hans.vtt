@@ -1,0 +1,730 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:00.000 --> 00:00:02.465
+[MUSIC PLAYING]
+
+00:00:05.227 --> 00:00:05.810
+嘿 各位
+Hey, everyone.
+
+00:00:05.810 --> 00:00:06.190
+大家好
+What's up?
+
+00:00:06.190 --> 00:00:06.856
+我是 Rob Doson
+It's Rob Dodson.
+
+00:00:06.856 --> 00:00:09.970
+欢迎收看 polycast 进阶教程系列的第一期
+Welcome to the very first update episode of Polycast.
+
+00:00:09.970 --> 00:00:12.040
+在这系列的视频中  我将会回到
+In these videos, I'm going to go back in time
+
+00:00:12.040 --> 00:00:13.810
+以前的视频  并且深入挖掘一些及技巧
+and dig up some of our older episodes
+
+00:00:13.810 --> 00:00:17.780
+以便把它们升级成 Polymer 1.0 版相关内容
+so I can update them with all the Polymer 1.0 goodness.
+
+00:00:17.780 --> 00:00:20.050
+今天  我们从 core-icons 上的
+Today, we are starting with Polycast numero
+
+00:00:20.050 --> 00:00:22.290
+Polycast 1.0 开始
+uno, which is on core-icons.
+
+00:00:22.290 --> 00:00:23.950
+那么我将会给各位展示如何使用
+So I'm going to show you how to work
+
+00:00:23.950 --> 00:00:25.610
+全新的 iron-icon 元素
+with the new iron-icon element.
+
+00:00:25.610 --> 00:00:27.139
+大家拭目以待
+Let's take a look.
+
+00:00:27.139 --> 00:00:29.680
+那么今天  我会帮助各位把之前的讲解视频中使用
+So today, I'm going to help you convert the previous episode,
+
+00:00:29.680 --> 00:00:31.810
+core-icon 元素的技巧  转换成
+which worked with the core-icon element,
+
+00:00:31.810 --> 00:00:36.020
+当今 Polymer 1.0 里全新模块的升级版 iron-icon 的使用办法
+to the updated iron-icon that is now part of Polymer 1.0.
+
+00:00:36.020 --> 00:00:38.480
+许多之前在 core 设置中的元素
+Many of the elements that were previously in the core set
+
+00:00:38.480 --> 00:00:41.940
+如今已经被转移到了 iron 设置或者 paper 设置中
+have now been ported to either the iron set or the paper set.
+
+00:00:41.940 --> 00:00:44.650
+我经常放在首位的通用经验法则是
+And the general rule of thumb that I like to keep in my head
+
+00:00:44.650 --> 00:00:48.250
+如果之前的元素大部分只是特性
+is if the previous element was mostly just behavior,
+
+00:00:48.250 --> 00:00:51.200
+那么它们很可能就被转移到了 iron 元素集合中
+then it has probably been moved to the iron element set.
+
+00:00:51.200 --> 00:00:55.020
+如果它有一些用户界面  比如 core 工具栏
+If it had a bit of UI to it, like perhaps the core toolbar
+
+00:00:55.020 --> 00:00:57.490
+或者是 core 头文件板  任何可视化的东西
+or the core header panel, anything that's sort of visual,
+
+00:00:57.490 --> 00:00:59.627
+那么它就会被转移到 paper 集合中
+then it has been moved to the paper element set.
+
+00:00:59.627 --> 00:01:01.710
+现在我们要使用 iron-icon
+So we're going to be working with iron-icon today.
+
+00:01:01.710 --> 00:01:03.085
+首先我们要做的事情
+The first thing we're going to do
+
+00:01:03.085 --> 00:01:06.270
+就是浏览 elements.polymerproject.org 下的目录文件
+is go over to the catalog at elements.polymerproject.org
+
+00:01:06.270 --> 00:01:08.920
+然后继续点击 Iron Element 集合
+and go and click on the Iron Elements set
+
+00:01:08.920 --> 00:01:10.330
+来打开文件
+to get the documentation.
+
+00:01:10.330 --> 00:01:13.260
+然后我就能在这里找到 iron-icon 
+And I'll just find the docs for the iron-icon element
+
+00:01:13.260 --> 00:01:13.977
+元素的文件了
+inside of here.
+
+00:01:13.977 --> 00:01:16.560
+如果你看过之前的教学视频  也许你会注意到
+And you'll notice that if you've watched the previous episode,
+
+00:01:16.560 --> 00:01:19.460
+这里的很多文件跟之前完全一样
+a lot of these things are the same from before.
+
+00:01:19.460 --> 00:01:21.440
+如果你使用源文件
+We've still got a Source attribute
+
+00:01:21.440 --> 00:01:23.880
+那么我们依然能得到源属性
+if you're working with sources.
+
+00:01:23.880 --> 00:01:26.240
+而如果你直接对图标进行操作
+If you are working directly with an icon,
+
+00:01:26.240 --> 00:01:28.530
+你得到的也是图标属性
+there is still the Icon attribute.
+
+00:01:28.530 --> 00:01:30.730
+这与之前视频中相似的
+So many of the things are similar
+
+00:01:30.730 --> 00:01:33.100
+地方如此之多
+from the previous video.
+
+00:01:33.100 --> 00:01:35.510
+我想在这里指出的一件事
+The one thing that I do want to point out here
+
+00:01:35.510 --> 00:01:37.640
+你可以在页面的下方看见它
+is a little bit further down the page.
+
+00:01:37.640 --> 00:01:40.310
+你能看到样式的部分
+You'll see a section on styling.
+
+00:01:40.310 --> 00:01:42.980
+这就提到了通过使用自定义属性
+And this is going to mention styling
+
+00:01:42.980 --> 00:01:44.465
+来设置风格样式
+using custom properties.
+
+00:01:44.465 --> 00:01:46.590
+现在 也许你对自定义属性并不熟悉
+Now, if you're not familiar with custom properties,
+
+00:01:46.590 --> 00:01:49.130
+我们在之前的一集视频中详细讲解了
+we covered those in a previous episode.
+
+00:01:49.130 --> 00:01:50.690
+所以如果你回头温习一下
+So if you go check out this episode,
+
+00:01:50.690 --> 00:01:52.910
+就能理解自定义属性是如何起作用的
+it will explain how custom properties work.
+
+00:01:52.910 --> 00:01:54.560
+我的建议是在继续观看本期视频之前
+I recommend you go and watch that
+
+00:01:54.560 --> 00:01:57.050
+先回头看看那一期
+before watching the rest of this episode
+
+00:01:57.050 --> 00:01:59.490
+因为我们在这里需要用到一些自定义属性
+because we're going to use these in a little bit.
+
+00:01:59.490 --> 00:02:00.310
+好了
+OK.
+
+00:02:00.310 --> 00:02:02.580
+现在  为了在我的应用中安装这些
+Now, to install these in my application,
+
+00:02:02.580 --> 00:02:04.630
+我就跳过细节直到重点了
+I'm going to hop over into my terminal.
+
+00:02:04.630 --> 00:02:07.700
+然后我运行 bower 安装  保存
+And I will run bower install, save.
+
+00:02:07.700 --> 00:02:10.310
+你会注意到我也是从 Polymer elements / iron-icons
+And you'll notice here that I'm installing from Polymer
+
+00:02:10.310 --> 00:02:13.000
+目录安装的
+elements/iron-icons.
+
+00:02:13.000 --> 00:02:16.030
+所有的 Polymer 元素设置及其相关内容
+All of the Polymer element sets or whatever now
+
+00:02:16.030 --> 00:02:19.020
+保存在了 GitHub 上的 Polymer elements org
+live in this Polymer elements org on GitHub.
+
+00:02:19.020 --> 00:02:20.520
+所以无论何时  只要你在 bower 安装
+So any time you're bower installing,
+
+00:02:20.520 --> 00:02:22.490
+你就在从 Polymer Elements 调用它
+you're doing it from Polymer elements.
+
+00:02:22.490 --> 00:02:25.670
+这就会溢出并触发回收机制
+That's going to go out and fetch the repo,
+
+00:02:25.670 --> 00:02:26.920
+并将之下载到我的应用中
+download it to my application.
+
+00:02:26.920 --> 00:02:28.800
+那么我准备好进行下一步了
+So I'm ready to rock.
+
+00:02:28.800 --> 00:02:30.840
+现在如果我在 Sublime 中打开工程
+Now if I open my project up in Sublime,
+
+00:02:30.840 --> 00:02:34.560
+其实我打开的是之前视频中创建的老工程
+I've actually got the old project from the old episode.
+
+00:02:34.560 --> 00:02:37.000
+然后我们来把它过一遍并且稍微升级一下
+And we're going to go through and update this.
+
+00:02:37.000 --> 00:02:39.512
+我先打开 bower 组件目录
+So I open up my Bower components directory.
+
+00:02:39.512 --> 00:02:40.970
+你能看到在目录里的这个位置
+And you'll see that inside of here,
+
+00:02:40.970 --> 00:02:43.650
+我们不仅找到了 iron-icon 元素
+we've got both the iron-icon element, as well as
+
+00:02:43.650 --> 00:02:45.320
+而且找到了 iron-icons 元素
+the iron-icons element.
+
+00:02:45.320 --> 00:02:48.260
+所以说借助安装 iron-icons 我也得到了免费的  iron-icon
+So by installing iron-icons, I got iron-icon for free
+
+00:02:48.260 --> 00:02:52.120
+这是因为前者运行依赖于后者
+because it depends on it.
+
+00:02:52.120 --> 00:02:54.670
+接下来  我要打开 HTML 文件索引
+Next, I'm going to open my index HTML file.
+
+00:02:54.670 --> 00:02:56.590
+然后页面向下滚动到这里
+And scrolling down here, I'm going
+
+00:02:56.590 --> 00:02:58.830
+我要替换原来的 polyfills
+to replace the old polyfills.
+
+00:02:58.830 --> 00:03:00.420
+在这个节点上来说这些文件都是相当老旧了
+These are quite old at this point.
+
+00:03:00.420 --> 00:03:02.878
+所以我们要将他们升级来使用 webcomponents-lite.js.
+So we're going to update them to use webcomponents-lite.js.
+
+00:03:06.040 --> 00:03:08.310
+那就是我们在 polymer 1.0 中使用的 polyfi ll 集
+That is the polyfill set we use in Polymer 1.0.
+
+00:03:08.310 --> 00:03:10.760
+然后接下来我们要导入的
+And then instead of importing core-icons,
+
+00:03:10.760 --> 00:03:12.600
+并非是 iron-icons 而是 core-icons
+we will import iron-icons.
+
+00:03:12.600 --> 00:03:17.090
+这就既会导入默认的图标集合
+And that is going to import both the default icon set, as well
+
+00:03:17.090 --> 00:03:18.290
+也能导入 iron-icon 元素
+as the iron-icon element.
+
+00:03:18.290 --> 00:03:21.652
+所以我能使用默认的集合
+So I can use that default set.
+
+00:03:21.652 --> 00:03:23.110
+现在 接下来我想做的事情就是
+Now, the next thing I want to do is
+
+00:03:23.110 --> 00:03:25.110
+页面下提到 core-icons 的这个位置
+go down here to where it says core-icon
+
+00:03:25.110 --> 00:03:29.780
+并将之替换为我个人的 iron-icons
+and replace these with my individual iron-icons.
+
+00:03:29.780 --> 00:03:32.425
+那么我只需要继续删除所有的这些
+So I can just go and delete all these.
+
+00:03:32.425 --> 00:03:33.800
+我们要用到完全相同的图标
+We're going to use the same icon.
+
+00:03:33.800 --> 00:03:34.966
+我们将用到那些安卓的图标
+We'll use that android icon.
+
+00:03:34.966 --> 00:03:37.430
+但是这次  我们将用到 iron-icon 元素来完成
+But this time, we'll use the iron-icon element to do it.
+
+00:03:37.430 --> 00:03:39.190
+这么说来 iron-icon 的图标和安卓的等同  对吧
+So iron-icon, icon equals android, right?
+
+00:03:39.190 --> 00:03:40.400
+相当直截了当
+Pretty straightforward.
+
+00:03:40.400 --> 00:03:42.720
+我可以直接启动一个本地服务器
+I can go boot up a local server.
+
+00:03:42.720 --> 00:03:44.640
+然后我快速上滑到这里  你就能看到
+And then I'll zoom in here, and you
+
+00:03:44.640 --> 00:03:48.560
+显示出来的安卓图标
+can see that we've got our Android icon displaying.
+
+00:03:48.560 --> 00:03:50.270
+然后这里就设置好了
+So we're all good there.
+
+00:03:50.270 --> 00:03:50.770
+好了
+OK.
+
+00:03:50.770 --> 00:03:52.720
+所以如果你想要添加一些额外的图标到你的应用
+So if you go to the Element catalog
+
+00:03:52.720 --> 00:03:54.880
+并查看这些图标
+because you want to add some additional icons
+
+00:03:54.880 --> 00:03:57.577
+是从哪里调用的话
+to your application and you want to look up what they're called,
+
+00:03:57.577 --> 00:03:59.160
+逻辑上讲  你需要转到
+logically, you're going to go and look
+
+00:03:59.160 --> 00:04:02.010
+iron-icons 集合文件来查看
+for the iron-icons element set docs.
+
+00:04:02.010 --> 00:04:04.300
+并且找到一个空白的页面
+And what you're going to find is a blank page
+
+00:04:04.300 --> 00:04:06.730
+因为现在在目录里有一个 BUG
+because there is a bug in the catalog right now.
+
+00:04:06.730 --> 00:04:09.817
+那么我知道这个特殊的 URL 基本上就是说你从目录里的其他地方
+So I know about this little special URL, which is basically
+
+00:04:09.817 --> 00:04:12.150
+获取一个 demo 文件  然后就
+you take a demo file from somewhere else in the catalog,
+
+00:04:12.150 --> 00:04:14.710
+将这个 URL 替换为 iron-icons
+and then you just replace the URL with iron-icons.
+
+00:04:14.710 --> 00:04:16.140
+实际上这操作会为你加载
+And that's actually going to load
+
+00:04:16.140 --> 00:04:17.806
+文件中的 iron-icons
+in the docs for your iron-icons for you.
+
+00:04:17.806 --> 00:04:18.950
+高端的操作吧
+It's a total hack.
+
+00:04:18.950 --> 00:04:21.655
+为了使各位学习更简单  我会给大家一些注释
+To make your life easier, I will give you a little annotation
+
+00:04:21.655 --> 00:04:23.490
+点击这里就可以看见
+here that you can click on.
+
+00:04:23.490 --> 00:04:27.220
+这回直接带你到图标设置
+So this will take you right to the icon docs.
+
+00:04:27.220 --> 00:04:29.670
+这是我们在目录中已经打开过的一个 BUG
+This is a bug that we have open in the catalog.
+
+00:04:29.670 --> 00:04:30.630
+很快这个 BUG 就能得到修复
+We're going to get it fixed really soon.
+
+00:04:30.630 --> 00:04:31.540
+如果你是在本视频拍摄过后很久观看
+If you're watching this in the future,
+
+00:04:31.540 --> 00:04:32.500
+很可能这个 BUG 已经被修复了
+maybe it's already fixed.
+
+00:04:32.500 --> 00:04:33.917
+然而如果你是在今天观看
+But if you're watching this today,
+
+00:04:33.917 --> 00:04:36.125
+并且你想要阅读这些文件  点击注释即可
+and you want to read the docs, click that annotation.
+
+00:04:36.125 --> 00:04:38.150
+这能使你避免一些麻烦
+It'll save you a little bit of a headache there.
+
+00:04:38.150 --> 00:04:42.920
+现在  一旦我直接点击那 URL 我就能看到完整的
+Now, once I hit that URL, I'm going to see the full default
+
+00:04:42.920 --> 00:04:44.050
+默认元素集
+elements set.
+
+00:04:44.050 --> 00:04:46.640
+以上就是我在我的 iron-icons 导入的全部内容
+So this is everything that I got in my iron-icons import.
+
+00:04:46.640 --> 00:04:49.098
+如果我向下滚动鼠标  还能看到其他的我能在
+And if I scroll down, there are actually other element sets
+
+00:04:49.098 --> 00:04:51.900
+我的应用中用到的元素集合
+as well that I could use in my application.
+
+00:04:51.900 --> 00:04:55.230
+比如这个的名为 AV 的用于 audiovisual 图标
+So here's one called AV for audiovisual icons.
+
+00:04:55.230 --> 00:04:57.950
+继续查看  我还在这里看到
+And looking around, I can see that this AV snooze
+
+00:04:57.950 --> 00:05:01.650
+AV snooze 插件的图标  就在这里  看上去很整洁
+icon down here, right about here, looks pretty neat.
+
+00:05:01.650 --> 00:05:02.150
+对吧
+Right?
+
+00:05:02.150 --> 00:05:04.330
+可能我想在我的应用中用到
+So maybe I want to use that in my application.
+
+00:05:04.330 --> 00:05:06.170
+然后我转回我的工程
+So I'll hop back into my project.
+
+00:05:06.170 --> 00:05:09.890
+你能看到当我打开 iron-icon 集合的时候
+And you'll see that when I open up the iron-icons set,
+
+00:05:09.890 --> 00:05:13.030
+就在这个里面  有一点不同的图标设置
+that inside of here, there's a few different icon sets.
+
+00:05:13.030 --> 00:05:14.850
+那儿就是 AV 图标
+There are the AV icons.
+
+00:05:14.850 --> 00:05:16.600
+所以我需要做的就是导入那元素集
+So I just need to import that element set.
+
+00:05:16.600 --> 00:05:20.420
+那么我就在我拖入这些 iron icons 之后点击导入
+So I will drop an import after where I pulled in iron icons.
+
+00:05:20.420 --> 00:05:22.420
+就在这里   我要导入 AV 图标
+And here, I'm going to import AV icons.
+
+00:05:22.420 --> 00:05:25.360
+现在所有的这些图标我都有权限使用
+Now all of those icons will be available to me as well.
+
+00:05:25.360 --> 00:05:30.330
+所以我在 iron-icon 里拷贝然后放到显示 av：snooze 的框中
+So copy in my iron-icon and drop in one that says av:snooze.
+
+00:05:30.330 --> 00:05:33.457
+那么任何时候你使用不在默认集合内的集合中的图标
+And anytime you're using an icon from a set that is not
+
+00:05:33.457 --> 00:05:35.540
+只需加个前缀即可
+the default set, you're going to need to prefix it
+
+00:05:35.540 --> 00:05:39.330
+前缀包含集合名称和冒号
+with the set name and a colon.
+
+00:05:39.330 --> 00:05:41.180
+现在当我转回我的编辑器的时候
+Now when I hop back into my editor,
+
+00:05:41.180 --> 00:05:42.940
+你能看到我的安卓图标
+you can see I've got my Android icon,
+
+00:05:42.940 --> 00:05:45.140
+并且我能找到我的 AV snooze 图标
+and I've got my AV snooze icon.
+
+00:05:45.140 --> 00:05:48.100
+现在  你知道我最后想说的事情是
+Now, the last thing that I want to do-- as you recall,
+
+00:05:48.100 --> 00:05:52.270
+我们可以使用自定义属性设置这些元素风格
+we can style the elements using these custom properties
+
+00:05:52.270 --> 00:05:53.550
+比如宽度和高度
+for width and height.
+
+00:05:53.550 --> 00:05:55.900
+那么我再转回我的编辑器
+So I'm going to hop back into my editor
+
+00:05:55.900 --> 00:05:59.192
+创建一个 theme.html 文档
+and create a theme.html file.
+
+00:05:59.192 --> 00:06:01.650
+在文档中  我再创建一个用户风格
+And inside of this file, I'm going to create a custom style
+
+00:06:01.650 --> 00:06:02.150
+属性
+property.
+
+00:06:02.150 --> 00:06:04.480
+这样样式就变成了自定义样式
+So style is custom style.
+
+00:06:04.480 --> 00:06:06.480
+这就有点像是风格菜单
+And I can treat this kind of like a style sheet.
+
+00:06:06.480 --> 00:06:08.070
+我将鼠标选中 iron-icon 元素
+So I'll target the iron-icon element.
+
+00:06:08.070 --> 00:06:10.486
+现在我就能选中这里面的自定义属性
+And now I can target the custom properties inside of this.
+
+00:06:10.486 --> 00:06:13.380
+那么我就要使得这里所有的 iron-icons
+So I'm just going to make all iron-icons have
+
+00:06:13.380 --> 00:06:16.640
+很宽很高 这样它们基本上
+a really big width and height so that they're
+
+00:06:16.640 --> 00:06:19.350
+在很远的距离也能被看见
+visible from space, basically.
+
+00:06:19.350 --> 00:06:21.720
+既然我设置了宽度和高度
+So I've set width and height.
+
+00:06:21.720 --> 00:06:24.990
+我就来导入我的主题文档了
+I'm going to import my theme file.
+
+00:06:24.990 --> 00:06:27.520
+现在我返回我的浏览器并且刷新页面
+And now when I go back to my browser and refresh the page,
+
+00:06:27.520 --> 00:06:28.970
+看这就是我的巨大图标
+I've got these ginormous icons.
+
+00:06:28.970 --> 00:06:31.330
+再次强调  把它们做得这么大是不对的
+So again, it's kind of absurd to make them this big.
+
+00:06:31.330 --> 00:06:34.560
+但是这种图标的属性设置方法
+But this way, you can globally set the size
+
+00:06:34.560 --> 00:06:35.760
+是对你的所有 iron-icons 都适用的
+for all of your iron-icons.
+
+00:06:35.760 --> 00:06:37.724
+或者如果你想通过类来选中它
+Or if you wanted to target it by class,
+
+00:06:37.724 --> 00:06:39.140
+那么你能做上述不同的事情
+you can do these different things.
+
+00:06:39.140 --> 00:06:42.886
+在这个案例中  自定义属性的作用
+And in this case, it's not a very huge use
+
+00:06:42.886 --> 00:06:43.760
+并未完全发挥
+of custom properties.
+
+00:06:43.760 --> 00:06:45.430
+但是我希望能帮助你对自定义属性尽快熟悉
+But I want to get you familiar with custom properties.
+
+00:06:45.430 --> 00:06:47.170
+我希望你们对自定义属性的使用尽快上手
+I want to get you comfortable using them
+
+00:06:47.170 --> 00:06:50.750
+因为我们在将来会更多的使用到它们
+because we're going to be using them a lot more in the future.
+
+00:06:50.750 --> 00:06:51.680
+这就是它的用法
+So that about does it.
+
+00:06:51.680 --> 00:06:53.880
+现在你就领略了当前最新最犀利的
+You've now got the latest and greatest info
+
+00:06:53.880 --> 00:06:56.329
+关于图标如何在 Polymer 1.0 中的使用
+on working with icons in Polymer 1.0.
+
+00:06:56.329 --> 00:06:57.620
+朋友们 以上是本周的全部内容
+That's it for this week, folks.
+
+00:06:57.620 --> 00:06:59.260
+要确定点击那个小小的提交按钮
+Be sure to click that little Subscribe button.
+
+00:06:59.260 --> 00:07:01.010
+再次感谢各位的观看
+As always, thank you so much for watching.
+
+00:07:01.010 --> 00:07:02.120
+我们下次再见
+I'll see you next time.
+
+00:07:02.120 --> 00:07:05.470
+[MUSIC PLAYING]
+

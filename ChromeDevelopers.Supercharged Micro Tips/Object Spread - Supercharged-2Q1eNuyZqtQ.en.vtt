@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:00.994
+[MUSIC PLAYING]
+
+00:00:00.994 --> 00:00:02.982
+[KEYBOARD TYPING]
+
+00:00:10.934 --> 00:00:13.690
+SURMA: Have you heard of
+the array spread operator?
+
+00:00:13.690 --> 00:00:16.149
+It allows you to concatenate
+multiple arrays into one.
+
+00:00:16.149 --> 00:00:17.800
+It's quite handy, really.
+
+00:00:17.800 --> 00:00:20.170
+Now the same operator
+also works with objects
+
+00:00:20.170 --> 00:00:22.600
+and is therefore called
+the Object Spread operator.
+
+00:00:22.600 --> 00:00:23.684
+Who would have thought it?
+
+00:00:23.684 --> 00:00:25.641
+If you want to merge
+multiple objects into one,
+
+00:00:25.641 --> 00:00:27.070
+you can just use
+the curly braces
+
+00:00:27.070 --> 00:00:29.830
+and list all the objects
+that you want to merge.
+
+00:00:29.830 --> 00:00:32.140
+This can come in especially
+handy for options
+
+00:00:32.140 --> 00:00:33.850
+and the default values.
+
+00:00:33.850 --> 00:00:36.340
+Imagine writing a function
+that takes an options object,
+
+00:00:36.340 --> 00:00:38.320
+like it is common in JavaScript.
+
+00:00:38.320 --> 00:00:39.910
+You could define
+these default values
+
+00:00:39.910 --> 00:00:42.370
+for all these options
+in a private variable.
+
+00:00:42.370 --> 00:00:44.620
+When the function is called,
+merge the default options
+
+00:00:44.620 --> 00:00:46.390
+with the user provided options.
+
+00:00:46.390 --> 00:00:47.980
+The result will be
+an options object
+
+00:00:47.980 --> 00:00:50.890
+where you can be sure that all
+options are set to a default
+
+00:00:50.890 --> 00:00:54.340
+value, except where the user
+has provided another value.
+
+00:00:54.340 --> 00:00:55.510
+Handy, isn't it?
+
+00:00:55.510 --> 00:00:58.245
+So enjoy, and see you next time.
+
+00:00:58.245 --> 00:01:00.036
+Did you know that I
+have a new series where
+
+00:01:00.036 --> 00:01:02.255
+I build a PWA using WordPress?
+
+00:01:02.255 --> 00:01:04.379
+If not, you can go there
+right now and take a look.
+
+00:01:04.379 --> 00:01:05.880
+It's quite good, really.
+
+00:01:05.880 --> 00:01:08.300
+But also, you can
+subscribe to get CommitLog,
+
+00:01:08.300 --> 00:01:09.790
+to get Supercharged
+light strings,
+
+00:01:09.790 --> 00:01:12.720
+to get Supercharged microchips,
+all off Supercharged
+
+00:01:12.720 --> 00:01:15.380
+every Thursday, every week.
+

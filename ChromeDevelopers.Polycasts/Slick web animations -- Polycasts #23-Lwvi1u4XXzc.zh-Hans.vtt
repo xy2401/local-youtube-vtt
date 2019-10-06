@@ -1,0 +1,1736 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:02.767 --> 00:00:03.350
+大家好
+Hey, everyone.
+
+00:00:03.350 --> 00:00:03.849
+最近怎么样
+What‘s up?
+
+00:00:03.849 --> 00:00:04.770
+我是Rob Dodson
+It’s Rob Dodson.
+
+00:00:04.770 --> 00:00:06.440
+欢迎回到Polycast
+Welcome back to Polycast.
+
+00:00:06.440 --> 00:00:08.690
+最近  有些爱好者给我留言
+Recently, a few of you have left some comments
+
+00:00:08.690 --> 00:00:12.880
+问我能不能专门针对neon-animation元素做一期讲座
+asking if I could do an episode on the neon-animation elements.
+
+00:00:12.880 --> 00:00:15.740
+鉴于我们已经做过与行为相关的内容了
+Now, since we did an episode previously on behaviors,
+
+00:00:15.740 --> 00:00:17.740
+我觉得是时候
+I thought now
+
+00:00:17.740 --> 00:00:19.740
+该深入讲讲和动画相关的东西了
+would be a great time to dive into the animation stuff.
+
+00:00:19.740 --> 00:00:23.040
+那么接下来我们进入tablet town  开始时间操作吧
+So come on down to tablet town, and let‘s get hacking.
+
+00:00:23.040 --> 00:00:27.640
+那么neon-animations   它到底是个什么东西呢
+So neon-animations, what exactly are these things?
+
+00:00:27.640 --> 00:00:29.530
+neon-animation是很多行为和元素的集合
+Well, neon-animations are a collection
+
+00:00:29.530 --> 00:00:34.060
+通过它们  开发者可以调用Web Animation(网页动画)
+of behaviors and elements that let you use Web Animations.
+
+00:00:34.060 --> 00:00:37.010
+如果大家没听说过Web Animation
+And if you’ve never heard of Web Animations before,
+
+00:00:37.010 --> 00:00:39.100
+简而言之  它是一套新的标准
+it‘s basically a new set of standards
+
+00:00:39.100 --> 00:00:45.350
+它将CSS和JavaScript动画统一了起来
+that unify CSS and JavaScript animations.
+
+00:00:45.350 --> 00:00:48.140
+所以你可以用JavaScript实现你的动画
+So you can write your animation in JavaScript
+
+00:00:48.140 --> 00:00:50.580
+实现一些很程序化的并且很棒的效果
+and do something that’s really programmatic and awesome,
+
+00:00:50.580 --> 00:00:56.720
+不同的是它会运行在GPU上  就好像CSS动画一样
+but have it run on the GPU like it was a CSS animation.
+
+00:00:56.720 --> 00:01:00.020
+它可以将那些看上去古板的登陆页面什么的
+So this lets you turn your kind of boring sign-in form
+
+00:01:00.020 --> 00:01:02.947
+转换成这样厉害的漂亮的效果
+or whatever into this crazy, awesome, bouncy thing.
+
+00:01:02.947 --> 00:01:05.280
+可能吹的有点过了  不过无所谓了
+And I realize that‘s sort of over the top, but whatever.
+
+00:01:05.280 --> 00:01:06.564
+你懂的
+You get the point.
+
+00:01:06.564 --> 00:01:07.980
+那么今天在这里我们接下来的内容是
+So today what we’re going to do is
+
+00:01:07.980 --> 00:01:11.920
+重点聊聊neon-animation中的行为接口
+we‘re going to focus on the behaviors in the neon-animations set.
+
+00:01:11.920 --> 00:01:14.500
+之后在另外一个视频里  
+And then in another episode, I’m going to do a followup
+
+00:01:14.500 --> 00:01:16.850
+我会紧接着介绍元素集  比如neon-animated页面
+and cover the elements, like neon-animated pages.
+
+00:01:16.850 --> 00:01:19.290
+如果大家还不清楚‘行为’是什么
+If you‘re not sure what behaviors are,
+
+00:01:19.290 --> 00:01:21.710
+那么大家可以看看这里的视频
+you check out this video right here
+
+00:01:21.710 --> 00:01:25.100
+稍微脑补一下‘行为’的概念以及它的工作机制
+and get caught up on behaviors so you can learn how they work.
+
+00:01:25.100 --> 00:01:26.890
+了解了大概的概念之后  
+And then once you’ve seen that, come back
+
+00:01:26.890 --> 00:01:28.760
+再回来看现在的视频即可
+and check out this video.
+
+00:01:28.760 --> 00:01:31.080
+今天我们要研究的行为包括
+So the behaviors we‘re going to work on today are
+
+00:01:31.080 --> 00:01:34.010
+neon-animation-behavior
+the neon-animation-behavior
+
+00:01:34.010 --> 00:01:36.010
+和neon-animation-runner-behavior
+and the neon-animation-runner-behavior.
+
+00:01:36.010 --> 00:01:38.000
+首先是neon-animatable-behavior
+So the neon-animatable-behavior--
+
+00:01:38.000 --> 00:01:44.265
+它的功能是能够在元素中添加动画
+what this does is it allows you to add animations to your elements.
+
+00:01:44.265 --> 00:01:46.810
+比如你可以添加淡出效果的动画
+So you can add like a fade-in animation
+
+00:01:46.810 --> 00:01:49.780
+或者放大效果的动画  很多很多酷炫的东西
+or a scale-up animation, lots of really cool stuff there.
+
+00:01:49.780 --> 00:01:53.350
+但是它所欠缺的是它无法让你
+But what this doesn’t do is it doesn‘t allow you to actually
+
+00:01:53.350 --> 00:01:54.770
+播放这些动画
+play those animations.
+
+00:01:54.770 --> 00:01:56.520
+也就是说它里面没有实现回放功能
+There’s no playback built into this thing.
+
+00:01:56.520 --> 00:01:58.402
+而对于回放功能  
+So for playback support, that‘s when you need
+
+00:01:58.402 --> 00:01:59.860
+你就需要用到neon-animation-runner-behavior
+the neon-animation-runner-behavior.
+
+00:02:02.590 --> 00:02:04.170
+通过它来实现回放功能
+So that gives us playback.
+
+00:02:04.170 --> 00:02:05.545
+而且更加厉害的是
+Now, what’s really cool about the
+
+00:02:05.545 --> 00:02:09.139
+neon-animation-runner-behavior也实现了
+neon-animation-runner-behavior is it actually implements this
+
+00:02:09.139 --> 00:02:11.654
+animatable-behavior
+animatable-behavior as well.
+
+00:02:11.654 --> 00:02:14.070
+所以对于今天要实现的元素
+So for the elements that we‘re going to be building today,
+
+00:02:14.070 --> 00:02:15.900
+我们唯一要搞定的行为就是
+the only behavior that we need to work with
+
+00:02:15.900 --> 00:02:18.480
+这个neon-animation-runner  它真的很棒
+is neon-animation-runner, which is awesome.
+
+00:02:18.480 --> 00:02:21.940
+现在  你也许有点困惑  为什么会存在这个行为呢？
+Now, you might wonder, why this does behavior exist even?
+
+00:02:21.940 --> 00:02:24.210
+在接下来的视频中      
+Well, neon-animatable is going to become
+
+00:02:24.210 --> 00:02:28.940
+从我们看到动态的页面后就会发现
+more important when we go and we look at the animated pages
+
+00:02:28.940 --> 00:02:31.050
+neon-animatable将会变得更加重要
+elements in that following episode.
+
+00:02:31.050 --> 00:02:34.207
+不过今天在这里我们仅仅用到neon-animation-runner
+But today, we’re just going to work on neon-animation-runner.
+
+00:02:34.207 --> 00:02:35.790
+所以我们即将要实现的就是
+So the thing that we‘re going to build
+
+00:02:35.790 --> 00:02:38.919
+这个可弹出的注册表单
+is this little sort of pop-up sign-up form thing.
+
+00:02:38.919 --> 00:02:41.460
+当我们点击'Open'按钮的时候  它会播放动画
+So you can see here I click this Open button, it animates in.
+
+00:02:41.460 --> 00:02:43.570
+点击'Close'按钮  它会淡出
+I click the Close button, it fades out.
+
+00:02:43.570 --> 00:02:46.329
+我看到这里已经有一个&lt;paper-dialog&gt;元素了
+Now, I realize there’s already a paper dialog element.
+
+00:02:46.329 --> 00:02:48.870
+所以如果你正在实现一个登录表单
+And if you‘re building a sign-in form, you should absolutely,
+
+00:02:48.870 --> 00:02:51.950
+那么你毫无疑问应该使用&lt;paper-dialog&gt;元素
+100% use the paper dialog element.
+
+00:02:51.950 --> 00:02:55.890
+这里我自己创建了一个  仅作为教学使用
+I created my own one just as a teaching aid
+
+00:02:55.890 --> 00:02:57.800
+通过它可以帮助我们
+because it’s going to help us really
+
+00:02:57.800 --> 00:03:00.605
+更加直观地了解neon-animation集合中的概念
+illustrate a lot of the concepts in the neon-animation set.
+
+00:03:00.605 --> 00:03:02.980
+所以如果大家需要构造一个登录表单
+By all means, if you‘re actually building a sign-in form,
+
+00:03:02.980 --> 00:03:05.220
+那么一定记住要用paper dialog
+go use paper dialog.
+
+00:03:05.220 --> 00:03:08.060
+对于我自定义的元素  这儿有个bower.json
+So for my element, here’s the bower.json for it.
+
+00:03:08.060 --> 00:03:10.220
+我的元素叫login-panel
+My element is called login-panel.
+
+00:03:10.220 --> 00:03:12.140
+这里有趣的地方就是
+And the interesting thing here is just
+
+00:03:12.140 --> 00:03:14.710
+只要向下一滚动  它就会自动检查依赖
+to scroll down and check out its dependencies.
+
+00:03:14.710 --> 00:03:17.300
+大家能够看到这里我会引入paper-elements 1.0
+And you can see I‘m importing paper-elements 1.0
+
+00:03:17.300 --> 00:03:19.400
+和neon-elements 1.0
+and neon-elements 1.0.
+
+00:03:19.400 --> 00:03:20.610
+其实有时候我也特别懒
+And I’m often pretty lazy.
+
+00:03:20.610 --> 00:03:24.300
+我会把整个paper和neon-element元素集都引入进来
+I‘ll import like the entire paper- and neon-element sets
+
+00:03:24.300 --> 00:03:29.780
+因为从我的角度出发
+when I’m developing because from my perspective,
+
+00:03:29.780 --> 00:03:32.760
+将所有的这些元素集都引用进来
+it doesn‘t really matter if you pull all these sets
+
+00:03:32.760 --> 00:03:34.710
+没有什么不妥的
+into your development environment.
+
+00:03:34.710 --> 00:03:37.390
+实际上在软件发布版本中的文件大小
+Your file size, what you actually ship into production,
+
+00:03:37.390 --> 00:03:39.910
+是由你引用的内容和你所实现的内容而定的
+is only what you import and only what you vulcanize.
+
+00:03:39.910 --> 00:03:41.230
+所以我其实特别懒
+So I’m often lazy.
+
+00:03:41.230 --> 00:03:43.440
+我会把整个集合都引用进来
+I‘ll pull in the full sets just so I can
+
+00:03:43.440 --> 00:03:45.540
+这样开发起来也比较方便
+have an easier time developing.
+
+00:03:45.540 --> 00:03:49.400
+在我的编辑器中  
+Now, inside of my editor, this is the definition
+
+00:03:49.400 --> 00:03:51.540
+这是login-panel元素的定义
+for my login-panel element.
+
+00:03:51.540 --> 00:03:53.730
+你可以看到这里有些风格化的设计
+You can see that we’ve got some styles here.
+
+00:03:53.730 --> 00:03:55.660
+需要解释的是在主元素中
+The one to note is that on the host element,
+
+00:03:55.660 --> 00:03:57.340
+我们将显示默认设置为了空
+we‘ve set display none by default,
+
+00:03:57.340 --> 00:03:59.800
+所以在一开始你什么都看不到
+so you just can’t see the thing initially.
+
+00:03:59.800 --> 00:04:02.060
+当上下滚动时，就能看到模板的痕迹
+And then scrolling around, you can see the templates.
+
+00:04:02.060 --> 00:04:03.925
+这是比较标准的Polymer
+Pretty vanilla Polymer.
+
+00:04:03.925 --> 00:04:05.550
+我们已经有了paper-material元素
+We‘ve got paper-material element, which
+
+00:04:05.550 --> 00:04:06.966
+它会帮助我们实现小卡片的效果
+is going to give us a little card,
+
+00:04:06.966 --> 00:04:09.440
+还有paper-inputs用来实现登录表单
+and we’ve got some paper-inputs for the sign-in form.
+
+00:04:09.440 --> 00:04:11.870
+再往下  你会在JavaScript中看到实际的元素定义
+And further down, you‘ve got the actual definition
+
+00:04:11.870 --> 00:04:16.350
+都是很典型的东西
+for the element down here in JavaScript, so pretty typical stuff.
+
+00:04:16.350 --> 00:04:17.589
+我将它称为login-panel
+I’ve called it login-panel.
+
+00:04:17.589 --> 00:04:20.860
+它现在有一个属性  是布尔型的
+It‘s got one property right now, this opened Boolean,
+
+00:04:20.860 --> 00:04:24.660
+这里还有两个方法  显示和隐藏
+and then I’ve got these two methods, show and hide.
+
+00:04:24.660 --> 00:04:27.830
+它们的作用就是改变显示风格
+What these are going to do is just change the display style
+
+00:04:27.830 --> 00:04:30.970
+通过显示与隐藏将风格从内嵌模块到消失进行转换
+from inline-block to none depending on if it‘s showing or hiding.
+
+00:04:30.970 --> 00:04:32.970
+所以现在如果你调用这些方法
+So right now if you just call these methods,
+
+00:04:32.970 --> 00:04:35.053
+这些元素会在屏幕上闪一下
+the element’s just going to, like, blink on screen
+
+00:04:35.053 --> 00:04:36.870
+然后很快就消失了
+and then disappear really, really quickly.
+
+00:04:36.870 --> 00:04:38.850
+但是我们本来是想实现动画效果的  对吧？
+But I want this thing to animate, right?
+
+00:04:38.850 --> 00:04:40.947
+我希望能为其中添加一些活力
+I want it to add a little pizzazz.
+
+00:04:40.947 --> 00:04:43.280
+要实现这些  先回到最顶层的元素
+So to do that, I‘ll go back up to the top of the element
+
+00:04:43.280 --> 00:04:46.720
+添加一些动画
+and I’m going to add imports for some animations.
+
+00:04:46.720 --> 00:04:48.990
+而且最酷的地方是neon-animations
+Now, the cool thing is the neon-animations set
+
+00:04:48.990 --> 00:04:52.486
+内置了一些预置动画  你可以任意使用
+actually comes with a few prefab animations that you can just drop in.
+
+00:04:52.486 --> 00:04:54.360
+现在我要添加一个放大动画
+So I‘m going to pull in a scale-up animation,
+
+00:04:54.360 --> 00:04:56.700
+一个淡出动画 
+a fade-out animation, and then I’m
+
+00:04:56.700 --> 00:04:59.390
+然后我还会把animation-runner-behavior添加进来
+also going to pull in that animation-runner-behavior.
+
+00:04:59.390 --> 00:05:01.314
+现在我希望大家
+So check out these file paths right here just
+
+00:05:01.314 --> 00:05:02.480
+来看一下这里的文件路径
+because I want you see this.
+
+00:05:02.480 --> 00:05:05.335
+所有的东西都是源自于neon-animation
+So everything‘s coming from the neon-animation package,
+
+00:05:05.335 --> 00:05:08.190
+通过该源码包我能够获得动画路径
+and then I’ve got this animations directory.
+
+00:05:08.190 --> 00:05:10.470
+这里包含我之前提到的预置动画
+This is where the prefab animations hang out.
+
+00:05:10.470 --> 00:05:13.150
+而且在neon-animation包中
+And then also in neon-animation package,
+
+00:05:13.150 --> 00:05:15.520
+只要引用那个行为
+I‘m just pulling in that behavior.
+
+00:05:15.520 --> 00:05:17.250
+那么这里就全搞定了
+So we’re all set up there.
+
+00:05:17.250 --> 00:05:21.410
+现在我可以滚动到下面  将这个行为
+Now I‘m ready to scroll down and I can add the behavior
+
+00:05:21.410 --> 00:05:22.910
+添加到我的元素定义中去了
+to my elements definitions.
+
+00:05:22.910 --> 00:05:24.270
+在我的行为队列中
+So in my behaviors array, 
+
+00:05:24.270 --> 00:05:27.270
+我会添加neon-animation-runner-behavior
+I’ll add neon-animation-runner-behavior.
+
+00:05:27.270 --> 00:05:28.820
+这样做的效果就是
+And what that‘s going to do is it’s
+
+00:05:28.820 --> 00:05:33.660
+提供animationConfig属性
+going to give me access to this animationConfig property.
+
+00:05:33.660 --> 00:05:36.010
+所以记住  行为组件的工作原理是
+So remember, the way that behaviors work
+
+00:05:36.010 --> 00:05:40.090
+它将属性和方法融入到了你的元素中
+is they mix in properties and methods into your elements.
+
+00:05:40.090 --> 00:05:41.940
+所以通过添加行为
+So by adding that behavior, I now
+
+00:05:41.940 --> 00:05:44.730
+我现在就可以使用animationConfig属性了
+have access to this really cool animationConfig thing.
+
+00:05:44.730 --> 00:05:48.910
+而这里就是我能够在我自己的元素中添加动画的地方
+And this is where I can set up all of the animations on my element.
+
+00:05:48.910 --> 00:05:51.880
+要实现这个目的  这里会返回一个对象
+So to do this, I‘m going to return an object,
+
+00:05:51.880 --> 00:05:54.140
+这个对象中的每个键值
+and every key inside of this object
+
+00:05:54.140 --> 00:05:57.540
+就是我们要添加的动画的名称
+is going to be the name of an animation that I want to run.
+
+00:05:57.540 --> 00:06:00.210
+这里我要创建一个叫做entry的组件
+So I’m going to create one called entry.
+
+00:06:00.210 --> 00:06:03.750
+而这个对象的值  这个名称
+And the values for this entry object, the name,
+
+00:06:03.750 --> 00:06:06.460
+就是它将要播放的动画的名称
+is going to be the name of the animation it should execute,
+
+00:06:06.460 --> 00:06:08.970
+也就是我们之前引用的放大的动画
+which is that scale-up animation that we imported.
+
+00:06:08.970 --> 00:06:12.560
+而这个节点(node)  它就是动画的目标
+And then the node, this is the target of the animation.
+
+00:06:12.560 --> 00:06:14.200
+在这里  我们的目的是
+So in this case, we‘re saying, I want
+
+00:06:14.200 --> 00:06:16.590
+让这个元素自己活动起来
+this element to animate itself.
+
+00:06:16.590 --> 00:06:18.150
+所以我们要传递这个
+So I’m just passing this.
+
+00:06:18.150 --> 00:06:20.035
+但是如果这里
+But if there were children inside of here
+
+00:06:20.035 --> 00:06:22.160
+还有你想要播放动画的子元素你可以使用其它一些组件
+that you wanted to animate, you could use something
+
+00:06:22.160 --> 00:06:24.400
+比如Polymer的节点自动搜索功能
+like Polymer‘s automatic node finding.
+
+00:06:24.400 --> 00:06:27.420
+你可以这样写  this.$.child
+You could be like, I want this .$.
+
+00:06:27.420 --> 00:06:29.930
+将一些子元素作为目标
+some child to be the target.
+
+00:06:29.930 --> 00:06:31.480
+我想要让那个元素活动起来
+I want that thing to animate instead.
+
+00:06:31.480 --> 00:06:34.930
+但是在这  我们的设计是
+But in this case, we’re just saying, hey, animate myself
+
+00:06:34.930 --> 00:06:36.740
+用这个进入动画让它动起来
+with this entry animation.
+
+00:06:36.740 --> 00:06:39.090
+而且可以同时构造一个退出动画
+And then we can also create an exit animation.
+
+00:06:39.090 --> 00:06:42.151
+在这里会调用淡化动画作为退出动作
+So this time I‘m going to call fade-out for that exit animation.
+
+00:06:42.151 --> 00:06:44.150
+然后在下面这里  在显示和隐藏方法里
+And then I’m going to go down here into the show
+
+00:06:44.150 --> 00:06:48.680
+添加两个播放动画的调用
+and hide methods and add two calls to play animation.
+
+00:06:48.680 --> 00:06:52.170
+所以记住  我之前提到过的animatable-behavior  
+So remember, I said the animatable-behavior, that‘s
+
+00:06:52.170 --> 00:06:55.280
+它是我们能够向元素添加动画的关键要素
+what lets us actually add animations to an element.
+
+00:06:55.280 --> 00:06:57.690
+然后就是animation-runner-behavior
+And then the animation-runner-behavior,
+
+00:06:57.690 --> 00:06:59.550
+它会为我们提供动画回放的功能
+that‘s what gives us playback support.
+
+00:06:59.550 --> 00:07:02.150
+它们就是这些调用方法的来源
+So that’s where these methods come from.
+
+00:07:02.150 --> 00:07:04.690
+我们这里仅仅调用刚才
+And again, we‘re just calling the named animations
+
+00:07:04.690 --> 00:07:05.940
+我们所创建的动画
+that we just created up there.
+
+00:07:05.940 --> 00:07:08.382
+如果大家的眼睛够敏捷    
+One thing that you might notice if you’re astute
+
+00:07:08.382 --> 00:07:09.840
+那么这里大家也许会注意到一件事
+and you‘re sort of paying attention
+
+00:07:09.840 --> 00:07:13.440
+在隐藏方法中
+here is that right here inside of hide, we’re
+
+00:07:13.440 --> 00:07:18.440
+在执行动画前  我们会将显示设置为空
+setting display to none before we execute the animation.
+
+00:07:18.440 --> 00:07:21.165
+也就是说它会让屏幕闪烁一下
+So that means that this thing would just blink off screen
+
+00:07:21.165 --> 00:07:22.480
+然后我们就看不到它了
+and we would never see it.
+
+00:07:22.480 --> 00:07:24.650
+这样我们就能从屏幕上去掉它
+So we can take this out.
+
+00:07:24.650 --> 00:07:26.440
+我们可以在这里去掉这一行代码
+We can actually remove that line there.
+
+00:07:26.440 --> 00:07:28.220
+我会稍微注释一下
+I‘ll remove it with a little comment.
+
+00:07:28.220 --> 00:07:29.950
+不过我们一会还会返回来看这段代码
+But we’re going to need to revisit this in just a bit,
+
+00:07:29.950 --> 00:07:31.030
+到时候我会向大家解释原因
+and I‘ll show you why.
+
+00:07:31.030 --> 00:07:32.810
+但是首先  我们先来预览一下我们的元素
+But first, let’s preview our element.
+
+00:07:32.810 --> 00:07:35.700
+所以在这里  当我点击‘Open’按钮时
+So over here when I click this Open button,
+
+00:07:35.700 --> 00:07:37.200
+它会调用显示方法
+it‘s going to call that show method.
+
+00:07:37.200 --> 00:07:38.480
+当我点击’Close’按钮
+When I click this Close button, it’s
+
+00:07:38.480 --> 00:07:39.880
+它会调用隐藏方法
+going to call the hide method.
+
+00:07:39.880 --> 00:07:42.462
+我点击Open时  会出现放大的动画
+So I click Open, animates in with scale-up.
+
+00:07:42.462 --> 00:07:44.670
+当我点击‘Close’按钮的时候  看看会发生什么
+Then I click Close, and watch what‘s going to happen.
+
+00:07:44.670 --> 00:07:49.240
+它会淡出  然后页面会恢复到之前
+It fades out, but then it sort of pops back to the state
+
+00:07:49.240 --> 00:07:50.730
+的样子
+it was in before.
+
+00:07:50.730 --> 00:07:51.890
+那么这里发生了什么呢
+So what’s going on there?
+
+00:07:51.890 --> 00:07:55.190
+Web Animations不会保留
+Well, Web Animations don‘t actually
+
+00:07:55.190 --> 00:07:59.862
+你在自己元素上所做的状态修改
+preserve changes that you make to the state of your elements.
+
+00:07:59.862 --> 00:08:02.070
+所以如果你修改了CSS属性或者类似的东西
+So if you’re changing the CSS properties or something
+
+00:08:02.070 --> 00:08:05.910
+记住不会有改变会被保留
+like that, there‘s no preservation.
+
+00:08:05.910 --> 00:08:08.070
+最初我想  这也太烂了
+At first I was like, well, that sort of sucks.
+
+00:08:08.070 --> 00:08:09.970
+而我还是希望能保留一些状态的改变
+I kind of wish it did preserve those changes.
+
+00:08:09.970 --> 00:08:14.120
+不过后来我就发现这样做很难调试
+But then I realized that would be potentially very difficult to debug.
+
+00:08:14.120 --> 00:08:16.870
+如果你创建了一个复杂的动画
+If you had a complex animation that
+
+00:08:16.870 --> 00:08:19.480
+里面在一个元素中用到了很多风格化设置和属性
+was applying lots of styles and properties to an element,
+
+00:08:19.480 --> 00:08:21.313
+这就很难搞清楚一些事
+it‘d be very hard later to figure out, like,
+
+00:08:21.313 --> 00:08:24.110
+比如会改变尺寸之类的
+when did that thing change its size or whatever.
+
+00:08:24.110 --> 00:08:27.310
+Web Animations提到  这些都由你决定
+So Web Animation says, hey, that’s going to be up to you.
+
+00:08:27.310 --> 00:08:30.449
+你需要保留所有状态上的变化
+You‘re going to need to preserve whatever state changes you do.
+
+00:08:30.449 --> 00:08:31.990
+你可以通过添加一个类
+And you can do that by adding a class
+
+00:08:31.990 --> 00:08:35.799
+或者修改风格属性来实现这个功能  就像我们这里做的一样
+or just manipulating the style property like we were doing.
+
+00:08:35.799 --> 00:08:37.179
+那么我们如何实现它呢
+So how do we do that?
+
+00:08:37.179 --> 00:08:39.169
+回到元素定义中
+Well, back in our elements definition,
+
+00:08:39.169 --> 00:08:41.341
+我将要在这里添加一个listeners对象(listeners)
+I’m going to add a listeners object.
+
+00:08:41.341 --> 00:08:43.840
+如果大家从来没用过listeners对象
+And if you‘ve never worked with the listeners object before,
+
+00:08:43.840 --> 00:08:44.802
+它非常有用
+it’s really useful.
+
+00:08:44.802 --> 00:08:47.010
+现在  这个是所有Polymer元素都具备的
+Now, this is something that all Polymer elements get.
+
+00:08:47.010 --> 00:08:49.500
+listeners对象基本上
+And the listeners object
+
+00:08:49.500 --> 00:08:51.500
+是AddEventListener的简化表示
+is basically shorthand for AddEventListener.
+
+00:08:51.500 --> 00:08:53.300
+所以我们会说
+So we‘re going to say, hey, I want
+
+00:08:53.300 --> 00:08:56.770
+我想为NeonAnimationFinish事件创建一个监听对象
+to create a listener for the NeonAnimationFinish event.
+
+00:08:56.770 --> 00:09:00.400
+我们称它为onNeonAnimationFinish方法
+And I want it to call this onNeonAnimationFinish method,
+
+00:09:00.400 --> 00:09:03.030
+会在下面的代码中实现它
+which I’m going to define down here below.
+
+00:09:03.030 --> 00:09:05.510
+所以当动画播放完成后  会调用这个方法
+So when the element is done animating, call this method.
+
+00:09:05.510 --> 00:09:07.380
+在这个方法中  
+And inside of this method, we‘re going
+
+00:09:07.380 --> 00:09:09.320
+我们会先检查它是否被打开
+to check to see if it’s opened or not.
+
+00:09:09.320 --> 00:09:13.490
+如果它没被打开  我们就会让它显示为空
+And if it‘s not open, we’ll tell it to display none.
+
+00:09:13.490 --> 00:09:17.010
+那么我们返回去  看一下我们的动画
+So now we can go back and we can check our animation out.
+
+00:09:17.010 --> 00:09:20.400
+点击’Open’按钮  它的效果和之前一样
+So click the Open button, and it animates as it was before.
+
+00:09:20.400 --> 00:09:23.680
+现在当我点击‘Close’按钮的时候  状态会被保留
+And now when I click Close, that state gets preserved.
+
+00:09:23.680 --> 00:09:24.830
+厉害吧
+Awesome.
+
+00:09:24.830 --> 00:09:26.950
+那么如果你想添加多重动画到你的元素
+So what if you want to add multiple animations
+
+00:09:26.950 --> 00:09:29.840
+比如所有的动画都在同一时间播放怎么办呢
+to your element that all kind of play at the same time?
+
+00:09:29.840 --> 00:09:31.590
+其实很简单
+Well, that‘s actually really easy to do,
+
+00:09:31.590 --> 00:09:33.340
+我会在这给大家展示如何实现
+and I can show you how to do it over here.
+
+00:09:33.340 --> 00:09:35.820
+不过首先  先引用一些动画
+But first, let’s import a few more animations to work with.
+
+00:09:35.820 --> 00:09:39.240
+我先添加一个淡入动画
+So I‘m going to pull in a fade-in animation,
+
+00:09:39.240 --> 00:09:42.610
+然后再添加一个滑入动画
+and I’m also going to pull in one called slide-down.
+
+00:09:42.610 --> 00:09:46.940
+在我的animationConfig对象中
+And down in my animationConfig object, instead
+
+00:09:46.940 --> 00:09:50.210
+我会添加一个数组
+of just having a single entry object here,
+
+00:09:50.210 --> 00:09:52.440
+来替换之前的那个单独的entry对象
+I can actually have an array.
+
+00:09:52.440 --> 00:09:55.860
+这样我就能够添加一组想要播放的动画了
+So I can have an array of animation objects that I would like to play.
+
+00:09:55.860 --> 00:10:01.100
+大家可以看到这里我已经添加了一个  
+You can see here that I‘ve set the first one, the animation
+
+00:10:01.100 --> 00:10:02.730
+动画的名字叫slide-down-animation(滑入动画)
+name, to slide-down-animation, and then
+
+00:10:02.730 --> 00:10:04.670
+第二个是fade-in-animation(淡入动画)
+the second one, fade-in-animation.
+
+00:10:04.670 --> 00:10:07.750
+而这两个动画会平行播放
+And these two animations are going to play in parallel.
+
+00:10:07.750 --> 00:10:11.150
+也就是说它们会在同一时间进行播放
+So they’re both going to be happening at the same time.
+
+00:10:11.150 --> 00:10:14.160
+我们先来在Chrome里预览一下
+So let‘s go preview that over in Chrome just
+
+00:10:14.160 --> 00:10:15.610
+看看会发生什么
+to see what that does.
+
+00:10:15.610 --> 00:10:17.670
+来点击一下‘Open’按钮
+So I’m going to click the Open button,
+
+00:10:17.670 --> 00:10:21.740
+你会看到多个动画在同一时间
+and you‘ll see it sort of slides down and animates
+
+00:10:21.740 --> 00:10:22.650
+进行播放
+at the same time.
+
+00:10:22.650 --> 00:10:25.550
+它会淡入同时滑入
+So it fades in and slides down both at the same time.
+
+00:10:25.550 --> 00:10:28.780
+酷  但是如果你想稍微安排一下动画播放的时间怎么办呢
+Cool, but what if you wanted to sort of change the timing of that?
+
+00:10:28.780 --> 00:10:30.990
+也许你希望你的动画顺序播放
+Maybe you want your animations to play sequentially
+
+00:10:30.990 --> 00:10:32.840
+或者希望他们的播放顺序稍微有点间隔
+or you want them to be offset slightly.
+
+00:10:32.840 --> 00:10:34.870
+实现起来也很简单
+Well, that’s really easy to do as well.
+
+00:10:34.870 --> 00:10:38.860
+每个动画对象也带有一个可选的时间对象
+So every animation object also has an optional timing
+
+00:10:38.860 --> 00:10:40.190
+可供大家进行设置
+object that you can give it.
+
+00:10:40.190 --> 00:10:42.938
+时间对象含有一些大家可以使用的属性
+And the timing object has a few properties that you can work with.
+
+00:10:42.938 --> 00:10:43.920
+你可以设置动画播放时长
+You could set duration.
+
+00:10:43.920 --> 00:10:46.378
+我觉得这里slide-down-animation动画应该
+So I‘m going to say that the slide-down-animation animation
+
+00:10:46.378 --> 00:10:50.180
+播放2000毫秒  也就是2秒
+should have a duration of 2,000 milliseconds, so two seconds.
+
+00:10:50.180 --> 00:10:52.010
+而淡入动画会播放大约1000毫秒
+And my fade-in animation should have
+
+00:10:52.010 --> 00:10:57.980
+也就是1秒钟  并且延迟1000毫秒播放
+a duration of 1,000, so one second, and a delay of 1,000.
+
+00:10:57.980 --> 00:11:01.500
+所以它会在播放之前等待1秒钟
+So it’s going to wait one second before it starts playing,
+
+00:11:01.500 --> 00:11:03.440
+然后再播放1秒钟时间
+and then it‘s going to only be a second long,
+
+00:11:03.440 --> 00:11:06.410
+所以它会和slide-down-animation一起结束
+so it’ll end at the same time as the slide-down-animation.
+
+00:11:06.410 --> 00:11:09.060
+可以利用延迟的功能来
+And you can use delay to have your animations play
+
+00:11:09.060 --> 00:11:11.460
+顺序播放你的动画
+kind of like one right after the other.
+
+00:11:11.460 --> 00:11:14.160
+如果你望动画播放的时候稍微有些间隔
+Or if you want things to be sort of offset,
+
+00:11:14.160 --> 00:11:17.650
+有点像多重动画的效果  也可以实现
+just kind of on top of one another, you can do that as well.
+
+00:11:17.650 --> 00:11:19.441
+而它的作用就是
+And what this is going to do is it‘s really
+
+00:11:19.441 --> 00:11:21.233
+它会改变动画的感觉
+going to change the feel of this animation.
+
+00:11:21.233 --> 00:11:24.030
+看看这个的效果   拿它和之前我们所实现的效果进行比较
+So watch this and kind of compare it to what we were doing before.
+
+00:11:24.030 --> 00:11:26.890
+当我点击’Open’时  它会平缓的播放动画
+Now when I click Open, it’s a much more
+
+00:11:26.890 --> 00:11:29.820
+动画衔接的也更加平顺
+gradual, kind of smoother transition
+
+00:11:29.820 --> 00:11:31.680
+正如我们这里看到的一样  
+that we see there because it doesn‘t even
+
+00:11:31.680 --> 00:11:33.400
+当滑动到一半的时候  
+start fading in until it’s about halfway
+
+00:11:33.400 --> 00:11:35.830
+它才会开始淡入的动画
+through the slide-down-animation.
+
+00:11:35.830 --> 00:11:37.990
+所以仅仅是通过改变几个属性值
+So just by changing those little properties,
+
+00:11:37.990 --> 00:11:40.920
+就能够实现这样效果的动画
+we were able to really alter the feel of that animation, which
+
+00:11:40.920 --> 00:11:43.490
+真的很棒
+is pretty cool.
+
+00:11:43.490 --> 00:11:45.947
+现在  如何编写自己的动画呢？
+Now, how would you go about writing your own animation?
+
+00:11:45.947 --> 00:11:47.530
+听上去有点繁琐复杂令人生畏  是吧
+Because it might seem really daunting,
+
+00:11:47.530 --> 00:11:49.040
+但实际上实现起来很简单
+but it‘s actually super easy.
+
+00:11:49.040 --> 00:11:51.890
+我经常会看看
+And what I usually do is I look at one of the animations that’s
+
+00:11:51.890 --> 00:11:54.300
+预置动画集合中的动画
+already in the prefab animation set,
+
+00:11:54.300 --> 00:11:56.360
+然后将它作为起始点
+and then I‘ll use that as a starting point.
+
+00:11:56.360 --> 00:11:59.160
+这是淡入动画的定义
+So this is the definition for the fade-in animation.
+
+00:11:59.160 --> 00:12:00.780
+如果我们在这里滚动一下
+And if we scroll around here, you
+
+00:12:00.780 --> 00:12:04.085
+你会看到它很像其它的Polymer元素
+can see that it looks a lot like any other Polymer element.
+
+00:12:04.085 --> 00:12:07.430
+有些文档会详细说明它所支持的选项
+There’s some documentation for the options that it supports.
+
+00:12:07.430 --> 00:12:09.490
+我们来看看它的定义
+And we go down and we look at its definition,
+
+00:12:09.490 --> 00:12:12.370
+你会发现它包含一个‘is’属性
+and you can see that it‘s just got an
+
+00:12:12.370 --> 00:12:13.860
+代表它的名称
+is property here for its name.
+
+00:12:13.860 --> 00:12:16.105
+它实现了这个NeonAnimationBehavior
+It implements this NeonAnimationBehavior.
+
+00:12:16.105 --> 00:12:17.480
+我们还没聊过这个
+We haven’t talked about that yet,
+
+00:12:17.480 --> 00:12:20.060
+如果你要实现自己的动画
+but that‘s the behavior you need to implement if you’re
+
+00:12:20.060 --> 00:12:21.679
+那么你需要实现这个行为
+creating your own animation.
+
+00:12:21.679 --> 00:12:23.220
+它含有这个config函数
+And then it has this config function.
+
+00:12:23.220 --> 00:12:25.535
+这就是实现动画中内部的机制
+And this is really the meat of the animation here,
+
+00:12:25.535 --> 00:12:26.910
+并没有那么复杂
+and it‘s really not that complex.
+
+00:12:26.910 --> 00:12:29.510
+你会发现动画的目标节点
+You can see that the node that it’s targeting
+
+00:12:29.510 --> 00:12:32.390
+就是我们在configuration所传入的节点
+is whatever node we passed in in our configuration.
+
+00:12:32.390 --> 00:12:34.660
+它会创建一个叫做KeyframeEffect的组件
+And then it creates what‘s called a KeyframeEffect.
+
+00:12:34.660 --> 00:12:41.250
+就在这里  这是Web Animations API
+And this right here, this is the Web Animations API at work.
+
+00:12:41.250 --> 00:12:43.640
+所以我们要创建一个KeyframeEffect对象
+So we’re creating a KeyframeEffect Object.
+
+00:12:43.640 --> 00:12:45.420
+我们会告诉它以哪个节点作为对象
+We‘re telling it which node to target,
+
+00:12:45.420 --> 00:12:48.110
+然后我们会把这一组用JavaScript实现的关键帧数组
+and then we pass it this array of key frames that
+
+00:12:48.110 --> 00:12:50.250
+传递给它
+are written out in JavaScript.
+
+00:12:50.250 --> 00:12:52.950
+这里我们希望不透明度的值从0变到1
+And here we’re just saying we want it to go from 0 to 1
+
+00:12:52.950 --> 00:12:57.180
+同时我们还会设置时间参数
+in terms of opacity, and we also pass in the timing stuff.
+
+00:12:57.180 --> 00:12:58.170
+特别简单
+So this is pretty easy.
+
+00:12:58.170 --> 00:13:00.044
+你很快就发现如何快速
+You could quickly see how you could just kind
+
+00:13:00.044 --> 00:13:02.070
+模仿这样的实现方法  然后实现你自己的动画
+of mimic this and implement your own animation,
+
+00:13:02.070 --> 00:13:03.760
+就像我在这里做的一样
+and that‘s exactly what I did.
+
+00:13:03.760 --> 00:13:05.550
+我创建了一个回弹动画
+I created a bounce-in animation.
+
+00:13:05.550 --> 00:13:07.750
+这里我们要创建类似弹跳的效果
+So we’re going to create kind of a bouncing effect.
+
+00:13:07.750 --> 00:13:10.440
+我提取了之前我们用到的放大效果的动画
+And I took that scale-up animation we were working with before.
+
+00:13:10.440 --> 00:13:13.170
+把它的实现代码粘贴到这里
+I just copied it and pasted it in here.
+
+00:13:13.170 --> 00:13:15.975
+你会发现在其中有很多我们之前已经接触过的
+You can see that it‘s got pretty similar options to the thing we
+
+00:13:15.975 --> 00:13:17.530
+相类似的选项
+were just working with.
+
+00:13:17.530 --> 00:13:21.340
+唯一的区别就是这个transformOrigin
+Really, the only difference is this transformOrigin
+
+00:13:21.340 --> 00:13:22.910
+就是这个选项
+configuration thing here, which just
+
+00:13:22.910 --> 00:13:26.449
+它可以让我们设置动画放大的起始点
+lets us set the origin point we’ll be scaling from.
+
+00:13:26.449 --> 00:13:27.990
+其它的实现体就都和之前的一样了
+But then everything else is the same.
+
+00:13:27.990 --> 00:13:31.997
+我所做的就是将所有这些不同的关键帧
+And what I did was I added all these different key frames
+
+00:13:31.997 --> 00:13:32.580
+添加进来
+along the way.
+
+00:13:32.580 --> 00:13:35.150
+从放大级数0到最终放大级数1
+So start at scale 0, work up to scale 1,
+
+00:13:35.150 --> 00:13:38.440
+这里有一些关键帧类似间隙的效果
+and then here are the key frames sort of interstitially
+
+00:13:38.440 --> 00:13:41.240
+来保证图形不会变得太大或者太小
+for getting too big and too small and too big and too small
+
+00:13:41.240 --> 00:13:44.820
+直到整体的回弹效果显得比较自然为止
+until you have what looks like kind of a cool bouncing effect.
+
+00:13:44.820 --> 00:13:48.160
+实现体全部都在这了
+So really, this is all there is to it.
+
+00:13:48.160 --> 00:13:49.420
+而且如果你希望 
+And if you want,you can also, 
+
+00:13:49.420 --> 00:13:51.420
+我也相信大家有能力将其他一些效果混合进来
+I believe, mix in other things here.
+
+00:13:51.420 --> 00:13:54.003
+比如图形变换和不透明度还有其他一些效果
+So you could have transform and opacity and a few other things
+
+00:13:54.003 --> 00:13:56.100
+让他们在同一时间进行播放
+running at the same time.
+
+00:13:56.100 --> 00:13:58.400
+它的作用就是让我们能够
+But what this gives us is the ability
+
+00:13:58.400 --> 00:14:01.360
+好好理解animationConfig对象
+to go over to our animationConfig object.
+
+00:14:01.360 --> 00:14:04.130
+我们可以将入口动画替换为
+We can replace our entry animation
+
+00:14:04.130 --> 00:14:06.090
+回弹动画  
+with that bounce-in animation,
+
+00:14:06.090 --> 00:14:08.090
+然后可以将这个定义引用进来 
+and then we can import its definition.
+
+00:14:08.090 --> 00:14:09.900
+有了它在  一切都搞定了
+And with that in place, we‘re all good.
+
+00:14:09.900 --> 00:14:11.972
+我们可以直接保存  然后点击‘Open’按钮
+We can just go and click the Open button.
+
+00:14:11.972 --> 00:14:13.430
+现在大家可以看到这个
+And now you’ll see we get this kind
+
+00:14:13.430 --> 00:14:17.620
+有点疯狂的回弹效果  
+of frantic bounce-in effect, which is a little crazy.
+
+00:14:17.620 --> 00:14:18.990
+我们返回来
+So we go back.
+
+00:14:18.990 --> 00:14:20.550
+为这个动画添加一些时间参数
+We add some timing to this thing,
+
+00:14:20.550 --> 00:14:22.460
+把播放时间稍微延长一点
+we stretch out the duration a little bit.
+
+00:14:22.460 --> 00:14:23.855
+然后播放它  
+And now when we play it,
+
+00:14:23.855 --> 00:14:25.855
+这回看上去效果好多了
+it‘s a much more digestible animation.
+
+00:14:25.855 --> 00:14:28.844
+比刚才能更平滑一些
+It’s a little bit smoother.
+
+00:14:28.844 --> 00:14:30.760
+现在  我给大家展示的这些关键帧
+Right now, these key frames that I showed you,
+
+00:14:30.760 --> 00:14:33.190
+都会按照生命周期或者动画的播放时间
+these are all being evenly distributed
+
+00:14:33.190 --> 00:14:36.847
+进行平均分布
+across the life cycle or the duration of that animation.
+
+00:14:36.847 --> 00:14:38.430
+所以它们都花了相同的时长
+So they all take the exact same amount
+
+00:14:38.430 --> 00:14:40.657
+这并不是使用动画的合理方式
+of time, which is not really how animation works.
+
+00:14:40.657 --> 00:14:42.490
+通常情况下  你会希望某些部分的动画时间长些
+Oftentimes, you want some parts to be longer
+
+00:14:42.490 --> 00:14:43.960
+某些部分的动画时间短些
+and some parts to be shorter.
+
+00:14:43.960 --> 00:14:47.190
+如果要实现这样的效果  也十分简单
+And so if you want to do that, it‘s also very easy.
+
+00:14:47.190 --> 00:14:50.950
+你可以在关键帧的动画中增加偏移量
+You can just add offsets to your key frame animations,
+
+00:14:50.950 --> 00:14:54.070
+就像大家在这里看到的一样
+and so you can see here that I’m offsetting from 0
+
+00:14:54.070 --> 00:14:56.720
+把偏移量从0改为1
+and we‘re going to go all the way up to 1.
+
+00:14:56.720 --> 00:14:59.780
+你可以把这个看作是
+So you can think about this at like 0% of your animation
+
+00:14:59.780 --> 00:15:02.680
+动画时间从0%变为100%
+duration to 100% of your animation duration.
+
+00:15:02.680 --> 00:15:05.074
+这就是动画之间的
+And this is the amount of time that should go on
+
+00:15:05.074 --> 00:15:05.990
+时间间隔
+between each of these.
+
+00:15:05.990 --> 00:15:11.880
+那么图形从0变为80%大小的时候
+So from 0 to basically 80% through the lifespan
+
+00:15:11.880 --> 00:15:13.790
+我希望这段动画
+of the animation, I want to spend
+
+00:15:13.790 --> 00:15:17.220
+播放的时间为1.5秒
+all that time just scaling up to 1.5, just
+
+00:15:17.220 --> 00:15:20.540
+在这里修改最初的关键帧之间的转化
+doing this initial sort of key frame tween here.
+
+00:15:20.540 --> 00:15:23.130
+然后放大动画中剩下的20%
+And then I want the other 20% of my animation
+
+00:15:23.130 --> 00:15:27.510
+结合一点回弹的效果直到播放结束
+to just be occurring with the bouncing bits at the very end.
+
+00:15:27.510 --> 00:15:29.430
+所以放大动画会稍微长一些
+So it’ll be a long scale-up and then
+
+00:15:29.430 --> 00:15:33.330
+它会在最后很快的回弹一下
+it‘ll bounce really, really fast all at the end there.
+
+00:15:33.330 --> 00:15:35.490
+如果大家预览一下
+So if we go and we preview this, you’ll
+
+00:15:35.490 --> 00:15:37.510
+就能看到这个稍长的放大动画
+see now that it‘s a longer scale-up
+
+00:15:37.510 --> 00:15:39.560
+和结束前的回弹效果
+and we get more of that bounce at the end.
+
+00:15:39.560 --> 00:15:40.300
+非常棒
+So pretty cool.
+
+00:15:40.300 --> 00:15:42.940
+要达到让人满意的效果
+Pretty easy way to really dial in the look
+
+00:15:42.940 --> 00:15:43.884
+最简单的方法就是细细品味你自己的动画
+and feel your animation 
+
+00:15:43.884 --> 00:15:45.884
+以达到满意的效果
+so you get exactly what you want.
+
+00:15:45.884 --> 00:15:47.300
+最后我想说一件事
+The last thing I want to mention--
+
+00:15:47.300 --> 00:15:50.820
+当我录制视频的时候  我在动画的调用接口中
+as I was recording this, I came across a little bug
+
+00:15:50.820 --> 00:15:53.442
+发现了一个小bug  我们看这里
+in the animation system, so watch here.
+
+00:15:53.442 --> 00:15:54.900
+我要点一下‘Open’按钮
+I’m going to click the Open button.
+
+00:15:54.900 --> 00:15:56.110
+然后播放我自己的动画
+I‘m going to play my animation.
+
+00:15:56.110 --> 00:15:57.985
+然后再点击’Close’按钮
+And then I’m going to click this Close button
+
+00:15:57.985 --> 00:16:00.430
+然后再点两次‘Close’按钮
+and I‘m going to click the Close button twice.
+
+00:16:00.430 --> 00:16:03.429
+而当我再次点击‘Open’按钮的时候  都看不到动画了
+And now when I click Open again, I no longer see my animation.
+
+00:16:03.429 --> 00:16:04.220
+这是为什么呢？
+So what’s up there?
+
+00:16:04.220 --> 00:16:07.280
+貌似有这么一个bug  当你的动画加载的时候
+Well, there seems to be a bug where if your animations stack,
+
+00:16:07.280 --> 00:16:10.060
+它会出现崩溃
+it can break, which means it is time
+
+00:16:10.060 --> 00:16:14.489
+看来是时候请出我们的老朋友The Sweet Hacks了
+to bust out our old friend (DEEP VOICE) The Sweet Hacks.
+
+00:16:14.489 --> 00:16:16.280
+有段时间没用到它了
+It‘s been a little while since we saw them,
+
+00:16:16.280 --> 00:16:18.380
+不过现在我们需要它
+but now they’re back.
+
+00:16:18.380 --> 00:16:20.820
+当我在handler实现的时候
+What I‘m going to do is in my handlers,
+
+00:16:20.820 --> 00:16:24.650
+需要调用CancelAnimation方法
+I’m going to add a call to this CancelAnimation method.
+
+00:16:24.650 --> 00:16:26.370
+调用CancelAnimation方法时
+So when I call CancelAnimation, it just
+
+00:16:26.370 --> 00:16:28.965
+它会抛出其它动画正在播放的异常
+throws out what other animation was already playing.
+
+00:16:28.965 --> 00:16:31.160
+当我点击‘Open’的时候  它反弹了
+And now when I click Open, it bounces.
+
+00:16:31.160 --> 00:16:32.905
+双击‘Close’的时候  它会关闭
+I double-click Close, it closes.
+
+00:16:32.905 --> 00:16:35.430
+再点击‘Open’  它又变了
+I click Open, and it works again.
+
+00:16:35.430 --> 00:16:36.400
+说明我们的方法对了
+We‘re back on track.
+
+00:16:36.400 --> 00:16:38.150
+所以我发现这个bug让人头疼
+So I realize it’s kind of an annoying bug,
+
+00:16:38.150 --> 00:16:40.460
+不过我希望把那个包含进来
+but I wanted to include that little pro tip for you
+
+00:16:40.460 --> 00:16:42.911
+以方便后面用到的朋友有所参考
+in case anyone else runs into that issue.
+
+00:16:42.911 --> 00:16:43.410
+好吧
+All right.
+
+00:16:43.410 --> 00:16:45.509
+那么我们今天谈了一大堆东西
+Wow, we covered a ton of stuff today.
+
+00:16:45.509 --> 00:16:47.300
+我需要承认  当开始这些内容的时候
+And I‘ve got to admit, when I started this,
+
+00:16:47.300 --> 00:16:49.600
+我实际上对动画开发接口不是特别熟悉
+I didn’t actually know a lot about the animation system.
+
+00:16:49.600 --> 00:16:51.308
+所以学习的时候感觉特别酷
+So it‘s been really cool for me to learn,
+
+00:16:51.308 --> 00:16:53.630
+希望大家也能够乐在其中
+and I hope you all enjoyed it as well.
+
+00:16:53.630 --> 00:16:54.611
+接下来我们会做
+Now, I’m going to do 
+
+00:16:54.611 --> 00:16:56.611
+一个后续的特辑来讲解一下动态页面
+a followup episode on the animated pages
+
+00:16:56.611 --> 00:16:57.110
+元素
+element.
+
+00:16:57.110 --> 00:16:59.740
+点一下‘Subcribe’按钮就能获得所有内容
+So click that little Subscribe button so you don‘t miss that.
+
+00:16:59.740 --> 00:17:01.490
+感谢大家观看
+As always, thank you so much for watching,
+
+00:17:01.490 --> 00:17:03.610
+我们下次再见
+and I’ll see you next time.
+
+00:17:03.610 --> 00:17:05.319
+大家好  我是Rob
+Hey, there, Polycasters, Rob here.
+
+00:17:05.319 --> 00:17:06.950
+现在是提问时间
+QA time.
+
+00:17:06.950 --> 00:17:09.109
+Alex Shaw写道  
+Alex Shaw writes in and asks, What
+
+00:17:09.109 --> 00:17:11.800
+如果一个开发者从Polymer 0.5转到Polymer 1.0
+is one quick tip you‘d give someone
+
+00:17:11.800 --> 00:17:16.310
+你会给他哪些忠告呢
+who’s moving from Polymer 0.5 to Polymer 1.0?
+
+00:17:16.310 --> 00:17:17.960
+问得好  Alex
+So good question, Alex.
+
+00:17:17.960 --> 00:17:19.960
+最近  Polymer团队的一个成员
+Recently, one of the members of the Polymer team
+
+00:17:19.960 --> 00:17:23.329
+实现了一个非常棒的模块  叫polyup
+wrote this really, really cool module called polyup.
+
+00:17:23.329 --> 00:17:26.690
+实际上它会替换你的Polymer 0.5代码
+And it will actually take your old Polymer 0.5 code
+
+00:17:26.690 --> 00:17:31.340
+然后通过一些很牛的机制转换为Polymer 1.0代码
+and do crazy machinations to it and spit out Polymer 1.0 code.
+
+00:17:31.340 --> 00:17:32.980
+确实很棒
+It is really awesome.
+
+00:17:32.980 --> 00:17:34.720
+大家可以通过这个链接
+So you can follow this link right here
+
+00:17:34.720 --> 00:17:36.850
+了解更多关于polyup的信息
+to check out the polyup website.
+
+00:17:36.850 --> 00:17:39.184
+要把代码放进去  大家需要做一些小改动
+There‘s a little repl where you can drop your code in
+
+00:17:39.184 --> 00:17:40.850
+这样它就能自动转化了
+and it’ll just automatically convert it.
+
+00:17:40.850 --> 00:17:42.520
+而且大家还可以安装MPM模块
+And there‘s also an MPM module that you
+
+00:17:42.520 --> 00:17:45.760
+从命令行运行该模块
+can install and just sort of run it from your command line, so
+
+00:17:45.760 --> 00:17:47.310
+非常棒的东西
+really cool stuff there.
+
+00:17:47.310 --> 00:17:49.540
+谢谢你  Alex  谢谢你提出了这么好的问题
+Again, thank you, Alex, for sending in a question.
+
+00:17:49.540 --> 00:17:52.820
+我们会和大家简单打个招呼  给大家发一封反馈邮件
+We’ll have our minions reach out to you and send you a swag pack.
+
+00:17:52.820 --> 00:17:55.164
+如果大家有什么问题  记得在评论中留言就行
+If you have questions, be sure to leave them down
+
+00:17:55.164 --> 00:17:57.080
+没准会在以后的Polycast视频里
+in the comments, and we just might feature you
+
+00:17:57.080 --> 00:17:58.480
+提到大家的名字
+on a future episode of Polycast.
+
+00:17:58.480 --> 00:18:00.570
+感谢大家观看
+So thank you all so much for watching,
+
+00:18:00.570 --> 00:18:06.000
+我们下次再见
+and I‘ll see you next time.
+

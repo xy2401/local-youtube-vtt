@@ -1,0 +1,326 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.802
+[MUSIC PLAYING]
+
+00:00:06.550 --> 00:00:08.480
+SPEAKER 1: So I
+thought for Christmas--
+
+00:00:08.480 --> 00:00:09.230
+SPEAKER 2: It is Christmas.
+
+00:00:09.230 --> 00:00:10.355
+SPEAKER 1: It is Christmas.
+
+00:00:10.355 --> 00:00:15.290
+We'll pick 12 subjects that
+we're excited about for 2018.
+
+00:00:15.290 --> 00:00:17.720
+And, like, we can quiz
+each other about them
+
+00:00:17.720 --> 00:00:19.674
+in two minutes.
+
+00:00:19.674 --> 00:00:20.720
+SPEAKER 2: Oh, all right.
+
+00:00:20.720 --> 00:00:21.500
+Got it.
+
+00:00:21.500 --> 00:00:23.870
+SPEAKER 1: OK, my subject
+for the two minutes
+
+00:00:23.870 --> 00:00:25.407
+is Background Fetch.
+
+00:00:25.407 --> 00:00:26.740
+SPEAKER 2: Oh, Background Fetch.
+
+00:00:26.740 --> 00:00:28.450
+Didn't we have that before?
+
+00:00:28.450 --> 00:00:29.159
+SPEAKER 1: No.
+
+00:00:29.159 --> 00:00:31.200
+SPEAKER 2: What was the
+thing that we had before?
+
+00:00:31.200 --> 00:00:32.540
+SPEAKER 1: Oh, you're
+thinking of Background Sync.
+
+00:00:32.540 --> 00:00:32.900
+SPEAKER 2: Right.
+
+00:00:32.900 --> 00:00:34.900
+SPEAKER 1: Background
+Sync, service worker event
+
+00:00:34.900 --> 00:00:37.960
+that would happen next
+time you had connectivity.
+
+00:00:37.960 --> 00:00:38.630
+SPEAKER 2: OK.
+
+00:00:38.630 --> 00:00:40.330
+SPEAKER 1: And you could do sort
+of whatever you wanted there.
+
+00:00:40.330 --> 00:00:40.980
+SPEAKER 2: OK.
+
+00:00:40.980 --> 00:00:41.920
+SPEAKER 1: It's not that.
+
+00:00:41.920 --> 00:00:43.070
+SPEAKER 2: What is
+Background Fetch?
+
+00:00:43.070 --> 00:00:45.350
+SPEAKER 1: Now, that's a
+very open-ended question,
+
+00:00:45.350 --> 00:00:46.550
+which you could have said--
+
+00:00:46.550 --> 00:00:47.980
+SPEAKER 2: What is the use
+case for Background Fetch?
+
+00:00:47.980 --> 00:00:48.688
+SPEAKER 1: Right.
+
+00:00:48.688 --> 00:00:52.601
+So think about a long download
+that's going to maybe take--
+
+00:00:52.601 --> 00:00:53.350
+SPEAKER 2: Videos.
+
+00:00:53.350 --> 00:00:55.190
+SPEAKER 1: A video,
+yeah, good one.
+
+00:00:55.190 --> 00:00:56.010
+Right?
+
+00:00:56.010 --> 00:00:57.775
+And that could take hours, days.
+
+00:00:57.775 --> 00:00:59.150
+We don't want the
+browser to be--
+
+00:00:59.150 --> 00:00:59.660
+SPEAKER 2: [LAUGHS]
+
+00:00:59.660 --> 00:01:00.910
+SPEAKER 1: It could take days.
+
+00:01:00.910 --> 00:01:03.050
+Remember, I mean,
+videos get big.
+
+00:01:03.050 --> 00:01:04.490
+Mobile data is slow.
+
+00:01:04.490 --> 00:01:05.990
+Or you could be
+offline for a while.
+
+00:01:05.990 --> 00:01:08.604
+And we don't want the
+mobile to-- the browser
+
+00:01:08.604 --> 00:01:10.270
+to have to be awake
+for the whole thing.
+
+00:01:10.270 --> 00:01:12.650
+SPEAKER 2: OK, so basically,
+with the outsourcing,
+
+00:01:12.650 --> 00:01:15.505
+the Fetch thing to the
+operating system rather than--
+
+00:01:15.505 --> 00:01:16.130
+SPEAKER 1: Yes.
+
+00:01:16.130 --> 00:01:17.540
+SPEAKER 2: On desktop,
+though, as well?
+
+00:01:17.540 --> 00:01:18.840
+SPEAKER 1: Yes is the plan.
+
+00:01:18.840 --> 00:01:20.329
+But probably mobile first.
+
+00:01:20.329 --> 00:01:21.370
+SPEAKER 2: Yes, because--
+
+00:01:21.370 --> 00:01:21.920
+SPEAKER 1: But also desktop.
+
+00:01:21.920 --> 00:01:22.765
+SPEAKER 2: --that
+makes more sense.
+
+00:01:22.765 --> 00:01:23.265
+OK.
+
+00:01:23.265 --> 00:01:26.489
+So do we have an origin
+trial or something?
+
+00:01:26.489 --> 00:01:28.280
+SPEAKER 1: There's
+something in Canary now.
+
+00:01:28.280 --> 00:01:29.880
+That's pretty good.
+
+00:01:29.880 --> 00:01:33.075
+And it means we don't actually
+need user permission to do this
+
+00:01:33.075 --> 00:01:34.700
+because you can
+already start downloads
+
+00:01:34.700 --> 00:01:36.052
+without user permission.
+
+00:01:36.052 --> 00:01:37.010
+SPEAKER 2: That's true.
+
+00:01:37.010 --> 00:01:39.426
+SPEAKER 1: The idea is to make
+sure it's fully visible all
+
+00:01:39.426 --> 00:01:42.290
+the time so you can see the
+progress of the download.
+
+00:01:42.290 --> 00:01:44.254
+You can give it an
+icon, give it a title.
+
+00:01:44.254 --> 00:01:45.920
+So the user's aware
+that it's happening.
+
+00:01:45.920 --> 00:01:47.000
+They can cancel it if they want.
+
+00:01:47.000 --> 00:01:47.583
+SPEAKER 2: OK.
+
+00:01:47.583 --> 00:01:52.350
+But, like, can I put, like,
+a 20-gig video into cache
+
+00:01:52.350 --> 00:01:53.960
+API now?
+
+00:01:53.960 --> 00:01:54.620
+SPEAKER 1: Yes.
+
+00:01:54.620 --> 00:01:57.140
+If you have persistent
+data, you have
+
+00:01:57.140 --> 00:01:59.000
+as much space as you can eat.
+
+00:01:59.000 --> 00:02:00.110
+You need to ask for that.
+
+00:02:00.110 --> 00:02:01.850
+That does require permission.
+
+00:02:01.850 --> 00:02:02.450
+SPEAKER 2: OK.
+
+00:02:02.450 --> 00:02:03.490
+Because that's a lot of data.
+
+00:02:03.490 --> 00:02:04.865
+SPEAKER 1: That
+is a lot of data.
+
+00:02:04.865 --> 00:02:06.350
+But people like movies, right?
+
+00:02:06.350 --> 00:02:08.585
+And you don't want them
+disappearing to such a--
+
+00:02:08.585 --> 00:02:09.710
+SPEAKER 2: Citation needed.
+
+00:02:09.710 --> 00:02:10.759
+SPEAKER 1: Right.
+
+00:02:10.759 --> 00:02:11.690
+People do like movies.
+
+00:02:11.690 --> 00:02:13.140
+Look, there's loads of them.
+
+00:02:13.140 --> 00:02:15.334
+We build big buildings
+where we show them.
+
+00:02:15.334 --> 00:02:16.000
+I've seen these.
+
+00:02:16.000 --> 00:02:16.760
+SPEAKER 2: All right,
+so we have it in Canary.
+
+00:02:16.760 --> 00:02:18.800
+Any other browser signals?
+
+00:02:18.800 --> 00:02:21.010
+SPEAKER 1: Positive signals
+for a couple of browsers,
+
+00:02:21.010 --> 00:02:22.620
+but it's just Chrome for now.
+
+00:02:22.620 --> 00:02:25.016
+And that will be 2018.
+
+00:02:25.016 --> 00:02:27.506
+[CHRISTMAS MUSIC PLAYS]
+
+00:02:28.265 --> 00:02:29.140
+That was two minutes.
+
+00:02:29.140 --> 00:02:30.490
+SPEAKER 2: That was spot on.
+
+00:02:30.490 --> 00:02:33.050
+SPEAKER 1: OK, now,
+what's a Worklet?
+
+00:02:33.050 --> 00:02:35.450
+SPEAKER 2: Worklet
+is like a worker,
+
+00:02:35.450 --> 00:02:37.940
+to potentially off-thread thing.
+
+00:02:37.940 --> 00:02:40.300
+But it's more like wait.
+

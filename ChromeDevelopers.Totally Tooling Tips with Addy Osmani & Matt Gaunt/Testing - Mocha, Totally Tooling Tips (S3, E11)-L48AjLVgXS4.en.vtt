@@ -1,0 +1,518 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:09.680
+[THEME MUSIC]
+
+00:00:09.680 --> 00:00:15.190
+SPEAKER 1: Mocha, QUnit,
+Jasmine, Chai, Proxyquire,
+
+00:00:15.190 --> 00:00:16.420
+Sinon.
+
+00:00:16.420 --> 00:00:18.920
+SPEAKER 2: See, some people say
+that we have too [INAUDIBLE]
+
+00:00:18.920 --> 00:00:19.880
+in the JavaScript community.
+
+00:00:19.880 --> 00:00:20.950
+I don't know what
+they're talking about.
+
+00:00:20.950 --> 00:00:21.740
+SPEAKER 1: No, neither do I.
+
+00:00:21.740 --> 00:00:22.823
+SPEAKER 2: I really don't.
+
+00:00:22.823 --> 00:00:27.089
+So let's see, we have
+QUnit back in 2008.
+
+00:00:27.089 --> 00:00:28.005
+It was pretty popular.
+
+00:00:28.005 --> 00:00:29.110
+SPEAKER 1: Yup, that's the one--
+
+00:00:29.110 --> 00:00:29.840
+SPEAKER 2: People still use it.
+
+00:00:29.840 --> 00:00:31.000
+SPEAKER 1: That's the one
+that runs in the browser.
+
+00:00:31.000 --> 00:00:31.665
+Yup.
+
+00:00:31.665 --> 00:00:34.680
+SPEAKER 2: It was popularized,
+I think, by the Query Project.
+
+00:00:34.680 --> 00:00:36.380
+Ran well in CI.
+
+00:00:36.380 --> 00:00:40.040
+Didn't have amazing support
+for async testing back then
+
+00:00:40.040 --> 00:00:41.265
+or headless testing support.
+
+00:00:41.265 --> 00:00:41.890
+SPEAKER 1: Yup.
+
+00:00:41.890 --> 00:00:43.365
+SPEAKER 2: Then we had Jasmine--
+
+00:00:43.365 --> 00:00:43.990
+SPEAKER 1: Yup.
+
+00:00:43.990 --> 00:00:44.860
+SPEAKER 2: Come after that.
+
+00:00:44.860 --> 00:00:47.068
+SPEAKER 1: It looks super
+similar to Mocha, that one.
+
+00:00:47.068 --> 00:00:47.780
+SPEAKER 2: Yeah.
+
+00:00:47.780 --> 00:00:50.580
+Required you using
+Karma or Jasmine
+
+00:00:50.580 --> 00:00:52.585
+node for your test runner.
+
+00:00:52.585 --> 00:00:54.740
+Had a headless testing
+set up out of the box,
+
+00:00:54.740 --> 00:00:57.374
+lots of CI support, BDD.
+
+00:00:57.374 --> 00:00:58.040
+SPEAKER 1: Nice.
+
+00:00:58.040 --> 00:00:59.570
+SPEAKER 2: Then you
+had Mocha, which
+
+00:00:59.570 --> 00:01:01.130
+you wanted to talk about today.
+
+00:01:01.130 --> 00:01:04.540
+SPEAKER 1: So Mocha's like--
+so the main reason I like it,
+
+00:01:04.540 --> 00:01:07.110
+you can run it in node,
+you can run in the window,
+
+00:01:07.110 --> 00:01:08.402
+you can run it in a worker.
+
+00:01:08.402 --> 00:01:10.610
+Which at the moment, I'm
+doing a ton of stuff testing
+
+00:01:10.610 --> 00:01:12.810
+across browsers, which
+helps with nodes.
+
+00:01:12.810 --> 00:01:15.400
+A ton of stuff where I'm
+testing my caches in the window,
+
+00:01:15.400 --> 00:01:17.300
+and then service workers,
+which are workers.
+
+00:01:17.300 --> 00:01:20.706
+So having Mocha run in all three
+things is, like, super nice.
+
+00:01:20.706 --> 00:01:22.330
+Basically, the way
+it works is you just
+
+00:01:22.330 --> 00:01:25.340
+call Describe Function, parse
+on a string, and a call back.
+
+00:01:25.340 --> 00:01:26.994
+String defies the
+test suite, and then
+
+00:01:26.994 --> 00:01:29.410
+the call back is just the thing
+that gets called by Mocha.
+
+00:01:29.410 --> 00:01:30.680
+And then you start
+running your tests.
+
+00:01:30.680 --> 00:01:31.346
+SPEAKER 2: Sure.
+
+00:01:31.346 --> 00:01:33.530
+SPEAKER 1: So a single
+test is basically
+
+00:01:33.530 --> 00:01:36.160
+called IPP, parse a
+string of describing what
+
+00:01:36.160 --> 00:01:37.490
+the single tests should do.
+
+00:01:37.490 --> 00:01:40.410
+And then another call back
+which is like your actual test.
+
+00:01:40.410 --> 00:01:41.940
+You do certain things.
+
+00:01:41.940 --> 00:01:43.910
+And then you'd use, like,
+an assertion library
+
+00:01:43.910 --> 00:01:46.020
+to then basically
+say, this is the thing
+
+00:01:46.020 --> 00:01:47.130
+that I expect to happen.
+
+00:01:47.130 --> 00:01:48.766
+Make sure that this is it.
+
+00:01:48.766 --> 00:01:51.110
+SPEAKER 2: And Mocha's got
+like async testing helpers
+
+00:01:51.110 --> 00:01:51.610
+like done.
+
+00:01:51.610 --> 00:01:53.199
+But you don't have to use them.
+
+00:01:53.199 --> 00:01:55.740
+SPEAKER 1: No, so you can pass
+[INAUDIBLE] to your call back.
+
+00:01:55.740 --> 00:01:58.156
+And when you call it, that's
+basically telling Mocha, hey,
+
+00:01:58.156 --> 00:01:58.990
+I finished the test.
+
+00:01:58.990 --> 00:02:00.610
+Move on to the next one.
+
+00:02:00.610 --> 00:02:03.820
+But you can also just
+execute like synchronous code
+
+00:02:03.820 --> 00:02:05.200
+and it will just figure it out.
+
+00:02:05.200 --> 00:02:06.990
+Or if you return
+a promise, it'll
+
+00:02:06.990 --> 00:02:08.660
+figure out what to
+do based off of that.
+
+00:02:08.660 --> 00:02:09.456
+SPEAKER 2: Cool.
+
+00:02:09.456 --> 00:02:11.039
+SPEAKER 1: Normally
+what you'll end up
+
+00:02:11.039 --> 00:02:14.060
+seeing is people using it with
+a thing called Chai, which
+
+00:02:14.060 --> 00:02:17.840
+is an assertion library, which
+basically, Chai has two modes.
+
+00:02:17.840 --> 00:02:20.650
+You either use Expect
+or you use Should.
+
+00:02:20.650 --> 00:02:24.580
+And the difference is meant to
+be the kind of testing you do.
+
+00:02:24.580 --> 00:02:28.110
+I don't know enough about
+that to really comment on it.
+
+00:02:28.110 --> 00:02:30.466
+Generally, I use a thing
+called Should from Chai.
+
+00:02:30.466 --> 00:02:31.840
+And basically what
+that means is,
+
+00:02:31.840 --> 00:02:33.840
+whenever you get a value
+from a function or something,
+
+00:02:33.840 --> 00:02:36.080
+Should Like adds a ton of
+stuff to the prototype.
+
+00:02:36.080 --> 00:02:40.170
+So in the stupid example
+of 2 plus 2 equals 4,
+
+00:02:40.170 --> 00:02:41.294
+you do 2 plus 2.
+
+00:02:41.294 --> 00:02:41.960
+You get a value.
+
+00:02:41.960 --> 00:02:45.560
+And then you go Value.should.=4
+And that's basically
+
+00:02:45.560 --> 00:02:46.750
+the assertion bit.
+
+00:02:46.750 --> 00:02:48.250
+Because if value
+doesn't equal four,
+
+00:02:48.250 --> 00:02:50.530
+then the whole test will
+fail, and then Mocha will go,
+
+00:02:50.530 --> 00:02:52.080
+ooh, it doesn't make sense.
+
+00:02:52.080 --> 00:02:52.980
+You're stupid.
+
+00:02:52.980 --> 00:02:56.450
+SPEAKER 2: So Mocha,
+Chai, Jasmine.
+
+00:02:56.450 --> 00:02:58.250
+It sounds like you
+need a lot of caffeine
+
+00:02:58.250 --> 00:03:00.035
+to make it in this industry.
+
+00:03:00.035 --> 00:03:00.660
+SPEAKER 1: Yes.
+
+00:03:00.660 --> 00:03:02.580
+SPEAKER 2: I kind of want
+us to do our own test runner
+
+00:03:02.580 --> 00:03:03.735
+and just call it
+like tripleventihalfs
+
+00:03:03.735 --> 00:03:04.735
+weetcarmelmacchiatio.js.
+
+00:03:06.349 --> 00:03:07.890
+SPEAKER 1: You nearly
+messed that up.
+
+00:03:07.890 --> 00:03:09.630
+SPEAKER 2: I nearly did.
+
+00:03:09.630 --> 00:03:10.770
+SPEAKER 1: But you pulled
+it off, so well done.
+
+00:03:10.770 --> 00:03:10.922
+SPEAKER 2: I did.
+
+00:03:10.922 --> 00:03:11.000
+I did.
+
+00:03:11.000 --> 00:03:11.570
+I feel good.
+
+00:03:11.570 --> 00:03:12.540
+I feel good about that.
+
+00:03:12.540 --> 00:03:15.240
+I want to get the top of
+Hacker News without-- be great.
+
+00:03:15.240 --> 00:03:15.990
+Be great.
+
+00:03:15.990 --> 00:03:17.250
+SPEAKER 1: Just the fact
+that you said that statement,
+
+00:03:17.250 --> 00:03:19.300
+means you're going to
+get down voted heavily.
+
+00:03:19.300 --> 00:03:19.860
+SPEAKER 2: Most likely.
+
+00:03:19.860 --> 00:03:22.109
+But you're assuming anyone
+actually watches this show.
+
+00:03:22.109 --> 00:03:24.410
+SPEAKER 1: That's also true.
+
+00:03:24.410 --> 00:03:26.730
+SPEAKER 2: So Frameworks
+generally uses--they use some
+
+00:03:26.730 --> 00:03:28.970
+of the tools that we
+talked about just now.
+
+00:03:28.970 --> 00:03:31.160
+So like-- and some don't.
+
+00:03:31.160 --> 00:03:34.917
+Ember people, I think, still
+use Ember QUnit kind of stuff.
+
+00:03:34.917 --> 00:03:37.000
+SPEAKER 1: Do these like
+just have helpers around?
+
+00:03:37.000 --> 00:03:39.249
+SPEAKER 2: I think it's just
+helpers around it mostly.
+
+00:03:39.249 --> 00:03:41.350
+And the Angular
+team for Angular 2,
+
+00:03:41.350 --> 00:03:45.350
+I believe they're still
+using like, Jasmine and Karma
+
+00:03:45.350 --> 00:03:46.140
+for their stuff.
+
+00:03:46.140 --> 00:03:48.530
+And then Palmer, we're
+using Mocha and Chai still
+
+00:03:48.530 --> 00:03:49.672
+with web component tester.
+
+00:03:49.672 --> 00:03:51.060
+SPEAKER 1: Yup.
+
+00:03:51.060 --> 00:03:53.520
+SPEAKER 2: So on the whole,
+it's not entirely all crazy.
+
+00:03:53.520 --> 00:03:56.416
+SPEAKER 1: And then there's
+the Disney one, the Eva.
+
+00:03:56.416 --> 00:03:57.040
+SPEAKER 2: Eva.
+
+00:03:57.040 --> 00:04:01.381
+Eva is like a
+concurrent [INAUDIBLE].
+
+00:04:01.381 --> 00:04:03.880
+SPEAKER 1: So that-- I think
+that's the nice thing about Eva
+
+00:04:03.880 --> 00:04:05.600
+is the clear like
+selling point there,
+
+00:04:05.600 --> 00:04:08.896
+is the fact that it will run
+multiple tests simultaneously.
+
+00:04:08.896 --> 00:04:10.690
+I was actually going
+to try that out.
+
+00:04:10.690 --> 00:04:13.260
+But I had enough problems
+with service workers
+
+00:04:13.260 --> 00:04:15.184
+that I wanted it
+to do bit by bit.
+
+00:04:15.184 --> 00:04:15.850
+SPEAKER 2: Yeah.
+
+00:04:15.850 --> 00:04:16.690
+SPEAKER 1: But I
+am hoping that I
+
+00:04:16.690 --> 00:04:19.230
+can kind of switch to Eva
+as soon as it kind of gets
+
+00:04:19.230 --> 00:04:20.168
+browser support.
+
+00:04:20.168 --> 00:04:21.709
+SPEAKER 2: It's got
+a beautiful logo.
+
+00:04:21.709 --> 00:04:25.820
+But like, Eva's-- Eva's also
+good for when you're working
+
+00:04:25.820 --> 00:04:28.715
+with tests that are
+particularly I/O heavy.
+
+00:04:28.715 --> 00:04:31.140
+It just deals really
+well with those.
+
+00:04:31.140 --> 00:04:32.775
+SPEAKER 1: Nice.
+
+00:04:32.775 --> 00:04:34.400
+SPEAKER 2: But yeah,
+we've probably not
+
+00:04:34.400 --> 00:04:37.140
+covered all of the test runners
+and libraries ever created
+
+00:04:37.140 --> 00:04:38.620
+in the JavaScript community.
+
+00:04:38.620 --> 00:04:40.367
+23 more have probably
+been invented
+
+00:04:40.367 --> 00:04:41.450
+while we've been shooting.
+
+00:04:41.450 --> 00:04:43.980
+SPEAKER 1: Just make
+sure you use one of them.
+

@@ -1,0 +1,245 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.311
+[MUSIC PLAYING]
+
+00:00:05.629 --> 00:00:06.670
+KAYCE BASQUES: Hey there.
+
+00:00:06.670 --> 00:00:10.750
+I'm Kayce, and here's what's
+new in DevTools in Chrome 59.
+
+00:00:10.750 --> 00:00:12.440
+First up is the Coverage tab.
+
+00:00:12.440 --> 00:00:15.400
+The Coverage tab shows you what
+CSS and JavaScript the page
+
+00:00:15.400 --> 00:00:16.390
+is using.
+
+00:00:16.390 --> 00:00:20.410
+Let's see how to use this
+to speed up page load time.
+
+00:00:20.410 --> 00:00:23.980
+Open the Command menu with
+Command Shift P on Mac
+
+00:00:23.980 --> 00:00:27.070
+or Control Shift P
+for Windows and Linux.
+
+00:00:27.070 --> 00:00:30.380
+Type coverage and
+select Show Coverage.
+
+00:00:30.380 --> 00:00:34.420
+The Coverage tab opens up at the
+bottom of the DevTools window.
+
+00:00:34.420 --> 00:00:37.660
+Click Reload Page, wait a
+little bit for the page to load,
+
+00:00:37.660 --> 00:00:40.210
+and then click Stop Recording.
+
+00:00:40.210 --> 00:00:42.960
+You can see there's a bunch of
+external files getting loaded,
+
+00:00:42.960 --> 00:00:46.390
+and most of the bytes in those
+files aren't even getting used.
+
+00:00:46.390 --> 00:00:51.230
+Click on a URL to see a line by
+line breakdown for that file.
+
+00:00:51.230 --> 00:00:54.370
+So to speed up page load time,
+I could inline the use code
+
+00:00:54.370 --> 00:00:57.490
+into the page's HTML
+and asynchronously load
+
+00:00:57.490 --> 00:00:59.180
+the unused code.
+
+00:00:59.180 --> 00:01:02.710
+Check out the rendering path
+docs to learn more about that.
+
+00:01:02.710 --> 00:01:04.750
+Next step is full
+page screenshots.
+
+00:01:04.750 --> 00:01:06.490
+For a while now you've
+been able to take
+
+00:01:06.490 --> 00:01:08.920
+a screenshot of whatever
+was in the viewport,
+
+00:01:08.920 --> 00:01:11.530
+but now you can take a
+screenshot of the entire page,
+
+00:01:11.530 --> 00:01:14.530
+including everything
+above and below the fold.
+
+00:01:14.530 --> 00:01:17.470
+To take a screenshot,
+open up the Command menu,
+
+00:01:17.470 --> 00:01:21.610
+type screenshot, and select
+Capture Full Size Screenshot.
+
+00:01:21.610 --> 00:01:25.910
+Wait a little bit and DevTools
+eventually downloads the image.
+
+00:01:25.910 --> 00:01:28.330
+Next up is block request URLs.
+
+00:01:28.330 --> 00:01:29.950
+This lets you see
+how a page behaves
+
+00:01:29.950 --> 00:01:33.550
+when a URL or a pattern
+of URLs is blocked.
+
+00:01:33.550 --> 00:01:35.620
+This is useful for seeing
+how your page behaves
+
+00:01:35.620 --> 00:01:40.390
+when subscripts fail, or maybe
+a CDN goes down, and so on.
+
+00:01:40.390 --> 00:01:41.890
+Let's see how the
+DevTools home page
+
+00:01:41.890 --> 00:01:44.730
+looks when its CSS is blocked.
+
+00:01:44.730 --> 00:01:47.560
+Go to the Network panel,
+right click on a request,
+
+00:01:47.560 --> 00:01:50.680
+and select Block Request URL.
+
+00:01:50.680 --> 00:01:53.560
+You can manage your blocked
+URLs in the Request Blocking
+
+00:01:53.560 --> 00:01:56.980
+tab that pops up at the bottom
+of your DevTools window.
+
+00:01:56.980 --> 00:02:00.220
+To block a pattern of
+URLs, click Add and enter
+
+00:02:00.220 --> 00:02:02.080
+a wildcard pattern.
+
+00:02:02.080 --> 00:02:03.760
+When I reload the page--
+
+00:02:03.760 --> 00:02:05.590
+yep, looks pretty broken.
+
+00:02:05.590 --> 00:02:09.550
+It's what you would expect
+if you disabled all the CSS.
+
+00:02:09.550 --> 00:02:13.900
+Also, the network panel colors
+blocked requests in red.
+
+00:02:13.900 --> 00:02:16.180
+Last up is the
+Unified Command menu.
+
+00:02:16.180 --> 00:02:17.980
+In the past there was
+one keyboard shortcut
+
+00:02:17.980 --> 00:02:21.340
+for opening files and another
+one for jumping to a line,
+
+00:02:21.340 --> 00:02:21.936
+and so on.
+
+00:02:21.936 --> 00:02:24.060
+It was just a hassle to
+remember all the shortcuts.
+
+00:02:24.060 --> 00:02:27.842
+So now you can access them
+all from the Unified menu.
+
+00:02:27.842 --> 00:02:29.300
+When I open the
+Command menu, there
+
+00:02:29.300 --> 00:02:32.350
+is a greater than character
+in front of my cursor now.
+
+00:02:32.350 --> 00:02:34.540
+That's the symbol
+to run a command.
+
+00:02:34.540 --> 00:02:36.640
+If I replace that
+with a question mark,
+
+00:02:36.640 --> 00:02:38.900
+I can see all the other
+things I can do from the menu
+
+00:02:38.900 --> 00:02:42.940
+now, like running
+this handy snippet.
+
+00:02:42.940 --> 00:02:45.400
+That's what's new in
+DevTools in Chrome 59.
+
+00:02:45.400 --> 00:02:48.040
+Subscribe to the Chrome
+Developer's YouTube channel
+
+00:02:48.040 --> 00:02:50.530
+to get our latest
+DevTools videos,
+
+00:02:50.530 --> 00:02:52.960
+and tweet us at Chrome
+DevTools to discuss
+
+00:02:52.960 --> 00:02:54.190
+any of these changes.
+
+00:02:54.190 --> 00:02:56.800
+I'll see you in six weeks
+when Chrome 60 gets released.
+
+00:02:56.800 --> 00:03:00.150
+[MUSIC PLAYING]
+

@@ -1,0 +1,619 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.740
+PAUL LEWIS: So it's an
+interesting one, this,
+
+00:00:02.740 --> 00:00:06.780
+because I've had a
+good day and a bad day.
+
+00:00:06.780 --> 00:00:08.490
+I think that's normal, isn't it?
+
+00:00:08.490 --> 00:00:11.100
+You have some little
+victories, and then you
+
+00:00:11.100 --> 00:00:14.480
+spend a lot of your time
+wrestling with something.
+
+00:00:14.480 --> 00:00:16.800
+But yeah, one of the things
+I've been trying to do
+
+00:00:16.800 --> 00:00:19.730
+is get-- I mentioned
+it in the last entry
+
+00:00:19.730 --> 00:00:23.945
+that I wanted to get Lighthouse
+running because I want
+
+00:00:23.945 --> 00:00:26.070
+to be able to check that
+I've got a progressive web
+
+00:00:26.070 --> 00:00:27.860
+app and everything's in place.
+
+00:00:27.860 --> 00:00:31.120
+And I know that it works.
+
+00:00:31.120 --> 00:00:33.870
+But the problem was I
+wanted to push to Travis.
+
+00:00:33.870 --> 00:00:37.740
+And every time I pushed
+to Travis to do the thing.
+
+00:00:37.740 --> 00:00:41.170
+But it turns out
+debugging Travis locally,
+
+00:00:41.170 --> 00:00:45.235
+because you want to test it
+locally, it's pretty tricky.
+
+00:00:45.235 --> 00:00:47.932
+And there is a thing you can
+get, like a Docker image.
+
+00:00:47.932 --> 00:00:49.390
+But I just couldn't
+get it to work.
+
+00:00:49.390 --> 00:00:50.240
+It kept timing out.
+
+00:00:50.240 --> 00:00:51.320
+I did a bit of research.
+
+00:00:51.320 --> 00:00:55.070
+And it seems that there's
+some built-in thing, some kind
+
+00:00:55.070 --> 00:00:56.210
+of timeout, within Docker.
+
+00:00:56.210 --> 00:00:57.960
+And it couldn't get
+the image fast enough.
+
+00:00:57.960 --> 00:01:00.330
+And so it was just failing.
+
+00:01:00.330 --> 00:01:07.800
+And so I ended up having to
+kind of step-by-step on my mark
+
+00:01:07.800 --> 00:01:08.950
+repeat the steps.
+
+00:01:08.950 --> 00:01:15.057
+And eventually, I
+kind of got there.
+
+00:01:15.057 --> 00:01:16.140
+Let me just switch across.
+
+00:01:16.140 --> 00:01:17.220
+And you can actually see.
+
+00:01:17.220 --> 00:01:21.100
+Basically, most of it was
+actually OK, as it turns out.
+
+00:01:21.100 --> 00:01:23.850
+Most of this actually came
+from the Lighthouse Travis
+
+00:01:23.850 --> 00:01:25.640
+YAML, which I just updated.
+
+00:01:25.640 --> 00:01:28.480
+The thing is, it's
+this little bit here
+
+00:01:28.480 --> 00:01:30.854
+where it actually downloads
+a version of Chrome
+
+00:01:30.854 --> 00:01:32.270
+because what you
+want to do is you
+
+00:01:32.270 --> 00:01:36.570
+run Chrome against a
+virtual display, which
+
+00:01:36.570 --> 00:01:38.850
+is what these two lines do.
+
+00:01:38.850 --> 00:01:43.610
+But the download Chrome
+script, in order to get at it,
+
+00:01:43.610 --> 00:01:46.437
+you have to NPM explore
+with the Global Switch
+
+00:01:46.437 --> 00:01:47.770
+and go to the Lighthouse module.
+
+00:01:47.770 --> 00:01:49.550
+And then within there,
+you can basically
+
+00:01:49.550 --> 00:01:50.990
+tell that to download Chrome.
+
+00:01:50.990 --> 00:01:53.720
+And the thing is, it looks for
+this Lighthouse Chromium path
+
+00:01:53.720 --> 00:01:59.494
+variable, which it
+then seems to ignore.
+
+00:01:59.494 --> 00:02:01.160
+It's strange because
+the download Chrome
+
+00:02:01.160 --> 00:02:03.060
+script will fail if
+the Lighthouse Chromium
+
+00:02:03.060 --> 00:02:03.870
+path isn't set.
+
+00:02:03.870 --> 00:02:05.340
+But the Lighthouse
+Chromium path is
+
+00:02:05.340 --> 00:02:09.020
+set to our path prior to here.
+
+00:02:09.020 --> 00:02:13.090
+So I enter this line where
+I move from slash Lighthouse
+
+00:02:13.090 --> 00:02:15.670
+[? Chrome ?] Linux, which
+is where it puts it,
+
+00:02:15.670 --> 00:02:17.920
+to the current folder.
+
+00:02:17.920 --> 00:02:19.930
+And then I can actually
+run it and just check
+
+00:02:19.930 --> 00:02:21.214
+its version or something.
+
+00:02:21.214 --> 00:02:22.880
+And then after that,
+it started working.
+
+00:02:22.880 --> 00:02:24.710
+So that was a bit of a fight
+that I didn't expect to have.
+
+00:02:24.710 --> 00:02:27.150
+And it wasn't-- I found that
+there's just no easy way
+
+00:02:27.150 --> 00:02:30.532
+to debug my Travis
+scripts because as I said,
+
+00:02:30.532 --> 00:02:32.490
+I couldn't get this Docker
+image stuff to work.
+
+00:02:32.490 --> 00:02:33.819
+So it was a bit messy.
+
+00:02:33.819 --> 00:02:35.360
+And I spent a bit
+of time doing that.
+
+00:02:35.360 --> 00:02:38.660
+But on the upside, I
+wanted to quickly show you
+
+00:02:38.660 --> 00:02:39.930
+around the design.
+
+00:02:39.930 --> 00:02:42.710
+So good news is,
+because I'm designing
+
+00:02:42.710 --> 00:02:46.450
+this, the designer and the
+developer get on famously.
+
+00:02:46.450 --> 00:02:51.470
+The designer is, I guess,
+quite understanding
+
+00:02:51.470 --> 00:02:54.897
+of the developer's need to
+change things on the way
+
+00:02:54.897 --> 00:02:55.730
+through the process.
+
+00:02:55.730 --> 00:02:57.230
+And the developer,
+well, it's almost
+
+00:02:57.230 --> 00:02:59.680
+like they've fully understand
+what the designer was
+
+00:02:59.680 --> 00:03:01.360
+trying to achieve.
+
+00:03:01.360 --> 00:03:03.670
+It is kind of nice
+when you do both parts
+
+00:03:03.670 --> 00:03:08.720
+of a project like this,
+because as I say, get the push
+
+00:03:08.720 --> 00:03:09.770
+and pull.
+
+00:03:09.770 --> 00:03:11.782
+And it doesn't matter
+if I think, ah, actually
+
+00:03:11.782 --> 00:03:12.740
+I won't do it that way.
+
+00:03:12.740 --> 00:03:14.370
+I'll do it this other way.
+
+00:03:14.370 --> 00:03:15.010
+It's fine.
+
+00:03:15.010 --> 00:03:15.920
+Right?
+
+00:03:15.920 --> 00:03:17.260
+Anyway, so the mocks.
+
+00:03:17.260 --> 00:03:18.260
+I've got some mocks.
+
+00:03:18.260 --> 00:03:19.426
+So I did this in wireframes.
+
+00:03:19.426 --> 00:03:23.240
+And I did some mocks and all
+sorts of stuff like that.
+
+00:03:23.240 --> 00:03:26.350
+Let me show you the home page.
+
+00:03:26.350 --> 00:03:28.530
+I'll pop that onto Chrome there.
+
+00:03:28.530 --> 00:03:29.970
+So this is what it looks like.
+
+00:03:29.970 --> 00:03:33.680
+Now, actually, if we
+do chrome dev summit.
+
+00:03:37.680 --> 00:03:38.680
+I built this.
+
+00:03:38.680 --> 00:03:41.250
+And I wanted to
+take this idea on.
+
+00:03:41.250 --> 00:03:46.870
+I liked this slightly angular
+looking patterns and shapes.
+
+00:03:46.870 --> 00:03:49.720
+But I felt unbalanced when I
+looked back at this that it
+
+00:03:49.720 --> 00:03:56.290
+was-- the colors, I took the
+colors from the Chrome logo
+
+00:03:56.290 --> 00:03:58.740
+a little bit too literally.
+
+00:03:58.740 --> 00:04:00.260
+And so I felt like,
+you know what?
+
+00:04:00.260 --> 00:04:03.400
+Actually, I'm going to
+subdue it a little bit,
+
+00:04:03.400 --> 00:04:09.400
+make it a little
+bit more contrasty.
+
+00:04:09.400 --> 00:04:10.480
+And I've done this.
+
+00:04:10.480 --> 00:04:13.580
+I'm told by one of my
+colleagues that this
+
+00:04:13.580 --> 00:04:17.050
+is called a hypergradient.
+
+00:04:17.050 --> 00:04:18.566
+I don't know.
+
+00:04:18.566 --> 00:04:20.214
+Basically, all it
+is is I desaturate
+
+00:04:20.214 --> 00:04:21.630
+the image, boom,
+put the contrast,
+
+00:04:21.630 --> 00:04:25.710
+and then pop a gradient over the
+top with a hard light transfer
+
+00:04:25.710 --> 00:04:26.480
+mode.
+
+00:04:26.480 --> 00:04:27.800
+And you get this kind of look.
+
+00:04:27.800 --> 00:04:30.980
+Now, I could probably build
+this with CSS blend modes.
+
+00:04:30.980 --> 00:04:32.770
+But they're not well
+enough supported.
+
+00:04:32.770 --> 00:04:36.360
+So I am almost certainly going
+to do these as actual images
+
+00:04:36.360 --> 00:04:38.210
+like this.
+
+00:04:38.210 --> 00:04:39.660
+Anyway, so that's the home page.
+
+00:04:39.660 --> 00:04:42.274
+It's fairly simple with
+a link to the code LOBs,
+
+00:04:42.274 --> 00:04:43.690
+a link to the
+schedule, and a link
+
+00:04:43.690 --> 00:04:49.040
+to the location, which is the
+SFJAZZ Center in San Francisco.
+
+00:04:49.040 --> 00:04:52.520
+Bottom, privacy terms and
+the code of conduct as well.
+
+00:04:52.520 --> 00:04:54.700
+So that's fine.
+
+00:04:54.700 --> 00:04:57.440
+It gets a little bit more
+interesting over, I think,
+
+00:04:57.440 --> 00:05:01.400
+in the schedule.
+
+00:05:01.400 --> 00:05:04.110
+Similar kind of header,
+masthead header.
+
+00:05:04.110 --> 00:05:08.200
+And then down here, I've
+got the session information.
+
+00:05:08.200 --> 00:05:11.180
+And to be super clear,
+the session information
+
+00:05:11.180 --> 00:05:15.040
+is placeholder, hence, the
+lorem ipsum text there.
+
+00:05:15.040 --> 00:05:17.610
+This is actually the
+content from two years ago.
+
+00:05:17.610 --> 00:05:21.700
+I just copy-pasted the content
+and the times and everything
+
+00:05:21.700 --> 00:05:22.370
+else.
+
+00:05:22.370 --> 00:05:24.120
+So this isn't me
+telling you what's
+
+00:05:24.120 --> 00:05:27.329
+going to be at the Chrome Dev
+Summit because I have no idea.
+
+00:05:27.329 --> 00:05:29.370
+But I wanted something
+that was a little bit more
+
+00:05:29.370 --> 00:05:32.864
+realistic rather than total
+lorem ipsum everywhere.
+
+00:05:32.864 --> 00:05:33.780
+Same kind of masthead.
+
+00:05:33.780 --> 00:05:36.135
+And what I'm doing
+is I'm going to do
+
+00:05:36.135 --> 00:05:38.679
+a static build from section
+to section to section.
+
+00:05:38.679 --> 00:05:40.470
+And then I'm going to
+progressively enhance
+
+00:05:40.470 --> 00:05:42.580
+to something that uses
+JavaScript to swap out
+
+00:05:42.580 --> 00:05:43.500
+these sections.
+
+00:05:43.500 --> 00:05:47.700
+And I'm still debating in my own
+mind how I'm going to do that.
+
+00:05:47.700 --> 00:05:56.250
+I feel like maybe I'm
+going to do something
+
+00:05:56.250 --> 00:06:00.050
+where things shift up and down,
+as in the image fades out.
+
+00:06:00.050 --> 00:06:02.860
+And there's this yellow
+strip at the back here.
+
+00:06:02.860 --> 00:06:04.620
+I'm thinking that
+might move up and down
+
+00:06:04.620 --> 00:06:11.720
+because when you look at,
+for example, the live page,
+
+00:06:11.720 --> 00:06:12.240
+you can see.
+
+00:06:12.240 --> 00:06:15.270
+There's the video player here
+with the session going on.
+
+00:06:15.270 --> 00:06:18.610
+And then this is that
+little yellow strip.
+
+00:06:18.610 --> 00:06:22.640
+But it's slid down and made
+way for what's live now,
+
+00:06:22.640 --> 00:06:26.980
+which is apparently Jake
+arguing over minutia.
+
+00:06:26.980 --> 00:06:28.540
+He does that so well.
+
+00:06:28.540 --> 00:06:29.975
+And up next is Alex Russell.
+
+00:06:29.975 --> 00:06:30.850
+And you can see them.
+
+00:06:30.850 --> 00:06:32.300
+We've got them coming up later.
+
+00:06:32.300 --> 00:06:34.570
+This is what I'm hoping
+for that live section
+
+00:06:34.570 --> 00:06:37.090
+when the conference
+is actually live
+
+00:06:37.090 --> 00:06:39.790
+that we give you what you
+need, which is give me
+
+00:06:39.790 --> 00:06:43.270
+the actual content, and
+give me what's live,
+
+00:06:43.270 --> 00:06:46.020
+what's coming up next,
+and then what's in line
+
+00:06:46.020 --> 00:06:47.020
+for the rest of the day.
+
+00:06:47.020 --> 00:06:50.390
+I don't know if I'm going to
+get to doing notifications.
+
+00:06:50.390 --> 00:06:52.240
+I've put it there in
+case I want to do them
+
+00:06:52.240 --> 00:06:53.580
+and I get a chance to do them.
+
+00:06:53.580 --> 00:06:56.830
+But time may be against me.
+
+00:06:56.830 --> 00:07:03.417
+Right, that's probably
+enough for right now.
+
+00:07:03.417 --> 00:07:04.000
+It's exciting.
+
+00:07:04.000 --> 00:07:04.750
+It's good.
+
+00:07:04.750 --> 00:07:06.672
+I have done a little
+bit of coding today.
+
+00:07:06.672 --> 00:07:08.130
+But I'm going to
+save that probably
+
+00:07:08.130 --> 00:07:10.590
+for the next entry
+where I can talk
+
+00:07:10.590 --> 00:07:11.934
+about it in a bit more detail.
+
+00:07:11.934 --> 00:07:12.600
+So don't forget.
+
+00:07:12.600 --> 00:07:15.000
+You can subscribe.
+
+00:07:15.000 --> 00:07:17.680
+And thanks for coming
+along on the journey.
+
+00:07:17.680 --> 00:07:20.430
+[MUSIC PLAYING]
+

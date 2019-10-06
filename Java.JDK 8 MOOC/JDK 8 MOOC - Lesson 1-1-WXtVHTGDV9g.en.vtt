@@ -1,0 +1,1300 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:02.810
+[music]
+
+00:00:02.810 --> 00:00:12.879
+ 
+
+00:00:12.879 --> 00:00:15.099
+Hello and welcome to this massive
+
+00:00:15.099 --> 00:00:18.320
+open online course on JDK 8.
+
+00:00:18.320 --> 00:00:22.800
+In this course we're going to be looking
+at some of the new features that have been
+
+00:00:22.800 --> 00:00:23.390
+included
+
+00:00:23.390 --> 00:00:26.810
+in JDK 8 and the Java programming language
+
+00:00:26.810 --> 00:00:31.290
+and Java libraries, which allow you to
+take a more functional approach
+
+00:00:31.290 --> 00:00:34.489
+when developing applications. This will
+use
+
+00:00:34.489 --> 00:00:39.350
+Lambda expressions the streams API. My
+name is on Simon Ritter,
+
+00:00:39.350 --> 00:00:43.010
+Java Technology Evangelist,
+
+00:00:43.010 --> 00:00:47.150
+and I will be guiding you through the 3 weekly
+lessons that we have
+
+00:00:47.150 --> 00:00:55.460
+for this course. The aim of this course
+
+00:00:55.460 --> 00:00:59.100
+is to give you an idea about how you
+can use
+
+00:00:59.100 --> 00:01:03.040
+Lambda expressions, so we'll talk about
+various aspects of those
+
+00:01:03.040 --> 00:01:07.630
+Lambda expressions in terms of the syntax; where
+you can use them; how you can use and so on.
+
+00:01:07.630 --> 00:01:07.979
+ 
+
+00:01:07.979 --> 00:01:11.520
+Then we'll talk about the Streams API 
+and how
+
+00:01:11.520 --> 00:01:15.100
+they can use Lambda expressions
+extensively to give you a more
+
+00:01:15.100 --> 00:01:16.030
+functional style of
+
+00:01:16.030 --> 00:01:20.049
+programming using JDK 8. What this gives
+you
+
+00:01:20.049 --> 00:01:23.180
+when you understand how to use these
+correctly, is a
+
+00:01:23.180 --> 00:01:26.549
+much better way of solving a lot of common
+problems
+
+00:01:26.549 --> 00:01:30.140
+in terms of how we process data,
+
+00:01:30.140 --> 00:01:34.570
+how we process collections data. It gives
+you much more concise
+
+00:01:34.570 --> 00:01:38.229
+more flexible way of doing that, so the code
+becomes
+
+00:01:38.229 --> 00:01:42.220
+easier to read, easier to understand, and
+easier to maintain.
+
+00:01:42.220 --> 00:01:45.680
+One the other big advantages in this is
+
+00:01:45.680 --> 00:01:49.189
+the fact that you can now much more
+easily
+
+00:01:49.189 --> 00:01:52.280
+take advantage of multiple core
+processors and,
+
+00:01:52.280 --> 00:01:55.770
+if your machine has more multiple processors, then
+
+00:01:55.770 --> 00:01:59.750
+the parallel execution code could be
+made much, much simpler
+
+00:01:59.750 --> 00:02:07.219
+using this type of syntax.
+
+00:02:07.219 --> 00:02:10.410
+Let's start with lesson 1, and in this
+lesson
+
+00:02:10.410 --> 00:02:17.569
+we're going to look at Lambda
+expressions. The agenda for this lesson
+
+00:02:17.569 --> 00:02:21.040
+is firstly we'll start talking about why
+
+00:02:21.040 --> 00:02:24.720
+we need to add Lambda expressions to Java.
+Java is
+
+00:02:24.720 --> 00:02:29.080
+twenty-years-old and we been very
+happily programming for those last 20
+
+00:02:29.080 --> 00:02:29.530
+years, last
+
+00:02:29.530 --> 00:02:32.819
+nineteen years since JDK 8 is about a year
+
+00:02:32.819 --> 00:02:36.650
+since it was released, so we've been
+using them Java for
+
+00:02:36.650 --> 00:02:40.519
+a good nineteen years without Lambda
+expressions, so why do we need to add
+
+00:02:40.519 --> 00:02:41.690
+at this point in time?
+
+00:02:41.690 --> 00:02:45.150
+We need to understand the syntax of
+
+00:02:45.150 --> 00:02:48.579
+Lambda expressions, so we'll cover that in
+some detail and then
+
+00:02:48.579 --> 00:02:52.299
+we'll look at places where you can
+actually use Lambda expressions
+
+00:02:52.299 --> 00:02:55.329
+and this is, essentially, wherever you can
+use a
+
+00:02:55.329 --> 00:02:59.329
+function interface. So we'll describe
+what functional interfaces are,
+
+00:02:59.329 --> 00:03:02.540
+their definition, how you use them and so on.
+
+00:03:02.540 --> 00:03:05.560
+We'll move from there
+
+00:03:05.560 --> 00:03:08.590
+to looking at some of the new
+functional interfaces that have been
+
+00:03:08.590 --> 00:03:09.450
+included
+
+00:03:09.450 --> 00:03:13.090
+in the java.util.function package and these
+
+00:03:13.090 --> 00:03:16.090
+are very relevant when we start talking
+about streams
+
+00:03:16.090 --> 00:03:19.790
+in lesson two because they are used
+extensively
+
+00:03:19.790 --> 00:03:25.650
+in conjunction with streams. One of the
+other things that we've included in JDK 8
+
+00:03:25.650 --> 00:03:27.750
+around Lambda expressions
+
+00:03:27.750 --> 00:03:31.170
+is a shorthand way of creating certain
+types of Lambda
+
+00:03:31.170 --> 00:03:35.069
+expressions, where you're using just calls
+to a particular method
+
+00:03:35.069 --> 00:03:39.500
+or using a constructor, so these are
+method and constructor references
+
+00:03:39.500 --> 00:03:43.489
+and we'll explain the three different
+situations we can use those and
+
+00:03:43.489 --> 00:03:48.639
+again the syntax and the way those work.
+There are some
+
+00:03:48.639 --> 00:03:52.470
+quite, not complicated rules, but there
+are some rules that you need to
+
+00:03:52.470 --> 00:03:53.500
+understand
+
+00:03:53.500 --> 00:03:57.700
+about how you can reference variables
+from the surrounding scope
+
+00:03:57.700 --> 00:04:01.410
+in Lambda expression. We'll cover
+that in some detail,
+
+00:04:01.410 --> 00:04:04.840
+we'll talk about what the rules are, how
+you can use things and also
+
+00:04:04.840 --> 00:04:10.290
+how the compiler can actually help
+you certain situations.
+
+00:04:10.290 --> 00:04:13.840
+In the last part of this lesson we'll
+look at some of the new methods that
+
+00:04:13.840 --> 00:04:15.360
+have been added to the existing
+
+00:04:15.360 --> 00:04:18.959
+JDK 8 libraries outside the streams API
+
+00:04:18.959 --> 00:04:22.950
+where you can use Lambda expressions;
+some of the really useful things you
+
+00:04:22.950 --> 00:04:23.630
+can do
+
+00:04:23.630 --> 00:04:33.080
+for collections and also for things
+like logging.
+
+00:04:33.080 --> 00:04:36.770
+We'll start then with part one of Lesson one about
+
+00:04:36.770 --> 00:04:43.690
+why does Java need Lambda expressions?
+Now I mentioned
+
+00:04:43.690 --> 00:04:47.450
+that what this allows you to do is to
+simplify
+
+00:04:47.450 --> 00:04:50.700
+how you can take advantage of multicore
+
+00:04:50.700 --> 00:04:53.750
+processors and multiple processors.
+
+00:04:53.750 --> 00:04:58.410
+If you look at the history of Java what
+you'll find is that right from the very
+
+00:04:58.410 --> 00:04:59.250
+beginning
+
+00:04:59.250 --> 00:05:02.660
+Java had the concept of
+
+00:05:02.660 --> 00:05:06.380
+being able to support multiple streams of
+execution,
+
+00:05:06.380 --> 00:05:10.350
+multiple threads of execution.
+
+00:05:10.350 --> 00:05:14.920
+In JDK 1.0 you had a java.lang.thread class,
+
+00:05:14.920 --> 00:05:18.970
+which allows you to create a separate
+thread. You could define
+
+00:05:18.970 --> 00:05:22.600
+through the use of something like a runnable
+what the code was
+
+00:05:22.600 --> 00:05:26.270
+you want to execute within that thread.
+That was great because it meant that it
+
+00:05:26.270 --> 00:05:27.320
+was very simple
+
+00:05:27.320 --> 00:05:31.410
+to create multiple threads that could do
+things potentially in parallel.
+
+00:05:31.410 --> 00:05:35.390
+The problem that we had with that
+
+00:05:35.390 --> 00:05:39.370
+was when you had several threads all
+which wanted to work together
+
+00:05:39.370 --> 00:05:43.600
+if they were working separately that was
+no issue once you want threads to work
+
+00:05:43.600 --> 00:05:44.290
+together
+
+00:05:44.290 --> 00:05:47.530
+to share data and to be able to
+coordinate
+
+00:05:47.530 --> 00:05:50.770
+their activities, to certain points in
+time
+
+00:05:50.770 --> 00:05:54.970
+then you quite restricted in what you
+can do with the thread.
+
+00:05:54.970 --> 00:05:58.900
+There are essentially four methods in the
+thread class
+
+00:05:58.900 --> 00:06:02.640
+that allow you to do that, there is sleep,
+interrupt,
+
+00:06:02.640 --> 00:06:06.320
+wait and notify.
+
+00:06:06.320 --> 00:06:09.890
+Writing code that has multiple threads
+working together
+
+00:06:09.890 --> 00:06:14.240
+just using those APIs is actually
+very difficult.
+
+00:06:14.240 --> 00:06:17.910
+What we wanted to do was to simplify that.
+
+00:06:17.910 --> 00:06:21.050
+In JDK 5.0 we introduced
+
+00:06:21.050 --> 00:06:25.140
+the concurrency utilities (this was JSR
+166,
+
+00:06:25.140 --> 00:06:28.860
+Java specification request 166).
+
+00:06:28.860 --> 00:06:32.250
+What this provided you with was
+quite a big
+
+00:06:32.250 --> 00:06:35.580
+toolbox of new classes
+
+00:06:35.580 --> 00:06:39.069
+and API's that made this coordination
+
+00:06:39.069 --> 00:06:43.330
+of multiple threads simpler. We
+introduced
+
+00:06:43.330 --> 00:06:46.960
+the kind of concepts that people who've
+done multi-threaded programming in
+
+00:06:46.960 --> 00:06:50.470
+other languages on other platforms
+already used to.
+
+00:06:50.470 --> 00:06:54.479
+Things like a Semaphore class, things
+like new mutexes,
+
+00:06:54.479 --> 00:06:58.039
+read/write locks, atomic operations; all of
+
+00:06:58.039 --> 00:07:02.539
+those types of things that people were
+familiar with and getting used to
+
+00:07:02.539 --> 00:07:06.139
+create better code in terms of
+multi-threading.
+
+00:07:06.139 --> 00:07:09.289
+In JDK 6
+
+00:07:09.289 --> 00:07:14.150
+we had a few more advanced features
+things like Phasers which was just
+
+00:07:14.150 --> 00:07:15.289
+another way of having
+
+00:07:15.289 --> 00:07:18.580
+multiple threads all working seem simultaneously
+
+00:07:18.580 --> 00:07:22.479
+and then arriving at a particular point
+in time so they could deliver a particular set of
+
+00:07:22.479 --> 00:07:23.180
+results.
+
+00:07:23.180 --> 00:07:26.680
+In JDK 7
+
+00:07:26.680 --> 00:07:30.550
+we had another attempt at making life
+easier for writing
+
+00:07:30.550 --> 00:07:35.280
+multi-threaded code and code that ran in
+parallel. We introduced
+
+00:07:35.280 --> 00:07:38.310
+the fork-join framework. What this gives
+you
+
+00:07:38.310 --> 00:07:42.340
+is the ability to take a single task
+which can be broken down into
+
+00:07:42.340 --> 00:07:46.090
+multiple sub tasks and have that happen
+recursively
+
+00:07:46.090 --> 00:07:50.509
+until you get to a small enough task
+that could be handled by single thread.
+
+00:07:50.509 --> 00:07:55.550
+The framework takes care all creating a
+pool of threads to use,
+
+00:07:55.550 --> 00:07:59.740
+it takes care all allocating various
+tasks to
+
+00:07:59.740 --> 00:08:02.770
+the different queues associated with those
+
+00:08:02.770 --> 00:08:07.009
+threads and then it takes care of
+gathering all the results together once
+
+00:08:07.009 --> 00:08:07.569
+the
+
+00:08:07.569 --> 00:08:12.139
+queues have been processed and delivering the final
+result. So that was good,
+
+00:08:12.139 --> 00:08:15.789
+but it still had the drawback that it required
+quite a lot of
+
+00:08:15.789 --> 00:08:19.099
+boilerplate code to use that effectively.
+
+00:08:19.099 --> 00:08:22.740
+For JDK 8
+
+00:08:22.740 --> 00:08:27.940
+we sat down and thought, well we want to add
+more features, but we want to make it easier
+
+00:08:27.940 --> 00:08:28.590
+still
+
+00:08:28.590 --> 00:08:32.760
+for people to write parallel code. At
+this point we realized
+
+00:08:32.760 --> 00:08:37.860
+that we couldn't just add more APIs in
+classes to standard
+
+00:08:37.860 --> 00:08:41.550
+class libraries. In order to make life
+easier for developers,
+
+00:08:41.550 --> 00:08:45.730
+we had to make some changes to the
+language syntax that
+
+00:08:45.730 --> 00:08:49.350
+we could then use in conjunction with
+new API's
+
+00:08:49.350 --> 00:08:52.390
+to make this simpler. This is what
+
+00:08:52.390 --> 00:08:56.180
+the Lambda expression syntax and project
+Lambdas
+
+00:08:56.180 --> 00:08:59.930
+is all about. So this is why we wanted to
+add Lambdas.
+
+00:08:59.930 --> 00:09:03.890
+Primarily to make life easier for you as
+developers
+
+00:09:03.890 --> 00:09:07.019
+to write parallel code that could work
+
+00:09:07.019 --> 00:09:12.730
+in simple way.
+
+00:09:12.730 --> 00:09:16.910
+Let's have a look act a sample piece of
+code
+
+00:09:16.910 --> 00:09:20.700
+and this is the kind code we were
+writing lot
+
+00:09:20.700 --> 00:09:24.180
+in Java. What we have here is
+
+00:09:24.180 --> 00:09:28.210
+a collection of data, in this case it's a
+collection
+
+00:09:28.210 --> 00:09:31.240
+of records about students who take
+exams over
+
+00:09:31.240 --> 00:09:36.370
+various years. What we want to extract
+from this information
+
+00:09:36.370 --> 00:09:39.620
+is what was the highest score
+
+00:09:39.620 --> 00:09:42.860
+that any student got, who graduated
+
+00:09:42.860 --> 00:09:46.900
+in the year 2011. We can see here
+
+00:09:46.900 --> 00:09:50.260
+do we've got fairly simple piece of code. What
+I've done
+
+00:09:50.260 --> 00:09:53.620
+is I've got my collection of students and
+then
+
+00:09:53.620 --> 00:09:59.430
+I create a variable called highest score.
+I've assigned that an initial value of zero,
+
+00:09:59.430 --> 00:10:02.760
+so that we can update that as we find
+higher scores.
+
+00:10:02.760 --> 00:10:06.590
+Then we use the
+
+00:10:06.590 --> 00:10:11.010
+very common way we do things in Java
+which is we iterate.
+
+00:10:11.010 --> 00:10:14.030
+Java is an imperative language,
+
+00:10:14.030 --> 00:10:17.280
+that means that we have sequences of commands,
+
+00:10:17.280 --> 00:10:20.390
+which can manipulate variables
+
+00:10:20.390 --> 00:10:23.850
+to update things and process data,
+
+00:10:23.850 --> 00:10:27.310
+as we want it. In this case we want to
+iterate
+
+00:10:27.310 --> 00:10:30.870
+over the collection of students so we
+look at each student in turn
+
+00:10:30.870 --> 00:10:34.440
+looking at their graduation year and
+looking at their score.
+
+00:10:34.440 --> 00:10:39.390
+We use the more modern foreach
+syntax for this loop.
+
+00:10:39.390 --> 00:10:42.780
+This in itself hides some of the
+details
+
+00:10:42.780 --> 00:10:46.080
+because in this case what we'll actually
+have to do
+
+00:10:46.080 --> 00:10:49.620
+is to extract the iterator from the
+collection students
+
+00:10:49.620 --> 00:10:52.740
+and then we're going to have to repeatedly
+get
+
+00:10:52.740 --> 00:10:57.560
+elements from that iterator so we
+actually moved through the collection
+
+00:10:57.560 --> 00:11:00.890
+until there are no more elements left.
+
+00:11:00.890 --> 00:11:04.500
+The syntax of that for statement is actually
+a bit more complicated
+
+00:11:04.500 --> 00:11:07.730
+we just using shorthand which simplifies
+it in terms of our
+
+00:11:07.730 --> 00:11:10.019
+code.
+
+00:11:10.019 --> 00:11:13.509
+As we move through the collection of
+students we look at each record
+
+00:11:13.509 --> 00:11:16.889
+we can compare the graduation year
+
+00:11:16.889 --> 00:11:21.809
+of that student to 2011. If they graduated in
+that year, which is
+
+00:11:21.809 --> 00:11:25.419
+the year we're interested in, then we look
+at their score.
+
+00:11:25.419 --> 00:11:30.970
+We compare the score of that student
+against out current highest score.
+
+00:11:30.970 --> 00:11:33.980
+If the student has a higher score than
+
+00:11:33.980 --> 00:11:37.529
+that number, then we assign the
+
+00:11:37.529 --> 00:11:41.829
+value of our highest score, the value we're
+recording
+
+00:11:41.829 --> 00:11:44.899
+to whatever that student got in their
+exam.
+
+00:11:44.899 --> 00:11:48.410
+At the end of this, what we're going to have
+
+00:11:48.410 --> 00:11:52.879
+is the highest score any student got in
+the year 2011.
+
+00:11:52.879 --> 00:11:56.350
+We've solved the problem. There is absolutely
+nothing wrong
+
+00:11:56.350 --> 00:11:59.429
+functionally with what we doing in this
+code.
+
+00:11:59.429 --> 00:12:04.220
+The functionality works perfectly. The
+problem
+
+00:12:04.220 --> 00:12:07.769
+is in terms of how we would want to
+
+00:12:07.769 --> 00:12:11.999
+process that if we want to take
+advantage of multiple cores and multiple
+
+00:12:11.999 --> 00:12:12.989
+processors.
+
+00:12:12.989 --> 00:12:17.160
+By having our loop
+
+00:12:17.160 --> 00:12:20.539
+here what we're doing is we're
+controlling iteration.
+
+00:12:20.539 --> 00:12:23.739
+We're defining through our loop the order
+
+00:12:23.739 --> 00:12:27.649
+in which the elements of that collection
+are going to be processed.
+
+00:12:27.649 --> 00:12:31.369
+That means that we in effect have a
+contract between
+
+00:12:31.369 --> 00:12:35.869
+our code and the compiler and the runtime
+that states the order they will be
+
+00:12:35.869 --> 00:12:36.489
+processed.
+
+00:12:36.489 --> 00:12:40.970
+Although it doesn't actually matter
+in this case
+
+00:12:40.970 --> 00:12:44.619
+if we were doing other things which
+which did require
+
+00:12:44.619 --> 00:12:50.109
+that order to be maintained we couldn't
+break it up into parallel operations
+
+00:12:50.109 --> 00:12:54.619
+because breaking it up and parallel
+operations we would introduce
+
+00:12:54.619 --> 00:12:57.759
+non-deterministic behaviour because different
+threads could execute at different
+
+00:12:57.759 --> 00:13:01.819
+times, they could be looking at different
+pieces data and so we may not always get
+
+00:13:01.819 --> 00:13:02.859
+the same result.
+
+00:13:02.859 --> 00:13:07.119
+We have control over the situation
+
+00:13:07.119 --> 00:13:11.829
+which means that out code is inherently
+serial. We start at the beginning of the
+
+00:13:11.829 --> 00:13:12.480
+collection and
+
+00:13:12.480 --> 00:13:15.320
+we move to the end to the collection.
+
+00:13:15.320 --> 00:13:17.710
+The other problem we have is even if we
+were to
+
+00:13:17.710 --> 00:13:21.290
+rewrite our loop and trying to avoid
+using loop explicitly
+
+00:13:21.290 --> 00:13:24.680
+we still have a variable highestScore
+
+00:13:24.680 --> 00:13:28.250
+and this is mutable state.
+
+00:13:28.250 --> 00:13:32.470
+Having a variable that we can change and
+if we would have multiple threads
+
+00:13:32.470 --> 00:13:36.060
+we would still have problems because
+it's not thread-safe
+
+00:13:36.060 --> 00:13:39.210
+multiple threads could be updating that
+variable at the same
+
+00:13:39.210 --> 00:13:44.310
+time and overwrite the changes which
+are made by other threads.
+
+00:13:44.310 --> 00:13:48.470
+We would need to introduce locking to
+prevent multiple threads from accessing
+
+00:13:48.470 --> 00:13:48.800
+it
+
+00:13:48.800 --> 00:13:52.120
+at the same time and that would add more work to our
+
+00:13:52.120 --> 00:13:57.610
+application code. Right now we have
+good works but it's not
+
+00:13:57.610 --> 00:14:01.510
+good in terms multi-threading and
+parallel execution.
+
+00:14:01.510 --> 00:14:05.110
+Let's take the same code
+
+00:14:05.110 --> 00:14:09.240
+and rewrite its using a more functional
+approach.
+
+00:14:09.240 --> 00:14:12.490
+Now we're going to talk about functional
+programming
+
+00:14:12.490 --> 00:14:16.850
+a lot more in lesson two, at the beginning of
+that lesson, but for now you can think
+
+00:14:16.850 --> 00:14:17.290
+of
+
+00:14:17.290 --> 00:14:21.740
+a more functional approach as being
+simply the ability to chain together
+
+00:14:21.740 --> 00:14:25.020
+method calls to have things execute one after
+the other.
+
+00:14:25.020 --> 00:14:29.490
+Now what we're doing is we're taking
+a collection of students
+
+00:14:29.490 --> 00:14:34.750
+and not using an explicit loop. Now we're passing in
+the collection of students
+
+00:14:34.750 --> 00:14:39.190
+records to a filter method. The filter
+method
+
+00:14:39.190 --> 00:14:42.340
+is told how to do filtering
+
+00:14:42.340 --> 00:14:46.180
+using a Predicate interface. The Predicate interface
+
+00:14:46.180 --> 00:14:49.700
+has a single method and we use an anonymous
+inner class
+
+00:14:49.700 --> 00:14:52.700
+to define what that method is going
+to do.
+
+00:14:52.700 --> 00:14:57.070
+In this case it's a method called op, that
+takes a student as a parameter and
+
+00:14:57.070 --> 00:15:00.380
+returns boolean. We compare the graduation
+year
+
+00:15:00.380 --> 00:15:04.730
+of a student to 2011. The
+
+00:15:04.730 --> 00:15:08.530
+output of the filter method will be a
+subset of
+
+00:15:08.530 --> 00:15:12.550
+all the students that we have to start
+with, which will
+
+00:15:12.550 --> 00:15:16.710
+only be the students who graduated in
+the year 2011.
+
+00:15:16.710 --> 00:15:21.360
+We take that subset of data and we pass it to
+another method,
+
+00:15:21.360 --> 00:15:24.540
+this case called map, which uses another
+
+00:15:24.540 --> 00:15:26.060
+anonymous inner class
+
+00:15:26.060 --> 00:15:29.110
+called Mapper to determine
+
+00:15:29.110 --> 00:15:32.440
+how to actually do that mapping, and in this
+case
+
+00:15:32.440 --> 00:15:35.850
+it has a single method called extract, takes a
+student, s,
+
+00:15:35.850 --> 00:15:39.490
+as parameter and returns a double. For
+this
+
+00:15:39.490 --> 00:15:43.400
+we take the collection of students who
+graduated in 2011
+
+00:15:43.400 --> 00:15:46.870
+and we convert that into collection of records
+
+00:15:46.870 --> 00:15:50.960
+of the scores of those students. 
+At the end of the map
+
+00:15:50.960 --> 00:15:56.040
+we have all the scores of the students
+who graduated in 2011.
+
+00:15:56.040 --> 00:15:59.230
+We pass that collection of data
+
+00:15:59.230 --> 00:16:03.870
+into what is in effect a reduce
+operation, but it's a special form
+
+00:16:03.870 --> 00:16:07.200
+of reduce, which is max. It takes all these
+
+00:16:07.200 --> 00:16:10.490
+double values and looks at them and detemines
+which
+
+00:16:10.490 --> 00:16:14.200
+is the highest value and we return that
+result as
+
+00:16:14.200 --> 00:16:18.510
+our end result. This is good.
+
+00:16:18.510 --> 00:16:22.490
+This is much better in terms of 
+looking at how we can do parallel
+
+00:16:22.490 --> 00:16:23.370
+processing,
+
+00:16:23.370 --> 00:16:26.660
+how we can use those multicore, multi CPU
+machines.
+
+00:16:26.660 --> 00:16:29.960
+We don't have explicit iteration, there's no
+
+00:16:29.960 --> 00:16:33.670
+loop there, so the iteration can be
+handled
+
+00:16:33.670 --> 00:16:37.450
+internally within the filter or the map
+with max method.
+
+00:16:37.450 --> 00:16:41.820
+That means that if the library code wants to
+do that in parallel
+
+00:16:41.820 --> 00:16:46.390
+we haven't forced, by defining
+filter and map methods,
+
+00:16:46.390 --> 00:16:49.540
+we haven't forced an order of execution on that.
+
+00:16:49.540 --> 00:16:52.800
+Now we're not doing it inherently
+serially,
+
+00:16:52.800 --> 00:16:57.080
+we can do it in parallel if we want to. We can
+also
+
+00:16:57.080 --> 00:17:01.780
+apply some other optimizations so that,
+if we wanted to, we could do lazy
+
+00:17:01.780 --> 00:17:02.990
+evaluation,
+
+00:17:02.990 --> 00:17:06.600
+we could merge together the filtering and the 
+mapping,
+
+00:17:06.600 --> 00:17:10.440
+so we did them is a combined operation
+on each element as it comes through the
+
+00:17:10.440 --> 00:17:15.130
+set of method calls.
+Because we don't have
+
+00:17:15.130 --> 00:17:18.920
+a variable which we're updating
+explicitly here
+
+00:17:18.920 --> 00:17:23.810
+we're also thread safe. The client
+logic, what we're looking at here
+
+00:17:23.810 --> 00:17:28.140
+is stateless. The result is generated
+internally,
+
+00:17:28.140 --> 00:17:31.370
+so we don't have to worry about the
+state being modified
+
+00:17:31.370 --> 00:17:31.970
+in our
+
+00:17:31.970 --> 00:17:35.150
+code. That's great. What's the
+
+00:17:35.150 --> 00:17:38.220
+downside? Well, the downside is
+
+00:17:38.220 --> 00:17:41.780
+is very simple; its just plain ugly.
+
+00:17:41.780 --> 00:17:46.190
+What I've done to illustrate that is I've
+put some the code in red
+
+00:17:46.190 --> 00:17:51.480
+and most code in black. The code that's in
+red
+
+00:17:51.480 --> 00:17:56.290
+is actually what we're really interested in.
+We've got a collection of students, we're after the
+
+00:17:56.290 --> 00:17:57.179
+highest score,
+
+00:17:57.179 --> 00:18:00.980
+we want to filter, we want to test against the
+graduation year being
+
+00:18:00.980 --> 00:18:04.419
+2011. We want to map, we want to get the score,
+we want to max.
+
+00:18:04.419 --> 00:18:07.440
+All the rest of it, the fact we're using a
+predicate of
+
+00:18:07.440 --> 00:18:11.080
+type student, which has a method called op,
+
+00:18:11.080 --> 00:18:15.280
+returning a boolean, and so on, is boilerplat code.
+We just
+
+00:18:15.280 --> 00:18:19.059
+really don't want to have that. That is what
+
+00:18:19.059 --> 00:18:23.049
+Lambda expressions are all about; how we
+can simplify
+
+00:18:23.049 --> 00:18:26.549
+this kind of code in order to make it
+
+00:18:26.549 --> 00:18:31.030
+easier to understand. If we rewrite
+
+00:18:31.030 --> 00:18:34.950
+the code that we had using Lambda
+expressions
+
+00:18:34.950 --> 00:18:38.120
+we can see that, suddenly, it becomes much
+
+00:18:38.120 --> 00:18:42.640
+simpler. Now what we're 
+saying in case of the filter,
+
+00:18:42.640 --> 00:18:46.320
+we need to define this single method
+called op that
+
+00:18:46.320 --> 00:18:51.080
+we have in our Predicate. You can
+think about of a Lambda expression at this
+
+00:18:51.080 --> 00:18:52.020
+point in time
+
+00:18:52.020 --> 00:18:55.790
+as being like a method, but its is not really
+a method.
+
+00:18:55.790 --> 00:19:00.799
+I'll explain that as we go through other
+parts of the lesson. For now think of it being like
+
+00:19:00.799 --> 00:19:05.280
+a method. It's like the method we saw
+in the anonymous inner class
+
+00:19:05.280 --> 00:19:08.730
+in the previous slide. For filter we have
+
+00:19:08.730 --> 00:19:12.140
+method, who's parameter in this case student s;
+
+00:19:12.140 --> 00:19:15.940
+that's the left hand side of the arrow.
+The body of the method
+
+00:19:15.940 --> 00:19:18.410
+is to return whether the graduation year
+
+00:19:18.410 --> 00:19:22.090
+is 2011 or not. Immediately, you can
+see that
+
+00:19:22.090 --> 00:19:25.200
+this this is not like a method as we
+used to
+
+00:19:25.200 --> 00:19:29.930
+because is no explicit return statement. 
+The compiler
+
+00:19:29.930 --> 00:19:33.200
+will infer from the fact that we're
+comparing graduation year
+
+00:19:33.200 --> 00:19:38.310
+to 2011 that the result is going to be a
+boolean. Similarly,
+
+00:19:38.310 --> 00:19:42.350
+when we look at the map method we're
+passing in a Lambda expression.
+
+00:19:42.350 --> 00:19:45.740
+The left hand side of the arrow is the parameters,
+student s,
+
+00:19:45.740 --> 00:19:49.150
+the right hand side is the body, which simply
+returns
+
+00:19:49.150 --> 00:19:52.900
+the score of that student and the compiler
+will infer that's a
+
+00:19:52.900 --> 00:19:56.510
+double based on the fact that the
+signature of getScore
+
+00:19:56.510 --> 00:19:59.840
+is to return a double. max doesn't require a
+
+00:19:59.840 --> 00:20:03.400
+Lambda expression, so it just turns the
+maximum value.
+
+00:20:03.400 --> 00:20:06.540
+This gives us something that is
+
+00:20:06.540 --> 00:20:11.390
+much more readable, so it's more abstract
+in terms the approach that we take,
+
+00:20:11.390 --> 00:20:14.640
+and because it's much simpler in terms
+the the code,
+
+00:20:14.640 --> 00:20:18.720
+much less code that we have to look at,
+it's much less error-prone.
+
+00:20:18.720 --> 00:20:22.850
+We don't have to worry about do we get the
+type to the method right, do we get the
+
+00:20:22.850 --> 00:20:23.250
+type of
+
+00:20:23.250 --> 00:20:26.750
+generic parameter right. All of those
+things
+
+00:20:26.750 --> 00:20:31.080
+are done for us by the compiler, so we have a
+much simpler way of
+
+00:20:31.080 --> 00:20:37.140
+looking at the code when we want to do this
+kind of thing.
+
+00:20:37.140 --> 00:20:39.930
+To summarize section one of this lesson,
+
+00:20:39.930 --> 00:20:45.300
+we needed changes to the Java language
+not just to the API's,
+
+00:20:45.300 --> 00:20:48.480
+so that we could simplify how we could
+deal
+
+00:20:48.480 --> 00:20:52.470
+with parallel coding. What
+
+00:20:52.470 --> 00:20:55.780
+Lambda expressions really gives us is
+
+00:20:55.780 --> 00:20:59.200
+a very simple way now to be able to
+pass
+
+00:20:59.200 --> 00:21:02.740
+behaviour as a parameter to a method.
+
+00:21:02.740 --> 00:21:07.260
+We've had that in the past in terms of
+anonymous inner classes, but
+
+00:21:07.260 --> 00:21:10.560
+because of this rather verbose syntax
+
+00:21:10.560 --> 00:21:14.080
+it's always been very difficult to use
+that effectively. Now we have a
+350
+00:21:14,080 --&gt; 00:21:15,010
+simple way
+
+00:21:15.010 --> 00:21:18.950
+to past behavior as a parameter as well
+as values,
+
+00:21:18.950 --> 00:21:22.420
+because most the time we pass values as
+parameters.
+
+00:21:22.420 --> 00:21:26.940
+Now we can pass behavior as well and we
+can also sign behavior
+
+00:21:26.940 --> 00:21:31.180
+to a variable if we want to. That
+
+00:21:31.180 --> 00:21:34.300
+is the end of part 1 of this
+
+00:21:34.300 --> 00:21:34.800
+lesson.
+

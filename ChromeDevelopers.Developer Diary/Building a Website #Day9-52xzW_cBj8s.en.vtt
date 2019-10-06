@@ -1,0 +1,1040 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:01.160
+PAUL LEWIS: Hello again.
+
+00:00:01.160 --> 00:00:05.650
+So somebody on YouTube
+remarked, well, day one to sick
+
+00:00:05.650 --> 00:00:07.660
+seemed to be like messing
+around with header,
+
+00:00:07.660 --> 00:00:11.680
+and day seven it's
+like all done.
+
+00:00:11.680 --> 00:00:13.890
+Actually, you're not far wrong.
+
+00:00:13.890 --> 00:00:16.270
+And there was a lot
+of set up for it.
+
+00:00:16.270 --> 00:00:18.680
+But actually, the styles
+that got onto the page
+
+00:00:18.680 --> 00:00:21.029
+were done pretty quickly.
+
+00:00:21.029 --> 00:00:23.070
+It was just a lot of
+fluxbox and I'm not actually
+
+00:00:23.070 --> 00:00:24.500
+that interested--
+there wasn't actually
+
+00:00:24.500 --> 00:00:25.340
+a bunch of challenges in there.
+
+00:00:25.340 --> 00:00:26.798
+So it didn't really
+make much sense
+
+00:00:26.798 --> 00:00:28.630
+to record entries for that.
+
+00:00:28.630 --> 00:00:33.667
+But as you might
+recall, we've done
+
+00:00:33.667 --> 00:00:36.250
+all the accessibility stuff at
+least for the starting version,
+
+00:00:36.250 --> 00:00:38.880
+and the next step is to now go
+into progressive enhancement
+
+00:00:38.880 --> 00:00:39.550
+mode.
+
+00:00:39.550 --> 00:00:41.330
+And that's exactly
+what I've been doing
+
+00:00:41.330 --> 00:00:44.940
+and I will show you
+exactly what's what really.
+
+00:00:44.940 --> 00:00:47.172
+So if you look at
+the screen, you
+
+00:00:47.172 --> 00:00:49.130
+remember that before when
+we clicked on a link,
+
+00:00:49.130 --> 00:00:50.830
+it would take us to a new page.
+
+00:00:50.830 --> 00:00:52.070
+Well, it still does that.
+
+00:00:52.070 --> 00:00:57.210
+But now it goes and actually
+hot swaps the content for us.
+
+00:00:57.210 --> 00:01:00.840
+So it's a lot
+cleaner, if you like.
+
+00:01:00.840 --> 00:01:03.310
+It's a lot sort up here.
+
+00:01:03.310 --> 00:01:07.280
+I don't know what the--
+it's good, I think.
+
+00:01:07.280 --> 00:01:07.860
+It's nice.
+
+00:01:07.860 --> 00:01:09.720
+It's nicer than
+reloading the page
+
+00:01:09.720 --> 00:01:11.894
+and that's working out
+really well for me.
+
+00:01:11.894 --> 00:01:13.310
+Here's one other
+thing that people
+
+00:01:13.310 --> 00:01:14.476
+were saying in the comments.
+
+00:01:14.476 --> 00:01:16.840
+They were saying, why--
+without the masthead--
+
+00:01:16.840 --> 00:01:21.110
+why are you so obsessed with
+clipping it, rather than just
+
+00:01:21.110 --> 00:01:22.170
+overlaying a block?
+
+00:01:22.170 --> 00:01:22.819
+And here's why.
+
+00:01:22.819 --> 00:01:24.360
+When we go to the
+livestream section,
+
+00:01:24.360 --> 00:01:27.140
+watch what the yellow
+strip, just below location--
+
+00:01:27.140 --> 00:01:29.800
+watch what that does.
+
+00:01:29.800 --> 00:01:31.670
+See how it slides
+down and reveals
+
+00:01:31.670 --> 00:01:34.492
+that content-- the live
+now and the up next.
+
+00:01:34.492 --> 00:01:36.450
+And also when I leave
+that section-- let's say,
+
+00:01:36.450 --> 00:01:39.010
+go to the code of conduct.
+
+00:01:39.010 --> 00:01:39.990
+It slides up.
+
+00:01:39.990 --> 00:01:43.390
+And so for that to actually
+work, the photo in the masthead
+
+00:01:43.390 --> 00:01:44.190
+has to be clipped.
+
+00:01:44.190 --> 00:01:48.572
+If I don't clip it, then that
+whole effect wouldn't work.
+
+00:01:48.572 --> 00:01:50.780
+So that's why I wanted it,
+so that it could slide out
+
+00:01:50.780 --> 00:01:53.050
+the content from underneath.
+
+00:01:53.050 --> 00:01:54.670
+So that's basically it.
+
+00:01:54.670 --> 00:01:57.930
+Now, in terms of the actual
+code that underpins this,
+
+00:01:57.930 --> 00:02:01.320
+let me show you
+around a little bit.
+
+00:02:01.320 --> 00:02:04.070
+It's all in the
+CDS.js right now.
+
+00:02:04.070 --> 00:02:07.280
+And there are some
+challenges, shall
+
+00:02:07.280 --> 00:02:11.370
+we put it, with the fact that
+I'm not supporting just Chrome.
+
+00:02:11.370 --> 00:02:17.500
+So I can't use Const and Let and
+a bunch of ES 2015 type stuff.
+
+00:02:17.500 --> 00:02:19.740
+I didn't really
+want to trans-pilot.
+
+00:02:19.740 --> 00:02:22.692
+I'd rather I think just--
+because there's not
+
+00:02:22.692 --> 00:02:24.660
+that much code-- I
+think I'd rather just
+
+00:02:24.660 --> 00:02:28.270
+write the ES5 myself
+and be done with that.
+
+00:02:28.270 --> 00:02:33.110
+It's not like it's-- it's a bit
+of a shame and it does cause me
+
+00:02:33.110 --> 00:02:36.630
+a couple of challenges in a
+couple places, but oh well.
+
+00:02:36.630 --> 00:02:40.550
+So when you click on a
+link, I hijack all clicks
+
+00:02:40.550 --> 00:02:42.325
+with document.addEventListener.
+
+00:02:42.325 --> 00:02:45.290
+Now, I'm not a big fan
+of delegating all clicks
+
+00:02:45.290 --> 00:02:49.030
+to a big handler like
+this, but it's not
+
+00:02:49.030 --> 00:02:51.470
+a big site and it's
+something that we
+
+00:02:51.470 --> 00:02:53.560
+can get away with I guess.
+
+00:02:53.560 --> 00:02:58.310
+We basically call this
+on click and the target--
+
+00:02:58.310 --> 00:02:59.160
+we start there.
+
+00:02:59.160 --> 00:03:01.290
+And basically, I
+work my way back up
+
+00:03:01.290 --> 00:03:02.750
+to find the nearest anchor.
+
+00:03:02.750 --> 00:03:05.730
+There is element.closest,
+which you'll
+
+00:03:05.730 --> 00:03:07.670
+find if you Google for it.
+
+00:03:07.670 --> 00:03:10.820
+But it's not supported
+everywhere yet.
+
+00:03:10.820 --> 00:03:12.690
+I think it was Edge
+that didn't support it.
+
+00:03:12.690 --> 00:03:15.800
+So I have to basically
+write a little
+
+00:03:15.800 --> 00:03:19.070
+do while-- do while--
+it's in there.
+
+00:03:19.070 --> 00:03:21.400
+Do while's are the funniest
+because I only ever use one
+
+00:03:21.400 --> 00:03:23.930
+probably every 6 to 12
+months, but when I need it,
+
+00:03:23.930 --> 00:03:26.540
+oh, it's the best
+little construct ever.
+
+00:03:26.540 --> 00:03:27.730
+Find the nearest anchor.
+
+00:03:27.730 --> 00:03:29.495
+And then basically
+decide if it's
+
+00:03:29.495 --> 00:03:31.120
+an internal link, as
+it's got slash dev
+
+00:03:31.120 --> 00:03:32.910
+somewhere in its href.
+
+00:03:32.910 --> 00:03:33.490
+Great.
+
+00:03:33.490 --> 00:03:35.314
+I basically go to
+that, and we'll
+
+00:03:35.314 --> 00:03:36.480
+talk about that in a moment.
+
+00:03:36.480 --> 00:03:38.670
+And then if it's YouTube,
+I tell the video handler
+
+00:03:38.670 --> 00:03:39.470
+to begin playback.
+
+00:03:39.470 --> 00:03:41.580
+And I'll talk about the
+video handler probably
+
+00:03:41.580 --> 00:03:44.309
+in the next entry, because
+I'm still working on it,
+
+00:03:44.309 --> 00:03:46.600
+still refining that a little
+bit-- not quite sure where
+
+00:03:46.600 --> 00:03:48.860
+that's at in my own mind.
+
+00:03:48.860 --> 00:03:51.000
+Anyway, anything
+that's not internal
+
+00:03:51.000 --> 00:03:53.190
+will basically just do
+what it's supposed to do,
+
+00:03:53.190 --> 00:03:55.564
+just won't prevent default.
+But if it's an internal link,
+
+00:03:55.564 --> 00:03:58.330
+we prevent default and we go to
+that your URL, which basically
+
+00:03:58.330 --> 00:04:01.390
+involves pushing state on and
+then calling this unchanged.
+
+00:04:01.390 --> 00:04:03.260
+And the unchanged
+is basically going
+
+00:04:03.260 --> 00:04:05.170
+to be fired when
+we go to the URL
+
+00:04:05.170 --> 00:04:07.140
+or when the pop state happens.
+
+00:04:07.140 --> 00:04:10.300
+So all it's going
+to do is fairly--
+
+00:04:10.300 --> 00:04:13.370
+it puts this routing code
+right into the middle of it.
+
+00:04:13.370 --> 00:04:17.570
+It basically says, if I
+either actively start to go
+
+00:04:17.570 --> 00:04:19.399
+or if I passively find
+there's a pop state,
+
+00:04:19.399 --> 00:04:21.390
+as in the URL changed,
+tell me about it
+
+00:04:21.390 --> 00:04:24.210
+and this unchanged will fire
+and we'll decide what to do.
+
+00:04:24.210 --> 00:04:29.290
+And if you've come across the
+supercharged rooter episode,
+
+00:04:29.290 --> 00:04:30.740
+that's exactly
+what we did there.
+
+00:04:30.740 --> 00:04:34.430
+And that's why I'm applying
+the same concepts in production
+
+00:04:34.430 --> 00:04:38.100
+because I know that they
+will work just fine.
+
+00:04:38.100 --> 00:04:39.680
+So what does the unchange do?
+
+00:04:39.680 --> 00:04:42.320
+Well, it's actually
+all the way up here.
+
+00:04:42.320 --> 00:04:46.800
+It grabs the path, makes
+a new XHR and loads it.
+
+00:04:46.800 --> 00:04:50.210
+And some people would say,
+why are you not using Fetch?
+
+00:04:50.210 --> 00:04:53.274
+Well, Fetch won't let you set
+a response type of document.
+
+00:04:53.274 --> 00:04:54.690
+There's a good
+reason for it. it's
+
+00:04:54.690 --> 00:04:56.780
+because you can fetch
+inside a Service Worker,
+
+00:04:56.780 --> 00:04:58.780
+and Service Worker,
+like every other worker,
+
+00:04:58.780 --> 00:05:00.470
+doesn't have any
+notion of the DOM
+
+00:05:00.470 --> 00:05:04.270
+and therefore it doesn't
+support getting things back
+
+00:05:04.270 --> 00:05:05.370
+as documents.
+
+00:05:05.370 --> 00:05:08.560
+So I have to make a
+request as an XHR.
+
+00:05:08.560 --> 00:05:11.010
+I don't have a problem with
+that personally, because XHRs
+
+00:05:11.010 --> 00:05:13.160
+are still completely valid.
+
+00:05:13.160 --> 00:05:14.770
+They're not deprecated.
+
+00:05:14.770 --> 00:05:18.790
+OK, they don't return a
+promise but that's OK.
+
+00:05:18.790 --> 00:05:19.940
+I can live with that.
+
+00:05:19.940 --> 00:05:23.620
+And so we basically
+load whatever
+
+00:05:23.620 --> 00:05:26.380
+it was that you were-- whichever
+page you were going to.
+
+00:05:26.380 --> 00:05:29.880
+We update the nav and then
+I'll show you the small player.
+
+00:05:29.880 --> 00:05:33.260
+Oh, there's a fun thing--
+maybe leave you a little hint
+
+00:05:33.260 --> 00:05:34.720
+of that at the end of this.
+
+00:05:34.720 --> 00:05:35.220
+Right.
+
+00:05:35.220 --> 00:05:39.270
+The onload-- what we do is we
+hide and swap Area Contents.
+
+00:05:39.270 --> 00:05:43.380
+So that's the bit where
+everything kind of fades out.
+
+00:05:43.380 --> 00:05:44.401
+Let's head down there.
+
+00:05:46.910 --> 00:05:47.410
+Yeah.
+
+00:05:47.410 --> 00:05:50.090
+I'm basically going to watch
+the masthead graphic transition
+
+00:05:50.090 --> 00:05:50.590
+out.
+
+00:05:50.590 --> 00:05:53.760
+So the masthead graphic
+is the longest running
+
+00:05:53.760 --> 00:05:54.820
+of the fade out.
+
+00:05:54.820 --> 00:06:00.230
+So I basically apply this
+hide areas class to the body
+
+00:06:00.230 --> 00:06:02.650
+and underneath in
+the styles-- let
+
+00:06:02.650 --> 00:06:04.940
+me show you the masthead
+styles since we're here.
+
+00:06:07.690 --> 00:06:12.510
+Masthead inline-- there we are.
+
+00:06:12.510 --> 00:06:15.100
+If the page is animatable
+and I have a separate class
+
+00:06:15.100 --> 00:06:16.970
+for switching on
+and off animations--
+
+00:06:16.970 --> 00:06:18.620
+and I've told you
+to hide errors,
+
+00:06:18.620 --> 00:06:21.230
+then the masthead graphic
+should turn to opacity 0
+
+00:06:21.230 --> 00:06:23.930
+and it should take
+half a second to do so.
+
+00:06:23.930 --> 00:06:26.220
+At the end of that, the
+transition end will fire
+
+00:06:26.220 --> 00:06:28.720
+and that's where
+everything kicks off.
+
+00:06:28.720 --> 00:06:32.110
+Because at this point,
+we've got the new contents.
+
+00:06:32.110 --> 00:06:40.670
+We've loaded in hopefully all
+the content from the new page.
+
+00:06:40.670 --> 00:06:42.690
+And we get the title
+on the new graphic
+
+00:06:42.690 --> 00:06:45.940
+and the new-- everything
+about the new page.
+
+00:06:45.940 --> 00:06:49.399
+And we swap it in
+for the existing one.
+
+00:06:49.399 --> 00:06:51.190
+So everything that we
+are going to swap out
+
+00:06:51.190 --> 00:06:53.690
+has been faded down.
+
+00:06:53.690 --> 00:06:57.490
+We swap everything out
+and then we basically
+
+00:06:57.490 --> 00:06:58.510
+wait a couple of frames.
+
+00:06:58.510 --> 00:07:02.030
+And it's a slightly bizarre
+technique, this one.
+
+00:07:02.030 --> 00:07:04.330
+Because the event
+could fire somewhere
+
+00:07:04.330 --> 00:07:06.320
+in the middle of the
+frame, you actually
+
+00:07:06.320 --> 00:07:08.370
+want to typically
+wait two frames.
+
+00:07:08.370 --> 00:07:11.170
+So you wait for the
+start of the next frame,
+
+00:07:11.170 --> 00:07:13.460
+so that anything that
+was pending happens.
+
+00:07:13.460 --> 00:07:16.340
+And then you wait another
+frame, and then you actually
+
+00:07:16.340 --> 00:07:19.030
+do your actual animation.
+
+00:07:19.030 --> 00:07:21.470
+I would prefer it if
+we had some mechanism
+
+00:07:21.470 --> 00:07:25.120
+to say, let me know when
+this work is done-- whatever
+
+00:07:25.120 --> 00:07:27.730
+the work is, when it's
+been applied and rasterized
+
+00:07:27.730 --> 00:07:31.450
+and put to screen, and
+then do my next step.
+
+00:07:31.450 --> 00:07:34.340
+But at the moment, the double
+ref is what I'm having to do.
+
+00:07:34.340 --> 00:07:36.737
+And it's a bit-- because
+I'm to bind it because I
+
+00:07:36.737 --> 00:07:37.820
+can't use arrow functions.
+
+00:07:40.776 --> 00:07:41.900
+I would like it if I could.
+
+00:07:41.900 --> 00:07:45.980
+Anyway, so at the end of that,
+so we basically fade out, swap
+
+00:07:45.980 --> 00:07:48.330
+the content, fade back in.
+
+00:07:48.330 --> 00:07:50.130
+And then there's
+just a bit of tidy up
+
+00:07:50.130 --> 00:07:53.231
+about toggling a couple
+bits of area hidden.
+
+00:07:53.231 --> 00:07:54.730
+When this is done,
+I'm going to have
+
+00:07:54.730 --> 00:07:58.230
+to go back and do some of
+the accessibility checking
+
+00:07:58.230 --> 00:08:01.850
+again, because I want to make
+sure that we don't completely
+
+00:08:01.850 --> 00:08:03.650
+lose focus on the page.
+
+00:08:03.650 --> 00:08:06.820
+Because I have a feeling that in
+some context, we actually will.
+
+00:08:06.820 --> 00:08:10.880
+And I probably want to take you
+to the header of the new page.
+
+00:08:10.880 --> 00:08:13.310
+That's, what I
+understand, is normal.
+
+00:08:13.310 --> 00:08:16.940
+Talking accessibility-- a
+bit of an update for you--
+
+00:08:16.940 --> 00:08:20.104
+I showed Rob Dodson the
+accessibility work that I did.
+
+00:08:20.104 --> 00:08:22.020
+And he was like, yeah,
+that's all really good.
+
+00:08:22.020 --> 00:08:23.645
+The only thing you
+probably wouldn't do
+
+00:08:23.645 --> 00:08:26.080
+is that thing that you
+were really proud of, Paul,
+
+00:08:26.080 --> 00:08:30.210
+with the SFJAZZ thing,
+where it said SFJAZZ.
+
+00:08:30.210 --> 00:08:33.851
+You don't really need to
+adjust what the screen
+
+00:08:33.851 --> 00:08:34.809
+reader is going to say.
+
+00:08:34.809 --> 00:08:36.480
+People who use screen
+readers apparently
+
+00:08:36.480 --> 00:08:39.220
+are fairly comfortable
+with the fact
+
+00:08:39.220 --> 00:08:43.010
+that content won't necessarily
+be announced correctly
+
+00:08:43.010 --> 00:08:44.800
+in all cases, but
+it's good enough
+
+00:08:44.800 --> 00:08:47.690
+and they're used to enough that
+it's not really a big deal.
+
+00:08:47.690 --> 00:08:49.410
+So he just was saying,
+you don't really
+
+00:08:49.410 --> 00:08:51.700
+need to go out of your
+way to correct that stuff.
+
+00:08:51.700 --> 00:08:54.070
+On the other side of
+it, I was like, well,
+
+00:08:54.070 --> 00:08:58.380
+I would rather it said SFJAZZ
+because that's what it is.
+
+00:08:58.380 --> 00:09:00.340
+But I kind of
+understand his point,
+
+00:09:00.340 --> 00:09:05.370
+that you don't need to go
+all the way to 10 out of 10
+
+00:09:05.370 --> 00:09:09.150
+on making sure that everything
+sounds absolutely perfect.
+
+00:09:09.150 --> 00:09:14.062
+That's not necessarily the
+ideal or practical approach.
+
+00:09:14.062 --> 00:09:14.770
+But there you go.
+
+00:09:14.770 --> 00:09:19.440
+I said it was a journey, like
+all of this stuff I'm going on.
+
+00:09:19.440 --> 00:09:21.690
+So that's essentially
+what we're doing right now
+
+00:09:21.690 --> 00:09:24.720
+for the hot swapping
+of sections.
+
+00:09:24.720 --> 00:09:27.270
+At least on desktop,
+it's nice and fast.
+
+00:09:27.270 --> 00:09:32.750
+Let me show you a
+timeline profile.
+
+00:09:32.750 --> 00:09:40.160
+Schedule-- and so you've
+got this animation out here.
+
+00:09:40.160 --> 00:09:43.196
+So you-- basically, this
+is the click handler here.
+
+00:09:43.196 --> 00:09:44.570
+And then we have
+an animation now
+
+00:09:44.570 --> 00:09:47.770
+with admittedly one
+long frame in there.
+
+00:09:47.770 --> 00:09:50.080
+Then this is the swap
+over section here.
+
+00:09:50.080 --> 00:09:53.800
+And psychologically,
+there's a break for people
+
+00:09:53.800 --> 00:09:55.550
+because you've faded
+out the content
+
+00:09:55.550 --> 00:10:01.700
+and there's a break, where by
+doing the initial animation,
+
+00:10:01.700 --> 00:10:03.810
+you've acknowledged
+their action.
+
+00:10:03.810 --> 00:10:05.170
+So that's fine.
+
+00:10:05.170 --> 00:10:06.750
+So you're like, OK.
+
+00:10:06.750 --> 00:10:10.200
+You've responded
+instantly to my click.
+
+00:10:10.200 --> 00:10:12.467
+And then there's
+this swap over moment
+
+00:10:12.467 --> 00:10:14.300
+where we buy ourselves
+a little bit of time.
+
+00:10:14.300 --> 00:10:15.550
+So we can afford this
+gap in the middle,
+
+00:10:15.550 --> 00:10:18.133
+is what I'm saying, because it's
+not one continuous animation.
+
+00:10:18.133 --> 00:10:19.760
+And then the
+secondary animation,
+
+00:10:19.760 --> 00:10:22.990
+where it's coming back in,
+again, very similar-- a couple
+
+00:10:22.990 --> 00:10:23.910
+of long frames.
+
+00:10:23.910 --> 00:10:31.170
+Not disastrous but
+broadly very convenient--
+
+00:10:31.170 --> 00:10:33.170
+I say convenient--
+broadly very performant.
+
+00:10:33.170 --> 00:10:35.420
+And the reason
+it's performant is
+
+00:10:35.420 --> 00:10:37.640
+because I'm sticking to
+opacity and transform,
+
+00:10:37.640 --> 00:10:41.650
+which, if you've followed any
+of the supercharged videos,
+
+00:10:41.650 --> 00:10:44.560
+it's something that [INAUDIBLE]
+and I talk about very often.
+
+00:10:44.560 --> 00:10:45.310
+So there you go.
+
+00:10:45.310 --> 00:10:47.840
+That's essentially
+what I've got for now.
+
+00:10:47.840 --> 00:10:49.480
+From going page to
+page to page, we've
+
+00:10:49.480 --> 00:10:51.690
+enhanced-- if the JavaScript
+fails or isn't running,
+
+00:10:51.690 --> 00:10:53.140
+we know that we'll
+be falling back
+
+00:10:53.140 --> 00:10:55.170
+to link to link to link to link.
+
+00:10:55.170 --> 00:10:56.250
+So that's not a big deal.
+
+00:10:56.250 --> 00:10:58.600
+So we've progressively
+enhanced into something
+
+00:10:58.600 --> 00:11:01.060
+that hopefully should work.
+
+00:11:01.060 --> 00:11:01.940
+That's it for now.
+
+00:11:01.940 --> 00:11:05.010
+I will quickly show
+you the video stuff.
+
+00:11:05.010 --> 00:11:08.820
+Let me mute my screen there.
+
+00:11:08.820 --> 00:11:09.871
+So this is what we got.
+
+00:11:09.871 --> 00:11:12.370
+And if we-- at the moment-- if
+we go to a different section,
+
+00:11:12.370 --> 00:11:14.320
+it goes down to a small
+video in the corner
+
+00:11:14.320 --> 00:11:16.140
+so you can continue watching.
+
+00:11:16.140 --> 00:11:20.030
+And if you going into another
+thing with another video,
+
+00:11:20.030 --> 00:11:22.010
+and you click on that,
+then it replaces it.
+
+00:11:22.010 --> 00:11:25.660
+And then bla, bla bla-- and if
+you go back into-- let's see,
+
+00:11:25.660 --> 00:11:27.410
+go back.
+
+00:11:27.410 --> 00:11:29.229
+It brings the video
+back up to full screen
+
+00:11:29.229 --> 00:11:31.520
+if you go back to the place
+where the video originated.
+
+00:11:31.520 --> 00:11:35.515
+More of that in the next
+video about the videos.
+
+00:11:38.700 --> 00:11:39.910
+Check out the code.
+
+00:11:39.910 --> 00:11:41.730
+Subscribe if you
+haven't already.
+
+00:11:41.730 --> 00:11:42.990
+Keep on commenting.
+
+00:11:42.990 --> 00:11:43.982
+Keep on saying hello.
+
+00:11:43.982 --> 00:11:45.940
+Keep on throwing in your
+ideas and suggestions.
+
+00:11:45.940 --> 00:11:47.106
+I do really appreciate them.
+
+00:11:47.106 --> 00:11:48.630
+They're often very good.
+
+00:11:48.630 --> 00:11:50.570
+And it's lovely
+to read them all.
+
+00:11:50.570 --> 00:11:51.550
+So thank you for that.
+
+00:11:51.550 --> 00:11:54.490
+And I will catch you
+in the next entry.
+
+00:11:54.490 --> 00:11:55.240
+Toodleloo.
+
+00:11:55.240 --> 00:12:03.390
+[MUSIC PLAYING]
+

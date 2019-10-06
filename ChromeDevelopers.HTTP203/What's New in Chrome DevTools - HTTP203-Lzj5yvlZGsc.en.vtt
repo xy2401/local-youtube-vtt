@@ -1,0 +1,1507 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.900
+[CLICK]
+
+00:00:03.900 --> 00:00:05.850
+SURMA: Just so we
+have that on camera,
+
+00:00:05.850 --> 00:00:07.680
+there's no product placement.
+
+00:00:10.295 --> 00:00:12.870
+JAKE: Before I film, I always
+take a refreshing drink
+
+00:00:12.870 --> 00:00:14.355
+of [BLEEP] [BLEEP].
+
+00:00:15.840 --> 00:00:19.305
+[MUSIC PLAYING]
+
+00:00:22.770 --> 00:00:24.810
+Who are you and why?
+
+00:00:24.810 --> 00:00:27.285
+Starting with [? five ?] review.
+
+00:00:27.285 --> 00:00:28.340
+SURMA: You're pick.
+
+00:00:28.340 --> 00:00:29.562
+PAUL IRISH: OK.
+
+00:00:29.562 --> 00:00:30.645
+JASON MILLER: Who is Paul?
+
+00:00:30.645 --> 00:00:34.890
+PAUL IRISH: I'm Paul Irish.
+
+00:00:34.890 --> 00:00:38.030
+I work on performance
+stuff DevTools Lighthouse.
+
+00:00:38.030 --> 00:00:42.420
+And I do it because
+I love the web.
+
+00:00:42.420 --> 00:00:44.656
+I like it to be fast.
+
+00:00:44.656 --> 00:00:46.730
+JAKE: And now you.
+
+00:00:46.730 --> 00:00:51.390
+JASON MILLER: I'm Jason Miller,
+and I work on speed and loading
+
+00:00:51.390 --> 00:00:52.820
+stuff.
+
+00:00:52.820 --> 00:00:55.230
+And I do it because I
+had a slow phone once
+
+00:00:55.230 --> 00:00:57.341
+and it was a pretty
+poor experience.
+
+00:00:57.341 --> 00:00:58.590
+SURMA: Ah, hashtag #relatable.
+
+00:00:58.590 --> 00:01:00.490
+JASON MILLER: Yeah,
+very relatable.
+
+00:01:00.490 --> 00:01:03.750
+I still live in North America,
+so I have it pretty good.
+
+00:01:03.750 --> 00:01:07.566
+But a slow phone will let
+you know what's going on.
+
+00:01:07.566 --> 00:01:09.240
+JAKE: So you did
+your talk today.
+
+00:01:09.240 --> 00:01:12.087
+SURMA: You had the glorious
+8:30 spot in the morning.
+
+00:01:12.087 --> 00:01:13.170
+JAKE: 8:30 in the morning.
+
+00:01:13.170 --> 00:01:16.140
+You were speaking to an
+audience of about one or two?
+
+00:01:16.140 --> 00:01:16.807
+PAUL IRISH: Yes.
+
+00:01:16.807 --> 00:01:18.098
+JASON MILLER: Captive audience.
+
+00:01:18.098 --> 00:01:18.810
+JAKE: Excellent.
+
+00:01:18.810 --> 00:01:19.810
+That was the two of you?
+
+00:01:19.810 --> 00:01:21.530
+SURMA: But those
+people really cared.
+
+00:01:21.530 --> 00:01:22.540
+That's the upside.
+
+00:01:22.540 --> 00:01:25.040
+JASON MILLER: That's why they
+put the mirror up at the back.
+
+00:01:25.040 --> 00:01:27.124
+JAKE: We missed your talk
+because we were filming.
+
+00:01:27.124 --> 00:01:27.915
+We weren't filming.
+
+00:01:27.915 --> 00:01:29.100
+SURMA: No, we were sleeping.
+
+00:01:29.100 --> 00:01:30.720
+[INTERPOSING VOICES]
+
+00:01:30.720 --> 00:01:33.680
+JASON MILLER: You were
+doing film while you slept.
+
+00:01:33.680 --> 00:01:35.430
+JAKE: So we don't have
+to watch the video,
+
+00:01:35.430 --> 00:01:38.540
+can you just give us the
+30 second version of it?
+
+00:01:38.540 --> 00:01:42.150
+PAUL IRISH: You can change any
+website you want with DevTools
+
+00:01:42.150 --> 00:01:44.410
+and then reload, and those
+changes are still there.
+
+00:01:44.410 --> 00:01:46.530
+SURMA: I love that feature.
+
+00:01:46.530 --> 00:01:48.825
+I used it this morning.
+
+00:01:48.825 --> 00:01:52.203
+JAKE: So what could I change?
+
+00:01:52.203 --> 00:01:54.036
+PAUL IRISH: Change the
+CSS, change the HTML,
+
+00:01:54.036 --> 00:01:54.720
+change the JavaScript.
+
+00:01:54.720 --> 00:01:56.440
+JASON MILLER: Anything that
+comes down over the network.
+
+00:01:56.440 --> 00:01:56.895
+PAUL IRISH: Yeah.
+
+00:01:56.895 --> 00:01:58.560
+JAKE: Anything that
+comes down over the work?
+
+00:01:58.560 --> 00:01:59.520
+JASON MILLER: Yeah,
+literally anything.
+
+00:01:59.520 --> 00:01:59.940
+PAUL IRISH: Anything
+that you usually
+
+00:01:59.940 --> 00:02:01.380
+change in DevTools plus more.
+
+00:02:01.380 --> 00:02:04.747
+JAKE: What if it's
+changed on disk as well?
+
+00:02:04.747 --> 00:02:07.080
+What if the thing that served
+on the network has changed
+
+00:02:07.080 --> 00:02:08.079
+and you've made changes?
+
+00:02:08.079 --> 00:02:09.539
+How does that figure that out?
+
+00:02:09.539 --> 00:02:10.560
+[INTERPOSING VOICES]
+
+00:02:10.560 --> 00:02:11.060
+Oh!
+
+00:02:11.060 --> 00:02:11.790
+It takes yours.
+
+00:02:11.790 --> 00:02:12.650
+PAUL IRISH: Even
+if service work is
+
+00:02:12.650 --> 00:02:13.740
+involved or anything like that.
+
+00:02:13.740 --> 00:02:14.980
+JAKE: So you break it you pay?
+
+00:02:14.980 --> 00:02:15.605
+It's yours now?
+
+00:02:15.605 --> 00:02:16.490
+PAUL IRISH: Yeah.
+
+00:02:16.490 --> 00:02:18.067
+SURMA: It's a DevTools feature.
+
+00:02:18.067 --> 00:02:19.650
+You know what you're
+doing supposedly.
+
+00:02:19.650 --> 00:02:20.691
+JAKE: Well, I don't know.
+
+00:02:20.691 --> 00:02:23.250
+It could have done some
+clever diffing and then
+
+00:02:23.250 --> 00:02:24.405
+conflict resolve.
+
+00:02:24.405 --> 00:02:26.800
+PAUL IRISH: No, you
+own the entire file.
+
+00:02:26.800 --> 00:02:28.220
+JAKE: And then you can unown it?
+
+00:02:28.220 --> 00:02:31.590
+PAUL IRISH: Yeah, you just
+delete that overwriting file.
+
+00:02:31.590 --> 00:02:34.460
+It's actually a file on
+disk, which is also cool--
+
+00:02:34.460 --> 00:02:35.370
+SURMA: So the changes you
+made, you can actually--
+
+00:02:35.370 --> 00:02:35.730
+[INTERPOSING VOICES]
+
+00:02:35.730 --> 00:02:37.620
+PAUL IRISH: In disk,
+you can open an editor
+
+00:02:37.620 --> 00:02:38.640
+and then just play around there.
+
+00:02:38.640 --> 00:02:39.270
+And then just refresh.
+
+00:02:39.270 --> 00:02:39.900
+And now--
+
+00:02:39.900 --> 00:02:41.040
+SURMA: So I don't have
+to edit in DevTools.
+
+00:02:41.040 --> 00:02:41.480
+[INTERPOSING VOICES]
+
+00:02:41.480 --> 00:02:42.650
+SURMA: --into my actual--
+
+00:02:42.650 --> 00:02:42.940
+That's nice.
+
+00:02:42.940 --> 00:02:43.740
+JASON MILLER: A cool
+feature we didn't
+
+00:02:43.740 --> 00:02:46.290
+show-- if you have an image,
+you can drag an image on top
+
+00:02:46.290 --> 00:02:48.030
+of the image in the Network
+tab, and it will overwrite it
+
+00:02:48.030 --> 00:02:48.285
+locally.
+
+00:02:48.285 --> 00:02:49.576
+JAKE: What does this look like?
+
+00:02:49.576 --> 00:02:52.380
+How does this act if my
+banner image is going to fail
+
+00:02:52.380 --> 00:02:53.110
+or something?
+
+00:02:53.110 --> 00:02:54.140
+Do you just drag
+this empty image?
+
+00:02:54.140 --> 00:02:55.181
+PAUL IRISH: That's a lot.
+
+00:02:55.181 --> 00:02:57.990
+It's nice, because
+a lot of things
+
+00:02:57.990 --> 00:03:01.110
+doing the actual change
+on the back end for real
+
+00:03:01.110 --> 00:03:02.760
+takes a bit of work.
+
+00:03:02.760 --> 00:03:04.550
+Yeah, you can mock out an air--
+
+00:03:04.550 --> 00:03:06.720
+mock out anything,
+any potential case.
+
+00:03:06.720 --> 00:03:10.530
+And the other nice thing is
+we also showed in performance
+
+00:03:10.530 --> 00:03:13.350
+scenarios, say, for instance you
+wanted to see what would happen
+
+00:03:13.350 --> 00:03:16.380
+if I add link rel pre-load
+for whatever assets,
+
+00:03:16.380 --> 00:03:18.962
+you can just try that
+out just in the HTML,
+
+00:03:18.962 --> 00:03:20.670
+and not change all
+the things that need--
+
+00:03:20.670 --> 00:03:22.080
+SURMA: That's
+something that I have
+
+00:03:22.080 --> 00:03:23.430
+waited for a long time
+in a way, because we
+
+00:03:23.430 --> 00:03:25.400
+had a similar feature
+that covers [INAUDIBLE]
+
+00:03:25.400 --> 00:03:28.060
+[? work spaces. ?] And it
+was a lot more complicated.
+
+00:03:28.060 --> 00:03:30.420
+But it's so useful, especially
+here, when people walk up
+
+00:03:30.420 --> 00:03:32.020
+and they're can you help
+me with this problem?
+
+00:03:32.020 --> 00:03:34.470
+You don't want to fiddle
+around with their dev server
+
+00:03:34.470 --> 00:03:35.280
+or whatever.
+
+00:03:35.280 --> 00:03:36.150
+You just go [POP].
+
+00:03:36.150 --> 00:03:37.410
+JASON MILLER: Cool
+little thing too, there's
+
+00:03:37.410 --> 00:03:39.300
+now a changes drawer
+you can pull up.
+
+00:03:39.300 --> 00:03:41.190
+Changes drawer shows
+you a diff of everything
+
+00:03:41.190 --> 00:03:43.370
+you've done locally,
+compared to the server copy.
+
+00:03:43.370 --> 00:03:44.203
+[INTERPOSING VOICES]
+
+00:03:44.203 --> 00:03:46.650
+PAUL IRISH: We get a
+unified diff of every change
+
+00:03:46.650 --> 00:03:48.240
+to every file that you made.
+
+00:03:48.240 --> 00:03:50.772
+JASON MILLER: The only
+thing it doesn't have is ML.
+
+00:03:50.772 --> 00:03:51.730
+JAKE: Machine learning.
+
+00:03:51.730 --> 00:03:51.890
+JASON MILLER: Yes.
+
+00:03:51.890 --> 00:03:52.919
+SURMA: Not yet.
+
+00:03:52.919 --> 00:03:54.210
+Probably will be at some point.
+
+00:03:54.210 --> 00:03:55.925
+It just writes the page for you.
+
+00:03:55.925 --> 00:03:57.240
+JAKE: So is that it?
+
+00:03:57.240 --> 00:03:58.362
+Is that DevTools now?
+
+00:03:58.362 --> 00:03:59.445
+It's that one new feature.
+
+00:03:59.445 --> 00:04:01.278
+And you're just calling
+in for another year?
+
+00:04:01.278 --> 00:04:03.212
+[INTERPOSING VOICES]
+
+00:04:03.212 --> 00:04:04.920
+JASON MILLER: Paul
+goes into hibernation.
+
+00:04:04.920 --> 00:04:06.570
+I go out and [INAUDIBLE].
+
+00:04:06.570 --> 00:04:08.487
+JAKE: Jason showed some
+async debugging stuff?
+
+00:04:08.487 --> 00:04:09.278
+JASON MILLER: Yeah.
+
+00:04:09.278 --> 00:04:11.100
+You can now step
+into async functions.
+
+00:04:11.100 --> 00:04:12.580
+So you step into a set time out.
+
+00:04:12.580 --> 00:04:14.621
+And you'll get dropped
+off inside of the callback
+
+00:04:14.621 --> 00:04:16.500
+you pass to the set time out.
+
+00:04:16.500 --> 00:04:19.110
+SURMA: I tested it in Canary
+and it works with Pulse Message.
+
+00:04:19.110 --> 00:04:20.190
+And it makes me so happy.
+
+00:04:20.190 --> 00:04:20.790
+JASON MILLER: Yes.
+
+00:04:20.790 --> 00:04:22.770
+Step across thread
+boundaries in Pulse Message.
+
+00:04:22.770 --> 00:04:24.550
+You can step into the
+Worker Constructor.
+
+00:04:24.550 --> 00:04:25.860
+It will drop you off in
+the first line of Worker.
+
+00:04:25.860 --> 00:04:27.530
+SURMA: What is a
+Worker Constructor?
+
+00:04:27.530 --> 00:04:28.910
+JAKE: New worker.
+
+00:04:28.910 --> 00:04:29.530
+SURMA: Sorry.
+
+00:04:29.530 --> 00:04:30.740
+JASON MILLER: Where you from?
+
+00:04:30.740 --> 00:04:31.656
+SURMA: Where you from?
+
+00:04:31.656 --> 00:04:33.150
+JAKE: Surma's getting tired.
+
+00:04:33.150 --> 00:04:34.219
+Can we have a nap?
+
+00:04:34.219 --> 00:04:35.510
+We'll continue this in an hour.
+
+00:04:35.510 --> 00:04:36.760
+JASON MILLER: It's sun stroke.
+
+00:04:36.760 --> 00:04:38.895
+SURMA: Expecting a
+class, but it's not.
+
+00:04:38.895 --> 00:04:41.700
+PAUL IRISH: Anything that's
+thenable, just step into that.
+
+00:04:41.700 --> 00:04:43.830
+It'll step into the then.
+
+00:04:43.830 --> 00:04:46.130
+JAKE: Even if it's not
+an official V8 promise,
+
+00:04:46.130 --> 00:04:47.946
+if it's thenable, we can--
+
+00:04:47.946 --> 00:04:49.320
+SURMA: Something
+I haven't tried,
+
+00:04:49.320 --> 00:04:54.660
+but I was meaning to ask, I can
+have multiple message listeners
+
+00:04:54.660 --> 00:04:55.710
+on the worker side?
+
+00:04:55.710 --> 00:04:56.370
+PAUL IRISH: Yes, but untested.
+
+00:04:56.370 --> 00:04:57.360
+JASON MILLER: There's
+too much stepping
+
+00:04:57.360 --> 00:04:58.500
+through all the listeners.
+
+00:04:58.500 --> 00:05:00.660
+SURMA: People that do that just
+don't deserve a good debugging
+
+00:05:00.660 --> 00:05:01.260
+experience.
+
+00:05:01.260 --> 00:05:02.310
+JAKE: What?
+
+00:05:02.310 --> 00:05:04.160
+Adding multiple listeners?
+
+00:05:04.160 --> 00:05:06.539
+SURMA: Multiple message
+listeners in a worker.
+
+00:05:06.539 --> 00:05:07.080
+That's just--
+
+00:05:07.080 --> 00:05:08.290
+JAKE: It's a legitimate thing.
+
+00:05:08.290 --> 00:05:08.825
+SURMA: Why?
+
+00:05:08.825 --> 00:05:10.260
+JAKE: OK.
+
+00:05:10.260 --> 00:05:13.660
+You've written a library that
+does message handling stuff.
+
+00:05:13.660 --> 00:05:15.540
+You've been adding
+your listeners.
+
+00:05:15.540 --> 00:05:18.200
+But then I might have my own
+stuff I want to listen to.
+
+00:05:18.200 --> 00:05:19.070
+And a lower thing.
+
+00:05:19.070 --> 00:05:20.695
+SURMA: And then you
+have two listeners.
+
+00:05:20.695 --> 00:05:23.100
+You have to distinguish if
+this message-- nah, nah.
+
+00:05:23.100 --> 00:05:25.792
+JAKE: Is your library
+not support that?
+
+00:05:25.792 --> 00:05:27.000
+Just talk amongst yourselves.
+
+00:05:27.000 --> 00:05:29.712
+I'm just going to be filing
+an issue on Com Link.
+
+00:05:33.060 --> 00:05:34.240
+So what's next with it?
+
+00:05:34.240 --> 00:05:37.410
+Is there anything else before
+I start asking what's next?
+
+00:05:37.410 --> 00:05:38.730
+JASON MILLER: We can go deeper.
+
+00:05:38.730 --> 00:05:39.880
+PAUL IRISH: Yeah.
+
+00:05:39.880 --> 00:05:43.960
+We showed a new feature
+called Eager Evaluation.
+
+00:05:43.960 --> 00:05:45.260
+SURMA: Oh, I've seen this.
+
+00:05:45.260 --> 00:05:46.510
+I was wondering what it means.
+
+00:05:46.510 --> 00:05:47.218
+PAUL IRISH: Yeah.
+
+00:05:47.218 --> 00:05:48.270
+So you're in the console.
+
+00:05:48.270 --> 00:05:50.020
+And you type out
+something in the console.
+
+00:05:50.020 --> 00:05:53.625
+But before you hit Enter,
+you get the result.
+
+00:05:53.625 --> 00:05:56.050
+JAKE: That sounds obnoxious.
+
+00:05:56.050 --> 00:05:58.500
+JASON MILLER: I call
+it belligerent console.
+
+00:05:58.500 --> 00:06:00.360
+SURMA: That's like
+prefetching in Chrome.
+
+00:06:00.360 --> 00:06:00.920
+You just type [INAUDIBLE].
+
+00:06:00.920 --> 00:06:01.836
+It's already fetching.
+
+00:06:01.836 --> 00:06:02.878
+And you're like, stop it!
+
+00:06:02.878 --> 00:06:04.544
+PAUL IRISH: So it's
+a bit like proactive
+
+00:06:04.544 --> 00:06:06.950
+of the console where you're
+like, I know you're not done,
+
+00:06:06.950 --> 00:06:07.960
+but here you go.
+
+00:06:07.960 --> 00:06:11.896
+SURMA: Doesn't it do it with
+functions or mostly properties?
+
+00:06:11.896 --> 00:06:13.630
+PAUL IRISH: Great question.
+
+00:06:13.630 --> 00:06:14.709
+Everything that it can.
+
+00:06:14.709 --> 00:06:16.125
+So definitely
+including functions.
+
+00:06:16.125 --> 00:06:17.230
+SURMA: What about side effects?
+
+00:06:17.230 --> 00:06:18.063
+PAUL IRISH: Exactly.
+
+00:06:20.680 --> 00:06:23.530
+The V8 has worked to
+introduce a new mode where
+
+00:06:23.530 --> 00:06:26.410
+we can guarantee there are no
+side effects for whatever this
+
+00:06:26.410 --> 00:06:26.910
+is.
+
+00:06:26.910 --> 00:06:29.740
+So if we see that a side
+effect is about to be caused,
+
+00:06:29.740 --> 00:06:31.390
+we just bail
+evaluation [INAUDIBLE]..
+
+00:06:31.390 --> 00:06:33.186
+SURMA: Isn't that
+Meltdown and Spectre?
+
+00:06:33.186 --> 00:06:34.655
+JAKE: What?
+
+00:06:34.655 --> 00:06:36.625
+SURMA: They assume
+they're going down a path,
+
+00:06:36.625 --> 00:06:37.750
+and they have to roll back.
+
+00:06:37.750 --> 00:06:39.400
+JAKE: Oh, Meltdown and Spectre.
+
+00:06:39.400 --> 00:06:42.460
+I thought you said that
+melts the inspector.
+
+00:06:42.460 --> 00:06:46.078
+I was just imagining all the
+pixels going down the screen.
+
+00:06:46.078 --> 00:06:48.454
+SURMA: And now we're back
+to our surreal approach
+
+00:06:48.454 --> 00:06:49.120
+to this episode.
+
+00:06:49.120 --> 00:06:50.500
+JAKE: We've got this bug again.
+
+00:06:53.860 --> 00:06:56.720
+Salvador Dali mode.
+
+00:06:56.720 --> 00:06:58.050
+The clock's melting again.
+
+00:06:58.050 --> 00:07:00.364
+We shouldn't have had
+Eager Evaluation there.
+
+00:07:00.364 --> 00:07:01.921
+Shipped it too early.
+
+00:07:01.921 --> 00:07:02.920
+SURMA: That sounds good.
+
+00:07:02.920 --> 00:07:05.380
+I'm guessing it
+[INAUDIBLE] if you
+
+00:07:05.380 --> 00:07:07.011
+like Eager Evaluate fetches.
+
+00:07:07.011 --> 00:07:09.010
+JASON MILLER: So you can't
+Eager Evaluate fetch,
+
+00:07:09.010 --> 00:07:10.180
+because it's a side effect.
+
+00:07:10.180 --> 00:07:10.680
+But--
+
+00:07:10.680 --> 00:07:12.500
+[INTERPOSING VOICES]
+
+00:07:12.500 --> 00:07:13.904
+PAUL IRISH: It has side effects.
+
+00:07:13.904 --> 00:07:15.570
+SURMA: So it's like
+don't do that, then.
+
+00:07:15.570 --> 00:07:16.660
+JASON MILLER: So no, but
+you can do something.
+
+00:07:16.660 --> 00:07:19.090
+So in our demo, we showed you
+could JSON parse a string.
+
+00:07:19.090 --> 00:07:20.260
+And it will run the JSON
+parse because there's
+
+00:07:20.260 --> 00:07:21.580
+no side effect there.
+
+00:07:21.580 --> 00:07:25.240
+And then you can look at the
+drop down menu for suggestions,
+
+00:07:25.240 --> 00:07:28.140
+and it will include properties
+from the JSON you parsed.
+
+00:07:28.140 --> 00:07:28.330
+[INTERPOSING VOICES]
+
+00:07:28.330 --> 00:07:29.830
+JASON MILLER: It
+has never been run.
+
+00:07:29.830 --> 00:07:31.909
+JAKE: What if I change
+the array constructor,
+
+00:07:31.909 --> 00:07:32.950
+and then pass some JSON--
+
+00:07:32.950 --> 00:07:34.010
+SURMA: Then you
+are a bad person.
+
+00:07:34.010 --> 00:07:34.900
+JASON MILLER: No, it depends.
+
+00:07:34.900 --> 00:07:36.010
+If you change the
+array constructor
+
+00:07:36.010 --> 00:07:37.630
+to an implementation that
+doesn't have side effects,
+
+00:07:37.630 --> 00:07:38.770
+[CLICK] you're good.
+
+00:07:38.770 --> 00:07:39.854
+JAKE: It will detect that?
+
+00:07:39.854 --> 00:07:40.686
+[INTERPOSING VOICES]
+
+00:07:40.686 --> 00:07:42.340
+JASON MILLER: It goes
+all the way down.
+
+00:07:42.340 --> 00:07:44.631
+And I know because I tried
+to break this for two hours.
+
+00:07:44.631 --> 00:07:47.880
+JAKE: So how is a side
+effect defined here?
+
+00:07:47.880 --> 00:07:49.510
+I guess it's if
+the method is just
+
+00:07:49.510 --> 00:07:53.132
+effecting anything outside
+of its closure, I guess?
+
+00:07:53.132 --> 00:07:56.515
+PAUL IRISH: Anything
+outside of this.
+
+00:07:56.515 --> 00:07:58.190
+You can have functions.
+
+00:07:58.190 --> 00:08:00.460
+There's a lot that can
+happen inside of this.
+
+00:08:00.460 --> 00:08:05.450
+But for instance, we demoed
+with regular expressions
+
+00:08:05.450 --> 00:08:06.855
+the exec method.
+
+00:08:06.855 --> 00:08:08.980
+SURMA: Which is side effecty,
+technically speaking.
+
+00:08:08.980 --> 00:08:10.300
+JASON MILLER: [INAUDIBLE]
+on the regular expressions.
+
+00:08:10.300 --> 00:08:10.925
+SURMA: Exactly.
+
+00:08:10.925 --> 00:08:12.610
+PAUL IRISH: Yes,
+on the expression.
+
+00:08:12.610 --> 00:08:16.360
+But then regular
+expressions match and test,
+
+00:08:16.360 --> 00:08:19.960
+those effect the global
+RegEx constructor.
+
+00:08:19.960 --> 00:08:20.794
+Turns out, changes--
+
+00:08:20.794 --> 00:08:22.043
+JASON MILLER: Well known fact.
+
+00:08:22.043 --> 00:08:23.160
+I learned this last night.
+
+00:08:23.160 --> 00:08:25.690
+RegEx constructor
+dot dollar sign
+
+00:08:25.690 --> 00:08:29.140
+underscore is the previous
+match from string dot match.
+
+00:08:29.140 --> 00:08:32.380
+There's also dollar sign 1
+through 9 and last match.
+
+00:08:32.380 --> 00:08:33.549
+SURMA: That is disgusting.
+
+00:08:33.549 --> 00:08:35.319
+JASON MILLER: Never use these.
+
+00:08:35.319 --> 00:08:38.950
+PAUL IRISH: So because those
+exist, they are side effects.
+
+00:08:38.950 --> 00:08:41.659
+And so match and test
+can't be used under this--
+
+00:08:41.659 --> 00:08:43.659
+JASON MILLER: Stay tuned
+for a upcoming campaign
+
+00:08:43.659 --> 00:08:44.650
+to discontinue those properties.
+
+00:08:44.650 --> 00:08:46.150
+SURMA: Is there a
+little check box
+
+00:08:46.150 --> 00:08:47.680
+where I can enable and disable.
+
+00:08:47.680 --> 00:08:49.513
+I'm just wondering if
+I have a for loop that
+
+00:08:49.513 --> 00:08:51.640
+does 10 million iterations,
+and it takes 20 seconds
+
+00:08:51.640 --> 00:08:54.352
+to evaluate, I might want
+to disable it on every key.
+
+00:08:54.352 --> 00:08:55.060
+PAUL IRISH: Sure.
+
+00:08:55.060 --> 00:08:58.790
+Right now it is opt in.
+
+00:08:58.790 --> 00:09:00.640
+So that we handle
+some of these cases.
+
+00:09:00.640 --> 00:09:04.000
+We do handle the case of
+you have an infinite loop
+
+00:09:04.000 --> 00:09:05.400
+like we know.
+
+00:09:05.400 --> 00:09:07.460
+And so we won't
+hang your browser.
+
+00:09:07.460 --> 00:09:09.180
+SURMA: It's like
+rubbing it in face of--
+
+00:09:09.180 --> 00:09:10.971
+PAUL IRISH: There may
+be some other things.
+
+00:09:10.971 --> 00:09:13.220
+So as we refine those,
+it will be opt in.
+
+00:09:13.220 --> 00:09:14.835
+But I expect at
+some point, I hope,
+
+00:09:14.835 --> 00:09:16.960
+that we will be able to
+just turn it off everybody.
+
+00:09:16.960 --> 00:09:18.430
+JASON MILLER: I played
+with this for hours,
+
+00:09:18.430 --> 00:09:20.070
+and I never managed to break it.
+
+00:09:20.070 --> 00:09:21.252
+And that was really trying.
+
+00:09:21.252 --> 00:09:22.210
+SURMA: How do I opt in?
+
+00:09:22.210 --> 00:09:25.000
+PAUL IRISH: So grab Chrome
+Canary, open up Console.
+
+00:09:25.000 --> 00:09:28.436
+There's a little settings cog to
+add the console settings where
+
+00:09:28.436 --> 00:09:29.560
+you can turn on timestamps.
+
+00:09:29.560 --> 00:09:30.393
+It's right in there.
+
+00:09:30.393 --> 00:09:32.610
+And it says Eager Evaluation.
+
+00:09:32.610 --> 00:09:34.380
+JAKE: Going to have
+to play with that.
+
+00:09:34.380 --> 00:09:36.000
+Brilliant.
+
+00:09:36.000 --> 00:09:36.910
+So what's next then?
+
+00:09:36.910 --> 00:09:40.415
+What's DevTools going to
+do now next 12 months?
+
+00:09:40.415 --> 00:09:43.840
+PAUL IRISH: Right as
+we finish the talk,
+
+00:09:43.840 --> 00:09:46.390
+we did get a
+screenshot sent over
+
+00:09:46.390 --> 00:09:49.390
+from some of the engineers
+in the DevTools team
+
+00:09:49.390 --> 00:09:50.860
+showing us something
+that they just
+
+00:09:50.860 --> 00:09:56.661
+landed today, and neglected
+to tell us about yesterday.
+
+00:09:56.661 --> 00:09:57.160
+And--
+
+00:09:57.160 --> 00:09:58.576
+JASON MILLER: For
+the first time--
+
+00:09:58.576 --> 00:09:59.826
+SURMA: Turns out his IO.
+
+00:09:59.826 --> 00:10:01.159
+JAKE: Do you want to explain it?
+
+00:10:01.159 --> 00:10:03.860
+JASON MILLER: So when we were
+looking at the Eager Eval,
+
+00:10:03.860 --> 00:10:07.030
+I was thinking it would
+avoid a lot of me pulling up
+
+00:10:07.030 --> 00:10:11.020
+MDN if you could show the
+parameters that Dom methods
+
+00:10:11.020 --> 00:10:12.370
+and stuff like that accepts.
+
+00:10:12.370 --> 00:10:13.472
+They're there in Chrome.
+
+00:10:13.472 --> 00:10:14.305
+We have the web IDL.
+
+00:10:14.305 --> 00:10:14.952
+JAKE: Right.
+
+00:10:14.952 --> 00:10:16.660
+And even if we didn't,
+there's TypeScript
+
+00:10:16.660 --> 00:10:18.600
+has documented
+this stuff as well.
+
+00:10:18.600 --> 00:10:20.090
+JASON MILLER: This works.
+
+00:10:20.090 --> 00:10:23.010
+JAKE: Oh!
+
+00:10:23.010 --> 00:10:23.520
+Brilliant.
+
+00:10:23.520 --> 00:10:23.750
+OK.
+
+00:10:23.750 --> 00:10:25.250
+So just the names
+of the parameters.
+
+00:10:25.250 --> 00:10:27.430
+What about things that
+take different [INAUDIBLE]
+
+00:10:27.430 --> 00:10:29.270
+overloaded?
+
+00:10:29.270 --> 00:10:29.770
+Who knows?
+
+00:10:29.770 --> 00:10:31.646
+SURMA: It landed today!
+
+00:10:31.646 --> 00:10:32.900
+[INTERPOSING VOICES]
+
+00:10:32.900 --> 00:10:34.670
+JASON MILLER: Let
+me go ask the guy!
+
+00:10:34.670 --> 00:10:36.260
+SURMA: Cut these
+people some slack.
+
+00:10:36.260 --> 00:10:37.570
+JAKE: Sorry.
+
+00:10:37.570 --> 00:10:40.450
+I'm only asking questions
+because I'm excited.
+
+00:10:40.450 --> 00:10:43.490
+That's a exercise
+for the listener.
+
+00:10:43.490 --> 00:10:44.090
+Brilliant.
+
+00:10:44.090 --> 00:10:47.480
+SURMA: Some people look
+into more visual debugging
+
+00:10:47.480 --> 00:10:48.580
+for layouting stuff.
+
+00:10:48.580 --> 00:10:50.720
+Is that's something
+we're looking into?
+
+00:10:50.720 --> 00:10:52.970
+PAUL IRISH: I think there's
+some good potential there.
+
+00:10:52.970 --> 00:10:55.340
+Between working with the
+Flexbox, working with Grid,
+
+00:10:55.340 --> 00:10:57.230
+I know that I always
+have to let go.
+
+00:10:57.230 --> 00:10:59.090
+Look up degradation
+or find a tool
+
+00:10:59.090 --> 00:11:00.975
+where I can just
+prototype things out.
+
+00:11:00.975 --> 00:11:02.850
+JASON MILLER: We have
+some CSS variable stuff
+
+00:11:02.850 --> 00:11:03.600
+to date for that.
+
+00:11:03.600 --> 00:11:05.150
+You can see colored
+previews for your variables,
+
+00:11:05.150 --> 00:11:06.325
+that kind of stuff.
+
+00:11:06.325 --> 00:11:08.700
+What kind of nose is able to
+pierce through find elements
+
+00:11:08.700 --> 00:11:11.197
+specific variable values.
+
+00:11:11.197 --> 00:11:12.530
+PAUL IRISH: That stuff is there.
+
+00:11:12.530 --> 00:11:14.210
+I think some of
+the layouty things
+
+00:11:14.210 --> 00:11:16.820
+are a little bit more
+tricky to find out a design
+
+00:11:16.820 --> 00:11:18.530
+that both handles
+the case of I'm
+
+00:11:18.530 --> 00:11:22.059
+creating something brand new,
+and I have an existing layout.
+
+00:11:22.059 --> 00:11:22.850
+I want to tweak it.
+
+00:11:22.850 --> 00:11:23.808
+I want to work with it.
+
+00:11:23.808 --> 00:11:25.640
+SURMA: I'm not saying it's easy.
+
+00:11:25.640 --> 00:11:27.140
+JAKE: Because we've
+got this problem
+
+00:11:27.140 --> 00:11:29.340
+that with Flexbox
+and Grid as well,
+
+00:11:29.340 --> 00:11:31.160
+that the default
+layout in a lot of them
+
+00:11:31.160 --> 00:11:33.850
+is stretch, which leads to
+this kind of multi-pass layout
+
+00:11:33.850 --> 00:11:34.591
+thing.
+
+00:11:34.591 --> 00:11:37.090
+You layout the first box, go
+to the second box, it's bigger.
+
+00:11:37.090 --> 00:11:39.631
+So it needs to go back to the
+first box, change size of that,
+
+00:11:39.631 --> 00:11:40.990
+and so on and so on.
+
+00:11:40.990 --> 00:11:44.181
+And there's no way of
+knowing that's happening.
+
+00:11:44.181 --> 00:11:46.430
+JASON MILLER: We've been
+talking about adding warnings
+
+00:11:46.430 --> 00:11:47.820
+for some of these things.
+
+00:11:47.820 --> 00:11:48.960
+Your layout may be slow.
+
+00:11:48.960 --> 00:11:50.240
+A little information about it.
+
+00:11:50.240 --> 00:11:50.810
+Just letting you know.
+
+00:11:50.810 --> 00:11:51.510
+JAKE: OK.
+
+00:11:51.510 --> 00:11:52.160
+That's a good first step.
+
+00:11:52.160 --> 00:11:53.790
+JASON MILLER: Possibly
+expensive layout [INAUDIBLE]..
+
+00:11:53.790 --> 00:11:55.240
+SURMA: Leave room for
+improvement as well.
+
+00:11:55.240 --> 00:11:56.080
+JAKE: That's probably good.
+
+00:11:56.080 --> 00:11:57.610
+JASON MILLER: Or we could have
+announcements at each event.
+
+00:11:57.610 --> 00:11:58.490
+JAKE: I was just
+wondering if you'd
+
+00:11:58.490 --> 00:12:00.150
+been sent a screen shot of
+anything that solves that
+
+00:12:00.150 --> 00:12:00.630
+as well.
+
+00:12:00.630 --> 00:12:01.330
+JASON MILLER: No
+screen shots so far.
+
+00:12:01.330 --> 00:12:02.570
+I could doctor one for you.
+
+00:12:02.570 --> 00:12:04.702
+JAKE: Go and check your
+email now, just in case.
+
+00:12:04.702 --> 00:12:06.910
+Seems like this stuff
+is landing really fast.
+
+00:12:06.910 --> 00:12:09.140
+JASON MILLER: Well, every
+time we think of a feature,
+
+00:12:09.140 --> 00:12:10.940
+one of the guys on
+the DevTools team
+
+00:12:10.940 --> 00:12:14.257
+sends us a screenshot
+saying I already did this.
+
+00:12:14.257 --> 00:12:15.340
+SURMA: Well, I have ideas.
+
+00:12:15.340 --> 00:12:17.030
+Maybe I should do that as well.
+
+00:12:17.030 --> 00:12:19.030
+Well, have ideas and then
+magically they appear.
+
+00:12:19.030 --> 00:12:20.680
+That seems like a
+fun job to have.
+
+00:12:20.680 --> 00:12:22.013
+JAKE: That doesn't happen to me.
+
+00:12:22.013 --> 00:12:23.560
+My books get rejected
+for DevTools.
+
+00:12:23.560 --> 00:12:28.230
+I've [INAUDIBLE] I wanted
+disable all non website fonts.
+
+00:12:28.230 --> 00:12:29.952
+Can we make that happen?
+
+00:12:29.952 --> 00:12:32.160
+Because I forget that I have
+all the fonts installed.
+
+00:12:35.540 --> 00:12:37.010
+And what was the other one?
+
+00:12:37.010 --> 00:12:37.510
+Li-fi!
+
+00:12:37.510 --> 00:12:38.730
+I want li-fi in network mode.
+
+00:12:38.730 --> 00:12:40.105
+JASON MILLER: That
+would be nice.
+
+00:12:40.105 --> 00:12:41.480
+SURMA: What is
+missing for li-fi?
+
+00:12:41.480 --> 00:12:42.813
+JAKE: They didn't like the name.
+
+00:12:42.813 --> 00:12:44.180
+SURMA: Oh, this is name.
+
+00:12:44.180 --> 00:12:46.580
+Put your banding in there.
+
+00:12:46.580 --> 00:12:48.060
+We'll just have
+your face in there.
+
+00:12:48.060 --> 00:12:51.779
+PAUL IRISH: Make li-fi
+into a real, real thing.
+
+00:12:51.779 --> 00:12:52.820
+Get it in the dictionary.
+
+00:12:52.820 --> 00:12:55.190
+JAKE: Well, I was hoping to get
+in the dictionary through this.
+
+00:12:55.190 --> 00:12:56.650
+This is the [INAUDIBLE] way--
+
+00:12:56.650 --> 00:12:58.357
+[INTERPOSING VOICES]
+
+00:12:58.357 --> 00:13:00.690
+SURMA: Do you have li-fi as
+your own preset in DevTools?
+
+00:13:00.690 --> 00:13:01.580
+JAKE: Yes, I do.
+
+00:13:01.580 --> 00:13:01.970
+SURMA: Of course you do.
+
+00:13:01.970 --> 00:13:02.470
+JAKE: Yeah.
+
+00:13:02.470 --> 00:13:04.610
+SURMA: Shared, as
+like a little gist.
+
+00:13:04.610 --> 00:13:05.630
+JAKE: OK.
+
+00:13:05.630 --> 00:13:07.074
+OK.
+

@@ -1,0 +1,820 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:13.459 --> 00:00:15.839
+Hello and welcome to section 7
+
+00:00:15.839 --> 00:00:19.390
+of lesson 2. Here, we're going to discuss
+
+00:00:19.390 --> 00:00:23.360
+the Optional class which is new class
+that was introduced in JDK 8
+
+00:00:23.360 --> 00:00:28.689
+A lot of it is to do with how we
+process streams the results from streams
+
+00:00:28.689 --> 00:00:30.060
+but it's also very useful
+
+00:00:30.060 --> 00:00:35.790
+in many other places as well as we'll
+see.
+
+00:00:35.790 --> 00:00:39.519
+The problem we have is what happens
+
+00:00:39.519 --> 00:00:45.149
+when we've got no values and
+because we're dealing with objects
+
+00:00:45.149 --> 00:00:48.230
+if we have no value, we have null
+reference.
+
+00:00:48.230 --> 00:00:52.000
+so it's effectively a reference to object
+that is not initialized.
+
+00:00:52.000 --> 00:00:55.899
+So we've dealt with nulls in the past. We
+know what nulls are know how we get them.
+
+00:00:55.900 --> 00:01:00.930
+And he's the kind of problem we have to
+face:
+
+00:01:00.930 --> 00:01:04.309
+let's say that I've got a piece of code
+where
+
+00:01:04.339 --> 00:01:08.490
+I have some data that I'm calling from a
+GPS receiver
+
+00:01:08.490 --> 00:01:12.009
+and what I want to get is the direction
+
+00:01:12.009 --> 00:01:15.280
+of the latitude associated with the position that I'm reading.
+
+00:01:15.280 --> 00:01:19.690
+And I would typically chain together some
+method calls
+
+00:01:19.690 --> 00:01:22.929
+to say that what I want is the direction from
+the latitude,
+
+00:01:22.929 --> 00:01:26.660
+which comes from the position, which
+comes from a GPS data. All well and good.
+
+00:01:26.660 --> 00:01:30.130
+The problem with this is that that will
+work
+
+00:01:30.130 --> 00:01:33.630
+so long as neither gpsData
+
+00:01:33.630 --> 00:01:37.830
+getPosition or getLatitude return
+a null.
+
+00:01:37.830 --> 00:01:41.140
+Because if any of those three things return a null
+
+00:01:41.140 --> 00:01:45.770
+then I'm getting a nullPointException
+because going to try to call a method
+
+00:01:45.770 --> 00:01:49.610
+through a null reference. And I can't do that-
+
+00:01:49.610 --> 00:01:52.720
+Gives me nullPointerException. So this
+
+00:01:52.720 --> 00:01:58.239
+is not the most robust way writing
+code if I can't guarantee that GPSdata
+
+00:01:58.239 --> 00:02:01.739
+is not null and the getPosition and getLatitude will not
+
+00:02:01.740 --> 00:02:05.610
+return a null. Let's rewrite the same code
+
+00:02:05.610 --> 00:02:09.810
+and make it completely safe from a nullPointerExceptions point of view.
+
+00:02:09.810 --> 00:02:14.160
+This is what we end up with. We start off by assigning
+
+00:02:14.160 --> 00:02:18.510
+a direction to be unknown, so we have a
+definite value for that.
+
+00:02:18.510 --> 00:02:22.120
+Then we look at gpsData, we test to see if it’s null,
+
+00:02:22.120 --> 00:02:24.240
+if that’s not null, we get the position
+
+00:02:24.240 --> 00:02:29.260
+from gpsData.getPosition. Then we test to see if that is null. If it's not null
+
+00:02:29.440 --> 00:02:32.440
+we get the latitude from p.getLatitude.
+
+00:02:32.440 --> 00:02:35.740
+And then we test that the latitude is not null. If the latitude is not null, then we can call
+
+00:02:35.740 --> 00:02:39.760
+direction from that and get our result. So
+this is all good.
+
+00:02:39.760 --> 00:02:44.050
+Problem is, that we need a better way of doing this.
+
+00:02:44.050 --> 00:02:48.150
+And when we look at the streams API
+
+00:02:48.150 --> 00:02:52.790
+what we often find we've already seen this when we
+talk about the terminal operations,
+
+00:02:52.790 --> 00:02:57.110
+is that things like min and max, they...
+
+00:02:57.110 --> 00:03:00.540
+If we have no elements on the
+InputStream
+
+00:03:00.540 --> 00:03:05.290
+what do we return as a result? I mean, we
+could return 0 as the min
+
+00:03:05.290 --> 00:03:09.150
+or 0 as the max. But that doesn't actually make
+sense because we may not be comparing
+
+00:03:09.150 --> 00:03:12.770
+based on numerical values. And
+
+00:03:12.770 --> 00:03:16.570
+so we have a situation where we would
+typically return a null.
+
+00:03:16.570 --> 00:03:19.780
+But that becomes then difficult because
+if we want to process that
+
+00:03:19.780 --> 00:03:23.860
+further, we run into problems where then we got
+a test to see if it's a null, if it's
+
+00:03:23.860 --> 00:03:26.070
+not then we went to do various things, and
+and so.
+
+00:03:26.070 --> 00:03:30.090
+To get around that, we've introduced
+this new class
+
+00:03:30.090 --> 00:03:33.830
+called an optional. And an Optional has a type parameter
+
+00:03:33.830 --> 00:03:37.530
+T. Effectively what an Optional
+
+00:03:37.530 --> 00:03:40.960
+is... Its contain are for another
+
+00:03:40.960 --> 00:03:44.120
+object reference and that reference
+
+00:03:44.120 --> 00:03:47.340
+can either be null or it can be
+pointing at a real
+
+00:03:47.340 --> 00:03:50.510
+object. So you can think of it,
+
+00:03:50.510 --> 00:03:54.110
+as like a stream which has either 0
+
+00:03:54.110 --> 00:03:58.520
+or 1 elements in it. 0 elements if the
+reference the object is null
+
+00:03:58.520 --> 00:04:01.940
+one element if the object
+
+00:04:01.940 --> 00:04:05.270
+reference is valid. There will be 1 element
+
+00:04:05.270 --> 00:04:10.000
+in that stream will be the reference to the
+object. The good thing about using an
+
+00:04:10.000 --> 00:04:10.690
+Optional
+
+00:04:10.690 --> 00:04:14.350
+is if we return an Optional from min or max,
+
+00:04:14.350 --> 00:04:18.170
+or any other method, we know this will
+be
+
+00:04:18.170 --> 00:04:21.540
+a valid reference. So it's not going to be null.
+
+00:04:21.540 --> 00:04:25.600
+So we return an Optional regardless. And then what it
+contains
+
+00:04:25.600 --> 00:04:30.640
+is either null or a valid reference.
+
+00:04:30.640 --> 00:04:34.120
+now we can use Options in different ways.
+So here's
+
+00:04:34.120 --> 00:04:37.550
+what we would do in normal Java code
+
+00:04:37.550 --> 00:04:40.800
+if we want test whether something set
+
+00:04:40.800 --> 00:04:44.690
+and if it is then we want to do
+something. So here I'm saying
+
+00:04:44.690 --> 00:04:49.900
+if x does not equal null, print x.  Well I could do that with an Optional
+
+00:04:49.900 --> 00:04:54.280
+simply by saying optional dot if
+present, and then passing
+
+00:04:54.280 --> 00:04:59.230
+a lambda expression to represent what I
+want to do. So here I'm gonna say
+
+00:04:59.230 --> 00:05:02.700
+I want to print x. I can replace that with
+the method reference.
+
+00:05:02.700 --> 00:05:05.850
+Or I can reference the method this -sorry-
+method
+
+00:05:05.850 --> 00:05:09.060
+print which is in this object and just
+say this::print.
+
+00:05:09.060 --> 00:05:13.090
+So does the same thing.
+Okay so that's,
+
+00:05:13.090 --> 00:05:17.150
+that's one use of an Optional. It's not
+terribly exciting,
+
+00:05:17.150 --> 00:05:20.300
+but it allows us to eliminate that
+problem.
+
+00:05:20.300 --> 00:05:24.060
+But we might also have a situation where
+we want to
+
+00:05:24.060 --> 00:05:27.100
+test whether x is valid,
+
+00:05:27.100 --> 00:05:31.700
+but also whether x meet some criteria. Here
+what I'm doing is saying
+
+00:05:31.700 --> 00:05:35.270
+if x does not equal null and x
+contains an
+
+00:05:35.270 --> 00:05:38.490
+a then we want to print x. Now
+
+00:05:38.490 --> 00:05:41.810
+because we've gotten an and statement there,
+and because the
+
+00:05:41.810 --> 00:05:45.410
+test begins null is the first one, we
+don't have to worry about
+
+00:05:45.410 --> 00:05:49.210
+nullPointerException because if x does
+equal null
+
+00:05:49.210 --> 00:05:52.580
+we don't bother evaluating the second
+half of the and statement.
+
+00:05:52.580 --> 00:05:56.050
+So that's okay. But we can do the same thing
+
+00:05:56.050 --> 00:05:59.370
+with our Optional. Now we can use filter.
+
+00:05:59.370 --> 00:06:02.370
+Again, it's the same kind of idea as we have
+
+00:06:02.370 --> 00:06:06.550
+with a stream. Remember an Option is like a
+stream of 0
+
+00:06:06.550 --> 00:06:10.479
+or 1 elements. So in this case we'll take
+our Optional
+
+00:06:10.479 --> 00:06:14.090
+and then we'll pass it to filter and we use
+
+00:06:14.090 --> 00:06:17.880
+predicate, a lambda expression to represent math, saying
+
+00:06:17.880 --> 00:06:21.950
+"Does x contain an a?". That way,
+
+00:06:21.950 --> 00:06:25.860
+if the Optional contains a null
+reference we have a stream of
+
+00:06:25.860 --> 00:06:26.630
+0 elements.
+
+00:06:26.630 --> 00:06:31.030
+it doesn't get pasted to filter. We don't
+bother doing anything. If
+
+00:06:31.030 --> 00:06:34.360
+it does contain invalid reference, we
+pause x to filter.
+
+00:06:34.360 --> 00:06:37.550
+X then gets processed to look whether it
+contains a
+
+00:06:37.550 --> 00:06:39.969
+That will create a new Optional,
+
+00:06:39.969 --> 00:06:44.079
+which either contains null because x
+doesn't contain an a, or,
+
+00:06:44.079 --> 00:06:49.189
+it contains x because it does
+contain an a. If it does contain an a,
+
+00:06:49.189 --> 00:06:53.619
+we pass it to ifPresent and we print it out.
+So we have
+
+00:06:53.619 --> 00:06:58.039
+a simpler version of thinking about code. We can
+get a bit further.
+
+00:06:58.039 --> 00:07:01.489
+We can do some translations using map.
+
+00:07:01.489 --> 00:07:05.479
+We may have a situation where we test to
+see if x is
+
+00:07:05.479 --> 00:07:08.909
+not null. If it isn't null, them we're going
+to
+
+00:07:08.909 --> 00:07:11.939
+manipulate x in some way. So will do
+
+00:07:11.939 --> 00:07:15.229
+trim x to remove any blank
+
+00:07:15.229 --> 00:07:20.829
+characters and assign that to t. Then we'll
+test to see if t is greater than 0. And if it is then
+
+00:07:20.829 --> 00:07:21.909
+we'll will print it out.
+
+00:07:21.909 --> 00:07:24.989
+Again we could do the same thing with
+our Optional.
+
+00:07:24.989 --> 00:07:28.629
+In this case, we'll use a map.
+
+00:07:28.629 --> 00:07:31.829
+So what we're gonna do here is say take a our Optional, if it eve exists,
+
+00:07:31.829 --> 00:07:35.279
+as a reference. Pass it to map. In this case
+
+00:07:35.279 --> 00:07:38.889
+we'll do mapping using the function of
+
+00:07:38.889 --> 00:07:43.649
+trim from string (method reference again).
+Then we'll pass that
+
+00:07:43.649 --> 00:07:47.069
+to filter to determine whether the length
+
+00:07:47.069 --> 00:07:50.379
+of the string is greater than 0. That
+produces a new
+
+00:07:50.379 --> 00:07:53.629
+Optional which is either null
+
+00:07:53.629 --> 00:07:56.759
+or valid reference. Depending on whether the
+predicate
+
+00:07:56.759 --> 00:08:00.699
+returns true or false. So if we do return
+a
+
+00:08:00.699 --> 00:08:04.719
+valid reference, we put that in the Optional. Go
+if present we print out
+
+00:08:04.719 --> 00:08:10.349
+whatever t is. And then we can go even
+further.
+
+00:08:10.349 --> 00:08:13.639
+So let's say I have a method
+
+00:08:13.639 --> 00:08:16.949
+which is called findSimilar that takes
+a string
+
+00:08:16.949 --> 00:08:21.729
+as an argument and returns a string. But
+potentially findSimilar could return a
+
+00:08:21.729 --> 00:08:22.409
+null.
+
+00:08:22.409 --> 00:08:26.769
+So to make that better we'll change
+
+00:08:26.769 --> 00:08:30.039
+the method and we'll call it tryFindSimilar.
+
+00:08:30.039 --> 00:08:34.149
+On this, rather than returning a string
+directly, it'll return
+
+00:08:34.149 --> 00:08:37.779
+Optional of type string. Remember the
+Optional
+
+00:08:37.779 --> 00:08:40.899
+will contain a reference to whatever tryFindSimilar
+
+00:08:40.899 --> 00:08:44.899
+actually does. Could be a null.
+
+00:08:44.899 --> 00:08:47.450
+Or could be the actual string.
+
+00:08:47.450 --> 00:08:50.430
+So if you want to use that in an
+Optional,
+
+00:08:50.430 --> 00:08:53.840
+Then we run into a bit of a problem. Because if we want to do a to mapping
+
+00:08:53.840 --> 00:08:56.860
+using this new method then
+
+00:08:56.860 --> 00:09:01.310
+what will happen is map will create a
+new Optional
+
+00:09:01.310 --> 00:09:05.260
+and put whatever the result of the
+function that he used as the
+
+00:09:05.260 --> 00:09:10.550
+parameter inside that Optional. But tryFindSimilar already returns an Optional
+
+00:09:10.550 --> 00:09:13.550
+So now we have an optional of type String
+contained
+
+00:09:13.550 --> 00:09:17.060
+in Optional. So that's one too many Optionals.
+
+00:09:17.060 --> 00:09:20.360
+To alleviate this problem
+
+00:09:20.360 --> 00:09:23.450
+we can use flatMap. And flatMap
+
+00:09:23.450 --> 00:09:26.700
+will assume that the function that we're
+using
+
+00:09:26.700 --> 00:09:30.650
+doesn't need to be placed an Optional
+because it already
+
+00:09:30.650 --> 00:09:35.920
+returns an Optional. That way we just use
+the result of tryFindSimilar
+
+00:09:35.920 --> 00:09:39.280
+which is an Optional of type String. And
+then we can use that
+
+00:09:39.280 --> 00:09:42.440
+directly. We don't have to worry about
+being an Optional contained
+
+00:09:42.440 --> 00:09:48.070
+in another Optional. If we go back to our
+
+00:09:48.070 --> 00:09:52.800
+GPS code and we update that too use
+Optionals correctly,
+
+00:09:52.800 --> 00:09:56.460
+we can now see that in our GPSData
+class
+
+00:09:56.460 --> 00:09:59.730
+our getPosition method is going to
+return Optional
+
+00:09:59.730 --> 00:10:02.740
+of type Position. The Position class
+
+00:10:02.740 --> 00:10:06.190
+will have a method called getLatitude
+that will return an Optional
+
+00:10:06.190 --> 00:10:09.300
+of type Latitude. And then the Latitude class
+
+00:10:09.300 --> 00:10:12.360
+will just have method called
+getDirection
+
+00:10:12.360 --> 00:10:17.230
+that will return String. To use that
+
+00:10:17.230 --> 00:10:21.280
+what we do now is we say the direction
+is going to be
+
+00:10:21.280 --> 00:10:25.140
+optional and, we first of all have to create
+an Optional
+
+00:10:25.140 --> 00:10:28.740
+from out GPS data and
+
+00:10:28.740 --> 00:10:32.380
+we use ofNullable to indicate that
+
+00:10:32.380 --> 00:10:36.230
+GPSData could be a null, or it could be
+a valid reference.
+
+00:10:36.230 --> 00:10:39.560
+If we knew the GPS data was a valid
+reference
+
+00:10:39.560 --> 00:10:43.520
+we could just use optional dot of. But
+because we don't know
+
+00:10:43.520 --> 00:10:46.750
+whether it's null or not, we use Optional
+dot ofNullable.
+
+00:10:46.750 --> 00:10:50.510
+That way you don't get any
+problems.
+
+00:10:50.510 --> 00:10:53.320
+We pass that into flatMap.
+
+00:10:53.320 --> 00:10:57.000
+With flatMap using the function
+
+00:10:57.000 --> 00:11:00.830
+which is the method reference to get
+position and we flatMap it again
+
+00:11:00.830 --> 00:11:05.570
+to get latitude from that position.
+Remember that both getPosition and
+
+00:11:05.570 --> 00:11:06.459
+getLatitude
+
+00:11:06.459 --> 00:11:10.120
+return an Optional. So we don't want to
+include those
+
+00:11:10.120 --> 00:11:13.850
+in another Optional. We simply want
+poss that to the next
+
+00:11:13.850 --> 00:11:17.500
+part of our chain of method calls. So we use flatMap
+
+00:11:17.500 --> 00:11:21.170
+so that we know getPosition and getLatitude will return optional.
+
+00:11:21.170 --> 00:11:24.420
+And we then pass that to map.
+
+00:11:24.420 --> 00:11:27.810
+Map uses the getDirection method of Latitude,
+
+00:11:27.810 --> 00:11:31.050
+which does return a sSring so we need to
+
+00:11:31.050 --> 00:11:35.589
+put that inside an Optional. So the map
+will take the result of getDirection,
+
+00:11:35.589 --> 00:11:39.380
+put it inside a String and put in some
+Optional,
+
+00:11:39.380 --> 00:11:42.700
+and then pass it to orElse. So that if
+
+00:11:42.700 --> 00:11:46.410
+the getDirection returns a null
+
+00:11:46.410 --> 00:11:49.800
+then orElse will return None.
+
+00:11:49.800 --> 00:11:53.160
+Otherwise we'll get the direction of
+
+00:11:53.160 --> 00:11:56.959
+our particular latitude reading from the
+GPS.
+
+00:11:56.959 --> 00:12:00.450
+If getDirection returns null, return None.  Otherwise
+
+00:12:00.450 --> 00:12:05.000
+return an actual direction. And that solves our problem.
+
+00:12:05.000 --> 00:12:10.100
+So to summarize Section 7: you can see that the Optional class helps us to eliminate
+
+00:12:10.100 --> 00:12:13.680
+problems of nullPointerExceptions. We
+can use it in
+
+00:12:13.680 --> 00:12:17.640
+in quite complex ways if you get into
+the idea of using flatMaps maps and
+
+00:12:17.640 --> 00:12:18.550
+filters and
+
+00:12:18.550 --> 00:12:22.520
+and those sorts of things, in order to
+allow you to take
+
+00:12:22.520 --> 00:12:25.540
+the results of a stream Optional,
+
+00:12:25.540 --> 00:12:28.680
+and then process it post process it
+
+00:12:28.680 --> 00:12:33.220
+and do things with it. So it is a very
+useful thing not just in time to streams
+
+00:12:33.220 --> 00:12:34.140
+but also
+
+00:12:34.140 --> 00:12:40.070
+outside streams as well. That brings us
+to the end of lesson 2
+
+00:12:40.070 --> 00:12:43.610
+So again, I'd like to just have a
+quick summary
+
+00:12:43.610 --> 00:12:47.120
+of what we've dealt with in lesson 2.
+What things you should now
+
+00:12:47.120 --> 00:12:50.600
+be aware of.
+
+00:12:50.600 --> 00:12:53.380
+So the streams API provides us
+
+00:12:53.380 --> 00:12:57.870
+with a simple straightforward way of
+having a functional style of
+
+00:12:57.870 --> 00:13:01.540
+programing in Java. Remember functional
+programming
+
+00:13:01.540 --> 00:13:04.709
+is about having function calls linked
+together.
+
+00:13:04.709 --> 00:13:09.180
+The streams API allows us to chain together 
+method calls
+
+00:13:09.180 --> 00:13:12.459
+so that we can do effectively the same
+thing with Java.
+
+00:13:12.459 --> 00:13:16.240
+In terms of the streams that we create
+
+00:13:16.240 --> 00:13:19.240
+we can on either create streams objects
+
+00:13:19.240 --> 00:13:23.740
+or where it's appropriate we can create
+streams primitive types:
+
+00:13:23.740 --> 00:13:27.540
+int, long, double. That way we can
+avoid the problems
+
+00:13:27.540 --> 00:13:30.790
+of boxing and unboxing to improve the
+efficiency how
+
+00:13:30.790 --> 00:13:34.610
+the stream works. Structure upstream
+
+00:13:34.610 --> 00:13:38.350
+is like a pipeline. One end of the
+pipeline you got source
+
+00:13:38.350 --> 00:13:41.910
+you got some possible intermediate
+operations in the middle,
+
+00:13:41.910 --> 00:13:45.470
+and then the other end your pipeline is
+a terminal operation
+
+00:13:45.470 --> 00:13:49.620
+which creates either explicit result or
+some kind of side effect.
+
+00:13:49.620 --> 00:13:52.959
+A lot of the terminal operations
+
+00:13:52.959 --> 00:13:57.500
+return an Optional, so if we don't have
+any data on the InputStream
+
+00:13:57.500 --> 00:14:01.620
+we don't have to worry about null pointer
+references and we can take care that
+
+00:14:01.620 --> 00:14:02.470
+through the
+
+00:14:02.470 --> 00:14:06.700
+appropriate use all the Optional. Remember
+ofOptionals can be used
+
+00:14:06.700 --> 00:14:10.130
+outside streams API for many different
+situations
+
+00:14:10.130 --> 00:14:15.209
+where you want to avoid null pointer
+exceptions.
+
+00:14:15.209 --> 00:14:17.110
+And that is the end of lesson 2.
+

@@ -1,0 +1,1689 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:05.210
+SPEAKER 1: So we edit the
+comments for YouTube videos
+
+00:00:05.210 --> 00:00:06.960
+for the series.
+
+00:00:06.960 --> 00:00:08.160
+SPEAKER 2: Well, yeah we do.
+
+00:00:08.160 --> 00:00:10.660
+SPEAKER 1: I think I should
+have said moderate, shouldn't I?
+
+00:00:10.660 --> 00:00:11.060
+SPEAKER 2: Yeah.
+
+00:00:11.060 --> 00:00:11.610
+SPEAKER 1: Should I try that--
+
+00:00:11.610 --> 00:00:11.830
+SPEAKER 2: We don't edit them.
+
+00:00:11.830 --> 00:00:13.700
+We don't go in and it me
+say something different.
+
+00:00:13.700 --> 00:00:15.040
+SPEAKER 1: Should
+I try that again?
+
+00:00:15.040 --> 00:00:16.520
+SPEAKER 2: That would
+be good if you could go,
+
+00:00:16.520 --> 00:00:18.470
+this is the greatest
+show I have ever seen.
+
+00:00:18.470 --> 00:00:20.240
+These people should get a raise.
+
+00:00:20.240 --> 00:00:22.032
+SPEAKER 1: Just messing
+it up straightaway.
+
+00:00:22.032 --> 00:00:24.554
+[MUSIC PLAYING]
+
+00:00:28.910 --> 00:00:32.630
+SPEAKER 2: We are building
+the Chrome Dev Summit website.
+
+00:00:32.630 --> 00:00:33.620
+SPEAKER 1: Yes, we are.
+
+00:00:33.620 --> 00:00:39.213
+SPEAKER 2: And we are looking
+into using push notifications
+
+00:00:39.213 --> 00:00:41.380
+because we are trying not
+to be annoying about them.
+
+00:00:41.380 --> 00:00:42.200
+SPEAKER 1: Yeah If
+there's one thing
+
+00:00:42.200 --> 00:00:44.040
+that everyone loves on the
+web, it's push notifications.
+
+00:00:44.040 --> 00:00:44.540
+Every site--
+
+00:00:44.540 --> 00:00:46.597
+SPEAKER 2: Everyone loves it.
+
+00:00:46.597 --> 00:00:48.680
+SPEAKER 1: I can't stop
+myself from hitting allow.
+
+00:00:48.680 --> 00:00:50.110
+And I'm just like--
+oh, I'm just--
+
+00:00:50.110 --> 00:00:51.830
+curiosity has gotten
+the best of me.
+
+00:00:51.830 --> 00:00:53.977
+SPEAKER 2: My lock screen
+is full of notifications.
+
+00:00:53.977 --> 00:00:56.060
+SPEAKER 1: I don't know
+what your website's about.
+
+00:00:56.060 --> 00:00:58.310
+But you have asked me
+if I want notifications.
+
+00:00:58.310 --> 00:00:59.963
+And my answer is always yes.
+
+00:00:59.963 --> 00:01:00.630
+Of course it is.
+
+00:01:00.630 --> 00:01:01.490
+SPEAKER 2: I hate it
+when you got to a website
+
+00:01:01.490 --> 00:01:03.290
+for the first-- it's like,
+hey, would you like--
+
+00:01:03.290 --> 00:01:04.430
+I don't even know what for.
+
+00:01:04.430 --> 00:01:05.630
+What are you doing?
+
+00:01:05.630 --> 00:01:07.360
+Who approved this?
+
+00:01:07.360 --> 00:01:10.750
+Either way, we actually think
+we have a legit use case, namely
+
+00:01:10.750 --> 00:01:11.250
+that--
+
+00:01:11.250 --> 00:01:12.280
+SPEAKER 1: This is
+what everyone says.
+
+00:01:12.280 --> 00:01:13.170
+But OK.
+
+00:01:13.170 --> 00:01:14.570
+Yes, we think we do.
+
+00:01:14.570 --> 00:01:16.670
+SPEAKER 2: Because this
+conference is something
+
+00:01:16.670 --> 00:01:18.470
+that you can not
+only have in person,
+
+00:01:18.470 --> 00:01:20.810
+but obviously, also
+watch with a livestream
+
+00:01:20.810 --> 00:01:23.610
+from home, which might mean
+that you are in a different time
+
+00:01:23.610 --> 00:01:24.290
+zone.
+
+00:01:24.290 --> 00:01:24.650
+SPEAKER 1: Yes.
+
+00:01:24.650 --> 00:01:26.520
+SPEAKER 2: So what we want
+to do is that you can say,
+
+00:01:26.520 --> 00:01:28.280
+this session is
+interesting to let.
+
+00:01:28.280 --> 00:01:30.575
+Let me know 10
+minutes ahead of time
+
+00:01:30.575 --> 00:01:31.700
+before it's about to start.
+
+00:01:31.700 --> 00:01:33.260
+SPEAKER 1: We'll be asking
+for permission at a good time.
+
+00:01:33.260 --> 00:01:35.880
+SPEAKER 2: Yeah, once they
+click, notify me, we will say,
+
+00:01:35.880 --> 00:01:38.217
+well then we would need your
+permission to notify you.
+
+00:01:38.217 --> 00:01:40.550
+SPEAKER 1: And that seems
+like a reasonable time to ask.
+
+00:01:40.550 --> 00:01:41.340
+SPEAKER 2: Yes.
+
+00:01:41.340 --> 00:01:42.340
+SPEAKER 1: Yes, I agree.
+
+00:01:42.340 --> 00:01:44.480
+SPEAKER 2: Just as a context
+why did I look into Web Push.
+
+00:01:44.480 --> 00:01:45.170
+And I did.
+
+00:01:45.170 --> 00:01:46.545
+And I was actually
+kind of scared
+
+00:01:46.545 --> 00:01:49.830
+because I had never done it.
+
+00:01:49.830 --> 00:01:51.410
+I've never used Web Push.
+
+00:01:51.410 --> 00:01:55.340
+And I know that back in the
+day, Google Cloud Messaging
+
+00:01:55.340 --> 00:01:57.830
+had their own proprietary API.
+
+00:01:57.830 --> 00:01:58.970
+And that was a competitor.
+
+00:01:58.970 --> 00:02:01.053
+And it was incompatible
+with anything else.
+
+00:02:01.053 --> 00:02:02.720
+And I was like, I
+don't want to do this.
+
+00:02:02.720 --> 00:02:03.770
+And I looked into it.
+
+00:02:03.770 --> 00:02:05.130
+And it's so much better.
+
+00:02:05.130 --> 00:02:07.937
+It's actually-- I would
+say it's enjoyable now.
+
+00:02:07.937 --> 00:02:09.729
+SPEAKER 1: So is all
+documentation for this
+
+00:02:09.729 --> 00:02:12.453
+still written by Maunty Gaunty?
+
+00:02:12.453 --> 00:02:14.120
+SPEAKER 2: The
+out-of-date documentation
+
+00:02:14.120 --> 00:02:15.330
+is written by Maunty Gaunty.
+
+00:02:15.330 --> 00:02:15.520
+SPEAKER 1: Yeah.
+
+00:02:15.520 --> 00:02:17.187
+So we should say this
+is someone who was
+
+00:02:17.187 --> 00:02:18.505
+on the team a few years ago.
+
+00:02:18.505 --> 00:02:19.880
+SPEAKER 2: And
+then bailed on us.
+
+00:02:19.880 --> 00:02:21.172
+SPEAKER 1: And he bailed on us.
+
+00:02:21.172 --> 00:02:22.957
+But we called him
+Maunty Gaunty because--
+
+00:02:22.957 --> 00:02:24.290
+SPEAKER 2: Or some, Maunt Gaunt.
+
+00:02:24.290 --> 00:02:25.707
+SPEAKER 1: Maunt
+Gaunt If we can--
+
+00:02:25.707 --> 00:02:28.000
+hopefully we can get this
+footage to display now.
+
+00:02:28.000 --> 00:02:31.910
+SPEAKER 2: It's from the PWA
+Summit in Amsterdam, 2016,
+
+00:02:31.910 --> 00:02:32.420
+I want to
+
+00:02:32.420 --> 00:02:33.837
+SPEAKER 1: Or
+something like that,
+
+00:02:33.837 --> 00:02:35.720
+and it was-- so his
+name, Matt Gaunt.
+
+00:02:35.720 --> 00:02:37.768
+But while he was
+talking to camera--
+
+00:02:37.768 --> 00:02:39.810
+SPEAKER 2: The editors
+just call him Maunt Gaunt.
+
+00:02:39.810 --> 00:02:40.100
+[LAUGHS]
+
+00:02:40.100 --> 00:02:41.058
+SPEAKER 1: Maunt Gaunt.
+
+00:02:41.058 --> 00:02:44.300
+It was like, I like his surname
+so much, we'll put it twice.
+
+00:02:44.300 --> 00:02:45.050
+So that was it.
+
+00:02:45.050 --> 00:02:45.780
+That was his--
+
+00:02:45.780 --> 00:02:46.920
+SPEAKER 2: And
+that's-- his name gone.
+
+00:02:46.920 --> 00:02:47.570
+SPEAKER 1: I think
+that's why he had
+
+00:02:47.570 --> 00:02:49.528
+to leave the team because
+it was just like, all
+
+00:02:49.528 --> 00:02:51.525
+right, Maunty, how's it going?
+
+00:02:51.525 --> 00:02:52.150
+SPEAKER 2: Yes.
+
+00:02:52.150 --> 00:02:53.860
+So he was our push person.
+
+00:02:53.860 --> 00:02:54.110
+SPEAKER 1: Push person.
+
+00:02:54.110 --> 00:02:55.068
+SPEAKER 2: And he left.
+
+00:02:55.068 --> 00:02:57.290
+And things changed.
+
+00:02:57.290 --> 00:02:59.713
+And we had nobody
+update the document.
+
+00:02:59.713 --> 00:03:00.380
+SPEAKER 1: Good.
+
+00:03:00.380 --> 00:03:00.978
+Excellent.
+
+00:03:00.978 --> 00:03:02.270
+SPEAKER 2: This is how we work.
+
+00:03:02.270 --> 00:03:03.345
+Either way, moving on.
+
+00:03:03.345 --> 00:03:04.220
+SPEAKER 1: All right.
+
+00:03:04.220 --> 00:03:05.300
+SPEAKER 2: Web Push.
+
+00:03:05.300 --> 00:03:06.020
+SPEAKER 1: Good.
+
+00:03:06.020 --> 00:03:07.395
+SPEAKER 2: Let's
+talk about this.
+
+00:03:07.395 --> 00:03:12.417
+So it is now an open protocol
+standardized by the IETF.
+
+00:03:12.417 --> 00:03:14.000
+All the browsers
+that do implement it,
+
+00:03:14.000 --> 00:03:16.550
+implement that
+specific protocol.
+
+00:03:16.550 --> 00:03:19.780
+And that is pretty much every
+browser apart from Safari.
+
+00:03:19.780 --> 00:03:22.370
+SPEAKER 1: Yes, Safari doesn't
+have support for Web Push.
+
+00:03:22.370 --> 00:03:24.008
+SPEAKER 2: Let's
+take a look at this.
+
+00:03:24.008 --> 00:03:26.300
+So the first thing that you
+need for push notifications
+
+00:03:26.300 --> 00:03:28.760
+is to have a push handler
+in your service worker.
+
+00:03:28.760 --> 00:03:32.420
+And this may just be to show
+a notification irrespective
+
+00:03:32.420 --> 00:03:33.510
+of push.
+
+00:03:33.510 --> 00:03:35.010
+But you need to
+show a notification.
+
+00:03:35.010 --> 00:03:38.690
+So what you do is you just add
+an event listener for push.
+
+00:03:38.690 --> 00:03:41.390
+And then it's usually a good
+idea to check if you actually
+
+00:03:41.390 --> 00:03:44.210
+ever got permission from
+the user because otherwise,
+
+00:03:44.210 --> 00:03:46.860
+the [? notification ?]
+call will [? throw. ?]
+
+00:03:46.860 --> 00:03:49.200
+SPEAKER 1: So it's
+interesting that actually--
+
+00:03:49.200 --> 00:03:51.260
+as far as I'm
+aware-- every browser
+
+00:03:51.260 --> 00:03:55.190
+will bundle the push
+notification permission
+
+00:03:55.190 --> 00:03:57.088
+and the notification permission.
+
+00:03:57.088 --> 00:03:58.880
+Push permission and
+notification permission
+
+00:03:58.880 --> 00:03:59.430
+become the same thing.
+
+00:03:59.430 --> 00:04:00.055
+SPEAKER 2: Yes.
+
+00:04:00.055 --> 00:04:02.685
+If they ask for a
+subscribe later on,
+
+00:04:02.685 --> 00:04:04.310
+the user will get
+asked for permission.
+
+00:04:04.310 --> 00:04:06.310
+But it doesn't mean that
+you couldn't get a push
+
+00:04:06.310 --> 00:04:07.760
+event without the
+user ever having
+
+00:04:07.760 --> 00:04:09.620
+consented to notifications.
+
+00:04:09.620 --> 00:04:12.200
+SPEAKER 1: Not in Chrome.
+
+00:04:12.200 --> 00:04:13.130
+SPEAKER 2: Really?
+
+00:04:13.130 --> 00:04:13.797
+SPEAKER 1: Yeah.
+
+00:04:13.797 --> 00:04:17.149
+When you subscribe for push, the
+permission you get there that
+
+00:04:17.149 --> 00:04:18.649
+says, do you want push or not?
+
+00:04:18.649 --> 00:04:21.137
+If you say allow, it will give
+you notification permission
+
+00:04:21.137 --> 00:04:21.970
+as well [INAUDIBLE].
+
+00:04:21.970 --> 00:04:24.560
+SPEAKER 2: But I can
+still get a push event
+
+00:04:24.560 --> 00:04:28.100
+without the user ever having
+been asked for permission,
+
+00:04:28.100 --> 00:04:29.270
+I think.
+
+00:04:29.270 --> 00:04:32.302
+At least you could trigger
+it by dev tools, for example.
+
+00:04:32.302 --> 00:04:33.010
+SPEAKER 1: Maybe.
+
+00:04:33.010 --> 00:04:33.960
+But I would say--
+
+00:04:33.960 --> 00:04:34.830
+[LAUGHTER]
+
+00:04:34.830 --> 00:04:36.830
+I would say otherwise,
+I'm pretty sure not--
+
+00:04:36.830 --> 00:04:37.400
+SPEAKER 2: Potentially.
+
+00:04:37.400 --> 00:04:38.140
+SPEAKER 1: It's
+definitely not in Chrome.
+
+00:04:38.140 --> 00:04:38.990
+SPEAKER 2: It's
+definitely not a bad thing
+
+00:04:38.990 --> 00:04:40.902
+to check before so
+the code doesn't throw
+
+00:04:40.902 --> 00:04:42.110
+because throwing is usually--
+
+00:04:42.110 --> 00:04:42.950
+SPEAKER 1: It's
+definitely possible
+
+00:04:42.950 --> 00:04:45.350
+that other browsers may
+diverge those two things.
+
+00:04:45.350 --> 00:04:47.308
+SPEAKER 2: Or you could
+still get a push event,
+
+00:04:47.308 --> 00:04:49.730
+but the user has since
+then rejected your--
+
+00:04:49.730 --> 00:04:53.210
+or has removed your permission
+to show notifications, also,
+
+00:04:53.210 --> 00:04:55.280
+I think, a thing that
+could be happening.
+
+00:04:55.280 --> 00:04:56.703
+I'm not too sure about that.
+
+00:04:56.703 --> 00:04:58.370
+Either way, I'm just
+trying to justify--
+
+00:04:58.370 --> 00:04:59.613
+just do a check.
+
+00:04:59.613 --> 00:05:00.530
+That's all I'm saying.
+
+00:05:00.530 --> 00:05:01.050
+SPEAKER 1: No, that's good.
+
+00:05:01.050 --> 00:05:03.080
+SPEAKER 2: So what happens in
+a push event, you get an event.
+
+00:05:03.080 --> 00:05:05.060
+And then the event
+has a dot data added,
+
+00:05:05.060 --> 00:05:07.640
+which works very similar
+to a fetch response.
+
+00:05:07.640 --> 00:05:12.890
+And then you can do unmarked
+lists, text, JSON array buffer,
+
+00:05:12.890 --> 00:05:13.890
+and that's what you get.
+
+00:05:13.890 --> 00:05:15.920
+And then you can use the
+show notification API
+
+00:05:15.920 --> 00:05:18.363
+to actually show a
+notification on the system.
+
+00:05:18.363 --> 00:05:20.030
+On an Android, it
+will be a notification
+
+00:05:20.030 --> 00:05:21.440
+on the notification bar.
+
+00:05:21.440 --> 00:05:23.030
+On Mac OS, Windows,
+[INAUDIBLE] will
+
+00:05:23.030 --> 00:05:25.242
+be one of these on-screen
+display notifications.
+
+00:05:25.242 --> 00:05:26.825
+They're there for a
+couple of seconds.
+
+00:05:26.825 --> 00:05:27.530
+There you go.
+
+00:05:27.530 --> 00:05:31.760
+This is pretty much the
+notification part of Web Push.
+
+00:05:31.760 --> 00:05:33.260
+That's done.
+
+00:05:33.260 --> 00:05:34.940
+Let's talk about the
+interesting thing.
+
+00:05:34.940 --> 00:05:37.690
+And in this part, we're going
+to talk about cryptography.
+
+00:05:37.690 --> 00:05:38.690
+SPEAKER 1: Cryptography.
+
+00:05:38.690 --> 00:05:40.820
+SPEAKER 2: Well, actually,
+we're not going to talk about it
+
+00:05:40.820 --> 00:05:42.190
+because one of the
+golden rules, I think--
+
+00:05:42.190 --> 00:05:43.273
+and everybody knows this--
+
+00:05:43.273 --> 00:05:45.530
+don't roll your own crypto.
+
+00:05:45.530 --> 00:05:46.490
+The spec is out there.
+
+00:05:46.490 --> 00:05:47.930
+And it's actually very readable.
+
+00:05:47.930 --> 00:05:51.350
+How do you need to encrypt
+which data to actually
+
+00:05:51.350 --> 00:05:53.060
+be compatible to the protocol?
+
+00:05:53.060 --> 00:05:56.630
+But pretty much every language
+has a Web Push library that
+
+00:05:56.630 --> 00:05:58.250
+encapsulates all of that logic.
+
+00:05:58.250 --> 00:06:00.590
+So I would recommend
+not doing it yourself.
+
+00:06:00.590 --> 00:06:02.120
+Use libraries, and
+you will actually
+
+00:06:02.120 --> 00:06:05.283
+have a very pleasant experience
+of just making it work.
+
+00:06:05.283 --> 00:06:07.700
+SPEAKER 1: Yeah, I remember
+the days when this was speced.
+
+00:06:07.700 --> 00:06:09.660
+And there was a lot of--
+
+00:06:09.660 --> 00:06:11.740
+so the reason that
+we use crypto here
+
+00:06:11.740 --> 00:06:13.743
+is for the body of
+the push, right?
+
+00:06:13.743 --> 00:06:15.410
+SPEAKER 2: Well, not
+only that, but also
+
+00:06:15.410 --> 00:06:17.060
+just for being allowed to
+push in the first place,
+
+00:06:17.060 --> 00:06:18.830
+that you can actually
+prove the user
+
+00:06:18.830 --> 00:06:20.580
+has granted you permission.
+
+00:06:20.580 --> 00:06:21.080
+But--
+
+00:06:21.080 --> 00:06:23.325
+SPEAKER 1: Right, interesting.
+
+00:06:23.325 --> 00:06:24.950
+SPEAKER 2: That's
+multiple levels here.
+
+00:06:24.950 --> 00:06:27.890
+SPEAKER 1: But part of the
+reason that it came about was
+
+00:06:27.890 --> 00:06:33.233
+the service delivering the
+push messages-- be it Chrome,
+
+00:06:33.233 --> 00:06:35.150
+maybe eventually Apple
+one day, or Telefonica,
+
+00:06:35.150 --> 00:06:39.430
+who I think certainly used to
+do this stuff for Firefox--
+
+00:06:39.430 --> 00:06:41.060
+they don't want to
+see your messages.
+
+00:06:41.060 --> 00:06:43.070
+SPEAKER 2: We don't want them
+to see our messages, right?
+
+00:06:43.070 --> 00:06:43.730
+SPEAKER 1: Yes, we don't.
+
+00:06:43.730 --> 00:06:44.688
+And they didn't either.
+
+00:06:44.688 --> 00:06:47.243
+It was, let's reach this
+mutual understanding
+
+00:06:47.243 --> 00:06:49.160
+that as we are just
+delivering these messages,
+
+00:06:49.160 --> 00:06:50.360
+we don't wan the ability to--
+
+00:06:50.360 --> 00:06:51.270
+SPEAKER 2: For them
+it's just binary blobs.
+
+00:06:51.270 --> 00:06:52.590
+And it should stay that way.
+
+00:06:52.590 --> 00:06:54.140
+SPEAKER 1: Yes, we
+don't want Michael
+
+00:06:54.140 --> 00:06:55.640
+to know that-- we
+don't want to know
+
+00:06:55.640 --> 00:06:59.080
+that Michael has a new baby
+boy or something like that.
+
+00:06:59.080 --> 00:07:00.710
+It's just, we're
+not not interested.
+
+00:07:00.710 --> 00:07:03.520
+It's just we just want to
+marshal, let data around.
+
+00:07:03.520 --> 00:07:06.130
+But yes, we knew it was going
+to be slightly more effort
+
+00:07:06.130 --> 00:07:07.010
+for developers.
+
+00:07:07.010 --> 00:07:09.710
+SPEAKER 2: But to be fair, the
+libraries that came out of it--
+
+00:07:09.710 --> 00:07:13.490
+I've been looking
+at the Web Push NPM
+
+00:07:13.490 --> 00:07:16.310
+package, which is written by one
+of the engineers from Mozilla.
+
+00:07:16.310 --> 00:07:17.895
+And it's not only
+very well written--
+
+00:07:17.895 --> 00:07:20.270
+as in you can actually go and
+read the code to understand
+
+00:07:20.270 --> 00:07:21.183
+what's going on--
+
+00:07:21.183 --> 00:07:22.350
+but the API is super simple.
+
+00:07:22.350 --> 00:07:23.940
+So you can actually get
+started quite quickly.
+
+00:07:23.940 --> 00:07:25.210
+SPEAKER 1: So this is on the--
+
+00:07:25.210 --> 00:07:25.660
+SPEAKER 2: This is actually--
+
+00:07:25.660 --> 00:07:26.780
+SPEAKER 1: So this is
+on the surface, right?
+
+00:07:26.780 --> 00:07:27.320
+SPEAKER 2: It might be surface.
+
+00:07:27.320 --> 00:07:29.660
+It could actually be
+locally doing development.
+
+00:07:29.660 --> 00:07:32.505
+Just generate-- you need a
+private key and a public key.
+
+00:07:32.505 --> 00:07:34.880
+And so there is a function
+called-- this whole process is
+
+00:07:34.880 --> 00:07:35.870
+called vapid.
+
+00:07:35.870 --> 00:07:38.960
+That's the name for
+the algorithm, I guess.
+
+00:07:38.960 --> 00:07:40.790
+It's voluntary
+something, something.
+
+00:07:40.790 --> 00:07:41.630
+I don't remember.
+
+00:07:41.630 --> 00:07:42.860
+It doesn't even
+matter that much.
+
+00:07:42.860 --> 00:07:45.360
+But basically, you need this
+private key and the public key.
+
+00:07:45.360 --> 00:07:47.990
+The private key is obviously
+private, so keep it safe.
+
+00:07:47.990 --> 00:07:49.910
+The public key,
+you can publicize.
+
+00:07:49.910 --> 00:07:52.130
+Put it in your
+front end anywhere.
+
+00:07:52.130 --> 00:07:54.647
+But you will need the private
+key on your server side later.
+
+00:07:54.647 --> 00:07:56.480
+So make sure you get
+it there because that's
+
+00:07:56.480 --> 00:07:59.180
+what you need to sign with
+to actually be able to push
+
+00:07:59.180 --> 00:08:00.740
+the message to the provider.
+
+00:08:00.740 --> 00:08:03.818
+SPEAKER 1: But the public
+key will go to the client
+
+00:08:03.818 --> 00:08:04.610
+to do the decoding?
+
+00:08:04.610 --> 00:08:05.902
+SPEAKER 2: To client side, yes.
+
+00:08:05.902 --> 00:08:07.180
+SPEAKER 1: Right, I see.
+
+00:08:07.180 --> 00:08:09.388
+SPEAKER 2: So yeah, this is
+basically the first call.
+
+00:08:09.388 --> 00:08:11.780
+You just import the Web
+Push library [INAUDIBLE]
+
+00:08:11.780 --> 00:08:14.363
+to generate your [? keeper. ?]
+And that's the first step done.
+
+00:08:14.363 --> 00:08:17.570
+So once you have those in place,
+we are now on the client side.
+
+00:08:17.570 --> 00:08:20.273
+So in there, I need to
+somehow get my public key.
+
+00:08:20.273 --> 00:08:22.190
+So you could bundle it
+with your [? web app ?]
+
+00:08:22.190 --> 00:08:23.630
+via Webpack or Rollup.
+
+00:08:23.630 --> 00:08:25.760
+You could fetch it from
+your server as a resource.
+
+00:08:25.760 --> 00:08:26.820
+It doesn't really matter.
+
+00:08:26.820 --> 00:08:27.380
+You just need to get it.
+
+00:08:27.380 --> 00:08:29.120
+And it's public, so you can
+just put it on the internet.
+
+00:08:29.120 --> 00:08:29.662
+Nobody cares.
+
+00:08:29.662 --> 00:08:33.230
+SPEAKER 1: The public key
+is unique to your site not
+
+00:08:33.230 --> 00:08:33.733
+per user.
+
+00:08:33.733 --> 00:08:34.400
+Is that correct?
+
+00:08:34.400 --> 00:08:35.309
+SPEAKER 2: No, it's
+unique to site.
+
+00:08:35.309 --> 00:08:35.780
+Yeah.
+
+00:08:35.780 --> 00:08:36.419
+SPEAKER 1: I see.
+
+00:08:36.419 --> 00:08:37.789
+SPEAKER 2: Technically,
+you can even have multiple,
+
+00:08:37.789 --> 00:08:39.120
+but it doesn't quite make sense.
+
+00:08:39.120 --> 00:08:39.912
+But it's up to you.
+
+00:08:39.912 --> 00:08:41.380
+You can generate those.
+
+00:08:41.380 --> 00:08:42.289
+It's free.
+
+00:08:42.289 --> 00:08:43.130
+SPEAKER 1: OK.
+
+00:08:43.130 --> 00:08:44.960
+SPEAKER 2: Once I
+have the public key,
+
+00:08:44.960 --> 00:08:47.210
+I will then wait for
+my service worker
+
+00:08:47.210 --> 00:08:49.670
+to be ready, available,
+and running because that
+
+00:08:49.670 --> 00:08:51.500
+is the one that takes
+care of anything it
+
+00:08:51.500 --> 00:08:53.060
+has to with that push.
+
+00:08:53.060 --> 00:08:56.180
+And then I can use
+the push and enter
+
+00:08:56.180 --> 00:09:00.095
+property on the service worker
+to ask for a subscription.
+
+00:09:00.095 --> 00:09:03.140
+And as it is asking the
+user just to subscribe,
+
+00:09:03.140 --> 00:09:05.820
+basically implies the
+permission for notifications.
+
+00:09:05.820 --> 00:09:07.940
+So this will pop up
+the permission dialog
+
+00:09:07.940 --> 00:09:10.940
+and wait for it to response.
+
+00:09:10.940 --> 00:09:14.110
+And actually, user visible
+only has to be true.
+
+00:09:14.110 --> 00:09:16.390
+Currently, on the
+web we don't allow
+
+00:09:16.390 --> 00:09:20.530
+push notifications that don't
+trigger visual notifications.
+
+00:09:20.530 --> 00:09:22.330
+So maybe at some
+point in the future
+
+00:09:22.330 --> 00:09:25.810
+that would be possible to
+do a background sync thing.
+
+00:09:25.810 --> 00:09:26.540
+Don't know yet.
+
+00:09:26.540 --> 00:09:28.420
+For now, only with a permission.
+
+00:09:28.420 --> 00:09:29.660
+SPEAKER 1: Yeah.
+
+00:09:29.660 --> 00:09:33.580
+Well, one of the things that
+we would like to do with user
+
+00:09:33.580 --> 00:09:35.100
+visible kind of--
+
+00:09:35.100 --> 00:09:36.920
+[LAUGHTER]
+
+00:09:36.920 --> 00:09:38.450
+So here's a situation.
+
+00:09:38.450 --> 00:09:41.690
+Say I deliver a push message
+to your phone to say,
+
+00:09:41.690 --> 00:09:43.210
+there's a new chat message.
+
+00:09:43.210 --> 00:09:46.060
+But I know that you--
+
+00:09:46.060 --> 00:09:47.650
+by your user ID--
+
+00:09:47.650 --> 00:09:50.440
+have just checked that message
+on your desktop machine.
+
+00:09:50.440 --> 00:09:53.120
+The ideal thing would be then
+to hide the push message--
+
+00:09:53.120 --> 00:09:53.560
+SPEAKER 2: That's [INAUDIBLE].
+
+00:09:53.560 --> 00:09:54.782
+SPEAKER 1: --on your mobile.
+
+00:09:54.782 --> 00:09:56.740
+But then that is no longer
+a user visible thing
+
+00:09:56.740 --> 00:09:59.230
+because if you
+granted the ability
+
+00:09:59.230 --> 00:10:01.030
+to do that, then you've
+granted the ability
+
+00:10:01.030 --> 00:10:03.180
+to do invisible push work
+because you would just
+
+00:10:03.180 --> 00:10:04.720
+show a notification, hide
+notification, job done,
+
+00:10:04.720 --> 00:10:05.530
+who cares?
+
+00:10:05.530 --> 00:10:08.860
+So that's one of the things
+where there's a really good use
+
+00:10:08.860 --> 00:10:09.670
+case there for it.
+
+00:10:09.670 --> 00:10:11.295
+SPEAKER 2: And the
+reason we don't just
+
+00:10:11.295 --> 00:10:14.600
+want to allow notifications
+without any visual effect
+
+00:10:14.600 --> 00:10:15.293
+is what?
+
+00:10:15.293 --> 00:10:16.960
+SPEAKER 1: It would
+give you the ability
+
+00:10:16.960 --> 00:10:20.210
+to just send a push
+message every 10 seconds,
+
+00:10:20.210 --> 00:10:22.857
+attract the user through
+the different IP--
+
+00:10:22.857 --> 00:10:24.940
+you're running a service
+worker in the background.
+
+00:10:24.940 --> 00:10:25.650
+Why not do some bitcoin mining?
+
+00:10:25.650 --> 00:10:27.025
+SPEAKER 2:
+[INAUDIBLE] basically?
+
+00:10:27.025 --> 00:10:28.835
+SPEAKER 1: Privacy, battery--
+
+00:10:28.835 --> 00:10:31.000
+SPEAKER 2: Exploitation,
+all kinds of things.
+
+00:10:31.000 --> 00:10:32.050
+SPEAKER 1: All of
+the bad things.
+
+00:10:32.050 --> 00:10:32.770
+SPEAKER 2: As
+always, [INAUDIBLE]
+
+00:10:32.770 --> 00:10:33.990
+to think about these things.
+
+00:10:33.990 --> 00:10:34.410
+SPEAKER 1: Yes.
+
+00:10:34.410 --> 00:10:35.830
+SPEAKER 2: So, basically,
+what a pattern is like--
+
+00:10:35.830 --> 00:10:38.800
+I'm going to promise I'm always
+going to show notification.
+
+00:10:38.800 --> 00:10:40.870
+And if you don't, Chrome
+will show one for you.
+
+00:10:40.870 --> 00:10:43.220
+So it's not like you
+can get around it.
+
+00:10:43.220 --> 00:10:44.740
+And we provide our public key.
+
+00:10:44.740 --> 00:10:47.590
+So that way, we can use a
+private key to sign things.
+
+00:10:47.590 --> 00:10:49.957
+And the clients then can check
+it actually came from us.
+
+00:10:49.957 --> 00:10:52.540
+SPEAKER 1: And this is how it's
+also going to decode the body?
+
+00:10:52.540 --> 00:10:52.800
+SPEAKER 2: Yeah.
+
+00:10:52.800 --> 00:10:53.630
+SPEAKER 1: Right.
+
+00:10:53.630 --> 00:10:54.130
+Gotcha.
+
+00:10:54.130 --> 00:10:58.480
+SPEAKER 2: So now we get back
+once the user actually presses
+
+00:10:58.480 --> 00:10:59.830
+allow, you can show me--
+
+00:10:59.830 --> 00:11:01.410
+you can send me
+push notifications--
+
+00:11:01.410 --> 00:11:02.550
+we will get a subscription.
+
+00:11:02.550 --> 00:11:04.330
+And I find this interesting
+because it's actually
+
+00:11:04.330 --> 00:11:05.530
+very little data in there.
+
+00:11:05.530 --> 00:11:09.160
+There is the endpoint that the
+server side later on will use
+
+00:11:09.160 --> 00:11:11.380
+to send push notifications out.
+
+00:11:11.380 --> 00:11:14.500
+And so in Chrome, it will
+be Firebase Cloud Messaging
+
+00:11:14.500 --> 00:11:15.865
+dot Google APIs dot com.
+
+00:11:15.865 --> 00:11:18.490
+In Mozilla, will be
+on a Mozilla server.
+
+00:11:18.490 --> 00:11:20.030
+I'm pretty sure
+[INAUDIBLE] is going
+
+00:11:20.030 --> 00:11:21.640
+to use a Microsoft server.
+
+00:11:21.640 --> 00:11:22.770
+I'm not sure about that.
+
+00:11:22.770 --> 00:11:25.285
+And Safari, as I said,
+it doesn't have it yet.
+
+00:11:25.285 --> 00:11:26.410
+There's an expiration time.
+
+00:11:26.410 --> 00:11:28.152
+And there's the
+keys, which are for
+
+00:11:28.152 --> 00:11:29.360
+the Diffie-Hellman handshake.
+
+00:11:29.360 --> 00:11:30.560
+But it doesn't really
+matter right now.
+
+00:11:30.560 --> 00:11:32.920
+But basically, there is no
+other personal data in here.
+
+00:11:32.920 --> 00:11:34.960
+It's not like there's a
+lot of leakage happening
+
+00:11:34.960 --> 00:11:37.460
+about what the user is doing
+or what they're subscribing to.
+
+00:11:37.460 --> 00:11:39.730
+It's literally just
+the cryptographic keys
+
+00:11:39.730 --> 00:11:43.030
+that are needed to make this
+whole thing happen securely
+
+00:11:43.030 --> 00:11:45.850
+on a zero-knowledge approach.
+
+00:11:45.850 --> 00:11:47.380
+So we get this back.
+
+00:11:47.380 --> 00:11:49.240
+And then what we
+do, as I said, we
+
+00:11:49.240 --> 00:11:50.807
+need to send this
+to our server side.
+
+00:11:50.807 --> 00:11:52.390
+So one way to do
+that would be a fetch
+
+00:11:52.390 --> 00:11:57.160
+that we just posted to
+my serverless function,
+
+00:11:57.160 --> 00:11:58.220
+wherever you're running.
+
+00:11:58.220 --> 00:12:00.460
+You need to store this
+subscription thing
+
+00:12:00.460 --> 00:12:02.540
+as a stringify JSON
+blob on the server side
+
+00:12:02.540 --> 00:12:05.530
+because you need it to actually
+send a notification later on.
+
+00:12:05.530 --> 00:12:07.210
+SPEAKER 1: And this is going
+to be unique to that user.
+
+00:12:07.210 --> 00:12:08.210
+So this is something
+that you would--
+
+00:12:08.210 --> 00:12:08.760
+SPEAKER 2: It is very
+unique to that user.
+
+00:12:08.760 --> 00:12:11.380
+For every user, you will get a
+different kind of subscription
+
+00:12:11.380 --> 00:12:13.900
+blob that you need.
+
+00:12:13.900 --> 00:12:16.805
+So now on the server side,
+we are now at the point
+
+00:12:16.805 --> 00:12:18.430
+where maybe at some
+point in the future
+
+00:12:18.430 --> 00:12:20.040
+we want to send a
+push notification.
+
+00:12:20.040 --> 00:12:22.870
+So we know we have our
+keys on the server side.
+
+00:12:22.870 --> 00:12:25.698
+We know we have subscriptions
+for a user on the server side.
+
+00:12:25.698 --> 00:12:27.490
+So basically, we need
+to find all the users
+
+00:12:27.490 --> 00:12:30.670
+that we want to send something
+to, loop over them, and now do
+
+00:12:30.670 --> 00:12:31.730
+something.
+
+00:12:31.730 --> 00:12:33.490
+And again, Web Push--
+
+00:12:33.490 --> 00:12:36.580
+the library makes it quite
+easy because we get our keys.
+
+00:12:36.580 --> 00:12:40.140
+We get our subscription
+for that particular user.
+
+00:12:40.140 --> 00:12:43.427
+You set our vapid details,
+which is the public key
+
+00:12:43.427 --> 00:12:44.260
+and the private key.
+
+00:12:44.260 --> 00:12:47.460
+They also demand a contact
+email or multiple contact
+
+00:12:47.460 --> 00:12:48.960
+emails in case
+something goes wrong,
+
+00:12:48.960 --> 00:12:52.030
+you just want to have a point
+of contact to send [INAUDIBLE]..
+
+00:12:52.030 --> 00:12:53.270
+SPEAKER 1: Make sense.
+
+00:12:53.270 --> 00:12:55.970
+SPEAKER 2: And then you
+just send the notification.
+
+00:12:55.970 --> 00:12:59.530
+So basically, we turn the
+push subscription back
+
+00:12:59.530 --> 00:13:00.988
+into a JSON blob.
+
+00:13:00.988 --> 00:13:01.780
+Put our body there.
+
+00:13:01.780 --> 00:13:02.488
+It can be string.
+
+00:13:02.488 --> 00:13:05.045
+It can be another stringified
+JSON object, whatever.
+
+00:13:05.045 --> 00:13:06.670
+That will take care
+of the inscription.
+
+00:13:06.670 --> 00:13:08.650
+And hit that end point
+from the inscription,
+
+00:13:08.650 --> 00:13:10.638
+and send it to the user.
+
+00:13:10.638 --> 00:13:11.680
+SPEAKER 1: And that's it?
+
+00:13:11.680 --> 00:13:12.280
+SPEAKER 2: And that's it.
+
+00:13:12.280 --> 00:13:12.640
+That's all.
+
+00:13:12.640 --> 00:13:14.182
+That's how you do
+push notifications.
+
+00:13:14.182 --> 00:13:16.150
+I was quite amazed because
+I literally just ran
+
+00:13:16.150 --> 00:13:18.160
+through this
+library, wrote it up,
+
+00:13:18.160 --> 00:13:19.570
+and it worked on the first try.
+
+00:13:19.570 --> 00:13:21.110
+And that never happens.
+
+00:13:21.110 --> 00:13:23.373
+SPEAKER 1: So this is
+the thing because I've--
+
+00:13:23.373 --> 00:13:25.540
+I know bits about the service
+worker outside of Push
+
+00:13:25.540 --> 00:13:27.400
+because we were doing spec
+work around that time.
+
+00:13:27.400 --> 00:13:29.150
+But I've never done
+the service side of it
+
+00:13:29.150 --> 00:13:31.090
+because it's like,
+oh, it involves keys.
+
+00:13:31.090 --> 00:13:33.880
+It's probably going
+to be hard and I'm not
+
+00:13:33.880 --> 00:13:35.910
+going to touch until
+I really need to.
+
+00:13:35.910 --> 00:13:36.670
+This is all right.
+
+00:13:36.670 --> 00:13:38.587
+SPEAKER 2: It's pretty
+approachable, isn't it?
+
+00:13:38.587 --> 00:13:41.590
+So we now have this on a branch
+in our Chrome [INAUDIBLE]..
+
+00:13:41.590 --> 00:13:45.460
+We still have some tuning,
+some edge cases and stuff
+
+00:13:45.460 --> 00:13:47.295
+to work out and allow
+people to unsubscribe
+
+00:13:47.295 --> 00:13:49.420
+if they don't want
+notifications anymore because we
+
+00:13:49.420 --> 00:13:50.960
+want to be nice about this.
+
+00:13:50.960 --> 00:13:53.122
+But other than that,
+we're up and running.
+
+00:13:53.122 --> 00:13:55.080
+SPEAKER 1: We look forward
+to spamming everyone
+
+00:13:55.080 --> 00:13:56.010
+with pointless stuff.
+
+00:13:56.010 --> 00:13:59.380
+SPEAKER 2: Subscribe to
+this YouTube channel.
+
+00:13:59.380 --> 00:14:02.310
+SPEAKER 1: We moderate the
+comments for YouTube stuff.
+
+00:14:02.310 --> 00:14:04.100
+SPEAKER 2: Yes.
+
+00:14:04.100 --> 00:14:05.850
+SPEAKER 1: A couple
+of episodes ago, there
+
+00:14:05.850 --> 00:14:08.260
+was a guy posting a comment.
+
+00:14:08.260 --> 00:14:10.710
+And he was saying,
+I think you could
+
+00:14:10.710 --> 00:14:13.080
+have edited out to the
+disgusting flatulence noise
+
+00:14:13.080 --> 00:14:13.807
+at 1--
+
+00:14:13.807 --> 00:14:15.390
+did you see this
+comment [INAUDIBLE]??
+
+00:14:15.390 --> 00:14:16.807
+SPEAKER 2: I did
+see the comments.
+
+00:14:16.807 --> 00:14:18.473
+SPEAKER 1: Did you
+go and listen to what
+
+00:14:18.473 --> 00:14:19.750
+the actual time stamp it was?
+
+00:14:19.750 --> 00:14:21.660
+SPEAKER 2: I think it
+was me going, [GASPS]..
+
+00:14:21.660 --> 00:14:22.740
+SPEAKER 1: Well, I
+thought it was me.
+
+00:14:22.740 --> 00:14:24.190
+But it was one of us doing that.
+
+00:14:24.190 --> 00:14:27.110
+That was just-- because I said,
+have a look at that [GASPS]..
+
+00:14:27.110 --> 00:14:31.380
+And that guy posted 15 comments.
+
+00:14:31.380 --> 00:14:32.130
+SPEAKER 2: Really?
+
+00:14:32.130 --> 00:14:36.920
+SPEAKER 1: It was 15 of just
+variations on that theme.
+
+00:14:36.920 --> 00:14:38.280
+He was so angry about that.
+
+00:14:38.280 --> 00:14:41.490
+SPEAKER 2: But is that what
+his flatulence sounds like?
+
+00:14:41.490 --> 00:14:42.290
+SPEAKER 1: Yes.
+
+00:14:42.290 --> 00:14:42.650
+SPEAKER 2: Because that's--
+
+00:14:42.650 --> 00:14:43.608
+SPEAKER 1: You gasping.
+
+00:14:43.608 --> 00:14:44.930
+[LAUGHTER]
+

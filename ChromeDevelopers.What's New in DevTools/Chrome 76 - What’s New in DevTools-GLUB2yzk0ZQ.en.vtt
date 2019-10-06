@@ -1,0 +1,356 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.374
+[MUSIC PLAYING]
+
+00:00:05.395 --> 00:00:06.270
+KAYCE BASQUES: Hello.
+
+00:00:06.270 --> 00:00:09.720
+Here's what's new in
+DevTools in Chrome 76.
+
+00:00:09.720 --> 00:00:12.270
+First up, autocomplete
+in the styles pane
+
+00:00:12.270 --> 00:00:14.550
+now supports keyword values.
+
+00:00:14.550 --> 00:00:16.740
+Here, I want to
+make this H1 bold.
+
+00:00:16.740 --> 00:00:18.510
+I can't remember
+what property I need,
+
+00:00:18.510 --> 00:00:20.820
+but I know the value
+should be bold.
+
+00:00:20.820 --> 00:00:23.550
+In this older version of
+Chrome, when I type bold,
+
+00:00:23.550 --> 00:00:25.300
+nothing shows up.
+
+00:00:25.300 --> 00:00:29.490
+Now in Chrome 76 when I type
+bold, stylus pane autocompletes
+
+00:00:29.490 --> 00:00:32.920
+the font weight bold, which
+is exactly what I want.
+
+00:00:32.920 --> 00:00:35.950
+In general, if you remember
+what keyword value you want
+
+00:00:35.950 --> 00:00:39.490
+but can't remember the property
+name, try typing the value
+
+00:00:39.490 --> 00:00:43.930
+and the autocomplete should
+help you finish the declaration.
+
+00:00:43.930 --> 00:00:47.330
+There is a new UI
+for network settings.
+
+00:00:47.330 --> 00:00:50.660
+On this older version of
+Chrome, note the throttling menu
+
+00:00:50.660 --> 00:00:53.730
+and offline checkbox
+here on the right.
+
+00:00:53.730 --> 00:00:56.090
+When I make my window
+narrow, I can no longer
+
+00:00:56.090 --> 00:00:58.100
+access those options.
+
+00:00:58.100 --> 00:01:01.460
+To fix this usability
+issue, Chrome 76 now
+
+00:01:01.460 --> 00:01:04.080
+has a network settings pane.
+
+00:01:04.080 --> 00:01:07.070
+This is where you'll now find
+the options use large request
+
+00:01:07.070 --> 00:01:14.330
+rows, show overview, group by
+frame, and capture screenshots.
+
+00:01:14.330 --> 00:01:16.790
+The network panel now
+has prominent buttons
+
+00:01:16.790 --> 00:01:20.030
+for importing and
+exporting HAR files.
+
+00:01:20.030 --> 00:01:23.690
+After logging network activity,
+press the New export button
+
+00:01:23.690 --> 00:01:28.020
+to download the log as JSON and
+share it with your colleagues.
+
+00:01:28.020 --> 00:01:30.530
+Your colleagues can view
+the log in the network panel
+
+00:01:30.530 --> 00:01:33.680
+by clicking the Import button
+and then selecting the HAR
+
+00:01:33.680 --> 00:01:37.230
+file that you've provided them.
+
+00:01:37.230 --> 00:01:41.100
+HAR exports now include
+WebSocket messages.
+
+00:01:41.100 --> 00:01:43.980
+First, I create a
+WebSocket connection.
+
+00:01:43.980 --> 00:01:47.550
+Then send a message, which
+also gets echoed back.
+
+00:01:47.550 --> 00:01:51.710
+Then click Export to save
+the log as a HAR profile.
+
+00:01:51.710 --> 00:01:56.300
+Then open the file and search
+for WebSocket messages.
+
+00:01:56.300 --> 00:02:00.210
+And I can see the messages
+that I just logged.
+
+00:02:00.210 --> 00:02:03.120
+The memory panel now
+reports total memory usage
+
+00:02:03.120 --> 00:02:04.590
+in real time.
+
+00:02:04.590 --> 00:02:07.110
+Down here is the
+total memory usage.
+
+00:02:07.110 --> 00:02:10.800
+Next to that is the trend
+over the last two minutes.
+
+00:02:10.800 --> 00:02:13.770
+Red text with an up arrow
+means that memory usage
+
+00:02:13.770 --> 00:02:15.360
+is increasing.
+
+00:02:15.360 --> 00:02:18.630
+Green text with a down arrow
+means that memory usage
+
+00:02:18.630 --> 00:02:21.120
+is decreasing.
+
+00:02:21.120 --> 00:02:23.070
+The service worker
+pane now lists
+
+00:02:23.070 --> 00:02:25.920
+port numbers in its titles.
+
+00:02:25.920 --> 00:02:27.720
+Back in this older
+version of Chrome,
+
+00:02:27.720 --> 00:02:30.840
+I've developed a few
+sites on local host.
+
+00:02:30.840 --> 00:02:32.490
+Many of them use
+service workers,
+
+00:02:32.490 --> 00:02:35.400
+and it's not easy to see
+which service worker belongs
+
+00:02:35.400 --> 00:02:36.960
+to which port.
+
+00:02:36.960 --> 00:02:40.050
+In Chrome 76, the port is
+now listed in the title
+
+00:02:40.050 --> 00:02:41.070
+for easier scanning.
+
+00:02:43.580 --> 00:02:47.060
+The application panel now logs
+background fetch and background
+
+00:02:47.060 --> 00:02:48.560
+sync events.
+
+00:02:48.560 --> 00:02:52.760
+To log background fetch events,
+go to the application panel,
+
+00:02:52.760 --> 00:02:56.660
+open the background fetch
+pane, then click Record.
+
+00:02:56.660 --> 00:02:58.700
+After triggering
+background fetch,
+
+00:02:58.700 --> 00:03:01.430
+lifecycle events, like
+background fetch registered,
+
+00:03:01.430 --> 00:03:03.250
+are logged to the table.
+
+00:03:03.250 --> 00:03:06.860
+The background sync
+pane works the same way.
+
+00:03:06.860 --> 00:03:10.070
+The experimental Puppeteer
+for Firefox project
+
+00:03:10.070 --> 00:03:12.920
+was announced at
+Google I/O 2019, which
+
+00:03:12.920 --> 00:03:15.530
+means you can now automate
+Firefox and Chrome
+
+00:03:15.530 --> 00:03:17.900
+with the same node API.
+
+00:03:17.900 --> 00:03:19.700
+Here, I've got a
+sample node script
+
+00:03:19.700 --> 00:03:21.890
+that instantiates
+Firefox in Chrome
+
+00:03:21.890 --> 00:03:25.620
+and runs an integration
+test on both browsers.
+
+00:03:25.620 --> 00:03:29.310
+When I run node example.js,
+Firefox launches.
+
+00:03:29.310 --> 00:03:32.160
+Then the Puppeteer
+documentation site opens.
+
+00:03:32.160 --> 00:03:35.550
+Then page is inserted
+into the search bar.
+
+00:03:35.550 --> 00:03:39.730
+After that, the test is
+repeated with Chrome.
+
+00:03:39.730 --> 00:03:42.040
+By the way, we're mentioning
+Puppeteer in this DevTools
+
+00:03:42.040 --> 00:03:44.230
+video because you can
+use it to automate
+
+00:03:44.230 --> 00:03:48.320
+tasks that were previously
+only possible in DevTools.
+
+00:03:48.320 --> 00:03:51.350
+For example, you can use
+page.screenshot to take
+
+00:03:51.350 --> 00:03:55.160
+screenshots and
+coverage.startJScoverage
+
+00:03:55.160 --> 00:03:58.440
+to extract code coverage data.
+
+00:03:58.440 --> 00:04:00.030
+Here's a bonus tip.
+
+00:04:00.030 --> 00:04:03.060
+Microsoft's Accessibility
+Insights extension
+
+00:04:03.060 --> 00:04:06.420
+has a handy feature for
+visualizing tab stops.
+
+00:04:06.420 --> 00:04:08.580
+For example, I
+open the extension.
+
+00:04:08.580 --> 00:04:10.650
+Go to Ad hoc tools.
+
+00:04:10.650 --> 00:04:12.360
+Enable tab stops.
+
+00:04:12.360 --> 00:04:13.950
+And then as I tab
+through the page,
+
+00:04:13.950 --> 00:04:16.350
+I see a trail of tab stops.
+
+00:04:16.350 --> 00:04:18.930
+To share this visualization
+with colleagues,
+
+00:04:18.930 --> 00:04:21.240
+I open DevTools,
+open the Command menu
+
+00:04:21.240 --> 00:04:24.810
+from the main menu, then run
+the capture full size screenshot
+
+00:04:24.810 --> 00:04:27.400
+command.
+
+00:04:27.400 --> 00:04:28.460
+Thanks for watching.
+
+00:04:28.460 --> 00:04:32.440
+We'll be back in six
+weeks for Chrome 77.
+
+00:04:32.440 --> 00:04:35.490
+[MUSIC PLAYING]
+

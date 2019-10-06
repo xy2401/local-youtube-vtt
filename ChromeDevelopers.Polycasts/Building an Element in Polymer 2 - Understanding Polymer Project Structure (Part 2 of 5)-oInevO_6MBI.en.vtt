@@ -1,0 +1,292 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.332
+[MUSIC PLAYING]
+
+00:00:03.857 --> 00:00:05.190
+ELLIOTT: Hey there, Polycasters.
+
+00:00:05.190 --> 00:00:06.135
+I'm Elliott.
+
+00:00:06.135 --> 00:00:07.510
+Welcome back to
+our series on how
+
+00:00:07.510 --> 00:00:09.675
+to create an element
+in Polymer 2.
+
+00:00:09.675 --> 00:00:11.050
+In this video,
+we're going to get
+
+00:00:11.050 --> 00:00:12.520
+to know our project's layout.
+
+00:00:12.520 --> 00:00:14.980
+When we left off last time,
+we had a live environment
+
+00:00:14.980 --> 00:00:16.360
+of a demo running.
+
+00:00:16.360 --> 00:00:19.430
+Let's open up the project in
+our editor and take a look.
+
+00:00:19.430 --> 00:00:22.510
+So you can see here, we have
+the Polycast checklist/demo,
+
+00:00:22.510 --> 00:00:25.060
+and this just simply
+has demo code.
+
+00:00:25.060 --> 00:00:26.690
+Let's look at the
+actual project itself
+
+00:00:26.690 --> 00:00:29.140
+and look at the
+code in this demo.
+
+00:00:29.140 --> 00:00:31.000
+So going to navigate
+to my desktop,
+
+00:00:31.000 --> 00:00:34.481
+open up Polycast
+checklist, and here we are.
+
+00:00:34.481 --> 00:00:34.980
+Setup.
+
+00:00:37.810 --> 00:00:43.150
+And in this demo, you can see
+/demo, the demo directory,
+
+00:00:43.150 --> 00:00:45.900
+and in there, you'll
+see index.html.
+
+00:00:45.900 --> 00:00:48.630
+Here, you'll see what
+we have over here.
+
+00:00:48.630 --> 00:00:50.130
+You have Hello,
+Polycast Checklist,
+
+00:00:50.130 --> 00:00:54.150
+and you simply just
+have Polycast Checklist,
+
+00:00:54.150 --> 00:00:57.854
+a new element that has been
+created by our project.
+
+00:00:57.854 --> 00:01:00.020
+And so here you'll see a
+demo snippet and a template
+
+00:01:00.020 --> 00:01:02.410
+and things that are inside.
+
+00:01:02.410 --> 00:01:05.080
+So now let's take a look at
+the Polycast Checklist file.
+
+00:01:05.080 --> 00:01:07.430
+So this is where we
+actually define our element.
+
+00:01:07.430 --> 00:01:09.430
+In here, you'll see a
+bunch of different things,
+
+00:01:09.430 --> 00:01:14.380
+like HTML Import where we
+import Polymer, a module,
+
+00:01:14.380 --> 00:01:16.780
+a template where we
+actually display things--
+
+00:01:16.780 --> 00:01:19.780
+so here you can
+see Hello, Prop 1,
+
+00:01:19.780 --> 00:01:22.690
+and over here, you see
+Hello, Polycast Checklist.
+
+00:01:22.690 --> 00:01:26.080
+This Prop 1 right here with
+the double brackets around it
+
+00:01:26.080 --> 00:01:28.240
+is what we call a
+one-way data binding.
+
+00:01:28.240 --> 00:01:30.310
+A one-way data
+binding, all it does
+
+00:01:30.310 --> 00:01:33.140
+is inserts a property
+into the template.
+
+00:01:33.140 --> 00:01:36.070
+And you can see here in
+the Property section,
+
+00:01:36.070 --> 00:01:38.830
+we have a Prop 1 and
+the default value here
+
+00:01:38.830 --> 00:01:40.305
+is Polycast Checklist.
+
+00:01:40.305 --> 00:01:41.930
+We can change this
+to whatever we want.
+
+00:01:41.930 --> 00:01:48.420
+So we can change this
+to, like, Polycasters,
+
+00:01:48.420 --> 00:01:51.735
+save that, go back over
+to our project, refresh.
+
+00:01:51.735 --> 00:01:54.950
+Hello, Polycasters,
+how's it going?
+
+00:01:54.950 --> 00:01:58.040
+And then you'll also see the
+definition of this element.
+
+00:01:58.040 --> 00:02:02.820
+It is a class and it
+extends Polymer element.
+
+00:02:02.820 --> 00:02:07.980
+And below that, you'll see
+window custom elements define,
+
+00:02:07.980 --> 00:02:10.199
+then you have a bunch
+of fancy stuff there.
+
+00:02:10.199 --> 00:02:12.490
+All right, let's go through
+what the fancy stuff means.
+
+00:02:12.490 --> 00:02:15.570
+PolycastChecklist.is
+just calls this getter
+
+00:02:15.570 --> 00:02:17.940
+and returns Polycast
+Checklist, so this is just
+
+00:02:17.940 --> 00:02:22.290
+the same thing as saying,
+define the element called
+
+00:02:22.290 --> 00:02:26.010
+Polycast Checklist.
+
+00:02:26.010 --> 00:02:28.860
+And then you associate
+it with a class, which
+
+00:02:28.860 --> 00:02:30.900
+is this definition right here.
+
+00:02:30.900 --> 00:02:34.088
+For now, let's go back
+and leave it alone.
+
+00:02:34.088 --> 00:02:35.060
+All right.
+
+00:02:35.060 --> 00:02:39.020
+Now let's look at what
+else is in our directory.
+
+00:02:39.020 --> 00:02:41.600
+We have this bower.JSON,
+and in here, we
+
+00:02:41.600 --> 00:02:43.790
+have a dependency on Polymer.
+
+00:02:43.790 --> 00:02:46.700
+And you can see in the
+bower components, which
+
+00:02:46.700 --> 00:02:49.400
+is where the dependency
+is actually installed,
+
+00:02:49.400 --> 00:02:52.520
+you'll see the Polymer
+Directory right here.
+
+00:02:52.520 --> 00:02:54.955
+And you'll see a bunch of
+different files on there.
+
+00:02:54.955 --> 00:02:56.330
+So in the Polycast
+Checklist, you
+
+00:02:56.330 --> 00:02:58.940
+see there's an HTML import for
+a Polymer, which is the Polymer
+
+00:02:58.940 --> 00:03:01.699
+Directory right here.
+
+00:03:01.699 --> 00:03:04.240
+And then you can see right here
+in the PolycastChecklist.html
+
+00:03:04.240 --> 00:03:09.070
+file, we import the Polymer
+element file from the Polymer
+
+00:03:09.070 --> 00:03:11.090
+Directory.
+
+00:03:11.090 --> 00:03:14.080
+And in the Polymer Directory,
+we have a Polymer element file,
+
+00:03:14.080 --> 00:03:21.110
+which defines Polymer element
+and is then used right here.
+
+00:03:21.110 --> 00:03:24.215
+So those are the basics of how
+a Polymer element is laid out.
+
+00:03:24.215 --> 00:03:26.320
+In the next video, we'll
+mock up our element
+
+00:03:26.320 --> 00:03:28.250
+and start improving
+it using Polymer.
+
+00:03:28.250 --> 00:03:28.850
+See you soon.
+
+00:03:28.850 --> 00:03:32.200
+[MUSIC PLAYING]
+

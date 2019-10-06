@@ -1,0 +1,159 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.220
+[MUSIC PLAYING]
+
+00:00:03.220 --> 00:00:04.970
+SURMA: When doing a
+responsive web design,
+
+00:00:04.970 --> 00:00:07.730
+it is natural not to know
+the width of an element.
+
+00:00:07.730 --> 00:00:10.520
+After all, you're supposed to
+respond to the different sizes
+
+00:00:10.520 --> 00:00:12.270
+of your users' screens.
+
+00:00:12.270 --> 00:00:15.290
+However, sometimes it is
+desirable, if not required,
+
+00:00:15.290 --> 00:00:18.350
+that the element maintains
+a certain aspect ratio.
+
+00:00:18.350 --> 00:00:20.330
+CSS does not yet
+have a way to give
+
+00:00:20.330 --> 00:00:23.750
+an element an inherent aspect
+ratio, so this is a problem.
+
+00:00:23.750 --> 00:00:26.180
+But we can work around
+this with a little trick.
+
+00:00:26.180 --> 00:00:29.390
+When you set padding top of an
+element to a percentage value,
+
+00:00:29.390 --> 00:00:31.160
+that percentage is relative to--
+
+00:00:31.160 --> 00:00:32.659
+and now, brace yourself--
+
+00:00:32.659 --> 00:00:34.340
+the parents' width.
+
+00:00:34.340 --> 00:00:37.160
+The wider the parent,
+the more padding top.
+
+00:00:37.160 --> 00:00:39.410
+As counter-intuitive
+as this might seem,
+
+00:00:39.410 --> 00:00:42.500
+it comes in incredibly handy
+for solving our aspect ratio
+
+00:00:42.500 --> 00:00:43.550
+problem.
+
+00:00:43.550 --> 00:00:45.550
+To make our element
+keep an aspect ratio,
+
+00:00:45.550 --> 00:00:48.620
+we set padding top to the
+inverse of the aspect ratio
+
+00:00:48.620 --> 00:00:49.790
+in percents.
+
+00:00:49.790 --> 00:00:51.620
+You can do the math
+yourself, or make
+
+00:00:51.620 --> 00:00:53.990
+use of CSS calc expressions.
+
+00:00:53.990 --> 00:00:56.730
+Our element will now
+maintain its aspect ratio.
+
+00:00:56.730 --> 00:00:57.530
+Huzzah!
+
+00:00:57.530 --> 00:00:59.180
+The astute viewer,
+however, will have
+
+00:00:59.180 --> 00:01:00.845
+noticed that despite
+all the math,
+
+00:01:00.845 --> 00:01:03.170
+a padding is still a
+padding and will push down
+
+00:01:03.170 --> 00:01:05.030
+the content of our element.
+
+00:01:05.030 --> 00:01:07.260
+To counteract that, we have
+to add a little wrapper
+
+00:01:07.260 --> 00:01:10.340
+element that can negate
+the padding effect.
+
+00:01:10.340 --> 00:01:11.330
+And we're done.
+
+00:01:11.330 --> 00:01:14.050
+Nobody likes adding
+wrappers, but sometimes there
+
+00:01:14.050 --> 00:01:14.900
+is no other way.
+
+00:01:14.900 --> 00:01:16.610
+You win some, you lose some.
+
+00:01:16.610 --> 00:01:18.720
+See you next time.
+
+00:01:18.720 --> 00:01:20.130
+We've all been here before.
+
+00:01:20.130 --> 00:01:20.960
+There's the Chrome.
+
+00:01:20.960 --> 00:01:21.990
+There's last video.
+
+00:01:21.990 --> 00:01:23.430
+You should click it.
+
+00:01:23.430 --> 00:01:24.252
+Go.
+
+00:01:24.252 --> 00:01:26.562
+[MUSIC PLAYING]
+
+00:01:29.800 --> 00:01:31.480
+I'm not going to
+stop until you click.
+
+00:01:31.480 --> 00:01:34.230
+[MUSIC PLAYING]
+

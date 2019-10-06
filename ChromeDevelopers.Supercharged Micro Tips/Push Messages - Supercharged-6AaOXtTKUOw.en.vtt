@@ -1,0 +1,156 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.500
+[MUSIC PLAYING]
+
+00:00:02.500 --> 00:00:04.620
+MATT GAUNT: Surma knows
+absolutely nothing
+
+00:00:04.620 --> 00:00:07.800
+about web push, so asked
+me to give this micro tip.
+
+00:00:07.800 --> 00:00:09.580
+When developers start
+working web push,
+
+00:00:09.580 --> 00:00:11.550
+it's not entirely
+obvious how you can test
+
+00:00:11.550 --> 00:00:13.590
+the logic in your push event.
+
+00:00:13.590 --> 00:00:16.020
+For example you might send
+different kinds of payload
+
+00:00:16.020 --> 00:00:19.210
+and you want to see how
+your push event handles it.
+
+00:00:19.210 --> 00:00:21.810
+So instead of sending
+actual push messages,
+
+00:00:21.810 --> 00:00:24.240
+here's a simple little
+trick to testing the logic
+
+00:00:24.240 --> 00:00:25.470
+inside your push event.
+
+00:00:25.470 --> 00:00:28.800
+In Chrome, go to a web site
+that's set up to what we push,
+
+00:00:28.800 --> 00:00:31.440
+open up Dev Tools and
+go to the Console tab.
+
+00:00:31.440 --> 00:00:33.810
+From here you can change
+the context from top
+
+00:00:33.810 --> 00:00:35.580
+to your service worker.
+
+00:00:35.580 --> 00:00:37.510
+Now after you've done
+this, any commands
+
+00:00:37.510 --> 00:00:39.780
+that you type in will
+actually be entered and run
+
+00:00:39.780 --> 00:00:41.430
+in your service worker.
+
+00:00:41.430 --> 00:00:44.760
+Now this enables us to dispatch
+our own fake push events.
+
+00:00:44.760 --> 00:00:47.250
+And they'll act just like a
+normal push message would.
+
+00:00:47.250 --> 00:00:50.430
+So for example, we can fake
+a push message with no data
+
+00:00:50.430 --> 00:00:52.560
+by running
+self.dispatchEvent(new
+
+00:00:52.560 --> 00:00:54.210
+PushEvent('push')).
+
+00:00:54.210 --> 00:00:56.280
+Now this is cool but
+it's really useful
+
+00:00:56.280 --> 00:00:58.290
+when you start
+adding data, which
+
+00:00:58.290 --> 00:01:01.380
+we can do by passing in an
+object into our push events
+
+00:01:01.380 --> 00:01:03.930
+constructor with
+a data parameter.
+
+00:01:03.930 --> 00:01:06.450
+For example, to
+emulate a JSON payload,
+
+00:01:06.450 --> 00:01:09.590
+I'm just passing in
+JSON.stringify some data,
+
+00:01:09.590 --> 00:01:12.512
+and we can see how the push
+event would handle this.
+
+00:01:12.512 --> 00:01:14.970
+Now with this you can start
+testing different kinds of data
+
+00:01:14.970 --> 00:01:17.820
+that you'd actually send as
+well as different edge cases,
+
+00:01:17.820 --> 00:01:19.980
+perhaps like where you're
+sending payload that you
+
+00:01:19.980 --> 00:01:21.630
+weren't actually expecting.
+
+00:01:21.630 --> 00:01:25.600
+So good luck with your testing
+and thanks for watching.
+
+00:01:25.600 --> 00:01:27.930
+If you're having withdrawal
+symptoms of Paul and Surma,
+
+00:01:27.930 --> 00:01:30.120
+you can watch more
+"Supercharged" here.
+
+00:01:30.120 --> 00:01:31.906
+But if you subscribe
+to the channel above,
+
+00:01:31.906 --> 00:01:34.530
+you can watch a much better show
+called "Totally Tootling Tips"
+
+00:01:34.530 --> 00:01:37.260
+featuring myself and Addy.
+

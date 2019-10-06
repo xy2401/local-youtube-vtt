@@ -1,0 +1,262 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.660
+PETE LEPAGE: The
+IndexedDB 2.0 standard
+
+00:00:02.660 --> 00:00:04.610
+is now fully
+supported in Chrome,
+
+00:00:04.610 --> 00:00:07.190
+and features new schema
+management, bulk action
+
+00:00:07.190 --> 00:00:11.030
+methods, and more standardized
+handling of failures.
+
+00:00:11.030 --> 00:00:13.220
+Progressive web apps
+become more immersive,
+
+00:00:13.220 --> 00:00:17.360
+with display full screen,
+allow top navigation by user
+
+00:00:17.360 --> 00:00:20.690
+activation, give sandboxed
+iFrames new powers,
+
+00:00:20.690 --> 00:00:22.310
+and there's plenty more.
+
+00:00:22.310 --> 00:00:23.270
+I'm Pete LePage.
+
+00:00:23.270 --> 00:00:26.105
+Let's dive in and see what's
+new for developers in Chrome 58.
+
+00:00:26.105 --> 00:00:28.800
+[MUSIC PLAYING]
+
+00:00:28.800 --> 00:00:31.080
+The structure of
+your site's database
+
+00:00:31.080 --> 00:00:35.730
+has large performance impacts,
+and can be difficult to change.
+
+00:00:35.730 --> 00:00:38.730
+IndexedDB 2.0 changes that.
+
+00:00:38.730 --> 00:00:41.580
+Updates, object
+stores, and indexes
+
+00:00:41.580 --> 00:00:45.660
+can now be renamed in
+place after refactoring.
+
+00:00:45.660 --> 00:00:48.720
+Binary keys allow
+for more natural keys
+
+00:00:48.720 --> 00:00:51.480
+without worrying about
+performance penalties.
+
+00:00:51.480 --> 00:00:55.380
+Data retrieval is easier
+with GetKey, openKeyCursor,
+
+00:00:55.380 --> 00:00:58.380
+and continue primaryKey methods.
+
+00:00:58.380 --> 00:01:01.410
+And bulk recovery
+of entire datasets
+
+00:01:01.410 --> 00:01:06.540
+no longer needs a cursor
+with getAll and getAllKey.
+
+00:01:06.540 --> 00:01:09.280
+When progressive web apps are
+launched from the Android home
+
+00:01:09.280 --> 00:01:12.540
+screen, they launch in a
+standalone app-like mode
+
+00:01:12.540 --> 00:01:14.700
+that hides the Omnibox.
+
+00:01:14.700 --> 00:01:17.580
+This helps create an
+engaging user experience,
+
+00:01:17.580 --> 00:01:20.460
+and frees up screen
+space for content.
+
+00:01:20.460 --> 00:01:23.130
+However, for even more
+immersive experiences
+
+00:01:23.130 --> 00:01:26.550
+like games, video players,
+and other rich content,
+
+00:01:26.550 --> 00:01:29.040
+mobile UI elements
+such as the system bar
+
+00:01:29.040 --> 00:01:32.460
+can still be a distraction
+and take up valuable pixels
+
+00:01:32.460 --> 00:01:34.200
+that you may want.
+
+00:01:34.200 --> 00:01:37.050
+Now, you can make your
+progressive web app feel more
+
+00:01:37.050 --> 00:01:40.560
+immersive by setting
+display:fullscreen in your web
+
+00:01:40.560 --> 00:01:42.180
+app manifest.
+
+00:01:42.180 --> 00:01:44.460
+When your app is launched
+from the home screen,
+
+00:01:44.460 --> 00:01:48.020
+all non-app mobile UI
+elements will be hidden.
+
+00:01:48.020 --> 00:01:50.910
+Chrome 58 now supports
+the new iFrame
+
+00:01:50.910 --> 00:01:55.830
+Sandbox keyword, allow top
+navigation by user activation.
+
+00:01:55.830 --> 00:01:58.140
+When triggered by
+a user interaction.
+
+00:01:58.140 --> 00:02:00.570
+This keyword gives
+sandboxed iFrames
+
+00:02:00.570 --> 00:02:04.230
+the ability to navigate the
+top level page while still
+
+00:02:04.230 --> 00:02:06.960
+blocking auto-redirects.
+
+00:02:06.960 --> 00:02:09.270
+And of course,
+there's plenty more.
+
+00:02:09.270 --> 00:02:11.790
+Say goodbye to
+the clearfix hack.
+
+00:02:11.790 --> 00:02:15.210
+Instead of manually resetting
+multiple layout properties
+
+00:02:15.210 --> 00:02:17.670
+like float and
+clear, you can now
+
+00:02:17.670 --> 00:02:20.400
+add a new block
+formatting context
+
+00:02:20.400 --> 00:02:23.350
+using display flow-root.
+
+00:02:23.350 --> 00:02:28.470
+PointerEvents.getCoalescedEvents
+allows you to access all input
+
+00:02:28.470 --> 00:02:32.430
+events since the last time a
+pointer event was delivered--
+
+00:02:32.430 --> 00:02:35.610
+perfect for when you need
+a precise history of points
+
+00:02:35.610 --> 00:02:37.980
+for things like drawing apps.
+
+00:02:37.980 --> 00:02:42.300
+And workers and shared workers
+can be created using data URLs,
+
+00:02:42.300 --> 00:02:45.030
+making development with
+workers more secure
+
+00:02:45.030 --> 00:02:47.250
+by giving them an opaque origin.
+
+00:02:47.250 --> 00:02:49.890
+These are just a few of
+the changes in Chrome 58
+
+00:02:49.890 --> 00:02:51.250
+for developers.
+
+00:02:51.250 --> 00:02:52.980
+Check the description
+for more details,
+
+00:02:52.980 --> 00:02:55.950
+including links to
+the docs and specs.
+
+00:02:55.950 --> 00:02:59.670
+If you enjoyed this video, check
+out the new Designer Versus
+
+00:02:59.670 --> 00:03:01.710
+Developer video
+series that tries
+
+00:03:01.710 --> 00:03:03.930
+to solve the challenges
+faced when designers
+
+00:03:03.930 --> 00:03:06.570
+and developers work together.
+
+00:03:06.570 --> 00:03:08.760
+Then click the Subscribe
+button, and you'll
+
+00:03:08.760 --> 00:03:12.260
+get an email notification
+whenever we launch a new video.
+
+00:03:12.260 --> 00:03:15.090
+I'm Pete LePage, and as soon
+as Chrome 59 is released,
+
+00:03:15.090 --> 00:03:18.820
+we'll be right here to tell
+you what's new in Chrome.
+

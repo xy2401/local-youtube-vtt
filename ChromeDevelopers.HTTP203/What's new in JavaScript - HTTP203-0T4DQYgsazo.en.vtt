@@ -1,0 +1,1604 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:01.495
+SATHYA GUNASEKARAN:
+So I'm really
+
+00:00:01.495 --> 00:00:03.000
+going to be on TV, right?
+
+00:00:03.000 --> 00:00:04.750
+Like, now, you're not
+going to cut it out.
+
+00:00:04.750 --> 00:00:05.260
+[LAUGHTER]
+
+00:00:05.260 --> 00:00:06.350
+JAKE: Yeah, yeah,
+well, it's YouTube.
+
+00:00:06.350 --> 00:00:07.130
+It's not real TV.
+
+00:00:07.130 --> 00:00:08.004
+SURMA: You know what?
+
+00:00:08.004 --> 00:00:10.004
+You are going to be on
+TV if you're casted.
+
+00:00:10.004 --> 00:00:10.920
+Otherwise, it's just--
+
+00:00:10.920 --> 00:00:11.670
+MATHIAS BYNENS: Yeah, right.
+
+00:00:11.670 --> 00:00:12.753
+SURMA: That's good enough.
+
+00:00:12.753 --> 00:00:15.120
+[MUSIC PLAYING]
+
+00:00:18.620 --> 00:00:20.426
+JAKE: So we're
+professional viewers.
+
+00:00:20.426 --> 00:00:21.050
+SURMA: Totally.
+
+00:00:21.050 --> 00:00:22.550
+JAKE: We've been doing
+this a while now.
+
+00:00:22.550 --> 00:00:23.780
+SURMA: Literally
+since yesterday.
+
+00:00:23.780 --> 00:00:25.780
+JAKE: We're going to give
+you the first question
+
+00:00:25.780 --> 00:00:27.080
+that we've given everyone.
+
+00:00:27.080 --> 00:00:28.265
+Who are you, and why?
+
+00:00:28.265 --> 00:00:29.556
+SATHYA GUNASEKARAN: I'm Sathya.
+
+00:00:29.556 --> 00:00:32.450
+I work on V8 at Google.
+
+00:00:32.450 --> 00:00:37.160
+And it's the engine
+used in Chrome and Node.
+
+00:00:37.160 --> 00:00:38.540
+MATHIAS BYNENS: Which engine?
+
+00:00:38.540 --> 00:00:39.680
+SATHYA GUNASEKARAN: It's
+a JavaScript engine.
+
+00:00:39.680 --> 00:00:40.670
+MATHIAS BYNENS:
+Oh, there you go.
+
+00:00:40.670 --> 00:00:40.830
+SATHYA GUNASEKARAN: Yeah.
+
+00:00:40.830 --> 00:00:41.788
+SURMA: I mean, come on.
+
+00:00:41.788 --> 00:00:43.799
+JAKE: Who's doing the
+interviewing here?
+
+00:00:43.799 --> 00:00:45.590
+MATHIAS BYNENS: I just--
+what's the engine.
+
+00:00:45.590 --> 00:00:46.340
+JAKE: We'll get to you.
+
+00:00:46.340 --> 00:00:46.550
+MATHIAS BYNENS: OK.
+
+00:00:46.550 --> 00:00:47.508
+JAKE: We'll get to you.
+
+00:00:47.508 --> 00:00:48.924
+MATHIAS BYNENS:
+I'll shut up now.
+
+00:00:48.924 --> 00:00:50.090
+SATHYA GUNASEKARAN: And why?
+
+00:00:50.090 --> 00:00:52.390
+Because I don't know better.
+
+00:00:52.390 --> 00:00:53.900
+SURMA: That's a legit reason.
+
+00:00:53.900 --> 00:00:56.000
+That's an actual legit reason.
+
+00:00:56.000 --> 00:00:57.000
+JAKE: Now you may speak.
+
+00:00:57.000 --> 00:00:58.416
+MATHIAS BYNENS:
+Oh, OK, thank you.
+
+00:00:58.416 --> 00:00:59.630
+Yes, so I also work on V8.
+
+00:00:59.630 --> 00:01:01.775
+I'm a developer on the V8 team.
+
+00:01:01.775 --> 00:01:04.337
+And yeah, so V8 implements
+JavaScript features as well as
+
+00:01:04.337 --> 00:01:05.420
+WebAssembly functionality.
+
+00:01:05.420 --> 00:01:06.980
+It's all part of
+the same engine.
+
+00:01:06.980 --> 00:01:09.500
+And it chips in Chrome, and
+Node, and other embedders
+
+00:01:09.500 --> 00:01:11.400
+like Electron.
+
+00:01:11.400 --> 00:01:13.160
+JAKE: I like how he
+skipped his name.
+
+00:01:13.160 --> 00:01:15.060
+MATHIAS BYNENS: Oh,
+yeah, my name is Mathias.
+
+00:01:15.060 --> 00:01:17.080
+JAKE: So this is
+both your first I/Os.
+
+00:01:17.080 --> 00:01:18.310
+SURMA: Which is surprising.
+
+00:01:18.310 --> 00:01:18.730
+SATHYA GUNASEKARAN: Yes.
+
+00:01:18.730 --> 00:01:19.605
+MATHIAS BYNENS: Yeah.
+
+00:01:19.605 --> 00:01:22.260
+JAKE: And you both spoke at your
+first I/O. So what were you--
+
+00:01:22.260 --> 00:01:23.400
+SURMA: Full house?
+
+00:01:23.400 --> 00:01:25.190
+MATHIAS BYNENS: Yeah, yeah,
+yeah, it was a full house.
+
+00:01:25.190 --> 00:01:26.070
+I was impressed actually.
+
+00:01:26.070 --> 00:01:26.970
+SURMA: How did you
+get so many people?
+
+00:01:26.970 --> 00:01:28.130
+What did you talk about?
+
+00:01:28.130 --> 00:01:29.370
+MATHIAS BYNENS: Modern
+JavaScript features.
+
+00:01:29.370 --> 00:01:30.640
+SATHYA GUNASEKARAN: Right.
+
+00:01:30.640 --> 00:01:32.280
+MATHIAS BYNENS: Turns out a lot
+of people are using JavaScript.
+
+00:01:32.280 --> 00:01:33.060
+Who knew?
+
+00:01:33.060 --> 00:01:34.220
+SATHYA GUNASEKARAN: Right?
+
+00:01:34.220 --> 00:01:36.580
+JAKE: When are they going
+to accept the bb-scripts?
+
+00:01:36.580 --> 00:01:37.580
+Are we going to get
+more features there?
+
+00:01:37.580 --> 00:01:38.850
+MATHIAS BYNENS: No, we need
+to feature parity, I think.
+
+00:01:38.850 --> 00:01:40.199
+JAKE: I like ReDimming arrays.
+
+00:01:40.199 --> 00:01:40.990
+That's what I like.
+
+00:01:40.990 --> 00:01:42.300
+SURMA: Did we ever
+support it in Chrome?
+
+00:01:42.300 --> 00:01:42.650
+JAKE: Nope.
+
+00:01:42.650 --> 00:01:43.280
+SURMA: That's sad.
+
+00:01:43.280 --> 00:01:44.363
+JAKE: It was only ever IE.
+
+00:01:44.363 --> 00:01:45.860
+MATHIAS BYNENS: That's so, yeah.
+
+00:01:45.860 --> 00:01:47.276
+JAKE: And even
+they got rid of it.
+
+00:01:47.276 --> 00:01:49.750
+So OK, run us through some
+of these new features then.
+
+00:01:49.750 --> 00:01:50.750
+MATHIAS BYNENS: OK, so--
+
+00:01:50.750 --> 00:01:51.290
+SURMA: What's your favorite?
+
+00:01:51.290 --> 00:01:52.720
+MATHIAS BYNENS:
+--one big new thing--
+
+00:01:52.720 --> 00:01:53.761
+well, what's my favorite?
+
+00:01:53.761 --> 00:01:55.407
+That's a really
+difficult question.
+
+00:01:55.407 --> 00:01:57.073
+SURMA: It's got to
+be unicode, isn't it?
+
+00:01:57.073 --> 00:01:57.706
+No.
+
+00:01:57.706 --> 00:02:00.080
+MATHIAS BYNENS: No, it depends
+on what you mean with new.
+
+00:02:00.080 --> 00:02:02.121
+One of the features that
+has been in the pipeline
+
+00:02:02.121 --> 00:02:03.505
+for a bit longer is modules.
+
+00:02:03.505 --> 00:02:05.630
+And maybe it's not super
+cool to talk about modules
+
+00:02:05.630 --> 00:02:08.000
+because there were
+in ES2015, I guess,
+
+00:02:08.000 --> 00:02:10.330
+if you look at the
+syntax parts only.
+
+00:02:10.330 --> 00:02:13.190
+But only as of today, they're
+available in all major web
+
+00:02:13.190 --> 00:02:15.120
+browsers, which is
+pretty exciting.
+
+00:02:15.120 --> 00:02:17.120
+And then there's Node.js,
+where they're still
+
+00:02:17.120 --> 00:02:19.280
+working out how modules
+should really work natively
+
+00:02:19.280 --> 00:02:20.117
+by default.
+
+00:02:20.117 --> 00:02:21.450
+JAKE: What is the state of that?
+
+00:02:21.450 --> 00:02:23.780
+Because I've stayed away
+from that whole thing.
+
+00:02:23.780 --> 00:02:26.680
+The community seemed
+very angry internally.
+
+00:02:26.680 --> 00:02:28.850
+And I was-- I kind of
+checked out with it.
+
+00:02:28.850 --> 00:02:29.540
+MATHIAS BYNENS: Yeah,
+because in the file section--
+
+00:02:29.540 --> 00:02:31.460
+SURMA: Javascript
+community's always angry.
+
+00:02:31.460 --> 00:02:33.210
+JAKE: But it got into
+browsers pretty much
+
+00:02:33.210 --> 00:02:34.785
+without any problem.
+
+00:02:34.785 --> 00:02:37.160
+MATHIAS BYNENS: So there's an
+experimental implementation
+
+00:02:37.160 --> 00:02:38.900
+in Node behind the flag.
+
+00:02:38.900 --> 00:02:43.230
+And it only supports modules for
+files with the mjs extension.
+
+00:02:43.230 --> 00:02:45.710
+I suppose that's where a lot
+of people get kind of upset
+
+00:02:45.710 --> 00:02:48.760
+a little bit because people are
+used to the .js extension with
+
+00:02:48.760 --> 00:02:49.910
+JavaScripts.
+
+00:02:49.910 --> 00:02:51.530
+But in a way, I
+think it makes sense,
+
+00:02:51.530 --> 00:02:53.240
+because you need to
+make the distinction
+
+00:02:53.240 --> 00:02:54.920
+between regular
+scripts and modules
+
+00:02:54.920 --> 00:02:57.256
+anyway because they're
+treated a different way.
+
+00:02:57.256 --> 00:02:58.880
+They're interpreted
+in a different way.
+
+00:02:58.880 --> 00:03:02.040
+Modules, you scripts by
+default. So they're strict.
+
+00:03:02.040 --> 00:03:03.890
+They're in StrictMode
+by default.
+
+00:03:03.890 --> 00:03:05.710
+And there's other
+differences as well.
+
+00:03:05.710 --> 00:03:07.337
+Yeah, it's even
+stricter than that.
+
+00:03:07.337 --> 00:03:09.920
+And they have import and export,
+like the static variants only
+
+00:03:09.920 --> 00:03:11.730
+work in modules, not
+in regular scripts.
+
+00:03:11.730 --> 00:03:12.230
+So--
+
+00:03:12.230 --> 00:03:15.746
+JAKE: If I create a
+constant inside a module,
+
+00:03:15.746 --> 00:03:17.120
+does that go on
+the global scope?
+
+00:03:17.120 --> 00:03:18.140
+Is that one of the differences?
+
+00:03:18.140 --> 00:03:19.910
+SURMA: That's one of the
+things I can never remember.
+
+00:03:19.910 --> 00:03:21.910
+MATHIAS BYNENS: It doesn't
+go into global scope.
+
+00:03:21.910 --> 00:03:24.230
+It doesn't go into global
+scope in script mode either.
+
+00:03:24.230 --> 00:03:24.760
+JAKE: In normal scope either.
+
+00:03:24.760 --> 00:03:24.990
+MATHIAS BYNENS: No.
+
+00:03:24.990 --> 00:03:26.680
+JAKE: Oh, I got
+some reading to do.
+
+00:03:26.680 --> 00:03:27.555
+MATHIAS BYNENS: Yeah.
+
+00:03:27.555 --> 00:03:28.400
+[LAUGHTER]
+
+00:03:28.400 --> 00:03:30.752
+JAKE: Yes, yes, you do, Jake.
+
+00:03:30.752 --> 00:03:31.292
+[INAUDIBLE]
+
+00:03:31.292 --> 00:03:32.750
+MATHIAS BYNENS:
+But we recently had
+
+00:03:32.750 --> 00:03:34.070
+a conversation about
+something similar
+
+00:03:34.070 --> 00:03:36.420
+because you know about
+[INAUDIBLE] and the block scope
+
+00:03:36.420 --> 00:03:36.920
+bindings.
+
+00:03:36.920 --> 00:03:39.003
+But the same thing happens
+for classic iterations,
+
+00:03:39.003 --> 00:03:39.560
+for example.
+
+00:03:39.560 --> 00:03:41.060
+They're also lexical.
+
+00:03:41.060 --> 00:03:43.670
+So that means if you have a
+class in the global scope,
+
+00:03:43.670 --> 00:03:45.290
+it's not actually
+globally available.
+
+00:03:45.290 --> 00:03:47.287
+It's available within
+this same script text.
+
+00:03:47.287 --> 00:03:49.870
+But it's not a patch to, like,
+the window object, for example.
+
+00:03:49.870 --> 00:03:51.036
+JAKE: You have to assign it.
+
+00:03:51.036 --> 00:03:52.110
+MATHIAS BYNENS: Yeah.
+
+00:03:52.110 --> 00:03:52.610
+It's like--
+
+00:03:52.610 --> 00:03:53.480
+SATHYA GUNASEKARAN:
+I mean, that's even
+
+00:03:53.480 --> 00:03:55.170
+how we implement it in V8.
+
+00:03:55.170 --> 00:03:58.610
+We rewrite the class declaration
+as a class expression
+
+00:03:58.610 --> 00:04:01.150
+with an assignment
+in a lap variable.
+
+00:04:01.150 --> 00:04:02.150
+SURMA: No way.
+
+00:04:02.150 --> 00:04:02.590
+SATHYA GUNASEKARAN: Yeah, so.
+
+00:04:02.590 --> 00:04:03.560
+MATHIAS BYNENS: Yes way.
+
+00:04:03.560 --> 00:04:05.470
+SURMA: It's all just
+syntactic sugar, isn't it?
+
+00:04:05.470 --> 00:04:07.511
+And then you write that
+to just being a function,
+
+00:04:07.511 --> 00:04:09.530
+whereas in the
+prototype, probably not.
+
+00:04:09.530 --> 00:04:12.200
+But-- [INAUDIBLE] at the start.
+
+00:04:12.200 --> 00:04:12.700
+Right?
+
+00:04:12.700 --> 00:04:13.010
+MATHIAS BYNENS: We bottled it.
+
+00:04:13.010 --> 00:04:14.360
+Yeah, we called it desugaring.
+
+00:04:14.360 --> 00:04:16.872
+And it happens in JavaScript
+engines all the time.
+
+00:04:16.872 --> 00:04:18.019
+SURMA: All right.
+
+00:04:18.019 --> 00:04:19.490
+JAKE: OK, so you've got modules.
+
+00:04:19.490 --> 00:04:20.448
+What else have you got?
+
+00:04:20.448 --> 00:04:21.505
+What else is new?
+
+00:04:21.505 --> 00:04:23.630
+SATHYA GUNASEKARAN: I'm
+excited about class fields.
+
+00:04:23.630 --> 00:04:25.501
+Like private fields
+now, that's--
+
+00:04:25.501 --> 00:04:26.250
+SURMA: In classes?
+
+00:04:26.250 --> 00:04:27.030
+SATHYA GUNASEKARAN:
+Yeah, in classes.
+
+00:04:27.030 --> 00:04:27.830
+SURMA: [GASPS]
+
+00:04:27.830 --> 00:04:28.460
+SATHYA GUNASEKARAN: So
+that's something that's--
+
+00:04:28.460 --> 00:04:29.168
+JAKE: Whoa, wait.
+
+00:04:29.168 --> 00:04:30.290
+Is that in Chrome?
+
+00:04:30.290 --> 00:04:32.581
+SATHYA GUNASEKARAN: Yeah,
+it's behind a flag in Chrome.
+
+00:04:32.581 --> 00:04:33.440
+I have it.
+
+00:04:33.440 --> 00:04:34.790
+MATHIAS BYNENS: Sathya
+actually implemented this.
+
+00:04:34.790 --> 00:04:36.050
+But it's still behind
+a flag actually.
+
+00:04:36.050 --> 00:04:37.010
+SATHYA GUNASEKARAN: It's
+still behind a flag.
+
+00:04:37.010 --> 00:04:38.010
+MATHIAS BYNENS: Disclaimer.
+
+00:04:38.010 --> 00:04:39.200
+JAKE: But still,
+that's something people
+
+00:04:39.200 --> 00:04:40.340
+can play with, remember.
+
+00:04:40.340 --> 00:04:40.750
+SATHYA GUNASEKARAN: Yeah.
+
+00:04:40.750 --> 00:04:42.250
+So normally,
+Javascript always uses
+
+00:04:42.250 --> 00:04:45.170
+underscore to denote that
+it's private by convention.
+
+00:04:45.170 --> 00:04:46.710
+But the language
+doesn't enforce it.
+
+00:04:46.710 --> 00:04:47.210
+Right?
+
+00:04:47.210 --> 00:04:48.950
+So you could still access that.
+
+00:04:48.950 --> 00:04:52.190
+And we've seen, like, people
+accessing private APIs
+
+00:04:52.190 --> 00:04:54.590
+from React and, like, Node.
+
+00:04:54.590 --> 00:04:57.380
+So with private fields, you
+don't have that problem.
+
+00:04:57.380 --> 00:05:00.950
+So instead of using underscore,
+you can just use the hash sign.
+
+00:05:00.950 --> 00:05:03.890
+You create a property
+or assign to a property.
+
+00:05:03.890 --> 00:05:05.800
+JAKE: So it's like
+this.hash thing?
+
+00:05:05.800 --> 00:05:06.800
+SATHYA GUNASEKARAN: Yep.
+
+00:05:06.800 --> 00:05:08.820
+JAKE: And you can only
+access that within--
+
+00:05:08.820 --> 00:05:10.610
+SATHYA GUNASEKARAN:
+Within a class body.
+
+00:05:10.610 --> 00:05:12.680
+So outside a class body,
+it throws a type error.
+
+00:05:12.680 --> 00:05:15.110
+JAKE: And does it
+still work, like, say,
+
+00:05:15.110 --> 00:05:17.390
+if I'm in a set timeout?
+
+00:05:17.390 --> 00:05:18.780
+SATHYA GUNASEKARAN: Mm-hmm.
+
+00:05:18.780 --> 00:05:20.620
+JAKE: I guess you're
+using arrow functions.
+
+00:05:20.620 --> 00:05:22.232
+I can still access it there.
+
+00:05:22.232 --> 00:05:24.190
+SATHYA GUNASEKARAN: No,
+it needs to be in the--
+
+00:05:24.190 --> 00:05:26.650
+well, if the set time by
+itself is in the class body,
+
+00:05:26.650 --> 00:05:27.190
+then sure.
+
+00:05:27.190 --> 00:05:28.065
+JAKE: Then it's fine.
+
+00:05:28.065 --> 00:05:29.180
+OK, OK, so it's got--
+
+00:05:29.180 --> 00:05:33.220
+SURMA: Is there any way to break
+that rule with, like, reflect
+
+00:05:33.220 --> 00:05:33.770
+or something?
+
+00:05:33.770 --> 00:05:34.885
+SATHYA GUNASEKARAN:
+No, it's hard private.
+
+00:05:34.885 --> 00:05:36.070
+SURMA: Wow, OK.
+
+00:05:36.070 --> 00:05:37.150
+JAKE: That's great.
+
+00:05:37.150 --> 00:05:38.680
+MATHIAS BYNENS: And it's
+not just private fields.
+
+00:05:38.680 --> 00:05:40.138
+It's only just
+class fields itself.
+
+00:05:40.138 --> 00:05:42.880
+It's useful by itself because
+now, you no longer need
+
+00:05:42.880 --> 00:05:44.080
+a constructor necessarily.
+
+00:05:44.080 --> 00:05:46.110
+If you just want to
+initialize some fields,
+
+00:05:46.110 --> 00:05:48.110
+you can now do it as
+outside of the constructor,
+
+00:05:48.110 --> 00:05:49.234
+just as part of the class--
+
+00:05:49.234 --> 00:05:52.370
+SURMA: So I can just do like
+let x semi-colon in the class.
+
+00:05:52.370 --> 00:05:53.620
+MATHIAS BYNENS: Without a let.
+
+00:05:53.620 --> 00:05:54.207
+Yeah.
+
+00:05:54.207 --> 00:05:56.790
+SURMA: The first time I met you,
+it's because you are the one,
+
+00:05:56.790 --> 00:05:59.310
+at that point, still working
+on implementing dynamic import.
+
+00:05:59.310 --> 00:06:01.330
+And to me, dynamic
+import is, like,
+
+00:06:01.330 --> 00:06:03.209
+one of the biggest changes--
+
+00:06:03.209 --> 00:06:04.000
+JAKE: It's so good.
+
+00:06:04.000 --> 00:06:06.700
+SURMA: --since we were
+thinking about modules.
+
+00:06:06.700 --> 00:06:10.720
+JAKE: I remember-- on
+W3C mailing lists, loads
+
+00:06:10.720 --> 00:06:13.450
+of arguments about how
+we could do async script
+
+00:06:13.450 --> 00:06:17.350
+loading of all different
+APIs, because there
+
+00:06:17.350 --> 00:06:21.670
+was like those big free
+script loading things.
+
+00:06:21.670 --> 00:06:23.320
+There was like LABjs required.
+
+00:06:23.320 --> 00:06:25.570
+And everyone disagreed
+on how to do it.
+
+00:06:25.570 --> 00:06:28.140
+So it's just so nice to see
+the language come along and go,
+
+00:06:28.140 --> 00:06:29.140
+no, it's just like that.
+
+00:06:29.140 --> 00:06:29.690
+That's the import.
+
+00:06:29.690 --> 00:06:30.220
+You're done.
+
+00:06:30.220 --> 00:06:30.550
+Off we go.
+
+00:06:30.550 --> 00:06:31.450
+We've got promises now.
+
+00:06:31.450 --> 00:06:32.130
+Problem solved.
+
+00:06:32.130 --> 00:06:33.570
+SURMA: A way to import, boom.
+
+00:06:33.570 --> 00:06:34.870
+JAKE: I'm done.
+
+00:06:34.870 --> 00:06:37.630
+So I remember, when you
+joined, I got a bit jealous.
+
+00:06:37.630 --> 00:06:39.580
+Well, not when you
+joined, but later,
+
+00:06:39.580 --> 00:06:42.730
+because as soon as
+you joined Google,
+
+00:06:42.730 --> 00:06:45.550
+you got invited into
+the secret, specter,
+
+00:06:45.550 --> 00:06:49.240
+meltdown club that I
+didn't even know existed.
+
+00:06:49.240 --> 00:06:52.030
+And then later on, it's
+like, hey, I knew all along,
+
+00:06:52.030 --> 00:06:53.560
+ha ha ha ha ha ha.
+
+00:06:53.560 --> 00:06:57.160
+So what was that like
+then, to just join and be
+
+00:06:57.160 --> 00:06:58.150
+thrown into that world?
+
+00:06:58.150 --> 00:07:00.070
+MATHIAS BYNENS: It was
+mostly very frustrating
+
+00:07:00.070 --> 00:07:02.980
+because I couldn't talk about
+this to anyone, including
+
+00:07:02.980 --> 00:07:05.570
+my own manager, or my manager's
+manager, or anyone in my--
+
+00:07:05.570 --> 00:07:06.490
+SURMA: You couldn't even talk
+to your manager about it.
+
+00:07:06.490 --> 00:07:07.281
+MATHIAS BYNENS: No.
+
+00:07:07.281 --> 00:07:09.817
+I mean, I was spending a
+lot of time working on this
+
+00:07:09.817 --> 00:07:10.900
+and helping out with this.
+
+00:07:10.900 --> 00:07:13.690
+But I couldn't include it in
+my weekly reports of stuff
+
+00:07:13.690 --> 00:07:14.860
+that I had worked on.
+
+00:07:14.860 --> 00:07:18.319
+So I had to somehow look
+productive without being
+
+00:07:18.319 --> 00:07:19.610
+able to mention all this stuff.
+
+00:07:19.610 --> 00:07:21.020
+JAKE: You just make
+up product names.
+
+00:07:21.020 --> 00:07:21.910
+MATHIAS BYNENS:
+Yeah, pretty much.
+
+00:07:21.910 --> 00:07:23.430
+SURMA: Super secret Product X.
+
+00:07:23.430 --> 00:07:23.930
+JAKE: Yeah.
+
+00:07:23.930 --> 00:07:24.452
+[LAUGHS]
+
+00:07:24.452 --> 00:07:26.410
+MATHIAS BYNENS: No, I
+just couldn't mention it.
+
+00:07:26.410 --> 00:07:28.750
+But like, yeah, it's
+a little unfortunate.
+
+00:07:28.750 --> 00:07:31.720
+V8 got caught in the middle of
+a storm there because, I mean,
+
+00:07:31.720 --> 00:07:32.650
+we're the compiler.
+
+00:07:32.650 --> 00:07:33.149
+Right?
+
+00:07:33.149 --> 00:07:34.640
+We generate code dynamically.
+
+00:07:34.640 --> 00:07:35.152
+So--
+
+00:07:35.152 --> 00:07:36.360
+SURMA: It's kind of relevant.
+
+00:07:36.360 --> 00:07:37.300
+MATHIAS BYNENS: --things
+could go wrong there.
+
+00:07:37.300 --> 00:07:37.820
+SURMA: Yeah.
+
+00:07:37.820 --> 00:07:39.377
+It's out in the
+open now at least.
+
+00:07:39.377 --> 00:07:40.960
+MATHIAS BYNENS: Yeah,
+out in the open.
+
+00:07:40.960 --> 00:07:42.700
+And we've been working
+on mitigations,
+
+00:07:42.700 --> 00:07:45.130
+I mean, for months now, even
+before it was made public.
+
+00:07:45.130 --> 00:07:47.270
+So yeah, we have
+this wiki article
+
+00:07:47.270 --> 00:07:48.770
+that documents all
+these mitigations
+
+00:07:48.770 --> 00:07:50.290
+and how people can enable them.
+
+00:07:50.290 --> 00:07:51.790
+And whether you
+want to do so really
+
+00:07:51.790 --> 00:07:53.560
+depends on the kind
+of embedder you are.
+
+00:07:53.560 --> 00:07:53.920
+SURMA: Yeah.
+
+00:07:53.920 --> 00:07:55.240
+MATHIAS BYNENS: So a lot
+of people forget that V8--
+
+00:07:55.240 --> 00:07:57.310
+SURMA: So just to be
+clear, for most developers,
+
+00:07:57.310 --> 00:08:01.010
+these things are not relevant
+because the embedder is Chrome,
+
+00:08:01.010 --> 00:08:01.510
+or Node--
+
+00:08:01.510 --> 00:08:02.718
+MATHIAS BYNENS: Exactly, Yes.
+
+00:08:02.718 --> 00:08:05.530
+SURMA: --or some, I guess,
+Electron or these things.
+
+00:08:05.530 --> 00:08:07.110
+As a developer,
+that's not something
+
+00:08:07.110 --> 00:08:08.110
+you need to worry about.
+
+00:08:08.110 --> 00:08:08.420
+Right?
+
+00:08:08.420 --> 00:08:10.419
+MATHIAS BYNENS: Yeah, so
+these host environments
+
+00:08:10.419 --> 00:08:13.510
+have to decide whether they
+basically run untrusted code,
+
+00:08:13.510 --> 00:08:15.310
+like on the web, where
+you visit a website,
+
+00:08:15.310 --> 00:08:16.807
+and you run random JavaScript.
+
+00:08:16.807 --> 00:08:17.890
+It could be from anywhere.
+
+00:08:17.890 --> 00:08:20.260
+It could be code that is
+included from a third party
+
+00:08:20.260 --> 00:08:21.520
+through that website.
+
+00:08:21.520 --> 00:08:22.610
+You don't know what's
+going on there.
+
+00:08:22.610 --> 00:08:23.730
+SURMA: That's not
+even that rare.
+
+00:08:23.730 --> 00:08:24.450
+I mean, that happens
+all the time.
+
+00:08:24.450 --> 00:08:25.280
+MATHIAS BYNENS: Yeah,
+it happens all the time.
+
+00:08:25.280 --> 00:08:26.189
+It's not rare at all.
+
+00:08:26.189 --> 00:08:28.480
+But that's completely different
+from the security model
+
+00:08:28.480 --> 00:08:31.420
+that Node.js has, for example,
+where the idea is that you're
+
+00:08:31.420 --> 00:08:32.770
+running code that you trust.
+
+00:08:32.770 --> 00:08:34.380
+You run a web server
+that you wrote.
+
+00:08:34.380 --> 00:08:36.370
+And sure, I mean, you
+include some MPM modules
+
+00:08:36.370 --> 00:08:37.922
+that you installed,
+but the idea is
+
+00:08:37.922 --> 00:08:39.130
+that you trust these modules.
+
+00:08:39.130 --> 00:08:41.470
+Otherwise, you don't add
+them as dependencies.
+
+00:08:41.470 --> 00:08:45.109
+So Node, you generally run
+trusted code on the web.
+
+00:08:45.109 --> 00:08:45.900
+It's the Wild West.
+
+00:08:45.900 --> 00:08:46.700
+SURMA: It's a free fall.
+
+00:08:46.700 --> 00:08:47.755
+MATHIAS BYNENS: It's
+completely different.
+
+00:08:47.755 --> 00:08:49.963
+So they're just completely
+different security models.
+
+00:08:49.963 --> 00:08:51.730
+And we have a flag
+now that allows
+
+00:08:51.730 --> 00:08:54.534
+you to switch between
+the two modes of safety.
+
+00:08:54.534 --> 00:08:56.450
+JAKE: Because there's
+some performance penalty
+
+00:08:56.450 --> 00:08:57.400
+if you use it.
+
+00:08:57.400 --> 00:08:58.710
+That's the reason, right?
+
+00:08:58.710 --> 00:09:01.930
+SURMA: Yeah, I've seen some
+graphs about some servers
+
+00:09:01.930 --> 00:09:05.320
+integrate the specter and melt
+down, mitigated pretty quickly,
+
+00:09:05.320 --> 00:09:07.510
+obviously, like servers.
+
+00:09:07.510 --> 00:09:09.269
+And then, yeah, or up or down.
+
+00:09:09.269 --> 00:09:10.560
+However you want to look at it.
+
+00:09:10.560 --> 00:09:11.940
+JAKE: Depends where the axis is.
+
+00:09:11.940 --> 00:09:13.810
+Performance went
+town, times went up.
+
+00:09:13.810 --> 00:09:14.604
+Yeah, pretty much.
+
+00:09:14.604 --> 00:09:16.270
+MATHIAS BYNENS: Yeah,
+it's a little sad.
+
+00:09:16.270 --> 00:09:18.480
+But ultimately,
+security of users
+
+00:09:18.480 --> 00:09:21.070
+is much more important than
+any kind of performance metric.
+
+00:09:21.070 --> 00:09:21.970
+SURMA: I mean, you say that.
+
+00:09:21.970 --> 00:09:22.845
+MATHIAS BYNENS: Yeah.
+
+00:09:22.845 --> 00:09:24.670
+JAKE: [LAUGHTER]
+But is it really?
+
+00:09:24.670 --> 00:09:26.798
+The answer is, yes, it is.
+
+00:09:26.798 --> 00:09:29.120
+[LAUGHTER]
+
+00:09:29.120 --> 00:09:33.370
+So while we've got
+the two of you here,
+
+00:09:33.370 --> 00:09:36.272
+there's a proposal in JavaScript
+that we're very excited about.
+
+00:09:36.272 --> 00:09:36.980
+SURMA: Oh, right.
+
+00:09:36.980 --> 00:09:39.550
+JAKE: And one that we're
+also excited about,
+
+00:09:39.550 --> 00:09:42.750
+but it's being made
+into a kind of face-off,
+
+00:09:42.750 --> 00:09:44.270
+we're going to say.
+
+00:09:44.270 --> 00:09:45.950
+SURMA: In the left-hand corner.
+
+00:09:45.950 --> 00:09:46.567
+JAKE: Yeah.
+
+00:09:46.567 --> 00:09:47.650
+SURMA: Like, double colon.
+
+00:09:47.650 --> 00:09:50.020
+JAKE: I like Pipeline.
+
+00:09:50.020 --> 00:09:50.990
+It's OK.
+
+00:09:50.990 --> 00:09:52.495
+[LAUGHTER]
+
+00:09:52.495 --> 00:09:53.720
+MATHIAS BYNENS: It's OK, wow.
+
+00:09:53.720 --> 00:09:55.435
+You're really selling it, dude.
+
+00:09:55.435 --> 00:09:57.430
+JAKE: I see what it solves.
+
+00:09:57.430 --> 00:09:58.720
+It seems very complicated.
+
+00:09:58.720 --> 00:10:00.790
+But I see what it solves.
+
+00:10:00.790 --> 00:10:02.659
+But I want the ability to--
+
+00:10:02.659 --> 00:10:04.200
+oh, we don't have
+a video about this.
+
+00:10:04.200 --> 00:10:06.880
+I want the ability
+to import methods
+
+00:10:06.880 --> 00:10:10.240
+that will be called on
+their class so the idea
+
+00:10:10.240 --> 00:10:12.900
+you get the tree shaking
+thing all happening for free.
+
+00:10:12.900 --> 00:10:15.379
+And it's the bind operator
+that lets us do that.
+
+00:10:15.379 --> 00:10:17.170
+And [INAUDIBLE],, you
+know what I'm saying,
+
+00:10:17.170 --> 00:10:18.560
+it's one of the other.
+
+00:10:18.560 --> 00:10:19.060
+Why?
+
+00:10:19.060 --> 00:10:20.830
+[LAUGHTER]
+
+00:10:20.830 --> 00:10:21.750
+Can we not do that?
+
+00:10:21.750 --> 00:10:22.030
+SATHYA GUNASEKARAN:
+Do you want--
+
+00:10:22.030 --> 00:10:22.630
+MATHIAS BYNENS: I'll
+let you take this, Sath.
+
+00:10:22.630 --> 00:10:23.130
+SATHYA GUNASEKARAN: Go for it.
+
+00:10:23.130 --> 00:10:24.270
+[LAUGHTER]
+
+00:10:24.270 --> 00:10:26.400
+SURMA: No, but I mean,
+you could start with--
+
+00:10:26.400 --> 00:10:28.190
+you are aware of both
+of these proposals.
+
+00:10:28.190 --> 00:10:29.920
+Right?
+
+00:10:29.920 --> 00:10:32.422
+As an implementer, do
+you have a preference?
+
+00:10:32.422 --> 00:10:33.880
+Is there something
+where you think,
+
+00:10:33.880 --> 00:10:36.582
+this is stupid to
+implement, this is easier?
+
+00:10:36.582 --> 00:10:39.040
+Or do you think, this has more
+side effects than the other?
+
+00:10:39.040 --> 00:10:40.070
+Is there anything that--
+
+00:10:40.070 --> 00:10:41.950
+SATHYA GUNASEKARAN: No, as far
+as implementation is concerned,
+
+00:10:41.950 --> 00:10:43.230
+I'm OK with both.
+
+00:10:43.230 --> 00:10:44.840
+They're both easy to implement.
+
+00:10:44.840 --> 00:10:46.022
+So it really goes to like--
+
+00:10:46.022 --> 00:10:47.230
+JAKE: You're very diplomatic.
+
+00:10:47.230 --> 00:10:50.019
+SATHYA GUNASEKARAN:
+[LAUGHS] It really changes
+
+00:10:50.019 --> 00:10:51.310
+the ergonomics of the language.
+
+00:10:51.310 --> 00:10:55.530
+And it complicates it
+because we add more syntax.
+
+00:10:55.530 --> 00:10:59.020
+So there's a syntax budget
+that we're constantly aware of.
+
+00:10:59.020 --> 00:11:01.414
+And we don't want to exceed
+and add more [INAUDIBLE]
+
+00:11:01.414 --> 00:11:02.080
+to the language.
+
+00:11:02.080 --> 00:11:04.737
+SURMA: Can we remove syntax
+to free up the budget?
+
+00:11:04.737 --> 00:11:06.050
+JAKE: Do we need plus?
+
+00:11:06.050 --> 00:11:07.440
+Do we really need plus anymore?
+
+00:11:07.440 --> 00:11:09.026
+SURMA: I'm down
+with removing plus.
+
+00:11:09.026 --> 00:11:10.860
+Semicolons, people
+don't want them anyway.
+
+00:11:10.860 --> 00:11:12.131
+[LAUGHTER]
+
+00:11:12.131 --> 00:11:12.880
+JAKE: That's fine.
+
+00:11:12.880 --> 00:11:14.640
+I'll give up semicolons
+if I get binds.
+
+00:11:14.640 --> 00:11:15.182
+Yeah, I'm OK.
+
+00:11:15.182 --> 00:11:17.139
+MATHIAS BYNENS: You can
+pretty much reimplement
+
+00:11:17.139 --> 00:11:18.580
+plus by using minus.
+
+00:11:18.580 --> 00:11:19.800
+So what's the big deal?
+
+00:11:19.800 --> 00:11:20.300
+JAKE: See?
+
+00:11:20.300 --> 00:11:22.140
+Minus, minus, there you go.
+
+00:11:22.140 --> 00:11:23.491
+Brilliant.
+
+00:11:23.491 --> 00:11:25.240
+Do we just need to get
+rid of one operator
+
+00:11:25.240 --> 00:11:26.281
+to get the bind operator.
+
+00:11:26.281 --> 00:11:26.940
+Is that OK?
+
+00:11:26.940 --> 00:11:27.760
+SURMA: It's two
+characters, right?
+
+00:11:27.760 --> 00:11:28.270
+JAKE: Two characters.
+
+00:11:28.270 --> 00:11:29.690
+So we get rid of
+semicolons as well.
+
+00:11:29.690 --> 00:11:30.610
+MATHIAS BYNENS: Oh,
+yeah, there we go.
+
+00:11:30.610 --> 00:11:32.010
+JAKE: And job done.
+
+00:11:32.010 --> 00:11:32.830
+All right.
+
+00:11:32.830 --> 00:11:36.300
+No, but seriously, is there
+a reason why things like bind
+
+00:11:36.300 --> 00:11:38.830
+aren't really being taken
+forward as much like--
+
+00:11:38.830 --> 00:11:40.330
+SURMA: Well, I guess
+our bottom line
+
+00:11:40.330 --> 00:11:44.170
+was bind is a much less
+intrusive change because it's
+
+00:11:44.170 --> 00:11:45.660
+just-- that's just
+a de-sugaring.
+
+00:11:45.660 --> 00:11:47.740
+It just desugars
+over the bind call,
+
+00:11:47.740 --> 00:11:50.710
+while a pipeline, in
+its different forms that
+
+00:11:50.710 --> 00:11:55.900
+are in the proposal, does
+some magic and also has--
+
+00:11:55.900 --> 00:11:58.150
+especially the smart versions,
+like the question mark.
+
+00:11:58.150 --> 00:12:00.190
+MATHIAS BYNENS: Yeah that's
+one problem with pipeline.
+
+00:12:00.190 --> 00:12:02.314
+You want positional arguments,
+and you want to say,
+
+00:12:02.314 --> 00:12:04.060
+OK, I want to fill
+out this argument here
+
+00:12:04.060 --> 00:12:05.410
+as I pipe it through.
+
+00:12:05.410 --> 00:12:06.350
+And that's where
+it becomes hairy.
+
+00:12:06.350 --> 00:12:07.930
+SURMA: I thought we could
+take the poop emoji instead
+
+00:12:07.930 --> 00:12:08.949
+of the question mark.
+
+00:12:08.949 --> 00:12:10.740
+It would make the code
+much more enjoyable.
+
+00:12:10.740 --> 00:12:12.050
+MATHIAS BYNENS: I
+would be OK with that.
+
+00:12:12.050 --> 00:12:12.662
+Like, yeah.
+
+00:12:12.662 --> 00:12:13.566
+JAKE: OK.
+
+00:12:13.566 --> 00:12:14.800
+SURMA: It said for 14 nights.
+
+00:12:14.800 --> 00:12:16.300
+And it was just
+like, you know what?
+
+00:12:16.300 --> 00:12:17.508
+The "teen" isn't [INAUDIBLE].
+
+00:12:17.508 --> 00:12:18.552
+It's just a fortnight.
+
+00:12:18.552 --> 00:12:19.404
+JAKE: Whoa.
+
+00:12:19.404 --> 00:12:21.040
+I think you might be right.
+
+00:12:21.040 --> 00:12:22.080
+[LAUGHTER]
+
+00:12:22.080 --> 00:12:24.250
+It's just one of those
+words I've always used.
+
+00:12:24.250 --> 00:12:25.535
+SURMA: You think it's like
+the night in the fort.
+
+00:12:25.535 --> 00:12:27.181
+You spend 14 nights in the fort.
+
+00:12:27.181 --> 00:12:27.680
+JAKE: Yeah.
+
+00:12:27.680 --> 00:12:29.740
+SURMA: [LAUGHS] I mean, sure.
+
+00:12:29.740 --> 00:12:32.180
+That's actually a more fun
+definition than just 14 nights.
+
+00:12:32.180 --> 00:12:33.846
+JAKE: I think yeah,
+that would be right.
+
+00:12:33.846 --> 00:12:35.640
+Well done.
+

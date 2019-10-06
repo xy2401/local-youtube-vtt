@@ -1,0 +1,811 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.219
+[MUSIC PLAYING]
+
+00:00:02.219 --> 00:00:03.760
+ROB DODSON: At the
+Chrome Dev Summit,
+
+00:00:03.760 --> 00:00:05.700
+I showed off a
+contacts app I built
+
+00:00:05.700 --> 00:00:07.690
+which let me scroll
+through hundreds of friends
+
+00:00:07.690 --> 00:00:10.580
+all at a very snappy
+60 frames per second.
+
+00:00:10.580 --> 00:00:13.060
+Dropping hundreds or
+maybe even like thousands
+
+00:00:13.060 --> 00:00:15.052
+of DOM elements on
+the screen can really
+
+00:00:15.052 --> 00:00:16.260
+blow your performance budget.
+
+00:00:16.260 --> 00:00:17.730
+So how do you do it?
+
+00:00:17.730 --> 00:00:18.440
+I'm Rob Dodson.
+
+00:00:18.440 --> 00:00:19.810
+today on Polycast,
+I'm going to show you
+
+00:00:19.810 --> 00:00:21.510
+how to scroll through
+thousands of items
+
+00:00:21.510 --> 00:00:23.220
+using nothing but HTML.
+
+00:00:23.220 --> 00:00:24.540
+Let's check it out.
+
+00:00:24.540 --> 00:00:26.680
+Now the trick to rendering
+lots of stuff on screen
+
+00:00:26.680 --> 00:00:29.130
+is to actually only render
+a few items at a time,
+
+00:00:29.130 --> 00:00:31.860
+and then recycle those
+items super fast.
+
+00:00:31.860 --> 00:00:35.980
+So as one item goes
+off screen, we move it
+
+00:00:35.980 --> 00:00:38.580
+back down to the bottom and
+actually update its content
+
+00:00:38.580 --> 00:00:39.270
+in the process.
+
+00:00:39.270 --> 00:00:40.894
+This way, we don't
+have to pay the cost
+
+00:00:40.894 --> 00:00:42.220
+of creating thousands of items.
+
+00:00:42.220 --> 00:00:44.510
+We might only create a
+pool of like 20 items
+
+00:00:44.510 --> 00:00:46.340
+and then reuse those
+over and over again.
+
+00:00:46.340 --> 00:00:47.840
+So to do this, I'm
+going to be using
+
+00:00:47.840 --> 00:00:51.530
+an element called core-list.
+
+00:00:51.530 --> 00:00:53.860
+It's one of my absolute
+most favorite elements,
+
+00:00:53.860 --> 00:00:56.910
+and what it is is a
+virtualized infinite list.
+
+00:00:56.910 --> 00:00:58.540
+You've got a data
+provider, which
+
+00:00:58.540 --> 00:01:00.450
+is just an array
+of objects, and you
+
+00:01:00.450 --> 00:01:02.530
+can connect that to a template.
+
+00:01:02.530 --> 00:01:04.739
+And for every instance
+of that template inside
+
+00:01:04.739 --> 00:01:06.780
+of your core-list, it
+will stamp out an item
+
+00:01:06.780 --> 00:01:08.000
+to match your data provider.
+
+00:01:08.000 --> 00:01:09.630
+What's really cool
+about this is you
+
+00:01:09.630 --> 00:01:11.910
+can use data bindings
+inside of this template.
+
+00:01:11.910 --> 00:01:14.560
+So if I wanted to take the
+name property right here,
+
+00:01:14.560 --> 00:01:17.510
+I can just pipe it
+right into my template.
+
+00:01:17.510 --> 00:01:21.610
+Where model refers to the actual
+instance and the data provider
+
+00:01:21.610 --> 00:01:23.370
+name refers to that property.
+
+00:01:23.370 --> 00:01:25.460
+It's really, really cool,
+and what it lets you do
+
+00:01:25.460 --> 00:01:27.670
+is very easily throw
+together something
+
+00:01:27.670 --> 00:01:30.070
+like this-- a little
+mobile contacts list.
+
+00:01:30.070 --> 00:01:32.910
+And that's exactly what we're
+going to be building today.
+
+00:01:32.910 --> 00:01:34.530
+Now that you see
+how core-list works,
+
+00:01:34.530 --> 00:01:37.510
+let's hop into the editor
+and get this thing rolling.
+
+00:01:37.510 --> 00:01:40.390
+The first thing I want to do
+is hop into my bower.json file.
+
+00:01:40.390 --> 00:01:42.360
+I've got a core-list,
+core image,
+
+00:01:42.360 --> 00:01:44.257
+and a library inside of
+here called faker.js,
+
+00:01:44.257 --> 00:01:46.340
+which I'm going to use to
+generate some dummy data
+
+00:01:46.340 --> 00:01:48.054
+for my application.
+
+00:01:48.054 --> 00:01:49.470
+And over at my
+terminal, I'm going
+
+00:01:49.470 --> 00:01:53.340
+to run "bower install" to
+add everything to my project.
+
+00:01:53.340 --> 00:01:55.960
+Then back in my editor, I will
+open up my element's HTML file
+
+00:01:55.960 --> 00:01:59.084
+and write out an import
+for the core-list element.
+
+00:01:59.084 --> 00:02:01.250
+And the thing that I often
+find tricky about working
+
+00:02:01.250 --> 00:02:02.875
+with core-list is
+making sure that I've
+
+00:02:02.875 --> 00:02:04.230
+got the right height set on it.
+
+00:02:04.230 --> 00:02:06.940
+In this case, I want my list to
+be as big as the screen itself,
+
+00:02:06.940 --> 00:02:09.639
+so I'm going to use some layout
+attributes to pull that off.
+
+00:02:09.639 --> 00:02:14.820
+So I will set my body element
+to have a fullbleed fit layout
+
+00:02:14.820 --> 00:02:16.580
+and vertical attributes on it.
+
+00:02:16.580 --> 00:02:19.055
+Then we'll add a core-list
+element with a flex attribute,
+
+00:02:19.055 --> 00:02:21.429
+and what that's going to do
+is tell the core-list element
+
+00:02:21.429 --> 00:02:23.470
+to stretch to fill the body.
+
+00:02:23.470 --> 00:02:26.100
+Now inside of my core-list,
+I'm going to create a template.
+
+00:02:26.100 --> 00:02:28.340
+And inside of that
+template, I will put a div.
+
+00:02:28.340 --> 00:02:30.130
+And give that div a
+class of row and this
+
+00:02:30.130 --> 00:02:32.130
+is where I'm going to
+store all of my row items.
+
+00:02:32.130 --> 00:02:34.150
+Inside of the row,
+I'll create another div
+
+00:02:34.150 --> 00:02:37.995
+and give it a data
+binding from "model.name."
+
+00:02:37.995 --> 00:02:39.620
+Now for the core-list
+to work properly,
+
+00:02:39.620 --> 00:02:42.710
+it needs to know the approximate
+height of all of the row items
+
+00:02:42.710 --> 00:02:43.590
+inside of it.
+
+00:02:43.590 --> 00:02:45.420
+And by default, it
+expects the row item
+
+00:02:45.420 --> 00:02:47.370
+to be about 80 pixels high.
+
+00:02:47.370 --> 00:02:49.990
+So in my CSS, I will
+write out some styles
+
+00:02:49.990 --> 00:02:53.277
+to force that row div that I
+created to be 80 pixels high.
+
+00:02:53.277 --> 00:02:55.860
+And if you wanted to have some
+items that are different sizes,
+
+00:02:55.860 --> 00:02:57.630
+you could also set a height
+attribute on the core-list
+
+00:02:57.630 --> 00:02:59.713
+itself, and you want that
+height to be the average
+
+00:02:59.713 --> 00:03:00.930
+of all your different items.
+
+00:03:00.930 --> 00:03:02.540
+I made a future
+video to show how
+
+00:03:02.540 --> 00:03:04.690
+to do variable height
+items if you guys are
+
+00:03:04.690 --> 00:03:05.870
+interested in that.
+
+00:03:05.870 --> 00:03:07.953
+Now because I want to pipe
+some data into my list,
+
+00:03:07.953 --> 00:03:09.460
+I'm going to wrap
+everything inside
+
+00:03:09.460 --> 00:03:11.637
+of an auto-binding template.
+
+00:03:11.637 --> 00:03:13.220
+And I'm also going
+to give my template
+
+00:03:13.220 --> 00:03:15.344
+an ID of "app," so that
+way I can refer to it later
+
+00:03:15.344 --> 00:03:16.820
+using JavaScript.
+
+00:03:16.820 --> 00:03:20.064
+Then I'm going to include the
+faker.js library down here
+
+00:03:20.064 --> 00:03:21.980
+at the bottom, basically
+right above my app.js
+
+00:03:21.980 --> 00:03:23.810
+file because that's
+where I need to use it.
+
+00:03:23.810 --> 00:03:26.393
+And I can just grab that out of
+my bower components directory.
+
+00:03:26.393 --> 00:03:29.460
+Then I will pop open
+app.js, and inside of here
+
+00:03:29.460 --> 00:03:31.330
+I'm just going to
+create a function called
+
+00:03:31.330 --> 00:03:32.560
+generateContacts.
+
+00:03:32.560 --> 00:03:34.600
+And what it is is
+just a for loop.
+
+00:03:34.600 --> 00:03:36.400
+It's got about
+1,000 items in it.
+
+00:03:36.400 --> 00:03:42.150
+It's going to return an array
+of data objects using faker.js.
+
+00:03:42.150 --> 00:03:44.997
+Then I will grab a reference
+to my auto-binding template,
+
+00:03:44.997 --> 00:03:47.330
+and I will set the auto-binding
+template's data property
+
+00:03:47.330 --> 00:03:49.889
+equal to the return value
+of generateContacts.
+
+00:03:49.889 --> 00:03:52.180
+And the last thing I need to
+do is connect my core-list
+
+00:03:52.180 --> 00:03:53.210
+to that data.
+
+00:03:53.210 --> 00:03:56.940
+So inside of my template,
+I will just set "data="
+
+00:03:56.940 --> 00:03:59.040
+and I will bind to the
+data scope variable.
+
+00:03:59.040 --> 00:04:00.180
+And there we go.
+
+00:04:00.180 --> 00:04:03.370
+My data provider is connected to
+my list and I'm ready to rock.
+
+00:04:03.370 --> 00:04:05.070
+So if I hop up into
+my browser, you'll
+
+00:04:05.070 --> 00:04:07.519
+see that I'm now generating
+about 1,000 items
+
+00:04:07.519 --> 00:04:09.810
+inside this contact list,
+and I can scroll through them
+
+00:04:09.810 --> 00:04:10.555
+really fast.
+
+00:04:10.555 --> 00:04:12.930
+And the frame rate on this
+video may not be capturing it,
+
+00:04:12.930 --> 00:04:14.805
+but try it yourself and
+you should be getting
+
+00:04:14.805 --> 00:04:16.839
+around 60 frames per second.
+
+00:04:16.839 --> 00:04:18.610
+So the contact list
+is nice and snappy,
+
+00:04:18.610 --> 00:04:20.327
+but it's also pretty
+boring to look at.
+
+00:04:20.327 --> 00:04:22.660
+Let me drop in some profile
+photos, and while I'm at it,
+
+00:04:22.660 --> 00:04:24.520
+I'm going to show you
+a really cool trick.
+
+00:04:24.520 --> 00:04:26.640
+So I'm going to pop open
+my elements.html file
+
+00:04:26.640 --> 00:04:30.060
+and I'm going to add an import
+for the core image element.
+
+00:04:30.060 --> 00:04:33.584
+Then I'm going to add a
+core image inside of my row.
+
+00:04:33.584 --> 00:04:35.250
+I'll give my core
+image some attributes.
+
+00:04:35.250 --> 00:04:36.910
+I'll give the class of avatar.
+
+00:04:36.910 --> 00:04:40.370
+I will tell it to pull its data
+from the data provider's avatar
+
+00:04:40.370 --> 00:04:41.010
+property.
+
+00:04:41.010 --> 00:04:42.010
+I'm going to set a
+preload attribute,
+
+00:04:42.010 --> 00:04:44.090
+and also give it a
+sizing style of cover.
+
+00:04:44.090 --> 00:04:46.500
+I'm also going to
+tell my row to lay out
+
+00:04:46.500 --> 00:04:48.250
+all of its children
+horizontally centered.
+
+00:04:48.250 --> 00:04:51.480
+And what that means is if a row
+was sort of like a rectangle,
+
+00:04:51.480 --> 00:04:53.910
+then my avatar image would
+appear over here on the left.
+
+00:04:53.910 --> 00:04:56.220
+And then centered
+with it vertically
+
+00:04:56.220 --> 00:04:59.650
+would be all of the text
+for my model's name.
+
+00:04:59.650 --> 00:05:02.580
+Now the reason why I'm
+using a core image here
+
+00:05:02.580 --> 00:05:05.420
+instead of just using a
+regular image from my avatar
+
+00:05:05.420 --> 00:05:08.640
+is because of this
+preload attribute.
+
+00:05:08.640 --> 00:05:11.870
+Basically, because
+our core-list element
+
+00:05:11.870 --> 00:05:15.260
+is a virtualized listed that
+is recycling its children over
+
+00:05:15.260 --> 00:05:20.150
+and over again, it runs the
+risk of displaying stale images
+
+00:05:20.150 --> 00:05:22.900
+if the image has not had
+a chance to load yet.
+
+00:05:22.900 --> 00:05:25.280
+With core-image and with
+this preload attribute, what
+
+00:05:25.280 --> 00:05:28.660
+will happen is it will actually
+display either a default
+
+00:05:28.660 --> 00:05:31.550
+background color or a
+stand-in background image
+
+00:05:31.550 --> 00:05:35.030
+while it waits for the image
+content to actually load in.
+
+00:05:35.030 --> 00:05:38.230
+So rather than seeing stale
+items flying through my list
+
+00:05:38.230 --> 00:05:40.790
+but then suddenly
+change, you'll see
+
+00:05:40.790 --> 00:05:43.600
+a sort of placeholder scroll
+through the list and then
+
+00:05:43.600 --> 00:05:45.101
+the image itself will load in.
+
+00:05:45.101 --> 00:05:46.600
+And [INAUDIBLE] my
+avatar, I'm going
+
+00:05:46.600 --> 00:05:48.830
+to give it an explicit
+width and height
+
+00:05:48.830 --> 00:05:52.059
+and also give it a border radius
+so that it's nice and round.
+
+00:05:52.059 --> 00:05:53.850
+And lastly, I'll give
+it a background color
+
+00:05:53.850 --> 00:05:56.356
+which will display while
+that image is preloading.
+
+00:05:56.356 --> 00:05:58.230
+Now if we go and preview
+this in the browser,
+
+00:05:58.230 --> 00:06:00.620
+you can see that I've
+now got my avatar images.
+
+00:06:00.620 --> 00:06:02.760
+I've got my contact
+names to the right,
+
+00:06:02.760 --> 00:06:04.445
+and it's scrolling
+through really fast.
+
+00:06:04.445 --> 00:06:06.820
+But some of you may have
+noticed something a little funny
+
+00:06:06.820 --> 00:06:08.510
+as this thing is scrolling.
+
+00:06:08.510 --> 00:06:11.110
+Pay attention to
+this guy right here,
+
+00:06:11.110 --> 00:06:13.920
+and look at what happens
+when I scroll back up.
+
+00:06:13.920 --> 00:06:14.690
+Yeah, see that?
+
+00:06:14.690 --> 00:06:15.850
+It's the same dude.
+
+00:06:15.850 --> 00:06:17.110
+So what's going on here?
+
+00:06:17.110 --> 00:06:21.270
+Well, what we've run into
+is a bug in core-list.
+
+00:06:21.270 --> 00:06:23.490
+And what do we do
+when we have a bug?
+
+00:06:23.490 --> 00:06:25.575
+Well, we bust out the--
+
+00:06:25.575 --> 00:06:27.734
+MONSTER VOICE: Sweet hacks!
+
+00:06:27.734 --> 00:06:29.900
+ROB DODSON: So that's exactly
+what I want to do now.
+
+00:06:29.900 --> 00:06:32.556
+I'm going to show you how to
+work around this little issue.
+
+00:06:32.556 --> 00:06:33.930
+But before I do
+that, I also want
+
+00:06:33.930 --> 00:06:37.570
+to point out that I have
+included a link to the GitHub
+
+00:06:37.570 --> 00:06:39.000
+issue down in the show notes.
+
+00:06:39.000 --> 00:06:41.990
+You can follow along to
+see when this bug is fixed.
+
+00:06:41.990 --> 00:06:44.960
+Basically, this is a problem
+I believe with object observe,
+
+00:06:44.960 --> 00:06:46.320
+and there's two ways to fix it.
+
+00:06:46.320 --> 00:06:48.140
+You can either create
+your own Polymer element
+
+00:06:48.140 --> 00:06:50.435
+and put your core-list inside
+of this new custom element
+
+00:06:50.435 --> 00:06:51.268
+that you've created.
+
+00:06:51.268 --> 00:06:53.060
+This seems to fix the problem.
+
+00:06:53.060 --> 00:06:56.290
+Or if you want, you can use
+an auto-binding template
+
+00:06:56.290 --> 00:06:57.960
+like I am here,
+and then you need
+
+00:06:57.960 --> 00:07:01.624
+to include a binding for
+the list item's index.
+
+00:07:01.624 --> 00:07:03.540
+And this can kind of
+just be like a throwaway.
+
+00:07:03.540 --> 00:07:05.240
+You can hide it somewhere.
+
+00:07:05.240 --> 00:07:07.250
+What I'm going to do
+is actually create
+
+00:07:07.250 --> 00:07:11.920
+an attribute on both my
+core image and my div,
+
+00:07:11.920 --> 00:07:15.680
+and I'm going to set
+this data index attribute
+
+00:07:15.680 --> 00:07:20.620
+that I've made up to the
+value of the list items index.
+
+00:07:20.620 --> 00:07:23.110
+And what this does is it
+basically kind of magically
+
+00:07:23.110 --> 00:07:25.820
+pokes object [? on ?] observe,
+and it fixes our little bug
+
+00:07:25.820 --> 00:07:26.980
+here.
+
+00:07:26.980 --> 00:07:29.850
+Now these index values
+are not going to render,
+
+00:07:29.850 --> 00:07:31.167
+so it's kind of OK to do this.
+
+00:07:31.167 --> 00:07:33.000
+And again, this is just
+sort of a workaround
+
+00:07:33.000 --> 00:07:34.140
+for this temporary issue.
+
+00:07:36.545 --> 00:07:38.170
+Now we can preview
+this in our browser,
+
+00:07:38.170 --> 00:07:41.300
+and you'll notice that as we
+are scrolling through the page
+
+00:07:41.300 --> 00:07:44.490
+the background images are
+displaying that preloader
+
+00:07:44.490 --> 00:07:45.597
+placeholder color.
+
+00:07:45.597 --> 00:07:47.930
+And that's verification that
+you know that it's actually
+
+00:07:47.930 --> 00:07:51.000
+going out and fetching new
+images instead of the issue
+
+00:07:51.000 --> 00:07:53.940
+we had before where
+it was recycling them.
+
+00:07:53.940 --> 00:07:54.740
+There you have it.
+
+00:07:54.740 --> 00:07:57.031
+With core-list, you can scroll
+through a ton of content
+
+00:07:57.031 --> 00:07:59.310
+at a buttery-smooth
+60 frames per second.
+
+00:07:59.310 --> 00:08:00.239
+That's it for today.
+
+00:08:00.239 --> 00:08:01.780
+Be sure to click
+the Subscribe button
+
+00:08:01.780 --> 00:08:03.030
+to get more of these Polycasts.
+
+00:08:03.030 --> 00:08:04.738
+As always, thank you
+so much for watching
+
+00:08:04.738 --> 00:08:06.980
+and I'll see you next time.
+

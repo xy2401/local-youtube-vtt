@@ -1,0 +1,928 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.350 --> 00:00:05.509 align:start position:0%
+ 
+okay<00:00:04.350><c> so</c><00:00:04.410><c> in</c><00:00:04.649><c> this</c><00:00:04.740><c> lesson</c><00:00:04.950><c> I'd</c><00:00:05.189><c> like</c><00:00:05.340><c> to</c><00:00:05.399><c> talk</c>
+
+00:00:05.509 --> 00:00:05.519 align:start position:0%
+okay so in this lesson I'd like to talk
+ 
+
+00:00:05.519 --> 00:00:08.179 align:start position:0%
+okay so in this lesson I'd like to talk
+about<00:00:05.729><c> three</c><00:00:06.000><c> things</c><00:00:06.029><c> make</c><00:00:06.840><c> compile</c><00:00:07.830><c> and</c>
+
+00:00:08.179 --> 00:00:08.189 align:start position:0%
+about three things make compile and
+ 
+
+00:00:08.189 --> 00:00:10.939 align:start position:0%
+about three things make compile and
+rebuild<00:00:09.230><c> you</c><00:00:10.230><c> can</c><00:00:10.379><c> see</c><00:00:10.530><c> here</c><00:00:10.650><c> that</c><00:00:10.769><c> I</c><00:00:10.799><c> have</c><00:00:10.889><c> a</c>
+
+00:00:10.939 --> 00:00:10.949 align:start position:0%
+rebuild you can see here that I have a
+ 
+
+00:00:10.949 --> 00:00:13.400 align:start position:0%
+rebuild you can see here that I have a
+project<00:00:11.219><c> in</c><00:00:11.639><c> this</c><00:00:12.119><c> project</c><00:00:12.570><c> there</c><00:00:12.809><c> are</c><00:00:12.840><c> three</c>
+
+00:00:13.400 --> 00:00:13.410 align:start position:0%
+project in this project there are three
+ 
+
+00:00:13.410 --> 00:00:15.859 align:start position:0%
+project in this project there are three
+separate<00:00:14.010><c> modules</c><00:00:14.520><c> and</c><00:00:15.420><c> in</c><00:00:15.510><c> each</c><00:00:15.600><c> of</c><00:00:15.750><c> these</c>
+
+00:00:15.859 --> 00:00:15.869 align:start position:0%
+separate modules and in each of these
+ 
+
+00:00:15.869 --> 00:00:18.529 align:start position:0%
+separate modules and in each of these
+modules<00:00:16.410><c> I</c><00:00:16.590><c> have</c><00:00:16.800><c> some</c><00:00:17.039><c> classes</c><00:00:17.550><c> some</c><00:00:17.730><c> source</c>
+
+00:00:18.529 --> 00:00:18.539 align:start position:0%
+modules I have some classes some source
+ 
+
+00:00:18.539 --> 00:00:21.520 align:start position:0%
+modules I have some classes some source
+files<00:00:18.840><c> that</c><00:00:19.200><c> I</c><00:00:20.070><c> placed</c><00:00:20.460><c> inside</c><00:00:20.880><c> them</c><00:00:21.150><c> and</c>
+
+00:00:21.520 --> 00:00:21.530 align:start position:0%
+files that I placed inside them and
+ 
+
+00:00:21.530 --> 00:00:23.990 align:start position:0%
+files that I placed inside them and
+let's<00:00:22.530><c> say</c><00:00:22.650><c> we'd</c><00:00:22.800><c> like</c><00:00:22.830><c> to</c><00:00:22.950><c> build</c><00:00:23.160><c> one</c><00:00:23.670><c> class</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+let's say we'd like to build one class
+ 
+
+00:00:24.000 --> 00:00:26.630 align:start position:0%
+let's say we'd like to build one class
+inside<00:00:24.660><c> our</c><00:00:24.840><c> primary</c><00:00:25.350><c> module</c><00:00:25.860><c> say</c><00:00:26.520><c> the</c>
+
+00:00:26.630 --> 00:00:26.640 align:start position:0%
+inside our primary module say the
+ 
+
+00:00:26.640 --> 00:00:29.060 align:start position:0%
+inside our primary module say the
+aquaduct<00:00:27.119><c> class</c><00:00:27.360><c> I</c><00:00:27.720><c> open</c><00:00:28.500><c> up</c><00:00:28.560><c> the</c><00:00:28.710><c> AquaDuck</c>
+
+00:00:29.060 --> 00:00:29.070 align:start position:0%
+aquaduct class I open up the AquaDuck
+ 
+
+00:00:29.070 --> 00:00:30.410 align:start position:0%
+aquaduct class I open up the AquaDuck
+class<00:00:29.430><c> you</c><00:00:29.640><c> can</c><00:00:29.760><c> see</c><00:00:29.910><c> there's</c><00:00:30.090><c> nothing</c><00:00:30.210><c> there</c>
+
+00:00:30.410 --> 00:00:30.420 align:start position:0%
+class you can see there's nothing there
+ 
+
+00:00:30.420 --> 00:00:33.650 align:start position:0%
+class you can see there's nothing there
+just<00:00:31.380><c> to</c><00:00:31.440><c> demonstrate</c><00:00:31.610><c> I'll</c><00:00:32.610><c> press</c><00:00:33.149><c> control</c>
+
+00:00:33.650 --> 00:00:33.660 align:start position:0%
+just to demonstrate I'll press control
+ 
+
+00:00:33.660 --> 00:00:37.099 align:start position:0%
+just to demonstrate I'll press control
+shift<00:00:33.690><c> f9</c><00:00:34.649><c> to</c><00:00:35.579><c> compile</c><00:00:35.969><c> just</c><00:00:36.510><c> this</c><00:00:36.749><c> class</c>
+
+00:00:37.099 --> 00:00:37.109 align:start position:0%
+shift f9 to compile just this class
+ 
+
+00:00:37.109 --> 00:00:39.590 align:start position:0%
+shift f9 to compile just this class
+which<00:00:37.890><c> you</c><00:00:37.980><c> can</c><00:00:38.100><c> also</c><00:00:38.219><c> find</c><00:00:38.579><c> inside</c><00:00:39.089><c> the</c><00:00:39.329><c> build</c>
+
+00:00:39.590 --> 00:00:39.600 align:start position:0%
+which you can also find inside the build
+ 
+
+00:00:39.600 --> 00:00:42.559 align:start position:0%
+which you can also find inside the build
+menu<00:00:39.899><c> here</c><00:00:40.350><c> so</c><00:00:40.499><c> I'm</c><00:00:40.979><c> compiling</c><00:00:41.569><c> this</c>
+
+00:00:42.559 --> 00:00:42.569 align:start position:0%
+menu here so I'm compiling this
+ 
+
+00:00:42.569 --> 00:00:45.439 align:start position:0%
+menu here so I'm compiling this
+particular<00:00:42.960><c> class</c><00:00:43.819><c> so</c><00:00:44.819><c> you</c><00:00:44.879><c> can</c><00:00:44.999><c> see</c><00:00:45.210><c> in</c><00:00:45.329><c> the</c>
+
+00:00:45.439 --> 00:00:45.449 align:start position:0%
+particular class so you can see in the
+ 
+
+00:00:45.449 --> 00:00:47.389 align:start position:0%
+particular class so you can see in the
+output<00:00:45.780><c> directory</c><00:00:45.899><c> here</c><00:00:46.530><c> if</c><00:00:46.859><c> we</c><00:00:46.979><c> open</c><00:00:47.249><c> this</c><00:00:47.339><c> up</c>
+
+00:00:47.389 --> 00:00:47.399 align:start position:0%
+output directory here if we open this up
+ 
+
+00:00:47.399 --> 00:00:50.299 align:start position:0%
+output directory here if we open this up
+you<00:00:48.359><c> have</c><00:00:48.389><c> the</c><00:00:48.600><c> AquaDuck</c><00:00:49.019><c> class</c><00:00:49.289><c> and</c><00:00:50.159><c> this</c><00:00:50.249><c> is</c>
+
+00:00:50.299 --> 00:00:50.309 align:start position:0%
+you have the AquaDuck class and this is
+ 
+
+00:00:50.309 --> 00:00:53.419 align:start position:0%
+you have the AquaDuck class and this is
+d<00:00:50.579><c> compiled</c><00:00:51.149><c> from</c><00:00:51.449><c> the</c><00:00:51.569><c> class</c><00:00:51.989><c> file</c><00:00:52.379><c> so</c><00:00:53.159><c> the</c>
+
+00:00:53.419 --> 00:00:53.429 align:start position:0%
+d compiled from the class file so the
+ 
+
+00:00:53.429 --> 00:00:55.340 align:start position:0%
+d compiled from the class file so the
+bytecode<00:00:53.609><c> here</c><00:00:54.030><c> is</c><00:00:54.120><c> red</c><00:00:54.329><c> and</c><00:00:54.539><c> using</c><00:00:54.929><c> a</c><00:00:54.989><c> custom</c>
+
+00:00:55.340 --> 00:00:55.350 align:start position:0%
+bytecode here is red and using a custom
+ 
+
+00:00:55.350 --> 00:00:58.209 align:start position:0%
+bytecode here is red and using a custom
+b<00:00:55.469><c> compiler</c><00:00:55.979><c> we</c><00:00:56.460><c> can</c><00:00:56.639><c> read</c><00:00:56.940><c> the</c><00:00:57.629><c> source</c><00:00:57.899><c> code</c>
+
+00:00:58.209 --> 00:00:58.219 align:start position:0%
+b compiler we can read the source code
+ 
+
+00:00:58.219 --> 00:01:00.590 align:start position:0%
+b compiler we can read the source code
+however<00:00:59.219><c> it</c><00:00:59.460><c> doesn't</c><00:00:59.670><c> directly</c><00:00:59.879><c> use</c><00:01:00.389><c> the</c>
+
+00:01:00.590 --> 00:01:00.600 align:start position:0%
+however it doesn't directly use the
+ 
+
+00:01:00.600 --> 00:01:03.529 align:start position:0%
+however it doesn't directly use the
+source<00:01:00.899><c> inside</c><00:01:01.350><c> this</c><00:01:01.589><c> file</c><00:01:02.179><c> now</c><00:01:03.179><c> we</c><00:01:03.239><c> can</c><00:01:03.420><c> also</c>
+
+00:01:03.529 --> 00:01:03.539 align:start position:0%
+source inside this file now we can also
+ 
+
+00:01:03.539 --> 00:01:05.509 align:start position:0%
+source inside this file now we can also
+build<00:01:03.780><c> this</c><00:01:03.959><c> entire</c><00:01:04.350><c> module</c><00:01:04.589><c> so</c><00:01:05.250><c> if</c><00:01:05.309><c> you</c><00:01:05.400><c> open</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+build this entire module so if you open
+ 
+
+00:01:05.519 --> 00:01:08.029 align:start position:0%
+build this entire module so if you open
+up<00:01:05.670><c> the</c><00:01:05.850><c> build</c><00:01:06.090><c> menu</c><00:01:06.360><c> again</c><00:01:06.690><c> you</c><00:01:07.649><c> can</c><00:01:07.799><c> make</c>
+
+00:01:08.029 --> 00:01:08.039 align:start position:0%
+up the build menu again you can make
+ 
+
+00:01:08.039 --> 00:01:10.490 align:start position:0%
+up the build menu again you can make
+this<00:01:08.310><c> module</c><00:01:08.850><c> and</c><00:01:09.060><c> what</c><00:01:09.659><c> this</c><00:01:09.810><c> will</c><00:01:09.960><c> do</c><00:01:10.140><c> is</c><00:01:10.380><c> it</c>
+
+00:01:10.490 --> 00:01:10.500 align:start position:0%
+this module and what this will do is it
+ 
+
+00:01:10.500 --> 00:01:12.020 align:start position:0%
+this module and what this will do is it
+will<00:01:10.590><c> take</c><00:01:10.649><c> all</c><00:01:11.039><c> the</c><00:01:11.159><c> classes</c><00:01:11.340><c> inside</c><00:01:11.909><c> the</c>
+
+00:01:12.020 --> 00:01:12.030 align:start position:0%
+will take all the classes inside the
+ 
+
+00:01:12.030 --> 00:01:15.440 align:start position:0%
+will take all the classes inside the
+module<00:01:12.420><c> and</c><00:01:12.799><c> then</c><00:01:13.799><c> compile</c><00:01:14.219><c> them</c><00:01:14.520><c> and</c><00:01:14.670><c> that'll</c>
+
+00:01:15.440 --> 00:01:15.450 align:start position:0%
+module and then compile them and that'll
+ 
+
+00:01:15.450 --> 00:01:16.639 align:start position:0%
+module and then compile them and that'll
+be<00:01:15.539><c> placed</c><00:01:15.810><c> inside</c><00:01:16.020><c> the</c><00:01:16.259><c> output</c><00:01:16.560><c> directory</c>
+
+00:01:16.639 --> 00:01:16.649 align:start position:0%
+be placed inside the output directory
+ 
+
+00:01:16.649 --> 00:01:19.249 align:start position:0%
+be placed inside the output directory
+here<00:01:17.250><c> and</c><00:01:18.119><c> you</c><00:01:18.270><c> should</c><00:01:18.450><c> see</c><00:01:18.630><c> that</c><00:01:18.659><c> momentarily</c>
+
+00:01:19.249 --> 00:01:19.259 align:start position:0%
+here and you should see that momentarily
+ 
+
+00:01:19.259 --> 00:01:21.679 align:start position:0%
+here and you should see that momentarily
+so<00:01:20.159><c> you</c><00:01:20.250><c> can</c><00:01:20.369><c> see</c><00:01:20.520><c> all</c><00:01:20.700><c> these</c><00:01:20.850><c> classes</c><00:01:21.420><c> inside</c>
+
+00:01:21.679 --> 00:01:21.689 align:start position:0%
+so you can see all these classes inside
+ 
+
+00:01:21.689 --> 00:01:24.260 align:start position:0%
+so you can see all these classes inside
+the<00:01:21.840><c> primary</c><00:01:22.229><c> module</c><00:01:22.590><c> here</c><00:01:22.979><c> are</c><00:01:23.430><c> compiled</c><00:01:24.030><c> to</c>
+
+00:01:24.260 --> 00:01:24.270 align:start position:0%
+the primary module here are compiled to
+ 
+
+00:01:24.270 --> 00:01:26.569 align:start position:0%
+the primary module here are compiled to
+the<00:01:24.390><c> output</c><00:01:24.719><c> directory</c><00:01:25.009><c> now</c><00:01:26.009><c> let's</c><00:01:26.280><c> say</c><00:01:26.430><c> we</c>
+
+00:01:26.569 --> 00:01:26.579 align:start position:0%
+the output directory now let's say we
+ 
+
+00:01:26.579 --> 00:01:28.700 align:start position:0%
+the output directory now let's say we
+want<00:01:26.759><c> to</c><00:01:26.820><c> add</c><00:01:26.880><c> a</c><00:01:27.000><c> dependency</c><00:01:27.930><c> from</c><00:01:28.619><c> the</c>
+
+00:01:28.700 --> 00:01:28.710 align:start position:0%
+want to add a dependency from the
+ 
+
+00:01:28.710 --> 00:01:31.669 align:start position:0%
+want to add a dependency from the
+primary<00:01:29.250><c> module</c><00:01:29.700><c> to</c><00:01:30.539><c> the</c><00:01:30.810><c> secondary</c><00:01:31.229><c> module</c>
+
+00:01:31.669 --> 00:01:31.679 align:start position:0%
+primary module to the secondary module
+ 
+
+00:01:31.679 --> 00:01:33.980 align:start position:0%
+primary module to the secondary module
+so<00:01:32.490><c> I</c><00:01:32.520><c> can</c><00:01:32.700><c> do</c><00:01:32.789><c> that</c><00:01:32.909><c> by</c><00:01:33.090><c> clicking</c><00:01:33.299><c> here</c><00:01:33.509><c> in</c><00:01:33.869><c> my</c>
+
+00:01:33.980 --> 00:01:33.990 align:start position:0%
+so I can do that by clicking here in my
+ 
+
+00:01:33.990 --> 00:01:35.660 align:start position:0%
+so I can do that by clicking here in my
+project<00:01:34.469><c> structure</c><00:01:34.740><c> dialog</c><00:01:35.280><c> under</c>
+
+00:01:35.660 --> 00:01:35.670 align:start position:0%
+project structure dialog under
+ 
+
+00:01:35.670 --> 00:01:37.609 align:start position:0%
+project structure dialog under
+dependencies<00:01:36.299><c> and</c><00:01:36.600><c> I'll</c><00:01:37.049><c> add</c><00:01:37.200><c> a</c><00:01:37.229><c> module</c>
+
+00:01:37.609 --> 00:01:37.619 align:start position:0%
+dependencies and I'll add a module
+ 
+
+00:01:37.619 --> 00:01:41.179 align:start position:0%
+dependencies and I'll add a module
+dependency<00:01:38.490><c> on</c><00:01:38.640><c> the</c><00:01:39.149><c> secondary</c><00:01:39.719><c> module</c><00:01:40.320><c> so</c>
+
+00:01:41.179 --> 00:01:41.189 align:start position:0%
+dependency on the secondary module so
+ 
+
+00:01:41.189 --> 00:01:43.870 align:start position:0%
+dependency on the secondary module so
+I'll<00:01:41.310><c> click</c><00:01:41.490><c> OK</c><00:01:41.759><c> here</c><00:01:41.969><c> and</c><00:01:42.119><c> click</c><00:01:42.329><c> apply</c><00:01:42.630><c> now</c>
+
+00:01:43.870 --> 00:01:43.880 align:start position:0%
+I'll click OK here and click apply now
+ 
+
+00:01:43.880 --> 00:01:47.779 align:start position:0%
+I'll click OK here and click apply now
+watch<00:01:44.880><c> what</c><00:01:45.090><c> happens</c><00:01:45.420><c> if</c><00:01:45.630><c> I</c><00:01:45.990><c> make</c><00:01:46.679><c> the</c><00:01:47.249><c> primary</c>
+
+00:01:47.779 --> 00:01:47.789 align:start position:0%
+watch what happens if I make the primary
+ 
+
+00:01:47.789 --> 00:01:50.450 align:start position:0%
+watch what happens if I make the primary
+module<00:01:48.240><c> again</c><00:01:48.619><c> so</c><00:01:49.619><c> if</c><00:01:49.679><c> I</c><00:01:49.770><c> go</c><00:01:49.920><c> here</c><00:01:49.950><c> and</c><00:01:50.249><c> I</c><00:01:50.369><c> click</c>
+
+00:01:50.450 --> 00:01:50.460 align:start position:0%
+module again so if I go here and I click
+ 
+
+00:01:50.460 --> 00:01:53.450 align:start position:0%
+module again so if I go here and I click
+build<00:01:50.850><c> and</c><00:01:51.119><c> I</c><00:01:51.630><c> make</c><00:01:51.960><c> this</c><00:01:52.140><c> module</c><00:01:52.590><c> if</c><00:01:53.100><c> you</c><00:01:53.219><c> look</c>
+
+00:01:53.450 --> 00:01:53.460 align:start position:0%
+build and I make this module if you look
+ 
+
+00:01:53.460 --> 00:01:56.060 align:start position:0%
+build and I make this module if you look
+inside<00:01:53.609><c> the</c><00:01:53.909><c> output</c><00:01:54.240><c> directory</c><00:01:54.719><c> now</c><00:01:54.899><c> you</c><00:01:55.890><c> can</c>
+
+00:01:56.060 --> 00:01:56.070 align:start position:0%
+inside the output directory now you can
+ 
+
+00:01:56.070 --> 00:01:59.779 align:start position:0%
+inside the output directory now you can
+see<00:01:56.399><c> that</c><00:01:56.670><c> the</c><00:01:56.939><c> secondary</c><00:01:57.539><c> module</c><00:01:58.499><c> is</c><00:01:58.789><c> now</c>
+
+00:01:59.779 --> 00:01:59.789 align:start position:0%
+see that the secondary module is now
+ 
+
+00:01:59.789 --> 00:02:04.069 align:start position:0%
+see that the secondary module is now
+compiled<00:02:00.329><c> alongside</c><00:02:01.170><c> the</c><00:02:01.619><c> primary</c><00:02:02.100><c> one</c><00:02:03.079><c> now</c>
+
+00:02:04.069 --> 00:02:04.079 align:start position:0%
+compiled alongside the primary one now
+ 
+
+00:02:04.079 --> 00:02:07.219 align:start position:0%
+compiled alongside the primary one now
+if<00:02:04.229><c> we</c><00:02:04.319><c> add</c><00:02:04.530><c> another</c><00:02:05.149><c> dependency</c><00:02:06.149><c> from</c><00:02:07.049><c> the</c>
+
+00:02:07.219 --> 00:02:07.229 align:start position:0%
+if we add another dependency from the
+ 
+
+00:02:07.229 --> 00:02:09.980 align:start position:0%
+if we add another dependency from the
+secondary<00:02:07.679><c> module</c><00:02:08.190><c> to</c><00:02:08.880><c> the</c><00:02:09.000><c> tertiary</c><00:02:09.270><c> module</c>
+
+00:02:09.980 --> 00:02:09.990 align:start position:0%
+secondary module to the tertiary module
+ 
+
+00:02:09.990 --> 00:02:12.410 align:start position:0%
+secondary module to the tertiary module
+I<00:02:10.259><c> do</c><00:02:11.100><c> the</c><00:02:11.220><c> same</c><00:02:11.400><c> thing</c><00:02:11.670><c> I</c><00:02:11.850><c> add</c><00:02:11.970><c> module</c>
+
+00:02:12.410 --> 00:02:12.420 align:start position:0%
+I do the same thing I add module
+ 
+
+00:02:12.420 --> 00:02:15.890 align:start position:0%
+I do the same thing I add module
+dependency<00:02:13.050><c> here</c><00:02:13.260><c> I</c><00:02:13.880><c> click</c><00:02:14.880><c> OK</c>
+
+00:02:15.890 --> 00:02:15.900 align:start position:0%
+dependency here I click OK
+ 
+
+00:02:15.900 --> 00:02:19.309 align:start position:0%
+dependency here I click OK
+and<00:02:15.989><c> apply</c><00:02:16.530><c> and</c><00:02:17.420><c> now</c><00:02:18.420><c> go</c><00:02:18.629><c> back</c><00:02:18.810><c> into</c><00:02:19.079><c> the</c>
+
+00:02:19.309 --> 00:02:19.319 align:start position:0%
+and apply and now go back into the
+ 
+
+00:02:19.319 --> 00:02:24.399 align:start position:0%
+and apply and now go back into the
+primary<00:02:19.650><c> module</c><00:02:20.310><c> and</c><00:02:21.110><c> build</c><00:02:22.110><c> that</c><00:02:22.950><c> module</c>
+
+00:02:24.399 --> 00:02:24.409 align:start position:0%
+primary module and build that module
+ 
+
+00:02:24.409 --> 00:02:27.710 align:start position:0%
+primary module and build that module
+then<00:02:25.409><c> what</c><00:02:25.530><c> will</c><00:02:25.650><c> happen</c><00:02:25.680><c> is</c><00:02:26.269><c> it</c><00:02:27.269><c> will</c><00:02:27.299><c> compile</c>
+
+00:02:27.710 --> 00:02:27.720 align:start position:0%
+then what will happen is it will compile
+ 
+
+00:02:27.720 --> 00:02:31.360 align:start position:0%
+then what will happen is it will compile
+all<00:02:27.959><c> three</c><00:02:28.829><c> primary</c><00:02:29.670><c> secondary</c><00:02:29.970><c> and</c><00:02:30.299><c> tertiary</c>
+
+00:02:31.360 --> 00:02:31.370 align:start position:0%
+all three primary secondary and tertiary
+ 
+
+00:02:31.370 --> 00:02:34.640 align:start position:0%
+all three primary secondary and tertiary
+recursively<00:02:32.420><c> so</c><00:02:33.420><c> what</c><00:02:33.659><c> it'll</c><00:02:33.810><c> do</c><00:02:34.079><c> is</c><00:02:34.290><c> it'll</c><00:02:34.470><c> go</c>
+
+00:02:34.640 --> 00:02:34.650 align:start position:0%
+recursively so what it'll do is it'll go
+ 
+
+00:02:34.650 --> 00:02:36.710 align:start position:0%
+recursively so what it'll do is it'll go
+to<00:02:34.709><c> the</c><00:02:34.920><c> least</c><00:02:35.189><c> dependent</c><00:02:35.760><c> module</c><00:02:36.150><c> inside</c>
+
+00:02:36.710 --> 00:02:36.720 align:start position:0%
+to the least dependent module inside
+ 
+
+00:02:36.720 --> 00:02:39.140 align:start position:0%
+to the least dependent module inside
+your<00:02:36.930><c> dependency</c><00:02:37.409><c> graph</c><00:02:37.620><c> and</c><00:02:37.890><c> then</c><00:02:38.790><c> go</c><00:02:38.970><c> back</c>
+
+00:02:39.140 --> 00:02:39.150 align:start position:0%
+your dependency graph and then go back
+ 
+
+00:02:39.150 --> 00:02:42.170 align:start position:0%
+your dependency graph and then go back
+up<00:02:39.359><c> the</c><00:02:39.540><c> stack</c><00:02:40.370><c> until</c><00:02:41.370><c> it</c><00:02:41.489><c> finds</c><00:02:41.849><c> all</c><00:02:41.970><c> the</c>
+
+00:02:42.170 --> 00:02:42.180 align:start position:0%
+up the stack until it finds all the
+ 
+
+00:02:42.180 --> 00:02:43.429 align:start position:0%
+up the stack until it finds all the
+dependencies<00:02:42.569><c> and</c><00:02:42.900><c> it</c><00:02:42.959><c> can</c><00:02:43.079><c> build</c><00:02:43.230><c> your</c>
+
+00:02:43.429 --> 00:02:43.439 align:start position:0%
+dependencies and it can build your
+ 
+
+00:02:43.439 --> 00:02:45.920 align:start position:0%
+dependencies and it can build your
+entire<00:02:43.560><c> project</c><00:02:44.329><c> now</c><00:02:45.329><c> pay</c><00:02:45.569><c> close</c><00:02:45.599><c> attention</c>
+
+00:02:45.920 --> 00:02:45.930 align:start position:0%
+entire project now pay close attention
+ 
+
+00:02:45.930 --> 00:02:49.430 align:start position:0%
+entire project now pay close attention
+if<00:02:46.409><c> I</c><00:02:47.220><c> go</c><00:02:47.370><c> into</c><00:02:47.489><c> the</c><00:02:47.670><c> tertiary</c><00:02:47.940><c> modules</c><00:02:48.720><c> output</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+if I go into the tertiary modules output
+ 
+
+00:02:49.440 --> 00:02:54.710 align:start position:0%
+if I go into the tertiary modules output
+directory<00:02:49.980><c> and</c><00:02:51.409><c> I</c><00:02:52.409><c> do</c><00:02:52.470><c> a</c><00:02:52.590><c> listing</c><00:02:53.159><c> of</c><00:02:53.659><c> all</c><00:02:54.659><c> the</c>
+
+00:02:54.710 --> 00:02:54.720 align:start position:0%
+directory and I do a listing of all the
+ 
+
+00:02:54.720 --> 00:02:57.949 align:start position:0%
+directory and I do a listing of all the
+class<00:02:55.319><c> files</c><00:02:55.349><c> here</c><00:02:56.099><c> then</c><00:02:56.489><c> you'll</c><00:02:56.670><c> see</c><00:02:56.970><c> the</c>
+
+00:02:57.949 --> 00:02:57.959 align:start position:0%
+class files here then you'll see the
+ 
+
+00:02:57.959 --> 00:02:59.800 align:start position:0%
+class files here then you'll see the
+time<00:02:58.260><c> stamp</c><00:02:58.290><c> is</c><00:02:58.920><c> all</c>
+
+00:02:59.800 --> 00:02:59.810 align:start position:0%
+time stamp is all
+ 
+
+00:02:59.810 --> 00:03:03.979 align:start position:0%
+time stamp is all
+22:47<00:03:01.049><c> now</c><00:03:01.980><c> watch</c><00:03:02.189><c> very</c><00:03:02.220><c> carefully</c><00:03:02.670><c> if</c><00:03:03.180><c> I</c><00:03:03.750><c> make</c>
+
+00:03:03.979 --> 00:03:03.989 align:start position:0%
+22:47 now watch very carefully if I make
+ 
+
+00:03:03.989 --> 00:03:08.629 align:start position:0%
+22:47 now watch very carefully if I make
+any<00:03:04.139><c> changes</c><00:03:04.799><c> to</c><00:03:05.609><c> this</c><00:03:06.209><c> Aqueduct</c><00:03:06.870><c> class</c><00:03:07.609><c> say</c><00:03:08.609><c> I</c>
+
+00:03:08.629 --> 00:03:08.639 align:start position:0%
+any changes to this Aqueduct class say I
+ 
+
+00:03:08.639 --> 00:03:14.089 align:start position:0%
+any changes to this Aqueduct class say I
+add<00:03:09.000><c> a</c><00:03:10.430><c> hash</c><00:03:11.430><c> code</c><00:03:11.819><c> method</c><00:03:12.030><c> and</c><00:03:12.470><c> I</c><00:03:13.470><c> save</c><00:03:13.829><c> this</c>
+
+00:03:14.089 --> 00:03:14.099 align:start position:0%
+add a hash code method and I save this
+ 
+
+00:03:14.099 --> 00:03:17.599 align:start position:0%
+add a hash code method and I save this
+and<00:03:14.310><c> I</c><00:03:14.579><c> recompile</c><00:03:15.329><c> the</c><00:03:16.260><c> module</c><00:03:16.739><c> so</c><00:03:17.010><c> I</c><00:03:17.040><c> make</c><00:03:17.370><c> the</c>
+
+00:03:17.599 --> 00:03:17.609 align:start position:0%
+and I recompile the module so I make the
+ 
+
+00:03:17.609 --> 00:03:20.750 align:start position:0%
+and I recompile the module so I make the
+module<00:03:18.030><c> it</c><00:03:18.659><c> will</c><00:03:19.230><c> make</c><00:03:19.530><c> only</c><00:03:19.829><c> those</c><00:03:20.340><c> files</c>
+
+00:03:20.750 --> 00:03:20.760 align:start position:0%
+module it will make only those files
+ 
+
+00:03:20.760 --> 00:03:23.330 align:start position:0%
+module it will make only those files
+that<00:03:21.090><c> have</c><00:03:21.239><c> changed</c><00:03:21.269><c> in</c><00:03:21.930><c> this</c><00:03:22.620><c> case</c><00:03:22.829><c> only</c><00:03:23.010><c> the</c>
+
+00:03:23.330 --> 00:03:23.340 align:start position:0%
+that have changed in this case only the
+ 
+
+00:03:23.340 --> 00:03:27.289 align:start position:0%
+that have changed in this case only the
+Aqueduct<00:03:24.000><c> file</c><00:03:24.299><c> will</c><00:03:25.230><c> be</c><00:03:25.260><c> recompiled</c><00:03:26.060><c> so</c><00:03:27.060><c> if</c><00:03:27.209><c> I</c>
+
+00:03:27.289 --> 00:03:27.299 align:start position:0%
+Aqueduct file will be recompiled so if I
+ 
+
+00:03:27.299 --> 00:03:29.270 align:start position:0%
+Aqueduct file will be recompiled so if I
+do<00:03:27.359><c> another</c><00:03:27.690><c> listing</c><00:03:28.199><c> of</c><00:03:28.349><c> this</c><00:03:28.620><c> the</c>
+
+00:03:29.270 --> 00:03:29.280 align:start position:0%
+do another listing of this the
+ 
+
+00:03:29.280 --> 00:03:30.890 align:start position:0%
+do another listing of this the
+timestamps<00:03:29.849><c> are</c><00:03:29.970><c> exactly</c><00:03:30.389><c> the</c><00:03:30.569><c> same</c>
+
+00:03:30.890 --> 00:03:30.900 align:start position:0%
+timestamps are exactly the same
+ 
+
+00:03:30.900 --> 00:03:34.479 align:start position:0%
+timestamps are exactly the same
+inside<00:03:31.560><c> the</c><00:03:31.799><c> tertiary</c><00:03:32.150><c> output</c><00:03:33.150><c> directory</c>
+
+00:03:34.479 --> 00:03:34.489 align:start position:0%
+inside the tertiary output directory
+ 
+
+00:03:34.489 --> 00:03:40.330 align:start position:0%
+inside the tertiary output directory
+22:47<00:03:35.699><c> however</c><00:03:36.690><c> if</c><00:03:36.930><c> I</c><00:03:37.440><c> go</c><00:03:37.470><c> to</c><00:03:38.389><c> the</c><00:03:39.389><c> primary</c>
+
+00:03:40.330 --> 00:03:40.340 align:start position:0%
+22:47 however if I go to the primary
+ 
+
+00:03:40.340 --> 00:03:43.970 align:start position:0%
+22:47 however if I go to the primary
+output<00:03:41.340><c> directory</c><00:03:41.879><c> and</c><00:03:42.139><c> I</c><00:03:43.139><c> do</c><00:03:43.199><c> a</c><00:03:43.349><c> listing</c><00:03:43.859><c> of</c>
+
+00:03:43.970 --> 00:03:43.980 align:start position:0%
+output directory and I do a listing of
+ 
+
+00:03:43.980 --> 00:03:48.949 align:start position:0%
+output directory and I do a listing of
+these<00:03:45.109><c> the</c><00:03:46.109><c> aquaduct</c><00:03:46.650><c> class</c><00:03:47.010><c> alone</c><00:03:47.930><c> has</c><00:03:48.930><c> a</c>
+
+00:03:48.949 --> 00:03:48.959 align:start position:0%
+these the aquaduct class alone has a
+ 
+
+00:03:48.959 --> 00:03:51.469 align:start position:0%
+these the aquaduct class alone has a
+different<00:03:49.379><c> timestamp</c><00:03:49.919><c> so</c><00:03:50.190><c> now</c><00:03:51.180><c> we</c><00:03:51.239><c> have</c><00:03:51.389><c> a</c>
+
+00:03:51.469 --> 00:03:51.479 align:start position:0%
+different timestamp so now we have a
+ 
+
+00:03:51.479 --> 00:03:53.599 align:start position:0%
+different timestamp so now we have a
+very<00:03:51.629><c> clear</c><00:03:52.109><c> idea</c><00:03:52.139><c> of</c><00:03:52.590><c> exactly</c><00:03:53.159><c> what</c><00:03:53.400><c> make</c>
+
+00:03:53.599 --> 00:03:53.609 align:start position:0%
+very clear idea of exactly what make
+ 
+
+00:03:53.609 --> 00:03:56.030 align:start position:0%
+very clear idea of exactly what make
+does<00:03:53.849><c> in</c><00:03:54.150><c> this</c><00:03:54.329><c> case</c><00:03:54.560><c> make</c><00:03:55.560><c> has</c><00:03:55.769><c> only</c>
+
+00:03:56.030 --> 00:03:56.040 align:start position:0%
+does in this case make has only
+ 
+
+00:03:56.040 --> 00:03:57.920 align:start position:0%
+does in this case make has only
+recompiled<00:03:56.909><c> those</c><00:03:57.060><c> classes</c><00:03:57.599><c> which</c><00:03:57.750><c> have</c>
+
+00:03:57.920 --> 00:03:57.930 align:start position:0%
+recompiled those classes which have
+ 
+
+00:03:57.930 --> 00:04:01.729 align:start position:0%
+recompiled those classes which have
+changed<00:03:58.290><c> and</c><00:03:59.479><c> any</c><00:04:00.479><c> dependencies</c><00:04:01.229><c> of</c><00:04:01.260><c> the</c>
+
+00:04:01.729 --> 00:04:01.739 align:start position:0%
+changed and any dependencies of the
+ 
+
+00:04:01.739 --> 00:04:05.990 align:start position:0%
+changed and any dependencies of the
+module<00:04:02.190><c> recursively</c><00:04:04.729><c> similarly</c><00:04:05.729><c> make</c>
+
+00:04:05.990 --> 00:04:06.000 align:start position:0%
+module recursively similarly make
+ 
+
+00:04:06.000 --> 00:04:08.539 align:start position:0%
+module recursively similarly make
+project<00:04:06.629><c> will</c><00:04:06.810><c> do</c><00:04:06.989><c> the</c><00:04:07.290><c> exact</c><00:04:07.680><c> same</c><00:04:07.919><c> thing</c><00:04:08.340><c> for</c>
+
+00:04:08.539 --> 00:04:08.549 align:start position:0%
+project will do the exact same thing for
+ 
+
+00:04:08.549 --> 00:04:11.119 align:start position:0%
+project will do the exact same thing for
+all<00:04:09.209><c> modified</c><00:04:09.900><c> classes</c><00:04:10.440><c> across</c><00:04:10.859><c> your</c><00:04:11.069><c> entire</c>
+
+00:04:11.119 --> 00:04:11.129 align:start position:0%
+all modified classes across your entire
+ 
+
+00:04:11.129 --> 00:04:14.180 align:start position:0%
+all modified classes across your entire
+project<00:04:11.729><c> and</c><00:04:12.180><c> any</c><00:04:13.109><c> source</c><00:04:13.440><c> files</c><00:04:13.709><c> which</c><00:04:13.979><c> they</c>
+
+00:04:14.180 --> 00:04:14.190 align:start position:0%
+project and any source files which they
+ 
+
+00:04:14.190 --> 00:04:17.120 align:start position:0%
+project and any source files which they
+may<00:04:14.340><c> depend</c><00:04:14.760><c> on</c><00:04:15.440><c> now</c><00:04:16.440><c> let's</c><00:04:16.650><c> say</c><00:04:16.769><c> we'd</c><00:04:16.889><c> like</c><00:04:16.919><c> to</c>
+
+00:04:17.120 --> 00:04:17.130 align:start position:0%
+may depend on now let's say we'd like to
+ 
+
+00:04:17.130 --> 00:04:19.099 align:start position:0%
+may depend on now let's say we'd like to
+rebuild<00:04:17.549><c> the</c><00:04:17.729><c> entire</c><00:04:18.090><c> project</c><00:04:18.419><c> what</c><00:04:18.959><c> this</c>
+
+00:04:19.099 --> 00:04:19.109 align:start position:0%
+rebuild the entire project what this
+ 
+
+00:04:19.109 --> 00:04:21.050 align:start position:0%
+rebuild the entire project what this
+will<00:04:19.260><c> do</c><00:04:19.440><c> is</c><00:04:19.650><c> it</c><00:04:20.130><c> will</c><00:04:20.159><c> clean</c><00:04:20.609><c> out</c><00:04:20.760><c> the</c><00:04:20.940><c> entire</c>
+
+00:04:21.050 --> 00:04:21.060 align:start position:0%
+will do is it will clean out the entire
+ 
+
+00:04:21.060 --> 00:04:23.390 align:start position:0%
+will do is it will clean out the entire
+output<00:04:21.750><c> directory</c><00:04:22.139><c> and</c><00:04:22.380><c> rebuild</c><00:04:23.099><c> the</c><00:04:23.220><c> project</c>
+
+00:04:23.390 --> 00:04:23.400 align:start position:0%
+output directory and rebuild the project
+ 
+
+00:04:23.400 --> 00:04:25.969 align:start position:0%
+output directory and rebuild the project
+from<00:04:23.909><c> scratch</c><00:04:24.300><c> just</c><00:04:24.659><c> illustrate</c><00:04:25.620><c> that</c><00:04:25.770><c> we'll</c>
+
+00:04:25.969 --> 00:04:25.979 align:start position:0%
+from scratch just illustrate that we'll
+ 
+
+00:04:25.979 --> 00:04:28.820 align:start position:0%
+from scratch just illustrate that we'll
+create<00:04:26.340><c> a</c><00:04:26.430><c> new</c><00:04:26.820><c> file</c><00:04:27.120><c> here</c>
+
+00:04:28.820 --> 00:04:28.830 align:start position:0%
+create a new file here
+ 
+
+00:04:28.830 --> 00:04:31.859 align:start position:0%
+create a new file here
+inside<00:04:29.830><c> the</c><00:04:30.249><c> output</c><00:04:30.729><c> directory</c><00:04:30.819><c> for</c><00:04:31.809><c> the</c>
+
+00:04:31.859 --> 00:04:31.869 align:start position:0%
+inside the output directory for the
+ 
+
+00:04:31.869 --> 00:04:34.949 align:start position:0%
+inside the output directory for the
+primary<00:04:32.379><c> module</c><00:04:33.239><c> so</c><00:04:34.239><c> you</c><00:04:34.269><c> can</c><00:04:34.449><c> see</c><00:04:34.629><c> this</c><00:04:34.719><c> new</c>
+
+00:04:34.949 --> 00:04:34.959 align:start position:0%
+primary module so you can see this new
+ 
+
+00:04:34.959 --> 00:04:38.819 align:start position:0%
+primary module so you can see this new
+file<00:04:35.229><c> here</c><00:04:36.449><c> now</c><00:04:37.449><c> if</c><00:04:37.659><c> we</c><00:04:37.779><c> go</c><00:04:37.929><c> ahead</c><00:04:38.049><c> and</c><00:04:38.199><c> rebuild</c>
+
+00:04:38.819 --> 00:04:38.829 align:start position:0%
+file here now if we go ahead and rebuild
+ 
+
+00:04:38.829 --> 00:04:41.879 align:start position:0%
+file here now if we go ahead and rebuild
+this<00:04:39.069><c> project</c><00:04:39.839><c> any</c><00:04:40.839><c> artifacts</c><00:04:41.469><c> which</c><00:04:41.709><c> may</c>
+
+00:04:41.879 --> 00:04:41.889 align:start position:0%
+this project any artifacts which may
+ 
+
+00:04:41.889 --> 00:04:44.600 align:start position:0%
+this project any artifacts which may
+have<00:04:42.009><c> been</c><00:04:42.039><c> associated</c><00:04:42.909><c> with</c><00:04:43.599><c> the</c><00:04:43.749><c> old</c><00:04:43.989><c> build</c>
+
+00:04:44.600 --> 00:04:44.610 align:start position:0%
+have been associated with the old build
+ 
+
+00:04:44.610 --> 00:04:46.469 align:start position:0%
+have been associated with the old build
+will<00:04:45.610><c> be</c><00:04:45.759><c> eliminated</c>
+
+00:04:46.469 --> 00:04:46.479 align:start position:0%
+will be eliminated
+ 
+
+00:04:46.479 --> 00:04:48.569 align:start position:0%
+will be eliminated
+so<00:04:46.869><c> it'll</c><00:04:47.049><c> completely</c><00:04:47.439><c> eliminate</c><00:04:47.889><c> everything</c>
+
+00:04:48.569 --> 00:04:48.579 align:start position:0%
+so it'll completely eliminate everything
+ 
+
+00:04:48.579 --> 00:04:51.059 align:start position:0%
+so it'll completely eliminate everything
+inside<00:04:49.089><c> the</c><00:04:49.360><c> output</c><00:04:49.719><c> directory</c><00:04:49.860><c> so</c><00:04:50.860><c> make</c><00:04:51.039><c> sure</c>
+
+00:04:51.059 --> 00:04:51.069 align:start position:0%
+inside the output directory so make sure
+ 
+
+00:04:51.069 --> 00:04:52.439 align:start position:0%
+inside the output directory so make sure
+that<00:04:51.219><c> you</c><00:04:51.429><c> don't</c><00:04:51.489><c> have</c><00:04:51.610><c> anything</c><00:04:51.999><c> important</c>
+
+00:04:52.439 --> 00:04:52.449 align:start position:0%
+that you don't have anything important
+ 
+
+00:04:52.449 --> 00:04:54.209 align:start position:0%
+that you don't have anything important
+stored<00:04:52.749><c> there</c><00:04:52.989><c> because</c><00:04:53.319><c> we'll</c><00:04:53.469><c> be</c><00:04:53.499><c> deleted</c><00:04:54.039><c> so</c>
+
+00:04:54.209 --> 00:04:54.219 align:start position:0%
+stored there because we'll be deleted so
+ 
+
+00:04:54.219 --> 00:04:56.639 align:start position:0%
+stored there because we'll be deleted so
+that<00:04:55.089><c> covers</c><00:04:55.269><c> the</c><00:04:55.539><c> three</c><00:04:55.809><c> important</c><00:04:56.229><c> aspects</c>
+
+00:04:56.639 --> 00:04:56.649 align:start position:0%
+that covers the three important aspects
+ 
+
+00:04:56.649 --> 00:04:58.679 align:start position:0%
+that covers the three important aspects
+of<00:04:56.860><c> building</c><00:04:57.129><c> a</c><00:04:57.369><c> project</c><00:04:57.819><c> in</c><00:04:57.939><c> IntelliJ</c><00:04:58.329><c> IDEA</c>
+
+00:04:58.679 --> 00:04:58.689 align:start position:0%
+of building a project in IntelliJ IDEA
+ 
+
+00:04:58.689 --> 00:05:01.649 align:start position:0%
+of building a project in IntelliJ IDEA
+make<00:04:59.649><c> which</c><00:05:00.249><c> will</c><00:05:00.459><c> recompile</c><00:05:00.939><c> any</c><00:05:01.209><c> sources</c>
+
+00:05:01.649 --> 00:05:01.659 align:start position:0%
+make which will recompile any sources
+ 
+
+00:05:01.659 --> 00:05:03.209 align:start position:0%
+make which will recompile any sources
+which<00:05:02.050><c> have</c><00:05:02.229><c> changed</c><00:05:02.559><c> since</c><00:05:03.009><c> the</c><00:05:03.189><c> last</c>
+
+00:05:03.209 --> 00:05:03.219 align:start position:0%
+which have changed since the last
+ 
+
+00:05:03.219 --> 00:05:06.359 align:start position:0%
+which have changed since the last
+compliation<00:05:04.089><c> and</c><00:05:04.709><c> you</c><00:05:05.709><c> can</c><00:05:05.860><c> do</c><00:05:05.949><c> this</c><00:05:06.099><c> project</c>
+
+00:05:06.359 --> 00:05:06.369 align:start position:0%
+compliation and you can do this project
+ 
+
+00:05:06.369 --> 00:05:09.540 align:start position:0%
+compliation and you can do this project
+wide<00:05:06.789><c> or</c><00:05:07.149><c> for</c><00:05:07.569><c> a</c><00:05:07.599><c> specific</c><00:05:08.199><c> module</c><00:05:08.550><c> compile</c>
+
+00:05:09.540 --> 00:05:09.550 align:start position:0%
+wide or for a specific module compile
+ 
+
+00:05:09.550 --> 00:05:12.269 align:start position:0%
+wide or for a specific module compile
+which<00:05:09.909><c> will</c><00:05:10.089><c> build</c><00:05:10.269><c> exactly</c><00:05:10.989><c> one</c><00:05:11.169><c> class</c><00:05:11.469><c> the</c>
+
+00:05:12.269 --> 00:05:12.279 align:start position:0%
+which will build exactly one class the
+ 
+
+00:05:12.279 --> 00:05:14.489 align:start position:0%
+which will build exactly one class the
+class<00:05:12.519><c> you've</c><00:05:12.759><c> selected</c><00:05:12.939><c> and</c><00:05:13.509><c> rebuild</c><00:05:14.259><c> which</c>
+
+00:05:14.489 --> 00:05:14.499 align:start position:0%
+class you've selected and rebuild which
+ 
+
+00:05:14.499 --> 00:05:16.790 align:start position:0%
+class you've selected and rebuild which
+will<00:05:14.739><c> recompile</c><00:05:15.489><c> everything</c><00:05:16.149><c> from</c><00:05:16.300><c> scratch</c>
+
+00:05:16.790 --> 00:05:16.800 align:start position:0%
+will recompile everything from scratch
+ 
+
+00:05:16.800 --> 00:05:18.989 align:start position:0%
+will recompile everything from scratch
+so<00:05:17.800><c> now</c><00:05:17.979><c> hopefully</c><00:05:18.279><c> you</c><00:05:18.519><c> have</c><00:05:18.669><c> a</c><00:05:18.699><c> better</c><00:05:18.759><c> idea</c>
+
+00:05:18.989 --> 00:05:18.999 align:start position:0%
+so now hopefully you have a better idea
+ 
+
+00:05:18.999 --> 00:05:21.239 align:start position:0%
+so now hopefully you have a better idea
+of<00:05:19.389><c> the</c><00:05:19.569><c> three</c><00:05:20.050><c> different</c><00:05:20.349><c> compliation</c><00:05:20.829><c> types</c>
+
+00:05:21.239 --> 00:05:21.249 align:start position:0%
+of the three different compliation types
+ 
+
+00:05:21.249 --> 00:05:22.769 align:start position:0%
+of the three different compliation types
+and<00:05:21.519><c> how</c><00:05:21.789><c> to</c><00:05:21.849><c> use</c><00:05:22.089><c> them</c><00:05:22.269><c> when</c><00:05:22.389><c> building</c><00:05:22.629><c> your</c>
+
+00:05:22.769 --> 00:05:22.779 align:start position:0%
+and how to use them when building your
+ 
+
+00:05:22.779 --> 00:05:25.529 align:start position:0%
+and how to use them when building your
+project<00:05:23.399><c> thanks</c><00:05:24.399><c> for</c><00:05:24.550><c> watching</c><00:05:24.879><c> and</c><00:05:25.059><c> develop</c>
+
+00:05:25.529 --> 00:05:25.539 align:start position:0%
+project thanks for watching and develop
+ 
+
+00:05:25.539 --> 00:05:27.959 align:start position:0%
+project thanks for watching and develop
+with<00:05:25.659><c> pleasure</c>
+

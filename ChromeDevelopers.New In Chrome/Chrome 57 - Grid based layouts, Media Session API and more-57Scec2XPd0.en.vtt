@@ -1,0 +1,256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.280
+PETE LEPAGE: Chrome
+57 adds support
+
+00:00:02.280 --> 00:00:07.290
+for display grid, a new CSS
+grid layout specification.
+
+00:00:07.290 --> 00:00:10.170
+You can now customize
+and respond to user input
+
+00:00:10.170 --> 00:00:12.750
+on the lock screen and
+notifications using
+
+00:00:12.750 --> 00:00:15.000
+the new media session API.
+
+00:00:15.000 --> 00:00:16.690
+And there's plenty more.
+
+00:00:16.690 --> 00:00:17.760
+I'm Pete LePage.
+
+00:00:17.760 --> 00:00:21.220
+Let's dive in and see what's
+new for developers in Chrome 57.
+
+00:00:21.220 --> 00:00:23.690
+[MUSIC PLAYING]
+
+00:00:23.690 --> 00:00:26.470
+Flexbox is a
+powerful layout tool.
+
+00:00:26.470 --> 00:00:29.200
+It makes many complex
+layouts possible.
+
+00:00:29.200 --> 00:00:32.820
+But it can only do
+layout in one dimension.
+
+00:00:32.820 --> 00:00:35.350
+Chrome 57 adds
+support for display:
+
+00:00:35.350 --> 00:00:39.370
+grid, the new CSS grid
+layout specification,
+
+00:00:39.370 --> 00:00:41.680
+adding a powerful
+new tool for creating
+
+00:00:41.680 --> 00:00:45.370
+two-dimensional, grid-based
+layouts, optimized
+
+00:00:45.370 --> 00:00:48.250
+for responsive user
+interface design.
+
+00:00:48.250 --> 00:00:52.480
+Elements within the grid can
+span multiple rows or columns.
+
+00:00:52.480 --> 00:00:55.060
+And regions in a
+CSS grid can also
+
+00:00:55.060 --> 00:00:59.350
+be named, making the layout
+code easier to understand.
+
+00:00:59.350 --> 00:01:02.520
+Surma has an updates post about
+it, linked in the description.
+
+00:01:02.520 --> 00:01:04.540
+And when you're ready
+to dive in deeper,
+
+00:01:04.540 --> 00:01:08.440
+check out Rachel Andrews'
+gridbyexample.com site.
+
+00:01:08.440 --> 00:01:11.680
+One of the missing features
+from web media applications
+
+00:01:11.680 --> 00:01:15.310
+has been the ability to deeply
+integrate with the core media
+
+00:01:15.310 --> 00:01:18.210
+experiences on mobile devices.
+
+00:01:18.210 --> 00:01:21.910
+In Chrome for Android, you can
+now customize the lock screen
+
+00:01:21.910 --> 00:01:25.870
+and notifications with media
+content using the new media
+
+00:01:25.870 --> 00:01:27.640
+session API.
+
+00:01:27.640 --> 00:01:30.790
+By providing metadata to the
+browser about the content being
+
+00:01:30.790 --> 00:01:34.300
+played, you can create
+rich lock screen messages
+
+00:01:34.300 --> 00:01:37.270
+that include information
+such as the artist, title,
+
+00:01:37.270 --> 00:01:40.040
+album name, artwork, and more.
+
+00:01:40.040 --> 00:01:43.450
+You can also listen for and
+respond to user actions taken
+
+00:01:43.450 --> 00:01:47.260
+on the lock screen or
+notification, such as seeking
+
+00:01:47.260 --> 00:01:48.940
+or skipping.
+
+00:01:48.940 --> 00:01:50.500
+If you want to get
+started quickly,
+
+00:01:50.500 --> 00:01:53.020
+Francois has a great
+updates post about it.
+
+00:01:53.020 --> 00:01:56.740
+Or check out the official
+Chrome media session sample
+
+00:01:56.740 --> 00:01:58.480
+repo on GitHub.
+
+00:01:58.480 --> 00:02:01.030
+Both are linked in
+the description below.
+
+00:02:01.030 --> 00:02:03.370
+And there's lots more.
+
+00:02:03.370 --> 00:02:06.860
+There are some improvements
+to the payment request API.
+
+00:02:06.860 --> 00:02:10.600
+You can specify the color
+of the text input cursor
+
+00:02:10.600 --> 00:02:12.610
+with a caret color property.
+
+00:02:12.610 --> 00:02:15.190
+Visual effects such as
+line color and style
+
+00:02:15.190 --> 00:02:19.390
+can be specified with new
+text-decoration properties.
+
+00:02:19.390 --> 00:02:22.660
+The fetch API response
+class now supports
+
+00:02:22.660 --> 00:02:24.940
+the dot redirected
+attribute to help
+
+00:02:24.940 --> 00:02:27.760
+avoid untrustworthy
+responses and reduce
+
+00:02:27.760 --> 00:02:30.490
+the risk of open redirectors.
+
+00:02:30.490 --> 00:02:34.420
+All WebKit prefixed
+IndexedDB global aliases
+
+00:02:34.420 --> 00:02:37.780
+have been removed after
+their deprecation in M38.
+
+00:02:37.780 --> 00:02:40.720
+And, one of my
+favorites, new pad-start
+
+00:02:40.720 --> 00:02:44.350
+and pad-end formatting
+methods that simplify string
+
+00:02:44.350 --> 00:02:47.770
+padding when aligning console
+output or printing numbers
+
+00:02:47.770 --> 00:02:50.420
+with a fixed number of digits.
+
+00:02:50.420 --> 00:02:53.080
+These are just a few of
+the changes in Chrome 57
+
+00:02:53.080 --> 00:02:54.500
+for developers.
+
+00:02:54.500 --> 00:02:56.440
+Check the description
+for more details,
+
+00:02:56.440 --> 00:02:59.870
+and links to the documentation
+and specifications.
+
+00:02:59.870 --> 00:03:01.630
+If you want to stay
+up to date with Chrome
+
+00:03:01.630 --> 00:03:04.720
+and know what's coming next,
+click the Subscribe button.
+
+00:03:04.720 --> 00:03:05.620
+I'm Pete LePage.
+
+00:03:05.620 --> 00:03:07.520
+And as soon as Chrome
+58 is released,
+
+00:03:07.520 --> 00:03:10.450
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:10.450 --> 00:03:13.800
+[MUSIC PLAYING]
+

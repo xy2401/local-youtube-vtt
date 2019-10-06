@@ -1,0 +1,594 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.890
+[MUSIC PLAYING]
+
+00:00:07.890 --> 00:00:12.522
+ADDY OSMANI: So today we're
+going to talk about Gulp 4.
+
+00:00:12.522 --> 00:00:13.980
+I thought I would
+visualize what it
+
+00:00:13.980 --> 00:00:16.535
+feels like to be in the
+JavaScript tooling ecosystem.
+
+00:00:16.535 --> 00:00:17.910
+MATT GAUNT: I'm
+not going to lie,
+
+00:00:17.910 --> 00:00:20.324
+it's not the greatest
+intro to Gulp 4 right now.
+
+00:00:20.324 --> 00:00:21.990
+ADDY OSMANI: What are
+you talking about?
+
+00:00:21.990 --> 00:00:24.470
+There's babies here
+that are reminding us
+
+00:00:24.470 --> 00:00:28.450
+how great it is to upgrade to
+Babel 6 and worry about WebPack
+
+00:00:28.450 --> 00:00:30.790
+and be told that you have
+to rewrite your Gulpfile
+
+00:00:30.790 --> 00:00:31.814
+into an NPM script.
+
+00:00:31.814 --> 00:00:33.510
+MATT GAUNT: That
+sounds like Jake, yeah.
+
+00:00:33.510 --> 00:00:35.040
+ADDY OSMANI: Although it's
+probably too late because Make
+
+00:00:35.040 --> 00:00:35.940
+is back in fashion.
+
+00:00:35.940 --> 00:00:36.700
+MATT GAUNT: No it's not.
+
+00:00:36.700 --> 00:00:38.866
+ADDY OSMANI: Today we're
+going to talk about Gulp 4.
+
+00:00:38.866 --> 00:00:41.580
+We've been using
+Gulp for a while
+
+00:00:41.580 --> 00:00:43.730
+over in our Web
+Starter Kit project,
+
+00:00:43.730 --> 00:00:45.850
+hitting up ES 2015
+in our Gulpfile.
+
+00:00:45.850 --> 00:00:47.130
+And that's been fun.
+
+00:00:47.130 --> 00:00:49.260
+So before we talk
+about Gulp 4, we
+
+00:00:49.260 --> 00:00:51.800
+should probably talk about
+Gulp 3 and some of the problems
+
+00:00:51.800 --> 00:00:52.910
+that Gulp 4 tries to fix.
+
+00:00:52.910 --> 00:00:57.510
+So Gulp 3 would allow you to
+define a dependency to a task.
+
+00:00:57.510 --> 00:00:59.895
+So here we've got
+scripts and styles.
+
+00:00:59.895 --> 00:01:02.270
+And Gulp 3 would just make
+sure that the dependency tasks
+
+00:01:02.270 --> 00:01:04.964
+got executed before the
+original task got triggered.
+
+00:01:04.964 --> 00:01:06.130
+So we've got a default task.
+
+00:01:06.130 --> 00:01:08.171
+We want to run our scripts
+and styles in parallel
+
+00:01:08.171 --> 00:01:10.060
+and then run the default task.
+
+00:01:10.060 --> 00:01:12.060
+Now those tasks
+themselves could also
+
+00:01:12.060 --> 00:01:13.760
+have dependencies of their own.
+
+00:01:13.760 --> 00:01:16.280
+So you might want to make
+your scripts and styles,
+
+00:01:16.280 --> 00:01:18.010
+clean the original
+build directories.
+
+00:01:18.010 --> 00:01:20.580
+You can start off on
+a really blank slate.
+
+00:01:20.580 --> 00:01:22.940
+Now Gulp 3 was smart
+enough so that if it
+
+00:01:22.940 --> 00:01:25.410
+saw the clean was a
+dependency of two tasks,
+
+00:01:25.410 --> 00:01:27.700
+it would make sure that
+it was only executed once.
+
+00:01:27.700 --> 00:01:30.210
+So all that work
+was only done once
+
+00:01:30.210 --> 00:01:33.010
+for maximum concurrency,
+which was kind of cool.
+
+00:01:33.010 --> 00:01:34.990
+But this approach
+had some problems.
+
+00:01:34.990 --> 00:01:36.910
+Execution of that
+dependency set up
+
+00:01:36.910 --> 00:01:38.660
+becomes a little bit
+mandatory once you've
+
+00:01:38.660 --> 00:01:40.300
+got it set up this way.
+
+00:01:40.300 --> 00:01:44.270
+It's tricky if you've got
+watchers or file listeners that
+
+00:01:44.270 --> 00:01:46.180
+are going to be looking
+at one type of file,
+
+00:01:46.180 --> 00:01:48.839
+like your JavaScript
+for example.
+
+00:01:48.839 --> 00:01:50.380
+[? It mostly ?] made
+changes to that,
+
+00:01:50.380 --> 00:01:52.410
+and then it just blew away
+all of your stylesheets
+
+00:01:52.410 --> 00:01:53.368
+in your dist directory.
+
+00:01:53.368 --> 00:01:55.200
+It's not exactly what you want.
+
+00:01:55.200 --> 00:01:57.700
+And it can be tricky to
+sequentially execute tasks
+
+00:01:57.700 --> 00:02:01.314
+unless you're using something
+like the run-sequence plug-in.
+
+00:02:01.314 --> 00:02:03.980
+MATT GAUNT: I think most people,
+whenever they have a Gulp task,
+
+00:02:03.980 --> 00:02:06.340
+I would be surprised if
+anyone got away with not
+
+00:02:06.340 --> 00:02:07.544
+having run-sequence in it.
+
+00:02:07.544 --> 00:02:09.210
+ADDY OSMANI: Yeah,
+run-sequence was sort
+
+00:02:09.210 --> 00:02:12.220
+of a life saver for a while.
+
+00:02:12.220 --> 00:02:14.515
+And using run-sequence looks
+a little bit like that.
+
+00:02:14.515 --> 00:02:16.640
+But we're going to skip
+over it because you're here
+
+00:02:16.640 --> 00:02:18.210
+to care about Gulp 4.
+
+00:02:18.210 --> 00:02:23.130
+So Gulp 4 drops the dependency
+parameter, the square brackets
+
+00:02:23.130 --> 00:02:24.036
+syntax completely.
+
+00:02:24.036 --> 00:02:25.910
+And it replaces them
+with execution functions
+
+00:02:25.910 --> 00:02:26.951
+that you can use instead.
+
+00:02:26.951 --> 00:02:28.410
+So drum roll.
+
+00:02:28.410 --> 00:02:28.910
+Do we--
+
+00:02:28.910 --> 00:02:30.030
+[FINGERTIP DRUM ROLL]
+
+00:02:30.030 --> 00:02:30.750
+MATT GAUNT: That's what you get.
+
+00:02:30.750 --> 00:02:32.190
+ADDY OSMANI: We have no budget.
+
+00:02:32.190 --> 00:02:36.510
+OK, so we now have gulp.series
+for sequential execution
+
+00:02:36.510 --> 00:02:39.640
+and gulp.parallel for
+parallel execution.
+
+00:02:39.640 --> 00:02:43.140
+And these let you
+have parameters,
+
+00:02:43.140 --> 00:02:45.880
+name the task to execute,
+another function to execute.
+
+00:02:45.880 --> 00:02:47.630
+So they're pretty flexible.
+
+00:02:47.630 --> 00:02:50.995
+Now if you want to go and
+start using Gulp 4 today,
+
+00:02:50.995 --> 00:02:52.370
+you're first of
+all going to want
+
+00:02:52.370 --> 00:02:56.540
+to uninstall your global Gulp
+3 CLI and your local version
+
+00:02:56.540 --> 00:03:02.640
+of Gulp, or just install Gulp
+4 locally and use your NPM run
+
+00:03:02.640 --> 00:03:04.750
+scripts to run
+instead, if you wanted.
+
+00:03:04.750 --> 00:03:06.610
+Some people want to do that.
+
+00:03:06.610 --> 00:03:09.400
+Otherwise just go and
+install Gulp 4 CLI
+
+00:03:09.400 --> 00:03:11.200
+globally and locally.
+
+00:03:11.200 --> 00:03:13.310
+These instructions are
+correct as of the time
+
+00:03:13.310 --> 00:03:16.150
+that we're recording
+this screencast.
+
+00:03:16.150 --> 00:03:18.860
+MATT GAUNT: Yeah, do
+the NPM info Gulp CLI.
+
+00:03:18.860 --> 00:03:20.580
+See if it's version 4.
+
+00:03:20.580 --> 00:03:22.967
+If it is, just install it and
+ignore these instructions.
+
+00:03:22.967 --> 00:03:25.300
+ADDY OSMANI: Yeah, hopefully
+by the time this comes out,
+
+00:03:25.300 --> 00:03:28.160
+Gulp 4 will either be
+stable and the community
+
+00:03:28.160 --> 00:03:31.250
+won't have replaced it with
+something totally different
+
+00:03:31.250 --> 00:03:33.050
+and it will still be relevant.
+
+00:03:33.050 --> 00:03:37.700
+But assuming that we are, taking
+a look at one of those lines
+
+00:03:37.700 --> 00:03:38.650
+we looked at earlier.
+
+00:03:38.650 --> 00:03:41.710
+If you want to execute styles
+and scripts in parallel,
+
+00:03:41.710 --> 00:03:43.630
+that's as simple as this.
+
+00:03:43.630 --> 00:03:46.875
+And if we wanted to rewrite
+some of those larger lines
+
+00:03:46.875 --> 00:03:48.750
+that we had earlier,
+they'd look a little bit
+
+00:03:48.750 --> 00:03:52.460
+like this, if we were going
+for maximum concurrency
+
+00:03:52.460 --> 00:03:54.579
+and replaced all of
+our dependency arrays
+
+00:03:54.579 --> 00:03:55.370
+with gulp.parallel.
+
+00:03:55.370 --> 00:03:57.904
+Dies this look good, Matt?
+
+00:03:57.904 --> 00:03:59.320
+MATT GAUNT:
+Originally I said yes,
+
+00:03:59.320 --> 00:04:01.080
+but I can see your next slide.
+
+00:04:01.080 --> 00:04:03.147
+So I know it's not.
+
+00:04:03.147 --> 00:04:04.230
+ADDY OSMANI: No, it's not.
+
+00:04:04.230 --> 00:04:05.900
+This is in fact wrong.
+
+00:04:05.900 --> 00:04:07.350
+It causes a ton of problems.
+
+00:04:07.350 --> 00:04:11.290
+So the dependency for our clean
+here is still hardwired in,
+
+00:04:11.290 --> 00:04:13.770
+and actually gets called
+every time whether we
+
+00:04:13.770 --> 00:04:15.800
+call scripts or styles.
+
+00:04:15.800 --> 00:04:17.620
+Gulp 4 doesn't do a
+dependency check here
+
+00:04:17.620 --> 00:04:20.450
+because they're not
+really dependencies.
+
+00:04:20.450 --> 00:04:22.880
+So your clean gets
+executed twice.
+
+00:04:22.880 --> 00:04:25.500
+Now to get the original
+execution order,
+
+00:04:25.500 --> 00:04:27.090
+we want to do clean.
+
+00:04:27.090 --> 00:04:29.720
+Then we want to run styles and
+scripts in parallel, and then
+
+00:04:29.720 --> 00:04:31.090
+our default task.
+
+00:04:31.090 --> 00:04:34.290
+And we can achieve
+that using this.
+
+00:04:34.290 --> 00:04:39.080
+So here, using a combo of
+gulp.series and gulp.parallel,
+
+00:04:39.080 --> 00:04:41.010
+we can first of all
+make sure that each step
+
+00:04:41.010 --> 00:04:44.010
+is done concurrently and
+combined in a gulp.parallel.
+
+00:04:44.010 --> 00:04:46.750
+And everything else can be
+done in a gulp.series function.
+
+00:04:46.750 --> 00:04:48.280
+So the execution
+order at default
+
+00:04:48.280 --> 00:04:50.819
+stays the same as before,
+but all the other tasks
+
+00:04:50.819 --> 00:04:51.860
+can be used on their own.
+
+00:04:51.860 --> 00:04:55.220
+So you can run Gulp
+scripts, Gulp styles,
+
+00:04:55.220 --> 00:04:58.120
+and not be bound on
+those dependencies.
+
+00:04:58.120 --> 00:04:59.420
+It's kind of nice.
+
+00:04:59.420 --> 00:05:01.150
+MATT GAUNT: This is where I
+kind of come back to the point.
+
+00:05:01.150 --> 00:05:03.191
+Like it's super clear
+what's happening with that.
+
+00:05:03.191 --> 00:05:06.369
+Whereas before you could
+argue it's kind of by chance
+
+00:05:06.369 --> 00:05:07.910
+that Gulp 3 is doing
+the right thing.
+
+00:05:07.910 --> 00:05:08.885
+It's not explicit.
+
+00:05:08.885 --> 00:05:11.260
+ADDY OSMANI: So we talked
+about run-sequence a little bit
+
+00:05:11.260 --> 00:05:11.890
+earlier.
+
+00:05:11.890 --> 00:05:16.035
+If you want to move over
+from the old run-sequence
+
+00:05:16.035 --> 00:05:19.040
+to the gulp.series
+and gulp.parallel,
+
+00:05:19.040 --> 00:05:22.220
+here is one example of
+what that looks like.
+
+00:05:22.220 --> 00:05:24.470
+We're going to skip over
+that because there's actually
+
+00:05:24.470 --> 00:05:28.480
+some decent blog posts out
+that talk about moving over
+
+00:05:28.480 --> 00:05:29.460
+to Gulp 4.
+
+00:05:29.460 --> 00:05:32.281
+There is the fettblog.eu post
+that we cribbed some examples
+
+00:05:32.281 --> 00:05:32.780
+for.
+
+00:05:32.780 --> 00:05:35.360
+But these guys have actually
+got some really, really nice
+
+00:05:35.360 --> 00:05:40.180
+diagrams explaining the whole
+execution flow in Gulp 4
+
+00:05:40.180 --> 00:05:41.340
+and comparing it to Gulp 3.
+
+00:05:41.340 --> 00:05:42.350
+So check that out.
+
+00:05:42.350 --> 00:05:46.500
+There's also the We Are Wizards
+migrating to Gulp 4 example.
+
+00:05:46.500 --> 00:05:48.300
+They include code
+diffs and stuff,
+
+00:05:48.300 --> 00:05:50.050
+which are kind of
+useful and kind of nice.
+
+00:05:50.050 --> 00:05:53.300
+So hopefully this
+video was useful.
+
+00:05:53.300 --> 00:05:55.650
+And if you follow their
+guidance, not our guidance,
+
+00:05:55.650 --> 00:05:57.150
+because our guidance
+probably sucks.
+
+00:05:57.150 --> 00:05:58.820
+MATT GAUNT: Yeah, you'd be
+broken with our guidance.
+
+00:05:58.820 --> 00:06:00.790
+ADDY OSMANI: You'd
+be broken I guess.
+
+00:06:00.790 --> 00:06:02.632
+You too can be
+ballin' with Gulp 4.
+
+00:06:02.632 --> 00:06:03.590
+MATT GAUNT: Happy baby.
+
+00:06:03.590 --> 00:06:04.298
+ADDY OSMANI: Yay.
+
+00:06:04.298 --> 00:06:08.140
+[MUSIC PLAYING]
+

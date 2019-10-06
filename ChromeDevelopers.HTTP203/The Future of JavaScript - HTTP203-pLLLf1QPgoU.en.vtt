@@ -1,0 +1,714 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.700 --> 00:00:05.536
+JAKE ARCHIBALD: Right.
+
+00:00:05.536 --> 00:00:07.620
+Here we go.
+
+00:00:07.620 --> 00:00:12.960
+Mr. Lewis, how do you feel
+about roller coasters?
+
+00:00:12.960 --> 00:00:14.545
+PAUL LEWIS: Oh, I
+like them. (SINGING)
+
+00:00:14.545 --> 00:00:17.650
+Roller coaster of love.
+
+00:00:17.650 --> 00:00:18.890
+JAKE ARCHIBALD: Let's roll.
+
+00:00:18.890 --> 00:00:21.390
+[MUSIC PLAYING]
+
+00:00:26.270 --> 00:00:28.429
+So I've got to bone
+to pick with you.
+
+00:00:28.429 --> 00:00:29.720
+PAUL LEWIS: Oh, that's unusual.
+
+00:00:29.720 --> 00:00:31.410
+We normally get on just fine.
+
+00:00:31.410 --> 00:00:33.080
+JAKE ARCHIBALD: Well, because
+I've been watching you--
+
+00:00:33.080 --> 00:00:33.705
+PAUL LEWIS: Oh.
+
+00:00:33.705 --> 00:00:34.570
+That's a bit weird.
+
+00:00:34.570 --> 00:00:36.111
+JAKE ARCHIBALD: I
+noticed that you've
+
+00:00:36.111 --> 00:00:38.655
+been engaging in some
+degree of Babel activity.
+
+00:00:38.655 --> 00:00:39.280
+PAUL LEWIS: Oh.
+
+00:00:39.280 --> 00:00:39.720
+Thank goodness for that.
+
+00:00:39.720 --> 00:00:40.070
+OK.
+
+00:00:40.070 --> 00:00:41.700
+JAKE ARCHIBALD: You've been
+using a bit of the ES6, ES7.
+
+00:00:41.700 --> 00:00:42.710
+PAUL LEWIS: Not quite
+as terrifying as I
+
+00:00:42.710 --> 00:00:43.420
+thought it might have been.
+
+00:00:43.420 --> 00:00:45.760
+JAKE ARCHIBALD: But you-- you're
+the kind of person who says--
+
+00:00:45.760 --> 00:00:47.343
+and I've heard you
+say this-- that you
+
+00:00:47.343 --> 00:00:50.221
+don't like writing code that
+isn't the code that ends up
+
+00:00:50.221 --> 00:00:51.470
+being executed in the browser.
+
+00:00:51.470 --> 00:00:52.030
+PAUL LEWIS: Correct.
+
+00:00:52.030 --> 00:00:54.613
+JAKE ARCHIBALD: That you don't
+like those little middle steps.
+
+00:00:54.613 --> 00:00:56.240
+You're kind of anti-transpiler.
+
+00:00:56.240 --> 00:00:58.230
+PAUL LEWIS: I am sort
+of anti-transpiler.
+
+00:00:58.230 --> 00:01:00.960
+I want to feel like the code
+I write is the code that runs.
+
+00:01:00.960 --> 00:01:03.179
+And I'm happy for a
+little bit of wool
+
+00:01:03.179 --> 00:01:04.720
+to be pulled over
+my eyes, but I want
+
+00:01:04.720 --> 00:01:08.217
+to feel like I can
+back out of it.
+
+00:01:08.217 --> 00:01:09.550
+So I don't think that's changed.
+
+00:01:09.550 --> 00:01:12.720
+For me, when I look at
+something like Babel or Babel E5
+
+00:01:12.720 --> 00:01:17.274
+or any of that, one thing is I
+feel like I could switch it out
+
+00:01:17.274 --> 00:01:18.940
+for [INAUDIBLE] or I
+could switch it out
+
+00:01:18.940 --> 00:01:19.804
+for something else.
+
+00:01:19.804 --> 00:01:21.720
+JAKE ARCHIBALD: Because
+it's an open standard,
+
+00:01:21.720 --> 00:01:23.732
+I guess there are
+independent implementations
+
+00:01:23.732 --> 00:01:24.440
+of that standard.
+
+00:01:24.440 --> 00:01:24.840
+PAUL LEWIS: Exactly.
+
+00:01:24.840 --> 00:01:25.130
+JAKE ARCHIBALD: Oh, OK.
+
+00:01:25.130 --> 00:01:25.880
+Yeah, that's fair.
+
+00:01:25.880 --> 00:01:27.390
+PAUL LEWIS: So it
+feels like this
+
+00:01:27.390 --> 00:01:29.140
+is the JavaScript I'm
+going to be writing,
+
+00:01:29.140 --> 00:01:31.360
+right, a while from now.
+
+00:01:31.360 --> 00:01:35.900
+So it's like if it's going to
+get me there, then that's fine.
+
+00:01:35.900 --> 00:01:36.740
+I'm OK with that.
+
+00:01:36.740 --> 00:01:38.900
+And then the other thing
+is if you look at the ES5
+
+00:01:38.900 --> 00:01:41.510
+that it generates,
+it makes sense.
+
+00:01:41.510 --> 00:01:42.090
+It's fine.
+
+00:01:42.090 --> 00:01:44.610
+And I feel like when you
+look at some other things,
+
+00:01:44.610 --> 00:01:46.693
+whether, I don't know,
+CoffeeScript or TypeScript,
+
+00:01:46.693 --> 00:01:48.330
+something like
+that, you can never
+
+00:01:48.330 --> 00:01:51.390
+say that because you're always
+going to be transpiling across.
+
+00:01:51.390 --> 00:01:53.140
+JAKE ARCHIBALD: I had
+this issue actually.
+
+00:01:53.140 --> 00:01:58.140
+I was using a project, MPM,
+installing something, using it.
+
+00:01:58.140 --> 00:01:59.350
+And there was a bug.
+
+00:01:59.350 --> 00:02:01.260
+And I thought, as a
+citizen of the internet,
+
+00:02:01.260 --> 00:02:03.080
+I am going to do a pull request.
+
+00:02:03.080 --> 00:02:04.580
+I'm going to try and fix that.
+
+00:02:04.580 --> 00:02:05.840
+PAUL LEWIS: A gift.
+
+00:02:05.840 --> 00:02:06.715
+JAKE ARCHIBALD: Yeah.
+
+00:02:06.715 --> 00:02:09.100
+And when I got onto GitHub,
+and click, click, click,
+
+00:02:09.100 --> 00:02:10.236
+CoffeeScript.
+
+00:02:10.236 --> 00:02:10.860
+PAUL LEWIS: Oh.
+
+00:02:10.860 --> 00:02:10.910
+OK.
+
+00:02:10.910 --> 00:02:11.100
+Yeah, no.
+
+00:02:11.100 --> 00:02:11.600
+Bye bye.
+
+00:02:11.600 --> 00:02:13.558
+JAKE ARCHIBALD: Now step
+one of making this fix
+
+00:02:13.558 --> 00:02:14.660
+is learn CoffeeScript.
+
+00:02:14.660 --> 00:02:17.980
+PAUL LEWIS: And it's like
+unless I really, really care
+
+00:02:17.980 --> 00:02:19.800
+about fixing the bug, it's not.
+
+00:02:19.800 --> 00:02:24.340
+For me, it's like JavaScript has
+become ES6, ES7, ES whatever.
+
+00:02:24.340 --> 00:02:26.130
+But like you say,
+this kind of, let's
+
+00:02:26.130 --> 00:02:30.120
+learn TypeScript or
+CoffeeScript or anything else,
+
+00:02:30.120 --> 00:02:31.820
+I've got to really
+want to go off and do
+
+00:02:31.820 --> 00:02:32.780
+that for some reason.
+
+00:02:32.780 --> 00:02:35.030
+And I don't see what that
+reason is because JavaScript
+
+00:02:35.030 --> 00:02:36.740
+for me for everything is fine.
+
+00:02:36.740 --> 00:02:39.230
+I actually really
+liked Babel if,
+
+00:02:39.230 --> 00:02:42.710
+for no other reason, that its
+source maps were just super.
+
+00:02:42.710 --> 00:02:45.800
+So even though I wasn't
+really aiming for that,
+
+00:02:45.800 --> 00:02:50.110
+when I did get an error, it was
+like whatever.js line whatever.
+
+00:02:50.110 --> 00:02:52.110
+And it was like, yeah,
+that is the correct line.
+
+00:02:52.110 --> 00:02:53.651
+JAKE ARCHIBALD: So
+even if you're not
+
+00:02:53.651 --> 00:02:55.594
+using source maps
+with Babel, the output
+
+00:02:55.594 --> 00:02:57.510
+is actually pretty
+sensible for the most part.
+
+00:02:57.510 --> 00:02:59.900
+But as you say, source maps just
+make it completely transparent.
+
+00:02:59.900 --> 00:03:01.730
+It's almost like you're not
+using a transpiler at all.
+
+00:03:01.730 --> 00:03:02.160
+PAUL LEWIS: Exactly.
+
+00:03:02.160 --> 00:03:03.701
+So I'm happy with
+the illusion of it,
+
+00:03:03.701 --> 00:03:05.520
+I think, is probably
+what it comes down to.
+
+00:03:05.520 --> 00:03:06.687
+But, as I say, you're right.
+
+00:03:06.687 --> 00:03:08.520
+If you look at the
+actual code it generates,
+
+00:03:08.520 --> 00:03:10.959
+for me, I was just like, yeah,
+that's not necessarily code
+
+00:03:10.959 --> 00:03:12.000
+I'd write, but that's OK.
+
+00:03:12.000 --> 00:03:13.260
+It's just about
+manageable and readable.
+
+00:03:13.260 --> 00:03:14.551
+JAKE ARCHIBALD: So go on, then.
+
+00:03:14.551 --> 00:03:17.990
+What are your big
+hitters in ES6 and 7?
+
+00:03:17.990 --> 00:03:19.160
+What's your faves of these?
+
+00:03:19.160 --> 00:03:20.035
+PAUL LEWIS: My faves.
+
+00:03:20.035 --> 00:03:21.160
+JAKE ARCHIBALD: Your faves.
+
+00:03:21.160 --> 00:03:23.454
+PAUL LEWIS: A contentious
+one would be classes.
+
+00:03:23.454 --> 00:03:24.745
+I actually really like classes.
+
+00:03:24.745 --> 00:03:26.890
+Because people are like, what's
+wrong with the prototype?
+
+00:03:26.890 --> 00:03:28.095
+You're turning your
+back on prototype.
+
+00:03:28.095 --> 00:03:29.380
+JAKE ARCHIBALD: You're
+still using the prototype.
+
+00:03:29.380 --> 00:03:29.960
+It's just sugar.
+
+00:03:29.960 --> 00:03:32.501
+PAUL LEWIS: Yes, exactly, but
+nice sugar at that-- very nice.
+
+00:03:32.501 --> 00:03:34.000
+JAKE ARCHIBALD: Yeah, because--
+
+00:03:34.000 --> 00:03:35.540
+PAUL LEWIS: Refined sugar.
+
+00:03:35.540 --> 00:03:38.490
+JAKE ARCHIBALD: If I'm doing
+something.prototype equals
+
+00:03:38.490 --> 00:03:41.180
+object.create, the
+thing I'm extending,
+
+00:03:41.180 --> 00:03:43.430
+and I keep forgetting the
+.prototype on the end there.
+
+00:03:43.430 --> 00:03:45.110
+PAUL LEWIS: But
+that's one of about--
+
+00:03:45.110 --> 00:03:46.140
+JAKE ARCHIBALD: It's
+really difficult.
+
+00:03:46.140 --> 00:03:47.760
+It's really awkward
+compared to class
+
+00:03:47.760 --> 00:03:49.810
+of thing [INAUDIBLE] thing.
+
+00:03:49.810 --> 00:03:51.830
+PAUL LEWIS: That's the
+one way you do it in ES6.
+
+00:03:51.830 --> 00:03:54.760
+With ES5, you've got 11 billion
+ways of doing it and not
+
+00:03:54.760 --> 00:03:57.180
+all of them are good
+necessarily, or readable,
+
+00:03:57.180 --> 00:03:58.612
+or what you want
+to see if you're
+
+00:03:58.612 --> 00:04:00.070
+looking at your
+own code six months
+
+00:04:00.070 --> 00:04:01.445
+from now or somebody
+else's code.
+
+00:04:01.445 --> 00:04:03.270
+So it kind of felt
+like it was more
+
+00:04:03.270 --> 00:04:04.730
+like the code I
+want to write, more
+
+00:04:04.730 --> 00:04:06.170
+like the code I want to read.
+
+00:04:06.170 --> 00:04:07.300
+It's where we're going.
+
+00:04:07.300 --> 00:04:08.040
+It's a feature.
+
+00:04:08.040 --> 00:04:10.540
+It's not like somebody just
+went off piece and did something
+
+00:04:10.540 --> 00:04:11.950
+that they wanted to do.
+
+00:04:11.950 --> 00:04:13.658
+JAKE ARCHIBALD: And
+I can barely remember
+
+00:04:13.658 --> 00:04:15.970
+how to spell "function" now.
+
+00:04:15.970 --> 00:04:18.180
+You've got within
+an object, it's just
+
+00:04:18.180 --> 00:04:20.480
+the name, brackets, off you go.
+
+00:04:20.480 --> 00:04:21.264
+There's arrow.
+
+00:04:21.264 --> 00:04:22.680
+PAUL LEWIS: Fat
+arrow function was
+
+00:04:22.680 --> 00:04:24.000
+something else I really liked.
+
+00:04:24.000 --> 00:04:24.380
+JAKE ARCHIBALD: Yeah.
+
+00:04:24.380 --> 00:04:25.420
+A little bit of fat arrow.
+
+00:04:25.420 --> 00:04:25.620
+PAUL LEWIS: Yeah.
+
+00:04:25.620 --> 00:04:27.730
+Because a number of times I
+use RequestAnimationFrame,
+
+00:04:27.730 --> 00:04:29.400
+setTimeout, setIntervals,
+something like that.
+
+00:04:29.400 --> 00:04:31.260
+And it's like, oh,
+all of a sudden, I'm
+
+00:04:31.260 --> 00:04:32.760
+on the Windows scope, am I?
+
+00:04:32.760 --> 00:04:33.490
+Thanks for that.
+
+00:04:33.490 --> 00:04:34.140
+So bind.
+
+00:04:34.140 --> 00:04:36.402
+And it's like, meh, don't worry.
+
+00:04:36.402 --> 00:04:37.610
+I mean, I don't mind binding.
+
+00:04:37.610 --> 00:04:40.169
+It's better than var
+that equals this for me.
+
+00:04:40.169 --> 00:04:41.210
+JAKE ARCHIBALD: I don't--
+
+00:04:41.210 --> 00:04:42.110
+PAUL LEWIS: You don't like that.
+
+00:04:42.110 --> 00:04:44.026
+JAKE ARCHIBALD: No, don't
+do that equals this.
+
+00:04:44.026 --> 00:04:46.640
+But I will give it a specific,
+proper variable name.
+
+00:04:46.640 --> 00:04:47.090
+PAUL LEWIS: Like what?
+
+00:04:47.090 --> 00:04:47.900
+JAKE ARCHIBALD: It's based
+on the name of the class.
+
+00:04:47.900 --> 00:04:50.560
+PAUL LEWIS: J key this,
+var j key this equals--
+
+00:04:50.560 --> 00:04:52.310
+JAKE ARCHIBALD: If
+it's class vehicle,
+
+00:04:52.310 --> 00:04:54.130
+inside that, I
+will do var vehicle
+
+00:04:54.130 --> 00:04:56.480
+equals this, like lowercase
+vehicle equals this.
+
+00:04:56.480 --> 00:04:58.391
+And it's-- yeah, but
+it makes sense then.
+
+00:04:58.391 --> 00:05:00.140
+I don't like that
+because it's like, well,
+
+00:05:00.140 --> 00:05:03.960
+that's just-- because this is a
+problem in JavaScript, I think.
+
+00:05:03.960 --> 00:05:05.600
+So this what?
+
+00:05:05.600 --> 00:05:08.440
+And that's one of the things
+that arrow functions solve is
+
+00:05:08.440 --> 00:05:10.790
+there tends to only be one
+option for what the this is,
+
+00:05:10.790 --> 00:05:12.855
+and it's the instance name.
+
+00:05:12.855 --> 00:05:13.940
+That makes way more sense.
+
+00:05:13.940 --> 00:05:14.540
+PAUL LEWIS: So it works for me.
+
+00:05:14.540 --> 00:05:15.280
+I really like--
+
+00:05:15.280 --> 00:05:16.050
+JAKE ARCHIBALD:
+Destructuring I like.
+
+00:05:16.050 --> 00:05:16.970
+PAUL LEWIS: Beautiful.
+
+00:05:16.970 --> 00:05:18.100
+JAKE ARCHIBALD: Especially
+for option objects.
+
+00:05:18.100 --> 00:05:18.830
+PAUL LEWIS: Yes.
+
+00:05:18.830 --> 00:05:20.180
+JAKE ARCHIBALD: --at
+the end of a function.
+
+00:05:20.180 --> 00:05:21.240
+PAUL LEWIS: With
+defaults, right?
+
+00:05:21.240 --> 00:05:21.630
+JAKE ARCHIBALD: This is it.
+
+00:05:21.630 --> 00:05:22.880
+It becomes self documenting.
+
+00:05:22.880 --> 00:05:25.154
+You can say, this is optional.
+
+00:05:25.154 --> 00:05:27.820
+But inside this object, here are
+the properties I'm looking for,
+
+00:05:27.820 --> 00:05:28.986
+and here are their defaults.
+
+00:05:28.986 --> 00:05:29.960
+PAUL LEWIS: Yeah.
+
+00:05:29.960 --> 00:05:32.100
+But in any case, I
+feel like, going back
+
+00:05:32.100 --> 00:05:34.070
+to your original
+question, the reason
+
+00:05:34.070 --> 00:05:38.140
+I would use a transpiler
+today is if and only
+
+00:05:38.140 --> 00:05:41.060
+if it lets me experience
+the future now,
+
+00:05:41.060 --> 00:05:42.589
+get used to the future now.
+
+00:05:42.589 --> 00:05:43.880
+I think it's where we're going.
+
+00:05:43.880 --> 00:05:44.910
+JAKE ARCHIBALD: Which
+you get with source maps.
+
+00:05:44.910 --> 00:05:46.980
+It feels like you can almost
+ignore the transpiler stuff.
+
+00:05:46.980 --> 00:05:48.063
+PAUL LEWIS: Yeah, exactly.
+
+00:05:48.063 --> 00:05:50.700
+And as I say, the code that it
+generates makes sense to me.
+
+00:05:50.700 --> 00:05:52.090
+So I'm all up for that.
+
+00:05:52.090 --> 00:05:53.590
+JAKE ARCHIBALD: Yay
+for transpilers.
+
+00:05:53.590 --> 00:05:54.278
+PAUL LEWIS: Yay.
+
+00:05:54.278 --> 00:05:55.680
+JAKE ARCHIBALD: Cheers.
+
+00:05:55.680 --> 00:05:56.530
+We need beers.
+
+00:05:56.530 --> 00:05:59.580
+[MUSIC PLAYING]
+

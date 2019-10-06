@@ -1,0 +1,125 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.956
+[MUSIC PLAYING]
+
+00:00:11.515 --> 00:00:13.640
+SPEAKER: Have you heard
+the term "hoisting" before?
+
+00:00:13.640 --> 00:00:15.960
+JavaScript does it, and
+it's a fun word to say--
+
+00:00:15.960 --> 00:00:16.700
+hoisting.
+
+00:00:16.700 --> 00:00:17.840
+But what actually is it?
+
+00:00:17.840 --> 00:00:19.760
+So let's try and
+clear things up.
+
+00:00:19.760 --> 00:00:22.700
+When you declare a function in
+JavaScript, they are hoisted.
+
+00:00:22.700 --> 00:00:24.770
+This means that the
+function name and the body
+
+00:00:24.770 --> 00:00:26.660
+are added to the
+current function scope
+
+00:00:26.660 --> 00:00:28.550
+before execution begins.
+
+00:00:28.550 --> 00:00:32.000
+Basically, the first function a
+can call the second function b
+
+00:00:32.000 --> 00:00:35.300
+even though the second function
+comes after the first function.
+
+00:00:35.300 --> 00:00:38.030
+Actually, you can even invoke
+the function a right above
+
+00:00:38.030 --> 00:00:40.910
+where it is declared
+because of hoisting.
+
+00:00:40.910 --> 00:00:42.410
+Now the important
+thing to note is
+
+00:00:42.410 --> 00:00:44.720
+that the variable declarations
+with const and let
+
+00:00:44.720 --> 00:00:47.300
+are not hoisted and
+scoped to the block.
+
+00:00:47.300 --> 00:00:49.280
+So while storing a
+function in the variable
+
+00:00:49.280 --> 00:00:52.130
+is often seen as semantically
+equivalent to using a named
+
+00:00:52.130 --> 00:00:53.930
+function, it is not.
+
+00:00:53.930 --> 00:00:56.465
+In this example, the code
+would fail because the const
+
+00:00:56.465 --> 00:00:58.310
+and let are not hoisted.
+
+00:00:58.310 --> 00:01:01.460
+And without hoisting, the
+order of declaration matters.
+
+00:01:01.460 --> 00:01:03.590
+Admittedly, hoisting
+can be a bit confusing.
+
+00:01:03.590 --> 00:01:05.239
+But now you know how
+it works, and you
+
+00:01:05.239 --> 00:01:06.860
+can make an informed
+decision when
+
+00:01:06.860 --> 00:01:09.260
+to use these two ways
+of declaring a function.
+
+00:01:09.260 --> 00:01:09.950
+Got it?
+
+00:01:09.950 --> 00:01:10.580
+Good.
+
+00:01:10.580 --> 00:01:12.226
+See you next time.
+
+00:01:12.226 --> 00:01:14.641
+[MUSIC PLAYING]
+
+00:01:18.030 --> 00:01:19.720
+Do I expect you to talk?
+
+00:01:19.720 --> 00:01:24.410
+No, Mr. Bond, I expect you
+to develop and subscribe.
+

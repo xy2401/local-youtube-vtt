@@ -1,0 +1,345 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.080
+[MUSIC PLAYING]
+
+00:00:05.080 --> 00:00:08.880
+Chrome 48 allows users
+to take immediate action
+
+00:00:08.880 --> 00:00:12.070
+on notifications
+with custom buttons.
+
+00:00:12.070 --> 00:00:14.890
+The new developer
+tools security panel
+
+00:00:14.890 --> 00:00:18.230
+makes it easier to debug
+mixed content issues
+
+00:00:18.230 --> 00:00:22.850
+and ensure your site is
+properly served over HTTPS.
+
+00:00:22.850 --> 00:00:27.010
+And you can now add presentation
+mode to mobile apps,
+
+00:00:27.010 --> 00:00:30.850
+easily casting content
+to a second screen.
+
+00:00:30.850 --> 00:00:32.729
+These are just some
+of them new features
+
+00:00:32.729 --> 00:00:35.180
+for developers in Chrome 48.
+
+00:00:35.180 --> 00:00:38.600
+Let's dive in and see
+what's new in Chrome.
+
+00:00:38.600 --> 00:00:42.730
+Until recently, reengaging
+with users of your website
+
+00:00:42.730 --> 00:00:47.040
+has been a challenge,
+often involving bulk email.
+
+00:00:47.040 --> 00:00:50.930
+But browser-based
+notifications changes that,
+
+00:00:50.930 --> 00:00:56.070
+allowing you to send users
+timely, relevant notifications,
+
+00:00:56.070 --> 00:00:58.370
+for example, letting
+them know that tickets
+
+00:00:58.370 --> 00:01:00.130
+to their favorite
+band are on sale
+
+00:01:00.130 --> 00:01:02.530
+or about a new chat message.
+
+00:01:02.530 --> 00:01:06.430
+In Chrome 48 you can
+now add custom buttons
+
+00:01:06.430 --> 00:01:11.510
+to notifications, enabling users
+to complete the task entirely
+
+00:01:11.510 --> 00:01:13.450
+within the notification.
+
+00:01:13.450 --> 00:01:16.610
+Imagine that previous
+example, a notification
+
+00:01:16.610 --> 00:01:18.350
+that tickets to
+your favorite band
+
+00:01:18.350 --> 00:01:21.690
+just went on sale with
+a "Buy Now" button.
+
+00:01:21.690 --> 00:01:25.000
+To add buttons to
+your notifications,
+
+00:01:25.000 --> 00:01:28.930
+add an array of actions,
+including a title and action
+
+00:01:28.930 --> 00:01:32.500
+ID to the notification
+info object.
+
+00:01:32.500 --> 00:01:34.780
+If the user clicks on
+one of the actions,
+
+00:01:34.780 --> 00:01:39.240
+that information is passed in
+the notification click event.
+
+00:01:39.240 --> 00:01:41.590
+Be sure to provide
+buttons that are specific
+
+00:01:41.590 --> 00:01:45.200
+and allow users to quickly
+respond to the notification.
+
+00:01:45.200 --> 00:01:47.510
+And make sure that they're
+different from the default
+
+00:01:47.510 --> 00:01:48.780
+action.
+
+00:01:48.780 --> 00:01:52.220
+Peter [? Beverloo ?] has a cool
+sample you can try at the URL
+
+00:01:52.220 --> 00:01:53.570
+below.
+
+00:01:53.570 --> 00:01:57.390
+We all expect sites that deal
+with our personal information
+
+00:01:57.390 --> 00:01:59.700
+to be served over HTTPS.
+
+00:01:59.700 --> 00:02:02.240
+It's just standard practice.
+
+00:02:02.240 --> 00:02:04.420
+As we start to build
+apps that take advantage
+
+00:02:04.420 --> 00:02:07.030
+of powerful features,
+like Service Worker,
+
+00:02:07.030 --> 00:02:09.720
+it's simple a requirement.
+
+00:02:09.720 --> 00:02:12.950
+Some APIs that we've used
+for years without HTTPS,
+
+00:02:12.950 --> 00:02:15.930
+like geolocation
+or device motion,
+
+00:02:15.930 --> 00:02:19.620
+may require secure
+connections in the future.
+
+00:02:19.620 --> 00:02:23.750
+HTTPS helps to protect
+the integrity of our apps
+
+00:02:23.750 --> 00:02:26.120
+and our users' information.
+
+00:02:26.120 --> 00:02:29.210
+There's a new security
+panel in developer tools
+
+00:02:29.210 --> 00:02:30.970
+to help with this.
+
+00:02:30.970 --> 00:02:33.850
+At a glance, it tells you
+whether the page is secure
+
+00:02:33.850 --> 00:02:38.330
+or not and can help you
+diagnose HTTPS issues.
+
+00:02:38.330 --> 00:02:41.700
+It shows information about
+the certificate, the protocol
+
+00:02:41.700 --> 00:02:45.960
+and cipher, and the status
+of all of the sub-resources.
+
+00:02:45.960 --> 00:02:48.460
+To see how it works and
+some of the different errors
+
+00:02:48.460 --> 00:02:51.800
+it will help you debug,
+open the new security panel
+
+00:02:51.800 --> 00:02:58.390
+in developer tools, and
+check out https://badssl.com.
+
+00:02:58.390 --> 00:03:01.720
+How often have you gathered a
+group of friends or coworkers
+
+00:03:01.720 --> 00:03:05.570
+around your phone to show them
+the latest meme, or work video,
+
+00:03:05.570 --> 00:03:06.830
+or something?
+
+00:03:06.830 --> 00:03:09.710
+Wouldn't it be awesome
+to be able to send it
+
+00:03:09.710 --> 00:03:14.520
+to a second, larger screen,
+directly from your phone?
+
+00:03:14.520 --> 00:03:19.380
+Chrome 48 on Android now allows
+sites to present to Google Cast
+
+00:03:19.380 --> 00:03:22.650
+devices, using the
+standard space presentation
+
+00:03:22.650 --> 00:03:25.950
+API and the Cast Web SDK.
+
+00:03:25.950 --> 00:03:30.580
+The presentation API allows you
+to leverage a second display,
+
+00:03:30.580 --> 00:03:33.990
+while using your mobile
+device as the controller,
+
+00:03:33.990 --> 00:03:36.830
+not only to move
+between slides or choose
+
+00:03:36.830 --> 00:03:40.390
+which video plays next, but
+as a game controller or input
+
+00:03:40.390 --> 00:03:41.560
+device.
+
+00:03:41.560 --> 00:03:45.160
+Imagine a racing game that
+uses your phone as the steering
+
+00:03:45.160 --> 00:03:49.170
+wheel or an interactive
+tutorial to help students
+
+00:03:49.170 --> 00:03:50.920
+improve their math skills.
+
+00:03:50.920 --> 00:03:53.830
+There are some other cool
+new features in Chrome 48,
+
+00:03:53.830 --> 00:03:56.770
+like network
+information.downloadmax,
+
+00:03:56.770 --> 00:04:00.590
+which provides the maximum
+bandwidth of a device.
+
+00:04:00.590 --> 00:04:04.530
+One use case-- warn users
+about a large transfer
+
+00:04:04.530 --> 00:04:07.020
+on cellular networks
+that might eat up
+
+00:04:07.020 --> 00:04:08.660
+their allotted bandwidth.
+
+00:04:08.660 --> 00:04:11.520
+And there's the
+new get.all methods
+
+00:04:11.520 --> 00:04:15.340
+that simplify bulk
+index DB interactions.
+
+00:04:15.340 --> 00:04:18.529
+These are just some of the
+new features in Chrome 48
+
+00:04:18.529 --> 00:04:19.899
+for developers.
+
+00:04:19.899 --> 00:04:22.089
+Be sure to check out
+the description below
+
+00:04:22.089 --> 00:04:25.310
+to get links to more
+details and learn about some
+
+00:04:25.310 --> 00:04:27.070
+of the other new features.
+
+00:04:27.070 --> 00:04:28.990
+If you haven't
+already, subscribe
+
+00:04:28.990 --> 00:04:31.090
+to our Chrome Developers
+YouTube channel
+
+00:04:31.090 --> 00:04:33.880
+to stay up to date
+with the latest news.
+
+00:04:33.880 --> 00:04:37.180
+I'm Pete LePage, and as soon
+as Chrome 49 is released,
+
+00:04:37.180 --> 00:04:40.580
+I'll be right here to tell
+you what's new in Chrome.
+
+00:04:40.580 --> 00:04:42.130
+[MUSIC PLAYING]
+

@@ -1,0 +1,478 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.465
+[MUSIC PLAYING]
+
+00:00:05.940 --> 00:00:07.930
+KAYCE BASQUES:
+Chrome 77 approaches.
+
+00:00:07.930 --> 00:00:09.610
+Here's what's new in DevTools.
+
+00:00:09.610 --> 00:00:13.670
+First up, you can now copy
+an element's CSS styles.
+
+00:00:13.670 --> 00:00:16.960
+I like the styles on this link
+element and want to copy them.
+
+00:00:16.960 --> 00:00:19.150
+First, I right click
+and select Inspect
+
+00:00:19.150 --> 00:00:21.370
+to highlight the
+link in the DOM tree.
+
+00:00:21.370 --> 00:00:24.420
+Actually, I want to make
+the font italic first.
+
+00:00:24.420 --> 00:00:27.820
+Now I'll right click the element
+and select Copy, Copy Styles.
+
+00:00:27.820 --> 00:00:29.570
+And when I paste
+to the Clipboard,
+
+00:00:29.570 --> 00:00:32.409
+I can see the element styles,
+including my font style,
+
+00:00:32.409 --> 00:00:34.390
+italic declaration.
+
+00:00:34.390 --> 00:00:37.420
+When you're reading an article
+and the content jumps around,
+
+00:00:37.420 --> 00:00:39.010
+that's called layout shifting.
+
+00:00:39.010 --> 00:00:41.110
+It usually happens
+because ads and images
+
+00:00:41.110 --> 00:00:42.700
+have finished
+loading, and the page
+
+00:00:42.700 --> 00:00:44.740
+didn't reserve space for them.
+
+00:00:44.740 --> 00:00:47.740
+You can now visualize layout
+shifts from the rendering tab.
+
+00:00:47.740 --> 00:00:49.570
+However, a word of
+warning, this feature
+
+00:00:49.570 --> 00:00:51.430
+can cause your screen
+to flash a lot.
+
+00:00:51.430 --> 00:00:54.190
+So if you're prone to
+photosensitive epilepsy,
+
+00:00:54.190 --> 00:00:56.200
+you might want to look away.
+
+00:00:56.200 --> 00:00:59.650
+To visualize layout shifts,
+first press Control-Shift-P
+
+00:00:59.650 --> 00:01:02.290
+or Command-Shift-P to
+open the Command menu.
+
+00:01:02.290 --> 00:01:03.520
+Type Rendering.
+
+00:01:03.520 --> 00:01:05.560
+Run the Show Rendering command.
+
+00:01:05.560 --> 00:01:09.130
+And then enable the Layout
+Shift Regions checkbox.
+
+00:01:09.130 --> 00:01:11.500
+Now, as you load or
+interact with pages,
+
+00:01:11.500 --> 00:01:14.740
+layout shifts are
+highlighted blue.
+
+00:01:14.740 --> 00:01:19.180
+The Audits panel has a couple
+new audits and a new metric.
+
+00:01:19.180 --> 00:01:22.870
+As always, if you want to find
+ways to improve page quality,
+
+00:01:22.870 --> 00:01:25.750
+go to the Audits Panel,
+then click Run Audits.
+
+00:01:25.750 --> 00:01:28.360
+And after 10 seconds
+or so, the Audits Panel
+
+00:01:28.360 --> 00:01:30.760
+gives you a report
+on how to improve.
+
+00:01:30.760 --> 00:01:34.270
+The estimated input latency
+metric in the Performance
+
+00:01:34.270 --> 00:01:37.570
+section has been replaced with
+a new metric called Maximum
+
+00:01:37.570 --> 00:01:39.820
+Potential First Input Delay.
+
+00:01:39.820 --> 00:01:42.700
+The old metric did not factor
+into your performance score.
+
+00:01:42.700 --> 00:01:44.670
+And the new one doesn't either.
+
+00:01:44.670 --> 00:01:46.990
+The new keep request
+counts and file
+
+00:01:46.990 --> 00:01:49.930
+sizes low audit reports
+the total number of network
+
+00:01:49.930 --> 00:01:52.900
+requests and the
+size of each request.
+
+00:01:52.900 --> 00:01:56.800
+And down in the PWA section,
+the new Apple Touch icon audit
+
+00:01:56.800 --> 00:02:00.970
+checks that your PWA can be
+added to an iOS home screen.
+
+00:02:00.970 --> 00:02:05.530
+DevTools now automatically syncs
+its theme with your OS theme.
+
+00:02:05.530 --> 00:02:08.199
+Right now, my OS is
+in its dark theme.
+
+00:02:08.199 --> 00:02:11.290
+When I open DevTools,
+it's also in dark theme.
+
+00:02:11.290 --> 00:02:13.750
+When I set my OS
+to its light theme
+
+00:02:13.750 --> 00:02:16.450
+and then close and
+reopen DevTools,
+
+00:02:16.450 --> 00:02:18.760
+DevTools is also
+in its light theme.
+
+00:02:18.760 --> 00:02:20.450
+By the way, dark
+theme isn't new.
+
+00:02:20.450 --> 00:02:21.820
+We've had it for a long time.
+
+00:02:21.820 --> 00:02:24.650
+To manually enable it,
+press Control-Shift-P
+
+00:02:24.650 --> 00:02:27.310
+or Command-Shift-P to
+open the Command menu.
+
+00:02:27.310 --> 00:02:28.090
+Type dark.
+
+00:02:28.090 --> 00:02:30.820
+Then run the Enable
+Dark Theme command.
+
+00:02:30.820 --> 00:02:33.520
+For light theme, run the
+Enable Light Theme command.
+
+00:02:36.130 --> 00:02:38.920
+If you create conditional
+breakpoints or log points
+
+00:02:38.920 --> 00:02:40.810
+a lot, there's a new
+keyboard shortcut
+
+00:02:40.810 --> 00:02:43.210
+for opening the
+breakpoint editor.
+
+00:02:43.210 --> 00:02:44.920
+While my cursor
+is in the editor,
+
+00:02:44.920 --> 00:02:47.950
+I can press Control-Alt-B
+or Command-Option-B
+
+00:02:47.950 --> 00:02:50.620
+on Mac to open the
+breakpoint editor.
+
+00:02:50.620 --> 00:02:52.300
+To choose my
+breakpoint type, I can
+
+00:02:52.300 --> 00:02:55.210
+press Shift-Tab to
+select the menu, then
+
+00:02:55.210 --> 00:02:56.860
+Space to open the menu.
+
+00:02:56.860 --> 00:02:59.380
+Then I can select either
+Breakpoint or Conditional
+
+00:02:59.380 --> 00:03:01.520
+breakpoint or Logpoint.
+
+00:03:01.520 --> 00:03:04.030
+If you're not sure how to
+use Conditional breakpoints
+
+00:03:04.030 --> 00:03:05.530
+or Logpoints,
+check out the links
+
+00:03:05.530 --> 00:03:07.430
+in the description
+for more information.
+
+00:03:07.430 --> 00:03:09.640
+Prefetch links
+give you the chance
+
+00:03:09.640 --> 00:03:11.350
+to download resources
+before they're
+
+00:03:11.350 --> 00:03:14.440
+needed in order to speed
+up subsequent page loads.
+
+00:03:14.440 --> 00:03:16.960
+The network panel now
+indicates whether a resource
+
+00:03:16.960 --> 00:03:20.160
+came from the prefetch cache.
+
+00:03:20.160 --> 00:03:24.690
+On this page, I'm prefetching
+an HTML file and a CSS file.
+
+00:03:24.690 --> 00:03:26.370
+In the network
+panel, you can see
+
+00:03:26.370 --> 00:03:28.620
+that the resources were
+downloaded even though they're
+
+00:03:28.620 --> 00:03:31.650
+not actually needed for
+the page I'm currently on.
+
+00:03:31.650 --> 00:03:34.200
+When I navigate to
+page 2, the size column
+
+00:03:34.200 --> 00:03:37.900
+tells me that the resources
+came from the prefetch cache.
+
+00:03:37.900 --> 00:03:40.110
+Check out our Resource
+Prioritization guide
+
+00:03:40.110 --> 00:03:41.400
+to learn more about prefetch.
+
+00:03:43.970 --> 00:03:47.510
+The console now shows
+private class fields.
+
+00:03:47.510 --> 00:03:49.280
+In this older version
+of Chrome, I'm
+
+00:03:49.280 --> 00:03:52.010
+defining a class called
+Cat with a public field
+
+00:03:52.010 --> 00:03:55.310
+called name and a private
+field called color.
+
+00:03:55.310 --> 00:03:58.460
+When I inspect the object, I
+can't see the private field.
+
+00:03:58.460 --> 00:04:01.490
+In Chrome 77, after I
+define the same class
+
+00:04:01.490 --> 00:04:03.230
+and inspect the
+object, I can see
+
+00:04:03.230 --> 00:04:06.290
+the private field as expected.
+
+00:04:06.290 --> 00:04:08.300
+The background
+services section now
+
+00:04:08.300 --> 00:04:11.330
+supports push messages
+and notifications.
+
+00:04:11.330 --> 00:04:14.030
+A push message is when a
+server sends information
+
+00:04:14.030 --> 00:04:15.200
+to a service worker.
+
+00:04:15.200 --> 00:04:17.570
+And a notification is
+when a service worker
+
+00:04:17.570 --> 00:04:20.000
+shows information to a user.
+
+00:04:20.000 --> 00:04:23.270
+To record notifications, go
+to the Application panel,
+
+00:04:23.270 --> 00:04:25.700
+then go to the
+Notifications pane.
+
+00:04:25.700 --> 00:04:27.470
+Then click Record.
+
+00:04:27.470 --> 00:04:31.410
+Now, when I send a notification,
+I see it logged to the table.
+
+00:04:31.410 --> 00:04:35.130
+I can click the notification to
+view more information about it.
+
+00:04:35.130 --> 00:04:37.647
+However, considering that
+this is a background service,
+
+00:04:37.647 --> 00:04:39.230
+it wouldn't be that
+helpful if it only
+
+00:04:39.230 --> 00:04:41.360
+worked when DevTools was open.
+
+00:04:41.360 --> 00:04:44.240
+So DevTools logs notifications
+and push messages
+
+00:04:44.240 --> 00:04:47.300
+for three days, even
+when DevTools is closed.
+
+00:04:47.300 --> 00:04:49.340
+For example, first,
+I'll close DevTools,
+
+00:04:49.340 --> 00:04:52.580
+then change the title
+and message to closed,
+
+00:04:52.580 --> 00:04:54.290
+then send the message.
+
+00:04:54.290 --> 00:04:56.660
+To reopen DevTools, I'll
+press Control-Shift-I
+
+00:04:56.660 --> 00:05:00.800
+or Command-Option-I, which
+is the shortcut for reopening
+
+00:05:00.800 --> 00:05:02.540
+the last panel I was using--
+
+00:05:02.540 --> 00:05:04.580
+in this case, the
+Application panel.
+
+00:05:04.580 --> 00:05:09.470
+And here, you can see that
+the second message was logged.
+
+00:05:09.470 --> 00:05:13.130
+Here's a bonus tip about a
+lesser-known DevTools feature--
+
+00:05:13.130 --> 00:05:15.380
+the DOM tree's search UI.
+
+00:05:15.380 --> 00:05:19.040
+To open the DOM tree's search
+UI, focus the DOM tree,
+
+00:05:19.040 --> 00:05:22.460
+then press Control-F
+or Command-F on Mac.
+
+00:05:22.460 --> 00:05:26.150
+You can search by strings
+like DevTools or CSS selectors
+
+00:05:26.150 --> 00:05:32.000
+like input type equals
+hidden or even XPath queries.
+
+00:05:32.000 --> 00:05:33.120
+Thanks for watching.
+
+00:05:33.120 --> 00:05:35.510
+We'll be back in six
+weeks for Chrome 78.
+
+00:05:35.510 --> 00:05:38.860
+[MUSIC PLAYING]
+

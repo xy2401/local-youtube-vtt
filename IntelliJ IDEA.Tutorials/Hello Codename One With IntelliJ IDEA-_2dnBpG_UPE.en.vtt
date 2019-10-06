@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:13.001
+Lets create a hello Codename One application with IntelliJ IDEA. In the initial IDEA window we click configure then plugins
+
+00:00:13.000 --> 00:00:23.336
+Now we need to click browse repositories and type in Codename One so we can install the plugin and restart the IDE
+
+00:00:29.787 --> 00:00:38.010
+Now when we click "Create a new project" there is a Codename One option. Lets type in a name
+
+00:00:41.381 --> 00:01:05.080
+We can select one of the themes, I'm going to leave this with native for now. We also need the type of application for now I will go with a GUI builder application. Its very important to set the package name! This is very hard to change later and its used for itunes/google play so get it right
+
+00:01:06.937 --> 00:01:15.199
+Lets run the project, we can also debug it using the standard debugger. Notice the simulator allows us to rotate, switch device types and monitor networking, record tests etc.
+
+00:01:36.986 --> 00:01:41.954
+In the preferences we can see many Codename One options including settings specific to iOS, Android etc.
+
+00:01:45.896 --> 00:01:55.778
+We can double click the theme file to open the design tool, here we have a CSS like theming engine where I can configure the appearance of the UI.
+
+00:02:03.884 --> 00:02:14.637
+I can go to the GUI builder where I can place a button, edit its properties and text. By clicking action event the Java source will open in the IDE
+
+00:02:22.300 --> 00:02:26.704
+Back in the IDE lets type in code to show a hello world dialog and this time lets place a breakpoint and run it in the debugger
+
+00:02:48.262 --> 00:03:04.572
+Now lets say we want to build this application to the native device we can just right click the project and select the target device, this sends the build to the servers and it will be downloadable to your disk or directly to the device
+
+00:03:05.314 --> 00:03:10.424
+Thanks for watching this tutorial I hope it was helpful and educational
+

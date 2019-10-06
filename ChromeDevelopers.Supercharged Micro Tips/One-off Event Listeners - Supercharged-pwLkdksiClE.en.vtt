@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.320
+[MUSIC PLAYING]
+
+00:00:11.520 --> 00:00:14.070
+SURMA: We all have used event
+listeners, and many of you
+
+00:00:14.070 --> 00:00:15.870
+have probably
+encountered a scenario
+
+00:00:15.870 --> 00:00:17.550
+where you are
+waiting for an event
+
+00:00:17.550 --> 00:00:19.590
+before you can continue to work.
+
+00:00:19.590 --> 00:00:22.470
+In that scenario, you are no
+longer interested in that event
+
+00:00:22.470 --> 00:00:24.630
+after the first one has arrived.
+
+00:00:24.630 --> 00:00:27.450
+Traditionally, you would
+create a name to local function
+
+00:00:27.450 --> 00:00:29.490
+so you can call
+addEventListener, and then
+
+00:00:29.490 --> 00:00:33.150
+also call removeEventListener
+once the first event has fired.
+
+00:00:33.150 --> 00:00:36.360
+This way, your callback
+will only be executed once.
+
+00:00:36.360 --> 00:00:38.580
+But because this is
+such a common pattern,
+
+00:00:38.580 --> 00:00:41.940
+the addEventListener function
+now has a once option.
+
+00:00:41.940 --> 00:00:45.030
+Set the once option to true, and
+your event listener will only
+
+00:00:45.030 --> 00:00:47.060
+be executed, well, once.
+
+00:00:47.060 --> 00:00:48.810
+You don't need to worry
+about the cleanup,
+
+00:00:48.810 --> 00:00:51.220
+because that is done for you.
+
+00:00:51.220 --> 00:00:53.410
+Neat.
+
+00:00:53.410 --> 00:00:54.900
+Short and to the point.
+
+00:00:54.900 --> 00:00:55.840
+That's a Micro Tip.
+
+00:00:55.840 --> 00:00:57.710
+And there's more
+where that came from.
+
+00:00:57.710 --> 00:01:00.160
+So if you like this, you should
+subscribe to the channel,
+
+00:01:00.160 --> 00:01:04.090
+and you can look forward to more
+Supercharged every Thursday.
+

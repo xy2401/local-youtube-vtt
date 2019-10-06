@@ -1,0 +1,569 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.416
+[MUSIC PLAYING]
+
+00:00:17.100 --> 00:00:18.687
+ADDY OSMANI: Do
+you use snippets?
+
+00:00:18.687 --> 00:00:20.270
+MATT GAUNT: No, when
+you say snippets,
+
+00:00:20.270 --> 00:00:22.300
+I think of little
+chunks of code I
+
+00:00:22.300 --> 00:00:24.687
+get from a [? GIS ?]
+or something like that.
+
+00:00:24.687 --> 00:00:25.770
+ADDY OSMANI: Pretty close.
+
+00:00:25.770 --> 00:00:28.290
+You don't use snippets
+in, like, Sublime text?
+
+00:00:28.290 --> 00:00:31.390
+MATT GAUNT: No, I'm looking at
+Atom right now and I have them.
+
+00:00:31.390 --> 00:00:32.700
+I don't know what they are.
+
+00:00:35.530 --> 00:00:37.410
+ADDY OSMANI: I'm
+deducting a point
+
+00:00:37.410 --> 00:00:40.020
+from my Yelp review of you.
+
+00:00:40.020 --> 00:00:43.700
+MATT GAUNT: How can
+I have a Yelp score?
+
+00:00:43.700 --> 00:00:44.480
+I'm not a place.
+
+00:00:44.480 --> 00:00:46.354
+ADDY OSMANI: You have--
+people can visit you.
+
+00:00:46.354 --> 00:00:47.450
+You're totally a place.
+
+00:00:47.450 --> 00:00:48.555
+MATT GAUNT: I feel like
+there's going to be one review,
+
+00:00:48.555 --> 00:00:49.670
+and it's just you.
+
+00:00:49.670 --> 00:00:51.995
+It's going to be anonymous.
+
+00:00:51.995 --> 00:00:55.270
+It's just like,
+worst person ever.
+
+00:00:55.270 --> 00:00:57.515
+ADDY OSMANI: These are
+your words, not mine.
+
+00:00:57.515 --> 00:00:58.765
+MATT GAUNT: What are snippets?
+
+00:00:58.765 --> 00:01:00.223
+ADDY OSMANI: Snippets
+are basically
+
+00:01:00.223 --> 00:01:02.010
+reusable chunks of
+code that you use
+
+00:01:02.010 --> 00:01:04.810
+in your daily workflow, stuff
+that you find yourself writing
+
+00:01:04.810 --> 00:01:06.710
+out a lot that would
+probably benefit
+
+00:01:06.710 --> 00:01:08.070
+from automating a tiny bit.
+
+00:01:08.070 --> 00:01:11.370
+MATT GAUNT: Yes, so
+things like ES6 classes,
+
+00:01:11.370 --> 00:01:14.240
+where you've got to have
+the class keyword, name
+
+00:01:14.240 --> 00:01:18.101
+of the thing, brackets, curly
+brackets, whatever, and then
+
+00:01:18.101 --> 00:01:19.100
+that's just boilerplate.
+
+00:01:19.100 --> 00:01:20.350
+That's always going
+to be the case.
+
+00:01:20.350 --> 00:01:21.490
+So you could just
+have a snippet,
+
+00:01:21.490 --> 00:01:22.920
+add that in, and
+then what you've got
+
+00:01:22.920 --> 00:01:23.820
+to do is change the class name.
+
+00:01:23.820 --> 00:01:25.410
+ADDY OSMANI: Yeah,
+and it's kind of neat,
+
+00:01:25.410 --> 00:01:27.120
+because you can create
+your own snippets.
+
+00:01:27.120 --> 00:01:28.370
+You can go and customize them.
+
+00:01:28.370 --> 00:01:30.070
+There's whole
+packages of snippets,
+
+00:01:30.070 --> 00:01:31.940
+depending on the
+libraries you are using.
+
+00:01:31.940 --> 00:01:35.100
+MATT GAUNT: Oh, so you can just
+import someone else's snippets.
+
+00:01:35.100 --> 00:01:37.170
+ADDY OSMANI: So,
+it's kind of neat.
+
+00:01:37.170 --> 00:01:38.700
+There's a bunch
+of snippets that I
+
+00:01:38.700 --> 00:01:40.390
+find myself using pretty often.
+
+00:01:40.390 --> 00:01:44.100
+The first set, are the
+JavaScript and Node snippets
+
+00:01:44.100 --> 00:01:45.487
+from Zeno Rocha.
+
+00:01:45.487 --> 00:01:47.070
+And this is kind of
+a really neat step
+
+00:01:47.070 --> 00:01:49.410
+because it covers everything
+from little expansions,
+
+00:01:49.410 --> 00:01:52.370
+for adding that listeners
+to your DOM nodes,
+
+00:01:52.370 --> 00:01:55.330
+creating elements,
+creating fragments.
+
+00:01:55.330 --> 00:01:57.380
+If you're working
+on prototypes, it'll
+
+00:01:57.380 --> 00:01:59.170
+give you a nice little
+expansion for that.
+
+00:01:59.170 --> 00:02:01.670
+And it will also highlight
+the relevant piece of code
+
+00:02:01.670 --> 00:02:03.545
+that you're probably
+going to want to change,
+
+00:02:03.545 --> 00:02:05.370
+like the name of the object.
+
+00:02:05.370 --> 00:02:06.330
+MATT GAUNT: The name of
+the class, the prototype,
+
+00:02:06.330 --> 00:02:06.970
+and the function.
+
+00:02:06.970 --> 00:02:07.530
+Nice.
+
+00:02:07.530 --> 00:02:09.030
+ADDY OSMANI: Which
+is kind of useful
+
+00:02:09.030 --> 00:02:13.000
+and also it does other things
+like scaffolding out your IIFE,
+
+00:02:13.000 --> 00:02:14.341
+or "iffies".
+
+00:02:14.341 --> 00:02:15.216
+MATT GAUNT: "Iffies"?
+
+00:02:15.216 --> 00:02:15.710
+ADDY OSMANI: "Iffies."
+
+00:02:15.710 --> 00:02:17.220
+MATT GAUNT: What are "iffies"?
+
+00:02:17.220 --> 00:02:19.330
+ADDY OSMANI: They
+are Immediately
+
+00:02:19.330 --> 00:02:21.900
+Invoked Functional Expressions.
+
+00:02:21.900 --> 00:02:24.044
+MATT GAUNT: You're
+raising more questions
+
+00:02:24.044 --> 00:02:24.960
+than you're answering.
+
+00:02:24.960 --> 00:02:26.860
+You're just saying words.
+
+00:02:26.860 --> 00:02:27.860
+ADDY OSMANI: Just words?
+
+00:02:27.860 --> 00:02:31.270
+There's a blog post by Ben
+Alman you can go check out.
+
+00:02:31.270 --> 00:02:32.890
+It covers all this stuff.
+
+00:02:32.890 --> 00:02:35.360
+It has a great Yelp review.
+
+00:02:35.360 --> 00:02:36.300
+That's all I'm saying.
+
+00:02:36.300 --> 00:02:37.174
+MATT GAUNT: From you.
+
+00:02:37.174 --> 00:02:38.716
+ADDY OSMANI: From me.
+
+00:02:38.716 --> 00:02:41.680
+MATT GAUNT: What other
+snippet packages do you have?
+
+00:02:41.680 --> 00:02:43.990
+ADDY OSMANI: So, you've been
+using ES6 a bunch lately,
+
+00:02:43.990 --> 00:02:44.490
+right?
+
+00:02:44.490 --> 00:02:44.870
+MATT GAUNT: Yeah.
+
+00:02:44.870 --> 00:02:46.260
+ADDY OSMANI: What
+do you like in ES6?
+
+00:02:46.260 --> 00:02:47.190
+What are you using?
+
+00:02:47.190 --> 00:02:50.050
+MATT GAUNT: It's mostly classes.
+
+00:02:50.050 --> 00:02:52.932
+I've started getting into
+[INAUDIBLE] functions,
+
+00:02:52.932 --> 00:02:54.890
+and Promises I've been
+using for a little while
+
+00:02:54.890 --> 00:02:56.820
+just because the service
+workers [INAUDIBLE].
+
+00:02:56.820 --> 00:02:57.800
+Stuff like that.
+
+00:02:57.800 --> 00:02:58.883
+Those are the main things.
+
+00:02:58.883 --> 00:03:01.190
+ADDY OSMANI: OK, so there
+is a really decent package
+
+00:03:01.190 --> 00:03:07.767
+called ES6 Toolkit that includes
+snippets for Promises, classes.
+
+00:03:07.767 --> 00:03:10.100
+For classes it's really neat,
+because it will give you--
+
+00:03:10.100 --> 00:03:11.975
+again it will highlight,
+it will scaffold out
+
+00:03:11.975 --> 00:03:13.440
+the whole class
+with a constructor,
+
+00:03:13.440 --> 00:03:15.356
+and it will also highlight
+the section of code
+
+00:03:15.356 --> 00:03:18.840
+that you probably want to change
+first, which is kind of nice.
+
+00:03:18.840 --> 00:03:24.020
+It also does fat arrows,
+generators, beatmaps, sets.
+
+00:03:24.020 --> 00:03:26.020
+MATT GAUNT: So those
+things are not played with.
+
+00:03:26.020 --> 00:03:27.436
+It sounds like
+this might actually
+
+00:03:27.436 --> 00:03:29.796
+be a nice way of learning
+about the new ES6 features.
+
+00:03:29.796 --> 00:03:30.920
+ADDY OSMANI: Yeah think so.
+
+00:03:30.920 --> 00:03:32.750
+I think they've
+also got-- have you
+
+00:03:32.750 --> 00:03:36.330
+used the object literal
+shorthands in ES6?
+
+00:03:36.330 --> 00:03:38.200
+So the basic idea
+there is that you don't
+
+00:03:38.200 --> 00:03:39.690
+have to type out as much code.
+
+00:03:39.690 --> 00:03:41.900
+We would use the book
+for functions and things.
+
+00:03:41.900 --> 00:03:44.535
+It also supports that
+and modules, too.
+
+00:03:44.535 --> 00:03:45.800
+It's kind of neat.
+
+00:03:45.800 --> 00:03:48.030
+There's ES6 Toolkit.
+
+00:03:48.030 --> 00:03:50.550
+Another set that I find
+myself using pretty often
+
+00:03:50.550 --> 00:03:55.644
+is the Polymer and Web Component
+snippet package by Rob Dodson.
+
+00:03:55.644 --> 00:03:57.060
+That's useful
+because it helps you
+
+00:03:57.060 --> 00:03:58.530
+when you're writing
+not just apps
+
+00:03:58.530 --> 00:04:00.931
+but also your own elements.
+
+00:04:00.931 --> 00:04:03.180
+So let's say you're creating
+a demo page for your app.
+
+00:04:03.180 --> 00:04:04.950
+It's got an expansion
+that will write out
+
+00:04:04.950 --> 00:04:07.650
+all of the boilerplate
+code for your metatags.
+
+00:04:07.650 --> 00:04:09.504
+It will include the web
+component polyfills.
+
+00:04:09.504 --> 00:04:10.920
+And then you can
+just go and start
+
+00:04:10.920 --> 00:04:12.410
+creating your own elements.
+
+00:04:12.410 --> 00:04:13.310
+And when you're
+doing that, there's
+
+00:04:13.310 --> 00:04:14.851
+a few things you
+always end up doing,
+
+00:04:14.851 --> 00:04:16.459
+like writing HTML imports.
+
+00:04:16.459 --> 00:04:21.779
+And Rob Dodson's written
+this little shorthand HI.
+
+00:04:21.779 --> 00:04:25.060
+That's like saying HI,
+do me the entire line
+
+00:04:25.060 --> 00:04:27.250
+that I require for
+writing an import,
+
+00:04:27.250 --> 00:04:29.720
+or write me out all of
+the boilerplate code
+
+00:04:29.720 --> 00:04:30.980
+I need for my element.
+
+00:04:30.980 --> 00:04:33.490
+MATT GAUNT: And most of it
+there is the one criticism
+
+00:04:33.490 --> 00:04:34.530
+I have of Polymer.
+
+00:04:34.530 --> 00:04:37.880
+I like the notions of being able
+to pull in some component just
+
+00:04:37.880 --> 00:04:39.050
+using my page.
+
+00:04:39.050 --> 00:04:41.580
+It's all the stuff around it.
+
+00:04:41.580 --> 00:04:43.080
+You have to add to
+your [? bower, ?]
+
+00:04:43.080 --> 00:04:45.980
+you have to add it to the
+actual HTML of your page,
+
+00:04:45.980 --> 00:04:48.450
+and you've got to add
+in the HTML import.
+
+00:04:48.450 --> 00:04:51.290
+And it's just like those steps
+are a point where I'm like,
+
+00:04:51.290 --> 00:04:54.320
+I just want this thing to exist,
+can you just make magic happen?
+
+00:04:54.320 --> 00:04:57.770
+So anything that simplifies
+that, I think is really nice.
+
+00:04:57.770 --> 00:05:00.639
+ADDY OSMANI: If only you had
+a friend slash colleague that
+
+00:05:00.639 --> 00:05:02.430
+wrote something, a
+Polymer starter kit that
+
+00:05:02.430 --> 00:05:05.910
+can potentially help you there.
+
+00:05:05.910 --> 00:05:07.434
+MATT GAUNT: I see
+what you've done.
+
+00:05:07.434 --> 00:05:09.350
+ADDY OSMANI: For people
+using other libraries,
+
+00:05:09.350 --> 00:05:10.790
+and there's a ton of
+other libraries out there,
+
+00:05:10.790 --> 00:05:12.800
+there's things like
+Frameworks, like Ember,
+
+00:05:12.800 --> 00:05:15.730
+things like Angular,
+Angular 2, and so on, React.
+
+00:05:15.730 --> 00:05:18.502
+Yeah, there's actually a
+really good set of packages
+
+00:05:18.502 --> 00:05:20.210
+that you can check
+out for those as well.
+
+00:05:20.210 --> 00:05:21.970
+The React one is, I
+think, pretty popular.
+
+00:05:21.970 --> 00:05:26.290
+It works well with
+Babel, so check them out.
+
+00:05:26.290 --> 00:05:27.790
+MATT GAUNT: So the
+next time there's
+
+00:05:27.790 --> 00:05:29.565
+a new hot framework
+on the side, there
+
+00:05:29.565 --> 00:05:33.170
+will just be a brand new package
+for snippets and then, boom!
+
+00:05:33.170 --> 00:05:34.070
+ADDY OSMANI: Yes?
+
+00:05:34.070 --> 00:05:37.120
+[MUSIC PLAYING]
+

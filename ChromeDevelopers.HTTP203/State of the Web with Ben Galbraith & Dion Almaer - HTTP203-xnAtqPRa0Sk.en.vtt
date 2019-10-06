@@ -1,0 +1,1354 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:00.930
+BEN GALBRAITH: I
+think you're taking
+
+00:00:00.930 --> 00:00:03.300
+sort of intense literal
+logic and applying it
+
+00:00:03.300 --> 00:00:05.310
+to a colloquial situation
+that has everything
+
+00:00:05.310 --> 00:00:08.250
+to do with tradition and nothing
+to do with literal truth,
+
+00:00:08.250 --> 00:00:09.010
+right?
+
+00:00:09.010 --> 00:00:12.930
+[MUSIC PLAYING]
+
+00:00:15.390 --> 00:00:16.755
+SURMA: Who are you and why?
+
+00:00:16.755 --> 00:00:17.505
+DION ALMAER: Nice.
+
+00:00:17.505 --> 00:00:18.767
+Do you want to go first?
+
+00:00:18.767 --> 00:00:19.250
+BEN GALBRAITH: I'd
+rather you did.
+
+00:00:19.250 --> 00:00:20.910
+DION ALMAER: Oh, thank you.
+
+00:00:20.910 --> 00:00:22.440
+My name is Dion Almaer.
+
+00:00:22.440 --> 00:00:24.340
+The "why" is an interesting one.
+
+00:00:24.340 --> 00:00:26.790
+So I've worked with this
+guy for a long time, lots
+
+00:00:26.790 --> 00:00:28.650
+of different companies.
+
+00:00:28.650 --> 00:00:30.929
+Way back in the day, we did
+this thing called Ajaxian.
+
+00:00:30.929 --> 00:00:32.220
+There's this thing called Ajax.
+
+00:00:32.220 --> 00:00:33.954
+You are too young to know it.
+
+00:00:33.954 --> 00:00:34.870
+JAKE: I remember Ajax.
+
+00:00:34.870 --> 00:00:35.760
+[LAUGHTER]
+
+00:00:35.760 --> 00:00:38.730
+I am not young enough.
+
+00:00:38.730 --> 00:00:40.230
+DION ALMAER: And
+that was really fun
+
+00:00:40.230 --> 00:00:41.940
+to kind of see the
+web kind of come back
+
+00:00:41.940 --> 00:00:44.280
+and go from docs to
+apps and the like.
+
+00:00:44.280 --> 00:00:47.300
+So I've been living in
+the web for a long time.
+
+00:00:47.300 --> 00:00:49.000
+Used to be at Google.
+
+00:00:49.000 --> 00:00:51.100
+I'm now back at
+Google, running DevRel
+
+00:00:51.100 --> 00:00:54.880
+for a few different
+teams across the web--
+
+00:00:54.880 --> 00:00:56.945
+Android Assistant
+and other things.
+
+00:00:56.945 --> 00:00:57.570
+What about you?
+
+00:00:57.570 --> 00:00:58.403
+BEN GALBRAITH: Yeah.
+
+00:00:58.403 --> 00:01:00.310
+So I'm Ben Galbraith.
+
+00:01:00.310 --> 00:01:02.180
+I am on the Chrome team.
+
+00:01:02.180 --> 00:01:04.590
+I lead product for the folks
+who are working on the web
+
+00:01:04.590 --> 00:01:06.330
+platforms, so the
+folks who are thinking
+
+00:01:06.330 --> 00:01:10.680
+about how the web works on
+your web page and things.
+
+00:01:10.680 --> 00:01:13.161
+JAKE: We've been doing these
+interview things all day.
+
+00:01:13.161 --> 00:01:14.910
+SURMA: We've never
+done interviews before.
+
+00:01:14.910 --> 00:01:16.380
+JAKE: Yeah, and we
+missed your talk.
+
+00:01:16.380 --> 00:01:17.820
+BEN GALBRAITH: So
+we open the talk
+
+00:01:17.820 --> 00:01:22.260
+just by showing that
+PWAs are everywhere.
+
+00:01:22.260 --> 00:01:25.620
+And PWAs-- it's fair to
+ask what the heck that is.
+
+00:01:25.620 --> 00:01:28.500
+Basically, the web has
+been evolving dramatically
+
+00:01:28.500 --> 00:01:29.890
+over the past few years.
+
+00:01:29.890 --> 00:01:31.969
+And it's been getting a
+ton of new capabilities.
+
+00:01:31.969 --> 00:01:33.510
+And it's a whole
+new platform than it
+
+00:01:33.510 --> 00:01:35.430
+used to be just four
+or five years ago.
+
+00:01:35.430 --> 00:01:37.810
+And so we shared a lot
+of data around this.
+
+00:01:37.810 --> 00:01:39.250
+And there's two categories.
+
+00:01:39.250 --> 00:01:41.724
+One is what's actually
+changed about the web.
+
+00:01:41.724 --> 00:01:43.140
+And the other is
+what happens when
+
+00:01:43.140 --> 00:01:44.910
+people take advantage of
+the new capabilities that
+
+00:01:44.910 --> 00:01:45.560
+are on the web.
+
+00:01:45.560 --> 00:01:47.280
+And we shared a bunch
+of case studies.
+
+00:01:47.280 --> 00:01:49.350
+Getting to the capability
+side, the big one
+
+00:01:49.350 --> 00:01:51.240
+is this thing called
+Service Worker, which--
+
+00:01:51.240 --> 00:01:52.520
+JAKE: I've heard of it.
+
+00:01:52.520 --> 00:01:53.040
+BEN GALBRAITH: Have you?
+
+00:01:53.040 --> 00:01:53.560
+JAKE: Go on.
+
+00:01:53.560 --> 00:01:53.840
+BEN GALBRAITH: Have you?
+
+00:01:53.840 --> 00:01:54.420
+[LAUGHTER]
+
+00:01:54.420 --> 00:01:56.969
+Let me explain it to you
+in very simple terms--
+
+00:01:56.969 --> 00:01:57.510
+JAKE: Oh, OK.
+
+00:01:57.510 --> 00:01:59.310
+BEN GALBRAITH: So that
+you can understand.
+
+00:01:59.310 --> 00:02:00.685
+But it's like
+forever, everyone's
+
+00:02:00.685 --> 00:02:03.920
+understood the web is pages,
+pages that the browser requests
+
+00:02:03.920 --> 00:02:05.020
+and renders.
+
+00:02:05.020 --> 00:02:08.370
+And Service Worker is the
+first major new primitive
+
+00:02:08.370 --> 00:02:10.199
+on the web that
+changes the game.
+
+00:02:10.199 --> 00:02:12.150
+Because with Service
+Worker, you now
+
+00:02:12.150 --> 00:02:14.110
+have this code that's
+resident in the browser.
+
+00:02:14.110 --> 00:02:16.568
+It can receive events from the
+site, even when the user has
+
+00:02:16.568 --> 00:02:17.246
+left the page.
+
+00:02:17.246 --> 00:02:18.870
+You can use it to
+override the network.
+
+00:02:18.870 --> 00:02:20.460
+I love how you guys are
+critiquing my explanation
+
+00:02:20.460 --> 00:02:21.010
+in real time.
+
+00:02:21.010 --> 00:02:22.960
+JAKE: It's actually
+really good so far.
+
+00:02:22.960 --> 00:02:24.750
+[LAUGHTER]
+
+00:02:24.750 --> 00:02:26.454
+BEN GALBRAITH: But
+yeah, it lets you
+
+00:02:26.454 --> 00:02:28.620
+as a developer take control
+of the networking stack,
+
+00:02:28.620 --> 00:02:30.070
+which seems like a--
+
+00:02:30.070 --> 00:02:31.320
+why would you want to do that?
+
+00:02:31.320 --> 00:02:33.559
+But it's super
+important, because there
+
+00:02:33.559 --> 00:02:35.100
+are a lot of people
+using the web who
+
+00:02:35.100 --> 00:02:38.267
+have intermittent connectivity
+where it just drops out
+
+00:02:38.267 --> 00:02:39.100
+or it's really slow.
+
+00:02:39.100 --> 00:02:40.740
+And so as a developer,
+you're in the driver's seat.
+
+00:02:40.740 --> 00:02:42.198
+It doesn't show
+you the dyno screen
+
+00:02:42.198 --> 00:02:43.440
+if there a there's a problem.
+
+00:02:43.440 --> 00:02:45.600
+You can create these
+really smooth experiences.
+
+00:02:45.600 --> 00:02:47.266
+DION ALMAER: I feel
+like this time, too,
+
+00:02:47.266 --> 00:02:49.347
+we actually talked about
+the Google properties
+
+00:02:49.347 --> 00:02:50.680
+they're actually using this for.
+
+00:02:50.680 --> 00:02:51.080
+BEN GALBRAITH: Oh, that's right.
+
+00:02:51.080 --> 00:02:51.220
+That's right.
+
+00:02:51.220 --> 00:02:52.320
+Let me wrap up Service
+Worker real quick.
+
+00:02:52.320 --> 00:02:55.020
+Because the big news is
+that it's finally in Safari.
+
+00:02:55.020 --> 00:02:57.210
+And it hasn't been
+for a long time.
+
+00:02:57.210 --> 00:02:58.590
+And it's finally in Edge.
+
+00:02:58.590 --> 00:03:00.840
+But yeah, you were talking
+about some other stuff too.
+
+00:03:00.840 --> 00:03:02.550
+DION ALMAER: Like Google
+Search actually using
+
+00:03:02.550 --> 00:03:03.210
+the Service Worker--
+
+00:03:03.210 --> 00:03:04.230
+got to talk about that today--
+
+00:03:04.230 --> 00:03:05.270
+50% less JavaScript.
+
+00:03:05.270 --> 00:03:06.810
+BEN GALBRAITH:
+Yeah, that's right.
+
+00:03:06.810 --> 00:03:07.450
+DION ALMAER: All the
+intermittent things.
+
+00:03:07.450 --> 00:03:09.540
+You can do a search,
+you're offline.
+
+00:03:09.540 --> 00:03:11.340
+When you come back
+online, do the search.
+
+00:03:11.340 --> 00:03:12.900
+Pop back-- hey, you
+want the results?
+
+00:03:12.900 --> 00:03:15.150
+BEN GALBRAITH: So we shared
+a bunch of these examples.
+
+00:03:15.150 --> 00:03:17.430
+And then we had, I think,
+some pretty exciting new stuff
+
+00:03:17.430 --> 00:03:17.930
+to share.
+
+00:03:17.930 --> 00:03:19.900
+I think stuff that's
+new for a lot of people.
+
+00:03:19.900 --> 00:03:22.210
+The problem with the web is
+that it's out in the open.
+
+00:03:22.210 --> 00:03:23.160
+So for insiders--
+
+00:03:23.160 --> 00:03:23.790
+SURMA: What a problem.
+
+00:03:23.790 --> 00:03:25.320
+BEN GALBRAITH: There's really
+not a lot of new things to say,
+
+00:03:25.320 --> 00:03:26.850
+and if there is, that's
+a problem, right?
+
+00:03:26.850 --> 00:03:28.641
+Because we don't control
+the web at Google.
+
+00:03:28.641 --> 00:03:30.655
+So we're not going to
+have this brand new thing.
+
+00:03:30.655 --> 00:03:33.030
+But we are highlighting a lot
+of the recent developments,
+
+00:03:33.030 --> 00:03:35.786
+one of which is this
+thing called desktop PWAs.
+
+00:03:35.786 --> 00:03:36.285
+SURMA: Yes.
+
+00:03:36.285 --> 00:03:37.170
+JAKE: Oh.
+
+00:03:37.170 --> 00:03:38.336
+BEN GALBRAITH: This is cool.
+
+00:03:38.336 --> 00:03:40.560
+We showed how Spotify
+is using desktop PWA.
+
+00:03:40.560 --> 00:03:44.310
+So you go to their site,
+and you can install it
+
+00:03:44.310 --> 00:03:47.130
+to your launcher, in
+this case in Chrome OS,
+
+00:03:47.130 --> 00:03:49.110
+and it gets its own
+top level window.
+
+00:03:49.110 --> 00:03:52.170
+So alt tab now
+works with websites.
+
+00:03:52.170 --> 00:03:52.940
+JAKE: Oh, so good.
+
+00:03:52.940 --> 00:03:54.481
+BEN GALBRAITH: It's
+fantastic, right?
+
+00:03:54.481 --> 00:03:57.150
+JAKE: And I'm glad we
+did that on mobile first.
+
+00:03:57.150 --> 00:03:59.382
+But it there was a
+missing piece that we
+
+00:03:59.382 --> 00:04:00.465
+couldn't do it on desktop.
+
+00:04:00.465 --> 00:04:01.620
+BEN GALBRAITH: Productivity
+on the web is a big deal.
+
+00:04:01.620 --> 00:04:03.090
+We talk about mobile,
+mobile, mobile-- and mobile's
+
+00:04:03.090 --> 00:04:03.870
+super important.
+
+00:04:03.870 --> 00:04:06.885
+But there's billions of
+people on the desktop.
+
+00:04:06.885 --> 00:04:08.340
+But the other thing
+is using a lot
+
+00:04:08.340 --> 00:04:09.810
+of these popular
+productivity apps
+
+00:04:09.810 --> 00:04:11.640
+as top level windows
+on Chrome OS.
+
+00:04:11.640 --> 00:04:12.450
+Because that's where it is now.
+
+00:04:12.450 --> 00:04:13.620
+We're bringing it
+to Windows and Mac.
+
+00:04:13.620 --> 00:04:14.880
+But it's not there yet.
+
+00:04:14.880 --> 00:04:16.769
+SURMA: I felt like
+that lots of companies
+
+00:04:16.769 --> 00:04:20.370
+doing their apps in an Electron
+shows that there was a desire
+
+00:04:20.370 --> 00:04:21.589
+to do that.
+
+00:04:21.589 --> 00:04:24.075
+To write web and
+just have it as if it
+
+00:04:24.075 --> 00:04:25.200
+wasn't all on the computer.
+
+00:04:25.200 --> 00:04:26.250
+BEN GALBRAITH: Let me
+talk to you about AutoCAD.
+
+00:04:26.250 --> 00:04:28.830
+Because AutoCAD-- they
+created a web version
+
+00:04:28.830 --> 00:04:32.070
+of their application, which
+is like kind of mind-blowing.
+
+00:04:32.070 --> 00:04:33.630
+You go to a lot of
+analyst speeches,
+
+00:04:33.630 --> 00:04:35.490
+and the intelligent analysts
+are up there going like,
+
+00:04:35.490 --> 00:04:37.198
+well, a lot of stuff's
+come into the web,
+
+00:04:37.198 --> 00:04:38.865
+but old applications
+like AutoCAD
+
+00:04:38.865 --> 00:04:40.240
+will never come
+to the web, or it
+
+00:04:40.240 --> 00:04:40.880
+will take them a really long--
+
+00:04:40.880 --> 00:04:41.450
+It's here.
+
+00:04:41.450 --> 00:04:43.230
+They actually
+shipped it in March.
+
+00:04:43.230 --> 00:04:43.950
+That's right.
+
+00:04:43.950 --> 00:04:46.020
+And I said, oh,
+AutoCAD's been innovating
+
+00:04:46.020 --> 00:04:47.150
+a ton since it's shipped.
+
+00:04:47.150 --> 00:04:48.930
+So it's actually
+pretty cutting edge.
+
+00:04:48.930 --> 00:04:51.600
+But they brought their
+C++ codebase to the web.
+
+00:04:51.600 --> 00:04:53.910
+JAKE: So it's just
+something great, right?
+
+00:04:53.910 --> 00:04:55.391
+So kind of like job done.
+
+00:04:55.391 --> 00:04:56.890
+We can relax for
+the next few years.
+
+00:04:56.890 --> 00:04:58.350
+DION ALMAER: Can I
+take the negative side?
+
+00:04:58.350 --> 00:04:58.850
+JAKE: Oh.
+
+00:04:58.850 --> 00:04:59.412
+SURMA: Oh.
+
+00:04:59.412 --> 00:05:01.370
+BEN GALBRAITH: OK, I
+think we're done here now.
+
+00:05:01.370 --> 00:05:02.700
+JAKE: Wrap it up.
+
+00:05:02.700 --> 00:05:03.600
+DION ALMAER: I think
+the interesting thing
+
+00:05:03.600 --> 00:05:04.860
+about the state of
+the web, like they're
+
+00:05:04.860 --> 00:05:07.160
+talking about, like
+everything that's going on,
+
+00:05:07.160 --> 00:05:08.010
+all the good things.
+
+00:05:08.010 --> 00:05:12.660
+But that's not the entire
+web that you actually
+
+00:05:12.660 --> 00:05:13.810
+experience every day.
+
+00:05:13.810 --> 00:05:15.476
+And we want to keep
+adding capabilities,
+
+00:05:15.476 --> 00:05:18.030
+and we want to keep bringing
+Electron back to the web,
+
+00:05:18.030 --> 00:05:20.240
+and Cordova back to the
+web, and all these things.
+
+00:05:20.240 --> 00:05:20.960
+How do we get--
+
+00:05:20.960 --> 00:05:21.590
+SURMA: The long tail.
+
+00:05:21.590 --> 00:05:22.800
+DION ALMAER: --all of
+the long tail in there.
+
+00:05:22.800 --> 00:05:24.216
+And that's why we
+do a lot of work
+
+00:05:24.216 --> 00:05:27.200
+with the Wordpresses and
+all these different CMSs.
+
+00:05:27.200 --> 00:05:29.100
+How can we effect
+that long tail?
+
+00:05:29.100 --> 00:05:31.183
+SURMA: Yeah, what does the
+new capabilities matter
+
+00:05:31.183 --> 00:05:32.309
+if nobody uses them, right?
+
+00:05:32.309 --> 00:05:33.724
+DION ALMAER: And
+I feel like we're
+
+00:05:33.724 --> 00:05:35.290
+kind of unlocking
+both at the moment.
+
+00:05:35.290 --> 00:05:36.640
+BEN GALBRAITH: That's
+where AMP comes in, too.
+
+00:05:36.640 --> 00:05:39.050
+Because a lot of the keynote
+was talking about AMP
+
+00:05:39.050 --> 00:05:41.940
+because the web platform
+has a ton of capabilities.
+
+00:05:41.940 --> 00:05:43.820
+But it's also become
+a little complex.
+
+00:05:43.820 --> 00:05:46.070
+I mean, I don't know
+if you've noticed.
+
+00:05:46.070 --> 00:05:47.210
+SURMA: You don't say.
+
+00:05:47.210 --> 00:05:48.690
+BEN GALBRAITH: It can be hard
+to figure out how to do it.
+
+00:05:48.690 --> 00:05:50.600
+And so AMP is all
+about how can we
+
+00:05:50.600 --> 00:05:54.860
+make the web really easy for
+a set of really targeted use
+
+00:05:54.860 --> 00:05:57.350
+cases with an
+opinionated approach?
+
+00:05:57.350 --> 00:05:59.630
+And it's been maybe a
+little controversial.
+
+00:05:59.630 --> 00:06:01.342
+And this year, we did
+a couple of things
+
+00:06:01.342 --> 00:06:02.300
+that I'm excited about.
+
+00:06:02.300 --> 00:06:05.180
+One is that we announced
+that we're fixing
+
+00:06:05.180 --> 00:06:06.560
+the problem with AMP URLs.
+
+00:06:06.560 --> 00:06:08.440
+And if you don't know
+what that issue is--
+
+00:06:08.440 --> 00:06:09.437
+JAKE: I can guess.
+
+00:06:09.437 --> 00:06:11.270
+BEN GALBRAITH: It's
+this double-edged sword,
+
+00:06:11.270 --> 00:06:13.010
+where AMP does this
+cool thing, where
+
+00:06:13.010 --> 00:06:16.967
+it hosts content on this server
+that optimizes it and shrinks
+
+00:06:16.967 --> 00:06:18.050
+images and all this stuff.
+
+00:06:18.050 --> 00:06:20.377
+But it's hosted on that server.
+
+00:06:20.377 --> 00:06:22.460
+SURMA: I always understood
+why they were doing it.
+
+00:06:22.460 --> 00:06:26.016
+But still the artifact
+of the URL was just--
+
+00:06:26.016 --> 00:06:27.140
+BEN GALBRAITH: So annoying.
+
+00:06:27.140 --> 00:06:28.220
+And it's annoying to everybody.
+
+00:06:28.220 --> 00:06:29.440
+Some people look at
+the URL, and they
+
+00:06:29.440 --> 00:06:32.120
+think we're trying to move the
+whole internet onto our origin,
+
+00:06:32.120 --> 00:06:34.539
+onto our domain, which is
+not at all what we want.
+
+00:06:34.539 --> 00:06:36.080
+So there's this new
+emerging standard
+
+00:06:36.080 --> 00:06:38.670
+called web packaging,
+which on itself could be
+
+00:06:38.670 --> 00:06:39.920
+the subject of a conversation.
+
+00:06:39.920 --> 00:06:41.400
+I'm super excited about it.
+
+00:06:41.400 --> 00:06:43.430
+But from a high
+level, what it does--
+
+00:06:43.430 --> 00:06:45.500
+it lets you, as a
+developer, take your site
+
+00:06:45.500 --> 00:06:48.379
+and effectively wrap it in a
+secure envelope and just say--
+
+00:06:48.379 --> 00:06:49.670
+SURMA: You might say a package.
+
+00:06:49.670 --> 00:06:50.753
+BEN GALBRAITH: A package--
+
+00:06:50.753 --> 00:06:52.010
+maybe a better metaphor.
+
+00:06:52.010 --> 00:06:53.970
+And it doesn't matter
+where it comes from.
+
+00:06:53.970 --> 00:06:56.560
+It's advertised as though
+it came from your origin.
+
+00:06:56.560 --> 00:06:57.560
+And so you can imagine--
+
+00:06:57.560 --> 00:06:57.602
+SURMA: Right.
+
+00:06:57.602 --> 00:06:57.710
+It's the magic of certificates.
+
+00:06:57.710 --> 00:06:58.860
+BEN GALBRAITH: --a
+browser of the future
+
+00:06:58.860 --> 00:07:00.530
+that's more like peer-to-peer.
+
+00:07:00.530 --> 00:07:02.946
+So if you're in this area where
+you can't actually get to,
+
+00:07:02.946 --> 00:07:05.367
+let's say, "The New York
+Times," if any peer has
+
+00:07:05.367 --> 00:07:07.700
+a version of "The New York
+Times," that's fairly recent,
+
+00:07:07.700 --> 00:07:09.140
+you can get it
+from them, creating
+
+00:07:09.140 --> 00:07:10.580
+this really
+decentralized networking
+
+00:07:10.580 --> 00:07:12.350
+thing which is at the heart
+of the original spirit
+
+00:07:12.350 --> 00:07:13.016
+of the internet.
+
+00:07:13.016 --> 00:07:14.990
+Anyway, so AMP's able
+to use web packaging.
+
+00:07:14.990 --> 00:07:16.827
+And it's an emerging
+standard, we'll see.
+
+00:07:16.827 --> 00:07:18.410
+The other thing that
+I'm excited about
+
+00:07:18.410 --> 00:07:21.890
+is that we've announced that
+AMP is embracing web standards
+
+00:07:21.890 --> 00:07:24.170
+and things like the Chrome
+User Experience Report
+
+00:07:24.170 --> 00:07:27.680
+so that we'll be able to use the
+actual performance of web pages
+
+00:07:27.680 --> 00:07:29.402
+to decide whether
+or not they're fast.
+
+00:07:29.402 --> 00:07:31.610
+JAKE: So that's what gives
+it the little icon, right?
+
+00:07:31.610 --> 00:07:34.700
+BEN GALBRAITH: Today you see
+that icon if something's AMP.
+
+00:07:34.700 --> 00:07:36.914
+And moving forward,
+we've shared our intent
+
+00:07:36.914 --> 00:07:39.080
+to use things like the
+Chrome User Experience Report
+
+00:07:39.080 --> 00:07:41.729
+and other things as
+the canonical indicator
+
+00:07:41.729 --> 00:07:44.270
+for whether or not something is
+going to perform really well.
+
+00:07:44.270 --> 00:07:45.660
+DION ALMAER: We always saw
+that performance with AMP,
+
+00:07:45.660 --> 00:07:48.120
+but there's the privacy
+preservation piece that it has,
+
+00:07:48.120 --> 00:07:48.400
+too.
+
+00:07:48.400 --> 00:07:49.250
+BEN GALBRAITH:
+Yeah, that's right.
+
+00:07:49.250 --> 00:07:51.166
+DION ALMAER: If I go in,
+I'm in an aggregator.
+
+00:07:51.166 --> 00:07:54.410
+If I prefetch or start pinging
+over to this other server, then
+
+00:07:54.410 --> 00:07:57.830
+all of a sudden Dion the
+user can be on the search
+
+00:07:57.830 --> 00:08:00.050
+and JakeArchibald.com
+knows something
+
+00:08:00.050 --> 00:08:01.370
+and has set a cookie on me.
+
+00:08:01.370 --> 00:08:02.690
+And that's kind of weird.
+
+00:08:02.690 --> 00:08:04.210
+JAKE: Without you ever
+clicking on that link.
+
+00:08:04.210 --> 00:08:04.850
+DION ALMAER: Without
+me ever knowing.
+
+00:08:04.850 --> 00:08:05.880
+Yeah, exactly.
+
+00:08:05.880 --> 00:08:09.140
+So by having it somewhere
+else on Google servers,
+
+00:08:09.140 --> 00:08:11.940
+or whatever AMP cache
+it's on, we can hide that.
+
+00:08:11.940 --> 00:08:15.180
+And now with Web Packaging,
+it's baked into the platform.
+
+00:08:15.180 --> 00:08:16.700
+So that's really
+exciting, I think.
+
+00:08:16.700 --> 00:08:17.960
+JAKE: So what do you
+think the web needs
+
+00:08:17.960 --> 00:08:19.880
+to do within the next
+10 years to survive?
+
+00:08:19.880 --> 00:08:21.755
+DION ALMAER: I mean,
+there's the foundations,
+
+00:08:21.755 --> 00:08:23.960
+and there's the real
+future future self, right?
+
+00:08:23.960 --> 00:08:28.330
+Foundationally, we just need
+to fix the performance problem
+
+00:08:28.330 --> 00:08:32.690
+on the web, just focus in on
+getting people using the web.
+
+00:08:32.690 --> 00:08:35.674
+BEN GALBRAITH: I mean, the web
+is this fantastic treasure.
+
+00:08:35.674 --> 00:08:38.090
+I feel like if you look at it,
+what do we have in the web?
+
+00:08:38.090 --> 00:08:42.260
+We have this open ecosystem
+where the standards can
+
+00:08:42.260 --> 00:08:43.820
+be implemented on any platform.
+
+00:08:43.820 --> 00:08:45.070
+Think about that for a second.
+
+00:08:45.070 --> 00:08:47.660
+Because most other platforms
+use their ecosystem
+
+00:08:47.660 --> 00:08:49.850
+as a walled garden
+to block other people
+
+00:08:49.850 --> 00:08:52.460
+and to chain people
+in that ecosystem.
+
+00:08:52.460 --> 00:08:54.200
+The web is totally open.
+
+00:08:54.200 --> 00:08:56.000
+We've got this
+inherent index ability
+
+00:08:56.000 --> 00:08:57.583
+so you can go through
+and discover it.
+
+00:08:57.583 --> 00:09:00.350
+You don't have a single
+gatekeeper or toll collector.
+
+00:09:00.350 --> 00:09:02.570
+These are just fantastic
+attributes of the web.
+
+00:09:02.570 --> 00:09:05.370
+SURMA: One of my first talk as a
+Googler is I was using a slide,
+
+00:09:05.370 --> 00:09:08.510
+but I opened a website
+on a Nintendo DS.
+
+00:09:08.510 --> 00:09:11.160
+I was like, that's really a
+unique feature of a platform
+
+00:09:11.160 --> 00:09:14.190
+that can write a website, and
+suddenly it is in your car
+
+00:09:14.190 --> 00:09:16.256
+or on your phone
+on a Nintendo DS.
+
+00:09:16.256 --> 00:09:17.630
+BEN GALBRAITH:
+But I think, Jake,
+
+00:09:17.630 --> 00:09:20.747
+the web is worth
+having in society.
+
+00:09:20.747 --> 00:09:21.330
+JAKE: I agree.
+
+00:09:21.330 --> 00:09:22.827
+SURMA: That's an understatement.
+
+00:09:22.827 --> 00:09:24.410
+BEN GALBRAITH: But
+I think when you're
+
+00:09:24.410 --> 00:09:26.493
+talking about 10 years,
+what I'm really focused on
+
+00:09:26.493 --> 00:09:30.230
+is how can we make sure that the
+web remains the platform where
+
+00:09:30.230 --> 00:09:33.072
+developers can bring
+their best experiences?
+
+00:09:33.072 --> 00:09:35.280
+Because I think there's a
+lot of competing platforms.
+
+00:09:35.280 --> 00:09:37.310
+Some of them can do a
+better job at animations
+
+00:09:37.310 --> 00:09:38.930
+and visual effects on the web--
+
+00:09:38.930 --> 00:09:39.770
+maybe.
+
+00:09:39.770 --> 00:09:40.850
+I don't know if that's
+a fair statement.
+
+00:09:40.850 --> 00:09:42.474
+DION ALMAER: But not
+10 years from now.
+
+00:09:42.474 --> 00:09:44.000
+[LAUGHTER]
+
+00:09:44.000 --> 00:09:45.390
+JAKE: Two years from now.
+
+00:09:45.390 --> 00:09:46.437
+SURMA: One year from now?
+
+00:09:46.437 --> 00:09:48.770
+BEN GALBRAITH: So we've got
+to make sure developers have
+
+00:09:48.770 --> 00:09:50.420
+the capabilities they need.
+
+00:09:50.420 --> 00:09:53.030
+We've got to make sure that
+users actually prefer the web.
+
+00:09:53.030 --> 00:09:54.696
+And we've got to make
+sure that browsers
+
+00:09:54.696 --> 00:09:56.164
+are where computing is moving.
+
+00:09:56.164 --> 00:09:58.580
+And when you think about that
+frame, we have a lot of work
+
+00:09:58.580 --> 00:09:59.220
+to do.
+
+00:09:59.220 --> 00:10:01.230
+I feel like developers--
+we've got to do a lot.
+
+00:10:01.230 --> 00:10:03.786
+Houdini is one of my
+favorite projects.
+
+00:10:03.786 --> 00:10:05.160
+JAKE: The second
+Service Workers.
+
+00:10:05.160 --> 00:10:05.880
+[LAUGHTER]
+
+00:10:05.880 --> 00:10:07.880
+BEN GALBRAITH: There's a lot of
+additional stuff we need to do.
+
+00:10:07.880 --> 00:10:09.296
+So when you talk
+about 10 years, I
+
+00:10:09.296 --> 00:10:10.970
+want to see the
+web platform evolve
+
+00:10:10.970 --> 00:10:12.256
+to have more capabilities.
+
+00:10:12.256 --> 00:10:14.130
+I don't want to see us
+chasing that platform.
+
+00:10:14.130 --> 00:10:16.005
+So I don't want to see
+us advertising the web
+
+00:10:16.005 --> 00:10:18.390
+as it's almost as
+good as this platform.
+
+00:10:18.390 --> 00:10:20.560
+You should develop websites
+that are like apps.
+
+00:10:20.560 --> 00:10:22.227
+That maybe is a
+controversial statement.
+
+00:10:22.227 --> 00:10:23.601
+You were going to
+say the web has
+
+00:10:23.601 --> 00:10:24.970
+its own unique flavors, right?
+
+00:10:24.970 --> 00:10:27.820
+SURMA: It has its own unique
+capabilities and use cases,
+
+00:10:27.820 --> 00:10:28.420
+where--
+
+00:10:28.420 --> 00:10:28.930
+BEN GALBRAITH: That's right.
+
+00:10:28.930 --> 00:10:30.130
+SURMA: Like, there is
+still use where I say,
+
+00:10:30.130 --> 00:10:31.890
+no, that's a use case
+for a native platform.
+
+00:10:31.890 --> 00:10:34.000
+That's not something you
+want to solve on the web.
+
+00:10:34.000 --> 00:10:34.730
+BEN GALBRAITH: I
+couldn't agree more.
+
+00:10:34.730 --> 00:10:36.850
+I think if what you as a
+developer want to build
+
+00:10:36.850 --> 00:10:38.224
+is something that
+feels like it's
+
+00:10:38.224 --> 00:10:40.830
+an extension of some
+specific operating system,
+
+00:10:40.830 --> 00:10:41.595
+it's a native app.
+
+00:10:41.595 --> 00:10:43.720
+And you'd be kind of crazy
+to use the web for that.
+
+00:10:43.720 --> 00:10:45.910
+But if you want to engage
+with the most users
+
+00:10:45.910 --> 00:10:47.950
+you can, if you want
+to do it in a way that
+
+00:10:47.950 --> 00:10:50.200
+gives the user the best
+experience in terms
+
+00:10:50.200 --> 00:10:52.720
+of getting something done and
+being able to have sessions
+
+00:10:52.720 --> 00:10:55.566
+that span devices and things
+like that, that's the web.
+
+00:10:55.566 --> 00:10:57.190
+That's what the web
+should be good for.
+
+00:10:57.190 --> 00:11:00.190
+JAKE: Someone came up to me and
+asked me for a selfie before.
+
+00:11:00.190 --> 00:11:02.780
+I was over the moon.
+
+00:11:02.780 --> 00:11:05.005
+But then he said, thank
+you very much for Facebook.
+
+00:11:05.005 --> 00:11:07.006
+He thought I was
+Mark Zuckerberg.
+
+00:11:07.006 --> 00:11:08.506
+DION ALMAER: I think
+it is the blue.
+
+00:11:08.506 --> 00:11:09.360
+BEN GALBRAITH: It's the blue.
+
+00:11:09.360 --> 00:11:10.110
+JAKE: It says, JS.
+
+00:11:10.110 --> 00:11:10.990
+What?
+
+00:11:10.990 --> 00:11:13.350
+SURMA: It's probably
+also the face.
+

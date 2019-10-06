@@ -1,0 +1,346 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.290
+[MUSIC PLAYING]
+
+00:00:05.040 --> 00:00:09.920
+Chrome 49 adds support
+for CSS custom properties,
+
+00:00:09.920 --> 00:00:13.160
+sometimes referred
+to as CSS variables.
+
+00:00:13.160 --> 00:00:17.230
+Background sync makes it
+easy to reliably send data
+
+00:00:17.230 --> 00:00:20.570
+to the server, even if
+the user leaves the page,
+
+00:00:20.570 --> 00:00:24.490
+closes the browser, or loses
+their network connection.
+
+00:00:24.490 --> 00:00:28.530
+And the new save data
+client hint header
+
+00:00:28.530 --> 00:00:32.500
+enables you to deliver
+fast and light applications
+
+00:00:32.500 --> 00:00:35.040
+to users who want them.
+
+00:00:35.040 --> 00:00:37.270
+These are just some
+of the new features
+
+00:00:37.270 --> 00:00:39.740
+for developers in Chrome 49.
+
+00:00:39.740 --> 00:00:42.630
+Let's dive in and see
+what's new in Chrome.
+
+00:00:42.630 --> 00:00:47.750
+Every site has CSS files filled
+with repeated values-- colors,
+
+00:00:47.750 --> 00:00:50.480
+margins, padding, et cetera.
+
+00:00:50.480 --> 00:00:54.480
+Repeating these values over
+and over again in your CSS
+
+00:00:54.480 --> 00:00:58.330
+is not only a chore, but
+it's also error prone.
+
+00:00:58.330 --> 00:01:01.920
+If, at some point, one of those
+values needs to be changed,
+
+00:01:01.920 --> 00:01:05.160
+your best option is
+probably to find and replace
+
+00:01:05.160 --> 00:01:06.720
+all the things.
+
+00:01:06.720 --> 00:01:11.720
+But on a project that's large
+enough, this is dangerous.
+
+00:01:11.720 --> 00:01:16.070
+Chrome now supports CSS custom
+properties, sometimes referred
+
+00:01:16.070 --> 00:01:18.550
+to as CSS variables,
+allowing you
+
+00:01:18.550 --> 00:01:24.730
+to define property values in
+the CSS without a preprocessor.
+
+00:01:24.730 --> 00:01:27.630
+Once defined, you can
+use the var function
+
+00:01:27.630 --> 00:01:30.240
+to reference these custom
+properties anywhere
+
+00:01:30.240 --> 00:01:31.790
+in the document.
+
+00:01:31.790 --> 00:01:35.300
+One of the more powerful
+features of custom properties
+
+00:01:35.300 --> 00:01:39.900
+is the ability to define or
+change them wherever you want.
+
+00:01:39.900 --> 00:01:43.940
+For example, you could define
+a variable in a media query,
+
+00:01:43.940 --> 00:01:46.860
+or use JavaScript to change it.
+
+00:01:46.860 --> 00:01:50.170
+You simply can't do that
+with a preprocessor.
+
+00:01:50.170 --> 00:01:54.310
+While CSS custom properties
+just landed in Chrome 49,
+
+00:01:54.310 --> 00:01:57.770
+it's already available
+in Firefox 42,
+
+00:01:57.770 --> 00:02:01.210
+Safari 9.1, iOS Safari 9.3.
+
+00:02:01.210 --> 00:02:02.860
+So check it out.
+
+00:02:02.860 --> 00:02:05.000
+One of the cool features
+of service workers
+
+00:02:05.000 --> 00:02:09.770
+is the ability to cache pages,
+ensuring that your page loads
+
+00:02:09.770 --> 00:02:14.460
+fast, even on slow or
+nonexistent networks.
+
+00:02:14.460 --> 00:02:17.500
+But what about the case where
+you need to send something
+
+00:02:17.500 --> 00:02:19.100
+to the server?
+
+00:02:19.100 --> 00:02:21.750
+In the past, we'd
+probably use on
+
+00:02:21.750 --> 00:02:25.320
+before unload to prevent the
+user from leaving the page
+
+00:02:25.320 --> 00:02:27.600
+before we finished the send.
+
+00:02:27.600 --> 00:02:30.500
+And if there was no network
+connection, hopefully
+
+00:02:30.500 --> 00:02:32.110
+we'd fail gracefully.
+
+00:02:32.110 --> 00:02:34.740
+But graceful is hard.
+
+00:02:34.740 --> 00:02:39.380
+The new background sync API
+improves network reliability
+
+00:02:39.380 --> 00:02:41.840
+by allowing service
+workers to schedule
+
+00:02:41.840 --> 00:02:44.950
+a one-off sync of the
+user's local changes
+
+00:02:44.950 --> 00:02:48.300
+when the device next
+connects to the network,
+
+00:02:48.300 --> 00:02:51.050
+even if the page isn't open.
+
+00:02:51.050 --> 00:02:55.330
+To use background sync, we need
+to add a sync event listener
+
+00:02:55.330 --> 00:02:58.710
+to our service worker
+that calls a sync method.
+
+00:02:58.710 --> 00:03:01.610
+Our sync method should
+then return a promise
+
+00:03:01.610 --> 00:03:04.340
+indicating success or failure.
+
+00:03:04.340 --> 00:03:07.090
+If it fulfills, the
+sync is complete.
+
+00:03:07.090 --> 00:03:09.590
+But if it fails,
+the browser will
+
+00:03:09.590 --> 00:03:14.380
+try again later until it
+successfully sends the data.
+
+00:03:14.380 --> 00:03:18.000
+Then, to request a sync,
+we grab the service workers
+
+00:03:18.000 --> 00:03:21.880
+registration in our
+app and request a sync.
+
+00:03:21.880 --> 00:03:24.150
+Check out this article
+for more details,
+
+00:03:24.150 --> 00:03:29.800
+and try out [? Emojoy, ?] a
+simple emoji-only chat thing.
+
+00:03:29.800 --> 00:03:32.370
+Every day, hundreds
+of millions of users
+
+00:03:32.370 --> 00:03:36.550
+rely on proxy browsers and
+various transcoding services
+
+00:03:36.550 --> 00:03:40.380
+to access the web and reduce
+their bandwidth, enabling
+
+00:03:40.380 --> 00:03:43.590
+a faster browser experience.
+
+00:03:43.590 --> 00:03:46.920
+But the popularity of proxy
+browsers and transcoding
+
+00:03:46.920 --> 00:03:51.270
+services is an indicator that
+we are ignoring the high user
+
+00:03:51.270 --> 00:03:56.090
+demand for fast and light
+applications and pages.
+
+00:03:56.090 --> 00:04:00.170
+The new save data client
+hint request header,
+
+00:04:00.170 --> 00:04:04.100
+available in Chrome,
+Opera, and Yandex browsers,
+
+00:04:04.100 --> 00:04:08.210
+enables us to deliver fast
+and light applications
+
+00:04:08.210 --> 00:04:11.720
+to users who have opted
+in to data savings
+
+00:04:11.720 --> 00:04:14.450
+mode in their browser.
+
+00:04:14.450 --> 00:04:16.959
+By identifying this
+request header,
+
+00:04:16.959 --> 00:04:20.420
+your app should respond
+with a lighter version.
+
+00:04:20.420 --> 00:04:23.830
+For example, reduce the
+number of image bytes
+
+00:04:23.830 --> 00:04:28.140
+sent by sending fewer images,
+or using higher compression
+
+00:04:28.140 --> 00:04:29.400
+ratios.
+
+00:04:29.400 --> 00:04:34.350
+Or, switch to on-demand
+loading of expensive content.
+
+00:04:34.350 --> 00:04:38.010
+These are just a few of the
+new features in Chrome 49
+
+00:04:38.010 --> 00:04:39.270
+for developers.
+
+00:04:39.270 --> 00:04:41.560
+Be sure to check out
+the description below
+
+00:04:41.560 --> 00:04:44.370
+to get links to more
+details, and learn about some
+
+00:04:44.370 --> 00:04:45.781
+of the other new features.
+
+00:04:45.781 --> 00:04:46.280
+If
+
+00:04:46.280 --> 00:04:49.410
+You haven't already, subscribe
+to our Chrome Developers
+
+00:04:49.410 --> 00:04:53.490
+YouTube channel to stay up
+to date with the latest news.
+
+00:04:53.490 --> 00:04:57.300
+I'm Pete LePage, and as soon
+as Chrome 50 is released,
+
+00:04:57.300 --> 00:05:00.180
+I'll be right here to tell
+you what's new in Chrome.
+
+00:05:00.180 --> 00:05:02.930
+[MUSIC PLAYING]
+

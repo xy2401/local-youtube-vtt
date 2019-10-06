@@ -1,0 +1,529 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.192 --> 00:00:01.400
+JAKE ARCHIBALD: I'm so tired.
+
+00:00:01.400 --> 00:00:02.100
+PAUL LEWIS: Really?
+
+00:00:02.100 --> 00:00:02.975
+Why are you so tired?
+
+00:00:02.975 --> 00:00:03.710
+Well, I--
+
+00:00:03.710 --> 00:00:05.000
+JAKE ARCHIBALD: I wonder why.
+
+00:00:05.000 --> 00:00:07.250
+Could it have been
+the 11 hour flight?
+
+00:00:07.250 --> 00:00:07.800
+Maybe.
+
+00:00:07.800 --> 00:00:09.728
+Yeah, it could have been that.
+
+00:00:09.728 --> 00:00:12.218
+[MUSIC PLAYING]
+
+00:00:17.013 --> 00:00:19.092
+PAUL LEWIS: What are you doing?
+
+00:00:19.092 --> 00:00:20.800
+JAKE ARCHIBALD: I got
+myself a Diet Coke.
+
+00:00:20.800 --> 00:00:22.670
+And it was a wrong move.
+
+00:00:22.670 --> 00:00:23.970
+I need to convert this.
+
+00:00:23.970 --> 00:00:24.662
+I've got, like--
+
+00:00:24.662 --> 00:00:26.120
+PAUL LEWIS: You've
+got the jitters?
+
+00:00:26.120 --> 00:00:26.820
+JAKE ARCHIBALD:
+I've got flying--
+
+00:00:26.820 --> 00:00:27.830
+PAUL LEWIS: Adding
+sugar to the jitters
+
+00:00:27.830 --> 00:00:29.582
+is not necessarily going to--
+
+00:00:29.582 --> 00:00:31.209
+JAKE ARCHIBALD: This
+is going to be OK.
+
+00:00:31.209 --> 00:00:35.630
+Oh, you know, it's
+actually really nice.
+
+00:00:35.630 --> 00:00:38.026
+PAUL LEWIS: Anyway, we
+should talk about the web.
+
+00:00:38.026 --> 00:00:38.900
+JAKE ARCHIBALD: Yeah.
+
+00:00:38.900 --> 00:00:45.240
+OK, so I was upset by something
+that happened a few months ago.
+
+00:00:45.240 --> 00:00:46.454
+Do you remember when--
+
+00:00:46.454 --> 00:00:48.620
+PAUL LEWIS: Did it result
+in an argument on Twitter?
+
+00:00:48.620 --> 00:00:50.900
+JAKE ARCHIBALD: No, I
+actually kept this to myself.
+
+00:00:50.900 --> 00:00:54.530
+I just got sad inside of
+myself, and I held it in.
+
+00:00:54.530 --> 00:00:56.059
+And this is me now
+letting it out.
+
+00:00:56.059 --> 00:00:57.600
+PAUL LEWIS: You've
+got to let it out.
+
+00:00:57.600 --> 00:00:59.700
+Because it can bring other
+problems in your life.
+
+00:00:59.700 --> 00:01:01.075
+JAKE ARCHIBALD:
+Yeah, yeah, yeah.
+
+00:01:01.075 --> 00:01:04.060
+So Microsoft, with
+the user voice thing
+
+00:01:04.060 --> 00:01:06.240
+where they were
+asking people, hey,
+
+00:01:06.240 --> 00:01:07.679
+what do you want us to work on?
+
+00:01:07.679 --> 00:01:08.595
+PAUL LEWIS: Yes, I do.
+
+00:01:08.595 --> 00:01:09.820
+I liked that, by the way.
+
+00:01:09.820 --> 00:01:10.590
+JAKE ARCHIBALD: I think that
+was brilliant, actually.
+
+00:01:10.590 --> 00:01:12.810
+We should probably do that.
+
+00:01:12.810 --> 00:01:15.440
+One of the things that
+shot to the top of the list
+
+00:01:15.440 --> 00:01:20.634
+was, stop doing what you're
+doing and just use WebKit.
+
+00:01:20.634 --> 00:01:21.300
+PAUL LEWIS: Boo.
+
+00:01:21.300 --> 00:01:23.740
+No, that's not-- I don't think
+that's the right outcome.
+
+00:01:23.740 --> 00:01:25.687
+JAKE ARCHIBALD: But
+just the idea of them
+
+00:01:25.687 --> 00:01:27.270
+stopping what they're
+doing and taking
+
+00:01:27.270 --> 00:01:29.500
+on another browsing engine,
+that made me really sad.
+
+00:01:29.500 --> 00:01:32.410
+Because I really think it's the
+diversity of browsing engines
+
+00:01:32.410 --> 00:01:34.780
+which makes the
+internet a better place.
+
+00:01:34.780 --> 00:01:38.470
+PAUL LEWIS: Well, we had this
+when we fought to make Blink.
+
+00:01:38.470 --> 00:01:40.590
+It wasn't about one code base.
+
+00:01:40.590 --> 00:01:42.650
+One code base is
+not what you want.
+
+00:01:42.650 --> 00:01:45.350
+Because then you end
+up with stagnation.
+
+00:01:45.350 --> 00:01:46.720
+What you want is standards.
+
+00:01:46.720 --> 00:01:48.220
+JAKE ARCHIBALD: But
+I can understand
+
+00:01:48.220 --> 00:01:51.110
+why developers might want,
+like, a single browsing engine.
+
+00:01:51.110 --> 00:01:52.660
+Because it can be
+a pain sometimes,
+
+00:01:52.660 --> 00:01:56.190
+especially when you
+develop a thing,
+
+00:01:56.190 --> 00:01:58.926
+your wonderful work of art
+in a couple of browsers.
+
+00:01:58.926 --> 00:02:00.300
+And then you go
+to the third one,
+
+00:02:00.300 --> 00:02:02.280
+and it's turned
+it into some kind
+
+00:02:02.280 --> 00:02:04.107
+of expressionist
+modern art piece.
+
+00:02:04.107 --> 00:02:05.690
+PAUL LEWIS: Yep I
+can understand that.
+
+00:02:05.690 --> 00:02:07.689
+JAKE ARCHIBALD: When I
+was working at a startup,
+
+00:02:07.689 --> 00:02:11.070
+I had a series of Post-it
+notes on the wall,
+
+00:02:11.070 --> 00:02:12.277
+one for each browser.
+
+00:02:12.277 --> 00:02:13.110
+PAUL LEWIS: Of what?
+
+00:02:13.110 --> 00:02:14.480
+Like things to
+avoid or things to--
+
+00:02:14.480 --> 00:02:14.830
+JAKE ARCHIBALD: No, no, no.
+
+00:02:14.830 --> 00:02:17.163
+It was just Post-it note
+Internet Explorer, Post-it note
+
+00:02:17.163 --> 00:02:18.520
+Safari, Firefox, Opera.
+
+00:02:18.520 --> 00:02:20.210
+PAUL LEWIS: Was it to remind
+you to test in the browser?
+
+00:02:20.210 --> 00:02:20.850
+Is that what it was?
+
+00:02:20.850 --> 00:02:22.440
+JAKE ARCHIBALD: No, it was
+I because I'd be coding--
+
+00:02:22.440 --> 00:02:23.500
+PAUL LEWIS: Why did you have
+the list of Post-it notes?
+
+00:02:23.500 --> 00:02:25.750
+JAKE ARCHIBALD: Well, if you
+would shut up for a moment,
+
+00:02:25.750 --> 00:02:26.910
+I might be able to tell you.
+
+00:02:26.910 --> 00:02:28.743
+PAUL LEWIS: I don't
+like this jet lag, Jake.
+
+00:02:28.743 --> 00:02:30.780
+We're not nice people
+when we're jet lagged.
+
+00:02:30.780 --> 00:02:33.071
+JAKE ARCHIBALD: I had one
+for each browser on the wall.
+
+00:02:33.071 --> 00:02:35.280
+And then when my
+wonderful work was
+
+00:02:35.280 --> 00:02:38.370
+destroyed by a particular
+browser, I would-- [GRUMBLING].
+
+00:02:38.370 --> 00:02:40.750
+But rather than
+getting really angry,
+
+00:02:40.750 --> 00:02:43.620
+I would just calmly stand
+up, pick up a Sharpie,
+
+00:02:43.620 --> 00:02:46.950
+walk over to the
+appropriate Post-it note,
+
+00:02:46.950 --> 00:02:48.620
+and just draw a tiny phallus.
+
+00:02:50.475 --> 00:02:52.100
+PAUL LEWIS: I really,
+genuinely thought
+
+00:02:52.100 --> 00:02:54.590
+it was going to be a
+grown up little checkmark.
+
+00:02:54.590 --> 00:02:56.730
+If you found out
+that it was your bug,
+
+00:02:56.730 --> 00:02:59.891
+did you apply the
+appropriate diagram to self?
+
+00:02:59.891 --> 00:03:01.640
+JAKE ARCHIBALD: Just
+to my own face, yeah.
+
+00:03:01.640 --> 00:03:02.559
+PAUL LEWIS: Right.
+
+00:03:02.559 --> 00:03:04.600
+JAKE ARCHIBALD: Because
+this was back in the day.
+
+00:03:04.600 --> 00:03:06.240
+PAUL LEWIS: Back in the day,
+and you've grown up since then.
+
+00:03:06.240 --> 00:03:07.900
+You wouldn't do
+that now, would you?
+
+00:03:07.900 --> 00:03:09.290
+JAKE ARCHIBALD: No, I
+still would do this.
+
+00:03:09.290 --> 00:03:10.373
+But here's the difference.
+
+00:03:10.373 --> 00:03:12.940
+Back then, the Internet
+Explorer Post-it note was--
+
+00:03:12.940 --> 00:03:14.481
+PAUL LEWIS: Did you
+run out of space?
+
+00:03:14.481 --> 00:03:17.320
+JAKE ARCHIBALD: It was riddled,
+absolutely riddled, mate.
+
+00:03:17.320 --> 00:03:21.180
+But I do think modern day
+Internet Explorer has really
+
+00:03:21.180 --> 00:03:23.896
+turned over a leaf.
+
+00:03:23.896 --> 00:03:25.270
+So that's made me
+really sad when
+
+00:03:25.270 --> 00:03:29.640
+people were sort of really
+wanting a browsing monoculture.
+
+00:03:29.640 --> 00:03:32.429
+Because we did have it
+with IE6 at the time.
+
+00:03:32.429 --> 00:03:33.470
+PAUL LEWIS: Yeah, we did.
+
+00:03:33.470 --> 00:03:35.220
+JAKE ARCHIBALD: And
+it was actually awful.
+
+00:03:35.220 --> 00:03:36.765
+Because the web stagnated.
+
+00:03:36.765 --> 00:03:39.970
+We had a complete lack
+of progress for years.
+
+00:03:39.970 --> 00:03:41.620
+The diversity in
+browsers, it actually
+
+00:03:41.620 --> 00:03:43.960
+gives developers more power.
+
+00:03:43.960 --> 00:03:47.110
+Because if you're in a
+monoculture-- like say everyone
+
+00:03:47.110 --> 00:03:48.990
+went WebKit.
+
+00:03:48.990 --> 00:03:51.210
+Who gets to decide what
+features get implemented?
+
+00:03:51.210 --> 00:03:52.190
+PAUL LEWIS: Oh yeah, no,
+this is the stagnation.
+
+00:03:52.190 --> 00:03:53.780
+This is the monoculture
+thing, right?
+
+00:03:53.780 --> 00:03:54.512
+This is exactly.
+
+00:03:54.512 --> 00:03:56.720
+JAKE ARCHIBALD: Yeah, it
+will be WebKit that decides.
+
+00:03:56.720 --> 00:03:59.110
+In the same way that
+on native platforms,
+
+00:03:59.110 --> 00:04:02.050
+like it's Android that decides
+what features get developed.
+
+00:04:02.050 --> 00:04:05.340
+And I'm feeling this with
+Service Worker at the moment.
+
+00:04:05.340 --> 00:04:06.030
+I know, right?
+
+00:04:06.030 --> 00:04:07.160
+I know everything's
+Service Worker with me.
+
+00:04:07.160 --> 00:04:07.710
+PAUL LEWIS: Hello,
+one trick pony.
+
+00:04:07.710 --> 00:04:08.460
+How have you been?
+
+00:04:08.460 --> 00:04:11.164
+It's only been half a
+day since we last spoke.
+
+00:04:11.164 --> 00:04:12.080
+JAKE ARCHIBALD: Right.
+
+00:04:12.080 --> 00:04:15.019
+But at the moment,
+it's in Chrome.
+
+00:04:15.019 --> 00:04:16.560
+And it's going to
+be in Firefox soon.
+
+00:04:16.560 --> 00:04:18.089
+And Internet Explorer
+looked like they were
+
+00:04:18.089 --> 00:04:19.310
+going to take it on as well.
+
+00:04:19.310 --> 00:04:21.079
+But Apple we don't know.
+
+00:04:21.079 --> 00:04:23.260
+But it puts developers in
+this position of power.
+
+00:04:23.260 --> 00:04:26.190
+Because if they can make sites
+work faster in Chrome, Firefox,
+
+00:04:26.190 --> 00:04:29.540
+and eventually IE, then Apple
+are going to look at that.
+
+00:04:29.540 --> 00:04:32.855
+And they have to go, well,
+we're not going to have this.
+
+00:04:32.855 --> 00:04:35.230
+PAUL LEWIS: We're not going
+to be the rubbishist in town.
+
+00:04:35.230 --> 00:04:35.660
+JAKE ARCHIBALD: Right.
+
+00:04:35.660 --> 00:04:38.120
+So we're going to have to
+implement Service Worker.
+
+00:04:38.120 --> 00:04:40.900
+And the people that made us do
+that is real world developers.
+
+00:04:40.900 --> 00:04:41.670
+PAUL LEWIS: It's brilliant.
+
+00:04:41.670 --> 00:04:42.760
+More power to developers.
+
+00:04:42.760 --> 00:04:43.634
+JAKE ARCHIBALD: Yeah.
+
+00:04:43.634 --> 00:04:45.770
+And that's what multiple
+browser engines give us.
+
+00:04:45.770 --> 00:04:48.820
+[MUSIC PLAYING]
+

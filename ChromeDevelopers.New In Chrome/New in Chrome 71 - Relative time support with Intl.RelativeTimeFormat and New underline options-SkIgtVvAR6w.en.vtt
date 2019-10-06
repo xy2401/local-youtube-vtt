@@ -1,0 +1,297 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.196 --> 00:00:02.029
+PETE LEPAGE: Displaying
+relative time values
+
+00:00:02.029 --> 00:00:03.260
+is now part of the Intl.
+
+00:00:03.260 --> 00:00:04.400
+API.
+
+00:00:04.400 --> 00:00:07.280
+You can specify which
+side of the text underline
+
+00:00:07.280 --> 00:00:09.980
+should appear on for text
+that flows vertically
+
+00:00:09.980 --> 00:00:12.010
+and fewer surprises.
+
+00:00:12.010 --> 00:00:12.980
+I'm Pete LePage.
+
+00:00:12.980 --> 00:00:15.950
+Let's dive in and see what's
+new for developers in Chrome 71.
+
+00:00:15.950 --> 00:00:19.200
+[MUSIC PLAYING]
+
+00:00:19.200 --> 00:00:22.950
+Many web apps use phrases
+like yesterday, in two days,
+
+00:00:22.950 --> 00:00:26.070
+or an hour ago to indicate
+when something happened
+
+00:00:26.070 --> 00:00:29.370
+or is going to happen instead
+of displaying the full date
+
+00:00:29.370 --> 00:00:30.450
+and time.
+
+00:00:30.450 --> 00:00:33.780
+Displaying relative times
+has become so common
+
+00:00:33.780 --> 00:00:37.410
+that most date/time libraries
+provide localized functions
+
+00:00:37.410 --> 00:00:38.940
+to handle this for us.
+
+00:00:38.940 --> 00:00:41.880
+In fact, with almost
+every web app I build,
+
+00:00:41.880 --> 00:00:45.180
+moment.js is one of the first
+libraries I add expressly
+
+00:00:45.180 --> 00:00:46.770
+for this purpose.
+
+00:00:46.770 --> 00:00:51.150
+Chrome 71 introduces
+Intl.RelativeTimeFormat,
+
+00:00:51.150 --> 00:00:53.790
+which shifts the work
+to the JavaScript engine
+
+00:00:53.790 --> 00:00:57.720
+and enables localized
+formatting of relative times.
+
+00:00:57.720 --> 00:00:59.880
+This can give us a
+small performance boost
+
+00:00:59.880 --> 00:01:03.360
+and means we only need those
+libraries as a polyfill
+
+00:01:03.360 --> 00:01:06.540
+when the browser doesn't
+support the new APIs yet.
+
+00:01:06.540 --> 00:01:07.870
+Using it is simple.
+
+00:01:07.870 --> 00:01:11.820
+Create a new instance and
+specify the locale, then just
+
+00:01:11.820 --> 00:01:14.380
+call format with
+the relative time.
+
+00:01:14.380 --> 00:01:18.870
+Check out Matthias's
+updates post linked below.
+
+00:01:18.870 --> 00:01:23.250
+When Chinese or Japanese text
+is displayed in a vertical flow,
+
+00:01:23.250 --> 00:01:26.820
+browsers are inconsistent with
+where the underline is placed.
+
+00:01:26.820 --> 00:01:29.560
+It may be on the
+left or on the right.
+
+00:01:29.560 --> 00:01:32.970
+In Chrome 71, the text
+underline position property
+
+00:01:32.970 --> 00:01:36.870
+now accepts left or right
+as part of the CSS3 text
+
+00:01:36.870 --> 00:01:38.460
+decoration spec.
+
+00:01:38.460 --> 00:01:42.540
+The CSS3 text decoration spec
+adds several new properties
+
+00:01:42.540 --> 00:01:45.630
+that allow you to specify
+things like what kind of line
+
+00:01:45.630 --> 00:01:49.440
+to use, the style, the
+color, and position.
+
+00:01:49.440 --> 00:01:51.810
+We've all been surprised
+when we hit a site
+
+00:01:51.810 --> 00:01:55.290
+and suddenly it
+starts talking to us.
+
+00:01:55.290 --> 00:01:58.050
+AutoPlay policies prevent
+sites from automatically
+
+00:01:58.050 --> 00:01:59.310
+playing audio.
+
+00:01:59.310 --> 00:02:04.050
+These sites use the speech
+synthesis API instead.
+
+00:02:04.050 --> 00:02:07.620
+Starting in Chrome 71,
+the speech synthesis API
+
+00:02:07.620 --> 00:02:10.740
+now requires some kind of
+user activation on the page
+
+00:02:10.740 --> 00:02:12.300
+before it'll work.
+
+00:02:12.300 --> 00:02:15.810
+This brings it in line with
+other AutoPlay policies.
+
+00:02:15.810 --> 00:02:17.610
+If you try and use it
+before the user has
+
+00:02:17.610 --> 00:02:20.940
+interacted with the page,
+it will fire an error.
+
+00:02:20.940 --> 00:02:23.130
+There's nothing worse
+than going to a site
+
+00:02:23.130 --> 00:02:25.620
+and having it surprise
+you and the coworkers
+
+00:02:25.620 --> 00:02:27.450
+sitting around you.
+
+00:02:27.450 --> 00:02:30.030
+These are just a few of
+the changes in Chrome 71
+
+00:02:30.030 --> 00:02:30.910
+for developers.
+
+00:02:30.910 --> 00:02:33.000
+Of course, there's plenty more.
+
+00:02:33.000 --> 00:02:35.490
+The element that requests
+fullscreen method
+
+00:02:35.490 --> 00:02:37.950
+can now be customized
+on Android.
+
+00:02:37.950 --> 00:02:42.270
+The default credential mode
+for module script requests
+
+00:02:42.270 --> 00:02:45.330
+has changed from
+omit to same origin.
+
+00:02:45.330 --> 00:02:49.440
+And bringing Chrome in line
+with the Shadow Dom V1 spec,
+
+00:02:49.440 --> 00:02:52.710
+Chrome 71 now calculates
+the specificity
+
+00:02:52.710 --> 00:02:57.180
+for host, host context,
+and slotted elements.
+
+00:02:57.180 --> 00:02:59.760
+If you didn't make it to Chrome
+Dev Summit, or maybe you did,
+
+00:02:59.760 --> 00:03:01.500
+but you didn't
+see all the talks,
+
+00:03:01.500 --> 00:03:04.050
+check out the Chrome
+Dev Summit 2018 playlist
+
+00:03:04.050 --> 00:03:05.580
+on our YouTube channel.
+
+00:03:05.580 --> 00:03:07.710
+Ewa and Phil went into
+some neat techniques
+
+00:03:07.710 --> 00:03:09.280
+for using service workers.
+
+00:03:09.280 --> 00:03:12.540
+Mariko and Jake talked
+about how they built Swoosh.
+
+00:03:12.540 --> 00:03:15.150
+Katie and Houssein covered
+some great techniques
+
+00:03:15.150 --> 00:03:17.460
+to maximize the
+performance of your site.
+
+00:03:17.460 --> 00:03:19.510
+And of course, there
+are plenty more.
+
+00:03:19.510 --> 00:03:20.940
+So check them out.
+
+00:03:20.940 --> 00:03:23.310
+Oh, and click that
+subscription button.
+
+00:03:23.310 --> 00:03:26.550
+You'll get an email notification
+whenever we launch a new video.
+
+00:03:26.550 --> 00:03:27.720
+I'm Pete LePage.
+
+00:03:27.720 --> 00:03:29.980
+And as soon as Chrome
+72 is released,
+
+00:03:29.980 --> 00:03:33.770
+I'll be right here to tell
+you what's new in Chrome.
+

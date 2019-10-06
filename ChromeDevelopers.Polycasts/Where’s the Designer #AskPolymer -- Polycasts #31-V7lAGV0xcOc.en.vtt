@@ -1,0 +1,404 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.122
+[MUSIC PLAYING]
+
+00:00:05.122 --> 00:00:07.080
+MALE SPEAKER: Hey there,
+polycasters, Rob here.
+
+00:00:07.080 --> 00:00:09.100
+Welcome back to Ask
+Polymer, the show where
+
+00:00:09.100 --> 00:00:12.570
+you send in your hashtag
+questions and we answer them.
+
+00:00:12.570 --> 00:00:14.570
+Our first question
+today comes from Frank
+
+00:00:14.570 --> 00:00:19.531
+who asks, "Will the designer
+tool be back in Polymer 1.0?"
+
+00:00:19.531 --> 00:00:20.530
+That's a great question.
+
+00:00:20.530 --> 00:00:22.154
+A lot of people have
+asked me about it.
+
+00:00:22.154 --> 00:00:25.110
+You might remember the designer
+from some of our older talks.
+
+00:00:25.110 --> 00:00:27.750
+It was originally built as
+kind of a proof of concept
+
+00:00:27.750 --> 00:00:30.587
+of what you could possibly
+do with web components.
+
+00:00:30.587 --> 00:00:32.170
+The original designer
+was never really
+
+00:00:32.170 --> 00:00:34.410
+a production-ready thing.
+
+00:00:34.410 --> 00:00:36.990
+I'm happy to say, though,
+that in 1.0 we are working
+
+00:00:36.990 --> 00:00:39.650
+on designer 2, if you will.
+
+00:00:39.650 --> 00:00:43.430
+But when I've asked the team
+for the ETA, all they said was,
+
+00:00:43.430 --> 00:00:44.920
+it'll be a long time.
+
+00:00:44.920 --> 00:00:46.150
+So we're working on it.
+
+00:00:46.150 --> 00:00:48.690
+We're going to make it an
+actual production-ready thing,
+
+00:00:48.690 --> 00:00:50.850
+but it might take a
+while for it to come out.
+
+00:00:50.850 --> 00:00:52.960
+So thank you, Frank, for
+sending in that question.
+
+00:00:52.960 --> 00:00:53.190
+All right.
+
+00:00:53.190 --> 00:00:54.790
+Our next question
+comes from Dominic,
+
+00:00:54.790 --> 00:00:58.120
+who asks, "Can you talk a little
+bit about the Safari support
+
+00:00:58.120 --> 00:00:59.480
+for Polymer?"
+
+00:00:59.480 --> 00:01:00.900
+So that's a really
+great question.
+
+00:01:00.900 --> 00:01:03.730
+What's recently happened
+is the Webkit folks
+
+00:01:03.730 --> 00:01:06.200
+have announced that they've
+just landed support for Shadow
+
+00:01:06.200 --> 00:01:07.600
+DOM in Webkit Nightly.
+
+00:01:07.600 --> 00:01:09.580
+So you can check out
+this blog post over here
+
+00:01:09.580 --> 00:01:11.390
+to read more about that.
+
+00:01:11.390 --> 00:01:13.330
+What that means
+is Polymer should,
+
+00:01:13.330 --> 00:01:16.670
+in the very near future, start
+running a lot faster in Safari
+
+00:01:16.670 --> 00:01:19.460
+when that finally ships
+in their stable version.
+
+00:01:19.460 --> 00:01:22.370
+So hopefully things are going to
+be improving there really soon.
+
+00:01:22.370 --> 00:01:24.854
+Thanks for that really
+awesome question, Dominic.
+
+00:01:24.854 --> 00:01:26.270
+All right, our
+next question comes
+
+00:01:26.270 --> 00:01:30.800
+from Robrez who asks, "Can
+I create a data binding
+
+00:01:30.800 --> 00:01:31.894
+imperatively?"
+
+00:01:31.894 --> 00:01:33.560
+So that's a really
+interesting question.
+
+00:01:33.560 --> 00:01:35.730
+It's one that a few people
+have sent me on Twitter.
+
+00:01:35.730 --> 00:01:37.230
+I asked the team
+about this and they
+
+00:01:37.230 --> 00:01:38.800
+said that, even
+though this is kind
+
+00:01:38.800 --> 00:01:40.930
+of an often requested
+feature, it's
+
+00:01:40.930 --> 00:01:43.530
+not something that's currently
+supported in Polymer.
+
+00:01:43.530 --> 00:01:45.860
+And when asked why, they
+said, mainly because they
+
+00:01:45.860 --> 00:01:47.840
+want to focus on
+polishing the core
+
+00:01:47.840 --> 00:01:51.890
+features before adding any
+additional fanciness like that.
+
+00:01:51.890 --> 00:01:54.190
+So for the moment,
+that's not supported.
+
+00:01:54.190 --> 00:01:56.800
+Not saying it won't be supported
+someday, but at the moment,
+
+00:01:56.800 --> 00:01:59.374
+no, you have to do
+everything declaratively.
+
+00:01:59.374 --> 00:02:00.790
+All right, our
+next question comes
+
+00:02:00.790 --> 00:02:03.990
+from Danny who asks,
+"Should an element import
+
+00:02:03.990 --> 00:02:07.100
+all of its dependencies, or
+can you just take those imports
+
+00:02:07.100 --> 00:02:09.955
+and put them in an
+elements.html file?"
+
+00:02:09.955 --> 00:02:11.330
+So that's a really
+cool question.
+
+00:02:11.330 --> 00:02:13.506
+And a lot of people
+are confused about this
+
+00:02:13.506 --> 00:02:15.630
+because you can put stuff
+in an elements.html file,
+
+00:02:15.630 --> 00:02:18.540
+and it'll seem like the
+app continues to work.
+
+00:02:18.540 --> 00:02:20.090
+But generally, as
+a best practice,
+
+00:02:20.090 --> 00:02:21.680
+we recommend that
+any element have
+
+00:02:21.680 --> 00:02:24.900
+all of its dependencies imported
+at the top of its definition,
+
+00:02:24.900 --> 00:02:28.780
+and mainly because this ensures
+that those other elements have
+
+00:02:28.780 --> 00:02:33.900
+loaded before your element
+tries to register and use them.
+
+00:02:33.900 --> 00:02:37.600
+People also wonder, does that
+possibly impact performance.
+
+00:02:37.600 --> 00:02:39.640
+But the way HTML
+imports are written,
+
+00:02:39.640 --> 00:02:42.360
+all of those additional imports,
+even if they're duplicates,
+
+00:02:42.360 --> 00:02:44.134
+they will actually
+be de-duplicated,
+
+00:02:44.134 --> 00:02:45.800
+so there's no performance
+penalty there,
+
+00:02:45.800 --> 00:02:47.670
+and if you're using
+Vulcanize, it's
+
+00:02:47.670 --> 00:02:49.980
+only going to add
+those imports once,
+
+00:02:49.980 --> 00:02:51.460
+and it'll do it in
+the right order.
+
+00:02:51.460 --> 00:02:53.520
+So the best practice
+is always have
+
+00:02:53.520 --> 00:02:55.590
+your elements import
+their dependencies
+
+00:02:55.590 --> 00:02:57.090
+and you should be good to go.
+
+00:02:57.090 --> 00:03:00.230
+OK, our last question
+comes from Jose, who asks,
+
+00:03:00.230 --> 00:03:03.240
+"Can you declare styles
+in an iron-media-query,
+
+00:03:03.240 --> 00:03:07.376
+and if not, what's the point of
+the iron-media-query element?"
+
+00:03:07.376 --> 00:03:08.750
+So that's a really
+good question.
+
+00:03:08.750 --> 00:03:09.880
+I know when you first
+see that element,
+
+00:03:09.880 --> 00:03:10.850
+it's a little confusing.
+
+00:03:10.850 --> 00:03:12.240
+You're not quite
+sure how to use it.
+
+00:03:12.240 --> 00:03:13.656
+But the idea with
+iron-media-query
+
+00:03:13.656 --> 00:03:15.780
+is that it's mainly
+meant for data bindings.
+
+00:03:15.780 --> 00:03:18.640
+So if you need to change
+an attribute or a property
+
+00:03:18.640 --> 00:03:21.960
+on some other element when your
+page is at a smaller screen
+
+00:03:21.960 --> 00:03:24.494
+size, you can do that
+using that element.
+
+00:03:24.494 --> 00:03:27.035
+This is the kind of work that
+you actually can't do with CSS.
+
+00:03:27.035 --> 00:03:29.725
+You would probably have to write
+custom JavaScript to do that.
+
+00:03:29.725 --> 00:03:31.297
+The iron-media-query
+element's just
+
+00:03:31.297 --> 00:03:33.630
+going to let you do that in
+a nice, declarative fashion.
+
+00:03:33.630 --> 00:03:36.262
+So thank you, Jose, for sending
+in that really great question.
+
+00:03:36.262 --> 00:03:37.220
+So that's it for today.
+
+00:03:37.220 --> 00:03:40.160
+Thank you, everyone who sent
+in those excellent questions.
+
+00:03:40.160 --> 00:03:42.410
+If you yourself have a
+question, you can leave it down
+
+00:03:42.410 --> 00:03:43.310
+in the comments.
+
+00:03:43.310 --> 00:03:45.960
+Or you can ping us on a social
+network of your choosing
+
+00:03:45.960 --> 00:03:48.560
+at #askPolymer.
+
+00:03:48.560 --> 00:03:50.690
+As always, thank you
+so much for watching,
+
+00:03:50.690 --> 00:03:53.020
+and I'll see you next time.
+
+00:03:53.020 --> 00:03:54.930
+Our next question
+comes from Jose who
+
+00:03:54.930 --> 00:03:57.472
+asks, can I declare styles--
+
+00:03:57.472 --> 00:03:58.708
+[LAUGHING]
+
+00:03:58.708 --> 00:04:01.220
+This totally impresses
+them on the dance floor.
+
+00:04:01.220 --> 00:04:04.121
+[MOANING]
+

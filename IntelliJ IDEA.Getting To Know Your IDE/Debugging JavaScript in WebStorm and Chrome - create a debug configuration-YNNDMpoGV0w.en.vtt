@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.210 --> 00:00:03.050 align:start position:0%
+ 
+in<00:00:00.840><c> this</c><00:00:01.140><c> video</c><00:00:01.500><c> we'll</c><00:00:02.070><c> show</c><00:00:02.100><c> how</c><00:00:02.520><c> to</c><00:00:02.550><c> create</c><00:00:02.850><c> a</c>
+
+00:00:03.050 --> 00:00:03.060 align:start position:0%
+in this video we'll show how to create a
+ 
+
+00:00:03.060 --> 00:00:05.180 align:start position:0%
+in this video we'll show how to create a
+debug<00:00:03.480><c> configuration</c><00:00:03.750><c> for</c><00:00:04.740><c> debugging</c>
+
+00:00:05.180 --> 00:00:05.190 align:start position:0%
+debug configuration for debugging
+ 
+
+00:00:05.190 --> 00:00:08.839 align:start position:0%
+debug configuration for debugging
+client-side<00:00:05.759><c> apps</c><00:00:06.060><c> with</c><00:00:06.509><c> webstorm</c><00:00:07.610><c> you</c><00:00:08.610><c> can</c>
+
+00:00:08.839 --> 00:00:08.849 align:start position:0%
+client-side apps with webstorm you can
+ 
+
+00:00:08.849 --> 00:00:11.480 align:start position:0%
+client-side apps with webstorm you can
+create<00:00:09.179><c> or</c><00:00:09.510><c> modify</c><00:00:09.750><c> debug</c><00:00:10.500><c> configurations</c><00:00:11.309><c> in</c>
+
+00:00:11.480 --> 00:00:11.490 align:start position:0%
+create or modify debug configurations in
+ 
+
+00:00:11.490 --> 00:00:14.509 align:start position:0%
+create or modify debug configurations in
+webstorm<00:00:12.170><c> click</c><00:00:13.170><c> on</c><00:00:13.320><c> the</c><00:00:13.469><c> add</c><00:00:13.620><c> configuration</c>
+
+00:00:14.509 --> 00:00:14.519 align:start position:0%
+webstorm click on the add configuration
+ 
+
+00:00:14.519 --> 00:00:17.420 align:start position:0%
+webstorm click on the add configuration
+button<00:00:14.759><c> in</c><00:00:15.030><c> the</c><00:00:15.330><c> tool</c><00:00:15.509><c> bar</c><00:00:15.859><c> once</c><00:00:16.859><c> you're</c><00:00:17.100><c> in</c>
+
+00:00:17.420 --> 00:00:17.430 align:start position:0%
+button in the tool bar once you're in
+ 
+
+00:00:17.430 --> 00:00:20.060 align:start position:0%
+button in the tool bar once you're in
+the<00:00:17.789><c> add</c><00:00:17.970><c> configurations</c><00:00:18.840><c> window</c><00:00:19.230><c> click</c><00:00:20.039><c> the</c>
+
+00:00:20.060 --> 00:00:20.070 align:start position:0%
+the add configurations window click the
+ 
+
+00:00:20.070 --> 00:00:22.450 align:start position:0%
+the add configurations window click the
+plus<00:00:20.220><c> sign</c><00:00:20.670><c> and</c><00:00:20.910><c> add</c><00:00:21.270><c> a</c><00:00:21.300><c> new</c><00:00:21.539><c> configuration</c>
+
+00:00:22.450 --> 00:00:22.460 align:start position:0%
+plus sign and add a new configuration
+ 
+
+00:00:22.460 --> 00:00:26.660 align:start position:0%
+plus sign and add a new configuration
+then<00:00:23.460><c> choose</c><00:00:24.119><c> JavaScript</c><00:00:24.720><c> debug</c><00:00:25.460><c> name</c><00:00:26.460><c> your</c>
+
+00:00:26.660 --> 00:00:26.670 align:start position:0%
+then choose JavaScript debug name your
+ 
+
+00:00:26.670 --> 00:00:29.000 align:start position:0%
+then choose JavaScript debug name your
+configuration<00:00:27.449><c> and</c><00:00:27.660><c> set</c><00:00:28.349><c> a</c><00:00:28.380><c> starting</c>
+
+00:00:29.000 --> 00:00:29.010 align:start position:0%
+configuration and set a starting
+ 
+
+00:00:29.010 --> 00:00:31.820 align:start position:0%
+configuration and set a starting
+location<00:00:29.179><c> by</c><00:00:30.179><c> pasting</c><00:00:30.480><c> the</c><00:00:30.869><c> URL</c><00:00:30.900><c> of</c><00:00:31.590><c> the</c>
+
+00:00:31.820 --> 00:00:31.830 align:start position:0%
+location by pasting the URL of the
+ 
+
+00:00:31.830 --> 00:00:36.650 align:start position:0%
+location by pasting the URL of the
+running<00:00:32.160><c> app</c><00:00:32.369><c> into</c><00:00:32.940><c> the</c><00:00:33.270><c> URL</c><00:00:33.690><c> field</c><00:00:35.270><c> click</c><00:00:36.270><c> OK</c>
+
+00:00:36.650 --> 00:00:36.660 align:start position:0%
+running app into the URL field click OK
+ 
+
+00:00:36.660 --> 00:00:41.000 align:start position:0%
+running app into the URL field click OK
+to<00:00:36.960><c> save</c><00:00:38.719><c> let's</c><00:00:39.719><c> set</c><00:00:39.960><c> a</c><00:00:39.989><c> break</c><00:00:40.230><c> point</c><00:00:40.260><c> so</c><00:00:40.739><c> we</c>
+
+00:00:41.000 --> 00:00:41.010 align:start position:0%
+to save let's set a break point so we
+ 
+
+00:00:41.010 --> 00:00:44.600 align:start position:0%
+to save let's set a break point so we
+can<00:00:41.040><c> debug</c><00:00:41.489><c> to</c><00:00:42.300><c> debug</c><00:00:42.629><c> click</c><00:00:43.440><c> on</c><00:00:43.649><c> the</c><00:00:44.070><c> bug</c><00:00:44.280><c> in</c>
+
+00:00:44.600 --> 00:00:44.610 align:start position:0%
+can debug to debug click on the bug in
+ 
+
+00:00:44.610 --> 00:00:48.080 align:start position:0%
+can debug to debug click on the bug in
+the<00:00:45.090><c> navigation</c><00:00:45.539><c> toolbar</c><00:00:46.399><c> this</c><00:00:47.399><c> launches</c><00:00:47.910><c> the</c>
+
+00:00:48.080 --> 00:00:48.090 align:start position:0%
+the navigation toolbar this launches the
+ 
+
+00:00:48.090 --> 00:00:50.510 align:start position:0%
+the navigation toolbar this launches the
+debugger<00:00:48.570><c> as</c><00:00:48.750><c> well</c><00:00:49.500><c> as</c><00:00:49.680><c> an</c><00:00:49.890><c> instance</c><00:00:50.370><c> of</c>
+
+00:00:50.510 --> 00:00:50.520 align:start position:0%
+debugger as well as an instance of
+ 
+
+00:00:50.520 --> 00:00:54.139 align:start position:0%
+debugger as well as an instance of
+chrome<00:00:50.850><c> where</c><00:00:51.180><c> you</c><00:00:51.449><c> can</c><00:00:51.660><c> test</c><00:00:51.960><c> the</c><00:00:52.350><c> UI</c><00:00:53.120><c> when</c><00:00:54.120><c> I</c>
+
+00:00:54.139 --> 00:00:54.149 align:start position:0%
+chrome where you can test the UI when I
+ 
+
+00:00:54.149 --> 00:00:56.150 align:start position:0%
+chrome where you can test the UI when I
+click<00:00:54.480><c> the</c><00:00:54.660><c> submit</c><00:00:55.020><c> button</c><00:00:55.050><c> you</c><00:00:55.800><c> could</c><00:00:55.980><c> see</c>
+
+00:00:56.150 --> 00:00:56.160 align:start position:0%
+click the submit button you could see
+ 
+
+00:00:56.160 --> 00:00:58.310 align:start position:0%
+click the submit button you could see
+that<00:00:56.340><c> the</c><00:00:56.489><c> debugger</c><00:00:56.850><c> and</c><00:00:57.000><c> breakpoint</c><00:00:57.719><c> work</c><00:00:58.109><c> is</c>
+
+00:00:58.310 --> 00:00:58.320 align:start position:0%
+that the debugger and breakpoint work is
+ 
+
+00:00:58.320 --> 00:01:00.620 align:start position:0%
+that the debugger and breakpoint work is
+expected
+
+00:01:00.620 --> 00:01:00.630 align:start position:0%
+expected
+ 
+
+00:01:00.630 --> 00:01:03.660 align:start position:0%
+expected
+in<00:01:01.630><c> this</c><00:01:01.930><c> video</c><00:01:02.320><c> you</c><00:01:02.920><c> have</c><00:01:02.950><c> seen</c><00:01:03.160><c> how</c><00:01:03.610><c> to</c>
+
+00:01:03.660 --> 00:01:03.670 align:start position:0%
+in this video you have seen how to
+ 
+
+00:01:03.670 --> 00:01:06.440 align:start position:0%
+in this video you have seen how to
+create<00:01:03.910><c> debug</c><00:01:04.449><c> configurations</c><00:01:05.320><c> for</c><00:01:05.560><c> webstorm</c>
+
+00:01:06.440 --> 00:01:06.450 align:start position:0%
+create debug configurations for webstorm
+ 
+
+00:01:06.450 --> 00:01:09.990 align:start position:0%
+create debug configurations for webstorm
+thanks<00:01:07.450><c> for</c><00:01:07.600><c> watching</c>
+

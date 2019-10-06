@@ -1,0 +1,652 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.311 --> 00:00:06.227
+PAUL: Oh, oh.
+
+00:00:06.227 --> 00:00:07.748
+JAKE: Whoa, Jesus, man.
+
+00:00:07.748 --> 00:00:08.676
+PAUL: Sorry.
+
+00:00:08.676 --> 00:00:10.068
+[LAUGHTER]
+
+00:00:10.068 --> 00:00:12.937
+How do you fancy a
+game of football?
+
+00:00:12.937 --> 00:00:14.770
+JAKE: Well, as long as
+it's not you playing,
+
+00:00:14.770 --> 00:00:16.226
+mate, because that
+was ridiculous.
+
+00:00:16.226 --> 00:00:17.100
+PAUL: All right.
+
+00:00:17.100 --> 00:00:17.600
+Wa!
+
+00:00:17.600 --> 00:00:19.230
+[MUSIC PLAYING]
+
+00:00:25.670 --> 00:00:27.200
+JAKE: What time
+does the game start?
+
+00:00:27.200 --> 00:00:33.684
+PAUL: Uh-- Tuesday.
+
+00:00:33.684 --> 00:00:34.183
+JAKE: Hmm.
+
+00:00:37.340 --> 00:00:39.310
+That was a wasted journey then.
+
+00:00:39.310 --> 00:00:41.360
+PAUL: We got nice
+ponchos out of it though.
+
+00:00:41.360 --> 00:00:42.232
+JAKE: Mhm.
+
+00:00:42.232 --> 00:00:44.552
+PAUL: That'll work
+fine for England.
+
+00:00:44.552 --> 00:00:46.176
+JAKE: It's going to
+be tough, isn't it?
+
+00:00:46.176 --> 00:00:47.266
+PAUL: Why?
+
+00:00:47.266 --> 00:00:48.980
+JAKE: HTTP2.
+
+00:00:48.980 --> 00:00:50.260
+PAUL: Why?
+
+00:00:50.260 --> 00:00:52.440
+JAKE: Well, we have to
+turn around and say--
+
+00:00:52.440 --> 00:00:53.210
+PAUL: LOL, no.
+
+00:00:53.210 --> 00:00:53.960
+JAKE: Sorry, guys.
+
+00:00:53.960 --> 00:00:54.970
+PAUL: Yeah, it's
+all broken isn't it?
+
+00:00:54.970 --> 00:00:56.386
+JAKE: You know
+that stuff we said?
+
+00:00:56.386 --> 00:00:57.920
+We were lying.
+
+00:00:57.920 --> 00:01:00.770
+We've got to change
+everything that you do.
+
+00:01:00.770 --> 00:01:02.770
+With HTTP2, the
+rules all change.
+
+00:01:02.770 --> 00:01:03.290
+PAUL: Yes.
+
+00:01:03.290 --> 00:01:05.206
+Because well, let's think
+this through, right?
+
+00:01:05.206 --> 00:01:08.210
+Because the requests, they're
+not as expensive anymore,
+
+00:01:08.210 --> 00:01:09.020
+are they?
+
+00:01:09.020 --> 00:01:10.570
+Because you've got, what is it?
+
+00:01:10.570 --> 00:01:11.942
+One TCP stream or whatever?
+
+00:01:11.942 --> 00:01:12.650
+JAKE: Yeah, yeah.
+
+00:01:12.650 --> 00:01:15.950
+With HTTP2, you've got one
+stream, one connection, even.
+
+00:01:15.950 --> 00:01:17.750
+So requesting new
+files, it does not
+
+00:01:17.750 --> 00:01:19.000
+have to open a new connection.
+
+00:01:19.000 --> 00:01:21.274
+It's just all part of
+the multiplex stream.
+
+00:01:21.274 --> 00:01:22.190
+PAUL: So now you what?
+
+00:01:22.190 --> 00:01:24.814
+Like, you can send down-- or you
+send all these separate files.
+
+00:01:24.814 --> 00:01:26.460
+So spriting goes away.
+
+00:01:26.460 --> 00:01:28.150
+Concatenation goes away.
+
+00:01:28.150 --> 00:01:29.280
+You still in line?
+
+00:01:29.280 --> 00:01:29.945
+No, you probably wouldn't.
+
+00:01:29.945 --> 00:01:30.445
+Would you?
+
+00:01:30.445 --> 00:01:33.070
+JAKE: Well, probably not, no.
+
+00:01:33.070 --> 00:01:35.570
+I mean, you're still going to
+have the request and response.
+
+00:01:35.570 --> 00:01:37.777
+But all those headers
+are compressed.
+
+00:01:37.777 --> 00:01:38.610
+PAUL: Oh yeah, yeah.
+
+00:01:38.610 --> 00:01:39.985
+JAKE: Because
+they're a big deal.
+
+00:01:39.985 --> 00:01:43.000
+Like, in HTTP1, you've got,
+like, a K and a half of headers
+
+00:01:43.000 --> 00:01:44.810
+sometimes with cookies and that.
+
+00:01:44.810 --> 00:01:47.050
+If you multiply
+that by, like, 18
+
+00:01:47.050 --> 00:01:49.644
+requested a page,
+that really stacks up.
+
+00:01:49.644 --> 00:01:50.310
+PAUL: Yeah, yep.
+
+00:01:50.310 --> 00:01:50.435
+Yep.
+
+00:01:50.435 --> 00:01:50.935
+Yep.
+
+00:01:50.935 --> 00:01:53.309
+JAKE: And compression
+just takes care of that.
+
+00:01:53.309 --> 00:01:55.850
+Because you don't have the slow
+start for most of it as well.
+
+00:01:55.850 --> 00:01:58.540
+Because you're on that
+single TCP connection.
+
+00:01:58.540 --> 00:01:59.040
+Yes.
+
+00:01:59.040 --> 00:02:02.372
+And so I guess you're
+probably the same as me.
+
+00:02:02.372 --> 00:02:03.955
+When you write CSS,
+do you have, like,
+
+00:02:03.955 --> 00:02:06.280
+a CSS file for
+components and stuff?
+
+00:02:06.280 --> 00:02:07.280
+PAUL: Yeah, pretty much.
+
+00:02:07.280 --> 00:02:08.521
+I'd say so, thereabouts.
+
+00:02:08.521 --> 00:02:09.979
+JAKE: I think we
+can get to a point
+
+00:02:09.979 --> 00:02:12.050
+where we just serve all
+of those files separately.
+
+00:02:12.050 --> 00:02:14.050
+PAUL: That sounds really,
+really nice, actually.
+
+00:02:14.050 --> 00:02:17.730
+Because it reduces that build
+step quite a bit, really.
+
+00:02:17.730 --> 00:02:18.377
+You know?
+
+00:02:18.377 --> 00:02:20.210
+You just, sort of--
+here's the thing I made.
+
+00:02:20.210 --> 00:02:21.360
+Push it up live.
+
+00:02:21.360 --> 00:02:21.860
+That's good.
+
+00:02:21.860 --> 00:02:24.110
+Actually, talking
+pushing, that's
+
+00:02:24.110 --> 00:02:26.220
+another thing about
+HTTP2 as well, isn't it?
+
+00:02:26.220 --> 00:02:29.090
+And you know, you can request
+one file and get all those.
+
+00:02:29.090 --> 00:02:29.590
+JAKE: Yeah.
+
+00:02:29.590 --> 00:02:31.499
+You could say, oh,
+you want the page?
+
+00:02:31.499 --> 00:02:33.040
+Well, I'm going to
+give you the page.
+
+00:02:33.040 --> 00:02:36.345
+But-- special bonus
+prize-- here's some CSS.
+
+00:02:36.345 --> 00:02:38.770
+Here's some JavaScript that
+I know you're going to need.
+
+00:02:38.770 --> 00:02:39.480
+And it will say,
+like, here's what
+
+00:02:39.480 --> 00:02:40.750
+your request would look like.
+
+00:02:40.750 --> 00:02:42.070
+And here comes the response.
+
+00:02:42.070 --> 00:02:43.560
+Just going to throw it at you.
+
+00:02:43.560 --> 00:02:45.440
+PAUL: Downer-- what if
+you've already got it?
+
+00:02:45.440 --> 00:02:47.510
+JAKE: So yeah, I
+was looking at this.
+
+00:02:47.510 --> 00:02:52.370
+The client actually can
+send an RST_Stream packet.
+
+00:02:52.370 --> 00:02:53.640
+PAUL: Oh, wow, that's catchy.
+
+00:02:53.640 --> 00:02:54.240
+JAKE: Yeah.
+
+00:02:54.240 --> 00:02:57.570
+And that's going to tell it to
+identify a particular stream
+
+00:02:57.570 --> 00:02:59.690
+and say, could you not, mate?
+
+00:02:59.690 --> 00:03:00.940
+PAUL: Could you just back off?
+
+00:03:00.940 --> 00:03:01.110
+Yeah?
+
+00:03:01.110 --> 00:03:01.880
+JAKE: Could you stop that?
+
+00:03:01.880 --> 00:03:02.930
+PAUL: I've already this--
+
+00:03:02.930 --> 00:03:03.805
+JAKE: Already got it.
+
+00:03:03.805 --> 00:03:04.380
+PAUL: Yeah.
+
+00:03:04.380 --> 00:03:07.430
+JAKE: And you can end up with
+a situation where you know,
+
+00:03:07.430 --> 00:03:10.490
+by the time you send
+that to the other side,
+
+00:03:10.490 --> 00:03:13.330
+it's already sent you
+an entire file anyway.
+
+00:03:13.330 --> 00:03:15.210
+So there's going to
+be some wasted bites.
+
+00:03:15.210 --> 00:03:17.240
+PAUL: And we don't know
+that's too bad though, right?
+
+00:03:17.240 --> 00:03:18.656
+JAKE: We don't
+think it's too bad.
+
+00:03:18.656 --> 00:03:19.250
+Yeah.
+
+00:03:19.250 --> 00:03:20.295
+PAUL: It's probably
+better that way around
+
+00:03:20.295 --> 00:03:22.630
+than having to request
+everything over and over
+
+00:03:22.630 --> 00:03:23.437
+and over again.
+
+00:03:23.437 --> 00:03:25.770
+So OK, you decide you're going
+to ignore Paul and Jake's
+
+00:03:25.770 --> 00:03:28.480
+advice-- wisely-- because
+say, HTTP2's kicking off.
+
+00:03:28.480 --> 00:03:30.106
+But the thing is,
+not every client
+
+00:03:30.106 --> 00:03:31.230
+is going to be HTTP2 aware.
+
+00:03:31.230 --> 00:03:31.730
+Right?
+
+00:03:31.730 --> 00:03:33.850
+You still got HTTP1 clients.
+
+00:03:33.850 --> 00:03:38.637
+So how is a developer
+gonna kind of handle both?
+
+00:03:38.637 --> 00:03:41.220
+JAKE: Well, I mean, the servers
+are going to take care of that
+
+00:03:41.220 --> 00:03:42.020
+automatically.
+
+00:03:42.020 --> 00:03:44.040
+But I take your question.
+
+00:03:44.040 --> 00:03:45.240
+I take your point.
+
+00:03:45.240 --> 00:03:47.750
+We've got this issue of
+do you, as a developer,
+
+00:03:47.750 --> 00:03:50.230
+play to HTTP2 strengths?
+
+00:03:50.230 --> 00:03:53.450
+Or do you kind of
+fudge it for HTTP1?
+
+00:03:53.450 --> 00:03:55.847
+PAUL: I reckon if
+you built something
+
+00:03:55.847 --> 00:03:57.430
+that only works in
+evergreen browsers,
+
+00:03:57.430 --> 00:03:58.852
+you're probably safe
+to be like, oh, I'm
+
+00:03:58.852 --> 00:04:00.101
+just going to do HTTP2, right?
+
+00:04:00.101 --> 00:04:02.389
+JAKE: Yeah, so multiple CSS
+files, multiple JS files,
+
+00:04:02.389 --> 00:04:03.180
+everything's sweet.
+
+00:04:03.180 --> 00:04:06.170
+PAUL: Well, I reckon,
+oh, the HTTP2,
+
+00:04:06.170 --> 00:04:08.589
+it sends an upgrade
+header, doesn't it?
+
+00:04:08.589 --> 00:04:09.380
+JAKE: Yes, it does.
+
+00:04:09.380 --> 00:04:10.610
+PAUL: So you could
+differentiate on that.
+
+00:04:10.610 --> 00:04:12.818
+You could be, like, uh, if
+I get that upgrade header,
+
+00:04:12.818 --> 00:04:15.040
+I'm going to send you
+the HTTP2 version.
+
+00:04:15.040 --> 00:04:16.790
+JAKE: Oh, I see what
+you're talking about.
+
+00:04:16.790 --> 00:04:18.420
+PAUL: So then you might
+build two versions in your
+
+00:04:18.420 --> 00:04:19.220
+build scripts.
+
+00:04:19.220 --> 00:04:22.910
+So like, concatenate in one,
+not concatenate in the other,
+
+00:04:22.910 --> 00:04:24.470
+and then, basically,
+differentiate
+
+00:04:24.470 --> 00:04:25.830
+based on that header, whether
+you're going to-- which one
+
+00:04:25.830 --> 00:04:26.260
+you're going to serve up.
+
+00:04:26.260 --> 00:04:27.170
+JAKE: So you cater for both?
+
+00:04:27.170 --> 00:04:27.600
+PAUL: Ah ha ha!
+
+00:04:27.600 --> 00:04:28.180
+Winner, winner, chicken dinner.
+
+00:04:28.180 --> 00:04:29.388
+JAKE: Oh, that's a good idea.
+
+00:04:29.388 --> 00:04:30.085
+PAUL: I like it.
+
+00:04:30.085 --> 00:04:33.760
+JAKE: One of the things I'm real
+hoping for is the edge caching
+
+00:04:33.760 --> 00:04:37.250
+services, like CloudFlare,
+Akamai, the CDNs, I mean,
+
+00:04:37.250 --> 00:04:39.170
+they're already supporting
+things like SPDY.
+
+00:04:39.170 --> 00:04:41.082
+I think Akamai
+supports HTTP2 already.
+
+00:04:41.082 --> 00:04:42.790
+What I really want to
+see from those guys
+
+00:04:42.790 --> 00:04:46.440
+is for them to understand
+particular headers
+
+00:04:46.440 --> 00:04:48.590
+that our service would send.
+
+00:04:48.590 --> 00:04:51.710
+So even if you're
+running HTTP 1.1,
+
+00:04:51.710 --> 00:04:54.390
+you could send along, like,
+a link prefetch header.
+
+00:04:54.390 --> 00:04:57.450
+And it would interpret
+that as an HTTP2 push.
+
+00:04:57.450 --> 00:04:59.440
+PAUL: So that's kind of
+like a halfway house.
+
+00:04:59.440 --> 00:05:01.866
+It's like, my server's not
+ready to go HTTP2 entirely.
+
+00:05:01.866 --> 00:05:03.490
+But if I give you
+these additional bits
+
+00:05:03.490 --> 00:05:06.010
+of a nudge, then the people
+who do understand it,
+
+00:05:06.010 --> 00:05:08.530
+you're just giving them just
+that little bit of an edge
+
+00:05:08.530 --> 00:05:08.820
+over what you're doing.
+
+00:05:08.820 --> 00:05:09.130
+JAKE: Yeah.
+
+00:05:09.130 --> 00:05:09.500
+PAUL: Yeah, I like that.
+
+00:05:09.500 --> 00:05:11.265
+JAKE: So you can even send,
+like, an x-header say, oh, you
+
+00:05:11.265 --> 00:05:12.840
+know, x priority or something.
+
+00:05:12.840 --> 00:05:16.310
+That would be the signal to
+the HTTP2 part at the end that
+
+00:05:16.310 --> 00:05:18.980
+can sort of do the right
+thing with that stuff,
+
+00:05:18.980 --> 00:05:21.714
+send the right frames
+in the data stream.
+
+00:05:21.714 --> 00:05:22.880
+PAUL: In any case, I'm sold.
+
+00:05:22.880 --> 00:05:24.210
+I think it's going to be great.
+
+00:05:24.210 --> 00:05:27.160
+I suspect we probably just need
+to issue an apology to pretty
+
+00:05:27.160 --> 00:05:28.960
+much every developer
+that we've misadvised
+
+00:05:28.960 --> 00:05:29.960
+over the last few years.
+
+00:05:29.960 --> 00:05:31.900
+JAKE: Any performance
+talk before this time
+
+00:05:31.900 --> 00:05:33.030
+is null and void.
+
+00:05:33.030 --> 00:05:34.095
+PAUL: That's-- yeah.
+
+00:05:34.095 --> 00:05:36.220
+JAKE: Going to make us look
+pretty silly, isn't it?
+
+00:05:36.220 --> 00:05:40.970
+PAUL: Well, that's
+going to be awkward.
+
+00:05:40.970 --> 00:05:43.420
+[MUSIC PLAYING]
+

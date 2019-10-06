@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.460
+PETE LEPAGE: The CSS
+contain property makes
+
+00:00:02.460 --> 00:00:04.580
+rendering performance scream.
+
+00:00:04.580 --> 00:00:07.190
+It's easier to collect
+real user measurement
+
+00:00:07.190 --> 00:00:10.090
+data with the
+PerformanceObserver API.
+
+00:00:10.090 --> 00:00:12.340
+The browser can now
+progressively render
+
+00:00:12.340 --> 00:00:14.510
+content served from
+a service worker
+
+00:00:14.510 --> 00:00:18.610
+with streamed HTTP responses,
+and there's plenty more.
+
+00:00:18.610 --> 00:00:20.280
+I'm Pete LePage
+on the High Line.
+
+00:00:20.280 --> 00:00:25.610
+Let's dive in and see what's
+new for developers in Chrome 52.
+
+00:00:25.610 --> 00:00:28.800
+When an element changes and
+needs to be re-rendered,
+
+00:00:28.800 --> 00:00:33.130
+the browser has to consider how
+that single change may affect
+
+00:00:33.130 --> 00:00:35.490
+all the other nodes in the DOM.
+
+00:00:35.490 --> 00:00:38.910
+With the CSS contain property,
+you can scope the changes
+
+00:00:38.910 --> 00:00:41.830
+to only a portion of the DOM.
+
+00:00:41.830 --> 00:00:45.340
+contain:layout can help reduce
+the number of elements that may
+
+00:00:45.340 --> 00:00:47.990
+need to be re-rendered
+to just a handful.
+
+00:00:47.990 --> 00:00:50.940
+contain:paint clips the
+element and prevents
+
+00:00:50.940 --> 00:00:53.680
+an element's children
+from displaying outside
+
+00:00:53.680 --> 00:00:55.110
+of the bounds.
+
+00:00:55.110 --> 00:00:58.420
+contain:size means that the
+element's children do not
+
+00:00:58.420 --> 00:01:00.420
+affect the parent size.
+
+00:01:00.420 --> 00:01:04.099
+contain:style means that style
+changes won't get propagated
+
+00:01:04.099 --> 00:01:07.310
+back up past the
+containing element.
+
+00:01:07.310 --> 00:01:09.500
+Check out Paul
+Lewis's intro post
+
+00:01:09.500 --> 00:01:12.640
+linked below for more details.
+
+00:01:12.640 --> 00:01:16.040
+Collecting accurate, real
+user measurement data
+
+00:01:16.040 --> 00:01:19.070
+is critical to detecting
+performance problems
+
+00:01:19.070 --> 00:01:22.470
+and regressions that might
+hurt your user experience.
+
+00:01:22.470 --> 00:01:26.510
+Chrome 52 now supports the
+PerformanceObserver API,
+
+00:01:26.510 --> 00:01:28.970
+which enables a simple and
+performant way to collect
+
+00:01:28.970 --> 00:01:31.490
+performance data at runtime.
+
+00:01:31.490 --> 00:01:33.520
+Instead of polling
+for updates, you
+
+00:01:33.520 --> 00:01:35.970
+can declare what metrics
+you're interested in.
+
+00:01:35.970 --> 00:01:39.000
+Then, the browser notifies
+you when those new data
+
+00:01:39.000 --> 00:01:41.060
+points become available.
+
+00:01:41.060 --> 00:01:44.580
+Service workers can now
+stream HTTP responses,
+
+00:01:44.580 --> 00:01:47.030
+allowing the page
+that made the request
+
+00:01:47.030 --> 00:01:48.850
+to start working
+with the response
+
+00:01:48.850 --> 00:01:51.720
+as soon as the first
+chunk of data's available.
+
+00:01:51.720 --> 00:01:53.890
+Unlike fetch requests
+that need to wait
+
+00:01:53.890 --> 00:01:56.270
+until the entire
+response is received,
+
+00:01:56.270 --> 00:01:59.040
+stream responses can be
+progressively rendered
+
+00:01:59.040 --> 00:02:00.640
+as it's downloaded.
+
+00:02:00.640 --> 00:02:04.030
+There's also support for
+VAPID, an open standard
+
+00:02:04.030 --> 00:02:07.750
+to authenticate your server
+with a web push service.
+
+00:02:07.750 --> 00:02:10.509
+Style sheets can now
+specify alpha values
+
+00:02:10.509 --> 00:02:15.290
+for colors using hex values
+instead of the RGBA syntax.
+
+00:02:15.290 --> 00:02:18.710
+And you can now experiment
+with persistent storage
+
+00:02:18.710 --> 00:02:20.660
+as an origin trial.
+
+00:02:20.660 --> 00:02:23.260
+These are just a few of
+the changes in Chrome 52
+
+00:02:23.260 --> 00:02:24.470
+for developers.
+
+00:02:24.470 --> 00:02:26.720
+Check the description
+for more details.
+
+00:02:26.720 --> 00:02:28.920
+And if you want to stay
+up to date with Chrome
+
+00:02:28.920 --> 00:02:31.360
+and know what's coming,
+click the Subscribe button
+
+00:02:31.360 --> 00:02:32.700
+right up there.
+
+00:02:32.700 --> 00:02:35.710
+I'm Pete LePage, and as soon
+as Chrome 53 is released,
+
+00:02:35.710 --> 00:02:38.370
+I'll be right here to tell
+you what's new in Chrome.
+
+00:02:38.370 --> 00:02:42.020
+[MUSIC PLAYING]
+

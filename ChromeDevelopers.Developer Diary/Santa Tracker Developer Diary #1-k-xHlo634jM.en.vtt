@@ -1,0 +1,132 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.375
+SAM THOROGOOD:
+Hey everyone, it's
+
+00:00:01.375 --> 00:00:03.510
+Sam here from Google's
+Developer Relations Team.
+
+00:00:03.510 --> 00:00:04.740
+It's nice to see you.
+
+00:00:04.740 --> 00:00:06.240
+This is a brand new
+development area
+
+00:00:06.240 --> 00:00:09.420
+about Google's Santa Tracker,
+a fun, educational website
+
+00:00:09.420 --> 00:00:11.750
+that we release every
+year in December.
+
+00:00:11.750 --> 00:00:14.250
+This site is built by a whole
+team of helper elves, not just
+
+00:00:14.250 --> 00:00:15.060
+me.
+
+00:00:15.060 --> 00:00:17.790
+So let's get started and
+have a look at the site.
+
+00:00:17.790 --> 00:00:19.500
+Santa Tracker as a
+winter playground.
+
+00:00:19.500 --> 00:00:21.150
+We have a bunch of different
+scenes here to explore,
+
+00:00:21.150 --> 00:00:23.733
+different houses, including some
+which are very coding themed,
+
+00:00:23.733 --> 00:00:24.710
+which we really like.
+
+00:00:24.710 --> 00:00:26.160
+There are some Easter eggs
+hidden throughout the site,
+
+00:00:26.160 --> 00:00:28.118
+you know, things like
+this little balloon here,
+
+00:00:28.118 --> 00:00:29.370
+which you can take off.
+
+00:00:29.370 --> 00:00:31.860
+And it's mostly built with
+Polymer, the web framework.
+
+00:00:31.860 --> 00:00:32.940
+In this series,
+we're going to share
+
+00:00:32.940 --> 00:00:35.070
+a bunch of learnings with you,
+things that we've discovered
+
+00:00:35.070 --> 00:00:36.611
+in building Santa
+Tracker, and things
+
+00:00:36.611 --> 00:00:38.445
+you can take away and
+use in your own sites.
+
+00:00:38.445 --> 00:00:39.944
+The most important
+thing to remember
+
+00:00:39.944 --> 00:00:41.580
+is that Santa
+Tracker is on GitHub.
+
+00:00:41.580 --> 00:00:43.410
+So you can actually
+follow along at home.
+
+00:00:43.410 --> 00:00:45.180
+Go to the Google organization
+here, and check out
+
+00:00:45.180 --> 00:00:45.990
+Santa Tracker web.
+
+00:00:45.990 --> 00:00:48.690
+The instructions are
+below how to build it.
+
+00:00:48.690 --> 00:00:50.717
+So curl up by the fire,
+grab a cup of hot cocoa,
+
+00:00:50.717 --> 00:00:52.800
+and learn a little bit
+about Santa Tracker with me
+
+00:00:52.800 --> 00:00:54.660
+this holiday season.
+
+00:00:54.660 --> 00:00:55.630
+Thanks for watching.
+
+00:00:55.630 --> 00:00:57.240
+You can subscribe to the
+Google Chrome Developer channel
+
+00:00:57.240 --> 00:00:58.080
+down here.
+
+00:00:58.080 --> 00:01:01.250
+Or check out some other
+great videos along here.
+

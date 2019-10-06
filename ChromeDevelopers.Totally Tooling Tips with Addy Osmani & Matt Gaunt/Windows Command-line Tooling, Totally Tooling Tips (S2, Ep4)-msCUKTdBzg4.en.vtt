@@ -1,0 +1,619 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.900
+[MUSIC PLAYING]
+
+00:00:18.600 --> 00:00:22.250
+ADDY OSMANI: So the other week,
+I bought a new Windows laptop.
+
+00:00:22.250 --> 00:00:23.580
+MATT GAUNT: How come?
+
+00:00:23.580 --> 00:00:25.710
+ADDY OSMANI: I was
+curious whether-- it's
+
+00:00:25.710 --> 00:00:29.020
+been a few years since I've
+really used Windows heavily,
+
+00:00:29.020 --> 00:00:31.560
+and I was curious what
+the front-end workflow
+
+00:00:31.560 --> 00:00:33.750
+and the command line
+workflow looked like there.
+
+00:00:33.750 --> 00:00:36.600
+MATT GAUNT: So what does
+the front-end tooling
+
+00:00:36.600 --> 00:00:37.539
+system look like now?
+
+00:00:37.539 --> 00:00:39.330
+ADDY OSMANI: So the
+command line workflow--
+
+00:00:39.330 --> 00:00:42.200
+the front-end tooling workflow
+isn't massively different,
+
+00:00:42.200 --> 00:00:45.030
+but to get your command line
+workflow on par these days
+
+00:00:45.030 --> 00:00:46.530
+still requires a
+little bit of work.
+
+00:00:46.530 --> 00:00:49.620
+So what I was used to when I
+played with Windows a few years
+
+00:00:49.620 --> 00:00:51.167
+ago was the Windows
+prompt, which
+
+00:00:51.167 --> 00:00:56.180
+was this really very, very
+basic update to the DOS prompt.
+
+00:00:56.180 --> 00:00:58.440
+Always seemed like
+better for just managing
+
+00:00:58.440 --> 00:00:59.540
+files than anything--
+
+00:00:59.540 --> 00:00:59.930
+MATT GAUNT: Yeah, in some ways--
+
+00:00:59.930 --> 00:01:00.320
+ADDY OSMANI: --super serious.
+
+00:01:00.320 --> 00:01:02.890
+MATT GAUNT: --just feel like
+I was exploring my hard drive,
+
+00:01:02.890 --> 00:01:03.640
+and that was about it.
+
+00:01:03.640 --> 00:01:06.098
+ADDY OSMANI: Yeah, I'd play
+with utilities there and stuff.
+
+00:01:06.098 --> 00:01:08.060
+But Microsoft then
+did PowerShell,
+
+00:01:08.060 --> 00:01:11.460
+which was way better and
+designed for automation,
+
+00:01:11.460 --> 00:01:14.240
+had much better support
+for objects and variables,
+
+00:01:14.240 --> 00:01:17.679
+and had these really rich
+prompts for commandlets.
+
+00:01:17.679 --> 00:01:19.970
+But it comes with support
+for auto-completion right out
+
+00:01:19.970 --> 00:01:20.620
+of the box--
+
+00:01:20.620 --> 00:01:21.328
+MATT GAUNT: Yeah.
+
+00:01:21.328 --> 00:01:23.790
+ADDY OSMANI: --so that's
+what I want from--
+
+00:01:23.790 --> 00:01:24.420
+MATT GAUNT: It's the kind
+of thing that you can--
+
+00:01:24.420 --> 00:01:24.820
+ADDY OSMANI: --a shell.
+
+00:01:24.820 --> 00:01:25.970
+MATT GAUNT: --take for
+granted with things
+
+00:01:25.970 --> 00:01:26.940
+like OS X and Linux.
+
+00:01:26.940 --> 00:01:29.080
+And it's like their terminals
+just come with all that stuff.
+
+00:01:29.080 --> 00:01:29.520
+ADDY OSMANI: Yeah.
+
+00:01:29.520 --> 00:01:30.510
+MATT GAUNT: It's just stock.
+
+00:01:30.510 --> 00:01:31.260
+ADDY OSMANI: Yeah.
+
+00:01:31.260 --> 00:01:33.670
+And so another thing that
+we commonly do on Mac
+
+00:01:33.670 --> 00:01:36.480
+is we have dot files set
+up with all of our aliases.
+
+00:01:36.480 --> 00:01:38.692
+And you can create your
+own PowerShell profile
+
+00:01:38.692 --> 00:01:40.400
+that's got the same
+type of stuff set up.
+
+00:01:40.400 --> 00:01:41.024
+MATT GAUNT: OK.
+
+00:01:41.024 --> 00:01:43.950
+ADDY OSMANI: So you can create
+aliases for Sublime Text.
+
+00:01:43.950 --> 00:01:47.840
+So subl or ST will go
+and fire off Sublime.
+
+00:01:47.840 --> 00:01:49.670
+So you can create
+system-level aliases.
+
+00:01:49.670 --> 00:01:51.510
+You can use DOS
+key as well, which
+
+00:01:51.510 --> 00:01:54.760
+is another utility for
+just creating aliases.
+
+00:01:54.760 --> 00:01:56.270
+But PowerShell's great.
+
+00:01:56.270 --> 00:01:58.324
+It doesn't quite
+get you all the way.
+
+00:01:58.324 --> 00:01:59.990
+There's still a few
+things missing, so--
+
+00:01:59.990 --> 00:02:01.801
+MATT GAUNT: Yeah.
+
+00:02:01.801 --> 00:02:03.300
+ADDY OSMANI: Another
+tool that I use
+
+00:02:03.300 --> 00:02:06.140
+is ConEmu, which is
+a console emulator.
+
+00:02:06.140 --> 00:02:08.020
+And it's got support
+for multiple tabs.
+
+00:02:08.020 --> 00:02:09.820
+So you've got multiple
+tabs in there.
+
+00:02:09.820 --> 00:02:12.662
+You can do vertical tab
+splitting as well and all
+
+00:02:12.662 --> 00:02:13.620
+sorts of other layout--
+
+00:02:13.620 --> 00:02:14.720
+MATT GAUNT: That's quite nice.
+
+00:02:14.720 --> 00:02:15.678
+ADDY OSMANI: --configs.
+
+00:02:15.678 --> 00:02:17.420
+So that's pretty nice.
+
+00:02:17.420 --> 00:02:20.110
+MATT GAUNT: Again, it still
+feels like you're-- it's just
+
+00:02:20.110 --> 00:02:22.530
+things that I've grown to
+expect, I guess, or one--
+
+00:02:22.530 --> 00:02:23.590
+ADDY OSMANI: Yeah.
+
+00:02:23.590 --> 00:02:24.305
+MATT GAUNT: It's
+one of those things.
+
+00:02:24.305 --> 00:02:26.720
+If it was removed from me,
+I'd probably instantly just
+
+00:02:26.720 --> 00:02:28.661
+be like, please can I
+have the tabs back now.
+
+00:02:28.661 --> 00:02:29.410
+ADDY OSMANI: Yeah.
+
+00:02:29.410 --> 00:02:30.410
+MATT GAUNT: Yeah.
+
+00:02:30.410 --> 00:02:33.166
+ADDY OSMANI: So I use
+ConEmu, but there's still
+
+00:02:33.166 --> 00:02:34.040
+other things missing.
+
+00:02:34.040 --> 00:02:37.550
+So the tool that I mostly
+use these days is Cmder.
+
+00:02:37.550 --> 00:02:39.900
+And Cmder is awesome.
+
+00:02:39.900 --> 00:02:41.210
+MATT GAUNT: Why is it awesome?
+
+00:02:41.210 --> 00:02:43.150
+ADDY OSMANI: Because I said so.
+
+00:02:43.150 --> 00:02:45.000
+It's awesome because
+it's like a power
+
+00:02:45.000 --> 00:02:46.750
+utility with all of this stuff.
+
+00:02:46.750 --> 00:02:48.560
+So it's got ConEmu,
+it's got PowerShell.
+
+00:02:48.560 --> 00:02:49.665
+It's using all that stuff.
+
+00:02:49.665 --> 00:02:51.600
+MATT GAUNT: Oh, it's just like
+a group of all the best things--
+
+00:02:51.600 --> 00:02:52.010
+ADDY OSMANI: Yes.
+
+00:02:52.010 --> 00:02:52.600
+MATT GAUNT: --just
+in one bundle.
+
+00:02:52.600 --> 00:02:53.475
+ADDY OSMANI: Exactly.
+
+00:02:53.475 --> 00:02:56.140
+It's also got Clink,
+which is-- basically,
+
+00:02:56.140 --> 00:03:00.280
+it's the Windows Shell combined
+with Readline, which is a GNU
+
+00:03:00.280 --> 00:03:03.110
+library for working with Dash.
+
+00:03:03.110 --> 00:03:04.500
+Gives you better
+auto-completion,
+
+00:03:04.500 --> 00:03:06.402
+gives you history
+search, batch utilities.
+
+00:03:06.402 --> 00:03:07.110
+MATT GAUNT: Nice.
+
+00:03:07.110 --> 00:03:08.550
+ADDY OSMANI: Really nice.
+
+00:03:08.550 --> 00:03:10.670
+And my favorite
+thing about Cmder
+
+00:03:10.670 --> 00:03:13.812
+is the integration that you
+can set up with other apps.
+
+00:03:13.812 --> 00:03:16.270
+So something I've tried to do
+over the last couple of years
+
+00:03:16.270 --> 00:03:19.490
+with Sublime is try
+to get my editor
+
+00:03:19.490 --> 00:03:21.690
+on screen with my
+command line, just like--
+
+00:03:21.690 --> 00:03:22.320
+MATT GAUNT: --just
+somewhere else--
+
+00:03:22.320 --> 00:03:22.545
+ADDY OSMANI: --built in.
+
+00:03:22.545 --> 00:03:23.460
+MATT GAUNT: --in the UI, yeah.
+
+00:03:23.460 --> 00:03:25.793
+ADDY OSMANI: And none of the
+integrations I've ever seen
+
+00:03:25.793 --> 00:03:27.262
+have looked half decent.
+
+00:03:27.262 --> 00:03:27.970
+MATT GAUNT: Yeah.
+
+00:03:27.970 --> 00:03:32.086
+I tried one plug-in on Atom,
+and it was just-- it sort of
+
+00:03:32.086 --> 00:03:33.990
+looked like my terminal,
+but it wasn't quite.
+
+00:03:33.990 --> 00:03:34.989
+And it was a bit clunky.
+
+00:03:34.989 --> 00:03:35.790
+ADDY OSMANI: Yep.
+
+00:03:35.790 --> 00:03:36.498
+MATT GAUNT: Yeah.
+
+00:03:36.498 --> 00:03:37.660
+So this just adds it in.
+
+00:03:37.660 --> 00:03:38.280
+ADDY OSMANI: Yeah,
+it just adds it in.
+
+00:03:38.280 --> 00:03:40.110
+You have a single
+window, drag it around.
+
+00:03:40.110 --> 00:03:41.490
+You've got your command
+line at the top,
+
+00:03:41.490 --> 00:03:43.640
+you've got your Complete
+Editor window at the bottom.
+
+00:03:43.640 --> 00:03:43.955
+MATT GAUNT: Nice.
+
+00:03:43.955 --> 00:03:45.871
+ADDY OSMANI: And it's
+completely configurable.
+
+00:03:45.871 --> 00:03:49.000
+So you can tell it to take up
+how much of the command line
+
+00:03:49.000 --> 00:03:49.830
+window you want.
+
+00:03:49.830 --> 00:03:50.690
+You can script that.
+
+00:03:50.690 --> 00:03:51.290
+MATT GAUNT: I like it, yep.
+
+00:03:51.290 --> 00:03:52.581
+ADDY OSMANI: It's kind of neat.
+
+00:03:52.581 --> 00:03:54.350
+So you've got that.
+
+00:03:54.350 --> 00:03:56.905
+Cmder also encourages
+you to install PoshGit--
+
+00:03:56.905 --> 00:03:57.530
+MATT GAUNT: OK.
+
+00:03:57.530 --> 00:04:00.160
+ADDY OSMANI: --which is a set
+of utilities on top of Git.
+
+00:04:00.160 --> 00:04:06.030
+So if I go and I clone a project
+on GitHub and I CD into it,
+
+00:04:06.030 --> 00:04:10.210
+I can make some edits
+and do Gits and type
+
+00:04:10.210 --> 00:04:12.640
+in a command like
+Git C. And then
+
+00:04:12.640 --> 00:04:14.980
+I can tab through all
+the options like Commit
+
+00:04:14.980 --> 00:04:15.610
+and all of that other stuff.
+
+00:04:15.610 --> 00:04:16.060
+MATT GAUNT: Nice.
+
+00:04:16.060 --> 00:04:17.370
+ADDY OSMANI: It's
+just sort of nice.
+
+00:04:17.370 --> 00:04:18.704
+Nice contextual auto-completion.
+
+00:04:18.704 --> 00:04:20.536
+MATT GAUNT: Nice little
+bit of sugar on top.
+
+00:04:20.536 --> 00:04:21.760
+ADDY OSMANI: Yeah, exactly.
+
+00:04:21.760 --> 00:04:23.680
+What do you think
+about Package Managers?
+
+00:04:23.680 --> 00:04:25.650
+Could you use another
+one in your life?
+
+00:04:25.650 --> 00:04:27.260
+MATT GAUNT: No.
+
+00:04:27.260 --> 00:04:30.000
+I've got AptGet on
+Linux and that, to me,
+
+00:04:30.000 --> 00:04:31.070
+just makes total sense.
+
+00:04:31.070 --> 00:04:35.470
+Home brew is the closest thing,
+I think, on Mac that I have.
+
+00:04:35.470 --> 00:04:39.420
+But then it has its own
+weird oddities on my machines
+
+00:04:39.420 --> 00:04:40.070
+normally.
+
+00:04:40.070 --> 00:04:41.940
+ADDY OSMANI: I'm hearing
+that you want another package
+
+00:04:41.940 --> 00:04:42.520
+manager.
+
+00:04:42.520 --> 00:04:44.090
+MATT GAUNT: You're hearing
+me wrong, but fine.
+
+00:04:44.090 --> 00:04:46.131
+ADDY OSMANI: So you want
+another package manager,
+
+00:04:46.131 --> 00:04:47.160
+and Windows has got one.
+
+00:04:47.160 --> 00:04:47.785
+MATT GAUNT: OK.
+
+00:04:47.785 --> 00:04:49.520
+ADDY OSMANI: It's
+called Chocolately.
+
+00:04:52.172 --> 00:04:54.630
+MATT GAUNT: That just doesn't
+sound like a package manager,
+
+00:04:54.630 --> 00:04:57.169
+but fine.
+
+00:04:57.169 --> 00:04:57.960
+How is Chocolately?
+
+00:04:57.960 --> 00:04:58.482
+Is it good?
+
+00:04:58.482 --> 00:04:59.940
+ADDY OSMANI:
+Chocolately is decent.
+
+00:04:59.940 --> 00:05:01.430
+You're using Atom.
+
+00:05:01.430 --> 00:05:03.460
+You've got your hipster
+sticker over there.
+
+00:05:03.460 --> 00:05:03.950
+MATT GAUNT: My little
+arm sticker, yeah.
+
+00:05:03.950 --> 00:05:05.741
+ADDY OSMANI: Yeah,
+you've got your sticker.
+
+00:05:05.741 --> 00:05:07.730
+So you can do like
+choco install atom.
+
+00:05:07.730 --> 00:05:08.365
+Just install.
+
+00:05:08.365 --> 00:05:11.870
+It gives you an update, progress
+bar, and your command line
+
+00:05:11.870 --> 00:05:12.620
+and everything.
+
+00:05:12.620 --> 00:05:13.490
+MATT GAUNT: To be
+fair, with things
+
+00:05:13.490 --> 00:05:15.615
+like that, the minute you
+start getting used to it,
+
+00:05:15.615 --> 00:05:16.990
+it's really, really nice.
+
+00:05:16.990 --> 00:05:17.740
+I don't know.
+
+00:05:17.740 --> 00:05:19.785
+It's nice not having to go to
+a website, download the thing,
+
+00:05:19.785 --> 00:05:21.885
+open up the AC, and then
+do all the other stuff,
+
+00:05:21.885 --> 00:05:22.510
+so that's nice.
+
+00:05:22.510 --> 00:05:23.640
+Does it update as well?
+
+00:05:23.640 --> 00:05:24.640
+ADDY OSMANI: I think so.
+
+00:05:24.640 --> 00:05:25.348
+MATT GAUNT: Nice.
+
+00:05:25.348 --> 00:05:29.280
+[MUSIC PLAYING]
+

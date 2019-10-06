@@ -1,0 +1,1953 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.317
+[MUSIC PLAYING]
+
+00:00:04.317 --> 00:00:05.442
+ROB DODSON: Hey, everybody.
+
+00:00:05.442 --> 00:00:05.942
+What's up?
+
+00:00:05.942 --> 00:00:06.800
+It's Rob Dodson.
+
+00:00:06.800 --> 00:00:09.320
+Welcome back to
+the Polycast show.
+
+00:00:09.320 --> 00:00:14.000
+So today, as part
+of popular demand,
+
+00:00:14.000 --> 00:00:15.710
+I'm going to be
+covering the topic
+
+00:00:15.710 --> 00:00:18.646
+of using Redux with Polymer.
+
+00:00:18.646 --> 00:00:20.270
+So a lot of people
+have asked for this.
+
+00:00:20.270 --> 00:00:22.880
+How do you manage state
+in a big Polymer app?
+
+00:00:22.880 --> 00:00:25.610
+How do you share, say, between
+all of your components?
+
+00:00:25.610 --> 00:00:28.160
+So I thought it'd be cool to
+try and tackle this subject.
+
+00:00:28.160 --> 00:00:32.729
+Now Redux itself is
+a very big topic.
+
+00:00:32.729 --> 00:00:36.410
+So I'm not going to be able to
+cover every single facet of it
+
+00:00:36.410 --> 00:00:37.340
+today in the show.
+
+00:00:37.340 --> 00:00:40.070
+But I will link to
+some content down
+
+00:00:40.070 --> 00:00:42.145
+in the show notes, some
+educational material,
+
+00:00:42.145 --> 00:00:44.270
+so you can learn more about
+Redux on your own time.
+
+00:00:44.270 --> 00:00:47.060
+But I'm going to try and give
+sort of a short synopsis of how
+
+00:00:47.060 --> 00:00:48.710
+Redux works, and then
+we'll look at how
+
+00:00:48.710 --> 00:00:51.770
+we can build a very, very simple
+Polymer app using the Polymer
+
+00:00:51.770 --> 00:00:53.870
+Redux behaviors.
+
+00:00:53.870 --> 00:00:56.180
+So follow me over
+here to my laptop.
+
+00:00:56.180 --> 00:00:58.640
+I've got a little presentation
+that I've put together
+
+00:00:58.640 --> 00:01:01.280
+for you to try and explain
+conceptually what Redux is
+
+00:01:01.280 --> 00:01:02.540
+and kind of how it works.
+
+00:01:02.540 --> 00:01:05.209
+So when you're
+building a Redux app,
+
+00:01:05.209 --> 00:01:07.547
+your app is going to
+be composed of views.
+
+00:01:07.547 --> 00:01:10.130
+If we're using Polymer, you can
+think of these as your Polymer
+
+00:01:10.130 --> 00:01:10.850
+components.
+
+00:01:10.850 --> 00:01:11.840
+OK?
+
+00:01:11.840 --> 00:01:13.857
+Now, a view in Redux
+land, it's typically
+
+00:01:13.857 --> 00:01:15.440
+going to be the kind
+of component that
+
+00:01:15.440 --> 00:01:18.320
+maybe has a few components
+sort of like aggregated inside
+
+00:01:18.320 --> 00:01:18.980
+of it.
+
+00:01:18.980 --> 00:01:21.890
+So every button and
+drop-down and things
+
+00:01:21.890 --> 00:01:24.470
+like that, those might not
+all be hooked up to Redux.
+
+00:01:24.470 --> 00:01:26.314
+But maybe the
+component that holds
+
+00:01:26.314 --> 00:01:28.480
+all of those children
+together-- you know, sometimes
+
+00:01:28.480 --> 00:01:30.835
+in Polymer we refer to these
+as mediator components.
+
+00:01:30.835 --> 00:01:32.210
+If you used React
+before, they're
+
+00:01:32.210 --> 00:01:34.407
+often referred to as
+Container Components.
+
+00:01:34.407 --> 00:01:35.990
+So these are components
+that aggregate
+
+00:01:35.990 --> 00:01:38.870
+a few very simple children
+will be connected up
+
+00:01:38.870 --> 00:01:40.654
+to our Redux system.
+
+00:01:40.654 --> 00:01:43.070
+So we've got our View, and
+what happens inside of the View
+
+00:01:43.070 --> 00:01:45.080
+is it's going to
+listen for changes.
+
+00:01:45.080 --> 00:01:47.690
+So today on the show, we'll be
+building a little friend list
+
+00:01:47.690 --> 00:01:50.200
+thing so someone can add
+a friend and hit a button,
+
+00:01:50.200 --> 00:01:51.770
+it'll save it to a list.
+
+00:01:51.770 --> 00:01:55.520
+So the change there would be
+the user clicking on that button
+
+00:01:55.520 --> 00:01:56.614
+and adding a friend.
+
+00:01:56.614 --> 00:01:58.280
+So what happens is
+our view is going to,
+
+00:01:58.280 --> 00:01:59.810
+when it hears that
+user action, you know,
+
+00:01:59.810 --> 00:02:01.230
+it hears somebody
+clicked on that button,
+
+00:02:01.230 --> 00:02:03.200
+it's going to dispatch
+what in Redux land
+
+00:02:03.200 --> 00:02:04.820
+is referred to as an action.
+
+00:02:04.820 --> 00:02:08.300
+And an action is quite
+simply just a little object
+
+00:02:08.300 --> 00:02:11.870
+that has a type, so some sort
+of string constant, in this case
+
+00:02:11.870 --> 00:02:14.870
+add friend, and then
+usually like a payload value
+
+00:02:14.870 --> 00:02:15.660
+of some kind.
+
+00:02:15.660 --> 00:02:17.870
+So in this case, our friend
+that we're going to add
+
+00:02:17.870 --> 00:02:19.760
+will be named Eric.
+
+00:02:19.760 --> 00:02:21.590
+So we dispatched that
+action in response
+
+00:02:21.590 --> 00:02:23.870
+to the user clicking a button
+or something like that.
+
+00:02:23.870 --> 00:02:26.404
+That action then gets
+handed off to this thing
+
+00:02:26.404 --> 00:02:27.320
+called the dispatcher.
+
+00:02:27.320 --> 00:02:28.910
+The dispatcher is
+actually what sort
+
+00:02:28.910 --> 00:02:31.970
+of like takes an action
+object, and it hands it
+
+00:02:31.970 --> 00:02:34.790
+to what are called reducers
+or in this case we're just
+
+00:02:34.790 --> 00:02:36.330
+going to build one big reducer.
+
+00:02:36.330 --> 00:02:40.010
+A reducer is a
+function that looks
+
+00:02:40.010 --> 00:02:42.290
+at the current action that's
+coming in and then based
+
+00:02:42.290 --> 00:02:45.200
+on that action type and based
+on the payload in that action,
+
+00:02:45.200 --> 00:02:48.687
+it generates some new
+state for our application.
+
+00:02:48.687 --> 00:02:50.270
+Now, the interesting
+thing about Redux
+
+00:02:50.270 --> 00:02:52.130
+is that it takes all
+the state for your app,
+
+00:02:52.130 --> 00:02:55.880
+and it keeps it in one
+big top-level object.
+
+00:02:55.880 --> 00:03:00.890
+So any change in any action
+dispatched by any component
+
+00:03:00.890 --> 00:03:03.710
+is going to update that
+one big state object.
+
+00:03:03.710 --> 00:03:05.960
+So inside of our reducer,
+what we're going to do
+
+00:03:05.960 --> 00:03:09.050
+is we're going to look
+at the incoming action.
+
+00:03:09.050 --> 00:03:11.380
+So in this case, the
+action type is Add Friend.
+
+00:03:11.380 --> 00:03:12.760
+And we might run some code.
+
+00:03:12.760 --> 00:03:15.590
+We might push something
+into an array or something
+
+00:03:15.590 --> 00:03:17.030
+like that as part of our state.
+
+00:03:17.030 --> 00:03:19.130
+And then finally,
+we'll return that state
+
+00:03:19.130 --> 00:03:21.030
+to the outside world.
+
+00:03:21.030 --> 00:03:22.760
+Now, both the dispatcher
+and the reducer
+
+00:03:22.760 --> 00:03:26.074
+live inside of a structure
+called the store.
+
+00:03:26.074 --> 00:03:27.990
+And normally when you're
+building a Redux app,
+
+00:03:27.990 --> 00:03:30.230
+you'll have these
+components that subscribe
+
+00:03:30.230 --> 00:03:32.350
+to updates from the store.
+
+00:03:32.350 --> 00:03:34.100
+Using the Polymer Redux
+Library that we're
+
+00:03:34.100 --> 00:03:36.970
+going to be working with today,
+that whole subscription flow
+
+00:03:36.970 --> 00:03:38.896
+is actually just going
+to be automated for us.
+
+00:03:38.896 --> 00:03:41.270
+But basically what happens is
+the reducer says, hey, I've
+
+00:03:41.270 --> 00:03:43.760
+got some new state based on
+the action that just happened,
+
+00:03:43.760 --> 00:03:46.340
+and then the store says,
+cool, I've got that new state.
+
+00:03:46.340 --> 00:03:48.350
+I will now hand it
+off to all the views
+
+00:03:48.350 --> 00:03:50.090
+that are listening to me.
+
+00:03:50.090 --> 00:03:51.530
+Now, the cool
+thing about this is
+
+00:03:51.530 --> 00:03:53.660
+we don't have to limit
+this to just one view.
+
+00:03:53.660 --> 00:03:55.350
+Because we have
+this one big store,
+
+00:03:55.350 --> 00:03:59.870
+we can have multiple views
+listening to that same store.
+
+00:03:59.870 --> 00:04:02.050
+So component over here
+can do some updating.
+
+00:04:02.050 --> 00:04:03.050
+It can change something.
+
+00:04:03.050 --> 00:04:04.550
+It can dispatch an
+action, and then
+
+00:04:04.550 --> 00:04:07.881
+these other components around
+it can also get that new state.
+
+00:04:07.881 --> 00:04:09.380
+So that way we don't
+have components
+
+00:04:09.380 --> 00:04:11.630
+that are trying to talk to
+one another, which is nice.
+
+00:04:11.630 --> 00:04:13.310
+We keep them decoupled.
+
+00:04:13.310 --> 00:04:15.530
+Instead, all the state
+just sort of flows
+
+00:04:15.530 --> 00:04:17.200
+into them unidirectionally.
+
+00:04:17.200 --> 00:04:18.950
+So everything that
+we're going to do today
+
+00:04:18.950 --> 00:04:20.420
+is actually going to
+be one-way bindings,
+
+00:04:20.420 --> 00:04:22.795
+because we're just going to
+go in the sort of little loop
+
+00:04:22.795 --> 00:04:23.540
+here.
+
+00:04:23.540 --> 00:04:25.360
+Now, I know that that's a
+lot of weird abstract theory.
+
+00:04:25.360 --> 00:04:26.960
+How about we get
+into our code editor,
+
+00:04:26.960 --> 00:04:28.400
+and we actually start
+writing some code
+
+00:04:28.400 --> 00:04:30.108
+and hopefully that
+will help some of this
+
+00:04:30.108 --> 00:04:31.440
+make a bit more sense.
+
+00:04:31.440 --> 00:04:35.300
+So follow me over here
+to Visual Studio Code.
+
+00:04:35.300 --> 00:04:37.697
+And I've got a very
+simple project set up.
+
+00:04:37.697 --> 00:04:39.530
+The first thing that
+I'm going to need to do
+
+00:04:39.530 --> 00:04:42.270
+is actually go into my terminal.
+
+00:04:42.270 --> 00:04:47.720
+I'm going to run bower install
+save turner Polymer Redux.
+
+00:04:47.720 --> 00:04:50.690
+I've actually got that already
+installed in my application.
+
+00:04:50.690 --> 00:04:52.250
+So let's skip that step.
+
+00:04:52.250 --> 00:04:53.750
+And the next thing
+we're going to do
+
+00:04:53.750 --> 00:04:56.630
+is we're actually going to use
+NPM to install Redux itself.
+
+00:04:56.630 --> 00:05:00.550
+So NPM install dash
+dash save Redux,
+
+00:05:00.550 --> 00:05:02.660
+and that will then pull
+down the Redux Library
+
+00:05:02.660 --> 00:05:03.771
+to our application.
+
+00:05:03.771 --> 00:05:04.270
+Cool.
+
+00:05:04.270 --> 00:05:05.830
+So those are really the
+only two dependencies
+
+00:05:05.830 --> 00:05:07.360
+that we're going
+to work with today.
+
+00:05:07.360 --> 00:05:09.970
+And now in Visual Studio code,
+we've got our bower components
+
+00:05:09.970 --> 00:05:12.700
+directory, and we've got
+our node modules directory
+
+00:05:12.700 --> 00:05:15.410
+with all of our
+dependencies set up for us.
+
+00:05:15.410 --> 00:05:18.370
+So I'm going to set up a
+little index HTML file then.
+
+00:05:18.370 --> 00:05:20.466
+And I've already kind of
+stubbed this file out.
+
+00:05:20.466 --> 00:05:22.090
+This should look
+pretty familiar to you
+
+00:05:22.090 --> 00:05:23.840
+if you've worked
+with Polymer before.
+
+00:05:23.840 --> 00:05:25.215
+So the first thing
+that I'm doing
+
+00:05:25.215 --> 00:05:27.520
+is I'm pulling in our
+web components polyfills,
+
+00:05:27.520 --> 00:05:30.892
+and then I'm making sure that
+Redux is included in the page.
+
+00:05:30.892 --> 00:05:32.350
+And then I've got
+a couple elements
+
+00:05:32.350 --> 00:05:34.599
+that I'm going to build
+today-- friend counter, friend
+
+00:05:34.599 --> 00:05:35.950
+input, and friend list.
+
+00:05:35.950 --> 00:05:38.440
+I'm just including the imports
+here so I don't forget.
+
+00:05:38.440 --> 00:05:41.250
+And then I've got the
+actual elements themselves
+
+00:05:41.250 --> 00:05:42.250
+commented out down here.
+
+00:05:42.250 --> 00:05:44.833
+So as I'm implementing each one,
+I will comment these back in.
+
+00:05:44.833 --> 00:05:46.990
+You can see the results.
+
+00:05:46.990 --> 00:05:50.954
+So let's start by
+defining our Redux store,
+
+00:05:50.954 --> 00:05:52.870
+the thing that's going
+to be consuming actions
+
+00:05:52.870 --> 00:05:55.237
+and generating the
+state for our app.
+
+00:05:55.237 --> 00:05:57.070
+Now, the way that I
+typically do that is I'm
+
+00:05:57.070 --> 00:06:00.210
+going to create a Redux
+store HTML import.
+
+00:06:00.210 --> 00:06:01.690
+And inside of this,
+just like we're
+
+00:06:01.690 --> 00:06:03.870
+working with any
+other Polymer element,
+
+00:06:03.870 --> 00:06:08.320
+we're going to
+import Polymer Redux.
+
+00:06:08.320 --> 00:06:11.166
+And then we're going
+to create a script tag.
+
+00:06:11.166 --> 00:06:13.182
+And inside of the script
+tag, the first thing
+
+00:06:13.182 --> 00:06:14.890
+that we want to do is
+we want to generate
+
+00:06:14.890 --> 00:06:17.600
+sort of the initial state
+for our application.
+
+00:06:17.600 --> 00:06:20.360
+So this is just sort
+of like the user hits
+
+00:06:20.360 --> 00:06:22.820
+the page for the first time,
+what does the app look like?
+
+00:06:22.820 --> 00:06:24.460
+So I'll define a const.
+
+00:06:24.460 --> 00:06:29.227
+And I will say initial
+state equals an object.
+
+00:06:29.227 --> 00:06:30.560
+And this is a really simple app.
+
+00:06:30.560 --> 00:06:33.018
+So we're going to say the only
+state that we initially have
+
+00:06:33.018 --> 00:06:35.420
+is this empty friends array.
+
+00:06:35.420 --> 00:06:37.990
+Next, I'm going to
+define our reducer.
+
+00:06:37.990 --> 00:06:40.780
+So I'll say that my reducer
+is going to be a function that
+
+00:06:40.780 --> 00:06:43.220
+takes state and action.
+
+00:06:47.640 --> 00:06:50.520
+And then typically what
+you see with reducers
+
+00:06:50.520 --> 00:06:52.140
+is they go through
+and they usually
+
+00:06:52.140 --> 00:06:53.550
+make a switch statement.
+
+00:06:53.550 --> 00:06:56.130
+And so they say-- they
+sort of do a switch case
+
+00:06:56.130 --> 00:06:58.200
+based on the action
+that is coming in
+
+00:06:58.200 --> 00:06:59.117
+at the current moment.
+
+00:06:59.117 --> 00:07:00.491
+So we're going to
+say, all right,
+
+00:07:00.491 --> 00:07:03.240
+so based on the action that's
+coming in, what kind of state
+
+00:07:03.240 --> 00:07:04.709
+do we want to return?
+
+00:07:04.709 --> 00:07:05.250
+So let's see.
+
+00:07:05.250 --> 00:07:10.080
+So if there's maybe no initial
+state or anything like that,
+
+00:07:10.080 --> 00:07:12.820
+let's actually go ahead and
+return our initial state.
+
+00:07:12.820 --> 00:07:17.010
+So if no state was passed in,
+we'll return the initial state.
+
+00:07:17.010 --> 00:07:20.650
+Then we can switch on the actual
+action that was passed in.
+
+00:07:20.650 --> 00:07:23.872
+So we'll do a switch
+for action dot type.
+
+00:07:23.872 --> 00:07:25.830
+And in the app that we're
+going to build today,
+
+00:07:25.830 --> 00:07:27.310
+we're only going to have
+one action type, which
+
+00:07:27.310 --> 00:07:28.500
+is going to be add friend.
+
+00:07:28.500 --> 00:07:29.750
+So let's say, all right, cool.
+
+00:07:29.750 --> 00:07:34.110
+So if action type is
+Add Friend, now we
+
+00:07:34.110 --> 00:07:36.397
+want to do something to
+modify our initial states.
+
+00:07:36.397 --> 00:07:37.980
+We're going to take
+our initial state,
+
+00:07:37.980 --> 00:07:40.650
+and we're going to sort of
+like move it to the next phase.
+
+00:07:40.650 --> 00:07:43.900
+We're going to add whatever
+friend was just passed in.
+
+00:07:43.900 --> 00:07:46.790
+Now, in Redux what
+is often done is
+
+00:07:46.790 --> 00:07:49.300
+you often make sure to sort
+of like copy your state.
+
+00:07:49.300 --> 00:07:52.781
+So rather than mutating the
+one big global state object,
+
+00:07:52.781 --> 00:07:54.030
+you try and make it immutable.
+
+00:07:54.030 --> 00:07:57.340
+So you actually copy it
+and in that copying phase,
+
+00:07:57.340 --> 00:07:59.222
+you might insert whatever
+changes you have.
+
+00:07:59.222 --> 00:08:00.930
+So every time you're
+modifying the state,
+
+00:08:00.930 --> 00:08:03.000
+you're creating a new
+copy of the state,
+
+00:08:03.000 --> 00:08:05.280
+and you're adding whatever
+changes you want to do.
+
+00:08:05.280 --> 00:08:09.000
+So we're going to
+say friends equals
+
+00:08:09.000 --> 00:08:12.690
+state dot friends dot slice 0.
+
+00:08:12.690 --> 00:08:15.900
+So we're making a copy of
+the current friends array.
+
+00:08:15.900 --> 00:08:20.250
+And then we're going to
+say friends dot push.
+
+00:08:20.250 --> 00:08:23.070
+And in this case, we're going
+to be pushing in the new friend
+
+00:08:23.070 --> 00:08:24.120
+name from our action.
+
+00:08:24.120 --> 00:08:27.465
+So we'll say action dot friend.
+
+00:08:27.465 --> 00:08:29.340
+So we're pushing that
+into our friends array.
+
+00:08:29.340 --> 00:08:32.070
+So that would be-- we'd just
+be pushing in a name like Steve
+
+00:08:32.070 --> 00:08:33.654
+or Eric or Monica or whatever.
+
+00:08:33.654 --> 00:08:35.570
+And then the last thing
+that we're going to do
+
+00:08:35.570 --> 00:08:38.130
+is we're going to return
+the new state object.
+
+00:08:38.130 --> 00:08:40.980
+Now, the pattern that I've
+often seen done in Redux
+
+00:08:40.980 --> 00:08:42.570
+goes a little
+something like this--
+
+00:08:42.570 --> 00:08:46.290
+you do an object assign,
+you take an empty object,
+
+00:08:46.290 --> 00:08:47.800
+you take it to current state.
+
+00:08:47.800 --> 00:08:49.216
+So we're taking
+the current state,
+
+00:08:49.216 --> 00:08:51.030
+we're copying it into
+a brand-new object,
+
+00:08:51.030 --> 00:08:53.149
+and then we take
+whichever little mutation
+
+00:08:53.149 --> 00:08:54.690
+that we're doing
+based on our action.
+
+00:08:54.690 --> 00:08:56.400
+So that'll be the last
+thing that we copy in there.
+
+00:08:56.400 --> 00:08:57.858
+So we'll say the
+last thing we want
+
+00:08:57.858 --> 00:09:02.970
+to copy in is this new friends
+array that we've created.
+
+00:09:02.970 --> 00:09:03.600
+OK?
+
+00:09:03.600 --> 00:09:05.650
+This is a pretty
+straightforward,
+
+00:09:05.650 --> 00:09:06.900
+simple reducer.
+
+00:09:06.900 --> 00:09:08.940
+It only has one action
+that it supports,
+
+00:09:08.940 --> 00:09:10.710
+but we could add
+multiple actions to this.
+
+00:09:10.710 --> 00:09:14.070
+We could add/remove friend,
+we could sort friends.
+
+00:09:14.070 --> 00:09:15.570
+The cool thing about
+this is it kind
+
+00:09:15.570 --> 00:09:18.649
+of just like scales infinitely,
+which is really nice.
+
+00:09:18.649 --> 00:09:20.190
+Now, the next thing
+we want to do now
+
+00:09:20.190 --> 00:09:22.350
+that we have our initial
+state and our reducer,
+
+00:09:22.350 --> 00:09:24.942
+is we want to create a store.
+
+00:09:24.942 --> 00:09:27.150
+And we want to create a
+behavior that we can hand off
+
+00:09:27.150 --> 00:09:29.850
+to all of our Polymer elements.
+
+00:09:29.850 --> 00:09:32.340
+So we'll say our
+store is going to be
+
+00:09:32.340 --> 00:09:38.520
+equal to Redux dot create
+store and pass it our reducer.
+
+00:09:38.520 --> 00:09:44.070
+And then we're going to say
+Redux behavior equals Polymer
+
+00:09:44.070 --> 00:09:48.120
+Redux, and we'll
+pass it our store.
+
+00:09:48.120 --> 00:09:50.250
+So if I haven't
+made any typos, I
+
+00:09:50.250 --> 00:09:52.590
+believe this should
+create a behavior for us
+
+00:09:52.590 --> 00:09:54.174
+based on that store
+that we generated.
+
+00:09:54.174 --> 00:09:56.340
+And now we can mix that
+into our different elements.
+
+00:09:56.340 --> 00:09:59.100
+And they'll just get notified
+whenever we update our data.
+
+00:09:59.100 --> 00:10:00.690
+So let's try that out.
+
+00:10:00.690 --> 00:10:03.371
+We'll create a new element
+here called Friend Counter.
+
+00:10:03.371 --> 00:10:05.370
+And the first thing I
+want to do in this element
+
+00:10:05.370 --> 00:10:07.560
+is I want to make sure that
+I'm pulling in Polymer.
+
+00:10:07.560 --> 00:10:10.690
+So I'll pull in Polymer.
+
+00:10:10.690 --> 00:10:15.220
+And I want to make sure that
+I pull in that Redux store
+
+00:10:15.220 --> 00:10:16.560
+that we created.
+
+00:10:16.560 --> 00:10:20.172
+So I'll import our Redux store.
+
+00:10:20.172 --> 00:10:22.630
+And now we're ready to start
+stamping out this new element.
+
+00:10:22.630 --> 00:10:24.820
+So we'll call our
+element Friend Counter.
+
+00:10:24.820 --> 00:10:25.960
+And the only thing that we're
+going to do with this element
+
+00:10:25.960 --> 00:10:28.780
+is we're just going to display
+the current count of friends
+
+00:10:28.780 --> 00:10:29.620
+that the user has.
+
+00:10:29.620 --> 00:10:32.036
+So basically just taking the
+count from that friends array
+
+00:10:32.036 --> 00:10:32.920
+from our store.
+
+00:10:32.920 --> 00:10:36.310
+We want to make sure that we
+mix in our Redux behavior.
+
+00:10:36.310 --> 00:10:42.562
+So we'll say behaviors
+Redux behavior like so.
+
+00:10:42.562 --> 00:10:44.770
+And then the only property
+that we're going to have--
+
+00:10:44.770 --> 00:10:46.353
+or we'll have two
+properties actually.
+
+00:10:46.353 --> 00:10:50.457
+So we'll have one which will
+be a property for our friends
+
+00:10:50.457 --> 00:10:51.290
+that gets passed in.
+
+00:10:51.290 --> 00:10:53.460
+So there's going to be friends.
+
+00:10:53.460 --> 00:10:55.150
+This is an array.
+
+00:10:55.150 --> 00:10:58.009
+And the one piece
+of unique syntax
+
+00:10:58.009 --> 00:10:59.800
+that the Redux behavior
+is going to give us
+
+00:10:59.800 --> 00:11:02.830
+is this thing called state path.
+
+00:11:02.830 --> 00:11:05.170
+And we're going to set
+that equal to friends.
+
+00:11:05.170 --> 00:11:07.570
+So what state path is
+doing is it's saying, OK,
+
+00:11:07.570 --> 00:11:09.460
+what is the path?
+
+00:11:09.460 --> 00:11:13.780
+How do I link this property
+up to the one sub-property
+
+00:11:13.780 --> 00:11:16.120
+in that big global state object?
+
+00:11:16.120 --> 00:11:18.940
+So for instance, because
+we have that big state
+
+00:11:18.940 --> 00:11:20.920
+object and friends,
+it's just an array,
+
+00:11:20.920 --> 00:11:22.360
+right off the root
+of that object,
+
+00:11:22.360 --> 00:11:24.520
+our path is just friends.
+
+00:11:24.520 --> 00:11:25.840
+But it could be nested.
+
+00:11:25.840 --> 00:11:28.517
+You could do something like if
+you were looking for user dot
+
+00:11:28.517 --> 00:11:30.100
+address, right, you
+could do something
+
+00:11:30.100 --> 00:11:32.320
+like that-- that right here.
+
+00:11:32.320 --> 00:11:34.240
+So you can kind of work
+down sub-properties
+
+00:11:34.240 --> 00:11:36.610
+if you need to to link up
+the property and this element
+
+00:11:36.610 --> 00:11:38.890
+to your big state object.
+
+00:11:38.890 --> 00:11:40.752
+But in this case,
+because friends
+
+00:11:40.752 --> 00:11:42.460
+is right on the root
+of our state object,
+
+00:11:42.460 --> 00:11:46.180
+we can just say our state
+path is right there.
+
+00:11:46.180 --> 00:11:49.582
+So that is going to connect our
+element to the friends array.
+
+00:11:49.582 --> 00:11:51.040
+Now, the next thing
+I want to do is
+
+00:11:51.040 --> 00:11:54.130
+I want to compute a property
+based on the total number
+
+00:11:54.130 --> 00:11:55.690
+of friends that we have.
+
+00:11:55.690 --> 00:12:00.030
+So I'll make another
+property called Friend Count.
+
+00:12:00.030 --> 00:12:02.630
+This is going to be a number,
+and this will actually
+
+00:12:02.630 --> 00:12:04.181
+be computed.
+
+00:12:04.181 --> 00:12:06.680
+And we'll give it a computing
+function called Compute Friend
+
+00:12:06.680 --> 00:12:10.880
+Count friends like that.
+
+00:12:10.880 --> 00:12:15.660
+And Compute Friend
+Count function
+
+00:12:15.660 --> 00:12:17.660
+takes that friends array.
+
+00:12:17.660 --> 00:12:20.690
+And it's just going to
+return friends dot length.
+
+00:12:20.690 --> 00:12:22.200
+Pretty simple.
+
+00:12:22.200 --> 00:12:23.960
+So now in our
+template, we're going
+
+00:12:23.960 --> 00:12:26.360
+to just say-- we'll
+have an H3 in here--
+
+00:12:26.360 --> 00:12:34.650
+and we'll say you have
+friend count [INAUDIBLE]
+
+00:12:34.650 --> 00:12:36.960
+So let's go back
+to our index file.
+
+00:12:36.960 --> 00:12:38.920
+Friend Counter is
+already ready to go.
+
+00:12:38.920 --> 00:12:41.920
+So we'll uncomment
+it in the body,
+
+00:12:41.920 --> 00:12:45.370
+go it to the Google
+Chrome, refresh the page.
+
+00:12:45.370 --> 00:12:48.953
+You can see right here it
+says you have 0 friends.
+
+00:12:48.953 --> 00:12:49.840
+Aw.
+
+00:12:49.840 --> 00:12:52.817
+But we can play around with
+some of that initial state
+
+00:12:52.817 --> 00:12:53.400
+if we want to.
+
+00:12:53.400 --> 00:12:55.710
+We can go to the Redux store,
+and we can say, OK, well
+
+00:12:55.710 --> 00:12:56.490
+I have a friend.
+
+00:12:56.490 --> 00:12:57.680
+Monica is my friend, right?
+
+00:12:57.680 --> 00:12:59.790
+So we can change the
+initial state in our app.
+
+00:12:59.790 --> 00:13:03.420
+We can go back and verify,
+ah, we have one friends now.
+
+00:13:03.420 --> 00:13:04.470
+Cool, you know?
+
+00:13:04.470 --> 00:13:06.870
+So that way we know that the
+initial state is working,
+
+00:13:06.870 --> 00:13:10.050
+and it's being piped
+to that element.
+
+00:13:10.050 --> 00:13:12.691
+Let us then modify that state.
+
+00:13:12.691 --> 00:13:14.190
+So let's now create
+a component that
+
+00:13:14.190 --> 00:13:16.296
+will let us add some more
+friends to this array.
+
+00:13:16.296 --> 00:13:17.670
+And hopefully what
+that should do
+
+00:13:17.670 --> 00:13:20.710
+is update the count in our
+friends counter as well.
+
+00:13:20.710 --> 00:13:23.480
+So I'll make a new element
+called Friend Input.
+
+00:13:23.480 --> 00:13:26.270
+And I'm just going to steal my
+imports from Friend Counter.
+
+00:13:26.270 --> 00:13:27.970
+So I'm going to grab Polymer.
+
+00:13:27.970 --> 00:13:30.150
+I'll grab the Redux store.
+
+00:13:30.150 --> 00:13:33.060
+Give me that are there.
+
+00:13:33.060 --> 00:13:36.500
+So friend input.
+
+00:13:36.500 --> 00:13:39.840
+Kind of make sure to not
+forget our Redux behavior.
+
+00:13:39.840 --> 00:13:42.769
+I forget this all the time.
+
+00:13:42.769 --> 00:13:44.310
+As I've been working
+with this thing,
+
+00:13:44.310 --> 00:13:46.200
+I've realized that's probably
+the main mistake I make.
+
+00:13:46.200 --> 00:13:47.290
+I forget the
+behavior, and then I'm
+
+00:13:47.290 --> 00:13:48.623
+like how come nothing's working?
+
+00:13:48.623 --> 00:13:49.690
+Why is this not updating?
+
+00:13:49.690 --> 00:13:52.080
+So I'm going to make sure
+the Redux behavior is there.
+
+00:13:52.080 --> 00:13:55.720
+And this element, we're going to
+have basically two very simple
+
+00:13:55.720 --> 00:13:56.220
+things.
+
+00:13:56.220 --> 00:13:57.750
+We'll have an input
+field so someone
+
+00:13:57.750 --> 00:13:59.130
+can type in a friend name.
+
+00:13:59.130 --> 00:14:02.016
+And I'm going to give
+it an ID of Field.
+
+00:14:02.016 --> 00:14:02.700
+There we go.
+
+00:14:02.700 --> 00:14:07.590
+And we will also have a button
+that just says Add Friend.
+
+00:14:07.590 --> 00:14:10.760
+And we'll say when
+someone-- we give the button
+
+00:14:10.760 --> 00:14:12.520
+a handler of on tap.
+
+00:14:12.520 --> 00:14:15.600
+When some clicks the button,
+we will run the Add Friend
+
+00:14:15.600 --> 00:14:16.440
+function.
+
+00:14:16.440 --> 00:14:20.160
+Now, the next interesting thing
+that the Polymer Redux Library
+
+00:14:20.160 --> 00:14:22.050
+gives us is it gives
+us a way to sort
+
+00:14:22.050 --> 00:14:26.080
+of like take what
+in Redux are called
+
+00:14:26.080 --> 00:14:27.780
+Action Creators
+and actually just
+
+00:14:27.780 --> 00:14:29.650
+sort of make them part
+of our components.
+
+00:14:29.650 --> 00:14:31.740
+So we can sort of
+pre-define the actions
+
+00:14:31.740 --> 00:14:34.590
+that this component can spit
+out to the rest of the world.
+
+00:14:34.590 --> 00:14:37.740
+So we do that by adding
+an Actions object.
+
+00:14:37.740 --> 00:14:39.630
+The same way that
+we add a Properties
+
+00:14:39.630 --> 00:14:42.270
+object, you can
+add Actions object.
+
+00:14:42.270 --> 00:14:44.400
+So the Actions object
+here, I'm going
+
+00:14:44.400 --> 00:14:47.220
+to have an action
+called Add, and that
+
+00:14:47.220 --> 00:14:51.990
+is going to be a function that
+is going to return an object.
+
+00:14:51.990 --> 00:14:54.561
+And this function is also going
+to take like our new friend's
+
+00:14:54.561 --> 00:14:55.060
+name.
+
+00:14:55.060 --> 00:14:57.220
+So we're going to
+return an object.
+
+00:14:57.220 --> 00:15:01.590
+The type will be add
+friend-- add friend--
+
+00:15:01.590 --> 00:15:04.640
+and the friend will be that
+name value that we pass in.
+
+00:15:04.640 --> 00:15:05.370
+OK?
+
+00:15:05.370 --> 00:15:06.720
+So far, so good.
+
+00:15:06.720 --> 00:15:09.150
+Now, the last thing
+we're going to do
+
+00:15:09.150 --> 00:15:11.280
+is we will implement
+this Add Friend
+
+00:15:11.280 --> 00:15:12.690
+function, this
+thing that happens
+
+00:15:12.690 --> 00:15:13.900
+when you click on the button.
+
+00:15:13.900 --> 00:15:15.060
+And what that's going to
+do when we implement it,
+
+00:15:15.060 --> 00:15:17.790
+is it's going to basically get
+the value from our text field,
+
+00:15:17.790 --> 00:15:20.710
+and it's going to dispatch
+this action right here.
+
+00:15:20.710 --> 00:15:22.110
+So let's go down here.
+
+00:15:22.110 --> 00:15:24.790
+We'll say add friend.
+
+00:15:24.790 --> 00:15:26.372
+It is function.
+
+00:15:26.372 --> 00:15:27.830
+First it's going
+to say, all right.
+
+00:15:27.830 --> 00:15:31.970
+Our field is equal to this
+dot dollar sign dot field
+
+00:15:31.970 --> 00:15:34.920
+so we can reference
+it more easily.
+
+00:15:34.920 --> 00:15:37.872
+And we'll say if
+the field has value,
+
+00:15:37.872 --> 00:15:39.830
+you know, if someone just
+like clicks a button,
+
+00:15:39.830 --> 00:15:41.310
+and there's nothing in there,
+we don't want to do anything.
+
+00:15:41.310 --> 00:15:42.935
+But if they've typed
+a name, then we're
+
+00:15:42.935 --> 00:15:48.490
+going to say this
+dot dispatch add.
+
+00:15:48.490 --> 00:15:52.030
+And we're going to
+pass in field value.
+
+00:15:52.030 --> 00:15:54.710
+So that will trigger this
+action creator right here.
+
+00:15:54.710 --> 00:15:56.150
+It'll pass in the name.
+
+00:15:56.150 --> 00:15:59.210
+And it'll dispatch this
+object to our reducer.
+
+00:15:59.210 --> 00:16:01.840
+So it will dispatch and
+friend with our friend's name.
+
+00:16:01.840 --> 00:16:03.950
+That will go to our
+Redux store, which
+
+00:16:03.950 --> 00:16:05.870
+will run the switch statement.
+
+00:16:05.870 --> 00:16:07.640
+It will say what action was it?
+
+00:16:07.640 --> 00:16:09.140
+It was Add Friend.
+
+00:16:09.140 --> 00:16:12.320
+And then let me find the
+action dot friend property
+
+00:16:12.320 --> 00:16:14.180
+and push that into
+the new state.
+
+00:16:14.180 --> 00:16:15.830
+So that's what
+we're doing there.
+
+00:16:15.830 --> 00:16:18.100
+So we're going to say
+dispatch the friend value.
+
+00:16:18.100 --> 00:16:20.308
+And then we'll do just like
+a little bit of clean up.
+
+00:16:20.308 --> 00:16:23.240
+So we'll also say field
+dot value equals null just
+
+00:16:23.240 --> 00:16:24.920
+to clear out the text field.
+
+00:16:24.920 --> 00:16:27.500
+And then we will
+also call field dot
+
+00:16:27.500 --> 00:16:29.224
+focus to return
+focus to the field
+
+00:16:29.224 --> 00:16:30.890
+after someone has
+clicked on the button.
+
+00:16:33.600 --> 00:16:36.160
+Let's see if this one
+works on the first try.
+
+00:16:36.160 --> 00:16:39.620
+Oh, we've got to go
+to our Index page,
+
+00:16:39.620 --> 00:16:41.522
+put the friend
+input back in there.
+
+00:16:41.522 --> 00:16:42.230
+Refresh the page.
+
+00:16:42.230 --> 00:16:42.740
+OK, cool.
+
+00:16:42.740 --> 00:16:44.450
+I've got my little input here.
+
+00:16:44.450 --> 00:16:46.810
+So my initial state
+says I have 0 friends.
+
+00:16:46.810 --> 00:16:49.400
+I'm going to add
+Monica, Add Friend,
+
+00:16:49.400 --> 00:16:51.260
+and-- oh, it's totally busted.
+
+00:16:51.260 --> 00:16:52.300
+What did we forgot?
+
+00:16:52.300 --> 00:16:53.320
+I forgot something.
+
+00:16:53.320 --> 00:16:58.130
+Oh, TypeError-- this.dispatch
+is not a function.
+
+00:16:58.130 --> 00:16:59.720
+Let's see, friend input.
+
+00:16:59.720 --> 00:17:00.810
+Where did we go wrong?
+
+00:17:00.810 --> 00:17:05.390
+Add friend function,
+Redux behavior.
+
+00:17:05.390 --> 00:17:07.770
+We got the Redux behavior.
+
+00:17:07.770 --> 00:17:09.890
+Mm-hm.
+
+00:17:09.890 --> 00:17:10.550
+All right.
+
+00:17:10.550 --> 00:17:11.930
+It's in here somewhere.
+
+00:17:11.930 --> 00:17:13.250
+Hold on, folks.
+
+00:17:13.250 --> 00:17:14.975
+We're going to fix this.
+
+00:17:14.975 --> 00:17:16.180
+Ah, wait.
+
+00:17:16.180 --> 00:17:16.750
+Wait.
+
+00:17:16.750 --> 00:17:18.040
+There it is.
+
+00:17:18.040 --> 00:17:21.221
+Behaviors is Redux behavior.
+
+00:17:21.221 --> 00:17:21.720
+All right.
+
+00:17:21.720 --> 00:17:22.595
+Let's try that again.
+
+00:17:25.510 --> 00:17:27.089
+Monica, Add Friend.
+
+00:17:27.089 --> 00:17:28.495
+We have one friends.
+
+00:17:28.495 --> 00:17:30.120
+Now we can't see the
+friends right now.
+
+00:17:30.120 --> 00:17:31.911
+We're not just displaying
+our friends list,
+
+00:17:31.911 --> 00:17:33.390
+but we can sort of
+tell that things
+
+00:17:33.390 --> 00:17:35.765
+are working, because as I'm
+adding friends to that array,
+
+00:17:35.765 --> 00:17:37.836
+it is updating our friend count.
+
+00:17:37.836 --> 00:17:39.210
+So the last thing
+I'm going to do
+
+00:17:39.210 --> 00:17:42.300
+is just create a friend list
+element that will display
+
+00:17:42.300 --> 00:17:44.500
+all the friends as we add them.
+
+00:17:44.500 --> 00:17:50.780
+So we will grab our two imports
+from our previous elements,
+
+00:17:50.780 --> 00:17:52.420
+create a new one
+called friend list.
+
+00:17:52.420 --> 00:17:54.310
+This one will be pretty simple.
+
+00:17:54.310 --> 00:17:58.310
+So the Friend List, just like
+we did with the Friend Counter,
+
+00:17:58.310 --> 00:18:00.250
+and its properties object.
+
+00:18:00.250 --> 00:18:03.800
+We will say, hey, I would
+like to have Friends object,
+
+00:18:03.800 --> 00:18:05.790
+the type is array.
+
+00:18:05.790 --> 00:18:08.961
+The state path is friends.
+
+00:18:08.961 --> 00:18:14.750
+I want to make sure to include
+our behaviors here-- behaviors.
+
+00:18:14.750 --> 00:18:17.120
+Redux behavior.
+
+00:18:17.120 --> 00:18:20.571
+That is going to hook us
+up to the Redux store.
+
+00:18:20.571 --> 00:18:22.070
+And then the last
+thing I want to do
+
+00:18:22.070 --> 00:18:25.880
+is create a UL and then a little
+template with a dom repeat.
+
+00:18:25.880 --> 00:18:30.470
+Template is equals dom repeat.
+
+00:18:30.470 --> 00:18:33.440
+We'll say that the items that
+we're going to pass in-- again,
+
+00:18:33.440 --> 00:18:35.090
+we're using a
+one-way binding here.
+
+00:18:35.090 --> 00:18:37.400
+The items is going
+to be Friends.
+
+00:18:37.400 --> 00:18:41.560
+And we will say-- we will
+rename each item to just friend,
+
+00:18:41.560 --> 00:18:42.770
+like so.
+
+00:18:42.770 --> 00:18:44.770
+And then I'm going to
+create a little list item.
+
+00:18:48.590 --> 00:18:52.030
+And I will pipe in the friend.
+
+00:18:52.030 --> 00:18:52.530
+Save that.
+
+00:18:52.530 --> 00:18:56.930
+Go back to our Index file,
+uncomment the friend list,
+
+00:18:56.930 --> 00:18:58.380
+go back here, refresh the page.
+
+00:18:58.380 --> 00:18:59.880
+So we don't see
+anything just yet.
+
+00:18:59.880 --> 00:19:00.796
+Well, we add a friend.
+
+00:19:00.796 --> 00:19:01.740
+We add Monica.
+
+00:19:01.740 --> 00:19:02.330
+Boom.
+
+00:19:02.330 --> 00:19:02.910
+There we go.
+
+00:19:02.910 --> 00:19:04.230
+One friend.
+
+00:19:04.230 --> 00:19:05.250
+Two friends.
+
+00:19:05.250 --> 00:19:07.060
+Three friends.
+
+00:19:07.060 --> 00:19:07.560
+Cool.
+
+00:19:07.560 --> 00:19:09.970
+So now we've got three elements.
+
+00:19:09.970 --> 00:19:12.951
+They are all receiving data
+from our global data store.
+
+00:19:12.951 --> 00:19:14.700
+But the nice thing is
+those three elements
+
+00:19:14.700 --> 00:19:17.520
+do not have to talk directly
+to each other or anything
+
+00:19:17.520 --> 00:19:18.960
+like that.
+
+00:19:18.960 --> 00:19:21.280
+They all work in
+essentially the same way.
+
+00:19:21.280 --> 00:19:24.180
+They all take part in the sort
+of unidirectional data flow.
+
+00:19:24.180 --> 00:19:25.920
+So all any of them
+have to do if they
+
+00:19:25.920 --> 00:19:28.860
+want to change something is
+they just dispatch an action.
+
+00:19:28.860 --> 00:19:31.452
+And then we implement that
+action as part of our reducer.
+
+00:19:31.452 --> 00:19:32.910
+That updates the
+state for the app,
+
+00:19:32.910 --> 00:19:35.100
+and then everyone
+displays the new value.
+
+00:19:35.100 --> 00:19:36.610
+So that about
+covers it for today.
+
+00:19:36.610 --> 00:19:38.818
+I know this was a pretty
+quick and dirty introduction
+
+00:19:38.818 --> 00:19:40.170
+to using Redux and Polymer.
+
+00:19:40.170 --> 00:19:41.700
+And there are probably
+a bunch of questions
+
+00:19:41.700 --> 00:19:42.630
+that you have and
+a bunch of things
+
+00:19:42.630 --> 00:19:43.755
+that you would like to see.
+
+00:19:43.755 --> 00:19:46.950
+So please, please, please
+leave some comments down below.
+
+00:19:46.950 --> 00:19:50.490
+And I will try to maybe tackle
+some of those feature requests
+
+00:19:50.490 --> 00:19:52.050
+and whatnot in the next episode.
+
+00:19:52.050 --> 00:19:54.240
+I definitely want to keep
+exploring some of this,
+
+00:19:54.240 --> 00:19:56.070
+looking at how we can
+like share actions,
+
+00:19:56.070 --> 00:19:58.740
+do asynchronous actions,
+other cool things like that.
+
+00:19:58.740 --> 00:20:00.240
+As always, you can
+also contact me
+
+00:20:00.240 --> 00:20:02.730
+on a social network
+of your choosing.
+
+00:20:02.730 --> 00:20:06.010
+Thank you so much for watching,
+and I'll see you next time.
+
+00:20:06.010 --> 00:20:06.510
+Hey, folks.
+
+00:20:06.510 --> 00:20:06.840
+What's up?
+
+00:20:06.840 --> 00:20:07.470
+It is Rob.
+
+00:20:07.470 --> 00:20:09.303
+Thank you so much for
+watching this episode.
+
+00:20:09.303 --> 00:20:11.760
+If you'd like to see some
+more, we've got some over there
+
+00:20:11.760 --> 00:20:12.435
+in the playlist.
+
+00:20:12.435 --> 00:20:14.370
+And as always, you can
+click the little Subscribe
+
+00:20:14.370 --> 00:20:16.170
+button to keep getting
+content every time
+
+00:20:16.170 --> 00:20:17.490
+we push it up to the channel.
+
+00:20:17.490 --> 00:20:20.060
+Again, thank you so
+much for watching.
+

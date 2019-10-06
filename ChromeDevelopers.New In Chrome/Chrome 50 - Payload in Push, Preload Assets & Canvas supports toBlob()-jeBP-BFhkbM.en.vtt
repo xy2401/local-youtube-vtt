@@ -1,0 +1,197 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.315
+[MUSIC PLAYING]
+
+00:00:04.630 --> 00:00:08.550
+Chrome 50 adds support for
+payloads and push messages
+
+00:00:08.550 --> 00:00:11.300
+and adds new features
+to notifications.
+
+00:00:11.300 --> 00:00:14.370
+You can preload important
+resources with the link
+
+00:00:14.370 --> 00:00:18.910
+rel=preload tag and the canvas
+element gets an upgrade.
+
+00:00:18.910 --> 00:00:24.730
+Let's dive in and see what's
+new for developers in Chrome 50.
+
+00:00:24.730 --> 00:00:27.290
+Push notifications
+allow you to trigger
+
+00:00:27.290 --> 00:00:30.380
+system-level notifications
+in the same way
+
+00:00:30.380 --> 00:00:32.850
+that native applications do.
+
+00:00:32.850 --> 00:00:36.500
+In Chrome 50, you can now
+include an encrypted data
+
+00:00:36.500 --> 00:00:39.160
+payload with the
+push, eliminating
+
+00:00:39.160 --> 00:00:42.680
+the need for the service
+worker to fetch the data needed
+
+00:00:42.680 --> 00:00:44.410
+for the notification.
+
+00:00:44.410 --> 00:00:50.130
+And it's already supported by
+Firefox using the web push API.
+
+00:00:50.130 --> 00:00:53.920
+You can now dismiss
+notifications across devices
+
+00:00:53.920 --> 00:00:56.880
+when closed by the
+user on one device
+
+00:00:56.880 --> 00:00:59.280
+and you have more
+control over how
+
+00:00:59.280 --> 00:01:02.120
+notifications look and behave.
+
+00:01:02.120 --> 00:01:06.290
+You can set icons on actions,
+set custom time stamps,
+
+00:01:06.290 --> 00:01:10.390
+and even specify whether the
+device should vibrate or make
+
+00:01:10.390 --> 00:01:13.120
+a sound.
+
+00:01:13.120 --> 00:01:15.440
+Have you ever wanted
+to let the browser know
+
+00:01:15.440 --> 00:01:19.240
+about an important font,
+script, or other resource that
+
+00:01:19.240 --> 00:01:23.290
+will be needed later without
+delaying the onload event?
+
+00:01:23.290 --> 00:01:27.080
+Chrome now supports the
+link rel=preload tag.
+
+00:01:27.080 --> 00:01:31.890
+A W3C draft spec that allows
+you to tell the browser which
+
+00:01:31.890 --> 00:01:34.960
+resources should be
+preemptively downloaded
+
+00:01:34.960 --> 00:01:39.620
+and can reduce the time to
+get real content on screen.
+
+00:01:39.620 --> 00:01:44.460
+Link rel=preload replaces
+link rel=subresource,
+
+00:01:44.460 --> 00:01:48.430
+which had a number of bugs and
+drawbacks and wasn't supported
+
+00:01:48.430 --> 00:01:51.740
+by other browsers.
+
+00:01:51.740 --> 00:01:55.640
+The canvas element now
+supports the toBlob method,
+
+00:01:55.640 --> 00:01:57.580
+which means instead
+of manipulating
+
+00:01:57.580 --> 00:02:01.580
+Base64 encoded strings that
+you get from toDataURL,
+
+00:02:01.580 --> 00:02:06.670
+you can now work with the
+encoded binary data directly.
+
+00:02:06.670 --> 00:02:11.910
+It's smaller and tends to fit
+more use cases than a data URI.
+
+00:02:11.910 --> 00:02:15.060
+Not only can you more easily
+upload them to your server,
+
+00:02:15.060 --> 00:02:18.090
+or store them in
+IndexedDB for later use,
+
+00:02:18.090 --> 00:02:22.010
+you can draw the image blobs
+to another canvas context
+
+00:02:22.010 --> 00:02:25.740
+with the create image
+bitmap API, supported today
+
+00:02:25.740 --> 00:02:27.570
+in Chrome and Firefox.
+
+00:02:27.570 --> 00:02:29.150
+One other quick note.
+
+00:02:29.150 --> 00:02:33.830
+The geolocation APIs are
+now only accessible when
+
+00:02:33.830 --> 00:02:35.930
+served from a secure origin.
+
+00:02:35.930 --> 00:02:38.760
+These are just a few of
+the changes in Chrome 50
+
+00:02:38.760 --> 00:02:40.090
+for developers.
+
+00:02:40.090 --> 00:02:42.260
+Check the description
+for more details
+
+00:02:42.260 --> 00:02:44.730
+and be sure to
+like and subscribe.
+
+00:02:44.730 --> 00:02:48.060
+I'm Pete LePage, and as soon
+as Chrome 51 is released,
+
+00:02:48.060 --> 00:02:51.310
+I'll be right here to tell
+you what's new in Chrome.
+
+00:02:51.310 --> 00:02:54.360
+[MUSIC PLAYING]
+

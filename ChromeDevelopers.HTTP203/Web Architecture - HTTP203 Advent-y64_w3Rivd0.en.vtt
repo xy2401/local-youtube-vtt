@@ -1,0 +1,305 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.290
+[MUSIC PLAYING]
+
+00:00:06.590 --> 00:00:08.490
+SURMA: So you're
+wearing a Christmas hat
+
+00:00:08.490 --> 00:00:09.509
+because it's Christmas.
+
+00:00:09.509 --> 00:00:10.050
+SPEAKER: Yep.
+
+00:00:10.050 --> 00:00:11.591
+SURMA: And as is
+common in Christmas,
+
+00:00:11.591 --> 00:00:14.070
+we're going to talk about
+12 things that we're
+
+00:00:14.070 --> 00:00:15.870
+excited about for the web.
+
+00:00:15.870 --> 00:00:20.170
+And I thought I would talk
+about architecture on the web.
+
+00:00:20.170 --> 00:00:20.700
+SPEAKER: OK.
+
+00:00:20.700 --> 00:00:21.550
+Two minutes.
+
+00:00:21.550 --> 00:00:22.110
+What is that?
+
+00:00:22.110 --> 00:00:22.651
+Architecture.
+
+00:00:22.651 --> 00:00:23.820
+That's buildings.
+
+00:00:23.820 --> 00:00:25.403
+It's nothing to do
+with the web, mate.
+
+00:00:25.403 --> 00:00:26.220
+You got confused.
+
+00:00:26.220 --> 00:00:30.600
+SURMA: Well, the thing is
+that lots of other fields,
+
+00:00:30.600 --> 00:00:32.529
+like enterprise
+engineering and gaming,
+
+00:00:32.529 --> 00:00:35.070
+have like these architectural
+patterns when they build, like,
+
+00:00:35.070 --> 00:00:35.980
+really complex things.
+
+00:00:35.980 --> 00:00:36.150
+SPEAKER: Nope.
+
+00:00:36.150 --> 00:00:37.441
+Fields don't have architecture.
+
+00:00:37.441 --> 00:00:39.245
+You're thinking of cities.
+
+00:00:39.245 --> 00:00:41.370
+SURMA: Software architecture,
+software engineering.
+
+00:00:41.370 --> 00:00:45.090
+You come up with patterns to use
+to compose and combine things
+
+00:00:45.090 --> 00:00:46.620
+and to, you know,
+like separation
+
+00:00:46.620 --> 00:00:49.080
+of concerns, all these things.
+
+00:00:49.080 --> 00:00:50.680
+And the web hasn't
+really done that.
+
+00:00:50.680 --> 00:00:52.320
+I mean, you could have done,
+but developers mostly are like,
+
+00:00:52.320 --> 00:00:53.490
+here's a little
+app that I built,
+
+00:00:53.490 --> 00:00:54.906
+or they just throw
+things together
+
+00:00:54.906 --> 00:00:57.120
+and do most of the complex
+stuff in the back end.
+
+00:00:57.120 --> 00:00:59.760
+And I think it's time for
+the front end developers
+
+00:00:59.760 --> 00:01:02.772
+to have proper architecture in
+their front end code, as well.
+
+00:01:02.772 --> 00:01:04.980
+SPEAKER: Isn't this what,
+like, all of the frameworks
+
+00:01:04.980 --> 00:01:06.065
+have been doing forever?
+
+00:01:06.065 --> 00:01:06.690
+SURMA: Exactly.
+
+00:01:06.690 --> 00:01:09.032
+But I think these patterns
+should be exposed more
+
+00:01:09.032 --> 00:01:10.240
+to the developers themselves.
+
+00:01:10.240 --> 00:01:14.220
+For example, what I think that
+the web has an actor pattern,
+
+00:01:14.220 --> 00:01:18.396
+where you have independent
+threads that are all running
+
+00:01:18.396 --> 00:01:19.770
+in a single thread
+mode, but they
+
+00:01:19.770 --> 00:01:21.120
+communicate using [INAUDIBLE].
+
+00:01:21.120 --> 00:01:22.370
+That's pretty much what
+we have on the web.
+
+00:01:22.370 --> 00:01:23.954
+And that is called
+an actor pattern,
+
+00:01:23.954 --> 00:01:26.370
+but these two things have
+barely been combined on the web.
+
+00:01:26.370 --> 00:01:28.980
+And I think there's more
+patterns like this out there
+
+00:01:28.980 --> 00:01:30.690
+that haven't been
+applied to the web
+
+00:01:30.690 --> 00:01:34.590
+to make your front end
+architecture more manageable
+
+00:01:34.590 --> 00:01:35.724
+and nicer to work with.
+
+00:01:35.724 --> 00:01:37.890
+SPEAKER: So what do we need
+to make this work, then?
+
+00:01:37.890 --> 00:01:39.930
+SURMA: I think we
+already have everything
+
+00:01:39.930 --> 00:01:41.760
+that we need to
+make it work, but we
+
+00:01:41.760 --> 00:01:42.802
+haven't started using it.
+
+00:01:42.802 --> 00:01:44.593
+Like, we just need to
+look for the patterns
+
+00:01:44.593 --> 00:01:47.240
+that game engineers use, that
+enterprise engineers user,
+
+00:01:47.240 --> 00:01:49.920
+and see if those are
+useful for us on the web,
+
+00:01:49.920 --> 00:01:52.080
+and try to build
+things using it.
+
+00:01:52.080 --> 00:01:53.100
+And just experiment.
+
+00:01:53.100 --> 00:01:54.810
+SPEAKER: So getting stuff,
+like, off the main thread
+
+00:01:54.810 --> 00:01:56.490
+except for the UI
+stuff [INAUDIBLE]??
+
+00:01:56.490 --> 00:01:57.060
+SURMA: For example.
+
+00:01:57.060 --> 00:01:58.601
+That's one thing I
+want to look into.
+
+00:01:58.601 --> 00:02:00.660
+And then how do you
+separate the concerns?
+
+00:02:00.660 --> 00:02:04.230
+What goes onto the off thread,
+what stays on the main thread?
+
+00:02:04.230 --> 00:02:06.880
+And then how do you structure
+your code off thread, as well,
+
+00:02:06.880 --> 00:02:08.880
+because that's just one
+big bolt of logic still.
+
+00:02:08.880 --> 00:02:11.210
+How do you, like, compose
+those little bits and bobs
+
+00:02:11.210 --> 00:02:11.310
+[INAUDIBLE]?
+
+00:02:11.310 --> 00:02:13.851
+SPEAKER: So in 10 seconds, what
+should be on the main thread?
+
+00:02:13.851 --> 00:02:14.476
+SURMA: UI work.
+
+00:02:14.476 --> 00:02:15.100
+SPEAKER: Right.
+
+00:02:15.100 --> 00:02:17.310
+In six seconds, what shouldn't
+be on the main thread?
+
+00:02:17.310 --> 00:02:18.240
+SURMA: Not UI work.
+
+00:02:18.240 --> 00:02:19.281
+SPEAKER: That is correct.
+
+00:02:19.281 --> 00:02:21.068
+Well done.
+
+00:02:21.068 --> 00:02:23.900
+[MUSIC PLAYING]
+
+00:02:24.400 --> 00:02:25.590
+Nailed it.
+
+00:02:25.590 --> 00:02:27.990
+I want to talk about
+weightless CSS.
+
+00:02:27.990 --> 00:02:29.612
+SURMA: Weightless?
+
+00:02:29.612 --> 00:02:31.320
+SPEAKER: That is one
+of the words I said.
+
+00:02:31.320 --> 00:02:32.910
+The other one is CSS.
+
+00:02:32.910 --> 00:02:35.010
+SURMA: So CSS without weight.
+
+00:02:35.010 --> 00:02:37.760
+SPEAKER: Yes, that is a good
+reversal of what I said.
+
+00:02:37.760 --> 00:02:39.520
+SURMA: What is weight?
+

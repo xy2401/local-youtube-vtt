@@ -1,0 +1,771 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:00.000 --> 00:00:01.910
+[MUSIC PLAYING]
+
+00:00:01.910 --> 00:00:05.302
+(DING) [MUSIC PLAYING]
+
+00:00:07.712 --> 00:00:10.130
+[SOUND EFFECTS]
+
+00:00:10.130 --> 00:00:12.470
+欢迎大家来到这期 Supercharged TL  DW
+PAUL LEWIS: Welcome to this Supercharged TL;DW.
+
+00:00:12.470 --> 00:00:13.144
+我是 Paul
+I'm Paul.
+
+00:00:13.144 --> 00:00:15.976
+上周我和 Surma 直播了
+If you didn't catch the livestream with me [? and Serma ?] last week,
+
+00:00:15.976 --> 00:00:17.800
+如何制作一个边栏导航（side nav）
+well, basically we built a side nav.
+
+00:00:17.800 --> 00:00:20.690
+如果你错过了上周的直播  我将再次展示那个导航效果
+Let me show you what we built. So you've got your standard app
+
+00:00:20.690 --> 00:00:21.720
+这有个标准的 app bar
+bar here.
+
+00:00:21.720 --> 00:00:24.120
+点击侧边栏
+You click on this sidebar.
+
+00:00:24.120 --> 00:00:26.060
+也可以点击背景
+And you click on the background, or you
+
+00:00:26.060 --> 00:00:28.960
+或者像这样  拖拽手势也能让它消失
+can dismiss it with a sort of drag gesture, like that.
+
+00:00:28.960 --> 00:00:29.680
+很酷
+Awesome stuff.
+
+00:00:29.680 --> 00:00:32.320
+你将会知道怎么做出这样的侧边栏
+So let me show you how we built it.
+
+00:00:32.320 --> 00:00:34.150
+但依照惯例  在此之前
+But before we do that, as usual, we're
+
+00:00:34.150 --> 00:00:38.030
+让我们到 Theory Corner 
+going to head over to-- yep, you guessed it-- Theory Corner!
+
+00:00:38.030 --> 00:00:40.650
+分析原理
+Join me.
+
+00:00:40.650 --> 00:00:41.260
+Hello
+Hello.
+
+00:00:41.260 --> 00:00:43.540
+欢迎再次来到 Theory Corner
+Welcome back to Theory Corner.
+
+00:00:43.540 --> 00:00:44.720
+我们有一个页面  
+So this is what we've got.
+
+00:00:44.720 --> 00:00:47.860
+还有一个容器元素
+We've got our page, and we've got a container element.
+
+00:00:47.860 --> 00:00:50.452
+将侧边栏和背景放在
+The container element is going to be the home for the side
+
+00:00:50.452 --> 00:00:51.410
+容器元素中
+nav and the background.
+
+00:00:51.410 --> 00:00:53.210
+首先  我们要为容器元素
+What we're going to do, first of all,
+
+00:00:53.210 --> 00:00:55.150
+加上 overflow hidden
+is we're going to put overflow hidden on this.
+
+00:00:55.150 --> 00:00:57.800
+还要保证容器的宽高都是 100%
+And we're going to make it take up 100% width and height.
+
+00:00:57.800 --> 00:00:59.597
+加上 overflow hidden 的原因
+So it's got overflow hidden because this
+
+00:00:59.597 --> 00:01:01.180
+是为了侧边栏移出屏幕的时候
+is going to transform out to the side,
+
+00:01:01.180 --> 00:01:02.570
+不会出现滚动条
+and we don't want any scrollbars.
+
+00:01:02.570 --> 00:01:04.734
+所以设置这个属性
+So we put that in place.
+
+00:01:04.734 --> 00:01:07.150
+我们还需要对背景的透明度设置 transition
+The background, we're just going to transition its opacity
+
+00:01:07.150 --> 00:01:08.935
+透明度从 0 到 1
+from 0 up to 1.
+
+00:01:08.935 --> 00:01:11.060
+背景的颜色可以是全透明的黑色
+And we'll set it to have a transparent black color,
+
+00:01:11.060 --> 00:01:13.497
+或者是半透明的黑色
+or semi-transparent black color, in the background.
+
+00:01:13.497 --> 00:01:14.830
+还有侧边栏
+The other thing is the side nav.
+
+00:01:14.830 --> 00:01:16.510
+我们希望它是从侧边滑入的
+We want this to slide in from the side,
+
+00:01:16.510 --> 00:01:18.230
+也就是说  侧边栏要在独立的层中
+so we need to have will-change transform on it
+
+00:01:18.230 --> 00:01:19.530
+所以它的 will-change 属性值为 transform
+so that it gets its own layer.
+
+00:01:19.530 --> 00:01:21.610
+和 Swipeable Cards （另一个 demo）上做的类似
+Very much like we did with the swipeable cards.
+
+00:01:21.610 --> 00:01:23.550
+我们可以轻松滑动侧栏了
+And then we can transform it in and out.
+
+00:01:23.550 --> 00:01:27.130
+还需要一些按钮  触发侧边栏的滑入和滑出
+We're also going to need some buttons for bringing it in and out.
+
+00:01:27.130 --> 00:01:28.610
+再绑定一些 touch 事件
+And we're going to have to have some touch events so that we
+
+00:01:28.610 --> 00:01:30.210
+实现手势操作
+can do the dragging stuff.
+
+00:01:30.210 --> 00:01:31.070
+超酷吧
+All cool?
+
+00:01:31.070 --> 00:01:35.050
+现在让我们回到现实
+Let's go back to reality!
+
+00:01:35.050 --> 00:01:36.530
+欢迎回到现实
+Welcome back to reality.
+
+00:01:36.530 --> 00:01:37.650
+Oh  对
+Oh, yes.
+
+00:01:37.650 --> 00:01:38.450
+是的
+Yes.
+
+00:01:38.450 --> 00:01:39.630
+就是现实
+Reality.
+
+00:01:39.630 --> 00:01:41.240
+我们生活
+That's where you'll find us today.
+
+00:01:41.240 --> 00:01:43.000
+实用才是关键
+Pragmatic to the end.
+
+00:01:43.000 --> 00:01:43.951
+看代码吧
+Code.
+
+00:01:43.951 --> 00:01:44.450
+好的
+OK.
+
+00:01:44.450 --> 00:01:46.490
+html 和 css 和我们在
+So the markup and the CSS is pretty much
+
+00:01:46.490 --> 00:01:48.060
+Theory Corner 中说的差不多
+what we discussed in Theory Corner.
+
+00:01:48.060 --> 00:01:49.355
+有一个侧边栏
+We've gotten aside.
+
+00:01:49.355 --> 00:01:51.730
+有一些用作 JS 钩子的类名
+We've got a few JS classes here so that we can pick it up
+
+00:01:51.730 --> 00:01:52.620
+方便在 JS 中调用
+in the JavaScript.
+
+00:01:52.620 --> 00:01:54.570
+这部分内容大多如你所想
+But mostly it's pretty much what you'd expect.
+
+00:01:54.570 --> 00:01:55.980
+有一个按钮用于关闭侧栏
+There's a button for closing.
+
+00:01:55.980 --> 00:01:57.460
+用另一个按钮拉开侧栏
+There's a button for opening.
+
+00:01:57.460 --> 00:02:00.520
+侧边栏有自己的标题
+We've got the title here for the side nav.
+
+00:02:00.520 --> 00:02:03.540
+它的内容用列表的形式呈现
+And then we've got the list of the side nav content.
+
+00:02:03.540 --> 00:02:06.960
+从 CSS 上可以看出
+In terms of the CSS, here's what we've got for the background.
+
+00:02:06.960 --> 00:02:09.530
+背景是用 before 伪元素实现的
+You see it's actually done with a before pseudo element.
+
+00:02:09.530 --> 00:02:12.030
+背景色是透明度为
+And you can see that it's got a background of black
+
+00:02:12.030 --> 00:02:14.670
+40% 的黑色
+with an opacity of 0.4.
+
+00:02:14.670 --> 00:02:16.140
+对 opacity 设置了 will-change
+We switched on will-change opacity
+
+00:02:16.140 --> 00:02:18.431
+我们知道背景的透明度会发生改变
+because we know we're going to be changing the opacity,
+
+00:02:18.431 --> 00:02:21.070
+所以这么设置
+so we're going to say will-change opacity.
+
+00:02:21.070 --> 00:02:22.837
+别说成 will-change pasty 了
+Didn't say will-change pasty.
+
+00:02:22.837 --> 00:02:24.545
+完全两个意思
+That would be a different thing entirely.
+
+00:02:27.360 --> 00:02:31.280
+接着我们可以给 opacity 设置过渡了
+Will-change opacity, and then we can set a transition of opacity
+
+00:02:31.280 --> 00:02:32.550
+过渡函数用这个
+with that curve.
+
+00:02:32.550 --> 00:02:33.560
+看起来还不错
+That looks quite nice.
+
+00:02:33.560 --> 00:02:34.620
+300 毫秒
+0.3 seconds.
+
+00:02:34.620 --> 00:02:35.720
+速度也合适
+Nice and quick.
+
+00:02:35.720 --> 00:02:38.520
+现在要考虑如何让侧边栏可见
+Then the other thing is when we set the side nav to visible,
+
+00:02:38.520 --> 00:02:40.459
+我们将会用 JS 实现
+which we're going to do with some JavaScripts,
+
+00:02:40.459 --> 00:02:42.000
+还需要让 before 伪元素
+and we can say to that before that we
+
+00:02:42.000 --> 00:02:46.340
+渐渐出现
+want you to fade up from an opacity of zero to an opacity of one.
+
+00:02:46.340 --> 00:02:50.990
+侧边栏也同样如此
+The same is pretty much true of the side nav itself.
+
+00:02:50.990 --> 00:02:51.739
+看这
+Here it is.
+
+00:02:51.739 --> 00:02:53.155
+有个 box shadow
+And you see it's got a box shadow.
+
+00:02:53.155 --> 00:02:55.071
+所以侧栏边上会有一点点阴影
+So we've got a nice little shadow on the side.
+
+00:02:55.071 --> 00:02:57.470
+有趣的点在于 transform 的数值
+The interesting thing is we have to transform it by,
+
+00:02:57.470 --> 00:03:00.280
+在这个例子里我用了 102%  看上去不太整啊
+in my case, 102%, which sounds really odd.
+
+00:03:00.280 --> 00:03:02.040
+这么设置的原因在于那个阴影
+But the reason is there's that shadow.
+
+00:03:02.040 --> 00:03:04.310
+如果只是移动 100%
+And if you just transform it 100% to the left,
+
+00:03:04.310 --> 00:03:06.270
+就会看到侧边栏左边的部分阴影
+you still see a little bit of shadow on the left-hand side.
+
+00:03:06.270 --> 00:03:09.580
+所以需要把侧边栏推远一些  来解决这个问题
+So if we just take it a little bit further, solves that problem.
+
+00:03:09.580 --> 00:03:11.080
+侧边栏上还有些花样
+The interesting thing about the side
+
+00:03:11.080 --> 00:03:13.340
+它从屏幕左侧滑入的效果
+nav itself, the one that comes in from the side,
+
+00:03:13.340 --> 00:03:15.874
+是通过一个动画类实现的
+is that it has a separate animatable class.
+
+00:03:15.874 --> 00:03:18.040
+当用户拖拽的时候
+The reason is I want to switch that off when they're
+
+00:03:18.040 --> 00:03:19.584
+侧边栏没有动画
+doing the drag motion and have it
+
+00:03:19.584 --> 00:03:21.500
+而当侧边栏需要自动滑出的时候
+on when they're doing the automated transition
+
+00:03:21.500 --> 00:03:22.967
+才开启动画开关
+from the side in and out.
+
+00:03:22.967 --> 00:03:24.550
+所以我们用这个类来实现
+So we use this class to basically say,
+
+00:03:24.550 --> 00:03:26.960
+当动画被开启的时候  侧边栏自行滑入滑出
+this is kind of-- it's doing the automatic transition,
+
+00:03:26.960 --> 00:03:30.620
+关闭动画的时候  拖拽完成滑入滑出
+or when it's off, it's going to be used for the dragging.
+
+00:03:30.620 --> 00:03:31.300
+很棒
+Cool.
+
+00:03:31.300 --> 00:03:33.589
+JS 代码看这里
+The JavaScript is over here.
+
+00:03:33.589 --> 00:03:35.130
+所用的技巧和上次一样
+And it's the same trick as last time.
+
+00:03:35.130 --> 00:03:38.094
+我们将一堆事件绑定在 this 上
+A bunch of event handlers that we bind on with this.
+
+00:03:38.094 --> 00:03:39.510
+如果你不知道之前我是怎么做的
+If you haven't seen why I do that,
+
+00:03:39.510 --> 00:03:41.460
+回头看看 Swipeable Cards TL DW 那节的内容吧
+go back and watch the Swipeable Cards TL;DW.
+
+00:03:41.460 --> 00:03:45.900
+对这么处理事件句柄的原因  我解释了很多
+I explain pretty much why I do this approach to my event handlers.
+
+00:03:45.900 --> 00:03:47.441
+当然  你可以用别的方法
+You don't have to take this approach,
+
+00:03:47.441 --> 00:03:50.240
+只是在这个例子中  这种绑定方式执行地很顺畅
+but it works pretty well for what I'm doing.
+
+00:03:50.240 --> 00:03:51.390
+所以我们把所有 touch 事件都绑上
+So we bind all those on.
+
+00:03:51.390 --> 00:03:53.820
+这是侧栏显示和隐藏的代码
+And you can see here we've got the show and the hide.
+
+00:03:53.820 --> 00:03:55.240
+现在看这
+Now, here's an interesting one.
+
+00:03:55.240 --> 00:03:57.280
+我希望当你点击侧栏导航
+I actually say that if you click on the side
+
+00:03:57.280 --> 00:04:00.640
+还有点击我们在 Theory Corner 提到的容器元素时
+nav, the containing element, the container from Theory Corner,
+
+00:04:00.640 --> 00:04:02.640
+侧栏导航都会滑出屏幕  被隐藏起来
+I want you to hide the side nav.
+
+00:04:02.640 --> 00:04:04.940
+这行代码可以实现这个目标
+Well, that will work kind of.
+
+00:04:04.940 --> 00:04:07.760
+不过这么写以后  当点击导航中的内容时
+But then if you click on something inside the side nav,
+
+00:04:07.760 --> 00:04:09.700
+导航也会滑出屏幕
+well, that's kind of weird because you've
+
+00:04:09.700 --> 00:04:12.200
+毕竟导航确实是被点击到了  但这表现也太奇怪了
+clicked on something in side nav, and it's going to dismiss.
+
+00:04:12.200 --> 00:04:13.950
+解决上述问题的方法是
+The way we get around that is we basically
+
+00:04:13.950 --> 00:04:16.060
+当你点击侧边栏本身时  它滑出屏幕
+say the side nav itself, that's going to hide it.
+
+00:04:16.060 --> 00:04:18.190
+但当点击侧边栏内容时
+But any clicks inside, we're going
+
+00:04:18.190 --> 00:04:22.840
+要调用 BlockClicks 函数  看这
+to call this BlockClicks function, which you can find down here.
+
+00:04:22.840 --> 00:04:25.350
+它可以阻止冒泡
+BlockClicks, all that does it stops the propagation.
+
+00:04:25.350 --> 00:04:27.390
+BlockClicks 基本等同于对事件解绑
+So it's almost like canceling the event.
+
+00:04:27.390 --> 00:04:29.427
+只有在特定条件下你才会这么做
+Now, you don't want to do this all the time.
+
+00:04:29.427 --> 00:04:31.760
+而不是随随便便就去阻止冒泡
+You only want to do it when it makes sense for your app.
+
+00:04:31.760 --> 00:04:33.450
+在今天这个例子中  它也是有意义的
+And it makes sense in my case, I think.
+
+00:04:33.450 --> 00:04:35.590
+很好
+So that's all good.
+
+00:04:35.590 --> 00:04:37.610
+现在剩下的就是拖拽事件了
+So I think all that's really left
+
+00:04:37.610 --> 00:04:40.761
+让我们快速地过一下
+is to just have a quick look at that drag motion.
+
+00:04:40.761 --> 00:04:43.010
+如果你有印象的话  我们可以点击侧边栏
+Now, if you remember, the drag motion looks like this.
+
+00:04:43.010 --> 00:04:44.790
+也可以拖拽它
+We can click, and we can drag.
+
+00:04:44.790 --> 00:04:47.240
+如果只是把侧边栏拉出一点就松手
+And if we just come away from the side a little bit
+
+00:04:47.240 --> 00:04:49.355
+那它还会再次滑出屏幕
+and let go, it dismisses the side nav.
+
+00:04:49.355 --> 00:04:52.150
+来看看我们怎么实现的
+So let's see how we code that in.
+
+00:04:52.150 --> 00:04:54.380
+TouchStart 事件绑定在
+Well, we have our onTouchStart here.
+
+00:04:54.380 --> 00:04:57.510
+document 上
+And basically, because this is bound to the document,
+
+00:04:57.510 --> 00:05:02.200
+如果侧边栏没有滑出
+I basically say if the side nav isn't open, bail.
+
+00:05:02.200 --> 00:05:03.020
+就结束回调的执行
+Don't hang around.
+
+00:05:03.020 --> 00:05:05.660
+所以当你触发 TouchStart 事件时  就会执行该回调
+So we're going to call this any time somebody hits TouchStart.
+
+00:05:05.660 --> 00:05:09.620
+不过只有当侧边栏将会出现的时候  我们才需要做这样的处理
+But we only want to deal with this if the side nav happens to be open.
+
+00:05:09.620 --> 00:05:11.490
+接下来我们要做的
+And what we do, very much the same kind
+
+00:05:11.490 --> 00:05:13.000
+和在 Swipeable Cards 那节做几乎一模一样
+of deal as the swipeable cards.
+
+00:05:13.000 --> 00:05:15.490
+获取起始位置坐标的值
+We capture the start position, and we copy that
+
+00:05:15.490 --> 00:05:17.100
+赋值给当前位置
+across to a current position.
+
+00:05:17.100 --> 00:05:20.010
+接着在 TouchMove 中
+And then in the TouchMove we basically
+
+00:05:20.010 --> 00:05:22.460
+获取到手指的位移
+figure out how far we moved, and then we
+
+00:05:22.460 --> 00:05:25.890
+然后执行 transform
+can apply a transform in a kind of game loop
+
+00:05:25.890 --> 00:05:29.370
+在这  我们写了一个 update 函数
+and update function, which you can see here.
+
+00:05:29.370 --> 00:05:30.490
+实现了侧边栏从起始位置
+There's the translate.
+
+00:05:30.490 --> 00:05:31.950
+跟随手指滑动到
+Current [INAUDIBLE] to start.
+
+00:05:31.950 --> 00:05:34.052
+当前位置的效果
+And then we apply it as a transform.
+
+00:05:34.052 --> 00:05:35.510
+估计看过 Swipeable Cards 那节之后
+If you've seen the Swipeable Cards,
+
+00:05:35.510 --> 00:05:37.384
+你再看我刚刚说的这些  会觉得非常耳熟吧
+this is all sounding very familiar, I'm sure.
+
+00:05:37.384 --> 00:05:38.120
+老方法  但有效
+But it works.
+
+00:05:38.120 --> 00:05:39.870
+相当之有效
+And it works really well.
+
+00:05:39.870 --> 00:05:42.280
+最后在 TouchEnd 这块 我们添加了以下逻辑
+The last thing is, on TouchEnd, we basically say,
+
+00:05:42.280 --> 00:05:45.225
+如果手指移动的距离太短
+if you translate it just a little bit to the left,
+
+00:05:45.225 --> 00:05:48.310
+侧边栏还是不应该出现
+hide the side nav, that works out really well for us.
+
+00:05:48.310 --> 00:05:53.790
+在 onTouchMove 上还有一点需要注意
+One other little thing to note is this, in terms of the OnTouch move,
+
+00:05:53.790 --> 00:05:56.500
+默认情况下 Chrome 上模拟 TouchMove 时会有延迟
+by default you'll get that throttle back in Chrome.
+
+00:05:56.500 --> 00:05:58.730
+除非在 TouchMove 最开始被触发的时候
+So you won't get them every frame,
+
+00:05:58.730 --> 00:06:01.900
+阻止浏览器默认事件
+unless the very first TouchMove event has
+
+00:06:01.900 --> 00:06:03.840
+否则会掉帧
+an event.preventdefault on it.
+
+00:06:03.840 --> 00:06:06.380
+所以当发现手指位移小于 0 的时候
+So what we do is we calculate the translate.
+
+00:06:06.380 --> 00:06:08.160
+就说明 TouchMove 事件刚刚被触发
+And we say, if it's less than zero,
+
+00:06:08.160 --> 00:06:11.350
+接着用 event.preventdefault 阻止默认行为
+as in you've started to move it, we prevent the default
+
+00:06:11.350 --> 00:06:13.710
+之后浏览器就会及时响应 TouchMove 了
+and that means it will get all the updates from then on.
+
+00:06:13.710 --> 00:06:14.585
+搞定
+So there you have it.
+
+00:06:14.585 --> 00:06:15.440
+就是我们要的侧边栏
+That's the side nav.
+
+00:06:15.440 --> 00:06:17.440
+就用上面所说的这些方法
+Pretty straightforward in terms of these things,
+
+00:06:17.440 --> 00:06:18.580
+简单且效果好
+but this works really well.
+
+00:06:18.580 --> 00:06:21.699
+就算在移动设备上  也达到了 60 帧/秒
+It works at 60 frames a second, even on a mobile device.
+
+00:06:21.699 --> 00:06:25.111
+我们花了一个多小时直播实现这个侧边栏 如果你想看直播
+If you haven't caught the livestream, again, it's about an hour long.
+
+00:06:25.111 --> 00:06:26.360
+链接在下面的描述里
+It's in the description below.
+
+00:06:26.360 --> 00:06:28.560
+如果有时间
+So have a look through that, and have a watch of that
+
+00:06:28.560 --> 00:06:29.380
+也可以看看
+if you've got a spare hour.
+
+00:06:29.380 --> 00:06:30.420
+和往常的直播一样
+Again, it's the usual kind of stuff.
+
+00:06:30.420 --> 00:06:31.190
+你会看到各种 bug
+You see all the bugs.
+
+00:06:31.190 --> 00:06:32.064
+看到我和 Surma
+You see all the chat.
+
+00:06:32.064 --> 00:06:34.820
+在直播过程中的
+You see all the discoveries and the kind of discussion
+
+00:06:34.820 --> 00:06:36.540
+对话  探索和讨论
+that [? Serma ?] and I had.
+
+00:06:36.540 --> 00:06:37.840
+别忘了订阅我们
+Don't forget to subscribe.
+
+00:06:37.840 --> 00:06:38.506
+[CLICKING SOUND]
+
+00:06:38.506 --> 00:06:40.320
+好了
+Done.
+
+00:06:40.320 --> 00:06:42.710
+我们下期再见
+And I'll catch you next time.
+
+00:06:42.710 --> 00:06:46.130
+如果你觉得这个节目有意思
+If you, like me, like clicking on things, you can-- OK.
+
+00:06:46.130 --> 00:06:47.090
+记得订阅哦
+Hit the Subscribe.
+
+00:06:47.090 --> 00:06:48.720
+哈哈哈
+Ha, ha, ha.
+
+00:06:48.720 --> 00:06:50.780
+这是直播
+And there's the livestream.
+
+00:06:50.780 --> 00:06:51.955
+[MUSIC PLAYING]
+

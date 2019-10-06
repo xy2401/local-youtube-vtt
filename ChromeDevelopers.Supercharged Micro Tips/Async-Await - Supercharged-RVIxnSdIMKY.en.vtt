@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.270 --> 00:00:06.240
+You may have heard about a new feature
+in JavaScript called async/await
+
+00:00:06.240 --> 00:00:09.960
+it's a great way to work with promises
+because it makes asynchronous code look
+
+00:00:09.960 --> 00:00:14.160
+like regular synchronous code which is
+easier to understand in this example
+
+00:00:14.160 --> 00:00:18.359
+we're fetching two parts of a page
+separately we've got a blog post and
+
+00:00:18.359 --> 00:00:22.680
+we've got some comments we can change
+this to use async await pretty easily
+
+00:00:22.680 --> 00:00:26.910
+we await on each fetch so that we can
+use the results without having to nest
+
+00:00:26.910 --> 00:00:32.340
+in callbacks much easier to read but you
+might notice that I've made a fairly
+
+00:00:32.340 --> 00:00:36.930
+common mistake I've accidentally changed
+the behavior of the code so things don't
+
+00:00:36.930 --> 00:00:40.860
+happen in parallel anymore in the
+original code you can see that both of
+
+00:00:40.860 --> 00:00:44.070
+the fetch calls happen in the outer
+function and they get resolved
+
+00:00:44.070 --> 00:00:48.420
+independently in whatever order they
+finish but in the new code the await on
+
+00:00:48.420 --> 00:00:52.260
+the first fetch means that nothing else
+will happen until it resolves including
+
+00:00:52.260 --> 00:00:55.980
+the second fetch you can fix this pretty
+easily by moving the await since
+
+00:00:55.980 --> 00:00:59.820
+laughter both promises have been started
+so we hold on to the promises from each
+
+00:00:59.820 --> 00:01:04.379
+fetch and await on the values when we
+actually need them and there you have it
+
+00:01:04.379 --> 00:01:07.770
+both fetches can happen in parallel
+again an async await still makes the
+
+00:01:07.770 --> 00:01:12.540
+code look much simpler so you may notice
+I'm not server but don't worry I'm just
+
+00:01:12.540 --> 00:01:15.990
+here doing a guest tip if you'd like to
+watch previous episode the server in it
+
+00:01:15.990 --> 00:01:19.590
+you can click over here if you'd like to
+find out when new episodes made you can
+
+00:01:19.590 --> 00:01:22.009
+click Subscribe
+

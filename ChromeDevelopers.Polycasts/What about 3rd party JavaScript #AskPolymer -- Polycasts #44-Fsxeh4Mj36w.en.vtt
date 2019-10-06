@@ -1,0 +1,652 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:02.020
+FEMALE SPEAKER:
+[INAUDIBLE] Upload 2.
+
+00:00:02.020 --> 00:00:02.520
+Intro.
+
+00:00:02.520 --> 00:00:03.352
+Take 1.
+
+00:00:03.352 --> 00:00:05.582
+Marker.
+
+00:00:05.582 --> 00:00:07.040
+ROB DODSON: Hey
+there, Polycasters.
+
+00:00:07.040 --> 00:00:07.800
+Rob here.
+
+00:00:07.800 --> 00:00:10.216
+Welcome back to another segment
+of "Ask Polymer," the show
+
+00:00:10.216 --> 00:00:13.350
+where you send in questions
+on the various social media
+
+00:00:13.350 --> 00:00:16.830
+networks out there, and I
+do my best to answer them.
+
+00:00:16.830 --> 00:00:19.240
+Our first question comes
+from Danger Manley,
+
+00:00:19.240 --> 00:00:23.030
+who asks, for elements that
+contain iron-ajax, how can we
+
+00:00:23.030 --> 00:00:25.250
+mock their behavior?
+
+00:00:25.250 --> 00:00:27.730
+So interesting question there.
+
+00:00:27.730 --> 00:00:31.170
+web-component-tester itself
+ships with a few clever tools
+
+00:00:31.170 --> 00:00:33.000
+that can perhaps
+help you out here.
+
+00:00:33.000 --> 00:00:35.890
+The first is a function
+called stub element,
+
+00:00:35.890 --> 00:00:38.510
+and you can use that to
+actually replace an element that
+
+00:00:38.510 --> 00:00:40.120
+is inside of other elements.
+
+00:00:40.120 --> 00:00:42.647
+You could say stub
+element iron-ajax,
+
+00:00:42.647 --> 00:00:44.105
+and then as the
+second argument you
+
+00:00:44.105 --> 00:00:46.080
+could pass in fake iron-ajax.
+
+00:00:46.080 --> 00:00:48.190
+You can actually create
+your own mock element
+
+00:00:48.190 --> 00:00:50.800
+that'll swap in right before
+it does the unit test.
+
+00:00:50.800 --> 00:00:52.280
+That is one approach.
+
+00:00:52.280 --> 00:00:56.240
+The other is to use something
+like Sinon's fake XHR server.
+
+00:00:56.240 --> 00:00:58.230
+So that also ships with
+web-component-tester.
+
+00:00:58.230 --> 00:01:00.910
+The sinon command
+is there for you.
+
+00:01:00.910 --> 00:01:03.570
+So you can create
+a fake XHR server
+
+00:01:03.570 --> 00:01:05.950
+and actually have it
+send back fake responses.
+
+00:01:05.950 --> 00:01:08.120
+And that way, you
+don't have to spin up
+
+00:01:08.120 --> 00:01:11.310
+a server yourself or anything
+to feed your test data.
+
+00:01:11.310 --> 00:01:13.010
+You can just use this
+little mock server
+
+00:01:13.010 --> 00:01:15.170
+and feed data to
+iron-ajax that way.
+
+00:01:15.170 --> 00:01:16.862
+So two options there.
+
+00:01:16.862 --> 00:01:18.320
+If you're curious,
+we actually have
+
+00:01:18.320 --> 00:01:20.486
+a video that maybe goes a
+little bit more into this.
+
+00:01:20.486 --> 00:01:21.960
+It's from a talk
+at Polymer Summit
+
+00:01:21.960 --> 00:01:23.140
+by one of our team members.
+
+00:01:23.140 --> 00:01:25.800
+So you can check
+that out over here.
+
+00:01:25.800 --> 00:01:28.617
+Our team member Chris, who
+created the stub element stuff,
+
+00:01:28.617 --> 00:01:30.450
+he actually gave a whole
+talk on this stuff.
+
+00:01:30.450 --> 00:01:32.790
+So go check that out
+if you're interested.
+
+00:01:32.790 --> 00:01:35.820
+Thank you, Danger, for
+that awesome question.
+
+00:01:35.820 --> 00:01:37.730
+Our next question
+comes from Alan,
+
+00:01:37.730 --> 00:01:40.122
+who asks, if I'm using
+something like iron-list,
+
+00:01:40.122 --> 00:01:41.830
+I'm scrolling through
+thousands of items.
+
+00:01:41.830 --> 00:01:44.880
+How do I know, how do I detect,
+when the user has scrolled
+
+00:01:44.880 --> 00:01:46.650
+to the bottom of the list?
+
+00:01:46.650 --> 00:01:48.720
+So that is a very good question.
+
+00:01:48.720 --> 00:01:50.590
+Today, it's a little
+tricky to do that.
+
+00:01:50.590 --> 00:01:52.230
+But the team is
+building an element
+
+00:01:52.230 --> 00:01:54.090
+called iron-scroll-threshold.
+
+00:01:54.090 --> 00:01:56.830
+So you can combine that with
+an iron-list, and that way,
+
+00:01:56.830 --> 00:01:58.540
+use a little data
+binding, and it'll
+
+00:01:58.540 --> 00:02:01.810
+alert you when the user has
+hit the bottom of the list.
+
+00:02:01.810 --> 00:02:04.950
+That way, if you have a
+million items in your list
+
+00:02:04.950 --> 00:02:07.650
+but you only want to load
+the first 100 at a time,
+
+00:02:07.650 --> 00:02:10.810
+the user can scroll
+down to that first 100,
+
+00:02:10.810 --> 00:02:12.700
+and you can get
+that binding event.
+
+00:02:12.700 --> 00:02:16.077
+You can then go lazy load
+another pack of 100 items
+
+00:02:16.077 --> 00:02:17.410
+and sort of keep going that way.
+
+00:02:17.410 --> 00:02:20.906
+You can build kind of a good
+infinite scrolling experience.
+
+00:02:20.906 --> 00:02:22.530
+So, yeah, using
+iron-scroll-threshold--
+
+00:02:22.530 --> 00:02:24.211
+I'll link it down
+in the show notes--
+
+00:02:24.211 --> 00:02:25.960
+and you can combine
+it with your iron-list
+
+00:02:25.960 --> 00:02:28.530
+and hopefully get that kind
+of cool, smooth, infinite list
+
+00:02:28.530 --> 00:02:29.930
+experience that you're after.
+
+00:02:29.930 --> 00:02:31.760
+Our next question
+comes from Cody,
+
+00:02:31.760 --> 00:02:35.380
+who asks, how do I load
+external JavaScript frameworks
+
+00:02:35.380 --> 00:02:38.090
+into my components?
+
+00:02:38.090 --> 00:02:41.190
+So this is sort of
+a tricky bit here.
+
+00:02:41.190 --> 00:02:43.740
+I think Cody was asking
+how do I load, like, JQuery
+
+00:02:43.740 --> 00:02:46.310
+into my element so I
+can use it for selecting
+
+00:02:46.310 --> 00:02:47.980
+stuff inside of my component?
+
+00:02:47.980 --> 00:02:50.520
+In general, we
+recommend not trying
+
+00:02:50.520 --> 00:02:53.950
+to use things like JQuery inside
+of your element definitions.
+
+00:02:53.950 --> 00:02:55.290
+It creates two issues.
+
+00:02:55.290 --> 00:02:57.420
+One, it means that anybody
+using your component
+
+00:02:57.420 --> 00:02:59.759
+is going to have to
+also depend on JQuery.
+
+00:02:59.759 --> 00:03:02.300
+But it also is tricky because
+JQuery right now doesn't really
+
+00:03:02.300 --> 00:03:04.060
+know how to work
+with Shadow DOM.
+
+00:03:04.060 --> 00:03:06.242
+And so you could end
+up in weird situations
+
+00:03:06.242 --> 00:03:07.700
+where you're trying
+to select stuff
+
+00:03:07.700 --> 00:03:09.792
+and it's not quite working
+and it's not clear why.
+
+00:03:09.792 --> 00:03:11.500
+So in general, we
+recommend just sticking
+
+00:03:11.500 --> 00:03:14.080
+with vanilla JavaScript
+inside of your element
+
+00:03:14.080 --> 00:03:16.110
+for speccing out its definition.
+
+00:03:16.110 --> 00:03:19.230
+You can, however, depend
+on external libraries that
+
+00:03:19.230 --> 00:03:22.080
+do things like-- moment.js is a
+good example of something that
+
+00:03:22.080 --> 00:03:24.700
+converts timestamps for you,
+things that aren't interacting
+
+00:03:24.700 --> 00:03:26.300
+with the DOM necessarily.
+
+00:03:26.300 --> 00:03:28.577
+You can load those in
+using HTML imports.
+
+00:03:28.577 --> 00:03:30.910
+You can create an import for
+one of those libraries that
+
+00:03:30.910 --> 00:03:33.500
+just contains a script tag
+and pull it in that way.
+
+00:03:33.500 --> 00:03:34.709
+So that's totally acceptable.
+
+00:03:34.709 --> 00:03:37.041
+But frameworks that want to
+manipulate the DOM, probably
+
+00:03:37.041 --> 00:03:39.320
+want to stay away from using
+those inside your element
+
+00:03:39.320 --> 00:03:39.930
+definition.
+
+00:03:39.930 --> 00:03:42.190
+So thank you, Cody,
+for that question.
+
+00:03:42.190 --> 00:03:43.900
+Our next question
+comes from Tom,
+
+00:03:43.900 --> 00:03:46.760
+who asks, what should
+I keep in mind when
+
+00:03:46.760 --> 00:03:50.152
+styling CSS for webcomponents?
+
+00:03:50.152 --> 00:03:51.860
+So I think the main
+thing to keep in mind
+
+00:03:51.860 --> 00:03:53.710
+is you're working
+with Shadow DOM.
+
+00:03:53.710 --> 00:03:55.570
+And if you're not
+familiar with it,
+
+00:03:55.570 --> 00:03:59.030
+it can be sort of tricky because
+it creates this sort of style
+
+00:03:59.030 --> 00:04:01.300
+bubble around your components.
+
+00:04:01.300 --> 00:04:03.060
+I think it's really
+useful to learn
+
+00:04:03.060 --> 00:04:04.650
+how to work with
+custom properties
+
+00:04:04.650 --> 00:04:07.330
+and how to work
+with CSS mix-ins.
+
+00:04:07.330 --> 00:04:09.850
+Both of those are features which
+Polymer uses pretty heavily
+
+00:04:09.850 --> 00:04:14.060
+to allow you to jump over
+shadow boundaries and style
+
+00:04:14.060 --> 00:04:15.920
+the internals of
+components without having
+
+00:04:15.920 --> 00:04:18.300
+to violate encapsulation
+and know what's going
+
+00:04:18.300 --> 00:04:20.369
+on there internally directly.
+
+00:04:20.369 --> 00:04:22.910
+So if you're not familiar with
+those things that I just said,
+
+00:04:22.910 --> 00:04:24.990
+if that just sounded like
+a bunch of crazy words,
+
+00:04:24.990 --> 00:04:26.840
+you can go check out
+this guide over here
+
+00:04:26.840 --> 00:04:30.039
+that we've created on how you
+style the Shadow DOM, which
+
+00:04:30.039 --> 00:04:32.080
+we actually sometimes
+referred to as "local Dom,"
+
+00:04:32.080 --> 00:04:33.927
+so the guide is
+Styling Local DOM.
+
+00:04:33.927 --> 00:04:35.010
+You can go check that out.
+
+00:04:35.010 --> 00:04:36.330
+That'll explain
+custom properties.
+
+00:04:36.330 --> 00:04:38.280
+That'll explain CSS mix-ins
+and a lot of the things
+
+00:04:38.280 --> 00:04:40.690
+that you need to keep in mind
+when you're trying to style
+
+00:04:40.690 --> 00:04:41.820
+your first webcomponents.
+
+00:04:41.820 --> 00:04:44.330
+So thank you, Tom,
+for that question.
+
+00:04:44.330 --> 00:04:47.029
+The last question comes
+from Alos, who-- he actually
+
+00:04:47.029 --> 00:04:48.070
+asked a lot of questions.
+
+00:04:48.070 --> 00:04:49.986
+But he asked, when are
+carbon elements coming,
+
+00:04:49.986 --> 00:04:53.210
+and when will we get
+ES6 with Polymer?
+
+00:04:53.210 --> 00:04:55.650
+So carbon elements, we're
+still working on those.
+
+00:04:55.650 --> 00:04:59.160
+We don't have a definitive
+release date for that just yet.
+
+00:04:59.160 --> 00:05:01.900
+But we're hoping maybe in
+the next one or two quarters,
+
+00:05:01.900 --> 00:05:03.690
+those should start to roll out.
+
+00:05:03.690 --> 00:05:05.820
+ES6 in Polymer, that's
+something that I think we
+
+00:05:05.820 --> 00:05:07.450
+really want to
+work on this year.
+
+00:05:07.450 --> 00:05:09.230
+We want to make
+sure that everyone
+
+00:05:09.230 --> 00:05:11.630
+can write their component
+definitions using
+
+00:05:11.630 --> 00:05:14.102
+all the latest and
+greatest ES6 syntax.
+
+00:05:14.102 --> 00:05:15.560
+So within the team,
+we are actually
+
+00:05:15.560 --> 00:05:18.960
+working on some tools which
+we're hoping to release, again,
+
+00:05:18.960 --> 00:05:20.690
+probably in the next
+couple of quarters
+
+00:05:20.690 --> 00:05:23.450
+to let people start to use
+ES6 with their component
+
+00:05:23.450 --> 00:05:24.080
+definitions.
+
+00:05:24.080 --> 00:05:28.282
+So I know it's sort of a bummer
+to say it's coming, wait on it.
+
+00:05:28.282 --> 00:05:30.740
+But this is stuff that we're
+actively working on right now.
+
+00:05:30.740 --> 00:05:32.290
+We just finished a
+bunch of meetings
+
+00:05:32.290 --> 00:05:34.410
+talking about both
+of these topics,
+
+00:05:34.410 --> 00:05:38.720
+so look forward to more on
+both of those fronts in 2016.
+
+00:05:38.720 --> 00:05:42.230
+So thank you everybody who sent
+in questions-- lots of really
+
+00:05:42.230 --> 00:05:43.574
+great things this week.
+
+00:05:43.574 --> 00:05:44.990
+If you out there,
+if you yourself,
+
+00:05:44.990 --> 00:05:45.990
+you've got some
+questions for me,
+
+00:05:45.990 --> 00:05:48.150
+you can leave them down
+below in the comments,
+
+00:05:48.150 --> 00:05:50.900
+or you can ping us on a social
+network of your choosing
+
+00:05:50.900 --> 00:05:52.700
+at #AskPolymer.
+
+00:05:52.700 --> 00:05:54.450
+As always, thank you
+so much for watching,
+
+00:05:54.450 --> 00:05:55.850
+and I'll see you next time.
+
+00:05:55.850 --> 00:05:56.700
+[MUSIC PLAYING]
+
+00:05:56.700 --> 00:05:58.050
+A lot of good questions today.
+
+00:05:58.050 --> 00:06:00.253
+Thank you everyone who
+sent in some stuff-- what?
+
+00:06:00.253 --> 00:06:01.336
+Why is everybody laughing?
+
+00:06:01.336 --> 00:06:02.252
+[BEEPING]
+
+00:06:02.252 --> 00:06:03.210
+FEMALE SPEAKER: Take 2.
+
+00:06:03.210 --> 00:06:05.293
+ROB DODSON: Thank you all
+who sent in some stuff--
+
+00:06:05.293 --> 00:06:06.030
+[BEEPING]
+
+00:06:06.030 --> 00:06:07.452
+Sorry.
+
+00:06:07.452 --> 00:06:09.348
+FEMALE SPEAKER: Take 3.
+
+00:06:09.348 --> 00:06:10.119
+[BEEPING]
+
+00:06:10.119 --> 00:06:11.660
+ROB DODSON: Special
+Agent Cody Weaver
+
+00:06:11.660 --> 00:06:14.780
+sounds like a cool
+detective name.
+
+00:06:14.780 --> 00:06:17.830
+[LAUGHTER]
+

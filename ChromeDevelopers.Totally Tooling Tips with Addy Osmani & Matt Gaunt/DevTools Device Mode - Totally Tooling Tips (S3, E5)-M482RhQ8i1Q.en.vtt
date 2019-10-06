@@ -1,0 +1,446 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+[MUSIC PLAYING]
+
+00:00:09.250 --> 00:00:12.140
+ADDY OSMANI: So here we
+are next to a rainy river,
+
+00:00:12.140 --> 00:00:14.665
+our natural environment
+for working on code.
+
+00:00:14.665 --> 00:00:17.040
+MATT GAUNT: Yeah, and this
+one's going to be on DevTools,
+
+00:00:17.040 --> 00:00:18.540
+so it's DevTools,
+rain, and boats.
+
+00:00:18.540 --> 00:00:21.096
+ADDY OSMANI: Nothing synthetic
+about this in the slightest.
+
+00:00:21.096 --> 00:00:22.470
+All right, so
+today we're talking
+
+00:00:22.470 --> 00:00:24.000
+about responsive toolbar.
+
+00:00:24.000 --> 00:00:25.607
+Now for a while
+in DevTools, we've
+
+00:00:25.607 --> 00:00:28.190
+had device mode, which has been
+useful for building responsive
+
+00:00:28.190 --> 00:00:28.950
+sites.
+
+00:00:28.950 --> 00:00:31.420
+This is sort of an
+evolution of that tooling.
+
+00:00:31.420 --> 00:00:33.520
+So some of the new
+things we've added
+
+00:00:33.520 --> 00:00:35.190
+are support for this
+little toolbar that
+
+00:00:35.190 --> 00:00:37.520
+lets you toggle between
+different mobile sizes
+
+00:00:37.520 --> 00:00:40.920
+like medium, large,
+tablet, desktop.
+
+00:00:40.920 --> 00:00:43.540
+But we've also improved
+at device emulation.
+
+00:00:43.540 --> 00:00:46.020
+So if we switch over to
+Nexus 5X for example,
+
+00:00:46.020 --> 00:00:48.482
+you now get a little
+bit of device artwork
+
+00:00:48.482 --> 00:00:50.440
+from Android showing on
+the top and the bottom.
+
+00:00:50.440 --> 00:00:51.240
+MATT GAUNT: Yeah,
+and then they've
+
+00:00:51.240 --> 00:00:53.615
+added an extra little dropdown
+where you can then say,
+
+00:00:53.615 --> 00:00:55.780
+do you want portrait with
+a navigation bar, which
+
+00:00:55.780 --> 00:00:57.405
+is like Chrome's URL bar.
+
+00:00:57.405 --> 00:00:59.910
+But you can also do portrait
+and landscape with keyboard
+
+00:00:59.910 --> 00:01:01.660
+as well, which is kind
+of nice, especially
+
+00:01:01.660 --> 00:01:04.750
+if you're doing form input,
+just to see how it renders.
+
+00:01:04.750 --> 00:01:06.040
+Nice little step up as well.
+
+00:01:06.040 --> 00:01:07.240
+ADDY OSMANI: That's
+kind of cool.
+
+00:01:07.240 --> 00:01:08.656
+You also have a
+dropdown for being
+
+00:01:08.656 --> 00:01:10.690
+able to say how
+much of the viewport
+
+00:01:10.690 --> 00:01:13.719
+you want to occupy for
+your actual device preview.
+
+00:01:13.719 --> 00:01:16.010
+And we've got this little
+menu with a few extra options
+
+00:01:16.010 --> 00:01:16.420
+in here.
+
+00:01:16.420 --> 00:01:18.794
+So one of the things that you
+might have tried out before
+
+00:01:18.794 --> 00:01:21.750
+is the show media queries
+option, super useful.
+
+00:01:21.750 --> 00:01:24.192
+It basically parses out the
+media queries in your page,
+
+00:01:24.192 --> 00:01:25.900
+and you can just see
+what your page looks
+
+00:01:25.900 --> 00:01:29.150
+like at different media
+query breakpoints.
+
+00:01:29.150 --> 00:01:31.120
+MATT GAUNT: I already
+have some beef with this,
+
+00:01:31.120 --> 00:01:34.910
+because if you try and use it
+as is after you've selected
+
+00:01:34.910 --> 00:01:36.860
+a device, it does nothing.
+
+00:01:36.860 --> 00:01:38.360
+But if you go to
+the responsive mode
+
+00:01:38.360 --> 00:01:41.150
+and drop down and then click
+on it, then it starts working.
+
+00:01:41.150 --> 00:01:42.150
+ADDY OSMANI: What are
+you talking about Matt,
+
+00:01:42.150 --> 00:01:43.060
+it's all perfect.
+
+00:01:43.060 --> 00:01:44.184
+It's all perfect.
+
+00:01:44.184 --> 00:01:45.600
+MATT GAUNT: No,
+it needs an issue.
+
+00:01:45.600 --> 00:01:48.400
+ADDY OSMANI: OK, you
+file a bug on that.
+
+00:01:48.400 --> 00:01:49.900
+Other things that
+we include in here
+
+00:01:49.900 --> 00:01:52.550
+include show device pixel ratio.
+
+00:01:52.550 --> 00:01:55.930
+So you can switch up your
+device pixel ratio settings.
+
+00:01:55.930 --> 00:01:59.520
+Another thing that I usually
+have on is network throttling.
+
+00:01:59.520 --> 00:02:03.150
+So if you're building to
+be resilient against really
+
+00:02:03.150 --> 00:02:06.650
+flaky network conditions or
+Li-Fi or anything like that,
+
+00:02:06.650 --> 00:02:09.330
+network throttling can
+be useful to toggle on.
+
+00:02:09.330 --> 00:02:12.784
+Usually you can have on
+a good 3G or 2G setting.
+
+00:02:12.784 --> 00:02:15.200
+And that just means that when
+you're loading up your page,
+
+00:02:15.200 --> 00:02:16.825
+we're going to throttle
+that connection
+
+00:02:16.825 --> 00:02:19.790
+and it will load up a little
+bit more slowly than it normally
+
+00:02:19.790 --> 00:02:19.840
+would.
+
+00:02:19.840 --> 00:02:20.940
+MATT GAUNT: And
+it's kind of nice
+
+00:02:20.940 --> 00:02:22.510
+just having that there,
+because otherwise you
+
+00:02:22.510 --> 00:02:23.926
+bury it in the
+network thing, it's
+
+00:02:23.926 --> 00:02:26.050
+way too easy to leave it
+on some random setting,
+
+00:02:26.050 --> 00:02:28.850
+start looking at the elements,
+fixing other problems.
+
+00:02:28.850 --> 00:02:30.630
+It's nice just having
+it constantly there
+
+00:02:30.630 --> 00:02:31.720
+in the responsive mode.
+
+00:02:31.720 --> 00:02:32.900
+ADDY OSMANI: You
+could also-- let's
+
+00:02:32.900 --> 00:02:35.330
+say you're building an app, like
+a progressive web application,
+
+00:02:35.330 --> 00:02:36.913
+and you've got service
+worker support.
+
+00:02:36.913 --> 00:02:40.300
+You can also switch on offline
+to try out your service
+
+00:02:40.300 --> 00:02:42.850
+where you can just make sure
+it's working well offline.
+
+00:02:42.850 --> 00:02:45.391
+MATT GAUNT: It would be great
+if it was just like one button,
+
+00:02:45.391 --> 00:02:46.417
+like disable antenna.
+
+00:02:46.417 --> 00:02:48.250
+Just an airplane icon,
+that's what you need.
+
+00:02:48.250 --> 00:02:49.360
+Done.
+
+00:02:49.360 --> 00:02:52.100
+ADDY OSMANI: Folks, we're
+asking about ruler support.
+
+00:02:52.100 --> 00:02:53.870
+So we've got a Show
+Rulers option there.
+
+00:02:53.870 --> 00:02:56.310
+Wasn't there before,
+it's now back.
+
+00:02:56.310 --> 00:02:58.330
+You can check that out
+if you like rulers.
+
+00:02:58.330 --> 00:03:02.400
+Some of the newer stuff
+that we've been playing with
+
+00:03:02.400 --> 00:03:04.560
+are the ability to trigger
+add to home screen.
+
+00:03:04.560 --> 00:03:06.810
+So let's say you want to
+emulate your web application,
+
+00:03:06.810 --> 00:03:08.230
+manifest experience.
+
+00:03:08.230 --> 00:03:10.355
+You can click Trigger
+Add to Home Screen.
+
+00:03:10.355 --> 00:03:12.230
+It will bring up this
+message at the very top
+
+00:03:12.230 --> 00:03:15.327
+that says add this site to
+your shelf to use at any time.
+
+00:03:15.327 --> 00:03:16.910
+You can click Add
+and it will bring up
+
+00:03:16.910 --> 00:03:18.115
+a little prompt
+that says, OK, well,
+
+00:03:18.115 --> 00:03:20.650
+what do you want to customize
+the name of this thing to?
+
+00:03:20.650 --> 00:03:22.200
+And the idea behind
+this is that it's
+
+00:03:22.200 --> 00:03:25.080
+supposed to just emulate the
+add to home screen experience
+
+00:03:25.080 --> 00:03:26.200
+you get on Android.
+
+00:03:26.200 --> 00:03:27.100
+MATT GAUNT: Yeah, and
+it was kind of annoying
+
+00:03:27.100 --> 00:03:28.880
+because before you'd have
+to do it on your phone.
+
+00:03:28.880 --> 00:03:30.640
+You'd need something to
+download the manifest file.
+
+00:03:30.640 --> 00:03:31.670
+And normally the
+reason you'd want
+
+00:03:31.670 --> 00:03:34.390
+to do that is because if there's
+a problem in your manifest file
+
+00:03:34.390 --> 00:03:36.480
+and Chrome wasn't happy,
+it wouldn't pass it.
+
+00:03:36.480 --> 00:03:38.550
+And it's just tricky to debug.
+
+00:03:38.550 --> 00:03:41.010
+So having this hard
+way of just saying
+
+00:03:41.010 --> 00:03:44.440
+go and download it and
+pass it is insanely helpful
+
+00:03:44.440 --> 00:03:45.832
+when you just do it.
+
+00:03:45.832 --> 00:03:47.290
+ADDY OSMANI: As a
+reminder, we also
+
+00:03:47.290 --> 00:03:50.440
+have another little
+panel called Sensors
+
+00:03:50.440 --> 00:03:52.440
+which lets you go and
+emulate different sensors.
+
+00:03:52.440 --> 00:03:54.850
+So you can emulate
+geolocation coordinates,
+
+00:03:54.850 --> 00:03:56.496
+device orientation.
+
+00:03:56.496 --> 00:03:57.870
+And you can decide
+whether or not
+
+00:03:57.870 --> 00:03:59.786
+you want to emulate touch
+based on your device
+
+00:03:59.786 --> 00:04:04.210
+or whether you want to do
+force touch, force enabled.
+
+00:04:04.210 --> 00:04:07.850
+That's about it for
+the responsive toolbar
+
+00:04:07.850 --> 00:04:09.550
+and the new device mode.
+
+00:04:09.550 --> 00:04:10.450
+MATT GAUNT: Yeah.
+
+00:04:10.450 --> 00:04:13.500
+[MUSIC PLAYING]
+

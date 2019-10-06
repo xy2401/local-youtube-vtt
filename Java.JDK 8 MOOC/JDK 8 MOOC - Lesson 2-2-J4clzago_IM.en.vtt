@@ -1,0 +1,625 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:02.810
+[music]
+
+00:00:13.280 --> 00:00:14.700
+Hello and welcome to section 2
+
+00:00:14.700 --> 00:00:17.750
+of lesson 2.
+
+00:00:17.750 --> 00:00:20.650
+In this part we're going to talk about
+what a stream
+
+00:00:20.650 --> 00:00:24.020
+actually is and the individual
+elememts of the stream
+
+00:00:24.020 --> 00:00:30.289
+that create the structure of it.
+
+00:00:30.289 --> 00:00:33.380
+If you look at the overview of a stream at a high level,
+
+00:00:33.380 --> 00:00:37.020
+essentially what we're dealing with is
+an abstraction
+
+00:00:37.020 --> 00:00:40.600
+for specifying aggregate computations.
+
+00:00:40.600 --> 00:00:44.260
+That kind of sounds complicated but 
+it's essentially what we've already seen
+
+00:00:44.260 --> 00:00:49.340
+in earlier part of the course, where
+we taking a collection of data
+
+00:00:49.340 --> 00:00:54.970
+and we want to specify how we want
+process that collection data.
+
+00:00:54.970 --> 00:00:58.140
+We use the example where we were looking
+for
+
+00:00:58.140 --> 00:01:02.059
+student who got the highest score, or what
+highest score a student
+
+00:01:02.059 --> 00:01:07.330
+got in 2011. Thats an aggregate
+computation because we're taking that
+
+00:01:07.330 --> 00:01:10.399
+collection data and looking for one
+particular value in there.
+
+00:01:10.399 --> 00:01:13.850
+The important things about
+
+00:01:13.850 --> 00:01:17.119
+a stream are that, whilst you might
+
+00:01:17.119 --> 00:01:20.200
+be tempted to think a bit as a data
+structure
+
+00:01:20.200 --> 00:01:24.250
+and certainly when we talk about the
+elements must remain that way that it
+
+00:01:24.250 --> 00:01:24.960
+works
+
+00:01:24.960 --> 00:01:28.660
+it does look very much like a data
+structure, it's not.
+
+00:01:28.660 --> 00:01:32.899
+The data structure is just contained,
+
+00:01:32.899 --> 00:01:36.610
+if we have a collection, is it a list, is it a set, is it a
+
+00:01:36.610 --> 00:01:41.450
+hash map, or whatever. That's the data
+structure. The stream itself
+
+00:01:41.450 --> 00:01:45.049
+is just a way of defining how we process
+that as
+
+00:01:45.049 --> 00:01:50.070
+sequence elements and one other
+things which is quite important
+
+00:01:50.070 --> 00:01:53.610
+about streams is that they can be infinite.
+
+00:01:53.610 --> 00:01:58.200
+So there's no restriction in terms of
+how many elements
+
+00:01:58.200 --> 00:02:01.770
+stream can have, it can be and infinite
+stream which will
+
+00:02:01.770 --> 00:02:06.369
+carry on for ever and how we terminate
+that stream, how we get out of that
+
+00:02:06.369 --> 00:02:07.180
+stream
+
+00:02:07.180 --> 00:02:11.160
+and is a little bit different to how we
+deal with loops.
+
+00:02:11.160 --> 00:02:14.209
+We're used to having infinite loops in Java,
+
+00:02:14.209 --> 00:02:17.829
+where we don't know how many times a loop
+needs to be executed.
+
+00:02:17.829 --> 00:02:21.519
+What we do is we create a loop it says
+while true
+
+00:02:21.519 --> 00:02:25.430
+do something and then we have a test if
+X is 
+
+00:02:25.430 --> 00:02:28.769
+10 break and we can break out of the
+loop.
+
+00:02:28.769 --> 00:02:33.100
+We can't do that in streams; there's no
+concept breaking out of the stream
+
+00:02:33.100 --> 00:02:34.360
+because there's no concept of
+
+00:02:34.360 --> 00:02:37.280
+loop. Remember in section 1 we talked
+about
+
+00:02:37.280 --> 00:02:40.430
+functional programming verses 
+imperative programming but we'll come
+
+00:02:40.430 --> 00:02:42.569
+back to how we can use an infinite stream
+
+00:02:42.569 --> 00:02:47.240
+and how we can terminate that infinite
+stream in much the same way as we would
+
+00:02:47.240 --> 00:02:52.530
+with an infinite loop. What the stream
+allows us to do is to
+
+00:02:52.530 --> 00:02:55.690
+create a simple description of how we
+want to 
+
+00:02:55.690 --> 00:02:58.819
+perform these computations and
+
+00:02:58.819 --> 00:03:02.190
+for the code and make the library
+code.
+
+00:03:02.190 --> 00:03:05.860
+It's very useful because it allows us to
+
+00:03:05.860 --> 00:03:09.700
+have opportunities to optimize how that
+code works.
+
+00:03:09.700 --> 00:03:13.680
+What we do is we can take complex
+operations
+
+00:03:13.680 --> 00:03:18.220
+and we can fuse together certain
+operations so that they happen together
+
+00:03:18.220 --> 00:03:22.050
+rather than having to happen
+individually. That way it can be 
+
+00:03:22.050 --> 00:03:25.250
+more efficient. We can use
+
+00:03:25.250 --> 00:03:28.980
+lazy evaluation so that we're not having
+to evaluate every element in a
+
+00:03:28.980 --> 00:03:30.569
+collection if we don't need to
+
+00:03:30.569 --> 00:03:33.850
+and as we've already seen we can apply
+
+00:03:33.850 --> 00:03:36.870
+parallelism to how we do these things
+
+00:03:36.870 --> 00:03:39.989
+because with functional programming
+remember there's no
+
+00:03:39.989 --> 00:03:44.340
+reliance on order execution which means
+that we can 
+
+00:03:44.340 --> 00:03:47.410
+use parallel processing in the exact
+same way as
+
+00:03:47.410 --> 00:03:50.900
+sequential processing without
+changing results.
+
+00:03:50.900 --> 00:03:54.620
+Now in terms of
+
+00:03:54.620 --> 00:03:57.890
+stream you can think about it as
+
+00:03:57.890 --> 00:04:01.950
+representing a pipeline, where we're
+processing data.
+
+00:04:01.950 --> 00:04:05.350
+One end of that pipeline
+
+00:04:05.350 --> 00:04:09.570
+is what we call the source, so on the left
+hand side we have a source
+
+00:04:09.570 --> 00:04:12.920
+of our stream and that will be a set of 
+
+00:04:12.920 --> 00:04:16.400
+elements of something that we want to
+process.
+
+00:04:16.400 --> 00:04:20.430
+It could come from a collection, it could
+come from a network connection, it could come from
+
+00:04:20.430 --> 00:04:21.700
+wherever we want,
+
+00:04:21.700 --> 00:04:25.120
+but it's a source of elements that we're
+going to process
+
+00:04:25.120 --> 00:04:28.690
+and that's what stream it is. It's a stream
+of elements that are going to be
+
+00:04:28.690 --> 00:04:29.460
+processed.
+
+00:04:29.460 --> 00:04:33.560
+What we do is we take that stream source,
+
+00:04:33.560 --> 00:04:37.979
+that stream and we pass it into zero or
+more
+
+00:04:37.979 --> 00:04:42.340
+intermediate operations. An intermediate operation
+
+00:04:42.340 --> 00:04:46.210
+is one that takes as input stream and
+generates
+
+00:04:46.210 --> 00:04:48.990
+as output a stream.
+
+00:04:48.990 --> 00:04:51.530
+That way we can take the output of one
+intermediate
+
+00:04:51.530 --> 00:04:54.710
+operation and feed it to the input of
+
+00:04:54.710 --> 00:04:58.120
+another intermediate operation. As you
+can see in the diagram
+
+00:04:58.120 --> 00:05:01.430
+to blue boxes representing intermediate
+operations.
+
+00:05:01.430 --> 00:05:05.890
+Stream in, stream out. Connect the stream
+output of the first operation
+
+00:05:05.890 --> 00:05:10.850
+to the input of the second intermediate
+operation. Once we've
+
+00:05:10.850 --> 00:05:13.980
+done all the intermediate processing
+that we want,
+
+00:05:13.980 --> 00:05:17.070
+we need to terminate that stream,
+
+00:05:17.070 --> 00:05:20.800
+we need the other end of our
+pipeline
+
+00:05:20.800 --> 00:05:25.020
+and to do that we have a terminal
+operation.
+
+00:05:25.020 --> 00:05:28.380
+A terminal operation takes as input a stream
+
+00:05:28.380 --> 00:05:31.610
+and doesn't generate a stream as an
+output.
+
+00:05:31.610 --> 00:05:35.430
+What it generates is either explicit
+result
+
+00:05:35.430 --> 00:05:38.940
+in the form of a value or collection or
+something,
+
+00:05:38.940 --> 00:05:43.440
+or it produces a side effect and a side
+effect could be something as simple as
+
+00:05:43.440 --> 00:05:44.960
+printing a message to say
+
+00:05:44.960 --> 00:05:49.190
+found something. So these are three
+
+00:05:49.190 --> 00:05:54.190
+main components of our stream: source,
+
+00:05:54.190 --> 00:05:59.010
+intermediate operation, terminal operation.
+Here's an example
+
+00:05:59.010 --> 00:06:03.240
+of a stream and how we're going to use it. Ihis
+case
+
+00:06:03.240 --> 00:06:07.140
+I have set of transactions. From that set of
+transactions,
+
+00:06:07.140 --> 00:06:11.630
+I need to create a stream source so I
+call the stream method on that,
+
+00:06:11.630 --> 00:06:14.960
+and that returns a stream. 
+
+00:06:14.960 --> 00:06:18.280
+We pass that stream into
+
+00:06:18.280 --> 00:06:22.600
+an intermediate operation this case it's
+filter where we going to
+
+00:06:22.600 --> 00:06:26.729
+only select that buyers who were in
+London
+
+00:06:26.729 --> 00:06:31.850
+from all the transactions that we have.
+We then pass that
+
+00:06:31.850 --> 00:06:36.190
+to another intermediate operation called mapToInt and that's going to create a
+
+00:06:36.190 --> 00:06:36.780
+stream of
+
+00:06:36.780 --> 00:06:40.669
+integers, or ints, which are the prices
+
+00:06:40.669 --> 00:06:44.419
+of those transactions. We'll talk more
+about the primitive
+
+00:06:44.419 --> 00:06:50.530
+verses object representation later in
+this lesson. Once we've got that stream all
+
+00:06:50.530 --> 00:06:54.070
+transaction values, prices, we pass that
+
+00:06:54.070 --> 00:06:56.149
+into it terminal operation
+
+00:06:56.149 --> 00:06:59.349
+which is to sum all those values,
+
+00:06:59.349 --> 00:07:02.739
+and that will then return back to total
+
+00:07:02.739 --> 00:07:06.789
+all the total transactions
+
+00:07:06.789 --> 00:07:12.929
+for buyers who were in London. Now
+
+00:07:12.929 --> 00:07:17.089
+in terms the terminal operations what we
+need to understand is that
+
+00:07:17.089 --> 00:07:20.829
+although when we talk about stream we
+say, well you take a stream from the
+
+00:07:20.829 --> 00:07:22.449
+source you pass to an intermediate
+
+00:07:22.449 --> 00:07:25.869
+operation that creates new stream and
+passes it
+
+00:07:25.869 --> 00:07:29.159
+on and so on. That's a good way of understanding
+
+00:07:29.159 --> 00:07:32.699
+essentially how things work but is not
+
+00:07:32.699 --> 00:07:36.519
+the way things will actually be
+implemented in the library code
+
+00:07:36.519 --> 00:07:40.219
+so that the pipeline itself is only
+evaluated
+
+00:07:40.219 --> 00:07:43.809
+when a terminal operation is called and
+
+00:07:43.809 --> 00:07:47.539
+all the operations that we have in that
+pipeline
+
+00:07:47.539 --> 00:07:50.800
+are either going to be executed sequentially or
+their going to be
+
+00:07:50.800 --> 00:07:53.809
+executed in parallel and will come back
+to
+
+00:07:53.809 --> 00:07:57.529
+talk about this in lesson 3, when
+we talk about parallel streams in more
+
+00:07:57.529 --> 00:07:58.149
+detail.
+
+00:07:58.149 --> 00:08:02.039
+But essentially either its executed sequentially
+
+00:08:02.039 --> 00:08:07.860
+or it's executed parallel because we don't do
+anything until we get to the terminal
+
+00:08:07.860 --> 00:08:08.719
+operations
+
+00:08:08.719 --> 00:08:12.139
+does mean that we can merge together
+some of the intermediate
+
+00:08:12.139 --> 00:08:15.949
+operations. That way we can avoid
+redundant passes
+
+00:08:15.949 --> 00:08:19.719
+on the data, we can also do things like
+short-circuiting
+
+00:08:19.719 --> 00:08:23.019
+as its called, so if we want to find
+140
+00:08:23,019 --&gt; 00:08:26,199
+first element that let's say greater
+than 10
+
+00:08:26.199 --> 00:08:29.709
+and you got 1000 elements in your
+input stream
+
+00:08:29.709 --> 00:08:33.189
+then you don't need to worry about
+processing all of them
+
+00:08:33.189 --> 00:08:37.329
+once you found one that is actually more
+than 10. So you can do
+
+00:08:37.329 --> 00:08:41.430
+short-circuiting, you can do lazy evaluation where
+you actually putting the results through
+
+00:08:41.430 --> 00:08:44.540
+as you need them rather processing
+everything ahead of time.
+
+00:08:44.540 --> 00:08:49.620
+Internally there are a number of
+characteristics to be used by
+
+00:08:49.620 --> 00:08:54.100
+stream. As a developer you don't need to
+worry about this, but it's just what
+
+00:08:54.100 --> 00:08:58.029
+can be used internally in the library
+code to optimize things.
+
+00:08:58.029 --> 00:09:01.160
+So for example, one of the
+characteristics of a stream is whether
+
+00:09:01.160 --> 00:09:02.059
+its distinct.
+
+00:09:02.059 --> 00:09:05.100
+So we mark it if we know that there
+are no
+
+00:09:05.100 --> 00:09:06.380
+duplicate elements
+
+00:09:06.380 --> 00:09:09.700
+in that stream. If you pass a stream
+
+00:09:09.700 --> 00:09:13.140
+to a method, distinct, and
+
+00:09:13.140 --> 00:09:16.370
+the streams already distinct, then we
+don't have to do anything, because we know
+
+00:09:16.370 --> 00:09:17.910
+its distinct there's no
+
+00:09:17.910 --> 00:09:22.030
+extra work to do. We don't process it
+again once we know it is distinct.
+
+00:09:22.030 --> 00:09:25.860
+So to summarize section 2
+
+00:09:25.860 --> 00:09:29.300
+you can think of a stream, like I said,
+like a pipeline.
+
+00:09:29.300 --> 00:09:33.600
+At one end is the source for the data gets
+passed through
+
+00:09:33.600 --> 00:09:37.300
+0 or more intermediate operations. I mean
+when you want to
+
+00:09:37.300 --> 00:09:42.690
+terminate that stream you have a terminal
+operation. The way that processes data,
+
+00:09:42.690 --> 00:09:46.780
+even though it's processing set of data is it
+doesn't use explicit
+
+00:09:46.780 --> 00:09:50.650
+loops, so this is quite important and
+comes back to the
+
+00:09:50.650 --> 00:09:54.230
+difference between imperative behavior
+verses functional behavior. There is no
+
+00:09:54.230 --> 00:09:55.490
+explicit loop;
+
+00:09:55.490 --> 00:09:58.560
+the loop is implicit in terms of
+
+00:09:58.560 --> 00:10:02.120
+all the library code that you're using.
+What this means
+
+00:10:02.120 --> 00:10:06.230
+is that it does make it very easy for us
+to turn a stream for being sequential
+
+00:10:06.230 --> 00:10:07.940
+stream into a parallel stream
+
+00:10:07.940 --> 00:10:11.980
+without worrying about will it change the
+way the code works, will it change results
+
+00:10:11.980 --> 00:10:12.810
+being generated.
+
+00:10:12.810 --> 00:10:15.970
+And that is the end of section 2.
+

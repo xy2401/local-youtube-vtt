@@ -1,0 +1,393 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.750 --> 00:00:03.290
+[music]
+
+00:00:13.580 --> 00:00:15.820
+Hello and welcome to part two
+
+00:00:15.820 --> 00:00:19.390
+of lesson three. In this part we going
+talk about
+
+00:00:19.390 --> 00:00:23.130
+finite and infinite streams and how we deal
+with those.
+
+00:00:23.130 --> 00:00:26.680
+If we look Java
+
+00:00:26.680 --> 00:00:30.090
+and we look at imperative processing,
+
+00:00:30.090 --> 00:00:34.100
+we often have situations where we don't
+know how long
+
+00:00:34.100 --> 00:00:38.100
+a loop needs to run for. So we have to
+deal with
+
+00:00:38.100 --> 00:00:41.190
+an indeterminate links for our loop.
+
+00:00:41.190 --> 00:00:44.820
+we can do that very easily. So we can use
+something like this,
+
+00:00:44.820 --> 00:00:49.470
+where we have a while loop we simply say
+while true. So in theory, the loop is
+
+00:00:49.470 --> 00:00:53.040
+infinite. Within the loop we do some
+processing, so
+
+00:00:53.040 --> 00:00:56.360
+we're doing something and then we have a
+test.
+
+00:00:56.360 --> 00:00:59.690
+We test to see whether some criteria is
+true
+
+00:00:59.690 --> 00:01:02.850
+and, if it is, we can break out of the
+loop.
+
+00:01:02.850 --> 00:01:06.520
+Until that criteria is true will
+continue to do this loop,
+
+00:01:06.520 --> 00:01:10.860
+so will loop indefinitely until that
+statement is true
+
+00:01:10.860 --> 00:01:14.780
+and then we will break out of it. Now
+
+00:01:14.780 --> 00:01:18.549
+for a stream remember we don't have
+explicit loop,
+
+00:01:18.549 --> 00:01:22.549
+so how do we use an infinite stream
+
+00:01:22.549 --> 00:01:26.549
+and at some point decide that we want to
+stop using that
+
+00:01:26.549 --> 00:01:29.940
+stream? There are two things we can use
+that:
+
+00:01:29.940 --> 00:01:33.600
+we can use to findFirst terminal
+operation,
+
+00:01:33.600 --> 00:01:37.869
+or we can use findAny. Remember that the
+difference between a these
+
+00:01:37.869 --> 00:01:40.990
+is that findFirst works with,
+
+00:01:40.990 --> 00:01:45.280
+both sequential and parallel streams,
+findAny
+
+00:01:45.280 --> 00:01:49.549
+is suitable for a parallel stream where
+you're not worried about
+
+00:01:49.549 --> 00:01:53.030
+any particular stream finding the result. So
+
+00:01:53.030 --> 00:01:56.650
+you can findAny, any of the parallel
+threads
+
+00:01:56.650 --> 00:01:59.670
+can find a value that's appropriate
+
+00:01:59.670 --> 00:02:03.280
+and that will terminate the stream. What that means,
+in effect,
+
+00:02:03.280 --> 00:02:07.290
+is that findAny give you non-deterministic
+results
+
+00:02:07.290 --> 00:02:11.909
+if you apply the same set of data
+repeatedly. If you use findFirst
+
+00:02:11.909 --> 00:02:14.819
+you always get the same result
+regardless of whether you're using a
+
+00:02:14.819 --> 00:02:15.590
+sequential
+
+00:02:15.590 --> 00:02:18.360
+or parallel stream.
+
+00:02:18.360 --> 00:02:21.909
+In terms of an example, what I've got here is
+
+00:02:21.909 --> 00:02:25.500
+the use of the Random class and I'm going to create
+
+00:02:25.500 --> 00:02:29.940
+an infinite stream of random integers and then
+
+00:02:29.940 --> 00:02:33.629
+what I want to do is I want to terminate
+that stream once
+
+00:02:33.629 --> 00:02:37.150
+I've found a number which is greater than 256.
+
+00:02:37.150 --> 00:02:40.720
+In this case I simply say findFirst and I
+use
+
+00:02:40.720 --> 00:02:44.500
+Lambda expression to say if i is greater than 256
+
+00:02:44.500 --> 00:02:47.569
+that will return true and that will then
+terminate
+
+00:02:47.569 --> 00:02:50.859
+the stream and r will be set to whatever
+that value
+
+00:02:50.859 --> 00:02:53.970
+of the random number is, but we know it will be
+greater than
+
+00:02:53.970 --> 00:02:59.310
+256. Now there are also situations
+
+00:02:59.310 --> 00:03:03.140
+where you use infinite stream, but you
+actually need
+
+00:03:03.140 --> 00:03:06.140
+it to be infinite, so you don't want to terminate that stream, you want to continue
+
+00:03:06.140 --> 00:03:08.400
+using it for as long as the application
+runs.
+
+00:03:08.400 --> 00:03:12.560
+What do we use as a terminal operation in
+that case?
+
+00:03:12.560 --> 00:03:16.159
+You would think that a terminal
+operation means that you're actually
+
+00:03:16.159 --> 00:03:17.280
+terminating the stream,
+
+00:03:17.280 --> 00:03:21.829
+so it would stop, but we don't want to do
+that. In this case
+
+00:03:21.829 --> 00:03:25.870
+we can use the forEach method and this
+is a good example of where the
+
+00:03:25.870 --> 00:03:30.540
+forEach method is actually applicable.
+We're going to talk about that later in this lesson.
+
+00:03:30.540 --> 00:03:34.579
+Here, the forEach method consumes
+
+00:03:34.579 --> 00:03:38.299
+each element on the input stream, but it
+doesn't
+
+00:03:38.299 --> 00:03:41.470
+terminate it, so it's important that we can
+consume 
+
+00:03:41.470 --> 00:03:46.530
+the element from the stream, but we don't
+actually terminate it.
+
+00:03:46.530 --> 00:03:50.790
+If we look at an example of that, what
+I've got here is some code I wrote for a
+
+00:03:50.790 --> 00:03:51.769
+particular project
+
+00:03:51.769 --> 00:03:55.910
+where i had a temperature sensor and the
+temperature sensor provided the
+
+00:03:55.910 --> 00:03:59.699
+values of the temperature as a set of
+strings.
+
+00:03:59.699 --> 00:04:03.280
+I just did it infinitely, so long as it was 
+running
+
+00:04:03.280 --> 00:04:06.989
+you getting lines of text, which gave you
+the information about
+
+00:04:06.989 --> 00:04:09.930
+the temperature from sensor.
+
+00:04:09.930 --> 00:04:14.620
+What I wanted to do with this was to
+take the reading, which was in Fahrenheit,
+
+00:04:14.620 --> 00:04:18.340
+and convert it to Celsius. One of the other
+things is that the
+
+00:04:18.340 --> 00:04:21.959
+text that was being returned always had
+a capital F at the end
+
+00:04:21.959 --> 00:04:25.280
+to indicate it was Fahrenheit. I
+also wanted
+
+00:04:25.280 --> 00:04:29.440
+to notify listener, if there was one
+present, of changes
+
+00:04:29.440 --> 00:04:33.860
+if the temperature changed. This is
+the code that I had.
+
+00:04:33.860 --> 00:04:38.150
+I had my thermalReader, which is a BufferedReader and I used the lines method 
+
+00:04:38.150 --> 00:04:41.620
+to extract lines a text as a stream,
+
+00:04:41.620 --> 00:04:45.230
+passed that mapToDouble, which then just
+uses the
+
+00:04:45.230 --> 00:04:49.100
+parseDouble and removing the F from
+the end of the string,
+
+00:04:49.100 --> 00:04:54.270
+so we can convert the temperature into
+a double value. Pass that into map,
+
+00:04:54.270 --> 00:04:58.050
+which converts it from Fahrenheit into
+Celsius.
+
+00:04:58.050 --> 00:05:02.450
+Pass that into filter, so that we can test
+whether the
+
+00:05:02.450 --> 00:05:05.550
+current temperature is different to the
+new temperature.
+
+00:05:05.550 --> 00:05:09.130
+Then use peek to
+
+00:05:09.130 --> 00:05:12.790
+take any values that are different
+
+00:05:12.790 --> 00:05:16.510
+and look to see if we have a listener. So
+I use an Optional for the listener;
+
+00:05:16.510 --> 00:05:20.950
+if it's present then we update the listener 
+by calling the temperatureChanged
+
+00:05:20.950 --> 00:05:21.660
+method
+
+00:05:21.660 --> 00:05:25.410
+passing in the new temperature. To terminate
+the stream 
+
+00:05:25.410 --> 00:05:29.590
+we use forEach and, in this case, what
+forEach is going to do
+
+00:05:29.590 --> 00:05:33.070
+is consume the temperature and
+it's going to set the
+
+00:05:33.070 --> 00:05:36.070
+current temperature to be whatever the new
+value is.
+
+00:05:36.070 --> 00:05:39.830
+To summarize this section,
+
+00:05:39.830 --> 00:05:43.570
+we can see that we can have streams
+which are both finite
+
+00:05:43.570 --> 00:05:46.890
+and infinite and how we use that depends
+on
+
+00:05:46.890 --> 00:05:52.030
+how we actually want to use. Unlike with
+imperative programming in Java, as we know
+
+00:05:52.030 --> 00:05:52.580
+it,
+
+00:05:52.580 --> 00:05:57.169
+we don't have the concept breaking out of a stream. But you can terminate a
+
+00:05:57.169 --> 00:05:58.010
+stream,
+
+00:05:58.010 --> 00:06:01.160
+using findFirst or findAny based on a
+
+00:06:01.160 --> 00:06:04.990
+condition being true at a certain point.
+So we can have that
+
+00:06:04.990 --> 00:06:08.100
+idea of processing until we get to the point
+where that
+
+00:06:08.100 --> 00:06:10.300
+thing is true.
+
+00:06:10.300 --> 00:06:14.160
+If we want to use an infinite stream then
+we can use infinitely.
+
+00:06:14.160 --> 00:06:17.530
+We can use that forEach method to
+consume the
+
+00:06:17.530 --> 00:06:20.920
+elements to the stream, but without
+actually terminating
+
+00:06:20.920 --> 00:06:24.870
+the stream that's being generated. 
+That
+
+00:06:24.870 --> 00:06:26.710
+is the end of this part of the lesson.
+

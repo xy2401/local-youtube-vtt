@@ -1,0 +1,535 @@
+WEBVTT
+Kind: captions
+Language: zh-Hans
+
+00:00:00.000 --> 00:00:05.177
+[ELECTRONIC MUSIC]
+
+00:00:05.177 --> 00:00:07.010
+大家好 我是 Rob
+ROB DODSON: Hey there polycasters, Rob here.
+
+00:00:07.010 --> 00:00:09.580
+Polymer 的数据绑定机制中有一个地方让我有些困惑
+One of the things that's kind of confused me about Polymer's
+
+00:00:09.580 --> 00:00:13.920
+那就是如何绑定到对象的子属性
+data binding system, is how it binds to sub-properties of objects.
+
+00:00:13.920 --> 00:00:16.300
+就像你应该可以创建一个
+It seems like you should be able to just create
+
+00:00:16.300 --> 00:00:18.390
+对象和其属性的绑定
+a binding on an object and its sub-property,
+
+00:00:18.390 --> 00:00:21.600
+在 JavaScript 中更新  然后就如你所愿地成功了
+and update that in JavaScript, and things would just magically work.
+
+00:00:21.600 --> 00:00:24.200
+但事实并非那么简单
+But reality proves otherwise.
+
+00:00:24.200 --> 00:00:25.960
+今天我想在 Polycast 中
+So today on Polycast what I want to do
+
+00:00:25.960 --> 00:00:28.140
+谈谈子属性绑定机制是如何工作的
+is go through how the sub-property binding system
+
+00:00:28.140 --> 00:00:31.320
+以及在你的 Polymer 元素中如何做绑定
+works and show you how to do bindings in your Polymer elements.
+
+00:00:31.320 --> 00:00:33.350
+好  让我们开始吧
+Let's check it out.
+
+00:00:33.350 --> 00:00:35.280
+我有一个很简单的元素
+So here I've got a pretty simple element
+
+00:00:35.280 --> 00:00:38.450
+展示了员工对应的经理
+for displaying an employee's manager.
+
+00:00:38.450 --> 00:00:39.980
+我要做的第一件事是
+And the first thing I'm going to do
+
+00:00:39.980 --> 00:00:43.710
+抽取出我们真正关心的内容
+is just trim this down to the bits that we really want to focus on.
+
+00:00:43.710 --> 00:00:47.170
+所以这里只有一段 HTML 和 JavaScript
+So we've got just our HTML and just our JavaScript down here.
+
+00:00:47.170 --> 00:00:49.890
+在这个 div 中
+Now, I've got this div and inside of here
+
+00:00:49.890 --> 00:00:53.510
+我们绑定到了 user.manager
+I'm binding to user dot manager.
+
+00:00:53.510 --> 00:00:57.730
+我正在将它绑定到 user 对象的子属性上
+So I'm binding to this sub-property of the user object.
+
+00:00:57.730 --> 00:01:00.250
+我可以做的是在元素属性里
+And what I can do is define that user object here
+
+00:01:00.250 --> 00:01:01.950
+定义 user 对象
+on my elements prototype.
+
+00:01:01.950 --> 00:01:05.880
+我想让它只要返回一个经理叫 Paul
+And I'm just going to have it return this value object that
+
+00:01:05.880 --> 00:01:08.880
+的 value 对象即可
+sets manager equal to Paul.
+
+00:01:08.880 --> 00:01:10.740
+好  到目前为止都很顺利
+So, so far so good.
+
+00:01:10.740 --> 00:01:14.220
+让我们放一个按钮  用来更改经理
+Let me drop in a button, so that I can change this manager.
+
+00:01:14.220 --> 00:01:15.530
+好了
+So I've got this button.
+
+00:01:15.530 --> 00:01:18.200
+当我按了之后  它会调用 changeManager 函数
+And when I tap it, it's going to call change manager.
+
+00:01:18.200 --> 00:01:20.330
+当我实现这个函数时
+And when I implement that function,
+
+00:01:20.330 --> 00:01:24.800
+它只会将 user.manager 属性
+it's just going to set user, this dot user's manager
+
+00:01:24.800 --> 00:01:27.390
+改为 Fred
+property to Fred.
+
+00:01:27.390 --> 00:01:29.940
+我们期待的是
+So we would expect-- over here on the right
+
+00:01:29.940 --> 00:01:32.380
+右边是我的元素
+I've got my element here, we would
+
+00:01:32.380 --> 00:01:35.030
+我们期待的是按下这个按钮文字也应该更新
+expect that when I click this button this should update.
+
+00:01:35.030 --> 00:01:37.380
+好  让我们点一下
+So let's go in there and we'll click it.
+
+00:01:37.380 --> 00:01:39.019
+好吧  什么都没有发生
+And, yeah, nothing happens.
+
+00:01:39.019 --> 00:01:41.060
+点啊点啊点
+I'm just sort of clicking it over and over again,
+
+00:01:41.060 --> 00:01:43.230
+还是没有变化
+not getting anything.
+
+00:01:43.230 --> 00:01:44.590
+让我们试试别的做法
+Well, let's try something else.
+
+00:01:44.590 --> 00:01:47.360
+与其试图设置子属性
+Instead of trying to set the sub-property,
+
+00:01:47.360 --> 00:01:50.750
+不如用一个新的对象
+let's actually just replace the user object
+
+00:01:50.750 --> 00:01:53.230
+直接换掉 user 对象
+with a completely new object.
+
+00:01:53.230 --> 00:01:55.940
+让我们试一试
+Let's go over here and try that.
+
+00:01:55.940 --> 00:02:00.370
+好  这确实成功了  但这是为什么呢
+OK, so that does work, but why?
+
+00:02:00.370 --> 00:02:01.380
+发生了什么
+What is going on here?
+
+00:02:01.380 --> 00:02:02.534
+区别是什么
+Why are they different?
+
+00:02:02.534 --> 00:02:04.200
+如果你还记得上个视频中
+Well, if you remember in the last video,
+
+00:02:04.200 --> 00:02:08.669
+我提到说  当你创建一个这样的绑定时
+I mentioned that when you create a binding like this,
+
+00:02:08.669 --> 00:02:10.360
+Polymer 会做两件事
+Polymer is going to do two things.
+
+00:02:10.360 --> 00:02:13.830
+它会创建属性的后果
+It's going to create property effects
+
+00:02:13.830 --> 00:02:18.880
+以及创建一个属性的 setter
+and it's going to create a setter for that property.
+
+00:02:18.880 --> 00:02:23.320
+所以在这里  当我彻底替换 user 对象时
+So what happens is, when I just completely replace
+
+00:02:23.320 --> 00:02:27.450
+在这个例子中 setter 被调用了
+the user object, in that case the setter is being called
+
+00:02:27.450 --> 00:02:29.870
+它遍历了所有的属性
+and it's running through all of our property effects just
+
+00:02:29.870 --> 00:02:31.410
+就像其他属性一样
+like any other property.
+
+00:02:31.410 --> 00:02:35.947
+但当我更改对象的子属性时
+But when I change a sub-property on that object,
+
+00:02:35.947 --> 00:02:38.280
+在这个例子中  setter 没有理由被调用
+well, in that case there's no reason to call the setter.
+
+00:02:38.280 --> 00:02:41.150
+因为我没有告诉它 this.user
+Because I haven't actually said this dot user
+
+00:02:41.150 --> 00:02:42.360
+是一个新的东西
+equals something new.
+
+00:02:42.360 --> 00:02:45.000
+setter 没有触发  所以属性的后果
+So the setter is not firing, therefore the property effects
+
+00:02:45.000 --> 00:02:46.910
+没有生效
+are not running.
+
+00:02:46.910 --> 00:02:50.060
+所以 Polymer 看到这样的绑定时
+So what Polymer is doing, when it sees this sort of binding,
+
+00:02:50.060 --> 00:02:53.820
+它创建的是一个路径绑定
+is instead of binding directly to that property it's creating
+
+00:02:53.820 --> 00:02:55.750
+而不是直接绑定到属性
+what it calls a path binding.
+
+00:02:59.090 --> 00:03:02.230
+我们已经有了属性后果
+And so we've got this-- we've got these property effects
+
+00:03:02.230 --> 00:03:04.810
+Polymer 知道了路径
+and they know about this path, but we
+
+00:03:04.810 --> 00:03:09.070
+但我们需要告诉它路径更新了
+need to tell the system that the path has updated.
+
+00:03:09.070 --> 00:03:11.180
+为了做到这一点
+And in order to do that, Polymer has actually
+
+00:03:11.180 --> 00:03:15.260
+Polymer 事实上已经实现了一种叫做 notifyPath 的方法
+implemented its own method called notifyPath.
+
+00:03:15.260 --> 00:03:17.300
+我们可以继续  命令式地
+So we can go in and we can imperatively
+
+00:03:17.300 --> 00:03:20.290
+更改 user.manager 属性
+change our user dot manager property,
+
+00:03:20.290 --> 00:03:23.990
+然后告诉它路径已经更新了
+and then we can tell the system that this path right here
+
+00:03:23.990 --> 00:03:27.160
+然后传入那个值
+has updated, and we can pass in that value.
+
+00:03:27.160 --> 00:03:28.640
+Polymer 将会做的是
+And what Polymer is going to go do
+
+00:03:28.640 --> 00:03:31.649
+检查所有的属性后果
+is it's going to look at any of its property effects,
+
+00:03:31.649 --> 00:03:33.190
+简单地遍历所有属性
+it's just going to loop through them,
+
+00:03:33.190 --> 00:03:35.190
+寻找所有包含这个路径的
+it's going to find any of those property effects
+
+00:03:35.190 --> 00:03:37.180
+属性后果
+that have this path inside of them,
+
+00:03:37.180 --> 00:03:43.080
+然后用特定的值更新这些节点
+and it's going to update those nodes with this particular value.
+
+00:03:43.080 --> 00:03:45.950
+事实上  就像你自然而然
+And in fact, since this is such a common task
+
+00:03:45.950 --> 00:03:48.020
+会想到的一样  Polymer 提供了
+that you would do, Polymer actually gives you
+
+00:03:48.020 --> 00:03:51.110
+一个帮助方法  叫做 this.set
+this little helper method called this dot set, which
+
+00:03:51.110 --> 00:03:54.280
+不光帮你在 JavaScript 中设置了属性
+will not only set the property for you in JavaScript,
+
+00:03:54.280 --> 00:03:58.020
+还帮你调用了 notifyPath
+but will also call notifyPath on your behalf.
+
+00:03:58.020 --> 00:04:01.080
+之所以 Polymer 使用这个方法
+Now the reason why Polymer uses this approach,
+
+00:04:01.080 --> 00:04:05.310
+而不是为所有子属性创建一个 setter
+versus creating a setter for all of these sub-properties,
+
+00:04:05.310 --> 00:04:08.490
+是因为这个代价实在是太高昂了
+is that it would just be really, really expensive
+
+00:04:08.490 --> 00:04:11.700
+如果要为任何对象中的每一个属性
+to try and create a setter for every single sub-property
+
+00:04:11.700 --> 00:04:12.980
+创建 setter 的话
+in any object.
+
+00:04:12.980 --> 00:04:15.350
+你可以想象一下  如果你有一个对象包含 1000 个子属性
+You could imagine if you had an object with like 1,000
+
+00:04:15.350 --> 00:04:19.079
+试着用 setter 来替换所有子属性
+sub-properties, that trying to replace all those with setters,
+
+00:04:19.079 --> 00:04:21.079
+如果你有这些元素的多个实例
+if you had multiple instances of those elements
+
+00:04:21.079 --> 00:04:22.540
+它们又有不同的对象
+and they all had different objects,
+
+00:04:22.540 --> 00:04:25.350
+运行时的代价将会是巨大的
+the runtime cost would be pretty massive.
+
+00:04:25.350 --> 00:04:28.570
+取而代之地  作为易用性和性能
+So instead, as kind of a compromise between ease
+
+00:04:28.570 --> 00:04:31.810
+之间的妥协  我们用这种方法来
+of use and performance, we have these methods
+
+00:04:31.810 --> 00:04:34.310
+进行路径绑定
+that allow us to work with these path bindings.
+
+00:04:34.310 --> 00:04:36.690
+这是命令式的做法
+Now this is how you do it imperatively, but let me also
+
+00:04:36.690 --> 00:04:40.450
+现在让我告诉你如何进行声明式的数据绑定
+show you how you can do it declaratively through a data binding.
+
+00:04:40.450 --> 00:04:42.900
+元素和之前相同
+Now, here I've got the same element,
+
+00:04:42.900 --> 00:04:47.510
+但这次  user.manager 绑定到了这个输入栏
+but this time, user dot manager is bound to this paper input
+
+00:04:47.510 --> 00:04:51.010
+以及上面的 div
+field and it's also bound to this div up here.
+
+00:04:51.010 --> 00:04:53.150
+当我开始输入时
+So, when I go and I start typing,
+
+00:04:53.150 --> 00:04:56.530
+它会同时更新这两个地方
+it's going to update that binding in both places.
+
+00:04:56.530 --> 00:04:59.300
+在 Polymer 底层发生的是
+And what's happening is, under the hood when Polymer
+
+00:04:59.300 --> 00:05:02.750
+输入框正在更新
+sees that our paper input is updating,
+
+00:05:02.750 --> 00:05:06.200
+它检查了这里的这个属性  就像是在说
+it checks this property right here and it's like,
+
+00:05:06.200 --> 00:05:08.660
+我看到这里有一个路径绑定
+oh, I see that this is a path binding.
+
+00:05:08.660 --> 00:05:10.840
+我发现这是结构化的数据
+I see that this is some structured data.
+
+00:05:10.840 --> 00:05:14.450
+帮 user 自动调用 this.set
+I'm just going to go ahead and call this dot set
+
+00:05:14.450 --> 00:05:16.560
+因为我认为
+on the user's behalf, because I figure
+
+00:05:16.560 --> 00:05:17.990
+他们希望我这么做
+that's what they wanted to do.
+
+00:05:17.990 --> 00:05:20.430
+因此你有两种更新子属性的方法
+So there's two ways that you can go about updating sub-properties.
+
+00:05:20.430 --> 00:05:23.170
+你可以用 Polymer 的帮助方法
+You can either use Polymer's helper methods
+
+00:05:23.170 --> 00:05:26.290
+或者某种情形下你恰好
+or you can, if you happen to be in a situation
+
+00:05:26.290 --> 00:05:28.650
+可以这么做  你也可以设置数据绑定
+where you can do this, you can also set up data bindings
+
+00:05:28.650 --> 00:05:31.430
+让它这样做
+and have it update that way as well.
+
+00:05:31.430 --> 00:05:34.099
+现在你已经知道了 Polymer 中
+So now you know a bit more about binding to objects
+
+00:05:34.099 --> 00:05:35.140
+更多的对象绑定
+in your Polymer elements.
+
+00:05:35.140 --> 00:05:37.080
+但还有很多非常有趣的话题
+But there's a lot of really cool, meaty topics
+
+00:05:37.080 --> 00:05:38.830
+我们没有讨论到
+which we haven't covered yet, like binding
+
+00:05:38.830 --> 00:05:41.760
+比如说数组绑定  更改记录  等等
+to arrays, and change records, and all that cool stuff.
+
+00:05:41.760 --> 00:05:44.530
+但我会把这些留到下一集中再讲
+But I'm going to save all that for the next episode.
+
+00:05:44.530 --> 00:05:47.550
+对于那些没想明白U型槽和数据绑定
+Now, for those of you who are wondering what a half-pipe has
+
+00:05:47.550 --> 00:05:48.910
+有什么关系的同学
+to do with data bindings.
+
+00:05:48.910 --> 00:05:51.140
+它们一点关系都没有
+Half-pipe has nothing to do with data bindings.
+
+00:05:51.140 --> 00:05:53.390
+我只是在我办公室边上发现了一个吓人的 U 型槽
+I just found a freaking half-pipe next to my office.
+
+00:05:53.390 --> 00:05:56.180
+这问题大得可怕
+This giant chute here.
+
+00:05:56.180 --> 00:05:57.817
+如果你享受这集的内容的话
+So, if you've enjoyed this episode,
+
+00:05:57.817 --> 00:05:59.400
+或者我们的 U 型槽
+you've enjoyed our half-pipe, consider
+
+00:05:59.400 --> 00:06:01.857
+考虑点击一下订阅按钮
+clicking that subscribe button, and maybe catch us
+
+00:06:01.857 --> 00:06:03.190
+在下一集的 Polycast 见到我们
+on the next episode of Polycast.
+
+00:06:03.190 --> 00:06:07.510
+同样  感谢你们的观看  后会有期
+As always, thank you for watching and I'll see you next time.
+

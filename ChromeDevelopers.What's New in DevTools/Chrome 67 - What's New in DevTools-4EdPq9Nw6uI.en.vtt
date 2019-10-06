@@ -1,0 +1,324 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.450
+[MUSIC PLAYING]
+
+00:00:05.684 --> 00:00:06.850
+KAYCE BASQUES: Welcome back.
+
+00:00:06.850 --> 00:00:10.060
+Here's what's new in
+DevTools and Chrome 67.
+
+00:00:10.060 --> 00:00:11.680
+First up, in the
+Network panel, you
+
+00:00:11.680 --> 00:00:14.766
+can now search across
+network headers.
+
+00:00:14.766 --> 00:00:16.390
+When you've got the
+Network panel open,
+
+00:00:16.390 --> 00:00:20.320
+press Command-F or Control-F
+to open the new search UI.
+
+00:00:20.320 --> 00:00:23.170
+Enter some text, press
+Enter, and DevTools searchers
+
+00:00:23.170 --> 00:00:26.770
+across all network headers
+and responses for that text.
+
+00:00:26.770 --> 00:00:31.000
+Click Use Regular Expressions
+to provide a pattern instead.
+
+00:00:31.000 --> 00:00:34.420
+Note that you omit the forward
+slashes when using regex.
+
+00:00:34.420 --> 00:00:36.220
+Also new to the
+Network panel, you
+
+00:00:36.220 --> 00:00:41.550
+can now copy network requests
+as fetch expressions.
+
+00:00:41.550 --> 00:00:44.200
+The Sources panel now
+supports a workflow
+
+00:00:44.200 --> 00:00:46.660
+for breaking out
+of infinite loops.
+
+00:00:46.660 --> 00:00:49.120
+Here on this page, I've
+got an interval logging
+
+00:00:49.120 --> 00:00:50.440
+the current time.
+
+00:00:50.440 --> 00:00:51.970
+When I click this
+button, you can
+
+00:00:51.970 --> 00:00:54.940
+see that it causes an infinite
+loop because the time is
+
+00:00:54.940 --> 00:00:56.650
+no longer updating.
+
+00:00:56.650 --> 00:00:58.180
+To break out of
+the infinite loop,
+
+00:00:58.180 --> 00:01:01.410
+I pause the page, then hold
+Resume, then select Stop.
+
+00:01:06.060 --> 00:01:08.040
+The Styles pane is
+getting a couple updates
+
+00:01:08.040 --> 00:01:11.430
+that make it easier to
+work with CSS variables.
+
+00:01:11.430 --> 00:01:14.610
+When you've got a color property
+that's set to a CSS variable,
+
+00:01:14.610 --> 00:01:17.830
+the Styles pane now shows
+you a preview of that color.
+
+00:01:17.830 --> 00:01:19.680
+You can also hover
+over any variable,
+
+00:01:19.680 --> 00:01:22.680
+whether it resolves to a
+color or something else,
+
+00:01:22.680 --> 00:01:25.740
+and DevTools shows you
+its computed value.
+
+00:01:25.740 --> 00:01:28.830
+The color picker also has
+a new CSS variables palette
+
+00:01:28.830 --> 00:01:30.854
+which shows you the
+CSS variables that
+
+00:01:30.854 --> 00:01:31.770
+apply to that element.
+
+00:01:35.540 --> 00:01:37.190
+The Audits panel has
+some new workflows
+
+00:01:37.190 --> 00:01:39.140
+for configuring and
+viewing the ports,
+
+00:01:39.140 --> 00:01:41.750
+as well as two new audits.
+
+00:01:41.750 --> 00:01:44.690
+Before you run an audit, you
+can use these new config options
+
+00:01:44.690 --> 00:01:48.170
+to preserve desktop settings,
+disable throttling, or preserve
+
+00:01:48.170 --> 00:01:49.580
+storage.
+
+00:01:49.580 --> 00:01:52.460
+After you run an audit,
+you'll notice two new audits--
+
+00:01:52.460 --> 00:01:55.490
+preloading key requests
+and avoiding invisible text
+
+00:01:55.490 --> 00:01:57.470
+while loading web fonts.
+
+00:01:57.470 --> 00:02:00.440
+Last, if you want to analyze
+your report in the Performance
+
+00:02:00.440 --> 00:02:04.600
+panel, click the new
+View Trace button.
+
+00:02:04.600 --> 00:02:06.130
+Also new in the
+Performance panel,
+
+00:02:06.130 --> 00:02:08.020
+you can now click
+the user timing track
+
+00:02:08.020 --> 00:02:10.070
+to view your measurements
+in the Summary, Call
+
+00:02:10.070 --> 00:02:12.382
+Tree, and Bottom-Up tabs.
+
+00:02:12.382 --> 00:02:13.840
+This is related to
+work we're doing
+
+00:02:13.840 --> 00:02:16.600
+around site isolation,
+which improves security
+
+00:02:16.600 --> 00:02:19.880
+by separating frames
+into different processes.
+
+00:02:19.880 --> 00:02:22.810
+So if you see a lot of frames
+on your main thread flame chart,
+
+00:02:22.810 --> 00:02:25.900
+it means you've got
+site isolation enabled.
+
+00:02:25.900 --> 00:02:28.120
+Likewise, you can click
+any of these tracks
+
+00:02:28.120 --> 00:02:30.370
+in order to isolate
+that information, just
+
+00:02:30.370 --> 00:02:33.320
+like the user timing track.
+
+00:02:33.320 --> 00:02:36.410
+The Security panel now shows
+you certificate transparency
+
+00:02:36.410 --> 00:02:38.990
+information for each origin.
+
+00:02:38.990 --> 00:02:40.460
+That's all for new features.
+
+00:02:40.460 --> 00:02:43.040
+Here are some UI changes.
+
+00:02:43.040 --> 00:02:46.940
+The Memory panel now lists
+out all available VM instances
+
+00:02:46.940 --> 00:02:50.720
+in a table rather than hiding
+them behind a dropdown menu.
+
+00:02:50.720 --> 00:02:52.970
+On the Sources panel,
+what used to be called
+
+00:02:52.970 --> 00:02:56.090
+the Network tab is now
+called the Page tab.
+
+00:02:56.090 --> 00:02:58.640
+And last, we've been
+making various small tweaks
+
+00:02:58.640 --> 00:03:02.660
+to the dark theme, so it should
+feel a little less Halloweeny
+
+00:03:02.660 --> 00:03:05.120
+now.
+
+00:03:05.120 --> 00:03:06.610
+That's all for Chrome 67.
+
+00:03:06.610 --> 00:03:08.020
+Here's a bonus tip.
+
+00:03:08.020 --> 00:03:11.190
+Surma actually made a Micro
+Tip video on this already,
+
+00:03:11.190 --> 00:03:15.080
+but I think it's so cool that
+it deserves another mention.
+
+00:03:15.080 --> 00:03:17.960
+When you want to figure out
+how an animation's layers work,
+
+00:03:17.960 --> 00:03:20.630
+press Command-Shift-P
+or Control-Shift-P
+
+00:03:20.630 --> 00:03:22.370
+to open the command menu.
+
+00:03:22.370 --> 00:03:24.230
+Open the Animations tab.
+
+00:03:24.230 --> 00:03:26.900
+Click Set Speed to 10%.
+
+00:03:26.900 --> 00:03:28.850
+Open the Command menu again.
+
+00:03:28.850 --> 00:03:30.080
+Open the Layers panel.
+
+00:03:30.080 --> 00:03:31.970
+And then rotate the
+perspective a bit
+
+00:03:31.970 --> 00:03:35.190
+so that it's easier
+to see the layers.
+
+00:03:35.190 --> 00:03:36.800
+Now when you interact
+with the page,
+
+00:03:36.800 --> 00:03:39.620
+you can see how the
+layers animate in slow-mo.
+
+00:03:43.200 --> 00:03:44.066
+Thanks for watching.
+
+00:03:44.066 --> 00:03:45.690
+As always, leave me
+a comment if you've
+
+00:03:45.690 --> 00:03:47.320
+got questions or feedback.
+
+00:03:47.320 --> 00:03:50.350
+Otherwise, I'll see you in
+six weeks for Chrome 68.
+
+00:03:50.350 --> 00:03:53.100
+[MUSIC PLAYING]
+

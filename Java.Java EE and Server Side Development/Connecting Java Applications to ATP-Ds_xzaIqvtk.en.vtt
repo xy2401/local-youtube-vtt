@@ -1,0 +1,936 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:01.670 align:start position:0%
+ 
+in<00:00:00.179><c> this</c><00:00:00.390><c> video</c><00:00:00.599><c> we</c><00:00:01.079><c> are</c><00:00:01.170><c> going</c><00:00:01.319><c> to</c><00:00:01.439><c> show</c><00:00:01.620><c> you</c>
+
+00:00:01.670 --> 00:00:01.680 align:start position:0%
+in this video we are going to show you
+ 
+
+00:00:01.680 --> 00:00:04.190 align:start position:0%
+in this video we are going to show you
+how<00:00:02.040><c> to</c><00:00:02.100><c> connect</c><00:00:02.550><c> your</c><00:00:02.610><c> java</c><00:00:02.939><c> applications</c><00:00:03.810><c> to</c>
+
+00:00:04.190 --> 00:00:04.200 align:start position:0%
+how to connect your java applications to
+ 
+
+00:00:04.200 --> 00:00:06.650 align:start position:0%
+how to connect your java applications to
+autonomous<00:00:04.799><c> transaction</c><00:00:05.490><c> processing</c><00:00:06.029><c> my</c>
+
+00:00:06.650 --> 00:00:06.660 align:start position:0%
+autonomous transaction processing my
+ 
+
+00:00:06.660 --> 00:00:08.059 align:start position:0%
+autonomous transaction processing my
+name<00:00:06.870><c> is</c><00:00:07.020><c> Nabil</c><00:00:07.200><c> ascender</c><00:00:07.710><c> Appa</c>
+
+00:00:08.059 --> 00:00:08.069 align:start position:0%
+name is Nabil ascender Appa
+ 
+
+00:00:08.069 --> 00:00:09.830 align:start position:0%
+name is Nabil ascender Appa
+I'm<00:00:08.130><c> the</c><00:00:08.370><c> principal</c><00:00:08.670><c> product</c><00:00:09.179><c> manager</c><00:00:09.630><c> for</c>
+
+00:00:09.830 --> 00:00:09.840 align:start position:0%
+I'm the principal product manager for
+ 
+
+00:00:09.840 --> 00:00:12.919 align:start position:0%
+I'm the principal product manager for
+Oracle<00:00:10.380><c> JDBC</c><00:00:10.860><c> and</c><00:00:11.099><c> UCP</c><00:00:11.639><c> let's</c><00:00:12.389><c> begin</c><00:00:12.750><c> with</c>
+
+00:00:12.919 --> 00:00:12.929 align:start position:0%
+Oracle JDBC and UCP let's begin with
+ 
+
+00:00:12.929 --> 00:00:16.189 align:start position:0%
+Oracle JDBC and UCP let's begin with
+prerequisites<00:00:14.059><c> the</c><00:00:15.059><c> first</c><00:00:15.330><c> prerequisite</c><00:00:15.929><c> is</c>
+
+00:00:16.189 --> 00:00:16.199 align:start position:0%
+prerequisites the first prerequisite is
+ 
+
+00:00:16.199 --> 00:00:18.349 align:start position:0%
+prerequisites the first prerequisite is
+to<00:00:16.440><c> provision</c><00:00:16.980><c> the</c><00:00:17.160><c> autonomous</c><00:00:17.699><c> transaction</c>
+
+00:00:18.349 --> 00:00:18.359 align:start position:0%
+to provision the autonomous transaction
+ 
+
+00:00:18.359 --> 00:00:20.570 align:start position:0%
+to provision the autonomous transaction
+processing<00:00:18.900><c> sign</c><00:00:19.830><c> in</c><00:00:20.010><c> with</c><00:00:20.189><c> your</c><00:00:20.340><c> cloud</c>
+
+00:00:20.570 --> 00:00:20.580 align:start position:0%
+processing sign in with your cloud
+ 
+
+00:00:20.580 --> 00:00:23.269 align:start position:0%
+processing sign in with your cloud
+credentials<00:00:21.029><c> at</c><00:00:21.449><c> cloud.oracle.com</c><00:00:22.279><c> and</c>
+
+00:00:23.269 --> 00:00:23.279 align:start position:0%
+credentials at cloud.oracle.com and
+ 
+
+00:00:23.279 --> 00:00:26.150 align:start position:0%
+credentials at cloud.oracle.com and
+create<00:00:24.180><c> an</c><00:00:24.359><c> EDP</c><00:00:24.689><c> database</c><00:00:25.199><c> by</c><00:00:25.470><c> filling</c><00:00:25.800><c> in</c><00:00:25.920><c> few</c>
+
+00:00:26.150 --> 00:00:26.160 align:start position:0%
+create an EDP database by filling in few
+ 
+
+00:00:26.160 --> 00:00:27.099 align:start position:0%
+create an EDP database by filling in few
+details
+
+00:00:27.099 --> 00:00:27.109 align:start position:0%
+details
+ 
+
+00:00:27.109 --> 00:00:30.050 align:start position:0%
+details
+the<00:00:28.109><c> second</c><00:00:28.500><c> prerequisite</c><00:00:29.130><c> is</c><00:00:29.310><c> to</c><00:00:29.580><c> download</c>
+
+00:00:30.050 --> 00:00:30.060 align:start position:0%
+the second prerequisite is to download
+ 
+
+00:00:30.060 --> 00:00:31.759 align:start position:0%
+the second prerequisite is to download
+the<00:00:30.240><c> client</c><00:00:30.390><c> credentials</c><00:00:31.140><c> from</c><00:00:31.349><c> service</c>
+
+00:00:31.759 --> 00:00:31.769 align:start position:0%
+the client credentials from service
+ 
+
+00:00:31.769 --> 00:00:35.150 align:start position:0%
+the client credentials from service
+console<00:00:32.189><c> after</c><00:00:33.180><c> your</c><00:00:33.719><c> ATP</c><00:00:34.110><c> is</c><00:00:34.380><c> created</c><00:00:34.980><c> click</c>
+
+00:00:35.150 --> 00:00:35.160 align:start position:0%
+console after your ATP is created click
+ 
+
+00:00:35.160 --> 00:00:38.000 align:start position:0%
+console after your ATP is created click
+on<00:00:35.730><c> service</c><00:00:36.149><c> console</c><00:00:36.600><c> and</c><00:00:36.840><c> login</c><00:00:37.410><c> as</c><00:00:37.590><c> admin</c>
+
+00:00:38.000 --> 00:00:38.010 align:start position:0%
+on service console and login as admin
+ 
+
+00:00:38.010 --> 00:00:40.639 align:start position:0%
+on service console and login as admin
+user<00:00:38.690><c> click</c><00:00:39.690><c> on</c><00:00:39.719><c> download</c><00:00:40.410><c> client</c>
+
+00:00:40.639 --> 00:00:40.649 align:start position:0%
+user click on download client
+ 
+
+00:00:40.649 --> 00:00:42.830 align:start position:0%
+user click on download client
+credentials<00:00:41.280><c> to</c><00:00:41.640><c> download</c><00:00:42.030><c> the</c><00:00:42.180><c> walnut</c><00:00:42.600><c> zip</c>
+
+00:00:42.830 --> 00:00:42.840 align:start position:0%
+credentials to download the walnut zip
+ 
+
+00:00:42.840 --> 00:00:45.520 align:start position:0%
+credentials to download the walnut zip
+file<00:00:43.110><c> by</c><00:00:43.500><c> entering</c><00:00:44.010><c> the</c><00:00:44.129><c> wallet</c><00:00:44.460><c> password</c>
+
+00:00:45.520 --> 00:00:45.530 align:start position:0%
+file by entering the wallet password
+ 
+
+00:00:45.530 --> 00:00:48.170 align:start position:0%
+file by entering the wallet password
+make<00:00:46.530><c> sure</c><00:00:46.559><c> to</c><00:00:46.980><c> save</c><00:00:47.190><c> this</c><00:00:47.460><c> to</c><00:00:47.640><c> a</c><00:00:47.670><c> secure</c>
+
+00:00:48.170 --> 00:00:48.180 align:start position:0%
+make sure to save this to a secure
+ 
+
+00:00:48.180 --> 00:00:50.180 align:start position:0%
+make sure to save this to a secure
+location<00:00:48.239><c> where</c><00:00:48.780><c> only</c><00:00:49.410><c> authorized</c><00:00:49.980><c> people</c>
+
+00:00:50.180 --> 00:00:50.190 align:start position:0%
+location where only authorized people
+ 
+
+00:00:50.190 --> 00:00:53.569 align:start position:0%
+location where only authorized people
+have<00:00:50.550><c> access</c><00:00:50.940><c> to</c><00:00:51.000><c> it</c><00:00:51.469><c> the</c><00:00:52.469><c> zip</c><00:00:52.680><c> file</c><00:00:52.920><c> contains</c>
+
+00:00:53.569 --> 00:00:53.579 align:start position:0%
+have access to it the zip file contains
+ 
+
+00:00:53.579 --> 00:00:58.010 align:start position:0%
+have access to it the zip file contains
+all<00:00:53.789><c> the</c><00:00:54.180><c> files</c><00:00:54.420><c> listed</c><00:00:54.960><c> here</c><00:00:56.780><c> the</c><00:00:57.780><c> third</c>
+
+00:00:58.010 --> 00:00:58.020 align:start position:0%
+all the files listed here the third
+ 
+
+00:00:58.020 --> 00:00:59.900 align:start position:0%
+all the files listed here the third
+prerequisite<00:00:58.770><c> is</c><00:00:58.920><c> to</c><00:00:59.129><c> install</c><00:00:59.579><c> the</c><00:00:59.760><c> latest</c>
+
+00:00:59.900 --> 00:00:59.910 align:start position:0%
+prerequisite is to install the latest
+ 
+
+00:00:59.910 --> 00:01:04.729 align:start position:0%
+prerequisite is to install the latest
+JDK<00:01:00.660><c> make</c><00:01:01.469><c> sure</c><00:01:01.739><c> to</c><00:01:01.949><c> have</c><00:01:02.129><c> JDK</c><00:01:02.640><c> 10</c><00:01:02.879><c> RJD</c><00:01:03.570><c> k9r</c><00:01:04.170><c> JDK</c>
+
+00:01:04.729 --> 00:01:04.739 align:start position:0%
+JDK make sure to have JDK 10 RJD k9r JDK
+ 
+
+00:01:04.739 --> 00:01:08.200 align:start position:0%
+JDK make sure to have JDK 10 RJD k9r JDK
+8<00:01:04.949><c> update</c><00:01:05.519><c> 162</c><00:01:06.270><c> also</c><00:01:07.229><c> download</c><00:01:07.770><c> the</c><00:01:07.950><c> latest</c>
+
+00:01:08.200 --> 00:01:08.210 align:start position:0%
+8 update 162 also download the latest
+ 
+
+00:01:08.210 --> 00:01:12.620 align:start position:0%
+8 update 162 also download the latest
+18.3<00:01:09.210><c> JDBC</c><00:01:09.750><c> driver</c><00:01:10.080><c> and</c><00:01:10.380><c> UCP</c><00:01:11.299><c> along</c><00:01:12.299><c> with</c><00:01:12.510><c> the</c>
+
+00:01:12.620 --> 00:01:12.630 align:start position:0%
+18.3 JDBC driver and UCP along with the
+ 
+
+00:01:12.630 --> 00:01:16.370 align:start position:0%
+18.3 JDBC driver and UCP along with the
+JDBC<00:01:13.110><c> driver</c><00:01:13.380><c> and</c><00:01:13.680><c> UCP</c><00:01:14.130><c> you</c><00:01:14.310><c> also</c><00:01:14.549><c> need</c><00:01:15.380><c> Oracle</c>
+
+00:01:16.370 --> 00:01:16.380 align:start position:0%
+JDBC driver and UCP you also need Oracle
+ 
+
+00:01:16.380 --> 00:01:19.370 align:start position:0%
+JDBC driver and UCP you also need Oracle
+PKI<00:01:16.770><c> dot</c><00:01:17.070><c> jar</c><00:01:17.369><c> an</c><00:01:17.880><c> esthetic</c><00:01:18.509><c> underscore</c><00:01:19.110><c> cold</c>
+
+00:01:19.370 --> 00:01:19.380 align:start position:0%
+PKI dot jar an esthetic underscore cold
+ 
+
+00:01:19.380 --> 00:01:22.070 align:start position:0%
+PKI dot jar an esthetic underscore cold
+jar<00:01:19.830><c> and</c><00:01:20.070><c> OS</c><00:01:20.340><c> ET</c><00:01:20.549><c> underscore</c><00:01:20.970><c> Sirdar</c><00:01:21.420><c> jar</c><00:01:21.720><c> if</c>
+
+00:01:22.070 --> 00:01:22.080 align:start position:0%
+jar and OS ET underscore Sirdar jar if
+ 
+
+00:01:22.080 --> 00:01:24.530 align:start position:0%
+jar and OS ET underscore Sirdar jar if
+you<00:01:22.380><c> are</c><00:01:22.439><c> using</c><00:01:22.680><c> Oracle</c><00:01:23.310><c> wallets</c><00:01:23.729><c> there</c><00:01:24.360><c> are</c>
+
+00:01:24.530 --> 00:01:24.540 align:start position:0%
+you are using Oracle wallets there are
+ 
+
+00:01:24.540 --> 00:01:26.390 align:start position:0%
+you are using Oracle wallets there are
+two<00:01:24.930><c> ways</c><00:01:25.200><c> to</c><00:01:25.439><c> connect</c><00:01:25.710><c> to</c><00:01:25.830><c> ATP</c>
+
+00:01:26.390 --> 00:01:26.400 align:start position:0%
+two ways to connect to ATP
+ 
+
+00:01:26.400 --> 00:01:29.510 align:start position:0%
+two ways to connect to ATP
+one<00:01:26.880><c> using</c><00:01:27.509><c> Java</c><00:01:27.960><c> key</c><00:01:28.290><c> stores</c><00:01:28.650><c> and</c><00:01:28.860><c> a</c><00:01:29.070><c> second</c>
+
+00:01:29.510 --> 00:01:29.520 align:start position:0%
+one using Java key stores and a second
+ 
+
+00:01:29.520 --> 00:01:32.359 align:start position:0%
+one using Java key stores and a second
+using<00:01:29.880><c> Oracle</c><00:01:30.509><c> wallets</c><00:01:30.930><c> I</c><00:01:31.200><c> will</c><00:01:32.130><c> walk</c><00:01:32.340><c> you</c>
+
+00:01:32.359 --> 00:01:32.369 align:start position:0%
+using Oracle wallets I will walk you
+ 
+
+00:01:32.369 --> 00:01:34.670 align:start position:0%
+using Oracle wallets I will walk you
+through<00:01:32.579><c> the</c><00:01:32.790><c> code</c><00:01:33.090><c> samples</c><00:01:33.630><c> to</c><00:01:34.140><c> connect</c><00:01:34.530><c> to</c>
+
+00:01:34.670 --> 00:01:34.680 align:start position:0%
+through the code samples to connect to
+ 
+
+00:01:34.680 --> 00:01:38.090 align:start position:0%
+through the code samples to connect to
+ATP<00:01:35.490><c> using</c><00:01:36.150><c> both</c><00:01:36.479><c> these</c><00:01:36.689><c> approaches</c><00:01:37.320><c> I</c><00:01:37.500><c> have</c>
+
+00:01:38.090 --> 00:01:38.100 align:start position:0%
+ATP using both these approaches I have
+ 
+
+00:01:38.100 --> 00:01:40.490 align:start position:0%
+ATP using both these approaches I have
+downloaded<00:01:38.340><c> UCP</c><00:01:39.210><c> sample</c><00:01:39.659><c> dot</c><00:01:39.869><c> Java</c><00:01:40.259><c> from</c>
+
+00:01:40.490 --> 00:01:40.500 align:start position:0%
+downloaded UCP sample dot Java from
+ 
+
+00:01:40.500 --> 00:01:43.160 align:start position:0%
+downloaded UCP sample dot Java from
+github<00:01:40.799><c> the</c><00:01:41.579><c> first</c><00:01:41.850><c> step</c><00:01:42.090><c> is</c><00:01:42.270><c> to</c><00:01:42.479><c> update</c><00:01:42.930><c> the</c>
+
+00:01:43.160 --> 00:01:43.170 align:start position:0%
+github the first step is to update the
+ 
+
+00:01:43.170 --> 00:01:45.770 align:start position:0%
+github the first step is to update the
+database<00:01:43.320><c> URL</c><00:01:43.820><c> username</c><00:01:44.820><c> and</c><00:01:45.030><c> password</c>
+
+00:01:45.770 --> 00:01:45.780 align:start position:0%
+database URL username and password
+ 
+
+00:01:45.780 --> 00:01:47.990 align:start position:0%
+database URL username and password
+pointing<00:01:46.619><c> to</c><00:01:46.710><c> the</c><00:01:46.799><c> ADP</c><00:01:47.280><c> database</c><00:01:47.700><c> that</c><00:01:47.880><c> you</c>
+
+00:01:47.990 --> 00:01:48.000 align:start position:0%
+pointing to the ADP database that you
+ 
+
+00:01:48.000 --> 00:01:52.249 align:start position:0%
+pointing to the ADP database that you
+have<00:01:48.030><c> created</c><00:01:48.450><c> also</c><00:01:49.320><c> use</c><00:01:50.070><c> TNS</c><00:01:50.579><c> Elyas</c><00:01:51.420><c> from</c><00:01:51.899><c> DNS</c>
+
+00:01:52.249 --> 00:01:52.259 align:start position:0%
+have created also use TNS Elyas from DNS
+ 
+
+00:01:52.259 --> 00:01:55.460 align:start position:0%
+have created also use TNS Elyas from DNS
+name<00:01:52.500><c> start</c><00:01:52.829><c> aura</c><00:01:53.149><c> DNS</c><00:01:54.149><c> name</c><00:01:54.329><c> start</c><00:01:54.630><c> aura</c><00:01:54.869><c> can</c>
+
+00:01:55.460 --> 00:01:55.470 align:start position:0%
+name start aura DNS name start aura can
+ 
+
+00:01:55.470 --> 00:01:57.740 align:start position:0%
+name start aura DNS name start aura can
+be<00:01:55.649><c> found</c><00:01:55.950><c> from</c><00:01:56.430><c> the</c><00:01:56.520><c> client</c><00:01:56.969><c> credential</c><00:01:57.479><c> zip</c>
+
+00:01:57.740 --> 00:01:57.750 align:start position:0%
+be found from the client credential zip
+ 
+
+00:01:57.750 --> 00:02:00.109 align:start position:0%
+be found from the client credential zip
+file<00:01:58.020><c> that</c><00:01:58.530><c> you</c><00:01:58.649><c> download</c><00:01:59.189><c> from</c><00:01:59.399><c> your</c><00:01:59.820><c> cloud</c>
+
+00:02:00.109 --> 00:02:00.119 align:start position:0%
+file that you download from your cloud
+ 
+
+00:02:00.119 --> 00:02:03.469 align:start position:0%
+file that you download from your cloud
+account<00:02:00.200><c> in</c><00:02:01.200><c> this</c><00:02:01.530><c> sample</c><00:02:01.860><c> we</c><00:02:02.310><c> are</c><00:02:02.430><c> using</c><00:02:02.759><c> JDBC</c>
+
+00:02:03.469 --> 00:02:03.479 align:start position:0%
+account in this sample we are using JDBC
+ 
+
+00:02:03.479 --> 00:02:06.800 align:start position:0%
+account in this sample we are using JDBC
+test<00:02:03.750><c> underscore</c><00:02:04.320><c> medium</c><00:02:04.820><c> the</c><00:02:05.820><c> DNS</c><00:02:06.240><c> admin</c>
+
+00:02:06.800 --> 00:02:06.810 align:start position:0%
+test underscore medium the DNS admin
+ 
+
+00:02:06.810 --> 00:02:09.020 align:start position:0%
+test underscore medium the DNS admin
+should<00:02:07.259><c> be</c><00:02:07.380><c> pointing</c><00:02:07.860><c> to</c><00:02:07.979><c> the</c><00:02:08.069><c> location</c><00:02:08.670><c> where</c>
+
+00:02:09.020 --> 00:02:09.030 align:start position:0%
+should be pointing to the location where
+ 
+
+00:02:09.030 --> 00:02:11.500 align:start position:0%
+should be pointing to the location where
+you<00:02:09.090><c> have</c><00:02:09.330><c> unzipped</c><00:02:10.170><c> the</c><00:02:10.259><c> client</c><00:02:10.649><c> credentials</c>
+
+00:02:11.500 --> 00:02:11.510 align:start position:0%
+you have unzipped the client credentials
+ 
+
+00:02:11.510 --> 00:02:13.170 align:start position:0%
+you have unzipped the client credentials
+note<00:02:12.510><c> that</c>
+
+00:02:13.170 --> 00:02:13.180 align:start position:0%
+note that
+ 
+
+00:02:13.180 --> 00:02:16.589 align:start position:0%
+note that
+DNS<00:02:13.599><c> admin</c><00:02:14.049><c> can</c><00:02:14.620><c> be</c><00:02:14.950><c> a</c><00:02:15.220><c> set</c><00:02:15.640><c> as</c><00:02:15.849><c> part</c><00:02:16.329><c> of</c><00:02:16.450><c> the</c>
+
+00:02:16.589 --> 00:02:16.599 align:start position:0%
+DNS admin can be a set as part of the
+ 
+
+00:02:16.599 --> 00:02:18.990 align:start position:0%
+DNS admin can be a set as part of the
+database<00:02:16.900><c> URL</c><00:02:17.260><c> and</c><00:02:17.739><c> this</c><00:02:18.129><c> is</c><00:02:18.310><c> a</c><00:02:18.340><c> feature</c><00:02:18.579><c> which</c>
+
+00:02:18.990 --> 00:02:19.000 align:start position:0%
+database URL and this is a feature which
+ 
+
+00:02:19.000 --> 00:02:22.350 align:start position:0%
+database URL and this is a feature which
+was<00:02:19.209><c> introduced</c><00:02:19.750><c> in</c><00:02:20.220><c> 18.3</c><00:02:21.220><c> if</c><00:02:21.760><c> you</c><00:02:22.030><c> are</c><00:02:22.120><c> using</c>
+
+00:02:22.350 --> 00:02:22.360 align:start position:0%
+was introduced in 18.3 if you are using
+ 
+
+00:02:22.360 --> 00:02:25.470 align:start position:0%
+was introduced in 18.3 if you are using
+the<00:02:22.569><c> JDBC</c><00:02:23.110><c> driver</c><00:02:23.409><c> that</c><00:02:23.829><c> is</c><00:02:23.980><c> lower</c><00:02:24.310><c> than</c><00:02:24.610><c> 18.3</c>
+
+00:02:25.470 --> 00:02:25.480 align:start position:0%
+the JDBC driver that is lower than 18.3
+ 
+
+00:02:25.480 --> 00:02:28.140 align:start position:0%
+the JDBC driver that is lower than 18.3
+then<00:02:26.049><c> you</c><00:02:26.170><c> can</c><00:02:26.379><c> set</c><00:02:26.620><c> cleaners</c><00:02:27.069><c> admin</c><00:02:27.519><c> either</c>
+
+00:02:28.140 --> 00:02:28.150 align:start position:0%
+then you can set cleaners admin either
+ 
+
+00:02:28.150 --> 00:02:31.140 align:start position:0%
+then you can set cleaners admin either
+as<00:02:28.480><c> a</c><00:02:28.540><c> system</c><00:02:29.230><c> property</c><00:02:29.680><c> or</c><00:02:29.920><c> as</c><00:02:30.459><c> a</c><00:02:30.519><c> connection</c>
+
+00:02:31.140 --> 00:02:31.150 align:start position:0%
+as a system property or as a connection
+ 
+
+00:02:31.150 --> 00:02:33.509 align:start position:0%
+as a system property or as a connection
+property<00:02:31.629><c> another</c><00:02:32.230><c> important</c><00:02:32.920><c> file</c><00:02:33.129><c> that</c><00:02:33.400><c> you</c>
+
+00:02:33.509 --> 00:02:33.519 align:start position:0%
+property another important file that you
+ 
+
+00:02:33.519 --> 00:02:36.210 align:start position:0%
+property another important file that you
+need<00:02:33.549><c> to</c><00:02:33.909><c> know</c><00:02:34.090><c> is</c><00:02:34.359><c> ODB</c><00:02:34.989><c> CDOT</c><00:02:35.379><c> properties</c><00:02:35.890><c> file</c>
+
+00:02:36.210 --> 00:02:36.220 align:start position:0%
+need to know is ODB CDOT properties file
+ 
+
+00:02:36.220 --> 00:02:39.240 align:start position:0%
+need to know is ODB CDOT properties file
+and<00:02:36.519><c> this</c><00:02:37.329><c> is</c><00:02:37.390><c> the</c><00:02:37.659><c> file</c><00:02:37.900><c> that</c><00:02:37.930><c> is</c><00:02:38.349><c> also</c><00:02:38.890><c> part</c>
+
+00:02:39.240 --> 00:02:39.250 align:start position:0%
+and this is the file that is also part
+ 
+
+00:02:39.250 --> 00:02:41.429 align:start position:0%
+and this is the file that is also part
+of<00:02:39.370><c> the</c><00:02:39.549><c> the</c><00:02:40.000><c> client</c><00:02:40.329><c> credential</c><00:02:40.810><c> zip</c><00:02:41.109><c> file</c>
+
+00:02:41.429 --> 00:02:41.439 align:start position:0%
+of the the client credential zip file
+ 
+
+00:02:41.439 --> 00:02:45.149 align:start position:0%
+of the the client credential zip file
+and<00:02:41.709><c> here</c><00:02:42.549><c> you</c><00:02:43.120><c> can</c><00:02:43.359><c> add</c><00:02:43.709><c> Oracle</c><00:02:44.709><c> Wallet</c>
+
+00:02:45.149 --> 00:02:45.159 align:start position:0%
+and here you can add Oracle Wallet
+ 
+
+00:02:45.159 --> 00:02:47.759 align:start position:0%
+and here you can add Oracle Wallet
+related<00:02:45.700><c> and</c><00:02:45.849><c> also</c><00:02:46.420><c> JK's</c><00:02:46.780><c> related</c><00:02:47.349><c> connection</c>
+
+00:02:47.759 --> 00:02:47.769 align:start position:0%
+related and also JK's related connection
+ 
+
+00:02:47.769 --> 00:02:49.740 align:start position:0%
+related and also JK's related connection
+properties<00:02:48.040><c> and</c><00:02:48.519><c> this</c><00:02:48.970><c> is</c><00:02:49.120><c> also</c><00:02:49.299><c> a</c><00:02:49.420><c> new</c>
+
+00:02:49.740 --> 00:02:49.750 align:start position:0%
+properties and this is also a new
+ 
+
+00:02:49.750 --> 00:02:53.309 align:start position:0%
+properties and this is also a new
+feature<00:02:49.780><c> that</c><00:02:50.500><c> was</c><00:02:50.680><c> introduced</c><00:02:51.220><c> in</c><00:02:51.629><c> 18.3</c><00:02:52.629><c> now</c>
+
+00:02:53.309 --> 00:02:53.319 align:start position:0%
+feature that was introduced in 18.3 now
+ 
+
+00:02:53.319 --> 00:02:55.470 align:start position:0%
+feature that was introduced in 18.3 now
+let's<00:02:53.590><c> go</c><00:02:53.769><c> back</c><00:02:53.980><c> to</c><00:02:54.159><c> the</c><00:02:54.250><c> sample</c><00:02:54.459><c> let's</c><00:02:55.239><c> see</c>
+
+00:02:55.470 --> 00:02:55.480 align:start position:0%
+let's go back to the sample let's see
+ 
+
+00:02:55.480 --> 00:02:57.569 align:start position:0%
+let's go back to the sample let's see
+what<00:02:55.690><c> the</c><00:02:55.840><c> sample</c><00:02:56.260><c> does</c><00:02:56.440><c> we</c><00:02:57.250><c> are</c><00:02:57.280><c> going</c><00:02:57.519><c> to</c>
+
+00:02:57.569 --> 00:02:57.579 align:start position:0%
+what the sample does we are going to
+ 
+
+00:02:57.579 --> 00:03:00.330 align:start position:0%
+what the sample does we are going to
+create<00:02:57.790><c> a</c><00:02:57.879><c> table</c><00:02:58.239><c> customer</c><00:02:58.840><c> table</c><00:02:59.439><c> and</c><00:02:59.620><c> insert</c>
+
+00:03:00.330 --> 00:03:00.340 align:start position:0%
+create a table customer table and insert
+ 
+
+00:03:00.340 --> 00:03:02.550 align:start position:0%
+create a table customer table and insert
+two<00:03:00.579><c> records</c><00:03:01.030><c> into</c><00:03:01.299><c> this</c><00:03:01.420><c> table</c><00:03:01.659><c> and</c><00:03:02.019><c> update</c>
+
+00:03:02.550 --> 00:03:02.560 align:start position:0%
+two records into this table and update
+ 
+
+00:03:02.560 --> 00:03:04.890 align:start position:0%
+two records into this table and update
+one<00:03:02.769><c> of</c><00:03:02.889><c> the</c><00:03:03.010><c> record</c><00:03:03.370><c> and</c><00:03:03.549><c> then</c><00:03:04.090><c> we</c><00:03:04.510><c> will</c><00:03:04.720><c> show</c>
+
+00:03:04.890 --> 00:03:04.900 align:start position:0%
+one of the record and then we will show
+ 
+
+00:03:04.900 --> 00:03:07.470 align:start position:0%
+one of the record and then we will show
+the<00:03:05.079><c> two</c><00:03:05.319><c> records</c><00:03:05.709><c> from</c><00:03:06.040><c> the</c><00:03:06.250><c> table</c><00:03:06.480><c> after</c>
+
+00:03:07.470 --> 00:03:07.480 align:start position:0%
+the two records from the table after
+ 
+
+00:03:07.480 --> 00:03:09.300 align:start position:0%
+the two records from the table after
+everything<00:03:07.959><c> is</c><00:03:08.109><c> done</c><00:03:08.290><c> we</c><00:03:08.709><c> are</c><00:03:08.739><c> going</c><00:03:08.859><c> to</c><00:03:09.099><c> clean</c>
+
+00:03:09.300 --> 00:03:09.310 align:start position:0%
+everything is done we are going to clean
+ 
+
+00:03:09.310 --> 00:03:10.770 align:start position:0%
+everything is done we are going to clean
+up<00:03:09.340><c> and</c><00:03:09.700><c> drop</c><00:03:10.150><c> the</c><00:03:10.329><c> table</c>
+
+00:03:10.770 --> 00:03:10.780 align:start position:0%
+up and drop the table
+ 
+
+00:03:10.780 --> 00:03:13.440 align:start position:0%
+up and drop the table
+let's<00:03:11.650><c> see</c><00:03:11.829><c> these</c><00:03:12.069><c> code</c><00:03:12.340><c> samples</c><00:03:12.819><c> in</c><00:03:13.000><c> action</c>
+
+00:03:13.440 --> 00:03:13.450 align:start position:0%
+let's see these code samples in action
+ 
+
+00:03:13.450 --> 00:03:15.899 align:start position:0%
+let's see these code samples in action
+let's<00:03:13.840><c> see</c><00:03:14.079><c> how</c><00:03:14.290><c> to</c><00:03:14.349><c> use</c><00:03:14.470><c> Java</c><00:03:14.950><c> keystore</c><00:03:15.549><c> to</c>
+
+00:03:15.899 --> 00:03:15.909 align:start position:0%
+let's see how to use Java keystore to
+ 
+
+00:03:15.909 --> 00:03:18.479 align:start position:0%
+let's see how to use Java keystore to
+connect<00:03:16.239><c> to</c><00:03:16.389><c> a</c><00:03:16.569><c> TPM</c><00:03:16.989><c> I</c><00:03:17.199><c> have</c><00:03:17.739><c> created</c><00:03:18.220><c> a</c><00:03:18.310><c> folder</c>
+
+00:03:18.479 --> 00:03:18.489 align:start position:0%
+connect to a TPM I have created a folder
+ 
+
+00:03:18.489 --> 00:03:21.599 align:start position:0%
+connect to a TPM I have created a folder
+ATP<00:03:19.209><c> testing</c><00:03:19.660><c> and</c><00:03:19.810><c> placed</c><00:03:20.319><c> all</c><00:03:20.530><c> the</c><00:03:20.590><c> files</c><00:03:21.099><c> you</c>
+
+00:03:21.599 --> 00:03:21.609 align:start position:0%
+ATP testing and placed all the files you
+ 
+
+00:03:21.609 --> 00:03:23.729 align:start position:0%
+ATP testing and placed all the files you
+can<00:03:21.760><c> see</c><00:03:21.940><c> you</c><00:03:22.090><c> see</c><00:03:22.269><c> P</c><00:03:22.419><c> sample</c><00:03:22.840><c> dot</c><00:03:22.989><c> Java</c><00:03:23.319><c> and</c>
+
+00:03:23.729 --> 00:03:23.739 align:start position:0%
+can see you see P sample dot Java and
+ 
+
+00:03:23.739 --> 00:03:27.360 align:start position:0%
+can see you see P sample dot Java and
+the<00:03:24.400><c> folder</c><00:03:24.790><c> Lib</c><00:03:25.090><c> contains</c><00:03:25.840><c> the</c><00:03:26.139><c> JDBC</c><00:03:27.040><c> driver</c>
+
+00:03:27.360 --> 00:03:27.370 align:start position:0%
+the folder Lib contains the JDBC driver
+ 
+
+00:03:27.370 --> 00:03:31.649 align:start position:0%
+the folder Lib contains the JDBC driver
+and<00:03:27.699><c> you</c><00:03:27.910><c> see</c><00:03:28.090><c> P</c><00:03:28.209><c> dot</c><00:03:28.419><c> jar</c><00:03:28.690><c> from</c><00:03:28.989><c> 18.3</c><00:03:30.480><c> you</c><00:03:31.480><c> can</c>
+
+00:03:31.649 --> 00:03:31.659 align:start position:0%
+and you see P dot jar from 18.3 you can
+ 
+
+00:03:31.659 --> 00:03:37.849 align:start position:0%
+and you see P dot jar from 18.3 you can
+see<00:03:31.840><c> that</c><00:03:32.049><c> the</c><00:03:32.169><c> JDBC</c><00:03:32.620><c> driver</c><00:03:32.859><c> is</c><00:03:33.069><c> from</c><00:03:33.280><c> 18.3</c><00:03:34.090><c> I</c>
+
+00:03:37.849 --> 00:03:37.859 align:start position:0%
+ 
+ 
+
+00:03:37.859 --> 00:03:40.949 align:start position:0%
+ 
+have<00:03:38.859><c> unzipped</c><00:03:39.129><c> the</c><00:03:39.549><c> wallet</c><00:03:39.909><c> credentials</c><00:03:40.540><c> to</c>
+
+00:03:40.949 --> 00:03:40.959 align:start position:0%
+have unzipped the wallet credentials to
+ 
+
+00:03:40.959 --> 00:03:43.199 align:start position:0%
+have unzipped the wallet credentials to
+the<00:03:40.989><c> folder</c><00:03:41.440><c> wallet</c><00:03:41.859><c> underscore</c><00:03:42.370><c> JDBC</c><00:03:42.909><c> test</c>
+
+00:03:43.199 --> 00:03:43.209 align:start position:0%
+the folder wallet underscore JDBC test
+ 
+
+00:03:43.209 --> 00:03:45.599 align:start position:0%
+the folder wallet underscore JDBC test
+you<00:03:43.690><c> can</c><00:03:43.870><c> see</c><00:03:44.019><c> all</c><00:03:44.199><c> JDBC</c><00:03:44.650><c> dot</c><00:03:44.829><c> properties</c><00:03:45.370><c> file</c>
+
+00:03:45.599 --> 00:03:45.609 align:start position:0%
+you can see all JDBC dot properties file
+ 
+
+00:03:45.609 --> 00:03:48.240 align:start position:0%
+you can see all JDBC dot properties file
+and<00:03:45.849><c> also</c><00:03:46.449><c> J</c><00:03:46.959><c> key</c><00:03:47.139><c> is</c><00:03:47.290><c> an</c><00:03:47.500><c> Oracle</c><00:03:47.829><c> wallet</c>
+
+00:03:48.240 --> 00:03:48.250 align:start position:0%
+and also J key is an Oracle wallet
+ 
+
+00:03:48.250 --> 00:03:50.759 align:start position:0%
+and also J key is an Oracle wallet
+related<00:03:48.699><c> files</c><00:03:49.120><c> as</c><00:03:49.870><c> part</c><00:03:50.139><c> of</c><00:03:50.260><c> connecting</c><00:03:50.739><c> to</c>
+
+00:03:50.759 --> 00:03:50.769 align:start position:0%
+related files as part of connecting to
+ 
+
+00:03:50.769 --> 00:03:54.149 align:start position:0%
+related files as part of connecting to
+ATP<00:03:51.609><c> using</c><00:03:51.940><c> kks</c><00:03:52.510><c> you</c><00:03:52.840><c> need</c><00:03:53.019><c> to</c><00:03:53.169><c> edit</c><00:03:53.349><c> or</c><00:03:53.739><c> JDBC</c>
+
+00:03:54.149 --> 00:03:54.159 align:start position:0%
+ATP using kks you need to edit or JDBC
+ 
+
+00:03:54.159 --> 00:03:56.879 align:start position:0%
+ATP using kks you need to edit or JDBC
+dot<00:03:54.549><c> properties</c><00:03:55.090><c> file</c><00:03:55.389><c> make</c><00:03:55.959><c> sure</c><00:03:56.229><c> you</c><00:03:56.620><c> add</c>
+
+00:03:56.879 --> 00:03:56.889 align:start position:0%
+dot properties file make sure you add
+ 
+
+00:03:56.889 --> 00:03:59.580 align:start position:0%
+dot properties file make sure you add
+the<00:03:56.919><c> jks</c><00:03:57.609><c> related</c><00:03:58.120><c> connection</c><00:03:58.540><c> properties</c><00:03:58.780><c> to</c>
+
+00:03:59.580 --> 00:03:59.590 align:start position:0%
+the jks related connection properties to
+ 
+
+00:03:59.590 --> 00:04:01.740 align:start position:0%
+the jks related connection properties to
+this<00:03:59.739><c> file</c><00:04:00.040><c> and</c><00:04:00.310><c> also</c><00:04:00.879><c> the</c><00:04:01.299><c> clustered</c>
+
+00:04:01.740 --> 00:04:01.750 align:start position:0%
+this file and also the clustered
+ 
+
+00:04:01.750 --> 00:04:03.409 align:start position:0%
+this file and also the clustered
+password<00:04:02.290><c> and</c><00:04:02.530><c> the</c><00:04:02.620><c> keystore</c><00:04:03.010><c> password</c>
+
+00:04:03.409 --> 00:04:03.419 align:start position:0%
+password and the keystore password
+ 
+
+00:04:03.419 --> 00:04:05.909 align:start position:0%
+password and the keystore password
+should<00:04:04.419><c> be</c><00:04:04.479><c> updated</c><00:04:04.780><c> to</c><00:04:05.319><c> the</c><00:04:05.409><c> password</c><00:04:05.650><c> that</c>
+
+00:04:05.909 --> 00:04:05.919 align:start position:0%
+should be updated to the password that
+ 
+
+00:04:05.919 --> 00:04:08.129 align:start position:0%
+should be updated to the password that
+you<00:04:06.220><c> used</c><00:04:06.489><c> while</c><00:04:07.000><c> downloading</c><00:04:07.299><c> the</c><00:04:07.810><c> client</c>
+
+00:04:08.129 --> 00:04:08.139 align:start position:0%
+you used while downloading the client
+ 
+
+00:04:08.139 --> 00:04:10.770 align:start position:0%
+you used while downloading the client
+credentials<00:04:08.620><c> zip</c><00:04:08.829><c> file</c><00:04:09.069><c> also</c><00:04:09.549><c> make</c><00:04:10.299><c> sure</c><00:04:10.569><c> you</c>
+
+00:04:10.770 --> 00:04:10.780 align:start position:0%
+credentials zip file also make sure you
+ 
+
+00:04:10.780 --> 00:04:12.990 align:start position:0%
+credentials zip file also make sure you
+comment<00:04:11.079><c> the</c><00:04:11.709><c> Oracle</c><00:04:12.159><c> wallet</c><00:04:12.579><c> related</c>
+
+00:04:12.990 --> 00:04:13.000 align:start position:0%
+comment the Oracle wallet related
+ 
+
+00:04:13.000 --> 00:04:15.000 align:start position:0%
+comment the Oracle wallet related
+connection<00:04:13.389><c> property</c><00:04:13.870><c> and</c><00:04:14.139><c> these</c><00:04:14.709><c> are</c><00:04:14.919><c> the</c>
+
+00:04:15.000 --> 00:04:15.010 align:start position:0%
+connection property and these are the
+ 
+
+00:04:15.010 --> 00:04:17.039 align:start position:0%
+connection property and these are the
+changes<00:04:15.430><c> that</c><00:04:15.459><c> we</c><00:04:15.790><c> need</c><00:04:15.819><c> to</c><00:04:16.449><c> connect</c><00:04:16.810><c> or</c>
+
+00:04:17.039 --> 00:04:17.049 align:start position:0%
+changes that we need to connect or
+ 
+
+00:04:17.049 --> 00:04:20.279 align:start position:0%
+changes that we need to connect or
+connect<00:04:17.709><c> to</c><00:04:17.739><c> ATP</c><00:04:18.250><c> using</c><00:04:18.639><c> gks</c><00:04:19.180><c> let's</c><00:04:19.780><c> compile</c>
+
+00:04:20.279 --> 00:04:20.289 align:start position:0%
+connect to ATP using gks let's compile
+ 
+
+00:04:20.289 --> 00:04:28.180 align:start position:0%
+connect to ATP using gks let's compile
+the<00:04:20.470><c> Java</c><00:04:20.709><c> code</c><00:04:22.919><c> let's</c><00:04:23.919><c> run</c><00:04:24.219><c> the</c><00:04:24.370><c> Java</c><00:04:24.610><c> sample</c>
+
+00:04:28.180 --> 00:04:28.190 align:start position:0%
+ 
+ 
+
+00:04:28.190 --> 00:04:30.110 align:start position:0%
+ 
+you<00:04:29.190><c> can</c><00:04:29.370><c> see</c><00:04:29.520><c> that</c><00:04:29.730><c> we</c><00:04:29.910><c> successfully</c>
+
+00:04:30.110 --> 00:04:30.120 align:start position:0%
+you can see that we successfully
+ 
+
+00:04:30.120 --> 00:04:33.950 align:start position:0%
+you can see that we successfully
+connected<00:04:30.990><c> to</c><00:04:31.140><c> ATP</c><00:04:31.500><c> using</c><00:04:32.160><c> jks</c><00:04:32.670><c> now</c><00:04:33.210><c> let's</c><00:04:33.840><c> use</c>
+
+00:04:33.950 --> 00:04:33.960 align:start position:0%
+connected to ATP using jks now let's use
+ 
+
+00:04:33.960 --> 00:04:37.280 align:start position:0%
+connected to ATP using jks now let's use
+Oracle<00:04:34.470><c> wallets</c><00:04:34.980><c> to</c><00:04:35.250><c> connect</c><00:04:35.520><c> to</c><00:04:35.610><c> ATP</c><00:04:36.290><c> I'm</c>
+
+00:04:37.280 --> 00:04:37.290 align:start position:0%
+Oracle wallets to connect to ATP I'm
+ 
+
+00:04:37.290 --> 00:04:41.030 align:start position:0%
+Oracle wallets to connect to ATP I'm
+using<00:04:37.620><c> UCP</c><00:04:38.130><c> sample</c><00:04:38.520><c> dot</c><00:04:38.670><c> java</c><00:04:38.970><c> and</c><00:04:39.740><c> in</c><00:04:40.740><c> the</c><00:04:40.860><c> lib</c>
+
+00:04:41.030 --> 00:04:41.040 align:start position:0%
+using UCP sample dot java and in the lib
+ 
+
+00:04:41.040 --> 00:04:43.880 align:start position:0%
+using UCP sample dot java and in the lib
+directory<00:04:41.250><c> I</c><00:04:41.760><c> have</c><00:04:42.090><c> added</c><00:04:42.330><c> oracle</c><00:04:42.960><c> pkg</c><00:04:43.650><c> our</c>
+
+00:04:43.880 --> 00:04:43.890 align:start position:0%
+directory I have added oracle pkg our
+ 
+
+00:04:43.890 --> 00:04:46.190 align:start position:0%
+directory I have added oracle pkg our
+host<00:04:44.370><c> Atlantis</c><00:04:44.730><c> cursor</c><00:04:45.060><c> dodge</c><00:04:45.330><c> our</c><00:04:45.540><c> an</c><00:04:45.690><c> OST</c><00:04:45.990><c> T</c>
+
+00:04:46.190 --> 00:04:46.200 align:start position:0%
+host Atlantis cursor dodge our an OST T
+ 
+
+00:04:46.200 --> 00:04:48.050 align:start position:0%
+host Atlantis cursor dodge our an OST T
+and<00:04:46.320><c> is</c><00:04:46.410><c> called</c><00:04:46.590><c> cold</c><00:04:46.800><c> archer</c><00:04:47.220><c> in</c><00:04:47.490><c> addition</c><00:04:47.970><c> to</c>
+
+00:04:48.050 --> 00:04:48.060 align:start position:0%
+and is called cold archer in addition to
+ 
+
+00:04:48.060 --> 00:04:50.000 align:start position:0%
+and is called cold archer in addition to
+the<00:04:48.180><c> JDBC</c><00:04:48.630><c> driver</c><00:04:48.900><c> and</c><00:04:49.200><c> you</c><00:04:49.260><c> zippe</c><00:04:49.560><c> targe</c><00:04:49.770><c> are</c>
+
+00:04:50.000 --> 00:04:50.010 align:start position:0%
+the JDBC driver and you zippe targe are
+ 
+
+00:04:50.010 --> 00:04:52.490 align:start position:0%
+the JDBC driver and you zippe targe are
+these<00:04:50.760><c> three</c><00:04:51.030><c> additional</c><00:04:51.570><c> jars</c><00:04:51.840><c> are</c><00:04:52.050><c> required</c>
+
+00:04:52.490 --> 00:04:52.500 align:start position:0%
+these three additional jars are required
+ 
+
+00:04:52.500 --> 00:04:57.670 align:start position:0%
+these three additional jars are required
+while<00:04:53.100><c> connecting</c><00:04:53.700><c> using</c><00:04:54.270><c> Oracle</c><00:04:54.660><c> wallets</c>
+
+00:04:57.670 --> 00:04:57.680 align:start position:0%
+ 
+ 
+
+00:04:57.680 --> 00:05:01.370 align:start position:0%
+ 
+wallet<00:04:58.680><c> underscore</c><00:04:59.160><c> JDBC</c><00:04:59.670><c> test</c><00:05:00.120><c> has</c><00:05:00.630><c> all</c><00:05:01.020><c> the</c>
+
+00:05:01.370 --> 00:05:01.380 align:start position:0%
+wallet underscore JDBC test has all the
+ 
+
+00:05:01.380 --> 00:05:04.820 align:start position:0%
+wallet underscore JDBC test has all the
+client<00:05:01.710><c> residential</c><00:05:02.190><c> files</c><00:05:02.460><c> to</c><00:05:02.670><c> unzip</c><00:05:03.830><c> open</c>
+
+00:05:04.820 --> 00:05:04.830 align:start position:0%
+client residential files to unzip open
+ 
+
+00:05:04.830 --> 00:05:06.980 align:start position:0%
+client residential files to unzip open
+or<00:05:05.040><c> JDBC</c><00:05:05.250><c> third</c><00:05:05.580><c> properties</c><00:05:06.090><c> file</c><00:05:06.360><c> make</c><00:05:06.960><c> sure</c>
+
+00:05:06.980 --> 00:05:06.990 align:start position:0%
+or JDBC third properties file make sure
+ 
+
+00:05:06.990 --> 00:05:08.780 align:start position:0%
+or JDBC third properties file make sure
+that<00:05:07.440><c> you</c><00:05:07.560><c> have</c><00:05:07.800><c> the</c><00:05:07.950><c> wallet</c><00:05:08.220><c> related</c>
+
+00:05:08.780 --> 00:05:08.790 align:start position:0%
+that you have the wallet related
+ 
+
+00:05:08.790 --> 00:05:13.460 align:start position:0%
+that you have the wallet related
+connection<00:05:09.240><c> property</c><00:05:09.690><c> uncommented</c><00:05:12.470><c> now</c>
+
+00:05:13.460 --> 00:05:13.470 align:start position:0%
+connection property uncommented now
+ 
+
+00:05:13.470 --> 00:05:16.430 align:start position:0%
+connection property uncommented now
+let's<00:05:13.800><c> compile</c><00:05:14.220><c> the</c><00:05:14.400><c> code</c><00:05:14.550><c> sample</c><00:05:15.170><c> let's</c><00:05:16.170><c> run</c>
+
+00:05:16.430 --> 00:05:16.440 align:start position:0%
+let's compile the code sample let's run
+ 
+
+00:05:16.440 --> 00:05:19.460 align:start position:0%
+let's compile the code sample let's run
+the<00:05:16.560><c> code</c><00:05:16.710><c> sample</c><00:05:17.660><c> you</c><00:05:18.660><c> can</c><00:05:18.840><c> see</c><00:05:19.020><c> that</c><00:05:19.290><c> we</c>
+
+00:05:19.460 --> 00:05:19.470 align:start position:0%
+the code sample you can see that we
+ 
+
+00:05:19.470 --> 00:05:21.470 align:start position:0%
+the code sample you can see that we
+successfully<00:05:19.680><c> connected</c><00:05:20.520><c> to</c><00:05:20.670><c> ATP</c><00:05:21.000><c> using</c>
+
+00:05:21.470 --> 00:05:21.480 align:start position:0%
+successfully connected to ATP using
+ 
+
+00:05:21.480 --> 00:05:23.720 align:start position:0%
+successfully connected to ATP using
+Oracle<00:05:21.930><c> wallets</c><00:05:22.350><c> thank</c><00:05:23.040><c> you</c><00:05:23.160><c> for</c><00:05:23.340><c> watching</c>
+
+00:05:23.720 --> 00:05:23.730 align:start position:0%
+Oracle wallets thank you for watching
+ 
+
+00:05:23.730 --> 00:05:25.970 align:start position:0%
+Oracle wallets thank you for watching
+the<00:05:23.820><c> video</c>
+

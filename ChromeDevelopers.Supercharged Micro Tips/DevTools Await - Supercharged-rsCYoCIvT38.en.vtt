@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.374
+[MUSIC PLAYING]
+
+00:00:11.509 --> 00:00:13.300
+SURMA: If you've ever
+worked with promises,
+
+00:00:13.300 --> 00:00:16.270
+you know that they can get a
+bit annoying in the DevTools
+
+00:00:16.270 --> 00:00:17.020
+console.
+
+00:00:17.020 --> 00:00:19.280
+Let's take fetch as an example.
+
+00:00:19.280 --> 00:00:21.100
+If I want it to work
+with a response,
+
+00:00:21.100 --> 00:00:23.830
+I would call fetch, store
+the promise to a variable,
+
+00:00:23.830 --> 00:00:27.100
+then call then, and
+attach the result to self.
+
+00:00:27.100 --> 00:00:29.920
+Now I have my response object
+available in the console
+
+00:00:29.920 --> 00:00:31.120
+for inspection.
+
+00:00:31.120 --> 00:00:33.250
+That's a bit tedious.
+
+00:00:33.250 --> 00:00:36.190
+Therefore, DevTools now
+supports top-level [? await ?]
+
+00:00:36.190 --> 00:00:39.010
+without you having to declare
+an asynchronous function.
+
+00:00:39.010 --> 00:00:41.440
+That means instead of the
+triple jump that I just did,
+
+00:00:41.440 --> 00:00:43.570
+I can just use [? await ?]
+to directly store
+
+00:00:43.570 --> 00:00:45.520
+the response in a variable.
+
+00:00:45.520 --> 00:00:48.330
+Any API that uses promises
+can be used this way
+
+00:00:48.330 --> 00:00:50.830
+and will make your
+life so much easier.
+
+00:00:50.830 --> 00:00:52.480
+It's good stuff, eh?
+
+00:00:52.480 --> 00:00:54.420
+See you next time.
+

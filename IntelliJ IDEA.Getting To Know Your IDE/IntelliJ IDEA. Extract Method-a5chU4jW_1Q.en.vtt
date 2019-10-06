@@ -1,0 +1,456 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.240 --> 00:00:04.849 align:start position:0%
+ 
+one<00:00:03.240><c> of</c><00:00:03.330><c> the</c><00:00:03.449><c> primary</c><00:00:03.780><c> refactorings</c><00:00:04.620><c> in</c>
+
+00:00:04.849 --> 00:00:04.859 align:start position:0%
+one of the primary refactorings in
+ 
+
+00:00:04.859 --> 00:00:07.220 align:start position:0%
+one of the primary refactorings in
+IntelliJ<00:00:05.400><c> IDEA</c><00:00:05.730><c> is</c><00:00:06.029><c> called</c><00:00:06.569><c> the</c><00:00:06.750><c> extract</c>
+
+00:00:07.220 --> 00:00:07.230 align:start position:0%
+IntelliJ IDEA is called the extract
+ 
+
+00:00:07.230 --> 00:00:10.549 align:start position:0%
+IntelliJ IDEA is called the extract
+method<00:00:07.710><c> refactoring</c><00:00:07.919><c> the</c><00:00:08.790><c> way</c><00:00:09.780><c> this</c><00:00:09.929><c> works</c><00:00:10.230><c> is</c>
+
+00:00:10.549 --> 00:00:10.559 align:start position:0%
+method refactoring the way this works is
+ 
+
+00:00:10.559 --> 00:00:12.650 align:start position:0%
+method refactoring the way this works is
+you<00:00:10.679><c> first</c><00:00:11.250><c> select</c><00:00:11.429><c> a</c><00:00:11.639><c> block</c><00:00:11.820><c> of</c><00:00:12.000><c> code</c><00:00:12.360><c> that</c>
+
+00:00:12.650 --> 00:00:12.660 align:start position:0%
+you first select a block of code that
+ 
+
+00:00:12.660 --> 00:00:15.140 align:start position:0%
+you first select a block of code that
+you'd<00:00:13.290><c> like</c><00:00:13.440><c> to</c><00:00:13.559><c> extract</c><00:00:14.099><c> into</c><00:00:14.460><c> a</c><00:00:14.490><c> new</c><00:00:14.759><c> method</c>
+
+00:00:15.140 --> 00:00:15.150 align:start position:0%
+you'd like to extract into a new method
+ 
+
+00:00:15.150 --> 00:00:17.420 align:start position:0%
+you'd like to extract into a new method
+and<00:00:15.360><c> that</c><00:00:16.049><c> block</c><00:00:16.379><c> will</c><00:00:16.619><c> become</c><00:00:16.949><c> the</c><00:00:17.070><c> method</c>
+
+00:00:17.420 --> 00:00:17.430 align:start position:0%
+and that block will become the method
+ 
+
+00:00:17.430 --> 00:00:20.179 align:start position:0%
+and that block will become the method
+body<00:00:17.609><c> any</c><00:00:18.510><c> inbound</c><00:00:18.930><c> variables</c><00:00:19.740><c> into</c><00:00:20.160><c> the</c>
+
+00:00:20.179 --> 00:00:20.189 align:start position:0%
+body any inbound variables into the
+ 
+
+00:00:20.189 --> 00:00:23.420 align:start position:0%
+body any inbound variables into the
+block<00:00:20.550><c> will</c><00:00:21.359><c> be</c><00:00:21.480><c> added</c><00:00:21.869><c> as</c><00:00:21.960><c> parameters</c><00:00:22.590><c> to</c>
+
+00:00:23.420 --> 00:00:23.430 align:start position:0%
+block will be added as parameters to
+ 
+
+00:00:23.430 --> 00:00:26.630 align:start position:0%
+block will be added as parameters to
+your<00:00:23.609><c> new</c><00:00:23.760><c> method</c><00:00:24.710><c> in</c><00:00:25.710><c> order</c><00:00:25.859><c> to</c><00:00:26.039><c> activate</c><00:00:26.340><c> it</c>
+
+00:00:26.630 --> 00:00:26.640 align:start position:0%
+your new method in order to activate it
+ 
+
+00:00:26.640 --> 00:00:30.230 align:start position:0%
+your new method in order to activate it
+I<00:00:26.760><c> can</c><00:00:26.939><c> simply</c><00:00:27.240><c> press</c><00:00:27.269><c> ctrl</c><00:00:28.109><c> alt</c><00:00:28.410><c> M</c><00:00:28.830><c> and</c><00:00:29.279><c> choose</c>
+
+00:00:30.230 --> 00:00:30.240 align:start position:0%
+I can simply press ctrl alt M and choose
+ 
+
+00:00:30.240 --> 00:00:32.690 align:start position:0%
+I can simply press ctrl alt M and choose
+the<00:00:30.510><c> destination</c><00:00:30.720><c> class</c><00:00:31.500><c> where</c><00:00:32.219><c> I'd</c><00:00:32.369><c> like</c>
+
+00:00:32.690 --> 00:00:32.700 align:start position:0%
+the destination class where I'd like
+ 
+
+00:00:32.700 --> 00:00:35.870 align:start position:0%
+the destination class where I'd like
+that<00:00:32.969><c> method</c><00:00:33.360><c> to</c><00:00:33.450><c> be</c><00:00:33.570><c> inserted</c><00:00:34.110><c> here</c><00:00:34.880><c> since</c>
+
+00:00:35.870 --> 00:00:35.880 align:start position:0%
+that method to be inserted here since
+ 
+
+00:00:35.880 --> 00:00:37.850 align:start position:0%
+that method to be inserted here since
+it's<00:00:36.059><c> inside</c><00:00:36.540><c> an</c><00:00:36.780><c> anonymous</c><00:00:37.260><c> inner</c><00:00:37.469><c> class</c>
+
+00:00:37.850 --> 00:00:37.860 align:start position:0%
+it's inside an anonymous inner class
+ 
+
+00:00:37.860 --> 00:00:39.950 align:start position:0%
+it's inside an anonymous inner class
+I'll<00:00:38.610><c> choose</c><00:00:39.000><c> to</c><00:00:39.030><c> put</c><00:00:39.300><c> it</c><00:00:39.390><c> in</c><00:00:39.480><c> the</c><00:00:39.570><c> outermost</c>
+
+00:00:39.950 --> 00:00:39.960 align:start position:0%
+I'll choose to put it in the outermost
+ 
+
+00:00:39.960 --> 00:00:43.910 align:start position:0%
+I'll choose to put it in the outermost
+class<00:00:40.530><c> here</c><00:00:41.100><c> that's</c><00:00:41.280><c> the</c><00:00:41.430><c> messenger</c><00:00:42.890><c> now</c><00:00:43.890><c> I</c>
+
+00:00:43.910 --> 00:00:43.920 align:start position:0%
+class here that's the messenger now I
+ 
+
+00:00:43.920 --> 00:00:51.020 align:start position:0%
+class here that's the messenger now I
+can<00:00:44.190><c> give</c><00:00:44.489><c> this</c><00:00:44.700><c> method</c><00:00:45.149><c> a</c><00:00:45.239><c> name</c><00:00:49.879><c> set</c><00:00:50.879><c> its</c>
+
+00:00:51.020 --> 00:00:51.030 align:start position:0%
+can give this method a name set its
+ 
+
+00:00:51.030 --> 00:00:54.860 align:start position:0%
+can give this method a name set its
+visibility<00:00:51.480><c> and</c><00:00:53.180><c> return</c><00:00:54.180><c> type</c><00:00:54.449><c> which</c><00:00:54.719><c> is</c>
+
+00:00:54.860 --> 00:00:54.870 align:start position:0%
+visibility and return type which is
+ 
+
+00:00:54.870 --> 00:00:57.470 align:start position:0%
+visibility and return type which is
+automatically<00:00:55.469><c> set</c><00:00:55.829><c> for</c><00:00:56.190><c> us</c><00:00:56.340><c> based</c><00:00:57.120><c> on</c><00:00:57.390><c> the</c>
+
+00:00:57.470 --> 00:00:57.480 align:start position:0%
+automatically set for us based on the
+ 
+
+00:00:57.480 --> 00:01:00.110 align:start position:0%
+automatically set for us based on the
+code<00:00:57.690><c> we've</c><00:00:57.899><c> selected</c><00:00:58.109><c> and</c><00:00:58.800><c> then</c><00:00:59.760><c> declare</c>
+
+00:01:00.110 --> 00:01:00.120 align:start position:0%
+code we've selected and then declare
+ 
+
+00:01:00.120 --> 00:01:01.819 align:start position:0%
+code we've selected and then declare
+it's<00:01:00.270><c> static</c><00:01:00.780><c> if</c><00:01:00.930><c> I</c><00:01:01.050><c> don't</c><00:01:01.260><c> want</c><00:01:01.410><c> it</c><00:01:01.469><c> attached</c>
+
+00:01:01.819 --> 00:01:01.829 align:start position:0%
+it's static if I don't want it attached
+ 
+
+00:01:01.829 --> 00:01:04.609 align:start position:0%
+it's static if I don't want it attached
+as<00:01:02.219><c> an</c><00:01:02.340><c> instance</c><00:01:02.789><c> method</c><00:01:03.080><c> you'll</c><00:01:04.080><c> notice</c><00:01:04.470><c> that</c>
+
+00:01:04.609 --> 00:01:04.619 align:start position:0%
+as an instance method you'll notice that
+ 
+
+00:01:04.619 --> 00:01:07.340 align:start position:0%
+as an instance method you'll notice that
+this<00:01:04.769><c> will</c><00:01:04.949><c> add</c><00:01:05.159><c> a</c><00:01:05.189><c> new</c><00:01:05.580><c> parameter</c><00:01:06.080><c> for</c><00:01:07.080><c> the</c>
+
+00:01:07.340 --> 00:01:07.350 align:start position:0%
+this will add a new parameter for the
+ 
+
+00:01:07.350 --> 00:01:10.010 align:start position:0%
+this will add a new parameter for the
+field<00:01:07.830><c> that</c><00:01:08.580><c> we're</c><00:01:08.760><c> using</c><00:01:09.000><c> inside</c><00:01:09.510><c> this</c><00:01:09.720><c> block</c>
+
+00:01:10.010 --> 00:01:10.020 align:start position:0%
+field that we're using inside this block
+ 
+
+00:01:10.020 --> 00:01:12.440 align:start position:0%
+field that we're using inside this block
+since<00:01:10.860><c> it</c><00:01:11.010><c> won't</c><00:01:11.189><c> be</c><00:01:11.400><c> visible</c><00:01:11.729><c> inside</c><00:01:12.390><c> the</c>
+
+00:01:12.440 --> 00:01:12.450 align:start position:0%
+since it won't be visible inside the
+ 
+
+00:01:12.450 --> 00:01:15.980 align:start position:0%
+since it won't be visible inside the
+static<00:01:13.049><c> method</c><00:01:13.320><c> I</c><00:01:13.710><c> can</c><00:01:14.700><c> also</c><00:01:15.000><c> choose</c><00:01:15.360><c> to</c><00:01:15.600><c> fold</c>
+
+00:01:15.980 --> 00:01:15.990 align:start position:0%
+static method I can also choose to fold
+ 
+
+00:01:15.990 --> 00:01:17.870 align:start position:0%
+static method I can also choose to fold
+the<00:01:16.200><c> parameters</c><00:01:16.680><c> as</c><00:01:16.830><c> well</c><00:01:17.040><c> and</c><00:01:17.369><c> here</c><00:01:17.729><c> what</c>
+
+00:01:17.870 --> 00:01:17.880 align:start position:0%
+the parameters as well and here what
+ 
+
+00:01:17.880 --> 00:01:20.840 align:start position:0%
+the parameters as well and here what
+fold<00:01:18.270><c> means</c><00:01:18.630><c> is</c><00:01:18.930><c> to</c><00:01:19.590><c> collapse</c><00:01:20.159><c> two</c><00:01:20.610><c> or</c><00:01:20.729><c> more</c>
+
+00:01:20.840 --> 00:01:20.850 align:start position:0%
+fold means is to collapse two or more
+ 
+
+00:01:20.850 --> 00:01:24.520 align:start position:0%
+fold means is to collapse two or more
+parameters<00:01:21.680><c> into</c><00:01:22.680><c> a</c><00:01:23.009><c> nested</c><00:01:23.610><c> method</c><00:01:24.000><c> call</c>
+
+00:01:24.520 --> 00:01:24.530 align:start position:0%
+parameters into a nested method call
+ 
+
+00:01:24.530 --> 00:01:28.640 align:start position:0%
+parameters into a nested method call
+outside<00:01:25.530><c> of</c><00:01:25.920><c> the</c><00:01:26.369><c> extracted</c><00:01:27.090><c> method</c><00:01:27.750><c> so</c><00:01:28.500><c> now</c>
+
+00:01:28.640 --> 00:01:28.650 align:start position:0%
+outside of the extracted method so now
+ 
+
+00:01:28.650 --> 00:01:30.920 align:start position:0%
+outside of the extracted method so now
+let's<00:01:28.860><c> apply</c><00:01:28.979><c> this</c><00:01:29.310><c> refactoring</c><00:01:30.240><c> and</c><00:01:30.479><c> see</c>
+
+00:01:30.920 --> 00:01:30.930 align:start position:0%
+let's apply this refactoring and see
+ 
+
+00:01:30.930 --> 00:01:34.580 align:start position:0%
+let's apply this refactoring and see
+what<00:01:31.079><c> happens</c><00:01:31.409><c> so</c><00:01:32.810><c> you</c><00:01:33.810><c> can</c><00:01:34.049><c> see</c><00:01:34.320><c> where</c><00:01:34.500><c> the</c>
+
+00:01:34.580 --> 00:01:34.590 align:start position:0%
+what happens so you can see where the
+ 
+
+00:01:34.590 --> 00:01:37.219 align:start position:0%
+what happens so you can see where the
+method<00:01:34.860><c> is</c><00:01:34.950><c> invoke</c><00:01:35.400><c> that</c><00:01:35.850><c> instead</c><00:01:36.570><c> of</c><00:01:36.720><c> passing</c>
+
+00:01:37.219 --> 00:01:37.229 align:start position:0%
+method is invoke that instead of passing
+ 
+
+00:01:37.229 --> 00:01:39.740 align:start position:0%
+method is invoke that instead of passing
+node<00:01:37.500><c> and</c><00:01:37.860><c> message</c><00:01:38.820><c> in</c><00:01:39.090><c> a</c><00:01:39.329><c> separate</c>
+
+00:01:39.740 --> 00:01:39.750 align:start position:0%
+node and message in a separate
+ 
+
+00:01:39.750 --> 00:01:42.770 align:start position:0%
+node and message in a separate
+parameters<00:01:40.290><c> we've</c><00:01:41.100><c> collapsed</c><00:01:41.729><c> them</c><00:01:41.909><c> into</c><00:01:42.750><c> a</c>
+
+00:01:42.770 --> 00:01:42.780 align:start position:0%
+parameters we've collapsed them into a
+ 
+
+00:01:42.780 --> 00:01:45.380 align:start position:0%
+parameters we've collapsed them into a
+nested<00:01:43.320><c> method</c><00:01:43.710><c> called</c><00:01:44.070><c> and</c><00:01:44.369><c> then</c><00:01:45.030><c> passed</c>
+
+00:01:45.380 --> 00:01:45.390 align:start position:0%
+nested method called and then passed
+ 
+
+00:01:45.390 --> 00:01:49.280 align:start position:0%
+nested method called and then passed
+that<00:01:45.750><c> return</c><00:01:46.290><c> type</c><00:01:47.090><c> into</c><00:01:48.090><c> our</c><00:01:48.420><c> new</c><00:01:48.689><c> send</c><00:01:49.079><c> and</c>
+
+00:01:49.280 --> 00:01:49.290 align:start position:0%
+that return type into our new send and
+ 
+
+00:01:49.290 --> 00:01:52.399 align:start position:0%
+that return type into our new send and
+log<00:01:49.829><c> result</c><00:01:50.430><c> method</c><00:01:50.939><c> which</c><00:01:51.750><c> accepts</c><00:01:51.930><c> a</c>
+
+00:01:52.399 --> 00:01:52.409 align:start position:0%
+log result method which accepts a
+ 
+
+00:01:52.409 --> 00:01:57.289 align:start position:0%
+log result method which accepts a
+pending<00:01:52.770><c> result</c><00:01:53.130><c> and</c><00:01:53.630><c> returns</c><00:01:54.630><c> a</c><00:01:54.750><c> void</c><00:01:56.299><c> now</c>
+
+00:01:57.289 --> 00:01:57.299 align:start position:0%
+pending result and returns a void now
+ 
+
+00:01:57.299 --> 00:01:59.300 align:start position:0%
+pending result and returns a void now
+let's<00:01:57.509><c> demonstrate</c><00:01:57.689><c> that</c><00:01:58.259><c> same</c><00:01:58.590><c> refactoring</c>
+
+00:01:59.300 --> 00:01:59.310 align:start position:0%
+let's demonstrate that same refactoring
+ 
+
+00:01:59.310 --> 00:02:05.950 align:start position:0%
+let's demonstrate that same refactoring
+without<00:02:00.210><c> the</c><00:02:00.450><c> parameter</c><00:02:00.930><c> folding</c><00:02:01.409><c> enabled</c>
+
+00:02:05.950 --> 00:02:05.960 align:start position:0%
+ 
+ 
+
+00:02:05.960 --> 00:02:10.279 align:start position:0%
+ 
+now<00:02:06.960><c> we</c><00:02:07.020><c> accept</c><00:02:07.500><c> two</c><00:02:07.710><c> parameters</c><00:02:09.110><c> fire</c><00:02:10.110><c> the</c>
+
+00:02:10.279 --> 00:02:10.289 align:start position:0%
+now we accept two parameters fire the
+ 
+
+00:02:10.289 --> 00:02:13.630 align:start position:0%
+now we accept two parameters fire the
+message<00:02:11.390><c> log</c><00:02:12.390><c> the</c><00:02:12.569><c> result</c><00:02:12.900><c> and</c><00:02:13.140><c> return</c>
+
+00:02:13.630 --> 00:02:13.640 align:start position:0%
+message log the result and return
+ 
+
+00:02:13.640 --> 00:02:16.809 align:start position:0%
+message log the result and return
+avoid<00:02:14.770><c> extract</c><00:02:15.770><c> method</c><00:02:16.100><c> also</c><00:02:16.430><c> has</c><00:02:16.610><c> the</c>
+
+00:02:16.809 --> 00:02:16.819 align:start position:0%
+avoid extract method also has the
+ 
+
+00:02:16.819 --> 00:02:19.600 align:start position:0%
+avoid extract method also has the
+ability<00:02:17.240><c> to</c><00:02:17.270><c> detect</c><00:02:17.900><c> duplicate</c><00:02:18.830><c> blocks</c><00:02:19.010><c> and</c>
+
+00:02:19.600 --> 00:02:19.610 align:start position:0%
+ability to detect duplicate blocks and
+ 
+
+00:02:19.610 --> 00:02:21.970 align:start position:0%
+ability to detect duplicate blocks and
+replace<00:02:20.360><c> them</c><00:02:20.690><c> with</c><00:02:20.720><c> the</c><00:02:21.200><c> new</c><00:02:21.230><c> method</c>
+
+00:02:21.970 --> 00:02:21.980 align:start position:0%
+replace them with the new method
+ 
+
+00:02:21.980 --> 00:02:22.809 align:start position:0%
+replace them with the new method
+invocation
+
+00:02:22.809 --> 00:02:22.819 align:start position:0%
+invocation
+ 
+
+00:02:22.819 --> 00:02:25.690 align:start position:0%
+invocation
+so<00:02:23.720><c> here</c><00:02:23.990><c> I'll</c><00:02:24.110><c> extract</c><00:02:24.560><c> this</c><00:02:24.920><c> statement</c><00:02:25.220><c> into</c>
+
+00:02:25.690 --> 00:02:25.700 align:start position:0%
+so here I'll extract this statement into
+ 
+
+00:02:25.700 --> 00:02:30.100 align:start position:0%
+so here I'll extract this statement into
+a<00:02:26.000><c> new</c><00:02:26.300><c> method</c><00:02:26.690><c> called</c><00:02:27.220><c> debug</c><00:02:28.600><c> will</c><00:02:29.600><c> declare</c>
+
+00:02:30.100 --> 00:02:30.110 align:start position:0%
+a new method called debug will declare
+ 
+
+00:02:30.110 --> 00:02:34.410 align:start position:0%
+a new method called debug will declare
+it<00:02:30.170><c> static</c><00:02:30.860><c> and</c><00:02:31.070><c> then</c><00:02:31.820><c> apply</c><00:02:32.209><c> the</c><00:02:32.270><c> refactoring</c>
+
+00:02:34.410 --> 00:02:34.420 align:start position:0%
+it static and then apply the refactoring
+ 
+
+00:02:34.420 --> 00:02:37.570 align:start position:0%
+it static and then apply the refactoring
+so<00:02:35.420><c> extract</c><00:02:36.080><c> method</c><00:02:36.500><c> will</c><00:02:36.770><c> detect</c><00:02:37.280><c> those</c>
+
+00:02:37.570 --> 00:02:37.580 align:start position:0%
+so extract method will detect those
+ 
+
+00:02:37.580 --> 00:02:40.240 align:start position:0%
+so extract method will detect those
+locations<00:02:38.120><c> and</c><00:02:38.690><c> replace</c><00:02:39.350><c> them</c><00:02:39.650><c> with</c><00:02:39.680><c> a</c><00:02:39.830><c> call</c>
+
+00:02:40.240 --> 00:02:40.250 align:start position:0%
+locations and replace them with a call
+ 
+
+00:02:40.250 --> 00:02:43.600 align:start position:0%
+locations and replace them with a call
+to<00:02:40.580><c> the</c><00:02:41.060><c> new</c><00:02:41.480><c> method</c><00:02:42.200><c> here</c><00:02:42.890><c> there</c><00:02:43.040><c> are</c><00:02:43.160><c> three</c>
+
+00:02:43.600 --> 00:02:43.610 align:start position:0%
+to the new method here there are three
+ 
+
+00:02:43.610 --> 00:02:49.860 align:start position:0%
+to the new method here there are three
+and<00:02:43.910><c> let's</c><00:02:44.300><c> step</c><00:02:44.480><c> through</c><00:02:44.720><c> them</c><00:02:44.870><c> one</c><00:02:45.170><c> by</c><00:02:45.380><c> one</c>
+
+00:02:49.860 --> 00:02:49.870 align:start position:0%
+ 
+ 
+
+00:02:49.870 --> 00:02:52.360 align:start position:0%
+ 
+now<00:02:50.870><c> you</c><00:02:50.930><c> can</c><00:02:51.200><c> see</c><00:02:51.500><c> that</c><00:02:51.680><c> in</c><00:02:51.800><c> addition</c><00:02:52.340><c> to</c>
+
+00:02:52.360 --> 00:02:52.370 align:start position:0%
+now you can see that in addition to
+ 
+
+00:02:52.370 --> 00:02:55.960 align:start position:0%
+now you can see that in addition to
+statement<00:02:53.180><c> that</c><00:02:53.360><c> I've</c><00:02:53.480><c> refactored</c><00:02:54.970><c> three</c>
+
+00:02:55.960 --> 00:02:55.970 align:start position:0%
+statement that I've refactored three
+ 
+
+00:02:55.970 --> 00:02:57.970 align:start position:0%
+statement that I've refactored three
+others<00:02:56.269><c> were</c><00:02:56.630><c> detected</c><00:02:57.170><c> and</c><00:02:57.380><c> replaced</c><00:02:57.739><c> as</c>
+
+00:02:57.970 --> 00:02:57.980 align:start position:0%
+others were detected and replaced as
+ 
+
+00:02:57.980 --> 00:03:02.019 align:start position:0%
+others were detected and replaced as
+well<00:02:58.220><c> with</c><00:02:59.030><c> the</c><00:02:59.209><c> new</c><00:02:59.420><c> method</c><00:02:59.630><c> invocation</c>
+

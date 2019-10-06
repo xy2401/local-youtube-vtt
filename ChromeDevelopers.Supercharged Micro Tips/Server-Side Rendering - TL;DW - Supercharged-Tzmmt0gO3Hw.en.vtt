@@ -1,0 +1,594 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.904
+[JAZZ MUSIC PLAYING]
+
+00:00:10.180 --> 00:00:13.810
+SURMA: Hello, and welcome
+to the "Supercharged" TL;DW.
+
+00:00:13.810 --> 00:00:17.470
+Last time, Paul and I took
+our advance through the code
+
+00:00:17.470 --> 00:00:20.530
+and build a back end for it
+that does server-side rendering.
+
+00:00:20.530 --> 00:00:23.520
+I'm going to show you what that
+actually means in the browser.
+
+00:00:23.520 --> 00:00:26.219
+So if you look at my
+screen, you see nothing new.
+
+00:00:26.219 --> 00:00:27.760
+It's still the
+advance what we built,
+
+00:00:27.760 --> 00:00:29.850
+and we can go to all the
+different subsections
+
+00:00:29.850 --> 00:00:32.090
+with the nice
+transitions that we have.
+
+00:00:32.090 --> 00:00:34.490
+However, if you look at the
+network panel, in this case,
+
+00:00:34.490 --> 00:00:37.220
+we are only transmitting
+minimal amounts of data--
+
+00:00:37.220 --> 00:00:39.790
+the exact data that
+we need to show
+
+00:00:39.790 --> 00:00:41.580
+what this section is about.
+
+00:00:41.580 --> 00:00:44.210
+And yet, if I refresh
+the page, it still
+
+00:00:44.210 --> 00:00:46.290
+works, because in
+that case, the server
+
+00:00:46.290 --> 00:00:49.780
+has decided that the entire
+scaffolding needs to be sent.
+
+00:00:49.780 --> 00:00:53.100
+And to how that works in detail,
+let's go over to Theory Corner,
+
+00:00:53.100 --> 00:00:55.930
+or as we call it, [INAUDIBLE].
+
+00:00:55.930 --> 00:00:58.740
+Welcome to Theory Corner.
+
+00:00:58.740 --> 00:01:00.690
+This Node server is
+what we have built.
+
+00:01:00.690 --> 00:01:02.530
+It's a web server
+written in Node
+
+00:01:02.530 --> 00:01:05.530
+that takes the requests
+from the browser.
+
+00:01:05.530 --> 00:01:09.470
+These requests could be for the
+home page, the About section,
+
+00:01:09.470 --> 00:01:12.600
+the Contact section, whatever
+we have in the site nav.
+
+00:01:12.600 --> 00:01:16.280
+The server takes this request
+and reads a header file,
+
+00:01:16.280 --> 00:01:18.200
+the contents, and
+the footer file,
+
+00:01:18.200 --> 00:01:21.510
+and assembles these three
+parts into response that
+
+00:01:21.510 --> 00:01:24.580
+get sent back to the browser.
+
+00:01:24.580 --> 00:01:29.310
+However, if there is a partial
+flag present in the query part,
+
+00:01:29.310 --> 00:01:31.789
+that is instructing the
+server to only send back
+
+00:01:31.789 --> 00:01:33.580
+the contents, which is
+what happens when we
+
+00:01:33.580 --> 00:01:35.970
+do dynamic in-page navigation.
+
+00:01:35.970 --> 00:01:38.900
+And this is actually what is
+called server-side rendering
+
+00:01:38.900 --> 00:01:41.780
+because if the initial
+request is for About,
+
+00:01:41.780 --> 00:01:45.430
+the server will basically
+inject the contents for About
+
+00:01:45.430 --> 00:01:49.010
+into the return page, into the
+scaffolding that is around it.
+
+00:01:49.010 --> 00:01:53.970
+Let's look at the actual code
+back in real-world corner.
+
+00:01:53.970 --> 00:01:56.200
+Let's jump straight
+into the code.
+
+00:01:56.200 --> 00:01:57.646
+We're going to
+start at the bottom
+
+00:01:57.646 --> 00:01:59.270
+because that's the
+logical thing to do.
+
+00:01:59.270 --> 00:02:02.500
+So we're using Express
+to start our web server.
+
+00:02:02.500 --> 00:02:06.980
+And we are using SPDY because
+ironically, the actual HTTP/2
+
+00:02:06.980 --> 00:02:08.570
+module doesn't
+work with Express,
+
+00:02:08.570 --> 00:02:11.869
+but SPDY does, and serves
+HTTP/2 and not SPDY.
+
+00:02:11.869 --> 00:02:13.160
+So that's kind of nice to have.
+
+00:02:13.160 --> 00:02:14.570
+So we have our
+certificates here.
+
+00:02:14.570 --> 00:02:16.690
+We're starting a web
+server that serves our app,
+
+00:02:16.690 --> 00:02:19.720
+and we're binding
+it to port 8081.
+
+00:02:19.720 --> 00:02:23.371
+The actual app itself
+consists of two handlers,
+
+00:02:23.371 --> 00:02:25.870
+the one handler that we're going
+to talk about in a bit that
+
+00:02:25.870 --> 00:02:28.260
+actually does the
+server-side rendering,
+
+00:02:28.260 --> 00:02:30.160
+and below that,
+we are just using
+
+00:02:30.160 --> 00:02:33.840
+Express' static middleware that
+does nothing else [INAUDIBLE]
+
+00:02:33.840 --> 00:02:36.630
+the straight-up deliver files
+from disk over the network.
+
+00:02:36.630 --> 00:02:38.650
+It's just static file delivery.
+
+00:02:38.650 --> 00:02:40.610
+So let's talk about
+the actual heart
+
+00:02:40.610 --> 00:02:44.990
+of this server, which is the
+server-side rendering function.
+
+00:02:44.990 --> 00:02:47.550
+It is a handler, and it takes
+care of all the requests
+
+00:02:47.550 --> 00:02:50.560
+that are for HTML websites.
+
+00:02:50.560 --> 00:02:52.980
+These can have multiple shapes
+because it could be just
+
+00:02:52.980 --> 00:02:55.490
+a slash, it could
+be /index HTML,
+
+00:02:55.490 --> 00:02:58.480
+or it could be any of these
+subsections with an optional
+
+00:02:58.480 --> 00:03:00.410
+index HTML at the end.
+
+00:03:00.410 --> 00:03:02.460
+And we turned that into
+a regular expression,
+
+00:03:02.460 --> 00:03:06.130
+and just put that into
+the Express handler.
+
+00:03:06.130 --> 00:03:08.590
+And the first thing we
+do-- we are extracting
+
+00:03:08.590 --> 00:03:11.600
+the zeroth element from
+the parents object, which
+
+00:03:11.600 --> 00:03:14.370
+is the first parentheses from
+the reg expression, meaning it
+
+00:03:14.370 --> 00:03:16.570
+is an empty string if
+you're on the home page,
+
+00:03:16.570 --> 00:03:18.840
+or it's the name
+of the subsection
+
+00:03:18.840 --> 00:03:22.160
+if we're in any of
+the subsections.
+
+00:03:22.160 --> 00:03:23.650
+And what we are
+figuring out next
+
+00:03:23.650 --> 00:03:26.220
+is-- this is, as I
+mentioned, in Theory Corner,
+
+00:03:26.220 --> 00:03:29.720
+if it's a partial request,
+or a full page request.
+
+00:03:29.720 --> 00:03:33.070
+If it is a partial request, the
+only file that we need to read
+
+00:03:33.070 --> 00:03:36.160
+is the index of that subsection.
+
+00:03:36.160 --> 00:03:38.440
+So if we, for example,
+look in the index
+
+00:03:38.440 --> 00:03:40.420
+HTML of the About
+section, it just
+
+00:03:40.420 --> 00:03:44.800
+has this one line that I
+showed in the DevTools earlier.
+
+00:03:44.800 --> 00:03:46.790
+If it is not a
+partial request, we
+
+00:03:46.790 --> 00:03:50.030
+need to read the header
+file, the partial file,
+
+00:03:50.030 --> 00:03:51.680
+and the footer,
+and assemble these
+
+00:03:51.680 --> 00:03:54.370
+to form the actual response.
+
+00:03:54.370 --> 00:03:56.280
+What we're doing next
+is after successfully
+
+00:03:56.280 --> 00:03:58.260
+reading all these
+files-- is we're
+
+00:03:58.260 --> 00:04:01.611
+turning them into strings
+because originally, we get back
+
+00:04:01.611 --> 00:04:02.110
+buffers.
+
+00:04:02.110 --> 00:04:03.610
+And we can't really
+work on buffers.
+
+00:04:03.610 --> 00:04:05.450
+So we're turning
+them into strings.
+
+00:04:05.450 --> 00:04:07.980
+And then we are
+using Handlebars.
+
+00:04:07.980 --> 00:04:10.230
+The reason we are
+using Handlebars,
+
+00:04:10.230 --> 00:04:12.220
+which is a templating
+engine, is because we
+
+00:04:12.220 --> 00:04:15.110
+have to do minor
+manipulations in the header
+
+00:04:15.110 --> 00:04:17.760
+to accommodate for the data
+we are going to inject.
+
+00:04:17.760 --> 00:04:20.260
+And what I mean by that is--
+let's take a look at the header
+
+00:04:20.260 --> 00:04:23.060
+file-- is that in
+the header file,
+
+00:04:23.060 --> 00:04:26.760
+we have all the views that
+are currently not visible.
+
+00:04:26.760 --> 00:04:28.580
+But these are four
+views, and we only
+
+00:04:28.580 --> 00:04:30.330
+need three because one
+of them is actually
+
+00:04:30.330 --> 00:04:33.660
+going to be rendered by our
+server-side rendering logic.
+
+00:04:33.660 --> 00:04:36.640
+So we wrote a little
+Handlebars handler
+
+00:04:36.640 --> 00:04:40.830
+that will exclude that remote
+view that is currently in use.
+
+00:04:40.830 --> 00:04:44.032
+So if we are on the About
+page, these three lines
+
+00:04:44.032 --> 00:04:46.240
+will not appear in the output
+because we are actually
+
+00:04:46.240 --> 00:04:49.630
+going to inject the data.
+
+00:04:49.630 --> 00:04:51.390
+And this is what
+we are doing next.
+
+00:04:51.390 --> 00:04:52.814
+We have these three files.
+
+00:04:52.814 --> 00:04:54.480
+We're just assembling
+them step by step,
+
+00:04:54.480 --> 00:04:57.880
+concatenating them, and
+then sending them back
+
+00:04:57.880 --> 00:04:59.040
+to the client.
+
+00:04:59.040 --> 00:05:02.880
+Additionally, we are also
+generating in the ETag.
+
+00:05:02.880 --> 00:05:06.850
+This ETag is there to allow
+efficient client-side caching.
+
+00:05:06.850 --> 00:05:09.730
+It is purely based on the
+contents that we have.
+
+00:05:09.730 --> 00:05:13.210
+And we're just using a SHA256
+checksum to [INAUDIBLE]
+
+00:05:13.210 --> 00:05:14.950
+it based on the contents.
+
+00:05:14.950 --> 00:05:18.020
+We are adding these
+ETag headers via the set
+
+00:05:18.020 --> 00:05:19.440
+method of our response.
+
+00:05:19.440 --> 00:05:22.800
+And we also set sensible
+cache control headers.
+
+00:05:22.800 --> 00:05:26.160
+These cache control headers mean
+that even though the client is
+
+00:05:26.160 --> 00:05:29.290
+allowed to cache them,
+it has to revalidate
+
+00:05:29.290 --> 00:05:33.640
+every single time a request
+goes out for the same page.
+
+00:05:33.640 --> 00:05:36.245
+In case an error happens
+in any of these steps--
+
+00:05:36.245 --> 00:05:38.120
+and this is one of the
+beauties of promises--
+
+00:05:38.120 --> 00:05:40.780
+we are just using the
+promise chain's catch handler
+
+00:05:40.780 --> 00:05:44.300
+to set the status to 500,
+meaning internal server error,
+
+00:05:44.300 --> 00:05:46.090
+and appending our
+error strings so
+
+00:05:46.090 --> 00:05:48.610
+that we as developer know
+what just went wrong and can
+
+00:05:48.610 --> 00:05:49.580
+fix our code.
+
+00:05:49.580 --> 00:05:52.100
+Luckily, that didn't
+even happen on stream.
+
+00:05:52.100 --> 00:05:55.180
+So we could never show off
+that it actually works.
+
+00:05:55.180 --> 00:05:56.240
+And that's already it.
+
+00:05:56.240 --> 00:05:58.250
+This is how you do
+server-side rendering.
+
+00:05:58.250 --> 00:06:00.850
+You take the index HTML,
+you inject the content
+
+00:06:00.850 --> 00:06:02.910
+the user actually
+requested, and then you
+
+00:06:02.910 --> 00:06:05.230
+send it back to the client.
+
+00:06:05.230 --> 00:06:07.530
+The code I just skimmed
+over is on GitHub.
+
+00:06:07.530 --> 00:06:10.250
+And you will find the link to
+the repo in the description
+
+00:06:10.250 --> 00:06:11.294
+of this video.
+
+00:06:11.294 --> 00:06:12.960
+Another link you can
+find in description
+
+00:06:12.960 --> 00:06:15.200
+is the link to the
+full-length livestream
+
+00:06:15.200 --> 00:06:17.710
+that Paul and I did where
+you can see how we built
+
+00:06:17.710 --> 00:06:20.030
+this entire thing step by step.
+
+00:06:20.030 --> 00:06:21.660
+If you want to know
+more, subscribe
+
+00:06:21.660 --> 00:06:24.517
+to this channel on YouTube,
+or follow us on Twitter.
+
+00:06:24.517 --> 00:06:25.350
+Thanks for watching.
+
+00:06:25.350 --> 00:06:26.480
+See you next time.
+
+00:06:26.480 --> 00:06:28.630
+[JAZZ MUSIC PLAYING]
+
+00:06:28.630 --> 00:06:29.645
+The lights up there?
+
+00:06:29.645 --> 00:06:30.705
+You could click them.
+
+00:06:30.705 --> 00:06:31.720
+It makes you subscribe.
+
+00:06:31.720 --> 00:06:32.910
+It's a good thing.
+
+00:06:32.910 --> 00:06:34.740
+And also, if you want
+to see me panic live
+
+00:06:34.740 --> 00:06:38.520
+on stream, where I can't figure
+out why HTTP/2 is not working,
+
+00:06:38.520 --> 00:06:40.240
+go there-- that's
+the live stream--
+
+00:06:40.240 --> 00:06:42.667
+and you will have an hour
+long of pure entertainment.
+

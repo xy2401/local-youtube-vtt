@@ -1,0 +1,1267 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.270 --> 00:00:01.510
+SPEAKER 1: One of the things
+I've been thinking about
+
+00:00:01.510 --> 00:00:02.926
+is we haven't
+discussed what we're
+
+00:00:02.926 --> 00:00:04.420
+going to call this series.
+
+00:00:04.420 --> 00:00:06.090
+SPEAKER 2: I would
+just say HTTP203.
+
+00:00:06.090 --> 00:00:08.486
+SPEAKER 1: But it's different
+because we've got people.
+
+00:00:08.486 --> 00:00:09.380
+EVA: Yeah.
+
+00:00:09.380 --> 00:00:12.012
+People-- like real people,
+not like humanoids.
+
+00:00:12.012 --> 00:00:14.904
+[MUSIC PLAYING]
+
+00:00:18.290 --> 00:00:19.290
+SPEAKER 2: Welcome.
+
+00:00:19.290 --> 00:00:21.000
+Who are you and why?
+
+00:00:21.000 --> 00:00:22.430
+EVA: Oh.
+
+00:00:22.430 --> 00:00:23.930
+Can I start with
+the "why" question?
+
+00:00:23.930 --> 00:00:24.584
+[LAUGHS]
+
+00:00:24.584 --> 00:00:25.250
+SPEAKER 1: Yeah.
+
+00:00:25.250 --> 00:00:25.875
+Go on then.
+
+00:00:25.875 --> 00:00:26.375
+Go on then.
+
+00:00:26.375 --> 00:00:26.875
+EVA: No.
+
+00:00:26.875 --> 00:00:30.600
+So I'm Eva, and I work at
+developer relations for Chrome.
+
+00:00:30.600 --> 00:00:32.900
+And I'm here at I/O to
+enjoy the beautiful weather
+
+00:00:32.900 --> 00:00:36.940
+and other participants and
+also to give talks and interact
+
+00:00:36.940 --> 00:00:38.580
+with people--
+
+00:00:38.580 --> 00:00:39.900
+a lot interact with people.
+
+00:00:39.900 --> 00:00:40.650
+SPEAKER 2: I know.
+
+00:00:40.650 --> 00:00:42.360
+It's a lot of
+interaction, isn't it?
+
+00:00:42.360 --> 00:00:43.410
+EVA: Yeah, yeah.
+
+00:00:43.410 --> 00:00:46.860
+By the end of the
+day, my introvert self
+
+00:00:46.860 --> 00:00:49.135
+tries to hide inside.
+
+00:00:49.135 --> 00:00:50.760
+But actually, it's
+very worthy as well.
+
+00:00:50.760 --> 00:00:51.420
+It's critical.
+
+00:00:51.420 --> 00:00:53.045
+SPEAKER 2: It's like
+I really enjoy it.
+
+00:00:53.045 --> 00:00:55.410
+But I also need to recuperate
+a lot afterwards usually.
+
+00:00:55.410 --> 00:00:56.830
+SPEAKER 1: It's a weird
+part of this job, isn't it,
+
+00:00:56.830 --> 00:00:59.121
+that we take people who are
+traditionally introverted--
+
+00:00:59.121 --> 00:01:01.000
+I think we'd all include
+ourselves in that--
+
+00:01:01.000 --> 00:01:03.000
+and we go, what are we
+going to do for a living?
+
+00:01:03.000 --> 00:01:05.150
+Oh, we'll go on stage.
+
+00:01:05.150 --> 00:01:07.020
+SPEAKER 2: Talk to
+people all the time.
+
+00:01:07.020 --> 00:01:07.350
+SPEAKER 1: Yeah.
+
+00:01:07.350 --> 00:01:09.750
+And it's just all of the energy
+just sapped away at once,
+
+00:01:09.750 --> 00:01:12.257
+and then we have to go
+and lie in a coffin.
+
+00:01:12.257 --> 00:01:13.590
+SPEAKER 2: Fetal position, yeah.
+
+00:01:13.590 --> 00:01:14.700
+SPEAKER 1: Fetal
+position in a coffin.
+
+00:01:14.700 --> 00:01:15.491
+SPEAKER 2: [LAUGHS]
+
+00:01:15.491 --> 00:01:17.600
+EVA: Like you see,
+it's a bit difficult--
+
+00:01:17.600 --> 00:01:20.910
+totally different if you
+talk to a group of extroverts
+
+00:01:20.910 --> 00:01:22.350
+and you hang out
+with extroverts.
+
+00:01:22.350 --> 00:01:23.683
+With introverts, it's different.
+
+00:01:23.683 --> 00:01:26.190
+Like, we just say hi, hi, and
+everybody goes their own way.
+
+00:01:26.190 --> 00:01:27.570
+And everybody is OK with that.
+
+00:01:27.570 --> 00:01:28.060
+SPEAKER 2: Yeah.
+
+00:01:28.060 --> 00:01:29.520
+That's the thing, like you
+said in the circle, all
+
+00:01:29.520 --> 00:01:30.179
+looking at you.
+
+00:01:30.179 --> 00:01:31.720
+EVA: But people
+understand, you know?
+
+00:01:31.720 --> 00:01:34.410
+SPEAKER 1: So one of the things
+that I encounter at these kind
+
+00:01:34.410 --> 00:01:37.560
+of events-- because I walk past
+people I sort of vaguely know
+
+00:01:37.560 --> 00:01:38.845
+or have met before--
+
+00:01:38.845 --> 00:01:41.910
+and we'll walk past
+each other and go,
+
+00:01:41.910 --> 00:01:44.810
+hey, Mike, and hey, Jake.
+
+00:01:44.810 --> 00:01:46.284
+And now we're locked in.
+
+00:01:46.284 --> 00:01:47.450
+And it's that sort of thing.
+
+00:01:47.450 --> 00:01:50.430
+It's like, do you want
+to go for a picnic?
+
+00:01:50.430 --> 00:01:51.095
+[LAUGHTER]
+
+00:01:51.095 --> 00:01:51.970
+What's the next step?
+
+00:01:51.970 --> 00:01:52.875
+SPEAKER 2: I thought
+it was the thing where
+
+00:01:52.875 --> 00:01:54.900
+you pretend you haven't seen
+the other person-- you just
+
+00:01:54.900 --> 00:01:55.410
+keep walking.
+
+00:01:55.410 --> 00:01:57.280
+You just look at your
+feet, and you're like--
+
+00:01:57.280 --> 00:01:57.580
+SPEAKER 1: Oh.
+
+00:01:57.580 --> 00:01:58.660
+So you're trying
+to avoid people.
+
+00:01:58.660 --> 00:01:59.284
+That works too.
+
+00:01:59.284 --> 00:02:01.050
+SPEAKER 2: I have
+been guilty of that.
+
+00:02:01.050 --> 00:02:03.090
+Some days when I'm too
+low energy, and I'm like,
+
+00:02:03.090 --> 00:02:03.860
+oh, that's a person.
+
+00:02:03.860 --> 00:02:04.443
+SPEAKER 1: No.
+
+00:02:04.443 --> 00:02:07.030
+I'm happy with the
+meeting and the talking.
+
+00:02:07.030 --> 00:02:09.477
+But it's when to break it off,
+and what's the rule there?
+
+00:02:09.477 --> 00:02:10.310
+Like you would say--
+
+00:02:10.310 --> 00:02:12.062
+EVA: Oh, just say,
+oh, I have a thing.
+
+00:02:12.062 --> 00:02:13.020
+SPEAKER 2: Oh, a thing.
+
+00:02:13.020 --> 00:02:14.272
+SPEAKER 1: That's really good.
+
+00:02:14.272 --> 00:02:15.480
+EVA: The magical thing, yeah.
+
+00:02:15.480 --> 00:02:16.260
+SPEAKER 1: I've got a thing.
+
+00:02:16.260 --> 00:02:17.260
+SPEAKER 2: With a thing.
+
+00:02:17.260 --> 00:02:20.430
+EVA: And I'm so glad that
+Googlers go ahead of our needs.
+
+00:02:20.430 --> 00:02:24.040
+Have you seen the demo with
+the phone call, where the AI is
+
+00:02:24.040 --> 00:02:25.240
+doing a phone call for you?
+
+00:02:25.240 --> 00:02:26.400
+SPEAKER 2: In the
+future, we can just
+
+00:02:26.400 --> 00:02:27.630
+send that to the conference.
+
+00:02:27.630 --> 00:02:28.560
+SPEAKER 1: [LAUGHS]
+
+00:02:28.560 --> 00:02:31.410
+EVA: One thing is that all
+this technology behind it
+
+00:02:31.410 --> 00:02:33.960
+is so amazing and everything.
+
+00:02:33.960 --> 00:02:36.450
+But what amazes me the
+most is that [GASPS]
+
+00:02:36.450 --> 00:02:39.080
+there must be so many
+introverts in the world
+
+00:02:39.080 --> 00:02:42.530
+if they made a technology
+for people like me.
+
+00:02:42.530 --> 00:02:44.920
+I finally feel
+included, you know?
+
+00:02:44.920 --> 00:02:47.010
+SPEAKER 2: So what
+have you been doing?
+
+00:02:47.010 --> 00:02:49.180
+What, why-- what have
+you've been talking about?
+
+00:02:49.180 --> 00:02:50.320
+SPEAKER 1: What, what, why?
+
+00:02:50.320 --> 00:02:51.100
+SPEAKER 2: What, why--
+
+00:02:51.100 --> 00:02:52.480
+well, we already had
+one why question.
+
+00:02:52.480 --> 00:02:53.604
+SPEAKER 1: What, what, why?
+
+00:02:53.604 --> 00:02:56.780
+EVA: Well, it started that
+we built an app with Adi,
+
+00:02:56.780 --> 00:02:57.610
+and it was crap.
+
+00:02:57.610 --> 00:02:59.216
+[LAUGHTER]
+
+00:02:59.216 --> 00:03:00.716
+SPEAKER 1: But that
+was Adi's fault.
+
+00:03:00.716 --> 00:03:01.320
+That was Adi's fault, right?
+
+00:03:01.320 --> 00:03:01.410
+EVA: No.
+
+00:03:01.410 --> 00:03:02.450
+It was an amazing app.
+
+00:03:02.450 --> 00:03:04.710
+You could go and
+check Google doodles,
+
+00:03:04.710 --> 00:03:06.330
+and you could play
+them, and it was
+
+00:03:06.330 --> 00:03:07.650
+all super interactive and nice.
+
+00:03:07.650 --> 00:03:09.400
+But it was just not performant.
+
+00:03:09.400 --> 00:03:12.240
+And when you do stuff
+with Adi and folks,
+
+00:03:12.240 --> 00:03:13.500
+it needs to be performant.
+
+00:03:13.500 --> 00:03:17.400
+So they made us fix it, and
+we learned quite a bit out
+
+00:03:17.400 --> 00:03:19.120
+of that.
+
+00:03:19.120 --> 00:03:21.330
+So we've been sharing
+that throughout the talk.
+
+00:03:21.330 --> 00:03:24.720
+It's actually much easier to
+run into performance troubles
+
+00:03:24.720 --> 00:03:26.010
+than we originally thought.
+
+00:03:26.010 --> 00:03:26.510
+So yeah.
+
+00:03:26.510 --> 00:03:28.505
+SPEAKER 2: [LAUGHS] Oh,
+that's a different one.
+
+00:03:28.505 --> 00:03:28.810
+EVA: Ta-da.
+
+00:03:28.810 --> 00:03:30.226
+SPEAKER 2: Well, we
+definitely mention your talk
+
+00:03:30.226 --> 00:03:30.770
+in the description.
+
+00:03:30.770 --> 00:03:31.470
+EVA: It's pretty
+easy to make a--
+
+00:03:31.470 --> 00:03:32.430
+SPEAKER 1: What kind
+of performance problems
+
+00:03:32.430 --> 00:03:33.630
+were you hitting then?
+
+00:03:33.630 --> 00:03:36.150
+EVA: Well, a lot of
+stuff comes from the fact
+
+00:03:36.150 --> 00:03:41.215
+that when you develop things, it
+lasts over some period of time.
+
+00:03:41.215 --> 00:03:42.840
+And after some time,
+you don't remember
+
+00:03:42.840 --> 00:03:44.380
+what you did before, and so on.
+
+00:03:44.380 --> 00:03:45.570
+So things accumulate, right?
+
+00:03:45.570 --> 00:03:47.320
+And then you just forget.
+
+00:03:47.320 --> 00:03:50.297
+And we've been working with some
+tools that help you remind--
+
+00:03:50.297 --> 00:03:51.630
+SPEAKER 2: There's your mistake.
+
+00:03:51.630 --> 00:03:53.567
+EVA: --what might go wrong.
+
+00:03:53.567 --> 00:03:55.650
+Yeah, if there were no
+tools, everybody was happy.
+
+00:03:55.650 --> 00:03:58.060
+Nobody had any scores, right?
+
+00:03:58.060 --> 00:04:00.847
+But now, there are tools
+that can reminds you of--
+
+00:04:00.847 --> 00:04:02.430
+for example, I don't
+know, the library
+
+00:04:02.430 --> 00:04:06.877
+you forgot to kick out because
+you're not using it anymore--
+
+00:04:06.877 --> 00:04:09.210
+about the images that are
+twice as big because you said,
+
+00:04:09.210 --> 00:04:11.380
+OK, I'll optimize them
+later, and this later just
+
+00:04:11.380 --> 00:04:12.910
+never happened.
+
+00:04:12.910 --> 00:04:14.330
+So it's all about process.
+
+00:04:14.330 --> 00:04:16.079
+It's less about the
+code, and the samples,
+
+00:04:16.079 --> 00:04:18.200
+and the techniques
+you use in the code.
+
+00:04:18.200 --> 00:04:20.250
+It's more about the
+process, like how
+
+00:04:20.250 --> 00:04:23.940
+to fit your performance
+habits into your overall--
+
+00:04:23.940 --> 00:04:27.595
+SPEAKER 2: So how big of a role
+does Lighthouse play in that?
+
+00:04:27.595 --> 00:04:28.970
+Is that something
+where you think
+
+00:04:28.970 --> 00:04:32.400
+triaging if Lighthouse reminds
+you of everything that it
+
+00:04:32.400 --> 00:04:33.500
+needs to remind you of.
+
+00:04:33.500 --> 00:04:35.430
+EVA: There are
+new audits running
+
+00:04:35.430 --> 00:04:36.990
+each quarter in
+lighthouse, and it's
+
+00:04:36.990 --> 00:04:39.900
+getting better and better job
+of giving you just an overview
+
+00:04:39.900 --> 00:04:41.739
+of what you could be improving.
+
+00:04:41.739 --> 00:04:43.780
+And that's pretty neat,
+because usually you don't
+
+00:04:43.780 --> 00:04:44.880
+want to improve everything.
+
+00:04:44.880 --> 00:04:46.255
+You just need to
+pick and choose.
+
+00:04:46.255 --> 00:04:47.970
+So if you have a
+whole list, you can go
+
+00:04:47.970 --> 00:04:50.801
+and say, OK, apparently, this
+one, this one, and this one
+
+00:04:50.801 --> 00:04:51.300
+is cheap.
+
+00:04:51.300 --> 00:04:52.410
+So I'll do it now.
+
+00:04:52.410 --> 00:04:54.130
+And this one and this
+one are important.
+
+00:04:54.130 --> 00:04:54.960
+So I do it now.
+
+00:04:54.960 --> 00:04:57.010
+And these are expensive
+and not so important.
+
+00:04:57.010 --> 00:04:58.800
+So I just ignore them.
+
+00:04:58.800 --> 00:05:00.450
+So it's getting better.
+
+00:05:00.450 --> 00:05:03.550
+And it's really a good guidance.
+
+00:05:03.550 --> 00:05:07.510
+It can lead you
+through that process.
+
+00:05:07.510 --> 00:05:10.110
+SPEAKER 1: So what
+were the issues
+
+00:05:10.110 --> 00:05:11.820
+that you punted until later on?
+
+00:05:11.820 --> 00:05:13.686
+What was the stuff
+that was going
+
+00:05:13.686 --> 00:05:15.810
+to be really complex to
+solve versus the stuff that
+
+00:05:15.810 --> 00:05:16.812
+was really easy?
+
+00:05:16.812 --> 00:05:18.770
+EVA: Well generally, you
+want to add a feature,
+
+00:05:18.770 --> 00:05:20.987
+like you want to have
+some images on the page,
+
+00:05:20.987 --> 00:05:22.820
+and you want to land
+it as soon as possible.
+
+00:05:22.820 --> 00:05:25.028
+So you add the feature, and
+you forget to optimize it
+
+00:05:25.028 --> 00:05:26.940
+at the same time.
+
+00:05:26.940 --> 00:05:28.270
+So it's like the stuff--
+
+00:05:28.270 --> 00:05:32.630
+if you don't do it, great at
+the beginning, straight away.
+
+00:05:32.630 --> 00:05:36.779
+You say, OK, I'll do it first
+initial version, agile style,
+
+00:05:36.779 --> 00:05:38.820
+and then I'll come back
+later and make it better.
+
+00:05:38.820 --> 00:05:40.850
+This later might never happen
+because, for example, you're
+
+00:05:40.850 --> 00:05:43.190
+preparing for a Goggle I/O
+or something like that.
+
+00:05:43.190 --> 00:05:43.990
+SPEAKER 1: Oh, yes.
+
+00:05:43.990 --> 00:05:48.560
+So is there a difference
+between working
+
+00:05:48.560 --> 00:05:50.300
+towards performance
+stuff versus working
+
+00:05:50.300 --> 00:05:52.460
+on features because you've
+been doing sort of both, right?
+
+00:05:52.460 --> 00:05:53.626
+EVA: Yeah, that's the thing.
+
+00:05:53.626 --> 00:05:57.320
+So we decided to write this
+app without taking performance
+
+00:05:57.320 --> 00:06:00.830
+much into consideration and see
+how it is to retroactively go
+
+00:06:00.830 --> 00:06:02.595
+back and fix those things.
+
+00:06:02.595 --> 00:06:03.845
+That was the kind of exercise.
+
+00:06:03.845 --> 00:06:05.180
+SPEAKER 2: It's
+probably very realistic,
+
+00:06:05.180 --> 00:06:07.310
+because I think most teams
+work and, like, let's
+
+00:06:07.310 --> 00:06:09.812
+get the functionality
+first and optimize later.
+
+00:06:09.812 --> 00:06:11.270
+SPEAKER 1: Oh, but
+then it puts you
+
+00:06:11.270 --> 00:06:13.250
+in danger of not
+doing that last step.
+
+00:06:13.250 --> 00:06:13.610
+SPEAKER 2: I know but--
+
+00:06:13.610 --> 00:06:14.810
+SPEAKER 1: It's like, oh, we'll
+do accessibility at the end,
+
+00:06:14.810 --> 00:06:17.210
+and then people go, oh,
+the project's over-running.
+
+00:06:17.210 --> 00:06:18.109
+Let's cut it there.
+
+00:06:18.109 --> 00:06:20.150
+SPEAKER 2: But also that's
+people throwing around
+
+00:06:20.150 --> 00:06:21.980
+the whole thing-- you know,
+premature optimization
+
+00:06:21.980 --> 00:06:23.000
+is the root of all evil.
+
+00:06:23.000 --> 00:06:23.590
+So you have people
+actually trying
+
+00:06:23.590 --> 00:06:25.220
+to follow all this
+conflicting advice.
+
+00:06:25.220 --> 00:06:26.845
+EVA: I mean, of course
+it's really good
+
+00:06:26.845 --> 00:06:31.280
+to start with designing
+for performance first.
+
+00:06:31.280 --> 00:06:33.960
+And it really leads
+to great results.
+
+00:06:33.960 --> 00:06:35.990
+But I mean, sometimes
+it does not happen.
+
+00:06:35.990 --> 00:06:38.073
+If you have a lot of
+[INAUDIBLE] in your project--
+
+00:06:38.073 --> 00:06:40.670
+you have your boss, you
+have your marketing team,
+
+00:06:40.670 --> 00:06:46.010
+you have other folks, and
+you need to juggle that.
+
+00:06:46.010 --> 00:06:48.710
+And sometimes you are
+realistically in this state
+
+00:06:48.710 --> 00:06:50.342
+where you have an
+app, and you want
+
+00:06:50.342 --> 00:06:51.800
+to make it more
+performant, and you
+
+00:06:51.800 --> 00:06:53.060
+need to do retroactive work.
+
+00:06:53.060 --> 00:06:55.610
+So we just wanted to
+explore that a little bit
+
+00:06:55.610 --> 00:06:58.190
+and see if Lighthouse is a
+really good tool that can
+
+00:06:58.190 --> 00:07:00.080
+lead you to some gains there.
+
+00:07:00.080 --> 00:07:01.030
+And apparently it is.
+
+00:07:01.030 --> 00:07:02.510
+SPEAKER 2: So when you
+were developing this app,
+
+00:07:02.510 --> 00:07:05.000
+did you basically give
+feedback to the Lighthouse team
+
+00:07:05.000 --> 00:07:08.647
+and saying, "this did not get
+caught by Lighthouse, fix it,"
+
+00:07:08.647 --> 00:07:09.230
+kind of thing?
+
+00:07:09.230 --> 00:07:09.729
+EVA: Yeah.
+
+00:07:09.729 --> 00:07:12.800
+So there were some areas
+where we were appointing stuff
+
+00:07:12.800 --> 00:07:13.547
+like this.
+
+00:07:13.547 --> 00:07:15.380
+And fortunately, most
+of the time the answer
+
+00:07:15.380 --> 00:07:17.260
+was wait a quarter or two.
+
+00:07:17.260 --> 00:07:18.267
+It's in progress.
+
+00:07:18.267 --> 00:07:19.100
+We're getting there.
+
+00:07:19.100 --> 00:07:21.370
+We know it will be there soon.
+
+00:07:21.370 --> 00:07:24.590
+So it's a very dynamically
+developed tool.
+
+00:07:24.590 --> 00:07:26.679
+SPEAKER 1: So you've been
+in the Sandbox as well.
+
+00:07:26.679 --> 00:07:27.220
+EVA: Oh yeah.
+
+00:07:27.220 --> 00:07:29.330
+SPEAKER 1: The area of I/O
+where we've got all of the apps.
+
+00:07:29.330 --> 00:07:30.450
+EVA: They have speakers there.
+
+00:07:30.450 --> 00:07:32.033
+SPEAKER 2: Why is
+it called a Sandbox,
+
+00:07:32.033 --> 00:07:33.116
+because it's not like--
+
+00:07:33.116 --> 00:07:34.490
+when I think of
+"sandbox," either
+
+00:07:34.490 --> 00:07:36.750
+it's an actual box of sand.
+
+00:07:36.750 --> 00:07:40.071
+Or it's like a metaphor for
+where you go to build things.
+
+00:07:40.071 --> 00:07:41.320
+But that's also not happening.
+
+00:07:41.320 --> 00:07:41.820
+EVA: No, no.
+
+00:07:41.820 --> 00:07:42.530
+It's about faces.
+
+00:07:42.530 --> 00:07:45.320
+Have you seen kids going
+into the sandbox and the face
+
+00:07:45.320 --> 00:07:47.117
+they make at that
+point, like pure joy.
+
+00:07:47.117 --> 00:07:47.700
+SPEAKER 2: Oh.
+
+00:07:47.700 --> 00:07:49.283
+SPEAKER 1: Well, in
+England we call it
+
+00:07:49.283 --> 00:07:51.240
+a sandpit, which sounds like--
+
+00:07:51.240 --> 00:07:53.687
+it sounds like
+where you might die.
+
+00:07:53.687 --> 00:07:54.770
+It's a different between--
+
+00:07:54.770 --> 00:07:55.645
+EVA: It's like arena?
+
+00:07:55.645 --> 00:07:58.820
+SPEAKER 1: --put your kid in the
+sandpit [HISSING] kid's gone.
+
+00:07:58.820 --> 00:07:59.480
+Never mind.
+
+00:07:59.480 --> 00:08:00.580
+[LAUGHTER]
+
+00:08:00.580 --> 00:08:02.213
+SPEAKER 2: Well,
+it's not quicksand.
+
+00:08:02.213 --> 00:08:02.796
+SPEAKER 1: No.
+
+00:08:02.796 --> 00:08:03.546
+Well, do you know?
+
+00:08:03.546 --> 00:08:04.814
+SPEAKER 2: A quicksand pit.
+
+00:08:04.814 --> 00:08:05.710
+SPEAKER 1: Yeah.
+
+00:08:05.710 --> 00:08:08.990
+Well, I had a
+sandpit growing up.
+
+00:08:08.990 --> 00:08:10.560
+But we also had cats.
+
+00:08:10.560 --> 00:08:13.203
+So the sandpit was
+not a fun place to be.
+
+00:08:13.203 --> 00:08:13.704
+EVA: Ooh.
+
+00:08:13.704 --> 00:08:15.744
+SPEAKER 1: So when people
+are saying the sandbox,
+
+00:08:15.744 --> 00:08:18.250
+that's all I'm thinking of is
+oh, it's going to be full of--
+
+00:08:18.250 --> 00:08:20.375
+EVA: It depends on your
+definition of fun, I guess.
+
+00:08:20.375 --> 00:08:21.032
+[LAUGHTER]
+
+00:08:21.032 --> 00:08:22.490
+SPEAKER 1: In the
+north of England,
+
+00:08:22.490 --> 00:08:23.990
+we'll take any fun we get.
+
+00:08:23.990 --> 00:08:26.670
+Like, oh, modeling clay--
+
+00:08:26.670 --> 00:08:27.410
+no.
+
+00:08:27.410 --> 00:08:28.712
+[LAUGHTER]
+
+00:08:28.712 --> 00:08:30.170
+So who have you
+been meeting there?
+
+00:08:30.170 --> 00:08:32.419
+What kind of things
+have you been doing?
+
+00:08:32.419 --> 00:08:34.887
+EVA: I've met quite a few
+of Google developer experts.
+
+00:08:34.887 --> 00:08:37.220
+And it's pretty cool, because
+they have so much passion,
+
+00:08:37.220 --> 00:08:41.090
+and they usually specialize
+in some narrow area.
+
+00:08:41.090 --> 00:08:44.930
+I can't know about every
+single nook of web.
+
+00:08:44.930 --> 00:08:47.510
+So it's always very enlightening
+to see all this passion.
+
+00:08:47.510 --> 00:08:49.010
+SPEAKER 1: But
+knowing all about all
+
+00:08:49.010 --> 00:08:53.470
+of the web, that's something I
+remember having to let go of.
+
+00:08:53.470 --> 00:08:56.180
+We're talking 15
+years ago, I kind of
+
+00:08:56.180 --> 00:08:58.525
+felt like I knew a
+reasonable amount of the web.
+
+00:08:58.525 --> 00:08:59.900
+This was kind of
+in the IE6 days,
+
+00:08:59.900 --> 00:09:01.557
+when the web had
+essentially stalled.
+
+00:09:01.557 --> 00:09:03.140
+But then new things
+we're being added.
+
+00:09:03.140 --> 00:09:06.552
+So then we started to
+get IndexedDB, WebGL
+
+00:09:06.552 --> 00:09:07.510
+and that sort of thing.
+
+00:09:07.510 --> 00:09:09.630
+And I panicked at
+first thinking,
+
+00:09:09.630 --> 00:09:11.434
+how am I going to
+learn all of this?
+
+00:09:11.434 --> 00:09:12.350
+EVA: I feel young now.
+
+00:09:12.350 --> 00:09:13.058
+SPEAKER 1: Right.
+
+00:09:13.058 --> 00:09:15.390
+But you don't have to
+learn all of this, right?
+
+00:09:15.390 --> 00:09:15.890
+EVA: Yeah.
+
+00:09:15.890 --> 00:09:18.830
+That's why a lot of people are
+choosing their specialization
+
+00:09:18.830 --> 00:09:20.770
+path these days, I think.
+
+00:09:20.770 --> 00:09:23.240
+Web performance is
+one possibility.
+
+00:09:23.240 --> 00:09:27.500
+Other people focus more on
+the back end side of things.
+
+00:09:27.500 --> 00:09:29.690
+I mean, the web is
+broad, and there's
+
+00:09:29.690 --> 00:09:31.752
+space for all types of
+specialists, I guess.
+
+00:09:31.752 --> 00:09:33.960
+SPEAKER 2: I mean, that's
+where I see part of our job
+
+00:09:33.960 --> 00:09:35.335
+most, to try and
+figure out which
+
+00:09:35.335 --> 00:09:37.940
+APIs are relevant to everyone.
+
+00:09:37.940 --> 00:09:39.845
+Stuff like, for
+example, CSS Grid
+
+00:09:39.845 --> 00:09:41.720
+is probably useful to
+everyone, and everybody
+
+00:09:41.720 --> 00:09:42.845
+should take a look at that.
+
+00:09:42.845 --> 00:09:46.530
+SPEAKER 1: It is so useful, and
+I feel I only know 1% of it.
+
+00:09:46.530 --> 00:09:47.550
+And it's so powerful.
+
+00:09:47.550 --> 00:09:49.841
+SPEAKER 2: That's probably
+enough for most of the time.
+
+00:09:49.841 --> 00:09:51.290
+And then there is the niches--
+
+00:09:51.290 --> 00:09:55.265
+do you really need to
+know WebGL or WebUSB.
+
+00:09:55.265 --> 00:09:56.890
+You don't if you
+don't have a use case.
+
+00:09:56.890 --> 00:09:57.710
+SPEAKER 1: Good,
+because I don't know
+
+00:09:57.710 --> 00:09:58.834
+either of those two things.
+
+00:09:58.834 --> 00:10:00.380
+Thank you for
+validating my skills.
+
+00:10:00.380 --> 00:10:01.177
+[LAUGHS]
+
+00:10:01.177 --> 00:10:03.260
+SPEAKER 2: And that's
+something where we have been
+
+00:10:03.260 --> 00:10:05.250
+trying to also get better at--
+
+00:10:05.250 --> 00:10:07.670
+and with projects like these,
+because in these projects
+
+00:10:07.670 --> 00:10:10.380
+you figure out Grit
+was useful here,
+
+00:10:10.380 --> 00:10:12.380
+and I can see it being
+useful in more use cases.
+
+00:10:12.380 --> 00:10:14.380
+Or you find out I had
+to resort to feature
+
+00:10:14.380 --> 00:10:15.890
+x, even though I don't
+think it should be the case.
+
+00:10:15.890 --> 00:10:18.220
+Can we do something to make
+it easier for developers?
+
+00:10:18.220 --> 00:10:19.970
+EVA: I think what is
+cool about the web is
+
+00:10:19.970 --> 00:10:23.880
+there is a lot of community
+around different areas.
+
+00:10:23.880 --> 00:10:26.550
+And it's not a matter
+of being a specialist
+
+00:10:26.550 --> 00:10:29.329
+in every single area, so that
+you can have a cool project.
+
+00:10:29.329 --> 00:10:30.870
+It's when you have
+a project, and you
+
+00:10:30.870 --> 00:10:33.880
+have a particular problem
+to solve on that project,
+
+00:10:33.880 --> 00:10:35.550
+you can go out and
+find information
+
+00:10:35.550 --> 00:10:37.680
+that is relevant
+to you on a given
+
+00:10:37.680 --> 00:10:39.850
+particular moment in time.
+
+00:10:39.850 --> 00:10:42.600
+So as long as this information
+is findable, you'll be fine.
+
+00:10:42.600 --> 00:10:44.920
+You just need to know
+how to look for it.
+
+00:10:44.920 --> 00:10:46.920
+SPEAKER 2: I mean, it's
+good, though, that we're
+
+00:10:46.920 --> 00:10:48.090
+keeping an eye out--
+
+00:10:48.090 --> 00:10:52.260
+to have people like you actually
+field test this stuff so that
+
+00:10:52.260 --> 00:10:52.965
+it doesn't--
+
+00:10:52.965 --> 00:10:55.170
+it gets sooner than later.
+
+00:10:55.170 --> 00:10:56.540
+English is hard today.
+
+00:10:56.540 --> 00:10:57.280
+SPEAKER 1: Yeah.
+
+00:10:57.280 --> 00:10:57.900
+EVA: Yeah, told you.
+
+00:10:57.900 --> 00:10:59.108
+SPEAKER 1: It's getting late.
+
+00:10:59.108 --> 00:11:00.826
+EVA: It is-- these
+type of things, yeah.
+

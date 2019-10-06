@@ -1,0 +1,655 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.750 --> 00:00:03.320
+[music]
+
+00:00:13.510 --> 00:00:15.950
+Hello and welcome to part 5 of
+
+00:00:15.950 --> 00:00:20.730
+lesson 3. In this section we're going to talk
+about parallel streams
+
+00:00:20.730 --> 00:00:24.130
+and one of the things that we really
+want to get across here is
+
+00:00:24.130 --> 00:00:27.320
+when to use them, but also when not to
+use them.
+
+00:00:27.320 --> 00:00:31.520
+If we
+
+00:00:31.520 --> 00:00:35.340
+look back at how we can create stream
+sources
+
+00:00:35.340 --> 00:00:39.640
+you'll remember from lesson 2 that we
+saw that for a collection
+
+00:00:39.640 --> 00:00:43.420
+you could either create stream
+sequentially by calling the stream
+
+00:00:43.420 --> 00:00:44.140
+method
+
+00:00:44.140 --> 00:00:48.320
+or you could create parallel stream. Now
+this is the
+
+00:00:48.320 --> 00:00:52.850
+only way that you can create a parallel
+stream directly
+
+00:00:52.850 --> 00:00:57.020
+as a source. Other ways of creating
+stream sources
+
+00:00:57.020 --> 00:01:01.790
+don't allow you to create parallel one
+directly. What this provides us with
+
+00:01:01.790 --> 00:01:02.370
+is 
+
+00:01:02.370 --> 00:01:05.619
+a situation, where if we want to have a parallel
+stream
+
+00:01:05.619 --> 00:01:09.750
+but we've created it from say an array
+rather than a collection,
+
+00:01:09.750 --> 00:01:13.539
+how do we make parallel? In that case
+there is a method
+
+00:01:13.539 --> 00:01:18.179
+in the stream interface called parallel and that allows to convert
+
+00:01:18.179 --> 00:01:23.170
+sequential stream into a parallel stream.
+There's also the opposite of that,
+
+00:01:23.170 --> 00:01:26.890
+where we have a parallel stream already we
+can convert it into a sequential
+
+00:01:26.890 --> 00:01:27.590
+stream.
+
+00:01:27.590 --> 00:01:33.440
+So we can use the sequential method to
+do that. If we have multiple calls within
+
+00:01:33.440 --> 00:01:34.319
+our code
+
+00:01:34.319 --> 00:01:37.729
+where we're changing between parallel
+streams and sequential streams
+
+00:01:37.729 --> 00:01:41.289
+quite possible then whichever is the
+last
+
+00:01:41.289 --> 00:01:45.220
+call will be the one that actually wins,
+because
+
+00:01:45.220 --> 00:01:48.470
+all with the stream is going to be
+processed
+
+00:01:48.470 --> 00:01:53.590
+either sequentially or in parallel. It isn't a case of
+we'll process the first few
+
+00:01:53.590 --> 00:01:54.970
+parts in parallel
+
+00:01:54.970 --> 00:01:58.410
+then we'll switch to sequential, then we'll switch back to parallel. It doesn't work like
+
+00:01:58.410 --> 00:01:58.759
+that.
+
+00:01:58.759 --> 00:02:02.310
+Everything is either sequential or
+everything is either parallel.
+
+00:02:02.310 --> 00:02:05.700
+Whichever is the last change that you
+make
+
+00:02:05.700 --> 00:02:09.459
+to the way the stream is processed
+that will be the one
+
+00:02:09.459 --> 00:02:13.450
+which all the stream will be processed
+as.
+
+00:02:13.450 --> 00:02:16.500
+If you concantenate two streams
+
+00:02:16.500 --> 00:02:19.640
+then, if you have one of them
+
+00:02:19.640 --> 00:02:23.310
+sequential and one of them parallel, the
+result
+
+00:02:23.310 --> 00:02:29.230
+will be a parallel stream. In terms
+
+00:02:29.230 --> 00:02:32.599
+of how parallel streams are
+implemented
+
+00:02:32.599 --> 00:02:35.730
+they use the fork-join framework underneath.
+
+00:02:35.730 --> 00:02:39.269
+The library code will use the fork-join framework to
+
+00:02:39.269 --> 00:02:42.290
+break up whatever task is being handled
+
+00:02:42.290 --> 00:02:45.519
+into a number subtasks, allocate those
+
+00:02:45.519 --> 00:02:49.180
+to a pool of threads through queues, have those
+processed
+
+00:02:49.180 --> 00:02:52.379
+in parallel, take all the results when
+they're ready
+
+00:02:52.379 --> 00:02:57.750
+and create an output. The way this works
+
+00:02:57.750 --> 00:03:00.910
+is that the number of threads,
+
+00:03:00.910 --> 00:03:04.000
+which allocated in the pool, is based
+purely
+
+00:03:04.000 --> 00:03:07.769
+on how many processors the operating
+system reports.
+
+00:03:07.769 --> 00:03:11.040
+If you have a dual core machine, which
+
+00:03:11.040 --> 00:03:14.099
+also does hyper threading, you'll actually
+get
+
+00:03:14.099 --> 00:03:17.720
+four processors reported, so the pool size
+will be
+
+00:03:17.720 --> 00:03:21.609
+four threads. That may not be what you
+want.
+
+00:03:21.609 --> 00:03:24.650
+If you are running on a big machine,
+where you have
+
+00:03:24.650 --> 00:03:28.440
+many processors and many cores you may
+not want all of them
+
+00:03:28.440 --> 00:03:32.180
+dedicated to one task in one application.
+
+00:03:32.180 --> 00:03:35.660
+It's not particularly easy to
+
+00:03:35.660 --> 00:03:40.190
+to change this; so it would be nice if there was
+a simple way of doing this, but there is a 
+
+00:03:40.190 --> 00:03:41.489
+kind of work around
+
+00:03:41.489 --> 00:03:44.540
+that you can use. You can set a system
+
+00:03:44.540 --> 00:03:50.410
+property using System.setProperty and
+as you can see here you can change
+
+00:03:50.410 --> 00:03:53.620
+the common parallelism number
+
+00:03:53.620 --> 00:03:58.430
+that's associated with the fork-join pool. You can change that
+
+00:03:58.430 --> 00:04:03.180
+from any number from 0 to 32767
+
+00:04:03.180 --> 00:04:07.160
+and you can set that to be whatever you want.
+if you have 16 cores,
+
+00:04:07.160 --> 00:04:10.699
+16 processors in the machine then you
+could maybe set
+
+00:04:10.699 --> 00:04:13.049
+that to 4 or set it to 8, depending on
+
+00:04:13.049 --> 00:04:18.120
+what you want to do. One of the most
+important things about parallel streams
+
+00:04:18.120 --> 00:04:21.919
+is not to be misled by
+thinking
+
+00:04:21.919 --> 00:04:24.960
+that parallel streams will always give
+you better performance.
+
+00:04:24.960 --> 00:04:29.039
+If you have a machine with multiple cores
+and multiple processors
+
+00:04:29.039 --> 00:04:32.340
+you might be tempted to go, well I can always
+do things in parallel
+
+00:04:32.340 --> 00:04:36.139
+and that would give me better results. That's not
+necessarily the case.
+
+00:04:36.139 --> 00:04:39.240
+Because you need to remember that
+
+00:04:39.240 --> 00:04:42.910
+regardless of what happens parallel stream
+
+00:04:42.910 --> 00:04:46.680
+will always involved doing more work
+because,
+
+00:04:46.680 --> 00:04:50.539
+in the case using the fork-join framework,
+all of that
+
+00:04:50.539 --> 00:04:53.849
+has overhead. You have to set up the
+framework, set up all
+
+00:04:53.849 --> 00:04:56.900
+the threads in the pool, to allocate jobs
+to the
+
+00:04:56.900 --> 00:05:01.220
+different queues and so on. The thing about
+using
+
+00:05:01.220 --> 00:05:05.320
+parallel stream is that, although it always
+involves more work
+
+00:05:05.320 --> 00:05:09.479
+sometimes it will finish more quickly
+then if you do it sequentially.
+
+00:05:09.479 --> 00:05:13.590
+Considerations
+
+00:05:13.590 --> 00:05:17.789
+for using parallel streams and there are
+a couple of things you need to do here.
+
+00:05:17.789 --> 00:05:20.900
+We've talked about findFirst and findAny
+
+00:05:20.900 --> 00:05:24.130
+as terminal methods
+
+00:05:24.130 --> 00:05:28.740
+in the stream. I mentioned when we talk
+about that findAny
+
+00:05:28.740 --> 00:05:33.520
+is non-deterministic; what that means is
+that you have several threads,
+
+00:05:33.520 --> 00:05:37.909
+all looking for a result. Any of those
+threads
+
+00:05:37.909 --> 00:05:42.050
+can generate a result as soon as it finds
+it. That means that
+
+00:05:42.050 --> 00:05:47.870
+if you use the same input data and you
+run it several times with the same data
+
+00:05:47.870 --> 00:05:53.289
+you won't necessarily get the same
+result if you use findFirst
+
+00:05:53.289 --> 00:05:57.419
+even with the parallel stream you will get a
+deterministic result.
+
+00:05:57.419 --> 00:06:01.060
+The result for the same input stream set of data will always be the same.
+
+00:06:01.060 --> 00:06:05.180
+That's something to remember, something
+to consider when you design your stream
+
+00:06:05.180 --> 00:06:05.720
+code.
+
+00:06:05.720 --> 00:06:08.780
+Same thing with forEach
+
+00:06:08.780 --> 00:06:12.050
+and there is an equivalent method called forEachOrdered.
+
+00:06:12.050 --> 00:06:16.180
+If you use forEach and parallel stream
+
+00:06:16.180 --> 00:06:19.570
+and you have ordered data you will get
+
+00:06:19.570 --> 00:06:23.340
+non deterministic results. If you take a
+list
+
+00:06:23.340 --> 00:06:26.430
+and you call forEach on the stream from
+that list
+
+00:06:26.430 --> 00:06:30.139
+you won't necessarily if you're using
+parallel threads
+
+00:06:30.139 --> 00:06:33.600
+get the same order if you print out the
+results.
+
+00:06:33.600 --> 00:06:37.350
+If you want that then you can use forEachOrdered,
+
+00:06:37.350 --> 00:06:41.300
+which again is deterministic.
+If you take a list
+
+00:06:41.300 --> 00:06:44.979
+and create parallel stream from that
+pass it to forEachOrdered
+
+00:06:44.979 --> 00:06:48.560
+and print out the elements you always
+get beyond in the same order
+
+00:06:48.560 --> 00:06:54.680
+for the same input set. When to use
+parallel streams?
+
+00:06:54.680 --> 00:06:58.240
+Unfortunately, there isn't really a
+simple answer to this.
+
+00:06:58.240 --> 00:07:01.479
+What you need to do is consider several
+things
+
+00:07:01.479 --> 00:07:04.490
+you need to consider what type of
+
+00:07:04.490 --> 00:07:07.610
+data structure you're working with. If
+you have
+
+00:07:07.610 --> 00:07:11.940
+something like an ArrayList as the
+source of your stream that's good
+
+00:07:11.940 --> 00:07:15.860
+for parallel streams because it's easy
+to extract the data
+
+00:07:15.860 --> 00:07:19.380
+in parallel way. HashSets and TreeSets 
+
+00:07:19.380 --> 00:07:23.940
+are not as good as ArrayList but 
+they're OK. Things like a LinkedList
+
+00:07:23.940 --> 00:07:28.860
+are bad because of the fact we have
+to follow all the links down 
+
+00:07:28.860 --> 00:07:32.240
+the data structure in order to get to a
+particular value.
+
+00:07:32.240 --> 00:07:35.650
+That doesn't work well in parallel
+environment.
+
+00:07:35.650 --> 00:07:39.960
+What you do in terms of the operations on
+your stream
+
+00:07:39.960 --> 00:07:43.060
+also will have an impact on how well
+
+00:07:43.060 --> 00:07:47.270
+a parallel stream works versus sequential streams. If you're using things like
+
+00:07:47.270 --> 00:07:48.020
+filtering,
+
+00:07:48.020 --> 00:07:51.080
+if you're using things like mapping
+these are
+
+00:07:51.080 --> 00:07:55.060
+excellent for parallel streams. You can
+take those operations and
+
+00:07:55.060 --> 00:07:59.010
+you can decompose them completely into
+separate operations. The
+
+00:07:59.010 --> 00:08:02.800
+reason for that is that when you're
+doing a mapping,
+
+00:08:02.800 --> 00:08:07.669
+you're mapping each individual element;
+there's no reliance between one element
+
+00:08:07.669 --> 00:08:08.460
+in the stream
+
+00:08:08.460 --> 00:08:11.950
+and another. If you use things like
+sorted
+
+00:08:11.950 --> 00:08:15.810
+and distinct those don't decompose so
+well,
+
+00:08:15.810 --> 00:08:19.090
+because there is a reliance on other
+elements in the 
+
+00:08:19.090 --> 00:08:23.720
+input set in order to construct the
+result. If you're looking for distinct
+
+00:08:23.720 --> 00:08:24.330
+data
+
+00:08:24.330 --> 00:08:27.570
+then you've got to make sure you've compared
+every element against all
+
+00:08:27.570 --> 00:08:31.300
+other elements that you had so far in
+order to determine if its a
+
+00:08:31.300 --> 00:08:35.510
+duplicate or not.
+
+00:08:35.510 --> 00:08:37.159
+We also need to think about
+
+00:08:37.159 --> 00:08:41.690
+how much data we're using and how much time
+it takes to process each element.
+
+00:08:41.690 --> 00:08:45.090
+If you think of the size of your data set as
+being
+
+00:08:45.090 --> 00:08:50.190
+n and the cost of processing one
+element for your stream
+
+00:08:50.190 --> 00:08:53.980
+pipelines is q, then the total cost
+
+00:08:53.980 --> 00:08:58.779
+of the work involved in processing
+this is going to be n*q.
+
+00:08:58.779 --> 00:09:01.839
+The bigger the n*q
+
+00:09:01.839 --> 00:09:06.140
+is the better parallel streams going to perform.
+For giving example
+
+00:09:06.140 --> 00:09:09.430
+if you got a list with 10 elements in
+
+00:09:09.430 --> 00:09:13.310
+it and its just doing a mapping, a simple
+mapping
+
+00:09:13.310 --> 00:09:16.900
+then converting it to a parallel stream
+isn't going to
+
+00:09:16.900 --> 00:09:21.050
+improve efficiency. If you got a million
+elements
+
+00:09:21.050 --> 00:09:24.850
+in your input set and you've got
+something which is fairly heavy weight in
+
+00:09:24.850 --> 00:09:25.860
+terms of what you're doing
+
+00:09:25.860 --> 00:09:29.610
+then you'll get a lot better performance
+from parallel stream
+
+00:09:29.610 --> 00:09:32.690
+and it's easier
+
+00:09:32.690 --> 00:09:35.940
+to determine n, because you can find out
+size of your data set
+
+00:09:35.940 --> 00:09:39.830
+easily, but q can be quite difficult.
+
+00:09:39.830 --> 00:09:44.050
+You tend to end up estimating it. What
+you really need to do 
+
+00:09:44.050 --> 00:09:48.339
+to ensure that you make the correct
+decision about where to use a parallel stream
+
+00:09:48.339 --> 00:09:49.040
+or not is to 
+
+00:09:49.040 --> 00:09:52.839
+profile. Try it with a sequential stream, try it with parallel stream
+
+00:09:52.839 --> 00:09:58.950
+and use whichever one is more efficient.
+To summarise section 5
+
+00:09:58.950 --> 00:10:03.660
+streams, as we have seen can be
+processed sequentially or they can be
+
+00:10:03.660 --> 00:10:04.620
+processed in parallel.
+
+00:10:04.620 --> 00:10:08.920
+When we say that we can switch
+between sequential
+
+00:10:08.920 --> 00:10:14.250
+or parallel in the middle of a stream, but
+the stream will be processed
+
+00:10:14.250 --> 00:10:17.390
+either completely sequentially or
+completely in parallel.
+
+00:10:17.390 --> 00:10:21.140
+Most cases when we use a stream
+
+00:10:21.140 --> 00:10:25.830
+how you define it won't effect the
+result; whether you do it sequentially or in parallel won't effect the
+
+00:10:25.830 --> 00:10:26.300
+result.
+
+00:10:26.300 --> 00:10:29.720
+For findFirst, findAny, forEach and
+
+00:10:29.720 --> 00:10:34.020
+forEachOrdered they will affect the
+order of the results.
+
+00:10:34.020 --> 00:10:37.540
+And the big thing here it don't assume a
+
+00:10:37.540 --> 00:10:40.580
+parallel stream will always return a
+faster result.
+
+00:10:40.580 --> 00:10:43.139
+As we've seen a number of factors that
+affect that
+
+00:10:43.139 --> 00:10:46.910
+and be careful in terms your choice
+
+00:10:46.910 --> 00:10:50.209
+to make sure that you're using whichever is
+the most efficient.
+
+00:10:50.209 --> 00:10:53.629
+And that is the end of this part of the lesson.
+

@@ -1,0 +1,1204 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.302
+[MUSIC PLAYING]
+
+00:00:10.040 --> 00:00:12.930
+ADDY: So today we're going
+to do an episode about--
+
+00:00:12.930 --> 00:00:14.139
+MATT: Tools.
+
+00:00:14.139 --> 00:00:14.930
+ADDY: Big surprise.
+
+00:00:14.930 --> 00:00:16.369
+MATT: But this is going
+to be a roundup of some
+
+00:00:16.369 --> 00:00:18.243
+of the tools that we've
+been using that we've
+
+00:00:18.243 --> 00:00:20.270
+kind of discovered
+in 2017, and things
+
+00:00:20.270 --> 00:00:21.510
+we are still using today.
+
+00:00:21.510 --> 00:00:23.270
+ADDY: All right,
+let's take a look.
+
+00:00:23.270 --> 00:00:25.400
+All I want for Christmas
+is a new tab key,
+
+00:00:25.400 --> 00:00:27.840
+because my tab key broke.
+
+00:00:27.840 --> 00:00:31.130
+MATT: But you now get to skip
+the whole tabs versus spaces
+
+00:00:31.130 --> 00:00:33.420
+argument, because you
+can only use spaces,
+
+00:00:33.420 --> 00:00:35.390
+which is the right choice.
+
+00:00:35.390 --> 00:00:36.260
+ADDY: Yes.
+
+00:00:36.260 --> 00:00:36.830
+Moving on.
+
+00:00:36.830 --> 00:00:39.720
+So we've been using
+visual code quite a lot,
+
+00:00:39.720 --> 00:00:42.199
+VSCode quite a lot in our
+team over the last year.
+
+00:00:42.199 --> 00:00:44.240
+I love it for its
+configurability, really, really
+
+00:00:44.240 --> 00:00:45.390
+decent performance as well.
+
+00:00:45.390 --> 00:00:47.840
+And it's got this huge
+ecosystem of plug-ins.
+
+00:00:47.840 --> 00:00:49.310
+MATT: So many plug-ins, yes.
+
+00:00:49.310 --> 00:00:50.870
+But they're also adding
+a ton of new features.
+
+00:00:50.870 --> 00:00:53.210
+So let's start off with the
+first plug-in-- import-cost.
+
+00:00:53.210 --> 00:00:55.126
+ADDY: import-cost.
+import-cost is really nice,
+
+00:00:55.126 --> 00:00:57.200
+because whenever you're
+requiring or importing
+
+00:00:57.200 --> 00:00:59.074
+in a module, inline
+it'll show you
+
+00:00:59.074 --> 00:01:01.240
+exactly what the size of
+that module is going to be.
+
+00:01:01.240 --> 00:01:03.829
+Including the gzip size,
+really useful for evaluating
+
+00:01:03.829 --> 00:01:06.120
+whether the cost of that
+thing is going to be worth it.
+
+00:01:06.120 --> 00:01:07.700
+MATT: And plus,
+with Lodash, where
+
+00:01:07.700 --> 00:01:09.840
+you could import all
+of Lodash versus import
+
+00:01:09.840 --> 00:01:11.000
+a particular function,
+you can actually
+
+00:01:11.000 --> 00:01:12.916
+see the size difference,
+which is really nice.
+
+00:01:12.916 --> 00:01:15.680
+Especially as we start
+using ES2015 modules.
+
+00:01:15.680 --> 00:01:16.340
+ADDY: Exactly.
+
+00:01:16.340 --> 00:01:18.330
+Next up, we've got
+inline git-diff.
+
+00:01:18.330 --> 00:01:20.840
+MATT: And this is baked into
+VSCode, and it's super helpful.
+
+00:01:20.840 --> 00:01:23.450
+Basically if you have anything
+like a merge conflict,
+
+00:01:23.450 --> 00:01:25.250
+it really nicely
+highlights everything.
+
+00:01:25.250 --> 00:01:27.249
+It gives you a set of
+options that relate to it.
+
+00:01:27.249 --> 00:01:29.120
+So you could select,
+OK, I want the latest
+
+00:01:29.120 --> 00:01:31.310
+from the remote branch
+versus what I've got here.
+
+00:01:31.310 --> 00:01:33.304
+And it's just a
+really nice feature.
+
+00:01:33.304 --> 00:01:34.970
+ADDY: I've been using
+this a lot lately.
+
+00:01:34.970 --> 00:01:36.553
+Another really big
+feature that landed
+
+00:01:36.553 --> 00:01:39.620
+this year was support for
+leveraging some of VSCode's
+
+00:01:39.620 --> 00:01:42.830
+TypeScript type checking
+features in regular JavaScript
+
+00:01:42.830 --> 00:01:45.350
+just by opting in using
+this ts-check comment.
+
+00:01:45.350 --> 00:01:47.540
+MATT: And this is using
+the JS doc comments, right?
+
+00:01:47.540 --> 00:01:50.799
+So it can infer from what it
+knows from the JS doc comments
+
+00:01:50.799 --> 00:01:52.340
+the types of variables
+and figure out
+
+00:01:52.340 --> 00:01:54.609
+if what you're calling,
+passing in, or getting out
+
+00:01:54.609 --> 00:01:56.400
+is actually what you're
+expect to call out.
+
+00:01:56.400 --> 00:01:59.010
+ADDY: And we're using this over
+on the Lighthouse team as well.
+
+00:01:59.010 --> 00:01:59.718
+It's pretty cool.
+
+00:01:59.718 --> 00:02:00.440
+MATT: Nice.
+
+00:02:00.440 --> 00:02:03.200
+ADDY: Next up let's
+talk about bundling.
+
+00:02:03.200 --> 00:02:05.610
+So we've been using
+Babel quite a lot
+
+00:02:05.610 --> 00:02:08.630
+for pretty much everything.
+
+00:02:08.630 --> 00:02:10.160
+Something I've been
+using lately is
+
+00:02:10.160 --> 00:02:13.660
+the inverse of Babel, Lebab.io.
+
+00:02:13.660 --> 00:02:16.460
+And what this allows you to do
+is convert your existing ES5
+
+00:02:16.460 --> 00:02:19.700
+code to ES2015 plus.
+
+00:02:19.700 --> 00:02:21.380
+MATT: How good is this?
+
+00:02:21.380 --> 00:02:23.200
+ADDY: It's pretty all right.
+
+00:02:23.200 --> 00:02:25.700
+It's been especially good
+for converting code over
+
+00:02:25.700 --> 00:02:28.580
+to classes, arrow
+functions, things like that.
+
+00:02:28.580 --> 00:02:31.074
+I found the margin of error
+to be relatively small,
+
+00:02:31.074 --> 00:02:32.990
+like the number of tweaks
+that I have to go in
+
+00:02:32.990 --> 00:02:34.100
+and kind of fix up.
+
+00:02:34.100 --> 00:02:35.330
+MATT: If you've got a big
+enough codebase where you're
+
+00:02:35.330 --> 00:02:37.330
+doing this that actually
+an automated tool would
+
+00:02:37.330 --> 00:02:39.890
+help humongously just
+to get in there quickly.
+
+00:02:39.890 --> 00:02:40.390
+Nice.
+
+00:02:40.390 --> 00:02:43.100
+ADDY: Babel-preset-env
+is another thing
+
+00:02:43.100 --> 00:02:44.490
+we've been using a lot lately.
+
+00:02:44.490 --> 00:02:46.840
+MATT: Yes, so back in the
+day, you used to use Babel 1.
+
+00:02:46.840 --> 00:02:49.622
+It would convert everything
+to polyfills or code
+
+00:02:49.622 --> 00:02:51.080
+that would run in
+all the browsers.
+
+00:02:51.080 --> 00:02:54.324
+babel-preset-env, you define
+what browser support you want.
+
+00:02:54.324 --> 00:02:56.740
+So you could say Chrome, and
+I want the last two versions.
+
+00:02:56.740 --> 00:02:58.760
+And the nice thing with
+this is it would just
+
+00:02:58.760 --> 00:03:00.740
+compile the things that
+actually needed to be
+
+00:03:00.740 --> 00:03:02.780
+changed rather than everything.
+
+00:03:02.780 --> 00:03:03.502
+ADDY: Exactly.
+
+00:03:03.502 --> 00:03:04.710
+Looks a little bit like this.
+
+00:03:04.710 --> 00:03:06.168
+We've got you
+covered for both ways
+
+00:03:06.168 --> 00:03:07.470
+to pronounce babel as well.
+
+00:03:07.470 --> 00:03:10.372
+I pronounce it babel, and
+you pronounce it babel.
+
+00:03:10.372 --> 00:03:12.080
+MATT: Sam Saccone told
+me how to do this,
+
+00:03:12.080 --> 00:03:13.160
+and I've already forgotten.
+
+00:03:13.160 --> 00:03:13.520
+ADDY: It's OK.
+
+00:03:13.520 --> 00:03:14.110
+You're both wrong.
+
+00:03:14.110 --> 00:03:14.610
+MATT: Yes.
+
+00:03:14.610 --> 00:03:15.590
+ADDY: Webpack.
+
+00:03:15.590 --> 00:03:17.710
+So Webpack has been pretty
+popular this last year,
+
+00:03:17.710 --> 00:03:19.430
+continuous gain in popularity.
+
+00:03:19.430 --> 00:03:21.062
+Webpack 3 came out.
+
+00:03:21.062 --> 00:03:22.770
+One of the nice features
+that it included
+
+00:03:22.770 --> 00:03:25.260
+was a feature called
+scoop hoisting.
+
+00:03:25.260 --> 00:03:26.600
+MATT: Sounds fun.
+
+00:03:26.600 --> 00:03:27.620
+ADDY: Sounds great.
+
+00:03:27.620 --> 00:03:30.062
+So in earlier
+versions of Webpack,
+
+00:03:30.062 --> 00:03:31.520
+when you were
+working with modules,
+
+00:03:31.520 --> 00:03:33.890
+it would wrap those
+functions-- it would wrap them
+
+00:03:33.890 --> 00:03:37.460
+into functions that isolated
+the scope of those modules.
+
+00:03:37.460 --> 00:03:39.710
+Imports would get
+translated into variables
+
+00:03:39.710 --> 00:03:42.890
+that would hold the result of
+a Webpack require function.
+
+00:03:42.890 --> 00:03:46.010
+And what Webpack 3 is able to do
+using the module concatenation
+
+00:03:46.010 --> 00:03:49.850
+plug-in is basically
+flatten those import chains
+
+00:03:49.850 --> 00:03:52.370
+and, on the whole, reduce
+the size of the bundles
+
+00:03:52.370 --> 00:03:53.396
+that it's generating.
+
+00:03:53.396 --> 00:03:54.770
+One of the nice
+things about this
+
+00:03:54.770 --> 00:03:56.596
+is that for production
+apps like Tinder,
+
+00:03:56.596 --> 00:03:58.220
+they were able to
+use this and actually
+
+00:03:58.220 --> 00:04:00.142
+reduce parsing time by 8%.
+
+00:04:00.142 --> 00:04:01.600
+So they're like
+JavaScript bundles.
+
+00:04:01.600 --> 00:04:03.600
+MATT: So they actually
+got a file size reduction
+
+00:04:03.600 --> 00:04:06.500
+and a parse time reduction as
+well, which is super awesome.
+
+00:04:06.500 --> 00:04:07.700
+ADDY: Super awesome.
+
+00:04:07.700 --> 00:04:09.350
+Next up, we've got DevTools.
+
+00:04:09.350 --> 00:04:10.310
+MATT: Always evolving.
+
+00:04:10.310 --> 00:04:11.842
+ADDY: Everybody loves DevTools.
+
+00:04:11.842 --> 00:04:13.800
+This year, one of the
+bigger things that landed
+
+00:04:13.800 --> 00:04:15.077
+was support for Lighthouse.
+
+00:04:15.077 --> 00:04:16.910
+MATT: It's actually
+baked into DevTools now,
+
+00:04:16.910 --> 00:04:17.852
+which is really nice.
+
+00:04:17.852 --> 00:04:18.560
+ADDY: Yes, it is.
+
+00:04:18.560 --> 00:04:20.267
+And it's available
+in Chrome Stable.
+
+00:04:20.267 --> 00:04:22.850
+So if you want to do performance
+audits, accessibility audits,
+
+00:04:22.850 --> 00:04:24.889
+best product audits,
+all of it is available.
+
+00:04:24.889 --> 00:04:26.055
+MATT: Everything's in there.
+
+00:04:26.055 --> 00:04:28.860
+ADDY: Code Coverage--
+so what's this?
+
+00:04:28.860 --> 00:04:30.860
+MATT: So basically as you
+load up your web page,
+
+00:04:30.860 --> 00:04:32.300
+you pull in a ton of JavaScript.
+
+00:04:32.300 --> 00:04:33.900
+Code Coverage
+would then say, OK,
+
+00:04:33.900 --> 00:04:34.630
+this is the amount
+of the JavaScript
+
+00:04:34.630 --> 00:04:36.470
+you actually used versus
+the amount of stuff
+
+00:04:36.470 --> 00:04:37.306
+that isn't used.
+
+00:04:37.306 --> 00:04:38.930
+Now, the nice thing
+with this is if you
+
+00:04:38.930 --> 00:04:41.079
+start interacting with the
+page, the Code Coverage
+
+00:04:41.079 --> 00:04:42.120
+actually starts changing.
+
+00:04:42.120 --> 00:04:44.330
+So let's say you had a
+login flow that was super
+
+00:04:44.330 --> 00:04:45.800
+important to your website.
+
+00:04:45.800 --> 00:04:47.600
+You would actually want to
+sit there and log in, and then
+
+00:04:47.600 --> 00:04:49.766
+see how much of the code
+was used and how much of it
+
+00:04:49.766 --> 00:04:51.020
+was remaining after that.
+
+00:04:51.020 --> 00:04:53.090
+So this actually helps
+you figure all that out.
+
+00:04:53.090 --> 00:04:53.450
+ADDY: It's great.
+
+00:04:53.450 --> 00:04:54.908
+And one of the nice
+things about it
+
+00:04:54.908 --> 00:04:57.710
+is if you click through to any
+of these red and green bars,
+
+00:04:57.710 --> 00:04:59.690
+it'll actually show you
+in the Sources panel
+
+00:04:59.690 --> 00:05:03.060
+the original script with a line
+down the side of what is red,
+
+00:05:03.060 --> 00:05:05.192
+what was executed,
+what wasn't executed.
+
+00:05:05.192 --> 00:05:06.755
+Really nice.
+
+00:05:06.755 --> 00:05:08.880
+Another thing that was
+popular this year, CSS Grid.
+
+00:05:08.880 --> 00:05:09.990
+MATT: So popular.
+
+00:05:09.990 --> 00:05:11.310
+People were so happy for this.
+
+00:05:11.310 --> 00:05:11.810
+ADDY: Yeah.
+
+00:05:11.810 --> 00:05:14.220
+It's got decent
+cross-browser support now.
+
+00:05:14.220 --> 00:05:17.220
+Lots of good material by
+Rachel Andrew and Wes Bos.
+
+00:05:17.220 --> 00:05:18.900
+The Firefox Devtools
+did a great job
+
+00:05:18.900 --> 00:05:20.680
+of introducing CSS
+Grid highlighting.
+
+00:05:20.680 --> 00:05:21.640
+MATT: It's so pretty.
+
+00:05:21.640 --> 00:05:23.992
+And Wes Bos has
+done a tweet-- we'll
+
+00:05:23.992 --> 00:05:25.950
+put it the description--
+where he explains what
+
+00:05:25.950 --> 00:05:27.840
+all the lines in this mean.
+
+00:05:27.840 --> 00:05:29.710
+And it looks stunning,
+trying to figure out,
+
+00:05:29.710 --> 00:05:30.840
+especially if you
+are new, learning
+
+00:05:30.840 --> 00:05:32.100
+what everything's doing.
+
+00:05:32.100 --> 00:05:33.960
+ADDY: And we've also
+got support for this
+
+00:05:33.960 --> 00:05:35.214
+in the Chrome DevTools.
+
+00:05:35.214 --> 00:05:35.880
+MATT: Of course.
+
+00:05:35.880 --> 00:05:37.120
+ADDY: Of course we do.
+
+00:05:37.120 --> 00:05:37.980
+Puppeteer.
+
+00:05:37.980 --> 00:05:40.740
+So this year we also
+introduced Puppeteer.
+
+00:05:40.740 --> 00:05:43.020
+It's a Node library which
+provides a high level
+
+00:05:43.020 --> 00:05:45.630
+API to control Chrome
+headless over the DevTools
+
+00:05:45.630 --> 00:05:46.980
+remote debugging protocol.
+
+00:05:46.980 --> 00:05:49.370
+Really nice for scripting
+a bunch of things.
+
+00:05:49.370 --> 00:05:52.710
+So if you want to script
+loading up a web page,
+
+00:05:52.710 --> 00:05:55.260
+taking a screenshot of it,
+converting it to a PDF,
+
+00:05:55.260 --> 00:05:56.550
+logging in, you could do that.
+
+00:05:56.550 --> 00:05:57.840
+MATT: I mean, if you
+want it to do those,
+
+00:05:57.840 --> 00:06:00.644
+like, you compare two images
+and figure out what amount of it
+
+00:06:00.644 --> 00:06:02.310
+changed, this would
+be perfect for that.
+
+00:06:02.310 --> 00:06:05.490
+Two screen shots, same
+browser, bonk, what's changed?
+
+00:06:05.490 --> 00:06:08.130
+ADDY: Nice for testing, nice
+for scraping content from sites.
+
+00:06:08.130 --> 00:06:08.430
+Next up.
+
+00:06:08.430 --> 00:06:09.900
+We've got continuous
+integration,
+
+00:06:09.900 --> 00:06:10.830
+your favorite topic.
+
+00:06:10.830 --> 00:06:12.460
+MATT: Yes, I'm so
+excited about this.
+
+00:06:12.460 --> 00:06:15.150
+So Travis came out
+with this beta feature
+
+00:06:15.150 --> 00:06:17.202
+called Travis Build Stages.
+
+00:06:17.202 --> 00:06:19.410
+So you used to be able to
+have it where in Travis you
+
+00:06:19.410 --> 00:06:21.300
+could define multiple builds,
+and it would just do them one
+
+00:06:21.300 --> 00:06:21.960
+after the other.
+
+00:06:21.960 --> 00:06:23.709
+Stages means you could
+say, well, actually
+
+00:06:23.709 --> 00:06:25.320
+I want these number
+of tests to run.
+
+00:06:25.320 --> 00:06:27.600
+And then after that I want
+to do a deploy script,
+
+00:06:27.600 --> 00:06:30.842
+or I want a GitHub comment
+bot, or X number of stages.
+
+00:06:30.842 --> 00:06:32.300
+So this is really
+nice, because you
+
+00:06:32.300 --> 00:06:36.300
+can start reorganizing your
+Travis file into chunks.
+
+00:06:36.300 --> 00:06:37.350
+It's still in beta.
+
+00:06:37.350 --> 00:06:39.070
+They're on the second
+iteration of this,
+
+00:06:39.070 --> 00:06:40.416
+but I am super excited.
+
+00:06:40.416 --> 00:06:41.150
+So good.
+
+00:06:41.150 --> 00:06:42.390
+ADDY: Was it hard to set up?
+
+00:06:42.390 --> 00:06:43.974
+MATT: No, it was
+actually pretty easy.
+
+00:06:43.974 --> 00:06:46.098
+The thing was just the
+formatting gets a little bit
+
+00:06:46.098 --> 00:06:48.120
+wonky depending on how
+advanced you want to get
+
+00:06:48.120 --> 00:06:50.144
+in terms of nesting stages.
+
+00:06:50.144 --> 00:06:50.825
+ADDY: Nice.
+
+00:06:50.825 --> 00:06:53.200
+Another thing that we've seen
+quite a few different tools
+
+00:06:53.200 --> 00:06:55.860
+spread out for is performance
+budgets and performance budget
+
+00:06:55.860 --> 00:06:56.410
+tracking.
+
+00:06:56.410 --> 00:07:00.485
+MATT: Yes, like Bundlesize
+is obviously super popular.
+
+00:07:00.485 --> 00:07:01.860
+We've been using
+it, and WorkBox,
+
+00:07:01.860 --> 00:07:03.234
+like a similar
+incantation of it.
+
+00:07:03.234 --> 00:07:05.640
+And it's immensely helpful
+for just saying, oh,
+
+00:07:05.640 --> 00:07:08.820
+this PR has grown the
+size of this by X amount.
+
+00:07:08.820 --> 00:07:11.949
+Or this PR is purely to reduce
+the file size or something.
+
+00:07:11.949 --> 00:07:13.740
+And then you can actually
+see it in the PR.
+
+00:07:13.740 --> 00:07:15.948
+ADDY: Really great for
+holding your team accountable.
+
+00:07:15.948 --> 00:07:16.805
+MATT: Yes.
+
+00:07:16.805 --> 00:07:18.180
+ADDY: Next up
+we've got design, I
+
+00:07:18.180 --> 00:07:19.440
+thought it was important
+for us to also talk
+
+00:07:19.440 --> 00:07:21.840
+about the bridge improving
+between designers
+
+00:07:21.840 --> 00:07:22.780
+and developers.
+
+00:07:22.780 --> 00:07:24.330
+I use Sketch quite
+a lot whenever
+
+00:07:24.330 --> 00:07:27.800
+I'm building prototypes,
+trying to sketch out UIs.
+
+00:07:27.800 --> 00:07:29.670
+And something I came
+across was a plug-in
+
+00:07:29.670 --> 00:07:30.960
+for Sketch and ImageOptim.
+
+00:07:30.960 --> 00:07:34.020
+So ImageOptim is this
+free desktop app for Mac
+
+00:07:34.020 --> 00:07:35.750
+that can optimize
+your images, has
+
+00:07:35.750 --> 00:07:38.820
+support for mozjpeg,
+modern compression schemes.
+
+00:07:38.820 --> 00:07:41.670
+What this hook does is whenever
+you are exporting images
+
+00:07:41.670 --> 00:07:44.280
+from Sketch to share with
+other people or deploy,
+
+00:07:44.280 --> 00:07:46.890
+it'll actually automatically
+run it through ImageOptim.
+
+00:07:46.890 --> 00:07:49.890
+So you've got the reduced number
+of bytes right off the bat.
+
+00:07:49.890 --> 00:07:51.480
+MATT: So you
+technically can't really
+
+00:07:51.480 --> 00:07:53.854
+export an image
+without it basically
+
+00:07:53.854 --> 00:07:55.770
+being as small as it can
+be right off the bat.
+
+00:07:55.770 --> 00:07:57.660
+ADDY: Right now I don't believe
+that's the case in Sketch.
+
+00:07:57.660 --> 00:07:58.550
+They should fix it.
+
+00:07:58.550 --> 00:07:59.330
+MATT: They should.
+
+00:07:59.330 --> 00:08:02.112
+But either way, if it
+simplifies it, awesome.
+
+00:08:02.112 --> 00:08:03.570
+ADDY: Another thing
+I really wanted
+
+00:08:03.570 --> 00:08:06.870
+to give a nod to was some work
+by the Airbnb team, John Gold,
+
+00:08:06.870 --> 00:08:08.310
+on React Sketch.
+
+00:08:08.310 --> 00:08:10.080
+So this is a really
+interesting project
+
+00:08:10.080 --> 00:08:12.390
+where it's tailor-made
+for design systems.
+
+00:08:12.390 --> 00:08:15.570
+The idea is that you're able
+to take your React components,
+
+00:08:15.570 --> 00:08:17.520
+your React style
+guides, and convert it
+
+00:08:17.520 --> 00:08:20.880
+into a sketch file with
+layers and everything,
+
+00:08:20.880 --> 00:08:23.972
+where your designers can then
+go and take a look at it.
+
+00:08:23.972 --> 00:08:26.430
+And it's interesting, right,
+because this is the first time
+
+00:08:26.430 --> 00:08:28.922
+that this has been done code
+to sketch, rather than--
+
+00:08:28.922 --> 00:08:30.630
+MATT: Yeah, you always
+see the other way.
+
+00:08:30.630 --> 00:08:33.659
+Where you see a design or
+something, and then it gets
+
+00:08:33.659 --> 00:08:35.520
+converted to HTML
+or something else.
+
+00:08:35.520 --> 00:08:38.480
+So it's nice to see it
+go the other way around.
+
+00:08:38.480 --> 00:08:39.150
+Super clever.
+
+00:08:39.150 --> 00:08:39.710
+Smart.
+
+00:08:39.710 --> 00:08:41.370
+ADDY: And React, in this
+case, provides a nice wrapper
+
+00:08:41.370 --> 00:08:43.080
+for building those
+reusable components.
+
+00:08:43.080 --> 00:08:44.380
+Next up we've got scaffolding.
+
+00:08:44.380 --> 00:08:46.576
+On One of our favorite
+things this year was NPMX.
+
+00:08:46.576 --> 00:08:47.950
+MATT: This is
+really interesting.
+
+00:08:47.950 --> 00:08:51.690
+So someone was talking about
+this at a WaffleJS meetup.
+
+00:08:51.690 --> 00:08:54.780
+And the idea behind this is
+there's tons of examples,
+
+00:08:54.780 --> 00:08:57.960
+npm install yo and
+generate a web app.
+
+00:08:57.960 --> 00:09:02.430
+And then the following
+step would be yo web app.
+
+00:09:02.430 --> 00:09:05.557
+The idea with NPMX is
+you pass in the command
+
+00:09:05.557 --> 00:09:06.390
+that you want to do.
+
+00:09:06.390 --> 00:09:08.365
+And it figures out, well,
+OK, you've tried to run yo,
+
+00:09:08.365 --> 00:09:09.930
+but I need to go
+grab the yo package.
+
+00:09:09.930 --> 00:09:11.670
+And you tried to
+run web app, and I
+
+00:09:11.670 --> 00:09:13.580
+know I need to generate
+the web app package.
+
+00:09:13.580 --> 00:09:15.330
+So it'll do the npm
+install script for you
+
+00:09:15.330 --> 00:09:18.430
+and then immediately
+run the bit afterwards.
+
+00:09:18.430 --> 00:09:20.940
+And in the blog post for NPMX,
+and I haven't tried this,
+
+00:09:20.940 --> 00:09:24.570
+but apparently you can go
+NPMX and then like a gist URL.
+
+00:09:24.570 --> 00:09:26.940
+And it would just run
+the commands in there.
+
+00:09:26.940 --> 00:09:28.987
+I mean, granted, you
+have to trust the gist.
+
+00:09:28.987 --> 00:09:30.820
+But that's kind of a
+nice way of being like,
+
+00:09:30.820 --> 00:09:32.490
+hey, if you want to set
+this thing up, here you go.
+
+00:09:32.490 --> 00:09:33.420
+Here's the command to do it.
+
+00:09:33.420 --> 00:09:34.590
+ADDY: So if you're
+ever in a situation
+
+00:09:34.590 --> 00:09:35.970
+where you want to
+run a CLI tool,
+
+00:09:35.970 --> 00:09:38.428
+but you don't want install it
+globally just to run it once,
+
+00:09:38.428 --> 00:09:39.672
+NPMX is for you.
+
+00:09:39.672 --> 00:09:41.130
+Another thing we've
+seen this year,
+
+00:09:41.130 --> 00:09:44.760
+lots of CLIs to create
+React, react-cli, vue-cli.
+
+00:09:44.760 --> 00:09:46.800
+All of them have gained
+first class support
+
+00:09:46.800 --> 00:09:49.424
+for scaffolding out a
+progressive web app.
+
+00:09:49.424 --> 00:09:51.090
+MATT: You create a
+new project and boom.
+
+00:09:51.090 --> 00:09:53.160
+You're good to go with a
+service worker and everything.
+
+00:09:53.160 --> 00:09:54.750
+ADDY: Lots of cool
+stuff to see there.
+
+00:09:54.750 --> 00:09:57.000
+And finally we've got
+command line tips.
+
+00:09:57.000 --> 00:09:58.834
+MATT: You can't
+have a TTT summary
+
+00:09:58.834 --> 00:10:00.500
+of the year without
+at least the command
+
+00:10:00.500 --> 00:10:01.992
+line being mentioned once.
+
+00:10:01.992 --> 00:10:04.200
+ADDY: So I don't use the
+command line quite as often,
+
+00:10:04.200 --> 00:10:06.700
+because I'm now a manager, and
+I just send emails instead of--
+
+00:10:06.700 --> 00:10:07.940
+MATT: You don't do code anymore.
+
+00:10:07.940 --> 00:10:08.440
+I know.
+
+00:10:08.440 --> 00:10:09.092
+It's fine.
+
+00:10:09.092 --> 00:10:09.800
+ADDY: But you do.
+
+00:10:09.800 --> 00:10:12.230
+And so CommandLineFu is a
+site that you can check out.
+
+00:10:12.230 --> 00:10:14.688
+It's got, like, a stack ranked
+list of all the command line
+
+00:10:14.688 --> 00:10:16.070
+tips, really neat
+for remembering
+
+00:10:16.070 --> 00:10:17.780
+those things that you've
+probably tweeted at some point
+
+00:10:17.780 --> 00:10:18.320
+and forgot.
+
+00:10:18.320 --> 00:10:19.280
+MATT: Yeah, it's super nice.
+
+00:10:19.280 --> 00:10:20.404
+Add them to your dot files.
+
+00:10:20.404 --> 00:10:21.450
+They're all handy.
+
+00:10:21.450 --> 00:10:22.974
+ADDY: So that's it for our tips.
+
+00:10:22.974 --> 00:10:24.890
+MATT: Yeah, hopefully
+you can try some of them
+
+00:10:24.890 --> 00:10:27.080
+out over your holiday period.
+
+00:10:27.080 --> 00:10:28.490
+Otherwise, happy holidays.
+
+00:10:28.490 --> 00:10:30.420
+ADDY: Someone send
+me a new tab key.
+
+00:10:30.420 --> 00:10:32.520
+MATT: Don't do it.
+
+00:10:32.520 --> 00:10:36.470
+[MUSIC PLAYING]
+

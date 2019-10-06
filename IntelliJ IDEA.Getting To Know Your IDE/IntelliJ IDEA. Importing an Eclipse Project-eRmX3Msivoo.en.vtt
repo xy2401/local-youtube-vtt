@@ -1,0 +1,119 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.003 --> 00:00:05.000
+IMPORTING AN ECLIPSE PROJECT
+
+00:00:06.153 --> 00:00:08.250
+Welcome to IntelliJ IDEA basics.
+
+00:00:08.430 --> 00:00:11.716
+We're going to import
+a new Eclipse project into IntelliJ IDEA.
+
+00:00:11.893 --> 00:00:16.600
+I've already created the project,
+so I'll select 'Import Project'
+
+00:00:16.953 --> 00:00:21.695
+and I'll select my project
+jboss-as-kitchensink.
+
+00:00:22.385 --> 00:00:23.600
+I'll open that up
+
+00:00:23.800 --> 00:00:27.330
+and the wizard will guide me
+through the process.
+
+00:00:27.396 --> 00:00:32.950
+We support importing an Eclipse model,
+so we'll select that and click 'Next'.
+
+00:00:33.391 --> 00:00:34.966
+There are a few options to choose from.
+
+00:00:35.036 --> 00:00:40.163
+You'll select your directory here,
+we can refine that if it's a subdirectory
+
+00:00:40.450 --> 00:00:44.608
+and you can add a module file
+near the classpath.
+
+00:00:45.540 --> 00:00:53.350
+It can be either an idea (directory based)
+or an ipr (file based) project format.
+
+00:00:53.825 --> 00:00:57.433
+Finally, we can create a link
+between IntelliJ IDEA and Eclipse
+
+00:00:57.503 --> 00:01:02.066
+so, if you have team members
+using Eclipse and you use IntelliJ IDEA,
+
+00:01:02.253 --> 00:01:05.628
+you can link those two together
+so that, whenever you add a module,
+
+00:01:05.900 --> 00:01:09.586
+that'll create a new Eclipse project
+and viceversa.
+
+00:01:09.800 --> 00:01:13.095
+It'll keep those in synch
+if we add this link here.
+
+00:01:13.445 --> 00:01:17.983
+We can add a regular expression or pattern
+to detect certain test sources
+
+00:01:18.391 --> 00:01:20.846
+and so it'll identify those
+if we have any.
+
+00:01:21.178 --> 00:01:24.811
+We'll click 'Next' and select
+the Eclipse projects to import.
+
+00:01:24.880 --> 00:01:29.705
+Each Eclipse project will correspond
+to an IntelliJ IDEA module.
+
+00:01:30.256 --> 00:01:35.535
+To reload the project after importing it,
+we can select 'Open Project Structure'
+
+00:01:35.603 --> 00:01:40.306
+to configure our project structure
+so we'll click 'Next' and select the JDK.
+
+00:01:40.961 --> 00:01:44.630
+I'll just use 1.6 here.
+We'll wait for it to start up
+
+00:01:45.003 --> 00:01:51.113
+and we'll configure our project structure
+by adding sources, paths and dependencies.
+
+00:01:51.826 --> 00:01:54.325
+Finally, we’ll click
+‘Apply’ and then ‘OK’.
+
+00:01:54.638 --> 00:01:58.193
+Our Eclipse project
+is now imported into IntelliJ IDEA
+
+00:01:58.268 --> 00:02:03.338
+with one additional IDEA module file
+next to the corresponding project file.
+
+00:02:04.020 --> 00:02:07.066
+That's it. Thanks for watching
+and develop with pleasure!
+
+00:02:07.181 --> 00:02:12.300
+THANKS FOR WATCHING!
+

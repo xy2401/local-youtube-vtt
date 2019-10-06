@@ -1,0 +1,1476 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.624
+JAKE: For the rest
+of the podcast, now,
+
+00:00:01.624 --> 00:00:03.210
+you're just going
+to a high pitched--
+
+00:00:03.210 --> 00:00:04.440
+for anything I say.
+
+00:00:04.440 --> 00:00:05.940
+SURMA: That's what
+you sounded like.
+
+00:00:05.940 --> 00:00:09.116
+[HIGH PITCHED ME SOUNDS]
+
+00:00:09.116 --> 00:00:11.012
+[MUSIC PLAYING]
+
+00:00:15.760 --> 00:00:19.720
+JAKE: So-- official starting
+word of any HTTP203 episode.
+
+00:00:19.720 --> 00:00:23.890
+I've been having a look through
+some of the TT 39 proposals.
+
+00:00:23.890 --> 00:00:24.930
+SURMA: Oh no.
+
+00:00:24.930 --> 00:00:25.730
+JAKE: Oh yes.
+
+00:00:25.730 --> 00:00:28.390
+And these are the ones which
+are kind of like stage 0,
+
+00:00:28.390 --> 00:00:31.130
+stage 1, like the
+really early stuff.
+
+00:00:31.130 --> 00:00:32.109
+SURMA: OK.
+
+00:00:32.109 --> 00:00:35.405
+JAKE: So I would like the Surma
+score for each of these things
+
+00:00:35.405 --> 00:00:36.550
+that I'm going to show you.
+
+00:00:36.550 --> 00:00:37.925
+SURMA: What scale
+are we talking?
+
+00:00:37.925 --> 00:00:38.800
+Minus 1, 0, 1?
+
+00:00:38.800 --> 00:00:42.960
+JAKE: From interesting
+to interesting.
+
+00:00:42.960 --> 00:00:44.020
+That's what I want.
+
+00:00:44.020 --> 00:00:46.870
+So the first one I'm
+going to show you is this.
+
+00:00:46.870 --> 00:00:47.980
+This is promise.try.
+
+00:00:50.680 --> 00:00:52.580
+SURMA: Interesting.
+
+00:00:52.580 --> 00:00:53.706
+JAKE: It's initial verdict.
+
+00:00:53.706 --> 00:00:54.871
+SURMA: OK, here's the thing.
+
+00:00:54.871 --> 00:00:56.650
+I'm going to try to
+figure out what it is,
+
+00:00:56.650 --> 00:00:57.858
+and you tell me if I'm right.
+
+00:00:57.858 --> 00:00:58.540
+JAKE: All right.
+
+00:00:58.540 --> 00:01:01.370
+SURMA: This is basically the
+reverse of a weight, where
+
+00:01:01.370 --> 00:01:03.940
+a weight turns a rejected
+promise into a throw,
+
+00:01:03.940 --> 00:01:07.250
+and this one turns a throw
+into a rejected promise.
+
+00:01:07.250 --> 00:01:10.180
+JAKE: It will do that,
+but also other things
+
+00:01:10.180 --> 00:01:11.691
+because if you do--
+
+00:01:11.691 --> 00:01:12.190
+OK.
+
+00:01:12.190 --> 00:01:15.400
+So let's take a
+look at this, which
+
+00:01:15.400 --> 00:01:18.820
+is that both of these things
+are doing almost exactly
+
+00:01:18.820 --> 00:01:21.180
+the same thing.
+
+00:01:21.180 --> 00:01:23.602
+So in here, this is
+an async function,
+
+00:01:23.602 --> 00:01:24.810
+so I can write code in there.
+
+00:01:24.810 --> 00:01:28.000
+If it froze, it's going to
+return to a rejected promise.
+
+00:01:28.000 --> 00:01:31.564
+If I return a thing, it's going
+to be packaged into a promise,
+
+00:01:31.564 --> 00:01:32.980
+and that's what p
+is going to be--
+
+00:01:32.980 --> 00:01:35.150
+it would be that return value.
+
+00:01:35.150 --> 00:01:37.690
+The only difference
+between these two
+
+00:01:37.690 --> 00:01:41.510
+is this function here is
+queued on a micro task,
+
+00:01:41.510 --> 00:01:45.020
+and this one is not.
+
+00:01:45.020 --> 00:01:46.190
+SURMA: Interesting.
+
+00:01:46.190 --> 00:01:46.730
+JAKE: Yep.
+
+00:01:46.730 --> 00:01:50.720
+Basically, this is the
+implementation of try
+
+00:01:50.720 --> 00:01:53.560
+because the promise callback
+will run straight away.
+
+00:01:53.560 --> 00:01:57.120
+SURMA: What's the difference
+of just an async IIFE?
+
+00:01:57.120 --> 00:02:02.950
+JAKE: Async IIFE is
+exactly the same.
+
+00:02:02.950 --> 00:02:04.675
+So my verdict on promise.try?
+
+00:02:04.675 --> 00:02:06.109
+SURMA: Nope.
+
+00:02:06.109 --> 00:02:07.650
+JAKE: I have needed
+this in the past,
+
+00:02:07.650 --> 00:02:10.115
+but I agree that async IIFE is--
+
+00:02:10.115 --> 00:02:12.240
+although it kind of looks
+a little bit ugly in code
+
+00:02:12.240 --> 00:02:13.545
+sometimes, I agree it's taken--
+
+00:02:13.545 --> 00:02:15.420
+SURMA: The only thing
+that is nice about this
+
+00:02:15.420 --> 00:02:16.996
+is that IIFEs are
+always confusing
+
+00:02:16.996 --> 00:02:19.120
+because you see a function,
+and then it's like, oh,
+
+00:02:19.120 --> 00:02:20.040
+I'm invoking it.
+
+00:02:20.040 --> 00:02:22.532
+So this one would make
+it like, oh, obviously, I
+
+00:02:22.532 --> 00:02:24.240
+can see at the start,
+you're invoking it.
+
+00:02:24.240 --> 00:02:24.770
+JAKE: Yes.
+
+00:02:24.770 --> 00:02:26.645
+And you know, I'd like
+to go a bit off topic,
+
+00:02:26.645 --> 00:02:29.400
+but that's why I don't like
+APIs that have a callback first,
+
+00:02:29.400 --> 00:02:31.630
+then some extra
+stuff afterwards,
+
+00:02:31.630 --> 00:02:33.200
+like add event listener.
+
+00:02:33.200 --> 00:02:34.470
+SURMA: Set timeout.
+
+00:02:34.470 --> 00:02:36.180
+JAKE: Set timeout
+is a perfect one
+
+00:02:36.180 --> 00:02:38.980
+because you are
+scrolling down the page.
+
+00:02:38.980 --> 00:02:40.480
+SURMA: It has lines of code--
+
+00:02:40.480 --> 00:02:40.980
+four.
+
+00:02:40.980 --> 00:02:42.690
+JAKE: Yeah, and then
+just to find that.
+
+00:02:42.690 --> 00:02:43.440
+Exactly.
+
+00:02:43.440 --> 00:02:45.459
+Or you're looking at this
+event listener going,
+
+00:02:45.459 --> 00:02:46.750
+this doesn't really make sense.
+
+00:02:46.750 --> 00:02:48.958
+And you get to the bottom,
+and it's like, once, true.
+
+00:02:48.958 --> 00:02:49.530
+Like, oh, OK.
+
+00:02:49.530 --> 00:02:51.371
+Now, let's read
+all of that again.
+
+00:02:51.371 --> 00:02:51.870
+OK.
+
+00:02:51.870 --> 00:02:53.070
+Anyway, that's off topic.
+
+00:02:53.070 --> 00:02:53.640
+Next thing I want
+to talk about--
+
+00:02:53.640 --> 00:02:54.810
+SURMA: Stage 0.
+
+00:02:54.810 --> 00:02:56.851
+JAKE: That is
+probably stage 0 or 1.
+
+00:02:56.851 --> 00:02:58.350
+These are the things
+I didn't commit
+
+00:02:58.350 --> 00:03:01.850
+to memory before we sat down.
+
+00:03:01.850 --> 00:03:02.634
+Right, this.
+
+00:03:02.634 --> 00:03:04.050
+SURMA: I know where
+this is going.
+
+00:03:04.050 --> 00:03:05.383
+I'm looking forward to that one.
+
+00:03:05.383 --> 00:03:06.000
+JAKE: Oh, OK.
+
+00:03:06.000 --> 00:03:06.210
+So--
+
+00:03:06.210 --> 00:03:07.140
+SURMA: I think so, at least.
+
+00:03:07.140 --> 00:03:08.010
+But I'm going to--
+
+00:03:08.010 --> 00:03:08.810
+oh, Jake.
+
+00:03:08.810 --> 00:03:10.390
+Where is this going?
+
+00:03:10.390 --> 00:03:11.370
+JAKE: Top acting, sir.
+
+00:03:11.370 --> 00:03:13.890
+Well, what we're
+doing here is we're
+
+00:03:13.890 --> 00:03:16.620
+trying to get the value
+of data.photos.length.
+
+00:03:16.620 --> 00:03:17.997
+But photos--
+
+00:03:17.997 --> 00:03:19.080
+SURMA: JavaScript happens.
+
+00:03:19.080 --> 00:03:21.750
+JAKE: Yeah, photos
+might be not an object.
+
+00:03:21.750 --> 00:03:23.520
+Like, it could be a
+null or an undefined
+
+00:03:23.520 --> 00:03:24.740
+or something like that.
+
+00:03:24.740 --> 00:03:29.170
+So this syntax.
+
+00:03:29.170 --> 00:03:31.590
+SURMA: Were they called the
+coalescing null operator
+
+00:03:31.590 --> 00:03:32.160
+or something?
+
+00:03:32.160 --> 00:03:33.090
+JAKE: Yes.
+
+00:03:33.090 --> 00:03:38.850
+Yes, or some reordering of those
+sounds into the correct thing.
+
+00:03:38.850 --> 00:03:40.350
+I think it is called
+that, actually.
+
+00:03:40.350 --> 00:03:43.350
+So yeah, what happens here is
+if it gets to photos and photos
+
+00:03:43.350 --> 00:03:47.910
+is a null, undefined, it
+just stops right there.
+
+00:03:47.910 --> 00:03:48.750
+SURMA: Interesting.
+
+00:03:48.750 --> 00:03:50.520
+JAKE: See, it is
+exciting, isn't it?
+
+00:03:50.520 --> 00:03:53.020
+SURMA: I'm looking forward to
+this so much because every now
+
+00:03:53.020 --> 00:03:55.804
+and then, especially when you
+take user data in user options
+
+00:03:55.804 --> 00:03:57.970
+object and you have to check
+if it's actually there,
+
+00:03:57.970 --> 00:04:00.560
+and if so, you want to
+inspect it-- just write it
+
+00:04:00.560 --> 00:04:03.060
+down with a question mark, and
+it would look so much better.
+
+00:04:03.060 --> 00:04:03.580
+JAKE: Exactly.
+
+00:04:03.580 --> 00:04:05.538
+There's another thing I
+want to point out here,
+
+00:04:05.538 --> 00:04:08.160
+and that's that I recently
+got a kitten, in case anyone's
+
+00:04:08.160 --> 00:04:11.010
+wondering why my
+hands are shredded.
+
+00:04:11.010 --> 00:04:11.860
+That's why.
+
+00:04:11.860 --> 00:04:13.550
+Anyway, this works, as well.
+
+00:04:13.550 --> 00:04:14.620
+SURMA: Oh yeah.
+
+00:04:14.620 --> 00:04:15.235
+Same.
+
+00:04:15.235 --> 00:04:16.110
+JAKE: Yeah, whatever.
+
+00:04:16.110 --> 00:04:16.609
+Same thing.
+
+00:04:16.609 --> 00:04:19.740
+SURMA: So just to be clear,
+if the thing that you question
+
+00:04:19.740 --> 00:04:23.510
+mark is null, then the entire
+return value will be null.
+
+00:04:23.510 --> 00:04:24.690
+JAKE: Yes, exactly.
+
+00:04:24.690 --> 00:04:27.690
+So val would be null
+in this example.
+
+00:04:27.690 --> 00:04:29.610
+This works, as well,
+which I quite like.
+
+00:04:29.610 --> 00:04:31.050
+SURMA: Ooh!
+
+00:04:31.050 --> 00:04:32.960
+I mean, the dot is a
+little bit confusing.
+
+00:04:32.960 --> 00:04:35.130
+I would have expected
+question mark, parentheses.
+
+00:04:35.130 --> 00:04:39.960
+JAKE: Yeah, I imagine that
+might be a clash of syntax
+
+00:04:39.960 --> 00:04:44.650
+maybe with the ternary operator
+or something like that.
+
+00:04:44.650 --> 00:04:46.860
+SURMA: Oh, that's so annoying,
+but I could see that.
+
+00:04:46.860 --> 00:04:48.960
+JAKE: So now there's a
+one character look ahead.
+
+00:04:48.960 --> 00:04:50.760
+Well, one
+non-white-space character
+
+00:04:50.760 --> 00:04:52.850
+look ahead to decide what to do.
+
+00:04:52.850 --> 00:04:54.080
+So yeah.
+
+00:04:54.080 --> 00:04:58.080
+But this is saying, if
+whatever is present-- call it.
+
+00:04:58.080 --> 00:04:59.790
+If not, it all becomes null.
+
+00:04:59.790 --> 00:05:00.290
+Yeah.
+
+00:05:00.290 --> 00:05:01.050
+SURMA: So cool.
+
+00:05:01.050 --> 00:05:02.400
+JAKE: What's the Surma score?
+
+00:05:02.400 --> 00:05:02.850
+SURMA: Interesting.
+
+00:05:02.850 --> 00:05:03.570
+JAKE: Interesting.
+
+00:05:03.570 --> 00:05:04.653
+I think so, too, actually.
+
+00:05:04.653 --> 00:05:05.580
+I quite like that one.
+
+00:05:05.580 --> 00:05:06.330
+Right.
+
+00:05:06.330 --> 00:05:09.960
+Have you ever ended up with code
+like this before because you
+
+00:05:09.960 --> 00:05:13.110
+want to create a constant,
+but computing that constant
+
+00:05:13.110 --> 00:05:15.660
+requires a bit of work?
+
+00:05:15.660 --> 00:05:16.540
+And technically--
+
+00:05:16.540 --> 00:05:18.248
+SURMA: That's where
+you write a function.
+
+00:05:18.248 --> 00:05:20.055
+JAKE: That's where
+you write a function.
+
+00:05:20.055 --> 00:05:21.090
+Thank you.
+
+00:05:21.090 --> 00:05:22.470
+Exactly.
+
+00:05:22.470 --> 00:05:25.320
+So an answer here
+is to make a self--
+
+00:05:25.320 --> 00:05:27.660
+an IIFE-- a
+self-executing function
+
+00:05:27.660 --> 00:05:30.780
+that returns the thing.
+
+00:05:30.780 --> 00:05:31.320
+Brilliant.
+
+00:05:31.320 --> 00:05:31.950
+Great.
+
+00:05:31.950 --> 00:05:33.420
+Job done.
+
+00:05:33.420 --> 00:05:37.510
+The proposal is a do block.
+
+00:05:37.510 --> 00:05:38.060
+SURMA: Oh.
+
+00:05:38.060 --> 00:05:38.680
+The do.
+
+00:05:38.680 --> 00:05:40.020
+How very functional of us.
+
+00:05:40.020 --> 00:05:40.770
+JAKE: Exactly.
+
+00:05:40.770 --> 00:05:42.749
+So the idea is that
+you can put this
+
+00:05:42.749 --> 00:05:44.040
+where you would put statements.
+
+00:05:44.040 --> 00:05:46.890
+So especially useful
+in things like JSX,
+
+00:05:46.890 --> 00:05:48.390
+which is all very--
+all statements.
+
+00:05:48.390 --> 00:05:49.830
+You can't put ifs in there.
+
+00:05:49.830 --> 00:05:52.150
+But with a do, you would
+be able to put an if in,
+
+00:05:52.150 --> 00:05:56.760
+and the final
+statement in the do
+
+00:05:56.760 --> 00:05:58.741
+is the value that's
+returned, effectively.
+
+00:05:58.741 --> 00:05:59.740
+SURMA: So what can you--
+
+00:05:59.740 --> 00:06:03.000
+you can put any form of
+JavaScript code in a do,
+
+00:06:03.000 --> 00:06:03.930
+or just a subset?
+
+00:06:03.930 --> 00:06:06.270
+Because I would have expected
+explicit returns in the
+
+00:06:06.270 --> 00:06:07.200
+do block.
+
+00:06:07.200 --> 00:06:08.910
+JAKE: No, it's just
+the last statement.
+
+00:06:08.910 --> 00:06:11.730
+I actually made a mistake
+when I first wrote this code.
+
+00:06:11.730 --> 00:06:15.984
+I missed the else off
+because I thought, oh--
+
+00:06:15.984 --> 00:06:17.400
+because normally
+when I write code
+
+00:06:17.400 --> 00:06:19.680
+like this, if I'm
+returning values,
+
+00:06:19.680 --> 00:06:22.891
+I don't do the else because
+all the codes ended.
+
+00:06:22.891 --> 00:06:24.390
+And I just had
+logged out, and I was
+
+00:06:24.390 --> 00:06:25.430
+like, oh, I'm now breaking it.
+
+00:06:25.430 --> 00:06:27.210
+SURMA: Oh, so basically, you
+write just code, and then
+
+00:06:27.210 --> 00:06:27.720
+the last--
+
+00:06:27.720 --> 00:06:29.761
+the return value of the
+last statement-- and this
+
+00:06:29.761 --> 00:06:31.840
+is all one statement,
+for the record, right?
+
+00:06:31.840 --> 00:06:32.340
+JAKE: Yeah.
+
+00:06:32.340 --> 00:06:33.660
+SURMA: This is one big if--
+
+00:06:33.660 --> 00:06:35.785
+JAKE: Yeah, it's kind of
+essentially the last thing
+
+00:06:35.785 --> 00:06:36.869
+that's executed.
+
+00:06:36.869 --> 00:06:39.160
+It's kind of the thing that
+would appear in the console
+
+00:06:39.160 --> 00:06:40.380
+if you pasted this in.
+
+00:06:40.380 --> 00:06:41.540
+SURMA: Interesting.
+
+00:06:41.540 --> 00:06:42.690
+JAKE: Interesting.
+
+00:06:42.690 --> 00:06:43.630
+SURMA: Yes.
+
+00:06:43.630 --> 00:06:46.290
+It's nicer to read
+if you just say, do.
+
+00:06:46.290 --> 00:06:48.525
+But then again, I
+think I would love do
+
+00:06:48.525 --> 00:06:50.290
+to just be a sugar of an IIFE.
+
+00:06:50.290 --> 00:06:52.326
+And you'd be like,
+just let me do returns.
+
+00:06:52.326 --> 00:06:53.950
+What if you want to
+do an early return?
+
+00:06:53.950 --> 00:06:54.440
+JAKE: Do you know what?
+
+00:06:54.440 --> 00:06:55.315
+I think you're right.
+
+00:06:55.315 --> 00:06:56.940
+I think something
+that would be really
+
+00:06:56.940 --> 00:06:59.880
+nice here is an
+IIFE syntax that was
+
+00:06:59.880 --> 00:07:01.397
+clear from the first
+few characters,
+
+00:07:01.397 --> 00:07:02.480
+rather than be at the end.
+
+00:07:02.480 --> 00:07:02.627
+SURMA: Yeah, you
+see at the start,
+
+00:07:02.627 --> 00:07:04.835
+oh, this function is going
+to be invoked immediately.
+
+00:07:04.835 --> 00:07:06.360
+Just execute that block of code.
+
+00:07:06.360 --> 00:07:08.260
+It's allowed to return, though--
+
+00:07:08.260 --> 00:07:09.630
+would be nice.
+
+00:07:09.630 --> 00:07:11.700
+It's a problem worth looking at.
+
+00:07:11.700 --> 00:07:13.830
+Not sure I like this solution.
+
+00:07:13.830 --> 00:07:14.590
+JAKE: All right.
+
+00:07:14.590 --> 00:07:16.834
+Well, that's Surma,
+who's declared
+
+00:07:16.834 --> 00:07:18.750
+that he hates that idea
+and everyone involved.
+
+00:07:18.750 --> 00:07:20.375
+SURMA: I'm not going
+to send this video
+
+00:07:20.375 --> 00:07:22.150
+to [INAUDIBLE] after.
+
+00:07:22.150 --> 00:07:22.920
+JAKE: So this one.
+
+00:07:22.920 --> 00:07:24.300
+You've seen this before, right?
+
+00:07:24.300 --> 00:07:26.110
+We've done examples like this.
+
+00:07:26.110 --> 00:07:28.240
+So we're saying, hello, world.
+
+00:07:28.240 --> 00:07:29.209
+All default. Right.
+
+00:07:29.209 --> 00:07:30.750
+SURMA: OK, it seems
+like we get going
+
+00:07:30.750 --> 00:07:33.150
+and it has a lot of synergy
+with the question mark thing.
+
+00:07:33.150 --> 00:07:34.455
+JAKE: Ah, it is.
+
+00:07:34.455 --> 00:07:35.760
+It is.
+
+00:07:35.760 --> 00:07:38.760
+So the problem here is if
+hello, world is an empty string
+
+00:07:38.760 --> 00:07:40.300
+and you actually want it--
+
+00:07:40.300 --> 00:07:42.360
+you were wanting to
+say, if world exists--
+
+00:07:42.360 --> 00:07:44.160
+SURMA: Or undefined or 0.
+
+00:07:44.160 --> 00:07:46.840
+JAKE: So this is the proposal.
+
+00:07:46.840 --> 00:07:51.150
+So what this means
+is use default
+
+00:07:51.150 --> 00:07:54.649
+if world is null or undefined.
+
+00:07:54.649 --> 00:07:55.940
+SURMA: But not an empty string.
+
+00:07:55.940 --> 00:07:56.390
+JAKE: Not empty string.
+
+00:07:56.390 --> 00:07:56.600
+Not 0.
+
+00:07:56.600 --> 00:07:58.490
+SURMA: Oh, this is the thing
+where you run into the trap
+
+00:07:58.490 --> 00:08:00.980
+where you're doing the or
+to have a default value,
+
+00:08:00.980 --> 00:08:03.830
+but then you realize, oh,
+wait, 0 and empty string
+
+00:08:03.830 --> 00:08:06.260
+are actually considered false,
+even though, in this case,
+
+00:08:06.260 --> 00:08:07.730
+they are legit values for me.
+
+00:08:07.730 --> 00:08:08.750
+JAKE: Yes, exactly.
+
+00:08:08.750 --> 00:08:09.830
+SURMA: Interesting.
+
+00:08:09.830 --> 00:08:10.400
+Interesting.
+
+00:08:10.400 --> 00:08:11.150
+JAKE: Interesting.
+
+00:08:11.150 --> 00:08:11.780
+That's a vote.
+
+00:08:11.780 --> 00:08:14.300
+OK, let's keep going.
+
+00:08:14.300 --> 00:08:16.410
+What does this do?
+
+00:08:16.410 --> 00:08:19.820
+SURMA: It replaces
+the first plus--
+
+00:08:19.820 --> 00:08:21.050
+JAKE: Ah!
+
+00:08:21.050 --> 00:08:22.520
+SURMA: With a space.
+
+00:08:22.520 --> 00:08:24.240
+And I've run into
+this so many times,
+
+00:08:24.240 --> 00:08:25.880
+and if you don't-- if I
+want to replace all of them,
+
+00:08:25.880 --> 00:08:27.920
+you always have to go
+with the right axis.
+
+00:08:27.920 --> 00:08:30.110
+JAKE: Exactly like that,
+and it's horrible, right?
+
+00:08:30.110 --> 00:08:30.990
+SURMA: It's so horrible.
+
+00:08:30.990 --> 00:08:32.929
+JAKE: Especially if you're doing
+things with slashes in already,
+
+00:08:32.929 --> 00:08:34.640
+you get all the
+horrible escaping.
+
+00:08:34.640 --> 00:08:35.539
+It's nasty.
+
+00:08:35.539 --> 00:08:36.250
+The proposal is--
+
+00:08:36.250 --> 00:08:37.250
+SURMA: Yes, replace all.
+
+00:08:37.250 --> 00:08:38.020
+Yes, interesting.
+
+00:08:38.020 --> 00:08:38.520
+Good.
+
+00:08:38.520 --> 00:08:38.809
+Do it.
+
+00:08:38.809 --> 00:08:39.260
+Ship it.
+
+00:08:39.260 --> 00:08:39.590
+JAKE: All right.
+
+00:08:39.590 --> 00:08:40.010
+Excellent.
+
+00:08:40.010 --> 00:08:40.460
+Brilliant.
+
+00:08:40.460 --> 00:08:40.960
+Right.
+
+00:08:40.960 --> 00:08:41.580
+Moving on.
+
+00:08:41.580 --> 00:08:42.080
+Ooh!
+
+00:08:45.730 --> 00:08:47.870
+SURMA: Oh, this is so Ruby.
+
+00:08:47.870 --> 00:08:48.890
+JAKE: It is so Ruby.
+
+00:08:48.890 --> 00:08:50.750
+This is where this
+has come from.
+
+00:08:50.750 --> 00:08:54.310
+So what would you
+assume this is?
+
+00:08:54.310 --> 00:08:57.150
+SURMA: So this-- two
+versions I could see.
+
+00:08:57.150 --> 00:09:00.030
+Either some function
+takes a parameter
+
+00:09:00.030 --> 00:09:01.950
+and returns a
+function, and that then
+
+00:09:01.950 --> 00:09:05.041
+gets invoked with this thing,
+or the block at the end
+
+00:09:05.041 --> 00:09:07.290
+just turns into the second
+parameter of some function.
+
+00:09:07.290 --> 00:09:08.200
+JAKE: Second one-- correct.
+
+00:09:08.200 --> 00:09:08.700
+Yes.
+
+00:09:08.700 --> 00:09:11.620
+It is sugar for that.
+
+00:09:11.620 --> 00:09:14.200
+SURMA: Ah, the reactive
+field are going to love it.
+
+00:09:14.200 --> 00:09:14.795
+JAKE: Right.
+
+00:09:14.795 --> 00:09:16.170
+And there's some
+interesting kind
+
+00:09:16.170 --> 00:09:19.030
+of syntaxes you get with this.
+
+00:09:19.030 --> 00:09:20.200
+It's a lot of--
+
+00:09:20.200 --> 00:09:23.220
+SURMA: It's very
+un-idiomatic right now.
+
+00:09:23.220 --> 00:09:25.860
+If you put it into
+the language, it's,
+
+00:09:25.860 --> 00:09:28.530
+by definition, not really
+un-idiomatic anymore.
+
+00:09:28.530 --> 00:09:30.637
+But right now, it
+feels very foreign.
+
+00:09:30.637 --> 00:09:31.470
+JAKE: Yeah, it does.
+
+00:09:31.470 --> 00:09:33.710
+It feels very foreign,
+and it's a lot--
+
+00:09:33.710 --> 00:09:35.910
+it's a new syntax for
+something that-- all right.
+
+00:09:35.910 --> 00:09:37.410
+How different, really, is that?
+
+00:09:37.410 --> 00:09:38.880
+What are we really
+gaining there?
+
+00:09:38.880 --> 00:09:42.180
+SURMA: I think I would have
+to see it with more chaining,
+
+00:09:42.180 --> 00:09:45.990
+because for example, could
+I make some function,
+
+00:09:45.990 --> 00:09:48.840
+then, return a new function-- it
+takes a function, and then just
+
+00:09:48.840 --> 00:09:50.550
+chain these blocks together.
+
+00:09:50.550 --> 00:09:53.046
+And is that something
+that we want to allow?
+
+00:09:53.046 --> 00:09:53.670
+JAKE: Oh, yeah.
+
+00:09:53.670 --> 00:09:54.836
+I didn't even consider that.
+
+00:09:54.836 --> 00:09:57.270
+I wonder if that
+would be valid syntax?
+
+00:09:57.270 --> 00:09:57.970
+Ooh.
+
+00:09:57.970 --> 00:09:58.700
+Exciting.
+
+00:09:58.700 --> 00:10:00.990
+SURMA: Worth looking into.
+
+00:10:00.990 --> 00:10:03.690
+I mean, I'm a big fan of
+functional programming,
+
+00:10:03.690 --> 00:10:04.730
+in general.
+
+00:10:04.730 --> 00:10:06.480
+Watch my Supercharged
+series, coming up
+
+00:10:06.480 --> 00:10:08.786
+on functional
+JavaScript programming.
+
+00:10:08.786 --> 00:10:09.401
+[DING SOUND]
+
+00:10:09.401 --> 00:10:09.900
+JAKE: Right.
+
+00:10:09.900 --> 00:10:11.790
+OK, next one.
+
+00:10:11.790 --> 00:10:13.180
+It's the last one.
+
+00:10:13.180 --> 00:10:13.680
+SURMA: OK.
+
+00:10:13.680 --> 00:10:14.870
+JAKE: Familiar with this syntax?
+
+00:10:14.870 --> 00:10:15.320
+SURMA: It's an array.
+
+00:10:15.320 --> 00:10:16.153
+JAKE: It's an array.
+
+00:10:16.153 --> 00:10:17.220
+Excellent.
+
+00:10:17.220 --> 00:10:18.870
+SURMA: One point for Surma.
+
+00:10:18.870 --> 00:10:20.130
+JAKE: Congratulations.
+
+00:10:20.130 --> 00:10:22.250
+You keep your job.
+
+00:10:22.250 --> 00:10:23.130
+Ooh.
+
+00:10:23.130 --> 00:10:25.050
+SURMA: Oh, last item.
+
+00:10:25.050 --> 00:10:29.979
+I remember being looped into a
+Twitter flame war around this.
+
+00:10:29.979 --> 00:10:31.020
+JAKE: Oh yeah, that was--
+
+00:10:31.020 --> 00:10:33.960
+SURMA: Because last item, I'm
+on board with because it's--
+
+00:10:33.960 --> 00:10:37.200
+the only way to do it right
+now is array, angle brackets,
+
+00:10:37.200 --> 00:10:38.790
+and then in the
+there-- array, length,
+
+00:10:38.790 --> 00:10:43.410
+minus 1, which also,
+I think, acts weird
+
+00:10:43.410 --> 00:10:45.232
+if the array is empty.
+
+00:10:45.232 --> 00:10:46.440
+Or does it just do undefined?
+
+00:10:46.440 --> 00:10:48.228
+Because then it would
+do array minus 1.
+
+00:10:48.228 --> 00:10:49.315
+JAKE: You'd be on
+the minus 1 thing.
+
+00:10:49.315 --> 00:10:49.750
+It would still be empty.
+
+00:10:49.750 --> 00:10:50.920
+SURMA: I don't even
+know right now.
+
+00:10:50.920 --> 00:10:52.505
+Then suddenly, you have to
+think about these things.
+
+00:10:52.505 --> 00:10:53.176
+JAKE: Holy arrays, maybe.
+
+00:10:53.176 --> 00:10:54.810
+SURMA: So this would
+be well-defined.
+
+00:10:54.810 --> 00:10:55.710
+If it's empty,
+it's probably going
+
+00:10:55.710 --> 00:10:56.918
+to be undefined or something.
+
+00:10:56.918 --> 00:10:59.730
+It's going to be well-defined,
+and it's a nice and easy
+
+00:10:59.730 --> 00:11:01.531
+to read way to
+get the last item.
+
+00:11:01.531 --> 00:11:02.280
+JAKE: And I agree.
+
+00:11:02.280 --> 00:11:04.113
+I've wanted this all
+the time, and it's nice
+
+00:11:04.113 --> 00:11:06.425
+that it's also a
+setter, which is great.
+
+00:11:06.425 --> 00:11:07.050
+So this is me--
+
+00:11:07.050 --> 00:11:07.841
+SURMA: Interesting.
+
+00:11:07.841 --> 00:11:09.960
+JAKE: Making the array, 1, 2, 4.
+
+00:11:09.960 --> 00:11:11.130
+SURMA: That is nice.
+
+00:11:11.130 --> 00:11:13.770
+The thing that we had on
+Twitter was, well, then we
+
+00:11:13.770 --> 00:11:15.120
+should also have first item.
+
+00:11:15.120 --> 00:11:16.578
+JAKE: Well actually,
+the way I came
+
+00:11:16.578 --> 00:11:18.450
+to it is I saw
+someone going, I'm
+
+00:11:18.450 --> 00:11:21.860
+really excited about first item,
+and didn't mention last item.
+
+00:11:21.860 --> 00:11:23.130
+And I was like, really?
+
+00:11:23.130 --> 00:11:23.770
+We have--
+
+00:11:23.770 --> 00:11:24.270
+SURMA: 0.
+
+00:11:24.270 --> 00:11:24.916
+JAKE: 0.
+
+00:11:24.916 --> 00:11:26.040
+SURMA: It's pretty concise.
+
+00:11:26.040 --> 00:11:27.030
+It's actually shorter.
+
+00:11:27.030 --> 00:11:27.810
+JAKE: OK.
+
+00:11:27.810 --> 00:11:30.180
+I understand the
+excitement for last item.
+
+00:11:30.180 --> 00:11:32.340
+And it, in the proposal,
+only mentions last item.
+
+00:11:32.340 --> 00:11:34.300
+It doesn't mention first time.
+
+00:11:34.300 --> 00:11:34.800
+So yeah.
+
+00:11:34.800 --> 00:11:35.300
+OK.
+
+00:11:35.300 --> 00:11:38.400
+So out of those,
+what's your favorite?
+
+00:11:38.400 --> 00:11:39.870
+SURMA: What do we have?
+
+00:11:39.870 --> 00:11:41.760
+I think it's coalescing null.
+
+00:11:41.760 --> 00:11:44.400
+I think that has the biggest
+impact for me, probably
+
+00:11:44.400 --> 00:11:46.890
+because I've been writing
+a lot of user facing,
+
+00:11:46.890 --> 00:11:48.870
+slash, library code recently.
+
+00:11:48.870 --> 00:11:51.720
+So you always end up
+handling options, objects,
+
+00:11:51.720 --> 00:11:54.137
+and then this whole verification
+stuff just gets annoying.
+
+00:11:54.137 --> 00:11:56.428
+JAKE: Yeah, and you can always
+pass something like this
+
+00:11:56.428 --> 00:11:58.900
+off to a function that gets
+the last item of an array.
+
+00:11:58.900 --> 00:12:02.080
+It's not amazingly pretty,
+but it does the job,
+
+00:12:02.080 --> 00:12:04.080
+whereas the null thing
+is really difficult
+
+00:12:04.080 --> 00:12:05.580
+to sort of librar-ify, right?
+
+00:12:05.580 --> 00:12:07.456
+SURMA: Yeah, and then
+you have the functions,
+
+00:12:07.456 --> 00:12:08.580
+and you have to chain them.
+
+00:12:08.580 --> 00:12:09.320
+It gets weird.
+
+00:12:09.320 --> 00:12:10.271
+JAKE: It gets weird.
+
+00:12:10.271 --> 00:12:10.770
+OK.
+
+00:12:10.770 --> 00:12:11.200
+Yeah.
+
+00:12:11.200 --> 00:12:12.033
+So that's all I had.
+
+00:12:12.033 --> 00:12:14.730
+SURMA: We should talk
+about, after the next TT 39
+
+00:12:14.730 --> 00:12:16.800
+meeting, an update on
+did they move on or not.
+
+00:12:16.800 --> 00:12:17.300
+JAKE: Did any of these move?
+
+00:12:17.300 --> 00:12:18.883
+There's actually
+loads more proposals,
+
+00:12:18.883 --> 00:12:22.200
+so if I, once again, can't
+think of a code episode to do,
+
+00:12:22.200 --> 00:12:23.700
+we're going to go
+through some more.
+
+00:12:23.700 --> 00:12:24.380
+SURMA: I like it.
+
+00:12:24.380 --> 00:12:26.629
+JAKE: And I'm sure there'll
+be more proposals by then,
+
+00:12:26.629 --> 00:12:28.932
+so we'll keep doing this
+as a kind of regular thing.
+
+00:12:28.932 --> 00:12:29.640
+SURMA: All right.
+
+00:12:29.640 --> 00:12:30.140
+Until then
+
+00:12:30.140 --> 00:12:31.050
+JAKE: Until then.
+
+00:12:31.050 --> 00:12:34.500
+I treated myself to a massage.
+
+00:12:34.500 --> 00:12:35.590
+SURMA: A massage?
+
+00:12:35.590 --> 00:12:37.195
+JAKE: A massage.
+
+00:12:37.195 --> 00:12:39.130
+SURMA: Is it massage or massage?
+
+00:12:39.130 --> 00:12:40.320
+JAKE: I don't know.
+
+00:12:40.320 --> 00:12:41.410
+I don't know.
+
+00:12:41.410 --> 00:12:42.610
+SURMA: I'm still confused.
+
+00:12:42.610 --> 00:12:43.422
+JAKE: Massage.
+
+00:12:43.422 --> 00:12:44.130
+SURMA: A massage.
+
+00:12:44.130 --> 00:12:44.901
+JAKE: A massage.
+
+00:12:44.901 --> 00:12:45.400
+Yeah.
+
+00:12:45.400 --> 00:12:47.120
+SURMA: A massage.
+

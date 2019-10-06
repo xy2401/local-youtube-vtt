@@ -1,0 +1,1360 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:04.170
+JAKE: You were sat at your
+desk, and then a real engineer
+
+00:00:04.170 --> 00:00:06.700
+stood behind you
+and held your hands.
+
+00:00:06.700 --> 00:00:07.200
+Maybe--
+
+00:00:07.200 --> 00:00:08.340
+ROB DODSON: Like the
+scene from "Ghost."
+
+00:00:08.340 --> 00:00:08.839
+No.
+
+00:00:08.839 --> 00:00:11.499
+JAKE: Yeah, is there a special
+pair of gloves that has two--
+
+00:00:11.499 --> 00:00:12.790
+you put the gloves on, they put
+
+00:00:12.790 --> 00:00:13.200
+SURMA: The tandem--
+
+00:00:13.200 --> 00:00:13.530
+JAKE: --their hands
+in the gloves.
+
+00:00:13.530 --> 00:00:14.216
+SURMA: --gloves.
+
+00:00:14.216 --> 00:00:15.340
+JAKE: --and they just type.
+
+00:00:15.340 --> 00:00:17.298
+They're like, Rob, this
+counts as you doing it.
+
+00:00:17.298 --> 00:00:17.950
+This is you.
+
+00:00:17.950 --> 00:00:19.406
+Look, you're writing C++.
+
+00:00:19.406 --> 00:00:20.500
+Look at you go.
+
+00:00:20.500 --> 00:00:21.470
+Look at you go.
+
+00:00:21.470 --> 00:00:24.865
+[MUSIC PLAYING]
+
+00:00:27.780 --> 00:00:32.280
+SURMA: I don't know how you
+feel about existential crises,
+
+00:00:32.280 --> 00:00:35.370
+but who are you, and why?
+
+00:00:35.370 --> 00:00:37.020
+ROB DODSON: So,
+hi, I'm Rob Dodson.
+
+00:00:37.020 --> 00:00:40.530
+I'm a developer advocate
+on the Chrome team.
+
+00:00:40.530 --> 00:00:45.720
+And why-- I mainly work on
+accessibility, and trying
+
+00:00:45.720 --> 00:00:48.240
+to sort of teach developers
+how to build accessible
+
+00:00:48.240 --> 00:00:50.580
+applications, make sure it's
+part of their daily habit
+
+00:00:50.580 --> 00:00:51.890
+when they're doing their work.
+
+00:00:51.890 --> 00:00:52.440
+SURMA: I think you're
+the first one who
+
+00:00:52.440 --> 00:00:54.148
+just glosses over the
+why, and just turns
+
+00:00:54.148 --> 00:00:55.110
+into a job description.
+
+00:00:55.110 --> 00:00:55.980
+ROB DODSON: I--
+
+00:00:55.980 --> 00:00:57.410
+SURMA: Like, we've gotten
+very weird answers.
+
+00:00:57.410 --> 00:00:58.420
+JAKE: That's DevRel
+training, right?
+
+00:00:58.420 --> 00:00:59.490
+SURMA: Yeah, it's just like--
+
+00:00:59.490 --> 00:00:59.760
+ROB DODSON: Yeah.
+
+00:00:59.760 --> 00:01:01.200
+I just reverted
+back to my training,
+
+00:01:01.200 --> 00:01:02.449
+and it just sort of kicked in.
+
+00:01:02.449 --> 00:01:03.030
+[LAUGHTER]
+
+00:01:03.030 --> 00:01:05.246
+I imagined I was on a stage,
+and it was going badly,
+
+00:01:05.246 --> 00:01:06.870
+and I just started
+saying my job title.
+
+00:01:06.870 --> 00:01:09.590
+JAKE: We just sort of activated
+you there, that was it.
+
+00:01:09.590 --> 00:01:11.524
+Well, bringing you
+back to humanity,
+
+00:01:11.524 --> 00:01:13.440
+so you've been doing an
+eng rotation recently.
+
+00:01:13.440 --> 00:01:14.481
+ROB DODSON: I have, yeah.
+
+00:01:14.481 --> 00:01:15.570
+JAKE: So what's that?
+
+00:01:15.570 --> 00:01:18.030
+You stand in the spot and spin
+around, but with a computer.
+
+00:01:18.030 --> 00:01:20.004
+ROB DODSON: With the
+other eng people.
+
+00:01:20.004 --> 00:01:21.420
+SURMA: It's like
+a spinning class.
+
+00:01:21.420 --> 00:01:21.930
+JAKE: Yeah.
+
+00:01:21.930 --> 00:01:23.070
+ROB DODSON: Yeah.
+
+00:01:23.070 --> 00:01:27.330
+So what I've been doing the
+previous quarter was actually
+
+00:01:27.330 --> 00:01:31.000
+working on Chromium,
+so working in C++.
+
+00:01:31.000 --> 00:01:32.520
+SURMA: That's dreadful.
+
+00:01:32.520 --> 00:01:35.235
+ROB DODSON: It was, because I
+didn't know C++ when I started
+
+00:01:35.235 --> 00:01:35.735
+it.
+
+00:01:35.735 --> 00:01:38.220
+So I learned enough
+C++ to be bad at it,
+
+00:01:38.220 --> 00:01:40.740
+and then I started shipping
+code in the browser, which was--
+
+00:01:40.740 --> 00:01:42.330
+SURMA: And having
+other people review
+
+00:01:42.330 --> 00:01:43.520
+your code until you were--
+
+00:01:43.520 --> 00:01:44.790
+ROB DODSON: Yeah, so basically
+the way that works is,
+
+00:01:44.790 --> 00:01:47.730
+like, I put up a patch, and
+someone goes, it's horrible.
+
+00:01:47.730 --> 00:01:50.189
+And then I'm like--
+they're like, down there;
+
+00:01:50.189 --> 00:01:50.980
+move it over there.
+
+00:01:50.980 --> 00:01:51.780
+And I'm like, here?
+
+00:01:51.780 --> 00:01:53.220
+And they're like, there?
+
+00:01:53.220 --> 00:01:54.100
+And I'm like, here?
+
+00:01:54.100 --> 00:01:55.300
+And they're like, yes.
+
+00:01:55.300 --> 00:01:57.700
+The funny thing was it wasn't
+even an engineer I knew.
+
+00:01:57.700 --> 00:01:59.670
+It was an engineer from
+a different browser,
+
+00:01:59.670 --> 00:02:01.710
+who was just so
+annoyed by my bad code
+
+00:02:01.710 --> 00:02:05.220
+that they just showed up
+from, like, another continent,
+
+00:02:05.220 --> 00:02:07.290
+and were like, (IN THROATY,
+ANIMATED TONE) stop!
+
+00:02:07.290 --> 00:02:09.179
+Like, do it this way.
+
+00:02:09.179 --> 00:02:10.470
+JAKE: That's a long way to run.
+
+00:02:10.470 --> 00:02:11.009
+ROB DODSON: Yes.
+
+00:02:11.009 --> 00:02:11.680
+JAKE: So another continent--
+
+00:02:11.680 --> 00:02:12.090
+ROB DODSON: But they
+brought the gloves.
+
+00:02:12.090 --> 00:02:14.160
+JAKE: They see your
+code, and they stand up
+
+00:02:14.160 --> 00:02:17.540
+and they go, (IN
+SLOW MOTION) no.
+
+00:02:17.540 --> 00:02:18.190
+But from--
+
+00:02:18.190 --> 00:02:18.530
+ROB DODSON: Something like that.
+
+00:02:18.530 --> 00:02:19.265
+JAKE: From where?
+
+00:02:19.265 --> 00:02:20.300
+ROB DODSON: From Oslo.
+
+00:02:20.300 --> 00:02:21.050
+JAKE: From Oslo.
+
+00:02:21.050 --> 00:02:22.112
+That's a long run.
+
+00:02:22.112 --> 00:02:22.820
+ROB DODSON: Yeah.
+
+00:02:22.820 --> 00:02:23.892
+SURMA: That's impressive.
+
+00:02:23.892 --> 00:02:24.850
+ROB DODSON: Yeah, yeah.
+
+00:02:24.850 --> 00:02:26.260
+But it was really cool.
+
+00:02:26.260 --> 00:02:28.670
+I got to learn a lot
+about how Chrome actually
+
+00:02:28.670 --> 00:02:32.080
+works under the hood, so
+that was really interesting.
+
+00:02:32.080 --> 00:02:35.900
+I'd actually encourage
+anyone who is really
+
+00:02:35.900 --> 00:02:37.190
+interested in the browser--
+
+00:02:37.190 --> 00:02:40.140
+you can learn enough C++
+to kind of get in there.
+
+00:02:40.140 --> 00:02:41.921
+And the nice thing is--
+
+00:02:41.921 --> 00:02:44.180
+this is a tip I got from
+another person on the team--
+
+00:02:44.180 --> 00:02:46.970
+if the code around
+you is written well,
+
+00:02:46.970 --> 00:02:49.260
+you can kind of figure it out.
+
+00:02:49.260 --> 00:02:50.490
+You can kind of muddle along.
+
+00:02:50.490 --> 00:02:51.740
+And so that's the case, right.
+
+00:02:51.740 --> 00:02:52.880
+I got in there, and
+I found something
+
+00:02:52.880 --> 00:02:55.500
+that was similar to what I
+wanted to do, and kind of just
+
+00:02:55.500 --> 00:02:56.000
+like--
+
+00:02:56.000 --> 00:02:56.820
+SURMA: Copy, paste.
+
+00:02:56.820 --> 00:02:58.117
+ROB DODSON: Yeah.
+
+00:02:58.117 --> 00:02:58.950
+SURMA: Let's say it.
+
+00:02:58.950 --> 00:02:59.740
+It's copy, paste.
+
+00:02:59.740 --> 00:03:02.031
+JAKE: But I find the same
+with web standards, actually.
+
+00:03:02.031 --> 00:03:04.070
+I kind of sometimes
+submit a patch,
+
+00:03:04.070 --> 00:03:05.820
+and the feedback
+would be like, why
+
+00:03:05.820 --> 00:03:07.445
+on earth have you
+written it like this,
+
+00:03:07.445 --> 00:03:09.290
+and I was like, well,
+I copy and pasted it
+
+00:03:09.290 --> 00:03:11.420
+from two lines that way.
+
+00:03:11.420 --> 00:03:12.565
+So, well, it's wrong.
+
+00:03:12.565 --> 00:03:15.330
+Well, I mean, how can I help
+being wrong in this situation.
+
+00:03:15.330 --> 00:03:16.705
+ROB DODSON: You're
+like, I'm new.
+
+00:03:16.705 --> 00:03:22.500
+And so yeah, I was very wrong
+pretty much all the time.
+
+00:03:22.500 --> 00:03:24.530
+But it was pretty
+gratifying, like,
+
+00:03:24.530 --> 00:03:26.280
+getting something
+behind a flag in Chrome.
+
+00:03:26.280 --> 00:03:28.613
+SURMA: I mean, you're now the
+owner of a flag in Chrome,
+
+00:03:28.613 --> 00:03:29.120
+right?
+
+00:03:29.120 --> 00:03:30.010
+That's the thing you wrote.
+
+00:03:30.010 --> 00:03:30.560
+ROB DODSON: Yeah.
+
+00:03:30.560 --> 00:03:32.360
+The experimental web
+platform features flags,
+
+00:03:32.360 --> 00:03:33.526
+which kind of like a bucket.
+
+00:03:33.526 --> 00:03:34.680
+Everything goes in there.
+
+00:03:34.680 --> 00:03:37.940
+But yeah, I'm the owner of
+a pseudo-class in CSS now.
+
+00:03:37.940 --> 00:03:38.690
+JAKE: That's cool.
+
+00:03:38.690 --> 00:03:40.687
+So what have you actually
+been implementing?
+
+00:03:40.687 --> 00:03:42.270
+ROB DODSON: So it's
+a CSS pseudo-class
+
+00:03:42.270 --> 00:03:43.550
+called Focus Visible.
+
+00:03:43.550 --> 00:03:47.180
+And the way it works is it
+matches when Focus matches,
+
+00:03:47.180 --> 00:03:49.640
+and then using kind of
+an internal heuristic
+
+00:03:49.640 --> 00:03:51.340
+in the browser, we
+determined that it
+
+00:03:51.340 --> 00:03:53.270
+would be useful
+for the user to see
+
+00:03:53.270 --> 00:03:54.520
+some sort of focus indicators.
+
+00:03:54.520 --> 00:03:56.570
+So typically that
+means, depending
+
+00:03:56.570 --> 00:03:58.760
+on if they're using a
+mouse versus a keyboard
+
+00:03:58.760 --> 00:04:01.052
+to navigate the page,
+if you're using a mouse,
+
+00:04:01.052 --> 00:04:02.510
+depending on the
+control, maybe you
+
+00:04:02.510 --> 00:04:04.250
+don't need to see one if
+you're clicking on a button,
+
+00:04:04.250 --> 00:04:04.930
+or something like that.
+
+00:04:04.930 --> 00:04:05.030
+JAKE: Right.
+
+00:04:05.030 --> 00:04:06.238
+I've had that problem before.
+
+00:04:06.238 --> 00:04:08.990
+And I feel like I've been
+making things not accessible,
+
+00:04:08.990 --> 00:04:11.500
+because I don't want, when
+the user clicks with a mouse,
+
+00:04:11.500 --> 00:04:13.700
+it to have that
+same focus style.
+
+00:04:13.700 --> 00:04:15.650
+You end up doing
+weird hacks like,
+
+00:04:15.650 --> 00:04:19.490
+oh, if there's a mouse down, add
+a class somewhere or something
+
+00:04:19.490 --> 00:04:21.680
+that will hide the focus
+styles or something.
+
+00:04:21.680 --> 00:04:25.550
+SURMA: So it's not a thing I can
+do star, focus visible, focus
+
+00:04:25.550 --> 00:04:27.870
+ring, and then--
+
+00:04:27.870 --> 00:04:29.120
+ROB DODSON: Well, there's no--
+
+00:04:29.120 --> 00:04:30.400
+I mean, you just use outline.
+
+00:04:30.400 --> 00:04:30.970
+SURMA: Oh, outline.
+
+00:04:30.970 --> 00:04:32.840
+ROB DODSON: Right-- for
+your focus indicator.
+
+00:04:32.840 --> 00:04:33.270
+Yeah.
+
+00:04:33.270 --> 00:04:34.550
+SURMA: That's outline,
+but isn't the--
+
+00:04:34.550 --> 00:04:36.085
+ROB DODSON: Focus visible
+used to be called focus ring,
+
+00:04:36.085 --> 00:04:36.660
+actually, and we renamed it.
+
+00:04:36.660 --> 00:04:37.890
+SURMA: Oh, that's
+the same thing?
+
+00:04:37.890 --> 00:04:38.598
+ROB DODSON: Yeah.
+
+00:04:38.598 --> 00:04:41.227
+SURMA: So, can I do-- because
+by default, the outline
+
+00:04:41.227 --> 00:04:42.310
+is kind of blurred, right?
+
+00:04:42.310 --> 00:04:43.400
+It fades out.
+
+00:04:43.400 --> 00:04:44.584
+Can I do that?
+
+00:04:44.584 --> 00:04:45.250
+ROB DODSON: Yes.
+
+00:04:45.250 --> 00:04:47.780
+So someone was telling me
+if you just do outline auto,
+
+00:04:47.780 --> 00:04:50.420
+it should revert to that, but
+that actual-- so the blue thing
+
+00:04:50.420 --> 00:04:53.600
+that you see there is in
+the user agent style sheet.
+
+00:04:53.600 --> 00:04:54.350
+It's kind of cool.
+
+00:04:54.350 --> 00:04:55.730
+If you just open up--
+
+00:04:55.730 --> 00:05:01.520
+what is it-- cs.chromium.org,
+and type in HTML.css, that's
+
+00:05:01.520 --> 00:05:03.972
+all the styles in the browser,
+is that file, and that's
+
+00:05:03.972 --> 00:05:06.430
+the kind of thing that I kind
+of got to discover on the eng
+
+00:05:06.430 --> 00:05:08.030
+rotation, is you can just go
+in there and you could be like,
+
+00:05:08.030 --> 00:05:10.060
+I can just change
+this if I want.
+
+00:05:10.060 --> 00:05:13.060
+SURMA: You will see interesting
+units like the QEMs--
+
+00:05:13.060 --> 00:05:13.922
+the quirky EMs.
+
+00:05:13.922 --> 00:05:14.630
+ROB DODSON: Yeah.
+
+00:05:14.630 --> 00:05:15.134
+Weird stuff.
+
+00:05:15.134 --> 00:05:15.800
+It's just like--
+
+00:05:15.800 --> 00:05:16.715
+[INTERPOSING VOICES]
+
+00:05:16.715 --> 00:05:19.352
+JAKE: So when you're saying
+it's heuristics-based, I mean,
+
+00:05:19.352 --> 00:05:20.810
+how do you get that
+for a standard?
+
+00:05:20.810 --> 00:05:22.900
+ROB DODSON: So actually,
+we're still working on that.
+
+00:05:22.900 --> 00:05:25.316
+That was some of the feedback
+that we got, which was like,
+
+00:05:25.316 --> 00:05:28.380
+we want to know more about the
+conformance for this thing.
+
+00:05:28.380 --> 00:05:31.700
+So we're working on a patch
+right now to really explain
+
+00:05:31.700 --> 00:05:34.250
+when we think it's beneficial.
+
+00:05:34.250 --> 00:05:38.157
+And so typically
+for anything where
+
+00:05:38.157 --> 00:05:40.490
+you know the user is going
+to be providing some keyboard
+
+00:05:40.490 --> 00:05:42.492
+input, like a text field
+or something like that,
+
+00:05:42.492 --> 00:05:44.200
+you probably always
+want to show it then.
+
+00:05:44.200 --> 00:05:47.000
+Whereas for something where
+the only action is literally
+
+00:05:47.000 --> 00:05:47.990
+click a thing--
+
+00:05:47.990 --> 00:05:50.190
+like a button, or a
+slider knob or something--
+
+00:05:50.190 --> 00:05:52.050
+you maybe don't want
+it in those cases.
+
+00:05:52.050 --> 00:05:54.770
+So it kind of depends on the
+intent of the interaction
+
+00:05:54.770 --> 00:05:55.770
+and everything.
+
+00:05:55.770 --> 00:05:58.860
+SURMA: But in the end, it's
+going to be left to the UA
+
+00:05:58.860 --> 00:05:59.912
+to decide what--
+
+00:05:59.912 --> 00:06:00.620
+ROB DODSON: Yeah.
+
+00:06:00.620 --> 00:06:03.290
+Ultimately-- so there'll be
+some conformance criteria
+
+00:06:03.290 --> 00:06:05.600
+that we're going to recommend,
+and hopefully everyone
+
+00:06:05.600 --> 00:06:08.411
+would follow that, because you
+would want it to be consistent,
+
+00:06:08.411 --> 00:06:10.160
+because otherwise it
+ends up with just yet
+
+00:06:10.160 --> 00:06:11.800
+another kind of broken
+focus experience.
+
+00:06:11.800 --> 00:06:12.300
+SURMA: Yeah.
+
+00:06:12.300 --> 00:06:13.314
+That makes sense.
+
+00:06:13.314 --> 00:06:15.480
+JAKE: So you're speaking
+about accessibility, right,
+
+00:06:15.480 --> 00:06:17.570
+at I/O. Is that Focus
+Ring, or are you
+
+00:06:17.570 --> 00:06:18.950
+covering other stuff as well?
+
+00:06:18.950 --> 00:06:20.616
+ROB DODSON: Yeah, so
+we're going to talk
+
+00:06:20.616 --> 00:06:21.950
+about what's new in DevTools.
+
+00:06:21.950 --> 00:06:23.750
+So there's some cool
+accessibility stuff
+
+00:06:23.750 --> 00:06:26.270
+that we've added there,
+talk about Focus Visible,
+
+00:06:26.270 --> 00:06:27.770
+and then the other
+thing we're going
+
+00:06:27.770 --> 00:06:30.422
+to talk about in the second
+half, Dominic Mazzoni, who
+
+00:06:30.422 --> 00:06:31.880
+is an engineer on
+the blink team is
+
+00:06:31.880 --> 00:06:34.046
+going to come up and talk
+about accessibility object
+
+00:06:34.046 --> 00:06:35.080
+model, which is--
+
+00:06:35.080 --> 00:06:36.080
+SURMA: The infamous AOM.
+
+00:06:36.080 --> 00:06:36.746
+ROB DODSON: Yes.
+
+00:06:36.746 --> 00:06:38.400
+Or "ay-ahm,"
+depending on how you--
+
+00:06:38.400 --> 00:06:38.960
+SURMA: The "ay-ahm."
+
+00:06:38.960 --> 00:06:40.570
+ROB DODSON: --depending on
+the camp that you fall in.
+
+00:06:40.570 --> 00:06:42.650
+So yeah, that's actually
+a way to just create
+
+00:06:42.650 --> 00:06:45.377
+your own virtual
+accessibility tree,
+
+00:06:45.377 --> 00:06:46.460
+listen for accessibility--
+
+00:06:46.460 --> 00:06:48.460
+SURMA: Well, let's stop
+there, because what even
+
+00:06:48.460 --> 00:06:49.880
+is an accessibility tree?
+
+00:06:49.880 --> 00:06:50.270
+ROB DODSON: Oh, OK.
+
+00:06:50.270 --> 00:06:50.435
+Yeah.
+
+00:06:50.435 --> 00:06:51.960
+So that's actually
+a good question.
+
+00:06:51.960 --> 00:06:53.459
+So this is something
+I didn't really
+
+00:06:53.459 --> 00:06:54.590
+understand for a long time.
+
+00:06:54.590 --> 00:06:57.230
+I was like, how does the
+browser make a screen reader say
+
+00:06:57.230 --> 00:06:58.312
+the things that it says?
+
+00:06:58.312 --> 00:07:00.270
+And it was always just
+kind of a mystery to me.
+
+00:07:00.270 --> 00:07:02.340
+But basically it's like
+you've got your HTML--
+
+00:07:02.340 --> 00:07:03.350
+SURMA: Which is a tree.
+
+00:07:03.350 --> 00:07:04.470
+ROB DODSON: Right.
+
+00:07:04.470 --> 00:07:05.930
+That gets turned into DOM--
+
+00:07:05.930 --> 00:07:08.850
+which, developers are
+familiar with that.
+
+00:07:08.850 --> 00:07:11.120
+But then the browser
+does this one extra step,
+
+00:07:11.120 --> 00:07:12.200
+where it takes the
+DOM and it sort of
+
+00:07:12.200 --> 00:07:13.740
+prunes out all the
+parts that are not
+
+00:07:13.740 --> 00:07:14.781
+semantically interesting.
+
+00:07:14.781 --> 00:07:17.360
+So if you've got a bunch of
+divs just for positioning things
+
+00:07:17.360 --> 00:07:20.150
+on screen, it just sort
+of throws those away.
+
+00:07:20.150 --> 00:07:23.924
+It builds this sparse tree
+of just the semantic goodies,
+
+00:07:23.924 --> 00:07:25.340
+and that's the
+accessibility tree,
+
+00:07:25.340 --> 00:07:26.450
+and that's what
+actually gets handed off
+
+00:07:26.450 --> 00:07:27.750
+to assistive technology.
+
+00:07:27.750 --> 00:07:30.800
+JAKE: So it's if I do something
+like area hidden, then that's
+
+00:07:30.800 --> 00:07:32.930
+my instruction to say, don't put
+this in the accessibility tree.
+
+00:07:32.930 --> 00:07:35.240
+ROB DODSON: Yeah, you're pruning
+out a whole chunk of the DOM
+
+00:07:35.240 --> 00:07:36.410
+from the accessibility tree.
+
+00:07:36.410 --> 00:07:38.993
+SURMA: I mean, it kind of sounds
+similar, coming from the CSS,
+
+00:07:38.993 --> 00:07:40.697
+like display non--
+
+00:07:40.697 --> 00:07:43.030
+remove something from the
+rendering tree, which you also
+
+00:07:43.030 --> 00:07:43.270
+have.
+
+00:07:43.270 --> 00:07:44.740
+ROB DODSON: And also removes
+it from the accessibility tree.
+
+00:07:44.740 --> 00:07:45.239
+Yeah.
+
+00:07:45.239 --> 00:07:46.410
+SURMA: It's so many trees.
+
+00:07:46.410 --> 00:07:46.520
+ROB DODSON: Yes.
+
+00:07:46.520 --> 00:07:47.300
+There are trees
+all the way down.
+
+00:07:47.300 --> 00:07:49.310
+JAKE: So we're actually
+getting access to this tree?
+
+00:07:49.310 --> 00:07:49.760
+ROB DODSON: Yeah.
+
+00:07:49.760 --> 00:07:52.160
+What you'll be able to do--
+there's kind of a few things.
+
+00:07:52.160 --> 00:07:54.770
+You'll be able to listen to
+certain events that previously
+
+00:07:54.770 --> 00:07:57.205
+were only available through
+accessible technology.
+
+00:07:57.205 --> 00:07:58.580
+And the other
+thing you can do is
+
+00:07:58.580 --> 00:08:00.080
+you can actually
+just kind of create
+
+00:08:00.080 --> 00:08:01.880
+virtual branches
+of the tree if you
+
+00:08:01.880 --> 00:08:03.630
+want I think of it that way.
+
+00:08:03.630 --> 00:08:04.280
+SURMA: That's probably
+really [INAUDIBLE]
+
+00:08:04.280 --> 00:08:05.720
+for like, for example,
+Canvas, right?
+
+00:08:05.720 --> 00:08:06.720
+ROB DODSON: Indeed, yes.
+
+00:08:06.720 --> 00:08:09.860
+Canvas-- if you're building
+WebGL, maybe some kind of SVG
+
+00:08:09.860 --> 00:08:12.590
+that's hard to make
+accessible, or maybe even just
+
+00:08:12.590 --> 00:08:14.487
+like a regular DOM component.
+
+00:08:14.487 --> 00:08:16.820
+For the longest time, it's
+been really, really difficult
+
+00:08:16.820 --> 00:08:18.653
+in some situations where
+you have something,
+
+00:08:18.653 --> 00:08:21.760
+and in Canvas, it's
+almost like a black box,
+
+00:08:21.760 --> 00:08:24.330
+but DOM it could be just
+a really elaborate thing
+
+00:08:24.330 --> 00:08:25.780
+for something presentational.
+
+00:08:25.780 --> 00:08:27.410
+But now you can just hook in
+there, and you can just say,
+
+00:08:27.410 --> 00:08:28.220
+you know what--
+
+00:08:28.220 --> 00:08:28.880
+SURMA: I know better.
+
+00:08:28.880 --> 00:08:29.180
+ROB DODSON: Exactly.
+
+00:08:29.180 --> 00:08:31.346
+You're like, I know this
+is all weird and elaborate,
+
+00:08:31.346 --> 00:08:33.513
+but here's the actual thing
+I want to be represented
+
+00:08:33.513 --> 00:08:34.595
+in the accessibility tree.
+
+00:08:34.595 --> 00:08:36.090
+SURMA: Is that pure
+JavaScript API,
+
+00:08:36.090 --> 00:08:38.929
+or are we going to
+be markup as well?
+
+00:08:38.929 --> 00:08:42.274
+ROB DODSON: It'll be pure
+JavaScript, at least initially.
+
+00:08:42.274 --> 00:08:42.940
+SURMA: OK, sure.
+
+00:08:42.940 --> 00:08:43.940
+ROB DODSON: But yeah.
+
+00:08:43.940 --> 00:08:46.120
+So it'll be all JavaScript.
+
+00:08:46.120 --> 00:08:48.950
+JAKE: So one of the struggles,
+I think, with accessibility
+
+00:08:48.950 --> 00:08:52.300
+is getting developers
+to care about it.
+
+00:08:52.300 --> 00:08:55.970
+And I felt like performance
+is in that bucket as well.
+
+00:08:55.970 --> 00:08:59.057
+It's slightly difficult
+to get budget for that,
+
+00:08:59.057 --> 00:09:00.640
+even though I would
+say, well, I think
+
+00:09:00.640 --> 00:09:03.139
+accessibility is a lot of people
+who get real value from it,
+
+00:09:03.139 --> 00:09:05.190
+and with performance as well.
+
+00:09:05.190 --> 00:09:06.760
+With performance,
+I feel like AMP
+
+00:09:06.760 --> 00:09:09.590
+has done a really good job
+of taking that to businesses
+
+00:09:09.590 --> 00:09:11.090
+and saying performance
+is important.
+
+00:09:11.090 --> 00:09:12.590
+SURMA: Making it
+the default, right?
+
+00:09:12.590 --> 00:09:13.160
+JAKE: Yeah.
+
+00:09:13.160 --> 00:09:15.482
+What can we do for accessibility
+to achieve the same?
+
+00:09:15.482 --> 00:09:16.190
+ROB DODSON: Yeah.
+
+00:09:16.190 --> 00:09:19.940
+So it's tough, because
+accessibility--
+
+00:09:19.940 --> 00:09:21.950
+because the area is really
+broad, some of things
+
+00:09:21.950 --> 00:09:24.500
+fall into user
+experience and design.
+
+00:09:24.500 --> 00:09:26.870
+So color contrast and
+stuff like that, people
+
+00:09:26.870 --> 00:09:29.210
+tend to pick that up,
+and incorporate it
+
+00:09:29.210 --> 00:09:32.015
+into their design process
+a little bit better.
+
+00:09:32.015 --> 00:09:33.640
+You get into other
+areas, though, like,
+
+00:09:33.640 --> 00:09:35.805
+screen reader support in
+Aria, and a lot of people
+
+00:09:35.805 --> 00:09:37.680
+are like, well, that's
+not my problem, right.
+
+00:09:37.680 --> 00:09:39.050
+It's sort of out of
+sight, out of mind.
+
+00:09:39.050 --> 00:09:40.010
+If it's not something
+that's directly
+
+00:09:40.010 --> 00:09:41.150
+affecting the developer,
+they kind of just
+
+00:09:41.150 --> 00:09:42.530
+don't care about it.
+
+00:09:42.530 --> 00:09:45.710
+So I think what has been really
+successful for a lot of teams
+
+00:09:45.710 --> 00:09:49.230
+has been doing a more
+inclusive design approach,
+
+00:09:49.230 --> 00:09:51.380
+so making sure that
+you're bringing in people
+
+00:09:51.380 --> 00:09:54.560
+who may have disabilities or
+impairments into the design
+
+00:09:54.560 --> 00:09:56.900
+phase-- into the
+product testing phase.
+
+00:09:56.900 --> 00:10:00.680
+And you know, even also making
+sure that you're employing
+
+00:10:00.680 --> 00:10:02.180
+those folks on your team, even.
+
+00:10:02.180 --> 00:10:04.555
+Engineers on your team might
+have disabilities and things
+
+00:10:04.555 --> 00:10:06.096
+like that, because
+if it doesn't work
+
+00:10:06.096 --> 00:10:07.770
+for literally the
+engineer on the team,
+
+00:10:07.770 --> 00:10:09.020
+it's not going to ship, right.
+
+00:10:09.020 --> 00:10:09.750
+SURMA: Pretty much.
+
+00:10:09.750 --> 00:10:11.583
+ROB DODSON: And so we
+need to just, I think,
+
+00:10:11.583 --> 00:10:14.210
+in general do a better
+job of including more
+
+00:10:14.210 --> 00:10:17.280
+people in our design practice.
+
+00:10:17.280 --> 00:10:19.280
+As a result, hopefully
+it just becomes something
+
+00:10:19.280 --> 00:10:21.874
+that everyone does as
+part of their daily habit.
+
+00:10:21.874 --> 00:10:23.790
+SURMA: Well, thank you
+so much for joining us.
+
+00:10:23.790 --> 00:10:24.040
+ROB DODSON: Thank you
+all for having me.
+
+00:10:24.040 --> 00:10:25.874
+SURMA: Good luck
+with your talk, and--
+
+00:10:28.234 --> 00:10:29.067
+[INTERPOSING VOICES]
+
+00:10:29.067 --> 00:10:30.610
+I thought that was something.
+
+00:10:30.610 --> 00:10:31.610
+JAKE: You can't do that.
+
+00:10:31.610 --> 00:10:33.780
+You can't set me up, and then
+look at me, and just say, and--
+
+00:10:33.780 --> 00:10:35.155
+SURMA: You've got
+to finish this.
+
+00:10:35.155 --> 00:10:36.096
+JAKE: And ta-da.
+
+00:10:36.096 --> 00:10:38.490
+ROB DODSON: I think I totally
+messed you up by saying,
+
+00:10:38.490 --> 00:10:39.490
+thank you for having me.
+
+00:10:39.490 --> 00:10:40.200
+SURMA: It's fine.
+
+00:10:40.200 --> 00:10:40.750
+It's fine.
+
+00:10:40.750 --> 00:10:42.500
+ROB DODSON: Do you
+want to try that again?
+
+00:10:42.500 --> 00:10:43.020
+SURMA: No.
+
+00:10:43.020 --> 00:10:43.180
+JAKE: No.
+
+00:10:43.180 --> 00:10:43.700
+SURMA: We're just
+going to leave this.
+
+00:10:43.700 --> 00:10:44.360
+ROB DODSON: Oh, OK.
+
+00:10:44.360 --> 00:10:45.568
+JAKE: This is ending, though.
+
+00:10:45.568 --> 00:10:46.540
+ROB DODSON: All right.
+
+00:10:46.540 --> 00:10:47.600
+All right, well,
+
+00:10:47.600 --> 00:10:48.640
+JAKE: We're going to
+keep dragging it out
+
+00:10:48.640 --> 00:10:51.015
+like the final "Lord of the
+Rings," like so many endings.
+
+00:10:51.015 --> 00:10:53.710
+ROB DODSON: Should we do a
+long fist bump or something?
+
+00:10:53.710 --> 00:10:54.710
+JAKE: When is your talk?
+
+00:10:54.710 --> 00:10:55.418
+It's soon, right?
+
+00:10:55.418 --> 00:10:57.960
+So we're just going to go
+straight-- this ending is going
+
+00:10:57.960 --> 00:10:58.930
+to last straight into the talk.
+
+00:10:58.930 --> 00:10:59.260
+ROB DODSON: Right into the talk.
+
+00:10:59.260 --> 00:11:00.134
+OK; that's good.
+
+00:11:00.134 --> 00:11:00.800
+JAKE: All right.
+
+00:11:00.800 --> 00:11:01.220
+ROB DODSON: All right.
+
+00:11:01.220 --> 00:11:01.610
+JAKE: All right.
+
+00:11:01.610 --> 00:11:01.970
+ROB DODSON: All right.
+
+00:11:01.970 --> 00:11:02.470
+JAKE: Cool.
+
+00:11:02.470 --> 00:11:04.120
+[LAUGHTER]
+

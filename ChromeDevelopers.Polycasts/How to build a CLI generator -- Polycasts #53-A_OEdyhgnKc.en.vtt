@@ -1,0 +1,1134 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.746 --> 00:00:05.370
+ROB DODSON: Hey there,
+folks, Rob here.
+
+00:00:05.370 --> 00:00:06.650
+Welcome back to the show.
+
+00:00:06.650 --> 00:00:08.300
+In the last episode,
+I was showing off
+
+00:00:08.300 --> 00:00:12.270
+Polymer Starter Kit 2, one of
+our new Polymer CLI generators.
+
+00:00:12.270 --> 00:00:14.720
+Today, I thought it would be
+really cool to demonstrate
+
+00:00:14.720 --> 00:00:18.940
+how you can actually build your
+own generator for Polymer CLI.
+
+00:00:18.940 --> 00:00:21.070
+So follow me over
+here to my laptop.
+
+00:00:21.070 --> 00:00:23.420
+And where we want to
+start is over here
+
+00:00:23.420 --> 00:00:24.900
+on the Yeoman website.
+
+00:00:24.900 --> 00:00:27.590
+A Polymer CLI generator,
+under the hood,
+
+00:00:27.590 --> 00:00:29.890
+is really just a
+Yeoman generator.
+
+00:00:29.890 --> 00:00:31.840
+And if you haven't
+heard of Yeoman before,
+
+00:00:31.840 --> 00:00:34.290
+it's a little utility
+for scaffolding out
+
+00:00:34.290 --> 00:00:35.100
+projects for you.
+
+00:00:35.100 --> 00:00:37.560
+So it'll stamp out
+your files, it'll
+
+00:00:37.560 --> 00:00:40.790
+do a little bit of variable
+substitution and renaming
+
+00:00:40.790 --> 00:00:43.447
+for you, and it's generally
+a very useful tool
+
+00:00:43.447 --> 00:00:45.280
+for just kind of like
+getting up and running
+
+00:00:45.280 --> 00:00:46.860
+with a nice boilerplate.
+
+00:00:46.860 --> 00:00:48.680
+So the first thing
+we're going to do
+
+00:00:48.680 --> 00:00:50.570
+is we're going to go
+over to our terminal,
+
+00:00:50.570 --> 00:00:51.729
+and we're going to run npm.
+
+00:00:51.729 --> 00:00:53.270
+I'll bump this up
+a little bit so you
+
+00:00:53.270 --> 00:00:56.610
+can see it-- npm install -g.
+
+00:00:56.610 --> 00:00:58.210
+So we're going to
+globally install
+
+00:00:58.210 --> 00:01:00.616
+yo, which is the
+command for Yeoman,
+
+00:01:00.616 --> 00:01:02.365
+and this thing called
+generator-generator.
+
+00:01:05.060 --> 00:01:07.450
+And that's actually
+a Yeoman generator
+
+00:01:07.450 --> 00:01:11.520
+that will generate Yeoman
+generators for you.
+
+00:01:11.520 --> 00:01:12.860
+So you can run that command.
+
+00:01:12.860 --> 00:01:15.020
+It'll take a second to install.
+
+00:01:15.020 --> 00:01:16.970
+And then, I'm going to
+go over to my desktop,
+
+00:01:16.970 --> 00:01:18.980
+and I'm going to
+make a new directory.
+
+00:01:18.980 --> 00:01:22.340
+And every Polymer
+CLI generator needs
+
+00:01:22.340 --> 00:01:25.113
+to start with the prefix
+generator-polymer-init.
+
+00:01:28.200 --> 00:01:30.590
+And then you can give
+it whatever name you
+
+00:01:30.590 --> 00:01:32.060
+want for your own generator.
+
+00:01:32.060 --> 00:01:34.770
+So I'm going to call
+this template-seed.
+
+00:01:34.770 --> 00:01:36.450
+So it's a bit of
+a long name there.
+
+00:01:36.450 --> 00:01:38.240
+But that prefix is
+really important
+
+00:01:38.240 --> 00:01:40.800
+because that prefix gets
+picked up by Polymer CLI
+
+00:01:40.800 --> 00:01:42.780
+after you've installed
+the generator.
+
+00:01:42.780 --> 00:01:44.497
+And that's how it
+actually can tell you,
+
+00:01:44.497 --> 00:01:46.330
+hey, this is the thing
+that we want to init.
+
+00:01:46.330 --> 00:01:47.830
+So I'm going to
+make that directory.
+
+00:01:47.830 --> 00:01:51.480
+I'm going to cd into generator
+polymer -init tempate seed.
+
+00:01:51.480 --> 00:01:53.420
+Now I'm going to run yo.
+
+00:01:53.420 --> 00:01:55.550
+And it will give me a
+few options for things
+
+00:01:55.550 --> 00:01:56.670
+that I can generate.
+
+00:01:56.670 --> 00:01:59.520
+I've got a few other
+generators already installed.
+
+00:01:59.520 --> 00:02:02.640
+But the one I want is this one
+that's just called generator.
+
+00:02:02.640 --> 00:02:06.104
+So I'll do that, and it's
+going to ask me some questions.
+
+00:02:06.104 --> 00:02:07.520
+I'm just going to
+fly through here
+
+00:02:07.520 --> 00:02:09.103
+and just take all
+the defaults, right?
+
+00:02:09.103 --> 00:02:10.600
+Skip all that stuff.
+
+00:02:10.600 --> 00:02:11.900
+And it'll take a second.
+
+00:02:11.900 --> 00:02:14.460
+It's going to stamp out
+a bunch of files for me.
+
+00:02:14.460 --> 00:02:17.790
+And it's also going to in npm
+install all of the dependencies
+
+00:02:17.790 --> 00:02:19.410
+to make Yeoman run.
+
+00:02:19.410 --> 00:02:24.560
+So we'll wait a moment for that
+to do its thing-- npm install
+
+00:02:24.560 --> 00:02:25.570
+takes a very long time.
+
+00:02:25.570 --> 00:02:26.070
+All right.
+
+00:02:26.070 --> 00:02:26.653
+So we're done.
+
+00:02:26.653 --> 00:02:28.840
+We've installed all
+of our dependencies.
+
+00:02:28.840 --> 00:02:31.930
+And I'm going to open
+this up in my Code Editor.
+
+00:02:31.930 --> 00:02:35.064
+So over here in our
+Code Editor, I will--
+
+00:02:35.064 --> 00:02:36.480
+I'm going to
+[? embiggen ?] things
+
+00:02:36.480 --> 00:02:38.230
+a little bit so you can see.
+
+00:02:38.230 --> 00:02:42.580
+It created a number of files
+for me-- package_json, readme,
+
+00:02:42.580 --> 00:02:43.930
+bunch of stuff.
+
+00:02:43.930 --> 00:02:47.780
+The one that I really care about
+is this generators directory
+
+00:02:47.780 --> 00:02:48.980
+inside of here.
+
+00:02:48.980 --> 00:02:51.137
+It's got an app directory.
+
+00:02:51.137 --> 00:02:53.470
+It's got a templates directory,
+which right now contains
+
+00:02:53.470 --> 00:02:55.480
+this one file called
+dummyfile.txt,
+
+00:02:55.480 --> 00:02:58.624
+and then it's got
+this index_js file.
+
+00:02:58.624 --> 00:02:59.540
+So let's open that up.
+
+00:02:59.540 --> 00:03:00.960
+We'll look at the index_js file.
+
+00:03:00.960 --> 00:03:03.560
+There's a lot of JavaScript
+here, but most of this
+
+00:03:03.560 --> 00:03:06.720
+is stuff that you don't really
+need to worry too much about.
+
+00:03:06.720 --> 00:03:09.930
+Basically, there is a little
+section here at the top,
+
+00:03:09.930 --> 00:03:13.850
+in this prompting function,
+where it will sort of speak
+
+00:03:13.850 --> 00:03:15.100
+to the user in their terminal.
+
+00:03:15.100 --> 00:03:17.600
+It'll ask them questions
+about the project
+
+00:03:17.600 --> 00:03:18.830
+that they are setting up.
+
+00:03:18.830 --> 00:03:21.400
+This is a good place for
+you to create variables
+
+00:03:21.400 --> 00:03:24.270
+that you can then use
+elsewhere in your templates.
+
+00:03:24.270 --> 00:03:26.320
+So for instance,
+right now it's just
+
+00:03:26.320 --> 00:03:28.950
+got this default
+example prompt here.
+
+00:03:28.950 --> 00:03:32.050
+It's a confirm style prompt,
+so a yes or no prompt.
+
+00:03:32.050 --> 00:03:35.270
+And it's going to ask you, would
+you like to enable this option?
+
+00:03:35.270 --> 00:03:37.017
+Just sort of like
+made something up.
+
+00:03:37.017 --> 00:03:39.100
+In our case, what I want
+to do in our generator is
+
+00:03:39.100 --> 00:03:41.590
+I want to have kind
+of a default element
+
+00:03:41.590 --> 00:03:43.420
+that the user uses as
+sort of like the root
+
+00:03:43.420 --> 00:03:45.140
+of their application.
+
+00:03:45.140 --> 00:03:48.860
+So we'll change this
+to an input prompt.
+
+00:03:48.860 --> 00:03:54.260
+We're going to change the name
+of the variable to elementName.
+
+00:03:54.260 --> 00:03:57.500
+The question is going to be,
+what would you like your root
+
+00:03:57.500 --> 00:04:00.790
+element to be called?
+
+00:04:00.790 --> 00:04:05.120
+And we're going to give it a
+default value of my-element.
+
+00:04:05.120 --> 00:04:07.300
+So now we've got this
+elementName property
+
+00:04:07.300 --> 00:04:09.610
+that's just available to
+us throughout the rest
+
+00:04:09.610 --> 00:04:11.120
+of out template.
+
+00:04:11.120 --> 00:04:13.560
+Now, there's also
+this writing section.
+
+00:04:13.560 --> 00:04:15.360
+This is where it's
+going to copy all
+
+00:04:15.360 --> 00:04:18.029
+the files from this
+templates directory
+
+00:04:18.029 --> 00:04:19.737
+onto the user's computer.
+
+00:04:19.737 --> 00:04:21.320
+So in this case, you
+can see that it's
+
+00:04:21.320 --> 00:04:25.750
+copying that dummy text
+file from the template path,
+
+00:04:25.750 --> 00:04:27.930
+and stumping it to the
+destination path, which
+
+00:04:27.930 --> 00:04:30.572
+is basically whichever directory
+the user is currently in.
+
+00:04:30.572 --> 00:04:33.030
+So what I want to do now is
+actually, instead of just using
+
+00:04:33.030 --> 00:04:37.140
+this one dummy file, I want to
+have a few real project files.
+
+00:04:37.140 --> 00:04:39.490
+And I'm going to go over
+to Polymer Starter Kit
+
+00:04:39.490 --> 00:04:41.940
+and just steal a few
+things from here.
+
+00:04:41.940 --> 00:04:44.060
+So we know we want
+to bower_json.
+
+00:04:44.060 --> 00:04:45.920
+So I will open this file up.
+
+00:04:45.920 --> 00:04:49.200
+I'm going to grab its contents.
+
+00:04:49.200 --> 00:04:52.910
+And because this is like a
+pretty simplified generator,
+
+00:04:52.910 --> 00:04:55.334
+I'm just going to
+really slim this down.
+
+00:04:55.334 --> 00:04:56.750
+So I'll say the
+name of my project
+
+00:04:56.750 --> 00:04:58.116
+is just going to be my-project.
+
+00:05:01.630 --> 00:05:03.432
+Authors are whoever.
+
+00:05:03.432 --> 00:05:05.140
+The dependencies, I'll
+just say right now
+
+00:05:05.140 --> 00:05:07.510
+that the only dependency
+is Polymer itself.
+
+00:05:07.510 --> 00:05:10.080
+Maybe this is like a really
+tiny generator to get people up
+
+00:05:10.080 --> 00:05:12.370
+and running really fast.
+
+00:05:12.370 --> 00:05:14.970
+So this is like the
+world's smallest bower_json
+
+00:05:14.970 --> 00:05:16.340
+file that we could have.
+
+00:05:16.340 --> 00:05:17.880
+So we've got that.
+
+00:05:17.880 --> 00:05:21.320
+Now let's also create an
+index_html file-- always
+
+00:05:21.320 --> 00:05:23.010
+want to have one of those.
+
+00:05:23.010 --> 00:05:25.250
+Again, we'll go over
+to Polymer Starter Kit,
+
+00:05:25.250 --> 00:05:28.110
+and maybe just steal the
+one that is over here.
+
+00:05:28.110 --> 00:05:30.560
+So we'll all right,
+give me the index file.
+
+00:05:30.560 --> 00:05:32.460
+OK.
+
+00:05:32.460 --> 00:05:35.490
+Just dump that in here.
+
+00:05:35.490 --> 00:05:37.910
+I can actually remove
+some of these things
+
+00:05:37.910 --> 00:05:39.560
+that I don't care about as much.
+
+00:05:39.560 --> 00:05:41.959
+So I'm not, for instance,
+going to-- maybe
+
+00:05:41.959 --> 00:05:44.250
+I'm not going to import a
+bunch of elements or anything
+
+00:05:44.250 --> 00:05:45.910
+like that.
+
+00:05:45.910 --> 00:05:48.830
+So let's see, we'll get rid
+of these critical styles.
+
+00:05:48.830 --> 00:05:50.950
+Maybe we don't care about those.
+
+00:05:50.950 --> 00:05:52.880
+The element name,
+we're actually going
+
+00:05:52.880 --> 00:05:55.890
+to ask for that
+name from the user.
+
+00:05:55.890 --> 00:05:59.750
+So instead of just having a hard
+coded element name right here,
+
+00:05:59.750 --> 00:06:03.510
+we're going to use some of
+Yeoman's templating syntax.
+
+00:06:03.510 --> 00:06:06.890
+So it actually uses the
+sort of-- the syntax kind
+
+00:06:06.890 --> 00:06:09.670
+of looks like this where if
+you want to expand a variable,
+
+00:06:09.670 --> 00:06:15.400
+you say bracket, percent sign,
+equals and then variable name,
+
+00:06:15.400 --> 00:06:16.930
+whatever that is.
+
+00:06:16.930 --> 00:06:18.780
+And then you say percent
+sign, and then you
+
+00:06:18.780 --> 00:06:19.940
+close the bracket, right?
+
+00:06:19.940 --> 00:06:22.090
+So this is how you do
+variable expansion in Yeoman.
+
+00:06:22.090 --> 00:06:25.870
+What I'm going to do is dump
+that into this tag here.
+
+00:06:25.870 --> 00:06:27.390
+So I'll say, all
+right, I want this
+
+00:06:27.390 --> 00:06:31.800
+to be that element name that I'm
+going to prompt the user for.
+
+00:06:31.800 --> 00:06:35.420
+And then, we're just
+going to close it and also
+
+00:06:35.420 --> 00:06:37.970
+say, hey, that should
+also be the element name.
+
+00:06:37.970 --> 00:06:42.860
+And we want to steal this and
+also use it for our import
+
+00:06:42.860 --> 00:06:43.520
+up here.
+
+00:06:43.520 --> 00:06:47.200
+So source directory, we're
+going to have whatever element
+
+00:06:47.200 --> 00:06:49.579
+name they want in there.
+
+00:06:49.579 --> 00:06:51.120
+Let's see, what else
+do we have here?
+
+00:06:51.120 --> 00:06:53.080
+We've got this little
+bit of JavaScript
+
+00:06:53.080 --> 00:06:56.330
+that is going to lazy load the
+web component's poly fills.
+
+00:06:56.330 --> 00:06:57.004
+That's good.
+
+00:06:57.004 --> 00:06:59.670
+Normally, we would-- if you want
+to build a progressive web app,
+
+00:06:59.670 --> 00:07:00.850
+you might ship a service worker.
+
+00:07:00.850 --> 00:07:02.010
+To keep things
+really simple, I'm
+
+00:07:02.010 --> 00:07:04.120
+actually going to remove
+this little chunk right here.
+
+00:07:04.120 --> 00:07:06.240
+So we won't worry about
+service workers right now.
+
+00:07:06.240 --> 00:07:09.640
+We're just going to have a
+super bare bones Polymer app.
+
+00:07:09.640 --> 00:07:12.540
+Otherwise, I think we can
+leave pretty much everything
+
+00:07:12.540 --> 00:07:14.530
+in this file.
+
+00:07:14.530 --> 00:07:18.940
+We can get rid of this
+dummy file, don't need that.
+
+00:07:18.940 --> 00:07:20.170
+Get rid of that.
+
+00:07:20.170 --> 00:07:22.010
+The last thing we
+want to do is we want
+
+00:07:22.010 --> 00:07:25.240
+to create a source directory.
+
+00:07:25.240 --> 00:07:27.720
+And inside of here, I'm
+going to create a file.
+
+00:07:27.720 --> 00:07:29.400
+And I'm going to call
+it _element.html.
+
+00:07:31.980 --> 00:07:32.860
+OK?
+
+00:07:32.860 --> 00:07:35.360
+And the reason why I'm doing
+this is because, remember,
+
+00:07:35.360 --> 00:07:37.580
+the element name is
+something that the user is
+
+00:07:37.580 --> 00:07:39.970
+going to pass into us
+as one of their prompts.
+
+00:07:39.970 --> 00:07:42.620
+And so, we don't
+want to hard code
+
+00:07:42.620 --> 00:07:44.150
+a filename for that element.
+
+00:07:44.150 --> 00:07:46.590
+Instead, we're going to
+also take that filename
+
+00:07:46.590 --> 00:07:50.340
+and generate it
+based on the answer
+
+00:07:50.340 --> 00:07:52.110
+that the user provides
+to the prompt.
+
+00:07:52.110 --> 00:07:56.340
+So the contents of this element
+are going to be super simple.
+
+00:07:56.340 --> 00:08:01.340
+We're actually just going to
+grab some boilerplate code here
+
+00:08:01.340 --> 00:08:02.630
+and dump that in.
+
+00:08:02.630 --> 00:08:05.170
+And what we're doing is we're
+importing Bower components.
+
+00:08:05.170 --> 00:08:07.310
+We've got our element name.
+
+00:08:07.310 --> 00:08:10.510
+Element name for the is
+property, element name
+
+00:08:10.510 --> 00:08:11.840
+for the value down here.
+
+00:08:11.840 --> 00:08:14.299
+So this is just sort of like
+a really, really basic Polymer
+
+00:08:14.299 --> 00:08:14.798
+element.
+
+00:08:14.798 --> 00:08:16.050
+It doesn't really do anything.
+
+00:08:16.050 --> 00:08:20.100
+It just sort of like says the
+value of one property inside
+
+00:08:20.100 --> 00:08:21.257
+of an H2.
+
+00:08:21.257 --> 00:08:22.840
+The cool thing that
+we're going to do,
+
+00:08:22.840 --> 00:08:25.962
+though, is we're going go
+back to that index_js file.
+
+00:08:25.962 --> 00:08:27.670
+Remember, this is the
+one where we prompt
+
+00:08:27.670 --> 00:08:29.230
+the user for the element name.
+
+00:08:29.230 --> 00:08:31.700
+And we have this little
+writing block here.
+
+00:08:31.700 --> 00:08:34.990
+And I'm going to replace that
+writing function with a custom
+
+00:08:34.990 --> 00:08:36.490
+one that I created earlier.
+
+00:08:36.490 --> 00:08:38.919
+And I'll walk you through
+what's happening here.
+
+00:08:38.919 --> 00:08:43.020
+So inside of this
+writing function,
+
+00:08:43.020 --> 00:08:47.210
+we are taking the element name,
+which we got from our prompts.
+
+00:08:47.210 --> 00:08:51.180
+This is stored inside of
+this props variable here.
+
+00:08:51.180 --> 00:08:53.430
+So we're creating a
+reference to that.
+
+00:08:53.430 --> 00:08:56.960
+And then we're saying that we
+want to copy our template files
+
+00:08:56.960 --> 00:08:59.690
+over to the user's machine.
+
+00:08:59.690 --> 00:09:02.130
+We're using a regular
+expression here though-- to say,
+
+00:09:02.130 --> 00:09:04.500
+hey, anything that starts
+with an underscore,
+
+00:09:04.500 --> 00:09:07.340
+like that element HTML file
+that we just created, hold off.
+
+00:09:07.340 --> 00:09:08.980
+Don't copy that just yet.
+
+00:09:08.980 --> 00:09:11.824
+Instead just copy everything
+that doesn't have an underscore
+
+00:09:11.824 --> 00:09:12.990
+over to the user's computer.
+
+00:09:12.990 --> 00:09:15.448
+That's stuff that we're not
+going to worry about templating
+
+00:09:15.448 --> 00:09:17.050
+or anything like that.
+
+00:09:17.050 --> 00:09:19.660
+And then we're going to
+specifically tell it to copy
+
+00:09:19.660 --> 00:09:23.150
+that _element.html file
+from the template path
+
+00:09:23.150 --> 00:09:24.950
+and into the destination.
+
+00:09:24.950 --> 00:09:28.950
+We're going to use an es
+template literal string
+
+00:09:28.950 --> 00:09:32.610
+to actually generate that file
+name based on the element name
+
+00:09:32.610 --> 00:09:35.220
+property that the
+user passed in.
+
+00:09:35.220 --> 00:09:38.080
+So I think we've got pretty
+much everything we have,
+
+00:09:38.080 --> 00:09:41.286
+or everything we need,
+to test our generator.
+
+00:09:41.286 --> 00:09:43.660
+The next thing that we want
+to do is actually hook it up.
+
+00:09:43.660 --> 00:09:45.243
+Now normally, what
+you do is you would
+
+00:09:45.243 --> 00:09:47.390
+publish this generator to npm.
+
+00:09:47.390 --> 00:09:50.090
+A user would
+globally install it.
+
+00:09:50.090 --> 00:09:52.300
+And then they could start
+using it using Polymer CLI.
+
+00:09:52.300 --> 00:09:53.800
+But before you do
+that, you probably
+
+00:09:53.800 --> 00:09:56.470
+want to test that the thing
+actually works, right?
+
+00:09:56.470 --> 00:09:59.610
+And so, to do this we can use
+a handy little npm command
+
+00:09:59.610 --> 00:10:01.860
+called npm link.
+
+00:10:01.860 --> 00:10:04.180
+So when I run this
+command, it's actually
+
+00:10:04.180 --> 00:10:07.420
+going to create a
+symbolic link on my system
+
+00:10:07.420 --> 00:10:08.750
+for this generator.
+
+00:10:08.750 --> 00:10:10.900
+It's as if I globally
+installed it.
+
+00:10:10.900 --> 00:10:13.560
+But really it's just linking
+to this directory on my file.
+
+00:10:13.560 --> 00:10:15.560
+So this is really, really
+useful any time you're
+
+00:10:15.560 --> 00:10:18.150
+testing any in npm library
+that you're working on.
+
+00:10:18.150 --> 00:10:19.700
+You can kind of
+pretend like you've
+
+00:10:19.700 --> 00:10:22.680
+got it installed on your
+computer, make local changes,
+
+00:10:22.680 --> 00:10:24.640
+and it will just
+update automatically.
+
+00:10:24.640 --> 00:10:27.030
+So now it's as if we
+globally installed it.
+
+00:10:27.030 --> 00:10:28.940
+So I can go over
+to my desktop now.
+
+00:10:28.940 --> 00:10:31.100
+And I'll bump this
+up a little bit.
+
+00:10:31.100 --> 00:10:32.920
+I'll make a new directory.
+
+00:10:32.920 --> 00:10:37.650
+I'll call it poly-foo, something
+like that, just cd in here.
+
+00:10:37.650 --> 00:10:41.090
+And then I'm going
+to run polymer-init.
+
+00:10:41.090 --> 00:10:44.510
+And we should now have
+this option down here
+
+00:10:44.510 --> 00:10:45.942
+for this template seed.
+
+00:10:45.942 --> 00:10:47.650
+Because remember, it's
+taking that prefix
+
+00:10:47.650 --> 00:10:50.550
+generator-polymer-init,
+it's chopping that part off.
+
+00:10:50.550 --> 00:10:53.660
+And it's just using the last
+part of our module name, which
+
+00:10:53.660 --> 00:10:55.750
+is template seed.
+
+00:10:55.750 --> 00:10:56.640
+Run this puppy.
+
+00:10:56.640 --> 00:10:57.750
+It's going to ask
+us some questions.
+
+00:10:57.750 --> 00:11:00.083
+Hey, what would you like your
+root element to be called?
+
+00:11:00.083 --> 00:11:01.580
+By default, it says my-element.
+
+00:11:01.580 --> 00:11:04.270
+I'm going to call it, instead,
+my-widget or something
+
+00:11:04.270 --> 00:11:05.880
+like that.
+
+00:11:05.880 --> 00:11:08.260
+And then it's going to
+copy that file over.
+
+00:11:08.260 --> 00:11:11.460
+It's going to run bower-install
+and install Polymer for us
+
+00:11:11.460 --> 00:11:13.900
+and our web
+components poly fills.
+
+00:11:13.900 --> 00:11:17.460
+So as that's running, let's see,
+it looks like it's finished.
+
+00:11:17.460 --> 00:11:19.970
+Now we could open
+up this project.
+
+00:11:19.970 --> 00:11:22.620
+And we can see over
+in our Code Editor
+
+00:11:22.620 --> 00:11:25.730
+that we have our
+index_html file.
+
+00:11:25.730 --> 00:11:28.320
+We bump this up a little
+bit so you can see it.
+
+00:11:28.320 --> 00:11:34.130
+And see that it is pulling in
+our my-widget element, right?
+
+00:11:34.130 --> 00:11:36.400
+We've got my widget
+down here in index_html.
+
+00:11:36.400 --> 00:11:38.860
+We've got my-widget in
+the source directory.
+
+00:11:38.860 --> 00:11:43.410
+So the last thing, really,
+is just to run polymer-serve.
+
+00:11:43.410 --> 00:11:45.160
+We're going to
+cross our fingers.
+
+00:11:45.160 --> 00:11:47.620
+And we're going to go
+over to local host 8080,
+
+00:11:47.620 --> 00:11:51.000
+and we should see right
+there, boom, hello my-widget
+
+00:11:51.000 --> 00:11:53.090
+just as we were expecting it.
+
+00:11:53.090 --> 00:11:54.670
+That about covers it for today.
+
+00:11:54.670 --> 00:11:56.940
+I would encourage all of
+you, if you want to, go
+
+00:11:56.940 --> 00:11:58.790
+start creating your
+own generators.
+
+00:11:58.790 --> 00:12:00.980
+Put them up on Github,
+put them up on npm.
+
+00:12:00.980 --> 00:12:01.486
+Ping me.
+
+00:12:01.486 --> 00:12:02.860
+Let me know when
+you create them.
+
+00:12:02.860 --> 00:12:04.860
+I definitely want to share
+them out to the world
+
+00:12:04.860 --> 00:12:06.980
+and get as many people
+building these cool CLI
+
+00:12:06.980 --> 00:12:08.337
+templates as possible.
+
+00:12:08.337 --> 00:12:10.170
+If you have any questions
+for me, as always,
+
+00:12:10.170 --> 00:12:11.820
+you can leave them
+down in the comments.
+
+00:12:11.820 --> 00:12:13.780
+Or ping me on a social
+network of your choosing
+
+00:12:13.780 --> 00:12:15.590
+at #AskPolymer.
+
+00:12:15.590 --> 00:12:17.430
+As always, thank you
+so much for watching.
+
+00:12:17.430 --> 00:12:18.420
+I'll see you next time.
+
+00:12:18.420 --> 00:12:21.770
+[MUSIC PLAYING]
+

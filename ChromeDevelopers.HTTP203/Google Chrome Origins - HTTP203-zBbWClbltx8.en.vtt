@@ -1,0 +1,1221 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.150 --> 00:00:02.490
+SURMA: We are getting
+bombarded with tree stuff now.
+
+00:00:02.490 --> 00:00:02.557
+JAKE: Yeah.
+
+00:00:02.557 --> 00:00:02.940
+I'll be on it.
+
+00:00:02.940 --> 00:00:03.270
+I'm on it.
+
+00:00:03.270 --> 00:00:03.770
+That's going to be my--
+
+00:00:03.770 --> 00:00:06.090
+SURMA: It's just, like, doing
+the picking the entire time.
+
+00:00:06.090 --> 00:00:07.440
+JAKE: Boo, boo, bep,
+boop, boop, beep, boop.
+
+00:00:07.440 --> 00:00:08.109
+DARIN FISHER: I'm back--
+
+00:00:08.109 --> 00:00:08.609
+camouflage.
+
+00:00:08.609 --> 00:00:09.266
+[LAUGHTER]
+
+00:00:09.266 --> 00:00:11.265
+SURMA: You're just blending
+into the background.
+
+00:00:11.265 --> 00:00:13.636
+DARIN FISHER: Yeah, blending
+in with the tree stuff.
+
+00:00:13.636 --> 00:00:16.594
+[MUSIC PLAYING]
+
+00:00:20.540 --> 00:00:22.020
+SURMA: Who are you, and why?
+
+00:00:22.020 --> 00:00:23.210
+DARIN FISHER: Who am I?
+
+00:00:23.210 --> 00:00:24.440
+I am Darin Fisher.
+
+00:00:24.440 --> 00:00:25.560
+I work on Chrome.
+
+00:00:25.560 --> 00:00:26.185
+SURMA: Welcome.
+
+00:00:26.185 --> 00:00:27.559
+DARIN FISHER:
+Chrome Engineering.
+
+00:00:27.559 --> 00:00:29.840
+JAKE: So you were there
+right at the start of Chrome.
+
+00:00:29.840 --> 00:00:30.125
+DARIN FISHER: Yes.
+
+00:00:30.125 --> 00:00:30.410
+Yes.
+
+00:00:30.410 --> 00:00:30.610
+JAKE: Right?
+
+00:00:30.610 --> 00:00:31.190
+You've been--
+
+00:00:31.190 --> 00:00:33.860
+DARIN FISHER: Middle of
+2006, we got started coding.
+
+00:00:33.860 --> 00:00:35.810
+SURMA: So-- wait, 2006?
+
+00:00:35.810 --> 00:00:36.771
+DARIN FISHER: 2006.
+
+00:00:36.771 --> 00:00:37.270
+JAKE: Oh.
+
+00:00:37.270 --> 00:00:39.120
+DARIN FISHER: Chrome launched
+in 2008, but we started in 2006.
+
+00:00:39.120 --> 00:00:39.570
+SURMA: Oh, the launch.
+
+00:00:39.570 --> 00:00:40.370
+Because I was
+like, wait, wait, I
+
+00:00:40.370 --> 00:00:41.525
+hope you're talking about
+the 10-year anniversary.
+
+00:00:41.525 --> 00:00:42.660
+Like, it's 12 years now.
+
+00:00:42.660 --> 00:00:42.757
+DARIN FISHER: Yeah.
+
+00:00:42.757 --> 00:00:44.570
+That's why I tell
+people, like, 10 years?
+
+00:00:44.570 --> 00:00:45.890
+It's been 12.
+
+00:00:45.890 --> 00:00:47.870
+JAKE: It takes two years
+to build a browser?
+
+00:00:47.870 --> 00:00:49.770
+DARIN FISHER: It took two
+years to build a browser.
+
+00:00:49.770 --> 00:00:51.895
+Now, mind you, that's
+without the rendering engine.
+
+00:00:51.895 --> 00:00:52.875
+We just used WebKit.
+
+00:00:52.875 --> 00:00:54.410
+SURMA: We were
+WebKit-based, yeah.
+
+00:00:54.410 --> 00:00:55.650
+That already existed.
+
+00:00:55.650 --> 00:00:56.800
+DARIN FISHER: And when
+I say we didn't have,
+
+00:00:56.800 --> 00:00:59.600
+in the beginning, a team that
+could go and build a rendering
+
+00:00:59.600 --> 00:01:00.950
+engine like that, so--
+
+00:01:00.950 --> 00:01:02.150
+SURMA: I mean, that's an
+undertaking, isn't it?
+
+00:01:02.150 --> 00:01:02.840
+JAKE: Yeah.
+
+00:01:02.840 --> 00:01:04.580
+SURMA: How many people
+were there at the start?
+
+00:01:04.580 --> 00:01:05.780
+DARIN FISHER: Well,
+we were actually--
+
+00:01:05.780 --> 00:01:08.405
+you have to go back-- rewind the
+clock a little bit, because we
+
+00:01:08.405 --> 00:01:10.850
+were a team at Google
+working on Firefox.
+
+00:01:10.850 --> 00:01:12.220
+And the whole idea--
+
+00:01:12.220 --> 00:01:13.220
+SURMA: That's a sentence
+I didn't expect.
+
+00:01:13.220 --> 00:01:14.011
+DARIN FISHER: Yeah.
+
+00:01:14.011 --> 00:01:16.730
+So for about a year and a half.
+
+00:01:16.730 --> 00:01:19.980
+I joined Google beginning
+of January 2005.
+
+00:01:19.980 --> 00:01:24.230
+So we had a little, small
+team bootstrapped out
+
+00:01:24.230 --> 00:01:27.260
+of Google Security
+to invest in making
+
+00:01:27.260 --> 00:01:28.700
+web browsers work better.
+
+00:01:28.700 --> 00:01:32.450
+Google's business depends a
+lot on the web, obviously.
+
+00:01:32.450 --> 00:01:34.767
+And the idea of actually
+investing in Firefox
+
+00:01:34.767 --> 00:01:37.225
+seemed like a really great way
+to make the web work better.
+
+00:01:37.225 --> 00:01:37.724
+JAKE: Yeah.
+
+00:01:37.724 --> 00:01:38.330
+SURMA: OK.
+
+00:01:38.330 --> 00:01:39.830
+So quick, quick
+question in between.
+
+00:01:39.830 --> 00:01:41.990
+You said you started in 2005.
+
+00:01:41.990 --> 00:01:44.600
+Do you remember your
+interview question?
+
+00:01:44.600 --> 00:01:45.890
+DARIN FISHER: Yeah, totally.
+
+00:01:45.890 --> 00:01:47.475
+I interviewed with
+the Gmail team.
+
+00:01:47.475 --> 00:01:49.600
+Do you really want to know
+the interview questions?
+
+00:01:49.600 --> 00:01:49.880
+SURMA: Yeah.
+
+00:01:49.880 --> 00:01:50.530
+JAKE: Yeah, yeah, that's--
+
+00:01:50.530 --> 00:01:51.040
+SURMA: I'm curious, now.
+
+00:01:51.040 --> 00:01:52.130
+DARIN FISHER: Oh, my goodness.
+
+00:01:52.130 --> 00:01:53.546
+JAKE: We're not
+going to try them.
+
+00:01:53.546 --> 00:01:54.297
+[LAUGHTER]
+
+00:01:54.297 --> 00:01:55.630
+SURMA: We want to keep our jobs.
+
+00:01:55.630 --> 00:01:55.930
+But--
+
+00:01:55.930 --> 00:01:56.450
+JAKE: Yeah, yeah, yeah.
+
+00:01:56.450 --> 00:01:57.158
+DARIN FISHER: OK.
+
+00:01:57.158 --> 00:01:59.800
+So some of these are banned
+questions now in the Google--
+
+00:01:59.800 --> 00:02:00.075
+SURMA: Oh, that's good.
+
+00:02:00.075 --> 00:02:00.700
+So then-- yeah.
+
+00:02:00.700 --> 00:02:02.520
+DARIN FISHER: --Google
+interviews slate,
+
+00:02:02.520 --> 00:02:03.830
+because they get asked
+so many darn times.
+
+00:02:03.830 --> 00:02:04.205
+JAKE: Right.
+
+00:02:04.205 --> 00:02:05.621
+DARIN FISHER: But
+there was things
+
+00:02:05.621 --> 00:02:09.560
+like draw a line on a
+monochromatic bitmap.
+
+00:02:09.560 --> 00:02:13.380
+So imagine you have a monochrome
+bitmap, so ones and zeros,
+
+00:02:13.380 --> 00:02:14.750
+and draw the line on that.
+
+00:02:14.750 --> 00:02:17.961
+So it's getting you to
+do makeshift operators.
+
+00:02:17.961 --> 00:02:18.803
+JAKE: Oh!
+
+00:02:18.803 --> 00:02:20.116
+DARIN FISHER: Yeah.
+
+00:02:20.116 --> 00:02:23.030
+I had another
+question, which was,
+
+00:02:23.030 --> 00:02:29.000
+of a given array of integers,
+find the max and min
+
+00:02:29.000 --> 00:02:31.010
+values in that array,
+or something like this.
+
+00:02:31.010 --> 00:02:33.950
+And so they just have you
+pretty much write a brute force
+
+00:02:33.950 --> 00:02:34.742
+algorithm for that.
+
+00:02:34.742 --> 00:02:36.491
+And then they ask if
+you can do it faster,
+
+00:02:36.491 --> 00:02:39.020
+and you're like, wait, but I
+gave you-- that was so simple.
+
+00:02:39.020 --> 00:02:40.130
+Why-- how is there a faster way?
+
+00:02:40.130 --> 00:02:41.713
+SURMA: Why would
+you make it harder?
+
+00:02:41.713 --> 00:02:42.347
+JAKE: Yeah.
+
+00:02:42.347 --> 00:02:44.180
+See, when-- if they
+asked me, you know what,
+
+00:02:44.180 --> 00:02:47.014
+can you do it faster, I think
+I would have deleted the code
+
+00:02:47.014 --> 00:02:48.680
+and then just typed
+the same code again,
+
+00:02:48.680 --> 00:02:51.275
+but really gone for the typing,
+especially because I knew it
+
+00:02:51.275 --> 00:02:51.775
+now.
+
+00:02:51.775 --> 00:02:54.274
+DARIN FISHER: Yeah, that would
+have been a misinterpretation
+
+00:02:54.274 --> 00:02:55.080
+of the question.
+
+00:02:55.080 --> 00:02:55.670
+JAKE: But, you know.
+
+00:02:55.670 --> 00:02:57.878
+SURMA: Thinking outside of
+the box is what I call it.
+
+00:02:57.878 --> 00:02:58.461
+JAKE: Yeah.
+
+00:02:58.461 --> 00:02:58.960
+[LAUGHTER]
+
+00:02:58.960 --> 00:03:00.376
+And for some reason,
+when you said
+
+00:03:00.376 --> 00:03:02.127
+"a line on a
+monochromatic bitmap--"
+
+00:03:02.127 --> 00:03:03.710
+I've got a very
+visual memory, so when
+
+00:03:03.710 --> 00:03:05.510
+you said there's a
+monochromatic bitmap,
+
+00:03:05.510 --> 00:03:06.910
+I imagined a sheet
+of paper stuck
+
+00:03:06.910 --> 00:03:08.510
+to the wall with a black
+and white picture on,
+
+00:03:08.510 --> 00:03:10.010
+and they said, you've
+got to draw a line on it.
+
+00:03:10.010 --> 00:03:10.620
+And I-- swoop.
+
+00:03:10.620 --> 00:03:12.510
+DARIN FISHER: Give
+me the magic marker.
+
+00:03:12.510 --> 00:03:14.270
+JAKE: Can I-- do I get the job?
+
+00:03:14.270 --> 00:03:14.770
+[LAUGHTER]
+
+00:03:14.770 --> 00:03:16.160
+SURMA: That's why
+you're in Dev Rel.
+
+00:03:16.160 --> 00:03:16.660
+JAKE: Yeah.
+
+00:03:16.660 --> 00:03:18.310
+[LAUGHS] Absolutely.
+
+00:03:18.310 --> 00:03:20.560
+I've been here while products
+and stuff have launched,
+
+00:03:20.560 --> 00:03:23.595
+and there's a period
+of trying to figure out
+
+00:03:23.595 --> 00:03:25.220
+the name of the thing
+you're launching.
+
+00:03:25.220 --> 00:03:26.750
+There's always code names.
+
+00:03:26.750 --> 00:03:28.790
+What other things could
+Chrome have been called?
+
+00:03:28.790 --> 00:03:29.748
+DARIN FISHER: Oh, yeah.
+
+00:03:29.748 --> 00:03:31.780
+So the code base was
+originally called Goose.
+
+00:03:31.780 --> 00:03:32.730
+[LAUGHTER]
+
+00:03:32.730 --> 00:03:34.790
+SURMA: Wait, that-- I
+did not see that coming.
+
+00:03:34.790 --> 00:03:35.956
+DARIN FISHER: That was the--
+
+00:03:35.956 --> 00:03:39.860
+in the internal repository,
+originally called Goose just
+
+00:03:39.860 --> 00:03:40.639
+because.
+
+00:03:40.639 --> 00:03:41.680
+Somebody came up with it.
+
+00:03:41.680 --> 00:03:42.420
+It was random.
+
+00:03:42.420 --> 00:03:44.210
+So when you ask engineers
+to name things--
+
+00:03:44.210 --> 00:03:44.570
+SURMA: Somebody had to
+create a repository.
+
+00:03:44.570 --> 00:03:46.251
+DARIN FISHER: --you
+get random names.
+
+00:03:46.251 --> 00:03:47.750
+So then we asked
+the team to come up
+
+00:03:47.750 --> 00:03:49.504
+with a good name
+for the project,
+
+00:03:49.504 --> 00:03:51.920
+and they came up with a whole
+bunch of other random names.
+
+00:03:51.920 --> 00:03:52.310
+JAKE: Anything stuck out?
+
+00:03:52.310 --> 00:03:53.851
+DARIN FISHER: And
+I think in general,
+
+00:03:53.851 --> 00:03:56.960
+the engineers didn't necessarily
+take the process very
+
+00:03:56.960 --> 00:03:57.460
+seriously--
+
+00:03:57.460 --> 00:03:58.160
+[LAUGHTER]
+
+00:03:58.160 --> 00:04:01.774
+--so a lot of names
+that were pretty silly.
+
+00:04:01.774 --> 00:04:02.955
+JAKE: Well, because Chrome--
+
+00:04:02.955 --> 00:04:04.580
+DARIN FISHER: And
+then, yes, then our--
+
+00:04:04.580 --> 00:04:05.663
+SURMA: Like, even Chrome--
+
+00:04:05.663 --> 00:04:07.324
+DARIN FISHER: Our engineering--
+
+00:04:07.324 --> 00:04:09.240
+I think it was our
+engineering manager came up
+
+00:04:09.240 --> 00:04:10.610
+with the idea of Chrome.
+
+00:04:10.610 --> 00:04:12.080
+And he said, you know what,
+let's just call it Chrome.
+
+00:04:12.080 --> 00:04:14.150
+Forget all those names
+you guys came up with.
+
+00:04:14.150 --> 00:04:16.730
+SURMA: Because I mean, in the
+end, the Chrome is what you--
+
+00:04:16.730 --> 00:04:18.545
+in that day, was
+just called the--
+
+00:04:18.545 --> 00:04:21.170
+JAKE: Yeah, that's what Firefox
+called the rest of the browser,
+
+00:04:21.170 --> 00:04:21.620
+right?
+
+00:04:21.620 --> 00:04:23.370
+DARIN FISHER: The
+chrome of an application
+
+00:04:23.370 --> 00:04:25.910
+is the UI around the
+content area, right?
+
+00:04:25.910 --> 00:04:26.630
+SURMA: Yeah, the
+window border kind of--
+
+00:04:26.630 --> 00:04:28.213
+DARIN FISHER: Yeah,
+the window border.
+
+00:04:28.213 --> 00:04:31.580
+In fact-- yeah, absolutely,
+in Firefox, chrome
+
+00:04:31.580 --> 00:04:34.850
+refers to that part of
+the browser, all the XUL
+
+00:04:34.850 --> 00:04:36.990
+parts of the UI.
+
+00:04:36.990 --> 00:04:39.246
+And I mentioned XUL.
+
+00:04:39.246 --> 00:04:40.870
+If I need to explain
+that, let me know.
+
+00:04:40.870 --> 00:04:41.578
+SURMA: XULRunner.
+
+00:04:41.578 --> 00:04:42.260
+I remember.
+
+00:04:42.260 --> 00:04:43.010
+DARIN FISHER: Yes.
+
+00:04:43.010 --> 00:04:45.440
+Well, anyways, so in Chrome--
+
+00:04:45.440 --> 00:04:47.870
+in WebKit even,
+there's APIs that
+
+00:04:47.870 --> 00:04:52.520
+refer to informing the chrome
+of the browser about state
+
+00:04:52.520 --> 00:04:53.480
+changes.
+
+00:04:53.480 --> 00:04:55.340
+And so we just called
+the browser Chrome.
+
+00:04:55.340 --> 00:04:56.757
+It was almost like
+a joke kind of.
+
+00:04:56.757 --> 00:04:58.048
+SURMA: It's almost a pun, yeah.
+
+00:04:58.048 --> 00:05:00.140
+DARIN FISHER: Yeah, and
+then so we didn't actually
+
+00:05:00.140 --> 00:05:02.010
+expect that to be the
+name of the product.
+
+00:05:02.010 --> 00:05:03.100
+JAKE: The joke's
+gone too far now.
+
+00:05:03.100 --> 00:05:03.320
+DARIN FISHER: Yeah.
+
+00:05:03.320 --> 00:05:04.210
+JAKE: Here we are.
+
+00:05:04.210 --> 00:05:04.880
+SURMA: Here we are
+10 years later.
+
+00:05:04.880 --> 00:05:05.475
+DARIN FISHER: At
+some point, they
+
+00:05:05.475 --> 00:05:07.516
+were like, hm, if we put
+"Google" in front of it,
+
+00:05:07.516 --> 00:05:09.290
+could that just be
+the product name?
+
+00:05:09.290 --> 00:05:10.940
+Let's see if we
+can get that past--
+
+00:05:10.940 --> 00:05:11.980
+SURMA: I would have loved
+to see that with Goose.
+
+00:05:11.980 --> 00:05:13.771
+DARIN FISHER: --through
+the naming process.
+
+00:05:13.771 --> 00:05:17.450
+The idea of Chrome also kind
+of evolved into this emphasis
+
+00:05:17.450 --> 00:05:19.140
+on content, not chrome.
+
+00:05:19.140 --> 00:05:22.250
+So this idea, this guiding
+principle of we're here
+
+00:05:22.250 --> 00:05:24.090
+to build a browser that's--
+
+00:05:24.090 --> 00:05:26.720
+the users care about the content
+that they're engaging with,
+
+00:05:26.720 --> 00:05:28.485
+not about using the browser.
+
+00:05:28.485 --> 00:05:30.110
+And so if you think
+about it, we wanted
+
+00:05:30.110 --> 00:05:31.610
+to have this-- that
+sort of informed
+
+00:05:31.610 --> 00:05:33.630
+a minimalistic approach
+to the browser UI.
+
+00:05:33.630 --> 00:05:34.150
+JAKE: Hm.
+
+00:05:34.150 --> 00:05:35.620
+SURMA: So we don't want to
+go back to the times in IE
+
+00:05:35.620 --> 00:05:37.890
+where you had, like, 18
+different search bars.
+
+00:05:37.890 --> 00:05:39.056
+DARIN FISHER: Yeah, exactly.
+
+00:05:39.056 --> 00:05:40.580
+SURMA: Yeah, those
+were good times.
+
+00:05:40.580 --> 00:05:41.050
+DARIN FISHER: Yeah, exactly.
+
+00:05:41.050 --> 00:05:42.620
+So it minimized the chrome.
+
+00:05:42.620 --> 00:05:45.650
+It's called Chrome, but
+it minimized the chrome.
+
+00:05:45.650 --> 00:05:48.530
+JAKE: So are we
+going to keep working
+
+00:05:48.530 --> 00:05:50.667
+on Chrome for, like, 40 years?
+
+00:05:50.667 --> 00:05:52.250
+I'm trying to figure
+out if I can just
+
+00:05:52.250 --> 00:05:53.410
+ride this job to retirement--
+
+00:05:53.410 --> 00:05:54.000
+DARIN FISHER: Yeah,
+I think you will.
+
+00:05:54.000 --> 00:05:54.650
+JAKE: --or whether I need
+to start making plans.
+
+00:05:54.650 --> 00:05:55.580
+DARIN FISHER: I think that's
+a good choice, good career
+
+00:05:55.580 --> 00:05:55.860
+choice.
+
+00:05:55.860 --> 00:05:56.870
+JAKE: Yeah, the web's
+going to be around?
+
+00:05:56.870 --> 00:05:57.170
+We're going to be OK?
+
+00:05:57.170 --> 00:05:58.980
+DARIN FISHER: Yeah, the web's
+been around for a long time.
+
+00:05:58.980 --> 00:06:01.530
+It's going to continue to
+be around for a long time.
+
+00:06:01.530 --> 00:06:04.280
+The fundamental
+concepts of the web--
+
+00:06:04.280 --> 00:06:07.670
+an open platform where
+anybody can publish content,
+
+00:06:07.670 --> 00:06:11.510
+and others can come along and
+bring that content to users
+
+00:06:11.510 --> 00:06:12.950
+through different form factors--
+
+00:06:12.950 --> 00:06:14.630
+it's actually remarkable, right?
+
+00:06:14.630 --> 00:06:15.257
+SURMA: It is.
+
+00:06:15.257 --> 00:06:17.840
+DARIN FISHER: And I think that's
+the-- adds an amazing staying
+
+00:06:17.840 --> 00:06:18.320
+power.
+
+00:06:18.320 --> 00:06:19.760
+SURMA: And the stuff from
+the '90s still works.
+
+00:06:19.760 --> 00:06:21.551
+I mean, the canonical
+example at this point
+
+00:06:21.551 --> 00:06:24.500
+is Space Jam, which people still
+love to open up, apparently.
+
+00:06:24.500 --> 00:06:25.830
+JAKE: The first ever website--
+
+00:06:25.830 --> 00:06:27.270
+that still works as well.
+
+00:06:27.270 --> 00:06:28.505
+That wasn't Space Jam.
+
+00:06:28.505 --> 00:06:29.720
+SURMA: No, that was--
+
+00:06:29.720 --> 00:06:30.262
+very close.
+
+00:06:30.262 --> 00:06:31.970
+DARIN FISHER: But it's
+interesting to see
+
+00:06:31.970 --> 00:06:36.110
+how the web evolved from a
+world with desktop computing
+
+00:06:36.110 --> 00:06:38.666
+to mobile computing, and now--
+
+00:06:38.666 --> 00:06:39.290
+SURMA: Watches.
+
+00:06:39.290 --> 00:06:40.850
+DARIN FISHER: Yeah,
+watches, VR, AR--
+
+00:06:40.850 --> 00:06:41.550
+SURMA: Everything.
+
+00:06:41.550 --> 00:06:44.133
+DARIN FISHER: --and so on and
+so forth as form factors change.
+
+00:06:44.133 --> 00:06:47.660
+That fundamental principle of
+an open way in which people
+
+00:06:47.660 --> 00:06:49.490
+can publish content
+and then others
+
+00:06:49.490 --> 00:06:52.970
+can figure out how to bring that
+content to users in new form
+
+00:06:52.970 --> 00:06:54.370
+factors is there.
+
+00:06:54.370 --> 00:06:55.940
+There's an opportunity
+to create it.
+
+00:06:55.940 --> 00:06:59.180
+JAKE: It feels like a
+lot of different systems
+
+00:06:59.180 --> 00:07:02.242
+have promised that
+multi-platform, running
+
+00:07:02.242 --> 00:07:04.700
+everywhere thing, but it feels
+like the web's the first one
+
+00:07:04.700 --> 00:07:05.785
+that's really actually worked.
+
+00:07:05.785 --> 00:07:06.830
+DARIN FISHER: Yeah, it's
+kind of there by default.
+
+00:07:06.830 --> 00:07:07.600
+JAKE: Yeah.
+
+00:07:07.600 --> 00:07:11.300
+SURMA: So with Chrome
+being around for
+
+00:07:11.300 --> 00:07:14.342
+the foreseeable future, what is
+the thing you look forward to
+
+00:07:14.342 --> 00:07:15.550
+in the near future of Chrome?
+
+00:07:15.550 --> 00:07:17.990
+What are the next upcoming
+things that you think,
+
+00:07:17.990 --> 00:07:18.955
+that's a big one?
+
+00:07:18.955 --> 00:07:20.480
+DARIN FISHER: Oh, well,
+I mean, there's just so
+
+00:07:20.480 --> 00:07:21.470
+many things we're working on.
+
+00:07:21.470 --> 00:07:21.750
+SURMA: There is, right?
+
+00:07:21.750 --> 00:07:22.580
+DARIN FISHER: Yeah.
+
+00:07:22.580 --> 00:07:23.220
+I mean, I'm really excited--
+
+00:07:23.220 --> 00:07:23.860
+JAKE: Pick a favorite.
+
+00:07:23.860 --> 00:07:24.984
+DARIN FISHER: Yeah, I know.
+
+00:07:24.984 --> 00:07:25.840
+[LAUGHTER]
+
+00:07:25.840 --> 00:07:27.798
+JAKE: Which of your
+children are your favorite?
+
+00:07:27.798 --> 00:07:31.850
+DARIN FISHER: I'm pretty jazzed
+about the future with thinking
+
+00:07:31.850 --> 00:07:34.670
+about WebAssembly, for example,
+and the opportunity that
+
+00:07:34.670 --> 00:07:36.590
+creates for
+developers, especially
+
+00:07:36.590 --> 00:07:40.130
+folks who have their roots in--
+
+00:07:40.130 --> 00:07:42.222
+or they have a bunch
+of C code that they
+
+00:07:42.222 --> 00:07:44.180
+wish they could bring to
+users through the web.
+
+00:07:44.180 --> 00:07:45.790
+SURMA: Tapping into this
+existing ecosystem of C
+
+00:07:45.790 --> 00:07:47.390
+has been around for
+years, and it's not
+
+00:07:47.390 --> 00:07:48.350
+been usable on the web.
+
+00:07:48.350 --> 00:07:49.520
+And suddenly, just, it is.
+
+00:07:49.520 --> 00:07:53.160
+DARIN FISHER: And I was really
+excited to see what the work
+
+00:07:53.160 --> 00:07:56.480
+AutoDesk did to bring AutoCAD
+to the web through WebAssembly.
+
+00:07:56.480 --> 00:08:01.610
+I think it's really exciting,
+because there's just actually
+
+00:08:01.610 --> 00:08:03.610
+not only a lot of
+code written that way,
+
+00:08:03.610 --> 00:08:05.318
+but also a lot of
+developers who know how
+
+00:08:05.318 --> 00:08:07.880
+to create cool things this way.
+
+00:08:07.880 --> 00:08:10.330
+And I think it just creates
+a lot more opportunity.
+
+00:08:10.330 --> 00:08:12.455
+SURMA: We're going to link
+to the WebAssembly talk,
+
+00:08:12.455 --> 00:08:14.814
+because they have AutoCAD's
+presenting what they did,
+
+00:08:14.814 --> 00:08:15.980
+which is absolutely amazing.
+
+00:08:15.980 --> 00:08:16.940
+So that's going
+to be really cool.
+
+00:08:16.940 --> 00:08:18.440
+DARIN FISHER: And
+I think, actually,
+
+00:08:18.440 --> 00:08:22.100
+the thing that's amazing is they
+made previous attempts to bring
+
+00:08:22.100 --> 00:08:25.106
+some of their
+applications to the web,
+
+00:08:25.106 --> 00:08:26.480
+but it was only
+until WebAssembly
+
+00:08:26.480 --> 00:08:28.160
+that it was actually
+possible for them
+
+00:08:28.160 --> 00:08:32.039
+to do it in a reasonable
+fashion and get a good result.
+
+00:08:32.039 --> 00:08:34.580
+JAKE: Something I wanted to
+build for years was an image
+
+00:08:34.580 --> 00:08:36.500
+compressor on the web,
+something that brings
+
+00:08:36.500 --> 00:08:37.909
+all the existing codecs in.
+
+00:08:37.909 --> 00:08:41.690
+And it's something I
+tried five years ago, when
+
+00:08:41.690 --> 00:08:43.609
+ASM was a thing, but
+couldn't quite get there.
+
+00:08:43.609 --> 00:08:45.650
+Some of the memory management
+stuff wasn't there.
+
+00:08:45.650 --> 00:08:47.275
+DARIN FISHER: I think
+it doesn't really
+
+00:08:47.275 --> 00:08:50.660
+scale to say the browser has
+to bake in APIs for everything
+
+00:08:50.660 --> 00:08:52.130
+you could possibly want to do.
+
+00:08:52.130 --> 00:08:54.540
+Rather, to give the right
+low-level primitives,
+
+00:08:54.540 --> 00:08:58.790
+so that developers can build
+not just great applications,
+
+00:08:58.790 --> 00:09:01.400
+but also frameworks that
+allow others to build great
+
+00:09:01.400 --> 00:09:04.670
+applications and for people
+to be able to innovate on that
+
+00:09:04.670 --> 00:09:06.700
+foundation, either
+that means we have to--
+
+00:09:06.700 --> 00:09:08.150
+we can't possibly think
+about all the stuff
+
+00:09:08.150 --> 00:09:09.608
+that people are
+going to do, but we
+
+00:09:09.608 --> 00:09:11.960
+have to build a platform that
+creates more freedom and--
+
+00:09:11.960 --> 00:09:13.130
+SURMA: Things that
+plug together.
+
+00:09:13.130 --> 00:09:13.625
+DARIN FISHER: Yeah, yeah.
+
+00:09:13.625 --> 00:09:15.740
+JAKE: Yeah, to be able
+to build something
+
+00:09:15.740 --> 00:09:19.914
+that can display and compress
+WebP in Safari, a browser that
+
+00:09:19.914 --> 00:09:21.080
+doesn't support it natively.
+
+00:09:21.080 --> 00:09:21.955
+And now we can do it.
+
+00:09:21.955 --> 00:09:23.163
+That's something you've been-
+
+00:09:23.163 --> 00:09:24.570
+SURMA: [INAUDIBLE] Lego.
+
+00:09:24.570 --> 00:09:25.650
+JAKE: Yeah, something
+you can put together.
+
+00:09:25.650 --> 00:09:26.790
+SURMA: Give the building blocks.
+
+00:09:26.790 --> 00:09:27.020
+JAKE: Yeah.
+
+00:09:27.020 --> 00:09:28.000
+DARIN FISHER: Give
+the building blocks.
+
+00:09:28.000 --> 00:09:28.410
+Yeah.
+
+00:09:28.410 --> 00:09:30.350
+JAKE: When someone's
+suggesting names for products,
+
+00:09:30.350 --> 00:09:32.330
+and someone goes, no, we can't
+have that, that's a silly name,
+
+00:09:32.330 --> 00:09:32.910
+I just--
+
+00:09:32.910 --> 00:09:35.120
+I stop everyone and
+say, we all work
+
+00:09:35.120 --> 00:09:36.655
+at a company called Google.
+
+00:09:36.655 --> 00:09:37.696
+DARIN FISHER: Yes, right?
+
+00:09:37.696 --> 00:09:40.240
+JAKE: That might
+seem normal now,
+
+00:09:40.240 --> 00:09:42.680
+but if you tell people about
+that, it sounds ridiculous.
+
+00:09:42.680 --> 00:09:44.230
+DARIN FISHER: Yeah.
+

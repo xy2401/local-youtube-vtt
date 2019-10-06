@@ -1,0 +1,424 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.070 --> 00:00:02.380
+PAUL LEWIS: A couple of minor
+updates today-- firstly,
+
+00:00:02.380 --> 00:00:05.220
+that you can see on screen,
+styling is getting underway,
+
+00:00:05.220 --> 00:00:08.170
+which means I've got
+just a place holder
+
+00:00:08.170 --> 00:00:09.440
+for the actual page content.
+
+00:00:09.440 --> 00:00:12.080
+But I've got a footer
+in place with a couple
+
+00:00:12.080 --> 00:00:13.020
+of links, the header.
+
+00:00:13.020 --> 00:00:15.450
+You can go around the
+individual sections.
+
+00:00:15.450 --> 00:00:19.040
+Let me just make
+that a bit wider.
+
+00:00:19.040 --> 00:00:21.200
+Code of conduct as
+well, that's in there.
+
+00:00:21.200 --> 00:00:23.033
+Need to do a little bit
+of tidying up there,
+
+00:00:23.033 --> 00:00:24.840
+I think, on the
+text positioning.
+
+00:00:24.840 --> 00:00:26.840
+But you can see styling
+is under way, finally
+
+00:00:26.840 --> 00:00:29.475
+getting somewhere a
+little bit more visual,
+
+00:00:29.475 --> 00:00:30.350
+which is good for me.
+
+00:00:30.350 --> 00:00:33.470
+And then I've also worked
+down here, like so,
+
+00:00:33.470 --> 00:00:37.320
+pretty much as we
+were hoping to see.
+
+00:00:37.320 --> 00:00:40.780
+So that's the good news.
+
+00:00:40.780 --> 00:00:46.240
+Oh, I should mention the other
+thing, which is the styling,
+
+00:00:46.240 --> 00:00:48.460
+I've actually opted for a
+slightly different solution
+
+00:00:48.460 --> 00:00:48.690
+in the end.
+
+00:00:48.690 --> 00:00:50.315
+Do you remember how
+I mentioned about I
+
+00:00:50.315 --> 00:00:53.860
+was going to do inline styles
+and then like full fat styles,
+
+00:00:53.860 --> 00:00:56.510
+and I wasn't sure if
+it was going to work.
+
+00:00:56.510 --> 00:00:58.910
+OK, I've concluded
+a couple things.
+
+00:00:58.910 --> 00:01:01.080
+Firstly, that I should
+keep things simple.
+
+00:01:01.080 --> 00:01:03.770
+So let me show you what it's
+like on a normal, standard
+
+00:01:03.770 --> 00:01:04.629
+issue page.
+
+00:01:04.629 --> 00:01:07.810
+Basically, you can see here-- I
+can get rid of a bunch of that
+
+00:01:07.810 --> 00:01:08.950
+there, can't I?
+
+00:01:08.950 --> 00:01:13.049
+We have just the style sheet,
+straight in to the style sheet.
+
+00:01:13.049 --> 00:01:14.840
+So that is actually
+what we're going to do.
+
+00:01:14.840 --> 00:01:16.850
+And that would be
+render blocking.
+
+00:01:16.850 --> 00:01:20.090
+However, what I'm
+banking on mostly
+
+00:01:20.090 --> 00:01:25.450
+is that most people will come
+via the home page to the site.
+
+00:01:25.450 --> 00:01:27.090
+So if somebody comes
+here, yeah they're
+
+00:01:27.090 --> 00:01:28.714
+going to have a bit
+of render blocking.
+
+00:01:28.714 --> 00:01:31.530
+I don't think it's going
+to be that much, though.
+
+00:01:31.530 --> 00:01:38.800
+At the moment, the styles are 6
+and 1/2 K. It's not a big deal.
+
+00:01:38.800 --> 00:01:39.790
+They'll get more.
+
+00:01:39.790 --> 00:01:41.040
+They'll get bigger, obviously.
+
+00:01:41.040 --> 00:01:43.890
+But hopefully, by the time
+gzip is on, hopefully,
+
+00:01:43.890 --> 00:01:45.480
+not a huge deal.
+
+00:01:45.480 --> 00:01:48.450
+It's not loads and loads
+and loads of styles,
+
+00:01:48.450 --> 00:01:49.672
+but we can still improve it.
+
+00:01:49.672 --> 00:01:51.130
+And as I say, most
+people, I think,
+
+00:01:51.130 --> 00:01:52.838
+are going to come to
+the home page, where
+
+00:01:52.838 --> 00:01:54.720
+I take a slightly
+different tack,
+
+00:01:54.720 --> 00:01:56.570
+and I do use the inline style.
+
+00:01:56.570 --> 00:02:02.020
+So I have a style tag here
+with just those inline styles.
+
+00:02:02.020 --> 00:02:04.420
+So it's things like
+position information
+
+00:02:04.420 --> 00:02:09.979
+and so on-- all fine-- and a
+bit of coloring information.
+
+00:02:09.979 --> 00:02:12.250
+And then I load,
+via the JavaScript
+
+00:02:12.250 --> 00:02:17.090
+that you saw last time, I inject
+this style sheet by JavaScript.
+
+00:02:17.090 --> 00:02:19.340
+Some people on YouTube
+were saying, well,
+
+00:02:19.340 --> 00:02:21.400
+what happens if you
+don't have JavaScript?
+
+00:02:21.400 --> 00:02:22.014
+Fair enough.
+
+00:02:22.014 --> 00:02:22.930
+It's a great question.
+
+00:02:22.930 --> 00:02:24.870
+That's why no
+script was invented.
+
+00:02:24.870 --> 00:02:27.759
+And inside the no script,
+we can pop in the link
+
+00:02:27.759 --> 00:02:28.550
+to the style sheet.
+
+00:02:28.550 --> 00:02:29.970
+So we'll get inline styles.
+
+00:02:29.970 --> 00:02:31.640
+If somebody hasn't
+got JavaScript,
+
+00:02:31.640 --> 00:02:33.410
+then they'll get
+the link injected
+
+00:02:33.410 --> 00:02:35.890
+by the no script injected.
+
+00:02:35.890 --> 00:02:36.860
+It's in the no script.
+
+00:02:36.860 --> 00:02:40.150
+That will cause the
+style sheets to download.
+
+00:02:40.150 --> 00:02:43.750
+And then for everybody
+else-- and in both cases,
+
+00:02:43.750 --> 00:02:45.790
+by the way, if they
+get it from here
+
+00:02:45.790 --> 00:02:48.450
+or they get it from
+the injected one, now
+
+00:02:48.450 --> 00:02:49.970
+the cache is kind of primed.
+
+00:02:49.970 --> 00:02:53.270
+So when you then go to schedule
+or location or code of conduct
+
+00:02:53.270 --> 00:02:57.180
+or whatever, the CSS is
+already in the cache,
+
+00:02:57.180 --> 00:03:00.310
+and so we'll get s
+back nice and quickly.
+
+00:03:00.310 --> 00:03:04.590
+There are some file
+inline styles specific
+
+00:03:04.590 --> 00:03:06.289
+for each individual page.
+
+00:03:06.289 --> 00:03:08.330
+So rather making a separate
+style sheet for, say,
+
+00:03:08.330 --> 00:03:10.620
+home or schedule or
+location, if there's
+
+00:03:10.620 --> 00:03:14.120
+specific styles for that page,
+I'm inlining those as well.
+
+00:03:14.120 --> 00:03:19.304
+So it's a kind of combo of
+those different approaches.
+
+00:03:19.304 --> 00:03:20.470
+We'll see how that pans out.
+
+00:03:20.470 --> 00:03:22.669
+It could be that I
+revisit it again.
+
+00:03:22.669 --> 00:03:24.210
+Just to show you,
+though, by the way,
+
+00:03:24.210 --> 00:03:27.210
+if I disable JavaScript in
+Dev Tools, hopefully all
+
+00:03:27.210 --> 00:03:29.360
+being well, we still
+get all the styles.
+
+00:03:29.360 --> 00:03:33.670
+Because even though we
+got the style there,
+
+00:03:33.670 --> 00:03:36.310
+with the no script, you can
+see that that's actually now,
+
+00:03:36.310 --> 00:03:39.050
+instead of a piece of text,
+that it's actually a link.
+
+00:03:39.050 --> 00:03:40.370
+That's actually become a thing.
+
+00:03:40.370 --> 00:03:44.006
+And you can see
+here in the network,
+
+00:03:44.006 --> 00:03:46.380
+that while we don't have any
+JavaScript being downloaded,
+
+00:03:46.380 --> 00:03:48.950
+we do have the style
+sheet coming in as well.
+
+00:03:48.950 --> 00:03:53.850
+So it seems like a pretty
+good combination of those two,
+
+00:03:53.850 --> 00:03:56.500
+inlines versus actual links.
+
+00:03:56.500 --> 00:03:58.970
+Good sign is that it's
+not render blocking
+
+00:03:58.970 --> 00:04:00.140
+pretty much when I do this.
+
+00:04:00.140 --> 00:04:03.500
+So hopefully, that will pan out,
+but we'll see how we get on.
+
+00:04:03.500 --> 00:04:05.080
+So there you go.
+
+00:04:05.080 --> 00:04:06.895
+Some stars in place-- good.
+
+00:04:09.700 --> 00:04:16.326
+So, yeah, the mashing up of
+all those styles, it's good.
+
+00:04:16.326 --> 00:04:17.950
+Don't forget you
+subscribe, by the way.
+
+00:04:17.950 --> 00:04:18.730
+"You subscribe?
+
+00:04:18.730 --> 00:04:19.230
+No.
+
+00:04:19.230 --> 00:04:20.790
+Say that again, Paul.
+
+00:04:20.790 --> 00:04:23.070
+Don't forget that
+you can subscribe.
+
+00:04:23.070 --> 00:04:26.570
+I mean you should
+subscribe, if you want to.
+
+00:04:26.570 --> 00:04:28.325
+Far be it for me to
+tell you what you.
+
+00:04:28.325 --> 00:04:31.250
+Anyway, you can subscribe,
+and hopefully you're
+
+00:04:31.250 --> 00:04:34.110
+enjoying these diary videos.
+
+00:04:34.110 --> 00:04:38.040
+Thank you to everybody who's
+been popping comments in below
+
+00:04:38.040 --> 00:04:41.482
+and making suggestions and
+just generally being involved.
+
+00:04:41.482 --> 00:04:43.690
+That's kind of what I was
+hoping was going to happen.
+
+00:04:43.690 --> 00:04:45.490
+So, yeah, cool.
+
+00:04:45.490 --> 00:04:47.600
+I'll see you next time.
+

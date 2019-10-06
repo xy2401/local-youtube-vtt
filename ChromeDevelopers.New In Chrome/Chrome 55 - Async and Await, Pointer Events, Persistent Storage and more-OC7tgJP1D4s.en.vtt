@@ -1,0 +1,258 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.280
+PETE LEPAGE: Async
+and Await allows
+
+00:00:02.280 --> 00:00:04.230
+you to write
+promise-based code as
+
+00:00:04.230 --> 00:00:06.600
+if it were synchronous
+but without blocking
+
+00:00:06.600 --> 00:00:08.039
+the main thread.
+
+00:00:08.039 --> 00:00:10.440
+Pointer events
+provide a unified way
+
+00:00:10.440 --> 00:00:13.170
+of handling all input events.
+
+00:00:13.170 --> 00:00:15.300
+Sites added to
+the Homescreen are
+
+00:00:15.300 --> 00:00:18.930
+granted automatic persistent
+storage permission,
+
+00:00:18.930 --> 00:00:20.540
+and there's plenty more.
+
+00:00:20.540 --> 00:00:21.870
+I'm Pete LePage.
+
+00:00:21.870 --> 00:00:24.660
+Here's what's new for
+developers in Chrome 55.
+
+00:00:24.660 --> 00:00:27.040
+[MUSIC PLAYING]
+
+00:00:27.040 --> 00:00:30.000
+Pointing at things on the
+web used to be simple.
+
+00:00:30.000 --> 00:00:32.250
+You had a mouse,
+you moved it around,
+
+00:00:32.250 --> 00:00:35.490
+and sometimes you'd push
+buttons, and that was it.
+
+00:00:35.490 --> 00:00:38.910
+But this doesn't work so well.
+
+00:00:38.910 --> 00:00:42.990
+Touch events are good, but
+to support touch and mouse,
+
+00:00:42.990 --> 00:00:45.840
+you had to support
+two event models.
+
+00:00:45.840 --> 00:00:49.380
+Chrome now enables
+unified input handling
+
+00:00:49.380 --> 00:00:51.620
+by dispatching pointer events.
+
+00:00:51.620 --> 00:00:56.430
+Pointer events unify the pointer
+input model for the browser,
+
+00:00:56.430 --> 00:00:59.580
+bringing touch,
+pens, mice together
+
+00:00:59.580 --> 00:01:01.800
+into a single set of events.
+
+00:01:01.800 --> 00:01:05.820
+They're supported in IE
+11, Edge, Chrome, Opera,
+
+00:01:05.820 --> 00:01:08.490
+and partially
+supported in Firefox.
+
+00:01:08.490 --> 00:01:12.240
+Check out the Updates post
+link below for more detail.
+
+00:01:12.240 --> 00:01:16.290
+Asynchronous JavaScript can
+be difficult to reason with.
+
+00:01:16.290 --> 00:01:19.620
+Take this function with
+all its lovely callbacks.
+
+00:01:19.620 --> 00:01:23.670
+Rewriting it with promises helps
+to avoid the nesting problem,
+
+00:01:23.670 --> 00:01:26.160
+but promise-based
+code can still be
+
+00:01:26.160 --> 00:01:28.740
+difficult to read when
+there are long chains
+
+00:01:28.740 --> 00:01:31.480
+of asynchronous dependencies.
+
+00:01:31.480 --> 00:01:36.240
+Chrome now supports the
+Async and Await keywords,
+
+00:01:36.240 --> 00:01:39.090
+allowing you to write
+promise-based JavaScript that
+
+00:01:39.090 --> 00:01:43.650
+can be as structured and as
+readable as synchronous code.
+
+00:01:43.650 --> 00:01:46.590
+Instead of this, our
+asynchronous function
+
+00:01:46.590 --> 00:01:49.630
+can be simplified to this.
+
+00:01:49.630 --> 00:01:52.180
+Jake has a great post
+on developers.googl
+
+00:01:52.180 --> 00:01:56.100
+e.com/web/updates
+with all the details.
+
+00:01:56.100 --> 00:01:59.820
+The persistent storage
+origin trial is now over.
+
+00:01:59.820 --> 00:02:02.850
+You can now mark web
+storage as persistent,
+
+00:02:02.850 --> 00:02:05.490
+preventing Chrome from
+automatically clearing
+
+00:02:05.490 --> 00:02:07.530
+the storage of your site.
+
+00:02:07.530 --> 00:02:11.130
+In addition, sites that have
+high engagement have been added
+
+00:02:11.130 --> 00:02:14.460
+to the Homescreen or have
+push notifications enabled
+
+00:02:14.460 --> 00:02:18.480
+are automatically granted
+the persistence permission.
+
+00:02:18.480 --> 00:02:21.360
+Check out Chris Wilson's
+post for full details
+
+00:02:21.360 --> 00:02:24.060
+on how you can request
+the persistent storage
+
+00:02:24.060 --> 00:02:25.350
+for your site.
+
+00:02:25.350 --> 00:02:28.560
+CSS automatic hyphenation
+is one of Chrome's most
+
+00:02:28.560 --> 00:02:31.110
+requested layout
+features and is now
+
+00:02:31.110 --> 00:02:33.660
+supported on Android and Mac.
+
+00:02:33.660 --> 00:02:37.380
+And finally, it's easier
+to invoke native sharing
+
+00:02:37.380 --> 00:02:40.740
+capabilities with the new
+web share API, which is
+
+00:02:40.740 --> 00:02:42.960
+available as an origin trial.
+
+00:02:42.960 --> 00:02:46.365
+Paul Web Intents Kinlan
+has all the details linked
+
+00:02:46.365 --> 00:02:48.600
+in the description below.
+
+00:02:48.600 --> 00:02:51.540
+These are just a few of
+the changes in Chrome 55
+
+00:02:51.540 --> 00:02:52.810
+for developers.
+
+00:02:52.810 --> 00:02:55.170
+Check the description
+for more details.
+
+00:02:55.170 --> 00:02:56.970
+If you want to stay
+up to date with Chrome
+
+00:02:56.970 --> 00:02:59.749
+and know what's coming,
+click the Subscribe button,
+
+00:02:59.749 --> 00:03:02.040
+and be sure to check out the
+videos from the Chrome Dev
+
+00:03:02.040 --> 00:03:05.220
+Summit for a deeper dive into
+some of the awesome things
+
+00:03:05.220 --> 00:03:07.010
+the Chrome team is working on.
+
+00:03:07.010 --> 00:03:10.120
+I'm Pete LePage, and as soon
+as Chrome 56 is released,
+
+00:03:10.120 --> 00:03:13.350
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:13.350 --> 00:03:16.100
+[MUSIC PLAYING]
+

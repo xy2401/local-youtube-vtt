@@ -1,0 +1,896 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.330 --> 00:00:06.089 align:start position:0%
+ 
+if<00:00:04.330><c> you're</c><00:00:04.870><c> an</c><00:00:04.990><c> Android</c><00:00:05.109><c> developer</c><00:00:05.319><c> then</c>
+
+00:00:06.089 --> 00:00:06.099 align:start position:0%
+if you're an Android developer then
+ 
+
+00:00:06.099 --> 00:00:08.009 align:start position:0%
+if you're an Android developer then
+you've<00:00:06.309><c> probably</c><00:00:06.609><c> seen</c><00:00:06.970><c> your</c><00:00:07.180><c> fair</c><00:00:07.420><c> share</c><00:00:07.450><c> of</c>
+
+00:00:08.009 --> 00:00:08.019 align:start position:0%
+you've probably seen your fair share of
+ 
+
+00:00:08.019 --> 00:00:11.970 align:start position:0%
+you've probably seen your fair share of
+unusual<00:00:08.710><c> stack</c><00:00:09.610><c> traces</c><00:00:10.030><c> and</c><00:00:10.830><c> encounter</c><00:00:11.830><c> one</c>
+
+00:00:11.970 --> 00:00:11.980 align:start position:0%
+unusual stack traces and encounter one
+ 
+
+00:00:11.980 --> 00:00:13.680 align:start position:0%
+unusual stack traces and encounter one
+of<00:00:12.099><c> these</c><00:00:12.219><c> is</c><00:00:12.459><c> bad</c><00:00:12.669><c> enough</c><00:00:12.969><c> as</c><00:00:13.150><c> it</c><00:00:13.179><c> is</c><00:00:13.330><c> without</c>
+
+00:00:13.680 --> 00:00:13.690 align:start position:0%
+of these is bad enough as it is without
+ 
+
+00:00:13.690 --> 00:00:15.419 align:start position:0%
+of these is bad enough as it is without
+having<00:00:13.959><c> to</c><00:00:14.200><c> figure</c><00:00:14.379><c> out</c><00:00:14.620><c> where</c><00:00:15.070><c> it</c><00:00:15.190><c> fits</c>
+
+00:00:15.419 --> 00:00:15.429 align:start position:0%
+having to figure out where it fits
+ 
+
+00:00:15.429 --> 00:00:17.670 align:start position:0%
+having to figure out where it fits
+inside<00:00:15.639><c> your</c><00:00:15.969><c> project</c><00:00:16.180><c> and</c><00:00:16.600><c> how</c><00:00:17.380><c> to</c><00:00:17.439><c> go</c><00:00:17.590><c> about</c>
+
+00:00:17.670 --> 00:00:17.680 align:start position:0%
+inside your project and how to go about
+ 
+
+00:00:17.680 --> 00:00:21.120 align:start position:0%
+inside your project and how to go about
+debugging<00:00:17.949><c> in</c><00:00:18.900><c> in</c><00:00:19.900><c> Android</c><00:00:20.410><c> studio</c><00:00:20.679><c> and</c>
+
+00:00:21.120 --> 00:00:21.130 align:start position:0%
+debugging in in Android studio and
+ 
+
+00:00:21.130 --> 00:00:23.310 align:start position:0%
+debugging in in Android studio and
+IntelliJ<00:00:21.580><c> IDEA</c><00:00:22.029><c> there's</c><00:00:22.420><c> a</c><00:00:22.539><c> handy</c><00:00:23.019><c> tool</c>
+
+00:00:23.310 --> 00:00:23.320 align:start position:0%
+IntelliJ IDEA there's a handy tool
+ 
+
+00:00:23.320 --> 00:00:26.099 align:start position:0%
+IntelliJ IDEA there's a handy tool
+called<00:00:23.679><c> stack</c><00:00:24.220><c> base</c><00:00:24.460><c> analyzer</c><00:00:24.970><c> which</c><00:00:25.869><c> by</c>
+
+00:00:26.099 --> 00:00:26.109 align:start position:0%
+called stack base analyzer which by
+ 
+
+00:00:26.109 --> 00:00:29.220 align:start position:0%
+called stack base analyzer which by
+default<00:00:26.170><c> will</c><00:00:27.130><c> allow</c><00:00:27.369><c> you</c><00:00:27.429><c> to</c><00:00:27.759><c> copy</c><00:00:28.060><c> a</c><00:00:28.509><c> stack</c>
+
+00:00:29.220 --> 00:00:29.230 align:start position:0%
+default will allow you to copy a stack
+ 
+
+00:00:29.230 --> 00:00:31.439 align:start position:0%
+default will allow you to copy a stack
+trace<00:00:29.410><c> onto</c><00:00:29.769><c> your</c><00:00:29.980><c> system</c><00:00:30.490><c> clipboard</c><00:00:30.730><c> and</c>
+
+00:00:31.439 --> 00:00:31.449 align:start position:0%
+trace onto your system clipboard and
+ 
+
+00:00:31.449 --> 00:00:33.810 align:start position:0%
+trace onto your system clipboard and
+then<00:00:32.110><c> switch</c><00:00:32.410><c> back</c><00:00:32.680><c> to</c><00:00:32.710><c> the</c><00:00:32.890><c> IDE</c><00:00:33.130><c> and</c><00:00:33.640><c> it'll</c>
+
+00:00:33.810 --> 00:00:33.820 align:start position:0%
+then switch back to the IDE and it'll
+ 
+
+00:00:33.820 --> 00:00:35.850 align:start position:0%
+then switch back to the IDE and it'll
+automatically<00:00:34.390><c> analyze</c><00:00:34.930><c> that</c><00:00:35.230><c> stack</c><00:00:35.590><c> trace</c>
+
+00:00:35.850 --> 00:00:35.860 align:start position:0%
+automatically analyze that stack trace
+ 
+
+00:00:35.860 --> 00:00:38.010 align:start position:0%
+automatically analyze that stack trace
+for<00:00:36.160><c> you</c><00:00:36.370><c> giving</c><00:00:37.300><c> you</c><00:00:37.480><c> the</c><00:00:37.510><c> ability</c><00:00:37.810><c> to</c>
+
+00:00:38.010 --> 00:00:38.020 align:start position:0%
+for you giving you the ability to
+ 
+
+00:00:38.020 --> 00:00:42.000 align:start position:0%
+for you giving you the ability to
+navigate<00:00:38.440><c> directly</c><00:00:38.920><c> to</c><00:00:39.820><c> the</c><00:00:40.690><c> source</c><00:00:41.080><c> of</c><00:00:41.350><c> that</c>
+
+00:00:42.000 --> 00:00:42.010 align:start position:0%
+navigate directly to the source of that
+ 
+
+00:00:42.010 --> 00:00:44.490 align:start position:0%
+navigate directly to the source of that
+exception<00:00:42.370><c> and</c><00:00:42.750><c> go</c><00:00:43.750><c> through</c><00:00:43.990><c> the</c><00:00:44.140><c> entire</c>
+
+00:00:44.490 --> 00:00:44.500 align:start position:0%
+exception and go through the entire
+ 
+
+00:00:44.500 --> 00:00:47.700 align:start position:0%
+exception and go through the entire
+stack<00:00:44.920><c> trace</c><00:00:45.280><c> line</c><00:00:45.940><c> by</c><00:00:46.150><c> line</c><00:00:46.180><c> and</c><00:00:46.870><c> you</c><00:00:47.590><c> can</c>
+
+00:00:47.700 --> 00:00:47.710 align:start position:0%
+stack trace line by line and you can
+ 
+
+00:00:47.710 --> 00:00:49.500 align:start position:0%
+stack trace line by line and you can
+also<00:00:47.830><c> bring</c><00:00:48.070><c> this</c><00:00:48.280><c> tool</c><00:00:48.610><c> up</c><00:00:48.820><c> by</c><00:00:49.060><c> going</c><00:00:49.300><c> on</c>
+
+00:00:49.500 --> 00:00:49.510 align:start position:0%
+also bring this tool up by going on
+ 
+
+00:00:49.510 --> 00:00:51.630 align:start position:0%
+also bring this tool up by going on
+analyze<00:00:50.020><c> and</c><00:00:50.320><c> selecting</c><00:00:50.950><c> analyze</c><00:00:51.310><c> stack</c>
+
+00:00:51.630 --> 00:00:51.640 align:start position:0%
+analyze and selecting analyze stack
+ 
+
+00:00:51.640 --> 00:00:53.730 align:start position:0%
+analyze and selecting analyze stack
+trace<00:00:51.940><c> in</c><00:00:52.450><c> this</c><00:00:52.810><c> video</c><00:00:53.140><c> I</c><00:00:53.200><c> want</c><00:00:53.470><c> to</c><00:00:53.530><c> take</c><00:00:53.680><c> a</c>
+
+00:00:53.730 --> 00:00:53.740 align:start position:0%
+trace in this video I want to take a
+ 
+
+00:00:53.740 --> 00:00:57.060 align:start position:0%
+trace in this video I want to take a
+look<00:00:53.950><c> at</c><00:00:54.300><c> obfuscation</c><00:00:55.300><c> and</c><00:00:55.600><c> the</c><00:00:56.350><c> obfuscating</c>
+
+00:00:57.060 --> 00:00:57.070 align:start position:0%
+look at obfuscation and the obfuscating
+ 
+
+00:00:57.070 --> 00:01:00.660 align:start position:0%
+look at obfuscation and the obfuscating
+scrambled<00:00:57.670><c> stack</c><00:00:58.060><c> traces</c><00:00:59.100><c> which</c><00:01:00.100><c> here</c><00:01:00.460><c> I</c><00:01:00.490><c> have</c>
+
+00:01:00.660 --> 00:01:00.670 align:start position:0%
+scrambled stack traces which here I have
+ 
+
+00:01:00.670 --> 00:01:03.000 align:start position:0%
+scrambled stack traces which here I have
+a<00:01:00.700><c> third-party</c><00:01:01.180><c> plugin</c><00:01:01.750><c> installed</c><00:01:02.320><c> called</c>
+
+00:01:03.000 --> 00:01:03.010 align:start position:0%
+a third-party plugin installed called
+ 
+
+00:01:03.010 --> 00:01:05.270 align:start position:0%
+a third-party plugin installed called
+the<00:01:03.130><c> ProGuard</c><00:01:03.520><c> unscrambler</c><00:01:04.330><c> plugin</c><00:01:04.839><c> and</c>
+
+00:01:05.270 --> 00:01:05.280 align:start position:0%
+the ProGuard unscrambler plugin and
+ 
+
+00:01:05.280 --> 00:01:08.459 align:start position:0%
+the ProGuard unscrambler plugin and
+together<00:01:06.280><c> with</c><00:01:06.609><c> the</c><00:01:06.909><c> mapping</c><00:01:07.329><c> file</c><00:01:07.630><c> from</c><00:01:08.350><c> the</c>
+
+00:01:08.459 --> 00:01:08.469 align:start position:0%
+together with the mapping file from the
+ 
+
+00:01:08.469 --> 00:01:10.950 align:start position:0%
+together with the mapping file from the
+log<00:01:08.710><c> it</c><00:01:09.039><c> will</c><00:01:09.130><c> be</c><00:01:09.250><c> able</c><00:01:09.369><c> to</c><00:01:09.579><c> reconstruct</c><00:01:10.090><c> your</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+log it will be able to reconstruct your
+ 
+
+00:01:10.960 --> 00:01:13.830 align:start position:0%
+log it will be able to reconstruct your
+original<00:01:11.409><c> stack</c><00:01:11.740><c> trace</c><00:01:12.070><c> from</c><00:01:13.030><c> an</c><00:01:13.299><c> obfuscated</c>
+
+00:01:13.830 --> 00:01:13.840 align:start position:0%
+original stack trace from an obfuscated
+ 
+
+00:01:13.840 --> 00:01:17.520 align:start position:0%
+original stack trace from an obfuscated
+application<00:01:15.479><c> android</c><00:01:16.479><c> uses</c><00:01:16.810><c> a</c><00:01:16.840><c> tool</c><00:01:17.200><c> called</c>
+
+00:01:17.520 --> 00:01:17.530 align:start position:0%
+application android uses a tool called
+ 
+
+00:01:17.530 --> 00:01:21.149 align:start position:0%
+application android uses a tool called
+ProGuard<00:01:18.189><c> to</c><00:01:18.999><c> obfuscate</c><00:01:19.749><c> your</c><00:01:19.780><c> code</c><00:01:20.289><c> and</c><00:01:20.619><c> what</c>
+
+00:01:21.149 --> 00:01:21.159 align:start position:0%
+ProGuard to obfuscate your code and what
+ 
+
+00:01:21.159 --> 00:01:23.700 align:start position:0%
+ProGuard to obfuscate your code and what
+happens<00:01:21.549><c> when</c><00:01:21.759><c> you</c><00:01:21.850><c> use</c><00:01:22.030><c> ProGuard</c><00:01:22.600><c> is</c><00:01:22.899><c> it</c><00:01:23.380><c> will</c>
+
+00:01:23.700 --> 00:01:23.710 align:start position:0%
+happens when you use ProGuard is it will
+ 
+
+00:01:23.710 --> 00:01:25.830 align:start position:0%
+happens when you use ProGuard is it will
+remove<00:01:24.280><c> any</c><00:01:24.490><c> identifiers</c><00:01:25.119><c> z'</c><00:01:25.149><c> inside</c><00:01:25.630><c> the</c>
+
+00:01:25.830 --> 00:01:25.840 align:start position:0%
+remove any identifiers z' inside the
+ 
+
+00:01:25.840 --> 00:01:29.039 align:start position:0%
+remove any identifiers z' inside the
+code<00:01:26.109><c> so</c><00:01:27.009><c> all</c><00:01:27.340><c> of</c><00:01:27.490><c> the</c><00:01:27.579><c> packages</c><00:01:28.179><c> class</c><00:01:28.659><c> names</c>
+
+00:01:29.039 --> 00:01:29.049 align:start position:0%
+code so all of the packages class names
+ 
+
+00:01:29.049 --> 00:01:31.109 align:start position:0%
+code so all of the packages class names
+and<00:01:29.350><c> method</c><00:01:29.679><c> names</c><00:01:29.890><c> anything</c><00:01:30.819><c> will</c><00:01:30.969><c> help</c>
+
+00:01:31.109 --> 00:01:31.119 align:start position:0%
+and method names anything will help
+ 
+
+00:01:31.119 --> 00:01:33.179 align:start position:0%
+and method names anything will help
+someone<00:01:31.479><c> to</c><00:01:31.869><c> reconstruct</c><00:01:32.740><c> your</c><00:01:32.799><c> original</c>
+
+00:01:33.179 --> 00:01:33.189 align:start position:0%
+someone to reconstruct your original
+ 
+
+00:01:33.189 --> 00:01:35.099 align:start position:0%
+someone to reconstruct your original
+source<00:01:33.460><c> code</c><00:01:33.520><c> will</c><00:01:33.969><c> be</c><00:01:34.090><c> removed</c><00:01:34.509><c> it'll</c><00:01:34.869><c> try</c><00:01:35.049><c> to</c>
+
+00:01:35.099 --> 00:01:35.109 align:start position:0%
+source code will be removed it'll try to
+ 
+
+00:01:35.109 --> 00:01:37.739 align:start position:0%
+source code will be removed it'll try to
+scramble<00:01:35.530><c> the</c><00:01:35.799><c> source</c><00:01:36.039><c> code</c><00:01:36.369><c> and</c><00:01:36.579><c> in</c><00:01:37.240><c> addition</c>
+
+00:01:37.739 --> 00:01:37.749 align:start position:0%
+scramble the source code and in addition
+ 
+
+00:01:37.749 --> 00:01:41.279 align:start position:0%
+scramble the source code and in addition
+this<00:01:38.289><c> will</c><00:01:38.439><c> make</c><00:01:38.590><c> it</c><00:01:38.710><c> more</c><00:01:38.859><c> difficult</c><00:01:39.039><c> to</c><00:01:40.289><c> go</c>
+
+00:01:41.279 --> 00:01:41.289 align:start position:0%
+this will make it more difficult to go
+ 
+
+00:01:41.289 --> 00:01:43.649 align:start position:0%
+this will make it more difficult to go
+back<00:01:41.319><c> from</c><00:01:41.920><c> a</c><00:01:42.069><c> stack</c><00:01:42.340><c> trace</c><00:01:42.520><c> to</c><00:01:43.060><c> your</c><00:01:43.359><c> source</c>
+
+00:01:43.649 --> 00:01:43.659 align:start position:0%
+back from a stack trace to your source
+ 
+
+00:01:43.659 --> 00:01:46.230 align:start position:0%
+back from a stack trace to your source
+code<00:01:43.990><c> but</c><00:01:44.740><c> if</c><00:01:44.889><c> we</c><00:01:45.009><c> do</c><00:01:45.189><c> this</c><00:01:45.340><c> carefully</c><00:01:46.030><c> we'll</c>
+
+00:01:46.230 --> 00:01:46.240 align:start position:0%
+code but if we do this carefully we'll
+ 
+
+00:01:46.240 --> 00:01:48.629 align:start position:0%
+code but if we do this carefully we'll
+be<00:01:46.359><c> able</c><00:01:46.450><c> to</c><00:01:46.600><c> both</c><00:01:46.990><c> obfuscate</c><00:01:47.770><c> our</c><00:01:47.920><c> code</c><00:01:48.280><c> and</c>
+
+00:01:48.629 --> 00:01:48.639 align:start position:0%
+be able to both obfuscate our code and
+ 
+
+00:01:48.639 --> 00:01:51.870 align:start position:0%
+be able to both obfuscate our code and
+debug<00:01:49.539><c> any</c><00:01:49.840><c> future</c><00:01:50.469><c> stack</c><00:01:50.889><c> traces</c><00:01:51.189><c> that</c><00:01:51.670><c> we</c>
+
+00:01:51.870 --> 00:01:51.880 align:start position:0%
+debug any future stack traces that we
+ 
+
+00:01:51.880 --> 00:01:54.599 align:start position:0%
+debug any future stack traces that we
+may<00:01:52.060><c> receive</c><00:01:52.539><c> from</c><00:01:52.899><c> our</c><00:01:53.049><c> users</c><00:01:53.499><c> now</c><00:01:54.340><c> one</c><00:01:54.520><c> of</c>
+
+00:01:54.599 --> 00:01:54.609 align:start position:0%
+may receive from our users now one of
+ 
+
+00:01:54.609 --> 00:01:56.639 align:start position:0%
+may receive from our users now one of
+the<00:01:54.729><c> last</c><00:01:54.939><c> steps</c><00:01:55.270><c> before</c><00:01:55.560><c> releasing</c><00:01:56.560><c> your</c>
+
+00:01:56.639 --> 00:01:56.649 align:start position:0%
+the last steps before releasing your
+ 
+
+00:01:56.649 --> 00:01:59.489 align:start position:0%
+the last steps before releasing your
+Android<00:01:56.950><c> application</c><00:01:57.609><c> to</c><00:01:57.759><c> the</c><00:01:57.850><c> world</c><00:01:58.119><c> is</c><00:01:58.499><c> to</c>
+
+00:01:59.489 --> 00:01:59.499 align:start position:0%
+Android application to the world is to
+ 
+
+00:01:59.499 --> 00:02:02.039 align:start position:0%
+Android application to the world is to
+enable<00:01:59.740><c> obfuscation</c><00:02:00.459><c> through</c><00:02:01.209><c> ProGuard</c><00:02:01.840><c> and</c>
+
+00:02:02.039 --> 00:02:02.049 align:start position:0%
+enable obfuscation through ProGuard and
+ 
+
+00:02:02.049 --> 00:02:04.709 align:start position:0%
+enable obfuscation through ProGuard and
+not<00:02:02.709><c> only</c><00:02:02.859><c> will</c><00:02:03.280><c> this</c><00:02:03.490><c> strip</c><00:02:03.909><c> any</c><00:02:04.060><c> identifiers</c>
+
+00:02:04.709 --> 00:02:04.719 align:start position:0%
+not only will this strip any identifiers
+ 
+
+00:02:04.719 --> 00:02:07.590 align:start position:0%
+not only will this strip any identifiers
+from<00:02:05.350><c> your</c><00:02:05.590><c> code</c><00:02:06.009><c> they'll</c><00:02:06.579><c> also</c><00:02:06.759><c> perform</c><00:02:07.450><c> a</c>
+
+00:02:07.590 --> 00:02:07.600 align:start position:0%
+from your code they'll also perform a
+ 
+
+00:02:07.600 --> 00:02:09.750 align:start position:0%
+from your code they'll also perform a
+minification<00:02:07.899><c> which</c><00:02:08.619><c> will</c><00:02:08.950><c> optimize</c><00:02:09.460><c> your</c>
+
+00:02:09.750 --> 00:02:09.760 align:start position:0%
+minification which will optimize your
+ 
+
+00:02:09.760 --> 00:02:12.930 align:start position:0%
+minification which will optimize your
+code<00:02:10.119><c> and</c><00:02:10.360><c> remove</c><00:02:11.140><c> any</c><00:02:11.380><c> potential</c><00:02:11.940><c> unused</c>
+
+00:02:12.930 --> 00:02:12.940 align:start position:0%
+code and remove any potential unused
+ 
+
+00:02:12.940 --> 00:02:14.500 align:start position:0%
+code and remove any potential unused
+resources
+
+00:02:14.500 --> 00:02:14.510 align:start position:0%
+resources
+ 
+
+00:02:14.510 --> 00:02:16.300 align:start position:0%
+resources
+and<00:02:14.599><c> so</c><00:02:14.780><c> inside</c><00:02:15.349><c> of</c><00:02:15.379><c> our</c><00:02:15.739><c> modules</c>
+
+00:02:16.300 --> 00:02:16.310 align:start position:0%
+and so inside of our modules
+ 
+
+00:02:16.310 --> 00:02:18.869 align:start position:0%
+and so inside of our modules
+build.gradle<00:02:17.000><c> file</c><00:02:17.840><c> you'll</c><00:02:18.140><c> find</c>
+
+00:02:18.869 --> 00:02:18.879 align:start position:0%
+build.gradle file you'll find
+ 
+
+00:02:18.879 --> 00:02:22.710 align:start position:0%
+build.gradle file you'll find
+configuration<00:02:19.879><c> for</c><00:02:20.780><c> a</c><00:02:21.290><c> release</c><00:02:21.799><c> build</c><00:02:22.189><c> and</c>
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+configuration for a release build and
+ 
+
+00:02:22.720 --> 00:02:25.750 align:start position:0%
+configuration for a release build and
+here<00:02:23.720><c> instead</c><00:02:23.989><c> of</c><00:02:24.159><c> enabling</c><00:02:25.159><c> this</c><00:02:25.310><c> in</c><00:02:25.610><c> the</c>
+
+00:02:25.750 --> 00:02:25.760 align:start position:0%
+here instead of enabling this in the
+ 
+
+00:02:25.760 --> 00:02:27.910 align:start position:0%
+here instead of enabling this in the
+release<00:02:26.090><c> build</c><00:02:26.480><c> what</c><00:02:27.170><c> we'll</c><00:02:27.349><c> do</c><00:02:27.560><c> is</c><00:02:27.860><c> just</c>
+
+00:02:27.910 --> 00:02:27.920 align:start position:0%
+release build what we'll do is just
+ 
+
+00:02:27.920 --> 00:02:32.500 align:start position:0%
+release build what we'll do is just
+duplicate<00:02:28.760><c> this</c><00:02:29.000><c> inside</c><00:02:29.900><c> of</c><00:02:30.049><c> our</c><00:02:30.260><c> own</c><00:02:31.510><c> debug</c>
+
+00:02:32.500 --> 00:02:32.510 align:start position:0%
+duplicate this inside of our own debug
+ 
+
+00:02:32.510 --> 00:02:34.720 align:start position:0%
+duplicate this inside of our own debug
+configuration<00:02:33.069><c> so</c><00:02:34.069><c> we'll</c><00:02:34.190><c> pretend</c><00:02:34.370><c> that</c>
+
+00:02:34.720 --> 00:02:34.730 align:start position:0%
+configuration so we'll pretend that
+ 
+
+00:02:34.730 --> 00:02:36.369 align:start position:0%
+configuration so we'll pretend that
+we're<00:02:34.909><c> releasing</c><00:02:35.180><c> this</c><00:02:35.510><c> without</c><00:02:35.840><c> actually</c>
+
+00:02:36.369 --> 00:02:36.379 align:start position:0%
+we're releasing this without actually
+ 
+
+00:02:36.379 --> 00:02:38.350 align:start position:0%
+we're releasing this without actually
+signing<00:02:36.709><c> the</c><00:02:36.980><c> whole</c><00:02:37.129><c> thing</c><00:02:37.430><c> and</c><00:02:37.730><c> going</c>
+
+00:02:38.350 --> 00:02:38.360 align:start position:0%
+signing the whole thing and going
+ 
+
+00:02:38.360 --> 00:02:41.619 align:start position:0%
+signing the whole thing and going
+through<00:02:38.690><c> all</c><00:02:38.989><c> of</c><00:02:39.019><c> this</c><00:02:39.319><c> adapts</c><00:02:40.150><c> if</c><00:02:41.150><c> we</c><00:02:41.420><c> set</c>
+
+00:02:41.619 --> 00:02:41.629 align:start position:0%
+through all of this adapts if we set
+ 
+
+00:02:41.629 --> 00:02:44.470 align:start position:0%
+through all of this adapts if we set
+this<00:02:41.750><c> to</c><00:02:41.959><c> true</c><00:02:42.670><c> then</c><00:02:43.670><c> this</c><00:02:43.939><c> will</c><00:02:44.180><c> enable</c>
+
+00:02:44.470 --> 00:02:44.480 align:start position:0%
+this to true then this will enable
+ 
+
+00:02:44.480 --> 00:02:47.289 align:start position:0%
+this to true then this will enable
+ProGuard<00:02:45.170><c> and</c><00:02:45.439><c> we'll</c><00:02:46.370><c> have</c><00:02:46.519><c> to</c><00:02:46.640><c> point</c><00:02:46.940><c> it</c><00:02:47.090><c> to</c>
+
+00:02:47.289 --> 00:02:47.299 align:start position:0%
+ProGuard and we'll have to point it to
+ 
+
+00:02:47.299 --> 00:02:50.619 align:start position:0%
+ProGuard and we'll have to point it to
+any<00:02:47.450><c> ProGuard</c><00:02:48.019><c> configuration</c><00:02:49.010><c> files</c><00:02:49.629><c> here</c>
+
+00:02:50.619 --> 00:02:50.629 align:start position:0%
+any ProGuard configuration files here
+ 
+
+00:02:50.629 --> 00:02:53.470 align:start position:0%
+any ProGuard configuration files here
+you'll<00:02:50.780><c> find</c><00:02:51.049><c> the</c><00:02:51.260><c> ProGuard</c><00:02:51.650><c> rules</c><00:02:52.120><c> for</c><00:02:53.120><c> this</c>
+
+00:02:53.470 --> 00:02:53.480 align:start position:0%
+you'll find the ProGuard rules for this
+ 
+
+00:02:53.480 --> 00:02:55.750 align:start position:0%
+you'll find the ProGuard rules for this
+build<00:02:53.840><c> and</c><00:02:54.109><c> you</c><00:02:54.530><c> can</c><00:02:54.680><c> add</c><00:02:54.920><c> more</c><00:02:55.250><c> rules</c><00:02:55.519><c> there's</c>
+
+00:02:55.750 --> 00:02:55.760 align:start position:0%
+build and you can add more rules there's
+ 
+
+00:02:55.760 --> 00:02:57.610 align:start position:0%
+build and you can add more rules there's
+a<00:02:55.819><c> whole</c><00:02:56.120><c> bunch</c><00:02:56.269><c> of</c><00:02:56.420><c> documentation</c><00:02:56.989><c> and</c><00:02:57.319><c> rules</c>
+
+00:02:57.610 --> 00:02:57.620 align:start position:0%
+a whole bunch of documentation and rules
+ 
+
+00:02:57.620 --> 00:03:00.309 align:start position:0%
+a whole bunch of documentation and rules
+for<00:02:57.769><c> ProGuard</c><00:02:58.430><c> to</c><00:02:58.790><c> configure</c><00:02:59.359><c> how</c><00:03:00.079><c> it</c>
+
+00:03:00.309 --> 00:03:00.319 align:start position:0%
+for ProGuard to configure how it
+ 
+
+00:03:00.319 --> 00:03:03.009 align:start position:0%
+for ProGuard to configure how it
+performs<00:03:00.889><c> the</c><00:03:01.370><c> obfuscation</c><00:03:02.120><c> process</c>
+
+00:03:03.009 --> 00:03:03.019 align:start position:0%
+performs the obfuscation process
+ 
+
+00:03:03.019 --> 00:03:05.710 align:start position:0%
+performs the obfuscation process
+so<00:03:03.829><c> now</c><00:03:04.099><c> let's</c><00:03:04.310><c> sink</c><00:03:04.639><c> this</c><00:03:04.819><c> Gradle</c><00:03:05.269><c> project</c>
+
+00:03:05.710 --> 00:03:05.720 align:start position:0%
+so now let's sink this Gradle project
+ 
+
+00:03:05.720 --> 00:03:08.979 align:start position:0%
+so now let's sink this Gradle project
+and<00:03:05.959><c> see</c><00:03:06.230><c> what</c><00:03:06.349><c> happens</c><00:03:06.769><c> when</c><00:03:07.190><c> we</c><00:03:07.549><c> introduce</c><00:03:07.989><c> a</c>
+
+00:03:08.979 --> 00:03:08.989 align:start position:0%
+and see what happens when we introduce a
+ 
+
+00:03:08.989 --> 00:03:12.220 align:start position:0%
+and see what happens when we introduce a
+new<00:03:09.019><c> exception</c><00:03:09.560><c> inside</c><00:03:10.340><c> of</c><00:03:10.459><c> our</c><00:03:10.609><c> code</c><00:03:11.109><c> so</c><00:03:12.109><c> I'm</c>
+
+00:03:12.220 --> 00:03:12.230 align:start position:0%
+new exception inside of our code so I'm
+ 
+
+00:03:12.230 --> 00:03:13.899 align:start position:0%
+new exception inside of our code so I'm
+going<00:03:12.440><c> to</c><00:03:12.530><c> do</c><00:03:12.680><c> it's</c><00:03:13.220><c> going</c><00:03:13.340><c> to</c><00:03:13.430><c> open</c><00:03:13.519><c> up</c><00:03:13.760><c> this</c>
+
+00:03:13.899 --> 00:03:13.909 align:start position:0%
+going to do it's going to open up this
+ 
+
+00:03:13.909 --> 00:03:16.660 align:start position:0%
+going to do it's going to open up this
+file<00:03:14.329><c> and</c><00:03:14.709><c> I'm</c><00:03:15.709><c> just</c><00:03:15.889><c> going</c><00:03:16.040><c> to</c><00:03:16.069><c> throw</c><00:03:16.370><c> an</c>
+
+00:03:16.660 --> 00:03:16.670 align:start position:0%
+file and I'm just going to throw an
+ 
+
+00:03:16.670 --> 00:03:24.909 align:start position:0%
+file and I'm just going to throw an
+exception<00:03:16.780><c> manually</c><00:03:23.019><c> I'm</c><00:03:24.019><c> going</c><00:03:24.379><c> to</c><00:03:24.440><c> do</c><00:03:24.590><c> one</c>
+
+00:03:24.909 --> 00:03:24.919 align:start position:0%
+exception manually I'm going to do one
+ 
+
+00:03:24.919 --> 00:03:27.970 align:start position:0%
+exception manually I'm going to do one
+more<00:03:24.949><c> thing</c><00:03:25.129><c> and</c><00:03:25.669><c> add</c><00:03:25.940><c> few</c><00:03:26.660><c> rules</c><00:03:26.959><c> to</c><00:03:27.290><c> ProGuard</c>
+
+00:03:27.970 --> 00:03:27.980 align:start position:0%
+more thing and add few rules to ProGuard
+ 
+
+00:03:27.980 --> 00:03:30.729 align:start position:0%
+more thing and add few rules to ProGuard
+tell<00:03:28.370><c> it</c><00:03:28.489><c> to</c><00:03:28.849><c> preserve</c><00:03:29.269><c> the</c><00:03:29.989><c> line</c><00:03:30.290><c> number</c>
+
+00:03:30.729 --> 00:03:30.739 align:start position:0%
+tell it to preserve the line number
+ 
+
+00:03:30.739 --> 00:03:33.610 align:start position:0%
+tell it to preserve the line number
+table<00:03:31.310><c> and</c><00:03:32.090><c> just</c><00:03:32.299><c> go</c><00:03:32.419><c> ahead</c><00:03:32.720><c> and</c><00:03:32.930><c> run</c><00:03:33.410><c> this</c>
+
+00:03:33.610 --> 00:03:33.620 align:start position:0%
+table and just go ahead and run this
+ 
+
+00:03:33.620 --> 00:03:37.059 align:start position:0%
+table and just go ahead and run this
+application<00:03:33.829><c> now</c><00:03:35.590><c> it'll</c><00:03:36.590><c> deploy</c><00:03:36.889><c> this</c>
+
+00:03:37.059 --> 00:03:37.069 align:start position:0%
+application now it'll deploy this
+ 
+
+00:03:37.069 --> 00:03:39.039 align:start position:0%
+application now it'll deploy this
+artifact<00:03:37.579><c> to</c><00:03:37.790><c> my</c><00:03:37.910><c> emulator</c><00:03:38.449><c> and</c><00:03:38.660><c> we'll</c>
+
+00:03:39.039 --> 00:03:39.049 align:start position:0%
+artifact to my emulator and we'll
+ 
+
+00:03:39.049 --> 00:03:41.830 align:start position:0%
+artifact to my emulator and we'll
+connect<00:03:39.410><c> to</c><00:03:39.560><c> it</c><00:03:39.680><c> through</c><00:03:40.099><c> DDMS</c><00:03:40.639><c> to</c><00:03:41.419><c> view</c><00:03:41.660><c> the</c>
+
+00:03:41.830 --> 00:03:41.840 align:start position:0%
+connect to it through DDMS to view the
+ 
+
+00:03:41.840 --> 00:03:44.110 align:start position:0%
+connect to it through DDMS to view the
+log<00:03:42.109><c> and</c><00:03:42.470><c> you'll</c><00:03:43.129><c> see</c><00:03:43.430><c> that</c><00:03:43.790><c> this</c>
+
+00:03:44.110 --> 00:03:44.120 align:start position:0%
+log and you'll see that this
+ 
+
+00:03:44.120 --> 00:03:46.900 align:start position:0%
+log and you'll see that this
+nullpointerexception<00:03:44.709><c> we've</c><00:03:45.709><c> added</c><00:03:46.040><c> has</c>
+
+00:03:46.900 --> 00:03:46.910 align:start position:0%
+nullpointerexception we've added has
+ 
+
+00:03:46.910 --> 00:03:50.830 align:start position:0%
+nullpointerexception we've added has
+just<00:03:47.269><c> been</c><00:03:47.419><c> thrown</c><00:03:47.810><c> so</c><00:03:48.530><c> we</c><00:03:48.650><c> can</c><00:03:48.799><c> copy</c><00:03:49.069><c> this</c><00:03:49.840><c> as</c>
+
+00:03:50.830 --> 00:03:50.840 align:start position:0%
+just been thrown so we can copy this as
+ 
+
+00:03:50.840 --> 00:03:53.800 align:start position:0%
+just been thrown so we can copy this as
+plain<00:03:51.319><c> text</c><00:03:51.560><c> now</c><00:03:52.280><c> if</c><00:03:52.430><c> we</c><00:03:52.579><c> go</c><00:03:52.760><c> to</c><00:03:52.819><c> analyze</c><00:03:53.209><c> stack</c>
+
+00:03:53.800 --> 00:03:53.810 align:start position:0%
+plain text now if we go to analyze stack
+ 
+
+00:03:53.810 --> 00:03:57.250 align:start position:0%
+plain text now if we go to analyze stack
+trace<00:03:54.280><c> it</c><00:03:55.280><c> will</c><00:03:55.519><c> paste</c><00:03:55.760><c> that</c><00:03:56.019><c> from</c><00:03:57.019><c> our</c>
+
+00:03:57.250 --> 00:03:57.260 align:start position:0%
+trace it will paste that from our
+ 
+
+00:03:57.260 --> 00:03:59.890 align:start position:0%
+trace it will paste that from our
+systems<00:03:57.650><c> clipboard</c><00:03:58.220><c> and</c><00:03:58.459><c> we</c><00:03:59.090><c> can</c><00:03:59.239><c> use</c><00:03:59.629><c> the</c>
+
+00:03:59.890 --> 00:03:59.900 align:start position:0%
+systems clipboard and we can use the
+ 
+
+00:03:59.900 --> 00:04:02.619 align:start position:0%
+systems clipboard and we can use the
+unscrambler<00:04:00.560><c> together</c><00:04:01.549><c> with</c><00:04:01.970><c> the</c><00:04:02.209><c> mapping</c>
+
+00:04:02.619 --> 00:04:02.629 align:start position:0%
+unscrambler together with the mapping
+ 
+
+00:04:02.629 --> 00:04:05.800 align:start position:0%
+unscrambler together with the mapping
+file<00:04:02.959><c> that</c><00:04:03.769><c> ProGuard</c><00:04:04.310><c> generated</c><00:04:04.879><c> find</c><00:04:05.599><c> this</c>
+
+00:04:05.800 --> 00:04:05.810 align:start position:0%
+file that ProGuard generated find this
+ 
+
+00:04:05.810 --> 00:04:09.059 align:start position:0%
+file that ProGuard generated find this
+under<00:04:06.199><c> your</c><00:04:06.230><c> module</c><00:04:07.659><c> under</c><00:04:08.659><c> the</c><00:04:08.780><c> build</c>
+
+00:04:09.059 --> 00:04:09.069 align:start position:0%
+under your module under the build
+ 
+
+00:04:09.069 --> 00:04:13.689 align:start position:0%
+under your module under the build
+outputs<00:04:10.419><c> mapping</c><00:04:11.419><c> directory</c><00:04:12.430><c> you</c><00:04:13.430><c> can</c><00:04:13.459><c> just</c>
+
+00:04:13.689 --> 00:04:13.699 align:start position:0%
+outputs mapping directory you can just
+ 
+
+00:04:13.699 --> 00:04:17.909 align:start position:0%
+outputs mapping directory you can just
+select<00:04:13.849><c> that</c><00:04:14.209><c> now</c><00:04:15.729><c> you</c><00:04:16.729><c> can</c><00:04:16.970><c> go</c><00:04:17.090><c> ahead</c><00:04:17.209><c> and</c>
+
+00:04:17.909 --> 00:04:17.919 align:start position:0%
+select that now you can go ahead and
+ 
+
+00:04:17.919 --> 00:04:21.550 align:start position:0%
+select that now you can go ahead and
+analyze<00:04:18.919><c> the</c><00:04:19.340><c> stack</c><00:04:19.609><c> trace</c><00:04:19.970><c> now</c><00:04:20.930><c> those</c><00:04:21.169><c> lines</c>
+
+00:04:21.550 --> 00:04:21.560 align:start position:0%
+analyze the stack trace now those lines
+ 
+
+00:04:21.560 --> 00:04:23.740 align:start position:0%
+analyze the stack trace now those lines
+from<00:04:21.919><c> our</c><00:04:22.039><c> obfuscated</c><00:04:22.789><c> stack</c><00:04:23.090><c> trace</c><00:04:23.419><c> are</c>
+
+00:04:23.740 --> 00:04:23.750 align:start position:0%
+from our obfuscated stack trace are
+ 
+
+00:04:23.750 --> 00:04:27.240 align:start position:0%
+from our obfuscated stack trace are
+reconstructed<00:04:24.740><c> with</c><00:04:24.770><c> the</c><00:04:25.370><c> fully</c><00:04:25.669><c> qualified</c>
+
+00:04:27.240 --> 00:04:27.250 align:start position:0%
+reconstructed with the fully qualified
+ 
+
+00:04:27.250 --> 00:04:30.000 align:start position:0%
+reconstructed with the fully qualified
+and<00:04:27.640><c> method</c><00:04:28.030><c> names</c><00:04:28.330><c> inside</c><00:04:29.110><c> the</c><00:04:29.710><c> correct</c>
+
+00:04:30.000 --> 00:04:30.010 align:start position:0%
+and method names inside the correct
+ 
+
+00:04:30.010 --> 00:04:32.570 align:start position:0%
+and method names inside the correct
+package<00:04:30.550><c> and</c><00:04:30.820><c> we</c><00:04:30.880><c> can</c><00:04:31.060><c> navigate</c><00:04:31.300><c> to</c><00:04:31.930><c> those</c>
+
+00:04:32.570 --> 00:04:32.580 align:start position:0%
+package and we can navigate to those
+ 
+
+00:04:32.580 --> 00:04:35.610 align:start position:0%
+package and we can navigate to those
+directly<00:04:33.580><c> from</c><00:04:34.120><c> the</c><00:04:35.110><c> stacktrace</c>
+
+00:04:35.610 --> 00:04:35.620 align:start position:0%
+directly from the stacktrace
+ 
+
+00:04:35.620 --> 00:04:39.000 align:start position:0%
+directly from the stacktrace
+analyzer<00:04:36.160><c> to</c><00:04:36.880><c> show</c><00:04:37.090><c> us</c><00:04:37.270><c> where</c><00:04:37.690><c> that</c><00:04:38.010><c> exception</c>
+
+00:04:39.000 --> 00:04:39.010 align:start position:0%
+analyzer to show us where that exception
+ 
+
+00:04:39.010 --> 00:04:42.450 align:start position:0%
+analyzer to show us where that exception
+was<00:04:39.190><c> thrown</c><00:04:40.890><c> so</c><00:04:41.890><c> if</c><00:04:42.010><c> you're</c><00:04:42.130><c> writing</c><00:04:42.430><c> code</c>
+
+00:04:42.450 --> 00:04:42.460 align:start position:0%
+was thrown so if you're writing code
+ 
+
+00:04:42.460 --> 00:04:44.730 align:start position:0%
+was thrown so if you're writing code
+that's<00:04:43.210><c> distributed</c><00:04:43.900><c> to</c><00:04:44.050><c> a</c><00:04:44.080><c> large</c><00:04:44.380><c> group</c><00:04:44.680><c> of</c>
+
+00:04:44.730 --> 00:04:44.740 align:start position:0%
+that's distributed to a large group of
+ 
+
+00:04:44.740 --> 00:04:46.710 align:start position:0%
+that's distributed to a large group of
+end-users<00:04:45.310><c> this</c><00:04:45.880><c> is</c><00:04:46.030><c> a</c><00:04:46.060><c> good</c><00:04:46.300><c> way</c><00:04:46.480><c> of</c>
+
+00:04:46.710 --> 00:04:46.720 align:start position:0%
+end-users this is a good way of
+ 
+
+00:04:46.720 --> 00:04:48.420 align:start position:0%
+end-users this is a good way of
+protecting<00:04:47.500><c> your</c><00:04:47.620><c> source</c><00:04:47.920><c> code</c><00:04:48.190><c> and</c>
+
+00:04:48.420 --> 00:04:48.430 align:start position:0%
+protecting your source code and
+ 
+
+00:04:48.430 --> 00:04:50.460 align:start position:0%
+protecting your source code and
+preventing<00:04:49.360><c> it</c><00:04:49.480><c> from</c><00:04:49.510><c> being</c><00:04:49.750><c> be</c><00:04:50.020><c> compiled</c>
+
+00:04:50.460 --> 00:04:50.470 align:start position:0%
+preventing it from being be compiled
+ 
+
+00:04:50.470 --> 00:04:54.060 align:start position:0%
+preventing it from being be compiled
+from<00:04:51.190><c> the</c><00:04:51.730><c> compiled</c><00:04:52.360><c> artifact</c><00:04:52.900><c> you</c><00:04:53.230><c> just</c><00:04:53.920><c> have</c>
+
+00:04:54.060 --> 00:04:54.070 align:start position:0%
+from the compiled artifact you just have
+ 
+
+00:04:54.070 --> 00:04:56.600 align:start position:0%
+from the compiled artifact you just have
+to<00:04:54.220><c> be</c><00:04:54.340><c> careful</c><00:04:54.550><c> to</c><00:04:54.790><c> maintain</c><00:04:55.330><c> a</c><00:04:55.690><c> copy</c><00:04:56.140><c> of</c><00:04:56.500><c> that</c>
+
+00:04:56.600 --> 00:04:56.610 align:start position:0%
+to be careful to maintain a copy of that
+ 
+
+00:04:56.610 --> 00:04:59.820 align:start position:0%
+to be careful to maintain a copy of that
+ProGuard<00:04:57.610><c> generated</c><00:04:58.240><c> mapping</c><00:04:58.690><c> for</c><00:04:59.320><c> each</c><00:04:59.620><c> of</c>
+
+00:04:59.820 --> 00:04:59.830 align:start position:0%
+ProGuard generated mapping for each of
+ 
+
+00:04:59.830 --> 00:05:02.220 align:start position:0%
+ProGuard generated mapping for each of
+your<00:05:00.040><c> major</c><00:05:00.340><c> releases</c><00:05:01.090><c> so</c><00:05:01.750><c> that</c><00:05:01.870><c> you</c><00:05:01.960><c> can</c><00:05:02.080><c> go</c>
+
+00:05:02.220 --> 00:05:02.230 align:start position:0%
+your major releases so that you can go
+ 
+
+00:05:02.230 --> 00:05:04.410 align:start position:0%
+your major releases so that you can go
+back<00:05:02.470><c> and</c><00:05:02.800><c> analyze</c><00:05:03.010><c> any</c><00:05:03.460><c> stack</c><00:05:03.790><c> traces</c><00:05:04.090><c> you</c>
+
+00:05:04.410 --> 00:05:04.420 align:start position:0%
+back and analyze any stack traces you
+ 
+
+00:05:04.420 --> 00:05:07.320 align:start position:0%
+back and analyze any stack traces you
+may<00:05:04.660><c> receive</c><00:05:05.370><c> there's</c><00:05:06.370><c> also</c><00:05:06.580><c> a</c><00:05:06.730><c> tool</c><00:05:07.150><c> in</c>
+
+00:05:07.320 --> 00:05:07.330 align:start position:0%
+may receive there's also a tool in
+ 
+
+00:05:07.330 --> 00:05:09.600 align:start position:0%
+may receive there's also a tool in
+Android<00:05:07.750><c> called</c><00:05:08.080><c> retrace</c><00:05:08.860><c> that</c><00:05:09.280><c> will</c><00:05:09.400><c> allow</c>
+
+00:05:09.600 --> 00:05:09.610 align:start position:0%
+Android called retrace that will allow
+ 
+
+00:05:09.610 --> 00:05:11.520 align:start position:0%
+Android called retrace that will allow
+you<00:05:09.670><c> to</c><00:05:09.790><c> do</c><00:05:10.030><c> the</c><00:05:10.180><c> same</c><00:05:10.390><c> thing</c><00:05:10.690><c> on</c><00:05:10.900><c> the</c><00:05:11.170><c> command</c>
+
+00:05:11.520 --> 00:05:11.530 align:start position:0%
+you to do the same thing on the command
+ 
+
+00:05:11.530 --> 00:05:13.620 align:start position:0%
+you to do the same thing on the command
+line
+

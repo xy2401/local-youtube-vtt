@@ -1,0 +1,261 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.499 --> 00:00:03.820
+PETE LEPAGE: The CSS Paint API
+allows you to programmatically
+
+00:00:03.820 --> 00:00:07.480
+generate an image, the
+Server Timing API allows
+
+00:00:07.480 --> 00:00:10.180
+web servers to provide
+performance timing
+
+00:00:10.180 --> 00:00:14.770
+information via HTTP headers,
+and the new CSS Display
+
+00:00:14.770 --> 00:00:18.030
+Contents property can
+make boxes disappear.
+
+00:00:18.030 --> 00:00:19.070
+I'm Pete LePage.
+
+00:00:19.070 --> 00:00:21.670
+Let's dive in and see what's
+new for developers in Chrome 65.
+
+00:00:24.586 --> 00:00:28.700
+The CSS Paint API allows you
+to programmatically generate
+
+00:00:28.700 --> 00:00:32.479
+an image for CSS properties,
+like background image or border
+
+00:00:32.479 --> 00:00:33.470
+image.
+
+00:00:33.470 --> 00:00:35.600
+Instead of referencing
+an image, you
+
+00:00:35.600 --> 00:00:38.960
+can use the new Paint
+function to draw the image,
+
+00:00:38.960 --> 00:00:40.890
+much like a canvas element.
+
+00:00:40.890 --> 00:00:44.000
+For example, instead of
+adding extra Dom elements
+
+00:00:44.000 --> 00:00:47.510
+to create a ripple effect
+on a material style button,
+
+00:00:47.510 --> 00:00:50.540
+you could just
+use the Paint API.
+
+00:00:50.540 --> 00:00:54.410
+It's also a powerful method
+for poly-filling CSS features
+
+00:00:54.410 --> 00:00:56.710
+that aren't supported
+in the browser yet.
+
+00:00:56.710 --> 00:00:59.000
+Surma has a great post
+with several demos
+
+00:00:59.000 --> 00:01:02.720
+linked in his explainer linked
+in the description below.
+
+00:01:02.720 --> 00:01:05.690
+Hopefully, you're using the
+Navigation and Resource Timing
+
+00:01:05.690 --> 00:01:09.680
+APIs to track the performance
+of your site for real users.
+
+00:01:09.680 --> 00:01:11.840
+Until now, there
+hasn't been an easy way
+
+00:01:11.840 --> 00:01:14.960
+for the server to report
+its performance timing.
+
+00:01:14.960 --> 00:01:18.650
+The new Server Timing
+API allows your server
+
+00:01:18.650 --> 00:01:21.140
+to pass timing information
+to the browser,
+
+00:01:21.140 --> 00:01:24.590
+giving you a better picture
+of the overall performance.
+
+00:01:24.590 --> 00:01:26.990
+You can track as many
+metrics as you want--
+
+00:01:26.990 --> 00:01:29.660
+database read time, startup
+times, or whatever's
+
+00:01:29.660 --> 00:01:30.890
+important to you--
+
+00:01:30.890 --> 00:01:34.550
+by adding a Server Timing
+Header to your response.
+
+00:01:34.550 --> 00:01:37.490
+They're shown in Chrome DevTools
+or you can pull them out
+
+00:01:37.490 --> 00:01:39.440
+of the response
+header and save them
+
+00:01:39.440 --> 00:01:42.920
+with your other
+performance analytics.
+
+00:01:42.920 --> 00:01:45.500
+Adding display content
+to the outer div
+
+00:01:45.500 --> 00:01:48.230
+makes that outer div
+disappear, and its constraints
+
+00:01:48.230 --> 00:01:50.600
+are no longer applied
+to the inner div.
+
+00:01:50.600 --> 00:01:53.870
+The inner div is now 100% width.
+
+00:01:53.870 --> 00:01:56.540
+There are plenty of cases
+where this might be useful.
+
+00:01:56.540 --> 00:01:59.360
+The most common one
+is with Flexbox.
+
+00:01:59.360 --> 00:02:03.740
+With Flexbox, only the immediate
+children of a flex container
+
+00:02:03.740 --> 00:02:07.610
+become flex items, but once
+you apply display contents
+
+00:02:07.610 --> 00:02:11.090
+to a child, its children
+become flex items
+
+00:02:11.090 --> 00:02:13.160
+and are laid out using
+the same rules that would
+
+00:02:13.160 --> 00:02:15.320
+be applied to their parent.
+
+00:02:15.320 --> 00:02:18.980
+Check out Rachel Andrew's
+excellent post Vanishing Boxes
+
+00:02:18.980 --> 00:02:22.490
+with Display Content linked
+in the description below.
+
+00:02:22.490 --> 00:02:24.950
+These are just a few of
+the changes in Chrome 65
+
+00:02:24.950 --> 00:02:25.800
+for Developers.
+
+00:02:25.800 --> 00:02:27.650
+Of course, there's plenty more.
+
+00:02:27.650 --> 00:02:32.900
+The syntax for specifying
+HSL and HSLA and RGB and RGBA
+
+00:02:32.900 --> 00:02:34.880
+coordinates for
+the color property
+
+00:02:34.880 --> 00:02:37.520
+now match the CSS color 4 spec.
+
+00:02:37.520 --> 00:02:39.230
+There's a new
+feature policy that
+
+00:02:39.230 --> 00:02:41.600
+allows you to control
+synchronous XHRs
+
+00:02:41.600 --> 00:02:45.170
+through an HTTP header or
+the iframe allow attribute.
+
+00:02:45.170 --> 00:02:48.700
+All the details, including
+links to the docs and specs,
+
+00:02:48.700 --> 00:02:50.452
+are in the description below.
+
+00:02:50.452 --> 00:02:52.910
+Don't forget to check out the
+latest new in Chrome DevTools
+
+00:02:52.910 --> 00:02:55.430
+video to learn what's
+new in DevTools.
+
+00:02:55.430 --> 00:02:58.010
+And if you're interested
+in progressive web apps,
+
+00:02:58.010 --> 00:03:01.310
+check out the new PWA
+roadshow video series.
+
+00:03:01.310 --> 00:03:02.990
+Then, click that
+Subscribe button,
+
+00:03:02.990 --> 00:03:05.150
+and you'll get an email
+notification whenever
+
+00:03:05.150 --> 00:03:06.110
+we launch a new video.
+
+00:03:06.110 --> 00:03:09.110
+I'm Pete LePage, and as soon
+as Chrome 66 is released,
+
+00:03:09.110 --> 00:03:13.310
+I'll be right here to tell
+you what's new in Chrome.
+

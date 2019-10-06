@@ -1,0 +1,1734 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:04.240
+SPEAKER 1: I think, at
+first, it's always, actually,
+
+00:00:04.240 --> 00:00:05.247
+who are you and why?
+
+00:00:05.247 --> 00:00:06.080
+ERIC BIDELMAN: Yeah.
+
+00:00:06.080 --> 00:00:06.976
+That's good.
+
+00:00:06.976 --> 00:00:07.725
+SPEAKER 2: Oh, OK.
+
+00:00:07.725 --> 00:00:08.200
+ERIC BIDELMAN: No, please.
+
+00:00:08.200 --> 00:00:10.290
+SPEAKER 2: I'm
+[? Venam Rada, ?] affectionately
+
+00:00:10.290 --> 00:00:11.800
+known as V, like the movie.
+
+00:00:11.800 --> 00:00:13.050
+SPEAKER 1: It's easier to say.
+
+00:00:13.050 --> 00:00:13.716
+SPEAKER 2: Yeah.
+
+00:00:13.716 --> 00:00:14.646
+Also "V for Vendetta."
+
+00:00:14.646 --> 00:00:15.396
+ERIC BIDELMAN: Oh.
+
+00:00:15.396 --> 00:00:16.170
+SPEAKER 3: Oh.
+
+00:00:16.170 --> 00:00:17.010
+SPEAKER 1: That's a good
+name for [INAUDIBLE]..
+
+00:00:17.010 --> 00:00:18.420
+[LAUGHTER]
+
+00:00:18.420 --> 00:00:19.670
+SPEAKER 2: Power play.
+
+00:00:19.670 --> 00:00:20.170
+No.
+
+00:00:20.170 --> 00:00:21.120
+[LAUGHTER]
+
+00:00:21.120 --> 00:00:21.620
+But yeah.
+
+00:00:21.620 --> 00:00:23.760
+I'm a product manager in the
+Chrome App platform team.
+
+00:00:23.760 --> 00:00:25.245
+Work on Lighthouse,
+Speed Metrics.
+
+00:00:25.245 --> 00:00:27.775
+Just trying to, you
+know, make the web fast.
+
+00:00:27.775 --> 00:00:28.650
+SPEAKER 1: All right.
+
+00:00:28.650 --> 00:00:29.170
+That's good.
+
+00:00:29.170 --> 00:00:29.270
+ERIC BIDELMAN: Nice.
+
+00:00:29.270 --> 00:00:30.400
+And I'm Eric Bidelman.
+
+00:00:30.400 --> 00:00:31.650
+I actually work with you guys.
+
+00:00:31.650 --> 00:00:33.034
+[LAUGHTER]
+
+00:00:33.034 --> 00:00:35.200
+SPEAKER 3: Everyone we've
+interviewed, we work with.
+
+00:00:35.200 --> 00:00:36.140
+You don't need to say that.
+
+00:00:36.140 --> 00:00:36.496
+[LAUGHTER]
+
+00:00:36.496 --> 00:00:38.070
+ERIC BIDELMAN: Just trying
+to make everything clear.
+
+00:00:38.070 --> 00:00:40.720
+SPEAKER 3: Look, there's a
+certain amount of, you know,
+
+00:00:40.720 --> 00:00:41.370
+theater here.
+
+00:00:41.370 --> 00:00:42.203
+ERIC BIDELMAN: Yeah.
+
+00:00:42.203 --> 00:00:44.370
+SPEAKER 3: We're sort of
+pretending we don't know
+
+00:00:44.370 --> 00:00:45.510
+all of the content already.
+
+00:00:45.510 --> 00:00:47.138
+Also, have you ever
+done video before?
+
+00:00:47.138 --> 00:00:47.638
+[LAUGHTER]
+
+00:00:47.638 --> 00:00:48.126
+ERIC BIDELMAN: No.
+
+00:00:48.126 --> 00:00:49.459
+SPEAKER 3: This is how it works.
+
+00:00:49.459 --> 00:00:53.006
+[MUSIC PLAYING]
+
+00:00:55.775 --> 00:00:57.650
+SPEAKER 1: So you have
+this really lame thing
+
+00:00:57.650 --> 00:00:59.090
+that you developed
+and that you PM.
+
+00:00:59.090 --> 00:00:59.570
+What is it?
+
+00:00:59.570 --> 00:01:00.450
+SPEAKER 3: Yeah,
+what's Lighthouse?
+
+00:01:00.450 --> 00:01:00.890
+What does it do?
+
+00:01:00.890 --> 00:01:01.100
+SPEAKER 1: Yeah.
+
+00:01:01.100 --> 00:01:02.030
+Talk about it.
+
+00:01:02.030 --> 00:01:02.660
+Go.
+
+00:01:02.660 --> 00:01:03.370
+SPEAKER 2: Sure.
+
+00:01:03.370 --> 00:01:04.161
+I can--
+
+00:01:04.161 --> 00:01:04.660
+[LAUGHTER]
+
+00:01:04.660 --> 00:01:06.410
+ERIC BIDELMAN: It's
+your product, V.
+
+00:01:06.410 --> 00:01:07.076
+SPEAKER 2: Sure.
+
+00:01:07.076 --> 00:01:08.930
+So Lighthouse is
+a developer tool.
+
+00:01:08.930 --> 00:01:09.890
+Anyone can run it.
+
+00:01:09.890 --> 00:01:12.020
+And it basically gives
+you a personalized report
+
+00:01:12.020 --> 00:01:14.800
+over your website across
+five different categories--
+
+00:01:14.800 --> 00:01:16.430
+progressive web
+app, performance,
+
+00:01:16.430 --> 00:01:18.999
+accessibility, developer
+best practices, and SEO.
+
+00:01:18.999 --> 00:01:20.540
+SPEAKER 1: You've
+got that memorized.
+
+00:01:20.540 --> 00:01:21.290
+That's pretty bad.
+
+00:01:21.290 --> 00:01:22.165
+That's pretty badass.
+
+00:01:22.165 --> 00:01:23.240
+SPEAKER 2: I'm a PM.
+
+00:01:23.240 --> 00:01:24.544
+I pitch this every day.
+
+00:01:24.544 --> 00:01:26.210
+SPEAKER 1: I would
+have been able to say
+
+00:01:26.210 --> 00:01:28.940
+progressive and
+accessibility, and then I
+
+00:01:28.940 --> 00:01:31.210
+was like, wow,
+that's all I know.
+
+00:01:31.210 --> 00:01:33.210
+SPEAKER 3: So who would
+run this and when?
+
+00:01:33.210 --> 00:01:33.854
+What's the--
+
+00:01:33.854 --> 00:01:34.520
+SPEAKER 2: Yeah.
+
+00:01:34.520 --> 00:01:37.220
+So we really think it's
+for any developer that's
+
+00:01:37.220 --> 00:01:38.280
+building a website.
+
+00:01:38.280 --> 00:01:40.660
+And we think it's really
+helpful because, you know,
+
+00:01:40.660 --> 00:01:44.177
+there's so much advice
+that Google and other blogs
+
+00:01:44.177 --> 00:01:46.010
+give out, in terms of,
+what are you supposed
+
+00:01:46.010 --> 00:01:47.259
+to do to build a good website?
+
+00:01:47.259 --> 00:01:49.340
+And our mission is really
+to try to consolidate
+
+00:01:49.340 --> 00:01:50.810
+all that together in one place.
+
+00:01:50.810 --> 00:01:52.072
+So you can just run one tool.
+
+00:01:52.072 --> 00:01:53.780
+It tells you exactly
+what you need to do,
+
+00:01:53.780 --> 00:01:54.830
+and then you're just done.
+
+00:01:54.830 --> 00:01:56.150
+SPEAKER 1: And we have it
+in DevTools now, right?
+
+00:01:56.150 --> 00:01:57.640
+SPEAKER 2: Yes, we do.
+
+00:01:57.640 --> 00:01:59.150
+You can run it on
+the Audits panel.
+
+00:01:59.150 --> 00:02:00.500
+SPEAKER 1: The Audits panel.
+
+00:02:00.500 --> 00:02:02.330
+ERIC BIDELMAN: One could say
+it's a guiding light for web
+
+00:02:02.330 --> 00:02:02.810
+developers to follow.
+
+00:02:02.810 --> 00:02:03.735
+SPEAKER 1: Oh, wow.
+
+00:02:03.735 --> 00:02:05.715
+Look how the metaphor works out.
+
+00:02:05.715 --> 00:02:06.260
+ERIC BIDELMAN: See
+what I did there?
+
+00:02:06.260 --> 00:02:07.551
+I'll be dropping those all day.
+
+00:02:07.551 --> 00:02:08.717
+[LAUGHTER]
+
+00:02:08.717 --> 00:02:10.800
+SPEAKER 3: So give an
+example of one of the things
+
+00:02:10.800 --> 00:02:13.370
+that Lighthouse is going to tell
+me I'm doing right or wrong.
+
+00:02:13.370 --> 00:02:13.940
+What's the--
+
+00:02:13.940 --> 00:02:14.630
+SPEAKER 2: Sure.
+
+00:02:14.630 --> 00:02:17.330
+So for example, in the
+performance section,
+
+00:02:17.330 --> 00:02:20.024
+it can tell you if you've
+optimized your images properly,
+
+00:02:20.024 --> 00:02:20.690
+if you need to--
+
+00:02:20.690 --> 00:02:21.950
+SPEAKER 1: Which
+lots of people don't.
+
+00:02:21.950 --> 00:02:22.610
+SPEAKER 2: Yes.
+
+00:02:22.610 --> 00:02:24.530
+It's a very easy
+win that you can
+
+00:02:24.530 --> 00:02:26.360
+get-- that you can do
+in order to improve
+
+00:02:26.360 --> 00:02:27.650
+the site of your performance.
+
+00:02:27.650 --> 00:02:29.430
+With PWA, it can
+tell you if you have
+
+00:02:29.430 --> 00:02:32.779
+a service worker installed,
+errors in your manifest files.
+
+00:02:32.779 --> 00:02:33.820
+SPEAKER 1: Jake is happy.
+
+00:02:33.820 --> 00:02:36.140
+SPEAKER 3: Well, what I
+actually want is, can we--
+
+00:02:36.140 --> 00:02:37.940
+you know how, when
+anyone mentions Intel,
+
+00:02:37.940 --> 00:02:40.390
+it has to cut to
+the little logo--
+
+00:02:40.390 --> 00:02:41.314
+[VOCALIZING]
+
+00:02:41.314 --> 00:02:43.480
+What do we have to do to
+get one for Service Worker?
+
+00:02:43.480 --> 00:02:45.396
+SPEAKER 1: Where your
+face shows up and goes--
+
+00:02:45.396 --> 00:02:46.590
+[LAUGHTER]
+
+00:02:46.590 --> 00:02:49.850
+SPEAKER 3: As it zooms
+towards the camera.
+
+00:02:49.850 --> 00:02:50.380
+Yeah.
+
+00:02:50.380 --> 00:02:51.380
+Can we make that happen?
+
+00:02:51.380 --> 00:02:52.310
+Can we do that in post?
+
+00:02:52.310 --> 00:02:53.226
+We'll do that in post.
+
+00:02:55.557 --> 00:02:56.390
+SPEAKER 2: But yeah.
+
+00:02:56.390 --> 00:02:59.510
+I mean, there's a whole bunch
+of things Lighthouse can tell
+
+00:02:59.510 --> 00:03:02.220
+you-- performance, images,
+amongst many other things--
+
+00:03:02.220 --> 00:03:03.410
+PWA, service workers.
+
+00:03:03.410 --> 00:03:05.000
+SPEAKER 1: So we
+are out of jobs,
+
+00:03:05.000 --> 00:03:05.980
+basically, is what
+you're telling us.
+
+00:03:05.980 --> 00:03:06.830
+SPEAKER 3: Yeah, that's true.
+
+00:03:06.830 --> 00:03:07.490
+SPEAKER 2: Yes.
+
+00:03:07.490 --> 00:03:07.990
+Yes.
+
+00:03:07.990 --> 00:03:09.410
+That was the goal
+all along, actually.
+
+00:03:09.410 --> 00:03:10.010
+SPEAKER 1: That hurt.
+
+00:03:10.010 --> 00:03:10.340
+SPEAKER 2: Yeah.
+
+00:03:10.340 --> 00:03:11.480
+SPEAKER 1: All right.
+
+00:03:11.480 --> 00:03:14.130
+SPEAKER 2: Our key success
+metric is, do Surmat and Jake
+
+00:03:14.130 --> 00:03:14.630
+have a job?
+
+00:03:14.630 --> 00:03:16.030
+No.
+
+00:03:16.030 --> 00:03:16.954
+Yes, success rate.
+
+00:03:16.954 --> 00:03:17.620
+SPEAKER 1: .com.
+
+00:03:17.620 --> 00:03:20.406
+Do Surmat and Jake
+still have a job .com.
+
+00:03:20.406 --> 00:03:22.280
+SPEAKER 3: So wait, what
+would we do instead?
+
+00:03:22.280 --> 00:03:23.231
+What is our backup?
+
+00:03:23.231 --> 00:03:25.022
+SPEAKER 1: Well, I
+have [INAUDIBLE],, mate.
+
+00:03:25.022 --> 00:03:25.762
+[SIGHS]
+
+00:03:25.762 --> 00:03:26.595
+SPEAKER 3: Oh, yeah.
+
+00:03:26.595 --> 00:03:27.870
+And now the Service
+Worker thing's done.
+
+00:03:27.870 --> 00:03:29.150
+ERIC BIDELMAN: What's
+next after Service Worker?
+
+00:03:29.150 --> 00:03:30.160
+Everybody's shipping now?
+
+00:03:30.160 --> 00:03:31.410
+SPEAKER 3: We do
+background fact check.
+
+00:03:31.410 --> 00:03:32.680
+I've got stuff on
+the backburner.
+
+00:03:32.680 --> 00:03:32.980
+ERIC BIDELMAN: All right.
+
+00:03:32.980 --> 00:03:33.680
+There's peripheral APIs.
+
+00:03:33.680 --> 00:03:34.040
+All right.
+
+00:03:34.040 --> 00:03:34.300
+SPEAKER 3: I might be OK.
+
+00:03:34.300 --> 00:03:35.150
+OK.
+
+00:03:35.150 --> 00:03:37.400
+But you know, solving
+people's performance problems.
+
+00:03:37.400 --> 00:03:40.400
+Is it doing-- is it load
+time performance, is it
+
+00:03:40.400 --> 00:03:42.080
+runtime performance, or both?
+
+00:03:42.080 --> 00:03:44.090
+SPEAKER 2: I think
+our goal is both.
+
+00:03:44.090 --> 00:03:46.880
+Ultimately, we want to be
+the most comprehensive tool
+
+00:03:46.880 --> 00:03:47.540
+possible.
+
+00:03:47.540 --> 00:03:48.998
+And we actually
+added a whole bunch
+
+00:03:48.998 --> 00:03:52.140
+of new loading-focused
+audits this year.
+
+00:03:52.140 --> 00:03:55.374
+There's a talk that Addie and
+Eva gave at I/O this year,
+
+00:03:55.374 --> 00:03:56.540
+so if you're interested in--
+
+00:03:56.540 --> 00:03:57.050
+SPEAKER 1: Talking to her later.
+
+00:03:57.050 --> 00:03:57.480
+SPEAKER 2: Yes.
+
+00:03:57.480 --> 00:03:58.290
+SPEAKER 1: She's going to
+tell us more about that.
+
+00:03:58.290 --> 00:03:58.360
+SPEAKER 2: Yes.
+
+00:03:58.360 --> 00:03:59.660
+So you can learn more from her.
+
+00:03:59.660 --> 00:03:59.900
+SPEAKER 3: Yeah.
+
+00:03:59.900 --> 00:04:00.650
+Don't [INAUDIBLE].
+
+00:04:00.650 --> 00:04:03.196
+[LAUGHTER]
+
+00:04:03.196 --> 00:04:03.820
+SPEAKER 1: Yep.
+
+00:04:03.820 --> 00:04:04.570
+Already know that.
+
+00:04:04.570 --> 00:04:05.770
+Sorry.
+
+00:04:05.770 --> 00:04:08.150
+SPEAKER 3: So is Lighthouse
+something that developers
+
+00:04:08.150 --> 00:04:11.800
+are going to have to run
+manually whenever they want,
+
+00:04:11.800 --> 00:04:12.870
+or is there something--
+
+00:04:12.870 --> 00:04:13.250
+SPEAKER 2: Yeah.
+
+00:04:13.250 --> 00:04:14.380
+SPEAKER 3: --is there ways they
+can put it in their tool chain?
+
+00:04:14.380 --> 00:04:14.670
+SPEAKER 2: Yes.
+
+00:04:14.670 --> 00:04:14.960
+Yes.
+
+00:04:14.960 --> 00:04:16.790
+So you can run it
+manually through DevTools
+
+00:04:16.790 --> 00:04:17.740
+as we talked about.
+
+00:04:17.740 --> 00:04:21.170
+There's also a standalone Chrome
+extension and an npm module,
+
+00:04:21.170 --> 00:04:23.949
+for those of us who like running
+things on the command line.
+
+00:04:23.949 --> 00:04:25.490
+But actually, at
+I/O this year, we're
+
+00:04:25.490 --> 00:04:29.812
+announcing an API, which
+people can use to automate--
+
+00:04:29.812 --> 00:04:31.270
+SPEAKER 1: Lighthouse
+as a service.
+
+00:04:31.270 --> 00:04:31.940
+ERIC BIDELMAN:
+Lighthouse as a service.
+
+00:04:31.940 --> 00:04:32.326
+SPEAKER 2: LaaS.
+
+00:04:32.326 --> 00:04:33.100
+ERIC BIDELMAN: Lassie.
+
+00:04:33.100 --> 00:04:33.560
+SPEAKER 1: Bam.
+
+00:04:33.560 --> 00:04:34.518
+SPEAKER 2: Like Lassie?
+
+00:04:34.518 --> 00:04:35.900
+Like the White House dog.
+
+00:04:35.900 --> 00:04:36.680
+ERIC BIDELMAN:
+Yeah, like the dog.
+
+00:04:36.680 --> 00:04:37.880
+SPEAKER 1: Oh, I thought,
+like, mango lassi.
+
+00:04:37.880 --> 00:04:39.010
+ERIC BIDELMAN: Oh, that, too.
+
+00:04:39.010 --> 00:04:39.718
+That's delicious.
+
+00:04:39.718 --> 00:04:40.910
+SPEAKER 2: That, too, yes.
+
+00:04:40.910 --> 00:04:42.665
+If you want to drink
+it or adore it.
+
+00:04:42.665 --> 00:04:43.190
+SPEAKER 1: You can put a
+straw in the Lighthouse.
+
+00:04:43.190 --> 00:04:43.920
+ERIC BIDELMAN: With
+Lassie as a service.
+
+00:04:43.920 --> 00:04:44.421
+[LAUGHTER]
+
+00:04:44.421 --> 00:04:45.711
+SPEAKER 2: Lassie as a service.
+
+00:04:45.711 --> 00:04:46.230
+[LAUGHTER]
+
+00:04:46.230 --> 00:04:47.230
+ERIC BIDELMAN: Drink up.
+
+00:04:47.230 --> 00:04:49.160
+SPEAKER 2: But yeah,
+so you can use the API
+
+00:04:49.160 --> 00:04:51.122
+and integrate it into
+your CI workflow.
+
+00:04:51.122 --> 00:04:53.330
+There's actually-- one of
+the partners we worked with
+
+00:04:53.330 --> 00:04:55.250
+on the API, Duda--
+
+00:04:55.250 --> 00:04:58.050
+actually named after the Dude
+in "Big Lebowski," funny enough.
+
+00:04:58.050 --> 00:04:59.300
+SPEAKER 1: So many references.
+
+00:04:59.300 --> 00:05:00.914
+This is on fire.
+
+00:05:00.914 --> 00:05:01.580
+SPEAKER 2: Yeah.
+
+00:05:01.580 --> 00:05:04.477
+So Duda actually integrated
+it into their Jenkins
+
+00:05:04.477 --> 00:05:05.810
+continuous integration pipeline.
+
+00:05:05.810 --> 00:05:07.893
+We're going to show off
+that demo at I/O, as well.
+
+00:05:07.893 --> 00:05:10.160
+SPEAKER 1: So at the
+state of the union,
+
+00:05:10.160 --> 00:05:13.430
+they said they're looking
+into how they can--
+
+00:05:13.430 --> 00:05:16.455
+instead of just, you use
+AMP, therefore you get batch,
+
+00:05:16.455 --> 00:05:19.020
+they're like, you do
+good in performance,
+
+00:05:19.020 --> 00:05:21.489
+therefore, you get a
+good rating on search.
+
+00:05:21.489 --> 00:05:23.780
+Does it mean that, if I get
+a good score in Lighthouse,
+
+00:05:23.780 --> 00:05:26.900
+I can be pretty confident that
+I will do well in whatever they
+
+00:05:26.900 --> 00:05:27.950
+come up with, as well?
+
+00:05:27.950 --> 00:05:28.616
+SPEAKER 2: Yeah.
+
+00:05:28.616 --> 00:05:30.950
+So the details of the exact
+criteria, we're still--
+
+00:05:30.950 --> 00:05:31.290
+SPEAKER 1: It's all in flux.
+
+00:05:31.290 --> 00:05:32.780
+SPEAKER 2: --working
+on figuring out.
+
+00:05:32.780 --> 00:05:33.280
+Exactly.
+
+00:05:33.280 --> 00:05:35.870
+But what we're trying to do,
+and make sure, with our criteria
+
+00:05:35.870 --> 00:05:39.017
+is whatever metrics that we
+tell developers to optimize for,
+
+00:05:39.017 --> 00:05:40.850
+that there is a way to
+measure it in the lab
+
+00:05:40.850 --> 00:05:42.380
+and there's a way to
+measure it in the wild.
+
+00:05:42.380 --> 00:05:43.210
+SPEAKER 1: Well,
+that sounds good.
+
+00:05:43.210 --> 00:05:43.490
+SPEAKER 2: Yeah.
+
+00:05:43.490 --> 00:05:44.570
+And then, in the
+lab, obviously, we're
+
+00:05:44.570 --> 00:05:46.520
+going to make sure that tools,
+like Lighthouse, are exposing
+
+00:05:46.520 --> 00:05:47.490
+those metrics, as well.
+
+00:05:47.490 --> 00:05:48.710
+So yes.
+
+00:05:48.710 --> 00:05:50.437
+Long answer to your question.
+
+00:05:50.437 --> 00:05:51.020
+SPEAKER 1: No.
+
+00:05:51.020 --> 00:05:51.410
+I mean, that's good.
+
+00:05:51.410 --> 00:05:52.576
+Because then it just means--
+
+00:05:52.576 --> 00:05:54.934
+you say you have an npm
+module, we have it in DevTools.
+
+00:05:54.934 --> 00:05:57.600
+That means I can run it locally,
+and then I can put it on my CI,
+
+00:05:57.600 --> 00:05:58.210
+as well.
+
+00:05:58.210 --> 00:05:58.280
+SPEAKER 2: Yes.
+
+00:05:58.280 --> 00:05:59.030
+SPEAKER 1: And I can--
+
+00:05:59.030 --> 00:06:00.035
+SPEAKER 2: You want to
+test the public version--
+
+00:06:00.035 --> 00:06:01.420
+SPEAKER 1: Reject the PR if
+somebody does stupid things.
+
+00:06:01.420 --> 00:06:02.470
+ERIC BIDELMAN: And you
+can use the Lighthouse API
+
+00:06:02.470 --> 00:06:03.760
+if you want to
+run scale, and you
+
+00:06:03.760 --> 00:06:05.610
+don't have to install anything,
+and just get JSON results.
+
+00:06:05.610 --> 00:06:07.160
+SPEAKER 2: Don't have to
+keep your own machines,
+
+00:06:07.160 --> 00:06:07.530
+try anything like that.
+
+00:06:07.530 --> 00:06:08.120
+SPEAKER 1: I could
+do this for a living.
+
+00:06:08.120 --> 00:06:08.790
+ERIC BIDELMAN: You
+basically could.
+
+00:06:08.790 --> 00:06:11.331
+SPEAKER 3: So how quickly do
+the rules in Lighthouse develop?
+
+00:06:11.331 --> 00:06:15.540
+If I work really hard, get my
+score of 100 on Lighthouse,
+
+00:06:15.540 --> 00:06:18.780
+am I going to check back next
+week, and it's going to be 50?
+
+00:06:18.780 --> 00:06:20.622
+SPEAKER 2: So we try
+to make sure things
+
+00:06:20.622 --> 00:06:21.580
+like this don't happen.
+
+00:06:21.580 --> 00:06:24.120
+But we also want to make
+sure that it's comprehensive,
+
+00:06:24.120 --> 00:06:27.810
+and we keep up to date with
+the current state of the union.
+
+00:06:27.810 --> 00:06:30.340
+So I don't have,
+like, an exact, we
+
+00:06:30.340 --> 00:06:31.740
+add one new audit every month.
+
+00:06:31.740 --> 00:06:35.051
+But we try to make sure that
+we tackle different parts
+
+00:06:35.051 --> 00:06:36.300
+of the performance experience.
+
+00:06:36.300 --> 00:06:38.160
+So we've spent a ton
+of time on performance,
+
+00:06:38.160 --> 00:06:41.130
+and we launched search engine
+optimization audits this year.
+
+00:06:41.130 --> 00:06:44.310
+And our next focus is going to
+be on user experience audits,
+
+00:06:44.310 --> 00:06:46.560
+especially getting the forms.
+
+00:06:46.560 --> 00:06:49.230
+How do you make a really
+good form experience, which
+
+00:06:49.230 --> 00:06:51.330
+is really important
+to a lot of folks who
+
+00:06:51.330 --> 00:06:54.577
+have e-commerce stores, and they
+want to convert a lot of users,
+
+00:06:54.577 --> 00:06:55.410
+make a lot of money.
+
+00:06:55.410 --> 00:06:55.760
+SPEAKER 1: Oh, that sounds good.
+
+00:06:55.760 --> 00:06:56.760
+ERIC BIDELMAN: Yeah.
+
+00:06:56.760 --> 00:06:59.430
+We have the Perth sandbox
+over at the sandbox area,
+
+00:06:59.430 --> 00:07:01.590
+and people can come up
+and try Lighthouse, right?
+
+00:07:01.590 --> 00:07:03.060
+They can enter the
+URL on the tool.
+
+00:07:03.060 --> 00:07:04.350
+SPEAKER 1: On the
+actual Lighthouse.
+
+00:07:04.350 --> 00:07:06.475
+ERIC BIDELMAN: On the real
+Lighthouse we have here.
+
+00:07:06.475 --> 00:07:07.240
+It's incredible.
+
+00:07:07.240 --> 00:07:10.179
+SPEAKER 3: This video is going
+out after I/O, so you're not--
+
+00:07:10.179 --> 00:07:11.220
+pitching that is useless.
+
+00:07:11.220 --> 00:07:12.492
+[LAUGHTER]
+
+00:07:12.492 --> 00:07:13.200
+This is not live.
+
+00:07:13.200 --> 00:07:15.060
+ERIC BIDELMAN: I've been very
+pleased to see all the score.
+
+00:07:15.060 --> 00:07:16.810
+The accessibly scores
+are actually pretty high.
+
+00:07:16.810 --> 00:07:18.310
+And SEO scores are
+really high, too.
+
+00:07:18.310 --> 00:07:20.250
+So people care about
+accessibility and SEO.
+
+00:07:20.250 --> 00:07:20.790
+SPEAKER 3: That's good to hear.
+
+00:07:20.790 --> 00:07:21.730
+ERIC BIDELMAN: Score 90-plus.
+
+00:07:21.730 --> 00:07:22.920
+So we're doing really well.
+
+00:07:22.920 --> 00:07:24.420
+SPEAKER 1: They're just testing
+the same site over and over.
+
+00:07:24.420 --> 00:07:25.100
+ERIC BIDELMAN: That's true.
+
+00:07:25.100 --> 00:07:25.798
+Example.com.
+
+00:07:25.798 --> 00:07:27.052
+[LAUGHTER]
+
+00:07:27.052 --> 00:07:28.374
+SPEAKER 1: Doing well.
+
+00:07:28.374 --> 00:07:29.790
+So what have you
+been doing, then?
+
+00:07:29.790 --> 00:07:30.623
+ERIC BIDELMAN: Yeah.
+
+00:07:30.623 --> 00:07:32.430
+I've been working on
+Puppeteer, and working
+
+00:07:32.430 --> 00:07:33.305
+with Headless Chrome.
+
+00:07:33.305 --> 00:07:35.742
+I got really excited about
+just controlling Chrome.
+
+00:07:35.742 --> 00:07:36.450
+SPEAKER 1: Right.
+
+00:07:36.450 --> 00:07:37.380
+That's two things.
+
+00:07:37.380 --> 00:07:37.650
+ERIC BIDELMAN: OK.
+
+00:07:37.650 --> 00:07:38.580
+Let's parse that out.
+
+00:07:38.580 --> 00:07:39.050
+SPEAKER 3: Yes.
+
+00:07:39.050 --> 00:07:39.630
+ERIC BIDELMAN: All right.
+
+00:07:39.630 --> 00:07:40.000
+Headless Chrome.
+
+00:07:40.000 --> 00:07:42.180
+So Headless Chrome, I
+think we shipped it, maybe,
+
+00:07:42.180 --> 00:07:44.470
+Chrome 59 last year.
+
+00:07:44.470 --> 00:07:46.410
+Basically run Chrome
+without a window, right?
+
+00:07:46.410 --> 00:07:47.620
+Headless mode.
+
+00:07:47.620 --> 00:07:49.015
+Headful mode, headless mode.
+
+00:07:49.015 --> 00:07:50.390
+SPEAKER 1: So like
+what Phantom--
+
+00:07:50.390 --> 00:07:50.600
+ERIC BIDELMAN: Yeah.
+
+00:07:50.600 --> 00:07:51.130
+SPEAKER 1: --used to be.
+
+00:07:51.130 --> 00:07:51.800
+Phantom JS.
+
+00:07:51.800 --> 00:07:52.075
+ERIC BIDELMAN: Yeah.
+
+00:07:52.075 --> 00:07:52.760
+Yeah, exactly.
+
+00:07:52.760 --> 00:07:55.796
+So the cool thing about this is
+it's Blink, it's Chrome, right?
+
+00:07:55.796 --> 00:07:57.170
+It stays up to
+date with the web.
+
+00:07:57.170 --> 00:07:58.420
+So you no longer have to--
+
+00:07:58.420 --> 00:07:59.430
+SPEAKER 1: I got the new APIs.
+
+00:07:59.430 --> 00:07:59.975
+ERIC BIDELMAN: Yeah, exactly.
+
+00:07:59.975 --> 00:08:01.367
+You can test Service Worker.
+
+00:08:01.367 --> 00:08:01.950
+You can test--
+
+00:08:01.950 --> 00:08:02.520
+SPEAKER 3: Does
+it stay up to date
+
+00:08:02.520 --> 00:08:03.760
+with each version of Chrome?
+
+00:08:03.760 --> 00:08:04.330
+ERIC BIDELMAN: Yeah, exactly.
+
+00:08:04.330 --> 00:08:04.980
+SPEAKER 3: Oh, excellent.
+
+00:08:04.980 --> 00:08:05.700
+ERIC BIDELMAN: So
+it's just Chrome,
+
+00:08:05.700 --> 00:08:08.075
+but you throw on a command
+line flag, dash-dash headless.
+
+00:08:08.075 --> 00:08:09.866
+And you don't see
+Chrome, but you can still
+
+00:08:09.866 --> 00:08:10.790
+do everything it does.
+
+00:08:10.790 --> 00:08:12.900
+So it's kind of cool because
+we can, yeah, finally
+
+00:08:12.900 --> 00:08:14.100
+test service worker.
+
+00:08:14.100 --> 00:08:16.620
+We can write an app that uses
+modules, and we can test that.
+
+00:08:16.620 --> 00:08:18.780
+SPEAKER 1: So how
+do I control it?
+
+00:08:18.780 --> 00:08:20.580
+If it's Chrome headless,
+there's no window.
+
+00:08:20.580 --> 00:08:21.960
+ERIC BIDELMAN: Yeah, exactly.
+
+00:08:21.960 --> 00:08:23.607
+So this is where
+Puppeteer comes in.
+
+00:08:23.607 --> 00:08:24.190
+SPEAKER 3: Oh.
+
+00:08:24.190 --> 00:08:24.840
+SPEAKER 1: Oh.
+
+00:08:24.840 --> 00:08:26.705
+ERIC BIDELMAN: So Puppeteer
+is a library that we created.
+
+00:08:26.705 --> 00:08:27.710
+It's a node library.
+
+00:08:27.710 --> 00:08:29.251
+You can get it off npm.
+
+00:08:29.251 --> 00:08:30.750
+It bundles Chrome,
+so you don't have
+
+00:08:30.750 --> 00:08:32.640
+to worry about getting
+that or anything.
+
+00:08:32.640 --> 00:08:35.190
+And you can basically just
+use these high-level APIs,
+
+00:08:35.190 --> 00:08:37.830
+control Chrome, do everything
+that DevTools can do.
+
+00:08:37.830 --> 00:08:38.960
+SPEAKER 1: Oh, so you're
+using the Dev Tools
+
+00:08:38.960 --> 00:08:39.950
+protocol under the hood?
+
+00:08:39.950 --> 00:08:40.390
+ERIC BIDELMAN: Yeah.
+
+00:08:40.390 --> 00:08:40.620
+Yeah.
+
+00:08:40.620 --> 00:08:43.049
+So the protocol is crazy big,
+as you guys probably know,
+
+00:08:43.049 --> 00:08:44.514
+and it's very complex.
+
+00:08:44.514 --> 00:08:45.930
+There's a lot of
+stuff you can do.
+
+00:08:45.930 --> 00:08:47.850
+It's not immediately obvious
+how to put things together
+
+00:08:47.850 --> 00:08:48.426
+sometimes.
+
+00:08:48.426 --> 00:08:49.800
+SPEAKER 3: Can
+you do multi-touch
+
+00:08:49.800 --> 00:08:50.717
+through the protocol?
+
+00:08:50.717 --> 00:08:52.050
+ERIC BIDELMAN: You can do touch.
+
+00:08:52.050 --> 00:08:54.410
+I think-- we are personally
+working on multi-touch.
+
+00:08:54.410 --> 00:08:55.020
+SPEAKER 3: OK.
+
+00:08:55.020 --> 00:08:55.920
+ERIC BIDELMAN: We
+have keyboard input,
+
+00:08:55.920 --> 00:08:57.780
+we have touch, barebone
+stuff right now.
+
+00:08:57.780 --> 00:09:01.040
+But as the days go
+on, the engineers
+
+00:09:01.040 --> 00:09:02.290
+will add more stuff, for sure.
+
+00:09:02.290 --> 00:09:02.773
+SPEAKER 1: All right.
+
+00:09:02.773 --> 00:09:03.256
+All right.
+
+00:09:03.256 --> 00:09:03.740
+ERIC BIDELMAN: Yeah.
+
+00:09:03.740 --> 00:09:06.220
+But, yeah, anything DevTools
+can do, you can do in Puppeteer.
+
+00:09:06.220 --> 00:09:08.053
+SPEAKER 3: That's really
+important, as well.
+
+00:09:08.053 --> 00:09:11.700
+It's great to see having that
+API to send out input events
+
+00:09:11.700 --> 00:09:14.637
+exactly the way that it
+would occur if the user--
+
+00:09:14.637 --> 00:09:16.470
+SPEAKER 1: Because in
+JavaScript, you can't.
+
+00:09:16.470 --> 00:09:18.267
+If you're like, dispatch
+event yourself--
+
+00:09:18.267 --> 00:09:19.350
+SPEAKER 3: It's different.
+
+00:09:19.350 --> 00:09:20.520
+SPEAKER 1: It's different.
+
+00:09:20.520 --> 00:09:21.690
+SPEAKER 3: It's
+slightly different.
+
+00:09:21.690 --> 00:09:21.960
+ERIC BIDELMAN: Exactly.
+
+00:09:21.960 --> 00:09:23.790
+SPEAKER 1: Oh, it can
+screw you over really bad.
+
+00:09:23.790 --> 00:09:24.410
+SPEAKER 3: Right, exactly.
+
+00:09:24.410 --> 00:09:25.951
+So that's why it's
+so important to be
+
+00:09:25.951 --> 00:09:27.540
+doing this stuff for real.
+
+00:09:27.540 --> 00:09:29.040
+ERIC BIDELMAN: Well,
+it's cool, too,
+
+00:09:29.040 --> 00:09:31.647
+because DevTools has features
+like emulation and code
+
+00:09:31.647 --> 00:09:34.230
+coverage, and all these really
+powerful things they're adding.
+
+00:09:34.230 --> 00:09:35.340
+Now we can tap into that.
+
+00:09:35.340 --> 00:09:37.770
+And you can write scripts
+that analyze your site
+
+00:09:37.770 --> 00:09:39.540
+in a different way or something,
+that DevTools might not
+
+00:09:39.540 --> 00:09:40.070
+be able to do now.
+
+00:09:40.070 --> 00:09:40.770
+SPEAKER 1: I hadn't
+even thought of that.
+
+00:09:40.770 --> 00:09:42.310
+Is coverage already
+exposed in Puppeteer?
+
+00:09:42.310 --> 00:09:43.320
+ERIC BIDELMAN: Coverage
+is exposed in Puppeteer.
+
+00:09:43.320 --> 00:09:44.280
+Tracing's exposed.
+
+00:09:44.280 --> 00:09:45.360
+SPEAKER 1: Because that's
+also good for a CI,
+
+00:09:45.360 --> 00:09:46.270
+where you're like, yo--
+
+00:09:46.270 --> 00:09:47.160
+ERIC BIDELMAN: Yeah, exactly.
+
+00:09:47.160 --> 00:09:48.850
+SPEAKER 1: --you
+have unused CSS--
+
+00:09:48.850 --> 00:09:49.070
+ERIC BIDELMAN: Yeah.
+
+00:09:49.070 --> 00:09:50.430
+SPEAKER 1: --or
+something, you know?
+
+00:09:50.430 --> 00:09:51.840
+ERIC BIDELMAN: So I'm
+showing some cool demos.
+
+00:09:51.840 --> 00:09:53.610
+Because I was like,
+man, DevTools is cool,
+
+00:09:53.610 --> 00:09:55.460
+but we can be even
+cooler than the DevTools.
+
+00:09:55.460 --> 00:09:55.870
+SPEAKER 1: By the
+way, we're totally
+
+00:09:55.870 --> 00:09:57.440
+going to link to both of your
+talks in the description.
+
+00:09:57.440 --> 00:09:57.840
+ERIC BIDELMAN: Yeah.
+
+00:09:57.840 --> 00:09:58.490
+Nice.
+
+00:09:58.490 --> 00:10:00.525
+SPEAKER 1: So what is
+the biggest upcoming
+
+00:10:00.525 --> 00:10:02.400
+thing in Puppeteer you're
+looking forward to?
+
+00:10:02.400 --> 00:10:03.983
+ERIC BIDELMAN: Biggest
+upcoming thing.
+
+00:10:03.983 --> 00:10:06.785
+So we just-- we're working
+on more touch stuff,
+
+00:10:06.785 --> 00:10:08.910
+just making sure the employee
+APIs are really good.
+
+00:10:08.910 --> 00:10:12.440
+We're working on being able
+to test your end-to-end kind
+
+00:10:12.440 --> 00:10:13.440
+of PWA story.
+
+00:10:13.440 --> 00:10:15.780
+So does my app
+fully work offline?
+
+00:10:15.780 --> 00:10:18.540
+Am I missing something
+from the cache?
+
+00:10:18.540 --> 00:10:22.314
+Being able to do things like
+turn on and off notifications,
+
+00:10:22.314 --> 00:10:23.730
+go through the
+end-to-end stories.
+
+00:10:23.730 --> 00:10:24.810
+SPEAKER 1: So many
+things I never thought
+
+00:10:24.810 --> 00:10:25.700
+about they would be testing.
+
+00:10:25.700 --> 00:10:26.350
+ERIC BIDELMAN: Yeah, I know.
+
+00:10:26.350 --> 00:10:27.540
+Well, you can test your UI.
+
+00:10:27.540 --> 00:10:28.450
+You can test whatever you want.
+
+00:10:28.450 --> 00:10:28.770
+Yeah.
+
+00:10:28.770 --> 00:10:28.860
+SPEAKER 3: Yeah.
+
+00:10:28.860 --> 00:10:30.160
+Are notifications
+part of that, as well,
+
+00:10:30.160 --> 00:10:32.800
+so you can actually access
+headless notifications, too?
+
+00:10:32.800 --> 00:10:33.700
+ERIC BIDELMAN: Eventually, yeah.
+
+00:10:33.700 --> 00:10:34.155
+SPEAKER 3: Oh, eventually, OK.
+
+00:10:34.155 --> 00:10:34.440
+ERIC BIDELMAN: Yeah.
+
+00:10:34.440 --> 00:10:36.860
+So some of these, they need
+to add different layers.
+
+00:10:36.860 --> 00:10:40.340
+And this would be at the
+DevTools protocol layer.
+
+00:10:40.340 --> 00:10:42.420
+Screen casting is another
+big feature request.
+
+00:10:42.420 --> 00:10:44.378
+People want to be able
+to take videos of what's
+
+00:10:44.378 --> 00:10:45.510
+going on on the screen.
+
+00:10:45.510 --> 00:10:46.530
+SPEAKER 1: So it's
+headless, but it still
+
+00:10:46.530 --> 00:10:47.345
+gets rendered to a video?
+
+00:10:47.345 --> 00:10:47.670
+ERIC BIDELMAN: Yeah.
+
+00:10:47.670 --> 00:10:48.360
+It's-- you know.
+
+00:10:48.360 --> 00:10:49.700
+SPEAKER 3: It's just like,
+Command-H, hide the window.
+
+00:10:49.700 --> 00:10:50.820
+ERIC BIDELMAN: Yeah, exactly.
+
+00:10:50.820 --> 00:10:51.790
+SPEAKER 3: Is that how
+you implemented it?
+
+00:10:51.790 --> 00:10:52.120
+ERIC BIDELMAN: It's a trick.
+
+00:10:52.120 --> 00:10:52.605
+It's a trick.
+
+00:10:52.605 --> 00:10:53.260
+SPEAKER 3: Oh, excellent.
+
+00:10:53.260 --> 00:10:53.870
+SPEAKER 1: It's outsourced.
+
+00:10:53.870 --> 00:10:55.287
+Some person somewhere
+goes, like--
+
+00:10:55.287 --> 00:10:55.786
+[LAUGHTER]
+
+00:10:55.786 --> 00:10:57.460
+ERIC BIDELMAN: I think
+on Mac, actually,
+
+00:10:57.460 --> 00:10:59.830
+sometimes you actually see
+the Chrome logo come up as it
+
+00:10:59.830 --> 00:11:01.560
+starts to boot up
+Chrome, but it's--
+
+00:11:01.560 --> 00:11:01.990
+SPEAKER 3: And then it hides it.
+
+00:11:01.990 --> 00:11:02.930
+ERIC BIDELMAN: Yeah,
+they're hiding it.
+
+00:11:02.930 --> 00:11:03.610
+SPEAKER 3: Oh.
+
+00:11:03.610 --> 00:11:05.600
+So what we're hearing
+is massive hack.
+
+00:11:05.600 --> 00:11:06.305
+ERIC BIDELMAN: Massive hack.
+
+00:11:06.305 --> 00:11:06.570
+SPEAKER 3: Right.
+
+00:11:06.570 --> 00:11:07.780
+All that engineering work--
+
+00:11:07.780 --> 00:11:09.040
+ERIC BIDELMAN: It's all
+Chrome with it's beautiful--
+
+00:11:09.040 --> 00:11:09.940
+SPEAKER 3: Old tricks.
+
+00:11:09.940 --> 00:11:10.600
+SPEAKER 1: From
+experience, I can
+
+00:11:10.600 --> 00:11:12.340
+say that the upset is used--
+
+00:11:12.340 --> 00:11:15.070
+I used to set up testing
+on Travis or whatever,
+
+00:11:15.070 --> 00:11:16.570
+and then you'd have
+this whole dance
+
+00:11:16.570 --> 00:11:20.439
+of installing the x
+framebuffer server,
+
+00:11:20.439 --> 00:11:22.480
+and starting Chrome with
+that framebuffer device.
+
+00:11:22.480 --> 00:11:23.855
+And that's not
+necessary anymore.
+
+00:11:23.855 --> 00:11:26.027
+You legit can just start
+it without an actual UI.
+
+00:11:26.027 --> 00:11:28.360
+ERIC BIDELMAN: We were actually
+doing that at Lighthouse
+
+00:11:28.360 --> 00:11:30.610
+for a while, doing our
+unit tests on Travis.
+
+00:11:30.610 --> 00:11:32.140
+And you had to
+install that stuff.
+
+00:11:32.140 --> 00:11:34.570
+And instead, we-- as soon as
+Headless Chrome comes around,
+
+00:11:34.570 --> 00:11:38.690
+you can add that flag and
+everything gets a lot easier.
+
+00:11:38.690 --> 00:11:39.482
+[MUMBLING]
+
+00:11:39.482 --> 00:11:41.190
+SPEAKER 3: Which order
+are we doing this?
+
+00:11:41.190 --> 00:11:42.065
+SPEAKER 1: [MUMBLING]
+
+00:11:42.065 --> 00:11:43.157
+SPEAKER 3: [MUMBLING]
+
+00:11:43.157 --> 00:11:44.740
+So did you want to
+do this in English?
+
+00:11:44.740 --> 00:11:45.040
+ERIC BIDELMAN: Yeah.
+
+00:11:45.040 --> 00:11:45.380
+SPEAKER 2: Yeah.
+
+00:11:45.380 --> 00:11:46.430
+ERIC BIDELMAN: We'd
+prefer it if we could.
+
+00:11:46.430 --> 00:11:48.070
+SPEAKER 3: Because we were going
+to explain it in our own words.
+
+00:11:48.070 --> 00:11:49.150
+[LAUGHTER]
+
+00:11:49.150 --> 00:11:49.690
+ERIC BIDELMAN: We'll catch on.
+
+00:11:49.690 --> 00:11:50.330
+We're fast learners.
+
+00:11:50.330 --> 00:11:50.996
+SPEAKER 2: Yeah.
+
+00:11:50.996 --> 00:11:52.180
+SPEAKER 3: OK.
+

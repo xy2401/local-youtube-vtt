@@ -1,0 +1,546 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.887
+[MUSIC PLAYING]
+
+00:00:02.887 --> 00:00:04.220
+ROB DODSON: Everyone, what's up?
+
+00:00:04.220 --> 00:00:05.070
+It's Rob Dodson.
+
+00:00:05.070 --> 00:00:06.935
+Welcome back to season
+two of "Polycast."
+
+00:00:06.935 --> 00:00:08.810
+In today's episode,
+we're going to be looking
+
+00:00:08.810 --> 00:00:10.462
+at the auto-binding
+template element.
+
+00:00:10.462 --> 00:00:12.920
+It's one of those tags that
+not a lot of people know about,
+
+00:00:12.920 --> 00:00:15.740
+but it's super useful for
+wiring up your application.
+
+00:00:15.740 --> 00:00:17.197
+So let's check it out.
+
+00:00:17.197 --> 00:00:19.280
+So if you've worked with
+web components for a bit,
+
+00:00:19.280 --> 00:00:22.080
+you've probably already seen
+the new template element.
+
+00:00:22.080 --> 00:00:24.672
+The template element has a
+few really awesome features.
+
+00:00:24.672 --> 00:00:26.880
+First and foremost, any
+content that you place inside
+
+00:00:26.880 --> 00:00:29.740
+of a template is going
+to be completely inert,
+
+00:00:29.740 --> 00:00:32.104
+meaning this H1 that we
+have right here is not
+
+00:00:32.104 --> 00:00:34.020
+going to display on the
+page until we actually
+
+00:00:34.020 --> 00:00:36.230
+grab the guts of this
+template and stamp it out.
+
+00:00:36.230 --> 00:00:37.900
+Also, any elements
+that you have which
+
+00:00:37.900 --> 00:00:39.880
+require external resources,
+like an image tag,
+
+00:00:39.880 --> 00:00:42.850
+for instance, are not going
+to make any HTTP requests.
+
+00:00:45.710 --> 00:00:48.150
+Also, if you have script
+inside of your template,
+
+00:00:48.150 --> 00:00:50.740
+it's not going to
+execute, not until it's
+
+00:00:50.740 --> 00:00:52.386
+stamped out to the page.
+
+00:00:52.386 --> 00:00:53.760
+Some really handy
+features there.
+
+00:00:53.760 --> 00:00:56.052
+Now normally, if you want
+actually display that content
+
+00:00:56.052 --> 00:00:58.468
+as I said, you're going to
+have use some JavaScript to get
+
+00:00:58.468 --> 00:00:59.700
+all the guts onto the page.
+
+00:00:59.700 --> 00:01:01.810
+But if you're using
+Polymer, you can actually
+
+00:01:01.810 --> 00:01:03.740
+add an attribute
+to your template.
+
+00:01:03.740 --> 00:01:05.782
+You can say that your
+template is auto-binding.
+
+00:01:05.782 --> 00:01:07.240
+And what that's
+going to do is it's
+
+00:01:07.240 --> 00:01:08.230
+going to turn your
+template into what's
+
+00:01:08.230 --> 00:01:10.550
+known as a type
+extension custom element.
+
+00:01:13.720 --> 00:01:15.490
+Basically, what's
+happening is Polymer
+
+00:01:15.490 --> 00:01:17.960
+has already defined the
+definition for this element.
+
+00:01:17.960 --> 00:01:19.780
+It actually ships with
+the Polymer library.
+
+00:01:19.780 --> 00:01:21.321
+So when you boot up
+your application,
+
+00:01:21.321 --> 00:01:22.680
+it's there and ready to use.
+
+00:01:22.680 --> 00:01:23.580
+Now, your auto-binding
+template is
+
+00:01:23.580 --> 00:01:25.490
+going to immediately
+take all of its content
+
+00:01:25.490 --> 00:01:27.192
+and stamp it out the page.
+
+00:01:27.192 --> 00:01:28.650
+And what's more,
+it actually allows
+
+00:01:28.650 --> 00:01:30.895
+you to use data bindings
+with this content.
+
+00:01:30.895 --> 00:01:32.992
+So let me show you an
+example of how you do that.
+
+00:01:32.992 --> 00:01:34.450
+Here, we've got a
+template element,
+
+00:01:34.450 --> 00:01:36.625
+and inside, I've just
+placed an H1 tag.
+
+00:01:36.625 --> 00:01:39.440
+And because I have this,
+is auto-binding attribute,
+
+00:01:39.440 --> 00:01:41.784
+I know that I can leverage
+the power of data binding.
+
+00:01:41.784 --> 00:01:43.200
+So the first thing
+I'm going to do
+
+00:01:43.200 --> 00:01:46.070
+is replace the content of
+that H1 with curly braces
+
+00:01:46.070 --> 00:01:47.800
+and define a scope variable.
+
+00:01:47.800 --> 00:01:50.225
+In this case, I'm going to
+call the variable message.
+
+00:01:50.225 --> 00:01:51.600
+Elsewhere in my
+JavaScript, I can
+
+00:01:51.600 --> 00:01:54.480
+select the template element
+using querySelector,
+
+00:01:54.480 --> 00:01:56.970
+and then provide a value
+for that message variable.
+
+00:01:56.970 --> 00:02:01.190
+This value is then going to
+be piped right back to my H1
+
+00:02:01.190 --> 00:02:03.660
+and show up as the text
+content on my page.
+
+00:02:03.660 --> 00:02:05.830
+All right, I know this is
+a really simple example,
+
+00:02:05.830 --> 00:02:07.600
+so let's switch over
+to our code editor,
+
+00:02:07.600 --> 00:02:10.824
+and we can actually start
+wiring up some Polymer elements.
+
+00:02:10.824 --> 00:02:12.990
+So here, I have a really
+basic application structure
+
+00:02:12.990 --> 00:02:14.780
+using core-drawer-panel
+and some of the elements
+
+00:02:14.780 --> 00:02:16.135
+that we've covered
+in previous episodes.
+
+00:02:16.135 --> 00:02:18.500
+And I've got links to those
+previous episodes down
+
+00:02:18.500 --> 00:02:20.550
+in the show notes if
+you'd missed them.
+
+00:02:20.550 --> 00:02:22.880
+Now if I pop open the
+browser to check out
+
+00:02:22.880 --> 00:02:25.730
+the structure of this page, you
+can see that it's pretty plain.
+
+00:02:25.730 --> 00:02:28.313
+We've got a core menu with a few
+buttons that we can click on,
+
+00:02:28.313 --> 00:02:30.710
+and we've also got the title
+of our application up there.
+
+00:02:30.710 --> 00:02:32.510
+Now right now, nothing's
+really happening.
+
+00:02:32.510 --> 00:02:34.760
+So the first thing that I can
+do is change the title of my app
+
+00:02:34.760 --> 00:02:37.235
+using a data binding to make
+it a little more interesting.
+
+00:02:37.235 --> 00:02:39.680
+Back in my editor, I'm
+going to create a template
+
+00:02:39.680 --> 00:02:41.550
+and give it an
+auto-binding attribute.
+
+00:02:47.299 --> 00:02:48.840
+I'm also going to
+give it an ID, so I
+
+00:02:48.840 --> 00:02:50.995
+can reference it later
+using JavaScript.
+
+00:02:50.995 --> 00:02:53.980
+And then I can just go and
+cut and paste all the content
+
+00:02:53.980 --> 00:02:56.880
+for my application and drop
+it inside of this template.
+
+00:03:00.710 --> 00:03:03.320
+Next, I'm going to go down
+to where it says My App
+
+00:03:03.320 --> 00:03:05.670
+and replace the content
+with a binding, which
+
+00:03:05.670 --> 00:03:08.792
+I'm going to call heading.
+
+00:03:08.792 --> 00:03:10.375
+Then I'm going open
+up my app.js file,
+
+00:03:10.375 --> 00:03:12.990
+and I'm going to querySelector
+for my template using
+
+00:03:12.990 --> 00:03:16.040
+the ID that we set earlier.
+
+00:03:16.040 --> 00:03:18.790
+I'm also going to reference
+to my auto-binding template.
+
+00:03:18.790 --> 00:03:21.960
+I can just provide a value
+for that heading variable.
+
+00:03:21.960 --> 00:03:27.270
+In this case, I'm going to make
+it say, "Hello Polycasters."
+
+00:03:27.270 --> 00:03:29.240
+Now, when I refresh
+the page in my browser,
+
+00:03:29.240 --> 00:03:31.073
+you'll see that the
+title of the application
+
+00:03:31.073 --> 00:03:33.710
+has been updated to say,
+"Hello Polycasters."
+
+00:03:33.710 --> 00:03:35.672
+Now, that's kind of
+cool, but the menu
+
+00:03:35.672 --> 00:03:38.130
+itself still doesn't really do
+anything in our application,
+
+00:03:38.130 --> 00:03:39.705
+so let's change that next.
+
+00:03:39.705 --> 00:03:43.937
+Back in my editor, I'm going to
+set a selected value of zero.
+
+00:03:43.937 --> 00:03:45.520
+And this is, again,
+just another scope
+
+00:03:45.520 --> 00:03:47.170
+variable that I'm creating.
+
+00:03:47.170 --> 00:03:49.192
+In my index file,
+I'll find my core menu
+
+00:03:49.192 --> 00:03:51.150
+and change its hard coded
+selected value, which
+
+00:03:51.150 --> 00:03:55.150
+right now is zero, to that
+scope variable called selected.
+
+00:03:55.150 --> 00:03:57.995
+And I'm also going to go down
+to the container for my page
+
+00:03:57.995 --> 00:04:00.370
+where, right now, it just has
+some sort of generic filler
+
+00:04:00.370 --> 00:04:02.640
+content that says site content.
+
+00:04:02.640 --> 00:04:04.230
+I'll update that
+with some text, which
+
+00:04:04.230 --> 00:04:06.310
+is going to actually
+print out the page
+
+00:04:06.310 --> 00:04:09.994
+that we're looking at using
+that selected scope variable.
+
+00:04:09.994 --> 00:04:12.160
+Switching back to the
+browser, if I refresh the page
+
+00:04:12.160 --> 00:04:14.850
+and start clicking on the
+different elements in my menu,
+
+00:04:14.850 --> 00:04:17.120
+you'll see that the
+number is updating
+
+00:04:17.120 --> 00:04:20.296
+to let me know which
+page is selected.
+
+00:04:20.296 --> 00:04:22.399
+Now here is a little
+ProTip for you.
+
+00:04:22.399 --> 00:04:24.440
+As you're working with
+the auto-binding template,
+
+00:04:24.440 --> 00:04:27.195
+if you need to access any of
+its contents using JavaScript,
+
+00:04:27.195 --> 00:04:29.990
+you're going to want to listen
+for its template-bound event.
+
+00:04:29.990 --> 00:04:32.700
+And the reason is because the
+auto-binding template stamps
+
+00:04:32.700 --> 00:04:35.016
+out all of its content
+asynchronously.
+
+00:04:35.016 --> 00:04:36.390
+So to demonstrate
+how to do this,
+
+00:04:36.390 --> 00:04:39.270
+I'm just going to log the
+core menu element itself
+
+00:04:39.270 --> 00:04:40.930
+to my console.
+
+00:04:40.930 --> 00:04:43.300
+The way to do that is to
+first add an event listener
+
+00:04:43.300 --> 00:04:45.546
+to my template.
+
+00:04:45.546 --> 00:04:48.120
+And I'm going to be listening
+for that template-bound event,
+
+00:04:48.120 --> 00:04:51.462
+so I know when all the content
+has been stamped to the page.
+
+00:04:51.462 --> 00:04:52.920
+Then, in the callback
+function, I'm
+
+00:04:52.920 --> 00:04:55.760
+just going to grab a
+reference to the core menu,
+
+00:04:55.760 --> 00:04:58.330
+because now I know that it is
+in the document and available.
+
+00:05:06.380 --> 00:05:08.920
+And then I'm just going to
+log it out to the console.
+
+00:05:08.920 --> 00:05:10.060
+And I'm back in Chrome.
+
+00:05:10.060 --> 00:05:11.944
+I refresh the page and
+open up the dev tools.
+
+00:05:11.944 --> 00:05:13.610
+And you can see down
+here at the bottom,
+
+00:05:13.610 --> 00:05:15.401
+that core menu gets
+logged out immediately,
+
+00:05:15.401 --> 00:05:18.680
+and it highlights the core
+menu element on the page.
+
+00:05:18.680 --> 00:05:20.180
+So now you're ready
+to go add data
+
+00:05:20.180 --> 00:05:21.890
+binding to your own application.
+
+00:05:21.890 --> 00:05:23.950
+In the next episode,
+I'm going to combine
+
+00:05:23.950 --> 00:05:26.850
+the auto-binding template with
+an element called core pages,
+
+00:05:26.850 --> 00:05:29.340
+so we can actually
+dynamically swap around
+
+00:05:29.340 --> 00:05:31.370
+the content in our application.
+
+00:05:31.370 --> 00:05:33.020
+Definitely stay tuned for that.
+
+00:05:33.020 --> 00:05:34.710
+As always, thank you
+so much watching,
+
+00:05:34.710 --> 00:05:36.478
+and I will see you next time.
+
+00:05:36.478 --> 00:05:38.226
+[MUSIC PLAYING]
+

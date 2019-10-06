@@ -1,0 +1,876 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.297
+[MUSIC PLAYING]
+
+00:00:07.540 --> 00:00:10.000
+SPEAKER 1: So today we're
+going to talk about Lighthouse,
+
+00:00:10.000 --> 00:00:13.700
+a tool for auditing your
+progressive web apps and just
+
+00:00:13.700 --> 00:00:16.340
+your general web
+apps for performance
+
+00:00:16.340 --> 00:00:19.334
+best practices, general
+web dev best practices.
+
+00:00:19.334 --> 00:00:21.750
+SPEAKER 2: I kind think of it
+as like page speed insights,
+
+00:00:21.750 --> 00:00:25.560
+but the newer, more
+fanciful version.
+
+00:00:25.560 --> 00:00:27.560
+SPEAKER 1: It's page speed
+insights on steroids.
+
+00:00:27.560 --> 00:00:27.940
+SPEAKER 2: Yeah.
+
+00:00:27.940 --> 00:00:28.900
+That's a good way of putting it.
+
+00:00:28.900 --> 00:00:29.360
+SPEAKER 1: But nice steroids.
+
+00:00:29.360 --> 00:00:29.670
+OK.
+
+00:00:29.670 --> 00:00:31.360
+So the first thing
+that we're going to do,
+
+00:00:31.360 --> 00:00:32.568
+we're going to dive right in.
+
+00:00:32.568 --> 00:00:34.580
+Here we have a
+progressive web app.
+
+00:00:34.580 --> 00:00:36.440
+And we're going to use
+the Lighthouse Chrome
+
+00:00:36.440 --> 00:00:37.387
+extension on this.
+
+00:00:37.387 --> 00:00:38.970
+So as soon as you've
+got it installed,
+
+00:00:38.970 --> 00:00:40.900
+you can go and click
+on the extension
+
+00:00:40.900 --> 00:00:42.060
+and run Generate Report.
+
+00:00:42.060 --> 00:00:43.560
+Now what this is
+going to do is it's
+
+00:00:43.560 --> 00:00:46.580
+going to run through a number
+of different gathering passes.
+
+00:00:46.580 --> 00:00:48.890
+I'm going to check a bunch
+of different audits out.
+
+00:00:48.890 --> 00:00:52.720
+And it should hopefully generate
+you a nice, cool-looking report
+
+00:00:52.720 --> 00:00:54.545
+like that right off the bat.
+
+00:00:54.545 --> 00:00:55.170
+SPEAKER 2: Yay.
+
+00:00:55.170 --> 00:00:57.586
+SPEAKER 1: Now this is useful
+for a few different reasons.
+
+00:00:57.586 --> 00:01:00.140
+It'll check different
+features, like do
+
+00:01:00.140 --> 00:01:03.800
+you have support for something
+meaningful when you're offline
+
+00:01:03.800 --> 00:01:05.410
+or on flaky network connections?
+
+00:01:05.410 --> 00:01:08.000
+Is your pagelet
+performance fast?
+
+00:01:08.000 --> 00:01:09.630
+It's got nice
+tracking for things
+
+00:01:09.630 --> 00:01:12.620
+like first meaningful
+paint, input latency,
+
+00:01:12.620 --> 00:01:13.820
+time to interactive.
+
+00:01:13.820 --> 00:01:16.200
+Interactivity is sort of
+really important these days
+
+00:01:16.200 --> 00:01:18.910
+because a lot of times
+when we're using libraries
+
+00:01:18.910 --> 00:01:20.420
+or frameworks to
+ship apps, we're
+
+00:01:20.420 --> 00:01:22.630
+shipping large jobs or
+bundles down the line.
+
+00:01:22.630 --> 00:01:24.680
+Perhaps not chunking those
+out as much as we can,
+
+00:01:24.680 --> 00:01:26.937
+meaning that you can
+render something on screen.
+
+00:01:26.937 --> 00:01:29.270
+But it's not going to be
+something the user can actually
+
+00:01:29.270 --> 00:01:30.310
+interact with.
+
+00:01:30.310 --> 00:01:31.080
+SPEAKER 2: Yeah.
+
+00:01:31.080 --> 00:01:33.337
+And it's also got things
+like it checks whether you've
+
+00:01:33.337 --> 00:01:34.920
+got a web app manifest,
+whether you're
+
+00:01:34.920 --> 00:01:37.140
+defining certain
+parameters in there, which
+
+00:01:37.140 --> 00:01:39.056
+would allow people to
+add a [INAUDIBLE] screen
+
+00:01:39.056 --> 00:01:40.116
+or stuff like that.
+
+00:01:40.116 --> 00:01:41.740
+One of the really
+nice things with this
+
+00:01:41.740 --> 00:01:45.104
+is, as the web kind of grows and
+there's new APIs being added,
+
+00:01:45.104 --> 00:01:47.520
+Lighthouse is a nice way of
+keeping up to date with those.
+
+00:01:47.520 --> 00:01:50.020
+Because they'll actually add
+in checks for those things.
+
+00:01:50.020 --> 00:01:51.603
+And if obviously you
+haven't got them,
+
+00:01:51.603 --> 00:01:52.750
+it'll highlight it for you.
+
+00:01:52.750 --> 00:01:54.980
+So this is also one
+way of just making sure
+
+00:01:54.980 --> 00:01:57.407
+that you're a good solid web
+app following best practices,
+
+00:01:57.407 --> 00:01:59.490
+but also helps you stay
+up to date with new things
+
+00:01:59.490 --> 00:02:00.160
+as they land.
+
+00:02:00.160 --> 00:02:00.951
+SPEAKER 1: Exactly.
+
+00:02:00.951 --> 00:02:03.340
+So Lighthouse also
+tracks best practices,
+
+00:02:03.340 --> 00:02:04.370
+checks on accessibility.
+
+00:02:04.370 --> 00:02:07.560
+But it's also possible
+to write your own custom
+
+00:02:07.560 --> 00:02:10.030
+audits for checking
+your own best practices.
+
+00:02:10.030 --> 00:02:11.780
+Because your team might
+have some of those
+
+00:02:11.780 --> 00:02:13.154
+that they want to
+keep an eye on.
+
+00:02:13.154 --> 00:02:14.650
+But Lighthouse is
+super extensible,
+
+00:02:14.650 --> 00:02:16.150
+easy to write your own audits.
+
+00:02:16.150 --> 00:02:18.740
+Now although we've been using
+it as a Chrome extension,
+
+00:02:18.740 --> 00:02:22.870
+it's totally also
+available as a CLI tool.
+
+00:02:22.870 --> 00:02:24.380
+So let's go and check that out.
+
+00:02:24.380 --> 00:02:27.201
+So here I've got something I'm
+going to show you a little bit
+
+00:02:27.201 --> 00:02:27.700
+later.
+
+00:02:27.700 --> 00:02:29.730
+But first we're going
+to run Lighthouse
+
+00:02:29.730 --> 00:02:32.274
+against basically the--
+
+00:02:32.274 --> 00:02:33.190
+SPEAKER 2: Canonical--
+
+00:02:33.190 --> 00:02:34.315
+SPEAKER 1: --The canonical.
+
+00:02:34.315 --> 00:02:34.979
+SPEAKER 2: PWA.
+
+00:02:34.979 --> 00:02:36.020
+SPEAKER 1: Airhorner.com.
+
+00:02:36.020 --> 00:02:38.320
+I think Paul Kinlan owes us
+some of affiliate money for this
+
+00:02:38.320 --> 00:02:38.540
+now.
+
+00:02:38.540 --> 00:02:39.039
+[LAUGHTER]
+
+00:02:39.039 --> 00:02:41.987
+But basically we're running
+this at a CLI level.
+
+00:02:41.987 --> 00:02:42.570
+It's going in.
+
+00:02:42.570 --> 00:02:44.340
+It's running the
+exact same tests.
+
+00:02:44.340 --> 00:02:46.350
+You can see Chrome
+running in the background.
+
+00:02:46.350 --> 00:02:51.150
+And off the bat you have this
+really nicely formatted report
+
+00:02:51.150 --> 00:02:52.900
+that has all the
+same info, tells
+
+00:02:52.900 --> 00:02:55.602
+us what are time to
+interactive scores like?
+
+00:02:55.602 --> 00:02:57.310
+Do we have our service
+worker registered?
+
+00:02:57.310 --> 00:03:00.290
+Are we responding with the right
+responses when we're offline?
+
+00:03:00.290 --> 00:03:01.460
+And so on.
+
+00:03:01.460 --> 00:03:04.462
+This will also output the
+report to a file locally.
+
+00:03:04.462 --> 00:03:06.670
+So you can go and you can
+check that out if you want.
+
+00:03:06.670 --> 00:03:08.870
+Super duper nice.
+
+00:03:08.870 --> 00:03:11.160
+It's also possible
+to use Lighthouse
+
+00:03:11.160 --> 00:03:13.880
+as a node module in case you
+want to write your own tools
+
+00:03:13.880 --> 00:03:14.790
+on top of it.
+
+00:03:14.790 --> 00:03:18.840
+And maybe one thing
+that is worth showing
+
+00:03:18.840 --> 00:03:22.220
+is another little
+tool that Paul Irish
+
+00:03:22.220 --> 00:03:24.790
+wrote that reuses Lighthouse's
+data called Progressive Web
+
+00:03:24.790 --> 00:03:25.822
+Metrics.
+
+00:03:25.822 --> 00:03:27.530
+So we're going to do
+is, I've pulled down
+
+00:03:27.530 --> 00:03:28.570
+the latest version of that.
+
+00:03:28.570 --> 00:03:29.670
+I'm just going to go and run it.
+
+00:03:29.670 --> 00:03:31.540
+Now this is running
+the exact same test.
+
+00:03:31.540 --> 00:03:33.290
+It's spinning up Chrome
+in the background.
+
+00:03:33.290 --> 00:03:35.380
+But what should
+output here hopefully,
+
+00:03:35.380 --> 00:03:37.680
+if everything goes
+OK, is a number
+
+00:03:37.680 --> 00:03:42.050
+of different really nice
+prettily formatted graphs that
+
+00:03:42.050 --> 00:03:44.327
+show what does your first
+meaningful paint look like,
+
+00:03:44.327 --> 00:03:45.910
+when are you visually
+complete, what's
+
+00:03:45.910 --> 00:03:48.070
+your time to interactive
+score, and how long it's
+
+00:03:48.070 --> 00:03:49.490
+been since navigation started.
+
+00:03:49.490 --> 00:03:50.730
+So you just want to
+keep an eye on that.
+
+00:03:50.730 --> 00:03:52.720
+Because you don't want your
+users having to wait forever
+
+00:03:52.720 --> 00:03:54.678
+and ever and ever and
+ever and ever before they
+
+00:03:54.678 --> 00:03:56.580
+can see and interact
+with your experience.
+
+00:03:56.580 --> 00:03:57.540
+SPEAKER 2: So the
+nice thing about this
+
+00:03:57.540 --> 00:03:59.373
+is it is just highlighting
+the fact that you
+
+00:03:59.373 --> 00:04:01.416
+can pull in Lighthouse as
+a node module yourself,
+
+00:04:01.416 --> 00:04:02.540
+run exactly the same tests.
+
+00:04:02.540 --> 00:04:04.290
+But if there's
+particular rules that you
+
+00:04:04.290 --> 00:04:06.920
+care about or-- for
+example-- maybe your team
+
+00:04:06.920 --> 00:04:08.937
+is just working on
+Service Worker support
+
+00:04:08.937 --> 00:04:11.270
+and you just want to track
+offline over a period of time
+
+00:04:11.270 --> 00:04:13.060
+or other things
+around that nature,
+
+00:04:13.060 --> 00:04:14.982
+you can use Lighthouse
+and just rip out
+
+00:04:14.982 --> 00:04:16.440
+the particular
+rules you care about
+
+00:04:16.440 --> 00:04:18.320
+and show it in any way
+that works for you.
+
+00:04:18.320 --> 00:04:19.320
+SPEAKER 1: Yeah totally.
+
+00:04:19.320 --> 00:04:21.529
+So another thing I'm going
+to show you-- so let's
+
+00:04:21.529 --> 00:04:23.960
+open up Lighthouse really,
+really quickly once again.
+
+00:04:23.960 --> 00:04:25.418
+I'm going to open
+up Airhorner.com.
+
+00:04:25.418 --> 00:04:27.480
+And I'm going to use
+a little flag called
+
+00:04:27.480 --> 00:04:28.576
+Save Assets on that.
+
+00:04:28.576 --> 00:04:29.450
+So we're going to go.
+
+00:04:29.450 --> 00:04:31.866
+And we're going to do another
+one of these gathering runs,
+
+00:04:31.866 --> 00:04:33.040
+collect all the data.
+
+00:04:33.040 --> 00:04:33.400
+SPEAKER 2: [SINGING NONSENSE]
+
+00:04:33.400 --> 00:04:35.730
+SPEAKER 1: All this stuff.
+[SINGING NONSENSE] OK.
+
+00:04:35.730 --> 00:04:37.100
+So it's done.
+
+00:04:37.100 --> 00:04:38.710
+And now if I open
+up this directory--
+
+00:04:38.710 --> 00:04:40.820
+I probably shouldn't have been
+using that directory for it--
+
+00:04:40.820 --> 00:04:42.000
+I can go into Chrome.
+
+00:04:42.000 --> 00:04:44.140
+I can open up a
+brand-new timeline.
+
+00:04:44.140 --> 00:04:46.050
+I can go and I can
+load my timeline data.
+
+00:04:46.050 --> 00:04:47.730
+I just need to pull
+up my projects.
+
+00:04:47.730 --> 00:04:52.430
+Or what I can do here--
+because you know surely
+
+00:04:52.430 --> 00:04:55.610
+Chrome supports this--
+I can go over to here
+
+00:04:55.610 --> 00:04:57.614
+and drag this into Timeline.
+
+00:04:57.614 --> 00:04:58.280
+Oh it's so good.
+
+00:04:58.280 --> 00:04:59.285
+It just works.
+
+00:04:59.285 --> 00:04:59.640
+SPEAKER 2: [INAUDIBLE]
+
+00:04:59.640 --> 00:05:00.070
+SPEAKER 1: OK.
+
+00:05:00.070 --> 00:05:02.236
+So what you can see here
+is that the trace generated
+
+00:05:02.236 --> 00:05:04.160
+by Lighthouse is totally
+openable by Timeline
+
+00:05:04.160 --> 00:05:06.160
+in case you want to go
+and inspect this further.
+
+00:05:06.160 --> 00:05:08.070
+Super duper nice.
+
+00:05:08.070 --> 00:05:10.390
+Lighthouse can also be used
+as sort of a post-processor
+
+00:05:10.390 --> 00:05:11.930
+for any of your traces.
+
+00:05:11.930 --> 00:05:14.994
+So super useful for making
+the best use of this data.
+
+00:05:14.994 --> 00:05:15.660
+SPEAKER 2: Yeah.
+
+00:05:15.660 --> 00:05:17.799
+The thing I like about
+this, if you've got a CI,
+
+00:05:17.799 --> 00:05:19.590
+you might want to save
+some of these assets
+
+00:05:19.590 --> 00:05:20.506
+over a period of time.
+
+00:05:20.506 --> 00:05:22.880
+So if anything does happen
+or start going wrong,
+
+00:05:22.880 --> 00:05:25.088
+you've actually got the
+traces to go with it as well.
+
+00:05:25.088 --> 00:05:27.150
+So you can start
+debug straight away.
+
+00:05:27.150 --> 00:05:29.670
+Airhorner is doing amazingly
+looking at this timeline.
+
+00:05:29.670 --> 00:05:31.253
+Just because there's
+basically nothing
+
+00:05:31.253 --> 00:05:32.694
+in the app other
+than one button.
+
+00:05:32.694 --> 00:05:33.360
+SPEAKER 2: Yeah.
+
+00:05:33.360 --> 00:05:35.555
+Which surprisingly has
+had a number of bugs
+
+00:05:35.555 --> 00:05:36.680
+over a long period of time.
+
+00:05:36.680 --> 00:05:37.830
+SPEAKER 1: What are
+you talking about it?
+
+00:05:37.830 --> 00:05:38.610
+It just does one thing.
+
+00:05:38.610 --> 00:05:39.110
+It's great.
+
+00:05:39.110 --> 00:05:39.790
+[LAUGHTER]
+
+00:05:39.790 --> 00:05:42.360
+So we talked about using
+Lighthouse as a node module.
+
+00:05:42.360 --> 00:05:44.710
+But we've been
+talking also lately
+
+00:05:44.710 --> 00:05:46.970
+about the importance of
+testing on real-world devices,
+
+00:05:46.970 --> 00:05:49.110
+focusing on
+interactivity, focusing
+
+00:05:49.110 --> 00:05:51.810
+on network connections like
+3G where that's probably
+
+00:05:51.810 --> 00:05:53.750
+what people are using
+out there in the wild.
+
+00:05:53.750 --> 00:05:56.852
+Matt is going to
+show you what this
+
+00:05:56.852 --> 00:05:59.060
+looks like on a real device
+when you're trying it out
+
+00:05:59.060 --> 00:05:59.480
+with Lighthouse.
+
+00:05:59.480 --> 00:05:59.840
+SPEAKER 2: Yeah.
+
+00:05:59.840 --> 00:06:01.330
+So if you go to
+Lighthouse Read Me,
+
+00:06:01.330 --> 00:06:03.940
+there's a small section like
+Lighthouse with Mobile Devices.
+
+00:06:03.940 --> 00:06:08.920
+And the really important
+command is this ADB Forward TCP.
+
+00:06:08.920 --> 00:06:11.220
+Basically all that's doing
+when you run it is it
+
+00:06:11.220 --> 00:06:13.690
+opens up a socket between
+your device and your laptop.
+
+00:06:13.690 --> 00:06:15.680
+So once I've done
+that, I can just
+
+00:06:15.680 --> 00:06:18.540
+go ahead and run Lighthouse
+with Dash Dash Mobile.
+
+00:06:18.540 --> 00:06:21.100
+And once I run that, I'm just
+going to stick it on my site.
+
+00:06:21.100 --> 00:06:23.225
+You're going to start seeing
+exactly the same thing
+
+00:06:23.225 --> 00:06:26.320
+as you've seen on desktop
+where the website is reloading.
+
+00:06:26.320 --> 00:06:29.085
+It's doing all of its auditing.
+
+00:06:29.085 --> 00:06:31.400
+We've got the CLI
+going crazy, pulling
+
+00:06:31.400 --> 00:06:33.030
+in random bits of information.
+
+00:06:33.030 --> 00:06:35.690
+But at the end, we end
+up with the same report
+
+00:06:35.690 --> 00:06:37.837
+as we saw from
+[? ADI ?] before in CLI
+
+00:06:37.837 --> 00:06:39.670
+that you also get from
+the Chrome extension.
+
+00:06:39.670 --> 00:06:41.760
+So we start seeing scores.
+
+00:06:41.760 --> 00:06:43.730
+I'm not doing great
+in some aspects.
+
+00:06:43.730 --> 00:06:45.406
+But others are fine.
+
+00:06:45.406 --> 00:06:46.031
+But yeah.
+
+00:06:46.031 --> 00:06:46.830
+It's super handy.
+
+00:06:46.830 --> 00:06:49.820
+Because it means if
+the device is on 3G,
+
+00:06:49.820 --> 00:06:52.090
+the test will actually
+be running on 3G.
+
+00:06:52.090 --> 00:06:55.436
+And if you got a slow device,
+if anything like this scrolling
+
+00:06:55.436 --> 00:06:57.060
+test I think they're
+looking at, that's
+
+00:06:57.060 --> 00:06:58.950
+probably going to be
+affected by the performance
+
+00:06:58.950 --> 00:07:00.116
+of the actual device itself.
+
+00:07:00.116 --> 00:07:02.730
+So you can start
+getting regular testing
+
+00:07:02.730 --> 00:07:03.772
+of these kind of aspects.
+
+00:07:03.772 --> 00:07:04.438
+SPEAKER 1: Cool.
+
+00:07:04.438 --> 00:07:06.260
+So Matt's not doing
+great in some aspects,
+
+00:07:06.260 --> 00:07:09.390
+because his Lighthouse scores
+are also all over the place.
+
+00:07:09.390 --> 00:07:14.080
+And on that note, Case just
+released a brand-new guide
+
+00:07:14.080 --> 00:07:15.800
+on Auditing Web
+Apps with Lighthouse
+
+00:07:15.800 --> 00:07:17.781
+over on developers.google.com.
+
+00:07:17.781 --> 00:07:19.260
+Please feel free
+to check it out.
+
+00:07:19.260 --> 00:07:21.073
+It's using the canonical--
+
+00:07:21.073 --> 00:07:21.980
+SPEAKER 2: Airhorner.
+
+00:07:21.980 --> 00:07:22.861
+[LAUGHTER]
+
+00:07:22.861 --> 00:07:23.736
+SPEAKER 1: Of course.
+
+00:07:23.736 --> 00:07:24.700
+Go check that out.
+
+00:07:24.700 --> 00:07:26.036
+Try out Lighthouse.
+
+00:07:26.036 --> 00:07:27.160
+Let us know what you think.
+
+00:07:27.160 --> 00:07:28.785
+If you have any
+feedback at all, please
+
+00:07:28.785 --> 00:07:30.460
+feel free to file issues.
+
+00:07:30.460 --> 00:07:31.210
+But yeah.
+
+00:07:31.210 --> 00:07:32.084
+That was Lighthouse.
+
+00:07:32.084 --> 00:07:32.750
+SPEAKER 2: Yeah.
+
+00:07:32.750 --> 00:07:34.560
+Check out the links
+in the description.
+
+00:07:34.560 --> 00:07:35.460
+SPEAKER 1: Bye.
+
+00:07:35.460 --> 00:07:39.110
+[MUSIC PLAYING]
+

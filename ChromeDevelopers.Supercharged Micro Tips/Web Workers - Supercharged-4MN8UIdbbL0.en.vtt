@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:00.960
+[MUSIC PLAYING]
+
+00:00:00.960 --> 00:00:01.920
+[TYPING]
+
+00:00:05.280 --> 00:00:06.240
+[BOING]
+
+00:00:06.240 --> 00:00:07.200
+[EXPLOSION]
+
+00:00:11.520 --> 00:00:14.040
+SURMA: Workers are the
+web's version of threads.
+
+00:00:14.040 --> 00:00:16.379
+JavaScript is inherently
+single-threaded, so
+
+00:00:16.379 --> 00:00:18.930
+multi-threading works a little
+bit differently than in most
+
+00:00:18.930 --> 00:00:20.160
+other languages.
+
+00:00:20.160 --> 00:00:22.650
+Even though web workers
+have been around for ages
+
+00:00:22.650 --> 00:00:25.080
+that even Internet
+Explorer 10 supports them,
+
+00:00:25.080 --> 00:00:28.350
+they are just now picking up
+as a performance primitive.
+
+00:00:28.350 --> 00:00:31.050
+You create a worker with
+a new worker constructor
+
+00:00:31.050 --> 00:00:32.400
+and [INAUDIBLE] file.
+
+00:00:32.400 --> 00:00:35.970
+And that file is going to get
+executed in a separate thread.
+
+00:00:35.970 --> 00:00:37.860
+Your app and the
+worker can communicate
+
+00:00:37.860 --> 00:00:41.160
+using PostMessage to send
+messages back and forth.
+
+00:00:41.160 --> 00:00:44.100
+But keep in mind that you can't
+access the DOM from a worker
+
+00:00:44.100 --> 00:00:47.370
+and that you can only
+send JSON-style objects.
+
+00:00:47.370 --> 00:00:49.350
+The advantage is that
+you can do really
+
+00:00:49.350 --> 00:00:51.900
+expensive and long-running
+tasks in the worker,
+
+00:00:51.900 --> 00:00:53.610
+and it won't affect
+the performance
+
+00:00:53.610 --> 00:00:55.830
+and the responsiveness
+of your web app.
+
+00:00:55.830 --> 00:00:58.290
+So everything that is not
+essential to manage a UI
+
+00:00:58.290 --> 00:01:00.390
+should be considered to
+be moved to a worker.
+
+00:01:00.390 --> 00:01:01.050
+See?
+
+00:01:01.050 --> 00:01:02.490
+The web even has threads.
+
+00:01:02.490 --> 00:01:04.060
+Who would have thought?
+
+00:01:04.060 --> 00:01:05.239
+See you next time.
+
+00:01:05.239 --> 00:01:06.180
+[MUSIC PLAYING]
+
+00:01:06.180 --> 00:01:08.010
+I just finished my
+CommitLog series
+
+00:01:08.010 --> 00:01:10.470
+where I built a PWA
+using WordPress.
+
+00:01:10.470 --> 00:01:13.590
+So if you click here, you can
+watch the entire series start
+
+00:01:13.590 --> 00:01:16.170
+to finish and see how I
+built all these little,
+
+00:01:16.170 --> 00:01:17.580
+nifty features.
+
+00:01:17.580 --> 00:01:19.300
+And while you're at
+it, you should all
+
+00:01:19.300 --> 00:01:23.300
+subscribe because we put a new
+"Supercharged" every Thursday.
+

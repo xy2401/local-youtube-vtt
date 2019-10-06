@@ -1,0 +1,299 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.750 --> 00:00:03.290
+[music]
+
+00:00:13.290 --> 00:00:15.540
+Hello and welcome to section 3
+
+00:00:15.540 --> 00:00:17.140
+of lesson 3.
+
+00:00:17.140 --> 00:00:20.250
+In this part we are going to talk about how to
+avoid,
+
+00:00:20.250 --> 00:00:23.560
+wherever possible, the use of forEach
+method.
+
+00:00:23.560 --> 00:00:26.900
+Now
+
+00:00:26.900 --> 00:00:30.840
+the problem that we have is that as Java
+programmers,
+
+00:00:30.840 --> 00:00:35.300
+we think imperatively. That means that we
+tend to think
+
+00:00:35.300 --> 00:00:39.900
+in terms of loops for repetitive
+behaviour. That's what we used to: We use
+
+00:00:39.900 --> 00:00:41.350
+while loops, we use for loops,
+
+00:00:41.350 --> 00:00:45.090
+and so on. we're also very used to using
+variables
+
+00:00:45.090 --> 00:00:49.260
+to hold state. So that's the thing we're used
+to,
+
+00:00:49.260 --> 00:00:54.020
+but the problem is that sometimes we can
+try and still apply this behaviour
+
+00:00:54.020 --> 00:00:58.340
+when using streams, because there are
+things we can do, which
+
+00:00:58.340 --> 00:01:01.770
+enable us to use this kind of
+approach but it's
+
+00:01:01.770 --> 00:01:05.820
+not the right way to do things. This is wrong 
+and we need to avoid it
+
+00:01:05.820 --> 00:01:10.610
+in order to use streams correctly. Let's
+
+00:01:10.610 --> 00:01:14.580
+have a look at an example then where I've written
+some code and I'm still
+
+00:01:14.580 --> 00:01:18.080
+thinking imperatively. I'm still
+thinking in the way that
+
+00:01:18.080 --> 00:01:21.409
+I would write Java before. What I have
+
+00:01:21.409 --> 00:01:24.790
+is collection of transactions, and 
+
+00:01:24.790 --> 00:01:27.970
+from that I want to add up all the
+values
+
+00:01:27.970 --> 00:01:32.540
+of those transactions and create a total.
+To do that
+
+00:01:32.540 --> 00:01:36.260
+I thought, right I'm going to use forEach method
+
+00:01:36.260 --> 00:01:40.869
+because I'm going to take my collection of
+transactions, create a stream source
+
+00:01:40.869 --> 00:01:44.979
+and then for each element on that I want to
+get the value
+
+00:01:44.979 --> 00:01:49.360
+and add it to my total. To do that
+
+00:01:49.360 --> 00:01:52.720
+I thought very clever and I'll use this
+LongAdder class,
+
+00:01:52.720 --> 00:01:56.260
+which is new in JDK 8 and is designed
+
+00:01:56.260 --> 00:02:00.430
+for streams. It's also designed for
+multiple threads
+
+00:02:00.430 --> 00:02:04.840
+that are executing to update values. It's
+designed
+
+00:02:04.840 --> 00:02:09.530
+for frequent updates and infrequent
+reads.
+
+00:02:09.530 --> 00:02:13.240
+What I've got here, then, is using a Lambda
+expression
+
+00:02:13.240 --> 00:02:16.330
+to add the current value of
+
+00:02:16.330 --> 00:02:21.220
+the transaction to my total.
+This is problematic because when
+
+00:02:21.220 --> 00:02:22.790
+modifying state,
+
+00:02:22.790 --> 00:02:26.200
+which is the wrong way to do things in a
+functional approach.
+
+00:02:26.200 --> 00:02:29.900
+And then we've got
+
+00:02:29.900 --> 00:02:33.900
+the sum. If you want take the correct
+functional approach
+
+00:02:33.900 --> 00:02:37.020
+then we need to do this kind of thing.
+
+00:02:37.020 --> 00:02:40.450
+We take the transaction collection
+
+00:02:40.450 --> 00:02:44.640
+and we generate stream source from that.
+We then parse that
+
+00:02:44.640 --> 00:02:48.190
+to mapToLong. mapToLong
+
+00:02:48.190 --> 00:02:51.570
+uses a Lambda expression, which in this
+case
+
+00:02:51.570 --> 00:02:54.580
+will convert the transaction
+
+00:02:54.580 --> 00:02:57.739
+object on the input stream into a long
+value,
+
+00:02:57.739 --> 00:03:01.080
+which is the value of the transaction. So
+our
+
+00:03:01.080 --> 00:03:06.459
+output stream  is going to be stream of
+long values. We passed that to sum
+
+00:03:06.459 --> 00:03:11.500
+and sum is, in effect, a reduction, which
+will create a single result, which is the
+
+00:03:11.500 --> 00:03:12.180
+total
+
+00:03:12.180 --> 00:03:16.440
+all the transactions in our collection. This
+
+00:03:16.440 --> 00:03:20.450
+is a functional approach. We're not modifying
+state, not even trying to
+
+00:03:20.450 --> 00:03:23.730
+apply imperative style of coding to it
+
+00:03:23.730 --> 00:03:29.000
+or create explicit loops. There are 
+
+00:03:29.000 --> 00:03:32.549
+legitimate places to use forEach. We saw
+that in last
+
+00:03:32.549 --> 00:03:36.360
+part of the lesson, where we talk about
+infinite streams. But
+
+00:03:36.360 --> 00:03:40.570
+if we want to do something like this; we
+want to take our transactions in
+
+00:03:40.570 --> 00:03:43.700
+this case we want to print out lines of all the
+clients.
+
+00:03:43.700 --> 00:03:47.420
+This is a perfectly legitimate use of
+forEach. We take our
+
+00:03:47.420 --> 00:03:50.840
+stream source, pass each of those elements to
+forEach and 
+
+00:03:50.840 --> 00:03:54.900
+we consume it by printing out the name of
+the client.
+
+00:03:54.900 --> 00:03:58.360
+We can make this parallel if we want, so we could create a parallel stream,
+
+00:03:58.360 --> 00:04:03.240
+but obviously, in that case, we wouldn't
+be concerned by order.
+
+00:04:03.240 --> 00:04:06.670
+Because using a parallel stream we would get 
+
+00:04:06.670 --> 00:04:09.790
+non-deterministic behavior because of the
+way the threads
+
+00:04:09.790 --> 00:04:13.240
+execute. But it is quite legitimate to use
+
+00:04:13.240 --> 00:04:17.890
+forEach in certain situations. To
+summarise section 3 then,
+
+00:04:17.890 --> 00:04:21.829
+if you're thinking of using the forEach method
+
+00:04:21.829 --> 00:04:25.520
+when you're constructing a stream piece of
+code then
+
+00:04:25.520 --> 00:04:29.330
+stop. What you need to do is 
+consider,
+
+00:04:29.330 --> 00:04:33.160
+before you actually use forEach, could
+it be replaced
+
+00:04:33.160 --> 00:04:36.330
+by combination over map and
+
+00:04:36.330 --> 00:04:39.460
+reduction? If you can,
+
+00:04:39.460 --> 00:04:42.720
+then you should because it's much more
+likely that,
+
+00:04:42.720 --> 00:04:46.020
+in order to be functional you need to use
+that map
+
+00:04:46.020 --> 00:04:49.500
+followed by the reduction rather than
+forEach. But,
+
+00:04:49.500 --> 00:04:52.919
+if you're doing something like printing
+values from a stream
+
+00:04:52.919 --> 00:04:56.780
+then it can't be replaced by map and a
+reduction, so it is quite
+
+00:04:56.780 --> 00:05:00.270
+valid. If you're just consuming the value on the
+input stream,
+
+00:05:00.270 --> 00:05:05.610
+then forEach can be quite valid and
+that is the end
+
+00:05:05.610 --> 00:05:06.500
+of this part of the lesson.
+

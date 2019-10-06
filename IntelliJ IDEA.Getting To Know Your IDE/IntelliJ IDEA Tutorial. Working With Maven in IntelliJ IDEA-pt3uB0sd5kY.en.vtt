@@ -1,0 +1,1104 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:02.180 align:start position:0%
+ 
+in<00:00:00.210><c> this</c><00:00:00.780><c> screencast</c><00:00:01.110><c> we'll</c><00:00:01.680><c> see</c><00:00:01.860><c> how</c><00:00:02.010><c> to</c><00:00:02.070><c> work</c>
+
+00:00:02.180 --> 00:00:02.190 align:start position:0%
+in this screencast we'll see how to work
+ 
+
+00:00:02.190 --> 00:00:04.849 align:start position:0%
+in this screencast we'll see how to work
+with<00:00:02.429><c> maven</c><00:00:02.760><c> projects</c><00:00:03.300><c> firstly</c><00:00:04.259><c> let's</c><00:00:04.589><c> create</c>
+
+00:00:04.849 --> 00:00:04.859 align:start position:0%
+with maven projects firstly let's create
+ 
+
+00:00:04.859 --> 00:00:08.000 align:start position:0%
+with maven projects firstly let's create
+a<00:00:04.920><c> brand</c><00:00:05.069><c> new</c><00:00:05.279><c> maven</c><00:00:05.759><c> project</c><00:00:06.680><c> we</c><00:00:07.680><c> select</c>
+
+00:00:08.000 --> 00:00:08.010 align:start position:0%
+a brand new maven project we select
+ 
+
+00:00:08.010 --> 00:00:10.299 align:start position:0%
+a brand new maven project we select
+maven<00:00:08.429><c> from</c><00:00:08.580><c> the</c><00:00:08.700><c> options</c><00:00:09.030><c> on</c><00:00:09.120><c> the</c><00:00:09.240><c> left</c><00:00:09.269><c> and</c>
+
+00:00:10.299 --> 00:00:10.309 align:start position:0%
+maven from the options on the left and
+ 
+
+00:00:10.309 --> 00:00:12.589 align:start position:0%
+maven from the options on the left and
+then<00:00:11.309><c> we</c><00:00:11.400><c> can</c><00:00:11.580><c> choose</c><00:00:11.790><c> the</c><00:00:11.940><c> JDK</c><00:00:12.330><c> for</c><00:00:12.540><c> the</c>
+
+00:00:12.589 --> 00:00:12.599 align:start position:0%
+then we can choose the JDK for the
+ 
+
+00:00:12.599 --> 00:00:14.509 align:start position:0%
+then we can choose the JDK for the
+project<00:00:13.019><c> here</c><00:00:13.620><c> we'll</c><00:00:13.799><c> stick</c><00:00:14.040><c> with</c><00:00:14.070><c> the</c><00:00:14.219><c> latest</c>
+
+00:00:14.509 --> 00:00:14.519 align:start position:0%
+project here we'll stick with the latest
+ 
+
+00:00:14.519 --> 00:00:16.880 align:start position:0%
+project here we'll stick with the latest
+version<00:00:14.910><c> of</c><00:00:14.969><c> Java</c><00:00:15.030><c> 8</c><00:00:15.420><c> and</c><00:00:15.690><c> we</c><00:00:16.529><c> can</c><00:00:16.680><c> optionally</c>
+
+00:00:16.880 --> 00:00:16.890 align:start position:0%
+version of Java 8 and we can optionally
+ 
+
+00:00:16.890 --> 00:00:18.920 align:start position:0%
+version of Java 8 and we can optionally
+choose<00:00:17.369><c> a</c><00:00:17.430><c> maven</c><00:00:17.760><c> archetype</c><00:00:18.330><c> to</c><00:00:18.539><c> use</c><00:00:18.720><c> to</c>
+
+00:00:18.920 --> 00:00:18.930 align:start position:0%
+choose a maven archetype to use to
+ 
+
+00:00:18.930 --> 00:00:21.560 align:start position:0%
+choose a maven archetype to use to
+create<00:00:19.140><c> the</c><00:00:19.289><c> project</c><00:00:20.060><c> we're</c><00:00:21.060><c> going</c><00:00:21.270><c> to</c><00:00:21.390><c> create</c>
+
+00:00:21.560 --> 00:00:21.570 align:start position:0%
+create the project we're going to create
+ 
+
+00:00:21.570 --> 00:00:23.599 align:start position:0%
+create the project we're going to create
+a<00:00:21.630><c> simple</c><00:00:21.779><c> project</c><00:00:22.109><c> so</c><00:00:22.859><c> you</c><00:00:22.980><c> won't</c><00:00:23.130><c> select</c><00:00:23.490><c> an</c>
+
+00:00:23.599 --> 00:00:23.609 align:start position:0%
+a simple project so you won't select an
+ 
+
+00:00:23.609 --> 00:00:26.480 align:start position:0%
+a simple project so you won't select an
+archetype<00:00:24.000><c> for</c><00:00:24.590><c> maven</c><00:00:25.590><c> projects</c><00:00:26.099><c> we</c><00:00:26.250><c> need</c><00:00:26.400><c> to</c>
+
+00:00:26.480 --> 00:00:26.490 align:start position:0%
+archetype for maven projects we need to
+ 
+
+00:00:26.490 --> 00:00:28.820 align:start position:0%
+archetype for maven projects we need to
+declare<00:00:26.760><c> a</c><00:00:26.820><c> group</c><00:00:27.090><c> ID</c><00:00:27.300><c> and</c><00:00:27.689><c> the</c><00:00:28.109><c> artifact</c><00:00:28.500><c> idea</c>
+
+00:00:28.820 --> 00:00:28.830 align:start position:0%
+declare a group ID and the artifact idea
+ 
+
+00:00:28.830 --> 00:00:32.420 align:start position:0%
+declare a group ID and the artifact idea
+of<00:00:28.920><c> the</c><00:00:29.010><c> application</c><00:00:29.519><c> itself</c><00:00:29.640><c> if</c><00:00:30.710><c> we</c><00:00:31.710><c> want</c><00:00:31.949><c> we</c>
+
+00:00:32.420 --> 00:00:32.430 align:start position:0%
+of the application itself if we want we
+ 
+
+00:00:32.430 --> 00:00:33.830 align:start position:0%
+of the application itself if we want we
+can<00:00:32.520><c> call</c><00:00:32.730><c> the</c><00:00:32.820><c> project</c><00:00:33.180><c> something</c><00:00:33.510><c> different</c>
+
+00:00:33.830 --> 00:00:33.840 align:start position:0%
+can call the project something different
+ 
+
+00:00:33.840 --> 00:00:35.780 align:start position:0%
+can call the project something different
+to<00:00:33.899><c> the</c><00:00:33.989><c> artifacts</c><00:00:34.380><c> ID</c><00:00:34.590><c> but</c><00:00:35.399><c> for</c><00:00:35.579><c> this</c><00:00:35.640><c> example</c>
+
+00:00:35.780 --> 00:00:35.790 align:start position:0%
+to the artifacts ID but for this example
+ 
+
+00:00:35.790 --> 00:00:40.400 align:start position:0%
+to the artifacts ID but for this example
+we'll<00:00:36.120><c> keep</c><00:00:36.360><c> defaults</c><00:00:38.960><c> IntelliJ</c><00:00:39.960><c> IDEA</c><00:00:40.230><c> will</c>
+
+00:00:40.400 --> 00:00:40.410 align:start position:0%
+we'll keep defaults IntelliJ IDEA will
+ 
+
+00:00:40.410 --> 00:00:42.860 align:start position:0%
+we'll keep defaults IntelliJ IDEA will
+generate<00:00:40.710><c> the</c><00:00:40.860><c> maven</c><00:00:41.160><c> pom</c><00:00:41.370><c> to</c><00:00:41.550><c> XML</c><00:00:41.940><c> view</c><00:00:42.180><c> which</c>
+
+00:00:42.860 --> 00:00:42.870 align:start position:0%
+generate the maven pom to XML view which
+ 
+
+00:00:42.870 --> 00:00:46.130 align:start position:0%
+generate the maven pom to XML view which
+you<00:00:42.899><c> can</c><00:00:43.140><c> see</c><00:00:43.320><c> here</c><00:00:44.510><c> you</c><00:00:45.510><c> can</c><00:00:45.690><c> choose</c><00:00:45.899><c> whether</c>
+
+00:00:46.130 --> 00:00:46.140 align:start position:0%
+you can see here you can choose whether
+ 
+
+00:00:46.140 --> 00:00:47.900 align:start position:0%
+you can see here you can choose whether
+to<00:00:46.260><c> import</c><00:00:46.649><c> any</c><00:00:46.800><c> changes</c><00:00:47.250><c> from</c><00:00:47.370><c> the</c><00:00:47.520><c> pom</c><00:00:47.670><c> file</c>
+
+00:00:47.900 --> 00:00:47.910 align:start position:0%
+to import any changes from the pom file
+ 
+
+00:00:47.910 --> 00:00:50.630 align:start position:0%
+to import any changes from the pom file
+manually<00:00:48.300><c> after</c><00:00:48.600><c> you</c><00:00:48.989><c> make</c><00:00:49.140><c> them</c><00:00:49.350><c> or</c><00:00:49.640><c> choose</c>
+
+00:00:50.630 --> 00:00:50.640 align:start position:0%
+manually after you make them or choose
+ 
+
+00:00:50.640 --> 00:00:52.279 align:start position:0%
+manually after you make them or choose
+to<00:00:50.789><c> have</c><00:00:50.879><c> IntelliJ</c><00:00:51.329><c> IDEA</c><00:00:51.600><c> automatically</c>
+
+00:00:52.279 --> 00:00:52.289 align:start position:0%
+to have IntelliJ IDEA automatically
+ 
+
+00:00:52.289 --> 00:00:53.810 align:start position:0%
+to have IntelliJ IDEA automatically
+import<00:00:52.680><c> any</c><00:00:52.829><c> changes</c><00:00:53.250><c> as</c><00:00:53.399><c> soon</c><00:00:53.460><c> as</c><00:00:53.640><c> they're</c>
+
+00:00:53.810 --> 00:00:53.820 align:start position:0%
+import any changes as soon as they're
+ 
+
+00:00:53.820 --> 00:00:56.270 align:start position:0%
+import any changes as soon as they're
+made<00:00:54.000><c> because</c><00:00:54.930><c> this</c><00:00:55.230><c> is</c><00:00:55.350><c> a</c><00:00:55.379><c> small</c><00:00:55.680><c> project</c><00:00:55.890><c> and</c>
+
+00:00:56.270 --> 00:00:56.280 align:start position:0%
+made because this is a small project and
+ 
+
+00:00:56.280 --> 00:00:58.010 align:start position:0%
+made because this is a small project and
+importing<00:00:56.879><c> changes</c><00:00:57.300><c> is</c><00:00:57.390><c> probably</c><00:00:57.660><c> not</c><00:00:57.870><c> going</c>
+
+00:00:58.010 --> 00:00:58.020 align:start position:0%
+importing changes is probably not going
+ 
+
+00:00:58.020 --> 00:01:00.260 align:start position:0%
+importing changes is probably not going
+to<00:00:58.109><c> take</c><00:00:58.320><c> too</c><00:00:58.500><c> long</c><00:00:58.680><c> for</c><00:00:59.579><c> this</c><00:00:59.699><c> example</c><00:01:00.030><c> we'll</c>
+
+00:01:00.260 --> 00:01:00.270 align:start position:0%
+to take too long for this example we'll
+ 
+
+00:01:00.270 --> 00:01:03.470 align:start position:0%
+to take too long for this example we'll
+choose<00:01:00.300><c> to</c><00:01:00.539><c> enable</c><00:01:00.840><c> auto</c><00:01:01.170><c> import</c><00:01:01.710><c> as</c><00:01:02.180><c> well</c><00:01:03.180><c> as</c>
+
+00:01:03.470 --> 00:01:03.480 align:start position:0%
+choose to enable auto import as well as
+ 
+
+00:01:03.480 --> 00:01:06.380 align:start position:0%
+choose to enable auto import as well as
+creating<00:01:03.840><c> the</c><00:01:03.930><c> basic</c><00:01:04.110><c> pom</c><00:01:04.470><c> to</c><00:01:04.619><c> XML</c><00:01:05.390><c> IntelliJ</c>
+
+00:01:06.380 --> 00:01:06.390 align:start position:0%
+creating the basic pom to XML IntelliJ
+ 
+
+00:01:06.390 --> 00:01:07.910 align:start position:0%
+creating the basic pom to XML IntelliJ
+IDEA<00:01:06.630><c> has</c><00:01:06.750><c> also</c><00:01:06.930><c> created</c><00:01:07.470><c> the</c><00:01:07.560><c> default</c>
+
+00:01:07.910 --> 00:01:07.920 align:start position:0%
+IDEA has also created the default
+ 
+
+00:01:07.920 --> 00:01:09.679 align:start position:0%
+IDEA has also created the default
+directory<00:01:08.130><c> structure</c><00:01:08.729><c> for</c><00:01:08.909><c> amazing</c><00:01:09.240><c> projects</c>
+
+00:01:09.679 --> 00:01:09.689 align:start position:0%
+directory structure for amazing projects
+ 
+
+00:01:09.689 --> 00:01:12.280 align:start position:0%
+directory structure for amazing projects
+with<00:01:10.110><c> the</c><00:01:10.200><c> source</c><00:01:10.409><c> and</c><00:01:10.590><c> test</c><00:01:10.799><c> folders</c><00:01:11.159><c> defined</c>
+
+00:01:12.280 --> 00:01:12.290 align:start position:0%
+with the source and test folders defined
+ 
+
+00:01:12.290 --> 00:01:15.800 align:start position:0%
+with the source and test folders defined
+when<00:01:13.290><c> we</c><00:01:13.409><c> open</c><00:01:13.680><c> the</c><00:01:13.770><c> maven</c><00:01:14.070><c> project</c><00:01:14.430><c> window</c><00:01:14.810><c> we</c>
+
+00:01:15.800 --> 00:01:15.810 align:start position:0%
+when we open the maven project window we
+ 
+
+00:01:15.810 --> 00:01:17.450 align:start position:0%
+when we open the maven project window we
+can<00:01:15.930><c> see</c><00:01:16.110><c> the</c><00:01:16.259><c> standard</c><00:01:16.470><c> maven</c><00:01:16.920><c> lifecycle</c>
+
+00:01:17.450 --> 00:01:17.460 align:start position:0%
+can see the standard maven lifecycle
+ 
+
+00:01:17.460 --> 00:01:19.940 align:start position:0%
+can see the standard maven lifecycle
+phases<00:01:17.700><c> as</c><00:01:18.119><c> well</c><00:01:18.810><c> as</c><00:01:19.080><c> the</c><00:01:19.200><c> goals</c><00:01:19.409><c> defined</c><00:01:19.619><c> by</c>
+
+00:01:19.940 --> 00:01:19.950 align:start position:0%
+phases as well as the goals defined by
+ 
+
+00:01:19.950 --> 00:01:23.630 align:start position:0%
+phases as well as the goals defined by
+various<00:01:20.369><c> maven</c><00:01:20.700><c> plugins</c><00:01:21.920><c> we</c><00:01:22.920><c> can</c><00:01:23.100><c> easily</c><00:01:23.340><c> add</c>
+
+00:01:23.630 --> 00:01:23.640 align:start position:0%
+various maven plugins we can easily add
+ 
+
+00:01:23.640 --> 00:01:25.580 align:start position:0%
+various maven plugins we can easily add
+new<00:01:23.670><c> dependencies</c><00:01:24.390><c> by</c><00:01:24.600><c> generate</c><00:01:25.110><c> on</c><00:01:25.320><c> the</c><00:01:25.409><c> code</c>
+
+00:01:25.580 --> 00:01:25.590 align:start position:0%
+new dependencies by generate on the code
+ 
+
+00:01:25.590 --> 00:01:29.350 align:start position:0%
+new dependencies by generate on the code
+menu<00:01:25.860><c> or</c><00:01:26.450><c> using</c><00:01:27.450><c> command</c><00:01:27.810><c> n</c><00:01:27.960><c> on</c><00:01:28.350><c> the</c><00:01:28.590><c> Mac</c><00:01:28.740><c> or</c>
+
+00:01:29.350 --> 00:01:29.360 align:start position:0%
+menu or using command n on the Mac or
+ 
+
+00:01:29.360 --> 00:01:33.249 align:start position:0%
+menu or using command n on the Mac or
+often<00:01:30.360><c> insert</c><00:01:30.720><c> on</c><00:01:30.900><c> Windows</c><00:01:31.229><c> and</c><00:01:31.380><c> Linux</c><00:01:31.409><c> as</c>
+
+00:01:33.249 --> 00:01:33.259 align:start position:0%
+often insert on Windows and Linux as
+ 
+
+00:01:33.259 --> 00:01:36.649 align:start position:0%
+often insert on Windows and Linux as
+you'd<00:01:34.259><c> expect</c><00:01:34.619><c> from</c><00:01:34.710><c> IntelliJ</c><00:01:35.220><c> IDEA</c><00:01:35.520><c> you</c><00:01:36.479><c> get</c>
+
+00:01:36.649 --> 00:01:36.659 align:start position:0%
+you'd expect from IntelliJ IDEA you get
+ 
+
+00:01:36.659 --> 00:01:38.569 align:start position:0%
+you'd expect from IntelliJ IDEA you get
+code<00:01:36.900><c> completion</c><00:01:36.930><c> inside</c><00:01:37.920><c> the</c><00:01:38.100><c> dependency</c>
+
+00:01:38.569 --> 00:01:38.579 align:start position:0%
+code completion inside the dependency
+ 
+
+00:01:38.579 --> 00:01:40.700 align:start position:0%
+code completion inside the dependency
+template<00:01:38.970><c> to</c><00:01:39.600><c> help</c><00:01:39.630><c> you</c><00:01:39.900><c> find</c><00:01:40.110><c> the</c><00:01:40.200><c> dependency</c>
+
+00:01:40.700 --> 00:01:40.710 align:start position:0%
+template to help you find the dependency
+ 
+
+00:01:40.710 --> 00:01:45.530 align:start position:0%
+template to help you find the dependency
+you're<00:01:40.860><c> looking</c><00:01:41.100><c> for</c><00:01:43.820><c> you</c><00:01:44.820><c> can</c><00:01:45.000><c> see</c><00:01:45.149><c> all</c><00:01:45.360><c> your</c>
+
+00:01:45.530 --> 00:01:45.540 align:start position:0%
+you're looking for you can see all your
+ 
+
+00:01:45.540 --> 00:01:46.880 align:start position:0%
+you're looking for you can see all your
+declared<00:01:45.869><c> dependencies</c><00:01:46.380><c> in</c><00:01:46.530><c> the</c><00:01:46.560><c> maven</c>
+
+00:01:46.880 --> 00:01:46.890 align:start position:0%
+declared dependencies in the maven
+ 
+
+00:01:46.890 --> 00:01:49.819 align:start position:0%
+declared dependencies in the maven
+window<00:01:48.020><c> nested</c><00:01:49.020><c> under</c><00:01:49.229><c> those</c><00:01:49.380><c> we've</c><00:01:49.590><c> declared</c>
+
+00:01:49.819 --> 00:01:49.829 align:start position:0%
+window nested under those we've declared
+ 
+
+00:01:49.829 --> 00:01:51.770 align:start position:0%
+window nested under those we've declared
+you<00:01:50.640><c> can</c><00:01:50.820><c> see</c><00:01:50.939><c> the</c><00:01:51.060><c> dependencies</c><00:01:51.570><c> they</c>
+
+00:01:51.770 --> 00:01:51.780 align:start position:0%
+you can see the dependencies they
+ 
+
+00:01:51.780 --> 00:01:55.069 align:start position:0%
+you can see the dependencies they
+themselves<00:01:51.990><c> rely</c><00:01:52.590><c> on</c><00:01:53.630><c> when</c><00:01:54.630><c> you</c><00:01:54.659><c> look</c><00:01:54.899><c> in</c><00:01:54.990><c> the</c>
+
+00:01:55.069 --> 00:01:55.079 align:start position:0%
+themselves rely on when you look in the
+ 
+
+00:01:55.079 --> 00:01:57.200 align:start position:0%
+themselves rely on when you look in the
+project<00:01:55.439><c> window</c><00:01:55.560><c> you</c><00:01:56.310><c> can</c><00:01:56.490><c> see</c><00:01:56.610><c> all</c><00:01:56.790><c> the</c><00:01:56.939><c> maven</c>
+
+00:01:57.200 --> 00:01:57.210 align:start position:0%
+project window you can see all the maven
+ 
+
+00:01:57.210 --> 00:01:58.609 align:start position:0%
+project window you can see all the maven
+dependencies<00:01:57.329><c> regardless</c><00:01:58.290><c> of</c><00:01:58.439><c> whether</c>
+
+00:01:58.609 --> 00:01:58.619 align:start position:0%
+dependencies regardless of whether
+ 
+
+00:01:58.619 --> 00:02:00.080 align:start position:0%
+dependencies regardless of whether
+they're<00:01:58.799><c> declared</c><00:01:59.159><c> by</c><00:01:59.310><c> your</c><00:01:59.490><c> project</c><00:02:00.030><c> or</c>
+
+00:02:00.080 --> 00:02:00.090 align:start position:0%
+they're declared by your project or
+ 
+
+00:02:00.090 --> 00:02:02.679 align:start position:0%
+they're declared by your project or
+pulled<00:02:00.719><c> in</c><00:02:00.869><c> as</c><00:02:00.990><c> a</c><00:02:01.020><c> transitive</c><00:02:01.560><c> dependency</c>
+
+00:02:02.679 --> 00:02:02.689 align:start position:0%
+pulled in as a transitive dependency
+ 
+
+00:02:02.689 --> 00:02:04.730 align:start position:0%
+pulled in as a transitive dependency
+while<00:02:03.689><c> it's</c><00:02:03.840><c> possible</c><00:02:04.020><c> you</c><00:02:04.380><c> may</c><00:02:04.500><c> want</c><00:02:04.710><c> to</c>
+
+00:02:04.730 --> 00:02:04.740 align:start position:0%
+while it's possible you may want to
+ 
+
+00:02:04.740 --> 00:02:06.440 align:start position:0%
+while it's possible you may want to
+create<00:02:04.890><c> your</c><00:02:05.130><c> own</c><00:02:05.159><c> maven</c><00:02:05.579><c> project</c><00:02:05.969><c> as</c><00:02:06.149><c> we</c><00:02:06.299><c> have</c>
+
+00:02:06.440 --> 00:02:06.450 align:start position:0%
+create your own maven project as we have
+ 
+
+00:02:06.450 --> 00:02:08.600 align:start position:0%
+create your own maven project as we have
+done<00:02:06.600><c> here</c><00:02:06.680><c> it's</c><00:02:07.680><c> much</c><00:02:07.860><c> more</c><00:02:08.069><c> likely</c><00:02:08.310><c> you'll</c>
+
+00:02:08.600 --> 00:02:08.610 align:start position:0%
+done here it's much more likely you'll
+ 
+
+00:02:08.610 --> 00:02:11.300 align:start position:0%
+done here it's much more likely you'll
+import<00:02:08.940><c> an</c><00:02:09.060><c> existing</c><00:02:09.149><c> one</c><00:02:09.950><c> this</c><00:02:10.950><c> is</c><00:02:11.099><c> very</c>
+
+00:02:11.300 --> 00:02:11.310 align:start position:0%
+import an existing one this is very
+ 
+
+00:02:11.310 --> 00:02:12.860 align:start position:0%
+import an existing one this is very
+straightforward
+
+00:02:12.860 --> 00:02:12.870 align:start position:0%
+straightforward
+ 
+
+00:02:12.870 --> 00:02:16.080 align:start position:0%
+straightforward
+select<00:02:13.870><c> import</c><00:02:14.170><c> project</c><00:02:14.830><c> and</c><00:02:15.040><c> navigate</c><00:02:15.670><c> the</c>
+
+00:02:16.080 --> 00:02:16.090 align:start position:0%
+select import project and navigate the
+ 
+
+00:02:16.090 --> 00:02:20.370 align:start position:0%
+select import project and navigate the
+location<00:02:16.569><c> of</c><00:02:16.630><c> the</c><00:02:16.720><c> code</c><00:02:18.750><c> you</c><00:02:19.750><c> can</c><00:02:19.990><c> select</c><00:02:20.319><c> the</c>
+
+00:02:20.370 --> 00:02:20.380 align:start position:0%
+location of the code you can select the
+ 
+
+00:02:20.380 --> 00:02:22.050 align:start position:0%
+location of the code you can select the
+root<00:02:20.530><c> of</c><00:02:20.650><c> the</c><00:02:20.740><c> project</c><00:02:20.890><c> and</c><00:02:21.340><c> IntelliJ</c><00:02:21.790><c> IDEA</c>
+
+00:02:22.050 --> 00:02:22.060 align:start position:0%
+root of the project and IntelliJ IDEA
+ 
+
+00:02:22.060 --> 00:02:24.570 align:start position:0%
+root of the project and IntelliJ IDEA
+will<00:02:22.209><c> figure</c><00:02:22.420><c> out</c><00:02:22.600><c> how</c><00:02:22.750><c> to</c><00:02:22.810><c> import</c><00:02:23.230><c> it</c><00:02:23.490><c> but</c><00:02:24.490><c> if</c>
+
+00:02:24.570 --> 00:02:24.580 align:start position:0%
+will figure out how to import it but if
+ 
+
+00:02:24.580 --> 00:02:26.040 align:start position:0%
+will figure out how to import it but if
+you<00:02:24.670><c> specifically</c><00:02:25.270><c> know</c><00:02:25.390><c> this</c><00:02:25.569><c> is</c><00:02:25.660><c> amazing</c>
+
+00:02:26.040 --> 00:02:26.050 align:start position:0%
+you specifically know this is amazing
+ 
+
+00:02:26.050 --> 00:02:27.720 align:start position:0%
+you specifically know this is amazing
+project<00:02:26.470><c> and</c><00:02:26.650><c> you</c><00:02:26.800><c> want</c><00:02:26.950><c> to</c><00:02:27.100><c> use</c><00:02:27.250><c> this</c><00:02:27.400><c> model</c>
+
+00:02:27.720 --> 00:02:27.730 align:start position:0%
+project and you want to use this model
+ 
+
+00:02:27.730 --> 00:02:30.120 align:start position:0%
+project and you want to use this model
+for<00:02:27.850><c> your</c><00:02:27.940><c> project</c><00:02:28.330><c> structure</c><00:02:28.780><c> its</c><00:02:29.680><c> simplest</c>
+
+00:02:30.120 --> 00:02:30.130 align:start position:0%
+for your project structure its simplest
+ 
+
+00:02:30.130 --> 00:02:32.640 align:start position:0%
+for your project structure its simplest
+to<00:02:30.310><c> select</c><00:02:30.610><c> the</c><00:02:30.760><c> top-level</c><00:02:31.120><c> pom</c><00:02:31.390><c> file</c><00:02:31.690><c> and</c><00:02:32.560><c> the</c>
+
+00:02:32.640 --> 00:02:32.650 align:start position:0%
+to select the top-level pom file and the
+ 
+
+00:02:32.650 --> 00:02:34.500 align:start position:0%
+to select the top-level pom file and the
+IDE<00:02:32.950><c> will</c><00:02:33.190><c> know</c><00:02:33.340><c> you</c><00:02:33.400><c> mean</c><00:02:33.700><c> to</c><00:02:33.730><c> import</c><00:02:34.120><c> a</c><00:02:34.209><c> maven</c>
+
+00:02:34.500 --> 00:02:34.510 align:start position:0%
+IDE will know you mean to import a maven
+ 
+
+00:02:34.510 --> 00:02:37.380 align:start position:0%
+IDE will know you mean to import a maven
+project<00:02:35.550><c> generally</c><00:02:36.550><c> we'll</c><00:02:36.850><c> want</c><00:02:37.030><c> to</c><00:02:37.090><c> keep</c><00:02:37.270><c> the</c>
+
+00:02:37.380 --> 00:02:37.390 align:start position:0%
+project generally we'll want to keep the
+ 
+
+00:02:37.390 --> 00:02:40.050 align:start position:0%
+project generally we'll want to keep the
+default<00:02:37.750><c> settings</c><00:02:38.370><c> but</c><00:02:39.370><c> here</c><00:02:39.610><c> I</c><00:02:39.640><c> would</c><00:02:39.910><c> like</c>
+
+00:02:40.050 --> 00:02:40.060 align:start position:0%
+default settings but here I would like
+ 
+
+00:02:40.060 --> 00:02:41.670 align:start position:0%
+default settings but here I would like
+to<00:02:40.120><c> make</c><00:02:40.390><c> sure</c><00:02:40.570><c> that</c><00:02:40.750><c> any</c><00:02:40.900><c> sub</c><00:02:41.170><c> projects</c><00:02:41.560><c> are</c>
+
+00:02:41.670 --> 00:02:41.680 align:start position:0%
+to make sure that any sub projects are
+ 
+
+00:02:41.680 --> 00:02:45.120 align:start position:0%
+to make sure that any sub projects are
+located<00:02:41.770><c> and</c><00:02:42.250><c> set</c><00:02:42.400><c> up</c><00:02:42.580><c> correctly</c><00:02:42.819><c> I</c><00:02:44.130><c> can</c>
+
+00:02:45.120 --> 00:02:45.130 align:start position:0%
+located and set up correctly I can
+ 
+
+00:02:45.130 --> 00:02:47.100 align:start position:0%
+located and set up correctly I can
+select<00:02:45.610><c> to</c><00:02:45.850><c> automatically</c><00:02:46.420><c> Rhian</c><00:02:46.750><c> fort</c><00:02:46.989><c> the</c>
+
+00:02:47.100 --> 00:02:47.110 align:start position:0%
+select to automatically Rhian fort the
+ 
+
+00:02:47.110 --> 00:02:48.810 align:start position:0%
+select to automatically Rhian fort the
+project<00:02:47.500><c> if</c><00:02:47.650><c> we</c><00:02:47.830><c> make</c><00:02:47.980><c> any</c><00:02:48.010><c> changes</c><00:02:48.580><c> to</c><00:02:48.730><c> the</c>
+
+00:02:48.810 --> 00:02:48.820 align:start position:0%
+project if we make any changes to the
+ 
+
+00:02:48.820 --> 00:02:51.420 align:start position:0%
+project if we make any changes to the
+pond<00:02:49.030><c> or</c><00:02:49.180><c> XML</c><00:02:49.540><c> file</c><00:02:49.780><c> in</c><00:02:49.989><c> this</c><00:02:50.980><c> case</c><00:02:51.190><c> I</c><00:02:51.370><c> don't</c>
+
+00:02:51.420 --> 00:02:51.430 align:start position:0%
+pond or XML file in this case I don't
+ 
+
+00:02:51.430 --> 00:02:53.400 align:start position:0%
+pond or XML file in this case I don't
+want<00:02:51.610><c> to</c><00:02:51.820><c> at</c><00:02:51.940><c> this</c><00:02:52.030><c> time</c><00:02:52.090><c> because</c><00:02:53.019><c> for</c><00:02:53.320><c> most</c>
+
+00:02:53.400 --> 00:02:53.410 align:start position:0%
+want to at this time because for most
+ 
+
+00:02:53.410 --> 00:02:55.229 align:start position:0%
+want to at this time because for most
+non-trivial<00:02:53.890><c> projects</c><00:02:54.459><c> is</c><00:02:54.640><c> can</c><00:02:54.850><c> take</c><00:02:55.030><c> some</c>
+
+00:02:55.229 --> 00:02:55.239 align:start position:0%
+non-trivial projects is can take some
+ 
+
+00:02:55.239 --> 00:02:57.210 align:start position:0%
+non-trivial projects is can take some
+time<00:02:55.269><c> and</c><00:02:55.780><c> I</c><00:02:56.230><c> prefer</c><00:02:56.590><c> to</c><00:02:56.739><c> have</c><00:02:56.830><c> control</c><00:02:57.190><c> over</c>
+
+00:02:57.210 --> 00:02:57.220 align:start position:0%
+time and I prefer to have control over
+ 
+
+00:02:57.220 --> 00:03:01.229 align:start position:0%
+time and I prefer to have control over
+when<00:02:57.580><c> I</c><00:02:57.610><c> apply</c><00:02:57.940><c> the</c><00:02:57.970><c> changes</c><00:02:59.880><c> for</c><00:03:00.880><c> everything</c>
+
+00:03:01.229 --> 00:03:01.239 align:start position:0%
+when I apply the changes for everything
+ 
+
+00:03:01.239 --> 00:03:01.530 align:start position:0%
+when I apply the changes for everything
+else
+
+00:03:01.530 --> 00:03:01.540 align:start position:0%
+else
+ 
+
+00:03:01.540 --> 00:03:07.170 align:start position:0%
+else
+we'll<00:03:02.110><c> keep</c><00:03:02.260><c> the</c><00:03:02.410><c> defaults</c><00:03:05.730><c> the</c><00:03:06.730><c> next</c><00:03:06.970><c> screen</c>
+
+00:03:07.170 --> 00:03:07.180 align:start position:0%
+we'll keep the defaults the next screen
+ 
+
+00:03:07.180 --> 00:03:08.550 align:start position:0%
+we'll keep the defaults the next screen
+will<00:03:07.360><c> show</c><00:03:07.390><c> is</c><00:03:07.600><c> all</c><00:03:07.750><c> the</c><00:03:07.840><c> maven</c><00:03:08.110><c> projects</c>
+
+00:03:08.550 --> 00:03:08.560 align:start position:0%
+will show is all the maven projects
+ 
+
+00:03:08.560 --> 00:03:10.410 align:start position:0%
+will show is all the maven projects
+IntelliJ<00:03:08.980><c> IDEA</c><00:03:09.310><c> has</c><00:03:09.459><c> found</c><00:03:09.730><c> to</c><00:03:09.850><c> import</c><00:03:10.209><c> in</c>
+
+00:03:10.410 --> 00:03:10.420 align:start position:0%
+IntelliJ IDEA has found to import in
+ 
+
+00:03:10.420 --> 00:03:13.650 align:start position:0%
+IntelliJ IDEA has found to import in
+this<00:03:10.989><c> case</c><00:03:11.200><c> it's</c><00:03:11.380><c> just</c><00:03:11.440><c> one</c><00:03:11.769><c> I'm</c><00:03:12.510><c> going</c><00:03:13.510><c> to</c>
+
+00:03:13.650 --> 00:03:13.660 align:start position:0%
+this case it's just one I'm going to
+ 
+
+00:03:13.660 --> 00:03:16.199 align:start position:0%
+this case it's just one I'm going to
+keep<00:03:13.810><c> the</c><00:03:13.930><c> default</c><00:03:14.320><c> JDK</c><00:03:14.769><c> and</c><00:03:14.980><c> default</c><00:03:15.880><c> project</c>
+
+00:03:16.199 --> 00:03:16.209 align:start position:0%
+keep the default JDK and default project
+ 
+
+00:03:16.209 --> 00:03:22.710 align:start position:0%
+keep the default JDK and default project
+name<00:03:16.360><c> and</c><00:03:16.540><c> pass</c><00:03:21.030><c> IntelliJ</c><00:03:22.030><c> IDEA</c><00:03:22.269><c> will</c><00:03:22.420><c> use</c><00:03:22.600><c> the</c>
+
+00:03:22.710 --> 00:03:22.720 align:start position:0%
+name and pass IntelliJ IDEA will use the
+ 
+
+00:03:22.720 --> 00:03:24.180 align:start position:0%
+name and pass IntelliJ IDEA will use the
+maven<00:03:23.019><c> definition</c><00:03:23.500><c> to</c><00:03:23.680><c> figure</c><00:03:23.920><c> out</c><00:03:24.070><c> the</c>
+
+00:03:24.180 --> 00:03:24.190 align:start position:0%
+maven definition to figure out the
+ 
+
+00:03:24.190 --> 00:03:26.340 align:start position:0%
+maven definition to figure out the
+structure<00:03:24.430><c> of</c><00:03:24.610><c> the</c><00:03:24.700><c> application</c><00:03:24.790><c> and</c><00:03:25.450><c> of</c>
+
+00:03:26.340 --> 00:03:26.350 align:start position:0%
+structure of the application and of
+ 
+
+00:03:26.350 --> 00:03:27.569 align:start position:0%
+structure of the application and of
+course<00:03:26.560><c> download</c><00:03:26.799><c> all</c><00:03:27.190><c> the</c><00:03:27.280><c> required</c>
+
+00:03:27.569 --> 00:03:27.579 align:start position:0%
+course download all the required
+ 
+
+00:03:27.579 --> 00:03:28.949 align:start position:0%
+course download all the required
+dependencies<00:03:28.150><c> and</c><00:03:28.299><c> add</c><00:03:28.450><c> them</c><00:03:28.600><c> to</c><00:03:28.690><c> the</c><00:03:28.750><c> project</c>
+
+00:03:28.949 --> 00:03:28.959 align:start position:0%
+dependencies and add them to the project
+ 
+
+00:03:28.959 --> 00:03:33.840 align:start position:0%
+dependencies and add them to the project
+you<00:03:30.450><c> can</c><00:03:31.450><c> use</c><00:03:31.480><c> command</c><00:03:31.930><c> e</c><00:03:32.049><c> or</c><00:03:32.320><c> control</c><00:03:32.799><c> e</c><00:03:33.040><c> to</c>
+
+00:03:33.840 --> 00:03:33.850 align:start position:0%
+you can use command e or control e to
+ 
+
+00:03:33.850 --> 00:03:36.479 align:start position:0%
+you can use command e or control e to
+navigate<00:03:34.239><c> to</c><00:03:34.269><c> the</c><00:03:34.450><c> maven</c><00:03:34.720><c> window</c><00:03:35.019><c> and</c><00:03:35.370><c> here</c><00:03:36.370><c> we</c>
+
+00:03:36.479 --> 00:03:36.489 align:start position:0%
+navigate to the maven window and here we
+ 
+
+00:03:36.489 --> 00:03:38.130 align:start position:0%
+navigate to the maven window and here we
+can<00:03:36.670><c> see</c><00:03:36.820><c> the</c><00:03:36.940><c> dependencies</c><00:03:37.450><c> of</c><00:03:37.480><c> this</c><00:03:37.720><c> project</c>
+
+00:03:38.130 --> 00:03:38.140 align:start position:0%
+can see the dependencies of this project
+ 
+
+00:03:38.140 --> 00:03:43.710 align:start position:0%
+can see the dependencies of this project
+as<00:03:40.739><c> before</c><00:03:41.739><c> this</c><00:03:42.579><c> window</c><00:03:42.970><c> lists</c><00:03:43.360><c> the</c><00:03:43.510><c> goals</c>
+
+00:03:43.710 --> 00:03:43.720 align:start position:0%
+as before this window lists the goals
+ 
+
+00:03:43.720 --> 00:03:46.949 align:start position:0%
+as before this window lists the goals
+and<00:03:43.959><c> lifecycle</c><00:03:44.260><c> phases</c><00:03:45.329><c> we</c><00:03:46.329><c> can</c><00:03:46.480><c> run</c><00:03:46.630><c> any</c><00:03:46.810><c> of</c>
+
+00:03:46.949 --> 00:03:46.959 align:start position:0%
+and lifecycle phases we can run any of
+ 
+
+00:03:46.959 --> 00:03:49.350 align:start position:0%
+and lifecycle phases we can run any of
+these<00:03:47.079><c> by</c><00:03:47.320><c> double</c><00:03:47.620><c> clicking</c><00:03:47.829><c> on</c><00:03:48.010><c> them</c><00:03:48.190><c> and</c><00:03:48.459><c> we</c>
+
+00:03:49.350 --> 00:03:49.360 align:start position:0%
+these by double clicking on them and we
+ 
+
+00:03:49.360 --> 00:03:50.819 align:start position:0%
+these by double clicking on them and we
+can<00:03:49.480><c> see</c><00:03:49.660><c> the</c><00:03:49.780><c> familiar</c><00:03:49.930><c> results</c><00:03:50.500><c> of</c><00:03:50.590><c> running</c>
+
+00:03:50.819 --> 00:03:50.829 align:start position:0%
+can see the familiar results of running
+ 
+
+00:03:50.829 --> 00:03:52.460 align:start position:0%
+can see the familiar results of running
+a<00:03:50.890><c> maven</c><00:03:51.070><c> phase</c><00:03:51.459><c> in</c><00:03:51.670><c> the</c><00:03:51.730><c> run</c><00:03:51.880><c> window</c>
+
+00:03:52.460 --> 00:03:52.470 align:start position:0%
+a maven phase in the run window
+ 
+
+00:03:52.470 --> 00:03:54.390 align:start position:0%
+a maven phase in the run window
+including<00:03:53.470><c> dependencies</c><00:03:53.950><c> being</c><00:03:54.220><c> downloaded</c>
+
+00:03:54.390 --> 00:03:54.400 align:start position:0%
+including dependencies being downloaded
+ 
+
+00:03:54.400 --> 00:03:59.009 align:start position:0%
+including dependencies being downloaded
+and<00:03:54.940><c> tests</c><00:03:55.600><c> being</c><00:03:55.780><c> run</c><00:03:57.480><c> let's</c><00:03:58.480><c> skip</c><00:03:58.720><c> watching</c>
+
+00:03:59.009 --> 00:03:59.019 align:start position:0%
+and tests being run let's skip watching
+ 
+
+00:03:59.019 --> 00:04:01.890 align:start position:0%
+and tests being run let's skip watching
+the<00:03:59.110><c> full</c><00:03:59.290><c> thing</c><00:03:59.500><c> and</c><00:03:59.680><c> see</c><00:03:59.829><c> the</c><00:03:59.950><c> results</c><00:04:00.900><c> our</c>
+
+00:04:01.890 --> 00:04:01.900 align:start position:0%
+the full thing and see the results our
+ 
+
+00:04:01.900 --> 00:04:03.660 align:start position:0%
+the full thing and see the results our
+build<00:04:02.320><c> was</c><00:04:02.470><c> successful</c><00:04:03.010><c> and</c><00:04:03.220><c> we</c><00:04:03.400><c> can</c><00:04:03.549><c> see</c>
+
+00:04:03.660 --> 00:04:03.670 align:start position:0%
+build was successful and we can see
+ 
+
+00:04:03.670 --> 00:04:05.340 align:start position:0%
+build was successful and we can see
+maven<00:04:04.000><c> has</c><00:04:04.090><c> created</c><00:04:04.480><c> a</c><00:04:04.570><c> target</c><00:04:04.900><c> directory</c>
+
+00:04:05.340 --> 00:04:05.350 align:start position:0%
+maven has created a target directory
+ 
+
+00:04:05.350 --> 00:04:06.930 align:start position:0%
+maven has created a target directory
+with<00:04:05.500><c> all</c><00:04:05.530><c> the</c><00:04:05.799><c> generated</c><00:04:06.280><c> code</c><00:04:06.489><c> and</c><00:04:06.760><c> the</c>
+
+00:04:06.930 --> 00:04:06.940 align:start position:0%
+with all the generated code and the
+ 
+
+00:04:06.940 --> 00:04:09.990 align:start position:0%
+with all the generated code and the
+other<00:04:07.030><c> output</c><00:04:07.209><c> of</c><00:04:08.370><c> course</c><00:04:09.370><c> we</c><00:04:09.579><c> can</c><00:04:09.760><c> run</c><00:04:09.910><c> the</c>
+
+00:04:09.990 --> 00:04:10.000 align:start position:0%
+other output of course we can run the
+ 
+
+00:04:10.000 --> 00:04:12.060 align:start position:0%
+other output of course we can run the
+project's<00:04:10.420><c> tests</c><00:04:10.810><c> via</c><00:04:11.019><c> maven</c><00:04:11.500><c> which</c><00:04:11.920><c> is</c>
+
+00:04:12.060 --> 00:04:12.070 align:start position:0%
+project's tests via maven which is
+ 
+
+00:04:12.070 --> 00:04:13.650 align:start position:0%
+project's tests via maven which is
+particularly<00:04:12.430><c> useful</c><00:04:12.760><c> if</c><00:04:13.120><c> there's</c><00:04:13.209><c> a</c><00:04:13.299><c> complex</c>
+
+00:04:13.650 --> 00:04:13.660 align:start position:0%
+particularly useful if there's a complex
+ 
+
+00:04:13.660 --> 00:04:15.449 align:start position:0%
+particularly useful if there's a complex
+setup<00:04:14.019><c> phase</c><00:04:14.230><c> in</c><00:04:14.440><c> maven</c><00:04:14.799><c> to</c><00:04:14.950><c> get</c><00:04:15.070><c> the</c><00:04:15.160><c> tests</c>
+
+00:04:15.449 --> 00:04:15.459 align:start position:0%
+setup phase in maven to get the tests
+ 
+
+00:04:15.459 --> 00:04:18.599 align:start position:0%
+setup phase in maven to get the tests
+running<00:04:16.289><c> but</c><00:04:17.289><c> we</c><00:04:17.380><c> can</c><00:04:17.530><c> also</c><00:04:17.709><c> simply</c><00:04:18.250><c> run</c><00:04:18.430><c> all</c>
+
+00:04:18.599 --> 00:04:18.609 align:start position:0%
+running but we can also simply run all
+ 
+
+00:04:18.609 --> 00:04:20.940 align:start position:0%
+running but we can also simply run all
+tests<00:04:19.060><c> or</c><00:04:19.269><c> a</c><00:04:19.329><c> subset</c><00:04:19.780><c> of</c><00:04:19.810><c> them</c><00:04:20.049><c> from</c><00:04:20.500><c> IntelliJ</c>
+
+00:04:20.940 --> 00:04:20.950 align:start position:0%
+tests or a subset of them from IntelliJ
+ 
+
+00:04:20.950 --> 00:04:24.270 align:start position:0%
+tests or a subset of them from IntelliJ
+IDEA<00:04:21.250><c> as</c><00:04:21.430><c> usual</c>
+
+00:04:24.270 --> 00:04:24.280 align:start position:0%
+ 
+ 
+
+00:04:24.280 --> 00:04:26.100 align:start position:0%
+ 
+editing<00:04:24.760><c> the</c><00:04:24.790><c> Palm</c><00:04:25.030><c> D'Or</c><00:04:25.060><c> XML</c><00:04:25.600><c> file</c><00:04:25.810><c> is</c><00:04:25.960><c> easy</c>
+
+00:04:26.100 --> 00:04:26.110 align:start position:0%
+editing the Palm D'Or XML file is easy
+ 
+
+00:04:26.110 --> 00:04:28.050 align:start position:0%
+editing the Palm D'Or XML file is easy
+and<00:04:26.500><c> of</c><00:04:27.100><c> course</c><00:04:27.310><c> you</c><00:04:27.430><c> get</c><00:04:27.550><c> full</c><00:04:27.820><c> code</c>
+
+00:04:28.050 --> 00:04:28.060 align:start position:0%
+and of course you get full code
+ 
+
+00:04:28.060 --> 00:04:31.020 align:start position:0%
+and of course you get full code
+completion<00:04:28.480><c> if</c><00:04:29.460><c> you're</c><00:04:30.460><c> working</c><00:04:30.760><c> with</c><00:04:30.880><c> maze</c>
+
+00:04:31.020 --> 00:04:31.030 align:start position:0%
+completion if you're working with maze
+ 
+
+00:04:31.030 --> 00:04:33.240 align:start position:0%
+completion if you're working with maze
+and<00:04:31.210><c> profiles</c><00:04:31.650><c> IntelliJ</c><00:04:32.650><c> IDEA</c><00:04:32.890><c> makes</c><00:04:33.100><c> this</c>
+
+00:04:33.240 --> 00:04:33.250 align:start position:0%
+and profiles IntelliJ IDEA makes this
+ 
+
+00:04:33.250 --> 00:04:36.180 align:start position:0%
+and profiles IntelliJ IDEA makes this
+simple<00:04:34.080><c> you</c><00:04:35.080><c> can</c><00:04:35.290><c> choose</c><00:04:35.530><c> to</c><00:04:35.710><c> enable</c><00:04:35.890><c> or</c>
+
+00:04:36.180 --> 00:04:36.190 align:start position:0%
+simple you can choose to enable or
+ 
+
+00:04:36.190 --> 00:04:38.100 align:start position:0%
+simple you can choose to enable or
+disable<00:04:36.310><c> one</c><00:04:36.820><c> or</c><00:04:36.940><c> more</c><00:04:37.090><c> profiles</c><00:04:37.570><c> when</c><00:04:37.930><c> you're</c>
+
+00:04:38.100 --> 00:04:38.110 align:start position:0%
+disable one or more profiles when you're
+ 
+
+00:04:38.110 --> 00:04:41.480 align:start position:0%
+disable one or more profiles when you're
+running<00:04:38.230><c> any</c><00:04:38.500><c> of</c><00:04:38.650><c> the</c><00:04:38.740><c> maven</c><00:04:39.070><c> goals</c><00:04:39.280><c> or</c><00:04:39.460><c> phases</c>
+
+00:04:41.480 --> 00:04:41.490 align:start position:0%
+running any of the maven goals or phases
+ 
+
+00:04:41.490 --> 00:04:43.250 align:start position:0%
+running any of the maven goals or phases
+there<00:04:42.120><c> are</c><00:04:42.270><c> a</c><00:04:42.330><c> number</c><00:04:42.480><c> of</c><00:04:42.630><c> things</c><00:04:42.870><c> you</c><00:04:42.990><c> can</c><00:04:43.140><c> do</c>
+
+00:04:43.250 --> 00:04:43.260 align:start position:0%
+there are a number of things you can do
+ 
+
+00:04:43.260 --> 00:04:44.750 align:start position:0%
+there are a number of things you can do
+with<00:04:43.380><c> your</c><00:04:43.470><c> projects</c><00:04:43.950><c> in</c><00:04:44.070><c> the</c><00:04:44.160><c> Maven</c><00:04:44.460><c> window</c>
+
+00:04:44.750 --> 00:04:44.760 align:start position:0%
+with your projects in the Maven window
+ 
+
+00:04:44.760 --> 00:04:46.940 align:start position:0%
+with your projects in the Maven window
+be<00:04:45.510><c> sure</c><00:04:45.690><c> to</c><00:04:45.870><c> take</c><00:04:46.020><c> a</c><00:04:46.050><c> look</c><00:04:46.260><c> at</c><00:04:46.350><c> all</c><00:04:46.470><c> the</c><00:04:46.560><c> icons</c>
+
+00:04:46.940 --> 00:04:46.950 align:start position:0%
+be sure to take a look at all the icons
+ 
+
+00:04:46.950 --> 00:04:49.910 align:start position:0%
+be sure to take a look at all the icons
+to<00:04:47.100><c> see</c><00:04:47.190><c> what</c><00:04:47.460><c> they</c><00:04:47.610><c> can</c><00:04:47.790><c> do</c>
+
+00:04:49.910 --> 00:04:49.920 align:start position:0%
+to see what they can do
+ 
+
+00:04:49.920 --> 00:04:52.080 align:start position:0%
+to see what they can do
+everything<00:04:50.920><c> we've</c><00:04:51.040><c> looked</c><00:04:51.220><c> at</c><00:04:51.370><c> so</c><00:04:51.550><c> far</c><00:04:51.760><c> has</c>
+
+00:04:52.080 --> 00:04:52.090 align:start position:0%
+everything we've looked at so far has
+ 
+
+00:04:52.090 --> 00:04:53.490 align:start position:0%
+everything we've looked at so far has
+been<00:04:52.270><c> in</c><00:04:52.360><c> the</c><00:04:52.420><c> free</c><00:04:52.630><c> community</c><00:04:52.840><c> edition</c><00:04:53.260><c> of</c>
+
+00:04:53.490 --> 00:04:53.500 align:start position:0%
+been in the free community edition of
+ 
+
+00:04:53.500 --> 00:04:56.640 align:start position:0%
+been in the free community edition of
+IntelliJ<00:04:53.950><c> IDEA</c><00:04:54.660><c> the</c><00:04:55.660><c> full</c><00:04:55.870><c> ultimate</c><00:04:56.320><c> version</c>
+
+00:04:56.640 --> 00:04:56.650 align:start position:0%
+IntelliJ IDEA the full ultimate version
+ 
+
+00:04:56.650 --> 00:04:59.640 align:start position:0%
+IntelliJ IDEA the full ultimate version
+has<00:04:56.800><c> some</c><00:04:56.830><c> extra</c><00:04:57.250><c> features</c><00:04:58.230><c> one</c><00:04:59.230><c> which</c><00:04:59.410><c> may</c><00:04:59.590><c> be</c>
+
+00:04:59.640 --> 00:04:59.650 align:start position:0%
+has some extra features one which may be
+ 
+
+00:04:59.650 --> 00:05:00.900 align:start position:0%
+has some extra features one which may be
+particularly<00:05:00.130><c> useful</c><00:05:00.340><c> in</c><00:05:00.820><c> understanding</c>
+
+00:05:00.900 --> 00:05:00.910 align:start position:0%
+particularly useful in understanding
+ 
+
+00:05:00.910 --> 00:05:03.570 align:start position:0%
+particularly useful in understanding
+your<00:05:01.450><c> maven</c><00:05:01.750><c> project</c><00:05:02.230><c> Aseema</c><00:05:03.100><c> dependencies</c>
+
+00:05:03.570 --> 00:05:03.580 align:start position:0%
+your maven project Aseema dependencies
+ 
+
+00:05:03.580 --> 00:05:06.750 align:start position:0%
+your maven project Aseema dependencies
+as<00:05:03.730><c> a</c><00:05:03.760><c> diagram</c><00:05:05.130><c> this</c><00:05:06.130><c> can</c><00:05:06.370><c> give</c><00:05:06.490><c> you</c><00:05:06.580><c> an</c><00:05:06.700><c> idea</c>
+
+00:05:06.750 --> 00:05:06.760 align:start position:0%
+as a diagram this can give you an idea
+ 
+
+00:05:06.760 --> 00:05:08.280 align:start position:0%
+as a diagram this can give you an idea
+of<00:05:07.030><c> which</c><00:05:07.270><c> dependencies</c><00:05:07.810><c> are</c><00:05:07.990><c> directly</c>
+
+00:05:08.280 --> 00:05:08.290 align:start position:0%
+of which dependencies are directly
+ 
+
+00:05:08.290 --> 00:05:09.960 align:start position:0%
+of which dependencies are directly
+imported<00:05:08.770><c> by</c><00:05:08.920><c> your</c><00:05:09.040><c> application</c><00:05:09.580><c> and</c><00:05:09.760><c> which</c>
+
+00:05:09.960 --> 00:05:09.970 align:start position:0%
+imported by your application and which
+ 
+
+00:05:09.970 --> 00:05:12.960 align:start position:0%
+imported by your application and which
+are<00:05:10.090><c> transitive</c><00:05:11.070><c> you</c><00:05:12.070><c> can</c><00:05:12.250><c> also</c><00:05:12.400><c> see</c><00:05:12.670><c> test</c>
+
+00:05:12.960 --> 00:05:12.970 align:start position:0%
+are transitive you can also see test
+ 
+
+00:05:12.970 --> 00:05:15.660 align:start position:0%
+are transitive you can also see test
+dependencies<00:05:13.540><c> in</c><00:05:13.720><c> green</c><00:05:13.960><c> and</c><00:05:14.230><c> any</c><00:05:15.190><c> unresolved</c>
+
+00:05:15.660 --> 00:05:15.670 align:start position:0%
+dependencies in green and any unresolved
+ 
+
+00:05:15.670 --> 00:05:18.840 align:start position:0%
+dependencies in green and any unresolved
+ones<00:05:15.940><c> will</c><00:05:16.090><c> be</c><00:05:16.120><c> in</c><00:05:16.300><c> red</c><00:05:17.310><c> you</c><00:05:18.310><c> can</c><00:05:18.490><c> change</c><00:05:18.730><c> the</c>
+
+00:05:18.840 --> 00:05:18.850 align:start position:0%
+ones will be in red you can change the
+ 
+
+00:05:18.850 --> 00:05:20.760 align:start position:0%
+ones will be in red you can change the
+visibility<00:05:19.000><c> of</c><00:05:19.390><c> a</c><00:05:19.510><c> dependency</c><00:05:19.960><c> or</c><00:05:19.990><c> exclude</c><00:05:20.620><c> it</c>
+
+00:05:20.760 --> 00:05:20.770 align:start position:0%
+visibility of a dependency or exclude it
+ 
+
+00:05:20.770 --> 00:05:24.210 align:start position:0%
+visibility of a dependency or exclude it
+via<00:05:21.190><c> the</c><00:05:21.340><c> diagram</c><00:05:22.560><c> you</c><00:05:23.560><c> can</c><00:05:23.590><c> also</c><00:05:23.860><c> filter</c>
+
+00:05:24.210 --> 00:05:24.220 align:start position:0%
+via the diagram you can also filter
+ 
+
+00:05:24.220 --> 00:05:25.920 align:start position:0%
+via the diagram you can also filter
+which<00:05:24.490><c> ones</c><00:05:24.670><c> to</c><00:05:24.790><c> show</c><00:05:24.970><c> if</c><00:05:25.090><c> the</c><00:05:25.210><c> diagram</c><00:05:25.630><c> is</c><00:05:25.750><c> too</c>
+
+00:05:25.920 --> 00:05:25.930 align:start position:0%
+which ones to show if the diagram is too
+ 
+
+00:05:25.930 --> 00:05:28.890 align:start position:0%
+which ones to show if the diagram is too
+big<00:05:26.140><c> to</c><00:05:26.290><c> see</c><00:05:26.470><c> easily</c><00:05:26.650><c> in</c><00:05:27.610><c> this</c><00:05:28.420><c> video</c><00:05:28.720><c> we've</c>
+
+00:05:28.890 --> 00:05:28.900 align:start position:0%
+big to see easily in this video we've
+ 
+
+00:05:28.900 --> 00:05:30.600 align:start position:0%
+big to see easily in this video we've
+covered<00:05:29.110><c> the</c><00:05:29.290><c> basics</c><00:05:29.680><c> of</c><00:05:29.800><c> working</c><00:05:29.980><c> with</c><00:05:30.160><c> maven</c>
+
+00:05:30.600 --> 00:05:30.610 align:start position:0%
+covered the basics of working with maven
+ 
+
+00:05:30.610 --> 00:05:33.360 align:start position:0%
+covered the basics of working with maven
+and<00:05:30.700><c> IntelliJ</c><00:05:31.090><c> IDEA</c><00:05:31.980><c> take</c><00:05:32.980><c> a</c><00:05:33.010><c> look</c><00:05:33.220><c> at</c><00:05:33.310><c> the</c>
+
+00:05:33.360 --> 00:05:33.370 align:start position:0%
+and IntelliJ IDEA take a look at the
+ 
+
+00:05:33.370 --> 00:05:35.790 align:start position:0%
+and IntelliJ IDEA take a look at the
+documentation<00:05:33.850><c> for</c><00:05:34.210><c> more</c><00:05:34.240><c> details</c><00:05:34.750><c> or</c><00:05:35.410><c> check</c>
+
+00:05:35.790 --> 00:05:35.800 align:start position:0%
+documentation for more details or check
+ 
+
+00:05:35.800 --> 00:05:37.290 align:start position:0%
+documentation for more details or check
+out<00:05:35.950><c> the</c><00:05:36.040><c> YouTube</c><00:05:36.340><c> channel</c><00:05:36.700><c> for</c><00:05:36.850><c> more</c><00:05:37.000><c> video</c>
+
+00:05:37.290 --> 00:05:37.300 align:start position:0%
+out the YouTube channel for more video
+ 
+
+00:05:37.300 --> 00:05:41.340 align:start position:0%
+out the YouTube channel for more video
+tutorials<00:05:37.860><c> thanks</c><00:05:38.860><c> for</c><00:05:39.010><c> watching</c>
+

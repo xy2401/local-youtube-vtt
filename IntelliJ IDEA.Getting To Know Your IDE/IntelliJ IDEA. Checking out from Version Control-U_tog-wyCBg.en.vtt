@@ -1,0 +1,272 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.279 --> 00:00:05.620 align:start position:0%
+ 
+hello<00:00:04.279><c> and</c><00:00:04.460><c> welcome</c><00:00:04.760><c> to</c><00:00:04.880><c> IntelliJ</c><00:00:05.359><c> IDEA</c>
+
+00:00:05.620 --> 00:00:05.630 align:start position:0%
+hello and welcome to IntelliJ IDEA
+ 
+
+00:00:05.630 --> 00:00:07.960 align:start position:0%
+hello and welcome to IntelliJ IDEA
+basics<00:00:06.140><c> in</c><00:00:06.890><c> this</c><00:00:07.100><c> video</c><00:00:07.370><c> we'll</c><00:00:07.580><c> take</c><00:00:07.700><c> a</c><00:00:07.759><c> look</c>
+
+00:00:07.960 --> 00:00:07.970 align:start position:0%
+basics in this video we'll take a look
+ 
+
+00:00:07.970 --> 00:00:10.090 align:start position:0%
+basics in this video we'll take a look
+at<00:00:08.059><c> importing</c><00:00:08.570><c> or</c><00:00:08.990><c> checking</c><00:00:09.590><c> out</c><00:00:09.710><c> a</c><00:00:09.740><c> project</c>
+
+00:00:10.090 --> 00:00:10.100 align:start position:0%
+at importing or checking out a project
+ 
+
+00:00:10.100 --> 00:00:13.119 align:start position:0%
+at importing or checking out a project
+from<00:00:10.820><c> version</c><00:00:11.180><c> control</c><00:00:11.600><c> I'll</c><00:00:12.590><c> select</c><00:00:12.980><c> this</c>
+
+00:00:13.119 --> 00:00:13.129 align:start position:0%
+from version control I'll select this
+ 
+
+00:00:13.129 --> 00:00:14.650 align:start position:0%
+from version control I'll select this
+option<00:00:13.340><c> from</c><00:00:13.610><c> the</c><00:00:13.700><c> welcome</c><00:00:14.030><c> screen</c><00:00:14.180><c> and</c><00:00:14.539><c> then</c>
+
+00:00:14.650 --> 00:00:14.660 align:start position:0%
+option from the welcome screen and then
+ 
+
+00:00:14.660 --> 00:00:16.510 align:start position:0%
+option from the welcome screen and then
+IntelliJ<00:00:15.080><c> IDEA</c><00:00:15.379><c> provides</c><00:00:15.860><c> support</c><00:00:16.340><c> for</c>
+
+00:00:16.510 --> 00:00:16.520 align:start position:0%
+IntelliJ IDEA provides support for
+ 
+
+00:00:16.520 --> 00:00:19.090 align:start position:0%
+IntelliJ IDEA provides support for
+checking<00:00:17.240><c> the</c><00:00:17.300><c> project</c><00:00:17.660><c> out</c><00:00:17.779><c> from</c><00:00:17.960><c> github</c><00:00:18.170><c> CVS</c>
+
+00:00:19.090 --> 00:00:19.100 align:start position:0%
+checking the project out from github CVS
+ 
+
+00:00:19.100 --> 00:00:22.330 align:start position:0%
+checking the project out from github CVS
+get<00:00:19.790><c> mercurial</c><00:00:20.690><c> subversion</c><00:00:21.380><c> or</c><00:00:22.070><c> Team</c>
+
+00:00:22.330 --> 00:00:22.340 align:start position:0%
+get mercurial subversion or Team
+ 
+
+00:00:22.340 --> 00:00:24.760 align:start position:0%
+get mercurial subversion or Team
+Foundation<00:00:22.490><c> server</c><00:00:23.320><c> so</c><00:00:24.320><c> I'll</c><00:00:24.410><c> just</c><00:00:24.590><c> choose</c>
+
+00:00:24.760 --> 00:00:24.770 align:start position:0%
+Foundation server so I'll just choose
+ 
+
+00:00:24.770 --> 00:00:27.160 align:start position:0%
+Foundation server so I'll just choose
+github<00:00:25.160><c> here</c><00:00:25.400><c> and</c><00:00:25.610><c> then</c><00:00:26.330><c> if</c><00:00:26.600><c> I</c><00:00:26.690><c> have</c><00:00:26.870><c> a</c><00:00:26.900><c> project</c>
+
+00:00:27.160 --> 00:00:27.170 align:start position:0%
+github here and then if I have a project
+ 
+
+00:00:27.170 --> 00:00:30.340 align:start position:0%
+github here and then if I have a project
+URL<00:00:27.830><c> that</c><00:00:28.070><c> I'd</c><00:00:28.220><c> like</c><00:00:28.490><c> to</c><00:00:28.670><c> access</c><00:00:29.180><c> from</c><00:00:30.050><c> github</c>
+
+00:00:30.340 --> 00:00:30.350 align:start position:0%
+URL that I'd like to access from github
+ 
+
+00:00:30.350 --> 00:00:33.069 align:start position:0%
+URL that I'd like to access from github
+then<00:00:31.250><c> I</c><00:00:31.340><c> can</c><00:00:31.520><c> import</c><00:00:31.880><c> that</c><00:00:32.000><c> here</c><00:00:32.780><c> under</c><00:00:32.989><c> the</c>
+
+00:00:33.069 --> 00:00:33.079 align:start position:0%
+then I can import that here under the
+ 
+
+00:00:33.079 --> 00:00:36.759 align:start position:0%
+then I can import that here under the
+VCS<00:00:33.469><c> repository</c><00:00:34.190><c> URL</c><00:00:34.789><c> field</c><00:00:35.269><c> by</c><00:00:36.109><c> pasting</c><00:00:36.440><c> it</c>
+
+00:00:36.759 --> 00:00:36.769 align:start position:0%
+VCS repository URL field by pasting it
+ 
+
+00:00:36.769 --> 00:00:40.180 align:start position:0%
+VCS repository URL field by pasting it
+there<00:00:37.039><c> I</c><00:00:37.449><c> can</c><00:00:38.449><c> first</c><00:00:38.839><c> test</c><00:00:39.199><c> the</c><00:00:39.800><c> VCS</c>
+
+00:00:40.180 --> 00:00:40.190 align:start position:0%
+there I can first test the VCS
+ 
+
+00:00:40.190 --> 00:00:42.489 align:start position:0%
+there I can first test the VCS
+repository<00:00:40.850><c> to</c><00:00:41.059><c> see</c><00:00:41.629><c> that</c><00:00:41.809><c> the</c><00:00:41.870><c> connection</c><00:00:42.319><c> is</c>
+
+00:00:42.489 --> 00:00:42.499 align:start position:0%
+repository to see that the connection is
+ 
+
+00:00:42.499 --> 00:00:46.419 align:start position:0%
+repository to see that the connection is
+good<00:00:43.210><c> if</c><00:00:44.210><c> it</c><00:00:44.359><c> is</c><00:00:44.539><c> the</c><00:00:45.530><c> IntelliJ</c><00:00:45.980><c> IDEA</c><00:00:46.249><c> will</c>
+
+00:00:46.419 --> 00:00:46.429 align:start position:0%
+good if it is the IntelliJ IDEA will
+ 
+
+00:00:46.429 --> 00:00:47.739 align:start position:0%
+good if it is the IntelliJ IDEA will
+inform<00:00:46.850><c> me</c><00:00:46.940><c> that</c><00:00:46.969><c> the</c><00:00:47.149><c> connection</c><00:00:47.600><c> has</c><00:00:47.690><c> been</c>
+
+00:00:47.739 --> 00:00:47.749 align:start position:0%
+inform me that the connection has been
+ 
+
+00:00:47.749 --> 00:00:50.229 align:start position:0%
+inform me that the connection has been
+successful<00:00:48.440><c> so</c><00:00:49.129><c> I'll</c><00:00:49.249><c> click</c><00:00:49.460><c> OK</c><00:00:49.789><c> here</c><00:00:50.030><c> and</c>
+
+00:00:50.229 --> 00:00:50.239 align:start position:0%
+successful so I'll click OK here and
+ 
+
+00:00:50.239 --> 00:00:52.479 align:start position:0%
+successful so I'll click OK here and
+then<00:00:51.050><c> we'll</c><00:00:51.440><c> specify</c><00:00:51.679><c> the</c><00:00:51.979><c> parent</c><00:00:52.399><c> directory</c>
+
+00:00:52.479 --> 00:00:52.489 align:start position:0%
+then we'll specify the parent directory
+ 
+
+00:00:52.489 --> 00:00:54.549 align:start position:0%
+then we'll specify the parent directory
+where<00:00:53.300><c> we'd</c><00:00:53.539><c> like</c><00:00:53.719><c> this</c><00:00:53.960><c> project</c><00:00:54.409><c> to</c><00:00:54.530><c> be</c>
+
+00:00:54.549 --> 00:00:54.559 align:start position:0%
+where we'd like this project to be
+ 
+
+00:00:54.559 --> 00:00:56.349 align:start position:0%
+where we'd like this project to be
+imported<00:00:55.159><c> so</c><00:00:55.670><c> it</c><00:00:55.789><c> will</c><00:00:55.879><c> clone</c><00:00:56.120><c> this</c>
+
+00:00:56.349 --> 00:00:56.359 align:start position:0%
+imported so it will clone this
+ 
+
+00:00:56.359 --> 00:00:58.660 align:start position:0%
+imported so it will clone this
+repository<00:00:56.839><c> from</c><00:00:57.530><c> its</c><00:00:57.739><c> original</c><00:00:58.100><c> source</c><00:00:58.339><c> on</c>
+
+00:00:58.660 --> 00:00:58.670 align:start position:0%
+repository from its original source on
+ 
+
+00:00:58.670 --> 00:01:01.419 align:start position:0%
+repository from its original source on
+github<00:00:59.079><c> to</c><00:01:00.079><c> its</c><00:01:00.229><c> intended</c><00:01:00.530><c> destination</c><00:01:00.679><c> on</c>
+
+00:01:01.419 --> 00:01:01.429 align:start position:0%
+github to its intended destination on
+ 
+
+00:01:01.429 --> 00:01:03.819 align:start position:0%
+github to its intended destination on
+our<00:01:01.549><c> local</c><00:01:01.729><c> machine</c><00:01:02.379><c> we</c><00:01:03.379><c> can</c><00:01:03.530><c> give</c><00:01:03.679><c> it</c><00:01:03.769><c> a</c>
+
+00:01:03.819 --> 00:01:03.829 align:start position:0%
+our local machine we can give it a
+ 
+
+00:01:03.829 --> 00:01:05.439 align:start position:0%
+our local machine we can give it a
+different<00:01:03.979><c> directory</c><00:01:04.549><c> name</c><00:01:04.729><c> if</c><00:01:04.850><c> we'd</c><00:01:05.000><c> like</c><00:01:05.180><c> or</c>
+
+00:01:05.439 --> 00:01:05.449 align:start position:0%
+different directory name if we'd like or
+ 
+
+00:01:05.449 --> 00:01:07.360 align:start position:0%
+different directory name if we'd like or
+we<00:01:05.540><c> can</c><00:01:05.659><c> keep</c><00:01:05.810><c> the</c><00:01:05.990><c> one</c><00:01:06.140><c> that's</c><00:01:06.380><c> provided</c><00:01:06.920><c> we</c>
+
+00:01:07.360 --> 00:01:07.370 align:start position:0%
+we can keep the one that's provided we
+ 
+
+00:01:07.370 --> 00:01:09.970 align:start position:0%
+we can keep the one that's provided we
+can<00:01:07.430><c> click</c><00:01:07.700><c> clone</c><00:01:08.060><c> here</c><00:01:08.530><c> so</c><00:01:09.530><c> and</c><00:01:09.650><c> once</c><00:01:09.800><c> that's</c>
+
+00:01:09.970 --> 00:01:09.980 align:start position:0%
+can click clone here so and once that's
+ 
+
+00:01:09.980 --> 00:01:11.680 align:start position:0%
+can click clone here so and once that's
+fully<00:01:10.100><c> complete</c><00:01:10.550><c> we</c><00:01:11.000><c> will</c><00:01:11.120><c> be</c><00:01:11.240><c> prompted</c><00:01:11.630><c> to</c>
+
+00:01:11.680 --> 00:01:11.690 align:start position:0%
+fully complete we will be prompted to
+ 
+
+00:01:11.690 --> 00:01:14.980 align:start position:0%
+fully complete we will be prompted to
+import<00:01:12.230><c> the</c><00:01:12.350><c> project</c><00:01:12.560><c> type</c><00:01:13.090><c> properly</c><00:01:14.090><c> so</c><00:01:14.810><c> now</c>
+
+00:01:14.980 --> 00:01:14.990 align:start position:0%
+import the project type properly so now
+ 
+
+00:01:14.990 --> 00:01:16.390 align:start position:0%
+import the project type properly so now
+you<00:01:15.050><c> can</c><00:01:15.320><c> go</c><00:01:15.440><c> ahead</c><00:01:15.620><c> and</c><00:01:15.710><c> check</c><00:01:15.890><c> out</c><00:01:16.040><c> an</c><00:01:16.190><c> open</c>
+
+00:01:16.390 --> 00:01:16.400 align:start position:0%
+you can go ahead and check out an open
+ 
+
+00:01:16.400 --> 00:01:18.520 align:start position:0%
+you can go ahead and check out an open
+source<00:01:16.610><c> project</c><00:01:16.880><c> from</c><00:01:17.570><c> github</c><00:01:17.780><c> or</c><00:01:18.140><c> a</c><00:01:18.200><c> version</c>
+
+00:01:18.520 --> 00:01:18.530 align:start position:0%
+source project from github or a version
+ 
+
+00:01:18.530 --> 00:01:21.100 align:start position:0%
+source project from github or a version
+control<00:01:18.860><c> system</c><00:01:19.190><c> of</c><00:01:19.280><c> your</c><00:01:19.430><c> choice</c><00:01:19.490><c> and</c><00:01:20.110><c> start</c>
+
+00:01:21.100 --> 00:01:21.110 align:start position:0%
+control system of your choice and start
+ 
+
+00:01:21.110 --> 00:01:23.370 align:start position:0%
+control system of your choice and start
+developing<00:01:21.230><c> right</c><00:01:21.770><c> on</c><00:01:21.920><c> IntelliJ</c><00:01:22.430><c> IDEA</c>
+
+00:01:23.370 --> 00:01:23.380 align:start position:0%
+developing right on IntelliJ IDEA
+ 
+
+00:01:23.380 --> 00:01:27.100 align:start position:0%
+developing right on IntelliJ IDEA
+develop<00:01:24.380><c> with</c><00:01:24.740><c> pleasure</c>
+

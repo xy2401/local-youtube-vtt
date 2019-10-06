@@ -1,0 +1,1378 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.614
+[MUSIC PLAYING]
+
+00:00:19.944 --> 00:00:20.870
+PAUL: Hello.
+
+00:00:20.870 --> 00:00:23.950
+Welcome to this very
+special extended holiday
+
+00:00:23.950 --> 00:00:25.280
+edition of Supercharged.
+
+00:00:25.280 --> 00:00:26.110
+I'm Paul.
+
+00:00:26.110 --> 00:00:28.612
+SANTA LEWIS: Santa Lewis
+here, ready for Christmas.
+
+00:00:28.612 --> 00:00:29.620
+PAUL: Santa, hey?
+
+00:00:29.620 --> 00:00:30.769
+I recognize that name.
+
+00:00:30.769 --> 00:00:33.060
+And this is the show where
+I take the sites that you've
+
+00:00:33.060 --> 00:00:35.060
+submitted, and I go
+through them, and I try
+
+00:00:35.060 --> 00:00:37.120
+and find and fix
+performance issues.
+
+00:00:37.120 --> 00:00:38.800
+And today is no different.
+
+00:00:38.800 --> 00:00:40.650
+Yay, Merry Christmas.
+
+00:00:40.650 --> 00:00:43.420
+It's Slack, that's what
+we're going look at today.
+
+00:00:43.420 --> 00:00:46.240
+I like Slack an awful lot, and
+we have a Chromium Dev Slack,
+
+00:00:46.240 --> 00:00:50.542
+which will be the target for
+our performance profiling today.
+
+00:00:50.542 --> 00:00:52.250
+So when I said to
+them, is there anything
+
+00:00:52.250 --> 00:00:55.462
+in particular that you're
+seeing and that you
+
+00:00:55.462 --> 00:00:56.670
+think that we should look at?
+
+00:00:56.670 --> 00:00:58.280
+And they went, oh
+yeah, actually, there's
+
+00:00:58.280 --> 00:00:59.170
+this Quick Switcher.
+
+00:00:59.170 --> 00:01:01.830
+If you hit Command-K, it
+takes a long time for it
+
+00:01:01.830 --> 00:01:04.220
+to come up on screen and
+we don't really know why.
+
+00:01:04.220 --> 00:01:04.810
+Fair enough.
+
+00:01:04.810 --> 00:01:05.310
+OK.
+
+00:01:05.310 --> 00:01:08.280
+Well, we'll start
+there, but as it happens
+
+00:01:08.280 --> 00:01:10.650
+I think there might be a
+few other things that we
+
+00:01:10.650 --> 00:01:11.710
+see along the way.
+
+00:01:11.710 --> 00:01:13.300
+It's bumper.
+
+00:01:13.300 --> 00:01:15.902
+This is the right time of
+year to give you extra.
+
+00:01:15.902 --> 00:01:17.110
+I mean, look in the stocking.
+
+00:01:17.110 --> 00:01:17.651
+What's there?
+
+00:01:17.651 --> 00:01:18.740
+Oh, scrolling issues.
+
+00:01:18.740 --> 00:01:19.930
+Oh, what's in there?
+
+00:01:19.930 --> 00:01:21.070
+Layout thrashing.
+
+00:01:21.070 --> 00:01:23.180
+Oh, worst Santa ever.
+
+00:01:23.180 --> 00:01:24.780
+Bring me the mince pies.
+
+00:01:24.780 --> 00:01:26.330
+[EATING SOUNDS]
+
+00:01:26.330 --> 00:01:30.440
+So what we'll do,
+we will hit Record.
+
+00:01:30.440 --> 00:01:33.380
+And we're going
+to hit Command-K.
+
+00:01:33.380 --> 00:01:35.860
+And then we'll stop recording.
+
+00:01:35.860 --> 00:01:36.980
+Yes.
+
+00:01:36.980 --> 00:01:39.230
+And we see the keydown
+event over here.
+
+00:01:39.230 --> 00:01:41.330
+And they are absolutely right.
+
+00:01:41.330 --> 00:01:45.640
+It is just shy of half a
+second in JavaScript terms
+
+00:01:45.640 --> 00:01:48.080
+here for the keydown event.
+
+00:01:48.080 --> 00:01:51.580
+So the keydowns mean pressing
+Command-K and it coming up
+
+00:01:51.580 --> 00:01:52.464
+on screen.
+
+00:01:52.464 --> 00:01:53.630
+So let's have a look at why.
+
+00:01:53.630 --> 00:01:55.800
+Well, I see these red
+triangles in the corner
+
+00:01:55.800 --> 00:01:58.370
+and I see a Recalc Style
+followed by a Layout.
+
+00:01:58.370 --> 00:02:01.160
+So, calculating
+styles on the page,
+
+00:02:01.160 --> 00:02:03.630
+followed by laying out
+elements on the page, followed
+
+00:02:03.630 --> 00:02:06.680
+by calculating
+styles on the page,
+
+00:02:06.680 --> 00:02:09.250
+and then laying out the
+elements on the page, which
+
+00:02:09.250 --> 00:02:11.160
+seems superfluous at best.
+
+00:02:11.160 --> 00:02:13.760
+And actually, each one of these
+is really quite expensive.
+
+00:02:13.760 --> 00:02:16.410
+Like, this first one
+is 93 milliseconds
+
+00:02:16.410 --> 00:02:18.240
+in calculating styles.
+
+00:02:18.240 --> 00:02:20.640
+So if we click on
+it, here you see
+
+00:02:20.640 --> 00:02:23.160
+just shy of 9,000
+elements have been
+
+00:02:23.160 --> 00:02:24.470
+affected by the style change.
+
+00:02:24.470 --> 00:02:26.780
+That's an awful lot
+of elements that could
+
+00:02:26.780 --> 00:02:28.309
+be affected by a style change.
+
+00:02:28.309 --> 00:02:30.100
+If you're going to make
+some style changes,
+
+00:02:30.100 --> 00:02:33.640
+it is often quite good to be
+very specific about the styles
+
+00:02:33.640 --> 00:02:35.160
+that you want to apply.
+
+00:02:35.160 --> 00:02:37.910
+But it may just be that there
+is a lot of elements being added
+
+00:02:37.910 --> 00:02:40.080
+in this case, say to the page.
+
+00:02:40.080 --> 00:02:41.800
+For example, the Quick
+Switcher elements.
+
+00:02:41.800 --> 00:02:43.770
+And that might be
+what the issue is,
+
+00:02:43.770 --> 00:02:46.350
+because it's preceded
+by a parse HTML,
+
+00:02:46.350 --> 00:02:48.790
+so that makes me think
+there's new HTML coming in.
+
+00:02:48.790 --> 00:02:50.670
+It has its style
+calculations, and then we
+
+00:02:50.670 --> 00:02:52.734
+force a layout as well.
+
+00:02:52.734 --> 00:02:54.150
+Same kind of deal,
+except this has
+
+00:02:54.150 --> 00:02:57.230
+got 13,000 elements in play.
+
+00:02:57.230 --> 00:02:59.310
+And again, 93 milliseconds.
+
+00:02:59.310 --> 00:03:02.170
+And this is a fast
+desktop machine.
+
+00:03:02.170 --> 00:03:05.010
+This would be brutal
+on other devices.
+
+00:03:05.010 --> 00:03:07.090
+So, big problem
+here then, I guess.
+
+00:03:07.090 --> 00:03:09.480
+Now the good news is,
+underneath we actually
+
+00:03:09.480 --> 00:03:10.720
+start to get the Call Stacks.
+
+00:03:10.720 --> 00:03:12.610
+So, we can actually
+start to figure out why.
+
+00:03:12.610 --> 00:03:14.370
+What was it that
+was called into that
+
+00:03:14.370 --> 00:03:16.110
+was triggering this problem?
+
+00:03:16.110 --> 00:03:18.420
+And this is it, here.
+
+00:03:18.420 --> 00:03:21.340
+Clicking on, apparently,
+this anchor with bugsnag,
+
+00:03:21.340 --> 00:03:22.840
+I'm not sure what
+the deal is there.
+
+00:03:22.840 --> 00:03:26.595
+But it goes to JQuery--
+something to do with that,
+
+00:03:26.595 --> 00:03:28.000
+I'm not sure what that is.
+
+00:03:28.000 --> 00:03:30.360
+And then bootstrap
+with its modal.
+
+00:03:30.360 --> 00:03:32.800
+And then the Modal
+show, Modal backdrop.
+
+00:03:32.800 --> 00:03:34.000
+OK.
+
+00:03:34.000 --> 00:03:37.900
+And then, eventually, it
+seems to trigger and show.
+
+00:03:37.900 --> 00:03:40.710
+So something in this
+interplay between the rollup
+
+00:03:40.710 --> 00:03:44.370
+client, the rollup
+core, and the bootstrap.
+
+00:03:44.370 --> 00:03:46.541
+Now, it's going to be
+very specific to them.
+
+00:03:46.541 --> 00:03:49.040
+Let's have a quick look at Modal
+show, just out of interest.
+
+00:03:49.040 --> 00:03:49.860
+And it's minified.
+
+00:03:49.860 --> 00:03:52.325
+So again, for them, I'd say
+you would just obviously
+
+00:03:52.325 --> 00:03:54.200
+go to your unminified
+and have a look around,
+
+00:03:54.200 --> 00:03:55.680
+do the same thing again.
+
+00:03:55.680 --> 00:03:59.780
+But if we start to see
+things like, yeah, addClass,
+
+00:03:59.780 --> 00:04:01.170
+we're making a style change.
+
+00:04:01.170 --> 00:04:03.130
+We're basically
+making style changes.
+
+00:04:03.130 --> 00:04:06.950
+Yeah, we're reading a class
+here, hasClass("fade"),
+
+00:04:06.950 --> 00:04:07.540
+addClass.
+
+00:04:07.540 --> 00:04:09.720
+So, you start to sort
+of build up this picture
+
+00:04:09.720 --> 00:04:12.389
+fairly quickly that
+there's a check on styles
+
+00:04:12.389 --> 00:04:13.680
+followed by mutation of styles.
+
+00:04:13.680 --> 00:04:16.470
+And then if somewhere later
+in that Call Stack somebody
+
+00:04:16.470 --> 00:04:18.190
+else is reading a
+style and then writing
+
+00:04:18.190 --> 00:04:19.829
+a style, that's
+exactly what's going
+
+00:04:19.829 --> 00:04:21.130
+to land us in this problem.
+
+00:04:21.130 --> 00:04:22.130
+I'd say it's their code.
+
+00:04:22.130 --> 00:04:24.320
+So I would say, look, go
+and have a look at this.
+
+00:04:24.320 --> 00:04:27.110
+The Call Stacks are here.
+
+00:04:27.110 --> 00:04:29.210
+They will recognize
+their own code, I'm sure.
+
+00:04:29.210 --> 00:04:31.130
+And then it's a case of
+trying to pick it out
+
+00:04:31.130 --> 00:04:33.254
+and say, well, we should
+do all our reads up front,
+
+00:04:33.254 --> 00:04:34.130
+then all our writes.
+
+00:04:34.130 --> 00:04:36.806
+Libraries like fasttime
+will do that for you.
+
+00:04:36.806 --> 00:04:38.180
+But you can still
+do it yourself.
+
+00:04:38.180 --> 00:04:40.470
+Just make sure that you're
+orchestrating your code
+
+00:04:40.470 --> 00:04:41.920
+very carefully.
+
+00:04:41.920 --> 00:04:44.700
+It can be tricky-- and that's
+why fasttime exists, because it
+
+00:04:44.700 --> 00:04:45.830
+will help you do that.
+
+00:04:45.830 --> 00:04:48.150
+And a lot of people use
+it very successfully.
+
+00:04:48.150 --> 00:04:50.590
+So, that would be how
+I'd start for them.
+
+00:04:50.590 --> 00:04:54.930
+But, while I was here, I
+noticed this Update Layer Tree,
+
+00:04:54.930 --> 00:04:57.120
+that comes straight after.
+
+00:04:57.120 --> 00:05:01.620
+Updating the Layer Tree is
+how Chrome organizes basically
+
+00:05:01.620 --> 00:05:03.679
+all the layers in
+the page, so where
+
+00:05:03.679 --> 00:05:05.970
+everything needs to sit in
+relation to everything else.
+
+00:05:05.970 --> 00:05:07.730
+And that's 73 milliseconds.
+
+00:05:07.730 --> 00:05:11.480
+That's monstrously
+long, really long.
+
+00:05:11.480 --> 00:05:14.350
+And again, especially so
+for such a powerful device.
+
+00:05:14.350 --> 00:05:16.580
+So, what's going on?
+
+00:05:16.580 --> 00:05:18.589
+Well, layers is
+the answer, but how
+
+00:05:18.589 --> 00:05:19.880
+do we find out more about this?
+
+00:05:19.880 --> 00:05:22.250
+Well, we have a tool.
+
+00:05:22.250 --> 00:05:23.686
+We have a Chrome Dev Tool.
+
+00:05:23.686 --> 00:05:25.310
+That's why it's called
+Chrome DevTools.
+
+00:05:25.310 --> 00:05:26.990
+Tools inside the tools.
+
+00:05:26.990 --> 00:05:30.320
+Switch on the paint
+profiler, hit Record again,
+
+00:05:30.320 --> 00:05:33.170
+and what we'll do is we'll
+do a bit of a scroll.
+
+00:05:33.170 --> 00:05:36.590
+And I can tell you that
+that is pretty bad.
+
+00:05:39.600 --> 00:05:40.570
+We have to wait.
+
+00:05:40.570 --> 00:05:43.070
+When we've got the
+paint profiler on,
+
+00:05:43.070 --> 00:05:45.550
+there's an awful lot of extra
+information that's coming in,
+
+00:05:45.550 --> 00:05:48.110
+so it does take a long
+time to pull that data in
+
+00:05:48.110 --> 00:05:51.010
+and actually parse it and get it
+ready for us to have a look at.
+
+00:05:51.010 --> 00:05:53.380
+So we have to do
+the happy dance.
+
+00:05:53.380 --> 00:05:58.346
+[SINGING] It's beginning to look
+a lot like Christmas everywhere
+
+00:05:58.346 --> 00:06:01.832
+you go.
+
+00:06:01.832 --> 00:06:03.130
+Ah, it's here.
+
+00:06:03.130 --> 00:06:06.480
+So what we can do is we can
+see, yeah, six frames a second,
+
+00:06:06.480 --> 00:06:07.520
+five frames a second.
+
+00:06:07.520 --> 00:06:09.145
+And that's with that
+paint profiler on.
+
+00:06:09.145 --> 00:06:11.590
+So it'd probably be nearer
+nine, 10 frames a second,
+
+00:06:11.590 --> 00:06:14.930
+certainly not the 60 frames
+a second that we'd want.
+
+00:06:14.930 --> 00:06:18.610
+So, if we click on the Layers--
+the frames, sorry, at the top--
+
+00:06:18.610 --> 00:06:20.777
+we get this Layers tab
+that we can click into.
+
+00:06:20.777 --> 00:06:22.610
+This layer information
+is not yet available,
+
+00:06:22.610 --> 00:06:24.270
+but it does come up eventually.
+
+00:06:24.270 --> 00:06:25.890
+Here we go.
+
+00:06:25.890 --> 00:06:30.351
+And we can make
+this a bit bigger.
+
+00:06:30.351 --> 00:06:31.320
+There we go.
+
+00:06:34.210 --> 00:06:37.130
+And we start to see
+what all the layers are
+
+00:06:37.130 --> 00:06:38.720
+that's all these
+boxes on the screen.
+
+00:06:38.720 --> 00:06:42.500
+And I'll tell you what we'll
+do is we'll just move ourselves
+
+00:06:42.500 --> 00:06:47.700
+back, and we can spin
+this out into 3D space.
+
+00:06:47.700 --> 00:06:49.372
+Woo hoo.
+
+00:06:49.372 --> 00:06:50.880
+Who doesn't love that?
+
+00:06:50.880 --> 00:06:53.360
+Nobody.
+
+00:06:53.360 --> 00:06:54.110
+There we are.
+
+00:06:54.110 --> 00:06:55.260
+Rotate.
+
+00:06:55.260 --> 00:06:55.930
+Get back.
+
+00:06:55.930 --> 00:06:57.299
+There we are.
+
+00:06:57.299 --> 00:06:57.840
+Look at that.
+
+00:06:57.840 --> 00:06:59.096
+That's great, isn't it?
+
+00:06:59.096 --> 00:07:02.080
+It looks like basically every
+single item in the Quick
+
+00:07:02.080 --> 00:07:05.630
+Switcher is getting
+its own layer.
+
+00:07:05.630 --> 00:07:09.905
+And that's going to be expensive
+to manage, I would imagine.
+
+00:07:09.905 --> 00:07:12.030
+We can confirm that, though,
+because what we can do
+
+00:07:12.030 --> 00:07:15.440
+is we can hit
+Escape, and we would
+
+00:07:15.440 --> 00:07:17.360
+go to the rendering options.
+
+00:07:17.360 --> 00:07:18.930
+If they're not
+there for you, then
+
+00:07:18.930 --> 00:07:22.910
+you can go to More Tools,
+Rendering Settings, like that.
+
+00:07:22.910 --> 00:07:24.760
+And you can switch on
+Show Layer Borders.
+
+00:07:24.760 --> 00:07:28.630
+And, yep, sure as
+we would expect,
+
+00:07:28.630 --> 00:07:31.720
+each one of these items in the
+list has got its own layer.
+
+00:07:31.720 --> 00:07:33.730
+And, in fact, even
+the status icon inside
+
+00:07:33.730 --> 00:07:35.320
+has also got its own layer.
+
+00:07:35.320 --> 00:07:39.570
+And we can spin this down as
+well, and inside the omnibox,
+
+00:07:39.570 --> 00:07:41.900
+which is what that is.
+
+00:07:41.900 --> 00:07:45.690
+Yeah, there we are, omnibox_item
+and then the presence-- so,
+
+00:07:45.690 --> 00:07:47.300
+basically the status.
+
+00:07:47.300 --> 00:07:50.660
+Now, if we click on
+one of these items,
+
+00:07:50.660 --> 00:07:53.310
+we can see the reason
+that it got its own layer.
+
+00:07:53.310 --> 00:07:59.380
+"Scroll parent is
+not an ancestor."
+
+00:07:59.380 --> 00:08:00.490
+No idea.
+
+00:08:00.490 --> 00:08:02.250
+"Might overlap other
+composited content."
+
+00:08:02.250 --> 00:08:03.450
+Now that one I can guess.
+
+00:08:03.450 --> 00:08:05.900
+That's basically
+something's got a layer,
+
+00:08:05.900 --> 00:08:08.600
+and one of these list
+items might overlap it.
+
+00:08:08.600 --> 00:08:10.260
+OK.
+
+00:08:10.260 --> 00:08:13.060
+And then it says, "Cannot be
+squashed because this layer has
+
+00:08:13.060 --> 00:08:18.440
+a different clipping container
+than the squashing layer."
+
+00:08:18.440 --> 00:08:19.600
+Yeah.
+
+00:08:19.600 --> 00:08:22.270
+This one took me
+a long, long time
+
+00:08:22.270 --> 00:08:24.160
+to figure out when I
+was looking at this.
+
+00:08:24.160 --> 00:08:26.560
+I was like, oof, yeah.
+
+00:08:26.560 --> 00:08:28.810
+Maybe I'll have to speak
+to a Chrome engineer.
+
+00:08:28.810 --> 00:08:31.210
+And I was like, just, what?
+
+00:08:31.210 --> 00:08:31.990
+Huh?
+
+00:08:31.990 --> 00:08:36.909
+And they gave me a few hints
+and got to the bottom of it,
+
+00:08:36.909 --> 00:08:37.820
+which is good.
+
+00:08:37.820 --> 00:08:40.409
+It's kind of is it
+going to work out?
+
+00:08:40.409 --> 00:08:41.039
+Who knows.
+
+00:08:41.039 --> 00:08:43.219
+It was an exciting
+time for me, it was.
+
+00:08:43.219 --> 00:08:45.010
+And always like that
+with performance work,
+
+00:08:45.010 --> 00:08:47.860
+you get thrown something and
+you're like, do some forensics.
+
+00:08:47.860 --> 00:08:49.490
+Will you solve the puzzle?
+
+00:08:49.490 --> 00:08:50.220
+Who knows?
+
+00:08:50.220 --> 00:08:51.553
+[WHISPERING] It's very exciting.
+
+00:08:51.553 --> 00:08:52.680
+That's why I do this.
+
+00:08:52.680 --> 00:08:55.410
+To be or not to be?
+
+00:08:55.410 --> 00:08:57.370
+That is the question.
+
+00:08:57.370 --> 00:09:01.480
+Whether 'tis nobler in the mind
+to suffer the slings and arrows
+
+00:09:01.480 --> 00:09:04.750
+of outrageous fortune,
+or to take arms
+
+00:09:04.750 --> 00:09:06.380
+against a sea of troubles.
+
+00:09:06.380 --> 00:09:08.260
+And by doing so.
+
+00:09:08.260 --> 00:09:10.240
+Back to the task at hand.
+
+00:09:10.240 --> 00:09:16.990
+Well, it turns out if you look
+at the container element-- had
+
+00:09:16.990 --> 00:09:21.370
+to scroll up for that
+apparently-- there's
+
+00:09:21.370 --> 00:09:25.224
+a lot of them,
+there's a lot of them.
+
+00:09:25.224 --> 00:09:26.640
+I'm going to get
+there eventually.
+
+00:09:26.640 --> 00:09:27.140
+Got there.
+
+00:09:27.140 --> 00:09:27.670
+OK.
+
+00:09:27.670 --> 00:09:30.020
+omnibox_results is
+the container element
+
+00:09:30.020 --> 00:09:31.850
+that's doing the scrolling.
+
+00:09:31.850 --> 00:09:33.990
+It has width, it
+has a height, but it
+
+00:09:33.990 --> 00:09:36.620
+has overflow-y: scroll
+and overflow-x: hidden.
+
+00:09:36.620 --> 00:09:39.770
+So, it's clipping that
+list, which is great.
+
+00:09:39.770 --> 00:09:43.280
+That's what we'd want it to do,
+and that makes perfect sense.
+
+00:09:43.280 --> 00:09:46.760
+However, every single
+item inside the list,
+
+00:09:46.760 --> 00:09:49.140
+it too has overflow: hidden.
+
+00:09:49.140 --> 00:09:52.729
+So, each item is clipping
+with its contents.
+
+00:09:52.729 --> 00:09:54.270
+And what blink does
+is it goes, well,
+
+00:09:54.270 --> 00:09:57.040
+that's got its own clipping
+because it's overflow: hidden.
+
+00:09:57.040 --> 00:10:02.570
+And that clip doesn't
+match the parent's clip.
+
+00:10:02.570 --> 00:10:05.060
+Therefore, I'm just
+going to assume
+
+00:10:05.060 --> 00:10:07.460
+that it has to have its
+own layer because of that.
+
+00:10:07.460 --> 00:10:11.340
+So, if we switch off overflow:
+hidden on the children,
+
+00:10:11.340 --> 00:10:12.710
+all those layers disappear.
+
+00:10:12.710 --> 00:10:15.150
+and we're going to get
+one big layer, which
+
+00:10:15.150 --> 00:10:17.770
+is probably going to be better.
+
+00:10:17.770 --> 00:10:20.540
+We'll switch on the timeline
+again, switch off the paint
+
+00:10:20.540 --> 00:10:23.330
+profiler so that it doesn't take
+all the extra information we
+
+00:10:23.330 --> 00:10:28.330
+don't need, and we'll
+record, and we'll scroll.
+
+00:10:28.330 --> 00:10:29.420
+Ah.
+
+00:10:29.420 --> 00:10:33.182
+Now we're getting something
+like 30 frames a second.
+
+00:10:33.182 --> 00:10:34.556
+So we're up from
+about-- well, it
+
+00:10:34.556 --> 00:10:37.160
+was five, six, could be
+nine or 10 without the paint
+
+00:10:37.160 --> 00:10:39.050
+profiler-- up to about 30.
+
+00:10:39.050 --> 00:10:41.010
+So definite
+improvement by having,
+
+00:10:41.010 --> 00:10:44.300
+in this case, one
+larger layer rather than
+
+00:10:44.300 --> 00:10:47.090
+hundreds or thousands
+of smaller layers.
+
+00:10:47.090 --> 00:10:49.050
+But that's still not
+60 frames a second,
+
+00:10:49.050 --> 00:10:50.390
+which is what we'd want.
+
+00:10:50.390 --> 00:10:53.540
+So, I see a lot of purple
+in this chart at the top,
+
+00:10:53.540 --> 00:10:55.470
+and certainly that
+matches up with,
+
+00:10:55.470 --> 00:10:59.980
+yeah, about 12 milliseconds
+here of Update Layer Tree,
+
+00:10:59.980 --> 00:11:04.935
+which is down from 20-odd,
+24, 25, I think, to 12.
+
+00:11:04.935 --> 00:11:07.060
+So it's definitely better,
+but it's still not good.
+
+00:11:07.060 --> 00:11:09.727
+It should be a fraction of a
+millisecond, ideally speaking.
+
+00:11:09.727 --> 00:11:11.810
+So let's see if we can
+figure out what's going on.
+
+00:11:11.810 --> 00:11:14.680
+Well, again, we can switch
+on the paint profiler,
+
+00:11:14.680 --> 00:11:18.200
+do a quick run, and
+see what's what.
+
+00:11:18.200 --> 00:11:21.180
+All we need is one
+of these frames.
+
+00:11:21.180 --> 00:11:22.990
+We'll go and wait
+for the layers.
+
+00:11:22.990 --> 00:11:24.080
+There we go.
+
+00:11:24.080 --> 00:11:27.120
+And we can actually
+see the list there.
+
+00:11:27.120 --> 00:11:29.230
+We'll reset the transform.
+
+00:11:29.230 --> 00:11:32.060
+You see the list of items
+in the Quick Switcher
+
+00:11:32.060 --> 00:11:34.210
+and, yeah, you see here.
+
+00:11:34.210 --> 00:11:37.980
+It's 66,266 pixels high.
+
+00:11:37.980 --> 00:11:39.840
+That's enormous.
+
+00:11:39.840 --> 00:11:43.350
+That's a huge layer that
+needs to be handled.
+
+00:11:43.350 --> 00:11:46.140
+And it's just probably
+putting blink under pressure.
+
+00:11:46.140 --> 00:11:49.370
+We can prove that, I think, by
+going through to the elements.
+
+00:11:49.370 --> 00:11:52.310
+What we'll do is we'll
+select the omnibox item,
+
+00:11:52.310 --> 00:11:57.030
+and we will say display: none.
+
+00:11:57.030 --> 00:11:59.970
+And that's going to give us
+nothing in the list, which
+
+00:11:59.970 --> 00:12:01.137
+is not so great.
+
+00:12:01.137 --> 00:12:02.720
+But what we can do
+is we can go and we
+
+00:12:02.720 --> 00:12:07.090
+can override that
+for a few of them,
+
+00:12:07.090 --> 00:12:09.650
+and so that we've got
+something to scroll.
+
+00:12:09.650 --> 00:12:11.837
+This is going to take
+us a minute or two.
+
+00:12:11.837 --> 00:12:15.110
+[SCROLLING SOUNDS]
+
+00:12:15.110 --> 00:12:16.980
+So, we've got a few
+in the list now.
+
+00:12:16.980 --> 00:12:20.630
+So we've enabled like 10 of
+them, or something like that.
+
+00:12:20.630 --> 00:12:25.440
+And so this list is basically
+nothing like the size it was.
+
+00:12:25.440 --> 00:12:28.556
+And we'll do another
+timeline recording,
+
+00:12:28.556 --> 00:12:30.430
+and we'll swtich off
+the paint profiler here.
+
+00:12:30.430 --> 00:12:33.470
+We'll just have a go without.
+
+00:12:33.470 --> 00:12:36.320
+And stop that.
+
+00:12:36.320 --> 00:12:39.740
+And, yeah, we're basically
+at 60 frames a second now.
+
+00:12:39.740 --> 00:12:42.660
+And the Update Layer
+Tree's gone from that 12,
+
+00:12:42.660 --> 00:12:45.480
+13 milliseconds down
+to three milliseconds.
+
+00:12:45.480 --> 00:12:49.755
+So clearly the size of that
+layer is a big, big factor.
+
+00:12:49.755 --> 00:12:51.630
+But, that still bothers
+me because it's still
+
+00:12:51.630 --> 00:12:54.820
+three milliseconds and it should
+be a fraction of a millisecond.
+
+00:12:54.820 --> 00:12:59.690
+So, something outside
+of this Quick Switcher
+
+00:12:59.690 --> 00:13:02.250
+is probably causing
+an issue too.
+
+00:13:02.250 --> 00:13:06.000
+And my hunch is, having
+looked at this before,
+
+00:13:06.000 --> 00:13:09.720
+is it's going to be the
+actual content of the page.
+
+00:13:09.720 --> 00:13:12.050
+In fact, we can confirm that,
+because what we could do
+
+00:13:12.050 --> 00:13:14.820
+is we could do a
+paint profile, and we
+
+00:13:14.820 --> 00:13:17.830
+will do a quick scroll
+of the page content.
+
+00:13:17.830 --> 00:13:19.080
+It is 60 frames a second.
+
+00:13:19.080 --> 00:13:23.560
+So, we could stop here
+and that would be OK.
+
+00:13:23.560 --> 00:13:27.930
+But, I would imagine that since
+this Update Layer Tree is still
+
+00:13:27.930 --> 00:13:30.790
+quite big, we should see
+if we can figure it out.
+
+00:13:30.790 --> 00:13:35.720
+And, yeah, so looking at this,
+the actual page dividers,
+
+00:13:35.720 --> 00:13:43.050
+we got msgs_scroller_div
+is 12,544 pixels.
+
+00:13:43.050 --> 00:13:45.080
+And the actual
+day divider, which
+
+00:13:45.080 --> 00:13:50.750
+seems to be the previous day's
+content, that is 12,000 and so,
+
+00:13:50.750 --> 00:13:52.270
+again, and by 10,000.
+
+00:13:52.270 --> 00:13:54.290
+So those are huge layers.
+
+00:13:54.290 --> 00:13:58.400
+And you can see that, actually,
+here if we get rid of that
+
+00:13:58.400 --> 00:14:02.130
+and we zoom out.
+
+00:14:02.130 --> 00:14:03.080
+There we go.
+
+00:14:03.080 --> 00:14:05.940
+Yeah, there's the actual
+page in the bottom corner,
+
+00:14:05.940 --> 00:14:07.820
+and this is what it is.
+
+00:14:07.820 --> 00:14:08.820
+There we are.
+
+00:14:08.820 --> 00:14:10.360
+That's what it
+actually looks like.
+
+00:14:10.360 --> 00:14:11.840
+There's the page content.
+
+00:14:11.840 --> 00:14:14.520
+We have another one
+here, and the footer,
+
+00:14:14.520 --> 00:14:18.310
+as well, for reasons
+I'm not quite sure why.
+
+00:14:18.310 --> 00:14:22.070
+But it seems to be that
+it is massive as well.
+
+00:14:22.070 --> 00:14:25.840
+So, I guess, if I were them,
+for this and the Quick Switcher,
+
+00:14:25.840 --> 00:14:28.640
+I would say, go to something
+that's like a recycler view
+
+00:14:28.640 --> 00:14:32.425
+where you've got a
+few much smaller DOM
+
+00:14:32.425 --> 00:14:33.716
+and you're recycling elements.
+
+00:14:33.716 --> 00:14:35.590
+That means that the
+layout should be cheaper,
+
+00:14:35.590 --> 00:14:37.620
+the style calculations
+should be cheaper,
+
+00:14:37.620 --> 00:14:39.110
+everything should be cheaper.
+
+00:14:39.110 --> 00:14:41.250
+And you can use something
+like requestIdleCallback
+
+00:14:41.250 --> 00:14:43.450
+to only do those
+mutations to the DOM
+
+00:14:43.450 --> 00:14:46.040
+when the user's in idle, and
+if you need to put up a spinner
+
+00:14:46.040 --> 00:14:47.858
+or something like that, OK.
+
+00:14:47.858 --> 00:14:51.200
+But, maybe you need to take a
+slightly more nuanced approach
+
+00:14:51.200 --> 00:14:53.080
+where you use
+requestIdleCallback.
+
+00:14:53.080 --> 00:14:54.630
+Or, if it's getting
+quite pressing,
+
+00:14:54.630 --> 00:14:56.740
+you just do it immediately,
+and you take the hit,
+
+00:14:56.740 --> 00:14:59.220
+and maybe you froze for second
+or just waver a little bit.
+
+00:14:59.220 --> 00:15:01.720
+But it's certainly going to be
+a lot, lot better than having
+
+00:15:01.720 --> 00:15:06.730
+this huge set of layers
+that is just putting blink
+
+00:15:06.730 --> 00:15:07.770
+under pressure here.
+
+00:15:07.770 --> 00:15:10.260
+So, there you go.
+
+00:15:10.260 --> 00:15:11.500
+A bunch of stuff.
+
+00:15:11.500 --> 00:15:15.790
+The Layers panel,
+the paint profiler,
+
+00:15:15.790 --> 00:15:19.120
+just DevTools in general, and
+scrolling performance issues.
+
+00:15:19.120 --> 00:15:21.520
+Definitely want to take a
+look at this holiday season.
+
+00:15:21.520 --> 00:15:22.980
+Woo, yeah.
+
+00:15:22.980 --> 00:15:25.230
+If you find yourself with
+scrolling performance issues
+
+00:15:25.230 --> 00:15:26.646
+and it's not
+something like paint,
+
+00:15:26.646 --> 00:15:29.640
+it might be something
+like your layers.
+
+00:15:29.640 --> 00:15:32.000
+Check that out.
+
+00:15:32.000 --> 00:15:37.380
+Have a great holiday,
+and I'll see you in 2016.
+
+00:15:37.380 --> 00:15:38.340
+It's exciting.
+
+00:15:38.340 --> 00:15:39.360
+Brand new year.
+
+00:15:39.360 --> 00:15:40.661
+It's a leap year.
+
+00:15:40.661 --> 00:15:41.160
+Oink.
+
+00:15:41.160 --> 00:15:51.320
+[MUSIC PLAYING]
+

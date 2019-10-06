@@ -1,0 +1,129 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.603
+[MUSIC PLAYING]
+
+00:00:01.603 --> 00:00:04.019
+SPEAKER 1: Here's something
+that came up on "Supercharged"
+
+00:00:04.019 --> 00:00:04.600
+recently.
+
+00:00:04.600 --> 00:00:06.555
+Sometimes you need to animate
+a shadow on an element,
+
+00:00:06.555 --> 00:00:08.460
+but you want to keep
+your stuff performant.
+
+00:00:08.460 --> 00:00:10.636
+And you might think, I'll
+animate the book shadow.
+
+00:00:10.636 --> 00:00:12.510
+But that's bad, because
+it causes the element
+
+00:00:12.510 --> 00:00:14.360
+to repaint every
+time you change it.
+
+00:00:14.360 --> 00:00:16.651
+And you can see that by
+switching on the paint flashing
+
+00:00:16.651 --> 00:00:17.900
+option in Chrome's Dev Tools.
+
+00:00:17.900 --> 00:00:19.070
+Then you might think, ah-ha.
+
+00:00:19.070 --> 00:00:21.120
+Instead, I shall use
+the CSS blur filter.
+
+00:00:21.120 --> 00:00:22.816
+But that's also bad
+for performance,
+
+00:00:22.816 --> 00:00:24.690
+because this applies a
+post-processing effect
+
+00:00:24.690 --> 00:00:27.470
+on the GPU, meaning
+it's done per frame.
+
+00:00:27.470 --> 00:00:29.220
+Since blurs are
+computationally expensive,
+
+00:00:29.220 --> 00:00:31.860
+they're not something we
+want to be doing on the fly.
+
+00:00:31.860 --> 00:00:34.360
+What you want to do instead
+is create a totally separate
+
+00:00:34.360 --> 00:00:36.260
+element, maybe a pseudo
+element, onto which
+
+00:00:36.260 --> 00:00:37.912
+you can bake the shadow.
+
+00:00:37.912 --> 00:00:40.370
+You can take that element, fill
+it with a black background,
+
+00:00:40.370 --> 00:00:42.212
+add a box shadow,
+and fade it down.
+
+00:00:42.212 --> 00:00:44.170
+Then you promote it with
+Will Change Transform,
+
+00:00:44.170 --> 00:00:46.390
+making it movable
+with the GPU's help.
+
+00:00:46.390 --> 00:00:48.900
+Alternatively, for a slightly
+more flexible approach,
+
+00:00:48.900 --> 00:00:51.310
+you can use an SVG images,
+the boxes background,
+
+00:00:51.310 --> 00:00:53.140
+and use border image
+to nine slice it.
+
+00:00:53.140 --> 00:00:55.151
+You could even use
+SVG's foreign object tag
+
+00:00:55.151 --> 00:00:57.650
+if you want to go really out
+there and do something strange.
+
+00:00:57.650 --> 00:01:00.060
+Now you have a shadow
+that you can move, scale,
+
+00:01:00.060 --> 00:01:02.580
+and fade independently of
+the elements it's shadowing.
+
+00:01:02.580 --> 00:01:03.180
+Win!
+
+00:01:03.180 --> 00:01:04.730
+[MUSIC PLAYING]
+

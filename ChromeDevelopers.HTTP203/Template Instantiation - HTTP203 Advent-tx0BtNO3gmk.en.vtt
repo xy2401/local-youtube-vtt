@@ -1,0 +1,279 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.968
+[MUSIC PLAYING]
+
+00:00:06.280 --> 00:00:07.280
+SURMA: So it's December.
+
+00:00:07.280 --> 00:00:07.850
+JAKE: Yeah.
+
+00:00:07.850 --> 00:00:09.640
+SURMA: The last month of 2017.
+
+00:00:09.640 --> 00:00:12.661
+And usually, we make plans for
+the next year, which is 2018.
+
+00:00:12.661 --> 00:00:13.160
+JAKE: Yes.
+
+00:00:13.160 --> 00:00:16.040
+SURMA: And so I thought I
+would give myself two minutes
+
+00:00:16.040 --> 00:00:17.780
+to talk to you about my plans.
+
+00:00:17.780 --> 00:00:18.290
+JAKE: OK.
+
+00:00:18.290 --> 00:00:19.220
+What are your plans?
+
+00:00:19.220 --> 00:00:22.940
+SURMA: So my plan is the
+template proposal from Apple.
+
+00:00:22.940 --> 00:00:24.170
+JAKE: Oh.
+
+00:00:24.170 --> 00:00:25.232
+Apple template proposal.
+
+00:00:25.232 --> 00:00:26.690
+SURMA: The Apple
+template proposal.
+
+00:00:26.690 --> 00:00:29.000
+JAKE: So what have
+they proposed?
+
+00:00:29.000 --> 00:00:31.940
+So we've already got templates--
+things like Mustache,
+
+00:00:31.940 --> 00:00:33.760
+and Handlebars,
+that sort of thing.
+
+00:00:33.760 --> 00:00:35.510
+SURMA: Yeah, those are
+templating engines.
+
+00:00:35.510 --> 00:00:39.192
+In this case, we're talking
+about the template tag in HTML.
+
+00:00:39.192 --> 00:00:40.400
+JAKE: That's already shipped.
+
+00:00:40.400 --> 00:00:41.399
+SURMA: That has shipped.
+
+00:00:41.399 --> 00:00:45.100
+And it's there, so you can
+clone, instantiate, sub--
+
+00:00:45.100 --> 00:00:47.225
+like, partial DOM trees
+really, really efficiently.
+
+00:00:47.225 --> 00:00:49.183
+JAKE: But otherwise, I've
+never really used it.
+
+00:00:49.183 --> 00:00:50.675
+I just use it as a parser hack.
+
+00:00:50.675 --> 00:00:50.930
+SURMA: Exactly.
+
+00:00:50.930 --> 00:00:52.970
+And that's kind of what
+they want to augment.
+
+00:00:52.970 --> 00:00:54.590
+They want to add
+the capabilities
+
+00:00:54.590 --> 00:00:56.360
+of adding bindings.
+
+00:00:56.360 --> 00:00:59.510
+We know from Mustache, we said,
+in this particular position
+
+00:00:59.510 --> 00:01:03.390
+in the template, I would like to
+use this value from a variable.
+
+00:01:03.390 --> 00:01:05.972
+JAKE: So how-- we already have,
+sort of, a template language
+
+00:01:05.972 --> 00:01:08.430
+on the web, because we've got
+JavaScript template language.
+
+00:01:08.430 --> 00:01:09.472
+So what's the difference?
+
+00:01:09.472 --> 00:01:11.263
+SURMA: The difference
+is that in this case,
+
+00:01:11.263 --> 00:01:13.790
+this would be baked very
+efficiently into the browser.
+
+00:01:13.790 --> 00:01:16.647
+It would basically do things
+like we talked about hyperHTML,
+
+00:01:16.647 --> 00:01:18.230
+and lit-HTML, do
+these kind of things,
+
+00:01:18.230 --> 00:01:22.160
+that it would remember which
+bits are actually mutatable.
+
+00:01:22.160 --> 00:01:24.890
+And then you can just
+update the instance
+
+00:01:24.890 --> 00:01:27.272
+by giving it a new state
+object, which you rip out
+
+00:01:27.272 --> 00:01:29.480
+the version it needs, puts
+it in the right positions,
+
+00:01:29.480 --> 00:01:32.090
+and you have an
+updated, DOM fragment.
+
+00:01:32.090 --> 00:01:34.370
+JAKE: Oh, so it is very
+much like hyperHTML,
+
+00:01:34.370 --> 00:01:35.132
+lit-HTML on that.
+
+00:01:35.132 --> 00:01:36.590
+SURMA: It seems to
+be very similar.
+
+00:01:36.590 --> 00:01:38.300
+I don't know how
+the implementation
+
+00:01:38.300 --> 00:01:39.500
+would look under the hood.
+
+00:01:39.500 --> 00:01:41.660
+But from the
+developer's perspective,
+
+00:01:41.660 --> 00:01:42.470
+it is very similar.
+
+00:01:42.470 --> 00:01:45.770
+But in this case, you could just
+write it in your HTML markup,
+
+00:01:45.770 --> 00:01:47.830
+rather than to have to wire up--
+
+00:01:47.830 --> 00:01:52.961
+import a library, and to use
+the HTML tag string template.
+
+00:01:52.961 --> 00:01:53.460
+Literal.
+
+00:01:53.460 --> 00:01:55.530
+JAKE: Literal.
+
+00:01:55.530 --> 00:01:58.430
+So are other browsers
+interested in this?
+
+00:01:58.430 --> 00:02:00.200
+SURMA: As far as I
+know, the reactions
+
+00:02:00.200 --> 00:02:01.190
+were fairly good to it.
+
+00:02:01.190 --> 00:02:04.070
+It was discussed at
+CheapHack, and the proposal's
+
+00:02:04.070 --> 00:02:04.670
+out on GitHub.
+
+00:02:04.670 --> 00:02:05.930
+And everything looked
+fairly positive.
+
+00:02:05.930 --> 00:02:07.910
+There's some kinks that
+have to be figured out.
+
+00:02:07.910 --> 00:02:09.530
+But other than that,
+it seems like browsers
+
+00:02:09.530 --> 00:02:10.699
+are very much interested.
+
+00:02:10.699 --> 00:02:12.530
+JAKE: Sounds like a
+nice, high-level thing
+
+00:02:12.530 --> 00:02:14.157
+to augment web
+components and stuff.
+
+00:02:14.157 --> 00:02:15.740
+SURMA: For example,
+yeah, shutter DOM,
+
+00:02:15.740 --> 00:02:17.880
+all these sort of things can
+make good use of templates.
+
+00:02:17.880 --> 00:02:20.090
+And I think it's going to
+be interesting in 2018.
+
+00:02:20.090 --> 00:02:23.600
+[8 BIT VERSION OF "THE
+TWELVE DAYS OF CHRISTMAS"]
+
+00:02:23.600 --> 00:02:25.290
+JAKE: Good timing.
+
+00:02:25.290 --> 00:02:27.040
+And the thing I'm going
+to describe to you
+
+00:02:27.040 --> 00:02:31.410
+is a flatMap in flatten.
+
+00:02:31.410 --> 00:02:32.560
+SURMA: What?
+
+00:02:32.560 --> 00:02:33.970
+JAKE: Good question.
+
+00:02:33.970 --> 00:02:37.350
+These are methods that
+are going to go on arrays.
+

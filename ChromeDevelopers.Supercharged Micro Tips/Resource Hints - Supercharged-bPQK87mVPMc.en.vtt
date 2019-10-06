@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.180 --> 00:00:03.516
+SURMA: Hello, Superchargers.
+
+00:00:03.516 --> 00:00:05.230
+That's you.
+
+00:00:05.230 --> 00:00:07.170
+A few weeks ago,
+Paul built a router,
+
+00:00:07.170 --> 00:00:09.530
+and then enhanced it to
+store each individual view
+
+00:00:09.530 --> 00:00:10.980
+on the server side.
+
+00:00:10.980 --> 00:00:13.760
+The advantage is that the
+initial page is smaller,
+
+00:00:13.760 --> 00:00:15.550
+making the app spin up faster.
+
+00:00:15.550 --> 00:00:17.890
+The downside, however, is
+that on slow connections,
+
+00:00:17.890 --> 00:00:20.140
+each navigation can
+be painfully slow.
+
+00:00:20.140 --> 00:00:22.200
+Let's simulate a
+slow network and make
+
+00:00:22.200 --> 00:00:25.600
+every response take something
+between one and two seconds.
+
+00:00:25.600 --> 00:00:28.920
+The page loads, and when it's
+done, the network is idle.
+
+00:00:28.920 --> 00:00:31.490
+Once we click on a link,
+we need to fetch the data
+
+00:00:31.490 --> 00:00:33.600
+from the server, and we
+have to show a spinner
+
+00:00:33.600 --> 00:00:36.090
+because it is taking too long.
+
+00:00:36.090 --> 00:00:38.880
+A solution for this
+problem is resource hints.
+
+00:00:38.880 --> 00:00:40.620
+Resource hints let
+us take advantage
+
+00:00:40.620 --> 00:00:42.600
+of the idle time on
+the network to prepare
+
+00:00:42.600 --> 00:00:45.700
+the data we need next by putting
+link tags in our document's
+
+00:00:45.700 --> 00:00:46.630
+hat.
+
+00:00:46.630 --> 00:00:49.190
+These instruct the browser
+what resources to fetch
+
+00:00:49.190 --> 00:00:50.890
+when it has some time to spare.
+
+00:00:50.890 --> 00:00:53.790
+In our case, we are going
+to load the other views.
+
+00:00:53.790 --> 00:00:55.740
+Now, the browser will
+load these resources
+
+00:00:55.740 --> 00:00:57.730
+when the network is idle,
+and the user is busy
+
+00:00:57.730 --> 00:00:59.690
+interacting with a page.
+
+00:00:59.690 --> 00:01:01.930
+Even though we still have
+a delay on the network,
+
+00:01:01.930 --> 00:01:04.190
+the views load instantly.
+
+00:01:04.190 --> 00:01:07.490
+You might be asking yourself
+why I'm not using HTTP/2 push.
+
+00:01:07.490 --> 00:01:10.230
+With push, you're forcing
+the data onto the browser,
+
+00:01:10.230 --> 00:01:12.650
+ignoring if we have
+any bandwidth to spare
+
+00:01:12.650 --> 00:01:16.180
+or if the resource is maybe
+already in the browser's cache.
+
+00:01:16.180 --> 00:01:19.030
+With resource hints, we
+remove all that responsibility
+
+00:01:19.030 --> 00:01:21.540
+to the browser, because it
+knows best when it is idle
+
+00:01:21.540 --> 00:01:24.060
+and has some more
+time to do stuff.
+
+00:01:24.060 --> 00:01:26.180
+I've updated the code in
+the repository for you
+
+00:01:26.180 --> 00:01:28.410
+to check out through
+link in the description.
+
+00:01:28.410 --> 00:01:29.200
+Until next time.
+
+00:01:29.200 --> 00:01:33.450
+[MUSIC PLAYING]
+

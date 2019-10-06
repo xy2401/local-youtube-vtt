@@ -1,0 +1,286 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.201 --> 00:00:10.555
+- So 2017, pretty
+much dead to us.
+
+00:00:10.555 --> 00:00:11.430
+- It's the last year.
+
+00:00:11.430 --> 00:00:11.930
+But
+
+00:00:11.930 --> 00:00:14.870
+- The next one, in a
+linear fashion, 2018,
+
+00:00:14.870 --> 00:00:16.500
+very much interested about that.
+
+00:00:16.500 --> 00:00:18.770
+So I've been thinking about some
+of the features of the web that
+
+00:00:18.770 --> 00:00:20.103
+are going to be sort of landing.
+
+00:00:20.103 --> 00:00:21.380
+I'll discuss around them.
+
+00:00:21.380 --> 00:00:23.505
+And I wanted to see if I
+could describe one of them
+
+00:00:23.505 --> 00:00:24.760
+to you in two minutes.
+
+00:00:24.760 --> 00:00:26.510
+And the thing I'm going
+to describe to you
+
+00:00:26.510 --> 00:00:30.281
+is a flatMap and flatten.
+
+00:00:30.281 --> 00:00:31.565
+- What?
+
+00:00:31.565 --> 00:00:33.450
+- Good question.
+
+00:00:33.450 --> 00:00:36.490
+These methods are
+going to go on arrays.
+
+00:00:36.490 --> 00:00:39.612
+- Oh, this is like, I
+think, the array prototype
+
+00:00:39.612 --> 00:00:41.320
+hasn't been changed
+in a long, long time.
+
+00:00:41.320 --> 00:00:43.680
+So this would be the
+first new array prototype
+
+00:00:43.680 --> 00:00:45.060
+functions in a long time.
+
+00:00:45.060 --> 00:00:48.820
+- Yeah, since we had things
+like sum and find index.
+
+00:00:48.820 --> 00:00:49.892
+Quite a few new things.
+
+00:00:49.892 --> 00:00:51.350
+- Oh, right, those
+aren't very new.
+
+00:00:51.350 --> 00:00:54.020
+So what does flatMap
+and like what-- flatten,
+
+00:00:54.020 --> 00:00:54.860
+what is flatten?
+
+00:00:54.860 --> 00:00:56.490
+- OK.
+
+00:00:56.490 --> 00:00:59.929
+If you have an array of
+arrays, it will go through it
+
+00:00:59.929 --> 00:01:01.470
+and just turn it
+into one long array,
+
+00:01:01.470 --> 00:01:02.985
+as if each array
+is concatenated.
+
+00:01:02.985 --> 00:01:04.720
+- One level, or will
+it recurse down?
+
+00:01:04.720 --> 00:01:06.280
+- Aha, good question.
+
+00:01:06.280 --> 00:01:08.370
+One of the arguments
+is depth, which
+
+00:01:08.370 --> 00:01:11.280
+basically says how many times
+it will run that algorithm.
+
+00:01:11.280 --> 00:01:12.930
+- Can I give infinity as depth?
+
+00:01:12.930 --> 00:01:15.900
+- That is a good question, of
+which I do not know the answer.
+
+00:01:15.900 --> 00:01:18.010
+But that is a fun
+thing to look up.
+
+00:01:18.010 --> 00:01:19.350
+- flatMap, what does flatMap do?
+
+00:01:19.350 --> 00:01:21.440
+- What does flatMap do?
+
+00:01:21.440 --> 00:01:22.710
+Do you know Map?
+
+00:01:22.710 --> 00:01:23.790
+- I know Map.
+
+00:01:23.790 --> 00:01:26.700
+You take an array and you apply
+a function to every element.
+
+00:01:26.700 --> 00:01:27.830
+- Yes.
+
+00:01:27.830 --> 00:01:31.144
+And it will always produce
+an array the same length
+
+00:01:31.144 --> 00:01:32.310
+of the array you operate on.
+
+00:01:32.310 --> 00:01:34.710
+It will be a new array,
+but you can change
+
+00:01:34.710 --> 00:01:36.515
+every item for another item.
+
+00:01:36.515 --> 00:01:41.200
+So you can change DOM nodes
+for strings or whatever.
+
+00:01:41.200 --> 00:01:44.010
+Whereas reduce always takes
+you down to like one element
+
+00:01:44.010 --> 00:01:44.570
+is the idea.
+
+00:01:44.570 --> 00:01:46.320
+Take an array, you go
+down to one element.
+
+00:01:46.320 --> 00:01:50.340
+FlatMap lets you look
+at an item and you
+
+00:01:50.340 --> 00:01:53.761
+return an array of items.
+
+00:01:53.761 --> 00:01:55.680
+- So it's like Map
+and then flatten.
+
+00:01:55.680 --> 00:01:56.490
+- Exactly.
+
+00:01:56.490 --> 00:01:57.890
+- Hence the name flatMap.
+
+00:01:57.890 --> 00:02:00.180
+- Yes, you've spotted
+the two words in there
+
+00:02:00.180 --> 00:02:02.107
+that join together to
+form what this does.
+
+00:02:02.107 --> 00:02:04.440
+But it's something that I
+found I've needed quite a bit.
+
+00:02:04.440 --> 00:02:05.900
+- Yeah, like I
+usually use reduce.
+
+00:02:05.900 --> 00:02:09.249
+But I like push to
+my accumulator value.
+
+00:02:09.249 --> 00:02:11.290
+- And it kind of feels
+like a hack, using reduce.
+
+00:02:11.290 --> 00:02:11.790
+- Oh, it's so [INAUDIBLE].
+
+00:02:11.790 --> 00:02:12.450
+- Right.
+
+00:02:12.450 --> 00:02:12.949
+Exactly.
+
+00:02:12.949 --> 00:02:14.880
+So it's a way to remove
+all of the annoyance.
+
+00:02:14.880 --> 00:02:18.060
+And you just get to create
+an array of arbitrary length
+
+00:02:18.060 --> 00:02:19.890
+from an array of
+arbitrary length
+
+00:02:19.890 --> 00:02:21.460
+by returning
+[INAUDIBLE] array items.
+
+00:02:21.460 --> 00:02:23.359
+And that's stage
+free in [? TC39. ?]
+
+00:02:23.359 --> 00:02:24.900
+- I'm really looking
+forward to that.
+
+00:02:28.666 --> 00:02:29.790
+We're getting good at this.
+
+00:02:29.790 --> 00:02:31.191
+- Yeah, that's good timing.
+
+00:02:31.191 --> 00:02:33.890
+- Async iterators
+and generators.
+
+00:02:33.890 --> 00:02:35.070
+- OK.
+
+00:02:35.070 --> 00:02:37.720
+Now, I'm aware of iterators.
+
+00:02:37.720 --> 00:02:39.416
+I'm aware of generators.
+
+00:02:39.416 --> 00:02:41.790
+What you've done there is put
+the async in front of them.
+
+00:02:41.790 --> 00:02:42.030
+[INAUDIBLE]
+
+00:02:42.030 --> 00:02:42.610
+- Right.
+
+00:02:42.610 --> 00:02:43.693
+And that's pretty much it.
+
+00:02:43.693 --> 00:02:45.020
+I think we're done.
+

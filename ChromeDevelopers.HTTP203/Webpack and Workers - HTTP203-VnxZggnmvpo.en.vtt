@@ -1,0 +1,356 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.269 --> 00:00:01.810
+JAKE: We need a name
+for the segment.
+
+00:00:01.810 --> 00:00:02.740
+What is it?
+
+00:00:02.740 --> 00:00:06.274
+SURMA: Is it the Two-minute
+Speech Run Over the Web?
+
+00:00:06.274 --> 00:00:07.440
+JAKE: Two-minute Speech Run.
+
+00:00:07.440 --> 00:00:09.189
+That's pretty good,
+because I was thinking
+
+00:00:09.189 --> 00:00:11.950
+of, like, HTTP 203 in Two.
+
+00:00:11.950 --> 00:00:13.829
+SURMA: [LAUGHS]
+
+00:00:13.829 --> 00:00:16.329
+JAKE: But it's just too many
+numbers then, really, isn't it?
+
+00:00:16.329 --> 00:00:17.912
+SURMA: I mean, we
+could drive it home.
+
+00:00:17.912 --> 00:00:20.842
+[MUSIC PLAYING]
+
+00:00:23.640 --> 00:00:25.022
+JAKE: So two minutes.
+
+00:00:25.022 --> 00:00:26.480
+You're going to
+talk about a thing.
+
+00:00:26.480 --> 00:00:29.670
+And what are you
+going to talk about?
+
+00:00:29.670 --> 00:00:32.070
+SURMA: I'm going to talk
+about my recent explorations
+
+00:00:32.070 --> 00:00:33.750
+with Webpack &amp; Workers.
+
+00:00:33.750 --> 00:00:34.980
+JAKE: You have two minutes.
+
+00:00:34.980 --> 00:00:36.300
+Go.
+
+00:00:36.300 --> 00:00:37.042
+SURMA: Workers.
+
+00:00:37.042 --> 00:00:38.250
+JAKE: Yes, I'm aware of them.
+
+00:00:38.250 --> 00:00:41.010
+Still, I think this is a
+copy of exactly what we
+
+00:00:41.010 --> 00:00:42.660
+said in the previous episode.
+
+00:00:42.660 --> 00:00:45.000
+SURMA: But now imagine
+you want to have
+
+00:00:45.000 --> 00:00:46.871
+module loading in Workers.
+
+00:00:46.871 --> 00:00:48.120
+JAKE: Well, you can have that.
+
+00:00:48.120 --> 00:00:50.250
+That's the import function.
+
+00:00:50.250 --> 00:00:53.470
+SURMA: But it's not available
+in Workers anywhere yet.
+
+00:00:53.470 --> 00:00:53.970
+JAKE: Yet.
+
+00:00:53.970 --> 00:00:55.000
+SURMA: So for now, you can't.
+
+00:00:55.000 --> 00:00:55.210
+JAKE: OK.
+
+00:00:55.210 --> 00:00:57.085
+SURMA: But-- so OK,
+cool, let's use something
+
+00:00:57.085 --> 00:00:59.370
+like Rollup or Webpack,
+where you basically
+
+00:00:59.370 --> 00:01:02.880
+transform the syntax into
+just inlining the things
+
+00:01:02.880 --> 00:01:05.800
+or loading with some
+other mechanism.
+
+00:01:05.800 --> 00:01:07.080
+Workers have input script.
+
+00:01:07.080 --> 00:01:09.210
+The main thread has script tags.
+
+00:01:09.210 --> 00:01:10.930
+So we can emulate the behavior.
+
+00:01:10.930 --> 00:01:11.430
+JAKE: Yes.
+
+00:01:11.430 --> 00:01:13.500
+SURMA: So I look into Webpack.
+
+00:01:13.500 --> 00:01:15.900
+And I was trying to
+build a little app that
+
+00:01:15.900 --> 00:01:18.330
+has logic in the Worker
+and UI in the main thread.
+
+00:01:18.330 --> 00:01:22.200
+And had some module that was
+shared between the main thread
+
+00:01:22.200 --> 00:01:22.950
+and the Worker.
+
+00:01:22.950 --> 00:01:23.450
+JAKE: Ah.
+
+00:01:23.450 --> 00:01:24.190
+SURMA: Right?
+
+00:01:24.190 --> 00:01:25.740
+JAKE: And this is something
+you can deal with,
+
+00:01:25.740 --> 00:01:27.865
+because you can have, like
+you say, your main page,
+
+00:01:27.865 --> 00:01:30.390
+just including it as a
+script tag or dynamic import.
+
+00:01:30.390 --> 00:01:32.580
+And your Worker can use
+that horrible import script
+
+00:01:32.580 --> 00:01:33.240
+synchronous function.
+
+00:01:33.240 --> 00:01:33.650
+But it works.
+
+00:01:33.650 --> 00:01:33.860
+SURMA: Exactly.
+
+00:01:33.860 --> 00:01:34.380
+So yeah.
+
+00:01:34.380 --> 00:01:36.330
+And my thought was, Webpack
+should figure this out, right?
+
+00:01:36.330 --> 00:01:38.307
+Like, it should see,
+oh, this is shared code,
+
+00:01:38.307 --> 00:01:39.765
+let's put this in
+a separate file--
+
+00:01:39.765 --> 00:01:41.430
+JAKE: Using its
+commons chunking stuff.
+
+00:01:41.430 --> 00:01:42.060
+SURMA: So exactly.
+
+00:01:42.060 --> 00:01:43.565
+JAKE: And it realizes,
+oh, here's the common bit.
+
+00:01:43.565 --> 00:01:44.450
+I'll put that into
+a separate file.
+
+00:01:44.450 --> 00:01:45.750
+Right, problem solved.
+
+00:01:45.750 --> 00:01:46.740
+SURMA: You would think.
+
+00:01:46.740 --> 00:01:47.340
+Not quite.
+
+00:01:47.340 --> 00:01:47.730
+JAKE: Oh, no.
+
+00:01:47.730 --> 00:01:49.313
+SURMA: So there's a
+slight difference.
+
+00:01:49.313 --> 00:01:51.660
+So because in Webpack
+you have entry points.
+
+00:01:51.660 --> 00:01:54.840
+And these entry points
+are assumed that you
+
+00:01:54.840 --> 00:01:57.000
+take one of them at a time.
+
+00:01:57.000 --> 00:02:00.120
+But with a Worker, you
+actually take an entry point
+
+00:02:00.120 --> 00:02:02.124
+and the Worker entry
+point at the same time.
+
+00:02:02.124 --> 00:02:03.540
+So there's a
+different assumption,
+
+00:02:03.540 --> 00:02:07.620
+because between entry
+points, usually Webpack
+
+00:02:07.620 --> 00:02:09.495
+doesn't put common
+modules in a shared thing.
+
+00:02:09.495 --> 00:02:11.494
+JAKE: So this is when
+you're using Webpack to do
+
+00:02:11.494 --> 00:02:12.850
+the work and magic for you.
+
+00:02:12.850 --> 00:02:12.950
+SURMA: Yeah.
+
+00:02:12.950 --> 00:02:13.800
+JAKE: What if you just
+do it separately--
+
+00:02:13.800 --> 00:02:15.110
+you've got two entry points?
+
+00:02:15.110 --> 00:02:15.660
+One of them actually works.
+
+00:02:15.660 --> 00:02:17.780
+SURMA: Well, it doesn't know
+that they're shared modules.
+
+00:02:17.780 --> 00:02:17.910
+JAKE: Oh.
+
+00:02:17.910 --> 00:02:19.743
+SURMA: Or at least I
+haven't figured it out.
+
+00:02:19.743 --> 00:02:21.510
+So now I have put
+in an issue, and I'm
+
+00:02:21.510 --> 00:02:23.220
+going to discuss with
+the Webpack people
+
+00:02:23.220 --> 00:02:27.300
+how we can support Workers,
+because I feel like I want
+
+00:02:27.300 --> 00:02:28.710
+to make 2018 about Workers.
+
+00:02:28.710 --> 00:02:31.946
+So we need support
+and tooling for that.
+
+00:02:31.946 --> 00:02:34.834
+JAKE: That was very
+good timing, because--
+
+00:02:34.834 --> 00:02:36.350
+[BEEPING]
+
+00:02:36.350 --> 00:02:36.850
+SURMA: Ah.
+
+00:02:36.850 --> 00:02:37.450
+JAKE: Nicely done.
+
+00:02:37.450 --> 00:02:38.370
+SURMA: It's music to my ears.
+
+00:02:38.370 --> 00:02:39.120
+JAKE: Nicely done.
+
+00:02:39.120 --> 00:02:42.400
+It's not as good as the
+one we used at Christmas.
+
+00:02:42.400 --> 00:02:46.030
+If I set that off again, do
+you want to just beatbox?
+
+00:02:46.030 --> 00:02:48.196
+And then we could dub that--
+
+00:02:48.196 --> 00:02:51.760
+so I'll give you
+10, maybe 5 seconds.
+
+00:02:51.760 --> 00:02:55.337
+Five, four, three, two, one.
+
+00:02:55.337 --> 00:02:56.798
+[BEEPING]
+
+00:02:56.798 --> 00:02:59.233
+SURMA: [BEATBOXES]
+
+00:02:59.233 --> 00:03:01.520
+JAKE: [WHISTLES] That's
+just-- that was bad.
+
+00:03:01.520 --> 00:03:03.370
+[LAUGHTER]
+

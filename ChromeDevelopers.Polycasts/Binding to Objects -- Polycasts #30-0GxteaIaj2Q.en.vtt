@@ -1,0 +1,536 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.177
+[ELECTRONIC MUSIC]
+
+00:00:05.177 --> 00:00:07.010
+ROB DODSON: Hey there
+polycasters, Rob here.
+
+00:00:07.010 --> 00:00:09.580
+One of the things that's kind
+of confused me about Polymer's
+
+00:00:09.580 --> 00:00:11.330
+data binding system,
+is how it binds
+
+00:00:11.330 --> 00:00:13.920
+to sub-properties of objects.
+
+00:00:13.920 --> 00:00:16.300
+It seems like you should
+be able to just create
+
+00:00:16.300 --> 00:00:18.390
+a binding on an object
+and its sub-property,
+
+00:00:18.390 --> 00:00:21.000
+and update that in JavaScript,
+and things would just magically
+
+00:00:21.000 --> 00:00:21.600
+work.
+
+00:00:21.600 --> 00:00:24.200
+But reality proves otherwise.
+
+00:00:24.200 --> 00:00:25.960
+So today on Polycast
+what I want to do
+
+00:00:25.960 --> 00:00:28.140
+is go through how the
+sub-property binding system
+
+00:00:28.140 --> 00:00:30.240
+works and show you
+how to do bindings
+
+00:00:30.240 --> 00:00:31.320
+in your Polymer elements.
+
+00:00:31.320 --> 00:00:33.350
+Let's check it out.
+
+00:00:33.350 --> 00:00:35.280
+So here I've got a
+pretty simple element
+
+00:00:35.280 --> 00:00:38.450
+for displaying an
+employee's manager.
+
+00:00:38.450 --> 00:00:39.980
+And the first thing
+I'm going to do
+
+00:00:39.980 --> 00:00:42.377
+is just trim this
+down to the bits
+
+00:00:42.377 --> 00:00:43.710
+that we really want to focus on.
+
+00:00:43.710 --> 00:00:47.170
+So we've got just our HTML and
+just our JavaScript down here.
+
+00:00:47.170 --> 00:00:49.890
+Now, I've got this
+div and inside of here
+
+00:00:49.890 --> 00:00:53.510
+I'm binding to user dot manager.
+
+00:00:53.510 --> 00:00:56.310
+So I'm binding to this
+sub-property of the user
+
+00:00:56.310 --> 00:00:57.730
+object.
+
+00:00:57.730 --> 00:01:00.250
+And what I can do is define
+that user object here
+
+00:01:00.250 --> 00:01:01.950
+on my elements prototype.
+
+00:01:01.950 --> 00:01:05.880
+And I'm just going to have it
+return this value object that
+
+00:01:05.880 --> 00:01:08.880
+sets manager equal to Paul.
+
+00:01:08.880 --> 00:01:10.740
+So, so far so good.
+
+00:01:10.740 --> 00:01:14.220
+Let me drop in a button, so
+that I can change this manager.
+
+00:01:14.220 --> 00:01:15.530
+So I've got this button.
+
+00:01:15.530 --> 00:01:18.200
+And when I tap it, it's
+going to call change manager.
+
+00:01:18.200 --> 00:01:20.330
+And when I implement
+that function,
+
+00:01:20.330 --> 00:01:24.800
+it's just going to set user,
+this dot user's manager
+
+00:01:24.800 --> 00:01:27.390
+property to Fred.
+
+00:01:27.390 --> 00:01:29.940
+So we would expect--
+over here on the right
+
+00:01:29.940 --> 00:01:32.380
+I've got my element
+here, we would
+
+00:01:32.380 --> 00:01:35.030
+expect that when I click this
+button this should update.
+
+00:01:35.030 --> 00:01:37.380
+So let's go in there
+and we'll click it.
+
+00:01:37.380 --> 00:01:39.019
+And, yeah, nothing happens.
+
+00:01:39.019 --> 00:01:41.060
+I'm just sort of clicking
+it over and over again,
+
+00:01:41.060 --> 00:01:43.230
+not getting anything.
+
+00:01:43.230 --> 00:01:44.590
+Well, let's try something else.
+
+00:01:44.590 --> 00:01:47.360
+Instead of trying to
+set the sub-property,
+
+00:01:47.360 --> 00:01:50.750
+let's actually just
+replace the user object
+
+00:01:50.750 --> 00:01:53.230
+with a completely new object.
+
+00:01:53.230 --> 00:01:55.940
+Let's go over here and try that.
+
+00:01:55.940 --> 00:02:00.370
+OK, so that does work, but why?
+
+00:02:00.370 --> 00:02:01.380
+What is going on here?
+
+00:02:01.380 --> 00:02:02.534
+Why are they different?
+
+00:02:02.534 --> 00:02:04.200
+Well, if you remember
+in the last video,
+
+00:02:04.200 --> 00:02:08.669
+I mentioned that when you
+create a binding like this,
+
+00:02:08.669 --> 00:02:10.360
+Polymer is going
+to do two things.
+
+00:02:10.360 --> 00:02:13.830
+It's going to create
+property effects
+
+00:02:13.830 --> 00:02:18.880
+and it's going to create a
+setter for that property.
+
+00:02:18.880 --> 00:02:23.320
+So what happens is, when
+I just completely replace
+
+00:02:23.320 --> 00:02:27.450
+the user object, in that case
+the setter is being called
+
+00:02:27.450 --> 00:02:29.870
+and it's running through all
+of our property effects just
+
+00:02:29.870 --> 00:02:31.410
+like any other property.
+
+00:02:31.410 --> 00:02:35.947
+But when I change a
+sub-property on that object,
+
+00:02:35.947 --> 00:02:38.280
+well, in that case there's
+no reason to call the setter.
+
+00:02:38.280 --> 00:02:41.150
+Because I haven't actually
+said this dot user
+
+00:02:41.150 --> 00:02:42.360
+equals something new.
+
+00:02:42.360 --> 00:02:45.000
+So the setter is not firing,
+therefore the property effects
+
+00:02:45.000 --> 00:02:46.910
+are not running.
+
+00:02:46.910 --> 00:02:50.060
+So what Polymer is doing, when
+it sees this sort of binding,
+
+00:02:50.060 --> 00:02:53.820
+is instead of binding directly
+to that property it's creating
+
+00:02:53.820 --> 00:02:55.750
+what it calls a path binding.
+
+00:02:59.090 --> 00:03:02.230
+And so we've got this-- we've
+got these property effects
+
+00:03:02.230 --> 00:03:04.810
+and they know about
+this path, but we
+
+00:03:04.810 --> 00:03:09.070
+need to tell the system
+that the path has updated.
+
+00:03:09.070 --> 00:03:11.180
+And in order to do that,
+Polymer has actually
+
+00:03:11.180 --> 00:03:15.260
+implemented its own
+method called notifyPath.
+
+00:03:15.260 --> 00:03:17.300
+So we can go in and
+we can imperatively
+
+00:03:17.300 --> 00:03:20.290
+change our user dot
+manager property,
+
+00:03:20.290 --> 00:03:23.990
+and then we can tell the system
+that this path right here
+
+00:03:23.990 --> 00:03:27.160
+has updated, and we
+can pass in that value.
+
+00:03:27.160 --> 00:03:28.640
+And what Polymer
+is going to go do
+
+00:03:28.640 --> 00:03:31.649
+is it's going to look at
+any of its property effects,
+
+00:03:31.649 --> 00:03:33.190
+it's just going to
+loop through them,
+
+00:03:33.190 --> 00:03:35.190
+it's going to find any
+of those property effects
+
+00:03:35.190 --> 00:03:37.180
+that have this path
+inside of them,
+
+00:03:37.180 --> 00:03:39.760
+and it's going to
+update those nodes
+
+00:03:39.760 --> 00:03:43.080
+with this particular value.
+
+00:03:43.080 --> 00:03:45.950
+And in fact, since this
+is such a common task
+
+00:03:45.950 --> 00:03:48.020
+that you would do,
+Polymer actually gives you
+
+00:03:48.020 --> 00:03:51.110
+this little helper method
+called this dot set, which
+
+00:03:51.110 --> 00:03:54.280
+will not only set the property
+for you in JavaScript,
+
+00:03:54.280 --> 00:03:58.020
+but will also call
+notifyPath on your behalf.
+
+00:03:58.020 --> 00:04:01.080
+Now the reason why Polymer
+uses this approach,
+
+00:04:01.080 --> 00:04:05.310
+versus creating a setter for
+all of these sub-properties,
+
+00:04:05.310 --> 00:04:08.490
+is that it would just be
+really, really expensive
+
+00:04:08.490 --> 00:04:11.700
+to try and create a setter
+for every single sub-property
+
+00:04:11.700 --> 00:04:12.980
+in any object.
+
+00:04:12.980 --> 00:04:15.350
+You could imagine if you had
+an object with like 1,000
+
+00:04:15.350 --> 00:04:19.079
+sub-properties, that trying to
+replace all those with setters,
+
+00:04:19.079 --> 00:04:21.079
+if you had multiple
+instances of those elements
+
+00:04:21.079 --> 00:04:22.540
+and they all had
+different objects,
+
+00:04:22.540 --> 00:04:25.350
+the runtime cost would
+be pretty massive.
+
+00:04:25.350 --> 00:04:28.570
+So instead, as kind of a
+compromise between ease
+
+00:04:28.570 --> 00:04:31.810
+of use and performance,
+we have these methods
+
+00:04:31.810 --> 00:04:34.310
+that allow us to work
+with these path bindings.
+
+00:04:34.310 --> 00:04:36.690
+Now this is how you do it
+imperatively, but let me also
+
+00:04:36.690 --> 00:04:38.930
+show you how you can
+do it declaratively
+
+00:04:38.930 --> 00:04:40.450
+through a data binding.
+
+00:04:40.450 --> 00:04:42.900
+Now, here I've got
+the same element,
+
+00:04:42.900 --> 00:04:47.510
+but this time, user dot manager
+is bound to this paper input
+
+00:04:47.510 --> 00:04:51.010
+field and it's also bound
+to this div up here.
+
+00:04:51.010 --> 00:04:53.150
+So, when I go and
+I start typing,
+
+00:04:53.150 --> 00:04:56.530
+it's going to update that
+binding in both places.
+
+00:04:56.530 --> 00:04:59.300
+And what's happening is,
+under the hood when Polymer
+
+00:04:59.300 --> 00:05:02.750
+sees that our paper
+input is updating,
+
+00:05:02.750 --> 00:05:06.200
+it checks this property
+right here and it's like,
+
+00:05:06.200 --> 00:05:08.660
+oh, I see that this
+is a path binding.
+
+00:05:08.660 --> 00:05:10.840
+I see that this is
+some structured data.
+
+00:05:10.840 --> 00:05:14.450
+I'm just going to go ahead
+and call this dot set
+
+00:05:14.450 --> 00:05:16.560
+on the user's behalf,
+because I figure
+
+00:05:16.560 --> 00:05:17.990
+that's what they wanted to do.
+
+00:05:17.990 --> 00:05:19.130
+So there's two ways
+that you can go
+
+00:05:19.130 --> 00:05:20.430
+about updating sub-properties.
+
+00:05:20.430 --> 00:05:23.170
+You can either use
+Polymer's helper methods
+
+00:05:23.170 --> 00:05:26.290
+or you can, if you happen
+to be in a situation
+
+00:05:26.290 --> 00:05:28.650
+where you can do this, you
+can also set up data bindings
+
+00:05:28.650 --> 00:05:31.430
+and have it update
+that way as well.
+
+00:05:31.430 --> 00:05:34.099
+So now you know a bit more
+about binding to objects
+
+00:05:34.099 --> 00:05:35.140
+in your Polymer elements.
+
+00:05:35.140 --> 00:05:37.080
+But there's a lot of
+really cool, meaty topics
+
+00:05:37.080 --> 00:05:38.830
+which we haven't covered
+yet, like binding
+
+00:05:38.830 --> 00:05:41.760
+to arrays, and change records,
+and all that cool stuff.
+
+00:05:41.760 --> 00:05:44.530
+But I'm going to save all
+that for the next episode.
+
+00:05:44.530 --> 00:05:47.550
+Now, for those of you who are
+wondering what a half-pipe has
+
+00:05:47.550 --> 00:05:48.910
+to do with data bindings.
+
+00:05:48.910 --> 00:05:51.140
+Half-pipe has nothing to
+do with data bindings.
+
+00:05:51.140 --> 00:05:53.390
+I just found a freaking
+half-pipe next to my office.
+
+00:05:53.390 --> 00:05:56.180
+This giant chute here.
+
+00:05:56.180 --> 00:05:57.817
+So, if you've
+enjoyed this episode,
+
+00:05:57.817 --> 00:05:59.400
+you've enjoyed our
+half-pipe, consider
+
+00:05:59.400 --> 00:06:01.857
+clicking that subscribe
+button, and maybe catch us
+
+00:06:01.857 --> 00:06:03.190
+on the next episode of Polycast.
+
+00:06:03.190 --> 00:06:05.730
+As always, thank you for
+watching and I'll see you
+
+00:06:05.730 --> 00:06:07.510
+next time.
+

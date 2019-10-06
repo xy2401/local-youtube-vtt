@@ -1,0 +1,902 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.750 --> 00:00:08.969
+IntelliJ IDEA can significantly reduce the
+amount of typing you have to do while coding,
+
+00:00:08.969 --> 00:00:10.740
+in this screencast we're going to look at
+how.
+
+00:00:10.740 --> 00:00:14.060
+&nbsp;
+We'll start with a plain no-frills Java project,
+
+00:00:14.060 --> 00:00:19.150
+so we can see how much work IntelliJ IDEA
+can do for us from an empty start.
+
+00:00:19.150 --> 00:00:23.110
+There's a more detailed look at getting started
+with a new project in another screencast.
+
+00:00:23.110 --> 00:00:24.820
+&nbsp;
+&nbsp;We're also going to use the keyboard for
+
+00:00:24.820 --> 00:00:29.849
+the majority of our navigation, as demonstrated
+in the Navigation screencast.
+
+00:00:29.849 --> 00:00:31.510
+&nbsp;
+IntelliJ IDEA has created a source directory
+
+00:00:31.510 --> 00:00:36.480
+for our production Java code, but we need
+to create a directory for our test code.
+
+00:00:36.480 --> 00:00:42.940
+We can use Alt Insert on Windows or Cmd N
+on Mac to create something new.&nbsp;
+
+00:00:42.940 --> 00:00:47.200
+Here in the project window, we're going to
+create a new directory.&nbsp;
+
+00:00:47.200 --> 00:00:51.149
+We need to tell IntelliJ IDEA this is for
+test code, so we can right click and mark
+
+00:00:51.149 --> 00:00:52.850
+it as a test directory.
+
+00:00:52.850 --> 00:00:54.840
+&nbsp;
+Now we have the basic directories, we can
+
+00:00:54.840 --> 00:00:56.860
+create our Java packages.&nbsp;
+
+00:00:56.860 --> 00:01:02.220
+Typing in the "new" dropdown lets us narrow
+down the options to the ones we want.&nbsp;
+
+00:01:02.220 --> 00:01:06.581
+We can type the full package name here, and
+IntelliJ IDEA will create the correct directory
+
+00:01:06.581 --> 00:01:08.719
+structure for this package.
+
+00:01:08.719 --> 00:01:10.560
+&nbsp;
+Now we have a package, we can create a new
+
+00:01:10.560 --> 00:01:12.560
+Java class.
+
+00:01:12.560 --> 00:01:17.350
+In this first example we're going to create
+a simple Main class.
+
+00:01:17.350 --> 00:01:21.590
+You can see IntelliJ IDEA creates a Main.java
+file with the appropriate package and class
+
+00:01:21.590 --> 00:01:23.280
+declaration already filled in.
+
+00:01:23.280 --> 00:01:26.600
+&nbsp;
+Next, we can use a feature called Live Templates
+
+00:01:26.600 --> 00:01:30.710
+to create standard template code without having
+to type much.&nbsp;
+
+00:01:30.710 --> 00:01:37.750
+We type psvm and press tab or enter, and IntelliJ
+IDEA creates a public static void main method
+
+00:01:37.750 --> 00:01:41.130
+for the class and places our cursor in the
+method body.&nbsp;
+
+00:01:41.130 --> 00:01:43.759
+&nbsp;
+There are a lot of live templates for generating
+
+00:01:43.759 --> 00:01:44.810
+common code.
+
+00:01:44.810 --> 00:01:50.790
+If we want to print something to System.out
+we can type sout and again we have a number
+
+00:01:50.790 --> 00:01:52.190
+of options.&nbsp;
+
+00:01:52.190 --> 00:01:57.190
+We'll select the simplest option, and print
+the String "Hello".
+
+00:01:57.190 --> 00:02:00.460
+Running the class gives us the output we expect.
+
+00:02:00.460 --> 00:02:01.460
+&nbsp;
+---
+
+00:02:01.460 --> 00:02:02.460
+&nbsp;
+That's just a taste of how IntelliJ IDEA can
+
+00:02:02.460 --> 00:02:03.659
+help us while we're coding.&nbsp;
+
+00:02:03.659 --> 00:02:06.680
+Let’s look at a slightly more realistic
+example.&nbsp;
+
+00:02:06.680 --> 00:02:11.599
+We're going to use a Test Driven Development
+approach to create some basic Shape functionality.
+
+00:02:11.599 --> 00:02:15.660
+&nbsp;
+Firstly we'll use Alt + Ins / Cmd + N again
+
+00:02:15.660 --> 00:02:17.459
+to create a new class.&nbsp;
+
+00:02:17.459 --> 00:02:22.780
+When we have our skeleton class, we can use
+Alt and Enter on the class name and select
+
+00:02:22.780 --> 00:02:26.500
+Create Test to create a Unit test for this
+class.&nbsp;
+
+00:02:26.500 --> 00:02:31.050
+IntelliJ IDEA supports a number of standard
+testing libraries out of the box, we're going
+
+00:02:31.050 --> 00:02:33.830
+to use Junit 5 for our tests.&nbsp;
+
+00:02:33.830 --> 00:02:38.879
+The IDE tells us we don't have the JUnit 5
+Jar files on the classpath, and we can use
+
+00:02:38.879 --> 00:02:42.840
+the Fix button to download the libraries from
+Maven central and put them on the classpath
+
+00:02:42.840 --> 00:02:45.629
+so they're available for us to use.&nbsp;
+
+00:02:45.629 --> 00:02:49.320
+We have the option to generate some of the
+structure of the test class, but we don't
+
+00:02:49.320 --> 00:02:51.900
+need to for these examples.
+
+00:02:51.900 --> 00:02:53.569
+&nbsp;
+IntelliJ IDEA adds Assertions as a static
+
+00:02:53.569 --> 00:02:59.580
+import to make it as easy as possible for
+use to write tests that compile straight away.&nbsp;
+
+00:02:59.580 --> 00:03:04.510
+The IDE has created this test file in the
+test sources root in the appropriate package,
+
+00:03:04.510 --> 00:03:07.650
+creating all the appropriate directory structure
+for us.
+
+00:03:07.650 --> 00:03:09.459
+&nbsp;
+We can use generate again to create a new
+
+00:03:09.459 --> 00:03:11.540
+test method.&nbsp;
+
+00:03:11.540 --> 00:03:16.430
+This is annotated with the Junit 5 annotation,
+and IntelliJ IDEA expects us to change the
+
+00:03:16.430 --> 00:03:20.860
+method name to something more meaningful,
+and on pressing Enter our cursor is placed
+
+00:03:20.860 --> 00:03:22.870
+inside the method body.&nbsp;
+
+00:03:22.870 --> 00:03:24.360
+&nbsp;
+IntelliJ IDEA offers a number of different
+
+00:03:24.360 --> 00:03:28.370
+types of code completion that can help us
+as we create the test.&nbsp;
+
+00:03:28.370 --> 00:03:32.270
+Various options are offered by default as
+we type, we don't even need to use a shortcut
+
+00:03:32.270 --> 00:03:34.591
+to bring up the suggestions.&nbsp;
+
+00:03:34.591 --> 00:03:39.060
+Suggestions are not just for types, but are
+even made for variable names.&nbsp;
+
+00:03:39.060 --> 00:03:43.240
+We can provoke suggestions by using Ctrl and
+Space, which gives us basic completion.&nbsp;
+
+00:03:43.240 --> 00:03:44.290
+This generally shows a wide range of possibilities
+that might work in the current location.&nbsp;
+
+00:03:44.290 --> 00:03:48.620
+Using Shift Ctrl Space invokes Smart Completion.&nbsp;
+
+00:03:48.620 --> 00:03:52.760
+This is type-aware and only suggests options
+that are the correct type for the context.&nbsp;
+
+00:03:52.760 --> 00:03:57.310
+In this case, we only had one type that fitted,
+so IntelliJ IDEA automatically selected Square
+
+00:03:57.310 --> 00:03:59.389
+for us.
+
+00:03:59.389 --> 00:04:01.090
+&nbsp;
+Typing a dot will bring up the list of available
+
+00:04:01.090 --> 00:04:03.349
+options on a symbol.
+
+00:04:03.349 --> 00:04:07.090
+If we want to create some new functionality
+on this class, we can choose to ignore what's
+
+00:04:07.090 --> 00:04:10.510
+there already and define our new method name.&nbsp;
+
+00:04:10.510 --> 00:04:14.930
+The editor will warn us that this method doesn't
+exist, but if we press Alt and Enter on this
+
+00:04:14.930 --> 00:04:19.080
+red method we can choose to create this missing
+method.&nbsp;
+
+00:04:19.080 --> 00:04:23.310
+IntelliJ IDEA can use the information we've
+already provided to create the method structure.&nbsp;
+
+00:04:23.310 --> 00:04:28.250
+For example this method returns an int because
+in the test we assign the result of calling
+
+00:04:28.250 --> 00:04:30.400
+this method to an int variable.
+
+00:04:30.400 --> 00:04:32.340
+&nbsp;
+In the spirit of test driven development,
+
+00:04:32.340 --> 00:04:36.650
+we'll leave this as the simplest thing that
+compiles and go back to the test.&nbsp;
+
+00:04:36.650 --> 00:04:39.030
+Now we can define what we expect the result
+to be.&nbsp;
+
+00:04:39.030 --> 00:04:43.240
+Note that IntelliJ IDEA's code completion
+suggestions can work on partial method names
+
+00:04:43.240 --> 00:04:48.310
+and camel case to make it easier to find the
+method we need with minimal typing and minimal
+
+00:04:48.310 --> 00:04:49.310
+risk of misspelling.&nbsp;
+
+00:04:49.310 --> 00:04:52.561
+&nbsp;
+When we run the test we see it fails, but
+
+00:04:52.561 --> 00:04:54.270
+this is expected.&nbsp;
+
+00:04:54.270 --> 00:05:00.080
+Let's go back to the implementation and make
+the simplest change that will fix the test.
+
+00:05:00.080 --> 00:05:03.830
+Now we have a passing test, we can safely
+refactor the code.&nbsp;
+
+00:05:03.830 --> 00:05:08.840
+For example here we might want to move this
+hardcoded value into a field.
+
+00:05:08.840 --> 00:05:14.560
+We can initialise the value in the current
+method, in the field declaration, or in the
+
+00:05:14.560 --> 00:05:17.110
+constructor.&nbsp;
+
+00:05:17.110 --> 00:05:21.180
+We can also uses Alt and Enter to see options
+for changing where we initialise it if we
+
+00:05:21.180 --> 00:05:23.080
+want to.&nbsp;
+
+00:05:23.080 --> 00:05:26.500
+There are other screencasts which go into
+refactoring in more depth, here we've seen
+
+00:05:26.500 --> 00:05:30.910
+a taste of how we can use it to automatically
+generate the code we want.
+
+00:05:30.910 --> 00:05:32.710
+&nbsp;
+We can use refactoring to generate new files
+
+00:05:32.710 --> 00:05:34.630
+for us as well.
+
+00:05:34.630 --> 00:05:38.620
+For example, now we have the Square class
+we might want to create a Shape interface
+
+00:05:38.620 --> 00:05:40.919
+for it to implement.&nbsp;
+
+00:05:40.919 --> 00:05:43.960
+Here I'm using Find Action to call Extract
+Interface.&nbsp;
+
+00:05:43.960 --> 00:05:50.970
+Let's create an interface called Shape, and
+add the getNumberOfSides method to it.&nbsp;
+
+00:05:50.970 --> 00:05:57.320
+We're not going to replace the current usages
+of Square with Shape, but we could if we wanted
+
+00:05:57.320 --> 00:05:58.350
+to.&nbsp;
+
+00:05:58.350 --> 00:06:02.800
+We can see intelliJ IDEA has updated Square
+to implement our new Shape interface, and
+
+00:06:02.800 --> 00:06:07.250
+added the Override annotation to getNumberOfSides.&nbsp;
+
+00:06:07.250 --> 00:06:10.800
+We can see our Shape interface is straightforward.
+
+00:06:10.800 --> 00:06:12.950
+&nbsp;
+Let's create a new type of Shape.&nbsp;
+
+00:06:12.950 --> 00:06:17.560
+This time we're going to create the test class
+before we create the class it is testing.&nbsp;
+
+00:06:17.560 --> 00:06:23.180
+Again we can generate our test method and
+call it something appropriate.&nbsp;
+
+00:06:23.180 --> 00:06:29.940
+We can define a Shape local variable, this
+time we want it to be a new type, Polygon.&nbsp;
+
+00:06:29.940 --> 00:06:35.280
+IntelliJ IDEA lets us create this new class
+using Alt Enter, and places it into the correct
+
+00:06:35.280 --> 00:06:37.600
+directory.&nbsp;
+
+00:06:37.600 --> 00:06:41.600
+Because we are using this from a Shape variable,
+IntelliJ IDEA correctly assumes we want this
+
+00:06:41.600 --> 00:06:44.480
+polygon to implement our Shape interface.&nbsp;
+
+00:06:44.480 --> 00:06:48.930
+The editor is showing an error since Polygon
+doesn't implement the Shape methods yet, we
+
+00:06:48.930 --> 00:06:53.949
+can use Alt and Enter again and select Implement
+Methods to fix this problem.&nbsp;
+
+00:06:53.949 --> 00:06:58.669
+As usual we can accept the simplest implementation
+that compiles in order to continue writing
+
+00:06:58.669 --> 00:06:59.909
+our test.&nbsp;
+
+00:06:59.909 --> 00:07:03.220
+&nbsp;
+In the test, we can continue coding to create
+
+00:07:03.220 --> 00:07:07.479
+the API we want and getting IntelliJ IDEA
+to make the changes we need.&nbsp;
+
+00:07:07.479 --> 00:07:12.630
+The IDE can create fields for constructor
+parameters that aren't currently being used.&nbsp;
+
+00:07:12.630 --> 00:07:18.349
+Once again, now the code compiles we can define
+our test expectations….
+
+00:07:18.349 --> 00:07:21.259
+And re-run the test.&nbsp;
+
+00:07:21.259 --> 00:07:27.990
+Of course it fails, so we return the numberOfSides
+field value from the method and see the test
+
+00:07:27.990 --> 00:07:30.300
+passing as expected.
+
+00:07:30.300 --> 00:07:32.139
+&nbsp;
+Often domain objects like this require some
+
+00:07:32.139 --> 00:07:33.990
+standard methods.
+
+00:07:33.990 --> 00:07:37.880
+We can get IntelliJ IDEA to generate these
+methods for us.&nbsp;
+
+00:07:37.880 --> 00:07:44.139
+For example, we can generate a toString method,
+defining which fields should be included.
+
+00:07:44.139 --> 00:07:47.690
+There are a number of templates we can use
+to create the method, depending upon which
+
+00:07:47.690 --> 00:07:51.270
+standard approach we want to choose.&nbsp;
+
+00:07:51.270 --> 00:07:54.010
+Generated methods are usually placed wherever
+the caret was.&nbsp;
+
+00:07:54.010 --> 00:07:58.300
+Let's use the same process to generate the
+equals and hashCode methods.
+
+00:07:58.300 --> 00:08:03.190
+Again, we have options for the way we want
+the generated method to work.&nbsp;
+
+00:08:03.190 --> 00:08:08.050
+We can choose which fields to include in the
+equals method, and which to use in hashCode.&nbsp;
+
+00:08:08.050 --> 00:08:09.870
+&nbsp;
+While having these methods in a class, and
+
+00:08:09.870 --> 00:08:14.380
+even generating them like this, is quite standard
+for Java programmers, it can lead to a bit
+
+00:08:14.380 --> 00:08:16.820
+of noise and mess in our domain objects.&nbsp;
+
+00:08:16.820 --> 00:08:17.820
+Sometimes we want clear organisation of our
+code in order to understand, for example,
+
+00:08:17.820 --> 00:08:18.820
+which are generated methods and which are
+business logic.&nbsp;
+
+00:08:18.820 --> 00:08:22.410
+We can apply consistent organisation to our
+classes by automatically rearranging our code.&nbsp;
+
+00:08:22.410 --> 00:08:27.370
+Here I'm going to use Find Action to search
+for Rearrange code and to apply it to this
+
+00:08:27.370 --> 00:08:28.850
+class.&nbsp;
+
+00:08:28.850 --> 00:08:32.700
+Here we’re using the default settings for
+code organisation, which has placed the constructor
+
+00:08:32.700 --> 00:08:37.450
+at the top of the class, would put any inner
+classes at the bottom of the file, and will
+
+00:08:37.450 --> 00:08:41.300
+organise fields, for example grouping static
+fields together.
+
+00:08:41.300 --> 00:08:43.019
+&nbsp;
+We can change the existing settings to suit
+
+00:08:43.019 --> 00:08:46.610
+our needs, or even add our own rules.&nbsp;
+
+00:08:46.610 --> 00:08:50.930
+For example, I would like all my getter methods
+to be below any other methods that might contain
+
+00:08:50.930 --> 00:08:54.430
+business logic, since the getters are not
+as important to see.&nbsp;
+
+00:08:54.430 --> 00:08:59.940
+Note that we can use regular expressions to
+define a pattern for method name.&nbsp;
+
+00:08:59.940 --> 00:09:04.221
+Even less important than the getters are the
+other generated methods, so let's create a
+
+00:09:04.221 --> 00:09:08.100
+rule to put them underneath all the other
+types of methods.&nbsp;
+
+00:09:08.100 --> 00:09:12.990
+Now when we re-arrange the code, the getter
+is put above the other generated methods.
+
+00:09:12.990 --> 00:09:15.310
+&nbsp;
+Now we have our basic domain object in place
+
+00:09:15.310 --> 00:09:18.740
+let's create some more business logic and
+see how code generation and code completion
+
+00:09:18.740 --> 00:09:21.160
+helps us here.
+
+00:09:21.160 --> 00:09:23.060
+&nbsp;
+We continue to use the test to drive the design
+
+00:09:23.060 --> 00:09:25.200
+of the API.&nbsp;
+
+00:09:25.200 --> 00:09:29.830
+For this functionality, it makes sense that
+we'll pass in to the Polygon constructor some
+
+00:09:29.830 --> 00:09:36.940
+sort of array or collection that contains
+the lengths of all the sides in the polygon.&nbsp;
+
+00:09:36.940 --> 00:09:39.959
+Here I'm going to use postfix completion to
+define the variable.&nbsp;
+
+00:09:39.959 --> 00:09:45.651
+IntelliJ IDEA offers a range of postfix completion
+options to help generate common code, press
+
+00:09:45.651 --> 00:09:49.440
+the up arrow on the completion list to see
+all the ones that are available for the current
+
+00:09:49.440 --> 00:09:50.470
+context.&nbsp;
+
+00:09:50.470 --> 00:09:53.560
+We'll use var to create a local variable for
+this Polygon.&nbsp;
+
+00:09:53.560 --> 00:09:57.830
+When creating variables, we don't have to
+accept the default type, we can press Shift
+
+00:09:57.830 --> 00:10:01.670
+and Tab to put the focus on the type and see
+which options are available.&nbsp;
+
+00:10:01.670 --> 00:10:05.620
+For this example I don't want to define it
+with the Shape interface, but with the Polygon
+
+00:10:05.620 --> 00:10:06.620
+class itself.&nbsp;
+
+00:10:06.620 --> 00:10:10.339
+&nbsp;
+This constructor doesn't exist yet, so IntelliJ
+
+00:10:10.339 --> 00:10:15.010
+IDEA gives us the option to either modify
+the existing constructor, or to create another
+
+00:10:15.010 --> 00:10:16.560
+constructor.&nbsp;
+
+00:10:16.560 --> 00:10:20.880
+If we choose to modify the existing constructor
+we'll see the Change Signature dialog which
+
+00:10:20.880 --> 00:10:23.680
+lets us customises the method to our needs.&nbsp;
+
+00:10:23.680 --> 00:10:28.180
+We already have a test that uses the existing
+constructor, so for now we're going to create
+
+00:10:28.180 --> 00:10:31.190
+a new constructor that meets the needs of
+this test.&nbsp;
+
+00:10:31.190 --> 00:10:32.500
+We can always refactor later.&nbsp;
+
+00:10:32.500 --> 00:10:35.260
+&nbsp;
+We should do something with both parameters
+
+00:10:35.260 --> 00:10:37.490
+to the new constructor.&nbsp;
+
+00:10:37.490 --> 00:10:41.870
+IntelliJ IDEA recognises that there's a field
+that matches the name of the first constructor
+
+00:10:41.870 --> 00:10:46.170
+parameter, so we can get it to generate the
+code to assign this parameter to the correct
+
+00:10:46.170 --> 00:10:47.170
+field.&nbsp;
+
+00:10:47.170 --> 00:10:51.000
+The second parameter doesn't have a field
+yet, so we'll get IntelliJ IDEA to create
+
+00:10:51.000 --> 00:10:53.920
+it for us.&nbsp;&nbsp;
+
+00:10:53.920 --> 00:10:57.690
+We've created this as a final field,&nbsp; but
+it hasn't been initalised in the field or
+
+00:10:57.690 --> 00:11:00.470
+in the original constructor.&nbsp;
+
+00:11:00.470 --> 00:11:04.950
+We'll get IntelliJ IDEA to initialise this
+field to a zero length array in the original
+
+00:11:04.950 --> 00:11:06.130
+constructor.
+
+00:11:06.130 --> 00:11:08.519
+&nbsp;
+Now the code compiles, we can go ahead and
+
+00:11:08.519 --> 00:11:12.010
+write the rest of the logic for the test.&nbsp;
+
+00:11:12.010 --> 00:11:15.980
+Note that code completion doesn't require
+us to type much at all, especially for methods
+
+00:11:15.980 --> 00:11:18.000
+we've already called in this class.&nbsp;
+
+00:11:18.000 --> 00:11:22.709
+Again, we can use smart completion to suggest
+the methods that return a type that's compatible
+
+00:11:22.709 --> 00:11:27.899
+with this method, but we don't have the method
+we need yet, so let's define its name in this
+
+00:11:27.899 --> 00:11:31.360
+test and created it using Alt and Enter again.&nbsp;
+
+00:11:31.360 --> 00:11:35.640
+We can choose whether the method belongs on
+the interface or the implementation, for now
+
+00:11:35.640 --> 00:11:39.980
+we'll put it on the implementation as we only
+need it on Polygon right now, we can refactor
+
+00:11:39.980 --> 00:11:42.830
+it later if we need to.
+
+00:11:42.830 --> 00:11:47.629
+Once again we want to choose the simplest
+code that works and see the test turn red.
+
+00:11:47.629 --> 00:11:49.070
+&nbsp;
+Now we'r going to implement the logic to make
+
+00:11:49.070 --> 00:11:51.320
+the test pass.&nbsp;
+
+00:11:51.320 --> 00:11:55.520
+We're going to want to iterate over our sideLengths
+field.&nbsp;
+
+00:11:55.520 --> 00:11:59.089
+Iteration is another example of standard code
+that we can generate.&nbsp;
+
+00:11:59.089 --> 00:12:04.360
+For example, we could use postfix completion
+again, in this case the key for iterating
+
+00:12:04.360 --> 00:12:06.570
+is "iter".&nbsp;
+
+00:12:06.570 --> 00:12:11.130
+This will generate a standard foreach to iterate
+over the array.&nbsp;
+
+00:12:11.130 --> 00:12:15.660
+Alternatively there are a number of different
+Live Templates for iteration.&nbsp;
+
+00:12:15.660 --> 00:12:20.720
+We could select "itar", which creates a classic
+for loop to iterate over the array.&nbsp;
+
+00:12:20.720 --> 00:12:24.740
+Or we can use "iter" to create a foreach loop.&nbsp;
+
+00:12:24.740 --> 00:12:27.210
+&nbsp;
+We'll create a simple check to assign the
+
+00:12:27.210 --> 00:12:34.240
+longest value we find to the local variable
+longest.&nbsp;
+
+00:12:34.240 --> 00:12:38.540
+We can use quick fixes to make our code compile
+where necessary.&nbsp;
+
+00:12:38.540 --> 00:12:42.889
+Now we have our business logic, we'll re-run
+the test to see if it passes, which it does.&nbsp;&nbsp;
+
+00:12:42.889 --> 00:12:45.279
+&nbsp;
+Now we have a passing test, we can refactor
+
+00:12:45.279 --> 00:12:49.389
+our code safely knowing we can always run
+the test to make sure it still passes.&nbsp;
+
+00:12:49.389 --> 00:12:54.579
+For example, we could use the Java 8 inspections
+to automatically convert this for loop into
+
+00:12:54.579 --> 00:12:56.709
+a Streams API call.&nbsp;
+
+00:12:56.709 --> 00:13:01.470
+Re-running the test shows this gives the same
+result as the previous code.
+
+00:13:01.470 --> 00:13:03.730
+&nbsp;
+I personally find Streams calls easier to
+
+00:13:03.730 --> 00:13:06.180
+read if each method is on a separate line.
+
+00:13:06.180 --> 00:13:11.649
+Let's select this code and use Alt + Enter
+to adjust how the code is formatted.
+
+00:13:11.649 --> 00:13:15.980
+This settings dialog shows just the settings
+that apply to the selected piece of code.&nbsp;
+
+00:13:15.980 --> 00:13:22.040
+We're going to select Wrap Always on Chained
+Method Calls, you can see the editor previews
+
+00:13:22.040 --> 00:13:26.040
+the formatting changes without us needing
+to save them.&nbsp;
+
+00:13:26.040 --> 00:13:28.920
+We can select Save if we're happy with these
+settings.&nbsp;
+
+00:13:28.920 --> 00:13:30.660
+&nbsp;
+Now the code is formatted this way, I can
+
+00:13:30.660 --> 00:13:32.830
+see the filter criteria more clearly.&nbsp;
+
+00:13:32.830 --> 00:13:37.430
+I have a theory that we don't need this filter,
+since the max method alone will give us what
+
+00:13:37.430 --> 00:13:38.430
+we need.&nbsp;
+
+00:13:38.430 --> 00:13:42.760
+Let's delete this line and re-run the test
+to make sure it all still works.&nbsp;
+
+00:13:42.760 --> 00:13:44.259
+Which it does!
+
+00:13:44.259 --> 00:13:46.860
+&nbsp;
+Finally let's call re-arrange code again to
+
+00:13:46.860 --> 00:13:50.889
+make sure the newly generated method is in
+the right place.
+
+00:13:50.889 --> 00:13:52.820
+&nbsp;
+We've used IntelliJ IDEA's code generation
+
+00:13:52.820 --> 00:13:56.870
+to create standard Java code, so we don't
+have to type in the code we sometimes refer
+
+00:13:56.870 --> 00:13:59.420
+to as boilerplate.&nbsp;
+
+00:13:59.420 --> 00:14:03.120
+We've also used the different types of code
+completion to help us to write the code we
+
+00:14:03.120 --> 00:14:07.740
+need, again reducing the typing required and
+allowing us to focus on the actual problems
+
+00:14:07.740 --> 00:14:08.890
+we're trying to solve.
+
+00:14:08.890 --> 00:14:10.630
+&nbsp;
+Thanks for watching!
+

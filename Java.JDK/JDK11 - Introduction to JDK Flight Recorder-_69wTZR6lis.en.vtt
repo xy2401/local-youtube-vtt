@@ -1,0 +1,3344 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.180 --> 00:00:06.180 align:start position:0%
+ 
+hi<00:00:04.180><c> I'm</c><00:00:04.570><c> Marcus</c><00:00:04.990><c> gremlin</c><00:00:05.500><c> I'm</c><00:00:05.800><c> one</c><00:00:06.010><c> of</c><00:00:06.040><c> the</c>
+
+00:00:06.180 --> 00:00:06.190 align:start position:0%
+hi I'm Marcus gremlin I'm one of the
+ 
+
+00:00:06.190 --> 00:00:07.860 align:start position:0%
+hi I'm Marcus gremlin I'm one of the
+architects<00:00:06.670><c> and</c><00:00:06.910><c> developers</c><00:00:07.000><c> of</c><00:00:07.509><c> the</c><00:00:07.660><c> JDK</c>
+
+00:00:07.860 --> 00:00:07.870 align:start position:0%
+architects and developers of the JDK
+ 
+
+00:00:07.870 --> 00:00:10.140 align:start position:0%
+architects and developers of the JDK
+flight<00:00:08.410><c> recorder</c><00:00:08.889><c> a</c><00:00:09.040><c> feature</c><00:00:09.400><c> included</c><00:00:10.090><c> in</c>
+
+00:00:10.140 --> 00:00:10.150 align:start position:0%
+flight recorder a feature included in
+ 
+
+00:00:10.150 --> 00:00:12.660 align:start position:0%
+flight recorder a feature included in
+JDK<00:00:10.600><c> 11</c><00:00:10.990><c> I'm</c><00:00:11.620><c> going</c><00:00:11.950><c> to</c><00:00:12.070><c> give</c><00:00:12.220><c> you</c><00:00:12.340><c> a</c><00:00:12.370><c> quick</c>
+
+00:00:12.660 --> 00:00:12.670 align:start position:0%
+JDK 11 I'm going to give you a quick
+ 
+
+00:00:12.670 --> 00:00:15.210 align:start position:0%
+JDK 11 I'm going to give you a quick
+overview<00:00:12.880><c> of</c><00:00:13.540><c> what</c><00:00:13.930><c> this</c><00:00:14.110><c> feature</c><00:00:14.290><c> is</c><00:00:14.620><c> what</c><00:00:15.070><c> it</c>
+
+00:00:15.210 --> 00:00:15.220 align:start position:0%
+overview of what this feature is what it
+ 
+
+00:00:15.220 --> 00:00:17.429 align:start position:0%
+overview of what this feature is what it
+is<00:00:15.400><c> decide</c><00:00:15.820><c> to</c><00:00:16.000><c> do</c><00:00:16.150><c> and</c><00:00:16.420><c> give</c><00:00:16.810><c> you</c><00:00:16.900><c> some</c><00:00:17.110><c> hands</c>
+
+00:00:17.429 --> 00:00:17.439 align:start position:0%
+is decide to do and give you some hands
+ 
+
+00:00:17.439 --> 00:00:19.050 align:start position:0%
+is decide to do and give you some hands
+on<00:00:17.529><c> in</c><00:00:17.770><c> order</c><00:00:17.920><c> to</c><00:00:18.070><c> demonstrate</c><00:00:18.580><c> how</c><00:00:18.759><c> it</c><00:00:18.790><c> can</c>
+
+00:00:19.050 --> 00:00:19.060 align:start position:0%
+on in order to demonstrate how it can
+ 
+
+00:00:19.060 --> 00:00:22.310 align:start position:0%
+on in order to demonstrate how it can
+assist<00:00:19.300><c> us</c><00:00:19.570><c> solving</c><00:00:20.320><c> problems</c>
+
+00:00:22.310 --> 00:00:22.320 align:start position:0%
+assist us solving problems
+ 
+
+00:00:22.320 --> 00:00:26.130 align:start position:0%
+assist us solving problems
+what<00:00:23.320><c> is</c><00:00:23.560><c> the</c><00:00:23.859><c> JDK</c><00:00:24.279><c> flight</c><00:00:24.550><c> recorder</c><00:00:25.029><c> the</c><00:00:25.900><c> most</c>
+
+00:00:26.130 --> 00:00:26.140 align:start position:0%
+what is the JDK flight recorder the most
+ 
+
+00:00:26.140 --> 00:00:28.230 align:start position:0%
+what is the JDK flight recorder the most
+intuitive<00:00:26.500><c> way</c><00:00:26.800><c> to</c><00:00:26.920><c> understand</c><00:00:27.609><c> it</c><00:00:27.820><c> is</c><00:00:28.000><c> to</c><00:00:28.029><c> use</c>
+
+00:00:28.230 --> 00:00:28.240 align:start position:0%
+intuitive way to understand it is to use
+ 
+
+00:00:28.240 --> 00:00:30.269 align:start position:0%
+intuitive way to understand it is to use
+the<00:00:28.420><c> analogy</c><00:00:28.840><c> of</c><00:00:28.990><c> the</c><00:00:29.109><c> recording</c><00:00:29.740><c> device</c><00:00:29.890><c> in</c>
+
+00:00:30.269 --> 00:00:30.279 align:start position:0%
+the analogy of the recording device in
+ 
+
+00:00:30.279 --> 00:00:32.670 align:start position:0%
+the analogy of the recording device in
+an<00:00:30.400><c> aircraft</c><00:00:30.550><c> and</c><00:00:31.210><c> just</c><00:00:31.810><c> like</c><00:00:31.960><c> these</c><00:00:32.140><c> devices</c>
+
+00:00:32.670 --> 00:00:32.680 align:start position:0%
+an aircraft and just like these devices
+ 
+
+00:00:32.680 --> 00:00:34.680 align:start position:0%
+an aircraft and just like these devices
+record<00:00:33.129><c> interesting</c><00:00:33.760><c> events</c><00:00:34.059><c> related</c><00:00:34.420><c> to</c><00:00:34.510><c> air</c>
+
+00:00:34.680 --> 00:00:34.690 align:start position:0%
+record interesting events related to air
+ 
+
+00:00:34.690 --> 00:00:37.290 align:start position:0%
+record interesting events related to air
+travel<00:00:35.050><c> flight</c><00:00:36.010><c> records</c><00:00:36.370><c> intended</c><00:00:36.909><c> to</c><00:00:36.970><c> record</c>
+
+00:00:37.290 --> 00:00:37.300 align:start position:0%
+travel flight records intended to record
+ 
+
+00:00:37.300 --> 00:00:40.170 align:start position:0%
+travel flight records intended to record
+events<00:00:37.720><c> related</c><00:00:38.110><c> to</c><00:00:38.140><c> our</c><00:00:38.409><c> programs</c><00:00:39.030><c> what</c><00:00:40.030><c> is</c>
+
+00:00:40.170 --> 00:00:40.180 align:start position:0%
+events related to our programs what is
+ 
+
+00:00:40.180 --> 00:00:42.270 align:start position:0%
+events related to our programs what is
+being<00:00:40.360><c> recorded</c><00:00:40.780><c> our</c><00:00:41.110><c> events</c><00:00:41.710><c> and</c><00:00:41.949><c> we</c><00:00:42.159><c> can</c>
+
+00:00:42.270 --> 00:00:42.280 align:start position:0%
+being recorded our events and we can
+ 
+
+00:00:42.280 --> 00:00:44.130 align:start position:0%
+being recorded our events and we can
+think<00:00:42.460><c> of</c><00:00:42.610><c> an</c><00:00:42.760><c> event</c><00:00:43.089><c> as</c><00:00:43.360><c> some</c><00:00:43.570><c> piece</c><00:00:43.780><c> of</c><00:00:43.809><c> data</c>
+
+00:00:44.130 --> 00:00:44.140 align:start position:0%
+think of an event as some piece of data
+ 
+
+00:00:44.140 --> 00:00:46.579 align:start position:0%
+think of an event as some piece of data
+at<00:00:44.500><c> a</c><00:00:44.559><c> particular</c><00:00:44.860><c> instant</c><00:00:45.670><c> of</c><00:00:45.760><c> time</c>
+
+00:00:46.579 --> 00:00:46.589 align:start position:0%
+at a particular instant of time
+ 
+
+00:00:46.589 --> 00:00:48.960 align:start position:0%
+at a particular instant of time
+recording<00:00:47.589><c> events</c><00:00:47.799><c> using</c><00:00:48.100><c> flight</c><00:00:48.460><c> recorder</c>
+
+00:00:48.960 --> 00:00:48.970 align:start position:0%
+recording events using flight recorder
+ 
+
+00:00:48.970 --> 00:00:51.960 align:start position:0%
+recording events using flight recorder
+allows<00:00:49.870><c> us</c><00:00:50.110><c> to</c><00:00:50.290><c> persist</c><00:00:50.979><c> a</c><00:00:51.100><c> representation</c><00:00:51.879><c> of</c>
+
+00:00:51.960 --> 00:00:51.970 align:start position:0%
+allows us to persist a representation of
+ 
+
+00:00:51.970 --> 00:00:54.359 align:start position:0%
+allows us to persist a representation of
+the<00:00:52.120><c> execution</c><00:00:52.839><c> States</c><00:00:53.199><c> in</c><00:00:53.470><c> time</c><00:00:53.890><c> periods</c>
+
+00:00:54.359 --> 00:00:54.369 align:start position:0%
+the execution States in time periods
+ 
+
+00:00:54.369 --> 00:00:57.060 align:start position:0%
+the execution States in time periods
+just<00:00:54.460><c> before</c><00:00:55.059><c> and</c><00:00:55.299><c> during</c><00:00:55.479><c> a</c><00:00:55.750><c> problem</c><00:00:56.199><c> this</c>
+
+00:00:57.060 --> 00:00:57.070 align:start position:0%
+just before and during a problem this
+ 
+
+00:00:57.070 --> 00:00:59.399 align:start position:0%
+just before and during a problem this
+entails<00:00:57.489><c> we</c><00:00:57.699><c> can</c><00:00:57.879><c> later</c><00:00:58.059><c> go</c><00:00:58.360><c> back</c><00:00:58.540><c> in</c><00:00:58.930><c> time</c><00:00:59.199><c> if</c>
+
+00:00:59.399 --> 00:00:59.409 align:start position:0%
+entails we can later go back in time if
+ 
+
+00:00:59.409 --> 00:01:01.170 align:start position:0%
+entails we can later go back in time if
+you<00:00:59.530><c> will</c><00:00:59.710><c> to</c><00:01:00.070><c> understand</c><00:01:00.580><c> what</c><00:01:00.729><c> was</c><00:01:00.820><c> leading</c>
+
+00:01:01.170 --> 00:01:01.180 align:start position:0%
+you will to understand what was leading
+ 
+
+00:01:01.180 --> 00:01:02.939 align:start position:0%
+you will to understand what was leading
+up<00:01:01.330><c> and</c><00:01:01.540><c> happened</c><00:01:02.199><c> just</c><00:01:02.320><c> prior</c><00:01:02.440><c> to</c><00:01:02.650><c> some</c>
+
+00:01:02.939 --> 00:01:02.949 align:start position:0%
+up and happened just prior to some
+ 
+
+00:01:02.949 --> 00:01:05.300 align:start position:0%
+up and happened just prior to some
+problem<00:01:03.369><c> or</c><00:01:03.610><c> less</c><00:01:03.790><c> than</c><00:01:04.030><c> optimal</c><00:01:04.479><c> situation</c>
+
+00:01:05.300 --> 00:01:05.310 align:start position:0%
+problem or less than optimal situation
+ 
+
+00:01:05.310 --> 00:01:07.709 align:start position:0%
+problem or less than optimal situation
+the<00:01:06.310><c> key</c><00:01:06.490><c> to</c><00:01:06.640><c> flight</c><00:01:06.850><c> record</c><00:01:07.210><c> has</c><00:01:07.359><c> been</c><00:01:07.390><c> able</c>
+
+00:01:07.709 --> 00:01:07.719 align:start position:0%
+the key to flight record has been able
+ 
+
+00:01:07.719 --> 00:01:09.420 align:start position:0%
+the key to flight record has been able
+to<00:01:07.899><c> record</c><00:01:08.200><c> high</c><00:01:08.500><c> quantities</c><00:01:09.130><c> of</c><00:01:09.280><c> information</c>
+
+00:01:09.420 --> 00:01:09.430 align:start position:0%
+to record high quantities of information
+ 
+
+00:01:09.430 --> 00:01:11.580 align:start position:0%
+to record high quantities of information
+while<00:01:10.119><c> keeping</c><00:01:10.600><c> the</c><00:01:10.750><c> overhead</c><00:01:11.289><c> of</c><00:01:11.469><c> the</c>
+
+00:01:11.580 --> 00:01:11.590 align:start position:0%
+while keeping the overhead of the
+ 
+
+00:01:11.590 --> 00:01:14.069 align:start position:0%
+while keeping the overhead of the
+recording<00:01:12.070><c> process</c><00:01:12.280><c> low</c><00:01:12.700><c> the</c><00:01:13.600><c> system</c><00:01:13.990><c> is</c>
+
+00:01:14.069 --> 00:01:14.079 align:start position:0%
+recording process low the system is
+ 
+
+00:01:14.079 --> 00:01:15.630 align:start position:0%
+recording process low the system is
+designed<00:01:14.469><c> to</c><00:01:14.619><c> run</c><00:01:14.770><c> always-on</c><00:01:15.399><c> in</c>
+
+00:01:15.630 --> 00:01:15.640 align:start position:0%
+designed to run always-on in
+ 
+
+00:01:15.640 --> 00:01:18.240 align:start position:0%
+designed to run always-on in
+mission-critical<00:01:16.119><c> environments</c><00:01:17.250><c> another</c>
+
+00:01:18.240 --> 00:01:18.250 align:start position:0%
+mission-critical environments another
+ 
+
+00:01:18.250 --> 00:01:20.039 align:start position:0%
+mission-critical environments another
+very<00:01:18.549><c> important</c><00:01:19.090><c> design</c><00:01:19.359><c> goal</c><00:01:19.600><c> has</c><00:01:19.750><c> been</c><00:01:19.780><c> to</c>
+
+00:01:20.039 --> 00:01:20.049 align:start position:0%
+very important design goal has been to
+ 
+
+00:01:20.049 --> 00:01:22.590 align:start position:0%
+very important design goal has been to
+help<00:01:20.530><c> speed</c><00:01:20.890><c> up</c><00:01:21.100><c> the</c><00:01:21.310><c> time</c><00:01:21.549><c> it</c><00:01:21.789><c> takes</c><00:01:22.060><c> to</c><00:01:22.270><c> start</c>
+
+00:01:22.590 --> 00:01:22.600 align:start position:0%
+help speed up the time it takes to start
+ 
+
+00:01:22.600 --> 00:01:25.319 align:start position:0%
+help speed up the time it takes to start
+the<00:01:22.780><c> process</c><00:01:23.020><c> of</c><00:01:23.350><c> problem</c><00:01:23.770><c> analysis</c><00:01:24.369><c> thereby</c>
+
+00:01:25.319 --> 00:01:25.329 align:start position:0%
+the process of problem analysis thereby
+ 
+
+00:01:25.329 --> 00:01:26.969 align:start position:0%
+the process of problem analysis thereby
+cutting<00:01:25.600><c> the</c><00:01:25.869><c> overall</c><00:01:26.229><c> time</c><00:01:26.500><c> for</c><00:01:26.770><c> issue</c>
+
+00:01:26.969 --> 00:01:26.979 align:start position:0%
+cutting the overall time for issue
+ 
+
+00:01:26.979 --> 00:01:30.209 align:start position:0%
+cutting the overall time for issue
+resolution<00:01:28.320><c> flight</c><00:01:29.320><c> recorder</c><00:01:29.770><c> tries</c><00:01:30.039><c> to</c>
+
+00:01:30.209 --> 00:01:30.219 align:start position:0%
+resolution flight recorder tries to
+ 
+
+00:01:30.219 --> 00:01:31.919 align:start position:0%
+resolution flight recorder tries to
+accomplish<00:01:30.729><c> this</c><00:01:30.939><c> by</c><00:01:31.240><c> recording</c><00:01:31.749><c> information</c>
+
+00:01:31.919 --> 00:01:31.929 align:start position:0%
+accomplish this by recording information
+ 
+
+00:01:31.929 --> 00:01:33.989 align:start position:0%
+accomplish this by recording information
+that<00:01:32.590><c> would</c><00:01:32.710><c> highlight</c><00:01:33.100><c> our</c><00:01:33.369><c> system</c><00:01:33.820><c> from</c>
+
+00:01:33.989 --> 00:01:33.999 align:start position:0%
+that would highlight our system from
+ 
+
+00:01:33.999 --> 00:01:36.599 align:start position:0%
+that would highlight our system from
+many<00:01:34.240><c> different</c><00:01:34.509><c> perspectives</c><00:01:35.429><c> ranging</c><00:01:36.429><c> from</c>
+
+00:01:36.599 --> 00:01:36.609 align:start position:0%
+many different perspectives ranging from
+ 
+
+00:01:36.609 --> 00:01:38.910 align:start position:0%
+many different perspectives ranging from
+informational<00:01:37.420><c> overviews</c><00:01:38.049><c> such</c><00:01:38.350><c> as</c><00:01:38.530><c> command</c>
+
+00:01:38.910 --> 00:01:38.920 align:start position:0%
+informational overviews such as command
+ 
+
+00:01:38.920 --> 00:01:41.219 align:start position:0%
+informational overviews such as command
+line<00:01:39.130><c> parameters</c><00:01:39.759><c> loaded</c><00:01:40.509><c> modules</c><00:01:40.689><c> and</c>
+
+00:01:41.219 --> 00:01:41.229 align:start position:0%
+line parameters loaded modules and
+ 
+
+00:01:41.229 --> 00:01:43.770 align:start position:0%
+line parameters loaded modules and
+system<00:01:41.560><c> properties</c><00:01:42.039><c> to</c><00:01:42.759><c> some</c><00:01:42.969><c> very</c><00:01:43.179><c> detailed</c>
+
+00:01:43.770 --> 00:01:43.780 align:start position:0%
+system properties to some very detailed
+ 
+
+00:01:43.780 --> 00:01:46.830 align:start position:0%
+system properties to some very detailed
+information<00:01:44.439><c> regarding</c><00:01:45.280><c> say</c><00:01:45.640><c> the</c><00:01:46.569><c> time</c>
+
+00:01:46.830 --> 00:01:46.840 align:start position:0%
+information regarding say the time
+ 
+
+00:01:46.840 --> 00:01:49.739 align:start position:0%
+information regarding say the time
+waiting<00:01:47.170><c> to</c><00:01:48.009><c> acquire</c><00:01:48.369><c> a</c><00:01:48.399><c> monitor</c><00:01:48.999><c> or</c><00:01:49.210><c> the</c><00:01:49.539><c> time</c>
+
+00:01:49.739 --> 00:01:49.749 align:start position:0%
+waiting to acquire a monitor or the time
+ 
+
+00:01:49.749 --> 00:01:52.709 align:start position:0%
+waiting to acquire a monitor or the time
+spent<00:01:50.109><c> executing</c><00:01:50.439><c> a</c><00:01:50.920><c> piece</c><00:01:51.100><c> of</c><00:01:51.280><c> code</c><00:01:51.719><c> during</c>
+
+00:01:52.709 --> 00:01:52.719 align:start position:0%
+spent executing a piece of code during
+ 
+
+00:01:52.719 --> 00:01:54.959 align:start position:0%
+spent executing a piece of code during
+subsequent<00:01:53.140><c> analysis</c><00:01:54.009><c> we</c><00:01:54.579><c> can</c><00:01:54.759><c> therefore</c>
+
+00:01:54.959 --> 00:01:54.969 align:start position:0%
+subsequent analysis we can therefore
+ 
+
+00:01:54.969 --> 00:01:56.609 align:start position:0%
+subsequent analysis we can therefore
+start<00:01:55.450><c> out</c><00:01:55.659><c> from</c><00:01:55.869><c> a</c><00:01:55.960><c> holistic</c><00:01:56.439><c> perspective</c>
+
+00:01:56.609 --> 00:01:56.619 align:start position:0%
+start out from a holistic perspective
+ 
+
+00:01:56.619 --> 00:01:59.219 align:start position:0%
+start out from a holistic perspective
+and<00:01:57.219><c> drill</c><00:01:57.549><c> ever</c><00:01:57.819><c> deeper</c><00:01:58.329><c> into</c><00:01:58.689><c> the</c><00:01:58.810><c> relevant</c>
+
+00:01:59.219 --> 00:01:59.229 align:start position:0%
+and drill ever deeper into the relevant
+ 
+
+00:01:59.229 --> 00:02:02.399 align:start position:0%
+and drill ever deeper into the relevant
+details<00:02:00.359><c> JFR</c><00:02:01.359><c> is</c><00:02:01.479><c> especially</c><00:02:01.840><c> up</c><00:02:02.170><c> for</c>
+
+00:02:02.399 --> 00:02:02.409 align:start position:0%
+details JFR is especially up for
+ 
+
+00:02:02.409 --> 00:02:04.950 align:start position:0%
+details JFR is especially up for
+recording<00:02:02.859><c> latencies</c><00:02:03.450><c> where</c><00:02:04.450><c> traditional</c>
+
+00:02:04.950 --> 00:02:04.960 align:start position:0%
+recording latencies where traditional
+ 
+
+00:02:04.960 --> 00:02:07.919 align:start position:0%
+recording latencies where traditional
+profilers<00:02:05.530><c> report</c><00:02:05.950><c> time</c><00:02:06.159><c> executing</c><00:02:06.929><c> j4</c>
+
+00:02:07.919 --> 00:02:07.929 align:start position:0%
+profilers report time executing j4
+ 
+
+00:02:07.929 --> 00:02:09.540 align:start position:0%
+profilers report time executing j4
+records<00:02:08.350><c> a</c><00:02:08.440><c> report</c><00:02:08.770><c> situation</c><00:02:09.280><c> where</c><00:02:09.460><c> the</c>
+
+00:02:09.540 --> 00:02:09.550 align:start position:0%
+records a report situation where the
+ 
+
+00:02:09.550 --> 00:02:12.000 align:start position:0%
+records a report situation where the
+application<00:02:10.119><c> is</c><00:02:10.240><c> not</c><00:02:10.420><c> executing</c><00:02:11.200><c> or</c><00:02:11.590><c> at</c><00:02:11.769><c> least</c>
+
+00:02:12.000 --> 00:02:12.010 align:start position:0%
+application is not executing or at least
+ 
+
+00:02:12.010 --> 00:02:15.240 align:start position:0%
+application is not executing or at least
+not<00:02:12.310><c> as</c><00:02:12.519><c> effective</c><00:02:13.030><c> as</c><00:02:13.060><c> it</c><00:02:13.360><c> could</c><00:02:13.569><c> be</c><00:02:14.250><c> another</c>
+
+00:02:15.240 --> 00:02:15.250 align:start position:0%
+not as effective as it could be another
+ 
+
+00:02:15.250 --> 00:02:16.230 align:start position:0%
+not as effective as it could be another
+design<00:02:15.760><c> goal</c>
+
+00:02:16.230 --> 00:02:16.240 align:start position:0%
+design goal
+ 
+
+00:02:16.240 --> 00:02:18.720 align:start position:0%
+design goal
+to<00:02:16.330><c> provide</c><00:02:16.630><c> insight</c><00:02:17.260><c> into</c><00:02:17.500><c> how</c><00:02:18.130><c> programs</c>
+
+00:02:18.720 --> 00:02:18.730 align:start position:0%
+to provide insight into how programs
+ 
+
+00:02:18.730 --> 00:02:20.850 align:start position:0%
+to provide insight into how programs
+interact<00:02:19.390><c> with</c><00:02:19.600><c> the</c><00:02:19.720><c> execution</c><00:02:20.350><c> environment</c>
+
+00:02:20.850 --> 00:02:20.860 align:start position:0%
+interact with the execution environment
+ 
+
+00:02:20.860 --> 00:02:23.160 align:start position:0%
+interact with the execution environment
+as<00:02:21.040><c> a</c><00:02:21.070><c> whole</c><00:02:21.220><c> as</c><00:02:21.940><c> you</c><00:02:22.690><c> are</c><00:02:22.810><c> most</c><00:02:23.050><c> certainly</c>
+
+00:02:23.160 --> 00:02:23.170 align:start position:0%
+as a whole as you are most certainly
+ 
+
+00:02:23.170 --> 00:02:26.160 align:start position:0%
+as a whole as you are most certainly
+already<00:02:23.740><c> aware</c><00:02:24.310><c> many</c><00:02:24.970><c> problems</c><00:02:25.540><c> we</c><00:02:25.690><c> run</c><00:02:25.900><c> into</c>
+
+00:02:26.160 --> 00:02:26.170 align:start position:0%
+already aware many problems we run into
+ 
+
+00:02:26.170 --> 00:02:29.640 align:start position:0%
+already aware many problems we run into
+are<00:02:26.770><c> not</c><00:02:27.010><c> directly</c><00:02:27.600><c> attributable</c><00:02:28.600><c> to</c><00:02:29.110><c> logical</c>
+
+00:02:29.640 --> 00:02:29.650 align:start position:0%
+are not directly attributable to logical
+ 
+
+00:02:29.650 --> 00:02:31.890 align:start position:0%
+are not directly attributable to logical
+errors<00:02:30.010><c> in</c><00:02:30.160><c> our</c><00:02:30.250><c> programs</c><00:02:30.760><c> but</c><00:02:31.270><c> they</c><00:02:31.450><c> appear</c>
+
+00:02:31.890 --> 00:02:31.900 align:start position:0%
+errors in our programs but they appear
+ 
+
+00:02:31.900 --> 00:02:33.240 align:start position:0%
+errors in our programs but they appear
+because<00:02:32.110><c> of</c><00:02:32.410><c> our</c><00:02:32.470><c> confluence</c><00:02:33.070><c> and</c>
+
+00:02:33.240 --> 00:02:33.250 align:start position:0%
+because of our confluence and
+ 
+
+00:02:33.250 --> 00:02:36.390 align:start position:0%
+because of our confluence and
+manufactures<00:02:33.970><c> in</c><00:02:34.240><c> relations</c><00:02:34.750><c> with</c><00:02:35.400><c> flight</c>
+
+00:02:36.390 --> 00:02:36.400 align:start position:0%
+manufactures in relations with flight
+ 
+
+00:02:36.400 --> 00:02:38.790 align:start position:0%
+manufactures in relations with flight
+recorder<00:02:36.970><c> we</c><00:02:37.480><c> have</c><00:02:37.630><c> a</c><00:02:37.660><c> means</c><00:02:37.990><c> to</c><00:02:38.260><c> capture</c>
+
+00:02:38.790 --> 00:02:38.800 align:start position:0%
+recorder we have a means to capture
+ 
+
+00:02:38.800 --> 00:02:40.620 align:start position:0%
+recorder we have a means to capture
+these<00:02:39.160><c> usually</c><00:02:39.820><c> hard</c><00:02:40.090><c> to</c><00:02:40.180><c> reproduce</c>
+
+00:02:40.620 --> 00:02:40.630 align:start position:0%
+these usually hard to reproduce
+ 
+
+00:02:40.630 --> 00:02:43.260 align:start position:0%
+these usually hard to reproduce
+situations<00:02:41.470><c> where</c><00:02:42.190><c> a</c><00:02:42.220><c> large</c><00:02:42.520><c> portion</c><00:02:42.880><c> only</c>
+
+00:02:43.260 --> 00:02:43.270 align:start position:0%
+situations where a large portion only
+ 
+
+00:02:43.270 --> 00:02:45.030 align:start position:0%
+situations where a large portion only
+seems<00:02:43.690><c> to</c><00:02:43.900><c> surface</c><00:02:44.350><c> in</c><00:02:44.530><c> production</c>
+
+00:02:45.030 --> 00:02:45.040 align:start position:0%
+seems to surface in production
+ 
+
+00:02:45.040 --> 00:02:45.770 align:start position:0%
+seems to surface in production
+environments
+
+00:02:45.770 --> 00:02:45.780 align:start position:0%
+environments
+ 
+
+00:02:45.780 --> 00:02:48.810 align:start position:0%
+environments
+the<00:02:46.780><c> most</c><00:02:46.990><c> common</c><00:02:47.380><c> use</c><00:02:47.410><c> case</c><00:02:47.860><c> is</c><00:02:48.070><c> to</c><00:02:48.190><c> use</c><00:02:48.340><c> JFR</c>
+
+00:02:48.810 --> 00:02:48.820 align:start position:0%
+the most common use case is to use JFR
+ 
+
+00:02:48.820 --> 00:02:51.150 align:start position:0%
+the most common use case is to use JFR
+as<00:02:48.940><c> a</c><00:02:48.970><c> background</c><00:02:49.300><c> recorder</c><00:02:50.170><c> analogous</c><00:02:51.010><c> to</c>
+
+00:02:51.150 --> 00:02:51.160 align:start position:0%
+as a background recorder analogous to
+ 
+
+00:02:51.160 --> 00:02:53.610 align:start position:0%
+as a background recorder analogous to
+the<00:02:51.250><c> recording</c><00:02:51.670><c> device</c><00:02:51.790><c> in</c><00:02:51.940><c> aircraft</c><00:02:52.470><c> we</c><00:02:53.470><c> can</c>
+
+00:02:53.610 --> 00:02:53.620 align:start position:0%
+the recording device in aircraft we can
+ 
+
+00:02:53.620 --> 00:02:54.870 align:start position:0%
+the recording device in aircraft we can
+also<00:02:53.770><c> view</c><00:02:54.040><c> the</c><00:02:54.130><c> flight</c><00:02:54.490><c> recorder</c>
+
+00:02:54.870 --> 00:02:54.880 align:start position:0%
+also view the flight recorder
+ 
+
+00:02:54.880 --> 00:02:56.820 align:start position:0%
+also view the flight recorder
+infrastructure<00:02:55.690><c> as</c><00:02:55.840><c> providing</c><00:02:56.380><c> us</c><00:02:56.500><c> with</c><00:02:56.590><c> an</c>
+
+00:02:56.820 --> 00:02:56.830 align:start position:0%
+infrastructure as providing us with an
+ 
+
+00:02:56.830 --> 00:02:59.580 align:start position:0%
+infrastructure as providing us with an
+always<00:02:57.310><c> available</c><00:02:57.610><c> profiler</c><00:02:58.450><c> ready</c><00:02:59.350><c> to</c>
+
+00:02:59.580 --> 00:02:59.590 align:start position:0%
+always available profiler ready to
+ 
+
+00:02:59.590 --> 00:03:01.440 align:start position:0%
+always available profiler ready to
+record<00:02:59.950><c> more</c><00:03:00.190><c> extensive</c><00:03:00.790><c> information</c><00:03:00.940><c> if</c>
+
+00:03:01.440 --> 00:03:01.450 align:start position:0%
+record more extensive information if
+ 
+
+00:03:01.450 --> 00:03:03.510 align:start position:0%
+record more extensive information if
+needed<00:03:01.690><c> and</c><00:03:02.020><c> maybe</c><00:03:02.470><c> only</c><00:03:02.950><c> for</c><00:03:03.160><c> a</c><00:03:03.190><c> short</c><00:03:03.220><c> period</c>
+
+00:03:03.510 --> 00:03:03.520 align:start position:0%
+needed and maybe only for a short period
+ 
+
+00:03:03.520 --> 00:03:05.610 align:start position:0%
+needed and maybe only for a short period
+of<00:03:03.730><c> time</c><00:03:03.790><c> the</c><00:03:04.420><c> actual</c><00:03:04.810><c> interaction</c><00:03:05.140><c> with</c>
+
+00:03:05.610 --> 00:03:05.620 align:start position:0%
+of time the actual interaction with
+ 
+
+00:03:05.620 --> 00:03:07.860 align:start position:0%
+of time the actual interaction with
+flight<00:03:05.860><c> recorder</c><00:03:06.220><c> is</c><00:03:06.280><c> very</c><00:03:06.490><c> simplistic</c><00:03:06.910><c> the</c>
+
+00:03:07.860 --> 00:03:07.870 align:start position:0%
+flight recorder is very simplistic the
+ 
+
+00:03:07.870 --> 00:03:10.590 align:start position:0%
+flight recorder is very simplistic the
+work<00:03:08.140><c> we</c><00:03:08.410><c> invest</c><00:03:08.860><c> is</c><00:03:09.190><c> done</c><00:03:09.610><c> prior</c><00:03:09.970><c> to</c><00:03:10.300><c> and</c>
+
+00:03:10.590 --> 00:03:10.600 align:start position:0%
+work we invest is done prior to and
+ 
+
+00:03:10.600 --> 00:03:12.600 align:start position:0%
+work we invest is done prior to and
+after<00:03:10.960><c> getting</c><00:03:11.650><c> the</c><00:03:11.770><c> recording</c><00:03:12.220><c> system</c>
+
+00:03:12.600 --> 00:03:12.610 align:start position:0%
+after getting the recording system
+ 
+
+00:03:12.610 --> 00:03:15.600 align:start position:0%
+after getting the recording system
+running<00:03:12.850><c> in</c><00:03:13.570><c> the</c><00:03:14.140><c> former</c><00:03:14.530><c> case</c><00:03:14.740><c> we</c><00:03:15.160><c> designer</c>
+
+00:03:15.600 --> 00:03:15.610 align:start position:0%
+running in the former case we designer
+ 
+
+00:03:15.610 --> 00:03:18.570 align:start position:0%
+running in the former case we designer
+events<00:03:16.240><c> and</c><00:03:16.450><c> metadata</c><00:03:16.960><c> using</c><00:03:17.440><c> the</c><00:03:17.740><c> api's</c><00:03:18.220><c> and</c>
+
+00:03:18.570 --> 00:03:18.580 align:start position:0%
+events and metadata using the api's and
+ 
+
+00:03:18.580 --> 00:03:21.000 align:start position:0%
+events and metadata using the api's and
+in<00:03:19.150><c> the</c><00:03:19.300><c> latter</c><00:03:19.480><c> we</c><00:03:20.080><c> make</c><00:03:20.320><c> use</c><00:03:20.650><c> of</c><00:03:20.680><c> the</c>
+
+00:03:21.000 --> 00:03:21.010 align:start position:0%
+in the latter we make use of the
+ 
+
+00:03:21.010 --> 00:03:23.430 align:start position:0%
+in the latter we make use of the
+recorded<00:03:21.520><c> information</c><00:03:21.670><c> in</c><00:03:22.510><c> order</c><00:03:22.810><c> to</c><00:03:22.990><c> improve</c>
+
+00:03:23.430 --> 00:03:23.440 align:start position:0%
+recorded information in order to improve
+ 
+
+00:03:23.440 --> 00:03:25.230 align:start position:0%
+recorded information in order to improve
+our<00:03:23.710><c> understanding</c><00:03:24.460><c> of</c><00:03:24.550><c> a</c><00:03:24.640><c> system</c><00:03:25.090><c> at</c><00:03:25.210><c> a</c>
+
+00:03:25.230 --> 00:03:25.240 align:start position:0%
+our understanding of a system at a
+ 
+
+00:03:25.240 --> 00:03:26.850 align:start position:0%
+our understanding of a system at a
+particular<00:03:25.600><c> time</c><00:03:26.050><c> or</c><00:03:26.410><c> in</c><00:03:26.680><c> a</c><00:03:26.710><c> particular</c>
+
+00:03:26.850 --> 00:03:26.860 align:start position:0%
+particular time or in a particular
+ 
+
+00:03:26.860 --> 00:03:29.250 align:start position:0%
+particular time or in a particular
+situation<00:03:27.370><c> and</c><00:03:27.970><c> this</c><00:03:28.840><c> can</c><00:03:29.050><c> be</c><00:03:29.140><c> especially</c>
+
+00:03:29.250 --> 00:03:29.260 align:start position:0%
+situation and this can be especially
+ 
+
+00:03:29.260 --> 00:03:31.860 align:start position:0%
+situation and this can be especially
+helpful<00:03:29.950><c> in</c><00:03:30.190><c> production</c><00:03:30.640><c> environments</c><00:03:31.180><c> to</c>
+
+00:03:31.860 --> 00:03:31.870 align:start position:0%
+helpful in production environments to
+ 
+
+00:03:31.870 --> 00:03:34.200 align:start position:0%
+helpful in production environments to
+get<00:03:32.020><c> data</c><00:03:32.260><c> out</c><00:03:32.530><c> from</c><00:03:32.590><c> flight</c><00:03:33.250><c> recorder</c><00:03:33.760><c> we</c>
+
+00:03:34.200 --> 00:03:34.210 align:start position:0%
+get data out from flight recorder we
+ 
+
+00:03:34.210 --> 00:03:35.940 align:start position:0%
+get data out from flight recorder we
+instruct<00:03:34.630><c> it</c><00:03:34.750><c> to</c><00:03:34.780><c> dump</c><00:03:35.140><c> the</c><00:03:35.320><c> information</c><00:03:35.830><c> that</c>
+
+00:03:35.940 --> 00:03:35.950 align:start position:0%
+instruct it to dump the information that
+ 
+
+00:03:35.950 --> 00:03:38.220 align:start position:0%
+instruct it to dump the information that
+has<00:03:36.070><c> already</c><00:03:36.250><c> recorded</c><00:03:37.090><c> and</c><00:03:37.270><c> this</c><00:03:37.750><c> produces</c><00:03:38.170><c> a</c>
+
+00:03:38.220 --> 00:03:38.230 align:start position:0%
+has already recorded and this produces a
+ 
+
+00:03:38.230 --> 00:03:40.650 align:start position:0%
+has already recorded and this produces a
+binary<00:03:38.560><c> file</c><00:03:39.010><c> which</c><00:03:39.850><c> we</c><00:03:40.030><c> can</c><00:03:40.240><c> view</c><00:03:40.420><c> as</c><00:03:40.630><c> a</c>
+
+00:03:40.650 --> 00:03:40.660 align:start position:0%
+binary file which we can view as a
+ 
+
+00:03:40.660 --> 00:03:43.800 align:start position:0%
+binary file which we can view as a
+database<00:03:41.080><c> in</c><00:03:41.470><c> compressed</c><00:03:41.950><c> format</c><00:03:42.490><c> we</c><00:03:43.270><c> can</c><00:03:43.510><c> use</c>
+
+00:03:43.800 --> 00:03:43.810 align:start position:0%
+database in compressed format we can use
+ 
+
+00:03:43.810 --> 00:03:46.380 align:start position:0%
+database in compressed format we can use
+programmatic<00:03:44.590><c> api's</c><00:03:45.070><c> for</c><00:03:45.580><c> interacting</c><00:03:46.240><c> with</c>
+
+00:03:46.380 --> 00:03:46.390 align:start position:0%
+programmatic api's for interacting with
+ 
+
+00:03:46.390 --> 00:03:48.240 align:start position:0%
+programmatic api's for interacting with
+this<00:03:46.510><c> file</c><00:03:46.810><c> and</c><00:03:47.080><c> this</c><00:03:47.440><c> can</c><00:03:47.620><c> be</c><00:03:47.710><c> useful</c><00:03:48.070><c> if</c><00:03:48.160><c> you</c>
+
+00:03:48.240 --> 00:03:48.250 align:start position:0%
+this file and this can be useful if you
+ 
+
+00:03:48.250 --> 00:03:49.710 align:start position:0%
+this file and this can be useful if you
+already<00:03:48.610><c> have</c><00:03:48.730><c> some</c><00:03:48.970><c> sense</c><00:03:49.240><c> of</c><00:03:49.420><c> what</c><00:03:49.570><c> we're</c>
+
+00:03:49.710 --> 00:03:49.720 align:start position:0%
+already have some sense of what we're
+ 
+
+00:03:49.720 --> 00:03:53.310 align:start position:0%
+already have some sense of what we're
+looking<00:03:49.870><c> for</c><00:03:50.400><c> but</c><00:03:51.400><c> mostly</c><00:03:51.820><c> you</c><00:03:51.970><c> don't</c><00:03:52.320><c> like</c>
+
+00:03:53.310 --> 00:03:53.320 align:start position:0%
+looking for but mostly you don't like
+ 
+
+00:03:53.320 --> 00:03:55.410 align:start position:0%
+looking for but mostly you don't like
+any<00:03:53.500><c> good</c><00:03:53.680><c> profile</c><00:03:54.160><c> you</c><00:03:54.250><c> put</c><00:03:54.460><c> to</c><00:03:54.580><c> use</c><00:03:54.760><c> it</c><00:03:55.150><c> will</c>
+
+00:03:55.410 --> 00:03:55.420 align:start position:0%
+any good profile you put to use it will
+ 
+
+00:03:55.420 --> 00:03:57.420 align:start position:0%
+any good profile you put to use it will
+almost<00:03:55.630><c> invariably</c><00:03:56.470><c> point</c><00:03:56.860><c> you</c><00:03:57.070><c> somewhere</c>
+
+00:03:57.420 --> 00:03:57.430 align:start position:0%
+almost invariably point you somewhere
+ 
+
+00:03:57.430 --> 00:03:59.430 align:start position:0%
+almost invariably point you somewhere
+when<00:03:57.700><c> you</c><00:03:57.910><c> have</c><00:03:58.210><c> no</c><00:03:58.420><c> idea</c><00:03:58.750><c> of</c><00:03:58.870><c> even</c><00:03:59.140><c> start</c>
+
+00:03:59.430 --> 00:03:59.440 align:start position:0%
+when you have no idea of even start
+ 
+
+00:03:59.440 --> 00:04:01.710 align:start position:0%
+when you have no idea of even start
+looking<00:03:59.470><c> in</c><00:04:00.460><c> these</c><00:04:00.700><c> situations</c><00:04:01.330><c> we</c><00:04:01.690><c> can</c>
+
+00:04:01.710 --> 00:04:01.720 align:start position:0%
+looking in these situations we can
+ 
+
+00:04:01.720 --> 00:04:04.200 align:start position:0%
+looking in these situations we can
+enlist<00:04:02.170><c> the</c><00:04:02.320><c> help</c><00:04:02.350><c> of</c><00:04:02.710><c> a</c><00:04:02.830><c> GUI</c><00:04:03.070><c> to</c><00:04:03.670><c> assist</c><00:04:04.000><c> us</c>
+
+00:04:04.200 --> 00:04:04.210 align:start position:0%
+enlist the help of a GUI to assist us
+ 
+
+00:04:04.210 --> 00:04:06.960 align:start position:0%
+enlist the help of a GUI to assist us
+manage<00:04:04.720><c> and</c><00:04:04.990><c> better</c><00:04:05.830><c> understand</c><00:04:06.550><c> the</c><00:04:06.700><c> large</c>
+
+00:04:06.960 --> 00:04:06.970 align:start position:0%
+manage and better understand the large
+ 
+
+00:04:06.970 --> 00:04:11.160 align:start position:0%
+manage and better understand the large
+data<00:04:07.330><c> sets</c><00:04:07.690><c> and</c><00:04:07.960><c> relations</c><00:04:09.810><c> so</c><00:04:10.810><c> let's</c><00:04:10.960><c> use</c>
+
+00:04:11.160 --> 00:04:11.170 align:start position:0%
+data sets and relations so let's use
+ 
+
+00:04:11.170 --> 00:04:15.330 align:start position:0%
+data sets and relations so let's use
+Jakob<00:04:11.590><c> and</c><00:04:13.380><c> we</c><00:04:14.380><c> will</c><00:04:14.500><c> use</c><00:04:14.620><c> Jacob</c><00:04:15.010><c> and</c><00:04:15.130><c> Pitt</c>
+
+00:04:15.330 --> 00:04:15.340 align:start position:0%
+Jakob and we will use Jacob and Pitt
+ 
+
+00:04:15.340 --> 00:04:19.289 align:start position:0%
+Jakob and we will use Jacob and Pitt
+help<00:04:16.560><c> and</c><00:04:17.560><c> we</c><00:04:17.799><c> can</c><00:04:17.950><c> see</c><00:04:18.130><c> five</c><00:04:18.430><c> commands</c><00:04:19.030><c> for</c>
+
+00:04:19.289 --> 00:04:19.299 align:start position:0%
+help and we can see five commands for
+ 
+
+00:04:19.299 --> 00:04:23.970 align:start position:0%
+help and we can see five commands for
+interacting<00:04:20.020><c> with</c><00:04:20.049><c> JFR</c><00:04:22.320><c> the</c><00:04:23.320><c> command</c><00:04:23.770><c> to</c>
+
+00:04:23.970 --> 00:04:23.980 align:start position:0%
+interacting with JFR the command to
+ 
+
+00:04:23.980 --> 00:04:29.030 align:start position:0%
+interacting with JFR the command to
+start<00:04:24.220><c> recording</c><00:04:24.610><c> is</c><00:04:25.030><c> called</c><00:04:25.270><c> j4</c><00:04:25.750><c> start</c>
+
+00:04:29.030 --> 00:04:29.040 align:start position:0%
+ 
+ 
+
+00:04:29.040 --> 00:04:31.620 align:start position:0%
+ 
+here<00:04:30.040><c> I've</c><00:04:30.160><c> given</c><00:04:30.550><c> this</c><00:04:30.699><c> first</c><00:04:31.030><c> recording</c><00:04:31.570><c> a</c>
+
+00:04:31.620 --> 00:04:31.630 align:start position:0%
+here I've given this first recording a
+ 
+
+00:04:31.630 --> 00:04:34.290 align:start position:0%
+here I've given this first recording a
+name<00:04:31.870><c> called</c><00:04:32.320><c> continuous</c><00:04:33.009><c> because</c><00:04:33.729><c> this</c><00:04:34.060><c> will</c>
+
+00:04:34.290 --> 00:04:34.300 align:start position:0%
+name called continuous because this will
+ 
+
+00:04:34.300 --> 00:04:36.150 align:start position:0%
+name called continuous because this will
+be<00:04:34.449><c> the</c><00:04:34.570><c> recording</c><00:04:35.080><c> we</c><00:04:35.229><c> will</c><00:04:35.440><c> have</c><00:04:35.650><c> running</c><00:04:36.070><c> in</c>
+
+00:04:36.150 --> 00:04:36.160 align:start position:0%
+be the recording we will have running in
+ 
+
+00:04:36.160 --> 00:04:39.540 align:start position:0%
+be the recording we will have running in
+the<00:04:36.250><c> background</c><00:04:37.590><c> by</c><00:04:38.590><c> having</c><00:04:38.919><c> this</c><00:04:39.039><c> recording</c>
+
+00:04:39.540 --> 00:04:39.550 align:start position:0%
+the background by having this recording
+ 
+
+00:04:39.550 --> 00:04:42.270 align:start position:0%
+the background by having this recording
+running<00:04:39.910><c> we</c><00:04:40.630><c> can</c><00:04:40.660><c> send</c><00:04:41.050><c> requests</c><00:04:41.590><c> to</c><00:04:41.710><c> dump</c><00:04:42.009><c> the</c>
+
+00:04:42.270 --> 00:04:42.280 align:start position:0%
+running we can send requests to dump the
+ 
+
+00:04:42.280 --> 00:04:44.430 align:start position:0%
+running we can send requests to dump the
+recorded<00:04:42.729><c> information</c><00:04:42.850><c> anytime</c><00:04:43.840><c> we</c><00:04:43.990><c> like</c><00:04:44.169><c> and</c>
+
+00:04:44.430 --> 00:04:44.440 align:start position:0%
+recorded information anytime we like and
+ 
+
+00:04:44.440 --> 00:04:46.650 align:start position:0%
+recorded information anytime we like and
+that<00:04:44.500><c> is</c><00:04:44.949><c> exactly</c><00:04:45.400><c> what</c><00:04:45.610><c> we'll</c><00:04:45.789><c> do</c><00:04:45.970><c> here</c><00:04:46.270><c> after</c>
+
+00:04:46.650 --> 00:04:46.660 align:start position:0%
+that is exactly what we'll do here after
+ 
+
+00:04:46.660 --> 00:04:49.249 align:start position:0%
+that is exactly what we'll do here after
+letting<00:04:46.840><c> it</c><00:04:47.020><c> record</c><00:04:47.410><c> for</c><00:04:47.560><c> a</c><00:04:47.590><c> while</c>
+
+00:04:49.249 --> 00:04:49.259 align:start position:0%
+letting it record for a while
+ 
+
+00:04:49.259 --> 00:04:52.260 align:start position:0%
+letting it record for a while
+we<00:04:50.259><c> use</c><00:04:50.500><c> the</c><00:04:50.710><c> j4</c><00:04:51.100><c> dump</c><00:04:51.370><c> command</c><00:04:51.789><c> to</c><00:04:51.970><c> get</c><00:04:52.120><c> the</c>
+
+00:04:52.260 --> 00:04:52.270 align:start position:0%
+we use the j4 dump command to get the
+ 
+
+00:04:52.270 --> 00:04:54.930 align:start position:0%
+we use the j4 dump command to get the
+information<00:04:52.449><c> from</c><00:04:52.960><c> flight</c><00:04:53.320><c> recorder</c><00:04:53.940><c> so</c>
+
+00:04:54.930 --> 00:04:54.940 align:start position:0%
+information from flight recorder so
+ 
+
+00:04:54.940 --> 00:04:57.930 align:start position:0%
+information from flight recorder so
+let's<00:04:55.120><c> use</c><00:04:55.300><c> that</c><00:04:55.330><c> here</c><00:04:55.840><c> j4</c><00:04:56.440><c> dump</c><00:04:56.940><c> name</c>
+
+00:04:57.930 --> 00:04:57.940 align:start position:0%
+let's use that here j4 dump name
+ 
+
+00:04:57.940 --> 00:05:01.620 align:start position:0%
+let's use that here j4 dump name
+continues<00:04:59.130><c> file</c><00:05:00.130><c> name</c><00:05:00.400><c> and</c><00:05:00.639><c> let's</c><00:05:01.270><c> call</c><00:05:01.449><c> this</c>
+
+00:05:01.620 --> 00:05:01.630 align:start position:0%
+continues file name and let's call this
+ 
+
+00:05:01.630 --> 00:05:08.159 align:start position:0%
+continues file name and let's call this
+one<00:05:02.130><c> discovery</c><00:05:03.130><c> doc</c><00:05:03.460><c> j4</c><00:05:06.360><c> that's</c><00:05:07.360><c> again</c><00:05:07.690><c> issued</c>
+
+00:05:08.159 --> 00:05:08.169 align:start position:0%
+one discovery doc j4 that's again issued
+ 
+
+00:05:08.169 --> 00:05:11.279 align:start position:0%
+one discovery doc j4 that's again issued
+the<00:05:08.289><c> j4</c><00:05:08.800><c> check</c><00:05:09.130><c> command</c><00:05:09.990><c> notice</c><00:05:10.990><c> here</c><00:05:11.260><c> that</c>
+
+00:05:11.279 --> 00:05:11.289 align:start position:0%
+the j4 check command notice here that
+ 
+
+00:05:11.289 --> 00:05:13.770 align:start position:0%
+the j4 check command notice here that
+the<00:05:11.560><c> dump</c><00:05:11.830><c> operation</c><00:05:12.460><c> we</c><00:05:12.550><c> just</c><00:05:12.789><c> completed</c><00:05:13.210><c> is</c>
+
+00:05:13.770 --> 00:05:13.780 align:start position:0%
+the dump operation we just completed is
+ 
+
+00:05:13.780 --> 00:05:15.540 align:start position:0%
+the dump operation we just completed is
+non-destructive<00:05:14.320><c> in</c><00:05:14.919><c> the</c><00:05:15.010><c> sense</c><00:05:15.250><c> that</c><00:05:15.340><c> we</c>
+
+00:05:15.540 --> 00:05:15.550 align:start position:0%
+non-destructive in the sense that we
+ 
+
+00:05:15.550 --> 00:05:16.950 align:start position:0%
+non-destructive in the sense that we
+still<00:05:15.789><c> have</c><00:05:15.970><c> a</c><00:05:16.000><c> background</c><00:05:16.479><c> recording</c>
+
+00:05:16.950 --> 00:05:16.960 align:start position:0%
+still have a background recording
+ 
+
+00:05:16.960 --> 00:05:19.560 align:start position:0%
+still have a background recording
+running<00:05:17.520><c> now</c><00:05:18.520><c> just</c><00:05:18.760><c> a</c><00:05:18.850><c> quick</c><00:05:18.970><c> note</c><00:05:19.270><c> in</c><00:05:19.479><c> the</c>
+
+00:05:19.560 --> 00:05:19.570 align:start position:0%
+running now just a quick note in the
+ 
+
+00:05:19.570 --> 00:05:23.339 align:start position:0%
+running now just a quick note in the
+file<00:05:19.840><c> we</c><00:05:20.050><c> just</c><00:05:20.349><c> dumped</c><00:05:20.860><c> a</c><00:05:22.169><c> recording</c><00:05:23.169><c> file</c>
+
+00:05:23.339 --> 00:05:23.349 align:start position:0%
+file we just dumped a recording file
+ 
+
+00:05:23.349 --> 00:05:26.490 align:start position:0%
+file we just dumped a recording file
+contains<00:05:23.800><c> much</c><00:05:24.099><c> structure</c><00:05:24.789><c> in</c><00:05:25.180><c> this</c><00:05:26.050><c> example</c>
+
+00:05:26.490 --> 00:05:26.500 align:start position:0%
+contains much structure in this example
+ 
+
+00:05:26.500 --> 00:05:29.670 align:start position:0%
+contains much structure in this example
+here<00:05:27.099><c> we</c><00:05:27.460><c> have</c><00:05:27.490><c> a</c><00:05:27.639><c> sample</c><00:05:28.210><c> file</c><00:05:28.419><c> of</c><00:05:28.720><c> about</c><00:05:29.139><c> five</c>
+
+00:05:29.670 --> 00:05:29.680 align:start position:0%
+here we have a sample file of about five
+ 
+
+00:05:29.680 --> 00:05:33.750 align:start position:0%
+here we have a sample file of about five
+Meg's<00:05:30.039><c> in</c><00:05:30.280><c> size</c><00:05:30.990><c> I've</c><00:05:31.990><c> used</c><00:05:32.349><c> the</c><00:05:32.530><c> API</c><00:05:32.680><c> sin</c><00:05:33.250><c> JDK</c>
+
+00:05:33.750 --> 00:05:33.760 align:start position:0%
+Meg's in size I've used the API sin JDK
+ 
+
+00:05:33.760 --> 00:05:36.330 align:start position:0%
+Meg's in size I've used the API sin JDK
+J<00:05:33.970><c> for</c><00:05:34.240><c> consumer</c><00:05:34.960><c> to</c><00:05:35.410><c> reconstruct</c><00:05:36.160><c> the</c>
+
+00:05:36.330 --> 00:05:36.340 align:start position:0%
+J for consumer to reconstruct the
+ 
+
+00:05:36.340 --> 00:05:38.969 align:start position:0%
+J for consumer to reconstruct the
+relational<00:05:36.940><c> information</c><00:05:37.260><c> into</c><00:05:38.260><c> two</c><00:05:38.470><c> standard</c>
+
+00:05:38.969 --> 00:05:38.979 align:start position:0%
+relational information into two standard
+ 
+
+00:05:38.979 --> 00:05:42.930 align:start position:0%
+relational information into two standard
+file<00:05:39.250><c> formats</c><00:05:39.729><c> JSON</c><00:05:40.449><c> and</c><00:05:40.630><c> XML</c><00:05:41.400><c> the</c><00:05:42.400><c> file</c><00:05:42.669><c> size</c>
+
+00:05:42.930 --> 00:05:42.940 align:start position:0%
+file formats JSON and XML the file size
+ 
+
+00:05:42.940 --> 00:05:45.450 align:start position:0%
+file formats JSON and XML the file size
+listings<00:05:43.510><c> give</c><00:05:44.080><c> testimony</c><00:05:44.530><c> to</c><00:05:44.830><c> the</c><00:05:45.039><c> fact</c><00:05:45.070><c> that</c>
+
+00:05:45.450 --> 00:05:45.460 align:start position:0%
+listings give testimony to the fact that
+ 
+
+00:05:45.460 --> 00:05:48.180 align:start position:0%
+listings give testimony to the fact that
+although<00:05:45.849><c> the</c><00:05:46.240><c> the</c><00:05:46.510><c> file</c><00:05:47.139><c> can</c><00:05:47.440><c> be</c><00:05:47.470><c> transformed</c>
+
+00:05:48.180 --> 00:05:48.190 align:start position:0%
+although the the file can be transformed
+ 
+
+00:05:48.190 --> 00:05:50.250 align:start position:0%
+although the the file can be transformed
+into<00:05:48.310><c> these</c><00:05:48.610><c> are</c><00:05:48.789><c> the</c><00:05:48.909><c> format's</c><00:05:49.330><c> you</c><00:05:49.960><c> need</c><00:05:50.139><c> to</c>
+
+00:05:50.250 --> 00:05:50.260 align:start position:0%
+into these are the format's you need to
+ 
+
+00:05:50.260 --> 00:05:54.089 align:start position:0%
+into these are the format's you need to
+be<00:05:50.380><c> aware</c><00:05:50.590><c> of</c><00:05:50.650><c> the</c><00:05:50.860><c> size</c><00:05:51.070><c> overheads</c><00:05:53.039><c> now</c><00:05:54.039><c> we</c>
+
+00:05:54.089 --> 00:05:54.099 align:start position:0%
+be aware of the size overheads now we
+ 
+
+00:05:54.099 --> 00:05:55.980 align:start position:0%
+be aware of the size overheads now we
+will<00:05:54.370><c> start</c><00:05:54.639><c> our</c><00:05:54.789><c> analysis</c><00:05:55.389><c> and</c><00:05:55.630><c> in</c><00:05:55.720><c> order</c><00:05:55.930><c> to</c>
+
+00:05:55.980 --> 00:05:55.990 align:start position:0%
+will start our analysis and in order to
+ 
+
+00:05:55.990 --> 00:05:57.750 align:start position:0%
+will start our analysis and in order to
+properly<00:05:56.530><c> understand</c><00:05:57.099><c> the</c><00:05:57.159><c> vast</c><00:05:57.430><c> amount</c><00:05:57.699><c> of</c>
+
+00:05:57.750 --> 00:05:57.760 align:start position:0%
+properly understand the vast amount of
+ 
+
+00:05:57.760 --> 00:05:59.879 align:start position:0%
+properly understand the vast amount of
+information<00:05:57.940><c> we</c><00:05:58.360><c> have</c><00:05:58.479><c> at</c><00:05:58.599><c> our</c><00:05:59.050><c> disposal</c><00:05:59.169><c> we</c>
+
+00:05:59.879 --> 00:05:59.889 align:start position:0%
+information we have at our disposal we
+ 
+
+00:05:59.889 --> 00:06:01.589 align:start position:0%
+information we have at our disposal we
+prefer<00:06:00.490><c> to</c><00:06:00.520><c> use</c><00:06:00.729><c> a</c><00:06:00.760><c> GUI</c><00:06:01.030><c> tool</c><00:06:01.240><c> that</c><00:06:01.510><c> will</c>
+
+00:06:01.589 --> 00:06:01.599 align:start position:0%
+prefer to use a GUI tool that will
+ 
+
+00:06:01.599 --> 00:06:04.500 align:start position:0%
+prefer to use a GUI tool that will
+assist<00:06:01.870><c> us</c><00:06:02.050><c> with</c><00:06:02.199><c> the</c><00:06:02.320><c> analysis</c><00:06:02.740><c> process</c><00:06:03.510><c> we</c>
+
+00:06:04.500 --> 00:06:04.510 align:start position:0%
+assist us with the analysis process we
+ 
+
+00:06:04.510 --> 00:06:06.480 align:start position:0%
+assist us with the analysis process we
+will<00:06:04.630><c> use</c><00:06:04.780><c> JDK</c><00:06:05.349><c> Mission</c><00:06:05.710><c> Control</c><00:06:05.949><c> which</c><00:06:06.190><c> is</c><00:06:06.340><c> an</c>
+
+00:06:06.480 --> 00:06:06.490 align:start position:0%
+will use JDK Mission Control which is an
+ 
+
+00:06:06.490 --> 00:06:08.930 align:start position:0%
+will use JDK Mission Control which is an
+excellent<00:06:06.789><c> tool</c><00:06:07.090><c> for</c><00:06:07.300><c> doing</c><00:06:07.389><c> just</c><00:06:07.570><c> this</c><00:06:07.930><c> and</c>
+
+00:06:08.930 --> 00:06:08.940 align:start position:0%
+excellent tool for doing just this and
+ 
+
+00:06:08.940 --> 00:06:11.969 align:start position:0%
+excellent tool for doing just this and
+just<00:06:09.940><c> us</c><00:06:10.090><c> with</c><00:06:10.330><c> flight</c><00:06:10.659><c> recorder</c><00:06:11.139><c> with</c><00:06:11.590><c> four</c>
+
+00:06:11.969 --> 00:06:11.979 align:start position:0%
+just us with flight recorder with four
+ 
+
+00:06:11.979 --> 00:06:14.790 align:start position:0%
+just us with flight recorder with four
+JDK<00:06:12.400><c> 11</c><00:06:12.820><c> JDK</c><00:06:13.510><c> Mission</c><00:06:13.780><c> Control</c><00:06:13.960><c> has</c><00:06:14.139><c> been</c><00:06:14.380><c> open</c>
+
+00:06:14.790 --> 00:06:14.800 align:start position:0%
+JDK 11 JDK Mission Control has been open
+ 
+
+00:06:14.800 --> 00:06:16.589 align:start position:0%
+JDK 11 JDK Mission Control has been open
+source<00:06:15.039><c> and</c><00:06:15.250><c> donated</c><00:06:15.639><c> by</c><00:06:15.729><c> Oracle</c><00:06:16.150><c> to</c><00:06:16.270><c> the</c><00:06:16.389><c> open</c>
+
+00:06:16.589 --> 00:06:16.599 align:start position:0%
+source and donated by Oracle to the open
+ 
+
+00:06:16.599 --> 00:06:19.620 align:start position:0%
+source and donated by Oracle to the open
+JDK<00:06:16.720><c> community</c><00:06:17.520><c> we</c><00:06:18.520><c> will</c><00:06:18.669><c> be</c><00:06:18.789><c> using</c><00:06:19.120><c> an</c><00:06:19.240><c> early</c>
+
+00:06:19.620 --> 00:06:19.630 align:start position:0%
+JDK community we will be using an early
+ 
+
+00:06:19.630 --> 00:06:21.950 align:start position:0%
+JDK community we will be using an early
+access<00:06:19.780><c> version</c><00:06:20.020><c> of</c><00:06:20.560><c> Mission</c><00:06:20.949><c> Control</c>
+
+00:06:21.950 --> 00:06:21.960 align:start position:0%
+access version of Mission Control
+ 
+
+00:06:21.960 --> 00:06:25.830 align:start position:0%
+access version of Mission Control
+let's<00:06:22.960><c> click</c><00:06:23.229><c> the</c><00:06:23.409><c> threads</c><00:06:23.710><c> tab</c><00:06:24.419><c> here</c><00:06:25.419><c> to</c><00:06:25.720><c> the</c>
+
+00:06:25.830 --> 00:06:25.840 align:start position:0%
+let's click the threads tab here to the
+ 
+
+00:06:25.840 --> 00:06:27.629 align:start position:0%
+let's click the threads tab here to the
+left<00:06:26.080><c> we</c><00:06:26.620><c> can</c><00:06:26.650><c> see</c><00:06:26.830><c> threads</c><00:06:27.280><c> being</c>
+
+00:06:27.629 --> 00:06:27.639 align:start position:0%
+left we can see threads being
+ 
+
+00:06:27.639 --> 00:06:30.390 align:start position:0%
+left we can see threads being
+represented<00:06:28.270><c> as</c><00:06:28.419><c> rows</c><00:06:28.690><c> in</c><00:06:28.960><c> a</c><00:06:29.050><c> table</c><00:06:29.260><c> each</c><00:06:30.070><c> row</c>
+
+00:06:30.390 --> 00:06:30.400 align:start position:0%
+represented as rows in a table each row
+ 
+
+00:06:30.400 --> 00:06:31.710 align:start position:0%
+represented as rows in a table each row
+is<00:06:30.550><c> projected</c><00:06:31.120><c> onto</c><00:06:31.270><c> the</c><00:06:31.479><c> graph</c>
+
+00:06:31.710 --> 00:06:31.720 align:start position:0%
+is projected onto the graph
+ 
+
+00:06:31.720 --> 00:06:33.990 align:start position:0%
+is projected onto the graph
+representative<00:06:32.710><c> execution</c><00:06:33.400><c> state</c><00:06:33.639><c> for</c><00:06:33.909><c> that</c>
+
+00:06:33.990 --> 00:06:34.000 align:start position:0%
+representative execution state for that
+ 
+
+00:06:34.000 --> 00:06:37.170 align:start position:0%
+representative execution state for that
+particular<00:06:34.270><c> thread</c><00:06:34.750><c> in</c><00:06:35.080><c> the</c><00:06:36.070><c> graph</c><00:06:36.250><c> itself</c><00:06:36.669><c> we</c>
+
+00:06:37.170 --> 00:06:37.180 align:start position:0%
+particular thread in the graph itself we
+ 
+
+00:06:37.180 --> 00:06:39.060 align:start position:0%
+particular thread in the graph itself we
+can<00:06:37.300><c> see</c><00:06:37.360><c> time</c><00:06:37.779><c> plotted</c><00:06:38.260><c> along</c><00:06:38.409><c> the</c><00:06:38.680><c> x-axis</c>
+
+00:06:39.060 --> 00:06:39.070 align:start position:0%
+can see time plotted along the x-axis
+ 
+
+00:06:39.070 --> 00:06:41.940 align:start position:0%
+can see time plotted along the x-axis
+these<00:06:39.909><c> graphs</c><00:06:40.240><c> remind</c><00:06:40.659><c> me</c><00:06:40.810><c> of</c><00:06:40.840><c> sonar</c><00:06:41.260><c> graphs</c>
+
+00:06:41.940 --> 00:06:41.950 align:start position:0%
+these graphs remind me of sonar graphs
+ 
+
+00:06:41.950 --> 00:06:43.950 align:start position:0%
+these graphs remind me of sonar graphs
+you<00:06:42.370><c> know</c><00:06:42.490><c> the</c><00:06:42.640><c> kind</c><00:06:42.910><c> they</c><00:06:43.060><c> use</c><00:06:43.090><c> in</c><00:06:43.450><c> underwater</c>
+
+00:06:43.950 --> 00:06:43.960 align:start position:0%
+you know the kind they use in underwater
+ 
+
+00:06:43.960 --> 00:06:47.040 align:start position:0%
+you know the kind they use in underwater
+seabed<00:06:44.590><c> explorations</c><00:06:45.340><c> and</c><00:06:45.760><c> just</c><00:06:46.600><c> like</c><00:06:46.780><c> Sona</c>
+
+00:06:47.040 --> 00:06:47.050 align:start position:0%
+seabed explorations and just like Sona
+ 
+
+00:06:47.050 --> 00:06:48.990 align:start position:0%
+seabed explorations and just like Sona
+grafts<00:06:47.410><c> help</c><00:06:47.740><c> to</c><00:06:47.920><c> pick</c><00:06:48.130><c> the</c><00:06:48.280><c> contours</c><00:06:48.820><c> of</c>
+
+00:06:48.990 --> 00:06:49.000 align:start position:0%
+grafts help to pick the contours of
+ 
+
+00:06:49.000 --> 00:06:51.330 align:start position:0%
+grafts help to pick the contours of
+something<00:06:49.390><c> we</c><00:06:49.480><c> cannot</c><00:06:49.750><c> directly</c><00:06:49.930><c> observe</c><00:06:50.530><c> so</c>
+
+00:06:51.330 --> 00:06:51.340 align:start position:0%
+something we cannot directly observe so
+ 
+
+00:06:51.340 --> 00:06:53.880 align:start position:0%
+something we cannot directly observe so
+jf4<00:06:51.820><c> can</c><00:06:52.060><c> help</c><00:06:52.240><c> us</c><00:06:52.360><c> see</c><00:06:52.540><c> contours</c><00:06:53.110><c> of</c><00:06:53.350><c> hard</c><00:06:53.710><c> to</c>
+
+00:06:53.880 --> 00:06:53.890 align:start position:0%
+jf4 can help us see contours of hard to
+ 
+
+00:06:53.890 --> 00:06:56.960 align:start position:0%
+jf4 can help us see contours of hard to
+observe<00:06:54.300><c> problematic</c><00:06:55.300><c> execution</c><00:06:55.930><c> patterns</c>
+
+00:06:56.960 --> 00:06:56.970 align:start position:0%
+observe problematic execution patterns
+ 
+
+00:06:56.970 --> 00:06:59.930 align:start position:0%
+observe problematic execution patterns
+we<00:06:57.970><c> also</c><00:06:58.090><c> see</c><00:06:58.330><c> quite</c><00:06:58.360><c> a</c><00:06:58.600><c> number</c><00:06:58.810><c> of</c><00:06:58.960><c> red</c><00:06:59.200><c> dots</c>
+
+00:06:59.930 --> 00:06:59.940 align:start position:0%
+we also see quite a number of red dots
+ 
+
+00:06:59.940 --> 00:07:03.300 align:start position:0%
+we also see quite a number of red dots
+these<00:07:00.940><c> red</c><00:07:01.210><c> dots</c><00:07:01.420><c> are</c><00:07:01.630><c> events</c><00:07:02.140><c> let's</c><00:07:02.890><c> inspect</c>
+
+00:07:03.300 --> 00:07:03.310 align:start position:0%
+these red dots are events let's inspect
+ 
+
+00:07:03.310 --> 00:07:07.800 align:start position:0%
+these red dots are events let's inspect
+what<00:07:03.580><c> kind</c><00:07:03.790><c> of</c><00:07:03.850><c> event</c><00:07:04.150><c> it</c><00:07:04.300><c> is</c><00:07:06.150><c> Java</c><00:07:07.150><c> monitor</c>
+
+00:07:07.800 --> 00:07:07.810 align:start position:0%
+what kind of event it is Java monitor
+ 
+
+00:07:07.810 --> 00:07:11.280 align:start position:0%
+what kind of event it is Java monitor
+blocked<00:07:09.300><c> besides</c><00:07:10.300><c> giving</c><00:07:10.690><c> us</c><00:07:10.810><c> information</c>
+
+00:07:11.280 --> 00:07:11.290 align:start position:0%
+blocked besides giving us information
+ 
+
+00:07:11.290 --> 00:07:14.190 align:start position:0%
+blocked besides giving us information
+about<00:07:11.800><c> how</c><00:07:12.130><c> long</c><00:07:12.820><c> this</c><00:07:13.210><c> thread</c><00:07:13.600><c> was</c><00:07:13.810><c> blocked</c>
+
+00:07:14.190 --> 00:07:14.200 align:start position:0%
+about how long this thread was blocked
+ 
+
+00:07:14.200 --> 00:07:16.470 align:start position:0%
+about how long this thread was blocked
+before<00:07:14.620><c> acquiring</c><00:07:14.890><c> on</c><00:07:15.130><c> the</c><00:07:15.220><c> monitor</c><00:07:15.640><c> it</c><00:07:16.330><c> also</c>
+
+00:07:16.470 --> 00:07:16.480 align:start position:0%
+before acquiring on the monitor it also
+ 
+
+00:07:16.480 --> 00:07:18.150 align:start position:0%
+before acquiring on the monitor it also
+gives<00:07:16.810><c> us</c><00:07:16.960><c> information</c><00:07:17.230><c> about</c><00:07:17.530><c> the</c><00:07:17.770><c> monitor</c>
+
+00:07:18.150 --> 00:07:18.160 align:start position:0%
+gives us information about the monitor
+ 
+
+00:07:18.160 --> 00:07:20.250 align:start position:0%
+gives us information about the monitor
+itself<00:07:18.550><c> for</c><00:07:19.360><c> example</c><00:07:19.420><c> it</c><00:07:19.780><c> gives</c><00:07:19.900><c> us</c><00:07:20.140><c> the</c>
+
+00:07:20.250 --> 00:07:20.260 align:start position:0%
+itself for example it gives us the
+ 
+
+00:07:20.260 --> 00:07:22.320 align:start position:0%
+itself for example it gives us the
+instance<00:07:20.740><c> of</c><00:07:20.860><c> the</c><00:07:20.980><c> monitor</c><00:07:21.400><c> that</c><00:07:21.910><c> is</c><00:07:22.090><c> it's</c>
+
+00:07:22.320 --> 00:07:22.330 align:start position:0%
+instance of the monitor that is it's
+ 
+
+00:07:22.330 --> 00:07:24.840 align:start position:0%
+instance of the monitor that is it's
+represented<00:07:22.960><c> by</c><00:07:23.050><c> the</c><00:07:23.110><c> monitor</c><00:07:23.500><c> address</c><00:07:23.950><c> it</c>
+
+00:07:24.840 --> 00:07:24.850 align:start position:0%
+represented by the monitor address it
+ 
+
+00:07:24.850 --> 00:07:26.190 align:start position:0%
+represented by the monitor address it
+also<00:07:24.970><c> gives</c><00:07:25.270><c> us</c><00:07:25.450><c> the</c><00:07:25.570><c> class</c><00:07:25.810><c> for</c><00:07:26.080><c> this</c>
+
+00:07:26.190 --> 00:07:26.200 align:start position:0%
+also gives us the class for this
+ 
+
+00:07:26.200 --> 00:07:29.100 align:start position:0%
+also gives us the class for this
+instance<00:07:26.680><c> and</c><00:07:26.890><c> here</c><00:07:27.310><c> it</c><00:07:27.790><c> is</c><00:07:27.850><c> a</c><00:07:28.210><c> Java</c><00:07:28.480><c> util</c><00:07:28.840><c> hash</c>
+
+00:07:29.100 --> 00:07:29.110 align:start position:0%
+instance and here it is a Java util hash
+ 
+
+00:07:29.110 --> 00:07:32.130 align:start position:0%
+instance and here it is a Java util hash
+table<00:07:29.970><c> in</c><00:07:30.970><c> addition</c><00:07:31.210><c> it</c><00:07:31.750><c> gives</c><00:07:32.020><c> us</c>
+
+00:07:32.130 --> 00:07:32.140 align:start position:0%
+table in addition it gives us
+ 
+
+00:07:32.140 --> 00:07:34.020 align:start position:0%
+table in addition it gives us
+information<00:07:32.320><c> about</c><00:07:32.890><c> what</c><00:07:33.130><c> thread</c><00:07:33.670><c> was</c><00:07:33.910><c> the</c>
+
+00:07:34.020 --> 00:07:34.030 align:start position:0%
+information about what thread was the
+ 
+
+00:07:34.030 --> 00:07:36.920 align:start position:0%
+information about what thread was the
+previous<00:07:34.300><c> owner</c><00:07:34.750><c> of</c><00:07:35.050><c> the</c><00:07:35.230><c> monitor</c><00:07:35.760><c> when</c>
+
+00:07:36.920 --> 00:07:36.930 align:start position:0%
+previous owner of the monitor when
+ 
+
+00:07:36.930 --> 00:07:40.320 align:start position:0%
+previous owner of the monitor when
+monitor<00:07:37.930><c> blocked</c><00:07:38.200><c> events</c><00:07:38.740><c> line</c><00:07:39.220><c> up</c><00:07:39.520><c> like</c><00:07:40.060><c> this</c>
+
+00:07:40.320 --> 00:07:40.330 align:start position:0%
+monitor blocked events line up like this
+ 
+
+00:07:40.330 --> 00:07:43.110 align:start position:0%
+monitor blocked events line up like this
+vertically<00:07:41.020><c> it's</c><00:07:41.920><c> a</c><00:07:42.070><c> clear</c><00:07:42.370><c> indication</c><00:07:43.000><c> of</c><00:07:43.030><c> a</c>
+
+00:07:43.110 --> 00:07:43.120 align:start position:0%
+vertically it's a clear indication of a
+ 
+
+00:07:43.120 --> 00:07:46.320 align:start position:0%
+vertically it's a clear indication of a
+bottleneck<00:07:43.830><c> it</c><00:07:44.830><c> looks</c><00:07:45.190><c> like</c><00:07:45.490><c> most</c><00:07:45.880><c> threads</c>
+
+00:07:46.320 --> 00:07:46.330 align:start position:0%
+bottleneck it looks like most threads
+ 
+
+00:07:46.330 --> 00:07:48.150 align:start position:0%
+bottleneck it looks like most threads
+needs<00:07:46.660><c> to</c><00:07:46.840><c> acquire</c><00:07:47.140><c> this</c><00:07:47.320><c> particular</c><00:07:47.680><c> monitor</c>
+
+00:07:48.150 --> 00:07:48.160 align:start position:0%
+needs to acquire this particular monitor
+ 
+
+00:07:48.160 --> 00:07:50.970 align:start position:0%
+needs to acquire this particular monitor
+in<00:07:48.430><c> order</c><00:07:48.550><c> to</c><00:07:48.850><c> proceed</c><00:07:49.600><c> with</c><00:07:49.810><c> execution</c><00:07:50.740><c> down</c>
+
+00:07:50.970 --> 00:07:50.980 align:start position:0%
+in order to proceed with execution down
+ 
+
+00:07:50.980 --> 00:07:54.260 align:start position:0%
+in order to proceed with execution down
+the<00:07:51.430><c> right</c><00:07:51.640><c> that</c><00:07:52.180><c> is</c><00:07:52.300><c> along</c><00:07:52.630><c> the</c><00:07:52.690><c> time</c><00:07:53.050><c> axis</c>
+
+00:07:54.260 --> 00:07:54.270 align:start position:0%
+the right that is along the time axis
+ 
+
+00:07:54.270 --> 00:07:59.130 align:start position:0%
+the right that is along the time axis
+let's<00:07:55.270><c> select</c><00:07:55.510><c> one</c><00:07:55.660><c> of</c><00:07:55.780><c> these</c><00:07:55.930><c> events</c><00:07:58.140><c> here</c>
+
+00:07:59.130 --> 00:07:59.140 align:start position:0%
+let's select one of these events here
+ 
+
+00:07:59.140 --> 00:08:00.810 align:start position:0%
+let's select one of these events here
+the<00:07:59.470><c> stack</c><00:07:59.740><c> trace</c><00:07:59.920><c> view</c><00:08:00.040><c> provides</c><00:08:00.610><c> us</c><00:08:00.790><c> with</c>
+
+00:08:00.810 --> 00:08:00.820 align:start position:0%
+the stack trace view provides us with
+ 
+
+00:08:00.820 --> 00:08:02.850 align:start position:0%
+the stack trace view provides us with
+great<00:08:01.270><c> contextual</c><00:08:01.930><c> information</c><00:08:02.170><c> we</c>
+
+00:08:02.850 --> 00:08:02.860 align:start position:0%
+great contextual information we
+ 
+
+00:08:02.860 --> 00:08:04.740 align:start position:0%
+great contextual information we
+instantly<00:08:03.580><c> see</c><00:08:03.790><c> that</c><00:08:03.820><c> this</c><00:08:04.180><c> thread</c><00:08:04.540><c> is</c>
+
+00:08:04.740 --> 00:08:04.750 align:start position:0%
+instantly see that this thread is
+ 
+
+00:08:04.750 --> 00:08:06.480 align:start position:0%
+instantly see that this thread is
+blocked<00:08:05.050><c> while</c><00:08:05.350><c> execute</c><00:08:05.830><c> in</c><00:08:05.950><c> this</c><00:08:06.130><c> particular</c>
+
+00:08:06.480 --> 00:08:06.490 align:start position:0%
+blocked while execute in this particular
+ 
+
+00:08:06.490 --> 00:08:09.570 align:start position:0%
+blocked while execute in this particular
+path<00:08:07.740><c> mission</c><00:08:08.740><c> controls</c><00:08:09.070><c> are</c><00:08:09.280><c> provides</c>
+
+00:08:09.570 --> 00:08:09.580 align:start position:0%
+path mission controls are provides
+ 
+
+00:08:09.580 --> 00:08:12.030 align:start position:0%
+path mission controls are provides
+another<00:08:09.940><c> view</c><00:08:10.240><c> over</c><00:08:10.750><c> locks</c><00:08:11.050><c> so</c><00:08:11.590><c> let's</c><00:08:11.800><c> check</c>
+
+00:08:12.030 --> 00:08:12.040 align:start position:0%
+another view over locks so let's check
+ 
+
+00:08:12.040 --> 00:08:15.800 align:start position:0%
+another view over locks so let's check
+that<00:08:12.280><c> one</c><00:08:12.430><c> as</c><00:08:12.550><c> well</c>
+
+00:08:15.800 --> 00:08:15.810 align:start position:0%
+ 
+ 
+
+00:08:15.810 --> 00:08:19.260 align:start position:0%
+ 
+and<00:08:16.810><c> now</c><00:08:17.290><c> let's</c><00:08:17.560><c> check</c><00:08:17.770><c> the</c><00:08:17.980><c> code</c><00:08:18.310><c> related</c><00:08:19.150><c> to</c>
+
+00:08:19.260 --> 00:08:19.270 align:start position:0%
+and now let's check the code related to
+ 
+
+00:08:19.270 --> 00:08:24.790 align:start position:0%
+and now let's check the code related to
+this
+
+00:08:24.790 --> 00:08:24.800 align:start position:0%
+ 
+ 
+
+00:08:24.800 --> 00:08:27.550 align:start position:0%
+ 
+why<00:08:25.400><c> indeed</c><00:08:25.759><c> it</c><00:08:26.449><c> looks</c><00:08:26.509><c> like</c><00:08:26.960><c> we're</c><00:08:27.110><c> using</c><00:08:27.289><c> a</c>
+
+00:08:27.550 --> 00:08:27.560 align:start position:0%
+why indeed it looks like we're using a
+ 
+
+00:08:27.560 --> 00:08:29.740 align:start position:0%
+why indeed it looks like we're using a
+plain<00:08:27.830><c> old</c><00:08:28.099><c> hash</c><00:08:28.400><c> table</c><00:08:28.910><c> to</c><00:08:29.090><c> store</c><00:08:29.300><c> our</c><00:08:29.539><c> log</c>
+
+00:08:29.740 --> 00:08:29.750 align:start position:0%
+plain old hash table to store our log
+ 
+
+00:08:29.750 --> 00:08:32.560 align:start position:0%
+plain old hash table to store our log
+entries<00:08:30.639><c> with</c><00:08:31.639><c> hash</c><00:08:31.849><c> table</c><00:08:32.360><c> being</c>
+
+00:08:32.560 --> 00:08:32.570 align:start position:0%
+entries with hash table being
+ 
+
+00:08:32.570 --> 00:08:34.719 align:start position:0%
+entries with hash table being
+synchronized<00:08:33.260><c> we</c><00:08:33.860><c> immediately</c><00:08:34.310><c> see</c><00:08:34.610><c> our</c>
+
+00:08:34.719 --> 00:08:34.729 align:start position:0%
+synchronized we immediately see our
+ 
+
+00:08:34.729 --> 00:08:37.240 align:start position:0%
+synchronized we immediately see our
+mistake<00:08:35.089><c> let's</c><00:08:36.050><c> change</c><00:08:36.289><c> it</c><00:08:36.500><c> to</c><00:08:36.529><c> a</c><00:08:36.709><c> concurrent</c>
+
+00:08:37.240 --> 00:08:37.250 align:start position:0%
+mistake let's change it to a concurrent
+ 
+
+00:08:37.250 --> 00:08:40.180 align:start position:0%
+mistake let's change it to a concurrent
+hash<00:08:37.279><c> map</c><00:08:37.700><c> instead</c><00:08:38.620><c> we're</c><00:08:39.620><c> just</c><00:08:39.649><c> about</c><00:08:40.010><c> to</c>
+
+00:08:40.180 --> 00:08:40.190 align:start position:0%
+hash map instead we're just about to
+ 
+
+00:08:40.190 --> 00:08:42.490 align:start position:0%
+hash map instead we're just about to
+deploy<00:08:40.640><c> our</c><00:08:40.909><c> new</c><00:08:41.060><c> code</c><00:08:41.390><c> what</c><00:08:41.899><c> we</c><00:08:42.020><c> remembered</c>
+
+00:08:42.490 --> 00:08:42.500 align:start position:0%
+deploy our new code what we remembered
+ 
+
+00:08:42.500 --> 00:08:44.560 align:start position:0%
+deploy our new code what we remembered
+that<00:08:42.529><c> we</c><00:08:42.830><c> might</c><00:08:43.039><c> want</c><00:08:43.219><c> to</c><00:08:43.339><c> turn</c><00:08:43.580><c> on</c><00:08:43.760><c> j4</c><00:08:44.330><c> from</c>
+
+00:08:44.560 --> 00:08:44.570 align:start position:0%
+that we might want to turn on j4 from
+ 
+
+00:08:44.570 --> 00:08:49.930 align:start position:0%
+that we might want to turn on j4 from
+the<00:08:44.690><c> start</c><00:08:47.649><c> we</c><00:08:48.649><c> do</c><00:08:48.830><c> another</c><00:08:49.100><c> dump</c><00:08:49.459><c> for</c><00:08:49.790><c> this</c>
+
+00:08:49.930 --> 00:08:49.940 align:start position:0%
+the start we do another dump for this
+ 
+
+00:08:49.940 --> 00:08:51.760 align:start position:0%
+the start we do another dump for this
+newly<00:08:50.330><c> deployed</c><00:08:50.570><c> code</c><00:08:51.020><c> which</c><00:08:51.470><c> I'm</c><00:08:51.620><c> not</c>
+
+00:08:51.760 --> 00:08:51.770 align:start position:0%
+newly deployed code which I'm not
+ 
+
+00:08:51.770 --> 00:08:54.070 align:start position:0%
+newly deployed code which I'm not
+showing<00:08:52.010><c> here</c><00:08:52.430><c> and</c><00:08:53.209><c> we</c><00:08:53.390><c> again</c><00:08:53.690><c> check</c><00:08:54.050><c> the</c>
+
+00:08:54.070 --> 00:08:54.080 align:start position:0%
+showing here and we again check the
+ 
+
+00:08:54.080 --> 00:08:58.990 align:start position:0%
+showing here and we again check the
+threads<00:08:54.500><c> tab</c><00:08:55.029><c> look</c><00:08:56.029><c> ma</c><00:08:56.240><c> no</c><00:08:56.480><c> dots</c><00:08:57.850><c> in</c><00:08:58.850><c> this</c>
+
+00:08:58.990 --> 00:08:59.000 align:start position:0%
+threads tab look ma no dots in this
+ 
+
+00:08:59.000 --> 00:09:01.569 align:start position:0%
+threads tab look ma no dots in this
+example<00:08:59.450><c> of</c><00:08:59.930><c> course</c><00:09:00.320><c> I</c><00:09:00.589><c> knew</c><00:09:00.890><c> where</c><00:09:01.130><c> to</c><00:09:01.160><c> start</c>
+
+00:09:01.569 --> 00:09:01.579 align:start position:0%
+example of course I knew where to start
+ 
+
+00:09:01.579 --> 00:09:05.170 align:start position:0%
+example of course I knew where to start
+looking<00:09:02.410><c> but</c><00:09:03.410><c> sometimes</c><00:09:03.860><c> you</c><00:09:04.010><c> don't</c><00:09:04.250><c> the</c><00:09:04.940><c> good</c>
+
+00:09:05.170 --> 00:09:05.180 align:start position:0%
+looking but sometimes you don't the good
+ 
+
+00:09:05.180 --> 00:09:06.910 align:start position:0%
+looking but sometimes you don't the good
+thing<00:09:05.450><c> is</c><00:09:05.630><c> that</c><00:09:05.660><c> Mission</c><00:09:06.260><c> Control</c><00:09:06.589><c> can</c>
+
+00:09:06.910 --> 00:09:06.920 align:start position:0%
+thing is that Mission Control can
+ 
+
+00:09:06.920 --> 00:09:08.710 align:start position:0%
+thing is that Mission Control can
+actually<00:09:07.279><c> assist</c><00:09:07.700><c> us</c><00:09:07.910><c> with</c><00:09:08.209><c> this</c><00:09:08.329><c> kind</c><00:09:08.660><c> of</c>
+
+00:09:08.710 --> 00:09:08.720 align:start position:0%
+actually assist us with this kind of
+ 
+
+00:09:08.720 --> 00:09:12.130 align:start position:0%
+actually assist us with this kind of
+analysis<00:09:09.320><c> we</c><00:09:10.100><c> will</c><00:09:10.310><c> redo</c><00:09:10.910><c> the</c><00:09:11.149><c> same</c><00:09:11.420><c> scenario</c>
+
+00:09:12.130 --> 00:09:12.140 align:start position:0%
+analysis we will redo the same scenario
+ 
+
+00:09:12.140 --> 00:09:14.829 align:start position:0%
+analysis we will redo the same scenario
+that<00:09:12.290><c> we</c><00:09:12.529><c> just</c><00:09:12.740><c> did</c><00:09:13.100><c> but</c><00:09:13.910><c> at</c><00:09:14.089><c> this</c><00:09:14.240><c> time</c><00:09:14.300><c> we</c>
+
+00:09:14.829 --> 00:09:14.839 align:start position:0%
+that we just did but at this time we
+ 
+
+00:09:14.839 --> 00:09:17.530 align:start position:0%
+that we just did but at this time we
+will<00:09:15.290><c> check</c><00:09:15.589><c> the</c><00:09:16.040><c> automated</c><00:09:16.610><c> analysis</c>
+
+00:09:17.530 --> 00:09:17.540 align:start position:0%
+will check the automated analysis
+ 
+
+00:09:17.540 --> 00:09:21.880 align:start position:0%
+will check the automated analysis
+results<00:09:18.020><c> page</c><00:09:19.329><c> one</c><00:09:20.329><c> rule</c><00:09:20.540><c> here</c><00:09:20.959><c> says</c><00:09:21.320><c> look</c>
+
+00:09:21.880 --> 00:09:21.890 align:start position:0%
+results page one rule here says look
+ 
+
+00:09:21.890 --> 00:09:25.449 align:start position:0%
+results page one rule here says look
+instances<00:09:22.790><c> Java</c><00:09:23.480><c> blocking</c><00:09:24.130><c> and</c><00:09:25.130><c> it</c><00:09:25.220><c> looks</c>
+
+00:09:25.449 --> 00:09:25.459 align:start position:0%
+instances Java blocking and it looks
+ 
+
+00:09:25.459 --> 00:09:27.670 align:start position:0%
+instances Java blocking and it looks
+like<00:09:25.640><c> it</c><00:09:25.790><c> automatically</c><00:09:26.630><c> found</c><00:09:26.899><c> the</c><00:09:27.320><c> hoenn</c>
+
+00:09:27.670 --> 00:09:27.680 align:start position:0%
+like it automatically found the hoenn
+ 
+
+00:09:27.680 --> 00:09:29.500 align:start position:0%
+like it automatically found the hoenn
+number<00:09:28.040><c> of</c><00:09:28.130><c> threads</c><00:09:28.490><c> being</c><00:09:28.760><c> blocked</c><00:09:29.120><c> on</c><00:09:29.360><c> this</c>
+
+00:09:29.500 --> 00:09:29.510 align:start position:0%
+number of threads being blocked on this
+ 
+
+00:09:29.510 --> 00:09:33.670 align:start position:0%
+number of threads being blocked on this
+particular<00:09:30.020><c> monitor</c><00:09:30.529><c> let's</c><00:09:31.520><c> pause</c><00:09:31.850><c> here</c><00:09:32.680><c> why</c>
+
+00:09:33.670 --> 00:09:33.680 align:start position:0%
+particular monitor let's pause here why
+ 
+
+00:09:33.680 --> 00:09:35.440 align:start position:0%
+particular monitor let's pause here why
+do<00:09:33.740><c> we</c><00:09:33.950><c> not</c><00:09:34.130><c> see</c><00:09:34.160><c> this</c><00:09:34.399><c> until</c><00:09:34.880><c> production</c>
+
+00:09:35.440 --> 00:09:35.450 align:start position:0%
+do we not see this until production
+ 
+
+00:09:35.450 --> 00:09:37.870 align:start position:0%
+do we not see this until production
+either<00:09:36.350><c> we</c><00:09:36.680><c> didn't</c><00:09:36.950><c> provoke</c><00:09:37.220><c> enough</c><00:09:37.550><c> stress</c>
+
+00:09:37.870 --> 00:09:37.880 align:start position:0%
+either we didn't provoke enough stress
+ 
+
+00:09:37.880 --> 00:09:39.490 align:start position:0%
+either we didn't provoke enough stress
+during<00:09:38.420><c> testing</c><00:09:38.870><c> to</c><00:09:38.990><c> increase</c><00:09:39.350><c> the</c>
+
+00:09:39.490 --> 00:09:39.500 align:start position:0%
+during testing to increase the
+ 
+
+00:09:39.500 --> 00:09:41.470 align:start position:0%
+during testing to increase the
+concurrency<00:09:40.040><c> level</c><00:09:40.339><c> to</c><00:09:40.550><c> a</c><00:09:40.579><c> problematic</c><00:09:41.000><c> level</c>
+
+00:09:41.470 --> 00:09:41.480 align:start position:0%
+concurrency level to a problematic level
+ 
+
+00:09:41.480 --> 00:09:43.960 align:start position:0%
+concurrency level to a problematic level
+or<00:09:41.899><c> maybe</c><00:09:42.470><c> we</c><00:09:42.560><c> did</c><00:09:42.800><c> do</c><00:09:42.950><c> that</c><00:09:42.980><c> but</c><00:09:43.579><c> we</c><00:09:43.670><c> did</c><00:09:43.850><c> not</c>
+
+00:09:43.960 --> 00:09:43.970 align:start position:0%
+or maybe we did do that but we did not
+ 
+
+00:09:43.970 --> 00:09:45.970 align:start position:0%
+or maybe we did do that but we did not
+use<00:09:44.149><c> a</c><00:09:44.180><c> tool</c><00:09:44.540><c> that</c><00:09:44.750><c> reported</c><00:09:45.260><c> about</c><00:09:45.470><c> it</c><00:09:45.680><c> during</c>
+
+00:09:45.970 --> 00:09:45.980 align:start position:0%
+use a tool that reported about it during
+ 
+
+00:09:45.980 --> 00:09:49.780 align:start position:0%
+use a tool that reported about it during
+the<00:09:46.130><c> test</c><00:09:46.339><c> cycle</c><00:09:47.140><c> in</c><00:09:48.140><c> this</c><00:09:48.649><c> situation</c><00:09:49.310><c> the</c>
+
+00:09:49.780 --> 00:09:49.790 align:start position:0%
+the test cycle in this situation the
+ 
+
+00:09:49.790 --> 00:09:52.090 align:start position:0%
+the test cycle in this situation the
+code<00:09:50.060><c> we</c><00:09:50.270><c> were</c><00:09:50.420><c> involved</c><00:09:50.899><c> with</c><00:09:51.050><c> was</c><00:09:51.320><c> a</c><00:09:51.350><c> was</c><00:09:52.070><c> a</c>
+
+00:09:52.090 --> 00:09:52.100 align:start position:0%
+code we were involved with was a was a
+ 
+
+00:09:52.100 --> 00:09:54.790 align:start position:0%
+code we were involved with was a was a
+wrong<00:09:52.339><c> so</c><00:09:53.060><c> we</c><00:09:53.180><c> could</c><00:09:53.329><c> easily</c><00:09:53.450><c> change</c><00:09:53.930><c> it</c><00:09:54.110><c> but</c>
+
+00:09:54.790 --> 00:09:54.800 align:start position:0%
+wrong so we could easily change it but
+ 
+
+00:09:54.800 --> 00:09:56.110 align:start position:0%
+wrong so we could easily change it but
+it<00:09:54.890><c> could</c><00:09:55.040><c> just</c><00:09:55.250><c> as</c><00:09:55.370><c> well</c><00:09:55.579><c> as</c><00:09:55.700><c> big</c><00:09:55.850><c> code</c>
+
+00:09:56.110 --> 00:09:56.120 align:start position:0%
+it could just as well as big code
+ 
+
+00:09:56.120 --> 00:09:57.730 align:start position:0%
+it could just as well as big code
+located<00:09:56.570><c> in</c><00:09:56.660><c> our</c><00:09:56.810><c> library</c><00:09:57.230><c> that</c><00:09:57.290><c> we</c><00:09:57.589><c> were</c>
+
+00:09:57.730 --> 00:09:57.740 align:start position:0%
+located in our library that we were
+ 
+
+00:09:57.740 --> 00:10:00.579 align:start position:0%
+located in our library that we were
+using<00:09:58.360><c> we</c><00:09:59.360><c> believe</c><00:09:59.660><c> JFR</c><00:10:00.140><c> can</c><00:10:00.380><c> be</c><00:10:00.470><c> of</c>
+
+00:10:00.579 --> 00:10:00.589 align:start position:0%
+using we believe JFR can be of
+ 
+
+00:10:00.589 --> 00:10:02.650 align:start position:0%
+using we believe JFR can be of
+assistance<00:10:00.680><c> here</c><00:10:01.399><c> helping</c><00:10:01.970><c> us</c><00:10:02.089><c> scale</c><00:10:02.360><c> this</c>
+
+00:10:02.650 --> 00:10:02.660 align:start position:0%
+assistance here helping us scale this
+ 
+
+00:10:02.660 --> 00:10:05.350 align:start position:0%
+assistance here helping us scale this
+value<00:10:03.130><c> say</c><00:10:04.130><c> we</c><00:10:04.279><c> wanted</c><00:10:04.579><c> to</c><00:10:04.640><c> report</c><00:10:05.120><c> this</c>
+
+00:10:05.350 --> 00:10:05.360 align:start position:0%
+value say we wanted to report this
+ 
+
+00:10:05.360 --> 00:10:07.750 align:start position:0%
+value say we wanted to report this
+finding<00:10:05.839><c> to</c><00:10:05.959><c> the</c><00:10:06.110><c> library</c><00:10:06.529><c> developers</c><00:10:07.130><c> we</c>
+
+00:10:07.750 --> 00:10:07.760 align:start position:0%
+finding to the library developers we
+ 
+
+00:10:07.760 --> 00:10:09.550 align:start position:0%
+finding to the library developers we
+could<00:10:07.970><c> easily</c><00:10:08.120><c> attach</c><00:10:08.570><c> this</c><00:10:08.899><c> recording</c><00:10:09.440><c> to</c>
+
+00:10:09.550 --> 00:10:09.560 align:start position:0%
+could easily attach this recording to
+ 
+
+00:10:09.560 --> 00:10:12.819 align:start position:0%
+could easily attach this recording to
+their<00:10:09.740><c> bug</c><00:10:09.920><c> reporting</c><00:10:10.760><c> system</c><00:10:11.440><c> now</c><00:10:12.440><c> the</c><00:10:12.500><c> bug</c>
+
+00:10:12.819 --> 00:10:12.829 align:start position:0%
+their bug reporting system now the bug
+ 
+
+00:10:12.829 --> 00:10:15.190 align:start position:0%
+their bug reporting system now the bug
+report<00:10:13.220><c> just</c><00:10:13.459><c> got</c><00:10:13.610><c> stronger</c><00:10:14.000><c> our</c><00:10:14.300><c> argument</c>
+
+00:10:15.190 --> 00:10:15.200 align:start position:0%
+report just got stronger our argument
+ 
+
+00:10:15.200 --> 00:10:17.680 align:start position:0%
+report just got stronger our argument
+being<00:10:15.410><c> backed</c><00:10:15.680><c> by</c><00:10:15.920><c> empirical</c><00:10:16.459><c> evidence</c><00:10:16.850><c> the</c>
+
+00:10:17.680 --> 00:10:17.690 align:start position:0%
+being backed by empirical evidence the
+ 
+
+00:10:17.690 --> 00:10:19.960 align:start position:0%
+being backed by empirical evidence the
+library<00:10:18.110><c> developers</c><00:10:18.500><c> in</c><00:10:18.649><c> their</c><00:10:18.860><c> turn</c><00:10:19.160><c> is</c><00:10:19.550><c> also</c>
+
+00:10:19.960 --> 00:10:19.970 align:start position:0%
+library developers in their turn is also
+ 
+
+00:10:19.970 --> 00:10:22.360 align:start position:0%
+library developers in their turn is also
+in<00:10:20.029><c> a</c><00:10:20.120><c> much</c><00:10:20.270><c> better</c><00:10:20.450><c> position</c><00:10:20.980><c> they</c><00:10:21.980><c> have</c><00:10:22.130><c> just</c>
+
+00:10:22.360 --> 00:10:22.370 align:start position:0%
+in a much better position they have just
+ 
+
+00:10:22.370 --> 00:10:24.579 align:start position:0%
+in a much better position they have just
+received<00:10:22.670><c> a</c><00:10:22.820><c> piece</c><00:10:23.029><c> of</c><00:10:23.209><c> real</c><00:10:23.390><c> execution</c><00:10:24.230><c> about</c>
+
+00:10:24.579 --> 00:10:24.589 align:start position:0%
+received a piece of real execution about
+ 
+
+00:10:24.589 --> 00:10:26.319 align:start position:0%
+received a piece of real execution about
+how<00:10:24.800><c> their</c><00:10:25.010><c> library</c><00:10:25.430><c> is</c><00:10:25.490><c> being</c><00:10:25.640><c> used</c><00:10:26.000><c> and</c>
+
+00:10:26.319 --> 00:10:26.329 align:start position:0%
+how their library is being used and
+ 
+
+00:10:26.329 --> 00:10:28.620 align:start position:0%
+how their library is being used and
+again<00:10:26.930><c> from</c><00:10:27.260><c> a</c><00:10:27.350><c> production</c><00:10:27.800><c> environment</c>
+
+00:10:28.620 --> 00:10:28.630 align:start position:0%
+again from a production environment
+ 
+
+00:10:28.630 --> 00:10:31.750 align:start position:0%
+again from a production environment
+another<00:10:29.630><c> philosophical</c><00:10:30.380><c> reflection</c><00:10:30.920><c> is</c><00:10:31.130><c> that</c>
+
+00:10:31.750 --> 00:10:31.760 align:start position:0%
+another philosophical reflection is that
+ 
+
+00:10:31.760 --> 00:10:35.500 align:start position:0%
+another philosophical reflection is that
+there<00:10:31.940><c> was</c><00:10:32.060><c> no</c><00:10:32.360><c> real</c><00:10:32.779><c> error</c><00:10:33.079><c> involved</c><00:10:33.890><c> here</c><00:10:34.510><c> we</c>
+
+00:10:35.500 --> 00:10:35.510 align:start position:0%
+there was no real error involved here we
+ 
+
+00:10:35.510 --> 00:10:36.760 align:start position:0%
+there was no real error involved here we
+ended<00:10:35.779><c> up</c><00:10:35.870><c> in</c><00:10:35.990><c> a</c><00:10:36.110><c> problematic</c><00:10:36.560><c> situation</c>
+
+00:10:36.760 --> 00:10:36.770 align:start position:0%
+ended up in a problematic situation
+ 
+
+00:10:36.770 --> 00:10:40.050 align:start position:0%
+ended up in a problematic situation
+because<00:10:37.610><c> we</c><00:10:37.790><c> missed</c><00:10:38.000><c> a</c><00:10:38.149><c> few</c>
+
+00:10:40.050 --> 00:10:40.060 align:start position:0%
+because we missed a few
+ 
+
+00:10:40.060 --> 00:10:41.950 align:start position:0%
+because we missed a few
+let's<00:10:41.060><c> see</c><00:10:41.180><c> if</c><00:10:41.270><c> we</c><00:10:41.360><c> can</c><00:10:41.480><c> get</c><00:10:41.630><c> some</c><00:10:41.780><c> additional</c>
+
+00:10:41.950 --> 00:10:41.960 align:start position:0%
+let's see if we can get some additional
+ 
+
+00:10:41.960 --> 00:10:44.440 align:start position:0%
+let's see if we can get some additional
+information<00:10:42.560><c> from</c><00:10:42.620><c> this</c><00:10:42.830><c> file</c><00:10:43.180><c> let's</c><00:10:44.180><c> click</c>
+
+00:10:44.440 --> 00:10:44.450 align:start position:0%
+information from this file let's click
+ 
+
+00:10:44.450 --> 00:10:46.540 align:start position:0%
+information from this file let's click
+the<00:10:44.540><c> memory</c><00:10:44.840><c> tab</c><00:10:45.080><c> while</c><00:10:45.980><c> we</c><00:10:46.130><c> see</c><00:10:46.280><c> here</c><00:10:46.460><c> is</c><00:10:46.520><c> a</c>
+
+00:10:46.540 --> 00:10:46.550 align:start position:0%
+the memory tab while we see here is a
+ 
+
+00:10:46.550 --> 00:10:49.360 align:start position:0%
+the memory tab while we see here is a
+sawtooth<00:10:47.120><c> graph</c><00:10:47.590><c> representing</c><00:10:48.590><c> heap</c><00:10:48.860><c> memory</c>
+
+00:10:49.360 --> 00:10:49.370 align:start position:0%
+sawtooth graph representing heap memory
+ 
+
+00:10:49.370 --> 00:10:53.230 align:start position:0%
+sawtooth graph representing heap memory
+usage<00:10:49.820><c> in</c><00:10:50.060><c> this</c><00:10:50.210><c> VM</c><00:10:50.540><c> each</c><00:10:51.500><c> cycle</c><00:10:52.180><c> consists</c><00:10:53.180><c> of</c>
+
+00:10:53.230 --> 00:10:53.240 align:start position:0%
+usage in this VM each cycle consists of
+ 
+
+00:10:53.240 --> 00:10:55.810 align:start position:0%
+usage in this VM each cycle consists of
+a<00:10:53.360><c> build</c><00:10:53.600><c> up</c><00:10:53.780><c> face</c><00:10:54.050><c> which</c><00:10:55.010><c> represents</c><00:10:55.730><c> a</c>
+
+00:10:55.810 --> 00:10:55.820 align:start position:0%
+a build up face which represents a
+ 
+
+00:10:55.820 --> 00:10:58.410 align:start position:0%
+a build up face which represents a
+period<00:10:56.270><c> of</c><00:10:56.330><c> heap</c><00:10:56.690><c> memory</c><00:10:56.960><c> allocations</c>
+
+00:10:58.410 --> 00:10:58.420 align:start position:0%
+period of heap memory allocations
+ 
+
+00:10:58.420 --> 00:11:00.910 align:start position:0%
+period of heap memory allocations
+followed<00:10:59.420><c> by</c><00:10:59.570><c> a</c><00:10:59.600><c> subsequence</c><00:11:00.380><c> sharp</c><00:11:00.650><c> drop</c>
+
+00:11:00.910 --> 00:11:00.920 align:start position:0%
+followed by a subsequence sharp drop
+ 
+
+00:11:00.920 --> 00:11:04.240 align:start position:0%
+followed by a subsequence sharp drop
+which<00:11:01.370><c> represent</c><00:11:01.940><c> a</c><00:11:02.150><c> GC</c><00:11:02.570><c> and</c><00:11:02.930><c> then</c><00:11:03.740><c> the</c><00:11:03.890><c> cycle</c>
+
+00:11:04.240 --> 00:11:04.250 align:start position:0%
+which represent a GC and then the cycle
+ 
+
+00:11:04.250 --> 00:11:08.320 align:start position:0%
+which represent a GC and then the cycle
+starts<00:11:04.340><c> over</c><00:11:05.470><c> the</c><00:11:06.470><c> frequency</c><00:11:06.740><c> of</c><00:11:07.070><c> this</c><00:11:07.330><c> graph</c>
+
+00:11:08.320 --> 00:11:08.330 align:start position:0%
+starts over the frequency of this graph
+ 
+
+00:11:08.330 --> 00:11:11.980 align:start position:0%
+starts over the frequency of this graph
+seems<00:11:08.870><c> to</c><00:11:09.050><c> be</c><00:11:09.200><c> around</c><00:11:09.620><c> 2</c><00:11:10.070><c> Hertz</c><00:11:10.430><c> that</c><00:11:11.330><c> is</c><00:11:11.570><c> we</c>
+
+00:11:11.980 --> 00:11:11.990 align:start position:0%
+seems to be around 2 Hertz that is we
+ 
+
+00:11:11.990 --> 00:11:15.730 align:start position:0%
+seems to be around 2 Hertz that is we
+have<00:11:12.200><c> two</c><00:11:13.130><c> cycles</c><00:11:13.400><c> per</c><00:11:13.790><c> second</c><00:11:14.320><c> if</c><00:11:15.320><c> we</c><00:11:15.500><c> expect</c>
+
+00:11:15.730 --> 00:11:15.740 align:start position:0%
+have two cycles per second if we expect
+ 
+
+00:11:15.740 --> 00:11:17.290 align:start position:0%
+have two cycles per second if we expect
+this<00:11:15.950><c> in</c><00:11:16.130><c> more</c><00:11:16.250><c> detail</c><00:11:16.670><c> we</c><00:11:16.820><c> can</c><00:11:16.850><c> see</c><00:11:17.120><c> at</c><00:11:17.210><c> the</c>
+
+00:11:17.290 --> 00:11:17.300 align:start position:0%
+this in more detail we can see at the
+ 
+
+00:11:17.300 --> 00:11:19.330 align:start position:0%
+this in more detail we can see at the
+start<00:11:17.600><c> of</c><00:11:17.690><c> a</c><00:11:17.750><c> cycle</c><00:11:18.200><c> our</c><00:11:18.500><c> heap</c><00:11:18.800><c> usage</c><00:11:19.160><c> is</c>
+
+00:11:19.330 --> 00:11:19.340 align:start position:0%
+start of a cycle our heap usage is
+ 
+
+00:11:19.340 --> 00:11:23.730 align:start position:0%
+start of a cycle our heap usage is
+around<00:11:19.840><c> 570</c><00:11:20.840><c> Meg's</c><00:11:21.260><c> at</c><00:11:21.830><c> the</c><00:11:22.370><c> end</c><00:11:22.550><c> of</c><00:11:22.910><c> the</c><00:11:23.120><c> cycle</c>
+
+00:11:23.730 --> 00:11:23.740 align:start position:0%
+around 570 Meg's at the end of the cycle
+ 
+
+00:11:23.740 --> 00:11:26.770 align:start position:0%
+around 570 Meg's at the end of the cycle
+our<00:11:24.740><c> heap</c><00:11:25.220><c> usage</c><00:11:25.670><c> has</c><00:11:26.000><c> now</c><00:11:26.210><c> grown</c><00:11:26.510><c> to</c>
+
+00:11:26.770 --> 00:11:26.780 align:start position:0%
+our heap usage has now grown to
+ 
+
+00:11:26.780 --> 00:11:30.300 align:start position:0%
+our heap usage has now grown to
+approximately<00:11:27.490><c> 2.4</c><00:11:28.490><c> gigabytes</c>
+
+00:11:30.300 --> 00:11:30.310 align:start position:0%
+approximately 2.4 gigabytes
+ 
+
+00:11:30.310 --> 00:11:33.010 align:start position:0%
+approximately 2.4 gigabytes
+this<00:11:31.310><c> gives</c><00:11:31.610><c> us</c><00:11:31.760><c> an</c><00:11:31.880><c> allocation</c><00:11:32.300><c> rate</c><00:11:32.750><c> of</c>
+
+00:11:33.010 --> 00:11:33.020 align:start position:0%
+this gives us an allocation rate of
+ 
+
+00:11:33.020 --> 00:11:35.860 align:start position:0%
+this gives us an allocation rate of
+about<00:11:33.320><c> 4</c><00:11:33.740><c> gigs</c><00:11:34.070><c> per</c><00:11:34.400><c> second</c><00:11:34.790><c> another</c><00:11:35.390><c> valid</c>
+
+00:11:35.860 --> 00:11:35.870 align:start position:0%
+about 4 gigs per second another valid
+ 
+
+00:11:35.870 --> 00:11:38.140 align:start position:0%
+about 4 gigs per second another valid
+inference<00:11:36.230><c> we</c><00:11:36.410><c> can</c><00:11:36.560><c> make</c><00:11:36.800><c> is</c><00:11:37.040><c> that</c><00:11:37.730><c> most</c><00:11:38.000><c> of</c>
+
+00:11:38.140 --> 00:11:38.150 align:start position:0%
+inference we can make is that most of
+ 
+
+00:11:38.150 --> 00:11:39.460 align:start position:0%
+inference we can make is that most of
+these<00:11:38.240><c> allocations</c><00:11:38.540><c> are</c><00:11:39.050><c> short-lived</c>
+
+00:11:39.460 --> 00:11:39.470 align:start position:0%
+these allocations are short-lived
+ 
+
+00:11:39.470 --> 00:11:42.640 align:start position:0%
+these allocations are short-lived
+objects<00:11:40.310><c> the</c><00:11:41.210><c> reason</c><00:11:41.600><c> for</c><00:11:41.750><c> this</c><00:11:41.900><c> claim</c><00:11:42.260><c> is</c>
+
+00:11:42.640 --> 00:11:42.650 align:start position:0%
+objects the reason for this claim is
+ 
+
+00:11:42.650 --> 00:11:44.800 align:start position:0%
+objects the reason for this claim is
+that<00:11:42.980><c> the</c><00:11:43.100><c> GC</c><00:11:43.310><c> is</c><00:11:43.550><c> able</c><00:11:43.880><c> to</c><00:11:44.030><c> push</c><00:11:44.270><c> down</c><00:11:44.570><c> the</c>
+
+00:11:44.800 --> 00:11:44.810 align:start position:0%
+that the GC is able to push down the
+ 
+
+00:11:44.810 --> 00:11:46.870 align:start position:0%
+that the GC is able to push down the
+heap<00:11:45.020><c> back</c><00:11:45.530><c> to</c><00:11:45.770><c> the</c><00:11:45.920><c> starting</c><00:11:46.280><c> position</c><00:11:46.400><c> at</c>
+
+00:11:46.870 --> 00:11:46.880 align:start position:0%
+heap back to the starting position at
+ 
+
+00:11:46.880 --> 00:11:49.480 align:start position:0%
+heap back to the starting position at
+each<00:11:47.120><c> cycle</c><00:11:47.660><c> we</c><00:11:48.140><c> can</c><00:11:48.320><c> get</c><00:11:48.470><c> another</c><00:11:48.770><c> piece</c><00:11:49.430><c> of</c>
+
+00:11:49.480 --> 00:11:49.490 align:start position:0%
+each cycle we can get another piece of
+ 
+
+00:11:49.490 --> 00:11:51.610 align:start position:0%
+each cycle we can get another piece of
+important<00:11:50.240><c> information</c><00:11:50.390><c> if</c><00:11:50.930><c> we</c><00:11:50.960><c> click</c><00:11:51.320><c> the</c>
+
+00:11:51.610 --> 00:11:51.620 align:start position:0%
+important information if we click the
+ 
+
+00:11:51.620 --> 00:11:54.250 align:start position:0%
+important information if we click the
+garbage<00:11:51.980><c> collection</c><00:11:52.520><c> check</c><00:11:52.790><c> box</c><00:11:53.030><c> now</c><00:11:53.960><c> for</c>
+
+00:11:54.250 --> 00:11:54.260 align:start position:0%
+garbage collection check box now for
+ 
+
+00:11:54.260 --> 00:11:55.630 align:start position:0%
+garbage collection check box now for
+something<00:11:54.440><c> with</c><00:11:54.650><c> the</c><00:11:54.680><c> information</c><00:11:54.830><c> about</c><00:11:55.280><c> GC</c>
+
+00:11:55.630 --> 00:11:55.640 align:start position:0%
+something with the information about GC
+ 
+
+00:11:55.640 --> 00:11:59.140 align:start position:0%
+something with the information about GC
+pause<00:11:55.850><c> times</c><00:11:56.320><c> what</c><00:11:57.320><c> we</c><00:11:57.470><c> see</c><00:11:57.680><c> is</c><00:11:57.980><c> that</c><00:11:58.040><c> GC</c><00:11:58.940><c> has</c><00:11:59.090><c> a</c>
+
+00:11:59.140 --> 00:11:59.150 align:start position:0%
+pause times what we see is that GC has a
+ 
+
+00:11:59.150 --> 00:12:02.560 align:start position:0%
+pause times what we see is that GC has a
+post<00:11:59.510><c> time</c><00:11:59.750><c> of</c><00:11:59.870><c> about</c><00:12:00.200><c> 20</c><00:12:00.890><c> milliseconds</c><00:12:01.610><c> what</c>
+
+00:12:02.560 --> 00:12:02.570 align:start position:0%
+post time of about 20 milliseconds what
+ 
+
+00:12:02.570 --> 00:12:04.510 align:start position:0%
+post time of about 20 milliseconds what
+this<00:12:02.750><c> means</c><00:12:02.960><c> for</c><00:12:03.200><c> us</c><00:12:03.500><c> in</c><00:12:03.740><c> this</c><00:12:03.890><c> context</c><00:12:04.400><c> is</c>
+
+00:12:04.510 --> 00:12:04.520 align:start position:0%
+this means for us in this context is
+ 
+
+00:12:04.520 --> 00:12:06.550 align:start position:0%
+this means for us in this context is
+that<00:12:04.580><c> the</c><00:12:04.940><c> GC</c><00:12:05.150><c> stopped</c><00:12:05.750><c> our</c><00:12:05.930><c> application</c><00:12:06.530><c> for</c>
+
+00:12:06.550 --> 00:12:06.560 align:start position:0%
+that the GC stopped our application for
+ 
+
+00:12:06.560 --> 00:12:10.210 align:start position:0%
+that the GC stopped our application for
+about<00:12:06.950><c> 20</c><00:12:07.400><c> milliseconds</c><00:12:08.120><c> to</c><00:12:08.360><c> do</c><00:12:08.450><c> its</c><00:12:08.600><c> work</c><00:12:09.220><c> but</c>
+
+00:12:10.210 --> 00:12:10.220 align:start position:0%
+about 20 milliseconds to do its work but
+ 
+
+00:12:10.220 --> 00:12:12.370 align:start position:0%
+about 20 milliseconds to do its work but
+since<00:12:10.490><c> we</c><00:12:10.610><c> have</c><00:12:10.760><c> two</c><00:12:11.060><c> of</c><00:12:11.330><c> these</c><00:12:11.570><c> G</c><00:12:11.960><c> C's</c><00:12:12.140><c> per</c>
+
+00:12:12.370 --> 00:12:12.380 align:start position:0%
+since we have two of these G C's per
+ 
+
+00:12:12.380 --> 00:12:14.680 align:start position:0%
+since we have two of these G C's per
+second<00:12:12.860><c> we</c><00:12:13.430><c> actually</c><00:12:13.760><c> have</c><00:12:13.880><c> a</c><00:12:13.910><c> post</c><00:12:14.240><c> time</c><00:12:14.540><c> of</c>
+
+00:12:14.680 --> 00:12:14.690 align:start position:0%
+second we actually have a post time of
+ 
+
+00:12:14.690 --> 00:12:16.600 align:start position:0%
+second we actually have a post time of
+40<00:12:15.110><c> milliseconds</c><00:12:15.710><c> per</c><00:12:15.770><c> second</c><00:12:16.250><c> in</c><00:12:16.400><c> this</c>
+
+00:12:16.600 --> 00:12:16.610 align:start position:0%
+40 milliseconds per second in this
+ 
+
+00:12:16.610 --> 00:12:19.120 align:start position:0%
+40 milliseconds per second in this
+application<00:12:17.210><c> at</c><00:12:18.110><c> this</c><00:12:18.380><c> point</c><00:12:18.680><c> we</c><00:12:18.800><c> would</c><00:12:18.950><c> like</c>
+
+00:12:19.120 --> 00:12:19.130 align:start position:0%
+application at this point we would like
+ 
+
+00:12:19.130 --> 00:12:21.040 align:start position:0%
+application at this point we would like
+to<00:12:19.160><c> understand</c><00:12:19.790><c> what</c><00:12:20.210><c> objects</c><00:12:20.750><c> are</c><00:12:20.840><c> being</c>
+
+00:12:21.040 --> 00:12:21.050 align:start position:0%
+to understand what objects are being
+ 
+
+00:12:21.050 --> 00:12:24.340 align:start position:0%
+to understand what objects are being
+allocated<00:12:21.260><c> and</c><00:12:21.920><c> from</c><00:12:22.370><c> where</c><00:12:23.140><c> Jeff</c><00:12:24.140><c> our</c>
+
+00:12:24.340 --> 00:12:24.350 align:start position:0%
+allocated and from where Jeff our
+ 
+
+00:12:24.350 --> 00:12:25.930 align:start position:0%
+allocated and from where Jeff our
+provides<00:12:24.770><c> us</c><00:12:24.950><c> with</c><00:12:24.980><c> the</c><00:12:25.280><c> ability</c><00:12:25.310><c> to</c><00:12:25.670><c> the</c>
+
+00:12:25.930 --> 00:12:25.940 align:start position:0%
+provides us with the ability to the
+ 
+
+00:12:25.940 --> 00:12:27.910 align:start position:0%
+provides us with the ability to the
+object<00:12:26.420><c> allocation</c><00:12:27.110><c> sampling</c><00:12:27.680><c> without</c>
+
+00:12:27.910 --> 00:12:27.920 align:start position:0%
+object allocation sampling without
+ 
+
+00:12:27.920 --> 00:12:31.840 align:start position:0%
+object allocation sampling without
+bytecode<00:12:28.880><c> instrumentation</c><00:12:30.340><c> but</c><00:12:31.340><c> in</c><00:12:31.520><c> order</c><00:12:31.730><c> to</c>
+
+00:12:31.840 --> 00:12:31.850 align:start position:0%
+bytecode instrumentation but in order to
+ 
+
+00:12:31.850 --> 00:12:34.000 align:start position:0%
+bytecode instrumentation but in order to
+get<00:12:32.210><c> this</c><00:12:32.420><c> information</c><00:12:32.530><c> we</c><00:12:33.530><c> will</c><00:12:33.740><c> need</c><00:12:33.890><c> to</c>
+
+00:12:34.000 --> 00:12:34.010 align:start position:0%
+get this information we will need to
+ 
+
+00:12:34.010 --> 00:12:36.430 align:start position:0%
+get this information we will need to
+enlist<00:12:34.280><c> the</c><00:12:34.490><c> profiling</c><00:12:35.120><c> capabilities</c><00:12:35.870><c> of</c><00:12:36.200><c> the</c>
+
+00:12:36.430 --> 00:12:36.440 align:start position:0%
+enlist the profiling capabilities of the
+ 
+
+00:12:36.440 --> 00:12:39.670 align:start position:0%
+enlist the profiling capabilities of the
+j4<00:12:36.830><c> engine</c><00:12:37.540><c> since</c><00:12:38.540><c> the</c><00:12:38.660><c> sampling</c><00:12:39.110><c> mechanism</c>
+
+00:12:39.670 --> 00:12:39.680 align:start position:0%
+j4 engine since the sampling mechanism
+ 
+
+00:12:39.680 --> 00:12:41.920 align:start position:0%
+j4 engine since the sampling mechanism
+has<00:12:39.800><c> a</c><00:12:39.830><c> slight</c><00:12:40.160><c> overhead</c><00:12:40.820><c> and</c><00:12:41.060><c> can</c><00:12:41.480><c> generate</c><00:12:41.870><c> a</c>
+
+00:12:41.920 --> 00:12:41.930 align:start position:0%
+has a slight overhead and can generate a
+ 
+
+00:12:41.930 --> 00:12:44.530 align:start position:0%
+has a slight overhead and can generate a
+lot<00:12:42.200><c> of</c><00:12:42.230><c> data</c><00:12:42.470><c> it</c><00:12:43.310><c> does</c><00:12:43.460><c> not</c><00:12:43.580><c> turn</c><00:12:44.120><c> on</c><00:12:44.150><c> by</c>
+
+00:12:44.530 --> 00:12:44.540 align:start position:0%
+lot of data it does not turn on by
+ 
+
+00:12:44.540 --> 00:12:47.440 align:start position:0%
+lot of data it does not turn on by
+default<00:12:45.310><c> instead</c><00:12:46.310><c> it</c><00:12:46.520><c> is</c><00:12:46.550><c> included</c><00:12:47.150><c> in</c><00:12:47.300><c> our</c>
+
+00:12:47.440 --> 00:12:47.450 align:start position:0%
+default instead it is included in our
+ 
+
+00:12:47.450 --> 00:12:49.510 align:start position:0%
+default instead it is included in our
+settings<00:12:48.140><c> for</c><00:12:48.440><c> our</c><00:12:48.590><c> doing</c><00:12:48.980><c> a</c><00:12:49.100><c> profile</c>
+
+00:12:49.510 --> 00:12:49.520 align:start position:0%
+settings for our doing a profile
+ 
+
+00:12:49.520 --> 00:12:51.530 align:start position:0%
+settings for our doing a profile
+recording
+
+00:12:51.530 --> 00:12:51.540 align:start position:0%
+recording
+ 
+
+00:12:51.540 --> 00:12:53.390 align:start position:0%
+recording
+we<00:12:51.840><c> will</c><00:12:51.990><c> start</c><00:12:52.290><c> an</c><00:12:52.410><c> additional</c><00:12:52.860><c> recording</c>
+
+00:12:53.390 --> 00:12:53.400 align:start position:0%
+we will start an additional recording
+ 
+
+00:12:53.400 --> 00:12:56.810 align:start position:0%
+we will start an additional recording
+and<00:12:53.910><c> we</c><00:12:54.030><c> will</c><00:12:54.180><c> explicitly</c><00:12:54.510><c> pass</c><00:12:55.400><c> the</c><00:12:56.400><c> settings</c>
+
+00:12:56.810 --> 00:12:56.820 align:start position:0%
+and we will explicitly pass the settings
+ 
+
+00:12:56.820 --> 00:13:00.890 align:start position:0%
+and we will explicitly pass the settings
+to<00:12:57.000><c> do</c><00:12:57.150><c> a</c><00:12:57.180><c> profile</c><00:12:57.870><c> recording</c><00:12:58.470><c> to</c><00:12:58.740><c> JFR</c><00:12:59.900><c> with</c>
+
+00:13:00.890 --> 00:13:00.900 align:start position:0%
+to do a profile recording to JFR with
+ 
+
+00:13:00.900 --> 00:13:02.810 align:start position:0%
+to do a profile recording to JFR with
+this<00:13:01.050><c> heavy</c><00:13:01.260><c> rate</c><00:13:01.530><c> of</c><00:13:01.680><c> allocation</c><00:13:02.250><c> though</c><00:13:02.430><c> we</c>
+
+00:13:02.810 --> 00:13:02.820 align:start position:0%
+this heavy rate of allocation though we
+ 
+
+00:13:02.820 --> 00:13:05.120 align:start position:0%
+this heavy rate of allocation though we
+only<00:13:03.000><c> need</c><00:13:03.360><c> to</c><00:13:03.540><c> have</c><00:13:03.690><c> a</c><00:13:03.720><c> very</c><00:13:04.050><c> short</c><00:13:04.350><c> sample</c><00:13:04.710><c> to</c>
+
+00:13:05.120 --> 00:13:05.130 align:start position:0%
+only need to have a very short sample to
+ 
+
+00:13:05.130 --> 00:13:07.730 align:start position:0%
+only need to have a very short sample to
+understand<00:13:05.520><c> what</c><00:13:05.730><c> might</c><00:13:05.940><c> be</c><00:13:06.120><c> allocating</c><00:13:06.740><c> so</c>
+
+00:13:07.730 --> 00:13:07.740 align:start position:0%
+understand what might be allocating so
+ 
+
+00:13:07.740 --> 00:13:10.070 align:start position:0%
+understand what might be allocating so
+we<00:13:07.860><c> will</c><00:13:08.010><c> also</c><00:13:08.160><c> unless</c><00:13:08.550><c> another</c><00:13:08.850><c> option</c><00:13:09.390><c> there</c>
+
+00:13:10.070 --> 00:13:10.080 align:start position:0%
+we will also unless another option there
+ 
+
+00:13:10.080 --> 00:13:13.250 align:start position:0%
+we will also unless another option there
+is<00:13:10.110><c> called</c><00:13:10.380><c> duration</c><00:13:10.950><c> which</c><00:13:11.940><c> lets</c><00:13:12.270><c> us</c><00:13:12.420><c> each</c>
+
+00:13:13.250 --> 00:13:13.260 align:start position:0%
+is called duration which lets us each
+ 
+
+00:13:13.260 --> 00:13:15.800 align:start position:0%
+is called duration which lets us each
+schedule<00:13:14.160><c> a</c><00:13:14.310><c> time-based</c><00:13:14.610><c> recording</c><00:13:15.480><c> and</c>
+
+00:13:15.800 --> 00:13:15.810 align:start position:0%
+schedule a time-based recording and
+ 
+
+00:13:15.810 --> 00:13:19.310 align:start position:0%
+schedule a time-based recording and
+let's<00:13:16.650><c> just</c><00:13:16.860><c> run</c><00:13:17.010><c> it</c><00:13:17.130><c> for</c><00:13:17.280><c> one</c><00:13:17.430><c> minute</c><00:13:18.140><c> at</c><00:13:19.140><c> the</c>
+
+00:13:19.310 --> 00:13:19.320 align:start position:0%
+let's just run it for one minute at the
+ 
+
+00:13:19.320 --> 00:13:21.530 align:start position:0%
+let's just run it for one minute at the
+end<00:13:19.470><c> of</c><00:13:19.650><c> this</c><00:13:19.740><c> minute</c><00:13:20.070><c> JFR</c><00:13:20.820><c> will</c><00:13:21.030><c> stop</c><00:13:21.330><c> and</c>
+
+00:13:21.530 --> 00:13:21.540 align:start position:0%
+end of this minute JFR will stop and
+ 
+
+00:13:21.540 --> 00:13:23.510 align:start position:0%
+end of this minute JFR will stop and
+dump<00:13:21.900><c> the</c><00:13:22.080><c> recording</c><00:13:22.530><c> to</c><00:13:22.710><c> the</c><00:13:22.740><c> file</c><00:13:23.130><c> name</c><00:13:23.370><c> we</c>
+
+00:13:23.510 --> 00:13:23.520 align:start position:0%
+dump the recording to the file name we
+ 
+
+00:13:23.520 --> 00:13:25.220 align:start position:0%
+dump the recording to the file name we
+specify<00:13:24.030><c> and</c><00:13:24.300><c> here</c><00:13:24.660><c> we</c><00:13:24.780><c> name</c><00:13:24.930><c> it</c>
+
+00:13:25.220 --> 00:13:25.230 align:start position:0%
+specify and here we name it
+ 
+
+00:13:25.230 --> 00:13:28.640 align:start position:0%
+specify and here we name it
+allocation<00:13:25.680><c> the</c><00:13:26.220><c> GFR</c><00:13:26.700><c> we</c><00:13:27.300><c> open</c><00:13:27.630><c> allocation</c><00:13:28.230><c> j4</c>
+
+00:13:28.640 --> 00:13:28.650 align:start position:0%
+allocation the GFR we open allocation j4
+ 
+
+00:13:28.650 --> 00:13:31.280 align:start position:0%
+allocation the GFR we open allocation j4
+in<00:13:28.740><c> JMC</c><00:13:29.220><c> and</c><00:13:30.030><c> we</c><00:13:30.180><c> can</c><00:13:30.360><c> see</c><00:13:30.570><c> that</c><00:13:30.810><c> our</c><00:13:30.990><c> top</c>
+
+00:13:31.280 --> 00:13:31.290 align:start position:0%
+in JMC and we can see that our top
+ 
+
+00:13:31.290 --> 00:13:33.380 align:start position:0%
+in JMC and we can see that our top
+section<00:13:31.860><c> has</c><00:13:32.340><c> been</c><00:13:32.370><c> populated</c><00:13:33.060><c> by</c>
+
+00:13:33.380 --> 00:13:33.390 align:start position:0%
+section has been populated by
+ 
+
+00:13:33.390 --> 00:13:37.190 align:start position:0%
+section has been populated by
+information<00:13:33.690><c> about</c><00:13:34.290><c> allocations</c><00:13:35.810><c> here</c><00:13:36.810><c> all</c>
+
+00:13:37.190 --> 00:13:37.200 align:start position:0%
+information about allocations here all
+ 
+
+00:13:37.200 --> 00:13:39.500 align:start position:0%
+information about allocations here all
+the<00:13:37.890><c> sample</c><00:13:38.310><c> instances</c><00:13:38.910><c> are</c><00:13:39.060><c> grouped</c>
+
+00:13:39.500 --> 00:13:39.510 align:start position:0%
+the sample instances are grouped
+ 
+
+00:13:39.510 --> 00:13:42.770 align:start position:0%
+the sample instances are grouped
+according<00:13:39.840><c> to</c><00:13:40.260><c> class</c><00:13:41.000><c> and</c><00:13:42.000><c> we</c><00:13:42.120><c> can</c><00:13:42.270><c> see</c><00:13:42.510><c> that</c>
+
+00:13:42.770 --> 00:13:42.780 align:start position:0%
+according to class and we can see that
+ 
+
+00:13:42.780 --> 00:13:45.740 align:start position:0%
+according to class and we can see that
+the<00:13:43.470><c> top</c><00:13:43.680><c> candidate</c><00:13:44.220><c> seems</c><00:13:44.880><c> to</c><00:13:45.030><c> be</c><00:13:45.210><c> a</c><00:13:45.240><c> boolean</c>
+
+00:13:45.740 --> 00:13:45.750 align:start position:0%
+the top candidate seems to be a boolean
+ 
+
+00:13:45.750 --> 00:13:49.850 align:start position:0%
+the top candidate seems to be a boolean
+array<00:13:46.880><c> trick</c><00:13:47.880><c> mark</c><00:13:48.360><c> this</c><00:13:48.630><c> boolean</c><00:13:49.020><c> array</c><00:13:49.140><c> we</c>
+
+00:13:49.850 --> 00:13:49.860 align:start position:0%
+array trick mark this boolean array we
+ 
+
+00:13:49.860 --> 00:13:52.850 align:start position:0%
+array trick mark this boolean array we
+can<00:13:49.890><c> see</c><00:13:50.190><c> in</c><00:13:50.310><c> the</c><00:13:50.430><c> stack</c><00:13:50.670><c> trace</c><00:13:50.880><c> below</c><00:13:51.860><c> the</c>
+
+00:13:52.850 --> 00:13:52.860 align:start position:0%
+can see in the stack trace below the
+ 
+
+00:13:52.860 --> 00:13:55.910 align:start position:0%
+can see in the stack trace below the
+actual<00:13:53.130><c> allocation</c><00:13:53.370><c> sites</c><00:13:54.440><c> aggregating</c><00:13:55.440><c> onto</c>
+
+00:13:55.910 --> 00:13:55.920 align:start position:0%
+actual allocation sites aggregating onto
+ 
+
+00:13:55.920 --> 00:13:59.540 align:start position:0%
+actual allocation sites aggregating onto
+these<00:13:56.010><c> allocations</c><00:13:56.700><c> and</c><00:13:56.940><c> here</c><00:13:57.780><c> it</c><00:13:58.050><c> seems</c><00:13:58.550><c> that</c>
+
+00:13:59.540 --> 00:13:59.550 align:start position:0%
+these allocations and here it seems that
+ 
+
+00:13:59.550 --> 00:14:02.380 align:start position:0%
+these allocations and here it seems that
+there<00:13:59.760><c> is</c><00:13:59.790><c> only</c><00:14:00.180><c> one</c><00:14:00.510><c> single</c><00:14:00.780><c> allocation</c><00:14:01.470><c> site</c>
+
+00:14:02.380 --> 00:14:02.390 align:start position:0%
+there is only one single allocation site
+ 
+
+00:14:02.390 --> 00:14:05.630 align:start position:0%
+there is only one single allocation site
+let's<00:14:03.390><c> inspect</c><00:14:03.690><c> this</c><00:14:03.840><c> code</c><00:14:04.110><c> this</c><00:14:05.070><c> section</c><00:14:05.520><c> of</c>
+
+00:14:05.630 --> 00:14:05.640 align:start position:0%
+let's inspect this code this section of
+ 
+
+00:14:05.640 --> 00:14:07.010 align:start position:0%
+let's inspect this code this section of
+the<00:14:05.670><c> application</c><00:14:05.850><c> is</c><00:14:06.420><c> involved</c><00:14:06.930><c> in</c>
+
+00:14:07.010 --> 00:14:07.020 align:start position:0%
+the application is involved in
+ 
+
+00:14:07.020 --> 00:14:09.680 align:start position:0%
+the application is involved in
+calculating<00:14:07.230><c> prime</c><00:14:07.920><c> numbers</c><00:14:08.390><c> and</c><00:14:09.390><c> we</c><00:14:09.510><c> saw</c>
+
+00:14:09.680 --> 00:14:09.690 align:start position:0%
+calculating prime numbers and we saw
+ 
+
+00:14:09.690 --> 00:14:11.930 align:start position:0%
+calculating prime numbers and we saw
+that<00:14:09.720><c> j4</c><00:14:10.320><c> pinpointed</c><00:14:10.980><c> the</c><00:14:11.070><c> allocation</c><00:14:11.700><c> site</c>
+
+00:14:11.930 --> 00:14:11.940 align:start position:0%
+that j4 pinpointed the allocation site
+ 
+
+00:14:11.940 --> 00:14:13.700 align:start position:0%
+that j4 pinpointed the allocation site
+from<00:14:12.180><c> the</c><00:14:12.240><c> boolean</c><00:14:12.660><c> and</c><00:14:12.780><c> race</c><00:14:12.960><c> to</c><00:14:13.380><c> the</c><00:14:13.500><c> line</c>
+
+00:14:13.700 --> 00:14:13.710 align:start position:0%
+from the boolean and race to the line
+ 
+
+00:14:13.710 --> 00:14:17.180 align:start position:0%
+from the boolean and race to the line
+number<00:14:14.310><c> 35</c><00:14:15.030><c> of</c><00:14:15.270><c> the</c><00:14:15.600><c> Eratosthenes</c><00:14:16.530><c> algorithm</c>
+
+00:14:17.180 --> 00:14:17.190 align:start position:0%
+number 35 of the Eratosthenes algorithm
+ 
+
+00:14:17.190 --> 00:14:20.120 align:start position:0%
+number 35 of the Eratosthenes algorithm
+and<00:14:17.780><c> here</c><00:14:18.780><c> the</c><00:14:18.960><c> boolean</c><00:14:19.290><c> array</c><00:14:19.440><c> has</c><00:14:19.710><c> been</c><00:14:19.890><c> used</c>
+
+00:14:20.120 --> 00:14:20.130 align:start position:0%
+and here the boolean array has been used
+ 
+
+00:14:20.130 --> 00:14:22.520 align:start position:0%
+and here the boolean array has been used
+as<00:14:20.340><c> the</c><00:14:20.940><c> sifting</c><00:14:21.300><c> array</c><00:14:21.540><c> having</c><00:14:22.230><c> had</c><00:14:22.380><c> this</c>
+
+00:14:22.520 --> 00:14:22.530 align:start position:0%
+as the sifting array having had this
+ 
+
+00:14:22.530 --> 00:14:24.950 align:start position:0%
+as the sifting array having had this
+site<00:14:22.800><c> pinpointed</c><00:14:23.550><c> to</c><00:14:23.700><c> us</c><00:14:23.820><c> but</c><00:14:24.060><c> j4</c><00:14:24.540><c> has</c><00:14:24.750><c> been</c>
+
+00:14:24.950 --> 00:14:24.960 align:start position:0%
+site pinpointed to us but j4 has been
+ 
+
+00:14:24.960 --> 00:14:28.000 align:start position:0%
+site pinpointed to us but j4 has been
+related<00:14:25.500><c> to</c><00:14:25.650><c> high</c><00:14:25.890><c> frequency</c><00:14:26.520><c> of</c><00:14:26.580><c> GCS</c><00:14:27.120><c> and</c>
+
+00:14:28.000 --> 00:14:28.010 align:start position:0%
+related to high frequency of GCS and
+ 
+
+00:14:28.010 --> 00:14:31.580 align:start position:0%
+related to high frequency of GCS and
+consequently<00:14:29.010><c> of</c><00:14:29.190><c> GZ</c><00:14:29.400><c> pulse</c><00:14:29.760><c> times</c><00:14:30.440><c> we</c><00:14:31.440><c> can</c>
+
+00:14:31.580 --> 00:14:31.590 align:start position:0%
+consequently of GZ pulse times we can
+ 
+
+00:14:31.590 --> 00:14:33.380 align:start position:0%
+consequently of GZ pulse times we can
+now<00:14:31.740><c> start</c><00:14:31.800><c> to</c><00:14:32.190><c> think</c><00:14:32.550><c> how</c><00:14:32.760><c> it</c><00:14:33.000><c> could</c><00:14:33.030><c> make</c>
+
+00:14:33.380 --> 00:14:33.390 align:start position:0%
+now start to think how it could make
+ 
+
+00:14:33.390 --> 00:14:36.440 align:start position:0%
+now start to think how it could make
+this<00:14:33.630><c> application</c><00:14:34.260><c> more</c><00:14:34.410><c> effective</c><00:14:35.090><c> maybe</c><00:14:36.090><c> by</c>
+
+00:14:36.440 --> 00:14:36.450 align:start position:0%
+this application more effective maybe by
+ 
+
+00:14:36.450 --> 00:14:39.050 align:start position:0%
+this application more effective maybe by
+redesigning<00:14:37.230><c> this</c><00:14:37.650><c> piece</c><00:14:37.920><c> of</c><00:14:38.070><c> code</c><00:14:38.310><c> to</c><00:14:38.580><c> not</c>
+
+00:14:39.050 --> 00:14:39.060 align:start position:0%
+redesigning this piece of code to not
+ 
+
+00:14:39.060 --> 00:14:43.220 align:start position:0%
+redesigning this piece of code to not
+allocate<00:14:39.780><c> us</c><00:14:39.990><c> frequently</c><00:14:41.300><c> maybe</c><00:14:42.300><c> by</c><00:14:42.720><c> using</c><00:14:42.990><c> a</c>
+
+00:14:43.220 --> 00:14:43.230 align:start position:0%
+allocate us frequently maybe by using a
+ 
+
+00:14:43.230 --> 00:14:45.080 align:start position:0%
+allocate us frequently maybe by using a
+caching<00:14:43.470><c> technique</c><00:14:44.010><c> or</c><00:14:44.310><c> some</c><00:14:44.790><c> kind</c><00:14:45.030><c> of</c>
+
+00:14:45.080 --> 00:14:45.090 align:start position:0%
+caching technique or some kind of
+ 
+
+00:14:45.090 --> 00:14:48.560 align:start position:0%
+caching technique or some kind of
+memorization<00:14:46.010><c> we</c><00:14:47.010><c> would</c><00:14:47.190><c> be</c><00:14:47.370><c> able</c><00:14:47.490><c> to</c><00:14:47.970><c> much</c>
+
+00:14:48.560 --> 00:14:48.570 align:start position:0%
+memorization we would be able to much
+ 
+
+00:14:48.570 --> 00:14:50.900 align:start position:0%
+memorization we would be able to much
+more<00:14:48.840><c> effective</c><00:14:49.290><c> where</c><00:14:50.190><c> we're</c><00:14:50.430><c> involved</c><00:14:50.850><c> in</c>
+
+00:14:50.900 --> 00:14:50.910 align:start position:0%
+more effective where we're involved in
+ 
+
+00:14:50.910 --> 00:14:52.700 align:start position:0%
+more effective where we're involved in
+the<00:14:51.030><c> analysis</c><00:14:51.570><c> of</c><00:14:51.720><c> this</c><00:14:51.900><c> level</c><00:14:52.140><c> it's</c><00:14:52.530><c> very</c>
+
+00:14:52.700 --> 00:14:52.710 align:start position:0%
+the analysis of this level it's very
+ 
+
+00:14:52.710 --> 00:14:54.290 align:start position:0%
+the analysis of this level it's very
+easy<00:14:52.980><c> to</c><00:14:53.190><c> lose</c><00:14:53.340><c> track</c><00:14:53.400><c> of</c><00:14:53.670><c> the</c><00:14:53.910><c> bigger</c><00:14:54.090><c> picture</c>
+
+00:14:54.290 --> 00:14:54.300 align:start position:0%
+easy to lose track of the bigger picture
+ 
+
+00:14:54.300 --> 00:14:56.480 align:start position:0%
+easy to lose track of the bigger picture
+we<00:14:54.900><c> might</c><00:14:55.080><c> think</c><00:14:55.290><c> well</c><00:14:55.770><c> what's</c><00:14:56.100><c> 40</c>
+
+00:14:56.480 --> 00:14:56.490 align:start position:0%
+we might think well what's 40
+ 
+
+00:14:56.490 --> 00:14:58.940 align:start position:0%
+we might think well what's 40
+milliseconds<00:14:57.110><c> should</c><00:14:58.110><c> try</c><00:14:58.290><c> to</c><00:14:58.350><c> always</c><00:14:58.680><c> remind</c>
+
+00:14:58.940 --> 00:14:58.950 align:start position:0%
+milliseconds should try to always remind
+ 
+
+00:14:58.950 --> 00:15:00.920 align:start position:0%
+milliseconds should try to always remind
+ourselves<00:14:59.130><c> of</c><00:14:59.520><c> the</c><00:14:59.580><c> concept</c><00:15:00.060><c> of</c><00:15:00.120><c> scale</c><00:15:00.270><c> so</c>
+
+00:15:00.920 --> 00:15:00.930 align:start position:0%
+ourselves of the concept of scale so
+ 
+
+00:15:00.930 --> 00:15:02.480 align:start position:0%
+ourselves of the concept of scale so
+let's<00:15:01.110><c> try</c><00:15:01.290><c> to</c><00:15:01.320><c> answer</c><00:15:01.560><c> this</c><00:15:01.830><c> question</c>
+
+00:15:02.480 --> 00:15:02.490 align:start position:0%
+let's try to answer this question
+ 
+
+00:15:02.490 --> 00:15:05.370 align:start position:0%
+let's try to answer this question
+what's<00:15:02.790><c> 40</c><00:15:03.150><c> milliseconds</c><00:15:03.720><c> 40</c><00:15:04.500><c> milliseconds</c>
+
+00:15:05.370 --> 00:15:05.380 align:start position:0%
+what's 40 milliseconds 40 milliseconds
+ 
+
+00:15:05.380 --> 00:15:09.450 align:start position:0%
+what's 40 milliseconds 40 milliseconds
+is<00:15:05.770><c> 4%</c><00:15:06.510><c> 4%</c><00:15:07.510><c> of</c><00:15:07.930><c> the</c><00:15:08.020><c> time</c><00:15:08.230><c> our</c><00:15:08.650><c> application</c><00:15:09.310><c> is</c>
+
+00:15:09.450 --> 00:15:09.460 align:start position:0%
+is 4% 4% of the time our application is
+ 
+
+00:15:09.460 --> 00:15:10.650 align:start position:0%
+is 4% 4% of the time our application is
+not<00:15:09.640><c> doing</c><00:15:10.090><c> anything</c>
+
+00:15:10.650 --> 00:15:10.660 align:start position:0%
+not doing anything
+ 
+
+00:15:10.660 --> 00:15:14.010 align:start position:0%
+not doing anything
+it<00:15:10.720><c> is</c><00:15:10.870><c> pause</c><00:15:11.170><c> because</c><00:15:11.590><c> of</c><00:15:11.740><c> GC</c><00:15:12.040><c> activity</c><00:15:12.870><c> 4%</c><00:15:13.870><c> of</c>
+
+00:15:14.010 --> 00:15:14.020 align:start position:0%
+it is pause because of GC activity 4% of
+ 
+
+00:15:14.020 --> 00:15:17.460 align:start position:0%
+it is pause because of GC activity 4% of
+24<00:15:14.440><c> hours</c><00:15:14.770><c> is</c><00:15:15.010><c> almost</c><00:15:15.460><c> one</c><00:15:15.700><c> hour</c><00:15:16.050><c> 4%</c><00:15:17.050><c> of</c><00:15:17.140><c> a</c><00:15:17.230><c> week</c>
+
+00:15:17.460 --> 00:15:17.470 align:start position:0%
+24 hours is almost one hour 4% of a week
+ 
+
+00:15:17.470 --> 00:15:20.430 align:start position:0%
+24 hours is almost one hour 4% of a week
+is<00:15:17.710><c> almost</c><00:15:18.100><c> 7</c><00:15:18.400><c> hours</c><00:15:18.490><c> so</c><00:15:19.300><c> 7</c><00:15:19.600><c> hours</c><00:15:19.810><c> per</c><00:15:20.020><c> week</c>
+
+00:15:20.430 --> 00:15:20.440 align:start position:0%
+is almost 7 hours so 7 hours per week
+ 
+
+00:15:20.440 --> 00:15:22.380 align:start position:0%
+is almost 7 hours so 7 hours per week
+this<00:15:20.590><c> application</c><00:15:20.800><c> is</c><00:15:21.280><c> not</c><00:15:21.490><c> doing</c><00:15:21.820><c> any</c><00:15:21.940><c> useful</c>
+
+00:15:22.380 --> 00:15:22.390 align:start position:0%
+this application is not doing any useful
+ 
+
+00:15:22.390 --> 00:15:25.380 align:start position:0%
+this application is not doing any useful
+work<00:15:22.830><c> let's</c><00:15:23.830><c> say</c><00:15:24.040><c> we've</c><00:15:24.250><c> deployed</c><00:15:24.670><c> hundred</c><00:15:25.270><c> of</c>
+
+00:15:25.380 --> 00:15:25.390 align:start position:0%
+work let's say we've deployed hundred of
+ 
+
+00:15:25.390 --> 00:15:28.260 align:start position:0%
+work let's say we've deployed hundred of
+these<00:15:25.540><c> instances</c><00:15:26.200><c> so</c><00:15:26.800><c> 700</c><00:15:27.580><c> hours</c><00:15:27.730><c> per</c><00:15:28.240><c> week</c>
+
+00:15:28.260 --> 00:15:28.270 align:start position:0%
+these instances so 700 hours per week
+ 
+
+00:15:28.270 --> 00:15:31.730 align:start position:0%
+these instances so 700 hours per week
+our<00:15:28.900><c> application</c><00:15:29.620><c> sibling</c><00:15:30.280><c> is</c><00:15:30.460><c> sitting</c><00:15:30.820><c> idle</c>
+
+00:15:31.730 --> 00:15:31.740 align:start position:0%
+our application sibling is sitting idle
+ 
+
+00:15:31.740 --> 00:15:34.320 align:start position:0%
+our application sibling is sitting idle
+now<00:15:32.740><c> if</c><00:15:32.890><c> you</c><00:15:33.010><c> also</c><00:15:33.130><c> had</c><00:15:33.400><c> some</c><00:15:33.610><c> business</c><00:15:33.790><c> model</c>
+
+00:15:34.320 --> 00:15:34.330 align:start position:0%
+now if you also had some business model
+ 
+
+00:15:34.330 --> 00:15:36.600 align:start position:0%
+now if you also had some business model
+we<00:15:35.230><c> could</c><00:15:35.380><c> extend</c><00:15:35.770><c> this</c><00:15:35.950><c> thought</c><00:15:36.220><c> experiment</c>
+
+00:15:36.600 --> 00:15:36.610 align:start position:0%
+we could extend this thought experiment
+ 
+
+00:15:36.610 --> 00:15:39.840 align:start position:0%
+we could extend this thought experiment
+by<00:15:37.210><c> by</c><00:15:37.780><c> factoring</c><00:15:38.200><c> in</c><00:15:38.440><c> a</c><00:15:38.650><c> monetary</c><00:15:39.100><c> value</c><00:15:39.190><c> per</c>
+
+00:15:39.840 --> 00:15:39.850 align:start position:0%
+by by factoring in a monetary value per
+ 
+
+00:15:39.850 --> 00:15:44.700 align:start position:0%
+by by factoring in a monetary value per
+compute<00:15:40.300><c> hour</c><00:15:42.000><c> so</c><00:15:43.000><c> if</c><00:15:43.750><c> we</c><00:15:43.960><c> can</c><00:15:44.140><c> just</c><00:15:44.170><c> figure</c>
+
+00:15:44.700 --> 00:15:44.710 align:start position:0%
+compute hour so if we can just figure
+ 
+
+00:15:44.710 --> 00:15:47.880 align:start position:0%
+compute hour so if we can just figure
+out<00:15:44.980><c> a</c><00:15:45.340><c> way</c><00:15:45.610><c> to</c><00:15:45.910><c> maybe</c><00:15:46.270><c> have</c><00:15:46.630><c> just</c><00:15:46.660><c> a</c><00:15:47.020><c> single</c><00:15:47.290><c> GC</c>
+
+00:15:47.880 --> 00:15:47.890 align:start position:0%
+out a way to maybe have just a single GC
+ 
+
+00:15:47.890 --> 00:15:50.280 align:start position:0%
+out a way to maybe have just a single GC
+happen<00:15:48.250><c> every</c><00:15:48.490><c> second</c><00:15:48.910><c> or</c><00:15:49.690><c> that</c><00:15:49.870><c> we</c><00:15:49.990><c> can</c><00:15:50.140><c> get</c>
+
+00:15:50.280 --> 00:15:50.290 align:start position:0%
+happen every second or that we can get
+ 
+
+00:15:50.290 --> 00:15:51.810 align:start position:0%
+happen every second or that we can get
+there<00:15:50.440><c> pause</c><00:15:50.710><c> times</c><00:15:51.040><c> down</c><00:15:51.370><c> to</c><00:15:51.580><c> 10</c>
+
+00:15:51.810 --> 00:15:51.820 align:start position:0%
+there pause times down to 10
+ 
+
+00:15:51.820 --> 00:15:54.360 align:start position:0%
+there pause times down to 10
+milliseconds<00:15:52.480><c> we</c><00:15:53.440><c> would</c><00:15:53.620><c> have</c><00:15:53.740><c> improved</c><00:15:54.070><c> our</c>
+
+00:15:54.360 --> 00:15:54.370 align:start position:0%
+milliseconds we would have improved our
+ 
+
+00:15:54.370 --> 00:15:58.130 align:start position:0%
+milliseconds we would have improved our
+effectiveness<00:15:54.970><c> by</c><00:15:55.690><c> 350</c><00:15:56.500><c> hours</c><00:15:56.650><c> per</c><00:15:57.280><c> week</c>
+
+00:15:58.130 --> 00:15:58.140 align:start position:0%
+effectiveness by 350 hours per week
+ 
+
+00:15:58.140 --> 00:15:59.940 align:start position:0%
+effectiveness by 350 hours per week
+closing<00:15:59.140><c> out</c><00:15:59.260><c> this</c><00:15:59.410><c> brief</c><00:15:59.680><c> demonstration</c>
+
+00:15:59.940 --> 00:15:59.950 align:start position:0%
+closing out this brief demonstration
+ 
+
+00:15:59.950 --> 00:16:02.070 align:start position:0%
+closing out this brief demonstration
+there's<00:16:00.790><c> one</c><00:16:01.000><c> more</c><00:16:01.180><c> piece</c><00:16:01.390><c> that</c><00:16:01.420><c> I</c><00:16:01.780><c> would</c><00:16:01.840><c> like</c>
+
+00:16:02.070 --> 00:16:02.080 align:start position:0%
+there's one more piece that I would like
+ 
+
+00:16:02.080 --> 00:16:04.730 align:start position:0%
+there's one more piece that I would like
+to<00:16:02.200><c> show</c><00:16:02.410><c> you</c><00:16:02.470><c> I</c><00:16:02.830><c> searched</c><00:16:03.820><c> a</c><00:16:03.940><c> decade</c><00:16:04.240><c> knowing</c>
+
+00:16:04.730 --> 00:16:04.740 align:start position:0%
+to show you I searched a decade knowing
+ 
+
+00:16:04.740 --> 00:16:08.340 align:start position:0%
+to show you I searched a decade knowing
+we<00:16:05.740><c> provide</c><00:16:06.130><c> Java</c><00:16:06.550><c> API</c><00:16:07.000><c> that</c><00:16:07.900><c> allows</c><00:16:08.050><c> you</c><00:16:08.290><c> to</c>
+
+00:16:08.340 --> 00:16:08.350 align:start position:0%
+we provide Java API that allows you to
+ 
+
+00:16:08.350 --> 00:16:10.320 align:start position:0%
+we provide Java API that allows you to
+create<00:16:08.560><c> your</c><00:16:08.800><c> own</c><00:16:08.860><c> application</c><00:16:09.820><c> specific</c>
+
+00:16:10.320 --> 00:16:10.330 align:start position:0%
+create your own application specific
+ 
+
+00:16:10.330 --> 00:16:13.440 align:start position:0%
+create your own application specific
+events<00:16:10.720><c> into</c><00:16:10.930><c> JFR</c><00:16:11.820><c> although</c><00:16:12.820><c> I</c><00:16:12.850><c> will</c><00:16:13.120><c> not</c><00:16:13.270><c> have</c>
+
+00:16:13.440 --> 00:16:13.450 align:start position:0%
+events into JFR although I will not have
+ 
+
+00:16:13.450 --> 00:16:15.180 align:start position:0%
+events into JFR although I will not have
+the<00:16:13.630><c> time</c><00:16:13.870><c> here</c><00:16:14.320><c> to</c><00:16:14.380><c> demonstrate</c><00:16:14.980><c> how</c><00:16:15.130><c> to</c>
+
+00:16:15.180 --> 00:16:15.190 align:start position:0%
+the time here to demonstrate how to
+ 
+
+00:16:15.190 --> 00:16:17.550 align:start position:0%
+the time here to demonstrate how to
+program<00:16:15.760><c> using</c><00:16:16.090><c> the</c><00:16:16.120><c> API</c><00:16:16.420><c> I</c><00:16:16.750><c> would</c><00:16:17.260><c> like</c><00:16:17.440><c> to</c>
+
+00:16:17.550 --> 00:16:17.560 align:start position:0%
+program using the API I would like to
+ 
+
+00:16:17.560 --> 00:16:19.740 align:start position:0%
+program using the API I would like to
+show<00:16:17.770><c> you</c><00:16:17.800><c> an</c><00:16:18.130><c> example</c><00:16:18.250><c> what</c><00:16:18.940><c> a</c><00:16:18.970><c> custom</c><00:16:19.480><c> event</c>
+
+00:16:19.740 --> 00:16:19.750 align:start position:0%
+show you an example what a custom event
+ 
+
+00:16:19.750 --> 00:16:23.100 align:start position:0%
+show you an example what a custom event
+might<00:16:20.080><c> look</c><00:16:20.290><c> like</c><00:16:20.970><c> as</c><00:16:21.970><c> you</c><00:16:22.360><c> remember</c><00:16:22.870><c> my</c>
+
+00:16:23.100 --> 00:16:23.110 align:start position:0%
+might look like as you remember my
+ 
+
+00:16:23.110 --> 00:16:24.780 align:start position:0%
+might look like as you remember my
+application<00:16:23.680><c> has</c><00:16:23.830><c> a</c><00:16:23.860><c> section</c><00:16:24.220><c> that</c><00:16:24.400><c> involves</c>
+
+00:16:24.780 --> 00:16:24.790 align:start position:0%
+application has a section that involves
+ 
+
+00:16:24.790 --> 00:16:27.150 align:start position:0%
+application has a section that involves
+calculating<00:16:25.210><c> prime</c><00:16:25.600><c> numbers</c><00:16:25.990><c> and</c><00:16:26.230><c> here</c><00:16:27.040><c> we</c>
+
+00:16:27.150 --> 00:16:27.160 align:start position:0%
+calculating prime numbers and here we
+ 
+
+00:16:27.160 --> 00:16:29.640 align:start position:0%
+calculating prime numbers and here we
+can<00:16:27.310><c> see</c><00:16:27.490><c> a</c><00:16:27.520><c> custom</c><00:16:28.030><c> event</c><00:16:28.150><c> I</c><00:16:28.480><c> added</c><00:16:28.870><c> two</c><00:16:29.230><c> JFR</c>
+
+00:16:29.640 --> 00:16:29.650 align:start position:0%
+can see a custom event I added two JFR
+ 
+
+00:16:29.650 --> 00:16:32.310 align:start position:0%
+can see a custom event I added two JFR
+to<00:16:29.920><c> represent</c><00:16:30.430><c> these</c><00:16:30.610><c> calculations</c><00:16:31.320><c> there's</c>
+
+00:16:32.310 --> 00:16:32.320 align:start position:0%
+to represent these calculations there's
+ 
+
+00:16:32.320 --> 00:16:34.740 align:start position:0%
+to represent these calculations there's
+a<00:16:32.380><c> lot</c><00:16:32.560><c> of</c><00:16:32.710><c> details</c><00:16:33.100><c> here</c><00:16:33.190><c> that</c><00:16:33.970><c> might</c><00:16:34.480><c> need</c><00:16:34.690><c> to</c>
+
+00:16:34.740 --> 00:16:34.750 align:start position:0%
+a lot of details here that might need to
+ 
+
+00:16:34.750 --> 00:16:36.690 align:start position:0%
+a lot of details here that might need to
+cover<00:16:35.020><c> some</c><00:16:35.230><c> other</c><00:16:35.350><c> time</c><00:16:35.650><c> but</c><00:16:36.370><c> the</c><00:16:36.520><c> main</c>
+
+00:16:36.690 --> 00:16:36.700 align:start position:0%
+cover some other time but the main
+ 
+
+00:16:36.700 --> 00:16:38.670 align:start position:0%
+cover some other time but the main
+takeaway<00:16:37.270><c> message</c><00:16:37.720><c> is</c><00:16:37.930><c> that</c><00:16:37.990><c> there</c><00:16:38.410><c> is</c><00:16:38.500><c> no</c>
+
+00:16:38.670 --> 00:16:38.680 align:start position:0%
+takeaway message is that there is no
+ 
+
+00:16:38.680 --> 00:16:40.920 align:start position:0%
+takeaway message is that there is no
+categorical<00:16:39.190><c> difference</c><00:16:39.790><c> between</c><00:16:40.210><c> this</c>
+
+00:16:40.920 --> 00:16:40.930 align:start position:0%
+categorical difference between this
+ 
+
+00:16:40.930 --> 00:16:43.440 align:start position:0%
+categorical difference between this
+custom<00:16:41.710><c> event</c><00:16:42.010><c> and</c><00:16:42.250><c> the</c><00:16:42.730><c> events</c><00:16:43.090><c> we've</c><00:16:43.270><c> been</c>
+
+00:16:43.440 --> 00:16:43.450 align:start position:0%
+custom event and the events we've been
+ 
+
+00:16:43.450 --> 00:16:46.320 align:start position:0%
+custom event and the events we've been
+inspecting<00:16:43.990><c> so</c><00:16:44.170><c> far</c><00:16:44.730><c> of</c><00:16:45.730><c> course</c><00:16:46.030><c> it</c><00:16:46.180><c> might</c>
+
+00:16:46.320 --> 00:16:46.330 align:start position:0%
+inspecting so far of course it might
+ 
+
+00:16:46.330 --> 00:16:48.660 align:start position:0%
+inspecting so far of course it might
+look<00:16:46.510><c> that</c><00:16:46.750><c> way</c><00:16:46.990><c> but</c><00:16:47.470><c> that</c><00:16:47.590><c> is</c><00:16:47.620><c> because</c><00:16:47.860><c> JMC</c>
+
+00:16:48.660 --> 00:16:48.670 align:start position:0%
+look that way but that is because JMC
+ 
+
+00:16:48.670 --> 00:16:50.670 align:start position:0%
+look that way but that is because JMC
+has<00:16:48.850><c> predefined</c><00:16:49.450><c> views</c><00:16:49.870><c> of</c><00:16:50.140><c> some</c><00:16:50.290><c> of</c><00:16:50.440><c> the</c><00:16:50.530><c> most</c>
+
+00:16:50.670 --> 00:16:50.680 align:start position:0%
+has predefined views of some of the most
+ 
+
+00:16:50.680 --> 00:16:53.640 align:start position:0%
+has predefined views of some of the most
+general<00:16:51.190><c> event</c><00:16:51.430><c> types</c><00:16:52.170><c> this</c><00:16:53.170><c> view</c><00:16:53.440><c> also</c>
+
+00:16:53.640 --> 00:16:53.650 align:start position:0%
+general event types this view also
+ 
+
+00:16:53.650 --> 00:16:55.470 align:start position:0%
+general event types this view also
+demonstrates<00:16:54.250><c> another</c><00:16:54.400><c> important</c><00:16:55.060><c> aspect</c><00:16:55.390><c> of</c>
+
+00:16:55.470 --> 00:16:55.480 align:start position:0%
+demonstrates another important aspect of
+ 
+
+00:16:55.480 --> 00:16:57.270 align:start position:0%
+demonstrates another important aspect of
+JFR<00:16:55.870><c> and</c><00:16:56.020><c> this</c><00:16:56.170><c> is</c><00:16:56.320><c> the</c><00:16:56.440><c> concept</c><00:16:56.800><c> of</c><00:16:56.950><c> self</c>
+
+00:16:57.270 --> 00:16:57.280 align:start position:0%
+JFR and this is the concept of self
+ 
+
+00:16:57.280 --> 00:17:00.960 align:start position:0%
+JFR and this is the concept of self
+describing<00:16:57.880><c> data</c><00:16:58.470><c> here</c><00:16:59.470><c> James</c><00:17:00.250><c> see</c><00:17:00.550><c> did</c><00:17:00.790><c> not</c>
+
+00:17:00.960 --> 00:17:00.970 align:start position:0%
+describing data here James see did not
+ 
+
+00:17:00.970 --> 00:17:03.000 align:start position:0%
+describing data here James see did not
+need<00:17:01.180><c> any</c><00:17:01.450><c> particular</c><00:17:02.110><c> changes</c><00:17:02.560><c> in</c><00:17:02.740><c> order</c><00:17:02.890><c> to</c>
+
+00:17:03.000 --> 00:17:03.010 align:start position:0%
+need any particular changes in order to
+ 
+
+00:17:03.010 --> 00:17:05.760 align:start position:0%
+need any particular changes in order to
+display<00:17:03.280><c> my</c><00:17:03.640><c> custom</c><00:17:04.000><c> event</c><00:17:04.290><c> instead</c><00:17:05.290><c> the</c>
+
+00:17:05.760 --> 00:17:05.770 align:start position:0%
+display my custom event instead the
+ 
+
+00:17:05.770 --> 00:17:08.700 align:start position:0%
+display my custom event instead the
+custom<00:17:06.160><c> event</c><00:17:06.360><c> contained</c><00:17:07.360><c> the</c><00:17:07.750><c> metadata</c><00:17:08.260><c> for</c>
+
+00:17:08.700 --> 00:17:08.710 align:start position:0%
+custom event contained the metadata for
+ 
+
+00:17:08.710 --> 00:17:10.430 align:start position:0%
+custom event contained the metadata for
+a<00:17:08.740><c> consumer</c><00:17:09.130><c> to</c><00:17:09.460><c> represent</c><00:17:09.970><c> this</c><00:17:10.150><c> information</c>
+
+00:17:10.430 --> 00:17:10.440 align:start position:0%
+a consumer to represent this information
+ 
+
+00:17:10.440 --> 00:17:13.800 align:start position:0%
+a consumer to represent this information
+as<00:17:11.440><c> a</c><00:17:11.500><c> specific</c><00:17:12.160><c> example</c><00:17:12.280><c> we</c><00:17:13.180><c> can</c><00:17:13.330><c> expect</c><00:17:13.690><c> the</c>
+
+00:17:13.800 --> 00:17:13.810 align:start position:0%
+as a specific example we can expect the
+ 
+
+00:17:13.810 --> 00:17:16.530 align:start position:0%
+as a specific example we can expect the
+ratio<00:17:14.230><c> field</c><00:17:14.530><c> here</c><00:17:14.890><c> and</c><00:17:15.130><c> as</c><00:17:15.610><c> you</c><00:17:15.730><c> can</c><00:17:15.790><c> see</c><00:17:16.090><c> the</c>
+
+00:17:16.530 --> 00:17:16.540 align:start position:0%
+ratio field here and as you can see the
+ 
+
+00:17:16.540 --> 00:17:18.790 align:start position:0%
+ratio field here and as you can see the
+tool<00:17:16.780><c> is</c><00:17:16.960><c> able</c><00:17:17.110><c> to</c><00:17:17.410><c> render</c><00:17:17.710><c> this</c><00:17:17.860><c> value</c><00:17:18.250><c> as</c><00:17:18.430><c> a</c>
+
+00:17:18.790 --> 00:17:18.800 align:start position:0%
+tool is able to render this value as a
+ 
+
+00:17:18.800 --> 00:17:21.370 align:start position:0%
+tool is able to render this value as a
+centage<00:17:19.300><c> this</c><00:17:20.300><c> is</c><00:17:20.450><c> made</c><00:17:20.630><c> possible</c><00:17:20.870><c> because</c>
+
+00:17:21.370 --> 00:17:21.380 align:start position:0%
+centage this is made possible because
+ 
+
+00:17:21.380 --> 00:17:23.590 align:start position:0%
+centage this is made possible because
+the<00:17:21.650><c> custom</c><00:17:22.100><c> event</c><00:17:22.220><c> has</c><00:17:22.760><c> been</c><00:17:22.940><c> decorated</c><00:17:23.570><c> with</c>
+
+00:17:23.590 --> 00:17:23.600 align:start position:0%
+the custom event has been decorated with
+ 
+
+00:17:23.600 --> 00:17:26.590 align:start position:0%
+the custom event has been decorated with
+semantic<00:17:24.440><c> metadata</c><00:17:25.010><c> that</c><00:17:25.330><c> effectively</c><00:17:26.330><c> says</c>
+
+00:17:26.590 --> 00:17:26.600 align:start position:0%
+semantic metadata that effectively says
+ 
+
+00:17:26.600 --> 00:17:30.510 align:start position:0%
+semantic metadata that effectively says
+to<00:17:26.840><c> a</c><00:17:26.870><c> consumer</c><00:17:27.500><c> this</c><00:17:28.100><c> value</c><00:17:28.610><c> is</c><00:17:28.820><c> a</c><00:17:28.910><c> percentage</c>
+
+00:17:30.510 --> 00:17:30.520 align:start position:0%
+to a consumer this value is a percentage
+ 
+
+00:17:30.520 --> 00:17:34.570 align:start position:0%
+to a consumer this value is a percentage
+so<00:17:31.520><c> let's</c><00:17:31.700><c> summarize</c><00:17:32.890><c> the</c><00:17:33.890><c> operations</c><00:17:34.430><c> you</c>
+
+00:17:34.570 --> 00:17:34.580 align:start position:0%
+so let's summarize the operations you
+ 
+
+00:17:34.580 --> 00:17:36.850 align:start position:0%
+so let's summarize the operations you
+saw<00:17:34.790><c> me</c><00:17:34.910><c> demonstrate</c><00:17:35.450><c> using</c><00:17:35.630><c> J</c><00:17:35.960><c> command</c><00:17:36.290><c> J</c><00:17:36.470><c> for</c>
+
+00:17:36.850 --> 00:17:36.860 align:start position:0%
+saw me demonstrate using J command J for
+ 
+
+00:17:36.860 --> 00:17:38.770 align:start position:0%
+saw me demonstrate using J command J for
+dump<00:17:37.100><c> a</c><00:17:37.340><c> completely</c><00:17:37.940><c> mechanical</c><00:17:38.060><c> should</c>
+
+00:17:38.770 --> 00:17:38.780 align:start position:0%
+dump a completely mechanical should
+ 
+
+00:17:38.780 --> 00:17:40.380 align:start position:0%
+dump a completely mechanical should
+ideally<00:17:39.080><c> be</c><00:17:39.230><c> handed</c><00:17:39.620><c> by</c><00:17:39.710><c> a</c><00:17:39.740><c> monitoring</c><00:17:40.280><c> tool</c>
+
+00:17:40.380 --> 00:17:40.390 align:start position:0%
+ideally be handed by a monitoring tool
+ 
+
+00:17:40.390 --> 00:17:42.910 align:start position:0%
+ideally be handed by a monitoring tool
+such<00:17:41.390><c> a</c><00:17:41.420><c> monitoring</c><00:17:41.960><c> tool</c><00:17:41.990><c> could</c><00:17:42.350><c> evoke</c><00:17:42.620><c> dump</c>
+
+00:17:42.910 --> 00:17:42.920 align:start position:0%
+such a monitoring tool could evoke dump
+ 
+
+00:17:42.920 --> 00:17:44.740 align:start position:0%
+such a monitoring tool could evoke dump
+operations<00:17:43.520><c> as</c><00:17:43.700><c> a</c><00:17:43.730><c> consequence</c><00:17:44.300><c> of</c><00:17:44.540><c> something</c>
+
+00:17:44.740 --> 00:17:44.750 align:start position:0%
+operations as a consequence of something
+ 
+
+00:17:44.750 --> 00:17:46.720 align:start position:0%
+operations as a consequence of something
+happening<00:17:45.230><c> at</c><00:17:45.350><c> the</c><00:17:45.500><c> higher</c><00:17:45.680><c> level</c><00:17:46.100><c> may</c><00:17:46.580><c> be</c><00:17:46.640><c> a</c>
+
+00:17:46.720 --> 00:17:46.730 align:start position:0%
+happening at the higher level may be a
+ 
+
+00:17:46.730 --> 00:17:49.660 align:start position:0%
+happening at the higher level may be a
+distributed<00:17:47.300><c> transaction</c><00:17:48.370><c> if</c><00:17:49.370><c> we</c><00:17:49.520><c> can</c>
+
+00:17:49.660 --> 00:17:49.670 align:start position:0%
+distributed transaction if we can
+ 
+
+00:17:49.670 --> 00:17:51.460 align:start position:0%
+distributed transaction if we can
+expedite<00:17:49.970><c> the</c><00:17:50.240><c> process</c><00:17:50.630><c> of</c><00:17:50.690><c> getting</c><00:17:50.810><c> analysis</c>
+
+00:17:51.460 --> 00:17:51.470 align:start position:0%
+expedite the process of getting analysis
+ 
+
+00:17:51.470 --> 00:17:53.290 align:start position:0%
+expedite the process of getting analysis
+started<00:17:51.920><c> most</c><00:17:52.310><c> likely</c><00:17:52.670><c> through</c><00:17:52.850><c> some</c><00:17:53.090><c> means</c>
+
+00:17:53.290 --> 00:17:53.300 align:start position:0%
+started most likely through some means
+ 
+
+00:17:53.300 --> 00:17:55.120 align:start position:0%
+started most likely through some means
+of<00:17:53.420><c> automation</c><00:17:53.840><c> the</c><00:17:54.470><c> faster</c><00:17:54.980><c> we</c><00:17:55.100><c> can</c>
+
+00:17:55.120 --> 00:17:55.130 align:start position:0%
+of automation the faster we can
+ 
+
+00:17:55.130 --> 00:17:58.540 align:start position:0%
+of automation the faster we can
+understand<00:17:55.700><c> and</c><00:17:55.850><c> solve</c><00:17:56.030><c> problems</c><00:17:56.830><c> as</c><00:17:57.830><c> of</c><00:17:58.280><c> JDK</c>
+
+00:17:58.540 --> 00:17:58.550 align:start position:0%
+understand and solve problems as of JDK
+ 
+
+00:17:58.550 --> 00:18:02.410 align:start position:0%
+understand and solve problems as of JDK
+9<00:17:58.880><c> Java</c><00:17:59.690><c> API</c><00:18:00.140><c> and</c><00:18:00.560><c> JDK</c><00:18:00.860><c> j4</c><00:18:01.430><c> allow</c><00:18:01.730><c> programs</c><00:18:02.270><c> to</c>
+
+00:18:02.410 --> 00:18:02.420 align:start position:0%
+9 Java API and JDK j4 allow programs to
+ 
+
+00:18:02.420 --> 00:18:06.070 align:start position:0%
+9 Java API and JDK j4 allow programs to
+create<00:18:02.600><c> and</c><00:18:02.930><c> integrate</c><00:18:03.380><c> their</c><00:18:03.740><c> own</c><00:18:04.040><c> events</c><00:18:05.080><c> we</c>
+
+00:18:06.070 --> 00:18:06.080 align:start position:0%
+create and integrate their own events we
+ 
+
+00:18:06.080 --> 00:18:10.120 align:start position:0%
+create and integrate their own events we
+really<00:18:06.440><c> hope</c><00:18:06.650><c> you</c><00:18:07.010><c> like</c><00:18:07.510><c> JDK</c><00:18:08.510><c> 11</c><00:18:09.010><c> thank</c><00:18:10.010><c> you</c>
+
+00:18:10.120 --> 00:18:10.130 align:start position:0%
+really hope you like JDK 11 thank you
+ 
+
+00:18:10.130 --> 00:18:12.700 align:start position:0%
+really hope you like JDK 11 thank you
+for<00:18:10.310><c> watching</c>
+

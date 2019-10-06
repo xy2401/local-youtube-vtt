@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+[JAZZ MUSIC PLAYING]
+
+00:00:03.240 --> 00:00:04.890
+SURMA: When developing
+a ServiceWorker,
+
+00:00:04.890 --> 00:00:07.710
+it is common to split up
+the code into multiple files
+
+00:00:07.710 --> 00:00:10.590
+and load them using the
+Import Scripts function.
+
+00:00:10.590 --> 00:00:13.560
+The problem is that changes
+in one of the imported files
+
+00:00:13.560 --> 00:00:15.180
+might not reach
+the ServiceWorker,
+
+00:00:15.180 --> 00:00:18.120
+as the file that does the
+importing did not actually
+
+00:00:18.120 --> 00:00:19.170
+change.
+
+00:00:19.170 --> 00:00:21.930
+An easy way around that is
+to put your app's version
+
+00:00:21.930 --> 00:00:24.450
+number into the main
+ServiceWorker file
+
+00:00:24.450 --> 00:00:27.240
+and update the version
+number on every build.
+
+00:00:27.240 --> 00:00:30.270
+Let's look at a project that
+uses scope as an example.
+
+00:00:30.270 --> 00:00:33.360
+In our build task, we bump the
+patch version of our project.
+
+00:00:33.360 --> 00:00:36.060
+In the gulp file, we
+read the package.json
+
+00:00:36.060 --> 00:00:37.980
+and use it to
+replace a placeholder
+
+00:00:37.980 --> 00:00:40.800
+in the ServiceWorker file with
+the current version number.
+
+00:00:40.800 --> 00:00:43.680
+This way, every build will
+have a unique ServiceWorker
+
+00:00:43.680 --> 00:00:45.450
+throughout development.
+
+00:00:45.450 --> 00:00:48.630
+An additional trick is to
+stick to semantic versioning.
+
+00:00:48.630 --> 00:00:51.360
+The ServiceWorker can inspect
+if the version number is only
+
+00:00:51.360 --> 00:00:54.300
+a patch, a minor revision,
+or a major revision.
+
+00:00:54.300 --> 00:00:56.670
+Based on that, you can
+reload the page for the user,
+
+00:00:56.670 --> 00:00:58.750
+prompt the user to
+reload, or just install
+
+00:00:58.750 --> 00:01:01.410
+the new ServiceWorker
+silently in the background.
+
+00:01:01.410 --> 00:01:01.980
+Enjoy.
+
+00:01:01.980 --> 00:01:03.450
+See you next time.
+
+00:01:03.450 --> 00:01:05.176
+Welcome to the end cart!
+
+00:01:05.176 --> 00:01:07.050
+If you want to know more
+about ServiceWorker,
+
+00:01:07.050 --> 00:01:08.430
+you can watch the
+last livestream
+
+00:01:08.430 --> 00:01:10.030
+I did with Jake over there.
+
+00:01:10.030 --> 00:01:12.390
+But more importantly,
+the big Chrome.
+
+00:01:12.390 --> 00:01:15.140
+Just click it to subscribe.
+

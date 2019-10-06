@@ -1,0 +1,992 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.480 align:start position:0%
+ 
+welcome<00:00:00.420><c> everyone</c><00:00:00.810><c> in</c><00:00:01.500><c> this</c><00:00:01.740><c> video</c><00:00:01.949><c> we</c><00:00:02.429><c> are</c>
+
+00:00:02.480 --> 00:00:02.490 align:start position:0%
+welcome everyone in this video we are
+ 
+
+00:00:02.490 --> 00:00:04.309 align:start position:0%
+welcome everyone in this video we are
+going<00:00:02.639><c> to</c><00:00:02.730><c> show</c><00:00:02.909><c> you</c><00:00:02.970><c> how</c><00:00:03.750><c> to</c><00:00:03.780><c> connect</c><00:00:04.230><c> your</c>
+
+00:00:04.309 --> 00:00:04.319 align:start position:0%
+going to show you how to connect your
+ 
+
+00:00:04.319 --> 00:00:06.289 align:start position:0%
+going to show you how to connect your
+java<00:00:04.710><c> applications</c><00:00:05.549><c> to</c><00:00:05.730><c> autonomous</c>
+
+00:00:06.289 --> 00:00:06.299 align:start position:0%
+java applications to autonomous
+ 
+
+00:00:06.299 --> 00:00:09.020 align:start position:0%
+java applications to autonomous
+transaction<00:00:06.990><c> processing</c><00:00:07.589><c> using</c><00:00:08.460><c> WebLogic</c>
+
+00:00:09.020 --> 00:00:09.030 align:start position:0%
+transaction processing using WebLogic
+ 
+
+00:00:09.030 --> 00:00:11.480 align:start position:0%
+transaction processing using WebLogic
+server<00:00:09.059><c> my</c><00:00:09.929><c> name</c><00:00:10.170><c> is</c><00:00:10.290><c> Naimah</c><00:00:10.469><c> Lysander</c><00:00:11.040><c> Appa</c><00:00:11.280><c> I</c>
+
+00:00:11.480 --> 00:00:11.490 align:start position:0%
+server my name is Naimah Lysander Appa I
+ 
+
+00:00:11.490 --> 00:00:13.430 align:start position:0%
+server my name is Naimah Lysander Appa I
+am<00:00:11.820><c> the</c><00:00:11.969><c> principal</c><00:00:12.269><c> product</c><00:00:12.780><c> manager</c><00:00:13.230><c> for</c>
+
+00:00:13.430 --> 00:00:13.440 align:start position:0%
+am the principal product manager for
+ 
+
+00:00:13.440 --> 00:00:16.700 align:start position:0%
+am the principal product manager for
+Oracle<00:00:13.950><c> JDBC</c><00:00:14.490><c> and</c><00:00:14.670><c> UCP</c><00:00:15.240><c> let's</c><00:00:16.230><c> begin</c><00:00:16.590><c> with</c>
+
+00:00:16.700 --> 00:00:16.710 align:start position:0%
+Oracle JDBC and UCP let's begin with
+ 
+
+00:00:16.710 --> 00:00:19.580 align:start position:0%
+Oracle JDBC and UCP let's begin with
+prerequisites<00:00:17.460><c> the</c><00:00:18.420><c> first</c><00:00:18.690><c> prerequisite</c><00:00:19.289><c> is</c>
+
+00:00:19.580 --> 00:00:19.590 align:start position:0%
+prerequisites the first prerequisite is
+ 
+
+00:00:19.590 --> 00:00:22.880 align:start position:0%
+prerequisites the first prerequisite is
+to<00:00:19.920><c> create</c><00:00:20.220><c> an</c><00:00:20.340><c> ATP</c><00:00:20.869><c> if</c><00:00:21.869><c> you</c><00:00:22.350><c> have</c><00:00:22.590><c> already</c>
+
+00:00:22.880 --> 00:00:22.890 align:start position:0%
+to create an ATP if you have already
+ 
+
+00:00:22.890 --> 00:00:26.060 align:start position:0%
+to create an ATP if you have already
+created<00:00:23.279><c> an</c><00:00:23.699><c> ATP</c><00:00:24.150><c> then</c><00:00:24.539><c> we</c><00:00:24.720><c> are</c><00:00:24.810><c> set</c><00:00:25.080><c> otherwise</c>
+
+00:00:26.060 --> 00:00:26.070 align:start position:0%
+created an ATP then we are set otherwise
+ 
+
+00:00:26.070 --> 00:00:28.339 align:start position:0%
+created an ATP then we are set otherwise
+sign<00:00:26.820><c> in</c><00:00:26.970><c> with</c><00:00:27.119><c> your</c><00:00:27.150><c> cloud</c><00:00:27.570><c> credentials</c><00:00:27.930><c> at</c>
+
+00:00:28.339 --> 00:00:28.349 align:start position:0%
+sign in with your cloud credentials at
+ 
+
+00:00:28.349 --> 00:00:33.080 align:start position:0%
+sign in with your cloud credentials at
+cloud.oracle.com<00:00:29.150><c> and</c><00:00:30.150><c> create</c><00:00:30.869><c> ATP</c><00:00:32.090><c> the</c>
+
+00:00:33.080 --> 00:00:33.090 align:start position:0%
+cloud.oracle.com and create ATP the
+ 
+
+00:00:33.090 --> 00:00:35.090 align:start position:0%
+cloud.oracle.com and create ATP the
+second<00:00:33.480><c> prerequisite</c><00:00:34.110><c> is</c><00:00:34.260><c> to</c><00:00:34.559><c> download</c><00:00:34.770><c> the</c>
+
+00:00:35.090 --> 00:00:35.100 align:start position:0%
+second prerequisite is to download the
+ 
+
+00:00:35.100 --> 00:00:39.860 align:start position:0%
+second prerequisite is to download the
+client<00:00:35.309><c> credentials</c><00:00:35.940><c> zip</c><00:00:36.180><c> file</c><00:00:37.579><c> ADP</c><00:00:38.870><c> mandates</c>
+
+00:00:39.860 --> 00:00:39.870 align:start position:0%
+client credentials zip file ADP mandates
+ 
+
+00:00:39.870 --> 00:00:42.819 align:start position:0%
+client credentials zip file ADP mandates
+a<00:00:40.020><c> secure</c><00:00:40.410><c> connection</c><00:00:40.850><c> so</c><00:00:41.850><c> Java</c><00:00:42.149><c> applications</c>
+
+00:00:42.819 --> 00:00:42.829 align:start position:0%
+a secure connection so Java applications
+ 
+
+00:00:42.829 --> 00:00:46.819 align:start position:0%
+a secure connection so Java applications
+require<00:00:43.829><c> either</c><00:00:44.550><c> Oracle</c><00:00:45.390><c> wallets</c><00:00:45.840><c> or</c><00:00:46.050><c> Java</c>
+
+00:00:46.819 --> 00:00:46.829 align:start position:0%
+require either Oracle wallets or Java
+ 
+
+00:00:46.829 --> 00:00:50.869 align:start position:0%
+require either Oracle wallets or Java
+key<00:00:47.160><c> store</c><00:00:47.399><c> files</c><00:00:47.700><c> to</c><00:00:48.420><c> connect</c><00:00:48.750><c> to</c><00:00:48.840><c> ATP</c><00:00:49.879><c> the</c>
+
+00:00:50.869 --> 00:00:50.879 align:start position:0%
+key store files to connect to ATP the
+ 
+
+00:00:50.879 --> 00:00:53.540 align:start position:0%
+key store files to connect to ATP the
+client<00:00:51.390><c> credential</c><00:00:51.840><c> zip</c><00:00:52.140><c> file</c><00:00:52.410><c> contains</c><00:00:53.280><c> all</c>
+
+00:00:53.540 --> 00:00:53.550 align:start position:0%
+client credential zip file contains all
+ 
+
+00:00:53.550 --> 00:00:56.260 align:start position:0%
+client credential zip file contains all
+the<00:00:54.120><c> required</c><00:00:54.539><c> files</c><00:00:55.050><c> for</c><00:00:55.440><c> the</c><00:00:55.500><c> connection</c>
+
+00:00:56.260 --> 00:00:56.270 align:start position:0%
+the required files for the connection
+ 
+
+00:00:56.270 --> 00:00:59.450 align:start position:0%
+the required files for the connection
+now<00:00:57.270><c> let's</c><00:00:57.989><c> see</c><00:00:58.170><c> WebLogic</c><00:00:58.770><c> server</c><00:00:58.800><c> setup</c>
+
+00:00:59.450 --> 00:00:59.460 align:start position:0%
+now let's see WebLogic server setup
+ 
+
+00:00:59.460 --> 00:01:02.660 align:start position:0%
+now let's see WebLogic server setup
+if<00:01:00.270><c> you</c><00:01:00.510><c> already</c><00:01:00.750><c> have</c><00:01:01.260><c> WebLogic</c><00:01:01.890><c> server</c><00:01:01.920><c> then</c>
+
+00:01:02.660 --> 00:01:02.670 align:start position:0%
+if you already have WebLogic server then
+ 
+
+00:01:02.670 --> 00:01:05.240 align:start position:0%
+if you already have WebLogic server then
+we<00:01:02.879><c> are</c><00:01:02.969><c> good</c><00:01:03.239><c> otherwise</c><00:01:04.080><c> download</c><00:01:04.799><c> and</c>
+
+00:01:05.240 --> 00:01:05.250 align:start position:0%
+we are good otherwise download and
+ 
+
+00:01:05.250 --> 00:01:07.160 align:start position:0%
+we are good otherwise download and
+install<00:01:05.700><c> the</c><00:01:05.909><c> WebLogic</c><00:01:06.240><c> server</c><00:01:06.450><c> version</c>
+
+00:01:07.160 --> 00:01:07.170 align:start position:0%
+install the WebLogic server version
+ 
+
+00:01:07.170 --> 00:01:11.510 align:start position:0%
+install the WebLogic server version
+12.2.2<00:01:09.409><c> make</c><00:01:10.409><c> sure</c><00:01:10.680><c> you</c><00:01:10.860><c> point</c><00:01:11.130><c> your</c><00:01:11.369><c> web</c>
+
+00:01:11.510 --> 00:01:11.520 align:start position:0%
+12.2.2 make sure you point your web
+ 
+
+00:01:11.520 --> 00:01:14.690 align:start position:0%
+12.2.2 make sure you point your web
+logic<00:01:11.880><c> server</c><00:01:12.150><c> to</c><00:01:12.420><c> the</c><00:01:12.510><c> latest</c><00:01:12.840><c> jdk</c><00:01:13.700><c> WebLogic</c>
+
+00:01:14.690 --> 00:01:14.700 align:start position:0%
+logic server to the latest jdk WebLogic
+ 
+
+00:01:14.700 --> 00:01:18.160 align:start position:0%
+logic server to the latest jdk WebLogic
+server<00:01:14.729><c> version</c><00:01:15.420><c> 12.2.2</c>
+
+00:01:18.160 --> 00:01:18.170 align:start position:0%
+ 
+ 
+
+00:01:18.170 --> 00:01:22.609 align:start position:0%
+ 
+12.2<00:01:19.170><c> JDBC</c><00:01:19.710><c> driver</c><00:01:20.210><c> but</c><00:01:21.210><c> we</c><00:01:21.810><c> want</c><00:01:22.140><c> you</c><00:01:22.290><c> to</c><00:01:22.439><c> use</c>
+
+00:01:22.609 --> 00:01:22.619 align:start position:0%
+12.2 JDBC driver but we want you to use
+ 
+
+00:01:22.619 --> 00:01:26.420 align:start position:0%
+12.2 JDBC driver but we want you to use
+the<00:01:22.830><c> latest</c><00:01:23.189><c> 18.3</c><00:01:24.060><c> JDBC</c><00:01:24.630><c> driver</c><00:01:25.070><c> because</c><00:01:26.070><c> it</c>
+
+00:01:26.420 --> 00:01:26.430 align:start position:0%
+the latest 18.3 JDBC driver because it
+ 
+
+00:01:26.430 --> 00:01:30.020 align:start position:0%
+the latest 18.3 JDBC driver because it
+simplifies<00:01:27.060><c> the</c><00:01:27.299><c> connections</c><00:01:28.049><c> to</c><00:01:28.290><c> ATP</c><00:01:29.030><c> so</c>
+
+00:01:30.020 --> 00:01:30.030 align:start position:0%
+simplifies the connections to ATP so
+ 
+
+00:01:30.030 --> 00:01:33.170 align:start position:0%
+simplifies the connections to ATP so
+replace<00:01:30.600><c> the</c><00:01:30.930><c> 12</c><00:01:31.200><c> tor</c><00:01:31.350><c> to</c><00:01:31.560><c> JDBC</c><00:01:32.070><c> driver</c><00:01:32.430><c> with</c>
+
+00:01:33.170 --> 00:01:33.180 align:start position:0%
+replace the 12 tor to JDBC driver with
+ 
+
+00:01:33.180 --> 00:01:37.969 align:start position:0%
+replace the 12 tor to JDBC driver with
+the<00:01:33.290><c> 18.3</c><00:01:34.290><c> JDBC</c><00:01:35.159><c> driver</c><00:01:35.930><c> in</c><00:01:36.930><c> this</c><00:01:37.170><c> video</c><00:01:37.560><c> we</c>
+
+00:01:37.969 --> 00:01:37.979 align:start position:0%
+the 18.3 JDBC driver in this video we
+ 
+
+00:01:37.979 --> 00:01:40.429 align:start position:0%
+the 18.3 JDBC driver in this video we
+will<00:01:38.159><c> see</c><00:01:38.460><c> how</c><00:01:38.970><c> to</c><00:01:39.000><c> create</c><00:01:39.509><c> a</c><00:01:39.540><c> data</c><00:01:39.869><c> source</c><00:01:40.259><c> in</c>
+
+00:01:40.429 --> 00:01:40.439 align:start position:0%
+will see how to create a data source in
+ 
+
+00:01:40.439 --> 00:01:42.950 align:start position:0%
+will see how to create a data source in
+WebLogic<00:01:40.979><c> server</c><00:01:41.009><c> and</c><00:01:41.520><c> this</c><00:01:42.360><c> data</c><00:01:42.600><c> source</c>
+
+00:01:42.950 --> 00:01:42.960 align:start position:0%
+WebLogic server and this data source
+ 
+
+00:01:42.960 --> 00:01:46.130 align:start position:0%
+WebLogic server and this data source
+will<00:01:43.140><c> be</c><00:01:43.290><c> pointing</c><00:01:43.710><c> to</c><00:01:43.799><c> ATP</c><00:01:44.159><c> and</c><00:01:44.720><c> we</c><00:01:45.720><c> will</c><00:01:45.990><c> also</c>
+
+00:01:46.130 --> 00:01:46.140 align:start position:0%
+will be pointing to ATP and we will also
+ 
+
+00:01:46.140 --> 00:01:49.460 align:start position:0%
+will be pointing to ATP and we will also
+see<00:01:46.530><c> how</c><00:01:46.560><c> to</c><00:01:46.799><c> create</c><00:01:47.070><c> a</c><00:01:47.250><c> servlet</c><00:01:47.850><c> that</c><00:01:48.470><c> uses</c>
+
+00:01:49.460 --> 00:01:49.470 align:start position:0%
+see how to create a servlet that uses
+ 
+
+00:01:49.470 --> 00:01:51.490 align:start position:0%
+see how to create a servlet that uses
+the<00:01:49.619><c> data</c><00:01:49.770><c> source</c><00:01:50.220><c> that</c><00:01:50.310><c> we</c><00:01:50.549><c> have</c><00:01:50.700><c> created</c><00:01:51.210><c> and</c>
+
+00:01:51.490 --> 00:01:51.500 align:start position:0%
+the data source that we have created and
+ 
+
+00:01:51.500 --> 00:01:54.590 align:start position:0%
+the data source that we have created and
+we<00:01:52.500><c> will</c><00:01:52.680><c> run</c><00:01:52.950><c> the</c><00:01:53.159><c> servlet</c><00:01:53.700><c> on</c><00:01:53.880><c> WebLogic</c>
+
+00:01:54.590 --> 00:01:54.600 align:start position:0%
+we will run the servlet on WebLogic
+ 
+
+00:01:54.600 --> 00:01:57.560 align:start position:0%
+we will run the servlet on WebLogic
+server<00:01:54.890><c> we</c><00:01:55.890><c> have</c><00:01:56.159><c> the</c><00:01:56.369><c> sample</c><00:01:56.610><c> that</c><00:01:57.210><c> we</c><00:01:57.390><c> have</c>
+
+00:01:57.560 --> 00:01:57.570 align:start position:0%
+server we have the sample that we have
+ 
+
+00:01:57.570 --> 00:02:00.499 align:start position:0%
+server we have the sample that we have
+used<00:01:57.810><c> in</c><00:01:58.020><c> this</c><00:01:58.170><c> video</c><00:01:58.530><c> on</c><00:01:58.740><c> github</c><00:01:59.390><c> there</c><00:02:00.390><c> are</c>
+
+00:02:00.499 --> 00:02:00.509 align:start position:0%
+used in this video on github there are
+ 
+
+00:02:00.509 --> 00:02:03.230 align:start position:0%
+used in this video on github there are
+two<00:02:00.689><c> ways</c><00:02:00.930><c> to</c><00:02:00.960><c> connect</c><00:02:01.439><c> to</c><00:02:01.530><c> ADP</c><00:02:02.040><c> one</c><00:02:02.610><c> using</c>
+
+00:02:03.230 --> 00:02:03.240 align:start position:0%
+two ways to connect to ADP one using
+ 
+
+00:02:03.240 --> 00:02:05.480 align:start position:0%
+two ways to connect to ADP one using
+Java<00:02:03.540><c> key</c><00:02:03.869><c> stores</c><00:02:04.200><c> and</c><00:02:04.439><c> a</c><00:02:04.710><c> second</c><00:02:05.159><c> using</c>
+
+00:02:05.480 --> 00:02:05.490 align:start position:0%
+Java key stores and a second using
+ 
+
+00:02:05.490 --> 00:02:08.180 align:start position:0%
+Java key stores and a second using
+Oracle<00:02:06.090><c> wallets</c><00:02:06.479><c> we</c><00:02:07.350><c> will</c><00:02:07.560><c> see</c><00:02:07.770><c> both</c><00:02:08.009><c> these</c>
+
+00:02:08.180 --> 00:02:08.190 align:start position:0%
+Oracle wallets we will see both these
+ 
+
+00:02:08.190 --> 00:02:11.809 align:start position:0%
+Oracle wallets we will see both these
+approaches<00:02:08.789><c> in</c><00:02:08.940><c> this</c><00:02:09.090><c> video</c><00:02:10.459><c> let's</c><00:02:11.459><c> begin</c>
+
+00:02:11.809 --> 00:02:11.819 align:start position:0%
+approaches in this video let's begin
+ 
+
+00:02:11.819 --> 00:02:13.870 align:start position:0%
+approaches in this video let's begin
+with<00:02:11.940><c> creating</c><00:02:12.510><c> a</c><00:02:12.599><c> data</c><00:02:12.780><c> source</c><00:02:13.110><c> in</c><00:02:13.349><c> web</c><00:02:13.530><c> large</c>
+
+00:02:13.870 --> 00:02:13.880 align:start position:0%
+with creating a data source in web large
+ 
+
+00:02:13.880 --> 00:02:16.840 align:start position:0%
+with creating a data source in web large
+server<00:02:14.320><c> before</c><00:02:15.320><c> we</c><00:02:15.470><c> do</c><00:02:15.680><c> that</c><00:02:15.890><c> we</c><00:02:16.340><c> have</c><00:02:16.640><c> to</c>
+
+00:02:16.840 --> 00:02:16.850 align:start position:0%
+server before we do that we have to
+ 
+
+00:02:16.850 --> 00:02:19.690 align:start position:0%
+server before we do that we have to
+start<00:02:17.120><c> the</c><00:02:17.270><c> WebLogic</c><00:02:17.600><c> server</c><00:02:17.840><c> I</c><00:02:18.490><c> have</c><00:02:19.490><c> created</c>
+
+00:02:19.690 --> 00:02:19.700 align:start position:0%
+start the WebLogic server I have created
+ 
+
+00:02:19.700 --> 00:02:23.140 align:start position:0%
+start the WebLogic server I have created
+a<00:02:20.060><c> project</c><00:02:20.330><c> test</c><00:02:21.080><c> app</c><00:02:21.350><c> in</c><00:02:21.710><c> Eclipse</c><00:02:22.400><c> and</c><00:02:22.640><c> I</c><00:02:23.060><c> have</c>
+
+00:02:23.140 --> 00:02:23.150 align:start position:0%
+a project test app in Eclipse and I have
+ 
+
+00:02:23.150 --> 00:02:26.080 align:start position:0%
+a project test app in Eclipse and I have
+added<00:02:23.590><c> WebLogic</c><00:02:24.590><c> server</c><00:02:24.620><c> as</c><00:02:25.250><c> a</c><00:02:25.310><c> server</c><00:02:25.760><c> to</c>
+
+00:02:26.080 --> 00:02:26.090 align:start position:0%
+added WebLogic server as a server to
+ 
+
+00:02:26.090 --> 00:02:37.500 align:start position:0%
+added WebLogic server as a server to
+this<00:02:26.210><c> project</c><00:02:26.620><c> so</c><00:02:27.620><c> let</c><00:02:27.860><c> me</c><00:02:28.040><c> start</c><00:02:28.400><c> the</c><00:02:29.060><c> server</c>
+
+00:02:37.500 --> 00:02:37.510 align:start position:0%
+ 
+ 
+
+00:02:37.510 --> 00:02:40.180 align:start position:0%
+ 
+you<00:02:38.510><c> can</c><00:02:38.660><c> see</c><00:02:38.900><c> that</c><00:02:39.110><c> the</c><00:02:39.230><c> WebLogic</c><00:02:39.590><c> server</c><00:02:39.770><c> is</c>
+
+00:02:40.180 --> 00:02:40.190 align:start position:0%
+you can see that the WebLogic server is
+ 
+
+00:02:40.190 --> 00:02:43.720 align:start position:0%
+you can see that the WebLogic server is
+started<00:02:41.590><c> log</c><00:02:42.590><c> into</c><00:02:42.830><c> your</c><00:02:42.980><c> web</c><00:02:43.160><c> logic</c><00:02:43.520><c> server</c>
+
+00:02:43.720 --> 00:02:43.730 align:start position:0%
+started log into your web logic server
+ 
+
+00:02:43.730 --> 00:02:45.250 align:start position:0%
+started log into your web logic server
+console<00:02:44.210><c> with</c><00:02:44.480><c> the</c><00:02:44.600><c> username</c><00:02:45.050><c> and</c><00:02:45.200><c> password</c>
+
+00:02:45.250 --> 00:02:45.260 align:start position:0%
+console with the username and password
+ 
+
+00:02:45.260 --> 00:02:50.260 align:start position:0%
+console with the username and password
+that<00:02:45.680><c> you</c><00:02:45.860><c> have</c><00:02:48.040><c> now</c><00:02:49.040><c> we</c><00:02:49.670><c> are</c><00:02:49.790><c> going</c><00:02:49.940><c> to</c><00:02:50.030><c> create</c>
+
+00:02:50.260 --> 00:02:50.270 align:start position:0%
+that you have now we are going to create
+ 
+
+00:02:50.270 --> 00:02:53.650 align:start position:0%
+that you have now we are going to create
+a<00:02:50.360><c> data</c><00:02:50.630><c> source</c><00:02:50.960><c> that</c><00:02:51.260><c> connects</c><00:02:51.740><c> to</c><00:02:51.890><c> ATP</c><00:02:52.660><c> for</c>
+
+00:02:53.650 --> 00:02:53.660 align:start position:0%
+a data source that connects to ATP for
+ 
+
+00:02:53.660 --> 00:02:56.320 align:start position:0%
+a data source that connects to ATP for
+this<00:02:53.870><c> you</c><00:02:54.230><c> need</c><00:02:54.410><c> to</c><00:02:54.500><c> go</c><00:02:54.650><c> to</c><00:02:54.710><c> services</c><00:02:55.370><c> click</c><00:02:56.150><c> on</c>
+
+00:02:56.320 --> 00:02:56.330 align:start position:0%
+this you need to go to services click on
+ 
+
+00:02:56.330 --> 00:03:01.600 align:start position:0%
+this you need to go to services click on
+data<00:02:56.720><c> sources</c><00:02:57.020><c> and</c><00:02:58.390><c> click</c><00:02:59.390><c> on</c><00:02:59.570><c> new</c><00:02:59.870><c> and</c><00:03:00.610><c> choose</c>
+
+00:03:01.600 --> 00:03:01.610 align:start position:0%
+data sources and click on new and choose
+ 
+
+00:03:01.610 --> 00:03:05.920 align:start position:0%
+data sources and click on new and choose
+UCP<00:03:02.180><c> data</c><00:03:02.420><c> source</c><00:03:04.270><c> let's</c><00:03:05.270><c> call</c><00:03:05.540><c> this</c><00:03:05.690><c> data</c>
+
+00:03:05.920 --> 00:03:05.930 align:start position:0%
+UCP data source let's call this data
+ 
+
+00:03:05.930 --> 00:03:10.020 align:start position:0%
+UCP data source let's call this data
+source<00:03:06.200><c> as</c><00:03:06.440><c> a</c><00:03:06.620><c> PP</c><00:03:07.010><c> data</c><00:03:07.250><c> source</c>
+
+00:03:10.020 --> 00:03:10.030 align:start position:0%
+ 
+ 
+
+00:03:10.030 --> 00:03:13.990 align:start position:0%
+ 
+let's<00:03:11.030><c> give</c><00:03:11.300><c> jndi</c><00:03:11.750><c> name</c><00:03:12.110><c> as</c><00:03:12.320><c> ORCL</c><00:03:13.310><c> ATP</c>
+
+00:03:13.990 --> 00:03:14.000 align:start position:0%
+let's give jndi name as ORCL ATP
+ 
+
+00:03:14.000 --> 00:03:15.990 align:start position:0%
+let's give jndi name as ORCL ATP
+underscore<00:03:14.600><c> dias</c>
+
+00:03:15.990 --> 00:03:16.000 align:start position:0%
+underscore dias
+ 
+
+00:03:16.000 --> 00:03:19.210 align:start position:0%
+underscore dias
+we<00:03:17.000><c> don't</c><00:03:17.180><c> want</c><00:03:17.480><c> XA</c><00:03:17.990><c> let's</c><00:03:18.620><c> choose</c><00:03:18.950><c> thin</c>
+
+00:03:19.210 --> 00:03:19.220 align:start position:0%
+we don't want XA let's choose thin
+ 
+
+00:03:19.220 --> 00:03:24.250 align:start position:0%
+we don't want XA let's choose thin
+connections<00:03:21.940><c> copy</c><00:03:22.940><c> the</c><00:03:23.210><c> database</c><00:03:23.480><c> URL</c><00:03:23.840><c> and</c>
+
+00:03:24.250 --> 00:03:24.260 align:start position:0%
+connections copy the database URL and
+ 
+
+00:03:24.260 --> 00:03:26.920 align:start position:0%
+connections copy the database URL and
+Here<00:03:24.950><c> I</c><00:03:24.980><c> am</c><00:03:25.220><c> using</c><00:03:25.460><c> JDBC</c><00:03:26.120><c> test</c><00:03:26.420><c> underscore</c>
+
+00:03:26.920 --> 00:03:26.930 align:start position:0%
+Here I am using JDBC test underscore
+ 
+
+00:03:26.930 --> 00:03:30.790 align:start position:0%
+Here I am using JDBC test underscore
+medium<00:03:27.320><c> as</c><00:03:27.470><c> the</c><00:03:27.680><c> TNS</c><00:03:28.070><c> alias</c><00:03:28.750><c> you</c><00:03:29.750><c> can</c><00:03:29.990><c> pass</c><00:03:30.230><c> DNS</c>
+
+00:03:30.790 --> 00:03:30.800 align:start position:0%
+medium as the TNS alias you can pass DNS
+ 
+
+00:03:30.800 --> 00:03:34.030 align:start position:0%
+medium as the TNS alias you can pass DNS
+admin<00:03:31.280><c> as</c><00:03:31.520><c> part</c><00:03:32.420><c> of</c><00:03:32.480><c> the</c><00:03:32.600><c> database</c><00:03:32.870><c> URL</c><00:03:33.200><c> make</c>
+
+00:03:34.030 --> 00:03:34.040 align:start position:0%
+admin as part of the database URL make
+ 
+
+00:03:34.040 --> 00:03:36.370 align:start position:0%
+admin as part of the database URL make
+sure<00:03:34.310><c> you</c><00:03:34.760><c> provide</c><00:03:35.000><c> the</c><00:03:35.360><c> location</c><00:03:35.900><c> where</c><00:03:36.170><c> you</c>
+
+00:03:36.370 --> 00:03:36.380 align:start position:0%
+sure you provide the location where you
+ 
+
+00:03:36.380 --> 00:03:38.380 align:start position:0%
+sure you provide the location where you
+have<00:03:36.410><c> unzipped</c><00:03:37.130><c> the</c><00:03:37.220><c> client</c><00:03:37.610><c> credentials</c><00:03:38.150><c> zip</c>
+
+00:03:38.380 --> 00:03:38.390 align:start position:0%
+have unzipped the client credentials zip
+ 
+
+00:03:38.390 --> 00:03:41.980 align:start position:0%
+have unzipped the client credentials zip
+file<00:03:39.250><c> this</c><00:03:40.250><c> location</c><00:03:40.820><c> is</c><00:03:40.940><c> important</c><00:03:41.690><c> because</c>
+
+00:03:41.980 --> 00:03:41.990 align:start position:0%
+file this location is important because
+ 
+
+00:03:41.990 --> 00:03:44.710 align:start position:0%
+file this location is important because
+client<00:03:42.800><c> credential</c><00:03:43.280><c> zip</c><00:03:43.580><c> file</c><00:03:43.850><c> contains</c><00:03:44.420><c> or</c>
+
+00:03:44.710 --> 00:03:44.720 align:start position:0%
+client credential zip file contains or
+ 
+
+00:03:44.720 --> 00:03:47.500 align:start position:0%
+client credential zip file contains or
+JDBC<00:03:45.080><c> dot</c><00:03:45.440><c> properties</c><00:03:45.950><c> file</c><00:03:46.250><c> this</c><00:03:46.880><c> file</c><00:03:47.209><c> is</c>
+
+00:03:47.500 --> 00:03:47.510 align:start position:0%
+JDBC dot properties file this file is
+ 
+
+00:03:47.510 --> 00:03:49.630 align:start position:0%
+JDBC dot properties file this file is
+used<00:03:47.570><c> to</c><00:03:48.170><c> specify</c><00:03:48.380><c> connection</c><00:03:49.340><c> properties</c>
+
+00:03:49.630 --> 00:03:49.640 align:start position:0%
+used to specify connection properties
+ 
+
+00:03:49.640 --> 00:03:53.110 align:start position:0%
+used to specify connection properties
+required<00:03:50.470><c> for</c><00:03:51.470><c> either</c><00:03:51.709><c> Oracle</c><00:03:52.490><c> wallets</c><00:03:52.970><c> or</c>
+
+00:03:53.110 --> 00:03:53.120 align:start position:0%
+required for either Oracle wallets or
+ 
+
+00:03:53.120 --> 00:03:57.010 align:start position:0%
+required for either Oracle wallets or
+Java<00:03:53.600><c> key</c><00:03:53.959><c> stores</c><00:03:55.630><c> enter</c><00:03:56.630><c> the</c><00:03:56.750><c> database</c>
+
+00:03:57.010 --> 00:03:57.020 align:start position:0%
+Java key stores enter the database
+ 
+
+00:03:57.020 --> 00:04:09.860 align:start position:0%
+Java key stores enter the database
+username<00:04:01.570><c> password</c>
+
+00:04:09.860 --> 00:04:09.870 align:start position:0%
+ 
+ 
+
+00:04:09.870 --> 00:04:12.990 align:start position:0%
+ 
+let's<00:04:10.870><c> click</c><00:04:11.080><c> on</c><00:04:11.260><c> next</c><00:04:11.319><c> and</c><00:04:11.890><c> let's</c><00:04:12.549><c> test</c><00:04:12.849><c> the</c>
+
+00:04:12.990 --> 00:04:13.000 align:start position:0%
+let's click on next and let's test the
+ 
+
+00:04:13.000 --> 00:04:16.590 align:start position:0%
+let's click on next and let's test the
+configuration<00:04:14.580><c> we</c><00:04:15.580><c> are</c><00:04:15.610><c> now</c><00:04:15.879><c> successfully</c>
+
+00:04:16.590 --> 00:04:16.600 align:start position:0%
+configuration we are now successfully
+ 
+
+00:04:16.600 --> 00:04:19.319 align:start position:0%
+configuration we are now successfully
+able<00:04:16.840><c> to</c><00:04:17.109><c> connect</c><00:04:17.440><c> an</c><00:04:17.590><c> ATP</c><00:04:18.160><c> let's</c><00:04:18.880><c> save</c><00:04:19.120><c> this</c>
+
+00:04:19.319 --> 00:04:19.329 align:start position:0%
+able to connect an ATP let's save this
+ 
+
+00:04:19.329 --> 00:04:28.200 align:start position:0%
+able to connect an ATP let's save this
+data<00:04:19.540><c> source</c><00:04:25.410><c> now</c><00:04:26.410><c> we</c><00:04:26.889><c> have</c><00:04:27.130><c> ATP</c><00:04:27.550><c> data</c><00:04:27.880><c> source</c>
+
+00:04:28.200 --> 00:04:28.210 align:start position:0%
+data source now we have ATP data source
+ 
+
+00:04:28.210 --> 00:04:30.840 align:start position:0%
+data source now we have ATP data source
+that<00:04:28.449><c> we</c><00:04:28.570><c> can</c><00:04:28.720><c> use</c><00:04:28.960><c> in</c><00:04:29.169><c> our</c><00:04:29.290><c> servlet</c><00:04:29.830><c> the</c><00:04:30.550><c> next</c>
+
+00:04:30.840 --> 00:04:30.850 align:start position:0%
+that we can use in our servlet the next
+ 
+
+00:04:30.850 --> 00:04:33.180 align:start position:0%
+that we can use in our servlet the next
+step<00:04:31.060><c> is</c><00:04:31.300><c> to</c><00:04:31.600><c> use</c><00:04:31.630><c> the</c><00:04:31.810><c> data</c><00:04:32.169><c> source</c><00:04:32.590><c> that</c><00:04:33.040><c> we</c>
+
+00:04:33.180 --> 00:04:33.190 align:start position:0%
+step is to use the data source that we
+ 
+
+00:04:33.190 --> 00:04:35.909 align:start position:0%
+step is to use the data source that we
+have<00:04:33.340><c> created</c><00:04:33.880><c> in</c><00:04:34.060><c> the</c><00:04:34.330><c> servlet</c><00:04:34.810><c> for</c><00:04:35.500><c> this</c><00:04:35.770><c> I</c>
+
+00:04:35.909 --> 00:04:35.919 align:start position:0%
+have created in the servlet for this I
+ 
+
+00:04:35.919 --> 00:04:38.550 align:start position:0%
+have created in the servlet for this I
+have<00:04:36.160><c> created</c><00:04:36.400><c> a</c><00:04:36.760><c> test</c><00:04:37.000><c> app</c><00:04:37.240><c> project</c><00:04:37.720><c> that</c><00:04:38.320><c> has</c>
+
+00:04:38.550 --> 00:04:38.560 align:start position:0%
+have created a test app project that has
+ 
+
+00:04:38.560 --> 00:04:43.830 align:start position:0%
+have created a test app project that has
+UCP<00:04:39.130><c> servlet</c><00:04:40.500><c> in</c><00:04:41.500><c> this</c><00:04:41.740><c> servlet</c><00:04:42.070><c> we</c><00:04:42.850><c> will</c><00:04:43.090><c> do</c><00:04:43.810><c> a</c>
+
+00:04:43.830 --> 00:04:43.840 align:start position:0%
+UCP servlet in this servlet we will do a
+ 
+
+00:04:43.840 --> 00:04:46.830 align:start position:0%
+UCP servlet in this servlet we will do a
+jndi<00:04:44.800><c> lookup</c><00:04:45.340><c> to</c><00:04:45.610><c> get</c><00:04:45.820><c> the</c><00:04:46.000><c> data</c><00:04:46.180><c> source</c><00:04:46.600><c> and</c>
+
+00:04:46.830 --> 00:04:46.840 align:start position:0%
+jndi lookup to get the data source and
+ 
+
+00:04:46.840 --> 00:04:49.080 align:start position:0%
+jndi lookup to get the data source and
+once<00:04:47.440><c> we</c><00:04:47.590><c> have</c><00:04:47.800><c> the</c><00:04:47.979><c> data</c><00:04:48.100><c> source</c><00:04:48.550><c> we</c><00:04:49.060><c> are</c>
+
+00:04:49.080 --> 00:04:49.090 align:start position:0%
+once we have the data source we are
+ 
+
+00:04:49.090 --> 00:04:51.810 align:start position:0%
+once we have the data source we are
+going<00:04:49.330><c> to</c><00:04:49.419><c> get</c><00:04:49.510><c> a</c><00:04:49.570><c> connection</c><00:04:50.520><c> after</c><00:04:51.520><c> we</c><00:04:51.669><c> get</c>
+
+00:04:51.810 --> 00:04:51.820 align:start position:0%
+going to get a connection after we get
+ 
+
+00:04:51.820 --> 00:04:53.820 align:start position:0%
+going to get a connection after we get
+the<00:04:51.970><c> connection</c><00:04:52.210><c> we</c><00:04:52.750><c> are</c><00:04:52.840><c> going</c><00:04:53.139><c> to</c><00:04:53.229><c> create</c><00:04:53.680><c> a</c>
+
+00:04:53.820 --> 00:04:53.830 align:start position:0%
+the connection we are going to create a
+ 
+
+00:04:53.830 --> 00:04:56.279 align:start position:0%
+the connection we are going to create a
+table<00:04:54.160><c> and</c><00:04:54.580><c> insert</c><00:04:55.090><c> few</c><00:04:55.330><c> records</c><00:04:55.720><c> update</c><00:04:56.260><c> a</c>
+
+00:04:56.279 --> 00:04:56.289 align:start position:0%
+table and insert few records update a
+ 
+
+00:04:56.289 --> 00:05:00.240 align:start position:0%
+table and insert few records update a
+record<00:04:56.560><c> and</c><00:04:56.979><c> clean</c><00:04:57.789><c> up</c><00:04:57.970><c> the</c><00:04:58.090><c> table</c><00:04:59.010><c> so</c><00:05:00.010><c> let's</c>
+
+00:05:00.240 --> 00:05:00.250 align:start position:0%
+record and clean up the table so let's
+ 
+
+00:05:00.250 --> 00:05:04.700 align:start position:0%
+record and clean up the table so let's
+see<00:05:00.430><c> how</c><00:05:00.729><c> we</c><00:05:00.789><c> are</c><00:05:01.210><c> getting</c><00:05:01.510><c> the</c><00:05:01.630><c> data</c><00:05:01.810><c> source</c>
+
+00:05:04.700 --> 00:05:04.710 align:start position:0%
+ 
+ 
+
+00:05:04.710 --> 00:05:08.550 align:start position:0%
+ 
+you<00:05:05.710><c> can</c><00:05:05.889><c> see</c><00:05:06.130><c> that</c><00:05:06.400><c> we</c><00:05:06.580><c> are</c><00:05:06.699><c> using</c><00:05:06.940><c> our</c><00:05:07.210><c> CL</c><00:05:07.900><c> ATP</c>
+
+00:05:08.550 --> 00:05:08.560 align:start position:0%
+you can see that we are using our CL ATP
+ 
+
+00:05:08.560 --> 00:05:11.600 align:start position:0%
+you can see that we are using our CL ATP
+underscore<00:05:09.039><c> DEA's</c><00:05:09.400><c> for</c><00:05:10.030><c> the</c><00:05:10.150><c> jndi</c><00:05:10.479><c> lookup</c>
+
+00:05:11.600 --> 00:05:11.610 align:start position:0%
+underscore DEA's for the jndi lookup
+ 
+
+00:05:11.610 --> 00:05:14.969 align:start position:0%
+underscore DEA's for the jndi lookup
+before<00:05:12.610><c> we</c><00:05:12.789><c> run</c><00:05:13.000><c> the</c><00:05:13.180><c> servlet</c><00:05:13.660><c> I</c><00:05:13.870><c> wanna</c><00:05:14.650><c> show</c>
+
+00:05:14.969 --> 00:05:14.979 align:start position:0%
+before we run the servlet I wanna show
+ 
+
+00:05:14.979 --> 00:05:17.279 align:start position:0%
+before we run the servlet I wanna show
+you<00:05:15.010><c> how</c><00:05:15.520><c> we</c><00:05:15.580><c> are</c><00:05:15.789><c> using</c><00:05:16.060><c> Oracle</c><00:05:16.720><c> wallets</c><00:05:17.169><c> our</c>
+
+00:05:17.279 --> 00:05:17.289 align:start position:0%
+you how we are using Oracle wallets our
+ 
+
+00:05:17.289 --> 00:05:20.550 align:start position:0%
+you how we are using Oracle wallets our
+jks<00:05:17.979><c> behind</c><00:05:18.490><c> the</c><00:05:18.639><c> scenes</c><00:05:18.910><c> for</c><00:05:19.690><c> this</c><00:05:19.960><c> you</c><00:05:20.380><c> will</c>
+
+00:05:20.550 --> 00:05:20.560 align:start position:0%
+jks behind the scenes for this you will
+ 
+
+00:05:20.560 --> 00:05:22.860 align:start position:0%
+jks behind the scenes for this you will
+need<00:05:20.710><c> to</c><00:05:20.860><c> go</c><00:05:21.039><c> to</c><00:05:21.099><c> the</c><00:05:21.310><c> location</c><00:05:21.669><c> where</c><00:05:21.970><c> you</c>
+
+00:05:22.860 --> 00:05:22.870 align:start position:0%
+need to go to the location where you
+ 
+
+00:05:22.870 --> 00:05:24.750 align:start position:0%
+need to go to the location where you
+have<00:05:23.080><c> placed</c><00:05:23.349><c> the</c><00:05:23.560><c> client</c><00:05:23.889><c> credentials</c><00:05:24.520><c> zip</c>
+
+00:05:24.750 --> 00:05:24.760 align:start position:0%
+have placed the client credentials zip
+ 
+
+00:05:24.760 --> 00:05:28.110 align:start position:0%
+have placed the client credentials zip
+file<00:05:25.410><c> this</c><00:05:26.410><c> is</c><00:05:26.620><c> the</c><00:05:26.770><c> location</c><00:05:27.280><c> where</c><00:05:27.580><c> I</c><00:05:27.789><c> have</c>
+
+00:05:28.110 --> 00:05:28.120 align:start position:0%
+file this is the location where I have
+ 
+
+00:05:28.120 --> 00:05:32.000 align:start position:0%
+file this is the location where I have
+placed<00:05:28.599><c> the</c><00:05:28.900><c> client</c><00:05:29.200><c> credentialed</c><00:05:29.710><c> zip</c><00:05:29.950><c> file</c>
+
+00:05:32.000 --> 00:05:32.010 align:start position:0%
+placed the client credentialed zip file
+ 
+
+00:05:32.010 --> 00:05:35.909 align:start position:0%
+placed the client credentialed zip file
+once<00:05:33.010><c> the</c><00:05:33.160><c> important</c><00:05:33.760><c> files</c><00:05:34.150><c> in</c><00:05:34.930><c> this</c><00:05:35.320><c> zip</c>
+
+00:05:35.909 --> 00:05:35.919 align:start position:0%
+once the important files in this zip
+ 
+
+00:05:35.919 --> 00:05:38.060 align:start position:0%
+once the important files in this zip
+file<00:05:36.160><c> is</c><00:05:36.370><c> already</c><00:05:36.610><c> busy</c><00:05:36.970><c> dot</c><00:05:37.180><c> properties</c><00:05:37.690><c> file</c>
+
+00:05:38.060 --> 00:05:38.070 align:start position:0%
+file is already busy dot properties file
+ 
+
+00:05:38.070 --> 00:05:41.219 align:start position:0%
+file is already busy dot properties file
+this<00:05:39.070><c> properties</c><00:05:39.700><c> file</c><00:05:39.970><c> contains</c><00:05:40.539><c> connection</c>
+
+00:05:41.219 --> 00:05:41.229 align:start position:0%
+this properties file contains connection
+ 
+
+00:05:41.229 --> 00:05:44.040 align:start position:0%
+this properties file contains connection
+properties<00:05:41.500><c> for</c><00:05:42.010><c> both</c><00:05:42.280><c> GTS</c><00:05:43.150><c> and</c><00:05:43.300><c> Oracle</c>
+
+00:05:44.040 --> 00:05:44.050 align:start position:0%
+properties for both GTS and Oracle
+ 
+
+00:05:44.050 --> 00:05:46.740 align:start position:0%
+properties for both GTS and Oracle
+wallets<00:05:44.560><c> make</c><00:05:45.160><c> sure</c><00:05:45.430><c> you</c><00:05:45.729><c> uncomment</c><00:05:46.419><c> the</c><00:05:46.539><c> one</c>
+
+00:05:46.740 --> 00:05:46.750 align:start position:0%
+wallets make sure you uncomment the one
+ 
+
+00:05:46.750 --> 00:05:49.350 align:start position:0%
+wallets make sure you uncomment the one
+that<00:05:46.960><c> you</c><00:05:47.080><c> want</c><00:05:47.320><c> to</c><00:05:47.440><c> use</c><00:05:47.590><c> for</c><00:05:48.370><c> example</c><00:05:48.460><c> for</c>
+
+00:05:49.350 --> 00:05:49.360 align:start position:0%
+that you want to use for example for
+ 
+
+00:05:49.360 --> 00:05:51.659 align:start position:0%
+that you want to use for example for
+Oracle<00:05:49.810><c> wallets</c><00:05:50.229><c> you</c><00:05:50.560><c> need</c><00:05:50.770><c> to</c><00:05:50.889><c> have</c><00:05:51.130><c> the</c>
+
+00:05:51.659 --> 00:05:51.669 align:start position:0%
+Oracle wallets you need to have the
+ 
+
+00:05:51.669 --> 00:05:54.120 align:start position:0%
+Oracle wallets you need to have the
+Oracle<00:05:52.180><c> wallets</c><00:05:52.539><c> related</c><00:05:52.990><c> property</c><00:05:53.500><c> running</c>
+
+00:05:54.120 --> 00:05:54.130 align:start position:0%
+Oracle wallets related property running
+ 
+
+00:05:54.130 --> 00:05:56.580 align:start position:0%
+Oracle wallets related property running
+the<00:05:54.220><c> UCP</c><00:05:54.669><c> servlet</c><00:05:55.120><c> let's</c><00:05:55.660><c> go</c><00:05:55.930><c> to</c><00:05:55.990><c> the</c><00:05:56.169><c> test</c><00:05:56.410><c> app</c>
+
+00:05:56.580 --> 00:05:56.590 align:start position:0%
+the UCP servlet let's go to the test app
+ 
+
+00:05:56.590 --> 00:06:00.779 align:start position:0%
+the UCP servlet let's go to the test app
+project<00:05:57.010><c> and</c><00:05:58.080><c> click</c><00:05:59.080><c> on</c><00:05:59.260><c> run</c><00:05:59.530><c> as</c><00:05:59.740><c> run</c><00:06:00.610><c> on</c>
+
+00:06:00.779 --> 00:06:00.789 align:start position:0%
+project and click on run as run on
+ 
+
+00:06:00.789 --> 00:06:09.690 align:start position:0%
+project and click on run as run on
+server<00:06:03.990><c> we</c><00:06:04.990><c> need</c><00:06:05.139><c> to</c><00:06:05.289><c> invoke</c><00:06:05.590><c> UCP</c><00:06:06.130><c> servlet</c>
+
+00:06:09.690 --> 00:06:09.700 align:start position:0%
+ 
+ 
+
+00:06:09.700 --> 00:06:13.210 align:start position:0%
+ 
+you<00:06:10.700><c> can</c><00:06:10.880><c> see</c><00:06:11.090><c> that</c><00:06:11.270><c> we</c><00:06:11.720><c> successfully</c><00:06:12.160><c> got</c><00:06:13.160><c> a</c>
+
+00:06:13.210 --> 00:06:13.220 align:start position:0%
+you can see that we successfully got a
+ 
+
+00:06:13.220 --> 00:06:18.070 align:start position:0%
+you can see that we successfully got a
+connection<00:06:13.760><c> to</c><00:06:13.910><c> ATP</c><00:06:15.100><c> for</c><00:06:16.100><c> using</c><00:06:16.460><c> jks</c><00:06:17.090><c> open</c>
+
+00:06:18.070 --> 00:06:18.080 align:start position:0%
+connection to ATP for using jks open
+ 
+
+00:06:18.080 --> 00:06:20.830 align:start position:0%
+connection to ATP for using jks open
+your<00:06:18.230><c> ODBC</c><00:06:18.950><c> table</c><00:06:19.100><c> properties</c><00:06:19.400><c> file</c><00:06:19.940><c> and</c><00:06:20.210><c> make</c>
+
+00:06:20.830 --> 00:06:20.840 align:start position:0%
+your ODBC table properties file and make
+ 
+
+00:06:20.840 --> 00:06:22.840 align:start position:0%
+your ODBC table properties file and make
+sure<00:06:21.110><c> you</c><00:06:21.440><c> comment</c><00:06:21.770><c> the</c><00:06:22.040><c> wallet</c><00:06:22.400><c> related</c>
+
+00:06:22.840 --> 00:06:22.850 align:start position:0%
+sure you comment the wallet related
+ 
+
+00:06:22.850 --> 00:06:26.020 align:start position:0%
+sure you comment the wallet related
+property<00:06:23.330><c> and</c><00:06:23.570><c> uncomment</c><00:06:24.550><c> jks</c><00:06:25.550><c> related</c>
+
+00:06:26.020 --> 00:06:26.030 align:start position:0%
+property and uncomment jks related
+ 
+
+00:06:26.030 --> 00:06:31.270 align:start position:0%
+property and uncomment jks related
+properties<00:06:27.760><c> this</c><00:06:28.760><c> time</c><00:06:29.000><c> we</c><00:06:29.450><c> are</c><00:06:29.570><c> using</c><00:06:29.710><c> jks</c><00:06:30.710><c> to</c>
+
+00:06:31.270 --> 00:06:31.280 align:start position:0%
+properties this time we are using jks to
+ 
+
+00:06:31.280 --> 00:06:34.390 align:start position:0%
+properties this time we are using jks to
+connect<00:06:31.610><c> to</c><00:06:31.700><c> ATP</c><00:06:32.290><c> make</c><00:06:33.290><c> sure</c><00:06:33.500><c> you</c><00:06:33.710><c> restart</c><00:06:34.250><c> the</c>
+
+00:06:34.390 --> 00:06:34.400 align:start position:0%
+connect to ATP make sure you restart the
+ 
+
+00:06:34.400 --> 00:06:37.090 align:start position:0%
+connect to ATP make sure you restart the
+WebLogic<00:06:34.730><c> server</c><00:06:34.940><c> before</c><00:06:35.690><c> you</c><00:06:36.080><c> run</c><00:06:36.950><c> the</c>
+
+00:06:37.090 --> 00:06:37.100 align:start position:0%
+WebLogic server before you run the
+ 
+
+00:06:37.100 --> 00:06:38.100 align:start position:0%
+WebLogic server before you run the
+servlet
+
+00:06:38.100 --> 00:06:38.110 align:start position:0%
+servlet
+ 
+
+00:06:38.110 --> 00:06:42.160 align:start position:0%
+servlet
+we'll<00:06:39.110><c> go</c><00:06:39.290><c> to</c><00:06:39.350><c> test</c><00:06:39.650><c> app</c><00:06:39.830><c> project</c><00:06:40.100><c> and</c><00:06:40.900><c> run</c><00:06:41.900><c> on</c>
+
+00:06:42.160 --> 00:06:42.170 align:start position:0%
+we'll go to test app project and run on
+ 
+
+00:06:42.170 --> 00:06:51.340 align:start position:0%
+we'll go to test app project and run on
+server<00:06:43.090><c> and</c><00:06:44.890><c> will</c><00:06:45.890><c> invoke</c><00:06:47.560><c> UCP</c><00:06:48.560><c> servlet</c><00:06:50.350><c> you</c>
+
+00:06:51.340 --> 00:06:51.350 align:start position:0%
+server and will invoke UCP servlet you
+ 
+
+00:06:51.350 --> 00:06:53.260 align:start position:0%
+server and will invoke UCP servlet you
+can<00:06:51.530><c> see</c><00:06:51.710><c> that</c><00:06:51.920><c> we</c><00:06:52.100><c> successfully</c><00:06:52.460><c> connected</c>
+
+00:06:53.260 --> 00:06:53.270 align:start position:0%
+can see that we successfully connected
+ 
+
+00:06:53.270 --> 00:06:56.590 align:start position:0%
+can see that we successfully connected
+to<00:06:53.390><c> ATP</c><00:06:53.750><c> using</c><00:06:54.320><c> jks</c><00:06:54.880><c> thank</c><00:06:55.880><c> you</c><00:06:56.000><c> for</c><00:06:56.210><c> watching</c>
+
+00:06:56.590 --> 00:06:56.600 align:start position:0%
+to ATP using jks thank you for watching
+ 
+
+00:06:56.600 --> 00:06:58.840 align:start position:0%
+to ATP using jks thank you for watching
+the<00:06:56.690><c> video</c>
+

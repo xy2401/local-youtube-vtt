@@ -1,0 +1,256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:01.638
+PETE LEPAGE: Headless
+Chrome allows
+
+00:00:01.638 --> 00:00:03.960
+you to run Chrome in an
+automated environment
+
+00:00:03.960 --> 00:00:06.810
+without a user interface
+or peripherals.
+
+00:00:06.810 --> 00:00:09.690
+Notifications on Mac
+will be shown directly
+
+00:00:09.690 --> 00:00:13.020
+by the native Mac OS
+notification system.
+
+00:00:13.020 --> 00:00:15.720
+You can now capture
+full resolution photos
+
+00:00:15.720 --> 00:00:17.430
+with the Image Capture API.
+
+00:00:17.430 --> 00:00:18.990
+And there's plenty more.
+
+00:00:18.990 --> 00:00:20.310
+I'm Pete LePage.
+
+00:00:20.310 --> 00:00:25.444
+Let's dive in and see what's
+new for developers in Chrome 59.
+
+00:00:25.444 --> 00:00:27.710
+A headless browser
+is a great tool
+
+00:00:27.710 --> 00:00:30.800
+for running automated tests
+and server environments where
+
+00:00:30.800 --> 00:00:33.290
+you don't need to see
+the rendered output
+
+00:00:33.290 --> 00:00:35.390
+or have a visible UI shell--
+
+00:00:35.390 --> 00:00:38.420
+for example, using
+Selenium for unit tests
+
+00:00:38.420 --> 00:00:40.010
+against your
+progressive web app,
+
+00:00:40.010 --> 00:00:42.680
+to create a PDF of
+a Wikipedia page,
+
+00:00:42.680 --> 00:00:45.560
+or inspecting a
+page with DevTools.
+
+00:00:45.560 --> 00:00:49.610
+Starting in Chrome 59, you
+can now run headless Chrome.
+
+00:00:49.610 --> 00:00:52.370
+It brings all the modern web
+platform features provided
+
+00:00:52.370 --> 00:00:54.920
+by Chrome to the command line.
+
+00:00:54.920 --> 00:00:58.220
+Check out Eric Bidelman's
+post on updates linked below
+
+00:00:58.220 --> 00:00:59.870
+for full details.
+
+00:00:59.870 --> 00:01:02.540
+He's got an example on how you
+can use it to convert pages
+
+00:01:02.540 --> 00:01:06.530
+to PDF, dump the DOM, and how
+to use it programmatically
+
+00:01:06.530 --> 00:01:07.820
+in Node.
+
+00:01:07.820 --> 00:01:11.570
+Chrome has historically included
+its own notification system
+
+00:01:11.570 --> 00:01:14.780
+for Web and extension
+developers to show notifications
+
+00:01:14.780 --> 00:01:16.010
+to the user.
+
+00:01:16.010 --> 00:01:18.500
+But we've heard from
+users and developers
+
+00:01:18.500 --> 00:01:22.190
+alike that they want Chrome to
+use the native OS notification
+
+00:01:22.190 --> 00:01:23.240
+system.
+
+00:01:23.240 --> 00:01:26.015
+Starting in Chrome
+59 on Mac OS, Chrome
+
+00:01:26.015 --> 00:01:28.520
+will use the native
+notification system,
+
+00:01:28.520 --> 00:01:30.770
+improving the user
+experience and ensuring
+
+00:01:30.770 --> 00:01:34.520
+that the notifications feel
+more integrated in the platform.
+
+00:01:34.520 --> 00:01:37.970
+My personal favorite,
+notifications will now respect
+
+00:01:37.970 --> 00:01:40.670
+my do not disturb settings.
+
+00:01:40.670 --> 00:01:43.490
+Because of the way Mac
+OS handles notifications,
+
+00:01:43.490 --> 00:01:46.460
+there are a few
+low usage APIs that
+
+00:01:46.460 --> 00:01:50.060
+are now discouraged as they'll
+result in a degraded experience
+
+00:01:50.060 --> 00:01:51.650
+on Mac OS.
+
+00:01:51.650 --> 00:01:53.780
+Check out our updates
+post linked below
+
+00:01:53.780 --> 00:01:55.610
+for all the details.
+
+00:01:55.610 --> 00:01:58.940
+Capturing high res photos
+in a web app can be hard.
+
+00:01:58.940 --> 00:02:01.880
+Either the user has to upload a
+photo or they've already taken
+
+00:02:01.880 --> 00:02:04.910
+or switch from the browser to
+their camera, take the photo,
+
+00:02:04.910 --> 00:02:07.940
+switch back to the browser,
+and upload the photo.
+
+00:02:07.940 --> 00:02:11.150
+With the new Image
+Capture API in Chrome 59,
+
+00:02:11.150 --> 00:02:14.750
+you have full access to the full
+resolution of the capabilities
+
+00:02:14.750 --> 00:02:16.820
+of any available camera.
+
+00:02:16.820 --> 00:02:19.160
+The API provides
+control of features
+
+00:02:19.160 --> 00:02:24.090
+such as zoom, focus, contrast,
+ISO, and even white balance.
+
+00:02:24.090 --> 00:02:27.200
+Check Sam's post on
+updates for full details
+
+00:02:27.200 --> 00:02:30.690
+and sample code that you can
+use to get started right away.
+
+00:02:30.690 --> 00:02:33.140
+These are just a few of
+the changes in Chrome 59
+
+00:02:33.140 --> 00:02:34.130
+for developers.
+
+00:02:34.130 --> 00:02:36.150
+Of course, there's plenty more.
+
+00:02:36.150 --> 00:02:38.280
+Check the description
+for more details,
+
+00:02:38.280 --> 00:02:41.030
+including links
+to docs and specs.
+
+00:02:41.030 --> 00:02:43.580
+Now if you didn't make it
+to Google I/O this year,
+
+00:02:43.580 --> 00:02:46.350
+I've put a few of my favorite
+videos on the side there.
+
+00:02:46.350 --> 00:02:47.780
+So check those out.
+
+00:02:47.780 --> 00:02:49.730
+Then click the Subscribe
+button and you'll
+
+00:02:49.730 --> 00:02:52.990
+get an email notification
+whenever we launch a new video.
+
+00:02:52.990 --> 00:02:56.010
+I'm Pete LePage, and as soon
+as Chrome 60 is released,
+
+00:02:56.010 --> 00:02:59.128
+I'll be right here to tell
+you what's new in chrome.
+

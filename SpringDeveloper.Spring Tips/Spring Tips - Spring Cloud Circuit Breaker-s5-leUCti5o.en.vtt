@@ -1,0 +1,3272 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:25.300 --> 00:00:27.669 align:start position:0%
+ 
+hi<00:00:26.300><c> spring</c><00:00:26.570><c> fans</c><00:00:26.779><c> welcome</c><00:00:27.439><c> to</c><00:00:27.560><c> another</c>
+
+00:00:27.669 --> 00:00:27.679 align:start position:0%
+hi spring fans welcome to another
+ 
+
+00:00:27.679 --> 00:00:29.380 align:start position:0%
+hi spring fans welcome to another
+installment<00:00:27.890><c> of</c><00:00:28.130><c> spring</c><00:00:28.429><c> tips</c><00:00:28.669><c> in</c><00:00:29.179><c> this</c>
+
+00:00:29.380 --> 00:00:29.390 align:start position:0%
+installment of spring tips in this
+ 
+
+00:00:29.390 --> 00:00:30.370 align:start position:0%
+installment of spring tips in this
+installment<00:00:29.660><c> we're</c><00:00:29.900><c> going</c><00:00:30.019><c> to</c><00:00:30.079><c> take</c><00:00:30.230><c> a</c><00:00:30.259><c> look</c>
+
+00:00:30.370 --> 00:00:30.380 align:start position:0%
+installment we're going to take a look
+ 
+
+00:00:30.380 --> 00:00:32.350 align:start position:0%
+installment we're going to take a look
+at<00:00:30.560><c> the</c><00:00:30.650><c> brand</c><00:00:30.890><c> new</c><00:00:31.130><c> just</c><00:00:31.340><c> announced</c><00:00:31.789><c> spring</c>
+
+00:00:32.350 --> 00:00:32.360 align:start position:0%
+at the brand new just announced spring
+ 
+
+00:00:32.360 --> 00:00:34.540 align:start position:0%
+at the brand new just announced spring
+cloud<00:00:32.660><c> circuit</c><00:00:33.110><c> breaker</c><00:00:33.290><c> project</c><00:00:33.800><c> the</c><00:00:34.370><c> whole</c>
+
+00:00:34.540 --> 00:00:34.550 align:start position:0%
+cloud circuit breaker project the whole
+ 
+
+00:00:34.550 --> 00:00:36.250 align:start position:0%
+cloud circuit breaker project the whole
+point<00:00:34.940><c> of</c><00:00:35.090><c> the</c><00:00:35.329><c> circuit</c><00:00:35.660><c> breaker</c><00:00:35.809><c> project</c><00:00:36.170><c> is</c>
+
+00:00:36.250 --> 00:00:36.260 align:start position:0%
+point of the circuit breaker project is
+ 
+
+00:00:36.260 --> 00:00:39.520 align:start position:0%
+point of the circuit breaker project is
+to<00:00:36.410><c> provide</c><00:00:36.440><c> an</c><00:00:36.800><c> abstraction</c><00:00:36.920><c> on</c><00:00:37.489><c> top</c><00:00:37.610><c> of</c><00:00:38.530><c> well</c>
+
+00:00:39.520 --> 00:00:39.530 align:start position:0%
+to provide an abstraction on top of well
+ 
+
+00:00:39.530 --> 00:00:41.640 align:start position:0%
+to provide an abstraction on top of well
+other<00:00:40.219><c> circuit</c><00:00:40.579><c> breakers</c><00:00:40.820><c> certainly</c>
+
+00:00:41.640 --> 00:00:41.650 align:start position:0%
+other circuit breakers certainly
+ 
+
+00:00:41.650 --> 00:00:45.280 align:start position:0%
+other circuit breakers certainly
+including<00:00:42.650><c> but</c><00:00:43.220><c> not</c><00:00:43.250><c> limited</c><00:00:43.370><c> to</c><00:00:44.290><c> Netflix's</c>
+
+00:00:45.280 --> 00:00:45.290 align:start position:0%
+including but not limited to Netflix's
+ 
+
+00:00:45.290 --> 00:00:49.360 align:start position:0%
+including but not limited to Netflix's
+hystrix<00:00:45.650><c> resilience</c><00:00:46.610><c> 4j</c><00:00:47.589><c> alibaba's</c><00:00:48.589><c> Sentinel</c>
+
+00:00:49.360 --> 00:00:49.370 align:start position:0%
+hystrix resilience 4j alibaba's Sentinel
+ 
+
+00:00:49.370 --> 00:00:51.219 align:start position:0%
+hystrix resilience 4j alibaba's Sentinel
+which<00:00:50.030><c> I</c><00:00:50.149><c> introduced</c><00:00:50.540><c> in</c><00:00:50.659><c> a</c><00:00:50.720><c> previous</c><00:00:50.750><c> spring</c>
+
+00:00:51.219 --> 00:00:51.229 align:start position:0%
+which I introduced in a previous spring
+ 
+
+00:00:51.229 --> 00:00:52.240 align:start position:0%
+which I introduced in a previous spring
+tips<00:00:51.500><c> by</c><00:00:51.649><c> the</c><00:00:51.710><c> way</c><00:00:51.800><c> and</c><00:00:51.890><c> we</c><00:00:51.949><c> also</c><00:00:52.070><c> we</c>
+
+00:00:52.240 --> 00:00:52.250 align:start position:0%
+tips by the way and we also we
+ 
+
+00:00:52.250 --> 00:00:54.939 align:start position:0%
+tips by the way and we also we
+introduced<00:00:52.640><c> them</c><00:00:53.170><c> hystrix</c><00:00:54.170><c> and</c><00:00:54.379><c> spring</c><00:00:54.649><c> retry</c>
+
+00:00:54.939 --> 00:00:54.949 align:start position:0%
+introduced them hystrix and spring retry
+ 
+
+00:00:54.949 --> 00:00:58.270 align:start position:0%
+introduced them hystrix and spring retry
+so<00:00:55.489><c> it's</c><00:00:55.729><c> a</c><00:00:56.140><c> alibaba's</c><00:00:57.140><c> Sentinel</c><00:00:57.559><c> spring</c>
+
+00:00:58.270 --> 00:00:58.280 align:start position:0%
+so it's a alibaba's Sentinel spring
+ 
+
+00:00:58.280 --> 00:01:00.399 align:start position:0%
+so it's a alibaba's Sentinel spring
+retried<00:00:58.670><c> history</c><00:00:59.180><c> and</c><00:00:59.420><c> resilience</c><00:01:00.110><c> for</c><00:01:00.260><c> J</c>
+
+00:01:00.399 --> 00:01:00.409 align:start position:0%
+retried history and resilience for J
+ 
+
+00:01:00.409 --> 00:01:01.990 align:start position:0%
+retried history and resilience for J
+that<00:01:00.559><c> are</c><00:01:00.650><c> these</c><00:01:01.010><c> are</c><00:01:01.070><c> the</c><00:01:01.250><c> four</c><00:01:01.460><c> supported</c>
+
+00:01:01.990 --> 00:01:02.000 align:start position:0%
+that are these are the four supported
+ 
+
+00:01:02.000 --> 00:01:03.759 align:start position:0%
+that are these are the four supported
+circuit<00:01:02.330><c> breakers</c><00:01:02.600><c> we've</c><00:01:03.140><c> looked</c><00:01:03.409><c> at</c><00:01:03.559><c> three</c>
+
+00:01:03.759 --> 00:01:03.769 align:start position:0%
+circuit breakers we've looked at three
+ 
+
+00:01:03.769 --> 00:01:06.100 align:start position:0%
+circuit breakers we've looked at three
+of<00:01:03.890><c> those</c><00:01:04.009><c> in</c><00:01:04.729><c> in</c><00:01:05.059><c> previous</c><00:01:05.449><c> installments</c><00:01:05.630><c> of</c>
+
+00:01:06.100 --> 00:01:06.110 align:start position:0%
+of those in in previous installments of
+ 
+
+00:01:06.110 --> 00:01:09.100 align:start position:0%
+of those in in previous installments of
+spring<00:01:06.350><c> tips</c><00:01:06.670><c> where</c><00:01:07.670><c> and</c><00:01:07.850><c> we</c><00:01:08.000><c> looked</c><00:01:08.990><c> at</c>
+
+00:01:09.100 --> 00:01:09.110 align:start position:0%
+spring tips where and we looked at
+ 
+
+00:01:09.110 --> 00:01:11.200 align:start position:0%
+spring tips where and we looked at
+circuit<00:01:09.650><c> breakers</c><00:01:09.920><c> generally</c><00:01:10.549><c> with</c><00:01:10.700><c> hystrix</c>
+
+00:01:11.200 --> 00:01:11.210 align:start position:0%
+circuit breakers generally with hystrix
+ 
+
+00:01:11.210 --> 00:01:13.450 align:start position:0%
+circuit breakers generally with hystrix
+and<00:01:11.450><c> spring</c><00:01:11.840><c> we</c><00:01:11.930><c> tried</c><00:01:12.140><c> a</c><00:01:12.350><c> few</c><00:01:12.770><c> years</c><00:01:13.009><c> ago</c><00:01:13.159><c> and</c>
+
+00:01:13.450 --> 00:01:13.460 align:start position:0%
+and spring we tried a few years ago and
+ 
+
+00:01:13.460 --> 00:01:14.830 align:start position:0%
+and spring we tried a few years ago and
+then<00:01:13.549><c> more</c><00:01:13.759><c> recently</c><00:01:13.850><c> looked</c><00:01:14.270><c> at</c><00:01:14.330><c> alibaba's</c>
+
+00:01:14.830 --> 00:01:14.840 align:start position:0%
+then more recently looked at alibaba's
+ 
+
+00:01:14.840 --> 00:01:18.399 align:start position:0%
+then more recently looked at alibaba's
+spring<00:01:15.470><c> cloud</c><00:01:15.710><c> integration</c><00:01:17.020><c> now</c><00:01:18.020><c> these</c>
+
+00:01:18.399 --> 00:01:18.409 align:start position:0%
+spring cloud integration now these
+ 
+
+00:01:18.409 --> 00:01:21.039 align:start position:0%
+spring cloud integration now these
+different<00:01:18.740><c> technologies</c><00:01:19.450><c> can</c><00:01:20.450><c> be</c><00:01:20.479><c> used</c><00:01:20.600><c> with</c>
+
+00:01:21.039 --> 00:01:21.049 align:start position:0%
+different technologies can be used with
+ 
+
+00:01:21.049 --> 00:01:22.330 align:start position:0%
+different technologies can be used with
+instrument<00:01:21.200><c> cloud</c><00:01:21.590><c> from</c><00:01:21.920><c> a</c><00:01:22.009><c> unified</c>
+
+00:01:22.330 --> 00:01:22.340 align:start position:0%
+instrument cloud from a unified
+ 
+
+00:01:22.340 --> 00:01:24.160 align:start position:0%
+instrument cloud from a unified
+abstraction<00:01:22.909><c> thanks</c><00:01:23.509><c> to</c><00:01:23.600><c> this</c><00:01:23.689><c> new</c><00:01:23.750><c> project</c>
+
+00:01:24.160 --> 00:01:24.170 align:start position:0%
+abstraction thanks to this new project
+ 
+
+00:01:24.170 --> 00:01:25.690 align:start position:0%
+abstraction thanks to this new project
+that<00:01:24.200><c> we've</c><00:01:24.380><c> just</c><00:01:24.560><c> announced</c><00:01:24.710><c> that</c><00:01:25.280><c> supports</c>
+
+00:01:25.690 --> 00:01:25.700 align:start position:0%
+that we've just announced that supports
+ 
+
+00:01:25.700 --> 00:01:27.819 align:start position:0%
+that we've just announced that supports
+both<00:01:25.880><c> reactive</c><00:01:26.360><c> and</c><00:01:26.479><c> nonreactive</c><00:01:26.770><c> sort</c><00:01:27.770><c> of</c>
+
+00:01:27.819 --> 00:01:27.829 align:start position:0%
+both reactive and nonreactive sort of
+ 
+
+00:01:27.829 --> 00:01:30.340 align:start position:0%
+both reactive and nonreactive sort of
+use<00:01:27.979><c> cases</c><00:01:28.189><c> it's</c><00:01:28.939><c> not</c><00:01:29.179><c> yet</c><00:01:29.569><c> GA</c><00:01:29.869><c> so</c><00:01:30.170><c> we're</c><00:01:30.259><c> gonna</c>
+
+00:01:30.340 --> 00:01:30.350 align:start position:0%
+use cases it's not yet GA so we're gonna
+ 
+
+00:01:30.350 --> 00:01:31.899 align:start position:0%
+use cases it's not yet GA so we're gonna
+have<00:01:30.560><c> to</c><00:01:30.679><c> add</c><00:01:30.770><c> our</c><00:01:30.920><c> dependency</c><00:01:31.340><c> Manley</c><00:01:31.759><c> but</c>
+
+00:01:31.899 --> 00:01:31.909 align:start position:0%
+have to add our dependency Manley but
+ 
+
+00:01:31.909 --> 00:01:33.550 align:start position:0%
+have to add our dependency Manley but
+that's<00:01:32.060><c> not</c><00:01:32.149><c> a</c><00:01:32.179><c> big</c><00:01:32.359><c> deal</c><00:01:32.390><c> let's</c><00:01:33.079><c> go</c><00:01:33.229><c> back</c><00:01:33.380><c> to</c>
+
+00:01:33.550 --> 00:01:33.560 align:start position:0%
+that's not a big deal let's go back to
+ 
+
+00:01:33.560 --> 00:01:35.469 align:start position:0%
+that's not a big deal let's go back to
+my<00:01:34.340><c> second</c><00:01:34.700><c> favorite</c><00:01:34.939><c> place</c><00:01:34.999><c> on</c><00:01:35.090><c> the</c><00:01:35.240><c> Internet</c>
+
+00:01:35.469 --> 00:01:35.479 align:start position:0%
+my second favorite place on the Internet
+ 
+
+00:01:35.479 --> 00:01:37.929 align:start position:0%
+my second favorite place on the Internet
+of<00:01:35.600><c> course</c><00:01:35.659><c> start</c><00:01:36.289><c> dead</c><00:01:36.469><c> spring</c><00:01:37.039><c> that</c><00:01:37.159><c> IO</c><00:01:37.280><c> and</c>
+
+00:01:37.929 --> 00:01:37.939 align:start position:0%
+of course start dead spring that IO and
+ 
+
+00:01:37.939 --> 00:01:39.249 align:start position:0%
+of course start dead spring that IO and
+we're<00:01:38.179><c> gonna</c><00:01:38.270><c> build</c><00:01:38.450><c> a</c><00:01:38.479><c> new</c><00:01:38.509><c> application</c><00:01:38.899><c> here</c>
+
+00:01:39.249 --> 00:01:39.259 align:start position:0%
+we're gonna build a new application here
+ 
+
+00:01:39.259 --> 00:01:41.620 align:start position:0%
+we're gonna build a new application here
+I'm<00:01:39.649><c> just</c><00:01:39.710><c> gonna</c><00:01:39.829><c> call</c><00:01:40.069><c> this</c><00:01:40.420><c> circuit</c><00:01:41.420><c> breaker</c>
+
+00:01:41.620 --> 00:01:41.630 align:start position:0%
+I'm just gonna call this circuit breaker
+ 
+
+00:01:41.630 --> 00:01:45.609 align:start position:0%
+I'm just gonna call this circuit breaker
+okay<00:01:42.469><c> and</c><00:01:43.069><c> we</c><00:01:43.159><c> can</c><00:01:43.249><c> use</c><00:01:43.369><c> two</c><00:01:43.899><c> 2.0</c><00:01:44.899><c> snapshot</c>
+
+00:01:45.609 --> 00:01:45.619 align:start position:0%
+okay and we can use two 2.0 snapshot
+ 
+
+00:01:45.619 --> 00:01:47.230 align:start position:0%
+okay and we can use two 2.0 snapshot
+latest<00:01:46.009><c> and</c><00:01:46.130><c> greatest</c><00:01:46.280><c> and</c><00:01:46.609><c> I'll</c><00:01:46.969><c> bring</c><00:01:47.119><c> in</c>
+
+00:01:47.230 --> 00:01:47.240 align:start position:0%
+latest and greatest and I'll bring in
+ 
+
+00:01:47.240 --> 00:01:49.569 align:start position:0%
+latest and greatest and I'll bring in
+Lombok<00:01:47.689><c> coming</c><00:01:48.049><c> in</c><00:01:48.170><c> the</c><00:01:48.289><c> reactive</c><00:01:48.950><c> web</c>
+
+00:01:49.569 --> 00:01:49.579 align:start position:0%
+Lombok coming in the reactive web
+ 
+
+00:01:49.579 --> 00:01:52.779 align:start position:0%
+Lombok coming in the reactive web
+support<00:01:50.079><c> and</c><00:01:51.079><c> there</c><00:01:51.950><c> is</c><00:01:52.100><c> no</c><00:01:52.249><c> circuit</c><00:01:52.609><c> breaker</c>
+
+00:01:52.779 --> 00:01:52.789 align:start position:0%
+support and there is no circuit breaker
+ 
+
+00:01:52.789 --> 00:01:54.459 align:start position:0%
+support and there is no circuit breaker
+dependency<00:01:53.270><c> not</c><00:01:53.539><c> yet</c><00:01:53.749><c> anyway</c><00:01:53.959><c> so</c><00:01:54.020><c> we</c><00:01:54.229><c> need</c><00:01:54.350><c> to</c>
+
+00:01:54.459 --> 00:01:54.469 align:start position:0%
+dependency not yet anyway so we need to
+ 
+
+00:01:54.469 --> 00:01:59.620 align:start position:0%
+dependency not yet anyway so we need to
+we<00:01:55.009><c> need</c><00:01:55.039><c> to</c><00:01:55.189><c> add</c><00:01:55.399><c> that</c><00:01:56.979><c> manually</c><00:01:57.979><c> okay</c><00:01:58.630><c> with</c>
+
+00:01:59.620 --> 00:01:59.630 align:start position:0%
+we need to add that manually okay with
+ 
+
+00:01:59.630 --> 00:02:00.910 align:start position:0%
+we need to add that manually okay with
+this<00:01:59.810><c> we</c><00:02:00.109><c> can</c><00:02:00.229><c> go</c><00:02:00.289><c> ahead</c><00:02:00.439><c> and</c><00:02:00.530><c> build</c><00:02:00.770><c> an</c>
+
+00:02:00.910 --> 00:02:00.920 align:start position:0%
+this we can go ahead and build an
+ 
+
+00:02:00.920 --> 00:02:02.969 align:start position:0%
+this we can go ahead and build an
+application<00:02:01.039><c> I</c><00:02:01.490><c> want</c><00:02:01.639><c> to</c><00:02:01.700><c> have</c><00:02:01.789><c> cloud</c>
+
+00:02:02.969 --> 00:02:02.979 align:start position:0%
+application I want to have cloud
+ 
+
+00:02:02.979 --> 00:02:05.080 align:start position:0%
+application I want to have cloud
+bootstraps<00:02:03.979><c> I</c><00:02:04.100><c> have</c><00:02:04.219><c> that</c><00:02:04.340><c> that</c><00:02:04.850><c> way</c><00:02:04.939><c> it'll</c>
+
+00:02:05.080 --> 00:02:05.090 align:start position:0%
+bootstraps I have that that way it'll
+ 
+
+00:02:05.090 --> 00:02:07.690 align:start position:0%
+bootstraps I have that that way it'll
+give<00:02:05.240><c> me</c><00:02:05.389><c> the</c><00:02:05.420><c> spring</c><00:02:05.780><c> cloud</c><00:02:06.020><c> um</c><00:02:06.700><c> dependency</c>
+
+00:02:07.690 --> 00:02:07.700 align:start position:0%
+give me the spring cloud um dependency
+ 
+
+00:02:07.700 --> 00:02:09.040 align:start position:0%
+give me the spring cloud um dependency
+management<00:02:07.939><c> you</c><00:02:08.209><c> know</c><00:02:08.300><c> the</c><00:02:08.450><c> the</c><00:02:08.690><c> maven</c>
+
+00:02:09.040 --> 00:02:09.050 align:start position:0%
+management you know the the maven
+ 
+
+00:02:09.050 --> 00:02:10.900 align:start position:0%
+management you know the the maven
+repository<00:02:09.080><c> and</c><00:02:09.830><c> the</c><00:02:10.340><c> bomb</c><00:02:10.520><c> and</c><00:02:10.700><c> all</c><00:02:10.789><c> their</c>
+
+00:02:10.900 --> 00:02:10.910 align:start position:0%
+repository and the bomb and all their
+ 
+
+00:02:10.910 --> 00:02:13.240 align:start position:0%
+repository and the bomb and all their
+stuff<00:02:10.970><c> so</c><00:02:11.150><c> I</c><00:02:11.180><c> can</c><00:02:11.330><c> just</c><00:02:11.450><c> add</c><00:02:11.830><c> the</c><00:02:12.830><c> dependency</c><00:02:13.190><c> I</c>
+
+00:02:13.240 --> 00:02:13.250 align:start position:0%
+stuff so I can just add the dependency I
+ 
+
+00:02:13.250 --> 00:02:15.070 align:start position:0%
+stuff so I can just add the dependency I
+need<00:02:13.400><c> for</c><00:02:13.640><c> for</c><00:02:14.360><c> a</c><00:02:14.390><c> spring</c><00:02:14.750><c> hot</c><00:02:14.900><c> circuit</c>
+
+00:02:15.070 --> 00:02:15.080 align:start position:0%
+need for for a spring hot circuit
+ 
+
+00:02:15.080 --> 00:02:16.240 align:start position:0%
+need for for a spring hot circuit
+breaker<00:02:15.350><c> and</c><00:02:15.650><c> I</c><00:02:15.770><c> don't</c><00:02:15.890><c> have</c><00:02:15.980><c> to</c><00:02:16.069><c> worry</c><00:02:16.190><c> about</c>
+
+00:02:16.240 --> 00:02:16.250 align:start position:0%
+breaker and I don't have to worry about
+ 
+
+00:02:16.250 --> 00:02:21.690 align:start position:0%
+breaker and I don't have to worry about
+the<00:02:16.370><c> rest</c><00:02:18.130><c> all</c><00:02:19.130><c> right</c>
+
+00:02:21.690 --> 00:02:21.700 align:start position:0%
+ 
+ 
+
+00:02:21.700 --> 00:02:28.589 align:start position:0%
+ 
+that's<00:02:22.569><c> there</c><00:02:23.940><c> open</c><00:02:24.940><c> up</c><00:02:25.000><c> a</c><00:02:25.209><c> shell</c><00:02:25.569><c> here</c><00:02:27.599><c> CD</c>
+
+00:02:28.589 --> 00:02:28.599 align:start position:0%
+that's there open up a shell here CD
+ 
+
+00:02:28.599 --> 00:02:50.760 align:start position:0%
+that's there open up a shell here CD
+downloads<00:02:29.370><c> ueo</c><00:02:30.370><c> a</c><00:02:30.489><c> circuit</c><00:02:30.910><c> breaker</c>
+
+00:02:50.760 --> 00:02:50.770 align:start position:0%
+ 
+ 
+
+00:02:50.770 --> 00:02:53.320 align:start position:0%
+ 
+all<00:02:51.770><c> right</c><00:02:51.920><c> and</c><00:02:52.190><c> we're</c><00:02:52.880><c> just</c><00:02:52.970><c> gonna</c><00:02:53.120><c> add</c><00:02:53.300><c> the</c>
+
+00:02:53.320 --> 00:02:53.330 align:start position:0%
+all right and we're just gonna add the
+ 
+
+00:02:53.330 --> 00:02:54.730 align:start position:0%
+all right and we're just gonna add the
+one<00:02:53.630><c> dependency</c><00:02:54.050><c> that</c><00:02:54.170><c> we</c><00:02:54.260><c> need</c><00:02:54.410><c> so</c><00:02:54.590><c> I'm</c><00:02:54.650><c> gonna</c>
+
+00:02:54.730 --> 00:02:54.740 align:start position:0%
+one dependency that we need so I'm gonna
+ 
+
+00:02:54.740 --> 00:02:56.980 align:start position:0%
+one dependency that we need so I'm gonna
+go<00:02:54.890><c> to</c><00:02:54.950><c> Palm</c><00:02:55.190><c> the</c><00:02:55.220><c> next</c><00:02:55.520><c> ml</c><00:02:55.730><c> and</c><00:02:55.940><c> we're</c><00:02:56.930><c> just</c>
+
+00:02:56.980 --> 00:02:56.990 align:start position:0%
+go to Palm the next ml and we're just
+ 
+
+00:02:56.990 --> 00:03:00.070 align:start position:0%
+go to Palm the next ml and we're just
+going<00:02:57.170><c> to</c><00:02:57.230><c> add</c><00:02:57.410><c> the</c><00:02:57.650><c> zero</c><00:02:57.980><c> zero</c><00:02:58.280><c> you</c><00:02:59.060><c> know</c><00:02:59.150><c> one</c>
+
+00:03:00.070 --> 00:03:00.080 align:start position:0%
+going to add the zero zero you know one
+ 
+
+00:03:00.080 --> 00:03:02.440 align:start position:0%
+going to add the zero zero you know one
+snapshot<00:03:00.650><c> version</c><00:03:00.950><c> of</c><00:03:01.310><c> the</c><00:03:01.970><c> spring</c><00:03:02.240><c> cloud</c>
+
+00:03:02.440 --> 00:03:02.450 align:start position:0%
+snapshot version of the spring cloud
+ 
+
+00:03:02.450 --> 00:03:03.940 align:start position:0%
+snapshot version of the spring cloud
+start<00:03:02.750><c> a</c><00:03:02.810><c> circuit</c><00:03:03.110><c> breaker</c><00:03:03.200><c> project</c>
+
+00:03:03.940 --> 00:03:03.950 align:start position:0%
+start a circuit breaker project
+ 
+
+00:03:03.950 --> 00:03:18.420 align:start position:0%
+start a circuit breaker project
+okay<00:03:04.790><c> so</c><00:03:07.960><c> dependencies</c><00:03:13.600><c> spring</c><00:03:15.310><c> cloud</c>
+
+00:03:18.420 --> 00:03:18.430 align:start position:0%
+ 
+ 
+
+00:03:18.430 --> 00:03:20.920 align:start position:0%
+ 
+circuit<00:03:19.430><c> breaker</c><00:03:19.610><c> resilience</c><00:03:20.030><c> for</c><00:03:20.120><c> J</c><00:03:20.330><c> so</c>
+
+00:03:20.920 --> 00:03:20.930 align:start position:0%
+circuit breaker resilience for J so
+ 
+
+00:03:20.930 --> 00:03:22.420 align:start position:0%
+circuit breaker resilience for J so
+we're<00:03:21.020><c> gonna</c><00:03:21.110><c> bring</c><00:03:21.260><c> we're</c><00:03:22.070><c> gonna</c><00:03:22.160><c> bring</c><00:03:22.310><c> in</c>
+
+00:03:22.420 --> 00:03:22.430 align:start position:0%
+we're gonna bring we're gonna bring in
+ 
+
+00:03:22.430 --> 00:03:24.130 align:start position:0%
+we're gonna bring we're gonna bring in
+the<00:03:22.490><c> resilience</c><00:03:22.940><c> for</c><00:03:23.060><c> J</c><00:03:23.180><c> implementation</c>
+
+00:03:24.130 --> 00:03:24.140 align:start position:0%
+the resilience for J implementation
+ 
+
+00:03:24.140 --> 00:03:25.990 align:start position:0%
+the resilience for J implementation
+that'll<00:03:24.530><c> of</c><00:03:24.620><c> course</c><00:03:24.830><c> in</c><00:03:24.980><c> turn</c><00:03:25.430><c> transitively</c>
+
+00:03:25.990 --> 00:03:26.000 align:start position:0%
+that'll of course in turn transitively
+ 
+
+00:03:26.000 --> 00:03:27.610 align:start position:0%
+that'll of course in turn transitively
+bring<00:03:26.630><c> in</c><00:03:26.750><c> everything</c><00:03:27.080><c> else</c><00:03:27.200><c> we</c><00:03:27.320><c> need</c><00:03:27.440><c> I</c>
+
+00:03:27.610 --> 00:03:27.620 align:start position:0%
+bring in everything else we need I
+ 
+
+00:03:27.620 --> 00:03:29.770 align:start position:0%
+bring in everything else we need I
+neglected<00:03:28.310><c> to</c><00:03:28.370><c> specify</c><00:03:28.880><c> Java</c><00:03:29.150><c> eleven</c><00:03:29.480><c> back</c><00:03:29.630><c> at</c>
+
+00:03:29.770 --> 00:03:29.780 align:start position:0%
+neglected to specify Java eleven back at
+ 
+
+00:03:29.780 --> 00:03:30.940 align:start position:0%
+neglected to specify Java eleven back at
+the<00:03:29.840><c> spring</c><00:03:30.050><c> initializer</c><00:03:30.410><c> so</c><00:03:30.620><c> I'll</c><00:03:30.680><c> do</c><00:03:30.830><c> that</c>
+
+00:03:30.940 --> 00:03:30.950 align:start position:0%
+the spring initializer so I'll do that
+ 
+
+00:03:30.950 --> 00:03:33.820 align:start position:0%
+the spring initializer so I'll do that
+right<00:03:31.520><c> here</c><00:03:31.850><c> and</c><00:03:32.450><c> I'm</c><00:03:32.510><c> gonna</c><00:03:32.630><c> hit</c><00:03:32.830><c> maven</c>
+
+00:03:33.820 --> 00:03:33.830 align:start position:0%
+right here and I'm gonna hit maven
+ 
+
+00:03:33.830 --> 00:03:35.440 align:start position:0%
+right here and I'm gonna hit maven
+re-import<00:03:34.610><c> bringing</c><00:03:34.970><c> all</c><00:03:35.060><c> the</c><00:03:35.150><c> dependencies</c>
+
+00:03:35.440 --> 00:03:35.450 align:start position:0%
+re-import bringing all the dependencies
+ 
+
+00:03:35.450 --> 00:03:38.260 align:start position:0%
+re-import bringing all the dependencies
+forced<00:03:36.350><c> to</c><00:03:36.500><c> refresh</c><00:03:36.860><c> its</c><00:03:37.700><c> understanding</c><00:03:38.210><c> of</c>
+
+00:03:38.260 --> 00:03:38.270 align:start position:0%
+forced to refresh its understanding of
+ 
+
+00:03:38.270 --> 00:03:39.640 align:start position:0%
+forced to refresh its understanding of
+the<00:03:38.450><c> layout</c><00:03:38.720><c> of</c><00:03:38.750><c> my</c><00:03:38.870><c> dependency</c><00:03:39.380><c> management</c>
+
+00:03:39.640 --> 00:03:39.650 align:start position:0%
+the layout of my dependency management
+ 
+
+00:03:39.650 --> 00:03:42.640 align:start position:0%
+the layout of my dependency management
+graph<00:03:40.480><c> okay</c><00:03:41.480><c> and</c><00:03:41.720><c> then</c><00:03:41.930><c> we're</c><00:03:42.080><c> gonna</c><00:03:42.230><c> go</c><00:03:42.590><c> to</c>
+
+00:03:42.640 --> 00:03:42.650 align:start position:0%
+graph okay and then we're gonna go to
+ 
+
+00:03:42.650 --> 00:03:44.110 align:start position:0%
+graph okay and then we're gonna go to
+our<00:03:42.740><c> program</c><00:03:43.130><c> and</c><00:03:43.370><c> so</c><00:03:43.670><c> we're</c><00:03:43.820><c> gonna</c><00:03:43.910><c> do</c><00:03:44.030><c> is</c>
+
+00:03:44.110 --> 00:03:44.120 align:start position:0%
+our program and so we're gonna do is
+ 
+
+00:03:44.120 --> 00:03:45.250 align:start position:0%
+our program and so we're gonna do is
+going<00:03:44.210><c> to</c><00:03:44.300><c> build</c><00:03:44.420><c> a</c><00:03:44.480><c> simple</c><00:03:44.660><c> application</c><00:03:45.230><c> that</c>
+
+00:03:45.250 --> 00:03:45.260 align:start position:0%
+going to build a simple application that
+ 
+
+00:03:45.260 --> 00:03:48.220 align:start position:0%
+going to build a simple application that
+has<00:03:45.440><c> a</c><00:03:45.470><c> web</c><00:03:45.740><c> endpoint</c><00:03:46.330><c> and</c><00:03:47.330><c> that</c><00:03:47.990><c> webbing</c>
+
+00:03:48.220 --> 00:03:48.230 align:start position:0%
+has a web endpoint and that webbing
+ 
+
+00:03:48.230 --> 00:03:49.840 align:start position:0%
+has a web endpoint and that webbing
+point<00:03:48.470><c> will</c><00:03:48.650><c> act</c><00:03:48.800><c> as</c><00:03:48.950><c> the</c><00:03:49.100><c> client</c><00:03:49.490><c> we</c><00:03:49.550><c> can</c><00:03:49.670><c> use</c>
+
+00:03:49.840 --> 00:03:49.850 align:start position:0%
+point will act as the client we can use
+ 
+
+00:03:49.850 --> 00:03:52.570 align:start position:0%
+point will act as the client we can use
+that<00:03:50.060><c> to</c><00:03:50.480><c> invoke</c><00:03:51.290><c> and</c><00:03:51.620><c> observe</c><00:03:51.920><c> behavior</c><00:03:52.430><c> in</c>
+
+00:03:52.570 --> 00:03:52.580 align:start position:0%
+that to invoke and observe behavior in
+ 
+
+00:03:52.580 --> 00:03:54.400 align:start position:0%
+that to invoke and observe behavior in
+the<00:03:52.670><c> system</c><00:03:52.970><c> but</c><00:03:53.420><c> it</c><00:03:53.630><c> in</c><00:03:53.780><c> turn</c><00:03:53.960><c> will</c><00:03:54.170><c> call</c>
+
+00:03:54.400 --> 00:03:54.410 align:start position:0%
+the system but it in turn will call
+ 
+
+00:03:54.410 --> 00:03:56.950 align:start position:0%
+the system but it in turn will call
+something<00:03:54.830><c> that</c><00:03:54.950><c> will</c><00:03:55.270><c> will</c><00:03:56.270><c> that</c><00:03:56.660><c> will</c><00:03:56.750><c> fail</c>
+
+00:03:56.950 --> 00:03:56.960 align:start position:0%
+something that will will that will fail
+ 
+
+00:03:56.960 --> 00:03:59.050 align:start position:0%
+something that will will that will fail
+right<00:03:57.410><c> it'll</c><00:03:57.770><c> call</c><00:03:57.920><c> a</c><00:03:57.950><c> service</c><00:03:58.220><c> now</c><00:03:58.700><c> I</c><00:03:58.730><c> could</c>
+
+00:03:59.050 --> 00:03:59.060 align:start position:0%
+right it'll call a service now I could
+ 
+
+00:03:59.060 --> 00:04:00.220 align:start position:0%
+right it'll call a service now I could
+create<00:03:59.300><c> and</c><00:03:59.480><c> network</c><00:03:59.690><c> circles</c><00:04:00.080><c> I</c><00:04:00.110><c> could</c>
+
+00:04:00.220 --> 00:04:00.230 align:start position:0%
+create and network circles I could
+ 
+
+00:04:00.230 --> 00:04:02.080 align:start position:0%
+create and network circles I could
+create<00:04:00.350><c> another</c><00:04:00.410><c> service</c><00:04:01.040><c> and</c><00:04:01.790><c> make</c><00:04:01.940><c> this</c><00:04:02.030><c> a</c>
+
+00:04:02.080 --> 00:04:02.090 align:start position:0%
+create another service and make this a
+ 
+
+00:04:02.090 --> 00:04:03.370 align:start position:0%
+create another service and make this a
+client<00:04:02.420><c> that</c><00:04:02.480><c> talks</c><00:04:02.690><c> to</c><00:04:02.870><c> another</c><00:04:02.930><c> thing</c><00:04:03.230><c> over</c>
+
+00:04:03.370 --> 00:04:03.380 align:start position:0%
+client that talks to another thing over
+ 
+
+00:04:03.380 --> 00:04:04.900 align:start position:0%
+client that talks to another thing over
+the<00:04:03.440><c> network</c><00:04:03.590><c> but</c><00:04:04.250><c> there's</c><00:04:04.400><c> really</c><00:04:04.520><c> no</c><00:04:04.700><c> need</c>
+
+00:04:04.900 --> 00:04:04.910 align:start position:0%
+the network but there's really no need
+ 
+
+00:04:04.910 --> 00:04:07.350 align:start position:0%
+the network but there's really no need
+because<00:04:05.030><c> all</c><00:04:05.300><c> I</c><00:04:05.330><c> need</c><00:04:05.570><c> to</c><00:04:05.660><c> care</c><00:04:05.840><c> about</c><00:04:05.870><c> here</c><00:04:06.200><c> is</c>
+
+00:04:07.350 --> 00:04:07.360 align:start position:0%
+because all I need to care about here is
+ 
+
+00:04:07.360 --> 00:04:10.690 align:start position:0%
+because all I need to care about here is
+the<00:04:08.360><c> the</c><00:04:08.810><c> behavior</c><00:04:09.350><c> of</c><00:04:09.500><c> the</c><00:04:10.190><c> client</c><00:04:10.550><c> with</c>
+
+00:04:10.690 --> 00:04:10.700 align:start position:0%
+the the behavior of the client with
+ 
+
+00:04:10.700 --> 00:04:12.310 align:start position:0%
+the the behavior of the client with
+respect<00:04:11.060><c> to</c><00:04:11.180><c> some</c><00:04:11.360><c> other</c><00:04:11.480><c> thing</c><00:04:11.780><c> right</c><00:04:12.020><c> so</c><00:04:12.200><c> if</c>
+
+00:04:12.310 --> 00:04:12.320 align:start position:0%
+respect to some other thing right so if
+ 
+
+00:04:12.320 --> 00:04:14.230 align:start position:0%
+respect to some other thing right so if
+that<00:04:12.470><c> client</c><00:04:13.310><c> throws</c><00:04:13.640><c> an</c><00:04:13.730><c> exception</c><00:04:13.850><c> who</c>
+
+00:04:14.230 --> 00:04:14.240 align:start position:0%
+that client throws an exception who
+ 
+
+00:04:14.240 --> 00:04:15.610 align:start position:0%
+that client throws an exception who
+cares<00:04:14.480><c> whether</c><00:04:14.690><c> that</c><00:04:14.870><c> exception</c><00:04:15.290><c> is</c><00:04:15.380><c> because</c>
+
+00:04:15.610 --> 00:04:15.620 align:start position:0%
+cares whether that exception is because
+ 
+
+00:04:15.620 --> 00:04:18.699 align:start position:0%
+cares whether that exception is because
+of<00:04:15.740><c> a</c><00:04:15.800><c> network</c><00:04:16.070><c> call</c><00:04:16.220><c> or</c><00:04:16.520><c> whatever</c><00:04:17.330><c> right</c><00:04:17.709><c> so</c>
+
+00:04:18.699 --> 00:04:18.709 align:start position:0%
+of a network call or whatever right so
+ 
+
+00:04:18.709 --> 00:04:19.990 align:start position:0%
+of a network call or whatever right so
+in<00:04:18.950><c> the</c><00:04:19.070><c> circuit</c><00:04:19.280><c> breaker</c><00:04:19.459><c> doesn't</c><00:04:19.700><c> care</c><00:04:19.850><c> it</c>
+
+00:04:19.990 --> 00:04:20.000 align:start position:0%
+in the circuit breaker doesn't care it
+ 
+
+00:04:20.000 --> 00:04:21.610 align:start position:0%
+in the circuit breaker doesn't care it
+just<00:04:20.180><c> knows</c><00:04:20.299><c> that</c><00:04:20.330><c> you're</c><00:04:20.959><c> calling</c><00:04:21.200><c> something</c>
+
+00:04:21.610 --> 00:04:21.620 align:start position:0%
+just knows that you're calling something
+ 
+
+00:04:21.620 --> 00:04:23.770 align:start position:0%
+just knows that you're calling something
+that<00:04:21.739><c> might</c><00:04:21.890><c> fail</c><00:04:22.270><c> as</c><00:04:23.270><c> far</c><00:04:23.480><c> as</c><00:04:23.570><c> its</c><00:04:23.750><c> concerned</c>
+
+00:04:23.770 --> 00:04:23.780 align:start position:0%
+that might fail as far as its concerned
+ 
+
+00:04:23.780 --> 00:04:26.560 align:start position:0%
+that might fail as far as its concerned
+it<00:04:24.320><c> could</c><00:04:24.470><c> be</c><00:04:24.560><c> anything</c><00:04:24.710><c> right</c><00:04:25.040><c> so</c><00:04:25.570><c> we're</c>
+
+00:04:26.560 --> 00:04:26.570 align:start position:0%
+it could be anything right so we're
+ 
+
+00:04:26.570 --> 00:04:28.990 align:start position:0%
+it could be anything right so we're
+gonna<00:04:26.690><c> start</c><00:04:26.930><c> with</c><00:04:26.990><c> a</c><00:04:27.110><c> very</c><00:04:27.350><c> simple</c><00:04:28.000><c> feeling</c>
+
+00:04:28.990 --> 00:04:29.000 align:start position:0%
+gonna start with a very simple feeling
+ 
+
+00:04:29.000 --> 00:04:35.230 align:start position:0%
+gonna start with a very simple feeling
+service<00:04:29.330><c> okay</c><00:04:29.980><c> class</c><00:04:30.980><c> feeling</c><00:04:31.840><c> service</c><00:04:34.240><c> and</c>
+
+00:04:35.230 --> 00:04:35.240 align:start position:0%
+service okay class feeling service and
+ 
+
+00:04:35.240 --> 00:04:41.230 align:start position:0%
+service okay class feeling service and
+make<00:04:35.390><c> this</c><00:04:35.510><c> a</c><00:04:35.570><c> service</c><00:04:35.870><c> bean</c><00:04:37.960><c> thanks</c><00:04:38.960><c> so</c><00:04:40.240><c> all</c>
+
+00:04:41.230 --> 00:04:41.240 align:start position:0%
+make this a service bean thanks so all
+ 
+
+00:04:41.240 --> 00:04:44.110 align:start position:0%
+make this a service bean thanks so all
+right<00:04:41.420><c> and</c><00:04:41.720><c> our</c><00:04:42.200><c> feeling</c><00:04:42.560><c> service</c><00:04:43.010><c> is</c><00:04:43.700><c> going</c>
+
+00:04:44.110 --> 00:04:44.120 align:start position:0%
+right and our feeling service is going
+ 
+
+00:04:44.120 --> 00:04:49.170 align:start position:0%
+right and our feeling service is going
+to<00:04:45.670><c> we're</c><00:04:46.670><c> going</c><00:04:46.790><c> to</c><00:04:46.910><c> use</c><00:04:47.150><c> it</c><00:04:47.480><c> to</c><00:04:47.570><c> generate</c><00:04:47.750><c> a</c>
+
+00:04:49.170 --> 00:04:49.180 align:start position:0%
+to we're going to use it to generate a
+ 
+
+00:04:49.180 --> 00:04:53.590 align:start position:0%
+to we're going to use it to generate a
+string<00:04:50.440><c> a</c><00:04:51.670><c> greeting</c><00:04:52.670><c> of</c><00:04:52.940><c> some</c><00:04:53.150><c> sort</c><00:04:53.330><c> of</c><00:04:53.450><c> a</c>
+
+00:04:53.590 --> 00:04:53.600 align:start position:0%
+string a greeting of some sort of a
+ 
+
+00:04:53.600 --> 00:04:57.140 align:start position:0%
+string a greeting of some sort of a
+publisher<00:04:54.820><c> string</c>
+
+00:04:57.140 --> 00:04:57.150 align:start position:0%
+publisher string
+ 
+
+00:04:57.150 --> 00:05:03.240 align:start position:0%
+publisher string
+okay<00:04:59.280><c> and</c><00:05:01.350><c> actually</c><00:05:02.350><c> it</c><00:05:02.440><c> could</c><00:05:02.620><c> be</c><00:05:02.680><c> a</c><00:05:02.770><c> mono</c><00:05:02.979><c> I</c>
+
+00:05:03.240 --> 00:05:03.250 align:start position:0%
+okay and actually it could be a mono I
+ 
+
+00:05:03.250 --> 00:05:05.640 align:start position:0%
+okay and actually it could be a mono I
+suppose<00:05:03.610><c> it</c><00:05:03.789><c> could</c><00:05:03.910><c> be</c><00:05:03.940><c> a</c><00:05:04.030><c> mono</c><00:05:04.240><c> that's</c><00:05:04.650><c> good</c>
+
+00:05:05.640 --> 00:05:05.650 align:start position:0%
+suppose it could be a mono that's good
+ 
+
+00:05:05.650 --> 00:05:08.909 align:start position:0%
+suppose it could be a mono that's good
+yeah<00:05:05.889><c> so</c><00:05:06.009><c> let's</c><00:05:06.190><c> just</c><00:05:06.250><c> do</c><00:05:06.460><c> greet</c><00:05:07.500><c> string</c><00:05:08.500><c> name</c>
+
+00:05:08.909 --> 00:05:08.919 align:start position:0%
+yeah so let's just do greet string name
+ 
+
+00:05:08.919 --> 00:05:11.520 align:start position:0%
+yeah so let's just do greet string name
+but<00:05:09.430><c> you</c><00:05:09.520><c> know</c><00:05:09.610><c> the</c><00:05:09.820><c> name</c><00:05:10.000><c> could</c><00:05:10.330><c> be</c><00:05:10.389><c> it</c><00:05:11.320><c> could</c>
+
+00:05:11.520 --> 00:05:11.530 align:start position:0%
+but you know the name could be it could
+ 
+
+00:05:11.530 --> 00:05:13.620 align:start position:0%
+but you know the name could be it could
+be<00:05:11.590><c> let's</c><00:05:12.009><c> make</c><00:05:12.130><c> the</c><00:05:12.250><c> name</c><00:05:12.460><c> optional</c><00:05:13.210><c> I</c><00:05:13.389><c> want</c>
+
+00:05:13.620 --> 00:05:13.630 align:start position:0%
+be let's make the name optional I want
+ 
+
+00:05:13.630 --> 00:05:14.670 align:start position:0%
+be let's make the name optional I want
+the<00:05:13.690><c> name</c><00:05:13.840><c> to</c><00:05:13.870><c> be</c><00:05:14.110><c> something</c><00:05:14.410><c> that</c><00:05:14.440><c> you</c><00:05:14.590><c> can</c>
+
+00:05:14.670 --> 00:05:14.680 align:start position:0%
+the name to be something that you can
+ 
+
+00:05:14.680 --> 00:05:18.629 align:start position:0%
+the name to be something that you can
+either<00:05:14.770><c> specify</c><00:05:15.100><c> or</c><00:05:15.460><c> not</c><00:05:17.310><c> so</c><00:05:18.310><c> that</c><00:05:18.340><c> we</c><00:05:18.460><c> have</c><00:05:18.610><c> a</c>
+
+00:05:18.629 --> 00:05:18.639 align:start position:0%
+either specify or not so that we have a
+ 
+
+00:05:18.639 --> 00:05:20.120 align:start position:0%
+either specify or not so that we have a
+way<00:05:18.789><c> of</c><00:05:18.820><c> introducing</c><00:05:19.210><c> variability</c><00:05:19.930><c> and</c>
+
+00:05:20.120 --> 00:05:20.130 align:start position:0%
+way of introducing variability and
+ 
+
+00:05:20.130 --> 00:05:22.770 align:start position:0%
+way of introducing variability and
+triggering<00:05:21.130><c> an</c><00:05:21.250><c> exception</c><00:05:21.699><c> okay</c><00:05:22.120><c> you</c>
+
+00:05:22.770 --> 00:05:22.780 align:start position:0%
+triggering an exception okay you
+ 
+
+00:05:22.780 --> 00:05:24.330 align:start position:0%
+triggering an exception okay you
+wouldn't<00:05:23.020><c> normally</c><00:05:23.380><c> design</c><00:05:23.830><c> a</c><00:05:23.860><c> program</c><00:05:24.070><c> that</c>
+
+00:05:24.330 --> 00:05:24.340 align:start position:0%
+wouldn't normally design a program that
+ 
+
+00:05:24.340 --> 00:05:25.800 align:start position:0%
+wouldn't normally design a program that
+fails<00:05:24.550><c> if</c><00:05:24.880><c> you</c><00:05:25.030><c> have</c><00:05:25.180><c> an</c><00:05:25.270><c> optional</c><00:05:25.570><c> that</c><00:05:25.690><c> it</c>
+
+00:05:25.800 --> 00:05:25.810 align:start position:0%
+fails if you have an optional that it
+ 
+
+00:05:25.810 --> 00:05:27.360 align:start position:0%
+fails if you have an optional that it
+returns<00:05:26.139><c> nothing</c><00:05:26.380><c> that's</c><00:05:26.979><c> the</c><00:05:27.100><c> whole</c><00:05:27.250><c> point</c>
+
+00:05:27.360 --> 00:05:27.370 align:start position:0%
+returns nothing that's the whole point
+ 
+
+00:05:27.370 --> 00:05:29.129 align:start position:0%
+returns nothing that's the whole point
+of<00:05:27.490><c> an</c><00:05:27.580><c> optional</c><00:05:27.850><c> but</c><00:05:28.419><c> I</c><00:05:28.449><c> want</c><00:05:28.630><c> to</c><00:05:28.720><c> use</c><00:05:28.840><c> that</c><00:05:28.870><c> as</c>
+
+00:05:29.129 --> 00:05:29.139 align:start position:0%
+of an optional but I want to use that as
+ 
+
+00:05:29.139 --> 00:05:32.279 align:start position:0%
+of an optional but I want to use that as
+a<00:05:29.169><c> way</c><00:05:29.320><c> for</c><00:05:29.530><c> us</c><00:05:29.590><c> to</c><00:05:29.830><c> to</c><00:05:30.690><c> force</c><00:05:31.690><c> this</c><00:05:31.840><c> program</c><00:05:32.139><c> to</c>
+
+00:05:32.279 --> 00:05:32.289 align:start position:0%
+a way for us to to force this program to
+ 
+
+00:05:32.289 --> 00:05:33.689 align:start position:0%
+a way for us to to force this program to
+throw<00:05:32.410><c> an</c><00:05:32.500><c> exception</c><00:05:32.590><c> under</c><00:05:33.520><c> a</c><00:05:33.550><c> certain</c>
+
+00:05:33.689 --> 00:05:33.699 align:start position:0%
+throw an exception under a certain
+ 
+
+00:05:33.699 --> 00:05:35.670 align:start position:0%
+throw an exception under a certain
+condition<00:05:33.940><c> and</c><00:05:34.300><c> that</c><00:05:34.330><c> condition</c><00:05:34.630><c> will</c><00:05:35.289><c> be</c><00:05:35.440><c> if</c>
+
+00:05:35.670 --> 00:05:35.680 align:start position:0%
+condition and that condition will be if
+ 
+
+00:05:35.680 --> 00:05:38.460 align:start position:0%
+condition and that condition will be if
+there<00:05:36.220><c> is</c><00:05:36.340><c> no</c><00:05:36.460><c> value</c><00:05:36.789><c> in</c><00:05:36.940><c> the</c><00:05:37.300><c> name</c><00:05:37.419><c> so</c><00:05:38.349><c> what</c>
+
+00:05:38.460 --> 00:05:38.470 align:start position:0%
+there is no value in the name so what
+ 
+
+00:05:38.470 --> 00:05:41.790 align:start position:0%
+there is no value in the name so what
+we're<00:05:38.560><c> gonna</c><00:05:38.620><c> do</c><00:05:38.740><c> is</c><00:05:38.830><c> going</c><00:05:38.949><c> to</c><00:05:39.039><c> say</c><00:05:39.190><c> that</c><00:05:40.800><c> we</c>
+
+00:05:41.790 --> 00:05:41.800 align:start position:0%
+we're gonna do is going to say that we
+ 
+
+00:05:41.800 --> 00:05:44.960 align:start position:0%
+we're gonna do is going to say that we
+have<00:05:41.949><c> a</c><00:05:41.979><c> return</c><00:05:42.520><c> value</c><00:05:42.729><c> or</c><00:05:43.690><c> a</c><00:05:43.900><c> URL</c><00:05:44.320><c> or</c><00:05:44.530><c> a</c>
+
+00:05:44.960 --> 00:05:44.970 align:start position:0%
+have a return value or a URL or a
+ 
+
+00:05:44.970 --> 00:05:49.620 align:start position:0%
+have a return value or a URL or a
+greeting<00:05:45.970><c> I</c><00:05:46.120><c> guess</c><00:05:46.270><c> so</c><00:05:46.479><c> far</c><00:05:46.750><c> greeting</c><00:05:48.630><c> equals</c>
+
+00:05:49.620 --> 00:05:49.630 align:start position:0%
+greeting I guess so far greeting equals
+ 
+
+00:05:49.630 --> 00:05:55.620 align:start position:0%
+greeting I guess so far greeting equals
+name<00:05:50.050><c> dot</c><00:05:50.940><c> map</c><00:05:53.280><c> and</c><00:05:54.300><c> we're</c><00:05:55.300><c> gonna</c><00:05:55.389><c> basically</c>
+
+00:05:55.620 --> 00:05:55.630 align:start position:0%
+name dot map and we're gonna basically
+ 
+
+00:05:55.630 --> 00:05:59.580 align:start position:0%
+name dot map and we're gonna basically
+say<00:05:55.930><c> okay</c><00:05:56.229><c> if</c><00:05:56.440><c> the</c><00:05:56.590><c> string</c><00:05:56.830><c> is</c><00:05:56.860><c> there</c><00:05:57.539><c> then</c><00:05:58.590><c> we</c>
+
+00:05:59.580 --> 00:05:59.590 align:start position:0%
+say okay if the string is there then we
+ 
+
+00:05:59.590 --> 00:06:12.529 align:start position:0%
+say okay if the string is there then we
+say<00:05:59.800><c> hello</c><00:06:02.070><c> string</c><00:06:03.270><c> okay</c><00:06:05.039><c> or</c><00:06:06.120><c> else</c><00:06:08.039><c> or</c><00:06:09.039><c> else</c>
+
+00:06:12.529 --> 00:06:12.539 align:start position:0%
+ 
+ 
+
+00:06:12.539 --> 00:06:14.460 align:start position:0%
+ 
+well<00:06:13.539><c> I</c><00:06:13.570><c> guess</c><00:06:13.720><c> it's</c><00:06:13.870><c> it</c><00:06:13.960><c> actually</c><00:06:14.199><c> we</c><00:06:14.289><c> want</c><00:06:14.409><c> to</c>
+
+00:06:14.460 --> 00:06:14.470 align:start position:0%
+well I guess it's it actually we want to
+ 
+
+00:06:14.470 --> 00:06:16.320 align:start position:0%
+well I guess it's it actually we want to
+return<00:06:14.650><c> to</c><00:06:14.710><c> publish</c><00:06:15.039><c> or</c><00:06:15.190><c> don't</c><00:06:15.340><c> we</c><00:06:15.460><c> so</c><00:06:16.090><c> we</c><00:06:16.180><c> want</c>
+
+00:06:16.320 --> 00:06:16.330 align:start position:0%
+return to publish or don't we so we want
+ 
+
+00:06:16.330 --> 00:06:17.550 align:start position:0%
+return to publish or don't we so we want
+to<00:06:16.360><c> return</c><00:06:16.570><c> a</c><00:06:16.599><c> publisher</c><00:06:17.050><c> with</c><00:06:17.199><c> that</c><00:06:17.320><c> string</c>
+
+00:06:17.550 --> 00:06:17.560 align:start position:0%
+to return a publisher with that string
+ 
+
+00:06:17.560 --> 00:06:27.779 align:start position:0%
+to return a publisher with that string
+so<00:06:18.280><c> mono</c><00:06:18.639><c> dot</c><00:06:18.849><c> just</c><00:06:23.280><c> okay</c><00:06:25.500><c> there</c><00:06:26.500><c> is</c><00:06:26.680><c> this</c><00:06:26.889><c> or</c>
+
+00:06:27.779 --> 00:06:27.789 align:start position:0%
+so mono dot just okay there is this or
+ 
+
+00:06:27.789 --> 00:06:33.210 align:start position:0%
+so mono dot just okay there is this or
+else<00:06:30.570><c> mono</c><00:06:31.570><c> dot</c><00:06:31.810><c> error</c><00:06:32.080><c> all</c><00:06:32.740><c> right</c><00:06:32.979><c> so</c><00:06:33.130><c> we're</c>
+
+00:06:33.210 --> 00:06:33.220 align:start position:0%
+else mono dot error all right so we're
+ 
+
+00:06:33.220 --> 00:06:35.310 align:start position:0%
+else mono dot error all right so we're
+going<00:06:33.310><c> to</c><00:06:33.370><c> throw</c><00:06:33.490><c> an</c><00:06:33.610><c> exception</c><00:06:34.199><c> in</c><00:06:35.199><c> the</c>
+
+00:06:35.310 --> 00:06:35.320 align:start position:0%
+going to throw an exception in the
+ 
+
+00:06:35.320 --> 00:06:38.520 align:start position:0%
+going to throw an exception in the
+pipeline<00:06:36.180><c> if</c><00:06:37.180><c> you</c><00:06:37.449><c> don't</c><00:06:37.630><c> return</c><00:06:37.720><c> if</c><00:06:38.380><c> you</c>
+
+00:06:38.520 --> 00:06:38.530 align:start position:0%
+pipeline if you don't return if you
+ 
+
+00:06:38.530 --> 00:06:40.560 align:start position:0%
+pipeline if you don't return if you
+don't<00:06:38.680><c> provide</c><00:06:38.860><c> a</c><00:06:38.919><c> string</c><00:06:39.220><c> it</c><00:06:40.210><c> could</c><00:06:40.330><c> be</c><00:06:40.389><c> any</c>
+
+00:06:40.560 --> 00:06:40.570 align:start position:0%
+don't provide a string it could be any
+ 
+
+00:06:40.570 --> 00:06:41.820 align:start position:0%
+don't provide a string it could be any
+exception<00:06:41.020><c> I'm</c><00:06:41.169><c> using</c><00:06:41.409><c> no</c><00:06:41.560><c> point</c><00:06:41.770><c> two</c>
+
+00:06:41.820 --> 00:06:41.830 align:start position:0%
+exception I'm using no point two
+ 
+
+00:06:41.830 --> 00:06:42.990 align:start position:0%
+exception I'm using no point two
+exceptions<00:06:42.190><c> because</c><00:06:42.370><c> it's</c><00:06:42.550><c> an</c><00:06:42.639><c> exception</c>
+
+00:06:42.990 --> 00:06:43.000 align:start position:0%
+exceptions because it's an exception
+ 
+
+00:06:43.000 --> 00:06:44.249 align:start position:0%
+exceptions because it's an exception
+that's<00:06:43.150><c> on</c><00:06:43.330><c> hand</c><00:06:43.630><c> it</c><00:06:43.810><c> doesn't</c><00:06:43.930><c> really</c><00:06:44.080><c> matter</c>
+
+00:06:44.249 --> 00:06:44.259 align:start position:0%
+that's on hand it doesn't really matter
+ 
+
+00:06:44.259 --> 00:06:46.680 align:start position:0%
+that's on hand it doesn't really matter
+what<00:06:44.440><c> we</c><00:06:44.470><c> use</c><00:06:45.030><c> and</c><00:06:46.030><c> so</c><00:06:46.060><c> I</c><00:06:46.240><c> guess</c><00:06:46.360><c> I</c><00:06:46.449><c> just</c><00:06:46.570><c> want</c>
+
+00:06:46.680 --> 00:06:46.690 align:start position:0%
+what we use and so I guess I just want
+ 
+
+00:06:46.690 --> 00:06:47.760 align:start position:0%
+what we use and so I guess I just want
+to<00:06:46.750><c> turn</c><00:06:46.930><c> that</c><00:06:47.050><c> I</c><00:06:47.110><c> don't</c><00:06:47.289><c> even</c><00:06:47.440><c> need</c><00:06:47.530><c> to</c><00:06:47.590><c> have</c>
+
+00:06:47.760 --> 00:06:47.770 align:start position:0%
+to turn that I don't even need to have
+ 
+
+00:06:47.770 --> 00:06:49.560 align:start position:0%
+to turn that I don't even need to have
+the<00:06:47.919><c> intermediate</c><00:06:48.099><c> variable</c><00:06:48.580><c> do</c><00:06:48.729><c> I</c><00:06:48.759><c> so</c><00:06:49.539><c> I</c>
+
+00:06:49.560 --> 00:06:49.570 align:start position:0%
+the intermediate variable do I so I
+ 
+
+00:06:49.570 --> 00:06:55.200 align:start position:0%
+the intermediate variable do I so I
+could<00:06:49.720><c> say</c><00:06:49.840><c> return</c><00:06:51.090><c> alright</c><00:06:53.099><c> good</c><00:06:54.099><c> stuff</c><00:06:54.280><c> all</c>
+
+00:06:55.200 --> 00:06:55.210 align:start position:0%
+could say return alright good stuff all
+ 
+
+00:06:55.210 --> 00:06:56.640 align:start position:0%
+could say return alright good stuff all
+right<00:06:55.270><c> so</c><00:06:55.449><c> there's</c><00:06:55.630><c> my</c><00:06:55.720><c> little</c><00:06:55.870><c> service</c><00:06:56.229><c> now</c>
+
+00:06:56.640 --> 00:06:56.650 align:start position:0%
+right so there's my little service now
+ 
+
+00:06:56.650 --> 00:06:59.310 align:start position:0%
+right so there's my little service now
+let's<00:06:56.800><c> build</c><00:06:56.949><c> an</c><00:06:57.130><c> endpoint</c><00:06:57.310><c> a</c><00:06:58.199><c> HTTP</c><00:06:59.199><c> endpoint</c>
+
+00:06:59.310 --> 00:06:59.320 align:start position:0%
+let's build an endpoint a HTTP endpoint
+ 
+
+00:06:59.320 --> 00:07:01.560 align:start position:0%
+let's build an endpoint a HTTP endpoint
+that<00:06:59.979><c> will</c><00:07:00.099><c> in</c><00:07:00.190><c> turn</c><00:07:00.220><c> call</c><00:07:00.699><c> that</c><00:07:00.940><c> and</c><00:07:01.150><c> that</c>
+
+00:07:01.560 --> 00:07:01.570 align:start position:0%
+that will in turn call that and that
+ 
+
+00:07:01.570 --> 00:07:03.990 align:start position:0%
+that will in turn call that and that
+will<00:07:01.720><c> depend</c><00:07:01.900><c> upon</c><00:07:02.440><c> the</c><00:07:02.590><c> the</c><00:07:02.620><c> behavior</c><00:07:03.430><c> okay</c>
+
+00:07:03.990 --> 00:07:04.000 align:start position:0%
+will depend upon the the behavior okay
+ 
+
+00:07:04.000 --> 00:07:06.019 align:start position:0%
+will depend upon the the behavior okay
+so<00:07:04.570><c> we'll</c><00:07:04.690><c> create</c><00:07:04.840><c> a</c><00:07:04.930><c> rescue</c><00:07:05.260><c> scroller</c><00:07:05.500><c> here</c>
+
+00:07:06.019 --> 00:07:06.029 align:start position:0%
+so we'll create a rescue scroller here
+ 
+
+00:07:06.029 --> 00:07:10.050 align:start position:0%
+so we'll create a rescue scroller here
+and<00:07:07.110><c> I'm</c><00:07:08.110><c> using</c><00:07:08.500><c> a</c><00:07:08.620><c> reactive</c><00:07:09.010><c> API</c><00:07:09.669><c> is</c><00:07:09.760><c> here</c><00:07:09.940><c> but</c>
+
+00:07:10.050 --> 00:07:10.060 align:start position:0%
+and I'm using a reactive API is here but
+ 
+
+00:07:10.060 --> 00:07:10.480 align:start position:0%
+and I'm using a reactive API is here but
+it<00:07:10.180><c> is</c>
+
+00:07:10.480 --> 00:07:10.490 align:start position:0%
+it is
+ 
+
+00:07:10.490 --> 00:07:11.529 align:start position:0%
+it is
+it's<00:07:10.639><c> the</c><00:07:10.729><c> same</c><00:07:10.849><c> idea</c><00:07:10.970><c> you</c><00:07:11.150><c> could</c><00:07:11.419><c> actually</c>
+
+00:07:11.529 --> 00:07:11.539 align:start position:0%
+it's the same idea you could actually
+ 
+
+00:07:11.539 --> 00:07:13.330 align:start position:0%
+it's the same idea you could actually
+return<00:07:11.780><c> you</c><00:07:12.560><c> can</c><00:07:12.650><c> use</c><00:07:12.770><c> the</c><00:07:12.919><c> nonreactive</c>
+
+00:07:13.330 --> 00:07:13.340 align:start position:0%
+return you can use the nonreactive
+ 
+
+00:07:13.340 --> 00:07:15.490 align:start position:0%
+return you can use the nonreactive
+circuit<00:07:13.880><c> breaker</c><00:07:14.090><c> support</c><00:07:14.419><c> as</c><00:07:14.479><c> well</c><00:07:14.630><c> there's</c>
+
+00:07:15.490 --> 00:07:15.500 align:start position:0%
+circuit breaker support as well there's
+ 
+
+00:07:15.500 --> 00:07:16.960 align:start position:0%
+circuit breaker support as well there's
+a<00:07:15.560><c> separate</c><00:07:16.069><c> type</c><00:07:16.310><c> and</c><00:07:16.520><c> I'll</c><00:07:16.580><c> show</c><00:07:16.729><c> you</c><00:07:16.819><c> to</c>
+
+00:07:16.960 --> 00:07:16.970 align:start position:0%
+a separate type and I'll show you to
+ 
+
+00:07:16.970 --> 00:07:18.700 align:start position:0%
+a separate type and I'll show you to
+show<00:07:17.240><c> you</c><00:07:17.690><c> where</c><00:07:18.169><c> that</c><00:07:18.289><c> would</c><00:07:18.410><c> look</c><00:07:18.530><c> a</c><00:07:18.620><c> little</c>
+
+00:07:18.700 --> 00:07:18.710 align:start position:0%
+show you where that would look a little
+ 
+
+00:07:18.710 --> 00:07:20.710 align:start position:0%
+show you where that would look a little
+different<00:07:19.069><c> but</c><00:07:19.190><c> it</c><00:07:19.819><c> doesn't</c><00:07:20.090><c> matter</c><00:07:20.240><c> right</c><00:07:20.449><c> it</c>
+
+00:07:20.710 --> 00:07:20.720 align:start position:0%
+different but it doesn't matter right it
+ 
+
+00:07:20.720 --> 00:07:22.469 align:start position:0%
+different but it doesn't matter right it
+it's<00:07:21.470><c> actually</c><00:07:21.560><c> more</c><00:07:21.830><c> interesting</c><00:07:22.130><c> for</c><00:07:22.280><c> me</c>
+
+00:07:22.469 --> 00:07:22.479 align:start position:0%
+it's actually more interesting for me
+ 
+
+00:07:22.479 --> 00:07:25.920 align:start position:0%
+it's actually more interesting for me
+that<00:07:23.479><c> this</c><00:07:23.599><c> works</c><00:07:23.960><c> nicely</c><00:07:24.199><c> for</c><00:07:24.680><c> reactive</c><00:07:25.190><c> code</c>
+
+00:07:25.920 --> 00:07:25.930 align:start position:0%
+that this works nicely for reactive code
+ 
+
+00:07:25.930 --> 00:07:30.700 align:start position:0%
+that this works nicely for reactive code
+but<00:07:28.090><c> they</c><00:07:29.090><c> both</c><00:07:29.240><c> supported</c><00:07:29.780><c> okay</c><00:07:30.199><c> so</c><00:07:30.289><c> rest</c>
+
+00:07:30.700 --> 00:07:30.710 align:start position:0%
+but they both supported okay so rest
+ 
+
+00:07:30.710 --> 00:07:37.689 align:start position:0%
+but they both supported okay so rest
+controller<00:07:32.229><c> okay</c><00:07:33.849><c> and</c><00:07:36.220><c> what</c><00:07:37.220><c> are</c><00:07:37.250><c> we</c><00:07:37.340><c> gonna</c><00:07:37.460><c> do</c>
+
+00:07:37.689 --> 00:07:37.699 align:start position:0%
+controller okay and what are we gonna do
+ 
+
+00:07:37.699 --> 00:07:41.469 align:start position:0%
+controller okay and what are we gonna do
+we<00:07:37.970><c> are</c><00:07:38.180><c> going</c><00:07:38.509><c> to</c><00:07:39.160><c> have</c><00:07:40.160><c> a</c><00:07:40.400><c> constructor</c><00:07:41.150><c> so</c>
+
+00:07:41.469 --> 00:07:41.479 align:start position:0%
+we are going to have a constructor so
+ 
+
+00:07:41.479 --> 00:07:45.070 align:start position:0%
+we are going to have a constructor so
+I'm<00:07:41.539><c> gonna</c><00:07:41.630><c> say</c><00:07:41.919><c> private</c><00:07:42.919><c> final</c><00:07:44.080><c> failing</c>
+
+00:07:45.070 --> 00:07:45.080 align:start position:0%
+I'm gonna say private final failing
+ 
+
+00:07:45.080 --> 00:07:51.040 align:start position:0%
+I'm gonna say private final failing
+service<00:07:46.990><c> okay</c><00:07:48.340><c> and</c><00:07:49.630><c> I'm</c><00:07:50.630><c> going</c><00:07:50.840><c> to</c><00:07:50.930><c> have</c><00:07:51.020><c> a</c>
+
+00:07:51.040 --> 00:07:51.050 align:start position:0%
+service okay and I'm going to have a
+ 
+
+00:07:51.050 --> 00:07:55.029 align:start position:0%
+service okay and I'm going to have a
+constructor<00:07:51.680><c> that</c><00:07:53.620><c> injects</c><00:07:54.620><c> the</c><00:07:54.740><c> feelings</c>
+
+00:07:55.029 --> 00:07:55.039 align:start position:0%
+constructor that injects the feelings
+ 
+
+00:07:55.039 --> 00:08:03.339 align:start position:0%
+constructor that injects the feelings
+service<00:08:00.970><c> all</c><00:08:01.970><c> right</c><00:08:02.120><c> okay</c><00:08:02.990><c> and</c><00:08:03.020><c> we're</c><00:08:03.289><c> gonna</c>
+
+00:08:03.339 --> 00:08:03.349 align:start position:0%
+service all right okay and we're gonna
+ 
+
+00:08:03.349 --> 00:08:06.939 align:start position:0%
+service all right okay and we're gonna
+have<00:08:03.530><c> a</c><00:08:03.560><c> an</c><00:08:04.130><c> endpoint</c><00:08:04.430><c> date</c><00:08:04.789><c> get</c><00:08:05.180><c> mapping</c><00:08:05.949><c> that</c>
+
+00:08:06.939 --> 00:08:06.949 align:start position:0%
+have a an endpoint date get mapping that
+ 
+
+00:08:06.949 --> 00:08:18.490 align:start position:0%
+have a an endpoint date get mapping that
+is<00:08:07.009><c> called</c><00:08:07.610><c> wheat</c><00:08:09.460><c> so</c><00:08:11.500><c> publisher</c><00:08:12.500><c> of</c><00:08:17.500><c> type</c>
+
+00:08:18.490 --> 00:08:18.500 align:start position:0%
+is called wheat so publisher of type
+ 
+
+00:08:18.500 --> 00:08:22.990 align:start position:0%
+is called wheat so publisher of type
+string<00:08:19.599><c> tweaked</c><00:08:20.650><c> and</c><00:08:21.669><c> we're</c><00:08:22.669><c> gonna</c><00:08:22.759><c> take</c>
+
+00:08:22.990 --> 00:08:23.000 align:start position:0%
+string tweaked and we're gonna take
+ 
+
+00:08:23.000 --> 00:08:25.899 align:start position:0%
+string tweaked and we're gonna take
+optional<00:08:23.690><c> we'll</c><00:08:24.110><c> take</c><00:08:24.320><c> an</c><00:08:24.409><c> optional</c><00:08:24.909><c> request</c>
+
+00:08:25.899 --> 00:08:25.909 align:start position:0%
+optional we'll take an optional request
+ 
+
+00:08:25.909 --> 00:08:27.719 align:start position:0%
+optional we'll take an optional request
+parameter<00:08:26.240><c> right</c><00:08:26.539><c> so</c><00:08:26.780><c> you</c><00:08:27.110><c> give</c><00:08:27.259><c> us</c><00:08:27.380><c> a</c><00:08:27.440><c> name</c>
+
+00:08:27.719 --> 00:08:27.729 align:start position:0%
+parameter right so you give us a name
+ 
+
+00:08:27.729 --> 00:08:30.300 align:start position:0%
+parameter right so you give us a name
+we're<00:08:28.729><c> gonna</c><00:08:28.820><c> pass</c><00:08:29.300><c> that</c><00:08:29.509><c> down</c><00:08:29.750><c> to</c><00:08:30.110><c> the</c>
+
+00:08:30.300 --> 00:08:30.310 align:start position:0%
+we're gonna pass that down to the
+ 
+
+00:08:30.310 --> 00:08:38.550 align:start position:0%
+we're gonna pass that down to the
+underlying<00:08:31.310><c> service</c><00:08:37.060><c> okay</c>
+
+00:08:38.550 --> 00:08:38.560 align:start position:0%
+underlying service okay
+ 
+
+00:08:38.560 --> 00:08:42.329 align:start position:0%
+underlying service okay
+good<00:08:39.560><c> stuff</c><00:08:39.860><c> and</c><00:08:40.190><c> we're</c><00:08:40.490><c> gonna</c><00:08:40.610><c> say</c><00:08:40.789><c> returned</c>
+
+00:08:42.329 --> 00:08:42.339 align:start position:0%
+good stuff and we're gonna say returned
+ 
+
+00:08:42.339 --> 00:08:47.430 align:start position:0%
+good stuff and we're gonna say returned
+this<00:08:43.339><c> that</c><00:08:43.640><c> feeling</c><00:08:44.060><c> service</c><00:08:44.740><c> dot</c><00:08:45.740><c> greet</c>
+
+00:08:47.430 --> 00:08:47.440 align:start position:0%
+this that feeling service dot greet
+ 
+
+00:08:47.440 --> 00:08:50.139 align:start position:0%
+this that feeling service dot greet
+passing<00:08:48.440><c> on</c><00:08:48.529><c> the</c><00:08:48.589><c> name</c><00:08:48.770><c> so</c><00:08:49.070><c> you</c><00:08:49.880><c> know</c><00:08:49.970><c> if</c><00:08:50.060><c> you</c>
+
+00:08:50.139 --> 00:08:50.149 align:start position:0%
+passing on the name so you know if you
+ 
+
+00:08:50.149 --> 00:08:51.550 align:start position:0%
+passing on the name so you know if you
+said<00:08:50.329><c> if</c><00:08:50.420><c> you</c><00:08:50.450><c> make</c><00:08:50.630><c> a</c><00:08:50.660><c> request</c><00:08:50.870><c> an</c><00:08:51.140><c> HTTP</c><00:08:51.470><c> GET</c>
+
+00:08:51.550 --> 00:08:51.560 align:start position:0%
+said if you make a request an HTTP GET
+ 
+
+00:08:51.560 --> 00:08:55.600 align:start position:0%
+said if you make a request an HTTP GET
+request<00:08:51.620><c> to</c><00:08:52.610><c> four</c><00:08:53.029><c> slash</c><00:08:53.270><c> greet</c><00:08:54.610><c> question</c>
+
+00:08:55.600 --> 00:08:55.610 align:start position:0%
+request to four slash greet question
+ 
+
+00:08:55.610 --> 00:08:58.750 align:start position:0%
+request to four slash greet question
+mark<00:08:55.790><c> name</c><00:08:56.209><c> equals</c><00:08:56.690><c> you</c><00:08:57.200><c> know</c><00:08:57.230><c> four</c><00:08:57.620><c> bar</c><00:08:57.920><c> it'll</c>
+
+00:08:58.750 --> 00:08:58.760 align:start position:0%
+mark name equals you know four bar it'll
+ 
+
+00:08:58.760 --> 00:09:00.160 align:start position:0%
+mark name equals you know four bar it'll
+call<00:08:58.940><c> this</c><00:08:59.120><c> and</c><00:08:59.329><c> that'll</c><00:08:59.510><c> be</c><00:08:59.570><c> okay</c><00:08:59.600><c> right</c>
+
+00:09:00.160 --> 00:09:00.170 align:start position:0%
+call this and that'll be okay right
+ 
+
+00:09:00.170 --> 00:09:01.840 align:start position:0%
+call this and that'll be okay right
+if<00:09:00.380><c> you</c><00:09:00.529><c> return</c><00:09:00.829><c> if</c><00:09:01.070><c> you</c><00:09:01.160><c> just</c><00:09:01.310><c> save</c><00:09:01.459><c> for</c><00:09:01.700><c> such</c>
+
+00:09:01.840 --> 00:09:01.850 align:start position:0%
+if you return if you just save for such
+ 
+
+00:09:01.850 --> 00:09:04.000 align:start position:0%
+if you return if you just save for such
+we'd<00:09:02.060><c> without</c><00:09:02.779><c> the</c><00:09:02.930><c> parameter</c><00:09:03.320><c> well</c><00:09:03.950><c> of</c>
+
+00:09:04.000 --> 00:09:04.010 align:start position:0%
+we'd without the parameter well of
+ 
+
+00:09:04.010 --> 00:09:05.199 align:start position:0%
+we'd without the parameter well of
+course<00:09:04.070><c> we</c><00:09:04.310><c> know</c><00:09:04.399><c> that</c><00:09:04.430><c> battle</c><00:09:04.790><c> results</c><00:09:05.060><c> in</c><00:09:05.149><c> a</c>
+
+00:09:05.199 --> 00:09:05.209 align:start position:0%
+course we know that battle results in a
+ 
+
+00:09:05.209 --> 00:09:08.319 align:start position:0%
+course we know that battle results in a
+null<00:09:05.360><c> pointer</c><00:09:06.670><c> exception</c><00:09:07.670><c> right</c><00:09:07.910><c> mono</c><00:09:08.180><c> two</c>
+
+00:09:08.319 --> 00:09:08.329 align:start position:0%
+null pointer exception right mono two
+ 
+
+00:09:08.329 --> 00:09:10.750 align:start position:0%
+null pointer exception right mono two
+error<00:09:08.510><c> no</c><00:09:09.260><c> pointer</c><00:09:09.589><c> so</c><00:09:10.070><c> we</c><00:09:10.190><c> want</c><00:09:10.310><c> to</c><00:09:10.370><c> protect</c>
+
+00:09:10.750 --> 00:09:10.760 align:start position:0%
+error no pointer so we want to protect
+ 
+
+00:09:10.760 --> 00:09:13.389 align:start position:0%
+error no pointer so we want to protect
+against<00:09:11.660><c> this</c><00:09:11.779><c> failing</c><00:09:12.200><c> and</c><00:09:12.860><c> so</c><00:09:13.160><c> here's</c><00:09:13.339><c> a</c>
+
+00:09:13.389 --> 00:09:13.399 align:start position:0%
+against this failing and so here's a
+ 
+
+00:09:13.399 --> 00:09:14.530 align:start position:0%
+against this failing and so here's a
+great<00:09:13.550><c> example</c><00:09:13.730><c> of</c><00:09:13.880><c> where</c><00:09:14.029><c> we</c><00:09:14.120><c> could</c><00:09:14.240><c> use</c><00:09:14.510><c> a</c>
+
+00:09:14.530 --> 00:09:14.540 align:start position:0%
+great example of where we could use a
+ 
+
+00:09:14.540 --> 00:09:16.690 align:start position:0%
+great example of where we could use a
+circuit<00:09:14.930><c> breaker</c><00:09:14.990><c> so</c><00:09:15.800><c> we're</c><00:09:15.980><c> going</c><00:09:16.100><c> to</c><00:09:16.250><c> inject</c>
+
+00:09:16.690 --> 00:09:16.700 align:start position:0%
+circuit breaker so we're going to inject
+ 
+
+00:09:16.700 --> 00:09:18.790 align:start position:0%
+circuit breaker so we're going to inject
+our<00:09:17.029><c> circuit</c><00:09:17.540><c> breaker</c><00:09:17.750><c> factory</c><00:09:18.260><c> and</c><00:09:18.470><c> there's</c>
+
+00:09:18.790 --> 00:09:18.800 align:start position:0%
+our circuit breaker factory and there's
+ 
+
+00:09:18.800 --> 00:09:20.079 align:start position:0%
+our circuit breaker factory and there's
+actually<00:09:19.040><c> two</c><00:09:19.190><c> bearings</c><00:09:19.490><c> there's</c><00:09:19.670><c> a</c><00:09:19.730><c> circuit</c>
+
+00:09:20.079 --> 00:09:20.089 align:start position:0%
+actually two bearings there's a circuit
+ 
+
+00:09:20.089 --> 00:09:22.300 align:start position:0%
+actually two bearings there's a circuit
+breaker<00:09:20.150><c> factory</c><00:09:20.660><c> or</c><00:09:20.990><c> the</c><00:09:21.410><c> reactive</c><00:09:21.800><c> circuit</c>
+
+00:09:22.300 --> 00:09:22.310 align:start position:0%
+breaker factory or the reactive circuit
+ 
+
+00:09:22.310 --> 00:09:24.250 align:start position:0%
+breaker factory or the reactive circuit
+breaker<00:09:22.490><c> factory</c><00:09:22.820><c> okay</c><00:09:23.329><c> so</c>
+
+00:09:24.250 --> 00:09:24.260 align:start position:0%
+breaker factory okay so
+ 
+
+00:09:24.260 --> 00:09:28.240 align:start position:0%
+breaker factory okay so
+of<00:09:24.440><c> course</c><00:09:25.030><c> naturally</c><00:09:26.650><c> I'm</c><00:09:27.650><c> going</c><00:09:27.920><c> to</c><00:09:28.040><c> inject</c>
+
+00:09:28.240 --> 00:09:28.250 align:start position:0%
+of course naturally I'm going to inject
+ 
+
+00:09:28.250 --> 00:09:37.440 align:start position:0%
+of course naturally I'm going to inject
+the<00:09:28.400><c> reactive</c><00:09:29.000><c> one</c><00:09:32.050><c> okay</c><00:09:33.050><c> there's</c><00:09:33.500><c> this</c><00:09:33.880><c> and</c>
+
+00:09:37.440 --> 00:09:37.450 align:start position:0%
+ 
+ 
+
+00:09:37.450 --> 00:09:44.440 align:start position:0%
+ 
+private<00:09:38.450><c> final</c><00:09:39.220><c> circuit</c><00:09:40.220><c> breaker</c><00:09:43.180><c> or</c><00:09:44.180><c> is</c><00:09:44.360><c> it</c>
+
+00:09:44.440 --> 00:09:44.450 align:start position:0%
+private final circuit breaker or is it
+ 
+
+00:09:44.450 --> 00:09:46.570 align:start position:0%
+private final circuit breaker or is it
+reactive<00:09:44.900><c> circuit</c><00:09:45.170><c> breaker</c><00:09:45.350><c> right</c><00:09:45.770><c> this</c><00:09:46.280><c> tool</c>
+
+00:09:46.570 --> 00:09:46.580 align:start position:0%
+reactive circuit breaker right this tool
+ 
+
+00:09:46.580 --> 00:09:56.080 align:start position:0%
+reactive circuit breaker right this tool
+in<00:09:46.730><c> there</c><00:09:52.390><c> good</c><00:09:53.980><c> so</c><00:09:54.980><c> we'll</c><00:09:55.130><c> use</c><00:09:55.370><c> the</c><00:09:55.640><c> circuit</c>
+
+00:09:56.080 --> 00:09:56.090 align:start position:0%
+in there good so we'll use the circuit
+ 
+
+00:09:56.090 --> 00:09:58.780 align:start position:0%
+in there good so we'll use the circuit
+breaker<00:09:56.240><c> factory</c><00:09:56.750><c> to</c><00:09:57.040><c> create</c><00:09:58.040><c> an</c><00:09:58.370><c> instance</c>
+
+00:09:58.780 --> 00:09:58.790 align:start position:0%
+breaker factory to create an instance
+ 
+
+00:09:58.790 --> 00:10:05.530 align:start position:0%
+breaker factory to create an instance
+and<00:09:59.030><c> then</c><00:09:59.120><c> stash</c><00:09:59.450><c> it</c><00:10:03.730><c> okay</c><00:10:04.730><c> I'm</c><00:10:05.030><c> just</c><00:10:05.240><c> gonna</c><00:10:05.360><c> be</c>
+
+00:10:05.530 --> 00:10:05.540 align:start position:0%
+and then stash it okay I'm just gonna be
+ 
+
+00:10:05.540 --> 00:10:10.360 align:start position:0%
+and then stash it okay I'm just gonna be
+called<00:10:05.780><c> wheat</c><00:10:07.840><c> and</c><00:10:08.840><c> we</c><00:10:08.930><c> can</c><00:10:09.350><c> now</c><00:10:09.440><c> wrap</c><00:10:09.770><c> this</c>
+
+00:10:10.360 --> 00:10:10.370 align:start position:0%
+called wheat and we can now wrap this
+ 
+
+00:10:10.370 --> 00:10:12.720 align:start position:0%
+called wheat and we can now wrap this
+thing<00:10:10.640><c> that</c><00:10:11.270><c> returns</c><00:10:11.540><c> a</c><00:10:11.660><c> publisher</c><00:10:12.080><c> our</c>
+
+00:10:12.720 --> 00:10:12.730 align:start position:0%
+thing that returns a publisher our
+ 
+
+00:10:12.730 --> 00:10:16.210 align:start position:0%
+thing that returns a publisher our
+results<00:10:13.730><c> equals</c><00:10:14.240><c> this</c><00:10:14.390><c> right</c><00:10:14.830><c> that's</c><00:10:15.830><c> a</c><00:10:15.950><c> cold</c>
+
+00:10:16.210 --> 00:10:16.220 align:start position:0%
+results equals this right that's a cold
+ 
+
+00:10:16.220 --> 00:10:17.620 align:start position:0%
+results equals this right that's a cold
+stream<00:10:16.640><c> right</c><00:10:16.970><c> now</c><00:10:17.030><c> right</c><00:10:17.360><c> we</c><00:10:17.510><c> haven't</c>
+
+00:10:17.620 --> 00:10:17.630 align:start position:0%
+stream right now right we haven't
+ 
+
+00:10:17.630 --> 00:10:18.880 align:start position:0%
+stream right now right we haven't
+actually<00:10:17.780><c> executed</c><00:10:18.620><c> it</c><00:10:18.680><c> we</c><00:10:18.740><c> haven't</c>
+
+00:10:18.880 --> 00:10:18.890 align:start position:0%
+actually executed it we haven't
+ 
+
+00:10:18.890 --> 00:10:20.860 align:start position:0%
+actually executed it we haven't
+subscribed<00:10:19.490><c> to</c><00:10:19.610><c> it</c><00:10:19.790><c> and</c><00:10:19.970><c> so</c><00:10:20.420><c> it</c><00:10:20.450><c> doesn't</c><00:10:20.750><c> do</c>
+
+00:10:20.860 --> 00:10:20.870 align:start position:0%
+subscribed to it and so it doesn't do
+ 
+
+00:10:20.870 --> 00:10:21.700 align:start position:0%
+subscribed to it and so it doesn't do
+anything<00:10:21.020><c> yet</c>
+
+00:10:21.700 --> 00:10:21.710 align:start position:0%
+anything yet
+ 
+
+00:10:21.710 --> 00:10:25.840 align:start position:0%
+anything yet
+so<00:10:22.220><c> we</c><00:10:22.310><c> can</c><00:10:22.430><c> say</c><00:10:22.580><c> we</c><00:10:22.790><c> turn</c><00:10:23.230><c> this</c><00:10:24.230><c> dot</c><00:10:24.850><c> circuit</c>
+
+00:10:25.840 --> 00:10:25.850 align:start position:0%
+so we can say we turn this dot circuit
+ 
+
+00:10:25.850 --> 00:10:29.440 align:start position:0%
+so we can say we turn this dot circuit
+breaker<00:10:26.380><c> dot</c><00:10:27.380><c> run</c><00:10:27.890><c> we're</c><00:10:28.730><c> just</c><00:10:28.880><c> past</c><00:10:29.060><c> the</c><00:10:29.240><c> cold</c>
+
+00:10:29.440 --> 00:10:29.450 align:start position:0%
+breaker dot run we're just past the cold
+ 
+
+00:10:29.450 --> 00:10:32.290 align:start position:0%
+breaker dot run we're just past the cold
+stream<00:10:29.750><c> and</c><00:10:30.640><c> it'll</c><00:10:31.640><c> apply</c><00:10:31.760><c> the</c><00:10:31.880><c> default</c>
+
+00:10:32.290 --> 00:10:32.300 align:start position:0%
+stream and it'll apply the default
+ 
+
+00:10:32.300 --> 00:10:33.700 align:start position:0%
+stream and it'll apply the default
+configuration<00:10:32.510><c> for</c><00:10:33.020><c> all</c><00:10:33.050><c> circuit</c><00:10:33.410><c> breakers</c>
+
+00:10:33.700 --> 00:10:33.710 align:start position:0%
+configuration for all circuit breakers
+ 
+
+00:10:33.710 --> 00:10:35.440 align:start position:0%
+configuration for all circuit breakers
+in<00:10:33.950><c> the</c><00:10:34.520><c> system</c><00:10:34.850><c> before</c><00:10:35.090><c> I</c><00:10:35.150><c> provide</c><00:10:35.420><c> a</c>
+
+00:10:35.440 --> 00:10:35.450 align:start position:0%
+in the system before I provide a
+ 
+
+00:10:35.450 --> 00:10:38.170 align:start position:0%
+in the system before I provide a
+fallback<00:10:36.160><c> behavior</c><00:10:37.160><c> we</c><00:10:37.280><c> can</c><00:10:37.430><c> use</c><00:10:37.580><c> we</c><00:10:38.120><c> can</c>
+
+00:10:38.170 --> 00:10:38.180 align:start position:0%
+fallback behavior we can use we can
+ 
+
+00:10:38.180 --> 00:10:39.720 align:start position:0%
+fallback behavior we can use we can
+provide<00:10:38.390><c> a</c><00:10:38.450><c> function</c><00:10:38.840><c> that</c><00:10:38.960><c> looks</c><00:10:39.050><c> like</c><00:10:39.200><c> this</c>
+
+00:10:39.720 --> 00:10:39.730 align:start position:0%
+provide a function that looks like this
+ 
+
+00:10:39.730 --> 00:10:42.640 align:start position:0%
+provide a function that looks like this
+okay<00:10:40.730><c> so</c><00:10:40.790><c> the</c><00:10:41.090><c> idea</c><00:10:41.300><c> is</c><00:10:41.390><c> that</c><00:10:41.480><c> given</c><00:10:42.020><c> an</c>
+
+00:10:42.640 --> 00:10:42.650 align:start position:0%
+okay so the idea is that given an
+ 
+
+00:10:42.650 --> 00:10:45.340 align:start position:0%
+okay so the idea is that given an
+exception<00:10:43.310><c> of</c><00:10:43.490><c> some</c><00:10:43.610><c> sort</c><00:10:43.880><c> we</c><00:10:44.840><c> return</c><00:10:45.170><c> a</c>
+
+00:10:45.340 --> 00:10:45.350 align:start position:0%
+exception of some sort we return a
+ 
+
+00:10:45.350 --> 00:10:47.680 align:start position:0%
+exception of some sort we return a
+publisher<00:10:45.830><c> of</c><00:10:45.860><c> string</c><00:10:46.190><c> all</c><00:10:46.430><c> right</c><00:10:46.580><c> so</c><00:10:46.760><c> we</c>
+
+00:10:47.680 --> 00:10:47.690 align:start position:0%
+publisher of string all right so we
+ 
+
+00:10:47.690 --> 00:10:56.640 align:start position:0%
+publisher of string all right so we
+could<00:10:47.960><c> just</c><00:10:48.850><c> you</c><00:10:49.850><c> know</c><00:10:50.590><c> mono</c><00:10:51.590><c> just</c><00:10:55.600><c> hello</c>
+
+00:10:56.640 --> 00:10:56.650 align:start position:0%
+could just you know mono just hello
+ 
+
+00:10:56.650 --> 00:11:04.140 align:start position:0%
+could just you know mono just hello
+world<00:10:58.360><c> all</c><00:10:59.360><c> right</c><00:10:59.620><c> eventually</c><00:11:02.320><c> nice</c><00:11:03.320><c> lambda</c>
+
+00:11:04.140 --> 00:11:04.150 align:start position:0%
+world all right eventually nice lambda
+ 
+
+00:11:04.150 --> 00:11:06.190 align:start position:0%
+world all right eventually nice lambda
+all<00:11:05.150><c> right</c><00:11:05.270><c> so</c><00:11:05.420><c> there's</c><00:11:05.570><c> our</c><00:11:05.660><c> there's</c><00:11:05.960><c> our</c>
+
+00:11:06.190 --> 00:11:06.200 align:start position:0%
+all right so there's our there's our
+ 
+
+00:11:06.200 --> 00:11:07.690 align:start position:0%
+all right so there's our there's our
+greetings<00:11:06.590><c> endpoint</c><00:11:07.070><c> and</c><00:11:07.250><c> our</c><00:11:07.370><c> failing</c>
+
+00:11:07.690 --> 00:11:07.700 align:start position:0%
+greetings endpoint and our failing
+ 
+
+00:11:07.700 --> 00:11:09.250 align:start position:0%
+greetings endpoint and our failing
+service<00:11:08.090><c> that</c><00:11:08.270><c> makes</c><00:11:08.420><c> the</c><00:11:08.510><c> network</c><00:11:08.690><c> that</c>
+
+00:11:09.250 --> 00:11:09.260 align:start position:0%
+service that makes the network that
+ 
+
+00:11:09.260 --> 00:11:10.810 align:start position:0%
+service that makes the network that
+could<00:11:09.470><c> make</c><00:11:09.620><c> it</c><00:11:09.650><c> recall</c><00:11:10.070><c> using</c><00:11:10.430><c> the</c><00:11:10.490><c> reactive</c>
+
+00:11:10.810 --> 00:11:10.820 align:start position:0%
+could make it recall using the reactive
+ 
+
+00:11:10.820 --> 00:11:13.690 align:start position:0%
+could make it recall using the reactive
+web<00:11:10.940><c> client</c><00:11:11.300><c> or</c><00:11:11.420><c> or</c><00:11:11.570><c> our</c><00:11:12.020><c> sockets</c><00:11:12.530><c> our</c><00:11:13.310><c> socket</c>
+
+00:11:13.690 --> 00:11:13.700 align:start position:0%
+web client or or our sockets our socket
+ 
+
+00:11:13.700 --> 00:11:15.700 align:start position:0%
+web client or or our sockets our socket
+requester<00:11:14.120><c> or</c><00:11:14.330><c> whatever</c><00:11:15.050><c> right</c><00:11:15.320><c> I'm</c><00:11:15.500><c> sure</c><00:11:15.620><c> you</c>
+
+00:11:15.700 --> 00:11:15.710 align:start position:0%
+requester or whatever right I'm sure you
+ 
+
+00:11:15.710 --> 00:11:17.170 align:start position:0%
+requester or whatever right I'm sure you
+can<00:11:15.830><c> imagine</c><00:11:15.920><c> how</c><00:11:16.820><c> you</c><00:11:16.880><c> would</c><00:11:17.000><c> make</c><00:11:17.150><c> a</c>
+
+00:11:17.170 --> 00:11:17.180 align:start position:0%
+can imagine how you would make a
+ 
+
+00:11:17.180 --> 00:11:19.030 align:start position:0%
+can imagine how you would make a
+reactive<00:11:17.570><c> web</c><00:11:17.990><c> call</c><00:11:18.230><c> at</c><00:11:18.320><c> this</c><00:11:18.410><c> point</c><00:11:18.680><c> that's</c>
+
+00:11:19.030 --> 00:11:19.040 align:start position:0%
+reactive web call at this point that's
+ 
+
+00:11:19.040 --> 00:11:22.840 align:start position:0%
+reactive web call at this point that's
+not<00:11:19.280><c> the</c><00:11:19.400><c> point</c><00:11:19.550><c> of</c><00:11:19.700><c> this</c><00:11:19.790><c> video</c><00:11:19.940><c> now</c><00:11:21.070><c> a</c><00:11:22.070><c> couple</c>
+
+00:11:22.840 --> 00:11:22.850 align:start position:0%
+not the point of this video now a couple
+ 
+
+00:11:22.850 --> 00:11:24.220 align:start position:0%
+not the point of this video now a couple
+things<00:11:22.970><c> to</c><00:11:23.120><c> keep</c><00:11:23.270><c> in</c><00:11:23.390><c> mind</c><00:11:23.600><c> that</c><00:11:23.810><c> circuit</c>
+
+00:11:24.220 --> 00:11:24.230 align:start position:0%
+things to keep in mind that circuit
+ 
+
+00:11:24.230 --> 00:11:27.640 align:start position:0%
+things to keep in mind that circuit
+breaker<00:11:24.320><c> here</c><00:11:24.790><c> is</c><00:11:25.790><c> using</c><00:11:26.090><c> greet</c><00:11:26.780><c> as</c><00:11:27.050><c> a</c><00:11:27.260><c> string</c>
+
+00:11:27.640 --> 00:11:27.650 align:start position:0%
+breaker here is using greet as a string
+ 
+
+00:11:27.650 --> 00:11:29.380 align:start position:0%
+breaker here is using greet as a string
+it's<00:11:27.860><c> an</c><00:11:27.980><c> arbitrary</c><00:11:28.190><c> stream</c><00:11:28.610><c> you</c><00:11:28.820><c> I've</c><00:11:29.060><c> given</c>
+
+00:11:29.380 --> 00:11:29.390 align:start position:0%
+it's an arbitrary stream you I've given
+ 
+
+00:11:29.390 --> 00:11:31.650 align:start position:0%
+it's an arbitrary stream you I've given
+it<00:11:29.510><c> a</c><00:11:29.630><c> name</c><00:11:29.870><c> so</c><00:11:30.530><c> that</c><00:11:30.560><c> you</c><00:11:30.710><c> can</c><00:11:30.950><c> then</c><00:11:31.070><c> define</c>
+
+00:11:31.650 --> 00:11:31.660 align:start position:0%
+it a name so that you can then define
+ 
+
+00:11:31.660 --> 00:11:33.640 align:start position:0%
+it a name so that you can then define
+configuration<00:11:32.660><c> for</c><00:11:32.900><c> it</c><00:11:32.990><c> somewhere</c><00:11:33.380><c> else</c>
+
+00:11:33.640 --> 00:11:33.650 align:start position:0%
+configuration for it somewhere else
+ 
+
+00:11:33.650 --> 00:11:35.860 align:start position:0%
+configuration for it somewhere else
+right<00:11:34.040><c> so</c><00:11:34.190><c> you</c><00:11:34.280><c> can</c><00:11:34.370><c> actually</c><00:11:34.640><c> configure</c><00:11:35.330><c> the</c>
+
+00:11:35.860 --> 00:11:35.870 align:start position:0%
+right so you can actually configure the
+ 
+
+00:11:35.870 --> 00:11:38.000 align:start position:0%
+right so you can actually configure the
+specifics<00:11:36.470><c> of</c><00:11:36.650><c> the</c><00:11:36.980><c> circuit</c><00:11:37.310><c> breaker</c>
+
+00:11:38.000 --> 00:11:38.010 align:start position:0%
+specifics of the circuit breaker
+ 
+
+00:11:38.010 --> 00:11:40.040 align:start position:0%
+specifics of the circuit breaker
+bye-bye<00:11:38.910><c> that</c><00:11:39.060><c> string</c><00:11:39.300><c> ID</c><00:11:39.450><c> so</c><00:11:39.780><c> that's</c><00:11:39.930><c> how</c><00:11:39.990><c> you</c>
+
+00:11:40.040 --> 00:11:40.050 align:start position:0%
+bye-bye that string ID so that's how you
+ 
+
+00:11:40.050 --> 00:11:41.990 align:start position:0%
+bye-bye that string ID so that's how you
+link<00:11:40.740><c> this</c><00:11:41.280><c> circuit</c><00:11:41.610><c> breaker</c><00:11:41.700><c> to</c>
+
+00:11:41.990 --> 00:11:42.000 align:start position:0%
+link this circuit breaker to
+ 
+
+00:11:42.000 --> 00:11:43.040 align:start position:0%
+link this circuit breaker to
+configuration<00:11:42.420><c> that</c><00:11:42.660><c> you</c><00:11:42.720><c> would</c><00:11:42.810><c> define</c>
+
+00:11:43.040 --> 00:11:43.050 align:start position:0%
+configuration that you would define
+ 
+
+00:11:43.050 --> 00:11:44.840 align:start position:0%
+configuration that you would define
+elsewhere<00:11:43.350><c> we</c><00:11:43.890><c> haven't</c><00:11:44.100><c> specified</c><00:11:44.310><c> any</c>
+
+00:11:44.840 --> 00:11:44.850 align:start position:0%
+elsewhere we haven't specified any
+ 
+
+00:11:44.850 --> 00:11:47.270 align:start position:0%
+elsewhere we haven't specified any
+configuration<00:11:45.510><c> so</c><00:11:45.960><c> we</c><00:11:46.080><c> get</c><00:11:46.230><c> the</c><00:11:46.410><c> default</c><00:11:46.530><c> sort</c>
+
+00:11:47.270 --> 00:11:47.280 align:start position:0%
+configuration so we get the default sort
+ 
+
+00:11:47.280 --> 00:11:50.210 align:start position:0%
+configuration so we get the default sort
+of<00:11:47.340><c> generic</c><00:11:47.820><c> global</c><00:11:48.240><c> configuration</c><00:11:49.220><c> let's</c>
+
+00:11:50.210 --> 00:11:50.220 align:start position:0%
+of generic global configuration let's
+ 
+
+00:11:50.220 --> 00:11:51.560 align:start position:0%
+of generic global configuration let's
+see<00:11:50.340><c> what</c><00:11:50.460><c> this</c><00:11:50.520><c> looks</c><00:11:50.640><c> like</c><00:11:50.760><c> okay</c><00:11:51.210><c> let's</c><00:11:51.450><c> see</c>
+
+00:11:51.560 --> 00:11:51.570 align:start position:0%
+see what this looks like okay let's see
+ 
+
+00:11:51.570 --> 00:11:55.000 align:start position:0%
+see what this looks like okay let's see
+what<00:11:51.690><c> that</c><00:11:51.720><c> looks</c><00:11:51.810><c> like</c><00:11:51.960><c> right</c><00:11:52.680><c> now</c><00:11:53.510><c> localhost</c>
+
+00:11:55.000 --> 00:11:55.010 align:start position:0%
+what that looks like right now localhost
+ 
+
+00:11:55.010 --> 00:12:00.890 align:start position:0%
+what that looks like right now localhost
+wait<00:11:56.480><c> name</c><00:11:57.500><c> equals</c><00:11:59.600><c> taja</c>
+
+00:12:00.890 --> 00:12:00.900 align:start position:0%
+wait name equals taja
+ 
+
+00:12:00.900 --> 00:12:05.020 align:start position:0%
+wait name equals taja
+okay<00:12:01.230><c> so</c><00:12:01.290><c> we</c><00:12:01.500><c> got</c><00:12:01.620><c> and</c><00:12:01.890><c> then</c><00:12:02.640><c> Bob</c><00:12:02.990><c> there's</c><00:12:03.990><c> a</c>
+
+00:12:05.020 --> 00:12:05.030 align:start position:0%
+okay so we got and then Bob there's a
+ 
+
+00:12:05.030 --> 00:12:07.910 align:start position:0%
+okay so we got and then Bob there's a
+it's<00:12:06.030><c> working</c><00:12:06.390><c> okay</c><00:12:06.720><c> now</c><00:12:06.930><c> what</c><00:12:07.500><c> if</c><00:12:07.590><c> we</c><00:12:07.680><c> dropped</c>
+
+00:12:07.910 --> 00:12:07.920 align:start position:0%
+it's working okay now what if we dropped
+ 
+
+00:12:07.920 --> 00:12:11.000 align:start position:0%
+it's working okay now what if we dropped
+the<00:12:08.040><c> name</c><00:12:08.990><c> hello</c><00:12:09.990><c> world</c><00:12:10.230><c> right</c><00:12:10.590><c> the</c><00:12:10.710><c> circuit</c>
+
+00:12:11.000 --> 00:12:11.010 align:start position:0%
+the name hello world right the circuit
+ 
+
+00:12:11.010 --> 00:12:13.700 align:start position:0%
+the name hello world right the circuit
+breaker<00:12:11.160><c> was</c><00:12:11.760><c> invoked</c><00:12:12.090><c> so</c><00:12:12.750><c> you</c><00:12:13.410><c> can</c><00:12:13.560><c> see</c>
+
+00:12:13.700 --> 00:12:13.710 align:start position:0%
+breaker was invoked so you can see
+ 
+
+00:12:13.710 --> 00:12:14.720 align:start position:0%
+breaker was invoked so you can see
+that's<00:12:13.890><c> pretty</c><00:12:14.070><c> interesting</c><00:12:14.250><c> right</c><00:12:14.520><c> we</c><00:12:14.640><c> get</c>
+
+00:12:14.720 --> 00:12:14.730 align:start position:0%
+that's pretty interesting right we get
+ 
+
+00:12:14.730 --> 00:12:18.440 align:start position:0%
+that's pretty interesting right we get
+some<00:12:16.040><c> some</c><00:12:17.040><c> very</c><00:12:17.370><c> simple</c><00:12:17.670><c> behavior</c><00:12:18.150><c> here</c><00:12:18.330><c> but</c>
+
+00:12:18.440 --> 00:12:18.450 align:start position:0%
+some some very simple behavior here but
+ 
+
+00:12:18.450 --> 00:12:21.610 align:start position:0%
+some some very simple behavior here but
+we<00:12:18.690><c> can</c><00:12:18.810><c> see</c><00:12:18.960><c> how</c><00:12:19.080><c> it's</c><00:12:19.230><c> working</c><00:12:19.550><c> now</c><00:12:20.550><c> the</c>
+
+00:12:21.610 --> 00:12:21.620 align:start position:0%
+we can see how it's working now the
+ 
+
+00:12:21.620 --> 00:12:25.070 align:start position:0%
+we can see how it's working now the
+circuit<00:12:22.620><c> breaker</c><00:12:22.770><c> is</c><00:12:22.980><c> pretty</c><00:12:23.750><c> it's</c><00:12:24.750><c> doing</c><00:12:25.020><c> the</c>
+
+00:12:25.070 --> 00:12:25.080 align:start position:0%
+circuit breaker is pretty it's doing the
+ 
+
+00:12:25.080 --> 00:12:26.000 align:start position:0%
+circuit breaker is pretty it's doing the
+right<00:12:25.140><c> thing</c><00:12:25.410><c> right</c><00:12:25.590><c> we're</c><00:12:25.770><c> getting</c><00:12:25.920><c> our</c>
+
+00:12:26.000 --> 00:12:26.010 align:start position:0%
+right thing right we're getting our
+ 
+
+00:12:26.010 --> 00:12:27.740 align:start position:0%
+right thing right we're getting our
+default<00:12:26.340><c> fallback</c><00:12:26.700><c> we're</c><00:12:26.880><c> controlling</c><00:12:27.240><c> how</c>
+
+00:12:27.740 --> 00:12:27.750 align:start position:0%
+default fallback we're controlling how
+ 
+
+00:12:27.750 --> 00:12:31.160 align:start position:0%
+default fallback we're controlling how
+the<00:12:27.810><c> service</c><00:12:28.260><c> fails</c><00:12:28.610><c> and</c><00:12:29.780><c> we're</c><00:12:30.780><c> able</c><00:12:30.930><c> to</c>
+
+00:12:31.160 --> 00:12:31.170 align:start position:0%
+the service fails and we're able to
+ 
+
+00:12:31.170 --> 00:12:33.830 align:start position:0%
+the service fails and we're able to
+behave<00:12:31.560><c> or</c><00:12:31.830><c> to</c><00:12:32.190><c> add</c><00:12:32.370><c> some</c><00:12:33.090><c> other</c><00:12:33.240><c> behavior</c><00:12:33.660><c> as</c>
+
+00:12:33.830 --> 00:12:33.840 align:start position:0%
+behave or to add some other behavior as
+ 
+
+00:12:33.840 --> 00:12:36.500 align:start position:0%
+behave or to add some other behavior as
+we<00:12:34.500><c> need</c><00:12:34.650><c> to</c><00:12:34.800><c> and</c><00:12:35.670><c> we</c><00:12:35.730><c> just</c><00:12:35.760><c> wrap</c><00:12:36.090><c> it</c><00:12:36.120><c> with</c><00:12:36.390><c> this</c>
+
+00:12:36.500 --> 00:12:36.510 align:start position:0%
+we need to and we just wrap it with this
+ 
+
+00:12:36.510 --> 00:12:37.850 align:start position:0%
+we need to and we just wrap it with this
+little<00:12:36.660><c> lambda</c><00:12:37.110><c> it's</c><00:12:37.230><c> very</c><00:12:37.410><c> very</c><00:12:37.560><c> simple</c><00:12:37.740><c> to</c>
+
+00:12:37.850 --> 00:12:37.860 align:start position:0%
+little lambda it's very very simple to
+ 
+
+00:12:37.860 --> 00:12:41.420 align:start position:0%
+little lambda it's very very simple to
+do<00:12:38.010><c> that</c><00:12:38.160><c> okay</c><00:12:38.910><c> so</c><00:12:39.120><c> I</c><00:12:39.150><c> like</c><00:12:39.330><c> that</c><00:12:40.250><c> but</c><00:12:41.250><c> I</c><00:12:41.280><c> want</c>
+
+00:12:41.420 --> 00:12:41.430 align:start position:0%
+do that okay so I like that but I want
+ 
+
+00:12:41.430 --> 00:12:42.620 align:start position:0%
+do that okay so I like that but I want
+to<00:12:41.490><c> configure</c><00:12:41.760><c> it</c><00:12:41.940><c> I</c><00:12:41.970><c> want</c><00:12:42.090><c> to</c><00:12:42.120><c> override</c><00:12:42.420><c> some</c>
+
+00:12:42.620 --> 00:12:42.630 align:start position:0%
+to configure it I want to override some
+ 
+
+00:12:42.630 --> 00:12:44.480 align:start position:0%
+to configure it I want to override some
+configuration<00:12:43.200><c> here</c><00:12:43.320><c> and</c><00:12:43.430><c> specify</c><00:12:44.430><c> for</c>
+
+00:12:44.480 --> 00:12:44.490 align:start position:0%
+configuration here and specify for
+ 
+
+00:12:44.490 --> 00:12:48.560 align:start position:0%
+configuration here and specify for
+example<00:12:44.940><c> how</c><00:12:45.480><c> a</c><00:12:46.070><c> circuit</c><00:12:47.070><c> breaker</c><00:12:47.250><c> behaves</c><00:12:47.700><c> if</c>
+
+00:12:48.560 --> 00:12:48.570 align:start position:0%
+example how a circuit breaker behaves if
+ 
+
+00:12:48.570 --> 00:12:50.900 align:start position:0%
+example how a circuit breaker behaves if
+for<00:12:48.930><c> example</c><00:12:49.260><c> is</c><00:12:49.410><c> a</c><00:12:49.680><c> pathway</c><00:12:50.430><c> that's</c><00:12:50.610><c> being</c>
+
+00:12:50.900 --> 00:12:50.910 align:start position:0%
+for example is a pathway that's being
+ 
+
+00:12:50.910 --> 00:12:53.210 align:start position:0%
+for example is a pathway that's being
+invoked<00:12:51.180><c> takes</c><00:12:51.960><c> too</c><00:12:52.110><c> long</c><00:12:52.140><c> okay</c><00:12:52.980><c> I</c><00:12:53.010><c> want</c><00:12:53.190><c> to</c>
+
+00:12:53.210 --> 00:12:53.220 align:start position:0%
+invoked takes too long okay I want to
+ 
+
+00:12:53.220 --> 00:12:54.470 align:start position:0%
+invoked takes too long okay I want to
+configure<00:12:53.460><c> the</c><00:12:53.610><c> default</c><00:12:53.790><c> behavior</c><00:12:54.330><c> for</c><00:12:54.360><c> that</c>
+
+00:12:54.470 --> 00:12:54.480 align:start position:0%
+configure the default behavior for that
+ 
+
+00:12:54.480 --> 00:12:55.700 align:start position:0%
+configure the default behavior for that
+so<00:12:55.080><c> what</c><00:12:55.200><c> I'm</c><00:12:55.260><c> going</c><00:12:55.350><c> to</c><00:12:55.410><c> do</c><00:12:55.500><c> is</c><00:12:55.560><c> I'm</c><00:12:55.620><c> gonna</c>
+
+00:12:55.700 --> 00:12:55.710 align:start position:0%
+so what I'm going to do is I'm gonna
+ 
+
+00:12:55.710 --> 00:12:59.600 align:start position:0%
+so what I'm going to do is I'm gonna
+override<00:12:56.210><c> the</c><00:12:57.210><c> default</c><00:12:58.220><c> resent</c><00:12:59.220><c> reactive</c>
+
+00:12:59.600 --> 00:12:59.610 align:start position:0%
+override the default resent reactive
+ 
+
+00:12:59.610 --> 00:13:00.680 align:start position:0%
+override the default resent reactive
+resilience<00:13:00.000><c> forge</c><00:13:00.180><c> a</c><00:13:00.270><c> circuit</c><00:13:00.630><c> breaker</c>
+
+00:13:00.680 --> 00:13:00.690 align:start position:0%
+resilience forge a circuit breaker
+ 
+
+00:13:00.690 --> 00:13:10.450 align:start position:0%
+resilience forge a circuit breaker
+factory<00:13:01.260><c> I'll</c><00:13:01.980><c> provide</c><00:13:02.190><c> the</c><00:13:02.430><c> beam</c><00:13:05.780><c> okay</c>
+
+00:13:10.450 --> 00:13:10.460 align:start position:0%
+ 
+ 
+
+00:13:10.460 --> 00:13:21.410 align:start position:0%
+ 
+like<00:13:11.460><c> so</c><00:13:11.730><c> so</c><00:13:15.830><c> I</c><00:13:16.830><c> can</c><00:13:17.010><c> I</c><00:13:17.160><c> can</c><00:13:19.160><c> react</c><00:13:20.240><c> reasons</c><00:13:21.240><c> for</c>
+
+00:13:21.410 --> 00:13:21.420 align:start position:0%
+like so so I can I can react reasons for
+ 
+
+00:13:21.420 --> 00:13:23.710 align:start position:0%
+like so so I can I can react reasons for
+J<00:13:21.600><c> Sikora</c><00:13:21.840><c> factory</c><00:13:22.440><c> so</c><00:13:22.860><c> there's</c><00:13:23.010><c> my</c><00:13:23.100><c> factory</c>
+
+00:13:23.710 --> 00:13:23.720 align:start position:0%
+J Sikora factory so there's my factory
+ 
+
+00:13:23.720 --> 00:13:27.410 align:start position:0%
+J Sikora factory so there's my factory
+factory<00:13:25.340><c> equals</c><00:13:26.340><c> this</c><00:13:26.520><c> and</c><00:13:26.850><c> I</c><00:13:27.240><c> want</c><00:13:27.360><c> to</c>
+
+00:13:27.410 --> 00:13:27.420 align:start position:0%
+factory equals this and I want to
+ 
+
+00:13:27.420 --> 00:13:31.010 align:start position:0%
+factory equals this and I want to
+configure<00:13:27.750><c> some</c><00:13:28.080><c> things</c><00:13:29.030><c> before</c><00:13:30.030><c> I</c><00:13:30.060><c> get</c><00:13:30.240><c> too</c>
+
+00:13:31.010 --> 00:13:31.020 align:start position:0%
+configure some things before I get too
+ 
+
+00:13:31.020 --> 00:13:32.420 align:start position:0%
+configure some things before I get too
+far<00:13:31.200><c> down</c><00:13:31.230><c> the</c><00:13:31.410><c> line</c><00:13:31.470><c> so</c><00:13:31.770><c> that</c><00:13:31.920><c> you</c><00:13:32.310><c> can</c>
+
+00:13:32.420 --> 00:13:32.430 align:start position:0%
+far down the line so that you can
+ 
+
+00:13:32.430 --> 00:13:34.490 align:start position:0%
+far down the line so that you can
+override<00:13:32.700><c> that</c><00:13:33.060><c> you</c><00:13:33.390><c> can</c><00:13:33.510><c> do</c><00:13:33.600><c> that</c><00:13:33.750><c> for</c><00:13:34.020><c> you</c>
+
+00:13:34.490 --> 00:13:34.500 align:start position:0%
+override that you can do that for you
+ 
+
+00:13:34.500 --> 00:13:36.320 align:start position:0%
+override that you can do that for you
+know<00:13:34.590><c> all</c><00:13:34.860><c> the</c><00:13:35.070><c> factories</c><00:13:35.430><c> I'm</c><00:13:36.150><c> gonna</c>
+
+00:13:36.320 --> 00:13:36.330 align:start position:0%
+know all the factories I'm gonna
+ 
+
+00:13:36.330 --> 00:13:37.790 align:start position:0%
+know all the factories I'm gonna
+overwrite<00:13:36.630><c> it</c><00:13:36.720><c> for</c><00:13:36.870><c> this</c><00:13:36.960><c> and</c><00:13:37.350><c> I</c><00:13:37.410><c> can</c><00:13:37.560><c> just</c><00:13:37.650><c> can</c>
+
+00:13:37.790 --> 00:13:37.800 align:start position:0%
+overwrite it for this and I can just can
+ 
+
+00:13:37.800 --> 00:13:39.140 align:start position:0%
+overwrite it for this and I can just can
+configure<00:13:38.160><c> things</c><00:13:38.490><c> on</c><00:13:38.610><c> this</c><00:13:38.730><c> as</c><00:13:38.820><c> well</c><00:13:38.940><c> so</c><00:13:39.120><c> I</c>
+
+00:13:39.140 --> 00:13:39.150 align:start position:0%
+configure things on this as well so I
+ 
+
+00:13:39.150 --> 00:13:41.240 align:start position:0%
+configure things on this as well so I
+wanna<00:13:39.270><c> configure</c><00:13:39.720><c> the</c><00:13:39.810><c> default</c><00:13:39.930><c> behavior</c><00:13:40.770><c> for</c>
+
+00:13:41.240 --> 00:13:41.250 align:start position:0%
+wanna configure the default behavior for
+ 
+
+00:13:41.250 --> 00:13:44.690 align:start position:0%
+wanna configure the default behavior for
+example<00:13:41.670><c> and</c><00:13:42.560><c> the</c><00:13:43.560><c> way</c><00:13:43.650><c> you</c><00:13:43.710><c> do</c><00:13:43.860><c> that</c><00:13:44.010><c> is</c><00:13:44.310><c> you</c>
+
+00:13:44.690 --> 00:13:44.700 align:start position:0%
+example and the way you do that is you
+ 
+
+00:13:44.700 --> 00:13:46.490 align:start position:0%
+example and the way you do that is you
+are<00:13:44.880><c> given</c><00:13:45.210><c> a</c><00:13:45.300><c> string</c><00:13:45.660><c> which</c><00:13:45.870><c> corresponds</c><00:13:46.470><c> to</c>
+
+00:13:46.490 --> 00:13:46.500 align:start position:0%
+are given a string which corresponds to
+ 
+
+00:13:46.500 --> 00:13:48.620 align:start position:0%
+are given a string which corresponds to
+the<00:13:46.680><c> ID</c><00:13:46.800><c> that's</c><00:13:47.040><c> to</c><00:13:47.280><c> be</c><00:13:47.370><c> configured</c><00:13:47.820><c> and</c><00:13:48.000><c> you</c>
+
+00:13:48.620 --> 00:13:48.630 align:start position:0%
+the ID that's to be configured and you
+ 
+
+00:13:48.630 --> 00:13:51.080 align:start position:0%
+the ID that's to be configured and you
+provide<00:13:48.960><c> a</c><00:13:49.040><c> configuration</c><00:13:50.040><c> using</c><00:13:50.700><c> the</c><00:13:50.790><c> config</c>
+
+00:13:51.080 --> 00:13:51.090 align:start position:0%
+provide a configuration using the config
+ 
+
+00:13:51.090 --> 00:13:55.040 align:start position:0%
+provide a configuration using the config
+builder<00:13:51.360><c> and</c><00:13:51.630><c> so</c><00:13:52.170><c> I</c><00:13:52.800><c> and</c><00:13:53.640><c> when</c><00:13:53.850><c> to</c><00:13:54.090><c> build</c><00:13:54.480><c> a</c><00:13:54.720><c> new</c>
+
+00:13:55.040 --> 00:13:55.050 align:start position:0%
+builder and so I and when to build a new
+ 
+
+00:13:55.050 --> 00:13:58.360 align:start position:0%
+builder and so I and when to build a new
+resilience<00:13:55.920><c> Forge</c><00:13:56.280><c> a</c><00:13:56.400><c> config</c><00:13:56.850><c> builder</c>
+
+00:13:58.360 --> 00:13:58.370 align:start position:0%
+resilience Forge a config builder
+ 
+
+00:13:58.370 --> 00:14:00.530 align:start position:0%
+resilience Forge a config builder
+passing<00:13:59.370><c> in</c><00:13:59.460><c> the</c><00:13:59.580><c> ID</c><00:13:59.730><c> that</c><00:14:00.090><c> I've</c><00:14:00.180><c> been</c><00:14:00.240><c> given</c>
+
+00:14:00.530 --> 00:14:00.540 align:start position:0%
+passing in the ID that I've been given
+ 
+
+00:14:00.540 --> 00:14:05.330 align:start position:0%
+passing in the ID that I've been given
+that's<00:14:00.690><c> s</c><00:14:00.870><c> and</c><00:14:01.970><c> then</c><00:14:03.710><c> I'll</c><00:14:04.710><c> called</c><00:14:04.920><c> that</c><00:14:05.070><c> built</c>
+
+00:14:05.330 --> 00:14:05.340 align:start position:0%
+that's s and then I'll called that built
+ 
+
+00:14:05.340 --> 00:14:07.190 align:start position:0%
+that's s and then I'll called that built
+and<00:14:05.610><c> I</c><00:14:06.060><c> have</c><00:14:06.180><c> some</c><00:14:06.300><c> options</c><00:14:06.450><c> here</c><00:14:06.750><c> I</c><00:14:06.870><c> have</c><00:14:07.080><c> some</c>
+
+00:14:07.190 --> 00:14:07.200 align:start position:0%
+and I have some options here I have some
+ 
+
+00:14:07.200 --> 00:14:10.220 align:start position:0%
+and I have some options here I have some
+options<00:14:07.380><c> to</c><00:14:07.590><c> specify</c><00:14:08.190><c> for</c><00:14:08.430><c> example</c><00:14:09.230><c> time</c>
+
+00:14:10.220 --> 00:14:10.230 align:start position:0%
+options to specify for example time
+ 
+
+00:14:10.230 --> 00:14:12.850 align:start position:0%
+options to specify for example time
+limiter<00:14:10.560><c> so</c><00:14:10.890><c> time</c><00:14:11.130><c> limiter</c><00:14:11.490><c> config</c><00:14:11.940><c> that</c>
+
+00:14:12.850 --> 00:14:12.860 align:start position:0%
+limiter so time limiter config that
+ 
+
+00:14:12.860 --> 00:14:15.740 align:start position:0%
+limiter so time limiter config that
+custom<00:14:13.860><c> duck-billed</c><00:14:14.420><c> and</c><00:14:15.420><c> I'm</c><00:14:15.510><c> going</c><00:14:15.690><c> to</c>
+
+00:14:15.740 --> 00:14:15.750 align:start position:0%
+custom duck-billed and I'm going to
+ 
+
+00:14:15.750 --> 00:14:18.079 align:start position:0%
+custom duck-billed and I'm going to
+specify<00:14:15.930><c> the</c><00:14:16.230><c> timeout</c><00:14:16.830><c> duration</c><00:14:17.280><c> and</c><00:14:17.610><c> the</c>
+
+00:14:18.079 --> 00:14:18.089 align:start position:0%
+specify the timeout duration and the
+ 
+
+00:14:18.089 --> 00:14:21.290 align:start position:0%
+specify the timeout duration and the
+duration<00:14:18.300><c> I'm</c><00:14:18.570><c> going</c><00:14:18.720><c> to</c><00:14:18.780><c> specify</c><00:14:18.960><c> is</c><00:14:20.300><c> five</c>
+
+00:14:21.290 --> 00:14:21.300 align:start position:0%
+duration I'm going to specify is five
+ 
+
+00:14:21.300 --> 00:14:23.540 align:start position:0%
+duration I'm going to specify is five
+seconds<00:14:21.690><c> all</c><00:14:22.110><c> right</c><00:14:22.290><c> so</c><00:14:22.530><c> I'm</c><00:14:22.589><c> gonna</c><00:14:22.740><c> say</c><00:14:22.890><c> that</c>
+
+00:14:23.540 --> 00:14:23.550 align:start position:0%
+seconds all right so I'm gonna say that
+ 
+
+00:14:23.550 --> 00:14:26.720 align:start position:0%
+seconds all right so I'm gonna say that
+I<00:14:23.580><c> will</c><00:14:24.080><c> in</c><00:14:25.080><c> after</c><00:14:25.770><c> five</c><00:14:25.950><c> seconds</c><00:14:26.310><c> if</c><00:14:26.490><c> an</c>
+
+00:14:26.720 --> 00:14:26.730 align:start position:0%
+I will in after five seconds if an
+ 
+
+00:14:26.730 --> 00:14:28.610 align:start position:0%
+I will in after five seconds if an
+endpoint<00:14:26.970><c> that</c><00:14:27.089><c> I'm</c><00:14:27.240><c> calling</c><00:14:27.630><c> takes</c><00:14:28.290><c> longer</c>
+
+00:14:28.610 --> 00:14:28.620 align:start position:0%
+endpoint that I'm calling takes longer
+ 
+
+00:14:28.620 --> 00:14:29.510 align:start position:0%
+endpoint that I'm calling takes longer
+than<00:14:28.650><c> five</c><00:14:28.860><c> seconds</c><00:14:29.220><c> which</c><00:14:29.370><c> is</c><00:14:29.400><c> a</c>
+
+00:14:29.510 --> 00:14:29.520 align:start position:0%
+than five seconds which is a
+ 
+
+00:14:29.520 --> 00:14:31.340 align:start position:0%
+than five seconds which is a
+preposterous<00:14:29.880><c> lay</c><00:14:30.300><c> long</c><00:14:30.450><c> amount</c><00:14:30.750><c> of</c><00:14:30.780><c> time</c><00:14:30.839><c> you</c>
+
+00:14:31.340 --> 00:14:31.350 align:start position:0%
+preposterous lay long amount of time you
+ 
+
+00:14:31.350 --> 00:14:33.920 align:start position:0%
+preposterous lay long amount of time you
+shouldn't<00:14:31.850><c> have</c><00:14:32.850><c> anything</c><00:14:33.030><c> hopefully</c><00:14:33.390><c> taking</c>
+
+00:14:33.920 --> 00:14:33.930 align:start position:0%
+shouldn't have anything hopefully taking
+ 
+
+00:14:33.930 --> 00:14:36.430 align:start position:0%
+shouldn't have anything hopefully taking
+five<00:14:34.110><c> seconds</c><00:14:34.440><c> but</c><00:14:34.620><c> if</c><00:14:35.220><c> you</c><00:14:35.400><c> do</c><00:14:35.550><c> this</c><00:14:36.180><c> will</c>
+
+00:14:36.430 --> 00:14:36.440 align:start position:0%
+five seconds but if you do this will
+ 
+
+00:14:36.440 --> 00:14:38.300 align:start position:0%
+five seconds but if you do this will
+trigger<00:14:37.440><c> the</c><00:14:37.589><c> circuit</c><00:14:37.860><c> breaker</c><00:14:38.010><c> and</c><00:14:38.130><c> you'll</c>
+
+00:14:38.300 --> 00:14:38.310 align:start position:0%
+trigger the circuit breaker and you'll
+ 
+
+00:14:38.310 --> 00:14:39.890 align:start position:0%
+trigger the circuit breaker and you'll
+get<00:14:38.400><c> the</c><00:14:38.550><c> default</c><00:14:38.820><c> fallback</c><00:14:39.330><c> behavior</c><00:14:39.720><c> which</c>
+
+00:14:39.890 --> 00:14:39.900 align:start position:0%
+get the default fallback behavior which
+ 
+
+00:14:39.900 --> 00:14:41.870 align:start position:0%
+get the default fallback behavior which
+is<00:14:40.020><c> what</c><00:14:40.140><c> you</c><00:14:40.230><c> want</c><00:14:40.440><c> in</c><00:14:40.620><c> this</c><00:14:40.710><c> case</c><00:14:40.890><c> we</c><00:14:41.730><c> also</c>
+
+00:14:41.870 --> 00:14:41.880 align:start position:0%
+is what you want in this case we also
+ 
+
+00:14:41.880 --> 00:14:43.550 align:start position:0%
+is what you want in this case we also
+want<00:14:42.120><c> some</c><00:14:42.330><c> circuit</c><00:14:42.660><c> breaker</c><00:14:42.810><c> config</c><00:14:43.260><c> we</c><00:14:43.440><c> can</c>
+
+00:14:43.550 --> 00:14:43.560 align:start position:0%
+want some circuit breaker config we can
+ 
+
+00:14:43.560 --> 00:14:45.620 align:start position:0%
+want some circuit breaker config we can
+just<00:14:43.770><c> use</c><00:14:43.950><c> the</c><00:14:44.220><c> circuit</c><00:14:44.490><c> breaker</c><00:14:44.640><c> config</c>
+
+00:14:45.620 --> 00:14:45.630 align:start position:0%
+just use the circuit breaker config
+ 
+
+00:14:45.630 --> 00:14:51.290 align:start position:0%
+just use the circuit breaker config
+default<00:14:46.280><c> right</c><00:14:47.280><c> so</c><00:14:49.220><c> there</c><00:14:50.220><c> you</c><00:14:50.310><c> go</c><00:14:50.520><c> and</c><00:14:50.940><c> of</c>
+
+00:14:51.290 --> 00:14:51.300 align:start position:0%
+default right so there you go and of
+ 
+
+00:14:51.300 --> 00:14:56.300 align:start position:0%
+default right so there you go and of
+course<00:14:51.510><c> this</c><00:14:51.630><c> lends</c><00:14:51.900><c> itself</c><00:14:52.170><c> to</c><00:14:52.260><c> lambda</c><00:14:55.310><c> good</c>
+
+00:14:56.300 --> 00:14:56.310 align:start position:0%
+course this lends itself to lambda good
+ 
+
+00:14:56.310 --> 00:14:58.400 align:start position:0%
+course this lends itself to lambda good
+stuff<00:14:56.640><c> okay</c><00:14:57.180><c> so</c><00:14:57.839><c> this</c><00:14:57.930><c> my</c><00:14:58.080><c> default</c>
+
+00:14:58.400 --> 00:14:58.410 align:start position:0%
+stuff okay so this my default
+ 
+
+00:14:58.410 --> 00:14:59.960 align:start position:0%
+stuff okay so this my default
+configuration<00:14:59.010><c> now</c><00:14:59.130><c> I</c><00:14:59.310><c> did</c><00:14:59.640><c> so</c><00:14:59.730><c> you</c><00:14:59.760><c> can</c>
+
+00:14:59.960 --> 00:14:59.970 align:start position:0%
+configuration now I did so you can
+ 
+
+00:14:59.970 --> 00:15:01.820 align:start position:0%
+configuration now I did so you can
+configure<00:15:00.300><c> specific</c><00:15:01.230><c> circuit</c><00:15:01.500><c> breakers</c><00:15:01.740><c> as</c>
+
+00:15:01.820 --> 00:15:01.830 align:start position:0%
+configure specific circuit breakers as
+ 
+
+00:15:01.830 --> 00:15:06.010 align:start position:0%
+configure specific circuit breakers as
+well<00:15:02.010><c> so</c><00:15:02.190><c> you</c><00:15:02.250><c> could</c><00:15:02.339><c> say</c><00:15:02.520><c> factory</c><00:15:03.050><c> dot</c>
+
+00:15:06.010 --> 00:15:06.020 align:start position:0%
+well so you could say factory dot
+ 
+
+00:15:06.020 --> 00:15:08.660 align:start position:0%
+well so you could say factory dot
+configure<00:15:07.020><c> and</c><00:15:07.290><c> there</c><00:15:07.950><c> the</c><00:15:08.190><c> second</c><00:15:08.520><c> parameter</c>
+
+00:15:08.660 --> 00:15:08.670 align:start position:0%
+configure and there the second parameter
+ 
+
+00:15:08.670 --> 00:15:12.010 align:start position:0%
+configure and there the second parameter
+is<00:15:09.030><c> a</c><00:15:09.060><c> Varitek</c><00:15:09.720><c> array</c><00:15:09.960><c> of</c><00:15:10.170><c> string</c><00:15:10.860><c> IDs</c><00:15:11.250><c> okay</c>
+
+00:15:12.010 --> 00:15:12.020 align:start position:0%
+is a Varitek array of string IDs okay
+ 
+
+00:15:12.020 --> 00:15:14.270 align:start position:0%
+is a Varitek array of string IDs okay
+these<00:15:13.020><c> are</c><00:15:13.200><c> the</c><00:15:13.230><c> IDs</c><00:15:13.530><c> to</c><00:15:13.860><c> which</c><00:15:14.070><c> this</c>
+
+00:15:14.270 --> 00:15:14.280 align:start position:0%
+these are the IDs to which this
+ 
+
+00:15:14.280 --> 00:15:16.610 align:start position:0%
+these are the IDs to which this
+configuration<00:15:14.670><c> should</c><00:15:15.420><c> apply</c><00:15:15.690><c> so</c><00:15:16.380><c> you</c><00:15:16.410><c> could</c>
+
+00:15:16.610 --> 00:15:16.620 align:start position:0%
+configuration should apply so you could
+ 
+
+00:15:16.620 --> 00:15:18.170 align:start position:0%
+configuration should apply so you could
+say<00:15:16.830><c> Greek</c><00:15:17.430><c> you</c><00:15:17.580><c> could</c><00:15:17.700><c> provide</c><00:15:17.910><c> a</c>
+
+00:15:18.170 --> 00:15:18.180 align:start position:0%
+say Greek you could provide a
+ 
+
+00:15:18.180 --> 00:15:19.760 align:start position:0%
+say Greek you could provide a
+configuration<00:15:18.900><c> there</c><00:15:19.080><c> just</c><00:15:19.320><c> like</c><00:15:19.410><c> I</c><00:15:19.530><c> did</c><00:15:19.680><c> for</c>
+
+00:15:19.760 --> 00:15:19.770 align:start position:0%
+configuration there just like I did for
+ 
+
+00:15:19.770 --> 00:15:22.280 align:start position:0%
+configuration there just like I did for
+the<00:15:19.830><c> default</c><00:15:20.130><c> and</c><00:15:20.430><c> then</c><00:15:21.360><c> specify</c><00:15:21.810><c> Greek</c><00:15:22.080><c> as</c>
+
+00:15:22.280 --> 00:15:22.290 align:start position:0%
+the default and then specify Greek as
+ 
+
+00:15:22.290 --> 00:15:23.510 align:start position:0%
+the default and then specify Greek as
+the<00:15:22.500><c> second</c><00:15:22.980><c> parameter</c>
+
+00:15:23.510 --> 00:15:23.520 align:start position:0%
+the second parameter
+ 
+
+00:15:23.520 --> 00:15:24.470 align:start position:0%
+the second parameter
+and<00:15:23.610><c> that</c><00:15:23.880><c> would</c><00:15:23.970><c> have</c><00:15:24.030><c> that</c><00:15:24.090><c> would</c><00:15:24.330><c> mean</c><00:15:24.450><c> that</c>
+
+00:15:24.470 --> 00:15:24.480 align:start position:0%
+and that would have that would mean that
+ 
+
+00:15:24.480 --> 00:15:26.840 align:start position:0%
+and that would have that would mean that
+the<00:15:24.720><c> configuration</c><00:15:25.220><c> only</c><00:15:26.220><c> applied</c><00:15:26.550><c> to</c><00:15:26.580><c> that</c>
+
+00:15:26.840 --> 00:15:26.850 align:start position:0%
+the configuration only applied to that
+ 
+
+00:15:26.850 --> 00:15:29.990 align:start position:0%
+the configuration only applied to that
+particular<00:15:27.330><c> circuit</c><00:15:27.600><c> breaker</c><00:15:28.280><c> all</c><00:15:29.280><c> right</c><00:15:29.430><c> so</c>
+
+00:15:29.990 --> 00:15:30.000 align:start position:0%
+particular circuit breaker all right so
+ 
+
+00:15:30.000 --> 00:15:31.880 align:start position:0%
+particular circuit breaker all right so
+now<00:15:30.150><c> in</c><00:15:30.750><c> order</c><00:15:30.960><c> first</c><00:15:31.050><c> in</c><00:15:31.410><c> order</c><00:15:31.680><c> for</c><00:15:31.770><c> us</c><00:15:31.860><c> to</c>
+
+00:15:31.880 --> 00:15:31.890 align:start position:0%
+now in order first in order for us to
+ 
+
+00:15:31.890 --> 00:15:33.620 align:start position:0%
+now in order first in order for us to
+see<00:15:32.190><c> this</c><00:15:32.340><c> in</c><00:15:32.490><c> action</c><00:15:32.610><c> we</c><00:15:33.150><c> need</c><00:15:33.300><c> to</c><00:15:33.390><c> introduce</c>
+
+00:15:33.620 --> 00:15:33.630 align:start position:0%
+see this in action we need to introduce
+ 
+
+00:15:33.630 --> 00:15:36.950 align:start position:0%
+see this in action we need to introduce
+a<00:15:33.870><c> little</c><00:15:33.960><c> bit</c><00:15:34.080><c> of</c><00:15:34.170><c> time</c><00:15:34.880><c> into</c><00:15:35.880><c> our</c><00:15:36.090><c> into</c><00:15:36.930><c> our</c>
+
+00:15:36.950 --> 00:15:36.960 align:start position:0%
+a little bit of time into our into our
+ 
+
+00:15:36.960 --> 00:15:39.260 align:start position:0%
+a little bit of time into our into our
+flow<00:15:37.350><c> here</c><00:15:37.590><c> okay</c><00:15:38.010><c> so</c><00:15:38.220><c> what</c><00:15:38.700><c> we're</c><00:15:38.820><c> gonna</c><00:15:38.910><c> do</c><00:15:39.090><c> is</c>
+
+00:15:39.260 --> 00:15:39.270 align:start position:0%
+flow here okay so what we're gonna do is
+ 
+
+00:15:39.270 --> 00:15:43.760 align:start position:0%
+flow here okay so what we're gonna do is
+we're<00:15:39.810><c> going</c><00:15:39.960><c> to</c><00:15:41.870><c> delay</c><00:15:42.870><c> the</c><00:15:43.140><c> publication</c><00:15:43.650><c> of</c>
+
+00:15:43.760 --> 00:15:43.770 align:start position:0%
+we're going to delay the publication of
+ 
+
+00:15:43.770 --> 00:15:47.570 align:start position:0%
+we're going to delay the publication of
+data<00:15:43.980><c> so</c><00:15:44.220><c> we're</c><00:15:44.310><c> going</c><00:15:44.400><c> to</c><00:15:44.460><c> say</c><00:15:45.950><c> map</c><00:15:46.950><c> this</c><00:15:47.280><c> to</c><00:15:47.550><c> a</c>
+
+00:15:47.570 --> 00:15:47.580 align:start position:0%
+data so we're going to say map this to a
+ 
+
+00:15:47.580 --> 00:15:52.910 align:start position:0%
+data so we're going to say map this to a
+string<00:15:48.000><c> or</c><00:15:48.240><c> else</c><00:15:49.140><c> to</c><00:15:49.380><c> an</c><00:15:49.470><c> error</c><00:15:51.710><c> but</c><00:15:52.710><c> we</c><00:15:52.770><c> want</c>
+
+00:15:52.910 --> 00:15:52.920 align:start position:0%
+string or else to an error but we want
+ 
+
+00:15:52.920 --> 00:15:56.150 align:start position:0%
+string or else to an error but we want
+to<00:15:52.980><c> delay</c><00:15:53.220><c> the</c><00:15:53.400><c> elements</c><00:15:53.820><c> all</c><00:15:54.540><c> right</c><00:15:54.980><c> so</c><00:15:55.980><c> let's</c>
+
+00:15:56.150 --> 00:15:56.160 align:start position:0%
+to delay the elements all right so let's
+ 
+
+00:15:56.160 --> 00:16:00.290 align:start position:0%
+to delay the elements all right so let's
+say<00:15:56.250><c> it's</c><00:15:56.370><c> raishin</c><00:15:56.790><c> of</c><00:15:57.660><c> seconds</c><00:15:59.000><c> and</c><00:16:00.000><c> we</c><00:16:00.150><c> want</c>
+
+00:16:00.290 --> 00:16:00.300 align:start position:0%
+say it's raishin of seconds and we want
+ 
+
+00:16:00.300 --> 00:16:02.450 align:start position:0%
+say it's raishin of seconds and we want
+that<00:16:00.390><c> seconds</c><00:16:00.900><c> count</c><00:16:01.170><c> to</c><00:16:02.040><c> be</c><00:16:02.130><c> something</c><00:16:02.370><c> that</c>
+
+00:16:02.450 --> 00:16:02.460 align:start position:0%
+that seconds count to be something that
+ 
+
+00:16:02.460 --> 00:16:04.940 align:start position:0%
+that seconds count to be something that
+we<00:16:02.550><c> arrive</c><00:16:02.760><c> at</c><00:16:02.970><c> dynamically</c><00:16:03.540><c> so</c><00:16:04.440><c> again</c><00:16:04.830><c> I'm</c>
+
+00:16:04.940 --> 00:16:04.950 align:start position:0%
+we arrive at dynamically so again I'm
+ 
+
+00:16:04.950 --> 00:16:10.870 align:start position:0%
+we arrive at dynamically so again I'm
+I'm<00:16:05.130><c> doing</c><00:16:05.880><c> this</c><00:16:06.120><c> to</c><00:16:06.360><c> to</c><00:16:06.780><c> sort</c><00:16:07.020><c> of</c><00:16:09.380><c> stub</c><00:16:10.380><c> out</c><00:16:10.530><c> a</c>
+
+00:16:10.870 --> 00:16:10.880 align:start position:0%
+I'm doing this to to sort of stub out a
+ 
+
+00:16:10.880 --> 00:16:13.670 align:start position:0%
+I'm doing this to to sort of stub out a
+slowing<00:16:11.880><c> it</c><00:16:12.060><c> recall</c><00:16:12.360><c> okay</c><00:16:12.810><c> so</c><00:16:13.440><c> I'm</c><00:16:13.500><c> going</c><00:16:13.620><c> to</c>
+
+00:16:13.670 --> 00:16:13.680 align:start position:0%
+slowing it recall okay so I'm going to
+ 
+
+00:16:13.680 --> 00:16:22.240 align:start position:0%
+slowing it recall okay so I'm going to
+say<00:16:13.770><c> it</c><00:16:13.890><c> long</c><00:16:15.140><c> math</c><00:16:16.190><c> dot</c><00:16:17.190><c> random</c><00:16:19.670><c> times</c><00:16:20.670><c> ten</c>
+
+00:16:22.240 --> 00:16:22.250 align:start position:0%
+say it long math dot random times ten
+ 
+
+00:16:22.250 --> 00:16:24.770 align:start position:0%
+say it long math dot random times ten
+okay<00:16:23.250><c> so</c><00:16:23.310><c> I'm</c><00:16:23.490><c> I'm</c><00:16:24.060><c> creating</c><00:16:24.390><c> a</c><00:16:24.450><c> second</c>
+
+00:16:24.770 --> 00:16:24.780 align:start position:0%
+okay so I'm I'm creating a second
+ 
+
+00:16:24.780 --> 00:16:26.750 align:start position:0%
+okay so I'm I'm creating a second
+argument<00:16:25.290><c> so</c><00:16:25.560><c> it's</c><00:16:25.680><c> gonna</c><00:16:25.770><c> be</c><00:16:25.920><c> if</c><00:16:26.130><c> it's</c><00:16:26.520><c> you</c>
+
+00:16:26.750 --> 00:16:26.760 align:start position:0%
+argument so it's gonna be if it's you
+ 
+
+00:16:26.760 --> 00:16:28.670 align:start position:0%
+argument so it's gonna be if it's you
+know<00:16:26.820><c> if</c><00:16:26.880><c> it's</c><00:16:27.060><c> if</c><00:16:27.270><c> it's</c><00:16:27.390><c> five</c><00:16:27.750><c> six</c><00:16:28.080><c> seven</c><00:16:28.410><c> if</c>
+
+00:16:28.670 --> 00:16:28.680 align:start position:0%
+know if it's if it's five six seven if
+ 
+
+00:16:28.680 --> 00:16:31.730 align:start position:0%
+know if it's if it's five six seven if
+it's<00:16:28.950><c> you</c><00:16:29.340><c> know</c><00:16:29.990><c> anything</c><00:16:30.990><c> above</c><00:16:31.290><c> five</c><00:16:31.500><c> or</c>
+
+00:16:31.730 --> 00:16:31.740 align:start position:0%
+it's you know anything above five or
+ 
+
+00:16:31.740 --> 00:16:35.180 align:start position:0%
+it's you know anything above five or
+maybe<00:16:32.220><c> equal</c><00:16:32.580><c> to</c><00:16:32.670><c> five</c><00:16:33.440><c> then</c><00:16:34.440><c> of</c><00:16:34.770><c> course</c><00:16:34.980><c> it'll</c>
+
+00:16:35.180 --> 00:16:35.190 align:start position:0%
+maybe equal to five then of course it'll
+ 
+
+00:16:35.190 --> 00:16:36.200 align:start position:0%
+maybe equal to five then of course it'll
+trigger<00:16:35.310><c> the</c><00:16:35.430><c> circuit</c><00:16:35.670><c> breaker</c><00:16:35.820><c> otherwise</c>
+
+00:16:36.200 --> 00:16:36.210 align:start position:0%
+trigger the circuit breaker otherwise
+ 
+
+00:16:36.210 --> 00:16:38.150 align:start position:0%
+trigger the circuit breaker otherwise
+it'll<00:16:36.780><c> return</c><00:16:37.050><c> the</c><00:16:37.170><c> normal</c><00:16:37.410><c> value</c><00:16:37.710><c> okay</c><00:16:38.070><c> so</c>
+
+00:16:38.150 --> 00:16:38.160 align:start position:0%
+it'll return the normal value okay so
+ 
+
+00:16:38.160 --> 00:16:40.130 align:start position:0%
+it'll return the normal value okay so
+we're<00:16:38.280><c> introducing</c><00:16:38.460><c> a</c><00:16:38.790><c> delay</c><00:16:39.090><c> in</c><00:16:39.360><c> how</c><00:16:39.900><c> fast</c>
+
+00:16:40.130 --> 00:16:40.140 align:start position:0%
+we're introducing a delay in how fast
+ 
+
+00:16:40.140 --> 00:16:42.200 align:start position:0%
+we're introducing a delay in how fast
+this<00:16:40.680><c> publisher</c><00:16:41.190><c> gets</c><00:16:41.340><c> published</c><00:16:41.730><c> this</c><00:16:41.910><c> item</c>
+
+00:16:42.200 --> 00:16:42.210 align:start position:0%
+this publisher gets published this item
+ 
+
+00:16:42.210 --> 00:16:51.990 align:start position:0%
+this publisher gets published this item
+gets<00:16:42.840><c> published</c>
+
+00:16:51.990 --> 00:16:52.000 align:start position:0%
+ 
+ 
+
+00:16:52.000 --> 00:16:58.650 align:start position:0%
+ 
+okay<00:16:54.120><c> we</c><00:16:55.120><c> should</c><00:16:55.149><c> actually</c><00:16:57.149><c> that's</c><00:16:58.149><c> let's</c>
+
+00:16:58.650 --> 00:16:58.660 align:start position:0%
+okay we should actually that's let's
+ 
+
+00:16:58.660 --> 00:17:09.870 align:start position:0%
+okay we should actually that's let's
+indicate<00:16:58.899><c> how</c><00:16:59.139><c> long</c><00:16:59.319><c> it</c><00:16:59.410><c> took</c><00:16:59.560><c> and</c><00:17:08.459><c> I'll</c><00:17:09.459><c> log</c>
+
+00:17:09.870 --> 00:17:09.880 align:start position:0%
+indicate how long it took and I'll log
+ 
+
+00:17:09.880 --> 00:17:12.149 align:start position:0%
+indicate how long it took and I'll log
+it<00:17:10.000><c> out</c><00:17:10.120><c> as</c><00:17:10.270><c> well</c><00:17:10.419><c> so</c><00:17:10.449><c> we</c><00:17:10.720><c> can</c><00:17:10.750><c> see</c><00:17:11.079><c> what</c><00:17:11.860><c> should</c>
+
+00:17:12.149 --> 00:17:12.159 align:start position:0%
+it out as well so we can see what should
+ 
+
+00:17:12.159 --> 00:17:24.689 align:start position:0%
+it out as well so we can see what should
+have<00:17:12.250><c> been</c><00:17:12.280><c> returned</c><00:17:12.990><c> and</c><00:17:13.990><c> what</c><00:17:14.980><c> is</c><00:17:16.350><c> so</c><00:17:17.350><c> far</c>
+
+00:17:24.689 --> 00:17:24.699 align:start position:0%
+ 
+ 
+
+00:17:24.699 --> 00:17:32.400 align:start position:0%
+ 
+all<00:17:25.699><c> right</c><00:17:29.679><c> no</c><00:17:30.679><c> you</c><00:17:31.100><c> know</c><00:17:31.190><c> what</c><00:17:31.340><c> we</c><00:17:31.580><c> need</c><00:17:31.760><c> to</c>
+
+00:17:32.400 --> 00:17:32.410 align:start position:0%
+all right no you know what we need to
+ 
+
+00:17:32.410 --> 00:17:52.580 align:start position:0%
+all right no you know what we need to
+put<00:17:33.410><c> that</c><00:17:33.620><c> in</c><00:17:33.740><c> here</c>
+
+00:17:52.580 --> 00:17:52.590 align:start position:0%
+ 
+ 
+
+00:17:52.590 --> 00:18:02.090 align:start position:0%
+ 
+okay<00:17:53.309><c> get</c><00:17:53.940><c> rid</c><00:17:54.059><c> of</c><00:17:54.150><c> that</c><00:17:55.669><c> there's</c><00:17:56.669><c> this</c><00:18:01.100><c> good</c>
+
+00:18:02.090 --> 00:18:02.100 align:start position:0%
+okay get rid of that there's this good
+ 
+
+00:18:02.100 --> 00:18:09.769 align:start position:0%
+okay get rid of that there's this good
+stuff<00:18:02.490><c> so</c><00:18:02.789><c> now</c><00:18:03.559><c> return</c><00:18:04.559><c> this</c><00:18:08.419><c> give</c><00:18:09.419><c> it</c><00:18:09.450><c> a</c><00:18:09.600><c> nap</c>
+
+00:18:09.769 --> 00:18:09.779 align:start position:0%
+stuff so now return this give it a nap
+ 
+
+00:18:09.779 --> 00:18:16.240 align:start position:0%
+stuff so now return this give it a nap
+okay<00:18:12.590><c> so</c><00:18:13.590><c> those</c><00:18:13.679><c> are</c><00:18:13.740><c> our</c><00:18:14.220><c> string</c><00:18:15.049><c> I'm</c>
+
+00:18:16.240 --> 00:18:16.250 align:start position:0%
+okay so those are our string I'm
+ 
+
+00:18:16.250 --> 00:18:19.640 align:start position:0%
+okay so those are our string I'm
+recording<00:18:17.250><c> this</c><00:18:17.370><c> video</c><00:18:17.610><c> on</c><00:18:17.789><c> QuickTime</c><00:18:18.650><c> so</c>
+
+00:18:19.640 --> 00:18:19.650 align:start position:0%
+recording this video on QuickTime so
+ 
+
+00:18:19.650 --> 00:18:22.399 align:start position:0%
+recording this video on QuickTime so
+it's<00:18:19.830><c> making</c><00:18:20.640><c> my</c><00:18:20.909><c> CPU</c><00:18:21.330><c> crawl</c><00:18:21.870><c> everything</c><00:18:22.320><c> is</c>
+
+00:18:22.399 --> 00:18:22.409 align:start position:0%
+it's making my CPU crawl everything is
+ 
+
+00:18:22.409 --> 00:18:28.760 align:start position:0%
+it's making my CPU crawl everything is
+super<00:18:22.529><c> slow</c><00:18:23.510><c> log4j</c><00:18:26.330><c> alright</c><00:18:27.409><c> okay</c><00:18:28.409><c> so</c><00:18:28.559><c> there</c>
+
+00:18:28.760 --> 00:18:28.770 align:start position:0%
+super slow log4j alright okay so there
+ 
+
+00:18:28.770 --> 00:18:41.590 align:start position:0%
+super slow log4j alright okay so there
+we<00:18:28.799><c> go</c><00:18:28.919><c> now</c><00:18:29.669><c> we</c><00:18:29.970><c> restart</c>
+
+00:18:41.590 --> 00:18:41.600 align:start position:0%
+ 
+ 
+
+00:18:41.600 --> 00:18:45.670 align:start position:0%
+ 
+okay<00:18:42.600><c> so</c><00:18:42.720><c> that's</c><00:18:42.960><c> working</c><00:18:43.430><c> name</c><00:18:44.430><c> equals</c><00:18:44.850><c> Bob</c>
+
+00:18:45.670 --> 00:18:45.680 align:start position:0%
+okay so that's working name equals Bob
+ 
+
+00:18:45.680 --> 00:18:48.650 align:start position:0%
+okay so that's working name equals Bob
+nine<00:18:46.680><c> seconds</c><00:18:47.130><c> so</c><00:18:47.190><c> that</c><00:18:47.610><c> will</c><00:18:47.760><c> trigger</c><00:18:48.030><c> the</c>
+
+00:18:48.650 --> 00:18:48.660 align:start position:0%
+nine seconds so that will trigger the
+ 
+
+00:18:48.660 --> 00:18:49.790 align:start position:0%
+nine seconds so that will trigger the
+circuit<00:18:48.990><c> breaker</c><00:18:49.140><c> in</c><00:18:49.290><c> which</c><00:18:49.410><c> you</c><00:18:49.500><c> just</c><00:18:49.710><c> get</c>
+
+00:18:49.790 --> 00:18:49.800 align:start position:0%
+circuit breaker in which you just get
+ 
+
+00:18:49.800 --> 00:18:52.250 align:start position:0%
+circuit breaker in which you just get
+hello<00:18:49.980><c> world</c><00:18:50.040><c> after</c><00:18:50.550><c> five</c><00:18:50.700><c> seconds</c><00:18:51.090><c> right</c><00:18:52.050><c> in</c>
+
+00:18:52.250 --> 00:18:52.260 align:start position:0%
+hello world after five seconds right in
+ 
+
+00:18:52.260 --> 00:18:54.680 align:start position:0%
+hello world after five seconds right in
+one<00:18:53.100><c> second</c><00:18:53.460><c> we</c><00:18:53.490><c> get</c><00:18:53.640><c> it</c><00:18:53.730><c> back</c><00:18:53.910><c> hello</c><00:18:54.330><c> Bob</c><00:18:54.540><c> in</c>
+
+00:18:54.680 --> 00:18:54.690 align:start position:0%
+one second we get it back hello Bob in
+ 
+
+00:18:54.690 --> 00:18:57.200 align:start position:0%
+one second we get it back hello Bob in
+one<00:18:55.070><c> in</c><00:18:56.070><c> eight</c><00:18:56.309><c> seconds</c><00:18:56.670><c> that'll</c><00:18:56.880><c> give</c><00:18:57.000><c> us</c><00:18:57.030><c> how</c>
+
+00:18:57.200 --> 00:18:57.210 align:start position:0%
+one in eight seconds that'll give us how
+ 
+
+00:18:57.210 --> 00:18:58.700 align:start position:0%
+one in eight seconds that'll give us how
+the<00:18:57.270><c> world</c><00:18:57.360><c> right</c><00:18:57.780><c> because</c><00:18:58.260><c> that's</c><00:18:58.410><c> more</c><00:18:58.530><c> than</c>
+
+00:18:58.700 --> 00:18:58.710 align:start position:0%
+the world right because that's more than
+ 
+
+00:18:58.710 --> 00:19:01.900 align:start position:0%
+the world right because that's more than
+five<00:18:58.800><c> seconds</c><00:18:59.240><c> so</c><00:19:00.240><c> there</c><00:19:00.780><c> you</c><00:19:00.870><c> go</c>
+
+00:19:01.900 --> 00:19:01.910 align:start position:0%
+five seconds so there you go
+ 
+
+00:19:01.910 --> 00:19:04.670 align:start position:0%
+five seconds so there you go
+six<00:19:02.910><c> again</c><00:19:03.210><c> we</c><00:19:03.330><c> get</c><00:19:03.450><c> hello</c><00:19:03.630><c> world</c><00:19:03.690><c> you</c><00:19:04.440><c> can</c><00:19:04.559><c> see</c>
+
+00:19:04.670 --> 00:19:04.680 align:start position:0%
+six again we get hello world you can see
+ 
+
+00:19:04.680 --> 00:19:06.680 align:start position:0%
+six again we get hello world you can see
+them<00:19:04.890><c> logs</c><00:19:05.130><c> that</c><00:19:05.340><c> are</c><00:19:05.400><c> in</c><00:19:05.460><c> the</c><00:19:05.520><c> bottom</c><00:19:05.700><c> you</c><00:19:06.570><c> can</c>
+
+00:19:06.680 --> 00:19:06.690 align:start position:0%
+them logs that are in the bottom you can
+ 
+
+00:19:06.690 --> 00:19:07.970 align:start position:0%
+them logs that are in the bottom you can
+see<00:19:06.780><c> what</c><00:19:06.900><c> it's</c><00:19:07.020><c> trying</c><00:19:07.290><c> to</c><00:19:07.410><c> prepare</c><00:19:07.710><c> for</c><00:19:07.920><c> us</c>
+
+00:19:07.970 --> 00:19:07.980 align:start position:0%
+see what it's trying to prepare for us
+ 
+
+00:19:07.980 --> 00:19:10.310 align:start position:0%
+see what it's trying to prepare for us
+but<00:19:08.670><c> it</c><00:19:08.970><c> takes</c><00:19:09.210><c> too</c><00:19:09.390><c> long</c><00:19:09.420><c> so</c><00:19:09.870><c> it's</c><00:19:09.990><c> a</c><00:19:10.050><c> circuit</c>
+
+00:19:10.310 --> 00:19:10.320 align:start position:0%
+but it takes too long so it's a circuit
+ 
+
+00:19:10.320 --> 00:19:12.260 align:start position:0%
+but it takes too long so it's a circuit
+breakers<00:19:10.559><c> acting</c><00:19:11.550><c> on</c><00:19:11.640><c> behalf</c><00:19:11.790><c> of</c><00:19:12.030><c> the</c><00:19:12.150><c> client</c>
+
+00:19:12.260 --> 00:19:12.270 align:start position:0%
+breakers acting on behalf of the client
+ 
+
+00:19:12.270 --> 00:19:13.880 align:start position:0%
+breakers acting on behalf of the client
+saying<00:19:12.600><c> no</c><00:19:12.690><c> no</c><00:19:12.840><c> I</c><00:19:12.990><c> can't</c><00:19:13.260><c> wait</c><00:19:13.350><c> this</c><00:19:13.500><c> long</c><00:19:13.620><c> I</c>
+
+00:19:13.880 --> 00:19:13.890 align:start position:0%
+saying no no I can't wait this long I
+ 
+
+00:19:13.890 --> 00:19:16.600 align:start position:0%
+saying no no I can't wait this long I
+gotta<00:19:14.880><c> go</c><00:19:15.059><c> so</c><00:19:15.450><c> here's</c><00:19:15.780><c> how</c><00:19:15.900><c> the</c><00:19:15.960><c> world</c><00:19:16.170><c> instead</c>
+
+00:19:16.600 --> 00:19:16.610 align:start position:0%
+gotta go so here's how the world instead
+ 
+
+00:19:16.610 --> 00:19:20.480 align:start position:0%
+gotta go so here's how the world instead
+all<00:19:17.610><c> right</c><00:19:17.760><c> so</c><00:19:18.240><c> we</c><00:19:18.450><c> can</c><00:19:18.900><c> see</c><00:19:19.110><c> that</c><00:19:19.350><c> the</c><00:19:19.490><c> circuit</c>
+
+00:19:20.480 --> 00:19:20.490 align:start position:0%
+all right so we can see that the circuit
+ 
+
+00:19:20.490 --> 00:19:23.419 align:start position:0%
+all right so we can see that the circuit
+breaker<00:19:21.530><c> you</c><00:19:22.530><c> know</c><00:19:22.650><c> it</c><00:19:22.920><c> works</c><00:19:23.100><c> perfectly</c>
+
+00:19:23.419 --> 00:19:23.429 align:start position:0%
+breaker you know it works perfectly
+ 
+
+00:19:23.429 --> 00:19:26.419 align:start position:0%
+breaker you know it works perfectly
+works<00:19:23.640><c> nicely</c><00:19:23.880><c> it's</c><00:19:24.420><c> easily</c><00:19:24.980><c> add</c><00:19:25.980><c> it</c><00:19:26.220><c> to</c><00:19:26.340><c> an</c>
+
+00:19:26.419 --> 00:19:26.429 align:start position:0%
+works nicely it's easily add it to an
+ 
+
+00:19:26.429 --> 00:19:27.830 align:start position:0%
+works nicely it's easily add it to an
+existing<00:19:26.460><c> code</c><00:19:26.910><c> base</c><00:19:26.940><c> it</c><00:19:27.300><c> doesn't</c><00:19:27.540><c> add</c><00:19:27.720><c> much</c>
+
+00:19:27.830 --> 00:19:27.840 align:start position:0%
+existing code base it doesn't add much
+ 
+
+00:19:27.840 --> 00:19:31.669 align:start position:0%
+existing code base it doesn't add much
+more<00:19:28.050><c> and</c><00:19:28.890><c> wait</c><00:19:29.720><c> there's</c><00:19:30.720><c> still</c><00:19:30.870><c> things</c><00:19:31.110><c> still</c>
+
+00:19:31.669 --> 00:19:31.679 align:start position:0%
+more and wait there's still things still
+ 
+
+00:19:31.679 --> 00:19:34.010 align:start position:0%
+more and wait there's still things still
+some<00:19:31.860><c> things</c><00:19:31.980><c> that</c><00:19:32.330><c> to</c><00:19:33.330><c> be</c><00:19:33.420><c> done</c><00:19:33.570><c> you</c><00:19:33.900><c> know</c><00:19:33.990><c> I</c>
+
+00:19:34.010 --> 00:19:34.020 align:start position:0%
+some things that to be done you know I
+ 
+
+00:19:34.020 --> 00:19:36.410 align:start position:0%
+some things that to be done you know I
+think<00:19:34.200><c> there's</c><00:19:34.500><c> discussion</c><00:19:34.950><c> of</c><00:19:35.420><c> discussion</c>
+
+00:19:36.410 --> 00:19:36.420 align:start position:0%
+think there's discussion of discussion
+ 
+
+00:19:36.420 --> 00:19:39.160 align:start position:0%
+think there's discussion of discussion
+around<00:19:36.510><c> adding</c><00:19:37.050><c> support</c><00:19:37.350><c> for</c><00:19:37.559><c> annotations</c><00:19:38.130><c> I</c>
+
+00:19:39.160 --> 00:19:39.170 align:start position:0%
+around adding support for annotations I
+ 
+
+00:19:39.170 --> 00:19:40.820 align:start position:0%
+around adding support for annotations I
+don't<00:19:40.170><c> know</c><00:19:40.230><c> I</c><00:19:40.260><c> don't</c><00:19:40.470><c> know</c><00:19:40.530><c> what</c><00:19:40.650><c> that</c><00:19:40.710><c> would</c>
+
+00:19:40.820 --> 00:19:40.830 align:start position:0%
+don't know I don't know what that would
+ 
+
+00:19:40.830 --> 00:19:41.150 align:start position:0%
+don't know I don't know what that would
+look<00:19:40.860><c> like</c>
+
+00:19:41.150 --> 00:19:41.160 align:start position:0%
+look like
+ 
+
+00:19:41.160 --> 00:19:43.160 align:start position:0%
+look like
+Ryan<00:19:41.820><c> Baxter</c><00:19:42.240><c> and</c><00:19:42.360><c> the</c><00:19:42.420><c> team</c><00:19:42.570><c> are</c><00:19:42.780><c> working</c><00:19:42.929><c> on</c>
+
+00:19:43.160 --> 00:19:43.170 align:start position:0%
+Ryan Baxter and the team are working on
+ 
+
+00:19:43.170 --> 00:19:45.530 align:start position:0%
+Ryan Baxter and the team are working on
+this<00:19:43.320><c> and</c><00:19:44.190><c> are</c><00:19:44.400><c> of</c><00:19:44.490><c> course</c><00:19:44.640><c> always</c><00:19:44.940><c> eager</c><00:19:45.300><c> to</c>
+
+00:19:45.530 --> 00:19:45.540 align:start position:0%
+this and are of course always eager to
+ 
+
+00:19:45.540 --> 00:19:48.049 align:start position:0%
+this and are of course always eager to
+get<00:19:45.630><c> the</c><00:19:45.720><c> feedback</c><00:19:45.900><c> so</c><00:19:46.740><c> if</c><00:19:46.830><c> you</c><00:19:46.980><c> chime</c><00:19:47.850><c> in</c><00:19:47.880><c> on</c>
+
+00:19:48.049 --> 00:19:48.059 align:start position:0%
+get the feedback so if you chime in on
+ 
+
+00:19:48.059 --> 00:19:49.820 align:start position:0%
+get the feedback so if you chime in on
+gay<00:19:48.240><c> issues</c><00:19:48.270><c> or</c><00:19:49.020><c> if</c><00:19:49.080><c> you</c><00:19:49.140><c> send</c><00:19:49.290><c> the</c><00:19:49.440><c> messages</c>
+
+00:19:49.820 --> 00:19:49.830 align:start position:0%
+gay issues or if you send the messages
+ 
+
+00:19:49.830 --> 00:19:53.680 align:start position:0%
+gay issues or if you send the messages
+on<00:19:50.010><c> the</c><00:19:50.130><c> on</c><00:19:50.490><c> the</c><00:19:50.940><c> git</c><00:19:51.150><c> er</c><00:19:51.179><c> that</c><00:19:51.480><c> I</c><00:19:51.510><c> am</c><00:19:52.550><c> github</c>
+
+00:19:53.680 --> 00:19:53.690 align:start position:0%
+on the on the git er that I am github
+ 
+
+00:19:53.690 --> 00:19:56.419 align:start position:0%
+on the on the git er that I am github
+authenticated<00:19:55.010><c> software</c><00:19:56.010><c> community</c>
+
+00:19:56.419 --> 00:19:56.429 align:start position:0%
+authenticated software community
+ 
+
+00:19:56.429 --> 00:19:57.980 align:start position:0%
+authenticated software community
+community<00:19:56.910><c> channels</c><00:19:57.300><c> that'd</c><00:19:57.450><c> be</c><00:19:57.570><c> awesome</c><00:19:57.690><c> or</c>
+
+00:19:57.980 --> 00:19:57.990 align:start position:0%
+community channels that'd be awesome or
+ 
+
+00:19:57.990 --> 00:20:01.360 align:start position:0%
+community channels that'd be awesome or
+Twitter<00:19:58.230><c> ad</c><00:19:59.100><c> spring</c><00:19:59.460><c> cloud</c><00:20:00.170><c> there's</c><00:20:01.170><c> also</c>
+
+00:20:01.360 --> 00:20:01.370 align:start position:0%
+Twitter ad spring cloud there's also
+ 
+
+00:20:01.370 --> 00:20:04.430 align:start position:0%
+Twitter ad spring cloud there's also
+perhaps<00:20:02.370><c> the</c><00:20:02.580><c> use</c><00:20:02.730><c> case</c><00:20:02.940><c> for</c><00:20:03.440><c> dynamically</c>
+
+00:20:04.430 --> 00:20:04.440 align:start position:0%
+perhaps the use case for dynamically
+ 
+
+00:20:04.440 --> 00:20:06.320 align:start position:0%
+perhaps the use case for dynamically
+yeah<00:20:04.679><c> you</c><00:20:04.740><c> know</c><00:20:04.980><c> programmatically</c><00:20:05.670><c> adding</c><00:20:06.120><c> a</c>
+
+00:20:06.320 --> 00:20:06.330 align:start position:0%
+yeah you know programmatically adding a
+ 
+
+00:20:06.330 --> 00:20:07.880 align:start position:0%
+yeah you know programmatically adding a
+saree<00:20:06.630><c> program</c><00:20:07.020><c> programmatically</c><00:20:07.500><c> opening</c>
+
+00:20:07.880 --> 00:20:07.890 align:start position:0%
+saree program programmatically opening
+ 
+
+00:20:07.890 --> 00:20:09.590 align:start position:0%
+saree program programmatically opening
+and<00:20:08.010><c> closing</c><00:20:08.400><c> the</c><00:20:08.850><c> circuit</c><00:20:09.179><c> breaker</c><00:20:09.420><c> I</c><00:20:09.480><c> mean</c>
+
+00:20:09.590 --> 00:20:09.600 align:start position:0%
+and closing the circuit breaker I mean
+ 
+
+00:20:09.600 --> 00:20:10.790 align:start position:0%
+and closing the circuit breaker I mean
+all<00:20:09.720><c> sorts</c><00:20:09.840><c> of</c><00:20:09.960><c> interesting</c><00:20:10.320><c> possibilities</c>
+
+00:20:10.790 --> 00:20:10.800 align:start position:0%
+all sorts of interesting possibilities
+ 
+
+00:20:10.800 --> 00:20:13.250 align:start position:0%
+all sorts of interesting possibilities
+beyond<00:20:11.520><c> this</c><00:20:11.700><c> but</c><00:20:11.910><c> the</c><00:20:12.390><c> the</c><00:20:12.809><c> important</c><00:20:13.110><c> stuff</c>
+
+00:20:13.250 --> 00:20:13.260 align:start position:0%
+beyond this but the the important stuff
+ 
+
+00:20:13.260 --> 00:20:15.080 align:start position:0%
+beyond this but the the important stuff
+is<00:20:13.410><c> here</c><00:20:13.559><c> right</c><00:20:14.370><c> now</c><00:20:14.429><c> and</c><00:20:14.730><c> so</c><00:20:14.820><c> this</c><00:20:14.940><c> is</c>
+
+00:20:15.080 --> 00:20:15.090 align:start position:0%
+is here right now and so this is
+ 
+
+00:20:15.090 --> 00:20:17.960 align:start position:0%
+is here right now and so this is
+actually<00:20:15.360><c> a</c><00:20:15.390><c> nice</c><00:20:15.750><c> way</c><00:20:16.470><c> forward</c><00:20:16.980><c> for</c><00:20:17.880><c> people</c>
+
+00:20:17.960 --> 00:20:17.970 align:start position:0%
+actually a nice way forward for people
+ 
+
+00:20:17.970 --> 00:20:19.730 align:start position:0%
+actually a nice way forward for people
+who<00:20:18.150><c> are</c><00:20:18.210><c> trying</c><00:20:18.390><c> to</c><00:20:18.540><c> to</c><00:20:19.140><c> move</c><00:20:19.260><c> their</c><00:20:19.470><c> code</c><00:20:19.710><c> to</c>
+
+00:20:19.730 --> 00:20:19.740 align:start position:0%
+who are trying to to move their code to
+ 
+
+00:20:19.740 --> 00:20:22.700 align:start position:0%
+who are trying to to move their code to
+this<00:20:20.480><c> to</c><00:20:21.480><c> move</c><00:20:21.630><c> their</c><00:20:21.780><c> code</c><00:20:21.929><c> away</c><00:20:22.020><c> for</c><00:20:22.410><c> example</c>
+
+00:20:22.700 --> 00:20:22.710 align:start position:0%
+this to move their code away for example
+ 
+
+00:20:22.710 --> 00:20:25.640 align:start position:0%
+this to move their code away for example
+from<00:20:23.600><c> histories</c><00:20:24.600><c> which</c><00:20:24.960><c> for</c><00:20:25.140><c> example</c><00:20:25.470><c> has</c>
+
+00:20:25.640 --> 00:20:25.650 align:start position:0%
+from histories which for example has
+ 
+
+00:20:25.650 --> 00:20:28.700 align:start position:0%
+from histories which for example has
+been<00:20:25.800><c> put</c><00:20:26.010><c> into</c><00:20:26.160><c> maintenance</c><00:20:27.059><c> mode</c><00:20:27.270><c> by</c><00:20:28.050><c> by</c>
+
+00:20:28.700 --> 00:20:28.710 align:start position:0%
+been put into maintenance mode by by
+ 
+
+00:20:28.710 --> 00:20:31.220 align:start position:0%
+been put into maintenance mode by by
+Netflix<00:20:29.070><c> so</c><00:20:29.429><c> if</c><00:20:29.850><c> you're</c><00:20:30.300><c> on</c><00:20:30.420><c> it</c><00:20:30.570><c> this</c><00:20:31.020><c> is</c><00:20:31.080><c> a</c>
+
+00:20:31.220 --> 00:20:31.230 align:start position:0%
+Netflix so if you're on it this is a
+ 
+
+00:20:31.230 --> 00:20:32.510 align:start position:0%
+Netflix so if you're on it this is a
+great<00:20:31.440><c> opportunity</c><00:20:31.650><c> to</c><00:20:31.950><c> get</c><00:20:32.040><c> off</c><00:20:32.190><c> of</c><00:20:32.309><c> it</c><00:20:32.429><c> and</c>
+
+00:20:32.510 --> 00:20:32.520 align:start position:0%
+great opportunity to get off of it and
+ 
+
+00:20:32.520 --> 00:20:34.070 align:start position:0%
+great opportunity to get off of it and
+you<00:20:32.610><c> can</c><00:20:32.760><c> use</c><00:20:32.880><c> history</c><00:20:33.600><c> right</c><00:20:33.870><c> there's</c>
+
+00:20:34.070 --> 00:20:34.080 align:start position:0%
+you can use history right there's
+ 
+
+00:20:34.080 --> 00:20:36.350 align:start position:0%
+you can use history right there's
+actually<00:20:34.410><c> a</c><00:20:34.440><c> hystrix</c><00:20:34.679><c> implementation</c><00:20:35.360><c> though</c>
+
+00:20:36.350 --> 00:20:36.360 align:start position:0%
+actually a hystrix implementation though
+ 
+
+00:20:36.360 --> 00:20:38.419 align:start position:0%
+actually a hystrix implementation though
+I<00:20:36.660><c> were</c><00:20:36.929><c> I</c><00:20:36.990><c> you</c><00:20:37.140><c> I</c><00:20:37.740><c> would</c><00:20:38.190><c> start</c><00:20:38.370><c> with</c>
+
+00:20:38.419 --> 00:20:38.429 align:start position:0%
+I were I you I would start with
+ 
+
+00:20:38.429 --> 00:20:39.980 align:start position:0%
+I were I you I would start with
+something<00:20:38.790><c> like</c><00:20:38.910><c> resilience</c><00:20:39.330><c> for</c><00:20:39.480><c> J</c><00:20:39.690><c> if</c><00:20:39.870><c> you</c>
+
+00:20:39.980 --> 00:20:39.990 align:start position:0%
+something like resilience for J if you
+ 
+
+00:20:39.990 --> 00:20:42.860 align:start position:0%
+something like resilience for J if you
+don't<00:20:40.679><c> already</c><00:20:40.860><c> have</c><00:20:40.980><c> an</c><00:20:41.390><c> investment</c><00:20:42.390><c> in</c><00:20:42.540><c> or</c>
+
+00:20:42.860 --> 00:20:42.870 align:start position:0%
+don't already have an investment in or
+ 
+
+00:20:42.870 --> 00:20:45.890 align:start position:0%
+don't already have an investment in or
+dependency<00:20:43.440><c> on</c><00:20:43.559><c> hystrix</c><00:20:44.600><c> I'll</c><00:20:45.600><c> write</c><00:20:45.750><c> with</c><00:20:45.840><c> my</c>
+
+00:20:45.890 --> 00:20:45.900 align:start position:0%
+dependency on hystrix I'll write with my
+ 
+
+00:20:45.900 --> 00:20:47.480 align:start position:0%
+dependency on hystrix I'll write with my
+friends<00:20:46.170><c> thanks</c><00:20:46.710><c> for</c><00:20:46.770><c> watching</c><00:20:47.160><c> in</c><00:20:47.250><c> it</c><00:20:47.370><c> as</c>
+
+00:20:47.480 --> 00:20:47.490 align:start position:0%
+friends thanks for watching in it as
+ 
+
+00:20:47.490 --> 00:20:57.840 align:start position:0%
+friends thanks for watching in it as
+always<00:20:47.850><c> and</c><00:20:48.030><c> we'll</c><00:20:48.929><c> see</c><00:20:49.170><c> you</c><00:20:49.260><c> next</c><00:20:49.440><c> time</c>
+
+00:20:57.840 --> 00:20:57.850 align:start position:0%
+ 
+ 
+
+00:20:57.850 --> 00:20:59.910 align:start position:0%
+ 
+you
+

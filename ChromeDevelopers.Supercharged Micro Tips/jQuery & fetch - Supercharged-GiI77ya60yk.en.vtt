@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.494
+[MUSIC PLAYING]
+
+00:00:01.494 --> 00:00:05.476
+[TYPING]
+
+00:00:05.476 --> 00:00:05.976
+[BOING]
+
+00:00:05.976 --> 00:00:06.972
+[EXPLOSION]
+
+00:00:11.460 --> 00:00:13.950
+SPEAKER: Remember when
+AJAX was a buzzword?
+
+00:00:13.950 --> 00:00:16.320
+That was around the same
+time jQuery appeared
+
+00:00:16.320 --> 00:00:17.950
+in the web ecosystem.
+
+00:00:17.950 --> 00:00:21.360
+AJAX meant nothing more than
+using XHR to dynamically
+
+00:00:21.360 --> 00:00:23.830
+load content into your website.
+
+00:00:23.830 --> 00:00:27.120
+But it turned out that XHR
+is a pretty hard API to use,
+
+00:00:27.120 --> 00:00:30.030
+and jQuery provided
+a much simpler AJAX
+
+00:00:30.030 --> 00:00:33.210
+function that was quickly
+adopted by web developers.
+
+00:00:33.210 --> 00:00:35.180
+Now the web platform
+offers fetch,
+
+00:00:35.180 --> 00:00:38.580
+a promise-based modern
+replacement for the old XHR,
+
+00:00:38.580 --> 00:00:42.000
+with a couple of similarities
+to jQuery's AJAX function.
+
+00:00:42.000 --> 00:00:43.860
+This might not be
+news to you, as anyone
+
+00:00:43.860 --> 00:00:45.900
+who has written a service
+worker is probably
+
+00:00:45.900 --> 00:00:47.280
+familiar with fetch.
+
+00:00:47.280 --> 00:00:50.550
+But it was jQuery that
+showed that XHR was not
+
+00:00:50.550 --> 00:00:52.410
+a good developer experience.
+
+00:00:52.410 --> 00:00:54.360
+Fetch is somewhat
+newer, at least compared
+
+00:00:54.360 --> 00:00:56.630
+to the other APIs that
+we talked about, and is
+
+00:00:56.630 --> 00:01:00.330
+supported in all modern
+browsers, but not IE 11.
+
+00:01:00.330 --> 00:01:02.550
+There is, however, a
+couple of high fidelity
+
+00:01:02.550 --> 00:01:04.628
+polyfills out there
+for you to use.
+
+00:01:04.628 --> 00:01:06.340
+[POPPING NOISE]
+
+00:01:06.340 --> 00:01:07.162
+Man, AJAX.
+
+00:01:07.162 --> 00:01:09.370
+It's been a while since you
+heard that one, isn't it?
+
+00:01:09.370 --> 00:01:11.710
+Well, if you find this whole
+jQuery stuff interesting,
+
+00:01:11.710 --> 00:01:14.800
+you should subscribe because we
+have some more videos coming.
+
+00:01:14.800 --> 00:01:16.270
+And in the meantime,
+you can watch
+
+00:01:16.270 --> 00:01:19.980
+some other "Supercharged"
+videos right here.
+

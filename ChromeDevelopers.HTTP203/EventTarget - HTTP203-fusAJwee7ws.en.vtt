@@ -1,0 +1,520 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.020
+SPEAKER 1: Something
+that I noticed
+
+00:00:02.020 --> 00:00:05.197
+had just popped into canary--
+
+00:00:05.197 --> 00:00:06.780
+I kind of knew there
+was plans for it,
+
+00:00:06.780 --> 00:00:08.610
+but I didn't realize
+how far along it was,
+
+00:00:08.610 --> 00:00:09.710
+and now it's in canary--
+
+00:00:09.710 --> 00:00:11.789
+is Event Target.
+
+00:00:11.789 --> 00:00:13.080
+SPEAKER 2: That's been a thing.
+
+00:00:13.080 --> 00:00:14.455
+SPEAKER 1: That
+has been a thing.
+
+00:00:14.455 --> 00:00:18.722
+So Event Target is the
+thing that gives us ad--
+
+00:00:18.722 --> 00:00:20.930
+SPEAKER 2: It's a horrible
+name, by the way, I think.
+
+00:00:20.930 --> 00:00:22.080
+SPEAKER 1: Yeah.
+
+00:00:22.080 --> 00:00:24.870
+SPEAKER 2: Because,
+like, the thing makes--
+
+00:00:24.870 --> 00:00:27.940
+Event Target makes a thing--
+
+00:00:27.940 --> 00:00:29.320
+something that can emit events.
+
+00:00:29.320 --> 00:00:32.070
+SPEAKER 1: Well, Node calls
+it EventEmitter, which
+
+00:00:32.070 --> 00:00:33.540
+is a better name, I agree.
+
+00:00:33.540 --> 00:00:35.730
+But Event Target has
+been with us for,
+
+00:00:35.730 --> 00:00:37.230
+like, many, many years and--
+
+00:00:37.230 --> 00:00:39.740
+SPEAKER 2: As all the things
+on the web that are ill-named
+
+00:00:39.740 --> 00:00:40.260
+usually are.
+
+00:00:40.260 --> 00:00:40.680
+SPEAKER 1: Yes.
+
+00:00:40.680 --> 00:00:41.763
+So we can't change it now.
+
+00:00:41.763 --> 00:00:45.160
+But that's-- like, everything
+that has addEventListener
+
+00:00:45.160 --> 00:00:46.730
+inherits from Event Target.
+
+00:00:46.730 --> 00:00:46.920
+SPEAKER 2: Yeah.
+
+00:00:46.920 --> 00:00:48.586
+And the thing is,
+it's usually something
+
+00:00:48.586 --> 00:00:50.910
+that you only see in the specs.
+
+00:00:50.910 --> 00:00:54.240
+You see, like, this new thing,
+it implements Event Target.
+
+00:00:54.240 --> 00:00:55.104
+SPEAKER 1: Yes.
+
+00:00:55.104 --> 00:00:56.520
+SPEAKER 2: But
+it's not actually--
+
+00:00:56.520 --> 00:00:57.150
+SPEAKER 1: It extends.
+
+00:00:57.150 --> 00:00:58.191
+SPEAKER 2: Or it extends.
+
+00:00:58.191 --> 00:01:01.260
+But it actually cannot
+extend it in your code.
+
+00:01:01.260 --> 00:01:02.100
+BOTH: Until now.
+
+00:01:02.100 --> 00:01:04.950
+[MUSIC PLAYING]
+
+00:01:09.859 --> 00:01:10.650
+SPEAKER 1: Finally.
+
+00:01:10.650 --> 00:01:12.691
+Like, because if you've
+done anything with Events
+
+00:01:12.691 --> 00:01:16.260
+before, that you've wanted
+your own pub/sub or something
+
+00:01:16.260 --> 00:01:18.360
+kind of system, you
+end up thinking,
+
+00:01:18.360 --> 00:01:20.784
+well, I'll get a library or
+write my own or something.
+
+00:01:20.784 --> 00:01:21.450
+SPEAKER 2: Yeah.
+
+00:01:21.450 --> 00:01:23.325
+Like usually, you end
+up with horrible hacks.
+
+00:01:23.325 --> 00:01:26.094
+And I was one of these people
+who wrote horrible hacks.
+
+00:01:26.094 --> 00:01:26.760
+SPEAKER 1: Yeah.
+
+00:01:26.760 --> 00:01:27.260
+Exactly.
+
+00:01:27.260 --> 00:01:29.980
+Just to repeat something
+that's already on the platform.
+
+00:01:29.980 --> 00:01:32.760
+It's a total violation
+of the extensible web.
+
+00:01:32.760 --> 00:01:35.170
+And so people--
+
+00:01:35.170 --> 00:01:37.722
+I think it was Domenic
+Denicola-- have
+
+00:01:37.722 --> 00:01:39.180
+got together and
+actually inspected
+
+00:01:39.180 --> 00:01:42.300
+what the constructor looks like
+and how you would extend it,
+
+00:01:42.300 --> 00:01:43.440
+and how you'd use it.
+
+00:01:43.440 --> 00:01:45.164
+And it's now in canary.
+
+00:01:45.164 --> 00:01:46.330
+You can do New Event Target.
+
+00:01:46.330 --> 00:01:47.496
+SPEAKER 2: Oh, it's so good.
+
+00:01:47.496 --> 00:01:50.680
+SPEAKER 1: You can do class
+whatever extends event target.
+
+00:01:50.680 --> 00:01:52.740
+And now you have
+addEventListener.
+
+00:01:52.740 --> 00:01:54.584
+Now you have dispatchEvents.
+
+00:01:54.584 --> 00:01:55.500
+You've got the whole--
+
+00:01:55.500 --> 00:01:57.090
+SPEAKER 2: Which are the
+only two things you need.
+
+00:01:57.090 --> 00:01:58.173
+SPEAKER 1: Right, exactly.
+
+00:01:58.173 --> 00:01:59.460
+Well, and this is the thing.
+
+00:01:59.460 --> 00:02:02.350
+There's this long-term
+plan that, at some point,
+
+00:02:02.350 --> 00:02:04.635
+we'll replace addEventListener.
+
+00:02:04.635 --> 00:02:05.510
+Well, not replace it.
+
+00:02:05.510 --> 00:02:07.710
+We'll enhance it
+with observables.
+
+00:02:07.710 --> 00:02:08.400
+SPEAKER 2: Yes.
+
+00:02:08.400 --> 00:02:11.520
+I've seen the--
+
+00:02:11.520 --> 00:02:13.170
+I'm going to call
+it a scratch pad
+
+00:02:13.170 --> 00:02:15.105
+because it's probably too early
+to call that an even explainer.
+
+00:02:15.105 --> 00:02:16.896
+SPEAKER 1: Well, there's
+been loads, right?
+
+00:02:16.896 --> 00:02:18.450
+There's been loads of little--
+
+00:02:18.450 --> 00:02:20.130
+yeah, loads of little
+ideas around this.
+
+00:02:20.130 --> 00:02:21.397
+But the kind of--
+
+00:02:21.397 --> 00:02:23.730
+the central agreement is that
+this should be how we do--
+
+00:02:23.730 --> 00:02:25.729
+SPEAKER 2: Things that
+can do events should also
+
+00:02:25.729 --> 00:02:28.830
+be able to do observables,
+which is a stream of events.
+
+00:02:28.830 --> 00:02:30.102
+But be careful with that.
+
+00:02:30.102 --> 00:02:30.810
+SPEAKER 1: Right.
+
+00:02:30.810 --> 00:02:31.410
+Yes.
+
+00:02:31.410 --> 00:02:33.300
+But this means that you can--
+
+00:02:33.300 --> 00:02:35.160
+if everyone starts
+using Event Target now,
+
+00:02:35.160 --> 00:02:37.290
+once we get the support
+across the board,
+
+00:02:37.290 --> 00:02:38.749
+it means when
+observables do land--
+
+00:02:38.749 --> 00:02:40.248
+SPEAKER 2: Support
+across the board.
+
+00:02:40.248 --> 00:02:41.830
+SPEAKER 1: Support
+across the board.
+
+00:02:41.830 --> 00:02:45.040
+That's a good catchphrase.
+
+00:02:45.040 --> 00:02:46.830
+Is that another
+jingle that we need?
+
+00:02:46.830 --> 00:02:48.030
+SPEAKER 2: Maybe.
+
+00:02:48.030 --> 00:02:49.060
+SPEAKER 1: Probably not.
+
+00:02:49.060 --> 00:02:52.272
+Yeah, but then when
+observables land,
+
+00:02:52.272 --> 00:02:53.730
+you'll get those
+for free, as well.
+
+00:02:53.730 --> 00:02:55.500
+SPEAKER 2: That would
+be really, really good.
+
+00:02:55.500 --> 00:02:57.870
+SPEAKER 1: It's one of those
+things that kind of seems--
+
+00:02:57.870 --> 00:02:59.620
+SPEAKER 2: Well, the
+thing is I'm not sure
+
+00:02:59.620 --> 00:03:04.170
+if the people listening slash
+watching are necessarily
+
+00:03:04.170 --> 00:03:05.460
+aware of what you have to do.
+
+00:03:05.460 --> 00:03:08.620
+Because the only things
+that Extended Event Target
+
+00:03:08.620 --> 00:03:13.080
+were tangible for you
+were DOM elements.
+
+00:03:13.080 --> 00:03:14.350
+SPEAKER 1: Yes.
+
+00:03:14.350 --> 00:03:16.486
+SPEAKER 2: Or message boards.
+
+00:03:16.486 --> 00:03:17.110
+SPEAKER 1: Yes.
+
+00:03:17.110 --> 00:03:17.940
+SPEAKER 2: As far as I know.
+
+00:03:17.940 --> 00:03:19.356
+SPEAKER 1: There's
+lots of-- well,
+
+00:03:19.356 --> 00:03:21.930
+things like
+navigator.serviceworker
+
+00:03:21.930 --> 00:03:23.460
+extends Event Target.
+
+00:03:23.460 --> 00:03:24.510
+There's lots of stuff.
+
+00:03:24.510 --> 00:03:25.100
+Yeah.
+
+00:03:25.100 --> 00:03:26.190
+SPEAKER 2: So for
+example, the thing--
+
+00:03:26.190 --> 00:03:27.772
+I basically wrote
+a little tweet.
+
+00:03:27.772 --> 00:03:29.730
+I was like, oh, look,
+here is a nice way we can
+
+00:03:29.730 --> 00:03:30.896
+build your own Event Target.
+
+00:03:30.896 --> 00:03:34.050
+I would legit just create a
+message ship port-- message
+
+00:03:34.050 --> 00:03:37.250
+channel-- which is a message
+board, rip out one port,
+
+00:03:37.250 --> 00:03:39.650
+and it would have Dispatch
+Event and Add Event Listener.
+
+00:03:39.650 --> 00:03:42.390
+And I will just bind these
+functions to my own optic.
+
+00:03:42.390 --> 00:03:44.782
+And suddenly, my optic
+would be kind of like--
+
+00:03:44.782 --> 00:03:45.490
+SPEAKER 1: Right.
+
+00:03:45.490 --> 00:03:47.990
+That's a nice hack, just
+built around a very small--
+
+00:03:47.990 --> 00:03:48.870
+SPEAKER 2: But
+it's still a hack.
+
+00:03:48.870 --> 00:03:50.520
+For example,
+event.target was always
+
+00:03:50.520 --> 00:03:52.860
+going to be wrong because it
+would be the message boards
+
+00:03:52.860 --> 00:03:54.825
+of the actual object I used.
+
+00:03:54.825 --> 00:03:56.520
+SPEAKER 1: And "this"
+in the function
+
+00:03:56.520 --> 00:03:57.660
+would be wrong for
+the same reason
+
+00:03:57.660 --> 00:03:58.140
+because that's the Event Target.
+
+00:03:58.140 --> 00:03:59.420
+SPEAKER 2: Yeah, unless
+you bound to this
+
+00:03:59.420 --> 00:04:00.450
+and your functions are--
+
+00:04:00.450 --> 00:04:01.650
+SPEAKER 1: Oh, yeah.
+
+00:04:01.650 --> 00:04:02.630
+SPEAKER 2: It's just--
+
+00:04:02.630 --> 00:04:04.950
+and then Remove Event
+Listener wouldn't work again.
+
+00:04:04.950 --> 00:04:05.450
+You know?
+
+00:04:05.450 --> 00:04:06.190
+SPEAKER 1: Unless you
+patch that through.
+
+00:04:06.190 --> 00:04:06.570
+Yeah.
+
+00:04:06.570 --> 00:04:06.990
+OK.
+
+00:04:06.990 --> 00:04:07.960
+SPEAKER 2: It was just horrible.
+
+00:04:07.960 --> 00:04:09.630
+And people were using
+it anyway because there
+
+00:04:09.630 --> 00:04:10.463
+was no other choice.
+
+00:04:10.463 --> 00:04:14.871
+And so it's so good that they
+finally came up with something
+
+00:04:14.871 --> 00:04:15.920
+like this.
+
+00:04:15.920 --> 00:04:16.459
+Yes.
+
+00:04:16.459 --> 00:04:17.630
+SPEAKER 1: It's just
+another thing in the browser
+
+00:04:17.630 --> 00:04:20.000
+that's exposed to developers,
+as it should have always been.
+
+00:04:20.000 --> 00:04:20.930
+SPEAKER 2: Extensible web.
+
+00:04:20.930 --> 00:04:21.500
+It works.
+
+00:04:21.500 --> 00:04:22.890
+[MUSIC PLAYING]
+
+00:04:22.890 --> 00:04:26.270
+[INDISTINCT CHATTER]
+

@@ -1,0 +1,847 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.437
+[MUSIC PLAYING]
+
+00:00:08.891 --> 00:00:10.640
+ADDY OSMANI: Do you
+know what the top four
+
+00:00:10.640 --> 00:00:13.382
+things to look at when it
+comes to web accessibility are?
+
+00:00:13.382 --> 00:00:15.161
+MATT GAUNT: Uh, no.
+
+00:00:15.161 --> 00:00:16.161
+I can only think of two.
+
+00:00:16.161 --> 00:00:18.680
+Like, I only think of
+audio and then visual.
+
+00:00:18.680 --> 00:00:21.400
+ADDY OSMANI: So there's
+visual, hearing, mobility,
+
+00:00:21.400 --> 00:00:22.193
+and cognition.
+
+00:00:22.193 --> 00:00:23.519
+MATT GAUNT: Ah, OK.
+
+00:00:23.519 --> 00:00:24.560
+So what are the last two?
+
+00:00:24.560 --> 00:00:27.120
+ADDY OSMANI: So mobility
+is where someone may not
+
+00:00:27.120 --> 00:00:28.580
+be able to use a
+mouse, or they may
+
+00:00:28.580 --> 00:00:31.002
+need to use a keyboard to
+navigate around all of your UI.
+
+00:00:31.002 --> 00:00:31.835
+MATT GAUNT: OK, yep.
+
+00:00:31.835 --> 00:00:34.570
+ADDY OSMANI: And
+cognition is where,
+
+00:00:34.570 --> 00:00:38.030
+if you show somebody
+flashing text or a site
+
+00:00:38.030 --> 00:00:41.430
+with lots of animation, that
+might cause an epileptic fit
+
+00:00:41.430 --> 00:00:42.600
+or just cause them issues.
+
+00:00:42.600 --> 00:00:43.020
+MATT GAUNT: Yeah.
+
+00:00:43.020 --> 00:00:44.520
+I think I remember
+someone tweeting,
+
+00:00:44.520 --> 00:00:46.120
+saying they had
+a condition where
+
+00:00:46.120 --> 00:00:48.150
+if there was loads of parallax
+scrolling or something goes on,
+
+00:00:48.150 --> 00:00:49.860
+it makes them feel really
+nauseous, because there's tons
+
+00:00:49.860 --> 00:00:51.054
+of weird movements going on.
+
+00:00:51.054 --> 00:00:52.470
+ADDY OSMANI: When
+doesn't parallax
+
+00:00:52.470 --> 00:00:54.928
+scrolling make everyone feel
+nauseous is the real question.
+
+00:00:54.928 --> 00:00:56.140
+MATT GAUNT: That's true.
+
+00:00:56.140 --> 00:00:57.640
+ADDY OSMANI: So
+thankfully, there's
+
+00:00:57.640 --> 00:01:02.410
+a few tools to help with web
+accessibility issue diagnosis.
+
+00:01:02.410 --> 00:01:04.290
+We should go through them.
+
+00:01:04.290 --> 00:01:07.900
+The first is the Chrome
+Accessibility Developer Tools,
+
+00:01:07.900 --> 00:01:10.502
+which is like a Chrome
+extension you can grab.
+
+00:01:10.502 --> 00:01:11.960
+I'm a bit of a
+douche, so I'm going
+
+00:01:11.960 --> 00:01:13.800
+to run it against your site.
+
+00:01:13.800 --> 00:01:15.102
+MATT GAUNT: Mine isn't too bad.
+
+00:01:15.102 --> 00:01:16.060
+It's not great, though.
+
+00:01:16.060 --> 00:01:16.840
+ADDY OSMANI: I guess
+we'll find out.
+
+00:01:16.840 --> 00:01:17.440
+MATT GAUNT: Yes.
+
+00:01:17.440 --> 00:01:19.250
+ADDY OSMANI: So we're going to
+hop into DevTools in the Audits
+
+00:01:19.250 --> 00:01:21.750
+panel, check accessibility,
+and go and run it
+
+00:01:21.750 --> 00:01:23.320
+against this site.
+
+00:01:23.320 --> 00:01:26.110
+You've got a few passing
+tests, and you've
+
+00:01:26.110 --> 00:01:28.190
+got a few tests that
+are not passing.
+
+00:01:28.190 --> 00:01:30.230
+So we're going to look at those.
+
+00:01:30.230 --> 00:01:32.300
+The first one is yellow
+and says the text
+
+00:01:32.300 --> 00:01:34.520
+elements should have
+a reasonable contrast
+
+00:01:34.520 --> 00:01:36.512
+ratio, Matthew.
+
+00:01:36.512 --> 00:01:38.970
+MATT GAUNT: Yeah, I set the
+opacity low on some of the menu
+
+00:01:38.970 --> 00:01:39.890
+items that aren't selected.
+
+00:01:39.890 --> 00:01:42.020
+So I need to bump them up
+or find a different way
+
+00:01:42.020 --> 00:01:42.770
+of visualizing it.
+
+00:01:42.770 --> 00:01:44.686
+ADDY OSMANI: One of the
+nice things about this
+
+00:01:44.686 --> 00:01:46.440
+is if you hover over
+any of the DOMNodes,
+
+00:01:46.440 --> 00:01:48.950
+it will actually
+visualize it over
+
+00:01:48.950 --> 00:01:51.070
+in the Preview pane,
+which is kind of cool.
+
+00:01:51.070 --> 00:01:51.778
+MATT GAUNT: Yeah.
+
+00:01:51.778 --> 00:01:53.270
+So one of the other
+things I found,
+
+00:01:53.270 --> 00:01:56.640
+because I have another issue
+on my site, which is the About
+
+00:01:56.640 --> 00:01:58.530
+menu item doesn't
+actually explain anything
+
+00:01:58.530 --> 00:02:00.600
+about what's going to happen.
+
+00:02:00.600 --> 00:02:03.123
+But if you go into the
+Accessbility options,
+
+00:02:03.123 --> 00:02:04.706
+like in the Elements
+panel, and you've
+
+00:02:04.706 --> 00:02:05.930
+got the styles and
+computer styles,
+
+00:02:05.930 --> 00:02:08.150
+there's an Accessibility
+drop-down that you get.
+
+00:02:08.150 --> 00:02:09.389
+The nice thing with
+this is it actually
+
+00:02:09.389 --> 00:02:10.972
+shows you what the
+screen reader would
+
+00:02:10.972 --> 00:02:13.792
+say based on what it's got.
+
+00:02:13.792 --> 00:02:15.375
+And the main reason
+I like this is, A,
+
+00:02:15.375 --> 00:02:16.885
+it's a nice live representation.
+
+00:02:16.885 --> 00:02:18.260
+It's something
+that's easy for me
+
+00:02:18.260 --> 00:02:21.050
+to go, oh, OK, this is what
+the screen we would say.
+
+00:02:21.050 --> 00:02:22.530
+But it also shows
+you area labels
+
+00:02:22.530 --> 00:02:24.780
+that you could put that would
+affect the screen reader
+
+00:02:24.780 --> 00:02:27.150
+and what it says,
+which I kind of like,
+
+00:02:27.150 --> 00:02:29.380
+because I wouldn't have
+known what the right area
+
+00:02:29.380 --> 00:02:31.042
+labels would have been.
+
+00:02:31.042 --> 00:02:33.250
+So it's just kind of a nice
+way of educating yourself
+
+00:02:33.250 --> 00:02:34.860
+as you're going
+along, figuring out
+
+00:02:34.860 --> 00:02:37.420
+what you can change to
+get better screen reader
+
+00:02:37.420 --> 00:02:38.670
+support or anything like that.
+
+00:02:38.670 --> 00:02:39.420
+ADDY OSMANI: Cool.
+
+00:02:39.420 --> 00:02:40.400
+MATT GAUNT: It's nice.
+
+00:02:40.400 --> 00:02:42.730
+ADDY OSMANI: So the
+thing that powers
+
+00:02:42.730 --> 00:02:44.900
+the accessibility
+developer-produced extension
+
+00:02:44.900 --> 00:02:47.240
+is actually called
+Accessibility Developer Tools.
+
+00:02:47.240 --> 00:02:49.710
+It's like this node module--
+it's not necessarily
+
+00:02:49.710 --> 00:02:51.460
+just a node module,
+but basically, it
+
+00:02:51.460 --> 00:02:53.501
+gives you all of the
+functionality that you might
+
+00:02:53.501 --> 00:02:56.550
+need to go and run
+these tests locally
+
+00:02:56.550 --> 00:02:58.880
+or hook up to
+continuous integration
+
+00:02:58.880 --> 00:03:01.020
+in case you wanted to
+write accessibility tests
+
+00:03:01.020 --> 00:03:02.300
+alongside your unit tests.
+
+00:03:02.300 --> 00:03:03.400
+MATT GAUNT: Is that running
+it through something
+
+00:03:03.400 --> 00:03:04.430
+like PhantomJS?
+
+00:03:04.430 --> 00:03:08.150
+ADDY OSMANI: So I wrote
+a while back a module
+
+00:03:08.150 --> 00:03:14.530
+called A11Y-- A-11-Y. It gives
+you basically a CLI and CI
+
+00:03:14.530 --> 00:03:15.760
+module for doing that.
+
+00:03:15.760 --> 00:03:18.170
+And you can just go and
+run it against Travis and--
+
+00:03:18.170 --> 00:03:18.340
+MATT GAUNT: Nice.
+
+00:03:18.340 --> 00:03:19.756
+ADDY OSMANI: --it'll
+do its thing.
+
+00:03:19.756 --> 00:03:21.060
+MATT GAUNT: Drop in your CI.
+
+00:03:21.060 --> 00:03:22.326
+ADDY OSMANI: Drop it in.
+
+00:03:22.326 --> 00:03:24.085
+Have you heard of Tenon?
+
+00:03:24.085 --> 00:03:24.740
+MATT GAUNT: (WHISPERING)
+Yes, I have.
+
+00:03:24.740 --> 00:03:25.200
+ADDY OSMANI: You have?
+
+00:03:25.200 --> 00:03:25.730
+You have.
+
+00:03:25.730 --> 00:03:27.740
+So Tenon gives you
+this nice web UI
+
+00:03:27.740 --> 00:03:31.540
+for just doing nice, basic
+web accessibility testing.
+
+00:03:31.540 --> 00:03:34.090
+I run it against
+developers.google.com,
+
+00:03:34.090 --> 00:03:38.490
+and we have a ton of missing
+alt attributes, which
+
+00:03:38.490 --> 00:03:40.630
+we could probably fix up.
+
+00:03:40.630 --> 00:03:43.702
+MATT GAUNT: So
+Tenon is super nice.
+
+00:03:43.702 --> 00:03:45.160
+The only criticism
+I have with it--
+
+00:03:45.160 --> 00:03:47.493
+it's great because you don't
+have to do any [INAUDIBLE].
+
+00:03:47.493 --> 00:03:49.731
+It's super easy to get a
+gut check of where you are.
+
+00:03:49.731 --> 00:03:51.730
+But the flip side is when
+I ran my site through,
+
+00:03:51.730 --> 00:03:53.270
+it says there's no
+problems with it,
+
+00:03:53.270 --> 00:03:56.200
+which we both know is now a lie.
+
+00:03:56.200 --> 00:03:57.510
+So it's useful for a gut check.
+
+00:03:57.510 --> 00:04:01.027
+And it's super low effort to
+get it running on your site.
+
+00:04:01.027 --> 00:04:04.050
+But I question it, I guess.
+
+00:04:04.050 --> 00:04:06.740
+ADDY OSMANI: So Tenon runs
+against the Web Content
+
+00:04:06.740 --> 00:04:08.907
+Accessibility Guidelines 2.0.
+
+00:04:08.907 --> 00:04:10.990
+And I think the Accessibility
+Developer Tools just
+
+00:04:10.990 --> 00:04:15.330
+has a good set of general
+accessibility best practices
+
+00:04:15.330 --> 00:04:16.500
+it tries to check against.
+
+00:04:16.500 --> 00:04:19.440
+So they're checking for
+related but not necessarily
+
+00:04:19.440 --> 00:04:21.052
+the exact same set of things.
+
+00:04:21.052 --> 00:04:21.760
+MATT GAUNT: Yeah.
+
+00:04:21.760 --> 00:04:23.635
+ADDY OSMANI: They're
+both worth checking out.
+
+00:04:23.635 --> 00:04:26.420
+MATT GAUNT: So the
+other one is tota11y.
+
+00:04:26.420 --> 00:04:28.040
+ADDY OSMANI: Totally
+Tooling Tips?
+
+00:04:28.040 --> 00:04:28.980
+MATT GAUNT: No.
+
+00:04:28.980 --> 00:04:35.080
+T-O-T-A-1-1-Y. Basically,
+it's got a super awesome logo.
+
+00:04:35.080 --> 00:04:37.690
+But what it is is it's
+basically a bookmarklet.
+
+00:04:37.690 --> 00:04:39.972
+So you can drag it
+to your toolbar.
+
+00:04:39.972 --> 00:04:41.930
+And then when you're in
+your site, click on it,
+
+00:04:41.930 --> 00:04:45.340
+and it adds a little button onto
+the bottom of your web page.
+
+00:04:45.340 --> 00:04:48.044
+And the main reason it's
+nice is just the fact
+
+00:04:48.044 --> 00:04:50.210
+that it breaks up all the
+different criteria of what
+
+00:04:50.210 --> 00:04:52.140
+you could look for in
+terms of accessibility
+
+00:04:52.140 --> 00:04:55.710
+into nice little chunks that
+you just focus on that one area.
+
+00:04:55.710 --> 00:04:57.710
+And then it starts adding
+things into the page.
+
+00:04:57.710 --> 00:05:00.344
+So with the contrast
+links, it will actually
+
+00:05:00.344 --> 00:05:02.510
+hover over the buttons, add
+a little button, saying,
+
+00:05:02.510 --> 00:05:04.889
+this is a problem area.
+
+00:05:04.889 --> 00:05:05.680
+And it's just nice.
+
+00:05:05.680 --> 00:05:07.480
+It's very lightweight,
+it's super simple.
+
+00:05:07.480 --> 00:05:09.280
+And I think the way
+that it breaks stuff up
+
+00:05:09.280 --> 00:05:12.910
+is if you've got a ton of
+stuff wrong with your site,
+
+00:05:12.910 --> 00:05:14.941
+it's at least manageable chunks.
+
+00:05:14.941 --> 00:05:16.080
+So I think it's just nice.
+
+00:05:16.080 --> 00:05:17.080
+It's a nice little tool.
+
+00:05:17.080 --> 00:05:17.960
+ADDY OSMANI: Cool.
+
+00:05:17.960 --> 00:05:21.320
+I've got to give a mention to
+ally.js by Rodney Rehm, which
+
+00:05:21.320 --> 00:05:23.577
+is this little helper
+library that helps you
+
+00:05:23.577 --> 00:05:25.410
+with some of the workflows
+you normally have
+
+00:05:25.410 --> 00:05:26.810
+when you're trying to make
+your app a little bit more
+
+00:05:26.810 --> 00:05:27.720
+accessible.
+
+00:05:27.720 --> 00:05:29.647
+So it makes things like
+trying to figure out
+
+00:05:29.647 --> 00:05:31.730
+what elements are considered
+focusable on the page
+
+00:05:31.730 --> 00:05:34.050
+a little bit easier,
+trapping focus
+
+00:05:34.050 --> 00:05:36.949
+navigation to a particular
+DOM subtree, something that
+
+00:05:36.949 --> 00:05:38.240
+would have helped me, actually.
+
+00:05:38.240 --> 00:05:41.100
+So I was trying to make
+this navigation drawer
+
+00:05:41.100 --> 00:05:42.820
+keyboard-accessible
+the other day.
+
+00:05:42.820 --> 00:05:46.430
+And I wanted to avoid you
+tabbing through the navigation
+
+00:05:46.430 --> 00:05:47.660
+and then going back--
+
+00:05:47.660 --> 00:05:48.910
+MATT GAUNT: Yeah, getting to--
+
+00:05:48.910 --> 00:05:50.230
+ADDY OSMANI: --and it tabbing
+to the parts of the page.
+
+00:05:50.230 --> 00:05:51.420
+So that might have
+helped with that.
+
+00:05:51.420 --> 00:05:54.020
+And it's just really useful for
+querying the DOM for focusable
+
+00:05:54.020 --> 00:05:55.840
+or tabbable elements.
+
+00:05:55.840 --> 00:05:56.460
+Check it out.
+
+00:05:56.460 --> 00:05:57.660
+It's pretty decent.
+
+00:05:57.660 --> 00:06:01.180
+So I have some web
+accessibility pro tips.
+
+00:06:01.180 --> 00:06:01.930
+MATT GAUNT: Go on.
+
+00:06:01.930 --> 00:06:02.840
+ADDY OSMANI: They're
+not really pro tips.
+
+00:06:02.840 --> 00:06:03.510
+I'm incompetent.
+
+00:06:03.510 --> 00:06:04.239
+But they're good.
+
+00:06:04.239 --> 00:06:05.780
+They're good things
+to watch out for.
+
+00:06:05.780 --> 00:06:06.100
+MATT GAUNT: They're
+solid advice.
+
+00:06:06.100 --> 00:06:08.230
+ADDY OSMANI: They're
+solid advice.
+
+00:06:08.230 --> 00:06:09.840
+So the first thing
+to keep an eye on
+
+00:06:09.840 --> 00:06:12.300
+is making sure that the
+components and elements
+
+00:06:12.300 --> 00:06:14.290
+in your page can be
+accessed using a keyboard
+
+00:06:14.290 --> 00:06:16.497
+and navigated around
+using a keyboard.
+
+00:06:16.497 --> 00:06:18.080
+Next, make sure that
+your elements can
+
+00:06:18.080 --> 00:06:19.570
+be used with a screen reader.
+
+00:06:19.570 --> 00:06:23.619
+So for example, if I go to
+your website and I turn on--
+
+00:06:23.619 --> 00:06:24.952
+SPEAKER 1: Welcome to Voiceover.
+
+00:06:24.952 --> 00:06:25.796
+ADDY OSMANI: --voiceover--
+
+00:06:25.796 --> 00:06:27.270
+SPEAKER 1: Voiceover
+speaks descriptions
+
+00:06:27.270 --> 00:06:28.270
+of items on the screen.
+
+00:06:28.270 --> 00:06:29.986
+ADDY OSMANI: It's
+basically what it does.
+
+00:06:29.986 --> 00:06:31.360
+SPEAKER 2: Voiceover
+on Chromium.
+
+00:06:31.360 --> 00:06:34.161
+Unit testing a service worker.
+[INAUDIBLE] vertical line
+
+00:06:34.161 --> 00:06:34.660
+Matt Gaunt.
+
+00:06:34.660 --> 00:06:36.925
+ADDY OSMANI: So it
+does all of that.
+
+00:06:36.925 --> 00:06:38.300
+MATT GAUNT: The
+vertical line one
+
+00:06:38.300 --> 00:06:40.870
+is the interesting one where
+I've somehow added my name
+
+00:06:40.870 --> 00:06:42.730
+to the single vertical line.
+
+00:06:42.730 --> 00:06:44.440
+So there's some issues there.
+
+00:06:44.440 --> 00:06:45.900
+ADDY OSMANI: We've already
+discovered in this episode
+
+00:06:45.900 --> 00:06:47.733
+that you have multiple
+issues with your site
+
+00:06:47.733 --> 00:06:49.132
+probably worth checking out.
+
+00:06:49.132 --> 00:06:50.340
+MATT GAUNT: [LAUGHS]
+
+00:06:50.340 --> 00:06:52.048
+ADDY OSMANI: People
+should also make sure
+
+00:06:52.048 --> 00:06:54.380
+that their apps
+work without sound.
+
+00:06:54.380 --> 00:06:57.760
+So things like games might be
+worth keeping that in mind.
+
+00:06:57.760 --> 00:07:00.260
+MATT GAUNT: Something like Air
+Horn, though, where all it is
+
+00:07:00.260 --> 00:07:01.907
+is a button that makes a horn.
+
+00:07:01.907 --> 00:07:04.323
+ADDY OSMANI: You could probably
+make that accessible, like
+
+00:07:04.323 --> 00:07:06.005
+show a bubble or something.
+
+00:07:06.005 --> 00:07:07.421
+MATT GAUNT: Because
+I didn't know.
+
+00:07:07.421 --> 00:07:10.240
+It was just a text that
+just goes, whooo-on.
+
+00:07:10.240 --> 00:07:12.414
+ADDY OSMANI: [LAUGHS]
+People should
+
+00:07:12.414 --> 00:07:14.080
+make sure their apps
+work without color,
+
+00:07:14.080 --> 00:07:16.110
+because some people are
+colorblind and don't see
+
+00:07:16.110 --> 00:07:17.277
+the full spectrum of colors.
+
+00:07:17.277 --> 00:07:17.943
+MATT GAUNT: Yup.
+
+00:07:17.943 --> 00:07:19.650
+ADDY OSMANI: And
+people should make sure
+
+00:07:19.650 --> 00:07:22.414
+that their web apps work in
+high-contrast mode as well.
+
+00:07:22.414 --> 00:07:24.830
+MATT GAUNT: Which is the problem
+that I've got on my site.
+
+00:07:24.830 --> 00:07:26.530
+ADDY OSMANI: You have
+multiple problems, Matt.
+
+00:07:26.530 --> 00:07:28.696
+These are just some of the
+ones that we can actually
+
+00:07:28.696 --> 00:07:29.600
+address using tools.
+
+00:07:29.600 --> 00:07:30.600
+MATT GAUNT: Thanks, man.
+
+00:07:30.600 --> 00:07:31.430
+ADDY OSMANI: I try.
+
+00:07:31.430 --> 00:07:31.930
+I try.
+
+00:07:31.930 --> 00:07:35.190
+[MUSIC PLAYING]
+

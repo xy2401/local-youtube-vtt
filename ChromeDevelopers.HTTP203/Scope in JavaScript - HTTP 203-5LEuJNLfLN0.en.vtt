@@ -1,0 +1,2153 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:00.690
+SURMA: Oh, look.
+
+00:00:00.690 --> 00:00:01.090
+He's adjusting it.
+
+00:00:01.090 --> 00:00:01.810
+SPEAKER 1: It looks straight.
+
+00:00:01.810 --> 00:00:02.735
+It does from here.
+
+00:00:02.735 --> 00:00:04.110
+JAKE: I mean, it
+doesn't look it.
+
+00:00:04.110 --> 00:00:06.512
+SURMA: It really does
+not look straight.
+
+00:00:06.512 --> 00:00:07.470
+SPEAKER 1: There it is.
+
+00:00:07.470 --> 00:00:08.180
+SPEAKER 2: Yeah.
+
+00:00:08.180 --> 00:00:08.770
+SPEAKER 1: Camera 1.
+
+00:00:08.770 --> 00:00:10.645
+SURMA: Then again,
+apparently, neither do we.
+
+00:00:10.645 --> 00:00:12.330
+BOTH: Hey.
+
+00:00:12.330 --> 00:00:13.770
+[LAUGHTER]
+
+00:00:13.770 --> 00:00:17.130
+[MUSIC PLAYING]
+
+00:00:20.980 --> 00:00:21.580
+JAKE: So.
+
+00:00:21.580 --> 00:00:22.390
+SURMA: So.
+
+00:00:22.390 --> 00:00:26.650
+JAKE: We had a chat in the
+office a couple of weeks ago.
+
+00:00:26.650 --> 00:00:28.245
+I mean, OK, we have
+today, as well.
+
+00:00:28.245 --> 00:00:30.120
+But I'm talking about
+a specific chat we had.
+
+00:00:30.120 --> 00:00:30.620
+SURMA: OK.
+
+00:00:30.620 --> 00:00:36.298
+JAKE: Specifically where we
+were looking at code like this.
+
+00:00:36.298 --> 00:00:36.840
+SURMA: Right.
+
+00:00:36.840 --> 00:00:39.598
+JAKE: So we've got
+your old scripty tag.
+
+00:00:39.598 --> 00:00:40.390
+SURMA: Scripty tag.
+
+00:00:40.390 --> 00:00:40.660
+Always good.
+
+00:00:40.660 --> 00:00:41.410
+JAKE: Scripty tag.
+
+00:00:41.410 --> 00:00:42.826
+Couple of variables in there.
+
+00:00:42.826 --> 00:00:43.923
+SURMA: A var, a const.
+
+00:00:43.923 --> 00:00:44.590
+All right, cool.
+
+00:00:44.590 --> 00:00:46.625
+JAKE: And again--
+but this time--
+
+00:00:46.625 --> 00:00:47.500
+SURMA: It's a module.
+
+00:00:47.500 --> 00:00:49.030
+JAKE: It's a module.
+
+00:00:49.030 --> 00:00:50.710
+And then the question
+we were posing
+
+00:00:50.710 --> 00:00:54.898
+each other is, like, well,
+what can be accessed?
+
+00:00:54.898 --> 00:00:57.190
+SURMA: What is available in
+the third script tag, which
+
+00:00:57.190 --> 00:00:59.102
+in this case is a module tag?
+
+00:00:59.102 --> 00:01:00.160
+JAKE: Well, OK.
+
+00:01:00.160 --> 00:01:02.350
+Now, the only reason
+it's the module tag--
+
+00:01:02.350 --> 00:01:05.022
+right, OK, you're now making
+me go on a tangent already.
+
+00:01:05.022 --> 00:01:06.480
+The only reason
+it's a module tag--
+
+00:01:06.480 --> 00:01:07.448
+SURMA: You're welcome.
+
+00:01:07.448 --> 00:01:09.490
+JAKE: --is because if it
+was a normal script tag,
+
+00:01:09.490 --> 00:01:10.907
+these would not
+run in this order.
+
+00:01:10.907 --> 00:01:12.010
+SURMA: Oh, because--
+
+00:01:12.010 --> 00:01:13.360
+JAKE: Modules are deferred.
+
+00:01:13.360 --> 00:01:14.360
+SURMA: Implicitly.
+
+00:01:14.360 --> 00:01:14.860
+JAKE: Yes.
+
+00:01:14.860 --> 00:01:19.390
+SURMA: So if it was a script
+tag with defer, what is--
+
+00:01:19.390 --> 00:01:20.720
+JAKE: It's ignored.
+
+00:01:20.720 --> 00:01:22.100
+SURMA: Oh, because it's inline.
+
+00:01:22.100 --> 00:01:22.270
+JAKE: Yeah.
+
+00:01:22.270 --> 00:01:24.040
+SURMA: Defer is ignored
+on inline script tag.
+
+00:01:24.040 --> 00:01:24.750
+JAKE: Yes, it is.
+
+00:01:24.750 --> 00:01:25.792
+SURMA: Today you learned.
+
+00:01:25.792 --> 00:01:26.780
+JAKE: There we go.
+
+00:01:26.780 --> 00:01:27.400
+So--
+
+00:01:27.400 --> 00:01:28.280
+SURMA: Good tangent.
+
+00:01:28.280 --> 00:01:28.400
+Continue.
+
+00:01:28.400 --> 00:01:29.350
+JAKE: Now that we've
+got out of the way,
+
+00:01:29.350 --> 00:01:31.100
+yes, the only reason I put
+type module on this is--
+
+00:01:31.100 --> 00:01:31.860
+SURMA: So we have a good order.
+
+00:01:31.860 --> 00:01:33.670
+They actually
+execute in order they
+
+00:01:33.670 --> 00:01:34.977
+appear on the snippet, right?
+
+00:01:34.977 --> 00:01:35.560
+JAKE: Exactly.
+
+00:01:35.560 --> 00:01:36.070
+SURMA: Good.
+
+00:01:36.070 --> 00:01:37.990
+JAKE: So you actually
+did a Twitter poll.
+
+00:01:37.990 --> 00:01:39.010
+SURMA: I did do a Twitter poll.
+
+00:01:39.010 --> 00:01:39.718
+JAKE: Not quite--
+
+00:01:39.718 --> 00:01:42.068
+SURMA: It did not look like
+this exactly, but related.
+
+00:01:42.068 --> 00:01:42.860
+JAKE: Very similar.
+
+00:01:42.860 --> 00:01:44.840
+It had of some of
+the same things.
+
+00:01:44.840 --> 00:01:46.310
+And we thought of--
+
+00:01:46.310 --> 00:01:47.120
+do an episode.
+
+00:01:47.120 --> 00:01:47.620
+SURMA: Yeah.
+
+00:01:47.620 --> 00:01:48.400
+Like I wanted to write a--
+
+00:01:48.400 --> 00:01:48.610
+JAKE: Let's do an episode.
+
+00:01:48.610 --> 00:01:49.550
+SURMA: I wanted to tweet this.
+
+00:01:49.550 --> 00:01:52.180
+So I did a poll 24 hours, went
+to tweet the solution, then--
+
+00:01:52.180 --> 00:01:53.440
+JAKE: And I said no.
+
+00:01:53.440 --> 00:01:54.380
+SURMA: No, you don't.
+
+00:01:54.380 --> 00:01:56.080
+JAKE: That's precious content.
+
+00:01:56.080 --> 00:01:57.700
+Hold onto that content.
+
+00:01:57.700 --> 00:01:58.640
+And I'll take credit--
+
+00:01:58.640 --> 00:01:59.800
+SURMA: Otherwise we have to
+come up with [BLEEP] again.
+
+00:01:59.800 --> 00:02:02.397
+So this time we actually
+have, like, semi-good content.
+
+00:02:02.397 --> 00:02:02.980
+JAKE: Exactly.
+
+00:02:02.980 --> 00:02:03.480
+Exactly.
+
+00:02:03.480 --> 00:02:06.010
+Well-- well, let's--
+let's not say that.
+
+00:02:06.010 --> 00:02:07.390
+SURMA: Let the audience decide.
+
+00:02:07.390 --> 00:02:09.250
+JAKE: Yes, let's let
+the comments decide
+
+00:02:09.250 --> 00:02:10.250
+if this is actually any good.
+
+00:02:10.250 --> 00:02:11.230
+SURMA: Oh, don't let the
+comments decide, mate.
+
+00:02:11.230 --> 00:02:12.520
+JAKE: Oh, OK.
+
+00:02:12.520 --> 00:02:17.623
+So I figured, like, let's
+start by talking about how
+
+00:02:17.623 --> 00:02:18.790
+scoping works in JavaScript.
+
+00:02:18.790 --> 00:02:19.680
+SURMA: Yeah, I
+mean what's that--
+
+00:02:19.680 --> 00:02:20.530
+JAKE: That's really
+what this is all about.
+
+00:02:20.530 --> 00:02:21.100
+SURMA: Exactly.
+
+00:02:21.100 --> 00:02:21.600
+OK.
+
+00:02:21.600 --> 00:02:23.650
+JAKE: But we'll go
+back to the start.
+
+00:02:23.650 --> 00:02:26.940
+So back in olden times,
+ye olde "JavaScript-e"--
+
+00:02:26.940 --> 00:02:28.190
+SURMA: This is like ES3 level.
+
+00:02:28.190 --> 00:02:29.290
+JAKE: ES3 time.
+
+00:02:29.290 --> 00:02:32.350
+The only way you could create
+a variable was with var.
+
+00:02:32.350 --> 00:02:33.200
+SURMA: Yes.
+
+00:02:33.200 --> 00:02:34.690
+Which is good, because
+that's what the "var" stands
+
+00:02:34.690 --> 00:02:35.560
+for-- a "variable."
+
+00:02:35.560 --> 00:02:36.460
+JAKE: It is.
+
+00:02:36.460 --> 00:02:38.560
+But you could also
+create functions.
+
+00:02:38.560 --> 00:02:39.810
+Yeah, that was in ES3 as well.
+
+00:02:39.810 --> 00:02:40.540
+SURMA: Shocking.
+
+00:02:40.540 --> 00:02:41.890
+JAKE: Yeah, we had those.
+
+00:02:41.890 --> 00:02:43.940
+But they behaved in
+very, very similar ways.
+
+00:02:43.940 --> 00:02:47.050
+So a var or a function
+would be scoped
+
+00:02:47.050 --> 00:02:51.200
+to the parent function or the
+global if there wasn't one.
+
+00:02:51.200 --> 00:02:51.820
+SURMA: Right.
+
+00:02:51.820 --> 00:02:52.480
+JAKE: So here we go.
+
+00:02:52.480 --> 00:02:52.780
+One--
+
+00:02:52.780 --> 00:02:53.920
+SURMA: And I think it was
+two boundaries there that
+
+00:02:53.920 --> 00:02:54.700
+existed at the time.
+
+00:02:54.700 --> 00:02:56.710
+Like, you had a function
+or you had the global.
+
+00:02:56.710 --> 00:02:57.490
+JAKE: Hold onto that.
+
+00:02:57.490 --> 00:02:58.120
+SURMA: Oh, boy.
+
+00:02:58.120 --> 00:02:58.480
+Oh, boy.
+
+00:02:58.480 --> 00:02:58.980
+JAKE: OK.
+
+00:02:58.980 --> 00:03:00.340
+OK.
+
+00:03:00.340 --> 00:03:02.500
+So we've got, yes,
+a var one that
+
+00:03:02.500 --> 00:03:05.890
+is on the global;
+two on the global;
+
+00:03:05.890 --> 00:03:09.430
+three-- it's in a function--
+so its scope to the function.
+
+00:03:09.430 --> 00:03:11.220
+And four is also
+scoped within two.
+
+00:03:11.220 --> 00:03:12.270
+So, like, you know.
+
+00:03:12.270 --> 00:03:14.140
+You couldn't call
+four out of here.
+
+00:03:14.140 --> 00:03:15.050
+That wouldn't work.
+
+00:03:15.050 --> 00:03:16.150
+SURMA: Yeah.
+
+00:03:16.150 --> 00:03:18.850
+JAKE: So if you did something
+like this, if you did var five
+
+00:03:18.850 --> 00:03:21.910
+inside an if and a
+function six, they
+
+00:03:21.910 --> 00:03:24.250
+would actually now exist in--
+
+00:03:24.250 --> 00:03:25.000
+SURMA: Within two.
+
+00:03:25.000 --> 00:03:25.596
+JAKE: Within two.
+
+00:03:25.596 --> 00:03:26.980
+So you'd be able log them
+and everything would work.
+
+00:03:26.980 --> 00:03:29.840
+SURMA: Because blocks were
+just not a scoping mechanism.
+
+00:03:29.840 --> 00:03:33.610
+JAKE: So you could naively
+say that the only thing that
+
+00:03:33.610 --> 00:03:37.450
+has a scope in
+JavaScript in this era
+
+00:03:37.450 --> 00:03:39.027
+was a function or the global.
+
+00:03:39.027 --> 00:03:39.610
+SURMA: Mm-hmm.
+
+00:03:39.610 --> 00:03:40.660
+That's what I would have said.
+
+00:03:40.660 --> 00:03:42.310
+JAKE: That is what
+you would have said.
+
+00:03:42.310 --> 00:03:45.575
+There are two cases
+where that was not true,
+
+00:03:45.575 --> 00:03:46.450
+and still isn't true.
+
+00:03:46.450 --> 00:03:46.990
+SURMA: Hm.
+
+00:03:46.990 --> 00:03:47.490
+OK.
+
+00:03:47.490 --> 00:03:48.580
+JAKE: [INAUDIBLE] so.
+
+00:03:48.580 --> 00:03:51.310
+And so I will give you a clue
+that these are not places
+
+00:03:51.310 --> 00:03:55.040
+that you can create
+variables as such.
+
+00:03:55.040 --> 00:03:59.050
+But there are places where an
+identifier has a scope which
+
+00:03:59.050 --> 00:04:01.516
+is smaller than a function.
+
+00:04:01.516 --> 00:04:03.070
+SURMA: Oh, that's oddly--
+
+00:04:03.070 --> 00:04:05.168
+the phrasing was
+so oddly specific.
+
+00:04:05.168 --> 00:04:06.460
+JAKE: Well, I'm trying to help.
+
+00:04:06.460 --> 00:04:07.190
+SURMA: Um.
+
+00:04:07.190 --> 00:04:09.290
+JAKE: And I love, like,
+putting you on the spot.
+
+00:04:09.290 --> 00:04:10.540
+I do this a lot in the videos.
+
+00:04:10.540 --> 00:04:12.665
+And it's stuff that I
+wouldn't get either, this is.
+
+00:04:12.665 --> 00:04:15.460
+SURMA: Technically,
+what about for loops?
+
+00:04:15.460 --> 00:04:15.960
+Go back.
+
+00:04:15.960 --> 00:04:20.790
+If I had the four var i=0,
+is that i available after
+
+00:04:20.790 --> 00:04:21.672
+the for loop?
+
+00:04:21.672 --> 00:04:22.380
+JAKE: Yes, it is.
+
+00:04:22.380 --> 00:04:24.130
+So that would go up
+into the parent scope.
+
+00:04:24.130 --> 00:04:25.865
+And we've done a
+video about let.
+
+00:04:25.865 --> 00:04:27.365
+SURMA: Well, that
+was let and const.
+
+00:04:27.365 --> 00:04:27.865
+JAKE: Right.
+
+00:04:27.865 --> 00:04:29.730
+SURMA: And so I wasn't
+sure if that was also
+
+00:04:29.730 --> 00:04:30.605
+some weirdness that--
+
+00:04:30.605 --> 00:04:32.630
+JAKE: No.
+
+00:04:32.630 --> 00:04:35.475
+SURMA: And I didn't-- hm.
+
+00:04:35.475 --> 00:04:37.600
+JAKE: I thought this was
+going to be a short video,
+
+00:04:37.600 --> 00:04:39.200
+but I think now we should just
+sit here until you get it.
+
+00:04:39.200 --> 00:04:40.408
+SURMA: Until I figure it out.
+
+00:04:40.408 --> 00:04:43.112
+JAKE: Until you name every
+bit of construct in ES3.
+
+00:04:43.112 --> 00:04:44.070
+Should I just tell you?
+
+00:04:44.070 --> 00:04:44.760
+SURMA: Yeah, come on.
+
+00:04:44.760 --> 00:04:45.050
+JAKE: Should I just tell you?
+
+00:04:45.050 --> 00:04:46.758
+Because I wouldn't
+have got this, either.
+
+00:04:46.758 --> 00:04:49.030
+SURMA: Go on, then.
+
+00:04:49.030 --> 00:04:50.770
+JAKE: Catch.
+
+00:04:50.770 --> 00:04:51.280
+The error--
+
+00:04:51.280 --> 00:04:52.500
+SURMA: Oh, so try
+catch was a thing?
+
+00:04:52.500 --> 00:04:53.480
+JAKE: Yes, we had that.
+
+00:04:53.480 --> 00:04:55.180
+We had that in
+olden days, as well.
+
+00:04:55.180 --> 00:04:57.270
+Thank you very much.
+
+00:04:57.270 --> 00:04:59.710
+But this error identifier is
+only available in the catch.
+
+00:04:59.710 --> 00:05:00.502
+SURMA: Interesting.
+
+00:05:00.502 --> 00:05:01.380
+OK.
+
+00:05:01.380 --> 00:05:02.890
+JAKE: And so this
+bit I did know.
+
+00:05:02.890 --> 00:05:08.330
+Or I knew catch had a
+scope associated with it.
+
+00:05:08.330 --> 00:05:10.480
+But actually, because
+I'd heard that,
+
+00:05:10.480 --> 00:05:12.277
+it misled me to
+think that variables
+
+00:05:12.277 --> 00:05:13.360
+would be scoped within it.
+
+00:05:13.360 --> 00:05:13.880
+They're not.
+
+00:05:13.880 --> 00:05:15.088
+[INAUDIBLE] variable in here.
+
+00:05:15.088 --> 00:05:17.920
+SURMA: So then those again would
+bubble up to the outer function
+
+00:05:17.920 --> 00:05:18.715
+or scope while--
+
+00:05:18.715 --> 00:05:19.215
+OK.
+
+00:05:19.215 --> 00:05:21.995
+JAKE: The error stays
+within the catch block.
+
+00:05:21.995 --> 00:05:22.820
+SURMA: OK.
+
+00:05:22.820 --> 00:05:25.390
+JAKE: And the other one,
+which I will forgive you
+
+00:05:25.390 --> 00:05:27.880
+for not knowing, is with.
+
+00:05:27.880 --> 00:05:29.510
+SURMA: Is that still a thing?
+
+00:05:29.510 --> 00:05:30.850
+JAKE: Well, it was in ES3.
+
+00:05:30.850 --> 00:05:31.440
+I think--
+
+00:05:31.440 --> 00:05:31.660
+SURMA: That's what I mean.
+
+00:05:31.660 --> 00:05:32.590
+Is it still a thing?
+
+00:05:32.590 --> 00:05:34.757
+JAKE: I think in strict
+mode, it stops you using it.
+
+00:05:34.757 --> 00:05:36.370
+But don't hold me to that.
+
+00:05:36.370 --> 00:05:37.710
+SURMA: What does with even do?
+
+00:05:37.710 --> 00:05:37.990
+JAKE: Right.
+
+00:05:37.990 --> 00:05:39.250
+What it will do is it will--
+
+00:05:39.250 --> 00:05:42.220
+SURMA: It's just like a
+replacement for scope block?
+
+00:05:42.220 --> 00:05:42.860
+Block scope?
+
+00:05:42.860 --> 00:05:46.270
+JAKE: Well, so it will take
+all of the properties of object
+
+00:05:46.270 --> 00:05:50.350
+and create local variables for
+them inside the with block,
+
+00:05:50.350 --> 00:05:52.420
+but only inside the with block.
+
+00:05:52.420 --> 00:05:55.690
+So it is, I believe-- and
+again, don't hold me to this--
+
+00:05:55.690 --> 00:06:00.730
+I believe it's the only
+thing in JavaScript where
+
+00:06:00.730 --> 00:06:02.620
+the variables that
+can exist within it
+
+00:06:02.620 --> 00:06:05.693
+are not deterministically--
+
+00:06:05.693 --> 00:06:07.360
+you can't figure that
+out at parse time.
+
+00:06:07.360 --> 00:06:09.980
+I guess the other part is eval.
+
+00:06:09.980 --> 00:06:10.580
+SURMA: Fair.
+
+00:06:10.580 --> 00:06:11.120
+But--
+
+00:06:11.120 --> 00:06:12.350
+JAKE: And that's why
+both of these things--
+
+00:06:12.350 --> 00:06:13.767
+like, if you're
+using eval, if you
+
+00:06:13.767 --> 00:06:15.590
+use with, a lot
+of the performance
+
+00:06:15.590 --> 00:06:17.930
+optimizations that engines
+have just go out the window.
+
+00:06:17.930 --> 00:06:18.710
+Because they can't [INAUDIBLE].
+
+00:06:18.710 --> 00:06:20.960
+SURMA: The fact that the
+syntax had to [? gut ?] this,
+
+00:06:20.960 --> 00:06:22.590
+you know, means
+that it's a thing.
+
+00:06:22.590 --> 00:06:23.700
+JAKE: It is a thing, is a thing.
+
+00:06:23.700 --> 00:06:25.917
+So that's the two things
+that have a different scope.
+
+00:06:25.917 --> 00:06:27.290
+SURMA: All right.
+
+00:06:27.290 --> 00:06:29.570
+JAKE: But then, right-- oh, yes.
+
+00:06:29.570 --> 00:06:30.980
+Special behavior.
+
+00:06:30.980 --> 00:06:31.970
+Special magic behavior.
+
+00:06:31.970 --> 00:06:32.740
+SURMA: Oh, boy.
+
+00:06:32.740 --> 00:06:34.562
+Oh, is this the hoisting?
+
+00:06:34.562 --> 00:06:36.020
+JAKE: No, this is
+not the hoisting.
+
+00:06:36.020 --> 00:06:39.622
+The hoisting is-- this was
+going to be a short video.
+
+00:06:39.622 --> 00:06:41.330
+No, I'm not going to
+talk about hoisting.
+
+00:06:41.330 --> 00:06:42.230
+People can search for
+hoisting if they--
+
+00:06:42.230 --> 00:06:43.550
+SURMA: I think we talked
+about hoisting once.
+
+00:06:43.550 --> 00:06:43.970
+JAKE: Fine.
+
+00:06:43.970 --> 00:06:44.220
+Good.
+
+00:06:44.220 --> 00:06:44.860
+We'll just put a--
+
+00:06:44.860 --> 00:06:45.530
+SURMA: It's one of
+my favorite words.
+
+00:06:45.530 --> 00:06:46.880
+BOTH: Hoisting.
+
+00:06:46.880 --> 00:06:48.530
+JAKE: Hoisting sauce.
+
+00:06:48.530 --> 00:06:53.750
+If you have a global variable
+with var or function,
+
+00:06:53.750 --> 00:06:56.360
+it does a magic thing
+in that it will also--
+
+00:06:56.360 --> 00:06:59.058
+well, it will put it
+on the global object.
+
+00:06:59.058 --> 00:07:00.100
+SURMA: How is that magic?
+
+00:07:00.100 --> 00:07:02.750
+I thought that's the thing
+that is the global, right?
+
+00:07:02.750 --> 00:07:04.210
+JAKE: Well, you say that.
+
+00:07:04.210 --> 00:07:06.340
+But that's only because
+you're used to it, right?
+
+00:07:06.340 --> 00:07:07.030
+It's actually weird.
+
+00:07:07.030 --> 00:07:07.500
+Come on.
+
+00:07:07.500 --> 00:07:08.020
+SURMA: It is weird.
+
+00:07:08.020 --> 00:07:08.420
+JAKE: It's weird.
+
+00:07:08.420 --> 00:07:10.503
+SURMA: But I thought that's
+just the whole premise
+
+00:07:10.503 --> 00:07:13.270
+of JavaScript, that your
+global scope is also
+
+00:07:13.270 --> 00:07:15.280
+tied to a specific identifier.
+
+00:07:15.280 --> 00:07:17.380
+But maybe that's just me
+coming into JavaScript
+
+00:07:17.380 --> 00:07:20.005
+too late, where all these things
+have already been figured out?
+
+00:07:20.005 --> 00:07:21.940
+JAKE: Well, hold onto that.
+
+00:07:21.940 --> 00:07:24.100
+I would say just
+as an aside, yeah,
+
+00:07:24.100 --> 00:07:26.260
+so self is referring
+to the global object.
+
+00:07:26.260 --> 00:07:28.120
+That's what it is
+in the browser.
+
+00:07:28.120 --> 00:07:29.740
+You also have window.
+
+00:07:29.740 --> 00:07:32.022
+That's only in windows.
+
+00:07:32.022 --> 00:07:33.980
+SURMA: But you're currently
+talking ES3, right?
+
+00:07:33.980 --> 00:07:35.740
+Because this is
+already different.
+
+00:07:35.740 --> 00:07:38.870
+JAKE: Oh, no, your global
+object is self today.
+
+00:07:38.870 --> 00:07:41.870
+Your global object is window
+if you're in a document.
+
+00:07:41.870 --> 00:07:44.330
+Global is the global in Node.
+
+00:07:44.330 --> 00:07:45.860
+And the new bit is
+globalThis, which
+
+00:07:45.860 --> 00:07:48.050
+is trying to standardize
+across all of those.
+
+00:07:48.050 --> 00:07:49.460
+Because it turns out
+we couldn't standardize
+
+00:07:49.460 --> 00:07:50.780
+on any one of these,
+because people
+
+00:07:50.780 --> 00:07:51.980
+use it to detect the
+environment they're running in.
+
+00:07:51.980 --> 00:07:53.813
+SURMA: I thought there
+was a case where self
+
+00:07:53.813 --> 00:07:56.443
+and window might not be equal.
+
+00:07:56.443 --> 00:07:57.110
+Maybe I'm wrong.
+
+00:07:57.110 --> 00:07:57.490
+That's not.
+
+00:07:57.490 --> 00:07:57.990
+That's not.
+
+00:07:57.990 --> 00:07:58.540
+That's not.
+
+00:07:58.540 --> 00:07:58.700
+JAKE: No.
+
+00:07:58.700 --> 00:07:59.150
+SURMA: That's not.
+
+00:07:59.150 --> 00:08:00.730
+JAKE: I definitely don't
+know off the top of my head.
+
+00:08:00.730 --> 00:08:01.230
+SURMA: OK.
+
+00:08:01.230 --> 00:08:02.270
+JAKE: So yeah.
+
+00:08:02.270 --> 00:08:04.460
+So this is the magic case.
+
+00:08:04.460 --> 00:08:07.750
+It's weird and magic that stuff
+in the global goes onto the--
+
+00:08:07.750 --> 00:08:09.330
+SURMA: Is self still window--
+
+00:08:09.330 --> 00:08:09.830
+JAKE: Yes.
+
+00:08:09.830 --> 00:08:11.690
+SURMA: In module script tags?
+
+00:08:11.690 --> 00:08:12.260
+JAKE: Yes.
+
+00:08:12.260 --> 00:08:13.155
+SURMA: OK.
+
+00:08:13.155 --> 00:08:13.780
+Then I'm wrong.
+
+00:08:13.780 --> 00:08:14.812
+JAKE: That much I know.
+
+00:08:14.812 --> 00:08:18.920
+So we've got some new stuff.
+
+00:08:18.920 --> 00:08:19.920
+SURMA: We got new stuff.
+
+00:08:19.920 --> 00:08:21.378
+JAKE: New JavaScript
+stuff arrived.
+
+00:08:21.378 --> 00:08:24.990
+Along with var, we got some
+new ones, const and let.
+
+00:08:24.990 --> 00:08:27.000
+Which we talked about
+in the show before.
+
+00:08:27.000 --> 00:08:30.800
+And these have more sensible
+scoping, shall would say.
+
+00:08:30.800 --> 00:08:34.405
+SURMA: More-- yeah,
+less unorthodox.
+
+00:08:34.405 --> 00:08:36.030
+JAKE: Specifically
+block level scoping.
+
+00:08:36.030 --> 00:08:37.940
+So inside this if, as
+we've already seen,
+
+00:08:37.940 --> 00:08:40.070
+one is going to be thrown
+into the parent scope,
+
+00:08:40.070 --> 00:08:42.260
+be it a function or a global.
+
+00:08:42.260 --> 00:08:45.107
+Whereas two will only
+exist inside the if block.
+
+00:08:45.107 --> 00:08:46.190
+SURMA: The if [? scope. ?]
+
+00:08:46.190 --> 00:08:47.640
+JAKE: And same with three.
+
+00:08:47.640 --> 00:08:52.808
+And that's true
+for while, for do--
+
+00:08:52.808 --> 00:08:54.600
+SURMA: Pretty much any
+curly braces, right?
+
+00:08:54.600 --> 00:08:56.010
+JAKE: In fact, you can do that.
+
+00:08:56.010 --> 00:08:56.510
+SURMA: Ah.
+
+00:08:56.510 --> 00:08:57.540
+See, there you go.
+
+00:08:57.540 --> 00:08:57.980
+JAKE: And there you go.
+
+00:08:57.980 --> 00:08:58.520
+And it works.
+
+00:08:58.520 --> 00:09:00.228
+So that's kind of how
+you think about it.
+
+00:09:00.228 --> 00:09:02.510
+If it's got the curly
+braces, two and three
+
+00:09:02.510 --> 00:09:04.940
+are going to do the
+right thing inside there.
+
+00:09:04.940 --> 00:09:10.370
+So I was playing around, and
+it suddenly occurred to me--
+
+00:09:10.370 --> 00:09:10.975
+SURMA: Yeah.
+
+00:09:10.975 --> 00:09:12.350
+JAKE: What's going
+to happen now?
+
+00:09:12.350 --> 00:09:14.060
+SURMA: This should not throw.
+
+00:09:14.060 --> 00:09:15.320
+I think this will work.
+
+00:09:15.320 --> 00:09:16.820
+JAKE: What do you
+think will happen?
+
+00:09:16.820 --> 00:09:19.070
+SURMA: Because the
+var one will bubble up
+
+00:09:19.070 --> 00:09:21.630
+to the containing
+scope, which might
+
+00:09:21.630 --> 00:09:23.130
+be the function of
+the global scope.
+
+00:09:23.130 --> 00:09:24.685
+And then const one
+will shadow that,
+
+00:09:24.685 --> 00:09:26.350
+because shadowing
+is a thing anyway.
+
+00:09:26.350 --> 00:09:27.130
+JAKE: Yeah.
+
+00:09:27.130 --> 00:09:27.790
+No.
+
+00:09:27.790 --> 00:09:28.290
+SURMA: Oh.
+
+00:09:28.290 --> 00:09:30.090
+JAKE: That is not what happens.
+
+00:09:30.090 --> 00:09:33.440
+And genuinely, when I thought
+about this, I didn't know.
+
+00:09:33.440 --> 00:09:34.840
+And I agree with you.
+
+00:09:34.840 --> 00:09:38.010
+Like runtime, this
+could be a thing.
+
+00:09:38.010 --> 00:09:40.710
+But this fails at parse time.
+
+00:09:40.710 --> 00:09:44.358
+It sees two identifiers being
+declared within the same scope,
+
+00:09:44.358 --> 00:09:46.650
+even though var will do
+something slightly differently.
+
+00:09:46.650 --> 00:09:47.280
+SURMA: All right.
+
+00:09:47.280 --> 00:09:47.790
+JAKE: And it will--
+
+00:09:47.790 --> 00:09:48.850
+SURMA: So it will
+actually throw.
+
+00:09:48.850 --> 00:09:49.590
+JAKE: Yes.
+
+00:09:49.590 --> 00:09:50.382
+SURMA: Interesting.
+
+00:09:50.382 --> 00:09:53.740
+JAKE: And I guess it
+might be down to--
+
+00:09:53.740 --> 00:09:57.930
+like, if you have
+const one in a block,
+
+00:09:57.930 --> 00:10:02.928
+you cannot previous to that
+refer to one in a parent scope.
+
+00:10:02.928 --> 00:10:04.970
+It will tell you, you are
+trying to use the thing
+
+00:10:04.970 --> 00:10:06.620
+before it is declared.
+
+00:10:06.620 --> 00:10:08.330
+So I think that's
+where this comes from.
+
+00:10:08.330 --> 00:10:10.665
+SURMA: I see but if I move the
+var outside the curly braces,
+
+00:10:10.665 --> 00:10:10.890
+then--
+
+00:10:10.890 --> 00:10:11.310
+JAKE: It's fine.
+
+00:10:11.310 --> 00:10:11.950
+SURMA: That's fine, right?
+
+00:10:11.950 --> 00:10:12.290
+JAKE: [INAUDIBLE].
+
+00:10:12.290 --> 00:10:12.680
+SURMA: Interesting.
+
+00:10:12.680 --> 00:10:13.200
+OK.
+
+00:10:13.200 --> 00:10:13.700
+JAKE: Yeah.
+
+00:10:13.700 --> 00:10:14.860
+So there we go.
+
+00:10:14.860 --> 00:10:16.610
+That was a pointless
+piece of information.
+
+00:10:16.610 --> 00:10:18.318
+But it's something I
+learned while making
+
+00:10:18.318 --> 00:10:21.090
+the slides for this.
+
+00:10:21.090 --> 00:10:23.390
+So I guess, the first
+part of the question
+
+00:10:23.390 --> 00:10:26.190
+really is, we've kind
+of seen these vars,
+
+00:10:26.190 --> 00:10:27.850
+we've seen these consts things.
+
+00:10:27.850 --> 00:10:32.320
+But across two script
+tags, how does they work?
+
+00:10:32.320 --> 00:10:32.820
+SURMA: Yeah.
+
+00:10:32.820 --> 00:10:33.320
+How does it?
+
+00:10:33.320 --> 00:10:36.000
+JAKE: How does they work?
+
+00:10:36.000 --> 00:10:37.900
+One goes on to the
+global, as we've seen.
+
+00:10:37.900 --> 00:10:38.400
+SURMA: Yeah.
+
+00:10:38.400 --> 00:10:40.625
+I mean, we're pretty sure
+about one at this point.
+
+00:10:40.625 --> 00:10:41.250
+JAKE: It works.
+
+00:10:41.250 --> 00:10:44.278
+SURMA: Two, it's already
+slightly a bit more
+
+00:10:44.278 --> 00:10:44.820
+questionable.
+
+00:10:44.820 --> 00:10:45.360
+JAKE: Yes.
+
+00:10:45.360 --> 00:10:46.650
+So you could also do self.one.
+
+00:10:46.650 --> 00:10:47.250
+Fair enough.
+
+00:10:47.250 --> 00:10:49.808
+And yes, the
+questionable one is two.
+
+00:10:49.808 --> 00:10:51.600
+That was a good sentence
+to say, wasn't it?
+
+00:10:51.600 --> 00:10:53.520
+The questionable one is two.
+
+00:10:53.520 --> 00:10:56.265
+Questionable-- the one that
+is questionable is two.
+
+00:10:56.265 --> 00:10:57.890
+No, there's no good
+way of saying that.
+
+00:10:57.890 --> 00:10:58.240
+SURMA: No.
+
+00:10:58.240 --> 00:10:58.670
+JAKE: Do you know what?
+
+00:10:58.670 --> 00:11:01.030
+I went back and forth on
+the variable naming here,
+
+00:11:01.030 --> 00:11:04.200
+between just doing a, b, c,
+and d, or 1, 2, 3, and 4.
+
+00:11:04.200 --> 00:11:06.000
+And I felt like I'd
+done the right thing.
+
+00:11:06.000 --> 00:11:06.900
+Now I realize--
+
+00:11:06.900 --> 00:11:07.170
+SURMA: You didn't.
+
+00:11:07.170 --> 00:11:07.910
+JAKE: I did not.
+
+00:11:07.910 --> 00:11:08.130
+OK.
+
+00:11:08.130 --> 00:11:08.880
+It's very confusing.
+
+00:11:08.880 --> 00:11:10.590
+SURMA: Well, it's better
+than foo, bar, baz.
+
+00:11:10.590 --> 00:11:12.799
+JAKE: So that's what I'd
+started with, and I ran out.
+
+00:11:12.799 --> 00:11:15.803
+I went, foo, bar, yo, biz, baz--
+
+00:11:15.803 --> 00:11:17.970
+SURMA: I mean, there's
+[INAUDIBLE] and [INAUDIBLE]..
+
+00:11:17.970 --> 00:11:18.550
+JAKE: I don't remember.
+
+00:11:18.550 --> 00:11:19.440
+I don't remember after that.
+
+00:11:19.440 --> 00:11:21.273
+SURMA: That's an
+especially useless tangent.
+
+00:11:21.273 --> 00:11:22.950
+JAKE: So two.
+
+00:11:22.950 --> 00:11:24.450
+SURMA: The thing
+is, I did the quiz.
+
+00:11:24.450 --> 00:11:25.492
+I looked at the solution.
+
+00:11:25.492 --> 00:11:26.490
+I don't remember.
+
+00:11:26.490 --> 00:11:27.300
+JAKE: Really?
+
+00:11:27.300 --> 00:11:27.930
+Great.
+
+00:11:27.930 --> 00:11:28.830
+Excellent.
+
+00:11:28.830 --> 00:11:32.340
+So when you do const
+two at the top level,
+
+00:11:32.340 --> 00:11:35.513
+like var it goes on
+the global scope.
+
+00:11:35.513 --> 00:11:36.680
+It goes in the global scope.
+
+00:11:36.680 --> 00:11:37.060
+SURMA: OK.
+
+00:11:37.060 --> 00:11:37.350
+Cool.
+
+00:11:37.350 --> 00:11:38.880
+JAKE: So this works,
+because the two
+
+00:11:38.880 --> 00:11:41.040
+scripts share a global scope.
+
+00:11:41.040 --> 00:11:41.550
+Job done.
+
+00:11:41.550 --> 00:11:43.925
+SURMA: So contrary to what I
+think most people on Twitter
+
+00:11:43.925 --> 00:11:46.920
+believed, a script tag is
+not equivalent with, like,
+
+00:11:46.920 --> 00:11:47.580
+curly braces.
+
+00:11:47.580 --> 00:11:49.020
+It's not a scope.
+
+00:11:49.020 --> 00:11:49.820
+JAKE: Exactly.
+
+00:11:49.820 --> 00:11:50.970
+Correct.
+
+00:11:50.970 --> 00:11:54.570
+But this is where
+things get different.
+
+00:11:54.570 --> 00:11:55.170
+SURMA: Right.
+
+00:11:55.170 --> 00:11:56.320
+Yes, I remember now.
+
+00:11:56.320 --> 00:12:00.370
+JAKE: And so, yes.
+
+00:12:00.370 --> 00:12:02.530
+Two does go on the global.
+
+00:12:02.530 --> 00:12:04.930
+In terms of ECMAScript,
+it is a global.
+
+00:12:04.930 --> 00:12:06.910
+But what it doesn't
+do is it doesn't
+
+00:12:06.910 --> 00:12:10.360
+do the weird hooking it into
+the global object sort of thing.
+
+00:12:10.360 --> 00:12:13.000
+SURMA: Because technically
+the global object
+
+00:12:13.000 --> 00:12:16.990
+is under the actual
+global context.
+
+00:12:16.990 --> 00:12:17.590
+It seems like.
+
+00:12:17.590 --> 00:12:20.200
+That's how I understood
+Yang, one of our V8 engineers
+
+00:12:20.200 --> 00:12:22.310
+who wrote an explanation.
+
+00:12:22.310 --> 00:12:22.810
+JAKE: Yes.
+
+00:12:22.810 --> 00:12:26.410
+Yes and sort of.
+
+00:12:26.410 --> 00:12:29.470
+In some ways, the global
+that one and two exist on
+
+00:12:29.470 --> 00:12:31.140
+are not the same.
+
+00:12:31.140 --> 00:12:33.450
+In some ways they are,
+in some ways they aren't.
+
+00:12:33.450 --> 00:12:34.950
+Because same again,
+like, if you did
+
+00:12:34.950 --> 00:12:38.975
+var one equals true and
+const one equals true,
+
+00:12:38.975 --> 00:12:41.350
+you could think, if they're
+sitting at a different level,
+
+00:12:41.350 --> 00:12:42.267
+it should all be fine.
+
+00:12:42.267 --> 00:12:43.140
+But it's not.
+
+00:12:43.140 --> 00:12:44.610
+It will stop you
+from doing that.
+
+00:12:44.610 --> 00:12:44.800
+SURMA: So they're both on the--
+
+00:12:44.800 --> 00:12:45.842
+JAKE: So it's one global.
+
+00:12:45.842 --> 00:12:46.490
+SURMA: Right.
+
+00:12:46.490 --> 00:12:46.950
+JAKE: Except one--
+
+00:12:46.950 --> 00:12:48.930
+SURMA: So I guess, then,
+that actually is magic
+
+00:12:48.930 --> 00:12:51.540
+like you said, that the one
+gets additionally patched
+
+00:12:51.540 --> 00:12:54.210
+into the global object,
+which is something
+
+00:12:54.210 --> 00:12:55.900
+else from the global context.
+
+00:12:55.900 --> 00:12:56.400
+JAKE: Yes.
+
+00:12:56.400 --> 00:13:00.240
+There's this kind of objects
+record thing in ECMAScript,
+
+00:13:00.240 --> 00:13:01.330
+and that's how it works.
+
+00:13:01.330 --> 00:13:01.830
+So yes.
+
+00:13:01.830 --> 00:13:03.000
+So there we go.
+
+00:13:03.000 --> 00:13:05.760
+One works self.one works.
+
+00:13:05.760 --> 00:13:07.373
+Two works. self.two
+will be undefined.
+
+00:13:07.373 --> 00:13:08.540
+SURMA: It will be undefined.
+
+00:13:08.540 --> 00:13:10.350
+JAKE: So there we go.
+
+00:13:10.350 --> 00:13:13.770
+But-- dun-dun-dun-dun--
+what happens here?
+
+00:13:13.770 --> 00:13:14.860
+What changes?
+
+00:13:14.860 --> 00:13:20.490
+SURMA: Well, I did know that
+module scripts don't bubble up
+
+00:13:20.490 --> 00:13:21.840
+to the global.
+
+00:13:21.840 --> 00:13:24.030
+JAKE: You're sort of right.
+
+00:13:24.030 --> 00:13:26.748
+If you create-- imagine that
+they're wrapped in a function.
+
+00:13:26.748 --> 00:13:27.290
+SURMA: Right.
+
+00:13:27.290 --> 00:13:27.840
+JAKE: So if you--
+
+00:13:27.840 --> 00:13:30.257
+SURMA: So if you just have a
+free floating var in a script
+
+00:13:30.257 --> 00:13:33.600
+module tag, that will not
+end up on the global context
+
+00:13:33.600 --> 00:13:34.500
+or the global object.
+
+00:13:34.500 --> 00:13:35.083
+JAKE: Correct.
+
+00:13:35.083 --> 00:13:36.745
+So you still have
+access to the global.
+
+00:13:36.745 --> 00:13:38.860
+Like, you could still access
+document and blah-blah-blah.
+
+00:13:38.860 --> 00:13:41.110
+SURMA: But if you want to
+put something on the global,
+
+00:13:41.110 --> 00:13:43.152
+you have to do it manually
+and explicitly, right?
+
+00:13:43.152 --> 00:13:43.860
+JAKE: Absolutely.
+
+00:13:43.860 --> 00:13:44.402
+SURMA: Right.
+
+00:13:44.402 --> 00:13:45.640
+JAKE: That is true.
+
+00:13:45.640 --> 00:13:48.225
+So that, I guess, takes us to--
+
+00:13:48.225 --> 00:13:48.850
+SURMA: To this.
+
+00:13:48.850 --> 00:13:49.900
+JAKE: The "quest-eon" from--
+
+00:13:49.900 --> 00:13:50.700
+SURMA: The "quest-eon"?
+
+00:13:50.700 --> 00:13:51.470
+JAKE: The "quest-eon" from--
+
+00:13:51.470 --> 00:13:52.120
+I had to teach you.
+
+00:13:52.120 --> 00:13:53.287
+You used to say "quest-eon."
+
+00:13:53.287 --> 00:13:54.262
+It used to wind me up.
+
+00:13:54.262 --> 00:13:55.970
+SURMA: I mean, it's
+just wrong, isn't it?
+
+00:13:55.970 --> 00:13:57.095
+JAKE: And do you know what?
+
+00:13:57.095 --> 00:13:58.700
+As a teacher, you
+say that word a lot.
+
+00:13:58.700 --> 00:13:58.990
+SURMA: Yeah.
+
+00:13:58.990 --> 00:14:00.280
+JAKE: And so it was
+really frustrating.
+
+00:14:00.280 --> 00:14:01.100
+This question.
+
+00:14:01.100 --> 00:14:01.808
+SURMA: All right.
+
+00:14:01.808 --> 00:14:05.230
+So we know now that
+one and two will be--
+
+00:14:05.230 --> 00:14:07.230
+that will-- oh.
+
+00:14:07.230 --> 00:14:07.990
+No.
+
+00:14:07.990 --> 00:14:10.180
+They're not-- they know that--
+
+00:14:10.180 --> 00:14:10.680
+JAKE: Ah.
+
+00:14:10.680 --> 00:14:12.200
+No, let's do the
+rest of the episode
+
+00:14:12.200 --> 00:14:13.860
+without actually
+saying proper words.
+
+00:14:13.860 --> 00:14:14.546
+That's nice.
+
+00:14:14.546 --> 00:14:15.340
+Ha.
+
+00:14:15.340 --> 00:14:15.410
+Hm.
+
+00:14:15.410 --> 00:14:16.118
+SURMA: All right.
+
+00:14:16.118 --> 00:14:21.980
+So one and two are on
+the global context.
+
+00:14:21.980 --> 00:14:23.090
+JAKE: The global context.
+
+00:14:23.090 --> 00:14:23.840
+So--
+
+00:14:23.840 --> 00:14:26.390
+SURMA: But now these,
+the look ups also
+
+00:14:26.390 --> 00:14:27.640
+happen on the global context.
+
+00:14:27.640 --> 00:14:28.195
+So this will work.
+
+00:14:28.195 --> 00:14:28.737
+One and two--
+
+00:14:28.737 --> 00:14:29.513
+JAKE: One works.
+
+00:14:29.513 --> 00:14:30.430
+SURMA: Self.one works.
+
+00:14:30.430 --> 00:14:31.590
+JAKE: Self.one works.
+
+00:14:31.590 --> 00:14:33.120
+SURMA: Two works.
+
+00:14:33.120 --> 00:14:34.710
+Self.two will be undefined.
+
+00:14:34.710 --> 00:14:37.670
+JAKE: Self.two will be undefined
+for the reasons we did before.
+
+00:14:37.670 --> 00:14:39.740
+Because even though
+it's in a script module,
+
+00:14:39.740 --> 00:14:43.340
+it accesses it in the usual way.
+
+00:14:43.340 --> 00:14:44.720
+SURMA: That will throw.
+
+00:14:44.720 --> 00:14:47.530
+JAKE: That will
+absolutely throw.
+
+00:14:47.530 --> 00:14:48.210
+SURMA: Yes.
+
+00:14:48.210 --> 00:14:50.150
+JAKE: I paused to remember.
+
+00:14:50.150 --> 00:14:50.650
+Yes.
+
+00:14:50.650 --> 00:14:53.360
+Because we treat module as if
+it's wrapped in a function.
+
+00:14:53.360 --> 00:14:54.950
+It's got its own
+kind of the scope.
+
+00:14:54.950 --> 00:14:57.370
+SURMA: So this will actually
+be an undeclared variable.
+
+00:14:57.370 --> 00:14:58.060
+JAKE: Undeclared variable.
+
+00:14:58.060 --> 00:15:00.385
+SURMA: While self.three
+would be still undefined--
+
+00:15:00.385 --> 00:15:01.300
+JAKE: Would still be undefined.
+
+00:15:01.300 --> 00:15:02.633
+SURMA: Because that's different.
+
+00:15:02.633 --> 00:15:03.460
+That doesn't throw.
+
+00:15:03.460 --> 00:15:05.300
+Looking up--
+
+00:15:05.300 --> 00:15:06.860
+JAKE: A property is fine.
+
+00:15:06.860 --> 00:15:07.360
+SURMA: Yeah.
+
+00:15:07.360 --> 00:15:08.110
+JAKE: So it would be undefined.
+
+00:15:08.110 --> 00:15:09.490
+Yeah, it wouldn't throw.
+
+00:15:09.490 --> 00:15:10.570
+SURMA: Four, same.
+
+00:15:10.570 --> 00:15:11.650
+JAKE: Would also throw.
+
+00:15:11.650 --> 00:15:11.790
+SURMA: Yeah.
+
+00:15:11.790 --> 00:15:12.670
+JAKE: And that is it.
+
+00:15:12.670 --> 00:15:14.380
+That is how scopes
+work in JavaScript.
+
+00:15:14.380 --> 00:15:15.400
+SURMA: I mean, you
+say is like, there,
+
+00:15:15.400 --> 00:15:17.080
+now you understood
+all the patterns.
+
+00:15:17.080 --> 00:15:19.375
+Like, if you rely on--
+
+00:15:19.375 --> 00:15:23.490
+[INAUDIBLE] if you rely on
+variables being passed in
+
+00:15:23.490 --> 00:15:29.073
+between script tags implicitly,
+probably a bad pattern.
+
+00:15:29.073 --> 00:15:30.990
+JAKE: Well, there are
+cases you would do this.
+
+00:15:30.990 --> 00:15:36.388
+Because if you're doing
+a server render thing,
+
+00:15:36.388 --> 00:15:38.430
+but you also want to dump
+the initial set of data
+
+00:15:38.430 --> 00:15:39.960
+into a script tag,
+that is somewhere
+
+00:15:39.960 --> 00:15:40.905
+where you will want to do--
+
+00:15:40.905 --> 00:15:42.750
+SURMA: But I'm saying that,
+if you want to do that,
+
+00:15:42.750 --> 00:15:43.560
+make it explicit.
+
+00:15:43.560 --> 00:15:45.163
+Write "self.blah-blah-blah
+equals."
+
+00:15:45.163 --> 00:15:46.080
+JAKE: Oh, interesting.
+
+00:15:46.080 --> 00:15:46.610
+Yeah, OK.
+
+00:15:46.610 --> 00:15:46.800
+You're right.
+
+00:15:46.800 --> 00:15:48.883
+SURMA: Because don't rely
+on these implicit rules.
+
+00:15:48.883 --> 00:15:52.200
+Because then everybody will
+look at this and have to think,
+
+00:15:52.200 --> 00:15:53.700
+oh, I don't remember
+how the details
+
+00:15:53.700 --> 00:15:56.833
+were of these global
+context scoping rules.
+
+00:15:56.833 --> 00:15:58.250
+JAKE: I would
+actually agree that.
+
+00:15:58.250 --> 00:16:00.000
+I think the whole thing about--
+
+00:16:00.000 --> 00:16:03.270
+well, there's a reason why
+const two doesn't end up
+
+00:16:03.270 --> 00:16:04.350
+on the global object.
+
+00:16:04.350 --> 00:16:05.650
+Because it's weird, right?
+
+00:16:05.650 --> 00:16:08.520
+SURMA: And also, we kind of want
+to stop the, putting everything
+
+00:16:08.520 --> 00:16:09.930
+on the global object, right?
+
+00:16:09.930 --> 00:16:12.190
+Because it's been kind of
+polluted over time anyway.
+
+00:16:12.190 --> 00:16:12.690
+JAKE: Yes.
+
+00:16:12.690 --> 00:16:16.285
+SURMA: So let's only make that
+happen when it's a conscious
+
+00:16:16.285 --> 00:16:18.660
+choice by the developer, to
+actually write down "self dot
+
+00:16:18.660 --> 00:16:19.890
+[POP] equals"--
+
+00:16:19.890 --> 00:16:21.200
+then fine.
+
+00:16:21.200 --> 00:16:24.330
+JAKE: And we do see that with
+future JavaScript, as well--
+
+00:16:24.330 --> 00:16:26.970
+things like async functions,
+generators, all of that.
+
+00:16:26.970 --> 00:16:27.720
+They're functions.
+
+00:16:27.720 --> 00:16:29.095
+They still behave
+like functions.
+
+00:16:29.095 --> 00:16:31.055
+But class behaves
+more like const
+
+00:16:31.055 --> 00:16:34.850
+and let in that it will be,
+like, block scoped, and not
+
+00:16:34.850 --> 00:16:36.100
+do the global thing as well.
+
+00:16:36.100 --> 00:16:37.350
+SURMA: Oh, I didn't know that.
+
+00:16:37.350 --> 00:16:38.505
+Interesting.
+
+00:16:38.505 --> 00:16:40.380
+JAKE: It's something I
+looked up on the train
+
+00:16:40.380 --> 00:16:42.338
+this morning, thinking,
+someone might ask that.
+
+00:16:42.338 --> 00:16:43.607
+So I'd better know my stuff.
+
+00:16:43.607 --> 00:16:44.440
+You didn't ask that.
+
+00:16:44.440 --> 00:16:46.590
+So I just thought I'd
+crowbar that little fact
+
+00:16:46.590 --> 00:16:48.058
+so I'd feel, like, fulfilled.
+
+00:16:48.058 --> 00:16:48.600
+SURMA: Right.
+
+00:16:48.600 --> 00:16:50.340
+Did you use all of your
+knowledge you looked up now?
+
+00:16:50.340 --> 00:16:51.780
+Is there something else
+you want to sprinkle in?
+
+00:16:51.780 --> 00:16:53.322
+JAKE: That is all
+the knowledge I had
+
+00:16:53.322 --> 00:16:54.750
+to give you in this episode.
+
+00:16:54.750 --> 00:16:55.540
+Done.
+
+00:16:55.540 --> 00:16:58.150
+SURMA: Thank you very much
+for this insightful report.
+
+00:16:58.150 --> 00:17:00.540
+Kind of getting used to wearing
+my glasses for the shoot.
+
+00:17:00.540 --> 00:17:01.998
+And now I'm wondering
+at what point
+
+00:17:01.998 --> 00:17:04.894
+I can confidently pull off the
+[? Russell ?] and go like--
+
+00:17:04.894 --> 00:17:05.740
+JAKE: Yeah, that.
+
+00:17:05.740 --> 00:17:08.345
+Well, that's what I've
+noticed, actually, with--
+
+00:17:08.345 --> 00:17:09.720
+because I wear
+glasses, you know.
+
+00:17:09.720 --> 00:17:11.020
+SURMA: You have the [CLICKING]
+
+00:17:11.020 --> 00:17:11.660
+JAKE: I've got the two things.
+
+00:17:11.660 --> 00:17:12.540
+SURMA: The stripes of doom.
+
+00:17:12.540 --> 00:17:14.623
+JAKE: They're really-- my
+new glasses are actually
+
+00:17:14.623 --> 00:17:15.958
+really harsh like that.
+
+00:17:15.958 --> 00:17:18.500
+And so I've been thinking, like,
+if I just keep wearing them,
+
+00:17:18.500 --> 00:17:20.930
+then it will get better.
+

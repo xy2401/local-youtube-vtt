@@ -1,0 +1,507 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:12.379
+[music]
+
+00:00:12.379 --> 00:00:14.809
+Hello and welcome to section five
+
+00:00:14.809 --> 00:00:16.430
+of lesson one.
+
+00:00:16.430 --> 00:00:20.019
+Here we're going to talk about method
+and constructor references,
+
+00:00:20.019 --> 00:00:23.439
+which are shorthand forms of defining
+
+00:00:23.439 --> 00:00:30.230
+certain types of Lambda expressions.
+Often
+
+00:00:30.230 --> 00:00:33.739
+the kind of Lambda expression that we end 
+up with is a very simple
+
+00:00:33.739 --> 00:00:38.150
+kind of expression where all we’re doing
+is passing a parameter, in this case a
+
+00:00:38.150 --> 00:00:43.750
+file, f, and the body of the Lambda 
+expression simply calls a method
+
+00:00:43.750 --> 00:00:47.159
+on that parameter. In this case we call canRead
+
+00:00:47.159 --> 00:00:50.160
+on f. So, we've provided a
+
+00:00:50.160 --> 00:00:53.449
+shorthand way of representing that 
+which is
+
+00:00:53.449 --> 00:00:56.719
+a method reference. We can do the
+same thing by saying
+
+00:00:56.719 --> 00:00:59.920
+file, which is just the type of the parameter, f,
+
+00:00:59.920 --> 00:01:02.960
+colon colon, canRead,
+
+00:01:02.960 --> 00:01:06.619
+which is the method that we want call on
+that particular
+
+00:01:06.619 --> 00:01:10.149
+parameter, so we want to call f.canRead.
+
+00:01:10.149 --> 00:01:13.580
+The compiler will simply take that
+message reference
+
+00:01:13.580 --> 00:01:17.590
+and expand it into the above Lambda
+expression
+
+00:01:17.590 --> 00:01:23.369
+and then compile it in the same way. Now
+
+00:01:23.369 --> 00:01:26.689
+there are some details about method
+references that we need to
+
+00:01:26.689 --> 00:01:30.700
+understand because there are
+effectively three types,
+
+00:01:30.700 --> 00:01:35.170
+or three places where you can use
+method references and they vary
+
+00:01:35.170 --> 00:01:35.759
+slightly
+
+00:01:35.759 --> 00:01:39.770
+in terms of the way that syntax
+works.
+
+00:01:39.770 --> 00:01:43.720
+The three types are static
+methods,
+
+00:01:43.720 --> 00:01:47.219
+where you have an instance method of
+
+00:01:47.219 --> 00:01:51.990
+an arbitrary type, so that’s one you're 
+not referring to in terms of variable that
+
+00:01:51.990 --> 00:01:55.250
+you have in your code and then the third 
+form is an
+
+00:01:55.250 --> 00:01:58.890
+instance method on an existing object
+
+00:01:58.890 --> 00:02:02.210
+which is a variable that you have in
+your code where you want to call a
+
+00:02:02.210 --> 00:02:02.710
+method
+
+00:02:02.710 --> 00:02:05.840
+on that. The the format of
+
+00:02:05.840 --> 00:02:10.250
+the method reference as it shows here is
+that you have your target reference,
+
+00:02:10.250 --> 00:02:11.150
+that’s your reference
+
+00:02:11.150 --> 00:02:15.140
+type colon colon and then the name
+of the method
+
+00:02:15.140 --> 00:02:21.189
+that is going to be called through that
+method reference.
+
+00:02:21.189 --> 00:02:24.049
+In terms of how we construct those,
+
+00:02:24.049 --> 00:02:28.900
+the rules vary a little bit, primarily
+in terms of when you have an
+
+00:02:28.900 --> 00:02:29.760
+instance of
+
+00:02:29.760 --> 00:02:33.079
+an arbitrary type. For a static method
+
+00:02:33.079 --> 00:02:37.430
+it's quite straightforward. If the Lambda
+expression is where you have a set of
+
+00:02:37.430 --> 00:02:39.620
+arguments on the left hand side of the
+
+00:02:39.620 --> 00:02:44.209
+Lambda operator and then you're calling a
+static method on a particular
+
+00:02:44.209 --> 00:02:47.889
+class with those arguments then
+
+00:02:47.889 --> 00:02:51.209
+the equivalent method reference is
+simply the name
+
+00:02:51.209 --> 00:02:55.040
+of that class and the name of the static
+method.
+
+00:02:55.040 --> 00:02:59.120
+It’s very straightforward if you’re
+going to call, like integer.parseint
+
+00:02:59.120 --> 00:03:02.939
+on a string then it's just integer colon colon
+parseint
+
+00:03:02.939 --> 00:03:06.909
+because that's the method that you
+calling on the the particular class.
+
+00:03:06.909 --> 00:03:10.730
+Where you're using an instance
+
+00:03:10.730 --> 00:03:14.540
+of an arbitrary type which is one you
+don't already have a reference to,
+
+00:03:14.540 --> 00:03:17.790
+it is slightly different in the way that
+
+00:03:17.790 --> 00:03:21.129
+the parameters are used
+
+00:03:21.129 --> 00:03:24.159
+in terms of converting to a method
+reference.
+
+00:03:24.159 --> 00:03:28.199
+In this example what we've got is
+argument zero
+
+00:03:28.199 --> 00:03:33.530
+and then we’ve got some other arguments. In
+Lambda expression what we do is we use
+
+00:03:33.530 --> 00:03:35.079
+the first argument
+
+00:03:35.079 --> 00:03:38.500
+as the parameter that we want to call the
+method
+
+00:03:38.500 --> 00:03:42.269
+on and then we call the instance
+method
+
+00:03:42.269 --> 00:03:46.159
+on that parameter and  we pass
+the rest of the parameters
+
+00:03:46.159 --> 00:03:50.269
+as arguments to that method. For that
+case
+
+00:03:50.269 --> 00:03:53.859
+what we do is use the type of
+argument zero
+
+00:03:53.859 --> 00:03:57.379
+as the class name colon colon and
+then
+
+00:03:57.379 --> 00:04:00.659
+the same instance method name as we're
+calling the method
+
+00:04:00.659 --> 00:04:04.959
+on that in our method reference. For
+
+00:04:04.959 --> 00:04:08.379
+a Lambda where we have a reference to
+
+00:04:08.379 --> 00:04:11.699
+an existing variable where we want to use
+that in our
+
+00:04:11.699 --> 00:04:15.379
+code again we’ll have a set of arguments
+on the left hand side,
+
+00:04:15.379 --> 00:04:18.870
+the right hand side of the Lambda expression
+will be a reference
+
+00:04:18.870 --> 00:04:24.000
+to a variable that we have in our code and
+a method that we want call on that.
+
+00:04:24.000 --> 00:04:28.550
+Then we'll be passing the arguments as
+parameters to that method.
+
+00:04:28.550 --> 00:04:32.550
+The equivalent method reference is
+rather than using the type
+
+00:04:32.550 --> 00:04:35.759
+of the class, the type of the
+
+00:04:35.759 --> 00:04:38.889
+the expression we use the expression
+itself
+
+00:04:38.889 --> 00:04:43.990
+and the compiler will
+understand what that type is for us
+
+00:04:43.990 --> 00:04:47.710
+and convert it into the appropriate
+Lambda expression above.
+
+00:04:47.710 --> 00:04:51.050
+if we look at some examples of that,
+
+00:04:51.050 --> 00:04:55.150
+for a static method in this case what
+we’re doing is passing
+
+00:04:55.150 --> 00:04:59.110
+string s and we want to print that string, so
+we have
+
+00:04:59.110 --> 00:05:03.960
+System.out.println of s. The equivalent method
+reference
+
+00:05:03.960 --> 00:05:07.050
+is simply to say System.out
+
+00:05:07.050 --> 00:05:10.080
+which is the class
+
+00:05:10.080 --> 00:05:14.009
+that we want to use and println
+is the static method
+
+00:05:14.009 --> 00:05:17.159
+of that class. In that case
+
+00:05:17.159 --> 00:05:21.009
+s will be passed as a parameter. Where we
+have
+
+00:05:21.009 --> 00:05:26.610
+a reference to a type
+that we don't have
+
+00:05:26.610 --> 00:05:29.949
+in our class, so this is an arbitrary type.
+
+00:05:29.949 --> 00:05:33.030
+In this case what we have is string s
+
+00:05:33.030 --> 00:05:36.780
+and int i and we’re calling substring on
+the
+
+00:05:36.780 --> 00:05:39.800
+variable s with
+
+00:05:39.800 --> 00:05:43.400
+the parameter i. The conversion there,
+
+00:05:43.400 --> 00:05:46.460
+as I said on the previous slide is that we
+use the type
+
+00:05:46.460 --> 00:05:50.409
+of s, string, don’t need to use s, 
+we just use the type
+
+00:05:50.409 --> 00:05:55.070
+string and the reference to the method
+that we want to call substring.
+
+00:05:55.070 --> 00:05:58.219
+Again the compiler will figure out that,
+
+00:05:58.219 --> 00:06:01.889
+in that case, we don’t need to
+
+00:06:01.889 --> 00:06:05.729
+pass s as a parameter, we’re only using
+the
+
+00:06:05.729 --> 00:06:11.930
+i parameter as a parameter to substring.
+Then the last form where we’re referring to
+
+00:06:11.930 --> 00:06:15.960
+something that we already have a
+reference to
+
+00:06:15.960 --> 00:06:19.000
+in this case what we've got is axis a
+
+00:06:19.000 --> 00:06:22.120
+as the parameter and then we’re calling getLength
+
+00:06:22.120 --> 00:06:25.759
+on a, where getLength is a method that exists
+
+00:06:25.759 --> 00:06:29.919
+in the class that we’re actually
+executing our code in.
+
+00:06:29.919 --> 00:06:34.089
+In this case, rather than referring to 
+the type of the class
+
+00:06:34.089 --> 00:06:38.319
+we use a reference to this, because this 
+refers to the object that we’re in
+
+00:06:38.319 --> 00:06:42.449
+and then we call getLength on that because 
+getLength is the method
+
+00:06:42.449 --> 00:06:45.509
+in that current object and the parameter
+is
+
+00:06:45.509 --> 00:06:52.020
+a, and that will automatically be passed to 
+getLength. We can use the same
+
+00:06:52.020 --> 00:06:55.029
+idea for a constructor reference, because
+
+00:06:55.029 --> 00:06:58.229
+a constructor is very much like a method takes 
+parameters
+
+00:06:58.229 --> 00:07:03.019
+and creates a new object. What we have
+here is an example where
+
+00:07:03.019 --> 00:07:06.939
+we've got a factory that wants to create
+lists of type string.
+
+00:07:06.939 --> 00:07:10.559
+We have a lambda expression which is
+in effect a
+
+00:07:10.559 --> 00:07:14.240
+supplier, which will take no
+arguments
+
+00:07:14.240 --> 00:07:18.339
+and will return new ArrayList of type
+string. We can
+
+00:07:18.339 --> 00:07:22.679
+use the equivalent shortcut that we have
+for the method reference,
+
+00:07:22.679 --> 00:07:27.339
+but as a constructor reference. Rather
+than calling a specific method
+
+00:07:27.339 --> 00:07:30.629
+we want to instantiate a new object so we
+just use
+
+00:07:30.629 --> 00:07:34.249
+new. We have ArrayList&lt;String&gt; colon colon
+
+00:07:34.249 --> 00:07:37.849
+new to indicate that we're going to
+create a new instance ArrayList
+
+00:07:37.849 --> 00:07:42.879
+of type string. To summarize section
+
+00:07:42.879 --> 00:07:46.219
+five what method references do
+
+00:07:46.219 --> 00:07:49.439
+is give us a shorthand notation for a lot of
+
+00:07:49.439 --> 00:07:53.089
+common simple Lambdas.
+
+00:07:53.089 --> 00:07:56.369
+What you'll find is as you start to use
+them more and more,
+
+00:07:56.369 --> 00:08:01.269
+they will become much easier to read and
+you’ll understand what's actually happening
+
+00:08:01.269 --> 00:08:02.759
+in the code much more easily.
+
+00:08:02.759 --> 00:08:06.089
+There are three different types and
+
+00:08:06.089 --> 00:08:10.209
+how we use them depends on what the
+format is and remember that
+
+00:08:10.209 --> 00:08:14.889
+if you’re using an arbitrary type the way that 
+the parameters are processed is that the first
+
+00:08:14.889 --> 00:08:15.899
+parameter is used
+
+00:08:15.899 --> 00:08:19.649
+as the type of the thing that you want to 
+call the method on
+
+00:08:19.649 --> 00:08:25.500
+and the rest of the parameters are passed as 
+arguments to that method.
+
+00:08:25.500 --> 00:08:29.310
+We can use the same thing with a constructor so
+we can have a constructor reference
+
+00:08:29.310 --> 00:08:32.779
+rather than calling a particular method
+
+00:08:32.779 --> 00:08:36.399
+we use the reference to new rather than the
+method name
+
+00:08:36.399 --> 00:08:40.080
+And that is the end of this part
+
+00:08:40.080 --> 00:08:42.729
+of the lesson.
+

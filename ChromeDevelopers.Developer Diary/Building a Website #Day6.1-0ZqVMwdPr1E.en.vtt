@@ -1,0 +1,503 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.540 --> 00:00:02.206
+PAUL LEWIS: I don't
+know if you remember
+
+00:00:02.206 --> 00:00:05.720
+me saying those masthead images,
+I've got a plan for that.
+
+00:00:05.720 --> 00:00:10.250
+So that should mean that I
+can do this kind of effect
+
+00:00:10.250 --> 00:00:14.110
+and then have other stuff
+behind it peeking through
+
+00:00:14.110 --> 00:00:16.940
+and all the rest of it, which is
+exactly the effect that I want.
+
+00:00:16.940 --> 00:00:19.770
+And I didn't know exactly how
+I was going to achieve it.
+
+00:00:19.770 --> 00:00:21.730
+Whew!
+
+00:00:21.730 --> 00:00:22.850
+I was wrong.
+
+00:00:22.850 --> 00:00:25.630
+I was very wrong,
+because it turns out
+
+00:00:25.630 --> 00:00:28.320
+Edge doesn't support clip-path.
+
+00:00:28.320 --> 00:00:28.844
+Fair enough.
+
+00:00:28.844 --> 00:00:30.260
+Every browser is
+a different stage
+
+00:00:30.260 --> 00:00:31.426
+of supporting this and that.
+
+00:00:31.426 --> 00:00:32.689
+So it's not a big deal.
+
+00:00:32.689 --> 00:00:35.330
+But it was going
+to be my solution.
+
+00:00:35.330 --> 00:00:37.120
+If you remember,
+this is what I had.
+
+00:00:37.120 --> 00:00:38.170
+I had these images.
+
+00:00:38.170 --> 00:00:41.450
+And I wanted the image itself
+to do kind of a background size
+
+00:00:41.450 --> 00:00:44.430
+cover and then for
+the clip at the bottom
+
+00:00:44.430 --> 00:00:47.440
+to just be applied
+after the fact
+
+00:00:47.440 --> 00:00:50.480
+just to do that diagonal
+slice along the bottom.
+
+00:00:50.480 --> 00:00:54.530
+And I know I could use
+a canvas, because it
+
+00:00:54.530 --> 00:00:57.660
+would be a few lines of code
+to actually clip like that.
+
+00:00:57.660 --> 00:00:59.596
+But I didn't want to.
+
+00:00:59.596 --> 00:01:00.970
+And the reason I
+don't want to is
+
+00:01:00.970 --> 00:01:04.519
+because it felt like it would
+make JavaScript a requirement
+
+00:01:04.519 --> 00:01:06.600
+to get the basic
+page content there.
+
+00:01:06.600 --> 00:01:09.560
+And that's not something
+I wanted to do.
+
+00:01:09.560 --> 00:01:13.160
+And I felt like it should
+be doable, either directly
+
+00:01:13.160 --> 00:01:16.350
+with SVG or-- well, it was
+going to fine with clip-path,
+
+00:01:16.350 --> 00:01:18.580
+but as I say, I can't use that.
+
+00:01:18.580 --> 00:01:22.650
+So here's where we kind
+of left the SVG version,
+
+00:01:22.650 --> 00:01:26.410
+because I had to go back to
+the drawing board a little bit.
+
+00:01:26.410 --> 00:01:28.000
+So it was either
+going to scale down
+
+00:01:28.000 --> 00:01:31.450
+like this-- which would leave
+a gap at the top of the page--
+
+00:01:31.450 --> 00:01:36.870
+or it would squash and stretch,
+causing the image to distort.
+
+00:01:36.870 --> 00:01:39.670
+And I was like, well,
+neither is good.
+
+00:01:39.670 --> 00:01:42.070
+This one was the
+least bad version.
+
+00:01:42.070 --> 00:01:45.690
+Though I felt that, if I set
+this as a background image--
+
+00:01:45.690 --> 00:01:51.980
+and then told it to background
+size cover from the bottom--
+
+00:01:51.980 --> 00:01:54.730
+then I would end up with
+something like this,
+
+00:01:54.730 --> 00:01:59.000
+which actually wasn't miles off
+until it kind of gets to this--
+
+00:01:59.000 --> 00:02:01.200
+whoa, maybe a bit small,
+there we are--this point.
+
+00:02:01.200 --> 00:02:04.220
+Where if you got the wrong
+kind of image-- I say wrong,
+
+00:02:04.220 --> 00:02:07.740
+it's bit hard on Darren--
+Darren's getting clipped.
+
+00:02:07.740 --> 00:02:10.030
+And so that wasn't good.
+
+00:02:10.030 --> 00:02:13.600
+And so my solution
+there was to do
+
+00:02:13.600 --> 00:02:19.070
+this, where as it gets
+wider, we transform it down.
+
+00:02:19.070 --> 00:02:21.700
+And you can do
+that with some CSS
+
+00:02:21.700 --> 00:02:25.540
+inside the SVG, which
+you can see here.
+
+00:02:25.540 --> 00:02:28.360
+And it's basically
+done on breakpoints.
+
+00:02:28.360 --> 00:02:30.890
+So I have to kind of
+tweak it as we go.
+
+00:02:30.890 --> 00:02:33.040
+The idea is that you can
+transform the image that
+
+00:02:33.040 --> 00:02:34.800
+is inside the pattern.
+
+00:02:34.800 --> 00:02:37.250
+And that will
+probably be in here
+
+00:02:37.250 --> 00:02:38.967
+in the defs inside the pattern.
+
+00:02:38.967 --> 00:02:39.550
+There you are.
+
+00:02:39.550 --> 00:02:40.800
+There's the image.
+
+00:02:40.800 --> 00:02:43.190
+We can transform that
+down proportional
+
+00:02:43.190 --> 00:02:44.546
+to the viewport widths.
+
+00:02:44.546 --> 00:02:46.420
+So as it gets wider it
+gets pushed down more.
+
+00:02:46.420 --> 00:02:48.570
+It gets transformed
+down even more.
+
+00:02:48.570 --> 00:02:56.070
+Problem being Edge doesn't
+support CSS transforms
+
+00:02:56.070 --> 00:02:58.470
+on SVG elements yet.
+
+00:02:58.470 --> 00:02:59.120
+Right.
+
+00:02:59.120 --> 00:03:01.330
+So that solution didn't work.
+
+00:03:01.330 --> 00:03:06.440
+And, to be clear,
+I spent six hours
+
+00:03:06.440 --> 00:03:08.830
+on this particular
+problem trying
+
+00:03:08.830 --> 00:03:10.570
+every different
+permutation, trying
+
+00:03:10.570 --> 00:03:14.270
+to get something that would work
+happily in Chrome, in Firefox,
+
+00:03:14.270 --> 00:03:16.080
+in Safari, and Edge.
+
+00:03:16.080 --> 00:03:21.150
+And it was a real
+toughie, actually.
+
+00:03:21.150 --> 00:03:23.787
+It really took it out of me.
+
+00:03:23.787 --> 00:03:26.120
+Because I was just trying so
+many different combinations
+
+00:03:26.120 --> 00:03:28.290
+and thinking one of
+these should work.
+
+00:03:28.290 --> 00:03:34.490
+Anyway the clue that I should
+have heard in my inside voice,
+
+00:03:34.490 --> 00:03:36.760
+inside my head, was
+I want something
+
+00:03:36.760 --> 00:03:40.650
+that behaves like a div
+with background size
+
+00:03:40.650 --> 00:03:46.600
+cover, and yet be like it's
+in SVG with the clipping.
+
+00:03:46.600 --> 00:03:50.120
+If you've not come
+across foreignObject,
+
+00:03:50.120 --> 00:03:53.090
+welcome to foreignObject
+101 with me,
+
+00:03:53.090 --> 00:03:55.370
+where I'll explain how
+it is that I'm actually
+
+00:03:55.370 --> 00:03:57.680
+using foreignObject.
+
+00:03:57.680 --> 00:04:02.280
+This, in fact, gives me, by
+the way, the same kind of look
+
+00:04:02.280 --> 00:04:04.620
+as I had in the previous
+one, but it actually
+
+00:04:04.620 --> 00:04:06.500
+works everywhere.
+
+00:04:06.500 --> 00:04:09.860
+And the way it does it-- let
+me switch across to the code--
+
+00:04:09.860 --> 00:04:13.909
+is we have foreignObject
+inside of the SVG.
+
+00:04:13.909 --> 00:04:15.950
+And we can apply that clip
+to the foreign object.
+
+00:04:15.950 --> 00:04:17.250
+So that's going
+to clip-- whatever
+
+00:04:17.250 --> 00:04:19.499
+the foreign object is-- and
+the foreign object is just
+
+00:04:19.499 --> 00:04:20.579
+100% width and height.
+
+00:04:20.579 --> 00:04:21.800
+What is foreignObject?
+
+00:04:21.800 --> 00:04:22.630
+Right.
+
+00:04:22.630 --> 00:04:26.520
+It allows you to embed
+some HTML inside of an SVG.
+
+00:04:26.520 --> 00:04:30.040
+So I have in here a div.
+
+00:04:30.040 --> 00:04:31.840
+And I probably need
+to add some area rules
+
+00:04:31.840 --> 00:04:34.687
+to that to make sure that
+this is showing up correctly
+
+00:04:34.687 --> 00:04:36.020
+for screen readers and the like.
+
+00:04:36.020 --> 00:04:37.780
+But you see all
+these break points.
+
+00:04:37.780 --> 00:04:40.857
+Basically that DIV
+has a background--
+
+00:04:40.857 --> 00:04:42.690
+and you see that's kind
+of dynamically set--
+
+00:04:42.690 --> 00:04:44.770
+but all the same, it
+has a background image
+
+00:04:44.770 --> 00:04:46.650
+set to background size cover.
+
+00:04:46.650 --> 00:04:48.540
+And so the foreign
+object is basically
+
+00:04:48.540 --> 00:04:51.742
+drop that image inside of
+the SVG as this totally other
+
+00:04:51.742 --> 00:04:54.200
+rendered thing which happens
+to be the correct thing that I
+
+00:04:54.200 --> 00:04:55.170
+want.
+
+00:04:55.170 --> 00:04:57.550
+And I set it with
+background position
+
+00:04:57.550 --> 00:05:00.540
+to move it down proportional
+to the screen's width.
+
+00:05:00.540 --> 00:05:02.180
+Why don't I use transform?
+
+00:05:02.180 --> 00:05:03.320
+Well, two reasons.
+
+00:05:03.320 --> 00:05:05.890
+Firstly, thankfully
+I'm not animating this.
+
+00:05:05.890 --> 00:05:07.460
+So I don't need to
+worry about using,
+
+00:05:07.460 --> 00:05:09.200
+say, just transforms
+and opacity.
+
+00:05:09.200 --> 00:05:13.010
+If I did, then this would be
+problematic because, if you try
+
+00:05:13.010 --> 00:05:15.880
+and transform this
+down, the foreign object
+
+00:05:15.880 --> 00:05:18.880
+and the clip and the transform
+don't work with Safari.
+
+00:05:18.880 --> 00:05:21.360
+That particular combination,
+it stops clipping,
+
+00:05:21.360 --> 00:05:23.710
+and just starts to
+transform the content down.
+
+00:05:23.710 --> 00:05:26.650
+So the fact that I want it
+transformed-- or at least to be
+
+00:05:26.650 --> 00:05:31.420
+moved-- and clipped, and in
+HTML, and all the rest of it
+
+00:05:31.420 --> 00:05:32.950
+means foreignObject.
+
+00:05:32.950 --> 00:05:36.352
+It means using background
+position, which I can set
+
+00:05:36.352 --> 00:05:37.560
+and I can use to move things.
+
+00:05:37.560 --> 00:05:40.310
+And as I say, because I'm not
+animating background position,
+
+00:05:40.310 --> 00:05:42.500
+it's not going to be
+a performance issue.
+
+00:05:42.500 --> 00:05:45.300
+And there you go.
+
+00:05:45.300 --> 00:05:47.670
+That's six hours of
+my life fighting.
+
+00:05:47.670 --> 00:05:49.920
+I know you can see there's
+quite a lot of breakpoints.
+
+00:05:49.920 --> 00:05:56.290
+But it does at least work, to
+which we can say, Paul one,
+
+00:05:56.290 --> 00:05:59.140
+browsers nil.
+
+00:05:59.140 --> 00:05:59.740
+Ha ha!
+
+00:05:59.740 --> 00:06:02.190
+[MUSIC PLAYING]
+

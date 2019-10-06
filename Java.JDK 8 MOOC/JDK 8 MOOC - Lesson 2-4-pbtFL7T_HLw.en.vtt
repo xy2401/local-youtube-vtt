@@ -1,0 +1,688 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:02.810
+[music]
+
+00:00:13.200 --> 00:00:16.040
+Hello and welcome to section 4 of lesson 2.
+
+00:00:16.040 --> 00:00:19.340
+In this part we're going to look at the
+
+00:00:19.340 --> 00:00:22.670
+various different places where you can
+create stream
+
+00:00:22.670 --> 00:00:26.140
+source from the classes and methods
+available
+
+00:00:26.140 --> 00:00:29.800
+in JDK 8. If you do
+
+00:00:29.800 --> 00:00:33.600
+a complete analysis of the JDK 8 libraries
+you'll find
+
+00:00:33.600 --> 00:00:38.580
+actually 95 methods in 23
+classes that return a stream,
+
+00:00:38.580 --> 00:00:42.800
+but not all of them are actually stream
+sources because a lot of
+
+00:00:42.800 --> 00:00:46.260
+them are actually intermediate operations in the
+Stream interface.
+
+00:00:46.260 --> 00:00:49.440
+You remember the stream intermediate 
+operation is one that
+
+00:00:49.440 --> 00:00:53.129
+takes as input a stream and returns as
+output a stream.
+
+00:00:53.129 --> 00:00:56.379
+So we don't actually use those as stream
+sources.
+
+00:00:56.379 --> 00:01:00.629
+For ones that are usable as practical stream
+sources
+
+00:01:00.629 --> 00:01:04.839
+there are 71 methods in 15
+classes that you can use.
+
+00:01:04.839 --> 00:01:08.130
+And what we do in this part of the
+lesson is go through
+
+00:01:08.130 --> 00:01:11.400
+but most days of the week we actually go
+through with most with them.
+
+00:01:11.400 --> 00:01:15.130
+In terms of the collection interface we've
+
+00:01:15.130 --> 00:01:18.350
+already seen this used, where we have a
+Collection
+
+00:01:18.350 --> 00:01:22.030
+and we want to create a stream source, we
+call Stream.
+
+00:01:22.030 --> 00:01:25.259
+And what that will do is provide a
+sequential stream of
+
+00:01:25.259 --> 00:01:29.829
+all the elements in that collection. If
+we want to create
+
+00:01:29.829 --> 00:01:34.310
+parallel stream then we use the
+parallel stream
+
+00:01:34.310 --> 00:01:37.560
+method. So that's very
+straightforward, if we want a sequential stream we
+
+00:01:37.560 --> 00:01:38.250
+call stream,if we 
+
+00:01:38.250 --> 00:01:42.840
+want parallel stream we call parallel stream that will
+create parallel stream
+
+00:01:42.840 --> 00:01:47.049
+elements in the collection and how that
+actually works underneath
+
+00:01:47.049 --> 00:01:52.289
+is using the fore-join framework.
+We're going to talk about this more and
+
+00:01:52.289 --> 00:01:54.210
+see more detail about this
+
+00:01:54.210 --> 00:01:57.600
+in lesson 3 when we talk about
+parallel streams
+
+00:01:57.600 --> 00:02:00.800
+specifically, so we'll come back to that
+later in
+
+00:02:00.800 --> 00:02:03.880
+lesson 3. The
+
+00:02:03.880 --> 00:02:07.360
+arrays class has a method called Stream
+because
+
+00:02:07.360 --> 00:02:11.380
+if you think about it an array is a
+collection of data, so it's logical that
+
+00:02:11.380 --> 00:02:13.650
+we would want to be able to create a stream
+from it,
+
+00:02:13.650 --> 00:02:17.140
+but because it is not a collection in the sense
+that the collections API
+
+00:02:17.140 --> 00:02:20.490
+we can't just call stream on that. So in
+this case
+
+00:02:20.490 --> 00:02:23.900
+what we need to do is use the static
+methods in the Arrays
+
+00:02:23.900 --> 00:02:27.000
+class and call stream where we pass
+
+00:02:27.000 --> 00:02:30.810
+array as a parameter to that and we get
+back to stream,
+
+00:02:30.810 --> 00:02:34.370
+which is the stream elements in that array.
+
+00:02:34.370 --> 00:02:38.330
+This will provide a sequential stream;
+there is no equivalent
+
+00:02:38.330 --> 00:02:42.310
+parallel stream from this, although again as
+we'll see in lesson 3 you can
+
+00:02:42.310 --> 00:02:43.060
+convert
+
+00:02:43.060 --> 00:02:46.280
+a serial stream into a parallel stream
+without any problem.
+
+00:02:46.280 --> 00:02:49.600
+There are some overloaded methods
+
+00:02:49.600 --> 00:02:53.310
+for different types if you want to be
+type-specific, so there is double,
+
+00:02:53.310 --> 00:02:56.390
+int, long, and object available for that,
+
+00:02:56.390 --> 00:03:00.740
+depending on what the values that are stored in the array that you want to create a stream
+
+00:03:00.740 --> 00:03:05.060
+from. The files class has
+
+00:03:05.060 --> 00:03:09.080
+several useful new methods which can be
+used to create
+
+00:03:09.080 --> 00:03:12.590
+a stream source and we saw an example of the
+
+00:03:12.590 --> 00:03:16.350
+first one earlier on when we talked about
+BiPredicate
+
+00:03:16.350 --> 00:03:20.350
+in terms of the new functional interfaces
+and what
+
+00:03:20.350 --> 00:03:24.410
+find will do is, it will take a Path,
+which is a point in the file system
+
+00:03:24.410 --> 00:03:26.510
+where you're looking for particular
+
+00:03:26.510 --> 00:03:29.570
+files; it takes a BiPredicate,
+
+00:03:29.570 --> 00:03:33.570
+which will enable you to define using
+Lambda expression
+
+00:03:33.570 --> 00:03:37.269
+how you want to identify the files you're
+interested in
+
+00:03:37.269 --> 00:03:40.920
+and that can be based on things like the
+size of name, and so on
+
+00:03:40.920 --> 00:03:44.769
+and also FileVisitOption to say we
+follow links or not.
+
+00:03:44.769 --> 00:03:48.580
+There is the ability to create list of
+
+00:03:48.580 --> 00:03:52.519
+all files from specific point in your file
+system, so you pass the
+
+00:03:52.519 --> 00:03:56.239
+path as the parameter to list and
+that will give you a stream of
+
+00:03:56.239 --> 00:03:59.260
+entries from given directory.
+
+00:03:59.260 --> 00:04:03.180
+Lines is a very useful method, again what
+that will do is
+
+00:04:03.180 --> 00:04:06.799
+take a point, a parameter which is a
+path
+
+00:04:06.799 --> 00:04:10.620
+entry into your file system, which is a file
+and then
+
+00:04:10.620 --> 00:04:13.939
+lines will return you a stream, which are
+the lines of
+
+00:04:13.939 --> 00:04:18.840
+text in that file. You can process those
+as a stream into
+
+00:04:18.840 --> 00:04:22.019
+all sorts of things with that and then
+lastly there's a
+
+00:04:22.019 --> 00:04:26.139
+walk method, which takes a Path and then
+will
+
+00:04:26.139 --> 00:04:30.419
+do file walk based on that path and
+returning you a stream of file
+
+00:04:30.419 --> 00:04:33.509
+references using the walk
+
+00:04:33.509 --> 00:04:36.889
+method and then also whether you want to
+
+00:04:36.889 --> 00:04:42.620
+follow links or not. Random numbers.
+
+00:04:42.620 --> 00:04:46.770
+There are three classes which
+closely related:
+
+00:04:46.770 --> 00:04:50.440
+There's Random, ThreadLocalRandom and
+SplittableRandom depending on how you
+
+00:04:50.440 --> 00:04:51.750
+actually want to use
+
+00:04:51.750 --> 00:04:54.970
+random number generation in your
+code. 
+
+00:04:54.970 --> 00:04:58.639
+I won't go into details this here, but
+it's worth looking at
+
+00:04:58.639 --> 00:05:02.280
+the class documentation to see what the
+differences are between these.
+
+00:05:02.280 --> 00:05:06.389
+From a stream point of view they're all
+exactly the same.
+
+00:05:06.389 --> 00:05:09.919
+We can produce either an infinite stream of
+
+00:05:09.919 --> 00:05:14.060
+random numbers or we can produce a
+finite stream, where we can specify how
+
+00:05:14.060 --> 00:05:15.360
+many numbers we want
+
+00:05:15.360 --> 00:05:19.099
+in that stream. There are versions for
+
+00:05:19.099 --> 00:05:22.340
+ints, their versions for doubles and versions for
+longs. So we can
+
+00:05:22.340 --> 00:05:26.580
+create ramdom numbers as integers, doubles or longs
+and then there are four versions of
+
+00:05:26.580 --> 00:05:29.870
+each of those where we can specify whether
+
+00:05:29.870 --> 00:05:33.389
+we want finite or infinite stream of ints
+
+00:05:33.389 --> 00:05:37.039
+and then we can also specify whether we
+want to use a seed
+
+00:05:37.039 --> 00:05:40.270
+to initialize that stream of random
+numbers.
+
+00:05:40.270 --> 00:05:44.440
+So what we end up with is four
+different versions for
+
+00:05:44.440 --> 00:05:48.169
+each int, double, and long which
+gives us
+
+00:05:48.169 --> 00:05:51.380
+12 stream sources for
+
+00:05:51.380 --> 00:05:55.009
+each random number class because there
+are 3 ramdom number classes that's
+
+00:05:55.009 --> 00:05:58.009
+36 different ways of creating stream
+source
+
+00:05:58.009 --> 00:06:01.280
+just from random numbers, so when I talked about
+numbers at the beginning
+
+00:06:01.280 --> 00:06:05.440
+36 of the the possible sources of streams
+
+00:06:05.440 --> 00:06:08.830
+are from random number generation.
+
+00:06:08.830 --> 00:06:13.270
+A few miscellaneous classes and methods.
+
+00:06:13.270 --> 00:06:16.860
+For compressed files both JarFile and Zipfile
+
+00:06:16.860 --> 00:06:20.830
+now have a stream method, which returns a
+stream,
+
+00:06:20.830 --> 00:06:24.420
+which are the file objects, related to
+the
+
+00:06:24.420 --> 00:06:27.980
+contents of the compressed archive. So
+that will extract the
+
+00:06:27.980 --> 00:06:31.310
+individual files and give you a file 
+reference as an element
+in the stream
+
+00:06:31.310 --> 00:06:34.970
+and then you can map that if you want to
+whatever values and so on.
+
+00:06:34.970 --> 00:06:40.720
+But the BufferedReader has lines method; this is
+very much the same as in the files class.
+
+00:06:40.720 --> 00:06:44.760
+So that if you have BufferedReader
+associated with some source, whether it's a
+
+00:06:44.760 --> 00:06:46.090
+network connection or a
+
+00:06:46.090 --> 00:06:49.250
+serial port or something like that then
+you can
+
+00:06:49.250 --> 00:06:53.020
+have a stream of lines text that are being
+provided by
+
+00:06:53.020 --> 00:06:56.910
+whatever the BufferedReader is connected to.
+
+00:06:56.910 --> 00:07:00.600
+In pattern there is a new method called
+splitAsStream.
+
+00:07:00.600 --> 00:07:04.680
+This essentially does the same thing
+at the split method;
+
+00:07:04.680 --> 00:07:07.680
+the split method returns an array of
+
+00:07:07.680 --> 00:07:11.150
+strings, which match the particular pattern that
+we're interested in.
+
+00:07:11.150 --> 00:07:14.540
+In the case of splitAsStream rather
+returning an array, it
+
+00:07:14.540 --> 00:07:17.800
+returns a stream, so that we can process
+that
+
+00:07:17.800 --> 00:07:22.169
+in whatever way we want to do. A couple of
+
+00:07:22.169 --> 00:07:26.180
+other miscellaneous classes that we have.
+This CharSequence has
+
+00:07:26.180 --> 00:07:30.820
+two methods in it: one is chars, which
+will return a stream
+
+00:07:30.820 --> 00:07:34.490
+which are the char values of that
+charSequence
+
+00:07:34.490 --> 00:07:38.500
+as ints, as a primitive stream and
+then there's also
+
+00:07:38.500 --> 00:07:41.500
+code points which will return a stream
+
+00:07:41.500 --> 00:07:45.010
+which is the code point values for that
+sequence.
+
+00:07:45.010 --> 00:07:49.260
+and finally BitSet has a method called
+stream,
+
+00:07:49.260 --> 00:07:52.680
+which will return you a stream of the
+indices of the
+131
+00:07:52,680 --&gt; 00:07:58,600
+different bits in that bit set which are
+set.
+
+00:07:58.600 --> 00:08:01.800
+There are a number of static methods on
+the Stream
+
+00:08:01.800 --> 00:08:05.420
+interface itself. And as I said
+
+00:08:05.420 --> 00:08:09.240
+in JDK 8 we now have the ability to include
+static method in interfaces, so
+
+00:08:09.240 --> 00:08:12.980
+this is a good example where we've used that.
+You can take
+
+00:08:12.980 --> 00:08:17.460
+two streams and you can concatenate them.
+And there's no way of merging
+
+00:08:17.460 --> 00:08:19.440
+streams, in the sense if taking
+
+00:08:19.440 --> 00:08:22.930
+one element from one stream then another
+element from different stream 
+
+00:08:22.930 --> 00:08:26.780
+and alternating that. You can
+concatenate two streams
+
+00:08:26.780 --> 00:08:31.880
+using concat and providing 2 streams. There is
+also the ability to provide an empty
+
+00:08:31.880 --> 00:08:32.450
+stream.
+
+00:08:32.450 --> 00:08:35.789
+I must admit I really don't know what
+the purpose of that is,
+
+00:08:35.789 --> 00:08:38.810
+since I don't know why you would want an
+empty stream because there's nothing to
+
+00:08:38.810 --> 00:08:40.400
+process, but anyway, it's there
+
+00:08:40.400 --> 00:08:43.500
+should you find a use for it. There is
+
+00:08:43.500 --> 00:08:47.570
+an of method, which will create a stream
+
+00:08:47.570 --> 00:08:51.300
+from a set of values and issues is that
+varargs syntax,
+
+00:08:51.300 --> 00:08:54.330
+so you can either pass a single value, you
+can pass a
+
+00:08:54.330 --> 00:08:59.400
+set of comma separated values or, because
+the varargs syntax will convert
+
+00:08:59.400 --> 00:09:02.600
+the comma-separated values into an array
+
+00:09:02.600 --> 00:09:06.140
+of values you too can pass
+
+00:09:06.140 --> 00:09:09.980
+something which generates an array
+values and that will then create a
+
+00:09:09.980 --> 00:09:13.780
+stream from that. You can create
+
+00:09:13.780 --> 00:09:17.380
+ranges of values for 
+
+00:09:17.380 --> 00:09:21.580
+integers. If you want to create, in effect
+like a loop,
+
+00:09:21.580 --> 00:09:25.530
+but obviously it's not a loop, because we
+don't do explicit loops in terms of streams,
+
+00:09:25.530 --> 00:09:30.270
+but if you want to have the idea of 
+having values from
+
+00:09:30.270 --> 00:09:34.300
+1 to let's say 10 then you can do that
+with range
+
+00:09:34.300 --> 00:09:37.400
+and rangeClosed. If you use range
+
+00:09:37.400 --> 00:09:40.830
+and specify 1 and 10 you'll get the numbers
+1 through 9,
+
+00:09:40.830 --> 00:09:46.300
+because it's exclusive of the final
+value. If you use rangeClose from 1 to
+
+00:09:46.300 --> 00:09:46.850
+10
+
+00:09:46.850 --> 00:09:50.000
+you get the values from 1 to 10
+because it's inclusive
+
+00:09:50.000 --> 00:09:52.429
+of the end value.
+
+00:09:52.429 --> 00:09:55.579
+There is also the ability to create a
+
+00:09:55.579 --> 00:09:58.619
+an infinite stream using generate,
+
+00:09:58.619 --> 00:10:01.980
+where you can simply specify the supplier as Lambda
+
+00:10:01.980 --> 00:10:05.019
+expression as to how to create values
+
+00:10:05.019 --> 00:10:08.579
+and the stream will then just be
+populated with the values based
+
+00:10:08.579 --> 00:10:11.959
+on what the IntSupplier does. And you
+can also
+
+00:10:11.959 --> 00:10:15.230
+iterate, so if you want to apply function
+let's say
+
+00:10:15.230 --> 00:10:18.540
+you want to create squares
+
+00:10:18.540 --> 00:10:21.829
+then you can do that starting with
+1 or 2
+
+00:10:21.829 --> 00:10:25.369
+and the using a IntUnaryOperator which
+just squares the number
+
+00:10:25.369 --> 00:10:28.769
+so every time you call it, it will
+provide the next square in the sequence
+
+00:10:28.769 --> 00:10:33.730
+and so on. To Summarise section 4
+
+00:10:33.730 --> 00:10:38.040
+there is numerous places where you
+can get stream sources from.
+
+00:10:38.040 --> 00:10:41.860
+There is a number of quite useful methods
+are being added;
+
+00:10:41.860 --> 00:10:45.529
+things like being able to retrieve the lines
+from a file, files from compressed
+
+00:10:45.529 --> 00:10:46.769
+archives and so on.
+
+00:10:46.769 --> 00:10:50.429
+The only way to directly create
+
+00:10:50.429 --> 00:10:54.059
+parallelStream is from the collection
+class but as I say,
+
+00:10:54.059 --> 00:10:59.230
+in lesson 3 we will talk about
+how you can convert from a sequential stream to a
+
+00:10:59.230 --> 00:11:02.569
+parallel stream and talk about the issues
+around that. But
+
+00:11:02.569 --> 00:11:06.369
+in terms of creating a stream source
+only the collection can
+
+00:11:06.369 --> 00:11:11.199
+create a parallelStream directly. This
+is the end
+
+00:11:11.199 --> 00:11:12.309
+of section 4.
+

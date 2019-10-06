@@ -1,0 +1,1908 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.660 --> 00:00:02.285
+PAUL LEWIS: I don't
+know if you've ever
+
+00:00:02.285 --> 00:00:06.570
+done coding where you do an
+awful lot of architecture
+
+00:00:06.570 --> 00:00:09.720
+and wrangling, and then
+people kind of looking over
+
+00:00:09.720 --> 00:00:12.600
+your shoulder go, so, you know,
+what have you been working on?
+
+00:00:12.600 --> 00:00:17.750
+You're like, well, lots, but
+there's nothing really to see.
+
+00:00:17.750 --> 00:00:20.440
+It's just a lot of
+machinery under the hood.
+
+00:00:20.440 --> 00:00:22.920
+So has it been for
+me, with the story
+
+00:00:22.920 --> 00:00:25.230
+of offline in this
+particular app.
+
+00:00:25.230 --> 00:00:30.660
+The media app has
+two offline cases.
+
+00:00:30.660 --> 00:00:35.460
+One is relatively
+standard, I suppose.
+
+00:00:35.460 --> 00:00:37.980
+That you go to a
+video and you say,
+
+00:00:37.980 --> 00:00:39.450
+I'd like to watch
+this one later.
+
+00:00:39.450 --> 00:00:40.440
+Boop.
+
+00:00:40.440 --> 00:00:45.240
+And we have to go and download
+not only the video, but things
+
+00:00:45.240 --> 00:00:50.880
+like it's poster frame for the
+video element, it's album art,
+
+00:00:50.880 --> 00:00:55.032
+so we can do the media session
+API, it's dash manifest,
+
+00:00:55.032 --> 00:00:55.740
+all those things.
+
+00:00:55.740 --> 00:00:56.790
+And you kind of go, yeah.
+
+00:00:56.790 --> 00:00:58.260
+I'll just get a
+bundle of things,
+
+00:00:58.260 --> 00:01:01.260
+and I'm going to go and get
+those, and download them.
+
+00:01:01.260 --> 00:01:04.200
+And one of the things that
+in this area that's still
+
+00:01:04.200 --> 00:01:07.890
+to land on the platform, for
+which Jake has-- and explained
+
+00:01:07.890 --> 00:01:10.170
+at least, is the
+background fetch API.
+
+00:01:10.170 --> 00:01:12.630
+Wouldn't it be great,
+given that list of files
+
+00:01:12.630 --> 00:01:15.300
+that you want to get, to be
+able to hand off to the browser
+
+00:01:15.300 --> 00:01:16.240
+and say, hey.
+
+00:01:16.240 --> 00:01:19.420
+Look, these 10 files, would you
+mind going off and getting them
+
+00:01:19.420 --> 00:01:19.920
+for me?
+
+00:01:19.920 --> 00:01:22.972
+And just fire an event
+when that's completed so
+
+00:01:22.972 --> 00:01:24.180
+that I can decide what to do.
+
+00:01:24.180 --> 00:01:26.820
+I can put them in a cache,
+or I can do whatever
+
+00:01:26.820 --> 00:01:28.134
+I feel like doing with them.
+
+00:01:28.134 --> 00:01:29.550
+Well, that's
+certainly on the way,
+
+00:01:29.550 --> 00:01:31.270
+and it doesn't exist right now.
+
+00:01:31.270 --> 00:01:33.870
+So what I'm doing
+is, when you click on
+
+00:01:33.870 --> 00:01:36.710
+the I want to take this
+video offline, I do--
+
+00:01:36.710 --> 00:01:39.632
+in the page, I do a fetch and
+I populate the cache myself.
+
+00:01:39.632 --> 00:01:42.090
+Now, that is quite a lot of
+code in and of itself because--
+
+00:01:42.090 --> 00:01:43.080
+I'll show you why.
+
+00:01:45.990 --> 00:01:47.910
+Let me tell you about
+the second use case.
+
+00:01:47.910 --> 00:01:49.180
+That's worth thing.
+
+00:01:49.180 --> 00:01:50.680
+The second use case is this.
+
+00:01:50.680 --> 00:01:55.110
+Imagine that you have
+watched episode one of a show
+
+00:01:55.110 --> 00:01:59.139
+that you're interested in,
+and episode two is probably
+
+00:01:59.139 --> 00:02:00.430
+going to be of interest to you.
+
+00:02:00.430 --> 00:02:02.304
+Maybe you subscribe to
+the show or something.
+
+00:02:02.304 --> 00:02:03.780
+And what we want
+to do is while I'm
+
+00:02:03.780 --> 00:02:06.687
+getting the entirety of episode
+two, you don't asked for that,
+
+00:02:06.687 --> 00:02:08.020
+and that's quite a lot of space.
+
+00:02:08.020 --> 00:02:09.436
+But what we could
+do is maybe just
+
+00:02:09.436 --> 00:02:13.200
+get the first one minute,
+or two minutes of the show
+
+00:02:13.200 --> 00:02:15.710
+because that kind
+of prefetching idea
+
+00:02:15.710 --> 00:02:18.090
+is good because it means
+that, when you hit play, hey,
+
+00:02:18.090 --> 00:02:19.590
+we can just give
+you a flying start.
+
+00:02:19.590 --> 00:02:24.430
+And we can drop back to the
+adaptive network side later on.
+
+00:02:24.430 --> 00:02:26.430
+And so I've been trying
+to tackle both of those.
+
+00:02:26.430 --> 00:02:28.200
+In this particular
+video, I think
+
+00:02:28.200 --> 00:02:30.900
+what I want to do, is I just
+want to talk about the service
+
+00:02:30.900 --> 00:02:36.037
+worker, and the case of
+getting all the video.
+
+00:02:36.037 --> 00:02:38.370
+The one where you say, I want
+to take this video offline
+
+00:02:38.370 --> 00:02:38.920
+for later.
+
+00:02:38.920 --> 00:02:41.140
+Let's talk about
+approaching that problem.
+
+00:02:41.140 --> 00:02:43.890
+Now, I'm not going to dive
+into every little bit of code.
+
+00:02:43.890 --> 00:02:46.500
+There are bits and
+pieces in there
+
+00:02:46.500 --> 00:02:48.702
+that are quite-- they
+take a while to explain.
+
+00:02:48.702 --> 00:02:50.160
+And I think it's
+probably the case,
+
+00:02:50.160 --> 00:02:51.060
+if you just look
+through the code,
+
+00:02:51.060 --> 00:02:52.530
+it'd probably make more sense.
+
+00:02:52.530 --> 00:02:55.860
+But of course, if you do
+that and you have questions,
+
+00:02:55.860 --> 00:02:59.130
+we have the comments below
+for you to ask your questions.
+
+00:02:59.130 --> 00:03:01.310
+So please do feel
+free, as always,
+
+00:03:01.310 --> 00:03:02.310
+to go ahead and do that.
+
+00:03:02.310 --> 00:03:02.890
+Right.
+
+00:03:02.890 --> 00:03:03.950
+Enough talking.
+
+00:03:03.950 --> 00:03:06.510
+Let's look at some codes.
+
+00:03:06.510 --> 00:03:07.020
+Right.
+
+00:03:07.020 --> 00:03:12.705
+I am in the point in my app
+JS where, thanks to the UI--
+
+00:03:12.705 --> 00:03:14.370
+in fact, let me show you the UI.
+
+00:03:14.370 --> 00:03:15.828
+I should have
+started there really.
+
+00:03:15.828 --> 00:03:17.100
+Imagine you are-- let's see.
+
+00:03:17.100 --> 00:03:19.730
+Got this video of me and Jake
+here, and you click this--
+
+00:03:19.730 --> 00:03:20.864
+we don't need this.
+
+00:03:20.864 --> 00:03:22.972
+Getting rid of that.
+
+00:03:22.972 --> 00:03:24.180
+I'm just going to close that.
+
+00:03:24.180 --> 00:03:27.660
+Yeah, close it, and you'd click
+the make available offline
+
+00:03:27.660 --> 00:03:29.280
+button.
+
+00:03:29.280 --> 00:03:33.360
+And we start see-- that was
+very quick, that was very quick.
+
+00:03:33.360 --> 00:03:37.700
+I wish the internet was always
+that fast for me, but it isn't.
+
+00:03:37.700 --> 00:03:40.420
+And because it isn't, we
+have the offline case.
+
+00:03:40.420 --> 00:03:42.610
+Ha ha, perfect.
+
+00:03:42.610 --> 00:03:46.492
+The bit where the
+spinning dial, you
+
+00:03:46.492 --> 00:03:47.700
+know, all that kind of stuff.
+
+00:03:47.700 --> 00:03:48.200
+Right.
+
+00:03:48.200 --> 00:03:49.330
+What's actually happening?
+
+00:03:49.330 --> 00:03:51.840
+So in the app, I
+fire an event that
+
+00:03:51.840 --> 00:03:55.660
+causes this on offline
+toggle to be triggered.
+
+00:03:55.660 --> 00:03:57.750
+And the interesting
+bit here is while I
+
+00:03:57.750 --> 00:03:59.790
+check whether we
+actually have the thing,
+
+00:03:59.790 --> 00:04:03.670
+and if we've already got it,
+then do want to remove it,
+
+00:04:03.670 --> 00:04:04.770
+and so on.
+
+00:04:04.770 --> 00:04:05.660
+And we'll delete it.
+
+00:04:05.660 --> 00:04:06.300
+But if you haven't--
+
+00:04:06.300 --> 00:04:08.341
+which is that case that
+we were just looking at--
+
+00:04:08.341 --> 00:04:10.830
+then we want to
+add it to our cash.
+
+00:04:10.830 --> 00:04:14.430
+And you can see I have
+this offline cache class
+
+00:04:14.430 --> 00:04:16.620
+here when I try
+to add this thing.
+
+00:04:16.620 --> 00:04:19.329
+So that's where the
+rubber hits the road.
+
+00:04:19.329 --> 00:04:21.480
+So we should head
+over to that class.
+
+00:04:21.480 --> 00:04:23.430
+Let me find the actual function.
+
+00:04:23.430 --> 00:04:24.890
+Here we are.
+
+00:04:24.890 --> 00:04:26.692
+And it takes in a
+bunch of things.
+
+00:04:26.692 --> 00:04:28.650
+If we don't support
+caching, then we just bail.
+
+00:04:28.650 --> 00:04:32.350
+But we build a set of assets
+that we're interested in.
+
+00:04:32.350 --> 00:04:35.130
+Do you remember I said it was
+things like the poster image,
+
+00:04:35.130 --> 00:04:35.970
+and so on?
+
+00:04:35.970 --> 00:04:40.270
+In fact, we have them here
+in the constants here.
+
+00:04:40.270 --> 00:04:42.510
+When you go offline, when
+you take a video offline,
+
+00:04:42.510 --> 00:04:44.134
+here's the things
+that I currently get.
+
+00:04:44.134 --> 00:04:45.547
+I get the artwork--
+
+00:04:45.547 --> 00:04:47.880
+I probably only need one of
+these, actually, to be fair.
+
+00:04:47.880 --> 00:04:51.440
+Anyway, I get both artworks,
+a small poster image
+
+00:04:51.440 --> 00:04:53.070
+and the large poster image.
+
+00:04:53.070 --> 00:04:57.846
+And I pretend-- so I get
+the 720p offline manifest,
+
+00:04:57.846 --> 00:04:59.220
+which is a reduced
+dash manifest,
+
+00:04:59.220 --> 00:05:02.550
+with just the 720p
+video and the audio,
+
+00:05:02.550 --> 00:05:05.690
+instead of all of
+the various options.
+
+00:05:05.690 --> 00:05:07.880
+But I pretend that it's
+called dash manifests.
+
+00:05:07.880 --> 00:05:11.780
+So when later on I ask Shaka
+just get DASH manifest.
+
+00:05:11.780 --> 00:05:13.480
+If it hasn't got
+it stored offline,
+
+00:05:13.480 --> 00:05:15.750
+it gets the full one with
+all the representations.
+
+00:05:15.750 --> 00:05:16.440
+If it [? has ?]
+got installations,
+
+00:05:16.440 --> 00:05:17.940
+it's just going to
+get the 720p one.
+
+00:05:17.940 --> 00:05:21.210
+That's my way of locking
+Shaka into the Shaka player
+
+00:05:21.210 --> 00:05:25.440
+into only ever playing
+the 720p video.
+
+00:05:25.440 --> 00:05:28.830
+So it builds up the list of
+assets that we want to get.
+
+00:05:28.830 --> 00:05:32.100
+And you'll see I have this
+special magical chunking thing
+
+00:05:32.100 --> 00:05:33.020
+here.
+
+00:05:33.020 --> 00:05:36.330
+Hmm, right.
+
+00:05:36.330 --> 00:05:40.950
+This has proved to be quite
+the journey, because--
+
+00:05:40.950 --> 00:05:44.550
+I don't know if you didn't catch
+the episode, the entry where
+
+00:05:44.550 --> 00:05:51.280
+I talked about
+the idea that when
+
+00:05:51.280 --> 00:05:55.030
+we make a request for the video,
+we do arrange requests, which
+
+00:05:55.030 --> 00:05:58.600
+means we don't ask for one gig
+of video up front, for example.
+
+00:05:58.600 --> 00:06:01.060
+We say, I want these
+bites to these bites.
+
+00:06:01.060 --> 00:06:03.850
+I want just this range, like
+1000 bytes, or 2000 bytes,
+
+00:06:03.850 --> 00:06:05.680
+or whatever.
+
+00:06:05.680 --> 00:06:07.600
+And I said at the time
+with my prototype,
+
+00:06:07.600 --> 00:06:10.360
+this is going to be a bit
+of an interesting one later.
+
+00:06:10.360 --> 00:06:13.120
+Because in production, if
+you've got a large video,
+
+00:06:13.120 --> 00:06:15.190
+you don't want to store
+it as one big file
+
+00:06:15.190 --> 00:06:17.740
+and then pull it out
+entirely into memory,
+
+00:06:17.740 --> 00:06:20.590
+is like a 1 gig array
+buffer that you then slice,
+
+00:06:20.590 --> 00:06:21.670
+for example.
+
+00:06:21.670 --> 00:06:25.900
+So what I do is as
+the file's coming in,
+
+00:06:25.900 --> 00:06:29.830
+when I'm doing this part
+of this downloading of say
+
+00:06:29.830 --> 00:06:32.110
+the video files,
+and the audio files,
+
+00:06:32.110 --> 00:06:33.410
+I have this chunking file.
+
+00:06:33.410 --> 00:06:35.200
+Which basically means,
+on its way through,
+
+00:06:35.200 --> 00:06:37.960
+please split this
+up into chunks.
+
+00:06:37.960 --> 00:06:41.140
+Later on in the service worker,
+which if we've got time,
+
+00:06:41.140 --> 00:06:44.590
+I'll show you, I ask for
+the chunks that we need.
+
+00:06:44.590 --> 00:06:47.380
+So for example, I have I think
+at the moment half megabyte
+
+00:06:47.380 --> 00:06:48.440
+chunks.
+
+00:06:48.440 --> 00:06:51.250
+And so if you asked
+for a particular range,
+
+00:06:51.250 --> 00:06:54.400
+it might be that I need
+chunks 9, 10, and 11.
+
+00:06:54.400 --> 00:06:57.010
+And so I get 9, 10, and 11,
+and I create an array buffer
+
+00:06:57.010 --> 00:06:59.740
+from those three array
+buffers, one big one.
+
+00:06:59.740 --> 00:07:02.560
+And then I slice out from
+that array buffer the bit
+
+00:07:02.560 --> 00:07:04.005
+that you actually asked for.
+
+00:07:04.005 --> 00:07:06.130
+So it's my way of making
+sure that I don't pull out
+
+00:07:06.130 --> 00:07:08.260
+too much data into memory.
+
+00:07:08.260 --> 00:07:12.894
+I chose in my chunk size, I
+chose half a meg at random,
+
+00:07:12.894 --> 00:07:16.360
+as a sort of guess that
+maybe we'll need two,
+
+00:07:16.360 --> 00:07:17.710
+maybe three occasionally.
+
+00:07:17.710 --> 00:07:21.370
+And sort of a meg, meg
+and a half in memory.
+
+00:07:21.370 --> 00:07:22.540
+Yes, it's a bit garbage-y.
+
+00:07:22.540 --> 00:07:24.710
+No, I don't like it.
+
+00:07:24.710 --> 00:07:27.520
+But it does mean that I'm not
+pulling out a one gig video
+
+00:07:27.520 --> 00:07:29.620
+into memory every time
+we make a request.
+
+00:07:29.620 --> 00:07:30.995
+I'm not saying
+it's always a gig,
+
+00:07:30.995 --> 00:07:32.940
+but I'm just saying
+think big video,
+
+00:07:32.940 --> 00:07:34.730
+and that would be the problem.
+
+00:07:34.730 --> 00:07:36.270
+Now, a longer term
+solution for this
+
+00:07:36.270 --> 00:07:38.110
+that I'd love to
+see on the platform,
+
+00:07:38.110 --> 00:07:40.630
+is the ability when
+you say caches.match,
+
+00:07:40.630 --> 00:07:42.040
+and you give it
+the URL, that you
+
+00:07:42.040 --> 00:07:45.700
+could give it some options
+besides the cache name.
+
+00:07:45.700 --> 00:07:48.460
+But you can actually give
+it the range as well,
+
+00:07:48.460 --> 00:07:53.330
+saying do you happen to also
+have bites 1000 to 2000?
+
+00:07:53.330 --> 00:07:56.380
+Or you know, why
+[? assume? ?] It does,
+
+00:07:56.380 --> 00:07:57.430
+if it's got it in there.
+
+00:07:57.430 --> 00:07:59.949
+But it should--
+those kind of things,
+
+00:07:59.949 --> 00:08:01.990
+you should be able to give
+you the answer, right?
+
+00:08:01.990 --> 00:08:04.930
+As in, no, I don't, because the
+file is only 500 bytes long,
+
+00:08:04.930 --> 00:08:06.112
+or yeah, sure.
+
+00:08:06.112 --> 00:08:07.570
+Well, a lot of that
+needs specking.
+
+00:08:07.570 --> 00:08:09.010
+It's not a thing
+that exists today,
+
+00:08:09.010 --> 00:08:10.843
+so it's something I'm
+actually having to do,
+
+00:08:10.843 --> 00:08:12.352
+and it's a bit of a pain point.
+
+00:08:12.352 --> 00:08:13.060
+But there we are.
+
+00:08:13.060 --> 00:08:15.700
+So wow, just a
+chunk true, and that
+
+00:08:15.700 --> 00:08:17.530
+required a whole
+heap of explanation.
+
+00:08:17.530 --> 00:08:18.760
+See what I mean?
+
+00:08:18.760 --> 00:08:20.110
+So what does the chunking do?
+
+00:08:20.110 --> 00:08:23.020
+Well, let's keep going
+through the code.
+
+00:08:23.020 --> 00:08:24.940
+So we build on
+this list of assets
+
+00:08:24.940 --> 00:08:26.590
+that we actually want to push.
+
+00:08:26.590 --> 00:08:31.000
+And eventually, we get to
+the idea of downloading.
+
+00:08:31.000 --> 00:08:34.210
+And downloading is here.
+
+00:08:34.210 --> 00:08:36.490
+This is probably one of
+the more interesting bits,
+
+00:08:36.490 --> 00:08:39.549
+because what I do is I
+have a thing with which I
+
+00:08:39.549 --> 00:08:41.590
+call track download--
+
+00:08:41.590 --> 00:08:43.659
+interesting.
+
+00:08:43.659 --> 00:08:46.720
+And this actually looks
+probably fairly straightforward,
+
+00:08:46.720 --> 00:08:47.964
+I imagine, to many of you.
+
+00:08:47.964 --> 00:08:49.880
+Or if you haven't done
+service work and stuff,
+
+00:08:49.880 --> 00:08:51.400
+this will look slightly bizarre.
+
+00:08:51.400 --> 00:08:54.640
+If you have, it'll make sense.
+
+00:08:54.640 --> 00:08:59.350
+We open the cache, and we
+take whatever the request is
+
+00:08:59.350 --> 00:09:02.320
+and the response is, and we
+just pop that in the cache,
+
+00:09:02.320 --> 00:09:03.610
+if it's not set to chunk.
+
+00:09:03.610 --> 00:09:06.100
+If it is, we cache in chunks.
+
+00:09:06.100 --> 00:09:08.920
+So we seem to be doing two
+things with all our responses.
+
+00:09:08.920 --> 00:09:10.884
+All the things that
+we've asked to download,
+
+00:09:10.884 --> 00:09:12.050
+we're doing two things with.
+
+00:09:12.050 --> 00:09:15.630
+Firstly, we're tracking
+them, and secondly, we're
+
+00:09:15.630 --> 00:09:17.060
+caching in chunks.
+
+00:09:17.060 --> 00:09:20.470
+Now, I better not say the
+word streams three times
+
+00:09:20.470 --> 00:09:23.990
+in quick succession because
+if I do, Jake will show up.
+
+00:09:23.990 --> 00:09:26.403
+And I think we can live
+without that, don't you?
+
+00:09:26.403 --> 00:09:28.630
+Shh, OK.
+
+00:09:28.630 --> 00:09:30.240
+Streams, that's
+what we're doing.
+
+00:09:30.240 --> 00:09:32.730
+Imagine that we've
+made a fetch request,
+
+00:09:32.730 --> 00:09:36.450
+and one of the things we get
+back is a readable stream.
+
+00:09:36.450 --> 00:09:38.442
+At least, you can
+in Chrome today.
+
+00:09:38.442 --> 00:09:39.900
+You can also say
+with the response,
+
+00:09:39.900 --> 00:09:41.983
+you say, give me the JSON,
+get me the text, get me
+
+00:09:41.983 --> 00:09:42.680
+an array buffer.
+
+00:09:42.680 --> 00:09:44.400
+But you can say--
+
+00:09:44.400 --> 00:09:46.770
+I want to read this
+as a readable stream.
+
+00:09:46.770 --> 00:09:51.360
+And in order to handle this,
+when a response is read,
+
+00:09:51.360 --> 00:09:55.560
+once it's consumed
+actually in this world,
+
+00:09:55.560 --> 00:09:58.230
+which means you can't do two
+things with a single stream.
+
+00:09:58.230 --> 00:09:59.964
+You can't both say
+track a download
+
+00:09:59.964 --> 00:10:01.380
+and count the
+number of bytes that
+
+00:10:01.380 --> 00:10:04.940
+are passed through the stream,
+as well as caching into chunks.
+
+00:10:04.940 --> 00:10:07.140
+Like read the stream and
+chunk it up as it goes.
+
+00:10:07.140 --> 00:10:09.210
+But you can clone a
+response, which is
+
+00:10:09.210 --> 00:10:11.280
+kind of like teeing a stream.
+
+00:10:11.280 --> 00:10:13.620
+If you've not done
+anything with streams,
+
+00:10:13.620 --> 00:10:15.865
+the idea is that imagine
+that the t-shape,
+
+00:10:15.865 --> 00:10:18.240
+and it comes up the middle,
+and then splits out into two.
+
+00:10:18.240 --> 00:10:20.947
+It's our way of
+taking the stream
+
+00:10:20.947 --> 00:10:22.530
+and turning it into
+two streams, which
+
+00:10:22.530 --> 00:10:23.980
+is exactly what I'm doing here.
+
+00:10:23.980 --> 00:10:25.840
+So let's have a look
+at what we're doing.
+
+00:10:25.840 --> 00:10:32.069
+So imagine then, we've got the
+video coming down the wire, OK.
+
+00:10:32.069 --> 00:10:33.610
+We're going to do
+two things with it.
+
+00:10:33.610 --> 00:10:35.700
+One, we're going to
+track the download.
+
+00:10:35.700 --> 00:10:39.090
+Secondly, we're going
+to cache it into chunks.
+
+00:10:39.090 --> 00:10:41.910
+So let's go down to
+the track downloads.
+
+00:10:44.720 --> 00:10:45.872
+Where is that?
+
+00:10:45.872 --> 00:10:46.830
+Where's track download?
+
+00:10:46.830 --> 00:10:48.205
+Maybe I should
+just look that up.
+
+00:10:50.080 --> 00:10:50.580
+OK.
+
+00:10:50.580 --> 00:10:55.255
+For each response, what
+I do is I get a reader.
+
+00:10:55.255 --> 00:10:55.880
+I get a reader.
+
+00:10:55.880 --> 00:10:57.690
+You can see here,
+actually, I clone it.
+
+00:10:57.690 --> 00:10:59.600
+So that's the first
+thing I actually do--
+
+00:10:59.600 --> 00:11:03.210
+I clone it to make sure
+that whatever I do here
+
+00:11:03.210 --> 00:11:04.830
+on the response
+means that it's not
+
+00:11:04.830 --> 00:11:06.947
+going to be consuming
+the response,
+
+00:11:06.947 --> 00:11:08.530
+and stop it being
+used somewhere else.
+
+00:11:08.530 --> 00:11:09.905
+And the first
+thing I do, is when
+
+00:11:09.905 --> 00:11:12.000
+I get one of these responses
+I'll fetch the video,
+
+00:11:12.000 --> 00:11:13.916
+the fetch comes back and
+I go right, clone it.
+
+00:11:13.916 --> 00:11:15.420
+First of all, clone this.
+
+00:11:15.420 --> 00:11:18.360
+So that I can now
+operate independently
+
+00:11:18.360 --> 00:11:21.240
+with my clone of the response.
+
+00:11:21.240 --> 00:11:25.030
+And then I ask for
+a reader on there.
+
+00:11:25.030 --> 00:11:28.770
+So clone.body.getreader,
+which is a readable stream.
+
+00:11:28.770 --> 00:11:30.390
+And then I can
+start reading, and I
+
+00:11:30.390 --> 00:11:33.900
+get-- there's a callback
+that you pass to the promise
+
+00:11:33.900 --> 00:11:34.650
+when that happens.
+
+00:11:34.650 --> 00:11:38.580
+So you read from the reader, and
+then you say, on-stream data,
+
+00:11:38.580 --> 00:11:39.690
+do this thing.
+
+00:11:39.690 --> 00:11:41.850
+And it's a bit
+convoluted actually,
+
+00:11:41.850 --> 00:11:45.415
+when you do stuff with this
+because you kind of pull
+
+00:11:45.415 --> 00:11:47.040
+the callback, and
+then in the callback,
+
+00:11:47.040 --> 00:11:50.154
+you setup the next
+callback of the callback.
+
+00:11:50.154 --> 00:11:52.110
+Yes, you do.
+
+00:11:52.110 --> 00:11:55.290
+So on stream data, we just
+say, well, are you done?
+
+00:11:55.290 --> 00:11:57.600
+If so, you know, if--
+
+00:11:57.600 --> 00:11:58.530
+blah, blah, blah.
+
+00:11:58.530 --> 00:12:02.160
+We completed, is
+the general idea.
+
+00:12:02.160 --> 00:12:05.129
+Because one of the things
+that's the case here,
+
+00:12:05.129 --> 00:12:06.420
+is that we've got a byte total.
+
+00:12:06.420 --> 00:12:09.210
+So remember, I'm getting
+like five or six files,
+
+00:12:09.210 --> 00:12:10.830
+and so the byte total
+has to represent
+
+00:12:10.830 --> 00:12:16.780
+the entire total of all five,
+six, however many files.
+
+00:12:16.780 --> 00:12:18.510
+And so each one
+of these responses
+
+00:12:18.510 --> 00:12:20.490
+is contributing to that total.
+
+00:12:20.490 --> 00:12:23.580
+And when one of the
+streams finishes, it will--
+
+00:12:23.580 --> 00:12:26.070
+if the byte count isn't
+the final byte amount,
+
+00:12:26.070 --> 00:12:27.739
+well, we don't need
+to do anything.
+
+00:12:27.739 --> 00:12:29.280
+If it is the final
+byte amount, we've
+
+00:12:29.280 --> 00:12:32.250
+actually completed the
+download of all our files.
+
+00:12:32.250 --> 00:12:34.455
+And so we can basically
+say, yeah, we're done.
+
+00:12:34.455 --> 00:12:36.330
+We can call this callback,
+which is something
+
+00:12:36.330 --> 00:12:37.413
+I register somewhere else.
+
+00:12:37.413 --> 00:12:40.510
+That's like, OK, update the UI,
+and all those kinds of things.
+
+00:12:40.510 --> 00:12:44.487
+So remember now, we've had
+the audio file come in,
+
+00:12:44.487 --> 00:12:45.570
+or the video file come in.
+
+00:12:45.570 --> 00:12:46.620
+We've read some bytes.
+
+00:12:46.620 --> 00:12:49.800
+And we basically keep
+tracking the length
+
+00:12:49.800 --> 00:12:51.279
+of each of these reads.
+
+00:12:51.279 --> 00:12:53.820
+And that allows us to say, well,
+how many bytes have actually
+
+00:12:53.820 --> 00:12:54.840
+come in?
+
+00:12:54.840 --> 00:12:58.020
+And we can post back to
+this on progress callback
+
+00:12:58.020 --> 00:13:00.699
+with how many bytes we've
+got, and how many bytes
+
+00:13:00.699 --> 00:13:01.740
+we're expecting in total.
+
+00:13:01.740 --> 00:13:03.239
+And as I say, when
+we finish, we can
+
+00:13:03.239 --> 00:13:06.020
+call this uncomplete that says
+right, all the bytes are in,
+
+00:13:06.020 --> 00:13:07.180
+we're done.
+
+00:13:07.180 --> 00:13:08.940
+So that's what the
+tracking part does.
+
+00:13:08.940 --> 00:13:12.380
+And that's a great
+way of using streams.
+
+00:13:12.380 --> 00:13:13.380
+I say it's a great way--
+
+00:13:13.380 --> 00:13:16.080
+it's a garbage-y
+way, unfortunately.
+
+00:13:16.080 --> 00:13:19.110
+Because imagine every time
+this callback is called,
+
+00:13:19.110 --> 00:13:22.500
+this result here,
+it's an array buffer.
+
+00:13:22.500 --> 00:13:24.182
+I believe it's got
+lots of bytes in it.
+
+00:13:24.182 --> 00:13:25.890
+And I don't do anything
+with those bytes,
+
+00:13:25.890 --> 00:13:27.630
+apart from ask for the length.
+
+00:13:27.630 --> 00:13:32.130
+I would love it if we had some
+mechanism with, say a fetch,
+
+00:13:32.130 --> 00:13:35.570
+to say just give me progress
+events like you do with XHR's.
+
+00:13:35.570 --> 00:13:36.930
+That would be a nice thing.
+
+00:13:36.930 --> 00:13:39.630
+And I believe it's something,
+once again, that my friend
+
+00:13:39.630 --> 00:13:42.090
+Jake is looking at.
+
+00:13:42.090 --> 00:13:46.890
+Hurry up, Jake, and whoever
+else is working on it.
+
+00:13:46.890 --> 00:13:48.300
+I have need of it.
+
+00:13:48.300 --> 00:13:49.520
+I need it.
+
+00:13:49.520 --> 00:13:51.090
+Anyway, so that's one part.
+
+00:13:51.090 --> 00:13:52.950
+We're tracking the
+download, we basically
+
+00:13:52.950 --> 00:13:54.690
+ask for all the bytes that are
+passing through the stream,
+
+00:13:54.690 --> 00:13:56.940
+and we post back every
+time we get an update,
+
+00:13:56.940 --> 00:13:59.460
+basically going,
+more bytes came in.
+
+00:13:59.460 --> 00:14:02.160
+And that's what I used
+to do, that pie chart.
+
+00:14:02.160 --> 00:14:03.420
+If we've got time--
+
+00:14:03.420 --> 00:14:05.280
+probably won't--
+if we have time,
+
+00:14:05.280 --> 00:14:07.600
+I'll quickly show you how
+that pie chart's done,
+
+00:14:07.600 --> 00:14:08.730
+it's pretty neat.
+
+00:14:08.730 --> 00:14:12.240
+And then the other thing, as I
+said, was caching into chunks.
+
+00:14:12.240 --> 00:14:15.690
+So this was the idea that
+instead of a one gig video,
+
+00:14:15.690 --> 00:14:18.717
+or a half gig video, or a
+200 meg video in the cache,
+
+00:14:18.717 --> 00:14:21.300
+instead, what we want to do is
+we actually want to separate it
+
+00:14:21.300 --> 00:14:22.885
+out into like half made chunks.
+
+00:14:22.885 --> 00:14:25.260
+And then we can build our
+responses in the service worker
+
+00:14:25.260 --> 00:14:25.980
+later.
+
+00:14:25.980 --> 00:14:28.586
+So the caching chunks,
+once again with cloning
+
+00:14:28.586 --> 00:14:30.960
+the response, probably don't
+technically need to do that.
+
+00:14:30.960 --> 00:14:34.500
+We could just consume the
+response here if we wanted to.
+
+00:14:34.500 --> 00:14:37.290
+Not dissimilar-- get a reader.
+
+00:14:37.290 --> 00:14:42.960
+And what we do is we go
+through reading in chunks.
+
+00:14:42.960 --> 00:14:46.230
+And every time we
+hit our chunk size,
+
+00:14:46.230 --> 00:14:50.520
+we commit that particular
+chunk into the cache.
+
+00:14:50.520 --> 00:14:52.650
+That's this commit buffer here.
+
+00:14:52.650 --> 00:14:55.260
+And then we reduce the amount
+that we're expecting still
+
+00:14:55.260 --> 00:14:58.380
+to come in by that chunk size,
+and we kind of restart again.
+
+00:14:58.380 --> 00:15:01.105
+So we kind of have this
+buffer, and we fill it up.
+
+00:15:01.105 --> 00:15:02.730
+And then when that's
+done, we basically
+
+00:15:02.730 --> 00:15:05.150
+pop that into a response.
+
+00:15:05.150 --> 00:15:06.330
+Then we reset and go again.
+
+00:15:06.330 --> 00:15:09.060
+And eventually, we
+run out of bytes,
+
+00:15:09.060 --> 00:15:11.220
+which is the result.done.
+
+00:15:11.220 --> 00:15:13.920
+And we commit whatever
+buffer size we've
+
+00:15:13.920 --> 00:15:15.590
+got left there at the end.
+
+00:15:15.590 --> 00:15:18.420
+So I imagine to say
+instead of the half meg,
+
+00:15:18.420 --> 00:15:20.220
+we've ended with like
+200 bytes at the end.
+
+00:15:20.220 --> 00:15:23.730
+We just commit to final buffer
+with just those 200 bytes in.
+
+00:15:23.730 --> 00:15:25.700
+The commit buffer has this.
+
+00:15:25.700 --> 00:15:30.450
+It has one header that I set,
+which is just the chunk size.
+
+00:15:30.450 --> 00:15:33.270
+Because I need to know later
+on about how many chunks
+
+00:15:33.270 --> 00:15:35.190
+actually--
+
+00:15:35.190 --> 00:15:38.310
+or the chunk sizes that are
+actually stored, in case I've
+
+00:15:38.310 --> 00:15:40.710
+got a part chunk at the end,
+and I need to kind of know,
+
+00:15:40.710 --> 00:15:42.110
+do you actually
+have enough bytes
+
+00:15:42.110 --> 00:15:45.480
+to satisfy this thing, the
+range request that came in?
+
+00:15:45.480 --> 00:15:50.460
+Anyway, nonetheless, we do
+a cache put of that chunk.
+
+00:15:50.460 --> 00:15:52.500
+Actually, on the front
+end, let me show you
+
+00:15:52.500 --> 00:15:53.640
+what that looks like.
+
+00:15:53.640 --> 00:15:58.230
+If we go to application, and
+we take a look in the cache
+
+00:15:58.230 --> 00:16:02.310
+storage, you see the
+CDS show reel here,
+
+00:16:02.310 --> 00:16:04.490
+which is the cache for
+this particular episode.
+
+00:16:04.490 --> 00:16:06.166
+And there you go, look.
+
+00:16:06.166 --> 00:16:09.390
+You can see it's split down
+this 720p stream, all the way
+
+00:16:09.390 --> 00:16:10.830
+zero, one, two.
+
+00:16:10.830 --> 00:16:13.440
+Don't you just love
+stream based ordering?
+
+00:16:13.440 --> 00:16:15.960
+All the way up to,
+what's that, 32?
+
+00:16:15.960 --> 00:16:19.630
+Yes, into 32 half
+megabyte chunks.
+
+00:16:19.630 --> 00:16:21.000
+Cool.
+
+00:16:21.000 --> 00:16:22.717
+So that was the first bit.
+
+00:16:22.717 --> 00:16:24.300
+And you can also see
+here, by the way,
+
+00:16:24.300 --> 00:16:25.966
+there's the artwork
+and everything else.
+
+00:16:25.966 --> 00:16:29.700
+And you see I actually keep one
+cache directly for this video.
+
+00:16:29.700 --> 00:16:32.220
+That means that later
+on, it's a lot easier
+
+00:16:32.220 --> 00:16:33.630
+from my UI perspective.
+
+00:16:33.630 --> 00:16:36.240
+Because I can say, when
+I'm looking at this video,
+
+00:16:36.240 --> 00:16:38.640
+and I look at it's
+URL, I just go,
+
+00:16:38.640 --> 00:16:42.820
+do you have CDS/showreel,
+by the way, caches?
+
+00:16:42.820 --> 00:16:45.390
+And if the answer is
+sure, then I go cool.
+
+00:16:45.390 --> 00:16:47.220
+I'm going to assume
+you have that video.
+
+00:16:47.220 --> 00:16:49.560
+And so my add and
+remove is based
+
+00:16:49.560 --> 00:16:50.920
+at the kind of cache level.
+
+00:16:50.920 --> 00:16:55.050
+So when I say get rid of this,
+If I remove this offline copy.
+
+00:16:55.050 --> 00:16:56.890
+Boop.
+
+00:16:56.890 --> 00:16:59.860
+And then I refresh the
+cache storage, refresh it.
+
+00:16:59.860 --> 00:17:02.340
+There you go, you see that
+the entire cache is gone.
+
+00:17:02.340 --> 00:17:04.680
+But it didn't get in the
+way of say, the assets
+
+00:17:04.680 --> 00:17:10.399
+that I need for all the
+icons and everything else.
+
+00:17:10.399 --> 00:17:11.200
+Cool?
+
+00:17:11.200 --> 00:17:12.089
+Make sense?
+
+00:17:12.089 --> 00:17:13.589
+Hopefully all that makes sense.
+
+00:17:13.589 --> 00:17:16.069
+Also, I have the old
+Chrome devs with me
+
+00:17:16.069 --> 00:17:18.390
+because I was running
+out on local host ATAT.
+
+00:17:18.390 --> 00:17:21.599
+Flashbacks of fun.
+
+00:17:21.599 --> 00:17:24.130
+Right.
+
+00:17:24.130 --> 00:17:28.170
+I'm going to stop
+there, I think.
+
+00:17:28.170 --> 00:17:29.700
+In the next entry,
+I will actually
+
+00:17:29.700 --> 00:17:33.340
+show you the
+corresponding other side,
+
+00:17:33.340 --> 00:17:36.610
+which will be the
+service worker code.
+
+00:17:36.610 --> 00:17:39.930
+But before I do, I did say I
+was going to show you the dial.
+
+00:17:39.930 --> 00:17:41.560
+Let me just show you
+this here, right?
+
+00:17:41.560 --> 00:17:42.060
+See this?
+
+00:17:42.060 --> 00:17:45.300
+When it goes weeeooh, and it
+goes round like that in a dial.
+
+00:17:45.300 --> 00:17:46.170
+How did I do that?
+
+00:17:46.170 --> 00:17:47.590
+Before we go, I'm going
+to show you that really,
+
+00:17:47.590 --> 00:17:48.480
+really quickly.
+
+00:17:48.480 --> 00:17:52.941
+It's in the--
+[HUMMING] where is it?
+
+00:17:52.941 --> 00:17:53.440
+Where is it?
+
+00:17:53.440 --> 00:17:54.280
+Where is it?
+
+00:17:54.280 --> 00:17:56.080
+The download progress.
+
+00:17:56.080 --> 00:17:57.390
+Look at this.
+
+00:17:57.390 --> 00:18:00.480
+It is basically, this is
+what actually gets called
+
+00:18:00.480 --> 00:18:02.010
+by the on progress callback.
+
+00:18:02.010 --> 00:18:05.470
+The percentage value is
+a value between 0 and 1,
+
+00:18:05.470 --> 00:18:07.530
+which is the bytes count
+over the bytes total.
+
+00:18:07.530 --> 00:18:08.340
+OK?
+
+00:18:08.340 --> 00:18:09.060
+And it comes in.
+
+00:18:09.060 --> 00:18:11.790
+And we have a target,
+which happens to be an SVG.
+
+00:18:11.790 --> 00:18:14.070
+And that matters because
+what we're actually doing,
+
+00:18:14.070 --> 00:18:18.140
+is doing an SVG path.
+
+00:18:18.140 --> 00:18:20.580
+It's a path, it's an SVG path.
+
+00:18:20.580 --> 00:18:24.540
+And you can see here, what we
+do is we take that percentage,
+
+00:18:24.540 --> 00:18:28.900
+and I do a little bit
+of cause and sign work
+
+00:18:28.900 --> 00:18:31.131
+to figure out what
+arc we actually need,
+
+00:18:31.131 --> 00:18:32.130
+based on the percentage.
+
+00:18:32.130 --> 00:18:36.670
+So one is a full
+revolution, and then it's
+
+00:18:36.670 --> 00:18:38.280
+some proportion of
+that revolution.
+
+00:18:38.280 --> 00:18:42.059
+So this is something I
+didn't know before I actually
+
+00:18:42.059 --> 00:18:42.850
+started doing this.
+
+00:18:42.850 --> 00:18:45.720
+I had a sneaking suspicion
+that with SVG you
+
+00:18:45.720 --> 00:18:49.060
+could create paths on the fly.
+
+00:18:49.060 --> 00:18:51.570
+And I had a sneaking
+suspicion that arcs might well
+
+00:18:51.570 --> 00:18:52.850
+be one of those things.
+
+00:18:52.850 --> 00:18:55.230
+And you can see here that this
+is exactly what I'm doing.
+
+00:18:55.230 --> 00:18:58.460
+So I find the target,
+I find a thing
+
+00:18:58.460 --> 00:19:02.370
+called path.dial, which is just
+a path element inside the SVG.
+
+00:19:02.370 --> 00:19:07.880
+And I go through, and I create
+based on a bit of calculation,
+
+00:19:07.880 --> 00:19:09.740
+what I think the arc should be.
+
+00:19:09.740 --> 00:19:13.290
+And it's got weird flags,
+like this large arc flag,
+
+00:19:13.290 --> 00:19:17.220
+and targets, and all the--
+
+00:19:17.220 --> 00:19:20.250
+have a look at the
+documentation on how
+
+00:19:20.250 --> 00:19:22.940
+to do arcs inside of SVG.
+
+00:19:22.940 --> 00:19:24.060
+It is slightly bizarre.
+
+00:19:24.060 --> 00:19:27.600
+I'm much more used to the
+canvas way of doing things.
+
+00:19:27.600 --> 00:19:28.935
+Oh, well.
+
+00:19:28.935 --> 00:19:30.060
+But this works brilliantly.
+
+00:19:30.060 --> 00:19:35.610
+So based on the percentage,
+I just spin an arc through,
+
+00:19:35.610 --> 00:19:39.056
+and I just sort of make a
+pie chart thing going up.
+
+00:19:39.056 --> 00:19:40.680
+And then, I set the
+attribute, and that
+
+00:19:40.680 --> 00:19:43.010
+causes the SVG to update.
+
+00:19:43.010 --> 00:19:45.540
+And it all works
+really well, actually
+
+00:19:45.540 --> 00:19:46.820
+really, I'm very happy.
+
+00:19:46.820 --> 00:19:52.470
+So this little bit of code
+here, all 50 odd lines of it
+
+00:19:52.470 --> 00:19:54.100
+does the job just great.
+
+00:19:54.100 --> 00:19:55.590
+And obviously,
+means in my UI, it
+
+00:19:55.590 --> 00:19:59.970
+can give a nice bit of progress
+to the user on how well
+
+00:19:59.970 --> 00:20:02.880
+the download process is going.
+
+00:20:02.880 --> 00:20:04.000
+So there you have it.
+
+00:20:04.000 --> 00:20:06.720
+That is the purpose of
+downloading the files,
+
+00:20:06.720 --> 00:20:09.870
+chunking them, using streams,
+giving progress, updating
+
+00:20:09.870 --> 00:20:10.946
+the UI.
+
+00:20:10.946 --> 00:20:13.320
+We're not even done yet,
+because we actually haven't even
+
+00:20:13.320 --> 00:20:15.810
+responded to the user's
+request, or the player's
+
+00:20:15.810 --> 00:20:18.220
+request for range requests.
+
+00:20:18.220 --> 00:20:19.676
+Give it a sec, hang on.
+
+00:20:19.676 --> 00:20:20.550
+Let's try that again.
+
+00:20:20.550 --> 00:20:24.540
+We haven't even responded to
+the video player's range request
+
+00:20:24.540 --> 00:20:26.560
+coming through the
+service worker.
+
+00:20:26.560 --> 00:20:28.561
+For that one, you'll have
+to join me next time.
+
+00:20:28.561 --> 00:20:30.060
+Now, don't forget
+you can subscribe,
+
+00:20:30.060 --> 00:20:31.851
+don't forget you can
+drop in your comments.
+
+00:20:31.851 --> 00:20:35.500
+As always, thank you so much
+for all the feedback, all
+
+00:20:35.500 --> 00:20:37.500
+the ideas, all the
+suggestions, all the comments
+
+00:20:37.500 --> 00:20:38.291
+that you're making.
+
+00:20:38.291 --> 00:20:41.400
+I do love reading them
+all, and I will catch you--
+
+00:20:41.400 --> 00:20:43.260
+yep, you guessed it--
+
+00:20:43.260 --> 00:20:45.650
+next time.
+
+00:20:45.650 --> 00:20:46.840
+Hello, thanks for watching.
+
+00:20:46.840 --> 00:20:48.420
+If you enjoyed this
+video, well, you
+
+00:20:48.420 --> 00:20:50.460
+may enjoy other videos
+that we make too.
+
+00:20:50.460 --> 00:20:52.320
+So don't forget
+you can subscribe
+
+00:20:52.320 --> 00:20:54.720
+and you'll get notified when
+we push out a new video.
+
+00:20:54.720 --> 00:20:57.210
+And there's more videos
+over there, or down there,
+
+00:20:57.210 --> 00:20:59.940
+depending on how you're
+watching the YouTubes right now.
+
+00:20:59.940 --> 00:21:02.180
+Definitely click on those.
+

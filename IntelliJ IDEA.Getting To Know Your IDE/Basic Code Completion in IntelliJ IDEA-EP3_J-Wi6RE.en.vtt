@@ -1,0 +1,472 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.620 --> 00:00:04.889 align:start position:0%
+ 
+code<00:00:03.340><c> completion</c><00:00:03.730><c> is</c><00:00:04.029><c> a</c><00:00:04.060><c> simple</c><00:00:04.450><c> feature</c><00:00:04.630><c> in</c>
+
+00:00:04.889 --> 00:00:04.899 align:start position:0%
+code completion is a simple feature in
+ 
+
+00:00:04.899 --> 00:00:07.019 align:start position:0%
+code completion is a simple feature in
+many<00:00:05.050><c> ideas</c><00:00:05.439><c> that</c><00:00:05.859><c> developers</c><00:00:06.490><c> may</c><00:00:06.639><c> take</c><00:00:06.819><c> for</c>
+
+00:00:07.019 --> 00:00:07.029 align:start position:0%
+many ideas that developers may take for
+ 
+
+00:00:07.029 --> 00:00:09.000 align:start position:0%
+many ideas that developers may take for
+granted<00:00:07.210><c> but</c><00:00:07.540><c> really</c><00:00:08.260><c> has</c><00:00:08.380><c> a</c><00:00:08.410><c> lot</c><00:00:08.469><c> of</c><00:00:08.679><c> powerful</c>
+
+00:00:09.000 --> 00:00:09.010 align:start position:0%
+granted but really has a lot of powerful
+ 
+
+00:00:09.010 --> 00:00:11.340 align:start position:0%
+granted but really has a lot of powerful
+functionality<00:00:09.760><c> built</c><00:00:09.910><c> into</c><00:00:10.179><c> it</c><00:00:10.450><c> let's</c><00:00:11.200><c> take</c><00:00:11.260><c> a</c>
+
+00:00:11.340 --> 00:00:11.350 align:start position:0%
+functionality built into it let's take a
+ 
+
+00:00:11.350 --> 00:00:12.960 align:start position:0%
+functionality built into it let's take a
+look<00:00:11.500><c> at</c><00:00:11.560><c> how</c><00:00:11.650><c> basic</c><00:00:12.070><c> code</c><00:00:12.250><c> completion</c><00:00:12.610><c> works</c>
+
+00:00:12.960 --> 00:00:12.970 align:start position:0%
+look at how basic code completion works
+ 
+
+00:00:12.970 --> 00:00:15.810 align:start position:0%
+look at how basic code completion works
+in<00:00:13.210><c> IntelliJ</c><00:00:13.600><c> IDEA</c><00:00:14.130><c> so</c><00:00:15.130><c> intelligent</c><00:00:15.580><c> idea</c>
+
+00:00:15.810 --> 00:00:15.820 align:start position:0%
+in IntelliJ IDEA so intelligent idea
+ 
+
+00:00:15.820 --> 00:00:18.210 align:start position:0%
+in IntelliJ IDEA so intelligent idea
+index<00:00:16.269><c> is</c><00:00:16.420><c> your</c><00:00:16.570><c> entire</c><00:00:16.869><c> project</c><00:00:17.500><c> and</c><00:00:18.099><c> when</c>
+
+00:00:18.210 --> 00:00:18.220 align:start position:0%
+index is your entire project and when
+ 
+
+00:00:18.220 --> 00:00:21.540 align:start position:0%
+index is your entire project and when
+you<00:00:18.310><c> write</c><00:00:18.550><c> code</c><00:00:19.289><c> it</c><00:00:20.289><c> updates</c><00:00:20.860><c> the</c><00:00:21.039><c> completion</c>
+
+00:00:21.540 --> 00:00:21.550 align:start position:0%
+you write code it updates the completion
+ 
+
+00:00:21.550 --> 00:00:23.730 align:start position:0%
+you write code it updates the completion
+list<00:00:21.730><c> and</c><00:00:22.210><c> gives</c><00:00:22.449><c> you</c><00:00:22.539><c> a</c><00:00:22.570><c> visual</c><00:00:22.840><c> reference</c><00:00:23.230><c> so</c>
+
+00:00:23.730 --> 00:00:23.740 align:start position:0%
+list and gives you a visual reference so
+ 
+
+00:00:23.740 --> 00:00:26.010 align:start position:0%
+list and gives you a visual reference so
+that<00:00:23.770><c> as</c><00:00:24.070><c> you're</c><00:00:24.520><c> typing</c><00:00:25.000><c> you're</c><00:00:25.779><c> getting</c>
+
+00:00:26.010 --> 00:00:26.020 align:start position:0%
+that as you're typing you're getting
+ 
+
+00:00:26.020 --> 00:00:28.859 align:start position:0%
+that as you're typing you're getting
+constant<00:00:26.500><c> feedback</c><00:00:26.920><c> from</c><00:00:27.160><c> the</c><00:00:27.279><c> IDE</c><00:00:27.869><c> you're</c>
+
+00:00:28.859 --> 00:00:28.869 align:start position:0%
+constant feedback from the IDE you're
+ 
+
+00:00:28.869 --> 00:00:30.359 align:start position:0%
+constant feedback from the IDE you're
+directly<00:00:29.170><c> interacting</c><00:00:29.740><c> with</c><00:00:29.859><c> the</c><00:00:29.980><c> syntax</c>
+
+00:00:30.359 --> 00:00:30.369 align:start position:0%
+directly interacting with the syntax
+ 
+
+00:00:30.369 --> 00:00:32.970 align:start position:0%
+directly interacting with the syntax
+tree<00:00:30.640><c> and</c><00:00:30.939><c> can</c><00:00:31.660><c> focus</c><00:00:31.810><c> on</c><00:00:32.199><c> the</c><00:00:32.469><c> larger</c><00:00:32.680><c> picture</c>
+
+00:00:32.970 --> 00:00:32.980 align:start position:0%
+tree and can focus on the larger picture
+ 
+
+00:00:32.980 --> 00:00:35.250 align:start position:0%
+tree and can focus on the larger picture
+of<00:00:33.309><c> composing</c><00:00:33.699><c> ideas</c><00:00:34.269><c> rather</c><00:00:35.110><c> than</c>
+
+00:00:35.250 --> 00:00:35.260 align:start position:0%
+of composing ideas rather than
+ 
+
+00:00:35.260 --> 00:00:36.440 align:start position:0%
+of composing ideas rather than
+keystrokes
+
+00:00:36.440 --> 00:00:36.450 align:start position:0%
+keystrokes
+ 
+
+00:00:36.450 --> 00:00:39.060 align:start position:0%
+keystrokes
+this<00:00:37.450><c> works</c><00:00:37.660><c> for</c><00:00:37.899><c> statically</c><00:00:38.470><c> as</c><00:00:38.620><c> well</c><00:00:38.980><c> as</c>
+
+00:00:39.060 --> 00:00:39.070 align:start position:0%
+this works for statically as well as
+ 
+
+00:00:39.070 --> 00:00:41.549 align:start position:0%
+this works for statically as well as
+dynamically<00:00:39.670><c> typed</c><00:00:39.940><c> languages</c><00:00:40.480><c> so</c><00:00:41.260><c> that</c><00:00:41.410><c> as</c>
+
+00:00:41.549 --> 00:00:41.559 align:start position:0%
+dynamically typed languages so that as
+ 
+
+00:00:41.559 --> 00:00:45.330 align:start position:0%
+dynamically typed languages so that as
+soon<00:00:41.829><c> as</c><00:00:41.950><c> you</c><00:00:42.070><c> add</c><00:00:42.190><c> a</c><00:00:42.219><c> symbol</c><00:00:44.190><c> you</c><00:00:45.190><c> can</c>
+
+00:00:45.330 --> 00:00:45.340 align:start position:0%
+soon as you add a symbol you can
+ 
+
+00:00:45.340 --> 00:00:51.560 align:start position:0%
+soon as you add a symbol you can
+immediately<00:00:45.610><c> reference</c><00:00:46.270><c> that</c><00:00:46.450><c> later</c><00:00:46.750><c> on</c>
+
+00:00:51.560 --> 00:00:51.570 align:start position:0%
+ 
+ 
+
+00:00:51.570 --> 00:00:53.940 align:start position:0%
+ 
+although<00:00:52.570><c> instant</c><00:00:52.930><c> completion</c><00:00:53.320><c> is</c><00:00:53.440><c> available</c>
+
+00:00:53.940 --> 00:00:53.950 align:start position:0%
+although instant completion is available
+ 
+
+00:00:53.950 --> 00:00:56.310 align:start position:0%
+although instant completion is available
+whenever<00:00:54.219><c> you</c><00:00:54.370><c> use</c><00:00:54.579><c> the</c><00:00:54.789><c> dot</c><00:00:54.969><c> operator</c><00:00:55.320><c> you</c>
+
+00:00:56.310 --> 00:00:56.320 align:start position:0%
+whenever you use the dot operator you
+ 
+
+00:00:56.320 --> 00:00:58.770 align:start position:0%
+whenever you use the dot operator you
+can<00:00:56.500><c> bring</c><00:00:56.649><c> it</c><00:00:56.770><c> up</c><00:00:56.800><c> manually</c><00:00:57.460><c> by</c><00:00:58.360><c> pressing</c>
+
+00:00:58.770 --> 00:00:58.780 align:start position:0%
+can bring it up manually by pressing
+ 
+
+00:00:58.780 --> 00:01:02.369 align:start position:0%
+can bring it up manually by pressing
+control<00:00:59.379><c> space</c><00:01:00.300><c> to</c><00:01:01.300><c> expand</c><00:01:01.750><c> the</c><00:01:01.930><c> basic</c>
+
+00:01:02.369 --> 00:01:02.379 align:start position:0%
+control space to expand the basic
+ 
+
+00:01:02.379 --> 00:01:04.499 align:start position:0%
+control space to expand the basic
+completion<00:01:02.980><c> view</c><00:01:03.190><c> which</c><00:01:03.850><c> will</c><00:01:04.030><c> show</c><00:01:04.210><c> you</c><00:01:04.269><c> all</c>
+
+00:01:04.499 --> 00:01:04.509 align:start position:0%
+completion view which will show you all
+ 
+
+00:01:04.509 --> 00:01:07.469 align:start position:0%
+completion view which will show you all
+of<00:01:04.539><c> the</c><00:01:04.750><c> index</c><00:01:05.110><c> symbols</c><00:01:05.850><c> language</c><00:01:06.850><c> keywords</c>
+
+00:01:07.469 --> 00:01:07.479 align:start position:0%
+of the index symbols language keywords
+ 
+
+00:01:07.479 --> 00:01:09.539 align:start position:0%
+of the index symbols language keywords
+and<00:01:07.719><c> live</c><00:01:08.079><c> templates</c><00:01:08.469><c> as</c><00:01:08.679><c> you</c><00:01:08.770><c> can</c><00:01:08.920><c> use</c><00:01:09.279><c> in</c>
+
+00:01:09.539 --> 00:01:09.549 align:start position:0%
+and live templates as you can use in
+ 
+
+00:01:09.549 --> 00:01:12.929 align:start position:0%
+and live templates as you can use in
+this<00:01:10.179><c> scope</c><00:01:10.509><c> inside</c><00:01:11.319><c> this</c><00:01:11.740><c> view</c><00:01:12.100><c> there</c><00:01:12.759><c> are</c><00:01:12.880><c> a</c>
+
+00:01:12.929 --> 00:01:12.939 align:start position:0%
+this scope inside this view there are a
+ 
+
+00:01:12.939 --> 00:01:15.120 align:start position:0%
+this scope inside this view there are a
+few<00:01:13.119><c> things</c><00:01:13.389><c> that</c><00:01:13.539><c> you</c><00:01:13.630><c> can</c><00:01:13.659><c> do</c><00:01:13.959><c> in</c><00:01:14.709><c> order</c><00:01:15.009><c> to</c>
+
+00:01:15.120 --> 00:01:15.130 align:start position:0%
+few things that you can do in order to
+ 
+
+00:01:15.130 --> 00:01:17.039 align:start position:0%
+few things that you can do in order to
+select<00:01:15.340><c> an</c><00:01:15.670><c> entry</c><00:01:15.789><c> you</c><00:01:16.450><c> can</c><00:01:16.600><c> simply</c><00:01:16.899><c> press</c>
+
+00:01:17.039 --> 00:01:17.049 align:start position:0%
+select an entry you can simply press
+ 
+
+00:01:17.049 --> 00:01:19.410 align:start position:0%
+select an entry you can simply press
+ENTER<00:01:17.319><c> and</c><00:01:17.709><c> we'll</c><00:01:18.459><c> complete</c><00:01:18.789><c> that</c><00:01:18.939><c> entry</c><00:01:19.209><c> by</c>
+
+00:01:19.410 --> 00:01:19.420 align:start position:0%
+ENTER and we'll complete that entry by
+ 
+
+00:01:19.420 --> 00:01:21.300 align:start position:0%
+ENTER and we'll complete that entry by
+your<00:01:19.630><c> cursor</c><00:01:20.049><c> you</c><00:01:20.590><c> can</c><00:01:20.619><c> also</c><00:01:20.859><c> exclude</c>
+
+00:01:21.300 --> 00:01:21.310 align:start position:0%
+your cursor you can also exclude
+ 
+
+00:01:21.310 --> 00:01:24.179 align:start position:0%
+your cursor you can also exclude
+individual<00:01:22.179><c> entries</c><00:01:22.539><c> from</c><00:01:22.749><c> completion</c><00:01:23.380><c> by</c>
+
+00:01:24.179 --> 00:01:24.189 align:start position:0%
+individual entries from completion by
+ 
+
+00:01:24.189 --> 00:01:26.459 align:start position:0%
+individual entries from completion by
+selecting<00:01:24.700><c> the</c><00:01:24.789><c> entry</c><00:01:25.149><c> and</c><00:01:25.779><c> pressing</c><00:01:26.229><c> alt</c>
+
+00:01:26.459 --> 00:01:26.469 align:start position:0%
+selecting the entry and pressing alt
+ 
+
+00:01:26.469 --> 00:01:29.219 align:start position:0%
+selecting the entry and pressing alt
+enter<00:01:26.889><c> to</c><00:01:27.069><c> toggle</c><00:01:27.549><c> the</c><00:01:27.729><c> intention</c><00:01:28.270><c> from</c><00:01:28.959><c> here</c>
+
+00:01:29.219 --> 00:01:29.229 align:start position:0%
+enter to toggle the intention from here
+ 
+
+00:01:29.229 --> 00:01:30.989 align:start position:0%
+enter to toggle the intention from here
+you<00:01:29.380><c> can</c><00:01:29.529><c> tell</c><00:01:29.709><c> intelligent</c><00:01:30.219><c> idea</c><00:01:30.459><c> to</c><00:01:30.549><c> exclude</c>
+
+00:01:30.989 --> 00:01:30.999 align:start position:0%
+you can tell intelligent idea to exclude
+ 
+
+00:01:30.999 --> 00:01:33.149 align:start position:0%
+you can tell intelligent idea to exclude
+this<00:01:31.179><c> entry</c><00:01:31.569><c> and</c><00:01:31.779><c> that</c><00:01:32.499><c> preference</c><00:01:32.889><c> will</c><00:01:33.069><c> be</c>
+
+00:01:33.149 --> 00:01:33.159 align:start position:0%
+this entry and that preference will be
+ 
+
+00:01:33.159 --> 00:01:36.059 align:start position:0%
+this entry and that preference will be
+added<00:01:33.520><c> to</c><00:01:33.639><c> your</c><00:01:33.759><c> projects</c><00:01:34.119><c> configuration</c><00:01:35.069><c> so</c>
+
+00:01:36.059 --> 00:01:36.069 align:start position:0%
+added to your projects configuration so
+ 
+
+00:01:36.069 --> 00:01:39.949 align:start position:0%
+added to your projects configuration so
+that<00:01:36.189><c> it</c><00:01:36.310><c> doesn't</c><00:01:36.579><c> display</c><00:01:36.969><c> it</c><00:01:37.119><c> in</c><00:01:37.270><c> the</c><00:01:37.299><c> future</c>
+
+00:01:39.949 --> 00:01:39.959 align:start position:0%
+ 
+ 
+
+00:01:39.959 --> 00:01:42.629 align:start position:0%
+ 
+you<00:01:40.959><c> can</c><00:01:41.109><c> also</c><00:01:41.229><c> view</c><00:01:41.439><c> quick</c><00:01:41.709><c> documentation</c>
+
+00:01:42.629 --> 00:01:42.639 align:start position:0%
+you can also view quick documentation
+ 
+
+00:01:42.639 --> 00:01:46.679 align:start position:0%
+you can also view quick documentation
+for<00:01:43.270><c> any</c><00:01:43.389><c> entry</c><00:01:43.779><c> by</c><00:01:43.929><c> pressing</c><00:01:44.289><c> ctrl</c><00:01:44.740><c> Q</c><00:01:45.689><c> which</c>
+
+00:01:46.679 --> 00:01:46.689 align:start position:0%
+for any entry by pressing ctrl Q which
+ 
+
+00:01:46.689 --> 00:01:48.389 align:start position:0%
+for any entry by pressing ctrl Q which
+will<00:01:46.869><c> fetch</c><00:01:47.079><c> the</c><00:01:47.200><c> documentation</c><00:01:48.130><c> for</c><00:01:48.369><c> that</c>
+
+00:01:48.389 --> 00:01:48.399 align:start position:0%
+will fetch the documentation for that
+ 
+
+00:01:48.399 --> 00:01:50.429 align:start position:0%
+will fetch the documentation for that
+entry<00:01:48.819><c> and</c><00:01:48.999><c> display</c><00:01:49.450><c> in</c><00:01:49.659><c> a</c><00:01:49.749><c> separate</c><00:01:50.139><c> view</c>
+
+00:01:50.429 --> 00:01:50.439 align:start position:0%
+entry and display in a separate view
+ 
+
+00:01:50.439 --> 00:01:54.239 align:start position:0%
+entry and display in a separate view
+which<00:01:51.310><c> you</c><00:01:51.429><c> can</c><00:01:51.579><c> use</c><00:01:51.819><c> for</c><00:01:52.060><c> reference</c><00:01:53.069><c> now</c><00:01:54.069><c> by</c>
+
+00:01:54.239 --> 00:01:54.249 align:start position:0%
+which you can use for reference now by
+ 
+
+00:01:54.249 --> 00:01:57.300 align:start position:0%
+which you can use for reference now by
+default<00:01:54.849><c> when</c><00:01:55.840><c> you</c><00:01:55.869><c> invoke</c><00:01:56.259><c> basic</c><00:01:56.770><c> completion</c>
+
+00:01:57.300 --> 00:01:57.310 align:start position:0%
+default when you invoke basic completion
+ 
+
+00:01:57.310 --> 00:01:59.339 align:start position:0%
+default when you invoke basic completion
+it<00:01:57.429><c> will</c><00:01:57.459><c> only</c><00:01:57.759><c> show</c><00:01:58.119><c> those</c><00:01:58.329><c> entries</c><00:01:58.779><c> that</c><00:01:59.289><c> are</c>
+
+00:01:59.339 --> 00:01:59.349 align:start position:0%
+it will only show those entries that are
+ 
+
+00:01:59.349 --> 00:02:02.339 align:start position:0%
+it will only show those entries that are
+applicable<00:01:59.679><c> in</c><00:02:00.099><c> the</c><00:02:00.489><c> local</c><00:02:00.939><c> scope</c><00:02:01.329><c> however</c><00:02:02.259><c> if</c>
+
+00:02:02.339 --> 00:02:02.349 align:start position:0%
+applicable in the local scope however if
+ 
+
+00:02:02.349 --> 00:02:04.049 align:start position:0%
+applicable in the local scope however if
+you'd<00:02:02.439><c> like</c><00:02:02.559><c> to</c><00:02:02.709><c> expand</c><00:02:03.219><c> that</c><00:02:03.399><c> you</c><00:02:03.669><c> can</c><00:02:03.819><c> press</c>
+
+00:02:04.049 --> 00:02:04.059 align:start position:0%
+you'd like to expand that you can press
+ 
+
+00:02:04.059 --> 00:02:06.809 align:start position:0%
+you'd like to expand that you can press
+it<00:02:04.179><c> again</c><00:02:04.479><c> and</c><00:02:04.749><c> it</c><00:02:05.619><c> will</c><00:02:05.679><c> expand</c><00:02:06.189><c> the</c><00:02:06.340><c> list</c><00:02:06.549><c> to</c>
+
+00:02:06.809 --> 00:02:06.819 align:start position:0%
+it again and it will expand the list to
+ 
+
+00:02:06.819 --> 00:02:08.760 align:start position:0%
+it again and it will expand the list to
+include<00:02:06.939><c> all</c><00:02:07.329><c> of</c><00:02:07.389><c> the</c><00:02:07.749><c> classes</c><00:02:08.170><c> available</c>
+
+00:02:08.760 --> 00:02:08.770 align:start position:0%
+include all of the classes available
+ 
+
+00:02:08.770 --> 00:02:11.130 align:start position:0%
+include all of the classes available
+through<00:02:09.369><c> module</c><00:02:09.789><c> dependencies</c><00:02:10.539><c> inside</c><00:02:10.989><c> your</c>
+
+00:02:11.130 --> 00:02:11.140 align:start position:0%
+through module dependencies inside your
+ 
+
+00:02:11.140 --> 00:02:14.009 align:start position:0%
+through module dependencies inside your
+project<00:02:11.760><c> when</c><00:02:12.760><c> you</c><00:02:12.849><c> invoke</c><00:02:13.120><c> basic</c><00:02:13.569><c> completion</c>
+
+00:02:14.009 --> 00:02:14.019 align:start position:0%
+project when you invoke basic completion
+ 
+
+00:02:14.019 --> 00:02:15.240 align:start position:0%
+project when you invoke basic completion
+a<00:02:14.110><c> third</c><00:02:14.379><c> time</c>
+
+00:02:15.240 --> 00:02:15.250 align:start position:0%
+a third time
+ 
+
+00:02:15.250 --> 00:02:17.340 align:start position:0%
+a third time
+it<00:02:15.640><c> will</c><00:02:15.790><c> expand</c><00:02:16.270><c> the</c><00:02:16.390><c> suggestion</c><00:02:16.900><c> list</c><00:02:17.080><c> to</c>
+
+00:02:17.340 --> 00:02:17.350 align:start position:0%
+it will expand the suggestion list to
+ 
+
+00:02:17.350 --> 00:02:19.020 align:start position:0%
+it will expand the suggestion list to
+include<00:02:17.620><c> all</c><00:02:18.130><c> of</c><00:02:18.190><c> the</c><00:02:18.580><c> symbols</c><00:02:18.910><c> in</c><00:02:18.970><c> the</c>
+
+00:02:19.020 --> 00:02:19.030 align:start position:0%
+include all of the symbols in the
+ 
+
+00:02:19.030 --> 00:02:23.750 align:start position:0%
+include all of the symbols in the
+language<00:02:19.420><c> library</c><00:02:19.930><c> and</c><00:02:20.170><c> your</c><00:02:20.860><c> entire</c><00:02:21.190><c> project</c>
+
+00:02:23.750 --> 00:02:23.760 align:start position:0%
+ 
+ 
+
+00:02:23.760 --> 00:02:26.130 align:start position:0%
+ 
+next<00:02:24.760><c> we'll</c><00:02:24.880><c> talk</c><00:02:25.030><c> about</c><00:02:25.090><c> smart</c><00:02:25.540><c> completion</c>
+
+00:02:26.130 --> 00:02:26.140 align:start position:0%
+next we'll talk about smart completion
+ 
+
+00:02:26.140 --> 00:02:27.380 align:start position:0%
+next we'll talk about smart completion
+which<00:02:26.560><c> will</c><00:02:26.740><c> allow</c><00:02:26.950><c> you</c><00:02:27.010><c> to</c><00:02:27.160><c> apply</c>
+
+00:02:27.380 --> 00:02:27.390 align:start position:0%
+which will allow you to apply
+ 
+
+00:02:27.390 --> 00:02:30.540 align:start position:0%
+which will allow you to apply
+context-sensitive<00:02:28.680><c> completion</c><00:02:29.680><c> with</c><00:02:30.280><c> full</c>
+
+00:02:30.540 --> 00:02:30.550 align:start position:0%
+context-sensitive completion with full
+ 
+
+00:02:30.550 --> 00:02:33.090 align:start position:0%
+context-sensitive completion with full
+type<00:02:30.730><c> inference</c>
+

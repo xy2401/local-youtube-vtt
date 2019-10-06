@@ -1,0 +1,290 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:02.270
+PETE LEPAGE: Just in
+time for Google I/O,
+
+00:00:02.270 --> 00:00:04.340
+Chrome 74 is landing now.
+
+00:00:04.340 --> 00:00:07.070
+It adds support for
+private class fields,
+
+00:00:07.070 --> 00:00:10.820
+allows you to detect when a user
+has requested a reduced motion
+
+00:00:10.820 --> 00:00:14.540
+experience, adds support
+for CSS transition events,
+
+00:00:14.540 --> 00:00:16.360
+and of course, plenty more.
+
+00:00:16.360 --> 00:00:17.420
+I'm Pete LePage.
+
+00:00:17.420 --> 00:00:20.160
+Let's dive in and see what's
+new for developers in Chrome 74.
+
+00:00:23.280 --> 00:00:26.460
+Class fields
+simplify class syntax
+
+00:00:26.460 --> 00:00:29.220
+by avoiding the need for
+constructor functions
+
+00:00:29.220 --> 00:00:31.850
+just to define
+instance properties.
+
+00:00:31.850 --> 00:00:35.670
+In Chrome 72, we added support
+for public class fields,
+
+00:00:35.670 --> 00:00:38.980
+and I said private class
+fields were in the works.
+
+00:00:38.980 --> 00:00:42.570
+I'm happy to say that
+they've landed in Chrome 74.
+
+00:00:42.570 --> 00:00:46.110
+The new private field syntax
+is similar to public fields,
+
+00:00:46.110 --> 00:00:47.610
+except that you
+mark the field as
+
+00:00:47.610 --> 00:00:50.040
+private by using a pound sign.
+
+00:00:50.040 --> 00:00:53.370
+Think of the pound sign as
+being part of the field name.
+
+00:00:53.370 --> 00:00:56.700
+Remember, private fields
+are just that-- private.
+
+00:00:56.700 --> 00:01:00.300
+They're accessible only inside
+the class, but not available
+
+00:01:00.300 --> 00:01:02.070
+outside the class body.
+
+00:01:02.070 --> 00:01:04.810
+To read more about public
+and private class fields,
+
+00:01:04.810 --> 00:01:08.130
+check out Mathias's post on
+class fields linked in the post
+
+00:01:08.130 --> 00:01:09.840
+below.
+
+00:01:09.840 --> 00:01:12.150
+Some users have reported
+getting motion sick
+
+00:01:12.150 --> 00:01:15.720
+when viewing parallax scrolling,
+zooming, and other motion
+
+00:01:15.720 --> 00:01:16.770
+effects.
+
+00:01:16.770 --> 00:01:19.320
+To address this, many
+operating systems
+
+00:01:19.320 --> 00:01:22.920
+provide an option to reduce
+motion whenever possible.
+
+00:01:22.920 --> 00:01:27.450
+Chrome now provides a media
+query, prefers-reduced-motion,
+
+00:01:27.450 --> 00:01:29.790
+part of the media
+queries level 5 spec,
+
+00:01:29.790 --> 00:01:33.450
+that makes it easy to check
+when this option is turned on.
+
+00:01:33.450 --> 00:01:35.940
+Imagine I have a sign-up
+button that draws attention
+
+00:01:35.940 --> 00:01:37.920
+to itself with a slight motion.
+
+00:01:37.920 --> 00:01:40.800
+The new query lets me
+shut off the motion just
+
+00:01:40.800 --> 00:01:41.860
+for that button.
+
+00:01:41.860 --> 00:01:43.630
+Check out Tom's article
+on the new query
+
+00:01:43.630 --> 00:01:45.900
+selector linked below.
+
+00:01:45.900 --> 00:01:49.800
+The CSS Transition specification
+requires that transition events
+
+00:01:49.800 --> 00:01:52.530
+are sent whenever a
+transition is enqueued,
+
+00:01:52.530 --> 00:01:55.860
+starts, ends, or is canceled.
+
+00:01:55.860 --> 00:01:59.370
+The events have been supported
+in other browsers for a while,
+
+00:01:59.370 --> 00:02:03.150
+but until now, they weren't
+supported in Chrome.
+
+00:02:03.150 --> 00:02:06.700
+In Chrome 74, you can now
+listen for transitionrun,
+
+00:02:06.700 --> 00:02:11.440
+transitionstart, transitionend,
+and transitioncancel events,
+
+00:02:11.440 --> 00:02:14.520
+making it possible to
+track or change behavior
+
+00:02:14.520 --> 00:02:17.220
+whenever a transition is run.
+
+00:02:17.220 --> 00:02:19.740
+Feature policies allow
+you to selectively
+
+00:02:19.740 --> 00:02:23.820
+enable, disable, and modify the
+behavior of APIs and other web
+
+00:02:23.820 --> 00:02:24.810
+features.
+
+00:02:24.810 --> 00:02:27.570
+This is done either through
+the Feature Policy header
+
+00:02:27.570 --> 00:02:30.400
+or through an allow
+attribute on an iframe.
+
+00:02:30.400 --> 00:02:34.110
+In Chrome 74, you can get
+a list of features allowed
+
+00:02:34.110 --> 00:02:36.540
+with the
+allowedFeatures API, you
+
+00:02:36.540 --> 00:02:40.800
+can check if a specific feature
+is allowed with allowsFeature,
+
+00:02:40.800 --> 00:02:42.960
+and you can get
+a list of domains
+
+00:02:42.960 --> 00:02:46.350
+used on the current page
+that allow a specific feature
+
+00:02:46.350 --> 00:02:49.500
+with getAllowlistForFeature.
+
+00:02:49.500 --> 00:02:52.080
+Check out the Introduction
+to Feature Policy post
+
+00:02:52.080 --> 00:02:54.160
+for more details.
+
+00:02:54.160 --> 00:02:56.550
+These are just a few of
+the changes in Chrome 74
+
+00:02:56.550 --> 00:02:57.520
+for developers.
+
+00:02:57.520 --> 00:02:59.580
+Of course, there's plenty more.
+
+00:02:59.580 --> 00:03:03.990
+Personally, I'm pretty excited
+about the KV storage API--
+
+00:03:03.990 --> 00:03:08.280
+a new, fast, async key
+value storage service that's
+
+00:03:08.280 --> 00:03:10.620
+available as an origin trial.
+
+00:03:10.620 --> 00:03:14.010
+And don't forget-- Google
+I/O is just a few weeks away,
+
+00:03:14.010 --> 00:03:16.270
+and we'll have lots of
+great new stuff for you.
+
+00:03:16.270 --> 00:03:20.100
+So be sure to tune in and
+watch, May 7th to the 9th.
+
+00:03:20.100 --> 00:03:23.400
+More details about I/O, the
+features I mentioned, and more
+
+00:03:23.400 --> 00:03:26.490
+are in the updates post
+linked in the description.
+
+00:03:26.490 --> 00:03:28.878
+If you want a reminder
+about the I/O videos,
+
+00:03:28.878 --> 00:03:30.420
+click the Subscribe
+button and you'll
+
+00:03:30.420 --> 00:03:33.780
+get an email notification
+whenever we launch a new video.
+
+00:03:33.780 --> 00:03:36.720
+I'm Pete LePage, and as soon
+as Chrome 75 is released,
+
+00:03:36.720 --> 00:03:40.700
+I'll be right here to tell
+you what's new in Chrome.
+

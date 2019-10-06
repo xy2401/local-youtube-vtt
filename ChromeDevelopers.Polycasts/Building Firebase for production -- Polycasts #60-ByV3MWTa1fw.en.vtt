@@ -1,0 +1,1226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.915
+[MUSIC PLAYING]
+
+00:00:03.915 --> 00:00:05.040
+ROB DODSON: Hey, everybody.
+
+00:00:05.040 --> 00:00:05.340
+What's up?
+
+00:00:05.340 --> 00:00:06.180
+It's Rob Dodson.
+
+00:00:06.180 --> 00:00:07.560
+Welcome back to Polycast.
+
+00:00:07.560 --> 00:00:09.030
+So today on the
+show, we're going
+
+00:00:09.030 --> 00:00:12.569
+to be wrapping up our tour
+of Polymer and Firebase
+
+00:00:12.569 --> 00:00:14.610
+by taking this project
+that we've been working on
+
+00:00:14.610 --> 00:00:17.520
+and integrating it with
+the polymer-build library
+
+00:00:17.520 --> 00:00:20.310
+so that we can build
+it for production.
+
+00:00:20.310 --> 00:00:22.380
+So follow me over
+here to my laptop.
+
+00:00:22.380 --> 00:00:25.050
+And we're picking up where
+we left off last time.
+
+00:00:25.050 --> 00:00:26.950
+So we've got this
+project that we created.
+
+00:00:26.950 --> 00:00:29.449
+We can go ahead and maybe start
+up our server so we can just
+
+00:00:29.449 --> 00:00:30.810
+like preview this thing.
+
+00:00:30.810 --> 00:00:31.310
+OK.
+
+00:00:31.310 --> 00:00:34.160
+So when we go to
+our terminal here.
+
+00:00:34.160 --> 00:00:36.870
+We can run Firebase serve.
+
+00:00:36.870 --> 00:00:39.460
+Here, I'll embiggen this
+a bit so you can see it.
+
+00:00:39.460 --> 00:00:40.325
+Firebase serve.
+
+00:00:40.325 --> 00:00:41.700
+Then I'll start
+up a local server
+
+00:00:41.700 --> 00:00:43.960
+just so we can see
+what we're working on.
+
+00:00:43.960 --> 00:00:44.460
+OK.
+
+00:00:44.460 --> 00:00:45.750
+So this is where we
+left off last time.
+
+00:00:45.750 --> 00:00:47.458
+We had this kind of
+like to-do list thing
+
+00:00:47.458 --> 00:00:48.390
+that we were building.
+
+00:00:48.390 --> 00:00:50.015
+It kind of looks like
+a mess right now,
+
+00:00:50.015 --> 00:00:51.477
+because we added messaging.
+
+00:00:51.477 --> 00:00:53.310
+We added a bunch of
+other weird stuff to it.
+
+00:00:53.310 --> 00:00:55.770
+So the design is like
+totally wacky, but whatever.
+
+00:00:55.770 --> 00:00:58.051
+It has the features that we
+want for our application.
+
+00:00:58.051 --> 00:00:59.550
+And today, we're
+just going to cover
+
+00:00:59.550 --> 00:01:02.940
+how we bundle all the code
+together so we can launch it up
+
+00:01:02.940 --> 00:01:04.054
+onto Firebase hosting.
+
+00:01:04.054 --> 00:01:05.970
+In my project, the first
+thing I'm going to do
+
+00:01:05.970 --> 00:01:12.690
+is I'm going to create a Polymer
+in JSON file, Polymer.json.
+
+00:01:12.690 --> 00:01:14.550
+And inside of this
+file, we're going
+
+00:01:14.550 --> 00:01:18.360
+to tell Polymer's build
+library about the entry points
+
+00:01:18.360 --> 00:01:20.705
+to our application, about
+our application shell,
+
+00:01:20.705 --> 00:01:22.830
+and about any other sort
+of like extra dependencies
+
+00:01:22.830 --> 00:01:25.094
+that we want to package
+up for our build.
+
+00:01:25.094 --> 00:01:27.510
+So I've gone ahead and actually
+just saved this puppy out,
+
+00:01:27.510 --> 00:01:29.610
+and I'll bump this up
+a little bit so you
+
+00:01:29.610 --> 00:01:31.060
+can see what we've got here.
+
+00:01:31.060 --> 00:01:34.230
+So we've got this entry point,
+which is our public index HTML
+
+00:01:34.230 --> 00:01:35.939
+file that just tells
+polymer-build, hey,
+
+00:01:35.939 --> 00:01:37.730
+this is where we're
+going to start our app.
+
+00:01:37.730 --> 00:01:39.771
+And then we've got our
+shell, which if you recall
+
+00:01:39.771 --> 00:01:40.800
+is our my-app element.
+
+00:01:40.800 --> 00:01:42.758
+So everything that we've
+been working on so far
+
+00:01:42.758 --> 00:01:45.360
+has been kind of
+contained within my-app.
+
+00:01:45.360 --> 00:01:47.940
+Now, if you are using
+something like the PRPL pattern
+
+00:01:47.940 --> 00:01:49.530
+and you had
+additional fragments,
+
+00:01:49.530 --> 00:01:51.409
+you could add to this
+Polymer JSON as well.
+
+00:01:51.409 --> 00:01:52.950
+So those would be
+views that you were
+
+00:01:52.950 --> 00:01:54.720
+like lazy-loading over time.
+
+00:01:54.720 --> 00:01:57.330
+In our case, inside
+of my-app, we've
+
+00:01:57.330 --> 00:01:58.826
+actually just got
+all of our views
+
+00:01:58.826 --> 00:01:59.950
+just displaying right here.
+
+00:01:59.950 --> 00:02:02.310
+So we've got my log in,
+my notes, my subscription,
+
+00:02:02.310 --> 00:02:03.160
+et cetera.
+
+00:02:03.160 --> 00:02:04.660
+So we don't have any fragments
+or anything like that.
+
+00:02:04.660 --> 00:02:05.880
+We're just going to
+tell it about my-app,
+
+00:02:05.880 --> 00:02:06.850
+and it'll bundle that up.
+
+00:02:06.850 --> 00:02:08.558
+And then the last
+field that we have here
+
+00:02:08.558 --> 00:02:10.300
+is our extra dependencies.
+
+00:02:10.300 --> 00:02:11.940
+So these are things
+which we're not
+
+00:02:11.940 --> 00:02:15.060
+referencing as HTML imports,
+so Polymer itself is not
+
+00:02:15.060 --> 00:02:16.239
+referencing these things.
+
+00:02:16.239 --> 00:02:18.030
+But these are files
+that we do know that we
+
+00:02:18.030 --> 00:02:19.410
+need to include in our build.
+
+00:02:19.410 --> 00:02:21.280
+We want to make sure
+they get copied over.
+
+00:02:21.280 --> 00:02:23.721
+So this is things like
+our manifest.json,
+
+00:02:23.721 --> 00:02:26.220
+the Firebase Messaging service
+worker, which we talked about
+
+00:02:26.220 --> 00:02:30.380
+in our last episode, and our
+webcomponents-lite polyfills.
+
+00:02:30.380 --> 00:02:32.950
+So we're going to tell it
+to copy these over as well.
+
+00:02:32.950 --> 00:02:35.640
+So that will instruct
+the polymer-build library
+
+00:02:35.640 --> 00:02:36.464
+what to copy.
+
+00:02:36.464 --> 00:02:38.880
+The next thing we want to do
+is create a package JSON file
+
+00:02:38.880 --> 00:02:41.130
+and actually install a
+polymer-build itself.
+
+00:02:41.130 --> 00:02:47.280
+So make a package.json and we'll
+just pop some stuff in here.
+
+00:02:47.280 --> 00:02:49.005
+So I just called it
+my-project for now.
+
+00:02:49.005 --> 00:02:50.880
+You can name it after
+whatever you want, give
+
+00:02:50.880 --> 00:02:52.440
+it whatever version you want.
+
+00:02:52.440 --> 00:02:55.200
+We're going to include a
+little NPM build step here.
+
+00:02:55.200 --> 00:02:57.450
+So I'm just going to
+include a build step that's
+
+00:02:57.450 --> 00:02:59.080
+going to run gulp for us.
+
+00:02:59.080 --> 00:03:01.050
+And we'll get to
+that in just a bit.
+
+00:03:01.050 --> 00:03:02.591
+The main thing we
+care about, though,
+
+00:03:02.591 --> 00:03:04.930
+are these devDependencies
+down here at the bottom.
+
+00:03:04.930 --> 00:03:06.570
+So a few items that
+we're going to pull
+
+00:03:06.570 --> 00:03:07.680
+in, we're going to
+pull in this library
+
+00:03:07.680 --> 00:03:10.050
+called del, which will allow
+us to sort of like clean up our
+
+00:03:10.050 --> 00:03:12.030
+build directory every time
+we're about to do a new build.
+
+00:03:12.030 --> 00:03:13.860
+We'll pull in gulp,
+and notice that we're
+
+00:03:13.860 --> 00:03:16.860
+using version 4 here.
+
+00:03:16.860 --> 00:03:19.980
+And then these last two,
+merge-stream and plylog,
+
+00:03:19.980 --> 00:03:22.050
+these are just for
+debugging polymer-build
+
+00:03:22.050 --> 00:03:23.150
+as you're using it.
+
+00:03:23.150 --> 00:03:25.050
+Or merge-stream is for
+merging your streams.
+
+00:03:25.050 --> 00:03:26.760
+Plylog is for debugging.
+
+00:03:26.760 --> 00:03:29.280
+And polymer-build, we're going
+to pull in the latest alpha
+
+00:03:29.280 --> 00:03:32.357
+version, which is 0.6.0-alpha.
+
+00:03:32.357 --> 00:03:34.440
+Probably by the time you're
+watching this episode,
+
+00:03:34.440 --> 00:03:36.780
+0.6 will be out already.
+
+00:03:36.780 --> 00:03:38.430
+But I wanted to go
+ahead and use it now
+
+00:03:38.430 --> 00:03:40.710
+because it's a little bit easier
+to use than previous versions
+
+00:03:40.710 --> 00:03:41.610
+of polymer-build.
+
+00:03:41.610 --> 00:03:42.609
+So we've got that ready.
+
+00:03:42.609 --> 00:03:44.737
+We're going to run NPM install.
+
+00:03:44.737 --> 00:03:47.070
+And I've actually already got
+all these things installed
+
+00:03:47.070 --> 00:03:48.528
+in my node module,
+so we don't have
+
+00:03:48.528 --> 00:03:50.460
+to wait for it to
+download or anything.
+
+00:03:50.460 --> 00:03:53.520
+The next thing we want to
+do is create a gulpfile.
+
+00:03:53.520 --> 00:03:55.680
+So we make gulpfile.js.
+
+00:03:55.680 --> 00:03:57.420
+And what I'm going
+to be doing here
+
+00:03:57.420 --> 00:04:00.240
+is I'm going to be using gulp
+and the polymer-build library
+
+00:04:00.240 --> 00:04:03.690
+directly instead of
+using polymer-cli itself.
+
+00:04:03.690 --> 00:04:05.810
+Now, if we used
+polymer-cli on this project
+
+00:04:05.810 --> 00:04:07.560
+and we just ran
+polymer-build, it actually
+
+00:04:07.560 --> 00:04:09.790
+would do a pretty good job
+of building everything,
+
+00:04:09.790 --> 00:04:11.790
+but it's going to create
+some additional things,
+
+00:04:11.790 --> 00:04:13.890
+like a service worker, and
+it's going to kind of put it
+
+00:04:13.890 --> 00:04:15.681
+in sort of a weird
+place, because right now
+
+00:04:15.681 --> 00:04:18.870
+polymer-build-- the CLI service
+worker's not programmable
+
+00:04:18.870 --> 00:04:20.050
+for the output directory.
+
+00:04:20.050 --> 00:04:21.600
+That's something that they're
+going to probably change
+
+00:04:21.600 --> 00:04:22.891
+in a future version of the CLI.
+
+00:04:22.891 --> 00:04:25.230
+So we don't have these like
+weird vestigial files laying
+
+00:04:25.230 --> 00:04:26.350
+around and stuff
+like that, we're just
+
+00:04:26.350 --> 00:04:27.645
+going to use
+polymer-build directly,
+
+00:04:27.645 --> 00:04:29.395
+and we're going to
+tell it exactly what we
+
+00:04:29.395 --> 00:04:30.220
+want it to build.
+
+00:04:30.220 --> 00:04:32.303
+So we're going to do that
+inside of this gulpfile.
+
+00:04:32.303 --> 00:04:35.210
+And I've actually gone ahead
+and pre-written this gulpfile,
+
+00:04:35.210 --> 00:04:37.230
+because there's a fair
+bit of code in here.
+
+00:04:37.230 --> 00:04:39.210
+We can walk through
+these piece-by-piece
+
+00:04:39.210 --> 00:04:41.060
+just so you sort
+of like understand
+
+00:04:41.060 --> 00:04:42.660
+what is going on here.
+
+00:04:42.660 --> 00:04:44.760
+At the top of our
+gulpfile, we're
+
+00:04:44.760 --> 00:04:47.670
+just pulling in a
+few items that we'll
+
+00:04:47.670 --> 00:04:50.400
+need for doing work like
+setting up our paths,
+
+00:04:50.400 --> 00:04:52.260
+pulling gulp,
+merging our streams,
+
+00:04:52.260 --> 00:04:54.094
+deleting files, and
+things like that.
+
+00:04:54.094 --> 00:04:56.010
+This is all sort of like
+typical boiler plate.
+
+00:04:56.010 --> 00:04:57.885
+Where it gets interesting
+is when we get down
+
+00:04:57.885 --> 00:04:59.170
+here to like polymer.json.
+
+00:04:59.170 --> 00:05:02.462
+So we're actually going
+to require polymer.json.
+
+00:05:02.462 --> 00:05:04.295
+We're going to pull in
+our polymer.json file
+
+00:05:04.295 --> 00:05:06.949
+so that we have it in gulp.
+
+00:05:06.949 --> 00:05:08.990
+We're going to pull in
+the polymer-build library,
+
+00:05:08.990 --> 00:05:11.990
+and we're going to pass
+it our polymer.json file
+
+00:05:11.990 --> 00:05:12.980
+when we instantiate it.
+
+00:05:12.980 --> 00:05:14.255
+So that way, it has
+some configuration.
+
+00:05:14.255 --> 00:05:15.470
+And then we're going
+to tell it that we
+
+00:05:15.470 --> 00:05:17.636
+want our build directory
+where it outputs everything
+
+00:05:17.636 --> 00:05:18.970
+to be build/bundled.
+
+00:05:18.970 --> 00:05:20.720
+So this is going to
+take everything that's
+
+00:05:20.720 --> 00:05:22.220
+in our public
+directory right now
+
+00:05:22.220 --> 00:05:23.678
+and put it in
+build/bundled/public.
+
+00:05:23.678 --> 00:05:24.245
+Flash
+
+00:05:24.245 --> 00:05:26.120
+Then I have to find this
+littler helper here,
+
+00:05:26.120 --> 00:05:28.250
+because the gulpfile that
+we're going to create
+
+00:05:28.250 --> 00:05:30.230
+is going to be maybe a little
+atypical from most gulpfiles
+
+00:05:30.230 --> 00:05:31.040
+that you've seen.
+
+00:05:31.040 --> 00:05:32.960
+It's going to be basically
+one build function that's
+
+00:05:32.960 --> 00:05:34.570
+going to have a promise
+chain, and there's
+
+00:05:34.570 --> 00:05:35.360
+going to be a few
+places where we're
+
+00:05:35.360 --> 00:05:37.401
+going to wait on some
+streams from polymer-build.
+
+00:05:37.401 --> 00:05:40.250
+So we've got this waitfor
+function right here.
+
+00:05:40.250 --> 00:05:42.690
+All this does is it
+returns a promise
+
+00:05:42.690 --> 00:05:46.130
+and it listens for a
+stream's end or error event
+
+00:05:46.130 --> 00:05:47.990
+and either resolves or
+rejects the promise.
+
+00:05:47.990 --> 00:05:50.700
+This is going to be very
+helpful for our build function.
+
+00:05:50.700 --> 00:05:52.670
+And then inside of the
+build function itself,
+
+00:05:52.670 --> 00:05:54.560
+we're going to kick
+off polymer-build.
+
+00:05:54.560 --> 00:05:58.280
+Now, the polymer-build library,
+if you recall from our episode
+
+00:05:58.280 --> 00:06:02.300
+on writing your own generator
+using the polymer-build library
+
+00:06:02.300 --> 00:06:04.770
+and the custom
+generator init function,
+
+00:06:04.770 --> 00:06:07.647
+polymer-build library takes
+all of your HTML imports,
+
+00:06:07.647 --> 00:06:09.980
+it looks at the CSS in them,
+it looks at the JS in them,
+
+00:06:09.980 --> 00:06:12.830
+it looks at the HTML and
+it extracts each of those
+
+00:06:12.830 --> 00:06:14.780
+into its own file stream.
+
+00:06:14.780 --> 00:06:17.310
+And you can run transformations
+on those streams.
+
+00:06:17.310 --> 00:06:19.040
+So if you want to
+do CSS modification,
+
+00:06:19.040 --> 00:06:21.560
+you want to do JavaScript
+uglifying or something
+
+00:06:21.560 --> 00:06:24.809
+like that, you can after it
+has split apart those streams.
+
+00:06:24.809 --> 00:06:26.600
+And then once you've
+done those transforms,
+
+00:06:26.600 --> 00:06:27.851
+it rejoins everything for you.
+
+00:06:27.851 --> 00:06:29.266
+So what we're going
+to do is we're
+
+00:06:29.266 --> 00:06:31.340
+going to start off by
+calling this del function.
+
+00:06:31.340 --> 00:06:32.810
+We're going to delete
+the build directory.
+
+00:06:32.810 --> 00:06:34.560
+If there's already
+something inside of it,
+
+00:06:34.560 --> 00:06:36.620
+we'll just clean it out
+so we can start fresh.
+
+00:06:36.620 --> 00:06:38.090
+And then we're just going to
+work through a little promise
+
+00:06:38.090 --> 00:06:38.630
+chain.
+
+00:06:38.630 --> 00:06:41.540
+So we're going to create
+a source stream using
+
+00:06:41.540 --> 00:06:43.230
+the polymer-build library.
+
+00:06:43.230 --> 00:06:44.060
+What it's going to
+do is it's going
+
+00:06:44.060 --> 00:06:46.018
+to look at our entry
+point for our application.
+
+00:06:46.018 --> 00:06:48.110
+It's going to look at
+that my-app HTML file,
+
+00:06:48.110 --> 00:06:50.330
+and it's going to figure
+out all the HTML imports
+
+00:06:50.330 --> 00:06:53.770
+that it references and it will
+treat all of those as sources.
+
+00:06:53.770 --> 00:06:55.490
+So I'm going to create
+a stream for that.
+
+00:06:55.490 --> 00:06:57.560
+We're going to tell
+it to split the HTML.
+
+00:06:57.560 --> 00:07:00.890
+That's how we create the CSS,
+the JS, and the HTML streams.
+
+00:07:00.890 --> 00:07:02.540
+And here is where
+you can run any sort
+
+00:07:02.540 --> 00:07:03.900
+of transforms you want to do.
+
+00:07:03.900 --> 00:07:06.680
+So for instance, if you were
+using something like Uglify,
+
+00:07:06.680 --> 00:07:10.136
+you could then pipe one of
+those streams to Uglify.
+
+00:07:10.136 --> 00:07:11.510
+You would use the
+gulp-if library
+
+00:07:11.510 --> 00:07:12.710
+to check the file extension.
+
+00:07:12.710 --> 00:07:15.230
+So if it's a JavaScript
+file, pipe it to Uglify.
+
+00:07:15.230 --> 00:07:18.800
+If it's a CSS file,
+pipe it to css-slam.
+
+00:07:18.800 --> 00:07:21.475
+HTML pipes to
+html-minifier, et cetera.
+
+00:07:21.475 --> 00:07:22.850
+So I'm going to
+comment these out
+
+00:07:22.850 --> 00:07:24.830
+for now, because I don't have
+these libraries installed just
+
+00:07:24.830 --> 00:07:25.070
+yet.
+
+00:07:25.070 --> 00:07:26.486
+But I'm going to
+leave these here,
+
+00:07:26.486 --> 00:07:28.130
+and when I put the
+code up on GitHub,
+
+00:07:28.130 --> 00:07:29.254
+these will be here for you.
+
+00:07:29.254 --> 00:07:31.850
+So if you want to add your
+own gulp transforms, you can.
+
+00:07:31.850 --> 00:07:33.680
+So that'll be all
+of our source files.
+
+00:07:33.680 --> 00:07:35.420
+And then we've also
+got a separate step
+
+00:07:35.420 --> 00:07:37.449
+where we work through
+all of our dependencies.
+
+00:07:37.449 --> 00:07:39.740
+So this is stuff that's living
+in like bower_components
+
+00:07:39.740 --> 00:07:40.790
+or whatever.
+
+00:07:40.790 --> 00:07:43.610
+If you want to uglify
+those or css-slam those,
+
+00:07:43.610 --> 00:07:44.694
+you can as well.
+
+00:07:44.694 --> 00:07:46.610
+So that's going to create
+two streams, sources
+
+00:07:46.610 --> 00:07:47.530
+and dependencies.
+
+00:07:47.530 --> 00:07:50.810
+And then we're just going to
+merge the two streams together.
+
+00:07:50.810 --> 00:07:52.976
+We'll have a little
+console log here as soon
+
+00:07:52.976 --> 00:07:54.350
+as we start getting
+some data out
+
+00:07:54.350 --> 00:07:56.183
+of the stream that just
+tells the user, hey,
+
+00:07:56.183 --> 00:07:57.800
+we're analyzing these streams.
+
+00:07:57.800 --> 00:08:00.410
+If we want to do
+bundling, we can pass it
+
+00:08:00.410 --> 00:08:01.999
+to our Polymer Project Bundler.
+
+00:08:01.999 --> 00:08:04.540
+So we're going to pipe all those
+streams into Polymer Project
+
+00:08:04.540 --> 00:08:05.030
+Bundler.
+
+00:08:05.030 --> 00:08:06.440
+That's what's going to
+go through and basically
+
+00:08:06.440 --> 00:08:09.080
+run vulcanize on your behalf
+and start to put everything
+
+00:08:09.080 --> 00:08:10.545
+into the my-app file.
+
+00:08:10.545 --> 00:08:12.170
+You can do additional
+things here, too,
+
+00:08:12.170 --> 00:08:14.660
+like if you wanted add prefetch
+links and stuff like that,
+
+00:08:14.660 --> 00:08:17.090
+you could explore doing that
+with your own transforms.
+
+00:08:17.090 --> 00:08:19.048
+And lastly, we're just
+going to take everything
+
+00:08:19.048 --> 00:08:21.230
+and we're going to pipe
+it to the build directory,
+
+00:08:21.230 --> 00:08:23.467
+which if you remember
+is build/bundled.
+
+00:08:23.467 --> 00:08:25.050
+We set that up at
+the top of the file.
+
+00:08:25.050 --> 00:08:28.100
+And then we're just going to
+use this waitfor helper function
+
+00:08:28.100 --> 00:08:29.340
+to wait on the build stream.
+
+00:08:29.340 --> 00:08:31.910
+So after it's done
+processing all of our files,
+
+00:08:31.910 --> 00:08:34.086
+this promise will resolve.
+
+00:08:34.086 --> 00:08:36.710
+And we can move down to the very
+last step in the promise chain
+
+00:08:36.710 --> 00:08:38.418
+where we're just going
+to console log out
+
+00:08:38.418 --> 00:08:40.400
+to the user, hey,
+everything is done.
+
+00:08:40.400 --> 00:08:43.100
+We'll resolve that
+one last promise,
+
+00:08:43.100 --> 00:08:44.690
+and then that's it
+for our gulp task.
+
+00:08:44.690 --> 00:08:47.810
+That's our entire build
+process for our Polymer site.
+
+00:08:47.810 --> 00:08:49.490
+The last thing to do
+is just to set this
+
+00:08:49.490 --> 00:08:52.190
+as our default
+build step for gulp,
+
+00:08:52.190 --> 00:08:54.450
+and we should be
+off to the races.
+
+00:08:54.450 --> 00:08:56.600
+So let's open our sidebar here.
+
+00:08:56.600 --> 00:08:57.780
+And let's give it a shot.
+
+00:08:57.780 --> 00:08:59.330
+So we'll open our
+terminal up, and we
+
+00:08:59.330 --> 00:09:02.820
+will run-- I've got to make this
+a little bit bigger-- so we're
+
+00:09:02.820 --> 00:09:03.620
+going to run gulp.
+
+00:09:03.620 --> 00:09:06.230
+Or because I added in
+my package.json file,
+
+00:09:06.230 --> 00:09:09.340
+I added a build script, we
+could also run npm run build.
+
+00:09:09.340 --> 00:09:11.200
+Either one of those should work.
+
+00:09:11.200 --> 00:09:12.950
+So we run that, and
+we should start seeing
+
+00:09:12.950 --> 00:09:14.330
+those console logs coming out.
+
+00:09:14.330 --> 00:09:15.590
+So it's deleting
+the build directory.
+
+00:09:15.590 --> 00:09:17.173
+It's analyzing our
+build dependencies.
+
+00:09:17.173 --> 00:09:18.980
+Then it tells us the
+build is complete.
+
+00:09:18.980 --> 00:09:20.852
+We go back to our text editor.
+
+00:09:20.852 --> 00:09:22.310
+And we look at our
+build directory.
+
+00:09:22.310 --> 00:09:24.560
+You can see now we've got--
+inside of build/bundled,
+
+00:09:24.560 --> 00:09:27.770
+we've got all of
+our project files.
+
+00:09:27.770 --> 00:09:30.830
+It copied over things like
+our Firebase Messaging service
+
+00:09:30.830 --> 00:09:33.387
+worker, because we added
+that to extra dependencies.
+
+00:09:33.387 --> 00:09:35.720
+And if you look at my-app.html,
+you can see that it sort
+
+00:09:35.720 --> 00:09:37.820
+of munged all the
+code into this file.
+
+00:09:37.820 --> 00:09:40.200
+So it ran vulcanize
+for us, which is great.
+
+00:09:40.200 --> 00:09:42.170
+The last thing we can
+do is we can preview
+
+00:09:42.170 --> 00:09:44.121
+this using the Firebase server.
+
+00:09:44.121 --> 00:09:45.620
+The one change we
+need to make there
+
+00:09:45.620 --> 00:09:47.414
+is we'll go to firebase.json.
+
+00:09:47.414 --> 00:09:48.830
+For hosting, we'll
+tell it that we
+
+00:09:48.830 --> 00:09:52.130
+want to look at
+build/bundled/public.
+
+00:09:52.130 --> 00:09:53.190
+Save that.
+
+00:09:53.190 --> 00:09:55.980
+Go over to our terminal.
+
+00:09:55.980 --> 00:09:57.710
+So we'll run firebase
+serve, and it'll
+
+00:09:57.710 --> 00:10:00.770
+tell us that it's serving
+build/bundled/public.
+
+00:10:00.770 --> 00:10:03.024
+Click on localhost5000.
+
+00:10:03.024 --> 00:10:03.690
+And here you go.
+
+00:10:03.690 --> 00:10:05.614
+Here is our bundled project.
+
+00:10:05.614 --> 00:10:08.030
+And we can verify that it's
+the bundled version by opening
+
+00:10:08.030 --> 00:10:10.872
+our network panel, clearing
+everything out, hard
+
+00:10:10.872 --> 00:10:12.330
+refreshing the
+page, and you'll see
+
+00:10:12.330 --> 00:10:15.240
+that instead of requesting like
+tons and tons of HTML imports
+
+00:10:15.240 --> 00:10:17.700
+for all of our dependencies,
+we only really see
+
+00:10:17.700 --> 00:10:18.870
+a couple of HTML imports.
+
+00:10:18.870 --> 00:10:21.070
+I think we actually only
+see my-app.html Looking
+
+00:10:21.070 --> 00:10:23.070
+at the source for that,
+we can verify that it is
+
+00:10:23.070 --> 00:10:24.150
+the vulcanized version.
+
+00:10:24.150 --> 00:10:26.316
+So at that point, the only
+thing you have left to do
+
+00:10:26.316 --> 00:10:28.095
+is to run Firebase
+deploy and your site
+
+00:10:28.095 --> 00:10:29.970
+is ready to share with
+the rest of the world.
+
+00:10:29.970 --> 00:10:31.480
+So that about
+covers it for today.
+
+00:10:31.480 --> 00:10:33.690
+If you have any questions on
+using Polymer and Firebase,
+
+00:10:33.690 --> 00:10:36.064
+as always, you can leave them
+for me down in the comments
+
+00:10:36.064 --> 00:10:38.810
+or hit me up on a social
+network of your choosing.
+
+00:10:38.810 --> 00:10:40.560
+As always, thank you
+so much for watching,
+
+00:10:40.560 --> 00:10:42.202
+and I'll see you next time.
+
+00:10:42.202 --> 00:10:42.702
+Hey, folks.
+
+00:10:42.702 --> 00:10:43.201
+What's up?
+
+00:10:43.201 --> 00:10:43.800
+It is Rob.
+
+00:10:43.800 --> 00:10:45.633
+Thank you so much for
+watching this episode.
+
+00:10:45.633 --> 00:10:48.090
+If you'd like to see some
+more, we've got some over there
+
+00:10:48.090 --> 00:10:48.757
+in the playlist.
+
+00:10:48.757 --> 00:10:51.089
+And as always, you can click
+the little subscribe button
+
+00:10:51.089 --> 00:10:52.530
+to keep getting
+content every time
+
+00:10:52.530 --> 00:10:53.810
+we push it up to the channel.
+
+00:10:53.810 --> 00:10:56.390
+Again, thank you so
+much for watching.
+

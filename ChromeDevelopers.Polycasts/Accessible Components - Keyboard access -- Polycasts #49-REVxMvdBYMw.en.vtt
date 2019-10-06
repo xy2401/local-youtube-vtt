@@ -1,0 +1,981 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.405
+[MUSIC PLAYING]
+
+00:00:04.612 --> 00:00:06.070
+ROB DODSON: Hey
+there, blogcasters.
+
+00:00:06.070 --> 00:00:06.610
+Rob here.
+
+00:00:06.610 --> 00:00:07.940
+Welcome back to the show.
+
+00:00:07.940 --> 00:00:09.290
+So today we're going to
+be talking about something
+
+00:00:09.290 --> 00:00:11.057
+which we probably
+don't touch on enough
+
+00:00:11.057 --> 00:00:12.890
+but which is crucially
+important for anybody
+
+00:00:12.890 --> 00:00:16.079
+who is building web components
+and that is accessibility.
+
+00:00:16.079 --> 00:00:18.255
+And if you're building
+custom controls,
+
+00:00:18.255 --> 00:00:20.380
+custom elements and things
+like that, accessibility
+
+00:00:20.380 --> 00:00:22.520
+is extremely important
+for you to factor
+
+00:00:22.520 --> 00:00:23.650
+into your application.
+
+00:00:23.650 --> 00:00:25.350
+Because when you
+make custom elements,
+
+00:00:25.350 --> 00:00:27.058
+you're basically
+creating a brand new tag
+
+00:00:27.058 --> 00:00:28.990
+in the browser, which
+means that that tag has
+
+00:00:28.990 --> 00:00:32.049
+no built-in semantics, it has
+no built-in keyboard support.
+
+00:00:32.049 --> 00:00:34.580
+And so it's up to us to
+add those features back in.
+
+00:00:34.580 --> 00:00:36.580
+So to do that, I'm going
+to split this into kind
+
+00:00:36.580 --> 00:00:37.780
+of like a three-part series.
+
+00:00:37.780 --> 00:00:40.350
+We're going to cover a few
+big topics in accessibility.
+
+00:00:40.350 --> 00:00:42.727
+Today we're going to
+focus on keyboard support.
+
+00:00:42.727 --> 00:00:45.060
+So what we're going to build,
+if you follow me over here
+
+00:00:45.060 --> 00:00:47.750
+to my laptop, is the sort
+of checkbox component.
+
+00:00:47.750 --> 00:00:50.684
+And I've zoomed in the page
+so it's like a giant checkbox.
+
+00:00:50.684 --> 00:00:52.600
+But you can see that I
+can click on it, right,
+
+00:00:52.600 --> 00:00:53.980
+to toggle its state.
+
+00:00:53.980 --> 00:00:56.580
+I can also hit Tab to focus it.
+
+00:00:56.580 --> 00:00:58.510
+I can hit the spacebar
+on my keyboard
+
+00:00:58.510 --> 00:01:00.799
+to activate its state
+that way as well.
+
+00:01:00.799 --> 00:01:03.090
+So that's what we're going
+to cover today, just getting
+
+00:01:03.090 --> 00:01:05.440
+sort of the basic keyboard
+functionality working
+
+00:01:05.440 --> 00:01:07.520
+for this custom checkbox.
+
+00:01:07.520 --> 00:01:09.290
+Now, the first thing
+I'm going to do
+
+00:01:09.290 --> 00:01:12.080
+is go over to my Code Editor.
+
+00:01:12.080 --> 00:01:14.270
+And I've already gone
+ahead and created
+
+00:01:14.270 --> 00:01:17.590
+sort of a basic element, which
+I'm calling dash checkbox.
+
+00:01:17.590 --> 00:01:20.350
+What I want to do here
+is I want to start off
+
+00:01:20.350 --> 00:01:22.880
+by giving it just like
+a checked attribute
+
+00:01:22.880 --> 00:01:25.300
+that we can toggle back and
+forth so we know whether it's
+
+00:01:25.300 --> 00:01:26.360
+checked or not.
+
+00:01:26.360 --> 00:01:29.120
+To do that, I will go down
+to my elements definition.
+
+00:01:29.120 --> 00:01:32.150
+I will give it a
+properties object,
+
+00:01:32.150 --> 00:01:34.260
+and then create a
+property called checked.
+
+00:01:34.260 --> 00:01:37.010
+And checked is going to
+be a Boolean property.
+
+00:01:37.010 --> 00:01:38.700
+So we'll set the
+type to Boolean.
+
+00:01:38.700 --> 00:01:41.270
+We'll set the default
+value to false.
+
+00:01:41.270 --> 00:01:44.644
+And because I want this to
+reflect as an attribute,
+
+00:01:44.644 --> 00:01:47.310
+so I want it to actually show up
+in the DOM whenever it changes,
+
+00:01:47.310 --> 00:01:50.640
+I'm also going to set the
+reflect to attribute property.
+
+00:01:50.640 --> 00:01:54.500
+I'm going to set that
+flag to true as well.
+
+00:01:54.500 --> 00:01:56.880
+Now, the next thing
+that I want to do
+
+00:01:56.880 --> 00:02:01.564
+is I want to listen for whenever
+the user taps on my checkbox.
+
+00:02:01.564 --> 00:02:02.980
+So when they
+actually click on it,
+
+00:02:02.980 --> 00:02:05.650
+I'm going to toggle that
+attribute on or off.
+
+00:02:05.650 --> 00:02:12.260
+To do this, I can add a
+listeners object to my element.
+
+00:02:12.260 --> 00:02:13.846
+And I will expand
+this a little bit
+
+00:02:13.846 --> 00:02:15.470
+to give us some more
+room to work with.
+
+00:02:15.470 --> 00:02:17.100
+So in this listener's
+object, you can actually
+
+00:02:17.100 --> 00:02:18.330
+listen for different events.
+
+00:02:18.330 --> 00:02:21.480
+So I can listen for tap or key
+down or something like that.
+
+00:02:21.480 --> 00:02:24.000
+So I will listen for
+tap, and I will give it
+
+00:02:24.000 --> 00:02:27.060
+a handler called onTap
+to run any time someone
+
+00:02:27.060 --> 00:02:28.570
+taps on our element.
+
+00:02:28.570 --> 00:02:31.100
+And inside of onTap--
+this will be pretty
+
+00:02:31.100 --> 00:02:34.610
+straightforward-- we're just
+going to say, hey, whatever
+
+00:02:34.610 --> 00:02:38.330
+the state of checked was,
+we'll say this dot checked
+
+00:02:38.330 --> 00:02:42.540
+equals the opposite of
+whatever checked currently is.
+
+00:02:42.540 --> 00:02:45.420
+So we're basically just toggling
+that state back and forth,
+
+00:02:45.420 --> 00:02:48.317
+and that should then
+reflect to our attribute.
+
+00:02:48.317 --> 00:02:50.400
+Now, the last thing I need
+to do so I can actually
+
+00:02:50.400 --> 00:02:52.280
+see this thing on
+the screen is just
+
+00:02:52.280 --> 00:02:54.270
+drop in a little bit of CSS.
+
+00:02:54.270 --> 00:02:56.550
+I've actually got some
+CSS that I've saved here,
+
+00:02:56.550 --> 00:02:59.820
+and you can see that I'm
+styling the host element.
+
+00:02:59.820 --> 00:03:01.900
+I'm setting it to
+display inline block,
+
+00:03:01.900 --> 00:03:04.376
+I'm giving it a little black
+2-pixel border around it.
+
+00:03:04.376 --> 00:03:06.250
+I'm giving it some
+explicit width and height.
+
+00:03:06.250 --> 00:03:07.960
+So we're going to draw a box.
+
+00:03:07.960 --> 00:03:10.390
+And then when that
+checked attribute
+
+00:03:10.390 --> 00:03:13.640
+is set-- you can see here I'm
+using an attribute selector
+
+00:03:13.640 --> 00:03:15.384
+inside my host
+selector-- when that
+
+00:03:15.384 --> 00:03:16.925
+checked attribute
+is set, we're going
+
+00:03:16.925 --> 00:03:19.931
+to set our background
+to the SVG image here,
+
+00:03:19.931 --> 00:03:21.680
+which is basically
+just a little checkmark
+
+00:03:21.680 --> 00:03:23.680
+SVG that I've saved already.
+
+00:03:23.680 --> 00:03:26.340
+So I think this is
+actually ready to try out.
+
+00:03:26.340 --> 00:03:28.610
+So we can go over
+to our terminal.
+
+00:03:28.610 --> 00:03:32.222
+We can run polymer serve --open.
+
+00:03:32.222 --> 00:03:33.930
+If you aren't familiar
+with this command,
+
+00:03:33.930 --> 00:03:35.240
+we covered it in
+a previous episode
+
+00:03:35.240 --> 00:03:37.281
+when we were talking
+Polymer CLI so you could run
+
+00:03:37.281 --> 00:03:40.235
+mpm install -g polymer -cli.
+
+00:03:40.235 --> 00:03:42.360
+This will get you the
+Polymer Command Line tools so
+
+00:03:42.360 --> 00:03:45.090
+can run the local server
+and test out your elements.
+
+00:03:45.090 --> 00:03:48.680
+So I'm going to run
+polymer serve --open,
+
+00:03:48.680 --> 00:03:50.790
+and that should
+open up the page,
+
+00:03:50.790 --> 00:03:52.900
+and now we can see our
+little checkbox here.
+
+00:03:52.900 --> 00:03:55.900
+And when I click on it, we can
+see our checkmark showing up.
+
+00:03:55.900 --> 00:03:58.900
+Importantly, if we
+open up our dev tools,
+
+00:03:58.900 --> 00:04:01.866
+and we inspect this guy,
+and we sort of boost
+
+00:04:01.866 --> 00:04:03.240
+the page a little
+bit, we can see
+
+00:04:03.240 --> 00:04:05.531
+that that checked attribute
+is currently being applied.
+
+00:04:05.531 --> 00:04:07.231
+When I click it
+again, it goes away.
+
+00:04:07.231 --> 00:04:07.730
+OK.
+
+00:04:07.730 --> 00:04:10.080
+So far so good.
+
+00:04:10.080 --> 00:04:13.310
+Now, we've got this thing
+working for basically a mouse
+
+00:04:13.310 --> 00:04:15.320
+user, which is great,
+but I mentioned today
+
+00:04:15.320 --> 00:04:16.720
+our goal is to also
+make sure that we're
+
+00:04:16.720 --> 00:04:17.925
+adding proper keyboard support.
+
+00:04:17.925 --> 00:04:19.508
+And that's really
+important for anyone
+
+00:04:19.508 --> 00:04:21.566
+who might have
+repetitive stress injury,
+
+00:04:21.566 --> 00:04:23.940
+something like carpal tunnel
+syndrome-- they might prefer
+
+00:04:23.940 --> 00:04:25.450
+not to use a mouse--
+or someone who
+
+00:04:25.450 --> 00:04:28.169
+might have a form of paralysis
+or limited range of motion,
+
+00:04:28.169 --> 00:04:30.210
+who might be using something
+like a switch device
+
+00:04:30.210 --> 00:04:31.720
+to access the page.
+
+00:04:31.720 --> 00:04:33.690
+So for those users,
+we need to figure out
+
+00:04:33.690 --> 00:04:35.300
+what sort of keyboard
+support we need
+
+00:04:35.300 --> 00:04:37.440
+to add to a control like this.
+
+00:04:37.440 --> 00:04:39.160
+And a really, really
+useful resource
+
+00:04:39.160 --> 00:04:42.480
+here is the ARIA
+design patterns sort
+
+00:04:42.480 --> 00:04:43.950
+of authoring practices doc.
+
+00:04:43.950 --> 00:04:46.570
+Now, I'm going to talk about
+ARIA in the next episode,
+
+00:04:46.570 --> 00:04:48.090
+so you don't really need
+to worry about it for now.
+
+00:04:48.090 --> 00:04:49.923
+But basically, you can
+think of this as kind
+
+00:04:49.923 --> 00:04:52.070
+of like a helpful guide
+that will sort of tell you,
+
+00:04:52.070 --> 00:04:54.195
+hey, based on this sort of
+UI that you're building,
+
+00:04:54.195 --> 00:04:55.890
+here is the kind
+of keyboard support
+
+00:04:55.890 --> 00:04:59.620
+and other sort of semantics you
+need to roll into that element.
+
+00:04:59.620 --> 00:05:04.982
+So I'm going to Google for
+ARIA authoring practices 1.1.
+
+00:05:04.982 --> 00:05:07.551
+It's the first result here
+is what I'm looking for.
+
+00:05:07.551 --> 00:05:09.050
+Over here on the
+left-hand side, you
+
+00:05:09.050 --> 00:05:11.340
+can see a bunch of
+UI patterns listed.
+
+00:05:11.340 --> 00:05:13.930
+And the one that we're
+interested in is checkbox.
+
+00:05:13.930 --> 00:05:15.360
+So we go and we click on that.
+
+00:05:15.360 --> 00:05:17.400
+And now we've got this
+whole big description
+
+00:05:17.400 --> 00:05:19.130
+that tells us all
+sorts of information
+
+00:05:19.130 --> 00:05:21.950
+about what a checkbox
+component should
+
+00:05:21.950 --> 00:05:24.260
+do in order to be accessible.
+
+00:05:24.260 --> 00:05:26.840
+The information that I'm
+interested in particularly
+
+00:05:26.840 --> 00:05:29.830
+right now is this keyboard
+interaction section.
+
+00:05:29.830 --> 00:05:33.930
+So it tells me when
+the checkbox has focus,
+
+00:05:33.930 --> 00:05:36.800
+pressing the Space key
+should change the state
+
+00:05:36.800 --> 00:05:37.940
+of the checkbox, right?
+
+00:05:37.940 --> 00:05:39.650
+So the Space key
+would kind of be
+
+00:05:39.650 --> 00:05:42.177
+like when our user goes and
+clicks on it with a mouse.
+
+00:05:42.177 --> 00:05:43.760
+Now, there's two
+important points here
+
+00:05:43.760 --> 00:05:44.700
+that it's just made.
+
+00:05:44.700 --> 00:05:47.080
+One is that we need to make
+sure the element actually
+
+00:05:47.080 --> 00:05:48.864
+can be focused.
+
+00:05:48.864 --> 00:05:50.280
+And then the other
+is that we need
+
+00:05:50.280 --> 00:05:53.680
+to listen for the Space key
+and toggle that checked state
+
+00:05:53.680 --> 00:05:55.020
+of our element.
+
+00:05:55.020 --> 00:05:56.810
+So let's go back
+to our code editor,
+
+00:05:56.810 --> 00:06:00.000
+and the first question
+is how are we going
+
+00:06:00.000 --> 00:06:01.310
+to make this thing focusable?
+
+00:06:01.310 --> 00:06:03.040
+Because, by default,
+a custom element
+
+00:06:03.040 --> 00:06:04.147
+is basically like a span.
+
+00:06:04.147 --> 00:06:05.730
+There's nothing about
+a custom element
+
+00:06:05.730 --> 00:06:07.710
+that makes it
+implicitly focusable.
+
+00:06:07.710 --> 00:06:09.730
+It's not added to the
+tab order, and the user
+
+00:06:09.730 --> 00:06:12.330
+is not going to be able to
+reach it using their keyboard.
+
+00:06:12.330 --> 00:06:16.240
+So to do this, we can add a tab
+index attribute to our element.
+
+00:06:16.240 --> 00:06:18.590
+And tab index is kind of
+like a range of values.
+
+00:06:18.590 --> 00:06:20.200
+You could have tab
+index of 0, which
+
+00:06:20.200 --> 00:06:22.640
+will insert the element
+in the natural tab order.
+
+00:06:22.640 --> 00:06:24.296
+You can have a tab
+index of negative 1,
+
+00:06:24.296 --> 00:06:26.420
+which will not insert the
+element in the tab order,
+
+00:06:26.420 --> 00:06:28.003
+but it could still
+be programmatically
+
+00:06:28.003 --> 00:06:30.740
+focusable by calling
+its focus method.
+
+00:06:30.740 --> 00:06:32.740
+You could also have tab
+index of greater than 0.
+
+00:06:32.740 --> 00:06:34.060
+You could have a
+tab index of like 5
+
+00:06:34.060 --> 00:06:36.220
+or something like that, which
+would jump your element ahead
+
+00:06:36.220 --> 00:06:37.380
+of everything in the tab order.
+
+00:06:37.380 --> 00:06:39.755
+But generally, that's kind of
+considered an anti-pattern.
+
+00:06:39.755 --> 00:06:41.900
+It can lead to sort of
+really confusing tab orders
+
+00:06:41.900 --> 00:06:42.950
+in your page.
+
+00:06:42.950 --> 00:06:44.950
+So I think the best
+option for us in this case
+
+00:06:44.950 --> 00:06:46.617
+is to give our element
+a tab index of 0,
+
+00:06:46.617 --> 00:06:49.200
+and that way the user can just
+easily hit the Tab key to reach
+
+00:06:49.200 --> 00:06:50.330
+it with their keyboard.
+
+00:06:50.330 --> 00:06:52.060
+To do this in
+Polymer, we actually
+
+00:06:52.060 --> 00:06:53.954
+have this really
+helpful property
+
+00:06:53.954 --> 00:06:55.620
+that we can add to
+our definition called
+
+00:06:55.620 --> 00:06:57.584
+host attributes.
+
+00:06:57.584 --> 00:06:59.000
+Host attributes
+is basically going
+
+00:06:59.000 --> 00:07:01.910
+to apply an attribute
+to an element.
+
+00:07:01.910 --> 00:07:03.820
+So it's self-applying
+an attribute.
+
+00:07:03.820 --> 00:07:07.870
+And I will say tab
+index should be 0.
+
+00:07:07.870 --> 00:07:10.130
+And now if we go back
+to our application,
+
+00:07:10.130 --> 00:07:13.030
+we refresh the page, you can see
+over here in my Inspector now,
+
+00:07:13.030 --> 00:07:15.540
+tab index of 0 is
+being self-applied.
+
+00:07:15.540 --> 00:07:18.640
+And if I press the Tab key,
+now we see the focus ring
+
+00:07:18.640 --> 00:07:19.710
+around our element.
+
+00:07:19.710 --> 00:07:20.210
+Cool.
+
+00:07:20.210 --> 00:07:22.543
+So the last part is, we just
+need to make sure that when
+
+00:07:22.543 --> 00:07:24.980
+the user presses the
+spacebar, that it toggles
+
+00:07:24.980 --> 00:07:26.510
+the state of our element.
+
+00:07:26.510 --> 00:07:28.635
+And there are two ways that
+we could go about this.
+
+00:07:28.635 --> 00:07:30.890
+We could either add those
+event listeners ourselves,
+
+00:07:30.890 --> 00:07:32.237
+kind of manually, right?
+
+00:07:32.237 --> 00:07:34.320
+And then make sure to
+remove those event listeners
+
+00:07:34.320 --> 00:07:35.986
+when we take the
+element out of the DOM.
+
+00:07:35.986 --> 00:07:39.140
+That would totally work,
+but I'm super lazy.
+
+00:07:39.140 --> 00:07:41.080
+I like writing as
+little code as possible.
+
+00:07:41.080 --> 00:07:42.090
+So the other thing
+we can do is we
+
+00:07:42.090 --> 00:07:44.590
+can use a very useful behavior
+created by the Polymer team
+
+00:07:44.590 --> 00:07:45.756
+called IronA11yKeysBehavior.
+
+00:07:47.910 --> 00:07:50.340
+A11y stands for accessibility.
+
+00:07:50.340 --> 00:07:52.280
+So what I'm going to do
+is I'm actually going
+
+00:07:52.280 --> 00:07:54.470
+to just install this behavior.
+
+00:07:54.470 --> 00:07:56.160
+So bower install
+--save PolymerElements/
+
+00:07:56.160 --> 00:07:57.035
+IronA11yKeysBehavior.
+
+00:08:02.061 --> 00:08:02.560
+OK.
+
+00:08:02.560 --> 00:08:05.570
+That's going to go out and fetch
+that, pull it into my project.
+
+00:08:05.570 --> 00:08:08.222
+Then I can just add that
+to my element definition.
+
+00:08:08.222 --> 00:08:09.930
+So we'll import that
+right after I import
+
+00:08:09.930 --> 00:08:11.138
+polymer IronA11yKeysBehavior.
+
+00:08:16.389 --> 00:08:18.180
+And the last thing I
+want to do is add that
+
+00:08:18.180 --> 00:08:20.460
+to my behaviors array.
+
+00:08:20.460 --> 00:08:24.102
+So I'll say that I
+have behaviors array.
+
+00:08:24.102 --> 00:08:25.810
+We will add
+Polymer.IronA11yKeysBehavior.
+
+00:08:30.360 --> 00:08:31.860
+And what this is
+going to do is it's
+
+00:08:31.860 --> 00:08:35.110
+going to make this keybindings
+object available to me.
+
+00:08:35.110 --> 00:08:36.610
+And this keybindings
+object is kind
+
+00:08:36.610 --> 00:08:38.690
+of like my listeners
+object down here.
+
+00:08:38.690 --> 00:08:41.460
+I can just use it to listen
+for different key presses
+
+00:08:41.460 --> 00:08:42.970
+and assign those to a handler.
+
+00:08:42.970 --> 00:08:46.230
+So I'll say keybindings.
+
+00:08:46.230 --> 00:08:48.560
+I will say, I want to
+listen to the Space key.
+
+00:08:48.560 --> 00:08:50.460
+And when I hear someone
+press the Space key,
+
+00:08:50.460 --> 00:08:53.620
+I just want to run basically
+that same onTap command
+
+00:08:53.620 --> 00:08:55.075
+from before.
+
+00:08:55.075 --> 00:08:56.950
+So let's go back and
+test that in our project
+
+00:08:56.950 --> 00:08:58.650
+now will refresh the page.
+
+00:08:58.650 --> 00:09:00.310
+We will hit Tab to
+focus our element.
+
+00:09:00.310 --> 00:09:02.930
+We hit Space, and now
+we've got our checkbox.
+
+00:09:02.930 --> 00:09:05.600
+And now we've got basic
+keyboarding support
+
+00:09:05.600 --> 00:09:07.150
+added to this element.
+
+00:09:07.150 --> 00:09:08.914
+Now, I mentioned
+that there were going
+
+00:09:08.914 --> 00:09:10.580
+to be two other
+sections to this series.
+
+00:09:10.580 --> 00:09:11.440
+We're going to talk
+about semantics,
+
+00:09:11.440 --> 00:09:13.040
+we're going to talk
+about labeling.
+
+00:09:13.040 --> 00:09:15.340
+But I think this is
+enough for today.
+
+00:09:15.340 --> 00:09:17.080
+So definitely go out
+there, play around
+
+00:09:17.080 --> 00:09:20.140
+with IronA11yKeysBehavior,
+go out there and check out
+
+00:09:20.140 --> 00:09:21.390
+that ARIA design patterns doc.
+
+00:09:21.390 --> 00:09:23.780
+It is full of super
+useful information.
+
+00:09:23.780 --> 00:09:26.500
+We're going to pick up
+here in the next episode
+
+00:09:26.500 --> 00:09:28.379
+and work on adding
+semantics to this element
+
+00:09:28.379 --> 00:09:30.170
+so it'll start working
+for a screen reader.
+
+00:09:30.170 --> 00:09:31.310
+But that's it for today.
+
+00:09:31.310 --> 00:09:32.850
+If you have any questions,
+please leave them for me
+
+00:09:32.850 --> 00:09:34.660
+down in the comments
+below or hit me up
+
+00:09:34.660 --> 00:09:37.980
+on a social network of your
+choosing at #AskPolymer.
+
+00:09:37.980 --> 00:09:39.780
+As always, thank you
+so much for watching.
+
+00:09:39.780 --> 00:09:41.320
+I'll see you next time.
+
+00:09:41.320 --> 00:09:44.670
+[MUSIC PLAYING]
+

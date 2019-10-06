@@ -1,0 +1,2520 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.009 --> 00:00:07.249 align:start position:0%
+ 
+hi<00:00:05.009><c> my</c><00:00:05.490><c> name</c><00:00:05.670><c> is</c><00:00:05.700><c> Chris</c><00:00:06.000><c> Haggerty</c><00:00:06.450><c> I</c><00:00:06.629><c> worked</c><00:00:07.170><c> in</c>
+
+00:00:07.249 --> 00:00:07.259 align:start position:0%
+hi my name is Chris Haggerty I worked in
+ 
+
+00:00:07.259 --> 00:00:08.950 align:start position:0%
+hi my name is Chris Haggerty I worked in
+a<00:00:07.319><c> Java</c><00:00:07.529><c> platform</c><00:00:07.770><c> group</c><00:00:08.160><c> at</c><00:00:08.370><c> Oracle</c><00:00:08.730><c> and</c>
+
+00:00:08.950 --> 00:00:08.960 align:start position:0%
+a Java platform group at Oracle and
+ 
+
+00:00:08.960 --> 00:00:10.940 align:start position:0%
+a Java platform group at Oracle and
+today<00:00:09.960><c> I'm</c><00:00:10.170><c> going</c><00:00:10.290><c> to</c><00:00:10.380><c> give</c><00:00:10.469><c> an</c><00:00:10.590><c> introduction</c>
+
+00:00:10.940 --> 00:00:10.950 align:start position:0%
+today I'm going to give an introduction
+ 
+
+00:00:10.950 --> 00:00:17.390 align:start position:0%
+today I'm going to give an introduction
+to<00:00:11.340><c> the</c><00:00:11.460><c> Java</c><00:00:11.700><c> 11</c><00:00:12.090><c> HTTP</c><00:00:12.990><c> client</c><00:00:16.130><c> in</c><00:00:17.130><c> this</c>
+
+00:00:17.390 --> 00:00:17.400 align:start position:0%
+to the Java 11 HTTP client in this
+ 
+
+00:00:17.400 --> 00:00:18.920 align:start position:0%
+to the Java 11 HTTP client in this
+session<00:00:17.640><c> we're</c><00:00:18.090><c> going</c><00:00:18.270><c> to</c><00:00:18.359><c> take</c><00:00:18.539><c> a</c><00:00:18.570><c> look</c><00:00:18.779><c> at</c>
+
+00:00:18.920 --> 00:00:18.930 align:start position:0%
+session we're going to take a look at
+ 
+
+00:00:18.930 --> 00:00:20.689 align:start position:0%
+session we're going to take a look at
+the<00:00:19.020><c> main</c><00:00:19.230><c> types</c><00:00:19.619><c> of</c><00:00:19.770><c> the</c><00:00:20.070><c> API</c>
+
+00:00:20.689 --> 00:00:20.699 align:start position:0%
+the main types of the API
+ 
+
+00:00:20.699 --> 00:00:23.259 align:start position:0%
+the main types of the API
+what<00:00:21.480><c> module</c><00:00:21.840><c> and</c><00:00:21.990><c> package</c><00:00:22.289><c> take</c><00:00:22.470><c> me</c><00:00:22.680><c> found</c><00:00:22.890><c> in</c>
+
+00:00:23.259 --> 00:00:23.269 align:start position:0%
+what module and package take me found in
+ 
+
+00:00:23.269 --> 00:00:25.509 align:start position:0%
+what module and package take me found in
+had<00:00:24.269><c> to</c><00:00:24.359><c> perform</c><00:00:24.660><c> some</c><00:00:24.900><c> basic</c><00:00:25.260><c> operations</c>
+
+00:00:25.509 --> 00:00:25.519 align:start position:0%
+had to perform some basic operations
+ 
+
+00:00:25.519 --> 00:00:28.970 align:start position:0%
+had to perform some basic operations
+like<00:00:26.519><c> sending</c><00:00:26.939><c> a</c><00:00:27.029><c> request</c><00:00:27.420><c> and</c><00:00:27.689><c> how</c><00:00:28.560><c> response</c>
+
+00:00:28.970 --> 00:00:28.980 align:start position:0%
+like sending a request and how response
+ 
+
+00:00:28.980 --> 00:00:33.170 align:start position:0%
+like sending a request and how response
+body<00:00:29.250><c> is</c><00:00:29.490><c> modeled</c><00:00:31.489><c> enhancements</c><00:00:32.489><c> in</c><00:00:32.579><c> the</c><00:00:32.669><c> JDK</c>
+
+00:00:33.170 --> 00:00:33.180 align:start position:0%
+body is modeled enhancements in the JDK
+ 
+
+00:00:33.180 --> 00:00:35.090 align:start position:0%
+body is modeled enhancements in the JDK
+are<00:00:33.450><c> done</c><00:00:33.750><c> through</c><00:00:33.960><c> jdk</c><00:00:34.500><c> enhancement</c>
+
+00:00:35.090 --> 00:00:35.100 align:start position:0%
+are done through jdk enhancement
+ 
+
+00:00:35.100 --> 00:00:39.350 align:start position:0%
+are done through jdk enhancement
+proposals<00:00:35.960><c> jeb</c><00:00:36.960><c> 321</c><00:00:37.940><c> standardizes</c><00:00:38.940><c> the</c><00:00:38.969><c> API</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+proposals jeb 321 standardizes the API
+ 
+
+00:00:39.360 --> 00:00:41.660 align:start position:0%
+proposals jeb 321 standardizes the API
+that<00:00:39.989><c> was</c><00:00:40.110><c> incubating</c><00:00:40.710><c> in</c><00:00:40.829><c> previous</c><00:00:41.219><c> JDK</c>
+
+00:00:41.660 --> 00:00:41.670 align:start position:0%
+that was incubating in previous JDK
+ 
+
+00:00:41.670 --> 00:00:45.319 align:start position:0%
+that was incubating in previous JDK
+releases<00:00:42.559><c> the</c><00:00:43.559><c> HTTP</c><00:00:44.219><c> client</c><00:00:44.610><c> is</c><00:00:44.730><c> provided</c><00:00:45.210><c> by</c>
+
+00:00:45.319 --> 00:00:45.329 align:start position:0%
+releases the HTTP client is provided by
+ 
+
+00:00:45.329 --> 00:00:48.110 align:start position:0%
+releases the HTTP client is provided by
+the<00:00:45.390><c> Java</c><00:00:45.690><c> net</c><00:00:45.930><c> HTTP</c><00:00:46.649><c> module</c><00:00:46.829><c> and</c><00:00:47.250><c> that</c><00:00:47.280><c> module</c>
+
+00:00:48.110 --> 00:00:48.120 align:start position:0%
+the Java net HTTP module and that module
+ 
+
+00:00:48.120 --> 00:00:50.119 align:start position:0%
+the Java net HTTP module and that module
+exports<00:00:48.840><c> a</c><00:00:48.930><c> single</c><00:00:49.320><c> package</c><00:00:49.649><c> of</c><00:00:49.829><c> the</c><00:00:49.920><c> same</c>
+
+00:00:50.119 --> 00:00:50.129 align:start position:0%
+exports a single package of the same
+ 
+
+00:00:50.129 --> 00:00:53.270 align:start position:0%
+exports a single package of the same
+name<00:00:51.170><c> unlike</c><00:00:52.170><c> the</c><00:00:52.289><c> previous</c><00:00:52.500><c> incubating</c>
+
+00:00:53.270 --> 00:00:53.280 align:start position:0%
+name unlike the previous incubating
+ 
+
+00:00:53.280 --> 00:00:55.760 align:start position:0%
+name unlike the previous incubating
+version<00:00:53.670><c> this</c><00:00:54.360><c> module</c><00:00:54.840><c> is</c><00:00:54.960><c> now</c><00:00:55.110><c> part</c><00:00:55.469><c> of</c><00:00:55.530><c> the</c>
+
+00:00:55.760 --> 00:00:55.770 align:start position:0%
+version this module is now part of the
+ 
+
+00:00:55.770 --> 00:00:59.119 align:start position:0%
+version this module is now part of the
+Java<00:00:56.129><c> SE</c><00:00:56.520><c> platform</c><00:00:57.059><c> and</c><00:00:57.270><c> as</c><00:00:58.050><c> such</c><00:00:58.320><c> is</c><00:00:58.620><c> it</c><00:00:58.680><c> is</c>
+
+00:00:59.119 --> 00:00:59.129 align:start position:0%
+Java SE platform and as such is it is
+ 
+
+00:00:59.129 --> 00:01:01.189 align:start position:0%
+Java SE platform and as such is it is
+resolved<00:00:59.550><c> by</c><00:00:59.760><c> default</c><00:01:00.180><c> when</c><00:01:00.510><c> compiling</c><00:01:00.989><c> a</c>
+
+00:01:01.189 --> 00:01:01.199 align:start position:0%
+resolved by default when compiling a
+ 
+
+00:01:01.199 --> 00:01:04.759 align:start position:0%
+resolved by default when compiling a
+running<00:01:01.530><c> non</c><00:01:01.710><c> modular</c><00:01:02.219><c> code</c><00:01:03.559><c> modular</c><00:01:04.559><c> code</c>
+
+00:01:04.759 --> 00:01:04.769 align:start position:0%
+running non modular code modular code
+ 
+
+00:01:04.769 --> 00:01:07.940 align:start position:0%
+running non modular code modular code
+can<00:01:05.640><c> in</c><00:01:05.850><c> its</c><00:01:06.030><c> module</c><00:01:06.360><c> info</c><00:01:06.689><c> source</c><00:01:06.990><c> file</c><00:01:07.229><c> need</c>
+
+00:01:07.940 --> 00:01:07.950 align:start position:0%
+can in its module info source file need
+ 
+
+00:01:07.950 --> 00:01:10.070 align:start position:0%
+can in its module info source file need
+to<00:01:08.070><c> require</c><00:01:08.490><c> the</c><00:01:08.729><c> Java</c><00:01:08.970><c> net</c><00:01:09.180><c> HTTP</c><00:01:09.900><c> module</c>
+
+00:01:10.070 --> 00:01:10.080 align:start position:0%
+to require the Java net HTTP module
+ 
+
+00:01:10.080 --> 00:01:12.890 align:start position:0%
+to require the Java net HTTP module
+directly<00:01:10.770><c> or</c><00:01:11.119><c> required</c><00:01:12.119><c> a</c><00:01:12.270><c> Java</c><00:01:12.510><c> SE</c>
+
+00:01:12.890 --> 00:01:12.900 align:start position:0%
+directly or required a Java SE
+ 
+
+00:01:12.900 --> 00:01:18.140 align:start position:0%
+directly or required a Java SE
+aggregator<00:01:13.619><c> module</c><00:01:15.710><c> the</c><00:01:16.710><c> HTTP</c><00:01:17.430><c> client</c><00:01:17.909><c> class</c>
+
+00:01:18.140 --> 00:01:18.150 align:start position:0%
+aggregator module the HTTP client class
+ 
+
+00:01:18.150 --> 00:01:21.620 align:start position:0%
+aggregator module the HTTP client class
+is<00:01:18.479><c> a</c><00:01:18.540><c> top-level</c><00:01:19.020><c> type</c><00:01:19.380><c> an</c><00:01:20.369><c> HTTP</c><00:01:20.939><c> client</c><00:01:21.119><c> can</c>
+
+00:01:21.620 --> 00:01:21.630 align:start position:0%
+is a top-level type an HTTP client can
+ 
+
+00:01:21.630 --> 00:01:23.630 align:start position:0%
+is a top-level type an HTTP client can
+be<00:01:21.750><c> used</c><00:01:21.930><c> to</c><00:01:22.110><c> send</c><00:01:22.350><c> requests</c><00:01:22.860><c> and</c><00:01:23.040><c> retrieve</c>
+
+00:01:23.630 --> 00:01:23.640 align:start position:0%
+be used to send requests and retrieve
+ 
+
+00:01:23.640 --> 00:01:27.080 align:start position:0%
+be used to send requests and retrieve
+their<00:01:23.880><c> responses</c><00:01:25.189><c> HTTP</c><00:01:26.189><c> client</c><00:01:26.549><c> is</c><00:01:26.670><c> created</c>
+
+00:01:27.080 --> 00:01:27.090 align:start position:0%
+their responses HTTP client is created
+ 
+
+00:01:27.090 --> 00:01:30.050 align:start position:0%
+their responses HTTP client is created
+to<00:01:27.210><c> a</c><00:01:27.240><c> builder</c><00:01:27.740><c> the</c><00:01:28.740><c> builder</c><00:01:29.040><c> can</c><00:01:29.189><c> be</c><00:01:29.310><c> used</c><00:01:29.579><c> to</c>
+
+00:01:30.050 --> 00:01:30.060 align:start position:0%
+to a builder the builder can be used to
+ 
+
+00:01:30.060 --> 00:01:32.569 align:start position:0%
+to a builder the builder can be used to
+complete<00:01:30.390><c> their</c><00:01:30.540><c> per</c><00:01:30.780><c> client</c><00:01:31.049><c> state</c><00:01:31.470><c> like</c><00:01:32.460><c> the</c>
+
+00:01:32.569 --> 00:01:32.579 align:start position:0%
+complete their per client state like the
+ 
+
+00:01:32.579 --> 00:01:35.600 align:start position:0%
+complete their per client state like the
+preferred<00:01:32.970><c> protocol</c><00:01:33.630><c> version</c><00:01:34.049><c> either</c><00:01:34.619><c> HTTP</c><00:01:35.400><c> 1</c>
+
+00:01:35.600 --> 00:01:35.610 align:start position:0%
+preferred protocol version either HTTP 1
+ 
+
+00:01:35.610 --> 00:01:39.230 align:start position:0%
+preferred protocol version either HTTP 1
+1<00:01:35.850><c> or</c><00:01:36.090><c> HTTP</c><00:01:36.780><c> 2</c><00:01:37.340><c> whether</c><00:01:38.340><c> to</c><00:01:38.520><c> follow</c><00:01:38.640><c> redirects</c>
+
+00:01:39.230 --> 00:01:39.240 align:start position:0%
+1 or HTTP 2 whether to follow redirects
+ 
+
+00:01:39.240 --> 00:01:43.840 align:start position:0%
+1 or HTTP 2 whether to follow redirects
+a<00:01:39.799><c> proxy</c><00:01:40.799><c> iConnect</c><00:01:41.729><c> timeout</c><00:01:42.210><c> and</c><00:01:42.390><c> much</c><00:01:42.780><c> more</c>
+
+00:01:43.840 --> 00:01:43.850 align:start position:0%
+a proxy iConnect timeout and much more
+ 
+
+00:01:43.850 --> 00:01:47.749 align:start position:0%
+a proxy iConnect timeout and much more
+once<00:01:44.850><c> built</c><00:01:45.350><c> HTTP</c><00:01:46.350><c> client</c><00:01:46.770><c> is</c><00:01:46.920><c> immutable</c><00:01:47.220><c> and</c>
+
+00:01:47.749 --> 00:01:47.759 align:start position:0%
+once built HTTP client is immutable and
+ 
+
+00:01:47.759 --> 00:01:50.950 align:start position:0%
+once built HTTP client is immutable and
+can<00:01:48.119><c> be</c><00:01:48.210><c> used</c><00:01:48.420><c> to</c><00:01:48.540><c> send</c><00:01:48.750><c> multiple</c><00:01:48.960><c> requests</c>
+
+00:01:50.950 --> 00:01:50.960 align:start position:0%
+can be used to send multiple requests
+ 
+
+00:01:50.960 --> 00:01:54.710 align:start position:0%
+can be used to send multiple requests
+the<00:01:51.960><c> HTTP</c><00:01:52.680><c> client</c><00:01:53.040><c> API</c><00:01:53.430><c> follows</c><00:01:54.180><c> the</c><00:01:54.299><c> familiar</c>
+
+00:01:54.710 --> 00:01:54.720 align:start position:0%
+the HTTP client API follows the familiar
+ 
+
+00:01:54.720 --> 00:01:57.230 align:start position:0%
+the HTTP client API follows the familiar
+builder<00:01:55.140><c> pattern</c><00:01:55.430><c> there</c><00:01:56.430><c> are</c><00:01:56.460><c> factories</c><00:01:56.969><c> for</c>
+
+00:01:57.230 --> 00:01:57.240 align:start position:0%
+builder pattern there are factories for
+ 
+
+00:01:57.240 --> 00:01:59.959 align:start position:0%
+builder pattern there are factories for
+trading<00:01:57.570><c> builders</c><00:01:58.049><c> for</c><00:01:58.350><c> the</c><00:01:58.439><c> top-level</c><00:01:58.969><c> HTTP</c>
+
+00:01:59.959 --> 00:01:59.969 align:start position:0%
+trading builders for the top-level HTTP
+ 
+
+00:01:59.969 --> 00:02:04.039 align:start position:0%
+trading builders for the top-level HTTP
+client<00:02:00.390><c> and</c><00:02:00.540><c> the</c><00:02:01.469><c> HTTP</c><00:02:02.100><c> request</c><00:02:02.280><c> types</c><00:02:03.049><c> in</c>
+
+00:02:04.039 --> 00:02:04.049 align:start position:0%
+client and the HTTP request types in
+ 
+
+00:02:04.049 --> 00:02:07.010 align:start position:0%
+client and the HTTP request types in
+this<00:02:04.200><c> example</c><00:02:04.590><c> the</c><00:02:05.340><c> HTTP</c><00:02:06.030><c> client</c><00:02:06.420><c> new</c><00:02:06.630><c> builder</c>
+
+00:02:07.010 --> 00:02:07.020 align:start position:0%
+this example the HTTP client new builder
+ 
+
+00:02:07.020 --> 00:02:09.260 align:start position:0%
+this example the HTTP client new builder
+static<00:02:07.469><c> factory</c><00:02:07.829><c> method</c><00:02:08.129><c> returns</c><00:02:09.000><c> a</c><00:02:09.119><c> new</c>
+
+00:02:09.260 --> 00:02:09.270 align:start position:0%
+static factory method returns a new
+ 
+
+00:02:09.270 --> 00:02:12.430 align:start position:0%
+static factory method returns a new
+builder<00:02:09.690><c> of</c><00:02:09.720><c> HTTP</c><00:02:10.470><c> client</c><00:02:10.890><c> the</c><00:02:11.849><c> prefer</c>
+
+00:02:12.430 --> 00:02:12.440 align:start position:0%
+builder of HTTP client the prefer
+ 
+
+00:02:12.440 --> 00:02:15.610 align:start position:0%
+builder of HTTP client the prefer
+protocol<00:02:12.860><c> version</c><00:02:13.090><c> HTTP</c><00:02:14.090><c> to</c><00:02:14.270><c> a</c><00:02:14.300><c> set</c><00:02:14.630><c> which</c><00:02:15.470><c> is</c>
+
+00:02:15.610 --> 00:02:15.620 align:start position:0%
+protocol version HTTP to a set which is
+ 
+
+00:02:15.620 --> 00:02:18.880 align:start position:0%
+protocol version HTTP to a set which is
+the<00:02:15.650><c> default</c><00:02:16.570><c> the</c><00:02:17.570><c> normal</c><00:02:17.990><c> redirect</c><00:02:18.440><c> policy</c>
+
+00:02:18.880 --> 00:02:18.890 align:start position:0%
+the default the normal redirect policy
+ 
+
+00:02:18.890 --> 00:02:21.640 align:start position:0%
+the default the normal redirect policy
+is<00:02:18.980><c> set</c><00:02:19.450><c> which</c><00:02:20.450><c> means</c><00:02:20.660><c> to</c><00:02:20.900><c> follow</c><00:02:21.050><c> redirects</c>
+
+00:02:21.640 --> 00:02:21.650 align:start position:0%
+is set which means to follow redirects
+ 
+
+00:02:21.650 --> 00:02:25.000 align:start position:0%
+is set which means to follow redirects
+always<00:02:22.300><c> unless</c><00:02:23.300><c> been</c><00:02:23.570><c> redirected</c><00:02:23.900><c> from</c><00:02:24.830><c> the</c>
+
+00:02:25.000 --> 00:02:25.010 align:start position:0%
+always unless been redirected from the
+ 
+
+00:02:25.010 --> 00:02:27.730 align:start position:0%
+always unless been redirected from the
+more<00:02:25.220><c> secure</c><00:02:25.610><c> HTTPS</c><00:02:26.480><c> to</c><00:02:27.140><c> the</c><00:02:27.230><c> less</c><00:02:27.380><c> secure</c>
+
+00:02:27.730 --> 00:02:27.740 align:start position:0%
+more secure HTTPS to the less secure
+ 
+
+00:02:27.740 --> 00:02:30.880 align:start position:0%
+more secure HTTPS to the less secure
+HTTP<00:02:28.870><c> the</c><00:02:29.870><c> proxy</c><00:02:30.290><c> of</c><00:02:30.320><c> the</c><00:02:30.530><c> given</c><00:02:30.800><c> address</c>
+
+00:02:30.880 --> 00:02:30.890 align:start position:0%
+HTTP the proxy of the given address
+ 
+
+00:02:30.890 --> 00:02:34.420 align:start position:0%
+HTTP the proxy of the given address
+import<00:02:31.460><c> has</c><00:02:31.610><c> set</c><00:02:31.850><c> a</c><00:02:32.680><c> system-wide</c><00:02:33.680><c> default</c>
+
+00:02:34.420 --> 00:02:34.430 align:start position:0%
+import has set a system-wide default
+ 
+
+00:02:34.430 --> 00:02:36.850 align:start position:0%
+import has set a system-wide default
+Authenticator<00:02:35.090><c> is</c><00:02:35.360><c> set</c><00:02:35.540><c> in</c><00:02:36.170><c> case</c><00:02:36.470><c> the</c><00:02:36.650><c> site</c>
+
+00:02:36.850 --> 00:02:36.860 align:start position:0%
+Authenticator is set in case the site
+ 
+
+00:02:36.860 --> 00:02:39.940 align:start position:0%
+Authenticator is set in case the site
+requires<00:02:37.310><c> authentication</c><00:02:37.700><c> a</c><00:02:38.950><c> connects</c>
+
+00:02:39.940 --> 00:02:39.950 align:start position:0%
+requires authentication a connects
+ 
+
+00:02:39.950 --> 00:02:42.400 align:start position:0%
+requires authentication a connects
+timeout<00:02:40.460><c> for</c><00:02:40.730><c> new</c><00:02:40.880><c> connections</c><00:02:41.390><c> is</c><00:02:41.540><c> set</c><00:02:41.750><c> to</c><00:02:42.080><c> 20</c>
+
+00:02:42.400 --> 00:02:42.410 align:start position:0%
+timeout for new connections is set to 20
+ 
+
+00:02:42.410 --> 00:02:45.450 align:start position:0%
+timeout for new connections is set to 20
+seconds<00:02:42.800><c> and</c><00:02:43.040><c> then</c><00:02:43.910><c> the</c><00:02:44.030><c> client</c><00:02:44.330><c> is</c><00:02:44.450><c> built</c>
+
+00:02:45.450 --> 00:02:45.460 align:start position:0%
+seconds and then the client is built
+ 
+
+00:02:45.460 --> 00:02:48.580 align:start position:0%
+seconds and then the client is built
+multiple<00:02:46.460><c> requests</c><00:02:46.970><c> can</c><00:02:47.270><c> be</c><00:02:47.300><c> sent</c><00:02:47.690><c> by</c><00:02:48.560><c> a</c>
+
+00:02:48.580 --> 00:02:48.590 align:start position:0%
+multiple requests can be sent by a
+ 
+
+00:02:48.590 --> 00:02:53.890 align:start position:0%
+multiple requests can be sent by a
+single<00:02:49.130><c> client</c><00:02:50.950><c> an</c><00:02:52.000><c> HTTP</c><00:02:53.000><c> request</c><00:02:53.210><c> instance</c>
+
+00:02:53.890 --> 00:02:53.900 align:start position:0%
+single client an HTTP request instance
+ 
+
+00:02:53.900 --> 00:02:56.880 align:start position:0%
+single client an HTTP request instance
+is<00:02:54.140><c> built</c><00:02:54.710><c> through</c><00:02:55.040><c> a</c><00:02:55.070><c> HTTP</c><00:02:55.730><c> request</c><00:02:56.060><c> builder</c>
+
+00:02:56.880 --> 00:02:56.890 align:start position:0%
+is built through a HTTP request builder
+ 
+
+00:02:56.890 --> 00:02:59.800 align:start position:0%
+is built through a HTTP request builder
+where<00:02:57.890><c> the</c><00:02:58.010><c> request</c><00:02:58.370><c> URI</c><00:02:58.700><c> can</c><00:02:59.000><c> be</c><00:02:59.120><c> set</c><00:02:59.330><c> the</c>
+
+00:02:59.800 --> 00:02:59.810 align:start position:0%
+where the request URI can be set the
+ 
+
+00:02:59.810 --> 00:03:02.950 align:start position:0%
+where the request URI can be set the
+request<00:03:00.140><c> method</c><00:03:00.350><c> the</c><00:03:01.160><c> headers</c><00:03:01.520><c> a</c><00:03:01.760><c> body</c><00:03:02.540><c> if</c><00:03:02.780><c> any</c>
+
+00:03:02.950 --> 00:03:02.960 align:start position:0%
+request method the headers a body if any
+ 
+
+00:03:02.960 --> 00:03:06.460 align:start position:0%
+request method the headers a body if any
+and<00:03:03.230><c> a</c><00:03:03.800><c> request</c><00:03:04.190><c> specific</c><00:03:04.370><c> timeout</c><00:03:05.470><c> once</c>
+
+00:03:06.460 --> 00:03:06.470 align:start position:0%
+and a request specific timeout once
+ 
+
+00:03:06.470 --> 00:03:11.220 align:start position:0%
+and a request specific timeout once
+built<00:03:06.770><c> a</c><00:03:07.100><c> HTTP</c><00:03:07.910><c> request</c><00:03:08.360><c> is</c><00:03:08.630><c> immutable</c>
+
+00:03:11.220 --> 00:03:11.230 align:start position:0%
+ 
+ 
+
+00:03:11.230 --> 00:03:14.980 align:start position:0%
+ 
+similar<00:03:12.230><c> to</c><00:03:12.380><c> HTTP</c><00:03:13.010><c> client</c><00:03:13.430><c> the</c><00:03:13.940><c> HTTP</c><00:03:14.570><c> request</c>
+
+00:03:14.980 --> 00:03:14.990 align:start position:0%
+similar to HTTP client the HTTP request
+ 
+
+00:03:14.990 --> 00:03:17.470 align:start position:0%
+similar to HTTP client the HTTP request
+has<00:03:15.470><c> a</c><00:03:15.500><c> new</c><00:03:15.770><c> builder</c><00:03:16.190><c> factory</c><00:03:16.580><c> method</c><00:03:16.910><c> that</c>
+
+00:03:17.470 --> 00:03:17.480 align:start position:0%
+has a new builder factory method that
+ 
+
+00:03:17.480 --> 00:03:20.650 align:start position:0%
+has a new builder factory method that
+creates<00:03:17.780><c> a</c><00:03:17.870><c> new</c><00:03:18.050><c> HTTP</c><00:03:18.830><c> request</c><00:03:19.400><c> builder</c><00:03:19.790><c> that</c>
+
+00:03:20.650 --> 00:03:20.660 align:start position:0%
+creates a new HTTP request builder that
+ 
+
+00:03:20.660 --> 00:03:22.990 align:start position:0%
+creates a new HTTP request builder that
+builder<00:03:21.080><c> can</c><00:03:21.320><c> be</c><00:03:21.440><c> used</c><00:03:21.680><c> to</c><00:03:21.860><c> set</c><00:03:22.100><c> the</c><00:03:22.670><c> prayer</c>
+
+00:03:22.990 --> 00:03:23.000 align:start position:0%
+builder can be used to set the prayer
+ 
+
+00:03:23.000 --> 00:03:26.530 align:start position:0%
+builder can be used to set the prayer
+request<00:03:23.900><c> State</c><00:03:24.230><c> in</c><00:03:25.100><c> this</c><00:03:25.280><c> example</c><00:03:25.670><c> the</c>
+
+00:03:26.530 --> 00:03:26.540 align:start position:0%
+request State in this example the
+ 
+
+00:03:26.540 --> 00:03:28.750 align:start position:0%
+request State in this example the
+request<00:03:26.900><c> URI</c><00:03:27.200><c> is</c><00:03:27.380><c> set</c><00:03:27.740><c> to</c><00:03:27.860><c> open</c><00:03:28.130><c> JDK</c><00:03:28.310><c> dot</c>
+
+00:03:28.750 --> 00:03:28.760 align:start position:0%
+request URI is set to open JDK dot
+ 
+
+00:03:28.760 --> 00:03:31.840 align:start position:0%
+request URI is set to open JDK dot
+java.net<00:03:29.330><c> a</c><00:03:29.860><c> request</c><00:03:30.860><c> specific</c><00:03:31.340><c> time</c><00:03:31.550><c> out</c><00:03:31.730><c> of</c>
+
+00:03:31.840 --> 00:03:31.850 align:start position:0%
+java.net a request specific time out of
+ 
+
+00:03:31.850 --> 00:03:34.900 align:start position:0%
+java.net a request specific time out of
+one<00:03:32.000><c> minutes</c><00:03:32.390><c> is</c><00:03:32.510><c> set</c><00:03:32.750><c> a</c><00:03:33.190><c> header</c><00:03:34.190><c> indicating</c>
+
+00:03:34.900 --> 00:03:34.910 align:start position:0%
+one minutes is set a header indicating
+ 
+
+00:03:34.910 --> 00:03:37.060 align:start position:0%
+one minutes is set a header indicating
+the<00:03:35.030><c> content</c><00:03:35.450><c> type</c><00:03:35.690><c> since</c><00:03:36.530><c> this</c><00:03:36.709><c> will</c><00:03:36.890><c> be</c><00:03:37.040><c> a</c>
+
+00:03:37.060 --> 00:03:37.070 align:start position:0%
+the content type since this will be a
+ 
+
+00:03:37.070 --> 00:03:40.810 align:start position:0%
+the content type since this will be a
+post<00:03:37.310><c> request</c><00:03:38.350><c> the</c><00:03:39.350><c> body</c><00:03:39.560><c> publishers</c><00:03:40.160><c> of</c><00:03:40.340><c> file</c>
+
+00:03:40.810 --> 00:03:40.820 align:start position:0%
+post request the body publishers of file
+ 
+
+00:03:40.820 --> 00:03:43.330 align:start position:0%
+post request the body publishers of file
+factory<00:03:41.239><c> method</c><00:03:41.570><c> is</c><00:03:42.020><c> used</c><00:03:42.560><c> to</c><00:03:42.709><c> return</c><00:03:43.070><c> a</c>
+
+00:03:43.330 --> 00:03:43.340 align:start position:0%
+factory method is used to return a
+ 
+
+00:03:43.340 --> 00:03:45.850 align:start position:0%
+factory method is used to return a
+request<00:03:43.880><c> body</c><00:03:44.180><c> publisher</c><00:03:44.780><c> that</c><00:03:45.380><c> publishes</c>
+
+00:03:45.850 --> 00:03:45.860 align:start position:0%
+request body publisher that publishes
+ 
+
+00:03:45.860 --> 00:03:48.780 align:start position:0%
+request body publisher that publishes
+the<00:03:46.010><c> content</c><00:03:46.520><c> of</c><00:03:46.730><c> the</c><00:03:47.150><c> given</c><00:03:47.420><c> file</c><00:03:47.690><c> path</c><00:03:47.989><c> in</c>
+
+00:03:48.780 --> 00:03:48.790 align:start position:0%
+the content of the given file path in
+ 
+
+00:03:48.790 --> 00:03:52.810 align:start position:0%
+the content of the given file path in
+this<00:03:49.790><c> case</c><00:03:50.030><c> in</c><00:03:50.270><c> JSON</c><00:03:51.400><c> requests</c><00:03:52.400><c> are</c><00:03:52.550><c> immutable</c>
+
+00:03:52.810 --> 00:03:52.820 align:start position:0%
+this case in JSON requests are immutable
+ 
+
+00:03:52.820 --> 00:03:58.360 align:start position:0%
+this case in JSON requests are immutable
+and<00:03:53.300><c> can</c><00:03:53.570><c> be</c><00:03:53.660><c> sent</c><00:03:53.900><c> multiple</c><00:03:54.530><c> times</c><00:03:56.050><c> an</c><00:03:57.370><c> HTTP</c>
+
+00:03:58.360 --> 00:03:58.370 align:start position:0%
+and can be sent multiple times an HTTP
+ 
+
+00:03:58.370 --> 00:04:00.850 align:start position:0%
+and can be sent multiple times an HTTP
+response<00:03:58.550><c> is</c><00:03:59.090><c> not</c><00:03:59.300><c> created</c><00:03:59.840><c> directly</c><00:04:00.260><c> but</c>
+
+00:04:00.850 --> 00:04:00.860 align:start position:0%
+response is not created directly but
+ 
+
+00:04:00.860 --> 00:04:02.680 align:start position:0%
+response is not created directly but
+rather<00:04:00.920><c> returned</c><00:04:01.610><c> as</c><00:04:01.850><c> a</c><00:04:01.880><c> result</c><00:04:02.209><c> of</c><00:04:02.360><c> sending</c>
+
+00:04:02.680 --> 00:04:02.690 align:start position:0%
+rather returned as a result of sending
+ 
+
+00:04:02.690 --> 00:04:07.330 align:start position:0%
+rather returned as a result of sending
+an<00:04:02.810><c> HTTP</c><00:04:03.320><c> request</c><00:04:04.060><c> an</c><00:04:05.060><c> HTTP</c><00:04:05.750><c> response</c><00:04:06.140><c> is</c><00:04:07.070><c> made</c>
+
+00:04:07.330 --> 00:04:07.340 align:start position:0%
+an HTTP request an HTTP response is made
+ 
+
+00:04:07.340 --> 00:04:09.310 align:start position:0%
+an HTTP request an HTTP response is made
+available<00:04:07.489><c> when</c><00:04:08.209><c> the</c><00:04:08.300><c> response</c><00:04:08.660><c> status</c><00:04:09.080><c> code</c>
+
+00:04:09.310 --> 00:04:09.320 align:start position:0%
+available when the response status code
+ 
+
+00:04:09.320 --> 00:04:11.290 align:start position:0%
+available when the response status code
+and<00:04:09.590><c> headers</c><00:04:09.950><c> have</c><00:04:10.130><c> been</c><00:04:10.280><c> received</c><00:04:10.640><c> and</c>
+
+00:04:11.290 --> 00:04:11.300 align:start position:0%
+and headers have been received and
+ 
+
+00:04:11.300 --> 00:04:13.600 align:start position:0%
+and headers have been received and
+typically<00:04:12.110><c> after</c><00:04:12.290><c> the</c><00:04:12.830><c> response</c><00:04:13.160><c> body</c><00:04:13.370><c> has</c>
+
+00:04:13.600 --> 00:04:13.610 align:start position:0%
+typically after the response body has
+ 
+
+00:04:13.610 --> 00:04:16.599 align:start position:0%
+typically after the response body has
+also<00:04:13.820><c> been</c><00:04:14.150><c> completely</c><00:04:14.510><c> received</c><00:04:15.340><c> whether</c><00:04:16.340><c> or</c>
+
+00:04:16.599 --> 00:04:16.609 align:start position:0%
+also been completely received whether or
+ 
+
+00:04:16.609 --> 00:04:18.760 align:start position:0%
+also been completely received whether or
+not<00:04:16.790><c> the</c><00:04:17.209><c> HTTP</c><00:04:17.750><c> response</c><00:04:17.930><c> is</c><00:04:18.440><c> made</c><00:04:18.590><c> available</c>
+
+00:04:18.760 --> 00:04:18.770 align:start position:0%
+not the HTTP response is made available
+ 
+
+00:04:18.770 --> 00:04:20.680 align:start position:0%
+not the HTTP response is made available
+before<00:04:19.340><c> the</c><00:04:19.549><c> response</c><00:04:20.000><c> body</c><00:04:20.239><c> has</c><00:04:20.510><c> been</c>
+
+00:04:20.680 --> 00:04:20.690 align:start position:0%
+before the response body has been
+ 
+
+00:04:20.690 --> 00:04:23.890 align:start position:0%
+before the response body has been
+completely<00:04:21.080><c> received</c><00:04:21.640><c> depends</c><00:04:22.640><c> on</c><00:04:22.760><c> the</c><00:04:22.880><c> body</c>
+
+00:04:23.890 --> 00:04:23.900 align:start position:0%
+completely received depends on the body
+ 
+
+00:04:23.900 --> 00:04:26.020 align:start position:0%
+completely received depends on the body
+they're<00:04:24.110><c> provided</c><00:04:24.680><c> when</c><00:04:24.830><c> sending</c><00:04:25.190><c> the</c><00:04:25.310><c> HTTP</c>
+
+00:04:26.020 --> 00:04:26.030 align:start position:0%
+they're provided when sending the HTTP
+ 
+
+00:04:26.030 --> 00:04:28.780 align:start position:0%
+they're provided when sending the HTTP
+request<00:04:26.800><c> they</c><00:04:27.800><c> take</c><00:04:28.040><c> a</c><00:04:28.070><c> look</c><00:04:28.370><c> at</c><00:04:28.520><c> the</c><00:04:28.610><c> buddy</c>
+
+00:04:28.780 --> 00:04:28.790 align:start position:0%
+request they take a look at the buddy
+ 
+
+00:04:28.790 --> 00:04:31.000 align:start position:0%
+request they take a look at the buddy
+handler<00:04:29.240><c> more</c><00:04:29.600><c> closely</c><00:04:29.870><c> in</c><00:04:30.199><c> a</c><00:04:30.320><c> late</c><00:04:30.500><c> later</c><00:04:30.830><c> in</c>
+
+00:04:31.000 --> 00:04:31.010 align:start position:0%
+handler more closely in a late later in
+ 
+
+00:04:31.010 --> 00:04:35.140 align:start position:0%
+handler more closely in a late later in
+the<00:04:31.100><c> presentation</c><00:04:33.250><c> HTTP</c><00:04:34.250><c> response</c><00:04:34.699><c> provides</c>
+
+00:04:35.140 --> 00:04:35.150 align:start position:0%
+the presentation HTTP response provides
+ 
+
+00:04:35.150 --> 00:04:37.719 align:start position:0%
+the presentation HTTP response provides
+methods<00:04:35.419><c> for</c><00:04:35.990><c> accessing</c><00:04:36.350><c> to</c><00:04:37.040><c> respond</c><00:04:37.340><c> status</c>
+
+00:04:37.719 --> 00:04:37.729 align:start position:0%
+methods for accessing to respond status
+ 
+
+00:04:37.729 --> 00:04:40.770 align:start position:0%
+methods for accessing to respond status
+code<00:04:37.970><c> the</c><00:04:38.960><c> headers</c><00:04:39.320><c> to</c><00:04:39.590><c> response</c><00:04:40.160><c> body</c><00:04:40.430><c> and</c>
+
+00:04:40.770 --> 00:04:40.780 align:start position:0%
+code the headers to response body and
+ 
+
+00:04:40.780 --> 00:04:44.530 align:start position:0%
+code the headers to response body and
+the<00:04:41.780><c> HTTP</c><00:04:42.350><c> request</c><00:04:43.300><c> corresponding</c><00:04:44.300><c> to</c><00:04:44.419><c> this</c>
+
+00:04:44.530 --> 00:04:44.540 align:start position:0%
+the HTTP request corresponding to this
+ 
+
+00:04:44.540 --> 00:04:49.510 align:start position:0%
+the HTTP request corresponding to this
+response<00:04:46.930><c> the</c><00:04:47.930><c> HTTP</c><00:04:48.650><c> client</c><00:04:49.100><c> supports</c>
+
+00:04:49.510 --> 00:04:49.520 align:start position:0%
+response the HTTP client supports
+ 
+
+00:04:49.520 --> 00:04:51.520 align:start position:0%
+response the HTTP client supports
+synchronous<00:04:50.150><c> and</c><00:04:50.300><c> asynchronous</c><00:04:50.419><c> modes</c><00:04:51.380><c> of</c>
+
+00:04:51.520 --> 00:04:51.530 align:start position:0%
+synchronous and asynchronous modes of
+ 
+
+00:04:51.530 --> 00:04:54.100 align:start position:0%
+synchronous and asynchronous modes of
+operation<00:04:52.300><c> requests</c><00:04:53.300><c> sent</c><00:04:53.690><c> with</c><00:04:53.990><c> the</c>
+
+00:04:54.100 --> 00:04:54.110 align:start position:0%
+operation requests sent with the
+ 
+
+00:04:54.110 --> 00:04:57.219 align:start position:0%
+operation requests sent with the
+synchronous<00:04:54.910><c> send</c><00:04:55.910><c> method</c><00:04:56.240><c> blocked</c><00:04:57.080><c> the</c>
+
+00:04:57.219 --> 00:04:57.229 align:start position:0%
+synchronous send method blocked the
+ 
+
+00:04:57.229 --> 00:04:59.170 align:start position:0%
+synchronous send method blocked the
+current<00:04:57.500><c> rate</c><00:04:57.710><c> of</c><00:04:57.740><c> execution</c><00:04:58.520><c> until</c>
+
+00:04:59.170 --> 00:04:59.180 align:start position:0%
+current rate of execution until
+ 
+
+00:04:59.180 --> 00:05:02.500 align:start position:0%
+current rate of execution until
+responses<00:04:59.930><c> available</c><00:05:00.970><c> requests</c><00:05:01.970><c> sent</c><00:05:02.270><c> with</c>
+
+00:05:02.500 --> 00:05:02.510 align:start position:0%
+responses available requests sent with
+ 
+
+00:05:02.510 --> 00:05:04.480 align:start position:0%
+responses available requests sent with
+the<00:05:02.630><c> send</c><00:05:02.840><c> async</c><00:05:03.229><c> method</c><00:05:03.289><c> we</c><00:05:04.250><c> turn</c><00:05:04.460><c> a</c>
+
+00:05:04.480 --> 00:05:04.490 align:start position:0%
+the send async method we turn a
+ 
+
+00:05:04.490 --> 00:05:07.500 align:start position:0%
+the send async method we turn a
+completable<00:05:04.970><c> feature</c><00:05:05.300><c> of</c><00:05:05.510><c> HTTP</c><00:05:06.139><c> response</c>
+
+00:05:07.500 --> 00:05:07.510 align:start position:0%
+completable feature of HTTP response
+ 
+
+00:05:07.510 --> 00:05:09.730 align:start position:0%
+completable feature of HTTP response
+compatible<00:05:08.510><c> future</c><00:05:08.810><c> added</c><00:05:09.169><c> in</c><00:05:09.260><c> java</c><00:05:09.530><c> 8</c>
+
+00:05:09.730 --> 00:05:09.740 align:start position:0%
+compatible future added in java 8
+ 
+
+00:05:09.740 --> 00:05:11.379 align:start position:0%
+compatible future added in java 8
+provides<00:05:10.250><c> a</c><00:05:10.520><c> number</c><00:05:10.699><c> of</c><00:05:10.880><c> methods</c><00:05:11.330><c> for</c>
+
+00:05:11.379 --> 00:05:11.389 align:start position:0%
+provides a number of methods for
+ 
+
+00:05:11.389 --> 00:05:13.450 align:start position:0%
+provides a number of methods for
+building<00:05:11.600><c> chains</c><00:05:12.110><c> of</c><00:05:12.350><c> dependent</c><00:05:13.010><c> actions</c>
+
+00:05:13.450 --> 00:05:13.460 align:start position:0%
+building chains of dependent actions
+ 
+
+00:05:13.460 --> 00:05:15.640 align:start position:0%
+building chains of dependent actions
+that<00:05:14.240><c> can</c><00:05:14.389><c> be</c><00:05:14.479><c> run</c><00:05:14.660><c> either</c><00:05:14.810><c> synchronously</c><00:05:15.440><c> or</c>
+
+00:05:15.640 --> 00:05:15.650 align:start position:0%
+that can be run either synchronously or
+ 
+
+00:05:15.650 --> 00:05:20.740 align:start position:0%
+that can be run either synchronously or
+asynchronously<00:05:18.460><c> in</c><00:05:19.460><c> this</c><00:05:19.699><c> example</c><00:05:20.060><c> the</c>
+
+00:05:20.740 --> 00:05:20.750 align:start position:0%
+asynchronously in this example the
+ 
+
+00:05:20.750 --> 00:05:23.020 align:start position:0%
+asynchronously in this example the
+clients<00:05:21.139><c> send</c><00:05:21.530><c> method</c><00:05:21.830><c> is</c><00:05:22.250><c> given</c><00:05:22.610><c> the</c><00:05:22.699><c> request</c>
+
+00:05:23.020 --> 00:05:23.030 align:start position:0%
+clients send method is given the request
+ 
+
+00:05:23.030 --> 00:05:25.540 align:start position:0%
+clients send method is given the request
+to<00:05:23.150><c> be</c><00:05:23.240><c> sent</c><00:05:23.560><c> along</c><00:05:24.560><c> with</c><00:05:24.620><c> a</c><00:05:24.830><c> body</c><00:05:25.039><c> handler</c>
+
+00:05:25.540 --> 00:05:25.550 align:start position:0%
+to be sent along with a body handler
+ 
+
+00:05:25.550 --> 00:05:27.850 align:start position:0%
+to be sent along with a body handler
+that<00:05:25.820><c> converts</c><00:05:26.180><c> the</c><00:05:26.389><c> response</c><00:05:26.780><c> body</c><00:05:26.990><c> bytes</c><00:05:27.350><c> to</c>
+
+00:05:27.850 --> 00:05:27.860 align:start position:0%
+that converts the response body bytes to
+ 
+
+00:05:27.860 --> 00:05:31.480 align:start position:0%
+that converts the response body bytes to
+a<00:05:27.889><c> string</c><00:05:29.020><c> tenders</c><00:05:30.020><c> bond</c><00:05:30.470><c> status</c><00:05:30.800><c> code</c><00:05:31.250><c> and</c>
+
+00:05:31.480 --> 00:05:31.490 align:start position:0%
+a string tenders bond status code and
+ 
+
+00:05:31.490 --> 00:05:34.600 align:start position:0%
+a string tenders bond status code and
+body<00:05:31.940><c> are</c><00:05:32.120><c> printed</c><00:05:32.710><c> the</c><00:05:33.710><c> send</c><00:05:33.950><c> method</c><00:05:34.190><c> blocks</c>
+
+00:05:34.600 --> 00:05:34.610 align:start position:0%
+body are printed the send method blocks
+ 
+
+00:05:34.610 --> 00:05:36.820 align:start position:0%
+body are printed the send method blocks
+the<00:05:34.820><c> calling</c><00:05:35.180><c> thread</c><00:05:35.450><c> until</c><00:05:36.229><c> the</c><00:05:36.320><c> responses</c>
+
+00:05:36.820 --> 00:05:36.830 align:start position:0%
+the calling thread until the responses
+ 
+
+00:05:36.830 --> 00:05:41.469 align:start position:0%
+the calling thread until the responses
+available<00:05:38.889><c> this</c><00:05:39.889><c> next</c><00:05:40.250><c> example</c><00:05:40.550><c> is</c><00:05:40.910><c> the</c><00:05:41.270><c> same</c>
+
+00:05:41.469 --> 00:05:41.479 align:start position:0%
+available this next example is the same
+ 
+
+00:05:41.479 --> 00:05:43.750 align:start position:0%
+available this next example is the same
+code<00:05:41.840><c> only</c><00:05:42.530><c> written</c><00:05:42.740><c> using</c><00:05:43.099><c> the</c><00:05:43.310><c> asynchronous</c>
+
+00:05:43.750 --> 00:05:43.760 align:start position:0%
+code only written using the asynchronous
+ 
+
+00:05:43.760 --> 00:05:47.620 align:start position:0%
+code only written using the asynchronous
+style<00:05:44.500><c> the</c><00:05:45.500><c> send</c><00:05:45.800><c> async</c><00:05:46.280><c> method</c><00:05:46.340><c> is</c><00:05:47.120><c> given</c><00:05:47.539><c> a</c>
+
+00:05:47.620 --> 00:05:47.630 align:start position:0%
+style the send async method is given a
+ 
+
+00:05:47.630 --> 00:05:50.080 align:start position:0%
+style the send async method is given a
+request<00:05:47.960><c> to</c><00:05:48.110><c> be</c><00:05:48.229><c> sent</c><00:05:48.470><c> and</c><00:05:48.710><c> also</c><00:05:49.639><c> a</c><00:05:49.849><c> body</c>
+
+00:05:50.080 --> 00:05:50.090 align:start position:0%
+request to be sent and also a body
+ 
+
+00:05:50.090 --> 00:05:51.850 align:start position:0%
+request to be sent and also a body
+hunter<00:05:50.570><c> that</c><00:05:50.720><c> converts</c><00:05:51.110><c> the</c><00:05:51.289><c> response</c><00:05:51.650><c> body</c>
+
+00:05:51.850 --> 00:05:51.860 align:start position:0%
+hunter that converts the response body
+ 
+
+00:05:51.860 --> 00:05:55.180 align:start position:0%
+hunter that converts the response body
+bytes<00:05:52.190><c> to</c><00:05:52.400><c> a</c><00:05:52.430><c> string</c><00:05:53.770><c> the</c><00:05:54.770><c> completable</c>
+
+00:05:55.180 --> 00:05:55.190 align:start position:0%
+bytes to a string the completable
+ 
+
+00:05:55.190 --> 00:05:58.180 align:start position:0%
+bytes to a string the completable
+theater<00:05:55.610><c> then</c><00:05:55.880><c> apply</c><00:05:56.410><c> method</c><00:05:57.410><c> is</c><00:05:57.650><c> being</c><00:05:57.860><c> used</c>
+
+00:05:58.180 --> 00:05:58.190 align:start position:0%
+theater then apply method is being used
+ 
+
+00:05:58.190 --> 00:06:00.580 align:start position:0%
+theater then apply method is being used
+to<00:05:58.310><c> create</c><00:05:58.669><c> a</c><00:05:58.699><c> dependent</c><00:05:59.300><c> action</c><00:05:59.720><c> the</c><00:06:00.289><c> prints</c>
+
+00:06:00.580 --> 00:06:00.590 align:start position:0%
+to create a dependent action the prints
+ 
+
+00:06:00.590 --> 00:06:04.650 align:start position:0%
+to create a dependent action the prints
+the<00:06:00.919><c> response</c><00:06:01.849><c> code</c><00:06:02.180><c> and</c><00:06:02.840><c> returns</c><00:06:03.229><c> response</c>
+
+00:06:04.650 --> 00:06:04.660 align:start position:0%
+the response code and returns response
+ 
+
+00:06:04.660 --> 00:06:07.240 align:start position:0%
+the response code and returns response
+another<00:06:05.660><c> down</c><00:06:05.930><c> apply</c><00:06:06.199><c> method</c><00:06:06.620><c> is</c><00:06:06.800><c> used</c><00:06:07.099><c> to</c>
+
+00:06:07.240 --> 00:06:07.250 align:start position:0%
+another down apply method is used to
+ 
+
+00:06:07.250 --> 00:06:09.610 align:start position:0%
+another down apply method is used to
+create<00:06:07.460><c> another</c><00:06:08.030><c> dependent</c><00:06:08.599><c> action</c><00:06:08.960><c> that</c>
+
+00:06:09.610 --> 00:06:09.620 align:start position:0%
+create another dependent action that
+ 
+
+00:06:09.620 --> 00:06:12.210 align:start position:0%
+create another dependent action that
+map's<00:06:09.949><c> the</c><00:06:10.190><c> HTTP</c><00:06:10.910><c> response</c><00:06:11.030><c> to</c><00:06:11.479><c> its</c><00:06:11.599><c> body</c><00:06:11.810><c> type</c>
+
+00:06:12.210 --> 00:06:12.220 align:start position:0%
+map's the HTTP response to its body type
+ 
+
+00:06:12.220 --> 00:06:16.089 align:start position:0%
+map's the HTTP response to its body type
+which<00:06:13.220><c> in</c><00:06:13.430><c> this</c><00:06:13.550><c> case</c><00:06:13.760><c> is</c><00:06:14.060><c> a</c><00:06:14.150><c> string</c><00:06:14.949><c> the</c><00:06:15.949><c> den</c>
+
+00:06:16.089 --> 00:06:16.099 align:start position:0%
+which in this case is a string the den
+ 
+
+00:06:16.099 --> 00:06:18.370 align:start position:0%
+which in this case is a string the den
+accept<00:06:16.520><c> method</c><00:06:16.789><c> consumes</c><00:06:17.510><c> that</c><00:06:17.780><c> string</c><00:06:18.169><c> and</c>
+
+00:06:18.370 --> 00:06:18.380 align:start position:0%
+accept method consumes that string and
+ 
+
+00:06:18.380 --> 00:06:24.440 align:start position:0%
+accept method consumes that string and
+just<00:06:18.410><c> printed</c><00:06:19.370><c> out</c><00:06:22.870><c> Java</c><00:06:23.870><c> util</c>
+
+00:06:24.440 --> 00:06:24.450 align:start position:0%
+just printed out Java util
+ 
+
+00:06:24.450 --> 00:06:27.380 align:start position:0%
+just printed out Java util
+current<00:06:24.780><c> flow</c><00:06:24.990><c> was</c><00:06:25.950><c> added</c><00:06:26.310><c> in</c><00:06:26.400><c> Java</c><00:06:26.550><c> nine</c><00:06:26.880><c> and</c>
+
+00:06:27.380 --> 00:06:27.390 align:start position:0%
+current flow was added in Java nine and
+ 
+
+00:06:27.390 --> 00:06:28.910 align:start position:0%
+current flow was added in Java nine and
+it<00:06:27.660><c> provides</c><00:06:28.020><c> the</c><00:06:28.230><c> reactive</c><00:06:28.650><c> streams</c>
+
+00:06:28.910 --> 00:06:28.920 align:start position:0%
+it provides the reactive streams
+ 
+
+00:06:28.920 --> 00:06:32.210 align:start position:0%
+it provides the reactive streams
+interfaces<00:06:29.730><c> for</c><00:06:30.030><c> the</c><00:06:30.150><c> Java</c><00:06:30.390><c> platform</c><00:06:31.220><c> the</c>
+
+00:06:32.210 --> 00:06:32.220 align:start position:0%
+interfaces for the Java platform the
+ 
+
+00:06:32.220 --> 00:06:35.870 align:start position:0%
+interfaces for the Java platform the
+HTTP<00:06:33.000><c> client</c><00:06:33.510><c> models</c><00:06:34.110><c> requests</c><00:06:34.680><c> body</c><00:06:34.890><c> using</c><00:06:35.790><c> a</c>
+
+00:06:35.870 --> 00:06:35.880 align:start position:0%
+HTTP client models requests body using a
+ 
+
+00:06:35.880 --> 00:06:38.510 align:start position:0%
+HTTP client models requests body using a
+subtype<00:06:36.360><c> of</c><00:06:36.390><c> flow</c><00:06:36.750><c> publisher</c><00:06:37.320><c> a</c><00:06:37.500><c> request</c><00:06:38.310><c> body</c>
+
+00:06:38.510 --> 00:06:38.520 align:start position:0%
+subtype of flow publisher a request body
+ 
+
+00:06:38.520 --> 00:06:42.320 align:start position:0%
+subtype of flow publisher a request body
+publisher<00:06:39.290><c> the</c><00:06:40.290><c> HTTP</c><00:06:41.040><c> client</c><00:06:41.490><c> subscribed</c><00:06:42.030><c> to</c>
+
+00:06:42.320 --> 00:06:42.330 align:start position:0%
+publisher the HTTP client subscribed to
+ 
+
+00:06:42.330 --> 00:06:44.000 align:start position:0%
+publisher the HTTP client subscribed to
+this<00:06:42.540><c> publisher</c><00:06:43.110><c> when</c><00:06:43.350><c> sending</c><00:06:43.770><c> a</c><00:06:43.890><c> request</c>
+
+00:06:44.000 --> 00:06:44.010 align:start position:0%
+this publisher when sending a request
+ 
+
+00:06:44.010 --> 00:06:47.830 align:start position:0%
+this publisher when sending a request
+that<00:06:44.730><c> has</c><00:06:44.880><c> somebody</c><00:06:45.300><c> on</c><00:06:46.020><c> the</c><00:06:47.010><c> receiving</c><00:06:47.340><c> side</c>
+
+00:06:47.830 --> 00:06:47.840 align:start position:0%
+that has somebody on the receiving side
+ 
+
+00:06:47.840 --> 00:06:50.900 align:start position:0%
+that has somebody on the receiving side
+when<00:06:48.840><c> a</c><00:06:48.870><c> response</c><00:06:49.380><c> code</c><00:06:49.740><c> and</c><00:06:50.040><c> headers</c><00:06:50.700><c> are</c>
+
+00:06:50.900 --> 00:06:50.910 align:start position:0%
+when a response code and headers are
+ 
+
+00:06:50.910 --> 00:06:53.930 align:start position:0%
+when a response code and headers are
+received<00:06:51.300><c> the</c><00:06:52.050><c> HTTP</c><00:06:52.740><c> client</c><00:06:53.160><c> calls</c><00:06:53.550><c> the</c><00:06:53.760><c> body</c>
+
+00:06:53.930 --> 00:06:53.940 align:start position:0%
+received the HTTP client calls the body
+ 
+
+00:06:53.940 --> 00:06:56.930 align:start position:0%
+received the HTTP client calls the body
+handler<00:06:54.530><c> the</c><00:06:55.530><c> body</c><00:06:55.710><c> hunter</c><00:06:56.130><c> can</c><00:06:56.340><c> then</c><00:06:56.490><c> inspect</c>
+
+00:06:56.930 --> 00:06:56.940 align:start position:0%
+handler the body hunter can then inspect
+ 
+
+00:06:56.940 --> 00:06:59.660 align:start position:0%
+handler the body hunter can then inspect
+the<00:06:57.630><c> status</c><00:06:57.990><c> code</c><00:06:58.170><c> and</c><00:06:58.380><c> headers</c><00:06:58.650><c> if</c><00:06:59.190><c> it</c><00:06:59.460><c> wishes</c>
+
+00:06:59.660 --> 00:06:59.670 align:start position:0%
+the status code and headers if it wishes
+ 
+
+00:06:59.670 --> 00:07:03.380 align:start position:0%
+the status code and headers if it wishes
+before<00:07:00.660><c> creating</c><00:07:01.020><c> a</c><00:07:01.260><c> subscriber</c><00:07:02.390><c> this</c>
+
+00:07:03.380 --> 00:07:03.390 align:start position:0%
+before creating a subscriber this
+ 
+
+00:07:03.390 --> 00:07:05.480 align:start position:0%
+before creating a subscriber this
+subscriber<00:07:03.900><c> returned</c><00:07:04.710><c> by</c><00:07:04.830><c> the</c><00:07:04.890><c> body</c><00:07:05.100><c> hunter</c>
+
+00:07:05.480 --> 00:07:05.490 align:start position:0%
+subscriber returned by the body hunter
+ 
+
+00:07:05.490 --> 00:07:08.720 align:start position:0%
+subscriber returned by the body hunter
+will<00:07:06.300><c> be</c><00:07:06.450><c> used</c><00:07:06.780><c> to</c><00:07:07.170><c> receive</c><00:07:07.920><c> and</c><00:07:08.190><c> process</c><00:07:08.340><c> the</c>
+
+00:07:08.720 --> 00:07:08.730 align:start position:0%
+will be used to receive and process the
+ 
+
+00:07:08.730 --> 00:07:12.680 align:start position:0%
+will be used to receive and process the
+actual<00:07:09.060><c> response</c><00:07:09.540><c> body</c><00:07:09.780><c> bytes</c><00:07:10.730><c> the</c><00:07:11.730><c> HTTP</c><00:07:12.450><c> body</c>
+
+00:07:12.680 --> 00:07:12.690 align:start position:0%
+actual response body bytes the HTTP body
+ 
+
+00:07:12.690 --> 00:07:13.400 align:start position:0%
+actual response body bytes the HTTP body
+subscriber
+
+00:07:13.400 --> 00:07:13.410 align:start position:0%
+subscriber
+ 
+
+00:07:13.410 --> 00:07:17.240 align:start position:0%
+subscriber
+is<00:07:13.560><c> a</c><00:07:13.620><c> subtype</c><00:07:14.550><c> of</c><00:07:14.580><c> flow</c><00:07:15.060><c> subscriber</c><00:07:15.570><c> and</c><00:07:16.250><c> HTTP</c>
+
+00:07:17.240 --> 00:07:17.250 align:start position:0%
+is a subtype of flow subscriber and HTTP
+ 
+
+00:07:17.250 --> 00:07:19.760 align:start position:0%
+is a subtype of flow subscriber and HTTP
+client<00:07:17.730><c> acts</c><00:07:18.150><c> as</c><00:07:18.450><c> a</c><00:07:18.480><c> publisher</c><00:07:19.050><c> of</c><00:07:19.200><c> response</c>
+
+00:07:19.760 --> 00:07:19.770 align:start position:0%
+client acts as a publisher of response
+ 
+
+00:07:19.770 --> 00:07:24.170 align:start position:0%
+client acts as a publisher of response
+body<00:07:20.010><c> bytes</c><00:07:22.250><c> looking</c><00:07:23.250><c> a</c><00:07:23.340><c> little</c><00:07:23.580><c> closer</c><00:07:23.820><c> at</c>
+
+00:07:24.170 --> 00:07:24.180 align:start position:0%
+body bytes looking a little closer at
+ 
+
+00:07:24.180 --> 00:07:27.170 align:start position:0%
+body bytes looking a little closer at
+the<00:07:24.390><c> request</c><00:07:24.660><c> body</c><00:07:24.900><c> publisher</c><00:07:25.500><c> it</c><00:07:26.280><c> is</c><00:07:26.460><c> a</c><00:07:26.490><c> flow</c>
+
+00:07:27.170 --> 00:07:27.180 align:start position:0%
+the request body publisher it is a flow
+ 
+
+00:07:27.180 --> 00:07:30.050 align:start position:0%
+the request body publisher it is a flow
+publisher<00:07:27.780><c> of</c><00:07:27.930><c> byte</c><00:07:28.350><c> buffers</c><00:07:28.710><c> the</c><00:07:29.060><c> byte</c>
+
+00:07:30.050 --> 00:07:30.060 align:start position:0%
+publisher of byte buffers the byte
+ 
+
+00:07:30.060 --> 00:07:32.410 align:start position:0%
+publisher of byte buffers the byte
+buffers<00:07:30.450><c> contain</c><00:07:30.900><c> the</c><00:07:31.170><c> request</c><00:07:31.470><c> body</c><00:07:31.710><c> bytes</c>
+
+00:07:32.410 --> 00:07:32.420 align:start position:0%
+buffers contain the request body bytes
+ 
+
+00:07:32.420 --> 00:07:35.510 align:start position:0%
+buffers contain the request body bytes
+it<00:07:33.420><c> also</c><00:07:33.660><c> adds</c><00:07:34.050><c> a</c><00:07:34.260><c> single</c><00:07:34.680><c> abstract</c><00:07:35.160><c> method</c>
+
+00:07:35.510 --> 00:07:35.520 align:start position:0%
+it also adds a single abstract method
+ 
+
+00:07:35.520 --> 00:07:38.360 align:start position:0%
+it also adds a single abstract method
+content<00:07:36.150><c> length</c><00:07:36.650><c> this</c><00:07:37.650><c> method</c><00:07:38.100><c> can</c>
+
+00:07:38.360 --> 00:07:38.370 align:start position:0%
+content length this method can
+ 
+
+00:07:38.370 --> 00:07:40.310 align:start position:0%
+content length this method can
+optionally<00:07:38.670><c> return</c><00:07:39.360><c> the</c><00:07:39.810><c> length</c><00:07:40.050><c> of</c><00:07:40.200><c> the</c>
+
+00:07:40.310 --> 00:07:40.320 align:start position:0%
+optionally return the length of the
+ 
+
+00:07:40.320 --> 00:07:43.880 align:start position:0%
+optionally return the length of the
+request<00:07:40.650><c> body</c><00:07:40.950><c> if</c><00:07:41.310><c> known</c><00:07:41.910><c> a</c><00:07:42.680><c> request</c><00:07:43.680><c> body</c>
+
+00:07:43.880 --> 00:07:43.890 align:start position:0%
+request body if known a request body
+ 
+
+00:07:43.890 --> 00:07:46.280 align:start position:0%
+request body if known a request body
+publisher<00:07:44.460><c> implementation</c><00:07:45.210><c> is</c><00:07:45.390><c> responsible</c>
+
+00:07:46.280 --> 00:07:46.290 align:start position:0%
+publisher implementation is responsible
+ 
+
+00:07:46.290 --> 00:07:48.830 align:start position:0%
+publisher implementation is responsible
+for<00:07:46.320><c> converting</c><00:07:46.980><c> a</c><00:07:47.160><c> high-level</c><00:07:47.940><c> Java</c><00:07:48.360><c> object</c>
+
+00:07:48.830 --> 00:07:48.840 align:start position:0%
+for converting a high-level Java object
+ 
+
+00:07:48.840 --> 00:07:51.200 align:start position:0%
+for converting a high-level Java object
+like<00:07:49.230><c> a</c><00:07:49.260><c> string</c><00:07:49.620><c> into</c><00:07:50.520><c> a</c><00:07:50.550><c> flow</c><00:07:50.820><c> of</c><00:07:50.850><c> byte</c>
+
+00:07:51.200 --> 00:07:51.210 align:start position:0%
+like a string into a flow of byte
+ 
+
+00:07:51.210 --> 00:07:53.750 align:start position:0%
+like a string into a flow of byte
+buffers<00:07:51.240><c> that</c><00:07:51.840><c> can</c><00:07:52.200><c> then</c><00:07:52.380><c> be</c><00:07:52.560><c> sent</c><00:07:52.830><c> as</c><00:07:53.430><c> the</c>
+
+00:07:53.750 --> 00:07:53.760 align:start position:0%
+buffers that can then be sent as the
+ 
+
+00:07:53.760 --> 00:07:58.820 align:start position:0%
+buffers that can then be sent as the
+request<00:07:54.300><c> body</c><00:07:56.630><c> the</c><00:07:57.630><c> request</c><00:07:57.990><c> body</c><00:07:58.200><c> publishers</c>
+
+00:07:58.820 --> 00:07:58.830 align:start position:0%
+request body the request body publishers
+ 
+
+00:07:58.830 --> 00:08:01.550 align:start position:0%
+request body the request body publishers
+class<00:07:59.120><c> contains</c><00:08:00.120><c> only</c><00:08:00.330><c> static</c><00:08:00.870><c> methods</c><00:08:01.350><c> and</c>
+
+00:08:01.550 --> 00:08:01.560 align:start position:0%
+class contains only static methods and
+ 
+
+00:08:01.560 --> 00:08:03.980 align:start position:0%
+class contains only static methods and
+these<00:08:02.160><c> methods</c><00:08:02.460><c> are</c><00:08:02.820><c> factories</c><00:08:03.330><c> for</c><00:08:03.600><c> creating</c>
+
+00:08:03.980 --> 00:08:03.990 align:start position:0%
+these methods are factories for creating
+ 
+
+00:08:03.990 --> 00:08:06.200 align:start position:0%
+these methods are factories for creating
+body<00:08:04.200><c> publishers</c><00:08:04.800><c> that</c><00:08:05.010><c> can</c><00:08:05.640><c> be</c><00:08:05.730><c> used</c><00:08:05.970><c> for</c>
+
+00:08:06.200 --> 00:08:06.210 align:start position:0%
+body publishers that can be used for
+ 
+
+00:08:06.210 --> 00:08:09.500 align:start position:0%
+body publishers that can be used for
+most<00:08:06.360><c> common</c><00:08:06.660><c> use</c><00:08:06.930><c> cases</c><00:08:08.060><c> here</c><00:08:09.060><c> we</c><00:08:09.180><c> can</c><00:08:09.330><c> see</c>
+
+00:08:09.500 --> 00:08:09.510 align:start position:0%
+most common use cases here we can see
+ 
+
+00:08:09.510 --> 00:08:11.600 align:start position:0%
+most common use cases here we can see
+some<00:08:09.750><c> of</c><00:08:09.840><c> the</c><00:08:09.960><c> factories</c><00:08:10.410><c> for</c><00:08:10.710><c> curating</c><00:08:11.250><c> a</c><00:08:11.430><c> bud</c>
+
+00:08:11.600 --> 00:08:11.610 align:start position:0%
+some of the factories for curating a bud
+ 
+
+00:08:11.610 --> 00:08:14.960 align:start position:0%
+some of the factories for curating a bud
+for<00:08:11.880><c> creating</c><00:08:12.330><c> body</c><00:08:12.570><c> publishers</c><00:08:13.790><c> from</c><00:08:14.790><c> the</c>
+
+00:08:14.960 --> 00:08:14.970 align:start position:0%
+for creating body publishers from the
+ 
+
+00:08:14.970 --> 00:08:17.000 align:start position:0%
+for creating body publishers from the
+byte<00:08:15.150><c> array</c><00:08:15.450><c> or</c><00:08:15.720><c> an</c><00:08:15.870><c> interval</c><00:08:16.230><c> of</c><00:08:16.440><c> byte</c><00:08:16.800><c> array</c>
+
+00:08:17.000 --> 00:08:17.010 align:start position:0%
+byte array or an interval of byte array
+ 
+
+00:08:17.010 --> 00:08:20.540 align:start position:0%
+byte array or an interval of byte array
+from<00:08:17.970><c> a</c><00:08:18.150><c> file</c><00:08:18.390><c> path</c><00:08:18.660><c> or</c><00:08:18.930><c> a</c><00:08:18.960><c> string</c><00:08:19.290><c> as</c><00:08:19.500><c> well</c><00:08:20.370><c> as</c>
+
+00:08:20.540 --> 00:08:20.550 align:start position:0%
+from a file path or a string as well as
+ 
+
+00:08:20.550 --> 00:08:25.430 align:start position:0%
+from a file path or a string as well as
+from<00:08:20.700><c> an</c><00:08:20.820><c> input</c><00:08:21.060><c> stream</c><00:08:23.750><c> body</c><00:08:24.750><c> Condor</c><00:08:25.230><c> is</c><00:08:25.410><c> a</c>
+
+00:08:25.430 --> 00:08:25.440 align:start position:0%
+from an input stream body Condor is a
+ 
+
+00:08:25.440 --> 00:08:27.620 align:start position:0%
+from an input stream body Condor is a
+functional<00:08:26.010><c> interface</c><00:08:26.490><c> that</c><00:08:27.150><c> has</c><00:08:27.270><c> a</c><00:08:27.300><c> single</c>
+
+00:08:27.620 --> 00:08:27.630 align:start position:0%
+functional interface that has a single
+ 
+
+00:08:27.630 --> 00:08:30.790 align:start position:0%
+functional interface that has a single
+method<00:08:27.960><c> apply</c><00:08:28.650><c> that</c><00:08:29.460><c> takes</c><00:08:29.700><c> a</c><00:08:29.850><c> response</c><00:08:30.240><c> info</c>
+
+00:08:30.790 --> 00:08:30.800 align:start position:0%
+method apply that takes a response info
+ 
+
+00:08:30.800 --> 00:08:33.430 align:start position:0%
+method apply that takes a response info
+containing<00:08:31.800><c> the</c><00:08:31.920><c> status</c><00:08:32.280><c> code</c><00:08:32.460><c> and</c><00:08:32.670><c> headers</c>
+
+00:08:33.430 --> 00:08:33.440 align:start position:0%
+containing the status code and headers
+ 
+
+00:08:33.440 --> 00:08:36.589 align:start position:0%
+containing the status code and headers
+the<00:08:34.440><c> body</c><00:08:34.650><c> handler</c><00:08:35.130><c> is</c><00:08:35.310><c> invoked</c><00:08:35.670><c> when</c><00:08:36.000><c> the</c>
+
+00:08:36.589 --> 00:08:36.599 align:start position:0%
+the body handler is invoked when the
+ 
+
+00:08:36.599 --> 00:08:38.210 align:start position:0%
+the body handler is invoked when the
+response<00:08:37.500><c> status</c>
+
+00:08:38.210 --> 00:08:38.220 align:start position:0%
+response status
+ 
+
+00:08:38.220 --> 00:08:40.730 align:start position:0%
+response status
+and<00:08:38.460><c> headers</c><00:08:38.760><c> are</c><00:08:39.030><c> available</c><00:08:39.510><c> but</c><00:08:40.260><c> before</c><00:08:40.620><c> the</c>
+
+00:08:40.730 --> 00:08:40.740 align:start position:0%
+and headers are available but before the
+ 
+
+00:08:40.740 --> 00:08:42.469 align:start position:0%
+and headers are available but before the
+actual<00:08:41.190><c> response</c><00:08:41.580><c> body</c><00:08:41.820><c> bytes</c><00:08:42.150><c> have</c><00:08:42.330><c> been</c>
+
+00:08:42.469 --> 00:08:42.479 align:start position:0%
+actual response body bytes have been
+ 
+
+00:08:42.479 --> 00:08:45.590 align:start position:0%
+actual response body bytes have been
+received<00:08:43.400><c> the</c><00:08:44.400><c> body</c><00:08:44.580><c> handler</c><00:08:45.060><c> can</c><00:08:45.240><c> inspect</c>
+
+00:08:45.590 --> 00:08:45.600 align:start position:0%
+received the body handler can inspect
+ 
+
+00:08:45.600 --> 00:08:49.370 align:start position:0%
+received the body handler can inspect
+there's<00:08:46.290><c> response</c><00:08:47.070><c> code</c><00:08:47.400><c> and</c><00:08:47.670><c> headers</c><00:08:48.380><c> before</c>
+
+00:08:49.370 --> 00:08:49.380 align:start position:0%
+there's response code and headers before
+ 
+
+00:08:49.380 --> 00:08:51.560 align:start position:0%
+there's response code and headers before
+returning<00:08:49.890><c> the</c><00:08:49.980><c> body</c><00:08:50.160><c> subscriber</c><00:08:50.730><c> that</c><00:08:51.450><c> will</c>
+
+00:08:51.560 --> 00:08:51.570 align:start position:0%
+returning the body subscriber that will
+ 
+
+00:08:51.570 --> 00:08:53.300 align:start position:0%
+returning the body subscriber that will
+then<00:08:51.750><c> be</c><00:08:51.900><c> used</c><00:08:52.140><c> to</c><00:08:52.380><c> receive</c><00:08:52.770><c> the</c><00:08:52.950><c> actual</c>
+
+00:08:53.300 --> 00:08:53.310 align:start position:0%
+then be used to receive the actual
+ 
+
+00:08:53.310 --> 00:08:57.950 align:start position:0%
+then be used to receive the actual
+response<00:08:53.670><c> body</c><00:08:53.880><c> bytes</c><00:08:56.120><c> body</c><00:08:57.120><c> subscriber</c><00:08:57.660><c> is</c><00:08:57.930><c> a</c>
+
+00:08:57.950 --> 00:08:57.960 align:start position:0%
+response body bytes body subscriber is a
+ 
+
+00:08:57.960 --> 00:09:00.530 align:start position:0%
+response body bytes body subscriber is a
+flow<00:08:58.260><c> subscriber</c><00:08:58.800><c> of</c><00:08:59.100><c> an</c><00:08:59.700><c> aggregate</c><00:09:00.030><c> of</c><00:09:00.300><c> byte</c>
+
+00:09:00.530 --> 00:09:00.540 align:start position:0%
+flow subscriber of an aggregate of byte
+ 
+
+00:09:00.540 --> 00:09:03.440 align:start position:0%
+flow subscriber of an aggregate of byte
+buffers<00:09:00.930><c> the</c><00:09:01.340><c> byte</c><00:09:02.340><c> buffers</c><00:09:02.730><c> contain</c><00:09:03.210><c> the</c>
+
+00:09:03.440 --> 00:09:03.450 align:start position:0%
+buffers the byte buffers contain the
+ 
+
+00:09:03.450 --> 00:09:06.620 align:start position:0%
+buffers the byte buffers contain the
+response<00:09:03.780><c> body</c><00:09:03.990><c> bytes</c><00:09:04.820><c> body</c><00:09:05.820><c> subscriber</c><00:09:06.330><c> adds</c>
+
+00:09:06.620 --> 00:09:06.630 align:start position:0%
+response body bytes body subscriber adds
+ 
+
+00:09:06.630 --> 00:09:09.200 align:start position:0%
+response body bytes body subscriber adds
+a<00:09:06.780><c> single</c><00:09:07.140><c> abstract</c><00:09:07.620><c> method</c><00:09:07.950><c> get'</c><00:09:08.190><c> body</c><00:09:08.400><c> that</c>
+
+00:09:09.200 --> 00:09:09.210 align:start position:0%
+a single abstract method get' body that
+ 
+
+00:09:09.210 --> 00:09:11.390 align:start position:0%
+a single abstract method get' body that
+returns<00:09:09.600><c> a</c><00:09:09.750><c> completion</c><00:09:10.260><c> stage</c><00:09:10.470><c> that</c>
+
+00:09:11.390 --> 00:09:11.400 align:start position:0%
+returns a completion stage that
+ 
+
+00:09:11.400 --> 00:09:13.820 align:start position:0%
+returns a completion stage that
+completes<00:09:11.820><c> with</c><00:09:12.030><c> a</c><00:09:12.090><c> higher-level</c><00:09:12.390><c> type</c><00:09:13.020><c> that</c>
+
+00:09:13.820 --> 00:09:13.830 align:start position:0%
+completes with a higher-level type that
+ 
+
+00:09:13.830 --> 00:09:15.830 align:start position:0%
+completes with a higher-level type that
+the<00:09:13.950><c> body</c><00:09:14.130><c> subscriber</c><00:09:14.670><c> implementation</c><00:09:15.540><c> will</c>
+
+00:09:15.830 --> 00:09:15.840 align:start position:0%
+the body subscriber implementation will
+ 
+
+00:09:15.840 --> 00:09:19.750 align:start position:0%
+the body subscriber implementation will
+convert<00:09:16.230><c> the</c><00:09:16.590><c> response</c><00:09:16.980><c> body</c><00:09:17.160><c> bytes</c><00:09:17.520><c> into</c><00:09:18.500><c> in</c>
+
+00:09:19.750 --> 00:09:19.760 align:start position:0%
+convert the response body bytes into in
+ 
+
+00:09:19.760 --> 00:09:22.970 align:start position:0%
+convert the response body bytes into in
+many<00:09:20.760><c> cases</c><00:09:21.300><c> it</c><00:09:21.600><c> is</c><00:09:21.780><c> not</c><00:09:21.990><c> necessary</c><00:09:22.560><c> to</c><00:09:22.650><c> deal</c>
+
+00:09:22.970 --> 00:09:22.980 align:start position:0%
+many cases it is not necessary to deal
+ 
+
+00:09:22.980 --> 00:09:25.190 align:start position:0%
+many cases it is not necessary to deal
+with<00:09:23.010><c> body</c><00:09:23.460><c> subscribers</c><00:09:24.090><c> directly</c><00:09:24.540><c> but</c>
+
+00:09:25.190 --> 00:09:25.200 align:start position:0%
+with body subscribers directly but
+ 
+
+00:09:25.200 --> 00:09:28.460 align:start position:0%
+with body subscribers directly but
+rather<00:09:25.380><c> body</c><00:09:25.800><c> hammer</c><00:09:26.570><c> the</c><00:09:27.570><c> body</c><00:09:27.810><c> hung</c><00:09:28.170><c> nerves</c>
+
+00:09:28.460 --> 00:09:28.470 align:start position:0%
+rather body hammer the body hung nerves
+ 
+
+00:09:28.470 --> 00:09:31.250 align:start position:0%
+rather body hammer the body hung nerves
+class<00:09:28.950><c> contains</c><00:09:29.670><c> only</c><00:09:30.090><c> static</c><00:09:30.480><c> methods</c><00:09:30.930><c> and</c>
+
+00:09:31.250 --> 00:09:31.260 align:start position:0%
+class contains only static methods and
+ 
+
+00:09:31.260 --> 00:09:34.130 align:start position:0%
+class contains only static methods and
+these<00:09:32.250><c> methods</c><00:09:32.490><c> are</c><00:09:32.850><c> frakked</c><00:09:33.120><c> factories</c><00:09:33.690><c> for</c>
+
+00:09:34.130 --> 00:09:34.140 align:start position:0%
+these methods are frakked factories for
+ 
+
+00:09:34.140 --> 00:09:36.380 align:start position:0%
+these methods are frakked factories for
+creating<00:09:34.620><c> body</c><00:09:34.830><c> handlers</c><00:09:35.280><c> that</c><00:09:35.940><c> can</c><00:09:36.120><c> be</c><00:09:36.210><c> used</c>
+
+00:09:36.380 --> 00:09:36.390 align:start position:0%
+creating body handlers that can be used
+ 
+
+00:09:36.390 --> 00:09:40.700 align:start position:0%
+creating body handlers that can be used
+for<00:09:36.630><c> both</c><00:09:36.750><c> common</c><00:09:37.200><c> news</c><00:09:37.380><c> cases</c><00:09:39.410><c> here</c><00:09:40.410><c> we</c><00:09:40.560><c> can</c>
+
+00:09:40.700 --> 00:09:40.710 align:start position:0%
+for both common news cases here we can
+ 
+
+00:09:40.710 --> 00:09:42.470 align:start position:0%
+for both common news cases here we can
+see<00:09:40.890><c> some</c><00:09:41.220><c> of</c><00:09:41.250><c> the</c><00:09:41.430><c> factories</c><00:09:41.880><c> for</c><00:09:42.120><c> creating</c>
+
+00:09:42.470 --> 00:09:42.480 align:start position:0%
+see some of the factories for creating
+ 
+
+00:09:42.480 --> 00:09:44.930 align:start position:0%
+see some of the factories for creating
+body<00:09:42.690><c> hunters</c><00:09:43.130><c> to</c><00:09:44.130><c> convert</c><00:09:44.460><c> the</c><00:09:44.610><c> response</c>
+
+00:09:44.930 --> 00:09:44.940 align:start position:0%
+body hunters to convert the response
+ 
+
+00:09:44.940 --> 00:09:48.260 align:start position:0%
+body hunters to convert the response
+body<00:09:45.150><c> into</c><00:09:45.660><c> a</c><00:09:45.900><c> byte</c><00:09:46.140><c> array</c><00:09:46.410><c> or</c><00:09:46.650><c> a</c><00:09:46.710><c> string</c><00:09:47.270><c> to</c>
+
+00:09:48.260 --> 00:09:48.270 align:start position:0%
+body into a byte array or a string to
+ 
+
+00:09:48.270 --> 00:09:50.120 align:start position:0%
+body into a byte array or a string to
+stream<00:09:48.540><c> it</c><00:09:48.690><c> to</c><00:09:48.810><c> a</c><00:09:48.840><c> file</c><00:09:49.200><c> or</c><00:09:49.470><c> an</c><00:09:49.650><c> input</c><00:09:49.890><c> stream</c>
+
+00:09:50.120 --> 00:09:50.130 align:start position:0%
+stream it to a file or an input stream
+ 
+
+00:09:50.130 --> 00:09:53.090 align:start position:0%
+stream it to a file or an input stream
+as<00:09:50.600><c> well</c><00:09:51.600><c> as</c><00:09:51.780><c> replacing</c><00:09:52.350><c> and</c><00:09:52.560><c> discarding</c>
+
+00:09:53.090 --> 00:09:53.100 align:start position:0%
+as well as replacing and discarding
+ 
+
+00:09:53.100 --> 00:09:55.310 align:start position:0%
+as well as replacing and discarding
+handlers<00:09:53.490><c> when</c><00:09:54.060><c> the</c><00:09:54.180><c> actual</c><00:09:54.630><c> response</c><00:09:55.110><c> body</c>
+
+00:09:55.310 --> 00:09:55.320 align:start position:0%
+handlers when the actual response body
+ 
+
+00:09:55.320 --> 00:09:59.450 align:start position:0%
+handlers when the actual response body
+is<00:09:55.560><c> on</c><00:09:55.680><c> an</c><00:09:55.970><c> uninteresting</c><00:09:56.970><c> and</c><00:09:58.310><c> there</c><00:09:59.310><c> are</c>
+
+00:09:59.450 --> 00:09:59.460 align:start position:0%
+is on an uninteresting and there are
+ 
+
+00:09:59.460 --> 00:10:01.460 align:start position:0%
+is on an uninteresting and there are
+more<00:09:59.670><c> exotic</c><00:10:00.000><c> handlers</c><00:10:00.630><c> that</c><00:10:00.870><c> act</c><00:10:01.290><c> as</c>
+
+00:10:01.460 --> 00:10:01.470 align:start position:0%
+more exotic handlers that act as
+ 
+
+00:10:01.470 --> 00:10:04.280 align:start position:0%
+more exotic handlers that act as
+combiners<00:10:02.010><c> and</c><00:10:02.160><c> adapters</c><00:10:02.580><c> for</c><00:10:03.020><c> buffering</c><00:10:04.020><c> and</c>
+
+00:10:04.280 --> 00:10:04.290 align:start position:0%
+combiners and adapters for buffering and
+ 
+
+00:10:04.290 --> 00:10:05.810 align:start position:0%
+combiners and adapters for buffering and
+interacting<00:10:04.950><c> with</c><00:10:04.980><c> regular</c><00:10:05.490><c> flow</c>
+
+00:10:05.810 --> 00:10:05.820 align:start position:0%
+interacting with regular flow
+ 
+
+00:10:05.820 --> 00:10:09.620 align:start position:0%
+interacting with regular flow
+subscribers<00:10:07.790><c> now</c><00:10:08.790><c> let's</c><00:10:09.000><c> take</c><00:10:09.180><c> a</c><00:10:09.210><c> look</c><00:10:09.480><c> at</c>
+
+00:10:09.620 --> 00:10:09.630 align:start position:0%
+subscribers now let's take a look at
+ 
+
+00:10:09.630 --> 00:10:14.870 align:start position:0%
+subscribers now let's take a look at
+some<00:10:09.810><c> examples</c><00:10:12.800><c> this</c><00:10:13.800><c> is</c><00:10:13.860><c> an</c><00:10:14.160><c> example</c><00:10:14.460><c> of</c><00:10:14.730><c> a</c>
+
+00:10:14.870 --> 00:10:14.880 align:start position:0%
+some examples this is an example of a
+ 
+
+00:10:14.880 --> 00:10:18.470 align:start position:0%
+some examples this is an example of a
+synchronous<00:10:15.210><c> get</c><00:10:15.570><c> a</c><00:10:16.190><c> new</c><00:10:17.190><c> HTTP</c><00:10:17.970><c> client</c><00:10:18.360><c> is</c>
+
+00:10:18.470 --> 00:10:18.480 align:start position:0%
+synchronous get a new HTTP client is
+ 
+
+00:10:18.480 --> 00:10:20.930 align:start position:0%
+synchronous get a new HTTP client is
+created<00:10:18.960><c> over</c><00:10:19.920><c> which</c><00:10:20.100><c> the</c><00:10:20.370><c> request</c><00:10:20.730><c> will</c><00:10:20.910><c> be</c>
+
+00:10:20.930 --> 00:10:20.940 align:start position:0%
+created over which the request will be
+ 
+
+00:10:20.940 --> 00:10:25.600 align:start position:0%
+created over which the request will be
+sent<00:10:21.240><c> a</c><00:10:21.890><c> request</c><00:10:22.890><c> is</c><00:10:23.610><c> built</c><00:10:24.270><c> with</c><00:10:24.720><c> a</c><00:10:24.750><c> given</c><00:10:25.140><c> URI</c>
+
+00:10:25.600 --> 00:10:25.610 align:start position:0%
+sent a request is built with a given URI
+ 
+
+00:10:25.610 --> 00:10:28.220 align:start position:0%
+sent a request is built with a given URI
+yet<00:10:26.610><c> is</c><00:10:26.760><c> the</c><00:10:26.850><c> default</c><00:10:27.210><c> method</c><00:10:27.600><c> so</c><00:10:27.870><c> there's</c><00:10:28.080><c> no</c>
+
+00:10:28.220 --> 00:10:28.230 align:start position:0%
+yet is the default method so there's no
+ 
+
+00:10:28.230 --> 00:10:30.520 align:start position:0%
+yet is the default method so there's no
+need<00:10:28.440><c> to</c><00:10:28.500><c> explicitly</c><00:10:28.920><c> set</c><00:10:29.430><c> the</c><00:10:29.760><c> method</c><00:10:30.089><c> here</c>
+
+00:10:30.520 --> 00:10:30.530 align:start position:0%
+need to explicitly set the method here
+ 
+
+00:10:30.530 --> 00:10:33.680 align:start position:0%
+need to explicitly set the method here
+the<00:10:31.530><c> clients</c><00:10:31.920><c> ascend</c><00:10:32.310><c> method</c><00:10:32.850><c> is</c><00:10:33.030><c> then</c><00:10:33.300><c> called</c>
+
+00:10:33.680 --> 00:10:33.690 align:start position:0%
+the clients ascend method is then called
+ 
+
+00:10:33.690 --> 00:10:37.040 align:start position:0%
+the clients ascend method is then called
+with<00:10:34.500><c> the</c><00:10:34.589><c> request</c><00:10:35.180><c> the</c><00:10:36.180><c> body</c><00:10:36.390><c> handlers</c><00:10:36.900><c> of</c>
+
+00:10:37.040 --> 00:10:37.050 align:start position:0%
+with the request the body handlers of
+ 
+
+00:10:37.050 --> 00:10:39.020 align:start position:0%
+with the request the body handlers of
+string<00:10:37.560><c> factory</c><00:10:38.040><c> method</c><00:10:38.339><c> returns</c><00:10:38.700><c> a</c><00:10:38.820><c> body</c>
+
+00:10:39.020 --> 00:10:39.030 align:start position:0%
+string factory method returns a body
+ 
+
+00:10:39.030 --> 00:10:41.150 align:start position:0%
+string factory method returns a body
+handler<00:10:39.480><c> that</c><00:10:39.690><c> converts</c><00:10:40.380><c> to</c><00:10:40.560><c> response</c><00:10:40.920><c> body</c>
+
+00:10:41.150 --> 00:10:41.160 align:start position:0%
+handler that converts to response body
+ 
+
+00:10:41.160 --> 00:10:44.240 align:start position:0%
+handler that converts to response body
+bytes<00:10:41.490><c> into</c><00:10:41.970><c> a</c><00:10:42.000><c> string</c><00:10:42.770><c> the</c><00:10:43.770><c> send</c><00:10:44.040><c> method</c>
+
+00:10:44.240 --> 00:10:44.250 align:start position:0%
+bytes into a string the send method
+ 
+
+00:10:44.250 --> 00:10:46.280 align:start position:0%
+bytes into a string the send method
+blocks<00:10:44.730><c> until</c><00:10:45.270><c> the</c><00:10:45.360><c> response</c><00:10:45.690><c> is</c><00:10:45.870><c> completely</c>
+
+00:10:46.280 --> 00:10:46.290 align:start position:0%
+blocks until the response is completely
+ 
+
+00:10:46.290 --> 00:10:49.640 align:start position:0%
+blocks until the response is completely
+received<00:10:46.620><c> it</c><00:10:47.610><c> then</c><00:10:47.790><c> returns</c><00:10:48.240><c> an</c><00:10:48.650><c> HTTP</c>
+
+00:10:49.640 --> 00:10:49.650 align:start position:0%
+received it then returns an HTTP
+ 
+
+00:10:49.650 --> 00:10:51.030 align:start position:0%
+received it then returns an HTTP
+response<00:10:49.950><c> of</c><00:10:50.400><c> string</c>
+
+00:10:51.030 --> 00:10:51.040 align:start position:0%
+response of string
+ 
+
+00:10:51.040 --> 00:10:56.250 align:start position:0%
+response of string
+they're<00:10:51.700><c> sponsoring</c><00:10:52.270><c> is</c><00:10:52.540><c> then</c><00:10:52.720><c> printed</c><00:10:55.260><c> this</c>
+
+00:10:56.250 --> 00:10:56.260 align:start position:0%
+they're sponsoring is then printed this
+ 
+
+00:10:56.260 --> 00:10:58.110 align:start position:0%
+they're sponsoring is then printed this
+next<00:10:56.680><c> example</c><00:10:56.980><c> is</c><00:10:57.310><c> similar</c><00:10:57.640><c> to</c><00:10:57.880><c> the</c><00:10:57.970><c> previous</c>
+
+00:10:58.110 --> 00:10:58.120 align:start position:0%
+next example is similar to the previous
+ 
+
+00:10:58.120 --> 00:11:00.870 align:start position:0%
+next example is similar to the previous
+one<00:10:58.360><c> only</c><00:10:58.720><c> the</c><00:10:59.530><c> code</c><00:10:59.740><c> uses</c><00:11:00.220><c> the</c><00:11:00.400><c> asynchronous</c>
+
+00:11:00.870 --> 00:11:00.880 align:start position:0%
+one only the code uses the asynchronous
+ 
+
+00:11:00.880 --> 00:11:04.770 align:start position:0%
+one only the code uses the asynchronous
+style<00:11:01.980><c> the</c><00:11:02.980><c> send</c><00:11:03.220><c> async</c><00:11:03.640><c> method</c><00:11:03.700><c> is</c><00:11:04.240><c> given</c><00:11:04.690><c> a</c>
+
+00:11:04.770 --> 00:11:04.780 align:start position:0%
+style the send async method is given a
+ 
+
+00:11:04.780 --> 00:11:07.260 align:start position:0%
+style the send async method is given a
+request<00:11:05.140><c> to</c><00:11:05.320><c> be</c><00:11:05.410><c> sent</c><00:11:05.680><c> and</c><00:11:05.950><c> also</c><00:11:06.880><c> a</c><00:11:06.910><c> body</c>
+
+00:11:07.260 --> 00:11:07.270 align:start position:0%
+request to be sent and also a body
+ 
+
+00:11:07.270 --> 00:11:09.330 align:start position:0%
+request to be sent and also a body
+handler<00:11:07.750><c> converts</c><00:11:08.200><c> response</c><00:11:08.650><c> body</c><00:11:08.860><c> bytes</c><00:11:09.160><c> to</c>
+
+00:11:09.330 --> 00:11:09.340 align:start position:0%
+handler converts response body bytes to
+ 
+
+00:11:09.340 --> 00:11:12.720 align:start position:0%
+handler converts response body bytes to
+a<00:11:09.370><c> string</c><00:11:10.200><c> the</c><00:11:11.200><c> send</c><00:11:11.440><c> async</c><00:11:11.800><c> method</c><00:11:11.860><c> returns</c><00:11:12.610><c> a</c>
+
+00:11:12.720 --> 00:11:12.730 align:start position:0%
+a string the send async method returns a
+ 
+
+00:11:12.730 --> 00:11:16.620 align:start position:0%
+a string the send async method returns a
+completable<00:11:13.210><c> feature</c><00:11:13.510><c> of</c><00:11:13.840><c> HTTP</c><00:11:14.560><c> response</c><00:11:15.630><c> the</c>
+
+00:11:16.620 --> 00:11:16.630 align:start position:0%
+completable feature of HTTP response the
+ 
+
+00:11:16.630 --> 00:11:19.050 align:start position:0%
+completable feature of HTTP response the
+completable<00:11:17.080><c> future</c><00:11:17.560><c> denn</c><00:11:17.800><c> apply</c><00:11:18.100><c> method</c><00:11:18.520><c> is</c>
+
+00:11:19.050 --> 00:11:19.060 align:start position:0%
+completable future denn apply method is
+ 
+
+00:11:19.060 --> 00:11:21.660 align:start position:0%
+completable future denn apply method is
+used<00:11:19.390><c> to</c><00:11:19.630><c> create</c><00:11:19.900><c> a</c><00:11:19.930><c> dependent</c><00:11:20.140><c> action</c><00:11:20.890><c> that</c>
+
+00:11:21.660 --> 00:11:21.670 align:start position:0%
+used to create a dependent action that
+ 
+
+00:11:21.670 --> 00:11:24.680 align:start position:0%
+used to create a dependent action that
+map's<00:11:21.910><c> the</c><00:11:22.110><c> HTTP</c><00:11:23.110><c> response</c><00:11:23.350><c> to</c><00:11:23.830><c> its</c><00:11:23.950><c> body</c><00:11:24.160><c> type</c>
+
+00:11:24.680 --> 00:11:24.690 align:start position:0%
+map's the HTTP response to its body type
+ 
+
+00:11:24.690 --> 00:11:28.740 align:start position:0%
+map's the HTTP response to its body type
+which<00:11:25.690><c> in</c><00:11:25.840><c> this</c><00:11:25.960><c> case</c><00:11:26.200><c> in</c><00:11:26.500><c> the</c><00:11:26.590><c> string</c><00:11:26.910><c> it</c><00:11:27.910><c> is</c>
+
+00:11:28.740 --> 00:11:28.750 align:start position:0%
+which in this case in the string it is
+ 
+
+00:11:28.750 --> 00:11:30.750 align:start position:0%
+which in this case in the string it is
+this<00:11:28.960><c> dependent</c><00:11:29.740><c> action</c><00:11:30.160><c> that</c><00:11:30.430><c> is</c><00:11:30.580><c> then</c>
+
+00:11:30.750 --> 00:11:30.760 align:start position:0%
+this dependent action that is then
+ 
+
+00:11:30.760 --> 00:11:34.110 align:start position:0%
+this dependent action that is then
+returned<00:11:31.240><c> by</c><00:11:31.540><c> the</c><00:11:31.600><c> get</c><00:11:31.810><c> edit</c><00:11:32.850><c> there</c><00:11:33.850><c> is</c><00:11:33.940><c> no</c>
+
+00:11:34.110 --> 00:11:34.120 align:start position:0%
+returned by the get edit there is no
+ 
+
+00:11:34.120 --> 00:11:36.630 align:start position:0%
+returned by the get edit there is no
+code<00:11:34.420><c> here</c><00:11:34.660><c> that</c><00:11:34.690><c> blocks</c><00:11:35.220><c> callers</c><00:11:36.220><c> of</c><00:11:36.250><c> the</c><00:11:36.460><c> get</c>
+
+00:11:36.630 --> 00:11:36.640 align:start position:0%
+code here that blocks callers of the get
+ 
+
+00:11:36.640 --> 00:11:38.430 align:start position:0%
+code here that blocks callers of the get
+method<00:11:36.850><c> can</c><00:11:37.660><c> either</c><00:11:37.810><c> create</c><00:11:38.110><c> additional</c>
+
+00:11:38.430 --> 00:11:38.440 align:start position:0%
+method can either create additional
+ 
+
+00:11:38.440 --> 00:11:40.710 align:start position:0%
+method can either create additional
+dependent<00:11:39.160><c> actions</c><00:11:39.580><c> chained</c><00:11:40.120><c> off</c><00:11:40.300><c> to</c><00:11:40.450><c> return</c>
+
+00:11:40.710 --> 00:11:40.720 align:start position:0%
+dependent actions chained off to return
+ 
+
+00:11:40.720 --> 00:11:44.310 align:start position:0%
+dependent actions chained off to return
+computable<00:11:41.230><c> future</c><00:11:41.590><c> or</c><00:11:42.460><c> called</c><00:11:42.760><c> join</c><00:11:43.320><c> to</c>
+
+00:11:44.310 --> 00:11:44.320 align:start position:0%
+computable future or called join to
+ 
+
+00:11:44.320 --> 00:11:46.860 align:start position:0%
+computable future or called join to
+explicitly<00:11:45.010><c> block</c><00:11:45.340><c> until</c><00:11:46.150><c> the</c><00:11:46.270><c> response</c><00:11:46.630><c> body</c>
+
+00:11:46.860 --> 00:11:46.870 align:start position:0%
+explicitly block until the response body
+ 
+
+00:11:46.870 --> 00:11:51.630 align:start position:0%
+explicitly block until the response body
+string<00:11:47.290><c> is</c><00:11:47.560><c> available</c><00:11:50.190><c> moving</c><00:11:51.190><c> to</c><00:11:51.340><c> the</c><00:11:51.430><c> next</c>
+
+00:11:51.630 --> 00:11:51.640 align:start position:0%
+string is available moving to the next
+ 
+
+00:11:51.640 --> 00:11:54.360 align:start position:0%
+string is available moving to the next
+example<00:11:52.050><c> again</c><00:11:53.050><c> diskette</c><00:11:53.590><c> method</c><00:11:54.010><c> is</c><00:11:54.160><c> similar</c>
+
+00:11:54.360 --> 00:11:54.370 align:start position:0%
+example again diskette method is similar
+ 
+
+00:11:54.370 --> 00:11:56.490 align:start position:0%
+example again diskette method is similar
+to<00:11:54.580><c> that</c><00:11:54.700><c> of</c><00:11:54.760><c> the</c><00:11:54.970><c> previous</c><00:11:55.180><c> example</c><00:11:55.810><c> only</c>
+
+00:11:56.490 --> 00:11:56.500 align:start position:0%
+to that of the previous example only
+ 
+
+00:11:56.500 --> 00:11:58.170 align:start position:0%
+to that of the previous example only
+this<00:11:56.650><c> time</c><00:11:56.950><c> it</c><00:11:57.130><c> rot</c><00:11:57.310><c> writes</c><00:11:57.640><c> the</c><00:11:57.880><c> response</c>
+
+00:11:58.170 --> 00:11:58.180 align:start position:0%
+this time it rot writes the response
+ 
+
+00:11:58.180 --> 00:12:02.280 align:start position:0%
+this time it rot writes the response
+body<00:11:58.450><c> to</c><00:11:58.960><c> a</c><00:11:58.990><c> file</c><00:12:00.000><c> the</c><00:12:01.000><c> body</c><00:12:01.180><c> handlers</c><00:12:01.690><c> of</c><00:12:01.840><c> file</c>
+
+00:12:02.280 --> 00:12:02.290 align:start position:0%
+body to a file the body handlers of file
+ 
+
+00:12:02.290 --> 00:12:04.590 align:start position:0%
+body to a file the body handlers of file
+factory<00:12:02.770><c> method</c><00:12:03.100><c> creates</c><00:12:03.850><c> a</c><00:12:03.940><c> body</c><00:12:04.150><c> handler</c>
+
+00:12:04.590 --> 00:12:04.600 align:start position:0%
+factory method creates a body handler
+ 
+
+00:12:04.600 --> 00:12:06.450 align:start position:0%
+factory method creates a body handler
+that<00:12:04.900><c> streams</c><00:12:05.230><c> the</c><00:12:05.410><c> response</c><00:12:05.770><c> body</c><00:12:06.010><c> to</c><00:12:06.370><c> the</c>
+
+00:12:06.450 --> 00:12:06.460 align:start position:0%
+that streams the response body to the
+ 
+
+00:12:06.460 --> 00:12:09.960 align:start position:0%
+that streams the response body to the
+given<00:12:06.790><c> file</c><00:12:07.060><c> path</c><00:12:07.920><c> again</c><00:12:08.920><c> this</c><00:12:09.430><c> method</c><00:12:09.850><c> is</c>
+
+00:12:09.960 --> 00:12:09.970 align:start position:0%
+given file path again this method is
+ 
+
+00:12:09.970 --> 00:12:12.030 align:start position:0%
+given file path again this method is
+asynchronous<00:12:10.390><c> and</c><00:12:10.960><c> note</c><00:12:11.380><c> that</c><00:12:11.590><c> none</c><00:12:11.800><c> of</c><00:12:11.830><c> the</c>
+
+00:12:12.030 --> 00:12:12.040 align:start position:0%
+asynchronous and note that none of the
+ 
+
+00:12:12.040 --> 00:12:14.190 align:start position:0%
+asynchronous and note that none of the
+code<00:12:12.220><c> here</c><00:12:12.250><c> blocks</c><00:12:12.840><c> the</c><00:12:13.840><c> returned</c>
+
+00:12:14.190 --> 00:12:14.200 align:start position:0%
+code here blocks the returned
+ 
+
+00:12:14.200 --> 00:12:16.380 align:start position:0%
+code here blocks the returned
+completable<00:12:14.710><c> future</c><00:12:15.160><c> completes</c><00:12:16.150><c> with</c><00:12:16.300><c> the</c>
+
+00:12:16.380 --> 00:12:16.390 align:start position:0%
+completable future completes with the
+ 
+
+00:12:16.390 --> 00:12:18.270 align:start position:0%
+completable future completes with the
+file<00:12:16.630><c> path</c><00:12:16.930><c> when</c><00:12:17.350><c> the</c><00:12:17.440><c> response</c><00:12:17.800><c> body</c><00:12:18.070><c> has</c>
+
+00:12:18.270 --> 00:12:18.280 align:start position:0%
+file path when the response body has
+ 
+
+00:12:18.280 --> 00:12:20.310 align:start position:0%
+file path when the response body has
+been<00:12:18.490><c> completely</c><00:12:18.850><c> received</c><00:12:19.270><c> and</c><00:12:19.600><c> written</c><00:12:20.140><c> to</c>
+
+00:12:20.310 --> 00:12:20.320 align:start position:0%
+been completely received and written to
+ 
+
+00:12:20.320 --> 00:12:24.900 align:start position:0%
+been completely received and written to
+the<00:12:20.410><c> file</c><00:12:22.860><c> next</c><00:12:23.860><c> we</c><00:12:24.100><c> have</c><00:12:24.250><c> an</c><00:12:24.310><c> example</c><00:12:24.730><c> of</c><00:12:24.820><c> a</c>
+
+00:12:24.900 --> 00:12:24.910 align:start position:0%
+the file next we have an example of a
+ 
+
+00:12:24.910 --> 00:12:28.380 align:start position:0%
+the file next we have an example of a
+post<00:12:25.150><c> request</c><00:12:25.620><c> this</c><00:12:26.620><c> time</c><00:12:26.950><c> the</c><00:12:27.310><c> HTTP</c><00:12:28.000><c> request</c>
+
+00:12:28.380 --> 00:12:28.390 align:start position:0%
+post request this time the HTTP request
+ 
+
+00:12:28.390 --> 00:12:30.750 align:start position:0%
+post request this time the HTTP request
+builder<00:12:28.750><c> has</c><00:12:29.020><c> an</c><00:12:29.110><c> explicit</c><00:12:29.470><c> setter</c><00:12:29.890><c> method</c>
+
+00:12:30.750 --> 00:12:30.760 align:start position:0%
+builder has an explicit setter method
+ 
+
+00:12:30.760 --> 00:12:34.760 align:start position:0%
+builder has an explicit setter method
+called<00:12:31.090><c> that</c><00:12:31.660><c> sets</c><00:12:31.990><c> post</c><00:12:32.380><c> as</c><00:12:32.710><c> the</c><00:12:32.770><c> HTTP</c><00:12:33.460><c> method</c>
+
+00:12:34.760 --> 00:12:34.770 align:start position:0%
+called that sets post as the HTTP method
+ 
+
+00:12:34.770 --> 00:12:38.400 align:start position:0%
+called that sets post as the HTTP method
+the<00:12:35.770><c> actual</c><00:12:36.160><c> post</c><00:12:36.460><c> method</c><00:12:36.940><c> is</c><00:12:37.090><c> given</c><00:12:37.510><c> a</c><00:12:37.690><c> body</c>
+
+00:12:38.400 --> 00:12:38.410 align:start position:0%
+the actual post method is given a body
+ 
+
+00:12:38.410 --> 00:12:40.890 align:start position:0%
+the actual post method is given a body
+publisher<00:12:39.070><c> so</c><00:12:39.460><c> that</c><00:12:39.610><c> it</c><00:12:39.760><c> knows</c><00:12:40.030><c> how</c><00:12:40.390><c> to</c><00:12:40.420><c> get</c><00:12:40.690><c> to</c>
+
+00:12:40.890 --> 00:12:40.900 align:start position:0%
+publisher so that it knows how to get to
+ 
+
+00:12:40.900 --> 00:12:46.230 align:start position:0%
+publisher so that it knows how to get to
+it<00:12:40.930><c> to</c><00:12:41.890><c> request</c><00:12:42.280><c> body</c><00:12:44.910><c> here</c><00:12:45.910><c> the</c><00:12:46.060><c> body</c>
+
+00:12:46.230 --> 00:12:46.240 align:start position:0%
+it to request body here the body
+ 
+
+00:12:46.240 --> 00:12:48.870 align:start position:0%
+it to request body here the body
+publishers<00:12:46.840><c> of</c><00:12:47.020><c> string</c><00:12:47.740><c> factory</c><00:12:48.220><c> method</c><00:12:48.550><c> is</c>
+
+00:12:48.870 --> 00:12:48.880 align:start position:0%
+publishers of string factory method is
+ 
+
+00:12:48.880 --> 00:12:50.910 align:start position:0%
+publishers of string factory method is
+used<00:12:49.330><c> to</c><00:12:49.450><c> create</c><00:12:49.690><c> a</c><00:12:49.840><c> body</c><00:12:50.080><c> publisher</c><00:12:50.680><c> that</c>
+
+00:12:50.910 --> 00:12:50.920 align:start position:0%
+used to create a body publisher that
+ 
+
+00:12:50.920 --> 00:12:54.510 align:start position:0%
+used to create a body publisher that
+publishes<00:12:51.400><c> the</c><00:12:51.520><c> given</c><00:12:52.210><c> string</c><00:12:53.190><c> the</c><00:12:54.190><c> request</c>
+
+00:12:54.510 --> 00:12:54.520 align:start position:0%
+publishes the given string the request
+ 
+
+00:12:54.520 --> 00:12:58.160 align:start position:0%
+publishes the given string the request
+is<00:12:54.790><c> sent</c><00:12:55.110><c> synchronously</c><00:12:56.110><c> and</c><00:12:56.470><c> this</c><00:12:57.400><c> time</c>
+
+00:12:58.160 --> 00:12:58.170 align:start position:0%
+is sent synchronously and this time
+ 
+
+00:12:58.170 --> 00:13:00.810 align:start position:0%
+is sent synchronously and this time
+discarding<00:12:59.170><c> body</c><00:12:59.410><c> hunter</c><00:12:59.800><c> discards</c><00:13:00.370><c> response</c>
+
+00:13:00.810 --> 00:13:00.820 align:start position:0%
+discarding body hunter discards response
+ 
+
+00:13:00.820 --> 00:13:02.230 align:start position:0%
+discarding body hunter discards response
+body
+
+00:13:02.230 --> 00:13:02.240 align:start position:0%
+body
+ 
+
+00:13:02.240 --> 00:13:05.410 align:start position:0%
+body
+HTTP<00:13:03.110><c> responsive</c><00:13:03.680><c> wild</c><00:13:03.980><c> card</c><00:13:04.220><c> which</c><00:13:05.120><c> is</c><00:13:05.149><c> an</c>
+
+00:13:05.410 --> 00:13:05.420 align:start position:0%
+HTTP responsive wild card which is an
+ 
+
+00:13:05.420 --> 00:13:10.990 align:start position:0%
+HTTP responsive wild card which is an
+unknown<00:13:05.810><c> type</c><00:13:08.830><c> this</c><00:13:09.830><c> is</c><00:13:10.010><c> a</c><00:13:10.040><c> more</c><00:13:10.430><c> advanced</c>
+
+00:13:10.990 --> 00:13:11.000 align:start position:0%
+unknown type this is a more advanced
+ 
+
+00:13:11.000 --> 00:13:13.030 align:start position:0%
+unknown type this is a more advanced
+example<00:13:11.510><c> and</c><00:13:11.810><c> demonstrates</c><00:13:12.470><c> how</c><00:13:12.740><c> to</c><00:13:12.800><c> combine</c>
+
+00:13:13.030 --> 00:13:13.040 align:start position:0%
+example and demonstrates how to combine
+ 
+
+00:13:13.040 --> 00:13:16.269 align:start position:0%
+example and demonstrates how to combine
+Java<00:13:13.580><c> streams</c><00:13:13.970><c> and</c><00:13:14.630><c> compatible</c><00:13:15.200><c> future</c><00:13:15.529><c> to</c>
+
+00:13:16.269 --> 00:13:16.279 align:start position:0%
+Java streams and compatible future to
+ 
+
+00:13:16.279 --> 00:13:17.500 align:start position:0%
+Java streams and compatible future to
+send<00:13:16.490><c> the</c><00:13:16.550><c> number</c><00:13:16.850><c> of</c><00:13:16.940><c> requests</c><00:13:17.420><c> and</c>
+
+00:13:17.500 --> 00:13:17.510 align:start position:0%
+send the number of requests and
+ 
+
+00:13:17.510 --> 00:13:22.210 align:start position:0%
+send the number of requests and
+collector<00:13:18.080><c> responses</c><00:13:20.380><c> they</c><00:13:21.380><c> get</c><00:13:21.649><c> your</c><00:13:21.980><c> eyes</c>
+
+00:13:22.210 --> 00:13:22.220 align:start position:0%
+collector responses they get your eyes
+ 
+
+00:13:22.220 --> 00:13:24.430 align:start position:0%
+collector responses they get your eyes
+method<00:13:22.700><c> takes</c><00:13:23.089><c> a</c><00:13:23.180><c> list</c><00:13:23.390><c> of</c><00:13:23.570><c> your</c><00:13:23.779><c> eyes</c><00:13:24.050><c> that</c>
+
+00:13:24.430 --> 00:13:24.440 align:start position:0%
+method takes a list of your eyes that
+ 
+
+00:13:24.440 --> 00:13:28.030 align:start position:0%
+method takes a list of your eyes that
+will<00:13:24.589><c> be</c><00:13:24.709><c> retrieved</c><00:13:26.080><c> this</c><00:13:27.080><c> list</c><00:13:27.440><c> of</c><00:13:27.680><c> your</c><00:13:27.860><c> eyes</c>
+
+00:13:28.030 --> 00:13:28.040 align:start position:0%
+will be retrieved this list of your eyes
+ 
+
+00:13:28.040 --> 00:13:30.820 align:start position:0%
+will be retrieved this list of your eyes
+is<00:13:28.310><c> then</c><00:13:28.490><c> converted</c><00:13:29.029><c> into</c><00:13:29.209><c> a</c><00:13:29.870><c> list</c><00:13:30.110><c> of</c><00:13:30.260><c> HTTP</c>
+
+00:13:30.820 --> 00:13:30.830 align:start position:0%
+is then converted into a list of HTTP
+ 
+
+00:13:30.830 --> 00:13:33.639 align:start position:0%
+is then converted into a list of HTTP
+requests<00:13:31.250><c> by</c><00:13:32.120><c> stringing</c><00:13:32.630><c> streaming</c><00:13:33.230><c> over</c><00:13:33.620><c> the</c>
+
+00:13:33.639 --> 00:13:33.649 align:start position:0%
+requests by stringing streaming over the
+ 
+
+00:13:33.649 --> 00:13:37.180 align:start position:0%
+requests by stringing streaming over the
+original<00:13:34.430><c> list</c><00:13:34.810><c> mapping</c><00:13:35.810><c> each</c><00:13:35.990><c> entry</c><00:13:36.500><c> to</c><00:13:37.160><c> a</c>
+
+00:13:37.180 --> 00:13:37.190 align:start position:0%
+original list mapping each entry to a
+ 
+
+00:13:37.190 --> 00:13:39.460 align:start position:0%
+original list mapping each entry to a
+request<00:13:37.520><c> builder</c><00:13:37.940><c> and</c><00:13:38.470><c> subsequently</c>
+
+00:13:39.460 --> 00:13:39.470 align:start position:0%
+request builder and subsequently
+ 
+
+00:13:39.470 --> 00:13:41.620 align:start position:0%
+request builder and subsequently
+building<00:13:39.920><c> the</c><00:13:40.040><c> request</c><00:13:40.339><c> and</c><00:13:40.640><c> collecting</c><00:13:41.390><c> to</c><00:13:41.600><c> a</c>
+
+00:13:41.620 --> 00:13:41.630 align:start position:0%
+building the request and collecting to a
+ 
+
+00:13:41.630 --> 00:13:45.519 align:start position:0%
+building the request and collecting to a
+new<00:13:41.750><c> list</c><00:13:43.270><c> next</c><00:13:44.270><c> each</c><00:13:44.600><c> request</c><00:13:45.050><c> is</c><00:13:45.350><c> sent</c>
+
+00:13:45.519 --> 00:13:45.529 align:start position:0%
+new list next each request is sent
+ 
+
+00:13:45.529 --> 00:13:47.710 align:start position:0%
+new list next each request is sent
+asynchronously<00:13:46.339><c> and</c><00:13:46.640><c> the</c><00:13:47.300><c> completable</c>
+
+00:13:47.710 --> 00:13:47.720 align:start position:0%
+asynchronously and the completable
+ 
+
+00:13:47.720 --> 00:13:50.590 align:start position:0%
+asynchronously and the completable
+features<00:13:48.170><c> of</c><00:13:48.320><c> HTTP</c><00:13:48.950><c> response</c><00:13:49.550><c> are</c><00:13:50.180><c> collected</c>
+
+00:13:50.590 --> 00:13:50.600 align:start position:0%
+features of HTTP response are collected
+ 
+
+00:13:50.600 --> 00:13:52.990 align:start position:0%
+features of HTTP response are collected
+into<00:13:51.020><c> another</c><00:13:51.290><c> list</c><00:13:51.560><c> and</c><00:13:51.830><c> that</c><00:13:52.580><c> list</c><00:13:52.640><c> is</c>
+
+00:13:52.990 --> 00:13:53.000 align:start position:0%
+into another list and that list is
+ 
+
+00:13:53.000 --> 00:13:56.920 align:start position:0%
+into another list and that list is
+returned<00:13:54.580><c> colors</c><00:13:55.580><c> of</c><00:13:55.970><c> the</c><00:13:56.209><c> get</c><00:13:56.450><c> your</c><00:13:56.720><c> eyes</c>
+
+00:13:56.920 --> 00:13:56.930 align:start position:0%
+returned colors of the get your eyes
+ 
+
+00:13:56.930 --> 00:13:59.260 align:start position:0%
+returned colors of the get your eyes
+method<00:13:57.440><c> can</c><00:13:57.890><c> inspect</c><00:13:58.279><c> elements</c><00:13:58.970><c> of</c><00:13:59.149><c> the</c>
+
+00:13:59.260 --> 00:13:59.270 align:start position:0%
+method can inspect elements of the
+ 
+
+00:13:59.270 --> 00:14:01.750 align:start position:0%
+method can inspect elements of the
+returned<00:13:59.570><c> list</c><00:13:59.870><c> to</c><00:14:00.680><c> either</c><00:14:00.890><c> chain</c><00:14:01.220><c> dependent</c>
+
+00:14:01.750 --> 00:14:01.760 align:start position:0%
+returned list to either chain dependent
+ 
+
+00:14:01.760 --> 00:14:06.910 align:start position:0%
+returned list to either chain dependent
+actions<00:14:02.149><c> or</c><00:14:02.570><c> query</c><00:14:03.350><c> for</c><00:14:03.589><c> the</c><00:14:03.680><c> completion</c><00:14:05.920><c> to</c>
+
+00:14:06.910 --> 00:14:06.920 align:start position:0%
+actions or query for the completion to
+ 
+
+00:14:06.920 --> 00:14:10.569 align:start position:0%
+actions or query for the completion to
+summarize<00:14:07.630><c> the</c><00:14:08.630><c> standard</c><00:14:09.020><c> HTTP</c><00:14:09.649><c> client</c><00:14:10.070><c> added</c>
+
+00:14:10.569 --> 00:14:10.579 align:start position:0%
+summarize the standard HTTP client added
+ 
+
+00:14:10.579 --> 00:14:12.940 align:start position:0%
+summarize the standard HTTP client added
+in<00:14:10.670><c> Java</c><00:14:10.880><c> 11</c><00:14:11.329><c> is</c><00:14:11.959><c> a</c><00:14:12.020><c> replacement</c><00:14:12.470><c> for</c>
+
+00:14:12.940 --> 00:14:12.950 align:start position:0%
+in Java 11 is a replacement for
+ 
+
+00:14:12.950 --> 00:14:15.460 align:start position:0%
+in Java 11 is a replacement for
+performing<00:14:13.399><c> HTTP</c><00:14:14.149><c> access</c><00:14:14.360><c> to</c><00:14:15.020><c> the</c><00:14:15.140><c> URL</c>
+
+00:14:15.460 --> 00:14:15.470 align:start position:0%
+performing HTTP access to the URL
+ 
+
+00:14:15.470 --> 00:14:17.829 align:start position:0%
+performing HTTP access to the URL
+connection<00:14:15.770><c> API</c><00:14:16.250><c> which</c><00:14:17.149><c> is</c><00:14:17.300><c> now</c><00:14:17.480><c> more</c><00:14:17.690><c> than</c>
+
+00:14:17.829 --> 00:14:17.839 align:start position:0%
+connection API which is now more than
+ 
+
+00:14:17.839 --> 00:14:21.639 align:start position:0%
+connection API which is now more than
+twenty<00:14:18.170><c> years</c><00:14:18.200><c> old</c><00:14:19.450><c> the</c><00:14:20.450><c> HTTP</c><00:14:21.079><c> client</c><00:14:21.500><c> was</c>
+
+00:14:21.639 --> 00:14:21.649 align:start position:0%
+twenty years old the HTTP client was
+ 
+
+00:14:21.649 --> 00:14:23.460 align:start position:0%
+twenty years old the HTTP client was
+incubated<00:14:22.250><c> in</c><00:14:22.310><c> previous</c><00:14:22.700><c> releases</c><00:14:23.000><c> and</c>
+
+00:14:23.460 --> 00:14:23.470 align:start position:0%
+incubated in previous releases and
+ 
+
+00:14:23.470 --> 00:14:27.400 align:start position:0%
+incubated in previous releases and
+standardized<00:14:24.470><c> in</c><00:14:24.680><c> Java</c><00:14:24.890><c> eleven</c><00:14:26.020><c> code</c><00:14:27.020><c> using</c>
+
+00:14:27.400 --> 00:14:27.410 align:start position:0%
+standardized in Java eleven code using
+ 
+
+00:14:27.410 --> 00:14:29.199 align:start position:0%
+standardized in Java eleven code using
+the<00:14:27.440><c> incubating</c><00:14:28.040><c> version</c><00:14:28.370><c> of</c><00:14:28.459><c> the</c><00:14:28.579><c> API</c><00:14:28.850><c> will</c>
+
+00:14:29.199 --> 00:14:29.209 align:start position:0%
+the incubating version of the API will
+ 
+
+00:14:29.209 --> 00:14:31.960 align:start position:0%
+the incubating version of the API will
+need<00:14:29.329><c> to</c><00:14:29.420><c> be</c><00:14:29.540><c> updated</c><00:14:29.990><c> for</c><00:14:30.140><c> Java</c><00:14:30.350><c> 11</c><00:14:30.970><c> minimally</c>
+
+00:14:31.960 --> 00:14:31.970 align:start position:0%
+need to be updated for Java 11 minimally
+ 
+
+00:14:31.970 --> 00:14:33.610 align:start position:0%
+need to be updated for Java 11 minimally
+the<00:14:32.149><c> import</c><00:14:32.450><c> statements</c><00:14:32.990><c> will</c><00:14:33.110><c> need</c><00:14:33.260><c> to</c>
+
+00:14:33.610 --> 00:14:33.620 align:start position:0%
+the import statements will need to
+ 
+
+00:14:33.620 --> 00:14:39.190 align:start position:0%
+the import statements will need to
+reflect<00:14:33.860><c> a</c><00:14:34.100><c> new</c><00:14:34.130><c> package</c><00:14:34.640><c> name</c><00:14:34.880><c> Java</c><00:14:35.690><c> HTTP</c><00:14:38.200><c> the</c>
+
+00:14:39.190 --> 00:14:39.200 align:start position:0%
+reflect a new package name Java HTTP the
+ 
+
+00:14:39.200 --> 00:14:41.769 align:start position:0%
+reflect a new package name Java HTTP the
+HTTP<00:14:39.890><c> client</c><00:14:40.310><c> API</c><00:14:40.610><c> uses</c><00:14:41.149><c> more</c><00:14:41.329><c> modern</c>
+
+00:14:41.769 --> 00:14:41.779 align:start position:0%
+HTTP client API uses more modern
+ 
+
+00:14:41.779 --> 00:14:43.750 align:start position:0%
+HTTP client API uses more modern
+language<00:14:42.260><c> features</c><00:14:42.890><c> like</c><00:14:43.130><c> generics</c><00:14:43.610><c> and</c>
+
+00:14:43.750 --> 00:14:43.760 align:start position:0%
+language features like generics and
+ 
+
+00:14:43.760 --> 00:14:46.690 align:start position:0%
+language features like generics and
+lambda<00:14:44.089><c> as</c><00:14:44.240><c> well</c><00:14:45.170><c> as</c><00:14:45.320><c> more</c><00:14:45.560><c> modern</c><00:14:45.800><c> platform</c>
+
+00:14:46.690 --> 00:14:46.700 align:start position:0%
+lambda as well as more modern platform
+ 
+
+00:14:46.700 --> 00:14:48.730 align:start position:0%
+lambda as well as more modern platform
+API<00:14:46.970><c> is</c><00:14:47.120><c> like</c><00:14:47.450><c> completable</c><00:14:48.110><c> future</c><00:14:48.529><c> and</c>
+
+00:14:48.730 --> 00:14:48.740 align:start position:0%
+API is like completable future and
+ 
+
+00:14:48.740 --> 00:14:52.960 align:start position:0%
+API is like completable future and
+reactive<00:14:49.550><c> streams</c><00:14:49.850><c> interfaces</c><00:14:51.579><c> the</c><00:14:52.579><c> API</c><00:14:52.850><c> is</c>
+
+00:14:52.960 --> 00:14:52.970 align:start position:0%
+reactive streams interfaces the API is
+ 
+
+00:14:52.970 --> 00:14:58.329 align:start position:0%
+reactive streams interfaces the API is
+deliberately<00:14:53.480><c> small</c><00:14:53.899><c> and</c><00:14:54.140><c> compact</c><00:14:57.160><c> you</c><00:14:58.160><c> can</c>
+
+00:14:58.329 --> 00:14:58.339 align:start position:0%
+deliberately small and compact you can
+ 
+
+00:14:58.339 --> 00:15:01.600 align:start position:0%
+deliberately small and compact you can
+download<00:14:58.550><c> Java</c><00:14:59.060><c> 11</c><00:14:59.450><c> now</c><00:14:59.600><c> at</c><00:14:59.810><c> this</c><00:14:59.930><c> URL</c><00:15:00.610><c> please</c>
+
+00:15:01.600 --> 00:15:01.610 align:start position:0%
+download Java 11 now at this URL please
+ 
+
+00:15:01.610 --> 00:15:04.750 align:start position:0%
+download Java 11 now at this URL please
+join<00:15:01.910><c> us</c><00:15:01.940><c> at</c><00:15:02.360><c> open</c><00:15:02.750><c> JDK</c><00:15:02.899><c> or</c><00:15:03.620><c> follow</c><00:15:04.459><c> us</c><00:15:04.640><c> on</c>
+
+00:15:04.750 --> 00:15:04.760 align:start position:0%
+join us at open JDK or follow us on
+ 
+
+00:15:04.760 --> 00:15:08.460 align:start position:0%
+join us at open JDK or follow us on
+Twitter<00:15:05.060><c> at</c><00:15:05.450><c> open</c><00:15:05.899><c> JDK</c><00:15:06.079><c> or</c><00:15:06.620><c> hashtag</c><00:15:07.190><c> Java</c><00:15:07.670><c> 11</c>
+
+00:15:08.460 --> 00:15:08.470 align:start position:0%
+Twitter at open JDK or hashtag Java 11
+ 
+
+00:15:08.470 --> 00:15:11.800 align:start position:0%
+Twitter at open JDK or hashtag Java 11
+my<00:15:09.470><c> own</c><00:15:09.620><c> twitter</c><00:15:09.920><c> handle</c><00:15:10.339><c> is</c><00:15:10.459><c> at</c><00:15:11.300><c> checker</c>
+
+00:15:11.800 --> 00:15:11.810 align:start position:0%
+my own twitter handle is at checker
+ 
+
+00:15:11.810 --> 00:15:15.710 align:start position:0%
+my own twitter handle is at checker
+$9.99
+
+00:15:15.710 --> 00:15:15.720 align:start position:0%
+ 
+ 
+
+00:15:15.720 --> 00:15:18.840 align:start position:0%
+ 
+Oracle<00:15:16.720><c> is</c><00:15:16.839><c> the</c><00:15:16.990><c> steward</c><00:15:17.290><c> of</c><00:15:17.439><c> Java</c><00:15:17.850><c> providing</c>
+
+00:15:18.840 --> 00:15:18.850 align:start position:0%
+Oracle is the steward of Java providing
+ 
+
+00:15:18.850 --> 00:15:19.889 align:start position:0%
+Oracle is the steward of Java providing
+a<00:15:18.910><c> large</c><00:15:19.149><c> amount</c><00:15:19.569><c> of</c><00:15:19.660><c> development</c>
+
+00:15:19.889 --> 00:15:19.899 align:start position:0%
+a large amount of development
+ 
+
+00:15:19.899 --> 00:15:22.170 align:start position:0%
+a large amount of development
+engineering<00:15:20.649><c> funding</c><00:15:21.160><c> for</c><00:15:21.459><c> the</c><00:15:21.550><c> Java</c><00:15:21.790><c> SE</c>
+
+00:15:22.170 --> 00:15:22.180 align:start position:0%
+engineering funding for the Java SE
+ 
+
+00:15:22.180 --> 00:15:26.040 align:start position:0%
+engineering funding for the Java SE
+platform<00:15:22.689><c> and</c><00:15:22.870><c> open</c><00:15:23.470><c> JDK</c><00:15:24.509><c> Oracle</c><00:15:25.509><c> provides</c><00:15:25.870><c> a</c>
+
+00:15:26.040 --> 00:15:26.050 align:start position:0%
+platform and open JDK Oracle provides a
+ 
+
+00:15:26.050 --> 00:15:28.259 align:start position:0%
+platform and open JDK Oracle provides a
+leading<00:15:26.379><c> class</c><00:15:26.620><c> premier</c><00:15:27.370><c> support</c><00:15:27.699><c> for</c><00:15:28.060><c> a</c><00:15:28.089><c> low</c>
+
+00:15:28.259 --> 00:15:28.269 align:start position:0%
+leading class premier support for a low
+ 
+
+00:15:28.269 --> 00:15:31.679 align:start position:0%
+leading class premier support for a low
+cost<00:15:28.560><c> that's</c><00:15:29.560><c> easy</c><00:15:29.889><c> to</c><00:15:30.129><c> purchase</c><00:15:30.339><c> with</c><00:15:31.240><c> simple</c>
+
+00:15:31.679 --> 00:15:31.689 align:start position:0%
+cost that's easy to purchase with simple
+ 
+
+00:15:31.689 --> 00:15:35.880 align:start position:0%
+cost that's easy to purchase with simple
+pricing<00:15:31.990><c> tiers</c><00:15:33.540><c> thank</c><00:15:34.540><c> you</c><00:15:34.629><c> for</c><00:15:34.809><c> watching</c>
+
+00:15:35.880 --> 00:15:35.890 align:start position:0%
+pricing tiers thank you for watching
+ 
+
+00:15:35.890 --> 00:15:40.039 align:start position:0%
+pricing tiers thank you for watching
+[Music]
+

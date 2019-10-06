@@ -1,0 +1,487 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:03.210
+PETE LEPAGE: Chrome 73 makes
+creating portable content
+
+00:00:03.210 --> 00:00:06.630
+easier with signed
+HTTP exchanges.
+
+00:00:06.630 --> 00:00:08.640
+Dynamically changing
+the styles becomes
+
+00:00:08.640 --> 00:00:11.790
+way easier with
+constructable style sheets.
+
+00:00:11.790 --> 00:00:14.760
+And my favorite, support
+for progressive web apps
+
+00:00:14.760 --> 00:00:18.150
+is now available on Mac,
+bringing support for PWAs
+
+00:00:18.150 --> 00:00:20.770
+to all desktop and
+mobile platforms,
+
+00:00:20.770 --> 00:00:23.670
+making it easy to create
+installable apps delivered
+
+00:00:23.670 --> 00:00:25.050
+through the web.
+
+00:00:25.050 --> 00:00:26.130
+I'm Pete LePage.
+
+00:00:26.130 --> 00:00:29.140
+Let's dive in and see what's
+new for developers in Chrome 73.
+
+00:00:29.140 --> 00:00:32.189
+[MUSIC PLAYING]
+
+00:00:32.189 --> 00:00:34.950
+Progressive web apps provide
+an installable, app-like
+
+00:00:34.950 --> 00:00:38.540
+experience built and delivered
+directly via the web.
+
+00:00:38.540 --> 00:00:41.700
+In Chrome 73, we've
+added support for Mac OS,
+
+00:00:41.700 --> 00:00:43.920
+bringing support for
+progressive web apps
+
+00:00:43.920 --> 00:00:45.540
+to all desktop platforms--
+
+00:00:45.540 --> 00:00:48.240
+Mac, Windows, Chrome
+OS, and Linux--
+
+00:00:48.240 --> 00:00:51.630
+as well as mobile, simplifying
+the web app development
+
+00:00:51.630 --> 00:00:53.010
+process.
+
+00:00:53.010 --> 00:00:56.970
+A progressive web app
+is fast and reliably so,
+
+00:00:56.970 --> 00:00:59.250
+always loading and
+performing at the same speed,
+
+00:00:59.250 --> 00:01:01.380
+regardless of the
+network connection.
+
+00:01:01.380 --> 00:01:05.250
+They provide rich, engaging
+experiences via the modern web
+
+00:01:05.250 --> 00:01:09.660
+and take advantages of the full
+capabilities of the device.
+
+00:01:09.660 --> 00:01:13.290
+Users can install your PWA
+from Chrome's context menu,
+
+00:01:13.290 --> 00:01:16.950
+or you can directly promote the
+installation experience using
+
+00:01:16.950 --> 00:01:19.260
+the beforeinstallprompt event.
+
+00:01:19.260 --> 00:01:22.530
+Once installed, a PWA
+integrates with the OS
+
+00:01:22.530 --> 00:01:25.440
+to behave just like
+a native application.
+
+00:01:25.440 --> 00:01:27.800
+Users find and launch
+them from the same place
+
+00:01:27.800 --> 00:01:29.040
+as their other apps.
+
+00:01:29.040 --> 00:01:30.870
+They run in their own window.
+
+00:01:30.870 --> 00:01:32.850
+They appear in
+the task switcher.
+
+00:01:32.850 --> 00:01:35.550
+Their icons can show
+notifications and badging
+
+00:01:35.550 --> 00:01:37.390
+and so on.
+
+00:01:37.390 --> 00:01:41.430
+We want to close the capability
+gap between web and native
+
+00:01:41.430 --> 00:01:44.700
+to provide a solid foundation
+for modern applications
+
+00:01:44.700 --> 00:01:46.560
+delivered on the web.
+
+00:01:46.560 --> 00:01:50.010
+We're working to add things like
+new web platform capabilities
+
+00:01:50.010 --> 00:01:53.040
+that give you access to things
+like File System, WakeLock,
+
+00:01:53.040 --> 00:01:56.700
+and more, adding an ambient
+badge to the address bar
+
+00:01:56.700 --> 00:02:00.060
+to let users know that
+your PWA can be installed,
+
+00:02:00.060 --> 00:02:04.380
+policy installation for
+enterprises, and plenty more.
+
+00:02:04.380 --> 00:02:07.350
+If you're already building a
+mobile progressive web app,
+
+00:02:07.350 --> 00:02:10.060
+a desktop PWA is no different.
+
+00:02:10.060 --> 00:02:12.780
+In fact, if you've
+used responsive design,
+
+00:02:12.780 --> 00:02:14.880
+you're likely good
+to go already.
+
+00:02:14.880 --> 00:02:19.480
+Your single code base will
+work across desktop and mobile.
+
+00:02:19.480 --> 00:02:21.330
+If you're just
+starting out with PWAs,
+
+00:02:21.330 --> 00:02:23.850
+you'll be surprised at how
+easy it is to create them.
+
+00:02:23.850 --> 00:02:27.690
+Just add a manifest, an icon,
+a boilerplate service worker,
+
+00:02:27.690 --> 00:02:29.370
+and iterate from there.
+
+00:02:29.370 --> 00:02:32.370
+Check out the post linked below
+for more details and to see
+
+00:02:32.370 --> 00:02:35.430
+some of my favorite PWAs.
+
+00:02:35.430 --> 00:02:38.850
+Signed HTTP exchanges,
+part of a new emerging
+
+00:02:38.850 --> 00:02:43.350
+technology called webpackages,
+is now available in Chrome 73.
+
+00:02:43.350 --> 00:02:46.590
+A signed HTTP exchange
+makes it possible to create
+
+00:02:46.590 --> 00:02:49.950
+portable content that can be
+delivered by other parties,
+
+00:02:49.950 --> 00:02:50.700
+but--
+
+00:02:50.700 --> 00:02:52.230
+and this is the key aspect--
+
+00:02:52.230 --> 00:02:54.570
+retain the integrity
+and attribution
+
+00:02:54.570 --> 00:02:56.310
+of the original site.
+
+00:02:56.310 --> 00:02:58.770
+This decouples the
+origin of the content
+
+00:02:58.770 --> 00:03:00.570
+from the server
+that delivers it.
+
+00:03:00.570 --> 00:03:03.090
+But because it's signed,
+it's like it's being
+
+00:03:03.090 --> 00:03:04.860
+delivered from your server.
+
+00:03:04.860 --> 00:03:07.410
+When the browser loads
+this Signed Exchange,
+
+00:03:07.410 --> 00:03:10.320
+it can safely show your
+URL in the address bar
+
+00:03:10.320 --> 00:03:12.300
+because the signature
+in the exchange
+
+00:03:12.300 --> 00:03:16.230
+indicates the content originally
+came from your origin.
+
+00:03:16.230 --> 00:03:20.250
+Signed HTTP exchanges enables
+faster content delivery
+
+00:03:20.250 --> 00:03:24.210
+for users, making it possible
+to get the benefits of a CDN
+
+00:03:24.210 --> 00:03:27.060
+without having to cede
+control of your certificate's
+
+00:03:27.060 --> 00:03:28.350
+private key.
+
+00:03:28.350 --> 00:03:32.640
+The AMP Team is planning to use
+signed HTTP exchanges on Google
+
+00:03:32.640 --> 00:03:35.250
+Search result pages
+to improve AMP URLs
+
+00:03:35.250 --> 00:03:38.220
+and speed up clicks
+on search results.
+
+00:03:38.220 --> 00:03:40.410
+Check out Kenyuko's
+post for more details
+
+00:03:40.410 --> 00:03:42.210
+on how to get started.
+
+00:03:42.210 --> 00:03:45.480
+Constructable style
+sheets, new in Chrome 73,
+
+00:03:45.480 --> 00:03:48.090
+give us a new way to
+create and distribute
+
+00:03:48.090 --> 00:03:51.360
+reusable styles, which is
+particularly important when
+
+00:03:51.360 --> 00:03:53.220
+using Shadow DOM.
+
+00:03:53.220 --> 00:03:55.050
+It's always been
+possible to create
+
+00:03:55.050 --> 00:03:57.240
+style sheets using JavaScript.
+
+00:03:57.240 --> 00:04:00.930
+Create a style element using
+document.createElement.
+
+00:04:00.930 --> 00:04:05.130
+Then access its sheet
+property to obtain a reference
+
+00:04:05.130 --> 00:04:08.160
+to the underlying CSS
+style sheet instance.
+
+00:04:08.160 --> 00:04:10.170
+Then set the style.
+
+00:04:10.170 --> 00:04:13.980
+Using this method tends to
+lead to style sheet bloat.
+
+00:04:13.980 --> 00:04:17.279
+Each time you want to apply
+a sheet to a DOM tree,
+
+00:04:17.279 --> 00:04:19.050
+it needs to be copied.
+
+00:04:19.050 --> 00:04:23.320
+Even worse, it causes a
+flash of unstyled content.
+
+00:04:23.320 --> 00:04:25.230
+Constructable style
+sheets make it
+
+00:04:25.230 --> 00:04:29.190
+possible to define and
+prepare shared CSS styles,
+
+00:04:29.190 --> 00:04:31.350
+then apply those styles
+to multiple shadow
+
+00:04:31.350 --> 00:04:35.760
+routes or the DOM easily,
+and without duplication.
+
+00:04:35.760 --> 00:04:39.480
+Updates to a shared CSS style
+sheet are applied to all routes
+
+00:04:39.480 --> 00:04:42.720
+where it's been adopted
+and adopting a style sheet
+
+00:04:42.720 --> 00:04:46.680
+is fast and synchronous once
+the sheet's been loaded.
+
+00:04:46.680 --> 00:04:48.120
+Getting started is simple.
+
+00:04:48.120 --> 00:04:51.420
+Create a new instance
+of the CSS style sheet.
+
+00:04:51.420 --> 00:04:55.050
+Then use either replace
+or replace.sync to update
+
+00:04:55.050 --> 00:04:56.880
+the style sheet rules.
+
+00:04:56.880 --> 00:04:59.730
+Check out Jason Miller's post
+for more details and code
+
+00:04:59.730 --> 00:05:00.760
+samples.
+
+00:05:00.760 --> 00:05:03.180
+These are just a few of
+the changes in Chrome 73
+
+00:05:03.180 --> 00:05:04.390
+for developers.
+
+00:05:04.390 --> 00:05:06.620
+Of course, there's plenty more.
+
+00:05:06.620 --> 00:05:09.900
+matchALL is a new regular
+expression matching
+
+00:05:09.900 --> 00:05:13.590
+method on the string prototype
+and returns an array containing
+
+00:05:13.590 --> 00:05:16.170
+the complete list of matches.
+
+00:05:16.170 --> 00:05:20.190
+The link element now supports
+imagesrcset and imagesizes
+
+00:05:20.190 --> 00:05:23.850
+properties to correspond to
+srcset and sizes attributes
+
+00:05:23.850 --> 00:05:26.400
+of HTML image elements.
+
+00:05:26.400 --> 00:05:29.080
+Blink's shadow blur
+radius implementation
+
+00:05:29.080 --> 00:05:31.560
+now matches Firefox and Safari.
+
+00:05:31.560 --> 00:05:34.410
+And dark mode is now
+supported on Mac,
+
+00:05:34.410 --> 00:05:36.840
+and Windows Support
+is on the way.
+
+00:05:36.840 --> 00:05:39.370
+All the details,
+including docs and specs,
+
+00:05:39.370 --> 00:05:42.240
+are in the updates post
+linked in the description.
+
+00:05:42.240 --> 00:05:45.000
+Be sure to check out the latest
+Chrome DevTools video to learn
+
+00:05:45.000 --> 00:05:46.470
+what's new in DevTools.
+
+00:05:46.470 --> 00:05:48.510
+Then click the Subscribe
+button, and you'll
+
+00:05:48.510 --> 00:05:51.810
+get an email notification
+whenever we launch a new video.
+
+00:05:51.810 --> 00:05:54.730
+I'm Pete LePage, and as soon
+as Chrome 74 is released,
+
+00:05:54.730 --> 00:05:57.300
+I'll be right here to tell
+you what's new in Chrome.
+
+00:05:57.300 --> 00:05:59.450
+[MUSIC PLAYING]
+

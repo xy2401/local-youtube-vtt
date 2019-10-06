@@ -1,0 +1,1636 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.092 --> 00:00:04.050
+Hey there, Polycasters.
+
+00:00:04.050 --> 00:00:05.150
+Rob here.
+
+00:00:05.150 --> 00:00:08.180
+Animation is one of the
+hallmarks of a really great web
+
+00:00:08.180 --> 00:00:09.259
+experience.
+
+00:00:09.259 --> 00:00:11.175
+Not only does it make
+your app just look cool.
+
+00:00:11.175 --> 00:00:14.082
+But you can use them to
+navigate the user from one
+
+00:00:14.082 --> 00:00:15.290
+area of interest to the next.
+
+00:00:15.290 --> 00:00:18.860
+And ultimately, that makes
+everything much more engaging.
+
+00:00:18.860 --> 00:00:20.680
+Now, in a previous
+video, I showed you
+
+00:00:20.680 --> 00:00:24.266
+how to animate a single item
+using an animation behavior.
+
+00:00:24.266 --> 00:00:25.640
+But today I want
+to teach you how
+
+00:00:25.640 --> 00:00:28.120
+to animate whole
+sections of your app,
+
+00:00:28.120 --> 00:00:31.440
+bringing shared elements
+from one state to the next.
+
+00:00:31.440 --> 00:00:33.980
+And to do this, we're going
+to use a component called
+
+00:00:33.980 --> 00:00:36.283
+Neon Animated Pages.
+
+00:00:36.283 --> 00:00:36.960
+OK.
+
+00:00:36.960 --> 00:00:38.960
+So this is the first thing
+we're going to build.
+
+00:00:38.960 --> 00:00:41.050
+It is a very simple application.
+
+00:00:41.050 --> 00:00:44.900
+And we are going to add a little
+Settings menu to this page,
+
+00:00:44.900 --> 00:00:46.780
+so that when you
+click on it, it's
+
+00:00:46.780 --> 00:00:48.710
+going to do some really
+nifty transitions.
+
+00:00:48.710 --> 00:00:51.290
+It's going to actually
+slide the other page in.
+
+00:00:51.290 --> 00:00:55.170
+And when you cancel it,
+it's going to sort of push
+
+00:00:55.170 --> 00:00:56.830
+the old page back over.
+
+00:00:56.830 --> 00:00:57.950
+Right?
+
+00:00:57.950 --> 00:00:59.550
+So pretty cool stuff there.
+
+00:00:59.550 --> 00:01:03.940
+To start off, we are going
+to jump into our Index file
+
+00:01:03.940 --> 00:01:05.089
+for this project.
+
+00:01:05.089 --> 00:01:06.630
+And the first thing
+we're going to do
+
+00:01:06.630 --> 00:01:09.430
+is we are just going to
+load in some imports.
+
+00:01:09.430 --> 00:01:12.180
+So we're going to pull in
+Neon Animated Pages as well
+
+00:01:12.180 --> 00:01:15.350
+as the iron-flex-layout
+classes, which we talked about
+
+00:01:15.350 --> 00:01:18.620
+in our last episode, so we
+can use some layout classes.
+
+00:01:18.620 --> 00:01:20.580
+And then down inside
+of my body, I'm
+
+00:01:20.580 --> 00:01:23.505
+going to just drop in
+a dom-bind template,
+
+00:01:23.505 --> 00:01:25.880
+so I can use data
+bindings in this space.
+
+00:01:25.880 --> 00:01:28.290
+I'm going to add a
+neon-animated-pages element
+
+00:01:28.290 --> 00:01:28.890
+right there.
+
+00:01:28.890 --> 00:01:31.473
+And you can see that I've also
+gone ahead and actually applied
+
+00:01:31.473 --> 00:01:34.360
+some of those layout classes,
+so that my body is using flexbox
+
+00:01:34.360 --> 00:01:37.850
+to allow me to, as
+you'll see in a second,
+
+00:01:37.850 --> 00:01:40.440
+flex the
+neon-animated-pages element,
+
+00:01:40.440 --> 00:01:42.750
+so it takes up
+the entire screen.
+
+00:01:42.750 --> 00:01:45.680
+I'm also going to give
+it a selected attribute.
+
+00:01:45.680 --> 00:01:48.920
+And this is just like what
+we did in our Iron Pages demo
+
+00:01:48.920 --> 00:01:52.600
+last time, where Neon
+Animated Pages is going
+
+00:01:52.600 --> 00:01:55.480
+to look at whatever the
+selected index is and display
+
+00:01:55.480 --> 00:01:56.220
+that child.
+
+00:01:56.220 --> 00:01:58.096
+So if the selected
+index is 0, it's
+
+00:01:58.096 --> 00:01:59.470
+going to display
+its first child.
+
+00:01:59.470 --> 00:02:02.160
+If it's 1, it'll display
+the second child, and so on,
+
+00:02:02.160 --> 00:02:04.950
+just like Iron Pages does.
+
+00:02:04.950 --> 00:02:08.830
+So that gives us a little bit
+of a boilerplate to work from.
+
+00:02:08.830 --> 00:02:10.710
+I'm going to add an
+ID to this template,
+
+00:02:10.710 --> 00:02:14.100
+so I can select it
+down in JavaScript.
+
+00:02:14.100 --> 00:02:16.390
+And then I will write
+out a little script tag.
+
+00:02:16.390 --> 00:02:20.410
+And just go ahead and
+querySelector for my app there.
+
+00:02:20.410 --> 00:02:24.240
+And give it an initial
+selected value of 0.
+
+00:02:24.240 --> 00:02:26.230
+So this way, Animated
+Pages is going
+
+00:02:26.230 --> 00:02:28.181
+to try to display
+its first child.
+
+00:02:28.181 --> 00:02:29.930
+We're going to drop
+in two more elements--
+
+00:02:29.930 --> 00:02:31.319
+list-page and settings-page.
+
+00:02:31.319 --> 00:02:33.360
+Those are going to be the
+two elements that we're
+
+00:02:33.360 --> 00:02:35.690
+going to transition between.
+
+00:02:35.690 --> 00:02:38.050
+So I'll go add some
+imports for them.
+
+00:02:40.700 --> 00:02:42.680
+And then we are pretty
+much ready to rock.
+
+00:02:42.680 --> 00:02:44.540
+So let's start by
+defining what the list
+
+00:02:44.540 --> 00:02:46.250
+page is going to look like.
+
+00:02:46.250 --> 00:02:49.310
+So we can switch
+over to that tab.
+
+00:02:49.310 --> 00:02:51.900
+And it's pretty
+typical element here.
+
+00:02:51.900 --> 00:02:54.320
+I've got my style tag
+and my template tab
+
+00:02:54.320 --> 00:02:55.840
+collapsed right
+now, because they're
+
+00:02:55.840 --> 00:02:57.910
+full of just placeholder markup.
+
+00:02:57.910 --> 00:02:59.620
+So if I expand that,
+you can see there's
+
+00:02:59.620 --> 00:03:00.320
+a bunch of HTML in there.
+
+00:03:00.320 --> 00:03:02.611
+But you don't actually need
+to worry about any of that,
+
+00:03:02.611 --> 00:03:05.319
+because it's all just
+dummy placeholder content
+
+00:03:05.319 --> 00:03:06.360
+for the sake of the demo.
+
+00:03:06.360 --> 00:03:10.126
+So a lot of stuff, but you
+can pretty much ignore it.
+
+00:03:10.126 --> 00:03:11.500
+To get rolling,
+though, I'm going
+
+00:03:11.500 --> 00:03:14.040
+to import a few items here.
+
+00:03:14.040 --> 00:03:16.850
+I'm going to import the
+neon-animatable-behavior, which
+
+00:03:16.850 --> 00:03:19.240
+you might remember from our
+previous episode on Neon
+
+00:03:19.240 --> 00:03:20.380
+Animation.
+
+00:03:20.380 --> 00:03:21.810
+And then I'm going
+to pull in two
+
+00:03:21.810 --> 00:03:24.570
+animations--
+slide-from-left animation
+
+00:03:24.570 --> 00:03:25.852
+and fade-out-animation.
+
+00:03:25.852 --> 00:03:27.310
+So slide-from-left
+is going to make
+
+00:03:27.310 --> 00:03:30.450
+the page appear to come
+from outside the left edge
+
+00:03:30.450 --> 00:03:33.692
+of the screen onto the
+center of the page like that.
+
+00:03:33.692 --> 00:03:35.650
+And then the fade-out-animation,
+as it implies,
+
+00:03:35.650 --> 00:03:37.800
+is just going to have
+the page fade out.
+
+00:03:37.800 --> 00:03:41.270
+So then let us go down
+here and like we've
+
+00:03:41.270 --> 00:03:43.000
+done in previous
+animation examples,
+
+00:03:43.000 --> 00:03:44.390
+we'll create a
+properties object.
+
+00:03:44.390 --> 00:03:47.810
+We'll create an animation
+config property.
+
+00:03:47.810 --> 00:03:50.840
+And then I'm going to give
+it two animations, an entry
+
+00:03:50.840 --> 00:03:52.465
+and an exit animation.
+
+00:03:52.465 --> 00:03:54.840
+And we're going to use those
+animations that we imported.
+
+00:03:54.840 --> 00:03:58.240
+So our entry animation
+will be slide from left.
+
+00:03:58.240 --> 00:04:00.410
+Our exit will be fade out.
+
+00:04:00.410 --> 00:04:02.500
+We also need to
+remember to include
+
+00:04:02.500 --> 00:04:05.010
+that neon-animatable-behavior.
+
+00:04:05.010 --> 00:04:07.910
+Now, if this does not
+look familiar to you,
+
+00:04:07.910 --> 00:04:10.960
+please, please, please go
+check out our previous episode
+
+00:04:10.960 --> 00:04:12.460
+on Neon Animations.
+
+00:04:12.460 --> 00:04:15.135
+That will explain how
+these behaviors are working
+
+00:04:15.135 --> 00:04:16.760
+and give you a little
+bit more context.
+
+00:04:16.760 --> 00:04:18.760
+But for those of you who
+are familiar with this,
+
+00:04:18.760 --> 00:04:21.300
+we can just kind of
+steam right along.
+
+00:04:21.300 --> 00:04:23.010
+So we've added that behavior.
+
+00:04:23.010 --> 00:04:25.880
+We've got our animation
+object all set up.
+
+00:04:25.880 --> 00:04:28.110
+So the list page is
+pretty much done.
+
+00:04:28.110 --> 00:04:31.430
+I think we're ready to switch
+over to our settings page.
+
+00:04:31.430 --> 00:04:34.240
+And again, you know, it's
+full of dummy content
+
+00:04:34.240 --> 00:04:35.850
+in the template and
+in the style tag.
+
+00:04:35.850 --> 00:04:39.859
+So nothing that you really need
+to worry about there just yet.
+
+00:04:39.859 --> 00:04:41.400
+But we're going to
+do the same thing.
+
+00:04:41.400 --> 00:04:44.100
+We're going to import the
+neon-animatable-behavior
+
+00:04:44.100 --> 00:04:46.350
+and then a couple transitions.
+
+00:04:46.350 --> 00:04:48.100
+Slide from right.
+
+00:04:48.100 --> 00:04:50.010
+And then slide right.
+
+00:04:50.010 --> 00:04:52.260
+So slide from right
+means basically
+
+00:04:52.260 --> 00:04:54.850
+come from off screen
+to being on screen.
+
+00:04:54.850 --> 00:04:58.910
+And slide right means you're
+already on screen, push off
+
+00:04:58.910 --> 00:05:00.250
+to the right-hand side.
+
+00:05:00.250 --> 00:05:01.410
+Cool?
+
+00:05:01.410 --> 00:05:03.840
+So just like we were
+doing with our list page,
+
+00:05:03.840 --> 00:05:07.680
+we're going to go ahead
+and implement the behavior.
+
+00:05:07.680 --> 00:05:10.194
+So we're going to roll
+in neon-animatable.
+
+00:05:10.194 --> 00:05:11.610
+We're going to
+create a properties
+
+00:05:11.610 --> 00:05:16.130
+object with an animation
+config property.
+
+00:05:16.130 --> 00:05:18.010
+Entry and exit animations.
+
+00:05:18.010 --> 00:05:20.360
+And for entry,
+we're going to say
+
+00:05:20.360 --> 00:05:23.140
+that we want this guy
+to-- I believe we're going
+
+00:05:23.140 --> 00:05:24.280
+to slide in from the right.
+
+00:05:24.280 --> 00:05:24.830
+Yep.
+
+00:05:24.830 --> 00:05:27.780
+And then for our exit, we
+will slide out to the right.
+
+00:05:27.780 --> 00:05:29.410
+And both times, the
+node is just going
+
+00:05:29.410 --> 00:05:32.040
+to refer to this element itself.
+
+00:05:32.040 --> 00:05:33.590
+So we've got our two pages.
+
+00:05:33.590 --> 00:05:36.720
+They've got their animations
+already set up and ready to go.
+
+00:05:36.720 --> 00:05:38.120
+Let's switch over
+to the browser.
+
+00:05:38.120 --> 00:05:39.910
+We can actually preview this.
+
+00:05:39.910 --> 00:05:42.290
+And what I'm going to do is
+a little dev tools trickery,
+
+00:05:42.290 --> 00:05:43.610
+which you've seen me do before.
+
+00:05:43.610 --> 00:05:46.180
+I've got neon-animated-pages
+selected right here
+
+00:05:46.180 --> 00:05:47.040
+in the dev tools.
+
+00:05:47.040 --> 00:05:48.980
+And I've got my console open.
+
+00:05:48.980 --> 00:05:52.910
+So I can just hit $0,
+and that will actually
+
+00:05:52.910 --> 00:05:56.170
+allow me to grab a reference
+to the neon-animated-pages
+
+00:05:56.170 --> 00:05:56.720
+element.
+
+00:05:56.720 --> 00:05:59.024
+And I can just set selected
+to a hard-coded value.
+
+00:05:59.024 --> 00:06:00.190
+So I'll just switch it to 1.
+
+00:06:00.190 --> 00:06:01.356
+And you'll see what happens.
+
+00:06:01.356 --> 00:06:02.320
+The page changes.
+
+00:06:02.320 --> 00:06:03.710
+I switch it back to 0.
+
+00:06:03.710 --> 00:06:05.880
+The page goes back, right?
+
+00:06:05.880 --> 00:06:07.110
+Set it to 1.
+
+00:06:07.110 --> 00:06:08.920
+Page changes.
+
+00:06:08.920 --> 00:06:10.380
+Back to 0, page goes back.
+
+00:06:10.380 --> 00:06:12.650
+Now, we've got this
+really cool relationship
+
+00:06:12.650 --> 00:06:13.959
+between these animations.
+
+00:06:13.959 --> 00:06:15.500
+You can see how they
+sort of play off
+
+00:06:15.500 --> 00:06:18.372
+of one another, which looks
+really nice on perhaps
+
+00:06:18.372 --> 00:06:19.580
+a mobile device of some kind.
+
+00:06:19.580 --> 00:06:21.204
+It is a little bit
+of a bummer, though,
+
+00:06:21.204 --> 00:06:24.410
+to have to manually change the
+selected value in this way.
+
+00:06:24.410 --> 00:06:25.472
+So let's fix that.
+
+00:06:25.472 --> 00:06:26.930
+And what we're
+going to do is we're
+
+00:06:26.930 --> 00:06:28.721
+going to have our
+elements dispatch events.
+
+00:06:28.721 --> 00:06:31.810
+When we hear those events, we'll
+tell the animated pages element
+
+00:06:31.810 --> 00:06:32.820
+to update.
+
+00:06:32.820 --> 00:06:36.160
+So we can actually pop
+inside of the template there.
+
+00:06:36.160 --> 00:06:38.200
+And I'm going to take
+the Settings button
+
+00:06:38.200 --> 00:06:39.710
+and just give it
+an on-tap handler
+
+00:06:39.710 --> 00:06:41.980
+and a method called
+showSettings.
+
+00:06:41.980 --> 00:06:44.650
+And then to implement that,
+I'm just going to fire an event
+
+00:06:44.650 --> 00:06:45.727
+called showSettings.
+
+00:06:45.727 --> 00:06:47.810
+I'll do the exact same
+thing on the Settings page.
+
+00:06:47.810 --> 00:06:50.240
+I'll find its Cancel button,
+another on-tap handler.
+
+00:06:50.240 --> 00:06:52.370
+This time we'll say showList.
+
+00:06:52.370 --> 00:06:54.350
+And we'll do another event.
+
+00:06:54.350 --> 00:06:55.280
+Dispatcher basically.
+
+00:06:55.280 --> 00:06:58.290
+So we're just going to fire off
+another event called showList.
+
+00:06:58.290 --> 00:07:00.374
+And then back in
+our Index page, this
+
+00:07:00.374 --> 00:07:02.040
+is going to be a
+little quick and dirty.
+
+00:07:02.040 --> 00:07:03.581
+But what I'm going
+to do is I'll just
+
+00:07:03.581 --> 00:07:06.450
+listen at the document
+level for those events.
+
+00:07:06.450 --> 00:07:10.180
+So normally, you would probably
+have this neon-animated-pages
+
+00:07:10.180 --> 00:07:10.980
+and these elements.
+
+00:07:10.980 --> 00:07:12.688
+You'd probably have
+this inside of maybe,
+
+00:07:12.688 --> 00:07:14.640
+like, a bigger
+element of some kind.
+
+00:07:14.640 --> 00:07:17.117
+So you could use,
+like, on-dash listeners
+
+00:07:17.117 --> 00:07:18.200
+to listen to these things.
+
+00:07:18.200 --> 00:07:20.783
+You'd be like, oh, yeah, I want
+to listen to on-show-settings.
+
+00:07:23.660 --> 00:07:27.360
+And when I hear that,
+that's when I'll
+
+00:07:27.360 --> 00:07:29.030
+update my selected property.
+
+00:07:29.030 --> 00:07:31.500
+In this case, we're just doing
+a quick little demo here,
+
+00:07:31.500 --> 00:07:33.671
+so we'll just listen
+right on the document.
+
+00:07:33.671 --> 00:07:35.670
+With that in place, I
+think we're actually good.
+
+00:07:35.670 --> 00:07:37.340
+We can switch back to Chrome.
+
+00:07:37.340 --> 00:07:39.722
+And then when we click our
+little button up there,
+
+00:07:39.722 --> 00:07:41.180
+it's going to fire
+the event, which
+
+00:07:41.180 --> 00:07:45.300
+is going to trigger a
+change in animated pages.
+
+00:07:45.300 --> 00:07:46.810
+And we'll click
+that Cancel button.
+
+00:07:46.810 --> 00:07:48.112
+And likewise.
+
+00:07:48.112 --> 00:07:49.720
+[MUSIC PLAYING]
+
+00:07:49.720 --> 00:07:51.290
+Now, if you want
+all of your pages
+
+00:07:51.290 --> 00:07:52.970
+to use the same
+transitions, it would
+
+00:07:52.970 --> 00:07:56.230
+be really inconvenient to have
+to copy and paste that code
+
+00:07:56.230 --> 00:07:57.846
+over and over and over again.
+
+00:07:57.846 --> 00:07:59.720
+But thankfully, we can
+work around that using
+
+00:07:59.720 --> 00:08:02.291
+a feature that's built
+into the element itself.
+
+00:08:02.291 --> 00:08:02.790
+OK.
+
+00:08:02.790 --> 00:08:06.770
+For our second demo, I've got
+this very simple transition
+
+00:08:06.770 --> 00:08:07.270
+thing.
+
+00:08:07.270 --> 00:08:08.330
+Each one of these is a page.
+
+00:08:08.330 --> 00:08:10.460
+Each one of these big colored
+blocks is actually a page.
+
+00:08:10.460 --> 00:08:12.376
+And as I'm clicking, you
+can see that they all
+
+00:08:12.376 --> 00:08:15.880
+use the exact same
+transition animation.
+
+00:08:15.880 --> 00:08:19.760
+So looking at our code, it
+looks just like our old example.
+
+00:08:19.760 --> 00:08:21.650
+We've got a neon-animated-pages
+element here.
+
+00:08:21.650 --> 00:08:22.150
+Right?
+
+00:08:22.150 --> 00:08:24.480
+We're using some layout classes.
+
+00:08:24.480 --> 00:08:25.290
+We're flexing it.
+
+00:08:25.290 --> 00:08:27.979
+We've got a selected
+binding right there.
+
+00:08:27.979 --> 00:08:29.520
+And then I've got
+this little handler
+
+00:08:29.520 --> 00:08:31.160
+that I've added just
+for demo purposes
+
+00:08:31.160 --> 00:08:34.130
+called on-tap, where I've
+got this next method.
+
+00:08:34.130 --> 00:08:36.929
+And I'm just looping through
+possible selected values.
+
+00:08:36.929 --> 00:08:39.664
+So we're incrementing up
+until we reach the max.
+
+00:08:39.664 --> 00:08:41.900
+And then we're
+looping around again.
+
+00:08:41.900 --> 00:08:46.600
+Now, I've got the same element
+in each of these slots, right?
+
+00:08:46.600 --> 00:08:48.820
+And I know that I'm going
+to want all of these
+
+00:08:48.820 --> 00:08:49.980
+to use the same transition.
+
+00:08:49.980 --> 00:08:51.590
+Even if I didn't have
+the same element here,
+
+00:08:51.590 --> 00:08:54.090
+maybe I would want all of them
+to use the same transition.
+
+00:08:54.090 --> 00:08:58.830
+So instead of having to go into
+each and every one and copy
+
+00:08:58.830 --> 00:09:01.080
+and paste that behavior
+over and over again,
+
+00:09:01.080 --> 00:09:03.490
+what I'm going to do
+is just take advantage
+
+00:09:03.490 --> 00:09:06.670
+of this convenience feature
+that animated-pages offers,
+
+00:09:06.670 --> 00:09:09.810
+where I can go up to
+the top, and I can just
+
+00:09:09.810 --> 00:09:12.720
+import the animations
+that I want it to use,
+
+00:09:12.720 --> 00:09:15.490
+as if we were building
+an animatable element.
+
+00:09:15.490 --> 00:09:17.465
+But I'll just pull in
+a scale-up animation
+
+00:09:17.465 --> 00:09:19.225
+and a fade-out animation.
+
+00:09:19.225 --> 00:09:21.660
+And then we're just going
+to tell animated pages,
+
+00:09:21.660 --> 00:09:23.850
+hey, for all of your
+entry animations,
+
+00:09:23.850 --> 00:09:26.975
+just play the scale-up
+animation for all of these.
+
+00:09:26.975 --> 00:09:28.650
+It doesn't matter what it is.
+
+00:09:28.650 --> 00:09:29.520
+Just play that.
+
+00:09:29.520 --> 00:09:31.570
+And for all the exit
+animations, just play
+
+00:09:31.570 --> 00:09:33.132
+the fade-out animation.
+
+00:09:33.132 --> 00:09:34.840
+So if you know you
+want all of your pages
+
+00:09:34.840 --> 00:09:38.790
+to use the exact same
+intro and exit animations,
+
+00:09:38.790 --> 00:09:40.300
+this is some
+shorthand that you can
+
+00:09:40.300 --> 00:09:42.650
+do that will save you quite
+a lot of typing if you have
+
+00:09:42.650 --> 00:09:44.920
+a bunch of different
+elements that all basically
+
+00:09:44.920 --> 00:09:46.300
+need the same transitions.
+
+00:09:46.300 --> 00:09:48.633
+So with this in place, we're
+actually pretty good to go.
+
+00:09:48.633 --> 00:09:51.020
+We can switch back to the
+browser and click on the thing.
+
+00:09:51.020 --> 00:09:53.600
+And we're going to get
+that exact same behavior.
+
+00:09:53.600 --> 00:09:55.899
+And it's saved us
+quite a lot of typing.
+
+00:09:55.899 --> 00:09:57.690
+Now, the last thing
+that I want to touch on
+
+00:09:57.690 --> 00:10:00.190
+is something that I promised
+at the beginning of the video--
+
+00:10:00.190 --> 00:10:03.480
+this idea of being able to take
+elements and transition them
+
+00:10:03.480 --> 00:10:06.270
+from one page to
+the next, right?
+
+00:10:06.270 --> 00:10:09.640
+Actually pulling along
+what neon-animated-pages
+
+00:10:09.640 --> 00:10:12.100
+refers to as shared elements.
+
+00:10:12.100 --> 00:10:14.430
+So let me show you an
+example of doing that.
+
+00:10:14.430 --> 00:10:16.200
+I've got a very simple app here.
+
+00:10:16.200 --> 00:10:19.859
+And it's got this sort of
+large Sign In button of sorts.
+
+00:10:19.859 --> 00:10:21.650
+And when I go click on
+that Sign In button,
+
+00:10:21.650 --> 00:10:23.570
+you'll see that it's
+going to transition
+
+00:10:23.570 --> 00:10:26.350
+and become the header
+of my next page.
+
+00:10:26.350 --> 00:10:28.020
+So let's do that again, right?
+
+00:10:28.020 --> 00:10:29.520
+So I've actually
+taken that element,
+
+00:10:29.520 --> 00:10:33.420
+and sort of morphed it into
+an element on another page,
+
+00:10:33.420 --> 00:10:36.600
+and sort of carried it
+from page one to page two.
+
+00:10:36.600 --> 00:10:39.120
+So again, this is a
+shared element transition.
+
+00:10:39.120 --> 00:10:42.400
+And in particular, this one
+is called a hero transition
+
+00:10:42.400 --> 00:10:43.950
+or a hero animation.
+
+00:10:43.950 --> 00:10:45.940
+So implementing this is
+actually pretty easy.
+
+00:10:45.940 --> 00:10:48.590
+Though the effects themselves
+look very sophisticated,
+
+00:10:48.590 --> 00:10:51.130
+they're pretty easy to
+implement once you know how.
+
+00:10:51.130 --> 00:10:53.780
+So in my Index page, again,
+just like the previous examples,
+
+00:10:53.780 --> 00:10:56.120
+I've got
+neon-animated-pages, right?
+
+00:10:56.120 --> 00:10:58.090
+I'm flexing it.
+
+00:10:58.090 --> 00:11:00.460
+It's got the selected
+binding there.
+
+00:11:00.460 --> 00:11:04.280
+We're using a little
+cheating next handler
+
+00:11:04.280 --> 00:11:05.542
+to advance the page.
+
+00:11:05.542 --> 00:11:07.250
+And I've got two
+elements inside of here.
+
+00:11:07.250 --> 00:11:09.580
+One is called main-page,
+though maybe I should
+
+00:11:09.580 --> 00:11:10.840
+have called that sign-in-page.
+
+00:11:10.840 --> 00:11:11.950
+But main-page.
+
+00:11:11.950 --> 00:11:14.890
+And detail-page, which is going
+to be the page with the header.
+
+00:11:14.890 --> 00:11:16.092
+So this is our main page.
+
+00:11:16.092 --> 00:11:17.550
+And I want you to
+notice that we've
+
+00:11:17.550 --> 00:11:20.060
+got this div with an
+ID of circle here.
+
+00:11:20.060 --> 00:11:21.630
+So this is really,
+really important.
+
+00:11:21.630 --> 00:11:23.480
+And we're going to come
+back to this later.
+
+00:11:23.480 --> 00:11:25.850
+But just know that it
+exists inside of this page.
+
+00:11:25.850 --> 00:11:28.720
+And before we do anything, I'm
+going to go up and check out
+
+00:11:28.720 --> 00:11:29.750
+our imports.
+
+00:11:29.750 --> 00:11:31.920
+So instead of the
+neon-animatable-behavior,
+
+00:11:31.920 --> 00:11:33.360
+I've actually got
+this thing which
+
+00:11:33.360 --> 00:11:35.437
+is very similar, though
+an even longer name,
+
+00:11:35.437 --> 00:11:37.395
+called neon shared element
+animatable behavior.
+
+00:11:40.220 --> 00:11:42.360
+So this actually implements
+all the same stuff
+
+00:11:42.360 --> 00:11:43.900
+as the neon-animatable-behavior.
+
+00:11:43.900 --> 00:11:46.760
+But it gives us this
+magical shared element
+
+00:11:46.760 --> 00:11:49.626
+extra awesome sauce, which
+we will use in just a second.
+
+00:11:49.626 --> 00:11:51.250
+And then I've got
+two animations that I
+
+00:11:51.250 --> 00:11:54.860
+pulled in here-- hero-animation
+and fade-out-animation.
+
+00:11:54.860 --> 00:11:57.680
+So let's implement both
+of those right now.
+
+00:11:57.680 --> 00:12:00.280
+So we'll go down
+and just like we've
+
+00:12:00.280 --> 00:12:04.340
+done in previous examples,
+we will add the behavior
+
+00:12:04.340 --> 00:12:05.560
+to our element.
+
+00:12:05.560 --> 00:12:08.196
+So this time, we're going to
+add the neon shared element
+
+00:12:08.196 --> 00:12:09.029
+animatable behavior.
+
+00:12:11.222 --> 00:12:12.680
+We will create a
+properties object.
+
+00:12:12.680 --> 00:12:14.055
+And in that
+properties object, we
+
+00:12:14.055 --> 00:12:17.170
+will drop in an
+animation config object.
+
+00:12:17.170 --> 00:12:19.391
+We'll have entry
+and exit animations.
+
+00:12:19.391 --> 00:12:21.140
+The entry animation
+doesn't really matter,
+
+00:12:21.140 --> 00:12:22.560
+because we're not going to
+play it in this example,
+
+00:12:22.560 --> 00:12:24.189
+but I'll just
+throw one in there.
+
+00:12:24.189 --> 00:12:26.230
+The exit animation, though--
+pay attention here--
+
+00:12:26.230 --> 00:12:29.910
+I'm actually creating an array
+of animations-- so animations
+
+00:12:29.910 --> 00:12:32.120
+that would be playing
+simultaneously.
+
+00:12:32.120 --> 00:12:35.500
+The first one is going to
+be that hero-animation.
+
+00:12:35.500 --> 00:12:39.800
+And we're going to
+give it an ID property.
+
+00:12:39.800 --> 00:12:43.120
+And we're going to say that
+we want to hero-animate
+
+00:12:43.120 --> 00:12:46.040
+a thing with the idea of hero.
+
+00:12:46.040 --> 00:12:51.130
+And this does not refer to a CSS
+ID, which confused me at first.
+
+00:12:51.130 --> 00:12:53.030
+So this is not a CSS ID.
+
+00:12:53.030 --> 00:12:57.490
+This is an ID that we are
+going to define in JavaScript.
+
+00:12:57.490 --> 00:13:00.810
+So kind of keep that
+in mind for the moment.
+
+00:13:00.810 --> 00:13:03.260
+And then we're going to say
+that this page right here
+
+00:13:03.260 --> 00:13:08.510
+is the from page, meaning that
+this hero element that we're
+
+00:13:08.510 --> 00:13:11.680
+going to refer to is
+coming from this page,
+
+00:13:11.680 --> 00:13:14.910
+and it's going to another page,
+which we will demonstrate when
+
+00:13:14.910 --> 00:13:16.385
+we implement the next element.
+
+00:13:16.385 --> 00:13:17.760
+And then we're
+going to implement
+
+00:13:17.760 --> 00:13:21.076
+a second animation, which is
+just going to be fade-out.
+
+00:13:21.076 --> 00:13:22.450
+And we're going
+to basically say,
+
+00:13:22.450 --> 00:13:24.800
+everything else on this
+page should fade out
+
+00:13:24.800 --> 00:13:27.220
+when we're exiting.
+
+00:13:27.220 --> 00:13:31.390
+So let's go define
+this hero ID thing.
+
+00:13:31.390 --> 00:13:34.550
+And the way we're going to do
+that is through this shared
+
+00:13:34.550 --> 00:13:36.160
+elements object.
+
+00:13:36.160 --> 00:13:38.830
+So remember, I've got
+this circle up here,
+
+00:13:38.830 --> 00:13:40.510
+right, this thing
+with ID of circle.
+
+00:13:40.510 --> 00:13:44.440
+And that's really what I
+want to hero-transition.
+
+00:13:44.440 --> 00:13:47.080
+So I'm going to add this
+shared elements object.
+
+00:13:47.080 --> 00:13:50.500
+And I'm going to
+tell it-- by the way,
+
+00:13:50.500 --> 00:13:52.740
+it looks a lot like our
+animation config object.
+
+00:13:52.740 --> 00:13:56.245
+It's a value that turns a
+function [INAUDIBLE] an object.
+
+00:13:56.245 --> 00:13:59.160
+But we're going to say
+that when we say hero,
+
+00:13:59.160 --> 00:14:02.700
+what we're actually talking
+about is this .$circle.
+
+00:14:02.700 --> 00:14:05.130
+And the reason why we do
+this is because this term
+
+00:14:05.130 --> 00:14:08.030
+is going to be used
+in both elements--
+
+00:14:08.030 --> 00:14:10.160
+the from page and the to page.
+
+00:14:10.160 --> 00:14:13.440
+So it's a shared term
+referring to different things
+
+00:14:13.440 --> 00:14:15.000
+on different pages.
+
+00:14:15.000 --> 00:14:17.770
+So here, hero refers
+to that circle.
+
+00:14:17.770 --> 00:14:19.975
+Let's go implement the
+next page, the detail page.
+
+00:14:19.975 --> 00:14:23.060
+And you'll see that we've got
+the same imports pretty much.
+
+00:14:23.060 --> 00:14:26.350
+We've got shared-element,
+hero-animation,
+
+00:14:26.350 --> 00:14:28.600
+fade-out-animation, fade-in.
+
+00:14:28.600 --> 00:14:30.620
+We're going to also
+implement our behavior.
+
+00:14:33.930 --> 00:14:37.220
+We're going to drop in an
+animation config object.
+
+00:14:37.220 --> 00:14:39.304
+And for the exit animation,
+doesn't really matter,
+
+00:14:39.304 --> 00:14:40.803
+because we're not
+going to play one.
+
+00:14:40.803 --> 00:14:42.480
+But I'll just add
+an exit animation.
+
+00:14:42.480 --> 00:14:44.438
+But here we are again
+with the entry animation.
+
+00:14:44.438 --> 00:14:46.250
+Again, it's an
+array of animations.
+
+00:14:46.250 --> 00:14:49.690
+And note that we're
+using the hero animation.
+
+00:14:49.690 --> 00:14:51.940
+The ID that we're
+referring to is still hero.
+
+00:14:51.940 --> 00:14:53.930
+But now we're saying
+that this is the to page.
+
+00:14:53.930 --> 00:14:56.410
+So the first element
+was the from page.
+
+00:14:56.410 --> 00:15:00.739
+This is the to page
+where hero is going to.
+
+00:15:00.739 --> 00:15:02.780
+And then for the rest of
+the content on the page,
+
+00:15:02.780 --> 00:15:06.970
+we're just going to fade it
+in when we're doing entry.
+
+00:15:06.970 --> 00:15:09.291
+And then we're going to go
+define its shared elements
+
+00:15:09.291 --> 00:15:09.790
+object.
+
+00:15:09.790 --> 00:15:11.248
+And what we're
+going to say here is
+
+00:15:11.248 --> 00:15:13.910
+that when we say
+hero in this element,
+
+00:15:13.910 --> 00:15:18.370
+we're referring to our element
+with the ID of header, right?
+
+00:15:18.370 --> 00:15:20.410
+So hero in the other
+one refers to circle.
+
+00:15:20.410 --> 00:15:24.630
+Hero over here
+refers to our header.
+
+00:15:24.630 --> 00:15:27.960
+And it is up to
+neon-animated-pages now
+
+00:15:27.960 --> 00:15:30.360
+and it is up to that
+hero animation behavior
+
+00:15:30.360 --> 00:15:34.480
+to sort of interpolate
+between A and B,
+
+00:15:34.480 --> 00:15:36.640
+right, to get us
+from there to here.
+
+00:15:36.640 --> 00:15:37.140
+Right?
+
+00:15:37.140 --> 00:15:39.380
+So let's go and
+give that a shot.
+
+00:15:39.380 --> 00:15:43.760
+We will go back to our browser
+and click on our circle.
+
+00:15:43.760 --> 00:15:48.140
+And you see we get that nice
+transition over to our header.
+
+00:15:48.140 --> 00:15:51.680
+Now, this is a pretty simple
+implementation of this pattern
+
+00:15:51.680 --> 00:15:53.490
+though it is a
+really cool effect.
+
+00:15:53.490 --> 00:15:55.560
+But what I'd like to show
+you is if you go over
+
+00:15:55.560 --> 00:15:57.860
+to the Elements catalog at
+elements.polymerproject.org.
+
+00:15:57.860 --> 00:16:01.810
+And you click on this Neon
+Animation button down here,
+
+00:16:01.810 --> 00:16:03.260
+there is this
+really awesome guide
+
+00:16:03.260 --> 00:16:05.800
+full of really helpful
+stuff on Neon Animations.
+
+00:16:05.800 --> 00:16:08.930
+But at the bottom, there are
+all of these really great demos.
+
+00:16:08.930 --> 00:16:12.030
+And one in particular, which
+I sort of based this on,
+
+00:16:12.030 --> 00:16:14.470
+is this one called, like,
+Squares to Circles or Circles
+
+00:16:14.470 --> 00:16:15.670
+to Squares, I think.
+
+00:16:15.670 --> 00:16:18.472
+And it is a much more
+advanced implementation
+
+00:16:18.472 --> 00:16:20.680
+of what I just showed you,
+where all of these circles
+
+00:16:20.680 --> 00:16:23.620
+are actually dynamic
+hero transitions, which
+
+00:16:23.620 --> 00:16:24.520
+is really cool.
+
+00:16:24.520 --> 00:16:26.560
+But it involves a
+fair bit more code.
+
+00:16:26.560 --> 00:16:28.900
+So once you feel like you
+understand the original hero
+
+00:16:28.900 --> 00:16:30.700
+animation, go
+check this one out.
+
+00:16:30.700 --> 00:16:33.660
+Go try it out and
+see how you do.
+
+00:16:33.660 --> 00:16:35.330
+But now you know
+everything that you
+
+00:16:35.330 --> 00:16:38.950
+need to start creating some
+really, really sick animations
+
+00:16:38.950 --> 00:16:40.211
+in your Polymer apps.
+
+00:16:40.211 --> 00:16:42.585
+So the next time you want to
+add a really fancy animation
+
+00:16:42.585 --> 00:16:44.250
+to your application,
+you can just say,
+
+00:16:44.250 --> 00:16:46.430
+hey, there's an
+element for that.
+
+00:16:46.430 --> 00:16:48.746
+Now, if you've enjoyed this
+video, be sure to go down
+
+00:16:48.746 --> 00:16:50.370
+and click that little
+Subscribe button.
+
+00:16:50.370 --> 00:16:52.140
+That's actually how we
+get to keep making these.
+
+00:16:52.140 --> 00:16:54.080
+And if you have questions,
+you can leave them for me
+
+00:16:54.080 --> 00:16:55.180
+down in the comments.
+
+00:16:55.180 --> 00:16:57.360
+Or hit me up on a social
+network of your choosing
+
+00:16:57.360 --> 00:16:59.770
+at #AskPolymer.
+
+00:16:59.770 --> 00:17:01.570
+As always, thank you
+so much for watching,
+
+00:17:01.570 --> 00:17:02.877
+and I'll see you next time.
+
+00:17:02.877 --> 00:17:07.466
+[MUSIC PLAYING]
+

@@ -1,0 +1,584 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.916
+[MUSIC PLAYING]
+
+00:00:05.002 --> 00:00:05.960
+Hey there, Polycasters.
+
+00:00:05.960 --> 00:00:06.690
+Rob here.
+
+00:00:06.690 --> 00:00:08.440
+I just wanted to welcome
+you to this brand
+
+00:00:08.440 --> 00:00:10.930
+new segment we're doing on
+our show called Ask Polymer.
+
+00:00:10.930 --> 00:00:12.310
+Every other week,
+we're going to do is.
+
+00:00:12.310 --> 00:00:14.770
+We're going to have you send in
+questions on a social network
+
+00:00:14.770 --> 00:00:15.510
+of your choosing.
+
+00:00:15.510 --> 00:00:17.690
+You got some sort of
+crazy ear worm, something
+
+00:00:17.690 --> 00:00:18.940
+you want to know about
+Polymer, but you're not
+
+00:00:18.940 --> 00:00:22.010
+quite sure about, you send those
+in, you hash tag it #askPolymer
+
+00:00:22.010 --> 00:00:23.070
+and we'll answer it.
+
+00:00:23.070 --> 00:00:24.620
+All right, question
+number one comes
+
+00:00:24.620 --> 00:00:27.220
+from Kenneth who
+writes in and asks,
+
+00:00:27.220 --> 00:00:30.312
+didn't you mentioned that there
+would be a CDN for Polymer
+
+00:00:30.312 --> 00:00:31.270
+or something like that?
+
+00:00:31.270 --> 00:00:34.160
+Is that going to be
+rolling out anytime soon?
+
+00:00:34.160 --> 00:00:36.820
+Now in the past, we've
+actually encouraged people
+
+00:00:36.820 --> 00:00:40.280
+not to use CDN with HTML
+imports because they
+
+00:00:40.280 --> 00:00:42.140
+would have a hard
+time de-duplicating
+
+00:00:42.140 --> 00:00:43.156
+their dependencies.
+
+00:00:43.156 --> 00:00:45.030
+If they're all coming
+from different domains,
+
+00:00:45.030 --> 00:00:46.900
+the de-duping
+mechanism can't really
+
+00:00:46.900 --> 00:00:50.130
+figure out where there
+are copies of things.
+
+00:00:50.130 --> 00:00:51.926
+But, at the recent
+Polymer summit,
+
+00:00:51.926 --> 00:00:53.300
+we showed off a
+new project we've
+
+00:00:53.300 --> 00:00:55.100
+been working on called PolyGit.
+
+00:00:55.100 --> 00:00:58.429
+Addy Osmani did an entire
+talk, where he included PolyGit
+
+00:00:58.429 --> 00:01:00.970
+as one of the segments in there,
+showing how you could use it
+
+00:01:00.970 --> 00:01:01.719
+in your projects.
+
+00:01:01.719 --> 00:01:03.510
+The idea with PolyGit
+is that it's actually
+
+00:01:03.510 --> 00:01:05.180
+kind of our own magic server.
+
+00:01:05.180 --> 00:01:08.290
+It uses the GitHub, the raw
+GitHub API, as kind of a CDN
+
+00:01:08.290 --> 00:01:09.440
+like thing.
+
+00:01:09.440 --> 00:01:13.170
+So it's great for experimenting,
+not quite ready for production
+
+00:01:13.170 --> 00:01:13.670
+though.
+
+00:01:13.670 --> 00:01:16.170
+You don't want to be
+taking PolyGit and using it
+
+00:01:16.170 --> 00:01:17.200
+in a real project.
+
+00:01:17.200 --> 00:01:18.840
+But if you're doing
+something like a JS
+
+00:01:18.840 --> 00:01:21.640
+Bin or a little sample you
+just want to show something off
+
+00:01:21.640 --> 00:01:24.170
+on a prototype, it's
+perfect for that.
+
+00:01:24.170 --> 00:01:26.360
+And we hope, kind
+of in the long term,
+
+00:01:26.360 --> 00:01:28.870
+that PolyGit will eventually
+be production ready.
+
+00:01:28.870 --> 00:01:31.494
+So that could be our CDN
+solution down the line.
+
+00:01:31.494 --> 00:01:33.660
+So thank you, Kenneth, for
+sending that question in.
+
+00:01:33.660 --> 00:01:36.270
+Our next question
+comes from Andrew,
+
+00:01:36.270 --> 00:01:40.760
+who asks when will Polymer and
+Angular play nice together?
+
+00:01:40.760 --> 00:01:42.000
+So great question, Andrew.
+
+00:01:42.000 --> 00:01:44.369
+This is actually something
+a lot of people ask.
+
+00:01:44.369 --> 00:01:46.660
+They want to know about
+Polymer and Angular, or Polymer
+
+00:01:46.660 --> 00:01:49.250
+and React or some
+other framework.
+
+00:01:49.250 --> 00:01:51.099
+The main reason why
+many of those frameworks
+
+00:01:51.099 --> 00:01:52.890
+have a hard time working
+with Polymer today
+
+00:01:52.890 --> 00:01:55.382
+is that pretty much all of
+them predate web components,
+
+00:01:55.382 --> 00:01:57.090
+and so they're not
+quite sure how to work
+
+00:01:57.090 --> 00:01:58.730
+with things like shadow DOM.
+
+00:01:58.730 --> 00:02:01.450
+Now, once we have Shadow DOM
+shipping natively everywhere,
+
+00:02:01.450 --> 00:02:04.672
+the story actually gets a little
+bit better, because it hides
+
+00:02:04.672 --> 00:02:06.630
+and it sort of encapsulates
+a lot of the things
+
+00:02:06.630 --> 00:02:08.910
+that the web components
+are doing behind the scenes
+
+00:02:08.910 --> 00:02:10.827
+so the frameworks don't
+need to know about it.
+
+00:02:10.827 --> 00:02:12.951
+But right now, we're still
+in the in-between place.
+
+00:02:12.951 --> 00:02:14.410
+We've got polyfills
+for shadow DOM
+
+00:02:14.410 --> 00:02:16.687
+and that can trip up
+some of these frameworks.
+
+00:02:16.687 --> 00:02:18.520
+So when we get native
+Shadow DOM everywhere,
+
+00:02:18.520 --> 00:02:19.696
+things will be a lot better.
+
+00:02:19.696 --> 00:02:21.320
+Also, with something
+like, specifically
+
+00:02:21.320 --> 00:02:23.230
+for Angular and
+Angular two, they've
+
+00:02:23.230 --> 00:02:24.980
+been rewriting their
+data binding systems.
+
+00:02:24.980 --> 00:02:26.395
+It'll work better with
+the sort of events
+
+00:02:26.395 --> 00:02:28.430
+that Polymer elements
+fire, and they'll also
+
+00:02:28.430 --> 00:02:30.212
+be able to handle
+Shadow DOM better.
+
+00:02:30.212 --> 00:02:32.170
+They've got a whole sort
+of Shadow Dom renderer
+
+00:02:32.170 --> 00:02:33.170
+that they're working on.
+
+00:02:33.170 --> 00:02:35.084
+So thank you, Andrew,
+really great question.
+
+00:02:35.084 --> 00:02:36.500
+All right, our
+next question comes
+
+00:02:36.500 --> 00:02:40.539
+from Rory, who asks what is
+your favorite custom element?
+
+00:02:40.539 --> 00:02:41.830
+This is a pretty good question.
+
+00:02:41.830 --> 00:02:44.054
+Thank you, Rory,
+for sending that in.
+
+00:02:44.054 --> 00:02:48.925
+My favorite custom element is
+either iron-localstorage or
+
+00:02:48.925 --> 00:02:51.729
+iron-ajax, which we
+just did an episode on.
+
+00:02:51.729 --> 00:02:53.270
+So you can actually
+go back and watch
+
+00:02:53.270 --> 00:02:54.850
+the previous
+episode of Polycast,
+
+00:02:54.850 --> 00:02:56.675
+learn all about how
+to use that element.
+
+00:02:56.675 --> 00:02:58.300
+And the reason why
+I like both of these
+
+00:02:58.300 --> 00:03:00.640
+is because they're nice
+declarative data providers.
+
+00:03:00.640 --> 00:03:03.460
+So I can just sort of wire
+them up in my application.
+
+00:03:03.460 --> 00:03:05.940
+And then persist some
+data or fetch some data,
+
+00:03:05.940 --> 00:03:07.816
+and I don't have to
+write like any JavaScript
+
+00:03:07.816 --> 00:03:09.481
+to do that, which, I
+don't know, it just
+
+00:03:09.481 --> 00:03:11.290
+makes it a lot easier
+for me to build apps.
+
+00:03:11.290 --> 00:03:13.332
+So thank you, Rory,
+really great question.
+
+00:03:13.332 --> 00:03:14.790
+Our next question
+comes from Andre,
+
+00:03:14.790 --> 00:03:17.070
+who asks why did
+Polymer choose to use
+
+00:03:17.070 --> 00:03:20.440
+Bower as its package manager and
+what about something like MPM?
+
+00:03:20.440 --> 00:03:22.790
+Are there plans to switch
+to that in the future?
+
+00:03:22.790 --> 00:03:24.070
+So, great question, Andre.
+
+00:03:24.070 --> 00:03:25.980
+The reason why we
+originally went with Bower
+
+00:03:25.980 --> 00:03:29.020
+is because it gives you this
+nice, flat dependency structure
+
+00:03:29.020 --> 00:03:30.220
+when it installs everything.
+
+00:03:30.220 --> 00:03:32.852
+And that's really
+important for HTML imports.
+
+00:03:32.852 --> 00:03:34.685
+MPM, on the other hand,
+tends to nest things
+
+00:03:34.685 --> 00:03:36.610
+and that can kind of
+confuse the system.
+
+00:03:36.610 --> 00:03:38.650
+Now, in MPM three,
+they've done a lot of work
+
+00:03:38.650 --> 00:03:41.190
+to improve on this
+de-duplication mechanism.
+
+00:03:41.190 --> 00:03:43.620
+So now you can get flat
+directories in MPM three
+
+00:03:43.620 --> 00:03:46.567
+but the one thing that you
+can't do is conflict resolution.
+
+00:03:46.567 --> 00:03:48.400
+And that's actually
+really important for us.
+
+00:03:48.400 --> 00:03:51.090
+We want to make sure that people
+aren't installing or getting
+
+00:03:51.090 --> 00:03:53.760
+the wrong version of something
+and getting some weird errors.
+
+00:03:53.760 --> 00:03:55.136
+So in a future
+version of MPM, it
+
+00:03:55.136 --> 00:03:57.510
+sounds like they're going to
+fix that and, at that point,
+
+00:03:57.510 --> 00:03:59.410
+we'll probably switch
+over to using that
+
+00:03:59.410 --> 00:04:00.890
+as our package manager.
+
+00:04:00.890 --> 00:04:02.864
+So thank you, Andre,
+really great question.
+
+00:04:02.864 --> 00:04:04.280
+All right, our
+last question comes
+
+00:04:04.280 --> 00:04:07.430
+from David, who asks,
+Mozilla has recently
+
+00:04:07.430 --> 00:04:09.890
+said that they're not going
+to implement HTML imports,
+
+00:04:09.890 --> 00:04:11.780
+instead preferring ES6 modules.
+
+00:04:11.780 --> 00:04:13.726
+So what are your
+thoughts about that?
+
+00:04:13.726 --> 00:04:15.681
+So great question, David.
+
+00:04:15.681 --> 00:04:17.430
+We actually talked
+about this a little bit
+
+00:04:17.430 --> 00:04:21.057
+at the Polymer summit, so
+check that out over here.
+
+00:04:21.057 --> 00:04:22.640
+And basically the
+long and short of it
+
+00:04:22.640 --> 00:04:25.442
+is Mozilla has said that they're
+not implementing them yet.
+
+00:04:25.442 --> 00:04:27.900
+They didn't say that they're
+never going to implement them.
+
+00:04:27.900 --> 00:04:28.920
+And we've been
+doing a lot of work
+
+00:04:28.920 --> 00:04:31.700
+on the loader spec recently,
+which is what, under the hood,
+
+00:04:31.700 --> 00:04:34.400
+both modules and
+imports depend upon.
+
+00:04:34.400 --> 00:04:36.280
+And what we'd like to
+maybe see in the future
+
+00:04:36.280 --> 00:04:38.900
+is perhaps both systems
+using the same mechanism
+
+00:04:38.900 --> 00:04:39.560
+under the hood.
+
+00:04:39.560 --> 00:04:42.590
+And then you could have modules
+as the imperative flavor,
+
+00:04:42.590 --> 00:04:44.795
+you could have imports as
+the declarative flavor,
+
+00:04:44.795 --> 00:04:47.430
+and developers could
+benefit from both.
+
+00:04:47.430 --> 00:04:49.432
+So that is the long term plan.
+
+00:04:49.432 --> 00:04:51.640
+We're going to continue
+working with Mozilla on that,
+
+00:04:51.640 --> 00:04:52.620
+to see where we get.
+
+00:04:52.620 --> 00:04:54.320
+So again thank you, David.
+
+00:04:54.320 --> 00:04:55.530
+Really great question.
+
+00:04:55.530 --> 00:04:57.280
+Thank you all who sent
+in those questions.
+
+00:04:57.280 --> 00:04:59.465
+A lot of really great stuff
+we didn't get to everything
+
+00:04:59.465 --> 00:05:02.050
+but we're going to try to get
+to them in our future episodes.
+
+00:05:02.050 --> 00:05:04.050
+So be sure to click that
+little subscribe button
+
+00:05:04.050 --> 00:05:05.810
+down there so you
+can get notifications
+
+00:05:05.810 --> 00:05:07.220
+as those roll out.
+
+00:05:07.220 --> 00:05:08.799
+If you yourself
+have questions, you
+
+00:05:08.799 --> 00:05:10.340
+can leave them down
+in the comments 0
+
+00:05:10.340 --> 00:05:12.510
+or ping us on a social
+network of your choosing
+
+00:05:12.510 --> 00:05:15.060
+at hash tag #askPolymer.
+
+00:05:15.060 --> 00:05:16.910
+As always, thank you
+so much for watching
+
+00:05:16.910 --> 00:05:18.080
+and I'll see you next time.
+
+00:05:18.080 --> 00:05:21.130
+[MUSIC PLAYING]
+

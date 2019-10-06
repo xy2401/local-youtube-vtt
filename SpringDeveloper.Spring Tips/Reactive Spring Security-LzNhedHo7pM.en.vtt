@@ -1,0 +1,2928 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:25.160 --> 00:00:27.859 align:start position:0%
+ 
+higher<00:00:26.160><c> spring</c><00:00:26.429><c> fans</c><00:00:26.699><c> in</c><00:00:27.060><c> this</c><00:00:27.509><c> installment</c>
+
+00:00:27.859 --> 00:00:27.869 align:start position:0%
+higher spring fans in this installment
+ 
+
+00:00:27.869 --> 00:00:29.720 align:start position:0%
+higher spring fans in this installment
+of<00:00:28.109><c> spring</c><00:00:28.470><c> tips</c><00:00:28.739><c> we're</c><00:00:29.220><c> going</c><00:00:29.399><c> to</c><00:00:29.489><c> look</c><00:00:29.609><c> at</c>
+
+00:00:29.720 --> 00:00:29.730 align:start position:0%
+of spring tips we're going to look at
+ 
+
+00:00:29.730 --> 00:00:31.579 align:start position:0%
+of spring tips we're going to look at
+the<00:00:29.849><c> new</c><00:00:30.000><c> features</c><00:00:30.210><c> in</c><00:00:30.449><c> spring</c><00:00:30.869><c> security</c><00:00:31.349><c> 5</c>
+
+00:00:31.579 --> 00:00:31.589 align:start position:0%
+the new features in spring security 5
+ 
+
+00:00:31.589 --> 00:00:33.860 align:start position:0%
+the new features in spring security 5
+which<00:00:31.890><c> are</c><00:00:32.040><c> designed</c><00:00:32.279><c> to</c><00:00:32.399><c> support</c><00:00:32.870><c> security</c>
+
+00:00:33.860 --> 00:00:33.870 align:start position:0%
+which are designed to support security
+ 
+
+00:00:33.870 --> 00:00:35.959 align:start position:0%
+which are designed to support security
+in<00:00:34.050><c> a</c><00:00:34.379><c> reactive</c><00:00:34.800><c> Spring</c><00:00:35.430><c> web</c><00:00:35.640><c> flex</c>
+
+00:00:35.959 --> 00:00:35.969 align:start position:0%
+in a reactive Spring web flex
+ 
+
+00:00:35.969 --> 00:00:38.450 align:start position:0%
+in a reactive Spring web flex
+application<00:00:36.660><c> so</c><00:00:37.230><c> let's</c><00:00:37.829><c> create</c><00:00:38.010><c> a</c><00:00:38.100><c> new</c><00:00:38.129><c> demo</c>
+
+00:00:38.450 --> 00:00:38.460 align:start position:0%
+application so let's create a new demo
+ 
+
+00:00:38.460 --> 00:00:40.310 align:start position:0%
+application so let's create a new demo
+here<00:00:38.730><c> on</c><00:00:38.910><c> start</c><00:00:39.510><c> out</c><00:00:39.629><c> spring</c><00:00:39.809><c> radio</c><00:00:40.110><c> we're</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+here on start out spring radio we're
+ 
+
+00:00:40.320 --> 00:00:43.069 align:start position:0%
+here on start out spring radio we're
+going<00:00:40.440><c> to</c><00:00:40.500><c> use</c><00:00:40.680><c> spring</c><00:00:41.309><c> boot</c><00:00:41.489><c> -</c><00:00:41.730><c> dado</c><00:00:41.940><c> m2</c><00:00:42.870><c> which</c>
+
+00:00:43.069 --> 00:00:43.079 align:start position:0%
+going to use spring boot - dado m2 which
+ 
+
+00:00:43.079 --> 00:00:44.569 align:start position:0%
+going to use spring boot - dado m2 which
+is<00:00:43.199><c> do</c><00:00:43.379><c> you</c><00:00:43.769><c> know</c><00:00:43.860><c> the</c><00:00:43.949><c> final</c><00:00:44.220><c> release</c><00:00:44.399><c> of</c>
+
+00:00:44.569 --> 00:00:44.579 align:start position:0%
+is do you know the final release of
+ 
+
+00:00:44.579 --> 00:00:46.880 align:start position:0%
+is do you know the final release of
+spring<00:00:44.820><c> boot</c><00:00:45.030><c> is</c><00:00:45.210><c> due</c><00:00:45.390><c> this</c><00:00:46.050><c> December</c><00:00:46.559><c> so</c><00:00:46.739><c> will</c>
+
+00:00:46.880 --> 00:00:46.890 align:start position:0%
+spring boot is due this December so will
+ 
+
+00:00:46.890 --> 00:00:48.229 align:start position:0%
+spring boot is due this December so will
+will<00:00:47.309><c> take</c><00:00:47.519><c> advantage</c><00:00:47.640><c> of</c><00:00:47.940><c> some</c><00:00:48.089><c> of</c><00:00:48.180><c> the</c>
+
+00:00:48.229 --> 00:00:48.239 align:start position:0%
+will take advantage of some of the
+ 
+
+00:00:48.239 --> 00:00:51.860 align:start position:0%
+will take advantage of some of the
+milestones<00:00:48.720><c> here</c><00:00:49.040><c> security</c><00:00:50.420><c> demo</c><00:00:51.420><c> and</c><00:00:51.720><c> we're</c>
+
+00:00:51.860 --> 00:00:51.870 align:start position:0%
+milestones here security demo and we're
+ 
+
+00:00:51.870 --> 00:00:53.840 align:start position:0%
+milestones here security demo and we're
+gonna<00:00:51.960><c> use</c><00:00:52.170><c> the</c><00:00:52.409><c> reactive</c><00:00:52.829><c> web</c><00:00:53.040><c> support</c><00:00:53.280><c> now</c>
+
+00:00:53.840 --> 00:00:53.850 align:start position:0%
+gonna use the reactive web support now
+ 
+
+00:00:53.850 --> 00:00:56.119 align:start position:0%
+gonna use the reactive web support now
+at<00:00:54.059><c> the</c><00:00:54.269><c> moment</c><00:00:54.449><c> there</c><00:00:54.750><c> is</c><00:00:54.899><c> no</c><00:00:55.129><c> auto</c>
+
+00:00:56.119 --> 00:00:56.129 align:start position:0%
+at the moment there is no auto
+ 
+
+00:00:56.129 --> 00:00:58.820 align:start position:0%
+at the moment there is no auto
+configuration<00:00:56.790><c> or</c><00:00:57.089><c> starter</c><00:00:57.570><c> for</c><00:00:58.170><c> spring</c>
+
+00:00:58.820 --> 00:00:58.830 align:start position:0%
+configuration or starter for spring
+ 
+
+00:00:58.830 --> 00:01:00.950 align:start position:0%
+configuration or starter for spring
+security<00:00:59.339><c> so</c><00:00:59.489><c> we</c><00:01:00.449><c> will</c><00:01:00.659><c> just</c><00:01:00.809><c> have</c><00:01:00.900><c> to</c>
+
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+security so we will just have to
+ 
+
+00:01:00.960 --> 00:01:02.929 align:start position:0%
+security so we will just have to
+configure<00:01:01.290><c> it</c><00:01:01.470><c> ourselves</c><00:01:01.759><c> manually</c><00:01:02.759><c> and</c><00:01:02.879><c> I</c>
+
+00:01:02.929 --> 00:01:02.939 align:start position:0%
+configure it ourselves manually and I
+ 
+
+00:01:02.939 --> 00:01:05.390 align:start position:0%
+configure it ourselves manually and I
+you<00:01:03.509><c> know</c><00:01:03.629><c> I'm</c><00:01:03.809><c> using</c><00:01:04.019><c> giant</c><00:01:04.799><c> ironic</c><00:01:05.250><c> air</c>
+
+00:01:05.390 --> 00:01:05.400 align:start position:0%
+you know I'm using giant ironic air
+ 
+
+00:01:05.400 --> 00:01:06.620 align:start position:0%
+you know I'm using giant ironic air
+quotes<00:01:05.640><c> here</c><00:01:05.790><c> because</c><00:01:06.030><c> as</c><00:01:06.150><c> you'll</c><00:01:06.330><c> see</c><00:01:06.479><c> it's</c>
+
+00:01:06.620 --> 00:01:06.630 align:start position:0%
+quotes here because as you'll see it's
+ 
+
+00:01:06.630 --> 00:01:08.990 align:start position:0%
+quotes here because as you'll see it's
+it's<00:01:07.110><c> almost</c><00:01:07.320><c> trivial</c><00:01:07.530><c> how</c><00:01:07.890><c> much</c><00:01:08.040><c> configures</c>
+
+00:01:08.990 --> 00:01:09.000 align:start position:0%
+it's almost trivial how much configures
+ 
+
+00:01:09.000 --> 00:01:10.609 align:start position:0%
+it's almost trivial how much configures
+and<00:01:09.180><c> configuration</c><00:01:10.049><c> is</c><00:01:10.140><c> required</c><00:01:10.170><c> to</c><00:01:10.500><c> get</c>
+
+00:01:10.609 --> 00:01:10.619 align:start position:0%
+and configuration is required to get
+ 
+
+00:01:10.619 --> 00:01:14.870 align:start position:0%
+and configuration is required to get
+that<00:01:10.680><c> to</c><00:01:11.070><c> work</c><00:01:12.350><c> and</c><00:01:13.350><c> then</c><00:01:13.560><c> we'll</c><00:01:13.770><c> we'll</c><00:01:14.700><c> use</c>
+
+00:01:14.870 --> 00:01:14.880 align:start position:0%
+that to work and then we'll we'll use
+ 
+
+00:01:14.880 --> 00:01:16.940 align:start position:0%
+that to work and then we'll we'll use
+that<00:01:15.060><c> to</c><00:01:15.119><c> secure</c><00:01:15.689><c> a</c><00:01:15.720><c> reactive</c><00:01:16.530><c> end</c><00:01:16.650><c> point</c><00:01:16.829><c> so</c>
+
+00:01:16.940 --> 00:01:16.950 align:start position:0%
+that to secure a reactive end point so
+ 
+
+00:01:16.950 --> 00:01:20.899 align:start position:0%
+that to secure a reactive end point so
+here<00:01:17.100><c> with</c><00:01:17.189><c> our</c><00:01:17.280><c> security</c><00:01:17.729><c> demo</c><00:01:18.540><c> and</c><00:01:19.909><c> we'll</c>
+
+00:01:20.899 --> 00:01:20.909 align:start position:0%
+here with our security demo and we'll
+ 
+
+00:01:20.909 --> 00:01:22.490 align:start position:0%
+here with our security demo and we'll
+point<00:01:21.180><c> ourselves</c><00:01:21.509><c> to</c><00:01:21.600><c> that</c><00:01:21.750><c> project</c>
+
+00:01:22.490 --> 00:01:22.500 align:start position:0%
+point ourselves to that project
+ 
+
+00:01:22.500 --> 00:01:24.469 align:start position:0%
+point ourselves to that project
+descriptor<00:01:23.070><c> the</c><00:01:23.189><c> Maven</c><00:01:23.700><c> project</c><00:01:23.729><c> descriptor</c>
+
+00:01:24.469 --> 00:01:24.479 align:start position:0%
+descriptor the Maven project descriptor
+ 
+
+00:01:24.479 --> 00:01:27.950 align:start position:0%
+descriptor the Maven project descriptor
+and<00:01:24.720><c> open</c><00:01:25.350><c> this</c><00:01:25.439><c> up</c><00:01:25.560><c> in</c><00:01:25.680><c> our</c><00:01:25.740><c> ide</c><00:01:26.040><c> and</c><00:01:26.960><c> what</c>
+
+00:01:27.950 --> 00:01:27.960 align:start position:0%
+and open this up in our ide and what
+ 
+
+00:01:27.960 --> 00:01:30.260 align:start position:0%
+and open this up in our ide and what
+we'll<00:01:28.079><c> do</c><00:01:28.170><c> it</c><00:01:28.290><c> as</c><00:01:28.409><c> a</c><00:01:28.439><c> first</c><00:01:28.740><c> cut</c><00:01:29.430><c> you</c><00:01:29.790><c> know</c><00:01:29.880><c> the</c>
+
+00:01:30.260 --> 00:01:30.270 align:start position:0%
+we'll do it as a first cut you know the
+ 
+
+00:01:30.270 --> 00:01:31.460 align:start position:0%
+we'll do it as a first cut you know the
+first<00:01:30.420><c> thing</c><00:01:30.540><c> we're</c><00:01:30.659><c> going</c><00:01:30.750><c> to</c><00:01:30.810><c> do</c><00:01:30.900><c> is</c><00:01:30.990><c> build</c><00:01:31.350><c> a</c>
+
+00:01:31.460 --> 00:01:31.470 align:start position:0%
+first thing we're going to do is build a
+ 
+
+00:01:31.470 --> 00:01:33.440 align:start position:0%
+first thing we're going to do is build a
+simple<00:01:31.740><c> trivial</c><00:01:32.130><c> rest</c><00:01:32.550><c> endpoint</c><00:01:33.420><c> that</c>
+
+00:01:33.440 --> 00:01:33.450 align:start position:0%
+simple trivial rest endpoint that
+ 
+
+00:01:33.450 --> 00:01:35.330 align:start position:0%
+simple trivial rest endpoint that
+returns<00:01:33.810><c> a</c><00:01:33.930><c> hello</c><00:01:34.110><c> world</c><00:01:34.380><c> message</c><00:01:34.590><c> what</c><00:01:35.190><c> else</c>
+
+00:01:35.330 --> 00:01:35.340 align:start position:0%
+returns a hello world message what else
+ 
+
+00:01:35.340 --> 00:01:35.870 align:start position:0%
+returns a hello world message what else
+right
+
+00:01:35.870 --> 00:01:35.880 align:start position:0%
+right
+ 
+
+00:01:35.880 --> 00:01:40.010 align:start position:0%
+right
+so<00:01:36.150><c> security</c><00:01:36.630><c> demo</c><00:01:37.370><c> application</c><00:01:38.370><c> and</c><00:01:39.020><c> we'll</c>
+
+00:01:40.010 --> 00:01:40.020 align:start position:0%
+so security demo application and we'll
+ 
+
+00:01:40.020 --> 00:01:42.850 align:start position:0%
+so security demo application and we'll
+create<00:01:40.200><c> a</c><00:01:40.409><c> web</c><00:01:41.220><c> configuration</c><00:01:42.000><c> in</c><00:01:42.150><c> point</c><00:01:42.360><c> here</c>
+
+00:01:42.850 --> 00:01:42.860 align:start position:0%
+create a web configuration in point here
+ 
+
+00:01:42.860 --> 00:01:45.080 align:start position:0%
+create a web configuration in point here
+and<00:01:43.860><c> it's</c><00:01:44.040><c> gonna</c><00:01:44.130><c> be</c><00:01:44.220><c> a</c><00:01:44.280><c> configuration</c><00:01:44.700><c> class</c>
+
+00:01:45.080 --> 00:01:45.090 align:start position:0%
+and it's gonna be a configuration class
+ 
+
+00:01:45.090 --> 00:01:48.100 align:start position:0%
+and it's gonna be a configuration class
+and<00:01:45.360><c> therein</c><00:01:45.990><c> we're</c><00:01:46.140><c> gonna</c><00:01:46.260><c> define</c><00:01:46.650><c> a</c><00:01:46.920><c> router</c>
+
+00:01:48.100 --> 00:01:48.110 align:start position:0%
+and therein we're gonna define a router
+ 
+
+00:01:48.110 --> 00:01:51.890 align:start position:0%
+and therein we're gonna define a router
+function<00:01:49.110><c> okay</c><00:01:49.530><c> so</c><00:01:49.560><c> rad</c><00:01:50.070><c> functions</c><00:01:50.900><c> routes</c>
+
+00:01:51.890 --> 00:01:51.900 align:start position:0%
+function okay so rad functions routes
+ 
+
+00:01:51.900 --> 00:01:55.520 align:start position:0%
+function okay so rad functions routes
+and<00:01:52.549><c> we'll</c><00:01:53.549><c> say</c><00:01:53.790><c> return</c><00:01:54.119><c> router</c><00:01:54.810><c> functions</c>
+
+00:01:55.520 --> 00:01:55.530 align:start position:0%
+and we'll say return router functions
+ 
+
+00:01:55.530 --> 00:02:02.120 align:start position:0%
+and we'll say return router functions
+dot<00:01:56.040><c> route</c><00:01:56.790><c> requests</c><00:01:57.570><c> pretty</c><00:01:57.869><c> kits</c><00:01:58.110><c> dot</c><00:02:01.130><c> dot</c>
+
+00:02:02.120 --> 00:02:02.130 align:start position:0%
+dot route requests pretty kits dot dot
+ 
+
+00:02:02.130 --> 00:02:07.100 align:start position:0%
+dot route requests pretty kits dot dot
+gift<00:02:02.490><c> for</c><00:02:03.479><c> slash</c><00:02:03.780><c> message</c><00:02:04.290><c> and</c><00:02:05.960><c> we're</c><00:02:06.960><c> going</c>
+
+00:02:07.100 --> 00:02:07.110 align:start position:0%
+gift for slash message and we're going
+ 
+
+00:02:07.110 --> 00:02:08.690 align:start position:0%
+gift for slash message and we're going
+to<00:02:07.170><c> return</c><00:02:07.320><c> a</c><00:02:07.470><c> new</c><00:02:07.710><c> handler</c><00:02:08.099><c> function</c><00:02:08.549><c> this</c><00:02:08.670><c> is</c>
+
+00:02:08.690 --> 00:02:08.700 align:start position:0%
+to return a new handler function this is
+ 
+
+00:02:08.700 --> 00:02:11.149 align:start position:0%
+to return a new handler function this is
+the<00:02:08.909><c> callback</c><00:02:09.539><c> that</c><00:02:10.019><c> spring</c><00:02:10.649><c> web</c><00:02:10.799><c> flex</c><00:02:11.009><c> is</c>
+
+00:02:11.149 --> 00:02:11.159 align:start position:0%
+the callback that spring web flex is
+ 
+
+00:02:11.159 --> 00:02:13.309 align:start position:0%
+the callback that spring web flex is
+expecting<00:02:11.549><c> us</c><00:02:11.670><c> to</c><00:02:11.790><c> satisfy</c><00:02:11.939><c> in</c><00:02:12.900><c> order</c><00:02:13.019><c> to</c>
+
+00:02:13.309 --> 00:02:13.319 align:start position:0%
+expecting us to satisfy in order to
+ 
+
+00:02:13.319 --> 00:02:15.500 align:start position:0%
+expecting us to satisfy in order to
+respond<00:02:13.769><c> to</c><00:02:13.860><c> incoming</c><00:02:14.189><c> requests</c><00:02:14.700><c> so</c><00:02:14.819><c> say</c><00:02:15.060><c> reso</c>
+
+00:02:15.500 --> 00:02:15.510 align:start position:0%
+respond to incoming requests so say reso
+ 
+
+00:02:15.510 --> 00:02:19.670 align:start position:0%
+respond to incoming requests so say reso
+response<00:02:15.870><c> that</c><00:02:16.049><c> okay</c><00:02:16.319><c> dot</c><00:02:16.590><c> body</c><00:02:18.170><c> mono</c><00:02:19.170><c> just</c>
+
+00:02:19.670 --> 00:02:19.680 align:start position:0%
+response that okay dot body mono just
+ 
+
+00:02:19.680 --> 00:02:22.580 align:start position:0%
+response that okay dot body mono just
+hello<00:02:20.120><c> world</c><00:02:21.120><c> and</c><00:02:21.689><c> we're</c><00:02:22.080><c> gonna</c><00:02:22.200><c> tell</c><00:02:22.409><c> the</c>
+
+00:02:22.580 --> 00:02:22.590 align:start position:0%
+hello world and we're gonna tell the
+ 
+
+00:02:22.590 --> 00:02:24.289 align:start position:0%
+hello world and we're gonna tell the
+framework<00:02:23.549><c> that</c><00:02:23.670><c> we're</c><00:02:23.849><c> sending</c><00:02:24.030><c> back</c><00:02:24.150><c> a</c>
+
+00:02:24.289 --> 00:02:24.299 align:start position:0%
+framework that we're sending back a
+ 
+
+00:02:24.299 --> 00:02:27.440 align:start position:0%
+framework that we're sending back a
+string<00:02:24.959><c> okay</c><00:02:25.819><c> so</c><00:02:26.819><c> let's</c><00:02:26.970><c> go</c><00:02:27.030><c> ahead</c><00:02:27.060><c> and</c><00:02:27.269><c> start</c>
+
+00:02:27.440 --> 00:02:27.450 align:start position:0%
+string okay so let's go ahead and start
+ 
+
+00:02:27.450 --> 00:02:29.720 align:start position:0%
+string okay so let's go ahead and start
+this<00:02:27.569><c> up</c><00:02:27.720><c> now</c><00:02:28.319><c> this</c><00:02:28.950><c> is</c><00:02:29.010><c> a</c><00:02:29.159><c> functional</c>
+
+00:02:29.720 --> 00:02:29.730 align:start position:0%
+this up now this is a functional
+ 
+
+00:02:29.730 --> 00:02:30.589 align:start position:0%
+this up now this is a functional
+interface<00:02:30.030><c> you'll</c><00:02:30.180><c> notice</c><00:02:30.540><c> that</c>
+
+00:02:30.589 --> 00:02:30.599 align:start position:0%
+interface you'll notice that
+ 
+
+00:02:30.599 --> 00:02:31.970 align:start position:0%
+interface you'll notice that
+intelligence<00:02:31.110><c> telling</c><00:02:31.409><c> us</c><00:02:31.500><c> it's</c><00:02:31.650><c> a</c><00:02:31.680><c> function</c>
+
+00:02:31.970 --> 00:02:31.980 align:start position:0%
+intelligence telling us it's a function
+ 
+
+00:02:31.980 --> 00:02:35.390 align:start position:0%
+intelligence telling us it's a function
+interface<00:02:32.250><c> and</c><00:02:32.519><c> so</c><00:02:33.180><c> we</c><00:02:33.329><c> could</c><00:02:34.069><c> reduce</c><00:02:35.069><c> this</c><00:02:35.249><c> to</c>
+
+00:02:35.390 --> 00:02:35.400 align:start position:0%
+interface and so we could reduce this to
+ 
+
+00:02:35.400 --> 00:02:37.190 align:start position:0%
+interface and so we could reduce this to
+lambda<00:02:35.760><c> but</c><00:02:35.879><c> for</c><00:02:36.060><c> our</c><00:02:36.209><c> purposes</c><00:02:36.810><c> I</c><00:02:36.870><c> think</c><00:02:36.959><c> it</c>
+
+00:02:37.190 --> 00:02:37.200 align:start position:0%
+lambda but for our purposes I think it
+ 
+
+00:02:37.200 --> 00:02:38.250 align:start position:0%
+lambda but for our purposes I think it
+just<00:02:37.319><c> makes</c><00:02:37.499><c> sense</c><00:02:37.650><c> to</c>
+
+00:02:38.250 --> 00:02:38.260 align:start position:0%
+just makes sense to
+ 
+
+00:02:38.260 --> 00:02:39.869 align:start position:0%
+just makes sense to
+use<00:02:38.379><c> method</c><00:02:38.860><c> references</c><00:02:39.040><c> because</c><00:02:39.400><c> functional</c>
+
+00:02:39.869 --> 00:02:39.879 align:start position:0%
+use method references because functional
+ 
+
+00:02:39.879 --> 00:02:42.210 align:start position:0%
+use method references because functional
+interfaces<00:02:40.319><c> lend</c><00:02:41.319><c> themselves</c><00:02:41.680><c> to</c><00:02:41.890><c> method</c>
+
+00:02:42.210 --> 00:02:42.220 align:start position:0%
+interfaces lend themselves to method
+ 
+
+00:02:42.220 --> 00:02:43.440 align:start position:0%
+interfaces lend themselves to method
+references<00:02:42.610><c> just</c><00:02:42.790><c> as</c><00:02:42.909><c> easily</c><00:02:43.030><c> as</c><00:02:43.299><c> they</c><00:02:43.390><c> do</c>
+
+00:02:43.440 --> 00:02:43.450 align:start position:0%
+references just as easily as they do
+ 
+
+00:02:43.450 --> 00:02:48.270 align:start position:0%
+references just as easily as they do
+lambda<00:02:44.290><c> so</c><00:02:44.440><c> here</c><00:02:44.739><c> I</c><00:02:44.890><c> can</c><00:02:45.370><c> say</c><00:02:45.840><c> this</c><00:02:46.950><c> handle</c><00:02:47.950><c> and</c>
+
+00:02:48.270 --> 00:02:48.280 align:start position:0%
+lambda so here I can say this handle and
+ 
+
+00:02:48.280 --> 00:02:50.610 align:start position:0%
+lambda so here I can say this handle and
+we<00:02:49.060><c> can</c><00:02:49.209><c> refactor</c><00:02:49.870><c> this</c><00:02:50.140><c> to</c><00:02:50.290><c> be</c><00:02:50.379><c> called</c>
+
+00:02:50.610 --> 00:02:50.620 align:start position:0%
+we can refactor this to be called
+ 
+
+00:02:50.620 --> 00:02:52.890 align:start position:0%
+we can refactor this to be called
+message<00:02:51.549><c> there</c><00:02:52.269><c> we</c><00:02:52.360><c> are</c><00:02:52.390><c> that</c><00:02:52.599><c> makes</c><00:02:52.780><c> it</c>
+
+00:02:52.890 --> 00:02:52.900 align:start position:0%
+message there we are that makes it
+ 
+
+00:02:52.900 --> 00:02:55.470 align:start position:0%
+message there we are that makes it
+cleaner<00:02:53.200><c> and</c><00:02:53.530><c> we</c><00:02:54.069><c> can</c><00:02:54.190><c> also</c><00:02:54.310><c> strip</c><00:02:55.150><c> away</c><00:02:55.299><c> these</c>
+
+00:02:55.470 --> 00:02:55.480 align:start position:0%
+cleaner and we can also strip away these
+ 
+
+00:02:55.480 --> 00:02:58.289 align:start position:0%
+cleaner and we can also strip away these
+sort<00:02:55.750><c> of</c><00:02:55.810><c> static</c><00:02:56.260><c> import</c><00:02:56.790><c> prefixes</c><00:02:57.790><c> here</c><00:02:58.090><c> that</c>
+
+00:02:58.289 --> 00:02:58.299 align:start position:0%
+sort of static import prefixes here that
+ 
+
+00:02:58.299 --> 00:02:59.940 align:start position:0%
+sort of static import prefixes here that
+makes<00:02:58.450><c> it</c><00:02:58.569><c> even</c><00:02:58.989><c> more</c><00:02:59.230><c> clean</c><00:02:59.920><c> and</c>
+
+00:02:59.940 --> 00:02:59.950 align:start position:0%
+makes it even more clean and
+ 
+
+00:02:59.950 --> 00:03:03.000 align:start position:0%
+makes it even more clean and
+approachable<00:03:00.760><c> and</c><00:03:01.470><c> there</c><00:03:02.470><c> we</c><00:03:02.590><c> go</c><00:03:02.709><c> so</c><00:03:02.830><c> we</c><00:03:02.920><c> have</c>
+
+00:03:03.000 --> 00:03:03.010 align:start position:0%
+approachable and there we go so we have
+ 
+
+00:03:03.010 --> 00:03:04.410 align:start position:0%
+approachable and there we go so we have
+to<00:03:03.160><c> we</c><00:03:03.280><c> have</c><00:03:03.310><c> our</c><00:03:03.519><c> code</c><00:03:03.790><c> clean</c><00:03:04.030><c> up</c><00:03:04.150><c> now</c><00:03:04.299><c> let's</c>
+
+00:03:04.410 --> 00:03:04.420 align:start position:0%
+to we have our code clean up now let's
+ 
+
+00:03:04.420 --> 00:03:05.900 align:start position:0%
+to we have our code clean up now let's
+go<00:03:04.569><c> ahead</c><00:03:04.629><c> and</c><00:03:04.840><c> see</c><00:03:04.930><c> if</c><00:03:05.049><c> it's</c><00:03:05.170><c> working</c><00:03:05.530><c> curl</c>
+
+00:03:05.900 --> 00:03:05.910 align:start position:0%
+go ahead and see if it's working curl
+ 
+
+00:03:05.910 --> 00:03:11.670 align:start position:0%
+go ahead and see if it's working curl
+HTTP<00:03:08.040><c> localhost</c><00:03:09.120><c> 8080</c><00:03:10.440><c> forward</c><00:03:11.440><c> slash</c>
+
+00:03:11.670 --> 00:03:11.680 align:start position:0%
+HTTP localhost 8080 forward slash
+ 
+
+00:03:11.680 --> 00:03:14.369 align:start position:0%
+HTTP localhost 8080 forward slash
+message<00:03:12.670><c> there's</c><00:03:13.450><c> our</c><00:03:13.599><c> simple</c><00:03:13.959><c> message</c><00:03:14.230><c> now</c>
+
+00:03:14.369 --> 00:03:14.379 align:start position:0%
+message there's our simple message now
+ 
+
+00:03:14.379 --> 00:03:15.990 align:start position:0%
+message there's our simple message now
+the<00:03:14.799><c> message</c><00:03:15.099><c> is</c><00:03:15.220><c> interesting</c><00:03:15.670><c> but</c><00:03:15.819><c> let's</c>
+
+00:03:15.990 --> 00:03:16.000 align:start position:0%
+the message is interesting but let's
+ 
+
+00:03:16.000 --> 00:03:17.819 align:start position:0%
+the message is interesting but let's
+contextualize<00:03:16.690><c> it</c><00:03:16.900><c> that's</c><00:03:17.109><c> a</c><00:03:17.290><c> you</c><00:03:17.709><c> know</c>
+
+00:03:17.819 --> 00:03:17.829 align:start position:0%
+contextualize it that's a you know
+ 
+
+00:03:17.829 --> 00:03:19.530 align:start position:0%
+contextualize it that's a you know
+personalize<00:03:18.609><c> it</c><00:03:18.819><c> just</c><00:03:18.940><c> a</c><00:03:18.970><c> little</c><00:03:19.150><c> bit</c><00:03:19.269><c> we</c><00:03:19.390><c> know</c>
+
+00:03:19.530 --> 00:03:19.540 align:start position:0%
+personalize it just a little bit we know
+ 
+
+00:03:19.540 --> 00:03:22.860 align:start position:0%
+personalize it just a little bit we know
+once<00:03:20.410><c> we</c><00:03:20.530><c> add</c><00:03:20.620><c> security</c><00:03:21.010><c> that</c><00:03:21.700><c> we</c><00:03:22.299><c> you</c><00:03:22.780><c> know</c>
+
+00:03:22.860 --> 00:03:22.870 align:start position:0%
+once we add security that we you know
+ 
+
+00:03:22.870 --> 00:03:24.599 align:start position:0%
+once we add security that we you know
+we'll<00:03:23.230><c> know</c><00:03:23.349><c> who</c><00:03:23.530><c> would</c><00:03:23.709><c> user</c><00:03:23.980><c> it</c><00:03:24.190><c> is</c><00:03:24.220><c> so</c><00:03:24.459><c> let's</c>
+
+00:03:24.599 --> 00:03:24.609 align:start position:0%
+we'll know who would user it is so let's
+ 
+
+00:03:24.609 --> 00:03:29.539 align:start position:0%
+we'll know who would user it is so let's
+add<00:03:24.940><c> security</c><00:03:25.569><c> and</c><00:03:26.340><c> then</c><00:03:27.340><c> we'll</c><00:03:27.870><c> well</c>
+
+00:03:29.539 --> 00:03:29.549 align:start position:0%
+add security and then we'll well
+ 
+
+00:03:29.549 --> 00:03:31.589 align:start position:0%
+add security and then we'll well
+personalize<00:03:30.549><c> the</c><00:03:30.700><c> message</c><00:03:30.730><c> to</c><00:03:31.150><c> reflect</c><00:03:31.480><c> the</c>
+
+00:03:31.589 --> 00:03:31.599 align:start position:0%
+personalize the message to reflect the
+ 
+
+00:03:31.599 --> 00:03:33.240 align:start position:0%
+personalize the message to reflect the
+currently<00:03:31.900><c> authenticated</c><00:03:32.109><c> user</c><00:03:32.590><c> so</c><00:03:32.799><c> to</c><00:03:33.160><c> add</c>
+
+00:03:33.240 --> 00:03:33.250 align:start position:0%
+currently authenticated user so to add
+ 
+
+00:03:33.250 --> 00:03:35.430 align:start position:0%
+currently authenticated user so to add
+security<00:03:33.760><c> we</c><00:03:34.269><c> need</c><00:03:34.299><c> to</c><00:03:34.690><c> bring</c><00:03:35.019><c> in</c><00:03:35.140><c> the</c><00:03:35.230><c> three</c>
+
+00:03:35.430 --> 00:03:35.440 align:start position:0%
+security we need to bring in the three
+ 
+
+00:03:35.440 --> 00:03:37.530 align:start position:0%
+security we need to bring in the three
+dependencies<00:03:35.920><c> that</c><00:03:35.950><c> comprise</c><00:03:36.879><c> the</c><00:03:37.150><c> core</c><00:03:37.390><c> of</c>
+
+00:03:37.530 --> 00:03:37.540 align:start position:0%
+dependencies that comprise the core of
+ 
+
+00:03:37.540 --> 00:03:40.229 align:start position:0%
+dependencies that comprise the core of
+the<00:03:37.660><c> spring</c><00:03:38.109><c> security</c><00:03:38.500><c> web</c><00:03:38.920><c> flex</c><00:03:39.220><c> support</c><00:03:39.609><c> so</c>
+
+00:03:40.229 --> 00:03:40.239 align:start position:0%
+the spring security web flex support so
+ 
+
+00:03:40.239 --> 00:03:43.770 align:start position:0%
+the spring security web flex support so
+we<00:03:40.359><c> say</c><00:03:40.540><c> spring</c><00:03:41.109><c> security</c><00:03:41.859><c> config</c><00:03:42.340><c> and</c><00:03:42.780><c> we</c>
+
+00:03:43.770 --> 00:03:43.780 align:start position:0%
+we say spring security config and we
+ 
+
+00:03:43.780 --> 00:03:44.729 align:start position:0%
+we say spring security config and we
+don't<00:03:43.930><c> have</c><00:03:44.019><c> to</c><00:03:44.109><c> manage</c><00:03:44.319><c> the</c><00:03:44.410><c> versions</c>
+
+00:03:44.729 --> 00:03:44.739 align:start position:0%
+don't have to manage the versions
+ 
+
+00:03:44.739 --> 00:03:45.900 align:start position:0%
+don't have to manage the versions
+thankfully<00:03:45.130><c> that's</c><00:03:45.280><c> already</c><00:03:45.459><c> done</c><00:03:45.639><c> for</c><00:03:45.880><c> us</c>
+
+00:03:45.900 --> 00:03:45.910 align:start position:0%
+thankfully that's already done for us
+ 
+
+00:03:45.910 --> 00:03:48.750 align:start position:0%
+thankfully that's already done for us
+spring<00:03:46.180><c> boot</c><00:03:46.359><c> five</c><00:03:47.280><c> spring</c><00:03:48.280><c> blue</c><00:03:48.400><c> two</c><00:03:48.549><c> rather</c>
+
+00:03:48.750 --> 00:03:48.760 align:start position:0%
+spring boot five spring blue two rather
+ 
+
+00:03:48.760 --> 00:03:51.150 align:start position:0%
+spring boot five spring blue two rather
+has<00:03:49.000><c> from</c><00:03:49.329><c> security</c><00:03:49.690><c> five</c><00:03:50.040><c> you</c><00:03:51.040><c> know</c>
+
+00:03:51.150 --> 00:03:51.160 align:start position:0%
+has from security five you know
+ 
+
+00:03:51.160 --> 00:03:52.559 align:start position:0%
+has from security five you know
+configured<00:03:51.880><c> and</c><00:03:52.000><c> managed</c><00:03:52.239><c> for</c><00:03:52.329><c> us</c><00:03:52.389><c> in</c><00:03:52.510><c> the</c>
+
+00:03:52.559 --> 00:03:52.569 align:start position:0%
+configured and managed for us in the
+ 
+
+00:03:52.569 --> 00:03:55.890 align:start position:0%
+configured and managed for us in the
+version<00:03:52.769><c> ranges</c><00:03:53.769><c> so</c><00:03:53.950><c> that's</c><00:03:54.160><c> just</c><00:03:54.780><c> just</c><00:03:55.780><c> a</c>
+
+00:03:55.890 --> 00:03:55.900 align:start position:0%
+version ranges so that's just just a
+ 
+
+00:03:55.900 --> 00:03:57.870 align:start position:0%
+version ranges so that's just just a
+simple<00:03:56.410><c> chore</c><00:03:56.590><c> bring</c><00:03:56.889><c> in</c><00:03:57.010><c> the</c><00:03:57.220><c> core</c><00:03:57.459><c> support</c>
+
+00:03:57.870 --> 00:03:57.880 align:start position:0%
+simple chore bring in the core support
+ 
+
+00:03:57.880 --> 00:03:59.220 align:start position:0%
+simple chore bring in the core support
+the<00:03:58.000><c> web</c><00:03:58.120><c> flex</c><00:03:58.329><c> support</c><00:03:58.660><c> and</c><00:03:58.810><c> the</c><00:03:58.870><c> config</c>
+
+00:03:59.220 --> 00:03:59.230 align:start position:0%
+the web flex support and the config
+ 
+
+00:03:59.230 --> 00:04:03.059 align:start position:0%
+the web flex support and the config
+support<00:03:59.620><c> and</c><00:03:59.980><c> with</c><00:04:00.819><c> that</c><00:04:01.230><c> we</c><00:04:02.230><c> need</c><00:04:02.410><c> to</c><00:04:02.500><c> teach</c>
+
+00:04:03.059 --> 00:04:03.069 align:start position:0%
+support and with that we need to teach
+ 
+
+00:04:03.069 --> 00:04:06.690 align:start position:0%
+support and with that we need to teach
+spring<00:04:03.579><c> security</c><00:04:04.590><c> how</c><00:04:05.590><c> to</c><00:04:05.650><c> answer</c><00:04:06.160><c> the</c>
+
+00:04:06.690 --> 00:04:06.700 align:start position:0%
+spring security how to answer the
+ 
+
+00:04:06.700 --> 00:04:08.699 align:start position:0%
+spring security how to answer the
+requirement<00:04:07.239><c> of</c><00:04:07.530><c> authentication</c><00:04:08.530><c> and</c>
+
+00:04:08.699 --> 00:04:08.709 align:start position:0%
+requirement of authentication and
+ 
+
+00:04:08.709 --> 00:04:10.440 align:start position:0%
+requirement of authentication and
+authorization<00:04:08.919><c> so</c><00:04:09.579><c> first</c><00:04:10.150><c> we'll</c><00:04:10.329><c> do</c>
+
+00:04:10.440 --> 00:04:10.450 align:start position:0%
+authorization so first we'll do
+ 
+
+00:04:10.450 --> 00:04:13.250 align:start position:0%
+authorization so first we'll do
+authentication<00:04:11.099><c> we'll</c><00:04:12.099><c> say</c><00:04:12.250><c> security</c>
+
+00:04:13.250 --> 00:04:13.260 align:start position:0%
+authentication we'll say security
+ 
+
+00:04:13.260 --> 00:04:17.279 align:start position:0%
+authentication we'll say security
+security<00:04:14.700><c> configuration</c><00:04:15.700><c> and</c><00:04:16.389><c> we're</c><00:04:17.169><c> going</c>
+
+00:04:17.279 --> 00:04:17.289 align:start position:0%
+security configuration and we're going
+ 
+
+00:04:17.289 --> 00:04:18.750 align:start position:0%
+security configuration and we're going
+to<00:04:17.349><c> make</c><00:04:17.530><c> this</c><00:04:17.650><c> a</c><00:04:17.709><c> configuration</c><00:04:18.190><c> class</c><00:04:18.549><c> I'm</c>
+
+00:04:18.750 --> 00:04:18.760 align:start position:0%
+to make this a configuration class I'm
+ 
+
+00:04:18.760 --> 00:04:20.479 align:start position:0%
+to make this a configuration class I'm
+going<00:04:18.880><c> to</c><00:04:18.940><c> activate</c><00:04:19.419><c> the</c><00:04:19.570><c> web</c><00:04:19.720><c> flex</c><00:04:19.989><c> security</c>
+
+00:04:20.479 --> 00:04:20.489 align:start position:0%
+going to activate the web flex security
+ 
+
+00:04:20.489 --> 00:04:23.480 align:start position:0%
+going to activate the web flex security
+support<00:04:21.489><c> in</c><00:04:21.639><c> there</c><00:04:21.760><c> and</c><00:04:21.970><c> then</c><00:04:22.289><c> you</c><00:04:23.289><c> know</c>
+
+00:04:23.480 --> 00:04:23.490 align:start position:0%
+support in there and then you know
+ 
+
+00:04:23.490 --> 00:04:26.700 align:start position:0%
+support in there and then you know
+springing<00:04:24.490><c> web</c><00:04:25.419><c> flux</c><00:04:25.750><c> just</c><00:04:26.020><c> like</c><00:04:26.139><c> spring</c><00:04:26.470><c> seek</c>
+
+00:04:26.700 --> 00:04:26.710 align:start position:0%
+springing web flux just like spring seek
+ 
+
+00:04:26.710 --> 00:04:28.350 align:start position:0%
+springing web flux just like spring seek
+the<00:04:26.830><c> spring</c><00:04:27.160><c> security</c><00:04:27.520><c> with</c><00:04:27.700><c> spring</c><00:04:28.030><c> mukluks</c>
+
+00:04:28.350 --> 00:04:28.360 align:start position:0%
+the spring security with spring mukluks
+ 
+
+00:04:28.360 --> 00:04:30.000 align:start position:0%
+the spring security with spring mukluks
+just<00:04:28.539><c> like</c><00:04:28.660><c> traditional</c><00:04:29.380><c> spring</c><00:04:29.620><c> security</c>
+
+00:04:30.000 --> 00:04:30.010 align:start position:0%
+just like traditional spring security
+ 
+
+00:04:30.010 --> 00:04:32.370 align:start position:0%
+just like traditional spring security
+has<00:04:30.460><c> at</c><00:04:31.300><c> its</c><00:04:31.360><c> heart</c><00:04:31.570><c> the</c><00:04:31.840><c> concept</c><00:04:32.200><c> of</c><00:04:32.260><c> an</c>
+
+00:04:32.370 --> 00:04:32.380 align:start position:0%
+has at its heart the concept of an
+ 
+
+00:04:32.380 --> 00:04:35.100 align:start position:0%
+has at its heart the concept of an
+authentication<00:04:32.860><c> manager</c><00:04:33.370><c> and</c><00:04:33.720><c> it</c><00:04:34.720><c> can</c><00:04:34.960><c> in</c>
+
+00:04:35.100 --> 00:04:35.110 align:start position:0%
+authentication manager and it can in
+ 
+
+00:04:35.110 --> 00:04:38.760 align:start position:0%
+authentication manager and it can in
+turn<00:04:35.320><c> delegate</c><00:04:35.800><c> to</c><00:04:36.039><c> a</c><00:04:36.990><c> reactor</c><00:04:37.990><c> until</c><00:04:38.560><c> a</c><00:04:38.590><c> user</c>
+
+00:04:38.760 --> 00:04:38.770 align:start position:0%
+turn delegate to a reactor until a user
+ 
+
+00:04:38.770 --> 00:04:40.860 align:start position:0%
+turn delegate to a reactor until a user
+details<00:04:39.010><c> repository</c><00:04:39.880><c> which</c><00:04:40.030><c> more</c><00:04:40.780><c> or</c><00:04:40.840><c> less</c>
+
+00:04:40.860 --> 00:04:40.870 align:start position:0%
+details repository which more or less
+ 
+
+00:04:40.870 --> 00:04:42.420 align:start position:0%
+details repository which more or less
+corresponds<00:04:41.560><c> to</c><00:04:41.620><c> a</c><00:04:41.740><c> doubt</c><00:04:42.010><c> authentication</c>
+
+00:04:42.420 --> 00:04:42.430 align:start position:0%
+corresponds to a doubt authentication
+ 
+
+00:04:42.430 --> 00:04:44.189 align:start position:0%
+corresponds to a doubt authentication
+provider<00:04:43.000><c> in</c><00:04:43.270><c> the</c><00:04:43.660><c> traditional</c><00:04:44.020><c> spring</c>
+
+00:04:44.189 --> 00:04:44.199 align:start position:0%
+provider in the traditional spring
+ 
+
+00:04:44.199 --> 00:04:46.290 align:start position:0%
+provider in the traditional spring
+security<00:04:44.560><c> world</c><00:04:44.710><c> and</c><00:04:44.949><c> it</c><00:04:45.400><c> in</c><00:04:45.550><c> turn</c><00:04:45.580><c> is</c>
+
+00:04:46.290 --> 00:04:46.300 align:start position:0%
+security world and it in turn is
+ 
+
+00:04:46.300 --> 00:04:48.600 align:start position:0%
+security world and it in turn is
+responsible<00:04:47.020><c> for</c><00:04:47.050><c> answering</c><00:04:47.500><c> requests</c><00:04:48.099><c> that</c>
+
+00:04:48.600 --> 00:04:48.610 align:start position:0%
+responsible for answering requests that
+ 
+
+00:04:48.610 --> 00:04:51.180 align:start position:0%
+responsible for answering requests that
+are<00:04:49.289><c> you</c><00:04:50.289><c> know</c><00:04:50.380><c> authentication</c><00:04:50.919><c> requests</c>
+
+00:04:51.180 --> 00:04:51.190 align:start position:0%
+are you know authentication requests
+ 
+
+00:04:51.190 --> 00:04:51.660 align:start position:0%
+are you know authentication requests
+that<00:04:51.250><c> are</c><00:04:51.310><c> done</c>
+
+00:04:51.660 --> 00:04:51.670 align:start position:0%
+that are done
+ 
+
+00:04:51.670 --> 00:04:54.030 align:start position:0%
+that are done
+terms<00:04:51.790><c> of</c><00:04:51.880><c> use</c><00:04:52.120><c> names</c><00:04:52.630><c> and</c><00:04:52.780><c> passwords</c><00:04:52.960><c> so</c><00:04:53.380><c> we</c>
+
+00:04:54.030 --> 00:04:54.040 align:start position:0%
+terms of use names and passwords so we
+ 
+
+00:04:54.040 --> 00:04:57.630 align:start position:0%
+terms of use names and passwords so we
+can<00:04:54.220><c> provide</c><00:04:54.730><c> a</c><00:04:54.790><c> very</c><00:04:55.030><c> simple</c><00:04:56.640><c> reactive</c>
+
+00:04:57.630 --> 00:04:57.640 align:start position:0%
+can provide a very simple reactive
+ 
+
+00:04:57.640 --> 00:05:00.530 align:start position:0%
+can provide a very simple reactive
+friendly<00:04:58.390><c> user</c><00:04:59.050><c> details</c><00:04:59.290><c> repository</c><00:05:00.100><c> here</c>
+
+00:05:00.530 --> 00:05:00.540 align:start position:0%
+friendly user details repository here
+ 
+
+00:05:00.540 --> 00:05:03.810 align:start position:0%
+friendly user details repository here
+that<00:05:01.540><c> has</c><00:05:01.660><c> just</c><00:05:01.840><c> a</c><00:05:01.930><c> few</c><00:05:02.110><c> inbuilt</c><00:05:02.770><c> users</c><00:05:03.520><c> and</c>
+
+00:05:03.810 --> 00:05:03.820 align:start position:0%
+that has just a few inbuilt users and
+ 
+
+00:05:03.820 --> 00:05:05.820 align:start position:0%
+that has just a few inbuilt users and
+passwords<00:05:03.970><c> right</c><00:05:04.420><c> and</c><00:05:04.630><c> we</c><00:05:05.380><c> can</c><00:05:05.530><c> configure</c>
+
+00:05:05.820 --> 00:05:05.830 align:start position:0%
+passwords right and we can configure
+ 
+
+00:05:05.830 --> 00:05:07.110 align:start position:0%
+passwords right and we can configure
+this<00:05:06.040><c> using</c><00:05:06.280><c> the</c><00:05:06.370><c> map</c><00:05:06.580><c> user</c><00:05:06.880><c> details</c>
+
+00:05:07.110 --> 00:05:07.120 align:start position:0%
+this using the map user details
+ 
+
+00:05:07.120 --> 00:05:09.180 align:start position:0%
+this using the map user details
+repository<00:05:07.690><c> we're</c><00:05:07.840><c> not</c><00:05:07.960><c> talking</c><00:05:08.350><c> to</c><00:05:08.770><c> a</c><00:05:08.800><c> proper</c>
+
+00:05:09.180 --> 00:05:09.190 align:start position:0%
+repository we're not talking to a proper
+ 
+
+00:05:09.190 --> 00:05:11.160 align:start position:0%
+repository we're not talking to a proper
+identity<00:05:09.880><c> provider</c><00:05:10.210><c> here</c><00:05:10.420><c> nothing</c><00:05:10.690><c> like</c><00:05:10.810><c> LDAP</c>
+
+00:05:11.160 --> 00:05:11.170 align:start position:0%
+identity provider here nothing like LDAP
+ 
+
+00:05:11.170 --> 00:05:12.690 align:start position:0%
+identity provider here nothing like LDAP
+or<00:05:11.380><c> Active</c><00:05:11.410><c> Directory</c><00:05:12.040><c> or</c><00:05:12.310><c> something</c><00:05:12.580><c> like</c>
+
+00:05:12.690 --> 00:05:12.700 align:start position:0%
+or Active Directory or something like
+ 
+
+00:05:12.700 --> 00:05:15.060 align:start position:0%
+or Active Directory or something like
+that<00:05:12.850><c> for</c><00:05:13.690><c> now</c><00:05:13.870><c> because</c><00:05:14.140><c> we</c><00:05:14.710><c> just</c><00:05:14.830><c> want</c><00:05:15.010><c> to</c>
+
+00:05:15.060 --> 00:05:15.070 align:start position:0%
+that for now because we just want to
+ 
+
+00:05:15.070 --> 00:05:16.740 align:start position:0%
+that for now because we just want to
+demonstrate<00:05:15.160><c> what</c><00:05:15.910><c> it</c><00:05:15.940><c> looks</c><00:05:16.150><c> like</c><00:05:16.300><c> to</c><00:05:16.480><c> to</c>
+
+00:05:16.740 --> 00:05:16.750 align:start position:0%
+demonstrate what it looks like to to
+ 
+
+00:05:16.750 --> 00:05:18.390 align:start position:0%
+demonstrate what it looks like to to
+make<00:05:16.840><c> this</c><00:05:16.960><c> work</c><00:05:17.140><c> behind</c><00:05:17.620><c> the</c><00:05:17.710><c> suite</c><00:05:17.950><c> behind</c>
+
+00:05:18.390 --> 00:05:18.400 align:start position:0%
+make this work behind the suite behind
+ 
+
+00:05:18.400 --> 00:05:19.410 align:start position:0%
+make this work behind the suite behind
+the<00:05:18.460><c> scene</c><00:05:18.580><c> Springs</c><00:05:18.910><c> Security's</c><00:05:19.300><c> gonna</c>
+
+00:05:19.410 --> 00:05:19.420 align:start position:0%
+the scene Springs Security's gonna
+ 
+
+00:05:19.420 --> 00:05:21.300 align:start position:0%
+the scene Springs Security's gonna
+create<00:05:19.570><c> an</c><00:05:19.720><c> authentication</c><00:05:19.990><c> manager</c><00:05:20.530><c> for</c><00:05:21.130><c> you</c>
+
+00:05:21.300 --> 00:05:21.310 align:start position:0%
+create an authentication manager for you
+ 
+
+00:05:21.310 --> 00:05:23.640 align:start position:0%
+create an authentication manager for you
+that<00:05:21.880><c> uses</c><00:05:22.420><c> this</c><00:05:22.540><c> user</c><00:05:22.810><c> details</c><00:05:23.020><c> repository</c>
+
+00:05:23.640 --> 00:05:23.650 align:start position:0%
+that uses this user details repository
+ 
+
+00:05:23.650 --> 00:05:24.540 align:start position:0%
+that uses this user details repository
+so<00:05:23.710><c> we</c><00:05:23.800><c> don't</c><00:05:23.920><c> have</c><00:05:24.040><c> to</c><00:05:24.100><c> do</c><00:05:24.190><c> any</c><00:05:24.400><c> of</c><00:05:24.520><c> that</c>
+
+00:05:24.540 --> 00:05:24.550 align:start position:0%
+so we don't have to do any of that
+ 
+
+00:05:24.550 --> 00:05:27.090 align:start position:0%
+so we don't have to do any of that
+wiring<00:05:25.060><c> if</c><00:05:25.270><c> we</c><00:05:25.720><c> don't</c><00:05:25.870><c> want</c><00:05:26.050><c> to</c><00:05:26.230><c> now</c><00:05:26.800><c> we</c><00:05:26.860><c> need</c><00:05:27.040><c> a</c>
+
+00:05:27.090 --> 00:05:27.100 align:start position:0%
+wiring if we don't want to now we need a
+ 
+
+00:05:27.100 --> 00:05:28.560 align:start position:0%
+wiring if we don't want to now we need a
+few<00:05:27.250><c> years</c><00:05:27.460><c> users</c><00:05:27.880><c> of</c><00:05:28.030><c> course</c><00:05:28.240><c> so</c><00:05:28.360><c> let's</c>
+
+00:05:28.560 --> 00:05:28.570 align:start position:0%
+few years users of course so let's
+ 
+
+00:05:28.570 --> 00:05:30.870 align:start position:0%
+few years users of course so let's
+create<00:05:28.750><c> a</c><00:05:28.840><c> username</c><00:05:29.110><c> forge</c><00:05:30.070><c> a</c><00:05:30.160><c> long</c><00:05:30.370><c> a</c><00:05:30.640><c> user</c>
+
+00:05:30.870 --> 00:05:30.880 align:start position:0%
+create a username forge a long a user
+ 
+
+00:05:30.880 --> 00:05:33.270 align:start position:0%
+create a username forge a long a user
+forge<00:05:31.150><c> a</c><00:05:31.210><c> long</c><00:05:31.390><c> the</c><00:05:32.290><c> role</c><00:05:32.500><c> of</c><00:05:32.710><c> course</c><00:05:32.950><c> is</c><00:05:33.100><c> just</c>
+
+00:05:33.270 --> 00:05:33.280 align:start position:0%
+forge a long the role of course is just
+ 
+
+00:05:33.280 --> 00:05:35.280 align:start position:0%
+forge a long the role of course is just
+user<00:05:33.580><c> and</c><00:05:34.090><c> the</c><00:05:34.240><c> password</c><00:05:34.270><c> of</c><00:05:34.840><c> course</c><00:05:35.080><c> is</c>
+
+00:05:35.280 --> 00:05:35.290 align:start position:0%
+user and the password of course is
+ 
+
+00:05:35.290 --> 00:05:37.500 align:start position:0%
+user and the password of course is
+password<00:05:36.100><c> because</c><00:05:36.700><c> of</c><00:05:36.910><c> course</c><00:05:37.120><c> it</c><00:05:37.210><c> is</c><00:05:37.330><c> right</c>
+
+00:05:37.500 --> 00:05:37.510 align:start position:0%
+password because of course it is right
+ 
+
+00:05:37.510 --> 00:05:40.080 align:start position:0%
+password because of course it is right
+so<00:05:37.840><c> there's</c><00:05:38.020><c> that</c><00:05:38.230><c> and</c><00:05:38.580><c> we'll</c><00:05:39.580><c> create</c><00:05:39.760><c> the</c>
+
+00:05:40.080 --> 00:05:40.090 align:start position:0%
+so there's that and we'll create the
+ 
+
+00:05:40.090 --> 00:05:42.150 align:start position:0%
+so there's that and we'll create the
+jail<00:05:40.630><c> on</c><00:05:40.780><c> user</c><00:05:41.080><c> and</c><00:05:41.440><c> I'll</c><00:05:41.500><c> just</c><00:05:41.680><c> duplicate</c>
+
+00:05:42.150 --> 00:05:42.160 align:start position:0%
+jail on user and I'll just duplicate
+ 
+
+00:05:42.160 --> 00:05:44.760 align:start position:0%
+jail on user and I'll just duplicate
+this<00:05:42.310><c> to</c><00:05:43.000><c> create</c><00:05:43.240><c> our</c><00:05:43.480><c> winches</c><00:05:44.170><c> user</c><00:05:44.410><c> and</c><00:05:44.650><c> our</c>
+
+00:05:44.760 --> 00:05:44.770 align:start position:0%
+this to create our winches user and our
+ 
+
+00:05:44.770 --> 00:05:47.010 align:start position:0%
+this to create our winches user and our
+winch<00:05:44.980><c> of</c><00:05:45.100><c> course</c><00:05:45.310><c> is</c><00:05:45.460><c> Rob</c><00:05:45.670><c> winch</c><00:05:45.970><c> the</c><00:05:46.600><c> lead</c><00:05:46.810><c> of</c>
+
+00:05:47.010 --> 00:05:47.020 align:start position:0%
+winch of course is Rob winch the lead of
+ 
+
+00:05:47.020 --> 00:05:50.430 align:start position:0%
+winch of course is Rob winch the lead of
+the<00:05:47.110><c> spring</c><00:05:47.320><c> security</c><00:05:47.740><c> project</c><00:05:49.140><c> and</c><00:05:50.140><c> I'm</c><00:05:50.230><c> sure</c>
+
+00:05:50.430 --> 00:05:50.440 align:start position:0%
+the spring security project and I'm sure
+ 
+
+00:05:50.440 --> 00:05:52.350 align:start position:0%
+the spring security project and I'm sure
+he<00:05:50.710><c> would</c><00:05:50.800><c> love</c><00:05:50.950><c> it</c><00:05:51.010><c> if</c><00:05:51.190><c> you</c><00:05:51.250><c> grab</c><00:05:52.000><c> the</c><00:05:52.180><c> bits</c>
+
+00:05:52.350 --> 00:05:52.360 align:start position:0%
+he would love it if you grab the bits
+ 
+
+00:05:52.360 --> 00:05:53.910 align:start position:0%
+he would love it if you grab the bits
+and<00:05:52.630><c> try</c><00:05:53.140><c> it</c><00:05:53.200><c> out</c><00:05:53.230><c> some</c><00:05:53.470><c> of</c><00:05:53.560><c> the</c><00:05:53.620><c> stuff</c><00:05:53.710><c> we're</c>
+
+00:05:53.910 --> 00:05:53.920 align:start position:0%
+and try it out some of the stuff we're
+ 
+
+00:05:53.920 --> 00:05:56.130 align:start position:0%
+and try it out some of the stuff we're
+talking<00:05:54.130><c> about</c><00:05:54.190><c> here</c><00:05:54.430><c> and</c><00:05:55.120><c> fed</c><00:05:55.480><c> back</c><00:05:55.720><c> so</c>
+
+00:05:56.130 --> 00:05:56.140 align:start position:0%
+talking about here and fed back so
+ 
+
+00:05:56.140 --> 00:05:58.710 align:start position:0%
+talking about here and fed back so
+please<00:05:56.560><c> do</c><00:05:56.740><c> so</c><00:05:57.040><c> jail</c><00:05:57.310><c> on</c><00:05:57.490><c> our</c><00:05:58.060><c> winch</c><00:05:58.390><c> those</c><00:05:58.570><c> are</c>
+
+00:05:58.710 --> 00:05:58.720 align:start position:0%
+please do so jail on our winch those are
+ 
+
+00:05:58.720 --> 00:06:00.570 align:start position:0%
+please do so jail on our winch those are
+two<00:05:58.930><c> users</c><00:05:59.290><c> and</c><00:05:59.470><c> what</c><00:05:59.860><c> this</c><00:05:59.950><c> is</c><00:06:00.100><c> gonna</c><00:06:00.190><c> do</c><00:06:00.400><c> this</c>
+
+00:06:00.570 --> 00:06:00.580 align:start position:0%
+two users and what this is gonna do this
+ 
+
+00:06:00.580 --> 00:06:01.770 align:start position:0%
+two users and what this is gonna do this
+default<00:06:00.940><c> configuration</c><00:06:01.540><c> with</c><00:06:01.660><c> this</c>
+
+00:06:01.770 --> 00:06:01.780 align:start position:0%
+default configuration with this
+ 
+
+00:06:01.780 --> 00:06:03.750 align:start position:0%
+default configuration with this
+annotation<00:06:02.260><c> and</c><00:06:02.440><c> this</c><00:06:02.560><c> one</c><00:06:02.770><c> being</c><00:06:03.070><c> this</c><00:06:03.610><c> is</c>
+
+00:06:03.750 --> 00:06:03.760 align:start position:0%
+annotation and this one being this is
+ 
+
+00:06:03.760 --> 00:06:06.090 align:start position:0%
+annotation and this one being this is
+going<00:06:04.000><c> to</c><00:06:04.120><c> lock</c><00:06:04.330><c> down</c><00:06:04.620><c> everything</c><00:06:05.620><c> and</c>
+
+00:06:06.090 --> 00:06:06.100 align:start position:0%
+going to lock down everything and
+ 
+
+00:06:06.100 --> 00:06:08.070 align:start position:0%
+going to lock down everything and
+restrict<00:06:06.700><c> access</c><00:06:06.850><c> to</c><00:06:07.090><c> any</c><00:06:07.360><c> resources</c><00:06:07.900><c> no</c>
+
+00:06:08.070 --> 00:06:08.080 align:start position:0%
+restrict access to any resources no
+ 
+
+00:06:08.080 --> 00:06:09.980 align:start position:0%
+restrict access to any resources no
+matter<00:06:08.110><c> what</c><00:06:08.350><c> the</c><00:06:08.440><c> name</c><00:06:08.560><c> of</c><00:06:08.590><c> the</c><00:06:08.740><c> resource</c>
+
+00:06:09.980 --> 00:06:09.990 align:start position:0%
+matter what the name of the resource
+ 
+
+00:06:09.990 --> 00:06:12.690 align:start position:0%
+matter what the name of the resource
+assuming<00:06:10.990><c> that</c><00:06:11.170><c> request</c><00:06:11.770><c> is</c><00:06:11.950><c> authenticated</c>
+
+00:06:12.690 --> 00:06:12.700 align:start position:0%
+assuming that request is authenticated
+ 
+
+00:06:12.700 --> 00:06:14.600 align:start position:0%
+assuming that request is authenticated
+and<00:06:13.030><c> we</c><00:06:13.300><c> can</c><00:06:13.450><c> see</c><00:06:13.600><c> that</c><00:06:13.720><c> here</c><00:06:13.900><c> let's</c><00:06:14.110><c> just</c>
+
+00:06:14.600 --> 00:06:14.610 align:start position:0%
+and we can see that here let's just
+ 
+
+00:06:14.610 --> 00:06:17.880 align:start position:0%
+and we can see that here let's just
+restart<00:06:15.610><c> the</c><00:06:15.850><c> application</c><00:06:15.940><c> and</c><00:06:16.740><c> we'll</c><00:06:17.740><c> turn</c>
+
+00:06:17.880 --> 00:06:17.890 align:start position:0%
+restart the application and we'll turn
+ 
+
+00:06:17.890 --> 00:06:19.350 align:start position:0%
+restart the application and we'll turn
+on<00:06:18.010><c> verbose</c><00:06:18.310><c> logging</c><00:06:18.790><c> here</c><00:06:18.940><c> for</c><00:06:19.090><c> the</c><00:06:19.150><c> curl</c>
+
+00:06:19.350 --> 00:06:19.360 align:start position:0%
+on verbose logging here for the curl
+ 
+
+00:06:19.360 --> 00:06:21.120 align:start position:0%
+on verbose logging here for the curl
+call<00:06:19.600><c> and</c><00:06:20.080><c> you</c><00:06:20.170><c> can</c><00:06:20.290><c> see</c><00:06:20.410><c> it</c><00:06:20.500><c> says</c><00:06:20.620><c> 401</c>
+
+00:06:21.120 --> 00:06:21.130 align:start position:0%
+call and you can see it says 401
+ 
+
+00:06:21.130 --> 00:06:23.760 align:start position:0%
+call and you can see it says 401
+unauthorized<00:06:21.970><c> and</c><00:06:22.630><c> I</c><00:06:22.690><c> can</c><00:06:22.840><c> now</c><00:06:23.290><c> authorize</c>
+
+00:06:23.760 --> 00:06:23.770 align:start position:0%
+unauthorized and I can now authorize
+ 
+
+00:06:23.770 --> 00:06:25.380 align:start position:0%
+unauthorized and I can now authorize
+myself<00:06:24.160><c> by</c><00:06:24.310><c> saying</c><00:06:24.460><c> jail</c><00:06:24.730><c> on</c><00:06:24.910><c> call</c><00:06:25.240><c> and</c>
+
+00:06:25.380 --> 00:06:25.390 align:start position:0%
+myself by saying jail on call and
+ 
+
+00:06:25.390 --> 00:06:26.790 align:start position:0%
+myself by saying jail on call and
+password<00:06:25.780><c> that's</c><00:06:25.990><c> my</c><00:06:26.080><c> username</c><00:06:26.230><c> and</c><00:06:26.500><c> password</c>
+
+00:06:26.790 --> 00:06:26.800 align:start position:0%
+password that's my username and password
+ 
+
+00:06:26.800 --> 00:06:29.250 align:start position:0%
+password that's my username and password
+there's<00:06:27.190><c> the</c><00:06:27.400><c> message</c><00:06:27.550><c> however</c><00:06:28.390><c> impersonal</c>
+
+00:06:29.250 --> 00:06:29.260 align:start position:0%
+there's the message however impersonal
+ 
+
+00:06:29.260 --> 00:06:31.230 align:start position:0%
+there's the message however impersonal
+so<00:06:29.500><c> let's</c><00:06:29.680><c> now</c><00:06:30.220><c> personalize</c><00:06:31.030><c> the</c><00:06:31.210><c> message</c>
+
+00:06:31.230 --> 00:06:31.240 align:start position:0%
+so let's now personalize the message
+ 
+
+00:06:31.240 --> 00:06:32.900 align:start position:0%
+so let's now personalize the message
+we'll<00:06:31.630><c> take</c><00:06:31.810><c> this</c><00:06:31.930><c> a</c><00:06:31.990><c> bit</c><00:06:32.170><c> further</c><00:06:32.410><c> will</c><00:06:32.620><c> say</c>
+
+00:06:32.900 --> 00:06:32.910 align:start position:0%
+we'll take this a bit further will say
+ 
+
+00:06:32.910 --> 00:06:40.040 align:start position:0%
+we'll take this a bit further will say
+server<00:06:33.910><c> request</c><00:06:34.360><c> dot</c><00:06:35.290><c> principal</c><00:06:36.060><c> P</c><00:06:38.130><c> hello</c>
+
+00:06:40.040 --> 00:06:40.050 align:start position:0%
+server request dot principal P hello
+ 
+
+00:06:40.050 --> 00:06:41.340 align:start position:0%
+server request dot principal P hello
+Pete
+
+00:06:41.340 --> 00:06:41.350 align:start position:0%
+Pete
+ 
+
+00:06:41.350 --> 00:06:48.890 align:start position:0%
+Pete
+name<00:06:42.010><c> right</c><00:06:42.400><c> so</c><00:06:43.020><c> P</c><00:06:44.020><c> dot</c><00:06:44.410><c> o</c><00:06:46.020><c> principal</c>
+
+00:06:48.890 --> 00:06:48.900 align:start position:0%
+name right so P dot o principal
+ 
+
+00:06:48.900 --> 00:06:54.080 align:start position:0%
+name right so P dot o principal
+that<00:06:49.680><c> map</c><00:06:50.600><c> p</c><00:06:51.600><c> dot</c><00:06:51.840><c> get</c><00:06:52.350><c> name</c><00:06:53.090><c> extra</c>
+
+00:06:54.080 --> 00:06:54.090 align:start position:0%
+that map p dot get name extra
+ 
+
+00:06:54.090 --> 00:06:56.020 align:start position:0%
+that map p dot get name extra
+exclamation<00:06:54.630><c> marks</c><00:06:54.810><c> right</c><00:06:54.960><c> so</c><00:06:55.229><c> there's</c><00:06:55.410><c> this</c>
+
+00:06:56.020 --> 00:06:56.030 align:start position:0%
+exclamation marks right so there's this
+ 
+
+00:06:56.030 --> 00:07:03.050 align:start position:0%
+exclamation marks right so there's this
+and<00:06:58.820><c> we'll</c><00:06:59.820><c> save</c><00:07:00.030><c> principal</c><00:07:00.800><c> publisher</c><00:07:02.060><c> okay</c>
+
+00:07:03.050 --> 00:07:03.060 align:start position:0%
+and we'll save principal publisher okay
+ 
+
+00:07:03.060 --> 00:07:04.640 align:start position:0%
+and we'll save principal publisher okay
+so<00:07:03.570><c> I'm</c><00:07:03.630><c> gonna</c><00:07:03.720><c> use</c><00:07:03.900><c> that</c><00:07:03.930><c> principal</c>
+
+00:07:04.640 --> 00:07:04.650 align:start position:0%
+so I'm gonna use that principal
+ 
+
+00:07:04.650 --> 00:07:06.050 align:start position:0%
+so I'm gonna use that principal
+publisher<00:07:04.979><c> instead</c><00:07:05.220><c> of</c><00:07:05.310><c> the</c><00:07:05.400><c> default</c><00:07:05.880><c> one</c>
+
+00:07:06.050 --> 00:07:06.060 align:start position:0%
+publisher instead of the default one
+ 
+
+00:07:06.060 --> 00:07:07.879 align:start position:0%
+publisher instead of the default one
+that<00:07:06.210><c> we've</c><00:07:06.300><c> just</c><00:07:06.330><c> provided</c><00:07:06.780><c> before</c><00:07:07.020><c> but</c><00:07:07.770><c> the</c>
+
+00:07:07.879 --> 00:07:07.889 align:start position:0%
+that we've just provided before but the
+ 
+
+00:07:07.889 --> 00:07:09.710 align:start position:0%
+that we've just provided before but the
+results<00:07:08.220><c> should</c><00:07:08.280><c> basically</c><00:07:08.759><c> what</c><00:07:09.330><c> we</c><00:07:09.389><c> expect</c>
+
+00:07:09.710 --> 00:07:09.720 align:start position:0%
+results should basically what we expect
+ 
+
+00:07:09.720 --> 00:07:12.170 align:start position:0%
+results should basically what we expect
+so<00:07:09.840><c> let's</c><00:07:09.990><c> go</c><00:07:10.050><c> ahead</c><00:07:10.199><c> and</c><00:07:10.320><c> restart</c><00:07:10.560><c> this</c><00:07:11.180><c> see</c>
+
+00:07:12.170 --> 00:07:12.180 align:start position:0%
+so let's go ahead and restart this see
+ 
+
+00:07:12.180 --> 00:07:14.540 align:start position:0%
+so let's go ahead and restart this see
+the<00:07:12.270><c> results</c><00:07:12.600><c> so</c><00:07:13.500><c> if</c><00:07:13.590><c> I</c><00:07:13.650><c> make</c><00:07:13.800><c> them</c><00:07:13.889><c> make</c><00:07:14.460><c> the</c>
+
+00:07:14.540 --> 00:07:14.550 align:start position:0%
+the results so if I make them make the
+ 
+
+00:07:14.550 --> 00:07:15.170 align:start position:0%
+the results so if I make them make the
+call<00:07:14.729><c> now</c>
+
+00:07:15.170 --> 00:07:15.180 align:start position:0%
+call now
+ 
+
+00:07:15.180 --> 00:07:16.700 align:start position:0%
+call now
+it<00:07:15.240><c> says</c><00:07:15.509><c> hello</c><00:07:15.750><c> jail</c><00:07:16.050><c> all</c><00:07:16.199><c> right</c><00:07:16.470><c> there's</c><00:07:16.650><c> the</c>
+
+00:07:16.700 --> 00:07:16.710 align:start position:0%
+it says hello jail all right there's the
+ 
+
+00:07:16.710 --> 00:07:19.040 align:start position:0%
+it says hello jail all right there's the
+respawn<00:07:17.610><c> Stan</c><00:07:17.850><c> there</c><00:07:18.000><c> and</c><00:07:18.720><c> that's</c><00:07:18.870><c> working</c>
+
+00:07:19.040 --> 00:07:19.050 align:start position:0%
+respawn Stan there and that's working
+ 
+
+00:07:19.050 --> 00:07:20.689 align:start position:0%
+respawn Stan there and that's working
+that's<00:07:19.289><c> working</c><00:07:19.560><c> as</c><00:07:19.650><c> we</c><00:07:19.770><c> expect</c><00:07:20.130><c> if</c><00:07:20.460><c> I</c>
+
+00:07:20.689 --> 00:07:20.699 align:start position:0%
+that's working as we expect if I
+ 
+
+00:07:20.699 --> 00:07:26.350 align:start position:0%
+that's working as we expect if I
+authenticate<00:07:21.660><c> as</c><00:07:22.080><c> our</c><00:07:22.410><c> Lynch</c><00:07:23.330><c> our</c><00:07:24.860><c> winch</c><00:07:25.860><c> I</c>
+
+00:07:26.350 --> 00:07:26.360 align:start position:0%
+authenticate as our Lynch our winch I
+ 
+
+00:07:26.360 --> 00:07:28.760 align:start position:0%
+authenticate as our Lynch our winch I
+get<00:07:27.360><c> a</c><00:07:27.389><c> hello</c><00:07:27.720><c> our</c><00:07:27.900><c> winch</c><00:07:28.080><c> so</c><00:07:28.229><c> it's</c><00:07:28.500><c> clearly</c>
+
+00:07:28.760 --> 00:07:28.770 align:start position:0%
+get a hello our winch so it's clearly
+ 
+
+00:07:28.770 --> 00:07:33.050 align:start position:0%
+get a hello our winch so it's clearly
+aware<00:07:29.220><c> of</c><00:07:29.430><c> the</c><00:07:29.729><c> of</c><00:07:30.090><c> the</c><00:07:30.600><c> the</c><00:07:31.880><c> other</c><00:07:32.880><c> thing</c><00:07:33.000><c> to</c>
+
+00:07:33.050 --> 00:07:33.060 align:start position:0%
+aware of the of the the other thing to
+ 
+
+00:07:33.060 --> 00:07:34.700 align:start position:0%
+aware of the of the the other thing to
+get<00:07:33.150><c> principal</c><00:07:33.479><c> now</c><00:07:34.050><c> we</c><00:07:34.110><c> can</c><00:07:34.320><c> do</c><00:07:34.440><c> something</c><00:07:34.680><c> a</c>
+
+00:07:34.700 --> 00:07:34.710 align:start position:0%
+get principal now we can do something a
+ 
+
+00:07:34.710 --> 00:07:35.719 align:start position:0%
+get principal now we can do something a
+little<00:07:34.800><c> more</c><00:07:34.919><c> interesting</c><00:07:35.340><c> now</c><00:07:35.430><c> we</c><00:07:35.520><c> can</c><00:07:35.639><c> look</c>
+
+00:07:35.719 --> 00:07:35.729 align:start position:0%
+little more interesting now we can look
+ 
+
+00:07:35.729 --> 00:07:38.210 align:start position:0%
+little more interesting now we can look
+at<00:07:35.880><c> authorization</c><00:07:36.660><c> right</c><00:07:36.930><c> and</c><00:07:37.530><c> in</c><00:07:38.039><c> so</c><00:07:38.190><c> doing</c>
+
+00:07:38.210 --> 00:07:38.220 align:start position:0%
+at authorization right and in so doing
+ 
+
+00:07:38.220 --> 00:07:42.080 align:start position:0%
+at authorization right and in so doing
+we<00:07:38.639><c> have</c><00:07:38.880><c> to</c><00:07:40.099><c> prescribe</c><00:07:41.099><c> the</c><00:07:41.760><c> default</c>
+
+00:07:42.080 --> 00:07:42.090 align:start position:0%
+we have to prescribe the default
+ 
+
+00:07:42.090 --> 00:07:44.480 align:start position:0%
+we have to prescribe the default
+authorization<00:07:43.020><c> for</c><00:07:43.740><c> all</c><00:07:44.010><c> the</c><00:07:44.220><c> other</c><00:07:44.340><c> end</c>
+
+00:07:44.480 --> 00:07:44.490 align:start position:0%
+authorization for all the other end
+ 
+
+00:07:44.490 --> 00:07:46.879 align:start position:0%
+authorization for all the other end
+points<00:07:44.729><c> that</c><00:07:45.510><c> right</c><00:07:45.900><c> now</c><00:07:46.080><c> spring</c><00:07:46.470><c> security</c><00:07:46.830><c> is</c>
+
+00:07:46.879 --> 00:07:46.889 align:start position:0%
+points that right now spring security is
+ 
+
+00:07:46.889 --> 00:07:49.159 align:start position:0%
+points that right now spring security is
+doing<00:07:47.070><c> for</c><00:07:47.340><c> us</c><00:07:47.490><c> right</c><00:07:47.789><c> so</c><00:07:48.210><c> the</c><00:07:48.990><c> default</c>
+
+00:07:49.159 --> 00:07:49.169 align:start position:0%
+doing for us right so the default
+ 
+
+00:07:49.169 --> 00:07:50.480 align:start position:0%
+doing for us right so the default
+behavior<00:07:49.349><c> here</c><00:07:49.710><c> is</c><00:07:49.770><c> that</c><00:07:49.860><c> if</c><00:07:49.979><c> we</c><00:07:50.070><c> just</c><00:07:50.130><c> do</c>
+
+00:07:50.480 --> 00:07:50.490 align:start position:0%
+behavior here is that if we just do
+ 
+
+00:07:50.490 --> 00:07:51.980 align:start position:0%
+behavior here is that if we just do
+authentication<00:07:50.880><c> and</c><00:07:51.270><c> we</c><00:07:51.330><c> don't</c><00:07:51.479><c> provide</c><00:07:51.690><c> any</c>
+
+00:07:51.980 --> 00:07:51.990 align:start position:0%
+authentication and we don't provide any
+ 
+
+00:07:51.990 --> 00:07:53.900 align:start position:0%
+authentication and we don't provide any
+any<00:07:52.530><c> ideas</c><00:07:53.160><c> as</c><00:07:53.280><c> to</c><00:07:53.340><c> how</c><00:07:53.460><c> it</c><00:07:53.669><c> should</c><00:07:53.699><c> do</c>
+
+00:07:53.900 --> 00:07:53.910 align:start position:0%
+any ideas as to how it should do
+ 
+
+00:07:53.910 --> 00:07:55.850 align:start position:0%
+any ideas as to how it should do
+authorization<00:07:54.570><c> it'll</c><00:07:55.080><c> just</c><00:07:55.110><c> lock</c><00:07:55.680><c> down</c>
+
+00:07:55.850 --> 00:07:55.860 align:start position:0%
+authorization it'll just lock down
+ 
+
+00:07:55.860 --> 00:07:57.290 align:start position:0%
+authorization it'll just lock down
+everything<00:07:56.250><c> we</c><00:07:56.699><c> can</c><00:07:56.820><c> be</c><00:07:56.940><c> a</c><00:07:56.970><c> little</c><00:07:57.210><c> more</c>
+
+00:07:57.290 --> 00:07:57.300 align:start position:0%
+everything we can be a little more
+ 
+
+00:07:57.300 --> 00:07:59.629 align:start position:0%
+everything we can be a little more
+specific<00:07:57.510><c> but</c><00:07:57.900><c> we</c><00:07:57.990><c> have</c><00:07:58.110><c> to</c><00:07:58.229><c> now</c><00:07:58.620><c> make</c><00:07:59.370><c> sure</c><00:07:59.400><c> to</c>
+
+00:07:59.629 --> 00:07:59.639 align:start position:0%
+specific but we have to now make sure to
+ 
+
+00:07:59.639 --> 00:08:01.520 align:start position:0%
+specific but we have to now make sure to
+cover<00:07:59.849><c> the</c><00:07:59.970><c> ground</c><00:08:00.270><c> that</c><00:08:00.510><c> we</c><00:08:00.599><c> gained</c><00:08:00.870><c> that</c><00:08:01.470><c> we</c>
+
+00:08:01.520 --> 00:08:01.530 align:start position:0%
+cover the ground that we gained that we
+ 
+
+00:08:01.530 --> 00:08:03.920 align:start position:0%
+cover the ground that we gained that we
+that<00:08:01.889><c> we</c><00:08:01.919><c> gain</c><00:08:02.160><c> by</c><00:08:02.190><c> not</c><00:08:02.780><c> specifying</c><00:08:03.780><c> this</c>
+
+00:08:03.920 --> 00:08:03.930 align:start position:0%
+that we gain by not specifying this
+ 
+
+00:08:03.930 --> 00:08:07.159 align:start position:0%
+that we gain by not specifying this
+manually<00:08:04.680><c> we</c><00:08:05.130><c> we</c><00:08:05.490><c> have</c><00:08:05.610><c> to</c><00:08:05.729><c> read</c><00:08:05.940><c> we</c><00:08:06.330><c> claim</c>
+
+00:08:07.159 --> 00:08:07.169 align:start position:0%
+manually we we have to read we claim
+ 
+
+00:08:07.169 --> 00:08:09.170 align:start position:0%
+manually we we have to read we claim
+that<00:08:07.380><c> that</c><00:08:07.740><c> ground</c><00:08:08.070><c> because</c><00:08:08.430><c> uh</c><00:08:08.460><c> once</c><00:08:09.090><c> we</c>
+
+00:08:09.170 --> 00:08:09.180 align:start position:0%
+that that ground because uh once we
+ 
+
+00:08:09.180 --> 00:08:12.710 align:start position:0%
+that that ground because uh once we
+exert<00:08:09.810><c> some</c><00:08:10.020><c> control</c><00:08:10.050><c> over</c><00:08:10.349><c> one</c><00:08:11.210><c> one</c><00:08:12.210><c> route</c>
+
+00:08:12.710 --> 00:08:12.720 align:start position:0%
+exert some control over one one route
+ 
+
+00:08:12.720 --> 00:08:14.750 align:start position:0%
+exert some control over one one route
+one<00:08:13.020><c> end</c><00:08:13.199><c> point</c><00:08:13.260><c> spring</c><00:08:14.190><c> Security's</c><00:08:14.550><c> going</c><00:08:14.669><c> to</c>
+
+00:08:14.750 --> 00:08:14.760 align:start position:0%
+one end point spring Security's going to
+ 
+
+00:08:14.760 --> 00:08:17.990 align:start position:0%
+one end point spring Security's going to
+expect<00:08:15.060><c> us</c><00:08:15.180><c> to</c><00:08:15.360><c> provide</c><00:08:16.340><c> authorization</c><00:08:17.340><c> for</c>
+
+00:08:17.990 --> 00:08:18.000 align:start position:0%
+expect us to provide authorization for
+ 
+
+00:08:18.000 --> 00:08:19.339 align:start position:0%
+expect us to provide authorization for
+all<00:08:18.180><c> of</c><00:08:18.330><c> it</c><00:08:18.449><c> right</c><00:08:18.630><c> for</c><00:08:18.750><c> all</c><00:08:18.870><c> the</c><00:08:19.020><c> end</c><00:08:19.139><c> points</c>
+
+00:08:19.339 --> 00:08:19.349 align:start position:0%
+all of it right for all the end points
+ 
+
+00:08:19.349 --> 00:08:20.810 align:start position:0%
+all of it right for all the end points
+otherwise<00:08:19.590><c> it'll</c><00:08:19.770><c> just</c><00:08:19.830><c> leave</c><00:08:20.039><c> it</c><00:08:20.159><c> as</c><00:08:20.550><c> default</c>
+
+00:08:20.810 --> 00:08:20.820 align:start position:0%
+otherwise it'll just leave it as default
+ 
+
+00:08:20.820 --> 00:08:24.890 align:start position:0%
+otherwise it'll just leave it as default
+so<00:08:21.060><c> let's</c><00:08:22.020><c> create</c><00:08:22.289><c> a</c><00:08:22.440><c> beam</c><00:08:22.620><c> here</c><00:08:22.650><c> a</c><00:08:23.900><c> security</c>
+
+00:08:24.890 --> 00:08:24.900 align:start position:0%
+so let's create a beam here a security
+ 
+
+00:08:24.900 --> 00:08:26.149 align:start position:0%
+so let's create a beam here a security
+web<00:08:25.050><c> filter</c><00:08:25.349><c> chain</c><00:08:25.560><c> we're</c><00:08:25.770><c> just</c><00:08:25.889><c> gonna</c><00:08:25.979><c> call</c>
+
+00:08:26.149 --> 00:08:26.159 align:start position:0%
+web filter chain we're just gonna call
+ 
+
+00:08:26.159 --> 00:08:27.830 align:start position:0%
+web filter chain we're just gonna call
+this<00:08:26.280><c> the</c><00:08:26.460><c> security</c><00:08:26.760><c> endpoint</c><00:08:27.630><c> I'm</c><00:08:27.720><c> gonna</c>
+
+00:08:27.830 --> 00:08:27.840 align:start position:0%
+this the security endpoint I'm gonna
+ 
+
+00:08:27.840 --> 00:08:30.379 align:start position:0%
+this the security endpoint I'm gonna
+inject<00:08:28.199><c> the</c><00:08:28.349><c> spring</c><00:08:28.560><c> security</c><00:08:29.039><c> HTTP</c><00:08:29.940><c> security</c>
+
+00:08:30.379 --> 00:08:30.389 align:start position:0%
+inject the spring security HTTP security
+ 
+
+00:08:30.389 --> 00:08:33.709 align:start position:0%
+inject the spring security HTTP security
+DSL<00:08:30.810><c> there</c><00:08:31.020><c> and</c><00:08:31.279><c> we'll</c><00:08:32.279><c> say</c><00:08:32.490><c> build</c><00:08:33.300><c> there's</c>
+
+00:08:33.709 --> 00:08:33.719 align:start position:0%
+DSL there and we'll say build there's
+ 
+
+00:08:33.719 --> 00:08:35.719 align:start position:0%
+DSL there and we'll say build there's
+our<00:08:33.870><c> DSL</c><00:08:34.070><c> what</c><00:08:35.070><c> we're</c><00:08:35.159><c> gonna</c><00:08:35.250><c> say</c><00:08:35.490><c> is</c><00:08:35.610><c> we're</c>
+
+00:08:35.719 --> 00:08:35.729 align:start position:0%
+our DSL what we're gonna say is we're
+ 
+
+00:08:35.729 --> 00:08:38.630 align:start position:0%
+our DSL what we're gonna say is we're
+gonna<00:08:35.820><c> say</c><00:08:35.969><c> authorize</c><00:08:36.419><c> exchange</c><00:08:36.779><c> thought</c><00:08:37.640><c> any</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+gonna say authorize exchange thought any
+ 
+
+00:08:38.640 --> 00:08:44.380 align:start position:0%
+gonna say authorize exchange thought any
+exchange<00:08:39.240><c> is</c><00:08:40.140><c> authenticated</c><00:08:40.860><c> right</c><00:08:41.370><c> and</c>
+
+00:08:44.380 --> 00:08:44.390 align:start position:0%
+ 
+ 
+
+00:08:44.390 --> 00:08:47.570 align:start position:0%
+ 
+there<00:08:45.390><c> we</c><00:08:45.450><c> are</c><00:08:45.480><c> so</c><00:08:45.720><c> that's</c><00:08:45.750><c> our</c><00:08:46.050><c> first</c><00:08:46.620><c> bit</c><00:08:47.370><c> of</c>
+
+00:08:47.570 --> 00:08:47.580 align:start position:0%
+there we are so that's our first bit of
+ 
+
+00:08:47.580 --> 00:08:49.280 align:start position:0%
+there we are so that's our first bit of
+configuration<00:08:47.880><c> that</c><00:08:48.209><c> should</c><00:08:48.420><c> be</c><00:08:48.540><c> where</c><00:08:49.170><c> we</c>
+
+00:08:49.280 --> 00:08:49.290 align:start position:0%
+configuration that should be where we
+ 
+
+00:08:49.290 --> 00:08:50.510 align:start position:0%
+configuration that should be where we
+were<00:08:49.410><c> before</c><00:08:49.589><c> basically</c><00:08:50.010><c> it's</c><00:08:50.279><c> gonna</c><00:08:50.370><c> require</c>
+
+00:08:50.510 --> 00:08:50.520 align:start position:0%
+were before basically it's gonna require
+ 
+
+00:08:50.520 --> 00:08:52.280 align:start position:0%
+were before basically it's gonna require
+that<00:08:50.790><c> everything</c><00:08:51.029><c> be</c><00:08:51.150><c> authenticated</c><00:08:51.630><c> let's</c>
+
+00:08:52.280 --> 00:08:52.290 align:start position:0%
+that everything be authenticated let's
+ 
+
+00:08:52.290 --> 00:08:53.150 align:start position:0%
+that everything be authenticated let's
+see<00:08:52.500><c> if</c><00:08:52.589><c> that</c><00:08:52.740><c> works</c>
+
+00:08:53.150 --> 00:08:53.160 align:start position:0%
+see if that works
+ 
+
+00:08:53.160 --> 00:08:56.600 align:start position:0%
+see if that works
+okay<00:08:54.029><c> so</c><00:08:54.300><c> there's</c><00:08:55.260><c> hello</c><00:08:55.500><c> Rob</c><00:08:56.070><c> Lynch</c><00:08:56.279><c> but</c><00:08:56.490><c> if</c>
+
+00:08:56.600 --> 00:08:56.610 align:start position:0%
+okay so there's hello Rob Lynch but if
+ 
+
+00:08:56.610 --> 00:08:57.890 align:start position:0%
+okay so there's hello Rob Lynch but if
+we<00:08:56.730><c> tamper</c><00:08:57.270><c> with</c><00:08:57.390><c> a</c><00:08:57.420><c> password</c>
+
+00:08:57.890 --> 00:08:57.900 align:start position:0%
+we tamper with a password
+ 
+
+00:08:57.900 --> 00:08:59.329 align:start position:0%
+we tamper with a password
+it<00:08:58.320><c> doesn't</c><00:08:58.620><c> let's</c><00:08:58.800><c> go</c><00:08:58.980><c> through</c><00:08:59.190><c> its</c>
+
+00:08:59.329 --> 00:08:59.339 align:start position:0%
+it doesn't let's go through its
+ 
+
+00:08:59.339 --> 00:09:01.570 align:start position:0%
+it doesn't let's go through its
+unauthorized<00:08:59.880><c> that</c><00:09:00.390><c> would</c><00:09:00.540><c> seem</c><00:09:00.750><c> to</c>
+
+00:09:01.570 --> 00:09:01.580 align:start position:0%
+unauthorized that would seem to
+ 
+
+00:09:01.580 --> 00:09:02.800 align:start position:0%
+unauthorized that would seem to
+tell<00:09:01.730><c> us</c><00:09:01.850><c> that</c><00:09:01.970><c> everything's</c><00:09:02.240><c> working</c><00:09:02.300><c> as</c>
+
+00:09:02.800 --> 00:09:02.810 align:start position:0%
+tell us that everything's working as
+ 
+
+00:09:02.810 --> 00:09:06.760 align:start position:0%
+tell us that everything's working as
+before<00:09:03.260><c> so</c><00:09:03.980><c> hello</c><00:09:04.640><c> world</c><00:09:05.410><c> there</c><00:09:06.410><c> we</c><00:09:06.470><c> go</c>
+
+00:09:06.760 --> 00:09:06.770 align:start position:0%
+before so hello world there we go
+ 
+
+00:09:06.770 --> 00:09:11.730 align:start position:0%
+before so hello world there we go
+now<00:09:07.600><c> let's</c><00:09:08.600><c> create</c><00:09:08.780><c> a</c><00:09:08.930><c> new</c><00:09:09.050><c> endpoint</c><00:09:09.680><c> that</c>
+
+00:09:11.730 --> 00:09:11.740 align:start position:0%
+now let's create a new endpoint that
+ 
+
+00:09:11.740 --> 00:09:14.080 align:start position:0%
+now let's create a new endpoint that
+will<00:09:12.740><c> serve</c><00:09:13.010><c> up</c><00:09:13.190><c> the</c><00:09:13.310><c> information</c><00:09:13.490><c> and</c><00:09:13.850><c> serve</c>
+
+00:09:14.080 --> 00:09:14.090 align:start position:0%
+will serve up the information and serve
+ 
+
+00:09:14.090 --> 00:09:16.750 align:start position:0%
+will serve up the information and serve
+up<00:09:14.210><c> the</c><00:09:14.500><c> authentication</c><00:09:15.500><c> information</c><00:09:15.770><c> about</c>
+
+00:09:16.750 --> 00:09:16.760 align:start position:0%
+up the authentication information about
+ 
+
+00:09:16.760 --> 00:09:19.630 align:start position:0%
+up the authentication information about
+the<00:09:16.940><c> currently</c><00:09:17.300><c> authenticated</c><00:09:17.540><c> user</c><00:09:18.530><c> as</c><00:09:18.800><c> JSON</c>
+
+00:09:19.630 --> 00:09:19.640 align:start position:0%
+the currently authenticated user as JSON
+ 
+
+00:09:19.640 --> 00:09:22.870 align:start position:0%
+the currently authenticated user as JSON
+back<00:09:20.150><c> to</c><00:09:20.330><c> the</c><00:09:20.420><c> client</c><00:09:20.660><c> but</c><00:09:21.170><c> we</c><00:09:21.260><c> don't</c><00:09:21.410><c> want</c><00:09:21.880><c> you</c>
+
+00:09:22.870 --> 00:09:22.880 align:start position:0%
+back to the client but we don't want you
+ 
+
+00:09:22.880 --> 00:09:24.790 align:start position:0%
+back to the client but we don't want you
+know<00:09:22.940><c> the</c><00:09:23.120><c> client</c><00:09:23.660><c> to</c><00:09:23.900><c> be</c><00:09:23.990><c> able</c><00:09:24.050><c> to</c><00:09:24.200><c> talk</c><00:09:24.410><c> or</c><00:09:24.740><c> to</c>
+
+00:09:24.790 --> 00:09:24.800 align:start position:0%
+know the client to be able to talk or to
+ 
+
+00:09:24.800 --> 00:09:28.780 align:start position:0%
+know the client to be able to talk or to
+see<00:09:25.240><c> other</c><00:09:26.920><c> people's</c><00:09:27.920><c> information</c><00:09:28.130><c> right</c>
+
+00:09:28.780 --> 00:09:28.790 align:start position:0%
+see other people's information right
+ 
+
+00:09:28.790 --> 00:09:30.070 align:start position:0%
+see other people's information right
+we're<00:09:28.940><c> going</c><00:09:29.060><c> to</c><00:09:29.090><c> limit</c><00:09:29.270><c> the</c><00:09:29.510><c> access</c><00:09:29.660><c> to</c><00:09:29.960><c> other</c>
+
+00:09:30.070 --> 00:09:30.080 align:start position:0%
+we're going to limit the access to other
+ 
+
+00:09:30.080 --> 00:09:32.940 align:start position:0%
+we're going to limit the access to other
+principal<00:09:30.860><c> information</c><00:09:31.490><c> to</c><00:09:32.210><c> just</c><00:09:32.450><c> the</c>
+
+00:09:32.940 --> 00:09:32.950 align:start position:0%
+principal information to just the
+ 
+
+00:09:32.950 --> 00:09:35.710 align:start position:0%
+principal information to just the
+username<00:09:33.950><c> implied</c><00:09:34.820><c> by</c><00:09:35.000><c> the</c><00:09:35.060><c> authentication</c>
+
+00:09:35.710 --> 00:09:35.720 align:start position:0%
+username implied by the authentication
+ 
+
+00:09:35.720 --> 00:09:41.430 align:start position:0%
+username implied by the authentication
+so<00:09:35.870><c> let's</c><00:09:36.470><c> create</c><00:09:36.620><c> an</c><00:09:36.770><c> endpoint</c><00:09:36.950><c> here</c><00:09:38.080><c> that</c>
+
+00:09:41.430 --> 00:09:41.440 align:start position:0%
+ 
+ 
+
+00:09:41.440 --> 00:09:45.880 align:start position:0%
+ 
+says<00:09:42.440><c> get</c><00:09:43.330><c> forward</c><00:09:44.330><c> slash</c><00:09:44.540><c> users</c><00:09:45.350><c> forward</c>
+
+00:09:45.880 --> 00:09:45.890 align:start position:0%
+says get forward slash users forward
+ 
+
+00:09:45.890 --> 00:09:49.420 align:start position:0%
+says get forward slash users forward
+slash<00:09:46.070><c> username</c><00:09:47.030><c> right</c><00:09:47.270><c> and</c><00:09:48.190><c> here</c><00:09:49.190><c> again</c>
+
+00:09:49.420 --> 00:09:49.430 align:start position:0%
+slash username right and here again
+ 
+
+00:09:49.430 --> 00:09:52.750 align:start position:0%
+slash username right and here again
+we're<00:09:50.000><c> just</c><00:09:50.030><c> get</c><00:09:50.270><c> a</c><00:09:50.300><c> new</c><00:09:50.450><c> handler</c><00:09:50.750><c> like</c><00:09:51.740><c> so</c><00:09:51.950><c> and</c>
+
+00:09:52.750 --> 00:09:52.760 align:start position:0%
+we're just get a new handler like so and
+ 
+
+00:09:52.760 --> 00:09:54.760 align:start position:0%
+we're just get a new handler like so and
+I'll<00:09:53.720><c> say</c><00:09:53.930><c> that</c><00:09:54.290><c> this</c><00:09:54.440><c> handler</c><00:09:54.650><c> is</c><00:09:54.740><c> called</c>
+
+00:09:54.760 --> 00:09:54.770 align:start position:0%
+I'll say that this handler is called
+ 
+
+00:09:54.770 --> 00:09:58.150 align:start position:0%
+I'll say that this handler is called
+username<00:09:55.190><c> and</c><00:09:55.900><c> all</c><00:09:56.900><c> we're</c><00:09:57.290><c> gonna</c><00:09:57.380><c> do</c><00:09:57.620><c> in</c><00:09:57.860><c> this</c>
+
+00:09:58.150 --> 00:09:58.160 align:start position:0%
+username and all we're gonna do in this
+ 
+
+00:09:58.160 --> 00:10:05.170 align:start position:0%
+username and all we're gonna do in this
+handler<00:09:58.430><c> name</c><00:09:58.640><c> and</c><00:09:59.510><c> this</c><00:09:59.600><c> handler</c><00:10:02.200><c> it</c><00:10:03.200><c> is</c><00:10:04.180><c> we</c>
+
+00:10:05.170 --> 00:10:05.180 align:start position:0%
+handler name and this handler it is we
+ 
+
+00:10:05.180 --> 00:10:06.900 align:start position:0%
+handler name and this handler it is we
+turn<00:10:05.360><c> the</c><00:10:05.510><c> JSON</c><00:10:05.810><c> information</c><00:10:06.500><c> right</c><00:10:06.620><c> for</c><00:10:06.800><c> the</c>
+
+00:10:06.900 --> 00:10:06.910 align:start position:0%
+turn the JSON information right for the
+ 
+
+00:10:06.910 --> 00:10:09.460 align:start position:0%
+turn the JSON information right for the
+for<00:10:07.910><c> the</c><00:10:08.000><c> current</c><00:10:08.270><c> principal</c><00:10:08.570><c> so</c><00:10:08.900><c> the</c>
+
+00:10:09.460 --> 00:10:09.470 align:start position:0%
+for the current principal so the
+ 
+
+00:10:09.470 --> 00:10:14.830 align:start position:0%
+for the current principal so the
+principal<00:10:10.040><c> is</c><00:10:11.470><c> a</c><00:10:12.880><c> Java</c><00:10:13.880><c> security</c><00:10:14.120><c> principle</c>
+
+00:10:14.830 --> 00:10:14.840 align:start position:0%
+principal is a Java security principle
+ 
+
+00:10:14.840 --> 00:10:16.180 align:start position:0%
+principal is a Java security principle
+but<00:10:14.960><c> that's</c><00:10:15.140><c> not</c><00:10:15.320><c> what</c><00:10:15.440><c> we</c><00:10:15.500><c> want</c><00:10:15.650><c> we</c><00:10:15.740><c> know</c><00:10:15.980><c> that</c>
+
+00:10:16.180 --> 00:10:16.190 align:start position:0%
+but that's not what we want we know that
+ 
+
+00:10:16.190 --> 00:10:17.470 align:start position:0%
+but that's not what we want we know that
+behind<00:10:16.400><c> the</c><00:10:16.520><c> scenes</c><00:10:16.550><c> that</c><00:10:16.910><c> principal</c><00:10:17.360><c> is</c>
+
+00:10:17.470 --> 00:10:17.480 align:start position:0%
+behind the scenes that principal is
+ 
+
+00:10:17.480 --> 00:10:20.320 align:start position:0%
+behind the scenes that principal is
+actually<00:10:18.140><c> a</c><00:10:18.170><c> authentication</c><00:10:19.160><c> object</c><00:10:19.610><c> so</c>
+
+00:10:20.320 --> 00:10:20.330 align:start position:0%
+actually a authentication object so
+ 
+
+00:10:20.330 --> 00:10:22.270 align:start position:0%
+actually a authentication object so
+let's<00:10:20.750><c> get</c><00:10:21.590><c> rid</c><00:10:21.710><c> of</c><00:10:21.770><c> this</c><00:10:21.860><c> because</c><00:10:21.980><c> we</c><00:10:22.190><c> know</c>
+
+00:10:22.270 --> 00:10:22.280 align:start position:0%
+let's get rid of this because we know
+ 
+
+00:10:22.280 --> 00:10:24.520 align:start position:0%
+let's get rid of this because we know
+that<00:10:22.310><c> this</c><00:10:22.610><c> isn't</c><00:10:22.790><c> gonna</c><00:10:23.000><c> be</c><00:10:23.090><c> the</c><00:10:24.080><c> same</c><00:10:24.230><c> type</c>
+
+00:10:24.520 --> 00:10:24.530 align:start position:0%
+that this isn't gonna be the same type
+ 
+
+00:10:24.530 --> 00:10:25.830 align:start position:0%
+that this isn't gonna be the same type
+anymore<00:10:24.740><c> so</c><00:10:24.950><c> we're</c><00:10:25.070><c> gonna</c><00:10:25.160><c> say</c>
+
+00:10:25.830 --> 00:10:25.840 align:start position:0%
+anymore so we're gonna say
+ 
+
+00:10:25.840 --> 00:10:28.360 align:start position:0%
+anymore so we're gonna say
+authentication<00:10:26.840><c> class</c><00:10:27.260><c> dot</c><00:10:27.680><c> cast</c>
+
+00:10:28.360 --> 00:10:28.370 align:start position:0%
+authentication class dot cast
+ 
+
+00:10:28.370 --> 00:10:30.910 align:start position:0%
+authentication class dot cast
+P<00:10:28.940><c> and</c><00:10:29.240><c> then</c><00:10:30.020><c> we</c><00:10:30.080><c> know</c><00:10:30.170><c> that</c><00:10:30.200><c> the</c><00:10:30.410><c> principal</c>
+
+00:10:30.910 --> 00:10:30.920 align:start position:0%
+P and then we know that the principal
+ 
+
+00:10:30.920 --> 00:10:32.560 align:start position:0%
+P and then we know that the principal
+object<00:10:31.070><c> is</c><00:10:31.370><c> going</c><00:10:31.550><c> to</c><00:10:31.640><c> be</c><00:10:31.760><c> a</c><00:10:31.790><c> user</c><00:10:32.270><c> details</c>
+
+00:10:32.560 --> 00:10:32.570 align:start position:0%
+object is going to be a user details
+ 
+
+00:10:32.570 --> 00:10:35.020 align:start position:0%
+object is going to be a user details
+that's<00:10:32.930><c> the</c><00:10:33.020><c> very</c><00:10:33.200><c> same</c><00:10:33.230><c> user</c><00:10:34.040><c> details</c><00:10:34.280><c> that</c>
+
+00:10:35.020 --> 00:10:35.030 align:start position:0%
+that's the very same user details that
+ 
+
+00:10:35.030 --> 00:10:37.600 align:start position:0%
+that's the very same user details that
+we've<00:10:35.150><c> just</c><00:10:35.500><c> persisted</c><00:10:36.500><c> in</c><00:10:36.590><c> our</c><00:10:36.710><c> repository</c><00:10:37.400><c> a</c>
+
+00:10:37.600 --> 00:10:37.610 align:start position:0%
+we've just persisted in our repository a
+ 
+
+00:10:37.610 --> 00:10:39.790 align:start position:0%
+we've just persisted in our repository a
+few<00:10:38.180><c> minutes</c><00:10:38.420><c> ago</c><00:10:38.570><c> so</c><00:10:38.720><c> we'll</c><00:10:38.840><c> turn</c><00:10:39.170><c> that</c><00:10:39.470><c> into</c>
+
+00:10:39.790 --> 00:10:39.800 align:start position:0%
+few minutes ago so we'll turn that into
+ 
+
+00:10:39.800 --> 00:10:42.940 align:start position:0%
+few minutes ago so we'll turn that into
+a<00:10:39.980><c> user</c><00:10:40.190><c> details</c><00:10:40.610><c> and</c><00:10:41.470><c> there</c><00:10:42.470><c> we</c><00:10:42.560><c> are</c><00:10:42.680><c> there's</c>
+
+00:10:42.940 --> 00:10:42.950 align:start position:0%
+a user details and there we are there's
+ 
+
+00:10:42.950 --> 00:10:44.580 align:start position:0%
+a user details and there we are there's
+our<00:10:43.040><c> user</c><00:10:43.190><c> -</c><00:10:43.400><c> details</c><00:10:43.880><c> reference</c><00:10:44.210><c> we</c><00:10:44.390><c> can</c>
+
+00:10:44.580 --> 00:10:44.590 align:start position:0%
+our user - details reference we can
+ 
+
+00:10:44.590 --> 00:10:48.270 align:start position:0%
+our user - details reference we can
+dereference<00:10:45.590><c> that</c><00:10:45.920><c> to</c><00:10:46.100><c> a</c><00:10:46.130><c> details</c><00:10:46.460><c> mano</c><00:10:46.730><c> and</c>
+
+00:10:48.270 --> 00:10:48.280 align:start position:0%
+dereference that to a details mano and
+ 
+
+00:10:48.280 --> 00:10:50.260 align:start position:0%
+dereference that to a details mano and
+maybe<00:10:49.280><c> clean</c><00:10:49.550><c> that</c><00:10:49.670><c> up</c><00:10:49.700><c> a</c><00:10:49.760><c> little</c><00:10:49.850><c> there</c><00:10:50.090><c> we</c><00:10:50.180><c> go</c>
+
+00:10:50.260 --> 00:10:50.270 align:start position:0%
+maybe clean that up a little there we go
+ 
+
+00:10:50.270 --> 00:10:54.310 align:start position:0%
+maybe clean that up a little there we go
+so<00:10:50.480><c> now</c><00:10:51.550><c> well</c><00:10:52.550><c> put</c><00:10:53.210><c> that</c><00:10:53.360><c> their</c><00:10:53.630><c> details</c><00:10:54.080><c> mano</c>
+
+00:10:54.310 --> 00:10:54.320 align:start position:0%
+so now well put that their details mano
+ 
+
+00:10:54.320 --> 00:10:56.680 align:start position:0%
+so now well put that their details mano
+and<00:10:54.890><c> we'll</c><00:10:55.040><c> tell</c><00:10:55.220><c> this</c><00:10:55.400><c> the</c><00:10:55.790><c> runtime</c><00:10:56.540><c> that</c>
+
+00:10:56.680 --> 00:10:56.690 align:start position:0%
+and we'll tell this the runtime that
+ 
+
+00:10:56.690 --> 00:10:57.910 align:start position:0%
+and we'll tell this the runtime that
+this<00:10:56.810><c> is</c><00:10:56.900><c> a</c><00:10:56.960><c> user</c><00:10:57.140><c> details</c><00:10:57.410><c> object</c><00:10:57.830><c> that</c>
+
+00:10:57.910 --> 00:10:57.920 align:start position:0%
+this is a user details object that
+ 
+
+00:10:57.920 --> 00:10:59.190 align:start position:0%
+this is a user details object that
+should<00:10:58.070><c> be</c><00:10:58.190><c> treated</c><00:10:58.820><c> as</c><00:10:58.880><c> such</c>
+
+00:10:59.190 --> 00:10:59.200 align:start position:0%
+should be treated as such
+ 
+
+00:10:59.200 --> 00:11:02.530 align:start position:0%
+should be treated as such
+and<00:11:00.460><c> let's</c><00:11:01.460><c> just</c><00:11:01.520><c> confirm</c><00:11:01.790><c> that</c><00:11:02.000><c> that</c><00:11:02.330><c> works</c>
+
+00:11:02.530 --> 00:11:02.540 align:start position:0%
+and let's just confirm that that works
+ 
+
+00:11:02.540 --> 00:11:05.410 align:start position:0%
+and let's just confirm that that works
+before<00:11:02.870><c> we</c><00:11:02.990><c> dive</c><00:11:03.920><c> into</c><00:11:04.160><c> authorization</c><00:11:04.880><c> let's</c>
+
+00:11:05.410 --> 00:11:05.420 align:start position:0%
+before we dive into authorization let's
+ 
+
+00:11:05.420 --> 00:11:07.300 align:start position:0%
+before we dive into authorization let's
+dive<00:11:05.630><c> into</c><00:11:05.810><c> let's</c><00:11:06.140><c> just</c><00:11:06.260><c> make</c><00:11:06.380><c> sure</c><00:11:06.530><c> that</c><00:11:06.740><c> this</c>
+
+00:11:07.300 --> 00:11:07.310 align:start position:0%
+dive into let's just make sure that this
+ 
+
+00:11:07.310 --> 00:11:11.340 align:start position:0%
+dive into let's just make sure that this
+is<00:11:07.460><c> working</c><00:11:07.670><c> as</c><00:11:07.880><c> we</c><00:11:08.000><c> expect</c><00:11:08.330><c> so</c><00:11:09.340><c> users</c><00:11:10.340><c> are</c>
+
+00:11:11.340 --> 00:11:11.350 align:start position:0%
+is working as we expect so users are
+ 
+
+00:11:11.350 --> 00:11:13.110 align:start position:0%
+is working as we expect so users are
+winch
+
+00:11:13.110 --> 00:11:13.120 align:start position:0%
+winch
+ 
+
+00:11:13.120 --> 00:11:14.579 align:start position:0%
+winch
+there<00:11:13.690><c> we</c><00:11:13.750><c> are</c><00:11:13.779><c> there's</c><00:11:14.050><c> our</c><00:11:14.140><c> information</c>
+
+00:11:14.579 --> 00:11:14.589 align:start position:0%
+there we are there's our information
+ 
+
+00:11:14.589 --> 00:11:18.180 align:start position:0%
+there we are there's our information
+there's<00:11:15.250><c> the</c><00:11:16.060><c> same</c><00:11:16.300><c> information</c><00:11:16.779><c> for</c><00:11:17.620><c> J</c><00:11:17.950><c> long</c>
+
+00:11:18.180 --> 00:11:18.190 align:start position:0%
+there's the same information for J long
+ 
+
+00:11:18.190 --> 00:11:19.829 align:start position:0%
+there's the same information for J long
+and<00:11:18.460><c> what</c><00:11:18.850><c> we</c><00:11:18.940><c> want</c><00:11:19.089><c> to</c><00:11:19.180><c> do</c><00:11:19.270><c> is</c><00:11:19.390><c> when</c><00:11:19.510><c> a</c><00:11:19.540><c> limit</c>
+
+00:11:19.829 --> 00:11:19.839 align:start position:0%
+and what we want to do is when a limit
+ 
+
+00:11:19.839 --> 00:11:22.050 align:start position:0%
+and what we want to do is when a limit
+you<00:11:19.990><c> know</c><00:11:20.200><c> the</c><00:11:20.380><c> authenticated</c><00:11:21.160><c> user</c><00:11:21.339><c> from</c>
+
+00:11:22.050 --> 00:11:22.060 align:start position:0%
+you know the authenticated user from
+ 
+
+00:11:22.060 --> 00:11:23.850 align:start position:0%
+you know the authenticated user from
+accessing<00:11:22.420><c> information</c><00:11:23.110><c> that</c><00:11:23.620><c> doesn't</c>
+
+00:11:23.850 --> 00:11:23.860 align:start position:0%
+accessing information that doesn't
+ 
+
+00:11:23.860 --> 00:11:25.320 align:start position:0%
+accessing information that doesn't
+belong<00:11:23.980><c> to</c><00:11:24.040><c> that</c><00:11:24.279><c> authenticated</c><00:11:24.880><c> user</c><00:11:25.060><c> so</c>
+
+00:11:25.320 --> 00:11:25.330 align:start position:0%
+belong to that authenticated user so
+ 
+
+00:11:25.330 --> 00:11:27.540 align:start position:0%
+belong to that authenticated user so
+we're<00:11:25.990><c> gonna</c><00:11:26.230><c> do</c><00:11:26.410><c> authorization</c><00:11:27.040><c> in</c><00:11:27.220><c> effect</c>
+
+00:11:27.540 --> 00:11:27.550 align:start position:0%
+we're gonna do authorization in effect
+ 
+
+00:11:27.550 --> 00:11:29.519 align:start position:0%
+we're gonna do authorization in effect
+on<00:11:27.730><c> that</c><00:11:28.240><c> end</c><00:11:28.450><c> point</c><00:11:28.660><c> on</c><00:11:28.750><c> that</c><00:11:28.900><c> URL</c><00:11:29.170><c> so</c><00:11:29.350><c> we</c><00:11:29.440><c> do</c>
+
+00:11:29.519 --> 00:11:29.529 align:start position:0%
+on that end point on that URL so we do
+ 
+
+00:11:29.529 --> 00:11:32.420 align:start position:0%
+on that end point on that URL so we do
+that<00:11:29.680><c> here</c><00:11:29.920><c> in</c><00:11:30.670><c> our</c><00:11:30.880><c> security</c><00:11:31.690><c> configuration</c>
+
+00:11:32.420 --> 00:11:32.430 align:start position:0%
+that here in our security configuration
+ 
+
+00:11:32.430 --> 00:11:35.130 align:start position:0%
+that here in our security configuration
+we<00:11:33.430><c> go</c><00:11:33.640><c> back</c><00:11:33.790><c> to</c><00:11:34.000><c> our</c><00:11:34.210><c> security</c><00:11:34.570><c> configuration</c>
+
+00:11:35.130 --> 00:11:35.140 align:start position:0%
+we go back to our security configuration
+ 
+
+00:11:35.140 --> 00:11:41.730 align:start position:0%
+we go back to our security configuration
+here<00:11:35.320><c> and</c><00:11:35.500><c> we</c><00:11:36.040><c> say</c><00:11:36.279><c> that</c><00:11:37.350><c> for</c><00:11:38.350><c> requests</c><00:11:40.740><c> going</c>
+
+00:11:41.730 --> 00:11:41.740 align:start position:0%
+here and we say that for requests going
+ 
+
+00:11:41.740 --> 00:11:48.090 align:start position:0%
+here and we say that for requests going
+to<00:11:42.190><c> a</c><00:11:43.140><c> certain</c><00:11:44.140><c> path</c><00:11:46.020><c> users</c><00:11:47.020><c> for</c><00:11:47.860><c> slash</c>
+
+00:11:48.090 --> 00:11:48.100 align:start position:0%
+to a certain path users for slash
+ 
+
+00:11:48.100 --> 00:11:52.650 align:start position:0%
+to a certain path users for slash
+username<00:11:49.140><c> we</c><00:11:50.140><c> want</c><00:11:50.790><c> the</c><00:11:51.790><c> following</c><00:11:52.210><c> access</c>
+
+00:11:52.650 --> 00:11:52.660 align:start position:0%
+username we want the following access
+ 
+
+00:11:52.660 --> 00:11:55.620 align:start position:0%
+username we want the following access
+decisions<00:11:53.560><c> to</c><00:11:53.770><c> apply</c><00:11:53.980><c> right</c><00:11:54.310><c> and</c><00:11:54.520><c> we</c><00:11:55.300><c> have</c><00:11:55.450><c> we</c>
+
+00:11:55.620 --> 00:11:55.630 align:start position:0%
+decisions to apply right and we have we
+ 
+
+00:11:55.630 --> 00:11:57.240 align:start position:0%
+decisions to apply right and we have we
+could<00:11:55.810><c> by</c><00:11:56.050><c> the</c><00:11:56.080><c> way</c><00:11:56.200><c> we</c><00:11:56.320><c> could</c><00:11:56.500><c> say</c><00:11:56.650><c> that</c><00:11:56.830><c> any</c>
+
+00:11:57.240 --> 00:11:57.250 align:start position:0%
+could by the way we could say that any
+ 
+
+00:11:57.250 --> 00:11:58.500 align:start position:0%
+could by the way we could say that any
+request<00:11:57.610><c> that</c><00:11:57.700><c> comes</c><00:11:57.940><c> in</c><00:11:58.060><c> has</c><00:11:58.300><c> to</c><00:11:58.420><c> be</c>
+
+00:11:58.500 --> 00:11:58.510 align:start position:0%
+request that comes in has to be
+ 
+
+00:11:58.510 --> 00:11:59.700 align:start position:0%
+request that comes in has to be
+authenticated<00:11:58.960><c> that's</c><00:11:59.230><c> basically</c><00:11:59.500><c> what</c><00:11:59.650><c> we</c>
+
+00:11:59.700 --> 00:11:59.710 align:start position:0%
+authenticated that's basically what we
+ 
+
+00:11:59.710 --> 00:12:01.590 align:start position:0%
+authenticated that's basically what we
+did<00:11:59.800><c> before</c><00:11:59.950><c> we</c><00:12:00.550><c> could</c><00:12:00.730><c> say</c><00:12:00.910><c> it</c><00:12:01.240><c> has</c><00:12:01.390><c> to</c><00:12:01.420><c> have</c><00:12:01.570><c> a</c>
+
+00:12:01.590 --> 00:12:01.600 align:start position:0%
+did before we could say it has to have a
+ 
+
+00:12:01.600 --> 00:12:03.420 align:start position:0%
+did before we could say it has to have a
+certain<00:12:01.839><c> Authority</c><00:12:02.050><c> or</c><00:12:02.290><c> a</c><00:12:02.320><c> certain</c><00:12:02.529><c> role</c><00:12:02.680><c> but</c>
+
+00:12:03.420 --> 00:12:03.430 align:start position:0%
+certain Authority or a certain role but
+ 
+
+00:12:03.430 --> 00:12:06.210 align:start position:0%
+certain Authority or a certain role but
+one<00:12:03.880><c> of</c><00:12:03.910><c> the</c><00:12:04.029><c> new</c><00:12:04.180><c> features</c><00:12:04.570><c> in</c><00:12:05.440><c> spring</c>
+
+00:12:06.210 --> 00:12:06.220 align:start position:0%
+one of the new features in spring
+ 
+
+00:12:06.220 --> 00:12:09.750 align:start position:0%
+one of the new features in spring
+security<00:12:06.610><c> 5</c><00:12:06.820><c> is</c><00:12:07.120><c> since</c><00:12:07.660><c> it's</c><00:12:07.810><c> based</c><00:12:08.110><c> on</c><00:12:08.760><c> Java</c>
+
+00:12:09.750 --> 00:12:09.760 align:start position:0%
+security 5 is since it's based on Java
+ 
+
+00:12:09.760 --> 00:12:12.450 align:start position:0%
+security 5 is since it's based on Java
+Java<00:12:10.330><c> 8</c><00:12:10.540><c> and</c><00:12:10.810><c> and</c><00:12:11.080><c> spring</c><00:12:11.380><c> 5</c><00:12:11.529><c> is</c><00:12:11.710><c> itself</c><00:12:12.190><c> also</c>
+
+00:12:12.450 --> 00:12:12.460 align:start position:0%
+Java 8 and and spring 5 is itself also
+ 
+
+00:12:12.460 --> 00:12:14.190 align:start position:0%
+Java 8 and and spring 5 is itself also
+based<00:12:12.670><c> on</c><00:12:12.790><c> Java</c><00:12:12.970><c> 8</c><00:12:13.060><c> we</c><00:12:13.630><c> can</c><00:12:13.720><c> take</c><00:12:13.870><c> advantage</c><00:12:14.140><c> of</c>
+
+00:12:14.190 --> 00:12:14.200 align:start position:0%
+based on Java 8 we can take advantage of
+ 
+
+00:12:14.200 --> 00:12:16.160 align:start position:0%
+based on Java 8 we can take advantage of
+lambdas<00:12:14.589><c> so</c><00:12:14.740><c> this</c><00:12:14.860><c> is</c><00:12:15.010><c> very</c><00:12:15.190><c> convenient</c><00:12:15.460><c> now</c>
+
+00:12:16.160 --> 00:12:16.170 align:start position:0%
+lambdas so this is very convenient now
+ 
+
+00:12:16.170 --> 00:12:18.600 align:start position:0%
+lambdas so this is very convenient now
+access<00:12:17.170><c> call</c><00:12:17.350><c> back</c><00:12:17.500><c> here</c><00:12:17.680><c> where</c><00:12:18.190><c> we</c><00:12:18.580><c> might</c>
+
+00:12:18.600 --> 00:12:18.610 align:start position:0%
+access call back here where we might
+ 
+
+00:12:18.610 --> 00:12:20.220 align:start position:0%
+access call back here where we might
+have<00:12:18.790><c> had</c><00:12:19.120><c> two</c><00:12:19.270><c> previously</c><00:12:19.660><c> use</c><00:12:19.839><c> a</c><00:12:19.870><c> spring</c>
+
+00:12:20.220 --> 00:12:20.230 align:start position:0%
+have had two previously use a spring
+ 
+
+00:12:20.230 --> 00:12:22.199 align:start position:0%
+have had two previously use a spring
+expression<00:12:20.650><c> language</c><00:12:20.770><c> expression</c><00:12:21.279><c> to</c><00:12:21.910><c> do</c><00:12:22.060><c> the</c>
+
+00:12:22.199 --> 00:12:22.209 align:start position:0%
+expression language expression to do the
+ 
+
+00:12:22.209 --> 00:12:25.800 align:start position:0%
+expression language expression to do the
+sort<00:12:22.420><c> of</c><00:12:22.480><c> same</c><00:12:22.959><c> dynamic</c><00:12:24.060><c> control</c><00:12:25.060><c> we</c><00:12:25.570><c> can</c><00:12:25.720><c> now</c>
+
+00:12:25.800 --> 00:12:25.810 align:start position:0%
+sort of same dynamic control we can now
+ 
+
+00:12:25.810 --> 00:12:27.900 align:start position:0%
+sort of same dynamic control we can now
+do<00:12:25.870><c> that</c><00:12:26.260><c> here</c><00:12:26.620><c> which</c><00:12:27.130><c> is</c><00:12:27.250><c> by</c><00:12:27.339><c> providing</c><00:12:27.550><c> a</c><00:12:27.790><c> new</c>
+
+00:12:27.900 --> 00:12:27.910 align:start position:0%
+do that here which is by providing a new
+ 
+
+00:12:27.910 --> 00:12:30.600 align:start position:0%
+do that here which is by providing a new
+reactive<00:12:28.360><c> authorization</c><00:12:29.490><c> manager</c><00:12:30.490><c> so</c>
+
+00:12:30.600 --> 00:12:30.610 align:start position:0%
+reactive authorization manager so
+ 
+
+00:12:30.610 --> 00:12:36.090 align:start position:0%
+reactive authorization manager so
+reactive<00:12:31.000><c> authorization</c><00:12:31.540><c> manager</c><00:12:32.250><c> and</c><00:12:35.100><c> this</c>
+
+00:12:36.090 --> 00:12:36.100 align:start position:0%
+reactive authorization manager and this
+ 
+
+00:12:36.100 --> 00:12:37.260 align:start position:0%
+reactive authorization manager and this
+should<00:12:36.250><c> be</c><00:12:36.430><c> all</c><00:12:36.640><c> that</c><00:12:36.820><c> heart</c><00:12:37.029><c> right</c><00:12:37.180><c> we're</c>
+
+00:12:37.260 --> 00:12:37.270 align:start position:0%
+should be all that heart right we're
+ 
+
+00:12:37.270 --> 00:12:39.990 align:start position:0%
+should be all that heart right we're
+gonna<00:12:37.390><c> say</c><00:12:37.600><c> that</c><00:12:38.589><c> we're</c><00:12:39.490><c> gonna</c><00:12:39.580><c> you</c><00:12:39.940><c> know</c>
+
+00:12:39.990 --> 00:12:40.000 align:start position:0%
+gonna say that we're gonna you know
+ 
+
+00:12:40.000 --> 00:12:42.019 align:start position:0%
+gonna say that we're gonna you know
+we're<00:12:40.060><c> gonna</c><00:12:40.180><c> check</c><00:12:40.510><c> the</c><00:12:40.720><c> incoming</c><00:12:41.200><c> request</c>
+
+00:12:42.019 --> 00:12:42.029 align:start position:0%
+we're gonna check the incoming request
+ 
+
+00:12:42.029 --> 00:12:44.220 align:start position:0%
+we're gonna check the incoming request
+which<00:12:43.029><c> has</c><00:12:43.209><c> an</c><00:12:43.300><c> authentication</c><00:12:43.570><c> in</c><00:12:43.930><c> it</c><00:12:44.020><c> this</c>
+
+00:12:44.220 --> 00:12:44.230 align:start position:0%
+which has an authentication in it this
+ 
+
+00:12:44.230 --> 00:12:45.870 align:start position:0%
+which has an authentication in it this
+is<00:12:44.290><c> already</c><00:12:44.680><c> after</c><00:12:45.100><c> the</c><00:12:45.190><c> users</c><00:12:45.760><c> been</c>
+
+00:12:45.870 --> 00:12:45.880 align:start position:0%
+is already after the users been
+ 
+
+00:12:45.880 --> 00:12:48.120 align:start position:0%
+is already after the users been
+authenticated<00:12:46.060><c> and</c><00:12:46.600><c> we're</c><00:12:47.320><c> gonna</c><00:12:47.440><c> you</c><00:12:48.010><c> know</c>
+
+00:12:48.120 --> 00:12:48.130 align:start position:0%
+authenticated and we're gonna you know
+ 
+
+00:12:48.130 --> 00:12:49.590 align:start position:0%
+authenticated and we're gonna you know
+figure<00:12:48.459><c> out</c><00:12:48.490><c> the</c><00:12:48.610><c> name</c><00:12:48.820><c> of</c><00:12:49.060><c> the</c><00:12:49.150><c> authenticated</c>
+
+00:12:49.590 --> 00:12:49.600 align:start position:0%
+figure out the name of the authenticated
+ 
+
+00:12:49.600 --> 00:12:52.320 align:start position:0%
+figure out the name of the authenticated
+user<00:12:49.660><c> and</c><00:12:50.020><c> then</c><00:12:50.440><c> see</c><00:12:50.620><c> if</c><00:12:50.709><c> it</c><00:12:50.800><c> matches</c><00:12:50.980><c> the</c><00:12:51.610><c> URL</c>
+
+00:12:52.320 --> 00:12:52.330 align:start position:0%
+user and then see if it matches the URL
+ 
+
+00:12:52.330 --> 00:12:53.550 align:start position:0%
+user and then see if it matches the URL
+against<00:12:52.810><c> which</c><00:12:52.930><c> we're</c><00:12:53.080><c> making</c><00:12:53.260><c> the</c><00:12:53.350><c> request</c>
+
+00:12:53.550 --> 00:12:53.560 align:start position:0%
+against which we're making the request
+ 
+
+00:12:53.560 --> 00:12:56.790 align:start position:0%
+against which we're making the request
+right<00:12:53.860><c> so</c><00:12:54.010><c> it's</c><00:12:54.160><c> the</c><00:12:54.250><c> the</c><00:12:55.000><c> context</c><00:12:55.510><c> here</c><00:12:55.800><c> has</c>
+
+00:12:56.790 --> 00:12:56.800 align:start position:0%
+right so it's the the context here has
+ 
+
+00:12:56.800 --> 00:12:58.230 align:start position:0%
+right so it's the the context here has
+the<00:12:57.070><c> current</c><00:12:57.400><c> username</c><00:12:57.700><c> so</c><00:12:57.880><c> we're</c><00:12:57.970><c> gonna</c><00:12:58.060><c> say</c>
+
+00:12:58.230 --> 00:12:58.240 align:start position:0%
+the current username so we're gonna say
+ 
+
+00:12:58.240 --> 00:13:06.120 align:start position:0%
+the current username so we're gonna say
+mano<00:12:58.870><c> dot</c><00:12:59.230><c> map</c><00:12:59.589><c> and</c><00:13:00.750><c> off-off</c><00:13:02.910><c> dot</c><00:13:04.170><c> dot</c><00:13:05.170><c> get</c>
+
+00:13:06.120 --> 00:13:06.130 align:start position:0%
+mano dot map and off-off dot dot get
+ 
+
+00:13:06.130 --> 00:13:10.650 align:start position:0%
+mano dot map and off-off dot dot get
+name<00:13:06.459><c> equals</c><00:13:08.100><c> context</c><00:13:09.100><c> thought</c><00:13:10.060><c> get</c>
+
+00:13:10.650 --> 00:13:10.660 align:start position:0%
+name equals context thought get
+ 
+
+00:13:10.660 --> 00:13:14.340 align:start position:0%
+name equals context thought get
+variables<00:13:11.170><c> dot</c><00:13:11.410><c> get</c><00:13:12.010><c> username</c><00:13:13.080><c> right</c><00:13:14.080><c> so</c>
+
+00:13:14.340 --> 00:13:14.350 align:start position:0%
+variables dot get username right so
+ 
+
+00:13:14.350 --> 00:13:16.560 align:start position:0%
+variables dot get username right so
+that's<00:13:14.560><c> a</c><00:13:14.740><c> boolean</c><00:13:15.160><c> and</c><00:13:15.880><c> we</c><00:13:15.970><c> need</c><00:13:16.089><c> to</c><00:13:16.180><c> map</c><00:13:16.360><c> that</c>
+
+00:13:16.560 --> 00:13:16.570 align:start position:0%
+that's a boolean and we need to map that
+ 
+
+00:13:16.570 --> 00:13:18.050 align:start position:0%
+that's a boolean and we need to map that
+boolean<00:13:16.959><c> into</c><00:13:17.380><c> something</c><00:13:17.680><c> called</c><00:13:17.830><c> an</c>
+
+00:13:18.050 --> 00:13:18.060 align:start position:0%
+boolean into something called an
+ 
+
+00:13:18.060 --> 00:13:20.519 align:start position:0%
+boolean into something called an
+authorization<00:13:19.060><c> decision</c><00:13:19.750><c> so</c><00:13:20.320><c> there's</c><00:13:20.500><c> a</c>
+
+00:13:20.519 --> 00:13:20.529 align:start position:0%
+authorization decision so there's a
+ 
+
+00:13:20.529 --> 00:13:22.230 align:start position:0%
+authorization decision so there's a
+constructor<00:13:20.950><c> that</c><00:13:20.980><c> just</c><00:13:21.190><c> takes</c><00:13:21.339><c> a</c><00:13:21.430><c> boolean</c><00:13:21.730><c> so</c>
+
+00:13:22.230 --> 00:13:22.240 align:start position:0%
+constructor that just takes a boolean so
+ 
+
+00:13:22.240 --> 00:13:23.490 align:start position:0%
+constructor that just takes a boolean so
+we<00:13:22.329><c> can</c><00:13:22.450><c> just</c><00:13:22.600><c> use</c><00:13:22.720><c> a</c><00:13:22.750><c> method</c><00:13:23.079><c> reference</c><00:13:23.350><c> like</c>
+
+00:13:23.490 --> 00:13:23.500 align:start position:0%
+we can just use a method reference like
+ 
+
+00:13:23.500 --> 00:13:24.840 align:start position:0%
+we can just use a method reference like
+so<00:13:23.680><c> right</c>
+
+00:13:24.840 --> 00:13:24.850 align:start position:0%
+so right
+ 
+
+00:13:24.850 --> 00:13:27.569 align:start position:0%
+so right
+okay<00:13:25.359><c> there's</c><00:13:25.629><c> our</c><00:13:25.979><c> authorization</c><00:13:26.979><c> check</c><00:13:27.459><c> and</c>
+
+00:13:27.569 --> 00:13:27.579 align:start position:0%
+okay there's our authorization check and
+ 
+
+00:13:27.579 --> 00:13:28.919 align:start position:0%
+okay there's our authorization check and
+of<00:13:27.639><c> course</c><00:13:27.819><c> this</c><00:13:28.059><c> is</c><00:13:28.179><c> a</c><00:13:28.209><c> functional</c><00:13:28.660><c> interface</c>
+
+00:13:28.919 --> 00:13:28.929 align:start position:0%
+of course this is a functional interface
+ 
+
+00:13:28.929 --> 00:13:30.619 align:start position:0%
+of course this is a functional interface
+as<00:13:29.079><c> well</c><00:13:29.229><c> so</c><00:13:29.499><c> we</c><00:13:30.100><c> can</c><00:13:30.129><c> replace</c><00:13:30.489><c> that</c>
+
+00:13:30.619 --> 00:13:30.629 align:start position:0%
+as well so we can replace that
+ 
+
+00:13:30.629 --> 00:13:35.129 align:start position:0%
+as well so we can replace that
+accordingly<00:13:31.649><c> and</c><00:13:32.649><c> the</c><00:13:33.309><c> code</c><00:13:33.459><c> gets</c><00:13:33.959><c> very</c><00:13:34.959><c> nice</c>
+
+00:13:35.129 --> 00:13:35.139 align:start position:0%
+accordingly and the code gets very nice
+ 
+
+00:13:35.139 --> 00:13:36.210 align:start position:0%
+accordingly and the code gets very nice
+to<00:13:35.289><c> read</c><00:13:35.439><c> write</c><00:13:35.649><c> very</c><00:13:35.829><c> clean</c>
+
+00:13:36.210 --> 00:13:36.220 align:start position:0%
+to read write very clean
+ 
+
+00:13:36.220 --> 00:13:37.650 align:start position:0%
+to read write very clean
+write<00:13:36.429><c> very</c><00:13:36.639><c> easy</c><00:13:36.819><c> to</c><00:13:36.970><c> follow</c><00:13:37.449><c> what's</c>
+
+00:13:37.650 --> 00:13:37.660 align:start position:0%
+write very easy to follow what's
+ 
+
+00:13:37.660 --> 00:13:39.539 align:start position:0%
+write very easy to follow what's
+happening<00:13:37.720><c> and</c><00:13:38.109><c> we</c><00:13:38.229><c> get</c><00:13:38.379><c> type</c><00:13:38.949><c> safety</c><00:13:39.339><c> here</c>
+
+00:13:39.539 --> 00:13:39.549 align:start position:0%
+happening and we get type safety here
+ 
+
+00:13:39.549 --> 00:13:41.249 align:start position:0%
+happening and we get type safety here
+it's<00:13:39.669><c> a</c><00:13:39.789><c> spring</c><00:13:40.119><c> expression</c><00:13:40.509><c> language</c><00:13:40.629><c> so</c>
+
+00:13:41.249 --> 00:13:41.259 align:start position:0%
+it's a spring expression language so
+ 
+
+00:13:41.259 --> 00:13:43.289 align:start position:0%
+it's a spring expression language so
+that<00:13:41.379><c> can</c><00:13:41.589><c> be</c><00:13:41.679><c> very</c><00:13:41.829><c> very</c><00:13:41.979><c> useful</c><00:13:42.459><c> if</c><00:13:43.179><c> you're</c>
+
+00:13:43.289 --> 00:13:43.299 align:start position:0%
+that can be very very useful if you're
+ 
+
+00:13:43.299 --> 00:13:44.939 align:start position:0%
+that can be very very useful if you're
+trying<00:13:43.329><c> to</c><00:13:43.509><c> figure</c><00:13:43.749><c> out</c><00:13:43.809><c> the</c><00:13:44.350><c> chain</c><00:13:44.829><c> of</c>
+
+00:13:44.939 --> 00:13:44.949 align:start position:0%
+trying to figure out the chain of
+ 
+
+00:13:44.949 --> 00:13:46.710 align:start position:0%
+trying to figure out the chain of
+invocation<00:13:45.519><c> all</c><00:13:45.999><c> right</c><00:13:46.209><c> so</c><00:13:46.389><c> let's</c><00:13:46.539><c> see</c><00:13:46.629><c> if</c>
+
+00:13:46.710 --> 00:13:46.720 align:start position:0%
+invocation all right so let's see if
+ 
+
+00:13:46.720 --> 00:13:47.909 align:start position:0%
+invocation all right so let's see if
+that<00:13:46.749><c> works</c><00:13:47.019><c> now</c><00:13:47.229><c> notice</c><00:13:47.529><c> that</c><00:13:47.559><c> we're</c><00:13:47.799><c> doing</c>
+
+00:13:47.909 --> 00:13:47.919 align:start position:0%
+that works now notice that we're doing
+ 
+
+00:13:47.919 --> 00:13:50.819 align:start position:0%
+that works now notice that we're doing
+this<00:13:48.459><c> specific</c><00:13:49.389><c> thing</c><00:13:49.600><c> before</c><00:13:50.470><c> we</c><00:13:50.559><c> do</c><00:13:50.709><c> the</c>
+
+00:13:50.819 --> 00:13:50.829 align:start position:0%
+this specific thing before we do the
+ 
+
+00:13:50.829 --> 00:13:53.309 align:start position:0%
+this specific thing before we do the
+more<00:13:51.039><c> broadly</c><00:13:51.789><c> applicable</c><00:13:52.179><c> thing</c><00:13:52.929><c> down</c><00:13:53.109><c> here</c>
+
+00:13:53.309 --> 00:13:53.319 align:start position:0%
+more broadly applicable thing down here
+ 
+
+00:13:53.319 --> 00:13:55.559 align:start position:0%
+more broadly applicable thing down here
+right<00:13:53.529><c> we're</c><00:13:53.679><c> we're</c><00:13:54.039><c> saying</c><00:13:54.299><c> first</c><00:13:55.299><c> check</c>
+
+00:13:55.559 --> 00:13:55.569 align:start position:0%
+right we're we're saying first check
+ 
+
+00:13:55.569 --> 00:13:57.539 align:start position:0%
+right we're we're saying first check
+this<00:13:55.689><c> very</c><00:13:55.899><c> specific</c><00:13:56.289><c> pattern</c><00:13:56.649><c> and</c><00:13:56.859><c> then</c><00:13:57.399><c> if</c>
+
+00:13:57.539 --> 00:13:57.549 align:start position:0%
+this very specific pattern and then if
+ 
+
+00:13:57.549 --> 00:13:59.849 align:start position:0%
+this very specific pattern and then if
+it<00:13:57.639><c> doesn't</c><00:13:57.850><c> match</c><00:13:57.970><c> anything</c><00:13:58.329><c> in</c><00:13:58.660><c> these</c><00:13:59.019><c> these</c>
+
+00:13:59.849 --> 00:13:59.859 align:start position:0%
+it doesn't match anything in these these
+ 
+
+00:13:59.859 --> 00:14:02.219 align:start position:0%
+it doesn't match anything in these these
+paths<00:14:00.309><c> that</c><00:14:00.699><c> we</c><00:14:00.819><c> specify</c><00:14:01.179><c> any</c><00:14:01.479><c> any</c><00:14:01.809><c> number</c><00:14:02.139><c> of</c>
+
+00:14:02.219 --> 00:14:02.229 align:start position:0%
+paths that we specify any any number of
+ 
+
+00:14:02.229 --> 00:14:04.469 align:start position:0%
+paths that we specify any any number of
+paths<00:14:02.589><c> or</c><00:14:02.829><c> predicates</c><00:14:03.459><c> that</c><00:14:03.489><c> we</c><00:14:03.639><c> specify</c><00:14:03.999><c> then</c>
+
+00:14:04.469 --> 00:14:04.479 align:start position:0%
+paths or predicates that we specify then
+ 
+
+00:14:04.479 --> 00:14:06.539 align:start position:0%
+paths or predicates that we specify then
+use<00:14:04.749><c> this</c><00:14:05.019><c> one</c><00:14:05.199><c> here</c><00:14:05.410><c> and</c><00:14:05.589><c> say</c><00:14:06.100><c> that</c><00:14:06.279><c> for</c><00:14:06.429><c> any</c>
+
+00:14:06.539 --> 00:14:06.549 align:start position:0%
+use this one here and say that for any
+ 
+
+00:14:06.549 --> 00:14:08.969 align:start position:0%
+use this one here and say that for any
+request<00:14:06.850><c> into</c><00:14:07.419><c> the</c><00:14:07.539><c> service</c><00:14:07.949><c> into</c><00:14:08.949><c> the</c>
+
+00:14:08.969 --> 00:14:08.979 align:start position:0%
+request into the service into the
+ 
+
+00:14:08.979 --> 00:14:10.710 align:start position:0%
+request into the service into the
+application<00:14:09.579><c> there</c><00:14:10.089><c> they</c><00:14:10.509><c> should</c><00:14:10.660><c> be</c>
+
+00:14:10.710 --> 00:14:10.720 align:start position:0%
+application there they should be
+ 
+
+00:14:10.720 --> 00:14:12.900 align:start position:0%
+application there they should be
+authenticated<00:14:11.259><c> right</c><00:14:11.439><c> so</c><00:14:11.619><c> let's</c><00:14:11.829><c> see</c><00:14:12.160><c> now</c><00:14:12.429><c> if</c>
+
+00:14:12.900 --> 00:14:12.910 align:start position:0%
+authenticated right so let's see now if
+ 
+
+00:14:12.910 --> 00:14:18.779 align:start position:0%
+authenticated right so let's see now if
+that<00:14:13.209><c> works</c><00:14:15.720><c> okay</c><00:14:16.720><c> so</c><00:14:16.749><c> I'm</c><00:14:17.619><c> authentic</c><00:14:18.339><c> ated</c>
+
+00:14:18.779 --> 00:14:18.789 align:start position:0%
+that works okay so I'm authentic ated
+ 
+
+00:14:18.789 --> 00:14:19.829 align:start position:0%
+that works okay so I'm authentic ated
+right<00:14:18.910><c> now</c><00:14:19.029><c> I'm</c><00:14:19.149><c> going</c><00:14:19.299><c> to</c><00:14:19.359><c> authenticate</c><00:14:19.749><c> it</c>
+
+00:14:19.829 --> 00:14:19.839 align:start position:0%
+right now I'm going to authenticate it
+ 
+
+00:14:19.839 --> 00:14:20.999 align:start position:0%
+right now I'm going to authenticate it
+as<00:14:19.929><c> our</c><00:14:20.079><c> winch</c><00:14:20.289><c> if</c><00:14:20.379><c> I'm</c><00:14:20.470><c> going</c><00:14:20.589><c> to</c><00:14:20.649><c> talk</c><00:14:20.799><c> to</c>
+
+00:14:20.999 --> 00:14:21.009 align:start position:0%
+as our winch if I'm going to talk to
+ 
+
+00:14:21.009 --> 00:14:24.359 align:start position:0%
+as our winch if I'm going to talk to
+jail<00:14:21.879><c> all</c><00:14:22.029><c> right</c><00:14:22.689><c> and</c><00:14:22.869><c> it</c><00:14:22.989><c> says</c><00:14:23.169><c> 403</c><00:14:24.100><c> forbidden</c>
+
+00:14:24.359 --> 00:14:24.369 align:start position:0%
+jail all right and it says 403 forbidden
+ 
+
+00:14:24.369 --> 00:14:29.069 align:start position:0%
+jail all right and it says 403 forbidden
+now<00:14:25.179><c> what</c><00:14:25.389><c> about</c><00:14:25.569><c> our</c><00:14:25.749><c> winch</c><00:14:27.509><c> there</c><00:14:28.509><c> we</c><00:14:28.660><c> are</c><00:14:28.689><c> so</c>
+
+00:14:29.069 --> 00:14:29.079 align:start position:0%
+now what about our winch there we are so
+ 
+
+00:14:29.079 --> 00:14:31.919 align:start position:0%
+now what about our winch there we are so
+I've<00:14:29.169><c> now</c><00:14:29.379><c> accessed</c><00:14:30.279><c> the</c><00:14:31.179><c> information</c>
+
+00:14:31.919 --> 00:14:31.929 align:start position:0%
+I've now accessed the information
+ 
+
+00:14:31.929 --> 00:14:34.289 align:start position:0%
+I've now accessed the information
+specific<00:14:32.409><c> to</c><00:14:32.499><c> our</c><00:14:32.529><c> winch</c><00:14:32.879><c> and</c><00:14:33.879><c> of</c><00:14:33.999><c> course</c><00:14:34.179><c> I've</c>
+
+00:14:34.289 --> 00:14:34.299 align:start position:0%
+specific to our winch and of course I've
+ 
+
+00:14:34.299 --> 00:14:38.309 align:start position:0%
+specific to our winch and of course I've
+got<00:14:34.329><c> my</c><00:14:34.600><c> message</c><00:14:35.199><c> endpoint</c><00:14:35.529><c> as</c><00:14:35.679><c> well</c><00:14:37.319><c> so</c>
+
+00:14:38.309 --> 00:14:38.319 align:start position:0%
+got my message endpoint as well so
+ 
+
+00:14:38.319 --> 00:14:40.139 align:start position:0%
+got my message endpoint as well so
+there's<00:14:38.470><c> a</c><00:14:38.529><c> hello</c><00:14:38.919><c> our</c><00:14:39.069><c> winch</c><00:14:39.249><c> so</c><00:14:39.879><c> with</c><00:14:39.999><c> that</c>
+
+00:14:40.139 --> 00:14:40.149 align:start position:0%
+there's a hello our winch so with that
+ 
+
+00:14:40.149 --> 00:14:41.849 align:start position:0%
+there's a hello our winch so with that
+we've<00:14:40.509><c> looked</c><00:14:40.659><c> at</c><00:14:40.809><c> spring</c><00:14:41.139><c> security</c><00:14:41.589><c> five</c>
+
+00:14:41.849 --> 00:14:41.859 align:start position:0%
+we've looked at spring security five
+ 
+
+00:14:41.859 --> 00:14:43.799 align:start position:0%
+we've looked at spring security five
+there's<00:14:42.729><c> a</c><00:14:42.819><c> lot</c><00:14:42.939><c> of</c><00:14:43.029><c> really</c><00:14:43.209><c> cool</c><00:14:43.389><c> stuff</c><00:14:43.449><c> here</c>
+
+00:14:43.799 --> 00:14:43.809 align:start position:0%
+there's a lot of really cool stuff here
+ 
+
+00:14:43.809 --> 00:14:46.559 align:start position:0%
+there's a lot of really cool stuff here
+I've<00:14:44.350><c> just</c><00:14:44.409><c> touched</c><00:14:44.769><c> on</c><00:14:44.949><c> the</c><00:14:45.519><c> integration</c><00:14:46.269><c> for</c>
+
+00:14:46.559 --> 00:14:46.569 align:start position:0%
+I've just touched on the integration for
+ 
+
+00:14:46.569 --> 00:14:48.659 align:start position:0%
+I've just touched on the integration for
+securing<00:14:47.379><c> a</c><00:14:47.409><c> basic</c><00:14:47.679><c> web</c><00:14:47.799><c> application</c><00:14:48.309><c> using</c><00:14:48.549><c> H</c>
+
+00:14:48.659 --> 00:14:48.669 align:start position:0%
+securing a basic web application using H
+ 
+
+00:14:48.669 --> 00:14:49.979 align:start position:0%
+securing a basic web application using H
+to<00:14:48.819><c> be</c><00:14:48.879><c> basic</c><00:14:49.239><c> but</c><00:14:49.359><c> of</c><00:14:49.449><c> course</c><00:14:49.629><c> you'll</c><00:14:49.779><c> see</c><00:14:49.959><c> a</c>
+
+00:14:49.979 --> 00:14:49.989 align:start position:0%
+to be basic but of course you'll see a
+ 
+
+00:14:49.989 --> 00:14:52.649 align:start position:0%
+to be basic but of course you'll see a
+number<00:14:50.709><c> of</c><00:14:50.799><c> different</c><00:14:51.509><c> protocols</c><00:14:52.509><c> and</c>
+
+00:14:52.649 --> 00:14:52.659 align:start position:0%
+number of different protocols and
+ 
+
+00:14:52.659 --> 00:14:54.179 align:start position:0%
+number of different protocols and
+technology<00:14:53.139><c> support</c><00:14:53.319><c> and</c><00:14:53.619><c> spring</c><00:14:53.769><c> security</c>
+
+00:14:54.179 --> 00:14:54.189 align:start position:0%
+technology support and spring security
+ 
+
+00:14:54.189 --> 00:14:55.979 align:start position:0%
+technology support and spring security
+as<00:14:54.279><c> usual</c><00:14:54.609><c> one</c><00:14:55.149><c> of</c><00:14:55.299><c> which</c><00:14:55.419><c> of</c><00:14:55.449><c> course</c><00:14:55.629><c> is</c>
+
+00:14:55.979 --> 00:14:55.989 align:start position:0%
+as usual one of which of course is
+ 
+
+00:14:55.989 --> 00:14:58.619 align:start position:0%
+as usual one of which of course is
+oo-oo-oo<00:14:56.350><c> officer</c><00:14:57.239><c> has</c><00:14:58.239><c> been</c><00:14:58.389><c> previously</c>
+
+00:14:58.619 --> 00:14:58.629 align:start position:0%
+oo-oo-oo officer has been previously
+ 
+
+00:14:58.629 --> 00:15:01.469 align:start position:0%
+oo-oo-oo officer has been previously
+addressed<00:14:58.959><c> in</c><00:14:59.169><c> previously</c><00:14:59.529><c> supported</c><00:15:00.009><c> by</c><00:15:00.699><c> the</c>
+
+00:15:01.469 --> 00:15:01.479 align:start position:0%
+addressed in previously supported by the
+ 
+
+00:15:01.479 --> 00:15:03.299 align:start position:0%
+addressed in previously supported by the
+spring<00:15:01.749><c> cloud</c><00:15:02.409><c> security</c><00:15:02.709><c> and</c><00:15:03.129><c> spring</c>
+
+00:15:03.299 --> 00:15:03.309 align:start position:0%
+spring cloud security and spring
+ 
+
+00:15:03.309 --> 00:15:05.009 align:start position:0%
+spring cloud security and spring
+security<00:15:03.639><c> oauth</c><00:15:03.879><c> projects</c><00:15:04.269><c> themselves</c><00:15:04.389><c> the</c>
+
+00:15:05.009 --> 00:15:05.019 align:start position:0%
+security oauth projects themselves the
+ 
+
+00:15:05.019 --> 00:15:06.419 align:start position:0%
+security oauth projects themselves the
+spring<00:15:05.229><c> security</c><00:15:05.589><c> olaf</c><00:15:05.829><c> project</c><00:15:06.220><c> is</c><00:15:06.309><c> now</c>
+
+00:15:06.419 --> 00:15:06.429 align:start position:0%
+spring security olaf project is now
+ 
+
+00:15:06.429 --> 00:15:08.519 align:start position:0%
+spring security olaf project is now
+being<00:15:06.639><c> folded</c><00:15:07.269><c> into</c><00:15:07.779><c> spring</c><00:15:07.989><c> security</c><00:15:08.379><c> five</c>
+
+00:15:08.519 --> 00:15:08.529 align:start position:0%
+being folded into spring security five
+ 
+
+00:15:08.529 --> 00:15:10.909 align:start position:0%
+being folded into spring security five
+so<00:15:08.829><c> you'll</c><00:15:09.309><c> see</c><00:15:09.519><c> that</c><00:15:09.669><c> out</c><00:15:09.879><c> of</c><00:15:10.359><c> the</c><00:15:10.419><c> box</c>
+
+00:15:10.909 --> 00:15:10.919 align:start position:0%
+so you'll see that out of the box
+ 
+
+00:15:10.919 --> 00:15:13.399 align:start position:0%
+so you'll see that out of the box
+supported<00:15:11.919><c> and</c><00:15:12.100><c> interactive</c><00:15:12.639><c> fashion</c><00:15:12.939><c> in</c>
+
+00:15:13.399 --> 00:15:13.409 align:start position:0%
+supported and interactive fashion in
+ 
+
+00:15:13.409 --> 00:15:16.710 align:start position:0%
+supported and interactive fashion in
+spring<00:15:14.409><c> security</c><00:15:14.769><c> 5</c><00:15:14.949><c> itself</c><00:15:15.399><c> all</c><00:15:16.239><c> right</c><00:15:16.509><c> with</c>
+
+00:15:16.710 --> 00:15:16.720 align:start position:0%
+spring security 5 itself all right with
+ 
+
+00:15:16.720 --> 00:15:17.969 align:start position:0%
+spring security 5 itself all right with
+that<00:15:16.749><c> thanks</c><00:15:17.259><c> very</c><00:15:17.409><c> much</c><00:15:17.529><c> for</c><00:15:17.649><c> watching</c><00:15:17.709><c> and</c>
+
+00:15:17.969 --> 00:15:17.979 align:start position:0%
+that thanks very much for watching and
+ 
+
+00:15:17.979 --> 00:15:28.519 align:start position:0%
+that thanks very much for watching and
+we'll<00:15:18.159><c> see</c><00:15:18.339><c> you</c><00:15:18.429><c> next</c><00:15:18.639><c> time</c>
+
+00:15:28.519 --> 00:15:28.529 align:start position:0%
+ 
+ 
+
+00:15:28.529 --> 00:15:30.589 align:start position:0%
+ 
+you
+

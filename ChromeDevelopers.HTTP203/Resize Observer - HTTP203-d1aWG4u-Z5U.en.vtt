@@ -1,0 +1,581 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.460 --> 00:00:02.210
+JAKE ARCHIBALD: There's
+a lot of observers
+
+00:00:02.210 --> 00:00:05.020
+that I don't know
+why we have them.
+
+00:00:05.020 --> 00:00:05.520
+SURMA: OK.
+
+00:00:05.520 --> 00:00:08.061
+JAKE ARCHIBALD: Because a lot
+of them it's just sort of like,
+
+00:00:08.061 --> 00:00:10.420
+uh, this doesn't
+feel like an event
+
+00:00:10.420 --> 00:00:13.230
+or this is batched work
+or something like that.
+
+00:00:13.230 --> 00:00:16.487
+And the go-to has been to
+create an observer for it.
+
+00:00:16.487 --> 00:00:17.820
+And really, you don't need that.
+
+00:00:17.820 --> 00:00:19.070
+We could just use [INAUDIBLE].
+
+00:00:19.070 --> 00:00:21.810
+SURMA: I can come up with
+three observers right now.
+
+00:00:21.810 --> 00:00:26.190
+JAKE ARCHIBALD: Mutation,
+resize, intersection.
+
+00:00:26.190 --> 00:00:28.550
+I can also come up with three.
+
+00:00:28.550 --> 00:00:34.730
+[MUSIC PLAYING]
+
+00:00:34.730 --> 00:00:36.990
+Anyone who's done some
+work with CSS at some point
+
+00:00:36.990 --> 00:00:40.280
+using responsive stuff
+with media queries and such
+
+00:00:40.280 --> 00:00:46.040
+has kind of had the idea, ha,
+this media query stuff is OK,
+
+00:00:46.040 --> 00:00:48.200
+but what I really
+would like is a way
+
+00:00:48.200 --> 00:00:49.970
+to style this
+element differently
+
+00:00:49.970 --> 00:00:54.320
+to how big this element is.
+
+00:00:54.320 --> 00:00:58.020
+And then, go on Twitter and
+say, hey, I've had a bright idea
+
+00:00:58.020 --> 00:01:00.117
+or file a bug about it.
+
+00:01:00.117 --> 00:01:01.950
+I'm basically saying
+what I did, by the way.
+
+00:01:01.950 --> 00:01:03.540
+This is what I did years ago.
+
+00:01:03.540 --> 00:01:05.140
+And people were like yes, yes.
+
+00:01:05.140 --> 00:01:05.932
+SURMA: We know.
+
+00:01:05.932 --> 00:01:07.890
+JAKE ARCHIBALD: Many
+people have had this idea.
+
+00:01:07.890 --> 00:01:10.970
+The reason we can't just
+have element queries
+
+00:01:10.970 --> 00:01:15.800
+is because you can end
+up with a query which
+
+00:01:15.800 --> 00:01:17.090
+changes based on width.
+
+00:01:17.090 --> 00:01:19.800
+And as a result, it changes
+width and you end up in--
+
+00:01:19.800 --> 00:01:20.300
+SURMA: Whee.
+
+00:01:20.300 --> 00:01:21.758
+JAKE ARCHIBALD:
+--an infinite loop.
+
+00:01:21.758 --> 00:01:22.445
+Bad idea, right?
+
+00:01:22.445 --> 00:01:23.750
+SURMA: That seems pretty bad.
+
+00:01:23.750 --> 00:01:26.374
+JAKE ARCHIBALD: So there's a web
+standard called ResizeObserver
+
+00:01:26.374 --> 00:01:28.010
+and it's stable in Chrome.
+
+00:01:28.010 --> 00:01:30.440
+And [INAUDIBLE] for an element
+you just say that element
+
+00:01:30.440 --> 00:01:31.300
+there--
+
+00:01:31.300 --> 00:01:32.180
+SURMA: Observe.
+
+00:01:32.180 --> 00:01:34.471
+JAKE ARCHIBALD: Yeah, let me
+know when it changes size.
+
+00:01:34.471 --> 00:01:36.590
+SURMA: All right, that's cool.
+
+00:01:36.590 --> 00:01:38.580
+So that means it can react.
+
+00:01:38.580 --> 00:01:41.450
+It's a JavaScript API, so it
+can react with JavaScript.
+
+00:01:41.450 --> 00:01:42.450
+JAKE ARCHIBALD: Exactly.
+
+00:01:42.450 --> 00:01:44.270
+SURMA: So we are back at
+the infinite loop problem.
+
+00:01:44.270 --> 00:01:45.120
+JAKE ARCHIBALD: So I
+was reading your article
+
+00:01:45.120 --> 00:01:47.290
+and you've got a
+section on that.
+
+00:01:47.290 --> 00:01:48.060
+SURMA: Do I?
+
+00:01:48.060 --> 00:01:50.268
+JAKE ARCHIBALD: You've got,
+yeah, just a little bit--
+
+00:01:50.268 --> 00:01:52.430
+a little bit of text on it.
+
+00:01:52.430 --> 00:01:54.740
+Changes will only be
+processed in the same frame
+
+00:01:54.740 --> 00:01:56.750
+if the resize element is
+deeper in the DOM tree
+
+00:01:56.750 --> 00:01:58.208
+than the shallowest
+element process
+
+00:01:58.208 --> 00:01:59.286
+in the previous callback.
+
+00:01:59.286 --> 00:02:00.410
+SURMA: That's a weird menu.
+
+00:02:00.410 --> 00:02:01.410
+JAKE ARCHIBALD: Perfect.
+
+00:02:03.850 --> 00:02:06.450
+So that's just words.
+
+00:02:06.450 --> 00:02:09.250
+That's just some words
+you like in an order.
+
+00:02:09.250 --> 00:02:11.217
+SURMA: I think I explained
+it pretty concisely.
+
+00:02:11.217 --> 00:02:12.550
+This that actually what I wrote?
+
+00:02:12.550 --> 00:02:13.010
+JAKE ARCHIBALD: Yeah.
+
+00:02:13.010 --> 00:02:13.690
+Talk us through it.
+
+00:02:13.690 --> 00:02:14.290
+SURMA: OK.
+
+00:02:14.290 --> 00:02:14.860
+JAKE ARCHIBALD: I'm just
+saying that because I
+
+00:02:14.860 --> 00:02:16.901
+don't understand some, so
+taking advantage of it.
+
+00:02:16.901 --> 00:02:21.850
+SURMA: So imagine you have
+an element that has children,
+
+00:02:21.850 --> 00:02:23.600
+as is common.
+
+00:02:23.600 --> 00:02:26.320
+And you call
+ResizeObserver.observe
+
+00:02:26.320 --> 00:02:28.180
+on this element.
+
+00:02:28.180 --> 00:02:29.461
+JAKE ARCHIBALD: On the parent?
+
+00:02:29.461 --> 00:02:30.460
+SURMA: Yeah, on the big.
+
+00:02:30.460 --> 00:02:31.630
+JAKE ARCHIBALD: All right,
+all right, all right.
+
+00:02:31.630 --> 00:02:33.838
+SURMA: That means whenever
+this element changes size,
+
+00:02:33.838 --> 00:02:35.870
+you will get a callback
+and you can react to it.
+
+00:02:35.870 --> 00:02:36.685
+JAKE ARCHIBALD: Cool.
+
+00:02:36.685 --> 00:02:37.030
+Excellent.
+
+00:02:37.030 --> 00:02:37.529
+Yeah.
+
+00:02:37.529 --> 00:02:39.190
+SURMA: So now, let's
+assume you also
+
+00:02:39.190 --> 00:02:42.100
+call another
+ResizeObserver.observe on one
+
+00:02:42.100 --> 00:02:43.397
+of the children.
+
+00:02:43.397 --> 00:02:45.980
+JAKE ARCHIBALD: OK, because as
+a result of the parent changing
+
+00:02:45.980 --> 00:02:46.930
+size, the children could change.
+
+00:02:46.930 --> 00:02:48.346
+SURMA: Could change
+size, and want
+
+00:02:48.346 --> 00:02:51.100
+to be notified about both,
+so both ResizeObservers would
+
+00:02:51.100 --> 00:02:54.144
+fire their callbacks and
+you would get notified.
+
+00:02:54.144 --> 00:02:55.060
+JAKE ARCHIBALD: Right.
+
+00:02:55.060 --> 00:02:56.830
+SURMA: Let's assume
+a third thing
+
+00:02:56.830 --> 00:03:00.040
+that in one of the
+children's callbacks,
+
+00:03:00.040 --> 00:03:01.424
+I change the parent's size.
+
+00:03:01.424 --> 00:03:03.090
+It's JavaScript,
+that's possible, right?
+
+00:03:03.090 --> 00:03:04.830
+I can just change
+anything in the DOM.
+
+00:03:04.830 --> 00:03:05.040
+JAKE ARCHIBALD: Gotcha.
+
+00:03:05.040 --> 00:03:06.220
+And it could even
+be done implicitly
+
+00:03:06.220 --> 00:03:08.110
+by changing the size of
+the child, which would--
+
+00:03:08.110 --> 00:03:09.935
+SURMA: Potentially,
+if it's just text flow
+
+00:03:09.935 --> 00:03:11.410
+or just append some text.
+
+00:03:11.410 --> 00:03:12.493
+JAKE ARCHIBALD: Right, OK.
+
+00:03:12.493 --> 00:03:15.430
+SURMA: The parent could suddenly
+grow, and then technically,
+
+00:03:15.430 --> 00:03:16.529
+the outer-- the bigger--
+
+00:03:16.529 --> 00:03:18.070
+ResizeObserver from
+the other element
+
+00:03:18.070 --> 00:03:21.110
+will have to fire again, and the
+smaller one probably as well,
+
+00:03:21.110 --> 00:03:22.680
+and then it could same happen
+again, and again, and again.
+
+00:03:22.680 --> 00:03:23.500
+JAKE ARCHIBALD:
+There's your loop.
+
+00:03:23.500 --> 00:03:24.880
+SURMA: And how we
+break this loop
+
+00:03:24.880 --> 00:03:28.310
+is with a rule that
+ResizeObservers--
+
+00:03:28.310 --> 00:03:30.880
+all the ResizeObserver
+will fire in the same frame
+
+00:03:30.880 --> 00:03:31.937
+before layout.
+
+00:03:31.937 --> 00:03:33.520
+And if you change
+within the same one,
+
+00:03:33.520 --> 00:03:36.070
+they will also fire
+within the same frame,
+
+00:03:36.070 --> 00:03:39.520
+unless the change has been
+made to an element that
+
+00:03:39.520 --> 00:03:41.682
+is at the same level or
+higher up the DOM tree.
+
+00:03:41.682 --> 00:03:44.140
+JAKE ARCHIBALD: So it's like,
+in terms of how we talk about
+
+00:03:44.140 --> 00:03:45.902
+events capturing, it's--
+
+00:03:45.902 --> 00:03:47.110
+SURMA: It's reverse bubbling.
+
+00:03:47.110 --> 00:03:47.980
+JAKE ARCHIBALD:
+Yeah, but capturing.
+
+00:03:47.980 --> 00:03:50.530
+So that's the-- ah, so
+that's the direction it goes.
+
+00:03:50.530 --> 00:03:53.980
+SURMA: So you can only
+have multiple invocations
+
+00:03:53.980 --> 00:03:56.440
+of your callbacks
+downwards of the tree.
+
+00:03:56.440 --> 00:03:59.302
+But if some of them that
+are high up in the tree
+
+00:03:59.302 --> 00:04:00.760
+would have to
+refire, that would be
+
+00:04:00.760 --> 00:04:01.969
+delayed until the next frame.
+
+00:04:01.969 --> 00:04:03.510
+JAKE ARCHIBALD: So
+what you're saying
+
+00:04:03.510 --> 00:04:05.890
+is that the change is only
+processed in the same frame
+
+00:04:05.890 --> 00:04:09.342
+if the resized element
+is deeper in the DOM tree
+
+00:04:09.342 --> 00:04:10.999
+than the shallowest
+element processed
+
+00:04:10.999 --> 00:04:12.040
+in the previous callback.
+
+00:04:12.040 --> 00:04:13.623
+SURMA: That's exactly
+what I'm saying.
+
+00:04:13.623 --> 00:04:16.399
+And that's actually
+what I wrote.
+
+00:04:16.399 --> 00:04:17.899
+JAKE ARCHIBALD: It
+makes sense now.
+
+00:04:17.899 --> 00:04:19.881
+It's perfect.
+
+00:04:19.881 --> 00:04:22.089
+You should have put that in
+the article like you did.
+
+00:04:22.089 --> 00:04:23.506
+SURMA: I think at
+the end, I think
+
+00:04:23.506 --> 00:04:25.214
+I remember writing
+this article and there
+
+00:04:25.214 --> 00:04:26.770
+were lots of things changing.
+
+00:04:26.770 --> 00:04:28.630
+And so, I got a bit
+annoyed because I
+
+00:04:28.630 --> 00:04:31.560
+think I was working on an
+animation, and at the end,
+
+00:04:31.560 --> 00:04:34.139
+I was like, nah.
+
+00:04:34.139 --> 00:04:36.430
+JAKE ARCHIBALD: Just copy
+and paste that from the spec.
+
+00:04:36.430 --> 00:04:37.100
+Job done.
+
+00:04:37.100 --> 00:04:38.470
+All right, well, yes.
+
+00:04:38.470 --> 00:04:39.140
+I like it.
+
+00:04:39.140 --> 00:04:41.680
+I think we should keep
+it in the browser.
+
+00:04:41.680 --> 00:04:44.530
+I think other people
+should implement it.
+
+00:04:44.530 --> 00:04:46.580
+SURMA: That's us doing
+advocacy, isn't it?
+
+00:04:46.580 --> 00:04:48.622
+Other people should
+implement it, please.
+
+00:04:48.622 --> 00:04:50.830
+JAKE ARCHIBALD: We didn't
+give that trendy weightless
+
+00:04:50.830 --> 00:04:52.290
+CSS name, did we?
+
+00:04:52.290 --> 00:04:52.790
+Did I?
+
+00:04:52.790 --> 00:04:57.040
+SURMA: Is it layout enhancer.
+
+00:04:57.040 --> 00:04:59.040
+JAKE ARCHIBALD:
+Layout enhancer--
+
+00:04:59.040 --> 00:05:04.020
+I think I get a lot of emails
+about that to my Spam folder.
+
+00:05:04.020 --> 00:05:05.450
+So this is a real cafe?
+
+00:05:05.450 --> 00:05:07.000
+It's a real cafe, yes?
+
+00:05:07.000 --> 00:05:07.510
+Of course.
+
+00:05:07.510 --> 00:05:09.135
+[INAUDIBLE] podcast,
+could be anywhere.
+
+00:05:09.135 --> 00:05:09.903
+It could be--
+
+00:05:09.903 --> 00:05:10.444
+SURMA: Space.
+
+00:05:10.444 --> 00:05:12.007
+In space.
+
+00:05:12.007 --> 00:05:14.340
+JAKE ARCHIBALD: Now, when we
+do the two minute segments,
+
+00:05:14.340 --> 00:05:16.770
+I want that as the noise.
+
+00:05:16.770 --> 00:05:19.350
+You just go space.
+

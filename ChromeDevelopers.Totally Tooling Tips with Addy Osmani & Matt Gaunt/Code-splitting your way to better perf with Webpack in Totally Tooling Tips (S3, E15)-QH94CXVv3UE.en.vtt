@@ -1,0 +1,729 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.446
+[MUSIC PLAYING]
+
+00:00:10.380 --> 00:00:13.470
+SPEAKER 1: So we previously did
+an episode on JavaScript module
+
+00:00:13.470 --> 00:00:14.130
+bundling.
+
+00:00:14.130 --> 00:00:14.490
+SPEAKER 2: Lies.
+
+00:00:14.490 --> 00:00:17.031
+SPEAKER 1: And then you spent
+three weeks crying in a corner,
+
+00:00:17.031 --> 00:00:18.192
+because we did that show.
+
+00:00:18.192 --> 00:00:18.900
+SPEAKER 2: Mm-hm.
+
+00:00:18.900 --> 00:00:20.900
+And then, someone actually
+brought out the thing
+
+00:00:20.900 --> 00:00:22.432
+that we said was a joke.
+
+00:00:22.432 --> 00:00:23.640
+I can't remember what it was.
+
+00:00:23.640 --> 00:00:27.496
+It was like rollup, like, pack
+a file, some weird mix of stuff.
+
+00:00:27.496 --> 00:00:28.620
+And then it became a thing.
+
+00:00:28.620 --> 00:00:30.240
+SPEAKER 1: Frankenstein's
+JavaScript monster.
+
+00:00:30.240 --> 00:00:30.840
+It was great.
+
+00:00:30.840 --> 00:00:32.340
+SPEAKER 2: I would
+actually love it,
+
+00:00:32.340 --> 00:00:34.860
+if a module came out that was
+Frankenstein.js or something.
+
+00:00:34.860 --> 00:00:35.910
+It probably exists.
+
+00:00:35.910 --> 00:00:36.210
+SPEAKER 1: It probably is.
+
+00:00:36.210 --> 00:00:37.211
+It's probably a library.
+
+00:00:37.211 --> 00:00:37.876
+SPEAKER 2: Yeah.
+
+00:00:37.876 --> 00:00:38.490
+Anyway, sorry.
+
+00:00:38.490 --> 00:00:39.782
+Where were you going with that?
+
+00:00:39.782 --> 00:00:41.948
+SPEAKER 1: Today, I wanted
+to talk a little bit more
+
+00:00:41.948 --> 00:00:44.340
+about webpack, and specifically
+giving people three tips.
+
+00:00:44.340 --> 00:00:46.520
+I've been doing some
+research recently
+
+00:00:46.520 --> 00:00:50.640
+into React and web performance
+on real-world devices,
+
+00:00:50.640 --> 00:00:52.680
+and this was sort of
+backed up by the survey
+
+00:00:52.680 --> 00:00:54.600
+that I did where I asked
+people, what are you
+
+00:00:54.600 --> 00:00:55.891
+doing with React in production?
+
+00:00:55.891 --> 00:00:58.230
+Are you using
+webpack? webpack 1, 2?
+
+00:00:58.230 --> 00:00:58.960
+Browser file?
+
+00:00:58.960 --> 00:00:59.220
+What are you doing?
+
+00:00:59.220 --> 00:01:00.600
+SPEAKER 2: Whether they
+were bundling or not,
+
+00:01:00.600 --> 00:01:02.500
+and how they were picking
+it, and-- yeah, yeah.
+
+00:01:02.500 --> 00:01:02.569
+SPEAKER 1: Yeah.
+
+00:01:02.569 --> 00:01:04.680
+And What I discovered
+was that a lot of people
+
+00:01:04.680 --> 00:01:06.230
+are confused by code splitting.
+
+00:01:06.230 --> 00:01:08.640
+But concepts like code
+splitting, some people
+
+00:01:08.640 --> 00:01:10.020
+are using it, some are not.
+
+00:01:10.020 --> 00:01:12.960
+Some are using it, and then
+not entirely understanding
+
+00:01:12.960 --> 00:01:13.789
+how to do it right.
+
+00:01:13.789 --> 00:01:16.080
+So I wanted to quickly cover
+some of the concepts there
+
+00:01:16.080 --> 00:01:17.100
+[INAUDIBLE].
+
+00:01:17.100 --> 00:01:19.475
+So do you know what
+code splitting is?
+
+00:01:19.475 --> 00:01:21.975
+SPEAKER 2: That's the way that
+you-- basically, this window,
+
+00:01:21.975 --> 00:01:25.122
+or this bundle should consist
+of these files, right?
+
+00:01:25.122 --> 00:01:26.580
+And then you kind
+of say, so that's
+
+00:01:26.580 --> 00:01:28.226
+going to be bundle 1, that's
+going to be bundle 2, that's
+
+00:01:28.226 --> 00:01:29.101
+going to be bundle 3.
+
+00:01:29.101 --> 00:01:31.642
+So splitting is the act of
+deciding where those lines are.
+
+00:01:31.642 --> 00:01:32.350
+SPEAKER 1: Right.
+
+00:01:32.350 --> 00:01:33.933
+And if you're doing
+it intelligently--
+
+00:01:33.933 --> 00:01:35.435
+maybe you're just
+going to ship down
+
+00:01:35.435 --> 00:01:36.810
+the smallest amount
+of JavaScript
+
+00:01:36.810 --> 00:01:39.300
+necessary for a route,
+or a view to your users,
+
+00:01:39.300 --> 00:01:41.130
+and then lazy load in the rest.
+
+00:01:41.130 --> 00:01:42.930
+This isn't a new idea.
+
+00:01:42.930 --> 00:01:45.450
+Gmail did it a
+million years ago.
+
+00:01:45.450 --> 00:01:46.826
+In webpack, it's
+pretty-- I would
+
+00:01:46.826 --> 00:01:48.866
+say that, once you know
+how code splitting works,
+
+00:01:48.866 --> 00:01:50.670
+it's pretty trivial to
+do on every project.
+
+00:01:50.670 --> 00:01:53.170
+But it's getting to that point
+that it requires you to read,
+
+00:01:53.170 --> 00:01:54.400
+like, a bajillion blog posts.
+
+00:01:54.400 --> 00:01:56.670
+SPEAKER 2: So you're going
+to do it in this five tip?
+
+00:01:56.670 --> 00:01:58.628
+SPEAKER 1: I'm going to
+cover it in 15 seconds.
+
+00:01:58.628 --> 00:02:02.145
+So in webpack, if you're using
+require.ensure in your webpack
+
+00:02:02.145 --> 00:02:06.024
+1 code, it will basically allow
+you to apply code splitting.
+
+00:02:06.024 --> 00:02:07.440
+If you're using
+webpack 2, you can
+
+00:02:07.440 --> 00:02:09.814
+use system.import to
+do the same thing.
+
+00:02:09.814 --> 00:02:11.480
+So if it detects that
+you're using that,
+
+00:02:11.480 --> 00:02:14.070
+it'll allow you to basically
+split up that bundle,
+
+00:02:14.070 --> 00:02:17.475
+based on that particular
+blob of JS being used.
+
+00:02:17.475 --> 00:02:19.940
+So every time it runs
+into a require.ensure
+
+00:02:19.940 --> 00:02:23.392
+for, say, a view, it'll put
+that code into a new chunk.
+
+00:02:23.392 --> 00:02:24.850
+And if you navigate
+to that chunk--
+
+00:02:24.850 --> 00:02:27.480
+so if you happen
+to be using webpack
+
+00:02:27.480 --> 00:02:29.640
+with things like
+react-router, for example,
+
+00:02:29.640 --> 00:02:31.440
+it plays in really,
+really nicely.
+
+00:02:31.440 --> 00:02:33.720
+You can just load in the
+JS necessary for a route,
+
+00:02:33.720 --> 00:02:36.090
+and then lazy load in the
+other pieces as needed.
+
+00:02:36.090 --> 00:02:38.760
+Where people get tripped
+up here is either
+
+00:02:38.760 --> 00:02:41.687
+they'll use code
+splitting, or they'll
+
+00:02:41.687 --> 00:02:43.770
+think they'll use code
+splitting-- because webpack
+
+00:02:43.770 --> 00:02:48.160
+also supports this other idea
+called, the CommonsChunkPlugin.
+
+00:02:48.160 --> 00:02:50.280
+So the CommonsChunkPlugin--
+so normally in an app,
+
+00:02:50.280 --> 00:02:52.140
+let's say you're
+using libraries,
+
+00:02:52.140 --> 00:02:53.817
+or frameworks, or
+whatever, right.
+
+00:02:53.817 --> 00:02:55.650
+You could have multiple
+views, some of which
+
+00:02:55.650 --> 00:02:58.080
+are going to have
+similar code, right?
+
+00:02:58.080 --> 00:03:00.900
+And that's sort of your
+vendor bundle, right?
+
+00:03:00.900 --> 00:03:03.630
+And that's code that you
+may need to load up upfront,
+
+00:03:03.630 --> 00:03:06.450
+in order to get the
+route useful in any way.
+
+00:03:06.450 --> 00:03:08.992
+It might be a load hash, or your
+React, or whatever have you.
+
+00:03:08.992 --> 00:03:11.450
+SPEAKER 2: This is kind of the
+stuff that has to be loaded,
+
+00:03:11.450 --> 00:03:12.130
+no matter what.
+
+00:03:12.130 --> 00:03:14.345
+And it's common enough
+that it should just-- even
+
+00:03:14.345 --> 00:03:16.470
+if it's large, it's kind
+of like, OK, take the hit,
+
+00:03:16.470 --> 00:03:18.300
+because every single
+page is gonna need it.
+
+00:03:18.300 --> 00:03:18.930
+SPEAKER 1: Exactly.
+
+00:03:18.930 --> 00:03:20.850
+So the CommonsChunkPlugin
+helps you basically
+
+00:03:20.850 --> 00:03:23.940
+split out the stuff that's
+common between your different
+
+00:03:23.940 --> 00:03:24.797
+modules into--
+
+00:03:24.797 --> 00:03:25.380
+SPEAKER 2: OK.
+
+00:03:25.380 --> 00:03:26.775
+SPEAKER 1: --into a
+common vendor bundle.
+
+00:03:26.775 --> 00:03:27.240
+SPEAKER 2: Yep.
+
+00:03:27.240 --> 00:03:27.948
+SPEAKER 1: Right?
+
+00:03:27.948 --> 00:03:28.832
+So that's tip two.
+
+00:03:28.832 --> 00:03:30.540
+Now, where people are
+running into issues
+
+00:03:30.540 --> 00:03:32.760
+with code splitting is that
+they're splitting their code,
+
+00:03:32.760 --> 00:03:34.135
+but they're still,
+in many cases,
+
+00:03:34.135 --> 00:03:36.360
+shipping down a huge
+blob of JavaScript
+
+00:03:36.360 --> 00:03:39.240
+that they don't necessarily
+need for just the stuff
+
+00:03:39.240 --> 00:03:41.300
+that route's going to do.
+
+00:03:41.300 --> 00:03:44.340
+So what I was
+seeing in the traces
+
+00:03:44.340 --> 00:03:46.890
+I was profiling was some
+people are shipping up
+
+00:03:46.890 --> 00:03:49.932
+to a meg of JavaScript, just
+for a single route, which
+
+00:03:49.932 --> 00:03:50.640
+is kind of crazy.
+
+00:03:50.640 --> 00:03:53.380
+SPEAKER 2: And is this because
+they've got a large vendor JS?
+
+00:03:53.380 --> 00:03:55.470
+Like a large common vendor JS?
+
+00:03:55.470 --> 00:03:56.150
+Or is it just--
+
+00:03:56.150 --> 00:03:56.830
+SPEAKER 1: It's a mix of things.
+
+00:03:56.830 --> 00:03:58.440
+Sometimes, it's a
+large vendor bundle
+
+00:03:58.440 --> 00:04:01.880
+where they're just happening
+to ship down libraries
+
+00:04:01.880 --> 00:04:03.300
+that that route doesn't need.
+
+00:04:03.300 --> 00:04:04.950
+In other cases,
+it's where they're
+
+00:04:04.950 --> 00:04:08.190
+loading in stuff for other
+routes by accident, or just
+
+00:04:08.190 --> 00:04:11.070
+not being particularly
+diligent about what
+
+00:04:11.070 --> 00:04:13.440
+they're including in the
+main chunks for each view.
+
+00:04:13.440 --> 00:04:15.480
+So that's a good thing
+to stay on top of.
+
+00:04:15.480 --> 00:04:18.360
+Just keep in mind
+what size-- webpack
+
+00:04:18.360 --> 00:04:20.797
+has got this way of summarizing
+all of the chunk sizes,
+
+00:04:20.797 --> 00:04:23.130
+when you're doing code splitting
+in their point of view.
+
+00:04:23.130 --> 00:04:25.200
+Just keep an eye on those sizes.
+
+00:04:25.200 --> 00:04:28.840
+Currently, we've been
+working on an RFC for webpack
+
+00:04:28.840 --> 00:04:31.320
+to maybe try providing
+you performance
+
+00:04:31.320 --> 00:04:33.605
+insights, or performance
+budget of some sort.
+
+00:04:33.605 --> 00:04:34.980
+And if something
+like that lands,
+
+00:04:34.980 --> 00:04:36.355
+I think it'll,
+hopefully, make it
+
+00:04:36.355 --> 00:04:37.950
+a little bit easier
+for people to know
+
+00:04:37.950 --> 00:04:38.690
+that they have an issue.
+
+00:04:38.690 --> 00:04:39.270
+SPEAKER 2: Another
+thing I see you're
+
+00:04:39.270 --> 00:04:41.910
+looking at where it might
+show a red line going,
+
+00:04:41.910 --> 00:04:44.550
+this is X amount of
+kilobytes or megabytes,
+
+00:04:44.550 --> 00:04:47.040
+and you should seriously
+consider breaking it up.
+
+00:04:47.040 --> 00:04:51.750
+SPEAKER 1: The other tip was,
+if you happen to be using HB2,
+
+00:04:51.750 --> 00:04:53.430
+there is another
+webpack plugin, called
+
+00:04:53.430 --> 00:04:55.120
+the AggressiveSplittingPlugin.
+
+00:04:55.120 --> 00:04:56.270
+Just sounds really violent.
+
+00:04:56.270 --> 00:04:57.645
+SPEAKER 2: Yeah,
+I was gonna say,
+
+00:04:57.645 --> 00:04:59.660
+that doesn't sound like
+something I'd want.
+
+00:04:59.660 --> 00:05:01.326
+SPEAKER 1: The
+AggressiveSplittingPlugin
+
+00:05:01.326 --> 00:05:03.690
+basically gives you
+a way to split up
+
+00:05:03.690 --> 00:05:06.060
+your chunks with a
+maximum and minimum size.
+
+00:05:06.060 --> 00:05:08.179
+So you can specify
+exactly what--
+
+00:05:08.179 --> 00:05:10.470
+it's like upper bounds you
+want, and it will figure out
+
+00:05:10.470 --> 00:05:14.220
+some magic around that
+to make those work.
+
+00:05:14.220 --> 00:05:16.814
+SPEAKER 2: That
+sounds very risky.
+
+00:05:16.814 --> 00:05:18.730
+I don't know why, just
+the idea of, oh, you've
+
+00:05:18.730 --> 00:05:20.813
+reached this certain max
+size, so chop it in half,
+
+00:05:20.813 --> 00:05:21.910
+and don't worry about it.
+
+00:05:21.910 --> 00:05:22.920
+SPEAKER 1: It works in practice.
+
+00:05:22.920 --> 00:05:23.820
+I think it's
+definitely something
+
+00:05:23.820 --> 00:05:26.280
+that people need to spend
+a little bit more time on.
+
+00:05:26.280 --> 00:05:27.635
+But it's supported.
+
+00:05:27.635 --> 00:05:29.760
+It's good to know that
+webpack is sort of exploring
+
+00:05:29.760 --> 00:05:31.282
+the ideas around H2.
+
+00:05:31.282 --> 00:05:33.240
+I think that, in addition
+to sort of-- so we've
+
+00:05:33.240 --> 00:05:33.930
+talked about three tips.
+
+00:05:33.930 --> 00:05:36.420
+We've talked about code
+splitting, CommonsChunkPlugin,
+
+00:05:36.420 --> 00:05:38.580
+AggressiveSplittingPlugin.
+
+00:05:38.580 --> 00:05:41.420
+As always, because we're all
+about the service worker,
+
+00:05:41.420 --> 00:05:44.100
+if you're gonna use
+all these libraries
+
+00:05:44.100 --> 00:05:45.960
+and things in your
+builds these days,
+
+00:05:45.960 --> 00:05:49.710
+it's great to not have to
+pay as much cost to the user
+
+00:05:49.710 --> 00:05:51.384
+to load them up again
+on Repeat visit.
+
+00:05:51.384 --> 00:05:52.050
+SPEAKER 2: Yeah.
+
+00:05:52.050 --> 00:05:54.258
+SPEAKER 1: So there are
+plugins, like Service Worker,
+
+00:05:54.258 --> 00:05:56.730
+or Precache Webpack
+Plugin, which
+
+00:05:56.730 --> 00:05:59.010
+let you use Service Worker
+Precache, which we work on.
+
+00:05:59.010 --> 00:06:00.120
+And that's beautiful.
+
+00:06:00.120 --> 00:06:01.720
+SPEAKER 2: Just builds your
+Service Worker for you.
+
+00:06:01.720 --> 00:06:02.690
+You don't have to
+think about it.
+
+00:06:02.690 --> 00:06:02.930
+SPEAKER 1: Yep.
+
+00:06:02.930 --> 00:06:05.346
+Saves your users time, when
+it comes to that Repeat visit.
+
+00:06:05.346 --> 00:06:07.350
+So check that out, as well.
+
+00:06:07.350 --> 00:06:10.020
+Plenty more webpack tips
+in some of the articles
+
+00:06:10.020 --> 00:06:12.510
+that we've been tweeting
+about lately and writing,
+
+00:06:12.510 --> 00:06:13.320
+so check those out.
+
+00:06:13.320 --> 00:06:14.280
+SPEAKER 2: Because I
+believe you've been
+
+00:06:14.280 --> 00:06:15.900
+writing a lot on Medium lately.
+
+00:06:15.900 --> 00:06:18.750
+SPEAKER 1: I have been writing
+a lot on Medium lately.
+
+00:06:18.750 --> 00:06:21.360
+People can check that stuff
+out, if they so please.
+
+00:06:21.360 --> 00:06:23.400
+Those are just a
+few webpack tips.
+
+00:06:23.400 --> 00:06:25.154
+And hopefully, they
+will come in useful.
+
+00:06:25.154 --> 00:06:25.820
+SPEAKER 2: Yeah.
+
+00:06:25.820 --> 00:06:29.470
+[MUSIC PLAYING]
+

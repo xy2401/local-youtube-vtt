@@ -1,0 +1,607 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.336 --> 00:00:01.460
+ROB DODSON: Hey, everybody.
+
+00:00:01.460 --> 00:00:01.959
+What's up?
+
+00:00:01.959 --> 00:00:04.370
+It's Rob Dodson here, from
+the Google Developer Relations
+
+00:00:04.370 --> 00:00:04.880
+team.
+
+00:00:04.880 --> 00:00:06.755
+And in this series we're
+going to be covering
+
+00:00:06.755 --> 00:00:10.180
+the basics of using
+Polymer's core-icon elements.
+
+00:00:10.180 --> 00:00:11.620
+In lesson 1, we'll
+look at how you
+
+00:00:11.620 --> 00:00:15.224
+can use core-icon to get your
+very first image up on screen.
+
+00:00:15.224 --> 00:00:16.640
+And in lesson 2,
+we'll look at how
+
+00:00:16.640 --> 00:00:20.160
+you can load in a custom
+icon set of your own making.
+
+00:00:20.160 --> 00:00:22.640
+But let's start
+with Lesson 1, how
+
+00:00:22.640 --> 00:00:25.100
+to get your very first
+icon up on screen.
+
+00:00:25.100 --> 00:00:26.660
+So just about every
+website is going
+
+00:00:26.660 --> 00:00:28.230
+to need to use
+icons at some point.
+
+00:00:28.230 --> 00:00:29.938
+So you know, looking
+at the Polymer site,
+
+00:00:29.938 --> 00:00:31.325
+we've got the Search icon here.
+
+00:00:31.325 --> 00:00:33.202
+We've got a few
+buttons with icons.
+
+00:00:33.202 --> 00:00:34.660
+We've even got some
+of these arrows
+
+00:00:34.660 --> 00:00:35.794
+down here that include it.
+
+00:00:35.794 --> 00:00:37.460
+And so, what we're
+going to do today is,
+
+00:00:37.460 --> 00:00:40.040
+we're going to look at how you
+can use the core-icon element
+
+00:00:40.040 --> 00:00:42.150
+to get a single
+icon up on screen,
+
+00:00:42.150 --> 00:00:44.660
+maybe something like a letter.
+
+00:00:44.660 --> 00:00:47.090
+And how you could use maybe
+the core-icon elements
+
+00:00:47.090 --> 00:00:49.960
+set to load in a
+default set of icons.
+
+00:00:49.960 --> 00:00:51.360
+That'll make it
+just a lot faster
+
+00:00:51.360 --> 00:00:54.990
+for you to get some icons
+displaying on screen.
+
+00:00:54.990 --> 00:00:57.270
+So, starting us off,
+let's first look at how
+
+00:00:57.270 --> 00:00:59.260
+we can get a core-icon
+up on screen.
+
+00:00:59.260 --> 00:01:01.218
+So here, I'm assuming
+it's in bower_components.
+
+00:01:01.218 --> 00:01:04.060
+And I've just imported
+its definition.
+
+00:01:04.060 --> 00:01:07.600
+And once I drop my
+core-icon on the page,
+
+00:01:07.600 --> 00:01:10.540
+I can give it a source attribute
+and point to some image file
+
+00:01:10.540 --> 00:01:11.790
+that I've got saved somewhere.
+
+00:01:11.790 --> 00:01:14.470
+So here I'm loading
+this Android icon.
+
+00:01:14.470 --> 00:01:18.410
+But I could refer to just about
+any image format that I want.
+
+00:01:18.410 --> 00:01:20.360
+It doesn't have to
+necessarily be SVG.
+
+00:01:20.360 --> 00:01:26.180
+It could be like a png, a gif,
+webp-- something like that.
+
+00:01:26.180 --> 00:01:29.450
+But typically we prefer, and
+we recommend, that you use SVG.
+
+00:01:29.450 --> 00:01:31.810
+Primarily because
+it's a vector format.
+
+00:01:31.810 --> 00:01:34.750
+Which means, it's not going
+to lose any quality as you're
+
+00:01:34.750 --> 00:01:36.867
+scaling the image up
+or scaling it down.
+
+00:01:36.867 --> 00:01:38.450
+Now, you might look
+at this and think,
+
+00:01:38.450 --> 00:01:40.290
+it's not really a
+significant improvement
+
+00:01:40.290 --> 00:01:42.290
+over using something
+like the image tag.
+
+00:01:42.290 --> 00:01:45.150
+We've still got to refer to
+some source attribute, that's
+
+00:01:45.150 --> 00:01:46.960
+some file that we've
+got saved on disk.
+
+00:01:46.960 --> 00:01:50.070
+And that doesn't really
+save us that much time.
+
+00:01:50.070 --> 00:01:51.560
+So to make things
+easier on us, we
+
+00:01:51.560 --> 00:01:54.325
+can actually include a
+default icon set and pull
+
+00:01:54.325 --> 00:01:55.630
+our icons from there.
+
+00:01:55.630 --> 00:01:57.110
+So let's take a look at that.
+
+00:01:57.110 --> 00:01:59.970
+So here I'm including
+core-icons, instead of
+
+00:01:59.970 --> 00:02:01.154
+just the core-icon element.
+
+00:02:01.154 --> 00:02:01.820
+Note the s here.
+
+00:02:01.820 --> 00:02:03.440
+This is plural.
+
+00:02:03.440 --> 00:02:04.940
+And what that's
+doing is, it's going
+
+00:02:04.940 --> 00:02:06.856
+to still load in the
+definition for core-icon,
+
+00:02:06.856 --> 00:02:09.550
+but it's also going to
+pull in a default icon set.
+
+00:02:09.550 --> 00:02:12.040
+So now you can just say,
+hey, I want an icon.
+
+00:02:12.040 --> 00:02:13.530
+I want it to be an Android icon.
+
+00:02:13.530 --> 00:02:16.710
+And it's going to load that
+from my default icon set.
+
+00:02:16.710 --> 00:02:18.430
+There's a bunch of
+icons in the set.
+
+00:02:18.430 --> 00:02:20.780
+So I could throw
+in a Cloud icon.
+
+00:02:20.780 --> 00:02:23.000
+I could throw in a Polymer icon.
+
+00:02:23.000 --> 00:02:25.652
+In fact, if you want to take a
+look at the full suite of icons
+
+00:02:25.652 --> 00:02:27.860
+that are in the default set,
+you can follow this link
+
+00:02:27.860 --> 00:02:28.760
+right here.
+
+00:02:28.760 --> 00:02:30.040
+That'll take you to this page.
+
+00:02:30.040 --> 00:02:31.539
+There's tons of
+great stuff that you
+
+00:02:31.539 --> 00:02:34.100
+can look at and throw into
+your site or application.
+
+00:02:34.100 --> 00:02:34.600
+All right.
+
+00:02:34.600 --> 00:02:36.120
+Now we've got something
+showing up on screen.
+
+00:02:36.120 --> 00:02:37.578
+The next thing we
+have got to do is
+
+00:02:37.578 --> 00:02:39.850
+we've got to give it some
+size and we've got to style.
+
+00:02:39.850 --> 00:02:43.380
+So, I'm going to just
+apply some CSS classes here
+
+00:02:43.380 --> 00:02:45.130
+to change the size of my icon.
+
+00:02:45.130 --> 00:02:47.340
+And that's so I can
+override the CSS that
+
+00:02:47.340 --> 00:02:50.920
+gives the icon its default
+sizing of 24 pixels.
+
+00:02:50.920 --> 00:02:53.120
+So this icon, smaller
+class, for instance,
+
+00:02:53.120 --> 00:02:55.040
+has a width and
+height of 20 pixels.
+
+00:02:55.040 --> 00:02:57.900
+That's going to give me this guy
+down here, who's much smaller.
+
+00:02:57.900 --> 00:03:00.980
+Likewise, using icon-larger,
+width and height 90 pixels
+
+00:03:00.980 --> 00:03:03.560
+gives me a much larger icon.
+
+00:03:03.560 --> 00:03:05.810
+And now to style this
+thing, it's super simple.
+
+00:03:05.810 --> 00:03:07.410
+We're just going
+to give it a color,
+
+00:03:07.410 --> 00:03:10.130
+using the color property in CSS.
+
+00:03:10.130 --> 00:03:11.820
+Set it equal to this
+bright green value.
+
+00:03:11.820 --> 00:03:14.090
+And we'll get this guy
+over here on the right.
+
+00:03:14.090 --> 00:03:16.680
+So that about covers the basics
+of getting our core-icon up
+
+00:03:16.680 --> 00:03:17.612
+on screen.
+
+00:03:17.612 --> 00:03:19.320
+Let's switch over to
+our Code Editor now,
+
+00:03:19.320 --> 00:03:20.694
+and we can actually
+see if we can
+
+00:03:20.694 --> 00:03:22.625
+get this to display
+in our browser.
+
+00:03:22.625 --> 00:03:24.500
+All right, so the first
+thing we needed to do
+
+00:03:24.500 --> 00:03:27.300
+is we need to make sure
+we're loading the platform.
+
+00:03:27.300 --> 00:03:27.855
+So we're going to pull
+in bower_components
+
+00:03:27.855 --> 00:03:28.813
+/platforms/platform.js.
+
+00:03:32.204 --> 00:03:34.620
+That's going to give us access
+to all of the web component
+
+00:03:34.620 --> 00:03:37.511
+technologies, so we can start
+using things like HTML imports.
+
+00:03:37.511 --> 00:03:39.510
+So then we're just going
+to write out an import.
+
+00:03:39.510 --> 00:03:41.980
+And we're going to pull in
+that core-icons definition.
+
+00:03:41.980 --> 00:03:45.680
+So we're going to say
+core-icons-- core-icons.html.
+
+00:03:45.680 --> 00:03:48.135
+Note reason core-icons--
+the plural one here.
+
+00:03:48.135 --> 00:03:50.760
+Because that's going to give us
+access to the default icon set.
+
+00:03:50.760 --> 00:03:53.220
+And it's also going to load in
+the definition for core-icon
+
+00:03:53.220 --> 00:03:54.250
+for us.
+
+00:03:54.250 --> 00:03:57.190
+So then we can just
+write out a core-icon tag
+
+00:03:57.190 --> 00:03:58.710
+and give it an icon attribute.
+
+00:03:58.710 --> 00:04:00.390
+And we'll point it
+at that Android icon
+
+00:04:00.390 --> 00:04:02.180
+that we've been using so far.
+
+00:04:02.180 --> 00:04:03.250
+Save this.
+
+00:04:03.250 --> 00:04:05.830
+And go to our browser,
+and refresh the page.
+
+00:04:05.830 --> 00:04:07.360
+And up there in the
+top left corner,
+
+00:04:07.360 --> 00:04:08.634
+we've got a little bitty icon.
+
+00:04:08.634 --> 00:04:10.050
+So the next thing
+I want to do is,
+
+00:04:10.050 --> 00:04:11.970
+I want to give this icon a size.
+
+00:04:11.970 --> 00:04:15.940
+So I'm going to start to
+write out a style tag.
+
+00:04:15.940 --> 00:04:18.070
+And I've got to
+remember, I've got
+
+00:04:18.070 --> 00:04:20.470
+to add a class to
+my icon elements.
+
+00:04:20.470 --> 00:04:21.740
+I'm going to go down there.
+
+00:04:21.740 --> 00:04:24.380
+And we'll give it a
+class of icon-larger .
+
+00:04:24.380 --> 00:04:27.760
+So our CSS has
+greater specificity.
+
+00:04:27.760 --> 00:04:29.770
+So we're going to use
+that icon-larger class.
+
+00:04:29.770 --> 00:04:32.990
+And we'll set the width
+and height to 200 pixels.
+
+00:04:32.990 --> 00:04:34.010
+It's kind of a big icon.
+
+00:04:34.010 --> 00:04:35.968
+But that way, everyone
+on the video can see it.
+
+00:04:38.360 --> 00:04:41.600
+So go back and refresh the page.
+
+00:04:41.600 --> 00:04:43.892
+And we've got this
+much bigger icon.
+
+00:04:43.892 --> 00:04:46.100
+Now if you go and check out
+the Polymer documentation
+
+00:04:46.100 --> 00:04:48.730
+for the core-icon
+element, you can actually
+
+00:04:48.730 --> 00:04:50.006
+scroll down the page.
+
+00:04:50.006 --> 00:04:51.880
+And you'll see that
+there is a link down here
+
+00:04:51.880 --> 00:04:55.760
+at the bottom, which will point
+to the core-icons element set.
+
+00:04:55.760 --> 00:04:57.360
+So you can actually
+browse through all
+
+00:04:57.360 --> 00:05:00.770
+of the icons that are
+available in this default set.
+
+00:05:00.770 --> 00:05:03.790
+So scrolling around, I can see
+that there's this cool Cloud
+
+00:05:03.790 --> 00:05:04.480
+icon.
+
+00:05:04.480 --> 00:05:07.380
+And if I want, I can
+just copy its name.
+
+00:05:07.380 --> 00:05:12.714
+Go back to my Code Editor, paste
+that into my icon attribute.
+
+00:05:12.714 --> 00:05:14.130
+Then when I refresh
+the page, I've
+
+00:05:14.130 --> 00:05:17.580
+got this cooler Cloud
+icon that I can work with.
+
+00:05:17.580 --> 00:05:21.540
+And going back, if I want, maybe
+I can grab this Drive icon.
+
+00:05:24.120 --> 00:05:27.620
+Drop that into my icon
+attribute, refresh the page,
+
+00:05:27.620 --> 00:05:29.640
+and I've got the Drive logo.
+
+00:05:29.640 --> 00:05:30.379
+Sweet.
+
+00:05:30.379 --> 00:05:32.170
+But I want to stick
+with that Android icon,
+
+00:05:32.170 --> 00:05:34.500
+because we've been working
+with it for a bit now.
+
+00:05:34.500 --> 00:05:36.259
+So I'm going to put
+Android back in there.
+
+00:05:36.259 --> 00:05:38.800
+And the last thing I want to do
+is I want to give it a color.
+
+00:05:38.800 --> 00:05:42.480
+So over my CSS, I'm just
+going to use a color property.
+
+00:05:42.480 --> 00:05:45.350
+And I'm going to set it to this
+cool bright green hex value.
+
+00:05:47.880 --> 00:05:50.740
+So save that, go back
+and refresh the page.
+
+00:05:50.740 --> 00:05:52.820
+And I've got this bright
+green Android icon.
+
+00:05:52.820 --> 00:05:55.090
+So that about covers
+the basics of using
+
+00:05:55.090 --> 00:05:56.157
+the core-icon elements.
+
+00:05:56.157 --> 00:05:57.740
+In the next video,
+we're going to look
+
+00:05:57.740 --> 00:05:59.780
+at how you can load in
+additional icon sets,
+
+00:05:59.780 --> 00:06:02.090
+including icon sets that
+you create yourself.
+
+00:06:02.090 --> 00:06:04.290
+Thanks for watching.
+

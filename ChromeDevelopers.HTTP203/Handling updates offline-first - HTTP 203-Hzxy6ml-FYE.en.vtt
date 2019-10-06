@@ -1,0 +1,2165 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.420 --> 00:00:01.800
+JAKE ARCHIBALD: You think
+you just die overnight,
+
+00:00:01.800 --> 00:00:02.850
+and you wake up in the morning?
+
+00:00:02.850 --> 00:00:04.300
+SURMA: Isn't that what sleep is?
+
+00:00:04.300 --> 00:00:05.133
+JAKE ARCHIBALD: Yes.
+
+00:00:05.133 --> 00:00:05.640
+[LAUGHTER]
+
+00:00:05.640 --> 00:00:06.423
+Let's say yes.
+
+00:00:06.423 --> 00:00:07.590
+Let's say that's what it is.
+
+00:00:07.590 --> 00:00:09.057
+[MUSIC PLAYING]
+
+00:00:14.440 --> 00:00:15.040
+So.
+
+00:00:15.040 --> 00:00:16.079
+SURMA: So.
+
+00:00:16.079 --> 00:00:17.700
+JAKE ARCHIBALD: Offline first--
+
+00:00:17.700 --> 00:00:17.860
+SURMA: Right.
+
+00:00:17.860 --> 00:00:19.290
+JAKE ARCHIBALD:
+--is a good thing.
+
+00:00:19.290 --> 00:00:20.015
+It's something--
+
+00:00:20.015 --> 00:00:20.890
+SURMA: Is it, though?
+
+00:00:20.890 --> 00:00:22.270
+JAKE ARCHIBALD: Is it, though?
+
+00:00:22.270 --> 00:00:24.010
+Yes is the answer.
+
+00:00:24.010 --> 00:00:25.535
+SURMA: I tend to
+agree, actually.
+
+00:00:25.535 --> 00:00:26.910
+JAKE ARCHIBALD:
+And we talk about
+
+00:00:26.910 --> 00:00:29.630
+offline first as being
+distinct from online first.
+
+00:00:29.630 --> 00:00:30.130
+Right?
+
+00:00:30.130 --> 00:00:32.840
+Offline first means it's just--
+
+00:00:32.840 --> 00:00:35.020
+do you try getting
+offline content first,
+
+00:00:35.020 --> 00:00:37.360
+or do you try and get it later?
+
+00:00:37.360 --> 00:00:37.990
+SURMA: Yeah.
+
+00:00:37.990 --> 00:00:38.960
+JAKE ARCHIBALD: That's the rule.
+
+00:00:38.960 --> 00:00:40.600
+So if you were to build
+something online first,
+
+00:00:40.600 --> 00:00:42.770
+the idea is, you go to
+the network, and then--
+
+00:00:42.770 --> 00:00:44.080
+SURMA: That's just how
+everybody builds websites
+
+00:00:44.080 --> 00:00:45.520
+most of the time traditionally.
+
+00:00:45.520 --> 00:00:46.420
+JAKE ARCHIBALD: Yes.
+
+00:00:46.420 --> 00:00:49.320
+Well, a lot are
+built online only.
+
+00:00:49.320 --> 00:00:49.820
+SURMA: Ah.
+
+00:00:49.820 --> 00:00:52.370
+JAKE ARCHIBALD: So the online
+first would be if that fails,
+
+00:00:52.370 --> 00:00:54.068
+then show some content.
+
+00:00:54.068 --> 00:00:54.610
+SURMA: Right.
+
+00:00:54.610 --> 00:00:55.985
+JAKE ARCHIBALD:
+But offline first
+
+00:00:55.985 --> 00:00:59.060
+is best, because it
+works in more situations.
+
+00:00:59.060 --> 00:00:59.560
+SURMA: Yeah.
+
+00:00:59.560 --> 00:01:02.020
+JAKE ARCHIBALD: So if
+you're doing online first,
+
+00:01:02.020 --> 00:01:03.990
+it works great when
+you're offline.
+
+00:01:03.990 --> 00:01:05.480
+SURMA: As the name
+kind of implies.
+
+00:01:05.480 --> 00:01:06.730
+JAKE ARCHIBALD: Yeah, exactly.
+
+00:01:06.730 --> 00:01:09.698
+It fails quickly, and then it
+goes for the cached content.
+
+00:01:09.698 --> 00:01:10.240
+SURMA: Right.
+
+00:01:10.240 --> 00:01:12.760
+JAKE ARCHIBALD: But there's
+another situation that
+
+00:01:12.760 --> 00:01:16.000
+is different, and
+it is this, which
+
+00:01:16.000 --> 00:01:18.998
+I have been desperately trying
+to make an industry term.
+
+00:01:18.998 --> 00:01:21.415
+SURMA: You've been coining
+this one, right, over and over.
+
+00:01:21.415 --> 00:01:22.665
+JAKE ARCHIBALD: Over and over.
+
+00:01:22.665 --> 00:01:24.520
+I want my Ajax.
+
+00:01:24.520 --> 00:01:28.670
+Where's my-- I want to be
+famous like the guy who invented
+
+00:01:28.670 --> 00:01:29.170
+Ajax--
+
+00:01:29.170 --> 00:01:29.350
+SURMA: Who obviously--
+
+00:01:29.350 --> 00:01:31.450
+JAKE ARCHIBALD: --who
+I don't know his name.
+
+00:01:31.450 --> 00:01:33.430
+My plan is ruined.
+
+00:01:33.430 --> 00:01:35.110
+There's a real problem here.
+
+00:01:35.110 --> 00:01:37.003
+Remy invented--
+
+00:01:37.003 --> 00:01:37.670
+SURMA: Polyfill.
+
+00:01:37.670 --> 00:01:37.930
+JAKE ARCHIBALD: --polyfill.
+
+00:01:37.930 --> 00:01:38.290
+Right, see?
+
+00:01:38.290 --> 00:01:39.040
+SURMA: I'm jealous of that one.
+
+00:01:39.040 --> 00:01:39.300
+JAKE ARCHIBALD: Famous.
+
+00:01:39.300 --> 00:01:40.000
+SURMA: That's a good one.
+
+00:01:40.000 --> 00:01:40.450
+JAKE ARCHIBALD:
+That is a good one.
+
+00:01:40.450 --> 00:01:41.180
+SURMA: That's a good one.
+
+00:01:41.180 --> 00:01:42.400
+JAKE ARCHIBALD: So this is
+a situation where your phone
+
+00:01:42.400 --> 00:01:44.230
+thinks it has a connection,
+but it doesn't--
+
+00:01:44.230 --> 00:01:45.730
+SURMA: Which you
+have all the time--
+
+00:01:45.730 --> 00:01:47.585
+JAKE ARCHIBALD: --which
+is all the time.
+
+00:01:47.585 --> 00:01:50.043
+SURMA: --especially when you're
+on vacation or in airports,
+
+00:01:50.043 --> 00:01:50.817
+in my experience.
+
+00:01:50.817 --> 00:01:52.900
+JAKE ARCHIBALD: When you
+need it most essentially.
+
+00:01:52.900 --> 00:01:55.870
+And the phone doesn't
+think it's offline,
+
+00:01:55.870 --> 00:01:58.480
+so it sits there trying to
+make a connection for ages,
+
+00:01:58.480 --> 00:01:59.720
+and it never gets there.
+
+00:01:59.720 --> 00:02:01.010
+And that is a problem.
+
+00:02:01.010 --> 00:02:01.870
+SURMA: Especially
+when you know the app
+
+00:02:01.870 --> 00:02:04.870
+has the content offline, but it
+shows a spinner for 30 seconds,
+
+00:02:04.870 --> 00:02:07.229
+like, "I think I'm online,
+so I'm rather going to try--"
+
+00:02:07.229 --> 00:02:08.229
+JAKE ARCHIBALD: That's--
+
+00:02:08.229 --> 00:02:08.860
+SURMA: Online first.
+
+00:02:08.860 --> 00:02:09.699
+JAKE ARCHIBALD:
+That's online first.
+
+00:02:09.699 --> 00:02:09.919
+SURMA: And that's stupid.
+
+00:02:09.919 --> 00:02:10.752
+JAKE ARCHIBALD: Yes.
+
+00:02:10.752 --> 00:02:12.370
+So offline first,
+we agree is better.
+
+00:02:12.370 --> 00:02:14.710
+It works in more
+situations, but that
+
+00:02:14.710 --> 00:02:18.700
+means you are serving content
+from your caches first.
+
+00:02:18.700 --> 00:02:20.575
+Then you go and go, "Is
+there anything new?"
+
+00:02:20.575 --> 00:02:21.200
+And sometimes--
+
+00:02:21.200 --> 00:02:22.620
+SURMA: There might
+be something new.
+
+00:02:22.620 --> 00:02:24.495
+JAKE ARCHIBALD: There
+might be something new,
+
+00:02:24.495 --> 00:02:26.590
+and then what do you do?
+
+00:02:26.590 --> 00:02:28.300
+SURMA: Well, I
+mean, I think we all
+
+00:02:28.300 --> 00:02:31.700
+have seen the infamous
+snack bar, right?
+
+00:02:31.700 --> 00:02:33.700
+JAKE ARCHIBALD: This is
+the solution in Squoosh.
+
+00:02:33.700 --> 00:02:35.000
+The page loads.
+
+00:02:35.000 --> 00:02:35.800
+It goes off.
+
+00:02:35.800 --> 00:02:37.000
+It finds an update.
+
+00:02:37.000 --> 00:02:40.130
+I mean, meanwhile, you could
+be using the app or whatever,
+
+00:02:40.130 --> 00:02:43.005
+and a little thing pops up at
+the bottom there and says--
+
+00:02:43.005 --> 00:02:43.930
+SURMA: Do we cancel?
+
+00:02:43.930 --> 00:02:45.260
+JAKE ARCHIBALD: It's
+a pinch-zooming app.
+
+00:02:45.260 --> 00:02:45.890
+SURMA: Right.
+
+00:02:45.890 --> 00:02:46.040
+JAKE ARCHIBALD: Yeah.
+
+00:02:46.040 --> 00:02:46.100
+SURMA: I forgot.
+
+00:02:46.100 --> 00:02:48.000
+JAKE ARCHIBALD:
+Forgot about that.
+
+00:02:48.000 --> 00:02:51.330
+And, yeah, it's saying
+here, "Update available."
+
+00:02:51.330 --> 00:02:53.860
+SURMA: And now do you
+want to reload and lose
+
+00:02:53.860 --> 00:02:56.230
+what you've already
+working on, or do
+
+00:02:56.230 --> 00:02:58.655
+you want to ignore the
+fancy new features?
+
+00:02:58.655 --> 00:03:01.030
+JAKE ARCHIBALD: But there
+could be something really good.
+
+00:03:01.030 --> 00:03:01.530
+SURMA: Yes.
+
+00:03:01.530 --> 00:03:03.780
+JAKE ARCHIBALD: So you're
+like, "I'm going to reload,"
+
+00:03:03.780 --> 00:03:06.130
+and as you say, you just
+lost all your stuff now.
+
+00:03:06.130 --> 00:03:09.430
+So that's great.
+
+00:03:09.430 --> 00:03:11.360
+This is a very common pattern.
+
+00:03:11.360 --> 00:03:11.860
+SURMA: Yeah.
+
+00:03:11.860 --> 00:03:13.020
+I see it a lot.
+
+00:03:13.020 --> 00:03:13.120
+JAKE ARCHIBALD: Yeah.
+
+00:03:13.120 --> 00:03:15.400
+SURMA: It seems to be the
+standard pattern currently.
+
+00:03:15.400 --> 00:03:17.108
+JAKE ARCHIBALD: It's
+the standard pattern
+
+00:03:17.108 --> 00:03:19.570
+especially for app
+updates, where it's also
+
+00:03:19.570 --> 00:03:23.200
+updating not just the content
+but also like the underlying
+
+00:03:23.200 --> 00:03:24.200
+JavaScript and CSS.
+
+00:03:24.200 --> 00:03:24.700
+SURMA: Yeah.
+
+00:03:24.700 --> 00:03:25.330
+JAKE ARCHIBALD:
+Because what you got
+
+00:03:25.330 --> 00:03:27.760
+there was a full page
+reload, it means the browser
+
+00:03:27.760 --> 00:03:29.215
+can start from scratch.
+
+00:03:29.215 --> 00:03:31.090
+SURMA: Get all the new
+things from the cache.
+
+00:03:31.090 --> 00:03:31.870
+JAKE ARCHIBALD: Yeah, it's
+not trying to mix the two.
+
+00:03:31.870 --> 00:03:33.160
+SURMA: [INAUDIBLE]
+consistent update.
+
+00:03:33.160 --> 00:03:34.827
+Yeah, because that's
+the problem, right?
+
+00:03:34.827 --> 00:03:36.910
+Especially in a world
+where what we advocate for
+
+00:03:36.910 --> 00:03:38.343
+is hash all your styles and--
+
+00:03:38.343 --> 00:03:40.010
+JAKE ARCHIBALD: Yep,
+yep, yep, yep, yep.
+
+00:03:40.010 --> 00:03:41.343
+SURMA: And use HP cache as well.
+
+00:03:41.343 --> 00:03:43.780
+Then do it-- suddenly
+loading new styles
+
+00:03:43.780 --> 00:03:46.990
+while having loaded the
+old app shell, for example,
+
+00:03:46.990 --> 00:03:49.120
+could get you in a
+really iffy spot,
+
+00:03:49.120 --> 00:03:51.537
+so the only safe way to do it
+is, we like a proper reload.
+
+00:03:51.537 --> 00:03:53.828
+JAKE ARCHIBALD: And this is
+what native apps do, right?
+
+00:03:53.828 --> 00:03:54.380
+SURMA: Fair.
+
+00:03:54.380 --> 00:03:57.005
+I mean, yeah, they have the apps
+where they actually get killed
+
+00:03:57.005 --> 00:03:58.870
+when the App Store
+puts in new updates.
+
+00:03:58.870 --> 00:04:00.787
+JAKE ARCHIBALD: The thing
+that native apps can
+
+00:04:00.787 --> 00:04:02.850
+do that the web can't do
+yet is do all the update
+
+00:04:02.850 --> 00:04:03.860
+in the background.
+
+00:04:03.860 --> 00:04:04.360
+SURMA: Yeah.
+
+00:04:04.360 --> 00:04:05.230
+JAKE ARCHIBALD:
+So you're usually
+
+00:04:05.230 --> 00:04:06.940
+coming to the latest version.
+
+00:04:06.940 --> 00:04:07.540
+Not always.
+
+00:04:07.540 --> 00:04:10.570
+Sometimes you still get
+the app kill experience.
+
+00:04:10.570 --> 00:04:11.280
+SURMA: Yeah.
+
+00:04:11.280 --> 00:04:12.100
+JAKE ARCHIBALD:
+And so we're going
+
+00:04:12.100 --> 00:04:14.740
+to have a look at some ways
+that we can improve on this.
+
+00:04:14.740 --> 00:04:16.180
+What other ways are there?
+
+00:04:16.180 --> 00:04:18.440
+What improvements can we make?
+
+00:04:18.440 --> 00:04:22.960
+But I always want to
+caveat that in, this
+
+00:04:22.960 --> 00:04:24.113
+is not a solved problem.
+
+00:04:24.113 --> 00:04:24.780
+SURMA: It's not.
+
+00:04:24.780 --> 00:04:25.690
+JAKE ARCHIBALD: And it's not--
+
+00:04:25.690 --> 00:04:27.232
+when I say it's not
+a solved problem,
+
+00:04:27.232 --> 00:04:29.650
+it's not just the web
+that hasn't caught up.
+
+00:04:29.650 --> 00:04:33.300
+Go into airplane mode
+or, better, Lie-Fi mode,
+
+00:04:33.300 --> 00:04:35.110
+if you can find a way
+to do that, and just
+
+00:04:35.110 --> 00:04:36.140
+try a few native apps.
+
+00:04:36.140 --> 00:04:36.640
+SURMA: Yeah.
+
+00:04:36.640 --> 00:04:37.610
+It's super hard.
+
+00:04:37.610 --> 00:04:38.110
+So many--
+
+00:04:38.110 --> 00:04:38.410
+JAKE ARCHIBALD: And
+you get it wrong.
+
+00:04:38.410 --> 00:04:39.640
+SURMA: Pretty much all
+the apps get it wrong.
+
+00:04:39.640 --> 00:04:40.515
+JAKE ARCHIBALD: Yeah.
+
+00:04:40.515 --> 00:04:42.050
+You will see so
+many empty screens.
+
+00:04:42.050 --> 00:04:44.110
+SURMA: And it also
+depends on the use case.
+
+00:04:44.110 --> 00:04:48.850
+Some apps need-- cannot
+afford to show stale data.
+
+00:04:48.850 --> 00:04:51.445
+There's use cases where that
+is actually unacceptable.
+
+00:04:51.445 --> 00:04:52.570
+JAKE ARCHIBALD: Absolutely.
+
+00:04:52.570 --> 00:04:54.460
+So what could do better here?
+
+00:04:54.460 --> 00:04:56.543
+If we have a think about
+what some of the problems
+
+00:04:56.543 --> 00:04:58.630
+that we actually created
+here, the first one
+
+00:04:58.630 --> 00:05:00.560
+is that we lost all the state.
+
+00:05:00.560 --> 00:05:02.840
+SURMA: Yeah, which we could
+work around, because we
+
+00:05:02.840 --> 00:05:03.923
+had control of the button.
+
+00:05:03.923 --> 00:05:06.140
+We could use [INAUDIBLE]
+or something.
+
+00:05:06.140 --> 00:05:06.640
+Right?
+
+00:05:06.640 --> 00:05:07.240
+JAKE ARCHIBALD: Exactly.
+
+00:05:07.240 --> 00:05:09.430
+So you want, when you
+click that reload button,
+
+00:05:09.430 --> 00:05:12.310
+to essentially put the user back
+into the same state they were,
+
+00:05:12.310 --> 00:05:13.210
+but--
+
+00:05:13.210 --> 00:05:14.017
+SURMA: That's hard.
+
+00:05:14.017 --> 00:05:15.100
+JAKE ARCHIBALD: But with--
+
+00:05:15.100 --> 00:05:16.240
+well, in some apps it is.
+
+00:05:16.240 --> 00:05:16.950
+Some apps, it isn't.
+
+00:05:16.950 --> 00:05:17.350
+SURMA: True.
+
+00:05:17.350 --> 00:05:18.517
+JAKE ARCHIBALD: It depends--
+
+00:05:18.517 --> 00:05:21.060
+it comes down to how you
+can store that state.
+
+00:05:21.060 --> 00:05:21.560
+SURMA: Yeah.
+
+00:05:21.560 --> 00:05:24.960
+Also, you might have shipped
+a major upgrade to your app.
+
+00:05:24.960 --> 00:05:27.220
+What if you changed
+your state model,
+
+00:05:27.220 --> 00:05:29.338
+or you even removed
+or added functionality
+
+00:05:29.338 --> 00:05:31.880
+that's just incompatible with
+what the user was doing before?
+
+00:05:31.880 --> 00:05:32.300
+JAKE ARCHIBALD: Exactly.
+
+00:05:32.300 --> 00:05:34.290
+SURMA: It gets very
+complicated very quickly.
+
+00:05:34.290 --> 00:05:36.290
+JAKE ARCHIBALD: So the
+simplest thing you can do
+
+00:05:36.290 --> 00:05:38.638
+is, if you've got real URLs,
+you're a long way there--
+
+00:05:38.638 --> 00:05:39.430
+SURMA: That's true.
+
+00:05:39.430 --> 00:05:40.370
+JAKE ARCHIBALD:
+--because you refresh.
+
+00:05:40.370 --> 00:05:42.760
+You're going to reload
+that URL, and you're
+
+00:05:42.760 --> 00:05:45.680
+going to send the user to a
+place roughly similar to where
+
+00:05:45.680 --> 00:05:46.410
+they were before.
+
+00:05:46.410 --> 00:05:47.140
+SURMA: That's true.
+
+00:05:47.140 --> 00:05:48.230
+JAKE ARCHIBALD: It's
+not what we did here.
+
+00:05:48.230 --> 00:05:48.760
+SURMA: It's not.
+
+00:05:48.760 --> 00:05:49.230
+JAKE ARCHIBALD: No.
+
+00:05:49.230 --> 00:05:51.522
+SURMA: Well, we would have
+to encode the image somehow,
+
+00:05:51.522 --> 00:05:52.700
+and it just gets iffy.
+
+00:05:52.700 --> 00:05:57.060
+JAKE ARCHIBALD: And so our
+choice there is sessionStorage.
+
+00:05:57.060 --> 00:05:57.770
+SURMA: Oh, right.
+
+00:05:57.770 --> 00:06:00.080
+You keep talking about it,
+and we've never used it yet.
+
+00:06:00.080 --> 00:06:01.747
+JAKE ARCHIBALD: We've
+never used it yet.
+
+00:06:01.747 --> 00:06:04.950
+So this is a great tool for
+remembering state like this.
+
+00:06:04.950 --> 00:06:08.882
+So anything you put in
+sessionStorage is essentially--
+
+00:06:08.882 --> 00:06:11.166
+e-session-illy-- essentially--
+
+00:06:11.166 --> 00:06:11.666
+SURMA: Aye.
+
+00:06:11.666 --> 00:06:13.850
+JAKE ARCHIBALD: --associated.
+
+00:06:13.850 --> 00:06:16.278
+I've now forgotten how to speak.
+
+00:06:16.278 --> 00:06:16.820
+That's great.
+
+00:06:16.820 --> 00:06:18.632
+SURMA: Good thing
+that's paid for.
+
+00:06:18.632 --> 00:06:20.360
+JAKE ARCHIBALD: Yeah.
+
+00:06:20.360 --> 00:06:22.670
+You can associate
+data with the tab.
+
+00:06:22.670 --> 00:06:25.460
+SURMA: Which is actually really
+useful, because another thing
+
+00:06:25.460 --> 00:06:28.760
+that we didn't even
+mention, if you have a tab
+
+00:06:28.760 --> 00:06:32.445
+and you want to store some state
+so you can do the reloads--
+
+00:06:32.445 --> 00:06:33.320
+JAKE ARCHIBALD: Yeah.
+
+00:06:33.320 --> 00:06:35.540
+SURMA: --what if two tabs
+do that at the same time?
+
+00:06:35.540 --> 00:06:36.617
+JAKE ARCHIBALD: Exactly.
+
+00:06:36.617 --> 00:06:38.450
+SURMA: They would just
+overwrite each other.
+
+00:06:38.450 --> 00:06:39.230
+What would happen?
+
+00:06:39.230 --> 00:06:42.502
+Because on the web, the same app
+can be opened multiple times.
+
+00:06:42.502 --> 00:06:44.210
+Another problem that
+native doesn't have.
+
+00:06:44.210 --> 00:06:45.020
+JAKE ARCHIBALD: Yes, yes.
+
+00:06:45.020 --> 00:06:47.330
+So if you were to use normal
+local storage or IndexedDB
+
+00:06:47.330 --> 00:06:50.090
+or something like that,
+if you use it naively,
+
+00:06:50.090 --> 00:06:53.002
+two tabs store to the same
+place, blasting winds.
+
+00:06:53.002 --> 00:06:55.460
+They refresh, and you get two
+tabs going to the same place.
+
+00:06:55.460 --> 00:06:57.080
+SURMA: Not unsolvable, but hard.
+
+00:06:57.080 --> 00:06:58.080
+JAKE ARCHIBALD: Exactly.
+
+00:06:58.080 --> 00:06:59.870
+Sessionstore sorts
+that out for free.
+
+00:06:59.870 --> 00:07:00.750
+SURMA: Right.
+
+00:07:00.750 --> 00:07:02.720
+JAKE ARCHIBALD: You
+can only store text.
+
+00:07:02.720 --> 00:07:03.220
+SURMA: Bad.
+
+00:07:03.220 --> 00:07:03.820
+JAKE ARCHIBALD: So that was--
+
+00:07:03.820 --> 00:07:05.560
+SURMA: And it's main thread,
+and it's synchronous, isn't it?
+
+00:07:05.560 --> 00:07:06.497
+JAKE ARCHIBALD: Yes.
+
+00:07:06.497 --> 00:07:06.997
+Yeah.
+
+00:07:06.997 --> 00:07:12.490
+I mean, synchronous-- you're
+only using it very quickly.
+
+00:07:12.490 --> 00:07:14.518
+What you do, as soon as
+the user says, "Yes, I
+
+00:07:14.518 --> 00:07:15.310
+want this update"--
+
+00:07:15.310 --> 00:07:16.630
+SURMA: In this use
+case, it would be fine.
+
+00:07:16.630 --> 00:07:18.370
+JAKE ARCHIBALD: You put the
+stuff into sessionStorage.
+
+00:07:18.370 --> 00:07:20.450
+You then reload the
+page as you would.
+
+00:07:20.450 --> 00:07:22.742
+But then the first thing your
+app does when it wakes up
+
+00:07:22.742 --> 00:07:23.830
+is go, "Did I have--"
+
+00:07:23.830 --> 00:07:27.490
+[IMITATING MACHINE NOISES]
+
+00:07:27.490 --> 00:07:28.700
+JAKE ARCHIBALD: Exactly that.
+
+00:07:28.700 --> 00:07:31.150
+And you have to turn
+your speakers off,
+
+00:07:31.150 --> 00:07:33.448
+because it does make
+that noise every time.
+
+00:07:33.448 --> 00:07:35.990
+And then you can use that to
+put your app back into the state
+
+00:07:35.990 --> 00:07:39.030
+that it was, JSON
+decode it or whatever.
+
+00:07:39.030 --> 00:07:39.530
+SURMA: Yeah.
+
+00:07:39.530 --> 00:07:41.685
+JAKE ARCHIBALD: And make that
+your state object, whatever,
+
+00:07:41.685 --> 00:07:41.930
+whatever.
+
+00:07:41.930 --> 00:07:43.680
+SURMA: Which, for an
+image, would actually
+
+00:07:43.680 --> 00:07:45.100
+be quite cumbersome yet again.
+
+00:07:45.100 --> 00:07:46.030
+JAKE ARCHIBALD: Yes,
+because you would
+
+00:07:46.030 --> 00:07:47.830
+hit the sessionStorage
+limit very quickly.
+
+00:07:47.830 --> 00:07:49.913
+But it's these two little
+things that would really
+
+00:07:49.913 --> 00:07:51.280
+improve what we're doing--
+
+00:07:51.280 --> 00:07:51.863
+SURMA: Agreed.
+
+00:07:51.863 --> 00:07:54.170
+JAKE ARCHIBALD: --with Squoosh.
+
+00:07:54.170 --> 00:07:58.140
+Another example, do
+you recognize this?
+
+00:07:58.140 --> 00:08:00.115
+SURMA: Oh, Jake, this
+is one of the other apps
+
+00:08:00.115 --> 00:08:02.490
+that you built in your lifetime
+and you keep bringing up.
+
+00:08:02.490 --> 00:08:03.420
+JAKE ARCHIBALD: Yep, that's it.
+
+00:08:03.420 --> 00:08:05.493
+I spent most my career
+making websites that
+
+00:08:05.493 --> 00:08:06.660
+have checkered backgrounds--
+
+00:08:06.660 --> 00:08:07.710
+SURMA: Approaches
+the first one--
+
+00:08:07.710 --> 00:08:09.860
+I mean, I guess in a way
+it still has a checkered--
+
+00:08:09.860 --> 00:08:12.840
+JAKE ARCHIBALD: It's still
+very grid-based, I suppose.
+
+00:08:12.840 --> 00:08:13.590
+I make grids.
+
+00:08:13.590 --> 00:08:14.340
+That's what I do.
+
+00:08:14.340 --> 00:08:16.620
+That's how I make my money.
+
+00:08:16.620 --> 00:08:22.710
+This site, I went for basically
+the same model as Squoosh,
+
+00:08:22.710 --> 00:08:26.940
+in that it has the banner and
+says, "Got an update for you
+
+00:08:26.940 --> 00:08:28.270
+there.
+
+00:08:28.270 --> 00:08:29.160
+Do you want it?"
+
+00:08:29.160 --> 00:08:31.194
+But there's an
+exception to the rule.
+
+00:08:31.194 --> 00:08:32.030
+SURMA: Ooh.
+
+00:08:32.030 --> 00:08:34.590
+JAKE ARCHIBALD: If it
+finds out about that update
+
+00:08:34.590 --> 00:08:37.140
+while it is still
+on this screen,
+
+00:08:37.140 --> 00:08:40.439
+and the user hasn't interacted
+yet, it just reloads.
+
+00:08:40.439 --> 00:08:42.799
+SURMA: Ah, because this
+is how the app starts,
+
+00:08:42.799 --> 00:08:45.330
+so it's basically a
+non-visual change.
+
+00:08:45.330 --> 00:08:46.930
+JAKE ARCHIBALD: A
+non-visual change,
+
+00:08:46.930 --> 00:08:50.370
+so as far as the user
+sees, the page reloads.
+
+00:08:50.370 --> 00:08:52.370
+And I also added this
+sort of telling the user--
+
+00:08:52.370 --> 00:08:53.328
+SURMA: Oh, look at you.
+
+00:08:53.328 --> 00:08:54.430
+You're such a nice person.
+
+00:08:54.430 --> 00:08:56.577
+JAKE ARCHIBALD:
+Well, I think this--
+
+00:08:56.577 --> 00:08:58.410
+I think I've done this
+the wrong way around.
+
+00:08:58.410 --> 00:08:59.430
+And this is something
+I've been thinking
+
+00:08:59.430 --> 00:09:02.110
+about recently, is when
+that little banner comes up,
+
+00:09:02.110 --> 00:09:05.790
+especially if it ends up in
+a banner situation, and says,
+
+00:09:05.790 --> 00:09:07.180
+"There's an update available.
+
+00:09:07.180 --> 00:09:07.980
+Do you want it?"
+
+00:09:07.980 --> 00:09:10.020
+I'm like, "I don't know
+what's in the box."
+
+00:09:10.020 --> 00:09:10.890
+Right.
+
+00:09:10.890 --> 00:09:12.220
+Tell me what's in the box.
+
+00:09:12.220 --> 00:09:14.030
+Do I want-- because
+if it's like, oh,
+
+00:09:14.030 --> 00:09:15.930
+it's a bug fix to the
+feature you don't use--
+
+00:09:15.930 --> 00:09:16.970
+SURMA: Fix it for
+the odd browser.
+
+00:09:16.970 --> 00:09:19.030
+JAKE ARCHIBALD: Fix it for the
+odd browser that you're not on,
+
+00:09:19.030 --> 00:09:21.000
+which would be a problem that
+would still be a service worker
+
+00:09:21.000 --> 00:09:21.500
+update.
+
+00:09:21.500 --> 00:09:23.400
+So it could be a fix
+that you literally
+
+00:09:23.400 --> 00:09:26.520
+will not benefit from at all.
+
+00:09:26.520 --> 00:09:29.280
+So letting-- you know, I think
+there's an opportunity that's
+
+00:09:29.280 --> 00:09:31.110
+trying to sell
+the user on, yeah,
+
+00:09:31.110 --> 00:09:32.360
+you want to click this button.
+
+00:09:32.360 --> 00:09:33.400
+SURMA: You want to click it.
+
+00:09:33.400 --> 00:09:33.950
+JAKE ARCHIBALD: It's
+going to really--
+
+00:09:33.950 --> 00:09:34.990
+SURMA: Well, in this
+case, you tell me about it
+
+00:09:34.990 --> 00:09:36.240
+after I clicked it.
+
+00:09:36.240 --> 00:09:38.865
+JAKE ARCHIBALD: Yes, like I say,
+I got it the wrong way around.
+
+00:09:38.865 --> 00:09:39.430
+Chill out.
+
+00:09:39.430 --> 00:09:41.430
+But it's actually not too
+bad in this situation,
+
+00:09:41.430 --> 00:09:43.388
+because the user didn't
+have to click anything.
+
+00:09:43.388 --> 00:09:44.575
+SURMA: True.
+
+00:09:44.575 --> 00:09:46.500
+JAKE ARCHIBALD: I get
+away with this here
+
+00:09:46.500 --> 00:09:49.870
+because the home page
+here, it's quite boring.
+
+00:09:49.870 --> 00:09:51.720
+SURMA: There's a
+lot of free space
+
+00:09:51.720 --> 00:09:52.933
+to just show a change log.
+
+00:09:52.933 --> 00:09:54.600
+JAKE ARCHIBALD: And
+also nothing moving.
+
+00:09:54.600 --> 00:09:56.880
+SURMA: Yeah, any
+animation will basically
+
+00:09:56.880 --> 00:09:59.420
+disrupt the illusion of
+a transparent reload.
+
+00:09:59.420 --> 00:10:00.510
+JAKE ARCHIBALD: Because
+you would see that reload.
+
+00:10:00.510 --> 00:10:00.770
+SURMA: Yeah.
+
+00:10:00.770 --> 00:10:02.560
+JAKE ARCHIBALD: And because it
+all goes for a service worker,
+
+00:10:02.560 --> 00:10:03.600
+the reload is really fast.
+
+00:10:03.600 --> 00:10:05.850
+But yes, if there was an
+animation or something there,
+
+00:10:05.850 --> 00:10:08.490
+you would see that
+stop-start, which
+
+00:10:08.490 --> 00:10:10.110
+takes us to another website.
+
+00:10:10.110 --> 00:10:13.500
+Once again, I'm going to
+purely just talk about things
+
+00:10:13.500 --> 00:10:15.690
+that I had some involvement
+on, but this is one
+
+00:10:15.690 --> 00:10:17.100
+that you had an involvement in.
+
+00:10:17.100 --> 00:10:18.110
+SURMA: Oh, yeah,
+I'm OK with this.
+
+00:10:18.110 --> 00:10:18.790
+JAKE ARCHIBALD:
+You're fine with this?
+
+00:10:18.790 --> 00:10:19.030
+SURMA: Yeah.
+
+00:10:19.030 --> 00:10:19.250
+It's OK.
+
+00:10:19.250 --> 00:10:19.860
+[INTERPOSING VOICES]
+
+00:10:19.860 --> 00:10:21.090
+SURMA: I like this one a lot.
+
+00:10:21.090 --> 00:10:21.923
+JAKE ARCHIBALD: So--
+
+00:10:21.923 --> 00:10:23.030
+SURMA: So we built a game.
+
+00:10:23.030 --> 00:10:24.363
+JAKE ARCHIBALD: We built a game.
+
+00:10:24.363 --> 00:10:27.540
+It's like "Minesweeper,"
+essentially, and this is it.
+
+00:10:27.540 --> 00:10:31.140
+But it came to the bit where
+I did the service work a bit,
+
+00:10:31.140 --> 00:10:34.030
+and it came to the bit to
+handle updates, and I was just--
+
+00:10:34.030 --> 00:10:36.030
+SURMA: We went through a
+few iterations on this.
+
+00:10:36.030 --> 00:10:37.830
+We had different
+things we tried out.
+
+00:10:37.830 --> 00:10:39.497
+JAKE ARCHIBALD: Well,
+I started bringing
+
+00:10:39.497 --> 00:10:41.700
+in the code to do the
+same thing as Squoosh.
+
+00:10:41.700 --> 00:10:44.190
+There's an update available,
+and I just found myself
+
+00:10:44.190 --> 00:10:46.690
+feeling really depressed about
+the whole thing, because it's
+
+00:10:46.690 --> 00:10:49.300
+like this is a
+horrible situation.
+
+00:10:49.300 --> 00:10:51.960
+And I knew I couldn't do
+the same thing with SVGOMG,
+
+00:10:51.960 --> 00:10:55.770
+because you would-- this
+lovely background that you made
+
+00:10:55.770 --> 00:10:58.380
+and this lovely
+intro that I made--
+
+00:10:58.380 --> 00:11:00.630
+anyway, can't do
+the reload thing,
+
+00:11:00.630 --> 00:11:01.860
+because of the animations.
+
+00:11:01.860 --> 00:11:04.910
+Didn't want to do the banner
+thing, because it's horrible.
+
+00:11:04.910 --> 00:11:05.760
+SURMA: Right.
+
+00:11:05.760 --> 00:11:08.580
+JAKE ARCHIBALD: So I actually
+went back to something that--
+
+00:11:08.580 --> 00:11:10.498
+I've seen sites like
+Flipkart do this,
+
+00:11:10.498 --> 00:11:12.540
+and it was also something
+I did with Lanyard back
+
+00:11:12.540 --> 00:11:15.510
+in the day, which is
+find an opportunity
+
+00:11:15.510 --> 00:11:17.640
+to reload when you can.
+
+00:11:17.640 --> 00:11:21.873
+SURMA: Yeah, because the
+start page is just this.
+
+00:11:21.873 --> 00:11:24.040
+If you can't reload here,
+because they might already
+
+00:11:24.040 --> 00:11:25.690
+be configuring, maybe
+it was something
+
+00:11:25.690 --> 00:11:27.300
+further down the line.
+
+00:11:27.300 --> 00:11:29.820
+JAKE ARCHIBALD: And so when
+you press the start button,
+
+00:11:29.820 --> 00:11:32.370
+if there is an update available,
+rather than just launching
+
+00:11:32.370 --> 00:11:34.350
+into the game, which
+you usually do,
+
+00:11:34.350 --> 00:11:36.050
+it does the
+sessionStorage trick.
+
+00:11:36.050 --> 00:11:37.800
+But it doesn't put a
+lot of data in there.
+
+00:11:37.800 --> 00:11:40.175
+All it puts in is the type of
+game that's about to start.
+
+00:11:40.175 --> 00:11:42.508
+SURMA: That's all you need,
+because that's all the input
+
+00:11:42.508 --> 00:11:43.560
+it has been given so far.
+
+00:11:43.560 --> 00:11:45.060
+The game hasn't
+been generated yet,
+
+00:11:45.060 --> 00:11:47.123
+so we don't need to
+store the entire field.
+
+00:11:47.123 --> 00:11:48.540
+You can just say,
+"This user wants
+
+00:11:48.540 --> 00:11:50.190
+to play a game on easy mode."
+
+00:11:50.190 --> 00:11:53.220
+JAKE ARCHIBALD: Yep, and then
+it reloads the page and--
+
+00:11:53.220 --> 00:11:54.840
+SURMA: Which causes
+a new game logic
+
+00:11:54.840 --> 00:11:56.600
+if there is no game
+logic to be loaded.
+
+00:11:56.600 --> 00:11:57.830
+JAKE ARCHIBALD: And it
+will find that-- yeah, it
+
+00:11:57.830 --> 00:11:59.070
+will go, "Oh, there's
+something in sessionStorage.
+
+00:11:59.070 --> 00:12:00.470
+I'm just going to start again."
+
+00:12:00.470 --> 00:12:01.020
+SURMA: Yeah.
+
+00:12:01.020 --> 00:12:03.980
+JAKE ARCHIBALD: And here's
+what that looks like.
+
+00:12:03.980 --> 00:12:07.500
+So you actually
+saw a reload there.
+
+00:12:07.500 --> 00:12:09.000
+It does a bit more
+loading up front,
+
+00:12:09.000 --> 00:12:10.785
+because we're
+generating the sprites,
+
+00:12:10.785 --> 00:12:12.390
+and normally it would pull
+those out of the cache.
+
+00:12:12.390 --> 00:12:13.680
+But it's a new version, so--
+
+00:12:13.680 --> 00:12:14.550
+SURMA: Need to build new ones.
+
+00:12:14.550 --> 00:12:16.008
+JAKE ARCHIBALD: It
+builds new ones,
+
+00:12:16.008 --> 00:12:18.480
+and it loads, and
+it's not too bad.
+
+00:12:18.480 --> 00:12:19.170
+SURMA: No.
+
+00:12:19.170 --> 00:12:19.920
+JAKE ARCHIBALD:
+It's not too bad.
+
+00:12:19.920 --> 00:12:21.110
+SURMA: Look at that.
+
+00:12:21.110 --> 00:12:21.920
+JAKE ARCHIBALD: You really--
+
+00:12:21.920 --> 00:12:22.420
+yeah.
+
+00:12:22.420 --> 00:12:23.545
+You did the animation work.
+
+00:12:23.545 --> 00:12:25.170
+Well done.
+
+00:12:25.170 --> 00:12:28.062
+But it means that you
+can see it kind of gives
+
+00:12:28.062 --> 00:12:29.520
+the game away a
+little bit when you
+
+00:12:29.520 --> 00:12:31.312
+see a URL bar, because
+we'll see this start
+
+00:12:31.312 --> 00:12:32.430
+to spin very briefly.
+
+00:12:32.430 --> 00:12:34.140
+But it's loading from a service
+worker, so it's really fast.
+
+00:12:34.140 --> 00:12:35.210
+SURMA: It's really
+fast enough, yeah.
+
+00:12:35.210 --> 00:12:37.140
+JAKE ARCHIBALD: But it's
+even less noticeable--
+
+00:12:37.140 --> 00:12:39.240
+SURMA: Only when you know
+it, you actually notice it,
+
+00:12:39.240 --> 00:12:39.480
+I think.
+
+00:12:39.480 --> 00:12:39.840
+JAKE ARCHIBALD: Yes.
+
+00:12:39.840 --> 00:12:42.180
+SURMA: I don't think many
+players know what's happening.
+
+00:12:42.180 --> 00:12:43.590
+JAKE ARCHIBALD: Well, they do
+now if they're watching this.
+
+00:12:43.590 --> 00:12:43.820
+SURMA: OK.
+
+00:12:43.820 --> 00:12:44.280
+JAKE ARCHIBALD: Don't they?
+
+00:12:44.280 --> 00:12:45.430
+That's the whole
+point of this video.
+
+00:12:45.430 --> 00:12:45.910
+SURMA: Jake.
+
+00:12:45.910 --> 00:12:47.780
+JAKE ARCHIBALD: Do you not
+realize we have some viewers?
+
+00:12:47.780 --> 00:12:48.720
+Not many.
+
+00:12:48.720 --> 00:12:49.290
+Some though.
+
+00:12:49.290 --> 00:12:50.040
+SURMA: Few loyal ones.
+
+00:12:50.040 --> 00:12:51.457
+JAKE ARCHIBALD:
+Few loyal viewers.
+
+00:12:51.457 --> 00:12:52.165
+SURMA: Shout out.
+
+00:12:52.165 --> 00:12:53.790
+I really like this
+pattern, by the way.
+
+00:12:53.790 --> 00:12:56.695
+I think it's a really nice one
+which probably doesn't apply
+
+00:12:56.695 --> 00:12:58.850
+to things like a blog,
+but every kind of app
+
+00:12:58.850 --> 00:13:02.390
+could probably have a
+situation where a click could
+
+00:13:02.390 --> 00:13:04.190
+be turned into a reload
+and then navigate
+
+00:13:04.190 --> 00:13:04.790
+to wherever you wanted to go.
+
+00:13:04.790 --> 00:13:05.360
+JAKE ARCHIBALD: Yes.
+
+00:13:05.360 --> 00:13:07.250
+Yes, and as I say, I've
+seen content sites do
+
+00:13:07.250 --> 00:13:08.990
+this, where you click a link.
+
+00:13:08.990 --> 00:13:11.570
+It's very possible you're going
+to do a navigation anyway.
+
+00:13:11.570 --> 00:13:11.780
+SURMA: Yeah.
+
+00:13:11.780 --> 00:13:14.072
+JAKE ARCHIBALD: But It makes
+the service worker updates
+
+00:13:14.072 --> 00:13:14.835
+at the same time.
+
+00:13:14.835 --> 00:13:15.710
+You're right, though.
+
+00:13:15.710 --> 00:13:18.928
+Content sites,
+slightly different.
+
+00:13:18.928 --> 00:13:20.720
+Like the Twitter model,
+it's something they
+
+00:13:20.720 --> 00:13:22.250
+will say, "There's new content.
+
+00:13:22.250 --> 00:13:23.660
+Do you want to see it?"
+
+00:13:23.660 --> 00:13:25.202
+It's still a click
+away, but it's not
+
+00:13:25.202 --> 00:13:26.600
+a full page reload away.
+
+00:13:26.600 --> 00:13:28.310
+Something like a chat app.
+
+00:13:28.310 --> 00:13:30.830
+If you scroll to the bottom,
+you just add the new stuff,
+
+00:13:30.830 --> 00:13:31.778
+and you scroll to it.
+
+00:13:31.778 --> 00:13:32.570
+SURMA: Pretty much.
+
+00:13:32.570 --> 00:13:34.910
+JAKE ARCHIBALD: That's easy.
+
+00:13:34.910 --> 00:13:36.660
+I've been thinking a
+little bit about what
+
+00:13:36.660 --> 00:13:41.453
+we would do for something
+that is a bit more content-y.
+
+00:13:41.453 --> 00:13:42.113
+SURMA: Yeah.
+
+00:13:42.113 --> 00:13:44.280
+JAKE ARCHIBALD: So this is
+a blog post, essentially.
+
+00:13:44.280 --> 00:13:45.120
+SURMA: Yeah.
+
+00:13:45.120 --> 00:13:46.480
+JAKE ARCHIBALD: And--
+
+00:13:46.480 --> 00:13:49.180
+SURMA: So use basically
+is now your user
+
+00:13:49.180 --> 00:13:51.260
+went to the site, started
+reading the log post,
+
+00:13:51.260 --> 00:13:53.650
+but we just published
+a little typo fix
+
+00:13:53.650 --> 00:13:57.887
+or maybe added a whole paragraph
+of new, important information.
+
+00:13:57.887 --> 00:13:58.720
+JAKE ARCHIBALD: Yes.
+
+00:13:58.720 --> 00:13:59.530
+SURMA: What do you do?
+
+00:13:59.530 --> 00:14:00.490
+JAKE ARCHIBALD: What do you do?
+
+00:14:00.490 --> 00:14:01.090
+And this is where--
+
+00:14:01.090 --> 00:14:03.010
+I think, well, you started
+mentioning earlier.
+
+00:14:03.010 --> 00:14:06.780
+You could do different
+things depending
+
+00:14:06.780 --> 00:14:09.335
+on the age of the content,
+the type of the content.
+
+00:14:09.335 --> 00:14:13.077
+SURMA: And you could build
+something smart or dumb.
+
+00:14:13.077 --> 00:14:15.660
+You could do something-- oh, if
+the content that I'm replacing
+
+00:14:15.660 --> 00:14:18.788
+is not on screen, you could
+go in and actually inject it.
+
+00:14:18.788 --> 00:14:20.205
+JAKE ARCHIBALD:
+That is the dream.
+
+00:14:20.205 --> 00:14:20.640
+Right?
+
+00:14:20.640 --> 00:14:22.080
+You are prepared to
+go to that much effort
+
+00:14:22.080 --> 00:14:23.370
+to realize that the user--
+
+00:14:23.370 --> 00:14:23.820
+SURMA: It's hard.
+
+00:14:23.820 --> 00:14:25.278
+JAKE ARCHIBALD:
+--is off the screen
+
+00:14:25.278 --> 00:14:26.890
+and just sneakily update it.
+
+00:14:26.890 --> 00:14:30.300
+But I would say,
+with a blog post,
+
+00:14:30.300 --> 00:14:32.680
+I think a model I want to try--
+
+00:14:32.680 --> 00:14:35.310
+I haven't actually
+tried this, but I
+
+00:14:35.310 --> 00:14:38.258
+think it's a workable pattern,
+is go somewhere between online
+
+00:14:38.258 --> 00:14:39.300
+first and offline first--
+
+00:14:39.300 --> 00:14:39.960
+SURMA: Yeah.
+
+00:14:39.960 --> 00:14:42.270
+JAKE ARCHIBALD: --where you
+would deliver straightaway
+
+00:14:42.270 --> 00:14:47.310
+the shell of the page, so
+the bar across the top there,
+
+00:14:47.310 --> 00:14:50.290
+and get ready to stream
+the rest of the content in.
+
+00:14:50.290 --> 00:14:53.550
+And then if that hasn't happened
+for a second and a half,
+
+00:14:53.550 --> 00:14:55.500
+if you haven't got
+any new data, then
+
+00:14:55.500 --> 00:14:57.440
+that's your cue to
+show something like,
+
+00:14:57.440 --> 00:14:58.440
+"This is taking a while.
+
+00:14:58.440 --> 00:15:00.577
+Do you want to look
+at the cached data?"
+
+00:15:00.577 --> 00:15:02.160
+And you could take
+that option and say
+
+00:15:02.160 --> 00:15:04.440
+how old the cache data
+is, so that the user can
+
+00:15:04.440 --> 00:15:06.720
+make an informed decision.
+
+00:15:06.720 --> 00:15:09.600
+SURMA: I think the last thing
+I built, I actually delivered
+
+00:15:09.600 --> 00:15:12.810
+from cache, but if the
+new content was completely
+
+00:15:12.810 --> 00:15:15.930
+done downloading within 500
+milliseconds of the page being
+
+00:15:15.930 --> 00:15:17.430
+on screen, I would
+just swap it out.
+
+00:15:17.430 --> 00:15:18.190
+JAKE ARCHIBALD: Just swap it.
+
+00:15:18.190 --> 00:15:18.750
+That--
+
+00:15:18.750 --> 00:15:19.300
+SURMA: Because I felt--
+
+00:15:19.300 --> 00:15:20.080
+JAKE ARCHIBALD: --is really
+difficult to get right.
+
+00:15:20.080 --> 00:15:20.940
+SURMA: --like the
+user wouldn't have
+
+00:15:20.940 --> 00:15:22.440
+engaged with the
+page enough to have
+
+00:15:22.440 --> 00:15:24.060
+settled into a scroll position.
+
+00:15:24.060 --> 00:15:24.210
+JAKE ARCHIBALD: That's true.
+
+00:15:24.210 --> 00:15:25.560
+SURMA: It's not a
+perfect experience.
+
+00:15:25.560 --> 00:15:27.780
+It would probably flicker,
+because you might have
+
+00:15:27.780 --> 00:15:29.010
+already scrolled, maybe not.
+
+00:15:29.010 --> 00:15:30.300
+JAKE ARCHIBALD: It's got the
+same problem as web fonts.
+
+00:15:30.300 --> 00:15:30.725
+SURMA: Yeah.
+
+00:15:30.725 --> 00:15:31.642
+JAKE ARCHIBALD: Right?
+
+00:15:31.642 --> 00:15:34.222
+You have the possibility
+of content moving around.
+
+00:15:34.222 --> 00:15:35.680
+Like you say, if
+it's early enough,
+
+00:15:35.680 --> 00:15:36.763
+it might not be a problem.
+
+00:15:36.763 --> 00:15:40.710
+But if you give the user
+the opportunity to decide,
+
+00:15:40.710 --> 00:15:43.320
+that could be a model
+worth going for,
+
+00:15:43.320 --> 00:15:47.400
+and that way you're not just
+waiting until the content fails
+
+00:15:47.400 --> 00:15:49.350
+to load before you let
+the user at the content
+
+00:15:49.350 --> 00:15:51.180
+already on the device.
+
+00:15:51.180 --> 00:15:52.550
+You give them the option.
+
+00:15:52.550 --> 00:15:55.082
+The other way is to essentially
+go back to the banner thing,
+
+00:15:55.082 --> 00:15:56.790
+or have something
+across the top saying--
+
+00:15:56.790 --> 00:15:57.190
+SURMA: "This is outdated."
+
+00:15:57.190 --> 00:15:58.390
+JAKE ARCHIBALD:
+--"This is outdated."
+
+00:15:58.390 --> 00:15:59.570
+This is the data that--
+
+00:15:59.570 --> 00:16:02.100
+SURMA: Which again, then
+always I wonder, "Well, what's
+
+00:16:02.100 --> 00:16:03.150
+the change?
+
+00:16:03.150 --> 00:16:04.825
+I want to know what
+you messed up."
+
+00:16:04.825 --> 00:16:06.450
+I don't want it to
+reload, because this
+
+00:16:06.450 --> 00:16:07.280
+is the wrong version.
+
+00:16:07.280 --> 00:16:07.950
+What was your mistake?
+
+00:16:07.950 --> 00:16:09.660
+JAKE ARCHIBALD:
+Duplicate tab, update,
+
+00:16:09.660 --> 00:16:11.400
+and then put both side by side.
+
+00:16:11.400 --> 00:16:13.100
+SURMA: Visual differences.
+
+00:16:13.100 --> 00:16:15.090
+JAKE ARCHIBALD: What's
+the factual difference?
+
+00:16:15.090 --> 00:16:17.640
+Yeah, with a blog
+post, it's probably
+
+00:16:17.640 --> 00:16:19.920
+fine to let the user look
+at the stale content,
+
+00:16:19.920 --> 00:16:22.290
+but, yeah, if you're
+a new site, if you're
+
+00:16:22.290 --> 00:16:25.470
+displaying life and
+death information,
+
+00:16:25.470 --> 00:16:28.370
+that is when you were saying--
+
+00:16:28.370 --> 00:16:31.140
+if I'm reading your blog
+post that's 10 minutes old,
+
+00:16:31.140 --> 00:16:31.880
+not a problem.
+
+00:16:31.880 --> 00:16:32.550
+SURMA: Probably fine.
+
+00:16:32.550 --> 00:16:32.960
+JAKE ARCHIBALD: Probably not.
+
+00:16:32.960 --> 00:16:35.150
+If you're reading one of my blog
+posts that's 10 minutes old,
+
+00:16:35.150 --> 00:16:37.620
+you are missing out on some
+serious spelling corrections,
+
+00:16:37.620 --> 00:16:40.460
+which especially if I've just
+published, because I will go
+
+00:16:40.460 --> 00:16:42.470
+through and correct that a lot.
+
+00:16:42.470 --> 00:16:44.462
+But just spelling,
+whereas if it's
+
+00:16:44.462 --> 00:16:45.920
+a news story that's
+10 minutes old,
+
+00:16:45.920 --> 00:16:47.790
+that could be really serious.
+
+00:16:47.790 --> 00:16:48.290
+SURMA: Yeah.
+
+00:16:48.290 --> 00:16:49.498
+JAKE ARCHIBALD: But the web--
+
+00:16:49.498 --> 00:16:50.990
+you get the tools
+to look at that.
+
+00:16:50.990 --> 00:16:53.250
+You can get to
+make that decision.
+
+00:16:53.250 --> 00:16:53.750
+SURMA: Yeah.
+
+00:16:53.750 --> 00:16:54.740
+JAKE ARCHIBALD: If it's
+just being a quick refresh--
+
+00:16:54.740 --> 00:16:56.742
+SURMA: We definitely have
+all the tools to build
+
+00:16:56.742 --> 00:16:57.950
+all these different patterns.
+
+00:16:57.950 --> 00:16:58.070
+JAKE ARCHIBALD: Yeah.
+
+00:16:58.070 --> 00:17:00.290
+SURMA: It's just a matter
+of actually building them.
+
+00:17:00.290 --> 00:17:02.420
+JAKE ARCHIBALD: So
+that's basically
+
+00:17:02.420 --> 00:17:03.880
+what I wanted to talk about.
+
+00:17:03.880 --> 00:17:05.503
+As I said, there's no kind of--
+
+00:17:05.503 --> 00:17:07.670
+SURMA: There's no bottom
+line here really, is there?
+
+00:17:07.670 --> 00:17:09.119
+JAKE ARCHIBALD: There's
+some real examples there,
+
+00:17:09.119 --> 00:17:11.750
+but it's something that I want
+to see the web exploring more,
+
+00:17:11.750 --> 00:17:14.000
+and I want to
+explore on the web.
+
+00:17:14.000 --> 00:17:17.359
+I feel that we've got some
+good patterns for apps.
+
+00:17:17.359 --> 00:17:19.790
+I would like to see it explored
+a bit more for content.
+
+00:17:19.790 --> 00:17:20.373
+SURMA: Agreed.
+
+00:17:20.373 --> 00:17:21.530
+Let's do that.
+
+00:17:21.530 --> 00:17:23.582
+JAKE ARCHIBALD: I had
+this big, long animation,
+
+00:17:23.582 --> 00:17:26.040
+everything was flying around,
+and I was really proud of it,
+
+00:17:26.040 --> 00:17:28.665
+because I did it on a plane, and
+when I presented it to people,
+
+00:17:28.665 --> 00:17:30.630
+everyone was like, "Oh."
+
+00:17:30.630 --> 00:17:32.830
+SURMA: Let's go from 11 to two.
+
+00:17:32.830 --> 00:17:34.740
+JAKE ARCHIBALD: It's a bit--
+
+00:17:34.740 --> 00:17:36.020
+hmm.
+
+00:17:36.020 --> 00:17:37.860
+But I was really proud
+of it at the time,
+
+00:17:37.860 --> 00:17:40.660
+so I was like, my
+heart was ripped out.
+

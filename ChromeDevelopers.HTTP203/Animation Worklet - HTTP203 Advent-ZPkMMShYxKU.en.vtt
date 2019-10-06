@@ -1,0 +1,347 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.395
+[ELECTRONIC MUSIC PLAYING]
+
+00:00:06.800 --> 00:00:07.750
+SURMA: OK.
+
+00:00:07.750 --> 00:00:08.784
+We know it's December.
+
+00:00:08.784 --> 00:00:09.700
+JAKE ARCHIBALD: It is.
+
+00:00:09.700 --> 00:00:11.230
+SURMA: In December,
+there's Christmas.
+
+00:00:11.230 --> 00:00:11.650
+JAKE ARCHIBALD: Yes.
+
+00:00:11.650 --> 00:00:13.816
+SURMA: So I thought for
+Christmas we could like talk
+
+00:00:13.816 --> 00:00:16.149
+about we want to do for 2018.
+
+00:00:16.149 --> 00:00:18.220
+And you can ask me
+questions about the things
+
+00:00:18.220 --> 00:00:19.019
+that I want to do.
+
+00:00:19.019 --> 00:00:19.810
+JAKE ARCHIBALD: OK.
+
+00:00:19.810 --> 00:00:21.559
+SURMA: So something
+that I'm excited about
+
+00:00:21.559 --> 00:00:25.494
+is animation worklet.
+
+00:00:25.494 --> 00:00:26.910
+JAKE ARCHIBALD:
+Animation worklet?
+
+00:00:26.910 --> 00:00:27.600
+OK.
+
+00:00:27.600 --> 00:00:28.820
+Now, what's a worklet?
+
+00:00:28.820 --> 00:00:31.740
+SURMA: A worklet it
+is like a worker,
+
+00:00:31.740 --> 00:00:33.847
+like a potentially
+off-thread thing.
+
+00:00:33.847 --> 00:00:34.680
+JAKE ARCHIBALD: Yes.
+
+00:00:34.680 --> 00:00:35.860
+SURMA: But it's
+more lightweight,
+
+00:00:35.860 --> 00:00:38.235
+and something that we can
+easily and cheaply instantiate.
+
+00:00:38.235 --> 00:00:40.451
+JAKE ARCHIBALD: Oh, like a
+piglet is a smaller pig--
+
+00:00:40.451 --> 00:00:40.950
+SURMA: Yes.
+
+00:00:40.950 --> 00:00:42.360
+JAKE ARCHIBALD: --a worklet
+is a smaller worker.
+
+00:00:42.360 --> 00:00:42.800
+Right, OK.
+
+00:00:42.800 --> 00:00:43.290
+I understand.
+
+00:00:43.290 --> 00:00:44.420
+Now, an animation, what's that?
+
+00:00:44.420 --> 00:00:45.128
+Actually, I know.
+
+00:00:45.128 --> 00:00:48.150
+But what is-- how does
+that fit inside a worklet?
+
+00:00:48.150 --> 00:00:49.680
+SURMA: So you know
+how sometimes you
+
+00:00:49.680 --> 00:00:52.740
+end up like doing
+JavaScript in a raf just
+
+00:00:52.740 --> 00:00:54.870
+to make complex animations
+or have something stick
+
+00:00:54.870 --> 00:00:57.060
+to your finger, like
+drag and drop things,
+
+00:00:57.060 --> 00:00:58.500
+with like transforms?
+
+00:00:58.500 --> 00:01:00.330
+JAKE ARCHIBALD: Like on native,
+where you scroll the thing,
+
+00:01:00.330 --> 00:01:01.320
+a header sort of goes up--
+
+00:01:01.320 --> 00:01:01.590
+SURMA: Exactly.
+
+00:01:01.590 --> 00:01:02.160
+JAKE ARCHIBALD: --sort
+of changes size.
+
+00:01:02.160 --> 00:01:04.319
+SURMA: These kind of things,
+those would go in a worklet.
+
+00:01:04.319 --> 00:01:06.310
+Because the worklet would
+be called on every frame.
+
+00:01:06.310 --> 00:01:08.050
+JAKE ARCHIBALD: Worklets
+can't access DOM.
+
+00:01:08.050 --> 00:01:08.550
+SURMA: No.
+
+00:01:08.550 --> 00:01:11.200
+But we have like special
+thingies, like proxy elements,
+
+00:01:11.200 --> 00:01:14.910
+so you can still transform
+them, like with the fast GPU
+
+00:01:14.910 --> 00:01:17.619
+operations, like transform
+opacity, but only those things.
+
+00:01:17.619 --> 00:01:19.410
+JAKE ARCHIBALD: Oh, so
+it's just the things
+
+00:01:19.410 --> 00:01:20.480
+that can be composited?
+
+00:01:20.480 --> 00:01:21.105
+SURMA: Exactly.
+
+00:01:21.105 --> 00:01:23.255
+It basically runs
+on the composer.
+
+00:01:23.255 --> 00:01:25.380
+Technically, that's not
+true, but you might as well
+
+00:01:25.380 --> 00:01:26.680
+think about it that way.
+
+00:01:26.680 --> 00:01:29.070
+So we can manipulate where
+things appear on screen.
+
+00:01:29.070 --> 00:01:29.850
+It's really fast.
+
+00:01:29.850 --> 00:01:31.360
+And you can do really
+fancy, fancy things.
+
+00:01:31.360 --> 00:01:31.620
+JAKE ARCHIBALD: OK.
+
+00:01:31.620 --> 00:01:33.570
+So what can I do
+that in response to?
+
+00:01:33.570 --> 00:01:35.292
+SURMA: You can do it
+in response to time,
+
+00:01:35.292 --> 00:01:36.750
+because that's how
+animations work.
+
+00:01:36.750 --> 00:01:37.620
+JAKE ARCHIBALD: That is true.
+
+00:01:37.620 --> 00:01:39.245
+SURMA: But also in
+response to scrolls.
+
+00:01:39.245 --> 00:01:42.360
+So it can have frame-perfect
+scrolling effects.
+
+00:01:42.360 --> 00:01:46.710
+So you could do things like
+a hidey bar that disappears,
+
+00:01:46.710 --> 00:01:48.640
+or a header that grows
+when you scroll down,
+
+00:01:48.640 --> 00:01:51.535
+or like an object that
+rotates when you scroll down.
+
+00:01:51.535 --> 00:01:53.910
+JAKE ARCHIBALD: So you're
+getting the scroll position in,
+
+00:01:53.910 --> 00:01:56.040
+and you can have
+access to a series
+
+00:01:56.040 --> 00:01:57.100
+of elements or something.
+
+00:01:57.100 --> 00:01:57.600
+SURMA: Yeah.
+
+00:01:57.600 --> 00:01:59.310
+And you can just do--
+
+00:01:59.310 --> 00:02:00.030
+JAKE ARCHIBALD: Do what
+you want with them.
+
+00:02:00.030 --> 00:02:00.589
+SURMA: Yeah.
+
+00:02:00.589 --> 00:02:01.380
+JAKE ARCHIBALD: OK.
+
+00:02:01.380 --> 00:02:03.213
+And then, with time,
+you just give it like--
+
+00:02:03.213 --> 00:02:04.992
+I want to do an
+animation for 20 seconds.
+
+00:02:04.992 --> 00:02:06.450
+And you just get
+the frame scroll--
+
+00:02:06.450 --> 00:02:06.720
+SURMA: Yeah.
+
+00:02:06.720 --> 00:02:08.430
+It's very similar to
+the Web Animations
+
+00:02:08.430 --> 00:02:11.760
+API, where you define
+timelines and keyframes
+
+00:02:11.760 --> 00:02:12.680
+on these timelines.
+
+00:02:12.680 --> 00:02:14.220
+And then you can basically
+say, on this timeline,
+
+00:02:14.220 --> 00:02:15.420
+I want to be at this
+point, depending
+
+00:02:15.420 --> 00:02:17.880
+on where you are on the scroll
+timeline or the actual time
+
+00:02:17.880 --> 00:02:19.142
+timeline-line-line.
+
+00:02:19.142 --> 00:02:20.600
+JAKE ARCHIBALD:
+Timeline-line-line?
+
+00:02:20.600 --> 00:02:21.460
+SURMA: Animations.
+
+00:02:21.460 --> 00:02:22.585
+JAKE ARCHIBALD: Animations.
+
+00:02:22.585 --> 00:02:25.222
+[VIDEO ARCADE STYLE CHRISTMAS
+ MUSIC]
+
+00:02:25.222 --> 00:02:25.890
+Bang on.
+
+00:02:25.890 --> 00:02:27.380
+[LAUGHTER]
+
+00:02:27.380 --> 00:02:29.830
+I want to talk about
+the Web Locks API.
+
+00:02:29.830 --> 00:02:30.330
+Go.
+
+00:02:30.330 --> 00:02:32.199
+SURMA: Is that like warlocks?
+
+00:02:32.199 --> 00:02:32.990
+JAKE ARCHIBALD: No.
+
+00:02:32.990 --> 00:02:36.860
+SURMA: So it's like
+mutex locks and stuff?
+
+00:02:36.860 --> 00:02:39.310
+JAKE ARCHIBALD: Yes, correct.
+
+00:02:39.310 --> 00:02:39.810
+SURMA: What?
+
+00:02:39.810 --> 00:02:41.360
+How?
+

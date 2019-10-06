@@ -1,0 +1,365 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.620 --> 00:00:03.260
+PETE LEPAGE: Progressive web
+apps are coming to the desktop.
+
+00:00:03.260 --> 00:00:05.570
+The generic sensor
+API makes it way
+
+00:00:05.570 --> 00:00:07.910
+easier to get access
+to device sensors,
+
+00:00:07.910 --> 00:00:10.860
+like the accelerometer,
+gyroscope, and more.
+
+00:00:10.860 --> 00:00:15.230
+And BigInt makes dealing
+with big integers way easier.
+
+00:00:15.230 --> 00:00:16.340
+I'm Pete LePage.
+
+00:00:16.340 --> 00:00:19.235
+Let's dive in and see what's
+new for developers in Chrome 67.
+
+00:00:22.340 --> 00:00:26.480
+Desktop progressive web apps
+are now supported on Chrome OS,
+
+00:00:26.480 --> 00:00:27.890
+and we've already
+started working
+
+00:00:27.890 --> 00:00:30.560
+on support for Mac and Windows.
+
+00:00:30.560 --> 00:00:34.040
+Once installed, they're launched
+in the same way as other apps
+
+00:00:34.040 --> 00:00:38.540
+and running an app window
+without an address bar or tabs.
+
+00:00:38.540 --> 00:00:41.940
+Service workers ensure that
+they're fast and reliable.
+
+00:00:41.940 --> 00:00:45.230
+The app window experience
+makes them feel integrated,
+
+00:00:45.230 --> 00:00:48.710
+and they create an engaging
+experience for your users.
+
+00:00:48.710 --> 00:00:51.050
+Getting started isn't
+any different than what
+
+00:00:51.050 --> 00:00:52.880
+you're already doing today.
+
+00:00:52.880 --> 00:00:54.440
+All of the work
+that you've already
+
+00:00:54.440 --> 00:00:56.870
+done for your existing
+progressive web app
+
+00:00:56.870 --> 00:00:58.160
+still applies.
+
+00:00:58.160 --> 00:01:02.120
+You simply need to consider
+some additional breakpoints.
+
+00:01:02.120 --> 00:01:05.840
+If your app meets the standard
+progressive web app criteria,
+
+00:01:05.840 --> 00:01:08.900
+Chrome will fire the
+beforeinstallprompt event,
+
+00:01:08.900 --> 00:01:11.720
+but it won't automatically
+prompt the user.
+
+00:01:11.720 --> 00:01:17.060
+Instead, save the event, then
+add some UI like an Install App
+
+00:01:17.060 --> 00:01:19.010
+button to your app
+to tell the user
+
+00:01:19.010 --> 00:01:21.050
+that your app can be installed.
+
+00:01:21.050 --> 00:01:23.420
+Then when the user
+clicks on that button,
+
+00:01:23.420 --> 00:01:25.690
+call prompt on the saved event.
+
+00:01:25.690 --> 00:01:28.220
+Chrome will then show
+the prompt to the user.
+
+00:01:28.220 --> 00:01:31.910
+If they click Add, Chrome will
+add your progressive web app
+
+00:01:31.910 --> 00:01:34.130
+to their shelf and launcher.
+
+00:01:34.130 --> 00:01:35.990
+Check out my Google
+I/O talk, where
+
+00:01:35.990 --> 00:01:39.800
+Jenny and I go into detail
+about the technical and special
+
+00:01:39.800 --> 00:01:41.960
+design considerations
+that you need
+
+00:01:41.960 --> 00:01:45.560
+to think about when building
+a desktop progressive web app.
+
+00:01:45.560 --> 00:01:49.190
+And if you want to start playing
+with this on Mac or Windows,
+
+00:01:49.190 --> 00:01:52.490
+check out the post linked in
+the description for details
+
+00:01:52.490 --> 00:01:55.450
+on how you can enable
+support with a flag.
+
+00:01:55.450 --> 00:01:59.630
+Sensor data is used in many
+apps to enable experiences
+
+00:01:59.630 --> 00:02:03.350
+like immersive gaming, fitness
+tracking, augmented reality,
+
+00:02:03.350 --> 00:02:05.030
+or virtual reality.
+
+00:02:05.030 --> 00:02:08.030
+This data is now
+available to web apps
+
+00:02:08.030 --> 00:02:10.490
+using the generic sensor API.
+
+00:02:10.490 --> 00:02:13.250
+The API consists
+of a base sensor
+
+00:02:13.250 --> 00:02:18.080
+interface with a set of concrete
+sensor classes built on top.
+
+00:02:18.080 --> 00:02:21.860
+Having a base interface
+simplifies the implementation
+
+00:02:21.860 --> 00:02:26.330
+and specification process for
+the concrete sensor classes.
+
+00:02:26.330 --> 00:02:30.140
+For example, the gyroscope
+class is super tiny.
+
+00:02:30.140 --> 00:02:32.900
+The core functionality
+is specified by the base
+
+00:02:32.900 --> 00:02:35.390
+interface, and the
+gyroscope merely
+
+00:02:35.390 --> 00:02:37.460
+extends it with
+three attributes,
+
+00:02:37.460 --> 00:02:40.540
+representing angular velocity.
+
+00:02:40.540 --> 00:02:44.140
+Chrome 67 supports the
+accelerometer, gyroscope,
+
+00:02:44.140 --> 00:02:47.740
+orientation sensor,
+and motion sensor.
+
+00:02:47.740 --> 00:02:50.560
+Intel has put together a
+page with a whole bunch
+
+00:02:50.560 --> 00:02:52.870
+of amazing demos
+and sample code.
+
+00:02:52.870 --> 00:02:56.440
+And they've also updated the
+updates post from September
+
+00:02:56.440 --> 00:02:58.480
+with everything
+you need to know.
+
+00:02:58.480 --> 00:03:01.010
+Both are linked in
+the description.
+
+00:03:01.010 --> 00:03:03.940
+BigInts are a numeric
+primitive and JavaScript
+
+00:03:03.940 --> 00:03:07.480
+that can represent integers
+with arbitrary precision.
+
+00:03:07.480 --> 00:03:11.140
+Large integer IDs and
+high accuracy timestamps
+
+00:03:11.140 --> 00:03:14.710
+can't be safely represented as
+numbers in JavaScript, which
+
+00:03:14.710 --> 00:03:18.670
+often leads to real-world bugs
+because we end up representing
+
+00:03:18.670 --> 00:03:20.790
+them as strings instead.
+
+00:03:20.790 --> 00:03:24.100
+With BigInts, we can
+safely store and perform
+
+00:03:24.100 --> 00:03:26.990
+integer arithmetic
+without overflowing.
+
+00:03:26.990 --> 00:03:29.830
+Today, dealing with
+these large integers
+
+00:03:29.830 --> 00:03:31.660
+typically means that
+we have to resort
+
+00:03:31.660 --> 00:03:36.130
+to a library that would emulate
+BigInt like functionality.
+
+00:03:36.130 --> 00:03:38.440
+When BigInts become
+widely available,
+
+00:03:38.440 --> 00:03:41.410
+we'll be able to drop
+these runtime dependencies
+
+00:03:41.410 --> 00:03:43.660
+in favor of native BigInts.
+
+00:03:43.660 --> 00:03:46.690
+Not only is the native
+implementation faster,
+
+00:03:46.690 --> 00:03:50.470
+it'll help reduce load time,
+parse time, and compile time
+
+00:03:50.470 --> 00:03:53.960
+because we won't have to
+load those extra libraries.
+
+00:03:53.960 --> 00:03:56.090
+Firefox and Safari
+have already started
+
+00:03:56.090 --> 00:03:58.550
+working on BigInt
+implementations,
+
+00:03:58.550 --> 00:04:00.620
+and you can learn
+more by checking out
+
+00:04:00.620 --> 00:04:03.110
+Matthias' BigInt post.
+
+00:04:03.110 --> 00:04:06.120
+There's lots more, but
+I'm already over time.
+
+00:04:06.120 --> 00:04:09.050
+So check out the new and
+Chrome post link below.
+
+00:04:09.050 --> 00:04:11.720
+It has a few bonus
+items and includes links
+
+00:04:11.720 --> 00:04:15.110
+to all of the demos,
+docs, and specs.
+
+00:04:15.110 --> 00:04:16.579
+If you didn't make it to I/O--
+
+00:04:16.579 --> 00:04:19.160
+or maybe you did, but didn't
+see all the web talks--
+
+00:04:19.160 --> 00:04:21.620
+check out the Chrome
+and web playlists
+
+00:04:21.620 --> 00:04:24.500
+to get caught up on all
+the latest from Google I/O.
+
+00:04:24.500 --> 00:04:26.630
+Oh, and click that
+Subscribe button,
+
+00:04:26.630 --> 00:04:28.250
+and you'll get an
+email notification
+
+00:04:28.250 --> 00:04:30.130
+whenever we launch a new video.
+
+00:04:30.130 --> 00:04:33.530
+I'm Pete LaPage, and as soon
+as Chrome 68 is released,
+
+00:04:33.530 --> 00:04:37.480
+I'll be right here to tell
+you what's new in Chrome.
+

@@ -1,0 +1,245 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.170 --> 00:00:01.900
+PETE LEPAGE: You can
+now easily create
+
+00:00:01.900 --> 00:00:06.450
+encapsulated, reusable web
+components with Shadow DOM v1.
+
+00:00:06.450 --> 00:00:08.490
+Mobile payments
+become streamlined
+
+00:00:08.490 --> 00:00:11.270
+with the Payment Request API.
+
+00:00:11.270 --> 00:00:14.340
+The Web Bluetooth API is
+available experimentally
+
+00:00:14.340 --> 00:00:19.440
+on some platforms as an origin
+trial, and there's plenty more.
+
+00:00:19.440 --> 00:00:20.570
+I'm Pete LePage.
+
+00:00:20.570 --> 00:00:24.150
+Let's dive in and see what's
+new for developers in Chrome 53.
+
+00:00:24.150 --> 00:00:27.216
+[MUSIC PLAYING]
+
+00:00:27.216 --> 00:00:31.610
+HTML, CSS, and JavaScript are
+powerful development languages.
+
+00:00:31.610 --> 00:00:35.590
+But they can be difficult to
+maintain in large code bases.
+
+00:00:35.590 --> 00:00:38.810
+And if your app embeds
+third-party content,
+
+00:00:38.810 --> 00:00:41.710
+you need to ensure that
+its included styles do not
+
+00:00:41.710 --> 00:00:44.670
+affect other parts of your app.
+
+00:00:44.670 --> 00:00:47.590
+Chrome 53 supports
+Shadow DOM v1,
+
+00:00:47.590 --> 00:00:52.010
+which allows an element to
+encapsulate its style and child
+
+00:00:52.010 --> 00:00:54.620
+DOM away from the main document.
+
+00:00:54.620 --> 00:00:58.380
+Shadow DOM v1 has some
+significant changes from v0,
+
+00:00:58.380 --> 00:01:02.030
+and is broadly agreed upon
+by major browser vendors.
+
+00:01:02.030 --> 00:01:04.560
+Chrome will support
+both versions of the API
+
+00:01:04.560 --> 00:01:08.330
+until enough of you
+have moved to v1.
+
+00:01:08.330 --> 00:01:11.470
+Eric Bidelman has a great primer
+on using Shadow DOM to create
+
+00:01:11.470 --> 00:01:15.430
+self-contained, reusable web
+components on Web Fundamentals.
+
+00:01:15.430 --> 00:01:16.970
+Check it out.
+
+00:01:16.970 --> 00:01:19.840
+Completing payments on the web
+can be a cumbersome process
+
+00:01:19.840 --> 00:01:21.040
+for users.
+
+00:01:21.040 --> 00:01:24.410
+Autofill has made it easier
+to enter information.
+
+00:01:24.410 --> 00:01:26.700
+But trying to complete a
+checkout form on mobile
+
+00:01:26.700 --> 00:01:28.730
+is still a challenge.
+
+00:01:28.730 --> 00:01:31.638
+Chrome 53 on Android adds
+support for the Payment
+
+00:01:31.638 --> 00:01:36.960
+Request API, a new spec from
+the W3C that provides fast,
+
+00:01:36.960 --> 00:01:40.860
+seamless, and secure payments
+on the web using a credit card
+
+00:01:40.860 --> 00:01:44.010
+or other payment provider,
+like Android Pay.
+
+00:01:44.010 --> 00:01:46.760
+It also lets users provide
+a billing address, shipping
+
+00:01:46.760 --> 00:01:49.240
+details, and other
+payer information
+
+00:01:49.240 --> 00:01:51.350
+without having to type anything.
+
+00:01:51.350 --> 00:01:55.140
+Expect to see support for
+more platforms coming soon.
+
+00:01:55.140 --> 00:01:58.680
+But in the meantime, check
+out Eiji's Payment Request API
+
+00:01:58.680 --> 00:02:00.920
+Integration Guide
+on web fundamentals
+
+00:02:00.920 --> 00:02:04.880
+at g.co/paymentrequestapi.
+
+00:02:04.880 --> 00:02:07.790
+The Web Bluetooth
+API is available
+
+00:02:07.790 --> 00:02:11.570
+experimentally on some
+platforms as an origin trial,
+
+00:02:11.570 --> 00:02:15.360
+allowing sites to communicate
+with nearby devices using
+
+00:02:15.360 --> 00:02:19.460
+the Bluetooth Generic
+Attribute Profile.
+
+00:02:19.460 --> 00:02:22.880
+Sites that send notifications
+to Android devices running
+
+00:02:22.880 --> 00:02:25.360
+Marshmallow or later
+can now provide
+
+00:02:25.360 --> 00:02:30.490
+the badge shown in the status
+bar instead of the Chrome logo.
+
+00:02:30.490 --> 00:02:32.870
+And finally, Chrome
+on Android now
+
+00:02:32.870 --> 00:02:35.100
+allows muted videos
+to begin playing
+
+00:02:35.100 --> 00:02:37.250
+without user interaction.
+
+00:02:37.250 --> 00:02:41.355
+If the video was marked as muted
+and has the autoplay attribute,
+
+00:02:41.355 --> 00:02:43.220
+Chrome will start
+playing the video when
+
+00:02:43.220 --> 00:02:46.800
+it comes visible to the user.
+
+00:02:46.800 --> 00:02:49.700
+These are just a few of
+the changes in Chrome 53
+
+00:02:49.700 --> 00:02:51.050
+for developers.
+
+00:02:51.050 --> 00:02:53.350
+Check the description for
+more details and links
+
+00:02:53.350 --> 00:02:56.600
+to the documentation
+and specifications.
+
+00:02:56.600 --> 00:02:58.350
+If you want to stay
+up-to-date with Chrome
+
+00:02:58.350 --> 00:03:00.820
+and know what's coming,
+click that Subscribe button
+
+00:03:00.820 --> 00:03:04.230
+up there, or up there,
+or somewhere up there.
+
+00:03:04.230 --> 00:03:05.930
+Anyways, I'm Pete LePage.
+
+00:03:05.930 --> 00:03:07.980
+And as soon as Chrome
+54 is released,
+
+00:03:07.980 --> 00:03:11.360
+I'll be right here to tell
+you what's new in Chrome.
+
+00:03:11.360 --> 00:03:14.410
+[MUSIC PLAYING]
+

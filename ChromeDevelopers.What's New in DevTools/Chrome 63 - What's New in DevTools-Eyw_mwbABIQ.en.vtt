@@ -1,0 +1,430 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.670 --> 00:00:06.660
+Welcome back.
+
+00:00:06.660 --> 00:00:10.230
+DevTools is shipping with five
+new features in Chrome 63,
+
+00:00:10.230 --> 00:00:14.160
+including multi-client
+debugging, Workspaces 2.0,
+
+00:00:14.160 --> 00:00:16.620
+custom push notifications,
+and background sync
+
+00:00:16.620 --> 00:00:19.590
+events, and four new audits.
+
+00:00:19.590 --> 00:00:22.020
+Up until now, DevTools
+hasn't played nicely
+
+00:00:22.020 --> 00:00:23.764
+with other developer tools.
+
+00:00:23.764 --> 00:00:25.680
+If you've ever tried
+debugging a Chrome driver
+
+00:00:25.680 --> 00:00:28.290
+test with their tools
+or using the debugging
+
+00:00:28.290 --> 00:00:30.720
+extension in VS
+Code or WebStorm,
+
+00:00:30.720 --> 00:00:32.250
+you know what I'm talking about.
+
+00:00:32.250 --> 00:00:35.030
+Once you open up DevTools,
+your session in that other tool
+
+00:00:35.030 --> 00:00:37.140
+gets demolished.
+
+00:00:37.140 --> 00:00:39.690
+As of Chrome 63, this is fixed.
+
+00:00:39.690 --> 00:00:41.430
+We call it
+multi-client debugging,
+
+00:00:41.430 --> 00:00:45.510
+and it opens up a whole bunch of
+new interactions between tools.
+
+00:00:45.510 --> 00:00:47.340
+Generally speaking,
+clients can now
+
+00:00:47.340 --> 00:00:49.110
+run at the same
+time as DevTools,
+
+00:00:49.110 --> 00:00:53.320
+and multiple clients can now
+connect at the same time.
+
+00:00:53.320 --> 00:00:55.990
+For a while now, we've had
+a feature called Workspaces,
+
+00:00:55.990 --> 00:00:59.680
+which essentially lets you use
+DevTools as your code editor.
+
+00:00:59.680 --> 00:01:02.140
+Within DevTools, you make
+some changes to your code,
+
+00:01:02.140 --> 00:01:05.230
+and the changes get saved
+to your file system.
+
+00:01:05.230 --> 00:01:09.780
+Version 2.0 brings some UX
+improvements to this workflow.
+
+00:01:09.780 --> 00:01:12.090
+Here on my desktop,
+I've got the repository
+
+00:01:12.090 --> 00:01:15.030
+where I frantically hacked
+together the last-minute demos
+
+00:01:15.030 --> 00:01:16.600
+for these videos.
+
+00:01:16.600 --> 00:01:18.820
+Let's serve the repo
+locally and work on the demo
+
+00:01:18.820 --> 00:01:21.000
+that I'm going to show you next.
+
+00:01:21.000 --> 00:01:22.890
+To map the local
+code to the network,
+
+00:01:22.890 --> 00:01:24.330
+go to the Sources panel.
+
+00:01:24.330 --> 00:01:26.430
+Then click the File System tab.
+
+00:01:26.430 --> 00:01:28.420
+Then drag and drop
+the Directory.
+
+00:01:28.420 --> 00:01:30.180
+Chrome asks you to
+confirm that you
+
+00:01:30.180 --> 00:01:32.040
+want to give DevTools
+read-and-write access
+
+00:01:32.040 --> 00:01:34.050
+to the Directory.
+
+00:01:34.050 --> 00:01:35.490
+After I reload
+the page, there is
+
+00:01:35.490 --> 00:01:39.060
+a green dot next to some of
+the files in the Network tab.
+
+00:01:39.060 --> 00:01:41.770
+This means they are
+mapped to local resources.
+
+00:01:41.770 --> 00:01:44.770
+DevTools does these
+mappings automatically.
+
+00:01:44.770 --> 00:01:47.470
+Style changes in the Elements
+panel persist to disk--
+
+00:01:47.470 --> 00:01:51.470
+for example, when I change
+the color of this H1.
+
+00:01:51.470 --> 00:01:53.030
+The green dot here,
+next to the link,
+
+00:01:53.030 --> 00:01:56.060
+means that this change has
+persisted in the source.
+
+00:01:56.060 --> 00:01:56.960
+Click on the link.
+
+00:01:56.960 --> 00:01:58.730
+And back in the
+Sources tab, we can
+
+00:01:58.730 --> 00:02:01.710
+see the change has been
+written to the file.
+
+00:02:01.710 --> 00:02:04.780
+Just to confirm, let's
+run git diff on the repo.
+
+00:02:04.780 --> 00:02:07.020
+And yes, we can see
+the change has been
+
+00:02:07.020 --> 00:02:09.570
+recorded in the git repo too.
+
+00:02:09.570 --> 00:02:11.980
+Now, a big current
+gotcha to be aware of
+
+00:02:11.980 --> 00:02:15.690
+is that changes you make in
+the DOM tree don't persist.
+
+00:02:15.690 --> 00:02:19.080
+For example, change
+this H1's text.
+
+00:02:19.080 --> 00:02:21.960
+Go back to the Sources panel,
+and view the file there.
+
+00:02:21.960 --> 00:02:23.910
+And the change isn't there.
+
+00:02:23.910 --> 00:02:25.860
+Reload the page,
+and the text reverts
+
+00:02:25.860 --> 00:02:28.240
+to what was there before.
+
+00:02:28.240 --> 00:02:30.160
+So if you want a
+persist DOM changes,
+
+00:02:30.160 --> 00:02:33.510
+just edit the file
+from the Sources panel.
+
+00:02:33.510 --> 00:02:36.180
+Reload the page, and you can
+see that the DOM change persists
+
+00:02:36.180 --> 00:02:38.550
+across page reloads.
+
+00:02:38.550 --> 00:02:41.760
+In the Service Workers tab, you
+can now send push notifications
+
+00:02:41.760 --> 00:02:44.490
+with custom content and
+background sync events
+
+00:02:44.490 --> 00:02:46.230
+with custom tags.
+
+00:02:46.230 --> 00:02:47.970
+Go to the Application panel.
+
+00:02:47.970 --> 00:02:50.160
+Then click the
+Service Workers tab.
+
+00:02:50.160 --> 00:02:52.320
+To send a custom
+push notification,
+
+00:02:52.320 --> 00:02:54.460
+put some content
+in the Push box.
+
+00:02:54.460 --> 00:02:57.110
+Then click the Push button.
+
+00:02:57.110 --> 00:02:59.990
+To send a background sync
+event with custom tag,
+
+00:02:59.990 --> 00:03:02.340
+enter the custom
+tag in the Sync box.
+
+00:03:02.340 --> 00:03:04.890
+Then click the Sync button.
+
+00:03:04.890 --> 00:03:07.040
+For this demo, I've just
+set up the Service Worker
+
+00:03:07.040 --> 00:03:09.890
+to log the tag text
+to the console.
+
+00:03:09.890 --> 00:03:12.950
+In real apps, this feature is
+useful when your app is offline
+
+00:03:12.950 --> 00:03:15.140
+and you want the Service
+Worker to do some work once
+
+00:03:15.140 --> 00:03:17.540
+an internet connection
+is re-established--
+
+00:03:17.540 --> 00:03:19.670
+using the tag as
+the command keyword
+
+00:03:19.670 --> 00:03:22.630
+for which logic to execute.
+
+00:03:22.630 --> 00:03:24.730
+The Audits panel
+has four new audits,
+
+00:03:24.730 --> 00:03:27.700
+including serving
+images as WebP,
+
+00:03:27.700 --> 00:03:31.000
+using images with
+appropriate aspect ratios,
+
+00:03:31.000 --> 00:03:34.000
+avoiding front end JavaScript
+libraries with known security
+
+00:03:34.000 --> 00:03:38.770
+vulnerabilities, and logging
+browser errors to the console.
+
+00:03:38.770 --> 00:03:40.720
+That's all for Chrome 63.
+
+00:03:40.720 --> 00:03:44.210
+Here's a tip about a lesser
+known DevTools feature.
+
+00:03:44.210 --> 00:03:47.270
+Say you're debugging a page or
+deconstructing somebody else's
+
+00:03:47.270 --> 00:03:49.700
+page, and you want to
+study the logic that gets
+
+00:03:49.700 --> 00:03:52.624
+triggered when an event fires.
+
+00:03:52.624 --> 00:03:54.290
+You could dig around
+the code and search
+
+00:03:54.290 --> 00:03:56.720
+blindly for the
+event handler logic.
+
+00:03:56.720 --> 00:03:59.320
+Or you can use an event
+listener breakpoint.
+
+00:03:59.320 --> 00:04:03.170
+Here I've got Serma's
+Tenure for Bananas app open.
+
+00:04:03.170 --> 00:04:05.750
+And I really need to
+figure out what logic runs
+
+00:04:05.750 --> 00:04:08.060
+when I click the Like button.
+
+00:04:08.060 --> 00:04:10.760
+To set an event
+listener breakpoint,
+
+00:04:10.760 --> 00:04:12.170
+go to the Sources panel.
+
+00:04:12.170 --> 00:04:16.120
+Then expand the Event
+Listener Breakpoint section.
+
+00:04:16.120 --> 00:04:19.230
+Check the Mouse checkbox to
+break on any mouse event.
+
+00:04:19.230 --> 00:04:23.130
+Or expand the section, and check
+the Click checkbox to break
+
+00:04:23.130 --> 00:04:25.812
+on click events specifically.
+
+00:04:25.812 --> 00:04:27.270
+When I triggered
+the Click listener
+
+00:04:27.270 --> 00:04:30.360
+by clicking the Like button,
+DevTools automatically
+
+00:04:30.360 --> 00:04:33.950
+pauses on the first line
+of code in the listener.
+
+00:04:33.950 --> 00:04:37.640
+Sometimes an event causes
+multiple listeners to run.
+
+00:04:37.640 --> 00:04:40.880
+For example, if you've got
+some analytics tracking set up,
+
+00:04:40.880 --> 00:04:42.620
+you might pause in
+the click listener
+
+00:04:42.620 --> 00:04:44.840
+from the analytics code--
+
+00:04:44.840 --> 00:04:48.380
+in which case you can just
+click Resume Script Execution,
+
+00:04:48.380 --> 00:04:51.740
+and the page runs until the
+first line of the next event
+
+00:04:51.740 --> 00:04:53.071
+listener.
+
+00:04:53.071 --> 00:04:53.570
+That's it.
+
+00:04:53.570 --> 00:04:54.660
+Thanks for watching.
+
+00:04:54.660 --> 00:04:57.370
+See you in six
+weeks for Chrome 64.
+

@@ -1,0 +1,105 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.860 --> 00:00:03.860
+SURMA: Changes to certain
+properties of elements
+
+00:00:03.860 --> 00:00:06.530
+trigger layout style or
+paint in the browser.
+
+00:00:06.530 --> 00:00:09.210
+For example, when you change
+the font size of an element,
+
+00:00:09.210 --> 00:00:11.590
+the browser will have to
+reposition all siblings
+
+00:00:11.590 --> 00:00:12.750
+and repaint them.
+
+00:00:12.750 --> 00:00:14.990
+And this can get fairly
+expensive really,
+
+00:00:14.990 --> 00:00:16.149
+really quickly.
+
+00:00:16.149 --> 00:00:19.100
+Containment allows you to define
+boundaries for the browser's
+
+00:00:19.100 --> 00:00:20.584
+layout style and paint work.
+
+00:00:20.584 --> 00:00:22.250
+You're making a
+guarantee to the browser
+
+00:00:22.250 --> 00:00:25.160
+that changes inside an element
+with a containment property
+
+00:00:25.160 --> 00:00:27.640
+do not need to be
+propagated to the outside.
+
+00:00:27.640 --> 00:00:31.410
+In our router example, I created
+a CSS animation for font size
+
+00:00:31.410 --> 00:00:33.060
+which you should never ever do.
+
+00:00:33.060 --> 00:00:36.270
+But it is an easy way to
+trigger layout on every frame.
+
+00:00:36.270 --> 00:00:38.210
+If we make a timer
+recording, we can
+
+00:00:38.210 --> 00:00:41.460
+see that the document root
+gets layouted every frame.
+
+00:00:41.460 --> 00:00:45.200
+So let's give every view the
+contain strict CSS attribute,
+
+00:00:45.200 --> 00:00:48.080
+meaning that the view is now
+a boundary for layout style
+
+00:00:48.080 --> 00:00:49.480
+and paint.
+
+00:00:49.480 --> 00:00:52.440
+Now, the timer recording will
+show that the view itself
+
+00:00:52.440 --> 00:00:54.330
+is the layout route.
+
+00:00:54.330 --> 00:00:56.110
+And there you have
+it-- a single CSS
+
+00:00:56.110 --> 00:00:58.010
+as property to make
+your performance better.
+
+00:00:58.010 --> 00:01:00.540
+What more could
+you possibly want?
+
+00:01:00.540 --> 00:01:02.670
+Thanks for watching,
+and see you next time.
+
+00:01:02.670 --> 00:01:05.720
+[MUSIC PLAYING]
+

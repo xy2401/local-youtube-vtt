@@ -1,0 +1,1473 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.186 --> 00:00:01.560
+PAUL LEWIS: So in
+the last entry,
+
+00:00:01.560 --> 00:00:05.010
+I think I talked about the
+service worker and some
+
+00:00:05.010 --> 00:00:06.270
+of the offline stuff.
+
+00:00:06.270 --> 00:00:09.690
+And I actually heard from a
+lot of you in the feedback
+
+00:00:09.690 --> 00:00:11.040
+that that was like--
+
+00:00:11.040 --> 00:00:12.390
+it was complicated stuff.
+
+00:00:12.390 --> 00:00:13.380
+And I agree.
+
+00:00:13.380 --> 00:00:16.200
+It is complicated
+stuff and complex,
+
+00:00:16.200 --> 00:00:17.730
+and it's not that
+much fun to write.
+
+00:00:17.730 --> 00:00:19.950
+It's quite fiddly work.
+
+00:00:19.950 --> 00:00:22.470
+But there is hope, because
+things like the cache
+
+00:00:22.470 --> 00:00:25.620
+API, hopefully they
+can be updated,
+
+00:00:25.620 --> 00:00:27.360
+these APIs that
+I'm having to sort
+
+00:00:27.360 --> 00:00:33.030
+of work around and kind of work
+with to make my stuff work.
+
+00:00:33.030 --> 00:00:35.524
+Hopefully, in the
+long term, we'll
+
+00:00:35.524 --> 00:00:37.440
+get solutions for those
+at the platform level.
+
+00:00:37.440 --> 00:00:39.140
+And in the interim--
+
+00:00:39.140 --> 00:00:42.780
+isn't it-- I think it's a good
+thing that you can actually
+
+00:00:42.780 --> 00:00:45.060
+work with these
+lower-level primitives
+
+00:00:45.060 --> 00:00:46.800
+and make the thing
+that you want to make.
+
+00:00:46.800 --> 00:00:49.980
+That's the genius of
+the Extensible Web.
+
+00:00:49.980 --> 00:00:51.570
+Give you the
+low-level primitives.
+
+00:00:51.570 --> 00:00:55.200
+Yeah, there's complexity
+there, perhaps, perhaps not.
+
+00:00:55.200 --> 00:00:57.709
+But if there is, you can
+still write that code,
+
+00:00:57.709 --> 00:00:59.250
+and it's much better
+than saying, oh,
+
+00:00:59.250 --> 00:01:01.000
+we've got this high-level
+thing, and if it
+
+00:01:01.000 --> 00:01:04.170
+doesn't fit for your particular
+needs, sorry about that.
+
+00:01:04.170 --> 00:01:05.010
+That's the old web.
+
+00:01:05.010 --> 00:01:06.301
+That's the web we used to have.
+
+00:01:06.301 --> 00:01:08.100
+So anyway, I just
+kind of wanted to say
+
+00:01:08.100 --> 00:01:11.370
+that just to say, partly,
+I am reading the comments.
+
+00:01:11.370 --> 00:01:12.834
+I do love reading
+those comments.
+
+00:01:12.834 --> 00:01:14.750
+And I always say this
+at the end of the video,
+
+00:01:14.750 --> 00:01:16.580
+but today, I'm
+starting with that.
+
+00:01:16.580 --> 00:01:17.460
+I do read them.
+
+00:01:17.460 --> 00:01:19.060
+I love them.
+
+00:01:19.060 --> 00:01:20.370
+They're really insightful.
+
+00:01:20.370 --> 00:01:22.290
+And often, as you'll
+also be seeing,
+
+00:01:22.290 --> 00:01:23.670
+sometimes, people are
+like, why did you do that?
+
+00:01:23.670 --> 00:01:24.630
+Why didn't you do that?
+
+00:01:24.630 --> 00:01:26.671
+And then the next thing
+will be a comment from me
+
+00:01:26.671 --> 00:01:29.570
+with a link to the GitHub
+commit where I'm like,
+
+00:01:29.570 --> 00:01:31.720
+I changed the code because
+that was a better idea.
+
+00:01:31.720 --> 00:01:34.777
+So you know, teamwork.
+
+00:01:34.777 --> 00:01:35.610
+That's what this is.
+
+00:01:35.610 --> 00:01:39.560
+Anyway, so I don't want to say
+that I've solved all the major
+
+00:01:39.560 --> 00:01:41.510
+problems with the app,
+because I haven't.
+
+00:01:41.510 --> 00:01:43.820
+But I did want to spend
+a little bit of time
+
+00:01:43.820 --> 00:01:46.660
+today looking at
+some of the smaller
+
+00:01:46.660 --> 00:01:50.540
+details, the little touches that
+I've been putting into the app.
+
+00:01:50.540 --> 00:01:53.710
+And I just thought I'd pick
+out two of those for you today.
+
+00:01:53.710 --> 00:01:57.310
+And the first one is what
+you see on the screen.
+
+00:01:57.310 --> 00:01:57.980
+Let me show you.
+
+00:01:57.980 --> 00:01:58.480
+OK.
+
+00:01:58.480 --> 00:02:03.100
+So here we have the video,
+and I'm going to pause it.
+
+00:02:03.100 --> 00:02:04.450
+Why is that green?
+
+00:02:04.450 --> 00:02:05.530
+Oh, that's peculiar.
+
+00:02:05.530 --> 00:02:07.477
+We'll ignore that for now.
+
+00:02:07.477 --> 00:02:10.060
+But what I wanted to show you
+is this down here at the bottom.
+
+00:02:10.060 --> 00:02:12.559
+You see as I'm dragging along,
+we get this little thumbnail,
+
+00:02:12.559 --> 00:02:13.620
+like that.
+
+00:02:13.620 --> 00:02:14.910
+Let's release that.
+
+00:02:14.910 --> 00:02:15.880
+Wow.
+
+00:02:15.880 --> 00:02:18.940
+I do not know what's
+happened to Pete there.
+
+00:02:18.940 --> 00:02:23.320
+Sorry, Pete, you look
+like the Incredible Pete.
+
+00:02:23.320 --> 00:02:23.945
+That's bizarre.
+
+00:02:26.349 --> 00:02:27.890
+Goodness knows what's
+going on there.
+
+00:02:27.890 --> 00:02:31.280
+Anyway, but this little
+thumbnail, how am I doing this?
+
+00:02:31.280 --> 00:02:34.806
+I thought this was a
+really nice way to visually
+
+00:02:34.806 --> 00:02:35.930
+sort of orientate yourself.
+
+00:02:35.930 --> 00:02:38.240
+We've all seen this
+on apps and so on.
+
+00:02:38.240 --> 00:02:39.970
+Oh, we can't leave
+it on that thumbnail.
+
+00:02:39.970 --> 00:02:42.650
+There we-- oh, that's me.
+
+00:02:42.650 --> 00:02:43.550
+Right.
+
+00:02:43.550 --> 00:02:47.480
+Well, the way I do it is
+I have created an image,
+
+00:02:47.480 --> 00:02:49.710
+one big image for the video.
+
+00:02:49.710 --> 00:02:53.390
+So this is part of the
+image processing that I do.
+
+00:02:53.390 --> 00:02:55.280
+When I take the video
+in and I'm making
+
+00:02:55.280 --> 00:02:59.150
+the Web EMS and everything
+else, I also ask FFmpeg--
+
+00:02:59.150 --> 00:03:02.690
+and you can find the command for
+it just by searching around--
+
+00:03:02.690 --> 00:03:05.930
+to say every, I think it's
+like every three seconds.
+
+00:03:05.930 --> 00:03:12.545
+I think I time it to the
+segment length, actually.
+
+00:03:12.545 --> 00:03:15.350
+Because I break my video
+into three-second segments.
+
+00:03:15.350 --> 00:03:17.270
+And if that's sort
+of news to you,
+
+00:03:17.270 --> 00:03:20.782
+then definitely watch the ones
+earlier on in the dev diary
+
+00:03:20.782 --> 00:03:23.240
+where I was talking about DASH
+and how you split your video
+
+00:03:23.240 --> 00:03:24.740
+down into these segments.
+
+00:03:24.740 --> 00:03:28.940
+All the same, I ask FFmpeg,
+at every few seconds,
+
+00:03:28.940 --> 00:03:33.350
+please, can you output an image
+for me, a small thumbnail.
+
+00:03:33.350 --> 00:03:34.170
+And it is small.
+
+00:03:34.170 --> 00:03:36.655
+It's only like 144 pixels by--
+
+00:03:36.655 --> 00:03:37.837
+or is it 256?
+
+00:03:37.837 --> 00:03:38.920
+Whatever it is, it's tiny.
+
+00:03:38.920 --> 00:03:40.670
+Anyway, so I get
+a bunch of these,
+
+00:03:40.670 --> 00:03:43.310
+and then I use ImageMagick,
+actually, to stack them
+
+00:03:43.310 --> 00:03:44.810
+all up into one big image.
+
+00:03:44.810 --> 00:03:48.680
+And again, that's just-- is
+one line in the command line.
+
+00:03:48.680 --> 00:03:51.250
+And you see that it outputs
+this video like this, as
+
+00:03:51.250 --> 00:03:54.300
+like a strip, filmstrip.
+
+00:03:54.300 --> 00:03:58.862
+In the source code, I
+load this image as--
+
+00:03:58.862 --> 00:03:59.570
+now do I use it--
+
+00:03:59.570 --> 00:04:04.260
+I think I use it as a div,
+a background image on a div.
+
+00:04:04.260 --> 00:04:04.770
+OK?
+
+00:04:04.770 --> 00:04:07.060
+So I have a div--
+
+00:04:07.060 --> 00:04:07.830
+imagine this.
+
+00:04:07.830 --> 00:04:11.040
+Let me show you this here.
+
+00:04:11.040 --> 00:04:13.800
+The white box around it
+with a little downtick
+
+00:04:13.800 --> 00:04:14.760
+on it, that's a div.
+
+00:04:14.760 --> 00:04:18.360
+And inside is another div
+that's slightly smaller,
+
+00:04:18.360 --> 00:04:22.140
+which is the same size as one
+of those frames of the video.
+
+00:04:22.140 --> 00:04:26.490
+And in there, I position
+another div, a third div,
+
+00:04:26.490 --> 00:04:27.510
+which sounds bizarre.
+
+00:04:27.510 --> 00:04:29.460
+You might be like, well,
+why is he doing this?
+
+00:04:29.460 --> 00:04:31.980
+Why has he got so many
+divs all the way down?
+
+00:04:31.980 --> 00:04:33.930
+Surely, he could just
+set background position.
+
+00:04:33.930 --> 00:04:35.930
+He could just drop this
+in as a background image
+
+00:04:35.930 --> 00:04:39.120
+and then set background
+position and all would be fine.
+
+00:04:39.120 --> 00:04:42.480
+Yes, I could, but actually,
+we don't typically
+
+00:04:42.480 --> 00:04:43.560
+want to do that.
+
+00:04:43.560 --> 00:04:47.730
+What we would rather do is
+we'd rather use a transform.
+
+00:04:47.730 --> 00:04:50.480
+And I always say this
+about performance--
+
+00:04:50.480 --> 00:04:54.860
+transforms and opacity
+are your best friends.
+
+00:04:54.860 --> 00:04:56.840
+I'm almost tired of
+hearing me say it.
+
+00:04:56.840 --> 00:05:00.560
+But there I go again
+doing it once more.
+
+00:05:00.560 --> 00:05:06.560
+What I do is I drop in that
+image as a full-size div,
+
+00:05:06.560 --> 00:05:08.740
+and I then just
+transform it up and down.
+
+00:05:08.740 --> 00:05:09.990
+So it's like a sliding window.
+
+00:05:09.990 --> 00:05:12.974
+So you've got this kind
+of the container element,
+
+00:05:12.974 --> 00:05:15.140
+and inside it is this div
+that we just sort of slide
+
+00:05:15.140 --> 00:05:16.790
+up and down with a transform.
+
+00:05:16.790 --> 00:05:19.280
+And how do we know how
+much to transform it by?
+
+00:05:19.280 --> 00:05:22.010
+Well, that's what
+this code is, here.
+
+00:05:22.010 --> 00:05:24.830
+So the available
+height is basically
+
+00:05:24.830 --> 00:05:29.630
+how tall is that
+filmstrip of images,
+
+00:05:29.630 --> 00:05:35.930
+take away the height of one
+of the stills, which is--
+
+00:05:35.930 --> 00:05:37.710
+it is 81 pixels.
+
+00:05:37.710 --> 00:05:38.252
+There you go.
+
+00:05:38.252 --> 00:05:40.043
+Now that's the answer,
+I think it's-- yeah,
+
+00:05:40.043 --> 00:05:42.860
+it's probably 144 by 81, I
+think is what it is for each one
+
+00:05:42.860 --> 00:05:43.612
+of those stills.
+
+00:05:43.612 --> 00:05:45.070
+Anyway so you take
+away-- so you've
+
+00:05:45.070 --> 00:05:49.160
+got the height of the whole
+thing minus one of the frames,
+
+00:05:49.160 --> 00:05:51.740
+because you don't want it to
+be able to go past the end,
+
+00:05:51.740 --> 00:05:54.350
+and then we figure
+out the index.
+
+00:05:54.350 --> 00:05:58.730
+And the index is basically
+take a normalized position,
+
+00:05:58.730 --> 00:05:59.810
+so if we--
+
+00:05:59.810 --> 00:06:01.320
+I normalize the time.
+
+00:06:01.320 --> 00:06:03.980
+So if you're-- it's a
+value between 0 and 1,
+
+00:06:03.980 --> 00:06:07.010
+0 being the start of the
+video; 1 being the end.
+
+00:06:07.010 --> 00:06:10.700
+And I say, well,
+you are, say, 0.5
+
+00:06:10.700 --> 00:06:12.650
+way of the way
+through the video,
+
+00:06:12.650 --> 00:06:15.860
+or where you're scrubbing
+is 0.5 on that line.
+
+00:06:15.860 --> 00:06:17.672
+And what I do is
+I then say, well,
+
+00:06:17.672 --> 00:06:19.130
+times that by the
+available height.
+
+00:06:19.130 --> 00:06:20.990
+That should give
+you where you would
+
+00:06:20.990 --> 00:06:22.280
+need to be in that filmstrip.
+
+00:06:22.280 --> 00:06:25.160
+And then I round it
+to the nearest frame
+
+00:06:25.160 --> 00:06:27.050
+so that we don't sort
+of see half of a frame
+
+00:06:27.050 --> 00:06:29.270
+or 3/4 of a frame, or
+some fraction of a frame.
+
+00:06:29.270 --> 00:06:31.850
+We want it to be
+snapped to whole frames.
+
+00:06:31.850 --> 00:06:33.775
+And that's what we do,
+we just basically find
+
+00:06:33.775 --> 00:06:35.650
+the, that's why there's
+the [? flaw ?] there.
+
+00:06:35.650 --> 00:06:37.730
+We find this what I
+call the index, which
+
+00:06:37.730 --> 00:06:39.470
+is which one of the
+frames should we
+
+00:06:39.470 --> 00:06:42.140
+be looking at based off that
+normalized position between 0
+
+00:06:42.140 --> 00:06:43.200
+and 1.
+
+00:06:43.200 --> 00:06:46.250
+And then we do a transform
+on that filmstrip
+
+00:06:46.250 --> 00:06:47.870
+to move it by the
+correct amount.
+
+00:06:47.870 --> 00:06:48.500
+And that's it.
+
+00:06:48.500 --> 00:06:51.620
+So we've pre-baked
+this filmstrip,
+
+00:06:51.620 --> 00:06:53.109
+and then we drop
+it into the page,
+
+00:06:53.109 --> 00:06:54.650
+and then we just
+slide it up and down
+
+00:06:54.650 --> 00:06:58.940
+depending on how far you've
+slid across the time line.
+
+00:06:58.940 --> 00:07:00.389
+So that's one.
+
+00:07:00.389 --> 00:07:01.430
+That's one of the things.
+
+00:07:01.430 --> 00:07:03.050
+Let me show you the
+other one, which
+
+00:07:03.050 --> 00:07:05.580
+I'm quite fond of as well.
+
+00:07:05.580 --> 00:07:06.880
+It is just a little thing.
+
+00:07:06.880 --> 00:07:11.280
+Imagine-- I'm just going to
+get rid of the Incredible Pete
+
+00:07:11.280 --> 00:07:14.510
+there and just go back
+to a normal image.
+
+00:07:14.510 --> 00:07:17.330
+I'm going to find out why
+that happened after this.
+
+00:07:17.330 --> 00:07:18.610
+It's classic, isn't it?
+
+00:07:18.610 --> 00:07:23.150
+It's been working fine, but
+I effectively do a demo,
+
+00:07:23.150 --> 00:07:25.380
+and it all breaks.
+
+00:07:25.380 --> 00:07:26.410
+Brilliant.
+
+00:07:26.410 --> 00:07:27.870
+Anyway, here we go.
+
+00:07:27.870 --> 00:07:29.610
+So what is the other thing?
+
+00:07:29.610 --> 00:07:30.520
+Yes, it's this.
+
+00:07:30.520 --> 00:07:32.455
+I remember now.
+
+00:07:32.455 --> 00:07:34.830
+Imagine you're in the situation
+you're thinking, oh look,
+
+00:07:34.830 --> 00:07:36.090
+there, all this content.
+
+00:07:36.090 --> 00:07:37.020
+Isn't that amazing?
+
+00:07:37.020 --> 00:07:42.630
+But imagine you
+go offline, and--
+
+00:07:42.630 --> 00:07:43.339
+that didn't work.
+
+00:07:43.339 --> 00:07:44.255
+Why did that not work?
+
+00:07:44.255 --> 00:07:45.220
+There it-- oh, whew.
+
+00:07:45.220 --> 00:07:45.930
+It did work.
+
+00:07:45.930 --> 00:07:48.330
+It just took a while for
+it to propagate through.
+
+00:07:48.330 --> 00:07:51.960
+You see now, it's faded out
+and disabled all the things
+
+00:07:51.960 --> 00:07:54.680
+that it thinks we can't click.
+
+00:07:54.680 --> 00:07:58.761
+So let's bring that back online.
+
+00:07:58.761 --> 00:07:59.260
+There we go.
+
+00:07:59.260 --> 00:08:01.860
+And you see that it
+picks that up as well.
+
+00:08:01.860 --> 00:08:04.240
+Imagine then, we go--
+
+00:08:04.240 --> 00:08:06.360
+and let's go into one of these.
+
+00:08:06.360 --> 00:08:11.940
+Let's pick this one.
+
+00:08:11.940 --> 00:08:15.480
+And we'll make that
+available offline.
+
+00:08:15.480 --> 00:08:16.110
+Round it goes.
+
+00:08:16.110 --> 00:08:17.350
+There we are.
+
+00:08:17.350 --> 00:08:19.680
+And we could do the same
+again, but I've also
+
+00:08:19.680 --> 00:08:21.840
+added this little
+settings area where
+
+00:08:21.840 --> 00:08:24.390
+we can prefetch popular
+content, which was that whole--
+
+00:08:24.390 --> 00:08:26.400
+we talked about that
+in a previous episode,
+
+00:08:26.400 --> 00:08:28.350
+how one of the
+use cases is let's
+
+00:08:28.350 --> 00:08:30.840
+prefetch the first like 30
+seconds or the first minute
+
+00:08:30.840 --> 00:08:32.970
+of some footage so that
+we get a flying start.
+
+00:08:32.970 --> 00:08:34.013
+But the other setting--
+
+00:08:34.013 --> 00:08:35.679
+I made that a user5
+setting, by the way,
+
+00:08:35.679 --> 00:08:37.409
+because it will use
+bandwidth, and I
+
+00:08:37.409 --> 00:08:39.640
+want to be respectful
+of people's bandwidth.
+
+00:08:39.640 --> 00:08:42.049
+So I don't just switch
+it on for everybody.
+
+00:08:42.049 --> 00:08:43.770
+I let them decide if
+they want to do it.
+
+00:08:43.770 --> 00:08:46.145
+The other one is show offline
+content only, which is the,
+
+00:08:46.145 --> 00:08:48.150
+I know I'm going
+to be on a flight
+
+00:08:48.150 --> 00:08:54.000
+or on some kind of
+underground train, which
+
+00:08:54.000 --> 00:08:58.524
+seems to be the nature
+of my life sometimes.
+
+00:08:58.524 --> 00:08:59.940
+If I click that
+on, you can see it
+
+00:08:59.940 --> 00:09:01.380
+goes into this downloads only.
+
+00:09:01.380 --> 00:09:03.120
+And I do it-- again, this
+is another little thing.
+
+00:09:03.120 --> 00:09:05.578
+I'm showing that little marker
+in the top right-hand corner
+
+00:09:05.578 --> 00:09:08.400
+just to remind you you're
+in downloads-only mode
+
+00:09:08.400 --> 00:09:11.340
+so that you don't kind of
+go, why is nothing working?
+
+00:09:11.340 --> 00:09:15.750
+And you'll see when I scroll
+down, this one is still lit up.
+
+00:09:15.750 --> 00:09:18.364
+And then you go
+and click into it,
+
+00:09:18.364 --> 00:09:20.030
+and I could, in theory,
+watch the video.
+
+00:09:20.030 --> 00:09:21.690
+There we are.
+
+00:09:21.690 --> 00:09:24.700
+[INAUDIBLE] as well.
+
+00:09:24.700 --> 00:09:26.760
+So let me just talk
+about some of that stuff.
+
+00:09:26.760 --> 00:09:28.590
+And I won't get into
+probably all of it,
+
+00:09:28.590 --> 00:09:30.430
+but it is interesting stuff.
+
+00:09:30.430 --> 00:09:36.570
+So the part of it is the
+offline-y-ness of it.
+
+00:09:36.570 --> 00:09:41.400
+And then part of it is kind of
+detecting the offline-y state.
+
+00:09:41.400 --> 00:09:44.310
+Which is relatively
+easy to do if you've
+
+00:09:44.310 --> 00:09:47.250
+got navigator.offLine or
+online, or whatever it is.
+
+00:09:47.250 --> 00:09:49.440
+Navigator.onLine, that's
+what it is, with a capital
+
+00:09:49.440 --> 00:09:51.720
+L. Never really fully
+understood that one.
+
+00:09:51.720 --> 00:09:52.969
+Navigator dot on Line!
+
+00:09:52.969 --> 00:09:54.510
+It's like you're
+shouting the "line."
+
+00:09:54.510 --> 00:09:57.856
+I think Jake made that point,
+actually, in one of his talks.
+
+00:09:57.856 --> 00:09:58.960
+Oh well.
+
+00:09:58.960 --> 00:10:02.160
+We're obviously
+on the same page.
+
+00:10:02.160 --> 00:10:05.670
+Anyway, right, let's have a
+look at a little bit of code.
+
+00:10:05.670 --> 00:10:10.080
+So the vast majority of this
+is actually hidden in app,
+
+00:10:10.080 --> 00:10:14.965
+and let me find where it is.
+
+00:10:14.965 --> 00:10:24.440
+It is-- this is the thing where
+I want to find-- there we are.
+
+00:10:24.440 --> 00:10:27.320
+Right,
+disable_unavailable_links.
+
+00:10:27.320 --> 00:10:30.260
+What we do is we look
+for all the things
+
+00:10:30.260 --> 00:10:36.520
+that can be effectively
+disabled by going offline.
+
+00:10:36.520 --> 00:10:39.010
+So that's going to be
+like the thumbnails,
+
+00:10:39.010 --> 00:10:41.050
+in particular, for the videos.
+
+00:10:41.050 --> 00:10:46.850
+And we look and we just
+say, given all those links,
+
+00:10:46.850 --> 00:10:50.630
+I basically pull out the
+href from those links,
+
+00:10:50.630 --> 00:10:52.190
+and sometimes, for
+specific things,
+
+00:10:52.190 --> 00:10:55.800
+there's an href on the data set.
+
+00:10:55.800 --> 00:10:58.250
+But what I do is I
+ask the offline cache,
+
+00:10:58.250 --> 00:11:02.250
+do you have this item,
+the thing for this path?
+
+00:11:02.250 --> 00:11:06.720
+And if you do,
+then that's great.
+
+00:11:06.720 --> 00:11:09.620
+If you don't, then
+we're going to add
+
+00:11:09.620 --> 00:11:12.260
+on this disable class,
+which will fade it out
+
+00:11:12.260 --> 00:11:15.650
+and it desaturates the image,
+and it does all the stuff
+
+00:11:15.650 --> 00:11:17.380
+that I just showed
+where it kind of goes,
+
+00:11:17.380 --> 00:11:19.280
+you're not going to
+click on this, are you.
+
+00:11:19.280 --> 00:11:23.740
+So the OfflineCache.has,
+let me show you that.
+
+00:11:27.640 --> 00:11:29.350
+There it is.
+
+00:11:29.350 --> 00:11:32.990
+So this is an interesting
+one from my point of view,
+
+00:11:32.990 --> 00:11:35.270
+because it's--
+
+00:11:35.270 --> 00:11:40.010
+the simple version of this
+would be to look inside,
+
+00:11:40.010 --> 00:11:41.420
+and the first
+version of it, this
+
+00:11:41.420 --> 00:11:46.700
+is exactly what it did, if you
+imagine that each video has
+
+00:11:46.700 --> 00:11:53.270
+a URL like ShowName/EpisodeName,
+then I can just
+
+00:11:53.270 --> 00:11:54.920
+look inside the
+caches and just say,
+
+00:11:54.920 --> 00:11:56.392
+do you have that, yes or no.
+
+00:11:56.392 --> 00:11:58.100
+And if the answer is
+yes, then I have it,
+
+00:11:58.100 --> 00:11:59.360
+and I can just show that link.
+
+00:11:59.360 --> 00:12:00.560
+Great.
+
+00:12:00.560 --> 00:12:04.112
+And inside of one of
+those caches would be--
+
+00:12:04.112 --> 00:12:05.570
+let me show you
+what it looks like.
+
+00:12:10.020 --> 00:12:12.990
+Inside here, inside
+the cache storage.
+
+00:12:12.990 --> 00:12:14.770
+There we are cds/showreel.
+
+00:12:14.770 --> 00:12:19.152
+It's the video of course,
+yes, but it's also--
+
+00:12:19.152 --> 00:12:20.360
+let's make this a bit bigger.
+
+00:12:20.360 --> 00:12:22.670
+I'll tell you what, I'll
+just zoom out a little bit.
+
+00:12:22.670 --> 00:12:23.170
+There.
+
+00:12:23.170 --> 00:12:28.930
+It's the poster frames, it's
+the URL itself, the video--
+
+00:12:28.930 --> 00:12:31.320
+the page itself, so
+we've got the HTML.
+
+00:12:31.320 --> 00:12:32.860
+The artwork.
+
+00:12:32.860 --> 00:12:36.040
+We know that the main
+cache will have all the CSS
+
+00:12:36.040 --> 00:12:37.367
+and icons and everything else.
+
+00:12:37.367 --> 00:12:38.950
+So between those two
+caches, we should
+
+00:12:38.950 --> 00:12:42.200
+be able to show this
+particular page.
+
+00:12:42.200 --> 00:12:46.030
+So if we've got a cache
+with the name cds/showreel,
+
+00:12:46.030 --> 00:12:47.960
+we're going to enable that link.
+
+00:12:47.960 --> 00:12:52.270
+But what happens if you were
+partway through downloading,
+
+00:12:52.270 --> 00:12:55.480
+that cache was partly filled
+and maybe you got the artwork,
+
+00:12:55.480 --> 00:12:59.755
+but you didn't get the video,
+or you didn't get the--
+
+00:12:59.755 --> 00:13:00.580
+all the video.
+
+00:13:00.580 --> 00:13:03.670
+You got just some of this stuff
+but not all of this stuff.
+
+00:13:03.670 --> 00:13:07.280
+I have this
+PurgePartialDownloads folder--
+
+00:13:07.280 --> 00:13:09.790
+I can't even say it.
+
+00:13:09.790 --> 00:13:12.040
+Take a breather.
+
+00:13:12.040 --> 00:13:13.239
+PurgePartialDownloads.
+
+00:13:13.239 --> 00:13:13.780
+There you go.
+
+00:13:13.780 --> 00:13:16.240
+Nailed it.
+
+00:13:16.240 --> 00:13:19.150
+PurgePartialDownloads--
+I keep saying it--
+
+00:13:19.150 --> 00:13:24.280
+function, which we use
+to kind of go in and go,
+
+00:13:24.280 --> 00:13:25.536
+does this look full?
+
+00:13:25.536 --> 00:13:27.160
+Does this look like
+it's got everything
+
+00:13:27.160 --> 00:13:28.930
+that we'd expect it to have?
+
+00:13:28.930 --> 00:13:32.320
+And I am using the video
+as a proxy for that.
+
+00:13:32.320 --> 00:13:35.477
+So again, this is something
+that I might come back to
+
+00:13:35.477 --> 00:13:37.060
+and might refine a
+little bit further.
+
+00:13:37.060 --> 00:13:38.710
+Because this is
+the nature of this.
+
+00:13:38.710 --> 00:13:39.526
+It's a process.
+
+00:13:39.526 --> 00:13:40.900
+I'm sharing with
+you the process.
+
+00:13:40.900 --> 00:13:42.830
+I'm not saying I have
+all the right answers,
+
+00:13:42.830 --> 00:13:44.413
+and this is just how
+it's going to be.
+
+00:13:44.413 --> 00:13:46.732
+Very often, as I
+said at the start,
+
+00:13:46.732 --> 00:13:48.940
+I read the comments or
+whatever, and people are like,
+
+00:13:48.940 --> 00:13:50.898
+you should really, have
+you thought about that,
+
+00:13:50.898 --> 00:13:52.520
+and that gives me
+other thoughts.
+
+00:13:52.520 --> 00:13:55.250
+Anyway, this is how
+it currently is.
+
+00:13:55.250 --> 00:13:57.940
+What I do is I go through
+and I get all the items
+
+00:13:57.940 --> 00:14:01.630
+in that particular cache, and
+I locate the video chunks,
+
+00:14:01.630 --> 00:14:03.730
+in particular, on the
+assumption that the video is
+
+00:14:03.730 --> 00:14:08.590
+the likeliest
+candidate for being
+
+00:14:08.590 --> 00:14:10.190
+the last thing into the cache.
+
+00:14:10.190 --> 00:14:11.690
+So the artwork and
+all these things,
+
+00:14:11.690 --> 00:14:13.773
+they're probably going to
+arrive much more quickly
+
+00:14:13.773 --> 00:14:16.240
+than, say, a 40-megabyte
+or a 100-megabyte
+
+00:14:16.240 --> 00:14:18.010
+or a 200-megabyte video.
+
+00:14:18.010 --> 00:14:21.010
+So I look at the video in
+particular, and I go through
+
+00:14:21.010 --> 00:14:23.610
+and I look for all the chunks.
+
+00:14:23.610 --> 00:14:25.360
+So I look through every
+item in the cache,
+
+00:14:25.360 --> 00:14:28.720
+but I look in particular
+for the video chunks,
+
+00:14:28.720 --> 00:14:31.420
+and I look for the
+highest-numbered video chunk.
+
+00:14:31.420 --> 00:14:34.900
+So maybe I say,
+get video chunk 30.
+
+00:14:34.900 --> 00:14:38.620
+And then the thing I do
+is I look at a video chunk
+
+00:14:38.620 --> 00:14:41.940
+and I say, based off
+your content length,
+
+00:14:41.940 --> 00:14:44.890
+I would have expected
+to see 50 chunks,
+
+00:14:44.890 --> 00:14:48.670
+so I know that I'm expecting
+50, but I've only got 30.
+
+00:14:48.670 --> 00:14:51.860
+Therefore, I'm pretty confident
+I have a partial download.
+
+00:14:51.860 --> 00:14:54.906
+And so at that point, if
+I find-- there we are--
+
+00:14:54.906 --> 00:14:57.280
+compare the largest chunk
+indexed to what we would expect
+
+00:14:57.280 --> 00:15:01.000
+to have, if it's not there--
+
+00:15:01.000 --> 00:15:04.280
+if the expected and the
+max index don't match,
+
+00:15:04.280 --> 00:15:07.450
+then I basically
+delete that cache.
+
+00:15:07.450 --> 00:15:09.529
+And then, and only
+then, do I actually
+
+00:15:09.529 --> 00:15:10.820
+check whether the cache exists.
+
+00:15:10.820 --> 00:15:13.390
+So before I respond
+with, yeah, we've
+
+00:15:13.390 --> 00:15:16.960
+got a cache for cds/showreel,
+I'm going to go in
+
+00:15:16.960 --> 00:15:19.280
+and say, just get
+rid of anything
+
+00:15:19.280 --> 00:15:22.240
+that was pending or
+partial, first and foremost.
+
+00:15:22.240 --> 00:15:25.829
+Now, where this might get
+changed is, in the future,
+
+00:15:25.829 --> 00:15:27.370
+with something like
+background fetch,
+
+00:15:27.370 --> 00:15:31.570
+when the background
+fetch stuff lands,
+
+00:15:31.570 --> 00:15:35.200
+it's possible that the cache
+would be partially filled
+
+00:15:35.200 --> 00:15:38.290
+because of background
+fetch, and I
+
+00:15:38.290 --> 00:15:40.030
+don't want to purge
+it if it's partially
+
+00:15:40.030 --> 00:15:41.238
+filled by a background fetch.
+
+00:15:41.238 --> 00:15:44.190
+So I might have to rethink this.
+
+00:15:44.190 --> 00:15:44.882
+Don't know yet.
+
+00:15:44.882 --> 00:15:46.340
+We're going to find
+out, aren't we.
+
+00:15:46.340 --> 00:15:48.080
+That's the exciting
+part of this.
+
+00:15:48.080 --> 00:15:49.130
+So there you go.
+
+00:15:49.130 --> 00:15:52.160
+Just a couple of things like
+fading out the unavailable
+
+00:15:52.160 --> 00:15:55.700
+links when somebody goes
+offline, which they can either
+
+00:15:55.700 --> 00:16:00.530
+control themselves or they
+can mark it as show only
+
+00:16:00.530 --> 00:16:02.629
+offline content, or they
+can actually, if they're
+
+00:16:02.629 --> 00:16:04.670
+in airplane mode or
+something like that, it works
+
+00:16:04.670 --> 00:16:08.330
+in that case too, because you
+can get events on the window
+
+00:16:08.330 --> 00:16:10.220
+object for those
+kinds of things.
+
+00:16:10.220 --> 00:16:11.570
+And having the thumbnail image.
+
+00:16:11.570 --> 00:16:16.370
+Just little touches that I hope
+make it a little bit more fun
+
+00:16:16.370 --> 00:16:18.131
+for people to use the app.
+
+00:16:18.131 --> 00:16:19.880
+Definitely have a look
+at the source code.
+
+00:16:19.880 --> 00:16:21.020
+It's on GitHub.
+
+00:16:21.020 --> 00:16:22.850
+As always, drop
+your comments in,
+
+00:16:22.850 --> 00:16:24.770
+and you can subscribe as well.
+
+00:16:24.770 --> 00:16:31.090
+And I'll catch you, yep, always
+the same, ready, steady, next
+
+00:16:31.090 --> 00:16:33.330
+time.
+
+00:16:33.330 --> 00:16:34.470
+Hello, thanks for watching.
+
+00:16:34.470 --> 00:16:36.050
+If you enjoyed this
+video, well, you
+
+00:16:36.050 --> 00:16:38.090
+may enjoy other videos
+that we make, too.
+
+00:16:38.090 --> 00:16:39.950
+So don't forget
+you can subscribe,
+
+00:16:39.950 --> 00:16:42.335
+and you'll get notified when
+we push out a new video.
+
+00:16:42.335 --> 00:16:44.840
+And there's more videos
+over there or down there,
+
+00:16:44.840 --> 00:16:47.570
+depending on how you're
+watching the YouTubes right now.
+
+00:16:47.570 --> 00:16:49.810
+Definitely click on those.
+
