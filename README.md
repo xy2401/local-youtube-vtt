@@ -115,7 +115,7 @@
 
 [Google Chrome Developers](https://www.youtube.com/user/ChromeDevelopers/playlists)
 
-* [Totally Tooling Tips with Addy Osmani & Matt Gaunt](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Totally%20Tooling%20Tips%20with%20Addy%20Osmani%20&%20Matt%20Gaunt/)
+* [Totally Tooling Tips with Addy Osmani & Matt Gaunt](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Totally%20Tooling%20Tips%20with%20Addy%20Osmani%20and%20Matt%20Gaunt/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIB3ci6nwNyLYNU6RDOU3YyL)
 
 
