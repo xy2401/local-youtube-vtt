@@ -2052,10 +2052,10 @@ Language: zh-Hans
 支持反应式编程的项目
 
 00:30:52.490 --> 00:30:59.990
-对春季数据反应性MongoDB 
+对 spring data 反应性MongoDB 
 
 00:30:55.520 --> 00:31:02.179
-春季数据反应式Redis和
+ spring data 反应式Redis和
 
 00:30:59.990 --> 00:31:04.580
 您可以在Cassandra中使用Couchbase 
