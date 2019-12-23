@@ -90,7 +90,7 @@ spring-cloud-streamspring-cloud-stream
 运输，我们用什么做
 
 00:01:20.340 --> 00:01:24.180
-称为春季云流粘合剂
+称为 Spring Cloud Stream 粘合剂
 
 00:01:22.200 --> 00:01:25.310
 那里有几种粘合剂
@@ -108,10 +108,10 @@ spring-cloud-streamspring-cloud-stream
 互相交谈的微服务
 
 00:01:33.060 --> 00:01:38.909
-使用春季云流Rabbitmq或
+使用 Spring Cloud Stream Rabbitmq或
 
 00:01:36.509 --> 00:01:40.799
-春季云流Apache Kafka和我们
+ Spring Cloud Stream Apache Kafka和我们
 
 00:01:38.909 --> 00:01:42.540
 可以只写通用的代码
@@ -138,7 +138,7 @@ spring-cloud-streamspring-cloud-stream
 在基于
 
 00:01:58.170 --> 00:02:02.579
-这些模块接受的春季云流
+这些模块接受的 Spring Cloud Stream 
 
 00:02:00.930 --> 00:02:04.530
 数据产生的数据，有时
