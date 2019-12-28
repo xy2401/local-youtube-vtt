@@ -18,7 +18,7 @@ Language: zh-Hans
 先前视频中的Spring Cloud Dataflow 
 
 00:00:28.140 --> 00:00:31.619
-我们以春季整合的方式
+我们以 Spring Integration 的方式
 
 00:00:30.150 --> 00:00:34.260
 基于消息传递和事件的构建
@@ -45,7 +45,7 @@ Language: zh-Hans
 spring-cloud-streamspring-cloud-stream
 
 00:00:47.670 --> 00:00:52.500
-建立在春季整合的基础上
+建立在 Spring Integration 的基础上
 
 00:00:50.340 --> 00:00:55.590
 减轻了指定
@@ -117,7 +117,7 @@ spring-cloud-streamspring-cloud-stream
 可以只写通用的代码
 
 00:01:40.799 --> 00:01:44.430
-春季整合渠道无
+ Spring Integration 渠道无
 
 00:01:42.540 --> 00:01:47.610
 更加明智的是
@@ -819,7 +819,7 @@ Spring Cloud的位置
 由我们的文件提供或产生
 
 00:11:06.709 --> 00:11:10.699
-源与春季整合
+源与 Spring Integration 
 
 00:11:08.360 --> 00:11:12.529
 对于入站文件适配器，它会
