@@ -78,6 +78,25 @@ To the future:
 - The big elephant in the room 
 - Not all languages created equal 
 - Let's take a peek at Ruby
+- What attracted me to Java 8 
+- ELegance is useful 
+- Performance is critical 
+- What gives? 
+Lessons from FP: 
+- Let 's turn to a truly functional language—Haskell 
+- How's that possible? 
+- Benefits of pure functions 
+  - Idempotent 
+  - Referentially transparent 
+  - Memoizable 
+  - Easier to test 
+  - Easier to parallelize 
+  - can be lazy 
+- Languages and defaults 
+- A look at Scala 
+an important decision for java 
+- What 's special about Java 8? 
+- Laziness is the ultimate sophistication 
 
 从过去:
 - 过去的主流
@@ -93,7 +112,25 @@ To the future:
 - 房间里的大象
 - 并非所有语言都是平等的
 - 让我们来看看Ruby
-
+- 吸引我学习Java 8的原因
+- 优雅有用
+- 性能很重要
+- 是什么赋予了 ？
+FP的经验教训：
+- 让我们转向一种真正的函数语言-Haskell
+- 那怎么可能？
+- 纯函数的好处
+  - 幂等
+  - 引用透明
+  - 可记忆
+  - 更容易测试
+  - 更容易并行化
+  - 可以偷懒
+- 语言和默认值
+- 看看Scala
+Java的重要决定
+- Java 8有什么特别之处？
+- 懒惰是终极的成熟
 
 命令式编程(Imperative)、声明式编程(Declarative)和函数式编程(Functional)
 
@@ -101,5 +138,5 @@ To the future:
 - [《Sophistication》_流沙飞沫_新浪博客](http://blog.sina.com.cn/s/blog_6ca844930102wnrp.html)
 - [Oracle BrandVoice: Lazy Java Code Makes Applications Elegant, Sophisticated -- And Efficient at Runtime](https://www.forbes.com/sites/oracle/2018/01/22/lazy-java-code-makes-applications-elegant-sophisticated-and-efficient-at-runtime/#46fcda6855fa)
 - [编程范式：命令式编程(Imperative)、声明式编程(Declarative)和函数式编程(Functional) - backslash112 - 博客园](https://www.cnblogs.com/sirkevin/p/8283110.html)
-
-
+- [基本概念 | 引用透明 & 纯函数 & 代换模型 | 随便写写](http://songkun.me/2018/06/08/2018-06-08-referentially-transparent/)
+- [函数副作用 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0%E5%89%AF%E4%BD%9C%E7%94%A8)
