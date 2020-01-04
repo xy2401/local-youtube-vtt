@@ -6,7 +6,7 @@
 # spring-tips
 
 
-- Spring Tips: Distributed Locks with Spring Integration
+## Spring Tips: Distributed Locks with Spring Integration
 
 github.com/spring-tips/[distributed-locks-with-spring-integration](https://github.com/spring-tips/distributed-locks-with-spring-integration)
 
@@ -25,7 +25,7 @@ github.com/spring-tips/[distributed-locks-with-spring-integration](https://githu
 ```
 
 
-- Spring Tips: Spring's Support for Kotlin Coroutines
+## Spring Tips: Spring's Support for Kotlin Coroutines
 
 github.com/[spring-tips/koroutines](https://github.com/spring-tips/koroutines)
 
@@ -55,7 +55,7 @@ fun five()
 # javaSe
 
 
-- Laziness is the Ultimate Sophistication, both in Life and in Programming
+## Laziness is the Ultimate Sophistication, both in Life and in Programming
 
 懒惰是生活和编程中的终极 优雅/睿智
 
@@ -64,6 +64,42 @@ Most mainstream programming languages have adapted the functional style. We ofte
 大多数主流编程语言都适应了函数式风格。 我们经常听到为什么不变性如此重要，以及高阶函数多么出色。 这些只是达到更高目标的工具。 在本演示中，我们将首先讨论当今几乎所有语言中都具有的功能，然后快速深入探讨功能编程的实质，并学习Java之类的语言如何专注于真正重要的事情。
 
 
+From the past:
+- The past mainstream
+- Imperative Style 
+To the future:
+- The new mainstream 
+- Declarative and Functional 
+- Declarative First 
+- Functional Next
+- very old idea, but a renewed interest 
+- The charms of functional style 
+"But" you ask?:
+- The big elephant in the room 
+- Not all languages created equal 
+- Let's take a peek at Ruby
+
+从过去:
+- 过去的主流
+- 命令式
+面向未来:
+- 新的主流
+- 声明性和函数式
+- 声明式优先
+- 函数式次之
+- 很老的想法，但重新产生了兴趣
+- 函数式风格的魅力
+“但是”你问？:
+- 房间里的大象
+- 并非所有语言都是平等的
+- 让我们来看看Ruby
+
+
+命令式编程(Imperative)、声明式编程(Declarative)和函数式编程(Functional)
+
 - [《目送》Sophistication_龙应台_单色书](https://www.danseshu.com/books/2884/116315)
 - [《Sophistication》_流沙飞沫_新浪博客](http://blog.sina.com.cn/s/blog_6ca844930102wnrp.html)
-[Oracle BrandVoice: Lazy Java Code Makes Applications Elegant, Sophisticated -- And Efficient at Runtime](https://www.forbes.com/sites/oracle/2018/01/22/lazy-java-code-makes-applications-elegant-sophisticated-and-efficient-at-runtime/#46fcda6855fa)
+- [Oracle BrandVoice: Lazy Java Code Makes Applications Elegant, Sophisticated -- And Efficient at Runtime](https://www.forbes.com/sites/oracle/2018/01/22/lazy-java-code-makes-applications-elegant-sophisticated-and-efficient-at-runtime/#46fcda6855fa)
+- [编程范式：命令式编程(Imperative)、声明式编程(Declarative)和函数式编程(Functional) - backslash112 - 博客园](https://www.cnblogs.com/sirkevin/p/8283110.html)
+
+
