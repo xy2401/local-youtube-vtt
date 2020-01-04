@@ -7,6 +7,7 @@
 *  [Java SE](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.Java%20SE/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzWgR5JtKFV3RklcGhNHvXvD)
 
+[note](note#javaSe)
 
     Technical videos focusing on different features and updates for Java SE and Embedded including 2017 JavaOne sessions
     
