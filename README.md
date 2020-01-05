@@ -17,7 +17,7 @@
 * [JDK 8 MOOC](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.JDK%208%20MOOC/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzV4jApaGrL5Dey_mi9bxnTm)
 
-[note](note#JDK 8 MOOC)
+[note](note#JDK8MOOC)
 
 * [Java 9 and 10](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.Java%209%20and%2010/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzUPNQ-r1ZmJrSuoL2EVnVma)
