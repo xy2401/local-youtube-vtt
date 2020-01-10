@@ -154,5 +154,16 @@ Java的重要决定
     This video goes through the reasons for adding lambda expressions to the Java language.    
     该视频介绍了将lambda表达式添加到Java语言的原因。
 
+    In this course, you will learn how to use Lambda expressions and the 
+    Streams API to program in a more functional style using JDK8. This 
+    will enable you to solve common problems in a more concise and 
+    more flexible way that can take advantage of multiple cores and 
+    CPUs in your machine 
+
+    在本课程中，您将学习如何使用Lambda表达式和
+    流式API以使用JDK8以更实用的样式进行编程。 这个
+    使您能够更简洁地解决常见问题，
+    可以利用多个内核的更灵活的方式
+    机器中的CPU
 
 
