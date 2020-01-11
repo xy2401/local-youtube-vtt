@@ -1,4 +1,5 @@
 
+[笔记](note)
 
 # Java
 
@@ -6,6 +7,7 @@
  
 *  [Java SE](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.Java%20SE/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzWgR5JtKFV3RklcGhNHvXvD)
+,[bilibili](https://www.bilibili.com/video/av81174524)
 
 [note](note#javaSe)
 
@@ -16,12 +18,13 @@
 
 * [JDK 8 MOOC](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.JDK%208%20MOOC/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzV4jApaGrL5Dey_mi9bxnTm)
+,[bilibili](https://www.bilibili.com/video/av81181015)
 
 [note](note#JDK8MOOC)
 
 * [Java 9 and 10](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.Java%209%20and%2010/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzUPNQ-r1ZmJrSuoL2EVnVma)
-
+,[bilibili](https://www.bilibili.com/video/av81189950)
 
     Java 10 was released in March 2018.  With this playlist, you will learn about Java 9 and 10 features, the JDK 9 modular system, the tools to create and migrate your applications, and how to migrate from Java 8 to 9. You will be able to run your code on either the classpath or modules or both classpath and modules... Make sure you watch this video presentations here.
 
@@ -29,7 +32,7 @@
 
 * [Java EE and Server Side Development](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.Java%20EE%20and%20Server%20Side%20Development/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzXN3lil7kns0RRJoMcEJ_9O)
-
+,[bilibili](https://www.bilibili.com/video/av81201767)
 
     Tutorials about Java EE, cloud, server side development including 2017 JavaOne sessions.
 
@@ -37,6 +40,7 @@
 
 * [JDK](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.JDK/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzXyA_lJzaNmrFqpLOL4aCEz)
+,[bilibili](https://www.bilibili.com/video/av81208882)
 
     This series of videos include videos of the recently added features of the Java SE Platform.
 
@@ -49,15 +53,18 @@
  
 - [Spring Tips](../local-youtube/play.html?playlist=../local-youtube-vtt/SpringDeveloper.Spring%20Tips/) 
 ,[YouTube](https://www.youtube.com/playlist?list=PLgGXSWYM2FpPw8rV0tZoMiJYSCiLhPnOc)
+,[bilibili](https://www.bilibili.com/video/av72030045)
 
   github.com/[spring-tips](https://github.com/spring-tips) , [note](note#spring-tips)
 
 
 - [Spring Boot](../local-youtube/play.html?playlist=../local-youtube-vtt/SpringDeveloper.Spring%20Boot/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLgGXSWYM2FpOa_FTla-x5Wd10dpmgrRC4)
+,[bilibili](https://www.bilibili.com/video/av72015502)
 
 - [Getting Started with Spring and Spring Tool Suite](../local-youtube/play.html?playlist=../local-youtube-vtt/SpringDeveloper.Getting%20Started%20with%20Spring%20and%20Spring%20Tool%20Suite/)
 ,[YouTube](https://www.youtube.com/playlist?list=PL7B74449D5224CC99)
+,[bilibili](https://www.bilibili.com/video/av71366249)
 
     Spring is a comprehensive framework that has helped countless developers build better applications and SpringSource Tool Suite (STS) is the best development tool available for building Spring-based solutions. 
 
@@ -73,7 +80,7 @@
 
 - [Spring I/O 2019](../local-youtube/play.html?playlist=../local-youtube-vtt/Spring%20IO%202019/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLe6FX2SlkJdTlXfwer8JB-WGm-TEyIB2k)
-
+,[bilibili](https://www.bilibili.com/video/av72040557)
  
 # IntelliJ IDEA
 
@@ -82,7 +89,7 @@
  
 - [Tutorials](../local-youtube/play.html?playlist=../local-youtube-vtt/IntelliJ%20IDEA.Tutorials/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLPZy-hmwOdEX7M4fJRlPjFMpQBFwvFPDw)
-
+,[bilibili](https://www.bilibili.com/video/av81210527)
 
     A collection of videos explaining how to use a particular language, library, framework or technology within IntelliJ IDEA and IntelliJ-platform IDEs.
 
@@ -91,7 +98,7 @@
 
 - [Getting To Know Your IDE](../local-youtube/play.html?playlist=../local-youtube-vtt/IntelliJ%20IDEA.Getting%20To%20Know%20Your%20IDE/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLPZy-hmwOdEXdOtXdFzyx_XCnrF_oD2Ft)
-
+,[bilibili](https://www.bilibili.com/video/av81212552)
 
     Dozens of tutorials on common topics for developers, from beginners to experienced users.
 
@@ -99,16 +106,19 @@
 
 - [Webinars](../local-youtube/play.html?playlist=../local-youtube-vtt/IntelliJ%20IDEA.Webinars/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLPZy-hmwOdEWUR5OaOGs863rNS2DaIyXS)
+,[bilibili](https://www.bilibili.com/video/av81217818)
 
 - [Spring Framework](../local-youtube/play.html?playlist=../local-youtube-vtt/IntelliJ%20IDEA.Spring%20Framework/)
-,[Spring Framework](https://www.youtube.com/playlist?list=PLPZy-hmwOdEUyWwdbwhhxR9KaUvlQTlvC)
- 
+,[YouTube](https://www.youtube.com/playlist?list=PLPZy-hmwOdEUyWwdbwhhxR9KaUvlQTlvC)
+,[bilibili](https://www.bilibili.com/video/av82791549) 
+
 # Eclipse
 
 [Eclipse Foundation](https://www.youtube.com/user/EclipseFdn/playlists)
 
 * [Top 10 Popular Talks at EclipseCon Europe 2017](../local-youtube/play.html?playlist=../local-youtube-vtt/Eclipse.Top%2010%20Popular%20Talks%20at%20EclipseCon%20Europe%202017/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSxZRV1cKJDm341g3b8X7qs)
+,[bilibili](https://www.bilibili.com/video/av82792847)
 
     A list of the highest attended talks at EclipseCon Europe 2017
 
@@ -116,6 +126,7 @@
 
 * [Jakarta EE](../local-youtube/play.html?playlist=../local-youtube-vtt/Eclipse.Jakarta%20EE/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLy7t4z5SYNaT-6PRtijB8XZQJ7jq020CO)
+,[bilibili](https://www.bilibili.com/video/av82796556)
  
 # ChromeDevelopers
 
@@ -123,7 +134,7 @@
 
 * [Totally Tooling Tips with Addy Osmani & Matt Gaunt](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Totally%20Tooling%20Tips%20with%20Addy%20Osmani%20and%20Matt%20Gaunt/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIB3ci6nwNyLYNU6RDOU3YyL)
-
+,[bilibili](https://www.bilibili.com/video/av82844270)
 
     In 'Totally Tooling Tips' web developers Matt and Addy discuss the latest topics, issues and work arounds for building apps and libraries to help mop up your Totally Tooling Tears.
 
@@ -131,7 +142,7 @@
 
 * [HTTP203](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.HTTP203/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIAKIQFsNbV0JDws_G_bnNo9)
-
+,[bilibili](https://www.bilibili.com/video/av82804594)
 
     Google Developers Jake Archibald and Surma discuss their philosophies about web development and the various aspects of it, meanwhile dropping in lifehacks, lessons and some honest truths.
 
@@ -139,7 +150,7 @@
 
 * [Developer Diary](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Developer%20Diary/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIBykcJ7bvTpqU7vt-oey72J)
-
+,[bilibili](https://www.bilibili.com/video/av82798641)
 
     Ever wondered how the Developer Advocates at Google build websites? This is an exclusive walk through by our developers on building everything web and app related. Subscribe and keep up to date!
 
@@ -147,7 +158,7 @@
 
 * [Supercharged Micro Tips](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Supercharged%20Micro%20Tips/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIBz9ACEQRmO9Lw8PW7vn0lr)
-
+,[bilibili](https://www.bilibili.com/video/av82809609)
 
     Supercharge your web development skills with quick and simple Micro Tips. Covering everything from CSS to Push Messages, JavaScript to ServiceWorker, Surma brings you up to speed.
 
@@ -155,7 +166,7 @@
 
 * [New In Chrome](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.New%20In%20Chrome/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIDfz8XEA3loxY32tYh7CI3m)
-
+,[bilibili](https://www.bilibili.com/video/av82805355)
 
     Want to be first to know about the latest updates in Chrome for developers? Pete LePage has got you covered, running through every Chrome release as it happens and letting you know where to go for more information.
 
@@ -163,7 +174,7 @@
 
 * [What's New in DevTools](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.What's%20New%20in%20DevTools/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIBDSojZWBv4QJNoT4GNYzQD)
-
+,[bilibili](https://www.bilibili.com/video/av82845580)
 
     Wondering what new developer features the latest Chrome release has to offer? Kayce Basques walks us through the new features and major changes coming to Chrome DevTools.
 
@@ -172,7 +183,7 @@
 
 * [Polycasts](../local-youtube/play.html?playlist=../local-youtube-vtt/ChromeDevelopers.Polycasts/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIDdS7HWIC_BYRunV6MHs5xo)
-
+,[bilibili](https://www.bilibili.com/video/av82807948)
  
     Ready to revolutionize the modern web? Join Rob Dodson as he explores the ins and outs of Polymer, a new library that's pushing the boundaries of what's possible in the browser.
 
