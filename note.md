@@ -583,6 +583,65 @@ Lambda表达式的内部迭代
 
 
 ###### jdk8mooc_lesson_1-2
+## Lesson 1-2:Lambda Expression Syntax
+
+
+### Lambda Expressions Are Anonymous Functions
+- Body of the Lambda may throw exceptions
+- Single line Lambdas
+- Do not need braces
+- Do not need an explicit return statement
+- Lambdas with a single parameter do not need brackets
+- Lambdas with no parameters must have empty brackets
+
+Lambda表达式是匿名函数
+- Lambda的身体可能会引发异常
+- 单行Lambdas
+- 不需要大括号
+- 不需要明确的return语句
+- 具有单个参数的Lambda不需要括号
+- 没有参数的Lambda必须带有空括号
+
+Lambda Expression Syntax
+```java
+    () -> System.out.println("Hello Lambda")
+    x -> x + 10
+    (int x, int y) -> { return x + y; }
+    (String x, String y) -> x.length() – y.length()
+    (String x) -> {
+        listA.add(x);
+        listB.remove(x);
+        return listB.size();
+    }
+```
+
+Type Inference 
+- Example method definition
+    ```java
+     static <T> T process(List<T> l, Comparator<T> c)
+    ```
+- Use the method
+    ```java
+    List<String> list = getList();
+    process(list, (String x, String y) -> x.length() – y.length());
+    ```
+- Compiler is now smarter   
+    ```java
+    String r = process(list, (x, y) -> x.length() – y.length())
+    ```
+- More typing with less typing
+
+### Section 2 Summary
+- Syntax for Lambda expressions is simple
+    - Brackets and braces are optional for certain situations
+- Type inference means types often do not need to be explicitly stated
+    - Java remains strongly, statically typed
+ 
+- Lambda表达式的语法很简单
+     - 在某些情况下，括号和括号是可选的
+- 类型推断意味着通常不需要明确声明类型
+     - Java保持强力，静态类型
+
 ###### jdk8mooc_lesson_1-3
 ###### jdk8mooc_lesson_1-4
 ###### jdk8mooc_lesson_1-5   
