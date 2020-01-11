@@ -476,7 +476,7 @@ Homework is linked in the Supporting Materials section.
     - breakpoint()
     - peek()
 - Which static method of the Collectors class will provide a Collector that will create a comma separated value (CSV) string of results from a stream?[Answer](#C)
-- Collectors类的哪个静态方法将提供一个Collector，该Collector将从流中创建一个逗号分隔值（CSV）的结果字符串?
+- Collectors类的哪个静态方法将提供一个Collector，该Collector将从流中创建一个逗号分隔值(CSV)的结果字符串?
     - toString(“,”)
     - setSeparator(“,”)
     - joining(“,”)
@@ -702,9 +702,330 @@ interface Callable<T> { T call(); }
 - Lambda表达式提供功能接口的单一抽象方法的实现
 
 ###### jdk8mooc_lesson_1-4
+## Lesson 1-4:Functional Interfaces in the java.util.function Package
+
+Well defined set of general purpose functional interfaces
+- All have only one abstract method
+- Lambda expressions can be used wherever these types are referenced
+- Used extensively in the Java class libraries
+- Especially with the Stream API
+- This section covers the generic interfaces
+    - There are numerous type specific versions
+    - Double, Int, Long and Obj forms
+    - Review the package for more detail
+
+定义明确的通用函数式接口集
+- 全部只有一种抽象方法
+- 在引用这些类型的任何地方都可以使用Lambda表达式
+- 在Java类库中广泛使用
+- 特别是使用Stream API
+- 本节介绍了通用接口
+    - 有许多类型特定的版本
+    - Double，Int，Long和Obj形式
+    - 查看package以获取更多详细信息
+
+
+### Consumer<T>
+Operation That Takes a Single Value And Returns No Result
+
+- Also, BiConsumer<T,U> that takes two values and returns no result
+- Default method available for composing functions
+    - andThen(Consumer after)
+```java
+String s -> System.out.println(s)
+(k, v) -> System.out.println("key:" + k + ", value:" + v)
+```
+
+### Supplier
+A Supplier Of Results 结果供应商
+- The opposite of a Consumer 消费者的反面  
+```java
+    () -> createLogMessage()
+```
+
+### Function<T,R>
+A Function That Accepts One Argument And Returns A Result   
+最一般的函数 f(x)=y
+- Type of argument and result may be different
+- Also, BiFunction<T,U,R> that accepts two arguments and returns a result
+- Useful default methods for composing
+    - compose, andThen
+```java
+Student s -> s.getName()
+(String name, Student s) -> new Teacher(name, s)
+```
+
+### UnaryOperator<T>
+
+unary adj. [数] 一元的 
+Operator n. 经营者；操作员；话务员；行家
+
+同类型特殊形式
+- Specialised form of Function 
+- Single argument and result of the same type
+    - T apply(T a)
+```java
+String s -> s.toLowerCase()
+```
+
+### BinaryOperator<T>
+- Specialised form of BiFunction
+- Two arguments and a result, all of the same type
+    - T apply(T a, T b)
+```java
+(String x, String y) -> {
+ if (x.length() > y.length())
+ return x;
+ return y;
+}
+```
+
+### Predicate
+A Boolean Valued Function Of One Argument
+- Also, BiPredicate, that takes two arguments
+- Has useful default and static methods for combination
+    - and(), or(), negate(), isEqual()
+```java
+Student s -> s.graduationYear() == 2011
+Files.find(start, maxDepth,
+ (path, attr) -> String.valueOf(path).endsWith(".js") &&
+ attr.size() > 1024,
+ FileVisitOption.FOLLOW_LINKS);
+```
+
+### Section 4 Summary
+
+- The function package provides a range of functional interfaces
+- Used extensively in Streams
+    - But also used in many other places
+- Unlikely you will need to define your own extensions to the function package
+
+- 该函数包提供了一系列函数式接口
+- 在流中广泛使用
+    - 但也用于许多其他地方
+- 不太可能需要为函数包定义自己的扩展
+
 ###### jdk8mooc_lesson_1-5   
+## Lesson 1-5:Method and Constructor References
+方法与构造方法引用
+
+### Method References 方法引用
+
+Method references let us reuse a method as a lambda expression  
+方法引用使我们可以将方法重用为lambda表达式
+```java
+FileFilter x = (File f) -> f.canRead();
+FileFilter x = File::canRead;
+```
+- Format: target_reference::method_name
+    - Three kinds of method reference
+- Static method
+- Instance method of an arbitary type
+- Instance method of an existing object
+
+- 格式: target_reference::method_name
+    - 三种方法引用
+- 静态方法
+- 任意类型的实例方法
+- 现有对象的实例方法
+ 
+Rules For Construction 规则解释
+
+    Lambda: (args) -> ClassName.staticMethod(args)    
+    Method Ref: ClassName::staticMethod    
+    Lambda: (arg0, rest) -> arg0.instanceMethod(rest)    
+    Method Ref: ClassName::instanceMethod    
+    Lambda: (args) -> expr.instanceMethod(args)   
+    Method Ref: expr::instanceMethod   
+
+Examples
+
+    Lambda: (String s) -> Integer.parseInt(s);
+    Method Ref: Integer::parseInt
+    Lambda: (String s, int i) -> s.substring(i)
+    Method Ref: Axis a -> getLength(a)
+    Lambda: String::substring
+    Method Ref: this::getLength
+
+
+### Constructor References 构造函数引用
+
+Same concept as a method reference  
+与方法参考相同的概念
+- For the constructor
+ 
+```java
+Factory<List<String>> f = () -> new ArrayList<String>();
+Factory<List<String>> f = ArrayList<String>::new;
+```
+
+### Section 5 Summary
+- Method references provide a shorthand notation for simple Lambdas
+- Three types depending on how they are used
+- Can also be used for constructors
+- 方法引用提供了简单Lambda的简写形式
+- 三种类型，取决于使用方式
+- 也可以用于构造函数
+
+
 ###### jdk8mooc_lesson_1-6
+## Lesson 1-6:Referencing External Variables in Lambda Expressions
+在Lambda表达式中引用外部变量
+
+### Local Variable Capture
+- Lambda expressions can refer to effectively final local variables from the surrounding scope
+    - Effectively final: A variable that meets the requirements for final variables (i.e., assigned once), even if not explicitly declared final
+    - Closures on values, not variables
+```java
+void expire(File root, long before) {
+ root.listFiles(File p -> p.lastModified() <= before);
+}
+```
+
+- Lambda表达式可以有效地引用来自周边范围
+    - 有效最终：满足最终变量要求的变量 (即分配一次)，即使未明确声明为final
+- 闭包值，而不是变量
+
+### What Does ‘this’ Mean In A Lambda
+
+- ‘this’ refers to the enclosing object, not the lambda itself
+- Think of ‘this’ as a final predefined local
+- Remember the Lambda is an anonymous function
+    - It is not associated with a class
+    - Therefore there can be no ‘this’ for the Lambda
+
+- “ this”是指封闭对象，而不是lambda本身
+- 将“ this”视为最终的预定义本地
+- 记住Lambda是一个匿名函数
+    - 与 class 无关
+    - 因此Lambda不可能没有“ this” TODO
+
+### Referencing Instance Variables
+**Which are not final, or effectively final**
+不是最终的，或者实际上不是最终的 TODO
+
+```java
+class DataProcessor {
+ private int currentValue;
+ public void process() {
+ DataSet myData = myFactory.getDataSet();
+ dataSet.forEach(d -> d.use(currentValue++));
+ }
+}   
+```
+```java
+class DataProcessor {
+ private int currentValue;
+ public void process() {
+ DataSet myData = myFactory.getDataSet();
+ dataSet.forEach(d -> d.use(this.currentValue++));
+ }
+}
+```
+‘this’ (which is effectively final) inserted by the compiler 
+编译器插入的“ this”(实际上是最终的) 
+
+### Section 6 Summary
+- Variables in the surrounding scope can be used in a Lambda expression
+    - But they must be either final, or effectively final
+- this in a Lambda refers to the object of the surrounding scope
+    - The compiler will insert a reference to this for you where required
+
+- Lambda表达式中可以使用周围范围内的变量
+    - 但是它们必须是最终的，或者实际上是最终的
+- 在Lambda中，这是指周围范围的对象
+    - 编译器将在需要时为您插入对此的引用
+
 ###### jdk8mooc_lesson_1-7
+
+## Lesson 1-7:Useful New Methods In JDK 8 That Can Use Lambdas
+JDK 8中可以使用Lambda的有用新方法 
+
+### Iterable Interface 可迭代接口
+
+- Iterable.forEach(Consumer c)
+
+Ps.这不是 流 , 是 Iterable 接口下的 默认方法
+
+```java
+List<String> myList = ...
+myList.forEach(s -> System.out.println(s));
+myList.forEach(System.out::println);
+```
+
+### Collection Interface
+PS.依旧是 默认方法
+- Collection.removeIf(Predicate p)
+```java
+List<String> myList = ...
+myList.removeIf(s -> s.length() == 0);
+```
+
+### List Interface
+Ps.依然不是流 虽然 Map 一样实现
+- List.replaceAll(UnaryOperator o)
+```java
+List<String> myList = ...
+myList.replaceAll(s -> s.toUpperCase());
+myList.replaceAll(String::toUpperCase);
+```
+
+### List Interface
+PS.旧瓶装新酒 你是新方法吗? 还真是,原来工具方法类中的方法移动到接口默认方法中 所以应该是 旧瓶装旧酒 XD 
+- List.sort(Comparator c)
+- Replaces Collections.sort(List l, Comparator c)
+```java
+List<String> myList = ...
+myList.sort((x, y) -> x.length() – y.length());
+```
+
+
+### Logger Class
+- This is a common problem
+    - logger.finest(createComplexMessage());
+- createComplexMessage() is always called, even when not required
+    - Heisenberg’s Uncertainty Principle in software
+- New methods in Logger class
+    - Takes a Supplier as an argument (which is a functional interface)
+- Simple change to code has big impact on performance
+    - logger.finest(() -> createComplexMessage());
+- We now pass how to create the message, not the actual message
+
+- 这是一个普遍的问题
+    - logger.finest(createComplexMessage());
+- 即使不需要，也总是调用createComplexMessage()
+    - 海森堡的软件不确定性原则
+- Logger类中的新方法
+    - 将Supplier作为参数(这是一个函数式接口)
+- 简单地更改代码会对性能产生重大影响
+    - logger.finest(() -> createComplexMessage());
+- 现在我们传递如何创建消息，而不是实际消息
+
+
+### Section 8
+- Use the new methods in JDK 8 to eliminate the frequent need for loops
+- Remember that a Lambda provides behaviour, not a value
+    - Very useful for conditional uses of data
+
+- 使用JDK 8中的新方法来消除对循环的频繁需求
+- 请记住，Lambda提供的是行为，而非值
+    - 对于有条件地使用数据非常有用
+
+### Summary
+- Lambda expressions provide a simple way to pass behaviour as a parameter, or assign to a variable
+- They can be used wherever a functional interface type is used
+    - The Lambda provides the implementation of the single abstract method
+- Method and constructor references can be used as shorthand
+- Several useful new methods in JDK 8 that can use Lambdas
+
+- Lambda表达式提供了一种简单的方式来将行为作为参数传递或分配给变量
+- 它们可以在使用功能接口类型的任何地方使用
+    - Lambda提供单一抽象方法的实现
+- 方法和构造方法参考可用作速记
+- JDK 8中可以使用Lambda的几种有用的新方法
+
+PS.授人以鱼不如授人以渔
+
 ###### jdk8mooc_lesson_2-1
 ###### jdk8mooc_lesson_2-2
 ###### jdk8mooc_lesson_2-3
