@@ -187,13 +187,13 @@ This week covers the new lambda expressions feature added to Java SE 8. The less
 
  
 
-- Lesson 1-1 Why Does Java Need Lambda Expressions? (21:46)
-- Lesson 1-2 Lambda Expression Syntax (9:55)
-- Lesson 1-3: Functional Interfaces And Their Definition (11:36)
-- Lesson 1-4: Functional Interfaces in the java.util.function Package (10:37)
-- Lesson 1-5: Method and Constructor References (08:53)
-- Lesson 1-6: Referencing External Variables in Lambda Expressions (07:10)
-- Lesson 1-7: Useful New Methods In JDK8 That Can Use Lambdas (11:02)
+- Lesson 1-1 Why Does Java Need Lambda Expressions? (21:46) [note](#JDK8MOOC_Lesson_1-1)
+- Lesson 1-2 Lambda Expression Syntax (9:55) [note](#JDK8MOOC_Lesson_1-2)
+- Lesson 1-3: Functional Interfaces And Their Definition (11:36) [note](#JDK8MOOC_Lesson_1-3)
+- Lesson 1-4: Functional Interfaces in the java.util.function Package (10:37) [note](#JDK8MOOC_Lesson_1-4)
+- Lesson 1-5: Method and Constructor References (08:53) [note](#JDK8MOOC_Lesson_1-5)
+- Lesson 1-6: Referencing External Variables in Lambda Expressions (07:10) [note](#JDK8MOOC_Lesson_1-6)
+- Lesson 1-7: Useful New Methods In JDK8 That Can Use Lambdas (11:02) [note](#JDK8MOOC_Lesson_1-7)
 
 ## Lesson 2: Introduction to the Streams API 
 
@@ -234,13 +234,13 @@ In lesson 2 you will learn how to use the new Streams API to apply functional pr
      使用Optional类处理空值。
  
  
-- Lesson 2-1: Introduction to Functional Programming Concepts (14:48)
-- Lesson 2-2: Elements of a Stream (10:27)
-- Lesson 2-3: Streams of Objects and Primitive Types (6:21)
-- Lesson 2-4: Stream Sources in JDK8 (11:23)
-- Lesson 2-5: Stream Interface: Intermediate Operations (13:17)
-- Lesson 2-6: Stream Interface: Terminal Operations (11:43)
-- Lesson 2-7: The Optional Class (14:28)
+- Lesson 2-1: Introduction to Functional Programming Concepts (14:48) [note](#JDK8MOOC_Lesson_2-1)
+- Lesson 2-2: Elements of a Stream (10:27) [note](#JDK8MOOC_Lesson_2-2)
+- Lesson 2-3: Streams of Objects and Primitive Types (6:21) [note](#JDK8MOOC_Lesson_2-3)
+- Lesson 2-4: Stream Sources in JDK8 (11:23) [note](#JDK8MOOC_Lesson_2-4)
+- Lesson 2-5: Stream Interface: Intermediate Operations (13:17) [note](#JDK8MOOC_Lesson_2-5)
+- Lesson 2-6: Stream Interface: Terminal Operations (11:43) [note](#JDK8MOOC_Lesson_2-6)
+- Lesson 2-7: The Optional Class (14:28) [note](#JDK8MOOC_Lesson_2-7)
 
 
 ## Lesson 3: Advanced Lambda and Stream Concepts    
@@ -284,17 +284,17 @@ Homework is linked in the Supporting Materials section.
 使用技术对流进行调试和故障排除。
 作业在支持材料部分中链接。
 
-- Lesson 3-1: Understanding and Using Reductions (18:41)
-- Lesson 3-2: Finite and Infinite Streams (6:34)
-- Lesson 3-3: Avoiding the Use of forEach (5:13)
-- Lesson 3-4: Using Collectors (13:48)
-- Lesson 3-5: Parallel Streams (And When Not To Use Them) (11:01)
-- Lesson 3-6: Debugging Lambdas and Streams (6:17)
-- Lesson 3-7: Course Conclusions (5:43)
+- Lesson 3-1: Understanding and Using Reductions (18:41) [note](#JDK8MOOC_Lesson_3-1)
+- Lesson 3-2: Finite and Infinite Streams (6:34) [note](#JDK8MOOC_Lesson_3-2)
+- Lesson 3-3: Avoiding the Use of forEach (5:13) [note](#JDK8MOOC_Lesson_3-3)
+- Lesson 3-4: Using Collectors (13:48) [note](#JDK8MOOC_Lesson_3-4)
+- Lesson 3-5: Parallel Streams (And When Not To Use Them) (11:01) [note](#JDK8MOOC_Lesson_3-5)
+- Lesson 3-6: Debugging Lambdas and Streams (6:17) [note](#JDK8MOOC_Lesson_3-6)
+- Lesson 3-7: Course Conclusions (5:43) [note](#JDK8MOOC_Lesson_3-7)
 
 
 
-
+###### JDK8MOOC_Lesson_1-1
 ## JDK 8 MOOC: Lesson 1-1 Lambda Expressionsc
     
     JDK 8 MOOC: Functional Programming in Java with Lambdas and Streams 
@@ -375,3 +375,25 @@ The Problem: External Iteration
 - 线程安全-客户端逻辑是无状态的
 - 高使用障碍
    - 语法上很丑  
+
+
+###### JDK8MOOC_Lesson_1-2
+###### JDK8MOOC_Lesson_1-3
+###### JDK8MOOC_Lesson_1-4
+###### JDK8MOOC_Lesson_1-5   
+###### JDK8MOOC_Lesson_1-6
+###### JDK8MOOC_Lesson_1-7
+###### JDK8MOOC_Lesson_2-1
+###### JDK8MOOC_Lesson_2-2
+###### JDK8MOOC_Lesson_2-3
+###### JDK8MOOC_Lesson_2-4
+###### JDK8MOOC_Lesson_2-5   
+###### JDK8MOOC_Lesson_2-6
+###### JDK8MOOC_Lesson_2-7
+###### JDK8MOOC_Lesson_3-1
+###### JDK8MOOC_Lesson_3-2
+###### JDK8MOOC_Lesson_3-3
+###### JDK8MOOC_Lesson_3-4
+###### JDK8MOOC_Lesson_3-5   
+###### JDK8MOOC_Lesson_3-6
+###### JDK8MOOC_Lesson_3-7
