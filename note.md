@@ -138,7 +138,7 @@ Java的重要决定
 - [《Sophistication》_流沙飞沫_新浪博客](http://blog.sina.com.cn/s/blog_6ca844930102wnrp.html)
 - [Oracle BrandVoice: Lazy Java Code Makes Applications Elegant, Sophisticated -- And Efficient at Runtime](https://www.forbes.com/sites/oracle/2018/01/22/lazy-java-code-makes-applications-elegant-sophisticated-and-efficient-at-runtime/#46fcda6855fa)
 - [编程范式：命令式编程(Imperative)、声明式编程(Declarative)和函数式编程(Functional) - backslash112 - 博客园](https://www.cnblogs.com/sirkevin/p/8283110.html)
-- [基本概念 | 引用透明 & 纯函数 & 代换模型 | 随便写写](http://songkun.me/2018/06/08/2018-06-08-referentially-transparent/)
+- [基本概念 引用透明 & 纯函数 & 代换模型 随便写写](http://songkun.me/2018/06/08/2018-06-08-referentially-transparent/)
 - [函数副作用 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0%E5%89%AF%E4%BD%9C%E7%94%A8)
 
 
