@@ -625,11 +625,11 @@ Type Inference
     List<String> list = getList();
     process(list, (String x, String y) -> x.length() – y.length());
     ```
-- Compiler is now smarter   
+- Compiler is now smarter  编译器现在更智能 
     ```java
     String r = process(list, (x, y) -> x.length() – y.length())
     ```
-- More typing with less typing
+- More typing with less typing 更少代码更多类型
 
 ### Section 2 Summary
 - Syntax for Lambda expressions is simple
@@ -643,6 +643,64 @@ Type Inference
      - Java保持强力，静态类型
 
 ###### jdk8mooc_lesson_1-3
+## Lesson 1-3:Functional Interfaces And Their Definition
+函数式接口及其定义
+
+### Lambda Expression Types
+- A Lambda expression is an anonymous function
+    - It is not associated with a class
+- But Java is a strongly typed language
+    - So what is the type of a Lambda expression?
+- A Lambda expression can be used wherever the type is a functional interface
+- This is a single abstract method type
+- The Lambda expression provides the implementation of the abstract  method
+
+- Lambda表达式是匿名函数
+    - 与类无关
+- 但是Java是一种强类型语言
+    - 那么Lambda表达式的类型是什么？
+- 只要类型是函数式接口，就可以使用Lambda表达式
+- 这是一个抽象方法类型
+- Lambda表达式提供了抽象方法的实现
+
+
+### Functional Interface Definition
+- An interface
+- Has only one abstract method
+- Before JDK 8 this was obvious
+    - Only one method
+- JDK 8 introduces default methods
+    - Multiple inheritance of behaviour for Java
+- JDK 8 also now allows static methods in interfaces
+- @FunctionalInterface annotation
+
+- 接口
+- 只有一种抽象方法
+- 在JDK 8之前，这很明显
+    - 仅一种方法
+- JDK 8引入了默认方法
+    - Java行为的多重继承
+- JDK 8现在还允许接口中使用静态方法
+- @FunctionalInterface注解
+
+
+### Functional Interfaces Examples
+
+```java
+interface FileFilter { boolean accept(File x); }
+interface ActionListener { void actionPerformed(…); }
+interface Callable<T> { T call(); }
+```
+
+### Section 3
+- Lambda expressions can be used anywhere the type is a functional interface
+    - A functional interface has only one abstract method
+- The Lambda expression provides the implementation of the single abstract method of the functional interface
+
+- Lambda表达式可以在类型是功能接口的任何地方使用
+    - 功能接口只有一种抽象方法
+- Lambda表达式提供功能接口的单一抽象方法的实现
+
 ###### jdk8mooc_lesson_1-4
 ###### jdk8mooc_lesson_1-5   
 ###### jdk8mooc_lesson_1-6

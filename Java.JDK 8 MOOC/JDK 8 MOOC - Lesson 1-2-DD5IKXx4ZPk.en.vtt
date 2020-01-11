@@ -353,11 +353,7 @@ one is going to be a list
 of type T and the other is a comparator of type T. 
 
 00:06:13.210 --> 00:06:18.040
- If I want to use that method 
- 
-102
-00:06:18,040 --&gt; 00:06:21,190
-then I could do something like this: I
+If I want to use that method then I could do something like this: I
 can create
 
 00:06:21.190 --> 00:06:24.880
