@@ -151,6 +151,7 @@ Java的重要决定
 
 [Oracle大规模开放在线课程：Java SE 8 Lambda和Streams，2016年](https://apexapps.oracle.com/pls/apex/f?p=44785:141:7184327235923::::P141_PAGE_ID,P141_SECTION_ID:478,3496)
 
+[JDK 8: Lambdas and Streams Introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:50:4829939158328)
  
 ## Lesson 1: Lambda Expressions    
 
@@ -194,6 +195,70 @@ This week covers the new lambda expressions feature added to Java SE 8. The less
 - Lesson 1-5: Method and Constructor References (08:53) [note](#jdk8mooc_lesson_1-5)
 - Lesson 1-6: Referencing External Variables in Lambda Expressions (07:10) [note](#jdk8mooc_lesson_1-6)
 - Lesson 1-7: Useful New Methods In JDK8 That Can Use Lambdas (11:02) [note](#jdk8mooc_lesson_1-7)
+
+### Quiz
+
+- Lambda expressions can be used anywhere a functional interface type is required, true or false?  [Answer](#True)
+- Lambda表达式可以在需要功能接口类型的任何地方使用，是对还是错？
+    - True
+    - False
+- Which of the following is an invalid lambda expression?   [Answer](#C)
+- 以下哪个是无效的lambda表达式？
+    - x -> x * 5
+    - (x, y) -> x.length() – y.length()
+    - () -> {process()}
+    - (String x, String y) -> x + y
+- How many methods must a functional interface have?[Answer](#D)
+- 一个功能接口必须有几种方法？
+    - 0
+    - 1
+    - As many as you want
+    - Any nymber, so long as only 1 is abstract
+- What is the annotation for a functional interface?[Answer](#C)
+- 函数式接口的注解是?
+    - @functional
+    - @functionalinterface
+    - @FunctionalInterface
+    - @Functional   
+- UnaryOperator is a special form of which functional interface?[Answer](#A)
+- UnaryOperator是哪个功能接口的特殊形式？
+    - Function
+    - Supplier
+    - Predicate
+    - BinaryOperator
+    - Consumer    
+- Which two could be considered equivalent lambda expressions of the method reference, Buffer::position?[Answer](#BC)
+- 哪两个可以视为方法引用 Buffer::position 的等效lambda表达式？
+    - n -> Buffer.position(n)
+    - (Buffer b, Integer n) -> b.position(n)
+    - b -> b.position()
+    - (Buffer b, long n) -> b.position(n)    
+- In order to reference a variable from the surrounding scope in a Lambda expression, the variable must be:[Answer](#B)
+- 为了在Lambda表达式中引用周围范围的变量，该变量必须为：
+    - Definitely final
+    - Effectively final
+    - Possibly final
+    - None of the above
+- What functional interface type does the removeIf method of the Collections interface take as a parameter?[Answer](#D)
+- Collections接口的removeIf方法将哪种功能接口类型作为参数?
+    - Supplier
+    - Consumer
+    - BiPredicate
+    - Predicate
+- To convert all the Integers in a List, l, to their signum values, which two of the following Lambda expressions would work?[Answer](#AC)
+- 要将列表l中的所有整数转换为它们的符号值，以下两个Lambda表达式中的哪两个有效?
+    - l.replaceAll(n -> Integer.signum(n))
+    - l.replace(n -> Integer.signum(n))
+    - l.replaceAll(Integer::signum)
+    - l.replaceAll(Number::signum)
+    - l.replace(Integer::signum)
+- The potential efficiency of the Logger class methods has been improved by adding methods that use which functional interface?[Answer](#C)
+- 通过添加使用哪个功能接口的方法，可以提高Logger类方法的潜在效率。
+    - Consumer
+    - Function
+    - Supplier
+    - UnaryOperator
+
 
 ## Lesson 2: Introduction to the Streams API 
 
@@ -241,6 +306,71 @@ In lesson 2 you will learn how to use the new Streams API to apply functional pr
 - Lesson 2-5: Stream Interface: Intermediate Operations (13:17) [note](#jdk8mooc_lesson_2-5)
 - Lesson 2-6: Stream Interface: Terminal Operations (11:43) [note](#jdk8mooc_lesson_2-6)
 - Lesson 2-7: The Optional Class (14:28) [note](#jdk8mooc_lesson_2-7)
+
+
+### Quiz
+
+- In functional programming, names may be associated with different values, true or false?[Answer](#False)
+- 在函数式编程中，名称可能与不同的值关联，是对还是错？
+    - True
+    - False
+- What is the minimum number of intermediate operations that can be used in a stream?[Answer](#A)
+- stream 中可以使用的最小中间操作数是多少？
+    - 0
+    - 1
+    - 2
+    - 3
+- Which three of the following are NOT interfaces of the stream package representing sequences of primitive values?[Answer](#ABE)
+- 以下哪三个不是表示原始值序列的stream包的NOT接口?
+    - ByteStream
+    - ShortStream
+    - IntStream
+    - LongStream
+    - FloatStream
+- Which is the only interface that directly contains a parallelStream() method?[Answer](#D)
+- 哪个是直接包含 parallelStream() 方法的唯一接口?
+    - List
+    - Set
+    - Map
+    - Collections
+- Which two classes have a lines() method that returns a Stream<String>?[Answer](#BD)
+- 哪两个类具有返回 Stream<String> 的 lines() 方法？
+    - FileReader
+    - BufferedReader
+    - StringReader
+    - Files
+    - FileHandler
+- The flatMap method of the Stream interface takes a stream as input and produces multiple streams as output, true or false?[Answer](#False)
+- Stream接口的flatMap方法将一个流作为输入，并产生多个流作为输出，对还是错?
+    - True
+    - False
+- The peek() method must not be used to alter the elements of a steam, true or false?[Answer](#True)
+- 不能使用 peek() 方法来更改steam的元素，对还是错?
+    - True
+    - False    
+- To get a deterministic result within a parallel stream when finding the first element, which method should you use?[Answer](#C)
+- 要在找到第一个元素时在并行流中获得确定性结果，应使用哪种方法?
+    - findParallelAny
+    - findAny
+    - findFirst
+    - findAll
+    - findParallelFirst
+- When using an Optional and a Function that returns an Optional, you should use which method?[Answer](#C)
+- 当使用Optional和Function返回Optional时，应该使用哪种方法?
+    - map
+    - optionalMap
+    - flatMap
+    - optionalFltMap
+- The Optional class helps to reduce which type of exception?[Answer](#B)
+- Optional类有助于减少哪种类型的异常?
+    - IOException
+    - NullPointerException
+    - NumberFormatException
+    - Exception    
+
+参考:
+[differences-between-imperative-and-functional](https://sookocheff.com/post/fp/differences-between-imperative-and-functional/ )
+  
 
 
 ## Lesson 3: Advanced Lambda and Stream Concepts    
@@ -292,7 +422,66 @@ Homework is linked in the Supporting Materials section.
 - Lesson 3-6: Debugging Lambdas and Streams (6:17) [note](#jdk8mooc_lesson_3-6)
 - Lesson 3-7: Course Conclusions (5:43) [note](#jdk8mooc_lesson_3-7)
 
+### Quiz
 
+- What is the method signature of the reduce() method in the Stream interface?[Answer](#B)
+- Stream 接口中的 reduce() 方法的方法签名是什么？
+    - Stream reduce(BinaryOperator accumulator)
+    - Optional reduce(BinaryOperator accumulator)
+    - Optional reduce(UnaryOperatr accumulator)
+    - Optional reduce(BiFunction accumulator)
+- The accumulator of a reduction takes what as the first parameter?[Answer](#D) TODO
+- 减少量的累加器将第一个参数作为参数?
+    - The next element of the input stream
+    - A full result
+    - The first element of the input stream
+    - A partial result
+    - An Optional   
+- An infinite stream can never be terminated, true or false?
+- 无限流永远不会被终止，对还是错?[Answer](#B)
+    - True
+    - False
+- To continue using an infinite stream, which terminal method should be used?[Answer](#C)
+- 要继续使用无限流，应使用哪种终端方法？
+    - forEver()
+    - forAll()
+    - forEach()
+    - for()
+- It is best-practice in functional programming to use the forEach() method as a terminal operation to modify state, true or false?[Answer](#B) TODO
+- 在函数式编程中，最佳实践是将 forEach() 方法用作修改状态(真还是假)的终端操作?
+    - True
+    - False
+- Which of the following is NOT a static method of the Collectors class?[Answer](#B) 
+- 以下哪项不是Collectors类的静态方法?
+    - toList()
+    - toArray()
+    - toSet()
+    - toMap()
+- The groupingBy() method of the Collectors class returns an object of what type? [Answer](#A) TODO
+- Collectors类的 groupingBy() 方法返回什么类型的对象？
+    - Map
+    - Set
+    - List
+    - Collection   
+- What method of the Stream interface should be used to convert a sequential stream to parallel? [Answer](#C)
+- 应该使用哪种Stream接口方法将顺序流转换为并行流?
+    - parallelise()
+    - makeParallel()
+    - parallel()
+    - parallelStream()     
+- Which is a useful method in the Stream interface to help debugging? [Answer](#D)
+- Stream接口中哪个有用的方法可帮助调试?
+    - poke()
+    - print()
+    - breakpoint()
+    - peek()
+- Which static method of the Collectors class will provide a Collector that will create a comma separated value (CSV) string of results from a stream?[Answer](#C)
+- Collectors类的哪个静态方法将提供一个Collector，该Collector将从流中创建一个逗号分隔值（CSV）的结果字符串?
+    - toString(“,”)
+    - setSeparator(“,”)
+    - joining(“,”)
+    - connecting(“,”)
+ 
 
 ###### jdk8mooc_lesson_1-1
 ## JDK 8 MOOC: Lesson 1-1 Lambda Expressionsc
