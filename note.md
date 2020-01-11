@@ -565,6 +565,22 @@ The Problem: External Iteration
 - 高使用障碍
    - 语法上很丑  
 
+### Internal Iteration With Lambda Expressions 
+Lambda表达式的内部迭代
+
+- More readable 更具可读性
+- More abstract 更抽象
+- Less error-prone 少出错
+
+### Section 1 Summary
+
+- Need changes to Java to simplify parallel coding
+- Lambda expressions simplify how to pass behaviour as a parameter
+
+- 需要对Java进行更改以简化并行编码
+- Lambda表达式简化了如何将行为作为参数传递
+
+
 
 ###### jdk8mooc_lesson_1-2
 ###### jdk8mooc_lesson_1-3
