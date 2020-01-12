@@ -16,7 +16,7 @@
     技术视频，重点介绍Java SE和Embedded的不同功能和更新，包括2017 JavaOne会议
 
 
-* [JDK 8 MOOC](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.JDK%208%20MOOC/)
+* [JDK 8 MOOC - JDK 8: Lambdas and Streams Introduction](../local-youtube/play.html?playlist=../local-youtube-vtt/Java.JDK%208%20MOOC/)
 ,[YouTube](https://www.youtube.com/playlist?list=PLX8CzqL3ArzV4jApaGrL5Dey_mi9bxnTm)
 ,[bilibili](https://www.bilibili.com/video/av81181015)
 
