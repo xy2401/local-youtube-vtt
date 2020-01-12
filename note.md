@@ -61,7 +61,7 @@ fun five()
 
 Most mainstream programming languages have adapted the functional style. We often hear why immutability is so important and how wonderful higher order functions are. These are but tools to reach a higher goal. In this presentation we will start by discussing the functional capabilities found in almost any language today, and quickly dive into the real essence of functional programming and learn how languages like Java have focused on what really matters.
 
-大多数主流编程语言都适应了函数式风格。 我们经常听到为什么不变性如此重要，以及高阶函数多么出色。 这些只是达到更高目标的工具。 在本演示中，我们将首先讨论当今几乎所有语言中都具有的功能，然后快速深入探讨功能编程的实质，并学习Java之类的语言如何专注于真正重要的事情。
+大多数主流编程语言都适应了函数式风格。 我们经常听到为什么不变性如此重要，以及高阶函数多么出色。 这些只是达到更高目标的工具。 在本演示中，我们将首先讨论当今几乎所有语言中都具有的功能，然后快速深入探讨函数式编程的实质，并学习Java之类的语言如何专注于真正重要的事情。
 
 
 From the past:
@@ -288,7 +288,7 @@ In lesson 2 you will learn how to use the new Streams API to apply functional pr
     Use terminal operations in a stream pipeline.
     Use the Optional class to handle null values.
 
-在第2课中，您将学习如何使用新的Streams API在Java中应用功能编程技术。 您将学习：
+在第2课中，您将学习如何使用新的Streams API在Java中应用函数式编程技术。 您将学习：
 
      使用函数式编程概念。
      在Java中定义流和流管道。
