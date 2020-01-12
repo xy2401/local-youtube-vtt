@@ -1027,6 +1027,155 @@ myList.sort((x, y) -> x.length() – y.length());
 PS.授人以鱼不如授人以渔
 
 ###### jdk8mooc_lesson_2-1
+## Lesson 2:Introduction To The Streams API
+Streams API简介
+
+
+### Lesson2 Agenda 课程议程
+- Introduction to functional programming concepts
+- Elements of a Stream
+- Streams of objects and primitive types
+- Stream sources in JDK 8
+- The Stream interface: Intermediate operations
+- The Stream interface: Terminal operations
+- The Optional class
+
+- 函数式编程概念简介
+- 流元素
+- 对象和原始类型的流
+- JDK 8中的流源
+- Stream接口：中间操作
+- Stream接口：终端操作
+- Optional 类
+
+## Lesson 2-1:Introduction to Functional Programming Concepts
+
+### Imperative Programming 命令式编程
+**Names And Values**
+- Use variables as an association between names and values
+- Use sequences of commands
+    - Each command consists of an assignment
+    - Can change a variable’s value
+    - Form is <variable_name> = <expression>
+    - Expressions may refer to other variables
+        - Whose value may have been changed by preceding commands
+    - Values can therefore be passed from command to command
+    - Commands may be repeated through loops
+
+- 使用变量作为名称和值之间的关联
+- 使用命令序列
+    - 每个命令都包含一个分配
+    - 可以更改变量的值
+    - 形式为<变量名称> = <表达式>
+    - 表达式可能引用其他变量
+        - 先前的命令可能更改了其值
+    - 因此可以在命令之间传递值
+    - 可以通过循环重复命令
+
+### Functional Programming 函数式编程
+**Names And Values**
+- Based on structured function calls
+- Function call which calls other functions in turn (composition)
+    ```
+    <function1>(<function2>(<function3> … ) … )
+    ```
+- Each function receives values from, and passes values back the calling function
+- Names are only used as formal parameters
+    - Once value is assigned it can not be changed
+- No concept of a command, as used in imperative code
+    - Therefore no concept of repetition
+
+- 基于结构化的函数调用
+- 函数调用，依次调用其他函数（组成）
+     ```
+     <function1>(<function2>(<function3> … ) … )
+     ```
+- 每个函数从调用函数接收值并将其传递回调用函数
+- 名称仅用作形式参数
+    - 分配值后就无法更改
+- 没有命令的概念，如命令式代码中使用的
+    - 因此没有重复的概念
+
+### Names And Values
+- Imperative
+    - The same name may be associated with different values
+- Functional
+    - A name is only ever associated with one value
+
+- 命令式
+    - 同一名称可能与不同的值相关联
+- 函数式
+    - 名称仅与一个值相关联
+
+### Execution Order 执行顺序
+- Imperative
+    - Values associated with names can be changed
+    - The order of execution of commands forms a contract
+        - If it is changed, the behaviour of the application may change
+- Functional
+    - Values associated with names cannot be changed
+    - The order of execution does not impact the results
+    - There is no fixed execution order
+
+- 命令式
+    - 与名称相关的值可以更改
+    - 命令的执行顺序形成合同
+        - 如果更改，则应用程序的行为可能会更改
+- 函数式
+    - 与名称关联的值不能更改
+    - 执行顺序不影响结果
+    - 没有固定的执行顺序
+
+### Repetition 重复
+- Imperative
+    - Values associated with names may be changed by commands
+    - Commands may be repeated leading to repeated changes
+    - New values may be associated with the same name through repetition (loops)
+- Functional
+    - Values associated with names may not be changed
+    - Repeated changes are achieved by nested function calls
+    - New values may be associated with the same name through recursion
+
+- 命令式
+    - 与名称相关的值可以通过命令更改
+    - 命令可能会重复，导致重复更改
+    - 新值可能通过重复（循环）与相同名称相关联
+- 函数式
+    - 与名称关联的值不得更改
+    - 通过嵌套函数调用实现重复更改
+    - 新值可能通过递归与相同名称相关联
+
+### Functions As Values
+- Functional programming allows functions to be treated as values
+    - This is why Lambda expressions were required in JDK 8
+    - To make this much simpler than anonymous inner classes
+
+- 函数式编程允许将函数视为值
+    - 这就是为什么在JDK 8中需要Lambda表达式的原因
+    - 比匿名内部类要简单得多
+
+
+### Section 1 Summary
+- Imperative and functional approaches are very different
+- Imperative
+    - Values associated with names can be changed
+    - Order of execution is defined as a contract
+    - Repetition is explicit and external
+- Functional
+    - Values associated with names are set once and cannot be changed
+    - Order of execution is not defined
+    - Repetition is through the use of recursion
+
+- 命令式和函数式性方法截然不同
+- 命令式
+    - 与名称相关的值可以更改
+    - 执行顺序定义为合同
+    - 重复是明确的和外部的
+- 函数式
+    - 与名称关联的值仅设置一次，不能更改
+    - 执行顺序未定义
+    - 重复是通过使用递归
+
 ###### jdk8mooc_lesson_2-2
 ###### jdk8mooc_lesson_2-3
 ###### jdk8mooc_lesson_2-4
