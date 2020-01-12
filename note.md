@@ -151,7 +151,7 @@ Java的重要决定
 
 [Oracle大规模开放在线课程：Java SE 8 Lambda和Streams，2016年](https://apexapps.oracle.com/pls/apex/f?p=44785:141:7184327235923::::P141_PAGE_ID,P141_SECTION_ID:478,3496)
 
-[JDK 8: Lambdas and Streams Introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:50:4829939158328)
+[JDK 8: Lambdas and Streams Introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:50:102256436925696)
  
 ## Lesson 1: Lambda Expressions    
 
@@ -1177,6 +1177,77 @@ Streams API简介
     - 重复是通过使用递归
 
 ###### jdk8mooc_lesson_2-2
+## Lesson 2-2:Elements of a Stream
+流元素
+
+### Stream Overview
+**At The High Level**
+- Abstraction for specifying aggregate computations
+    - Not a data structure
+    - Can be infinite
+- Simplifies the description of aggregate computations
+    - Exposes opportunities for optimisation
+    - Fusing, laziness and parallelism
+
+- 用于指定聚合计算的抽象
+    - 不是数据结构
+    - 可以无限
+- 简化了汇总计算的描述
+    - 展示优化机会
+    - 融合，懒惰和并行
+
+ 
+- A stream pipeline consists of three types of things
+    - A source
+    - Zero or more intermediate operations
+    - A terminal operation
+        - Producing a result or a side-effect
+
+- 流管道包括三种类型的事物
+    - 来源
+    - 零个或多个中间操作
+    - 终端操作
+        - 产生结果或产生副作用
+
+
+>Source -> Intermediate Operation -> Intermediate Operation -> Terminal Operation  -> Result
+```java
+int total = transactions.stream()
+ .filter(t -> t.getBuyer().getCity().equals("London"))
+ .mapToInt(Transaction::getPrice)
+ .sum();
+```
+
+### Stream Terminal Operations
+- The pipeline is only evaluated when the terminal operation is called
+    - All operations can execute sequentially or in parallel
+    - Intermediate operations can be merged
+        - Avoiding multiple redundant passes on data
+        - Short-circuit operations (e.g. findFirst)
+        - Lazy evaluation
+    - Stream characteristics help identify optimisations
+        - DISTINT stream passed to distinct() is a no-op
+
+- 仅在调用终端操作时评估管道
+    - 所有操作均可顺序执行或并行执行
+    - 中间操作可以合并
+        - 避免多次重复传递数据
+        - 短路操作（例如findFirst）
+        - 懒惰的评价
+    - 流特征有助于确定优化
+        - 传递给 distinct() 的DISTINT流是无操作的
+
+### Section 2 Summary
+- Think of a Stream as like a pipeline
+- Processes data from the source
+    - No explicit loop used
+    - Which means a Stream can easily be made parallel
+
+- 将流视为管道
+- 处理源中的数据
+    - 不使用显式循环
+    - 这意味着可以轻松地将Stream并行化
+
 ###### jdk8mooc_lesson_2-3
 ###### jdk8mooc_lesson_2-4
 ###### jdk8mooc_lesson_2-5   
