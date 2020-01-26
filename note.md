@@ -152,7 +152,7 @@ Java的重要决定
 [Oracle大规模开放在线课程：Java SE 8 Lambda和Streams，2016年](https://apexapps.oracle.com/pls/apex/f?p=44785:141:7184327235923::::P141_PAGE_ID,P141_SECTION_ID:478,3496)
 
 [JDK 8: Lambdas and Streams Introduction](https://apexapps.oracle.com/pls/apex/f?p=44785:50:102256436925696)
- 
+  
 ## Lesson 1: Lambda Expressions    
 
 Homework:
@@ -482,7 +482,7 @@ Homework is linked in the Supporting Materials section.
     - joining(“,”)
     - connecting(“,”)
  
-
+###### wxtvhtgdv9g
 ###### jdk8mooc_lesson_1-1
 ## JDK 8 MOOC: Lesson 1-1 Lambda Expressionsc
     
@@ -581,7 +581,7 @@ Lambda表达式的内部迭代
 - Lambda表达式简化了如何将行为作为参数传递
 
 
-
+###### dd5ikxx4zpk
 ###### jdk8mooc_lesson_1-2
 ## Lesson 1-2:Lambda Expression Syntax
 
@@ -642,6 +642,7 @@ Type Inference
 - 类型推断意味着通常不需要明确声明类型
      - Java保持强力，静态类型
 
+###### ov6nnr6im6o
 ###### jdk8mooc_lesson_1-3
 ## Lesson 1-3:Functional Interfaces And Their Definition
 函数式接口及其定义
@@ -701,6 +702,7 @@ interface Callable<T> { T call(); }
     - 功能接口只有一种抽象方法
 - Lambda表达式提供功能接口的单一抽象方法的实现
 
+###### kkfd9fwcmtk
 ###### jdk8mooc_lesson_1-4
 ## Lesson 1-4:Functional Interfaces in the java.util.function Package
 
@@ -805,6 +807,7 @@ Files.find(start, maxDepth,
     - 但也用于许多其他地方
 - 不太可能需要为函数包定义自己的扩展
 
+###### curwqa7kwdk
 ###### jdk8mooc_lesson_1-5   
 ## Lesson 1-5:Method and Constructor References
 方法与构造方法引用
@@ -868,6 +871,7 @@ Factory<List<String>> f = ArrayList<String>::new;
 - 也可以用于构造函数
 
 
+###### scifq_s4cqu
 ###### jdk8mooc_lesson_1-6
 ## Lesson 1-6:Referencing External Variables in Lambda Expressions
 在Lambda表达式中引用外部变量
@@ -936,6 +940,7 @@ class DataProcessor {
 - 在Lambda中，这是指周围范围的对象
     - 编译器将在需要时为您插入对此的引用
 
+###### olkf7vpjmfg
 ###### jdk8mooc_lesson_1-7
 
 ## Lesson 1-7:Useful New Methods In JDK 8 That Can Use Lambdas
@@ -1026,6 +1031,7 @@ myList.sort((x, y) -> x.length() – y.length());
 
 PS.授人以鱼不如授人以渔
 
+###### igq7yth5ljy
 ###### jdk8mooc_lesson_2-1
 ## Lesson 2:Introduction To The Streams API
 Streams API简介
@@ -1176,6 +1182,7 @@ Streams API简介
     - 执行顺序未定义
     - 重复是通过使用递归
 
+###### j4clzago_im
 ###### jdk8mooc_lesson_2-2
 ## Lesson 2-2:Elements of a Stream
 流元素
@@ -1248,15 +1255,27 @@ int total = transactions.stream()
     - 不使用显式循环
     - 这意味着可以轻松地将Stream并行化
 
+###### o9tajxdd9iu
 ###### jdk8mooc_lesson_2-3
+###### pbtfl7t_hlw
 ###### jdk8mooc_lesson_2-4
+###### 2eir0u78_ga
 ###### jdk8mooc_lesson_2-5   
+###### 4jjxu8a6cuy
 ###### jdk8mooc_lesson_2-6
+###### hwxfhhsgneo
 ###### jdk8mooc_lesson_2-7
+###### ttii_ibmpcm
 ###### jdk8mooc_lesson_3-1
+###### bt5mikrygzm
 ###### jdk8mooc_lesson_3-2
+###### widwt5tjy4e
 ###### jdk8mooc_lesson_3-3
+###### 1xwuimh_rh0
 ###### jdk8mooc_lesson_3-4
+###### lfnnpfmbice
 ###### jdk8mooc_lesson_3-5   
+###### krltmsteyoo
 ###### jdk8mooc_lesson_3-6
+###### qnnysqvzs
 ###### jdk8mooc_lesson_3-7
