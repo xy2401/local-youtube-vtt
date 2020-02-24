@@ -1257,6 +1257,84 @@ int total = transactions.stream()
 
 ###### o9tajxdd9iu
 ###### jdk8mooc_lesson_2-3
+## Lesson 2-3:Streams of Objects and Primitive Types
+
+对象和原始类型流
+
+### Objects And Primitives
+对象与原始类型
+
+- The Java language is not truly object oriented
+- Primitive types are included
+    - byte, short, int, long, double, float, char
+- For some situations these are wrapped as objects
+    - E.g. storage in collections
+    - Byte, Short, Integer, etc.
+- Conversion between primitive and object representation is often handled by auto-boxing and unboxing
+
+
+- Java语言不是真正的面向对象
+- 包括原始类型
+    - byte, short, int, long, double, float, char
+- 在某些情况下，这些被包装为对象
+    - 例如 存储在集合中
+    - Byte, Short, Integer,等
+- 基本和对象表示之间的转换通常通过自动装箱和拆箱来处理
+
+
+### Object Streams
+
+- By default, a stream produces elements that are objects
+- Sometimes, this is not the best solution
+
+```java
+    int highScore = students.stream()
+        .filter(s -> s.graduationYear() == 2015)
+        .map(s -> s.getScore())
+        .max(Integer::compare);
+```
+
+    The stream from map has to auto-box ints to objects  
+    getScore()returns a primitive int  
+    max() must unbox each Integer object to get the value  
+    
+    map出来的stream必须 自动装箱 int转换为对象
+    getScore()返回的是原始类型
+    max() 必须要争对每一个  Integer 拆箱以得到值
+
+
+### Primitive Streams
+原始流
+
+- To avoid a lot of unnecessary object creation and work we have three primitive stream types
+    - IntStream, DoubleStream, LongStream
+- These can be used with certain stream operations
+
+- 为避免大量不必要的对象创建和工作，我们提供了三种原始流类型
+    - IntStream，DoubleStream，LongStream
+- 这些可以与某些流操作一起使用
+
+```java
+    int highScore = students.stream()
+        .filter(s -> s.graduationYear() == 2015)
+        .mapToInt(s -> s.getScore())
+        .max();
+```
+The stream from mapToIntisa stream of int values, so noboxing or unboxing   
+来自mapToIntisa流的int值流，因此不进行装箱或拆箱 
+
+### Section 3 
+Summary
+- Java has primitive values as well as object types
+- To improve stream efficiency we have three primitive stream types
+    - IntStream, DoubleStream, LongStream
+- Use methods like mapToInt(), mapToDouble(), mapToLong()
+
+- Java具有原始值和对象类型
+- 为了提高流效率，我们提供了三种原始流类型
+    - IntStream，DoubleStream，LongStream
+- 使用诸如 mapToInt(), mapToDouble(), mapToLong() 之类的方法
+
 ###### pbtfl7t_hlw
 ###### jdk8mooc_lesson_2-4
 ###### 2eir0u78_ga
