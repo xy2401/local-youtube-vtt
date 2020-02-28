@@ -1337,12 +1337,572 @@ Summary
 
 ###### pbtfl7t_hlw
 ###### jdk8mooc_lesson_2-4
+## Lesson 2-4:Stream Sources in JDK 8
+
+### JDK 8 Libraries
+- There are 95 methods in 23 classes that return a Stream
+    - Many of them, though are intermediate operations in the Stream interface
+- 71 methods in 15 classes can be used as practical Streamsources
+
+- 23个类中有95个方法返回一个Stream
+    - 尽管其中许多是Stream接口中的中间操作
+- 15类中的71种方法可用作实用的Stream源
+
+### Collection Interface
+- stream()
+    - Provides a sequential stream of elements in the collection
+- parallelStream()
+    - Provides a parallel stream of elements in the collection
+    - Uses the fork-join framework for implementation
+
+- stream()
+    - 在集合中提供顺序的元素流
+- parallelStream()
+    - 在集合中提供并行的元素流
+    - 使用fork-join框架进行实施
+
+### Arrays Class
+
+- stream()
+    - An array is a collection of data, so logical to be able to create a stream
+    - Provides a sequential stream
+    - overloaded methods for different types
+        - double, int, long, Object
+
+- stream()
+    - 数组是数据的集合，因此逻辑上能够创建流
+    - 提供顺序流
+    - 不同类型的重载方法
+        - double，int，long，Object
+
+### Files Class
+
+- find(Path, BiPredicate, FileVisitOption)
+    - A stream of Filereferences that match a given BiPredicate
+    - 匹配给定BiPredicate的文件引用流
+- list(Path)
+    - A stream of entries from a given directory
+    - 给定目录中的条目流
+- lines(Path)
+    - A stream of strings that are the lines read from a given file
+    - 字符串流，即从给定文件中读取的行
+- walk(Path, FileVisitOption)
+    - A stream of file references walking from a given Path
+    - 从给定路径走来的文件引用流
+
+### Random Numbers
+Generating Infinite Streams  
+产生无限流
+
+- Three random related classes
+    - Random, ThreadLocalRandom, SplittableRandom
+- Methods to produce finite or infinite streams of random numbers
+    - ints(), doubles(), longs()
+    - Four versions of each
+        - Finite or infinite
+        - With and without seed
+
+- 三个随机相关的类
+    - Random, ThreadLocalRandom, SplittableRandom
+- 产生有限或无限随机数流的方法
+    - ints(), doubles(), longs()
+    - 每个都有四个版本
+        - 有限或无限
+        - 有无种子
+
+### Miscellaneous Classes And Methods
+杂类和方法
+
+- JarFile/ZipFile: stream()
+    - Returns a Filestream of the contents of the compressed archive
+    - 返回压缩档案内容的Filestream
+- BufferedReader: lines()
+    - Returns a stream of strings that are the lines read from the input
+    - 返回字符串流，该字符串流是从输入中读取的行
+- Pattern: splitAsStream()
+    - Returns a stream of strings of matches of a pattern
+    - 返回模式匹配字符串流
+    - Like split(), but returns a stream rather than an array
+    - 类似于 split(), 但返回流而不是数组
+- CharSequence
+    - chars(): Char values as ints for the sequence
+    - chars(): Char 值作为序列的整数
+    - codePoints():Code point values for this sequence
+    - codePoints():此序列的代码点值
+- BitSet
+    - stream(): Indices of bits that are set
+    - stream(): 设置的位的索引
+
+### Stream Static Methods
+
+IntStream, DoubleStream, LongStream
+
+- These interfaces are primitive specialisations of the Streaminterface
+- 这些接口是Stream接口的原始专业化
+- concat(Stream, Stream), empty()
+    - Concatenates two specified streams, returns an empty stream
+    - 连接两个指定的流，返回空流
+- of(T... values)
+    - A stream that consists of the specified values
+    - 由指定值组成的流
+- range(int, int), rangeClosed(int, int)
+    - A stream from a start to an end value (exclusive or inclusive)
+    - 从开始到结束值（独占或包含）的流
+- generate(IntSupplier), iterate(int, IntUnaryOperator)
+    - An infinite stream created by a given Supplier
+    - 给定供应商创建的无限流
+    - iterate()uses a seed to start the stream
+    - iterate() 使用种子启动流
+
+### Section 4
+
+Summary
+
+- Numerous places to get stream sources
+    - Useful methods for retrieving lines from files, files from archives, etc.
+- Only Collectioncan provide a parallel stream directly
+
+- 许多获得流源的地方
+    - 从文件中检索行，从归档中检索文件的有用方法等。
+- 只有Collection可以直接提供并行流
+
+
+
 ###### 2eir0u78_ga
 ###### jdk8mooc_lesson_2-5   
+## Lesson 2-5:Stream Interface:Intermediate Operations
+流接口:中间操作
+
+### Stream Interface
+Overview
+
+- A stream provides a sequence of elements
+    - Supporting either sequential or parallel aggregate operations
+- Most operations take a parameter that describes its behaviour
+    - Typically using a Lambda expression
+    - Must be non-interfering (does not modify the stream)
+    - Typically stateless
+- Streams may be changed from sequential to parallel (and vice-versa)
+- All processing is done either sequentially or in parallel
+    - Last call wins
+
+- 流提供一系列元素
+    - 支持顺序或并行聚合操作
+- 大多数操作都采用描述其行为的参数
+    - 通常使用Lambda表达式
+    - 必须是无干扰的（不修改流）
+    - 通常为无状态
+- 流可以从顺序更改为并行（反之亦然）
+- 所有处理顺序执行或并行执行
+    - 最后一次调用获胜
+
+### Filtering And Mapping    
+
+- distinct()
+    - Returns a stream with no duplicate elements
+    - 返回没有重复元素的流
+- filter(Predicate p)
+    - Returns a stream with only those elements that return true for the Predicate
+    - 返回仅包含为谓词返回true的那些元素的流
+- map(Function f)
+    - Return a stream where the given Functionis applied to each element on the input stream
+    - 返回将给定Function应用于输入流中每个元素的流
+- mapToInt(), mapToDouble(), mapToLong()
+    - Like map(), but producing streams of primitives rather than objects
+    - 与 map() 类似，但生成原始流而不是对象流
+
+### Maps and FlatMaps
+Map Values in a Stream
+
+    Map --> Input Stream --> 1-to-1 mapping --> Output Stream
+    FlatMap --> Input Stream --> 1-to-many mapping --> Output Stream
+
+### FlatMapExample
+
+Words in a File
+
+```java
+    List<String> output = reader
+        .lines()
+        .flatMap(line -> Stream.of(line.split(REGEXP)))
+        .filter(word -> word.length() > 0)
+        .collect(Collectors.toList());
+```
+
+### Restricting The Size Of A Stream
+
+限制流的大小
+
+- skip(long n)
+    - Returns a stream that skips the first nelements of the input stream
+    - 返回一个跳过输入流前几个元素的流
+- limit(long n)
+    - Returns a stream that only contains the first nelements of the input stream
+    - 返回仅包含输入流的前元素的流
+    
+```java    
+    String output = bufferedReader
+        .lines()
+        .skip(2)
+        .limit(2)
+        .collect(Collectors.joining());
+```
+
+### Sorting and Unsorting
+排序和取消排序
+
+- sorted(Comparator c)
+    - Returns a stream that is sorted with the order determined by the Comparator
+    - sorted()with no arguments sorts by natural order
+- unordered()
+    - Inherited from BaseStream
+    - Returns a stream that is unordered (used internally)
+    - Can improve efficiency of operations like distinct()and groupingBy()
+
+- sorted(Comparator c)
+    - 返回按比较器确定的顺序排序的流
+    - sorted()，不带参数，按自然顺序排序
+- unordered()
+    - 继承自BaseStream
+    - 返回无序的流（内部使用）
+    - 可以提高诸如distinct()和groupingBy()之类的操作效率 ?why?
+
+
+### Observing Stream Elements
+
+As They Go Past
+
+观察流元素 , 当他们过去时
+
+- peek(Consumer c)
+    - Returns an output stream that is identical to the input stream
+    - Each element is passed to the accept()method of the Consumer
+    - The Consumermust not modify the elements of the stream
+    - Useful for debugging and doing more than one thing with a stream
+
+- peek(Consumer c)
+    - 返回与输入流相同的输出流
+    - 每个元素都传递给使用者的 accept()方法
+    - 消费者不得修改流中的元素
+    - 对于调试和对流执行多项操作很有用
+
+### Section 5
+Summary
+
+- Stream interface represents aggregate operations on elements
+- Most methods can use Lambda expressions to define behaviour
+- Powerful range of intermediate operations allow streams to be manipulated as required
+    - Build up complex processing from simple building blocks
+
+- 流接口表示对元素的聚合操作
+- 大多数方法可以使用Lambda表达式定义行为
+- 强大的中间操作范围允许根据需要对流进行操作
+    - 从简单的构建块构建复杂的处理
+
 ###### 4jjxu8a6cuy
 ###### jdk8mooc_lesson_2-6
+## Lesson 2-6:Stream Interface:Terminal Operations
+流接口：终端操作 
+
+### Terminal Operations
+终端操作 
+
+- Terminates the pipeline of operations on the stream
+- Only at this point is any processing performed
+    - This allows for optimisation of the pipeline
+        - Lazy evaluation
+        - Merged/fused operations
+        - Elimination of redundant operations
+        - Parallel execution
+- Generates an explicit result or a side effect
+
+- 终止流上的操作流水线
+- 仅在此时执行任何处理
+    - 这样可以优化管道
+        - 懒惰的评价
+        - 合并/合并操作
+        - 消除多余的操作
+        - 并行执行
+- 产生明确的结果或副作用
+
+### Matching Elements
+ 
+- findFirst()
+    - The first element that matches
+    - 第一个匹配的元素
+- findAny()
+    - Works the same way as findFirst(), but for a parallel stream
+    - 与findFirst（）相同，但用于并行流
+- boolean allMatch(Predicate p)
+    - Whether all the elements of the stream match using the Predicate
+    - 是否使用 Predicate 匹配流中的所有元素
+- boolean anyMatch(Predicate p)
+    - Whether any of the elements of the stream match using the Predicate
+    - 是否使用Predicate匹配流中的任何元素
+- boolean noneMatch(Predicate p)
+    - Whether no elements match using the Predicate 
+    - 使用Predicate是否没有元素匹配
+
+ ### Collecting Results
+
+ - collect(Collector c)
+    - Performs a mutable reduction on the stream 
+    - 对流执行可变还原 ?
+ - toArray() 
+    - Returns an array containing the elements of the stream 
+    - 返回包含流元素的数组 
+
+### Numerical Results
+
+Object Stream
+
+数值结果
+
+- count()
+    - Returns how many elements are in the stream
+- max(Comparator c)
+    - The maximum value element of the stream using the Comparator
+    - Returns an Optional, since the stream may be empty
+- min(Comparator c)
+    - The minimum value element of the stream using the Comparator
+    - Returns an Optional, since the stream may be empty
+
+- count()
+    - 返回流中有多少个元素
+- max(Comparator c)
+    - 使用比较器的流的最大值元素
+    - 返回Optional，因为流可能为空
+- min(Comparator c)
+    - 使用比较器的流的最小值元素
+    - 返回Optional，因为流可能为空 
+
+
+Primitive Type Streams (IntStream, DoubleStream, LongStream)    
+基本类型流 (IntStream, DoubleStream, LongStream)
+
+
+- average()
+    - Return the arithmetic mean of the stream
+    - Returns an Optional, as the stream may be empty
+- sum()
+    - Returns the sum of the stream elements
+
+- average()
+    - 返回流的算术平均值
+    - 返回Optional，因为流可能为空
+- sum()
+    - 返回流元素的总和
+
+
+### Iteration
+迭代
+
+- forEach(Consumer c)
+    - Performs an action for each element of this stream
+    - 为此流的每个元素执行一个动作
+- forEachOrdered(Consumer c)
+    - Like forEach, but ensures that the order of the elements (if one exists) is respected when used for a parallel stream
+    - 与forEach类似，但确保在用于并行流时尊重元素的顺序（如果存在）
+- Use with caution!
+    - 请谨慎使用！
+    - Encourages non-functional (imperative) programming style
+    - 鼓励非功能性（命令式）编程风格
+    - More detail in week 3
+    - 第3周有更多详情
+
+
+
+### Folding A Stream
+
+折叠流
+
+Creating A Single Result From Multiple Input Elements
+
+从多个输入元素创建单个结果
+
+- reduce(BinaryOperator accumulator)
+    - Performs a reduction on the stream using the BinaryOperator
+    - The accumulatortakes a partial result and the next element, and returns a new partial result
+    - Returns an Optional
+    - Two other versions
+        - One that takes an initial value (does not return an Optional)
+        - One that takes an initial value and BiFunction(equivalent to a fused map and reduce)
+
+
+- reduce(BinaryOperator accumulator)
+    - 使用BinaryOperator对流进行归约
+    - 累加器获取部分结果和下一个元素，并返回新的部分结果
+    - 返回可选
+    - 其他两个版本
+        - 一个带有初始值的（不返回Optional）
+        - 带有初始值和BiFunction的值（等效于融合 map 和 reduce）
+
+### Section 6
+
+- Terminal operations provide results or side effects
+- Many types of operation available
+- Ones like reduceand collectneed to be looked at in more detail
+    - We’ll do this in week 3
+
+- 终端操作可提供结果或副作用
+- 提供多种操作
+- 需要更详细地查看诸如reduce和collect之类的内容
+    - 我们将在第3周进行
+
 ###### hwxfhhsgneo
 ###### jdk8mooc_lesson_2-7
+## Lesson 2-7:The Optional Class
+
+
+### The Problems Of null
+
+- Certain situations in Java return a result which is a null
+    - Reference to an object that is not initialised
+
+- Java中的某些情况返回的结果为null 
+    - 引用未初始化的对象
+
+### Avoiding NullPointerExceptions
+
+```java
+    String direction = gpsData.getPosition().getLatitude().getDirection();
+ 
+    String direction = “UNKNOWN”;
+    if (gpsData!= null) {
+        Position p = gpsData.getPosition();
+        if (p != null) {
+            Latitude latitude = p.getLatitude();
+            if (latitude != null)
+            direction = latitude.getDirection();
+        }
+    }
+```    
+
+
+### Optional Class
+
+Helping To Eliminate the NullPointerException
+  
+- Terminal operations like min(), max(), may not return a direct result
+    - Suppose the input stream is empty?
+- Optional<T>
+    - Container for an object reference (null, or real object)
+    - Think of it like a stream of 0 or 1 elements
+    - Guaranteed that the Optionalreference returned will not be null
+
+帮助消除NullPointerException
+  
+- 终端操作min(), max(),可能不会返回直接结果
+    - 假设输入流为空？
+- Optional<T>
+    - 对象引用的容器（空或真实对象）
+    - 将其视为0或1个元素的流
+    - 保证返回的Optionalreference不会为空
+
+### Optional ifPresent()
+
+Do something when set   
+设置时做些事
+
+    if (x != null) {
+        print(x);
+    }
+    opt.ifPresent(x -> print(x));
+    opt.ifPresent(this::print);
+
+### Optional filter()
+
+Reject certain values of the Optional    
+拒绝Optional的某些值
+
+    if (x != null && x.contains("a")) {
+        print(x);
+    }
+
+    opt.filter(x -> x.contains("a"))
+        .ifPresent(this::print);
+
+### Optional map()
+Transform value if present    
+转换值（如果存在）
+
+
+    if (x != null) {
+      String t = x.trim();
+        if (t.length() > 0)
+        print(t);
+    }
+    opt.map(String::trim)
+        .filter(t -> t.length() > 0)
+        .ifPresent(this::print);
+
+### Optional flatMap()
+
+Going deeper    
+更深入
+
+
+    public String findSimilar(String s)
+    Optional<String> tryFindSimilar(String s)
+    Optional<Optional<String>> bad = opt.map(this::tryFindSimilar);
+    Optional<String> similar = opt.flatMap(this::tryFindSimilar);
+
+
+### Update Our GPS Code
+
+
+    class GPSData{
+        public Optional<Position> getPosition() { ... }
+    }
+    class Position {
+        public Optional<Latitude> getLatitude() { ... }
+    }
+    class Latitude {
+        public String getDirection() { ... }
+    }
+
+
+    String direction = Optional
+        .ofNullable(gpsData)
+        .flatMap(GPSData::getPosition)
+        .flatMap(Position::getLatitude)
+        .map(Latitude::getDirection)
+        .orElse(“None”)
+
+- Create new Optional with a reference that could be null
+- getPosition andgetLatitude returnan Optional
+- getDirectionreturns a String
+- If getDirection returns a nullreturn "None", otherwise theactual direction
+
+- 使用可能为空的引用创建新的Optional  
+- getPosition和getLatitude返回值可选  这里为什么要 flatMap 而不是 Map?
+- getDirection返回一个字符串
+- 如果getDirection返回null，则返回“ None”，否则返回实际方向
+
+### Section 7
+Summary
+
+- Optional class eliminates problems of NullPointerException
+- Can be used in powerful ways to provide complex conditional handling
+
+- 可选类消除了NullPointerException问题
+- 可以强大的方式用于提供复杂的条件处理
+
+### Lesson 2: Summary
+### Lesson 2
+Introduction To Streams
+
+- Streams provides a straight forward way for functional style programming in Java
+- Streams can either be objects or primitive types
+- A stream consists of a source, possible intermediate operations and a terminal operation
+    - Certain terminal operations return an Optionalto avoid possible NullPointerExceptionproblems
+
+- Streams为Java中的函数样式编程提供了一种直接的方法
+- 流可以是对象或原始类型
+- 流由源，可能的中间操作和终端操作组成
+    - 某些终端操作返回Optional以避免可能的NullPointerException问题
+
+
 ###### ttii_ibmpcm
 ###### jdk8mooc_lesson_3-1
 ###### bt5mikrygzm
