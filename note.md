@@ -1092,7 +1092,7 @@ Streams API简介
     - Therefore no concept of repetition
 
 - 基于结构化的函数调用
-- 函数调用，依次调用其他函数（组成）
+- 函数调用，依次调用其他函数(组成)
      ```
      <function1>(<function2>(<function3> … ) … )
      ```
@@ -1145,7 +1145,7 @@ Streams API简介
 - 命令式
     - 与名称相关的值可以通过命令更改
     - 命令可能会重复，导致重复更改
-    - 新值可能通过重复（循环）与相同名称相关联
+    - 新值可能通过重复(循环)与相同名称相关联
 - 函数式
     - 与名称关联的值不得更改
     - 通过嵌套函数调用实现重复更改
@@ -1239,7 +1239,7 @@ int total = transactions.stream()
     - 所有操作均可顺序执行或并行执行
     - 中间操作可以合并
         - 避免多次重复传递数据
-        - 短路操作（例如findFirst）
+        - 短路操作(例如findFirst)
         - 懒惰的评价
     - 流特征有助于确定优化
         - 传递给 distinct() 的DISTINT流是无操作的
@@ -1447,7 +1447,7 @@ IntStream, DoubleStream, LongStream
     - 由指定值组成的流
 - range(int, int), rangeClosed(int, int)
     - A stream from a start to an end value (exclusive or inclusive)
-    - 从开始到结束值（独占或包含）的流
+    - 从开始到结束值(独占或包含)的流
 - generate(IntSupplier), iterate(int, IntUnaryOperator)
     - An infinite stream created by a given Supplier
     - 给定供应商创建的无限流
@@ -1490,9 +1490,9 @@ Overview
     - 支持顺序或并行聚合操作
 - 大多数操作都采用描述其行为的参数
     - 通常使用Lambda表达式
-    - 必须是无干扰的（不修改流）
+    - 必须是无干扰的(不修改流)
     - 通常为无状态
-- 流可以从顺序更改为并行（反之亦然）
+- 流可以从顺序更改为并行(反之亦然)
 - 所有处理顺序执行或并行执行
     - 最后一次调用获胜
 
@@ -1564,7 +1564,7 @@ Words in a File
     - sorted()，不带参数，按自然顺序排序
 - unordered()
     - 继承自BaseStream
-    - 返回无序的流（内部使用）
+    - 返回无序的流(内部使用)
     - 可以提高诸如distinct()和groupingBy()之类的操作效率 ?why?
 
 
@@ -1632,7 +1632,7 @@ Summary
     - 第一个匹配的元素
 - findAny()
     - Works the same way as findFirst(), but for a parallel stream
-    - 与findFirst（）相同，但用于并行流
+    - 与findFirst()相同，但用于并行流
 - boolean allMatch(Predicate p)
     - Whether all the elements of the stream match using the Predicate
     - 是否使用 Predicate 匹配流中的所有元素
@@ -1702,11 +1702,11 @@ Primitive Type Streams (IntStream, DoubleStream, LongStream)
     - 为此流的每个元素执行一个动作
 - forEachOrdered(Consumer c)
     - Like forEach, but ensures that the order of the elements (if one exists) is respected when used for a parallel stream
-    - 与forEach类似，但确保在用于并行流时尊重元素的顺序（如果存在）
+    - 与forEach类似，但确保在用于并行流时尊重元素的顺序(如果存在)
 - Use with caution!
     - 请谨慎使用！
     - Encourages non-functional (imperative) programming style
-    - 鼓励非功能性（命令式）编程风格
+    - 鼓励非功能性(命令式)编程风格
     - More detail in week 3
     - 第3周有更多详情
 
@@ -1734,8 +1734,8 @@ Creating A Single Result From Multiple Input Elements
     - 累加器获取部分结果和下一个元素，并返回新的部分结果
     - 返回可选
     - 其他两个版本
-        - 一个带有初始值的（不返回Optional）
-        - 带有初始值和BiFunction的值（等效于融合 map 和 reduce）
+        - 一个带有初始值的(不返回Optional)
+        - 带有初始值和BiFunction的值(等效于融合 map 和 reduce)
 
 ### Section 6
 
@@ -1795,7 +1795,7 @@ Helping To Eliminate the NullPointerException
 - 终端操作min(), max(),可能不会返回直接结果
     - 假设输入流为空？
 - Optional<T>
-    - 对象引用的容器（空或真实对象）
+    - 对象引用的容器(空或真实对象)
     - 将其视为0或1个元素的流
     - 保证返回的Optionalreference不会为空
 
@@ -1824,7 +1824,7 @@ Reject certain values of the Optional
 
 ### Optional map()
 Transform value if present    
-转换值（如果存在）
+转换值(如果存在)
 
 
     if (x != null) {
@@ -1923,7 +1923,7 @@ Introduction To Streams
 - 无限和无限的流
 - 避免使用forEach方法
 - 使用收藏家
-- 并行流（以及何时不使用它们）
+- 并行流(以及何时不使用它们)
 - 调试流和lambda
 - 课程结论
 
@@ -2041,7 +2041,7 @@ Ps.递归 栈的问题
     - Without all the stack frame
 
 - 流API使用众所周知的filter-map-reduce模式
-- 对于这个问题，我们不需要filter（）或map（），只需要reduce（）
+- 对于这个问题，我们不需要filter()或map()，只需要reduce()
 - 调用reduce方法的定义    
     Optional<T> reduce(BinaryOperator<T> accumulator)
 - 关键是找到合适的accumulator
@@ -2089,13 +2089,13 @@ Comparator。也可以手写比较器lamada。但是不如利用现有的组合�
 The returned comparator is serializable if the specified function is also serializable.    
 如果指定的函数也可序列化，则返回的比较器可序列化。   
 
-这意味着结果值将被强制转换为Comparator 和 Serializable（即可序列化的比较器）
+这意味着结果值将被强制转换为Comparator 和 Serializable(即可序列化的比较器)
 
 
 [Chapter 4. Types, Values, and Variables](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.4)
 [Chapter 5. Conversions and Contexts](https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html)
 [Chapter 15. Expressions](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.16)
-强制转换可用于显式“标记”具有特定目标类型的lambda表达式或方法引用表达式。为了提供适当的灵活性，目标类型可以是表示交叉点类型的类型的列表，前提是该交叉点会引发功能接口（第9.8节）。
+强制转换可用于显式“标记”具有特定目标类型的lambda表达式或方法引用表达式。为了提供适当的灵活性，目标类型可以是表示交叉点类型的类型的列表，前提是该交叉点会引发功能接口(第9.8节)。
 
 
 
@@ -2117,7 +2117,7 @@ Summary
 - 减少工作的方式由累加器定义
     - 这是BinaryOperator
     - 累加器相继应用于流元素
-    - reduce（）方法保持部分结果状态
+    - reduce()方法保持部分结果状态
     - 类似于递归方法，但没有资源开销
 - 要求您与基于循环的命令式方法有所不同
 
@@ -2177,7 +2177,7 @@ Keeping It Infinite
 
 - 有时我们需要无限期地继续使用流
 - 为此，我们应该使用哪种终端操作？
-     - 使用forEach（）
+     - 使用forEach()
      - 这会消耗流中的元素
      - 但不终止它
 
@@ -2299,10 +2299,10 @@ Summary
 - E.g. printing values from the stream
 
 
-- 如果您正在考虑使用forEach（），请停止
+- 如果您正在考虑使用forEach()，请停止
 - 是否可以通过映射和归约的组合来代替？
 - 如果是这样，则不太可能是正确的方法来发挥作用
-- 某些情况对于使用forEach（）有效
+- 某些情况对于使用forEach()有效
 - 例如 从流中打印值
 
 ###### 1xwuimh_rh0
@@ -2321,7 +2321,7 @@ Summary
 - 收集器对流执行可变的减少
     - 将输入元素累积到可变结果容器中
     - 结果容器可以是列表，地图，字符串等
-- 使用collect（）方法终止流
+- 使用collect()方法终止流
 - Collectorsutility类具有许多可以创建收集器的方法
 
 ### Composing Collectors
@@ -2340,7 +2340,7 @@ Summary
 
 - toCollection(Supplier factory)
     - Adds the elements of the stream to a Collection(created using factory)
-    - 将流的元素添加到Collection（使用工厂创建）
+    - 将流的元素添加到Collection(使用工厂创建)
     - Uses encounter order
     - 使用遭遇顺序
 - toList()
@@ -2361,7 +2361,7 @@ Summary
     - key and value produced using provided functions
     - 使用提供的功能产生的 key 和 value
     - Use Functions.identity()to get the stream element
-    - 使用Functions.identity（）获取流元素
+    - 使用Functions.identity()获取流元素
  
  
 
@@ -2430,10 +2430,10 @@ Also Available In Double And Long Forms
     - 平均提供的函数产生的结果
 - summarizingInt(ToIntFunction)
     - Summarises (count, sum, min, max, average) results generated by supplied function 
-    - 汇总（计数，总和，最小值，最大值，平均值）由提供的函数生成的结果
+    - 汇总(计数，总和，最小值，最大值，平均值)由提供的函数生成的结果
 - summingInt(ToIntFunction)
     - equivalent to a map()then sum()
-    - 等同于map（）然后sum（）
+    - 等同于map()然后sum()
 - maxBy(Comparator), minBy(Comparator)
     - Maximum or minimum value based on Comparator
     - 基于比较器的最大值或最小值
@@ -2480,7 +2480,7 @@ Summary
 ###### lfnnpfmbice
 ###### jdk8mooc_lesson_3-5   
 ## Lesson 3-5:Parallel Streams(And When Not To Use Them)
- 并行流（以及何时不使用它们）
+ 并行流(以及何时不使用它们)
 
 ### Serial And Parallel Streams
 
@@ -2540,12 +2540,12 @@ Summary
     - Use forEachOrdered()if a deterministic result is required
  
 
-- findFirst（）和findAny（）
-    - findAny（）是不确定的，因此对并行流性能更好
-    - 如果需要确定性结果，请使用findFirst（）
-- forEach（）和forEachOrdered（）
-    - forEach（）对于并行流和有序数据是不确定的
-    - 如果需要确定性结果，请使用forEachOrdered（）
+- findFirst()和findAny()
+    - findAny()是不确定的，因此对并行流性能更好
+    - 如果需要确定性结果，请使用findFirst()
+- forEach()和forEachOrdered()
+    - forEach()对于并行流和有序数据是不确定的
+    - 如果需要确定性结果，请使用forEachOrdered()
 
 ### When To Use Parallel Streams
 
@@ -2566,8 +2566,8 @@ Summary
     - LinkedList：不良
 - 操作也很重要
     - 某些操作比其他操作更好地分解为并行任务
-    - filter（）和map（）非常好
-    - sorted（）和distinct（）分解不好
+    - filter()和map()非常好
+    - sorted()和distinct()分解不好
 
 
 ### When To Use Parallel Streams
@@ -2666,7 +2666,7 @@ Using peek()
 - Use a Consumerthat does nothing if required
     - Some debugging tools don’t like empty bodies
 
-- 在流操作之间添加peek（）方法调用
+- 在流操作之间添加peek()方法调用
 - 使用不需要的消费者
     - 一些调试工具不喜欢空体
 
@@ -2718,7 +2718,7 @@ Summary
     - 流方法合并
     - 将Lambda转换为invokedynamic字节码，并在运行时确定实现
     - 难以设置断点
-- peek（）和方法引用可以简化操作
+- peek()和方法引用可以简化操作
 
 
 ###### qnnysqvzs
@@ -2775,7 +2775,7 @@ Summary
     - 尝试停止循环思考并使用可变状态
 - 考虑如何使用递归来解决问题
     - 而不是显式循环
-    - 避免forEach（特殊情况除外）
+    - 避免forEach(特殊情况除外)
 - 限流不必无限
 - 请记住，并行流始终涉及更多工作
     - 有时他们可以更快地完成工作
