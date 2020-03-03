@@ -1905,15 +1905,881 @@ Introduction To Streams
 
 ###### ttii_ibmpcm
 ###### jdk8mooc_lesson_3-1
+## Lesson 3:Advanced Lambda and Stream Concepts
+### Lesson Agenda
+
+课程议程
+
+- Understanding and using reductions
+- Finite and infinite streams
+- Avoiding the use of the forEachmethod
+- Using collectors
+- Parallel streams (and when not to use them)
+- Debugging streams and lambdas
+- Course conclusions
+
+
+- 了解和使用减少量
+- 无限和无限的流
+- 避免使用forEach方法
+- 使用收藏家
+- 并行流（以及何时不使用它们）
+- 调试流和lambda
+- 课程结论
+
+### Lesson 3-1:Understanding and Using Reductions
+了解和使用归约
+
+### A Simple Problem
+
+- Find the length of the longest line in a file
+
+    Path input = Paths.get("lines.txt");
+    int longestLineLength = Files.lines(input)
+            .mapToInt(String::length)
+            .max()
+            .getAsInt();
+
+### Another Simple Problem
+
+- Find the length of the / longest line in a file
+查找最大/长行
+
+### Naïve Stream Solution
+
+天真/原生流解决方案   
+ 
+
+    String longest = Files.lines(input)
+        .sort((x, y) -> y.length() -x.length())
+        .findFirst()
+        .get();
+
+- This solves the problem
+- Not really. Big files will take a long time and a lot of resources
+- Must be a better approach
+
+
+- 这解决了问题
+- 并不是的。 大文件将花费很长时间和大量资源
+- 必须是更好的方法
+
+### External Iteration Solution 
+外部迭代解决方案
+
+    String longest = "";
+    String s;
+    while ((s = reader.readLine()) != null)
+        if (s.length() > longest.length())
+            longest = s;
+
+
+- Simple, but inherently serial
+- Not thread safe due to mutable state
+- Not functional
+
+- 简单，但本质上是串行的
+- 由于状态可变，线程不安全
+- 非函数式
+
+### Recursive Approach: The Method
+递归方法：方法
+```java
+	String findLongestString(String s, int index, List<String> l) {
+		if (index >= l.size())
+			return s;
+		if (index == l.size() - 1) {
+			if (s.length() > l.get(index).length())
+				return s;
+			return l.get(index);
+		}
+
+
+		String s2 = findLongestString(l.get(index), index + 1, l);
+
+
+		if (s.length() > s2.length())
+			return s;
+		return s2;
+	}
+```
+Ps.写递归太蠢且不好理解了吧。
+
+### Recursive Approach: Solving The Problem
+递归方法：解决问题
+
+```java
+List<String> lines = new ArrayList<>();
+		String s;
+		while ((s = reader.readLine()) != null)
+			lines.add(s);
+		String longest = findLongestString("", 0, lines);
+```        
+
+- No explicit loop, no mutable state, so we now have a functional solution
+- Unfortunately not a usable one
+    - larger data sets will generate an OOM exception
+
+- 没有显式循环，没有可变状态，所以我们现在有了一个函数式性的解决方案
+- 不幸的是不是可用的
+    - 较大的数据集将生成OOM异常
+
+不幸的是(这)不是一个适用的(方案)
+
+Ps.递归 栈的问题
+
+### A Better Stream Solution
+更好的流解决方案
+
+- The stream API uses the well known filter-map-reduce pattern
+- For this problem we do not need to filter()or map(), just reduce()
+- Recall the reduce method definition
+    Optional<T> reduce(BinaryOperator<T> accumulator)
+- The key is to find the right accumulator
+    - Again, recall the accumulator takes a partial result and the next element, and returns a new partial result
+    - In essence it does the same as our recursive solution
+    - Without all the stack frame
+
+- 流API使用众所周知的filter-map-reduce模式
+- 对于这个问题，我们不需要filter（）或map（），只需要reduce（）
+- 调用reduce方法的定义    
+    Optional<T> reduce(BinaryOperator<T> accumulator)
+- 关键是找到合适的accumulator
+    - 再次，调用累加器获取部分结果和下一个元素，并返回新的部分结果
+    - 本质上，它与我们的递归解决方案相同
+    - 没有所有的堆叠框架
+
+- Use the recursive approach as an accumulator for a reduction
+- 使用递归方法作为减少量的累加器
+
+```java
+    String longestLine = Files.lines(input)
+        .reduce((x, y) -> {
+			if (x.length() > y.length())
+				return x;
+			return y;
+		}).get();
+```
+
+x in effect maintains state for us, by always holding the longest string found so far    
+x始终持有迄今为止找到的最长的字符串，实际上为我们保持了状态
+
+### The Simplest Stream Solution
+最简单的流解决方案
+
+- Use a specialised form of max()
+- 使用特殊形式的max()
+- One that takes a Comparatoras a parameter
+- 以比较器为参数的
+
+    Files.lines(input)
+        .max(comparingInt(String::length))
+        .get();
+
+- comparingInt()is a static method on Comparator
+- comparingInt() 是Comparator上的静态方法
+    - Comparator<T> comparingInt(ToIntFunction<? extends T> keyExtractor)
+
+Ps. max 参数是一个比较器。为什么比较器要这么奇怪? 因为不是函数式接口吗?
+ [Comparator (Java Platform SE 8 )](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparingInt-java.util.function.ToIntFunction-)
+Comparator。也可以手写比较器lamada。但是不如利用现有的组合。各种
+
+(Comparator<T> & Serializable) 这是啥语法
+
+The returned comparator is serializable if the specified function is also serializable.    
+如果指定的函数也可序列化，则返回的比较器可序列化。   
+
+这意味着结果值将被强制转换为Comparator 和 Serializable（即可序列化的比较器）
+
+
+[Chapter 4. Types, Values, and Variables](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.4)
+[Chapter 5. Conversions and Contexts](https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html)
+[Chapter 15. Expressions](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.16)
+强制转换可用于显式“标记”具有特定目标类型的lambda表达式或方法引用表达式。为了提供适当的灵活性，目标类型可以是表示交叉点类型的类型的列表，前提是该交叉点会引发功能接口（第9.8节）。
+
+
+
+
+### Section 1
+Summary
+
+
+- Reduction take a stream and reduces it to a single value
+- The way the reduction works is defined by the accumulator
+    - Which is a BinaryOperator
+    - The accumulator is applied successively to the stream elements
+    - The reduce()method maintains a partial result state
+    - Like a recursive approach, but without the resource overhead
+- Requires you to think differently to an imperative, loop based approach
+
+
+- 减少流量，并将其减少到单个值
+- 减少工作的方式由累加器定义
+    - 这是BinaryOperator
+    - 累加器相继应用于流元素
+    - reduce（）方法保持部分结果状态
+    - 类似于递归方法，但没有资源开销
+- 要求您与基于循环的命令式方法有所不同
+
+Ps. 解决了 【Naïve Stream Solution】的问题吗? 性能测试一下。
+
 ###### bt5mikrygzm
 ###### jdk8mooc_lesson_3-2
+## Lesson 3-2:Finite and Infinite Streams
+
+有限和无限流
+
+### Dealing With The Indeterminate
+Imperative Java
+
+处理不确定性,命令式Java
+
+- How to continue processing when we can't predict for how long?
+- 当我们无法预测多长时间时，如何继续处理？
+```java
+    while (true) {
+        doSomeProcessing();
+        if (someCriteriaIsTrue())
+        break;
+        // Loop repeats indefinitely
+    }
+```
+
+### Using Infinite Streams
+Making The Stream Finite  
+使流有限  
+
+
+- Terminate the stream when an element is read from the input stream
+    - findFirst()
+    - findAny()
+
+
+    OptionalIntr = Random.ints()
+        .filter(i-> i> 256)
+        .findFirst();
+
+
+- Infinite stream of random integers
+- stream terminates when a number greater than 256 is encountered 
+- 无限的随机整数流
+- 当遇到大于256的数字时流终止
+
+Keeping It Infinite  
+保持无限  
+
+- Sometimes we need to continue to use a stream indefinitely
+- What terminal operation should we use for this?
+    - Use forEach()
+    - This consumes the element from the stream
+    - But does not terminate it
+
+
+- 有时我们需要无限期地继续使用流
+- 为此，我们应该使用哪种终端操作？
+     - 使用forEach（）
+     - 这会消耗流中的元素
+     - 但不终止它
+
+Infinite Example    
+
+- Reading temperature from a serial sensor
+    - Converting from farenheit to celcius, removing F
+    - Notifying a listener of changes if registered
+
+- 从串行传感器读取温度
+     - 从 华氏度 转换为 摄氏度 ，删除F
+     - 如果注册，通知更改者
+
+```java
+    thermalReader.lines()
+        .mapToDouble(s -> Double.parseDouble(s.substring(0, s.length() -1)))
+        .map(t -> ((t –32) * 5 / 9)
+        .filter(t -> !currentTemperature.equals(t))
+        .peek(t -> listener.ifPresent(l -> l.temperatureChanged(t)))
+        .forEach(t -> currentTemperature.set(t));
+```
+
+Ps.
+100°C×9/5+32 = 212°F  后面几个变量没有看懂
+
+### Section 2
+
+Summary
+
+
+- Streams can be infinite as well as finite
+- There is no concept of 'breaking' out of a stream
+- Use the appropriate terminal operation to stop processing
+- Or use the infinite stream infinitely
+
+- 流可以是无限的，也可以是有限的
+- 没有 'breaking' 的概念
+- 使用适当的终端操作停止处理
+- 或无限使用无限流
+
+
 ###### widwt5tjy4e
 ###### jdk8mooc_lesson_3-3
+## Lesson 3-3:Avoiding The Use of forEach
+避免使用forEach
+
+### Using Streams Effectively
+Stop Thinking Imperatively
+
+有效使用流  停止命令式思考
+
+
+- Imperative programming uses loops for repetitive behaviour
+- It also uses variables to hold state
+- We can continue to do that in some ways with streams
+- THIS IS WRONG
+
+- 命令式编程使用循环来重复行为
+- 它还使用变量来保持状态
+- 我们可以继续以某些方式使用流
+- 这是错误的
+
+### Stream Example
+Still Thinking Imperatively 
+依旧命令式思考
+
+```java
+    List<Transactions> transactions = ...
+    LongAdder transactionTotal = new LongAdder();
+    transactions.stream()
+        .forEach(t -> transactionTotal.add(t.getValue()));
+    long total = transactionTotal.sum();
+```
+
+We are modifying  state which is wrong for a functional approach    
+我们正在修改状态，这对于函数式方法是错误的   
+
+
+Now Using Correct Functional Approach
+现在使用正确的函数式方法
+
+```java
+    List<Transactions> transactions = ...
+    long total = transactions.stream()
+        .mapToLong(t -> t.getValue())
+        .sum();
+```
+Create a stream of long values that is passed to the next function   
+Use a reduction to createa single result   
+创建long值流并传递给下一个函数    
+使用归约法创建单个结果    
+
+
+### Legitimate Use of forEach
+
+合理使用forEach    
+No State Being Modified    
+没有状态被修改  
+
+
+- Simplified iteration
+- May be made parallel if order is not importantNo State Being Modified
+- 简化迭代
+- 如果顺序不重要，则可以并行进行-没有修改状态
+
+    List<Transactions> transactions = ...
+    transactions.stream()
+    .forEach(t -> t.printClientName());
+
+### Section 3
+
+Summary
+
+
+- If you are thinking of using forEach(), stop
+- Can it be replaced with a combination of mapping and reduction?
+- If so, it is unlikely to be the right approach to be functional
+- Certain situations are valid for using forEach()
+- E.g. printing values from the stream
+
+
+- 如果您正在考虑使用forEach（），请停止
+- 是否可以通过映射和归约的组合来代替？
+- 如果是这样，则不太可能是正确的方法来发挥作用
+- 某些情况对于使用forEach（）有效
+- 例如 从流中打印值
+
 ###### 1xwuimh_rh0
 ###### jdk8mooc_lesson_3-4
+## Lesson 3-4:Using Collectors
+
+### Collector Basics
+
+
+- A Collectorperforms a mutable reduction on a stream
+    - Accumulates input elements into a mutable result container
+    - Results container can be a List, Map, String, etc
+- Use the collect()method to terminate the stream
+- Collectorsutility class has many methods that can create a Collector
+
+- 收集器对流执行可变的减少
+    - 将输入元素累积到可变结果容器中
+    - 结果容器可以是列表，地图，字符串等
+- 使用collect（）方法终止流
+- Collectorsutility类具有许多可以创建收集器的方法
+
+### Composing Collectors
+
+
+- Several Collectorsmethods have versions with a downstream collector
+- 一些收集器方法的版本带有下游收集器
+- Allows a second collector to be used
+- 允许使用第二个收集器
+    - collectingAndThen()
+    - groupingBy()/groupingByConcurrent()
+    - mapping()
+    - partitioningBy()
+
+ ### Collecting Into A Collection
+
+- toCollection(Supplier factory)
+    - Adds the elements of the stream to a Collection(created using factory)
+    - 将流的元素添加到Collection（使用工厂创建）
+    - Uses encounter order
+    - 使用遭遇顺序
+- toList()
+    - Adds the elements of the stream to a List
+    - 将流的元素添加到列表
+- toSet()
+    - Adds the elements of the stream to a Set
+    - 将流的元素添加到集合中
+    - Eliminates duplicates
+    - 消除重复
+
+
+ 
+ ### Collecting To A Map
+ - toMap(Function keyMapper, Function valueMapper)
+    - Creates a Mapfrom the elements of the stream
+    - 从流的元素创建一个Map
+    - key and value produced using provided functions
+    - 使用提供的功能产生的 key 和 value
+    - Use Functions.identity()to get the stream element
+    - 使用Functions.identity（）获取流元素
+ 
+ 
+
+    Map<Student, Double> studentToScore = students.stream()
+        .collect(toMap(Functions.identity(),
+            student -> getScore(student)));
+
+
+Handling Duplicate Keys  
+处理重复的keys      
+
+
+toMap(Function keyMapper, Function valueMapper, BinaryOperator merge)
+
+- The same process as first toMap()method
+    - But uses the BinaryOperatorto merge values for duplicate keys
+
+```java
+    Map<String, String> occupants = people.stream()
+        .collect(toMap(Person::getAddress,
+                    Person::getName,
+                    (x, y) -> x + "," + y));
+```
+
+People at the same address are merged into a CSV string   
+位于同一地址的人将合并为CSV字符串
+
+### Grouping Results
+- groupingBy(Function)
+    - Groups stream elements using the Functioninto a Map
+    - Result is Map<K, List<V>>
+
+    Map m = words.stream()
+        .collect(Collectors.groupingBy(String::length));
+
+- groupingBy(Function, Collector)
+    - Groups stream elements using the Function
+    - 使用功能对流元素进行分组
+    - A reduction is performed on each group using the downstream Collector
+    - 使用下游收集器对每个组执行减少操作
+
+    Map m = words.stream()
+        .collect(Collectors.groupingBy(String::length, counting()));
+
+### Joining String Results
+- joining()
+    - Collector concatenates input strings
+    - 收集器连接输入字符串
+- joining(delimiter)
+    - Collector concatenates stream strings using CharSequence delimiter
+    - 收集器使用CharSequence分隔符连接流字符串
+
+    collect(Collectors.joining(",")); // Create CSV
+
+- joining(delimiter, prefix, suffix)
+    - Collector concatenates the prefix, stream strings separated by delimiter and suffix
+    - 收集器将前缀，流字符串连接在一起，并用定界符和后缀分隔
+
+### Numeric Collectors
+Also Available In Double And Long Forms    
+也有Double和Long形式  
+
+
+- averagingInt(ToIntFunction)
+    - Averages the results generated by the supplied function
+    - 平均提供的函数产生的结果
+- summarizingInt(ToIntFunction)
+    - Summarises (count, sum, min, max, average) results generated by supplied function 
+    - 汇总（计数，总和，最小值，最大值，平均值）由提供的函数生成的结果
+- summingInt(ToIntFunction)
+    - equivalent to a map()then sum()
+    - 等同于map（）然后sum（）
+- maxBy(Comparator), minBy(Comparator)
+    - Maximum or minimum value based on Comparator
+    - 基于比较器的最大值或最小值
+
+### Other Collectors
+
+
+
+- reducing(BinaryOperator)
+    - Equivalent Collector to reduce() terminal operation
+    - 等效的Collector来 reduce() 终端操作
+    - Only use for multi-level reductions, or downstream collectors
+    - 仅用于多级还原或下游收集器
+- partitioningBy(Predicate)
+    - Creates a Map<Boolean, List>containing two groups based on Predicate
+    -根据Predicate创建一个包含两个组的 Map<Boolean, List>
+- mapping(Function, Collector)
+    - Adapts a Collector to accept different type elements mapped by the Function
+    - 使收集器适应接受函数映射的不同类型的元素
+ 
+
+```java
+    Map<City, Set<String>> lastNamesByCity = people.stream()
+        .collect(groupingBy(Person::getCity,
+            mapping(Person::getLastName, toSet())))
+```
+
+### Section 4
+Summary
+
+
+- Collectors provide powerful ways to gather elements of an input stream
+    - Into collections
+    - In numerical ways like totals and averages
+- Collectors can be composed to build more complex ones
+- You can also create your own Collector
+
+- Collector提供了强大的方法来收集输入流的元素
+    - 进入collections
+    - 以总计和平均值之类的数字方式
+- 可以组成收集器以构建更复杂的Collector
+- 您也可以创建自己的Collector
+
 ###### lfnnpfmbice
 ###### jdk8mooc_lesson_3-5   
+## Lesson 3-5:Parallel Streams(And When Not To Use Them)
+ 并行流（以及何时不使用它们）
+
+### Serial And Parallel Streams
+
+串行和并行流
+
+- Collection stream sources
+    - stream()
+    - parallelStream()
+- Stream can be made parallel or sequential at any point
+    - parallel()
+    - sequential()
+- The last call wins
+    - Whole stream is either sequential or parallel
+- Calling concat()with a sequential and parallel stream will produce a parallel stream
+
+- 集合流源
+    - stream()
+    - parallelStream()
+- 可以在任何点将流设为并行或顺序
+    - parallel()
+    - sequential()
+- 最后一次调用获胜
+    - 整个流是顺序的或并行的
+- 使用顺序和并行流调用 concat()将产生并行流
+
+### Parallel Streams
+
+- Implemented internally using the fork-join framework
+- Will default to as many threads for the pool as the OS reports processors
+    - Which may not be what you want
+    
+    System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "32767");
+
+- Remember, parallel streams always need more work to process
+    - But they might finish it more quickly
+
+
+
+- 使用fork-join框架在内部实现
+- 默认情况下，池中的线程数将与操作系统报告处理器的数量相同
+    - 可能不是您想要的
+    
+    System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "32767");
+
+- 请记住，并行流始终需要处理更多工作
+    - 但是他们可能会更快完成
+
+
+### Parallel Stream Considerations
+并行流注意事项
+
+- findFirst()and findAny()
+    - findAny()is non-deterministic, so better for parallel stream performance
+    - Use findFirst()if a deterministic result is required
+- forEach()and forEachOrdered()
+    - forEach()is non-deterministic for a parallel stream and ordered data
+    - Use forEachOrdered()if a deterministic result is required
+ 
+
+- findFirst（）和findAny（）
+    - findAny（）是不确定的，因此对并行流性能更好
+    - 如果需要确定性结果，请使用findFirst（）
+- forEach（）和forEachOrdered（）
+    - forEach（）对于并行流和有序数据是不确定的
+    - 如果需要确定性结果，请使用forEachOrdered（）
+
+### When To Use Parallel Streams
+
+没有简单的答案
+
+- Data set size is important, as is the type of data structure
+    - ArrayList: GOOD
+    - HashSet, TreeSet: OK
+    - LinkedList: BAD
+- Operations are also important
+    - Certain operations decompose to parallel tasks better than others
+    - filter()and map()are excellent
+    - sorted()and distinct()do not decompose well
+
+- 数据集的大小以及数据结构的类型都很重要
+    - ArrayList：良好
+    - HashSet，TreeSet：可以
+    - LinkedList：不良
+- 操作也很重要
+    - 某些操作比其他操作更好地分解为并行任务
+    - filter（）和map（）非常好
+    - sorted（）和distinct（）分解不好
+
+
+### When To Use Parallel Streams
+
+定量考虑
+
+- N = size of the data set
+- Q = Cost per element through the Stream pipeline
+- N x Q = Total cost of pipeline operations
+- The bigger N x Q is the better a parallel stream will perform
+- It is easier to know N than Q, but Q can be estimated
+- If in doubt, profile
+
+- N =数据集的大小
+- Q =通过Stream管道的每元素成本
+- N x Q =管道运营总成本
+- N x Q越大，并行流的性能越好
+- 知道N比Q容易，但是可以估计Q
+- 如有疑问，profile
+
+
+### Section 5
+Summary
+
+- Streams can be processed sequentially or in parallel
+    - The whole stream is processed in sequentially or in parallel
+    - In most cases how the stream is defined will not affect the result
+    - findFirst(), findAny(), forEach(), forEachOrdered()do
+- Don’t assume that a parallel stream will return a result faster
+    - Many factors affect performance
+
+- 流可以顺序或并行处理
+    - 整个流按顺序或并行处理
+    - 在大多数情况下，流的定义方式不会影响结果
+    - findFirst(), findAny(), forEach(), forEachOrdered()do
+- 不要以为并行流会更快地返回结果
+    - 许多因素都会影响效果
+
+
 ###### krltmsteyoo
 ###### jdk8mooc_lesson_3-6
+## Lesson 3-6:Debugging Lambdas and Streams
+### Problems With Debugging Streams
+
+- Streams provide a high level abstraction
+    - This is good for making code clear and easy to understand
+    - This is bad for debugging
+        - A lot happens internally in the library code
+        - Setting breakpoints is not simple
+        - Stream operations are merged to improve efficiency
+
+- 流提供高级抽象
+    - 这有助于使代码清晰易懂
+    - 这对调试不利
+        - 库代码内部发生了很多事情
+        - 设置断点并不简单
+        - 合并流操作以提高效率
+
+### Simple Debugging
+Finding What Is Happening Between Methods    
+查找方法之间发生的事情   
+- Use peek()
+    - Like the use of print statements
+```java
+List<String> sortedWords = reader.lines()           // Lines from file
+    .flatMap(line -> Stream.of(line.split(REGEXP))  // Words from file
+    .map(String::toLowerCase)                       // In lower case
+    .distinct()                                     // Remove duplicates
+    .sort((x, y) -> x.length() –y.length())         // Sort by length
+    .collect(Collectors.toList());                  // Collect to list
+  
+List<String> sortedWords = reader.lines()           // Lines from file
+    .peek(System.out::println)                      // Print lines from file
+    .flatMap(line -> Stream.of(line.split(REGEXP))  // Words from file
+    .map(String::toLowerCase)                       // In lower case
+    .distinct()                                     // Remove duplicates
+    .sort((x, y) -> x.length() –y.length())         // Sort by length
+    .collect(Collectors.toList());                  // Collect to list
+
+
+List<String> sortedWords = reader.lines()           // Lines from file
+    .flatMap(line -> Stream.of(line.split(REGEXP))  // Words from file
+    .peek(System.out::println)                      // Print words
+    .map(String::toLowerCase)                       // In lower case
+    .distinct()                                     // Remove duplicates
+    .sort((x, y) -> x.length() –y.length())         // Sort by length
+    .collect(Collectors.toList());                  // Collect to list
+
+```
+
+### Setting A Breakpoint
+Using peek()
+
+
+- Add a peek()method call between stream operations
+- Use a Consumerthat does nothing if required
+    - Some debugging tools don’t like empty bodies
+
+- 在流操作之间添加peek（）方法调用
+- 使用不需要的消费者
+    - 一些调试工具不喜欢空体
+
+```java
+    list<String> sortedWords = reader.lines()
+        .flatMap(line -> Stream.of(line.split(REGEXP))
+        .peek(s -> s)//Set breakpoint here//No-op Lambda
+        .map(String::toLowerCase)
+        .distinct()
+        .sort((x, y) -> x.length() –y.length())
+        .collect(Collectors.toList());
+```
+
+Using A Method Reference
+
+
+- Lambda expressions do not compile to equivalent inner class
+    - Compiled to invokedynamic call
+    - Implementation decided at runtime
+    - Better chance of optimisation, makes debugging harder
+- Solution:
+    - Extract the code from a Lambda expression into a separate method
+    - Replace the Lambda with a method reference for the new method
+    - Set breakpoints on the statements in the new method
+    - Examine program state using debugger
+
+- Lambda表达式无法编译为等效的内部类
+    - 编译为调用动态调用
+    - 在运行时决定实现
+    - 更好的优化机会，使调试更加困难
+- 解决方案：
+    - 将Lambda表达式中的代码提取到单独的方法中
+    - 将Lambda替换为新方法的方法引用
+    - 在新方法中的语句上设置断点
+    - 使用调试器检查程序状态
+
+
+### Section 6
+Summary
+
+
+- Debugging is harder with Lambdas and streams
+    - Stream methods get merged
+    - Lambdas are converted to invokedynamic bytecodes and implementation is decided at runtime
+    - Harder to set breakpoints
+- peek()and method references can simplify things
+
+- 使用Lambda和流进行调试更加困难
+    - 流方法合并
+    - 将Lambda转换为invokedynamic字节码，并在运行时确定实现
+    - 难以设置断点
+- peek（）和方法引用可以简化操作
+
+
 ###### qnnysqvzs
 ###### jdk8mooc_lesson_3-7
+## Lesson 3-7:Course Conclusions
+课程总结
+
+### Lambda Expressions
+
+
+- Lambda expressions give us a simple way to define behaviour
+    - Can be assigned to a variable or passed as a parameter
+- Can be used wherever the type is a functional interface
+    - One that has only one abstract method
+    - The lambda expression provides an implementation of the abstract method
+
+- Lambda表达式为我们提供了一种定义行为的简单方法
+    - 可以分配给变量或作为参数传递
+- 可以在类型为功能接口的任何地方使用
+    - 一种只有一种抽象方法
+    - lambda表达式提供了abstract方法的实现
+
+### Stream API
+
+- Pipeline of operations to process collections of data
+    - Multiple sources, not just from the Collections API
+    - Can be processed sequentially or in parallel
+- Sources, intermediate and terminal operations
+- Behaviour of intermediate and terminal operations often defined using Lambda expressions
+- Terminal operations often return an Optional
+- We can now use a functional style of programming in Java
+
+- 处理数据收集的操作流水线
+    - 多种来源，而不仅仅是来自Collections API
+    - 可以顺序或并行处理
+- 源，中间和终端操作
+- 通常使用Lambda表达式定义的中间操作和最终操作的行为
+- 终端操作通常返回Optional
+- 现在我们可以使用Java中的函数式编程
+
+### Lambdas And Streams: Think Differently
+
+
+- Need to think functional rather than imperative
+    - Try to stop thinking in loops and using mutable state
+- Think of how to approach problems using recursion
+    - Rather than an explicit loop
+    - Avoid forEach(except for special cases)
+- Infinite streams don't need to be infinite
+- Remember, parallel streams always involve more work
+    - Sometimes they complete the work quicker
+
+- 需要思考功能而非命令
+    - 尝试停止循环思考并使用可变状态
+- 考虑如何使用递归来解决问题
+    - 而不是显式循环
+    - 避免forEach（特殊情况除外）
+- 限流不必无限
+- 请记住，并行流始终涉及更多工作
+    - 有时他们可以更快地完成工作
+
+Thank You!This Is The End OfThe Course
+
+
