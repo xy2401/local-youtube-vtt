@@ -1964,6 +1964,8 @@ Introduction To Streams
 - 并不是的。 大文件将花费很长时间和大量资源
 - 必须是更好的方法
 
+Ps。看起来优雅 但是 杀鸡牛刀。没必要全排序
+
 ### External Iteration Solution 
 外部迭代解决方案
 
